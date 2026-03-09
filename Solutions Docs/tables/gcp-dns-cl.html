@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GCPDNSCL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>GCP_DNS_CL</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">GCP</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1</strong></td>
+<td style="text-align: left;">Yes 🔶 — uses type-suffixed column names</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (45 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/GCP_DNS_CL.json">KQL validation test schema</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Computer</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">insert_id_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">log_name_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ManagementGroupName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">MG</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">payload__type_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">payload_authAnswer_b</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">payload_authenticationInfo_principalEmail_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">payload_authorizationInfo_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">payload_methodName_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">payload_protocol_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">payload_queryName_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">payload_queryType_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">payload_rdata_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">payload_request__type_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">payload_request_managedZone_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">payload_request_project_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">payload_requestMetadata_requestAttributes_time_t</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">payload_resourceName_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">payload_responseCode_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">payload_serverLatency_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">payload_serviceName_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">payload_sourceIP_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">payload_sourceNetwork_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">payload_vmInstanceId_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">payload_vmInstanceIdString_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">payload_vmInstanceName_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">payload_vmProjectId_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">payload_vmZoneName_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">RawData</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">resource_labels_location_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">resource_labels_policy_name_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">resource_labels_project_id_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">resource_labels_source_type_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">resource_labels_target_name_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">resource_labels_target_type_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">resource_labels_zone_name_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">resource_type_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">severity_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">timestamp_t</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (2)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/googlecloudplatformdns.html">GoogleCloudPlatformDNS</a></li>
+<li><a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/gcpdnsdataconnector.html">[DEPRECATED] Google Cloud Platform DNS</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Content Items Using This Table (23)</h2>
+<h3>Analytic Rules (11)</h3>
+<p><strong>In solution <a href="../solutions/googlecloudplatformdns.html">GoogleCloudPlatformDNS</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-cve-2020-1350-sigred-exploitation-pattern-1267d53d-f5fd-418b-b8da-34453a5994c2-54c24855.html">Google DNS - CVE-2020-1350 (SIGRED) exploitation pattern</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-cve-2021-34527-printnightmare-external-exploit-e632e73a-06c4-47f6-8bed-b2498aa6e30f-67f817fe.html">Google DNS - CVE-2021-34527 (PrintNightmare) external exploit</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-cve-2021-40444-exploitation-6758c671-e9ee-495d-b6b0-92ffd08a8c3b-818ecc21.html">Google DNS - CVE-2021-40444 exploitation</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-exchange-online-autodiscover-abuse-424c2aca-5367-4247-917a-5d0f7035e40e-eb3b481d.html">Google DNS - Exchange online autodiscover abuse</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-ip-check-activity-35221a58-cacb-4174-9bb4-ee777784fbce-89e6bab9.html">Google DNS - IP check activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-malicous-python-packages-75491db8-eaf7-40bb-a46a-279872cc82f5-92bff549.html">Google DNS - Malicous Python packages</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-multiple-errors-for-source-7e81a935-5e91-45a5-92fd-3b58c180513b-91c296af.html">Google DNS - Multiple errors for source</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-multiple-errors-to-same-domain-da04a5d6-e2be-4cba-8cdb-a3f2efa87e9e-a76d7e80.html">Google DNS - Multiple errors to same domain</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-possible-data-exfiltration-705bed63-668f-4508-9d2d-26faf4010700-4755c5a5.html">Google DNS - Possible data exfiltration</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-request-to-dynamic-dns-service-09fc03e0-daec-4b22-8afa-4bba30d7e909-53e7965a.html">Google DNS - Request to dynamic DNS service</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-unc2452-nobelium-apt-group-activity-22a613ea-c338-4f91-bbd3-3be97b00ebf9-74349df9.html">Google DNS - UNC2452 (Nobelium) APT Group activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries (10)</h3>
+<p><strong>In solution <a href="../solutions/googlecloudplatformdns.html">GoogleCloudPlatformDNS</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-domains-with-rare-errors-9e3145ef-f6bf-4dd0-8783-a0847f68cb54-bd1078be.html">Google DNS - Domains with rare errors</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-errors-74267de2-ff2e-415a-9e2a-5a99b471a1e2-c553919c.html">Google DNS - Errors</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-rare-domains-49d88918-03c8-4e22-9c8b-843e79cad6f5-5826fbc2.html">Google DNS - Rare domains</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-requests-to-ip-lookup-resources-8459cf31-9c5d-48a8-88ca-c4b1a6014031-77b1e4f8.html">Google DNS - Requests to IP lookup resources</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-requests-to-tor-resources-53b91d17-f6a7-4439-8d9a-0aebf0abeea2-4663dbdd.html">Google DNS - Requests to TOR resources</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-requests-to-online-shares-e909c48d-7bd4-45d0-bfb9-319b5fdc6332-632d0c96.html">Google DNS - Requests to online shares</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-server-latency-3cff73de-8c4a-46f5-85d8-3f1c051876f1-1af26d07.html">Google DNS - Server latency</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-sources-with-high-number-of-errors-e85a5d94-1f9f-4ce1-b54d-c61bbd24c41f-bf442c7b.html">Google DNS - Sources with high number of errors</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-unexpected-top-level-domains-1823db08-2ba4-4624-900f-9be0f950ea57-0a238939.html">Google DNS - Unexpected top level domains</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-unusual-top-level-domains-2aff9e01-d3bb-4455-94e3-66be758474bd-689a2946.html">Google DNS - Unusual top level domains</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks (2)</h3>
+<p><strong>In solution <a href="../solutions/googlecloudplatformdns.html">GoogleCloudPlatformDNS</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-gcpdns-15de76e5.html">GCPDNS</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/team-cymru-scout-teamcymruscout-b64c6ed4.html">TeamCymruScout</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Parsers Using This Table (2)</h2>
+<h3>ASIM Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimdnsgcp.html">ASimDnsGcp</a></td>
+<td style="text-align: left;">Dns</td>
+<td style="text-align: left;">GCP Cloud DNS</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Other Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/gcpclouddns.html">GCPCloudDNS</a></td>
+<td style="text-align: left;"><a href="../solutions/googlecloudplatformdns.html">GoogleCloudPlatformDNS</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

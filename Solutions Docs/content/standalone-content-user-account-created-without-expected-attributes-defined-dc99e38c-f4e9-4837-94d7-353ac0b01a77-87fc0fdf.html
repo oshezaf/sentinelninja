@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User account created without expected attributes defined &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>User account created without expected attributes defined</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>'This query looks for accounts being created that do not have attributes populated that are commonly populated in the tenant.   Attackers may attempt to add accounts as a means of establishing persistant access to an environment, looking for anomalies in created accounts may help identify illegitimately created accounts.   Created accounts should be investigated to ensure they were legitimated created.   Ref: https://docs.microsoft.com/azure/active-directory/fundamentals/security-operations-user</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Analytic Rule</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;">Standalone Content</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ID</strong></td>
+<td style="text-align: left;"><code>dc99e38c-f4e9-4837-94d7-353ac0b01a77</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Severity</strong></td>
+<td style="text-align: left;">Low</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Kind</strong></td>
+<td style="text-align: left;">Scheduled</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Tactics</strong></td>
+<td style="text-align: left;">Persistence</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Techniques</strong></td>
+<td style="text-align: left;">T1136.003</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Required Connectors</strong></td>
+<td style="text-align: left;"><a href="../connectors/azureactivedirectory.html">AzureActiveDirectory</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Detections/AuditLogs/Useraccountcreatedwithoutexpectedattributesdefined.yaml">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="analytic-rules.html">Back to Analytic Rules</a></p>
+</div>
+</body>
+</html>

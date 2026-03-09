@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Derdack SIGNL4 &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Derdack SIGNL4</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/signl4.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>DerdackSIGNL4</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Derdack</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/signl4.html">SIGNL4</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/rest-api.html">REST API</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SIGNL4/Data%20Connectors/DerdackSIGNL4.json">DerdackSIGNL4.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Connector definition requires workspace key (SharedKey pattern)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+</tbody>
+</table>
+<p>When critical systems fail or security incidents happen, SIGNL4 bridges the ‘last mile’ to your staff, engineers, IT admins and workers in the field. It adds real-time mobile alerting to your services, systems, and processes in no time. SIGNL4 notifies through persistent mobile push, SMS text and voice calls with acknowledgement, tracking and escalation. Integrated duty and shift scheduling ensure the right people are alerted at the right time.</p>
+<p><a href="https://www.signl4.com">Learn more &gt;</a></p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/signl4-cl.html"><code>SIGNL4_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+<p><strong>NOTE:</strong> This data connector is mainly configured on the SIGNL4 side. You can find a description video here: <a href="https://www.signl4.com/blog/portfolio_item/azure-sentinel-mobile-alert-notification-duty-schedule-escalation/"><strong>Integrate SIGNL4 with Microsoft Sentinel</strong></a>.</p>
+<p><strong>SIGNL4 Connector:</strong> The SIGNL4 connector for Microsoft Sentinel, Azure Security Center and other Azure Graph Security API providers provides seamless 2-way integration with your Azure Security solutions. Once added to your SIGNL4 team, the connector will read security alerts from Azure Graph Security API and fully automatically and trigger alert notifications to your team members on duty. It will also synchronize the alert status from SIGNL4 to Graph Security API, so that if alerts are acknowledged or closed, this status is also updated on the according Azure Graph Security API alert or the corresponding security provider. As mentioned, the connector mainly uses Azure Graph Security API, but for some security providers, such as Microsoft Sentinel, it also uses dedicated REST APIs from according Azure solutions.</p>
+</blockquote>
+<p><strong>1. Microsoft Sentinel Features</strong></p>
+<p>Microsoft Sentinel is a cloud native SIEM solution from Microsoft and a security alert provider in Azure Graph Security API. However, the level of alert details available with the Graph Security API is limited for Microsoft Sentinel. The connector can therefore augment alerts with further details (insights rule search results), from the underlying Microsoft Sentinel Log Analytics workspace. To be able to do that, the connector communicates with Azure Log Analytics REST API and needs according permissions (see below). Furthermore, the app can also update the status of Microsoft Sentinel incidents, when all related security alerts are e.g. in progress or resolved. In order to be able to do that, the connector needs to be a member of the 'Microsoft Sentinel Contributors' group in your Azure Subscription.
+ <strong>Automated deployment in Azure</strong>
+ The credentials required to access the beforementioned APIs, are generated by a small PowerShell script that you can download below. The script performs the following tasks for you:
+ - Logs you on to your Azure Subscription (please login with an administrator account)
+ - Creates a new enterprise application for this connector in your Azure AD, also referred to as service principal
+ - Creates a new role in your Azure IAM that grants read/query permission to only Azure Log Analytics workspaces.
+ - Joins the enterprise application to that user role
+ - Joins the enterprise application to the 'Microsoft Sentinel Contributors' role
+ - Outputs some data that you need to configure app (see below)</p>
+<p><strong>2. Deployment procedure</strong></p>
+<ol>
+<li>Download the PowerShell deployment script from <a href="https://github.com/signl4/signl4-integration-azuresentinel/blob/master/registerSIGNL4Client.ps1">here</a>.</li>
+<li>Review the script and the roles and permission scopes it deploys for the new app registration. If you don't want to use the connector with Microsoft Sentinel, you could remove all role creation and role assignment code and only use it to create the app registration (SPN) in your Azure Active Directory.</li>
+<li>Run the script. At the end it outputs information that you need to enter in the connector app configuration.</li>
+<li>In Azure AD, click on 'App Registrations'. Find the app with the name 'SIGNL4AzureSecurity' and open its details</li>
+<li>On the left menu blade click 'API Permissions'. Then click 'Add a permission'.</li>
+<li>On the blade that loads, under 'Microsoft APIs' click on the 'Microsoft Graph' tile, then click 'App permission'.</li>
+<li>In the table that is displayed expand 'SecurityEvents' and check 'SecurityEvents.Read.All' and 'SecurityEvents.ReadWrite.All'.</li>
+<li>Click 'Add permissions'.</li>
+</ol>
+<p><strong>3. Configuring the SIGNL4 connector app</strong></p>
+<p>Finally, enter the IDs, that the script has outputted in the connector configuration:
+ - Azure Tenant ID
+ - Azure Subscription ID
+ - Client ID (of the enterprise application)
+ - Client Secret (of the enterprise application)
+ Once the app is enabled, it will start reading your Azure Graph Security API alerts.</p>
+<blockquote>
+<p><strong>NOTE:</strong> It will initially only read the alerts that have occurred within the last 24 hours.
+- <strong>Workspace ID</strong>: <code>WorkspaceId</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

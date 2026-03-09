@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GKEHPADecision &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>GKEHPADecision</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for GKEHPADecision table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Security</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gkehpadecision">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (38 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gkehpadecision">Azure Monitor documentation</a> · <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Kubernetes%20Engine/Data%20Connectors/GoogleKubernetesEngineLogs_ccp/GoogleKubernetesEngineLogs_DCR.json">Data Collection Rule definition</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActuationLatencySeconds</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Time taken (in seconds) to apply the autoscaling decision from the time it was made.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActuationTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp when the autoscaler made a scaling decision.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClusterName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the GKE cluster where the HPA decision occurred.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ComponentLocation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The physical location (region or zone) of the Kubernetes component emitting the log.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ComponentName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the GKE control plane component (typically 'horizontal-pod-autoscaler').</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ComputeResourceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the compute resource or pod that is being scaled.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConfiguredSize</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The number of replicas configured after the autoscaler decision.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">HPA</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the Horizontal Pod Autoscaler making the decision.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">insertId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique ID assigned to the log entry to ensure de-duplication.</td>
+<td style="text-align: left;">DCR, Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">jsonPayload</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">DCR</td>
+</tr>
+<tr>
+<td style="text-align: left;">labels</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Dynamic field containing various labels associated with the log entry.</td>
+<td style="text-align: left;">DCR, Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">LeadingMetricIndex</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Index indicating the metric that most influenced the autoscaling decision.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">Location</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The geographical location (region or zone) of the cluster.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">logName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The resource path of the log (e.g., projects/{project_id}/logs/{log_id}).</td>
+<td style="text-align: left;">DCR, Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">Message</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The content of the log message.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProjectID</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Google Cloud project ID that owns the GKE cluster.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">receiveTimestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp when the log was received by the logging system.</td>
+<td style="text-align: left;">DCR, Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">Replicas</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The current number of replicas before the scaling decision.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">resource</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">DCR</td>
+</tr>
+<tr>
+<td style="text-align: left;">severity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The severity level of the log (e.g., DEBUG, INFO, WARNING, ERROR).</td>
+<td style="text-align: left;">DCR, Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceFile</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source code file where the log originated from.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceLine</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The specific line number in the source file that generated the log.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">sourceLocation</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">DCR</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">StartTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time when metric collection or evaluation started for the autoscaler.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetRefAPIVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">API version of the target resource (e.g., apps/v1).</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetRefKind</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Kind of the target Kubernetes resource (e.g., Deployment, StatefulSet).</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetRefName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the target Kubernetes object being scaled.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp indicating when the log event was created or generated by the source system.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">timestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">DCR</td>
+</tr>
+<tr>
+<td style="text-align: left;">TopLevelLimit</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The top-level scaling limit set on the number of replicas (e.g., maxReplicas).</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">TopLevelOverride</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">An override value for top-level limits, if specified (e.g., via policy or admin input).</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">VMName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the VM instance hosting the workload.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">Zone</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The specific zone in which the resource resides.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/google-kubernetes-engine.html">Google Kubernetes Engine</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/gkeccpdefinition.html">Google Kubernetes Engine (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

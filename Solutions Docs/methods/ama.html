@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azure Monitor Agent AMA &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Azure Monitor Agent (AMA)</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../methods-index.html">Back to Methods Index</a></p>
+<hr />
+<p>The Azure Monitor Agent (AMA) is the recommended agent for collecting logs from Azure VMs, on-premises servers, and multi-cloud environments. It replaces the legacy Log Analytics agent (MMA) and provides improved performance, security, and manageability.</p>
+<h2>Documentation</h2>
+<ul>
+<li><a href="https://learn.microsoft.com/azure/azure-monitor/agents/azure-monitor-agent-overview">📖 Azure Monitor Agent overview</a></li>
+<li><a href="https://learn.microsoft.com/azure/azure-monitor/agents/azure-monitor-agent-manage">📖 Install and manage the Azure Monitor Agent</a></li>
+<li><a href="https://learn.microsoft.com/azure/sentinel/connect-services-windows-based">📖 Connect via Windows agent-based connectors</a></li>
+<li><a href="https://learn.microsoft.com/azure/azure-monitor/agents/azure-monitor-agent-migration">📖 Migrate to Azure Monitor Agent from Log Analytics agent</a></li>
+<li><a href="https://learn.microsoft.com/azure/sentinel/ama-migrate">📖 AMA migration for Microsoft Sentinel</a></li>
+<li><a href="https://learn.microsoft.com/azure/azure-monitor/essentials/data-collection-rule-overview">📖 Data collection rules in Azure Monitor</a></li>
+<li><a href="https://learn.microsoft.com/azure/sentinel/cef-syslog-ama-overview">📖 CEF and Syslog via AMA overview</a></li>
+<li><a href="https://learn.microsoft.com/azure/sentinel/connect-cef-syslog-ama">📖 Connect CEF and Syslog via AMA</a></li>
+<li><a href="https://learn.microsoft.com/azure/sentinel/unified-connector-cef-device">📖 Device configuration for CEF via AMA</a></li>
+<li><a href="https://learn.microsoft.com/azure/sentinel/unified-connector-syslog-device">📖 Syslog device configuration</a></li>
+<li><a href="https://learn.microsoft.com/azure/sentinel/cef-syslog-ama-troubleshooting">📖 Troubleshoot CEF and Syslog via AMA</a></li>
+<li><a href="https://learn.microsoft.com/azure/sentinel/connect-custom-logs-ama">📖 Collect logs from text files via AMA</a></li>
+<li><a href="https://learn.microsoft.com/azure/sentinel/unified-connector-custom-device">📖 Custom logs device configuration</a></li>
+<li><a href="https://learn.microsoft.com/azure/sentinel/connect-dns-ama">📖 DNS via AMA</a></li>
+</ul>
+<h2>Statistics</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Metric</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Total Connectors</td>
+<td style="text-align: right;"><strong>59</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">Active</td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr>
+<td style="text-align: left;">Deprecated 🚫</td>
+<td style="text-align: right;">34</td>
+</tr>
+<tr>
+<td style="text-align: left;">Unpublished ⚠️</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+<h2>Connectors Using This Method</h2>
+<h3>Active Connectors</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Publisher</th>
+<th style="text-align: center;">Tables</th>
+<th style="text-align: left;">Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/esi-opt34domaincontrollerssecurityeventlogs.html"> Microsoft Active-Directory Domain Controllers Security Event Logs</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/infobloxclouddataconnectorama.html">[Recommended] Infoblox Cloud Data Connector via AMA</a></td>
+<td style="text-align: left;">Infoblox</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/infoblox.html">Infoblox</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/infobloxsocinsightsdataconnector-ama.html">[Recommended] Infoblox SOC Insight Data Connector via AMA</a></td>
+<td style="text-align: left;">Infoblox</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/infoblox.html">Infoblox</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a> 🔶</td>
+<td style="text-align: left;">Vectra AI</td>
+<td style="text-align: center;">17</td>
+<td style="text-align: left;"><a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/automatedlogicwebctrl.html">Automated Logic WebCTRL </a></td>
+<td style="text-align: left;">AutomatedLogic</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/alc-webctrl.html">ALC-WebCTRL</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ciscoasaama.html">Cisco ASA/FTD via AMA</a> ➕</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/ciscoasa.html">CiscoASA</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ciscosdwan.html">Cisco Software Defined WAN</a> 🔶</td>
+<td style="text-align: left;">Cisco</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/cisco-sd-wan.html">Cisco SD-WAN</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/cefama.html">Common Event Format (CEF) via AMA</a> ➕</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ctera.html">CTERA Syslog</a></td>
+<td style="text-align: left;">CTERA Networks Ltd</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ctera.html">CTERA</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> 🔶</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: left;"><a href="../solutions/customlogsama.html">CustomLogsAma</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/cyborgsecurity-hunter.html">Cyborg Security HUNTER Hunt Packages</a></td>
+<td style="text-align: left;">Cyborg Security</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/cyborg-security-hunter.html">Cyborg Security HUNTER</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/fortinetfortiwebama.html">Fortinet FortiWeb Web Application Firewall via AMA</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.html">Fortinet FortiWeb Cloud WAF-as-a-Service connector for Microsoft Sentinel</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ibossama.html">iboss via AMA</a> ➕</td>
+<td style="text-align: left;">iboss</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/iboss.html">iboss</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/esi-opt5exchangeiislogs.html">IIS Logs of Microsoft Exchange Servers</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/esi-opt1exchangeadminauditlogsbyeventlogs.html">Microsoft Exchange Admin Audit Logs by Event Logs</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/esi-opt2exchangeserverseventlogs.html">Microsoft Exchange Logs and Events</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/radiflowisid.html">Radiflow iSID via AMA</a></td>
+<td style="text-align: left;">Radiflow</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/radiflow.html">Radiflow</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/silverfortama.html">Silverfort Admin Console</a></td>
+<td style="text-align: left;">Silverfort</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/silverfort.html">Silverfort</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/syslogama.html">Syslog via AMA</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/syslog.html">Syslog</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/virtualmetricmssentinelconnector.html">VirtualMetric DataStream for Microsoft Sentinel</a></td>
+<td style="text-align: left;">VirtualMetric</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/virtualmetricmssentineldatalakeconnector.html">VirtualMetric DataStream for Microsoft Sentinel data lake</a></td>
+<td style="text-align: left;">VirtualMetric</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/asimdnsactivitylogs.html">Windows DNS Events via AMA</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/windows-server-dns.html">Windows Server DNS</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/windowsfirewallama.html">Windows Firewall Events via AMA</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/windows-firewall.html">Windows Firewall</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/windowsforwardedevents.html">Windows Forwarded Events</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/windows-forwarded-events.html">Windows Forwarded Events</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/windowssecurityevents.html">Windows Security Events via AMA</a> ➕</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/windows-security-events.html">Windows Security Events</a></td>
+</tr>
+</tbody>
+</table>
+<h3>Deprecated Connectors 🚫</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Publisher</th>
+<th style="text-align: center;">Tables</th>
+<th style="text-align: left;">Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/darktraceama.html">[Deprecated] AI Analyst Darktrace via AMA</a></td>
+<td style="text-align: left;">Darktrace</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ai-analyst-darktrace.html">AI Analyst Darktrace</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/akamaisecurityeventsama.html">[Deprecated] Akamai Security Events via AMA</a></td>
+<td style="text-align: left;">Akamai</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/akamai-security-events.html">Akamai Security Events</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/arubaclearpassama.html">[Deprecated] Aruba ClearPass via AMA</a></td>
+<td style="text-align: left;">Aruba Networks</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/aruba-clearpass.html">Aruba ClearPass</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/broadcomsymantecdlpama.html">[Deprecated] Broadcom Symantec DLP via AMA</a></td>
+<td style="text-align: left;">Broadcom</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/broadcom-symantecdlp.html">Broadcom SymantecDLP</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/ciscofirepowerestreamerama.html">[Deprecated] Cisco Firepower eStreamer via AMA</a></td>
+<td style="text-align: left;">Cisco</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/cisco-firepower-estreamer.html">Cisco Firepower EStreamer</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/ciscosegama.html">[Deprecated] Cisco Secure Email Gateway via AMA</a></td>
+<td style="text-align: left;">Cisco</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ciscoseg.html">CiscoSEG</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/citrixwafama.html">[Deprecated] Citrix WAF (Web App Firewall) via AMA</a></td>
+<td style="text-align: left;">Citrix Systems Inc.</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/citrix-web-app-firewall.html">Citrix Web App Firewall</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/clarotyama.html">[Deprecated] Claroty via AMA</a></td>
+<td style="text-align: left;">Claroty</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/claroty.html">Claroty</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/contrastprotectama.html">[Deprecated] Contrast Protect via AMA</a></td>
+<td style="text-align: left;">Contrast Security</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/contrast-protect.html">Contrast Protect</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/crowdstrikefalconendpointprotectionama.html">[Deprecated] CrowdStrike Falcon Endpoint Protection via AMA</a></td>
+<td style="text-align: left;">CrowdStrike</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/cyberarkama.html">[Deprecated] CyberArk Privilege Access Manager (PAM) Events via AMA</a></td>
+<td style="text-align: left;">Cyber-Ark</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/cyberark-privilege-access-manager-pam-events.html">CyberArk Privilege Access Manager (PAM) Events</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/delineasecretserverama.html">[Deprecated] Delinea Secret Server via AMA</a></td>
+<td style="text-align: left;">Delinea, Inc</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/delinea-secret-server.html">Delinea Secret Server</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/extrahopnetworksama.html">[Deprecated] ExtraHop Reveal(x) via AMA</a></td>
+<td style="text-align: left;">ExtraHop Networks</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/extrahop-reveal-x.html">ExtraHop Reveal(x)</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/f5ama.html">[Deprecated] F5 Networks via AMA</a></td>
+<td style="text-align: left;">F5 Networks</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/f5-networks.html">F5 Networks</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/fireeyenxama.html">[Deprecated] FireEye Network Security (NX) via AMA</a></td>
+<td style="text-align: left;">FireEye</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/fireeye-network-security.html">FireEye Network Security</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/forcepointcasbama.html">[Deprecated] Forcepoint CASB via AMA</a></td>
+<td style="text-align: left;">Forcepoint CASB</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/forcepoint-casb.html">Forcepoint CASB</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/forcepointcsgama.html">[Deprecated] Forcepoint CSG via AMA</a></td>
+<td style="text-align: left;">Forcepoint</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/forcepoint-csg.html">Forcepoint CSG</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/forcepointngfwama.html">[Deprecated] Forcepoint NGFW via AMA</a></td>
+<td style="text-align: left;">Forcepoint</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/forcepoint-ngfw.html">Forcepoint NGFW</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/fortinetama.html">[Deprecated] Fortinet via AMA</a></td>
+<td style="text-align: left;">Fortinet</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.html">Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/illumiocoreama.html">[Deprecated] Illumio Core via AMA</a></td>
+<td style="text-align: left;">Illumio</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/illumio-core.html">Illumio Core</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/illusiveattackmanagementsystemama.html">[Deprecated] Illusive Platform via AMA</a></td>
+<td style="text-align: left;">illusive</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/illusive-platform.html">Illusive Platform</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/netwrixama.html">[Deprecated] Netwrix Auditor via AMA</a></td>
+<td style="text-align: left;">Netwrix</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/netwrix-auditor.html">Netwrix Auditor</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/nozominetworksn2osama.html">[Deprecated] Nozomi Networks N2OS via AMA</a></td>
+<td style="text-align: left;">Nozomi Networks</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/nozominetworks.html">NozomiNetworks</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/ossecama.html">[Deprecated] OSSEC via AMA</a></td>
+<td style="text-align: left;">OSSEC</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ossec.html">OSSEC</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/paloaltonetworksama.html">[Deprecated] Palo Alto Networks (Firewall) via AMA</a></td>
+<td style="text-align: left;">Palo Alto Networks</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/paloalto-pan-os.html">PaloAlto-PAN-OS</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/paloaltocdlama.html">[Deprecated] Palo Alto Networks Cortex Data Lake (CDL) via AMA</a></td>
+<td style="text-align: left;">Palo Alto Networks</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/paloaltocdl.html">PaloAltoCDL</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/pingfederateama.html">[Deprecated] PingFederate via AMA</a></td>
+<td style="text-align: left;">Ping Identity</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/pingfederate.html">PingFederate</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/ridgebotdataconnector.html">[Deprecated] RIDGEBOT - data connector for Microsoft Sentinel</a></td>
+<td style="text-align: left;">RidgeSecurity</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ridgesecurity.html">RidgeSecurity</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/sonicwallfirewallama.html">[Deprecated] SonicWall Firewall via AMA</a></td>
+<td style="text-align: left;">SonicWall</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/sonicwall-firewall.html">SonicWall Firewall</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/trendmicroapexoneama.html">[Deprecated] Trend Micro Apex One via AMA</a></td>
+<td style="text-align: left;">Trend Micro</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/trend-micro-apex-one.html">Trend Micro Apex One</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/varmouracama.html">[Deprecated] vArmour Application Controller via AMA</a></td>
+<td style="text-align: left;">vArmour</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/varmour-application-controller.html">vArmour Application Controller</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/aivectradetectama.html">[Deprecated] Vectra AI Detect via AMA</a></td>
+<td style="text-align: left;">Vectra AI</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/vectra-ai-detect.html">Vectra AI Detect</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/wirex-systems-nfpama.html">[Deprecated] WireX Network Forensics Platform via AMA</a></td>
+<td style="text-align: left;">WireX_Systems</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/wirex-network-forensics-platform.html">WireX Network Forensics Platform</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/zscalerama.html">[Deprecated] Zscaler via AMA</a></td>
+<td style="text-align: left;">Zscaler</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/zscaler-internet-access.html">Zscaler Internet Access</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>🚫 <strong>Deprecated:</strong> This connector has been deprecated and may be removed in future versions.</p>
+</blockquote>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../methods-index.html">Back to Methods Index</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DeviceTvmCertificateInfo &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>DeviceTvmCertificateInfo</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<blockquote>
+<p><strong>Defender XDR Only:</strong> This table is available in Microsoft Defender XDR advanced hunting but is not available in the Azure Monitor Log Analytics table reference.</p>
+</blockquote>
+<p>Certificate information for devices in the organization from Microsoft Defender Vulnerability Management</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">MDE</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvmcertificateinfo-table">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (14 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmcertificateinfo">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">DeviceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the device in the service</td>
+</tr>
+<tr>
+<td style="text-align: left;">ExpirationDate</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The date and time beyond which the certificate is no longer valid</td>
+</tr>
+<tr>
+<td style="text-align: left;">ExtendedKeyUsage</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Other valid uses for the certificate</td>
+</tr>
+<tr>
+<td style="text-align: left;">FriendlyName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Easy-to-understand version of a certificate's title</td>
+</tr>
+<tr>
+<td style="text-align: left;">IssueDate</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The earliest date and time when the certificate became valid</td>
+</tr>
+<tr>
+<td style="text-align: left;">IssuedBy</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Entity that verified the information and signed the certificate</td>
+</tr>
+<tr>
+<td style="text-align: left;">IssuedTo</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Entity that a certificate belongs to; can be a device, an individual, or an organization</td>
+</tr>
+<tr>
+<td style="text-align: left;">KeySize</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Size of the key used in the signature algorithm</td>
+</tr>
+<tr>
+<td style="text-align: left;">KeyUsage</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The valid cryptographic uses of the certificate's public key</td>
+</tr>
+<tr>
+<td style="text-align: left;">Path</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The location of the certificate</td>
+</tr>
+<tr>
+<td style="text-align: left;">SerialNumber</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the certificate within a certificate authority's systems</td>
+</tr>
+<tr>
+<td style="text-align: left;">SignatureAlgorithm</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Hashing algorithm and encryption algorithm used</td>
+</tr>
+<tr>
+<td style="text-align: left;">SubjectType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates if the holder of the certificate is a CA or end entity</td>
+</tr>
+<tr>
+<td style="text-align: left;">Thumbprint</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the certificate</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Cloud Platform Cloud Monitoring &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Google Cloud Platform Cloud Monitoring</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/google_logo.svg" alt="Google Cloud Platform Cloud Monitoring Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-07-01</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Cloud%20Monitoring">Google Cloud Platform Cloud Monitoring</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://cloud.google.com/gcp">Google Cloud Platform</a> Cloud Monitoring data connector provides the capability to ingest <a href="https://cloud.google.com/monitoring/api/metrics_gcp">GCP Monitoring metrics</a> into Microsoft Sentinel using the GCP Monitoring API. Refer to <a href="https://cloud.google.com/monitoring/api/v3">GCP Monitoring API documentation</a> for more information. </p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs: </p>
+<p>• <a href="https://aka.ms/Sentinel-CCP_Platform">Microsoft Sentinel Codeless Connector Framework</a></p>
+<p><strong>Additional Information</strong></p>
+<p>📖 <strong>Setup Guide:</strong> <a href="https://learn.microsoft.com/azure/sentinel/connect-google-cloud-platform">Google Cloud Platform connectors</a> - Connect GCP logs to Microsoft Sentinel</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong> (plus 1 discovered⚠️):</p>
+<ul>
+<li><a href="../connectors/gcpmonitorccpdefinition.html">Google Cloud Platform Cloud Monitoring (via Codeless Connector Framework)</a></li>
+<li><a href="../connectors/gcpmonitordataconnector.html">[DEPRECATED] Google Cloud Platform Cloud Monitoring</a> ⚠️ 🔶</li>
+</ul>
+<p><em>⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.</em></p>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>2 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/gcpmonitoring.html"><code>GCPMonitoring</code></a></td>
+<td><a href="../connectors/gcpmonitorccpdefinition.html">Google Cloud Platform Cloud Monitoring (via Codeless Connector Framework)</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/gcp-monitoring-cl.html"><code>GCP_MONITORING_CL</code></a> 🔶</td>
+<td><a href="../connectors/gcpmonitordataconnector.html">[DEPRECATED] Google Cloud Platform Cloud Monitoring</a></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>1 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/gcp-monitor.html">GCP_MONITOR</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/gcp-monitoringv2-cl.html"><code>GCP_MONITORINGV2_CL</code></a> <em>(read)</em><br><a href="../tables/gcp-monitoring-cl.html"><code>GCP_MONITORING_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>ChangeHistory</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.3</td>
+<td>21-01-2026</td>
+<td>Updated <strong>Data Connector</strong> to support dynamic Redirect URI</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>26-08-2025</td>
+<td>Moving Google Cloud Platform Cloud Monitoring <strong>CCF Data Connector</strong> to GA.</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>07-07-2025</td>
+<td>Migrated the <strong>Function app</strong> connector to new CCF <strong>Data Connector</strong> - <em>Google Cloud Platform Cloud Monitoring</em> and updated <strong>Parser</strong>.</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>05-09-2024</td>
+<td>Updated the python runtime version to 3.11 in Function App <strong>Data Connector</strong>.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collection Methods Index &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Collection Methods Index</h1>
+<p>Data connectors use different collection methods to ingest data into Microsoft Sentinel. This page provides an overview of all collection methods and the connectors that use each method.</p>
+<p>📚 <strong>Learn more:</strong> <a href="https://learn.microsoft.com/azure/sentinel/connect-data-sources">Microsoft Sentinel data connectors overview</a></p>
+<p><strong>Browse:</strong> <a href="README.html">🏠</a> · <a href="solutions-index.html">Solutions</a> · <a href="connectors-index.html">Connectors</a> · <strong>Methods</strong> · <a href="tables-index.html">Tables</a> · <a href="content/content-index.html">Content</a> · <a href="parsers/parsers-index.html">Parsers</a> · <a href="asim/asim-index.html">ASIM Parsers</a> · <a href="asim/asim-products-index.html">ASIM Products</a> · <a href="statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<hr />
+<h2>Collection Methods Summary</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Collection Method</th>
+<th style="text-align: right;">Total</th>
+<th style="text-align: right;">Active</th>
+<th style="text-align: right;">Deprecated 🚫</th>
+<th style="text-align: right;">Unpublished ⚠️</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: right;"><strong>132</strong></td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/mma.html">MMA</a></td>
+<td style="text-align: right;"><strong>110</strong></td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
+<td style="text-align: right;"><strong>106</strong></td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/ama.html">AMA</a></td>
+<td style="text-align: right;"><strong>59</strong></td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/rest-api.html">REST API</a></td>
+<td style="text-align: right;"><strong>57</strong></td>
+<td style="text-align: right;">52</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/native.html">Native</a></td>
+<td style="text-align: right;"><strong>25</strong></td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/azure-diagnostics.html">Azure Diagnostics</a></td>
+<td style="text-align: right;"><strong>17</strong></td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/ccf-legacy.html">CCF (Legacy)</a></td>
+<td style="text-align: right;"><strong>16</strong></td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/ccf-push.html">CCF Push</a></td>
+<td style="text-align: right;"><strong>11</strong></td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/unknown.html">Unknown</a></td>
+<td style="text-align: right;"><strong>7</strong></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: right;"><strong>540</strong></td>
+<td style="text-align: right;"><strong>351</strong></td>
+<td style="text-align: right;"><strong>145</strong></td>
+<td style="text-align: right;"><strong>44</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>🚫 <strong>Deprecated:</strong> This connector has been deprecated and may be removed in future versions.</p>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<hr />
+<h2>Ingestion API by Collection Method</h2>
+<p>API-based connectors (CCF Push, Azure Function, REST API, and Custom Log) use one of two APIs to send data to the Log Analytics workspace. CCF and CCF (Legacy) are excluded as their ingestion is platform-managed.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Collection Method</th>
+<th style="text-align: right;"><a href="methods/log-ingestion-api.html">Log Ingestion API</a></th>
+<th style="text-align: right;"><a href="methods/http-data-collector-api.html">HTTP Data Collector API</a></th>
+<th style="text-align: right;"><a href="methods/undetermined.html">Undetermined</a></th>
+<th style="text-align: right;"><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"><strong>129</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/rest-api.html">REST API</a></td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;"><strong>55</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/ccf-push.html">CCF Push</a></td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;"><strong>11</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: right;"><strong>47</strong></td>
+<td style="text-align: right;"><strong>144</strong></td>
+<td style="text-align: right;"><strong>4</strong></td>
+<td style="text-align: right;"><strong>195</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="README.html">🏠</a> · <a href="solutions-index.html">Solutions</a> · <a href="connectors-index.html">Connectors</a> · <strong>Methods</strong> · <a href="tables-index.html">Tables</a> · <a href="content/content-index.html">Content</a> · <a href="parsers/parsers-index.html">Parsers</a> · <a href="asim/asim-index.html">ASIM Parsers</a> · <a href="asim/asim-products-index.html">ASIM Products</a> · <a href="statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+</div>
+</body>
+</html>

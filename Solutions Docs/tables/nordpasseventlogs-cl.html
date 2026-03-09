@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NordPassEventLogsCL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>NordPassEventLogs_CL</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (9 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/NordPassEventLogs_CL.json">KQL validation test schema</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">action</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">event_Type</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">initiator</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">metadata</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">organization_uuid</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">timestamp</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">user_email</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">user_uuid</td>
+<td style="text-align: left;">string</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/nordpass.html">NordPass</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/nordpass.html">NordPass</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Content Items Using This Table (10)</h2>
+<h3>Analytic Rules (9)</h3>
+<p><strong>In solution <a href="../solutions/nordpass.html">NordPass</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/nordpass-nordpass-activity-token-revocation-800314a6-759a-4575-93e2-1e080b1d33f9-4469b0a8.html">NordPass - Activity token revocation</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nordpass-nordpass-declined-invitation-283d7506-f3c6-419a-ae9c-d9afe6a15d6d-905a2cf5.html">NordPass - Declined invitation</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nordpass-nordpass-deleting-items-of-deleted-member-0068dca4-dea0-46a3-a970-655e067a145f-3d5122fd.html">NordPass - Deleting items of deleted member</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nordpass-nordpass-domain-data-detected-in-breach-e3f2b6c9-df0c-4b36-a376-bb2762e4dbdc-374248c3.html">NordPass - Domain data detected in breach</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nordpass-nordpass-manual-invitation,-suspension,-or-deletion-693c5217-e840-427f-9661-3fa0ef266040-050ce107.html">NordPass - Manual invitation, suspension, or deletion</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nordpass-nordpass-user-data-detected-in-breach-c4d2eb42-a4ab-4db6-a270-3d2ed7e057a0-7d9dfaf4.html">NordPass - User data detected in breach</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nordpass-nordpass-user-deletes-items-in-bulk-f72f630f-c890-49fe-b747-80f4fb3b6348-63e3aff5.html">NordPass - User deletes items in bulk</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nordpass-nordpass-user-fails-authentication-27b261dc-68f3-489a-944f-bc252e0c1960-90f54b58.html">NordPass - User fails authentication</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nordpass-nordpass-vault-export-c7f14b43-7625-4516-b137-30b7fda65bcf-aff9055e.html">NordPass - Vault export</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks (1)</h3>
+<p><strong>In solution <a href="../solutions/nordpass.html">NordPass</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/nordpass-nordpass-9080f186.html">NordPass</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

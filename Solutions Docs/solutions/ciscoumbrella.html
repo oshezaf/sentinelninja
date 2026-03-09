@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CiscoUmbrella &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>CiscoUmbrella</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cisco-logo-72px.svg" alt="CiscoUmbrella Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com/">https://support.microsoft.com/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-04-01</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella">CiscoUmbrella</a></td>
+</tr>
+</tbody>
+</table>
+<p>The Cisco Cloud Security solution for Microsoft Sentinel enables you to ingest <a href="https://docs.sse.cisco.com/sse-user-guide/docs/welcome-cisco-secure-access">Cisco Secure Access</a> and <a href="https://docs.umbrella.com/umbrella-user-guide/docs/getting-started">Cisco Umbrella</a> <a href="https://docs.sse.cisco.com/sse-user-guide/docs/manage-your-logs">logs</a> stored in Amazon S3 into Microsoft Sentinel using the Amazon S3 REST API</p>
+<p><strong>Additional Information</strong></p>
+<p>📖 <strong>Vendor Documentation:</strong> <a href="https://docs.umbrella.com/deployment-umbrella/docs/log-formats-and-versioning">Cisco Umbrella Log Formats</a> - Log formats and versioning guide</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/ciscoumbrelladataconnector.html">Cisco Cloud Security</a> 🔶</li>
+<li><a href="../connectors/ciscoumbrelladataconnectorelasticpremium.html">Cisco Cloud Security (using elastic premium plan)</a> 🔶</li>
+</ul>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>12 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/cisco-umbrella-audit-cl.html"><code>Cisco_Umbrella_audit_CL</code></a> 🔶</td>
+<td><a href="../connectors/ciscoumbrelladataconnector.html">Cisco Cloud Security</a>, <a href="../connectors/ciscoumbrelladataconnectorelasticpremium.html">Cisco Cloud Security (using elastic premium plan)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/cisco-umbrella-cloudfirewall-cl.html"><code>Cisco_Umbrella_cloudfirewall_CL</code></a> 🔶</td>
+<td><a href="../connectors/ciscoumbrelladataconnector.html">Cisco Cloud Security</a>, <a href="../connectors/ciscoumbrelladataconnectorelasticpremium.html">Cisco Cloud Security (using elastic premium plan)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/cisco-umbrella-dlp-cl.html"><code>Cisco_Umbrella_dlp_CL</code></a> 🔶</td>
+<td><a href="../connectors/ciscoumbrelladataconnector.html">Cisco Cloud Security</a>, <a href="../connectors/ciscoumbrelladataconnectorelasticpremium.html">Cisco Cloud Security (using elastic premium plan)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/cisco-umbrella-dns-cl.html"><code>Cisco_Umbrella_dns_CL</code></a> 🔶</td>
+<td><a href="../connectors/ciscoumbrelladataconnector.html">Cisco Cloud Security</a>, <a href="../connectors/ciscoumbrelladataconnectorelasticpremium.html">Cisco Cloud Security (using elastic premium plan)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/cisco-umbrella-fileevent-cl.html"><code>Cisco_Umbrella_fileevent_CL</code></a> 🔶</td>
+<td><a href="../connectors/ciscoumbrelladataconnector.html">Cisco Cloud Security</a>, <a href="../connectors/ciscoumbrelladataconnectorelasticpremium.html">Cisco Cloud Security (using elastic premium plan)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/cisco-umbrella-firewall-cl.html"><code>Cisco_Umbrella_firewall_CL</code></a> 🔶</td>
+<td><a href="../connectors/ciscoumbrelladataconnector.html">Cisco Cloud Security</a>, <a href="../connectors/ciscoumbrelladataconnectorelasticpremium.html">Cisco Cloud Security (using elastic premium plan)</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/cisco-umbrella-intrusion-cl.html"><code>Cisco_Umbrella_intrusion_CL</code></a> 🔶</td>
+<td><a href="../connectors/ciscoumbrelladataconnector.html">Cisco Cloud Security</a>, <a href="../connectors/ciscoumbrelladataconnectorelasticpremium.html">Cisco Cloud Security (using elastic premium plan)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/cisco-umbrella-ip-cl.html"><code>Cisco_Umbrella_ip_CL</code></a> 🔶</td>
+<td><a href="../connectors/ciscoumbrelladataconnector.html">Cisco Cloud Security</a>, <a href="../connectors/ciscoumbrelladataconnectorelasticpremium.html">Cisco Cloud Security (using elastic premium plan)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/cisco-umbrella-proxy-cl.html"><code>Cisco_Umbrella_proxy_CL</code></a> 🔶</td>
+<td><a href="../connectors/ciscoumbrelladataconnector.html">Cisco Cloud Security</a>, <a href="../connectors/ciscoumbrelladataconnectorelasticpremium.html">Cisco Cloud Security (using elastic premium plan)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/cisco-umbrella-ravpnlogs-cl.html"><code>Cisco_Umbrella_ravpnlogs_CL</code></a> 🔶</td>
+<td><a href="../connectors/ciscoumbrelladataconnector.html">Cisco Cloud Security</a>, <a href="../connectors/ciscoumbrelladataconnectorelasticpremium.html">Cisco Cloud Security (using elastic premium plan)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/cisco-umbrella-ztaflow-cl.html"><code>Cisco_Umbrella_ztaflow_CL</code></a> 🔶</td>
+<td><a href="../connectors/ciscoumbrelladataconnector.html">Cisco Cloud Security</a>, <a href="../connectors/ciscoumbrelladataconnectorelasticpremium.html">Cisco Cloud Security (using elastic premium plan)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/cisco-umbrella-ztna-cl.html"><code>Cisco_Umbrella_ztna_CL</code></a> 🔶</td>
+<td><a href="../connectors/ciscoumbrelladataconnector.html">Cisco Cloud Security</a>, <a href="../connectors/ciscoumbrelladataconnectorelasticpremium.html">Cisco Cloud Security (using elastic premium plan)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>26 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-connection-to-unpopular-website-detected-75297f62-10a8-4fc1-9b2a-12f25c6f05a7-c775740f.html">Cisco Cloud Security - Connection to Unpopular Website Detected</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CommandAndControl, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-audit-cl.html"><code>Cisco_Umbrella_audit_CL</code></a><br><a href="../tables/cisco-umbrella-cloudfirewall-cl.html"><code>Cisco_Umbrella_cloudfirewall_CL</code></a><br><a href="../tables/cisco-umbrella-dlp-cl.html"><code>Cisco_Umbrella_dlp_CL</code></a><br><a href="../tables/cisco-umbrella-dns-cl.html"><code>Cisco_Umbrella_dns_CL</code></a><br><a href="../tables/cisco-umbrella-fileevent-cl.html"><code>Cisco_Umbrella_fileevent_CL</code></a><br><a href="../tables/cisco-umbrella-intrusion-cl.html"><code>Cisco_Umbrella_intrusion_CL</code></a><br><a href="../tables/cisco-umbrella-ip-cl.html"><code>Cisco_Umbrella_ip_CL</code></a><br><a href="../tables/cisco-umbrella-proxy-cl.html"><code>Cisco_Umbrella_proxy_CL</code></a><br><a href="../tables/cisco-umbrella-ravpnlogs-cl.html"><code>Cisco_Umbrella_ravpnlogs_CL</code></a><br><a href="../tables/cisco-umbrella-ztaflow-cl.html"><code>Cisco_Umbrella_ztaflow_CL</code></a><br><a href="../tables/cisco-umbrella-ztna-cl.html"><code>Cisco_Umbrella_ztna_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-connection-to-non-corporate-private-network-c9b6d281-b96b-4763-b728-9a04b9fe1246-dc2431a8.html">Cisco Cloud Security - Connection to non-corporate private network</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CommandAndControl, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-audit-cl.html"><code>Cisco_Umbrella_audit_CL</code></a><br><a href="../tables/cisco-umbrella-cloudfirewall-cl.html"><code>Cisco_Umbrella_cloudfirewall_CL</code></a><br><a href="../tables/cisco-umbrella-dlp-cl.html"><code>Cisco_Umbrella_dlp_CL</code></a><br><a href="../tables/cisco-umbrella-dns-cl.html"><code>Cisco_Umbrella_dns_CL</code></a><br><a href="../tables/cisco-umbrella-fileevent-cl.html"><code>Cisco_Umbrella_fileevent_CL</code></a><br><a href="../tables/cisco-umbrella-intrusion-cl.html"><code>Cisco_Umbrella_intrusion_CL</code></a><br><a href="../tables/cisco-umbrella-ip-cl.html"><code>Cisco_Umbrella_ip_CL</code></a><br><a href="../tables/cisco-umbrella-proxy-cl.html"><code>Cisco_Umbrella_proxy_CL</code></a><br><a href="../tables/cisco-umbrella-ravpnlogs-cl.html"><code>Cisco_Umbrella_ravpnlogs_CL</code></a><br><a href="../tables/cisco-umbrella-ztaflow-cl.html"><code>Cisco_Umbrella_ztaflow_CL</code></a><br><a href="../tables/cisco-umbrella-ztna-cl.html"><code>Cisco_Umbrella_ztna_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-crypto-miner-user-agent-detected-b619d1f1-7f39-4c7e-bf9e-afbb46457997-483ca4a0.html">Cisco Cloud Security - Crypto Miner User-Agent Detected</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact, CommandAndControl, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-audit-cl.html"><code>Cisco_Umbrella_audit_CL</code></a><br><a href="../tables/cisco-umbrella-cloudfirewall-cl.html"><code>Cisco_Umbrella_cloudfirewall_CL</code></a><br><a href="../tables/cisco-umbrella-dlp-cl.html"><code>Cisco_Umbrella_dlp_CL</code></a><br><a href="../tables/cisco-umbrella-dns-cl.html"><code>Cisco_Umbrella_dns_CL</code></a><br><a href="../tables/cisco-umbrella-fileevent-cl.html"><code>Cisco_Umbrella_fileevent_CL</code></a><br><a href="../tables/cisco-umbrella-intrusion-cl.html"><code>Cisco_Umbrella_intrusion_CL</code></a><br><a href="../tables/cisco-umbrella-ip-cl.html"><code>Cisco_Umbrella_ip_CL</code></a><br><a href="../tables/cisco-umbrella-proxy-cl.html"><code>Cisco_Umbrella_proxy_CL</code></a><br><a href="../tables/cisco-umbrella-ravpnlogs-cl.html"><code>Cisco_Umbrella_ravpnlogs_CL</code></a><br><a href="../tables/cisco-umbrella-ztaflow-cl.html"><code>Cisco_Umbrella_ztaflow_CL</code></a><br><a href="../tables/cisco-umbrella-ztna-cl.html"><code>Cisco_Umbrella_ztna_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-empty-user-agent-detected-2b328487-162d-4034-b472-59f1d53684a1-2a2d02f5.html">Cisco Cloud Security - Empty User Agent Detected</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-audit-cl.html"><code>Cisco_Umbrella_audit_CL</code></a><br><a href="../tables/cisco-umbrella-cloudfirewall-cl.html"><code>Cisco_Umbrella_cloudfirewall_CL</code></a><br><a href="../tables/cisco-umbrella-dlp-cl.html"><code>Cisco_Umbrella_dlp_CL</code></a><br><a href="../tables/cisco-umbrella-dns-cl.html"><code>Cisco_Umbrella_dns_CL</code></a><br><a href="../tables/cisco-umbrella-fileevent-cl.html"><code>Cisco_Umbrella_fileevent_CL</code></a><br><a href="../tables/cisco-umbrella-intrusion-cl.html"><code>Cisco_Umbrella_intrusion_CL</code></a><br><a href="../tables/cisco-umbrella-ip-cl.html"><code>Cisco_Umbrella_ip_CL</code></a><br><a href="../tables/cisco-umbrella-proxy-cl.html"><code>Cisco_Umbrella_proxy_CL</code></a><br><a href="../tables/cisco-umbrella-ravpnlogs-cl.html"><code>Cisco_Umbrella_ravpnlogs_CL</code></a><br><a href="../tables/cisco-umbrella-ztaflow-cl.html"><code>Cisco_Umbrella_ztaflow_CL</code></a><br><a href="../tables/cisco-umbrella-ztna-cl.html"><code>Cisco_Umbrella_ztna_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-hack-tool-user-agent-detected-8d537f3c-094f-430c-a588-8a87da36ee3a-d0f46ed9.html">Cisco Cloud Security - Hack Tool User-Agent Detected</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Execution, Discovery, LateralMovement, Collection, CommandAndControl, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-audit-cl.html"><code>Cisco_Umbrella_audit_CL</code></a><br><a href="../tables/cisco-umbrella-cloudfirewall-cl.html"><code>Cisco_Umbrella_cloudfirewall_CL</code></a><br><a href="../tables/cisco-umbrella-dlp-cl.html"><code>Cisco_Umbrella_dlp_CL</code></a><br><a href="../tables/cisco-umbrella-dns-cl.html"><code>Cisco_Umbrella_dns_CL</code></a><br><a href="../tables/cisco-umbrella-fileevent-cl.html"><code>Cisco_Umbrella_fileevent_CL</code></a><br><a href="../tables/cisco-umbrella-intrusion-cl.html"><code>Cisco_Umbrella_intrusion_CL</code></a><br><a href="../tables/cisco-umbrella-ip-cl.html"><code>Cisco_Umbrella_ip_CL</code></a><br><a href="../tables/cisco-umbrella-proxy-cl.html"><code>Cisco_Umbrella_proxy_CL</code></a><br><a href="../tables/cisco-umbrella-ravpnlogs-cl.html"><code>Cisco_Umbrella_ravpnlogs_CL</code></a><br><a href="../tables/cisco-umbrella-ztaflow-cl.html"><code>Cisco_Umbrella_ztaflow_CL</code></a><br><a href="../tables/cisco-umbrella-ztna-cl.html"><code>Cisco_Umbrella_ztna_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-rare-user-agent-detected-8c8de3fa-6425-4623-9cd9-45de1dd0569a-05b10328.html">Cisco Cloud Security - Rare User Agent Detected</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CommandAndControl, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-audit-cl.html"><code>Cisco_Umbrella_audit_CL</code></a><br><a href="../tables/cisco-umbrella-cloudfirewall-cl.html"><code>Cisco_Umbrella_cloudfirewall_CL</code></a><br><a href="../tables/cisco-umbrella-dlp-cl.html"><code>Cisco_Umbrella_dlp_CL</code></a><br><a href="../tables/cisco-umbrella-dns-cl.html"><code>Cisco_Umbrella_dns_CL</code></a><br><a href="../tables/cisco-umbrella-fileevent-cl.html"><code>Cisco_Umbrella_fileevent_CL</code></a><br><a href="../tables/cisco-umbrella-intrusion-cl.html"><code>Cisco_Umbrella_intrusion_CL</code></a><br><a href="../tables/cisco-umbrella-ip-cl.html"><code>Cisco_Umbrella_ip_CL</code></a><br><a href="../tables/cisco-umbrella-proxy-cl.html"><code>Cisco_Umbrella_proxy_CL</code></a><br><a href="../tables/cisco-umbrella-ravpnlogs-cl.html"><code>Cisco_Umbrella_ravpnlogs_CL</code></a><br><a href="../tables/cisco-umbrella-ztaflow-cl.html"><code>Cisco_Umbrella_ztaflow_CL</code></a><br><a href="../tables/cisco-umbrella-ztna-cl.html"><code>Cisco_Umbrella_ztna_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-request-allowed-to-harmful-malicious-uri-category-d6bf1931-b1eb-448d-90b2-de118559c7ce-e2a8343a.html">Cisco Cloud Security - Request Allowed to harmful/malicious URI category</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CommandAndControl, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-audit-cl.html"><code>Cisco_Umbrella_audit_CL</code></a><br><a href="../tables/cisco-umbrella-cloudfirewall-cl.html"><code>Cisco_Umbrella_cloudfirewall_CL</code></a><br><a href="../tables/cisco-umbrella-dlp-cl.html"><code>Cisco_Umbrella_dlp_CL</code></a><br><a href="../tables/cisco-umbrella-dns-cl.html"><code>Cisco_Umbrella_dns_CL</code></a><br><a href="../tables/cisco-umbrella-fileevent-cl.html"><code>Cisco_Umbrella_fileevent_CL</code></a><br><a href="../tables/cisco-umbrella-intrusion-cl.html"><code>Cisco_Umbrella_intrusion_CL</code></a><br><a href="../tables/cisco-umbrella-ip-cl.html"><code>Cisco_Umbrella_ip_CL</code></a><br><a href="../tables/cisco-umbrella-proxy-cl.html"><code>Cisco_Umbrella_proxy_CL</code></a><br><a href="../tables/cisco-umbrella-ravpnlogs-cl.html"><code>Cisco_Umbrella_ravpnlogs_CL</code></a><br><a href="../tables/cisco-umbrella-ztaflow-cl.html"><code>Cisco_Umbrella_ztaflow_CL</code></a><br><a href="../tables/cisco-umbrella-ztna-cl.html"><code>Cisco_Umbrella_ztna_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-request-to-blocklisted-file-type-de58ee9e-b229-4252-8537-41a4c2f4045e-4fbd74eb.html">Cisco Cloud Security - Request to blocklisted file type</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-audit-cl.html"><code>Cisco_Umbrella_audit_CL</code></a><br><a href="../tables/cisco-umbrella-cloudfirewall-cl.html"><code>Cisco_Umbrella_cloudfirewall_CL</code></a><br><a href="../tables/cisco-umbrella-dlp-cl.html"><code>Cisco_Umbrella_dlp_CL</code></a><br><a href="../tables/cisco-umbrella-dns-cl.html"><code>Cisco_Umbrella_dns_CL</code></a><br><a href="../tables/cisco-umbrella-fileevent-cl.html"><code>Cisco_Umbrella_fileevent_CL</code></a><br><a href="../tables/cisco-umbrella-intrusion-cl.html"><code>Cisco_Umbrella_intrusion_CL</code></a><br><a href="../tables/cisco-umbrella-ip-cl.html"><code>Cisco_Umbrella_ip_CL</code></a><br><a href="../tables/cisco-umbrella-proxy-cl.html"><code>Cisco_Umbrella_proxy_CL</code></a><br><a href="../tables/cisco-umbrella-ravpnlogs-cl.html"><code>Cisco_Umbrella_ravpnlogs_CL</code></a><br><a href="../tables/cisco-umbrella-ztaflow-cl.html"><code>Cisco_Umbrella_ztaflow_CL</code></a><br><a href="../tables/cisco-umbrella-ztna-cl.html"><code>Cisco_Umbrella_ztna_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-uri-contains-ip-address-ee1818ec-5f65-4991-b711-bcf2ab7e36c3-8213dfcd.html">Cisco Cloud Security - URI contains IP address</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CommandAndControl, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-audit-cl.html"><code>Cisco_Umbrella_audit_CL</code></a><br><a href="../tables/cisco-umbrella-cloudfirewall-cl.html"><code>Cisco_Umbrella_cloudfirewall_CL</code></a><br><a href="../tables/cisco-umbrella-dlp-cl.html"><code>Cisco_Umbrella_dlp_CL</code></a><br><a href="../tables/cisco-umbrella-dns-cl.html"><code>Cisco_Umbrella_dns_CL</code></a><br><a href="../tables/cisco-umbrella-fileevent-cl.html"><code>Cisco_Umbrella_fileevent_CL</code></a><br><a href="../tables/cisco-umbrella-intrusion-cl.html"><code>Cisco_Umbrella_intrusion_CL</code></a><br><a href="../tables/cisco-umbrella-ip-cl.html"><code>Cisco_Umbrella_ip_CL</code></a><br><a href="../tables/cisco-umbrella-proxy-cl.html"><code>Cisco_Umbrella_proxy_CL</code></a><br><a href="../tables/cisco-umbrella-ravpnlogs-cl.html"><code>Cisco_Umbrella_ravpnlogs_CL</code></a><br><a href="../tables/cisco-umbrella-ztaflow-cl.html"><code>Cisco_Umbrella_ztaflow_CL</code></a><br><a href="../tables/cisco-umbrella-ztna-cl.html"><code>Cisco_Umbrella_ztna_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-windows-powershell-user-agent-detected-b12b3dab-d973-45af-b07e-e29bb34d8db9-9add09cc.html">Cisco Cloud Security - Windows PowerShell User-Agent Detected</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CommandAndControl, DefenseEvasion, Execution</td>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-audit-cl.html"><code>Cisco_Umbrella_audit_CL</code></a><br><a href="../tables/cisco-umbrella-cloudfirewall-cl.html"><code>Cisco_Umbrella_cloudfirewall_CL</code></a><br><a href="../tables/cisco-umbrella-dlp-cl.html"><code>Cisco_Umbrella_dlp_CL</code></a><br><a href="../tables/cisco-umbrella-dns-cl.html"><code>Cisco_Umbrella_dns_CL</code></a><br><a href="../tables/cisco-umbrella-fileevent-cl.html"><code>Cisco_Umbrella_fileevent_CL</code></a><br><a href="../tables/cisco-umbrella-intrusion-cl.html"><code>Cisco_Umbrella_intrusion_CL</code></a><br><a href="../tables/cisco-umbrella-ip-cl.html"><code>Cisco_Umbrella_ip_CL</code></a><br><a href="../tables/cisco-umbrella-proxy-cl.html"><code>Cisco_Umbrella_proxy_CL</code></a><br><a href="../tables/cisco-umbrella-ravpnlogs-cl.html"><code>Cisco_Umbrella_ravpnlogs_CL</code></a><br><a href="../tables/cisco-umbrella-ztaflow-cl.html"><code>Cisco_Umbrella_ztaflow_CL</code></a><br><a href="../tables/cisco-umbrella-ztna-cl.html"><code>Cisco_Umbrella_ztna_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-'blocked'-user-agents.-22e5e573-409b-433f-91de-50d6f0ad5a9e-d7476629.html">Cisco Cloud Security - 'Blocked' User-Agents.</a></td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-audit-cl.html"><code>Cisco_Umbrella_audit_CL</code></a><br><a href="../tables/cisco-umbrella-cloudfirewall-cl.html"><code>Cisco_Umbrella_cloudfirewall_CL</code></a><br><a href="../tables/cisco-umbrella-dlp-cl.html"><code>Cisco_Umbrella_dlp_CL</code></a><br><a href="../tables/cisco-umbrella-dns-cl.html"><code>Cisco_Umbrella_dns_CL</code></a><br><a href="../tables/cisco-umbrella-fileevent-cl.html"><code>Cisco_Umbrella_fileevent_CL</code></a><br><a href="../tables/cisco-umbrella-intrusion-cl.html"><code>Cisco_Umbrella_intrusion_CL</code></a><br><a href="../tables/cisco-umbrella-ip-cl.html"><code>Cisco_Umbrella_ip_CL</code></a><br><a href="../tables/cisco-umbrella-proxy-cl.html"><code>Cisco_Umbrella_proxy_CL</code></a><br><a href="../tables/cisco-umbrella-ravpnlogs-cl.html"><code>Cisco_Umbrella_ravpnlogs_CL</code></a><br><a href="../tables/cisco-umbrella-ztaflow-cl.html"><code>Cisco_Umbrella_ztaflow_CL</code></a><br><a href="../tables/cisco-umbrella-ztna-cl.html"><code>Cisco_Umbrella_ztna_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-anomalous-fqdns-for-domain-c92741e6-8454-40bb-8830-069cb86946c6-b4d4c808.html">Cisco Cloud Security - Anomalous FQDNs for domain</a></td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-audit-cl.html"><code>Cisco_Umbrella_audit_CL</code></a><br><a href="../tables/cisco-umbrella-cloudfirewall-cl.html"><code>Cisco_Umbrella_cloudfirewall_CL</code></a><br><a href="../tables/cisco-umbrella-dlp-cl.html"><code>Cisco_Umbrella_dlp_CL</code></a><br><a href="../tables/cisco-umbrella-dns-cl.html"><code>Cisco_Umbrella_dns_CL</code></a><br><a href="../tables/cisco-umbrella-fileevent-cl.html"><code>Cisco_Umbrella_fileevent_CL</code></a><br><a href="../tables/cisco-umbrella-intrusion-cl.html"><code>Cisco_Umbrella_intrusion_CL</code></a><br><a href="../tables/cisco-umbrella-ip-cl.html"><code>Cisco_Umbrella_ip_CL</code></a><br><a href="../tables/cisco-umbrella-proxy-cl.html"><code>Cisco_Umbrella_proxy_CL</code></a><br><a href="../tables/cisco-umbrella-ravpnlogs-cl.html"><code>Cisco_Umbrella_ravpnlogs_CL</code></a><br><a href="../tables/cisco-umbrella-ztaflow-cl.html"><code>Cisco_Umbrella_ztaflow_CL</code></a><br><a href="../tables/cisco-umbrella-ztna-cl.html"><code>Cisco_Umbrella_ztna_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-dns-errors.-26aebe0d-9a4f-456d-bbb9-9f4c9c5d28ca-a2f4149b.html">Cisco Cloud Security - DNS Errors.</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-audit-cl.html"><code>Cisco_Umbrella_audit_CL</code></a><br><a href="../tables/cisco-umbrella-cloudfirewall-cl.html"><code>Cisco_Umbrella_cloudfirewall_CL</code></a><br><a href="../tables/cisco-umbrella-dlp-cl.html"><code>Cisco_Umbrella_dlp_CL</code></a><br><a href="../tables/cisco-umbrella-dns-cl.html"><code>Cisco_Umbrella_dns_CL</code></a><br><a href="../tables/cisco-umbrella-fileevent-cl.html"><code>Cisco_Umbrella_fileevent_CL</code></a><br><a href="../tables/cisco-umbrella-intrusion-cl.html"><code>Cisco_Umbrella_intrusion_CL</code></a><br><a href="../tables/cisco-umbrella-ip-cl.html"><code>Cisco_Umbrella_ip_CL</code></a><br><a href="../tables/cisco-umbrella-proxy-cl.html"><code>Cisco_Umbrella_proxy_CL</code></a><br><a href="../tables/cisco-umbrella-ravpnlogs-cl.html"><code>Cisco_Umbrella_ravpnlogs_CL</code></a><br><a href="../tables/cisco-umbrella-ztaflow-cl.html"><code>Cisco_Umbrella_ztaflow_CL</code></a><br><a href="../tables/cisco-umbrella-ztna-cl.html"><code>Cisco_Umbrella_ztna_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-dns-requests-to-unreliable-categories.-bd1457df-3e81-4218-a079-0963200c8d67-c9326256.html">Cisco Cloud Security - DNS requests to unreliable categories.</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-audit-cl.html"><code>Cisco_Umbrella_audit_CL</code></a><br><a href="../tables/cisco-umbrella-cloudfirewall-cl.html"><code>Cisco_Umbrella_cloudfirewall_CL</code></a><br><a href="../tables/cisco-umbrella-dlp-cl.html"><code>Cisco_Umbrella_dlp_CL</code></a><br><a href="../tables/cisco-umbrella-dns-cl.html"><code>Cisco_Umbrella_dns_CL</code></a><br><a href="../tables/cisco-umbrella-fileevent-cl.html"><code>Cisco_Umbrella_fileevent_CL</code></a><br><a href="../tables/cisco-umbrella-intrusion-cl.html"><code>Cisco_Umbrella_intrusion_CL</code></a><br><a href="../tables/cisco-umbrella-ip-cl.html"><code>Cisco_Umbrella_ip_CL</code></a><br><a href="../tables/cisco-umbrella-proxy-cl.html"><code>Cisco_Umbrella_proxy_CL</code></a><br><a href="../tables/cisco-umbrella-ravpnlogs-cl.html"><code>Cisco_Umbrella_ravpnlogs_CL</code></a><br><a href="../tables/cisco-umbrella-ztaflow-cl.html"><code>Cisco_Umbrella_ztaflow_CL</code></a><br><a href="../tables/cisco-umbrella-ztna-cl.html"><code>Cisco_Umbrella_ztna_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-high-values-of-uploaded-data-975419eb-7041-419c-b8f0-c4bf513cf2b2-3ace2cb5.html">Cisco Cloud Security - High values of Uploaded Data</a></td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-audit-cl.html"><code>Cisco_Umbrella_audit_CL</code></a><br><a href="../tables/cisco-umbrella-cloudfirewall-cl.html"><code>Cisco_Umbrella_cloudfirewall_CL</code></a><br><a href="../tables/cisco-umbrella-dlp-cl.html"><code>Cisco_Umbrella_dlp_CL</code></a><br><a href="../tables/cisco-umbrella-dns-cl.html"><code>Cisco_Umbrella_dns_CL</code></a><br><a href="../tables/cisco-umbrella-fileevent-cl.html"><code>Cisco_Umbrella_fileevent_CL</code></a><br><a href="../tables/cisco-umbrella-intrusion-cl.html"><code>Cisco_Umbrella_intrusion_CL</code></a><br><a href="../tables/cisco-umbrella-ip-cl.html"><code>Cisco_Umbrella_ip_CL</code></a><br><a href="../tables/cisco-umbrella-proxy-cl.html"><code>Cisco_Umbrella_proxy_CL</code></a><br><a href="../tables/cisco-umbrella-ravpnlogs-cl.html"><code>Cisco_Umbrella_ravpnlogs_CL</code></a><br><a href="../tables/cisco-umbrella-ztaflow-cl.html"><code>Cisco_Umbrella_ztaflow_CL</code></a><br><a href="../tables/cisco-umbrella-ztna-cl.html"><code>Cisco_Umbrella_ztna_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-higher-values-of-count-of-the-same-bytesin-size-55393e5b-3f7e-4d40-85e5-38ef9ecd8484-b9761e9f.html">Cisco Cloud Security - Higher values of count of the Same BytesIn size</a></td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-audit-cl.html"><code>Cisco_Umbrella_audit_CL</code></a><br><a href="../tables/cisco-umbrella-cloudfirewall-cl.html"><code>Cisco_Umbrella_cloudfirewall_CL</code></a><br><a href="../tables/cisco-umbrella-dlp-cl.html"><code>Cisco_Umbrella_dlp_CL</code></a><br><a href="../tables/cisco-umbrella-dns-cl.html"><code>Cisco_Umbrella_dns_CL</code></a><br><a href="../tables/cisco-umbrella-fileevent-cl.html"><code>Cisco_Umbrella_fileevent_CL</code></a><br><a href="../tables/cisco-umbrella-intrusion-cl.html"><code>Cisco_Umbrella_intrusion_CL</code></a><br><a href="../tables/cisco-umbrella-ip-cl.html"><code>Cisco_Umbrella_ip_CL</code></a><br><a href="../tables/cisco-umbrella-proxy-cl.html"><code>Cisco_Umbrella_proxy_CL</code></a><br><a href="../tables/cisco-umbrella-ravpnlogs-cl.html"><code>Cisco_Umbrella_ravpnlogs_CL</code></a><br><a href="../tables/cisco-umbrella-ztaflow-cl.html"><code>Cisco_Umbrella_ztaflow_CL</code></a><br><a href="../tables/cisco-umbrella-ztna-cl.html"><code>Cisco_Umbrella_ztna_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-possible-connection-to-c2.-85421f18-2de4-42ff-9ef4-058924dcb1bf-efd3c537.html">Cisco Cloud Security - Possible connection to C2.</a></td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-audit-cl.html"><code>Cisco_Umbrella_audit_CL</code></a><br><a href="../tables/cisco-umbrella-cloudfirewall-cl.html"><code>Cisco_Umbrella_cloudfirewall_CL</code></a><br><a href="../tables/cisco-umbrella-dlp-cl.html"><code>Cisco_Umbrella_dlp_CL</code></a><br><a href="../tables/cisco-umbrella-dns-cl.html"><code>Cisco_Umbrella_dns_CL</code></a><br><a href="../tables/cisco-umbrella-fileevent-cl.html"><code>Cisco_Umbrella_fileevent_CL</code></a><br><a href="../tables/cisco-umbrella-intrusion-cl.html"><code>Cisco_Umbrella_intrusion_CL</code></a><br><a href="../tables/cisco-umbrella-ip-cl.html"><code>Cisco_Umbrella_ip_CL</code></a><br><a href="../tables/cisco-umbrella-proxy-cl.html"><code>Cisco_Umbrella_proxy_CL</code></a><br><a href="../tables/cisco-umbrella-ravpnlogs-cl.html"><code>Cisco_Umbrella_ravpnlogs_CL</code></a><br><a href="../tables/cisco-umbrella-ztaflow-cl.html"><code>Cisco_Umbrella_ztaflow_CL</code></a><br><a href="../tables/cisco-umbrella-ztna-cl.html"><code>Cisco_Umbrella_ztna_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-possible-data-exfiltration-497d7250-87e1-49b1-a096-94f61c7ade9c-1d6ee98c.html">Cisco Cloud Security - Possible data exfiltration</a></td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-audit-cl.html"><code>Cisco_Umbrella_audit_CL</code></a><br><a href="../tables/cisco-umbrella-cloudfirewall-cl.html"><code>Cisco_Umbrella_cloudfirewall_CL</code></a><br><a href="../tables/cisco-umbrella-dlp-cl.html"><code>Cisco_Umbrella_dlp_CL</code></a><br><a href="../tables/cisco-umbrella-dns-cl.html"><code>Cisco_Umbrella_dns_CL</code></a><br><a href="../tables/cisco-umbrella-fileevent-cl.html"><code>Cisco_Umbrella_fileevent_CL</code></a><br><a href="../tables/cisco-umbrella-intrusion-cl.html"><code>Cisco_Umbrella_intrusion_CL</code></a><br><a href="../tables/cisco-umbrella-ip-cl.html"><code>Cisco_Umbrella_ip_CL</code></a><br><a href="../tables/cisco-umbrella-proxy-cl.html"><code>Cisco_Umbrella_proxy_CL</code></a><br><a href="../tables/cisco-umbrella-ravpnlogs-cl.html"><code>Cisco_Umbrella_ravpnlogs_CL</code></a><br><a href="../tables/cisco-umbrella-ztaflow-cl.html"><code>Cisco_Umbrella_ztaflow_CL</code></a><br><a href="../tables/cisco-umbrella-ztna-cl.html"><code>Cisco_Umbrella_ztna_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-proxy-'allowed'-to-unreliable-categories.-daf2f3cf-0f0d-45c1-b428-3c23d643859b-b99f1692.html">Cisco Cloud Security - Proxy 'Allowed' to unreliable categories.</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-audit-cl.html"><code>Cisco_Umbrella_audit_CL</code></a><br><a href="../tables/cisco-umbrella-cloudfirewall-cl.html"><code>Cisco_Umbrella_cloudfirewall_CL</code></a><br><a href="../tables/cisco-umbrella-dlp-cl.html"><code>Cisco_Umbrella_dlp_CL</code></a><br><a href="../tables/cisco-umbrella-dns-cl.html"><code>Cisco_Umbrella_dns_CL</code></a><br><a href="../tables/cisco-umbrella-fileevent-cl.html"><code>Cisco_Umbrella_fileevent_CL</code></a><br><a href="../tables/cisco-umbrella-intrusion-cl.html"><code>Cisco_Umbrella_intrusion_CL</code></a><br><a href="../tables/cisco-umbrella-ip-cl.html"><code>Cisco_Umbrella_ip_CL</code></a><br><a href="../tables/cisco-umbrella-proxy-cl.html"><code>Cisco_Umbrella_proxy_CL</code></a><br><a href="../tables/cisco-umbrella-ravpnlogs-cl.html"><code>Cisco_Umbrella_ravpnlogs_CL</code></a><br><a href="../tables/cisco-umbrella-ztaflow-cl.html"><code>Cisco_Umbrella_ztaflow_CL</code></a><br><a href="../tables/cisco-umbrella-ztna-cl.html"><code>Cisco_Umbrella_ztna_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-requests-to-uncategorized-resources-de2ec986-ee24-465f-adf2-b718997074c1-635d0044.html">Cisco Cloud Security - Requests to uncategorized resources</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-audit-cl.html"><code>Cisco_Umbrella_audit_CL</code></a><br><a href="../tables/cisco-umbrella-cloudfirewall-cl.html"><code>Cisco_Umbrella_cloudfirewall_CL</code></a><br><a href="../tables/cisco-umbrella-dlp-cl.html"><code>Cisco_Umbrella_dlp_CL</code></a><br><a href="../tables/cisco-umbrella-dns-cl.html"><code>Cisco_Umbrella_dns_CL</code></a><br><a href="../tables/cisco-umbrella-fileevent-cl.html"><code>Cisco_Umbrella_fileevent_CL</code></a><br><a href="../tables/cisco-umbrella-intrusion-cl.html"><code>Cisco_Umbrella_intrusion_CL</code></a><br><a href="../tables/cisco-umbrella-ip-cl.html"><code>Cisco_Umbrella_ip_CL</code></a><br><a href="../tables/cisco-umbrella-proxy-cl.html"><code>Cisco_Umbrella_proxy_CL</code></a><br><a href="../tables/cisco-umbrella-ravpnlogs-cl.html"><code>Cisco_Umbrella_ravpnlogs_CL</code></a><br><a href="../tables/cisco-umbrella-ztaflow-cl.html"><code>Cisco_Umbrella_ztaflow_CL</code></a><br><a href="../tables/cisco-umbrella-ztna-cl.html"><code>Cisco_Umbrella_ztna_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-ciscoumbrella-dcc07ffb.html">CiscoUmbrella</a></td>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-audit-cl.html"><code>Cisco_Umbrella_audit_CL</code></a><br><a href="../tables/cisco-umbrella-cloudfirewall-cl.html"><code>Cisco_Umbrella_cloudfirewall_CL</code></a><br><a href="../tables/cisco-umbrella-dlp-cl.html"><code>Cisco_Umbrella_dlp_CL</code></a><br><a href="../tables/cisco-umbrella-dns-cl.html"><code>Cisco_Umbrella_dns_CL</code></a><br><a href="../tables/cisco-umbrella-fileevent-cl.html"><code>Cisco_Umbrella_fileevent_CL</code></a><br><a href="../tables/cisco-umbrella-intrusion-cl.html"><code>Cisco_Umbrella_intrusion_CL</code></a><br><a href="../tables/cisco-umbrella-ip-cl.html"><code>Cisco_Umbrella_ip_CL</code></a><br><a href="../tables/cisco-umbrella-proxy-cl.html"><code>Cisco_Umbrella_proxy_CL</code></a><br><a href="../tables/cisco-umbrella-ravpnlogs-cl.html"><code>Cisco_Umbrella_ravpnlogs_CL</code></a><br><a href="../tables/cisco-umbrella-ztaflow-cl.html"><code>Cisco_Umbrella_ztaflow_CL</code></a><br><a href="../tables/cisco-umbrella-ztna-cl.html"><code>Cisco_Umbrella_ztna_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-ciscoumbrella-addiptodestinationlist-7d9bf8a5.html">CiscoUmbrella-AddIpToDestinationList</a></td>
+<td style="text-align: left;">This playbook creates a team notification and once acted on team notification it adds the IP to Cisc...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-ciscoumbrella-assignpolicytoidentity-b0957c9f.html">CiscoUmbrella-AssignPolicyToIdentity</a></td>
+<td style="text-align: left;">This playbook provides an automated way to associate an identity to an existing policy in Cisco Clou...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-ciscoumbrella-blockdomain-1175f090.html">CiscoUmbrella-BlockDomain</a></td>
+<td style="text-align: left;">This playbook showcases an example of triggering an incident within a targeted Teams channel and ope...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-ciscoumbrella-getdomaininfo-eebd708a.html">CiscoUmbrella-GetDomainInfo</a></td>
+<td style="text-align: left;">This playbook is used to get Security Information about a particular domain. It provides details suc...</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cisco-umbrella.html">Cisco_Umbrella</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-audit-cl.html"><code>Cisco_Umbrella_audit_CL</code></a> <em>(read)</em><br><a href="../tables/cisco-umbrella-cloudfirewall-cl.html"><code>Cisco_Umbrella_cloudfirewall_CL</code></a> <em>(read)</em><br><a href="../tables/cisco-umbrella-dlp-cl.html"><code>Cisco_Umbrella_dlp_CL</code></a> <em>(read)</em><br><a href="../tables/cisco-umbrella-dns-cl.html"><code>Cisco_Umbrella_dns_CL</code></a> <em>(read)</em><br><a href="../tables/cisco-umbrella-fileevent-cl.html"><code>Cisco_Umbrella_fileevent_CL</code></a> <em>(read)</em><br><a href="../tables/cisco-umbrella-intrusion-cl.html"><code>Cisco_Umbrella_intrusion_CL</code></a> <em>(read)</em><br><a href="../tables/cisco-umbrella-ip-cl.html"><code>Cisco_Umbrella_ip_CL</code></a> <em>(read)</em><br><a href="../tables/cisco-umbrella-proxy-cl.html"><code>Cisco_Umbrella_proxy_CL</code></a> <em>(read)</em><br><a href="../tables/cisco-umbrella-ravpnlogs-cl.html"><code>Cisco_Umbrella_ravpnlogs_CL</code></a> <em>(read)</em><br><a href="../tables/cisco-umbrella-ztaflow-cl.html"><code>Cisco_Umbrella_ztaflow_CL</code></a> <em>(read)</em><br><a href="../tables/cisco-umbrella-ztna-cl.html"><code>Cisco_Umbrella_ztna_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.8</td>
+<td>29-01-2026</td>
+<td>The Data connector has been updated to support large fields.</td>
+</tr>
+<tr>
+<td>3.0.7</td>
+<td>28-11-2025</td>
+<td>The Data connector has been updated to support up to version 14 log versioning for the Cisco log format, and the parser to include all tables.</td>
+</tr>
+<tr>
+<td>3.0.6</td>
+<td>01-09-2025</td>
+<td>Added a new data connector, 'CiscoUmbrella_API_FunctionApp_elasticpremium.json'</td>
+</tr>
+<tr>
+<td>3.0.5</td>
+<td>21-06-2025</td>
+<td>To expand support for Cisco Umbrella data in KQL validation tests and to standardize the naming of analytic rules</td>
+</tr>
+<tr>
+<td>3.0.4</td>
+<td>15-05-2025</td>
+<td>Updating documentation to reflect support for Cisco Umbrella log schema version 11</td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>30-12-2024</td>
+<td>Update Playbooks <strong>AddIpToDestination</strong>, <strong>AssignPolicyToIdentity</strong>, <strong>GetDomainInfo</strong> as v1 version of CiscoUmbrella APIs are deprecated and Urls are also changed for this. <strong>Cisco Umbrella Enforcement API has not been deprecated</strong>. Repackage of solution.</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>20-09-2024</td>
+<td>Update <strong>Analytic rules</strong> for Entity mapping and missing TTP and Updated the python runtime version to 3.11</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>03-05-2024</td>
+<td>Added Deploy to Azure Government button in <strong>Data connector</strong> <br/> Fixed <strong>Parser</strong> issue for Parser name and ParentID mismatch</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>28-09-2023</td>
+<td>Updated <strong>Data Connector</strong> with step by step guidelines</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

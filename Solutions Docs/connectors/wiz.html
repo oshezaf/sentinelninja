@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wiz &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Wiz</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Wiz.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>Wiz</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Wiz</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/wiz.html">Wiz</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Wiz/Data%20Connectors/template_WIZ.json">template_WIZ.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Connector definition requires workspace key (SharedKey pattern)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+</tbody>
+</table>
+<p>The Wiz connector allows you to easily send Wiz Issues, Vulnerability Findings, and Audit logs to Microsoft Sentinel.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/wizauditlogsv2-cl.html"><code>WizAuditLogsV2_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/wizauditlogs-cl.html"><code>WizAuditLogs_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/wizissuesv2-cl.html"><code>WizIssuesV2_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/wizissues-cl.html"><code>WizIssues_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/wizvulnerabilitiesv2-cl.html"><code>WizVulnerabilitiesV2_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/wizvulnerabilities-cl.html"><code>WizVulnerabilities_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
+- <strong>Wiz Service Account credentials</strong>: Ensure you have your Wiz service account client ID and client secret, API endpoint URL, and auth URL. Instructions can be found on <a href="https://docs.wiz.io/wiz-docs/docs/azure-sentinel-native-integration#collect-authentication-info-from-wiz">Wiz documentation</a>.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+<p><strong>NOTE:</strong> This connector: Uses Azure Functions to connect to Wiz API to pull Wiz Issues, Vulnerability Findings, and Audit Logs into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.
+Creates an Azure Key Vault with all the required parameters stored as secrets.</p>
+</blockquote>
+<p><strong>1. STEP 1 - Get your Wiz credentials</strong></p>
+<p>Follow the instructions on <a href="https://docs.wiz.io/wiz-docs/docs/azure-sentinel-native-integration#collect-authentication-info-from-wiz">Wiz documentation</a> to get the erquired credentials.</p>
+<p><strong>2. STEP 2 - Deploy the connector and the associated Azure Function</strong></p>
+<blockquote>
+<p><strong>IMPORTANT:</strong> Before deploying the Wiz Connector, have the Workspace ID and Workspace Primary Key (can be copied from the following), as well as the Wiz credentials from the previous step.
+- <strong>Workspace ID</strong>: <code>WorkspaceId</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
+- <strong>Primary Key</strong>: <code>PrimaryKey</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+<p><strong>3. Option 1: Deploy using the Azure Resource Manager (ARM) Template</strong></p>
+<ol>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below. </p>
+<p><a href="https://aka.ms/sentinel-wiz-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a> 
+2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. 
+3. Enter the following parameters: </p>
+<blockquote>
+<ul>
+<li>Choose <strong>KeyVaultName</strong> and <strong>FunctionName</strong> for the new resources </li>
+<li>Enter the following Wiz credentials from step 1: <strong>WizAuthUrl</strong>, <strong>WizEndpointUrl</strong>, <strong>WizClientId</strong>, and <strong>WizClientSecret</strong> </li>
+<li>Enter the Workspace credentials <strong>AzureLogsAnalyticsWorkspaceId</strong> and <strong>AzureLogAnalyticsWorkspaceSharedKey</strong></li>
+<li>Choose the Wiz data types you want to send to Microsoft Sentinel, choose at least one from <strong>Wiz Issues</strong>, <strong>Vulnerability Findings</strong>, and <strong>Audit Logs</strong>.</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<blockquote>
+<ul>
+<li>(optional) follow <a href="https://docs.wiz.io/wiz-docs/docs/azure-sentinel-native-integration#optional-create-a-filter-for-wiz-queries">Wiz documentation</a> to add <strong>IssuesQueryFilter</strong>, <strong>VulnerbailitiesQueryFilter</strong>, and <strong>AuditLogsQueryFilter</strong>.</li>
+</ul>
+</blockquote>
+<ol start="4">
+<li>Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>. </li>
+<li>Click <strong>Purchase</strong> to deploy.</li>
+</ol>
+<p><strong>4. Option 2: Manual Deployment of the Azure Function</strong></p>
+<blockquote>
+<p>Follow <a href="https://docs.wiz.io/wiz-docs/docs/azure-sentinel-native-integration#manual-deployment">Wiz documentation</a> to deploy the connector manually.</p>
+</blockquote>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

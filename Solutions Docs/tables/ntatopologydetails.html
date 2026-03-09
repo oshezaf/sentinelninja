@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NTATopologyDetails &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>NTATopologyDetails</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for NTATopologyDetails table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Network</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ntatopologydetails">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (118 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ntatopologydetails">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">Access</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Access(Allow/Deny) associated with network security group rule.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AddressPrefixes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The address prefixes associated with the discovered resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AllowForwardedTraffic</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Whether the forwarded traffic from the VMs in the local virtual network will be allowed/disallowed in remote virtual network.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AllowGatewayTransit</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">If gateway links can be used in remote virtual networking to link to this virtual network.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AllowVirtualNetworkAccess</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Whether the VMs in the local virtual network space would be able to access the VMs in remote virtual network space.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AppGatewayType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the application gateway resource. This would be either internal or internet facing.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ApplicationGatewayBackendPools</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Pool of application gateway backend IP addresses.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureAsn</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The Azure ASN of express route circuit peering.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureResourceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Resource type of the discovered resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BackendAddressPool</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The reference to backend address pool resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BackendIpAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Backend IP address associated with the inbound NAT rules.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BackendPort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Backend port associated with the inbound NAT rules. The port used for the internal endpoint. Acceptable values range from 1 to 65535.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BackendSubnets</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">List of space separated subnets associated with the discovered resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BgpEnabled</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Whether BGP is enabled for this resource or not.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CircuitProvisioningState</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The current provisioning state of express route circuit.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ComponentType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Component type of the status message. Possible values are Flowlog/Topology.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConnectionStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Gateway connection status.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConnectionType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Connection type of the discovered connection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Description</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Description of with network security group rule.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationAddressPrefix</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Destination address prefix associated with network security group rule.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationPortRange</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Destination port range associated with network security group rule.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Direction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Direction associated with network security group rule.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DiscoveryRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The region where resource is discovered.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EgressBytesTransferred</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The egress bytes transferred in this connection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EnableIpForwarding</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether IP forwarding is enabled on the network interface.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EncryptionEnabled</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether encryption is enabled on the virtual network.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EncryptionEnforcement</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates whether the encrypted virtual network allows VM that does not support encryption. Possible values include DropUnencrypted/AllowUnencrypted.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FloatingIpEnabled</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Configures a virtual machine's endpoint for the floating IP capability required to configure a SQL AlwaysOn Availability Group. This setting is required when using the SQL AlwaysOn Availability Groups in SQL server. This setting can't be changed after you create the endpoint.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FlowLogStorageAccount</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Id of the storage account which is used to store the flow log.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FrontendIpAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Frontend IP address associated with the inbound NAT rule.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FrontendIps</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Frontend IP address of the load balancer.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FrontendPort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Frontend port associated with the inbound NAT rules. The port for the external endpoint. Port numbers for each rule must be unique within the Load Balancer. Acceptable values range from 1 to 65534.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FrontendSubnet</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The subnet of the discovered load balancer resource. This will be populated when the load balancer is internal load balancer.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FrontendSubnets</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">List of space separated subnets of the discovered load balancer resource. This will be populated when the load balancer is internal load balancer.</td>
+</tr>
+<tr>
+<td style="text-align: left;">GatewayConnectionType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Gateway connection type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">GatewaySubnet</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Subnet associated with the application aateway resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">GatewayType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Gateway Type assocaited with virtual network gateway, VPN or express route.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IngressBytesTransferred</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The ingress bytes transferred in this connection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IpAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Gateway IP address of the discovered resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsFlowEnabled</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Flag to enable/disable flow logging.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsVirtualAppliance</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Boolean to specify if the discovered resource is a virtual appliance.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LoadBalancerBackendPools</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Pool of load balancer backend IP addresses.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LoadBalancerType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the discovered load balancer resource. Possible values are internal load balancer or internet facing load balancer.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LocalNetworkGateway</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The reference to local network gateway resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LocalPreference</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Local preference value as set with the set local-preference route-map configuration command of the express route circuit route.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MacAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">MAC address of the discovered NIC.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Network</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of a network entity associated with the express route circuit route.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NextHopIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address packets should be forwarded to. Next hop values are only allowed in routes where the next hop type is virtual appliance.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NextHopType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of azure hop the packet should be sent to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nsg</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The reference to the network security group resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Path</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Autonomous system paths to the destination network of the express route circuit route.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Peer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The reference to peerings resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PeerAsn</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The peer ASN of express route circuit peering.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PeeringType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The peering type of express route circuit peering.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PrimaryAzurePort</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The primary port of express route circuit peering.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PrimaryBytesIn</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The primary bytes in of the peering.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PrimaryBytesOut</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The primary bytes out of the peering.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PrimaryNextHop</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Primary next hop address of the express route circuit route.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PrimaryPeerAddressPrefix</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The primary peer address prefix of express route circuit peering.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Priority</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Specifies the priority for the virtual machine. Minimum api-version: 2019-03-01.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PrivateEndpointResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Resource ID of the private endpoint resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PrivateFrontendIps</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Front end private IP addresses associated with the application gateway resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PrivateIpAddresses</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Private IP address of the IP configuration.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PrivateLinkResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Resource ID of the private link service.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Protocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Protocol associated with network security group rule.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PublicFrontendIps</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Front end public IP addresses associated with the application gateway resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PublicIpAddresses</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Public IP address bound to the IP configuration.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Region</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Region of the discovered resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RouteTable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The reference to the route table resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RoutingWeight</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The routing weight.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RuleType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the network security group rule.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SchemaVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">This is topology schema version and not related to flow log schema version.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SecondaryAzurePort</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The secondary port of express route circuit peering.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SecondaryBytesIn</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The secondary bytes in of the peering.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SecondaryBytesOut</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The secondary bytes out of the peering.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SecondaryNextHop</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Secondary next hop address of the express route circuit route.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SecondaryPeerAddressPrefix</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The secondary peer address prefix of express route circuit peering.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServiceProviderProperties</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">"Contains service provider properties in an express route circuit. Service provider properties semicolon seperated "ServiceProviderName;ServiceProviderBandwidthInMbps;ServiceProviderPeeringLocation"".</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServiceProviderProvisioningState</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The service provider provisioning state state of the resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sku</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SKU or pricing associated with the discovered resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SkuDetail</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">"The SKU of express route circuit. Express route circuit SKU detail semicolon seperated "Family;Name;Tier"".</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceAddressPrefix</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source address prefix associated with network security group rule.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourcePortRange</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source port range associated with network security group rule.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">State</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The peering state of express route circuit peering.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Status of the ingestion. Possible values can be Completed/Partial/Failed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Subnet1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Subnet associated with the discovered subnetwork connection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Subnet2</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Subnet associated with the discovered subnetwork connection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SubnetPrefixes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Space separated string of address prefixes in local network address space.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SubnetRegion1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Subnet region associated with the discovered subnetwork connection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SubnetRegion2</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Subnet region associated with the discovered subnetwork connection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Subnetwork</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The refrence to the subnetwork resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Subscription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Subscription guid of the discovered resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SubscriptionName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Subscription name of the discovered resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SubType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Subtype of the ingestion. Values can be Topology and StatusMessage.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tags</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Tags associated with the discovered resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time when the data gets ingested into the log analytics workspace.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeProcessed</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Time(in UTC) at which the traffic analytics discovered the topology resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TopologyVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Topology version.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">UseRemoteGateways</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">If remote gateways can be used on this virtual network. If the flag is set to true, and allowGatewayTransit on remote peering is also true, virtual network will use gateways of remote virtual network for transit. Only one peering can have this flag set to true. This flag cannot be set if virtual network already has a gateway.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VipAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Space separated list of IP addresses associated with virtual network gateway.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VirtualAppliances</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Virtual appliances associated with the discovered subnetwork connection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VirtualMachine</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The reference to a virtual machine.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VirtualNetwork1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The reference to the virtual network resource associated with the virtual network peering.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VirtualNetwork2</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The reference to the virtual network resource associated with the virtual network peering.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VirtualNetworkGateway1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The reference to virtual network gateway resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VirtualNetworkGateway2</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The reference to virtual network gateway resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VirtualSubnetwork</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Virtual subnetwork associated with virtual network gateway.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VlanId</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The VLAN Id of the peering.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VmssName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The virtual machine scale set name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VnetEncryptionSupported</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the virtual machine this nic is attached to supports encryption.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VpnClientAddressPrefixes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The reference to the address prefix resource which represents address prefix for P2S VpnClient. Will be empty when no point to site is configured.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Weight</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Route weight of the express route circuit route.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Zones</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The virtual machine zones information.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

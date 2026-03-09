@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microsoft Entra ID &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Microsoft Entra ID</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/MicrosoftEntraID_logo.svg" alt="Microsoft Entra ID Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com/">https://support.microsoft.com/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.3.6</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-05-16</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID">Microsoft Entra ID</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis">Microsoft Entra ID</a>  solution for Microsoft Sentinel enables you to ingest Microsoft Entra ID <a href="https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-audit-logs">Audit</a>, <a href="https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-sign-ins">Sign-in</a>, <a href="https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-provisioning-logs">Provisioning</a>, <a href="https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk#risky-users">Risk Events and Risky User/Service Principal</a> logs using Diagnostic Settings into Microsoft Sentinel.</p>
+<p><strong>Additional Information</strong></p>
+<p>📖 <strong>Setup Guide:</strong> <a href="https://learn.microsoft.com/azure/sentinel/connect-azure-active-directory">Microsoft Entra connector</a> - Connect Microsoft Entra ID logs to Microsoft Sentinel</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/azureactivedirectory.html">Microsoft Entra ID</a></li>
+</ul>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>13 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/aadmanagedidentitysigninlogs.html"><code>AADManagedIdentitySignInLogs</code></a></td>
+<td><a href="../connectors/azureactivedirectory.html">Microsoft Entra ID</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/aadnoninteractiveusersigninlogs.html"><code>AADNonInteractiveUserSignInLogs</code></a></td>
+<td><a href="../connectors/azureactivedirectory.html">Microsoft Entra ID</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/aadprovisioninglogs.html"><code>AADProvisioningLogs</code></a></td>
+<td><a href="../connectors/azureactivedirectory.html">Microsoft Entra ID</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/aadriskyserviceprincipals.html"><code>AADRiskyServicePrincipals</code></a></td>
+<td><a href="../connectors/azureactivedirectory.html">Microsoft Entra ID</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/aadriskyusers.html"><code>AADRiskyUsers</code></a></td>
+<td><a href="../connectors/azureactivedirectory.html">Microsoft Entra ID</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/aadserviceprincipalriskevents.html"><code>AADServicePrincipalRiskEvents</code></a></td>
+<td><a href="../connectors/azureactivedirectory.html">Microsoft Entra ID</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/aadserviceprincipalsigninlogs.html"><code>AADServicePrincipalSignInLogs</code></a></td>
+<td><a href="../connectors/azureactivedirectory.html">Microsoft Entra ID</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/aaduserriskevents.html"><code>AADUserRiskEvents</code></a></td>
+<td><a href="../connectors/azureactivedirectory.html">Microsoft Entra ID</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/adfssigninlogs.html"><code>ADFSSignInLogs</code></a></td>
+<td><a href="../connectors/azureactivedirectory.html">Microsoft Entra ID</a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+<td><a href="../connectors/azureactivedirectory.html">Microsoft Entra ID</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/deviceinfo.html"><code>DeviceInfo</code></a></td>
+<td>-</td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/networkaccesstraffic.html"><code>NetworkAccessTraffic</code></a></td>
+<td><a href="../connectors/azureactivedirectory.html">Microsoft Entra ID</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+<td><a href="../connectors/azureactivedirectory.html">Microsoft Entra ID</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h3>Internal Tables</h3>
+<p>The following <strong>3 table(s)</strong> are used internally by this solution's content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/anomalies.html"><code>Anomalies</code></a></td>
+<td>-</td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+<td>-</td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+<td>-</td>
+<td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>87 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">73</td>
+</tr>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">11</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">3</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-account-created-and-deleted-in-short-timeframe-bb616d82-108f-47d3-9dec-9652ea0d3bf6-8d7ac424.html">Account Created and Deleted in Short Timeframe</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-account-created-or-deleted-by-non-approved-user-6d63efa6-7c25-4bd4-a486-aa6bf50fde8a-141ffd02.html">Account created or deleted by non-approved user</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-admin-promotion-after-role-management-application-permission-grant-f80d951a-eddc-4171-b9d0-d616bb83efdc-dd72791a.html">Admin promotion after Role Management Application Permission Grant</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">PrivilegeEscalation, Persistence</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-anomalous-sign-in-location-by-user-account-and-authenticating-application-7cb8f77d-c52f-4e46-b82f-3cf2e106224a-c5368fb1.html">Anomalous sign-in location by user account and authenticating application</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/aadnoninteractiveusersigninlogs.html"><code>AADNonInteractiveUserSignInLogs</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a><br><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-attempt-to-bypass-conditional-access-rule-in-microsoft-entra-id-3af9285d-bb98-4a35-ad29-5ea39ba0c628-6f5f2339.html">Attempt to bypass conditional access rule in Microsoft Entra ID</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">InitialAccess, Persistence</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-attempts-to-sign-in-to-disabled-accounts-75ea5c39-93e5-489b-b1e1-68fa6c9d2d04-3d398bd3.html">Attempts to sign in to disabled accounts</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-authentication-methods-changed-for-privileged-account-694c91ee-d606-4ba9-928e-405a2dd0ff0f-513c9e02.html">Authentication Methods Changed for Privileged Account</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a><br><em>Internal use:</em><br><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-azure-portal-sign-in-from-another-azure-tenant-87210ca1-49a4-4a7d-bb4a-4988752f978c-d9307cff.html">Azure Portal sign in from another Azure Tenant</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-azure-rbac-elevate-access-132fdff4-c044-4855-a390-c1b71e0f833b-647564ba.html">Azure RBAC (Elevate Access)</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-brute-force-attack-against-github-account-97ad74c4-fdd9-4a3f-b6bf-5e28f4f71e06-409b9696.html">Brute Force Attack against GitHub Account</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-brute-force-attack-against-azure-portal-28b42356-45af-40a6-a0b4-a554cdfd5d8a-5dc74411.html">Brute force attack against Azure Portal</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-brute-force-attack-against-a-cloud-pc-3fbc20a4-04c4-464e-8fcb-6667f53e4987-a1e86b1d.html">Brute force attack against a Cloud PC</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-bulk-changes-to-privileged-account-permissions-218f60de-c269-457a-b882-9966632b9dc6-1b16393e.html">Bulk Changes to Privileged Account Permissions</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-conditional-access-a-conditional-access-device-platforms-condition-has-changed-the-de-e3368079-a2c0-4f1c-9fb7-287e907393ef-136313dd.html">Conditional Access - A Conditional Access Device platforms condition has changed (the Device platforms condition can be spoofed)</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-conditional-access-a-conditional-access-app-exclusion-has-changed-0990a481-3bc8-4682-838c-313918dd858c-0a7b28b3.html">Conditional Access - A Conditional Access app exclusion has changed</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-conditional-access-a-conditional-access-policy-was-deleted-2e96fa64-ac4d-4c92-b79e-e9c54b5d8230-ed16bbf9.html">Conditional Access - A Conditional Access policy was deleted</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-conditional-access-a-conditional-access-policy-was-disabled-40702da1-ae8a-4e46-ac1f-9327ca6ef588-e70c07ce.html">Conditional Access - A Conditional Access policy was disabled</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-conditional-access-a-conditional-access-policy-was-put-into-report-only-mode-5588de32-73b1-40b9-bddc-4d9e74051859-368d42da.html">Conditional Access - A Conditional Access policy was put into report-only mode</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-conditional-access-a-conditional-access-policy-was-updated-ccca6b88-a7b6-41c9-9be2-fc3daeb65b26-8aacaca3.html">Conditional Access - A Conditional Access policy was updated</a></td>
+<td style="text-align: left;">Informational</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-conditional-access-a-conditional-access-user-group-role-exclusion-has-changed-2ce7f00d-3b3c-41b9-ae9a-b79c19d2394e-f65af1a3.html">Conditional Access - A Conditional Access user/group/role exclusion has changed</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Persistence, DefenseEvasion, CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-conditional-access-a-new-conditional-access-policy-was-created-0459a1b5-909d-4783-9e27-24536b05a47f-879d4060.html">Conditional Access - A new Conditional Access policy was created</a></td>
+<td style="text-align: left;">Informational</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-conditional-access-dynamic-group-exclusion-changes-c385944b-17b9-4b2b-921e-0e8d0341a675-f50f0e46.html">Conditional Access - Dynamic Group Exclusion Changes</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-credential-added-after-admin-consented-to-application-707494a5-8e44-486b-90f8-155d1797a8eb-a6cd2c7a.html">Credential added after admin consented to Application</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess, Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-cross-tenant-access-settings-organization-added-757e6a79-6d23-4ae6-9845-4dac170656b5-de3a14c9.html">Cross-tenant Access Settings Organization Added</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, Persistence, Discovery</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-cross-tenant-access-settings-organization-deleted-eb8a9c1c-f532-4630-817c-1ecd8a60ed80-b0b4095f.html">Cross-tenant Access Settings Organization Deleted</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, Persistence, Discovery</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-cross-tenant-access-settings-organization-inbound-collaboration-settings-changed-c895c5b9-0fc6-40ce-9830-e8818862f2d5-1d923bf9.html">Cross-tenant Access Settings Organization Inbound Collaboration Settings Changed</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, Persistence, Discovery</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-cross-tenant-access-settings-organization-inbound-direct-settings-changed-276d5190-38de-4eb2-9933-b3b72f4a5737-f3d5c408.html">Cross-tenant Access Settings Organization Inbound Direct Settings Changed</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, Persistence, Discovery</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-cross-tenant-access-settings-organization-outbound-collaboration-settings-changed-229f71ba-d83b-42a5-b83b-11a641049ed1-42360945.html">Cross-tenant Access Settings Organization Outbound Collaboration Settings Changed</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, Persistence, Discovery</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-cross-tenant-access-settings-organization-outbound-direct-settings-changed-0101e08d-99cd-4a97-a9e0-27649c4369ad-74ca33b7.html">Cross-tenant Access Settings Organization Outbound Direct Settings Changed</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, Persistence, Discovery</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-distributed-password-cracking-attempts-in-microsoft-entra-id-bfb1c90f-8006-4325-98be-c7fffbc254d6-6613a279.html">Distributed Password cracking attempts in Microsoft Entra ID</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-external-guest-invitation-followed-by-microsoft-entra-id-powershell-signin-acc4c247-aaf7-494b-b5da-17f18863878a-4c59ca84.html">External guest invitation followed by Microsoft Entra ID PowerShell signin</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, Persistence, Discovery</td>
+<td style="text-align: left;"><a href="../tables/aadnoninteractiveusersigninlogs.html"><code>AADNonInteractiveUserSignInLogs</code></a><br><a href="../tables/auditlogs.html"><code>AuditLogs</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-failed-login-attempts-to-azure-portal-223db5c1-1bf8-47d8-8806-bed401b356a4-7bb79ab2.html">Failed login attempts to Azure Portal</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-first-access-credential-added-to-application-or-service-principal-where-no-credential-2cfc3c6e-f424-4b88-9cc9-c89f482d016a-ec11980a.html">First access credential added to Application or Service Principal where no credential was present</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-github-signin-burst-from-multiple-locations-d3980830-dd9d-40a5-911f-76b44dfdce16-ec9e6001.html">GitHub Signin Burst from Multiple Locations</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-guest-accounts-added-in-entra-id-groups-other-than-the-ones-specified-6ab1f7b2-61b8-442f-bc81-96afe7ad8c53-a7fe96f3.html">Guest accounts added in Entra ID Groups other than the ones specified</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess, Persistence, Discovery</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-mfa-rejected-by-user-d99cf5c3-d660-436c-895b-8a8f8448da23-b3c993fb.html">MFA Rejected by User</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/signinlogs.html"><code>SigninLogs</code></a><br><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a><br><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-mfa-spamming-followed-by-successful-login-a8cc6d5c-4e7e-4b48-b4ac-d8a116c62a8b-5935aa09.html">MFA Spamming followed by Successful login</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-mail.read-permissions-granted-to-application-2560515c-07d1-434e-87fb-ebe3af267760-50b99956.html">Mail.Read Permissions Granted to Application</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-microsoft-entra-id-powershell-accessing-non-entra-id-resources-50574fac-f8d1-4395-81c7-78a463ff0c52-6172797f.html">Microsoft Entra ID PowerShell accessing non-Entra ID resources</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-microsoft-entra-id-role-management-permission-grant-1ff56009-db01-4615-8211-d4fda21da02d-2754d79c.html">Microsoft Entra ID Role Management Permission Grant</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Persistence, Impact</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-modified-domain-federation-trust-settings-95dc4ae3-e0f2-48bd-b996-cdd22b90f9af-cb9684ef.html">Modified domain federation trust settings</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">CredentialAccess, Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-multiple-admin-membership-removals-from-newly-created-admin.-cda5928c-2c1e-4575-9dfa-07568bc27a4f-ebb84fce.html">Multiple admin membership removals from newly created admin.</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-nrt-authentication-methods-changed-for-vip-users-29e99017-e28d-47be-8b9a-c8c711f8a903-12365352.html">NRT Authentication Methods Changed for VIP Users</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-nrt-first-access-credential-added-to-application-or-service-principal-where-no-creden-b6988c32-4f3b-4a45-8313-b46b33061a74-b17559b5.html">NRT First access credential added to Application or Service Principal where no credential was present</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-nrt-modified-domain-federation-trust-settings-8540c842-5bbc-4a24-9fb2-a836c0e55a51-3b2b599c.html">NRT Modified domain federation trust settings</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">CredentialAccess, Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-nrt-new-access-credential-added-to-application-or-service-principal-e42e889a-caaf-4dbb-aec6-371b37d64298-de5e304f.html">NRT New access credential added to Application or Service Principal</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-nrt-pim-elevation-request-rejected-5db427b2-f406-4274-b413-e9fcb29412f8-faff1eec.html">NRT PIM Elevation Request Rejected</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-nrt-privileged-role-assigned-outside-pim-14f6da04-2f96-44ee-9210-9ccc1be6401e-12969908.html">NRT Privileged Role Assigned Outside PIM</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-nrt-user-added-to-microsoft-entra-id-privileged-groups-70fc7201-f28e-4ba7-b9ea-c04b96701f13-c42c23de.html">NRT User added to Microsoft Entra ID Privileged Groups</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-new-user-assigned-to-privileged-role-050b9b3d-53d0-4364-a3da-1b678b8211ec-fad23221.html">New User Assigned to Privileged Role</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-new-access-credential-added-to-application-or-service-principal-79566f41-df67-4e10-a703-c38a6213afd8-15b8a555.html">New access credential added to Application or Service Principal</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-new-onmicrosoft-domain-added-to-tenant-4f42b94f-b210-42d1-a023-7fa1c51d969f-9b50862e.html">New onmicrosoft domain added to tenant</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">ResourceDevelopment</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-pim-elevation-request-rejected-7d7e20f8-3384-4b71-811c-f5e950e8306c-aad39230.html">PIM Elevation Request Rejected</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-password-spray-attack-against-adfssigninlogs-5533fe80-905e-49d5-889a-df27d2c3976d-bc003e0d.html">Password spray attack against ADFSSignInLogs</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/adfssigninlogs.html"><code>ADFSSignInLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-password-spray-attack-against-microsoft-entra-id-seamless-sso-fb7ca1c9-e14c-40a3-856e-28f3c14ea1ba-0de0d722.html">Password spray attack against Microsoft Entra ID Seamless SSO</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/aadnoninteractiveusersigninlogs.html"><code>AADNonInteractiveUserSignInLogs</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-password-spray-attack-against-microsoft-entra-id-application-48607a29-a26a-4abf-8078-a06dbdd174a4-abc69084.html">Password spray attack against Microsoft Entra ID application</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-possible-signin-from-azure-backdoor-fa00014c-c5f4-4715-8f5b-ba567e19e41e-dd1ac846.html">Possible SignIn from Azure Backdoor</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-privileged-accounts-sign-in-failure-spikes-34c5aff9-a8c2-4601-9654-c7e46342d03b-ebff2fbe.html">Privileged Accounts - Sign in Failure Spikes</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a><br><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-privileged-role-assigned-outside-pim-269435e3-1db8-4423-9dfc-9bf59997da1c-d87cbe19.html">Privileged Role Assigned Outside PIM</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-rare-application-consent-83ba3057-9ea3-4759-bf6a-933f2e5bc7ee-a30dee09.html">Rare application consent</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-sign-ins-from-ips-that-attempt-sign-ins-to-disabled-accounts-500c103a-0319-4d56-8e99-3cec8d860757-7cb25dd6.html">Sign-ins from IPs that attempt sign-ins to disabled accounts</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, Persistence</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-successful-logon-from-ip-and-failure-from-a-different-ip-02ef8d7e-fc3a-4d86-a457-650fa571d8d2-8d1712d5.html">Successful logon from IP and failure from a different IP</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess, InitialAccess</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a><br><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-suspicious-entra-id-joined-device-update-3a3c6835-0086-40ca-b033-a93bf26d878f-b40b663f.html">Suspicious Entra ID Joined Device Update</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-suspicious-service-principal-creation-activity-6852d9da-8015-4b95-8ecf-d9572ee0395d-57b7f81f.html">Suspicious Service Principal creation activity</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CredentialAccess, PrivilegeEscalation, InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/aadserviceprincipalsigninlogs.html"><code>AADServicePrincipalSignInLogs</code></a><br><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-suspicious-sign-in-followed-by-mfa-modification-aec77100-25c5-4254-a20a-8027ed92c46c-8c458768.html">Suspicious Sign In Followed by MFA Modification</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a><br><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-suspicious-application-consent-for-offline-access-3533f74c-9207-4047-96e2-0eb9383be587-fa7e45f8.html">Suspicious application consent for offline access</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-suspicious-application-consent-similar-to-o365-attack-toolkit-f948a32f-226c-4116-bddd-d95e91d97eb9-f8a2446b.html">Suspicious application consent similar to O365 Attack Toolkit</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">CredentialAccess, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-suspicious-application-consent-similar-to-pwnauth-39198934-62a0-4781-8416-a81265c03fd6-18583afd.html">Suspicious application consent similar to PwnAuth</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-user-accounts-sign-in-failure-due-to-ca-spikes-3a9d5ede-2b9d-43a2-acc4-d272321ff77c-0daea6fb.html">User Accounts - Sign in Failure due to CA Spikes</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a><br><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-user-assigned-new-privileged-role-746ddb63-f51b-4563-b449-a8b13cf302ec-dac38182.html">User Assigned New Privileged Role</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-user-added-to-microsoft-entra-id-privileged-groups-4d94d4a9-dc96-410a-8dea-4d4d4584188b-6ad398a6.html">User added to Microsoft Entra ID Privileged Groups</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-[deprecated]-explicit-mfa-deny-a22740ec-fc1e-4c91-8de6-c29c6450ad00-04320464.html">[Deprecated] Explicit MFA Deny</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/deviceinfo.html"><code>DeviceInfo</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-full-access-as-app-granted-to-application-54e22fed-0ec6-4fb2-8312-2a3809a93f63-6d6d5e9f.html">full_access_as_app Granted To Application</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-azureactivedirectoryauditlogs-03b0be29.html">AzureActiveDirectoryAuditLogs</a></td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-azureactivedirectorysignins-97204667.html">AzureActiveDirectorySignins</a></td>
+<td style="text-align: left;"><a href="../tables/aadnoninteractiveusersigninlogs.html"><code>AADNonInteractiveUserSignInLogs</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-conditionalaccesssism-90abe712.html">ConditionalAccessSISM</a></td>
+<td style="text-align: left;"><a href="../tables/aadriskyserviceprincipals.html"><code>AADRiskyServicePrincipals</code></a><br><a href="../tables/aadserviceprincipalriskevents.html"><code>AADServicePrincipalRiskEvents</code></a><br><a href="../tables/aadserviceprincipalsigninlogs.html"><code>AADServicePrincipalSignInLogs</code></a><br><a href="../tables/auditlogs.html"><code>AuditLogs</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-block-entra-id-user-incident-ae4509be.html">Block Entra ID user - Incident</a></td>
+<td style="text-align: left;">For each account entity included in the incident, this playbook will disable the user in Microsoft E...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-block-microsoft-entra-id-user-alert-dc74020c.html">Block Microsoft Entra ID user - Alert</a></td>
+<td style="text-align: left;">For each account entity included in the alert, this playbook will disable the user in Microsoft Entr...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-block-microsoft-entra-id-user-entity-trigger-b252354c.html">Block Microsoft Entra ID user - Entity trigger</a></td>
+<td style="text-align: left;">This playbook disables the selected user (account entity) in Microsoft Entra ID. If this playbook tr...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-prompt-user-alert-4762e6ab.html">Prompt User - Alert</a></td>
+<td style="text-align: left;">This playbook will ask the user if they completed the action from the alert in Microsoft Sentinel. I...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-prompt-user-incident-2db81db3.html">Prompt User - Incident</a></td>
+<td style="text-align: left;">This playbook will ask the user if they completed the action from the Incident in Microsoft Sentinel...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-reset-microsoft-entra-id-user-password-alert-trigger-84321225.html">Reset Microsoft Entra ID User Password - Alert Trigger</a></td>
+<td style="text-align: left;">This playbook will reset the user password using Graph API. It will send the password (which is a ra...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-reset-microsoft-entra-id-user-password-entity-trigger-211fef4d.html">Reset Microsoft Entra ID User Password - Entity trigger</a></td>
+<td style="text-align: left;">This playbook will reset the user password using Graph API. It will send the password (which is a ra...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-reset-microsoft-entra-id-user-password-incident-trigger-74c8f531.html">Reset Microsoft Entra ID User Password - Incident Trigger</a></td>
+<td style="text-align: left;">This playbook will reset the user password using Graph API. It will send the password (which is a ra...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-revoke-entra-id-sign-in-session-using-entity-trigger-6211e7fd.html">Revoke Entra ID  Sign-in session using entity trigger</a></td>
+<td style="text-align: left;">This playbook will revoke user's sign-in sessions and user will have to perform authentication again...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-revoke-entra-id-signin-sessions-incident-trigger-e0f6ae42.html">Revoke Entra ID SignIn Sessions - incident trigger</a></td>
+<td style="text-align: left;">This playbook will revoke all signin sessions for the user using Graph API. It will send an email to...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-revoke-entra-id-signinsessions-alert-trigger-c72ead46.html">Revoke-Entra ID SignInSessions alert trigger</a></td>
+<td style="text-align: left;">This playbook will revoke all signin sessions for the user using Graph API. It will send an email to...</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.3.8</td>
+<td>06-02-2026</td>
+<td>Fixed Broken Links in <strong>Analytical Rule</strong>.</td>
+</tr>
+<tr>
+<td>3.3.7</td>
+<td>20-01-2026</td>
+<td>Updated Revoke-AADSignInSessions <strong>Playbooks</strong> Instructions. <br/> Add Conditional Access Insights <strong>Workbook</strong> for Microsoft Entra ID.</td>
+</tr>
+<tr>
+<td>3.3.6</td>
+<td>23-09-2025</td>
+<td>Updated  <strong>Analytical Rule</strong> to fix the rule saving issue. <br/> Removed Preview Designation from <strong>Microsoft Entra ID Connector</strong> Data Types.</td>
+</tr>
+<tr>
+<td>3.3.5</td>
+<td>25-07-2025</td>
+<td>Updated Entra id Conditional Access (prefix) <strong>Analytical Rule</strong></td>
+</tr>
+<tr>
+<td>3.3.4</td>
+<td>10-07-2025</td>
+<td>Updated <strong>Analytical Rule</strong> NRT_UseraddedtoPrivilgedGroups.yaml and UseraddedtoPrivilgedGroups.yaml</td>
+</tr>
+<tr>
+<td>3.3.3</td>
+<td>03-06-2025</td>
+<td>Updates to multiple <strong>Playbooks</strong> to improve documentation, streamline deployment instructions, and add links to detailed setup steps.</td>
+</tr>
+<tr>
+<td>3.3.2</td>
+<td>08-05-2025</td>
+<td>Removed the IP entity type and its associated field mappings (Address and IPAddress) in <em>DistribPassCrackAttempt.yaml</em> <strong>Analytic Rule</strong>.</td>
+</tr>
+<tr>
+<td>3.3.1</td>
+<td>08-04-2025</td>
+<td>Updated <strong>Analytical Rule</strong> [Anomalous sign-in location by user account and authenticating application]</td>
+</tr>
+<tr>
+<td>3.3.0</td>
+<td>28-01-2025</td>
+<td>Added new <strong>Analytic Rule</strong> AzureRBAC to the Solution.</td>
+</tr>
+<tr>
+<td>3.2.10</td>
+<td>19-12-2024</td>
+<td>Updated <strong>Analytical Rule</strong> MFARejectedbyUser.yaml.</td>
+</tr>
+<tr>
+<td>3.2.9</td>
+<td>27-08-2024</td>
+<td>Updated <strong>Analytical Rule</strong> for missing TTP.</td>
+</tr>
+<tr>
+<td>3.2.8</td>
+<td>19-08-2024</td>
+<td>Exclude Result Reason "RoleAssignmentExists" from <strong>Analytic Rule</strong> [NRT PIM Elevation Request Rejected].</td>
+</tr>
+<tr>
+<td>3.2.7</td>
+<td>12-06-2024</td>
+<td>Fixed the bugs from <strong>Analytic Rules</strong>.</td>
+</tr>
+<tr>
+<td>3.2.6</td>
+<td>06-06-2024</td>
+<td>Successful logon from IP and failure from a different IP fixes.</td>
+</tr>
+<tr>
+<td>3.2.5</td>
+<td>28-05-2024</td>
+<td>Updated Entity mappings and changed description in <strong>Analytic Rule</strong>.</td>
+</tr>
+<tr>
+<td>3.2.4</td>
+<td>21-03-2024</td>
+<td>Used the make-series operator instead of Make_list.</td>
+</tr>
+<tr>
+<td>3.2.3</td>
+<td>13-03-2024</td>
+<td>Removed uses of BlastRadius from query section of <strong>Hunting Queries</strong> where it was used incorrectly.</td>
+</tr>
+<tr>
+<td>3.2.2</td>
+<td>13-03-2024</td>
+<td>Updated <strong>Analytic Rule</strong> ExplicitMFADeny.</td>
+</tr>
+<tr>
+<td>3.2.1</td>
+<td>16-02-2024</td>
+<td>Fixed entity mapping of <strong>Analytic Rule</strong> NRT_NewAppOrServicePrincipalCredential.yaml.</td>
+</tr>
+<tr>
+<td>3.2.0</td>
+<td>05-02-2024</td>
+<td>1 <strong>Analytic Rule</strong> added PossibleSignInfromAzureBackdoor NRT_NewAppOrServicePrincipalCredential.</td>
+</tr>
+<tr>
+<td>3.0.11</td>
+<td>17-01-2024</td>
+<td>1 <strong>Analytic Rule</strong> Fixed wrong capitalization for identifier ResourceId.</td>
+</tr>
+<tr>
+<td>3.0.10</td>
+<td>26-12-2023</td>
+<td>1 <strong>Analytic Rule</strong> Modified by adding "GroupMembership" instead of "Admin" condition for better extraction of admin accounts from the identity infotable.</td>
+</tr>
+<tr>
+<td>3.0.9</td>
+<td>28-11-2023</td>
+<td>2 <strong>Analytic Rules</strong> Modified by Adding Entity Mapping to (GuestAccountsAddedinAADGroupsOtherThanTheOnesSpecified.yaml) and Changed timerange of (SigninPasswordSpray.yaml) from 3d to 1d.</td>
+</tr>
+<tr>
+<td>3.0.8</td>
+<td>21-11-2023</td>
+<td>1 <strong>Analytic Rules</strong> Fixed issue that was causing multiple triggers for the same event.</td>
+</tr>
+<tr>
+<td>3.0.7</td>
+<td>06-11-2023</td>
+<td>Modified text as there is rebranding from Azure Active Directory to Microsoft Entra ID.</td>
+</tr>
+<tr>
+<td>3.0.6</td>
+<td>30-10-2023</td>
+<td>1 <strong>Data Connector</strong> added back in the solution.</td>
+</tr>
+<tr>
+<td>3.0.5</td>
+<td>19-10-2023</td>
+<td>1 <strong>Analytic Rules</strong> updated in the solution (PIMElevationRequestRejected).</td>
+</tr>
+<tr>
+<td>3.0.4</td>
+<td>16-10-2023</td>
+<td>1 <strong>Analytic Rules</strong> got added in the solution (SuspiciousSignInFollowedByMFAModification), modified workbook query to fix duplicate locations for the query.</td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>22-09-2023</td>
+<td>2 <strong>Analytic Rules</strong> updated in the solution (PIM Elevation Request Rejected),(NRT Authentication Methods Changed for VIP Users).</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>08-08-2023</td>
+<td>1 <strong>Analytic Rules</strong> updated in the solution (Credential added after admin consented to Application).</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>01-08-2023</td>
+<td>Added new <strong>Analytic Rule</strong> (New onmicrosoft domain added to tenant).</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>19-07-2023</td>
+<td>2 <strong>Analytic Rules</strong> updated in the solution (User Assigned Privileged Role,Successful logon from IP and failure from a different IP).</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VMWareESXi &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>VMWareESXi</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="VMWareESXi Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.6</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-01-12</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMWareESXi">VMWareESXi</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pre-requisites</strong></td>
+<td style="text-align: left;"><a href="syslog.html">Syslog</a></td>
+</tr>
+</tbody>
+</table>
+<p>The VMware ESXi solution for Microsoft Sentinel enables you to ingest VMWare ESXi logs into Microsoft Sentinel.</p>
+<p>This solution is dependent on the Syslog solution containing the Syslog via AMA connector to collect the logs. The Syslog  solution will be installed as part of this solution installation. </p>
+<p><strong>NOTE</strong>: Microsoft recommends installation of Syslog via AMA Connector. Legacy connector uses the Log Analytics agent which were deprecated on <strong>Aug 31, 2024.</strong> Using MMA and AMA on same machine can cause log duplication and extra ingestion cost <a href="https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate">more details</a>.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#pre-requisites">Pre-requisites</a></li>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Pre-requisites</h2>
+<p>This solution depends on <strong>1 other solution(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="syslog.html">Syslog</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Data Connectors</h2>
+<p>This solution has <strong>1 discovered data connector(s)⚠️</strong> (not in Solution definition):</p>
+<ul>
+<li><a href="../connectors/vmwareesxi.html">[Deprecated] VMware ESXi</a> ⚠️</li>
+</ul>
+<p>Connectors from dependency solutions:</p>
+<ul>
+<li><a href="../connectors/syslog.html">Syslog via Legacy Agent</a> <em>(dependency on <a href="syslog.html">Syslog</a>)</em></li>
+<li><a href="../connectors/syslogama.html">Syslog via AMA</a> <em>(dependency on <a href="syslog.html">Syslog</a>)</em></li>
+</ul>
+<p><em>⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.</em></p>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+<td><a href="../connectors/syslogama.html">Syslog via AMA</a> (dependency), <a href="../connectors/syslog.html">Syslog via Legacy Agent</a> (dependency), <a href="../connectors/vmwareesxi.html">[Deprecated] VMware ESXi</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>26 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">14</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/vmwareesxi-vmware-esxi-dormant-vm-started-4cdcd5d8-89df-4076-a917-bc50abb9f2ab-af0d35be.html">VMware ESXi - Dormant VM started</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vmwareesxi-vmware-esxi-low-patch-disk-space-48d992ba-d404-4159-a8c6-46f51d1325c7-d606fa04.html">VMware ESXi - Low patch disk space</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vmwareesxi-vmware-esxi-low-temp-directory-space-2ee727f7-b7c2-4034-b6c9-d245d5a29343-01b9a2e3.html">VMware ESXi - Low temp directory space</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vmwareesxi-vmware-esxi-multiple-failed-shell-login-via-ssh-22d177d5-588c-4f1a-a332-2695f52079bb-73ceb2c6.html">VMware ESXi - Multiple Failed Shell Login via SSH</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vmwareesxi-vmware-esxi-multiple-vms-stopped-5fe1af14-cd40-48ff-b581-3a12a1f90785-2049eb67.html">VMware ESXi - Multiple VMs stopped</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vmwareesxi-vmware-esxi-multiple-new-vms-started-bdea247f-7d17-498c-ac0e-c7e764cbdbbe-e942b8fc.html">VMware ESXi - Multiple new VMs started</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vmwareesxi-vmware-esxi-new-vm-started-0f4a80de-344f-47c0-bc19-cb120c59b6f0-6ed7a94d.html">VMware ESXi - New VM started</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vmwareesxi-vmware-esxi-root-impersonation-23a3cf72-9497-408e-8144-87958a60d31a-78e3904d.html">VMware ESXi - Root impersonation</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vmwareesxi-vmware-esxi-root-login-deb448a8-6a9d-4f8c-8a95-679a0a2cd62c-ca0d0073.html">VMware ESXi - Root login</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vmwareesxi-vmware-esxi-root-password-changed-17b0ea43-5aeb-4dc4-ac3a-be84acb8d5b7-383072d3.html">VMware ESXi - Root password changed</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess, Persistence, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vmwareesxi-vmware-esxi-ssh-enable-on-esxi-host-4f5b5d79-ff4e-4edd-ae3e-9e1187f0b924-c8072416.html">VMware ESXi - SSH Enable on ESXi Host</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vmwareesxi-vmware-esxi-shared-or-stolen-root-account-9c496d6c-42a3-4896-9b6c-00254386928f-dde0a49e.html">VMware ESXi - Shared or stolen root account</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vmwareesxi-vmware-esxi-unexpected-disk-image-395c5560-ddc2-45b2-aafe-2e3f64528d3d-a62a6484.html">VMware ESXi - Unexpected disk image</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vmwareesxi-vmware-esxi-vm-stopped-43889f30-7bce-4d8a-93bb-29c9615ca8dd-fefd1315.html">VMware ESXi - VM stopped</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/vmwareesxi-vmware-esxi-download-errors-6702f91d-c764-497b-8d67-1cce8a33b895-040e68b2.html">VMware ESXi - Download errors</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vmwareesxi-vmware-esxi-list-of-dormant-users.-a0f32708-e6fb-427f-94d2-b09cf64acdf8-1dadc601.html">VMware ESXi - List of dormant users.</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vmwareesxi-vmware-esxi-list-of-powered-off-vms-b8d23b5d-3fb0-4265-9f4f-8878bc87471d-e2ff8382.html">VMware ESXi - List of powered off VMs</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vmwareesxi-vmware-esxi-list-of-powered-on-vms-9148aa96-1480-4150-9ed7-bacaae322260-8d5bc41f.html">VMware ESXi - List of powered on VMs</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vmwareesxi-vmware-esxi-list-of-unused-vms-d69f0373-f424-4f17-a34a-8379974fec6e-3f08bd25.html">VMware ESXi - List of unused VMs</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vmwareesxi-vmware-esxi-list-of-virtual-disks-images-9a90ccdd-2091-447f-bea2-e8a5125c8dde-c04cd3c3.html">VMware ESXi - List of virtual disks (images)</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vmwareesxi-vmware-esxi-nfc-download-activities-b5424011-314b-4ddc-95db-12d2b6f1ce96-eec0ef56.html">VMware ESXi - NFC download activities</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vmwareesxi-vmware-esxi-root-logins-e04a7f8e-1a47-4390-943d-a6cabbf4ec6e-a35f9c9c.html">VMware ESXi - Root logins</a></td>
+<td style="text-align: left;">InitialAccess, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vmwareesxi-vmware-esxi-root-logins-failures-fc6c0440-1bb6-4661-89e9-4cb2c8f1e5e2-48dd363d.html">VMware ESXi - Root logins failures</a></td>
+<td style="text-align: left;">InitialAccess, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vmwareesxi-vmware-esxi-vm-high-resource-load-3467bb11-7cbf-49f7-9e71-c3d0da327af5-9c6a697a.html">VMware ESXi - VM high resource load</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/vmwareesxi-vmwareesxi-a632a286.html">VMWareESXi</a></td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/vmwareesxi.html">VMwareESXi</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.6</td>
+<td>04-01-2026</td>
+<td>Remove broken VMware ESXi link</td>
+</tr>
+<tr>
+<td>3.0.5</td>
+<td>03-11-2025</td>
+<td>Added new <strong>Analytic Rule</strong> (VMware ESXi - Root change password) and (VMware ESXi - Multiple Failed SSH Login)</td>
+</tr>
+<tr>
+<td>3.0.4</td>
+<td>09-10-2025</td>
+<td>Added new <strong>Analytic Rule</strong> (VMware ESXi - SSH Enable on ESXi Host)</td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>02-12-2024</td>
+<td>Removed Deprecated <strong>Data connectors</strong></td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>01-08-2024</td>
+<td>Update <strong>Parser</strong> as part of Syslog migration</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Deprecating data connectors</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>30-04-2024</td>
+<td>Repackaged for parser name issue</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>15-04-2024</td>
+<td>Updated <strong>Parser</strong> VMwareESXi.yaml to automatic update applicable logs</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

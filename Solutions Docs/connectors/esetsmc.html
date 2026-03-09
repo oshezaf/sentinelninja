@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ Eset Security Management Center &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>⚠️ Eset Security Management Center</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/eset-logo.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>EsetSMC</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Eset</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/eset-security-management-center.html">Eset Security Management Center</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/mma.html">MMA</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Eset%20Security%20Management%20Center/Data%20Connectors/esetSmc.json">esetSmc.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+</tbody>
+</table>
+<p>Connector for <a href="https://help.eset.com/esmc_admin/72/en-US/">Eset SMC</a> threat events, audit logs, firewall events and web sites filter.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/eset-cl.html"><code>eset_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Access to Eset SMC console</strong>: Permissions to configure log export</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Install and onboard the agent for Linux</strong></p>
+<p>Typically, you should install the agent on a different computer from the one on which the logs are generated.</p>
+<blockquote>
+<p>Syslog logs are collected only from <strong>Linux</strong> agents.
+<strong>Choose where to install the agent:</strong></p>
+</blockquote>
+<p><strong>Install agent on Azure Linux Virtual Machine</strong></p>
+<p>Select the machine to install the agent on and then click <strong>Connect</strong>.
+  - <strong>Install agent on Linux Virtual Machine</strong></p>
+<p><strong>Install agent on a non-Azure Linux Machine</strong></p>
+<p>Download the agent on the relevant machine and follow the instructions.
+  - <strong>Install agent on Linux (Non-Azure)</strong></p>
+<p><strong>2. Configure the logs to be collected</strong></p>
+<p>Configure rsyslog to accept logs from your Eset SMC IP address.</p>
+<pre><code>sudo -i
+
+
+
+# Set ESET SMC source IP address
+
+export ESETIP={Enter your IP address}
+
+
+
+# Create rsyslog configuration file
+
+cat &gt; /etc/rsyslog.d/80-remote.conf &lt;&lt; EOF
+
+\$ModLoad imudp
+
+\$UDPServerRun 514
+
+\$ModLoad imtcp
+
+\$InputTCPServerRun 514
+
+\$AllowedSender TCP, 127.0.0.1, $ESETIP
+
+\$AllowedSender UDP, 127.0.0.1, $ESETIP
+
+user.=alert;user.=crit;user.=debug;user.=emerg;user.=err;user.=info;user.=notice;user.=warning  @127.0.0.1:25224
+
+EOF
+
+
+
+# Restart rsyslog
+
+systemctl restart rsyslog```
+
+**3. Configure OMS agent to pass Eset SMC data in API format**
+
+In order to easily recognize Eset data we will push it to separate table and parse at agent so query in Azure Sentinel is easier and fast. To make it simple we will just modify ```match oms.**``` section to send data as API objects by changing type to out_oms_api. Modify file on /etc/opt/microsoft/omsagent/{REPLACEyourworkspaceid}/conf/omsagent.conf. Full ```match oms.**``` section looks like this:
+
+
+
+</code></pre>
+<p><match oms.** docker.**></p>
+<p>type out_oms_api</p>
+<p>log_level info</p>
+<p>num_threads 5</p>
+<p>run_in_background false</p>
+<p>omsadmin_conf_path /etc/opt/microsoft/omsagent/{REPLACEyourworkspaceid}/conf/omsadmin.conf</p>
+<p>cert_path /etc/opt/microsoft/omsagent/{REPLACEyourworkspaceid}/certs/oms.crt</p>
+<p>key_path /etc/opt/microsoft/omsagent/{REPLACEyourworkspaceid}/certs/oms.key</p>
+<p>buffer_chunk_limit 15m</p>
+<p>buffer_type file</p>
+<p>buffer_path /var/opt/microsoft/omsagent/{REPLACEyourworkspaceid}/state/out_oms_common*.buffer</p>
+<p>buffer_queue_limit 10</p>
+<p>buffer_queue_full_action drop_oldest_chunk</p>
+<p>flush_interval 20s</p>
+<p>retry_limit 10</p>
+<p>retry_wait 30s</p>
+<p>max_retry_wait 9m</p>
+<p></match></p>
+<pre><code>
+**4. Change OMS agent configuration to catch tag oms.api.eset and parse structured data**
+
+Modify file /etc/opt/microsoft/omsagent/{REPLACEyourworkspaceid}/conf/omsagent.d/syslog.conf
+</code></pre>
+<p><source></p>
+<p>type syslog</p>
+<p>port 25224</p>
+<p>bind 127.0.0.1</p>
+<p>protocol_type udp</p>
+<p>tag oms.api.eset</p>
+<p></source></p>
+<p><filter oms.api.**></p>
+<p>@type parser</p>
+<p>key_name message</p>
+<p>format /(?<message>.<em>?{.</em>})/</p>
+<p></filter></p>
+<p><filter oms.api.**></p>
+<p>@type parser</p>
+<p>key_name message</p>
+<p>format json</p>
+<p></filter></p>
+<pre><code>
+**5. Disable automatic configuration and restart agent**
+
+```bash
+
+# Disable changes to configuration files from Portal
+
+sudo su omsagent -c 'python /opt/microsoft/omsconfig/Scripts/OMS_MetaConfigHelper.py --disable'
+
+
+
+# Restart agent
+
+sudo /opt/microsoft/omsagent/bin/service_control restart
+
+
+
+# Check agent logs
+
+tail -f /var/opt/microsoft/omsagent/log/omsagent.log
+
+</code></pre>
+<p><strong>6. Configure Eset SMC to send logs to connector</strong></p>
+<p>Configure Eset Logs using BSD style and JSON format.</p>
+<ul>
+<li>
+<p>Go to Syslog server configuration as described in <a href="https://help.eset.com/esmc_admin/72/en-US/admin_server_settings.html?admin_server_settings_syslog.html">Eset documentation</a> and configure Host (your connector), Format BSD, Transport TCP</p>
+</li>
+<li>
+<p>Go to Logging section as described in <a href="https://help.eset.com/esmc_admin/72/en-US/admin_server_settings.html?admin_server_settings_export_to_syslog.html">Eset documentation</a> and enable JSON</p>
+</li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

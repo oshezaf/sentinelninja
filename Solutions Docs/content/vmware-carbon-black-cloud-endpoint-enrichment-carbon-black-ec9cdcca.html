@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Endpoint enrichment - Carbon Black &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Endpoint enrichment - Carbon Black</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>This playbook will collect device information from Carbon Black and post a report on the incident.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Carbon%20Black%20Cloud/Playbooks/CarbonBlack-DeviceEnrichment/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Carbon%20Black%20Cloud/Playbooks/CarbonBlack-DeviceEnrichment/readme.md">CarbonBlack-DeviceEnrichment/readme.md</a></em></p>
+</blockquote>
+<h1>CarbonBlack-DeviceEnrichment Incident With devices information</h1>
+<p>## Summary
+ When a new Sentinel incident is created,this playbook gets triggered and performs below actions
+ 1. Fetches the devices information from CarbonBlack
+ 2. Enrich the incident with device information by adding a comment to the incident
+     <img alt="Comment example" src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/VMware%20Carbon%20Black%20Cloud/Playbooks/CarbonBlack-DeviceEnrichment/images/Incident_Comment.PNG" />
+<img alt="CarbonBlack-Enrich Incident With devices information" src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/VMware%20Carbon%20Black%20Cloud/Playbooks/CarbonBlack-DeviceEnrichment/images/designerOverviewLight.png" /></p>
+<h3>Prerequisites</h3>
+<ol>
+<li>CarbonBlack Custom Connector needs to be deployed prior to the deployment of this playbook under the same subscription.</li>
+<li>Generate an API key.Refer this link <a href="https://developer.carbonblack.com/reference/carbon-black-cloud/authentication/#creating-an-api-key"> how to generate the API Key</a></li>
+<li>Find Organization key by referring this link <a href="https://developer.carbonblack.com/reference/carbon-black-cloud/authentication/#creating-an-api-key"> Find Organization key by referring this link </a></li>
+</ol>
+<h3>Deployment instructions</h3>
+<ol>
+<li>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
+<li>Fill in the required parameters:<ul>
+<li>Playbook Name: Enter the playbook name here (Ex:CarbonBlack-DeviceEnrichment)</li>
+<li>OrganizationKey : Enter the Organization key</li>
+</ul>
+</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FVMware%2520Carbon%2520Black%2520Cloud%2FPlaybooks%2FCarbonBlack-DeviceEnrichment%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FVMware%2520Carbon%2520Black%2520Cloud%2FPlaybooks%2FCarbonBlack-DeviceEnrichment%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<h3>Post-Deployment instructions</h3>
+<h4>Authorize connections</h4>
+<p>Once deployment is complete, you will need to authorize each connection.
+1.  Click the Microsoft Sentinel connection resource
+2.  Click edit API connection
+3.  Click Authorize
+4.  Sign in
+5.  Click Save
+6.  Repeat step 2&amp;3 while for CarbonBlack connector Connection to authorize connector API of the playbook (For authorizing the CarbonBlack API connection, API Key needs to be provided. API Key Value is the combination of API Key / API ID)</p>
+<h4>Configurations in Sentinel</h4>
+<ol>
+<li>In Microsoft Sentinel analytical rules should be configured to trigger an incident with risky device </li>
+<li>Configure the automation rules to trigger this playbook</li>
+</ol>
+<h2>Playbook steps explained</h2>
+<h3>When Microsoft Sentinel incident creation rule is triggered</h3>
+<p>Microsoft Sentinel incident is created. The playbook receives the incident as the input.</p>
+<h3>Entities - Get Hosts</h3>
+<p>Get the list of risky devices as entities from the Incident</p>
+<h3>Initialize variable to compose the devices information</h3>
+<p>Initialize an array variable to format the license query and used as parameter while calling the search devices with organization API action</p>
+<h3>Initialize variable to assign the Organization Id</h3>
+<p>Initialize an string variable to assign the Organization Id provided by Client while deploying the playbook and used a parameter while calling the search devices with organization API action.</p>
+<h3>For each-Hosts</h3>
+<p>This action will append each host to array variable called Hosts</p>
+<h3>Join OR to the hosts</h3>
+<p>This action will append logical OR operator to collected Hosts</p>
+<h3>Search devices in your organization</h3>
+<p>This action call API to search the devices in the organization by taking two parameters such as Organization Key and Query [ Query contains names of the devices ]</p>
+<h3>Construct HTML table</h3>
+<p>This action will construct the HTML table with devices information</p>
+<h3>Add a comment to the incident with the information</h3>
+<p>This action will enrich the incident with the constructed HTML table with devices information</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/vmware-carbon-black-cloud.html">Back to VMware Carbon Black Cloud</a></p>
+</div>
+</body>
+</html>

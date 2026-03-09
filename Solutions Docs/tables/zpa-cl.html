@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZPACL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>ZPA_CL</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1</strong></td>
+<td style="text-align: left;">Yes 🔶 — uses type-suffixed column names</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (7 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ZPA_CL.json">KQL validation test schema</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Computer</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Message</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">RawData</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (2)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/customlogsama.html">CustomLogsAma</a></li>
+<li><a href="../solutions/zscaler-private-access-zpa.html">Zscaler Private Access (ZPA)</a></li>
+</ul>
+<h2>Connectors (2)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/zscalerprivateaccess.html">[Deprecated] Zscaler Private Access</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Content Items Using This Table (21)</h2>
+<h3>Analytic Rules (10)</h3>
+<p><strong>In solution <a href="../solutions/zscaler-private-access-zpa.html">Zscaler Private Access (ZPA)</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-private-access-zpa-zscaler-connections-by-dormant-user-66bc77ee-3e45-11ec-9bbc-0242ac130002-f761f156.html">Zscaler - Connections by dormant user</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-private-access-zpa-zscaler-forbidden-countries-b3d112b4-3e1e-11ec-9bbc-0242ac130002-e3dd2b4c.html">Zscaler - Forbidden countries</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-private-access-zpa-zscaler-shared-zpa-session-40a98355-0e52-479f-8c91-4ab659cba878-34f5ac2f.html">Zscaler - Shared ZPA session</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-private-access-zpa-zscaler-unexpected-zpa-session-duration-e07846e0-43ad-11ec-81d3-0242ac130003-e4bc983b.html">Zscaler - Unexpected ZPA session duration</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-private-access-zpa-zscaler-unexpected-event-count-of-rejects-by-policy-593e3e2a-43ce-11ec-81d3-0242ac130003-671436d7.html">Zscaler - Unexpected event count of rejects by policy</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-private-access-zpa-zscaler-unexpected-update-operation-672e2846-4226-11ec-81d3-0242ac130003-ca8c0527.html">Zscaler - Unexpected update operation</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-private-access-zpa-zscaler-zpa-connections-by-new-user-236a7ec1-0120-40f2-a157-c1a72dde8bcb-6ed3d7b4.html">Zscaler - ZPA connections by new user</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-private-access-zpa-zscaler-zpa-connections-from-new-ip-24f0779d-3927-403a-aac1-cc8791653606-b6a233fe.html">Zscaler - ZPA connections from new IP</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-private-access-zpa-zscaler-zpa-connections-from-new-country-c4902121-7a7e-44d1-810b-88d26db622ff-6623ecbd.html">Zscaler - ZPA connections from new country</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-private-access-zpa-zscaler-zpa-connections-outside-operational-hours-2859ad22-46c8-4cc7-ad7b-80ce0cba0af3-55a9e7fc.html">Zscaler - ZPA connections outside operational hours</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries (10)</h3>
+<p><strong>In solution <a href="../solutions/zscaler-private-access-zpa.html">Zscaler Private Access (ZPA)</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-private-access-zpa-zscaler-abnormal-total-bytes-size-181dc982-4631-11ec-81d3-0242ac130003-e7032088.html">Zscaler - Abnormal total bytes size</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-private-access-zpa-zscaler-applications-using-by-accounts-6ae7b9e0-462a-11ec-81d3-0242ac130003-1ebaabc5.html">Zscaler - Applications using by accounts</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-private-access-zpa-zscaler-connection-close-reasons-5467efc0-422c-11ec-81d3-0242ac130003-b72f2e60.html">Zscaler - Connection close reasons</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-private-access-zpa-zscaler-destination-ports-by-ip-20733e72-4231-11ec-81d3-0242ac130003-28998a41.html">Zscaler - Destination ports by IP</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-private-access-zpa-zscaler-rare-urlhostname-requests-d311eb1e-4231-11ec-81d3-0242ac130003-f54f8f3b.html">Zscaler - Rare urlhostname requests</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-private-access-zpa-zscaler-server-error-by-user-22545900-422d-11ec-81d3-0242ac130003-ce586a93.html">Zscaler - Server error by user</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-private-access-zpa-zscaler-top-connectors-26d5244a-462f-11ec-81d3-0242ac130003-404c3d4b.html">Zscaler - Top connectors</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-private-access-zpa-zscaler-top-source-ip-baf67720-4623-11ec-81d3-0242ac130003-f7a6f7b3.html">Zscaler - Top source IP</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-private-access-zpa-zscaler-users-access-groups-018e11f4-4627-11ec-81d3-0242ac130003-595e360a.html">Zscaler - Users access groups</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-private-access-zpa-zscaler-users-by-source-location-countries-bf8ce3e8-422a-11ec-81d3-0242ac130003-b3a2653a.html">Zscaler - Users by source location countries</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks (1)</h3>
+<p><strong>In solution <a href="../solutions/zscaler-private-access-zpa.html">Zscaler Private Access (ZPA)</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-private-access-zpa-zscalerzpa-0c8a39a9.html">ZscalerZPA</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Parsers Using This Table (1)</h2>
+<h3>Other Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/zpaevent.html">ZPAEvent</a></td>
+<td style="text-align: left;"><a href="../solutions/zscaler-private-access-zpa.html">Zscaler Private Access (ZPA)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

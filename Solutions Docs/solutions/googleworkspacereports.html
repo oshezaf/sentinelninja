@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GoogleWorkspaceReports &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>GoogleWorkspaceReports</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/google-workspace-logo.svg" alt="GoogleWorkspaceReports Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com/">https://support.microsoft.com/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-01-24</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleWorkspaceReports">GoogleWorkspaceReports</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://workspace.google.com/">Google Workspace</a> solution for Microsoft Sentinel enables you to ingest Google Workspace Activity events into Microsoft Sentinel. </p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs: </p>
+<p>• <a href="https://aka.ms/Sentinel-CCP_Platform">Microsoft Sentinel Codeless Connector Framework</a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong> (plus 1 discovered⚠️):</p>
+<ul>
+<li><a href="../connectors/googleworkspaceccpdefinition.html">Google Workspace Activities (via Codeless Connector Framework)</a></li>
+<li><a href="../connectors/googleworkspacereportsapi.html">[DEPRECATED] Google Workspace (G Suite)</a> ⚠️ 🔶</li>
+</ul>
+<p><em>⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.</em></p>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>23 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/gworkspace-reportsapi-access-transparency-cl.html"><code>GWorkspace_ReportsAPI_access_transparency_CL</code></a> 🔶</td>
+<td><a href="../connectors/googleworkspacereportsapi.html">[DEPRECATED] Google Workspace (G Suite)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/gworkspace-reportsapi-admin-cl.html"><code>GWorkspace_ReportsAPI_admin_CL</code></a> 🔶</td>
+<td><a href="../connectors/googleworkspacereportsapi.html">[DEPRECATED] Google Workspace (G Suite)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/gworkspace-reportsapi-calendar-cl.html"><code>GWorkspace_ReportsAPI_calendar_CL</code></a> 🔶</td>
+<td><a href="../connectors/googleworkspacereportsapi.html">[DEPRECATED] Google Workspace (G Suite)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/gworkspace-reportsapi-chat-cl.html"><code>GWorkspace_ReportsAPI_chat_CL</code></a> 🔶</td>
+<td><a href="../connectors/googleworkspacereportsapi.html">[DEPRECATED] Google Workspace (G Suite)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/gworkspace-reportsapi-chrome-cl.html"><code>GWorkspace_ReportsAPI_chrome_CL</code></a> 🔶</td>
+<td><a href="../connectors/googleworkspacereportsapi.html">[DEPRECATED] Google Workspace (G Suite)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/gworkspace-reportsapi-context-aware-access-cl.html"><code>GWorkspace_ReportsAPI_context_aware_access_CL</code></a> 🔶</td>
+<td><a href="../connectors/googleworkspacereportsapi.html">[DEPRECATED] Google Workspace (G Suite)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/gworkspace-reportsapi-data-studio-cl.html"><code>GWorkspace_ReportsAPI_data_studio_CL</code></a> 🔶</td>
+<td><a href="../connectors/googleworkspacereportsapi.html">[DEPRECATED] Google Workspace (G Suite)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/gworkspace-reportsapi-drive-cl.html"><code>GWorkspace_ReportsAPI_drive_CL</code></a> 🔶</td>
+<td><a href="../connectors/googleworkspacereportsapi.html">[DEPRECATED] Google Workspace (G Suite)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/gworkspace-reportsapi-gcp-cl.html"><code>GWorkspace_ReportsAPI_gcp_CL</code></a> 🔶</td>
+<td><a href="../connectors/googleworkspacereportsapi.html">[DEPRECATED] Google Workspace (G Suite)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/gworkspace-reportsapi-gplus-cl.html"><code>GWorkspace_ReportsAPI_gplus_CL</code></a> 🔶</td>
+<td><a href="../connectors/googleworkspacereportsapi.html">[DEPRECATED] Google Workspace (G Suite)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/gworkspace-reportsapi-groups-cl.html"><code>GWorkspace_ReportsAPI_groups_CL</code></a> 🔶</td>
+<td><a href="../connectors/googleworkspacereportsapi.html">[DEPRECATED] Google Workspace (G Suite)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/gworkspace-reportsapi-groups-enterprise-cl.html"><code>GWorkspace_ReportsAPI_groups_enterprise_CL</code></a> 🔶</td>
+<td><a href="../connectors/googleworkspacereportsapi.html">[DEPRECATED] Google Workspace (G Suite)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/gworkspace-reportsapi-jamboard-cl.html"><code>GWorkspace_ReportsAPI_jamboard_CL</code></a> 🔶</td>
+<td><a href="../connectors/googleworkspacereportsapi.html">[DEPRECATED] Google Workspace (G Suite)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/gworkspace-reportsapi-keep-cl.html"><code>GWorkspace_ReportsAPI_keep_CL</code></a> 🔶</td>
+<td><a href="../connectors/googleworkspacereportsapi.html">[DEPRECATED] Google Workspace (G Suite)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a> 🔶</td>
+<td><a href="../connectors/googleworkspacereportsapi.html">[DEPRECATED] Google Workspace (G Suite)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/gworkspace-reportsapi-meet-cl.html"><code>GWorkspace_ReportsAPI_meet_CL</code></a> 🔶</td>
+<td><a href="../connectors/googleworkspacereportsapi.html">[DEPRECATED] Google Workspace (G Suite)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/gworkspace-reportsapi-mobile-cl.html"><code>GWorkspace_ReportsAPI_mobile_CL</code></a> 🔶</td>
+<td><a href="../connectors/googleworkspacereportsapi.html">[DEPRECATED] Google Workspace (G Suite)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/gworkspace-reportsapi-rules-cl.html"><code>GWorkspace_ReportsAPI_rules_CL</code></a> 🔶</td>
+<td><a href="../connectors/googleworkspacereportsapi.html">[DEPRECATED] Google Workspace (G Suite)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/gworkspace-reportsapi-saml-cl.html"><code>GWorkspace_ReportsAPI_saml_CL</code></a> 🔶</td>
+<td><a href="../connectors/googleworkspacereportsapi.html">[DEPRECATED] Google Workspace (G Suite)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/gworkspace-reportsapi-token-cl.html"><code>GWorkspace_ReportsAPI_token_CL</code></a> 🔶</td>
+<td><a href="../connectors/googleworkspacereportsapi.html">[DEPRECATED] Google Workspace (G Suite)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/gworkspace-reportsapi-user-accounts-cl.html"><code>GWorkspace_ReportsAPI_user_accounts_CL</code></a> 🔶</td>
+<td><a href="../connectors/googleworkspacereportsapi.html">[DEPRECATED] Google Workspace (G Suite)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/googleworkspacereports.html"><code>GoogleWorkspaceReports</code></a></td>
+<td><a href="../connectors/googleworkspaceccpdefinition.html">Google Workspace Activities (via Codeless Connector Framework)</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/googleworkspacereports-cl.html"><code>GoogleWorkspaceReports_CL</code></a> 🔶</td>
+<td><a href="../connectors/googleworkspacereportsapi.html">[DEPRECATED] Google Workspace (G Suite)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>26 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">14</td>
+</tr>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/googleworkspacereports-gworkspace-api-access-granted-c45a9804-5da8-11ec-bf63-0242ac130002-333bb900.html">GWorkspace - API Access Granted</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion, LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-access-transparency-cl.html"><code>GWorkspace_ReportsAPI_access_transparency_CL</code></a><br><a href="../tables/gworkspace-reportsapi-admin-cl.html"><code>GWorkspace_ReportsAPI_admin_CL</code></a><br><a href="../tables/gworkspace-reportsapi-calendar-cl.html"><code>GWorkspace_ReportsAPI_calendar_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chat-cl.html"><code>GWorkspace_ReportsAPI_chat_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chrome-cl.html"><code>GWorkspace_ReportsAPI_chrome_CL</code></a><br><a href="../tables/gworkspace-reportsapi-context-aware-access-cl.html"><code>GWorkspace_ReportsAPI_context_aware_access_CL</code></a><br><a href="../tables/gworkspace-reportsapi-data-studio-cl.html"><code>GWorkspace_ReportsAPI_data_studio_CL</code></a><br><a href="../tables/gworkspace-reportsapi-drive-cl.html"><code>GWorkspace_ReportsAPI_drive_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gcp-cl.html"><code>GWorkspace_ReportsAPI_gcp_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gplus-cl.html"><code>GWorkspace_ReportsAPI_gplus_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-cl.html"><code>GWorkspace_ReportsAPI_groups_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-enterprise-cl.html"><code>GWorkspace_ReportsAPI_groups_enterprise_CL</code></a><br><a href="../tables/gworkspace-reportsapi-jamboard-cl.html"><code>GWorkspace_ReportsAPI_jamboard_CL</code></a><br><a href="../tables/gworkspace-reportsapi-keep-cl.html"><code>GWorkspace_ReportsAPI_keep_CL</code></a><br><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a><br><a href="../tables/gworkspace-reportsapi-meet-cl.html"><code>GWorkspace_ReportsAPI_meet_CL</code></a><br><a href="../tables/gworkspace-reportsapi-mobile-cl.html"><code>GWorkspace_ReportsAPI_mobile_CL</code></a><br><a href="../tables/gworkspace-reportsapi-rules-cl.html"><code>GWorkspace_ReportsAPI_rules_CL</code></a><br><a href="../tables/gworkspace-reportsapi-saml-cl.html"><code>GWorkspace_ReportsAPI_saml_CL</code></a><br><a href="../tables/gworkspace-reportsapi-token-cl.html"><code>GWorkspace_ReportsAPI_token_CL</code></a><br><a href="../tables/gworkspace-reportsapi-user-accounts-cl.html"><code>GWorkspace_ReportsAPI_user_accounts_CL</code></a><br><a href="../tables/googleworkspacereports-cl.html"><code>GoogleWorkspaceReports_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googleworkspacereports-gworkspace-admin-permissions-granted-03f25156-6172-11ec-90d6-0242ac120003-8b9cd6f1.html">GWorkspace - Admin permissions granted</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-access-transparency-cl.html"><code>GWorkspace_ReportsAPI_access_transparency_CL</code></a><br><a href="../tables/gworkspace-reportsapi-admin-cl.html"><code>GWorkspace_ReportsAPI_admin_CL</code></a><br><a href="../tables/gworkspace-reportsapi-calendar-cl.html"><code>GWorkspace_ReportsAPI_calendar_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chat-cl.html"><code>GWorkspace_ReportsAPI_chat_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chrome-cl.html"><code>GWorkspace_ReportsAPI_chrome_CL</code></a><br><a href="../tables/gworkspace-reportsapi-context-aware-access-cl.html"><code>GWorkspace_ReportsAPI_context_aware_access_CL</code></a><br><a href="../tables/gworkspace-reportsapi-data-studio-cl.html"><code>GWorkspace_ReportsAPI_data_studio_CL</code></a><br><a href="../tables/gworkspace-reportsapi-drive-cl.html"><code>GWorkspace_ReportsAPI_drive_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gcp-cl.html"><code>GWorkspace_ReportsAPI_gcp_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gplus-cl.html"><code>GWorkspace_ReportsAPI_gplus_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-cl.html"><code>GWorkspace_ReportsAPI_groups_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-enterprise-cl.html"><code>GWorkspace_ReportsAPI_groups_enterprise_CL</code></a><br><a href="../tables/gworkspace-reportsapi-jamboard-cl.html"><code>GWorkspace_ReportsAPI_jamboard_CL</code></a><br><a href="../tables/gworkspace-reportsapi-keep-cl.html"><code>GWorkspace_ReportsAPI_keep_CL</code></a><br><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a><br><a href="../tables/gworkspace-reportsapi-meet-cl.html"><code>GWorkspace_ReportsAPI_meet_CL</code></a><br><a href="../tables/gworkspace-reportsapi-mobile-cl.html"><code>GWorkspace_ReportsAPI_mobile_CL</code></a><br><a href="../tables/gworkspace-reportsapi-rules-cl.html"><code>GWorkspace_ReportsAPI_rules_CL</code></a><br><a href="../tables/gworkspace-reportsapi-saml-cl.html"><code>GWorkspace_ReportsAPI_saml_CL</code></a><br><a href="../tables/gworkspace-reportsapi-token-cl.html"><code>GWorkspace_ReportsAPI_token_CL</code></a><br><a href="../tables/gworkspace-reportsapi-user-accounts-cl.html"><code>GWorkspace_ReportsAPI_user_accounts_CL</code></a><br><a href="../tables/googleworkspacereports-cl.html"><code>GoogleWorkspaceReports_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googleworkspacereports-gworkspace-alert-events-e369d246-5da8-11ec-bf63-0242ac130002-80adb373.html">GWorkspace - Alert events</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-access-transparency-cl.html"><code>GWorkspace_ReportsAPI_access_transparency_CL</code></a><br><a href="../tables/gworkspace-reportsapi-admin-cl.html"><code>GWorkspace_ReportsAPI_admin_CL</code></a><br><a href="../tables/gworkspace-reportsapi-calendar-cl.html"><code>GWorkspace_ReportsAPI_calendar_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chat-cl.html"><code>GWorkspace_ReportsAPI_chat_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chrome-cl.html"><code>GWorkspace_ReportsAPI_chrome_CL</code></a><br><a href="../tables/gworkspace-reportsapi-context-aware-access-cl.html"><code>GWorkspace_ReportsAPI_context_aware_access_CL</code></a><br><a href="../tables/gworkspace-reportsapi-data-studio-cl.html"><code>GWorkspace_ReportsAPI_data_studio_CL</code></a><br><a href="../tables/gworkspace-reportsapi-drive-cl.html"><code>GWorkspace_ReportsAPI_drive_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gcp-cl.html"><code>GWorkspace_ReportsAPI_gcp_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gplus-cl.html"><code>GWorkspace_ReportsAPI_gplus_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-cl.html"><code>GWorkspace_ReportsAPI_groups_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-enterprise-cl.html"><code>GWorkspace_ReportsAPI_groups_enterprise_CL</code></a><br><a href="../tables/gworkspace-reportsapi-jamboard-cl.html"><code>GWorkspace_ReportsAPI_jamboard_CL</code></a><br><a href="../tables/gworkspace-reportsapi-keep-cl.html"><code>GWorkspace_ReportsAPI_keep_CL</code></a><br><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a><br><a href="../tables/gworkspace-reportsapi-meet-cl.html"><code>GWorkspace_ReportsAPI_meet_CL</code></a><br><a href="../tables/gworkspace-reportsapi-mobile-cl.html"><code>GWorkspace_ReportsAPI_mobile_CL</code></a><br><a href="../tables/gworkspace-reportsapi-rules-cl.html"><code>GWorkspace_ReportsAPI_rules_CL</code></a><br><a href="../tables/gworkspace-reportsapi-saml-cl.html"><code>GWorkspace_ReportsAPI_saml_CL</code></a><br><a href="../tables/gworkspace-reportsapi-token-cl.html"><code>GWorkspace_ReportsAPI_token_CL</code></a><br><a href="../tables/gworkspace-reportsapi-user-accounts-cl.html"><code>GWorkspace_ReportsAPI_user_accounts_CL</code></a><br><a href="../tables/googleworkspacereports-cl.html"><code>GoogleWorkspaceReports_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googleworkspacereports-gworkspace-an-outbound-relay-has-been-added-to-a-g-suite-domain-ead87cd6-5da7-11ec-bf63-0242ac130002-3aa2c162.html">GWorkspace - An Outbound Relay has been added to a G Suite Domain</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-access-transparency-cl.html"><code>GWorkspace_ReportsAPI_access_transparency_CL</code></a><br><a href="../tables/gworkspace-reportsapi-admin-cl.html"><code>GWorkspace_ReportsAPI_admin_CL</code></a><br><a href="../tables/gworkspace-reportsapi-calendar-cl.html"><code>GWorkspace_ReportsAPI_calendar_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chat-cl.html"><code>GWorkspace_ReportsAPI_chat_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chrome-cl.html"><code>GWorkspace_ReportsAPI_chrome_CL</code></a><br><a href="../tables/gworkspace-reportsapi-context-aware-access-cl.html"><code>GWorkspace_ReportsAPI_context_aware_access_CL</code></a><br><a href="../tables/gworkspace-reportsapi-data-studio-cl.html"><code>GWorkspace_ReportsAPI_data_studio_CL</code></a><br><a href="../tables/gworkspace-reportsapi-drive-cl.html"><code>GWorkspace_ReportsAPI_drive_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gcp-cl.html"><code>GWorkspace_ReportsAPI_gcp_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gplus-cl.html"><code>GWorkspace_ReportsAPI_gplus_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-cl.html"><code>GWorkspace_ReportsAPI_groups_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-enterprise-cl.html"><code>GWorkspace_ReportsAPI_groups_enterprise_CL</code></a><br><a href="../tables/gworkspace-reportsapi-jamboard-cl.html"><code>GWorkspace_ReportsAPI_jamboard_CL</code></a><br><a href="../tables/gworkspace-reportsapi-keep-cl.html"><code>GWorkspace_ReportsAPI_keep_CL</code></a><br><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a><br><a href="../tables/gworkspace-reportsapi-meet-cl.html"><code>GWorkspace_ReportsAPI_meet_CL</code></a><br><a href="../tables/gworkspace-reportsapi-mobile-cl.html"><code>GWorkspace_ReportsAPI_mobile_CL</code></a><br><a href="../tables/gworkspace-reportsapi-rules-cl.html"><code>GWorkspace_ReportsAPI_rules_CL</code></a><br><a href="../tables/gworkspace-reportsapi-saml-cl.html"><code>GWorkspace_ReportsAPI_saml_CL</code></a><br><a href="../tables/gworkspace-reportsapi-token-cl.html"><code>GWorkspace_ReportsAPI_token_CL</code></a><br><a href="../tables/gworkspace-reportsapi-user-accounts-cl.html"><code>GWorkspace_ReportsAPI_user_accounts_CL</code></a><br><a href="../tables/googleworkspacereports-cl.html"><code>GoogleWorkspaceReports_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googleworkspacereports-gworkspace-multiple-user-agents-for-single-source-6ff0e16e-5999-11ec-bf63-0242ac130002-8d165429.html">GWorkspace - Multiple user agents for single source</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Persistence, Collection</td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-access-transparency-cl.html"><code>GWorkspace_ReportsAPI_access_transparency_CL</code></a><br><a href="../tables/gworkspace-reportsapi-admin-cl.html"><code>GWorkspace_ReportsAPI_admin_CL</code></a><br><a href="../tables/gworkspace-reportsapi-calendar-cl.html"><code>GWorkspace_ReportsAPI_calendar_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chat-cl.html"><code>GWorkspace_ReportsAPI_chat_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chrome-cl.html"><code>GWorkspace_ReportsAPI_chrome_CL</code></a><br><a href="../tables/gworkspace-reportsapi-context-aware-access-cl.html"><code>GWorkspace_ReportsAPI_context_aware_access_CL</code></a><br><a href="../tables/gworkspace-reportsapi-data-studio-cl.html"><code>GWorkspace_ReportsAPI_data_studio_CL</code></a><br><a href="../tables/gworkspace-reportsapi-drive-cl.html"><code>GWorkspace_ReportsAPI_drive_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gcp-cl.html"><code>GWorkspace_ReportsAPI_gcp_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gplus-cl.html"><code>GWorkspace_ReportsAPI_gplus_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-cl.html"><code>GWorkspace_ReportsAPI_groups_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-enterprise-cl.html"><code>GWorkspace_ReportsAPI_groups_enterprise_CL</code></a><br><a href="../tables/gworkspace-reportsapi-jamboard-cl.html"><code>GWorkspace_ReportsAPI_jamboard_CL</code></a><br><a href="../tables/gworkspace-reportsapi-keep-cl.html"><code>GWorkspace_ReportsAPI_keep_CL</code></a><br><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a><br><a href="../tables/gworkspace-reportsapi-meet-cl.html"><code>GWorkspace_ReportsAPI_meet_CL</code></a><br><a href="../tables/gworkspace-reportsapi-mobile-cl.html"><code>GWorkspace_ReportsAPI_mobile_CL</code></a><br><a href="../tables/gworkspace-reportsapi-rules-cl.html"><code>GWorkspace_ReportsAPI_rules_CL</code></a><br><a href="../tables/gworkspace-reportsapi-saml-cl.html"><code>GWorkspace_ReportsAPI_saml_CL</code></a><br><a href="../tables/gworkspace-reportsapi-token-cl.html"><code>GWorkspace_ReportsAPI_token_CL</code></a><br><a href="../tables/gworkspace-reportsapi-user-accounts-cl.html"><code>GWorkspace_ReportsAPI_user_accounts_CL</code></a><br><a href="../tables/googleworkspacereports-cl.html"><code>GoogleWorkspaceReports_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googleworkspacereports-gworkspace-possible-brute-force-attack-8f6cd9a4-5e57-11ec-bf63-0242ac130002-c5d8d00d.html">GWorkspace - Possible brute force attack</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-access-transparency-cl.html"><code>GWorkspace_ReportsAPI_access_transparency_CL</code></a><br><a href="../tables/gworkspace-reportsapi-admin-cl.html"><code>GWorkspace_ReportsAPI_admin_CL</code></a><br><a href="../tables/gworkspace-reportsapi-calendar-cl.html"><code>GWorkspace_ReportsAPI_calendar_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chat-cl.html"><code>GWorkspace_ReportsAPI_chat_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chrome-cl.html"><code>GWorkspace_ReportsAPI_chrome_CL</code></a><br><a href="../tables/gworkspace-reportsapi-context-aware-access-cl.html"><code>GWorkspace_ReportsAPI_context_aware_access_CL</code></a><br><a href="../tables/gworkspace-reportsapi-data-studio-cl.html"><code>GWorkspace_ReportsAPI_data_studio_CL</code></a><br><a href="../tables/gworkspace-reportsapi-drive-cl.html"><code>GWorkspace_ReportsAPI_drive_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gcp-cl.html"><code>GWorkspace_ReportsAPI_gcp_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gplus-cl.html"><code>GWorkspace_ReportsAPI_gplus_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-cl.html"><code>GWorkspace_ReportsAPI_groups_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-enterprise-cl.html"><code>GWorkspace_ReportsAPI_groups_enterprise_CL</code></a><br><a href="../tables/gworkspace-reportsapi-jamboard-cl.html"><code>GWorkspace_ReportsAPI_jamboard_CL</code></a><br><a href="../tables/gworkspace-reportsapi-keep-cl.html"><code>GWorkspace_ReportsAPI_keep_CL</code></a><br><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a><br><a href="../tables/gworkspace-reportsapi-meet-cl.html"><code>GWorkspace_ReportsAPI_meet_CL</code></a><br><a href="../tables/gworkspace-reportsapi-mobile-cl.html"><code>GWorkspace_ReportsAPI_mobile_CL</code></a><br><a href="../tables/gworkspace-reportsapi-rules-cl.html"><code>GWorkspace_ReportsAPI_rules_CL</code></a><br><a href="../tables/gworkspace-reportsapi-saml-cl.html"><code>GWorkspace_ReportsAPI_saml_CL</code></a><br><a href="../tables/gworkspace-reportsapi-token-cl.html"><code>GWorkspace_ReportsAPI_token_CL</code></a><br><a href="../tables/gworkspace-reportsapi-user-accounts-cl.html"><code>GWorkspace_ReportsAPI_user_accounts_CL</code></a><br><a href="../tables/googleworkspacereports-cl.html"><code>GoogleWorkspaceReports_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googleworkspacereports-gworkspace-possible-maldoc-file-name-in-google-drive-d80d02a8-5da6-11ec-bf63-0242ac130002-cd813548.html">GWorkspace - Possible maldoc file name in Google drive</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-access-transparency-cl.html"><code>GWorkspace_ReportsAPI_access_transparency_CL</code></a><br><a href="../tables/gworkspace-reportsapi-admin-cl.html"><code>GWorkspace_ReportsAPI_admin_CL</code></a><br><a href="../tables/gworkspace-reportsapi-calendar-cl.html"><code>GWorkspace_ReportsAPI_calendar_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chat-cl.html"><code>GWorkspace_ReportsAPI_chat_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chrome-cl.html"><code>GWorkspace_ReportsAPI_chrome_CL</code></a><br><a href="../tables/gworkspace-reportsapi-context-aware-access-cl.html"><code>GWorkspace_ReportsAPI_context_aware_access_CL</code></a><br><a href="../tables/gworkspace-reportsapi-data-studio-cl.html"><code>GWorkspace_ReportsAPI_data_studio_CL</code></a><br><a href="../tables/gworkspace-reportsapi-drive-cl.html"><code>GWorkspace_ReportsAPI_drive_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gcp-cl.html"><code>GWorkspace_ReportsAPI_gcp_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gplus-cl.html"><code>GWorkspace_ReportsAPI_gplus_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-cl.html"><code>GWorkspace_ReportsAPI_groups_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-enterprise-cl.html"><code>GWorkspace_ReportsAPI_groups_enterprise_CL</code></a><br><a href="../tables/gworkspace-reportsapi-jamboard-cl.html"><code>GWorkspace_ReportsAPI_jamboard_CL</code></a><br><a href="../tables/gworkspace-reportsapi-keep-cl.html"><code>GWorkspace_ReportsAPI_keep_CL</code></a><br><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a><br><a href="../tables/gworkspace-reportsapi-meet-cl.html"><code>GWorkspace_ReportsAPI_meet_CL</code></a><br><a href="../tables/gworkspace-reportsapi-mobile-cl.html"><code>GWorkspace_ReportsAPI_mobile_CL</code></a><br><a href="../tables/gworkspace-reportsapi-rules-cl.html"><code>GWorkspace_ReportsAPI_rules_CL</code></a><br><a href="../tables/gworkspace-reportsapi-saml-cl.html"><code>GWorkspace_ReportsAPI_saml_CL</code></a><br><a href="../tables/gworkspace-reportsapi-token-cl.html"><code>GWorkspace_ReportsAPI_token_CL</code></a><br><a href="../tables/gworkspace-reportsapi-user-accounts-cl.html"><code>GWorkspace_ReportsAPI_user_accounts_CL</code></a><br><a href="../tables/googleworkspacereports-cl.html"><code>GoogleWorkspaceReports_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googleworkspacereports-gworkspace-two-step-authentification-disabled-for-a-user-c8cc02d0-5da6-11ec-bf63-0242ac130002-5aea9b56.html">GWorkspace - Two-step authentification disabled for a user</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-access-transparency-cl.html"><code>GWorkspace_ReportsAPI_access_transparency_CL</code></a><br><a href="../tables/gworkspace-reportsapi-admin-cl.html"><code>GWorkspace_ReportsAPI_admin_CL</code></a><br><a href="../tables/gworkspace-reportsapi-calendar-cl.html"><code>GWorkspace_ReportsAPI_calendar_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chat-cl.html"><code>GWorkspace_ReportsAPI_chat_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chrome-cl.html"><code>GWorkspace_ReportsAPI_chrome_CL</code></a><br><a href="../tables/gworkspace-reportsapi-context-aware-access-cl.html"><code>GWorkspace_ReportsAPI_context_aware_access_CL</code></a><br><a href="../tables/gworkspace-reportsapi-data-studio-cl.html"><code>GWorkspace_ReportsAPI_data_studio_CL</code></a><br><a href="../tables/gworkspace-reportsapi-drive-cl.html"><code>GWorkspace_ReportsAPI_drive_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gcp-cl.html"><code>GWorkspace_ReportsAPI_gcp_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gplus-cl.html"><code>GWorkspace_ReportsAPI_gplus_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-cl.html"><code>GWorkspace_ReportsAPI_groups_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-enterprise-cl.html"><code>GWorkspace_ReportsAPI_groups_enterprise_CL</code></a><br><a href="../tables/gworkspace-reportsapi-jamboard-cl.html"><code>GWorkspace_ReportsAPI_jamboard_CL</code></a><br><a href="../tables/gworkspace-reportsapi-keep-cl.html"><code>GWorkspace_ReportsAPI_keep_CL</code></a><br><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a><br><a href="../tables/gworkspace-reportsapi-meet-cl.html"><code>GWorkspace_ReportsAPI_meet_CL</code></a><br><a href="../tables/gworkspace-reportsapi-mobile-cl.html"><code>GWorkspace_ReportsAPI_mobile_CL</code></a><br><a href="../tables/gworkspace-reportsapi-rules-cl.html"><code>GWorkspace_ReportsAPI_rules_CL</code></a><br><a href="../tables/gworkspace-reportsapi-saml-cl.html"><code>GWorkspace_ReportsAPI_saml_CL</code></a><br><a href="../tables/gworkspace-reportsapi-token-cl.html"><code>GWorkspace_ReportsAPI_token_CL</code></a><br><a href="../tables/gworkspace-reportsapi-user-accounts-cl.html"><code>GWorkspace_ReportsAPI_user_accounts_CL</code></a><br><a href="../tables/googleworkspacereports-cl.html"><code>GoogleWorkspaceReports_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googleworkspacereports-gworkspace-unexpected-os-update-c02b0c8e-5da6-11ec-bf63-0242ac130002-b0fa8bff.html">GWorkspace - Unexpected OS update</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion, Persistence</td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-access-transparency-cl.html"><code>GWorkspace_ReportsAPI_access_transparency_CL</code></a><br><a href="../tables/gworkspace-reportsapi-admin-cl.html"><code>GWorkspace_ReportsAPI_admin_CL</code></a><br><a href="../tables/gworkspace-reportsapi-calendar-cl.html"><code>GWorkspace_ReportsAPI_calendar_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chat-cl.html"><code>GWorkspace_ReportsAPI_chat_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chrome-cl.html"><code>GWorkspace_ReportsAPI_chrome_CL</code></a><br><a href="../tables/gworkspace-reportsapi-context-aware-access-cl.html"><code>GWorkspace_ReportsAPI_context_aware_access_CL</code></a><br><a href="../tables/gworkspace-reportsapi-data-studio-cl.html"><code>GWorkspace_ReportsAPI_data_studio_CL</code></a><br><a href="../tables/gworkspace-reportsapi-drive-cl.html"><code>GWorkspace_ReportsAPI_drive_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gcp-cl.html"><code>GWorkspace_ReportsAPI_gcp_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gplus-cl.html"><code>GWorkspace_ReportsAPI_gplus_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-cl.html"><code>GWorkspace_ReportsAPI_groups_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-enterprise-cl.html"><code>GWorkspace_ReportsAPI_groups_enterprise_CL</code></a><br><a href="../tables/gworkspace-reportsapi-jamboard-cl.html"><code>GWorkspace_ReportsAPI_jamboard_CL</code></a><br><a href="../tables/gworkspace-reportsapi-keep-cl.html"><code>GWorkspace_ReportsAPI_keep_CL</code></a><br><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a><br><a href="../tables/gworkspace-reportsapi-meet-cl.html"><code>GWorkspace_ReportsAPI_meet_CL</code></a><br><a href="../tables/gworkspace-reportsapi-mobile-cl.html"><code>GWorkspace_ReportsAPI_mobile_CL</code></a><br><a href="../tables/gworkspace-reportsapi-rules-cl.html"><code>GWorkspace_ReportsAPI_rules_CL</code></a><br><a href="../tables/gworkspace-reportsapi-saml-cl.html"><code>GWorkspace_ReportsAPI_saml_CL</code></a><br><a href="../tables/gworkspace-reportsapi-token-cl.html"><code>GWorkspace_ReportsAPI_token_CL</code></a><br><a href="../tables/gworkspace-reportsapi-user-accounts-cl.html"><code>GWorkspace_ReportsAPI_user_accounts_CL</code></a><br><a href="../tables/googleworkspacereports-cl.html"><code>GoogleWorkspaceReports_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googleworkspacereports-gworkspace-user-access-has-been-changed-92fae638-5da8-11ec-bf63-0242ac130002-d415780d.html">GWorkspace - User access has been changed</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-access-transparency-cl.html"><code>GWorkspace_ReportsAPI_access_transparency_CL</code></a><br><a href="../tables/gworkspace-reportsapi-admin-cl.html"><code>GWorkspace_ReportsAPI_admin_CL</code></a><br><a href="../tables/gworkspace-reportsapi-calendar-cl.html"><code>GWorkspace_ReportsAPI_calendar_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chat-cl.html"><code>GWorkspace_ReportsAPI_chat_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chrome-cl.html"><code>GWorkspace_ReportsAPI_chrome_CL</code></a><br><a href="../tables/gworkspace-reportsapi-context-aware-access-cl.html"><code>GWorkspace_ReportsAPI_context_aware_access_CL</code></a><br><a href="../tables/gworkspace-reportsapi-data-studio-cl.html"><code>GWorkspace_ReportsAPI_data_studio_CL</code></a><br><a href="../tables/gworkspace-reportsapi-drive-cl.html"><code>GWorkspace_ReportsAPI_drive_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gcp-cl.html"><code>GWorkspace_ReportsAPI_gcp_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gplus-cl.html"><code>GWorkspace_ReportsAPI_gplus_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-cl.html"><code>GWorkspace_ReportsAPI_groups_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-enterprise-cl.html"><code>GWorkspace_ReportsAPI_groups_enterprise_CL</code></a><br><a href="../tables/gworkspace-reportsapi-jamboard-cl.html"><code>GWorkspace_ReportsAPI_jamboard_CL</code></a><br><a href="../tables/gworkspace-reportsapi-keep-cl.html"><code>GWorkspace_ReportsAPI_keep_CL</code></a><br><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a><br><a href="../tables/gworkspace-reportsapi-meet-cl.html"><code>GWorkspace_ReportsAPI_meet_CL</code></a><br><a href="../tables/gworkspace-reportsapi-mobile-cl.html"><code>GWorkspace_ReportsAPI_mobile_CL</code></a><br><a href="../tables/gworkspace-reportsapi-rules-cl.html"><code>GWorkspace_ReportsAPI_rules_CL</code></a><br><a href="../tables/gworkspace-reportsapi-saml-cl.html"><code>GWorkspace_ReportsAPI_saml_CL</code></a><br><a href="../tables/gworkspace-reportsapi-token-cl.html"><code>GWorkspace_ReportsAPI_token_CL</code></a><br><a href="../tables/gworkspace-reportsapi-user-accounts-cl.html"><code>GWorkspace_ReportsAPI_user_accounts_CL</code></a><br><a href="../tables/googleworkspacereports-cl.html"><code>GoogleWorkspaceReports_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/googleworkspacereports-gworkspace-document-copied-from-share-drive-to-private-drive-69e8a40f-6508-4f43-8eef-2f78ad6174df-0174362a.html">GWorkspace - Document Copied from Share Drive to Private Drive</a> ⚠️</td>
+<td style="text-align: left;">Exfiltration, Impact</td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-access-transparency-cl.html"><code>GWorkspace_ReportsAPI_access_transparency_CL</code></a><br><a href="../tables/gworkspace-reportsapi-admin-cl.html"><code>GWorkspace_ReportsAPI_admin_CL</code></a><br><a href="../tables/gworkspace-reportsapi-calendar-cl.html"><code>GWorkspace_ReportsAPI_calendar_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chat-cl.html"><code>GWorkspace_ReportsAPI_chat_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chrome-cl.html"><code>GWorkspace_ReportsAPI_chrome_CL</code></a><br><a href="../tables/gworkspace-reportsapi-context-aware-access-cl.html"><code>GWorkspace_ReportsAPI_context_aware_access_CL</code></a><br><a href="../tables/gworkspace-reportsapi-data-studio-cl.html"><code>GWorkspace_ReportsAPI_data_studio_CL</code></a><br><a href="../tables/gworkspace-reportsapi-drive-cl.html"><code>GWorkspace_ReportsAPI_drive_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gcp-cl.html"><code>GWorkspace_ReportsAPI_gcp_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gplus-cl.html"><code>GWorkspace_ReportsAPI_gplus_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-cl.html"><code>GWorkspace_ReportsAPI_groups_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-enterprise-cl.html"><code>GWorkspace_ReportsAPI_groups_enterprise_CL</code></a><br><a href="../tables/gworkspace-reportsapi-jamboard-cl.html"><code>GWorkspace_ReportsAPI_jamboard_CL</code></a><br><a href="../tables/gworkspace-reportsapi-keep-cl.html"><code>GWorkspace_ReportsAPI_keep_CL</code></a><br><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a><br><a href="../tables/gworkspace-reportsapi-meet-cl.html"><code>GWorkspace_ReportsAPI_meet_CL</code></a><br><a href="../tables/gworkspace-reportsapi-mobile-cl.html"><code>GWorkspace_ReportsAPI_mobile_CL</code></a><br><a href="../tables/gworkspace-reportsapi-rules-cl.html"><code>GWorkspace_ReportsAPI_rules_CL</code></a><br><a href="../tables/gworkspace-reportsapi-saml-cl.html"><code>GWorkspace_ReportsAPI_saml_CL</code></a><br><a href="../tables/gworkspace-reportsapi-token-cl.html"><code>GWorkspace_ReportsAPI_token_CL</code></a><br><a href="../tables/gworkspace-reportsapi-user-accounts-cl.html"><code>GWorkspace_ReportsAPI_user_accounts_CL</code></a><br><a href="../tables/googleworkspacereports-cl.html"><code>GoogleWorkspaceReports_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googleworkspacereports-gworkspace-document-shared-externally-00d743e2-5dac-11ec-bf63-0242ac130002-a98aa9d1.html">GWorkspace - Document shared externally</a></td>
+<td style="text-align: left;">Exfiltration, Impact</td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-access-transparency-cl.html"><code>GWorkspace_ReportsAPI_access_transparency_CL</code></a><br><a href="../tables/gworkspace-reportsapi-admin-cl.html"><code>GWorkspace_ReportsAPI_admin_CL</code></a><br><a href="../tables/gworkspace-reportsapi-calendar-cl.html"><code>GWorkspace_ReportsAPI_calendar_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chat-cl.html"><code>GWorkspace_ReportsAPI_chat_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chrome-cl.html"><code>GWorkspace_ReportsAPI_chrome_CL</code></a><br><a href="../tables/gworkspace-reportsapi-context-aware-access-cl.html"><code>GWorkspace_ReportsAPI_context_aware_access_CL</code></a><br><a href="../tables/gworkspace-reportsapi-data-studio-cl.html"><code>GWorkspace_ReportsAPI_data_studio_CL</code></a><br><a href="../tables/gworkspace-reportsapi-drive-cl.html"><code>GWorkspace_ReportsAPI_drive_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gcp-cl.html"><code>GWorkspace_ReportsAPI_gcp_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gplus-cl.html"><code>GWorkspace_ReportsAPI_gplus_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-cl.html"><code>GWorkspace_ReportsAPI_groups_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-enterprise-cl.html"><code>GWorkspace_ReportsAPI_groups_enterprise_CL</code></a><br><a href="../tables/gworkspace-reportsapi-jamboard-cl.html"><code>GWorkspace_ReportsAPI_jamboard_CL</code></a><br><a href="../tables/gworkspace-reportsapi-keep-cl.html"><code>GWorkspace_ReportsAPI_keep_CL</code></a><br><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a><br><a href="../tables/gworkspace-reportsapi-meet-cl.html"><code>GWorkspace_ReportsAPI_meet_CL</code></a><br><a href="../tables/gworkspace-reportsapi-mobile-cl.html"><code>GWorkspace_ReportsAPI_mobile_CL</code></a><br><a href="../tables/gworkspace-reportsapi-rules-cl.html"><code>GWorkspace_ReportsAPI_rules_CL</code></a><br><a href="../tables/gworkspace-reportsapi-saml-cl.html"><code>GWorkspace_ReportsAPI_saml_CL</code></a><br><a href="../tables/gworkspace-reportsapi-token-cl.html"><code>GWorkspace_ReportsAPI_token_CL</code></a><br><a href="../tables/gworkspace-reportsapi-user-accounts-cl.html"><code>GWorkspace_ReportsAPI_user_accounts_CL</code></a><br><a href="../tables/googleworkspacereports-cl.html"><code>GoogleWorkspaceReports_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googleworkspacereports-gworkspace-document-shared-publicy-in-web-e37c86ea-5dab-11ec-bf63-0242ac130002-99cd7239.html">GWorkspace - Document shared publicy in web</a></td>
+<td style="text-align: left;">Exfiltration, Impact</td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-access-transparency-cl.html"><code>GWorkspace_ReportsAPI_access_transparency_CL</code></a><br><a href="../tables/gworkspace-reportsapi-admin-cl.html"><code>GWorkspace_ReportsAPI_admin_CL</code></a><br><a href="../tables/gworkspace-reportsapi-calendar-cl.html"><code>GWorkspace_ReportsAPI_calendar_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chat-cl.html"><code>GWorkspace_ReportsAPI_chat_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chrome-cl.html"><code>GWorkspace_ReportsAPI_chrome_CL</code></a><br><a href="../tables/gworkspace-reportsapi-context-aware-access-cl.html"><code>GWorkspace_ReportsAPI_context_aware_access_CL</code></a><br><a href="../tables/gworkspace-reportsapi-data-studio-cl.html"><code>GWorkspace_ReportsAPI_data_studio_CL</code></a><br><a href="../tables/gworkspace-reportsapi-drive-cl.html"><code>GWorkspace_ReportsAPI_drive_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gcp-cl.html"><code>GWorkspace_ReportsAPI_gcp_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gplus-cl.html"><code>GWorkspace_ReportsAPI_gplus_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-cl.html"><code>GWorkspace_ReportsAPI_groups_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-enterprise-cl.html"><code>GWorkspace_ReportsAPI_groups_enterprise_CL</code></a><br><a href="../tables/gworkspace-reportsapi-jamboard-cl.html"><code>GWorkspace_ReportsAPI_jamboard_CL</code></a><br><a href="../tables/gworkspace-reportsapi-keep-cl.html"><code>GWorkspace_ReportsAPI_keep_CL</code></a><br><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a><br><a href="../tables/gworkspace-reportsapi-meet-cl.html"><code>GWorkspace_ReportsAPI_meet_CL</code></a><br><a href="../tables/gworkspace-reportsapi-mobile-cl.html"><code>GWorkspace_ReportsAPI_mobile_CL</code></a><br><a href="../tables/gworkspace-reportsapi-rules-cl.html"><code>GWorkspace_ReportsAPI_rules_CL</code></a><br><a href="../tables/gworkspace-reportsapi-saml-cl.html"><code>GWorkspace_ReportsAPI_saml_CL</code></a><br><a href="../tables/gworkspace-reportsapi-token-cl.html"><code>GWorkspace_ReportsAPI_token_CL</code></a><br><a href="../tables/gworkspace-reportsapi-user-accounts-cl.html"><code>GWorkspace_ReportsAPI_user_accounts_CL</code></a><br><a href="../tables/googleworkspacereports-cl.html"><code>GoogleWorkspaceReports_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googleworkspacereports-gworkspace-document-shared-publicy-with-link-c7c65c78-5dab-11ec-bf63-0242ac130002-0fdc40e9.html">GWorkspace - Document shared publicy with link</a></td>
+<td style="text-align: left;">Exfiltration, Impact</td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-access-transparency-cl.html"><code>GWorkspace_ReportsAPI_access_transparency_CL</code></a><br><a href="../tables/gworkspace-reportsapi-admin-cl.html"><code>GWorkspace_ReportsAPI_admin_CL</code></a><br><a href="../tables/gworkspace-reportsapi-calendar-cl.html"><code>GWorkspace_ReportsAPI_calendar_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chat-cl.html"><code>GWorkspace_ReportsAPI_chat_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chrome-cl.html"><code>GWorkspace_ReportsAPI_chrome_CL</code></a><br><a href="../tables/gworkspace-reportsapi-context-aware-access-cl.html"><code>GWorkspace_ReportsAPI_context_aware_access_CL</code></a><br><a href="../tables/gworkspace-reportsapi-data-studio-cl.html"><code>GWorkspace_ReportsAPI_data_studio_CL</code></a><br><a href="../tables/gworkspace-reportsapi-drive-cl.html"><code>GWorkspace_ReportsAPI_drive_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gcp-cl.html"><code>GWorkspace_ReportsAPI_gcp_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gplus-cl.html"><code>GWorkspace_ReportsAPI_gplus_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-cl.html"><code>GWorkspace_ReportsAPI_groups_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-enterprise-cl.html"><code>GWorkspace_ReportsAPI_groups_enterprise_CL</code></a><br><a href="../tables/gworkspace-reportsapi-jamboard-cl.html"><code>GWorkspace_ReportsAPI_jamboard_CL</code></a><br><a href="../tables/gworkspace-reportsapi-keep-cl.html"><code>GWorkspace_ReportsAPI_keep_CL</code></a><br><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a><br><a href="../tables/gworkspace-reportsapi-meet-cl.html"><code>GWorkspace_ReportsAPI_meet_CL</code></a><br><a href="../tables/gworkspace-reportsapi-mobile-cl.html"><code>GWorkspace_ReportsAPI_mobile_CL</code></a><br><a href="../tables/gworkspace-reportsapi-rules-cl.html"><code>GWorkspace_ReportsAPI_rules_CL</code></a><br><a href="../tables/gworkspace-reportsapi-saml-cl.html"><code>GWorkspace_ReportsAPI_saml_CL</code></a><br><a href="../tables/gworkspace-reportsapi-token-cl.html"><code>GWorkspace_ReportsAPI_token_CL</code></a><br><a href="../tables/gworkspace-reportsapi-user-accounts-cl.html"><code>GWorkspace_ReportsAPI_user_accounts_CL</code></a><br><a href="../tables/googleworkspacereports-cl.html"><code>GoogleWorkspaceReports_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googleworkspacereports-gworkspace-license-revoke-and-assignment-to-user-b1235ce0-06a0-446b-baad-852874f57bd4-cc080246.html">GWorkspace - License Revoke and Assignment to User</a> ⚠️</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-access-transparency-cl.html"><code>GWorkspace_ReportsAPI_access_transparency_CL</code></a><br><a href="../tables/gworkspace-reportsapi-admin-cl.html"><code>GWorkspace_ReportsAPI_admin_CL</code></a><br><a href="../tables/gworkspace-reportsapi-calendar-cl.html"><code>GWorkspace_ReportsAPI_calendar_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chat-cl.html"><code>GWorkspace_ReportsAPI_chat_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chrome-cl.html"><code>GWorkspace_ReportsAPI_chrome_CL</code></a><br><a href="../tables/gworkspace-reportsapi-context-aware-access-cl.html"><code>GWorkspace_ReportsAPI_context_aware_access_CL</code></a><br><a href="../tables/gworkspace-reportsapi-data-studio-cl.html"><code>GWorkspace_ReportsAPI_data_studio_CL</code></a><br><a href="../tables/gworkspace-reportsapi-drive-cl.html"><code>GWorkspace_ReportsAPI_drive_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gcp-cl.html"><code>GWorkspace_ReportsAPI_gcp_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gplus-cl.html"><code>GWorkspace_ReportsAPI_gplus_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-cl.html"><code>GWorkspace_ReportsAPI_groups_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-enterprise-cl.html"><code>GWorkspace_ReportsAPI_groups_enterprise_CL</code></a><br><a href="../tables/gworkspace-reportsapi-jamboard-cl.html"><code>GWorkspace_ReportsAPI_jamboard_CL</code></a><br><a href="../tables/gworkspace-reportsapi-keep-cl.html"><code>GWorkspace_ReportsAPI_keep_CL</code></a><br><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a><br><a href="../tables/gworkspace-reportsapi-meet-cl.html"><code>GWorkspace_ReportsAPI_meet_CL</code></a><br><a href="../tables/gworkspace-reportsapi-mobile-cl.html"><code>GWorkspace_ReportsAPI_mobile_CL</code></a><br><a href="../tables/gworkspace-reportsapi-rules-cl.html"><code>GWorkspace_ReportsAPI_rules_CL</code></a><br><a href="../tables/gworkspace-reportsapi-saml-cl.html"><code>GWorkspace_ReportsAPI_saml_CL</code></a><br><a href="../tables/gworkspace-reportsapi-token-cl.html"><code>GWorkspace_ReportsAPI_token_CL</code></a><br><a href="../tables/gworkspace-reportsapi-user-accounts-cl.html"><code>GWorkspace_ReportsAPI_user_accounts_CL</code></a><br><a href="../tables/googleworkspacereports-cl.html"><code>GoogleWorkspaceReports_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googleworkspacereports-gworkspace-multi-ip-addresses-by-user-bb6bf88e-5dab-11ec-bf63-0242ac130002-a6582e26.html">GWorkspace - Multi IP addresses by user</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-access-transparency-cl.html"><code>GWorkspace_ReportsAPI_access_transparency_CL</code></a><br><a href="../tables/gworkspace-reportsapi-admin-cl.html"><code>GWorkspace_ReportsAPI_admin_CL</code></a><br><a href="../tables/gworkspace-reportsapi-calendar-cl.html"><code>GWorkspace_ReportsAPI_calendar_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chat-cl.html"><code>GWorkspace_ReportsAPI_chat_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chrome-cl.html"><code>GWorkspace_ReportsAPI_chrome_CL</code></a><br><a href="../tables/gworkspace-reportsapi-context-aware-access-cl.html"><code>GWorkspace_ReportsAPI_context_aware_access_CL</code></a><br><a href="../tables/gworkspace-reportsapi-data-studio-cl.html"><code>GWorkspace_ReportsAPI_data_studio_CL</code></a><br><a href="../tables/gworkspace-reportsapi-drive-cl.html"><code>GWorkspace_ReportsAPI_drive_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gcp-cl.html"><code>GWorkspace_ReportsAPI_gcp_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gplus-cl.html"><code>GWorkspace_ReportsAPI_gplus_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-cl.html"><code>GWorkspace_ReportsAPI_groups_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-enterprise-cl.html"><code>GWorkspace_ReportsAPI_groups_enterprise_CL</code></a><br><a href="../tables/gworkspace-reportsapi-jamboard-cl.html"><code>GWorkspace_ReportsAPI_jamboard_CL</code></a><br><a href="../tables/gworkspace-reportsapi-keep-cl.html"><code>GWorkspace_ReportsAPI_keep_CL</code></a><br><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a><br><a href="../tables/gworkspace-reportsapi-meet-cl.html"><code>GWorkspace_ReportsAPI_meet_CL</code></a><br><a href="../tables/gworkspace-reportsapi-mobile-cl.html"><code>GWorkspace_ReportsAPI_mobile_CL</code></a><br><a href="../tables/gworkspace-reportsapi-rules-cl.html"><code>GWorkspace_ReportsAPI_rules_CL</code></a><br><a href="../tables/gworkspace-reportsapi-saml-cl.html"><code>GWorkspace_ReportsAPI_saml_CL</code></a><br><a href="../tables/gworkspace-reportsapi-token-cl.html"><code>GWorkspace_ReportsAPI_token_CL</code></a><br><a href="../tables/gworkspace-reportsapi-user-accounts-cl.html"><code>GWorkspace_ReportsAPI_user_accounts_CL</code></a><br><a href="../tables/googleworkspacereports-cl.html"><code>GoogleWorkspaceReports_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googleworkspacereports-gworkspace-possible-scam-spam-or-phishing-via-calendar-29ce9d14-5dab-11ec-bf63-0242ac130002-697b529a.html">GWorkspace - Possible SCAM/SPAM or Phishing via Calendar</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-access-transparency-cl.html"><code>GWorkspace_ReportsAPI_access_transparency_CL</code></a><br><a href="../tables/gworkspace-reportsapi-admin-cl.html"><code>GWorkspace_ReportsAPI_admin_CL</code></a><br><a href="../tables/gworkspace-reportsapi-calendar-cl.html"><code>GWorkspace_ReportsAPI_calendar_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chat-cl.html"><code>GWorkspace_ReportsAPI_chat_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chrome-cl.html"><code>GWorkspace_ReportsAPI_chrome_CL</code></a><br><a href="../tables/gworkspace-reportsapi-context-aware-access-cl.html"><code>GWorkspace_ReportsAPI_context_aware_access_CL</code></a><br><a href="../tables/gworkspace-reportsapi-data-studio-cl.html"><code>GWorkspace_ReportsAPI_data_studio_CL</code></a><br><a href="../tables/gworkspace-reportsapi-drive-cl.html"><code>GWorkspace_ReportsAPI_drive_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gcp-cl.html"><code>GWorkspace_ReportsAPI_gcp_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gplus-cl.html"><code>GWorkspace_ReportsAPI_gplus_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-cl.html"><code>GWorkspace_ReportsAPI_groups_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-enterprise-cl.html"><code>GWorkspace_ReportsAPI_groups_enterprise_CL</code></a><br><a href="../tables/gworkspace-reportsapi-jamboard-cl.html"><code>GWorkspace_ReportsAPI_jamboard_CL</code></a><br><a href="../tables/gworkspace-reportsapi-keep-cl.html"><code>GWorkspace_ReportsAPI_keep_CL</code></a><br><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a><br><a href="../tables/gworkspace-reportsapi-meet-cl.html"><code>GWorkspace_ReportsAPI_meet_CL</code></a><br><a href="../tables/gworkspace-reportsapi-mobile-cl.html"><code>GWorkspace_ReportsAPI_mobile_CL</code></a><br><a href="../tables/gworkspace-reportsapi-rules-cl.html"><code>GWorkspace_ReportsAPI_rules_CL</code></a><br><a href="../tables/gworkspace-reportsapi-saml-cl.html"><code>GWorkspace_ReportsAPI_saml_CL</code></a><br><a href="../tables/gworkspace-reportsapi-token-cl.html"><code>GWorkspace_ReportsAPI_token_CL</code></a><br><a href="../tables/gworkspace-reportsapi-user-accounts-cl.html"><code>GWorkspace_ReportsAPI_user_accounts_CL</code></a><br><a href="../tables/googleworkspacereports-cl.html"><code>GoogleWorkspaceReports_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googleworkspacereports-gworkspace-rare-document-types-by-users-0b20d206-5dab-11ec-bf63-0242ac130002-44fbad2a.html">GWorkspace - Rare document types by users</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-access-transparency-cl.html"><code>GWorkspace_ReportsAPI_access_transparency_CL</code></a><br><a href="../tables/gworkspace-reportsapi-admin-cl.html"><code>GWorkspace_ReportsAPI_admin_CL</code></a><br><a href="../tables/gworkspace-reportsapi-calendar-cl.html"><code>GWorkspace_ReportsAPI_calendar_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chat-cl.html"><code>GWorkspace_ReportsAPI_chat_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chrome-cl.html"><code>GWorkspace_ReportsAPI_chrome_CL</code></a><br><a href="../tables/gworkspace-reportsapi-context-aware-access-cl.html"><code>GWorkspace_ReportsAPI_context_aware_access_CL</code></a><br><a href="../tables/gworkspace-reportsapi-data-studio-cl.html"><code>GWorkspace_ReportsAPI_data_studio_CL</code></a><br><a href="../tables/gworkspace-reportsapi-drive-cl.html"><code>GWorkspace_ReportsAPI_drive_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gcp-cl.html"><code>GWorkspace_ReportsAPI_gcp_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gplus-cl.html"><code>GWorkspace_ReportsAPI_gplus_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-cl.html"><code>GWorkspace_ReportsAPI_groups_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-enterprise-cl.html"><code>GWorkspace_ReportsAPI_groups_enterprise_CL</code></a><br><a href="../tables/gworkspace-reportsapi-jamboard-cl.html"><code>GWorkspace_ReportsAPI_jamboard_CL</code></a><br><a href="../tables/gworkspace-reportsapi-keep-cl.html"><code>GWorkspace_ReportsAPI_keep_CL</code></a><br><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a><br><a href="../tables/gworkspace-reportsapi-meet-cl.html"><code>GWorkspace_ReportsAPI_meet_CL</code></a><br><a href="../tables/gworkspace-reportsapi-mobile-cl.html"><code>GWorkspace_ReportsAPI_mobile_CL</code></a><br><a href="../tables/gworkspace-reportsapi-rules-cl.html"><code>GWorkspace_ReportsAPI_rules_CL</code></a><br><a href="../tables/gworkspace-reportsapi-saml-cl.html"><code>GWorkspace_ReportsAPI_saml_CL</code></a><br><a href="../tables/gworkspace-reportsapi-token-cl.html"><code>GWorkspace_ReportsAPI_token_CL</code></a><br><a href="../tables/gworkspace-reportsapi-user-accounts-cl.html"><code>GWorkspace_ReportsAPI_user_accounts_CL</code></a><br><a href="../tables/googleworkspacereports-cl.html"><code>GoogleWorkspaceReports_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googleworkspacereports-gworkspace-shared-private-document-2da2122e-5da9-11ec-bf63-0242ac130002-2bc65996.html">GWorkspace - Shared private document</a></td>
+<td style="text-align: left;">Exfiltration, Impact</td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-access-transparency-cl.html"><code>GWorkspace_ReportsAPI_access_transparency_CL</code></a><br><a href="../tables/gworkspace-reportsapi-admin-cl.html"><code>GWorkspace_ReportsAPI_admin_CL</code></a><br><a href="../tables/gworkspace-reportsapi-calendar-cl.html"><code>GWorkspace_ReportsAPI_calendar_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chat-cl.html"><code>GWorkspace_ReportsAPI_chat_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chrome-cl.html"><code>GWorkspace_ReportsAPI_chrome_CL</code></a><br><a href="../tables/gworkspace-reportsapi-context-aware-access-cl.html"><code>GWorkspace_ReportsAPI_context_aware_access_CL</code></a><br><a href="../tables/gworkspace-reportsapi-data-studio-cl.html"><code>GWorkspace_ReportsAPI_data_studio_CL</code></a><br><a href="../tables/gworkspace-reportsapi-drive-cl.html"><code>GWorkspace_ReportsAPI_drive_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gcp-cl.html"><code>GWorkspace_ReportsAPI_gcp_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gplus-cl.html"><code>GWorkspace_ReportsAPI_gplus_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-cl.html"><code>GWorkspace_ReportsAPI_groups_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-enterprise-cl.html"><code>GWorkspace_ReportsAPI_groups_enterprise_CL</code></a><br><a href="../tables/gworkspace-reportsapi-jamboard-cl.html"><code>GWorkspace_ReportsAPI_jamboard_CL</code></a><br><a href="../tables/gworkspace-reportsapi-keep-cl.html"><code>GWorkspace_ReportsAPI_keep_CL</code></a><br><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a><br><a href="../tables/gworkspace-reportsapi-meet-cl.html"><code>GWorkspace_ReportsAPI_meet_CL</code></a><br><a href="../tables/gworkspace-reportsapi-mobile-cl.html"><code>GWorkspace_ReportsAPI_mobile_CL</code></a><br><a href="../tables/gworkspace-reportsapi-rules-cl.html"><code>GWorkspace_ReportsAPI_rules_CL</code></a><br><a href="../tables/gworkspace-reportsapi-saml-cl.html"><code>GWorkspace_ReportsAPI_saml_CL</code></a><br><a href="../tables/gworkspace-reportsapi-token-cl.html"><code>GWorkspace_ReportsAPI_token_CL</code></a><br><a href="../tables/gworkspace-reportsapi-user-accounts-cl.html"><code>GWorkspace_ReportsAPI_user_accounts_CL</code></a><br><a href="../tables/googleworkspacereports-cl.html"><code>GoogleWorkspaceReports_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googleworkspacereports-gworkspace-suspended-users-26cea052-5da9-11ec-bf63-0242ac130002-6c4c92c6.html">GWorkspace - Suspended users</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-access-transparency-cl.html"><code>GWorkspace_ReportsAPI_access_transparency_CL</code></a><br><a href="../tables/gworkspace-reportsapi-admin-cl.html"><code>GWorkspace_ReportsAPI_admin_CL</code></a><br><a href="../tables/gworkspace-reportsapi-calendar-cl.html"><code>GWorkspace_ReportsAPI_calendar_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chat-cl.html"><code>GWorkspace_ReportsAPI_chat_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chrome-cl.html"><code>GWorkspace_ReportsAPI_chrome_CL</code></a><br><a href="../tables/gworkspace-reportsapi-context-aware-access-cl.html"><code>GWorkspace_ReportsAPI_context_aware_access_CL</code></a><br><a href="../tables/gworkspace-reportsapi-data-studio-cl.html"><code>GWorkspace_ReportsAPI_data_studio_CL</code></a><br><a href="../tables/gworkspace-reportsapi-drive-cl.html"><code>GWorkspace_ReportsAPI_drive_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gcp-cl.html"><code>GWorkspace_ReportsAPI_gcp_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gplus-cl.html"><code>GWorkspace_ReportsAPI_gplus_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-cl.html"><code>GWorkspace_ReportsAPI_groups_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-enterprise-cl.html"><code>GWorkspace_ReportsAPI_groups_enterprise_CL</code></a><br><a href="../tables/gworkspace-reportsapi-jamboard-cl.html"><code>GWorkspace_ReportsAPI_jamboard_CL</code></a><br><a href="../tables/gworkspace-reportsapi-keep-cl.html"><code>GWorkspace_ReportsAPI_keep_CL</code></a><br><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a><br><a href="../tables/gworkspace-reportsapi-meet-cl.html"><code>GWorkspace_ReportsAPI_meet_CL</code></a><br><a href="../tables/gworkspace-reportsapi-mobile-cl.html"><code>GWorkspace_ReportsAPI_mobile_CL</code></a><br><a href="../tables/gworkspace-reportsapi-rules-cl.html"><code>GWorkspace_ReportsAPI_rules_CL</code></a><br><a href="../tables/gworkspace-reportsapi-saml-cl.html"><code>GWorkspace_ReportsAPI_saml_CL</code></a><br><a href="../tables/gworkspace-reportsapi-token-cl.html"><code>GWorkspace_ReportsAPI_token_CL</code></a><br><a href="../tables/gworkspace-reportsapi-user-accounts-cl.html"><code>GWorkspace_ReportsAPI_user_accounts_CL</code></a><br><a href="../tables/googleworkspacereports-cl.html"><code>GoogleWorkspaceReports_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googleworkspacereports-gworkspace-uncommon-user-agent-strings-1efb71b6-5da9-11ec-bf63-0242ac130002-66b8775f.html">GWorkspace - Uncommon user agent strings</a></td>
+<td style="text-align: left;">Persistence, Collection</td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-access-transparency-cl.html"><code>GWorkspace_ReportsAPI_access_transparency_CL</code></a><br><a href="../tables/gworkspace-reportsapi-admin-cl.html"><code>GWorkspace_ReportsAPI_admin_CL</code></a><br><a href="../tables/gworkspace-reportsapi-calendar-cl.html"><code>GWorkspace_ReportsAPI_calendar_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chat-cl.html"><code>GWorkspace_ReportsAPI_chat_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chrome-cl.html"><code>GWorkspace_ReportsAPI_chrome_CL</code></a><br><a href="../tables/gworkspace-reportsapi-context-aware-access-cl.html"><code>GWorkspace_ReportsAPI_context_aware_access_CL</code></a><br><a href="../tables/gworkspace-reportsapi-data-studio-cl.html"><code>GWorkspace_ReportsAPI_data_studio_CL</code></a><br><a href="../tables/gworkspace-reportsapi-drive-cl.html"><code>GWorkspace_ReportsAPI_drive_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gcp-cl.html"><code>GWorkspace_ReportsAPI_gcp_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gplus-cl.html"><code>GWorkspace_ReportsAPI_gplus_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-cl.html"><code>GWorkspace_ReportsAPI_groups_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-enterprise-cl.html"><code>GWorkspace_ReportsAPI_groups_enterprise_CL</code></a><br><a href="../tables/gworkspace-reportsapi-jamboard-cl.html"><code>GWorkspace_ReportsAPI_jamboard_CL</code></a><br><a href="../tables/gworkspace-reportsapi-keep-cl.html"><code>GWorkspace_ReportsAPI_keep_CL</code></a><br><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a><br><a href="../tables/gworkspace-reportsapi-meet-cl.html"><code>GWorkspace_ReportsAPI_meet_CL</code></a><br><a href="../tables/gworkspace-reportsapi-mobile-cl.html"><code>GWorkspace_ReportsAPI_mobile_CL</code></a><br><a href="../tables/gworkspace-reportsapi-rules-cl.html"><code>GWorkspace_ReportsAPI_rules_CL</code></a><br><a href="../tables/gworkspace-reportsapi-saml-cl.html"><code>GWorkspace_ReportsAPI_saml_CL</code></a><br><a href="../tables/gworkspace-reportsapi-token-cl.html"><code>GWorkspace_ReportsAPI_token_CL</code></a><br><a href="../tables/gworkspace-reportsapi-user-accounts-cl.html"><code>GWorkspace_ReportsAPI_user_accounts_CL</code></a><br><a href="../tables/googleworkspacereports-cl.html"><code>GoogleWorkspaceReports_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googleworkspacereports-gworkspace-unknown-login-type-05189314-5e58-11ec-bf63-0242ac130002-b588e2da.html">GWorkspace - Unknown login type</a></td>
+<td style="text-align: left;">InitialAccess, DefenseEvasion, LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-access-transparency-cl.html"><code>GWorkspace_ReportsAPI_access_transparency_CL</code></a><br><a href="../tables/gworkspace-reportsapi-admin-cl.html"><code>GWorkspace_ReportsAPI_admin_CL</code></a><br><a href="../tables/gworkspace-reportsapi-calendar-cl.html"><code>GWorkspace_ReportsAPI_calendar_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chat-cl.html"><code>GWorkspace_ReportsAPI_chat_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chrome-cl.html"><code>GWorkspace_ReportsAPI_chrome_CL</code></a><br><a href="../tables/gworkspace-reportsapi-context-aware-access-cl.html"><code>GWorkspace_ReportsAPI_context_aware_access_CL</code></a><br><a href="../tables/gworkspace-reportsapi-data-studio-cl.html"><code>GWorkspace_ReportsAPI_data_studio_CL</code></a><br><a href="../tables/gworkspace-reportsapi-drive-cl.html"><code>GWorkspace_ReportsAPI_drive_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gcp-cl.html"><code>GWorkspace_ReportsAPI_gcp_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gplus-cl.html"><code>GWorkspace_ReportsAPI_gplus_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-cl.html"><code>GWorkspace_ReportsAPI_groups_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-enterprise-cl.html"><code>GWorkspace_ReportsAPI_groups_enterprise_CL</code></a><br><a href="../tables/gworkspace-reportsapi-jamboard-cl.html"><code>GWorkspace_ReportsAPI_jamboard_CL</code></a><br><a href="../tables/gworkspace-reportsapi-keep-cl.html"><code>GWorkspace_ReportsAPI_keep_CL</code></a><br><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a><br><a href="../tables/gworkspace-reportsapi-meet-cl.html"><code>GWorkspace_ReportsAPI_meet_CL</code></a><br><a href="../tables/gworkspace-reportsapi-mobile-cl.html"><code>GWorkspace_ReportsAPI_mobile_CL</code></a><br><a href="../tables/gworkspace-reportsapi-rules-cl.html"><code>GWorkspace_ReportsAPI_rules_CL</code></a><br><a href="../tables/gworkspace-reportsapi-saml-cl.html"><code>GWorkspace_ReportsAPI_saml_CL</code></a><br><a href="../tables/gworkspace-reportsapi-token-cl.html"><code>GWorkspace_ReportsAPI_token_CL</code></a><br><a href="../tables/gworkspace-reportsapi-user-accounts-cl.html"><code>GWorkspace_ReportsAPI_user_accounts_CL</code></a><br><a href="../tables/googleworkspacereports-cl.html"><code>GoogleWorkspaceReports_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googleworkspacereports-gworkspace-user-reported-calendar-invite-as-spam-181bda98-5da9-11ec-bf63-0242ac130002-91c2be7a.html">GWorkspace - User reported calendar invite as spam</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-access-transparency-cl.html"><code>GWorkspace_ReportsAPI_access_transparency_CL</code></a><br><a href="../tables/gworkspace-reportsapi-admin-cl.html"><code>GWorkspace_ReportsAPI_admin_CL</code></a><br><a href="../tables/gworkspace-reportsapi-calendar-cl.html"><code>GWorkspace_ReportsAPI_calendar_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chat-cl.html"><code>GWorkspace_ReportsAPI_chat_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chrome-cl.html"><code>GWorkspace_ReportsAPI_chrome_CL</code></a><br><a href="../tables/gworkspace-reportsapi-context-aware-access-cl.html"><code>GWorkspace_ReportsAPI_context_aware_access_CL</code></a><br><a href="../tables/gworkspace-reportsapi-data-studio-cl.html"><code>GWorkspace_ReportsAPI_data_studio_CL</code></a><br><a href="../tables/gworkspace-reportsapi-drive-cl.html"><code>GWorkspace_ReportsAPI_drive_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gcp-cl.html"><code>GWorkspace_ReportsAPI_gcp_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gplus-cl.html"><code>GWorkspace_ReportsAPI_gplus_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-cl.html"><code>GWorkspace_ReportsAPI_groups_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-enterprise-cl.html"><code>GWorkspace_ReportsAPI_groups_enterprise_CL</code></a><br><a href="../tables/gworkspace-reportsapi-jamboard-cl.html"><code>GWorkspace_ReportsAPI_jamboard_CL</code></a><br><a href="../tables/gworkspace-reportsapi-keep-cl.html"><code>GWorkspace_ReportsAPI_keep_CL</code></a><br><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a><br><a href="../tables/gworkspace-reportsapi-meet-cl.html"><code>GWorkspace_ReportsAPI_meet_CL</code></a><br><a href="../tables/gworkspace-reportsapi-mobile-cl.html"><code>GWorkspace_ReportsAPI_mobile_CL</code></a><br><a href="../tables/gworkspace-reportsapi-rules-cl.html"><code>GWorkspace_ReportsAPI_rules_CL</code></a><br><a href="../tables/gworkspace-reportsapi-saml-cl.html"><code>GWorkspace_ReportsAPI_saml_CL</code></a><br><a href="../tables/gworkspace-reportsapi-token-cl.html"><code>GWorkspace_ReportsAPI_token_CL</code></a><br><a href="../tables/gworkspace-reportsapi-user-accounts-cl.html"><code>GWorkspace_ReportsAPI_user_accounts_CL</code></a><br><a href="../tables/googleworkspacereports-cl.html"><code>GoogleWorkspaceReports_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googleworkspacereports-gworkspace-users-with-several-devices-1087fb40-5da9-11ec-bf63-0242ac130002-691cd7c6.html">GWorkspace - Users with several devices</a></td>
+<td style="text-align: left;">InitialAcces</td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-access-transparency-cl.html"><code>GWorkspace_ReportsAPI_access_transparency_CL</code></a><br><a href="../tables/gworkspace-reportsapi-admin-cl.html"><code>GWorkspace_ReportsAPI_admin_CL</code></a><br><a href="../tables/gworkspace-reportsapi-calendar-cl.html"><code>GWorkspace_ReportsAPI_calendar_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chat-cl.html"><code>GWorkspace_ReportsAPI_chat_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chrome-cl.html"><code>GWorkspace_ReportsAPI_chrome_CL</code></a><br><a href="../tables/gworkspace-reportsapi-context-aware-access-cl.html"><code>GWorkspace_ReportsAPI_context_aware_access_CL</code></a><br><a href="../tables/gworkspace-reportsapi-data-studio-cl.html"><code>GWorkspace_ReportsAPI_data_studio_CL</code></a><br><a href="../tables/gworkspace-reportsapi-drive-cl.html"><code>GWorkspace_ReportsAPI_drive_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gcp-cl.html"><code>GWorkspace_ReportsAPI_gcp_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gplus-cl.html"><code>GWorkspace_ReportsAPI_gplus_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-cl.html"><code>GWorkspace_ReportsAPI_groups_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-enterprise-cl.html"><code>GWorkspace_ReportsAPI_groups_enterprise_CL</code></a><br><a href="../tables/gworkspace-reportsapi-jamboard-cl.html"><code>GWorkspace_ReportsAPI_jamboard_CL</code></a><br><a href="../tables/gworkspace-reportsapi-keep-cl.html"><code>GWorkspace_ReportsAPI_keep_CL</code></a><br><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a><br><a href="../tables/gworkspace-reportsapi-meet-cl.html"><code>GWorkspace_ReportsAPI_meet_CL</code></a><br><a href="../tables/gworkspace-reportsapi-mobile-cl.html"><code>GWorkspace_ReportsAPI_mobile_CL</code></a><br><a href="../tables/gworkspace-reportsapi-rules-cl.html"><code>GWorkspace_ReportsAPI_rules_CL</code></a><br><a href="../tables/gworkspace-reportsapi-saml-cl.html"><code>GWorkspace_ReportsAPI_saml_CL</code></a><br><a href="../tables/gworkspace-reportsapi-token-cl.html"><code>GWorkspace_ReportsAPI_token_CL</code></a><br><a href="../tables/gworkspace-reportsapi-user-accounts-cl.html"><code>GWorkspace_ReportsAPI_user_accounts_CL</code></a><br><a href="../tables/googleworkspacereports-cl.html"><code>GoogleWorkspaceReports_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/googleworkspacereports-googleworkspace-6948e392.html">GoogleWorkspace</a></td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-access-transparency-cl.html"><code>GWorkspace_ReportsAPI_access_transparency_CL</code></a><br><a href="../tables/gworkspace-reportsapi-admin-cl.html"><code>GWorkspace_ReportsAPI_admin_CL</code></a><br><a href="../tables/gworkspace-reportsapi-calendar-cl.html"><code>GWorkspace_ReportsAPI_calendar_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chat-cl.html"><code>GWorkspace_ReportsAPI_chat_CL</code></a><br><a href="../tables/gworkspace-reportsapi-chrome-cl.html"><code>GWorkspace_ReportsAPI_chrome_CL</code></a><br><a href="../tables/gworkspace-reportsapi-context-aware-access-cl.html"><code>GWorkspace_ReportsAPI_context_aware_access_CL</code></a><br><a href="../tables/gworkspace-reportsapi-data-studio-cl.html"><code>GWorkspace_ReportsAPI_data_studio_CL</code></a><br><a href="../tables/gworkspace-reportsapi-drive-cl.html"><code>GWorkspace_ReportsAPI_drive_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gcp-cl.html"><code>GWorkspace_ReportsAPI_gcp_CL</code></a><br><a href="../tables/gworkspace-reportsapi-gplus-cl.html"><code>GWorkspace_ReportsAPI_gplus_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-cl.html"><code>GWorkspace_ReportsAPI_groups_CL</code></a><br><a href="../tables/gworkspace-reportsapi-groups-enterprise-cl.html"><code>GWorkspace_ReportsAPI_groups_enterprise_CL</code></a><br><a href="../tables/gworkspace-reportsapi-jamboard-cl.html"><code>GWorkspace_ReportsAPI_jamboard_CL</code></a><br><a href="../tables/gworkspace-reportsapi-keep-cl.html"><code>GWorkspace_ReportsAPI_keep_CL</code></a><br><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a><br><a href="../tables/gworkspace-reportsapi-meet-cl.html"><code>GWorkspace_ReportsAPI_meet_CL</code></a><br><a href="../tables/gworkspace-reportsapi-mobile-cl.html"><code>GWorkspace_ReportsAPI_mobile_CL</code></a><br><a href="../tables/gworkspace-reportsapi-rules-cl.html"><code>GWorkspace_ReportsAPI_rules_CL</code></a><br><a href="../tables/gworkspace-reportsapi-saml-cl.html"><code>GWorkspace_ReportsAPI_saml_CL</code></a><br><a href="../tables/gworkspace-reportsapi-token-cl.html"><code>GWorkspace_ReportsAPI_token_CL</code></a><br><a href="../tables/gworkspace-reportsapi-user-accounts-cl.html"><code>GWorkspace_ReportsAPI_user_accounts_CL</code></a><br><a href="../tables/googleworkspacereports-cl.html"><code>GoogleWorkspaceReports_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/gworkspaceactivityreports.html">GWorkspaceActivityReports</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-access-transparency-cl.html"><code>GWorkspace_ReportsAPI_access_transparency_CL</code></a> <em>(read)</em><br><a href="../tables/gworkspace-reportsapi-admin-cl.html"><code>GWorkspace_ReportsAPI_admin_CL</code></a> <em>(read)</em><br><a href="../tables/gworkspace-reportsapi-calendar-cl.html"><code>GWorkspace_ReportsAPI_calendar_CL</code></a> <em>(read)</em><br><a href="../tables/gworkspace-reportsapi-chat-cl.html"><code>GWorkspace_ReportsAPI_chat_CL</code></a> <em>(read)</em><br><a href="../tables/gworkspace-reportsapi-chrome-cl.html"><code>GWorkspace_ReportsAPI_chrome_CL</code></a> <em>(read)</em><br><a href="../tables/gworkspace-reportsapi-context-aware-access-cl.html"><code>GWorkspace_ReportsAPI_context_aware_access_CL</code></a> <em>(read)</em><br><a href="../tables/gworkspace-reportsapi-data-studio-cl.html"><code>GWorkspace_ReportsAPI_data_studio_CL</code></a> <em>(read)</em><br><a href="../tables/gworkspace-reportsapi-drive-cl.html"><code>GWorkspace_ReportsAPI_drive_CL</code></a> <em>(read)</em><br><a href="../tables/gworkspace-reportsapi-gcp-cl.html"><code>GWorkspace_ReportsAPI_gcp_CL</code></a> <em>(read)</em><br><a href="../tables/gworkspace-reportsapi-gplus-cl.html"><code>GWorkspace_ReportsAPI_gplus_CL</code></a> <em>(read)</em><br><a href="../tables/gworkspace-reportsapi-groups-cl.html"><code>GWorkspace_ReportsAPI_groups_CL</code></a> <em>(read)</em><br><a href="../tables/gworkspace-reportsapi-groups-enterprise-cl.html"><code>GWorkspace_ReportsAPI_groups_enterprise_CL</code></a> <em>(read)</em><br><a href="../tables/gworkspace-reportsapi-jamboard-cl.html"><code>GWorkspace_ReportsAPI_jamboard_CL</code></a> <em>(read)</em><br><a href="../tables/gworkspace-reportsapi-keep-cl.html"><code>GWorkspace_ReportsAPI_keep_CL</code></a> <em>(read)</em><br><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a> <em>(read)</em><br><a href="../tables/gworkspace-reportsapi-meet-cl.html"><code>GWorkspace_ReportsAPI_meet_CL</code></a> <em>(read)</em><br><a href="../tables/gworkspace-reportsapi-mobile-cl.html"><code>GWorkspace_ReportsAPI_mobile_CL</code></a> <em>(read)</em><br><a href="../tables/gworkspace-reportsapi-rules-cl.html"><code>GWorkspace_ReportsAPI_rules_CL</code></a> <em>(read)</em><br><a href="../tables/gworkspace-reportsapi-saml-cl.html"><code>GWorkspace_ReportsAPI_saml_CL</code></a> <em>(read)</em><br><a href="../tables/gworkspace-reportsapi-token-cl.html"><code>GWorkspace_ReportsAPI_token_CL</code></a> <em>(read)</em><br><a href="../tables/gworkspace-reportsapi-user-accounts-cl.html"><code>GWorkspace_ReportsAPI_user_accounts_CL</code></a> <em>(read)</em><br><a href="../tables/googleworkspacereports-cl.html"><code>GoogleWorkspaceReports_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.</p>
+</blockquote>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.3</td>
+<td>21-01-2026</td>
+<td>Updated <strong>Data Connector</strong> to support dynamic Redirect URI</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>26-08-2025</td>
+<td>Moving GoogleWorkspaceReports <strong>CCF Data Connector</strong> to GA.</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>14-07-2025</td>
+<td>Added new <strong>CCF Data Connector</strong>.</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>06-09-2024</td>
+<td>Updated the python runtime version to 3.11.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

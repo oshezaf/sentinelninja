@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CiscoSDWANReport &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>CiscoSDWANReport</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>This playbook provides an end-to-end example of sending an email for suspicious activity found in the data.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/cisco-sd-wan.html">Cisco SD-WAN</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20SD-WAN/Playbooks/CiscoSDWANReport/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20SD-WAN/Playbooks/CiscoSDWANReport/readme.md">CiscoSDWANReport/readme.md</a></em></p>
+</blockquote>
+<h1>Cisco SDWAN Report</h1>
+<ul>
+<li><a href="#Summary">Summary</a></li>
+<li><a href="#Deployment-instructions">Deployment instructions</a></li>
+<li><a href="#Post-Deployment-instructions">Post-Deployment instructions</a></li>
+</ul>
+<h2>Summary<a name="Summary"></a></h2>
+<p>This playbook provides an end-to-end example of sending an email for suspicious activity found in the data.</p>
+<h3>Deployment instructions<a name="Deployment-instructions"></a></h3>
+<ol>
+<li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
+<li>Fill in the required parameters:<ul>
+<li>Playbook Name: Enter the playbook name here</li>
+<li>Azure Resource Group: The Azure Resource Group name in which you want to deploy the Logic App.</li>
+<li>Azure Subscription ID: Azure Subscription ID which is present in the subscription tab in Microsoft Sentinel.</li>
+<li>Azure Workspace Name: Microsoft Sentinel Workspace Name of Log Analytics workspace.</li>
+<li>Email: Enter comma-separated email addresses on which reports will be sent.</li>
+</ul>
+</li>
+</ol>
+<p><a href="https%3A%2F%2Fportal.azure.com%2F%23create%2FMicrosoft.Template%2Furi%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCisco%20SD-WAN%2FPlaybooks%2FCiscoSDWANReport%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https%3A%2F%2Fportal.azure.com%2F%23create%2FMicrosoft.Template%2Furi%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCisco%20SD-WAN%2FPlaybooks%2FCiscoSDWANReport%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<h3>Post-Deployment instructions<a name="Post-Deployment-instructions"></a></h3>
+<h5>a. Authorize connections</h5>
+<p>Once deployment is complete, authorize each connection like AzureMonitorLogs.</p>
+<ol>
+<li>Click the connection resource</li>
+<li>Click edit API connection</li>
+<li>Click Authorize</li>
+<li>Sign in</li>
+<li>Click Save</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/cisco-sd-wan.html">Back to Cisco SD-WAN</a></p>
+</div>
+</body>
+</html>

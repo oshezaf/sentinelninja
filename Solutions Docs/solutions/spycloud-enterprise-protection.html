@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpyCloud Enterprise Protection &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>SpyCloud Enterprise Protection</h1>
+<p><img src="raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SpyCloud_Enterprise_Protection.svg" alt="SpyCloud Enterprise Protection Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Spycloud</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://portal.spycloud.com">https://portal.spycloud.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">SpyCloud</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2023-09-09</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection">SpyCloud Enterprise Protection</a></td>
+</tr>
+</tbody>
+</table>
+<p>Cybercriminals continue to utilize stolen corporate credentials as the number one technique for account takeover (ATO). In fact, the FBI estimated that this resulted in estimated losses totaling more than $2.7 billion in 2022. SpyCloud helps prevent account takeover and ransomware attacks by identifying exposed credentials related to a company’s domains, IP addresses and emails. Through this integration, breach and malware data from SpyCloud can be loaded into Sentinel.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p><strong>This solution does not include data connectors.</strong></p>
+<p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
+<h2>Tables Used</h2>
+<p>This solution queries <strong>1 table(s)</strong> from its content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/spycloudbreachdatawatchlist-cl.html"><code>SpyCloudBreachDataWatchlist_CL</code></a></td>
+<td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>10 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">2</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/spycloud-enterprise-protection-spycloud-enterprise-breach-detection-cb410ad5-6e9d-4278-b963-1e3af205d680-3a6c6446.html">SpyCloud Enterprise Breach Detection</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/spycloudbreachdatawatchlist-cl.html"><code>SpyCloudBreachDataWatchlist_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/spycloud-enterprise-protection-spycloud-enterprise-malware-detection-7ba50f9e-2f94-462b-a54b-8642b8c041f5-a8afd941.html">SpyCloud Enterprise Malware Detection</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/spycloudbreachdatawatchlist-cl.html"><code>SpyCloudBreachDataWatchlist_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/spycloud-enterprise-protection-domain-breach-data-spycloud-enterprise-e52acdca.html">Domain Breach Data - SpyCloud Enterprise</a></td>
+<td style="text-align: left;">The SpyCloud Enterprise API is able to provide breach data for a domain or set of domains associated...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/spycloud-enterprise-protection-email-address-breach-data-spycloud-enterprise-8946e9ed.html">Email Address Breach Data - SpyCloud Enterprise</a></td>
+<td style="text-align: left;">The SpyCloud Enterprise API is able to provide breach data for a Email address or set of Email addre...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/spycloud-enterprise-protection-ip-address-breach-data-spycloud-enterprise-4dc87c3d.html">IP Address Breach Data - SpyCloud Enterprise</a></td>
+<td style="text-align: left;">The SpyCloud Enterprise API is able to provide breach data for a IP address or set of IP addresses a...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/spycloud-enterprise-protection-password-breach-data-spycloud-enterprise-31619212.html">Password Breach Data - SpyCloud Enterprise</a></td>
+<td style="text-align: left;">The SpyCloud Enterprise API is able to provide breach data for a provided password.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/spycloud-enterprise-protection-spycloud-breach-information-spycloud-enterprise-e2c67842.html">SpyCloud Breach Information - SpyCloud Enterprise</a></td>
+<td style="text-align: left;">This Playbook will be triggered when an spycloud breach incident is created.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/spycloud-enterprise-protection-spycloud-malware-information-spycloud-enterprise-d542701e.html">SpyCloud Malware Information - SpyCloud Enterprise</a></td>
+<td style="text-align: left;">This Playbook will be triggered when an spycloud malware incident is created.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/spycloud-enterprise-protection-spycloud-watachlist-data-spycloud-enterprise-6050708e.html">SpyCloud Watachlist data - SpyCloud Enterprise</a></td>
+<td style="text-align: left;">This Playbook will run daily, gets the watchlist data from SpyCloud API and saved it into the custom...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/spycloud-enterprise-protection-username-breach-data-spycloud-enterprise-78b06e33.html">Username Breach Data - SpyCloud Enterprise</a></td>
+<td style="text-align: left;">The SpyCloud Enterprise API is able to provide breach data for a username or set of usernames associ...</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/README.md">SpyCloud Enterprise Protection/README.md</a></em></p>
+</blockquote>
+<h2>Table of Contents</h2>
+<ol>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#feed">Feed</a></li>
+<li><a href="#enrichment">Enrichment</a></li>
+<li><a href="#deployorder">SpyCloud Enterprise Deployment Instructions</a></li>
+</ol>
+<p><a name="overview"></p>
+<h2>Overview</h2>
+<p>Cybercriminals continue to utilize stolen corporate credentials as the number one technique for account takeover (ATO). In fact, the FBI estimated that this resulted in estimated losses totaling more than $2.7 billion in 2022. SpyCloud helps prevent account takeover and ransomware attacks by identifying exposed credentials related to a company’s domains, IP addresses and emails. Through this integration, breach and malware data from SpyCloud can be loaded into Sentinel. </p>
+<p>This solution contains the following:</p>
+<ul>
+<li>
+<p>Eight playbooks,</p>
+</li>
+<li>
+<p>Two analytics rules, and </p>
+</li>
+<li>
+<p>One custom connector. </p>
+</li>
+</ul>
+<p>By identifying exposed assets that are available to criminals, enterprises can protect exposed accounts before criminals have a chance to use them for follow-on attacks These playbooks and actions are designed to meet several use cases.</p>
+<p><a name="feed"></a></p>
+<h2>Feed Usecase</h2>
+<table>
+<thead>
+<tr>
+<th>Playbook</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SpyCloud-Monitor-Watchlist-Data</strong></td>
+<td>This playbook runs on a daily basis, and fetches all the watchlist data from the SpyCloud Enterprise Protection API, parses the data, and saves the data into the custom logs table.</td>
+</tr>
+</tbody>
+</table>
+<p>This solution provides the following rules which monitor the custom log table created from the above playbook.</p>
+<h3>Analytics Rules</h3>
+<table>
+<thead>
+<tr>
+<th>Analytic Rule</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SpyCloud-Malware-Rule</strong></td>
+<td>This scheduled rule monitors the custom log table, and checks for any new malware records(severity=25). If a record is found, this analytic rule will create an incident with High Priority.</td>
+</tr>
+<tr>
+<td><strong>SpyCloud-Breach-Rule</strong></td>
+<td>This scheduled rule monitors the custom log table, and checks for any new breach records(severity=20). If a record is found, this analytic rule will create an incident with High Priority.</td>
+</tr>
+</tbody>
+</table>
+<p>Many actions are available when a malware incident is created from the "SpyCloud Malware Rule." It can:</p>
+<ul>
+<li>Check if the hostname is a managed asset. If no hostname exists in the record it will skip this check.</li>
+<li>Pull all the additional records for the specific machine ID from the appropriate endpoint and add them to the incident, if you have access to SpyCloud Compass data. </li>
+<li>Escalate the incident for someone to handle the malware infection. </li>
+</ul>
+<p>This solution also provides a "SpyCloud Malware Playbook" template that can be used to achieve the above use case. You can add this playbook to the "SpyCloud Malware Rule" automation section.</p>
+<p>The following actions can be taken when a breach incident is created from the "SpyCloud Breach Rule."</p>
+<ul>
+<li>Check if breached password length is &gt;= minimum required by the organization. If not, exit the playbook. </li>
+<li>Check if the user is currently an active employee. If not, exit the playbook. </li>
+</ul>
+<p><em>[Content truncated...]</em></p>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.1</td>
+<td>18-07-2024</td>
+<td>Fixed Invalid <strong>Analytic Rule</strong> SpyCloudEnterpriseProtectionMalwareRule.yaml</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>12-09-2023</td>
+<td>Initial Solution Release</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

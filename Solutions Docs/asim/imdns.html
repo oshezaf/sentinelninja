@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>&lt;img src=&quot;../images/asim-badge.png&quot; alt=&quot;ASIM&quot; height=&quot;32&quot;&gt; DNS activity ASIM filtering parser. &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1><img src="../images/asim-badge.png" alt="ASIM" height="32"> DNS activity ASIM filtering parser.</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <strong>ASIM Parsers</strong> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="asim-index.html">Back to ASIM Index</a></p>
+<hr />
+<h2>Parser Information</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Parser Name</strong></td>
+<td style="text-align: left;"><code>imDns</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Built-in Parser</strong></td>
+<td style="text-align: left;"><code>_Im_Dns</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Schema</strong></td>
+<td style="text-align: left;">Dns</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Schema Version</strong></td>
+<td style="text-align: left;">0.1.7</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Parser Type</strong></td>
+<td style="text-align: left;">📦 Union (schema-level)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Parser Version</strong></td>
+<td style="text-align: left;">0.5.2 (<a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/imDns.md">version history</a>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">June 7, 2024</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source File</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimDns/Parsers/imDns.yaml">Parsers\ASimDns\Parsers\imDns.yaml</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Description</h2>
+<p>This ASIM parser supports filtering and normalizing DNS activity logs from all supported sources to the ASIM DNS activity normalized schema.</p>
+<h2>Products</h2>
+<p>This union parser includes parsers for the following products:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Source Parser</th>
+<th style="text-align: left;">Solutions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Azure Firewall</td>
+<td style="text-align: left;"><a href="asimdnsazurefirewall.html">_Im_Dns_AzureFirewall</a></td>
+<td style="text-align: left;"><a href="../solutions/azure-firewall.html">Azure Firewall</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Cisco Umbrella</td>
+<td style="text-align: left;"><a href="asimdnsciscoumbrella.html">_Im_Dns_CiscoUmbrella</a></td>
+<td style="text-align: left;"><a href="../solutions/ciscoumbrella.html">CiscoUmbrella</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Corelight Zeek</td>
+<td style="text-align: left;"><a href="asimdnscorelightzeek.html">_Im_Dns_CorelightZeek</a></td>
+<td style="text-align: left;"><a href="../solutions/corelight.html">Corelight</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Fortinet FortiGate</td>
+<td style="text-align: left;"><a href="asimdnsfortinetfortigate.html">_Im_Dns_FortinetFortiGate</a></td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">GCP Cloud DNS</td>
+<td style="text-align: left;"><a href="asimdnsgcp.html">_Im_Dns_Gcp</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Infoblox BloxOne</td>
+<td style="text-align: left;"><a href="asimdnsinfobloxbloxone.html">_Im_Dns_InfobloxBloxOne</a></td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Infoblox NIOS</td>
+<td style="text-align: left;"><a href="asimdnsinfobloxnios.html">_Im_Dns_InfobloxNIOS</a></td>
+<td style="text-align: left;"><a href="../solutions/syslog.html">Syslog</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MS DNS Events</td>
+<td style="text-align: left;"><a href="asimdnsmicrosoftnxlog.html">_Im_Dns_MicrosoftNXlog</a></td>
+<td style="text-align: left;"><a href="../solutions/nxlogdnslogs.html">NXLogDNSLogs</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MS DNS Events</td>
+<td style="text-align: left;"><a href="asimdnsmicrosoftoms.html">_Im_Dns_MicrosoftOMS</a></td>
+<td style="text-align: left;"><a href="../solutions/windows-server-dns.html">Windows Server DNS</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Microsoft Windows Events Sysmon</td>
+<td style="text-align: left;"><a href="asimdnsmicrosoftsysmon.html">_Im_Dns_MicrosoftSysmon</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Microsoft Windows Events Sysmon</td>
+<td style="text-align: left;"><a href="asimdnsmicrosoftsysmonwindowsevent.html">_Im_Dns_MicrosoftSysmonWindowsEvent</a></td>
+<td style="text-align: left;"><a href="../solutions/windows-forwarded-events.html">Windows Forwarded Events</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Native</td>
+<td style="text-align: left;"><a href="asimdnsnative.html">_Im_Dns_Native</a></td>
+<td style="text-align: left;"><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SentinelOne</td>
+<td style="text-align: left;"><a href="asimdnssentinelone.html">_Im_Dns_SentinelOne</a></td>
+<td style="text-align: left;"><a href="../solutions/sentinelone.html">SentinelOne</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Vectra AI Streams</td>
+<td style="text-align: left;"><a href="asimdnsvectraai.html">_Im_Dns_VectraAI</a></td>
+<td style="text-align: left;"><a href="../solutions/customlogsama.html">CustomLogsAma</a><br><a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Zscaler ZIA DNS</td>
+<td style="text-align: left;"><a href="asimdnszscalerzia.html">_Im_Dns_ZscalerZIA</a></td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Parameters</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>starttime</code></td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">datetime(null)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>endtime</code></td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">datetime(null)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>srcipaddr</code></td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">*</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>domain_has_any</code></td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">dynamic([])</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>responsecodename</code></td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">*</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>response_has_ipv4</code></td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">*</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>response_has_any_prefix</code></td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">dynamic([])</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>eventtype</code></td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">lookup</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>pack</code></td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">False</td>
+</tr>
+</tbody>
+</table>
+<h2>References</h2>
+<ul>
+<li><a href="https://aka.ms/ASimDnsDoc">ASIM DNS Schema</a></li>
+<li><a href="https://aka.ms/AboutASIM">ASIM</a></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <strong>ASIM Parsers</strong> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="asim-index.html">Back to ASIM Index</a></p>
+</div>
+</body>
+</html>

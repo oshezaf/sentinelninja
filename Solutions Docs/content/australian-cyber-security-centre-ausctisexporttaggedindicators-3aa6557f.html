@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AusCtisExportTaggedIndicators &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>AusCtisExportTaggedIndicators</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>This playbook gets triggered every hour and perform the following actions: 1. Get all the threat intelligence indicators from Microsoft Sentinel Workspace with given tag. 2. Filter all the indicators whose export in not completed. 3. Export the indicators to provided TAXII server.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/australian-cyber-security-centre.html">Australian Cyber Security Centre</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Australian%20Cyber%20Security%20Centre/Playbooks/AusCtisExportTaggedIndicators/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Australian%20Cyber%20Security%20Centre/Playbooks/AusCtisExportTaggedIndicators/readme.md">AusCtisExportTaggedIndicators/readme.md</a></em></p>
+</blockquote>
+<h2>Summary</h2>
+<p>This playbook gets triggered every day and perform the following actions:</p>
+<ol>
+<li>Get all the threat intelligence indicators from Microsoft Sentinel Workspace with given tag.</li>
+<li>Filter all the indicators whose export in not completed.</li>
+<li>Verify/Add TLP labels to indicators.</li>
+<li>Add Grouping and Identity Objects to indicators.</li>
+<li>Export the bundle to provided TAXII server.</li>
+</ol>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Australian%20Cyber%20Security%20Centre/Playbooks/AusCtisExportTaggedIndicators/images/Playbook_AusCtisExportTaggedIndicators_light.jpg" width="50%"/><br></p>
+<h3>Prerequisites</h3>
+<ol>
+<li>Have TAXII Server Url, Collection ID, Username and Password handy before the deployment of the Playbook</li>
+</ol>
+<h3>Deployment instructions</h3>
+<ol>
+<li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
+<li>Fill in the required parameters:<ul>
+<li>Playbook Name</li>
+<li>TAXII Server Url</li>
+<li>TAXII Server Username</li>
+<li>TAXII Server Password</li>
+<li>Collection ID</li>
+<li>Orgnization UUID</li>
+<li>Microsoft Sentinel Workspace</li>
+<li>Tag for indicators to be exported</li>
+<li>Tag for indicators after export completion</li>
+<li>Default TLP Label</li>
+</ul>
+</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FAustralian%2520Cyber%2520Security%2520Centre%2FPlaybooks%2FAusCtisExportTaggedIndicators%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FAustralian%2520Cyber%2520Security%2520Centre%2FPlaybooks%2FAusCtisExportTaggedIndicators%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<h3>Post-Deployment instructions</h3>
+<h4>a. Authorize Playbook to access Log Analytics Workspace</h4>
+<p>Once deployment is complete, assign playbook Log Analytics contributor role.</p>
+<ol>
+<li>Go to Log Analytics Workspace resource</li>
+<li>Select Access control (IAM) tab</li>
+<li>Add role assignments</li>
+<li>Select Contributor role</li>
+<li>In the Members tab choose "Assign access to" Managed Identity</li>
+<li>Click on "Select members"</li>
+<li>Provide correct Subscription and Managed Identity </li>
+<li>Provide the playbook name in "Search by name" textbox</li>
+<li>Select the correct identity and click on Select</li>
+<li>Click on "Review + assign" </li>
+</ol>
+<h1>References</h1>
+<ul>
+<li><a href="https://www.cyber.gov.au/">Australian Cyber Security Centre</a></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/australian-cyber-security-centre.html">Back to Australian Cyber Security Centre</a></p>
+</div>
+</body>
+</html>

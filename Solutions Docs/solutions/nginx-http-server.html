@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NGINX HTTP Server &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>NGINX HTTP Server</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="NGINX HTTP Server Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2021-12-16</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NGINX%20HTTP%20Server">NGINX HTTP Server</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pre-requisites</strong></td>
+<td style="text-align: left;"><a href="customlogsama.html">CustomLogsAma</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://nginx.org/">NGINX</a> HTTP Server data connector provides the capability to ingest <a href="https://nginx.org/#basic_http_features">NGINX HTTP Server</a> events into Microsoft Sentinel. Refer to <a href="https://nginx.org/en/docs/http/ngx_http_log_module.html">NGINX Logs documentation</a> for more information.</p>
+<p>This solution is dependent on the Custom logs via AMA connector to collect the logs. The Custom logs solution will be installed as part of this solution installation. </p>
+<p><strong>NOTE</strong>: Microsoft recommends installation of Custom logs via AMA Connector. Legacy connector uses the Log Analytics agent which were deprecated on <strong>Aug 31, 2024.</strong> Using MMA and AMA on same machine can cause log duplication and extra ingestion cost <a href="https://learn.microsoft.com/azure/sentinel/ama-migrate?WT.mc_id=Portal-fx">more details</a>.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#pre-requisites">Pre-requisites</a></li>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Pre-requisites</h2>
+<p>This solution depends on <strong>1 other solution(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="customlogsama.html">CustomLogsAma</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Data Connectors</h2>
+<p>This solution has <strong>1 discovered data connector(s)⚠️</strong> (not in Solution definition):</p>
+<ul>
+<li><a href="../connectors/nginxhttpserver.html">[Deprecated] NGINX HTTP Server</a> ⚠️ 🔶</li>
+</ul>
+<p>Connectors from dependency solutions:</p>
+<ul>
+<li><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> 🔶 <em>(dependency on <a href="customlogsama.html">CustomLogsAma</a>)</em></li>
+</ul>
+<p><em>⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.</em></p>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>16 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/apachehttpserver-cl.html"><code>ApacheHTTPServer_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/jbossevent-cl.html"><code>JBossEvent_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/juniperidp-cl.html"><code>JuniperIDP_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/marklogicaudit-cl.html"><code>MarkLogicAudit_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/mongodbaudit-cl.html"><code>MongoDBAudit_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/nginx-cl.html"><code>NGINX_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency), <a href="../connectors/nginxhttpserver.html">[Deprecated] NGINX HTTP Server</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/oracleweblogicserver-cl.html"><code>OracleWebLogicServer_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/postgresql-cl.html"><code>PostgreSQL_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/securitybridgelogs-cl.html"><code>SecurityBridgeLogs_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/squidproxy-cl.html"><code>SquidProxy_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/tomcat-cl.html"><code>Tomcat_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/ubiquiti-cl.html"><code>Ubiquiti_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectrastream-cl.html"><code>VectraStream_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/zpa-cl.html"><code>ZPA_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/meraki-cl.html"><code>meraki_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vcenter-cl.html"><code>vcenter_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>22 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/nginx-http-server-nginx-command-in-uri-d84739ce-2f46-4391-b25e-a2edbea19d7e-3ba09d43.html">NGINX - Command in URI</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/nginx-cl.html"><code>NGINX_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nginx-http-server-nginx-core-dump-9a7f5a97-354b-4eac-b407-a1cc7fc4b4ec-6203a6f6.html">NGINX - Core Dump</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/nginx-cl.html"><code>NGINX_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nginx-http-server-nginx-known-malicious-user-agent-a10c6551-bbf2-492c-aa8a-fe6efd8c9cc1-c8ea7b2d.html">NGINX - Known malicious user agent</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/nginx-cl.html"><code>NGINX_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nginx-http-server-nginx-multiple-client-errors-from-single-ip-address-42771afe-edb3-4330-bc4a-abf6a5714454-a9f1d27f.html">NGINX - Multiple client errors from single IP address</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/nginx-cl.html"><code>NGINX_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nginx-http-server-nginx-multiple-server-errors-from-single-ip-address-b3ae0033-552e-4c3c-b493-3edffb4473bb-0700c1e8.html">NGINX - Multiple server errors from single IP address</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact, InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/nginx-cl.html"><code>NGINX_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nginx-http-server-nginx-multiple-user-agents-for-single-source-83a0b48f-1cb7-4b4f-a018-23c3203a239b-831eaeeb.html">NGINX - Multiple user agents for single source</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/nginx-cl.html"><code>NGINX_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nginx-http-server-nginx-private-ip-address-in-url-1aa6bfed-f11b-402f-9007-0dccc1152ede-8b1bf9df.html">NGINX - Private IP address in URL</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/nginx-cl.html"><code>NGINX_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nginx-http-server-nginx-put-file-and-get-file-from-same-ip-address-e04fa38e-9fb7-438d-887a-381d5dd235e6-e2c9edd8.html">NGINX - Put file and get file from same IP address</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/nginx-cl.html"><code>NGINX_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nginx-http-server-nginx-request-to-sensitive-files-2141ef6c-d158-4d44-b739-b145a4c21947-563a14f1.html">NGINX - Request to sensitive files</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/nginx-cl.html"><code>NGINX_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nginx-http-server-nginx-sql-injection-patterns-3bac451d-f919-4c92-9be7-694990e0ca4b-5af0860e.html">NGINX - Sql injection patterns</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/nginx-cl.html"><code>NGINX_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/nginx-http-server-nginx-abnormal-request-size-930f8b54-3bef-11ec-8d3d-0242ac130003-1293beec.html">NGINX - Abnormal request size</a></td>
+<td style="text-align: left;">Exfiltration, Collection</td>
+<td style="text-align: left;"><a href="../tables/nginx-cl.html"><code>NGINX_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nginx-http-server-nginx-rare-urls-requested-fd2ae5f6-3bea-11ec-8d3d-0242ac130003-186d0095.html">NGINX - Rare URLs requested</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/nginx-cl.html"><code>NGINX_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nginx-http-server-nginx-rare-files-requested-aaacb354-3bea-11ec-8d3d-0242ac130003-f6d57f25.html">NGINX - Rare files requested</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/nginx-cl.html"><code>NGINX_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nginx-http-server-nginx-requests-from-bots-and-crawlers-39406080-fd5f-4236-99bf-7f26ea9a89d6-de346549.html">NGINX - Requests from bots and crawlers</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/nginx-cl.html"><code>NGINX_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nginx-http-server-nginx-requests-to-unexisting-files-51d7d596-3beb-11ec-8d3d-0242ac130003-6eb6a9c8.html">NGINX - Requests to unexisting files</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/nginx-cl.html"><code>NGINX_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nginx-http-server-nginx-top-urls-client-errors-d8dd00ec-3bec-11ec-8d3d-0242ac130003-074d3e22.html">NGINX - Top URLs client errors</a></td>
+<td style="text-align: left;">Impact, InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/nginx-cl.html"><code>NGINX_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nginx-http-server-nginx-top-urls-server-errors-58ad26ee-3bed-11ec-8d3d-0242ac130003-a5b070ac.html">NGINX - Top URLs server errors</a></td>
+<td style="text-align: left;">Impact, InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/nginx-cl.html"><code>NGINX_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nginx-http-server-nginx-top-files-requested-168428b8-3bec-11ec-8d3d-0242ac130003-f5e4b1a1.html">NGINX - Top files requested</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/nginx-cl.html"><code>NGINX_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nginx-http-server-nginx-top-files-with-error-requests-a7d4b6f2-3bec-11ec-8d3d-0242ac130003-30589f20.html">NGINX - Top files with error requests</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/nginx-cl.html"><code>NGINX_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nginx-http-server-nginx-uncommon-user-agent-strings-c8b5ce46-6f84-4944-ac89-ecaac8749b98-0734f87c.html">NGINX - Uncommon user agent strings</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/nginx-cl.html"><code>NGINX_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/nginx-http-server-nginx-b8b7e921.html">NGINX</a></td>
+<td style="text-align: left;"><a href="../tables/nginx-cl.html"><code>NGINX_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/nginxhttpserver.html">NGINXHTTPServer</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/nginx-cl.html"><code>NGINX_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.1</td>
+<td>13-12-2024</td>
+<td>Removed Deprecated <strong>Data connector</strong></td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>08-08-2024</td>
+<td>Deprecating data connectors</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

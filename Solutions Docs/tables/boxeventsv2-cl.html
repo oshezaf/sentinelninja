@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BoxEventsV2CL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>BoxEventsV2_CL</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1</strong></td>
+<td style="text-align: left;">Yes 🔶 — uses type-suffixed column names</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (11 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Box/Data%20Connectors/BoxEvents_ccp/BoxEvents_DCR.json">Data Collection Rule definition</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">accessible_by</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">additional_details</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">created_at</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">created_by</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">event_id</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">event_type</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ip_address</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">recorded_at</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">session_id</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">source</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">type</td>
+<td style="text-align: left;">string</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/box.html">Box</a></li>
+</ul>
+<h2>Connectors (2)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/boxdataconnector.html">Box</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/boxeventsccpdefinition.html">Box Events (CCP)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Content Items Using This Table (21)</h2>
+<h3>Analytic Rules (10)</h3>
+<p><strong>In solution <a href="../solutions/box.html">Box</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-abmormal-user-activity-1139230c-cf10-45db-b616-fed0d1415c05-d050017d.html">Box - Abmormal user activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-executable-file-in-folder-b91ec98d-5747-45c8-b2f6-a07bf47068f0-524e216a.html">Box - Executable file in folder</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-file-containing-sensitive-data-266746ae-5eaf-4068-a980-5d630f435c46-bb951f6a.html">Box - File containing sensitive data</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-forbidden-file-type-downloaded-8889e69c-2161-412a-94a6-76c1b2d9daa7-190c2323.html">Box - Forbidden file type downloaded</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-inactive-user-login-edbf38d7-e170-4af2-ad50-1a05b374611b-ede0d64c.html">Box - Inactive user login</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-item-shared-to-external-entity-3b803560-f8a6-4db4-89cb-617d89724ba1-77c468b4.html">Box - Item shared to external entity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-many-items-deleted-by-user-1b212329-6f2c-46ca-9071-de3464f3d88d-af060c46.html">Box - Many items deleted by user</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-new-external-user-fd36ac88-cd92-4137-aa23-37a3648621fa-96cd22de.html">Box - New external user</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-user-logged-in-as-admin-b2197d7f-4731-483c-89de-d48606b872da-6058ec71.html">Box - User logged in as admin</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-user-role-changed-to-owner-174c31c9-22ec-42e5-8226-814391c08200-4e0da2af.html">Box - User role changed to owner</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries (10)</h3>
+<p><strong>In solution <a href="../solutions/box.html">Box</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-deleted-users-4b4a1802-8fcc-4eeb-9ccd-b5bb16f4b64b-640b3c89.html">Box - Deleted users</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-downloaded-data-volume-per-user-47e0a82d-fd66-4d6e-a64a-ac377f136426-48750ae0.html">Box - Downloaded data volume per user</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-ip-list-for-admin-users-949aec39-304d-4fba-94b3-15337d05e3f1-35a7f33f.html">Box - IP list for admin users</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-inactive-admin-users-d8ef8d5c-97f3-4552-afca-75d44339fa8f-5119ae4c.html">Box - Inactive admin users</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-inactive-users-c0a4169e-c713-484b-95a9-d8f437b52d66-db4d3cd3.html">Box - Inactive users</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-new-users-c8e19aa5-3424-4b90-8594-79ee4613f429-1fc18e56.html">Box - New users</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-new-users-5ff08015-2d1e-4c2b-862f-2759e6132d0e-618b766e.html">Box - New users</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-suspicious-or-sensitive-files-6b91dda7-d9c5-4197-9dea-0c41f7c55176-6026681b.html">Box - Suspicious or sensitive files</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-uploaded-data-volume-per-user-484f9c1c-a8d6-4a78-b526-d38958ade100-a4aab1ac.html">Box - Uploaded data volume per user</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-users-with-owner-permissions-09fee766-d5ba-4e8c-8e9e-363915aee1f4-c5ab842d.html">Box - Users with owner permissions</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks (1)</h3>
+<p><strong>In solution <a href="../solutions/box.html">Box</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-c7528016.html">Box</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Parsers Using This Table (1)</h2>
+<h3>Other Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/boxevents.html">BoxEvents</a></td>
+<td style="text-align: left;"><a href="../solutions/box.html">Box</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

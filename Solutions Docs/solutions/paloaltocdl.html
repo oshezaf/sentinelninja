@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PaloAltoCDL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>PaloAltoCDL</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/PaloAltoCDL/logo/Palo-alto-logo.png" alt="PaloAltoCDL Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2021-10-23</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAltoCDL">PaloAltoCDL</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pre-requisites</strong></td>
+<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.paloaltonetworks.com/cortex/cortex-data-lake">Palo Alto Networks CDL</a> solution provides the capability to ingest <a href="https://docs.paloaltonetworks.com/strata-logging-service/log-reference/log-forwarding-schema-overview">CDL logs</a> into Microsoft Sentinel.</p>
+<p>This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation.</p>
+<p><strong>NOTE:</strong> Microsoft recommends installation of CEF via AMA Connector. The existing connectors are about to be deprecated by <strong>Aug 31, 2024</strong>.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#pre-requisites">Pre-requisites</a></li>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Pre-requisites</h2>
+<p>This solution depends on <strong>1 other solution(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Data Connectors</h2>
+<p>This solution has <strong>2 discovered data connector(s)⚠️</strong> (not in Solution definition):</p>
+<ul>
+<li><a href="../connectors/paloaltocdl.html">[Deprecated] Palo Alto Networks Cortex Data Lake (CDL) via Legacy Agent</a> ⚠️</li>
+<li><a href="../connectors/paloaltocdlama.html">[Deprecated] Palo Alto Networks Cortex Data Lake (CDL) via AMA</a> ⚠️</li>
+</ul>
+<p>Connectors from dependency solutions:</p>
+<ul>
+<li><a href="../connectors/cef.html">Common Event Format (CEF)</a> <em>(dependency on <a href="common-event-format.html">Common Event Format</a>)</em></li>
+<li><a href="../connectors/cefama.html">Common Event Format (CEF) via AMA</a> <em>(dependency on <a href="common-event-format.html">Common Event Format</a>)</em></li>
+</ul>
+<p><em>⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.</em></p>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+<td><a href="../connectors/cef.html">Common Event Format (CEF)</a> (dependency), <a href="../connectors/cefama.html">Common Event Format (CEF) via AMA</a> (dependency), <a href="../connectors/paloaltocdlama.html">[Deprecated] Palo Alto Networks Cortex Data Lake (CDL) via AMA</a>, <a href="../connectors/paloaltocdl.html">[Deprecated] Palo Alto Networks Cortex Data Lake (CDL) via Legacy Agent</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>22 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/paloaltocdl-paloalto-dropping-or-denying-session-with-traffic-ba663b74-51f4-11ec-bf63-0242ac130002-787fad5d.html">PaloAlto - Dropping or denying session with traffic</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloaltocdl-paloalto-file-type-changed-9150ad68-51c8-11ec-bf63-0242ac130002-87204344.html">PaloAlto - File type changed</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloaltocdl-paloalto-forbidden-countries-9fcc7734-4d1b-11ec-81d3-0242ac130003-c36b5bad.html">PaloAlto - Forbidden countries</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloaltocdl-paloalto-inbound-connection-to-high-risk-ports-b2dd2dac-51c9-11ec-bf63-0242ac130002-b7141df6.html">PaloAlto - Inbound connection to high risk ports</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloaltocdl-paloalto-mac-address-conflict-976d2eee-51cb-11ec-bf63-0242ac130002-2f4d2b9d.html">PaloAlto - MAC address conflict</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloaltocdl-paloalto-possible-attack-without-response-b6d54840-51d3-11ec-bf63-0242ac130002-a8b30694.html">PaloAlto - Possible attack without response</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloaltocdl-paloalto-possible-flooding-feb185cc-51f4-11ec-bf63-0242ac130002-88d2e10c.html">PaloAlto - Possible flooding</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloaltocdl-paloalto-possible-port-scan-3575a9c0-51c9-11ec-bf63-0242ac130002-2090332d.html">PaloAlto - Possible port scan</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Reconnaissance</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloaltocdl-paloalto-put-and-post-method-request-in-high-risk-file-type-f12e9d10-51ca-11ec-bf63-0242ac130002-6fe08e13.html">PaloAlto - Put and post method request in high risk file type</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloaltocdl-paloalto-user-privileges-was-changed-38f9e010-51ca-11ec-bf63-0242ac130002-ec13ffe8.html">PaloAlto - User privileges was changed</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/paloaltocdl-paloalto-agent-versions-555bf415-e171-4ad2-920f-1a4a96a9644c-135ba2b4.html">PaloAlto - Agent versions</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloaltocdl-paloalto-critical-event-result-97760cb0-511e-11ec-bf63-0242ac130002-764139e8.html">PaloAlto - Critical event result</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloaltocdl-paloalto-destination-ports-by-ips-a8887944-4c72-11ec-81d3-0242ac130003-ef950548.html">PaloAlto - Destination ports by IPs</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloaltocdl-paloalto-file-permission-with-put-or-post-request-2af5e154-511f-11ec-bf63-0242ac130002-e4067896.html">PaloAlto - File permission with PUT or POST request</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloaltocdl-paloalto-incomplete-application-protocol-7cbd46ce-5121-11ec-bf63-0242ac130002-58301333.html">PaloAlto - Incomplete application protocol</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloaltocdl-paloalto-multiple-deny-result-by-user-04456860-5122-11ec-bf63-0242ac130002-a8059a9f.html">PaloAlto - Multiple Deny result by user</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloaltocdl-paloalto-outdated-config-vesions-6e4b6758-23a5-409b-a444-9bdef78e9dcc-e81f22ee.html">PaloAlto - Outdated config vesions</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloaltocdl-paloalto-rare-application-layer-protocols-0a18756a-5123-11ec-bf63-0242ac130002-c1608dc2.html">PaloAlto - Rare application layer protocols</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloaltocdl-paloalto-rare-files-observed-93ae5df2-4c74-11ec-81d3-0242ac130003-29632ba9.html">PaloAlto - Rare files observed</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloaltocdl-paloalto-rare-ports-by-user-ce9d58ce-51cd-11ec-bf63-0242ac130002-386d6508.html">PaloAlto - Rare ports by user</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/paloaltocdl-paloaltocdl-00280c2a.html">PaloAltoCDL</a></td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/paloaltocdlevent.html">PaloAltoCDLEvent</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.3</td>
+<td>12-11-2024</td>
+<td>Removed Deprecated <strong>Data Connector</strong></td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>12-07-2024</td>
+<td>Deprecated <strong>Data Connector</strong></td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>12-06-2024</td>
+<td>Optimized parser</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>25-09-2023</td>
+<td>Addition of new PaloAltoCDL AMA <strong>Data Connector</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

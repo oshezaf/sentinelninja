@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MuleSoft Cloudhub &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>MuleSoft Cloudhub</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>MuleSoft</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">MuleSoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/mulesoft.html">Mulesoft</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mulesoft/Data%20Connectors/MuleSoft_Cloudhub_API_FunctionApp.json">MuleSoft_Cloudhub_API_FunctionApp.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Azure Function code uses SharedKey/HTTP Data Collector API</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.mulesoft.com/platform/saas/cloudhub-ipaas-cloud-based-integration">MuleSoft Cloudhub</a> data connector provides the capability to retrieve logs from Cloudhub applications using the Cloudhub API and more events into Microsoft Sentinel through the REST API. The connector provides ability to get events which helps to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/mulesoft-cloudhub-cl.html"><code>MuleSoft_Cloudhub_CL</code></a> 🔶</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
+- <strong>REST API Credentials/permissions</strong>: <strong>MuleSoftEnvId</strong>, <strong>MuleSoftAppName</strong>, <strong>MuleSoftUsername</strong> and <strong>MuleSoftPassword</strong> are required for making API calls.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+<p><strong>NOTE:</strong> This connector uses Azure Functions to connect to the Azure Blob Storage API to pull logs into Microsoft Sentinel. This might result in additional costs for data ingestion and for storing data in Azure Blob Storage costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> and <a href="https://azure.microsoft.com/pricing/details/storage/blobs/">Azure Blob Storage pricing page</a> for details.</p>
+<p><strong>(Optional Step)</strong> Securely store workspace and API authorization key(s) or token(s) in Azure Key Vault. Azure Key Vault provides a secure mechanism to store and retrieve key values. <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Follow these instructions</a> to use Azure Key Vault with an Azure Function App.</p>
+<p><strong>NOTE:</strong> This data connector depends on a parser based on a Kusto Function to work as expected <a href="https://aka.ms/sentinel-MuleSoftCloudhub-parser"><strong>MuleSoftCloudhub</strong></a> which is deployed with the Microsoft Sentinel Solution.</p>
+</blockquote>
+<p><strong>Note: This data connector fetch only the logs of the CloudHub application using Platform API and not of CloudHub 2.0 application</strong></p>
+<p><strong>STEP 1 - Configuration steps for the MuleSoft Cloudhub API</strong></p>
+<p>Follow the instructions to obtain the credentials.</p>
+<ol>
+<li>Obtain the  <strong>MuleSoftEnvId</strong>, <strong>MuleSoftAppName</strong>, <strong>MuleSoftUsername</strong> and <strong>MuleSoftPassword</strong> using the <a href="https://help.mulesoft.com/s/article/How-to-get-Cloudhub-application-information-using-Anypoint-Platform-API">documentation</a>.</li>
+<li>Save credentials for using in the data connector.</li>
+</ol>
+<p><strong>STEP 2 - Choose ONE from the following two deployment options to deploy the connector and the associated Azure Function</strong></p>
+<blockquote>
+<p><strong>IMPORTANT:</strong> Before deploying the MuleSoft Cloudhub data connector, have the Workspace ID and Workspace Primary Key (can be copied from the following).
+- <strong>Workspace ID</strong>: <code>WorkspaceId</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
+- <strong>Primary Key</strong>: <code>PrimaryKey</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+<p><strong>Option 1 - Azure Resource Manager (ARM) Template</strong></p>
+<p>Use this method for automated deployment of the MuleSoft Cloudhub data connector using an ARM Tempate.</p>
+<ol>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below. </p>
+<p><a href="https://aka.ms/sentinel-MuleSoftCloudhubAPI-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. </p>
+<blockquote>
+<p><strong>NOTE:</strong> Within the same resource group, you can't mix Windows and Linux apps in the same region. Select existing resource group without Windows apps in it or create new resource group.
+3. Enter the <strong>MuleSoftEnvId</strong>, <strong>MuleSoftAppName</strong>, <strong>MuleSoftUsername</strong> and <strong>MuleSoftPassword</strong>  and deploy. 
+4. Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>. 
+5. Click <strong>Purchase</strong> to deploy.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Option 2 - Manual Deployment of Azure Functions</strong></p>
+<p>Use the following step-by-step instructions to deploy the MuleSoft Cloudhub data connector manually with Azure Functions (Deployment via Visual Studio Code).</p>
+<p><strong>1. Deploy a Function App</strong></p>
+<blockquote>
+<p><strong>NOTE:</strong> You will need to <a href="https://docs.microsoft.com/azure/azure-functions/functions-create-first-function-python#prerequisites">prepare VS code</a> for Azure function development.</p>
+</blockquote>
+<ol>
+<li>Download the <a href="https://aka.ms/sentinel-MuleSoftCloudhubAPI-functionapp">Azure Function App</a> file. Extract archive to your local development computer.</li>
+<li>Start VS Code. Choose File in the main menu and select Open Folder.</li>
+<li>Select the top level folder from extracted files.</li>
+<li>Choose the Azure icon in the Activity bar, then in the <strong>Azure: Functions</strong> area, choose the <strong>Deploy to function app</strong> button.
+If you aren't already signed in, choose the Azure icon in the Activity bar, then in the <strong>Azure: Functions</strong> area, choose <strong>Sign in to Azure</strong>
+If you're already signed in, go to the next step.</li>
+<li>
+<p>Provide the following information at the prompts:</p>
+<p>a. <strong>Select folder:</strong> Choose a folder from your workspace or browse to one that contains your function app.</p>
+<p>b. <strong>Select Subscription:</strong> Choose the subscription to use.</p>
+<p>c. Select <strong>Create new Function App in Azure</strong> (Don't choose the Advanced option)</p>
+<p>d. <strong>Enter a globally unique name for the function app:</strong> Type a name that is valid in a URL path. The name you type is validated to make sure that it's unique in Azure Functions. (e.g. MuleSoftXXXXX).</p>
+<p>e. <strong>Select a runtime:</strong> Choose Python 3.11.</p>
+<p>f. Select a location for new resources. For better performance and lower costs choose the same <a href="https://azure.microsoft.com/regions/">region</a> where Microsoft Sentinel is located.</p>
+</li>
+<li>
+<p>Deployment will begin. A notification is displayed after your function app is created and the deployment package is applied.</p>
+</li>
+<li>Go to Azure Portal for the Function App configuration.</li>
+</ol>
+<p><strong>2. Configure the Function App</strong></p>
+<ol>
+<li>In the Function App, select the Function App Name and select <strong>Configuration</strong>.</li>
+<li>In the <strong>Application settings</strong> tab, select ** New application setting**.</li>
+<li>Add each of the following application settings individually, with their respective string values (case-sensitive): 
+        MuleSoftEnvId
+        MuleSoftAppName
+        MuleSoftUsername
+        MuleSoftPassword
+        WorkspaceID
+        WorkspaceKey
+        logAnalyticsUri (optional)<blockquote>
+<ul>
+<li>Use logAnalyticsUri to override the log analytics API endpoint for dedicated cloud. For example, for public cloud, leave the value empty; for Azure GovUS cloud environment, specify the value in the following format: <code>https://&lt;CustomerId&gt;.ods.opinsights.azure.us</code>.</li>
+</ul>
+</blockquote>
+</li>
+<li>Once all application settings have been entered, click <strong>Save</strong>.</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

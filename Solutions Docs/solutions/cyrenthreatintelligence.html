@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CyrenThreatIntelligence &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>CyrenThreatIntelligence</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cyren_logo.svg" alt="CyrenThreatIntelligence Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Data443 Risk Mitigation, Inc.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://www.data443.com">https://www.data443.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Data443 Risk Mitigation, Inc. - support@data443.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2025-11-16</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyrenThreatIntelligence">CyrenThreatIntelligence</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://data443.com/cyren-threat-intelligence/">Cyren Threat Intelligence</a> solution provides the capability to ingest Cyren IP reputation and malware URL threat intelligence into Microsoft Sentinel using the Codeless Connector Framework (CCF). This solution deploys REST API poller connectors, a custom log table, data collection rules, analytics rules, and visualization workbook to help security teams detect and investigate network-based threats.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/cyrenthreatintel.html">Cyren Threat Intelligence</a> 🔶</li>
+</ul>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/cyren-indicators-cl.html"><code>Cyren_Indicators_CL</code></a> 🔶</td>
+<td><a href="../connectors/cyrenthreatintel.html">Cyren Threat Intelligence</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>4 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/cyrenthreatintelligence-cyren-feed-outage-detection-7f9a0d5c-3b4c-6d7e-1f2a-e3f4a5b6c7d8-a7fce6c8.html">Cyren Feed Outage Detection</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/cyren-indicators-cl.html"><code>Cyren_Indicators_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyrenthreatintelligence-cyren-high-risk-ip-indicators-5d7e8b3a-1f2c-4e5d-9a0b-c1d2e3f4a5b6-c726fd74.html">Cyren High-Risk IP Indicators</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">CommandAndControl, Impact</td>
+<td style="text-align: left;"><a href="../tables/cyren-indicators-cl.html"><code>Cyren_Indicators_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyrenthreatintelligence-cyren-high-risk-url-indicators-6e8f9c4b-2a3b-5c6d-0e1f-d2e3f4a5b6c7-78e6d5f5.html">Cyren High-Risk URL Indicators</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess, Execution</td>
+<td style="text-align: left;"><a href="../tables/cyren-indicators-cl.html"><code>Cyren_Indicators_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/cyrenthreatintelligence-cyrenthreatintelligencedashboard-f33799ef.html">CyrenThreatIntelligenceDashboard</a></td>
+<td style="text-align: left;"><a href="../tables/cyren-indicators-cl.html"><code>Cyren_Indicators_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyrenThreatIntelligence/README.md">CyrenThreatIntelligence/README.md</a></em></p>
+</blockquote>
+<h2>Overview</h2>
+<p>The <strong>Cyren Threat Intelligence</strong> solution provides real-time IP reputation and malware URL feeds to detect and block malicious infrastructure. This solution deploys CCF (Codeless Connector Framework) data connectors and visualization workbooks to help security teams identify and respond to network-based threats.</p>
+<h2>What's Included</h2>
+<h3>Data Connectors (2)</h3>
+<ul>
+<li><strong>Cyren IP Reputation</strong> - RestApiPoller connector for IP threat intelligence</li>
+<li><strong>Cyren Malware URLs</strong> - RestApiPoller connector for malicious URL intelligence</li>
+</ul>
+<h3>Workbooks (2)</h3>
+<ul>
+<li><strong>Cyren Threat Intelligence</strong> - Overview dashboard with key metrics</li>
+<li><strong>Cyren Threat Intelligence (Enhanced)</strong> - Advanced analytics and threat hunting views</li>
+</ul>
+<h3>Infrastructure</h3>
+<ul>
+<li>Data Collection Endpoint (DCE)</li>
+<li>Data Collection Rules (DCRs) for both feeds</li>
+<li>Custom Log Analytics table (<code>Cyren_Indicators_CL</code>)</li>
+<li>User-Assigned Managed Identity for secure authentication</li>
+<li>Optional Azure Key Vault integration for JWT token storage</li>
+</ul>
+<h2>Prerequisites</h2>
+<p>Before deploying this solution, ensure you have:</p>
+<ol>
+<li>
+<p><strong>Microsoft Sentinel Workspace</strong>
+   - Active Microsoft Sentinel workspace
+   - Contributor permissions on the workspace</p>
+</li>
+<li>
+<p><strong>Cyren API Credentials</strong>
+   - JWT Token for IP Reputation feed
+   - JWT Token for Malware URLs feed
+   - Obtain these from <a href="https://data443.com/cyren-threat-intelligence/">Cyren Portal</a></p>
+</li>
+<li>
+<p><strong>Azure Permissions</strong>
+   - Contributor role on the resource group
+   - Permission to create managed identities
+   - Permission to assign RBAC roles</p>
+</li>
+</ol>
+<h2>Deployment</h2>
+<h3>Option 1: Azure Portal (Recommended)</h3>
+<ol>
+<li>Navigate to <strong>Microsoft Sentinel</strong> → <strong>Content Hub</strong></li>
+<li>Search for <strong>"Cyren Threat Intelligence"</strong></li>
+<li>Click <strong>Install</strong></li>
+<li>
+<p>Follow the deployment wizard:
+   - <strong>Basics</strong>: Select subscription, resource group, and workspace
+   - <strong>Data Connectors</strong>: Enter your Cyren JWT tokens
+   - <strong>Security Options</strong>: (Optional) Enable Key Vault for secure token storage
+   - <strong>Workbooks</strong>: Choose which workbooks to deploy</p>
+</li>
+<li>
+<p>Click <strong>Review + Create</strong> → <strong>Create</strong></p>
+</li>
+</ol>
+<h3>Option 2: ARM Template Deployment</h3>
+<pre><code class="language-powershell"># Set your parameters
+$subscriptionId = &quot;your-subscription-id&quot;
+$resourceGroupName = &quot;your-resource-group&quot;
+$workspaceName = &quot;your-sentinel-workspace&quot;
+$cyrenIPJwtToken = &quot;your-ip-reputation-jwt-token&quot;
+$cyrenMalwareJwtToken = &quot;your-malware-urls-jwt-token&quot;
+
+# Deploy the solution
+az deployment group create \
+  --subscription $subscriptionId \
+  --resource-group $resourceGroupName \
+  --template-file mainTemplate.json \
+  --parameters workspace=$workspaceName \
+               cyrenIPJwtToken=$cyrenIPJwtToken \
+               cyrenMalwareJwtToken=$cyrenMalwareJwtToken \
+               deployConnectors=true \
+               deployWorkbooks=true
+</code></pre>
+<h3>Option 3: Automated PowerShell Script (DEPLOY-Cyren-CCF-Clean.ps1)</h3>
+<p><em>[Content truncated...]</em></p>
+<h2>Release Notes</h2>
+<p><strong>Version</strong> | <strong>Date Modified (DD-MM-YYYY)</strong>| <strong>ChangeHistory</strong>
+|------------|-------------------------------|-------------------------------------------------------------------------------------------|
+| 3.0.1      | 27-01-2026                    | Cost optimization: Changed from offset-based paging to time-based filtering (startTime/endTime) to prevent historical data re-ingestion. Updated queryWindowInMin to 120 minutes per MS reviewer recommendation. |
+| 3.0.0      | 16-11-2025                    | Initial Cyren Threat Intelligence CCF solution package, including all connector and ARM templates. |</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

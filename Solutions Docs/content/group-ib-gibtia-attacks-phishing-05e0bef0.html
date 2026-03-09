@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GIBTIAAttacksphishing &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>GIBTIA_Attacks_phishing</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>Author: Hesham Saad</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/group-ib.html">Group-IB</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Group-IB/Playbooks/azuredeploy-GIBTIA_Attacks_phishing.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>Not listed in Solution JSON:</strong> This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This content item queries data from the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/gibtiaattacksphishingkit-cl.html"><code>GIBTIAAttacksPhishingKit_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/gibtechtable-cl.html"><code>GIBTechTable_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Group-IB/Playbooks/readme.md">readme.md</a></em></p>
+</blockquote>
+<h1>Ingest Group-IB Threat Intelligence &amp; Attribution Feeds and Indicators Collections</h1>
+<p>Author: Hesham Saad</p>
+<p>Group-IB Azure Sentinel playbooks designed by Group-IB team and supported by Microsoft team to ingest Threat Intelligence &amp; Attribution feeds and indicators from multiple Group-IB data collections and writes them to Microsoft Security Graph API to be listed under Azure Sentinel ThreatIntelligenceIndicators table and custom log tables as well for adversaries, threat actors,...etc</p>
+<p>There are a number of pre-configuration steps required before deploying the playbooks.</p>
+<h2>Group-IB Sentinel Playbooks Collections Detailed Description</h2>
+<ol start="0">
+<li>"GIBIndicatorProcessor" Playbook<br>
+This playbook is used to send indicators to Microsoft Security Graph API from all other GIB playbooks.</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGroup-IB%2FPlaybooks%2Fazuredeploy-GIBIndicatorProcessor.json" target="_blank">
+<img src="https://aka.ms/deploytoazurebutton""/>
+</a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGroup-IB%2FPlaybooks%2Fazuredeploy-GIBIndicatorProcessor.json" target="_blank">
+<img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png"/>
+</a>  </p>
+<ol>
+<li>"GIBTIA_APT_Threats" Playbook<br>
+a. Collection: apt/threat<br>
+b. Has Indicators: Yes<br>
+c. Indicators Content: <br>
+GIB APT Threat Indicator(IPv4)<br>
+GIB APT Threat Indicator(domain)<br>
+GIB APT Threat Indicator(url)<br>
+GIB APT Threat Indicator(md5)<br>
+GIB APT Threat Indicator(sha256)<br>
+GIB APT Threat Indicator(sha1)<br>
+d. Description:<br>
+Group-IB continuously monitors activities undertaken by hacker groups, investigate, collect, and analyze information about all emerging and ongoing attacks. Based on this information, we provide IOC's related to APT Groups Attacks.</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGroup-IB%2FPlaybooks%2Fazuredeploy-GIBTIA_APT_Threats.json" target="_blank">
+<img src="https://aka.ms/deploytoazurebutton""/>
+</a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGroup-IB%2FPlaybooks%2Fazuredeploy-GIBTIA_APT_Threats.json" target="_blank">
+<img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png"/>
+</a>  </p>
+<ol start="2">
+<li>"GIBTIA_APT_ThreatActor" Playbook<br>
+a. Collection: apt/threat_actor<br>
+b. Has Indicators: No<br>
+c. Indicators Content: N/A<br>
+d. Description:<br>
+This collection contains APT groups’ info, with detailed descriptions.</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGroup-IB%2FPlaybooks%2Fazuredeploy-GIBTIA_APT_ThreatActor.json" target="_blank">
+<img src="https://aka.ms/deploytoazurebutton""/>
+</a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGroup-IB%2FPlaybooks%2Fazuredeploy-GIBTIA_APT_ThreatActor.json" target="_blank">
+<img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png"/>
+</a>    </p>
+<ol start="3">
+<li>"GIBTIA_Attacks_ddos" Playbook<br>
+a. Collection: attacks/ddos<br>
+b. Has Indicators: Yes<br>
+c. Indicators Content:<br>
+GIB DDoS Attack(IPv4)<br>
+d. Description:<br>
+The "DDoS attacks" collection contains a DDoS Attacks targets and C2 indicators.</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGroup-IB%2FPlaybooks%2Fazuredeploy-GIBTIA_Attacks_ddos.json" target="_blank">
+<img src="https://aka.ms/deploytoazurebutton""/>
+</a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGroup-IB%2FPlaybooks%2Fazuredeploy-GIBTIA_Attacks_ddos.json" target="_blank">
+<img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png"/>
+</a></p>
+<ol start="4">
+<li>"GIBTIA_Attacks_deface" Playbook<br>
+a. Collection: attacks/deface<br>
+b. Has Indicators: Yes<br>
+c. Indicators Content:<br>
+GIB Attack Deface(url)<br>
+d. Description:<br>
+The “Deface” collection contains information about online resources that have become subject to defacement attacks (the visual content of a website being substituted or modified).</li>
+</ol>
+<p><em>[Content truncated...]</em></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/group-ib.html">Back to Group-IB</a></p>
+</div>
+</body>
+</html>

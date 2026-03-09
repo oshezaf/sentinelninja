@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forescout &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Forescout</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>Forescout</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Forescout</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/forescout-legacy.html">Forescout (Legacy)</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/mma.html">MMA</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forescout%20%28Legacy%29/Data%20Connectors/Forescout_syslog.json">Forescout_syslog.json</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.forescout.com/">Forescout</a> data connector provides the capability to ingest <a href="https://docs.forescout.com/bundle/syslog-3-6-1-h/page/syslog-3-6-1-h.How-to-Work-with-the-Syslog-Plugin.html">Forescout events</a> into Microsoft Sentinel. Refer to <a href="https://docs.forescout.com/bundle/syslog-msg-3-6-tn/page/syslog-msg-3-6-tn.About-Syslog-Messages-in-Forescout.html">Forescout documentation</a> for more information.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions are required.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+<p><strong>NOTE:</strong> This data connector depends on a parser based on a Kusto Function to work as expected <a href="https://aka.ms/sentinel-forescout-parser"><strong>ForescoutEvent</strong></a> which is deployed with the Microsoft Sentinel Solution.</p>
+<p><strong>NOTE:</strong> This data connector has been developed using Forescout Syslog Plugin version: v3.6</p>
+</blockquote>
+<p><strong>1. Install and onboard the agent for Linux or Windows</strong></p>
+<p>Install the agent on the Server where the Forescout logs are forwarded.</p>
+<blockquote>
+<p>Logs from Forescout Server deployed on Linux or Windows servers are collected by <strong>Linux</strong> or <strong>Windows</strong> agents.
+<strong>Choose where to install the Linux agent:</strong></p>
+</blockquote>
+<p><strong>Install agent on Azure Linux Virtual Machine</strong></p>
+<p>Select the machine to install the agent on and then click <strong>Connect</strong>.
+  - <strong>Install agent on Linux Virtual Machine</strong></p>
+<p><strong>Install agent on a non-Azure Linux Machine</strong></p>
+<p>Download the agent on the relevant machine and follow the instructions.
+  - <strong>Install agent on Linux (Non-Azure)</strong></p>
+<p><strong>Choose where to install the Windows agent:</strong></p>
+<p><strong>Install agent on Azure Windows Virtual Machine</strong></p>
+<p>Select the machine to install the agent on and then click <strong>Connect</strong>.
+  - <strong>Install/configure: InstallAgentOnVirtualMachine</strong></p>
+<p><strong>Install agent on a non-Azure Windows Machine</strong></p>
+<p>Download the agent on the relevant machine and follow the instructions.
+  - <strong>Install/configure: InstallAgentOnNonAzure</strong></p>
+<p><strong>2. Configure the logs to be collected</strong></p>
+<p>Configure the facilities you want to collect and their severities.
+ 1. Under workspace advanced settings <strong>Configuration</strong>, select <strong>Data</strong> and then <strong>Syslog</strong>.
+ 2. Select <strong>Apply below configuration to my machines</strong> and select the facilities and severities.
+ 3.  Click <strong>Save</strong>.
+- <strong>Open Syslog settings</strong></p>
+<p><strong>3. Configure Forescout event forwarding</strong></p>
+<p>Follow the configuration steps below to get Forescout logs into Microsoft Sentinel.
+1. <a href="https://docs.forescout.com/bundle/syslog-3-6-1-h/page/syslog-3-6-1-h.Select-an-Appliance-to-Configure.html">Select an Appliance to Configure.</a>
+2. <a href="https://docs.forescout.com/bundle/syslog-3-6-1-h/page/syslog-3-6-1-h.Send-Events-To-Tab.html#pID0E0CE0HA">Follow these instructions</a> to forward alerts from the Forescout platform to a syslog server.
+3. <a href="https://docs.forescout.com/bundle/syslog-3-6-1-h/page/syslog-3-6-1-h.Syslog-Triggers.html">Configure</a> the settings in the Syslog Triggers tab.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

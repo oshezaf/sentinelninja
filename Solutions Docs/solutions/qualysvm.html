@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QualysVM &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>QualysVM</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/qualys_logo.svg" alt="QualysVM Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.7</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2020-12-14</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2025-11-18</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM">QualysVM</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.qualys.com/apps/vulnerability-management-detection-response/">Qualys Vulnerability Management</a> solution for Microsoft Sentinel enables you to ingest host vulnerability detection data into Microsoft Sentinel.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong> </p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>• <a href="https://aka.ms/Sentinel-CCP_Platform">Microsoft Sentinel Codeless Connector Framework</a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong> (plus 1 discovered⚠️):</p>
+<ul>
+<li><a href="../connectors/qualysvmlogsccpdefinition.html">Qualys Vulnerability Management (via Codeless Connector Framework)</a></li>
+<li><a href="../connectors/qualysvulnerabilitymanagement.html">[DEPRECATED] Qualys Vulnerability Management</a> ⚠️ 🔶</li>
+</ul>
+<p><em>⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.</em></p>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>3 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/qualyshostdetectionv2-cl.html"><code>QualysHostDetectionV2_CL</code></a> 🔶</td>
+<td><a href="../connectors/qualysvulnerabilitymanagement.html">[DEPRECATED] Qualys Vulnerability Management</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/qualyshostdetectionv3-cl.html"><code>QualysHostDetectionV3_CL</code></a></td>
+<td><a href="../connectors/qualysvmlogsccpdefinition.html">Qualys Vulnerability Management (via Codeless Connector Framework)</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/qualyshostdetection-cl.html"><code>QualysHostDetection_CL</code></a> 🔶</td>
+<td><a href="../connectors/qualysvulnerabilitymanagement.html">[DEPRECATED] Qualys Vulnerability Management</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>8 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/qualysvm-high-number-of-urgent-vulnerabilities-detected-3edb7215-250b-40c0-8b46-79093949242d-7adbb1bc.html">High Number of Urgent Vulnerabilities Detected</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/qualyshostdetectionv2-cl.html"><code>QualysHostDetectionV2_CL</code></a><br><a href="../tables/qualyshostdetectionv3-cl.html"><code>QualysHostDetectionV3_CL</code></a><br><a href="../tables/qualyshostdetection-cl.html"><code>QualysHostDetection_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/qualysvm-new-high-severity-vulnerability-detected-across-multiple-hosts-6116dc19-475a-4148-84b2-efe89c073e27-fbfde951.html">New High Severity Vulnerability Detected Across Multiple Hosts</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/qualyshostdetectionv2-cl.html"><code>QualysHostDetectionV2_CL</code></a><br><a href="../tables/qualyshostdetectionv3-cl.html"><code>QualysHostDetectionV3_CL</code></a><br><a href="../tables/qualyshostdetection-cl.html"><code>QualysHostDetection_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/qualysvm-qualysvmv2-0981091b.html">QualysVMv2</a></td>
+<td style="text-align: left;"><a href="../tables/qualyshostdetectionv2-cl.html"><code>QualysHostDetectionV2_CL</code></a><br><a href="../tables/qualyshostdetectionv3-cl.html"><code>QualysHostDetectionV3_CL</code></a><br><a href="../tables/qualyshostdetection-cl.html"><code>QualysHostDetection_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/qualysvm-qualysvm-getassetdetails-0f1ab8e4.html">QualysVM-GetAssetDetails</a></td>
+<td style="text-align: left;">When a new sentinel incident is created, this playbook gets triggered and performs the following act...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/qualysvm-qualysvm-getassets-bycveid-c760c473.html">QualysVM-GetAssets-ByCVEID</a></td>
+<td style="text-align: left;">When a new sentinel incident is created, this playbook gets triggered and performs the following act...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/qualysvm-qualysvm-getassets-byopenport-f3f9bb94.html">QualysVM-GetAssets-ByOpenPort</a></td>
+<td style="text-align: left;">When a new sentinel incident is created, this playbook gets triggered and performs the following act...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/qualysvm-qualysvm-launchvmscan-generatereport-a0439575.html">QualysVM-LaunchVMScan-GenerateReport</a></td>
+<td style="text-align: left;">When a new sentinel incident is created, this playbook gets triggered and performs the following act...</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/qualyshostdetection.html">QualysHostDetection</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/qualyshostdetectionv2-cl.html"><code>QualysHostDetectionV2_CL</code></a> <em>(read)</em><br><a href="../tables/qualyshostdetectionv3-cl.html"><code>QualysHostDetectionV3_CL</code></a> <em>(read)</em><br><a href="../tables/qualyshostdetection-cl.html"><code>QualysHostDetection_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.7</td>
+<td>18-11-2025</td>
+<td>Adding adjustable API partition limit &amp; rate limit protection.</td>
+</tr>
+<tr>
+<td>3.0.6</td>
+<td>18-09-2025</td>
+<td>Updated Analytic rules, Parsers, and Workbooks in Sentinel solution content for <strong>CCF connector</strong> compatibility.</td>
+</tr>
+<tr>
+<td>3.0.5</td>
+<td>29-07-2025</td>
+<td>Removed Deprecated <strong>Data Connector</strong>.</td>
+</tr>
+<tr>
+<td>3.0.4</td>
+<td>30-06-2025</td>
+<td>QualysVM <strong>CCF Data Connector</strong> moving to GA</td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>27-05-2025</td>
+<td>New <strong>CCP Connector</strong> added to the Solution.</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>08-04-2025</td>
+<td>Add HostTags to <strong>Data Connector</strong> and <strong>Parsers</strong>.</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>07-01-2025</td>
+<td>Removed Custom Entity mappings from <strong>Analytic Rule</strong>.</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>16-04-2024</td>
+<td>Added Deploy to Azure Goverment button for Government portal in <strong>Dataconnector</strong>.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

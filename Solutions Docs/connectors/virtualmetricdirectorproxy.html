@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VirtualMetric Director Proxy &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>VirtualMetric Director Proxy</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/VirtualMetric.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>VirtualMetricDirectorProxy</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">VirtualMetric</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VirtualMetric%20DataStream/Data%20Connectors/VirtualMetric-DirectorProxy/Template_DirectorProxy.json">Template_DirectorProxy.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Connector definition requires workspace key (SharedKey pattern)</em></td>
+</tr>
+</tbody>
+</table>
+<p>VirtualMetric Director Proxy deploys an Azure Function App to securely bridge VirtualMetric DataStream with Azure services including Microsoft Sentinel, Azure Data Explorer, and Azure Storage.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Azure Function App</strong>: An Azure Function App must be deployed to host the Director Proxy. Requires read, write, and delete permissions on Microsoft.Web/sites resources within your resource group to create and manage the Function App.
+- <strong>VirtualMetric DataStream Configuration</strong>: You need VirtualMetric DataStream configured with authentication credentials to connect to the Director Proxy. The Director Proxy acts as a secure bridge between VirtualMetric DataStream and Azure services.
+- <strong>Target Azure Services</strong>: Configure your target Azure services such as Microsoft Sentinel Data Collection Endpoints, Azure Data Explorer clusters, or Azure Storage accounts where the Director Proxy will forward data.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Deploy VirtualMetric Director Proxy</strong></p>
+<p>Deploy the Azure Function App that serves as a secure proxy between VirtualMetric DataStream and Microsoft Sentinel.
+<strong>Prerequisites and Deployment Order</strong></p>
+<p><strong>Recommended Deployment Order:</strong></p>
+<p>For optimal configuration, consider deploying the target connectors first:</p>
+<ol>
+<li>
+<p><strong>Deploy Microsoft Sentinel Connector</strong>: Deploy the VirtualMetric DataStream for Microsoft Sentinel connector first to create the required Data Collection Endpoints and Rules.</p>
+</li>
+<li>
+<p><strong>Deploy Microsoft Sentinel data lake Connector</strong> (optional): If using Microsoft Sentinel data lake tables, deploy the VirtualMetric DataStream for Microsoft Sentinel data lake connector.</p>
+</li>
+<li>
+<p><strong>Deploy Director Proxy</strong> (this step): The Director Proxy can then be configured with your Microsoft Sentinel targets.</p>
+</li>
+</ol>
+<p><strong>Note:</strong> This order is recommended but not required. You can deploy the Director Proxy independently and configure it with your targets later.</p>
+<p><strong>Deploy Azure Function App</strong></p>
+<p>Deploy the VirtualMetric Director Proxy Azure Function App using the Deploy to Azure button.</p>
+<ol>
+<li>
+<p><strong>Deploy to Azure</strong>:
+   - Click the Deploy to Azure button below to deploy the Function App:
+   - <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FVirtualMetric%2520DataStream%2FData%2520Connectors%2FVirtualMetric-DirectorProxy%2FDeployToAzure.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
+</li>
+<li>
+<p><strong>Configure Deployment Parameters</strong>:
+   - <strong>Subscription</strong>: Select your Azure subscription
+   - <strong>Resource Group</strong>: Choose the same resource group as your Microsoft Sentinel workspace or create a new one
+   - <strong>Region</strong>: Select the Azure region (should match your Microsoft Sentinel workspace region)
+   - <strong>Function App Name</strong>: Provide a unique name for the Function App (e.g., "vmetric-director-proxy")</p>
+</li>
+<li>
+<p><strong>Complete Deployment</strong>:
+   - Click <strong>Review + create</strong> to validate the parameters
+   - Click <strong>Create</strong> to deploy the Function App
+   - Wait for deployment to complete (typically 3-5 minutes)
+   - Note the Function App URL: <code>https://&lt;function-app-name&gt;.azurewebsites.net</code></p>
+</li>
+</ol>
+<p><strong>Configure Function App Permissions</strong></p>
+<p>Assign the necessary permissions to the Function App's managed identity to access Microsoft Sentinel resources.</p>
+<ol>
+<li>
+<p><strong>Enable System-Assigned Managed Identity</strong>:
+   - Navigate to your deployed Function App in Azure Portal
+   - Go to <strong>Identity</strong> under Settings
+   - Toggle <strong>Status</strong> to <strong>On</strong> for System assigned identity
+   - Click <strong>Save</strong> and confirm</p>
+</li>
+<li>
+<p><strong>Navigate to Resource Group</strong>:
+   - Go to the resource group containing your Microsoft Sentinel workspace and Data Collection Endpoints</p>
+</li>
+<li>
+<p><strong>Assign Required Roles</strong>:
+   - Open <strong>Access control (IAM)</strong>
+   - Click <strong>+ Add</strong> &gt; <strong>Add role assignment</strong>
+   - Assign the following roles to the Function App's system-assigned managed identity:</p>
+<ul>
+<li><strong>Monitoring Metrics Publisher</strong>: For sending data to Data Collection Endpoints</li>
+<li><strong>Monitoring Reader</strong>: For reading Data Collection Rules configuration</li>
+</ul>
+</li>
+<li>
+<p><strong>Select the Function App Identity</strong>:
+   - In <strong>Members</strong> tab, select <strong>Managed identity</strong>
+   - Choose <strong>Function App</strong> and select your deployed Director Proxy Function App
+   - Complete the role assignment</p>
+</li>
+<li>
+<p><strong>Get Function App Access Token</strong> (Optional for Function Key authentication):
+   - Navigate to your Function App
+   - Go to <strong>App keys</strong> under Functions
+   - Copy the default host key or create a new function key for authentication</p>
+</li>
+</ol>
+<p><strong>Configure VirtualMetric DataStream Integration</strong></p>
+<p>Set up VirtualMetric DataStream to send security telemetry to Microsoft Sentinel through the Director Proxy.</p>
+<ol>
+<li>
+<p><strong>Access VirtualMetric DataStream Configuration</strong>:
+   - Log into your <strong>VirtualMetric DataStream</strong> management console
+   - Navigate to <strong>Targets</strong> section
+   - Click <strong>Microsoft Sentinel Targets</strong>
+   - Click <strong>Add new target</strong> or edit an existing Microsoft Sentinel target</p>
+</li>
+<li>
+<p><strong>Configure General Settings</strong>:
+   - <strong>Name</strong>: Enter a name for your target (e.g., "sentinel-with-proxy")
+   - <strong>Description</strong>: Optionally provide a description for the target configuration</p>
+</li>
+<li>
+<p><strong>Configure Azure Authentication</strong>:</p>
+</li>
+</ol>
+<p><strong>For Service Principal Authentication:</strong>
+   - <strong>Managed Identity for Azure</strong>: Keep <strong>Disabled</strong>
+   - <strong>Tenant ID</strong>: Enter your Azure Active Directory tenant ID
+   - <strong>Client ID</strong>: Enter your service principal application ID
+   - <strong>Client Secret</strong>: Enter your service principal client secret</p>
+<p><strong>For Azure Managed Identity:</strong>
+   - <strong>Managed Identity for Azure</strong>: Set to <strong>Enabled</strong></p>
+<ol start="4">
+<li>
+<p><strong>Configure Director Proxy</strong> (in Azure Properties tab):
+   - <strong>Endpoint Address</strong>: Enter the Function App URL from Step 2 (format: <code>https://&lt;function-app-name&gt;.azurewebsites.net</code>)
+   - <strong>Access Token</strong>: Enter the Function App host key from Step 3 (optional if using Managed Identity)</p>
+</li>
+<li>
+<p><strong>Configure Stream Properties</strong>:
+   - <strong>Endpoint</strong>: Enter the DCE Logs Ingestion URI (format: <code>https://&lt;dce-name&gt;.&lt;region&gt;.ingest.monitor.azure.com</code>)
+   - <strong>Streams</strong>: Select <strong>Auto</strong> for automatic stream detection, or configure specific streams if needed</p>
+</li>
+<li>
+<p><strong>Verify Data Ingestion in Microsoft Sentinel</strong>:
+   - Return to your <strong>Log Analytics Workspace</strong>
+   - Run sample queries to confirm data is being received:
+     <code>kql
+     CommonSecurityLog
+     | where TimeGenerated &gt; ago(1h)
+     | take 10</code>
+   - Check the <strong>Microsoft Sentinel Overview</strong> dashboard for new data sources and event counts</p>
+</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>&lt;img src=&quot;../images/asim-badge.png&quot; alt=&quot;ASIM&quot; height=&quot;32&quot;&gt; AzureSecurityBenchmark &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1><img src="../images/asim-badge.png" alt="ASIM" height="32"> AzureSecurityBenchmark</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Workbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AzureSecurityBenchmark/Workbooks/AzureSecurityBenchmark.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used</h2>
+<p>This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:</p>
+<ul>
+<li><a href="../asim/imnetworksession.html"><code>_Im_NetworkSession</code></a></li>
+</ul>
+<h2>Tables Used</h2>
+<p>This content item queries data from the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/aadmanagedidentitysigninlogs.html"><code>AADManagedIdentitySignInLogs</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/aadnoninteractiveusersigninlogs.html"><code>AADNonInteractiveUserSignInLogs</code></a></td>
+<td style="text-align: left;"><code>OperationName in "Add member to role,Add user,AzureFirewallIDSLog,NetworkSecurityGroupEvents,Reset user password,Update user"</code><br><code>OperationName contains "PIM"</code><br><code>OperationName contains "create"</code><br><code>OperationName contains "delete"</code><br><code>OperationName contains "lockbox"</code><br><code>OperationName contains "remove"</code><br><code>OperationName contains "update"</code></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/aadserviceprincipalsigninlogs.html"><code>AADServicePrincipalSignInLogs</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/aaduserriskevents.html"><code>AADUserRiskEvents</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/azuredevopsauditing.html"><code>AzureDevOpsAuditing</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a> 🔶</td>
+<td style="text-align: left;"><code>Category in "All,AzureFirewallNetworkRule,NetworkSecurityGroupRuleCounter"</code><br><code>ResourceProvider == "MICROSOFT.KEYVAULT"</code><br><code>ResourceType == "AZUREFIREWALLS"</code></td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/event.html"><code>Event</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/githubauditlogpolling-cl.html"><code>GitHubAuditLogPolling_CL</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/informationprotectionlogs-cl.html"><code>InformationProtectionLogs_CL</code></a> 🔶</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/protectionstatus.html"><code>ProtectionStatus</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/securitybaseline.html"><code>SecurityBaseline</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+<td style="text-align: left;"><code>EventID in "2889,3000,4624,4768,4769,4776"</code></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/securitynestedrecommendation.html"><code>SecurityNestedRecommendation</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/securityregulatorycompliance.html"><code>SecurityRegulatoryCompliance</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="workbooks.html">Back to Workbooks</a> · <a href="../solutions/azuresecuritybenchmark.html">Back to AzureSecurityBenchmark</a></p>
+</div>
+</body>
+</html>

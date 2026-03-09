@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Send basic email &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Send basic email</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>This playbook will be sending email with basic incidents details (Incident title, severity, tactics, link,…) when incident is created in Microsoft Sentinel.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/sentinelsoaressentials.html">SentinelSOARessentials</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-basic-email/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-basic-email/readme.md">Send-basic-email/readme.md</a></em></p>
+</blockquote>
+<h1>Send-basic-email</h1>
+<p>author: Benjamin Kovacevic</p>
+<h2>Summary</h2>
+<p>This playbook sends an email with basic incident details (such as incident title, severity, tactics, and a direct link) when an incident is created in Microsoft Sentinel.</p>
+<h2>Prerequisites</h2>
+<ul>
+<li>A Microsoft 365 account to send email notifications (the user account will be used in the O365 connector for sending emails).</li>
+</ul>
+<h2>Deployment instructions</h2>
+<ol>
+<li>To deploy the playbook, click the Deploy to Azure button below. This will launch the ARM Template deployment wizard.</li>
+<li>Fill in the required parameters:<ul>
+<li>Playbook Name</li>
+<li>M365 Email Address</li>
+</ul>
+</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FSend-basic-email%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FSend-basic-email%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a>
+<br><br></p>
+<h2>Post-deployment Instructions</h2>
+<h3>a. Authorize connections</h3>
+<p>Once deployment is complete, authorize each connection.</p>
+<ol>
+<li>Open the Logic App in the Azure portal.</li>
+<li>Click O365 connector resource </li>
+<li>Click edit API connection</li>
+<li>Click Authorize</li>
+<li>Sign in</li>
+<li>Click Save</li>
+<li>Repeat steps for other connections</li>
+</ol>
+<blockquote>
+<p>Note: The email will be sent from the user who creates the connection.</p>
+</blockquote>
+<h3>b. Attach the playbook</h3>
+<ol>
+<li>In Microsoft Sentinel, configure an automation rule to trigger this playbook when an incident is created.
+   - <a href="https://docs.microsoft.com/azure/sentinel/automate-incident-handling-with-automation-rules#creating-and-managing-automation-rules">Learn more about automation rules</a></li>
+<li>Enable the playbook if it is disabled by default before assigning it to the automation rule.</li>
+</ol>
+<h2>Screenshots</h2>
+<p><strong>Playbook</strong><br>
+<img alt="Playbook" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-basic-email/images/LightPlaybook_Send-basic-email.png" />
+<img alt="Playbook" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-basic-email/images/DarkPlaybook_Send-basic-email.png" /></p>
+<p><strong>Email</strong><br>
+<img alt="Email" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-basic-email/images/LightEmail_Send-basic-email.png" />
+<img alt="Email" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-basic-email/images/DarkEmail_Send-basic-email.png" /></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/sentinelsoaressentials.html">Back to SentinelSOARessentials</a></p>
+</div>
+</body>
+</html>

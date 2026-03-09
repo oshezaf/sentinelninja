@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ImpervaCloudWAF &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>ImpervaCloudWAF</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Imperva_DarkGrey_final_75x75.svg" alt="ImpervaCloudWAF Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">2.0.2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2021-09-28</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ImpervaCloudWAF">ImpervaCloudWAF</a></td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://www.imperva.com/resources/resource-library/datasheets/imperva-cloud-waf/">Imperva Cloud WAF</a> offers the industry's leading web application security firewall, providing enterprise-class protection against the most sophisticated security threats. As a cloud-based WAF, it ensures that your website is always protected against any type of application layer hacking attempt. Imperva Cloud WAF is a key component of Imperva's market-leading, full stack application security solution which brings defence-in-depth to a new level.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>a. <a href="https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api">Azure Monitor HTTP Data Collector API</a></p>
+<p>b. <a href="https://azure.microsoft.com/services/functions/#overview">Azure Functions</a></p>
+<p>c. <a href="https://learn.microsoft.com/en-us/azure/sentinel/create-codeless-connector">Codeless Connector Framework (CCF)</a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/impervacloudwaflogsccfdefinition.html">Imperva Cloud WAF</a> 🔶</li>
+<li><a href="../connectors/impervawafcloudapi.html">Imperva Cloud WAF</a> 🔶</li>
+</ul>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>3 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/impervawafcloud.html"><code>ImpervaWAFCloud</code></a></td>
+<td>-</td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/impervawafcloudv2-cl.html"><code>ImpervaWAFCloudV2_CL</code></a> 🔶</td>
+<td><a href="../connectors/impervacloudwaflogsccfdefinition.html">Imperva Cloud WAF</a>, <a href="../connectors/impervawafcloudapi.html">Imperva Cloud WAF</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/impervawafcloud-cl.html"><code>ImpervaWAFCloud_CL</code></a> 🔶</td>
+<td><a href="../connectors/impervawafcloudapi.html">Imperva Cloud WAF</a></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>22 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/impervacloudwaf-imperva-abnormal-protocol-usage-363307f6-09ba-4926-ad52-03aadfd24b5e-608dd6d1.html">Imperva - Abnormal protocol usage</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/impervawafcloud.html"><code>ImpervaWAFCloud</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/impervacloudwaf-imperva-critical-severity-event-not-blocked-4d365217-f96a-437c-9c57-53594fa261c3-92c36a8a.html">Imperva - Critical severity event not blocked</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/impervawafcloud.html"><code>ImpervaWAFCloud</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/impervacloudwaf-imperva-forbidden-http-request-method-in-request-7ebc9e24-319c-4786-9151-c898240463bc-263ced93.html">Imperva - Forbidden HTTP request method in request</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/impervawafcloud.html"><code>ImpervaWAFCloud</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/impervacloudwaf-imperva-malicious-client-2ff35ed4-b26a-4cad-93a6-f67adb00e919-fbe5c7e5.html">Imperva - Malicious Client</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/impervawafcloud.html"><code>ImpervaWAFCloud</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/impervacloudwaf-imperva-malicious-user-agent-905794a9-bc46-42b9-974d-5a2dd58110c5-227b4f7f.html">Imperva - Malicious user agent</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/impervawafcloud.html"><code>ImpervaWAFCloud</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/impervacloudwaf-imperva-multiple-user-agents-from-same-source-4e8032eb-f04d-4a30-85d3-b74bf2c8f204-1941af4e.html">Imperva - Multiple user agents from same source</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/impervawafcloud.html"><code>ImpervaWAFCloud</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/impervacloudwaf-imperva-possible-command-injection-6214f187-5840-4cf7-a174-0cf9a72bfd29-6559c17f.html">Imperva - Possible command injection</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/impervawafcloud.html"><code>ImpervaWAFCloud</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/impervacloudwaf-imperva-request-from-unexpected-ip-address-to-admin-panel-427c025d-c068-4844-8205-66879e89bcfa-660e22b0.html">Imperva - Request from unexpected IP address to admin panel</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/impervawafcloud.html"><code>ImpervaWAFCloud</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/impervacloudwaf-imperva-request-from-unexpected-countries-58300723-22e0-4096-b33a-aa9b992c3564-5720b4f7.html">Imperva - Request from unexpected countries</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/impervawafcloud.html"><code>ImpervaWAFCloud</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/impervacloudwaf-imperva-request-to-unexpected-destination-port-0ba78922-033c-468c-82de-2974d7b1797d-c749ee63.html">Imperva - Request to unexpected destination port</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/impervawafcloud.html"><code>ImpervaWAFCloud</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/impervacloudwaf-imperva-applications-with-insecure-web-protocol-version-4cf72a93-537a-4c1f-83a3-0a5b743fe93e-fe436403.html">Imperva - Applications with insecure web protocol version</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/impervawafcloud.html"><code>ImpervaWAFCloud</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/impervacloudwaf-imperva-non-http-https-applications-1f99e54f-0e75-474e-8232-90963207f02b-66fb02b4.html">Imperva - Non HTTP/HTTPs applications</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/impervawafcloud.html"><code>ImpervaWAFCloud</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/impervacloudwaf-imperva-rare-applications-426a8b59-41ad-4022-bb01-cf914fd5687a-809a8cc4.html">Imperva - Rare applications</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/impervawafcloud.html"><code>ImpervaWAFCloud</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/impervacloudwaf-imperva-rare-client-applications-4a8a88af-4f40-40bd-aca8-e016dd6960de-7c21c8ad.html">Imperva - Rare client applications</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/impervawafcloud.html"><code>ImpervaWAFCloud</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/impervacloudwaf-imperva-rare-destination-ports-e68c3b84-7895-41d5-a9af-4ef776e82408-86772308.html">Imperva - Rare destination ports</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/impervawafcloud.html"><code>ImpervaWAFCloud</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/impervacloudwaf-imperva-top-applications-with-error-requests-934f19a5-f4bc-47eb-a213-db918b097434-9172946a.html">Imperva - Top applications with error requests</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/impervawafcloud.html"><code>ImpervaWAFCloud</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/impervacloudwaf-imperva-top-destinations-with-blocked-requests-e360c980-b515-4c27-921c-19d411bd059d-8a8f6785.html">Imperva - Top destinations with blocked requests</a></td>
+<td style="text-align: left;">InitialAccess, Impact</td>
+<td style="text-align: left;"><a href="../tables/impervawafcloud.html"><code>ImpervaWAFCloud</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/impervacloudwaf-imperva-top-sources-with-blocked-requests-ec5b9eb6-f43a-40fc-ae65-2af9ae1e77ae-b6c19538.html">Imperva - Top sources with blocked requests</a></td>
+<td style="text-align: left;">InitialAccess, Impact</td>
+<td style="text-align: left;"><a href="../tables/impervawafcloud.html"><code>ImpervaWAFCloud</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/impervacloudwaf-imperva-top-sources-with-error-requests-c359e40f-3a56-4e75-8dbb-41e5057bba64-ca203e65.html">Imperva - Top sources with error requests</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/impervawafcloud.html"><code>ImpervaWAFCloud</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/impervacloudwaf-imperva-request-from-known-bots-4cb3088c-445a-4a99-a90f-d583fe253a7d-2db1a351.html">Imperva - request from known bots</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/impervawafcloud.html"><code>ImpervaWAFCloud</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/impervacloudwaf-imperva-waf-cloud-overview-84f383d0.html">Imperva WAF Cloud Overview</a></td>
+<td style="text-align: left;"><a href="../tables/impervawafcloud.html"><code>ImpervaWAFCloud</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/impervawafcloud.html">ImpervaWAFCloud</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/impervawafcloudv2-cl.html"><code>ImpervaWAFCloudV2_CL</code></a> <em>(read)</em><br><a href="../tables/impervawafcloud-cl.html"><code>ImpervaWAFCloud_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.2</td>
+<td>06-06-2025</td>
+<td>Migrated the <strong>Function app</strong> connector to <strong>CCF</strong> Data connector and updated <strong>Parser</strong></td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>07-11-2024</td>
+<td>Added existing **<em>Parser</em> into the solution</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>22-08-2024</td>
+<td>Updated the python runtime version to <strong>3.11</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

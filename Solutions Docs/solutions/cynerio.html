@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cynerio &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Cynerio</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cynerio.svg" alt="Cynerio Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Cynerio</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://cynerio.com">https://cynerio.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">micha@cynerio.co</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2023-03-29</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2023-03-29</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cynerio">Cynerio</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.cynerio.com/">Cynerio</a> solution for Microsoft Sentinel enables you to ingest Cynerio Security Events to the Microsoft Sentinel platform, providing more insight into your organization network security posture and improving your security operation capabilities.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/cyneriosecurityevents.html">Cynerio Security Events</a> 🔶</li>
+</ul>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/cynerioevent-cl.html"><code>CynerioEvent_CL</code></a> 🔶</td>
+<td><a href="../connectors/cyneriosecurityevents.html">Cynerio Security Events</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>8 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/cynerio-cynerio-exploitation-attempt-of-iot-device-3d853a88-92d2-4aec-a680-2bf7bb560c56-11f45b91.html">Cynerio - Exploitation Attempt of IoT device</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/cynerioevent-cl.html"><code>CynerioEvent_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cynerio-cynerio-iot-default-password-84e0ea1f-766d-4775-836a-c0c9cca05085-7306adc3.html">Cynerio - IoT - Default password</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/cynerioevent-cl.html"><code>CynerioEvent_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cynerio-cynerio-iot-weak-password-65db1346-6435-4079-bbf4-9a7113c98054-794fe555.html">Cynerio - IoT - Weak password</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/cynerioevent-cl.html"><code>CynerioEvent_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cynerio-cynerio-medical-device-scanning-211e9f49-3fca-4598-bc6e-e2c28d86e72c-4c168116.html">Cynerio - Medical device scanning</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/cynerioevent-cl.html"><code>CynerioEvent_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cynerio-cynerio-suspicious-connection-to-external-address-c0756978-baa6-4239-9174-bac1b1ca1a6a-31976555.html">Cynerio - Suspicious Connection to External Address</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/cynerioevent-cl.html"><code>CynerioEvent_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/cynerio-cyneriooverviewworkbook-b4cbafeb.html">CynerioOverviewWorkbook</a></td>
+<td style="text-align: left;"><a href="../tables/cynerioevent-cl.html"><code>CynerioEvent_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cynerioevent-authentication.html">CynerioEvent_Authentication</a> ⚠️</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cynerioevent-cl.html"><code>CynerioEvent_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cynerioevent-networksession.html">CynerioEvent_NetworkSession</a> ⚠️</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cynerioevent-cl.html"><code>CynerioEvent_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.</p>
+</blockquote>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.0</td>
+<td>11-07-2023</td>
+<td>New analytic rules and workbook</td>
+</tr>
+<tr>
+<td>2.0.0</td>
+<td>29-03-2023</td>
+<td>Initial Solution Release</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

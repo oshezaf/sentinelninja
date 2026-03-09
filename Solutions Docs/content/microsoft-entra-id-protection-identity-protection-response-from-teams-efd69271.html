@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Identity Protection response from Teams &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Identity Protection response from Teams</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>Run this playbook on incidents which contains suspicious Microsoft Entra ID identities. For each account, this playbook posts an adaptive card in the SOC Microsoft Teams channel, including the potential risky user information given by Microsoft Entra ID Identity Protection. The card offers to confirm the user as compromised or dismiss the compromised user in Microsoft Entra ID Protection. It also allows to configure the Microsoft Sentinel incident. A summary comment will be posted to document th</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/microsoft-entra-id-protection.html">Microsoft Entra ID Protection</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID%20Protection/Playbooks/IdentityProtection-TeamsBotResponse/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID%20Protection/Playbooks/IdentityProtection-TeamsBotResponse/readme.md">IdentityProtection-TeamsBotResponse/readme.md</a></em></p>
+</blockquote>
+<h1>Identity Protection - Response from Teams</h1>
+<h4>Author</h4>
+<p>Lior Tamir, Rahul Kumar</p>
+<h2>Summary</h2>
+<p>This playbook is designed to run on incidents containing suspicious Microsoft Entra ID identities. When a new incident is created, the playbook iterates over the accounts and posts an adaptive card in the SOC Microsoft Teams channel. The card includes potential risky user information provided by Microsoft Entra ID Protection and offers options to confirm the user as compromised or dismiss the compromised user in Microsoft Entra ID Protection. Additionally, it allows configuration of the Microsoft Sentinel incident. A summary comment is posted to document the action taken and user information.</p>
+<p>For more details, visit the <a href="https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection">Microsoft Entra ID Protection documentation</a>.</p>
+<h2>Prerequisites</h2>
+<ol>
+<li><strong>Microsoft Entra ID Premium P2 License</strong>: Required for Entra ID Protection.</li>
+<li><strong>Permissions on Entra ID Identity Protection API</strong>: Ensure the user has the necessary permissions to authorize Playbook connections. <a href="https://docs.microsoft.com/graph/api/riskyuser-confirmcompromised?view=graph-rest-1.0#permissions">Learn more</a></li>
+<li><strong>Microsoft Teams Team Group Id and Channel ID</strong>: <a href="#steps-to-obtain-microsoft-teams-group-id-and-channel-id">Steps to Obtain</a></li>
+<li><strong>(Optional) Policies</strong>: Create policies in Microsoft Entra ID Identity Protection to run when users are confirmed as compromised. <a href="https://docs.microsoft.com/azure/active-directory/identity-protection/concept-identity-protection-policies">Learn more</a>.</li>
+</ol>
+<h2>Deployment</h2>
+<h3>Quick Deployment</h3>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FMicrosoft%20Entra%20ID%20Protection%2FPlaybooks%2FIdentityProtection-TeamsBotResponse%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FMicrosoft%20Entra%20ID%20Protection%2FPlaybooks%2FIdentityProtection-TeamsBotResponse%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<h2>Post Deployment Instructions</h2>
+<ol>
+<li>
+<p><strong>Authorize Connections</strong>:
+   - Navigate to the Microsoft Sentinel connection resource in the Azure portal.
+   - Click "Edit API connection".
+   - Click "Authorize" and sign in.
+   - Click "Save".
+   - Repeat these steps for all connections.</p>
+</li>
+<li>
+<p><strong>Assign Microsoft Sentinel Responder Role</strong>:
+   - Assign the Microsoft Sentinel Responder role to the playbook's managed identity:</p>
+<ul>
+<li>Select the playbook resource in the Azure portal.</li>
+<li>In the left menu, click "Identity".</li>
+<li>Under "Permissions", click "Azure role assignments".</li>
+<li>Click "Add role assignment".</li>
+<li>Use the drop-down lists to select the resource group containing your Sentinel Workspace.</li>
+<li>In the "Role" drop-down list, select "Microsoft Sentinel Responder".</li>
+<li>Click "Save" to assign the role.</li>
+</ul>
+</li>
+<li>
+<p><strong>Attach Playbook to Automation Rule</strong>:
+   - Create an automation rule in Microsoft Sentinel to run the playbook automatically:</p>
+<ul>
+<li>In Microsoft Sentinel, go to "Automation &gt; Automation rules".</li>
+<li>Click "+ Add new" to create a new automation rule.</li>
+<li>Set the rule conditions (e.g., when an alert/incident is created, or based on alert/incident details).</li>
+<li>In the "Actions" section, select "Run playbook" and choose your playbook.</li>
+<li>Save the automation rule.</li>
+</ul>
+</li>
+</ol>
+<h2>Steps to Obtain Microsoft Teams Group ID and Channel ID</h2>
+<ol>
+<li>
+<p><strong>Obtain the Group ID</strong>:
+   - Open Microsoft Teams and navigate to the desired team.
+   - Click on the three dots (ellipsis) next to the team name and select "Manage team".
+   - In the browser, open the Microsoft Graph Explorer tool: <a href="https://developer.microsoft.com/en-us/graph/graph-explorer">Graph Explorer</a>.
+   - Run the following query to list all teams:
+     <code>GET https://graph.microsoft.com/v1.0/me/joinedTeams</code>
+   - Locate the desired team in the response and copy its <code>id</code> field. This is the Group ID.</p>
+</li>
+<li>
+<p><strong>Obtain the Channel ID</strong>:
+   - Navigate to the desired channel within the team.
+   - Click on the three dots (ellipsis) next to the channel name and select "Get link to channel".
+   - Copy the URL provided. It will look like:
+     <code>https://teams.microsoft.com/l/channel/&lt;ChannelID&gt;/&lt;ChannelName&gt;?groupId=&lt;GroupID&gt;&amp;tenantId=&lt;TenantID&gt;</code>
+   - Extract the <code>&lt;ChannelID&gt;</code> from the URL. This is the Channel ID.</p>
+</li>
+</ol>
+<p>Ensure you have the necessary permissions to access Microsoft Graph API and Teams resources.</p>
+<h2>Screenshots</h2>
+<h3>Overall</h3>
+<p><img alt="Overall" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID%20Protection/Playbooks/IdentityProtection-TeamsBotResponse/images/ImageLight1.png" /></p>
+<h3>Card Sent by Microsoft Teams Bot</h3>
+<p><em>[Content truncated...]</em></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/microsoft-entra-id-protection.html">Back to Microsoft Entra ID Protection</a></p>
+</div>
+</body>
+</html>

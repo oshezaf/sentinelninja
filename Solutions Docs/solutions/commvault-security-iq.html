@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Commvault Security IQ &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Commvault Security IQ</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Commvault-Logo.svg" alt="Commvault Security IQ Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Commvault</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://www.commvault.com/support">https://www.commvault.com/support</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">svc.cv-securityiq@commvault.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2023-08-17</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Commvault%20Security%20IQ">Commvault Security IQ</a></td>
+</tr>
+</tbody>
+</table>
+<p>This Microsoft Sentinel integration enables Commvault users to ingest alerts and other data into their Microsoft Sentinel instance. With Analytic Rules, Microsoft Sentinel can automatically create Microsoft Sentinel incidents.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/commvaultsecurityiq-cl.html">CommvaultSecurityIQ</a> 🔶</li>
+</ul>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/commvaultsecurityiq-cl.html"><code>CommvaultSecurityIQ_CL</code></a> 🔶</td>
+<td><a href="../connectors/commvaultsecurityiq-cl.html">CommvaultSecurityIQ</a></td>
+<td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>4 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/commvault-security-iq-commvault-cloud-alert-317e757e-c320-448e-8837-fc61a70fe609-276de419.html">Commvault Cloud Alert</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion, Impact</td>
+<td style="text-align: left;"><a href="../tables/commvaultsecurityiq-cl.html"><code>CommvaultSecurityIQ_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/commvault-security-iq-commvault-disable-data-aging-logic-app-playbook-e8d97851.html">Commvault Disable Data Aging Logic App Playbook</a></td>
+<td style="text-align: left;">This Logic App executes when called upon by an Automation Rule. Accessing the KeyVault to retrieve v...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/commvault-security-iq-commvault-disable-saml-provider-logic-app-playbook-68418a37.html">Commvault Disable SAML Provider Logic App Playbook</a></td>
+<td style="text-align: left;">This Logic App executes when called upon by an Automation Rule. Accessing the KeyVault to retrieve v...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/commvault-security-iq-commvault-disable-user-logic-app-playbook-0e60fa8a.html">Commvault Disable User Logic App Playbook</a></td>
+<td style="text-align: left;">This Logic App executes when called upon by an Automation Rule. Accessing the KeyVault to retrieve v...</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Commvault%20Security%20IQ/README.md">Commvault Security IQ/README.md</a></em></p>
+</blockquote>
+<h1>Commvault Cloud - Microsoft Sentinel Integration</h1>
+<p>This SOAR integration connects Commvault Cloud with Microsoft Sentinel to enable automated incident creation and response through Analytic Rules and Playbooks.</p>
+<h2>Overview</h2>
+<p>This solution provides:
+- <strong>Data Ingestion</strong>: Automated collection of Commvault security events and anomalies
+- <strong>Incident Creation</strong>: Automatic creation of Sentinel incidents based on Commvault security events
+- <strong>Incident Response</strong>: Playbooks for automated remediation actions (disable users, disable data aging, etc.)</p>
+<h2>Prerequisites</h2>
+<p>Before beginning the installation, ensure you have:</p>
+<h3>Commvault Requirements</h3>
+<ul>
+<li><strong>Administrative Access</strong>: Admin or Tenant Admin privileges in Commvault Cloud/Metallic</li>
+<li><strong>API Access</strong>: Ability to generate access tokens for API integration</li>
+</ul>
+<h3>Azure Requirements</h3>
+<ul>
+<li><strong>Subscription Access</strong>: Contributor or Owner permissions on the Azure subscription</li>
+<li><strong>Resource Group Access</strong>: Ability to create and manage resources in the target resource group</li>
+<li><strong>Microsoft Sentinel</strong>: An active Sentinel workspace deployed in your Azure environment</li>
+<li><strong>Log Analytics Workspace</strong>: A Log Analytics workspace associated with your Sentinel instance</li>
+<li><strong>Azure Cloud Shell</strong>: Access to Azure Cloud Shell with PowerShell support</li>
+</ul>
+<h2>Required Azure Resources</h2>
+<p>The following Azure resources will be created or configured during this installation:</p>
+<h3>Key Vault</h3>
+<ul>
+<li><strong>Purpose</strong>: Securely stores Commvault credentials and API endpoints</li>
+<li><strong>Required Secrets</strong>:</li>
+<li><code>access-token</code>: Your Commvault Cloud access token</li>
+<li><code>environment-endpoint-url</code>: Your Commvault Cloud API endpoint URL (Commvault/Metallic endpoint URL : https://<code>hostname</code>/commandcenter/api )</li>
+<li><code>refresh-token</code>: Your Commvault Cloud refresh token</li>
+</ul>
+<h2>Installation</h2>
+<p><strong>1. Create Access Token in Commvault:</strong></p>
+<ul>
+<li>Follow the instructions in <a href="https://documentation.commvault.com/2024e/essential/creating_access_token.html">Creating an Access Token / Refresh Token</a>.</li>
+<li>Ensure the user creating the token has <strong>Admin</strong> or <strong>Tenant Admin</strong> privileges.</li>
+</ul>
+<p><strong>2. Create KeyVault:</strong></p>
+<ul>
+<li>Azure Portal -&gt; KeyVault -&gt; Create -&gt; Basics (select subscription, RG).</li>
+</ul>
+<p><strong>3. Create KeyVault Secrets:</strong></p>
+<ul>
+<li>Azure Portal -&gt; KeyVault -&gt; Secrets -&gt; Generate/Import -&gt; Manual:<ul>
+<li>Name: access-token, Value: (Your Commvault/Metallic access token), Enabled: Yes -&gt; Create.</li>
+<li>Name: refresh-token, Value: (Your Commvault/Metallic refresh token), Enabled: Yes -&gt; Create.</li>
+<li>Name: environment-endpoint-url, Value: (Your Commvault/Metallic endpoint's URL), Enabled: Yes -&gt; Create.</li>
+</ul>
+</li>
+</ul>
+<p><strong>4. Install Commvault Cloud Solution:</strong></p>
+<ul>
+<li>Sentinel -&gt; Content hub -&gt; Search "Commvault Cloud" -&gt; Install.</li>
+</ul>
+<p><strong>5. Configure Data Connector:</strong></p>
+<ul>
+<li>Commvault Cloud -&gt; CommvaultSecurityIQ (using Azure Functions) -&gt; Open connector page -&gt; Deploy to Azure -&gt; Fill details -&gt; Create.</li>
+</ul>
+<p><em>[Content truncated...]</em></p>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.3</td>
+<td>12-09-2025</td>
+<td>Enhanced <strong>Data connector</strong> with configurable event collection and streamlined deployment</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>28-03-2024</td>
+<td>Update <strong>Playbook</strong> - Bug fix in disabling data aging</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>28-03-2024</td>
+<td>Adding <strong>Data Connector</strong> for Commvault Sentinel Integration</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>21-08-2023</td>
+<td>Initial Solution Release</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

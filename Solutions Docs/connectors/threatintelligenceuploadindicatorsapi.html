@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🔍 Threat Intelligence Upload API Preview &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>🔍 Threat Intelligence Upload API (Preview)</h1>
+<blockquote>
+<p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>ThreatIntelligenceUploadIndicatorsAPI</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/threat-intelligence.html">Threat Intelligence</a>, <a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/unknown.html">Unknown</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Threat%20Intelligence/Data%20Connectors/template_ThreatIntelligenceUploadIndicators_ForGov.json">template_ThreatIntelligenceUploadIndicators_ForGov.json</a></td>
+</tr>
+</tbody>
+</table>
+<p>Microsoft Sentinel offers a data plane API to bring in threat intelligence from your Threat Intelligence Platform (TIP), such as Threat Connect, Palo Alto Networks MineMeld, MISP, or other integrated applications. Threat indicators can include IP addresses, domains, URLs, file hashes and email addresses. For more information, see the <a href="https://go.microsoft.com/fwlink/p/?linkid=2269830&amp;wt.mc_id=sentinel_dataconnectordocs_content_cnl_csasci">Microsoft Sentinel documentation</a>.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/threatintelobjects.html"><code>ThreatIntelObjects</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+</tr>
+</tbody>
+</table>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): write permissions are required.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. You can connect your threat intelligence data sources to Microsoft Sentinel by either:</strong></p>
+<blockquote>
+<p>Using an integrated Threat Intelligence Platform (TIP), such as Threat Connect, Palo Alto Networks MineMeld, MISP, and others. </p>
+<p>Calling the Microsoft Sentinel data plane API directly from another application. 
+ - Note: The 'Status' of the connector will not appear as 'Connected' here, because the data is ingested by making an API call.</p>
+</blockquote>
+<p><strong>2. Follow These Steps to Connect to your Threat Intelligence:</strong></p>
+<p><strong>1. Get Microsoft Entra ID Access Token</strong></p>
+<p>To send request to the APIs, you need to acquire Microsoft Entra ID access token. You can follow instruction in this page: https://docs.microsoft.com/azure/databricks/dev-tools/api/latest/aad/app-aad-token#get-an-azure-ad-access-token 
+  - Notice: Please request Microsoft Entra ID access token with scope value:<br />
+Fairfax: https://management.usgovcloudapi.net/.default<br />
+Mooncake: https://management.chinacloudapi.cn/.default</p>
+<p><strong>2. Send STIX objects to Sentinel</strong></p>
+<p>You can send the supported STIX object types by calling our Upload API. For more information about the API, click <a href="https://learn.microsoft.com/azure/sentinel/stix-objects-api">here</a>. </p>
+<blockquote>
+<p>HTTP method: POST </p>
+<p>Endpoint: 
+Fairfax: https://api.ti.sentinel.azure.us/workspaces/[WorkspaceID]/threatintelligence-stix-objects:upload?api-version=2024-02-01-preview 
+Mooncake: https://api.ti.sentinel.azure.cn/workspaces/[WorkspaceID]/threatintelligence-stix-objects:upload?api-version=2024-02-01-preview </p>
+<p>WorkspaceID: the workspace that the STIX objects are uploaded to.  </p>
+<p>Header Value 1: "Authorization" = "Bearer [Microsoft Entra ID Access Token from step 1]" </p>
+<p>Header Value 2: "Content-Type" = "application/json"  </p>
+<p>Body: The body is a JSON object containing an array of STIX objects.</p>
+</blockquote>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

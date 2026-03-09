@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veritas NetBackup &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Veritas NetBackup</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Veritas NetBackup Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Veritas Technologies LLC</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://www.veritas.com/content/support/en_US/contact-us">https://www.veritas.com/content/support/en_US/contact-us</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2023-09-25</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veritas%20NetBackup">Veritas NetBackup</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.veritas.com/">Veritas</a> solution for Microsoft Sentinel allows you to analyze NetBackup audit events. The solution uses analytics rules to automatically generate incidents when an abnormal user activity is detected in NetBackup.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p><strong>This solution does not include data connectors.</strong></p>
+<p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
+<h2>Tables Used</h2>
+<p>This solution queries <strong>1 table(s)</strong> from its content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/netbackupalerts-cl.html"><code>NetBackupAlerts_CL</code></a></td>
+<td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>2 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">2</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/veritas-netbackup-alarming-number-of-anomalies-generated-in-netbackup-2e0efcd4-56d2-41df-9098-d6898a58c62b-8fe77028.html">Alarming number of anomalies generated in NetBackup</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Discovery, CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/netbackupalerts-cl.html"><code>NetBackupAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/veritas-netbackup-multiple-failed-attempts-of-netbackup-login-d39f0c47-2e85-49b9-a686-388c2eb7062c-027f832e.html">Multiple failed attempts of NetBackup login</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess, Discovery</td>
+<td style="text-align: left;"><a href="../tables/netbackupalerts-cl.html"><code>NetBackupAlerts_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veritas%20NetBackup/README.md">Veritas NetBackup/README.md</a></em></p>
+</blockquote>
+<p><strong>Veritas NetBackup and Microsoft Sentinel Integration Guide</strong>  </p>
+<p>The integration between Veritas NetBackup and Microsoft Sentinel empowers security operations teams by providing valuable insights from Veritas NetBackup Anomaly Detection and Malware Scanning engines directly into Microsoft Sentinel.<br />
+These insights provide the following advantages to Security and IT ops:</p>
+<ul>
+<li>
+<p>Identification of early indicators of compromise such as malware or data anomaly detection including spikes in new uncompressible data or change in deduplication ratio, files modifications during backups, etc. </p>
+</li>
+<li>
+<p>Enhances capabilities for security operators to prioritize and expedite the investigation of potential security incidents with the help of insights from threats published by Veritas NetBackup.</p>
+</li>
+<li>
+<p>Enables NetBackup users to ingest alerts and other data into their Sentinel instance. With Analytic Rules, Sentinel can automatically create Sentinel incidents from incoming events.</p>
+</li>
+</ul>
+<p>Veritas NetBackup has developed a first-class, in-product integration with Microsoft Sentinel. Security insights will be pushed via NetBackup APIs directly into the Microsoft Sentinel workspace, eliminating any dependency on playbooks or the need to develop data connectors separately.  The threat hunting queries with enrich anomaly events from NetBackup helps during Ransomware analysis and helps incident prioritization when security administrators deal with several thousand security events. </p>
+<p><strong>Prerequisites</strong></p>
+<p>Veritas NetBackup should be configured to send appropriate events to Microsoft Sentinel and must be running version 10.2 or higher.</p>
+<p>Microsoft Sentinel and NetBackup should be configured to connect to API end points using an account with the relevant privileges necessary to perform the desired operations.</p>
+<p>A workspace key and ID are required for NetBackup to connect to Sentinel. These are generated in Sentinel via its SIEM WebUI/API interface and stored and used by the NetBackup primary server.</p>
+<p><strong>How NetBackup Sends Events to Microsoft Sentinel</strong></p>
+<p>Veritas NetBackup sends events to SIEM platforms using Microsoft Sentinel as an example. A workspace key and ID are required for NetBackup to connect to Sentinel. These are generated in Microsoft Sentinel via its SIEM WebUI/API interface and stored and used by the NetBackup primary server. Once NetBackup connect to Microsoft Sentinel, NetBackup audits its own logs for the type(s) of alerts you ve configured for forwarding to Microsoft Sentinel. The selected alerts are then sent to Microsoft Sentinel as audit alert broadcast messages. Ref Figure 1</p>
+<p><strong>Connecting Veritas NetBackup to Microsoft Sentinel</strong></p>
+<p><em>[Content truncated...]</em></p>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.0</td>
+<td>13-11-2024</td>
+<td>Initial version</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

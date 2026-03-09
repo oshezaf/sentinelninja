@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fortinet-FortiGate-ResponseOnBlockURL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Fortinet-FortiGate-ResponseOnBlockURL</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>This playbook allows the SOC users to automatically response to Microsoft Sentinel incidents which includes URL's, by adding the URLs to the Microsoft Sentinel URL blocked group.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.html">Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiGate%20Next-Generation%20Firewall%20connector%20for%20Microsoft%20Sentinel/Playbooks/Fortinet_ResponseOnURL/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiGate%20Next-Generation%20Firewall%20connector%20for%20Microsoft%20Sentinel/Playbooks/Fortinet_ResponseOnURL/readme.md">Fortinet_ResponseOnURL/readme.md</a></em></p>
+</blockquote>
+<h1>Fortinet - ResponseOnURL</h1>
+<p>## Summary</p>
+<p>This playbook allows the SOC users to automatically response to Microsoft Sentinel incidents which includes URL's, by adding the URLs to the Sentinel URL blocked group.
+ <a href="https://www.fortinet.com/fortiguard/threat-intelligence/threat-research">Learn more about Threat Intelligence in Fortinet policy</a></p>
+<p><img alt="Fortinet" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiGate%20Next-Generation%20Firewall%20connector%20for%20Microsoft%20Sentinel/Playbooks/Fortinet_ResponseOnURL/DesginerResposeOnURL.png" /><br></p>
+<p><strong>This is the adaptive card SOC will receive when playbook is triggered for each risky IP for taking actions like block/unblock/ignore ::</strong><br><br>
+<img alt="Fortinet" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiGate%20Next-Generation%20Firewall%20connector%20for%20Microsoft%20Sentinel/Playbooks/Fortinet_ResponseOnURL/ResponseOnURLAdaptiveCard.PNG" /><br></p>
+<p><strong>This is the consolidate adaptive card about the summary of actions taken on IP and the incident configuration ::</strong><br><br>
+<img alt="Consolidated Adaptive Card example" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiGate%20Next-Generation%20Firewall%20connector%20for%20Microsoft%20Sentinel/Playbooks/Fortinet_ResponseOnURL/FortinetSummaryAdaptivecardURL.PNG" /><br></p>
+<h3>Prerequisites</h3>
+<ul>
+<li>Sentinel URL block group should create in the VM</li>
+<li>FortinetConnector needs to be deployed prior to the deployment of this playbook under the same subscription. Relevant instructions can be found in the connector doc page.</li>
+<li>Fortinet-GetRestAPIFunctionAPP needs to be deployed prior to the deployment of this playbook under the same subscription. Relevant instructions can be found in the Function doc page.</li>
+<li>FortinetConnector need to be authenticated with an API key. Relevant instructions can be found in the connector doc page.</li>
+<li>This playbook will add new address object to existing VM. </li>
+</ul>
+<h3>Deployment instructions</h3>
+<ol>
+<li>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FPlaybooks%2FFortinet-FortiGate%2FPlaybooks%2FFortinet_ResponseOnURL%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FPlaybooks%2FFortinet-FortiGate%2FPlaybooks%2FFortinet_ResponseOnURL%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<ol start="2">
+<li>Fill the required parameteres:<ul>
+<li>Playbook Name: Enter the playbook name here (ex:Fortinet_ResponseOnURL)</li>
+<li>Team Channel ID: Enter the teams channel id</li>
+<li>Teams group ID: Enter the teams channel id</li>
+<li>Pre-defined Group Name: Group name which is created in firewall</li>
+<li>Function app Name: Enter Function app name which is created as Prerequisite</li>
+<li>Managed Identities Name: Enter the managed identity name (ex: managed identities name)</li>
+</ul>
+</li>
+</ol>
+<h3>Post-Deployment instructions</h3>
+<ul>
+<li>Go to logic app designer.</li>
+<li>Look for the function call actions. You can find them by the titles:</li>
+<li>Fetch the details of the address object.</li>
+<li>Get address group details.</li>
+<li>For each one of the above function call actions and perform the below mentioned steps:</li>
+<li>Go to "Managed identity" dropdown and select user identity.</li>
+<li>Save playbook.</li>
+<li>Go to Microsoft Sentinel, hook playbook to Microsoft Sentinel rules.</li>
+</ul>
+<h4>a. Authorize connections</h4>
+<p>Once deployment is complete, you will need to authorize each connection.
+1.  Click the Microsoft Sentinel connection resource.
+2.  Click edit API connection.
+3.  Click Authorize.
+4.  Sign in.
+5.  Click Save.
+6.  Repeat steps for other connection such as Team's connection</p>
+<h2>Playbook steps explained</h2>
+<h4>b. Configurations in Sentinel</h4>
+<ol>
+<li>In Microsoft sentinel analytical rules should be configured to trigger an incident with URL Entity.</li>
+<li>Configure the automation rules to trigger this playbook.</li>
+</ol>
+<h3>When Microsoft Sentinel incident creation rule is triggered</h3>
+<ul>
+<li>Microsoft Sentinel incident is created. The playbook receives the incident as the input.</li>
+</ul>
+<h3>Get Entities as URLs</h3>
+<ul>
+<li>Get the list of risky/malicious URLs as entities from the Incident.</li>
+</ul>
+<h3>Initialize variables</h3>
+<ul>
+<li>
+<p>Action Name (type-String) - To determine the action name to be displayed in the adaptive card such as Block or Unblock URL from predefined address group.</p>
+</li>
+<li>
+<p>Adaptive card body(type-Array) - To determine the dynamic adaptive card body </p>
+</li>
+<li>
+<p>Address group Members(type-Array) - To determine the body of predefined address group</p>
+</li>
+<li>
+<p>URL Address Action(type-Array) - Consolidated actions summary on each URL to display in adaptive card</p>
+</li>
+<li>
+<p>Predefined group name(type-String)- You can change the pre-defined address group name here</p>
+</li>
+</ul>
+<h2>Post an adaptive card to the SOC channel</h2>
+<p><em>[Content truncated...]</em></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.html">Back to Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel</a></p>
+</div>
+</body>
+</html>

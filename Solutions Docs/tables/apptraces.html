@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AppTraces &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>AppTraces</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for AppTraces table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Low value</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/apptraces">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (37 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/apptraces">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">AppRoleInstance</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Role instance of the application.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AppRoleName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Role name of the application.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AppVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Version of the application.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClientBrowser</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Browser running on the client device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClientCity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">City where the client device is located.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClientCountryOrRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Country or region where the client device is located.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClientIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of the client device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClientModel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Model of the client device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClientOS</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Operating system of the client device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClientStateOrProvince</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">State or province where the client device is located.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClientType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the client device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IKey</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Instrumentation key of the Azure resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ItemCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Number of telemetry items represented by a single sample item.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Measurements</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Application-defined measurements.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Message</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Trace message.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Application-defined operation ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Application-defined name of the overall operation. The OperationName values typically match the Name values for AppRequests.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ParentId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID of the parent operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Properties</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Application-defined properties.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReferencedItemId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Id of the item with additional details about the trace.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReferencedType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the table with additional details about the trace.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceGUID</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique, persistent identifier of an Azure resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SDKVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Version of the SDK used by the application to generate this telemetry item.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SessionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Application-defined session ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SeverityLevel</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Severity level of the trace.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">SyntheticSource</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Synthetic source of the operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when trace was recorded.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserAccountId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Application-defined account associated with the user.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserAuthenticatedId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Persistent string that uniquely represents each authenticated user in the application.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Anonymous ID of a user accessing the application.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.insights/components</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

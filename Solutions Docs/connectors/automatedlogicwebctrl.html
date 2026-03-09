@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automated Logic WebCTRL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Automated Logic WebCTRL</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>AutomatedLogicWebCTRL</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">AutomatedLogic</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/alc-webctrl.html">ALC-WebCTRL</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/ama.html">AMA</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ALC-WebCTRL/Data%20Connectors/Connector_WindowsEvents_WebCTRL.json">Connector_WindowsEvents_WebCTRL.json</a></td>
+</tr>
+</tbody>
+</table>
+<p>You can stream the audit logs from the WebCTRL SQL server hosted on Windows machines connected to your Microsoft Sentinel. This connection enables you to view dashboards, create custom alerts and improve investigation. This gives insights into your Industrial Control Systems that are monitored or controlled by the WebCTRL BAS application.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/event.html"><code>Event</code></a></td>
+<td style="text-align: left;"><code>Source == "ALCWebCTRL"</code></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+</tr>
+</tbody>
+</table>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Install and onboard the Microsoft agent for Windows.</strong></p>
+<p>Learn about <a href="https://docs.microsoft.com/services-hub/health/mma-setup">agent setup</a> and <a href="https://docs.microsoft.com/azure/azure-monitor/agents/data-sources-windows-events">windows events onboarding</a>. </p>
+<p>You can skip this step if you have already installed the Microsoft agent for Windows</p>
+<p><strong>2. Configure Windows task to read the audit data and write it to windows events</strong></p>
+<p>Install and configure the Windows Scheduled Task to read the audit logs in SQL and write them as Windows Events. These Windows Events will be collected by the agent and forward to Microsoft Sentinel.</p>
+<blockquote>
+<p>Notice that the data from all machines will be stored in the selected workspace
+2.1 Copy the <a href="https://aka.ms/sentinel-automatedlogicwebctrl-tasksetup">setup files</a> to a location on the server.</p>
+</blockquote>
+<p>2.2 Update the <a href="https://aka.ms/sentinel-automatedlogicwebctrl-auditpull">ALC-WebCTRL-AuditPull.ps1</a> (copied in above step) script parameters like the target database name and windows event id's. Refer comments in the script for more details.</p>
+<p>2.3 Update the windows task settings in the <a href="https://aka.ms/sentinel-automatedlogicwebctrl-auditpulltaskconfig">ALC-WebCTRL-AuditPullTaskConfig.xml</a> file that was copied in above step as per requirement. Refer comments in the file for more details.</p>
+<p>2.4 Install windows tasks using the updated configs copied in the above steps
+  - <strong>Run the following command in powershell from the directory where the setup files are copied in step 2.1</strong>: <code>schtasks.exe /create /XML "ALC-WebCTRL-AuditPullTaskConfig.xml" /tn "ALC-WebCTRL-AuditPull"</code>
+<strong>3. Validate connection</strong></p>
+<p>Follow the instructions to validate your connectivity:</p>
+<p>Open Log Analytics to check if the logs are received using the Event schema.</p>
+<blockquote>
+<p>It may take about 20 minutes until the connection streams data to your workspace.</p>
+</blockquote>
+<p>If the logs are not received, validate below steps for any run time issues:</p>
+<blockquote>
+<ol>
+<li>
+<p>Make sure that the scheduled task is created and is in running state in the Windows Task Scheduler.</p>
+</li>
+<li>
+<p>Check for task execution errors in the history tab in Windows Task Scheduler for the newly created task in step 2.4</p>
+</li>
+<li>
+<p>Make sure that the SQL Audit table consists new records while the scheduled windows task runs.</p>
+</li>
+</ol>
+</blockquote>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

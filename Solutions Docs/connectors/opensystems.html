@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🔍 Open Systems Data Connector &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>🔍 Open Systems Data Connector</h1>
+<blockquote>
+<p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
+</blockquote>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>OpenSystems</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Open Systems</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/open-systems.html">Open Systems</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Open%20Systems/Data%20Connectors/OpenSystems.json">OpenSystems.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Connector definition requires workspace key (SharedKey pattern)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+</tbody>
+</table>
+<p>The Open Systems Logs API Microsoft Sentinel Connector provides the capability to ingest Open Systems logs into Microsoft Sentinel using Open Systems Logs API.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/opensystemsauthenticationlogs-cl.html"><code>OpenSystemsAuthenticationLogs_CL</code></a> 🔶</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/opensystemsfirewalllogs-cl.html"><code>OpenSystemsFirewallLogs_CL</code></a> 🔶</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/opensystemsproxylogs-cl.html"><code>OpenSystemsProxyLogs_CL</code></a> 🔶</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/opensystemsztnalogs-cl.html"><code>OpenSystemsZtnaLogs_CL</code></a> 🔶</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Azure Container Apps, DCRs, and DCEs</strong>: Permissions to deploy Azure Container Apps, Managed Environments, Data Collection Rules (DCRs), and Data Collection Endpoints (DCEs) are required. This is typically covered by having the 'Contributor' role on the subscription or resource group.
+- <strong>Role Assignment Permissions</strong>: Permissions to create role assignments (specifically 'Monitoring Metrics Publisher' on DCRs) are required for the deploying user or service principal.
+- <strong>Required Credentials for ARM Template</strong>: During deployment, you will need to provide: Open Systems Logs API endpoint and connection string, and Service Principal credentials (Client ID, Client Secret, Object/Principal ID).
+- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
+- <strong>Custom prerequisites if necessary, otherwise delete this customs tag</strong>: Description for any custom pre-requisites</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. STEP 1: Prerequisites</strong></p>
+<p>Ensure you have the following information and permissions before proceeding: 
+1. Open Systems Logs API endpoint and connection String. 
+2. Service Principal credentials (Client ID, Client Secret, Object/Principal ID). 
+3. Permissions to deploy Azure Container Apps, Managed Environments, Data Collection Rules (DCRs), Data Collection Endpoints (DCEs), and create Role Assignments (typically 'Contributor' role on the subscription or resource group).</p>
+<p><strong>2. STEP 2: Deploy the Connector</strong></p>
+<p>Deploy the ARM template to set up the data processing resources, including the data collection rule and associated components.</p>
+<ol>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below. This will take you to the Azure portal.</p>
+<p><a href="https://aka.ms/sentinel-OpenSystemsLogsAPI-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
+</li>
+<li>
+<p>In the Azure portal, select your desired <strong>Subscription</strong>, <strong>Resource Group</strong>, and <strong>Region</strong>.</p>
+</li>
+<li>Provide the required parameters, including those gathered in the prerequisites step (Open Systems Logs API details, Service Principal credentials, etc.), when prompted by the deployment wizard.</li>
+<li>Review the terms and click <strong>Review + create</strong>, then <strong>Create</strong> to start the deployment.</li>
+</ol>
+<p><strong>3. STEP 3: Post-Deployment Verification</strong></p>
+<p>After successful deployment: 
+1. Verify that the Azure Container App running the processor is in a 'Running' state. 
+2. Check the <code>OpenSystemsZtnaLogs_CL</code>, <code>OpenSystemsFirewallLogs_CL</code>, <code>OpenSystemsAuthenticationLogs_CL</code>, and <code>OpenSystemsProxyLogs_CL</code> tables in your Log Analytics workspace for incoming data. It may take some time for logs to appear after initial setup. 
+3. Use the sample queries provided in the 'Next Steps' tab of this data connector page to view and analyze your logs.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

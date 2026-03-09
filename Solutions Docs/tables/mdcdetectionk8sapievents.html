@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MDCDetectionK8SApiEvents &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>MDCDetectionK8SApiEvents</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for MDCDetectionK8SApiEvents table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Security</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/mdcdetectionk8sapievents">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (34 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/mdcdetectionk8sapievents">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AdditionalMetadata</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Metadata related to the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationTypes</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">A list of well-known authentication mechanisms that were detected, e.g., Authorization header or API keys.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique identifier for the Azure resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ChunkNum</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The index of the payload chunk. Starts from zero. If the full payload is broken into chunks, this value represents which chunk is in this event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClientIPs</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">A list of client IPs extracted from the X-Forwarded-For header in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ContainsAuthentication</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Whether a well-known authentication mechanism was detected. True if any authentication mechanism was detected, false otherwise.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ContainsPublicIp</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Whether one of the IPs extracted from the X-Forwarded-For header in the request is a public IP.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DataPipelineMetadata</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Metadata related to the data processing pipeline.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Elapsed</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The time in milliseconds that have elapsed between the request and the response events.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsLastChunk</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Whether the payload chunk in this event is the last one or not. True if this is the last chunk; false otherwise.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsRequest</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Whether this event is for the request or the response. True if this event is for the request. False if this event is for the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">K8SClusterName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the K8S cluster containing the pod from where this event was captured.</td>
+</tr>
+<tr>
+<td style="text-align: left;">K8SDaemonsetName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the daemonset containing the pod from where this event was captured.</td>
+</tr>
+<tr>
+<td style="text-align: left;">K8SDeploymentName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the deployment containing the pod from where this event was captured.</td>
+</tr>
+<tr>
+<td style="text-align: left;">K8SNamespaceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The namespace containing the pod from where this event was captured.</td>
+</tr>
+<tr>
+<td style="text-align: left;">K8SNodeName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the node that has the pod from where this event was captured.</td>
+</tr>
+<tr>
+<td style="text-align: left;">K8SPodName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the pod from where this event was captured.</td>
+</tr>
+<tr>
+<td style="text-align: left;">K8SStatefulsetName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the stateful set containing the pod from where this event was captured.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Method</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The HTTP verb for this request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Payload</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A chunk of payload for the request or the response in this event. The full payload for the request and/or the response may be split into multiple chunks.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadEncoding</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The value of the Content-Encoding header, if present.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadLength</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The length of the payload chunk in this event. If there is no payload, this value will be zero.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The value of the Content-Type header, if present.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Region</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Azure region where the resource is located.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier that identifies the request and response events for one specific request-response pair.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">StatusCode</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The HTTP response code of the response for this request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time (UTC) when the monitored entity was created, renamed, modified or deleted.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time at which this event was captured.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">Url</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The full url for this request. This will contain the scheme, host, port (if applicable), path, and query string.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

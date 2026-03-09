@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ IPinfo WHOIS ORG Data Connector &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>⚠️ IPinfo WHOIS ORG Data Connector</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ipinfo.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>IPinfoWHOISORGDataConnector</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">IPinfo</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/ipinfo.html">IPinfo</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IPinfo/Data%20Connectors/WHOIS%20ORG/IPinfo_WHOIS_ORG_API_AzureFunctionApp.json">IPinfo_WHOIS_ORG_API_AzureFunctionApp.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>Azure Function code uses LogsIngestionClient/Log Ingestion API</em></td>
+</tr>
+</tbody>
+</table>
+<p>This IPinfo data connector installs an Azure Function app to download WHOIS_ORG datasets and insert it into custom log table in Microsoft Sentinel</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/ipinfo-whois-org-cl.html"><code>Ipinfo_WHOIS_ORG_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
+- <strong>IPinfo API Token</strong>: Retrieve your IPinfo API Token <a href="https://ipinfo.io/">here</a>.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Retrieve API Token</strong></p>
+<p>Retrieve your IPinfo API Token <a href="https://ipinfo.io/">here</a>.</p>
+<p><strong>2. In your Azure AD tenant, create an Azure Active Directory (AAD) application</strong></p>
+<p>In your Azure AD tenant, create an Azure Active Directory (AAD) application and acquire Tenant ID, Client ID, and Client Secret: Use this Link.</p>
+<p><strong>3. Assign the AAD application the Microsoft Sentinel Contributor Role.</strong></p>
+<p>Assign the AAD application you just created to the Contributor(Privileged administrator roles) and Monitoring Metrics Publisher(Job function roles) in the same “Resource Group” you use for “Log Analytic Workspace” on which “Microsoft Sentinel” is added: Use this Link.</p>
+<p><strong>4. Get Workspace Resource ID</strong></p>
+<p>Use the Log Analytic Workspace -&gt; Properties blade having the 'Resource ID' property value. This is a fully qualified resourceId which is in the format '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}'</p>
+<p><strong>5. Deploy the Azure Function</strong></p>
+<p>Use this for automated deployment of the IPinfo data connector using an ARM Tempate.</p>
+<ol>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below. </p>
+<p><a href="https://aka.ms/sentinel-IPinfo-WHOIS-ORG-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. 
+3. Enter the <strong>RESOURCE_ID</strong>, <strong>IPINFO_TOKEN</strong>, <strong>TENANT_ID</strong>, <strong>CLIENT_ID</strong>, <strong>CLIENT_SECRET</strong>.</p>
+</li>
+</ol>
+<p><strong>1. Manual Deployment of Azure Functions</strong></p>
+<p>Use the following step-by-step instructions to deploy the IPinfo data connector manually with Azure Functions (Deployment via Visual Studio Code).
+<strong>Step 1 - Deploy a Function App</strong></p>
+<ol>
+<li>Download the Azure Function App file. Extract the archive to your local development computer <a href="https://aka.ms/sentinel-Ipinfo-WHOIS-ORG-functionapp">Azure Function App</a>. </li>
+<li>Create Function App using Hosting Functions Premium or App service plan using advanced option using VSCode. </li>
+<li>Follow the function app manual deployment instructions to deploy the Azure Functions app using VSCode. </li>
+<li>After successful deployment of the function app, follow the next steps for configuring it.</li>
+</ol>
+<p><strong>Step 2 - Configure the Function App</strong></p>
+<ol>
+<li>Go to Azure Portal for the Function App configuration.</li>
+<li>In the Function App, select the Function App Name and select <strong>Settings</strong> -&gt; <strong>Configuration</strong> or <strong>Environment variables</strong>. </li>
+<li>In the <strong>Application settings</strong> tab, select <strong>+ New application setting</strong>.</li>
+<li>Add each of the following application settings individually, with their respective string values (case-sensitive):
+        RESOURCE_ID
+        IPINFO_TOKEN
+        TENANT_ID
+        CLIENT_ID
+        CLIENT_SECRET
+        RETENTION_IN_DAYS
+        TOTAL_RETENTION_IN_DAYS
+        SCHEDULE
+        LOCATION </li>
+<li>Once all application settings have been entered, click <strong>Save</strong>.</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

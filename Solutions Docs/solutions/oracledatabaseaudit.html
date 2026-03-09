@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OracleDatabaseAudit &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>OracleDatabaseAudit</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/oracle_logo.svg" alt="OracleDatabaseAudit Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2021-11-05</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OracleDatabaseAudit">OracleDatabaseAudit</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pre-requisites</strong></td>
+<td style="text-align: left;"><a href="syslog.html">Syslog</a></td>
+</tr>
+</tbody>
+</table>
+<p>The Oracle Database Audit solution provides the capability to ingest <a href="https://www.oracle.com/database/technologies/">Oracle Database</a> audit events into Microsoft Sentinel through the syslog. Refer to <a href="https://docs.oracle.com/en/database/oracle/oracle-database/21/dbseg/introduction-to-auditing.html#GUID-94381464-53A3-421B-8F13-BD171C867405">documentation</a> for more information.</p>
+<p>This solution is dependent on the Syslog solution containing the Syslog via AMA connector to collect the logs. The Syslog  solution will be installed as part of this solution installation. </p>
+<p><strong>NOTE</strong>: Microsoft recommends installation of Syslog via AMA Connector. Legacy connector uses the Log Analytics agent which were deprecated on <strong>Aug 31, 2024.</strong>. Using MMA and AMA on same machine can cause log duplication and extra ingestion cost <a href="https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate">more details</a>.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#pre-requisites">Pre-requisites</a></li>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Pre-requisites</h2>
+<p>This solution depends on <strong>1 other solution(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="syslog.html">Syslog</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Data Connectors</h2>
+<p>This solution has <strong>1 discovered data connector(s)⚠️</strong> (not in Solution definition):</p>
+<ul>
+<li><a href="../connectors/oracledatabaseaudit.html">[Deprecated] Oracle Database Audit</a> ⚠️</li>
+</ul>
+<p>Connectors from dependency solutions:</p>
+<ul>
+<li><a href="../connectors/syslog.html">Syslog via Legacy Agent</a> <em>(dependency on <a href="syslog.html">Syslog</a>)</em></li>
+<li><a href="../connectors/syslogama.html">Syslog via AMA</a> <em>(dependency on <a href="syslog.html">Syslog</a>)</em></li>
+</ul>
+<p><em>⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.</em></p>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+<td><a href="../connectors/syslogama.html">Syslog via AMA</a> (dependency), <a href="../connectors/syslog.html">Syslog via Legacy Agent</a> (dependency), <a href="../connectors/oracledatabaseaudit.html">[Deprecated] Oracle Database Audit</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>22 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/oracledatabaseaudit-oracledbaudit-connection-to-database-from-external-ip-54aa2c17-acfd-4e3a-a1c4-99c88cf34ebe-1f0cb538.html">OracleDBAudit - Connection to database from external IP</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, Collection, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracledatabaseaudit-oracledbaudit-connection-to-database-from-unknown-ip-80b1dd6d-1aea-471e-be7a-a4a0afdeec80-58ee84fd.html">OracleDBAudit - Connection to database from unknown IP</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracledatabaseaudit-oracledbaudit-multiple-tables-dropped-in-short-time-b3aa0e5a-75a2-4613-80ec-93a1be3aeb8f-1c483121.html">OracleDBAudit - Multiple tables dropped in short time</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracledatabaseaudit-oracledbaudit-new-user-account-cca7b348-e904-4a7a-8f26-d22d4d477119-9b9b7968.html">OracleDBAudit - New user account</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">InitialAccess, Persistence</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracledatabaseaudit-oracledbaudit-query-on-sensitive-table-d7fdcad5-ce96-4db6-9a5e-4a86a5166e5e-f6002111.html">OracleDBAudit - Query on Sensitive Table</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracledatabaseaudit-oracledbaudit-sql-injection-patterns-ab352f0d-7c55-4ab2-a22e-b1c2d995e193-8f05d17d.html">OracleDBAudit - SQL injection patterns</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracledatabaseaudit-oracledbaudit-shutdown-server-27cc2cdc-ba67-4906-a6ef-ecbc9c284f4e-30f74874.html">OracleDBAudit - Shutdown Server</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracledatabaseaudit-oracledbaudit-unusual-user-activity-on-multiple-tables-75024e1c-26e7-4e73-821d-95e5decdd8db-dbe1e2fb.html">OracleDBAudit - Unusual user activity on multiple tables</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracledatabaseaudit-oracledbaudit-user-activity-after-long-inactivity-time-5e93a535-036b-4570-9e58-d8992f30e1ae-1821ecca.html">OracleDBAudit - User activity after long inactivity time</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, Persistence</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracledatabaseaudit-oracledbaudit-user-connected-to-database-from-new-ip-39a0995e-f4a9-4869-a0ae-36d6d9049bfd-fe409afd.html">OracleDBAudit - User connected to database from new IP</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/oracledatabaseaudit-oracledbaudit-action-by-ip-b43e074f-b630-4a16-80e5-138f4b6b64fb-d7d05129.html">OracleDBAudit - Action by Ip</a></td>
+<td style="text-align: left;">InitialAccess, DefenseEvasion, Collection, Impact</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracledatabaseaudit-oracledbaudit-action-by-user-e0b49a22-1c63-4572-b913-b3f31b8e9edf-ba650a07.html">OracleDBAudit - Action by user</a></td>
+<td style="text-align: left;">InitialAccess, DefenseEvasion, Collection, Impact</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracledatabaseaudit-oracledbaudit-active-users-859c26cc-a779-4259-b981-6c6bc8f6402b-701e81f8.html">OracleDBAudit - Active Users</a></td>
+<td style="text-align: left;">InitialAccess, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracledatabaseaudit-oracledbaudit-audit-large-queries-ba5e1a88-2054-4bda-a6e0-20008148ae6e-b8eed56b.html">OracleDBAudit - Audit large queries</a></td>
+<td style="text-align: left;">InitialAccess, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracledatabaseaudit-oracledbaudit-dropped-tables-e74b944a-c438-4949-b4d0-cdfe3a9354c9-0dd5f3b4.html">OracleDBAudit - Dropped Tables</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracledatabaseaudit-oracledbaudit-inactive-users-2c7bbbe1-17cb-44ec-be63-fbb37b609403-632ec36a.html">OracleDBAudit - Inactive Users</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracledatabaseaudit-oracledbaudit-top-tables-queries-b8fcb5b8-254c-4d49-865e-403b8453f487-bdf84abe.html">OracleDBAudit - Top tables queries</a></td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracledatabaseaudit-oracledbaudit-users-privileges-review-46bbb4e9-fdeb-45dc-b4df-e4cee0f90ef0-ccae9e98.html">OracleDBAudit - Users Privileges Review</a></td>
+<td style="text-align: left;">InitialAccess, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracledatabaseaudit-oracledbaudit-users-connected-to-databases-during-non-operational-hours.-48fa6c2c-6e30-49e1-bc94-744212f99bfe-9ab227bc.html">OracleDBAudit - Users connected to databases during non-operational hours.</a></td>
+<td style="text-align: left;">InitialAccess, DefenseEvasion, Collection, Impact</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracledatabaseaudit-oracledbaudit-users-with-new-privileges-6be9634e-6661-4bff-98f1-4a743d7231a5-119d0684.html">OracleDBAudit - Users with new privileges</a></td>
+<td style="text-align: left;">InitialAccess, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/oracledatabaseaudit-oracledatabaseaudit-7eda506f.html">OracleDatabaseAudit</a></td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/oracledatabaseauditevent.html">OracleDatabaseAuditEvent</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.3</td>
+<td>11-12-2024</td>
+<td>Removed Deprecated Data connectors</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>23-07-2024</td>
+<td>Deprecated data connectors</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>26-04-2024</td>
+<td>Repackaged for fix on parser in maintemplate to have old parsername and parentid</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>19-12-2023</td>
+<td>Documentation changes for oracle data base audit</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

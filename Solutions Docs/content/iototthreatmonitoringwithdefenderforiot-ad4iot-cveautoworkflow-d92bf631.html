@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AD4IoT-CVEAutoWorkflow &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>AD4IoT-CVEAutoWorkflow</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>The playbook automates the SOC workflow by automatically enriching incident comments with the CVEs of the involved devices based on Defender for IoT data. An automated triage is performed if the CVE is critical, and the asset owner is automatically notified by email.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/iototthreatmonitoringwithdefenderforiot.html">IoTOTThreatMonitoringwithDefenderforIoT</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IoTOTThreatMonitoringwithDefenderforIoT/Playbooks/CVEAutoWorkflow/CVEAutoWorkflow.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Tables Used</h2>
+<p>This content item queries data from the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IoTOTThreatMonitoringwithDefenderforIoT/Playbooks/CVEAutoWorkflow/readme.md">CVEAutoWorkflow/readme.md</a></em></p>
+</blockquote>
+<h1>Defender for IoT - CVE Auto Workflow</h1>
+<h2>Summary</h2>
+<p>The playbook automates the SOC workflow by automatically enriching incident comments with the CVEs of the involved devices based on Defender for IoT data. An automated triage is performed if the CVE is critical, and the asset owner is automatically notified by email</p>
+<h2>Prerequisites</h2>
+<p>The playbook require the following in order to connect and use the playbook:</p>
+<ol>
+<li>Reader role applied on the Azure subscription \ resource group scope</li>
+<li>Valid connections where required</li>
+<li>An automation rule to connect incident triggers with the playbook.</li>
+</ol>
+<h2>Deployment</h2>
+<p>To add the Security Admin role to the Azure subscription where the playbook is installed:</p>
+<p>1.Open the playbook from the Microsoft Sentinel Automation page.</p>
+<p>2.With the playbook opened as a Logic app, select Identity &gt; System assigned, and then in the Permissions area, select the Azure role assignments button.</p>
+<p>3.In the Azure role assignments page, select Add role assignment.</p>
+<p>4.In the Add role assignment pane:</p>
+<ul>
+<li>Define the Scope as Subscription \ resource group</li>
+<li>From the Subscription dropdown, select the subscription where your playbook is installed.</li>
+<li>From the Role dropdown, select the Security Admin role, and then select Save.</li>
+</ul>
+<p>** To ensure that you have valid connections for each of your connection steps in the playbook:**
+1. Open the playbook from the Microsoft Sentinel Automation page.
+2. With the playbook opened as a Logic app, select Logic app designer. If you have invalid connection details, you may have warning signs in both of the Connections steps. For example:</p>
+<p>Screenshot of the default AD4IOT AutoAlertStatusSync playbook.</p>
+<ol start="3">
+<li>Select a Connections step to expand it and add a valid connection as needed.</li>
+</ol>
+<p><strong>To connect your incidents, relevant analytics rules, and the playbook:</strong>
+Add a new Microsoft Sentinel analytics rule, defined as follows:</p>
+<ol>
+<li>In the Trigger field, select When an incident is updated</li>
+<li>In the Conditions area, select If &gt; Analytic rule name &gt; Contains, and then select the specific analytics rules relevant for Defender for IoT in your organization.</li>
+</ol>
+<p>You may be using out-of-the-box analytics rules, or you may have modified the out-of-the-box content, or created your own. For more information, see Detect threats out-of-the-box with Defender for IoT data.</p>
+<ol start="3">
+<li>In the Actions area, select Run playbook &gt; playbook name.</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/iototthreatmonitoringwithdefenderforiot.html">Back to IoTOTThreatMonitoringwithDefenderforIoT</a></p>
+</div>
+</body>
+</html>

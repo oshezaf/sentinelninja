@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GCPResourceManager &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>GCPResourceManager</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for GCPResourceManager table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">GCP</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpresourcemanager">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (98 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpresourcemanager">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationInfoPrincipalEmail</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The email address of the authenticated principal making the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationInfoPrincipalSubject</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique subject identifier for the principal (useful for federated identities).</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationInfoServiceAccountKeyName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The resource name of the service account key used to authenticate the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthorizationInfo</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details on the authorization checks performed, including the permissions evaluated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">GCPResourceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the resource that the operation is acting on.</td>
+</tr>
+<tr>
+<td style="text-align: left;">GCPResourceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of resource involved in the operation (e.g., project, folder, organization).</td>
+</tr>
+<tr>
+<td style="text-align: left;">InsertID</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique ID for the log entry used for deduplication.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The full resource name of the log (e.g., projects/[PROJECT_ID]/logs/[LOG_ID]).</td>
+</tr>
+<tr>
+<td style="text-align: left;">MetadataParentDeltaDestinationParentId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The destination parent ID when a resource moves between parents (e.g., folder or org).</td>
+</tr>
+<tr>
+<td style="text-align: left;">MetadataParentDeltaDestinationParentType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of destination parent (e.g., folder, organization).</td>
+</tr>
+<tr>
+<td style="text-align: left;">MetadataParentDeltaSourceParentId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The original parent ID of the resource before the move.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MetadataParentDeltaSourceParentType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of source parent (e.g., folder, organization).</td>
+</tr>
+<tr>
+<td style="text-align: left;">MetadataType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of metadata associated with the log entry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MethodName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The API method that was called (e.g., google.cloud.resourcemanager.v3.Projects.CreateProject).</td>
+</tr>
+<tr>
+<td style="text-align: left;">NumResponseItems</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The number of items returned in the response, if applicable.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationFirst</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether this is the first log entry for a long-running operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationID</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">An identifier for a long-running operation shared across related log entries.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationLast</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether this is the last log entry for a long-running operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationProducer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the producer of the operation (e.g., the GCP service executing the operation).</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the log payload (e.g., protoPayload, textPayload).</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReceiveTimestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time the log entry was received by Cloud Logging.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestConstraint</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Org Policy constraint specified in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestCreateTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp when the resource was created as specified in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestCustomConstraint</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Custom constraint configuration specified in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestDestinationParent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The resource name of the destination parent, used in resource moves.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestFolderDisplayName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The display name of the folder provided in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestFolderParent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The parent resource of the folder specified in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestLifecycleState</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The lifecycle state of the resource in the request (e.g., ACTIVE, DELETE_REQUESTED).</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestListValue</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A list of values specified in the request (e.g., tags, constraints).</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMetadataCallerIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address of the caller who made the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMetadataCallerSuppliedUserAgent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The user agent String provided by the caller's client application.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMetadataDestinationAttributes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Metadata about the request destination, such as port or protocol.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMetadataRequestAttributesAuth</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Authentication attributes related to the request, such as authority selector or principal email.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMetadataRequestAttributesReason</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The reason or justification for making the request (if provided).</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMetadataRequestAttributesTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp when the request was made.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name or ID of the resource targeted by the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestOptionsRequestedPolicyVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The version of the IAM policy format requested.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestPageSize</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The number of results to return per page in a list request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestParent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The parent resource (e.g., folder or org) under which the request is being made.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestPolicyAuditConfigs</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The audit configuration settings defined in the policy request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestPolicyBindings</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A list of role bindings defined in the IAM policy request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestPolicyEtag</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ETag used for concurrency control in the policy request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestPolicyName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The resource name of the policy being modified in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestPolicySpec</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Detailed specification of the Org Policy being applied.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestProjectCreateTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time the project was created as per the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestProjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The project ID associated with the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestProjectLabels</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Key-value labels assigned to the project in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestProjectLifecycleState</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The lifecycle state of the project (e.g., ACTIVE, DELETE_REQUESTED).</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestProjectName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The display name of the project specified in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestProjectParent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The parent resource (folder or organization) under which the project is created.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestProjectProjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique project ID provided in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestProjectProjectNumber</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The numerical project identifier.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestQuery</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A query String used for filtering results (e.g., in search or list operations).</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestResource</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The full representation of the resource included in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestTagBindingParent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The full name of the resource to which the tag is being bound.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestTagBindingTagValue</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The tag value being bound to a resource in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestTagKeyName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The full resource name of the tag key referenced in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestTagValueName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The full resource name of the tag value in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of request being made (e.g., Create, Update, Delete).</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestUpdateMask</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A comma-separated list specifying the fields to be updated in a partial update request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsFolderId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The folder ID associated with the resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsMethod</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The method name label used for filtering in logs.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsOrganizationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The organization ID associated with the resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsProjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The project ID associated with the resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsService</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The service name label used for filtering in logs.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseAuditConfigs</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The audit configurations returned in the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseBindings</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IAM role bindings included in the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseCreateTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp when the resource was created, as returned in the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A description of the resource or result returned in the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseDisplayName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The display name of the resource returned in the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseEtag</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ETag used for concurrency control in the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseLabels</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The key-value labels attached to the resource in the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseLifecycleState</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The lifecycle state of the resource in the response (e.g., ACTIVE, DELETE_REQUESTED).</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The full resource name returned in the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseNamespacedName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A namespaced identifier for the resource (used in tagging).</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseParent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The parent resource name associated with the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponsePolicySpec</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The policy specification returned in the response (Org Policy or IAM policy).</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseProjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The project ID returned in the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseProjectNumber</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The project ID returned in the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseShortName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The short, user-defined name of the resource returned in the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseState</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The current state of the resource (e.g., ACTIVE, DELETED).</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseTagKey</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The tag key associated with the resource returned in the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseTagValue</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The tag value associated with the resource in the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseTagValueNamespacedName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A fully qualified name (including tag key) for the tag value.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the response payload.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseUpdateTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time when the resource was last updated, as per the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServiceDataPolicyDeltaBindingDeltas</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Changes (additions or removals) to IAM bindings as part of the policy delta.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServiceDataType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of service-specific data returned in the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServiceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the GCP service handling the request (e.g., cloudresourcemanager.googleapis.com).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Severity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Log level indicating the severity of the event (e.g., INFO, ERROR).</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The status of the request, including error codes and messages if the operation failed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time the log entry was received by logging.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time the event described by the log entry occurred.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/googlecloudplatformresourcemanager.html">GoogleCloudPlatformResourceManager</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/gcpresourcemanagerlogsccfdefinition.html">Google Cloud Platform Resource Manager (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

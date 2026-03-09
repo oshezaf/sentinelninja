@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IdentityAccountInfo &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>IdentityAccountInfo</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<blockquote>
+<p><strong>Defender XDR Only:</strong> This table is available in Microsoft Defender XDR advanced hunting but is not available in the Azure Monitor Log Analytics table reference.</p>
+</blockquote>
+<p>Account information from various sources, including Microsoft Entra ID. This table also includes information and link to the identity that owns the account.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">XDR</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identityaccountinfo-table">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (46 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityaccountinfo">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">AccountId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Internal identifier for the account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccountStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The status of the account; possible values: Disabled, Enabled, Deleted</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccountUpn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User principal name (UPN) of the account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AdditionalFields</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Additional information about the entity or event</td>
+</tr>
+<tr>
+<td style="text-align: left;">Address</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Address of the account user</td>
+</tr>
+<tr>
+<td style="text-align: left;">AssignedRoles</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Role identifiers assigned to the account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationMethod</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Authentication method used to allow the account user to sign into the account; possible values: Credentials, Federated, Hybrid</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationSourceAcccountId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The identifier of the federating account, if the authentication method is Federated</td>
+</tr>
+<tr>
+<td style="text-align: left;">City</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">City where the account user is located</td>
+</tr>
+<tr>
+<td style="text-align: left;">Country</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Country/Region where the account user is located</td>
+</tr>
+<tr>
+<td style="text-align: left;">CreatedDateTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the user account was created</td>
+</tr>
+<tr>
+<td style="text-align: left;">CriticalityLevel</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The criticality score of the account</td>
+</tr>
+<tr>
+<td style="text-align: left;">DefenderRiskLevel</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The risk level of the account as calculated by Microsoft Defender</td>
+</tr>
+<tr>
+<td style="text-align: left;">DefenderRiskUpdateTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time Microsoft Defender last updated the risk level of the account</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeletedDateTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the user account was deleted</td>
+</tr>
+<tr>
+<td style="text-align: left;">Department</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the department that the account user belongs to</td>
+</tr>
+<tr>
+<td style="text-align: left;">DisplayName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initial, and a last name or surname.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EligibleRoles</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Identifiers for roles the account are eligible to use (for example, Microsoft Entra Privileged Identity Management roles)</td>
+</tr>
+<tr>
+<td style="text-align: left;">EmailAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SMTP address of the account</td>
+</tr>
+<tr>
+<td style="text-align: left;">EmployeeId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Employee identifier assigned to the user by the organization</td>
+</tr>
+<tr>
+<td style="text-align: left;">EnrolledMfas</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Types of multifactor authentication methods configured for the account user and their status</td>
+</tr>
+<tr>
+<td style="text-align: left;">GivenName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Given name or first name of the account user</td>
+</tr>
+<tr>
+<td style="text-align: left;">GroupMembership</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Group identifiers assigned to the account</td>
+</tr>
+<tr>
+<td style="text-align: left;">IdentityId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier for the identity that the account is linked to</td>
+</tr>
+<tr>
+<td style="text-align: left;">IdentityLinkBy</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The entity that linked the account to the identity. If the linkage type is based on strong identifiers, the value will be System</td>
+</tr>
+<tr>
+<td style="text-align: left;">IdentityLinkReason</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Reason for linking the account and identity. If the linkage type is manual, the value will be the justification comment added by the user.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IdentityLinkTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time the account was linked to the identity</td>
+</tr>
+<tr>
+<td style="text-align: left;">IdentityLinkType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of linkage between the account and identity; possible values: Manual, Strong identifiers</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsPrimary</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if this account is considered as primary account for the linked identity</td>
+</tr>
+<tr>
+<td style="text-align: left;">JobTitle</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Job title of the account user</td>
+</tr>
+<tr>
+<td style="text-align: left;">LastPasswordChangeTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time the account password was last changed</td>
+</tr>
+<tr>
+<td style="text-align: left;">Manager</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The listed manager of the account user</td>
+</tr>
+<tr>
+<td style="text-align: left;">Phone</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The listed phone number of the account user</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReportId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the event</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Security identifier (SID) of the account</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceProvderRiskLevel</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Risk level of the account as it appears in the source provider; possible values: Low, Medium, High</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceProvider</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source application or service of the account (for example, Microsoft Entra ID)</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceProviderAccountId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier for the account in the source provider (for example, object ID for a Microsoft Entra ID account)</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceProviderInstanceDisplayName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The display name of the source application or service of the account</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceProviderInstanceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The identifier of the source application or service of the account. For example, in Microsoft Entra ID, this is the organization Globally Unique Identifier (GUID).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Surname</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Surname, family name, or last name of the account user</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tags</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Tags assigned to the account by Defender for Identity</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Universally unique identifier (UUID) for the tenant</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantMembershipType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User type; possible values: Guest, Member</td>
+</tr>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The date and time that the line was written to the database.This is used when there are multiple lines for each identity, such as when a change is detected, or if 24 hours have passed since the last database line was added.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of identity; possible values: User, ServiceAccount</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

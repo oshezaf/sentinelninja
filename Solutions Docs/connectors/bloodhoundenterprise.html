@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bloodhound Enterprise &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Bloodhound Enterprise</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/BHE_Logo.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>BloodHoundEnterprise</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">SpecterOps</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/bloodhound-enterprise.html">BloodHound Enterprise</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BloodHound%20Enterprise/Data%20Connectors/BloodHoundFunction.json">BloodHoundFunction.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Connector definition requires workspace key (SharedKey pattern)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+</tbody>
+</table>
+<p>The solution is designed to test Bloodhound Enterprise package creation process.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/bheattackpathsdata-cl.html"><code>BHEAttackPathsData_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
+- <strong>REST API Credentials/permissions</strong>: <strong>BloodHound Enterprise API key &amp; Id</strong> is required.  See the documentation to learn more about API on the <code>https://bloodhound.specterops.io/integrations/bloodhound-api/working-with-api</code>.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+<p><strong>NOTE:</strong> This connector uses Azure Functions to connect to a 'BloodHound Enterprise' to pull its logs into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
+</blockquote>
+<p><strong>STEP 1 - Retrieve BloodHound Enterprise API Key and ID</strong></p>
+<p>To enable the Azure Function to authenticate successfully and pull logs into Microsoft Sentinel, you must first obtain the API Key and ID from your BloodHound Enterprise instance. See the documentation to learn more about API on the <code>https://bloodhound.specterops.io/integrations/bloodhound-api/working-with-api</code>.</p>
+<p><strong>STEP 2 - Choose ONE from the following two deployment options to deploy the connector and the associated Azure Function</strong></p>
+<blockquote>
+<p><strong>IMPORTANT:</strong> Before deploying the 'BloodHound Enterprise' connector, have the Workspace ID  and Workspace Primary Key (can be copied from the following), as well as the 'BloodHound Enterprise' API authorization key(s) or Token, readily available.
+- <strong>Workspace ID</strong>: <code>WorkspaceId</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
+- <strong>Primary Key</strong>: <code>PrimaryKey</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+<p><strong>Option 1 - Azure Resource Manager (ARM) Template</strong></p>
+<p>Use this method for automated deployment of the 'BloodHound Enterprise' connector.</p>
+<ol>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below. </p>
+<p><a href=""><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. 
+3. Enter the <strong>Tenant URL</strong>, <strong>API Key</strong>, <strong>API ID</strong> 'and/or Other required fields'. </p>
+<blockquote>
+<p>Note: If using Azure Key Vault secrets for any of the values above, use the<code>@Microsoft.KeyVault(SecretUri={Security Identifier})</code>schema in place of the string values. Refer to <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Key Vault references documentation</a> for further details. 
+4. Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>. 
+5. Click <strong>Purchase</strong> to deploy.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Option 2 - Manual Deployment of Azure Functions</strong></p>
+<p>Use the following step-by-step instructions to deploy the 'BloodHound Enterprise' connector manually with Azure Functions.</p>
+<p><strong>1. Create a Function App</strong></p>
+<ol>
+<li>From the Azure Portal, navigate to <a href="https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2Fsites/kind/functionapp">Function App</a>.</li>
+<li>Click <strong>+ Create</strong> at the top.</li>
+<li>In the <strong>Basics</strong> tab, ensure Runtime stack is set to <strong>python 3.11</strong>. </li>
+<li>In the <strong>Hosting</strong> tab, ensure <strong>Plan type</strong> is set to <strong>'Consumption (Serverless)'</strong>.
+5.select Storage account</li>
+<li>'Add other required configurations'. </li>
+<li>'Make other preferable configuration changes', if needed, then click <strong>Create</strong>.</li>
+</ol>
+<p><strong>2. Import Function App Code(Zip deployment)</strong></p>
+<ol>
+<li>Install Azure CLI</li>
+<li>From terminal type <strong>az functionapp deployment source config-zip -g <ResourceGroup> -n <FunctionApp> --src <Zip File></strong> and hit enter. Set the <code>ResourceGroup</code> value to: your resource group name. Set the <code>FunctionApp</code> value to: your newly created function app name. Set the <code>Zip File</code> value to: <code>digitalshadowsConnector.zip</code>(path to your zip file). Note:- Download the zip file from the link - <a href="https://github.com/metron-labs/Azure-Sentinel/blob/bloodhound/Solutions/BloodHound/Data%20Connectors/BloodHoundAzureFunction.zip">Function App Code</a></li>
+</ol>
+<p><strong>3. Configure the Function App</strong></p>
+<ol>
+<li>In the Function App screen, click the Function App name and select <strong>Configuration</strong>.</li>
+<li>In the <strong>Application settings</strong> tab, select <strong>+ New application setting</strong>.</li>
+<li>Add each of the following 'x (number of)' application settings individually, under Name, with their respective string values (case-sensitive) under Value: 
+        DigitalShadowsAccountID
+        WorkspaceID
+        WorkspaceKey
+        DigitalShadowsKey
+        DigitalShadowsSecret
+        HistoricalDays
+        DigitalShadowsURL
+        ClassificationFilterOperation
+        HighVariabilityClassifications
+        FUNCTION_NAME
+        logAnalyticsUri (optional)
+(add any other settings required by the Function App)
+Set the <code>DigitalShadowsURL</code> value to: <code>https://api.searchlight.app/v1</code>
+Set the <code>HighVariabilityClassifications</code> value to: <code>exposed-credential,marked-document</code>
+Set the <code>ClassificationFilterOperation</code> value to: <code>exclude</code> for exclude function app or <code>include</code> for include function app <blockquote>
+<p>Note: If using Azure Key Vault secrets for any of the values above, use the<code>@Microsoft.KeyVault(SecretUri={Security Identifier})</code>schema in place of the string values. Refer to <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Azure Key Vault references documentation</a> for further details.
+ - Use logAnalyticsUri to override the log analytics API endpoint for dedicated cloud. For example, for public cloud, leave the value empty; for Azure GovUS cloud environment, specify the value in the following format: https://<CustomerId>.ods.opinsights.azure.us. </p>
+</blockquote>
+</li>
+<li>Once all application settings have been entered, click <strong>Save</strong>.</li>
+</ol>
+<p><strong>**STEP 3 - Register the Application in Microsoft Entra ID</strong></p>
+<ol>
+<li>
+<p><strong>Open the <a href="https://entra.microsoft.com/">Microsoft Entra ID page</a></strong>:
+   - Click the provided link to open the <strong>Microsoft Entra ID</strong> registration page in a new tab.
+   - Ensure you are logged in with an account that has <strong>Admin level</strong> permissions.</p>
+</li>
+<li>
+<p><strong>Create a New Application</strong>:
+   - In the <strong>Microsoft Entra ID portal</strong>, select <strong>App registrations</strong> mentioned on the left-hand side tab.
+   - Click on <strong>+ New registration</strong>.
+   - Fill out the following fields:</p>
+<ul>
+<li><strong>Name</strong>: Enter a name for the app (e.g., “BloodHound App”).</li>
+<li><strong>Supported account types</strong>: Choose <strong>Accounts in this organizational directory only</strong> (Default Directory only - Single tenant).</li>
+<li><strong>Redirect URI</strong>: Leave this blank unless required otherwise.</li>
+<li>Click <strong>Register</strong> to create the application.</li>
+</ul>
+</li>
+<li>
+<p><strong>Copy Application and Tenant IDs</strong>:
+   - Once the app is registered, note the <strong>Application (client) ID</strong> and <strong>Directory (tenant) ID</strong> from the <strong>Overview</strong> page. You’ll need these for the integration.</p>
+</li>
+<li>
+<p><strong>Create a Client Secret</strong>:
+   - In the <strong>Certificates &amp; secrets</strong> section, click <strong>+ New client secret</strong>.
+   - Add a description (e.g., 'BloodHound Secret') and set an expiration (e.g., 1 year).
+   - Click <strong>Add</strong>.
+   - <strong>Copy the client secret value immediately</strong>, as it will not be shown again.</p>
+</li>
+</ol>
+<p><strong>**STEP 4 - Assign the "Monitoring Metrics Publisher" Role to the App</strong></p>
+<ol>
+<li>
+<p><strong>Open the Resource Group in Azure Portal</strong>:
+   - Navigate to the <strong>Resource Group</strong> that contains the <strong>Log Analytics Workspace</strong> and <strong>Data Collection Rules (DCRs)</strong> where you want the app to push data.</p>
+</li>
+<li>
+<p><strong>Assign the Role</strong>:
+   - In the <strong>Resource Group</strong> menu, click on <strong>Access control (IAM)</strong> mentioned on the left-hand side tab ..
+   - Click on <strong>+ Add</strong> and select <strong>Add role assignment</strong>.
+   - In the <strong>Role</strong> dropdown, search for and select the <strong>Monitoring Metrics Publisher</strong> role.
+   - Under <strong>Assign access to</strong>, choose <strong>Azure AD user, group, or service principal</strong>.
+   - In the <strong>Select</strong> field, search for your registered app by <strong>name</strong> or <strong>client ID</strong>.
+   - Click <strong>Save</strong> to assign the role to the application.</p>
+</li>
+</ol>
+<p><strong>**STEP 5 - Deploy the ARM Template</strong></p>
+<ol>
+<li>
+<p><strong>Retrieve the Workspace ID</strong>:
+   - After assigning the role, you will need the <strong>Workspace ID</strong>.
+   - Navigate to the <strong>Log Analytics Workspace</strong> within the <strong>Resource Group</strong>.
+   - In the <strong>Overview</strong> section, locate the <strong>Workspace ID</strong> field under <strong>Workspace details</strong>.
+   - <strong>Copy the Workspace ID</strong> and keep it handy for the next steps.</p>
+</li>
+<li>
+<p><strong>Click the Deploy to Azure Button</strong>:
+   - <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmetron-labs%2FAzure-Sentinel%2Fbloodhound%2FSolutions%2FBloodHound%2FData%2520Connectors%2FDeployToAzure.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>.
+   - This will take you directly to the Azure portal to start the deployment.</p>
+</li>
+<li>
+<p><strong>Review and Customize Parameters</strong>:
+   - On the custom deployment page, ensure you’re deploying to the correct <strong>subscription</strong> and <strong>resource group</strong>.
+   - Fill in the parameters like <strong>workspace name</strong>, <strong>workspace ID</strong>, and <strong>workspace location</strong>.</p>
+</li>
+<li>
+<p><strong>Click Review + Create</strong> and then <strong>Create</strong> to deploy the resources.</p>
+</li>
+</ol>
+<p><strong>**STEP 6 - Verify DCE, DCR, and Log Analytics Table Setup</strong></p>
+<ol>
+<li>
+<p><strong>Check the Data Collection Endpoint (DCE)</strong>:
+   - After deploying, go to <strong>Azure Portal &gt; Data Collection Endpoints</strong>.
+   - Verify that the <strong>BloodHoundDCE</strong> endpoint has been created successfully.
+   - <strong>Copy the DCE Logs Ingestion URI</strong>, as you’ll need this for generating the webhook URL.</p>
+</li>
+<li>
+<p><strong>Confirm Data Collection Rule (DCR) Setup</strong>:
+   - Go to <strong>Azure Portal &gt; Data Collection Rules</strong>.
+   - Ensure the <strong>BloodHoundDCR</strong> rule is present.
+   - <strong>Copy the Immutable ID</strong> of the DCR from the Overview page, as you’ll need it for the webhook URL.</p>
+</li>
+<li>
+<p><strong>Validate Log Analytics Table</strong>:
+   - Navigate to your <strong>Log Analytics Workspace</strong> (linked to Microsoft Sentinel).
+   - Under the <strong>Tables</strong> section, verify that the <strong>BloodHoundTable_CL</strong> table has been created successfully and is ready to receive data.</p>
+</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

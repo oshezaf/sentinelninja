@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACSCallDiagnostics &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>ACSCallDiagnostics</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for ACSCallDiagnostics table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Azure Resources</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/acscalldiagnostics">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (38 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/acscalldiagnostics">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">Category</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The log category of the event. Logs with the same log category and resource type will have the same properties fields.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CodecName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Codec used for the media stream.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID for correlated events. Can be used to identify correlated events between multiple tables.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EndpointId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID of the endpoint.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EndpointType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the endpoint.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HealedDataRatioAvg</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Average healed data ratio for incoming audio.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HealedDataRatioMax</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Maximum healed data ratio for incoming audio.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Identifier</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The indentifier of the call used to correlate. Can be used to identify correlated events between multiple tables.</td>
+</tr>
+<tr>
+<td style="text-align: left;">JitterAvg</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Average delay of sending the packages in milliseconds.</td>
+</tr>
+<tr>
+<td style="text-align: left;">JitterBufferSizeAvg</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Average jitter buffer size in milliseconds.</td>
+</tr>
+<tr>
+<td style="text-align: left;">JitterBufferSizeMax</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Maximum jitter buffer size in milliseconds.</td>
+</tr>
+<tr>
+<td style="text-align: left;">JitterMax</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Max delay of sending the packages in milliseconds.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MediaType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of Media.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The operation associated with log record.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The API-version associated with the operation or version of the operation (if there is no API version).</td>
+</tr>
+<tr>
+<td style="text-align: left;">PacketLossRateAvg</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Average lost packages.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PacketLossRateMax</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Max lost packages.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PacketUtilization</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Utilized packets for the media stream.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ParticipantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID of the participant.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RecvFreezeDurationPerMinuteInMs</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Average receive freeze duration per minute in microseconds.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RecvResolutionHeight</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Receive average resolution height.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RoundTripTimeAvg</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Average time of a round trip in milliseconds.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RoundTripTimeMax</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Max time of a trip in milliseconds.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">StreamDirection</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The direction of the stream, can be inbound or outbound.</td>
+</tr>
+<tr>
+<td style="text-align: left;">StreamId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">ID of the stream.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) of when the log was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TPE</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Boolean value that identify Teams Phone Extensibility calls.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TransportType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the internet transport layer, it can be UDP, TCP or unknown.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">VideoBitRateAvg</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Average bitrate.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VideoBitRateMax</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Maximum bitrate.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VideoFrameRateAvg</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Average frames per second.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.communication/communicationservices</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

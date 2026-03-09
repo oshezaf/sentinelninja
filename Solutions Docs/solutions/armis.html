@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Armis &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Armis</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Armis.svg" alt="Armis Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Armis Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.armis.com/">https://support.armis.com/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.2.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">{Armis - support@armis.com}</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-08-02</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2024-08-23</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Armis">Armis</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.armis.com/">Armis</a> Solution gives the capability to ingest Armis Devices, Alerts and device Activities into Microsoft Sentinel through the Armis REST API.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>2 data connector(s)</strong> (plus 2 discovered⚠️):</p>
+<ul>
+<li><a href="../connectors/armisactivities.html">Armis Activities</a> ⚠️</li>
+<li><a href="../connectors/armisalerts.html">Armis Alerts</a> ⚠️</li>
+<li><a href="../connectors/armisalertsactivities.html">Armis Alerts Activities</a></li>
+<li><a href="../connectors/armisdevices.html">Armis Devices</a></li>
+</ul>
+<p><em>⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.</em></p>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>3 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/armis-activities-cl.html"><code>Armis_Activities_CL</code></a></td>
+<td><a href="../connectors/armisactivities.html">Armis Activities</a>, <a href="../connectors/armisalertsactivities.html">Armis Alerts Activities</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/armis-alerts-cl.html"><code>Armis_Alerts_CL</code></a></td>
+<td><a href="../connectors/armisalerts.html">Armis Alerts</a>, <a href="../connectors/armisalertsactivities.html">Armis Alerts Activities</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/armis-devices-cl.html"><code>Armis_Devices_CL</code></a></td>
+<td><a href="../connectors/armisdevices.html">Armis Devices</a></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>4 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/armis-armis-update-alert-status-f60ff46e.html">Armis Update Alert Status</a></td>
+<td style="text-align: left;">Armis Update Alert Status playbook would be responsible to update the Alert status from the sentinel...</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/armisactivities.html">ArmisActivities</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/armis-activities-cl.html"><code>Armis_Activities_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/armisalerts.html">ArmisAlerts</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/armis-alerts-cl.html"><code>Armis_Alerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/armisdevice.html">ArmisDevice</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/armis-devices-cl.html"><code>Armis_Devices_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.2.0</td>
+<td>05-12-2025</td>
+<td>Log Ingestion Support.</td>
+</tr>
+<tr>
+<td>3.1.1</td>
+<td>19-05-2025</td>
+<td>Updated Armis AlertActivity and Armis Device Data connectors to add keyvault for storing Armis Access Token and Severity parameter in AlertActivity.</td>
+</tr>
+<tr>
+<td>3.1.0</td>
+<td>11-09-2024</td>
+<td>Updated Armis Alerts Data connector to ingest Armis Activities associated with only Armis Alerts.</td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>26-08-2024</td>
+<td>Updated the python runtime version to <strong>3.11</strong></td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>03-05-2024</td>
+<td>Repackaged for parser issue fix on reinstall</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>15-04-2024</td>
+<td>Added Deploy to Azure Government button in <strong>Data connectors</strong></td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>03-11-2023</td>
+<td>Fixed vulnerability related issue by passing the scret key in the body of the request instead of the param in the data connector and playbook</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

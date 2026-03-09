@@ -1,0 +1,3072 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parsers Index &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Parsers Index</h1>
+<p>This page lists all non-ASIM parsers available in Microsoft Sentinel.</p>
+<p>Parsers are KQL functions that transform and normalize log data for easier querying.</p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <strong>Parsers</strong> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<hr />
+<p><strong>552 parsers</strong> (35 legacy, 489 solution, 28 discovered). See <a href="../statistics.html">📊 Statistics</a> for detailed breakdowns.</p>
+<p><em>Legacy parsers are located in the top-level <code>/Parsers</code> folder. Solution parsers are included within specific solution packages.</em></p>
+<blockquote>
+<p>⚠️ Discovered parsers were found in solution folders but are not listed in the Solution JSON file. They may be legacy items, under development, or excluded from the official solution package.</p>
+</blockquote>
+<hr />
+<p><strong>Jump to:</strong> <a href="#a">A</a> | <a href="#b">B</a> | <a href="#c">C</a> | <a href="#d">D</a> | <a href="#e">E</a> | <a href="#f">F</a> | <a href="#g">G</a> | <a href="#h">H</a> | <a href="#i">I</a> | <a href="#j">J</a> | <a href="#l">L</a> | <a href="#m">M</a> | <a href="#n">N</a> | <a href="#o">O</a> | <a href="#p">P</a> | <a href="#q">Q</a> | <a href="#r">R</a> | <a href="#s">S</a> | <a href="#t">T</a> | <a href="#u">U</a> | <a href="#v">V</a> | <a href="#w">W</a> | <a href="#z">Z</a></p>
+<blockquote>
+<p><strong>Source:</strong> 📦 Solution | 📂 Legacy</p>
+</blockquote>
+<h2>A</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="aaduserinfo.html">AADUserInfo</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">AADUserInfo_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="adoauditlogs.html">ADOAuditLogs</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/azuredevopsauditing.html">AzureDevOpsAuditing</a></td>
+<td style="text-align: left;">ADOAuditLogs_CL, AzureDevOpsAuditing</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="afad-parser.html">afad_parser</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/tenable-app.html">Tenable App</a></td>
+<td style="text-align: left;">Tenable_IE_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="afad-parser.html">afad_parser</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/tenablead.html">TenableAD</a></td>
+<td style="text-align: left;">Tenable_ad_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="afad-parser.html">afad_parser</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/tenablead.html">TenableAD</a></td>
+<td style="text-align: left;">Tenable_ad_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="afad-parser.kql.html">afad_parser.kql</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/alsid-for-ad.html">Alsid For AD</a></td>
+<td style="text-align: left;">AlsidForADLog_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="aishield.html">AIShield</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/aishield-ai-security-monitoring.html">AIShield AI Security Monitoring</a></td>
+<td style="text-align: left;">AIShield_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="akamaisiemevent.html">AkamaiSIEMEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/akamai-security-events.html">Akamai Security Events</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-advisory.html">Alerts_advisory</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-assets.html">Alerts_assets</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-bit-bucket.html">Alerts_bit_bucket</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-cloud-storage.html">Alerts_cloud_storage</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-compromised-endpoints-cookies.html">Alerts_compromised_endpoints_cookies</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-compromised-files.html">Alerts_compromised_files</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-cyber-crime-forums.html">Alerts_cyber_crime_forums</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-darkweb-data-breaches.html">Alerts_darkweb_data_breaches</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-darkweb-marketplaces.html">Alerts_darkweb_marketplaces</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-darkweb-ransomware.html">Alerts_darkweb_ransomware</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-defacement-content.html">Alerts_defacement_content</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-defacement-keyword.html">Alerts_defacement_keyword</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-defacement-url.html">Alerts_defacement_url</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-discord.html">Alerts_discord</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-docker.html">Alerts_docker</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-domain-expiry.html">Alerts_domain_expiry</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-domain-watchlist.html">Alerts_domain_watchlist</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-flash-report.html">Alerts_flash_report</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-github.html">Alerts_github</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-hacktivism.html">Alerts_hacktivism</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-i2p.html">Alerts_i2p</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-iocs.html">Alerts_iocs</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-ip-risk-score.html">Alerts_ip_risk_score</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-leaked-credentials.html">Alerts_leaked_credentials</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-malicious-ads.html">Alerts_malicious_ads</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-mobile-apps.html">Alerts_mobile_apps</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-new-vulnerability.html">Alerts_new_vulnerability</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-news-feed.html">Alerts_news_feed</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-osint.html">Alerts_osint</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-ot-ics.html">Alerts_ot_ics</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-pastebin.html">Alerts_pastebin</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-phishing.html">Alerts_phishing</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-physical-threats.html">Alerts_physical_threats</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-postman.html">Alerts_postman</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-product-vulnerability.html">Alerts_product_vulnerability</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-ransomware-updates.html">Alerts_ransomware_updates</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-social-media-monitoring.html">Alerts_social_media_monitoring</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-ssl-expiry.html">Alerts_ssl_expiry</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-stealer-logs.html">Alerts_stealer_logs</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-subdomains.html">Alerts_subdomains</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-suspicious-domains.html">Alerts_suspicious_domains</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-telegram-mentions.html">Alerts_telegram_mentions</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-tor-links.html">Alerts_tor_links</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-vulnerability.html">Alerts_vulnerability</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alerts-web-applications.html">Alerts_web_applications</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+<td style="text-align: left;">CybleVisionAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alertscompromisedcredential.html">AlertsCompromisedCredential</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">alertscompromisedcredentialdata_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alertsctep.html">AlertsCtep</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">alertsctepdata_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alertsdlp.html">AlertsDLP</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">alertsdlpdata_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alertsmalsite.html">AlertsMalsite</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">alertsmalsitedata_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alertsmalware.html">AlertsMalware</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">alertsmalwaredata_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alertspolicy.html">AlertsPolicy</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">alertspolicydata_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alertsquarantine.html">AlertsQuarantine</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">alertsquarantinedata_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alertsremediation.html">AlertsRemediation</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">alertsremediationdata_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alertssecurityassessment.html">AlertsSecurityAssessment</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">alertssecurityassessmentdata_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alertsuba.html">AlertsUba</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">alertsubadata_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="alicloud.html">AliCloud</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/alibaba-cloud.html">Alibaba Cloud</a></td>
+<td style="text-align: left;">AliCloud_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="apachehttpserver.html">ApacheHTTPServer</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/apachehttpserver.html">ApacheHTTPServer</a></td>
+<td style="text-align: left;">ApacheHTTPServer_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="apigeex.html">ApigeeX</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/google-apigee.html">Google Apigee</a></td>
+<td style="text-align: left;">ApigeeX_CL, GoogleApigeeXV2_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="apigeexv2.html">ApigeeXv2</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/google-apigee.html">Google Apigee</a></td>
+<td style="text-align: left;">ApigeeXV2_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="armisactivities.html">ArmisActivities</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/armis.html">Armis</a></td>
+<td style="text-align: left;">Armis_Activities_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="armisalerts.html">ArmisAlerts</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/armis.html">Armis</a></td>
+<td style="text-align: left;">Armis_Alerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="armisdevice.html">ArmisDevice</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/armis.html">Armis</a></td>
+<td style="text-align: left;">Armis_Devices_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="arubaclearpass.html">ArubaClearPass</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/aruba-clearpass.html">Aruba ClearPass</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationhalcyon.html">ASimAuthenticationHalcyon</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/halcyon.html">Halcyon</a></td>
+<td style="text-align: left;">HalcyonAuthenticationEvents_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationopensystems.html">ASimAuthenticationOpenSystems</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/open-systems.html">Open Systems</a></td>
+<td style="text-align: left;">OpenSystemsAuthenticationLogs_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimdnshalcyon.html">ASimDnsHalcyon</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/halcyon.html">Halcyon</a></td>
+<td style="text-align: left;">HalcyonDnsActivity_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimdnsmicrosoftnxlog.html">ASimDnsMicrosoftNXLog</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/nxlogdnslogs.html">NXLogDNSLogs</a></td>
+<td style="text-align: left;">_Im_Dns</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimfileeventhalcyon.html">ASimFileEventHalcyon</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/halcyon.html">Halcyon</a></td>
+<td style="text-align: left;">HalcyonFileActivity_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionhalcyon.html">ASimNetworkSessionHalcyon</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/halcyon.html">Halcyon</a></td>
+<td style="text-align: left;">HalcyonNetworkSession_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionopensystemsfirewall.html">ASimNetworkSessionOpenSystemsFirewall</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/open-systems.html">Open Systems</a></td>
+<td style="text-align: left;">OpenSystemsFirewallLogs_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimprocesseventhalcyon.html">ASimProcessEventHalcyon</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/halcyon.html">Halcyon</a></td>
+<td style="text-align: left;">HalcyonProcessEvent_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimwebsessionopensystemssecurewebgateway.html">ASimWebSessionOpenSystemsSecureWebGateway</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/open-systems.html">Open Systems</a></td>
+<td style="text-align: left;">OpenSystemsProxyLogs_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="assignedipaddress.html">AssignedIPAddress</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/microsoftdefenderforendpoint.html">MicrosoftDefenderForEndpoint</a></td>
+<td style="text-align: left;">DeviceNetworkInfo</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="auth0.html">Auth0</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/auth0.html">Auth0</a></td>
+<td style="text-align: left;">Auth0AM_CL, Auth0_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="auth0am.html">Auth0AM</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/auth0.html">Auth0</a></td>
+<td style="text-align: left;">Auth0AM_CL, Auth0Logs_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="awarenessperformancedetails.html">AwarenessPerformanceDetails</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/mimecast.html">Mimecast</a></td>
+<td style="text-align: left;">Awareness_Performance_Details_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="awarenesssafescore.html">AwarenessSafeScore</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/mimecast.html">Mimecast</a></td>
+<td style="text-align: left;">Awareness_SafeScore_Details_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="awarenessuserdata.html">AwarenessUserData</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/mimecast.html">Mimecast</a></td>
+<td style="text-align: left;">Awareness_User_Data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="awarenesswatchlist.html">AwarenessWatchlist</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/mimecast.html">Mimecast</a></td>
+<td style="text-align: left;">Awareness_Watchlist_Details_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="azurefirewallapplicationrule.html">AzureFirewallApplicationRule</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">AzureDiagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="azurefirewalldnsproxy.html">AzureFirewallDnsProxy</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="azurefirewallnetworkrule.html">AzureFirewallNetworkRule</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">AzureDiagnostics</td>
+</tr>
+</tbody>
+</table>
+<h2>B</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="bitglass.html">Bitglass</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/bitglass.html">Bitglass</a></td>
+<td style="text-align: left;">BitglassLogs_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="bitsightalerts.html">BitSightAlerts</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/bitsight.html">BitSight</a></td>
+<td style="text-align: left;">BitsightAlerts_data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="bitsightbreaches.html">BitSightBreaches</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/bitsight.html">BitSight</a></td>
+<td style="text-align: left;">BitsightBreaches_data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="bitsightcompanydetails.html">BitSightCompanyDetails</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/bitsight.html">BitSight</a></td>
+<td style="text-align: left;">BitsightCompany_details_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="bitsightcompanyratings.html">BitSightCompanyRatings</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/bitsight.html">BitSight</a></td>
+<td style="text-align: left;">BitsightCompany_rating_details_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="bitsightdiligencehistoricalstatistics.html">BitSightDiligenceHistoricalStatistics</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/bitsight.html">BitSight</a></td>
+<td style="text-align: left;">BitsightDiligence_historical_statistics_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="bitsightdiligencestatistics.html">BitSightDiligenceStatistics</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/bitsight.html">BitSight</a></td>
+<td style="text-align: left;">BitsightDiligence_statistics_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="bitsightfindingsdata.html">BitSightFindingsData</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/bitsight.html">BitSight</a></td>
+<td style="text-align: left;">BitsightFindings_data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="bitsightfindingssummary.html">BitSightFindingsSummary</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/bitsight.html">BitSight</a></td>
+<td style="text-align: left;">BitsightFindings_summary_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="bitsightgraphdata.html">BitSightGraphData</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/bitsight.html">BitSight</a></td>
+<td style="text-align: left;">BitsightGraph_data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="bitsightindustrialstatistics.html">BitSightIndustrialStatistics</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/bitsight.html">BitSight</a></td>
+<td style="text-align: left;">BitsightIndustrial_statistics_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="bitsightobservationstatistics.html">BitSightObservationStatistics</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/bitsight.html">BitSight</a></td>
+<td style="text-align: left;">BitsightObservation_statistics_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="bitwardeneventlogs.html">BitwardenEventLogs</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/bitwarden.html">Bitwarden</a></td>
+<td style="text-align: left;">BitwardenEventLogs_CL, BitwardenGroups_CL, ...</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="boxevents.html">BoxEvents</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/box.html">Box</a></td>
+<td style="text-align: left;">BoxEventsV2_CL, BoxEvents_CL</td>
+</tr>
+</tbody>
+</table>
+<h2>C</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="cassandraauditlog.html">CassandraAuditLog</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">CassandraAuditLog_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cgfwfirewallactivity.html">CGFWFirewallActivity</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/barracuda-cloudgen-firewall.html">Barracuda CloudGen Firewall</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cisco-umbrella.html">Cisco_Umbrella</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/ciscoumbrella.html">CiscoUmbrella</a></td>
+<td style="text-align: left;">Cisco_Umbrella_audit_CL, Cisco_Umbrella_cloudfirewall_CL, ...</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="ciscoacievent.html">CiscoACIEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cisco-aci.html">Cisco ACI</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="ciscoduo.html">CiscoDuo</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/ciscoduosecurity.html">CiscoDuoSecurity</a></td>
+<td style="text-align: left;">CiscoDuo_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="ciscoiseevent.html">CiscoISEEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cisco-ise.html">Cisco ISE</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="ciscomeraki.html">CiscoMeraki</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/ciscomeraki.html">CiscoMeraki</a></td>
+<td style="text-align: left;">CiscoMerakiNativePoller_CL, Syslog, ...</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="ciscosdwannetflow.html">CiscoSDWANNetflow</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/cisco-sd-wan.html">Cisco SD-WAN</a></td>
+<td style="text-align: left;">CiscoSDWANNetflow_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="ciscosecureendpoint.html">CiscoSecureEndpoint</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cisco-secure-endpoint.html">Cisco Secure Endpoint</a></td>
+<td style="text-align: left;">CiscoSecureEndpointAuditLogsV2_CL, CiscoSecureEndpointEventsV2_CL, ...</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="ciscosegevent.html">CiscoSEGEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/ciscoseg.html">CiscoSEG</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="ciscosyslogfw6logsummary.html">CiscoSyslogFW6LogSummary</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/cisco-sd-wan.html">Cisco SD-WAN</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="ciscosyslogutd.html">CiscoSyslogUTD</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/cisco-sd-wan.html">Cisco SD-WAN</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="ciscoucs.html">CiscoUCS</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cisco-ucs.html">Cisco UCS</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="ciscowsaevent.html">CiscoWSAEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/ciscowsa.html">CiscoWSA</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="citrixadcevent.html">CitrixADCEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/citrix-adc.html">Citrix ADC</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="citrixadceventold.html">CitrixADCEventOld</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/citrix-adc.html">Citrix ADC</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="clarotyevent.html">ClarotyEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/claroty.html">Claroty</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cloudflare.html">Cloudflare</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cloudflare.html">Cloudflare</a></td>
+<td style="text-align: left;">CloudflareV2_CL, Cloudflare_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cloudflare.html">Cloudflare</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cloudflare-ccf.html">Cloudflare CCF</a></td>
+<td style="text-align: left;">CloudflareV2_CL, Cloudflare_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="confluenceaudit.html">ConfluenceAudit</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/atlassianconfluenceaudit.html">AtlassianConfluenceAudit</a></td>
+<td style="text-align: left;">Confluence_Audit_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="contrastadr.html">ContrastADR</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/contrastadr.html">ContrastADR</a></td>
+<td style="text-align: left;">ContrastADR_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="contrastadr-incident.html">ContrastADR_Incident</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/contrastadr.html">ContrastADR</a></td>
+<td style="text-align: left;">ContrastADRIncident_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight.html">Corelight</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-anomaly.html">corelight_anomaly</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_anomaly_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-bacnet.html">corelight_bacnet</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_bacnet_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-capture-loss.html">corelight_capture_loss</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_capture_loss_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-cip.html">corelight_cip</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_cip_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-conn.html">corelight_conn</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_conn_CL, Corelight_v2_conn_long_CL, ...</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-conn-agg.html">corelight_conn_agg</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_conn_agg_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-conn-long.html">corelight_conn_long</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_conn_long_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-conn-red.html">corelight_conn_red</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_conn_red_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-corelight-burst.html">corelight_corelight_burst</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_corelight_burst_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-corelight-metrics-disk.html">corelight_corelight_metrics_disk</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_corelight_metrics_disk_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-corelight-metrics-iface.html">corelight_corelight_metrics_iface</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_corelight_metrics_iface_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-corelight-metrics-memory.html">corelight_corelight_metrics_memory</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_corelight_metrics_memory_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-corelight-metrics-system.html">corelight_corelight_metrics_system</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_corelight_metrics_system_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-corelight-metrics-zeek-doctor.html">corelight_corelight_metrics_zeek_doctor</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_corelight_metrics_zeek_doctor_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-corelight-overall-capture-loss.html">corelight_corelight_overall_capture_loss</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_corelight_overall_capture_loss_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-corelight-profiling.html">corelight_corelight_profiling</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_corelight_profiling_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-datared.html">corelight_datared</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_datared_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-dce-rpc.html">corelight_dce_rpc</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_dce_rpc_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-dga.html">corelight_dga</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_dga_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-dhcp.html">corelight_dhcp</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_dhcp_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-dnp3.html">corelight_dnp3</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_dnp3_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-dns.html">corelight_dns</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_dns_CL, Corelight_v2_dns_red_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-dns-agg.html">corelight_dns_agg</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_dns_agg_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-dns-red.html">corelight_dns_red</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_dns_red_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-dpd.html">corelight_dpd</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_dpd_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-encrypted-dns.html">corelight_encrypted_dns</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_encrypted_dns_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-enip.html">corelight_enip</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_enip_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-enip-debug.html">corelight_enip_debug</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_enip_debug_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-enip-list-identity.html">corelight_enip_list_identity</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_enip_list_identity_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-etc-viz.html">corelight_etc_viz</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_etc_viz_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-files.html">corelight_files</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_files_CL, Corelight_v2_files_red_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-files-agg.html">corelight_files_agg</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_files_agg_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-files-red.html">corelight_files_red</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_files_red_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-first-seen.html">corelight_first_seen</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_first_seen_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-ftp.html">corelight_ftp</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_ftp_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-generic-dns-tunnels.html">corelight_generic_dns_tunnels</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_generic_dns_tunnels_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-generic-icmp-tunnels.html">corelight_generic_icmp_tunnels</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_generic_icmp_tunnels_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-http.html">corelight_http</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_http2_CL, Corelight_v2_http_CL, ...</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-http2.html">corelight_http2</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_http2_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-http-agg.html">corelight_http_agg</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_http_agg_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-http-red.html">corelight_http_red</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_http_red_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-icmp-specific-tunnels.html">corelight_icmp_specific_tunnels</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_icmp_specific_tunnels_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-intel.html">corelight_intel</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_intel_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-ipsec.html">corelight_ipsec</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_ipsec_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-irc.html">corelight_irc</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_irc_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-iso-cotp.html">corelight_iso_cotp</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_iso_cotp_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-kerberos.html">corelight_kerberos</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_kerberos_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-known-certs.html">corelight_known_certs</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_known_certs_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-known-devices.html">corelight_known_devices</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_known_devices_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-known-domains.html">corelight_known_domains</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_known_domains_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-known-hosts.html">corelight_known_hosts</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_known_hosts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-known-names.html">corelight_known_names</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_known_names_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-known-remotes.html">corelight_known_remotes</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_known_remotes_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-known-services.html">corelight_known_services</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_known_services_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-known-users.html">corelight_known_users</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_known_users_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-local-subnets.html">corelight_local_subnets</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_local_subnets_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-local-subnets-dj.html">corelight_local_subnets_dj</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_local_subnets_dj_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-local-subnets-graphs.html">corelight_local_subnets_graphs</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_local_subnets_graphs_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-log4shell.html">corelight_log4shell</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_log4shell_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-modbus.html">corelight_modbus</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_modbus_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-mqtt-connect.html">corelight_mqtt_connect</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_mqtt_connect_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-mqtt-publish.html">corelight_mqtt_publish</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_mqtt_publish_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-mqtt-subscribe.html">corelight_mqtt_subscribe</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_mqtt_subscribe_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-mysql.html">corelight_mysql</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_mysql_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-notice.html">corelight_notice</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_notice_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-ntlm.html">corelight_ntlm</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_ntlm_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-ntp.html">corelight_ntp</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_ntp_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-ocsp.html">corelight_ocsp</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_ocsp_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-openflow.html">corelight_openflow</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_openflow_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-packet-filter.html">corelight_packet_filter</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_packet_filter_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-pe.html">corelight_pe</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_pe_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-profinet.html">corelight_profinet</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_profinet_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-profinet-dce-rpc.html">corelight_profinet_dce_rpc</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_profinet_dce_rpc_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-profinet-debug.html">corelight_profinet_debug</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_profinet_debug_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-radius.html">corelight_radius</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_radius_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-rdp.html">corelight_rdp</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_rdp_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-reporter.html">corelight_reporter</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_reporter_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-rfb.html">corelight_rfb</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_rfb_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-s7comm.html">corelight_s7comm</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_s7comm_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-signatures.html">corelight_signatures</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_signatures_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-sip.html">corelight_sip</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_sip_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-smartpcap.html">corelight_smartpcap</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_smartpcap_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-smartpcap-stats.html">corelight_smartpcap_stats</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_smartpcap_stats_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-smb-files.html">corelight_smb_files</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_smb_files_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-smb-mapping.html">corelight_smb_mapping</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_smb_mapping_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-smtp.html">corelight_smtp</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_smtp_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-smtp-links.html">corelight_smtp_links</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_smtp_links_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-snmp.html">corelight_snmp</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_snmp_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-socks.html">corelight_socks</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_socks_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-software.html">corelight_software</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_software_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-specific-dns-tunnels.html">corelight_specific_dns_tunnels</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_specific_dns_tunnels_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-ssh.html">corelight_ssh</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_ssh_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-ssl.html">corelight_ssl</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_ssl_CL, Corelight_v2_ssl_red_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-ssl-agg.html">corelight_ssl_agg</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_ssl_agg_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-ssl-red.html">corelight_ssl_red</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_ssl_red_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-stats.html">corelight_stats</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_stats_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-stepping.html">corelight_stepping</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_stepping_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-stun.html">corelight_stun</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_stun_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-stun-nat.html">corelight_stun_nat</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_stun_nat_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-suri-aggregations.html">corelight_suri_aggregations</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">impact_score</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-suricata-corelight.html">corelight_suricata_corelight</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_suricata_corelight_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-suricata-eve.html">corelight_suricata_eve</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_suricata_eve_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-suricata-stats.html">corelight_suricata_stats</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_suricata_stats_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-suricata-zeek-stats.html">corelight_suricata_zeek_stats</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_suricata_zeek_stats_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-syslog.html">corelight_syslog</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_syslog_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-tds.html">corelight_tds</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_tds_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-tds-rpc.html">corelight_tds_rpc</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_tds_rpc_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-tds-sql-batch.html">corelight_tds_sql_batch</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_tds_sql_batch_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-traceroute.html">corelight_traceroute</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_traceroute_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-tunnel.html">corelight_tunnel</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_tunnel_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-unknown-smartpcap.html">corelight_unknown_smartpcap</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_unknown_smartpcap_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-util-stats.html">corelight_util_stats</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_util_stats_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-vpn.html">corelight_vpn</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_vpn_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-weird.html">corelight_weird</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_weird_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-weird-agg.html">corelight_weird_agg</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_weird_agg_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-weird-red.html">corelight_weird_red</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_weird_red_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-weird-stats.html">corelight_weird_stats</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_weird_stats_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-wireguard.html">corelight_wireguard</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_wireguard_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-x509.html">corelight_x509</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_x509_CL, Corelight_v2_x509_red_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-x509-red.html">corelight_x509_red</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_x509_red_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="corelight-zeek-doctor.html">corelight_zeek_doctor</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;">Corelight_v2_zeek_doctor_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cortexxdr-incidents-cl.html">CortexXDR_Incidents_CL</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cortex-xdr.html">Cortex XDR</a></td>
+<td style="text-align: left;">CortexXDR_Incidents_CL, PaloAltoCortexXDR_Incidents_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="criblaccess.html">CriblAccess</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cribl.html">Cribl</a></td>
+<td style="text-align: left;">CriblAccess_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="criblaudit.html">CriblAudit</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cribl.html">Cribl</a></td>
+<td style="text-align: left;">CriblAudit_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="criblinternal.html">CriblInternal</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cribl.html">Cribl</a></td>
+<td style="text-align: left;">CriblInternal_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cribluiaccess.html">CriblUIAccess</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cribl.html">Cribl</a></td>
+<td style="text-align: left;">CriblUIAccess_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="crowdstrikefalconeventstream.html">CrowdStrikeFalconEventStream</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="crowdstrikereplicator.html">CrowdStrikeReplicator</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></td>
+<td style="text-align: left;">CrowdStrikeReplicatorV2, CrowdstrikeReplicatorLogs_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="crowdstrikereplicator.html">CrowdStrikeReplicator</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></td>
+<td style="text-align: left;">CrowdStrikeReplicatorV2, CrowdstrikeReplicatorLogs_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="crowdstrikereplicatorv2.html">CrowdStrikeReplicatorV2</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></td>
+<td style="text-align: left;">ASimAuditEventLogs, ASimAuthenticationEventLogs, ...</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cyberarkepm.html">CyberArkEPM</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cyberarkepm.html">CyberArkEPM</a></td>
+<td style="text-align: left;">CyberArkEPM_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cylanceprotect.html">CylancePROTECT</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/blackberry-cylanceprotect.html">Blackberry CylancePROTECT</a></td>
+<td style="text-align: left;">Syslog, syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cylanceprotect-old.html">CylancePROTECT-old</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/blackberry-cylanceprotect.html">Blackberry CylancePROTECT</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cymruscoutaccountusage.html">CymruScoutAccountUsage</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></td>
+<td style="text-align: left;">Cymru_Scout_Account_Usage_Data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cymruscoutcommunicationsdata.html">CymruScoutCommunicationsData</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></td>
+<td style="text-align: left;">Communication_Data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cymruscoutcorrelate.html">CymruScoutCorrelate</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></td>
+<td style="text-align: left;">ASimAuditEvent, ASimAuthentication, ...</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cymruscoutdomain.html">CymruScoutDomain</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></td>
+<td style="text-align: left;">Cymru_Scout_Domain_Data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cymruscoutdomaindata.html">CymruScoutDomainData</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></td>
+<td style="text-align: left;">Domain_Data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cymruscoutfingerprintsdata.html">CymruScoutFingerprintsData</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></td>
+<td style="text-align: left;">Fingerprints_Data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cymruscoutidentity.html">CymruScoutIdentity</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></td>
+<td style="text-align: left;">Identity_Data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cymruscoutip.html">CymruScoutIP</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></td>
+<td style="text-align: left;">Cymru_Scout_IP_Data_Details_CL, Cymru_Scout_IP_Data_Foundation_CL, ...</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cymruscoutopenportsdata.html">CymruScoutOpenPortsData</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></td>
+<td style="text-align: left;">Open_Ports_Data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cymruscoutpdnsdata.html">CymruScoutPdnsData</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></td>
+<td style="text-align: left;">PDNS_Data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cymruscoutprotobyip.html">CymruScoutProtoByIP</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></td>
+<td style="text-align: left;">Proto_By_IP_Data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cymruscoutsummary.html">CymruScoutSummary</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></td>
+<td style="text-align: left;">Summary_Details_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cymruscoutsummarytopcerts.html">CymruScoutSummaryTopCerts</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></td>
+<td style="text-align: left;">Summary_Details_Top_Certs_Data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cymruscoutsummarytopfingerprints.html">CymruScoutSummaryTopFingerprints</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></td>
+<td style="text-align: left;">Summary_Details_Top_Fingerprints_Data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cymruscoutsummarytopopenports.html">CymruScoutSummaryTopOpenPorts</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></td>
+<td style="text-align: left;">Summary_Details_Top_Open_Ports_Data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cymruscoutsummarytoppdns.html">CymruScoutSummaryTopPdns</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></td>
+<td style="text-align: left;">Summary_Details_Top_Pdns_Data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cymruscouttopasnsbyip.html">CymruScoutTopAsnsByIP</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></td>
+<td style="text-align: left;">Top_Asns_By_IP_Data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cymruscouttopcountrycodesbyip.html">CymruScoutTopCountryCodesByIP</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></td>
+<td style="text-align: left;">Top_Country_Codes_By_IP_Data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cymruscouttopservicesbyip.html">CymruScoutTopServicesByIP</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></td>
+<td style="text-align: left;">Top_Services_By_IP_Data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cymruscouttoptagsbyip.html">CymruScoutTopTagsByIP</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></td>
+<td style="text-align: left;">Top_Tags_By_IP_Data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cymruscoutwhois.html">CymruScoutWhois</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></td>
+<td style="text-align: left;">Whois_Data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cymruscoutx509data.html">CymruScoutX509Data</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></td>
+<td style="text-align: left;">X509_Data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cynerioevent-authentication.html">CynerioEvent_Authentication</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/cynerio.html">Cynerio</a></td>
+<td style="text-align: left;">CynerioEvent_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="cynerioevent-networksession.html">CynerioEvent_NetworkSession</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/cynerio.html">Cynerio</a></td>
+<td style="text-align: left;">CynerioEvent_CL</td>
+</tr>
+</tbody>
+</table>
+<h2>D</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="dataminrpulsealerts.html">DataminrPulseAlerts</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/dataminr-pulse.html">Dataminr Pulse</a></td>
+<td style="text-align: left;">DataminrPulse_Alerts_CL, watchlist</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="dataminrpulsecyberalerts.html">DataminrPulseCyberAlerts</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/dataminr-pulse.html">Dataminr Pulse</a></td>
+<td style="text-align: left;">DataminrPulse_Alerts_CL, watchlist</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="dataversesharepointsites.html">DataverseSharePointSites</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a></td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="defendauditdata.html">DefendAuditData</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/egress-defend.html">Egress Defend</a></td>
+<td style="text-align: left;">EgressDefend_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="devicefromip.html">Devicefromip</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/microsoftdefenderforendpoint.html">MicrosoftDefenderForEndpoint</a></td>
+<td style="text-align: left;">DeviceNetworkInfo</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="digitalguardiandlpevent.html">DigitalGuardianDLPEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/digital-guardian-data-loss-prevention.html">Digital Guardian Data Loss Prevention</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="domaintoolsdnsactivity.html">DomainToolsDNSActivity</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/domaintools.html">DomainTools</a></td>
+<td style="text-align: left;">DomainToolsDomainEnrichment_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="dragosnotificationstosentinel.html">DragosNotificationsToSentinel</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/dragos.html">Dragos</a></td>
+<td style="text-align: left;">SecurityAlert</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="dragospullnotificationstosentinel.html">DragosPullNotificationsToSentinel</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/dragos.html">Dragos</a></td>
+<td style="text-align: left;">DragosAlerts_CL, SecurityAlert</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="dragospushnotificationstosentinel.html">DragosPushNotificationsToSentinel</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/dragos.html">Dragos</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="dragosseveritytosentinelseverity.html">DragosSeverityToSentinelSeverity</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/dragos.html">Dragos</a></td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="dsp-parser.html">dsp_parser</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/semperis-directory-services-protector.html">Semperis Directory Services Protector</a></td>
+<td style="text-align: left;">SecurityEvent</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="dstimcorrelatedlogs.html">DSTIMCorrelatedLogs</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">DSTIMAccess_CL, DSTIMClassification_CL, ...</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="duosecurityadministrator.html">DuoSecurityAdministrator</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">DuoSecurityAdministrator_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="duosecurityauthentication.html">DuoSecurityAuthentication</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">DuoSecurityAuthentication_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="duosecurityofflineenrollment.html">DuoSecurityOfflineEnrollment</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">DuoSecurityOfflineEnrollment_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="duosecuritytelephony.html">DuoSecurityTelephony</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">DuoSecurityTelephony_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="duosecuritytrustmonitor.html">DuoSecurityTrustMonitor</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">DuoSecurityTrustMonitor_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="dynatraceattacks.html">DynatraceAttacks</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/dynatrace.html">Dynatrace</a></td>
+<td style="text-align: left;">DynatraceAttacks_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="dynatraceauditlogs.html">DynatraceAuditLogs</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/dynatrace.html">Dynatrace</a></td>
+<td style="text-align: left;">DynatraceAuditLogs_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="dynatraceproblems.html">DynatraceProblems</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/dynatrace.html">Dynatrace</a></td>
+<td style="text-align: left;">DynatraceProblems_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="dynatracesecurityproblems.html">DynatraceSecurityProblems</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/dynatrace.html">Dynatrace</a></td>
+<td style="text-align: left;">DynatraceSecurityProblems_CL</td>
+</tr>
+</tbody>
+</table>
+<h2>E</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="elasticagentevent.html">ElasticAgentEvent</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/elasticagent.html">ElasticAgent</a></td>
+<td style="text-align: left;">ElasticAgentLogs_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="esetprotect.html">ESETPROTECT</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/esetprotect.html">ESETPROTECT</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="esetprotectplatform.html">ESETProtectPlatform</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/eset-protect-platform.html">ESET Protect Platform</a></td>
+<td style="text-align: left;">IntegrationTable_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="eventincident.html">EventIncident</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">eventsincidentdata_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="eventsapplication.html">EventsApplication</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">eventsapplicationdata_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="eventsaudit.html">EventsAudit</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">eventsauditdata_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="eventsconnection.html">EventsConnection</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">eventsconnectiondata_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="eventsnetwork.html">EventsNetwork</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">eventsnetworkdata_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="eventspage.html">EventsPage</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">eventspagedata_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="exabeamevent.html">ExabeamEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/exabeam-advanced-analytics.html">Exabeam Advanced Analytics</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="exchangeadminauditlogs.html">ExchangeAdminAuditLogs</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
+<td style="text-align: left;">Event</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="exchangeconfiguration.html">ExchangeConfiguration</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="exchangeconfiguration.html">ExchangeConfiguration</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/microsoft-exchange-security-exchange-online.html">Microsoft Exchange Security - Exchange Online</a></td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="exchangeenvironmentlist.html">ExchangeEnvironmentList</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="exchangeenvironmentlist.html">ExchangeEnvironmentList</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/microsoft-exchange-security-exchange-online.html">Microsoft Exchange Security - Exchange Online</a></td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="extrahopdetections.html">ExtraHopDetections</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/extrahop.html">ExtraHop</a></td>
+<td style="text-align: left;">ExtraHop_Detections_CL</td>
+</tr>
+</tbody>
+</table>
+<h2>F</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="fireeyenxevent.html">FireEyeNXEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/fireeye-network-security.html">FireEye Network Security</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="forescoutevent.html">ForescoutEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/forescout-legacy.html">Forescout (Legacy)</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="forgerockparser.html">ForgeRockParser</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/forgerock-common-audit-for-cef.html">ForgeRock Common Audit for CEF</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="fortinet-fortindr-cloud.html">Fortinet_FortiNDR_Cloud</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/fortinet-fortindr-cloud.html">Fortinet FortiNDR Cloud</a></td>
+<td style="text-align: left;">FncEventsDetections_CL, FncEventsObservation_CL, ...</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="fortiweb.html">Fortiweb</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.html">Fortinet FortiWeb Cloud WAF-as-a-Service connector for Microsoft Sentinel</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+</tbody>
+</table>
+<h2>G</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="gcp-iam.html">GCP_IAM</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/googlecloudplatformiam.html">GoogleCloudPlatformIAM</a></td>
+<td style="text-align: left;">GCPIAM, GCP_IAM_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="gcp-monitor.html">GCP_MONITOR</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/google-cloud-platform-cloud-monitoring.html">Google Cloud Platform Cloud Monitoring</a></td>
+<td style="text-align: left;">GCP_MONITORINGV2_CL, GCP_MONITORING_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="gcpclouddns.html">GCPCloudDNS</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/googlecloudplatformdns.html">GoogleCloudPlatformDNS</a></td>
+<td style="text-align: left;">GCPDNS, GCP_DNS_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="getclassificationlist.html">GetClassificationList</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="getforgerockusers.html">getForgeRockUsers</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/forgerock-common-audit-for-cef.html">ForgeRock Common Audit for CEF</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="githubaudit.html">GitHubAudit</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">GitHub_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="githubauditdata.html">GitHubAuditData</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/github.html">GitHub</a></td>
+<td style="text-align: left;">GitHubAuditLogPolling_CL, GitHubAuditLogsV2_CL, ...</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="githubcodescanningdata.html">GitHubCodeScanningData</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/github.html">GitHub</a></td>
+<td style="text-align: left;">githubscanaudit_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="githubdependabotdata.html">GitHubDependabotData</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/github.html">GitHub</a></td>
+<td style="text-align: left;">githubscanaudit_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="githubrepo.html">GitHubRepo</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">GitHubRepoLogs_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="githubsecretscanningdata.html">GitHubSecretScanningData</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/github.html">GitHub</a></td>
+<td style="text-align: left;">githubscanaudit_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="gitlabaccess.html">GitLabAccess</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/gitlab.html">GitLab</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="gitlabapp.html">GitLabApp</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/gitlab.html">GitLab</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="gitlabaudit.html">GitLabAudit</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/gitlab.html">GitLab</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="guardian.html">Guardian</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/aishield-ai-security-monitoring.html">AIShield AI Security Monitoring</a></td>
+<td style="text-align: left;">Guardian_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="gworkspaceactivityreports.html">GWorkspaceActivityReports</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/googleworkspacereports.html">GoogleWorkspaceReports</a></td>
+<td style="text-align: left;">GWorkspace_ReportsAPI_access_transparency_CL, GWorkspace_ReportsAPI_admin_CL, ...</td>
+</tr>
+</tbody>
+</table>
+<h2>H</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="hyasprotectdnsactivity.html">HYASProtectDNSActivity</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/hyas-protect.html">HYAS Protect</a></td>
+<td style="text-align: left;">HYASProtectDnsSecurityLogs_CL</td>
+</tr>
+</tbody>
+</table>
+<h2>I</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="ibossurlevent.html">ibossUrlEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/iboss.html">iboss</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="illumiocoreevent.html">IllumioCoreEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/illumio-core.html">Illumio Core</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="illumiosyslogauditevents.html">IllumioSyslogAuditEvents</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/illumiosaas.html">IllumioSaaS</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="illumiosyslognetworktrafficevents.html">IllumioSyslogNetworkTrafficEvents</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/illumiosaas.html">IllumioSaaS</a></td>
+<td style="text-align: left;">IllumioFlowEventsV2_CL, Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="impervawafcloud.html">ImpervaWAFCloud</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/impervacloudwaf.html">ImpervaCloudWAF</a></td>
+<td style="text-align: left;">ImpervaWAFCloudV2_CL, ImpervaWAFCloud_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infoblox.html">Infoblox</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a></td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infoblox-allotherdhcpdtypes.html">Infoblox_allotherdhcpdTypes</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infoblox-allotherdnstypes.html">Infoblox_allotherdnsTypes</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infoblox-allotherlogtypes.html">Infoblox_allotherlogTypes</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infoblox-dhcp-consolidated.html">Infoblox_dhcp_consolidated</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a></td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infoblox-dhcpack.html">Infoblox_dhcpack</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infoblox-dhcpadded.html">Infoblox_dhcpadded</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infoblox-dhcpbindupdate.html">Infoblox_dhcpbindupdate</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infoblox-dhcpdiscover.html">Infoblox_dhcpdiscover</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infoblox-dhcpexpire.html">Infoblox_dhcpexpire</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infoblox-dhcpinform.html">Infoblox_dhcpinform</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infoblox-dhcpoffer.html">Infoblox_dhcpoffer</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infoblox-dhcpoption.html">Infoblox_dhcpoption</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infoblox-dhcpother.html">Infoblox_dhcpother</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infoblox-dhcprelease.html">Infoblox_dhcprelease</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infoblox-dhcpremoved.html">Infoblox_dhcpremoved</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infoblox-dhcprequest.html">Infoblox_dhcprequest</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infoblox-dhcpsession.html">Infoblox_dhcpsession</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infoblox-dns-consolidated.html">Infoblox_dns_consolidated</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a></td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infoblox-dnsclient.html">Infoblox_dnsclient</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infoblox-dnsgss.html">Infoblox_dnsgss</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infoblox-dnszone.html">Infoblox_dnszone</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infobloxcdc.html">InfobloxCDC</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-cloud-data-connector.html">Infoblox Cloud Data Connector</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infobloxcdc-socinsights.html">InfobloxCDC_SOCInsights</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox.html">Infoblox</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infobloxcdc-socinsights.html">InfobloxCDC_SOCInsights</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-soc-insights.html">Infoblox SOC Insights</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infobloxinsight.html">InfobloxInsight</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox.html">Infoblox</a></td>
+<td style="text-align: left;">InfobloxInsight_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infobloxinsight.html">InfobloxInsight</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-soc-insights.html">Infoblox SOC Insights</a></td>
+<td style="text-align: left;">InfobloxInsight_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infobloxinsightassets.html">InfobloxInsightAssets</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox.html">Infoblox</a></td>
+<td style="text-align: left;">InfobloxInsightAssets_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infobloxinsightassets.html">InfobloxInsightAssets</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-soc-insights.html">Infoblox SOC Insights</a></td>
+<td style="text-align: left;">InfobloxInsightAssets_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infobloxinsightcomments.html">InfobloxInsightComments</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox.html">Infoblox</a></td>
+<td style="text-align: left;">InfobloxInsightComments_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infobloxinsightcomments.html">InfobloxInsightComments</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-soc-insights.html">Infoblox SOC Insights</a></td>
+<td style="text-align: left;">InfobloxInsightComments_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infobloxinsightevents.html">InfobloxInsightEvents</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox.html">Infoblox</a></td>
+<td style="text-align: left;">InfobloxInsightEvents_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infobloxinsightevents.html">InfobloxInsightEvents</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-soc-insights.html">Infoblox SOC Insights</a></td>
+<td style="text-align: left;">InfobloxInsightEvents_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infobloxinsightindicators.html">InfobloxInsightIndicators</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox.html">Infoblox</a></td>
+<td style="text-align: left;">InfobloxInsightIndicators_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infobloxinsightindicators.html">InfobloxInsightIndicators</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/infoblox-soc-insights.html">Infoblox SOC Insights</a></td>
+<td style="text-align: left;">InfobloxInsightIndicators_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="infobloxnios.html">InfobloxNIOS</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="insightvmassets.html">InsightVMAssets</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/rapid7insightvm.html">Rapid7InsightVM</a></td>
+<td style="text-align: left;">NexposeInsightVMCloud_assets_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="insightvmvulnerabilities.html">InsightVMVulnerabilities</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/rapid7insightvm.html">Rapid7InsightVM</a></td>
+<td style="text-align: left;">NexposeInsightVMCloud_vulnerabilities_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="iscbind.html">ISCBind</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/isc-bind.html">ISC Bind</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="ivantiuemevent.html">IvantiUEMEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/ivanti-unified-endpoint-management.html">Ivanti Unified Endpoint Management</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+</tbody>
+</table>
+<h2>J</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="jamfprotectalerts.html">JamfProtectAlerts</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/jamf-protect.html">Jamf Protect</a></td>
+<td style="text-align: left;">jamfprotectalerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="jamfprotectnetworktraffic.html">JamfProtectNetworkTraffic</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/jamf-protect.html">Jamf Protect</a></td>
+<td style="text-align: left;">jamfprotect_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="jamfprotecttelemetry.html">JamfProtectTelemetry</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/jamf-protect.html">Jamf Protect</a></td>
+<td style="text-align: left;">jamfprotecttelemetryv2_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="jamfprotectthreatevents.html">JamfProtectThreatEvents</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/jamf-protect.html">Jamf Protect</a></td>
+<td style="text-align: left;">jamfprotect_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="jamfprotectunifiedlogs.html">JamfProtectUnifiedLogs</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/jamf-protect.html">Jamf Protect</a></td>
+<td style="text-align: left;">jamfprotectunifiedlogs_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="jbossevent.html">JBossEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/jboss.html">JBoss</a></td>
+<td style="text-align: left;">JBossLogs_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="jiraaudit.html">JiraAudit</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/atlassianjiraaudit.html">AtlassianJiraAudit</a></td>
+<td style="text-align: left;">Jira_Audit_CL, Jira_Audit_v2_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="juniperidp.html">JuniperIDP</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/juniperidp.html">JuniperIDP</a></td>
+<td style="text-align: left;">JuniperIDP_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="junipersrx.html">JuniperSRX</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/juniper-srx.html">Juniper SRX</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+</tbody>
+</table>
+<h2>L</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="lookoutcsactivities.html">LookoutCSActivities</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/lookout-cloud-security-platform-for-microsoft-sentinel.html">Lookout Cloud Security Platform for Microsoft Sentinel</a></td>
+<td style="text-align: left;">LookoutCloudSecurity_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="lookoutcsanomalies.html">LookoutCSAnomalies</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/lookout-cloud-security-platform-for-microsoft-sentinel.html">Lookout Cloud Security Platform for Microsoft Sentinel</a></td>
+<td style="text-align: left;">LookoutCloudSecurity_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="lookoutcsviolations.html">LookoutCSViolations</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/lookout-cloud-security-platform-for-microsoft-sentinel.html">Lookout Cloud Security Platform for Microsoft Sentinel</a></td>
+<td style="text-align: left;">LookoutCloudSecurity_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="lookoutevents.html">LookoutEvents</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/lookout.html">Lookout</a></td>
+<td style="text-align: left;">LookoutMtdV2_CL</td>
+</tr>
+</tbody>
+</table>
+<h2>M</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="mapnetflowusername.html">MapNetflowUsername</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/cisco-sd-wan.html">Cisco SD-WAN</a></td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="marklogicaudit.html">MarkLogicAudit</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/marklogicaudit.html">MarkLogicAudit</a></td>
+<td style="text-align: left;">MarkLogicAudit_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="mcafee-common-security-log-parser.html">McAfee Common Security Log Parser</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="mcafeeepoevent.html">McAfeeEPOEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/mcafee-epolicy-orchestrator.html">McAfee ePolicy Orchestrator</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="mcafeenspevent.html">McAfeeNSPEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/mcafee-network-security-platform.html">McAfee Network Security Platform</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="mcasactivity.html">MCASActivity</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">MCASActivity_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="merakiconfigurationchanges.html">MerakiConfigurationChanges</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">MerakiConfigurationChanges_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="merakisecurityevents.html">MerakiSecurityEvents</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">MerakiSecurityEvents_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="mescheckonlinevip.html">MESCheckOnlineVIP</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/microsoft-exchange-security-exchange-online.html">Microsoft Exchange Security - Exchange Online</a></td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="mescheckvip.html">MESCheckVIP</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="mescomparedatamra.html">MESCompareDataMRA</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/microsoft-exchange-security-exchange-online.html">Microsoft Exchange Security - Exchange Online</a></td>
+<td style="text-align: left;">ESIExchangeOnlineConfig_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="mescomparedataonpmra.html">MESCompareDataOnPMRA</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
+<td style="text-align: left;">ESIExchangeConfig_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="mesofficeactivitylogs.html">MESOfficeActivityLogs</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/microsoft-exchange-security-exchange-online.html">Microsoft Exchange Security - Exchange Online</a></td>
+<td style="text-align: left;">OfficeActivity</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="mimecastaudit.html">MimecastAudit</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/mimecast.html">Mimecast</a></td>
+<td style="text-align: left;">Audit_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="mimecastcg.html">MimecastCG</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/mimecast.html">Mimecast</a></td>
+<td style="text-align: left;">Seg_Cg_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="mimecastcloudintegrated.html">MimecastCloudIntegrated</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/mimecast.html">Mimecast</a></td>
+<td style="text-align: left;">Cloud_Integrated_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="mimecastdlp.html">MimecastDLP</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/mimecast.html">Mimecast</a></td>
+<td style="text-align: left;">Seg_Dlp_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="mimecastttpattachment.html">MimecastTTPAttachment</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/mimecast.html">Mimecast</a></td>
+<td style="text-align: left;">Ttp_Attachment_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="mimecastttpimpersonation.html">MimecastTTPImpersonation</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/mimecast.html">Mimecast</a></td>
+<td style="text-align: left;">Ttp_Impersonation_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="mimecastttpurl.html">MimecastTTPUrl</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/mimecast.html">Mimecast</a></td>
+<td style="text-align: left;">Ttp_Url_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="mongodbaudit.html">MongoDBAudit</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/mongodbaudit.html">MongoDBAudit</a></td>
+<td style="text-align: left;">MongoDBAudit_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="morphisec.html">Morphisec</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/morphisec.html">Morphisec</a></td>
+<td style="text-align: left;">MorphisecAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="msbizappsnetworkaddresses.html">MSBizAppsNetworkAddresses</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a></td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="msbizappsorgsettings.html">MSBizAppsOrgSettings</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a></td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="msbizappsterminatedemployees.html">MSBizAppsTerminatedEmployees</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a></td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="msbizappsvipusers.html">MSBizAppsVIPUsers</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a></td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="mulesoftcloudhub.html">MuleSoftCloudhub</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/mulesoft.html">Mulesoft</a></td>
+<td style="text-align: left;">MuleSoft_Cloudhub_CL</td>
+</tr>
+</tbody>
+</table>
+<h2>N</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="netskope.html">Netskope</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/netskope.html">Netskope</a></td>
+<td style="text-align: left;">Netskope_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="netskopealerts.html">NetskopeAlerts</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">NetskopeAlerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="netskopeccfwebtransactions.html">NetskopeCCFWebTransactions</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">NetskopeWebTransactions_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="netskopecealerts.html">NetskopeCEAlerts</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">Netskope_Alerts_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="netskopeceeventsapplication.html">NetskopeCEEventsApplication</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">Netskope_Events_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="netskopecewebtransactions.html">NetskopeCEWebTransactions</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">Netskope_WebTX_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="netskopeeventsapplication.html">NetskopeEventsApplication</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">NetskopeEventsApplication_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="netskopeeventsaudit.html">NetskopeEventsAudit</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">NetskopeEventsAudit_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="netskopeeventsconnection.html">NetskopeEventsConnection</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">NetskopeEventsConnection_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="netskopeeventsdlp.html">NetskopeEventsDLP</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">NetskopeEventsDLP_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="netskopeeventsendpoint.html">NetskopeEventsEndpoint</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">NetskopeEventsEndpoint_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="netskopeeventsinfrastructure.html">NetskopeEventsInfrastructure</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">NetskopeEventsInfrastructure_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="netskopeeventsnetwork.html">NetskopeEventsNetwork</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">NetskopeEventsNetwork_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="netskopeeventspage.html">NetskopeEventsPage</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">NetskopeEventsPage_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="netskopewebtransactions.html">NetskopeWebTransactions</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;">NetskopeWebtxData_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="netwrixauditor.html">NetwrixAuditor</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/netwrix-auditor.html">Netwrix Auditor</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="nginxhttpserver.html">NGINXHTTPServer</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/nginx-http-server.html">NGINX HTTP Server</a></td>
+<td style="text-align: left;">NGINX_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="nozominetworksevents.html">NozomiNetworksEvents</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/nozominetworks.html">NozomiNetworks</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="nxlog-parsed-aix-audit-view.html">NXLog_parsed_AIX_Audit_view</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/nxlogaixaudit.html">NXLogAixAudit</a></td>
+<td style="text-align: left;">AIX_Audit_CL</td>
+</tr>
+</tbody>
+</table>
+<h2>O</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="ocilogs.html">OCILogs</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/oracle-cloud-infrastructure.html">Oracle Cloud Infrastructure</a></td>
+<td style="text-align: left;">OCI_LogsV2_CL, OCI_Logs_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="oktasso.html">OktaSSO</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/okta-single-sign-on.html">Okta Single Sign-On</a></td>
+<td style="text-align: left;">OktaV2_CL, Okta_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="onapsislookup.html">OnapsisLookup</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/onapsis-platform.html">Onapsis Platform</a></td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="oneidentity-safeguard.html">OneIdentity_Safeguard</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/oneidentity.html">OneIdentity</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="onelogin.html">OneLogin</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/oneloginiam.html">OneLoginIAM</a></td>
+<td style="text-align: left;">OneLoginEventsV2_CL, OneLoginUsersV2_CL, ...</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="oneloginevents.html">OneLoginEvents</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">oneLogin_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="openvpnevent.html">OpenVpnEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/openvpn.html">OpenVPN</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="oracledatabaseauditevent.html">OracleDatabaseAuditEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/oracledatabaseaudit.html">OracleDatabaseAudit</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="oracleweblogicserverevent.html">OracleWebLogicServerEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/oracleweblogicserver.html">OracleWebLogicServer</a></td>
+<td style="text-align: left;">OracleWebLogicServer_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="ossecevent.html">OSSECEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/ossec.html">OSSEC</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+</tbody>
+</table>
+<h2>P</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="paloaltocdlevent.html">PaloAltoCDLEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/paloaltocdl.html">PaloAltoCDL</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="paloaltoprismacloud.html">PaloAltoPrismaCloud</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/paloaltoprismacloud.html">PaloAltoPrismaCloud</a></td>
+<td style="text-align: left;">PaloAltoPrismaCloudAlertV2_CL, PaloAltoPrismaCloudAlert_CL, ...</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="pfsensefilterlog.html">pfsensefilterlog</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="pfsensenginx.html">pfsensenginx</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="pingfederateevent.html">PingFederateEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/pingfederate.html">PingFederate</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="postgresqlevent.html">PostgreSQLEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/postgresql.html">PostgreSQL</a></td>
+<td style="text-align: left;">PostgreSQL_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="proofpointpod.html">ProofpointPOD</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/proofpoint-on-demand-pod-email-security.html">Proofpoint On demand(POD) Email Security</a></td>
+<td style="text-align: left;">ProofpointPODMailLog_CL, ProofpointPODMessage_CL, ...</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="proofpointtapevent.html">ProofpointTAPEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/proofpointtap.html">ProofPointTap</a></td>
+<td style="text-align: left;">ProofPointTAPClicksBlockedV2_CL, ProofPointTAPClicksBlocked_CL, ...</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="pulseconnectsecure.html">PulseConnectSecure</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/pulse-connect-secure.html">Pulse Connect Secure</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="purestorageflasharrayparserv1.html">PureStorageFlashArrayParserV1</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/pure-storage.html">Pure Storage</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="purestorageflashbladeparserv1.html">PureStorageFlashBladeParserV1</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/pure-storage.html">Pure Storage</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+</tbody>
+</table>
+<h2>Q</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="qualyshostdetection.html">QualysHostDetection</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/qualysvm.html">QualysVM</a></td>
+<td style="text-align: left;">QualysHostDetectionV2_CL, QualysHostDetectionV3_CL, ...</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="qualyskb.html">QualysKB</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/qualys-vm-knowledgebase.html">Qualys VM Knowledgebase</a></td>
+<td style="text-align: left;">QualysKB_CL</td>
+</tr>
+</tbody>
+</table>
+<h2>R</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="radiflowevent.html">RadiflowEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/radiflow.html">Radiflow</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="rsasecuridamevent.html">RSASecurIDAMEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/rsa-securid.html">RSA SecurID</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+</tbody>
+</table>
+<h2>S</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="salesforceservicecloud.html">SalesforceServiceCloud</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/salesforce-service-cloud.html">Salesforce Service Cloud</a></td>
+<td style="text-align: left;">SalesforceServiceCloudV2_CL, SalesforceServiceCloud_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="sentinelone.html">SentinelOne</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/sentinelone.html">SentinelOne</a></td>
+<td style="text-align: left;">SentinelOneActivities_CL, SentinelOneAgents_CL, ...</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="slackaudit.html">SlackAudit</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/slackaudit.html">SlackAudit</a></td>
+<td style="text-align: left;">SlackAuditNativePoller_CL, SlackAuditV2_CL, ...</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="snowflake.html">Snowflake</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/snowflake.html">Snowflake</a></td>
+<td style="text-align: left;">SnowflakeLoad_CL, SnowflakeLogin_CL, ...</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="sophosepevent.html">SophosEPEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/sophos-endpoint-protection.html">Sophos Endpoint Protection</a></td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="sophosxgfirewall.html">SophosXGFirewall</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/sophos-xg-firewall.html">Sophos XG Firewall</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="sqlserver-parser.html">SQLServer_Parser</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">Event</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="squidproxy.html">SquidProxy</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/squidproxy.html">SquidProxy</a></td>
+<td style="text-align: left;">SquidProxy_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="stealthbits-stealthdefend-parser.html">StealthBits StealthDefend Parser</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="stealthwatchevent.html">StealthwatchEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/cisco-secure-cloud-analytics.html">Cisco Secure Cloud Analytics</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="symantecdlp.html">SymantecDLP</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/broadcom-symantecdlp.html">Broadcom SymantecDLP</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="symantecendpointprotection.html">SymantecEndpointProtection</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/symantec-endpoint-protection.html">Symantec Endpoint Protection</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="symantecproxysg.html">SymantecProxySG</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="symantecproxysg.html">SymantecProxySG</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/symantecproxysg.html">SymantecProxySG</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="symantecvip.html">SymantecVIP</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/symantec-vip.html">Symantec VIP</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="syslogeventtypedata.html">SyslogEventTypeData</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="syslogexecve.html">SyslogExecve</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="syslogsyscall.html">SyslogSyscall</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="syslogusererr.html">SyslogUserErr</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="sysmon-allversions-parser.html">Sysmon-AllVersions_Parser</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">Event</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="sysmon-v10.42-parser.html">Sysmon-v10.42-Parser</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">Event</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="sysmon-v11.0.html">Sysmon-v11.0</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">Event</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="sysmon-v12.0.html">Sysmon-v12.0</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">Event</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="sysmon-v9.10-parser.html">Sysmon-v9.10-Parser</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">Event</td>
+</tr>
+</tbody>
+</table>
+<h2>T</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="tenableioassets.html">TenableIOAssets</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/tenableio.html">TenableIO</a></td>
+<td style="text-align: left;">Tenable_IO_Assets_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="tenableiovulnerabilities.html">TenableIOVulnerabilities</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/tenableio.html">TenableIO</a></td>
+<td style="text-align: left;">Tenable_IO_Vuln_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="tenablevmassets.html">TenableVMAssets</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/tenable-app.html">Tenable App</a></td>
+<td style="text-align: left;">Tenable_VM_Asset_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="tenablevmvulnerabilities.html">TenableVMVulnerabilities</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/tenable-app.html">Tenable App</a></td>
+<td style="text-align: left;">Tenable_VM_Vuln_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="thehive.html">TheHive</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/thehive.html">TheHive</a></td>
+<td style="text-align: left;">TheHive_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="threatintelindicatorsv2.html">ThreatIntelIndicatorsv2</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></td>
+<td style="text-align: left;">ThreatIntelIndicators</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="tmapexoneevent.html">TMApexOneEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/trend-micro-apex-one.html">Trend Micro Apex One</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="tomcatevent.html">TomcatEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/tomcat.html">Tomcat</a></td>
+<td style="text-align: left;">Tomcat_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="trendmicrocas.html">TrendMicroCAS</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/trend-micro-cloud-app-security.html">Trend Micro Cloud App Security</a></td>
+<td style="text-align: left;">TrendMicroCAS_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="trendmicrodeepsecurity.html">TrendMicroDeepSecurity</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/trend-micro-deep-security.html">Trend Micro Deep Security</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="trendmicrotippingpoint.html">TrendMicroTippingPoint</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/trend-micro-tippingpoint.html">Trend Micro TippingPoint</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+</tbody>
+</table>
+<h2>U</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="ubiquitiauditevent.html">UbiquitiAuditEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/ubiquiti-unifi.html">Ubiquiti UniFi</a></td>
+<td style="text-align: left;">Ubiquiti_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="unified-apigeex.html">Unified_ApigeeX</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/google-apigee.html">Google Apigee</a></td>
+<td style="text-align: left;">ApigeeXV2_CL, ApigeeX_CL</td>
+</tr>
+</tbody>
+</table>
+<h2>V</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="vcenter.html">vCenter</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/vmware-vcenter.html">VMware vCenter</a></td>
+<td style="text-align: left;">vcenter_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vectra-beacon.html">vectra_beacon</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+<td style="text-align: left;">vectra_beacon_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vectra-dcerpc.html">vectra_dcerpc</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+<td style="text-align: left;">vectra_dcerpc_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vectra-dhcp.html">vectra_dhcp</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+<td style="text-align: left;">vectra_dhcp_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vectra-dns.html">vectra_dns</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+<td style="text-align: left;">vectra_dns_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vectra-http.html">vectra_http</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+<td style="text-align: left;">vectra_http_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vectra-isession.html">vectra_isession</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+<td style="text-align: left;">vectra_isession_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vectra-kerberos.html">vectra_kerberos</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+<td style="text-align: left;">vectra_kerberos_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vectra-ldap.html">vectra_ldap</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+<td style="text-align: left;">vectra_ldap_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vectra-match.html">vectra_match</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+<td style="text-align: left;">vectra_match_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vectra-ntlm.html">vectra_ntlm</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+<td style="text-align: left;">vectra_ntlm_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vectra-radius.html">vectra_radius</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+<td style="text-align: left;">vectra_radius_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vectra-rdp.html">vectra_rdp</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+<td style="text-align: left;">vectra_rdp_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vectra-smbfiles.html">vectra_smbfiles</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+<td style="text-align: left;">vectra_smbfiles_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vectra-smbmapping.html">vectra_smbmapping</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+<td style="text-align: left;">vectra_smbmapping_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vectra-smtp.html">vectra_smtp</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+<td style="text-align: left;">vectra_smtp_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vectra-ssh.html">vectra_ssh</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+<td style="text-align: left;">vectra_ssh_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vectra-ssl.html">vectra_ssl</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+<td style="text-align: left;">vectra_ssl_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vectra-stream.html">vectra_stream</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vectra-x509.html">vectra_x509</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+<td style="text-align: left;">vectra_x509_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vectraaudits.html">VectraAudits</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+<td style="text-align: left;">Audits_Data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vectradetections.html">VectraDetections</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+<td style="text-align: left;">Detections_Data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vectraentityscoring.html">VectraEntityScoring</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+<td style="text-align: left;">Entity_Scoring_Data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vectrahealth.html">VectraHealth</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+<td style="text-align: left;">Health_Data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vectralockdown.html">VectraLockdown</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+<td style="text-align: left;">Lockdown_Data_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vectrastream-function.html">VectraStream_function</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+<td style="text-align: left;">VectraStream_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="veeam-getfinishedconfigurationbackupsessions.html">Veeam_GetFinishedConfigurationBackupSessions</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/veeam.html">Veeam</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="veeam-getjobfinished.html">Veeam_GetJobFinished</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/veeam.html">Veeam</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="veeam-getsecurityevents.html">Veeam_GetSecurityEvents</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/veeam.html">Veeam</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="veeam-getveeamonealarms.html">Veeam_GetVeeamONEAlarms</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/veeam.html">Veeam</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vimnetworksessionopensystemsfirewall.html">vimNetworkSessionOpenSystemsFirewall</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/open-systems.html">Open Systems</a></td>
+<td style="text-align: left;">OpenSystemsFirewallLogs_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vimwebsessionopensystemsproxysecurewebgateway.html">vimWebSessionOpenSystemsProxySecureWebGateway</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/open-systems.html">Open Systems</a></td>
+<td style="text-align: left;">OpenSystemsProxyLogs_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vmwareesxi.html">VMwareESXi</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/vmwareesxi.html">VMWareESXi</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="votiroevents.html">VotiroEvents</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/votiro.html">Votiro</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+</tbody>
+</table>
+<h2>W</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="watchguardfirebox.html">WatchGuardFirebox</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/watchguard-firebox.html">Watchguard Firebox</a></td>
+<td style="text-align: left;">Syslog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="workplace-facebook.html">Workplace_Facebook</a> ⚠️</td>
+<td style="text-align: left;">📦 <a href="../solutions/workplace-from-facebook.html">Workplace from Facebook</a></td>
+<td style="text-align: left;">Workplace_Facebook_CL</td>
+</tr>
+</tbody>
+</table>
+<h2>Z</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="znsegmentaudit.html">ZNSegmentAudit</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/zeronetworks.html">ZeroNetworks</a></td>
+<td style="text-align: left;">ZNSegmentAuditNativePoller_CL, ZNSegmentAudit_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="zoom.html">Zoom</a></td>
+<td style="text-align: left;">📂 <em>Legacy</em></td>
+<td style="text-align: left;">Zoom_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="zoom.html">Zoom</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/zoomreports.html">ZoomReports</a></td>
+<td style="text-align: left;">Zoom_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="zpaevent.html">ZPAEvent</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/zscaler-private-access-zpa.html">Zscaler Private Access (ZPA)</a></td>
+<td style="text-align: left;">ZPA_CL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="zscalerfw-parser.html">ZScalerFW_Parser</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/zscaler-internet-access.html">Zscaler Internet Access</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="zscalerweb-parser.html">ZScalerWeb_Parser</a></td>
+<td style="text-align: left;">📦 <a href="../solutions/zscaler-internet-access.html">Zscaler Internet Access</a></td>
+<td style="text-align: left;">CommonSecurityLog</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <strong>Parsers</strong> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+</div>
+</body>
+</html>

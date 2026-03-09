@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WVDSessionHostManagement &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>WVDSessionHostManagement</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for WVDSessionHostManagement table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Azure Virtual Desktop</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wvdsessionhostmanagement">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (24 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wvdsessionhostmanagement">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClientType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Information about the client that initiated the update (portal, Powershell etc.).</td>
+</tr>
+<tr>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The correlation ID for the activity.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FailedSessionHostCleanupPolicy</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The policy for cleaning up session hosts that have failed provisioning.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FromInstanceCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The instance count before the operation. For an update operation, FromInstanceCount and ToInstanceCount are the same value.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FromSessionHostConfigVer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The version of SHC before the operation (that session hosts are moving from; can be looked up with new SHC table). For a provisioning operation, it is the same as the ToSessionHostConfiguration.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProvisioningCanaryPolicy</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The policy for creating a test canary session host before creating the rest of the requested session hosts.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProvisioningStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The status of the current update/provisioning operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProvisioningType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of operation (provisioning, update).</td>
+</tr>
+<tr>
+<td style="text-align: left;">ScheduledDateTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">When the session host update is scheduled, the scheduled time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ScheduledDateTimeZone</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The time zone that updates and provisioning happen in.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) of the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ToInstanceCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The instance count after the operation. For an update operation, FromInstanceCount and ToInstanceCount are the same value.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ToSessionHostConfigVer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The version of SHC after the operation (that session hosts are moving to; can be looked up with new SHC table). For a provisioning operation, is the same as the FromSessionHostConfiguration is.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">UpdateDeleteOriginalVm</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Property indicates whether the original VM should be deleted after the update.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UpdateMaxVmsRemoved</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The maximum number of virtual machines that might become unavailable during the session host update operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UpdateMethod</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The method that is used for the session host update operation (e.g.: VmRecreate).</td>
+</tr>
+<tr>
+<td style="text-align: left;">UpdateStartWindowInMinutes</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The window of allowable time for an update to start in minutes.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.desktopvirtualization/hostpools</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

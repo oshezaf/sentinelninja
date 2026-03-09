@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🚫 🔍 Deprecated Juniper IDP &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>🚫 🔍 [Deprecated] Juniper IDP</h1>
+<blockquote>
+<p>🚫 <strong>Deprecated:</strong> This connector has been deprecated and may be removed in future versions.</p>
+<p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>JuniperIDP</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Juniper</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/juniperidp.html">JuniperIDP</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/mma.html">MMA</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JuniperIDP/Data%20Connectors/Connector_LogAnalytics_agent_JuniperIDP.json">Connector_LogAnalytics_agent_JuniperIDP.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.juniper.net/">Juniper</a> IDP data connector provides the capability to ingest <a href="https://www.juniper.net/documentation/us/en/software/junos/idp-policy/topics/topic-map/security-idp-overview.html">Juniper IDP</a> events into Microsoft Sentinel.</p>
+<h2>Additional Information</h2>
+<p>🛠️ <strong>Device Configuration:</strong> Table: <code>JuniperIDP_CL</code>. Configure rsyslog ruleset with UDP input. <a href="https://supportportal.juniper.net/s/article/SRX-Getting-Started-Configure-System-Logging">Configure Juniper IDP syslog</a>. See <a href="https://learn.microsoft.com/azure/sentinel/unified-connector-custom-device#juniperidp">Custom Logs via AMA configuration</a>.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/juniperidp-cl.html"><code>JuniperIDP_CL</code></a> 🔶</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+<p><strong>NOTE:</strong> This data connector depends on a parser based on Kusto Function to work as expected <a href="https://aka.ms/sentinel-JuniperIDP-parser"><strong>JuniperIDP</strong></a> which is deployed with the Microsoft Sentinel Solution.</p>
+<p><strong>NOTE:</strong>  IDP OS 5.1 and above is supported by this data connector.</p>
+</blockquote>
+<p><strong>1. Install and onboard the agent for Linux or Windows</strong></p>
+<p>Install the agent on the Server.
+<strong>Choose where to install the Linux agent:</strong></p>
+<p><strong>Install agent on Azure Linux Virtual Machine</strong></p>
+<p>Select the machine to install the agent on and then click <strong>Connect</strong>.
+  - <strong>Install agent on Linux Virtual Machine</strong></p>
+<p><strong>Install agent on a non-Azure Linux Machine</strong></p>
+<p>Download the agent on the relevant machine and follow the instructions.
+  - <strong>Install agent on Linux (Non-Azure)</strong></p>
+<p><strong>Choose where to install the Windows agent:</strong></p>
+<p><strong>Install agent on Azure Windows Virtual Machine</strong></p>
+<p>Select the machine to install the agent on and then click <strong>Connect</strong>.
+  - <strong>Install/configure: InstallAgentOnVirtualMachine</strong></p>
+<p><strong>Install agent on a non-Azure Windows Machine</strong></p>
+<p>Download the agent on the relevant machine and follow the instructions.
+  - <strong>Install/configure: InstallAgentOnNonAzure</strong></p>
+<p><strong>2. Configure the logs to be collected</strong></p>
+<p>Follow the configuration steps below to get Juniper IDP logs into Microsoft Sentinel. This configuration enriches events generated by Juniper IDP module to provide visibility on log source information for Juniper IDP logs. Refer to the <a href="https://docs.microsoft.com/azure/azure-monitor/agents/data-sources-json">Azure Monitor Documentation</a> for more details on these steps.
+1. Download config file <a href="https://aka.ms/sentinel-JuniperIDP-conf">juniper_idp.conf</a>.
+2. Login to the server where you have installed Azure Log Analytics agent.
+3. Copy juniper_idp.conf to the /etc/opt/microsoft/omsagent/<strong>workspace_id</strong>/conf/omsagent.d/ folder.
+4. Edit juniper_idp.conf as follows:</p>
+<pre><code> i. change the listen port for receiving logs based on your configuration (line 3)
+
+ ii. replace **workspace_id** with real value of your Workspace ID (lines 58,59,60,63)
+</code></pre>
+<ol start="5">
+<li>Save changes and restart the Azure Log Analytics agent for Linux service with the following command:
+        sudo /opt/microsoft/omsagent/bin/service_control restart</li>
+<li>To configure a remote syslog destination, please reference the <a href="https://kb.juniper.net/InfoCenter/index?page=content&amp;id=kb16502">SRX Getting Started - Configure System Logging</a>.
+- <strong>Workspace ID</strong>: <code>WorkspaceId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

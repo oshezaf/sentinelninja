@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AADUserRiskEvents &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>AADUserRiskEvents</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for AADUserRiskEvents table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Entra</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aaduserriskevents">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (27 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aaduserriskevents">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">Activity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates the activity type the detected risk is linked to. Possible values are: signin, user, unknownFutureValue.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActivityDateTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the risky activity occurred in UTC.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AdditionalInfo</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Additional information associated with the user risk event in JSON format.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Correlation ID of the sign-in associated with the risk detection. This property is null if the risk detection is not associated with a sign-in.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DetectedDateTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time that the risk was detected in UTC.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DetectionTimingType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Timing of the detected risk (real-time/offline). Possible values are: notDefined, realtime, nearRealtime, offline, unknownFutureValue.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Id</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique ID of the risk event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IpAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address of the client from where the risk occurred.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LastUpdatedDateTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the risk detection was last updated in UTC.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Location</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Location of the sign-in.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Request ID of the sign-in associated with the risk detection. This property is null if the risk detection is not associated with a sign-in.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RiskDetail</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of the detected risk. Possible values are: none, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, hidden, adminConfirmedUserCompromised, unknownFutureValue.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RiskEventType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of risk event detected.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RiskLevel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Level of the detected risk. Possible values are: low, medium, high, hidden, none, unknownFutureValue.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RiskState</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The state of a detected risky user or sign-in. Possible values are: none, confirmedSafe, remediated, dismissed, atRisk, confirmedCompromised, unknownFutureValue.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Source</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source of the risk detection. For example, activeDirectory.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The date and time of the event in UTC.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TokenIssuerType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates the type of token issuer for the detected sign-in risk. Possible values are: AzureAD, ADFederationServices, UnknownFutureValue.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserDisplayName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The user principal name (UPN) of the user.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique ID of the user.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserPrincipalName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The user principal name (UPN) of the user.</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (7)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a></li>
+<li><a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a></li>
+<li><a href="../solutions/dpdp-compliance.html">DPDP Compliance</a></li>
+<li><a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a></li>
+<li><a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a></li>
+<li><a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a></li>
+<li><a href="../solutions/nistsp80053.html">NISTSP80053</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/azureactivedirectory.html">Microsoft Entra ID</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Content Items Using This Table (6)</h2>
+<h3>Workbooks (6)</h3>
+<p><strong>In solution <a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.html">AzureSecurityBenchmark</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.html">CybersecurityMaturityModelCertification_CMMCV2</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/dpdp-compliance.html">DPDP Compliance</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/dpdp-compliance-dpdpcompliance-18571e87.html">DPDPCompliance</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/gdpr-compliance-&amp;-data-security-gdprcomplianceanddatasecurity-a0958a9a.html">GDPRComplianceAndDataSecurity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.html">InsiderRiskManagement</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/nistsp80053.html">NISTSP80053</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/nistsp80053-nistsp80053-1f654213.html">NISTSP80053</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

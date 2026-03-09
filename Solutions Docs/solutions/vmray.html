@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VMRay &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>VMRay</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/vmray.svg" alt="VMRay Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">VMRay</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://www.vmray.com/contact/customer-support/">https://www.vmray.com/contact/customer-support/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">VMRay</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2025-07-23</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMRay">VMRay</a></td>
+</tr>
+</tbody>
+</table>
+<p>The VMRay Connector for Microsoft Sentinel enhances security operations by providing enriched threat intelligence, enabling faster and more informed responses to security incidents. The integration has two main parts: first, URL detonation and enrichment, which provides detailed insights into suspicious URLs. Second, it automatically generates and feeds threat intelligence for all submissions to VMRay, improving threat detection and incident response in Sentinel. This seamless integration empowers teams to proactively address emerging threats.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/vmray.html">VMRayThreatIntelligence</a></li>
+</ul>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a></td>
+<td><a href="../connectors/vmray.html">VMRayThreatIntelligence</a></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>2 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">2</td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/vmray-vmray-email-attachment-analyis-2ae966ed.html">VMRay Email Attachment Analyis</a></td>
+<td style="text-align: left;">Submits a attachment or set of attachment associated with an office 365 email to VMRay for Analyis.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vmray-vmray-url-analyis-9fed46b1.html">VMRay URL Analyis</a></td>
+<td style="text-align: left;">Submits a url or set of urls associated with an incident to VMRay for Analyis.</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMRay/README.md">VMRay/README.md</a></em></p>
+</blockquote>
+<h1>VMRay Threat Intelligence Feed and Enrichment Integration - Microsoft Sentinel</h1>
+<p><strong>Latest Version:</strong> <strong>3.0.1</strong> - <strong>Release Date:</strong> <strong>2025-11-07</strong></p>
+<h2>Overview</h2>
+<h2>Requirements</h2>
+<ul>
+<li>Microsoft Sentinel.</li>
+<li>VMRay Analyzer, VMRay FinalVerdict, VMRay TotalInsight.</li>
+<li>
+<p>Microsoft Azure
+  1. Azure functions with Flex Consumption plan.
+     Reference: https://learn.microsoft.com/en-us/azure/azure-functions/flex-consumption-plan</p>
+<p><strong>Note:</strong> Flex Consumption plans are not available in all regions, please check if the region your are deploying the function is supported, if not we suggest you to deploy the function app with premium plan.
+ Reference: https://learn.microsoft.com/en-us/azure/azure-functions/flex-consumption-how-to?tabs=azure-cli%2Cvs-code-publish&amp;pivots=programming-language-python#view-currently-supported-regions
+  3. Azure functions Premium plan.
+ Reference: https://learn.microsoft.com/en-us/azure/azure-functions/functions-premium-plan
+  4. Azure Logic App with Consumption plan.
+ Reference: https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-pricing#consumption-multitenant
+  5. Azure storage with Standard general-purpose v2.</p>
+</li>
+</ul>
+<h2>VMRay Configurations</h2>
+<ul>
+<li>In VMRay Console, you must create a Connector API key.Create it by following the steps below:</li>
+</ul>
+<ol>
+<li>Create a user dedicated for this API key (to avoid that the API key is deleted if an employee leaves)</li>
+<li>Create a role that allows to "View shared submission, analysis and sample" and "Submit sample, manage own jobs, reanalyse old analyses and regenerate analysis reports".</li>
+<li>Assign this role to the created user</li>
+<li>Login as this user and create an API key by opening Settings &gt; Analysis &gt; API Keys.</li>
+<li>Please save the keys, which will be used in configuring the Azure Function.</li>
+</ol>
+<h2>Microsoft Sentinel</h2>
+<h3>Creating Application for API Access</h3>
+<ul>
+<li>Open <a href="https://portal.azure.com">https://portal.azure.com/</a> and search <code>Microsoft Entra ID</code> service.</li>
+</ul>
+<p><img alt="01" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMRay/Images/01.png" /></p>
+<ul>
+<li>Click <code>Add-&gt;App registration</code>.</li>
+</ul>
+<p><img alt="02a" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMRay/Images/02a.png" /></p>
+<ul>
+<li>Enter the name of application and select supported account types and click on <code>Register</code>.</li>
+</ul>
+<p><img alt="02" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMRay/Images/02.png" /></p>
+<ul>
+<li>In the application overview you can see <code>Application Name</code>, <code>Application ID</code> and <code>Tenant ID</code>.</li>
+</ul>
+<p><img alt="03" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMRay/Images/03.png" /></p>
+<ul>
+<li>After creating the application, we need to set API permissions for connector. For this purpose,</li>
+<li>Click <code>Manage-&gt;API permissions</code> tab</li>
+<li>Click <code>Microsoft Graph</code> button</li>
+<li>Search <code>indicator</code> and click on the <code>ThreatIndicators.ReadWrite.OwnedBy</code>, click <code>Add permissions</code> button below.</li>
+<li>Click on <code>Grant admin consent</code></li>
+</ul>
+<p><img alt="app_per" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMRay/Images/app_per.png" /> </p>
+<p><em>[Content truncated...]</em></p>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.1</td>
+<td>07-11-2025</td>
+<td>Fixed Premium ARM template</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>23-07-2025</td>
+<td>Initial Solution Release</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IdentityInfo &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>IdentityInfo</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<blockquote>
+<p><strong>Defender XDR Only:</strong> This table is available in Microsoft Defender XDR advanced hunting but is not available in the Azure Monitor Log Analytics table reference.</p>
+</blockquote>
+<p>Account information from various sources, including Microsoft Entra ID</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Internal</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identityinfo-table">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (46 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityinfo">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">AccountDisplayName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initial, and a last name or surname.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccountDomain*</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Domain of the account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccountName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User name of the account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccountObjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the account in Microsoft Entra ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccountUpn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User principal name (UPN) of the account</td>
+</tr>
+<tr>
+<td style="text-align: left;">Address</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Address of the account user</td>
+</tr>
+<tr>
+<td style="text-align: left;">AssignedRoles*</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">For identities from Microsoft Entra-only, the roles assigned to the account user</td>
+</tr>
+<tr>
+<td style="text-align: left;">BlastRadius**</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A calculation based on the position of the user in the org tree and the user's Microsoft Entra roles and permissions; possible values: Low, Medium, High</td>
+</tr>
+<tr>
+<td style="text-align: left;">ChangeSource*</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifies which identity provider or process triggered the addition of the new row. For example, theSystem-UserPersistencevalue is used for any rows added by an automated process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">City</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">City where the account user is located</td>
+</tr>
+<tr>
+<td style="text-align: left;">CloudSid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Cloud security identifier of the account</td>
+</tr>
+<tr>
+<td style="text-align: left;">CompanyName**</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the company for which the user works</td>
+</tr>
+<tr>
+<td style="text-align: left;">Country</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Country/Region where the account user is located</td>
+</tr>
+<tr>
+<td style="text-align: left;">CreatedDateTime*</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the account user was created</td>
+</tr>
+<tr>
+<td style="text-align: left;">CriticalityLevel</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The criticality score of the account</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeletedDateTime**</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the user account was deleted</td>
+</tr>
+<tr>
+<td style="text-align: left;">Department</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the department that the account user belongs to</td>
+</tr>
+<tr>
+<td style="text-align: left;">DistinguishedName*</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The user'sdistinguished name</td>
+</tr>
+<tr>
+<td style="text-align: left;">EmailAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SMTP address of the account</td>
+</tr>
+<tr>
+<td style="text-align: left;">EmployeeId**</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Employee identifier assigned to the user by the organization</td>
+</tr>
+<tr>
+<td style="text-align: left;">GivenName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Given name or first name of the account user</td>
+</tr>
+<tr>
+<td style="text-align: left;">GroupMembership**</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Microsoft Entra ID groups where the user account is a member</td>
+</tr>
+<tr>
+<td style="text-align: left;">IdentityEnvironment</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Environment where the identity is used; possible values: CloudOnly, Hybrid, On-premises</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsAccountEnabled</td>
+<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">Indicates whether the account is enabled or not</td>
+</tr>
+<tr>
+<td style="text-align: left;">JobTitle</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Job title of the account user</td>
+</tr>
+<tr>
+<td style="text-align: left;">Manager*</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The listed manager of the account user</td>
+</tr>
+<tr>
+<td style="text-align: left;">OnPremObjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Active Directory object ID of the user</td>
+</tr>
+<tr>
+<td style="text-align: left;">OnPremSid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">On-premises security identifier (SID) of the account</td>
+</tr>
+<tr>
+<td style="text-align: left;">OtherMailAddresses**</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Additional email addresses of the user account</td>
+</tr>
+<tr>
+<td style="text-align: left;">Phone*</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The listed phone number of the account user</td>
+</tr>
+<tr>
+<td style="text-align: left;">PrivilegedEntraPimRoles(Preview)***</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">A snapshot of privileged role assignment schedules and eligibility schedules for the account as maintained by Microsoft Entra Privileged Identity Management (excluding activated assignments)</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReportId*</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the event</td>
+</tr>
+<tr>
+<td style="text-align: left;">RiskLevel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Microsoft Entra ID risk level of the user account; possible values: Low, Medium, High</td>
+</tr>
+<tr>
+<td style="text-align: left;">RiskLevelDetails</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details regarding the Microsoft Entra ID risk level</td>
+</tr>
+<tr>
+<td style="text-align: left;">RiskStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Status of the user's risk; possible values: None, ConfirmedSafe, Remediated, Dismissed, AtRisk, ConfirmedCompromised, UnknownFutureValue</td>
+</tr>
+<tr>
+<td style="text-align: left;">SipProxyAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Voice over IP (VOIP) session initiation protocol (SIP) address of the account</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceProviders</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Source providers of the accounts for the identity; possible values: ActiveDirectory, EntraID, Okta</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem*</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source system for the record</td>
+</tr>
+<tr>
+<td style="text-align: left;">State**</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">State where the sign-in occurred, if available</td>
+</tr>
+<tr>
+<td style="text-align: left;">Surname</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Surname, family name, or last name of the account user</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tags*</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Tags assigned to the account user by Defender for Identity</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier representing your organization's instance of Microsoft Entra ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantMembershipType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User type in Microsoft Entra ID; possible values: Guest, Member</td>
+</tr>
+<tr>
+<td style="text-align: left;">Timestamp*</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The date and time that the line was written to the database.This is used when there are multiple lines for each identity, such as when a change is detected, or if 24 hours have passed since the last database line was added.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type*</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of identity; possible values: User, ServiceAccount</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserAccountControl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Security attributes of the user account in the Active Directory domain</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (17)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/azure-activity.html">Azure Activity</a></li>
+<li><a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a></li>
+<li><a href="../solutions/business-email-compromise-financial-fraud.html">Business Email Compromise - Financial Fraud</a></li>
+<li><a href="../solutions/cloud-identity-threat-protection-essentials.html">Cloud Identity Threat Protection Essentials</a></li>
+<li><a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a></li>
+<li><a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a></li>
+<li><a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a></li>
+<li><a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a></li>
+<li><a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a></li>
+<li><a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a></li>
+<li><a href="../solutions/microsoft-entra-id-protection.html">Microsoft Entra ID Protection</a></li>
+<li><a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a></li>
+<li><a href="../solutions/multi-cloud-attack-coverage-essentials-resource-abuse.html">Multi Cloud Attack Coverage Essentials - Resource Abuse</a></li>
+<li><a href="../solutions/nistsp80053.html">NISTSP80053</a></li>
+<li><a href="../solutions/soc-handbook.html">SOC Handbook</a></li>
+<li><a href="../solutions/ueba-essentials.html">UEBA Essentials</a></li>
+<li><a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a></li>
+</ul>
+<hr />
+<h2>Content Items Using This Table (34)</h2>
+<h3>Analytic Rules (12)</h3>
+<p><strong>In solution <a href="../solutions/azure-activity.html">Azure Activity</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-suspicious-granting-of-permissions-to-an-account-b2c15736-b9eb-4dae-8b02-3016b6a45a32-6643d8bb.html">Suspicious granting of permissions to an account</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/business-email-compromise-financial-fraud.html">Business Email Compromise - Financial Fraud</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-authentication-method-changed-for-privileged-account-feb0a2fb-ae75-4343-8cbc-ed545f1da289-05036a5e.html">Authentication Method Changed for Privileged Account</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-privileged-account-permissions-changed-0433c8a3-9aa6-4577-beef-2ea23be41137-ddff1dcb.html">Privileged Account Permissions Changed</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-local-admin-group-changes-63aa43c2-e88e-4102-aea5-0432851c541a-92e9a57c.html">Local Admin Group Changes</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-authentication-methods-changed-for-privileged-account-694c91ee-d606-4ba9-928e-405a2dd0ff0f-513c9e02.html">Authentication Methods Changed for Privileged Account</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-mfa-rejected-by-user-d99cf5c3-d660-436c-895b-8a8f8448da23-b3c993fb.html">MFA Rejected by User</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-privileged-accounts-sign-in-failure-spikes-34c5aff9-a8c2-4601-9654-c7e46342d03b-ebff2fbe.html">Privileged Accounts - Sign in Failure Spikes</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-successful-logon-from-ip-and-failure-from-a-different-ip-02ef8d7e-fc3a-4d86-a457-650fa571d8d2-8d1712d5.html">Successful logon from IP and failure from a different IP</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-user-accounts-sign-in-failure-due-to-ca-spikes-3a9d5ede-2b9d-43a2-acc4-d272321ff77c-0daea6fb.html">User Accounts - Sign in Failure due to CA Spikes</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoft-entra-id-protection.html">Microsoft Entra ID Protection</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-protection-correlate-unfamiliar-sign-in-properties-&amp;-atypical-travel-alerts-a3df4a32-4805-4c6d-8699-f3c888af2f67-965fe5ef.html">Correlate Unfamiliar sign-in properties &amp; atypical travel alerts</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/multi-cloud-attack-coverage-essentials-resource-abuse.html">Multi Cloud Attack Coverage Essentials - Resource Abuse</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/multi-cloud-attack-coverage-essentials-resource-abuse-successful-aws-console-login-from-ip-address-obser-188db479-d50a-4a9c-a041-644bae347d1f-57aa98e4.html">Successful AWS Console Login from IP Address Observed Conducting Password Spray</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/multi-cloud-attack-coverage-essentials-resource-abuse-suspicious-aws-console-logins-by-credential-access-b51fe620-62ad-4ed2-9d40-5c97c0a8231f-dbe5a529.html">Suspicious AWS console logins by credential access alerts</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries (14)</h3>
+<p><strong>In solution <a href="../solutions/business-email-compromise-financial-fraud.html">Business Email Compromise - Financial Fraud</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-login-attempts-using-legacy-auth-b7918a0a-c6fe-4b6d-9111-b0b0c477f1a8-3c2feb3c.html">Login attempts using Legacy Auth</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-microsoft-entra-id-signins-from-new-locations-41fa6e2d-afe9-4398-9356-cec3a927e44e-6ce1e4de.html">Microsoft Entra ID signins from new locations</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-risky-sign-in-with-new-mfa-method-bfacf634-c75e-4291-998c-ecbc0323d943-114a4a02.html">Risky Sign-in with new MFA method</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-successful-signin-from-non-compliant-device-99885ff5-00cf-49e8-9452-6de6aba2a5c7-20eaa2d1.html">Successful Signin From Non-Compliant Device</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-user-accounts-unusual-authentications-occurring-when-countries-f56b2223-0d4d-4347-9de4-822d195624ee-ea198d62.html">User Accounts - Unusual authentications occurring when countries do not conduct normal business operations.</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-user-login-ip-address-teleportation-09a7c5fc-0649-4f7d-a21b-36a754cef6b6-e3c0bf58.html">User Login IP Address Teleportation</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/cloud-identity-threat-protection-essentials.html">Cloud Identity Threat Protection Essentials</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/cloud-identity-threat-protection-essentials-detect-disabled-account-sign-in-attempts-by-account-name-b00f127c-46fa-40bd-9ab6-b266974d29cc-dff302a4.html">Detect Disabled Account Sign-in Attempts by Account Name</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cloud-identity-threat-protection-essentials-sign-ins-from-vps-providers-86490334-5371-40a2-971a-3749c2654954-088cc628.html">Sign-ins From VPS Providers</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cloud-identity-threat-protection-essentials-sign-ins-from-nord-vpn-providers-cdc9b092-8a16-4559-9e5e-831877e8209a-d746cc8d.html">Sign-ins from Nord VPN Providers</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cloud-identity-threat-protection-essentials-suspicious-sign-ins-to-privileged-account-a73c52f2-b3a5-4fe4-be7d-4d59b8558590-502c7b31.html">Suspicious Sign-ins to Privileged Account</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-identity-management-activity-outside-of-privileged-directory-r-c7e6e48a-0514-4989-bc90-4a3c9207ede1-5ce4101d.html">Dataverse - Identity management activity outside of privileged directory role membership</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-local-admin-group-changes-63142c12-5d8b-48cf-a0f6-b523c855497c-cbc59b70.html">Local Admin Group Changes</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/ueba-essentials.html">UEBA Essentials</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-connection-from-highly-privileged-user-741fdf32-e002-4577-ac9b-839fb49f128e-22b5a707.html">Anomalous connection from highly privileged user</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-user-not-covered-under-display-name-impersonation-e90345b3-439c-44e1-a85d-8ae84ad9c65b-78c1a989.html">User not covered under display name impersonation</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks (8)</h3>
+<p><strong>In solution <a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.html">AzureSecurityBenchmark</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/continuousdiagnostics&amp;mitigation-continuousdiagnostics&amp;mitigation-d91b4b8c.html">ContinuousDiagnostics&amp;Mitigation</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.html">CybersecurityMaturityModelCertification_CMMCV2</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.html">InsiderRiskManagement</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/nistsp80053.html">NISTSP80053</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/nistsp80053-nistsp80053-1f654213.html">NISTSP80053</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/soc-handbook.html">SOC Handbook</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-handbook-investigationinsights-6227a80b.html">InvestigationInsights</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.html">ZeroTrustTIC3</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

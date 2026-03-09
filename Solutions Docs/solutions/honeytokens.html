@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ HoneyTokens &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>⚠️ HoneyTokens</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HoneyTokens">HoneyTokens</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Data Connectors</h2>
+<p><strong>This solution does not include data connectors.</strong></p>
+<p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HoneyTokens/README.md">HoneyTokens/README.md</a></em></p>
+</blockquote>
+<p>For more details: <br>
+Blog post: https://aka.ms/honeytokensblog<br></p>
+<blockquote>
+<p><strong>IMPORTANT</strong> <br>
+The Microsoft Sentinel Deception (Honey Tokens) solution is offered in a community supported model by the <a href="https://github.com/Azure/Azure-Sentinel/wiki">Microsoft SIEM &amp; XDR Community</a>. Any support required can be raised as an <a href="https://github.com/Azure/Azure-Sentinel/issues">issue</a> on GitHub where the Microsoft Sentinel community can assist. </p>
+</blockquote>
+<p>This article describes how to use the <strong>Microsoft Sentinel Deception (Honey Tokens)</strong> solution to plant decoy <a href="../key-vault/index.yml">Azure Key Vault</a> keys and secrets, called <em>honeytokens</em>, into existing workloads.</p>
+<p>Use the <a href="detect-threats-built-in.html">analytics rules</a>, <a href="watchlists.html">watchlists</a>, and <a href="monitor-your-data.html">workbooks</a> provided by the solution to monitor access to the deployed honeytokens.</p>
+<p>When using honeytokens in your system, detection principles remains the same. Because there is no legitimate reason to access a honeytoken, any activity will indicate the presence of a user who is not familiar with the environment, and could potentially be an attacker.</p>
+<h2>Before you begin</h2>
+<p>In order to start using the <strong>Microsoft Sentinel Deception (Honey Tokens)</strong> solution, make sure that you have:</p>
+<ul>
+<li>
+<p><strong>Required roles</strong>: You must be a tenant admin to install the <strong>Microsoft Sentinel Deception (Honey Tokens)</strong> solution. Once the solution is installed, you can share the workbook with key vault owners so that they can deploy their own honeytokens.</p>
+</li>
+<li>
+<p><strong>Required data connectors</strong>: Make sure that you've deployed the <a href="data-connectors-reference.md#azure-key-vault">Azure Key Vault</a> and the <a href="data-connectors-reference.md#azure-activity">Azure Activity</a> data connectors in your workspace, and that they're connected.</p>
+</li>
+</ul>
+<p>Verify that data routing succeeded and that the <strong>KeyVault</strong> and <strong>AzureActivity</strong> data is flowing into Microsoft Sentinel. For more information, see:</p>
+<ul>
+<li><a href="https://connect-azure-windows-microsoft-services.md?tabs=AP#diagnostic-settings-based-connections">Connect Microsoft Sentinel to Azure, Windows, Microsoft, and Amazon services</a></li>
+<li><a href="data-connectors-reference.html">Find your Microsoft Sentinel data connector</a></li>
+</ul>
+<h2>Install the solution</h2>
+<p>Install the <strong>Microsoft Sentinel Deception (Honey Tokens)</strong> solution as you would <a href="sentinel-solutions-deploy.html">other solutions</a>. On the <strong>Microsoft Sentinel Deception</strong> solution page, select <strong>Start</strong> to get started.</p>
+<p><img alt="Screenshot of the create solution page" src="https://learn.microsoft.com/en-us/azure/sentinel/media/monitor-key-vault-honeytokens/honeytoken-create-solution.png" /></p>
+<p><strong>To install the Deception solution</strong>:</p>
+<p>The following steps describe specific actions required for the <strong>Microsoft Sentinel Deception (Honey Tokens)</strong> solution.</p>
+<ol>
+<li>On the <strong>Basics</strong> tab, select the same resource group where your Microsoft Sentinel workspace is located.</li>
+</ol>
+<p><em>[Content truncated...]</em></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

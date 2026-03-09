@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infoblox-Get-Host-Name &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Infoblox-Get-Host-Name</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>The playbook will fetch the data from 'Hosts' API and ingest it into custom table</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/infoblox.html">Infoblox</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20Get%20Host%20Name/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20Get%20Host%20Name/readme.md">Infoblox Get Host Name/readme.md</a></em></p>
+</blockquote>
+<h1>Infoblox Get Host Name</h1>
+<ul>
+<li><a href="#Summary">Summary</a></li>
+<li><a href="#Prerequisites">Prerequisites</a></li>
+<li><a href="#Deployment-instructions">Deployment instructions</a></li>
+<li><a href="#Post-Deployment-instructions">Post-Deployment instructions</a></li>
+</ul>
+<h2>Summary<a name="Summary"></a></h2>
+<p>The playbook will retrieve data from the 'Hosts' API and import it into a custom table within the Azure Log Analytics Workspace.</p>
+<h3>Prerequisites<a name="Prerequisites"></a></h3>
+<ol>
+<li>User must have a valid Infoblox API Key.</li>
+</ol>
+<h3>Deployment instructions<a name="Deployment-instructions"></a></h3>
+<ol>
+<li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
+<li>Fill in the required parameters:<ul>
+<li>Playbook Name: Enter the playbook name here</li>
+<li>Infoblox API Key: Enter valid value for API Key</li>
+<li>Infoblox Base Url: Enter baseurl for your Infoblox instance.(e.g. https://csp.infoblox.com)</li>
+</ul>
+</li>
+</ol>
+<p><a href="https%3A%2F%2Fportal.azure.com%2F%23create%2FMicrosoft.Template%2Furi%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FInfoblox%2FPlaybooks%2FInfoblox%20Get%20Host%20Name%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https%3A%2F%2Fportal.azure.us%2F%23create%2FMicrosoft.Template%2Furi%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FInfoblox%2FPlaybooks%2FInfoblox%20Get%20Host%20Name%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<h3>Post-Deployment instructions<a name="Post-Deployment-instructions"></a></h3>
+<h4>a. Authorize connections</h4>
+<p>Once deployment is complete, authorize each connection.</p>
+<ol>
+<li>Go to your logic app -&gt; API connections -&gt; Select connection resource</li>
+<li>Go to General -&gt; edit API connection</li>
+<li>Provide Workspace Id and Workspace Key of Log Analytics Workspace where Table will be created</li>
+<li>Click Save</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/infoblox.html">Back to Infoblox</a></p>
+</div>
+</body>
+</html>

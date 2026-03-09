@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZeroNetworks &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>ZeroNetworks</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ZeroNetworks.svg" alt="ZeroNetworks Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Zero Networks</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://zeronetworks.com">https://zeronetworks.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Nicholas DiCola - nicholas@zeronetworks.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-06-06</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2025-09-17</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroNetworks">ZeroNetworks</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://zeronetworks.com/product">Zero Networks Segment</a> solution for Microsoft Sentinel allows monitoring Zero Networks Segment Audit activity. Audit log data is ingested in Microsoft Sentinel using REST API.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs</p>
+<p>a. <a href="https://learn.microsoft.com/azure/azure-monitor/logs/data-collector-api">Azure Monitor HTTP Data Collector API </a></p>
+<p>b. <a href="https://azure.microsoft.com/products/functions/#overview">Azure Functions</a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/zeronetworkssegmentauditnativepoller.html">Zero Networks Segment Audit</a></li>
+</ul>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>2 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a></td>
+<td><a href="../connectors/zeronetworkssegmentauditnativepoller.html">Zero Networks Segment Audit</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/znsegmentaudit-cl.html"><code>ZNSegmentAudit_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>12 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/zeronetworks-zero-networks-segement-machine-removed-from-protection-a4ce12ca-d01d-460a-b15e-6c74ef328b82-f5e27fd6.html">Zero Networks Segement - Machine Removed from protection</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a><br><a href="../tables/znsegmentaudit-cl.html"><code>ZNSegmentAudit_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zeronetworks-zero-networks-segment-new-api-token-created-603a6b18-b54a-43b7-bb61-d2b0b47d224a-514e9182.html">Zero Networks Segment - New API Token created</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a><br><a href="../tables/znsegmentaudit-cl.html"><code>ZNSegmentAudit_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zeronetworks-zero-networks-segment-rare-jit-rule-creation-58688058-68b2-4b39-8009-ac6dc4d81ea1-aa30ba7d.html">Zero Networks Segment - Rare JIT Rule Creation</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a><br><a href="../tables/znsegmentaudit-cl.html"><code>ZNSegmentAudit_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/zeronetworks-zero-networks-segment-excessive-access-by-user-3dd14edf-788d-4f42-868f-28f3208b92a9-bfeac450.html">Zero Networks Segment - Excessive access by user</a></td>
+<td style="text-align: left;">LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a><br><a href="../tables/znsegmentaudit-cl.html"><code>ZNSegmentAudit_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zeronetworks-zero-networks-segment-excessive-access-to-a-built-in-group-by-user-0e68d210-a8ec-4e13-9f46-61011c020b87-cd570e45.html">Zero Networks Segment - Excessive access to a built-in group by user</a></td>
+<td style="text-align: left;">LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a><br><a href="../tables/znsegmentaudit-cl.html"><code>ZNSegmentAudit_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zeronetworks-zero-networks-segment-inbound-block-rules-deleted-fcbbd670-d4e6-4f3a-9008-d8905e84cf79-9d0f02aa.html">Zero Networks Segment - Inbound Block Rules Deleted</a></td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a><br><a href="../tables/znsegmentaudit-cl.html"><code>ZNSegmentAudit_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zeronetworks-zero-networks-segment-outbound-block-rules-deleted-d8945c8f-bba4-4e02-ad09-228b067ebcf2-e3e2394a.html">Zero Networks Segment - Outbound Block Rules Deleted</a></td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a><br><a href="../tables/znsegmentaudit-cl.html"><code>ZNSegmentAudit_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/zeronetworks-znsegmentaudit-0143013d.html">ZNSegmentAudit</a></td>
+<td style="text-align: left;"><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a><br><a href="../tables/znsegmentaudit-cl.html"><code>ZNSegmentAudit_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/zeronetworks-add-asset-to-protection-zero-networks-segment-16e37e2a.html">Add Asset to Protection - Zero Networks Segment</a></td>
+<td style="text-align: left;">This playbook takes a host from a Microsoft Sentinel incident and adds it to protection. The playboo...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zeronetworks-add-block-outbound-rule-zero-networks-acccess-orchestrator-7ca46c7d.html">Add Block Outbound Rule - Zero Networks Acccess Orchestrator</a></td>
+<td style="text-align: left;">This playbook allows blocking an IP outbound from protected assets in Zero Networks Segment.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zeronetworks-enrich-incident-zero-networks-acccess-orchestrator-65bface5.html">Enrich Incident - Zero Networks Acccess Orchestrator</a></td>
+<td style="text-align: left;">This playbook will take each Host entity and get its Asset status from Zero Network Segment. The pla...</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/znsegmentaudit.html">ZNSegmentAudit</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a> <em>(read)</em><br><a href="../tables/znsegmentaudit-cl.html"><code>ZNSegmentAudit_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.2</td>
+<td>17-09-2025</td>
+<td>Removed Deprecated <strong>Data Connector</strong>.</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>06-02-2025</td>
+<td>Added missing parameter <strong>URI</strong> to Solution.</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>11-12-2024</td>
+<td>Updated solution to 3.0.0</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

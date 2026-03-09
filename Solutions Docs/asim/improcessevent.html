@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>&lt;img src=&quot;../images/asim-badge.png&quot; alt=&quot;ASIM&quot; height=&quot;32&quot;&gt; Process Event filtering parser &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1><img src="../images/asim-badge.png" alt="ASIM" height="32"> Process Event filtering parser</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <strong>ASIM Parsers</strong> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="asim-index.html">Back to ASIM Index</a></p>
+<hr />
+<h2>Parser Information</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Parser Name</strong></td>
+<td style="text-align: left;"><code>imProcessEvent</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Built-in Parser</strong></td>
+<td style="text-align: left;"><code>_Im_ProcessEvent</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Schema</strong></td>
+<td style="text-align: left;">ProcessEvent</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Schema Version</strong></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Parser Type</strong></td>
+<td style="text-align: left;">📦 Union (schema-level)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Parser Version</strong></td>
+<td style="text-align: left;">0.1.3 (<a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/imProcessEvent.md">version history</a>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">June 3, 2024</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source File</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimProcessEvent/Parsers/imProcessEvent.yaml">Parsers\ASimProcessEvent\Parsers\imProcessEvent.yaml</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Description</h2>
+<p>This ASIM parser supports normalizing process event logs from all supported sources to the ASIM ProcessEvent normalized schema.</p>
+<h2>Products</h2>
+<p>This union parser includes parsers for the following products:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Source Parser</th>
+<th style="text-align: left;">Solutions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="im-processcreate-linuxsysmon.html">_Im_ProcessCreate_LinuxSysmon</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="im-processcreate-md4iot.html">_Im_ProcessCreate_MD4IoT</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="im-processcreate-microsoftsecurityevents.html">_Im_ProcessCreate_MicrosoftSecurityEvents</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="im-processcreate-microsoftwindowsevents.html">_Im_ProcessCreate_MicrosoftWindowsEvents</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">SentinelOne</td>
+<td style="text-align: left;"><a href="asimprocesscreatesentinelone.html">_Im_ProcessCreate_SentinelOne</a></td>
+<td style="text-align: left;"><a href="../solutions/sentinelone.html">SentinelOne</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="im-processcreate-vmwarecarbonblackcloud.html">_Im_ProcessCreate_VMwareCarbonBlackCloud</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Sysmon</td>
+<td style="text-align: left;"><a href="asimprocesseventcreatemicrosoftsysmon.html">_Im_ProcessEvent_CreateMicrosoftSysmon</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Sysmon</td>
+<td style="text-align: left;"><a href="asimprocesseventcreatemicrosoftsysmonwindowsevent.html">_Im_ProcessEvent_CreateMicrosoftSysmonWindowsEvent</a></td>
+<td style="text-align: left;"><a href="../solutions/windows-forwarded-events.html">Windows Forwarded Events</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Microsoft 365 Defender for endpoint</td>
+<td style="text-align: left;"><a href="asimprocesseventmicrosoft365d.html">_Im_ProcessEvent_Microsoft365D</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Native</td>
+<td style="text-align: left;"><a href="asimprocesseventnative.html">_Im_ProcessEvent_Native</a></td>
+<td style="text-align: left;"><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a><br><a href="../solutions/vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="im-processterminate-linuxsysmon.html">_Im_ProcessTerminate_LinuxSysmon</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="im-processterminate-md4iot.html">_Im_ProcessTerminate_MD4IoT</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="im-processterminate-microsoftsecurityevents.html">_Im_ProcessTerminate_MicrosoftSecurityEvents</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="im-processterminate-microsoftsysmon.html">_Im_ProcessTerminate_MicrosoftSysmon</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="im-processterminate-microsoftsysmonwindowsevent.html">_Im_ProcessTerminate_MicrosoftSysmonWindowsEvent</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="im-processterminate-microsoftwindowsevents.html">_Im_ProcessTerminate_MicrosoftWindowsEvents</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="im-processterminate-vmwarecarbonblackcloud.html">_Im_ProcessTerminate_VMwareCarbonBlackCloud</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Parameters</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>starttime</code></td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">datetime(null)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>endtime</code></td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">datetime(null)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>commandline_has_any</code></td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">dynamic([])</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>commandline_has_all</code></td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">dynamic([])</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>commandline_has_any_ip_prefix</code></td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">dynamic([])</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>actingprocess_has_any</code></td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">dynamic([])</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>targetprocess_has_any</code></td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">dynamic([])</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>parentprocess_has_any</code></td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">dynamic([])</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>actorusername</code></td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">*</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>targetusername</code></td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">*</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>dvcipaddr_has_any_prefix</code></td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">dynamic([])</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>dvcname_has_any</code></td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">dynamic([])</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>hashes_has_any</code></td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">dynamic([])</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>eventtype</code></td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">*</td>
+</tr>
+</tbody>
+</table>
+<h2>References</h2>
+<ul>
+<li><a href="https://aka.ms/ASimProcessEventDoc">ASIM Process Schema</a></li>
+<li><a href="https://aka.ms/AboutASIM">ASIM</a></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <strong>ASIM Parsers</strong> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="asim-index.html">Back to ASIM Index</a></p>
+</div>
+</body>
+</html>

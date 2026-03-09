@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microsoft Exchange HTTP Proxy Logs &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Microsoft Exchange HTTP Proxy Logs</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>ESI-Opt7ExchangeHTTPProxyLogs</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/rest-api.html">REST API</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20On-Premises/Data%20Connectors/ESI-Opt7ExchangeHTTPProxyLogs.json">ESI-Opt7ExchangeHTTPProxyLogs.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Connector definition requires workspace key (SharedKey pattern)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+</tbody>
+</table>
+<p>[Option 7] - Using Azure Monitor Agent - You can stream HTTP Proxy logs and Security Event logs from the Windows machines connected to your Microsoft Sentinel workspace using the Windows agent. This connection enables you create custom alerts, and improve investigation. <a href="https://aka.ms/ESI_DataConnectorOptions">Learn more</a></p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/exchangehttpproxy-cl.html"><code>ExchangeHttpProxy_CL</code></a> 🔶</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Azure Log Analytics will be deprecated</strong>: Azure Log Analytics will be deprecated, to collect data from non-Azure VMs, Azure Arc is recommended. <a href="https://docs.microsoft.com/azure/azure-monitor/agents/azure-monitor-agent-install?tabs=ARMAgentPowerShell,PowerShellWindows,PowerShellWindowsArc,CLIWindows,CLIWindowsArc">Learn more</a>
+- <strong>Detailled documentation</strong>: &gt;<strong>NOTE:</strong> Detailled documentation on Installation procedure and usage can be found <a href="https://aka.ms/MicrosoftExchangeSecurityGithub">here</a></p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+<p><strong>NOTE:</strong> This solution is based on options. This allows you to choose which data will be ingest as some options can generate a very high volume of data. Depending on what you want to collect, track in your Workbooks, Analytics Rules, Hunting capabilities you will choose the option(s) you will deploy. Each options are independant for one from the other. To learn more about each option: <a href="https://aka.ms/ESI_DataConnectorOptions">'Microsoft Exchange Security' wiki</a></p>
+<p>This Data Connector is the <strong>option 7</strong> of the wiki.</p>
+</blockquote>
+<p><strong>1.  Download and install the agents needed to collect logs for Microsoft Sentinel</strong></p>
+<p>Type of servers (Exchange Servers, Domain Controllers linked to Exchange Servers or all Domain Controllers) depends on the option you want to deploy.
+<strong>Deploy Monitor Agents</strong></p>
+<p>This step is required only if it's the first time you onboard your Exchange Servers/Domain Controllers
+<strong>Deploy the Azure Arc Agent</strong></p>
+<blockquote>
+<p><a href="https://docs.microsoft.com/azure/azure-monitor/agents/azure-monitor-agent-install?tabs=ARMAgentPowerShell,PowerShellWindows,PowerShellWindowsArc,CLIWindows,CLIWindowsArc">Learn more</a></p>
+</blockquote>
+<p><strong>2. [Option 7] HTTP Proxy of Exchange Servers</strong></p>
+<p>Select how to stream HTTP Proxy of Exchange Servers
+<strong>Data Collection Rules - When Azure Monitor Agent is used</strong></p>
+<p><strong>Enable data collection rule</strong></p>
+<blockquote>
+<p>Message Tracking are collected only from <strong>Windows</strong> agents.
+<strong>Option 1 - Azure Resource Manager (ARM) Template (Prefered Method)</strong></p>
+</blockquote>
+<pre><code>Use this method for automated deployment of the DCE and DCR.
+</code></pre>
+<p><strong>A. Create DCE (If not already created for Exchange Servers)</strong></p>
+<pre><code>  1. Click the **Deploy to Azure** button below.
+
+[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://aka.ms/sentinel-ESI-DCEExchangeServers)
+</code></pre>
+<ol start="2">
+<li>Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. </li>
+<li>You can change the proposed name of the DCE.</li>
+<li>
+<p>Click <strong>Create</strong> to deploy.</p>
+<p><strong>B. Deploy Data Connection Rule</strong></p>
+<ol>
+<li>Click the <strong>Deploy to Azure</strong> button below. </li>
+</ol>
+<p><a href="https://aka.ms/sentinel-ESI-DCROption7-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. 
+3. Enter the <strong>Workspace ID</strong> 'and/or Other required fields'.</p>
+<blockquote>
+<ol start="4">
+<li>Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>. </li>
+<li>Click <strong>Purchase</strong> to deploy.</li>
+</ol>
+</blockquote>
+<p><strong>Option 2 - Manual Deployment of Azure Automation</strong></p>
+<p>Use the following step-by-step instructions to deploy manually a Data Collection Rule.
+<strong>Create Custom Table - Explanation</strong></p>
+<p>The Custom Table can't be created using the Azure Portal. You need to use an ARM template, a PowerShell Script or another method <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/logs/create-custom-table?tabs=azure-powershell-1%2Cazure-portal-2%2Cazure-portal-3#create-a-custom-table">described here</a>.</p>
+<p><strong>Create Custom Table using an ARM Template</strong></p>
+<ol>
+<li>Click the <strong>Deploy to Azure</strong> button below. </li>
+</ol>
+<p><a href="https://aka.ms/sentinel-ESI-HTTPProxyCustomTable"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong>, <strong>Location</strong> and <strong>Analytic Workspace Name</strong>. 
+3.  Click <strong>Create</strong> to deploy.</p>
+<p><strong>Create Custom Table using PowerShell in Cloud Shell</strong></p>
+<ol>
+<li>From the Azure Portal, open a Cloud Shell.</li>
+<li>Copy and paste and Execute the following script in the Cloud Shell to create the table.
+    $tableParams = @'
+    {
+        "properties": {
+             "schema": {
+                    "name": "ExchangeHttpProxy_CL",
+                    "columns": [
+                            {
+                                "name": "AccountForestLatencyBreakup",
+                                "type": "string"
+                            },
+                            {
+                                "name": "ActivityContextLifeTime",
+                                "type": "string"
+                            },
+                            {
+                                "name": "ADLatency",
+                                "type": "string"
+                            },
+                            {
+                                "name": "AnchorMailbox",
+                                "type": "string"
+                            },
+                            {
+                                "name": "AuthenticatedUser",
+                                "type": "string"
+                            },
+                            {
+                                "name": "AuthenticationType",
+                                "type": "string"
+                            },
+                            {
+                                "name": "AuthModulePerfContext",
+                                "type": "string"
+                            },
+                            {
+                                "name": "BackEndCookie",
+                                "type": "string"
+                            },
+                            {
+                                "name": "BackEndGenericInfo",
+                                "type": "string"
+                            },
+                            {
+                                "name": "BackendProcessingLatency",
+                                "type": "string"
+                            },
+                            {
+                                "name": "BackendReqInitLatency",
+                                "type": "string"
+                            },
+                            {
+                                "name": "BackendReqStreamLatency",
+                                "type": "string"
+                            },
+                            {
+                                "name": "BackendRespInitLatency",
+                                "type": "string"
+                            },
+                            {
+                                "name": "BackendRespStreamLatency",
+                                "type": "string"
+                            },
+                            {
+                                "name": "BackEndStatus",
+                                "type": "string"
+                            },
+                            {
+                                "name": "BuildVersion",
+                                "type": "string"
+                            },
+                            {
+                                "name": "CalculateTargetBackEndLatency",
+                                "type": "string"
+                            },
+                            {
+                                "name": "ClientIpAddress",
+                                "type": "string"
+                            },
+                            {
+                                "name": "ClientReqStreamLatency",
+                                "type": "string"
+                            },
+                            {
+                                "name": "ClientRequestId",
+                                "type": "string"
+                            },
+                            {
+                                "name": "ClientRespStreamLatency",
+                                "type": "string"
+                            },
+                            {
+                                "name": "CoreLatency",
+                                "type": "string"
+                            },
+                            {
+                                "name": "DatabaseGuid",
+                                "type": "string"
+                            },
+                            {
+                                "name": "EdgeTraceId",
+                                "type": "string"
+                            },
+                            {
+                                "name": "ErrorCode",
+                                "type": "string"
+                            },
+                            {
+                                "name": "GenericErrors",
+                                "type": "string"
+                            },
+                            {
+                                "name": "GenericInfo",
+                                "type": "string"
+                            },
+                            {
+                                "name": "GlsLatencyBreakup",
+                                "type": "string"
+                            },
+                            {
+                                "name": "HandlerCompletionLatency",
+                                "type": "string"
+                            },
+                            {
+                                "name": "HandlerToModuleSwitchingLatency",
+                                "type": "string"
+                            },
+                            {
+                                "name": "HttpPipelineLatency",
+                                "type": "string"
+                            },
+                            {
+                                "name": "HttpProxyOverhead",
+                                "type": "string"
+                            },
+                            {
+                                "name": "HttpStatus",
+                                "type": "string"
+                            },
+                            {
+                                "name": "IsAuthenticated",
+                                "type": "string"
+                            },
+                            {
+                                "name": "KerberosAuthHeaderLatency",
+                                "type": "string"
+                            },
+                            {
+                                "name": "MajorVersion",
+                                "type": "string"
+                            },
+                            {
+                                "name": "Method",
+                                "type": "string"
+                            },
+                            {
+                                "name": "MinorVersion",
+                                "type": "string"
+                            },
+                            {
+                                "name": "ModuleToHandlerSwitchingLatency",
+                                "type": "string"
+                            },
+                            {
+                                "name": "Organization",
+                                "type": "string"
+                            },
+                            {
+                                "name": "PartitionEndpointLookupLatency",
+                                "type": "string"
+                            },
+                            {
+                                "name": "Protocol",
+                                "type": "string"
+                            },
+                            {
+                                "name": "ProtocolAction",
+                                "type": "string"
+                            },
+                            {
+                                "name": "ProxyAction",
+                                "type": "string"
+                            },
+                            {
+                                "name": "ProxyTime",
+                                "type": "string"
+                            },
+                            {
+                                "name": "RequestBytes",
+                                "type": "string"
+                            },
+                            {
+                                "name": "RequestHandlerLatency",
+                                "type": "string"
+                            },
+                            {
+                                "name": "RequestId",
+                                "type": "string"
+                            },
+                            {
+                                "name": "ResourceForestLatencyBreakup",
+                                "type": "string"
+                            },
+                            {
+                                "name": "ResponseBytes",
+                                "type": "string"
+                            },
+                            {
+                                "name": "RevisionVersion",
+                                "type": "string"
+                            },
+                            {
+                                "name": "RouteRefresherLatency",
+                                "type": "string"
+                            },
+                            {
+                                "name": "RoutingHint",
+                                "type": "string"
+                            },
+                            {
+                                "name": "RoutingLatency",
+                                "type": "string"
+                            },
+                            {
+                                "name": "RoutingStatus",
+                                "type": "string"
+                            },
+                            {
+                                "name": "RoutingType",
+                                "type": "string"
+                            },
+                            {
+                                "name": "ServerHostName",
+                                "type": "string"
+                            },
+                            {
+                                "name": "ServerLocatorHost",
+                                "type": "string"
+                            },
+                            {
+                                "name": "ServerLocatorLatency",
+                                "type": "string"
+                            },
+                            {
+                                "name": "SharedCacheLatencyBreakup",
+                                "type": "string"
+                            },
+                            {
+                                "name": "TargetOutstandingRequests",
+                                "type": "string"
+                            },
+                            {
+                                "name": "TargetServer",
+                                "type": "string"
+                            },
+                            {
+                                "name": "TargetServerVersion",
+                                "type": "string"
+                            },
+                            {
+                                "name": "TotalAccountForestLatency",
+                                "type": "string"
+                            },
+                            {
+                                "name": "TotalGlsLatency",
+                                "type": "string"
+                            },
+                            {
+                                "name": "TotalRequestTime",
+                                "type": "string"
+                            },
+                            {
+                                "name": "TotalResourceForestLatency",
+                                "type": "string"
+                            },
+                            {
+                                "name": "TotalSharedCacheLatency",
+                                "type": "string"
+                            },
+                            {
+                                "name": "UrlHost",
+                                "type": "string"
+                            },
+                            {
+                                "name": "UrlQuery",
+                                "type": "string"
+                            },
+                            {
+                                "name": "UrlStem",
+                                "type": "string"
+                            },
+                            {
+                                "name": "UserADObjectGuid",
+                                "type": "string"
+                            },
+                            {
+                                "name": "UserAgent",
+                                "type": "string"
+                            },
+                            {
+                                "name": "TimeGenerated",
+                                "type": "datetime"
+                            },
+                            {
+                                "name": "FilePath",
+                                "type": "string"
+                            }
+                        ]
+             }
+         }
+     }
+     '@</li>
+<li>Copy, Replace, Paste and execute the following parameters with your own values:
+    $SubscriptionID = 'YourGUID'
+    $ResourceGroupName = 'YourResourceGroupName'
+    $WorkspaceName = 'YourWorkspaceName'</li>
+<li>
+<p>Execute the Following Cmdlet to create the table:
+    Invoke-AzRestMethod -Path "/subscriptions/$SubscriptionID/resourcegroups/$ResourceGroupName/providers/microsoft.operationalinsights/workspaces/$WorkspaceName/tables/ExchangeHttpProxy_CL?api-version=2021-12-01-preview" -Method PUT -payload $tableParams
+<strong>A. Create DCE (If not already created for Exchange Servers)</strong></p>
+</li>
+<li>
+<p>From the Azure Portal, navigate to <a href="https://portal.azure.com/#view/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/~/dataCollectionEndpoints">Azure Data collection Endpoint</a>.</p>
+</li>
+<li>Click <strong>+ Create</strong> at the top.</li>
+<li>In the <strong>Basics</strong> tab, fill the required fields and give a name to the DCE. </li>
+<li>'Make other preferable configuration changes', if needed, then click <strong>Create</strong>.</li>
+</ol>
+<p><strong>B. Create a DCR, Type Custom log</strong></p>
+<ol>
+<li>From the Azure Portal, navigate to <a href="https://portal.azure.com/#view/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/~/dataCollectionRules">Azure Data collection rules</a>.</li>
+<li>Click on 'Create' button.</li>
+<li>On 'Basics' tab, fill the Rule name like <strong>DCR-Option7-HTTPProxyLogs</strong>, select the 'Data Collection Endpoint' with the previously created endpoint and fill other parameters.</li>
+<li>In the <strong>Resources</strong> tab, add your Exchange Servers.</li>
+<li>In <strong>Collect and Deliver</strong>, add a Data Source type 'Custom Text logs' and enter the following file pattern : 
+    'C:\Program Files\Microsoft\Exchange Server\V15\Logging\HttpProxy\Autodiscover*.log','C:\Program Files\Microsoft\Exchange Server\V15\Logging\HttpProxy\Eas*.log','C:\Program Files\Microsoft\Exchange Server\V15\Logging\HttpProxy\Ecp*.log','C:\Program Files\Microsoft\Exchange Server\V15\Logging\HttpProxy\Ews*.log','C:\Program Files\Microsoft\Exchange Server\V15\Logging\HttpProxy\Mapi*.log','C:\Program Files\Microsoft\Exchange Server\V15\Logging\HttpProxy\Oab*.log','C:\Program Files\Microsoft\Exchange Server\V15\Logging\HttpProxy\Owa*.log','C:\Program Files\Microsoft\Exchange Server\V15\Logging\HttpProxy\OwaCalendar*.log','C:\Program Files\Microsoft\Exchange Server\V15\Logging\HttpProxy\PowerShell*.log','C:\Program Files\Microsoft\Exchange Server\V15\Logging\HttpProxy\RpcHttp*.log'</li>
+<li>Put 'ExchangeHttpProxy_CL' in Table Name.</li>
+<li>in Transform field, enter the following KQL request :
+    source | extend d = split(RawData,',') | extend DateTime=todatetime(d[0]),RequestId=tostring(d[1]) ,MajorVersion=tostring(d[2]) ,MinorVersion=tostring(d[3]) ,BuildVersion=tostring(d[4]) ,RevisionVersion=tostring(d[5]) ,ClientRequestId=tostring(d[6]) ,Protocol=tostring(d[7]) ,UrlHost=tostring(d[8]) ,UrlStem=tostring(d[9]) ,ProtocolAction=tostring(d[10]) ,AuthenticationType=tostring(d[11]) ,IsAuthenticated=tostring(d[12]) ,AuthenticatedUser=tostring(d[13]) ,Organization=tostring(d[14]) ,AnchorMailbox=tostring(d[15]) ,UserAgent=tostring(d[16]) ,ClientIpAddress=tostring(d[17]) ,ServerHostName=tostring(d[18]) ,HttpStatus=tostring(d[19]) ,BackEndStatus=tostring(d[20]) ,ErrorCode=tostring(d[21]) ,Method=tostring(d[22]) ,ProxyAction=tostring(d[23]) ,TargetServer=tostring(d[24]) ,TargetServerVersion=tostring(d[25]) ,RoutingType=tostring(d[26]) ,RoutingHint=tostring(d[27]) ,BackEndCookie=tostring(d[28]) ,ServerLocatorHost=tostring(d[29]) ,ServerLocatorLatency=tostring(d[30]) ,RequestBytes=tostring(d[31]) ,ResponseBytes=tostring(d[32]) ,TargetOutstandingRequests=tostring(d[33]) ,AuthModulePerfContext=tostring(d[34]) ,HttpPipelineLatency=tostring(d[35]) ,CalculateTargetBackEndLatency=tostring(d[36]) ,GlsLatencyBreakup=tostring(d[37]) ,TotalGlsLatency=tostring(d[38]) ,AccountForestLatencyBreakup=tostring(d[39]) ,TotalAccountForestLatency=tostring(d[40]) ,ResourceForestLatencyBreakup=tostring(d[41]) ,TotalResourceForestLatency=tostring(d[42]) ,ADLatency=tostring(d[43]) ,SharedCacheLatencyBreakup=tostring(d[44]) ,TotalSharedCacheLatency=tostring(d[45]) ,ActivityContextLifeTime=tostring(d[46]) ,ModuleToHandlerSwitchingLatency=tostring(d[47]) ,ClientReqStreamLatency=tostring(d[48]) ,BackendReqInitLatency=tostring(d[49]) ,BackendReqStreamLatency=tostring(d[50]) ,BackendProcessingLatency=tostring(d[51]) ,BackendRespInitLatency=tostring(d[52]) ,BackendRespStreamLatency=tostring(d[53]) ,ClientRespStreamLatency=tostring(d[54]) ,KerberosAuthHeaderLatency=tostring(d[55]) ,HandlerCompletionLatency=tostring(d[56]) ,RequestHandlerLatency=tostring(d[57]) ,HandlerToModuleSwitchingLatency=tostring(d[58]) ,ProxyTime=tostring(d[59]) ,CoreLatency=tostring(d[60]) ,RoutingLatency=tostring(d[61]) ,HttpProxyOverhead=tostring(d[62]) ,TotalRequestTime=tostring(d[63]) ,RouteRefresherLatency=tostring(d[64]) ,UrlQuery=tostring(d[65]) ,BackEndGenericInfo=tostring(d[66]) ,GenericInfo=tostring(d[67]) ,GenericErrors=tostring(d[68]) ,EdgeTraceId=tostring(d[69]) ,DatabaseGuid=tostring(d[70]) ,UserADObjectGuid=tostring(d[71]) ,PartitionEndpointLookupLatency=tostring(d[72]) ,RoutingStatus=tostring(d[73]) | extend TimeGenerated = DateTime  | project-away d,RawData,DateTime | project-away d,RawData,DateTime
+ and click on 'Destination'.</li>
+<li>In 'Destination', add a destination and select the Workspace where you have previously created the Custom Table </li>
+<li>Click on 'Add data source'.</li>
+<li>Fill other required parameters and tags and create the DCR</li>
+</ol>
+<p><strong>Assign the DCR to all Exchange Servers</strong></p>
+<p>Add all your Exchange Servers to the DCR</p>
+</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

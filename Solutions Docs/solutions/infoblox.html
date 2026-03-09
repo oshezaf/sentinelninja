@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infoblox &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Infoblox</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/infoblox_logo.svg" alt="Infoblox Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Infoblox</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.infoblox.com/">https://support.infoblox.com/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Infoblox</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2024-07-15</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2024-07-15</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox">Infoblox</a></td>
+</tr>
+</tbody>
+</table>
+<p>The Infoblox Solution for Microsoft Sentinel is designed to enhance the capabilities of Security Operations Centers (SOC) by integrating actionable intelligence and contextual network data derived from DNS data into Microsoft Sentinel. This integration provides SOC analysts with the tools they need to quickly identify and respond to potential threats such as malware and data exfiltration, improving overall security posture. With seamless configuration and intuitive dashboards, the solution ensures that critical security events are monitored and correlated, offering actionable insights that streamline threat detection and response. 
+SOC analysts will benefit from the app’s ability to provide contextual network data, including user and device attribution, through various lookups and visualizations. By leveraging unique DNS-based threat intelligence, audit logs and other data sources, analysts can conduct faster and more effective investigations. The solution’s functionalities, such as SOC Insights Overview and DNS Events, empower analysts to reduce alert fatigue by focusing on correlated events, ultimately leading to improved efficiency and protection against emerging threats.</p>
+<p><strong>Benefits</strong>
+1. <strong>Reduce alert fatigue with actionable insights through SOC Insights</strong>: Focus on the most critical alerts and insights to streamline threat detection and response. 
+2. <strong>Faster investigations with contextual network data</strong>: Quickly correlate network activities with potential threats using detailed lookups and visualizations. 
+3. <strong>Unique DNS-based Infoblox Threat Intel</strong>: Access unparalleled DNS-based threat intelligence to enhance security decision-making and threat mitigation. </p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>5 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/infobloxclouddataconnectorama.html">[Recommended] Infoblox Cloud Data Connector via AMA</a></li>
+<li><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a> 🔶</li>
+<li><a href="../connectors/infobloxsocinsightsdataconnector-ama.html">[Recommended] Infoblox SOC Insight Data Connector via AMA</a></li>
+<li><a href="../connectors/infobloxsocinsightsdataconnector-api.html">Infoblox SOC Insight Data Connector via REST API</a> 🔶</li>
+<li><a href="../connectors/infobloxsocinsightsdataconnector-legacy.html">[Deprecated] Infoblox SOC Insight Data Connector via Legacy Agent</a></li>
+</ul>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>22 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+<td><a href="../connectors/infobloxsocinsightsdataconnector-legacy.html">[Deprecated] Infoblox SOC Insight Data Connector via Legacy Agent</a>, <a href="../connectors/infobloxclouddataconnectorama.html">[Recommended] Infoblox Cloud Data Connector via AMA</a>, <a href="../connectors/infobloxsocinsightsdataconnector-ama.html">[Recommended] Infoblox SOC Insight Data Connector via AMA</a></td>
+<td>Analytics, Playbooks, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/failed-range-to-ingest-cl.html"><code>Failed_Range_To_Ingest_CL</code></a> 🔶</td>
+<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/host-name-info-cl.html"><code>Host_Name_Info_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/ip-space-info-cl.html"><code>IP_Space_Info_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/infoblox-failed-indicators-cl.html"><code>Infoblox_Failed_Indicators_CL</code></a> 🔶</td>
+<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/service-name-info-cl.html"><code>Service_Name_Info_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/dossier-atp-cl.html"><code>dossier_atp_CL</code></a> 🔶</td>
+<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/dossier-atp-threat-cl.html"><code>dossier_atp_threat_CL</code></a> 🔶</td>
+<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/dossier-dns-cl.html"><code>dossier_dns_CL</code></a> 🔶</td>
+<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/dossier-geo-cl.html"><code>dossier_geo_CL</code></a> 🔶</td>
+<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/dossier-infoblox-web-cat-cl.html"><code>dossier_infoblox_web_cat_CL</code></a> 🔶</td>
+<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/dossier-inforank-cl.html"><code>dossier_inforank_CL</code></a> 🔶</td>
+<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/dossier-malware-analysis-v3-cl.html"><code>dossier_malware_analysis_v3_CL</code></a> 🔶</td>
+<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/dossier-nameserver-cl.html"><code>dossier_nameserver_CL</code></a> 🔶</td>
+<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/dossier-nameserver-matches-cl.html"><code>dossier_nameserver_matches_CL</code></a> 🔶</td>
+<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/dossier-ptr-cl.html"><code>dossier_ptr_CL</code></a> 🔶</td>
+<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/dossier-rpz-feeds-cl.html"><code>dossier_rpz_feeds_CL</code></a> 🔶</td>
+<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/dossier-rpz-feeds-records-cl.html"><code>dossier_rpz_feeds_records_CL</code></a> 🔶</td>
+<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/dossier-threat-actor-cl.html"><code>dossier_threat_actor_CL</code></a> 🔶</td>
+<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/dossier-tld-risk-cl.html"><code>dossier_tld_risk_CL</code></a> 🔶</td>
+<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/dossier-whitelist-cl.html"><code>dossier_whitelist_CL</code></a> 🔶</td>
+<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/dossier-whois-cl.html"><code>dossier_whois_CL</code></a> 🔶</td>
+<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h3>Internal Tables</h3>
+<p>The following <strong>8 table(s)</strong> are used internally by this solution's content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/infobloxinsightassets-cl.html"><code>InfobloxInsightAssets_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Playbooks (writes), Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/infobloxinsightcomments-cl.html"><code>InfobloxInsightComments_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Playbooks (writes)</td>
+</tr>
+<tr>
+<td><a href="../tables/infobloxinsightevents-cl.html"><code>InfobloxInsightEvents_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Playbooks (writes), Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/infobloxinsightindicators-cl.html"><code>InfobloxInsightIndicators_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Playbooks (writes), Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/infobloxinsight-cl.html"><code>InfobloxInsight_CL</code></a> 🔶</td>
+<td><a href="../connectors/infobloxsocinsightsdataconnector-api.html">Infoblox SOC Insight Data Connector via REST API</a></td>
+<td>Analytics, Playbooks (writes), Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/tide-lookup-data-cl.html"><code>tide_lookup_data_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Playbooks (writes), Workbooks</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>27 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">17</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">2</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-soc-insight-detected-api-source-a5e2df87-f0c9-4540-8715-96e71b608986-05c34879.html">Infoblox - SOC Insight Detected - API Source</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/infobloxinsight-cl.html"><code>InfobloxInsight_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-soc-insight-detected-cdc-source-d04f1963-df27-4127-b1ec-3d37148d65be-80d9956d.html">Infoblox - SOC Insight Detected - CDC Source</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-lookup-workbook-5d6a67bf.html">Infoblox_Lookup_Workbook</a></td>
+<td style="text-align: left;"><a href="../tables/dossier-atp-cl.html"><code>dossier_atp_CL</code></a><br><a href="../tables/dossier-atp-threat-cl.html"><code>dossier_atp_threat_CL</code></a><br><a href="../tables/dossier-dns-cl.html"><code>dossier_dns_CL</code></a><br><a href="../tables/dossier-geo-cl.html"><code>dossier_geo_CL</code></a><br><a href="../tables/dossier-infoblox-web-cat-cl.html"><code>dossier_infoblox_web_cat_CL</code></a><br><a href="../tables/dossier-inforank-cl.html"><code>dossier_inforank_CL</code></a><br><a href="../tables/dossier-malware-analysis-v3-cl.html"><code>dossier_malware_analysis_v3_CL</code></a><br><a href="../tables/dossier-nameserver-cl.html"><code>dossier_nameserver_CL</code></a><br><a href="../tables/dossier-nameserver-matches-cl.html"><code>dossier_nameserver_matches_CL</code></a><br><a href="../tables/dossier-ptr-cl.html"><code>dossier_ptr_CL</code></a><br><a href="../tables/dossier-rpz-feeds-cl.html"><code>dossier_rpz_feeds_CL</code></a><br><a href="../tables/dossier-rpz-feeds-records-cl.html"><code>dossier_rpz_feeds_records_CL</code></a><br><a href="../tables/dossier-threat-actor-cl.html"><code>dossier_threat_actor_CL</code></a><br><a href="../tables/dossier-tld-risk-cl.html"><code>dossier_tld_risk_CL</code></a><br><a href="../tables/dossier-whitelist-cl.html"><code>dossier_whitelist_CL</code></a><br><a href="../tables/dossier-whois-cl.html"><code>dossier_whois_CL</code></a><br><em>Internal use:</em><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a><br><a href="../tables/securityincident.html"><code>SecurityIncident</code></a><br><a href="../tables/tide-lookup-data-cl.html"><code>tide_lookup_data_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-workbook-0b2c239e.html">Infoblox_Workbook</a></td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a><br><a href="../tables/host-name-info-cl.html"><code>Host_Name_Info_CL</code></a><br><a href="../tables/ip-space-info-cl.html"><code>IP_Space_Info_CL</code></a><br><a href="../tables/service-name-info-cl.html"><code>Service_Name_Info_CL</code></a><br><em>Internal use:</em><br><a href="../tables/infobloxinsightassets-cl.html"><code>InfobloxInsightAssets_CL</code></a><br><a href="../tables/infobloxinsightevents-cl.html"><code>InfobloxInsightEvents_CL</code></a><br><a href="../tables/infobloxinsightindicators-cl.html"><code>InfobloxInsightIndicators_CL</code></a><br><a href="../tables/infobloxinsight-cl.html"><code>InfobloxInsight_CL</code></a><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a><br><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-block-allow-ip-domain-5b83787c.html">Infoblox-Block-Allow-IP-Domain</a></td>
+<td style="text-align: left;">The playbook will add/remove IP or Domain value in Named List of Infoblox.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-block-allow-ip-domain-incident-based-92e85e82.html">Infoblox-Block-Allow-IP-Domain-Incident-Based</a></td>
+<td style="text-align: left;">The playbook will add / remove IP or Domain values in Named List that available in incidents of Info...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-config-insight-details-7dc4fbab.html">Infoblox-Config-Insight-Details</a></td>
+<td style="text-align: left;">The playbook retrieves Config Insight Details Data and ingests it into a custom table within the Log...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-config-insights-43be35ed.html">Infoblox-Config-Insights</a></td>
+<td style="text-align: left;">The playbook retrieves Config Insight Data and ingests it into a custom table within the Log Analyti...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-dhcp-lookup-385c2260.html">Infoblox-DHCP-Lookup</a></td>
+<td style="text-align: left;">The playbook will retrieve IP entities from an incident, search for related DHCP data in a table, an...</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-data-connector-trigger-sync-8afe4e5a.html">Infoblox-Data-Connector-Trigger-Sync</a></td>
+<td style="text-align: left;">Playbook to sync timer trigger of all Infoblox data connectors.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-get-host-name-3ad74de0.html">Infoblox-Get-Host-Name</a></td>
+<td style="text-align: left;">The playbook will fetch the data from 'Hosts' API and ingest it into custom table</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-get-ip-space-data-9ff604c0.html">Infoblox-Get-IP-Space-Data</a></td>
+<td style="text-align: left;">The playbook will fetch the data from 'IP Space' API and ingest it into custom table</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-get-service-name-0adc147e.html">Infoblox-Get-Service-Name</a></td>
+<td style="text-align: left;">This playbook will fetch the data from 'Services' API and ingest it into custom table</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-ipam-lookup-794a7a4f.html">Infoblox-IPAM-Lookup</a></td>
+<td style="text-align: left;">The playbook will retrieve IP entities from an incident, call an API to obtain IPAM lookup data, and...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-soc-get-insight-details-7be7a13e.html">Infoblox-SOC-Get-Insight-Details</a></td>
+<td style="text-align: left;">Leverages the Infoblox SOC Insights API to enrich a Microsoft Sentinel Incident triggered by an Info...</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/infobloxinsightassets-cl.html"><code>InfobloxInsightAssets_CL</code></a> <em>(write)</em><br><a href="../tables/infobloxinsightcomments-cl.html"><code>InfobloxInsightComments_CL</code></a> <em>(write)</em><br><a href="../tables/infobloxinsightevents-cl.html"><code>InfobloxInsightEvents_CL</code></a> <em>(write)</em><br><a href="../tables/infobloxinsightindicators-cl.html"><code>InfobloxInsightIndicators_CL</code></a> <em>(write)</em><br><a href="../tables/infobloxinsight-cl.html"><code>InfobloxInsight_CL</code></a> <em>(write)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-soc-get-open-insights-api-5c2cae50.html">Infoblox-SOC-Get-Open-Insights-API</a></td>
+<td style="text-align: left;">Leverages the Infoblox SOC Insights API to ingest all Open/Active SOC Insights at time of run into t...</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/infobloxinsight-cl.html"><code>InfobloxInsight_CL</code></a> <em>(write)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-soc-import-indicators-ti-ed3ee6e8.html">Infoblox-SOC-Import-Indicators-TI</a></td>
+<td style="text-align: left;">Imports each Indicator of a Microsoft Sentinel Incident triggered by an Infoblox SOC Insight into th...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-tide-lookup-c25e9a83.html">Infoblox-TIDE-Lookup</a></td>
+<td style="text-align: left;">The playbook fetches TIDE lookup data for the provided entity type and value.</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/tide-lookup-data-cl.html"><code>tide_lookup_data_CL</code></a> <em>(read/write)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-tide-lookup-comment-enrichment-2943be82.html">Infoblox-TIDE-Lookup-Comment-Enrichment</a></td>
+<td style="text-align: left;">The playbook enrich an incident by adding TIDE Lookup information as comment on an incident.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-tide-lookup-via-incident-90b154ca.html">Infoblox-TIDE-Lookup-Via-Incident</a></td>
+<td style="text-align: left;">The playbook takes entity type and value from incident available in Workbook and ingests TIDE Lookup...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-timerangebased-dhcp-lookup-7af6b4a9.html">Infoblox-TimeRangeBased-DHCP-Lookup</a></td>
+<td style="text-align: left;">The playbook will retrieve IP entities from an incident, search for related DHCP data in a table for...</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/infobloxcdc-socinsights.html">InfobloxCDC_SOCInsights</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/infobloxinsight.html">InfobloxInsight</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/infobloxinsight-cl.html"><code>InfobloxInsight_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/infobloxinsightassets.html">InfobloxInsightAssets</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/infobloxinsightassets-cl.html"><code>InfobloxInsightAssets_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/infobloxinsightcomments.html">InfobloxInsightComments</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/infobloxinsightcomments-cl.html"><code>InfobloxInsightComments_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/infobloxinsightevents.html">InfobloxInsightEvents</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/infobloxinsightevents-cl.html"><code>InfobloxInsightEvents_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/infobloxinsightindicators.html">InfobloxInsightIndicators</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/infobloxinsightindicators-cl.html"><code>InfobloxInsightIndicators_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.2</td>
+<td>19-06-2025</td>
+<td>Added flags for Asset, Indicator, Event and Comment in InfobloxSOCGetInsightDetails playbook. Updated Workbook, Parser and Analytic rule.</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>07-11-2024</td>
+<td>Bug fix in Infoblox_Workbook <strong>Workbook</strong></td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>15-07-2024</td>
+<td>Initial Solution Release</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

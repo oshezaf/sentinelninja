@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ApacheHTTPServerCL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>ApacheHTTPServer_CL</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1</strong></td>
+<td style="text-align: left;">Yes 🔶 — uses type-suffixed column names</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (8 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ApacheHTTPServer_CL.json">KQL validation test schema</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_ItemId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Computer</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ItemId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">RawData</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (3)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/apachehttpserver.html">ApacheHTTPServer</a></li>
+<li><a href="../solutions/customlogsama.html">CustomLogsAma</a></li>
+<li><a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></li>
+</ul>
+<h2>Connectors (2)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/apachehttpserver.html">[Deprecated] Apache HTTP Server</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Content Items Using This Table (22)</h2>
+<h3>Analytic Rules (10)</h3>
+<p><strong>In solution <a href="../solutions/apachehttpserver.html">ApacheHTTPServer</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/apachehttpserver-apache-apache-2.4.49-flaw-cve-2021-41773-767f9dc4-3b01-11ec-8d3d-0242ac130003-0ca20cc4.html">Apache - Apache 2.4.49 flaw CVE-2021-41773</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/apachehttpserver-apache-command-in-uri-54da6a42-3b00-11ec-8d3d-0242ac130003-e8de0502.html">Apache - Command in URI</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/apachehttpserver-apache-known-malicious-user-agent-e9edfe1c-3afd-11ec-8d3d-0242ac130003-2c4bafcb.html">Apache - Known malicious user agent</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/apachehttpserver-apache-multiple-client-errors-from-single-ip-15f5a956-3af9-11ec-8d3d-0242ac130003-cb481a14.html">Apache - Multiple client errors from single IP</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/apachehttpserver-apache-multiple-server-errors-from-single-ip-1bf246a2-3af9-11ec-8d3d-0242ac130003-897fd531.html">Apache - Multiple server errors from single IP</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/apachehttpserver-apache-private-ip-in-url-db5f16f0-3afe-11ec-8d3d-0242ac130003-fe445c48.html">Apache - Private IP in URL</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/apachehttpserver-apache-put-suspicious-file-c5d69e46-3b00-11ec-8d3d-0242ac130003-6d3641ad.html">Apache - Put suspicious file</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/apachehttpserver-apache-request-from-private-ip-a0077556-3aff-11ec-8d3d-0242ac130003-aab89050.html">Apache - Request from private IP</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/apachehttpserver-apache-request-to-sensitive-files-d1c52578-3afc-11ec-8d3d-0242ac130003-bde340ab.html">Apache - Request to sensitive files</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/apachehttpserver-apache-requests-to-rare-files-14d7e15e-3afb-11ec-8d3d-0242ac130003-4ca207f0.html">Apache - Requests to rare files</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries (10)</h3>
+<p><strong>In solution <a href="../solutions/apachehttpserver.html">ApacheHTTPServer</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/apachehttpserver-apache-rare-urls-requested-4c1a164e-3ae9-11ec-8d3d-0242ac130003-e7e235de.html">Apache - Rare URLs requested</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/apachehttpserver-apache-rare-files-requested-ae48a600-3ae9-11ec-8d3d-0242ac130003-154f06bb.html">Apache - Rare files requested</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/apachehttpserver-apache-rare-user-agents-d2e85f1a-3ae8-11ec-8d3d-0242ac130003-af20410c.html">Apache - Rare user agents</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/apachehttpserver-apache-rare-user-agents-with-client-errors-5ce3f2ed-0c81-407f-ae12-6ea00a6d9873-622d3504.html">Apache - Rare user agents with client errors</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/apachehttpserver-apache-requests-to-unexisting-files-017d1bee-3aea-11ec-8d3d-0242ac130003-99a9b641.html">Apache - Requests to unexisting files</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/apachehttpserver-apache-top-top-files-requested-456ab502-38b8-11ec-8d3d-0242ac130003-b6051fd0.html">Apache - Top Top files requested</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/apachehttpserver-apache-top-urls-with-client-errors-28961fc8-3892-11ec-8d3d-0242ac130003-c3caf0ed.html">Apache - Top URLs with client errors</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/apachehttpserver-apache-top-urls-with-server-errors-ccdd22c6-3896-11ec-8d3d-0242ac130003-1ded7119.html">Apache - Top URLs with server errors</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/apachehttpserver-apache-top-files-requested-with-errors-afe13b7c-38b8-11ec-8d3d-0242ac130003-552d4bde.html">Apache - Top files requested with errors</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/apachehttpserver-apache-unexpected-post-requests-c21ea046-3ae7-11ec-8d3d-0242ac130003-e7427332.html">Apache - Unexpected Post Requests</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks (2)</h3>
+<p><strong>In solution <a href="../solutions/apachehttpserver.html">ApacheHTTPServer</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/apachehttpserver-apachehttpserver-112ebf76.html">ApacheHTTPServer</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/team-cymru-scout-teamcymruscout-b64c6ed4.html">TeamCymruScout</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Parsers Using This Table (3)</h2>
+<h3>ASIM Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimwebsessionapachehttpserver.html">ASimWebSessionApacheHTTPServer</a></td>
+<td style="text-align: left;">WebSession</td>
+<td style="text-align: left;">Apache HTTP Server</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Other Parsers (2)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/apachehttpserver.html">ApacheHTTPServer</a></td>
+<td style="text-align: left;"><a href="../solutions/apachehttpserver.html">ApacheHTTPServer</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/apachehttpserver.html">ApacheHTTPServer</a></td>
+<td style="text-align: left;"><a href="../solutions/apachehttpserver.html">ApacheHTTPServer</a> ⚠️</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.</p>
+</blockquote>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NTANetAnalytics &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>NTANetAnalytics</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for NTANetAnalytics table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Network</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ntanetanalytics">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (93 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ntanetanalytics">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AclGroup</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Access control list group refers to the network security group associated with the network security group rule name (or) the network group associated with the security admin configuration which allowed or denied the connection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AclRule</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Access control list rule refers to the network security group rule name or the security admin rule name which allowed or denied the connection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Action</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Action taken for the record. For network flow records this would indicate whether the flow was allowed or denied. For example: Allow/Deny for Firewall logs.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AllowedInFlows</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Count of inbound flows that were allowed. This represents the number of flows that shared the same four-tuple inbound to the network interface at which the flow was captured.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AllowedOutFlows</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Count of outbound flows that were allowed(Outbound to the network interface at which the flow was captured).</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Azure region locations.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BytesDestToSrc</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Represents bytes sent from the destination to the source of the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BytesSrcToDest</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Represents bytes sent from the source to the destination of the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CompletedFlows</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">This is populated with non-zero value when a flow gets a Completed event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConnectingVnets</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Space separated list of virtual network names.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConnectionName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Connection Name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConnectionType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the connection. Possible values are VNetPeering, VpnGateway, and ExpressRoute.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Country</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Two letter country code (ISO 3166-1 alpha-2).</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeniedInFlows</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Count of inbound flows that were denied(Inbound to the network interface at which the flow was captured).</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeniedOutFlows</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Count of outbound flows that were denied(Outbound to the network interface at which the flow was captured).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Description</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Additional information about the record, if required. For Firewall logs this would contain the ActionReason from the firewall.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestApplicationGateway</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Application gateway associated with the destination IP in the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestCloud</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Cloud associated with the source IP in the flow. Possible values can be Public, Mooncake and Fairfax.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestEnvironment</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Environment associated with the destination IP in the flow. Possible values can be Prod and NonProd.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestExpressRouteCircuit</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Express route circuit associated with the destination IP in the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Destination IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestLoadBalancer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Load balancer associated with the destination IP in the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestLocalNetworkGateway</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Local network gateway associated with the destination IP in the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestNetworkGroups</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">In case destination is tagged with a vnet, this is networkgroups that vnet belongs to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestNic</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">NIC associated with the destination IP in the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestPort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Destination port.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestPublicIps</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Destination public IP addresses flow information.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Azure region of virtual network/ network interface/ virtual machine to which the destination IP in the flow belongs to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestServiceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Service ID associated with the destination IP in the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestServiceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Service Name associated with the destination IP in the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestServiceTags</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Service tag of DestPublicIps in format <Space separated list of destination public ips grouped by service tag></td>
+</tr>
+<tr>
+<td style="text-align: left;">DestSubnet</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Subnet associated with the destination IP in the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestSubscription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Subscription Id of virtual network/ network interface/ virtual machine to which the destination IP in the flow belongs to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestTenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Tenant ID associated with the destination IP in the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestTenantName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Tenant Name associated with the destination IP in the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestVm</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Virtual machine associated with the destination IP in the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ExpressRouteCircuitPeeringType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The peering type of the associated express route circuit for the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FaSchemaVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Schema version for ingestion.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FlowDirection</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Direction of the flow which can be inbound or outbound.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FlowEncryption</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of flow encryption.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FlowEndTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Last occurrence of the flow (which will get aggregated) in the flow log processing interval between "FlowIntervalStartTime_t" and "FlowIntervalEndTime_t". In terms of flow log v2, this field contains the time when the last flow with the same four-tuple started (marked as "B" in the raw flow record).</td>
+</tr>
+<tr>
+<td style="text-align: left;">FlowIntervalEndTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Ending time(in UTC) of the flow log processing interval.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FlowIntervalStartTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Starting time(in UTC) of the flow log processing interval. This is time from which flow interval is measured.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FlowLogResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The resource Id for the flow log</td>
+</tr>
+<tr>
+<td style="text-align: left;">FlowStartTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">First occurrence of the flow (which will get aggregated) in the flow log processing interval between "FlowIntervalStartTime_t" and "FlowIntervalEndTime_t".</td>
+</tr>
+<tr>
+<td style="text-align: left;">FlowStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Status of flow which can be allowed or denied.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FlowType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Category of the flows(allowed values are IntraVNet, InterVNet, S2S, P2S, AzurePublic, ExternalPublic, MaliciousFlow, Unknown Private, Unknown) based on IP addresses involved in flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsFlowCapturedAtUdrHop</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">True if flow gets captured at a UDR hop.</td>
+</tr>
+<tr>
+<td style="text-align: left;">L4Protocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Transport Protocol,T = TCP, U = UDP.</td>
+</tr>
+<tr>
+<td style="text-align: left;">L7Protocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Application Layer protocol name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The resource ID of the resource responsible for the log generation. Eg. flow log ID for VNet flow logs, firewall diagnostic log ID for firewall logs, etc.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MacAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">MAC address of the network interface at which the flow was captured.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NsgList</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Network Security Group(NSG) associated with the flow. This is a placeholder for NSG flow logging.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NsgRule</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">NSG rule that allowed or denied this flow. This is a placeholder for NSG flow logging.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NsgRuleType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of Network Security Group(NSG) rule used by the flow. This is a placeholder for NSG flow logging.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PacketsDestToSrc</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Represents packets sent from the destination to the source of the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PacketsSrcToDest</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Represents packets sent from the source to the destination of the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PrivateEndpointResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Resource ID of the private endpoint resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PrivateLinkResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Resource ID of the private link service.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PrivateLinkResourceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Resource name of the private link service.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RecordCount</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Count of individual records that were aggregated into this record.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcApplicationGateway</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Application gateway associated with the source IP in the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcCloud</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Cloud associated with the source IP in the flow. Possible values can be Public, Mooncake and Fairfax.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcEnvironment</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Environment associated with the source IP in the flow. Possible values can be Prod and NonProd.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcExpressRouteCircuit</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Express route circuit associated with the source IP in the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcLoadBalancer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Load balancer associated with the source IP in the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcLocalNetworkGateway</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Local network gateway associated with the source IP in the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcNetworkGroups</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">In case source is tagged with a vnet, this is networkgroups that vnet belongs to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcNic</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">NIC associated with the source IP in the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcPorts</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Pipe Separated Source Ports.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcPublicIps</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source public IP addresses flow information.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Azure region of virtual network/ network interface/ virtual machine to which the source IP in the flow belongs to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcServiceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Service ID associated with the source IP in the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcServiceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Service Name associated with the source IP in the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcServiceTags</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Service tag of SrcPublicIps in format <Space separated list of source public ips grouped by service tag></td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcSubnet</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Subnet associated with the source IP in the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcSubscription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Subscription of the Azure virtual network/ network interface/ virtual machine to which the source IP in the flow belongs to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcTenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Tenant ID associated with the source IP in the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcTenantName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Tenant Name associated with the source IP in the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcVm</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Virtual machine associated with the source IP in the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Status of the ingestion. Possible values can be Completed, Partial or Failed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SubType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Subtype of the ingestion. Values can be Flowlog and StatusMessage.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Target Resource Id for the resource where flow logging has been enabled.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetResourceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Target Resource Type where flow logging is enabled. It can be virtual network(VNET)/subnet(SUBNET)/network interface(NIC).</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time when the data gets ingested into the log analytics workspace.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeProcessed</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Time(in UTC) at which the traffic analytics processed the raw flow logs from the storage account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TrafficAnalyticsResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Resource ID of the Traffic Analytics resource that is responsible for Traffic Analytics processing for this log source.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Information</h2>
+<p>📖 <strong>Related Documentation:</strong> <a href="https://learn.microsoft.com/azure/network-watcher/traffic-analytics-schema">Traffic Analytics schema</a> - NSG and VNet flow log schema and data aggregation</p>
+<h2>Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></li>
+</ul>
+<hr />
+<h2>Content Items Using This Table (1)</h2>
+<h3>Workbooks (1)</h3>
+<p><strong>In solution <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/team-cymru-scout-teamcymruscout-b64c6ed4.html">TeamCymruScout</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Parsers Using This Table (1)</h2>
+<h3>ASIM Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimnetworksessionntanetanalytics.html">ASimNetworkSessionNTANetAnalytics</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;">Azure NTANetAnalytics</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

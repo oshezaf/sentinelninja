@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cohesity &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Cohesity</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cohesity-Logo.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>CohesityDataConnector</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Cohesity</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/cohesitysecurity.html">CohesitySecurity</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CohesitySecurity/Data%20Connectors/Helios2Sentinel/Cohesity_API_FunctionApp.json">Cohesity_API_FunctionApp.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Connector definition requires workspace key (SharedKey pattern)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+</tbody>
+</table>
+<p>The Cohesity function apps provide the ability to ingest Cohesity Datahawk ransomware alerts into Microsoft Sentinel.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/cohesity-cl.html"><code>Cohesity_CL</code></a> 🔶</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
+- <strong>Azure Blob Storage connection string and container name</strong>: Azure Blob Storage connection string and container name</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+<p><strong>NOTE:</strong> This connector uses Azure Functions that connect to the Azure Blob Storage and KeyVault. This might result in additional costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a>, <a href="https://azure.microsoft.com/pricing/details/storage/blobs/">Azure Blob Storage pricing page</a> and <a href="https://azure.microsoft.com/pricing/details/key-vault/">Azure KeyVault pricing page</a> for details.</p>
+<p><strong>(Optional Step)</strong> Securely store workspace and API authorization key(s) or token(s) in Azure Key Vault. Azure Key Vault provides a secure mechanism to store and retrieve key values. <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Follow these instructions</a> to use Azure Key Vault with an Azure Function App.</p>
+</blockquote>
+<p><strong>STEP 1 - Get a Cohesity DataHawk API key (see troubleshooting <a href="https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/CohesitySecurity/Data%20Connectors/Helios2Sentinel/IncidentProducer">instruction 1</a>)</strong></p>
+<p><strong>STEP 2 - Register Azure app (<a href="https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps">link</a>) and save Application (client) ID, Directory (tenant) ID, and Secret Value (<a href="https://learn.microsoft.com/en-us/azure/healthcare-apis/register-application">instructions</a>). Grant it Azure Storage (user_impersonation) permission. Also, assign the 'Microsoft Sentinel Contributor' role to the application in the appropriate subscription.</strong></p>
+<p><strong>STEP 3 - Deploy the connector and the associated Azure Functions</strong>.</p>
+<p><strong>4. Azure Resource Manager (ARM) Template</strong></p>
+<p>Use this method for automated deployment of the Cohesity data connector using an ARM Template.</p>
+<ol>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below. </p>
+<p><a href="https://aka.ms/sentinel-Cohesity-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. 
+3. Enter the parameters that you created at the previous steps
+4. Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>.
+5. Click <strong>Purchase</strong> to deploy.</p>
+</li>
+</ol>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CohesitySecurity\Data Connectors\Helios2Sentinel\readme.md">CohesitySecurity\Data Connectors\Helios2Sentinel\readme.md</a></em></p>
+</blockquote>
+<h1>Azure Functions</h1>
+<p>This solution uses Microsoft Azure functions requires to receive alerts and create Microsoft Sentinel incidents. You have to deploy the Azure functions.
+Before deployment, please make sure that all prerequisites are done correctly.</p>
+<h2>Prerequisites</h2>
+<ul>
+<li><em>(Recommendation)</em> Get access to <a href="https://visualstudio.microsoft.com/vs/community/">Visual Studio</a> or <a href="https://code.visualstudio.com/">Visual Studio Code</a> in case later you decide to change the code for your environment.</li>
+<li>Install <a href="https://dotnet.microsoft.com/download/dotnet-core">dotnet core</a>.</li>
+<li>Install <a href="https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest">azure-cli</a>.</li>
+<li>Install <a href="https://docs.microsoft.com/azure/azure-functions/functions-run-local">azure-functions-core-tools</a>.</li>
+</ul>
+<h2>Deployment</h2>
+<p>Click on the "Deploy to Azure" button to deploy the Azure functions. This step directs you to deploy an ARM Template wizard.</p>
+<p><a href="https://aka.ms/sentinel-Cohesity-azuredeploy"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

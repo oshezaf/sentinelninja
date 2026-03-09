@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AmlComputeCpuGpuUtilization &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>AmlComputeCpuGpuUtilization</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for AmlComputeCpuGpuUtilization table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Azure Resources</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amlcomputecpugpuutilization">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (28 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amlcomputecpugpuutilization">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">CallerIpAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The caller IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClusterName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Compute cluster name for AmlCompute clusters. In case of singularity this would be VirtualCluster(VC) name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A GUID used to group together a set of related events.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">DeviceId of GPU.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of compute, either CPU or GPU.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DurationMs</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The duration of the operation in milliseconds.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Identity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identity of the user or application that performed the operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Level</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The severity level of the event. Must be one of Informational, Warning, Error, or Critical.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Location</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The region of the resource emitting the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MetricName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Metric name. This would be Cpu/Gpu utilization metric eg. GpuMemoryUtilization, GpuUtilization, CpuUtilization etc.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NodeId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">NodeId on the cluster.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the operation associated with the log entry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The api-version associated with the operation, if the operationName was performed using an API.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResultDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The static text description of this operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResultSignature</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The sub status of the event. If this operation corresponds to a REST API call, this is the HTTP status code of the corresponding REST call.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResultType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The status of the event. Typical values include Started, In Progress, Succeeded, Failed, Active, and Resolved.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RunId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique run identifier.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) of the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">Utilization</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Compute utilization of node.</td>
+</tr>
+<tr>
+<td style="text-align: left;">WorkspaceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique workspace identifer.</td>
+</tr>
+<tr>
+<td style="text-align: left;">WorkspaceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User friendly workspace identifier.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.machinelearningservices/workspaces</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

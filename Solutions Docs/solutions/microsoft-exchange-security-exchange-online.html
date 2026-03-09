@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microsoft Exchange Security - Exchange Online &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Microsoft Exchange Security - Exchange Online</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Microsoft Exchange Security - Exchange Online Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Community</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Community</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/issues">https://github.com/Azure/Azure-Sentinel/issues</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.1.7</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-12-21</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20Online">Microsoft Exchange Security - Exchange Online</a></td>
+</tr>
+</tbody>
+</table>
+<p>The Exchange Security Audit and Configuration Insight solution analyze Exchange Online configuration and logs from a security lens to provide insights and alerts.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>a. <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-collector-api?tabs=powershell">Custom logs ingestion via Data Collector REST API</a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/esi-exchangeonlinecollector.html">Exchange Security Insights Online Collector</a> 🔶</li>
+</ul>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>3 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/esiexchangeonlineconfig-cl.html"><code>ESIExchangeOnlineConfig_CL</code></a> 🔶</td>
+<td><a href="../connectors/esi-exchangeonlinecollector.html">Exchange Security Insights Online Collector</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/event.html"><code>Event</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>10 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Watchlists</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-exchange-security-exchange-online-microsoft-exchange-admin-activity-online-c51be957.html">Microsoft Exchange Admin Activity - Online</a></td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-exchange-security-exchange-online-microsoft-exchange-least-privilege-with-rbac-online-e1522c02.html">Microsoft Exchange Least Privilege with RBAC - Online</a></td>
+<td style="text-align: left;"><a href="../tables/esiexchangeonlineconfig-cl.html"><code>ESIExchangeOnlineConfig_CL</code></a><br><a href="../tables/event.html"><code>Event</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-exchange-security-exchange-online-microsoft-exchange-search-adminauditlog-online-11d0bde2.html">Microsoft Exchange Search AdminAuditLog - Online</a></td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-exchange-security-exchange-online-microsoft-exchange-security-review-online-bf15f919.html">Microsoft Exchange Security Review - Online</a></td>
+<td style="text-align: left;"><a href="../tables/esiexchangeonlineconfig-cl.html"><code>ESIExchangeOnlineConfig_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/exchangeconfiguration.html">ExchangeConfiguration</a></td>
+<td style="text-align: left;">The list of section to query. Default is all.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/exchangeenvironmentlist.html">ExchangeEnvironmentList</a></td>
+<td style="text-align: left;">The target environment to query. Valid values are "On-Premises" or "Online". Default is "On-Premises...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/mescheckonlinevip.html">MESCheckOnlineVIP</a></td>
+<td style="text-align: left;">The user to verifiy if is a VIP or not. Default value is "all".</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/mescomparedatamra.html">MESCompareDataMRA</a></td>
+<td style="text-align: left;">The Section to compare. Default value is "".</td>
+<td style="text-align: left;"><a href="../tables/esiexchangeonlineconfig-cl.html"><code>ESIExchangeOnlineConfig_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/mesofficeactivitylogs.html">MESOfficeActivityLogs</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h3>Watchlists</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-exchange-security-exchange-online-exchonlinevip-20613a40.html">ExchOnlineVIP</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20Online/README.md">Microsoft Exchange Security - Exchange Online/README.md</a></em></p>
+</blockquote>
+<h2>Overview</h2>
+<p>We have published Public Contents for the Microsoft Exchange Security Sentinel Solution. The contents can be found here:</p>
+<ul>
+<li><a href="./%23%20-%20General%20Content/README.html">General Documentation &amp; Artifacts</a></li>
+</ul>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.1.7</td>
+<td>26-03-2025</td>
+<td>Update documentation link to new repository</td>
+</tr>
+<tr>
+<td>3.1.6</td>
+<td>30-08-2024</td>
+<td>Correct bug on LasdtReceivedData of DataConnector. and change parser</td>
+</tr>
+<tr>
+<td>3.1.5</td>
+<td>15-05-2024</td>
+<td>Enhancement in existing <strong>Parser</strong></td>
+</tr>
+<tr>
+<td>3.1.4</td>
+<td>30-04-2024</td>
+<td>Repackaged for parser issue</td>
+</tr>
+<tr>
+<td>3.1.3</td>
+<td>25-04-2024</td>
+<td>Repackaged for parser issue with old names</td>
+</tr>
+<tr>
+<td>3.1.2</td>
+<td>18-04-2024</td>
+<td>Repackaged for parser issue while update</td>
+</tr>
+<tr>
+<td>3.1.1</td>
+<td>19-03-2024</td>
+<td>Manually updated package content</td>
+</tr>
+<tr>
+<td>3.0.5</td>
+<td>20-02-2024</td>
+<td>Correct DataConnector last Log indicator</td>
+</tr>
+<tr>
+<td>3.0.4</td>
+<td>18-12-2023</td>
+<td>Correct Parser parameters and force version update</td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>05-12-2023</td>
+<td>Added parameters in <strong>Parser</strong> to fix default values issue.</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>01-11-2023</td>
+<td>Added a <strong>Parser</strong> to verify if user is Microsoft Exchange Security VIP (Watchlist)</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>13-09-2023</td>
+<td>Readme file for parsers added and typo correction</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>23-08-2023</td>
+<td>ExchangeEnvironmentList parser name  corrected in <strong>Workbooks</strong>.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

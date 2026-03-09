@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SentinelSOARessentials &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>SentinelSOARessentials</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="SentinelSOARessentials Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com/">https://support.microsoft.com/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-06-27</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials">SentinelSOARessentials</a></td>
+</tr>
+</tbody>
+</table>
+<p>The Microsoft Sentinel SOAR Essentials solution for Microsoft Sentinel contains Playbooks that can help you get started with basic notification and orchestration scenarios for common use cases. These include Playbooks for sending notifications over email and/or collaboration platforms such as MS Teams, Slack, etc.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p><strong>This solution does not include data connectors.</strong></p>
+<p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
+<h2>Tables Used</h2>
+<p>This solution queries <strong>2 table(s)</strong> from its content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/sentinelhealth.html"><code>SentinelHealth</code></a></td>
+<td>Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h3>Internal Tables</h3>
+<p>The following <strong>2 table(s)</strong> are used internally by this solution's content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
+<td>Playbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
+<td>Playbooks, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>29 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">25</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">4</td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-automationhealth-09dce6f5.html">AutomationHealth</a></td>
+<td style="text-align: left;"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a><br><a href="../tables/sentinelhealth.html"><code>SentinelHealth</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-incidentoverview-c5ea1b65.html">IncidentOverview</a> ⚠️</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-incidenttasksworkbook-37a89581.html">IncidentTasksWorkbook</a></td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-securityoperationsefficiency-4e91f3d3.html">SecurityOperationsEfficiency</a></td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-create-incident-from-microsoft-forms-response-cc74d315.html">Create Incident From Microsoft Forms Response</a></td>
+<td style="text-align: left;">This playbook will create a new Microsoft Sentinel incident when Microsoft Forms response is submitt...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-create-incident-from-shared-mailbox-8066f5fe.html">Create Incident From Shared Mailbox</a></td>
+<td style="text-align: left;">This playbook will create a new Microsoft Sentinel incident when new email arrives to shared mailbox...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-http-trigger-entity-analyzer-01f80a11.html">HTTP Trigger Entity Analyzer</a></td>
+<td style="text-align: left;">This playbook is triggered by HTTP POST requests with entity information and performs automated inve...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-incident-assignment-shifts-da9095cc.html">Incident Assignment Shifts</a></td>
+<td style="text-align: left;">This playbook will assign an Incident to an owner based on the Shifts schedule in Microsoft Teams. W...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-incident-trigger-entity-analyzer-31ba8d0c.html">Incident Trigger Entity Analyzer</a></td>
+<td style="text-align: left;">This playbook is triggered by Microsoft Sentinel incidents and performs automated investigation and ...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-incident-tasks-microsoft-defender-xdr-bec-playbook-for-secops-f4d24d4f.html">Incident tasks - Microsoft Defender XDR BEC Playbook for SecOps</a></td>
+<td style="text-align: left;">This playbook add Incident Tasks based on Microsoft Defender XDR BEC Playbook for SecOps. This playb...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-incident-tasks-microsoft-defender-xdr-phishing-playbook-for-secops-5f7addaa.html">Incident tasks - Microsoft Defender XDR Phishing Playbook for SecOps</a></td>
+<td style="text-align: left;">This playbook add Incident Tasks based on Microsoft Defender XDR Phishing Playbook for SecOps. This ...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-incident-tasks-microsoft-defender-xdr-ransomware-playbook-for-secops-5c37764f.html">Incident tasks - Microsoft Defender XDR Ransomware Playbook for SecOps</a></td>
+<td style="text-align: left;">This playbook add Incident Tasks based on Microsoft Defender XDR Ransomware Playbook for SecOps. Thi...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-notify-incident-owner-in-microsoft-teams-7d319b4d.html">Notify Incident Owner in Microsoft Teams</a></td>
+<td style="text-align: left;">This playbook sends a Teams message to the new incident owner.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-notify-when-incident-is-closed-2c9c306d.html">Notify When Incident Is Closed</a></td>
+<td style="text-align: left;">This playbook is utilizing new update trigger to notify person/group on Microsoft Teams/Outlook when...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-notify-when-incident-is-reopened-c5eba65a.html">Notify When Incident Is Reopened</a></td>
+<td style="text-align: left;">This playbook is utilizing new update trigger to notify person/group on Microsoft Teams/Outlook when...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-notify-when-incident-severity-changed-d95035ee.html">Notify When Incident Severity Changed</a></td>
+<td style="text-align: left;">This playbook is utilizing new update trigger to notify person/group on Microsoft Teams/Outlook when...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-post-message-slack-43984c2e.html">Post Message Slack</a></td>
+<td style="text-align: left;">This playbook will post a message in a Slack channel when an alert is created in Microsoft Sentinel</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-post-message-slack-561b5d3a.html">Post Message Slack</a></td>
+<td style="text-align: left;">This playbook will post a message in a Slack channel when an Incident is created in Microsoft Sentin...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-post-message-teams-9be2b190.html">Post Message Teams</a></td>
+<td style="text-align: left;">This playbook will post a message in a Microsoft Teams channel when an Alert is created in Microsoft...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-post-message-teams-80596e03.html">Post Message Teams</a></td>
+<td style="text-align: left;">This playbook will post a message in a Microsoft Teams channel when an Incident is created in Micros...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-post-message-slack-8c72ad08.html">Post-Message-Slack</a></td>
+<td style="text-align: left;">Author: Yaniv Shasha</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-post-message-teams-e5dff2d7.html">Post-Message-Teams</a></td>
+<td style="text-align: left;">Author: Yaniv Shasha</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-relate-alerts-to-incident-by-ip-c7331925.html">Relate alerts to incident by IP</a></td>
+<td style="text-align: left;">This playbook looks for other alerts with the same IP as the triggered incident. When such an alert ...</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a> <em>(read)</em><br><a href="../tables/securityincident.html"><code>SecurityIncident</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-send-teams-adaptive-card-on-incident-creation-903fb520.html">Send Teams Adaptive Card on incident creation</a></td>
+<td style="text-align: left;">This playbook will send Microsoft Teams Adaptive Card on incident creation, with the option to chang...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-send-basic-email-449e76ec.html">Send basic email</a></td>
+<td style="text-align: left;">This playbook will be sending email with basic incidents details (Incident title, severity, tactics,...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-send-email-with-formatted-incident-report-9dcecb5c.html">Send email with formatted incident report</a></td>
+<td style="text-align: left;">This playbook will be sending email with formated incidents report (Incident title, severity, tactic...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-send-incident-teams-adaptive-card-with-xdr-portal-links-67c3f8d5.html">Send incident Teams Adaptive Card with XDR Portal links</a></td>
+<td style="text-align: left;">This playbook will send a Teams adaptive card with incident and entity information with all links po...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-send-incident-email-with-xdr-portal-links-40ad98a3.html">Send incident email with XDR Portal links</a></td>
+<td style="text-align: left;">This playbook will send an email with incident and entity information with all links pointing to the...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-url-trigger-entity-analyzer-b0247848.html">URL Trigger Entity Analyzer</a></td>
+<td style="text-align: left;">This playbook is triggered manually when a URL entity is selected in a Microsoft Sentinel incident a...</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.</p>
+</blockquote>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.7</td>
+<td>13-01-2026</td>
+<td>Removed the redundant <em>IncidentOverview</em> <strong>workbook</strong> from SentinelSOAREssentianls</td>
+</tr>
+<tr>
+<td>3.0.6</td>
+<td>24-12-2025</td>
+<td>Added new <strong>playbooks</strong> for the incident alerting.</td>
+</tr>
+<tr>
+<td>3.0.5</td>
+<td>11-12-2025</td>
+<td>Updated the lookback value to 7 days across all three <strong>Logic Apps</strong> and Renamed the Logic App title to "URL Trigger Entity Analyzer".</td>
+</tr>
+<tr>
+<td>3.0.4</td>
+<td>17-11-2025</td>
+<td>Added new <strong>playbooks</strong> for the Sentinel SentinelSOARessentials solution.</td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>30-05-2025</td>
+<td>This upgrade focused on improving <strong>Playbook</strong> functionality, updating documentation, and refining deployment parameters.</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>26-10-2023</td>
+<td>Changes for rebranding from Microsoft 365 Defender to Microsoft Defender XDR.</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>11-08-2023</td>
+<td>Updated timeContextFromParameter with TimeRange in the <strong>Workbook</strong> template.</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>17-07-2023</td>
+<td>Updated <strong>Workbook</strong> template to remove unused variables.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

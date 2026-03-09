@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RSAIDPlusAdminLogsConnector &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>RSAIDPlus_AdminLogs_Connector</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/RSA_IDPlus.svg" alt="RSAIDPlus_AdminLogs_Connector Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">RSA Support Team</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://community.rsa.com/">https://community.rsa.com/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains,verticals</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">RSA Security</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2025-10-14</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RSAIDPlus_AdminLogs_Connector">RSAIDPlus_AdminLogs_Connector</a></td>
+</tr>
+</tbody>
+</table>
+<p>The RSA ID Plus Admin Logs Data Connector enables seamless integration between RSA ID Plus and Microsoft Sentinel. This connector ingests Admin Events logs from RSA ID Plus Cloud Administration Console using the RSA Admin API and stores them securely in your Azure Log Analytics (ALA) workspace. These logs can then be used for monitoring, analysis, and threat detection within Microsoft Sentinel.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/rsaidplus-adminglogs-connector.html">RSA ID Plus Admin Logs Connector</a></li>
+</ul>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/rsaidplus-adminlogs-cl.html"><code>RSAIDPlus_AdminLogs_CL</code></a></td>
+<td><a href="../connectors/rsaidplus-adminglogs-connector.html">RSA ID Plus Admin Logs Connector</a></td>
+<td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>2 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/rsaidplus-adminlogs-connector-rsa-id-plus-locked-administrator-account-detected-488c759d-a82e-44cd-91bb-d766573918d7-9266bd29.html">RSA ID Plus - Locked Administrator Account Detected</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact, CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/rsaidplus-adminlogs-cl.html"><code>RSAIDPlus_AdminLogs_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/rsaidplus-adminlogs-connector-sendemailonrsaidplusalert-520ce6b8.html">SendEmailonRSAIDPlusAlert</a></td>
+<td style="text-align: left;">Sends an email notification when an RSA ID Plus analytic rule triggers. This playbook can be linked ...</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RSAIDPlus_AdminLogs_Connector/README.md">RSAIDPlus_AdminLogs_Connector/README.md</a></em></p>
+</blockquote>
+<h1>RSA ID Plus Admin Logs Connector</h1>
+<h2>Overview</h2>
+<p>The RSA ID Plus Admin Logs Data Connector enables seamless integration between RSA ID Plus and Microsoft Sentinel.
+This connector ingests Admin Events logs from RSA ID Plus Cloud Administration Console using the RSA Admin API and stores them securely in your Azure Log Analytics (ALA) workspace.
+These logs can then be used for monitoring, analysis, and threat detection within Microsoft Sentinel.</p>
+<h2>Features</h2>
+<h3>Log Ingestion</h3>
+<ul>
+<li>Collect RSA ID Plus Admin Events</li>
+<li>Provides visibility into administrative actions and potential security incidents. </li>
+</ul>
+<h3>Analytic Rule</h3>
+<ul>
+<li>This package includes an analytic rule that detects when an Administrator is locked out. </li>
+<li>When triggered, this rule generates an alert in Sentinel for further investigation. </li>
+<li>This rule serves as an example - custom analytic rules can be created to detect other specific admin activities or specific patterns as needed. </li>
+</ul>
+<h3>Playbook (Automation)</h3>
+<ul>
+<li>A Logic App Playbook is included in this package. </li>
+<li>The playbook can be configured to send an email notification whenever an alert (e.g. admin account lockout) is generated. </li>
+<li>By default, this Playbook is not linked to the analytic rule. However, customers can manually link it to any rule according to their operational requirements. </li>
+</ul>
+<h2>Deployment</h2>
+<ol>
+<li>Deploy the connector through Azure Portal under your Microsoft Sentinel instance. </li>
+<li>Configure the connector (Instructions are provided in the connector UI).</li>
+<li>Verify that the logs are being ingested into your Log Analytics workspace. </li>
+<li>Optionally, enable the analytic rule for admin account lockout detections. </li>
+<li>Optionally, link the provided Playbook to an analytic rule to enable automated email alerts.</li>
+</ol>
+<h2>Customization</h2>
+<ul>
+<li>Modify or create new analytic rules in Sentinel to detect different admin activities.</li>
+<li>Update or create new Playbook to include actions such as Teams notification, ServiceNow ticket creation, or integration with other workflows.</li>
+</ul>
+<h2>Summary</h2>
+<p>This connector provides a ready-to-use integration between RSA ID Plus Cloud Administration Console Events and Microsoft Sentinel offering: 
+- Simplified log ingestion
+- Predefined security analytics
+- Optional automation through Playbooks.</p>
+<p>Together, these components help security teams gain visibility, detect threats and respond quickly to critical admin-level activities.</p>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.1</td>
+<td>23-10-2025</td>
+<td>Updating offerId</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>14-10-2025</td>
+<td>Initial Solution Release.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

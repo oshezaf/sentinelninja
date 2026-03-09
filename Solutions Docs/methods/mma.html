@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microsoft Monitoring Agent Legacy &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Microsoft Monitoring Agent (Legacy)</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../methods-index.html">Back to Methods Index</a></p>
+<hr />
+<p>The Microsoft Monitoring Agent (MMA), also known as the Log Analytics agent, is a legacy agent for collecting logs. <strong>Note:</strong> The MMA is deprecated and will be retired on August 31, 2024. Microsoft recommends migrating to the Azure Monitor Agent (AMA).</p>
+<h2>Documentation</h2>
+<ul>
+<li><a href="https://learn.microsoft.com/azure/azure-monitor/agents/log-analytics-agent">⚠️ Log Analytics agent retirement</a></li>
+<li><a href="https://learn.microsoft.com/azure/azure-monitor/agents/azure-monitor-agent-migration">📖 Migrate to Azure Monitor Agent</a></li>
+<li><a href="https://learn.microsoft.com/azure/sentinel/ama-migrate">📖 AMA migration for Microsoft Sentinel</a></li>
+</ul>
+<h2>Statistics</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Metric</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Total Connectors</td>
+<td style="text-align: right;"><strong>110</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">Active</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td style="text-align: left;">Deprecated 🚫</td>
+<td style="text-align: right;">90</td>
+</tr>
+<tr>
+<td style="text-align: left;">Unpublished ⚠️</td>
+<td style="text-align: right;">6</td>
+</tr>
+</tbody>
+</table>
+<h2>Connectors Using This Method</h2>
+<h3>Active Connectors</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Publisher</th>
+<th style="text-align: center;">Tables</th>
+<th style="text-align: left;">Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/aivectrastream.html">AI Vectra Stream via Legacy Agent</a> 🔶</td>
+<td style="text-align: left;">Vectra AI</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/alsidforad.html">Alsid for Active Directory</a> ⚠️</td>
+<td style="text-align: left;">Alsid</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/alsid-for-ad.html">Alsid For AD</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ciscoasa.html">Cisco ASA via Legacy Agent</a> ➕</td>
+<td style="text-align: left;">Cisco</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ciscoasa.html">CiscoASA</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/clarotyxdome.html">Claroty xDome</a></td>
+<td style="text-align: left;">Claroty</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/claroty-xdome.html">Claroty xDome</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/cef.html">Common Event Format (CEF)</a> ➕</td>
+<td style="text-align: left;">Any</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/dns.html">DNS</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/windows-server-dns.html">Windows Server DNS</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/elasticagent.html">Elastic Agent</a></td>
+<td style="text-align: left;">Elastic</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/elasticagent.html">ElasticAgent</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/esetsmc.html">Eset Security Management Center</a> ⚠️ 🔶</td>
+<td style="text-align: left;">Eset</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/eset-security-management-center.html">Eset Security Management Center</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/forescout.html">Forescout</a></td>
+<td style="text-align: left;">Forescout</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/forescout-legacy.html">Forescout (Legacy)</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/impervawafgateway.html">Imperva WAF Gateway</a> ⚠️</td>
+<td style="text-align: left;">Imperva</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/imperva-waf-gateway.html">Imperva WAF Gateway</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ironnetirondefense.html">IronNet IronDefense</a> ⚠️</td>
+<td style="text-align: left;">IronNet</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ironnet-irondefense.html">IronNet IronDefense</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/oneidentity.html">One Identity Safeguard</a></td>
+<td style="text-align: left;">One Identity LLC.</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/oneidentity.html">OneIdentity</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/paloaltonetworkscortex.html">Palo Alto Networks Cortex XDR</a> ⚠️</td>
+<td style="text-align: left;">Palo Alto Networks</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/palo-alto-xdr-cortex.html">Palo Alto - XDR (Cortex)</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/securityevents.html">Security Events via Legacy Agent</a> ➕</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/windows-security-events.html">Windows Security Events</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/securitybridgesap.html">SecurityBridge Threat Detection for SAP</a> ➕ 🔶</td>
+<td style="text-align: left;">SecurityBridge</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/securitybridge-app.html">SecurityBridge App</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/semperisdsp.html">Semperis Directory Services Protector</a></td>
+<td style="text-align: left;">SEMPERIS</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/semperis-directory-services-protector.html">Semperis Directory Services Protector</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/syslog.html">Syslog via Legacy Agent</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/syslog.html">Syslog</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/tenableie.html">Tenable Identity Exposure</a></td>
+<td style="text-align: left;">Tenable</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/tenable-app.html">Tenable App</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/tenable.ad.html">Tenable.ad</a> ⚠️</td>
+<td style="text-align: left;">Tenable</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/tenablead.html">TenableAD</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/windowsfirewall.html">Windows Firewall</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/windows-firewall.html">Windows Firewall</a></td>
+</tr>
+</tbody>
+</table>
+<h3>Deprecated Connectors 🚫</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Publisher</th>
+<th style="text-align: center;">Tables</th>
+<th style="text-align: left;">Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/darktrace.html">[Deprecated] AI Analyst Darktrace via Legacy Agent</a></td>
+<td style="text-align: left;">Darktrace</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ai-analyst-darktrace.html">AI Analyst Darktrace</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/akamaisecurityevents.html">[Deprecated] Akamai Security Events via Legacy Agent</a></td>
+<td style="text-align: left;">Akamai</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/akamai-security-events.html">Akamai Security Events</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/apachehttpserver.html">[Deprecated] Apache HTTP Server</a></td>
+<td style="text-align: left;">Apache</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/apachehttpserver.html">ApacheHTTPServer</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/apachetomcat.html">[Deprecated] Apache Tomcat</a></td>
+<td style="text-align: left;">Apache</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/tomcat.html">Tomcat</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/arubaclearpass.html">[Deprecated] Aruba ClearPass via Legacy Agent</a></td>
+<td style="text-align: left;">Aruba Networks</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/aruba-clearpass.html">Aruba ClearPass</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/aristaawakesecurity.html">[Deprecated] Awake Security via Legacy Agent</a></td>
+<td style="text-align: left;">Arista Networks</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/aristaawakesecurity.html">AristaAwakeSecurity</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/barracudacloudfirewall.html">[Deprecated] Barracuda CloudGen Firewall</a></td>
+<td style="text-align: left;">Barracuda</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/barracuda-cloudgen-firewall.html">Barracuda CloudGen Firewall</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/barracuda.html">[Deprecated] Barracuda Web Application Firewall via Legacy Agent</a></td>
+<td style="text-align: left;">Barracuda</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;"><a href="../solutions/barracuda-waf.html">Barracuda WAF</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/blackberrycylanceprotect.html">[Deprecated] Blackberry CylancePROTECT</a></td>
+<td style="text-align: left;">Blackberry</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/blackberry-cylanceprotect.html">Blackberry CylancePROTECT</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/broadcomsymantecdlp.html">[Deprecated] Broadcom Symantec DLP via Legacy Agent</a></td>
+<td style="text-align: left;">Broadcom</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/broadcom-symantecdlp.html">Broadcom SymantecDLP</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/ciscoaci.html">[Deprecated] Cisco Application Centric Infrastructure</a></td>
+<td style="text-align: left;">Cisco</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/cisco-aci.html">Cisco ACI</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/ciscofirepowerestreamer.html">[Deprecated] Cisco Firepower eStreamer via Legacy Agent</a></td>
+<td style="text-align: left;">Cisco</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/cisco-firepower-estreamer.html">Cisco Firepower EStreamer</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/ciscoise.html">[Deprecated] Cisco Identity Services Engine</a></td>
+<td style="text-align: left;">Cisco</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/cisco-ise.html">Cisco ISE</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/ciscomeraki.html">[Deprecated] Cisco Meraki</a></td>
+<td style="text-align: left;">Cisco</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;"><a href="../solutions/ciscomeraki.html">CiscoMeraki</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/stealthwatch.html">[Deprecated] Cisco Secure Cloud Analytics</a></td>
+<td style="text-align: left;">Cisco</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/cisco-secure-cloud-analytics.html">Cisco Secure Cloud Analytics</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/ciscoseg.html">[Deprecated] Cisco Secure Email Gateway via Legacy Agent</a></td>
+<td style="text-align: left;">Cisco</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ciscoseg.html">CiscoSEG</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/ciscoucs.html">[Deprecated] Cisco UCS</a></td>
+<td style="text-align: left;">Cisco</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/cisco-ucs.html">Cisco UCS</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/ciscowsa.html">[Deprecated] Cisco Web Security Appliance</a></td>
+<td style="text-align: left;">Cisco</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ciscowsa.html">CiscoWSA</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/citrixadc.html">[Deprecated] Citrix ADC (former NetScaler)</a></td>
+<td style="text-align: left;">Citrix</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/citrix-adc.html">Citrix ADC</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/citrixwaf.html">[Deprecated] Citrix WAF (Web App Firewall) via Legacy Agent</a></td>
+<td style="text-align: left;">Citrix Systems Inc.</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/citrix-web-app-firewall.html">Citrix Web App Firewall</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/claroty.html">[Deprecated] Claroty via Legacy Agent</a></td>
+<td style="text-align: left;">Claroty</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/claroty.html">Claroty</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/contrastprotect.html">[Deprecated] Contrast Protect via Legacy Agent</a></td>
+<td style="text-align: left;">Contrast Security</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/contrast-protect.html">Contrast Protect</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/crowdstrikefalconendpointprotection.html">[Deprecated] CrowdStrike Falcon Endpoint Protection via Legacy Agent</a></td>
+<td style="text-align: left;">CrowdStrike</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/cyberark.html">[Deprecated] CyberArk Enterprise Password Vault (EPV) Events via Legacy Agent</a></td>
+<td style="text-align: left;">Cyber-Ark</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/cyberark-privilege-access-manager-pam-events.html">CyberArk Privilege Access Manager (PAM) Events</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/delineasecretserver-cef.html">[Deprecated] Delinea Secret Server via Legacy Agent</a></td>
+<td style="text-align: left;">Delinea, Inc</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/delinea-secret-server.html">Delinea Secret Server</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/digitalguardiandlp.html">[Deprecated] Digital Guardian Data Loss Prevention</a></td>
+<td style="text-align: left;">Digital Guardian</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/digital-guardian-data-loss-prevention.html">Digital Guardian Data Loss Prevention</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/esetprotect.html">[Deprecated] ESET PROTECT</a></td>
+<td style="text-align: left;">ESET</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/esetprotect.html">ESETPROTECT</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/exabeam.html">[Deprecated] Exabeam Advanced Analytics</a></td>
+<td style="text-align: left;">Exabeam</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/exabeam-advanced-analytics.html">Exabeam Advanced Analytics</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/extrahopnetworks.html">[Deprecated] ExtraHop Reveal(x) via Legacy Agent</a></td>
+<td style="text-align: left;">ExtraHop Networks</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/extrahop-reveal-x.html">ExtraHop Reveal(x)</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/f5.html">[Deprecated] F5 Networks via Legacy Agent</a></td>
+<td style="text-align: left;">F5 Networks</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/f5-networks.html">F5 Networks</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/fireeyenx.html">[Deprecated] FireEye Network Security (NX) via Legacy Agent</a></td>
+<td style="text-align: left;">FireEye</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/fireeye-network-security.html">FireEye Network Security</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/forcepointcasb.html">[Deprecated] Forcepoint CASB via Legacy Agent</a></td>
+<td style="text-align: left;">Forcepoint CASB</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/forcepoint-casb.html">Forcepoint CASB</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/forcepointcsg.html">[Deprecated] Forcepoint CSG via Legacy Agent</a></td>
+<td style="text-align: left;">Forcepoint</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/forcepoint-csg.html">Forcepoint CSG</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/forcepointngfw.html">[Deprecated] Forcepoint NGFW via Legacy Agent</a></td>
+<td style="text-align: left;">Forcepoint</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/forcepoint-ngfw.html">Forcepoint NGFW</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/forgerock.html">[Deprecated] ForgeRock Identity Platform</a></td>
+<td style="text-align: left;">ForgeRock Inc</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/forgerock-common-audit-for-cef.html">ForgeRock Common Audit for CEF</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/fortinetfortiweb.html">[Deprecated] Fortinet FortiWeb Web Application Firewall via Legacy Agent</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.html">Fortinet FortiWeb Cloud WAF-as-a-Service connector for Microsoft Sentinel</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/fortinet.html">[Deprecated] Fortinet via Legacy Agent</a></td>
+<td style="text-align: left;">Fortinet</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.html">Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/gitlab.html">[Deprecated] GitLab</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/gitlab.html">GitLab</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/iboss.html">[Deprecated] iboss via Legacy Agent</a></td>
+<td style="text-align: left;">iboss</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/iboss.html">iboss</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/illumiocore.html">[Deprecated] Illumio Core via Legacy Agent</a></td>
+<td style="text-align: left;">Illumio</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/illumio-core.html">Illumio Core</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/illusiveattackmanagementsystem.html">[Deprecated] Illusive Platform via Legacy Agent</a></td>
+<td style="text-align: left;">illusive</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/illusive-platform.html">Illusive Platform</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/infobloxclouddataconnector.html">[Deprecated] Infoblox Cloud Data Connector via Legacy Agent</a></td>
+<td style="text-align: left;">Infoblox</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/infoblox-cloud-data-connector.html">Infoblox Cloud Data Connector</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/infobloxnios.html">[Deprecated] Infoblox NIOS</a></td>
+<td style="text-align: left;">Infoblox</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/infoblox-nios.html">Infoblox NIOS</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/infobloxsocinsightsdataconnector-legacy.html">[Deprecated] Infoblox SOC Insight Data Connector via Legacy Agent</a></td>
+<td style="text-align: left;">Infoblox</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/infoblox.html">Infoblox</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/iscbind.html">[Deprecated] ISC Bind</a></td>
+<td style="text-align: left;">ISC</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/isc-bind.html">ISC Bind</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/ivantiuem.html">[Deprecated] Ivanti Unified Endpoint Management</a></td>
+<td style="text-align: left;">Ivanti</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ivanti-unified-endpoint-management.html">Ivanti Unified Endpoint Management</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/jbosseap.html">[Deprecated] JBoss Enterprise Application Platform</a></td>
+<td style="text-align: left;">Red Hat</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/jboss.html">JBoss</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/juniperidp.html">[Deprecated] Juniper IDP</a></td>
+<td style="text-align: left;">Juniper</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/juniperidp.html">JuniperIDP</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/junipersrx.html">[Deprecated] Juniper SRX</a></td>
+<td style="text-align: left;">Juniper</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/juniper-srx.html">Juniper SRX</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/marklogic.html">[Deprecated] MarkLogic Audit</a></td>
+<td style="text-align: left;">MarkLogic</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/marklogicaudit.html">MarkLogicAudit</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/mcafeeepo.html">[Deprecated] McAfee ePolicy Orchestrator (ePO)</a></td>
+<td style="text-align: left;">McAfee</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/mcafee-epolicy-orchestrator.html">McAfee ePolicy Orchestrator</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/mcafeensp.html">[Deprecated] McAfee Network Security Platform</a></td>
+<td style="text-align: left;">McAfee</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/mcafee-network-security-platform.html">McAfee Network Security Platform</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/esi-exchangeadminauditlogevents.html">[Deprecated] Microsoft Exchange Logs and Events</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;"><a href="../solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/microsoftsysmonforlinux.html">[Deprecated] Microsoft Sysmon For Linux</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/microsoft-sysmon-for-linux.html">Microsoft Sysmon For Linux</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/mongodb.html">[Deprecated] MongoDB Audit</a></td>
+<td style="text-align: left;">MongoDB</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/mongodbaudit.html">MongoDBAudit</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/nasuniedgeappliance.html">[Deprecated] Nasuni Edge Appliance</a></td>
+<td style="text-align: left;">Nasuni</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/nasuni.html">Nasuni</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/netwrix.html">[Deprecated] Netwrix Auditor via Legacy Agent</a></td>
+<td style="text-align: left;">Netwrix</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/netwrix-auditor.html">Netwrix Auditor</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/nginxhttpserver.html">[Deprecated] NGINX HTTP Server</a></td>
+<td style="text-align: left;">Nginx</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/nginx-http-server.html">NGINX HTTP Server</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/nozominetworksn2os.html">[Deprecated] Nozomi Networks N2OS via Legacy Agent</a></td>
+<td style="text-align: left;">Nozomi Networks</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/nozominetworks.html">NozomiNetworks</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/onapsisplatform.html">[Deprecated] Onapsis Platform</a></td>
+<td style="text-align: left;">Onapsis</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/onapsis-platform.html">Onapsis Platform</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/openvpn.html">[Deprecated] OpenVPN Server</a></td>
+<td style="text-align: left;">OpenVPN</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/openvpn.html">OpenVPN</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/oracledatabaseaudit.html">[Deprecated] Oracle Database Audit</a></td>
+<td style="text-align: left;">Oracle</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/oracledatabaseaudit.html">OracleDatabaseAudit</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/oracleweblogicserver.html">[Deprecated] Oracle WebLogic Server</a></td>
+<td style="text-align: left;">Oracle</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/oracleweblogicserver.html">OracleWebLogicServer</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/ossec.html">[Deprecated] OSSEC via Legacy Agent</a></td>
+<td style="text-align: left;">OSSEC</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ossec.html">OSSEC</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/paloaltonetworks.html">[Deprecated] Palo Alto Networks (Firewall) via Legacy Agent</a></td>
+<td style="text-align: left;">Palo Alto Networks</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/paloalto-pan-os.html">PaloAlto-PAN-OS</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/paloaltocdl.html">[Deprecated] Palo Alto Networks Cortex Data Lake (CDL) via Legacy Agent</a></td>
+<td style="text-align: left;">Palo Alto Networks</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/paloaltocdl.html">PaloAltoCDL</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/pingfederate.html">[Deprecated] PingFederate via Legacy Agent</a></td>
+<td style="text-align: left;">Ping Identity</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/pingfederate.html">PingFederate</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/postgresql.html">[Deprecated] PostgreSQL Events</a></td>
+<td style="text-align: left;">PostgreSQL</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/postgresql.html">PostgreSQL</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/pulseconnectsecure.html">[Deprecated] Pulse Connect Secure</a></td>
+<td style="text-align: left;">Pulse Secure</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/pulse-connect-secure.html">Pulse Connect Secure</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/rsasecuridam.html">[Deprecated] RSA® SecurID (Authentication Manager)</a></td>
+<td style="text-align: left;">RSA</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/rsa-securid.html">RSA SecurID</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/sonicwallfirewall.html">[Deprecated] SonicWall Firewall via Legacy Agent</a></td>
+<td style="text-align: left;">SonicWall</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/sonicwall-firewall.html">SonicWall Firewall</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/sophosxgfirewall.html">[Deprecated] Sophos XG Firewall</a></td>
+<td style="text-align: left;">Sophos</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/sophos-xg-firewall.html">Sophos XG Firewall</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/squidproxy.html">[Deprecated] Squid Proxy</a></td>
+<td style="text-align: left;">Squid</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/squidproxy.html">SquidProxy</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/symantecendpointprotection.html">[Deprecated] Symantec Endpoint Protection</a></td>
+<td style="text-align: left;">Broadcom</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/symantec-endpoint-protection.html">Symantec Endpoint Protection</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/symantecproxysg.html">[Deprecated] Symantec ProxySG</a></td>
+<td style="text-align: left;">Symantec</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/symantecproxysg.html">SymantecProxySG</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/symantecvip.html">[Deprecated] Symantec VIP</a></td>
+<td style="text-align: left;">Symantec</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/symantec-vip.html">Symantec VIP</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/trendmicroapexone.html">[Deprecated] Trend Micro Apex One via Legacy Agent</a></td>
+<td style="text-align: left;">Trend Micro</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/trend-micro-apex-one.html">Trend Micro Apex One</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/trendmicro.html">[Deprecated] Trend Micro Deep Security via Legacy</a></td>
+<td style="text-align: left;">Trend Micro</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/trend-micro-deep-security.html">Trend Micro Deep Security</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/trendmicrotippingpoint.html">[Deprecated] Trend Micro TippingPoint via Legacy</a></td>
+<td style="text-align: left;">Trend Micro</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/trend-micro-tippingpoint.html">Trend Micro TippingPoint</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/ubiquitiunifi.html">[Deprecated] Ubiquiti UniFi</a></td>
+<td style="text-align: left;">Ubiquiti</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ubiquiti-unifi.html">Ubiquiti UniFi</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/varmourac.html">[Deprecated] vArmour Application Controller via Legacy Agent</a></td>
+<td style="text-align: left;">vArmour</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/varmour-application-controller.html">vArmour Application Controller</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/aivectradetect.html">[Deprecated] Vectra AI Detect via Legacy Agent</a></td>
+<td style="text-align: left;">Vectra AI</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/vectra-ai-detect.html">Vectra AI Detect</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/vmwareesxi.html">[Deprecated] VMware ESXi</a></td>
+<td style="text-align: left;">VMWare</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/vmwareesxi.html">VMWareESXi</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/vmwarevcenter.html">[Deprecated] VMware vCenter</a></td>
+<td style="text-align: left;">VMware</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/vmware-vcenter.html">VMware vCenter</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/votiro.html">[Deprecated] Votiro Sanitization Engine Logs</a></td>
+<td style="text-align: left;">Votiro</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/votiro.html">Votiro</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/watchguardfirebox.html">[Deprecated] WatchGuard Firebox</a></td>
+<td style="text-align: left;">WatchGuard Technologies</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/watchguard-firebox.html">Watchguard Firebox</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/wirex-systems-nfp.html">[Deprecated] WireX Network Forensics Platform via Legacy Agent</a></td>
+<td style="text-align: left;">WireX_Systems</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/wirex-network-forensics-platform.html">WireX Network Forensics Platform</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/withsecureelementsviaconnector.html">[Deprecated] WithSecure Elements via Connector</a></td>
+<td style="text-align: left;">WithSecure</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/withsecureelementsviaconnector.html">WithSecureElementsViaConnector</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/zscalerprivateaccess.html">[Deprecated] Zscaler Private Access</a></td>
+<td style="text-align: left;">Zscaler</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/zscaler-private-access-zpa.html">Zscaler Private Access (ZPA)</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">🚫 <a href="../connectors/zscaler.html">[Deprecated] Zscaler via Legacy Agent</a></td>
+<td style="text-align: left;">Zscaler</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/zscaler-internet-access.html">Zscaler Internet Access</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>🚫 <strong>Deprecated:</strong> This connector has been deprecated and may be removed in future versions.</p>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../methods-index.html">Back to Methods Index</a></p>
+</div>
+</body>
+</html>

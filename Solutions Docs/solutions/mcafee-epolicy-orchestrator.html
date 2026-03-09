@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>McAfee ePolicy Orchestrator &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>McAfee ePolicy Orchestrator</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/McAfee%20ePolicy%20Orchestrator/Workbooks/Images/Logo/mcafee_logo.svg" alt="McAfee ePolicy Orchestrator Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com/">https://support.microsoft.com/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2021-03-25</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/McAfee%20ePolicy%20Orchestrator">McAfee ePolicy Orchestrator</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pre-requisites</strong></td>
+<td style="text-align: left;"><a href="syslog.html">Syslog</a></td>
+</tr>
+</tbody>
+</table>
+<p>The McAfee ePolicy Orchestrator solution provides the capability to ingest <a href="https://www.mcafee.com/enterprise/en-us/products/epolicy-orchestrator.html">McAfee ePO</a> events into Microsoft Sentinel through the syslog. Refer to <a href="https://docs.mcafee.com/bundle/epolicy-orchestrator-landing/page/GUID-0C40020F-5B7F-4549-B9CC-0E017BC8797F.html">documentation</a> for more information.</p>
+<p>This solution is dependent on the Syslog solution containing the Syslog via AMA connector to collect the logs. The Syslog  solution will be installed as part of this solution installation. </p>
+<p><strong>NOTE</strong>: Microsoft recommends installation of Syslog via AMA Connector.Legacy connector uses the Log Analytics agent which were deprecated on <strong>Aug 31, 2024.</strong> Using MMA and AMA on same machine can cause log duplication and extra ingestion cost <a href="https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate">more details</a>.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#pre-requisites">Pre-requisites</a></li>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Pre-requisites</h2>
+<p>This solution depends on <strong>1 other solution(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="syslog.html">Syslog</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Data Connectors</h2>
+<p>This solution has <strong>1 discovered data connector(s)⚠️</strong> (not in Solution definition):</p>
+<ul>
+<li><a href="../connectors/mcafeeepo.html">[Deprecated] McAfee ePolicy Orchestrator (ePO)</a> ⚠️</li>
+</ul>
+<p>Connectors from dependency solutions:</p>
+<ul>
+<li><a href="../connectors/syslog.html">Syslog via Legacy Agent</a> <em>(dependency on <a href="syslog.html">Syslog</a>)</em></li>
+<li><a href="../connectors/syslogama.html">Syslog via AMA</a> <em>(dependency on <a href="syslog.html">Syslog</a>)</em></li>
+</ul>
+<p><em>⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.</em></p>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+<td><a href="../connectors/syslogama.html">Syslog via AMA</a> (dependency), <a href="../connectors/syslog.html">Syslog via Legacy Agent</a> (dependency), <a href="../connectors/mcafeeepo.html">[Deprecated] McAfee ePolicy Orchestrator (ePO)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>26 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">14</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/mcafee-epolicy-orchestrator-mcafee-epo-agent-handler-down-3c1425d3-93d4-4eaf-8aa0-370dbac94c82-ff3411b0.html">McAfee ePO - Agent Handler down</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/mcafee-epolicy-orchestrator-mcafee-epo-attempt-uninstall-mcafee-agent-2eff5809-bf84-48e0-8288-768689672c37-dbc4435c.html">McAfee ePO - Attempt uninstall McAfee agent</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/mcafee-epolicy-orchestrator-mcafee-epo-deployment-failed-155243f4-d962-4717-8a7b-b15b6d112660-667499dd.html">McAfee ePO - Deployment failed</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/mcafee-epolicy-orchestrator-mcafee-epo-error-sending-alert-1e3bcd0f-10b2-4fbd-854f-1c6f33acc36a-ac2b2d79.html">McAfee ePO - Error sending alert</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/mcafee-epolicy-orchestrator-mcafee-epo-file-added-to-exceptions-b9d9fdfe-bc17-45ce-a70d-67a5cfd119f4-bdad79ac.html">McAfee ePO - File added to exceptions</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/mcafee-epolicy-orchestrator-mcafee-epo-firewall-disabled-bd3cedc3-efba-455a-85bd-0cf9ac1b0727-52f5823f.html">McAfee ePO - Firewall disabled</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion, CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/mcafee-epolicy-orchestrator-mcafee-epo-logging-error-occurred-0c9243d6-d2ec-48e1-8593-e713859c8f3c-9205c165.html">McAfee ePO - Logging error occurred</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/mcafee-epolicy-orchestrator-mcafee-epo-multiple-threats-on-same-host-f53e5168-afdb-4fad-b29a-bb9cb71ec460-48b44b93.html">McAfee ePO - Multiple threats on same host</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, Persistence, DefenseEvasion, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/mcafee-epolicy-orchestrator-mcafee-epo-scanning-engine-disabled-5223c1b8-75ef-4019-9076-a19b1ef3e5d1-6db57ca1.html">McAfee ePO - Scanning engine disabled</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/mcafee-epolicy-orchestrator-mcafee-epo-spam-email-detected-ffc9052b-3658-4ad4-9003-0151515fde15-ea55c50d.html">McAfee ePO - Spam Email detected</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/mcafee-epolicy-orchestrator-mcafee-epo-task-error-3e397e31-7964-417e-a3e0-0acfaa2056f4-25f3e295.html">McAfee ePO - Task error</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/mcafee-epolicy-orchestrator-mcafee-epo-threat-was-not-blocked-6d70a26a-c119-45b7-b4c6-44ac4fd1bcb7-299c7a2f.html">McAfee ePO - Threat was not blocked</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess, PrivilegeEscalation, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/mcafee-epolicy-orchestrator-mcafee-epo-unable-to-clean-or-delete-infected-file-9860e89f-72c8-425e-bac9-4a170798d3ea-aa3ef2fa.html">McAfee ePO - Unable to clean or delete infected file</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/mcafee-epolicy-orchestrator-mcafee-epo-update-failed-4f0c91c3-1690-48f0-b538-4282dd5417a4-9c8f9364.html">McAfee ePO - Update failed</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/mcafee-epolicy-orchestrator-mcafee-epo-agent-errors-dff3c841-6e3e-432e-ad68-3ddd7326bc01-af48929b.html">McAfee ePO - Agent Errors</a></td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/mcafee-epolicy-orchestrator-mcafee-epo-applications-blocked-or-contained-e838519b-1f03-417f-863b-6c1a141677ee-1c08ae78.html">McAfee ePO - Applications blocked or contained</a></td>
+<td style="text-align: left;">InitialAccess, Execution</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/mcafee-epolicy-orchestrator-mcafee-epo-email-treats-851b63f1-cc5d-44d5-b505-9444a5e87076-d091dc76.html">McAfee ePO - Email Treats</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/mcafee-epolicy-orchestrator-mcafee-epo-infected-systems-2e7a56fb-ffff-491c-bdee-e772f83c47e2-d206daf3.html">McAfee ePO - Infected Systems</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/mcafee-epolicy-orchestrator-mcafee-epo-infected-files-by-source-e83b72a0-60dd-4d65-b1c2-582766f2f181-692fcc32.html">McAfee ePO - Infected files by source</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/mcafee-epolicy-orchestrator-mcafee-epo-long-term-infected-systems-a65e4129-d936-4165-bc08-699f9151aa26-808b025f.html">McAfee ePO - Long term infected systems</a></td>
+<td style="text-align: left;">InitialAccess, Persistence</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/mcafee-epolicy-orchestrator-mcafee-epo-objects-not-scanned-5be4adb7-52ee-4416-b39d-0c03cf0fb661-b8471301.html">McAfee ePO - Objects not scanned</a></td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/mcafee-epolicy-orchestrator-mcafee-epo-scan-errors-901e6982-39ed-4759-9451-de1a3826182f-f01964b9.html">McAfee ePO - Scan Errors</a></td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/mcafee-epolicy-orchestrator-mcafee-epo-sources-with-multiple-threats-1ef23489-a840-4b43-b33d-a921da24c85c-b0e3a338.html">McAfee ePO - Sources with multiple threats</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/mcafee-epolicy-orchestrator-mcafee-epo-threats-detected-and-not-blocked,-cleaned-or-deleted-80c5904d-6a36-4b7c-82d4-180023a1f8b4-c8a11efd.html">McAfee ePO - Threats detected and not blocked, cleaned or deleted</a></td>
+<td style="text-align: left;">Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/mcafee-epolicy-orchestrator-mcafeeepooverview-aa678fa3.html">McAfeeePOOverview</a></td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/mcafeeepoevent.html">McAfeeEPOEvent</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.2</td>
+<td>18-12-2024</td>
+<td>Removed Deprecated <strong>Data Connector</strong></td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>24-07-2024</td>
+<td>Deprecated data connectors</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>16-07-2024</td>
+<td>Updated <strong>Data Connector</strong> Description</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

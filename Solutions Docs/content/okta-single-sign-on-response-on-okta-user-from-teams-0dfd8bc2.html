@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Response on Okta user from Teams &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Response on Okta user from Teams</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>This playbooks sends an adaptive card to the SOC Teams channel with information about the Okta user and incident details. The SOC is allowed to take action such suspend, reset password, expire password, add to group. An informative comment will be posted to the incident.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/okta-single-sign-on.html">Okta Single Sign-On</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks/Okta-ResponseFromTeams/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks/Okta-ResponseFromTeams/readme.md">OktaPlaybooks/Okta-ResponseFromTeams/readme.md</a></em></p>
+</blockquote>
+<h1>Okta-Response From Teams Playbook</h1>
+<p>## Summary</p>
+<p>When a new sentinal incident is created,this playbook gets triggered and performs below actions
+1.  An adaptive card is sent to the SOC Teams channel with information collected from the incident and the risky user information from Okta. 
+2.  The SOC is allowed to take action on risky user based on the information provided in the adaptive card.</p>
+<p><img alt="Playbook Designer view" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks%5COkta-ResponseFromTeams/Okta-ResponseFromTeams.PNG" /><br></p>
+<p><strong>This is the adaptive card SOC will recieve when playbook is triggered:</strong><br><br>
+<img alt="Adaptive Card example" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks%5COkta-ResponseFromTeams/images/AdaptiveCardtoSOCuser.PNG" /><br><br></p>
+<h3>Prerequisites</h3>
+<ol>
+<li>Okta Custom Connector needs to be deployed prior to the deployment of this playbook under the same subscription.</li>
+<li>Generate an API key.Refer this link <a href="https://developer.okta.com/docs/guides/create-an-api-token/overview/"> how to generate the API Key</a></li>
+</ol>
+<h3>Deployment instructions</h3>
+<ol>
+<li>
+<p>Deploy the playbook by clicking on "Deply to Azure" button. This will take you to deplyoing an ARM Template wizard.
+<a href="&quot;https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FPlaybooks%2FOkta%2FOktaPlaybooks%2FOkta-ResponseFromTeams%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FPlaybooks%2FOkta%2FOktaPlaybooks%2FOkta-ResponseFromTeams%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+</li>
+<li>
+<p>Fill in the required paramteres:</p>
+<ul>
+<li>Playbook Name : Enter the playbook name here (ex:Oktaplaybook)</li>
+<li>Teams GroupId : Enter the Teams channel id to send the adaptive card</li>
+<li>Teams ChannelId : Enter the Teams Group id to send the adaptive card
+ <a href="https://docs.microsoft.com/powershell/module/teams/get-teamchannel?view=teams-ps">Refer the below link to get the channel id and group id</a></li>
+</ul>
+</li>
+</ol>
+<h3>Post-Deployment instructions</h3>
+<h4>a. Authorize connections</h4>
+<p>Once deployment is complete, you will need to authorize each connection.
+1.  Click the Microsoft Sentinel connection resource
+2.  Click edit API connection
+3.  Click Authorize
+4.  Sign in
+5.  Click Save
+6.  Repeat steps for other connections such as Teams connection and Okta Api  Connection (For authorizing the Okta API connection, API Key needs to be provided)</p>
+<h4>b. Configurations in Sentinel</h4>
+<ol>
+<li>In Microsoft sentinel analytical rules should be configured to trigger an incident with risky user account </li>
+<li>Configure the automation rules to trigger this playbook</li>
+</ol>
+<h2>Playbook steps explained</h2>
+<h3>When Microsoft Sentinel incident creation rule is triggered</h3>
+<p>Microsoft Sentinel incident is created. The playbook receives the incident as the input.</p>
+<h3>Entities - Get Accounts</h3>
+<p>Get the list of risky/malicious accounts as entities from the Incident</p>
+<h3>List groups</h3>
+<p>Playbook uses "List Groups" action to get all the group details present in the particular Okta domain
+This groups list will be used later in the adaptive card dropdown when SOC wants to add user to a group</p>
+<h3>For each group</h3>
+<p>Select groups-preparing the group name and id from the list of groups to display in the adaptive card for user choice</p>
+<h3>Compose group information</h3>
+<p>Compose the choice set dropdown for adaptive card for group names</p>
+<h3>For each-risky account received from the incident</h3>
+<p>Iterates on the accounts found in this incident (probably one) and performs the following:
+ 1. For the risky user account, playbook uses "Get User" action to get user details from Okta
+ 2. Post an Adaptive Card to a SOC admin on teams channel with the incident information and risky user information and admin has a list of choices to perform different user actions on Okta
+ 3. Switch case to perform action choices on the user in Okta </p>
+<pre><code> a. Case - Add user to group: When Soc admin chooses to add user to a group in Okta, playbook uses "Add user to group" action to add user to group in okta.SOC admin needs to select a group from the adaptive card
+
+ b. Case - Expire Password: When Soc admin chooses to expire password of the user in Okta, playbook uses "Expire Password" action.
+
+ c. Case - Reset Password : When Soc admin chooses to reset password of the user in Okta,playbook uses "Reset Password" action.
+
+ d. Case - Suspend User: When Soc admin chooses to suspend the user in Okta,playbook uses "Suspend User" action.
+
+ e. Case - Unsuspend User :When Soc admin chooses to unsuspend the user in Okta,playbook uses "UnSuspend User" action.
+
+ f. Ignore
+</code></pre>
+<ol start="4">
+<li>Update incident to change severity and status according to choice of SOC admin through adaptive card  </li>
+</ol>
+<p><em>[Content truncated...]</em></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/okta-single-sign-on.html">Back to Okta Single Sign-On</a></p>
+</div>
+</body>
+</html>

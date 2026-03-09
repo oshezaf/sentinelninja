@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProofPointTap &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>ProofPointTap</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/PFPTLogo.svg" alt="ProofPointTap Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Proofpoint, Inc.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://proofpoint.my.site.com/community/s/">https://proofpoint.my.site.com/community/s/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.1.2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Proofpoint, Inc. - azure-support@proofpoint.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-05-23</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ProofPointTap">ProofPointTap</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.proofpoint.com/us/products/advanced-threat-protection/targeted-attack-protection">Proofpoint TAP</a> solution for Microsoft Sentinel enables you to ingest Proofpoint TAP logs into Microsoft Sentinel.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>• <a href="https://aka.ms/Sentinel-CCP_Platform">Microsoft Sentinel Codeless Connector Framework</a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong> (plus 1 discovered⚠️):</p>
+<ul>
+<li><a href="../connectors/proofpointtap.html">[Deprecated] Proofpoint TAP</a> ⚠️ 🔶</li>
+<li><a href="../connectors/proofpointtapv2.html">Proofpoint TAP (via Codeless Connector Platform)</a></li>
+</ul>
+<p><em>⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.</em></p>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>8 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/proofpointtapclicksblockedv2-cl.html"><code>ProofPointTAPClicksBlockedV2_CL</code></a></td>
+<td><a href="../connectors/proofpointtapv2.html">Proofpoint TAP (via Codeless Connector Platform)</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/proofpointtapclicksblocked-cl.html"><code>ProofPointTAPClicksBlocked_CL</code></a> 🔶</td>
+<td><a href="../connectors/proofpointtap.html">[Deprecated] Proofpoint TAP</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/proofpointtapclickspermittedv2-cl.html"><code>ProofPointTAPClicksPermittedV2_CL</code></a></td>
+<td><a href="../connectors/proofpointtapv2.html">Proofpoint TAP (via Codeless Connector Platform)</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/proofpointtapclickspermitted-cl.html"><code>ProofPointTAPClicksPermitted_CL</code></a> 🔶</td>
+<td><a href="../connectors/proofpointtap.html">[Deprecated] Proofpoint TAP</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/proofpointtapmessagesblockedv2-cl.html"><code>ProofPointTAPMessagesBlockedV2_CL</code></a></td>
+<td><a href="../connectors/proofpointtapv2.html">Proofpoint TAP (via Codeless Connector Platform)</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/proofpointtapmessagesblocked-cl.html"><code>ProofPointTAPMessagesBlocked_CL</code></a> 🔶</td>
+<td><a href="../connectors/proofpointtap.html">[Deprecated] Proofpoint TAP</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/proofpointtapmessagesdeliveredv2-cl.html"><code>ProofPointTAPMessagesDeliveredV2_CL</code></a></td>
+<td><a href="../connectors/proofpointtapv2.html">Proofpoint TAP (via Codeless Connector Platform)</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/proofpointtapmessagesdelivered-cl.html"><code>ProofPointTAPMessagesDelivered_CL</code></a> 🔶</td>
+<td><a href="../connectors/proofpointtap.html">[Deprecated] Proofpoint TAP</a></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>6 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/proofpointtap-malware-link-clicked-8675dd7a-795e-4d56-a79c-fc848c5ee61c-ca159715.html">Malware Link Clicked</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/proofpointtapclickspermittedv2-cl.html"><code>ProofPointTAPClicksPermittedV2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/proofpointtap-malware-attachment-delivered-0558155e-4556-447e-9a22-828f2a7de06b-eaec71b9.html">Malware attachment delivered</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/proofpointtapmessagesdeliveredv2-cl.html"><code>ProofPointTAPMessagesDeliveredV2_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/proofpointtap-proofpointtap-d0be2a01.html">ProofpointTAP</a></td>
+<td style="text-align: left;"><a href="../tables/proofpointtapclicksblockedv2-cl.html"><code>ProofPointTAPClicksBlockedV2_CL</code></a><br><a href="../tables/proofpointtapclickspermittedv2-cl.html"><code>ProofPointTAPClicksPermittedV2_CL</code></a><br><a href="../tables/proofpointtapmessagesblockedv2-cl.html"><code>ProofPointTAPMessagesBlockedV2_CL</code></a><br><a href="../tables/proofpointtapmessagesdeliveredv2-cl.html"><code>ProofPointTAPMessagesDeliveredV2_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/proofpointtap-proofpointtap-checkaccountinvap-58ea7ed4.html"> ProofpointTAP-CheckAccountInVAP</a></td>
+<td style="text-align: left;">Once a new sentinel incident is created, this playbook gets triggered and performs the following act...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/proofpointtap-proofpointtap-addforensicsinfotoincident-f05bb435.html">ProofpointTAP-AddForensicsInfoToIncident</a></td>
+<td style="text-align: left;">Once a new sentinel incident is created, this playbook gets triggered and performs the following act...</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/proofpointtapevent.html">ProofpointTAPEvent</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/proofpointtapclicksblockedv2-cl.html"><code>ProofPointTAPClicksBlockedV2_CL</code></a> <em>(read)</em><br><a href="../tables/proofpointtapclicksblocked-cl.html"><code>ProofPointTAPClicksBlocked_CL</code></a> <em>(read)</em><br><a href="../tables/proofpointtapclickspermittedv2-cl.html"><code>ProofPointTAPClicksPermittedV2_CL</code></a> <em>(read)</em><br><a href="../tables/proofpointtapclickspermitted-cl.html"><code>ProofPointTAPClicksPermitted_CL</code></a> <em>(read)</em><br><a href="../tables/proofpointtapmessagesblockedv2-cl.html"><code>ProofPointTAPMessagesBlockedV2_CL</code></a> <em>(read)</em><br><a href="../tables/proofpointtapmessagesblocked-cl.html"><code>ProofPointTAPMessagesBlocked_CL</code></a> <em>(read)</em><br><a href="../tables/proofpointtapmessagesdeliveredv2-cl.html"><code>ProofPointTAPMessagesDeliveredV2_CL</code></a> <em>(read)</em><br><a href="../tables/proofpointtapmessagesdelivered-cl.html"><code>ProofPointTAPMessagesDelivered_CL</code></a> <em>(read)</em><br><a href="../tables/proofpointtapnativepoller-cl.html"><code>ProofpointTAPNativePoller_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.1.2</td>
+<td>22-01-2026</td>
+<td>Removed <strong>Playbook</strong> GetProofpointTAPEvents for TAP connector.</td>
+</tr>
+<tr>
+<td>3.1.1</td>
+<td>03-11-2025</td>
+<td>Update support url in <strong>SolutionMetadata.json</strong>.</td>
+</tr>
+<tr>
+<td>3.1.0</td>
+<td>31-07-2025</td>
+<td>Updated Support details and publisherId in <strong>SolutionMetadata.json</strong>, updated Author details and Logo in <strong>Solution_ProofTap.json</strong> from Microsoft to Proofpoint.</td>
+</tr>
+<tr>
+<td>3.0.10</td>
+<td>28-07-2025</td>
+<td>Removed Deprecated <strong>Data Connector</strong>.</td>
+</tr>
+<tr>
+<td>3.0.9</td>
+<td>20-06-2025</td>
+<td>Expanded the query for <em>ProofpointTAPEvent</em> <strong>Parser</strong> to include additional columns and data sources (V2).</td>
+</tr>
+<tr>
+<td>3.0.8</td>
+<td>06-05-2025</td>
+<td>Launching CCP <strong>Data Connector</strong> <em>Proofpoint TAP (via Codeless Connector Platform)</em> from Public Preview to Global Availability.</td>
+</tr>
+<tr>
+<td>3.0.7</td>
+<td>21-04-2025</td>
+<td>Correction in <strong>CCP Connector</strong> DCR File to resolve deployment issue.</td>
+</tr>
+<tr>
+<td>3.0.6</td>
+<td>04-04-2025</td>
+<td>New <strong>CCP Connector</strong> added <em>Proofpoint TAP (via Codeless Connector Platform)</em>.</td>
+</tr>
+<tr>
+<td>3.0.5</td>
+<td>12-01-2025</td>
+<td>Updated <strong>Analytic Rule</strong> MalwareLinkClicked.yaml.</td>
+</tr>
+<tr>
+<td>3.0.4</td>
+<td>26-04-2024</td>
+<td>Repackaged for fix on parser in maintemplate to have old parsername and parentid.</td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>16-04-2024</td>
+<td>Repackaged for parser issue in maintemplate.</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>10-04-2024</td>
+<td>Added Azure Deploy button for government portal deployments.</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>10-10-2023</td>
+<td>Manual deployment instructions updated for <strong>Data Connector</strong>.</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>01-08-2023</td>
+<td>Updated solution logo with Microsoft Sentinel logo.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

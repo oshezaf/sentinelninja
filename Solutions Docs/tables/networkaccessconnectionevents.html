@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NetworkAccessConnectionEvents &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>NetworkAccessConnectionEvents</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for NetworkAccessConnectionEvents table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">IT &amp; Management Tools, Network, Security</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccessconnectionevents">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (42 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccessconnectionevents">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AgentVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The version of the agent connecting.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AppId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Destination Application ID accessed in Azure AD during the transaction.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClientDeviceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the client device making the connection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConnectionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier representing the connection this traffic log was initiated from.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationFqdn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The destination device hostname, including domain information when available.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address of the connection or session destination.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationPort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The destination IP port.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceCategory</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Device type the transaction originated from. Client, Branch.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the source device as reported in the record.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceOperatingSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The client connecting operating system type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceOperatingSystemVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The client connecting operating system version.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the connection event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The process initiating the traffic transaction.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsLocal</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Represents if the connection was triggered by Intelligent Local Access.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkProtocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The network protocol, IPv6 or IPv4.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PopProcessingRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Region where the request was processed by the backend service.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteNetworkId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID from which traffic was sent or received, providing visibility into the origin of the traffic.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteNetworkSourceIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Remote Network IP address from which the connection or session originated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SecurityPolicyId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the security policy within the security profile.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SecurityPolicyName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the security policy within the security profile.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SecurityPolicyVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The version of the security policy within the security profile.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SecurityProfileId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the security profile that blocked the connection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SecurityProfileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the security profile that blocked the connection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SecurityProfileVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The version of the security profile that blocked the connection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SecurityRuleId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the rule that determined the action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address from which the connection or session originated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourcePort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The IP port from which the connection originated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourcePrivateIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The private IP address from which the connection or session originated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The date and time (UTC) that the event was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Token3PExpiry</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The expiry date of the access token used to access the private access application.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Token3PIssuedAt</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The issued date of the access token used to access the private access application.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Token3PUniqueId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique token identifier of the access token used to access the private access application.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Token3PValidFrom</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The validity date of the access token used to access the private access application.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TrafficType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the target destination traffic.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TransportProtocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP protocol used by the connection or session as listed in IANA protocol assignment.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A machine-readable, alphanumeric, unique representation of the source user.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserPrincipalName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source username, including domain information when available.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

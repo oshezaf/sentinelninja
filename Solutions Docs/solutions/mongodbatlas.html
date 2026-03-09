@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MongoDBAtlas &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>MongoDBAtlas</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/MongoDBAtlas/Data%20Connectors/Logos/mongodb.svg" alt="MongoDBAtlas Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">MongoDB</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://www.mongodb.com/company/contact">https://www.mongodb.com/company/contact</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.8</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">steve.lord@improving.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2025-08-22</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MongoDBAtlas">MongoDBAtlas</a></td>
+</tr>
+</tbody>
+</table>
+<p>This custom data connector uses a Function App to pull MongoDB Atlas log files (MDBA) data from the MongoDB Atlas Administation API and uploads into the selected Log Analytics workspace via the Azure Log Ingestion API.</p>
+<p><strong>Note:</strong> <em>There may be <a href="https://aka.ms/sentinelsolutionsknownissues">known issues</a> pertaining to this Solution, please refer to them before installing.</em></p>
+<p><a href="https://www.mongodb.com/">Link to product website</a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/mongodbatlaslogsazurefunctions.html">MongoDB Atlas Logs</a></li>
+</ul>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/mdbalogtable-cl.html"><code>MDBALogTable_CL</code></a></td>
+<td><a href="../connectors/mongodbatlaslogsazurefunctions.html">MongoDB Atlas Logs</a></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MongoDBAtlas/README.md">MongoDBAtlas/README.md</a></em></p>
+</blockquote>
+<h1>MongoDB Atlas API Connector for Microsoft Sentinel</h1>
+<p>Author: Steve Lord. </p>
+<p>Contributor: Lester Szeto</p>
+<p>This custom data connector uses a Function App to pull MongoDB Atlas (MDBA) logs from the MongoDB Atlas Administration API and upload them into the selected Log Analytics workspace via the Log Ingestion API. </p>
+<p><a href="https://portal.azure.com/#view/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FMongoDBAtlas%2FData%20Connectors%2FMongoDBAtlasLogs%2Fazuredeploy_Connector_MongoDBAtlasLogs_AzureFunction.json/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FMongoDBAtlas%2FData%20Connectors%2FMongoDBAtlasLogs%2FcreateUiDef.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.com/#view/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FMongoDBAtlas%2FData%20Connectors%2FMongoDBAtlasLogs%2Fazuredeploy_Connector_MongoDBAtlasLogs_AzureFunction.json/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FMongoDBAtlas%2FData%20Connectors%2FMongoDBAtlasLogs%2FcreateUiDef.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<ul>
+<li><a href="releaseNotes.html">Release Notes</a></li>
+<li><a href="#pre-requisites">Pre-requisites</a></li>
+<li><a href="#deployment-process">Deployment Process</a></li>
+</ul>
+<h2><strong>Pre-requisites</strong></h2>
+<ol>
+<li>An Azure Subscription</li>
+<li>A Resource Group</li>
+<li>A Microsoft Sentinel/Log Analytics workspace</li>
+<li>Roles required to deploy resources:<ul>
+<li>User Access Administrator</li>
+<li>Contributor</li>
+<li>Application Administrator</li>
+<li>Directory Readers</li>
+<li>Directory Writers</li>
+<li>Privileged Role Administrator</li>
+</ul>
+</li>
+<li>A MongoDB Atlas account:<ul>
+<li>Cluster Id</li>
+<li>Group Id</li>
+<li>Client Id</li>
+<li>Client Secret</li>
+</ul>
+</li>
+</ol>
+<h2><strong>Deployment Process</strong></h2>
+<h2>1. Deploy Azure Resources</h2>
+<ol>
+<li>Click the <strong>Deploy to Azure</strong> button above.</li>
+<li>Once in the Azure Portal, select the <strong>Subscription</strong> and <strong>Resource Group</strong> to deploy the resources into.</li>
+<li>Select a workspace from the list of <strong>Log Analytics Workspaces</strong>.</li>
+<li>In the MongoDB connection tab, enter fields for the MongoDB Atlas instance from which you are collecting logs<ul>
+<li>Group ID</li>
+<li>A list of up to 10 Cluster IDs, each on a separate line</li>
+<li>Client ID</li>
+<li>Client Secret or a Key Vault name containing the Client Secret. Note the key vault, if used, should be created with a Vault Access Policy</li>
+</ul>
+</li>
+<li>Review the MongoDB filters. Select logs from at least one category.</li>
+<li>Scheduling - this uses the <a href="https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-timer?tabs=python-v2%2Cisolated-process%2Cnodejs-v4&amp;pivots=programming-language-csharp#ncrontab-expressions">CRON syntax</a> to specify the rate at which the logs are collected. The MongoDB Atlas Administration API will publish new logs every 5 minutes.</li>
+<li>Click <strong>Review and Create</strong>.</li>
+</ol>
+<p><em>[Content truncated...]</em></p>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.8</td>
+<td>05-11-2025</td>
+<td>Fix slow UI for MongoDB Cluster ID validation.</td>
+</tr>
+<tr>
+<td>3.0.7</td>
+<td>29-10-2025</td>
+<td>Update extension bundle version, minor instructions update, publisherId update.</td>
+</tr>
+<tr>
+<td>3.0.6</td>
+<td>17-10-2025</td>
+<td>Add ability to pass MongoDB Client Secret via a key vault. Improve concurrency model used to ingest logs.</td>
+</tr>
+<tr>
+<td>3.0.5</td>
+<td>08-10-2025</td>
+<td>Removal of workspace creation. Add ability to pull logs from multiple MongoDB clusters.</td>
+</tr>
+<tr>
+<td>3.0.4</td>
+<td>01-10-2025</td>
+<td>Deployment UI updates. Fix Deploy to Azure button.</td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>29-09-2025</td>
+<td>Fixed a bug in log filtering. Some improvements to UI text.</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>25-09-2025</td>
+<td>Fixed bad link to logo in Solution json. Fixed Deploy to Azure links.</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>18-09-2025</td>
+<td>Improved filtering by log ID. Performance improvement to upload via Log Ingestion API in parallel.</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>17-09-2025</td>
+<td>Initial Solution Release</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

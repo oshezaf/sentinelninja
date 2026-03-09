@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WithSecure Elements API Azure Function &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>WithSecure Elements API (Azure Function)</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/WithSecure.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>WithSecureElementsViaFunction</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">WithSecure</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/withsecureelementsviafunction.html">WithSecureElementsViaFunction</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WithSecureElementsViaFunction/Data%20Connectors/WithSecureElementsViaFunction.json">WithSecureElementsViaFunction.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>Azure Function code uses LogsIngestionClient/Log Ingestion API</em></td>
+</tr>
+</tbody>
+</table>
+<p>WithSecure Elements is the unified cloud-based cyber security platform designed to reduce risk, complexity, and inefficiency.</p>
+<p>Elevate your security from your endpoints to your cloud applications. Arm yourself against every type of cyber threat, from targeted attacks to zero-day ransomware.</p>
+<p>WithSecure Elements combines powerful predictive, preventive, and responsive security capabilities - all managed and monitored through a single security center. Our modular structure and flexible pricing models give you the freedom to evolve. With our expertise and insight, you'll always be empowered - and you'll never be alone.</p>
+<p>With Microsoft Sentinel integration, you can correlate <a href="https://connect.withsecure.com/api-reference/security-events#overview">security events</a> data from the WithSecure Elements solution with data from other sources, enabling a rich overview of your entire environment and faster reaction to threats.</p>
+<p>With this solution Azure Function is deployed to your tenant, polling periodically for the WithSecure Elements security events.</p>
+<p>For more information visit our website at: <a href="https://www.withsecure.com">https://www.withsecure.com</a>.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/wssecurityevents-cl.html"><code>WsSecurityEvents_CL</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
+- <strong>WithSecure Elements API client credentials</strong>: Client credentials are required. <a href="https://connect.withsecure.com/getting-started/elements#getting-client-credentials">See the documentation to learn more.</a></p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Create WithSecure Elements API credentials</strong></p>
+<p>Follow the <a href="https://connect.withsecure.com/getting-started/elements#getting-client-credentials">user guide</a> to create Elements API credentials. Save credentials in a safe place.</p>
+<p><strong>2. Create Microsoft Entra application</strong></p>
+<p>Create new Microsoft Entra application and credentials. Follow <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/logs/tutorial-logs-ingestion-portal#create-microsoft-entra-application">the instructions</a> and store values of <strong>Directory (tenant) ID</strong>, <strong>Object ID</strong>, <strong>Application (client) ID</strong> and <strong>Client Secret</strong> (from client credentials field). Remember to store Client Secret in a safe place.</p>
+<p><strong>3. Deploy Function App</strong></p>
+<blockquote>
+<p><strong>NOTE:</strong> This connector uses Azure Functions to pull logs from WithSecure Elements. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
+<p><strong>(Optional Step)</strong> Securely store Microsoft Entra client credentials and WithSecure Elements API client credentials in Azure Key Vault. Azure Key Vault provides a secure mechanism to store and retrieve key values. <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Follow these instructions</a> to use Azure Key Vault with an Azure Function App.</p>
+<p><strong>IMPORTANT:</strong> Before deploying the WithSecure Elements connector, have the Workspace Name (can be copied from the following), data from Microsoft Entra (Directory (tenant) ID, Object ID, Application (client) ID and Client Secret), as well as the WithSecure Elements client credentials, readily available.
+- <strong>Workspace Name</strong>: <code>workspaceName</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+<p><strong>1. Deploy all the resources related to the connector</strong></p>
+<ol>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below. </p>
+<p><a href="https://aka.ms/sentinel-WithSecureElementsViaFunction-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. 
+3. Enter the <strong>Workspace ID</strong>, <strong>Entra Client ID</strong>, <strong>Entra Client Secret</strong>, <strong>Entra Tenant ID</strong>, <strong>Elements API Client ID</strong>, <strong>Elements API Client Secret</strong>.</p>
+<blockquote>
+<p>Note: If using Azure Key Vault secrets for any of the values above, use the<code>@Microsoft.KeyVault(SecretUri={Security Identifier})</code>schema in place of the string values. Refer to <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Key Vault references documentation</a> for further details. 
+4. You can also fill in optional fields: <strong>Elements API url</strong>, <strong>Engine</strong>, <strong>Engine Group</strong>. Use default value of <strong>Elements API url</strong> unless you have some special case. <strong>Engine</strong> and <strong>Engine Group</strong> map to <a href="https://connect.withsecure.com/api-reference/elements#post-/security-events/v1/security-events">security events request parameters</a>, fill in those parameters if you are interested only in events from specific engine or engine group, in case you want to receive all security events leave the fields with default values.
+5. Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>. 
+6. Click <strong>Purchase</strong> to deploy.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Illusive-SentinelIncident-Enrichment &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Illusive-SentinelIncident-Enrichment</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p align="left"> <img width="300" height="100" src="./Images/logo.jpg"> </a> </p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/illusive-active-defense.html">Illusive Active Defense</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Enrichment/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>Not listed in Solution JSON:</strong> This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.</p>
+</blockquote>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Enrichment/readme.md">Illusive-SentinelIncident-Enrichment/readme.md</a></em></p>
+</blockquote>
+<p align="left">  
+<img width="300" height="100" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Enrichment/Images/logo.jpg"> </a>
+</p>
+
+<h1>Illusive Incident Enrichment Playbook</h1>
+<p>The Incident Enrichment playbook leverages Sentinel analytic rules to discover Illusive-based alerts and report the associated data and forensics as Sentinel incident sets. </p>
+<p>Use this playbook to enrich Sentinel security incidents originating from Illusive with Illusive incident and forensics information. Illusive continues to enrich relevant Sentinel incidents as new events are detected. This is done using the Illusive API resource.</p>
+<ul>
+<li><a href="#illusive-incident-enrichment-playbook">Illusive Incident Enrichment Playbook</a></li>
+<li><a href="#playbook-workflow">Playbook Workflow</a></li>
+<li><a href="#create-the-illusive-playbook">Create the Illusive playbook</a><ul>
+<li><a href="#deploy-a-custom-template">Deploy a custom template</a></li>
+</ul>
+</li>
+<li><a href="#connect-the-playbook-to-azure-sentinel">Connect the playbook to Azure Sentinel</a></li>
+<li><a href="#playbook-execution">Playbook Execution</a></li>
+<li><a href="#output">Output</a></li>
+<li><a href="#access-and-view-the-playbook">Access and view the playbook</a></li>
+<li><a href="#playbook-retry-mechanism">Playbook retry mechanism</a></li>
+</ul>
+<p><a name="playbook-workflow"></p>
+<h2>Playbook Workflow</h2>
+<ol>
+<li>Perform the general solution setup. <a href="https://github.com/IllusiveNetworks-Labs/Azure-Sentinel/tree/Illusive/Solutions/Illusive%20Active%20Defense">(see instructions here)</a></li>
+<li><a href="#create-illusive-playbook">Create the Illusive playbook.</a></li>
+<li><a href="#API_connection">Connect the playbook to Azure Sentinel</a></li>
+</ol>
+<p><a name="create-illusive-playbook"></p>
+<h2>Create the Illusive playbook</h2>
+<p>Deploying the Illusive Incident Enrichment playbook requires a custom deployment template.</p>
+<ul>
+<li>The playbook should be deployed under the same resource group, subscription, and workspace as the Azure app.</li>
+<li>The Illusive API key should contain only the API key and no keywords such as “Bearer” or “Basic”.</li>
+</ul>
+<h3>Deploy a custom template</h3>
+<p>Before deploying the custom template, download the <strong>azuredeploy.json</strong> for the <em>Incident Enrichment</em> playbook from the GitHub repository <a href="https://github.com/IllusiveNetworks-Labs/Azure-Sentinel/blob/2f67abd268398e63da0071b5f7027a49829a5dbd/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Enrichment/azuredeploy.json">using this link</a>.</p>
+<ol>
+<li>On the Azure home page, filter for Deploy a custom template.
+       <p align="center"><br />
+          <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Enrichment/Images/deploy-custom-template-search.png"> </a>
+       </p></li>
+<li>Under <strong>Custom Deployment&gt;Select a template</strong>, click <strong>Build your own template in the editor</strong>.
+       <p align="center"><br />
+          <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Enrichment/Images/deploy-custom-template-page.png"> </a>
+       </p></li>
+<li>From <strong>Edit template,</strong> click <strong>Load file,</strong> load the <strong>azuredeploy.json</strong> file you downloaded, and click <strong>Save.</strong>
+       <p align="center"><br />
+          <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Enrichment/Images/deploy-custom-template-load-file.png"> </a>
+       </p>
+       <p align="center"><br />
+          <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Enrichment/Images/deploy-custom-template-edit-template-incident-enrichment.png"> </a>
+       </p></li>
+<li>Under <strong>Custom Deployment&gt;Basics:</strong><ul>
+<li>Specify the <strong>Subscription</strong> that contains the dedicated Azure app that will run the Illusive Sentinel solution </li>
+<li>Specify the <strong>Resource group</strong> that contains the Workspace where you want to install the playbook.</li>
+<li>Under <strong>Instance details:</strong>
+  <table>
+   <tr>
+    <td><b>Field</b></td>
+    <td><b>Instructions</b></td>
+   </tr>
+   <tr>
+    <td>Region</td>
+    <td>Filled automatically based on the subscription and cannot be changed.</td>
+   </tr>
+   <tr>
+    <td>Workspace Name</td>
+    <td>Specify the Azure Sentinel <b>Workspace Name</b> where you want to create the playbook.</td>
+   </tr>
+   <tr>
+    <td>Illusive API URL <br/> Illusive API Key</td>
+    <td>Supply the authentication parameters required to access the Illusive API
+     <b>Important:</b> Enter the API key without the keyword</td>
+   </tr>
+   <tr>
+    <td>Azure-Sentinel Client ID:  <br/> Azure-Sentinel Client Secret:  <br/> Azure-Sentinel Tenant ID:</td>
+    <td>Supply the authentication parameters required to access the Azure-Sentinel API</td>
+   </tr>
+  </table>
+  <p align="center">  </li>
+</ul>
+</li>
+</ol>
+<p><em>[Content truncated...]</em></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/illusive-active-defense.html">Back to Illusive Active Defense</a></p>
+</div>
+</body>
+</html>

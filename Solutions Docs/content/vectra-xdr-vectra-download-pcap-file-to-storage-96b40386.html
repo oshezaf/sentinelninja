@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vectra Download Pcap File To Storage &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Vectra Download Pcap File To Storage</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>This playbook enables user to download pcap file of any detections associated with a Vectra Entity to default file share of storage account. Users can provide detection ids via MS Teams AdaptiveCard.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Playbooks/VectaDownloadPcapFileToStorage/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Playbooks/VectaDownloadPcapFileToStorage/readme.md">VectaDownloadPcapFileToStorage/readme.md</a></em></p>
+</blockquote>
+<h2>Summary</h2>
+<p>This playbook enables users to download pcap files of detections associated with a Vectra Entity to the default file share of a storage account. Users can provide detection IDs via Microsoft Teams Adaptive Card.</p>
+<h3>Prerequisites</h3>
+<ol>
+<li>Obtain Key Vault name and Tenant ID where client credentials are stored for access token generation.
+   - Create a Key Vault with a unique name.
+   - Go to Key Vaults → <em>your Key Vault</em> → Overview and copy Directory ID (Tenant ID).
+   - <strong>NOTE:</strong> Ensure the Permission model in the Access Configuration of Key Vault is set to <strong>'Vault access policy'</strong>.</li>
+<li>Obtain Teams GroupId and ChannelId.
+   - Create a Team with a public channel.
+   - Click on the three dots (...) next to your newly created Teams channel and select <strong>Get link to channel</strong>.
+   - Copy the text from the link between <code>/channel</code> and <code>/</code>, decode it using an online URL decoder, and copy it to use as Channel ID.
+   - Copy the text of the GroupId parameter from the link to use as GroupId.</li>
+<li>Obtain Storage Account Name where pcap files will be downloaded.</li>
+<li>Ensure the VectraGenerateAccessToken playbook is deployed before deploying VectaDownloadPcapFileToStorage playbook.</li>
+</ol>
+<h3>Deployment Instructions</h3>
+<ol>
+<li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
+<li>Fill in the required parameters:
+   - PlaybookName: Enter the playbook name here.
+   - KeyVaultName: Name of the Key Vault where secrets are stored.
+   - TenantId: Tenant ID where the Key Vault is located.
+   - BaseURL: Enter the base URL of your Vectra account.
+   - TeamsGroupId: Enter Id of the Teams Group where the adaptive card will be posted.
+   - TeamsChannelId: Enter Id of the Teams Channel where the adaptive card will be posted.
+   - StorageAccountName: Name of the storage account where pcap files will be downloaded.
+   - GenerateAccessCredPlaybookName: Playbook name which is deployed as part of prerequisites.</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FVectraXDR%2FPlaybooks%2FVectaDownloadPcapFileToStorage%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FVectraXDR%2FPlaybooks%2FVectaDownloadPcapFileToStorage%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<h3>Post-Deployment Instructions</h3>
+<h4>a. Authorize connections</h4>
+<p>Once deployment is complete, authorize each connection.
+1. Go to your logic app → API connections → Select keyvault connection resource.
+2. Go to General → Edit API connection.
+3. Click Authorize.
+4. Sign in.
+5. Click Save.
+6. Repeat steps for other connections.</p>
+<p><strong>To authorize the Storage Account API connection, you will need the access key:</strong>
+1. Go to Azure Portal → Storage Accounts → <em>your storage account</em>.
+2. In the left pane, select <strong>Access keys</strong> under <strong>Security + networking</strong>.
+3. Copy the value of <strong>key1</strong> or <strong>key2</strong>.
+4. Go to your logic app → API connections → Select the storage account connection resource.
+5. Go to General → Edit API connection.
+6. Paste the copied access key in the required field.
+7. Click Save.</p>
+<h4>b. Add Access Policy in Key Vault</h4>
+<p>Add access policy for the playbook's managed identity and authorized user to read and write secrets of the Key Vault.
+1. Go to Logic App → <em>your Logic App</em> → Identity → System assigned Managed identity and copy Object (principal) ID.
+2. Go to Key Vaults → <em>your Key Vault</em> → Access policies → Create.
+3. Select all keys &amp; secrets permissions. Click Next.
+4. In the principal section, search by copied Object ID. Click Next.
+5. Click Review + Create.
+6. Repeat steps 2 to 5 to add access policy for the user account used to authorize the connection.</p>
+<h4>c. Assign Role to update incident</h4>
+<p>After authorizing each connection, assign role to this playbook.
+1. Go to Log Analytics Workspace → <em>your workspace</em> → Access Control → Add.
+2. Add role assignment.
+3. Assignment type: Job function roles.
+4. Role: Microsoft Sentinel Contributor.
+5. Members: select managed identity for assigned access to and add your logic app as member.
+6. Click on review+assign.</p>
+<h4>d. Configurations in Microsoft Sentinel</h4>
+<ol>
+<li>In Microsoft Sentinel, the analytical rule should be configured to trigger an incident based on data ingested from Vectra. Incident should have Entity mapping.</li>
+<li>To manually run the playbook on a particular incident, follow the steps below:
+   - Go to Microsoft Sentinel → <em>your workspace</em> → Incidents.
+   - Select an incident.
+   - In the right pane, click on <strong>Actions</strong>, and from the dropdown select the <strong>Run Playbook</strong> option.
+   - Click on the <strong>Run</strong> button beside this playbook.</li>
+</ol>
+<h4>e. Note</h4>
+<p><em>[Content truncated...]</em></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/vectra-xdr.html">Back to Vectra XDR</a></p>
+</div>
+</body>
+</html>

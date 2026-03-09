@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lumen Defender Threat Feed Data Connector &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Lumen Defender Threat Feed Data Connector</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Lumen%20Defender%20Threat%20Feed/Workbooks/Images/Logo/Lumen.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>LumenThreatFeedConnector</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Lumen Technologies, Inc.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lumen%20Defender%20Threat%20Feed/Data%20Connectors/LumenThreatFeed/LumenThreatFeedConnector_ConnectorUI.json">LumenThreatFeedConnector_ConnectorUI.json</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://bll-analytics.mss.lumen.com/analytics">Lumen Defender Threat Feed</a> connector provides the capability to ingest STIX-formatted threat intelligence indicators from Lumen's Black Lotus Labs research team into Microsoft Sentinel. The connector automatically downloads and uploads daily threat intelligence indicators including IPv4 addresses and domains to the ThreatIntelIndicators table via the STIX Objects Upload API.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+</tr>
+</tbody>
+</table>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Log Analytics Workspace</strong> (Workspace): Read and write permissions on the Log Analytics workspace are required.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
+- <strong>Azure Entra App Registration</strong>: An Azure Entra application registration with the Microsoft Sentinel Contributor role assigned is required for STIX Objects API access. <a href="https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app">See the documentation to learn more about Azure Entra applications</a>.
+- <strong>Microsoft Sentinel Contributor Role</strong>: Microsoft Sentinel Contributor role is required for the Azure Entra application to upload threat intelligence indicators.
+- <strong>Lumen Defender Threat Feed API Key</strong>: A Lumen Defender Threat Feed API Key is required for accessing threat intelligence data. <a href="mailto:DefenderThreatFeedSales@Lumen.com?subject=API%20Access%20Request">Contact Lumen for API access</a>.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+<p><strong>NOTE:</strong> This connector uses Azure Functions with Durable Functions to connect to the Lumen Defender Threat Feed API and upload threat intelligence indicators to Microsoft Sentinel via the STIX Objects API. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
+</blockquote>
+<p><strong>1. Configuration</strong></p>
+<p><strong>STEP 1 - Obtain Lumen Defender Threat Feed API Key</strong></p>
+<ol>
+<li><a href="mailto:DefenderThreatFeedSales@Lumen.com?subject=API%20Access%20Request">Contact Lumen</a> to obtain API access to our Threat Feed API service</li>
+<li>Obtain your API key for authentication.</li>
+</ol>
+<p><strong>STEP 2 - Configure Azure Entra ID Application and gather information</strong></p>
+<ol>
+<li>Create an Entra application. <a href="https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app">See the documentation for a guide to registering an application in Microsoft Entra ID.</a></li>
+<li>Create a client secret and note the Application ID, Tenant ID, and Client Secret</li>
+<li>Assign the <strong>Microsoft Sentinel Contributor</strong> role to the application on your Microsoft Sentinel Log Analytics Workspace</li>
+<li>Make note of your Workspace ID, as well as the App Insights Workspace Resource ID, which can be obtained from the overview page of the Log Analytics Workspace for your Microsoft Sentinel instance. Click on the “JSON View” link in the top right and the Resource ID will be displayed at the top with a copy button.
+- <strong>Tenant ID</strong>: <code>TenantId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
+- <strong>Workspace ID</strong>: <code>WorkspaceId</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+</ol>
+<p><strong>STEP 3 - Enable the Threat Intelligence Upload Indicators API (Preview) data connector in Microsoft Sentinel</strong></p>
+<ol>
+<li>Deploy the <strong>Threat Intelligence (New) Solution</strong>, which includes the <strong>Threat Intelligence Upload Indicators API (Preview)</strong></li>
+<li>Browse to the Content Hub, find and select the <strong>Threat Intelligence (NEW)</strong> solution.</li>
+<li>Select the <strong>Install/Update</strong> button.</li>
+</ol>
+<p><strong>STEP 4 - Deploy the Azure Function</strong></p>
+<p><strong>IMPORTANT:</strong> Before deploying the Lumen Defender Threat Feed connector, have the Tenant ID, Workspace ID, App Insights Workspace Resource ID, Azure Entra application details (Client ID, Client Secret), and Lumen API key readily available.</p>
+<ol>
+<li>Click the Deploy to Azure button.</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FLumen%20Defender%20Threat%20Feed%2FData%2520Connectors%2FLumenThreatFeed%2Fazuredeploy_Connector_LumenThreatFeed_AzureFunction.json"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
+<ol start="2">
+<li>Fill in the appropriate values for each parameter:</li>
+</ol>
+<ul>
+<li>Subscription: Confirm the correct subscription is selected or use the dropdown to change your selection</li>
+<li>Resource Group: Select the resource group to be used by the Function App and related resources</li>
+<li>Function Name: Enter a globally unique name with an 11-character limit. Adhere to your organization’s naming convention and ensure the name is globally unique since it is used (along with the uniqueString() function) to identify the ARM template being deployed.</li>
+<li>Workspace ID: Found in the "Overview" tab for the Log Analytics Workspace of the Microsoft Sentinel instance and provided for convenience on the connector information page.</li>
+<li>Lumen API Key: Obtain an API key through Lumen support</li>
+<li>Lumen Base URL: Filled in automatically and should generally not be changed. This URL contains API endpoints used by the connector</li>
+<li>Tenant ID: Obtained from the Entra App Registration overview page for the registered application (listed as Directory ID) and can also be obtained from the Tenant Information page in Azure</li>
+<li>Client ID: Obtained from the Entra App Registration overview page for the registered application (listed as Application ID)</li>
+<li>Client Secret: Obtained when the secret is created during the app registration process. It can only be viewed when first created and is hidden permanently afterwards. Rerun the app registration process to obtain a new Client Secret if necessary.</li>
+<li>App Insights Workspace Resource ID: Obtained from the overview page of the Log Analytics Workspace for your Microsoft Sentinel instance. Click on the "JSON View" link in the top right and the Resource ID will be displayed at the top with a copy button.</li>
+<li>Blob Container Name: Use the default name unless otherwise required. Azure Blob Storage is used for temporary storage and processing of threat indicators.</li>
+</ul>
+<p><strong>STEP 5 - Verify Deployment</strong></p>
+<ol>
+<li>The connector polls for indicator updates every 15 minutes.</li>
+<li>Monitor the Function App logs in the Azure Portal to verify successful execution</li>
+<li>After the app performs its first run, review the indicators ingested by either viewing the “Lumen Defender Threat Feed Overview” workbook or viewing the “Threat Intelligence” section in Microsoft Sentinel. In Microsoft Sentinel “Threat Intelligence”, filter for source “Lumen” to display only Lumen generated indicators.</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

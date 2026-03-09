@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Illumio Saas &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Illumio Saas</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/IllumioLogo.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>IllumioSaasCCFDefinition</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/illumiosaas.html">IllumioSaaS</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/ccf.html">CCF</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS/Data%20Connectors/IllumioSaasLogs_ccf/IllumioSaasLogs_ConnectorDefinition.json">IllumioSaasLogs_ConnectorDefinition.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Configuration</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS/Data%20Connectors/IllumioSaasLogs_ccf/IllumioSaasLogs_PollerConfig.json">IllumioSaasLogs_PollerConfig.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Capabilities</strong></td>
+<td style="text-align: left;"><code>AmazonWebServicesS3</code></td>
+</tr>
+</tbody>
+</table>
+<p>The Illumio Saas Cloud data connector provides the capability to ingest Flow logs into Microsoft Sentinel using the Illumio Saas Log Integration through AWS S3 Bucket. Refer to <a href="https://product-docs-repo.illumio.com/Tech-Docs/CloudSecure/out/en/administer-cloudsecure/connector.html#UUID-c14edaab-9726-1f23-9c4c-bc2937be39ee_section-idm234556433515698">Illumio Saas Log Integration</a> for more information.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/illumiofloweventsv2-cl.html"><code>IllumioFlowEventsV2_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): Read and Write permissions are required.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Connect Illumio Saas to Microsoft Sentinel</strong></p>
+<blockquote>
+<p><strong>NOTE:</strong> This connector fetches the Illumio Saas Flow logs from AWS S3 bucket
+To gather data from Illumio, you need to configure the following resources</p>
+</blockquote>
+<h4>1. AWS Role ARN</h4>
+<p>To gather data from Illumio, you'll need AWS Role ARN.</p>
+<h4>2. AWS SQS Queue URL</h4>
+<p>To gather data from Illumio, you'll need AWS SQS Queue URL.</p>
+<p>For detailed steps to retrieve the AWS Role ARN, SQS Queue URL, and configure Illumio log forwarding to the Amazon S3 bucket, refer to the <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS/Data%20Connectors/IllumioSaasLogs_ccf/Readme.md">Connector Setup Guide</a>.
+<strong>Connector Management Interface</strong></p>
+<p>This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.</p>
+<p>📊 <strong>View Existing Collectors</strong>: A management table displays all currently configured data collectors with the following information:
+- <strong>AWS Role ARN</strong>
+- <strong>AWS SQS Queue URL</strong>
+- <strong>Table Name</strong></p>
+<p>➕ <strong>Add New Collector</strong>: Click the "Add new collector" button to configure a new data collector (see configuration form below).</p>
+<p>🔧 <strong>Manage Collectors</strong>: Use the actions menu to delete or modify existing collectors.</p>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration interface is only available when viewing the connector in the Microsoft Sentinel portal. You cannot configure data collectors through this static documentation.</p>
+</blockquote>
+<p><strong>Add Account</strong></p>
+<p><em>Add Account</em></p>
+<p>When you click the "Add Account" button in the portal, a configuration form will open. You'll need to provide:</p>
+<ul>
+<li><strong>Role ARN</strong> (optional): Enter Role ARN</li>
+<li><strong>Flow Log Queue URL</strong> (optional): Enter Flow log SQL Queue URL</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration form is only available in the Microsoft Sentinel portal.</p>
+</blockquote>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS\Data Connectors\IllumioSaasLogs_ccf\Readme.md">IllumioSaaS\Data Connectors\IllumioSaasLogs_ccf\Readme.md</a></em></p>
+</blockquote>
+<h1>Integrating Illumio Saas into Microsoft Sentinel</h1>
+<h2>Table of contents</h2>
+<ul>
+<li><a href="#intro">Introduction</a></li>
+<li><a href="#pre">Prerequisites</a></li>
+<li><a href="#template">Deploy the Cloud Formation Templates</a></li>
+<li><a href="#logs">Configure Illumio to Forward Logs to Amazon S3</a></li>
+</ul>
+<p><a name = "intro"></p>
+<h2>Introduction</h2>
+<p>The Illumio Saas Codeless Connector for Microsoft Sentinel enables seamless integration of Illumio's Logs with Microsoft Sentinel without the need for custom code. Your Illumio logs will be forwarded to an Amazon S3 bucket, which will then be used as the source for log ingestion into Microsoft Sentinel.</p>
+<p><a name = "pre"></p>
+<h2>Prerequisites</h2>
+<ul>
+<li>An active <strong>AWS account</strong> with permissions to create:</li>
+<li>IAM roles and policies</li>
+<li>S3 buckets</li>
+<li>SQS queues</li>
+</ul>
+<p><a name = "template"></p>
+<h2>Deploy the Cloud Formation Templates</h2>
+<ul>
+<li>Download the <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS/Data%20Connectors/CloudFormationTemplates/OIDCWebIdProvider.json">OIDC Web Identity Provider</a> Template and the <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS/Data%20Connectors/CloudFormationTemplates/IllumioSaasConfig.json">AWS Resource Creation</a> Template provided in this repository.</li>
+<li>Open the <strong>AWS Management Console</strong> and navigate to the <strong>CloudFormation</strong> service.</li>
+<li>Click on <strong>"Create stack"</strong> and choose <strong>"With new resources (standard)"</strong>.</li>
+<li>Under the <strong>Specify template</strong> section, select <strong>"Upload a template file"</strong>, and upload the appropriate CloudFormation template (starting with the OIDC template).</li>
+<li>Click <strong>Next</strong>, provide a <strong>Stack Name</strong> of your choice, and review or modify the parameters as needed.</li>
+<li>Proceed by clicking <strong>Next</strong>, then <strong>Submit</strong> to initiate the stack creation.</li>
+<li>Wait until the status of the first stack (OIDC Web Identity Provider) changes to <strong>"CREATE_COMPLETE"</strong>.</li>
+<li>Once completed, repeat the same steps to deploy the second template <strong>(AWS Resource Creation Template)</strong> using CloudFormation.</li>
+<li>Upon successful stack creation, make a note of the <strong>SQS Queue URL</strong> and <strong>Sentinel Role ARN</strong> available in the CloudFormation stack outputs.</li>
+</ul>
+<p><a name = "logs"></p>
+<h2>Configuring Illumio to Forward Logs to Amazon S3</h2>
+<p>To enable log forwarding from Illumio to an Amazon S3 bucket, follow the steps outlined below:
+- Log in to your Illumio console.
+- From the left-hand menu, go to <code>Settings</code> → <code>Cloud</code> → <code>Connector</code>, and select the <strong>S3 Bucket</strong> option.
+- Click on <strong>Connect S3 Bucket</strong> to begin the configuration process.
+- <strong>Provide AWS Account and Bucket Information</strong>
+  - If your AWS account has already been onboarded to Illumio, select the appropriate <strong>Account ID</strong> and <strong>S3 Bucket ARN</strong> from the drop-down list.
+  - If the AWS account is not yet onboarded, manually enter the <strong>Account ID</strong>, <strong>S3 Bucket ARN</strong>, and the corresponding <strong>AWS Region</strong>, then click <strong>Next</strong>.
+- Use an existing Illumio service account if one is available. Otherwise, create a new service account and securely save the generated credentials.
+- Click on <strong>Create CloudFormation Stack</strong>. This will redirect you to the AWS CloudFormation stack creation page.
+  - Ensure that the AWS region selected matches the region of your S3 bucket.
+  - Enter the <strong>Illumio Service Account Secret</strong> when prompted, then proceed to create the stack.
+- After the stack has been successfully deployed, return to the Illumio console.
+- Click <strong>Save and Test Connection</strong> to validate the integration.
+- A <code>Connection Successful</code> message should confirm that the log forwarding setup is complete.
+- Navigate to the <strong>Traffic</strong> page.
+- Execute the desired query to retrieve relevant traffic logs.
+- Click <strong>Export</strong>, then select <strong>Export to Connector</strong>.
+- Choose <strong>CSV</strong> as the export format.
+- Select the previously configured S3 bucket.
+- Specify the export <strong>prefix</strong> as <code>IllumioFlowLogs</code>.
+- Click <strong>Test Connection</strong> to verify connectivity.
+- Finally, click <strong>Save</strong>.</p>
+<p>Once completed, Illumio traffic data will be successfully exported to the specified S3 bucket.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

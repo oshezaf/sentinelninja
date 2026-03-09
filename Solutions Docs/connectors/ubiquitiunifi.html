@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🚫 🔍 Deprecated Ubiquiti UniFi &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>🚫 🔍 [Deprecated] Ubiquiti UniFi</h1>
+<blockquote>
+<p>🚫 <strong>Deprecated:</strong> This connector has been deprecated and may be removed in future versions.</p>
+<p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Ubiquiti%20UniFi/Data%20Connectors/Logo/ubiquiti.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>UbiquitiUnifi</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Ubiquiti</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/ubiquiti-unifi.html">Ubiquiti UniFi</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/mma.html">MMA</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Ubiquiti%20UniFi/Data%20Connectors/Connector_Ubiquiti_agent.json">Connector_Ubiquiti_agent.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.ui.com/">Ubiquiti UniFi</a> data connector provides the capability to ingest <a href="https://help.ui.com/hc/en-us/articles/204959834-UniFi-How-to-View-Log-Files">Ubiquiti UniFi firewall, dns, ssh, AP events</a> into Microsoft Sentinel.</p>
+<h2>Additional Information</h2>
+<p>🛠️ <strong>Device Configuration:</strong> Table: <code>Ubiquiti_CL</code>. Configure rsyslog ruleset with UDP input. Enable syslog in controller: Settings &gt; System Settings &gt; Controller Configuration &gt; Remote Logging. <a href="https://help.ui.com/hc/en-us/categories/6583256751383">Follow Ubiquiti instructions</a>. See <a href="https://learn.microsoft.com/azure/sentinel/unified-connector-custom-device#ubiquiti-unifi">Custom Logs via AMA configuration</a>.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/ubiquiti-cl.html"><code>Ubiquiti_CL</code></a> 🔶</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+<p><strong>NOTE:</strong> This data connector depends on a parser based on a Kusto Function to work as expected <a href="https://aka.ms/sentinel-UbiquitiUnifi-parser"><strong>UbiquitiAuditEvent</strong></a> which is deployed with the Microsoft Sentinel Solution.</p>
+<p><strong>NOTE:</strong> This data connector has been developed using Enterprise System Controller Release Version: 5.6.2 (Syslog)</p>
+</blockquote>
+<p><strong>1. Install and onboard the agent for Linux or Windows</strong></p>
+<p>Install the agent on the Server to which the Ubiquiti logs are forwarder from Ubiquiti device (e.g.remote syslog server)</p>
+<blockquote>
+<p>Logs from Ubiquiti Server deployed on Linux or Windows servers are collected by <strong>Linux</strong> or <strong>Windows</strong> agents.
+<strong>Choose where to install the Linux agent:</strong></p>
+</blockquote>
+<p><strong>Install agent on Azure Linux Virtual Machine</strong></p>
+<p>Select the machine to install the agent on and then click <strong>Connect</strong>.
+  - <strong>Install agent on Linux Virtual Machine</strong></p>
+<p><strong>Install agent on a non-Azure Linux Machine</strong></p>
+<p>Download the agent on the relevant machine and follow the instructions.
+  - <strong>Install agent on Linux (Non-Azure)</strong></p>
+<p><strong>Choose where to install the Windows agent:</strong></p>
+<p><strong>Install agent on Azure Windows Virtual Machine</strong></p>
+<p>Select the machine to install the agent on and then click <strong>Connect</strong>.
+  - <strong>Install/configure: InstallAgentOnVirtualMachine</strong></p>
+<p><strong>Install agent on a non-Azure Windows Machine</strong></p>
+<p>Download the agent on the relevant machine and follow the instructions.
+  - <strong>Install/configure: InstallAgentOnNonAzure</strong></p>
+<p><strong>2. Configure the logs to be collected</strong></p>
+<p>Follow the configuration steps below to get Ubiquiti logs into Microsoft Sentinel. Refer to the <a href="https://docs.microsoft.com/azure/azure-monitor/agents/data-sources-json">Azure Monitor Documentation</a> for more details on these steps.
+1. Configure log forwarding on your Ubiquiti controller: </p>
+<pre><code> i. Go to Settings &gt; System Setting &gt; Controller Configuration &gt; Remote Logging and enable the Syslog and Debugging (optional) logs (Refer to [User Guide](https://dl.ui.com/guides/UniFi/UniFi_Controller_V5_UG.pdf) for detailed instructions).
+</code></pre>
+<ol start="2">
+<li>Download config file <a href="https://aka.ms/sentinel-UbiquitiUnifi-conf">Ubiquiti.conf</a>.</li>
+<li>Login to the server where you have installed Azure Log Analytics agent.</li>
+<li>Copy Ubiquiti.conf to the /etc/opt/microsoft/omsagent/<strong>workspace_id</strong>/conf/omsagent.d/ folder.</li>
+<li>
+<p>Edit Ubiquiti.conf as follows:</p>
+<p>i. specify port which you have set your Ubiquiti device to forward logs to (line 4)</p>
+<p>ii. replace <strong>workspace_id</strong> with real value of your Workspace ID (lines 14,15,16,19)
+5. Save changes and restart the Azure Log Analytics agent for Linux service with the following command:
+    sudo /opt/microsoft/omsagent/bin/service_control restart
+- <strong>Workspace ID</strong>: <code>WorkspaceId</code></p>
+<blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

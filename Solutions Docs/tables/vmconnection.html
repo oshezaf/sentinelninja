@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VMConnection &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>VMConnection</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for VMConnection table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">VMinsights</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/vmconnection">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (44 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/vmconnection">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">AgentId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique agent GUID for the agent reporting data on the server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BytesReceived</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Total number of bytes that have been received during the reporting time window.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BytesSent</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Total number of bytes that have been sent during the reporting time window.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Computer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the server from the ServiceMapComputer_CL table.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Confidence</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Values are 0 - 100.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConnectionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique Id for the connection record.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Description</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Description of the observed threat.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of the destination.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationPort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Port number of the destination.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Direction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Direction of the connection value is inbound or outbound</td>
+</tr>
+<tr>
+<td style="text-align: left;">FirstReportedDateTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The first time the provider reported the indicator.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IndicatorThreatType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Threat indicator detected. Possible values are Botnet C2 CryptoMining Darknet DDos MaliciousUrl Malware Phishing Proxy PUA Watchlist.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsActive</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The last time the indicator was seen by Interflow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LastReportedDateTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates indicators are deactivated with True or False value.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LinksEstablished</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Number of physical network connections that have been established during the reporting time window.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LinksFailed</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Number of physical network connections that have failed during the reporting time window. This information is currently available only for outbound connections.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LinksLive</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Number of physical network connections that were open at the end of the reporting time window.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LinksTerminated</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Number of physical network connections that have been terminated during the reporting time window.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Machine</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">FQDN of the computer.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MaliciousIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Remote IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Process</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identity of process or groups of processes initiating or accepting the connection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the process in the ServiceMapProcess_CL table.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Protocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Protocol used for the connection. Only possible value is tcp.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteClassification</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A classification of the remote endpoint based on its ip and dns names and the corresponding Azure service.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteCountry</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the country or region hosting RemoteIp.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteDnsCanonicalNames</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A JSON array of canonical names that came back from the DNS server. For example when using traffic manager you issue a question to foo.trafficmanage.net and get a canonical name as something.myservice.com together with an ip address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteDnsQuestions</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A JSON array of DNS questions (lookups) that were performed on the machine and resolved to the RemoteIp listed in the record.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address of the remote end of a connection is included in the RemoteIp property. For inbound connections RemoteIp is the same as SourceIp while for outbound connections it is the same as DestinationIp.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteLatitude</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Geolocation latitude. An example would be 47.68.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteLongitude</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Geolocation longitude. An example would be -122.12.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Responses</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Number of responses observed during the reporting time window.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseTimeMax</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Largest response time observed during the reporting time window in milliseconds. If no value the property is blank.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseTimeMin</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Smallest response time observed during the reporting time windowin milliseconds. If no value the property is blank.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseTimeSum</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Sum of all response times observed during the reporting time window in milliseconds. If no value the property is blank.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Severity</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Possible values are 0 - 5 where 5 is the most severe and 0 is not severe at all. Default value is 3.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of the source.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time the record was created.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TLPLevel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Traffic Light Protocol (TLP) Level. Possible values are White Green Amber Red.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (10)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a></li>
+<li><a href="../solutions/attacker-tools-threat-protection-essentials.html">Attacker Tools Threat Protection Essentials</a></li>
+<li><a href="../solutions/legacy-ioc-based-threat-protection.html">Legacy IOC based Threat Protection</a></li>
+<li><a href="../solutions/soc-handbook.html">SOC Handbook</a></li>
+<li><a href="../solutions/securitythreatessentialsolution.html">SecurityThreatEssentialSolution</a></li>
+<li><a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></li>
+<li><a href="../solutions/threat-intelligence.html">Threat Intelligence</a></li>
+<li><a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></li>
+<li><a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a></li>
+<li><a href="../solutions/zinc-open-source.html">Zinc Open Source</a></li>
+</ul>
+<hr />
+<h2>Content Items Using This Table (13)</h2>
+<h3>Analytic Rules (5)</h3>
+<p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990-c6cdb809.html">Log4j vulnerability exploit aka Log4Shell IP IOC</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/securitythreatessentialsolution.html">SecurityThreatEssentialSolution</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/securitythreatessentialsolution-threat-essentials-time-series-anomaly-for-data-size-transferred-to-publi-b49a1093-cbf6-4973-89ac-2eef98f533c6-bc9cced1.html">Threat Essentials - Time series anomaly for data size transferred to public internet</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/threat-intelligence.html">Threat Intelligence</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-ti-map-ip-entity-to-vmconnection-9713e3c0-1410-468d-b79e-383448434b2d-c87f4032.html">TI Map IP Entity to VMConnection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-ip-entity-to-vmconnection-aed70d71-adb2-4f73-becd-02150b13950b-4964d0d5.html">TI Map IP Entity to VMConnection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/zinc-open-source.html">Zinc Open Source</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.html">[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries (5)</h3>
+<p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/apache-log4j-vulnerability-detection-malicious-connection-to-ldap-port-for-cve-2021-44228-vulnerability-19abc034-139e-4e64-a05d-cb07ce8b003b-ea04e1a2.html">Malicious Connection to LDAP port for CVE-2021-44228 vulnerability</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/attacker-tools-threat-protection-essentials.html">Attacker Tools Threat Protection Essentials</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/attacker-tools-threat-protection-essentials-cobalt-strike-dns-beaconing-dde206fc-3f0b-4175-bb5d-42d2aae9d4c9-35f15bcd.html">Cobalt Strike DNS Beaconing</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/legacy-ioc-based-threat-protection.html">Legacy IOC based Threat Protection</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/legacy-ioc-based-threat-protection-connection-from-external-ip-to-omi-related-ports-767b8f6d-8029-4c92-afe1-282167d9d49a-0ad0779a.html">Connection from external IP to OMI related Ports</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/threat-intelligence.html">Threat Intelligence</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-ti-map-file-entity-to-vmconnection-event-172a321b-c46b-4508-87c6-e2691c778107-debef4d0.html">TI Map File Entity to VMConnection Event</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-file-entity-to-vmconnection-event-f231cbcd-66d9-45be-a6a3-4a915e53d46c-00450027.html">TI Map File Entity to VMConnection Event</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks (3)</h3>
+<p><strong>In solution <a href="../solutions/soc-handbook.html">SOC Handbook</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-handbook-securitystatus-93651545.html">SecurityStatus</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/team-cymru-scout-teamcymruscout-b64c6ed4.html">TeamCymruScout</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.html">ZeroTrustTIC3</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Parsers Using This Table (1)</h2>
+<h3>ASIM Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimnetworksessionvmconnection.html">ASimNetworkSessionVMConnection</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;">VMConnection</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.compute/virtualmachines</code></li>
+<li><code>microsoft.conenctedvmwarevsphere/virtualmachines</code></li>
+<li><code>microsoft.azurestackhci/virtualmachines</code></li>
+<li><code>microsoft.scvmm/virtualmachines</code></li>
+<li><code>microsoft.compute/virtualmachinescalesets</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ meshStack &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>⚠️ meshStack</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/meshcloud.svg" alt="meshStack Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">meshcloud GmbH</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://feedback.meshcloud.io">https://feedback.meshcloud.io</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">meshcloud - support@meshcloud.io</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2025-12-15</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/meshStack">meshStack</a></td>
+</tr>
+</tbody>
+</table>
+<p>The meshStack solution for Microsoft Sentinel enables you to ingest meshStack Event Logs into Microsoft Sentinel.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/meshstackeventlogsdefinition.html">meshStack Event Logs</a></li>
+</ul>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/meshstackeventlogs-cl.html"><code>meshStackEventLogs_CL</code></a></td>
+<td><a href="../connectors/meshstackeventlogsdefinition.html">meshStack Event Logs</a></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/meshStack/README.md">meshStack/README.md</a></em></p>
+</blockquote>
+<h1>meshStack Event Logs Data Connector for Microsoft Sentinel</h1>
+<p>This solution provides a data connector to ingest meshStack Event Logs into Microsoft Sentinel using the Codeless Connector Framework (CCF) with OAuth2 authentication. 
+meshStack is a cloud platform management solution that helps platform engineering teams build, operate, and scale internal developer platforms (IDPs).
+See <a href="https://meshcloud.io">meshcloud</a> for more information.</p>
+<h2>Quick Start</h2>
+<h3>Prerequisites</h3>
+<ul>
+<li>An existing <strong>Log Analytics workspace</strong> with <strong>Microsoft Sentinel enabled</strong></li>
+<li>Appropriate permissions to:</li>
+<li>Deploy ARM templates</li>
+<li>Create Data Collection Endpoints</li>
+<li>Configure Microsoft Sentinel data connectors</li>
+<li>A meshStack instance with Events API enabled</li>
+<li>Admin access to create meshStack API Keys</li>
+</ul>
+<h3>1. Deploy to Azure</h3>
+<p><strong>Note</strong>: Azure Sentinel automatically creates a Data Collection Endpoint (DCE) once you add your first data connector. 
+The DCE is named as <code>ASI-&lt;worspace-uuid&gt;</code>.</p>
+<p><strong>Option A: Azure Portal</strong>
+1. Navigate to "Deploy a custom template"
+2. Upload <code>Package/mainTemplate.json</code>
+3. Select your subscription, resource group, and workspace
+4. Deploy</p>
+<p><strong>Option B: Azure CLI</strong></p>
+<pre><code class="language-bash"># Basic deployment (minimum required parameters)
+az deployment group create \
+  --resource-group &lt;rg-name&gt; \
+  --template-file Package/mainTemplate.json \
+  --parameters workspace=&lt;workspace-name&gt; \
+               workspace-location=&lt;workspace-region&gt;
+
+# Example with all parameters explicitly set
+az deployment group create \
+  --resource-group myResourceGroup \
+  --template-file Package/mainTemplate.json \
+  --parameters workspace=mySentinelWorkspace \
+               workspace-location=eastus \
+               resourceGroupName=myResourceGroup \
+               subscription=12345678-1234-1234-1234-123456789abc \
+               location=eastus
+</code></pre>
+<h3>2. Configure Data Connector</h3>
+<ol>
+<li>In Azure Portal, go to <strong>Microsoft Sentinel &gt; Data connectors</strong></li>
+<li>Search for <strong>"meshStack Event Logs"</strong></li>
+<li>Click <strong>"Open connector page"</strong></li>
+<li>Fill in the connection form:
+   - <strong>meshStack API URL</strong>: <code>https://your-meshstack-instance.io</code>
+   - <strong>Client ID (Key ID)</strong>: The <strong>Key ID</strong> from your meshStack API Key
+   - <strong>Client Secret (Key Secret)</strong>: The <strong>Key Secret</strong> from your meshStack API Key</li>
+<li>Toggle the <strong>Connect</strong> button to enable the connector</li>
+</ol>
+<h2>Authentication Setup</h2>
+<h3>Understanding meshStack API Keys</h3>
+<p>When you create an API Key in meshStack, it provides <strong>OAuth2 credentials</strong>:
+- <code>client_id</code>: OAuth2 client identifier (shown as <strong>Key ID</strong> in meshStack Admin Panel)
+- <code>client_secret</code>: OAuth2 client secret (shown as <strong>Key Secret</strong> in meshStack Admin Panel)</p>
+<p>These credentials are used in the OAuth2 client credentials flow:
+1. Connector exchanges <code>client_id</code> + <code>client_secret</code> for an access token at <code>/api/login</code>
+2. Access token is used in <code>Authorization: Bearer</code> header for API requests
+3. Tokens are automatically refreshed when expired</p>
+<h3>Creating an API Key in meshStack</h3>
+<p><em>[Content truncated...]</em></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

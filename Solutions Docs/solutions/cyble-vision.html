@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyble Vision &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Cyble Vision</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CybleLogo.svg" alt="Cyble Vision Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Cyble Support</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://cyble.com/talk-to-sales/">https://cyble.com/talk-to-sales/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Cyble Inc</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2025-05-05</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyble%20Vision">Cyble Vision</a></td>
+</tr>
+</tbody>
+</table>
+<p>This Solution provides Playbooks for Cyble Vision Threat Intelligence ingestion and IOC enrichment, integrating Cyble APIs.</p>
+<p>This Solution also includes a CCF Conenctor which enables Alerts ingestion from Cyble Platform to Microsoft Sentinel Workspace.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/cyblevisionalerts.html">Cyble Vision Alerts</a></li>
+</ul>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+<td><a href="../connectors/cyblevisionalerts.html">Cyble Vision Alerts</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>93 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">45</td>
+</tr>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">44</td>
+</tr>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-advisory-alerts-advisory-1932dcfd-a32e-49f9-a212-5bcd084fbd78-26eb1bc8.html">Cyble Advisory Alerts Advisory</a> ⚠️</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Reconnaissance, ResourceDevelopment</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-assets-0012714c-c595-4dcd-8949-4a5c1d49aaa8-26bf60ce.html">Cyble Vision Alerts Assets</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Reconnaissance</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-bitbucket-f3c25011-4509-41c8-be27-35d891531c39-c74f9461.html">Cyble Vision Alerts Bitbucket</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CredentialAccess, Exfiltration, Discovery</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-cloud-storage-db417cee-529c-4eac-b7b9-36eb0166800a-3cda9e05.html">Cyble Vision Alerts Cloud Storage</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Exfiltration, Discovery</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-compromised-endpoint-cookies-33b07eaa-f451-4c38-ac9f-8af3f7e99f0e-7e05ad5c.html">Cyble Vision Alerts Compromised Endpoint Cookies</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CredentialAccess, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-compromised-files-0f6a8287-09ee-4f82-b8c3-e35c4ac6212e-ae3415ac.html">Cyble Vision Alerts Compromised Files</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CredentialAccess, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-cyble-web-applications-359ddb25-eab1-4ef5-8303-ed3a9b680690-08dbc3e5.html">Cyble Vision Alerts Cyble Web Applications</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Reconnaissance</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-darkweb-data-breaches-588a2ee5-978a-43f7-9c10-6d76d82026ef-749403d3.html">Cyble Vision Alerts Darkweb Data Breaches</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Reconnaissance, InitialAccess, Exfiltration, Collection</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-darkweb-ransomware-leak-6deaf986-a25b-47b4-afbe-667901aa313b-a2e643ed.html">Cyble Vision Alerts Darkweb Ransomware Leak</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Impact, Exfiltration, Reconnaissance</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-discord-keyword-601a5859-0dc2-452d-8d1e-66dc651c16d5-84832e8f.html">Cyble Vision Alerts Discord Keyword</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Reconnaissance, InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-discovered-subdomain-7a0f79cc-8d28-44b5-ac1e-6176565bb7b8-096887f5.html">Cyble Vision Alerts Discovered Subdomain</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Reconnaissance</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-docker-47dee28d-fa74-49cd-b5fb-397b047a73c0-3df16c04.html">Cyble Vision Alerts Docker</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Exfiltration, Execution, Discovery</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-domain-expiry-alert-81404e99-ce27-45aa-aa19-a276a3d4c645-4595fecd.html">Cyble Vision Alerts Domain Expiry Alert</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-domain-watchlist-0a54dc90-9a9d-4300-af21-feb5136e81da-cd7a6ca0.html">Cyble Vision Alerts Domain Watchlist</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">ResourceDevelopment</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-flash-report-2c86652a-bbbe-4a32-8b1c-4b53aad0750e-d85748ba.html">Cyble Vision Alerts Flash Report</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Reconnaissance</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-github-117e8f7c-8f44-4061-bcc2-b444b98a3838-99ff8bbb.html">Cyble Vision Alerts Github</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Collection, CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-hacktivism-6649e5a0-0365-452f-84b3-448a0aec7a59-5af83ab3.html">Cyble Vision Alerts Hacktivism</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Reconnaissance, Impact, ResourceDevelopment</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-i2p-monitoring-d1cdfb8d-12cd-4a29-8caf-ef4a35ad67ed-2e5987a6.html">Cyble Vision Alerts I2P Monitoring</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">ResourceDevelopment</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-ioc's-c8cf42d5-8684-435f-9c4d-9dd0cc47eaec-8e2a1467.html">Cyble Vision Alerts IOC'S</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Reconnaissance, InitialAccess, Discovery, CommandAndControl, Impact</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-ip-risk-score-1e7c8d9f-1d42-42b3-b6ce-12a637e05f16-8948bd79.html">Cyble Vision Alerts IP Risk Score</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Reconnaissance</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-leaked-credentials-224a63ae-e278-4a11-b7c2-02ec3e17b56c-f76bc441.html">Cyble Vision Alerts Leaked Credentials</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CredentialAccess, Discovery, Reconnaissance</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-malicious-ads-detected-cf0a9691-5716-42e0-bfa1-49b35d3a7892-f0396176.html">Cyble Vision Alerts Malicious Ads Detected</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">InitialAccess, Execution</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-new-vulnerability-detected-e52f36dd-7d4f-4aa8-a095-3b6fa2b28b8d-860d840c.html">Cyble Vision Alerts New Vulnerability Detected</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-news-feed-alert-d205a93f-b2e3-4708-a359-5e0c88ee3e59-a37b4b35.html">Cyble Vision Alerts News Feed Alert</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Reconnaissance</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-osint-mention-detected-9ff985d8-57a8-4302-a8e6-34fa96c3c505-996cd01e.html">Cyble Vision Alerts OSINT Mention Detected</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Reconnaissance, ResourceDevelopment</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-ot-ics-threat-activity-detected-c1ebc79d-7f46-429e-bf2c-8bb0b75ba6b2-902af595.html">Cyble Vision Alerts OT/ICS Threat Activity Detected</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Discovery, Collection</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-pastebin-dd37e041-3973-482a-aa8c-f484b4178940-7bf81a45.html">Cyble Vision Alerts Pastebin</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Reconnaissance</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-phishing-domain-detected-eb1d45fe-1b19-4b54-b146-971f282a6fd9-a9a6a0ac.html">Cyble Vision Alerts Phishing Domain Detected</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Reconnaissance</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-physical-threat-alert-88db8505-1889-46aa-a4e2-4e866262dcb9-96d4ee49.html">Cyble Vision Alerts Physical Threat Alert</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-postman-api-exposure-detection-99ca8956-5aad-4542-9fbc-8254182b424d-3efc8967.html">Cyble Vision Alerts Postman API Exposure Detection</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Reconnaissance, CredentialAccess, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-product-vulnerability-detected-c360341e-6ba6-472a-ae00-7be85967e240-c9e759b7.html">Cyble Vision Alerts Product Vulnerability Detected</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">InitialAccess, ResourceDevelopment</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-ssl-certificate-expiry-a667d635-d2a7-47e7-8827-8fb243af2afd-e55aa2d1.html">Cyble Vision Alerts SSL Certificate Expiry</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">InitialAccess, Impact</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-social-media-monitoring-231c2c16-3742-4cfb-a8e1-c1a7d09f080a-bd25bcf4.html">Cyble Vision Alerts Social Media Monitoring</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Reconnaissance, ResourceDevelopment</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-suspicious-domain-c56fcb78-b708-4a92-bad4-d50b1e15c42c-f5c309bb.html">Cyble Vision Alerts Suspicious Domain</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Reconnaissance</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-tor-links-b9df1ec4-a572-4448-8da1-1bc4b7e1687f-03073849.html">Cyble Vision Alerts TOR Links</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">ResourceDevelopment, Reconnaissance</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-vulnerability-0e0cdda9-4536-4cc9-91cf-736e8957ed26-911ba36d.html">Cyble Vision Alerts Vulnerability</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Reconnaissance, Execution, Discovery</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-website-defacement-content-91a00e4f-3edb-49e9-ba6f-cec87a5bd2f8-1133b5f4.html">Cyble Vision Alerts Website Defacement Content</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-website-defacement-keyword-754dbb50-8dc2-4b8b-86d8-a890a020ddc3-df3d89c9.html">Cyble Vision Alerts Website Defacement Keyword</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Impact, Reconnaissance</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-vision-alerts-website-defacement-url-1dabe566-a0f1-4c27-8307-aea5a79eb5e9-70d79aa3.html">Cyble Vision Alerts Website Defacement URL</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyblevision-alerts-cyber-crime-forum-alerts-b78c4641-cc16-48e0-9d05-c9b36a55d214-09be5ef2.html">CybleVision Alerts Cyber Crime Forum Alerts</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Reconnaissance, ResourceDevelopment, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyblevision-alerts-darkweb-marketplace-alerts-e80eedb4-cbae-45cc-b1be-a2a8dc31af3b-f7d09bed.html">CybleVision Alerts Darkweb Marketplace Alerts</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CredentialAccess, Collection, Exfiltration, Reconnaissance</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyblevision-alerts-mobile-apps-6d55fefc-b334-4b79-b11c-667746b5bdde-f89c687f.html">CybleVision Alerts Mobile Apps</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Reconnaissance, ResourceDevelopment, InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyblevision-alerts-stealer-logs-e0bf55c2-35ef-47ab-8846-5087618ae805-88412cf5.html">CybleVision Alerts Stealer Logs</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CredentialAccess, Collection, Exfiltration, Reconnaissance, InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyblevision-alerts-telegram-mentions-4238f545-8b6f-4f7c-80b5-14cca2cebc99-dd4959ca.html">CybleVision Alerts Telegram Mentions</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Reconnaissance, ResourceDevelopment, InitialAccess, CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyblevisionalertsworkbook-ccdef358.html">CybleVisionAlertsWorkbook</a></td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-ioc-enrichment-playbook-351608f8.html">Cyble-IOC_Enrichment-Playbook</a></td>
+<td style="text-align: left;">This playbook leverages the Cyble API to enrich IP, Domain, Url &amp; Hash indicators, found in Microsof...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyble-threatintelligence-ingest-playbook-63c46da3.html">Cyble-ThreatIntelligence-Ingest-Playbook</a></td>
+<td style="text-align: left;">This playbook imports IoC lists from Cyble and stores them as Threat Intelligence Indicators in Micr...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyble-vision-cyblevisionalert-status-update-6da41a7a.html">CybleVisionAlert_Status_Update</a></td>
+<td style="text-align: left;">This Logic App updates Cyble alert status and severity based on Microsoft Sentinel incident changes....</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-advisory.html">Alerts_advisory</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-assets.html">Alerts_assets</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-bit-bucket.html">Alerts_bit_bucket</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-cloud-storage.html">Alerts_cloud_storage</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-compromised-endpoints-cookies.html">Alerts_compromised_endpoints_cookies</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-compromised-files.html">Alerts_compromised_files</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-cyber-crime-forums.html">Alerts_cyber_crime_forums</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-darkweb-data-breaches.html">Alerts_darkweb_data_breaches</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-darkweb-marketplaces.html">Alerts_darkweb_marketplaces</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-darkweb-ransomware.html">Alerts_darkweb_ransomware</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-defacement-content.html">Alerts_defacement_content</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-defacement-keyword.html">Alerts_defacement_keyword</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-defacement-url.html">Alerts_defacement_url</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-discord.html">Alerts_discord</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-docker.html">Alerts_docker</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-domain-expiry.html">Alerts_domain_expiry</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-domain-watchlist.html">Alerts_domain_watchlist</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-flash-report.html">Alerts_flash_report</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-github.html">Alerts_github</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-hacktivism.html">Alerts_hacktivism</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-i2p.html">Alerts_i2p</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-iocs.html">Alerts_iocs</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-ip-risk-score.html">Alerts_ip_risk_score</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-leaked-credentials.html">Alerts_leaked_credentials</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-malicious-ads.html">Alerts_malicious_ads</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-mobile-apps.html">Alerts_mobile_apps</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-new-vulnerability.html">Alerts_new_vulnerability</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-news-feed.html">Alerts_news_feed</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-osint.html">Alerts_osint</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-ot-ics.html">Alerts_ot_ics</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-pastebin.html">Alerts_pastebin</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-phishing.html">Alerts_phishing</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-physical-threats.html">Alerts_physical_threats</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-postman.html">Alerts_postman</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-product-vulnerability.html">Alerts_product_vulnerability</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-ransomware-updates.html">Alerts_ransomware_updates</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-social-media-monitoring.html">Alerts_social_media_monitoring</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-ssl-expiry.html">Alerts_ssl_expiry</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-stealer-logs.html">Alerts_stealer_logs</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-subdomains.html">Alerts_subdomains</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-suspicious-domains.html">Alerts_suspicious_domains</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-telegram-mentions.html">Alerts_telegram_mentions</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-tor-links.html">Alerts_tor_links</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-vulnerability.html">Alerts_vulnerability</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/alerts-web-applications.html">Alerts_web_applications</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyblevisionalerts-cl.html"><code>CybleVisionAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.</p>
+</blockquote>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.3</td>
+<td>12-01-2026</td>
+<td>Updated API endpoint for <strong>CCF Data Connector</strong>.<br/> Minor descriptive changes to <strong>Analytic Rule</strong> and <strong>Playbook</strong>.Updated <strong>Playbook</strong> API Body.</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>14-12-2025</td>
+<td>Added new <strong>CCF data connector</strong>.<br/> Added new <strong>Parsers</strong> to Parse data message of each service.<br/> Added <strong>Analytic Rules</strong> to generate incidents based on Services.</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>10-06-2025</td>
+<td><em>Cyble-ThreatIntelligence-Ingest</em> <strong>Playbook</strong>, including fixes for de-duplication of IoCs, optimized KQL query load, and pagination support.</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>20-05-2025</td>
+<td>Initial Solution Release.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

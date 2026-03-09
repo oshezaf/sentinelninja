@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DataSecurityBehaviors &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>DataSecurityBehaviors</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<blockquote>
+<p><strong>Defender XDR Only:</strong> This table is available in Microsoft Defender XDR advanced hunting but is not available in the Azure Monitor Log Analytics table reference.</p>
+</blockquote>
+<p>Insights about potentially suspicious user behaviors that violate user-defined or default policies configured in the Microsoft Purview suite of solutions</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">XDR</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-datasecuritybehaviors-table">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (26 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/datasecuritybehaviors">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">AccountEmail</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Email address of the account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccountUpn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User principal name (UPN) of the account</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionCategory</td>
+<td style="text-align: left;">enum</td>
+<td style="text-align: left;">Category of action that triggered the event</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of behavior. Refer to the catalog of behaviors detected by Microsoft Purview Insider Risk Management.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActivityCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Total user activity events recorded under this behavior</td>
+</tr>
+<tr>
+<td style="text-align: left;">Application</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Application that performed the recorded action</td>
+</tr>
+<tr>
+<td style="text-align: left;">AttackTechniques</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">MITRE ATT&amp;CK techniques associated with the activity that triggered the behavior. Refer to subtechniques in the insider risk management behavior catalog.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BehaviorId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the behavior</td>
+</tr>
+<tr>
+<td style="text-align: left;">Categories</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of threat indicator or breach activity identified by the behavior</td>
+</tr>
+<tr>
+<td style="text-align: left;">Description</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Description of the behavior</td>
+</tr>
+<tr>
+<td style="text-align: left;">DetectionSource</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Detection technology or sensor that identified the notable component or activity</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceInfo</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of device information for the device involved in this behavior, including device ID, device name, and the number of events in which the device is involved; in JSON array format</td>
+</tr>
+<tr>
+<td style="text-align: left;">EndTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time of the last activity related to the behavior</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsAnomalous</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if this behavior is anomalous (1) or not (0)</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsContentHidden</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if the behavior involves hidden content on a device</td>
+</tr>
+<tr>
+<td style="text-align: left;">PrinterName</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of printers involved in the behavior; in array format</td>
+</tr>
+<tr>
+<td style="text-align: left;">PriorityContentMatchInfo</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of priority content matches identified within this behavior and their associated details. Priority content definitions are done by the admins for each Insider risk management policy. Displayed in JSON array format.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RecipientEmailInfo</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of information about the recipient involved in the behavior, including the email address of the recipient and the number of events in the behavior involving the recipient; in JSON array format</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemovableMediaInfo</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of any removable media involved in the behavior, including the serial number of the removable media device, the manufacturer of the removable media device, and the model of the removable device; in JSON array format</td>
+</tr>
+<tr>
+<td style="text-align: left;">SensitiveInfoTypesInfo</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of sensitive info types detected in the content involved in this behavior, including the unique identifier for the sensitive info type, the name of the sensitive info type, and the number of events in the behavior involving this sensitive info type; in JSON array format</td>
+</tr>
+<tr>
+<td style="text-align: left;">SensitivityLabelInfo</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of sensitivity labels assigned to content involved in this behavior, including the unique identifier for the Microsoft Information Protection sensitivity label assigned to the related content, the name of the sensitivity label, and the number of events in the behavior involving this label; in JSON array format</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServiceSource</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Product or service that identified the behavior</td>
+</tr>
+<tr>
+<td style="text-align: left;">SharepointSiteInfo</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of SharePoint sites involved in this behavior, including the unique identifier for the SharePoint site, the name of the SharePoint site, and the number of events in the behavior involving the SharePoint site; in JSON array format</td>
+</tr>
+<tr>
+<td style="text-align: left;">StartTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time of the first activity related to the behavior</td>
+</tr>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the record was generated or updated</td>
+</tr>
+<tr>
+<td style="text-align: left;">UrlDomainInfo</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of websites or service URLs involved in the behavior, including the name of the URL domain, the direction of data (sent or received from domain), type of URL domain (customer-configured or based on watchlists), and the number of events in the behavior involving the specific domain; in JSON array format</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

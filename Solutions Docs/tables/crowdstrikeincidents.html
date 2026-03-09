@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CrowdStrikeIncidents &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>CrowdStrikeIncidents</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for CrowdStrikeIncidents table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Crowdstrike</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikeincidents">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (34 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikeincidents">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AssignedTo</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID of the user assigned to the incident.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AssignedToName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the user assigned to handle the incident.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Customer ID in the CrowdStrike platform.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Created</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp when the incident was created.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Description</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Detailed description of the incident.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EmailState</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Current state of email notifications for the incident.</td>
+</tr>
+<tr>
+<td style="text-align: left;">End</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp when the incident was closed or resolved.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventsHistogram</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Timeline of events associated with the incident.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FineScore</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Severity score assigned to the incident.</td>
+</tr>
+<tr>
+<td style="text-align: left;">GroupingIds</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of IDs used to group related incidents.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HostIds</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of host IDs involved in the incident.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hosts</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Detailed information about affected hosts.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IncidentId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the incident.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IncidentType</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Numerical identifier for the type of incident.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LmHostIds</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of host IDs associated with Lightweight Mode.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LmHostsCapped</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if the number of Lightweight Mode hosts was capped.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LmraHostIds</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of host IDs associated with LMRA (Lightweight Mode Remote Access).</td>
+</tr>
+<tr>
+<td style="text-align: left;">LmraHostsCapped</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if the number of LMRA hosts was capped.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LmTypes</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Types of Lightweight Mode configurations.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ModifiedTimestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp when the incident was last modified.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Objectives</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of attacker objectives identified in the incident.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">Start</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp when the incident started.</td>
+</tr>
+<tr>
+<td style="text-align: left;">State</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Current state of the incident.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Numerical status code of the incident.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tactics</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of MITRE ATT&amp;CK tactics identified in the incident.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tags</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Custom tags associated with the incident.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Techniques</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of MITRE ATT&amp;CK techniques identified in the incident.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) when the incident data was ingested.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">Users</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of users involved in or affected by the incident.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

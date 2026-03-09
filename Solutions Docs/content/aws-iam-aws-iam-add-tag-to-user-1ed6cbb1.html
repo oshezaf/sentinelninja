@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWS IAM - Add tag to user &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>AWS IAM - Add tag to user</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the following actions: 1. Gets users from the incident. 2. <a href="https://docs.aws.amazon.com/IAM/latest/APIReference/API_TagUser.html">Adds tag</a> to users in AWS (tag key and value are defined during the playbook deployment). 3. Adds information about added tags as a comment to the incident.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/aws-iam.html">AWS_IAM</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS_IAM/Playbooks/Playbooks/AWSIAM-AddTagToUser/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS_IAM/Playbooks/Playbooks/AWSIAM-AddTagToUser/readme.md">Playbooks/AWSIAM-AddTagToUser/readme.md</a></em></p>
+</blockquote>
+<h1>AWSIAM-AddTagToUser</h1>
+<h2>Summary</h2>
+<p>When a new sentinel incident is created, this playbook gets triggered and performs the following actions:</p>
+<ol>
+<li>Gets users from incident.</li>
+<li><a href="https://docs.aws.amazon.com/IAM/latest/APIReference/API_TagUser.html">Adds tag</a> to users in AWS (tag key and value are defined during the playbook deployment).</li>
+<li>Adds information about added tags as a comment to the incident.</li>
+</ol>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS_IAM/Playbooks/Playbooks%5CAWSIAM-AddTagToUser/playbook_screenshot.png" width="50%"/><br></p>
+<h3>Prerequisites</h3>
+<ol>
+<li>Prior to the deployment of this playbook, <a href="../../AWS_IAM_FunctionAppConnector/">AWS IAM Function App Connector</a> needs to be deployed under the same subscription.</li>
+<li>Obtain AWS IAM API credentials. Refer to <a href="../../AWS_IAM_FunctionAppConnector/readme.html">AWS IAM Function App Connector</a> documentation.</li>
+</ol>
+<h3>Deployment instructions</h3>
+<ol>
+<li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
+<li>Fill in the required parameters:<ul>
+<li>Playbook Name: Enter the playbook name here</li>
+<li>Tag Key: Tag key that will be added to user in AWS</li>
+<li>Tag Value: Tag value that will be added to user in AWS</li>
+</ul>
+</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FAWS_IAM%2FPlaybooks%2FPlaybooks%2FAWSIAM-AddTagToUser%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FAWS_IAM%2FPlaybooks%2FPlaybooks%2FAWSIAM-AddTagToUser%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<h3>Post-Deployment instructions</h3>
+<h4>a. Authorize connections</h4>
+<p>Once deployment is complete, authorize each connection.</p>
+<ol>
+<li>Click the Microsoft Sentinel connection resource</li>
+<li>Click edit API connection</li>
+<li>Click Authorize</li>
+<li>Sign in</li>
+<li>Click Save</li>
+<li>Repeat steps for other connections</li>
+</ol>
+<h4>b. Configurations in Sentinel</h4>
+<ol>
+<li>In Microsoft sentinel, analytical rules should be configured to trigger an incident that contains user name in AWS. In the <em>Entity maping</em> section of the analytics rule creation workflow, user name should be mapped to <strong>Name</strong> identitfier of the <strong>Account</strong> entity type. Check the <a href="https://docs.microsoft.com/azure/sentinel/map-data-fields-to-entities">documentation</a> to learn more about mapping entities.</li>
+<li>Configure the automation rules to trigger the playbook. Check the <a href="https://docs.microsoft.com/azure/sentinel/tutorial-respond-threats-playbook">documentation</a> to learn more about automation rules.</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/aws-iam.html">Back to AWS_IAM</a></p>
+</div>
+</body>
+</html>

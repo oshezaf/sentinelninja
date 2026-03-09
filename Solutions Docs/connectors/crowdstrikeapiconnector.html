@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CrowdStrike API Data Connector via Codeless Connector Framework &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>CrowdStrike API Data Connector (via Codeless Connector Framework)</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/Logo/crowdstrike.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>CrowdStrikeAPIConnector</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/ccf.html">CCF</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/CrowdStrikeAPI_ccp/CrowdStrikeAPI_Definition.json">CrowdStrikeAPI_Definition.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Configuration</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/CrowdStrikeAPI_ccp/CrowdStrikeAPI_PollingConfig.json">CrowdStrikeAPI_PollingConfig.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Capabilities</strong></td>
+<td style="text-align: left;"><code>OAuth2</code>, <code>Paging</code>, <code>POST</code>, <code>Nested</code></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.crowdstrike.com/">CrowdStrike Data Connector</a> allows ingesting logs from the CrowdStrike API into Microsoft Sentinel. This connector provides the capability to ingest CrowdStrike <a href="https://falcon.crowdstrike.com/documentation/84/detection-and-prevention-policies-apis#get-alerts">Alerts</a>, <a href="https://falcon.crowdstrike.com/documentation/84/detection-and-prevention-policies-apis#get-detections">Detections</a>, <a href="https://falcon.crowdstrike.com/documentation/84/host-and-host-group-management-apis#get-hosts">Hosts</a>, <a href="https://falcon.crowdstrike.com/documentation/84/cases-apis#get-cases">Cases</a>, and <a href="https://falcon.crowdstrike.com/documentation/84/spotlight-apis#get-vulnerabilities">Vulnerabilities</a> into Microsoft Sentinel. This connector is built on the Microsoft Sentinel Codeless Connector Platform and uses the CrowdStrike API to fetch logs. It supports DCR-based ingestion time transformations so that queries can run more efficiently. Refer to <a href="https://falcon.crowdstrike.com/documentation/page/a2a7fc0e/crowdstrike-oauth2-based-apis">CrowdStrike API documentation</a> for more information.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/crowdstrikealerts.html"><code>CrowdStrikeAlerts</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/crowdstrikecases.html"><code>CrowdStrikeCases</code></a></td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/crowdstrikedetections.html"><code>CrowdStrikeDetections</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/crowdstrikehosts.html"><code>CrowdStrikeHosts</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/crowdstrikevulnerabilities.html"><code>CrowdStrikeVulnerabilities</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): Read and Write permissions are required.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Crowdstrike OAuth2 API Client and Scopes</strong>: <strong>Alerts</strong>, <strong>API Integrations</strong>, <strong>App Logs</strong>, <strong>Cases</strong>, <strong>Correlation Rules</strong>, <strong>Detections</strong>, <strong>Hosts</strong>, <strong>Assets</strong>, <strong>Incidents</strong>, <strong>Quarantined Files</strong>, <strong>Vulnerabilities</strong> are required for REST API. <a href="https://falcon.us-2.crowdstrike.com/documentation/page/a2a7fc0e/crowdstrike-oauth2-based-apis">See the documentation to learn more about API</a>.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Connect CrowdStrike to Microsoft Sentinel</strong></p>
+<p>ℹ️ <strong>Important Notice:</strong> The Incidents API is fully decommissioned. Use the new Cases data type instead.
+To gather data from CrowdStrike, you need to provide the following resources
+<strong>1. Base API URL</strong> - To gather data from CrowdStrike, you'll need the Base API URL.
+<strong>2. Client ID</strong> - To gather data from CrowdStrike, you'll need the Client ID.
+<strong>3. Client Secret</strong> - To gather data from CrowdStrike, you'll need the Client Secret.
+For detailed instructions on retrieving the Base API URL, Client ID, and Client Secret, please refer to the <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/CrowdStrikeAPI_ccp/README.md">Connector Tutorial</a>.
+<strong>Connector Management Interface</strong></p>
+<p>This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.</p>
+<p>📊 <strong>View Existing Collectors</strong>: A management table displays all currently configured data collectors with the following information:
+- <strong>Data Type</strong></p>
+<p>➕ <strong>Add New Collector</strong>: Click the "Add new collector" button to configure a new data collector (see configuration form below).</p>
+<p>🔧 <strong>Manage Collectors</strong>: Use the actions menu to delete or modify existing collectors.</p>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration interface is only available when viewing the connector in the Microsoft Sentinel portal. You cannot configure data collectors through this static documentation.</p>
+</blockquote>
+<p><strong>Configure CrowdStrike API Connection</strong></p>
+<p><em>Connect to CrowdStrike to ingest security data</em></p>
+<p>When you click the "Add Connection" button in the portal, a configuration form will open. You'll need to provide:</p>
+<h4>1. Retrieve API URL</h4>
+<p>Log in to your CrowdStrike Console and navigate to the API section to copy your Base API URL.</p>
+<h4>2. Retrieve Client Credentials</h4>
+<p>Obtain your Client ID and Client Secret from the API credentials section in your CrowdStrike account.</p>
+<ul>
+<li><strong>Base API URL</strong> (required): https://api.us-2.crowdstrike.com</li>
+<li><strong>Client ID</strong> (required): Your Client ID</li>
+<li><strong>Client Secret</strong> (required): Your Client Secret</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration form is only available in the Microsoft Sentinel portal.</p>
+</blockquote>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike Falcon Endpoint Protection\Data Connectors\CrowdStrikeAPI_ccp\README.md">CrowdStrike Falcon Endpoint Protection\Data Connectors\CrowdStrikeAPI_ccp\README.md</a></em></p>
+</blockquote>
+<h1>CrowdStrike Falcon – API Data Connector (CCP Framework)</h1>
+<h2><strong>Summary</strong></h2>
+<p>This Microsoft Sentinel data connector enables ingestion of <strong>security data</strong> from <strong>CrowdStrike Falcon</strong>  Platform. The connector captures alerts, detections, incidents, host information, and vulnerability data from the CrowdStrike Falcon platform, providing comprehensive endpoint protection visibility.</p>
+<p>This solution helps security teams monitor endpoints for threats, track security incidents, and maintain visibility into their security posture by sending normalized security data to <strong>Microsoft Sentinel</strong> in near real-time.</p>
+<hr />
+<h2><strong>Features</strong></h2>
+<ul>
+<li>Connects to the <strong>CrowdStrike Falcon REST API</strong> using OAuth2 authentication.</li>
+<li>Ingests five types of security data into custom Log Analytics tables:</li>
+<li><code>CrowdStrikeAlerts</code> - Security alerts and threat notifications</li>
+<li><code>CrowdStrikeCases</code> - Case management that include security incident and investigations</li>
+<li><code>CrowdStrikeDetections</code> - Threat detections and behavioral analysis</li>
+<li><code>CrowdStrikeIncidents</code>(<strong>Deprecated</strong>) - Security incidents and investigations</li>
+<li><code>CrowdStrikeHosts</code> - Endpoint device information and status</li>
+<li><code>CrowdStrikeVulnerabilities</code> - Vulnerability data from Falcon Spotlight</li>
+<li>Uses secure <strong>OAuth 2.0 Client Credentials</strong> for authentication with automatic token refresh.</li>
+<li>Supports DCR-based ingestion time transformations for optimized query performance.</li>
+<li>Integrates seamlessly with Sentinel analytics, hunting queries, and incident detection.</li>
+</ul>
+<hr />
+<h2><strong>Prerequisites</strong></h2>
+<ol>
+<li>A valid <strong>CrowdStrike Falcon</strong> tenant with administrative access.</li>
+<li>An <strong>API Client</strong> configured in CrowdStrike Falcon with:<br />
+   - <strong>Client ID</strong>
+   - <strong>Client Secret</strong>
+   - <strong>Base URL</strong> (region-specific)</li>
+<li>Appropriate API scopes assigned to the client (see scope requirements below).</li>
+<li>Access to an Azure subscription with <strong>Microsoft Sentinel</strong> enabled and permissions to deploy Data Connectors.</li>
+<li>Permissions to create and configure Data Collection Rules (DCR) in the target workspace.</li>
+</ol>
+<hr />
+<h2><strong>Generating CrowdStrike Falcon API Credentials</strong></h2>
+<h3><strong>1. Access the Falcon Console</strong></h3>
+<ol>
+<li>Sign into the <strong>CrowdStrike Falcon console</strong>.</li>
+<li>Navigate to <strong>Support &amp; Resources</strong> → <strong>API clients and keys</strong>.</li>
+</ol>
+<h3><strong>2. Create API Client</strong></h3>
+<ol>
+<li>Click <strong>Create/Add new API client</strong>.</li>
+<li>Provide a descriptive <strong>name</strong> and <strong>description</strong> for the connector.</li>
+<li>Select the required <strong>scopes</strong> based on the data types you want to ingest:</li>
+</ol>
+<h3><strong>Required API Scopes by Data Type</strong></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Data Type</strong></th>
+<th><strong>CrowdStrike Scope</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alerts</td>
+<td><code>alerts:read</code></td>
+<td>Read access to security alerts</td>
+</tr>
+<tr>
+<td>Cases</td>
+<td><code>cases:read</code></td>
+<td>Read access to case management</td>
+</tr>
+<tr>
+<td>Detections</td>
+<td><code>detects:read</code></td>
+<td>Read access to threat detections</td>
+</tr>
+<tr>
+<td>Hosts</td>
+<td><code>hosts:read</code></td>
+<td>Read access to endpoint device information</td>
+</tr>
+<tr>
+<td>Incidents</td>
+<td><code>incidents:read</code></td>
+<td>Read access to security incidents</td>
+</tr>
+<tr>
+<td>Vulnerabilities</td>
+<td><code>spotlight-vulnerabilities:read</code></td>
+<td>Read access to Falcon Spotlight vulnerability data</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note</strong>: You can grant only the scopes for the data types you need. If you want all data types, grant all scopes listed above.</p>
+<h3><strong>3. Configure API Client</strong></h3>
+<ol>
+<li>After creating the client, note the <strong>Client ID</strong> and <strong>Client Secret</strong> (the secret is displayed only once).</li>
+<li>Identify your <strong>Base URL</strong> based on your CrowdStrike cloud region:</li>
+</ol>
+<h3><strong>Base URLs by Region</strong></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Region</strong></th>
+<th><strong>Base URL</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>US-1</td>
+<td><code>https://api.crowdstrike.com</code></td>
+</tr>
+<tr>
+<td>US-2</td>
+<td><code>https://api.us-2.crowdstrike.com</code></td>
+</tr>
+<tr>
+<td>EU-1</td>
+<td><code>https://api.eu-1.crowdstrike.com</code></td>
+</tr>
+<tr>
+<td>US-GOV-1</td>
+<td><code>https://api.laggar.gcw.crowdstrike.com</code></td>
+</tr>
+</tbody>
+</table>
+<h3><strong>4. Save Credentials</strong></h3>
+<p>Save the following values for connector deployment:
+- <strong>Client ID</strong>
+- <strong>Client Secret</strong>
+- <strong>Base URL</strong> (from the table above)</p>
+<hr />
+<h2><strong>Deployment Parameters</strong></h2>
+<p>When deploying the connector, you'll need to provide:</p>
+<ul>
+<li><strong>Base API URL</strong>: Your region-specific CrowdStrike API endpoint</li>
+<li><strong>Client ID</strong>: The API client identifier from CrowdStrike</li>
+<li><strong>Client Secret</strong>: The API client secret from CrowdStrike</li>
+</ul>
+<h3><strong>Example Configuration</strong></h3>
+<pre><code>Base API URL: https://api.us-2.crowdstrike.com
+Client ID: a1b2c3d4e5f6g7h8i9j0
+Client Secret: [Your secure client secret]
+</code></pre>
+<hr />
+<h2><strong>Deployment Instructions</strong></h2>
+<h3><strong>1. Deploy the Connector</strong></h3>
+<ol>
+<li>Go to <strong>Microsoft Sentinel</strong> → <strong>Data Connectors</strong>.</li>
+<li>Search for "<strong>CrowdStrike API Data Connector (via Codeless Connector Framework)</strong>".</li>
+<li>Click <strong>Open connector page</strong>.</li>
+<li>Under <strong>Configuration</strong>, enter your CrowdStrike credentials:
+   - <strong>Base API URL</strong> (region-specific)
+   - <strong>Client ID</strong>
+   - <strong>Client Secret</strong></li>
+<li>Click <strong>Connect</strong>.</li>
+</ol>
+<h3><strong>2. Verify Connection</strong></h3>
+<ul>
+<li>The connector status should show as <strong>Connected</strong> within a few minutes.</li>
+<li>Data ingestion typically begins within 5-10 minutes of successful connection.</li>
+</ul>
+<hr />
+<h2><strong>Post-Deployment Steps</strong></h2>
+<h3><strong>1. Verify Data Ingestion</strong></h3>
+<p>After deployment, verify that data is flowing into Microsoft Sentinel:</p>
+<ol>
+<li>Go to <strong>Microsoft Sentinel</strong> → <strong>Logs</strong>.</li>
+<li>Run sample queries to check for data in each table:</li>
+</ol>
+<pre><code class="language-kql">// Check CrowdStrike Alerts
+CrowdStrikeAlerts
+| take 10
+
+// Check Crowdstrike Cases
+CrowdStrikeCases
+| take 10
+
+// Check CrowdStrike Detections  
+CrowdStrikeDetections
+| take 10
+
+// Check CrowdStrike Incidents
+CrowdStrikeIncidents
+| take 10
+
+// Check CrowdStrike Hosts
+CrowdStrikeHosts
+| take 10
+
+// Check CrowdStrike Vulnerabilities
+CrowdStrikeVulnerabilities
+| take 10
+</code></pre>
+<h3><strong>2. Monitor Connector Health</strong></h3>
+<ul>
+<li>Check the connector status regularly in the <strong>Data Connectors</strong> page.</li>
+<li>Monitor ingestion metrics and error logs for any issues.</li>
+</ul>
+<hr />
+<h2><strong>Troubleshooting</strong></h2>
+<h3><strong>Common Issues and Solutions</strong></h3>
+<h4><strong>1. Authentication Errors (403 Forbidden)</strong></h4>
+<ul>
+<li><strong>Cause</strong>: Insufficient API scopes or incorrect credentials.</li>
+<li><strong>Solution</strong>: </li>
+<li>Verify the Client ID and Client Secret are correct.</li>
+<li>Ensure all required scopes are granted to the API client.</li>
+<li>Check that the API client is enabled in CrowdStrike.</li>
+</ul>
+<h4><strong>2. No Data Ingestion</strong></h4>
+<ul>
+<li><strong>Cause</strong>: Incorrect Base URL or network connectivity issues.</li>
+<li><strong>Solution</strong>:</li>
+<li>Confirm the Base URL matches your CrowdStrike region.</li>
+<li>Verify outbound connectivity to the CrowdStrike API endpoints.</li>
+<li>Check for any firewall or proxy restrictions.</li>
+</ul>
+<h4><strong>3. Token Expiry Errors</strong></h4>
+<ul>
+<li><strong>Cause</strong>: Normal OAuth2 token lifecycle (tokens expire ~30 minutes).</li>
+<li><strong>Solution</strong>: </li>
+<li>This is expected behavior; the connector automatically refreshes tokens.</li>
+<li>Ensure system time synchronization is accurate.</li>
+<li>Verify continuous outbound access to the token endpoint.</li>
+</ul>
+<h3><strong>Support Resources</strong></h3>
+<ul>
+<li><strong>CrowdStrike API Documentation</strong>: Available in the Falcon console under API documentation</li>
+<li><strong>Microsoft Sentinel Documentation</strong>: <a href="https://docs.microsoft.com/azure/sentinel/">Microsoft Learn - Sentinel Connectors</a></li>
+<li><strong>Connector Logs</strong>: Available in the Azure portal under the data connector monitoring section</li>
+</ul>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

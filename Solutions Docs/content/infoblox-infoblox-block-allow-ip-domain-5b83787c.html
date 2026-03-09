@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infoblox-Block-Allow-IP-Domain &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Infoblox-Block-Allow-IP-Domain</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>The playbook will add/remove IP or Domain value in Named List of Infoblox.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/infoblox.html">Infoblox</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20Block%20Allow%20IP%20Domain/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20Block%20Allow%20IP%20Domain/readme.md">Infoblox Block Allow IP Domain/readme.md</a></em></p>
+</blockquote>
+<h1>Infoblox Block and Allow IP Domain</h1>
+<ul>
+<li><a href="#Summary">Summary</a></li>
+<li><a href="#Prerequisites">Prerequisites</a></li>
+<li><a href="#Deployment-instructions">Deployment instructions</a></li>
+<li><a href="#Post-Deployment-instructions">Post-Deployment instructions</a></li>
+</ul>
+<h2>Summary<a name="Summary"></a></h2>
+<p>The playbook will add/remove IP or Domain value in Named List of Infoblox.</p>
+<h3>Prerequisites<a name="Prerequisites"></a></h3>
+<ol>
+<li>User must have a valid Infoblox API Key.</li>
+<li>Obtain Teams GroupId and ChannelId<ul>
+<li>Create a Team with public channel.</li>
+<li>Click on three dots (...) present on right side of the your newly created teams channel and Get link to the channel.</li>
+<li>Copy the text from the link between /channel and /, decode it using online url decoder and copy it to use as channelId.</li>
+<li>Copy the text of groupId parameter from link to use as groupId.</li>
+</ul>
+</li>
+</ol>
+<h3>Deployment instructions<a name="Deployment-instructions"></a></h3>
+<ol>
+<li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
+<li>Fill in the required parameters:<ul>
+<li>Playbook Name: Enter the playbook name here</li>
+<li>Infoblox API Key: Enter valid value for API Key</li>
+<li>Infoblox Base Url: Enter baseurl for your Infoblox instance (e.g. https://csp.infoblox.com)</li>
+<li>TeamsGroupId: Enter Id of the Teams Group where the adaptive card will be posted</li>
+<li>TeamsChannelId: Enter Id of the Teams Channel where the adaptive card will be posted</li>
+</ul>
+</li>
+</ol>
+<p><a href="https%3A%2F%2Fportal.azure.com%2F%23create%2FMicrosoft.Template%2Furi%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FInfoblox%2FPlaybooks%2FInfoblox%20Block%20Allow%20IP%20Domain%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https%3A%2F%2Fportal.azure.us%2F%23create%2FMicrosoft.Template%2Furi%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FInfoblox%2FPlaybooks%2FInfoblox%20Block%20Allow%20IP%20Domain%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<h3>Post-Deployment instructions<a name="Post-Deployment-instructions"></a></h3>
+<h4>a. Authorize connections</h4>
+<p>Once deployment is complete, authorize connection.</p>
+<ol>
+<li>Go to your logic app → API connections → Select teams connection resource</li>
+<li>Go to General → edit API connection</li>
+<li>Click Authorize</li>
+<li>Sign in</li>
+<li>Click Save</li>
+</ol>
+<h4>b. Get Workflow URL for the playbook</h4>
+<p>Once deployment is complete, get Workflow URL</p>
+<ol>
+<li>Go to your logic app → Overview</li>
+<li>Copy Workflow URL</li>
+</ol>
+<p>This URL can be use to trigger the Logic App directly</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/infoblox.html">Back to Infoblox</a></p>
+</div>
+</body>
+</html>

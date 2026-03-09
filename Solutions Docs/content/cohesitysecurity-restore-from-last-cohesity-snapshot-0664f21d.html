@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restore From Last Cohesity Snapshot &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Restore From Last Cohesity Snapshot</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>This playbook restores the latest good Data Hawk (Helios) snapshot.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/cohesitysecurity.html">CohesitySecurity</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CohesitySecurity/Playbooks/Cohesity_Restore_From_Last_Snapshot/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CohesitySecurity/Playbooks/Cohesity_Restore_From_Last_Snapshot/readme.md">Cohesity_Restore_From_Last_Snapshot/readme.md</a></em></p>
+</blockquote>
+<h2>Summary</h2>
+<p>This playbook restores the latest good Data Hawk (Helios) snapshot. It’s recommended for running by Backup Admins <em>only</em> after they make sure that the existing data is compromised, and rollback to the previous snapshot, even at the expense of data loss, is <em>really required</em>. <strong>Please beware</strong>: It's operable only if you have installed the <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CohesitySecurity/Data%20Connectors/Helios2Sentinel/readme.md">Function Apps</a> and received some incidents that need an action on affected data.</p>
+<h2>Deployment instructions</h2>
+<ol>
+<li>Deploy the playbook by clicking on the "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCohesitySecurity%2FPlaybooks%2FCohesity_Restore_From_Last_Snapshot%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></li>
+<li>Fill in the required parameters:
+* <strong>Playbook Name:</strong> Enter the playbook name here.</li>
+</ol>
+<h2>Post-Deployment instructions</h2>
+<ol>
+<li>
+<p>Make sure the user that runs the playbook has the role <em>Microsoft Sentinel Playbook Operator</em> assigned. To assign the role,
+* Under the <em>Subscriptions</em> tab from the <em>Home</em> page, choose your subscription name.
+* Choose the <em>Access Control (IAM)</em> option from the left pane.
+* Click on <em>Add &gt; Add Role Assignment</em> and add <em>Microsoft Sentinel Playbook Operator</em> to the user.</p>
+</li>
+<li>
+<p>Authorize all connections
+* Go to <em>Logic Apps</em> and choose your playbook
+* In the <em>Development Tools</em> sections select <em>API Connections</em>. In the left pane you'll see the list of connections that you'll need to authorize
+  * Authorize the Azure blob storage connection by selecting it and clicking on <em>General\Edit API Connection</em></p>
+<ul>
+<li>Enter your connection name, storage account and access key. You can find them by selecting your storage account <a href="https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts">here</a> and then choosing <em>Security+networking\Access keys</em>).</li>
+</ul>
+</li>
+<li>
+<p>Grant KeyVault permissions to your playbook
+* Go to <em><a href="https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.KeyVault%2Fvaults">Key vaults</a></em> and choose your keyvault, which starts from <em>cohesitypro</em> and is followed by a sequence of letters and numbers, e.g. <em>cohesityprofnxj32cucakwk</em>.
+* On the right pane, select <em>Access Policies</em> and click <em>+Create</em>.
+* Choose <em>Get</em> permission in the <em>Secret Permissions</em> section and press <em>Next</em>.
+* Enter your playbook name and press <em>Next</em>.
+* Press <em>Next</em> and then <em>Create</em> to finish granting permissions.</p>
+</li>
+<li>
+<p>(<em>Recommendation</em>) Limit access rights to this playbook to only Backup Admins because this playbook rolls back customer data that can result in a loss of important data if used without a good reason.
+* From the Microsoft Sentinel navigation menu, select <em>Settings</em>.
+* In the <em>Settings</em> blade, select the <em>Settings</em> tab and expand <em>Playbook Permissions</em>.
+* Select <em>Configure Permissions</em> to open the <em>Manage Permissions</em> panel.
+* Select the required resource group and click <em>Apply</em>.
+* Select <em>Done</em>.</p>
+</li>
+</ol>
+<h2>Troubleshooting</h2>
+<ol>
+<li>If your API key expired, then you need to replace it with a new one.
+* Create the Cohesity <em>Helios API</em> key:
+  * Go to the Cohesity Helios <a href="https://helios.cohesity.com/#/login">login</a> page.
+  * Enter your credentials and select <em>Log In</em>. The <em>Summary</em> page is displayed.
+  * Navigate to <em>Settings &gt; Access Management</em>. The <em>Users</em> tab is displayed.
+  * Select <em>Add API Key</em>. The API Key Details is displayed.
+  * Enter a name for the API key.
+  * Select <em>Save</em>.
+* Go to <em><a href="https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.KeyVault%2Fvaults">Key vaults</a></em> and choose your keyvault, which starts from <em>cohesitypro</em> and is followed by a sequence of letters and numbers, e.g. <em>cohesityprofnxj32cucakwk</em>.
+  * Assign the <em>ApiKey</em> secret to the <em>API Key</em> value from the previous step. Now your API key is securely saved in the Azure KeyVault.</li>
+<li>If you see the <em>Forbidden</em> error message in the Keyvault block when you run the playbook, you can always authorize it manually.
+* Choose your app in the <a href="https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Logic%2Fworkflows">Logic Apps</a>
+* Authorize your KeyVault connection by selecting it and clicking on <em>General\Edit API Connection</em>
+* Press the <em>Authorize</em> button and select the appropriate account. Enter your key vault name if prompted. You can find your key vault name <a href="https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.KeyVault%2Fvaults">here</a>.</li>
+</ol>
+<p><em>[Content truncated...]</em></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/cohesitysecurity.html">Back to CohesitySecurity</a></p>
+</div>
+</body>
+</html>

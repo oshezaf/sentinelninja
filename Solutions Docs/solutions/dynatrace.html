@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynatrace &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Dynatrace</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/dynatrace.svg" alt="Dynatrace Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Dynatrace</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://www.dynatrace.com/services-support/">https://www.dynatrace.com/services-support/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Dynatrace - microsoftalliances@dynatrace.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-10-18</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2023-10-16</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace">Dynatrace</a></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Review the solution <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/ReleaseNotes.md">Release Notes</a></li>
+</ul>
+<p>Dynatrace is a leading observability platform that provides automatic and intelligent observability at scale for cloud-native and enterprise workloads; with Dynatrace Application Security, your DevSecOps teams can resolve security issues faster, accelerating software delivery.
+Integrating Dynatrace with Microsoft Sentinel enables DevSecOps teams to detect, prioritize, triage, and remediate attacks rapidly. DevSecOps teams benefit from the high-accuracy threat signals Dynatrace surfaces. It helps them avoid time-consuming investigation activities, freeing them up for more critical tasks.
+Microsoft Sentinel data connectors poll Dynatrace for new <a href="https://www.dynatrace.com/platform/application-security/">attacks, vulnerabilities, audit logs</a>, and <a href="https://docs.dynatrace.com/docs/shortlink/davis-ai-landing">problem events</a>.</p>
+<p><strong>Included data connectors:</strong>
+- <strong>Attacks</strong>, Common attacks on application layer vulnerabilities which can be detected and blocked using Dynatrace, like SQL injection, command injection, and JNDI attacks.
+- <strong>Runtime vulnerabilities</strong>, Software vulnerabilities detected throughout all layers of the application stack.
+- <strong>Audit logs</strong>, Security-relevant events for a Dynatrace tenant.
+- <strong>Problems</strong>, AI-powered observability problems raised across cloud and hybrid environments.</p>
+<p><a href="https://www.dynatrace.com/">Learn More about Dynatrace</a> | <a href="https://docs.dynatrace.com/docs">Dynatrace Docs</a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>4 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/dynatraceattacks.html">Dynatrace Attacks</a></li>
+<li><a href="../connectors/dynatraceauditlogs.html">Dynatrace Audit Logs</a></li>
+<li><a href="../connectors/dynatraceproblems.html">Dynatrace Problems</a></li>
+<li><a href="../connectors/dynatraceruntimevulnerabilities.html">Dynatrace Runtime Vulnerabilities</a></li>
+</ul>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>4 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/dynatraceattacks-cl.html"><code>DynatraceAttacks_CL</code></a></td>
+<td><a href="../connectors/dynatraceattacks.html">Dynatrace Attacks</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/dynatraceauditlogs-cl.html"><code>DynatraceAuditLogs_CL</code></a></td>
+<td><a href="../connectors/dynatraceauditlogs.html">Dynatrace Audit Logs</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/dynatraceproblems-cl.html"><code>DynatraceProblems_CL</code></a></td>
+<td><a href="../connectors/dynatraceproblems.html">Dynatrace Problems</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/dynatracesecurityproblems-cl.html"><code>DynatraceSecurityProblems_CL</code></a></td>
+<td><a href="../connectors/dynatraceruntimevulnerabilities.html">Dynatrace Runtime Vulnerabilities</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h3>Internal Tables</h3>
+<p>The following <strong>1 table(s)</strong> are used internally by this solution's content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
+<td>-</td>
+<td>Playbooks</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>16 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/dynatrace-dynatrace-problem-detection-415978ff-074e-4203-824a-b06153d77bf7-a4be516e.html">Dynatrace - Problem detection</a></td>
+<td style="text-align: left;">Informational</td>
+<td style="text-align: left;">DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/dynatraceproblems-cl.html"><code>DynatraceProblems_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/dynatrace-dynatrace-application-security-attack-detection-1b0b2065-8bac-5a00-83c4-1b58f69ac212-bb12d178.html">Dynatrace Application Security - Attack detection</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Execution, Impact, InitialAccess, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/dynatraceattacks-cl.html"><code>DynatraceAttacks_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/dynatrace-dynatrace-application-security-code-level-runtime-vulnerability-detection-305093b4-0fa2-57bc-bced-caea782a6e9c-7ce892bd.html">Dynatrace Application Security - Code-Level runtime vulnerability detection</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/dynatracesecurityproblems-cl.html"><code>DynatraceSecurityProblems_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/dynatrace-dynatrace-application-security-non-critical-runtime-vulnerability-detection-ff0af873-a2f2-4233-8412-0ef4e00b0156-12214a98.html">Dynatrace Application Security - Non-critical runtime vulnerability detection</a></td>
+<td style="text-align: left;">Informational</td>
+<td style="text-align: left;">DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/dynatracesecurityproblems-cl.html"><code>DynatraceSecurityProblems_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/dynatrace-dynatrace-application-security-third-party-runtime-vulnerability-detection-af99b078-124b-543a-9a50-66ef87c09f6a-ea28978d.html">Dynatrace Application Security - Third-Party runtime vulnerability detection</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/dynatracesecurityproblems-cl.html"><code>DynatraceSecurityProblems_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/dynatrace-dynatrace-eddf4fe2.html">Dynatrace</a></td>
+<td style="text-align: left;"><a href="../tables/dynatraceattacks-cl.html"><code>DynatraceAttacks_CL</code></a><br><a href="../tables/dynatraceauditlogs-cl.html"><code>DynatraceAuditLogs_CL</code></a><br><a href="../tables/dynatraceproblems-cl.html"><code>DynatraceProblems_CL</code></a><br><a href="../tables/dynatracesecurityproblems-cl.html"><code>DynatraceSecurityProblems_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/dynatrace-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-4cd7a68f.html">Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence</a></td>
+<td style="text-align: left;">This playbook will add an attackers source ip to Threat Intelligence when a new incident is opened i...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/dynatrace-enrich-dynatrace-application-security-attack-incident-f7a6fb98.html">Enrich Dynatrace Application Security Attack Incident</a></td>
+<td style="text-align: left;">This playbook will enriche Dynatrace Application Security Attack Incidents with additional informati...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/dynatrace-enrich-dynatrace-application-security-attack-with-related-microsoft-defender-xdr-insights-92196b5f.html">Enrich Dynatrace Application Security Attack with related Microsoft Defender XDR insights</a></td>
+<td style="text-align: left;">This playbook will enrich Dynatrace Application Security Attack with related Microsoft Defender XDR ...</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/dynatrace-enrich-dynatrace-application-security-attack-with-related-microsoft-sentinel-security-alerts-55a24730.html">Enrich Dynatrace Application Security Attack with related Microsoft Sentinel Security Alerts</a></td>
+<td style="text-align: left;">This playbook will enrich Dynatrace Application Security Attack with related Microsoft Sentinel Secu...</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/dynatrace-ingest-microsoft-defender-xdr-insights-into-dynatrace-d6ce2895.html">Ingest Microsoft Defender XDR insights into Dynatrace</a></td>
+<td style="text-align: left;">This playbook will ingest Microsoft Defender XDR insights into Dynatrace.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/dynatrace-ingest-microsoft-sentinel-security-alerts-into-dynatrace-c03a9bfe.html">Ingest Microsoft Sentinel Security Alerts into Dynatrace</a></td>
+<td style="text-align: left;">This playbook will ingest Microsoft Sentinel Security Alerts into Dynatrace.</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/dynatraceattacks.html">DynatraceAttacks</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/dynatraceattacks-cl.html"><code>DynatraceAttacks_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/dynatraceauditlogs.html">DynatraceAuditLogs</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/dynatraceauditlogs-cl.html"><code>DynatraceAuditLogs_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/dynatraceproblems.html">DynatraceProblems</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/dynatraceproblems-cl.html"><code>DynatraceProblems_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/dynatracesecurityproblems.html">DynatraceSecurityProblems</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/dynatracesecurityproblems-cl.html"><code>DynatraceSecurityProblems_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.2</td>
+<td>03-05-2024</td>
+<td>Repackaged for parser issue fix on reinstall</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>18-01-2024</td>
+<td>Changes for rebranding from Microsoft 365 Defender to Microsoft Defender XDR,</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Updated user-agent strings used when calling Dynatrace REST API's,</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Added new Entity Mappings to <strong>Analytic Rules</strong></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Aligned Playbook, Data Connector &amp; Workbook version numbers with rest of solution</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>16-10-2023</td>
+<td>Enabled new api paging mode on <strong>Data Connector</strong> to fix issues related to polling Dynatrace REST API's with a large number of results.</td>
+</tr>
+<tr>
+<td>2.0.0</td>
+<td>18-10-2022</td>
+<td>Initial Solution Release.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ Illusive Active Defense &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>⚠️ Illusive Active Defense</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense">Illusive Active Defense</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p><strong>This solution does not include data connectors.</strong></p>
+<p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
+<h2>Content Items</h2>
+<p>This solution includes <strong>2 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">2</td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/illusive-active-defense-illusive-sentinelincident-enrichment-dde1bbd9.html">Illusive-SentinelIncident-Enrichment</a> ⚠️</td>
+<td style="text-align: left;"><p align="left"> <img width="300" height="100" src="./Images/logo.jpg"> </a> </p></td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/illusive-active-defense-illusive-sentinelincident-response-793f8fd5.html">Illusive-SentinelIncident-Response</a> ⚠️</td>
+<td style="text-align: left;"><p align="left"> <img width="300" height="100" src="./Images/logo.jpg"> </a> </p></td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.</p>
+</blockquote>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/README.md">Illusive Active Defense/README.md</a></em></p>
+</blockquote>
+<p><a href="./Images/logo.jpg">image</a></p>
+<p align="left">  
+<img width="300" height="100" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Images/logo.jpg"> </a>
+</p>
+
+<h1>Illusive Active Defense Sentinel Solution</h1>
+<p>Instructions for configuring, running, and using the Illusive Active Defense Sentinel solution.</p>
+<h1>Table of Contents</h1>
+<ol>
+<li><a href="#executive_summary">Executive summary</a></li>
+<li><a href="#BasicRequirements">Basic requirements</a></li>
+<li><a href="#workflowlink">Workflow</a></li>
+<li><a href="#Sentinel_Workspace">Locate the Sentinel workspace</a></li>
+<li><a href="#azureappsetup">Azure application setup</a><ul>
+<li><a href="#Register_Azure_App">Register an Azure app</a></li>
+<li><a href="#Collect_App_Information">Collect app information</a></li>
+<li><a href="#Generate_ClientSecret">Generate and save a Client Secret</a></li>
+<li><a href="#Add_UserImpersonation">Add the User Impersonation API permission</a></li>
+</ul>
+</li>
+<li><a href="#Illusive_API_Key">Generate an Illusive API key</a></li>
+<li><a href="#SIEM_Server">Configure Illusive to send logs to a Linux-based syslog server</a></li>
+<li><a href="#Deploy_Playbooks">Deploy solution package or deploy playbooks</a></li>
+<li><a href="#Illusive_analytic_rule">Configure the Illusive analytic rule</a></li>
+<li><a href="#Access_playbook">Access and view the playbook</a></li>
+</ol>
+<p><a name="executive_summary"></p>
+<h1>Executive summary</h1>
+<p>Configure Sentinel and load custom playbooks to have Illusive open Sentinel incidents, populate them with Illusive-based information, and automate incident response.</p>
+<p>This solution contains the following components:</p>
+<ul>
+<li><strong>Incident Enrichment playbook</strong> – leverages Sentinel analytic rules to discover Illusive-based alerts and report the associated data and forensics as Sentinel incident sets.<br />
+  Use this playbook to enrich Sentinel security incidents originating from Illusive with Illusive incident and forensics information. Illusive continues to enrich relevant Sentinel incidents as new events are detected. This is done using the Illusive API resource.</li>
+<li>
+<p><strong>Incident Response playbook</strong> – leverages CrowdStrike or Microsoft Defender for Endpoint integration to automate incident response when specified Illusive incidents are discovered.<br />
+ Use this playbook to quickly stop or slow down ransomware attacks and critical incidents detected by Illusive in your organization. Upon detection, Sentinel is instructed to use the triggering process information reported by Illusive remove or kill the process. If the triggering process cannot be killed, Sentinel is instructed to isolate the host. These capabilities are available for organizations with CrowdStrike Falcon or Microsoft Defender for Endpoint.</p>
+</li>
+<li>
+<p><strong>Analytic Rule</strong> - Trigger a Sentinel alert upon detecting an Illusive event and create a Sentinel incident. The Sentinel incident will correspond to the Illusive incident and will include all subsequent associated Illusive events. The Illusive solution playbooks require the analytic rule to operate.</p>
+</li>
+</ul>
+<p><a name="BasicRequirements"></p>
+<h2>Basic requirements (set up in advance)</h2>
+<p>To use the Illusive Active Defense solution, you must have the following:</p>
+<p><em>[Content truncated...]</em></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

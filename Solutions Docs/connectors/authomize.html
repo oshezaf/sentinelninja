@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ Authomize Data Connector &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>⚠️ Authomize Data Connector</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Authomize.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>Authomize</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Authomize</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/authomize.html">Authomize</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/rest-api.html">REST API</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Authomize/Data%20Connectors/AuthomizeCustomConnector.json">AuthomizeCustomConnector.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Connector definition requires workspace key (SharedKey pattern)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+</tbody>
+</table>
+<p>The Authomize Data Connector provides the capability to ingest custom log types from Authomize into Microsoft Sentinel.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/authomize-v2-cl.html"><code>Authomize_v2_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Include custom pre-requisites if the connectivity requires - else delete customs</strong>: Description for any custom pre-requisite</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Locate your Authomize API key</strong></p>
+<p>Follow the setup instructions <a href="https://github.com/authomize/Open-ITDR/blob/main/Open-Connectors/Platform/Azure-Sentinel/Data%20Connectors/readme.md">located under Data Connectors for Authomize</a>.</p>
+<p><strong>2. Deploy the Authomize data connector using the setup instructions.</strong></p>
+<p>Follow the Instructions on <a href="https://github.com/authomize/Open-ITDR/blob/main/Open-Connectors/Platform/Azure-Sentinel/Data%20Connectors/readme.md">deploying the data connector to ingest data from Authomize</a>.</p>
+<p><strong>3. Finalize your setup</strong></p>
+<p>Validate that your script is running. Simple instructions are located under the <a href="https://github.com/authomize/Open-ITDR/blob/main/Open-Connectors/Platform/Azure-Sentinel/Data%20Connectors/readme.md">Authomize Data Connector area</a>.</p>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Authomize\Data Connectors\readme.md">Authomize\Data Connectors\readme.md</a></em></p>
+</blockquote>
+<h2>Instructions for Quick Deployment</h2>
+<p>You will need the following before you start this installation:
+- Access to a keyvault with the ability to deploy secrets, note that we suggest authomize as the name, but you can use an existing vault or create a new one with a different name.
+- Access to App Registration under AAD (For more secure method you can optionally setup an ID for the function you deploy)
+- Access to be able to create azure app functions from your azure portal
+- Access to an azure storage account - by default this applocation will create a small table using AzureWebJobsStorage connection string</p>
+<h3>Get the Tokens to be stored in Secrets</h3>
+<ol>
+<li>Get an Authomize Token from your tenant<ul>
+<li><code>authomizeToken</code> - this is the Token generated in your Authomize tenant. Go to the configurations page, click API Tokens and select a Platform Token. Save this token in a safe place to be used later, ensure you save it as pure text with no formatting.</li>
+</ul>
+</li>
+<li>Go to your Logs Analytics Workspace<ul>
+<li><code>CustomerID</code> - this is the workspace id in your Logs analytics workspace.</li>
+<li><code>sharedKey</code> - this is the Logs analytics workspace. Go to the configurations page.</li>
+</ul>
+</li>
+</ol>
+<h3>Creating Secrets</h3>
+<ol>
+<li>
+<p>You will now create the secrets that the Authomize connector for Azure Sentinel will use.</p>
+<ul>
+<li>Create a secret for the following tokens inserting the value that you saved previously. Use the exact naming convention as outlined here:<ul>
+<li><code>authomizeToken</code></li>
+<li><code>CustomerID</code></li>
+<li><code>sharedKey</code></li>
+</ul>
+</li>
+<li>
+<p>This is an Example using Azure CLI to create or you can do this from within the Portal
+ ```
+      ** First create the vault to use
+      az keyvault create --name authomize --resource-group <your resource group name> --location <your location eg eastus></p>
+<p>** Now create each of the secrets
+  az keyvault secret set --vault-name authomize --name authomizeToken --value "<Enter the Token You Saved from above>"
+  az keyvault secret set --vault-name authomize --name CustomerID --value "<Enter the ID You Saved from above>"
+  az keyvault secret set --vault-name authomize --name sharedKey --value "<Enter the shared key You Saved from above>"
+     ```
+- NOTE: Please remember to delete and do not store any of these values anywhere else.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>At this point, please get your vault URI, it will be needed later in the configuration of the application. You can find it under overview within the keyvault that you created. Here is an example <code>https://authomizexxx.vaultxxx.azure.net/</code></p>
+</li>
+</ol>
+<h3>Creating your Application within Azure AD</h3>
+<ol>
+<li>Go to Microsoft Azure Default Directory and Create an App Registration<ul>
+<li>On the left menu click on App registrations</li>
+<li>Click on <code>New Registration</code></li>
+<li>Give it a meaning name such as AuthomizeAccess</li>
+<li>Leave the default settings unless you are sure about changing, then click <code>Register</code></li>
+<li>Click on <code>Add a certificate or secret</code></li>
+<li>Click <code>New Client Secrets</code></li>
+<li>Give a meaningful description and leave defaults</li>
+<li>Copy the <code>Value</code> and leave in safe place as we will need this later</li>
+</ul>
+</li>
+</ol>
+<h3>Ensure new principal has access to Kay Vauly Secrets</h3>
+<ol>
+<li>Go to the Key Vault you created previously with the secrets<ul>
+<li>Once you have access click on the left <code>Access policies</code></li>
+<li>Click <code>create</code></li>
+<li>Under Secret permissions click <code>Get</code> and <code>List</code> then click <code>next</code></li>
+<li>Find your service principal you defind before e.g. AuthomizeAccess</li>
+<li>Then click <code>next</code> and <code>Create</code> when you get to the review screen</li>
+</ul>
+</li>
+</ol>
+<h3>Deploy the Azure Function app</h3>
+<ol>
+<li>
+<p>We will do this through the cli, you will need access to the authomizeconnector.zip file and authorization to deploy</p>
+<ul>
+<li>go to the directory where you have stored the authomizeconnector.zip file</li>
+<li>Login to you tenant and ensure you have a consumption plan created for </li>
+<li>Run the following commands to setup and deploy the application
+ ```
+ **Note: we are using a consumption plan in this example. I have assumed names for --name and --storage-account</li>
+</ul>
+<p>az functionapp create \
+      --resource-group <your resource-group> \
+      --name authomize-sentinel-connect \
+      --storage-account authomize \
+      --consumption-plan-location "EastUS" \
+      --runtime python \
+      --runtime-version 3.10 \
+      --functions-version 4 \
+      --os-type Linux</p>
+<p>** From the directory wehere the ZIP file is located run
+ az webapp deployment source config-zip \
+      --resource-group <your resource-group>  \
+      --name authomize-sentinel-connect \
+      --src ./authomizeconnector.zip</p>
+<p><code>2. Create the Function App configurations using the CLI (you can do this in the portal if you wish)
+ - You'll need to collect the following information some of this you have already collected
+      - Tenant ID: collect the Tenant ID, you can find this in the overview of the default Azure AD environment 
+      - Application (Client) ID: this can be found by searching for the app registration you did before, find the display name and it is listed to the right
+      - Client Secret: this is the</code>Value<code>that you created before with the app registration. Look at the above section "Creating your Application within Azure AD", you would have saved these values to be used later
+ - Following are the CLI commands to be used to create the configuration for the Function App</code>
+ az functionapp config appsettings set \
+      --name authomize-sentinel-connect \
+      --resource-group keyvaulttests \
+      --settings AZURE_CLIENT_ID="<Application ID as indicated above>"
+ az functionapp config appsettings set \
+      --name authomize-sentinel-connect \ 
+      --resource-group keyvaulttests \
+      --settings AZURE_TENANT_ID="<Tenant ID as stated above>"
+ az functionapp config appsettings set \
+      --name authomize-sentinel-connect \
+      --resource-group keyvaulttests \
+      --settings AZURE_CLIENT_SECRET="<Client Secret from above>"   <br />
+ ```</p>
+<ul>
+<li>Finally we need to set the URI for the Vault you created previously: 
+ <code>az functionapp config appsettings set --name authomize-sentinel-connect --resource-group keyvaulttests --settings VAULT_URL="https://exampleVault.vault.azure.net/"</code></li>
+</ul>
+</li>
+<li>
+<p>Special call out note - PLEASE READ</p>
+<ul>
+<li>This application will use the <code>AzureWebJobsStorage</code> setting which is created by default. The application will create 1 table with the name of <code>authomizeDate</code>. The application will check every time it runs to see if this table exists and will only store a date here. Every time the application executes it will update the date. It uses this date to know when it last collected data from Authomize. If this date is deleted, the application on its next run will collect all open Incidents until the current date. You can also manually create the date time and field yourself if for instance you only want to have the last 3 months of data collected from Authomize.</li>
+</ul>
+</li>
+</ol>
+<h2>Care and Feeding</h2>
+<ol>
+<li>
+<p>Monitoring the application and expected behavior</p>
+<ul>
+<li>
+<p>Viewing the connector monitor screen you should see an output similar to this. This is an example of a single execution with no data being collected:
+ <code>2023-09-05 01:50:00.852       Table already exists                              Error
+ 2023-09-05 01:50:00.873       Entity already exists                             Error
+ 2023-09-05 01:50:00.979       Status: Started processing.                       Information
+ 2023-09-05 01:50:00.979       INFO: --Processing-- [1]                          Information
+ 2023-09-05 01:50:01.391       Status: Stopped processing.                       Information
+ 2023-09-05 01:50:01.391       INFO: No data to send, skipping process steps.    Information</code></p>
+</li>
+<li>
+<p>NOTE: the Error statements above are by design and is part of the checking process for the Table and Fields.</p>
+</li>
+<li>
+<p>When there is data to be processed, you will see multiple INFO statements like the following:
+ <code>2023-09-04T20:50:04Z   [Information]   Data sent to Sentinel.
+ 2023-09-04T20:50:04Z   [Information]   INFO: --Processing-- [4]
+ 2023-09-04T20:50:05Z   [Information]   Data sent to Sentinel.
+ 2023-09-04T20:50:05Z   [Information]   INFO: --Processing-- [5]
+ 2023-09-04T20:50:05Z   [Information]   Data sent to Sentinel.
+ 2023-09-04T20:50:05Z   [Information]   INFO: --Processing-- [6]
+ 2023-09-04T20:50:06Z   [Information]   Data sent to Sentinel.
+ 2023-09-04T20:50:06Z   [Information]   INFO: --Processing-- [7]
+ 2023-09-04T20:50:07Z   [Information]   Data sent to Sentinel.
+ 2023-09-04T20:50:07Z   [Information]   INFO: --Processing-- [8]
+ 2023-09-04T20:50:07Z   [Information]   Data sent to Sentinel.
+ 2023-09-04T20:50:07Z   [Information]   INFO: --Processing-- [9]</code></p>
+</li>
+<li>
+<p>Regularly check the logs for errors or issues, such as certificates expiring or being deleted from any of the systems being used.</p>
+</li>
+</ul>
+</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

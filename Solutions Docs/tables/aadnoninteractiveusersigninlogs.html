@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AADNonInteractiveUserSignInLogs &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>AADNonInteractiveUserSignInLogs</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for AADNonInteractiveUserSignInLogs table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Entra</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadnoninteractiveusersigninlogs">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (83 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadnoninteractiveusersigninlogs">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AADTenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The AADTenantId GUID that's associated with the logs</td>
+</tr>
+<tr>
+<td style="text-align: left;">Agent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of agentic sign-in.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AlternateSignInName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Provides the on-premises UPN of the user sign-ing into Azure AD.e.g. Phone number sign-in.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AppDisplayName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">App name displayed in the Azure portal.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AppId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique GUID representing the app ID in the Azure Active Directory.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AppliedEventListeners</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Detailed information about the applied event listeners or listeners that are triggered by the corresponding events in an authentication activity. It's called appliedEventListeners in ALP and MSGraph, but use Authentication Events to match name on UX.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AppOwnerTenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The tenant identifier of the owenr of the application in Azure Active Directory.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationContextClassReferences</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The authentication contexts of the sign-in.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationDetails</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A record of each step of authentication undertaken in the sign-in.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationMethodsUsed</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">List of authentication methods used.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationProcessingDetails</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Provides the details associated with authentication processor.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationProtocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Lists the protocol type or grant type used in the authentication. The possible values are: none, oAuth2, ropc, wsFederation, saml20, deviceCode, unknownFutureValue. For authentications that use protocols other than the possible values listed, the protocol type is listed as none.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationRequirement</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of authentication required for the sign-in. If set to multiFactorAuthentication, an MFA step was required. If set to singleFactorAuthentication, no MFA was required.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationRequirementPolicies</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Set of CA policies that apply to this sign-in, each as CA: policy name, and/or MFA: Per-user.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AutonomousSystemNumber</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Autonomous System Number for the network.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Category</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Category of the sign-in event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClientAppUsed</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details outlining app auth used (Legacy vs non Legacy) Eg: Modern Browser, Native App, Exchange Activty Sync and Older Clients.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClientCredentialType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of client credential used. Examples include client assertion, client secret, etc.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConditionalAccessPolicies</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of the conditional access policies being applied for the sign-in.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConditionalAccessStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Status of all the conditionalAccess policies related to the sign-in.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID to provide sign-in trail.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CreatedDateTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Datetime of the sign-in activity.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CrossTenantAccessType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Describes the type of cross-tenant access used by the actor to access the resource. Possible values are: none, b2bCollaboration, b2bDirectConnect, microsoftSupport, serviceProvider, unknownFutureValue. If the sign in did not cross tenant boundaries, the value is none.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceDetail</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of the device used for the sign-in.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DurationMs</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The duration of the operation in milliseconds.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FederatedCredentialId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Federated Credential Id.</td>
+</tr>
+<tr>
+<td style="text-align: left;">GlobalSecureAccessIpAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Global secure IP address that user signed in from.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HomeTenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The home tenant ID for cross-tenant scenarios.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HomeTenantName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The tenant name of the external tenant who homes the entitity taking action in the customer's tenant.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Id</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique ID representing the sign-in activity.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Identity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The identity from the token that was presented when you made the request. It can be a user account, system account, or service principal.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IncomingTokenType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of token utilized to signIn (examples: primary refresh token, saml assertion).</td>
+</tr>
+<tr>
+<td style="text-align: left;">IPAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of the client used to sign in.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsInteractive</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if a sign-in is interactive or not.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsRisky</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if a sign-in is considered risky or not.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsTenantRestricted</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if a signIn is under a tenant restrictions policy or not.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsThroughGlobalSecureAccess</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Displays whether or not a user came through Global Secure Access service or not.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Level</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The severity level of the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Location</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The region of the resource emitting the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LocationDetails</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of the sign-in location.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MfaDetail</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of the Multi-factor authentication.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkLocationDetails</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Provides the details associated with authentication processor.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">For sign-ins, this value is always Sign-in activity.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The REST API version that's requested by the client.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OriginalRequestId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The request id of the first request in the authentication sequence.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OriginalTransferMethod</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Transfer method used to initiate a session throughout all subsequent requests.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessingTimeInMs</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Request processing time in milliseconds in AD STS.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceDisplayName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the resource that the user signed into.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceGroup</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Resource group for the logs.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceIdentity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID of the resource that the user signed into.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceOwnerTenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The tenant identifier of the owner of the resource referenced in the sign in.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceServicePrincipalId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Service Principal Id of the resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceTenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The resource tenant ID for cross-tenant scenarios.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResultDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Provides the error description for the sign-in operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResultSignature</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Contains the error code, if any, for the sign-in operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResultType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The result of the sign-in operation can be Success or Failure.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RiskDetail</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Risky user state details.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RiskEventTypes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The list of risk event types associated with the sign-in.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RiskEventTypes_V2</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The list of risk event types associated with the sign-in. These are strings.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RiskLevelAggregated</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Aggregated risk level.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RiskLevelDuringSignIn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Risk level during sign-in.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RiskState</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Risky user state.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServicePrincipalId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID of the service principal who initiated the sign-in.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SessionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Id of the session that was generated during the signIn.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SessionLifetimePolicies</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Policies and settings that applied to the sign-in that enforced or revoked a session lifetime.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SignInEventTypes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The types that are associated with the sign-in. Examples include "interactive", "refreshToken", "managedIdentity", "continuousAccessEvaluation" and many more.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SignInIdentifierType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of sign in identifier. Possible values are: userPrincipalName, phoneNumber, proxyAddress, qrCode, onPremisesUserPrincipalName, unknownFutureValue.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of the sign-in status.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The date and time of the event in UTC.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TokenIssuerName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the identity provider (e.g. sts.microsoft.com ).</td>
+</tr>
+<tr>
+<td style="text-align: left;">TokenIssuerType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of identityProvider (Azure AD, AD Federation Services).</td>
+</tr>
+<tr>
+<td style="text-align: left;">TokenProtectionStatusDetails</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Token protection creates a cryptographically secure tie between the token and the device it's issued to. This field indicates whether the signin token was bound to the device or not.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">UniqueTokenIdentifier</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique token identifier for the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserAgent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User Agent for the sign-in.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserDisplayName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Display name of the user that initiated the sign-in.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID of the user that initiated the sign-in.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserPrincipalName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User principal name of the user that initiated the sign-in.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifies whether the user is a member or guest in the tenant. Possible values are: member, guest, unknownFutureValue.</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (12)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a></li>
+<li><a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a></li>
+<li><a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a></li>
+<li><a href="../solutions/dpdp-compliance.html">DPDP Compliance</a></li>
+<li><a href="../solutions/falconfriday.html">FalconFriday</a></li>
+<li><a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a></li>
+<li><a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a></li>
+<li><a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a></li>
+<li><a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a></li>
+<li><a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></li>
+<li><a href="../solutions/threat-intelligence.html">Threat Intelligence</a></li>
+<li><a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/azureactivedirectory.html">Microsoft Entra ID</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Content Items Using This Table (20)</h2>
+<h3>Analytic Rules (12)</h3>
+<p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990-c6cdb809.html">Log4j vulnerability exploit aka Log4Shell IP IOC</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/apache-log4j-vulnerability-detection-user-agent-search-for-log4j-exploitation-attempt-29283b22-a1c0-4d16-b0a9-3460b655a46a-d67cde36.html">User agent search for log4j exploitation attempt</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/falconfriday.html">FalconFriday</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-microsoft-entra-id-rare-useragent-app-sign-in-87d5cd18-211d-4fd4-9b86-65d23fed87ea-f1fc55a9.html">Microsoft Entra ID Rare UserAgent App Sign-in</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-microsoft-entra-id-useragent-os-missmatch-6a638d80-f6b2-473b-9087-3cac78a84b40-e6a7d745.html">Microsoft Entra ID UserAgent OS Missmatch</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-identitylogonevents-a7cd18cd-1503-47ec-8dca-65d750540637-db253b1e.html">Lumen TI IPAddress in IdentityLogonEvents</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-anomalous-sign-in-location-by-user-account-and-authenticating-application-7cb8f77d-c52f-4e46-b82f-3cf2e106224a-c5368fb1.html">Anomalous sign-in location by user account and authenticating application</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-external-guest-invitation-followed-by-microsoft-entra-id-powershell-signin-acc4c247-aaf7-494b-b5da-17f18863878a-4c59ca84.html">External guest invitation followed by Microsoft Entra ID PowerShell signin</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-password-spray-attack-against-microsoft-entra-id-seamless-sso-fb7ca1c9-e14c-40a3-856e-28f3c14ea1ba-0de0d722.html">Password spray attack against Microsoft Entra ID Seamless SSO</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/threat-intelligence.html">Threat Intelligence</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-ti-map-ip-entity-to-signinlogs-f2eb15bd-8a88-4b24-9281-e133edfba315-bfc1548d.html">TI Map IP Entity to SigninLogs</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-ti-map-email-entity-to-signinlogs-30fa312c-31eb-43d8-b0cc-bcbdfb360822-7878c95a.html">TI map Email entity to SigninLogs</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-ip-entity-to-signinlogs-edfc9d8a-6fb3-49e2-80c9-fea15d941799-78ede5a3.html">TI Map IP Entity to SigninLogs</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-email-entity-to-signinlogs-4b5a7f32-899d-4d22-8de2-0ec90b911a72-aaf060bd.html">TI map Email entity to SigninLogs</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks (8)</h3>
+<p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/apache-log4j-vulnerability-detection-log4jpostcompromisehunting-8811d292.html">Log4jPostCompromiseHunting</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a>:</strong> <code>OperationName in "Add member to role,Add user,AzureFirewallIDSLog,NetworkSecurityGroupEvents,Reset user password,Update user"</code><br><code>OperationName contains "PIM"</code><br><code>OperationName contains "create"</code><br><code>OperationName contains "delete"</code><br><code>OperationName contains "lockbox"</code><br><code>OperationName contains "remove"</code><br><code>OperationName contains "update"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.html">AzureSecurityBenchmark</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.html">CybersecurityMaturityModelCertification_CMMCV2</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/dpdp-compliance.html">DPDP Compliance</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/dpdp-compliance-dpdpcompliance-18571e87.html">DPDPCompliance</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/gdpr-compliance-&amp;-data-security-gdprcomplianceanddatasecurity-a0958a9a.html">GDPRComplianceAndDataSecurity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-azureactivedirectorysignins-97204667.html">AzureActiveDirectorySignins</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.html">InsiderRiskManagement</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/team-cymru-scout-teamcymruscout-b64c6ed4.html">TeamCymruScout</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Parsers Using This Table (1)</h2>
+<h3>ASIM Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimauthenticationaadnoninteractiveusersigninlogs.html">ASimAuthenticationAADNonInteractiveUserSignInLogs</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;">Microsoft Entra ID</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Selection Criteria Summary (1 criteria, 1 total references)</h2>
+<p>References by type: 0 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>OperationName in "Add member to role,Add user,AzureFirewallIDSLog,NetworkSecurityGroupEvents,Reset user password,Update user"</code><br><code>OperationName contains "PIM"</code><br><code>OperationName contains "create"</code><br><code>OperationName contains "delete"</code><br><code>OperationName contains "lockbox"</code><br><code>OperationName contains "remove"</code><br><code>OperationName contains "update"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>OperationName</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>Add member to role</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Add user</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AzureFirewallIDSLog</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>NetworkSecurityGroupEvents</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Reset user password</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Update user</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains PIM</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains create</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains delete</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains lockbox</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains remove</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains update</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

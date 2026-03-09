@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JoeSandbox &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>JoeSandbox</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/joesandbox.svg" alt="JoeSandbox Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Stefan Bühlmann</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://www.joesecurity.org/support">https://www.joesecurity.org/support</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Stefan Bühlmann</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2025-09-12</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JoeSandbox">JoeSandbox</a></td>
+</tr>
+</tbody>
+</table>
+<p>The JoeSandbox Connector for Microsoft Sentinel enhances security operations by providing enriched threat intelligence, enabling faster and more informed responses to security incidents. The integration has two main parts: first, URL detonation and enrichment, which provides detailed insights into suspicious URLs. Second, it automatically generates and feeds threat intelligence for all submissions to JoeSandbox, improving threat detection and incident response in Sentinel. This seamless integration empowers teams to proactively address emerging threats.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/joesandbox.html">JoeSandboxThreatIntelligence</a></li>
+</ul>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a></td>
+<td><a href="../connectors/joesandbox.html">JoeSandboxThreatIntelligence</a></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>2 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">2</td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/joesandbox-joesandbox-file-analyis-aa5d7e19.html">JoeSandbox File Analyis</a></td>
+<td style="text-align: left;">Submits a attachment or set of attachment associated with an office 365 email to JoeSandbox for Anal...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/joesandbox-joesandbox-url-analyis-9f551431.html">JoeSandbox URL Analyis</a></td>
+<td style="text-align: left;">Submits a url or set of urls associated with an incident to JoeSandbox for Analyis.</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JoeSandbox/README.md">JoeSandbox/README.md</a></em></p>
+</blockquote>
+<h1>JoeSandbox Threat Intelligence Feed and Enrichment Integration - Microsoft Sentinel</h1>
+<p><strong>Latest Version:</strong> <strong>1.0.0</strong> - <strong>Release Date:</strong> <strong>15/09/2025</strong></p>
+<h2>Overview</h2>
+<h2>Requirements</h2>
+<ul>
+<li>Microsoft Sentinel.</li>
+<li>JoeSandbox API Key.</li>
+<li>
+<p>Microsoft Azure
+  1. Azure functions with Flex Consumption plan.
+     Reference: https://learn.microsoft.com/en-us/azure/azure-functions/flex-consumption-plan</p>
+<p><strong>Note:</strong> Flex Consumption plans are not available in all regions, please check if the region you are deploying the function is supported, if not we suggest you to deploy the function app with premium plan.
+ Reference: https://learn.microsoft.com/en-us/azure/azure-functions/flex-consumption-how-to?tabs=azure-cli%2Cvs-code-publish&amp;pivots=programming-language-python#view-currently-supported-regions
+  3. Azure functions Premium plan.
+ Reference: https://learn.microsoft.com/en-us/azure/azure-functions/functions-premium-plan
+  4. Azure Logic App with Consumption plan.
+ Reference: https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-pricing#consumption-multitenant
+  5. Azure storage with Standard general-purpose v2.</p>
+</li>
+</ul>
+<h2>Microsoft Sentinel</h2>
+<h3>Creating Application for API Access</h3>
+<ul>
+<li>Open <a href="https://portal.azure.com">https://portal.azure.com/</a> and search <code>Microsoft Entra ID</code> service.</li>
+</ul>
+<p><img alt="01" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JoeSandbox/Images/01.png" /></p>
+<ul>
+<li>Click <code>Add-&gt;App registration</code>.</li>
+</ul>
+<p><img alt="02a" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JoeSandbox/Images/02a.png" /></p>
+<ul>
+<li>Enter the name of application and select supported account types and click on <code>Register</code>.</li>
+</ul>
+<p><img alt="02" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JoeSandbox/Images/02.png" /></p>
+<ul>
+<li>In the application overview you can see <code>Application Name</code>, <code>Application ID</code> and <code>Tenant ID</code>.</li>
+</ul>
+<p><img alt="03" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JoeSandbox/Images/03.png" /></p>
+<ul>
+<li>After creating the application, we need to set API permissions for connector. For this purpose,</li>
+<li>Click <code>Manage-&gt;API permissions</code> tab</li>
+<li>Click <code>Microsoft Graph</code> button</li>
+<li>Search <code>indicator</code> and click on the <code>ThreatIndicators.ReadWrite.OwnedBy</code>, click <code>Add permissions</code> button below.</li>
+<li>Click on <code>Grant admin consent</code></li>
+</ul>
+<p><img alt="app_per" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JoeSandbox/Images/app_per.png" /> </p>
+<ul>
+<li>We need secrets to access programmatically. For creating secrets</li>
+<li>Click <code>Manage-&gt;Certificates &amp; secrets</code> tab</li>
+<li>Click <code>Client secrets</code> tab</li>
+<li>Click <code>New client secret</code> button</li>
+<li>Enter description and set expiration date for secret</li>
+</ul>
+<p><img alt="10" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JoeSandbox/Images/10.png" /></p>
+<ul>
+<li>Use Secret <code>Value</code> to configure connector.</li>
+</ul>
+<p><img alt="11" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JoeSandbox/Images/11.png" /></p>
+<h2>Provide Permission To App Created Above</h2>
+<ul>
+<li>Open <a href="https://portal.azure.com">https://portal.azure.com/</a> and search <code>Microsoft Sentinel</code> service.</li>
+</ul>
+<p><em>[Content truncated...]</em></p>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.0</td>
+<td>15-09-2025</td>
+<td>Initial Solution Release</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

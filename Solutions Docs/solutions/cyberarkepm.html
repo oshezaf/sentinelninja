@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CyberArkEPM &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>CyberArkEPM</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CyberArk_Logo.svg" alt="CyberArkEPM Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">CyberArk Support</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://www.cyberark.com/services-support/technical-support-contact/">https://www.cyberark.com/services-support/technical-support-contact/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">CyberArk Business Development - business_development@cyberark.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-04-10</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkEPM">CyberArkEPM</a></td>
+</tr>
+</tbody>
+</table>
+<p>Endpoint Privilege Manager, a critical and foundational endpoint control addresses the underlying weaknesses of endpoint defenses against a privileged attacker and helps enterprises defend against these attacks.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/cyberarkepm.html">CyberArkEPM</a> 🔶</li>
+</ul>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/cyberarkepm-cl.html"><code>CyberArkEPM_CL</code></a> 🔶</td>
+<td><a href="../connectors/cyberarkepm.html">CyberArkEPM</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>22 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/cyberarkepm-cyberarkepm-attack-attempt-not-blocked-8e8978a2-9188-4187-8909-5ea00507bf16-2c52bf85.html">CyberArkEPM - Attack attempt not blocked</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/cyberarkepm-cl.html"><code>CyberArkEPM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyberarkepm-cyberarkepm-msbuild-usage-as-lolbin-a11bf869-458e-49fd-be03-58021b14be15-c30da3a6.html">CyberArkEPM - MSBuild usage as LOLBin</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/cyberarkepm-cl.html"><code>CyberArkEPM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyberarkepm-cyberarkepm-multiple-attack-types-c02f96b4-057b-4e63-87af-6376ef7a081b-c13c5274.html">CyberArkEPM - Multiple attack types</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/cyberarkepm-cl.html"><code>CyberArkEPM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyberarkepm-cyberarkepm-possible-execution-of-powershell-empire-eddfd1fd-71df-4cc3-b050-287643bee398-2d5da046.html">CyberArkEPM - Possible execution of Powershell Empire</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/cyberarkepm-cl.html"><code>CyberArkEPM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyberarkepm-cyberarkepm-process-started-from-different-locations-0d4e62da-0a64-4532-b93e-28cd2940c300-6e1ef9fe.html">CyberArkEPM - Process started from different locations</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Execution, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/cyberarkepm-cl.html"><code>CyberArkEPM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyberarkepm-cyberarkepm-renamed-windows-binary-9281b7cc-8f05-45a9-bf10-17fb29492a84-2d034aad.html">CyberArkEPM - Renamed Windows binary</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Execution, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/cyberarkepm-cl.html"><code>CyberArkEPM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyberarkepm-cyberarkepm-uncommon-windows-process-started-from-system-folder-16b940d2-aaf8-4eaa-a5e1-05df5f5c3d43-515a91a8.html">CyberArkEPM - Uncommon Windows process started from System folder</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Execution, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/cyberarkepm-cl.html"><code>CyberArkEPM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyberarkepm-cyberarkepm-uncommon-process-internet-access-9d0d44ab-54dc-472a-9931-53521e888932-7cd557dd.html">CyberArkEPM - Uncommon process Internet access</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Execution, DefenseEvasion, CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/cyberarkepm-cl.html"><code>CyberArkEPM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyberarkepm-cyberarkepm-unexpected-executable-extension-911d5b75-a1ce-4f13-a839-9c2474768696-814c115f.html">CyberArkEPM - Unexpected executable extension</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Execution, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/cyberarkepm-cl.html"><code>CyberArkEPM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyberarkepm-cyberarkepm-unexpected-executable-location-c1fcbbd7-74f8-4f32-8116-0a533ebd3878-f588775e.html">CyberArkEPM - Unexpected executable location</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Execution, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/cyberarkepm-cl.html"><code>CyberArkEPM_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/cyberarkepm-cyberarkepm-elevation-requests-20fc7ee2-5387-4c4c-8819-77fb7bfb8d2a-c48d1704.html">CyberArkEPM - Elevation requests</a></td>
+<td style="text-align: left;">Execution, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/cyberarkepm-cl.html"><code>CyberArkEPM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyberarkepm-cyberarkepm-powershell-downloads-576cac40-d6f5-4ef9-9c3d-013b94656bea-5c113d34.html">CyberArkEPM - Powershell downloads</a></td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/cyberarkepm-cl.html"><code>CyberArkEPM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyberarkepm-cyberarkepm-powershell-scripts-execution-parameters-f1490e77-2a5e-4f07-afd9-c2bb20e26d30-cce84b88.html">CyberArkEPM - Powershell scripts execution parameters</a></td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/cyberarkepm-cl.html"><code>CyberArkEPM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyberarkepm-cyberarkepm-process-hash-changed-8d72be65-d837-4e86-bca8-4a30e6834a22-71d80861.html">CyberArkEPM - Process hash changed</a></td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/cyberarkepm-cl.html"><code>CyberArkEPM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyberarkepm-cyberarkepm-processes-run-as-admin-e96de960-f4d7-49a3-8de7-4f5b7e8537cf-6d23b2f4.html">CyberArkEPM - Processes run as admin</a></td>
+<td style="text-align: left;">Execution, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/cyberarkepm-cl.html"><code>CyberArkEPM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyberarkepm-cyberarkepm-processes-with-internet-access-attempts-cff4d318-eaec-43c9-8c3e-84f74c789b98-7c6ad7ed.html">CyberArkEPM - Processes with Internet access attempts</a></td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/cyberarkepm-cl.html"><code>CyberArkEPM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyberarkepm-cyberarkepm-rare-process-run-by-users-9cf63647-4e05-47cc-90ac-4a17cfd06a05-59b01a72.html">CyberArkEPM - Rare process run by users</a></td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/cyberarkepm-cl.html"><code>CyberArkEPM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyberarkepm-cyberarkepm-rare-process-vendors-37031fed-f7cb-45fc-a1c2-e2eab46cbba2-6a23417c.html">CyberArkEPM - Rare process vendors</a></td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/cyberarkepm-cl.html"><code>CyberArkEPM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyberarkepm-cyberarkepm-scripts-executed-on-hosts-bd8511dd-ee8f-4c76-a9c8-b8f263ec7355-53f78481.html">CyberArkEPM - Scripts executed on hosts</a></td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/cyberarkepm-cl.html"><code>CyberArkEPM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyberarkepm-cyberarkepm-suspicious-activity-attempts-e60cf50c-3ae0-44ac-9de1-ea13886973b8-c068e0ec.html">CyberArkEPM - Suspicious activity attempts</a></td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/cyberarkepm-cl.html"><code>CyberArkEPM_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/cyberarkepm-cyberarkepm-34ce07fb.html">CyberArkEPM</a></td>
+<td style="text-align: left;"><a href="../tables/cyberarkepm-cl.html"><code>CyberArkEPM_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cyberarkepm.html">CyberArkEPM</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cyberarkepm-cl.html"><code>CyberArkEPM_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.0</td>
+<td>27-07-2023</td>
+<td>Updated solution to fix deployment validations</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>28-04-2025</td>
+<td>Updated deployment instructions to use Python 3.10 version</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

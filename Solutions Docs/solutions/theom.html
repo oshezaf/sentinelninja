@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Theom &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Theom</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/theom-logo.svg" alt="Theom Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Theom</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://www.theom.ai">https://www.theom.ai</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-11-04</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Theom">Theom</a></td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://www.theom.ai/">Theom</a> for Microsoft Sentinel helps you prevent data breaches in the cloud by enabling your Microsoft Sentinel instance to receive critical alerts on data security and access from your Theom environment.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution has a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>a. <a href="https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api">Azure Monitor HTTP Data Collector API</a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/theom.html">Theom</a> 🔶</li>
+</ul>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/theomalerts-cl.html"><code>TheomAlerts_CL</code></a> 🔶</td>
+<td><a href="../connectors/theom.html">Theom</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>21 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">20</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/theom-theom-critical-data-in-api-headers-or-body-2ef36aaa-ec4a-473a-9734-f364ce8868f8-cfa35fd5.html">Theom - Critical data in API headers or body</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/theomalerts-cl.html"><code>TheomAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/theom-theom-dark-data-with-large-fin-value-545fdcc7-2123-4b8a-baf6-409f29aad4b1-d3ac84c1.html">Theom - Dark Data with large fin value</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/theomalerts-cl.html"><code>TheomAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/theom-theom-dev-secrets-exposed-65200844-e161-47a7-a103-f61f7e3afe30-0b5176f7.html">Theom - Dev secrets exposed</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/theomalerts-cl.html"><code>TheomAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/theom-theom-dev-secrets-unencrypted-f2490f5b-269c-471d-9ff4-475f62ea498e-0d064e9a.html">Theom - Dev secrets unencrypted</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/theomalerts-cl.html"><code>TheomAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/theom-theom-financial-data-exposed-0cead100-f6ca-4cbb-989d-424d20705f30-0ec9c0b5.html">Theom - Financial data exposed</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/theomalerts-cl.html"><code>TheomAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/theom-theom-financial-data-unencrypted-b568d2fb-b73c-4e6a-88db-2093457712af-2c572113.html">Theom - Financial data unencrypted</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/theomalerts-cl.html"><code>TheomAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/theom-theom-healthcare-data-exposed-078b5614-54c7-41a6-8289-5b5870e4c0f9-1c69eb26.html">Theom - Healthcare data exposed</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/theomalerts-cl.html"><code>TheomAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/theom-theom-healthcare-data-unencrypted-fb1b0deb-2a8f-4d8d-8d9d-0a8d327442e7-ca3fa626.html">Theom - Healthcare data unencrypted</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/theomalerts-cl.html"><code>TheomAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/theom-theom-least-priv-large-value-shadow-db-67b9ff50-5393-49d5-b66f-05b33e2f35d2-1d84a45c.html">Theom - Least priv large value shadow DB</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/theomalerts-cl.html"><code>TheomAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/theom-theom-national-ids-exposed-db95655e-bf5c-4c38-9676-501ec1878d4e-30ca4a92.html">Theom - National IDs exposed</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/theomalerts-cl.html"><code>TheomAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/theom-theom-national-ids-unencrypted-a655f6d1-4ffa-4bc9-8b5d-2ec31cad09d4-140ab1cf.html">Theom - National IDs unencrypted</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/theomalerts-cl.html"><code>TheomAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/theom-theom-overprovisioned-roles-shadow-db-fb7769d0-e622-4479-95b4-f6266a5b41e2-a34b9dc4.html">Theom - Overprovisioned Roles Shadow DB</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Collection, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/theomalerts-cl.html"><code>TheomAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/theom-theom-shadow-db-large-datastore-value-7cf83fce-276a-4b12-a876-7b1bc0683cd6-916b6a77.html">Theom - Shadow DB large datastore value</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/theomalerts-cl.html"><code>TheomAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/theom-theom-shadow-db-with-atypical-accesses-02bff937-ca52-4f52-a9cd-b826f8602694-dab12592.html">Theom - Shadow DB with atypical accesses</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Collection, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/theomalerts-cl.html"><code>TheomAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/theom-theom-unencrypted-public-data-stores-6b93d8b1-40cf-4973-adaa-6f240df21ff1-b4ea40eb.html">Theom - Unencrypted public data stores</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/theomalerts-cl.html"><code>TheomAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/theom-theom-critical-risks-bb9051ef-0e72-4758-a143-80c25ee452f0-ab20eb06.html">Theom Critical Risks</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Collection, CommandAndControl, CredentialAccess, DefenseEvasion, Discovery, Exfiltration, Impact, Reconnaissance</td>
+<td style="text-align: left;"><a href="../tables/theomalerts-cl.html"><code>TheomAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/theom-theom-high-risks-74b80987-0a62-448c-8779-47b02e17d3cf-8429ba18.html">Theom High Risks</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Collection, CommandAndControl, CredentialAccess, DefenseEvasion, Discovery, Exfiltration, Impact, Reconnaissance</td>
+<td style="text-align: left;"><a href="../tables/theomalerts-cl.html"><code>TheomAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/theom-theom-insights-d200da84-0191-44ce-ad9e-b85e64c84c89-16ac91f8.html">Theom Insights</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Collection, CommandAndControl, CredentialAccess, DefenseEvasion, Discovery, Exfiltration, Impact, Reconnaissance</td>
+<td style="text-align: left;"><a href="../tables/theomalerts-cl.html"><code>TheomAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/theom-theom-low-risks-cf7fb616-ac80-40ce-ad18-aa18912811f8-c7fb6a79.html">Theom Low Risks</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Collection, CommandAndControl, CredentialAccess, DefenseEvasion, Discovery, Exfiltration, Impact, Reconnaissance</td>
+<td style="text-align: left;"><a href="../tables/theomalerts-cl.html"><code>TheomAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/theom-theom-medium-risks-4cb34832-f73a-49f2-8d38-c2d135c5440b-2fc7b8c0.html">Theom Medium Risks</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Collection, CommandAndControl, CredentialAccess, DefenseEvasion, Discovery, Exfiltration, Impact, Reconnaissance</td>
+<td style="text-align: left;"><a href="../tables/theomalerts-cl.html"><code>TheomAlerts_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/theom-theom-71349edc.html">Theom</a></td>
+<td style="text-align: left;"><a href="../tables/theomalerts-cl.html"><code>TheomAlerts_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.0</td>
+<td>04-12-2023</td>
+<td>Updated all <strong>Analytical Rule</strong>  with entity mappings</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

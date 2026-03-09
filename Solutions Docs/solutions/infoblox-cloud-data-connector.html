@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infoblox Cloud Data Connector &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Infoblox Cloud Data Connector</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/infoblox_logo.svg" alt="Infoblox Cloud Data Connector Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Infoblox</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.infoblox.com/">https://support.infoblox.com/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2021-10-20</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20Cloud%20Data%20Connector">Infoblox Cloud Data Connector</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pre-requisites</strong></td>
+<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.infoblox.com/">Infoblox</a> Cloud solution allows you to easily connect your Infoblox BloxOne data with Microsoft Sentinel. By connecting your logs to Microsoft Sentinel, you can take advantage of search &amp; correlation, alerting, and threat intelligence enrichment for each log.</p>
+<p>This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation.</p>
+<p><strong>NOTE:</strong> Microsoft recommends installation of CEF via AMA Connector. The existing connectors were deprecated on <strong>Aug 31, 2024.</strong></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#pre-requisites">Pre-requisites</a></li>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Pre-requisites</h2>
+<p>This solution depends on <strong>1 other solution(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong> (plus 1 discovered⚠️):</p>
+<ul>
+<li><a href="../connectors/infobloxclouddataconnector.html">[Deprecated] Infoblox Cloud Data Connector via Legacy Agent</a> ⚠️</li>
+<li><a href="../connectors/infobloxclouddataconnectorama.html">[Deprecated] Infoblox Cloud Data Connector via AMA</a></li>
+</ul>
+<p>Connectors from dependency solutions:</p>
+<ul>
+<li><a href="../connectors/cef.html">Common Event Format (CEF)</a> <em>(dependency on <a href="common-event-format.html">Common Event Format</a>)</em></li>
+<li><a href="../connectors/cefama.html">Common Event Format (CEF) via AMA</a> <em>(dependency on <a href="common-event-format.html">Common Event Format</a>)</em></li>
+</ul>
+<p><em>⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.</em></p>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>3 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+<td><a href="../connectors/cef.html">Common Event Format (CEF)</a> (dependency), <a href="../connectors/cefama.html">Common Event Format (CEF) via AMA</a> (dependency), <a href="../connectors/infobloxclouddataconnectorama.html">[Deprecated] Infoblox Cloud Data Connector via AMA</a>, <a href="../connectors/infobloxclouddataconnector.html">[Deprecated] Infoblox Cloud Data Connector via Legacy Agent</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+<td>-</td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a></td>
+<td>-</td>
+<td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>21 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">11</td>
+</tr>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-cloud-data-connector-infoblox-data-exfiltration-attack-8db2b374-0337-49bd-94c9-cfbf8e5d83ad-0a635c49.html">Infoblox - Data Exfiltration Attack</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-cloud-data-connector-infoblox-high-threat-level-query-not-blocked-detected-dc7af829-d716-4774-9d6f-03d9aa7c27a4-fa962d5e.html">Infoblox - High Threat Level Query Not Blocked Detected</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-cloud-data-connector-infoblox-many-high-threat-level-queries-from-single-host-detected-3822b794-fa89-4420-aad6-0e1a2307f419-c7bc74ac.html">Infoblox - Many High Threat Level Queries From Single Host Detected</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-cloud-data-connector-infoblox-many-high-threat-level-single-query-detected-99278700-79ca-4b0f-b416-bf57ec699e1a-857f6b94.html">Infoblox - Many High Threat Level Single Query Detected</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-cloud-data-connector-infoblox-many-nxdomain-dns-responses-detected-b2f34315-9065-488e-88d0-a171d2b0da8e-1198d7a0.html">Infoblox - Many NXDOMAIN DNS Responses Detected</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-cloud-data-connector-infoblox-ti-commonsecuritylog-match-found-malwarec2-5b0864a9-4577-4087-b9fa-de3e14a8a999-339e0057.html">Infoblox - TI - CommonSecurityLog Match Found - MalwareC2</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a><br><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-cloud-data-connector-infoblox-ti-infobloxcdc-match-found-lookalike-domains-568730be-b39d-45e3-a392-941e00837d52-07dc8d1e.html">Infoblox - TI - InfobloxCDC Match Found - Lookalike Domains</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a><br><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-cloud-data-connector-infoblox-ti-syslog-match-found-url-28ee3c2b-eb4b-44de-a71e-e462843fea72-5ddcadfd.html">Infoblox - TI - Syslog Match Found - URL</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a><br><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-cloud-data-connector-infobloxcdcb1tdworkbook-a058ef8d.html">InfobloxCDCB1TDWorkbook</a></td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-cloud-data-connector-infoblox-import-aiscomm-weekly-dd357716.html">Infoblox Import AISCOMM Weekly</a></td>
+<td style="text-align: left;">Leverages the Infoblox TIDE API to automatically import threat indicators into the ThreatIntelligenc...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-cloud-data-connector-infoblox-import-emails-weekly-d5f265d1.html">Infoblox Import Emails Weekly</a></td>
+<td style="text-align: left;">Leverages the Infoblox TIDE API to automatically import threat indicators into the ThreatIntelligenc...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-cloud-data-connector-infoblox-import-hashes-weekly-b1fa5dae.html">Infoblox Import Hashes Weekly</a></td>
+<td style="text-align: left;">Leverages the Infoblox TIDE API to automatically import threat indicators into the ThreatIntelligenc...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-cloud-data-connector-infoblox-import-hosts-daily-lookalike-domains-90f3b4ed.html">Infoblox Import Hosts Daily Lookalike Domains</a></td>
+<td style="text-align: left;">Leverages the Infoblox TIDE API to automatically import threat indicators into the ThreatIntelligenc...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-cloud-data-connector-infoblox-import-hosts-daily-malwarec2dga-2525a945.html">Infoblox Import Hosts Daily MalwareC2DGA</a></td>
+<td style="text-align: left;">Leverages the Infoblox TIDE API to automatically import threat indicators into the ThreatIntelligenc...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-cloud-data-connector-infoblox-import-hosts-daily-phishing-3a3444e1.html">Infoblox Import Hosts Daily Phishing</a></td>
+<td style="text-align: left;">Leverages the Infoblox TIDE API to automatically import threat indicators into the ThreatIntelligenc...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-cloud-data-connector-infoblox-import-hosts-hourly-2e66b1c8.html">Infoblox Import Hosts Hourly</a></td>
+<td style="text-align: left;">Leverages the Infoblox TIDE API to automatically import threat indicators into the ThreatIntelligenc...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-cloud-data-connector-infoblox-import-ips-hourly-5801ea64.html">Infoblox Import IPs Hourly</a></td>
+<td style="text-align: left;">Leverages the Infoblox TIDE API to automatically import threat indicators into the ThreatIntelligenc...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-cloud-data-connector-infoblox-import-urls-hourly-7a0063c2.html">Infoblox Import URLs Hourly</a></td>
+<td style="text-align: left;">Leverages the Infoblox TIDE API to automatically import threat indicators into the ThreatIntelligenc...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-cloud-data-connector-infoblox-incident-enrichment-domains-d0ecf1f5.html">Infoblox Incident Enrichment Domains</a></td>
+<td style="text-align: left;">Leverages the Infoblox TIDE API to enrich Microsoft Sentinel incidents with detailed TIDE data. This...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-cloud-data-connector-infoblox-incident-send-email-428d5589.html">Infoblox Incident Send Email</a></td>
+<td style="text-align: left;">Sends a detailed email when an incident occurs. Optionally enriches an applicable entity within the ...</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/infobloxcdc.html">InfobloxCDC</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.5</td>
+<td>06-01-2025</td>
+<td>Removed Deprecated <strong>Data Connector</strong></td>
+</tr>
+<tr>
+<td>3.0.4</td>
+<td>12-07-2024</td>
+<td>Deprecating data connectors</td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>30-04-2024</td>
+<td>Updated package for parser issue fix while reinstall</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>05-03-2024</td>
+<td>Updated InfobloxCDC parser to manually parse with extract() rather than dynamically due to slowness</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>11-09-2023</td>
+<td>Addition of new Infoblox Cloud Data Connector AMA <strong>Data Connector</strong></td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>01-08-2023</td>
+<td>Updated Infoblox logo, <strong>Analytic Rules</strong> Optimization updates. 5 new rules,<strong>Playbooks</strong> 11 new playbooks</td>
+</tr>
+<tr>
+<td>2.0.10</td>
+<td>01-06-2023</td>
+<td>Bug fixes, Documentation updates</td>
+</tr>
+<tr>
+<td>1.0.0</td>
+<td>01-04-2021</td>
+<td>Initial Solution Release</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

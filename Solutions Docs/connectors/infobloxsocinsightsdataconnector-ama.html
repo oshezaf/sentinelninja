@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recommended Infoblox SOC Insight Data Connector via AMA &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>[Recommended] Infoblox SOC Insight Data Connector via AMA</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/infoblox_logo.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>InfobloxSOCInsightsDataConnector_AMA</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Infoblox</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/infoblox.html">Infoblox</a>, <a href="../solutions/infoblox-soc-insights.html">Infoblox SOC Insights</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/ama.html">AMA</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Data%20Connectors/InfobloxSOCInsights/InfobloxSOCInsightsDataConnector_AMA.json">InfobloxSOCInsightsDataConnector_AMA.json</a></td>
+</tr>
+</tbody>
+</table>
+<p>The Infoblox SOC Insight Data Connector allows you to easily connect your Infoblox BloxOne SOC Insight data with Microsoft Sentinel. By connecting your logs to Microsoft Sentinel, you can take advantage of search &amp; correlation, alerting, and threat intelligence enrichment for each log. </p>
+<p>This data connector ingests Infoblox SOC Insight CDC logs into your Log Analytics Workspace using the new Azure Monitor Agent. Learn more about ingesting using the new Azure Monitor Agent <a href="https://learn.microsoft.com/azure/sentinel/connect-cef-ama">here</a>. <strong>Microsoft recommends using this Data Connector.</strong></p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+<td style="text-align: left;"><code>DeviceEventClassID == "BloxOne-InsightsNotification-Log"</code><br><code>DeviceProduct == "Data Connector"</code><br><code>DeviceVendor == "Infoblox"</code></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong></p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Workspace Keys</strong></p>
+<p>In order to use the playbooks as part of this solution, find your <strong>Workspace ID</strong> and <strong>Workspace Primary Key</strong> below for your convenience.
+- <strong>Workspace ID</strong>: <code>WorkspaceId</code></p>
+<blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
+- <strong>Workspace Key</strong>: <code>PrimaryKey</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+<p><strong>2. Parsers</strong></p>
+<blockquote>
+<p>This data connector depends on a parser based on a Kusto Function to work as expected called <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20SOC%20Insights/Parsers/InfobloxCDC_SOCInsights.yaml"><strong>InfobloxCDC_SOCInsights</strong></a> which is deployed with the Microsoft Sentinel Solution.</p>
+</blockquote>
+<p><strong>3. SOC Insights</strong></p>
+<blockquote>
+<p>This data connector assumes you have access to Infoblox BloxOne Threat Defense SOC Insights. You can find more information about SOC Insights <a href="https://docs.infoblox.com/space/BloxOneThreatDefense/501514252/SOC+Insights"><strong>here</strong></a>.</p>
+</blockquote>
+<p><strong>4. Infoblox Cloud Data Connector</strong></p>
+<blockquote>
+<p>This data connector assumes an Infoblox Data Connector host has already been created and configured in the Infoblox Cloud Services Portal (CSP). As the <a href="https://docs.infoblox.com/display/BloxOneThreatDefense/Deploying+the+Data+Connector+Solution"><strong>Infoblox Data Connector</strong></a> is a feature of BloxOne Threat Defense, access to an appropriate BloxOne Threat Defense subscription is required. See this <a href="https://www.infoblox.com/wp-content/uploads/infoblox-deployment-guide-data-connector.pdf"><strong>quick-start guide</strong></a> for more information and licensing requirements.
+<strong>Follow the steps below to configure this data connector</strong></p>
+</blockquote>
+<p><strong>A. Configure the Common Event Format (CEF) via AMA data connector</strong></p>
+<p><em>Note: CEF logs are collected only from Linux Agents</em></p>
+<ol>
+<li>
+<p>Navigate to your <strong>Microsoft Sentinel workspace &gt; Data connectors</strong> blade.</p>
+</li>
+<li>
+<p>Search for the <strong>Common Event Format (CEF) via AMA</strong> data connector and open it.</p>
+</li>
+<li>
+<p>Ensure there is no existing DCR configured to collect required facility of logs as it may cause log duplication. Create a new <strong>DCR (Data Collection Rule)</strong>.</p>
+<p><em>Note: It is recommended to install the AMA agent v1.27 at minimum. <a href="https://learn.microsoft.com/azure/azure-monitor/agents/azure-monitor-agent-manage?tabs=azure-portal">Learn more</a> and ensure there is no duplicate DCR as it can cause log duplication.</em></p>
+</li>
+<li>
+<p>Run the command provided in the <strong>Common Event Format (CEF) via AMA</strong> data connector page to configure the CEF collector on the machine.</p>
+</li>
+</ol>
+<p><strong>B. Within the Infoblox Cloud Services Portal, configure Infoblox BloxOne to send CEF Syslog data to the Infoblox Cloud Data Connector to forward to the Syslog agent</strong></p>
+<p>Follow the steps below to configure the Infoblox CDC to send BloxOne data to Microsoft Sentinel via the Linux Syslog agent.
+1. Navigate to <strong>Manage &gt; Data Connector</strong>.
+2. Click the <strong>Destination Configuration</strong> tab at the top.
+3. Click <strong>Create &gt; Syslog</strong>. 
+ - <strong>Name</strong>: Give the new Destination a meaningful <strong>name</strong>, such as <strong>Microsoft-Sentinel-Destination</strong>.
+ - <strong>Description</strong>: Optionally give it a meaningful <strong>description</strong>.
+ - <strong>State</strong>: Set the state to <strong>Enabled</strong>.
+ - <strong>Format</strong>: Set the format to <strong>CEF</strong>.
+ - <strong>FQDN/IP</strong>: Enter the IP address of the Linux device on which the Linux agent is installed.
+ - <strong>Port</strong>: Leave the port number at <strong>514</strong>.
+ - <strong>Protocol</strong>: Select desired protocol and CA certificate if applicable.
+ - Click <strong>Save &amp; Close</strong>.
+4. Click the <strong>Traffic Flow Configuration</strong> tab at the top.
+5. Click <strong>Create</strong>.
+ - <strong>Name</strong>: Give the new Traffic Flow a meaningful <strong>name</strong>, such as <strong>Microsoft-Sentinel-Flow</strong>.
+ - <strong>Description</strong>: Optionally give it a meaningful <strong>description</strong>. 
+ - <strong>State</strong>: Set the state to <strong>Enabled</strong>. 
+ - Expand the <strong>Service Instance</strong> section. 
+    - <strong>Service Instance</strong>: Select your desired Service Instance for which the Data Connector service is enabled. 
+ - Expand the <strong>Source Configuration</strong> section.<br />
+    - <strong>Source</strong>: Select <strong>BloxOne Cloud Source</strong>. 
+    - Select the <strong>Internal Notifications</strong> Log Type.
+ - Expand the <strong>Destination Configuration</strong> section.<br />
+    - Select the <strong>Destination</strong> you just created. 
+ - Click <strong>Save &amp; Close</strong>. 
+6. Allow the configuration some time to activate.</p>
+<p><strong>C. Validate connection</strong></p>
+<p>Follow the instructions to validate your connectivity:</p>
+<p>Open Log Analytics to check if the logs are received using the CommonSecurityLog schema.</p>
+<p>It may take about 20 minutes until the connection streams data to your workspace.</p>
+<p>If the logs are not received, run the following connectivity validation script:</p>
+<ol>
+<li>
+<p>Make sure that you have Python on your machine using the following command: python -version</p>
+</li>
+<li>
+<p>You must have elevated permissions (sudo) on your machine
+  - <strong>Run the following command to validate your connectivity:</strong>: <code>sudo wget -O Sentinel_AMA_troubleshoot.py https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/DataConnectors/Syslog/Sentinel_AMA_troubleshoot.py&amp;&amp;sudo python Sentinel_AMA_troubleshoot.py --cef</code></p>
+</li>
+</ol>
+<p><strong>2. Secure your machine</strong></p>
+<p>Make sure to configure the machine's security according to your organization's security policy</p>
+<p><a href="https://aka.ms/SecureCEF">Learn more &gt;</a></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

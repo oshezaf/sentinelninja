@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>GitHub</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/GitHub.svg" alt="GitHub Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.1.3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2021-10-18</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub">GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://github.com/">GitHub</a> Solution for Microsoft Sentinel enables you to easily ingest events and logs from GitHub to Microsoft Sentinel using GitHub audit log API and  webhooks. This enables you to view and analyze this data in your workbooks, query it to create custom alerts, and incorporate it to improve your investigation process, giving you more insight into your platform security.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong> </p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<ol>
+<li>
+<p><a href="https://docs.microsoft.com/azure/sentinel/create-codeless-connector?tabs=deploy-via-arm-template%2Cconnect-via-the-azure-portal">Codeless Connector Framework (CCF) (used in GitHub Enterprise Audit Log data connector)</a> </p>
+</li>
+<li>
+<p><a href="https://azure.microsoft.com/services/functions/#overview">Azure Functions </a></p>
+</li>
+</ol>
+<p><span style='color:red; font-weight:bold;'>NOTE</span>: Microsoft recommends installation of "GitHubAuditDefinitionV2" (via Codeless Connector Framework). This connector is build on the Codeless Connector Framework (CCF), which uses the Log Ingestion API, which replaces ingestion via the <a href='https://aka.ms/Sentinel-Logs_migration' style='color:#1890F1;'>deprecated HTTP Data Collector API</a>. CCF-based data connectors also support <a href='https://aka.ms/Sentinel-DCR_Overview' style='color:#1890F1;'>Data Collection Rules</a> (DCRs) offering transformations and enrichment.</p>
+
+<p><span style='color:red; font-weight:bold;'>Important</span>: While the updated connector(s) can coexist with their legacy versions, running them together will result in duplicated data ingestion. You can disable the older versions of these connectors to avoid duplication of data..</p>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>3 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/githubauditdefinitionv2.html">GitHub Enterprise Audit Log (via Codeless Connector Framework)</a></li>
+<li><a href="../connectors/githubecauditlogpolling.html">[Deprecated] GitHub Enterprise Audit Log</a></li>
+<li><a href="../connectors/githubwebhook.html">GitHub (using Webhooks)</a> 🔶</li>
+</ul>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>6 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/githubauditlogpolling-cl.html"><code>GitHubAuditLogPolling_CL</code></a></td>
+<td><a href="../connectors/githubecauditlogpolling.html">[Deprecated] GitHub Enterprise Audit Log</a></td>
+<td>Analytics, Hunting</td>
+</tr>
+<tr>
+<td><a href="../tables/githubauditlogsv2-cl.html"><code>GitHubAuditLogsV2_CL</code></a></td>
+<td><a href="../connectors/githubauditdefinitionv2.html">GitHub Enterprise Audit Log (via Codeless Connector Framework)</a>, <a href="../connectors/githubecauditlogpolling.html">[Deprecated] GitHub Enterprise Audit Log</a></td>
+<td>Analytics, Hunting</td>
+</tr>
+<tr>
+<td><a href="../tables/githubrepologs-cl.html"><code>GitHubRepoLogs_CL</code></a></td>
+<td>-</td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/github-cl.html"><code>GitHub_CL</code></a></td>
+<td>-</td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/impacteduser.html"><code>ImpactedUser</code></a></td>
+<td><a href="../connectors/githubecauditlogpolling.html">[Deprecated] GitHub Enterprise Audit Log</a></td>
+<td>Analytics, Hunting</td>
+</tr>
+<tr>
+<td><a href="../tables/githubscanaudit-cl.html"><code>githubscanaudit_CL</code></a> 🔶</td>
+<td><a href="../connectors/githubwebhook.html">GitHub (using Webhooks)</a></td>
+<td>Workbooks</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>28 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">14</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">2</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/github-github-a-payment-method-was-removed-6bb50582-caac-4a9b-9afb-3fee766ebbf7-e799ada5.html">GitHub - A payment method was removed</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/githubauditlogpolling-cl.html"><code>GitHubAuditLogPolling_CL</code></a><br><a href="../tables/githubauditlogsv2-cl.html"><code>GitHubAuditLogsV2_CL</code></a><br><a href="../tables/impacteduser.html"><code>ImpactedUser</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-github-oauth-application-a-client-secret-was-removed-0b85a077-8ba5-4cb5-90f7-1e882afe10c5-3d9031f7.html">GitHub - Oauth application - a client secret was removed</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/githubauditlogpolling-cl.html"><code>GitHubAuditLogPolling_CL</code></a><br><a href="../tables/githubauditlogsv2-cl.html"><code>GitHubAuditLogsV2_CL</code></a><br><a href="../tables/impacteduser.html"><code>ImpactedUser</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-github-repository-was-created-0b85a077-8ba5-4cb5-90f7-1e882afe10c2-bac13237.html">GitHub - Repository was created</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/githubauditlogpolling-cl.html"><code>GitHubAuditLogPolling_CL</code></a><br><a href="../tables/githubauditlogsv2-cl.html"><code>GitHubAuditLogsV2_CL</code></a><br><a href="../tables/impacteduser.html"><code>ImpactedUser</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-github-repository-was-destroyed-0b85a077-8ba5-4cb5-90f7-1e882afe10c3-96c04043.html">GitHub - Repository was destroyed</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/githubauditlogpolling-cl.html"><code>GitHubAuditLogPolling_CL</code></a><br><a href="../tables/githubauditlogsv2-cl.html"><code>GitHubAuditLogsV2_CL</code></a><br><a href="../tables/impacteduser.html"><code>ImpactedUser</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-github-user-visibility-was-changed-0b85a077-8ba5-4cb5-90f7-1e882afe20c9-d51a61fb.html">GitHub - User visibility Was changed</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/githubauditlogpolling-cl.html"><code>GitHubAuditLogPolling_CL</code></a><br><a href="../tables/githubauditlogsv2-cl.html"><code>GitHubAuditLogsV2_CL</code></a><br><a href="../tables/impacteduser.html"><code>ImpactedUser</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-github-user-was-added-to-the-organization-0b85a077-8ba5-4cb5-90f7-1e882afe10c4-4e723f97.html">GitHub - User was added to the organization</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/githubauditlogpolling-cl.html"><code>GitHubAuditLogPolling_CL</code></a><br><a href="../tables/githubauditlogsv2-cl.html"><code>GitHubAuditLogsV2_CL</code></a><br><a href="../tables/impacteduser.html"><code>ImpactedUser</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-github-user-was-blocked-0b85a077-8ba5-4cb5-90f7-1e882afe10c8-97304d92.html">GitHub - User was blocked</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/githubauditlogpolling-cl.html"><code>GitHubAuditLogPolling_CL</code></a><br><a href="../tables/githubauditlogsv2-cl.html"><code>GitHubAuditLogsV2_CL</code></a><br><a href="../tables/impacteduser.html"><code>ImpactedUser</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-github-user-was-invited-to-the-repository-0b85a077-8ba5-4cb5-90f7-1e882afe40c9-7209ee58.html">GitHub - User was invited to the repository</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/githubauditlogpolling-cl.html"><code>GitHubAuditLogPolling_CL</code></a><br><a href="../tables/githubauditlogsv2-cl.html"><code>GitHubAuditLogsV2_CL</code></a><br><a href="../tables/impacteduser.html"><code>ImpactedUser</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-github-pull-request-was-created-0b85a077-8ba5-4cb5-90f7-1e882afe10c7-18555696.html">GitHub - pull request was created</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/githubauditlogpolling-cl.html"><code>GitHubAuditLogPolling_CL</code></a><br><a href="../tables/githubauditlogsv2-cl.html"><code>GitHubAuditLogsV2_CL</code></a><br><a href="../tables/impacteduser.html"><code>ImpactedUser</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-github-pull-request-was-merged-0b85a077-8ba5-4cb5-90f7-1e882afe10c6-76d24a7f.html">GitHub - pull request was merged</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/githubauditlogpolling-cl.html"><code>GitHubAuditLogPolling_CL</code></a><br><a href="../tables/githubauditlogsv2-cl.html"><code>GitHubAuditLogsV2_CL</code></a><br><a href="../tables/impacteduser.html"><code>ImpactedUser</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-github-activites-from-a-new-country-f041e01d-840d-43da-95c8-4188f6cef546-14943f98.html">GitHub Activites from a New Country</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/githubauditlogpolling-cl.html"><code>GitHubAuditLogPolling_CL</code></a><br><a href="../tables/githubauditlogsv2-cl.html"><code>GitHubAuditLogsV2_CL</code></a><br><a href="../tables/impacteduser.html"><code>ImpactedUser</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-github-security-vulnerability-in-repository-5436f471-b03d-41cb-b333-65891f887c43-30f5673a.html">GitHub Security Vulnerability in Repository</a></td>
+<td style="text-align: left;">Informational</td>
+<td style="text-align: left;">InitialAccess, Execution, PrivilegeEscalation, DefenseEvasion, CredentialAccess, LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/githubrepologs-cl.html"><code>GitHubRepoLogs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-github-two-factor-auth-disable-3ff0fffb-d963-40c0-b235-3404f915add7-154f9e3d.html">GitHub Two Factor Auth Disable</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/githubauditlogpolling-cl.html"><code>GitHubAuditLogPolling_CL</code></a><br><a href="../tables/githubauditlogsv2-cl.html"><code>GitHubAuditLogsV2_CL</code></a><br><a href="../tables/impacteduser.html"><code>ImpactedUser</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-nrt-github-two-factor-auth-disable-594c653d-719a-4c23-b028-36e3413e632e-4470b247.html">NRT GitHub Two Factor Auth Disable</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/github-cl.html"><code>GitHub_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/github-github-first-time-invite-member-and-add-member-to-repo-f0d30d3c-e6ad-480a-90e8-1bd7cc84881b-0912ca5c.html">GitHub First Time Invite Member and Add Member to Repo</a></td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/githubauditlogpolling-cl.html"><code>GitHubAuditLogPolling_CL</code></a><br><a href="../tables/githubauditlogsv2-cl.html"><code>GitHubAuditLogsV2_CL</code></a><br><a href="../tables/impacteduser.html"><code>ImpactedUser</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-github-first-time-repo-delete-c3237d88-fdc4-4dee-8b90-118ded2c507c-69cfe798.html">GitHub First Time Repo Delete</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/githubauditlogpolling-cl.html"><code>GitHubAuditLogPolling_CL</code></a><br><a href="../tables/githubauditlogsv2-cl.html"><code>GitHubAuditLogsV2_CL</code></a><br><a href="../tables/impacteduser.html"><code>ImpactedUser</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-github-inactive-or-new-account-access-or-usage-b8508e24-47a6-4f8e-9066-3cc937197e7f-be1de63d.html">GitHub Inactive or New Account Access or Usage</a></td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/githubauditlogpolling-cl.html"><code>GitHubAuditLogPolling_CL</code></a><br><a href="../tables/githubauditlogsv2-cl.html"><code>GitHubAuditLogsV2_CL</code></a><br><a href="../tables/impacteduser.html"><code>ImpactedUser</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-github-mass-deletion-of-repos-or-projects-67da5c4e-49f2-476d-96ff-2dbe4b855a48-2f132015.html">GitHub Mass Deletion of repos or projects</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/githubauditlogpolling-cl.html"><code>GitHubAuditLogPolling_CL</code></a><br><a href="../tables/githubauditlogsv2-cl.html"><code>GitHubAuditLogsV2_CL</code></a><br><a href="../tables/impacteduser.html"><code>ImpactedUser</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-github-oauth-app-restrictions-disabled-667e6a70-adc9-49b7-9cf3-f21927c71959-0ae7ca34.html">GitHub OAuth App Restrictions Disabled</a></td>
+<td style="text-align: left;">Persistence, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/githubauditlogpolling-cl.html"><code>GitHubAuditLogPolling_CL</code></a><br><a href="../tables/githubauditlogsv2-cl.html"><code>GitHubAuditLogsV2_CL</code></a><br><a href="../tables/impacteduser.html"><code>ImpactedUser</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-github-repo-switched-from-private-to-public-a6e2afd3-559c-4e88-a693-39c1f6789ef1-cb2a47a1.html">GitHub Repo switched from private to public</a></td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/githubauditlogpolling-cl.html"><code>GitHubAuditLogPolling_CL</code></a><br><a href="../tables/githubauditlogsv2-cl.html"><code>GitHubAuditLogsV2_CL</code></a><br><a href="../tables/impacteduser.html"><code>ImpactedUser</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-github-update-permissions-ec986fb7-34ed-4528-a5f3-a496e61d8860-a49819f7.html">GitHub Update Permissions</a></td>
+<td style="text-align: left;">Persistence, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/githubauditlogpolling-cl.html"><code>GitHubAuditLogPolling_CL</code></a><br><a href="../tables/githubauditlogsv2-cl.html"><code>GitHubAuditLogsV2_CL</code></a><br><a href="../tables/impacteduser.html"><code>ImpactedUser</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-github-user-grants-access-and-other-user-grants-access-f18c4dfb-4fa6-4a9d-9bd3-f7569d1d685a-1b34b5bf.html">GitHub User Grants Access and Other User Grants Access</a></td>
+<td style="text-align: left;">Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/githubauditlogpolling-cl.html"><code>GitHubAuditLogPolling_CL</code></a><br><a href="../tables/githubauditlogsv2-cl.html"><code>GitHubAuditLogsV2_CL</code></a><br><a href="../tables/impacteduser.html"><code>ImpactedUser</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/github-github-87916f66.html">GitHub</a></td>
+<td style="text-align: left;"><a href="../tables/githubscanaudit-cl.html"><code>githubscanaudit_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-githubadvancedsecurity-62e1aa58.html">GitHubAdvancedSecurity</a></td>
+<td style="text-align: left;"><a href="../tables/githubscanaudit-cl.html"><code>githubscanaudit_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/githubauditdata.html">GitHubAuditData</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/githubauditlogpolling-cl.html"><code>GitHubAuditLogPolling_CL</code></a> <em>(read)</em><br><a href="../tables/githubauditlogsv2-cl.html"><code>GitHubAuditLogsV2_CL</code></a> <em>(read)</em><br><a href="../tables/impacteduser.html"><code>ImpactedUser</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/githubcodescanningdata.html">GitHubCodeScanningData</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/githubscanaudit-cl.html"><code>githubscanaudit_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/githubdependabotdata.html">GitHubDependabotData</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/githubscanaudit-cl.html"><code>githubscanaudit_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/githubsecretscanningdata.html">GitHubSecretScanningData</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/githubscanaudit-cl.html"><code>githubscanaudit_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.1.3</td>
+<td>29-01-2026</td>
+<td>Promoted GitHub Enterprise Cloud Audit Log CCF connector from Public Preview to GA.</td>
+</tr>
+<tr>
+<td>3.1.2</td>
+<td>24-11-2025</td>
+<td>Added clarity to Github Enterprise Audit CCF connector definition to use API URL.</td>
+</tr>
+<tr>
+<td>3.1.1</td>
+<td>13-11-2025</td>
+<td>Fixed URL handling for GitHub Enterprise Audit CCF connector.</td>
+</tr>
+<tr>
+<td>3.1.0</td>
+<td>05-11-2025</td>
+<td>Updated Github Enterprise Audit CCF connector to use full URL instead of enterprise name.</td>
+</tr>
+<tr>
+<td>3.0.9</td>
+<td>05-09-2025</td>
+<td>Enhancements to user guidance for connecting GitHub Enterprise audit logs connector</td>
+</tr>
+<tr>
+<td>3.0.8</td>
+<td>26-08-2025</td>
+<td>Removed deprecated tag from webhook connector.</td>
+</tr>
+<tr>
+<td>3.0.7</td>
+<td>19-06-2025</td>
+<td>Introducing a new CCF-based GitHub Enterprise Audit connector to replace the CLV1 connector</td>
+</tr>
+<tr>
+<td>3.0.6</td>
+<td>26-04-2024</td>
+<td>Repackaged for fix on parser in maintemplate to have old parsername and parentid.</td>
+</tr>
+<tr>
+<td>3.0.5</td>
+<td>18-04-2024</td>
+<td>Repackaged to fix parser issue.</td>
+</tr>
+<tr>
+<td>3.0.4</td>
+<td>04-04-2024</td>
+<td>Updated Entity Mappings in <strong>Analytic Rules</strong>.</td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>31-01-2024</td>
+<td>Updated the solution to fix <strong>Analytic Rules</strong> deployment issue.</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>06-11-2023</td>
+<td>Updated the <strong>Workbook</strong> name to resolve the issue of multiple keywords.</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>22-08-2023</td>
+<td>Modified <strong>GitHubWorkbook</strong> to add new features (a.Filtering by organizations, b.Filtering by repository topics).</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>17-07-2023</td>
+<td><strong>Data Connectors</strong> description updated &amp; Code Enhancements added for <strong>Workbooks</strong>.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

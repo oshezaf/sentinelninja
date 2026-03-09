@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🔍 SecurityBridge Threat Detection for SAP &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>🔍 SecurityBridge Threat Detection for SAP</h1>
+<blockquote>
+<p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SecurityBridgeLogo-Vector-TM_75x75.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>SecurityBridgeSAP</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">SecurityBridge</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/securitybridge-app.html">SecurityBridge App</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/mma.html">MMA</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityBridge%20App/Data%20Connectors/Connector_SecurityBridge.json">Connector_SecurityBridge.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+</tbody>
+</table>
+<p>SecurityBridge is the first and only holistic, natively integrated security platform, addressing all aspects needed to protect organizations running SAP from internal and external threats against their core business applications. The SecurityBridge platform is an SAP-certified add-on, used by organizations around the globe, and addresses the clients’ need for advanced cybersecurity, real-time monitoring, compliance, code security, and patching to protect against internal and external threats.This Microsoft Sentinel Solution allows you to integrate SecurityBridge Threat Detection events from all your on-premise and cloud based SAP instances into your security monitoring.Use this Microsoft Sentinel Solution to receive normalized and speaking security events, pre-built dashboards and out-of-the-box templates for your SAP security monitoring.</p>
+<h2>Additional Information</h2>
+<p>🛠️ <strong>Device Configuration:</strong> Table: <code>SecurityBridgeLogs_CL</code>. Log location (Linux): <code>/usr/sap/tmp/sb_events/*.cef</code>. See <a href="https://learn.microsoft.com/azure/sentinel/unified-connector-custom-device#securitybridge-threat-detection-for-sap">Custom Logs via AMA configuration</a>.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/securitybridgelogs-cl.html"><code>SecurityBridgeLogs_CL</code></a> 🔶</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><em>NOTE:</em>* This data connector depends on a parser based on a Kusto Function to work as expected which is deployed as part of the solution. To view the function code in Log Analytics, open Log Analytics/Microsoft Sentinel Logs blade, click Functions and search for the alias SecurityBridgeLogs and load the function code or click <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityBridge%20App/Parsers/SecurityBridgeLogs.txt">here</a>.The function usually takes 10-15 minutes to activate after solution installation/update.</p>
+<blockquote>
+<p><strong>NOTE:</strong> This data connector has been developed using SecurityBridge Application Platform 7.4.0.</p>
+</blockquote>
+<p><strong>1. Install and onboard the agent for Linux or Windows</strong></p>
+<p>This solution requires logs collection via an Microsoft Sentinel agent installation</p>
+<blockquote>
+<p>The Microsoft Sentinel agent is supported on the following Operating Systems:<br />
+1. Windows Servers 
+2. SUSE Linux Enterprise Server
+3. Redhat Linux Enterprise Server
+4. Oracle Linux Enterprise Server
+5. If you have the SAP solution installed on HPUX / AIX then you will need to deploy a log collector on one of the Linux options listed above and forward your logs to that collector
+<strong>Choose where to install the Linux agent:</strong></p>
+</blockquote>
+<p><strong>Install agent on Azure Linux Virtual Machine</strong></p>
+<p>Select the machine to install the agent on and then click <strong>Connect</strong>.
+  - <strong>Install agent on Linux Virtual Machine</strong></p>
+<p><strong>Install agent on a non-Azure Linux Machine</strong></p>
+<p>Download the agent on the relevant machine and follow the instructions.
+  - <strong>Install agent on Linux (Non-Azure)</strong></p>
+<p><strong>Choose where to install the Windows agent:</strong></p>
+<p><strong>Install agent on Azure Windows Virtual Machine</strong></p>
+<p>Select the machine to install the agent on and then click <strong>Connect</strong>.
+  - <strong>Install/configure: InstallAgentOnVirtualMachine</strong></p>
+<p><strong>Install agent on a non-Azure Windows Machine</strong></p>
+<p>Download the agent on the relevant machine and follow the instructions.
+  - <strong>Install/configure: InstallAgentOnNonAzure</strong></p>
+<p><strong>2. Configure the logs to be collected</strong></p>
+<p>Configure the custom log directory to be collected
+- <strong>Open custom logs settings</strong></p>
+<ol>
+<li>Select the link above to open your workspace advanced settings </li>
+<li>Click <strong>+Add custom</strong></li>
+<li>Click <strong>Browse</strong> to upload a sample of a SecurityBridge SAP log file (e.g. AED_20211129164544.cef). Then, click <strong>Next &gt;</strong></li>
+<li>Select <strong>New Line</strong> as the record delimiter then click <strong>Next &gt;</strong></li>
+<li>Select <strong>Windows</strong> or <strong>Linux</strong> and enter the path to SecurityBridge logs based on your configuration. Example:
+ - '/usr/sap/tmp/sb_events/*.cef' </li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> You can add as many paths as you want in the configuration.</p>
+</blockquote>
+<ol start="6">
+<li>After entering the path, click the '+' symbol to apply, then click <strong>Next &gt;</strong> </li>
+<li>Add <strong>SecurityBridgeLogs</strong> as the custom log Name and click <strong>Done</strong></li>
+</ol>
+<p><strong>3. Check logs in Microsoft Sentinel</strong></p>
+<p>Open Log Analytics to check if the logs are received using the SecurityBridgeLogs_CL Custom log table.</p>
+<blockquote>
+<p><strong>NOTE:</strong> It may take up to 30 minutes before new logs will appear in SecurityBridgeLogs_CL table.</p>
+</blockquote>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

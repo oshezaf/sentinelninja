@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CrowdStrikeProcessEventsCL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>CrowdStrike_Process_Events_CL</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Crowdstrike</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (145 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CrowdStrike_Process_Events_CL.json">KQL validation test schema</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">AdditionalFields</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">aid</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">aip</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">AllocateVirtualMemoryCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">ArchiveFileWrittenCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">AsepWrittenCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticodeHashData</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BinaryExecutableWrittenCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">BoundingLimitCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">BoundingLimitDuration</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">CallStackModuleNames</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">CallStackModuleNamesVersion</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Certificate</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cid</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">CLICreationCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">CommandLine</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConfigBuild</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConfigStateHash</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConHostId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConHostProcessId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ContextData</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ContextProcessId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ContextThreadId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ContextTimeStamp</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">CreateProcessCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">CreateProcessType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">CrowdStrikeId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">CsaProcessDataCollectionInstanceId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">CycleTime</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">DirectoryCreatedCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">DirectoryEnumeratedCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsRequestCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">DocumentFileWrittenCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">EffectiveTransmissionClass</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Entitlements</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">event_platform</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">event_simpleName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ExeAndServiceCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">ExecutableBytes</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ExecutableDeletedCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">ExitCode</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ExtendedKeyUsages</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileDeletedCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileIdentifier</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileSigningTime</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">GenericFileWrittenCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">HostUrl</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ImageDirectoryClassification</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ImageFileName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ImageSubsystem</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">InjectedDllCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">InjectedThreadCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">InjecteeImageFileName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">InjectorImageFileName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">IntegrityLevel</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">KernelTime</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">LoadingProcessOriginalFilename</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">MappedFromUserMode</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">MaxThreadCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">MD5HashData</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">MemoryDescriptionFlags</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ModuleCharacteristics</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ModuleLoadCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">ModuleLoadMechanism</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ModuleName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ModuleTagsAsString</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">name</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkBindCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkCapableAsepWriteCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkCloseCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkConnectCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkConnectCountUdp</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkListenCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkModuleLoadCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkRecvAcceptCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">NewExecutableWrittenCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">OciContainerId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OriginalFilename</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ParentAuthenticationId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ParentBaseFileName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ParentCommandLine</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ParentImageFileName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ParentProcessId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ParentProcessPatternIdList</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">PatternId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">PatternIdList</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadClassification</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadClassificationFlags</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">PrivilegedProcessHandleCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessEndTime</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessGroupId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessStartTime</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProtectVirtualMemoryCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">PublicKeys</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">QueueApcCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">RawProcessId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">RegKeySecurityDecreasedCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteAddressIP4</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemovableDiskFileWrittenCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">RpcClientProcessId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">RunDllInvocationCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">ScreenshotsTakenCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">ScriptEngineInvocationCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServiceEventCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">SessionId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SetThreadContextCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">SHA1HashData</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SHA256HashData</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SignatureErrorState</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SignatureState</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SignInfoFlags</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SnapshotFileOpenCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceProcessId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceThreadId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SuspectStackCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">SuspiciousCredentialModuleLoadCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">SuspiciousDnsRequestCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">SuspiciousFontLoadCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">SuspiciousRawDiskReadCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">SyntheticPR2Flags</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tags</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetFileName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetProcessId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetThreadId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">TemplateInstanceId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreadExecutionControlType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreadStartAddress</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">timestamp</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">TokenType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">TreeId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">UnsignedModuleLoadCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserMemoryAllocateExecutableCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserMemoryAllocateExecutableRemoteCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserMemoryProtectExecutableCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserMemoryProtectExecutableRemoteCount</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserSid</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserTime</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">WellKnownTargetFunction</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">WritingProcessCommandLine</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">WritingProcessId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">WritingProcessImageFileName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ZoneIdentifier</td>
+<td style="text-align: left;">string</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/crowdstrikefalcons3ccpdefinition.html">CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

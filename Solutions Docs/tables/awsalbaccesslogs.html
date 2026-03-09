@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWSALBAccessLogs &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>AWSALBAccessLogs</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for AWSALBAccessLogs table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">AWS</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awsalbaccesslogs">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (37 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awsalbaccesslogs">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionsExecuted</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The actions taken when processing the request (e.g., forward, fixed-response, redirect).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Alb</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ARN of the Application Load Balancer.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ALBType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of request (e.g., http or https).</td>
+</tr>
+<tr>
+<td style="text-align: left;">ChosenCertArn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ARN of the certificate presented to the client.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Classification</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Classification of the request (e.g., success or error).</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClassificationReason</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The reason why a request was classified in a certain way.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClientIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address of the client.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClientPort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The port number of the client.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConnTraceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The connection trace ID that uniquely identifies the connection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DomainName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The SNI domain provided by the client during the TLS handshake.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ElbStatusCode</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The status code sent from the load balancer to the client.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LambdaErrorReason</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The reason code for a failed Lambda function, if applicable.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MatchedRulePriority</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The priority value of the rule that matched the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReceivedBytes</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The size of the request, in bytes, received from the client.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RedirectUrl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The URL of the redirect target, if a redirect action was taken.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestCreationTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The timestamp when the load balancer generated the request to the target.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestProcessingTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The total time taken by the load balancer to receive the request from the client.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestRaw</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The complete request line from the client.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseProcessingTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The total time taken by the load balancer to send the response to the client.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SentBytes</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The size of the response, in bytes, sent to the client.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">SslCipher</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The SSL cipher used for the SSL connection (if any).</td>
+</tr>
+<tr>
+<td style="text-align: left;">SslProtocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The SSL protocol used for the SSL connection (if any).</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetGroupArn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ARN of the target group that handled the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address of the target that processed the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetPort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The port number of the target that processed the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetPortList</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A list of IP:port pairs of the targets that handled the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetProcessingTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The total time taken by the target to process the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetStatusCode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The status code received from the target.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetStatusCodeList</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A list of status codes returned by the targets.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time when the load balancer received the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TraceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The trace identifier for the request, useful for debugging.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserAgent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The user agent String of the client.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JoeSandbox File Analyis &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>JoeSandbox File Analyis</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>Submits a attachment or set of attachment associated with an office 365 email to JoeSandbox for Analyis.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/joesandbox.html">JoeSandbox</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JoeSandbox/Playbooks/JoeSandbox-Submit-File-Outlook-Attachment/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JoeSandbox/Playbooks/JoeSandbox-Submit-File-Outlook-Attachment/readme.md">JoeSandbox-Submit-File-Outlook-Attachment/readme.md</a></em></p>
+</blockquote>
+<h1>JoeSandbox File Analysis Playbook</h1>
+<h2>Table of Contents</h2>
+<ol>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#deployplaybook">Deploy Playbook</a></li>
+<li><a href="#authentication">Authentication</a></li>
+<li><a href="#prerequisites">Prerequisites</a></li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="#postdeployment">Post Deployment Steps</a></li>
+</ol>
+<p><a name="overview"></p>
+<h1>Overview</h1>
+<p>This playbook gets triggered when an new email is recieved in the configured mail box and performs the following actions:</p>
+<ul>
+<li>It fetches the attachments objects in the Email.</li>
+<li>Iterates through and submits to JoeSanbox for analysis and fetches the results for each File.</li>
+<li>All the details from JoeSanbox will be added as comments in a tabular format.</li>
+</ul>
+<p><img alt="Incident Comments" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JoeSandbox/Playbooks/JoeSandbox-Submit-File-Outlook-Attachment/Images/outlook_incident_comment.png" /></p>
+<p><a name="deployplaybook"></p>
+<h2>Links to deploy Playbook:</h2>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FJoeSandbox%2FPlaybooks%2FJoeSandbox_Outlook_Attachment_Analysis%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FJoeSandbox%2FPlaybooks%2FJoeSandbox_Outlook_Attachment_Analysis%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<ul>
+<li>Click on Deploy to Azure</li>
+<li>It will redirect to configuration page</li>
+</ul>
+<p><img alt="email_playbook" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JoeSandbox/Playbooks/JoeSandbox-Submit-File-Outlook-Attachment/Images/email_playbook.png" /></p>
+<ul>
+<li>Please provide the values accordingly</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Fields</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Subscription</td>
+<td style="text-align: left;">Select the appropriate Azure Subscription</td>
+</tr>
+<tr>
+<td style="text-align: left;">Resource Group</td>
+<td style="text-align: left;">Select the appropriate Resource Group</td>
+</tr>
+<tr>
+<td style="text-align: left;">Region</td>
+<td style="text-align: left;">Based on Resource Group this will be uto populated</td>
+</tr>
+<tr>
+<td style="text-align: left;">Playbook Name</td>
+<td style="text-align: left;">Please provide a playbook name, if needed</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workspace Name</td>
+<td style="text-align: left;">Please provide Log Analytics Workspace Name</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workspace ID</td>
+<td style="text-align: left;">Please provide Log Analytics Workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">Function App Name</td>
+<td style="text-align: left;">Please provide the JoeSandbox enrichment function app name</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Once you provide the above values, please click on <code>Review + create</code> button.</li>
+</ul>
+<p><a name="authentication"></p>
+<h2>Authentication</h2>
+<p>Authentication methods this connector supports:
+- <a href="https://www.joesecurity.org/joe-sandbox-cloud#subscriptions">API Key authentication</a></p>
+<p><a name="prerequisites"></p>
+<h2>Prerequisites for using and deploying playbook</h2>
+<ul>
+<li>A JoeSanbox API Key.</li>
+<li>JoeSandbox Logic App Custom Connector should be installed.</li>
+</ul>
+<p><a name="deployment"></p>
+<h4>Deployment instructions</h4>
+<ul>
+<li>Deploy the playbooks by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
+<li>Fill in the required parameters for deploying the playbook.</li>
+<li>Click "Review + create". Once the validation is successful, click on "Create".</li>
+</ul>
+<p><a name="postdeployment"></p>
+<h3>Post-Deployment instructions.</h3>
+<ul>
+<li>As a best practice, we have used the Sentinel connection in Logic Apps that use "ManagedSecurityIdentity" permissions. Please refer to <a href="https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-managed-identity-for-azure-sentinel-logic-apps/ba-p/2068204">this document</a> and provide permissions to the Logic App accordingly.</li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/joesandbox.html">Back to JoeSandbox</a></p>
+</div>
+</body>
+</html>

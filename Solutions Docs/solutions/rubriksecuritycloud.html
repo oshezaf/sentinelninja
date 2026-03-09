@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RubrikSecurityCloud &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>RubrikSecurityCloud</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/rubrikLogo.svg" alt="RubrikSecurityCloud Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Rubrik</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.rubrik.com">https://support.rubrik.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.5.1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Ben Meadowcroft - ben.meadowcroft@rubrik.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-07-19</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2025-07-25</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud">RubrikSecurityCloud</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.rubrik.com/">Rubrik Security Cloud</a> solution enables security operations teams to integrate insights from Rubrik’s Data Observability services into Microsoft Sentinel. </p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>a. <a href="https://learn.microsoft.com/azure/azure-monitor/logs/data-collector-api">Azure Monitor HTTP Data Collector API</a></p>
+<p>b. <a href="https://azure.microsoft.com/products/functions/#overview">Azure Functions</a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/rubriksecuritycloudazurefunctions.html">Rubrik Security Cloud data connector</a> 🔶</li>
+</ul>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>4 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/rubrik-anomaly-data-cl.html"><code>Rubrik_Anomaly_Data_CL</code></a> 🔶</td>
+<td><a href="../connectors/rubriksecuritycloudazurefunctions.html">Rubrik Security Cloud data connector</a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/rubrik-events-data-cl.html"><code>Rubrik_Events_Data_CL</code></a> 🔶</td>
+<td><a href="../connectors/rubriksecuritycloudazurefunctions.html">Rubrik Security Cloud data connector</a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/rubrik-ransomware-data-cl.html"><code>Rubrik_Ransomware_Data_CL</code></a> 🔶</td>
+<td><a href="../connectors/rubriksecuritycloudazurefunctions.html">Rubrik Security Cloud data connector</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/rubrik-threathunt-data-cl.html"><code>Rubrik_ThreatHunt_Data_CL</code></a> 🔶</td>
+<td><a href="../connectors/rubriksecuritycloudazurefunctions.html">Rubrik Security Cloud data connector</a></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>19 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">17</td>
+</tr>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">2</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-critical-anomaly-54c70d21-696f-4f03-9238-9d7118d079fe-12070b5e.html">Rubrik Critical Anomaly</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/rubrik-anomaly-data-cl.html"><code>Rubrik_Anomaly_Data_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-threat-monitoring-0083cbc4-776e-42ca-8694-6950fd605df9-8e319268.html">Rubrik Threat Monitoring</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/rubrik-events-data-cl.html"><code>Rubrik_Events_Data_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-advanced-threat-hunt-f99aa45a.html">Rubrik Advanced Threat Hunt</a></td>
+<td style="text-align: left;">This playbook fetches the object mapped with incident and starts advance threat hunt.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-anomaly-analysis-bb96264b.html">Rubrik Anomaly Analysis</a></td>
+<td style="text-align: left;">This playbook queries Rubrik Security Cloud to enrich the Anomaly event with additional information ...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-anomaly-generate-downloadable-link-81d9c2dd.html">Rubrik Anomaly Generate Downloadable Link</a></td>
+<td style="text-align: left;">This playbook will generate downloadable links according to objectType (VMware, Fileset or VolumeGro...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-anomaly-incident-response-1cd87630.html">Rubrik Anomaly Incident Response</a></td>
+<td style="text-align: left;">This playbook provides an end to end example of the collection of Ransomware Anomaly information fro...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-data-object-discovery-a4b676ba.html">Rubrik Data Object Discovery</a></td>
+<td style="text-align: left;">This playbook queries Rubrik Security Cloud to enrich the incoming event with additional information...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-file-object-context-analysis-30d5a377.html">Rubrik File Object Context Analysis</a></td>
+<td style="text-align: left;">This playbook will retrieve policy hits from Rubrik Security Cloud for a given object, for a particu...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-fileset-ransomware-discovery-b9e9d03e.html">Rubrik Fileset Ransomware Discovery</a></td>
+<td style="text-align: left;">This playbook queries Rubrik Security Cloud to enrich the incoming event with additional information...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-ioc-scan-bb9c8030.html">Rubrik IOC Scan</a></td>
+<td style="text-align: left;">This playbook interacts with Rubrik Security Cloud to scan backups for specified IOCs. This playbook...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-poll-async-result-e7e4eb05.html">Rubrik Poll Async Result</a></td>
+<td style="text-align: left;">This playbook is used by other playbooks to poll for results from some of the asynchronous API calls...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-ransomware-discovery-and-file-recovery-ed889b97.html">Rubrik Ransomware Discovery and File Recovery</a></td>
+<td style="text-align: left;">This playbook interacts with Rubrik Security Cloud to (1) optionally preserve evidence by creating a...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-ransomware-discovery-and-vm-recovery-d3cd3154.html">Rubrik Ransomware Discovery and VM Recovery</a></td>
+<td style="text-align: left;">This playbook interacts with Rubrik Security Cloud to (1) optionally preserve evidence by creating a...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-retrieve-user-intelligence-information-063a46dd.html">Rubrik Retrieve User Intelligence Information</a></td>
+<td style="text-align: left;">This playbook queries Rubrik Security Cloud to get risk detail and policy hits details for a usernam...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-turbo-threat-hunt-1e54eed3.html">Rubrik Turbo Threat Hunt</a></td>
+<td style="text-align: left;">This playbook fetches the object mapped with incident and starts turbo threat hunt.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-update-anomaly-status-9538265e.html">Rubrik Update Anomaly Status</a></td>
+<td style="text-align: left;">This playbook will resolve or report false positive to unresolved anomaly and update status as resol...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-update-anomaly-status-via-incident-31d4f8cc.html">Rubrik Update Anomaly Status Via Incident</a></td>
+<td style="text-align: left;">This playbook queries Rubrik Security Cloud to enrich the Anomaly event with additional information ...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-user-intelligence-analysis-4de09304.html">Rubrik User Intelligence Analysis</a></td>
+<td style="text-align: left;">This playbook queries Rubrik Security Cloud to get user sensitive data and update severity of incide...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrikworkloadanalysis-298e0346.html">RubrikWorkloadAnalysis</a></td>
+<td style="text-align: left;">This playbook retrieves sensitive IP and Host data to enrich the incident details, and adjusts the i...</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.5.1</td>
+<td>05-11-2025</td>
+<td>Updated API Host Name default value in playbooks and custom connector</td>
+</tr>
+<tr>
+<td>3.5.0</td>
+<td>25-07-2025</td>
+<td>Added RubrikTurboThreatHunt and RubrikAdvanceThreatHunt playbooks. RubrikThreatMonitoring and RubrikCriticalAnomaly Analytic Rules also added.</td>
+</tr>
+<tr>
+<td>3.4.0</td>
+<td>07-04-2025</td>
+<td>Added RubrikUpdateAnomalyStatusViaIncident and RubrikUpdateAnomalyStatus playbook. Enhanced RubrikAnomalyAnalysis playbook. Added User-Agent in every API call of each playbook. Removed policy creation resources from data connector Arm template.</td>
+</tr>
+<tr>
+<td>3.3.0</td>
+<td>19-11-2024</td>
+<td>Added one new Playbook(RubrikWorkloadAnalysis) and updated the RubrikWebhookEvents Data Connector to add a new Orchestrator for Rubrik Events.</td>
+</tr>
+<tr>
+<td>3.2.1</td>
+<td>11-11-2024</td>
+<td>Fixed the issue of Custom Connector id parameter in RubrikRansomwareDiscoveryAndVmRecovery playbook.</td>
+</tr>
+<tr>
+<td>3.2.0</td>
+<td>24-02-2024</td>
+<td>Added 3 new Playbooks(RubrikFileObjectContextAnalysis, RubrikUserIntelligenceAnalysis, RubrikRetrieveUserIntelligenceInformation) for FileObject and User, fixed clusterLocation issue of Collect_IOC_Scan_Data adaptive card in RubrikRansomwareDiscoveryAndVmRecovery playbook and updated python packages to fix vulnerability CVE-2023-50782 of cryptography module. Enhanced Anomaly Analysis playbook and added RubrikAnomalyGenerateDownloadableLink playbook.</td>
+</tr>
+<tr>
+<td>3.1.0</td>
+<td>20-10-2023</td>
+<td>Updated the <strong>DataConnector</strong> code by implementing Durable Function App.</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>14-07-2023</td>
+<td>Updated the title in such a way that user can identify the adaptive card based on incident.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HDInsightAmbariSystemMetrics &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>HDInsightAmbariSystemMetrics</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for HDInsightAmbariSystemMetrics table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Azure Resources</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/hdinsightambarisystemmetrics">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (39 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/hdinsightambarisystemmetrics">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">BytesIn</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Bytes ingested in last timeframe.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BytesOut</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Bytes sent out.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CachedMemory</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">amount of cached memory in KB.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClusterName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the cluster the host belongs to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClusterType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of cluster the record came from.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CpuIdle</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Percent of CPU time spent in idle state in past cycle.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CpuIOWait</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Percent of CPU time spent waiting for I/O requests in past cycle.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CpuNice</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Percent of CPU time spent running processes with positive nice values.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CpuSystem</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Percent of CPU time spent running system level processes in past cycle.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CpuUser</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Percent of CPU time spent running user level processes in past cycle.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DiskFree</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Amount of free disk space (in GB).</td>
+</tr>
+<tr>
+<td style="text-align: left;">DiskTotal</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Total disk space (in GB).</td>
+</tr>
+<tr>
+<td style="text-align: left;">FifteenMinutLoad</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">load over past 15 minutes.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FiveMinuteLoad</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">load over past five minutes.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FreeMemory</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">amount of free memory in KB.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FreeSwapMemory</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">amount of free swap memory in KB.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HostName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the host the record came from.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NumberOfCpu</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Number of CPU cores running on the node.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OneMinuteLoad</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">load over past one minute.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PacketsIn</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Packets ingest in last timeframe.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PacketsOut</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Packets sent out in last timeframe.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessesRun</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Processes run in last timeframe.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReadBytes</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Number of bytes read.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReadCount</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Number of read operations.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReadTime</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Time spent on read operations.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SharedMemory</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">amount of sharedmemory in KB.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) of when the log was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TotalMemory</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">total amount of memory in KB.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TotalProcesses</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Total amount of processes run on host.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">WriteBytes</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Number of bytes written.</td>
+</tr>
+<tr>
+<td style="text-align: left;">WriteCount</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Number of write operations.</td>
+</tr>
+<tr>
+<td style="text-align: left;">WriteTime</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Time spent on write operations.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.hdinsight/clusters</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

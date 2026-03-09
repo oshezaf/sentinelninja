@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>&lt;img src=&quot;../images/asim-badge.png&quot; alt=&quot;ASIM&quot; height=&quot;32&quot;&gt; Web Session ASIM filtering parser &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1><img src="../images/asim-badge.png" alt="ASIM" height="32"> Web Session ASIM filtering parser</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <strong>ASIM Parsers</strong> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="asim-index.html">Back to ASIM Index</a></p>
+<hr />
+<h2>Parser Information</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Parser Name</strong></td>
+<td style="text-align: left;"><code>imWebSession</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Built-in Parser</strong></td>
+<td style="text-align: left;"><code>_Im_WebSession</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Schema</strong></td>
+<td style="text-align: left;">WebSession</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Schema Version</strong></td>
+<td style="text-align: left;">0.1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Parser Type</strong></td>
+<td style="text-align: left;">📦 Union (schema-level)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Parser Version</strong></td>
+<td style="text-align: left;">0.6.2 (<a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/imWebSession.md">version history</a>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">May 21 2024</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source File</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimWebSession/Parsers/imWebSession.yaml">Parsers\ASimWebSession\Parsers\imWebSession.yaml</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Description</h2>
+<p>This ASIM parser supports filtering and normalizing Web Session logs from all supported sources to the ASIM Web Session normalized schema.</p>
+<h2>Products</h2>
+<p>This union parser includes parsers for the following products:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Source Parser</th>
+<th style="text-align: left;">Solutions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Apache HTTP Server</td>
+<td style="text-align: left;"><a href="asimwebsessionapachehttpserver.html">_Im_WebSession_ApacheHTTPServer</a></td>
+<td style="text-align: left;"><a href="../solutions/customlogsama.html">CustomLogsAma</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Azure Firewall</td>
+<td style="text-align: left;"><a href="asimwebsessionazurefirewall.html">_Im_WebSession_AzureFirewall</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Barracuda WAF</td>
+<td style="text-align: left;"><a href="asimwebsessionbarracudacef.html">_Im_WebSession_BarracudaCEF</a></td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Barracuda WAF</td>
+<td style="text-align: left;"><a href="asimwebsessionbarracudawaf.html">_Im_WebSession_BarracudaWAF</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Cisco Firepower</td>
+<td style="text-align: left;"><a href="asimwebsessionciscofirepower.html">_Im_WebSession_CiscoFirepower</a></td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Cisco Meraki</td>
+<td style="text-align: left;"><a href="asimwebsessionciscomeraki.html">_Im_WebSession_CiscoMeraki</a></td>
+<td style="text-align: left;"><a href="../solutions/cisco-sd-wan.html">Cisco SD-WAN</a><br><a href="../solutions/ciscomeraki.html">CiscoMeraki</a><br><a href="../solutions/customlogsama.html">CustomLogsAma</a><br><a href="../solutions/forescout-legacy.html">Forescout (Legacy)</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Citrix NetScaler</td>
+<td style="text-align: left;"><a href="asimwebsessioncitrixnetscaler.html">_Im_WebSession_CitrixNetScaler</a></td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">F5 BIG-IP Application Security Manager (ASM)</td>
+<td style="text-align: left;"><a href="asimwebsessionf5asm.html">_Im_WebSession_F5ASM</a></td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Fortinet FortiGate</td>
+<td style="text-align: left;"><a href="asimwebsessionfortinetfortigate.html">_Im_WebSession_FortinetFortiGate</a></td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Internet Information Services (IIS)</td>
+<td style="text-align: left;"><a href="asimwebsessioniis.html">_Im_WebSession_IIS</a></td>
+<td style="text-align: left;"><a href="../solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Native</td>
+<td style="text-align: left;"><a href="asimwebsessionnative.html">_Im_WebSession_Native</a></td>
+<td style="text-align: left;"><a href="../solutions/cisco-meraki-events-via-rest-api.html">Cisco Meraki Events via REST API</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Palo Alto Networks</td>
+<td style="text-align: left;"><a href="asimwebsessionpaloaltocef.html">_Im_WebSession_PaloAltoCEF</a></td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Palo Alto Cortex Data Lake</td>
+<td style="text-align: left;"><a href="asimwebsessionpaloaltocortexdatalake.html">_Im_WebSession_PaloAltoCortexDataLake</a></td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SonicWall</td>
+<td style="text-align: left;"><a href="asimwebsessionsonicwallfirewall.html">_Im_WebSession_SonicWallFirewall</a></td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Squid Proxy</td>
+<td style="text-align: left;"><a href="asimwebsessionsquidproxy.html">_Im_WebSession_SquidProxy</a></td>
+<td style="text-align: left;"><a href="../solutions/customlogsama.html">CustomLogsAma</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Vectra AI Streams</td>
+<td style="text-align: left;"><a href="asimwebsessionvectraai.html">_Im_WebSession_VectraAI</a></td>
+<td style="text-align: left;"><a href="../solutions/customlogsama.html">CustomLogsAma</a><br><a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Zscaler ZIA</td>
+<td style="text-align: left;"><a href="asimwebsessionzscalerzia.html">_Im_WebSession_ZscalerZIA</a></td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Parameters</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>starttime</code></td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">datetime(null)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>endtime</code></td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">datetime(null)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>srcipaddr_has_any_prefix</code></td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">dynamic([])</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ipaddr_has_any_prefix</code></td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">dynamic([])</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>url_has_any</code></td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">dynamic([])</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>httpuseragent_has_any</code></td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">dynamic([])</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>eventresultdetails_in</code></td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">dynamic([])</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>eventresult</code></td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">*</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>eventresultdetails_has_any</code></td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">dynamic([])</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>disabled</code></td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">False</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>pack</code></td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">False</td>
+</tr>
+</tbody>
+</table>
+<h2>References</h2>
+<ul>
+<li><a href="https://aka.ms/ASimWebSessionDoc">ASIM WebSession Schema</a></li>
+<li><a href="https://aka.ms/AboutASIM">ASIM</a></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <strong>ASIM Parsers</strong> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="asim-index.html">Back to ASIM Index</a></p>
+</div>
+</body>
+</html>

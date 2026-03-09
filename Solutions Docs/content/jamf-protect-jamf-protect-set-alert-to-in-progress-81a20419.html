@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jamf Protect - Set Alert to In Progress &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Jamf Protect - Set Alert to In Progress</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>This Jamf Protect Playbook can be used manually or in a Automation Rule to change the state of the Alert in Jamf Protect itself, in an automated way you can mirror the state from a Microsoft Sentinel incident back to Jamf Protect.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/jamf-protect.html">Jamf Protect</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Jamf%20Protect/Playbooks/JamfProtect_Alert_Status_InProgress/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Jamf%20Protect/Playbooks/JamfProtect_Alert_Status_InProgress/readme.md">JamfProtect_Alert_Status_InProgress/readme.md</a></em></p>
+</blockquote>
+<h1>JamfProtect_Alert_Status_InProgress</h1>
+<p>## Summary
+This Jamf Protect Playbook can be used manually or in a Automation Rule to change the state of the Alert in Jamf Protect itself, in an automated way you can mirror the state from a Microsoft Sentinel incident back to Jamf Protect.</p>
+<p><img alt="JamfProtect_Alert_Status_InProgress" src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Jamf%20Protect%/Playbooks/JamfProtect_Alert_Status_InProgress/images/designerOverviewCollapsedLight.png" /></p>
+<h3>Prerequisites</h3>
+<ol>
+<li>Generate API Client in Jamf Protect and take note of the CLientID and Password. <a href="https://learn.jamf.com/bundle/jamf-protect-documentation/page/Jamf_Protect_API.html#ariaid-title3">learn how</a>.</li>
+<li>Use the ClientID and Password during the deployment of this Playbook.</li>
+</ol>
+<h3>Deployment instructions</h3>
+<ol>
+<li>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
+<li>
+<p>Fill in the required parameters:</p>
+<ul>
+<li>jamfProtectURL: Enter the Jamf Protect instance URL.</li>
+<li>client_ID: Enter the ClientID of Jamf Protect API Client.</li>
+<li>Password: Enter the ClientSecret of Jamf Protect API Client.</li>
+<li>Playbook_Name: Enter the playbook name here (Ex:JamfProtect_Alert_Status_InProgress).</li>
+</ul>
+</li>
+</ol>
+<h3>Post-Deployment instructions</h3>
+<h4>a. Create Automation Rule</h4>
+<p>Once deployment is complete, optionally we need to create an Incident-based Automation Rule to reflect changes from the Incident in Microsoft Sentinel back to Jamf Protect <a href="https://learn.microsoft.com/en-us/azure/sentinel/automate-incident-handling-with-automation-rules">learn how</a>
+- 1. In Microsoft Sentinel Analytic Rules for Jamf Protect - Alerts should be configured to create an incident.
+- 2. Configure the Automation Rules to trigger this playbook once a incident is status is changed to Active.</p>
+<p><a href="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Jamf%20Protect%/Playbooks/JamfProtect_Alert_Status_InProgress/azuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Jamf%20Protect%/Playbooks/JamfProtect_Alert_Status_InProgress/azuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<h2>Playbook steps explained</h2>
+<h3>Microsoft Sentinel Incident</h3>
+<p>When an Incident is being created and we have an Automation Rule in place to rule this trigger we can use the Incident details.</p>
+<h3>set jamfProtectAlertURL as variable</h3>
+<p>Initialize a string variable which uses the JamfProtectURL Parameter.</p>
+<h3>Generate Access Token</h3>
+<p>This HTTP action will generate an Access Token using the defined parameters.</p>
+<h3>Parse JSON Response from Access Token</h3>
+<p>This action parses the response from the previous HTTP action in a format so we can use it further in the Playbook.</p>
+<h3>Set accessToken as variable</h3>
+<p>Initialize a string variable which uses the Output from the previous JSON parse action.</p>
+<h3>For each</h3>
+<p>Runs a set of actions for each Incident</p>
+<pre><code>### Composing Jam Protect Alert URL
+This action will get the unique vendor URL of the Entities section of the Incident.
+
+### Removing pre-fix of URL and keeping Alert UDID
+This action will get the unique vendor URL and remove the prefixes so we only hold the UUID of the event.
+
+### HTTP POST - Change Alert Status using Jam Protect's GraphQL API Endpoint
+This action will send an HTTP POST request to Jamf Protec's GraphQL endpoints to change the Alert status to InProgress
+
+### Add comment to incident (V3)
+This action creates an Comment in the related Incident that the Alert has been set to InProgress.
+</code></pre>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/jamf-protect.html">Back to Jamf Protect</a></p>
+</div>
+</body>
+</html>

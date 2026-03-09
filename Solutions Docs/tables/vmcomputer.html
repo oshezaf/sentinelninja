@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VMComputer &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>VMComputer</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for VMComputer table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">VMinsights</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/vmcomputer">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (58 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/vmcomputer">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">AgentId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique ID for the microsoft monitoring agent installed on the server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureCloudServiceDeployment</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">For cloud services the deployment id of the server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureCloudServiceInstanceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">For cloud services the instance name of the server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureCloudServiceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">For cloud services the service name of the server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureCloudServiceRoleName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">For cloud services the role name of the server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureCloudServiceRoleType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">For cloud services the role type of the server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureFaultDomain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The fault domain for the server. Only available for Azure VMs and VMSS instances.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureImageOffering</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The description of the image used on the server. Only available for Azure VMs and VMSS instances.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureImagePublisher</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The publisher of the VM image used on the server. Only available for Azure VMs and VMSS instances.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureImageSku</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The sku for the VM image used on the server. Only available for Azure VMs and VMSS instances.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureImageVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The image version used on the server. Only available for Azure VMs and VMSS instances.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureLocation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The location of the server. Only available for Azure VMs and VMSS instances.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureResourceGroup</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The resource group for the server. Only available for Azure VMs and VMSS instances.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureResourceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Azure name for the resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureServiceFabricClusterId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">For service fabric clusters the cluster id of the server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureServiceFabricClusterName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">For service fabric clusters the cluster name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureSize</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The size of the Azure VM. Only available for Azure VMs and VMSS instances.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureSubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The subscription ID of the server. Only available for Azure VMs and VMSS instances.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureUpdateDomain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The update domain of the server. Only available for Azure VMs and VMSS instances.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureVmId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Azure ID of the server. Only available for Azure VMs and VMSS instances.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureVmScaleSetDeployment</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">For scale sets the deployment id of the server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureVmScaleSetInstanceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">For scale sets the instance id of the server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureVmScaleSetName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">For scale sets the name of the scale set.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureVmScaleSetResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">For scale sets the resource id of the scale set.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BootTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The boot time in UTC</td>
+</tr>
+<tr>
+<td style="text-align: left;">Computer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the computer.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cpus</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The number of CPUs</td>
+</tr>
+<tr>
+<td style="text-align: left;">CpuSpeed</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The CPU speed in MHz</td>
+</tr>
+<tr>
+<td style="text-align: left;">DependencyAgentVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The version number of the dependency agent on the server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DisplayName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The display name of the server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsNames</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">An array of DNS names</td>
+</tr>
+<tr>
+<td style="text-align: left;">FullDisplayName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The full display name of the server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HostingProvider</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The hosting provider for the server</td>
+</tr>
+<tr>
+<td style="text-align: left;">HostName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The host name of the server without domain.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HypervisorId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The hypervisor id of the server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HypervisorType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The hypervisor type of the server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ipv4Addresses</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">A list of the server's IPv4 addresses</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ipv4DefaultGateways</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">A list of the server's IPv4 default gateways.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ipv4SubnetMasks</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">A list of the server's IPv4 subnet masks.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ipv6Addresses</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">A list of the server's IPv6 addresses</td>
+</tr>
+<tr>
+<td style="text-align: left;">MacAddresses</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">A list of the server's MAC addresses</td>
+</tr>
+<tr>
+<td style="text-align: left;">Machine</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">AgentId with m- prepended.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperatingSystemFamily</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Value will be windows or linux</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperatingSystemFullName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The full name of the operating system</td>
+</tr>
+<tr>
+<td style="text-align: left;">PhysicalMemoryMB</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The physical memory in MB</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time the record was created.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeZone</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The UTC timezone offset of the server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">VirtualizationState</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Values will be Unknown Physical Virtual or Hypervisor</td>
+</tr>
+<tr>
+<td style="text-align: left;">VirtualMachineHypervisorId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The hypervisor id of the server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VirtualMachineNativeId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The native id of the server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VirtualMachineNativeName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the VM</td>
+</tr>
+<tr>
+<td style="text-align: left;">VirtualMachineType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">hyperv vmware xen and so on</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a></li>
+</ul>
+<hr />
+<h2>Content Items Using This Table (1)</h2>
+<h3>Workbooks (1)</h3>
+<p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.compute/virtualmachines</code></li>
+<li><code>microsoft.conenctedvmwarevsphere/virtualmachines</code></li>
+<li><code>microsoft.azurestackhci/virtualmachines</code></li>
+<li><code>microsoft.scvmm/virtualmachines</code></li>
+<li><code>microsoft.compute/virtualmachinescalesets</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

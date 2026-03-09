@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AADProvisioningLogs &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>AADProvisioningLogs</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for AADProvisioningLogs table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Entra</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadprovisioninglogs">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (28 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadprovisioninglogs">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AADTenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique Azure AD tenant ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">Category</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Category of the event</td>
+</tr>
+<tr>
+<td style="text-align: left;">ChangeId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique ID of this change in this cycle</td>
+</tr>
+<tr>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID to provide provisioning trail</td>
+</tr>
+<tr>
+<td style="text-align: left;">CycleId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique ID per job iteration</td>
+</tr>
+<tr>
+<td style="text-align: left;">DurationMs</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Indicates how long this provisioning action took to finish</td>
+</tr>
+<tr>
+<td style="text-align: left;">Id</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates the unique ID for the activity</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatedBy</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of who initiated this provisioning</td>
+</tr>
+<tr>
+<td style="text-align: left;">JobId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique ID for the whole provisioning job</td>
+</tr>
+<tr>
+<td style="text-align: left;">ModifiedProperties</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of each property that was modified in this provisioning action on this object</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the operation</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The REST API version that's requested by the client</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProvisioningAction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates the activity name or the operation name. For a list of activities logged, refer to Azure AD activity list</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProvisioningStatusInfo</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of provisioning status</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProvisioningSteps</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of each step in provisioning</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResultDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">When available, provides the error description for the provisioning operation</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResultSignature</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Contains the error code, if any, for the provisioning operation</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResultType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The result of the provisioning operation can be Success, Failure, or Skipped</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServicePrincipal</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Represents the service principal used for provisioning</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceIdentity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of source object being provisioned</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetIdentity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of target object being provisioned</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of target system of the object being provisioned</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The date and time of the event in UTC</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/azureactivedirectory.html">Microsoft Entra ID</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

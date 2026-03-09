@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>&lt;img src=&quot;../images/asim-badge.png&quot; alt=&quot;ASIM&quot; height=&quot;32&quot;&gt; NetworkSummarySourceInfo &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1><img src="../images/asim-badge.png" alt="ASIM" height="32"> NetworkSummary_SourceInfo</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>This summary rule aggregates recent network session data using the ASIM normalized _Im_NetworkSession function. It creates 20-minute summaries grouped by product name (vendor-product combination) and device hostname. This helps identify which products and hosts are actively generating network session events in near real time.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Summary Rule</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/network-session-essentials.html">Network Session Essentials</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ID</strong></td>
+<td style="text-align: left;"><code>81337036-2a9c-4677-a426-f2fbd79c346f</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Required Connectors</strong></td>
+<td style="text-align: left;"><a href="../connectors/awss3.html">AWSS3</a>, <a href="../connectors/microsoftthreatprotection.html">MicrosoftThreatProtection</a>, <a href="../connectors/securityevents.html">SecurityEvents</a>, <a href="../connectors/windowssecurityevents.html">WindowsSecurityEvents</a>, <a href="../connectors/windowsforwardedevents.html">WindowsForwardedEvents</a>, <a href="../connectors/zscaler.html">Zscaler</a>, <a href="../connectors/microsoftsysmonforlinux.html">MicrosoftSysmonForLinux</a>, <a href="../connectors/paloaltonetworks.html">PaloAltoNetworks</a>, <a href="../connectors/azuremonitor-vminsights.html">AzureMonitor(VMInsights)</a>, <a href="../connectors/azurefirewall.html">AzureFirewall</a>, <a href="../connectors/azurensg.html">AzureNSG</a>, <a href="../connectors/ciscoasa.html">CiscoASA</a>, <a href="../connectors/ciscoasaama.html">CiscoAsaAma</a>, <a href="../connectors/corelight.html">Corelight</a>, <a href="../connectors/aivectrastream.html">AIVectraStream</a>, <a href="../connectors/checkpoint.html">CheckPoint</a>, <a href="../connectors/fortinet.html">Fortinet</a>, <a href="../connectors/ciscomeraki.html">CiscoMeraki</a></td>
+</tr>
+</tbody>
+</table>
+<h2><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used</h2>
+<p>This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:</p>
+<ul>
+<li><a href="../asim/asimnetworksessionawsvpc.html"><code>_Im_NetworkSession_AWSVPCV03</code></a></li>
+<li><a href="../asim/asimnetworksessionappgatesdp.html"><code>_Im_NetworkSession_AppGateSDPV02</code></a></li>
+<li><a href="../asim/asimnetworksessioncheckpointfirewall.html"><code>_Im_NetworkSession_CheckPointFirewallV11</code></a></li>
+<li><a href="../asim/asimnetworksessionciscoasa.html"><code>_Im_NetworkSession_CiscoASAV10</code></a></li>
+<li><a href="../asim/asimnetworksessionciscofirepower.html"><code>_Im_NetworkSession_CiscoFirepowerV01</code></a></li>
+<li><a href="../asim/asimnetworksessionciscoise.html"><code>_Im_NetworkSession_CiscoISEV11</code></a></li>
+<li><a href="../asim/im-networksession-emptyv03.html"><code>_Im_NetworkSession_EmptyV03</code></a></li>
+<li><a href="../asim/asimnetworksessionforcepointfirewall.html"><code>_Im_NetworkSession_ForcePointFirewallV01</code></a></li>
+<li><a href="../asim/asimnetworksessionfortinetfortigate.html"><code>_Im_NetworkSession_FortinetFortiGateV04</code></a></li>
+<li><a href="../asim/asimnetworksessionlinuxsysmon.html"><code>_Im_NetworkSession_LinuxSysmonV04</code></a></li>
+<li><a href="../asim/asimnetworksessionmicrosoft365defender.html"><code>_Im_NetworkSession_Microsoft365DefenderV04</code></a></li>
+<li><a href="../asim/asimnetworksessionmicrosoftwindowseventfirewall.html"><code>_Im_NetworkSession_MicrosoftWindowsEventFirewallV04</code></a></li>
+<li><a href="../asim/asimnetworksessionnative.html"><code>_Im_NetworkSession_NativeV03</code></a></li>
+<li><a href="../asim/asimnetworksessionpaloaltocef.html"><code>_Im_NetworkSession_PaloAltoCEFV07</code></a></li>
+<li><a href="../asim/asimnetworksessionsonicwallfirewall.html"><code>_Im_NetworkSession_SonicWallFirewallV01</code></a></li>
+<li><a href="../asim/asimnetworksessionvmconnection.html"><code>_Im_NetworkSession_VMConnectionV02</code></a></li>
+<li><a href="../asim/asimnetworksessionwatchguardfirewareos.html"><code>_Im_NetworkSession_WatchGuardFirewareOSV01</code></a></li>
+<li><a href="../asim/asimnetworksessionzscalerzia.html"><code>_Im_NetworkSession_ZscalerZIAV04</code></a></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="summary-rules.html">Back to Summary Rules</a> · <a href="../solutions/network-session-essentials.html">Back to Network Session Essentials</a></p>
+</div>
+</body>
+</html>

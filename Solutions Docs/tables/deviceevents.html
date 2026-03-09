@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DeviceEvents &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>DeviceEvents</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Multiple event types, including events triggered by security controls such as Microsoft Defender Antivirus and exploit protection</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">MDE</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceevents">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceevents-table">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (71 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceevents">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccountDomain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Domain of the account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccountName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User name of the account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccountSid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Security identifier (SID) of the account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of activity that triggered the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AdditionalFields</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Additional information about the entity or event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AppGuardContainerId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier for the virtualized container used by Application Guard to isolate browser activity.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CreatedProcessSessionId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Windows session ID of the created process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the device in the service.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Fully qualified domain name (FQDN) of the device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Domain of the account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileOriginIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address where the file was downloaded from.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileOriginUrl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">URL where the file was downloaded from.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileSize</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Size of the file in bytes.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FolderPath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Domain of the account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessAccountDomain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Domain of the account that ran the process responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessAccountName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User name of the account that ran the process responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessAccountObjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Azure AD object ID of the user account that ran the process responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessAccountSid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Security Identifier (SID) of the account that ran the process responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessAccountUpn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User principal name (UPN) of the account that ran the process responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessCommandLine</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Command line used to run the process that initiated the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessCreationTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the process that initiated the event was started.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessFileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the process that initiated the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessFileSize</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Size in bytes of the file that ran the process responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessFolderPath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Folder containing the process (image file) that initiated the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Process ID (PID) of the process that initiated the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessLogonId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Identifier for a logon session of the process that initiated the event. This identifier is unique on the same machine only between restarts.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessMD5</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">MD5 hash of the process (image file) that initiated the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessParentCreationTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the parent of the process responsible for the event was started.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessParentFileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the parent process that spawned the process responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessParentId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Process ID (PID) of the parent process that spawned the process responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessRemoteSessionDeviceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Device name of the remote device from which the initiating process's RDP session was initiated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessRemoteSessionIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of the remote device from which the initiating process's RDP session was initiated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessSessionId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Windows session ID of the initiating process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessSHA1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SHA-1 hash of the process (image file) that initiated the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessSHA256</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SHA-256 hash of the process (image file) that initiated the event. This field is usually not populated - use the SHA1 column when available.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessUniqueId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the initiating process; this is equal to the Process Start Key in Windows devices.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessVersionInfoCompanyName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Company name from the version information of the process (image file) responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessVersionInfoFileDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Description from the version information of the process (image file) responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessVersionInfoInternalFileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Internal file name from the version information of the process (image file) responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessVersionInfoOriginalFileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Original file name from the version information of the process (image file) responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessVersionInfoProductName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Product name from the version information of the process (image file) responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessVersionInfoProductVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Product version from the version information of the process (image file) responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsInitiatingProcessRemoteSession</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the initiating process was run under a remote desktop protocol (RDP) session (true) or locally (false).</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsProcessRemoteSession</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the created process was run under a remote desktop protocol (RDP) session (true) or locally (false).</td>
+</tr>
+<tr>
+<td style="text-align: left;">LocalIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address assigned to the local machine used during communication.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LocalPort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">TCP port on the local machine used during communication.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogonId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Identifier for a logon session. This identifier is unique on the same machine only between restarts.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MachineGroup</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Machine group of the machine. This group is used by role-based access control to determine access to the machine.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MD5</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">MD5 hash of the file that the recorded action was applied to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessCommandLine</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Command line used to create the new process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessCreationTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time the process was created.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Process ID (PID) of the newly created process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessRemoteSessionDeviceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Device name of the remote device from which the created process's RDP session was initiated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessRemoteSessionIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of the remote device from which the created process's RDP session was initiated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessTokenElevation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the newly created process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RegistryKey</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Registry key that the recorded action was applied to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RegistryValueData</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data of the registry value that the recorded action was applied to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RegistryValueName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the registry value that the recorded action was applied to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteDeviceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the device that performed a remote operation on the affected machine. Depending on the event being reported, this name could be a fully-qualified domain name (FQDN), a NetBIOS name, or a host name without domain information..</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address that was being connected to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemotePort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">TCP port on the remote device that was being connected to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteUrl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">URL or fully qualified domain name (FQDN) that was being connected to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReportId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SHA1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SHA-1 hash of the file that the recorded action was applied to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SHA256</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SHA-256 of the file that the recorded action was applied to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time the event was recorded by the MDE agent on the endpoint.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (9)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a></li>
+<li><a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a></li>
+<li><a href="../solutions/endpoint-threat-protection-essentials.html">Endpoint Threat Protection Essentials</a></li>
+<li><a href="../solutions/falconfriday.html">FalconFriday</a></li>
+<li><a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a></li>
+<li><a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a></li>
+<li><a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a></li>
+<li><a href="../solutions/soc-handbook.html">SOC Handbook</a></li>
+<li><a href="../solutions/zinc-open-source.html">Zinc Open Source</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/microsoftthreatprotection.html">Microsoft Defender XDR</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Content Items Using This Table (29)</h2>
+<h3>Analytic Rules (16)</h3>
+<p><strong>In solution <a href="../solutions/endpoint-threat-protection-essentials.html">Endpoint Threat Protection Essentials</a>:</strong> <code>ActionType == "PowerShellCommand"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/endpoint-threat-protection-essentials-suspicious-powershell-commandlet-executed-b5153fb3-ada9-4ce4-9131-79c771efb50d-34e7bcf0.html">Suspicious Powershell Commandlet Executed</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/falconfriday.html">FalconFriday</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-office-asr-rule-triggered-from-browser-spawned-office-process.-30580043-2451-4d35-b49f-065728529f4a-65634609.html">Office ASR rule triggered from browser spawned office process.</a></td>
+<td style="text-align: left;"><code>ActionType contains "Office"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-suspicious-process-injection-from-office-application-a4d8e681-6f30-440a-a2f3-c312bc1389d0-f6ee7c3b.html">Suspicious Process Injection from Office application</a></td>
+<td style="text-align: left;"><code>ActionType in "CreateRemoteThreadApiCall,QueueUserApcRemoteApiCall,SetThreadContextRemoteApiCall"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-suspicious-named-pipes-ddf7c669-db26-4215-acaf-11e2953a04e6-377a4889.html">Suspicious named pipes</a></td>
+<td style="text-align: left;"><code>ActionType == "NamedPipeEvent"</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-deviceevents-fa566691-42a2-4136-6a8b-ffa3ea510000-675847d2.html">Lumen TI IPAddress in DeviceEvents</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-terminated-employee-exfiltration-to-usb-drive-c5e75cb6-cea0-49c2-a998-da414035aac1-627b05d7.html">Dataverse - Terminated employee exfiltration to USB drive</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-c2-namedpipe-7ce00cba-f76f-4026-ab7f-7e4f1b67bd18-5ae9733b.html">C2-NamedPipe</a></td>
+<td style="text-align: left;"><code>ActionType == "NamedPipeEvent"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-deimos-component-execution-c25a8cd4-5b4a-45a8-9ba0-3b753a652f6b-a4a127b5.html">Deimos Component Execution</a></td>
+<td style="text-align: left;"><code>ActionType == "AmsiScriptContent"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-execution-of-software-vulnerable-to-webp-buffer-overflow-of-cve-2023-4863-26e81021-2de6-4442-a74a-a77885e96911-15de3ea9.html">Execution of software vulnerable to webp buffer overflow of CVE-2023-4863</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-files-copied-to-usb-drives-3ab04acf-e0e7-4f7c-8995-748ab4c848c2-7d23d298.html">Files Copied to USB Drives</a></td>
+<td style="text-align: left;"><code>ActionType in "FileCreated,UsbDriveMounted"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-local-admin-group-changes-63aa43c2-e88e-4102-aea5-0432851c541a-92e9a57c.html">Local Admin Group Changes</a></td>
+<td style="text-align: left;"><code>ActionType == "UserAccountAddedToLocalGroup"</code><br><code>ActionType contains "UserAccountCreated"</code><br><code>ActionType contains "UserAccountModified"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-possible-phishing-with-csl-and-network-sessions-6c3a1258-bcdd-4fcd-b753-1a9bc826ce12-631549a4.html">Possible Phishing with CSL and Network Sessions</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-sunspot-malware-hashes-53e936c6-6c30-4d12-8343-b8a0456e8429-b7f28a72.html">SUNSPOT malware hashes</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-teardrop-memory-only-dropper-738702fd-0a66-42c7-8586-e30f0583f8fe-9b854574.html">TEARDROP memory-only dropper</a></td>
+<td style="text-align: left;"><code>ActionType has "ExploitGuardNonMicrosoftSignedBlocked"</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/zinc-open-source.html">Zinc Open Source</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/zinc-open-source-zinc-actor-iocs-files-october-2022-9a7f6651-801b-491c-a548-8b454b356eaa-72407d32.html">Zinc Actor IOCs files - October 2022</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.html">[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries (9)</h3>
+<p><strong>In solution <a href="../solutions/endpoint-threat-protection-essentials.html">Endpoint Threat Protection Essentials</a>:</strong> <code>ActionType == "PowerShellCommand"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/endpoint-threat-protection-essentials-suspicious-powershell-commandlet-execution-8f424a4c-0487-45a3-92b8-00a7a8745b69-41451793.html">Suspicious Powershell Commandlet Execution</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-dataverse-export-copied-to-usb-devices-f9658e11-e277-4a65-8f91-2cb94cf7497c-664d805c.html">Dataverse - Dataverse export copied to USB devices</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-anomalous-payload-delivered-from-iso-files-14694b88-a6e9-4cd1-9c4a-e382bdd82d8d-9bc45897.html">Anomalous Payload Delivered from ISO files</a></td>
+<td style="text-align: left;"><code>ActionType == "BrowserLaunchedToOpenUrl"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-c2-namedpipe-f78255b6-8f91-4cf3-a25c-e1144b7b5425-80263449.html">C2-NamedPipe</a></td>
+<td style="text-align: left;"><code>ActionType == "NamedPipeEvent"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-deimos-component-execution-fe9edc77-1b6c-4f1e-a223-64b580b50187-8ca8263a.html">Deimos Component Execution</a></td>
+<td style="text-align: left;"><code>ActionType == "AmsiScriptContent"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-files-copied-to-usb-drives-f350f0e7-0e52-434c-a113-197883219f00-69c4055e.html">Files Copied to USB Drives</a></td>
+<td style="text-align: left;"><code>ActionType in "FileCreated,UsbDriveMounted"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-lemonduck-registration-function-147c4c0a-7241-4ce9-9b71-0aecb8a2b59f-ddd37db7.html">LemonDuck Registration Function</a></td>
+<td style="text-align: left;"><code>ActionType == "PowerShellCommand"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-local-admin-group-changes-63142c12-5d8b-48cf-a0f6-b523c855497c-cbc59b70.html">Local Admin Group Changes</a></td>
+<td style="text-align: left;"><code>ActionType == "UserAccountAddedToLocalGroup"</code><br><code>ActionType contains "UserAccountCreated"</code><br><code>ActionType contains "UserAccountModified"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-scheduled-task-creation-1ddee78f-7508-4f4a-9b6b-d2927724217d-545713ce.html">Scheduled Task Creation</a></td>
+<td style="text-align: left;"><code>ActionType == "ScheduledTaskCreated"</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks (4)</h3>
+<p><strong>In solution <a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/continuousdiagnostics&amp;mitigation-continuousdiagnostics&amp;mitigation-d91b4b8c.html">ContinuousDiagnostics&amp;Mitigation</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a>:</strong> <code>ActionType in "Add member to role,Add user,FileCreated,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user,UsbDriveMounted"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.html">CybersecurityMaturityModelCertification_CMMCV2</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>ActionType in "AntivirusDetection,PnpDeviceConnected"</code><br><code>ActionType endswith "Audited"</code><br><code>ActionType endswith "Blocked"</code><br><code>ActionType startswith "Asr"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.html">MicrosoftDefenderForEndPoint</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/soc-handbook.html">SOC Handbook</a>:</strong> <code>ActionType startswith "Asr"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-handbook-attacksurfacereduction-52743d4b.html">AttackSurfaceReduction</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Selection Criteria Summary (13 criteria, 20 total references)</h2>
+<p>References by type: 0 connectors, 20 content items, 0 ASIM parsers, 0 other parsers.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>ActionType == "PowerShellCommand"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType == "NamedPipeEvent"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType in "FileCreated,UsbDriveMounted"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType == "UserAccountAddedToLocalGroup"</code><br><code>ActionType contains "UserAccountCreated"</code><br><code>ActionType contains "UserAccountModified"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType == "AmsiScriptContent"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType contains "Office"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType in "CreateRemoteThreadApiCall,QueueUserApcRemoteApiCall,SetThreadContextRemoteApiCall"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType has "ExploitGuardNonMicrosoftSignedBlocked"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType == "BrowserLaunchedToOpenUrl"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType == "ScheduledTaskCreated"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType in "Add member to role,Add user,FileCreated,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user,UsbDriveMounted"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType in "AntivirusDetection,PnpDeviceConnected"</code><br><code>ActionType endswith "Audited"</code><br><code>ActionType endswith "Blocked"</code><br><code>ActionType startswith "Asr"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType startswith "Asr"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>20</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>20</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>ActionType</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>PowerShellCommand</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>NamedPipeEvent</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>FileCreated</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>UsbDriveMounted</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>UserAccountAddedToLocalGroup</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains UserAccountCreated</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains UserAccountModified</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AmsiScriptContent</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>startswith Asr</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains Office</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CreateRemoteThreadApiCall</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>QueueUserApcRemoteApiCall</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SetThreadContextRemoteApiCall</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has ExploitGuardNonMicrosoftSignedBlocked</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>BrowserLaunchedToOpenUrl</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ScheduledTaskCreated</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Add member to role</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Add user</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>InteractiveLogon</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>RemoteInteractiveLogon</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Reset user password</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ResourceAccess</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Sign-in</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Update user</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AntivirusDetection</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>PnpDeviceConnected</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>endswith Audited</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>endswith Blocked</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

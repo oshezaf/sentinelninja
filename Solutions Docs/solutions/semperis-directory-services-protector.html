@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semperis Directory Services Protector &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Semperis Directory Services Protector</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Semperis%20Directory%20Services%20Protector/Workbooks/Images/Logo/Semperis.svg" alt="Semperis Directory Services Protector Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Semperis</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://www.semperis.com/contact-us/">https://www.semperis.com/contact-us/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Semperis</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2021-10-18</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Semperis%20Directory%20Services%20Protector">Semperis Directory Services Protector</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.semperis.com/ds-protector/">Semperis Directory Services Protector</a> solution provides the capability to ingest Windows event logs (i.e., Indicators of Exposure and Indicators of Compromise) into Microsoft Sentinel.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>a. <a href="https://docs.microsoft.com/azure/azure-monitor/agents/data-sources-custom-logs">Agent based logs collection from Windows and Linux machines</a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/semperisdsp.html">Semperis Directory Services Protector</a></li>
+</ul>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>2 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+<td><a href="../connectors/semperisdsp.html">Semperis Directory Services Protector</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>15 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/semperis-directory-services-protector-semperis-dsp-failed-logons-0e105444-fe13-4ce6-9239-21880076a3f9-2263251b.html">Semperis DSP Failed Logons</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/semperis-directory-services-protector-semperis-dsp-kerberos-krbtgt-account-with-old-password-9ff3b26b-7636-412e-ac46-072b084b94cb-7cfe67a4.html">Semperis DSP Kerberos krbtgt account with old password</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/semperis-directory-services-protector-semperis-dsp-mimikatz's-dcshadow-alert-1a6d0a49-64b3-4ca1-96c3-f154c16c218c-044ebdda.html">Semperis DSP Mimikatz's DCShadow Alert</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/semperis-directory-services-protector-semperis-dsp-operations-critical-notifications-8f471e21-3bb2-466f-9bc2-0a0326a60788-3ceee4d9.html">Semperis DSP Operations Critical Notifications</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, CredentialAccess, ResourceDevelopment</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/semperis-directory-services-protector-semperis-dsp-rbac-changes-e5edf3f3-de53-45e6-b0d7-1ce1c048df4a-21be9fb7.html">Semperis DSP RBAC Changes</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">PrivilegeEscalation, Persistence</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/semperis-directory-services-protector-semperis-dsp-recent-sidhistory-changes-on-ad-objects-64796da3-6383-4de2-9c97-866c83c459ae-0217ae73.html">Semperis DSP Recent sIDHistory changes on AD objects</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">PrivilegeEscalation, Persistence</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/semperis-directory-services-protector-semperis-dsp-well-known-privileged-sids-in-sidhistory-ddd75d93-5b8b-4349-babe-c4e15343c5a3-fe463147.html">Semperis DSP Well-known privileged SIDs in sIDHistory</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">PrivilegeEscalation, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/semperis-directory-services-protector-semperis-dsp-zerologon-vulnerability-85c1f9e4-6f14-46bf-82d5-dbe495b92aab-46434387.html">Semperis DSP Zerologon vulnerability</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/semperis-directory-services-protector-semperisdspadchanges-b1c49b5b.html">SemperisDSPADChanges</a></td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/semperis-directory-services-protector-semperisdspnotifications-fcd6b926.html">SemperisDSPNotifications</a></td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a><br><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/semperis-directory-services-protector-semperisdspquickviewdashboard-72fd1e27.html">SemperisDSPQuickviewDashboard</a></td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a><br><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/semperis-directory-services-protector-semperisdspsecurityindicators-a942a3d9.html">SemperisDSPSecurityIndicators</a></td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a><br><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/semperis-directory-services-protector-semperisdspworkbook-523d6926.html">SemperisDSPWorkbook</a> ⚠️</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/semperis-directory-services-protector-workbooksmetadata-8e76a455.html">workbooksMetadata</a> ⚠️</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/dsp-parser.html">dsp_parser</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.</p>
+</blockquote>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.2</td>
+<td>23-04-2025</td>
+<td>Updated <strong>Analytical Rule</strong> and <strong>Parser</strong></td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>28-03-2025</td>
+<td>Removed duplicate query and fixed query in <strong>Workbook</strong> SemperisDSPSecurityIndicators.</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>18-03-2025</td>
+<td>Fixed correct function name in <strong>Workbook</strong> SemperisDSPSecurityIndicators.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NetworkAccessTraffic &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>NetworkAccessTraffic</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for NetworkAccessTraffic table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">IT &amp; Management Tools, Network, Security</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccesstraffic">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (80 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccesstraffic">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccessType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of accessed application. Access type options: QuickAccess, PrivateAccess.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Action</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The action taken on the network session. Allowed, Denied.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AgentVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The version of the agent connecting.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AIAgentId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique identifier of the AI agent associated with the traffic.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AIAgentName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the AI agent associated with the traffic.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AppId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Destination Application ID accessed in Azure AD during the transaction.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AppSegmentId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Destination Application segment ID from Azure AD accessed during the transaction.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CloudAppCatalogId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The id of the application in the saas application catalog.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CloudAppCategories</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The category list of the cloud application (i.e social media, search, generative AI).</td>
+</tr>
+<tr>
+<td style="text-align: left;">CloudAppCategory</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The category of the cloud application (i.e social media, search, generative AI).</td>
+</tr>
+<tr>
+<td style="text-align: left;">CloudAppComplianceScore</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The compliance score of the application.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CloudAppGeneralScore</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The general score of the application.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CloudAppLegalScore</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The legal score of the application.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CloudAppLoginUser</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The username that was used to log into the application.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CloudAppName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the application (i.e chatGPT, SalesForce, Bing).</td>
+</tr>
+<tr>
+<td style="text-align: left;">CloudAppRiskScore</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The risk score of the application.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConnectionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier representing the connection this traffic log was initiated from.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConnectionStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Status of a connection. Status options: Open, Active, Closed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConnectorId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Private access connector ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConnectorIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Private access connector IP.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConnectorName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Private access connector name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Description</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Additional details describing the traffic.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationFqdn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The destination device hostname, including domain information when available.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address of the connection or session destination.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationPort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The destination IP port.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationUrl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Url link of the connection or session destination.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationWebCategories</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The destination FQDN's Web Categories.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceCategory</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Device type the transaction originated from. Client, Branch.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the source device as reported in the record.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceOperatingSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The client connecting operating system type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceOperatingSystemVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The client connecting operating system version.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsResponseOrigin</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The origin of the DNS response for the traffic. Possible values: Cache, Onprem.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FilteringProfileId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the Filtering Profile associated with the action performed on traffic.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FilteringProfileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the Filtering Profile associated with the action performed on traffic.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpMethod</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The http method used in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpRequestContentType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The content type specified in the HTTP request header.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpResponseContentType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The content type specified in the HTTP response header.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpUserAgent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The user agent string from the HTTP request header.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The process initiating the traffic transaction.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkProtocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The network protocol, IPv6 or IPv4.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OriginHeader</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The origin header value.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PolicyId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the policy for which the request was denied by its rule.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PolicyName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the filtering policy associated with the action performed on traffic.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PolicyRuleId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the rule for which the request was denied by.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessingRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Region where the request was processed by the backend service.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReceivedBytes</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The number of bytes received.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReferrerHeader</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Referer header value.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteNetworkId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID from which traffic was sent or received, providing visibility into the origin of the traffic.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceTenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Tenant ID that owns the resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseCode</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The response code returned from the server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RuleName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the rule associated with the action performed on traffic.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SentBytes</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The number of bytes sent.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SessionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier representing the session.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address from which the connection or session originated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourcePort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The IP port from which the connection originated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The identified threat type associated with the traffic.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The date and time (UTC) that the event was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TlsAction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The TLS action taken on the traffic.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TlsPolicyId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique token identifier of the TLS policy applied to the traffic.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TlsPolicyName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name for the TLS policy applied to the traffic.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TlsRuleId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique identifier of the TLS rule applied to the traffic.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TlsRuleName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the TLS rule applied to the traffic.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TlsStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The status of the Tls option.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Token3PExpiry</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The expiry date of the access token used to access the private access application.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Token3PIssuedAt</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The issued date of the access token used to access the private access application.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Token3PUniqueId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique token identifier of the access token used to access the private access application.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Token3PValidFrom</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The validity date of the access token used to access the private access application.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TrafficType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the target destination traffic.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TransactionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier that representing a roundtrip of request response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TransportProtocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP protocol used by the connection or session as listed in IANA protocol assignment.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">UniqueTokenId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique token identifier.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A machine-readable, alphanumeric, unique representation of the source user.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserPrincipalName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source username, including domain information when available.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VendorNames</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the vendors who detected the threat.</td>
+</tr>
+<tr>
+<td style="text-align: left;">XForwardedFor</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">X-Forwarded-For header of the HTTP request.</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (2)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/global-secure-access.html">Global Secure Access</a></li>
+<li><a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/azureactivedirectory.html">Microsoft Entra ID</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Content Items Using This Table (9)</h2>
+<h3>Analytic Rules (7)</h3>
+<p><strong>In solution <a href="../solutions/global-secure-access.html">Global Secure Access</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/global-secure-access-gsa-detect-abnormal-deny-rate-for-source-to-destination-ip-e3b6a9e7-4c3a-45e6-8baf-1d3bfa8e0c2b-aebab9fd.html">GSA - Detect Abnormal Deny Rate for Source to Destination IP</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/global-secure-access-gsa-detect-connections-outside-operational-hours-4c9f0a9e-44d7-4c9b-b7f0-f6a6e0d8f8fa-4e59bfee.html">GSA - Detect Connections Outside Operational Hours</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/global-secure-access-gsa-detect-protocol-changes-for-destination-ports-f6a8d6a5-3e9f-47c8-a8d5-1b2b9d3b7d6a-c17b64bc.html">GSA - Detect Protocol Changes for Destination Ports</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/global-secure-access-gsa-detect-source-ip-scanning-multiple-open-ports-82cfa6b9-5f7e-4b8b-8b2f-a63f21b7a7d1-5a266ab8.html">GSA - Detect Source IP Scanning Multiple Open Ports</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/global-secure-access-gsa-ti-domain-entity-4ef07345-5d89-4f5b-9c64-a180d81a6176-c4743d20.html">GSA - TI Domain Entity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/global-secure-access-gsa-ti-ip-entity-3ebd25b1-6f54-49f9-b5a5-0246357ce4ca-9601350c.html">GSA - TI IP Entity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/global-secure-access-gsa-ti-url-entity-347c6cb3-33d2-4753-b7f6-eab946a8cd51-ab57a79a.html">GSA - TI URL Entity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks (2)</h3>
+<p><strong>In solution <a href="../solutions/global-secure-access.html">Global Secure Access</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/global-secure-access-gsam365enrichedevents-b8162378.html">GSAM365EnrichedEvents</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/global-secure-access-gsanetworktraffic-b1c45294.html">GSANetworkTraffic</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jamf Protect &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Jamf Protect</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/jamf_logo.svg" alt="Jamf Protect Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Jamf Software, LLC</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://www.jamf.com/support/">https://www.jamf.com/support/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.3.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Thijs Xhaflaire - thijs.xhaflaire@jamf.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-10-10</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2025-09-02</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Jamf%20Protect">Jamf Protect</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.jamf.com/solutions/threat-prevention-remediation/">Jamf Protect</a> solution for Microsoft Sentinel enables you to ingest <a href="https://docs.jamf.com/jamf-protect/documentation/Data_Forwarding_to_a_Third_Party_Storage_Solution.html#task-4227">Jamf Protect events</a> forwarded into Microsoft Sentinel using the Microsoft Sentinel Analytics Workspace.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/jamfprotectpush.html">Jamf Protect Push Connector</a></li>
+</ul>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>4 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/jamfprotect-cl.html"><code>jamfprotect_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/jamfprotectalerts-cl.html"><code>jamfprotectalerts_CL</code></a></td>
+<td><a href="../connectors/jamfprotectpush.html">Jamf Protect Push Connector</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/jamfprotecttelemetryv2-cl.html"><code>jamfprotecttelemetryv2_CL</code></a></td>
+<td><a href="../connectors/jamfprotectpush.html">Jamf Protect Push Connector</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/jamfprotectunifiedlogs-cl.html"><code>jamfprotectunifiedlogs_CL</code></a></td>
+<td><a href="../connectors/jamfprotectpush.html">Jamf Protect Push Connector</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>12 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/jamf-protect-jamf-protect-alerts-6098daa0-f05e-44d5-b5a0-913e63ba3179-38dbdadd.html">Jamf Protect - Alerts</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/jamfprotectalerts-cl.html"><code>jamfprotectalerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/jamf-protect-jamf-protect-network-threats-44da53c3-f3b0-4b70-afff-f79275cb9442-34cfd4a7.html">Jamf Protect - Network Threats</a></td>
+<td style="text-align: left;">Informational</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/jamfprotect-cl.html"><code>jamfprotect_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/jamf-protect-jamf-protect-unified-logs-9eb2f758-003b-4303-83c6-97aed4c03e41-73a1260b.html">Jamf Protect - Unified Logs</a></td>
+<td style="text-align: left;">Informational</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/jamfprotectunifiedlogs-cl.html"><code>jamfprotectunifiedlogs_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/jamf-protect-jamfprotectdashboard-b0beeadb.html">JamfProtectDashboard</a></td>
+<td style="text-align: left;"><a href="../tables/jamfprotectalerts-cl.html"><code>jamfprotectalerts_CL</code></a><br><a href="../tables/jamfprotecttelemetryv2-cl.html"><code>jamfprotecttelemetryv2_CL</code></a><br><a href="../tables/jamfprotectunifiedlogs-cl.html"><code>jamfprotectunifiedlogs_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/jamf-protect-jamf-protect-remote-lock-computer-with-jamf-pro-14be386b.html">Jamf Protect - Remote lock computer with Jamf Pro</a></td>
+<td style="text-align: left;">This Playbook can be used manually or in a Automation Rule to send an remote MDM command with Jamf P...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/jamf-protect-jamf-protect-set-alert-to-in-progress-81a20419.html">Jamf Protect - Set Alert to In Progress</a></td>
+<td style="text-align: left;">This Jamf Protect Playbook can be used manually or in a Automation Rule to change the state of the A...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/jamf-protect-jamf-protect-set-alert-to-resolved-1a7def5b.html">Jamf Protect - Set Alert to Resolved</a></td>
+<td style="text-align: left;">This Jamf Protect Playbook can be used manually or in a Automation Rule to change the state of the A...</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/jamfprotectalerts.html">JamfProtectAlerts</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/jamfprotectalerts-cl.html"><code>jamfprotectalerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/jamfprotectnetworktraffic.html">JamfProtectNetworkTraffic</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/jamfprotect-cl.html"><code>jamfprotect_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/jamfprotecttelemetry.html">JamfProtectTelemetry</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/jamfprotecttelemetryv2-cl.html"><code>jamfprotecttelemetryv2_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/jamfprotectthreatevents.html">JamfProtectThreatEvents</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/jamfprotect-cl.html"><code>jamfprotect_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/jamfprotectunifiedlogs.html">JamfProtectUnifiedLogs</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/jamfprotectunifiedlogs-cl.html"><code>jamfprotectunifiedlogs_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.3.0</td>
+<td>02-09-2025</td>
+<td>Adding support for newly added event types in Telemetry, TCC_MODIFY,NETWORK_CONNECT, PTY_GRANT, PTY_CLOSE and some enhancements to mount and process object mapping.</td>
+</tr>
+<tr>
+<td>3.2.4</td>
+<td>27-03-2025</td>
+<td>Resolving issues related to the new Push Connector and the DCE/DCRs. Removing support for Telemetry Legacy in this newer Push Connector. Removing Hunting Queries as they were not relevant anymore. Updated Analytic Rules and Workbooks to work with the updated parsers, the single parser got split up to be more useful to customers that only use certain features.</td>
+</tr>
+<tr>
+<td>3.2.1</td>
+<td>24-02-2025</td>
+<td>Adding support for the newly released <code>gatekeeper_user_override</code> event and removing totalRetentionInDays from the Push Connector.</td>
+</tr>
+<tr>
+<td>3.2.0</td>
+<td>04-02-2025</td>
+<td>Added new CCP <strong>Data Connector</strong> to the Solution.</td>
+</tr>
+<tr>
+<td>3.1.1</td>
+<td>30-04-2024</td>
+<td>Repackaged for parser issue fix while reinstall.</td>
+</tr>
+<tr>
+<td>3.1.0</td>
+<td>12-01-2024</td>
+<td>Improved data normalization in the parser JamfProtect, ParentProcess is better mapped now, productVersion has been added and more. Added new macOS Hunting Queries including recent malware IOCs.</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>05-12-2023</td>
+<td>Minor tweak to parser related to signerType</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>20-10-2023</td>
+<td>Added <strong>Parser</strong> for parsing jamfprotect_CL raw logs.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Modified existing <strong>Analytic Rules</strong> &amp; <strong>Workbooks</strong> to make use of newly added parser in this release.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Added macOS Threat Hunting <strong>Hunting Queries</strong> for hunting macOS specific threats retrospectivly</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Added <strong>Playbooks</strong> for interacting with the Jamf Protect and Jamf Pro API's, including Remote Locking a computer, and changes Alert statusses based on a Microsoft Sentinel incident.</td>
+</tr>
+<tr>
+<td>2.1.1</td>
+<td>03-03-2023</td>
+<td>Updating <strong>Analytic Rules</strong> to include MITRE Tactics and Techniques.</td>
+</tr>
+<tr>
+<td>2.1.0</td>
+<td>10-02-2023</td>
+<td>Added <strong>Data Connector</strong> for monitoring logs</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Added <strong>Analytics Rules</strong> for automated incident creation within Microsoft Sentinel</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Improved <strong>Workbook</strong> and added Endpoint Telemetry</td>
+</tr>
+<tr>
+<td>2.0.0</td>
+<td>12-10-2022</td>
+<td>Initial Solution Release</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

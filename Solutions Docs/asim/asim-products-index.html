@@ -1,0 +1,2789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>&lt;img src=&quot;../images/asim-badge.png&quot; alt=&quot;ASIM&quot; height=&quot;32&quot;&gt; ASIM Parsers by Product &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1><img src="../images/asim-badge.png" alt="ASIM" height="32"> ASIM Parsers by Product</h1>
+<p>This index organizes ASIM parsers by the product or data source they normalize. Use this view to find ASIM support for a specific product, including which schemas are supported and which tables contain the source data.</p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <strong>ASIM Products</strong> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<hr />
+<p><strong>80 products</strong> with 82 source parser pairs covering 11 schemas. See <a href="../statistics.html">📊 Statistics</a> for detailed breakdowns.</p>
+<h2>Products Overview</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Product</th>
+<th style="text-align: right;">Parsers</th>
+<th style="text-align: right;">Schemas</th>
+<th style="text-align: right;">Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="#apache-http-server">Apache HTTP Server</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#appgate-sdp">AppGate SDP</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#aws">AWS</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#aws-vpc">AWS VPC</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#azure-firewall">Azure Firewall</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#azure-nsg-flows">Azure NSG flows</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#azure-ntanetanalytics">Azure NTANetAnalytics</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#barracuda-waf">Barracuda WAF</a></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#checkpointfirewall">CheckPointFirewall</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#cisco-adaptive-security-appliance-asa">Cisco Adaptive Security Appliance (ASA)</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#cisco-firepower">Cisco Firepower</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#cisco-ise">Cisco ISE</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#cisco-meraki">Cisco Meraki</a></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#cisco-umbrella">Cisco Umbrella</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#ciscoasa">CiscoASA</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#citrix-netscaler">Citrix NetScaler</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#corelight-zeek">Corelight Zeek</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#crowdstrike-falcon-endpoint-protection">CrowdStrike Falcon Endpoint Protection</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#f5-big-ip-application-security-manager-asm">F5 BIG-IP Application Security Manager (ASM)</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#forcepointfirewall">ForcePointFirewall</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#fortinet-fortigate">Fortinet FortiGate</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#gcp-cloud-dns">GCP Cloud DNS</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#google-workspace">Google Workspace</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#illumio">Illumio</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#illumio-core">Illumio Core</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#illumio-saas-core">Illumio SaaS Core</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#infoblox-bloxone">Infoblox BloxOne</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#infoblox-nios">Infoblox NIOS</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#internet-information-services-iis">Internet Information Services (IIS)</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#m365-defender-for-endpoint">M365 Defender for EndPoint</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#m365-defender-for-endpoint">M365 Defender for Endpoint</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#microsoft">Microsoft</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#microsoft-365-defender-for-endpoint">Microsoft 365 Defender for EndPoint</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#microsoft-365-defender-for-endpoint">Microsoft 365 Defender for endpoint</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#microsoft-365-defender-for-endpoint">Microsoft 365 Defender for Endpoint</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#microsoft-azure">Microsoft Azure</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#microsoft-azure-blob-storage">Microsoft Azure Blob Storage</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#microsoft-azure-file-storage">Microsoft Azure File Storage</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#microsoft-azure-queue-storage">Microsoft Azure Queue Storage</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#microsoft-azure-table-storage">Microsoft Azure Table Storage</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#microsoft-defender-for-iot">Microsoft Defender for IoT</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#microsoft-defender-xdr">Microsoft Defender XDR</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#microsoft-entra-id">Microsoft Entra ID</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#microsoft-security-event">Microsoft Security Event</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#microsoft-sharepoint">Microsoft SharePoint</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#microsoft-sysmon">Microsoft Sysmon</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#microsoft-sysmon-for-linux">Microsoft Sysmon for Linux</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#microsoft-windows">Microsoft Windows</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#microsoft-windows-event">Microsoft Windows Event</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#microsoft-windows-events">Microsoft Windows Events</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#microsoft-windows-events-sysmon">Microsoft Windows Events Sysmon</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#ms-dns-events">MS DNS Events</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#native">Native</a></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#okta">Okta</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#openssh">OpenSSH</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#palo-alto-cortex-data-lake">Palo Alto Cortex Data Lake</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#palo-alto-networks">Palo Alto Networks</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#palo-alto-panos">Palo Alto PanOS</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#postgresql">PostgreSQL</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#salesforce-service-cloud">Salesforce Service Cloud</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#security-events">Security Events</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#sentinelone">SentinelOne</a></td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#sonicwall">SonicWall</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#squid-proxy">Squid Proxy</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#su">su</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#sudo">sudo</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#sysmon">Sysmon</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#sysmon-for-linux">Sysmon for Linux</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#trend-micro-vision-one">Trend Micro Vision One</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#vectra">Vectra</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#vectra-ai-streams">Vectra AI Streams</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#vmconnection">VMConnection</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#vmware-carbon-black-cloud">VMware Carbon Black Cloud</a></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#watchguard-fireware-os">WatchGuard Fireware OS</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#windows-firewall">Windows Firewall</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#windows-security-events">Windows Security Events</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#windows-sysmon">Windows Sysmon</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#zscaler-zia">Zscaler ZIA</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#zscaler-zia-dns">Zscaler ZIA DNS</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#zscaler-zia-firewall">Zscaler ZIA Firewall</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+<h2>Apache HTTP Server</h2>
+<p><strong>Schemas:</strong> WebSession</p>
+<p><strong>Tables:</strong> <a href="../tables/apachehttpserver-cl.html">ApacheHTTPServer_CL</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimwebsessionapachehttpserver.html">ASimWebSessionApacheHTTPServer</a><br>vim: <a href="vimwebsessionapachehttpserver.html">vimWebSessionApacheHTTPServer</a></td>
+<td style="text-align: left;">WebSession</td>
+<td style="text-align: left;"><a href="../tables/apachehttpserver-cl.html">ApacheHTTPServer_CL</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+</tbody>
+</table>
+<h2>AppGate SDP</h2>
+<p><strong>Schemas:</strong> NetworkSession</p>
+<p><strong>Tables:</strong> <a href="../tables/syslog.html">Syslog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionappgatesdp.html">ASimNetworkSessionAppGateSDP</a><br>vim: <a href="vimnetworksessionappgatesdp.html">vimNetworkSessionAppGateSDP</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/syslog.html">Syslog</a></td>
+<td style="text-align: left;">0.2.0</td>
+</tr>
+</tbody>
+</table>
+<h2>AWS</h2>
+<p><strong>Schemas:</strong> Authentication</p>
+<p><strong>Tables:</strong> <a href="../tables/awscloudtrail.html">AWSCloudTrail</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationawscloudtrail.html">ASimAuthenticationAWSCloudTrail</a><br>vim: <a href="vimauthenticationawscloudtrail.html">vimAuthenticationAWSCloudTrail</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/awscloudtrail.html">AWSCloudTrail</a></td>
+<td style="text-align: left;">0.2.2</td>
+</tr>
+</tbody>
+</table>
+<h2>AWS VPC</h2>
+<p><strong>Schemas:</strong> NetworkSession</p>
+<p><strong>Tables:</strong> <a href="../tables/awsvpcflow.html">AWSVPCFlow</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionawsvpc.html">ASimNetworkSessionAWSVPC</a><br>vim: <a href="vimnetworksessionawsvpc.html">vimNetworkSessionAWSVPC</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/awsvpcflow.html">AWSVPCFlow</a></td>
+<td style="text-align: left;">0.3</td>
+</tr>
+</tbody>
+</table>
+<h2>Azure Firewall</h2>
+<p><strong>Schemas:</strong> Dns, NetworkSession, WebSession</p>
+<p><strong>Tables:</strong> <a href="../tables/azfwapplicationrule.html">AZFWApplicationRule</a>, <a href="../tables/azfwdnsquery.html">AZFWDnsQuery</a>, <a href="../tables/azfwidpssignature.html">AZFWIdpsSignature</a>, <a href="../tables/azfwnatrule.html">AZFWNatRule</a>, <a href="../tables/azfwnetworkrule.html">AZFWNetworkRule</a>, <a href="../tables/azfwthreatintel.html">AZFWThreatIntel</a>, <a href="../tables/azurediagnostics.html">AzureDiagnostics</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimdnsazurefirewall.html">ASimDnsAzureFirewall</a><br>vim: <a href="vimdnsazurefirewall.html">vimDnsAzureFirewall</a></td>
+<td style="text-align: left;">Dns</td>
+<td style="text-align: left;"><a href="../tables/azfwdnsquery.html">AZFWDnsQuery</a>, <a href="../tables/azurediagnostics.html">AzureDiagnostics</a></td>
+<td style="text-align: left;">0.4.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionazurefirewall.html">ASimNetworkSessionAzureFirewall</a><br>vim: <a href="vimnetworksessionazurefirewall.html">vimNetworkSessionAzureFirewall</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/azfwidpssignature.html">AZFWIdpsSignature</a>, <a href="../tables/azfwnatrule.html">AZFWNatRule</a>, <a href="../tables/azfwnetworkrule.html">AZFWNetworkRule</a>, <a href="../tables/azfwthreatintel.html">AZFWThreatIntel</a>, <a href="../tables/azurediagnostics.html">AzureDiagnostics</a></td>
+<td style="text-align: left;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimwebsessionazurefirewall.html">ASimWebSessionAzureFirewall</a><br>vim: <a href="vimwebsessionazurefirewall.html">vimWebSessionAzureFirewall</a></td>
+<td style="text-align: left;">WebSession</td>
+<td style="text-align: left;"><a href="../tables/azfwapplicationrule.html">AZFWApplicationRule</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+</tbody>
+</table>
+<h2>Azure NSG flows</h2>
+<p><strong>Schemas:</strong> NetworkSession</p>
+<p><strong>Tables:</strong> <a href="../tables/azurenetworkanalytics-cl.html">AzureNetworkAnalytics_CL</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionazurensg.html">ASimNetworkSessionAzureNSG</a><br>vim: <a href="vimnetworksessionazurensg.html">vimNetworkSessionAzureNSG</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/azurenetworkanalytics-cl.html">AzureNetworkAnalytics_CL</a></td>
+<td style="text-align: left;">0.1.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Azure NTANetAnalytics</h2>
+<p><strong>Schemas:</strong> NetworkSession</p>
+<p><strong>Tables:</strong> <a href="../tables/ntanetanalytics.html">NTANetAnalytics</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionntanetanalytics.html">ASimNetworkSessionNTANetAnalytics</a><br>vim: <a href="vimnetworksessionntanetanalytics.html">vimNetworkSessionNTANetAnalytics</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/ntanetanalytics.html">NTANetAnalytics</a></td>
+<td style="text-align: left;">0.1.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Barracuda WAF</h2>
+<p><strong>Schemas:</strong> AuditEvent, Authentication, NetworkSession, WebSession</p>
+<p><strong>Tables:</strong> <a href="../tables/commonsecuritylog.html">CommonSecurityLog</a>, <a href="../tables/barracuda-cl.html">barracuda_CL</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauditeventbarracudacef.html">ASimAuditEventBarracudaCEF</a><br>vim: <a href="vimauditeventbarracudacef.html">vimAuditEventBarracudaCEF</a></td>
+<td style="text-align: left;">AuditEvent</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.2.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauditeventbarracudawaf.html">ASimAuditEventBarracudaWAF</a><br>vim: <a href="vimauditeventbarracudawaf.html">vimAuditEventBarracudaWAF</a></td>
+<td style="text-align: left;">AuditEvent</td>
+<td style="text-align: left;"><a href="../tables/barracuda-cl.html">barracuda_CL</a></td>
+<td style="text-align: left;">0.2.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationbarracudawaf.html">ASimAuthenticationBarracudaWAF</a><br>vim: <a href="vimauthenticationbarracudawaf.html">vimAuthenticationBarracudaWAF</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a>, <a href="../tables/barracuda-cl.html">barracuda_CL</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionbarracudacef.html">ASimNetworkSessionBarracudaCEF</a><br>vim: <a href="vimnetworksessionbarracudacef.html">vimNetworkSessionBarracudaCEF</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.2.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionbarracudawaf.html">ASimNetworkSessionBarracudaWAF</a><br>vim: <a href="vimnetworksessionbarracudawaf.html">vimNetworkSessionBarracudaWAF</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/barracuda-cl.html">barracuda_CL</a></td>
+<td style="text-align: left;">0.2.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimwebsessionbarracudacef.html">ASimWebSessionBarracudaCEF</a><br>vim: <a href="vimwebsessionbarracudacef.html">vimWebSessionBarracudaCEF</a></td>
+<td style="text-align: left;">WebSession</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.2.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimwebsessionbarracudawaf.html">ASimWebSessionBarracudaWAF</a><br>vim: <a href="vimwebsessionbarracudawaf.html">vimWebSessionBarracudaWAF</a></td>
+<td style="text-align: left;">WebSession</td>
+<td style="text-align: left;"><a href="../tables/barracuda-cl.html">barracuda_CL</a></td>
+<td style="text-align: left;">0.2.2</td>
+</tr>
+</tbody>
+</table>
+<h2>CheckPointFirewall</h2>
+<p><strong>Schemas:</strong> NetworkSession</p>
+<p><strong>Tables:</strong> <a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessioncheckpointfirewall.html">ASimNetworkSessionCheckPointFirewall</a><br>vim: <a href="vimnetworksessioncheckpointfirewall.html">vimNetworkSessionCheckPointFirewall</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">1.2.0</td>
+</tr>
+</tbody>
+</table>
+<h2>Cisco Adaptive Security Appliance (ASA)</h2>
+<p><strong>Schemas:</strong> Authentication</p>
+<p><strong>Tables:</strong> <a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationciscoasa.html">ASimAuthenticationCiscoASA</a><br>vim: <a href="vimauthenticationciscoasa.html">vimAuthenticationCiscoASA</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.1.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Cisco Firepower</h2>
+<p><strong>Schemas:</strong> NetworkSession, WebSession</p>
+<p><strong>Tables:</strong> <a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionciscofirepower.html">ASimNetworkSessionCiscoFirepower</a><br>vim: <a href="vimnetworksessionciscofirepower.html">vimNetworkSessionCiscoFirepower</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimwebsessionciscofirepower.html">ASimWebSessionCiscoFirepower</a><br>vim: <a href="vimwebsessionciscofirepower.html">vimWebSessionCiscoFirepower</a></td>
+<td style="text-align: left;">WebSession</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+</tbody>
+</table>
+<h2>Cisco ISE</h2>
+<p><strong>Schemas:</strong> AuditEvent, Authentication, NetworkSession, UserManagement</p>
+<p><strong>Tables:</strong> <a href="../tables/syslog.html">Syslog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauditeventciscoise.html">ASimAuditEventCiscoISE</a><br>vim: <a href="vimauditeventciscoise.html">vimAuditEventCiscoISE</a></td>
+<td style="text-align: left;">AuditEvent</td>
+<td style="text-align: left;"><a href="../tables/syslog.html">Syslog</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationciscoise.html">ASimAuthenticationCiscoISE</a><br>vim: <a href="vimauthenticationciscoise.html">vimAuthenticationCiscoISE</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/syslog.html">Syslog</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionciscoise.html">ASimNetworkSessionCiscoISE</a><br>vim: <a href="vimnetworksessionciscoise.html">vimNetworkSessionCiscoISE</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/syslog.html">Syslog</a></td>
+<td style="text-align: left;">1.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimusermanagementciscoise.html">ASimUserManagementCiscoISE</a><br>vim: <a href="vimusermanagementciscoise.html">vimUserManagementCiscoISE</a></td>
+<td style="text-align: left;">UserManagement</td>
+<td style="text-align: left;"><a href="../tables/syslog.html">Syslog</a></td>
+<td style="text-align: left;">0.1.2</td>
+</tr>
+</tbody>
+</table>
+<h2>Cisco Meraki</h2>
+<p><strong>Schemas:</strong> AuditEvent, Authentication, NetworkSession, WebSession</p>
+<p><strong>Tables:</strong> <a href="../tables/syslog.html">Syslog</a>, <a href="../tables/meraki-cl.html">meraki_CL</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauditeventciscomeraki.html">ASimAuditEventCiscoMeraki</a><br>vim: <a href="vimauditeventciscomeraki.html">vimAuditEventCiscoMeraki</a></td>
+<td style="text-align: left;">AuditEvent</td>
+<td style="text-align: left;"><a href="../tables/meraki-cl.html">meraki_CL</a></td>
+<td style="text-align: left;">0.2.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauditeventciscomerakisyslog.html">ASimAuditEventCiscoMerakiSyslog</a><br>vim: <a href="vimauditeventciscomerakisyslog.html">vimAuditEventCiscoMerakiSyslog</a></td>
+<td style="text-align: left;">AuditEvent</td>
+<td style="text-align: left;"><a href="../tables/syslog.html">Syslog</a></td>
+<td style="text-align: left;">0.2.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationciscomeraki.html">ASimAuthenticationCiscoMeraki</a><br>vim: <a href="vimauthenticationciscomeraki.html">vimAuthenticationCiscoMeraki</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/meraki-cl.html">meraki_CL</a></td>
+<td style="text-align: left;">0.2.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationciscomerakisyslog.html">ASimAuthenticationCiscoMerakiSyslog</a><br>vim: <a href="vimauthenticationciscomerakisyslog.html">vimAuthenticationCiscoMerakiSyslog</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/syslog.html">Syslog</a></td>
+<td style="text-align: left;">0.2.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionciscomeraki.html">ASimNetworkSessionCiscoMeraki</a><br>vim: <a href="vimnetworksessionciscomeraki.html">vimNetworkSessionCiscoMeraki</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/meraki-cl.html">meraki_CL</a></td>
+<td style="text-align: left;">1.2.2</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionciscomerakisyslog.html">ASimNetworkSessionCiscoMerakiSyslog</a><br>vim: <a href="vimnetworksessionciscomerakisyslog.html">vimNetworkSessionCiscoMerakiSyslog</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/syslog.html">Syslog</a></td>
+<td style="text-align: left;">1.2.2</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimwebsessionciscomeraki.html">ASimWebSessionCiscoMeraki</a><br>vim: <a href="vimwebsessionciscomeraki.html">vimWebSessionCiscoMeraki</a></td>
+<td style="text-align: left;">WebSession</td>
+<td style="text-align: left;"><a href="../tables/syslog.html">Syslog</a>, <a href="../tables/meraki-cl.html">meraki_CL</a></td>
+<td style="text-align: left;">0.1.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Cisco Umbrella</h2>
+<p><strong>Schemas:</strong> Dns</p>
+<p><strong>Tables:</strong> <a href="../tables/cisco-umbrella-dns-cl.html">Cisco_Umbrella_dns_CL</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimdnsciscoumbrella.html">ASimDnsCiscoUmbrella</a><br>vim: <a href="vimdnsciscoumbrella.html">vimDnsCiscoUmbrella</a></td>
+<td style="text-align: left;">Dns</td>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-dns-cl.html">Cisco_Umbrella_dns_CL</a></td>
+<td style="text-align: left;">0.3</td>
+</tr>
+</tbody>
+</table>
+<h2>CiscoASA</h2>
+<p><strong>Schemas:</strong> NetworkSession</p>
+<p><strong>Tables:</strong> <a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionciscoasa.html">ASimNetworkSessionCiscoASA</a><br>vim: <a href="vimnetworksessionciscoasa.html">vimNetworkSessionCiscoASA</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">1.1.0</td>
+</tr>
+</tbody>
+</table>
+<h2>Citrix NetScaler</h2>
+<p><strong>Schemas:</strong> WebSession</p>
+<p><strong>Tables:</strong> <a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimwebsessioncitrixnetscaler.html">ASimWebSessionCitrixNetScaler</a><br>vim: <a href="vimwebsessioncitrixnetscaler.html">vimWebSessionCitrixNetScaler</a></td>
+<td style="text-align: left;">WebSession</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.1.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Corelight Zeek</h2>
+<p><strong>Schemas:</strong> Dns, NetworkSession</p>
+<p><strong>Tables:</strong> <a href="../tables/corelight-cl.html">Corelight_CL</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimdnscorelightzeek.html">ASimDnsCorelightZeek</a><br>vim: <a href="vimdnscorelightzeek.html">vimDnsCorelightZeek</a></td>
+<td style="text-align: left;">Dns</td>
+<td style="text-align: left;"><a href="../tables/corelight-cl.html">Corelight_CL</a></td>
+<td style="text-align: left;">0.5.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessioncorelightzeek.html">ASimNetworkSessionCorelightZeek</a><br>vim: <a href="vimnetworksessioncorelightzeek.html">vimNetworkSessionCorelightZeek</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/corelight-cl.html">Corelight_CL</a></td>
+<td style="text-align: left;">0.2</td>
+</tr>
+</tbody>
+</table>
+<h2>CrowdStrike Falcon Endpoint Protection</h2>
+<p><strong>Schemas:</strong> AuditEvent, Authentication, NetworkSession</p>
+<p><strong>Tables:</strong> <a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauditeventcrowdstrikefalconhost.html">ASimAuditEventCrowdStrikeFalconHost</a><br>vim: <a href="vimauditeventcrowdstrikefalconhost.html">vimAuditEventCrowdStrikeFalconHost</a></td>
+<td style="text-align: left;">AuditEvent</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationcrowdstrikefalconhost.html">ASimAuthenticationCrowdStrikeFalconHost</a><br>vim: <a href="vimauthenticationcrowdstrikefalconhost.html">vimAuthenticationCrowdStrikeFalconHost</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessioncrowdstrikefalconhost.html">ASimNetworkSessionCrowdStrikeFalconHost</a><br>vim: <a href="vimnetworksessioncrowdstrikefalconhost.html">vimNetworkSessionCrowdStrikeFalconHost</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+</tbody>
+</table>
+<h2>F5 BIG-IP Application Security Manager (ASM)</h2>
+<p><strong>Schemas:</strong> WebSession</p>
+<p><strong>Tables:</strong> <a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimwebsessionf5asm.html">ASimWebSessionF5ASM</a><br>vim: <a href="vimwebsessionf5asm.html">vimWebSessionF5ASM</a></td>
+<td style="text-align: left;">WebSession</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+</tbody>
+</table>
+<h2>ForcePointFirewall</h2>
+<p><strong>Schemas:</strong> NetworkSession</p>
+<p><strong>Tables:</strong> <a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionforcepointfirewall.html">ASimNetworkSessionForcePointFirewall</a><br>vim: <a href="vimnetworksessionforcepointfirewall.html">vimNetworkSessionForcePointFirewall</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Fortinet FortiGate</h2>
+<p><strong>Schemas:</strong> Dns, NetworkSession, WebSession</p>
+<p><strong>Tables:</strong> <a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimdnsfortinetfortigate.html">ASimDnsFortinetFortiGate</a><br>vim: <a href="vimdnsfortinetfortigate.html">vimDnsFortinetFortiGate</a></td>
+<td style="text-align: left;">Dns</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.1.2</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionfortinetfortigate.html">ASimNetworkSessionFortinetFortiGate</a><br>vim: <a href="vimnetworksessionfortinetfortigate.html">vimNetworkSessionFortinetFortiGate</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.6.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimwebsessionfortinetfortigate.html">ASimWebSessionFortinetFortiGate</a><br>vim: <a href="vimwebsessionfortinetfortigate.html">vimWebSessionFortinetFortiGate</a></td>
+<td style="text-align: left;">WebSession</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.3.0</td>
+</tr>
+</tbody>
+</table>
+<h2>GCP Cloud DNS</h2>
+<p><strong>Schemas:</strong> Dns</p>
+<p><strong>Tables:</strong> <a href="../tables/gcp-dns-cl.html">GCP_DNS_CL</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimdnsgcp.html">ASimDnsGcp</a><br>vim: <a href="vimdnsgcp.html">vimDnsGcp</a></td>
+<td style="text-align: left;">Dns</td>
+<td style="text-align: left;"><a href="../tables/gcp-dns-cl.html">GCP_DNS_CL</a></td>
+<td style="text-align: left;">0.4</td>
+</tr>
+</tbody>
+</table>
+<h2>Google Workspace</h2>
+<p><strong>Schemas:</strong> Authentication, FileEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/gworkspace-reportsapi-drive-cl.html">GWorkspace_ReportsAPI_drive_CL</a>, <a href="../tables/gworkspace-reportsapi-login-cl.html">GWorkspace_ReportsAPI_login_CL</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationgoogleworkspace.html">ASimAuthenticationGoogleWorkspace</a><br>vim: <a href="vimauthenticationgoogleworkspace.html">vimAuthenticationGoogleWorkspace</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-login-cl.html">GWorkspace_ReportsAPI_login_CL</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimfileeventgoogleworkspace.html">ASimFileEventGoogleWorkspace</a><br>vim: <a href="vimfileeventgoogleworkspace.html">vimFileEventGoogleWorkspace</a></td>
+<td style="text-align: left;">FileEvent</td>
+<td style="text-align: left;"><a href="../tables/gworkspace-reportsapi-drive-cl.html">GWorkspace_ReportsAPI_drive_CL</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+</tbody>
+</table>
+<h2>Illumio</h2>
+<p><strong>Schemas:</strong> Authentication</p>
+<p><strong>Tables:</strong> <a href="../tables/illumio-auditable-events-cl.html">Illumio_Auditable_Events_CL</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationillumiosaascore.html">ASimAuthenticationIllumioSaaSCore</a><br>vim: <a href="vimauthenticationillumiosaascore.html">vimAuthenticationIllumioSaaSCore</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/illumio-auditable-events-cl.html">Illumio_Auditable_Events_CL</a></td>
+<td style="text-align: left;">0.3.0</td>
+</tr>
+</tbody>
+</table>
+<h2>Illumio Core</h2>
+<p><strong>Schemas:</strong> AuditEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/illumio-auditable-events-cl.html">Illumio_Auditable_Events_CL</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauditeventillumiosaascore.html">ASimAuditEventIllumioSaaSCore</a><br>vim: <a href="vimauditeventillumiosaascore.html">vimAuditEventIllumioSaaSCore</a></td>
+<td style="text-align: left;">AuditEvent</td>
+<td style="text-align: left;"><a href="../tables/illumio-auditable-events-cl.html">Illumio_Auditable_Events_CL</a></td>
+<td style="text-align: left;">0.2.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Illumio SaaS Core</h2>
+<p><strong>Schemas:</strong> NetworkSession</p>
+<p><strong>Tables:</strong> <a href="../tables/illumio-flow-events-cl.html">Illumio_Flow_Events_CL</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionillumiosaascore.html">ASimNetworkSessionIllumioSaaSCore</a><br>vim: <a href="vimnetworksessionillumiosaascore.html">vimNetworkSessionIllumioSaaSCore</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/illumio-flow-events-cl.html">Illumio_Flow_Events_CL</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+</tbody>
+</table>
+<h2>Infoblox BloxOne</h2>
+<p><strong>Schemas:</strong> AuditEvent, DhcpEvent, Dns</p>
+<p><strong>Tables:</strong> <a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauditeventinfobloxbloxone.html">ASimAuditEventInfobloxBloxOne</a><br>vim: <a href="vimauditeventinfobloxbloxone.html">vimAuditEventInfobloxBloxOne</a></td>
+<td style="text-align: left;">AuditEvent</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimdhcpeventinfobloxbloxone.html">ASimDhcpEventInfobloxBloxOne</a><br>vim: <a href="vimdhcpeventinfobloxbloxone.html">vimDhcpEventInfobloxBloxOne</a></td>
+<td style="text-align: left;">DhcpEvent</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimdnsinfobloxbloxone.html">ASimDnsInfobloxBloxOne</a><br>vim: <a href="vimdnsinfobloxbloxone.html">vimDnsInfobloxBloxOne</a></td>
+<td style="text-align: left;">Dns</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+</tbody>
+</table>
+<h2>Infoblox NIOS</h2>
+<p><strong>Schemas:</strong> Dns</p>
+<p><strong>Tables:</strong> <a href="../tables/syslog.html">Syslog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimdnsinfobloxnios.html">ASimDnsInfobloxNIOS</a><br>vim: <a href="vimdnsinfobloxnios.html">vimDnsInfobloxNIOS</a></td>
+<td style="text-align: left;">Dns</td>
+<td style="text-align: left;"><a href="../tables/syslog.html">Syslog</a></td>
+<td style="text-align: left;">0.6.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Internet Information Services (IIS)</h2>
+<p><strong>Schemas:</strong> WebSession</p>
+<p><strong>Tables:</strong> <a href="../tables/w3ciislog.html">W3CIISLog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimwebsessioniis.html">ASimWebSessionIIS</a><br>vim: <a href="vimwebsessioniis.html">vimWebSessionIIS</a></td>
+<td style="text-align: left;">WebSession</td>
+<td style="text-align: left;"><a href="../tables/w3ciislog.html">W3CIISLog</a></td>
+<td style="text-align: left;">0.2</td>
+</tr>
+</tbody>
+</table>
+<h2>M365 Defender for EndPoint</h2>
+<p><strong>Schemas:</strong> Authentication</p>
+<p><strong>Tables:</strong> <a href="../tables/devicelogonevents.html">DeviceLogonEvents</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationm365defender.html">ASimAuthenticationM365Defender</a><br>vim: <a href="vimauthenticationm365defender.html">vimAuthenticationM365Defender</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/devicelogonevents.html">DeviceLogonEvents</a></td>
+<td style="text-align: left;">0.2.0</td>
+</tr>
+</tbody>
+</table>
+<h2>M365 Defender for Endpoint</h2>
+<p><strong>Schemas:</strong> NetworkSession</p>
+<p><strong>Tables:</strong> <a href="../tables/devicenetworkevents.html">DeviceNetworkEvents</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionmicrosoft365defender.html">ASimNetworkSessionMicrosoft365Defender</a><br>vim: <a href="vimnetworksessionmicrosoft365defender.html">vimNetworkSessionMicrosoft365Defender</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/devicenetworkevents.html">DeviceNetworkEvents</a></td>
+<td style="text-align: left;">0.4</td>
+</tr>
+</tbody>
+</table>
+<h2>Microsoft</h2>
+<p><strong>Schemas:</strong> UserManagement</p>
+<p><strong>Tables:</strong> <a href="../tables/syslog.html">Syslog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimusermanagementlinuxauthpriv.html">ASimUserManagementLinuxAuthpriv</a><br>vim: <a href="vimusermanagementlinuxauthpriv.html">vimUserManagementLinuxAuthpriv</a></td>
+<td style="text-align: left;">UserManagement</td>
+<td style="text-align: left;"><a href="../tables/syslog.html">Syslog</a></td>
+<td style="text-align: left;">0.1.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Microsoft 365 Defender for EndPoint</h2>
+<p><strong>Schemas:</strong> FileEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/devicefileevents.html">DeviceFileEvents</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimfileeventmicrosoft365d.html">ASimFileEventMicrosoft365D</a><br>vim: <a href="vimfileeventmicrosoft365d.html">vimFileEventMicrosoft365D</a></td>
+<td style="text-align: left;">FileEvent</td>
+<td style="text-align: left;"><a href="../tables/devicefileevents.html">DeviceFileEvents</a></td>
+<td style="text-align: left;">0.2.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Microsoft 365 Defender for endpoint</h2>
+<p><strong>Schemas:</strong> ProcessEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/deviceprocessevents.html">DeviceProcessEvents</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimprocesseventmicrosoft365d.html">ASimProcessEventMicrosoft365D</a><br>vim: <a href="vimprocesseventmicrosoft365d.html">vimProcessEventMicrosoft365D</a></td>
+<td style="text-align: left;">ProcessEvent</td>
+<td style="text-align: left;"><a href="../tables/deviceprocessevents.html">DeviceProcessEvents</a></td>
+<td style="text-align: left;">0.2.0</td>
+</tr>
+</tbody>
+</table>
+<h2>Microsoft 365 Defender for Endpoint</h2>
+<p><strong>Schemas:</strong> RegistryEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/deviceregistryevents.html">DeviceRegistryEvents</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimregistryeventmicrosoft365d.html">ASimRegistryEventMicrosoft365D</a><br>vim: <a href="vimregistryeventmicrosoft365d.html">vimRegistryEventMicrosoft365D</a></td>
+<td style="text-align: left;">RegistryEvent</td>
+<td style="text-align: left;"><a href="../tables/deviceregistryevents.html">DeviceRegistryEvents</a></td>
+<td style="text-align: left;">0.1.2</td>
+</tr>
+</tbody>
+</table>
+<h2>Microsoft Azure</h2>
+<p><strong>Schemas:</strong> AuditEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/azureactivity.html">AzureActivity</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauditeventazureactivity.html">ASimAuditEventAzureActivity</a><br>vim: <a href="vimauditeventazureactivity.html">vimAuditEventAzureActivity</a></td>
+<td style="text-align: left;">AuditEvent</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html">AzureActivity</a></td>
+<td style="text-align: left;">0.3.0</td>
+</tr>
+</tbody>
+</table>
+<h2>Microsoft Azure Blob Storage</h2>
+<p><strong>Schemas:</strong> FileEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/storagebloblogs.html">StorageBlobLogs</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimfileeventazureblobstorage.html">ASimFileEventAzureBlobStorage</a><br>vim: <a href="vimfileeventazureblobstorage.html">vimFileEventAzureBlobStorage</a></td>
+<td style="text-align: left;">FileEvent</td>
+<td style="text-align: left;"><a href="../tables/storagebloblogs.html">StorageBlobLogs</a></td>
+<td style="text-align: left;">0.1.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Microsoft Azure File Storage</h2>
+<p><strong>Schemas:</strong> FileEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/storagefilelogs.html">StorageFileLogs</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimfileeventazurefilestorage.html">ASimFileEventAzureFileStorage</a><br>vim: <a href="vimfileeventazurefilestorage.html">vimFileEventAzureFileStorage</a></td>
+<td style="text-align: left;">FileEvent</td>
+<td style="text-align: left;"><a href="../tables/storagefilelogs.html">StorageFileLogs</a></td>
+<td style="text-align: left;">0.1.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Microsoft Azure Queue Storage</h2>
+<p><strong>Schemas:</strong> FileEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/storagequeuelogs.html">StorageQueueLogs</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimfileeventazurequeuestorage.html">ASimFileEventAzureQueueStorage</a><br>vim: <a href="vimfileeventazurequeuestorage.html">vimFileEventAzureQueueStorage</a></td>
+<td style="text-align: left;">FileEvent</td>
+<td style="text-align: left;"><a href="../tables/storagequeuelogs.html">StorageQueueLogs</a></td>
+<td style="text-align: left;">0.1.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Microsoft Azure Table Storage</h2>
+<p><strong>Schemas:</strong> FileEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/storagetablelogs.html">StorageTableLogs</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimfileeventazuretablestorage.html">ASimFileEventAzureTableStorage</a><br>vim: <a href="vimfileeventazuretablestorage.html">vimFileEventAzureTableStorage</a></td>
+<td style="text-align: left;">FileEvent</td>
+<td style="text-align: left;"><a href="../tables/storagetablelogs.html">StorageTableLogs</a></td>
+<td style="text-align: left;">0.1.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Microsoft Defender for IoT</h2>
+<p><strong>Schemas:</strong> Authentication, NetworkSession, ProcessEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/securityiotrawevent.html">SecurityIoTRawEvent</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationmd4iot.html">ASimAuthenticationMD4IoT</a><br>vim: <a href="vimauthenticationmd4iot.html">vimAuthenticationMD4IoT</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/securityiotrawevent.html">SecurityIoTRawEvent</a></td>
+<td style="text-align: left;">0.1.2</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionmd4iotagent.html">ASimNetworkSessionMD4IoTAgent</a><br>vim: <a href="vimnetworksessionmd4iotagent.html">vimNetworkSessionMD4IoTAgent</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/securityiotrawevent.html">SecurityIoTRawEvent</a></td>
+<td style="text-align: left;">0.2.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionmd4iotsensor.html">ASimNetworkSessionMD4IoTSensor</a><br>vim: <a href="vimnetworksessionmd4iotsensor.html">vimNetworkSessionMD4IoTSensor</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">0.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimprocesseventmd4iot.html">ASimProcessEventMD4IoT</a><br>vim: <a href="vimprocesseventmd4iot.html">vimProcessEventMD4IoT</a></td>
+<td style="text-align: left;">ProcessEvent</td>
+<td style="text-align: left;"><a href="../tables/securityiotrawevent.html">SecurityIoTRawEvent</a></td>
+<td style="text-align: left;">0.1.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Microsoft Defender XDR</h2>
+<p><strong>Schemas:</strong> AlertEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/alertevidence.html">AlertEvidence</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimalerteventmicrosoftdefenderxdr.html">ASimAlertEventMicrosoftDefenderXDR</a><br>vim: <a href="vimalerteventmicrosoftdefenderxdr.html">vimAlertEventMicrosoftDefenderXDR</a></td>
+<td style="text-align: left;">AlertEvent</td>
+<td style="text-align: left;"><a href="../tables/alertevidence.html">AlertEvidence</a></td>
+<td style="text-align: left;">0.2.0</td>
+</tr>
+</tbody>
+</table>
+<h2>Microsoft Entra ID</h2>
+<p><strong>Schemas:</strong> Authentication</p>
+<p><strong>Tables:</strong> <a href="../tables/aadmanagedidentitysigninlogs.html">AADManagedIdentitySignInLogs</a>, <a href="../tables/aadnoninteractiveusersigninlogs.html">AADNonInteractiveUserSignInLogs</a>, <a href="../tables/aadserviceprincipalsigninlogs.html">AADServicePrincipalSignInLogs</a>, <a href="../tables/signinlogs.html">SigninLogs</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationaadmanagedidentitysigninlogs.html">ASimAuthenticationAADManagedIdentitySignInLogs</a><br>vim: <a href="vimauthenticationaadmanagedidentitysigninlogs.html">vimAuthenticationAADManagedIdentitySignInLogs</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/aadmanagedidentitysigninlogs.html">AADManagedIdentitySignInLogs</a></td>
+<td style="text-align: left;">0.2.3</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationaadnoninteractiveusersigninlogs.html">ASimAuthenticationAADNonInteractiveUserSignInLogs</a><br>vim: <a href="vimauthenticationaadnoninteractiveusersigninlogs.html">vimAuthenticationAADNonInteractiveUserSignInLogs</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/aadnoninteractiveusersigninlogs.html">AADNonInteractiveUserSignInLogs</a></td>
+<td style="text-align: left;">0.2.3</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationaadserviceprincipalsigninlogs.html">ASimAuthenticationAADServicePrincipalSignInLogs</a><br>vim: <a href="vimauthenticationaadserviceprincipalsigninlogs.html">vimAuthenticationAADServicePrincipalSignInLogs</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/aadserviceprincipalsigninlogs.html">AADServicePrincipalSignInLogs</a></td>
+<td style="text-align: left;">0.2.3</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationsigninlogs.html">ASimAuthenticationSigninLogs</a><br>vim: <a href="vimauthenticationsigninlogs.html">vimAuthenticationSigninLogs</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/signinlogs.html">SigninLogs</a></td>
+<td style="text-align: left;">0.4.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Microsoft Security Event</h2>
+<p><strong>Schemas:</strong> UserManagement</p>
+<p><strong>Tables:</strong> <a href="../tables/securityevent.html">SecurityEvent</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimusermanagementmicrosoftsecurityevent.html">ASimUserManagementMicrosoftSecurityEvent</a><br>vim: <a href="vimusermanagementmicrosoftsecurityevent.html">vimUserManagementMicrosoftSecurityEvent</a></td>
+<td style="text-align: left;">UserManagement</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html">SecurityEvent</a></td>
+<td style="text-align: left;">0.2.0</td>
+</tr>
+</tbody>
+</table>
+<h2>Microsoft SharePoint</h2>
+<p><strong>Schemas:</strong> AuditEvent, FileEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/officeactivity.html">OfficeActivity</a>, <a href="../tables/operation.html">Operation</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauditeventmicrosoftexchangeadmin365.html">ASimAuditEventMicrosoftExchangeAdmin365</a><br>vim: <a href="vimauditeventmicrosoftexchangeadmin365.html">vimAuditEventMicrosoftExchangeAdmin365</a></td>
+<td style="text-align: left;">AuditEvent</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html">OfficeActivity</a></td>
+<td style="text-align: left;">0.2</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimfileeventmicrosoftsharepoint.html">ASimFileEventMicrosoftSharePoint</a><br>vim: <a href="vimfileeventmicrosoftsharepoint.html">vimFileEventMicrosoftSharePoint</a></td>
+<td style="text-align: left;">FileEvent</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html">OfficeActivity</a>, <a href="../tables/operation.html">Operation</a></td>
+<td style="text-align: left;">0.3.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Microsoft Sysmon</h2>
+<p><strong>Schemas:</strong> RegistryEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/event.html">Event</a>, <a href="../tables/windowsevent.html">WindowsEvent</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimregistryeventmicrosoftsysmon.html">ASimRegistryEventMicrosoftSysmon</a><br>vim: <a href="vimregistryeventmicrosoftsysmon.html">vimRegistryEventMicrosoftSysmon</a></td>
+<td style="text-align: left;">RegistryEvent</td>
+<td style="text-align: left;"><a href="../tables/event.html">Event</a></td>
+<td style="text-align: left;">0.3.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimregistryeventmicrosoftsysmonwindowsevent.html">ASimRegistryEventMicrosoftSysmonWindowsEvent</a><br>vim: <a href="vimregistryeventmicrosoftsysmonwindowsevent.html">vimRegistryEventMicrosoftSysmonWindowsEvent</a></td>
+<td style="text-align: left;">RegistryEvent</td>
+<td style="text-align: left;"><a href="../tables/windowsevent.html">WindowsEvent</a></td>
+<td style="text-align: left;">0.3.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Microsoft Sysmon for Linux</h2>
+<p><strong>Schemas:</strong> FileEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/syslog.html">Syslog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimfileeventlinuxsysmonfilecreated.html">ASimFileEventLinuxSysmonFileCreated</a><br>vim: <a href="vimfileeventlinuxsysmonfilecreated.html">vimFileEventLinuxSysmonFileCreated</a></td>
+<td style="text-align: left;">FileEvent</td>
+<td style="text-align: left;"><a href="../tables/syslog.html">Syslog</a></td>
+<td style="text-align: left;">0.2.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimfileeventlinuxsysmonfiledeleted.html">ASimFileEventLinuxSysmonFileDeleted</a><br>vim: <a href="vimfileeventlinuxsysmonfiledeleted.html">vimFileEventLinuxSysmonFileDeleted</a></td>
+<td style="text-align: left;">FileEvent</td>
+<td style="text-align: left;"><a href="../tables/syslog.html">Syslog</a></td>
+<td style="text-align: left;">0.2.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Microsoft Windows</h2>
+<p><strong>Schemas:</strong> AuditEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/event.html">Event</a>, <a href="../tables/securityevent.html">SecurityEvent</a>, <a href="../tables/windowsevent.html">WindowsEvent</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauditeventmicrosoftevent.html">ASimAuditEventMicrosoftEvent</a><br>vim: <a href="vimauditeventmicrosoftevent.html">vimAuditEventMicrosoftEvent</a></td>
+<td style="text-align: left;">AuditEvent</td>
+<td style="text-align: left;"><a href="../tables/event.html">Event</a></td>
+<td style="text-align: left;">0.2.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauditeventmicrosoftsecurityevents.html">ASimAuditEventMicrosoftSecurityEvents</a><br>vim: <a href="vimauditeventmicrosoftsecurityevents.html">vimAuditEventMicrosoftSecurityEvents</a></td>
+<td style="text-align: left;">AuditEvent</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html">SecurityEvent</a></td>
+<td style="text-align: left;">0.2.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauditeventmicrosoftwindowsevents.html">ASimAuditEventMicrosoftWindowsEvents</a><br>vim: <a href="vimauditeventmicrosoftwindowsevents.html">vimAuditEventMicrosoftWindowsEvents</a></td>
+<td style="text-align: left;">AuditEvent</td>
+<td style="text-align: left;"><a href="../tables/windowsevent.html">WindowsEvent</a></td>
+<td style="text-align: left;">0.2.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Microsoft Windows Event</h2>
+<p><strong>Schemas:</strong> UserManagement</p>
+<p><strong>Tables:</strong> <a href="../tables/windowsevent.html">WindowsEvent</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimusermanagementmicrosoftwindowsevent.html">ASimUserManagementMicrosoftWindowsEvent</a><br>vim: <a href="vimusermanagementmicrosoftwindowsevent.html">vimUserManagementMicrosoftWindowsEvent</a></td>
+<td style="text-align: left;">UserManagement</td>
+<td style="text-align: left;"><a href="../tables/windowsevent.html">WindowsEvent</a></td>
+<td style="text-align: left;">0.2.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Microsoft Windows Events</h2>
+<p><strong>Schemas:</strong> FileEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/securityevent.html">SecurityEvent</a>, <a href="../tables/windowsevent.html">WindowsEvent</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimfileeventmicrosoftsecurityevents.html">ASimFileEventMicrosoftSecurityEvents</a><br>vim: <a href="vimfileeventmicrosoftsecurityevents.html">vimFileEventMicrosoftSecurityEvents</a></td>
+<td style="text-align: left;">FileEvent</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html">SecurityEvent</a></td>
+<td style="text-align: left;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimfileeventmicrosoftwindowsevents.html">ASimFileEventMicrosoftWindowsEvents</a><br>vim: <a href="vimfileeventmicrosoftwindowsevents.html">vimFileEventMicrosoftWindowsEvents</a></td>
+<td style="text-align: left;">FileEvent</td>
+<td style="text-align: left;"><a href="../tables/windowsevent.html">WindowsEvent</a></td>
+<td style="text-align: left;">0.2.0</td>
+</tr>
+</tbody>
+</table>
+<h2>Microsoft Windows Events Sysmon</h2>
+<p><strong>Schemas:</strong> Dns, ProcessEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/event.html">Event</a>, <a href="../tables/windowsevent.html">WindowsEvent</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimdnsmicrosoftsysmon.html">ASimDnsMicrosoftSysmon</a><br>vim: <a href="vimdnsmicrosoftsysmon.html">vimDnsMicrosoftSysmon</a></td>
+<td style="text-align: left;">Dns</td>
+<td style="text-align: left;"><a href="../tables/event.html">Event</a></td>
+<td style="text-align: left;">0.5.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimdnsmicrosoftsysmonwindowsevent.html">ASimDnsMicrosoftSysmonWindowsEvent</a><br>vim: <a href="vimdnsmicrosoftsysmonwindowsevent.html">vimDnsMicrosoftSysmonWindowsEvent</a></td>
+<td style="text-align: left;">Dns</td>
+<td style="text-align: left;"><a href="../tables/windowsevent.html">WindowsEvent</a></td>
+<td style="text-align: left;">0.5.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimprocesseventterminatemicrosoftsysmon.html">ASimProcessEventTerminateMicrosoftSysmon</a><br>vim: <a href="vimprocesseventterminatemicrosoftsysmon.html">vimProcessEventTerminateMicrosoftSysmon</a></td>
+<td style="text-align: left;">ProcessEvent</td>
+<td style="text-align: left;"><a href="../tables/event.html">Event</a></td>
+<td style="text-align: left;">0.3.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimprocesseventterminatemicrosoftsysmonwindowsevent.html">ASimProcessEventTerminateMicrosoftSysmonWindowsEvent</a><br>vim: <a href="vimprocesseventterminatemicrosoftsysmonwindowsevent.html">vimProcessEventTerminateMicrosoftSysmonWindowsEvent</a></td>
+<td style="text-align: left;">ProcessEvent</td>
+<td style="text-align: left;"><a href="../tables/windowsevent.html">WindowsEvent</a></td>
+<td style="text-align: left;">0.4.1</td>
+</tr>
+</tbody>
+</table>
+<h2>MS DNS Events</h2>
+<p><strong>Schemas:</strong> Dns</p>
+<p><strong>Tables:</strong> <a href="../tables/dnsevents.html">DnsEvents</a>, <a href="../tables/nxlog-dns-server-cl.html">NXLog_DNS_Server_CL</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimdnsmicrosoftnxlog.html">ASimDnsMicrosoftNXlog</a><br>vim: <a href="vimdnsmicrosoftnxlog.html">vimDnsMicrosoftNXlog</a></td>
+<td style="text-align: left;">Dns</td>
+<td style="text-align: left;"><a href="../tables/nxlog-dns-server-cl.html">NXLog_DNS_Server_CL</a></td>
+<td style="text-align: left;">0.5.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimdnsmicrosoftoms.html">ASimDnsMicrosoftOMS</a><br>vim: <a href="vimdnsmicrosoftoms.html">vimDnsMicrosoftOMS</a></td>
+<td style="text-align: left;">Dns</td>
+<td style="text-align: left;"><a href="../tables/dnsevents.html">DnsEvents</a></td>
+<td style="text-align: left;">0.4</td>
+</tr>
+</tbody>
+</table>
+<h2>Native</h2>
+<p><strong>Schemas:</strong> AuditEvent, Authentication, DhcpEvent, Dns, FileEvent, NetworkSession, ProcessEvent, RegistryEvent, UserManagement, WebSession</p>
+<p><strong>Tables:</strong> <a href="../tables/asimauditeventlogs.html">ASimAuditEventLogs</a>, <a href="../tables/asimauthenticationeventlogs.html">ASimAuthenticationEventLogs</a>, <a href="../tables/asimdhcpeventlogs.html">ASimDhcpEventLogs</a>, <a href="../tables/asimdnsactivitylogs.html">ASimDnsActivityLogs</a>, <a href="../tables/asimfileeventlogs.html">ASimFileEventLogs</a>, <a href="../tables/asimnetworksessionlogs.html">ASimNetworkSessionLogs</a>, <a href="../tables/asimprocesseventlogs.html">ASimProcessEventLogs</a>, <a href="../tables/asimregistryeventlogs.html">ASimRegistryEventLogs</a>, <a href="../tables/asimusermanagementactivitylogs.html">ASimUserManagementActivityLogs</a>, <a href="../tables/asimwebsessionlogs.html">ASimWebSessionLogs</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauditeventnative.html">ASimAuditEventNative</a><br>vim: <a href="vimauditeventnative.html">vimAuditEventNative</a></td>
+<td style="text-align: left;">AuditEvent</td>
+<td style="text-align: left;"><a href="../tables/asimauditeventlogs.html">ASimAuditEventLogs</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationnative.html">ASimAuthenticationNative</a><br>vim: <a href="vimauthenticationnative.html">vimAuthenticationNative</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/asimauthenticationeventlogs.html">ASimAuthenticationEventLogs</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimdhcpeventnative.html">ASimDhcpEventNative</a><br>vim: <a href="vimdhcpeventnative.html">vimDhcpEventNative</a></td>
+<td style="text-align: left;">DhcpEvent</td>
+<td style="text-align: left;"><a href="../tables/asimdhcpeventlogs.html">ASimDhcpEventLogs</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimdnsnative.html">ASimDnsNative</a><br>vim: <a href="vimdnsnative.html">vimDnsNative</a></td>
+<td style="text-align: left;">Dns</td>
+<td style="text-align: left;"><a href="../tables/asimdnsactivitylogs.html">ASimDnsActivityLogs</a></td>
+<td style="text-align: left;">0.6.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimfileeventnative.html">ASimFileEventNative</a><br>vim: <a href="vimfileeventnative.html">vimFileEventNative</a></td>
+<td style="text-align: left;">FileEvent</td>
+<td style="text-align: left;"><a href="../tables/asimfileeventlogs.html">ASimFileEventLogs</a></td>
+<td style="text-align: left;">0.1.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionnative.html">ASimNetworkSessionNative</a><br>vim: <a href="vimnetworksessionnative.html">vimNetworkSessionNative</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/asimnetworksessionlogs.html">ASimNetworkSessionLogs</a></td>
+<td style="text-align: left;">0.3</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimprocesseventnative.html">ASimProcessEventNative</a><br>vim: <a href="vimprocesseventnative.html">vimProcessEventNative</a></td>
+<td style="text-align: left;">ProcessEvent</td>
+<td style="text-align: left;"><a href="../tables/asimprocesseventlogs.html">ASimProcessEventLogs</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimregistryeventnative.html">ASimRegistryEventNative</a><br>vim: <a href="vimregistryeventnative.html">vimRegistryEventNative</a></td>
+<td style="text-align: left;">RegistryEvent</td>
+<td style="text-align: left;"><a href="../tables/asimregistryeventlogs.html">ASimRegistryEventLogs</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimusermanagementnative.html">ASimUserManagementNative</a><br>vim: <a href="vimusermanagementnative.html">vimUserManagementNative</a></td>
+<td style="text-align: left;">UserManagement</td>
+<td style="text-align: left;"><a href="../tables/asimusermanagementactivitylogs.html">ASimUserManagementActivityLogs</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimwebsessionnative.html">ASimWebSessionNative</a><br>vim: <a href="vimwebsessionnative.html">vimWebSessionNative</a></td>
+<td style="text-align: left;">WebSession</td>
+<td style="text-align: left;"><a href="../tables/asimwebsessionlogs.html">ASimWebSessionLogs</a></td>
+<td style="text-align: left;">0.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Okta</h2>
+<p><strong>Schemas:</strong> Authentication</p>
+<p><strong>Tables:</strong> <a href="../tables/oktav2-cl.html">OktaV2_CL</a>, <a href="../tables/okta-cl.html">Okta_CL</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationoktasso.html">ASimAuthenticationOktaSSO</a><br>vim: <a href="vimauthenticationoktasso.html">vimAuthenticationOktaSSO</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/okta-cl.html">Okta_CL</a></td>
+<td style="text-align: left;">0.4.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationoktav2.html">ASimAuthenticationOktaV2</a><br>vim: <a href="vimauthenticationoktav2.html">vimAuthenticationOktaV2</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/oktav2-cl.html">OktaV2_CL</a></td>
+<td style="text-align: left;">0.4.0</td>
+</tr>
+</tbody>
+</table>
+<h2>OpenSSH</h2>
+<p><strong>Schemas:</strong> Authentication</p>
+<p><strong>Tables:</strong> <a href="../tables/syslog.html">Syslog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationsshd.html">ASimAuthenticationSshd</a><br>vim: <a href="vimauthenticationsshd.html">vimAuthenticationSshd</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/syslog.html">Syslog</a></td>
+<td style="text-align: left;">0.3.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Palo Alto Cortex Data Lake</h2>
+<p><strong>Schemas:</strong> Authentication, NetworkSession, WebSession</p>
+<p><strong>Tables:</strong> <a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationpaloaltocortexdatalake.html">ASimAuthenticationPaloAltoCortexDataLake</a><br>vim: <a href="vimauthenticationpaloaltocortexdatalake.html">vimAuthenticationPaloAltoCortexDataLake</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionpaloaltocortexdatalake.html">ASimNetworkSessionPaloAltoCortexDataLake</a><br>vim: <a href="vimnetworksessionpaloaltocortexdatalake.html">vimNetworkSessionPaloAltoCortexDataLake</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.1.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimwebsessionpaloaltocortexdatalake.html">ASimWebSessionPaloAltoCortexDataLake</a><br>vim: <a href="vimwebsessionpaloaltocortexdatalake.html">vimWebSessionPaloAltoCortexDataLake</a></td>
+<td style="text-align: left;">WebSession</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.1.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Palo Alto Networks</h2>
+<p><strong>Schemas:</strong> WebSession</p>
+<p><strong>Tables:</strong> <a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimwebsessionpaloaltocef.html">ASimWebSessionPaloAltoCEF</a><br>vim: <a href="vimwebsessionpaloaltocef.html">vimWebSessionPaloAltoCEF</a></td>
+<td style="text-align: left;">WebSession</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.2</td>
+</tr>
+</tbody>
+</table>
+<h2>Palo Alto PanOS</h2>
+<p><strong>Schemas:</strong> NetworkSession</p>
+<p><strong>Tables:</strong> <a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionpaloaltocef.html">ASimNetworkSessionPaloAltoCEF</a><br>vim: <a href="vimnetworksessionpaloaltocef.html">vimNetworkSessionPaloAltoCEF</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.7.1</td>
+</tr>
+</tbody>
+</table>
+<h2>PostgreSQL</h2>
+<p><strong>Schemas:</strong> Authentication</p>
+<p><strong>Tables:</strong> <a href="../tables/postgresql-cl.html">PostgreSQL_CL</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationpostgresql.html">ASimAuthenticationPostgreSQL</a><br>vim: <a href="vimauthenticationpostgresql.html">vimAuthenticationPostgreSQL</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/postgresql-cl.html">PostgreSQL_CL</a></td>
+<td style="text-align: left;">0.1.4</td>
+</tr>
+</tbody>
+</table>
+<h2>Salesforce Service Cloud</h2>
+<p><strong>Schemas:</strong> Authentication</p>
+<p><strong>Tables:</strong> <a href="../tables/salesforceservicecloud-cl.html">SalesforceServiceCloud_CL</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationsalesforcesc.html">ASimAuthenticationSalesforceSC</a><br>vim: <a href="vimauthenticationsalesforcesc.html">vimAuthenticationSalesforceSC</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/salesforceservicecloud-cl.html">SalesforceServiceCloud_CL</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+</tbody>
+</table>
+<h2>Security Events</h2>
+<p><strong>Schemas:</strong> ProcessEvent, RegistryEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/asim-getaccounttype.html">ASIM_GetAccountType</a>, <a href="../tables/asim-parsesecurityevents.html">ASIM_ParseSecurityEvents</a>, <a href="../tables/asim-parsewindowsevents.html">ASIM_ParseWindowsEvents</a>, <a href="../tables/securityevent.html">SecurityEvent</a>, <a href="../tables/windowsevent.html">WindowsEvent</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimprocesscreatemicrosoftsecurityevents.html">ASimProcessCreateMicrosoftSecurityEvents</a><br>vim: <a href="vimprocesscreatemicrosoftsecurityevents.html">vimProcessCreateMicrosoftSecurityEvents</a></td>
+<td style="text-align: left;">ProcessEvent</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html">SecurityEvent</a></td>
+<td style="text-align: left;">0.1.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimprocesscreatemicrosoftwindowsevents.html">ASimProcessCreateMicrosoftWindowsEvents</a><br>vim: <a href="vimprocesscreatemicrosoftwindowsevents.html">vimProcessCreateMicrosoftWindowsEvents</a></td>
+<td style="text-align: left;">ProcessEvent</td>
+<td style="text-align: left;"><a href="../tables/windowsevent.html">WindowsEvent</a></td>
+<td style="text-align: left;">0.3.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimprocessterminatemicrosoftsecurityevents.html">ASimProcessTerminateMicrosoftSecurityEvents</a><br>vim: <a href="vimprocessterminatemicrosoftsecurityevents.html">vimProcessTerminateMicrosoftSecurityEvents</a></td>
+<td style="text-align: left;">ProcessEvent</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html">SecurityEvent</a></td>
+<td style="text-align: left;">0.2</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimprocessterminatemicrosoftwindowsevents.html">ASimProcessTerminateMicrosoftWindowsEvents</a><br>vim: <a href="vimprocessterminatemicrosoftwindowsevents.html">vimProcessTerminateMicrosoftWindowsEvents</a></td>
+<td style="text-align: left;">ProcessEvent</td>
+<td style="text-align: left;"><a href="../tables/windowsevent.html">WindowsEvent</a></td>
+<td style="text-align: left;">0.2</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimregistryeventmicrosoftsecurityevent.html">ASimRegistryEventMicrosoftSecurityEvent</a><br>vim: <a href="vimregistryeventmicrosoftsecurityevent.html">vimRegistryEventMicrosoftSecurityEvent</a></td>
+<td style="text-align: left;">RegistryEvent</td>
+<td style="text-align: left;"><a href="../tables/asim-getaccounttype.html">ASIM_GetAccountType</a>, <a href="../tables/asim-parsesecurityevents.html">ASIM_ParseSecurityEvents</a>, <a href="../tables/securityevent.html">SecurityEvent</a></td>
+<td style="text-align: left;">0.3.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimregistryeventmicrosoftwindowsevent.html">ASimRegistryEventMicrosoftWindowsEvent</a><br>vim: <a href="vimregistryeventmicrosoftwindowsevent.html">vimRegistryEventMicrosoftWindowsEvent</a></td>
+<td style="text-align: left;">RegistryEvent</td>
+<td style="text-align: left;"><a href="../tables/asim-getaccounttype.html">ASIM_GetAccountType</a>, <a href="../tables/asim-parsewindowsevents.html">ASIM_ParseWindowsEvents</a>, <a href="../tables/windowsevent.html">WindowsEvent</a></td>
+<td style="text-align: left;">0.2.1</td>
+</tr>
+</tbody>
+</table>
+<h2>SentinelOne</h2>
+<p><strong>Schemas:</strong> AlertEvent, AuditEvent, Authentication, Dns, FileEvent, NetworkSession, ProcessEvent, RegistryEvent, UserManagement</p>
+<p><strong>Tables:</strong> <a href="../tables/sentinelone-cl.html">SentinelOne_CL</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimalerteventsentinelonesingularity.html">ASimAlertEventSentinelOneSingularity</a><br>vim: <a href="vimalerteventsentinelonesingularity.html">vimAlertEventSentinelOneSingularity</a></td>
+<td style="text-align: left;">AlertEvent</td>
+<td style="text-align: left;"><a href="../tables/sentinelone-cl.html">SentinelOne_CL</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauditeventsentinelone.html">ASimAuditEventSentinelOne</a><br>vim: <a href="vimauditeventsentinelone.html">vimAuditEventSentinelOne</a></td>
+<td style="text-align: left;">AuditEvent</td>
+<td style="text-align: left;"><a href="../tables/sentinelone-cl.html">SentinelOne_CL</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationsentinelone.html">ASimAuthenticationSentinelOne</a><br>vim: <a href="vimauthenticationsentinelone.html">vimAuthenticationSentinelOne</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/sentinelone-cl.html">SentinelOne_CL</a></td>
+<td style="text-align: left;">0.1.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimdnssentinelone.html">ASimDnsSentinelOne</a><br>vim: <a href="vimdnssentinelone.html">vimDnsSentinelOne</a></td>
+<td style="text-align: left;">Dns</td>
+<td style="text-align: left;"><a href="../tables/sentinelone-cl.html">SentinelOne_CL</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimfileeventsentinelone.html">ASimFileEventSentinelOne</a><br>vim: <a href="vimfileeventsentinelone.html">vimFileEventSentinelOne</a></td>
+<td style="text-align: left;">FileEvent</td>
+<td style="text-align: left;"><a href="../tables/sentinelone-cl.html">SentinelOne_CL</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionsentinelone.html">ASimNetworkSessionSentinelOne</a><br>vim: <a href="vimnetworksessionsentinelone.html">vimNetworkSessionSentinelOne</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/sentinelone-cl.html">SentinelOne_CL</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimprocesscreatesentinelone.html">ASimProcessCreateSentinelOne</a><br>vim: <a href="vimprocesscreatesentinelone.html">vimProcessCreateSentinelOne</a></td>
+<td style="text-align: left;">ProcessEvent</td>
+<td style="text-align: left;"><a href="../tables/sentinelone-cl.html">SentinelOne_CL</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimregistryeventsentinelone.html">ASimRegistryEventSentinelOne</a><br>vim: <a href="vimregistryeventsentinelone.html">vimRegistryEventSentinelOne</a></td>
+<td style="text-align: left;">RegistryEvent</td>
+<td style="text-align: left;"><a href="../tables/sentinelone-cl.html">SentinelOne_CL</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimusermanagementsentinelone.html">ASimUserManagementSentinelOne</a><br>vim: <a href="vimusermanagementsentinelone.html">vimUserManagementSentinelOne</a></td>
+<td style="text-align: left;">UserManagement</td>
+<td style="text-align: left;"><a href="../tables/sentinelone-cl.html">SentinelOne_CL</a></td>
+<td style="text-align: left;">0.1.1</td>
+</tr>
+</tbody>
+</table>
+<h2>SonicWall</h2>
+<p><strong>Schemas:</strong> NetworkSession, WebSession</p>
+<p><strong>Tables:</strong> <a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionsonicwallfirewall.html">ASimNetworkSessionSonicWallFirewall</a><br>vim: <a href="vimnetworksessionsonicwallfirewall.html">vimNetworkSessionSonicWallFirewall</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimwebsessionsonicwallfirewall.html">ASimWebSessionSonicWallFirewall</a><br>vim: <a href="vimwebsessionsonicwallfirewall.html">vimWebSessionSonicWallFirewall</a></td>
+<td style="text-align: left;">WebSession</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.1.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Squid Proxy</h2>
+<p><strong>Schemas:</strong> WebSession</p>
+<p><strong>Tables:</strong> <a href="../tables/squidproxy-cl.html">SquidProxy_CL</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimwebsessionsquidproxy.html">ASimWebSessionSquidProxy</a><br>vim: <a href="vimwebsessionsquidproxy.html">vimWebSessionSquidProxy</a></td>
+<td style="text-align: left;">WebSession</td>
+<td style="text-align: left;"><a href="../tables/squidproxy-cl.html">SquidProxy_CL</a></td>
+<td style="text-align: left;">0.4.0</td>
+</tr>
+</tbody>
+</table>
+<h2>su</h2>
+<p><strong>Schemas:</strong> Authentication</p>
+<p><strong>Tables:</strong> <a href="../tables/syslog.html">Syslog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationsu.html">ASimAuthenticationSu</a><br>vim: <a href="vimauthenticationsu.html">vimAuthenticationSu</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/syslog.html">Syslog</a></td>
+<td style="text-align: left;">0.3.0</td>
+</tr>
+</tbody>
+</table>
+<h2>sudo</h2>
+<p><strong>Schemas:</strong> Authentication</p>
+<p><strong>Tables:</strong> <a href="../tables/syslog.html">Syslog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationsudo.html">ASimAuthenticationSudo</a><br>vim: <a href="vimauthenticationsudo.html">vimAuthenticationSudo</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/syslog.html">Syslog</a></td>
+<td style="text-align: left;">0.2.0</td>
+</tr>
+</tbody>
+</table>
+<h2>Sysmon</h2>
+<p><strong>Schemas:</strong> ProcessEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/event.html">Event</a>, <a href="../tables/windowsevent.html">WindowsEvent</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimprocesseventcreatemicrosoftsysmon.html">ASimProcessEventCreateMicrosoftSysmon</a><br>vim: <a href="vimprocesseventcreatemicrosoftsysmon.html">vimProcessEventCreateMicrosoftSysmon</a></td>
+<td style="text-align: left;">ProcessEvent</td>
+<td style="text-align: left;"><a href="../tables/event.html">Event</a></td>
+<td style="text-align: left;">0.4.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimprocesseventcreatemicrosoftsysmonwindowsevent.html">ASimProcessEventCreateMicrosoftSysmonWindowsEvent</a><br>vim: <a href="vimprocesseventcreatemicrosoftsysmonwindowsevent.html">vimProcessEventCreateMicrosoftSysmonWindowsEvent</a></td>
+<td style="text-align: left;">ProcessEvent</td>
+<td style="text-align: left;"><a href="../tables/windowsevent.html">WindowsEvent</a></td>
+<td style="text-align: left;">0.4.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Sysmon for Linux</h2>
+<p><strong>Schemas:</strong> NetworkSession, ProcessEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/syslog.html">Syslog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionlinuxsysmon.html">ASimNetworkSessionLinuxSysmon</a><br>vim: <a href="vimnetworksessionlinuxsysmon.html">vimNetworkSessionLinuxSysmon</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/syslog.html">Syslog</a></td>
+<td style="text-align: left;">0.3.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimprocesscreatelinuxsysmon.html">ASimProcessCreateLinuxSysmon</a><br>vim: <a href="vimprocesscreatelinuxsysmon.html">vimProcessCreateLinuxSysmon</a></td>
+<td style="text-align: left;">ProcessEvent</td>
+<td style="text-align: left;"><a href="../tables/syslog.html">Syslog</a></td>
+<td style="text-align: left;">0.2.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimprocessterminatelinuxsysmon.html">ASimProcessTerminateLinuxSysmon</a><br>vim: <a href="vimprocessterminatelinuxsysmon.html">vimProcessTerminateLinuxSysmon</a></td>
+<td style="text-align: left;">ProcessEvent</td>
+<td style="text-align: left;"><a href="../tables/syslog.html">Syslog</a></td>
+<td style="text-align: left;">0.1.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Trend Micro Vision One</h2>
+<p><strong>Schemas:</strong> ProcessEvent, RegistryEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/trendmicro-xdr-oat-cl.html">TrendMicro_XDR_OAT_CL</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimprocesscreatetrendmicrovisionone.html">ASimProcessCreateTrendMicroVisionOne</a><br>vim: <a href="vimprocesscreatetrendmicrovisionone.html">vimProcessCreateTrendMicroVisionOne</a></td>
+<td style="text-align: left;">ProcessEvent</td>
+<td style="text-align: left;"><a href="../tables/trendmicro-xdr-oat-cl.html">TrendMicro_XDR_OAT_CL</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimregistryeventtrendmicrovisionone.html">ASimRegistryEventTrendMicroVisionOne</a><br>vim: <a href="vimregistryeventtrendmicrovisionone.html">vimRegistryEventTrendMicroVisionOne</a></td>
+<td style="text-align: left;">RegistryEvent</td>
+<td style="text-align: left;"><a href="../tables/trendmicro-xdr-oat-cl.html">TrendMicro_XDR_OAT_CL</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+</tbody>
+</table>
+<h2>Vectra</h2>
+<p><strong>Schemas:</strong> AuditEvent, Authentication</p>
+<p><strong>Tables:</strong> <a href="../tables/audits-data-cl.html">Audits_Data_CL</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauditeventvectraxdraudit.html">ASimAuditEventVectraXDRAudit</a><br>vim: <a href="vimauditeventvectraxdraudit.html">vimAuditEventVectraXDRAudit</a></td>
+<td style="text-align: left;">AuditEvent</td>
+<td style="text-align: left;"><a href="../tables/audits-data-cl.html">Audits_Data_CL</a></td>
+<td style="text-align: left;">0.1.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationvectraxdraudit.html">ASimAuthenticationVectraXDRAudit</a><br>vim: <a href="vimauthenticationvectraxdraudit.html">vimAuthenticationVectraXDRAudit</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/audits-data-cl.html">Audits_Data_CL</a></td>
+<td style="text-align: left;">0.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Vectra AI Streams</h2>
+<p><strong>Schemas:</strong> Dns, NetworkSession, WebSession</p>
+<p><strong>Tables:</strong> <a href="../tables/vectrastream-cl.html">VectraStream_CL</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimdnsvectraai.html">ASimDnsVectraAI</a><br>vim: <a href="vimdnsvectraai.html">vimDnsVectraAI</a></td>
+<td style="text-align: left;">Dns</td>
+<td style="text-align: left;"><a href="../tables/vectrastream-cl.html">VectraStream_CL</a></td>
+<td style="text-align: left;">0.1.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionvectraai.html">ASimNetworkSessionVectraAI</a><br>vim: <a href="vimnetworksessionvectraai.html">vimNetworkSessionVectraAI</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/vectrastream-cl.html">VectraStream_CL</a></td>
+<td style="text-align: left;">0.2</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimwebsessionvectraai.html">ASimWebSessionVectraAI</a><br>vim: <a href="vimwebsessionvectraai.html">vimWebSessionVectraAI</a></td>
+<td style="text-align: left;">WebSession</td>
+<td style="text-align: left;"><a href="../tables/vectrastream-cl.html">VectraStream_CL</a></td>
+<td style="text-align: left;">0.2</td>
+</tr>
+</tbody>
+</table>
+<h2>VMConnection</h2>
+<p><strong>Schemas:</strong> NetworkSession</p>
+<p><strong>Tables:</strong> <a href="../tables/vmconnection.html">VMConnection</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionvmconnection.html">ASimNetworkSessionVMConnection</a><br>vim: <a href="vimnetworksessionvmconnection.html">vimNetworkSessionVMConnection</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/vmconnection.html">VMConnection</a></td>
+<td style="text-align: left;">0.2.1</td>
+</tr>
+</tbody>
+</table>
+<h2>VMware Carbon Black Cloud</h2>
+<p><strong>Schemas:</strong> AuditEvent, Authentication, FileEvent, NetworkSession, ProcessEvent, RegistryEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/carbonblackauditlogs-cl.html">CarbonBlackAuditLogs_CL</a>, <a href="../tables/carbonblackevents-cl.html">CarbonBlackEvents_CL</a>, <a href="../tables/carbonblacknotifications-cl.html">CarbonBlackNotifications_CL</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauditeventvmwarecarbonblackcloud.html">ASimAuditEventVMwareCarbonBlackCloud</a><br>vim: <a href="vimauditeventvmwarecarbonblackcloud.html">vimAuditEventVMwareCarbonBlackCloud</a></td>
+<td style="text-align: left;">AuditEvent</td>
+<td style="text-align: left;"><a href="../tables/carbonblackauditlogs-cl.html">CarbonBlackAuditLogs_CL</a></td>
+<td style="text-align: left;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationvmwarecarbonblackcloud.html">ASimAuthenticationVMwareCarbonBlackCloud</a><br>vim: <a href="vimauthenticationvmwarecarbonblackcloud.html">vimAuthenticationVMwareCarbonBlackCloud</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/carbonblackauditlogs-cl.html">CarbonBlackAuditLogs_CL</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimfileeventvmwarecarbonblackcloud.html">ASimFileEventVMwareCarbonBlackCloud</a><br>vim: <a href="vimfileeventvmwarecarbonblackcloud.html">vimFileEventVMwareCarbonBlackCloud</a></td>
+<td style="text-align: left;">FileEvent</td>
+<td style="text-align: left;"><a href="../tables/carbonblackevents-cl.html">CarbonBlackEvents_CL</a></td>
+<td style="text-align: left;">0.1.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionvmwarecarbonblackcloud.html">ASimNetworkSessionVMwareCarbonBlackCloud</a><br>vim: <a href="vimnetworksessionvmwarecarbonblackcloud.html">vimNetworkSessionVMwareCarbonBlackCloud</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/carbonblackevents-cl.html">CarbonBlackEvents_CL</a>, <a href="../tables/carbonblacknotifications-cl.html">CarbonBlackNotifications_CL</a></td>
+<td style="text-align: left;">0.1.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimprocesscreatevmwarecarbonblackcloud.html">ASimProcessCreateVMwareCarbonBlackCloud</a><br>vim: <a href="vimprocesscreatevmwarecarbonblackcloud.html">vimProcessCreateVMwareCarbonBlackCloud</a></td>
+<td style="text-align: left;">ProcessEvent</td>
+<td style="text-align: left;"><a href="../tables/carbonblackevents-cl.html">CarbonBlackEvents_CL</a>, <a href="../tables/carbonblacknotifications-cl.html">CarbonBlackNotifications_CL</a></td>
+<td style="text-align: left;">0.1.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimprocessterminatevmwarecarbonblackcloud.html">ASimProcessTerminateVMwareCarbonBlackCloud</a><br>vim: <a href="vimprocessterminatevmwarecarbonblackcloud.html">vimProcessTerminateVMwareCarbonBlackCloud</a></td>
+<td style="text-align: left;">ProcessEvent</td>
+<td style="text-align: left;"><a href="../tables/carbonblackevents-cl.html">CarbonBlackEvents_CL</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimregistryeventvmwarecarbonblackcloud.html">ASimRegistryEventVMwareCarbonBlackCloud</a><br>vim: <a href="vimregistryeventvmwarecarbonblackcloud.html">vimRegistryEventVMwareCarbonBlackCloud</a></td>
+<td style="text-align: left;">RegistryEvent</td>
+<td style="text-align: left;"><a href="../tables/carbonblackevents-cl.html">CarbonBlackEvents_CL</a></td>
+<td style="text-align: left;">0.1.1</td>
+</tr>
+</tbody>
+</table>
+<h2>WatchGuard Fireware OS</h2>
+<p><strong>Schemas:</strong> NetworkSession</p>
+<p><strong>Tables:</strong> <a href="../tables/syslog.html">Syslog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionwatchguardfirewareos.html">ASimNetworkSessionWatchGuardFirewareOS</a><br>vim: <a href="vimnetworksessionwatchguardfirewareos.html">vimNetworkSessionWatchGuardFirewareOS</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/syslog.html">Syslog</a></td>
+<td style="text-align: left;">0.1.4</td>
+</tr>
+</tbody>
+</table>
+<h2>Windows Firewall</h2>
+<p><strong>Schemas:</strong> NetworkSession</p>
+<p><strong>Tables:</strong> <a href="../tables/event.html">Event</a>, <a href="../tables/securityevent.html">SecurityEvent</a>, <a href="../tables/windowsevent.html">WindowsEvent</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionmicrosoftsecurityeventfirewall.html">ASimNetworkSessionMicrosoftSecurityEventFirewall</a><br>vim: <a href="vimnetworksessionmicrosoftsecurityeventfirewall.html">vimNetworkSessionMicrosoftSecurityEventFirewall</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/event.html">Event</a>, <a href="../tables/securityevent.html">SecurityEvent</a></td>
+<td style="text-align: left;">0.5.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionmicrosoftwindowseventfirewall.html">ASimNetworkSessionMicrosoftWindowsEventFirewall</a><br>vim: <a href="vimnetworksessionmicrosoftwindowseventfirewall.html">vimNetworkSessionMicrosoftWindowsEventFirewall</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/windowsevent.html">WindowsEvent</a></td>
+<td style="text-align: left;">0.5.0</td>
+</tr>
+</tbody>
+</table>
+<h2>Windows Security Events</h2>
+<p><strong>Schemas:</strong> Authentication</p>
+<p><strong>Tables:</strong> <a href="../tables/securityevent.html">SecurityEvent</a>, <a href="../tables/windowsevent.html">WindowsEvent</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationmicrosoftwindowsevent.html">ASimAuthenticationMicrosoftWindowsEvent</a><br>vim: <a href="vimauthenticationmicrosoftwindowsevent.html">vimAuthenticationMicrosoftWindowsEvent</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html">SecurityEvent</a>, <a href="../tables/windowsevent.html">WindowsEvent</a></td>
+<td style="text-align: left;">0.2.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Windows Sysmon</h2>
+<p><strong>Schemas:</strong> FileEvent, NetworkSession</p>
+<p><strong>Tables:</strong> <a href="../tables/event.html">Event</a>, <a href="../tables/windowsevent.html">WindowsEvent</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimfileeventmicrosoftsysmon.html">ASimFileEventMicrosoftSysmon</a><br>vim: <a href="vimfileeventmicrosoftsysmon.html">vimFileEventMicrosoftSysmon</a></td>
+<td style="text-align: left;">FileEvent</td>
+<td style="text-align: left;"><a href="../tables/event.html">Event</a></td>
+<td style="text-align: left;">0.5.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimfileeventmicrosoftsysmonwindowsevent.html">ASimFileEventMicrosoftSysmonWindowsEvent</a><br>vim: <a href="vimfileeventmicrosoftsysmonwindowsevent.html">vimFileEventMicrosoftSysmonWindowsEvent</a></td>
+<td style="text-align: left;">FileEvent</td>
+<td style="text-align: left;"><a href="../tables/windowsevent.html">WindowsEvent</a></td>
+<td style="text-align: left;">0.4.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionmicrosoftsysmon.html">ASimNetworkSessionMicrosoftSysmon</a><br>vim: <a href="vimnetworksessionmicrosoftsysmon.html">vimNetworkSessionMicrosoftSysmon</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/event.html">Event</a></td>
+<td style="text-align: left;">0.2.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionmicrosoftsysmonwindowsevent.html">ASimNetworkSessionMicrosoftSysmonWindowsEvent</a><br>vim: <a href="vimnetworksessionmicrosoftsysmonwindowsevent.html">vimNetworkSessionMicrosoftSysmonWindowsEvent</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/windowsevent.html">WindowsEvent</a></td>
+<td style="text-align: left;">0.2.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Zscaler ZIA</h2>
+<p><strong>Schemas:</strong> WebSession</p>
+<p><strong>Tables:</strong> <a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimwebsessionzscalerzia.html">ASimWebSessionZscalerZIA</a><br>vim: <a href="vimwebsessionzscalerzia.html">vimWebSessionZscalerZIA</a></td>
+<td style="text-align: left;">WebSession</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.4.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Zscaler ZIA DNS</h2>
+<p><strong>Schemas:</strong> Dns</p>
+<p><strong>Tables:</strong> <a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimdnszscalerzia.html">ASimDnsZscalerZIA</a><br>vim: <a href="vimdnszscalerzia.html">vimDnsZscalerZIA</a></td>
+<td style="text-align: left;">Dns</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.6</td>
+</tr>
+</tbody>
+</table>
+<h2>Zscaler ZIA Firewall</h2>
+<p><strong>Schemas:</strong> NetworkSession</p>
+<p><strong>Tables:</strong> <a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></p>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimnetworksessionzscalerzia.html">ASimNetworkSessionZscalerZIA</a><br>vim: <a href="vimnetworksessionzscalerzia.html">vimNetworkSessionZscalerZIA</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
+<td style="text-align: left;">0.4</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <strong>ASIM Products</strong> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+</div>
+</body>
+</html>

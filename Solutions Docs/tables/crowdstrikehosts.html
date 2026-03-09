@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CrowdStrikeHosts &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>CrowdStrikeHosts</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for CrowdStrikeHosts table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Crowdstrike</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikehosts">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (96 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikehosts">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AgentLoadFlags</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Flags indicating the load status of the CrowdStrike agent.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AgentLocalTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Local time of the system where the agent is installed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AgentVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Version of the installed CrowdStrike agent.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BaseImageVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Version of the base operating system image.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BiosManufacturer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Manufacturer of the system BIOS.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BiosVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Version of the system BIOS.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BuildNumber</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Operating system build number.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ChassisType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of system chassis (numerical identifier).</td>
+</tr>
+<tr>
+<td style="text-align: left;">ChassisTypeDesc</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Description of the system chassis type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Cid the CrowdStrike platform.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConfigIdBase</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Base configuration ID for the CrowdStrike agent.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConfigIdBuild</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Build configuration ID for the CrowdStrike agent.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConfigIdPlatform</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Platform-specific configuration ID for the CrowdStrike agent.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConnectionIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address used by the host to connect to CrowdStrike cloud.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConnectionMacAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">MAC address of the network interface used for CrowdStrike connection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CpuSignature</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the CPU architecture and features.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CpuVendor</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Manufacturer of the CPU.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DefaultGatewayIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of the default network gateway.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeploymentType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of CrowdStrike agent deployment on the host.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DetectionSuppressionStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Status of detection suppression rules applied to the host.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the device in CrowdStrike platform.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DevicePolicies</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of security policies applied to the device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Email</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Email address associated with the host or primary user.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ExternalIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">External IP address of the host.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FilesystemContainmentStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Status of filesystem containment feature for the host.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FirstLoginTimestamp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Timestamp of the first user login on the host.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FirstSeen</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Timestamp when the host was first seen by CrowdStrike.</td>
+</tr>
+<tr>
+<td style="text-align: left;">GroupHash</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Hash identifier for the host's group membership.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Groups</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of security groups the host belongs to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HostHiddenStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates if the host is hidden from normal visibility.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hostname</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Network hostname of the system.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HostUtcOffset</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">UTC time offset for the host's timezone.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InstanceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Cloud instance identifier (if applicable).</td>
+</tr>
+<tr>
+<td style="text-align: left;">InternetExposure</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Level of internet exposure for the host.</td>
+</tr>
+<tr>
+<td style="text-align: left;">K8sClusterGitVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Git version of the Kubernetes cluster deployment.</td>
+</tr>
+<tr>
+<td style="text-align: left;">K8sClusterId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the Kubernetes cluster.</td>
+</tr>
+<tr>
+<td style="text-align: left;">K8sClusterVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Version of the Kubernetes cluster.</td>
+</tr>
+<tr>
+<td style="text-align: left;">KernelVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Version of the operating system kernel.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LastLoginTimestamp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Timestamp of the most recent user login.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LastLoginUid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User ID of the last user to log in.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LastLoginUser</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Username of the last user to log in.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LastLoginUserSid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Security identifier (SID) of the last user to log in.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LastReboot</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Timestamp of the last system reboot.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LastSeen</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Timestamp when the host was last seen active by CrowdStrike.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LinuxSensorMode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Operating mode of the CrowdStrike sensor on Linux systems.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LocalIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Local/Internal IP address of the host.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MacAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Primary MAC address of the host.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MachineDomain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Domain name the machine is joined to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MajorVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Major version number of the operating system.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ManagedApps</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of applications managed by CrowdStrike on the host.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Meta</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Additional metadata about the host.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MigrationCompletedTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Timestamp when agent migration was completed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MinorVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Minor version number of the operating system.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ModifiedTimestamp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Timestamp when the host record was last modified.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Notes</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Custom notes or annotations about the host.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OsBuild</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Build number of the operating system.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OsProductName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Product name of the operating system.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OsVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Version string of the operating system.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ou</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Organizational Unit information for the host.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PlatformId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the platform type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PlatformName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the platform.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PodAnnotations</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Kubernetes pod annotations associated with the host.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PodHostIp4</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IPv4 address of the Kubernetes pod host.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PodHostIp6</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IPv6 address of the Kubernetes pod host.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PodHostname</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Hostname of the Kubernetes pod.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PodId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the Kubernetes pod.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PodIp4</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IPv4 address assigned to the Kubernetes pod.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PodIp6</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IPv6 address assigned to the Kubernetes pod.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PodLabels</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Labels assigned to the Kubernetes pod.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PodName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the Kubernetes pod.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PodNamespace</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Kubernetes namespace where the pod is deployed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PodServiceAccountName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the Kubernetes service account used by the pod.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PointerSize</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Memory pointer size of the system architecture (32/64 bit).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Policies</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of all security policies applied to the host.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProductType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of product or system (numerical identifier).</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProductTypeDesc</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Description of the product or system type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProvisionStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Current provisioning status of the host.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReducedFunctionalityMode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates if the host is running in reduced functionality mode.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReleaseGroup</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Group identifier for software release management.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RtrState</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">State of Real Time Response functionality.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SerialNumber</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">System serial number from BIOS/hardware.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServicePackMajor</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Major version of installed service pack.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServicePackMinor</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Minor version of installed service pack.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServiceProvider</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Cloud service provider hosting the system.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServiceProviderAccountId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Account identifier from the cloud service provider.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SiteName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the site where the host is located.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Current operational status of the host.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SystemManufacturer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Manufacturer of the system hardware.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SystemProductName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Product name or model of the system.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tags</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Custom tags assigned to the host.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) when the host data was ingested.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/crowdstrikeapiconnector.html">CrowdStrike API Data Connector (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

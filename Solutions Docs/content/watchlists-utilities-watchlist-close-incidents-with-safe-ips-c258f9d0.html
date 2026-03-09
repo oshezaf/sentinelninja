@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Watchlist - close incidents with safe IPs &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Watchlist - close incidents with safe IPs</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>This playbook leverages Microsoft Sentinel Watchlists in order to close incidents which include IP addresses considered safe.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/watchlists-utilities.html">Watchlists Utilities</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Watchlists%20Utilities/Playbooks/Watchlist-CloseIncidentKnownIPs/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Watchlists%20Utilities/Playbooks/Watchlist-CloseIncidentKnownIPs/readme.md">Watchlist-CloseIncidentKnownIPs/readme.md</a></em></p>
+</blockquote>
+<h1>Watchlists-CloseIncidentKnownIP</h1>
+<p>author: Lior Tamir</p>
+<p>This playbook levarages Microsoft Sentinel Watchlists in order to close incidents which include IP addresses considered safe.</p>
+<p>For each Ip address included in the alert (entities of type IP):
+1. Check if IP is included in watchlist.
+    * If IP is in the watchlist, consider the IP safe, <strong>Add it to Safe IPs array.</strong>
+    * If IP is not in the watchlist, meaning that we are not sure it is safe, <strong>Add it to not Safe IPs array.</strong>
+2. Add a comment to the incident the list of safe and not safe IPs found.
+3. If the not safe list is empty (length == 0), close the incident as Benign Positive.</p>
+<h2>Prerequisites</h2>
+<p><a href='https://docs.microsoft.com/azure/sentinel/watchlists?WT.mc_id=Portal-fx#create-a-new-watchlist'>Create a watchlist</a> for safe IPs with ip column named 'ipaddress' (can be changed in 'Run query' step). Watchlist should be located in the same workspace of the incidents.</p>
+<h2>Configurations</h2>
+<ul>
+<li>Configure the step "Run query and list results" with the identifiers of the Sentinel workspace where the watchlist is stored.</li>
+<li>Configure the identity used in the "Run query and list results" step with the Log Analytics Reader RBAC role on the Microsoft Sentinel resource group.</li>
+<li>Configure the Managed Idenitty of the Logic App with the Microsoft Sentinel Responder RBAC role on the Microsoft Sentinel resource group.</li>
+<li>The watchlist used in this example has at list one column named <strong>ipaddress</strong> which stores the safe address. See the csv file attached in this folder as an example.</li>
+</ul>
+<p><img alt="" src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Watchlists%20Utilities/Playbooks/Watchlist-CloseIncidentKnownIPs/images/designerLight1.png" /></p>
+<p><img alt="" src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Watchlists%20Utilities/Playbooks/Watchlist-CloseIncidentKnownIPs/images/designerLight2.png" /></p>
+<p><img alt="" src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Watchlists%20Utilities/Playbooks/Watchlist-CloseIncidentKnownIPs/images/commentLight.png" /></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FWatchlists%20Utilities%2FPlaybooks%2FWatchlist-CloseIncidentKnownIPs%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FWatchlists%20Utilities%2FPlaybooks%2FWatchlist-CloseIncidentKnownIPs%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/watchlists-utilities.html">Back to Watchlists Utilities</a></p>
+</div>
+</body>
+</html>

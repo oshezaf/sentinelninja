@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>&lt;img src=&quot;../images/asim-badge.png&quot; alt=&quot;ASIM&quot; height=&quot;32&quot;&gt; Audit event ASIM parser &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1><img src="../images/asim-badge.png" alt="ASIM" height="32"> Audit event ASIM parser</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <strong>ASIM Parsers</strong> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="asim-index.html">Back to ASIM Index</a></p>
+<hr />
+<h2>Parser Information</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Parser Name</strong></td>
+<td style="text-align: left;"><code>ASimAuditEvent</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Built-in Parser</strong></td>
+<td style="text-align: left;"><code>_ASim_AuditEvent</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Schema</strong></td>
+<td style="text-align: left;">AuditEvent</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Schema Version</strong></td>
+<td style="text-align: left;">0.1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Parser Type</strong></td>
+<td style="text-align: left;">📦 Union (schema-level)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Parser Version</strong></td>
+<td style="text-align: left;">0.1.3 (<a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEvent.md">version history</a>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">Dec 13, 2024</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source File</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuditEvent/Parsers/ASimAuditEvent.yaml">Parsers\ASimAuditEvent\Parsers\ASimAuditEvent.yaml</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Description</h2>
+<p>This ASIM parser supports normalizing audit events from all supported sources to the ASIM Audit Event activity normalized schema.</p>
+<h2>Products</h2>
+<p>This union parser includes parsers for the following products:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Source Parser</th>
+<th style="text-align: left;">Solutions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Microsoft Azure</td>
+<td style="text-align: left;"><a href="asimauditeventazureactivity.html">_ASim_AuditEvent_AzureActivity</a></td>
+<td style="text-align: left;"><a href="../solutions/azure-activity.html">Azure Activity</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Barracuda WAF</td>
+<td style="text-align: left;"><a href="asimauditeventbarracudacef.html">_ASim_AuditEvent_BarracudaCEF</a></td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Barracuda WAF</td>
+<td style="text-align: left;"><a href="asimauditeventbarracudawaf.html">_ASim_AuditEvent_BarracudaWAF</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Cisco ISE</td>
+<td style="text-align: left;"><a href="asimauditeventciscoise.html">_ASim_AuditEvent_CiscoISE</a></td>
+<td style="text-align: left;"><a href="../solutions/syslog.html">Syslog</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Cisco Meraki</td>
+<td style="text-align: left;"><a href="asimauditeventciscomeraki.html">_ASim_AuditEvent_CiscoMeraki</a></td>
+<td style="text-align: left;"><a href="../solutions/ciscomeraki.html">CiscoMeraki</a><br><a href="../solutions/customlogsama.html">CustomLogsAma</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Cisco Meraki</td>
+<td style="text-align: left;"><a href="asimauditeventciscomerakisyslog.html">_ASim_AuditEvent_CiscoMerakiSyslog</a></td>
+<td style="text-align: left;"><a href="../solutions/syslog.html">Syslog</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">CrowdStrike Falcon Endpoint Protection</td>
+<td style="text-align: left;"><a href="asimauditeventcrowdstrikefalconhost.html">_ASim_AuditEvent_CrowdStrikeFalconHost</a></td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Illumio Core</td>
+<td style="text-align: left;"><a href="asimauditeventillumiosaascore.html">_ASim_AuditEvent_IllumioSaaSCore</a></td>
+<td style="text-align: left;"><a href="../solutions/illumiosaas.html">IllumioSaaS</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Infoblox BloxOne</td>
+<td style="text-align: left;"><a href="asimauditeventinfobloxbloxone.html">_ASim_AuditEvent_InfobloxBloxOne</a></td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Microsoft Windows</td>
+<td style="text-align: left;"><a href="asimauditeventmicrosoftevent.html">_ASim_AuditEvent_MicrosoftEvent</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Microsoft SharePoint</td>
+<td style="text-align: left;"><a href="asimauditeventmicrosoftexchangeadmin365.html">_ASim_AuditEvent_MicrosoftExchangeAdmin365</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Microsoft Windows</td>
+<td style="text-align: left;"><a href="asimauditeventmicrosoftsecurityevents.html">_ASim_AuditEvent_MicrosoftSecurityEvents</a></td>
+<td style="text-align: left;"><a href="../solutions/windows-security-events.html">Windows Security Events</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Microsoft Windows</td>
+<td style="text-align: left;"><a href="asimauditeventmicrosoftwindowsevents.html">_ASim_AuditEvent_MicrosoftWindowsEvents</a></td>
+<td style="text-align: left;"><a href="../solutions/windows-forwarded-events.html">Windows Forwarded Events</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Native</td>
+<td style="text-align: left;"><a href="asimauditeventnative.html">_ASim_AuditEvent_Native</a></td>
+<td style="text-align: left;"><a href="../solutions/cisco-meraki-events-via-rest-api.html">Cisco Meraki Events via REST API</a><br><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a><br><a href="../solutions/workday.html">Workday</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SentinelOne</td>
+<td style="text-align: left;"><a href="asimauditeventsentinelone.html">_ASim_AuditEvent_SentinelOne</a></td>
+<td style="text-align: left;"><a href="../solutions/sentinelone.html">SentinelOne</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VMware Carbon Black Cloud</td>
+<td style="text-align: left;"><a href="asimauditeventvmwarecarbonblackcloud.html">_ASim_AuditEvent_VMwareCarbonBlackCloud</a></td>
+<td style="text-align: left;"><a href="../solutions/vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Vectra</td>
+<td style="text-align: left;"><a href="asimauditeventvectraxdraudit.html">_ASim_AuditEvent_VectraXDRAudit</a></td>
+<td style="text-align: left;"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Source Tables</h2>
+<p>This parser reads from the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimauditeventazureactivity.html"><code>ASimAuditEventAzureActivity</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimauditeventbarracudacef.html"><code>ASimAuditEventBarracudaCEF</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimauditeventbarracudawaf.html"><code>ASimAuditEventBarracudaWAF</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimauditeventciscoise.html"><code>ASimAuditEventCiscoISE</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimauditeventciscomeraki.html"><code>ASimAuditEventCiscoMeraki</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimauditeventciscomerakisyslog.html"><code>ASimAuditEventCiscoMerakiSyslog</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimauditeventcrowdstrikefalconhost.html"><code>ASimAuditEventCrowdStrikeFalconHost</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimauditeventillumiosaascore.html"><code>ASimAuditEventIllumioSaaSCore</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimauditeventinfobloxbloxone.html"><code>ASimAuditEventInfobloxBloxOne</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimauditeventmicrosoftevent.html"><code>ASimAuditEventMicrosoftEvent</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimauditeventmicrosoftexchangeadmin365.html"><code>ASimAuditEventMicrosoftExchangeAdmin365</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimauditeventmicrosoftsecurityevents.html"><code>ASimAuditEventMicrosoftSecurityEvents</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimauditeventmicrosoftwindowsevents.html"><code>ASimAuditEventMicrosoftWindowsEvents</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimauditeventnative.html"><code>ASimAuditEventNative</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimauditeventsentinelone.html"><code>ASimAuditEventSentinelOne</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimauditeventvmwarecarbonblackcloud.html"><code>ASimAuditEventVMwareCarbonBlackCloud</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimauditeventvectraxdraudit.html"><code>ASimAuditEventVectraXDRAudit</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<h2>Parameters</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>pack</code></td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">False</td>
+</tr>
+</tbody>
+</table>
+<h2>References</h2>
+<ul>
+<li><a href="https://aka.ms/ASimAuditEventDoc">ASIM Audit Event Schema</a></li>
+<li><a href="https://aka.ms/AboutASIM">ASIM</a></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <strong>ASIM Parsers</strong> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="asim-index.html">Back to ASIM Index</a></p>
+</div>
+</body>
+</html>

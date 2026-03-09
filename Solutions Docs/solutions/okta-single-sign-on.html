@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Okta Single Sign-On &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Okta Single Sign-On</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/okta_logo.svg" alt="Okta Single Sign-On Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.1.2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-03-24</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On">Okta Single Sign-On</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.okta.com/products/single-sign-on">Okta Single Sign-On (SSO)</a> solution for Microsoft Sentinel provides the capability to ingest <a href="https://www.okta.com/integrate/documentation/isv-syslog-references/">audit and event logs</a> into Microsoft Sentinel using the Okta API.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong> </p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>a. <a href="https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api">Azure Monitor HTTP Data Collector API</a></p>
+<p>b. <a href="https://azure.microsoft.com/services/functions/#overview">Azure Functions</a></p>
+<p>c. <a href="https://docs.microsoft.com/azure/sentinel/create-codeless-connector?tabs=deploy-via-arm-template%2Cconnect-via-the-azure-portal">Codeless Connector Platform (CCP)</a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>2 data connector(s)</strong> (plus 2 discovered⚠️):</p>
+<ul>
+<li><a href="../connectors/oktasso.html">Okta Single Sign-On</a> 🔶</li>
+<li><a href="../connectors/oktasso-polling.html">Okta Single Sign-On (Polling CCP)</a> ⚠️</li>
+<li><a href="../connectors/oktassov2.html">Okta Single Sign-On</a> 🔶</li>
+<li><a href="../connectors/oktasinglesignon-usingazurefunctions.html">Okta Single Sign-On (using Azure Functions)</a> ⚠️ 🔶</li>
+</ul>
+<p><em>⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.</em></p>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>3 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/oktanativepoller-cl.html"><code>OktaNativePoller_CL</code></a></td>
+<td><a href="../connectors/oktasso-polling.html">Okta Single Sign-On (Polling CCP)</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a></td>
+<td><a href="../connectors/oktassov2.html">Okta Single Sign-On</a>, <a href="../connectors/oktasinglesignon-usingazurefunctions.html">Okta Single Sign-On (using Azure Functions)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/okta-cl.html"><code>Okta_CL</code></a> 🔶</td>
+<td><a href="../connectors/oktasso.html">Okta Single Sign-On</a>, <a href="../connectors/oktassov2.html">Okta Single Sign-On</a>, <a href="../connectors/oktasinglesignon-usingazurefunctions.html">Okta Single Sign-On (using Azure Functions)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>24 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">9</td>
+</tr>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/okta-single-sign-on-device-registration-from-malicious-ip-e36c6bd6-f86a-4282-93a5-b4a1b48dd849-7384eb46.html">Device Registration from Malicious IP</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/okta-single-sign-on-failed-logins-from-unknown-or-invalid-user-884be6e7-e568-418e-9c12-89229865ffde-0b05185e.html">Failed Logins from Unknown or Invalid User</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/okta-single-sign-on-high-risk-admin-activity-9f82a735-ae43-4c03-afb4-d5d153e1ace1-497c8fc0.html">High-Risk Admin Activity</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/okta-single-sign-on-mfa-fatigue-okta-c2697b81-7fe9-4f57-ba1d-de46c6f91f9c-44b7ecc7.html">MFA Fatigue (OKTA)</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/okta-single-sign-on-new-device-location-sign-in-along-with-critical-operation-41e843a8-92e7-444d-8d72-638f1145d1e1-06c1784b.html">New Device/Location sign-in along with critical operation</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, Persistence</td>
+<td style="text-align: left;"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/okta-single-sign-on-okta-fast-pass-phishing-detection-78d2b06c-8dc0-40e1-91c8-66d916c186f3-fefae1c8.html">Okta Fast Pass phishing Detection</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/okta-single-sign-on-potential-password-spray-attack-e27dd7e5-4367-4c40-a2b7-fcd7e7a8a508-8d39fbf2.html">Potential Password Spray Attack</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/okta-single-sign-on-user-login-from-different-countries-within-3-hours-2954d424-f786-4677-9ffc-c24c44c6e7d5-965998c8.html">User Login from Different Countries within 3 hours</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/okta-single-sign-on-user-session-impersonation-okta-35846296-4052-4de2-8098-beb6bb5f2203-cf2f2ba3.html">User Session Impersonation(Okta)</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/okta-single-sign-on-admin-privilege-granted-okta-5309ea6b-463c-4449-a3c4-2fc8ee0080ee-23fe94ba.html">Admin privilege granted (Okta)</a></td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/okta-single-sign-on-create-api-token-okta-c5134bac-044d-447a-a260-d1d439653ae7-0e45b431.html">Create API Token (Okta)</a></td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/okta-single-sign-on-initiate-impersonation-session-okta-96fb9b37-e2b7-45f6-9b2a-cb9cdfd2b0fc-8f019c66.html">Initiate impersonation session (Okta)</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/okta-single-sign-on-logins-originating-from-vps-providers-f262fc3a-0acc-4c8b-9a73-fdc09f55fff2-61a9231a.html">Logins originating from VPS Providers</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/okta-single-sign-on-new-device-registration-from-unfamiliar-location-4355f601-1421-4ac4-b2ce-88f0859cc101-e402fdf2.html">New device registration from unfamiliar location</a></td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/okta-single-sign-on-okta-login-from-multiple-locations-37381608-bcd7-46bc-954e-1fd418023c26-5c569b3c.html">Okta Login from multiple locations</a></td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/okta-single-sign-on-okta-login-attempts-using-legacy-auth-6a9199ec-bc32-4935-9f82-4aa848edb3fc-6f88bf06.html">Okta login attempts using Legacy Auth</a></td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/okta-single-sign-on-rare-mfa-operations-okta-18667b4a-18e5-4982-ba75-92ace62bc79c-204f5119.html">Rare MFA Operations (Okta)</a></td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/okta-single-sign-on-sign-ins-from-nord-vpn-providers-708c33ec-22a2-4739-b248-c14919500cdd-3c19da48.html">Sign-ins from Nord VPN Providers</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/okta-single-sign-on-user-password-reset-okta-38da2aa3-4778-4d88-9178-3c5c14758b05-7f425c2c.html">User password reset(Okta)</a></td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/okta-single-sign-on-oktasinglesignon-21c9f54c.html">OktaSingleSignOn</a></td>
+<td style="text-align: left;"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/okta-single-sign-on-prompt-okta-user-beec822e.html">Prompt Okta user</a></td>
+<td style="text-align: left;">This playbook uses the OKTA connector to prompt the risky user on Teams. User is asked action was ta...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/okta-single-sign-on-response-on-okta-user-from-teams-0dfd8bc2.html">Response on Okta user from Teams</a></td>
+<td style="text-align: left;">This playbooks sends an adaptive card to the SOC Teams channel with information about the Okta user ...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/okta-single-sign-on-user-enrichment-okta-3d8dea7d.html">User enrichment - Okta</a></td>
+<td style="text-align: left;">This playbook will collect user information from Okta and post a report on the incident.</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/oktasso.html">OktaSSO</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a> <em>(read)</em><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.1.4</td>
+<td>13-01-2026</td>
+<td>Updated non-functional link from MFA Fatigue (OKTA) <strong>Analytic rule</strong></td>
+</tr>
+<tr>
+<td>3.1.3</td>
+<td>05-02-2025</td>
+<td>Version Update</td>
+</tr>
+<tr>
+<td>3.1.2</td>
+<td>06-01-2025</td>
+<td>Removing Custom Entity mappings from <strong>Analytic Rule</strong></td>
+</tr>
+<tr>
+<td>3.1.1</td>
+<td>08-11-2024</td>
+<td>Fixed CCP <strong>Data Connector</strong> connection bug</td>
+</tr>
+<tr>
+<td>3.1.0</td>
+<td>27-11-2024</td>
+<td>Fixed Solution version in Maintemplate and resolved ARM template error</td>
+</tr>
+<tr>
+<td>3.0.10</td>
+<td>08-11-2024</td>
+<td>Updated <strong>Parser</strong> to fix the schema</td>
+</tr>
+<tr>
+<td>3.0.9</td>
+<td>17-10-2024</td>
+<td>Updated package to fix connectivity of CCP connector</td>
+</tr>
+<tr>
+<td>3.0.8</td>
+<td>14-08-2024</td>
+<td>Data Connector Globally Available</td>
+</tr>
+<tr>
+<td>3.0.7</td>
+<td>25-04-2024</td>
+<td>Repackaged for parser issue with old names</td>
+</tr>
+<tr>
+<td>3.0.6</td>
+<td>17-04-2024</td>
+<td>Repackaged solution for parser fix</td>
+</tr>
+<tr>
+<td>3.0.5</td>
+<td>08-04-2024</td>
+<td>Added Azure Deploy button for government portal deployments</td>
+</tr>
+<tr>
+<td>3.0.4</td>
+<td>18-03-2024</td>
+<td>Updated description in data file, data connector and added logo for ccp data connector</td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>08-03-2024</td>
+<td>Updated ccp with domainname in dcr, tables, name change in definition and poller</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>20-02-2024</td>
+<td>Updated _solutionVersion to resource specific version and repackage</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>24-01-2024</td>
+<td>New <strong>Analytic Rule</strong> added (UserSessionImpersonation.yaml)</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>10-10-2023</td>
+<td>Manual deployment instructions updated for <strong>Data Connector</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

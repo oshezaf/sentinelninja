@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ConfigurationChange &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>ConfigurationChange</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for ConfigurationChange table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">IT &amp; Management Tools</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/configurationchange">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (57 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/configurationchange">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">Acls</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Access-Control List specifies which users or system processes are granted access to objects</td>
+</tr>
+<tr>
+<td style="text-align: left;">Attributes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">ChangeCategory</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of change that occurred: Added Removed Modified</td>
+</tr>
+<tr>
+<td style="text-align: left;">Computer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">ConfigChangeType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of configuration item that changed: Files Software WindowsServices Registry Daemons</td>
+</tr>
+<tr>
+<td style="text-align: left;">Current</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Current value</td>
+</tr>
+<tr>
+<td style="text-align: left;">DateCreated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date that the item was created</td>
+</tr>
+<tr>
+<td style="text-align: left;">DateModified</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date that the item was last modified</td>
+</tr>
+<tr>
+<td style="text-align: left;">FieldsChanged</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Fields that were changed as part of the change record</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileContentChecksum</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Checksum of the file content</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileSystemPath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">File system path for the changed file</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hive</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Registry hive for the changed registry key</td>
+</tr>
+<tr>
+<td style="text-align: left;">LastSnapshotAge</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Age of the last snapshot</td>
+</tr>
+<tr>
+<td style="text-align: left;">Location</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">ManagementGroupName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of a resource's assigned management group</td>
+</tr>
+<tr>
+<td style="text-align: left;">Previous</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Previous value</td>
+</tr>
+<tr>
+<td style="text-align: left;">PreviousAcls</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Previous Acl value</td>
+</tr>
+<tr>
+<td style="text-align: left;">PreviousAttributes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Previous attributes value</td>
+</tr>
+<tr>
+<td style="text-align: left;">PreviousDateCreated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Previous date created time</td>
+</tr>
+<tr>
+<td style="text-align: left;">PreviousDateModified</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Previous date modified time</td>
+</tr>
+<tr>
+<td style="text-align: left;">PreviousFileContentChecksum</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Previous file content checksum value</td>
+</tr>
+<tr>
+<td style="text-align: left;">PreviousSize</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Previous file size</td>
+</tr>
+<tr>
+<td style="text-align: left;">PreviousValueData</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Previous registry value data</td>
+</tr>
+<tr>
+<td style="text-align: left;">PreviousValueType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Previous registry value type</td>
+</tr>
+<tr>
+<td style="text-align: left;">Publisher</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Software publisher name</td>
+</tr>
+<tr>
+<td style="text-align: left;">RegistryKey</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Registry key name</td>
+</tr>
+<tr>
+<td style="text-align: left;">Size</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Current size of the changed file</td>
+</tr>
+<tr>
+<td style="text-align: left;">SoftwareDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Description of the software</td>
+</tr>
+<tr>
+<td style="text-align: left;">SoftwareName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the software</td>
+</tr>
+<tr>
+<td style="text-align: left;">SoftwareType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the software: Application Package Update</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceComputerId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">SvcAccount</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User account that is associated with the service executable explicitly to provide a security context for the service</td>
+</tr>
+<tr>
+<td style="text-align: left;">SvcChangeType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Service property that was changed</td>
+</tr>
+<tr>
+<td style="text-align: left;">SvcController</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Parent process for the daemon</td>
+</tr>
+<tr>
+<td style="text-align: left;">SvcDisplayName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Human-frinedly name for the service</td>
+</tr>
+<tr>
+<td style="text-align: left;">SvcName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the service</td>
+</tr>
+<tr>
+<td style="text-align: left;">SvcPath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The file path to the executable for the service</td>
+</tr>
+<tr>
+<td style="text-align: left;">SvcPreviousAccount</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Previous user account that was associated with the sevice executable</td>
+</tr>
+<tr>
+<td style="text-align: left;">SvcPreviousController</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Previous parent process for the daemon</td>
+</tr>
+<tr>
+<td style="text-align: left;">SvcPreviousPath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Previous file path to the executable for the service</td>
+</tr>
+<tr>
+<td style="text-align: left;">SvcPreviousRunlevels</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Previous modes used by the daemon for system operation</td>
+</tr>
+<tr>
+<td style="text-align: left;">SvcPreviousStartupType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Previous startup behavior of the service</td>
+</tr>
+<tr>
+<td style="text-align: left;">SvcPreviousState</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Previous state of the service</td>
+</tr>
+<tr>
+<td style="text-align: left;">SvcRunlevels</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Modes used by the daemon for system operation</td>
+</tr>
+<tr>
+<td style="text-align: left;">SvcStartupType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Startup behavior of the service</td>
+</tr>
+<tr>
+<td style="text-align: left;">SvcState</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Current state of the service</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time the record was created.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">ValueData</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data contained in the value and registry key being tracked</td>
+</tr>
+<tr>
+<td style="text-align: left;">ValueName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the value for the registry key being tracked</td>
+</tr>
+<tr>
+<td style="text-align: left;">ValueType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the value for the registry key being tracked</td>
+</tr>
+<tr>
+<td style="text-align: left;">VMUUID</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (4)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a></li>
+<li><a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a></li>
+<li><a href="../solutions/nistsp80053.html">NISTSP80053</a></li>
+<li><a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a></li>
+</ul>
+<hr />
+<h2>Content Items Using This Table (4)</h2>
+<h3>Workbooks (4)</h3>
+<p><strong>In solution <a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.html">CybersecurityMaturityModelCertification_CMMCV2</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/nistsp80053.html">NISTSP80053</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/nistsp80053-nistsp80053-1f654213.html">NISTSP80053</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/sox-it-compliance-soxitcompliance-6426e0a3.html">SOXITCompliance</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.compute/virtualmachines</code></li>
+<li><code>microsoft.conenctedvmwarevsphere/virtualmachines</code></li>
+<li><code>microsoft.azurestackhci/virtualmachines</code></li>
+<li><code>microsoft.scvmm/virtualmachines</code></li>
+<li><code>microsoft.compute/virtualmachinescalesets</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

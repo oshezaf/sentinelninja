@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Box &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Box</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Box/Workbooks/Images/Logo/box.svg" alt="Box Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.1.2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-05-20</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Box">Box</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://developer.box.com/guides/events/enterprise-events/for-enterprise/">Box</a> solution connector provides the capability to ingest <a href="https://developer.box.com/guides/events/#admin-events">Box enterprise's events</a> into Microsoft Sentinel using the Box REST API </p>
+<p><strong>Underlying Microsoft Technologies used:</strong> </p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>a. <a href="https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api">Azure Monitor HTTP Data Collector API</a> </p>
+<p>b. <a href="https://azure.microsoft.com/services/functions/#overview">Azure Functions </a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/boxdataconnector.html">Box</a> 🔶</li>
+<li><a href="../connectors/boxeventsccpdefinition.html">Box Events (CCP)</a> 🔶</li>
+</ul>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>2 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/boxeventsv2-cl.html"><code>BoxEventsV2_CL</code></a> 🔶</td>
+<td><a href="../connectors/boxdataconnector.html">Box</a>, <a href="../connectors/boxeventsccpdefinition.html">Box Events (CCP)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/boxevents-cl.html"><code>BoxEvents_CL</code></a> 🔶</td>
+<td><a href="../connectors/boxdataconnector.html">Box</a>, <a href="../connectors/boxeventsccpdefinition.html">Box Events (CCP)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>22 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-abmormal-user-activity-1139230c-cf10-45db-b616-fed0d1415c05-d050017d.html">Box - Abmormal user activity</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/boxeventsv2-cl.html"><code>BoxEventsV2_CL</code></a><br><a href="../tables/boxevents-cl.html"><code>BoxEvents_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-executable-file-in-folder-b91ec98d-5747-45c8-b2f6-a07bf47068f0-524e216a.html">Box - Executable file in folder</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/boxeventsv2-cl.html"><code>BoxEventsV2_CL</code></a><br><a href="../tables/boxevents-cl.html"><code>BoxEvents_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-file-containing-sensitive-data-266746ae-5eaf-4068-a980-5d630f435c46-bb951f6a.html">Box - File containing sensitive data</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/boxeventsv2-cl.html"><code>BoxEventsV2_CL</code></a><br><a href="../tables/boxevents-cl.html"><code>BoxEvents_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-forbidden-file-type-downloaded-8889e69c-2161-412a-94a6-76c1b2d9daa7-190c2323.html">Box - Forbidden file type downloaded</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/boxeventsv2-cl.html"><code>BoxEventsV2_CL</code></a><br><a href="../tables/boxevents-cl.html"><code>BoxEvents_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-inactive-user-login-edbf38d7-e170-4af2-ad50-1a05b374611b-ede0d64c.html">Box - Inactive user login</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/boxeventsv2-cl.html"><code>BoxEventsV2_CL</code></a><br><a href="../tables/boxevents-cl.html"><code>BoxEvents_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-item-shared-to-external-entity-3b803560-f8a6-4db4-89cb-617d89724ba1-77c468b4.html">Box - Item shared to external entity</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/boxeventsv2-cl.html"><code>BoxEventsV2_CL</code></a><br><a href="../tables/boxevents-cl.html"><code>BoxEvents_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-many-items-deleted-by-user-1b212329-6f2c-46ca-9071-de3464f3d88d-af060c46.html">Box - Many items deleted by user</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/boxeventsv2-cl.html"><code>BoxEventsV2_CL</code></a><br><a href="../tables/boxevents-cl.html"><code>BoxEvents_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-new-external-user-fd36ac88-cd92-4137-aa23-37a3648621fa-96cd22de.html">Box - New external user</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, Persistence</td>
+<td style="text-align: left;"><a href="../tables/boxeventsv2-cl.html"><code>BoxEventsV2_CL</code></a><br><a href="../tables/boxevents-cl.html"><code>BoxEvents_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-user-logged-in-as-admin-b2197d7f-4731-483c-89de-d48606b872da-6058ec71.html">Box - User logged in as admin</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/boxeventsv2-cl.html"><code>BoxEventsV2_CL</code></a><br><a href="../tables/boxevents-cl.html"><code>BoxEvents_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-user-role-changed-to-owner-174c31c9-22ec-42e5-8226-814391c08200-4e0da2af.html">Box - User role changed to owner</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/boxeventsv2-cl.html"><code>BoxEventsV2_CL</code></a><br><a href="../tables/boxevents-cl.html"><code>BoxEvents_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-deleted-users-4b4a1802-8fcc-4eeb-9ccd-b5bb16f4b64b-640b3c89.html">Box - Deleted users</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/boxeventsv2-cl.html"><code>BoxEventsV2_CL</code></a><br><a href="../tables/boxevents-cl.html"><code>BoxEvents_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-downloaded-data-volume-per-user-47e0a82d-fd66-4d6e-a64a-ac377f136426-48750ae0.html">Box - Downloaded data volume per user</a></td>
+<td style="text-align: left;">Exfiltration, Collection</td>
+<td style="text-align: left;"><a href="../tables/boxeventsv2-cl.html"><code>BoxEventsV2_CL</code></a><br><a href="../tables/boxevents-cl.html"><code>BoxEvents_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-ip-list-for-admin-users-949aec39-304d-4fba-94b3-15337d05e3f1-35a7f33f.html">Box - IP list for admin users</a></td>
+<td style="text-align: left;">InitialAccess, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/boxeventsv2-cl.html"><code>BoxEventsV2_CL</code></a><br><a href="../tables/boxevents-cl.html"><code>BoxEvents_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-inactive-admin-users-d8ef8d5c-97f3-4552-afca-75d44339fa8f-5119ae4c.html">Box - Inactive admin users</a></td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/boxeventsv2-cl.html"><code>BoxEventsV2_CL</code></a><br><a href="../tables/boxevents-cl.html"><code>BoxEvents_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-inactive-users-c0a4169e-c713-484b-95a9-d8f437b52d66-db4d3cd3.html">Box - Inactive users</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/boxeventsv2-cl.html"><code>BoxEventsV2_CL</code></a><br><a href="../tables/boxevents-cl.html"><code>BoxEvents_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-new-users-c8e19aa5-3424-4b90-8594-79ee4613f429-1fc18e56.html">Box - New users</a></td>
+<td style="text-align: left;">PrivilegeEscalation, Persistence</td>
+<td style="text-align: left;"><a href="../tables/boxeventsv2-cl.html"><code>BoxEventsV2_CL</code></a><br><a href="../tables/boxevents-cl.html"><code>BoxEvents_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-new-users-5ff08015-2d1e-4c2b-862f-2759e6132d0e-618b766e.html">Box - New users</a></td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/boxeventsv2-cl.html"><code>BoxEventsV2_CL</code></a><br><a href="../tables/boxevents-cl.html"><code>BoxEvents_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-suspicious-or-sensitive-files-6b91dda7-d9c5-4197-9dea-0c41f7c55176-6026681b.html">Box - Suspicious or sensitive files</a></td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/boxeventsv2-cl.html"><code>BoxEventsV2_CL</code></a><br><a href="../tables/boxevents-cl.html"><code>BoxEvents_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-uploaded-data-volume-per-user-484f9c1c-a8d6-4a78-b526-d38958ade100-a4aab1ac.html">Box - Uploaded data volume per user</a></td>
+<td style="text-align: left;">Exfiltration, Collection</td>
+<td style="text-align: left;"><a href="../tables/boxeventsv2-cl.html"><code>BoxEventsV2_CL</code></a><br><a href="../tables/boxevents-cl.html"><code>BoxEvents_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-users-with-owner-permissions-09fee766-d5ba-4e8c-8e9e-363915aee1f4-c5ab842d.html">Box - Users with owner permissions</a></td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/boxeventsv2-cl.html"><code>BoxEventsV2_CL</code></a><br><a href="../tables/boxevents-cl.html"><code>BoxEvents_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/box-box-c7528016.html">Box</a></td>
+<td style="text-align: left;"><a href="../tables/boxeventsv2-cl.html"><code>BoxEventsV2_CL</code></a><br><a href="../tables/boxevents-cl.html"><code>BoxEvents_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/boxevents.html">BoxEvents</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/boxeventsv2-cl.html"><code>BoxEventsV2_CL</code></a> <em>(read)</em><br><a href="../tables/boxevents-cl.html"><code>BoxEvents_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.1.2</td>
+<td>29-10-2025</td>
+<td>Updated KQL queries in Workbook to use EventEndTime instead of TimeGenerated for time-based filtering</td>
+</tr>
+<tr>
+<td>3.1.1</td>
+<td>10-02-2025</td>
+<td>Advancing CCP <strong>Data Connector</strong> from Public preview to Global Availability.</td>
+</tr>
+<tr>
+<td>3.1.0</td>
+<td>06-12-2024</td>
+<td>Added new CCP <strong>Data Connector</strong> and modified <strong>Parser</strong>.</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>18-08-2023</td>
+<td>Added text 'using Azure Functions' in <strong>Data Connector</strong> page.</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>19-07-2023</td>
+<td>Manual deployment instructions updated for <strong>Data Connector</strong>.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

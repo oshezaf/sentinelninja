@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Illumio Containment Switch Playbook &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Illumio Containment Switch Playbook</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>This playbook leverages Illumio workloads API to contain and isolate a workload based on user inputs. <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/IllumioSaaS/Playbooks/Illumio-Port-Blocking-Switch/Images/illumio-port-blocking-switch-playbook.png"/>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/illumiosaas.html">IllumioSaaS</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS/Playbooks/Illumio-Port-Blocking-Switch/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS/Playbooks/Illumio-Port-Blocking-Switch/readme.md">Illumio-Port-Blocking-Switch/readme.md</a></em></p>
+</blockquote>
+<h1>Microsoft Sentinel Playbooks for Illumio Integration</h1>
+<p>Playbooks are collections of procedures that can be run from Microsoft Sentinel.  </p>
+<hr />
+<h2>Containment Switch Playbook</h2>
+<p>The <strong>Containment Switch</strong> playbook is designed to help isolate workloads. It includes the following procedures:</p>
+<ol>
+<li><strong>Run an Explorer Query</strong><br />
+   Queries Illumio PCE for potentially blocked or unknown traffic for a given port-protocol combination over the last week.</li>
+<li><strong>Get a List of Visibility-Only Workloads</strong><br />
+   Parses the query response to identify workloads marked as visibility-only.</li>
+<li><strong>Create a Deny Rule</strong><br />
+   Creates and provisions a deny rule from all IPs to all workloads for the specified port-protocol combination.</li>
+<li><strong>Create a Virtual Service</strong><br />
+   Creates and provisions a virtual service for the given port-protocol combination.</li>
+<li><strong>Create Workload Bindings</strong><br />
+   Binds workloads to the virtual service created in Step 4.</li>
+<li><strong>Create an Allow Rule</strong><br />
+   Creates and provisions an allow rule from workloads to the virtual service.</li>
+<li><strong>Change Enforcement State</strong><br />
+   Changes the enforcement state of visibility-only workloads to selective state.</li>
+</ol>
+<p>Each procedure is implemented as a function within an Azure Function App.</p>
+<hr />
+<h3>How It Works</h3>
+<p>The playbook provides the following capabilities:</p>
+<ul>
+<li>Queries Illumio PCE for traffic matching the specified port-protocol combination.</li>
+<li>Parses the response to identify visibility-only workloads.</li>
+<li>Provisions rules and objects in the PCE based on the parsed data.</li>
+</ul>
+<h4>Example Input to the Playbook:</h4>
+<pre><code class="language-json">{
+  &quot;protocol&quot;: 17,
+  &quot;port&quot;: 5354,
+  &quot;applyChanges&quot;: true
+}
+</code></pre>
+<p>Regarding "applyChanges":
+If true, the playbook will create and provision changes (including workload enforcement changes).
+If false, it skips object creation/modification steps and only provides a summary of actions, but traffic query results and parsed workloads will still be available.</p>
+<h1>To deploy, follow the below link</h1>
+<p>Deploy the function app first:
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Frefs%2Fheads%2Fmaster%2FSolutions%2FIllumioSaaS%2FPlaybooks%2FCustomConnector%2FIllumioSaaS_FunctionAppConnector%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
+<p>Deploy logic app next:
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Frefs%2Fheads%2Fmaster%2FSolutions%2FIllumioSaaS%2FPlaybooks%2FIllumio-Port-Blocking-Switch%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
+<p>User can modify the playbook name, function app name as per requirements.</p>
+<p>PCE fqdn, port, org id, api key and secret are needed for communicating with the pce.
+Once these are entered, click on next and follow steps to deploy.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/illumiosaas.html">Back to IllumioSaaS</a></p>
+</div>
+</body>
+</html>

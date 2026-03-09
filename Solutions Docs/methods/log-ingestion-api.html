@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log Ingestion API &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Log Ingestion API</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../methods-index.html">Back to Methods Index</a></p>
+<hr />
+<p>The Log Ingestion API is the modern, recommended method for sending custom data to Azure Monitor Logs (and Microsoft Sentinel). It uses Data Collection Rules (DCRs) and Data Collection Endpoints (DCEs) to define the data pipeline, providing schema validation, transformation, and routing capabilities.</p>
+<h2>Documentation</h2>
+<ul>
+<li><a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">📖 Logs Ingestion API overview</a></li>
+<li><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tutorial-logs-ingestion-api">📖 Logs Ingestion API tutorial</a></li>
+<li><a href="https://learn.microsoft.com/azure/azure-monitor/essentials/data-collection-rule-overview">📖 Data Collection Rules overview</a></li>
+<li><a href="https://learn.microsoft.com/azure/azure-monitor/essentials/data-collection-endpoint-overview">📖 Data Collection Endpoints overview</a></li>
+</ul>
+<h2>Statistics</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Metric</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Total Connectors</td>
+<td style="text-align: right;"><strong>47</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">Active</td>
+<td style="text-align: right;">27</td>
+</tr>
+<tr>
+<td style="text-align: left;">Deprecated 🚫</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Unpublished ⚠️</td>
+<td style="text-align: right;">20</td>
+</tr>
+</tbody>
+</table>
+<h3>By Collection Method</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Collection Method</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: right;">36</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../methods/ccf-push.html">CCF Push</a></td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: right;"><strong>47</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>Connectors Using This API</h2>
+<h3>Active Connectors</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Collection Method</th>
+<th style="text-align: left;">Publisher</th>
+<th style="text-align: center;">Tables</th>
+<th style="text-align: left;">Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/bitsight.html">Bitsight data connector</a></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">BitSight Technologies, Inc.</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: left;"><a href="../solutions/bitsight.html">BitSight</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/cyberarkaudit.html">CyberArkAudit</a></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">CyberArk</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/cyberarkaudit.html">CyberArkAudit</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/cyerafunctionsconnector.html">Cyera DSPM Azure Functions Microsoft Sentinel Data Connector</a> ⚠️</td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">Cyera Inc</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;"><a href="../solutions/cyeradspm.html">CyeraDSPM</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/dataminrpulsealerts.html">Dataminr Pulse Alerts Data Connector</a></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">Dataminr</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/dataminr-pulse.html">Dataminr Pulse</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/esetprotectplatform.html">ESET Protect Platform</a> ⚠️</td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">ESET</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/eset-protect-platform.html">ESET Protect Platform</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/feedly.html">Feedly</a> 🔶</td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">Feedly</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/feedly.html">Feedly</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/fireworkpush.html">Flare Push Connector</a></td>
+<td style="text-align: left;"><a href="../methods/ccf-push.html">CCF Push</a></td>
+<td style="text-align: left;">Flare Systems</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/flare.html">Flare</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/halcyonpush.html">Halcyon Connector</a></td>
+<td style="text-align: left;"><a href="../methods/ccf-push.html">CCF Push</a></td>
+<td style="text-align: left;">Halcyon</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;"><a href="../solutions/halcyon.html">Halcyon</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/illumiosaasdataconnector.html">Illumio SaaS</a></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">Illumio</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/illumiosaas.html">IllumioSaaS</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ipinfoabusedataconnector.html">IPinfo Abuse Data Connector</a> ⚠️</td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">IPinfo</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ipinfo.html">IPinfo</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ipinfoasndataconnector.html">IPinfo ASN Data Connector</a> ⚠️</td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">IPinfo</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ipinfo.html">IPinfo</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ipinfocarrierdataconnector.html">IPinfo Carrier Data Connector</a> ⚠️</td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">IPinfo</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ipinfo.html">IPinfo</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ipinfocompanydataconnector.html">IPinfo Company Data Connector</a> ⚠️</td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">IPinfo</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ipinfo.html">IPinfo</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ipinfocountrydataconnector.html">IPinfo Country ASN Data Connector</a> ⚠️</td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">IPinfo</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ipinfo.html">IPinfo</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ipinfodomaindataconnector.html">IPinfo Domain Data Connector</a> ⚠️</td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">IPinfo</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ipinfo.html">IPinfo</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ipinfoiplocationdataconnector.html">IPinfo Iplocation Data Connector</a> ⚠️</td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">IPinfo</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ipinfo.html">IPinfo</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ipinfoiplocationextendeddataconnector.html">IPinfo Iplocation Extended Data Connector</a> ⚠️</td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">IPinfo</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ipinfo.html">IPinfo</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ipinfoprivacydataconnector.html">IPinfo Privacy Data Connector</a> ⚠️</td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">IPinfo</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ipinfo.html">IPinfo</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ipinfoprivacyextendeddataconnector.html">IPinfo Privacy Extended Data Connector</a> ⚠️</td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">IPinfo</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ipinfo.html">IPinfo</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ipinforirwhoisdataconnector.html">IPinfo RIRWHOIS Data Connector</a> ⚠️</td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">IPinfo</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ipinfo.html">IPinfo</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ipinforwhoisdataconnector.html">IPinfo RWHOIS Data Connector</a> ⚠️</td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">IPinfo</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ipinfo.html">IPinfo</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ipinfowhoisasndataconnector.html">IPinfo WHOIS ASN Data Connector</a> ⚠️</td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">IPinfo</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ipinfo.html">IPinfo</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ipinfowhoismntdataconnector.html">IPinfo WHOIS MNT Data Connector</a> ⚠️</td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">IPinfo</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ipinfo.html">IPinfo</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ipinfowhoisnetdataconnector.html">IPinfo WHOIS NET Data Connector</a> ⚠️</td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">IPinfo</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ipinfo.html">IPinfo</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ipinfowhoisorgdataconnector.html">IPinfo WHOIS ORG Data Connector</a> ⚠️</td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">IPinfo</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ipinfo.html">IPinfo</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ipinfowhoispocdataconnector.html">IPinfo WHOIS POC Data Connector</a> ⚠️</td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">IPinfo</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ipinfo.html">IPinfo</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/jamfprotectpush.html">Jamf Protect Push Connector</a></td>
+<td style="text-align: left;"><a href="../methods/ccf-push.html">CCF Push</a></td>
+<td style="text-align: left;">Jamf</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;"><a href="../solutions/jamf-protect.html">Jamf Protect</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/keepersecuritypush2.html">Keeper Security Push Connector</a></td>
+<td style="text-align: left;"><a href="../methods/ccf-push.html">CCF Push</a></td>
+<td style="text-align: left;">Keeper Security</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/keeper-security.html">Keeper Security</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/mimecastauditapi.html">Mimecast Audit</a> 🔶</td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">Mimecast</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/mimecast.html">Mimecast</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/mimecastatapi.html">Mimecast Awareness Training</a></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">Mimecast</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;"><a href="../solutions/mimecast.html">Mimecast</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/mimecastciapi.html">Mimecast Cloud Integrated</a></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">Mimecast</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/mimecast.html">Mimecast</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/mimecastsegapi.html">Mimecast Secure Email Gateway</a></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">Mimecast</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/mimecast.html">Mimecast</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/mimecastttpapi.html">Mimecast Targeted Threat Protection</a> 🔶</td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">Mimecast</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: left;"><a href="../solutions/mimecast.html">Mimecast</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/mongodbatlaslogsazurefunctions.html">MongoDB Atlas Logs</a></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">MongoDB</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/mongodbatlas.html">MongoDBAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/nordpass.html">NordPass</a></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">NordPass</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/nordpass.html">NordPass</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/obsidiandatasharing.html">Obsidian Datasharing Connector</a></td>
+<td style="text-align: left;"><a href="../methods/ccf-push.html">CCF Push</a></td>
+<td style="text-align: left;">Obsidian Security</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/obsidian-datasharing.html">Obsidian Datasharing</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/onapsis.html">Onapsis Defend Integration</a> 🔍</td>
+<td style="text-align: left;"><a href="../methods/ccf-push.html">CCF Push</a></td>
+<td style="text-align: left;">Onapsis Platform</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/onapsis-defend.html">Onapsis Defend</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/onetrustpush.html">OneTrust</a></td>
+<td style="text-align: left;"><a href="../methods/ccf-push.html">CCF Push</a></td>
+<td style="text-align: left;">OneTrust</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/onetrust.html">OneTrust</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/pathlock-tdnr.html">Pathlock Inc.: Threat Detection and Response for SAP</a></td>
+<td style="text-align: left;"><a href="../methods/ccf-push.html">CCF Push</a></td>
+<td style="text-align: left;">Pathlock Inc.</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/pathlock-tdnr.html">Pathlock_TDnR</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/saplogserv.html">SAP LogServ (RISE), S/4HANA Cloud private edition</a></td>
+<td style="text-align: left;"><a href="../methods/ccf-push.html">CCF Push</a></td>
+<td style="text-align: left;">SAP SE</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/sap-logserv.html">SAP LogServ</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/securitybridge.html">SecurityBridge Solution for SAP</a></td>
+<td style="text-align: left;"><a href="../methods/ccf-push.html">CCF Push</a></td>
+<td style="text-align: left;">SecurityBridge Group GmbH</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/securitybridge-app.html">SecurityBridge App</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/teamcymruscout.html">Team Cymru Scout Data Connector</a></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">Team Cymru Scout</td>
+<td style="text-align: center;">14</td>
+<td style="text-align: left;"><a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/tenablevm.html">Tenable Vulnerability Management</a></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">Tenable</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;"><a href="../solutions/tenable-app.html">Tenable App</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/varonispurviewpush.html">Varonis Purview Push Connector</a></td>
+<td style="text-align: left;"><a href="../methods/ccf-push.html">CCF Push</a></td>
+<td style="text-align: left;">Varonis</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/varonis-purview.html">Varonis Purview</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/vectraxdr.html">Vectra XDR</a></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">Vectra</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: left;"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/vmwaresdwan.html">VMware SD-WAN and SASE Connector</a> ⚠️</td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">VMware by Broadcom</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;"><a href="../solutions/vmware-sase.html">VMware SASE</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/withsecureelementsviafunction.html">WithSecure Elements API (Azure Function)</a></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">WithSecure</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/withsecureelementsviafunction.html">WithSecureElementsViaFunction</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../methods-index.html">Back to Methods Index</a></p>
+</div>
+</body>
+</html>

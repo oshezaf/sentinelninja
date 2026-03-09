@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GCPCDN &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>GCPCDN</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for GCPCDN table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">GCP</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpcdn">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (112 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpcdn">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationInfoPrincipalEmail</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The email of the authenticated identity making the request</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthorizationInfo</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Authorization details such as permission name, granted status, and resource type</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthzPolicyInfoPolicies</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The list of Authorization policies that match the request</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthzPolicyInfoResult</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Stores information about the Authorization Policy result</td>
+</tr>
+<tr>
+<td style="text-align: left;">BackendTargetProjectNumber</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Holds the project number where the backend target-backend service or backend bucket-has been created</td>
+</tr>
+<tr>
+<td style="text-align: left;">CacheDecision</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates caching decisions taken</td>
+</tr>
+<tr>
+<td style="text-align: left;">CacheID</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the cache entry associated with this response</td>
+</tr>
+<tr>
+<td style="text-align: left;">EnforcedEdgeSecurityPolicyConfiguredAction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The configured action that was evaluated in the edge security policy</td>
+</tr>
+<tr>
+<td style="text-align: left;">EnforcedEdgeSecurityPolicyName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the edge security policy that was applied to the request</td>
+</tr>
+<tr>
+<td style="text-align: left;">EnforcedEdgeSecurityPolicyOutcome</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The outcome of applying the policy</td>
+</tr>
+<tr>
+<td style="text-align: left;">EnforcedEdgeSecurityPolicyPriority</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The priority value of the rule within the edge security policy that matched the request</td>
+</tr>
+<tr>
+<td style="text-align: left;">ErrorBackendStatusDetails</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Backend-specific error details when a request fails or is served with an error response</td>
+</tr>
+<tr>
+<td style="text-align: left;">ErrorService</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Holds the backend service that provided the custom error response</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpRequestCacheFillBytes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Number of bytes written to the cache from this response</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpRequestCacheHit</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Boolean flag indicating whether the response was served from cache</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpRequestCacheLookup</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Boolean flag indicating whether the request attempted a cache lookup before contacting the backend</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpRequestLatency</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The latency or total time taken to process the request</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpRequestRemoteIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address of the client that made the request</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpRequestRequestMethod</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">HTTP method used for the request</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpRequestRequestSize</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Size of the incoming HTTP request in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpRequestRequestUrl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Full URL that was requested</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpRequestResponseSize</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Size of the HTTP response payload sent to the client, in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpRequestServerIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of the server (or Google Front End) that processed the request</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpRequestStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">HTTP status code returned by the server</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpRequestUserAgent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User agent string from the HTTP request header</td>
+</tr>
+<tr>
+<td style="text-align: left;">InsertID</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the log entry assigned by the logging system</td>
+</tr>
+<tr>
+<td style="text-align: left;">JsonPayloadType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The protobuf type URL describing the type of jsonPayload content in the log</td>
+</tr>
+<tr>
+<td style="text-align: left;">LabelsAPIRootTriggerID</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The root trigger ID identifying the origin request that caused this log entry</td>
+</tr>
+<tr>
+<td style="text-align: left;">LoadBalancingScheme</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Holds a string that describes which load balancing scheme was used to route the request</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The full resource name of the log to which this entry belongs</td>
+</tr>
+<tr>
+<td style="text-align: left;">MethodName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the API method invoked</td>
+</tr>
+<tr>
+<td style="text-align: left;">NumResponseItems</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The number of items returned in a list response</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationFirst</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Boolean flag indicating this log entry is the first record in a long-running operation</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationID</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the operation</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationLast</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Boolean flag indicating this log entry is the final record in a long-running operation</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationProducer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The service that initiated and owns the operation</td>
+</tr>
+<tr>
+<td style="text-align: left;">OverrideResponseCode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Holds the override response code applied to the response sent to the client</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type URL of the request or response payload</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReceiveTimestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time the log entry was received by the logging system</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address of the client as seen by the load balancer</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBackends</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Configuration for backend groups</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestCDNPolicyCacheKeyPolicyIncludeHost</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Whether the host is included in the cache key</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestCDNPolicyCacheKeyPolicyIncludeProtocol</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Whether protocol is included in the cache key</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestCDNPolicyCacheKeyPolicyIncludeQueryString</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Whether the query string is included in the cache key</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestCDNPolicyCacheMode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Cache mode setting</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestCDNPolicyClientTtl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Time-to-live set on responses for clients</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestCDNPolicyDefaultTtl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Default TTL applied when no caching headers are set</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestCDNPolicyMaxTtl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Maximum allowed TTL for cached responses</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestCDNPolicyNegativeCaching</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Boolean indicating if negative caching is enabled</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestCDNPolicyServeWhileStale</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Duration responses are served while stale</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestCDNPolicySignedUrlCacheMaxAgeSec</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Cache TTL for signed URLs in seconds</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestCompressionMode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether and how compression is applied</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestConnectionDrainingTimeoutSec</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Time in seconds for draining connections during backend removal</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A custom description associated with the backend service configuration</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestEnableCDN</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Boolean indicating if Cloud CDN is enabled for the backend service</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestFingerprint</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Fingerprint of the request configuration, used for optimistic locking</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestGroup</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The reference to instance group used by the backend service</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestHealthChecks</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">List of health check resources attached to the backend service</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestIPAddressSelectionPolicy</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies IP address family for the backend</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestKeyName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the key used in the request</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestLoadBalancingScheme</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Load balancing scheme used</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestLocalityLbPolicy</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Locality-based load balancing strategy</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestLogConfigEnable</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Boolean to enable request logging</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestLogConfigSampleRate</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Sampling rate for log entries when logging is enabled</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMetadataCallerIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of the request initiator</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMetadataCallerSuppliedUserAgent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User agent string of the request initiator</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMetadataDestinationAttributes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Attributes of the destination, often empty in public APIs</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMetadataRequestAttributesAuth</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Authentication metadata for the request</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMetadataRequestAttributesReason</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Encoded reason for the request</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMetadataRequestAttributesTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Time when the request was initiated</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name assigned to the resource in the request</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestPortName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The named port of the backend service</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestProtocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The protocol used</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestSecurityPolicy</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name or full path of the security policy attached to the backend service</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestSessionAffinity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Affinity setting used to keep sessions on the same backend</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestTimeoutSec</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Timeout value (in seconds) for the backend service</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the request payload object</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsBackendBucketID</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Holds the ResourceLabelsBackendBucketID value recorded in the CDN or load balancer log</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsBackendServiceID</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique identifier for the GCE backend service</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsBackendServiceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the backend service</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsForwardingRuleName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the forwarding rule object</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsLocation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The geographical or regional location of the resource</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsProjectID</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The identifier of the Google Cloud project associated with this resource</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsTargetProxyName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the target proxy object referenced by the forwarding rule</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsUrlMapName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the URL map object configured to select a backend service</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsZone</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The zone in which the load balancer is running</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLocationCurrentLocations</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Region or location associated with the resource</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseID</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the response or operation</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseInsertTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Time when the response operation was created</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name assigned to the long-running operation</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseOperationType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the operation performed</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseProgress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Progress of the operation in percentage</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseSelfLink</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">URI of the operation</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseSelfLinkWithID</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">URI of the operation with ID appended</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseStartTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Time when the operation started</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Status of the operation</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseTargetID</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID of the target resource affected by the operation</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseTargetLink</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">URI of the affected resource</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the response object returned</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseUser</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User who initiated the operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServiceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Google service processing the request</td>
+</tr>
+<tr>
+<td style="text-align: left;">Severity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates the importance or severity level of the log entry</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">SpanID</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier of the span within a trace</td>
+</tr>
+<tr>
+<td style="text-align: left;">StatusDetails</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Holds a string that explains why the load balancer returned the HTTP status that it did</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp when the log entry was fetched into Microsoft Sentinel</td>
+</tr>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time when the first layer GFE receives the request</td>
+</tr>
+<tr>
+<td style="text-align: left;">Trace</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier of the trace</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/googlecloudplatformcdn.html">GoogleCloudPlatformCDN</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/gcpcdnlogsccpdefinition.html">Google Cloud Platform CDN (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

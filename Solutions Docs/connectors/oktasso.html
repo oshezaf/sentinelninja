@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Okta Single Sign-On &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Okta Single Sign-On</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/okta_logo.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>OktaSSO</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Okta</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/okta-single-sign-on.html">Okta Single Sign-On</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Data%20Connectors/OktaSingleSign-On/Connector_REST_API_FunctionApp_Okta.json">Connector_REST_API_FunctionApp_Okta.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Connector definition requires workspace key (SharedKey pattern)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.okta.com/products/single-sign-on/">Okta Single Sign-On (SSO)</a> connector provides the capability to ingest audit and event logs from the Okta API into Microsoft Sentinel. The connector provides visibility into these log types in Microsoft Sentinel to view dashboards, create custom alerts, and to improve monitoring and investigation capabilities.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/okta-cl.html"><code>Okta_CL</code></a> 🔶</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
+- <strong>Okta API Token</strong>: An Okta API Token is required. See the documentation to learn more about the <a href="https://developer.okta.com/docs/reference/api/system-log/">Okta System Log API</a>.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+<p><strong>NOTE:</strong> This connector uses Azure Functions to connect to Okta SSO to pull its logs into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
+<p><strong>NOTE:</strong> This connector has been updated, if you have previously deployed an earlier version, and want to update, please delete the existing Okta Azure Function before redeploying this version.</p>
+<p><strong>(Optional Step)</strong> Securely store workspace and API authorization key(s) or token(s) in Azure Key Vault. Azure Key Vault provides a secure mechanism to store and retrieve key values. <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Follow these instructions</a> to use Azure Key Vault with an Azure Function App.</p>
+</blockquote>
+<p><strong>STEP 1 - Configuration steps for the Okta SSO API</strong></p>
+<p><a href="https://developer.okta.com/docs/guides/create-an-api-token/create-the-token/">Follow these instructions</a> to create an API Token.</p>
+<p><strong>Note</strong> - For more information on the rate limit restrictions enforced by Okta, please refer to the <strong><a href="https://developer.okta.com/docs/reference/rl-global-mgmt/">documentation</a></strong>.</p>
+<p><strong>STEP 2 - Choose ONE from the following two deployment options to deploy the connector and the associated Azure Function</strong></p>
+<blockquote>
+<p><strong>IMPORTANT:</strong> Before deploying the Okta SSO connector, have the Workspace ID and Workspace Primary Key (can be copied from the following), as well as the Okta SSO API Authorization Token, readily available.
+- <strong>Workspace ID</strong>: <code>WorkspaceId</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
+- <strong>Primary Key</strong>: <code>PrimaryKey</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+<p><strong>Option 1 - Azure Resource Manager (ARM) Template</strong></p>
+<p>This method provides an automated deployment of the Okta SSO connector using an ARM Tempate.</p>
+<ol>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below. </p>
+<p><a href="https://aka.ms/sentineloktaazuredeployv2-solution"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>  <a href="https://aka.ms/sentineloktaazuredeployv2-solution-gov"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a>
+2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. 
+3. Enter the <strong>Workspace ID</strong>, <strong>Workspace Key</strong>, <strong>API Token</strong> and <strong>URI</strong>. 
+ - Use the following schema for the <code>uri</code> value: <code>https://&lt;OktaDomain&gt;/api/v1/logs?since=</code> Replace <code>&lt;OktaDomain&gt;</code> with your domain. <a href="https://developer.okta.com/docs/reference/api-overview/#url-namespace">Click here</a> for further details on how to identify your Okta domain namespace. There is no need to add a time value to the URI, the Function App will dynamically append the inital start time of logs to UTC 0:00 for the current UTC date as time value to the URI in the proper format. 
+ - Note: If using Azure Key Vault secrets for any of the values above, use the<code>@Microsoft.KeyVault(SecretUri={Security Identifier})</code>schema in place of the string values. Refer to <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Key Vault references documentation</a> for further details. 
+4. Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>. 
+5. Click <strong>Purchase</strong> to deploy.</p>
+</li>
+</ol>
+<p><strong>Option 2 - Manual Deployment of Azure Functions</strong></p>
+<p>Use the following step-by-step instructions to deploy the Okta SSO connector manually with Azure Functions (Deployment via Visual Studio Code).
+<strong>Step 1 - Deploy a Function App</strong></p>
+<pre><code>1. Download the [Azure Function App](https://aka.ms/sentineloktaazurefunctioncodev2) file. Extract archive to your local development computer.
+</code></pre>
+<ol start="2">
+<li>Follow the <a href="https://github.com/Azure/Azure-Sentinel/blob/master/DataConnectors/AzureFunctionsManualDeployment.md#function-app-manual-deployment-instructions">function app manual deployment instructions</a> to deploy the Azure Functions app using VSCode.</li>
+<li>
+<p>After successful deployment of the function app, follow next steps for configuring it.</p>
+<p><strong>Step 2 - Configure the Function App</strong></p>
+<ol>
+<li>Go to Azure Portal for the Function App configuration.</li>
+<li>In the Function App, select the Function App Name and select <strong>Configuration</strong>.</li>
+<li>In the <strong>Application settings</strong> tab, select <strong>+ New application setting</strong>.</li>
+<li>Add each of the following five (5) application settings individually, with their respective string values (case-sensitive): 
+    apiToken
+    workspaceID
+    workspaceKey
+    uri
+    logAnalyticsUri (optional)
+ - Use the following schema for the <code>uri</code> value: <code>https://&lt;OktaDomain&gt;/api/v1/logs?since=</code> Replace <code>&lt;OktaDomain&gt;</code> with your domain. <a href="https://developer.okta.com/docs/reference/api-overview/#url-namespace">Click here</a> for further details on how to identify your Okta domain namespace. There is no need to add a time value to the URI, the Function App will dynamically append the inital start time of logs to UTC 0:00 for the current UTC date as time value to the URI in the proper format.
+ - Note: If using Azure Key Vault secrets for any of the values above, use the<code>@Microsoft.KeyVault(SecretUri={Security Identifier})</code>schema in place of the string values. Refer to <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Key Vault references documentation</a> for further details.
+ - Use logAnalyticsUri to override the log analytics API endpoint for dedicated cloud. For example, for public cloud, leave the value empty; for Azure GovUS cloud environment, specify the value in the following format: https://<CustomerId>.ods.opinsights.azure.us. </li>
+<li>Once all application settings have been entered, click <strong>Save</strong>.</li>
+</ol>
+</li>
+</ol>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta Single Sign-On\Data Connectors\OktaSingleSign-On\CHANGELOG.md">Okta Single Sign-On\Data Connectors\OktaSingleSign-On\CHANGELOG.md</a></em></p>
+</blockquote>
+<h2>2.1.1</h2>
+<ul>
+<li>Moved version 2.1.0 to sub folder AzureFunctionOktaSSO_V2 under Azure-Sentinel/DataConnectors/Okta Single Sign-On/</li>
+<li>Created V2 versions of Azure Deploy and Connector Json files to enable both versions to co-exist</li>
+<li>Changed zip file reference to use 'https://aka.ms/sentineloktaazuredeployv2' in Azure Deploy json file</li>
+<li>Changed run.ps1 reference to use 'https://aka.ms/sentineloktaazurefunctioncodev2' in Connector json file</li>
+</ul>
+<h2>2.1.0</h2>
+<ul>
+<li>Modified Okta Event log tracking to use next URI link from header</li>
+<li>Fixed Total record counter to record correctly the total number of records ingested</li>
+</ul>
+<h2>2.0.2</h2>
+<ul>
+<li>Added  ACN_CD_OktaIssue925 resolution to add domain to output records</li>
+</ul>
+<h2>2.0.1</h2>
+<ul>
+<li>Added CHANGELOG.md to track future code changes</li>
+<li>Complete rewrite of Azure Function code to address the following<ul>
+<li>Code needs to loop requests to Okta as each response from Okta is limited to max of 1000 records</li>
+<li>relying on Timetrigger time minus (-) 5 minutes is unreliable and may result in duplicates and missing records</li>
+<li>Okta communicates via HTTP Headers details about log event pagination orginal version did not utilise this information</li>
+</ul>
+</li>
+<li>Added using a table on Azure Storage account of function to maintain state of latest event time provided in OKTA Response </li>
+<li>Added logic to use OKTA time detials in records to track last record returned from OKTA</li>
+<li>Added Loop to continue getting paged results from OKTA until either all records retrieved or getting close (260 seconds) to Azure Function default timeout (300 seconds)</li>
+<li>Added dependency on Powershell modules 'AZTable' and 'Az.OperationalInsights'</li>
+<li>Fixed Timestamp to corret field from OKTA "published" field for Azure Log Analytics Time Generated header in Post HTTP</li>
+<li>Fixed HTTP Request to OKTA, we need the Headers and 'Invoke-RestMethod' won't provide them</li>
+<li>Fixed HTTP request to OKTA to use limit, since and after parameters to make sure we get all records and also don't get duplicates</li>
+<li>Removed need for Environment setting of 'TimeTrigger' Function is now self managing event log times</li>
+<li>Cleanup of Azure Function Log messages, consistent format of output</li>
+<li>Added inline comments to explain code logic</li>
+</ul>
+<h2>1.1</h2>
+<ul>
+<li>Added Hardcoded table name</li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

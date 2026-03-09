@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NetworkAccessAlerts &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>NetworkAccessAlerts</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for NetworkAccessAlerts table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">IT &amp; Management Tools, Network, Security</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccessalerts">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (24 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccessalerts">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AlertType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type name of the alert. Alerts of the same type should have the same name. This field is a keyed string representing the type of alert and not of an alert instance. All alert instances from the same detection logic/analytic should have the same value for alert type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ComponentName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of a component inside the product which generated the alert. This is an optional field, which might be populated only for product in which external end user are aware of specific components within a product. For products that offer different types of SKU/Bundles, this field can hold the SKU or bundle name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CreationDateTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The date and time (UTC) that the event was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Description</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The number of bytes sent from the source to the destination for the connection or session.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DetectionTechnology</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Optional field to hold the alert threat detection technology.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DisplayName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The display name of the alert, this value is displayed to users either as-is or with additional parameters.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ExtendedProperties</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">A bag of fields which will be presented to the user. Providers can send here any custom fields that should be part of the alert.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FirstActivityDateTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The impact start time of the alert (the time of the first event or activity included in the alert). The field is serialized a string according to ISO8601, including UTC timezone information.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Id</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for each Network Access Alert.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsPreview</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">IsPreview will be defined as true where the alert is in public preview state and not eligible for GA yet. By default the value is false.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LastActivityDateTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The impact end time of the alert (the time of the last event or activity included in the alert). The field is serialized a string according to ISO8601, including UTC timezone information.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PolicyId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Policy Id associated with the network access traffic that generated the Alert.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProductName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the product which published this alert, i.e. Azure Security Center, Azure ATP, Microsoft Defender ATP, O365 ATP, MCAS, etc.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RelatedResources</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">A list of entities related to the alert. This list can hold a mixture of entities of diverse types. The entities type can be any of the types defined in the Entities section. Entities which are not in the list below can also be sent, however it is not guaranteed that they will be processed (the alert will not fail Production with new types of entities).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Severity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The severity of the alert as it is reported by the provider. Possible Values: Informational, Low, Medium, High.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">SubTechniques</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Optional field that specify the kill chain related sub-techniques behind the alert. Each sub-technique should be added in this list using its ID and it should have at least one matching intent in the Intent field.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Techniques</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Optional field that specify the kill chain related techniques behind the alert. Each technique should be added in this list using its ID and it should have at least one matching intent in the Intent field. The Production of this field (the expected format of the technique ID and the matching against the Intent values) follow MITRE att@ck enterprise matrix model (Opens in new window or tab), and further guidance on the different techniques that make up each intent can be found in MITRE's documentation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The date and time (UTC) that the event was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">VendorName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the vendor that raised the alert, this value is displayed to users as is. For most internal security products alerts it should be set as 'Microsoft'.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

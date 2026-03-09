@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cloudflare CCF &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Cloudflare CCF</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Cloudflare CCF Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Cloudflare</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.cloudflare.com">https://support.cloudflare.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Cloudflare - support@cloudflare.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2025-09-30</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloudflare%20CCF">Cloudflare CCF</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.cloudflare.com/">Cloudflare</a> solution provides the capability to ingest <a href="https://developers.cloudflare.com/logs/">Cloudflare logs</a> into Microsoft Sentinel using the Codeless Connector Framework (CCF) and Azure Blob Storage. Refer to <a href="https://developers.cloudflare.com/logs/about/">Cloudflare documentation</a> for more information.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>a. <a href="https://learn.microsoft.com/en-us/azure/sentinel/create-codeless-connector">Codeless Connector Framework</a></p>
+<p>b. <a href="https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api">Azure Monitor HTTP Data Collector API</a> (for reference, legacy support)</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/cloudflaredefinition.html">Cloudflare (Using Blob Container) (via Codeless Connector Framework)</a></li>
+</ul>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>2 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/cloudflarev2-cl.html"><code>CloudflareV2_CL</code></a></td>
+<td><a href="../connectors/cloudflaredefinition.html">Cloudflare (Using Blob Container) (via Codeless Connector Framework)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/cloudflare-cl.html"><code>Cloudflare_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>22 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/cloudflare-ccf-cloudflare-bad-client-ip-a7ce6135-9d55-4f14-b058-adc2e920a4fb-c9cbdeda.html">Cloudflare - Bad client IP</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/cloudflarev2-cl.html"><code>CloudflareV2_CL</code></a><br><a href="../tables/cloudflare-cl.html"><code>Cloudflare_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cloudflare-ccf-cloudflare-client-request-from-country-in-blocklist-40554544-6e4a-4413-8d14-bf2de939c5d0-7513ce22.html">Cloudflare - Client request from country in blocklist</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/cloudflarev2-cl.html"><code>CloudflareV2_CL</code></a><br><a href="../tables/cloudflare-cl.html"><code>Cloudflare_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cloudflare-ccf-cloudflare-empty-user-agent-729c6d21-fad9-4a6a-9c7f-482393c95958-775bd8fd.html">Cloudflare - Empty user agent</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/cloudflarev2-cl.html"><code>CloudflareV2_CL</code></a><br><a href="../tables/cloudflare-cl.html"><code>Cloudflare_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cloudflare-ccf-cloudflare-multiple-error-requests-from-single-source-ef877d68-755f-4cf1-ac1d-f336e395667d-cc6b36ac.html">Cloudflare - Multiple error requests from single source</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/cloudflarev2-cl.html"><code>CloudflareV2_CL</code></a><br><a href="../tables/cloudflare-cl.html"><code>Cloudflare_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cloudflare-ccf-cloudflare-multiple-user-agents-for-single-source-fc50076a-0275-43d5-b9dd-38346c061f68-139b38f6.html">Cloudflare - Multiple user agents for single source</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/cloudflarev2-cl.html"><code>CloudflareV2_CL</code></a><br><a href="../tables/cloudflare-cl.html"><code>Cloudflare_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cloudflare-ccf-cloudflare-unexpected-post-requests-7313352a-09f6-4a84-88bd-6f17f1cbeb88-5c20ac7d.html">Cloudflare - Unexpected POST requests</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Persistence, CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/cloudflarev2-cl.html"><code>CloudflareV2_CL</code></a><br><a href="../tables/cloudflare-cl.html"><code>Cloudflare_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cloudflare-ccf-cloudflare-unexpected-uri-dcb797cd-a4cd-4306-897b-7991f71d7e28-54984760.html">Cloudflare - Unexpected URI</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/cloudflarev2-cl.html"><code>CloudflareV2_CL</code></a><br><a href="../tables/cloudflare-cl.html"><code>Cloudflare_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cloudflare-ccf-cloudflare-unexpected-client-request-f32142b1-4bcb-45c0-92e4-2ddc18768523-993692f2.html">Cloudflare - Unexpected client request</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/cloudflarev2-cl.html"><code>CloudflareV2_CL</code></a><br><a href="../tables/cloudflare-cl.html"><code>Cloudflare_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cloudflare-ccf-cloudflare-waf-allowed-threat-f53fe2a9-96b5-454c-827e-cf1764a67fb1-2846dbee.html">Cloudflare - WAF Allowed threat</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/cloudflarev2-cl.html"><code>CloudflareV2_CL</code></a><br><a href="../tables/cloudflare-cl.html"><code>Cloudflare_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cloudflare-ccf-cloudflare-xss-probing-pattern-in-request-4d9d00b9-31a6-49e4-88c1-9e68277053ad-3d9d3245.html">Cloudflare - XSS probing pattern in request</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/cloudflarev2-cl.html"><code>CloudflareV2_CL</code></a><br><a href="../tables/cloudflare-cl.html"><code>Cloudflare_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/cloudflare-ccf-cloudflare-client-tls-errors-20ef3865-fd1f-44a4-ac8f-8d026cf954e2-abdbb160.html">Cloudflare - Client TLS errors</a></td>
+<td style="text-align: left;">InitialAccess, Impact</td>
+<td style="text-align: left;"><a href="../tables/cloudflarev2-cl.html"><code>CloudflareV2_CL</code></a><br><a href="../tables/cloudflare-cl.html"><code>Cloudflare_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cloudflare-ccf-cloudflare-client-errors-5d72f483-929a-498a-b840-dff7deed2117-b06fd403.html">Cloudflare - Client errors</a></td>
+<td style="text-align: left;">InitialAccess, Impact</td>
+<td style="text-align: left;"><a href="../tables/cloudflarev2-cl.html"><code>CloudflareV2_CL</code></a><br><a href="../tables/cloudflare-cl.html"><code>Cloudflare_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cloudflare-ccf-cloudflare-files-requested-d72d0055-ae52-43b5-859e-db72e5ef183a-1f2533c9.html">Cloudflare - Files requested</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/cloudflarev2-cl.html"><code>CloudflareV2_CL</code></a><br><a href="../tables/cloudflare-cl.html"><code>Cloudflare_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cloudflare-ccf-cloudflare-rare-user-agents-a6f1938f-2f87-446c-83ac-624c277cfd33-6e33b9bb.html">Cloudflare - Rare user agents</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/cloudflarev2-cl.html"><code>CloudflareV2_CL</code></a><br><a href="../tables/cloudflare-cl.html"><code>Cloudflare_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cloudflare-ccf-cloudflare-server-tls-errors-e1a9febc-6b37-47e6-b5a7-0eec7638ba83-9a2508f3.html">Cloudflare - Server TLS errors</a></td>
+<td style="text-align: left;">InitialAccess, Impact</td>
+<td style="text-align: left;"><a href="../tables/cloudflarev2-cl.html"><code>CloudflareV2_CL</code></a><br><a href="../tables/cloudflare-cl.html"><code>Cloudflare_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cloudflare-ccf-cloudflare-server-errors-7c8f0bed-b25c-4d48-9afa-c505e141bf4c-9f4f0e8d.html">Cloudflare - Server errors</a></td>
+<td style="text-align: left;">InitialAccess, Impact</td>
+<td style="text-align: left;"><a href="../tables/cloudflarev2-cl.html"><code>CloudflareV2_CL</code></a><br><a href="../tables/cloudflare-cl.html"><code>Cloudflare_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cloudflare-ccf-cloudflare-top-network-rules-eb7b88ab-47b1-483f-95b3-2b315d98d466-7794b849.html">Cloudflare - Top Network rules</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/cloudflarev2-cl.html"><code>CloudflareV2_CL</code></a><br><a href="../tables/cloudflare-cl.html"><code>Cloudflare_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cloudflare-ccf-cloudflare-top-waf-rules-8a72cdb0-97d9-4547-9eca-1bdea2ccd797-8025afb4.html">Cloudflare - Top WAF rules</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/cloudflarev2-cl.html"><code>CloudflareV2_CL</code></a><br><a href="../tables/cloudflare-cl.html"><code>Cloudflare_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cloudflare-ccf-cloudflare-unexpected-countries-9fc7d945-0e82-4664-aca0-dc121a5cd7bf-36a738f7.html">Cloudflare - Unexpected countries</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/cloudflarev2-cl.html"><code>CloudflareV2_CL</code></a><br><a href="../tables/cloudflare-cl.html"><code>Cloudflare_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cloudflare-ccf-cloudflare-unexpected-edge-response-0be3ddc1-99db-4153-ba3c-2c1e5c82560e-bf320a11.html">Cloudflare - Unexpected edge response</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/cloudflarev2-cl.html"><code>CloudflareV2_CL</code></a><br><a href="../tables/cloudflare-cl.html"><code>Cloudflare_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/cloudflare-ccf-cloudflare-fc7a6590.html">Cloudflare</a></td>
+<td style="text-align: left;"><a href="../tables/cloudflarev2-cl.html"><code>CloudflareV2_CL</code></a><br><a href="../tables/cloudflare-cl.html"><code>Cloudflare_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cloudflare.html">Cloudflare</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cloudflarev2-cl.html"><code>CloudflareV2_CL</code></a> <em>(read)</em><br><a href="../tables/cloudflare-cl.html"><code>Cloudflare_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.1</td>
+<td>08-12-2025</td>
+<td>Fixed invalid GUIDs, updated analytic rules, aligned URL entity mappings with legacy Cloudflare solution</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>02-10-2025</td>
+<td>Includes all CCF connector definitions and configurations.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

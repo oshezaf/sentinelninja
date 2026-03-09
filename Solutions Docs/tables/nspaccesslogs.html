@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NSPAccessLogs &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>NSPAccessLogs</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for NSPAccessLogs table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Audit, Azure Resources, Network, Security</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/nspaccesslogs">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (40 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/nspaccesslogs">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccessRuleVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Access rule version of the NSP profile to which PaaS resource is associated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AppId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique GUID representing the app ID of resource in the Azure Active Directory.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Category</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">NSP access log categories.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Count</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Total number of aggregated events.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationEmailAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Email address of destination receiver. It be must specified if available.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationFqdn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Fully Qualified Domain(FQDN) name of the destination.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationParameters</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">List of optional destination properties in key-value pair format. For example: [ {Param1}: {value1}, {Param2}: {value2}, ...].</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationPhoneNumber</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Phone number of destination receiver. It be must specified if available.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationPort</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Port number of outbound connection, when available.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationProtocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Application layer protocol and transport layer protocol used for outbound connection in the format {AppProtocol}:{TransportProtocol}. For example: 'HTTPS:TCP'. It be must specified if available.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Resource ID of destination PaaS resource for an outbound connection, when available.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Location</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates the region of NSP.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MatchedRule</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">JSON property bag containing matched access rule name. It can be either NSP access rule name or resource rule name (not it's resource ID).</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates top-level PaaS operation name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The API version associated with the operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parameters</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">List of optional PaaS resource properties in key-value pair format. For example: [ {Param1}: {value1}, {Param2}: {value2}, ...].</td>
+</tr>
+<tr>
+<td style="text-align: left;">Profile</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the NSP profile associated to the resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResultAction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates whether the result of evaluation is 'Approved' or 'Denied'.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResultDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Additional description about the operation result, when available.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResultDirection</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Direction of evaluation result whether 'Inbound' or 'Outbound'.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RuleType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates where the rule is defined: NSP or PaaS resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServiceFqdn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Fully Qualified Domain Name (FQDN) of PaaS resource emitting NSP access logs.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServiceResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Resource ID of PaaS resource emitting NSP access logs.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceAppId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique GUID representing the app ID of source in the Azure Active Directory.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceIpAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of source making inbound connection, when available.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceParameters</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">List of optional source properties in key-value pair format. For example: [ {Param1}: {value1}, {Param2}: {value2}, ...].</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourcePerimeterGuids</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">List of perimeter GUIDs of source resource. It should be specified only if allowed based on perimeter GUID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourcePort</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Port number of inbound connection, when available.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceProtocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Application layer protocol and transport layer protocol used for inbound connection in the format {AppProtocol}:{TransportProtocol}. For example: 'HTTPS:TCP'. It be must specified if available.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Resource ID of source PaaS resource for an inbound connection, when available.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp marking the start of event aggregation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGeneratedEndTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp indicating the end of event aggregation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TrafficType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates whether traffic is 'Private', 'Public', 'Intra' or 'Cross' perimeter.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.network/networksecurityperimeters</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

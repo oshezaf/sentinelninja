@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cisco Cloud Security using elastic premium plan &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Cisco Cloud Security (using elastic premium plan)</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cisco-logo-72px.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>CiscoUmbrellaDataConnectorelasticpremium</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Cisco</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/ciscoumbrella.html">CiscoUmbrella</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Data%20Connectors/CiscoUmbrella_API_FunctionApp_elasticpremium.json">CiscoUmbrella_API_FunctionApp_elasticpremium.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Azure Function code uses SharedKey/HTTP Data Collector API</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+</tbody>
+</table>
+<p>The Cisco Umbrella data connector provides the capability to ingest <a href="https://docs.umbrella.com/">Cisco Umbrella</a> events stored in Amazon S3 into Microsoft Sentinel using the Amazon S3 REST API. Refer to <a href="https://docs.umbrella.com/deployment-umbrella/docs/log-management">Cisco Umbrella log management documentation</a> for more information.</p>
+<p><strong>NOTE:</strong> This data connector uses the <a href="https://learn.microsoft.com/azure/azure-functions/functions-premium-plan?tabs=portal">Azure Functions Premium Plan</a> to enable secure ingestion capabilities and will incur additional costs. More pricing details are <a href="https://azure.microsoft.com/pricing/details/functions/?msockid=2f4366822d836a7c2ac673462cfc6ba8#pricing">here</a>.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-audit-cl.html"><code>Cisco_Umbrella_audit_CL</code></a> 🔶</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-cloudfirewall-cl.html"><code>Cisco_Umbrella_cloudfirewall_CL</code></a> 🔶</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-dlp-cl.html"><code>Cisco_Umbrella_dlp_CL</code></a> 🔶</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-dns-cl.html"><code>Cisco_Umbrella_dns_CL</code></a> 🔶</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-fileevent-cl.html"><code>Cisco_Umbrella_fileevent_CL</code></a> 🔶</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-firewall-cl.html"><code>Cisco_Umbrella_firewall_CL</code></a> 🔶</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-intrusion-cl.html"><code>Cisco_Umbrella_intrusion_CL</code></a> 🔶</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-ip-cl.html"><code>Cisco_Umbrella_ip_CL</code></a> 🔶</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-proxy-cl.html"><code>Cisco_Umbrella_proxy_CL</code></a> 🔶</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-ravpnlogs-cl.html"><code>Cisco_Umbrella_ravpnlogs_CL</code></a> 🔶</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-ztaflow-cl.html"><code>Cisco_Umbrella_ztaflow_CL</code></a> 🔶</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/cisco-umbrella-ztna-cl.html"><code>Cisco_Umbrella_ztna_CL</code></a> 🔶</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
+- <strong>Amazon S3 REST API Credentials/permissions</strong>: <strong>AWS Access Key Id</strong>, <strong>AWS Secret Access Key</strong>, <strong>AWS S3 Bucket Name</strong> are required for Amazon S3 REST API.
+- <strong>Virtual Network permissions (for private access)</strong>: For private storage account access, <strong>Network Contributor</strong> permissions are required on the Virtual Network and subnet. The subnet must be delegated to <strong>Microsoft.Web/serverFarms</strong> for Function App VNet integration.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+<p><strong>NOTE:</strong> This connector uses Azure Functions to connect to the Amazon S3 REST API to pull logs into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
+<p><strong>NOTE:</strong> This connector has been updated to support <a href="https://docs.umbrella.com/deployment-umbrella/docs/log-formats-and-versioning">cisco umbrella log schema version 14.</a></p>
+<p><strong>(Optional Step)</strong> Securely store workspace and API authorization key(s) or token(s) in Azure Key Vault. Azure Key Vault provides a secure mechanism to store and retrieve key values. <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Follow these instructions</a> to use Azure Key Vault with an Azure Functions App.</p>
+<p><strong>NOTE:</strong> This connector uses a parser based on a Kusto Function to normalize fields. <a href="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Parsers/CiscoUmbrella/Cisco_Umbrella">Follow these steps</a> to create the Kusto function alias <strong>Cisco_Umbrella</strong>.</p>
+</blockquote>
+<p><strong>STEP 1 - Network Prerequisites for Private Access</strong></p>
+<blockquote>
+<p><strong>IMPORTANT:</strong> When deploying with private storage account access, ensure the following network prerequisites are met:
+- <strong>Virtual Network</strong>: An existing Virtual Network (VNet) must be available
+- <strong>Subnet</strong>: A dedicated subnet within the VNet must be delegated to <strong>Microsoft.Web/serverFarms</strong> for Function App VNet integration
+- <strong>Subnet Delegation</strong>: Configure the subnet delegation using Azure Portal, ARM template, or Azure CLI:
+  - Azure Portal: Go to Virtual networks → Select your VNet → Subnets → Select subnet → Delegate subnet to service → Choose <strong>Microsoft.Web/serverFarms</strong>
+  - Azure CLI: <code>az network vnet subnet update --resource-group &lt;rg-name&gt; --vnet-name &lt;vnet-name&gt; --name &lt;subnet-name&gt; --delegations Microsoft.Web/serverFarms</code>
+- <strong>Private Endpoints</strong>: The deployment will create private endpoints for storage account services (blob, file, queue, table) within the same subnet</p>
+</blockquote>
+<p><strong>STEP 2 - Configuration of the Cisco Umbrella logs collection</strong></p>
+<p><a href="https://docs.umbrella.com/deployment-umbrella/docs/log-management#section-logging-to-amazon-s-3">See documentation</a> and follow the instructions for set up logging and obtain credentials.</p>
+<p><strong>STEP 3 - Choose ONE from the following two deployment options to deploy the connector and the associated Azure Functions</strong></p>
+<blockquote>
+<p><strong>IMPORTANT:</strong> Before deploying the Cisco Umbrella data connector, have the Workspace ID and Workspace Primary Key (can be copied from the following), as well as the Amazon S3 REST API Authorization credentials, readily available.
+- <strong>Workspace ID</strong>: <code>WorkspaceId</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
+- <strong>Primary Key</strong>: <code>PrimaryKey</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+<p><strong>Option 1 - Azure Resource Manager (ARM) Template</strong></p>
+<p>Use this method for automated deployment of the Cisco Umbrella data connector using an ARM Tempate.</p>
+<ol>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below. </p>
+<p><a href="https://aka.ms/sentinelciscoumbrellaelasticpremiumazuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://aka.ms/sentinelciscoumbrellaelasticpremiumazuredeploy-gov"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a>
+2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. 
+3. Enter the <strong>Workspace ID</strong>, <strong>Workspace Key</strong>, <strong>S3Bucket</strong>, <strong>AWSAccessKeyId</strong>, <strong>AWSSecretAccessKey</strong>
+4. <strong>For Private Access Deployment</strong>: Also enter <strong>existingVnetName</strong>, <strong>existingVnetResourceGroupName</strong>, and <strong>existingSubnetName</strong> (ensure subnet is delegated to Microsoft.Web/serverFarms)
+<strong>Note:</strong> For the S3Bucket use the value that Cisco referrs to as the <em>S3 Bucket Data Path</em> and add a / (forward slash) to the end of the value
+5. Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>.
+6. Click <strong>Purchase</strong> to deploy.</p>
+</li>
+</ol>
+<p><strong>Option 2 - Manual Deployment of Azure Functions</strong></p>
+<p>Use the following step-by-step instructions to deploy the Cisco Umbrella data connector manually with Azure Functions (Deployment via Visual Studio Code).
+<strong>Step 1 - Deploy a Function App</strong></p>
+<pre><code>**NOTE:** You will need to [prepare VS code](https://docs.microsoft.com/azure/azure-functions/create-first-function-vs-code-python) for Azure Functions development.
+</code></pre>
+<ol>
+<li>Download the <a href="https://aka.ms/sentinel-CiscoUmbrellaConn-functionapp">Azure Functions App</a> file. Extract archive to your local development computer.</li>
+<li>Follow the <a href="https://github.com/Azure/Azure-Sentinel/blob/master/DataConnectors/AzureFunctionsManualDeploymentWithPythonVersion3.9.md#function-app-manual-deployment-instructions">function app manual deployment instructions</a> to deploy the Azure Functions app using VSCode.</li>
+<li>
+<p>After successful deployment of the function app, follow next steps for configuring it.</p>
+<p><strong>Step 2 - Configure the Function App</strong></p>
+<ol>
+<li>In the Function App, select the Function App Name and select <strong>Configuration</strong>.</li>
+<li>In the <strong>Application settings</strong> tab, select <strong>+ New application setting</strong>.</li>
+<li>Add each of the following application settings individually, with their respective string values (case-sensitive): 
+    WorkspaceID
+    WorkspaceKey
+    S3Bucket
+    AWSAccessKeyId
+    AWSSecretAccessKey
+    logAnalyticsUri (optional)<blockquote>
+<ul>
+<li>Use logAnalyticsUri to override the log analytics API endpoint for dedicated cloud. For example, for public cloud, leave the value empty; for Azure GovUS cloud environment, specify the value in the following format: <code>https://&lt;CustomerId&gt;.ods.opinsights.azure.us</code>.</li>
+</ul>
+</blockquote>
+</li>
+<li>Once all application settings have been entered, click <strong>Save</strong>.</li>
+</ol>
+</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

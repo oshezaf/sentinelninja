@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MDCFileIntegrityMonitoringEvents &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>MDCFileIntegrityMonitoringEvents</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for MDCFileIntegrityMonitoringEvents table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Security</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/mdcfileintegritymonitoringevents">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (65 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/mdcfileintegritymonitoringevents">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AADTenantID</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The AAD tenant ID of the subscription in which the monitored entity was created, renamed, modified or deleted.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Azure resource ID of the resource whose monitored entity was created, renamed, modified or deleted.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ChangeType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of change that occurred on the entity. For 'File' entity must be either 'Created', 'Modified', 'Renamed' or 'Deleted'. For 'Registry' entity must be either 'RegistryKeyCreated', 'RegistryKeyDeleted', 'RegistryValueSet', 'RegistryValueDeleted', 'RegistryKeyRenamed'.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CloudIdentifier</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The cloud identifier of the resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CloudProvider</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The cloud provider of the resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CloudResourceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the cloud resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Computer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the machine on which the monitored entity was created, renamed, modified or deleted.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileMd5</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Relevant for 'File' monitored entity type. Holds the MD5 of the file that was modified, created or deleted.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Relevant for 'File' monitored entity type. Holds the name of the file that was created, renamed, modified or deleted.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FilePath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Relevant for 'File' monitored entity type. Holds the path of the file that was created, renamed, modified or deleted.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileSha1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Relevant for 'File' monitored entity type. Holds the SHA1 of the file that was modified, created or deleted.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileSha256</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Relevant for 'File' monitored entity type. Holds the SHA256 of the file that was modified, created or deleted.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileSize</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Relevant for 'File' monitored entity type. Holds the current size (in bytes) of the file that was created, renamed, modified or deleted.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Relevant for 'File' monitored entity type. Holds the type of the file that was created, renamed, modified or deleted. Example of possible values: Zip, PDF, Xar etc.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessAccountDomainName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Holds the account domain name of the initiating process that caused the monitored entity event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessAccountName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Holds the account name of the initiating process that caused the monitored entity event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessAccountSid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Holds the account SID of the initiating process that caused the monitored entity event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessCreationTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Holds the creation time of the initiating process that caused the monitored entity event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessFirstSeen</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Holds the first seen time of the initiating process that caused the monitored entity event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Holds the process Id of the initiating process that caused the monitored entity event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessImageFileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Holds the image file name of the initiating process that caused the monitored entity event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessImageFilePath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Holds the image file path of the initiating process that caused the monitored entity event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessImageFileType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Holds the image file type of the initiating process that caused the monitored entity event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Holds the name of the initiating process that caused the monitored entity event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessSessionId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Holds the session Id of the initiating process that caused the monitored entity event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessSource</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Holds the source of the initiating process that caused the monitored entity event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitProcImageCreationTimeUtc</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Holds the image creation time for the image of the initiating process that caused the monitored entity event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitProcImageFileSizeInBytes</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Holds the image file size (in Bytes) of the initiating process that caused the monitored entity event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitProcImageLastAccessTimeUtc</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Holds the image last access time for the image of the initiating process that caused the monitored entity event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitProcImageLastWriteTimeUtc</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Holds the image last write time for the image of the initiating process that caused the monitored entity event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitProcImageLsHash</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Holds the image LS hash for the image of the initiating process that caused the monitored entity event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitProcImageMd5</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Holds the image MD5 for the image of the initiating process that caused the monitored entity event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitProcImagePeTimestampUtc</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Holds the image PE time for the image of the initiating process that caused the monitored entity event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitProcImageSha1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Holds the image SHA 1 for the image of the initiating process that caused the monitored entity event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitProcImageSha256</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Holds the image SHA 256 for the image of the initiating process that caused the monitored entity event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitProcVersionInfoCompanyName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Holds the version info company name of the initiating process that caused the monitored entity event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitProcVersionInfoFileDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Holds the version info file description of the initiating process that caused the monitored entity event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitProcVersionInfoInternalFileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Holds the version info internal file name of the initiating process that caused the monitored entity event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitProcVersionInfoOriginalFileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Holds the version info original file name of the initiating process that caused the monitored entity event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitProcVersionInfoProductName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Holds the version info product name of the initiating process that caused the monitored entity event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitProcVersionInfoProductVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Holds the version info product version of the initiating process that caused the monitored entity event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MonitoredEntityType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the monitored entity that was created, renamed, modified or deleted. Can be either 'File' or 'Registry'.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NewValueData</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Relevant for 'Registry' monitored entity type. Holds the New registry value data.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NewValueName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Relevant for 'Registry' monitored entity type. Holds the New registry value name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NewValueType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Relevant for 'Registry' monitored entity type. Holds the New registry value type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OldValueData</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Relevant for 'Registry' monitored entity type. Holds the previous registry value data.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OldValueFullRegistryKey</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Relevant for 'Registry' monitored entity type. Holds the previous full registry key.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OldValueName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Relevant for 'Registry' monitored entity type. Holds the previous registry value name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OldValueType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Relevant for 'Registry' monitored entity type. Holds the previous registry value type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OriginalFileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Relevant for 'File' monitored entity type and for a 'Rename' change type. Holds the original name the file that was renamed, before the rename occured.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OriginalFilePath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Relevant for 'File' monitored entity type and for a 'Rename' change type. Holds the original path of the file that was renamed, before the rename occured.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RegistryHive</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Relevant for 'Registry' monitored entity type. Holds the grouping configuration settings for the operating system and applications.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RegistryKey</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Relevant for 'Registry' monitored entity type. Holds the full registry key of the registry that was created or the new registry key of the registry that was renamed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestAccountDomain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Relevant for 'File' monitored entity type. Holds the domain of the account of the user that caused the file event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestAccountName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Relevant for 'File' monitored entity type. Holds the name of the account of the user that caused the file event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestAccountSid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Relevant for 'File' monitored entity type. Holds the SID of the account of the user that caused the file event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestSource</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Relevant for 'File' monitored entity type. Holds the source of the account of the user that caused the file event. For example Local/SMB/NFS.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestSourceIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Relevant for 'File' monitored entity type. Holds the source IP of the account of the user that caused the file event. For remote file, the IP from which the request came.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestSourcePort</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Relevant for 'File' monitored entity type. Holds the source port of the account of the user that caused the file event. For remote file, the port from which the request came.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time (UTC) when the monitored entity was created, renamed, modified or deleted.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

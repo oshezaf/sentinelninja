@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Syslog &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Syslog</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Syslog Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.6</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-05-23</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Syslog">Syslog</a></td>
+</tr>
+</tbody>
+</table>
+<p>The Syslog solution allows you to ingest events from applications or appliances that generate and can forward logs in the Syslog format to a Syslog Forwarder. The Agent for Linux is then able to forward these logs to the Log Analytics/Microsoft Sentinel workspace.</p>
+<p>Installing this solution will deploy two data connectors,</p>
+<ol>
+<li>
+<p><strong>Syslog via AMA</strong> - This data connector helps in ingesting syslog messages into your Log Analytics Workspace using the new Azure Monitor Agent. Learn more about ingesting using the new Azure Monitor Agent <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/agents/data-collection-syslog">here</a>. Microsoft recommends using this Data Connector.</p>
+</li>
+<li>
+<p><strong>Syslog via Legacy Agent</strong> - This data connector helps in ingesting syslog messages into your Log Analytics Workspace using the legacy Log Analytics agent.</p>
+</li>
+</ol>
+<P>**NOTE**: After the solution is installed, Microsoft recommends configuring and leveraging the Syslog via AMA connector for log ingestion. Legacy connector uses the Log Analytics agent, which is about to be deprecated by **Aug 31, 2024,** and thus should only be installed where AMA is not supported.</p>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/syslog.html">Syslog via Legacy Agent</a></li>
+<li><a href="../connectors/syslogama.html">Syslog via AMA</a></li>
+</ul>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+<td><a href="../connectors/syslogama.html">Syslog via AMA</a>, <a href="../connectors/syslog.html">Syslog via Legacy Agent</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>18 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">9</td>
+</tr>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">7</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">2</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/syslog-failed-logon-attempts-in-authpriv-e7ec9fa6-e7f7-41ed-a34b-b956837a3ee6-eb207cad.html">Failed logon attempts in authpriv</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/syslog-nrt-squid-proxy-events-related-to-mining-pools-dd03057e-4347-4853-bf1e-2b2d21eb4e59-bc48dba2.html">NRT Squid proxy events related to mining pools</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/syslog-sftp-file-transfer-above-threshold-bb6a74c8-889d-4c6e-8412-7d5efe33f4ed-7f06d2d2.html">SFTP File transfer above threshold</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/syslog-sftp-file-transfer-folder-count-above-threshold-7355434e-09d5-4401-b56d-e03e9379dfb1-648b0cfd.html">SFTP File transfer folder count above threshold</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/syslog-ssh-potential-brute-force-e1ce0eab-10d1-4aae-863f-9a383345ba88-08e1a5a9.html">SSH - Potential Brute Force</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/syslog-squid-proxy-events-for-tor-proxies-90d3f6ec-80fb-48e0-9937-2c70c9df9bad-1bd82f05.html">Squid proxy events for ToR proxies</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/syslog-squid-proxy-events-related-to-mining-pools-80733eb7-35b2-45b6-b2b8-3c51df258206-05fb1303.html">Squid proxy events related to mining pools</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/syslog-crypto-currency-miners-execve-1ef1c38f-26dd-4e28-b884-5b3665352648-c1378546.html">Crypto currency miners EXECVE</a></td>
+<td style="text-align: left;">Persistence, Execution</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/syslog-editing-linux-scheduled-tasks-through-crontab-6f0f1821-5981-408a-930b-8b2ca60e9e6c-5de4e857.html">Editing Linux scheduled tasks through Crontab</a></td>
+<td style="text-align: left;">Persistence, Execution</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/syslog-linux-scheduled-task-aggregation-eb09da09-6f6c-4502-bf74-f7b9f1343539-ae42cc38.html">Linux scheduled task Aggregation</a></td>
+<td style="text-align: left;">Persistence, Execution</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/syslog-rare-process-running-on-a-linux-host-d0ae35df-0eaf-491f-b23e-8190e4f3ffe9-bece04a6.html">Rare process running on a Linux host</a></td>
+<td style="text-align: left;">Execution, Persistence</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/syslog-scx-execute-runas-providers-0d298a1d-1a08-4f4b-8b28-687bfe0012e8-bc82896d.html">SCX Execute RunAs Providers</a></td>
+<td style="text-align: left;">InitialAccess, Execution</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/syslog-squid-commonly-abused-tlds-7aaa7675-1580-47d8-a404-039cb7284279-58ed2cc3.html">Squid commonly abused TLDs</a></td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/syslog-squid-data-volume-timeseries-anomalies-e472c490-4792-4f12-8b6b-6ab3e0404d35-8dc40325.html">Squid data volume timeseries anomalies</a></td>
+<td style="text-align: left;">CommandAndControl, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/syslog-squid-malformed-requests-edbeec9f-86b9-475d-8a42-cc7b95ad2baa-73064f82.html">Squid malformed requests</a></td>
+<td style="text-align: left;">Discovery</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/syslog-suspicious-crytocurrency-mining-related-threat-activity-detected-005d6e3c-7453-46f6-aef3-f59695594545-4f6cf014.html">Suspicious crytocurrency mining related threat activity detected</a></td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/syslog-linuxmachines-b765d65a.html">LinuxMachines</a></td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/syslog-syslogconnectorsoverviewworkbook-1e6251c7.html">SyslogConnectorsOverviewWorkbook</a></td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.7</td>
+<td>04-11-2024</td>
+<td>Updated the Syslog <strong>Data Connector</strong> template to latest version</td>
+</tr>
+<tr>
+<td>3.0.6</td>
+<td>01-08-2024</td>
+<td>Updated <strong>Analytic rules</strong> for entity mappings and parameter for parser function</td>
+</tr>
+<tr>
+<td>3.0.5</td>
+<td>16-07-2024</td>
+<td>Added 2 new Workspace Function <strong>Parsers</strong> and a new <strong>Workbook</strong></td>
+</tr>
+<tr>
+<td>3.0.4</td>
+<td>27-06-2024</td>
+<td>Updated Connectivity criteria query for <strong>Data Connector</strong></td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>10-04-2024</td>
+<td>Updated Entity Mappings <strong>Analytic Rule</strong> FailedLogonAttempts_UnknownUser.yaml</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>21-02-2024</td>
+<td>Addition of new Syslog AMA <strong>Data Connector</strong></td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>01-02-2024</td>
+<td><strong>Hunting Queries</strong> Description updated</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

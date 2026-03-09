@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snowflake &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Snowflake</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Snowflake Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.8</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2021-10-23</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Snowflake">Snowflake</a></td>
+</tr>
+</tbody>
+</table>
+<p>The Snowflake CCF data connector provides the capability to ingest Snowflake <a href="https://docs.snowflake.com/en/sql-reference/account-usage/login_history">Login History Logs</a>, <a href="https://docs.snowflake.com/en/sql-reference/account-usage/query_history">Query History Logs</a>, <a href="https://docs.snowflake.com/en/sql-reference/account-usage/grants_to_users">User-Grant Logs</a>, <a href="https://docs.snowflake.com/en/sql-reference/account-usage/grants_to_roles">Role-Grant Logs</a>, <a href="https://docs.snowflake.com/en/sql-reference/account-usage/load_history">Load History Logs</a>, <a href="https://docs.snowflake.com/en/sql-reference/account-usage/materialized_view_refresh_history">Materialized View Refresh History Logs</a>, <a href="https://docs.snowflake.com/en/sql-reference/account-usage/roles">Roles Logs</a>, <a href="https://docs.snowflake.com/en/sql-reference/account-usage/tables">Tables Logs</a>, <a href="https://docs.snowflake.com/en/sql-reference/account-usage/table_storage_metrics">Table Storage Metrics Logs</a>, <a href="https://docs.snowflake.com/en/sql-reference/account-usage/users">Users Logs</a> into Microsoft Sentinel using the Snowflake SQL API. Refer to <a href="https://docs.snowflake.com/en/developer-guide/sql-api/reference">Snowflake SQL API documentation</a> for more information. </p>
+<p><strong>Underlying Microsoft Technologies used:</strong> </p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>• <a href="https://aka.ms/Sentinel-CCP_Platform">Microsoft Sentinel Codeless Connector Framework</a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong> (plus 1 discovered⚠️):</p>
+<ul>
+<li><a href="../connectors/snowflakedataconnector.html">[DEPRECATED] Snowflake</a> ⚠️ 🔶</li>
+<li><a href="../connectors/snowflakelogsccpdefinition.html">Snowflake (via Codeless Connector Framework)</a></li>
+</ul>
+<p><em>⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.</em></p>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>11 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/snowflakeload-cl.html"><code>SnowflakeLoad_CL</code></a></td>
+<td><a href="../connectors/snowflakelogsccpdefinition.html">Snowflake (via Codeless Connector Framework)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/snowflakelogin-cl.html"><code>SnowflakeLogin_CL</code></a></td>
+<td><a href="../connectors/snowflakelogsccpdefinition.html">Snowflake (via Codeless Connector Framework)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/snowflakematerializedview-cl.html"><code>SnowflakeMaterializedView_CL</code></a></td>
+<td><a href="../connectors/snowflakelogsccpdefinition.html">Snowflake (via Codeless Connector Framework)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/snowflakequery-cl.html"><code>SnowflakeQuery_CL</code></a></td>
+<td><a href="../connectors/snowflakelogsccpdefinition.html">Snowflake (via Codeless Connector Framework)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/snowflakerolegrant-cl.html"><code>SnowflakeRoleGrant_CL</code></a></td>
+<td><a href="../connectors/snowflakelogsccpdefinition.html">Snowflake (via Codeless Connector Framework)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/snowflakeroles-cl.html"><code>SnowflakeRoles_CL</code></a></td>
+<td><a href="../connectors/snowflakelogsccpdefinition.html">Snowflake (via Codeless Connector Framework)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/snowflaketablestoragemetrics-cl.html"><code>SnowflakeTableStorageMetrics_CL</code></a></td>
+<td><a href="../connectors/snowflakelogsccpdefinition.html">Snowflake (via Codeless Connector Framework)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/snowflaketables-cl.html"><code>SnowflakeTables_CL</code></a></td>
+<td><a href="../connectors/snowflakelogsccpdefinition.html">Snowflake (via Codeless Connector Framework)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/snowflakeusergrant-cl.html"><code>SnowflakeUserGrant_CL</code></a></td>
+<td><a href="../connectors/snowflakelogsccpdefinition.html">Snowflake (via Codeless Connector Framework)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/snowflakeusers-cl.html"><code>SnowflakeUsers_CL</code></a></td>
+<td><a href="../connectors/snowflakelogsccpdefinition.html">Snowflake (via Codeless Connector Framework)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/snowflake-cl.html"><code>Snowflake_CL</code></a> 🔶</td>
+<td><a href="../connectors/snowflakedataconnector.html">[DEPRECATED] Snowflake</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>22 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/snowflake-snowflake-abnormal-query-process-time-1376f5e5-855a-4f88-8591-19eba4575a0f-cec38277.html">Snowflake - Abnormal query process time</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/snowflakeload-cl.html"><code>SnowflakeLoad_CL</code></a><br><a href="../tables/snowflakelogin-cl.html"><code>SnowflakeLogin_CL</code></a><br><a href="../tables/snowflakematerializedview-cl.html"><code>SnowflakeMaterializedView_CL</code></a><br><a href="../tables/snowflakequery-cl.html"><code>SnowflakeQuery_CL</code></a><br><a href="../tables/snowflakerolegrant-cl.html"><code>SnowflakeRoleGrant_CL</code></a><br><a href="../tables/snowflakeroles-cl.html"><code>SnowflakeRoles_CL</code></a><br><a href="../tables/snowflaketablestoragemetrics-cl.html"><code>SnowflakeTableStorageMetrics_CL</code></a><br><a href="../tables/snowflaketables-cl.html"><code>SnowflakeTables_CL</code></a><br><a href="../tables/snowflakeusergrant-cl.html"><code>SnowflakeUserGrant_CL</code></a><br><a href="../tables/snowflakeusers-cl.html"><code>SnowflakeUsers_CL</code></a><br><a href="../tables/snowflake-cl.html"><code>Snowflake_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/snowflake-snowflake-multiple-failed-queries-5f8a81d9-7d27-4ff5-a0ce-4285ee02c2c8-558c4df2.html">Snowflake - Multiple failed queries</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Discovery</td>
+<td style="text-align: left;"><a href="../tables/snowflakeload-cl.html"><code>SnowflakeLoad_CL</code></a><br><a href="../tables/snowflakelogin-cl.html"><code>SnowflakeLogin_CL</code></a><br><a href="../tables/snowflakematerializedview-cl.html"><code>SnowflakeMaterializedView_CL</code></a><br><a href="../tables/snowflakequery-cl.html"><code>SnowflakeQuery_CL</code></a><br><a href="../tables/snowflakerolegrant-cl.html"><code>SnowflakeRoleGrant_CL</code></a><br><a href="../tables/snowflakeroles-cl.html"><code>SnowflakeRoles_CL</code></a><br><a href="../tables/snowflaketablestoragemetrics-cl.html"><code>SnowflakeTableStorageMetrics_CL</code></a><br><a href="../tables/snowflaketables-cl.html"><code>SnowflakeTables_CL</code></a><br><a href="../tables/snowflakeusergrant-cl.html"><code>SnowflakeUserGrant_CL</code></a><br><a href="../tables/snowflakeusers-cl.html"><code>SnowflakeUsers_CL</code></a><br><a href="../tables/snowflake-cl.html"><code>Snowflake_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/snowflake-snowflake-multiple-login-failures-by-user-e05cc333-d499-430f-907c-7f28a9e4d1b5-20cf8b77.html">Snowflake - Multiple login failures by user</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/snowflakeload-cl.html"><code>SnowflakeLoad_CL</code></a><br><a href="../tables/snowflakelogin-cl.html"><code>SnowflakeLogin_CL</code></a><br><a href="../tables/snowflakematerializedview-cl.html"><code>SnowflakeMaterializedView_CL</code></a><br><a href="../tables/snowflakequery-cl.html"><code>SnowflakeQuery_CL</code></a><br><a href="../tables/snowflakerolegrant-cl.html"><code>SnowflakeRoleGrant_CL</code></a><br><a href="../tables/snowflakeroles-cl.html"><code>SnowflakeRoles_CL</code></a><br><a href="../tables/snowflaketablestoragemetrics-cl.html"><code>SnowflakeTableStorageMetrics_CL</code></a><br><a href="../tables/snowflaketables-cl.html"><code>SnowflakeTables_CL</code></a><br><a href="../tables/snowflakeusergrant-cl.html"><code>SnowflakeUserGrant_CL</code></a><br><a href="../tables/snowflakeusers-cl.html"><code>SnowflakeUsers_CL</code></a><br><a href="../tables/snowflake-cl.html"><code>Snowflake_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/snowflake-snowflake-multiple-login-failures-from-single-ip-b7d22407-1391-4256-b09a-414a9719443c-3c21fedb.html">Snowflake - Multiple login failures from single IP</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/snowflakeload-cl.html"><code>SnowflakeLoad_CL</code></a><br><a href="../tables/snowflakelogin-cl.html"><code>SnowflakeLogin_CL</code></a><br><a href="../tables/snowflakematerializedview-cl.html"><code>SnowflakeMaterializedView_CL</code></a><br><a href="../tables/snowflakequery-cl.html"><code>SnowflakeQuery_CL</code></a><br><a href="../tables/snowflakerolegrant-cl.html"><code>SnowflakeRoleGrant_CL</code></a><br><a href="../tables/snowflakeroles-cl.html"><code>SnowflakeRoles_CL</code></a><br><a href="../tables/snowflaketablestoragemetrics-cl.html"><code>SnowflakeTableStorageMetrics_CL</code></a><br><a href="../tables/snowflaketables-cl.html"><code>SnowflakeTables_CL</code></a><br><a href="../tables/snowflakeusergrant-cl.html"><code>SnowflakeUserGrant_CL</code></a><br><a href="../tables/snowflakeusers-cl.html"><code>SnowflakeUsers_CL</code></a><br><a href="../tables/snowflake-cl.html"><code>Snowflake_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/snowflake-snowflake-possible-data-destraction-c2f93727-e4b0-4cb9-8f80-f52ebbd96ece-232a1869.html">Snowflake - Possible data destraction</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/snowflakeload-cl.html"><code>SnowflakeLoad_CL</code></a><br><a href="../tables/snowflakelogin-cl.html"><code>SnowflakeLogin_CL</code></a><br><a href="../tables/snowflakematerializedview-cl.html"><code>SnowflakeMaterializedView_CL</code></a><br><a href="../tables/snowflakequery-cl.html"><code>SnowflakeQuery_CL</code></a><br><a href="../tables/snowflakerolegrant-cl.html"><code>SnowflakeRoleGrant_CL</code></a><br><a href="../tables/snowflakeroles-cl.html"><code>SnowflakeRoles_CL</code></a><br><a href="../tables/snowflaketablestoragemetrics-cl.html"><code>SnowflakeTableStorageMetrics_CL</code></a><br><a href="../tables/snowflaketables-cl.html"><code>SnowflakeTables_CL</code></a><br><a href="../tables/snowflakeusergrant-cl.html"><code>SnowflakeUserGrant_CL</code></a><br><a href="../tables/snowflakeusers-cl.html"><code>SnowflakeUsers_CL</code></a><br><a href="../tables/snowflake-cl.html"><code>Snowflake_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/snowflake-snowflake-possible-discovery-activity-09b8dfc7-87b0-4215-b34b-bab363d685cb-60c7f551.html">Snowflake - Possible discovery activity</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Discovery</td>
+<td style="text-align: left;"><a href="../tables/snowflakeload-cl.html"><code>SnowflakeLoad_CL</code></a><br><a href="../tables/snowflakelogin-cl.html"><code>SnowflakeLogin_CL</code></a><br><a href="../tables/snowflakematerializedview-cl.html"><code>SnowflakeMaterializedView_CL</code></a><br><a href="../tables/snowflakequery-cl.html"><code>SnowflakeQuery_CL</code></a><br><a href="../tables/snowflakerolegrant-cl.html"><code>SnowflakeRoleGrant_CL</code></a><br><a href="../tables/snowflakeroles-cl.html"><code>SnowflakeRoles_CL</code></a><br><a href="../tables/snowflaketablestoragemetrics-cl.html"><code>SnowflakeTableStorageMetrics_CL</code></a><br><a href="../tables/snowflaketables-cl.html"><code>SnowflakeTables_CL</code></a><br><a href="../tables/snowflakeusergrant-cl.html"><code>SnowflakeUserGrant_CL</code></a><br><a href="../tables/snowflakeusers-cl.html"><code>SnowflakeUsers_CL</code></a><br><a href="../tables/snowflake-cl.html"><code>Snowflake_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/snowflake-snowflake-possible-privileges-discovery-activity-627a4ff1-036b-4375-a9f9-288d5e1d7d37-fb25b66d.html">Snowflake - Possible privileges discovery activity</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Discovery</td>
+<td style="text-align: left;"><a href="../tables/snowflakeload-cl.html"><code>SnowflakeLoad_CL</code></a><br><a href="../tables/snowflakelogin-cl.html"><code>SnowflakeLogin_CL</code></a><br><a href="../tables/snowflakematerializedview-cl.html"><code>SnowflakeMaterializedView_CL</code></a><br><a href="../tables/snowflakequery-cl.html"><code>SnowflakeQuery_CL</code></a><br><a href="../tables/snowflakerolegrant-cl.html"><code>SnowflakeRoleGrant_CL</code></a><br><a href="../tables/snowflakeroles-cl.html"><code>SnowflakeRoles_CL</code></a><br><a href="../tables/snowflaketablestoragemetrics-cl.html"><code>SnowflakeTableStorageMetrics_CL</code></a><br><a href="../tables/snowflaketables-cl.html"><code>SnowflakeTables_CL</code></a><br><a href="../tables/snowflakeusergrant-cl.html"><code>SnowflakeUserGrant_CL</code></a><br><a href="../tables/snowflakeusers-cl.html"><code>SnowflakeUsers_CL</code></a><br><a href="../tables/snowflake-cl.html"><code>Snowflake_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/snowflake-snowflake-query-on-sensitive-or-restricted-table-f258fa0c-e26c-4e2b-94fb-88b6cef0ca6e-4abe0d65.html">Snowflake - Query on sensitive or restricted table</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/snowflakeload-cl.html"><code>SnowflakeLoad_CL</code></a><br><a href="../tables/snowflakelogin-cl.html"><code>SnowflakeLogin_CL</code></a><br><a href="../tables/snowflakematerializedview-cl.html"><code>SnowflakeMaterializedView_CL</code></a><br><a href="../tables/snowflakequery-cl.html"><code>SnowflakeQuery_CL</code></a><br><a href="../tables/snowflakerolegrant-cl.html"><code>SnowflakeRoleGrant_CL</code></a><br><a href="../tables/snowflakeroles-cl.html"><code>SnowflakeRoles_CL</code></a><br><a href="../tables/snowflaketablestoragemetrics-cl.html"><code>SnowflakeTableStorageMetrics_CL</code></a><br><a href="../tables/snowflaketables-cl.html"><code>SnowflakeTables_CL</code></a><br><a href="../tables/snowflakeusergrant-cl.html"><code>SnowflakeUserGrant_CL</code></a><br><a href="../tables/snowflakeusers-cl.html"><code>SnowflakeUsers_CL</code></a><br><a href="../tables/snowflake-cl.html"><code>Snowflake_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/snowflake-snowflake-unusual-query-1dd1d9e5-3ebf-43cb-be07-6082d5eabe79-ce037070.html">Snowflake - Unusual query</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/snowflakeload-cl.html"><code>SnowflakeLoad_CL</code></a><br><a href="../tables/snowflakelogin-cl.html"><code>SnowflakeLogin_CL</code></a><br><a href="../tables/snowflakematerializedview-cl.html"><code>SnowflakeMaterializedView_CL</code></a><br><a href="../tables/snowflakequery-cl.html"><code>SnowflakeQuery_CL</code></a><br><a href="../tables/snowflakerolegrant-cl.html"><code>SnowflakeRoleGrant_CL</code></a><br><a href="../tables/snowflakeroles-cl.html"><code>SnowflakeRoles_CL</code></a><br><a href="../tables/snowflaketablestoragemetrics-cl.html"><code>SnowflakeTableStorageMetrics_CL</code></a><br><a href="../tables/snowflaketables-cl.html"><code>SnowflakeTables_CL</code></a><br><a href="../tables/snowflakeusergrant-cl.html"><code>SnowflakeUserGrant_CL</code></a><br><a href="../tables/snowflakeusers-cl.html"><code>SnowflakeUsers_CL</code></a><br><a href="../tables/snowflake-cl.html"><code>Snowflake_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/snowflake-snowflake-user-granted-admin-privileges-5ed33eee-0ab6-4bf5-9e9b-6100db83d39a-6efd7f60.html">Snowflake - User granted admin privileges</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/snowflakeload-cl.html"><code>SnowflakeLoad_CL</code></a><br><a href="../tables/snowflakelogin-cl.html"><code>SnowflakeLogin_CL</code></a><br><a href="../tables/snowflakematerializedview-cl.html"><code>SnowflakeMaterializedView_CL</code></a><br><a href="../tables/snowflakequery-cl.html"><code>SnowflakeQuery_CL</code></a><br><a href="../tables/snowflakerolegrant-cl.html"><code>SnowflakeRoleGrant_CL</code></a><br><a href="../tables/snowflakeroles-cl.html"><code>SnowflakeRoles_CL</code></a><br><a href="../tables/snowflaketablestoragemetrics-cl.html"><code>SnowflakeTableStorageMetrics_CL</code></a><br><a href="../tables/snowflaketables-cl.html"><code>SnowflakeTables_CL</code></a><br><a href="../tables/snowflakeusergrant-cl.html"><code>SnowflakeUserGrant_CL</code></a><br><a href="../tables/snowflakeusers-cl.html"><code>SnowflakeUsers_CL</code></a><br><a href="../tables/snowflake-cl.html"><code>Snowflake_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/snowflake-snowflake-credit-consuming-queries-6e8315eb-86a0-4a15-925d-a36c29d13bbd-9287cd1e.html">Snowflake - Credit consuming queries</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/snowflakeload-cl.html"><code>SnowflakeLoad_CL</code></a><br><a href="../tables/snowflakelogin-cl.html"><code>SnowflakeLogin_CL</code></a><br><a href="../tables/snowflakematerializedview-cl.html"><code>SnowflakeMaterializedView_CL</code></a><br><a href="../tables/snowflakequery-cl.html"><code>SnowflakeQuery_CL</code></a><br><a href="../tables/snowflakerolegrant-cl.html"><code>SnowflakeRoleGrant_CL</code></a><br><a href="../tables/snowflakeroles-cl.html"><code>SnowflakeRoles_CL</code></a><br><a href="../tables/snowflaketablestoragemetrics-cl.html"><code>SnowflakeTableStorageMetrics_CL</code></a><br><a href="../tables/snowflaketables-cl.html"><code>SnowflakeTables_CL</code></a><br><a href="../tables/snowflakeusergrant-cl.html"><code>SnowflakeUserGrant_CL</code></a><br><a href="../tables/snowflakeusers-cl.html"><code>SnowflakeUsers_CL</code></a><br><a href="../tables/snowflake-cl.html"><code>Snowflake_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/snowflake-snowflake-deleted-databases-09cc7b43-2ea1-464f-a72c-2ec187405505-c3576198.html">Snowflake - Deleted databases</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/snowflakeload-cl.html"><code>SnowflakeLoad_CL</code></a><br><a href="../tables/snowflakelogin-cl.html"><code>SnowflakeLogin_CL</code></a><br><a href="../tables/snowflakematerializedview-cl.html"><code>SnowflakeMaterializedView_CL</code></a><br><a href="../tables/snowflakequery-cl.html"><code>SnowflakeQuery_CL</code></a><br><a href="../tables/snowflakerolegrant-cl.html"><code>SnowflakeRoleGrant_CL</code></a><br><a href="../tables/snowflakeroles-cl.html"><code>SnowflakeRoles_CL</code></a><br><a href="../tables/snowflaketablestoragemetrics-cl.html"><code>SnowflakeTableStorageMetrics_CL</code></a><br><a href="../tables/snowflaketables-cl.html"><code>SnowflakeTables_CL</code></a><br><a href="../tables/snowflakeusergrant-cl.html"><code>SnowflakeUserGrant_CL</code></a><br><a href="../tables/snowflakeusers-cl.html"><code>SnowflakeUsers_CL</code></a><br><a href="../tables/snowflake-cl.html"><code>Snowflake_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/snowflake-snowflake-deleted-tables-5736df91-ec99-4fb2-b162-a17607d20ee8-5bc16bd8.html">Snowflake - Deleted tables</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/snowflakeload-cl.html"><code>SnowflakeLoad_CL</code></a><br><a href="../tables/snowflakelogin-cl.html"><code>SnowflakeLogin_CL</code></a><br><a href="../tables/snowflakematerializedview-cl.html"><code>SnowflakeMaterializedView_CL</code></a><br><a href="../tables/snowflakequery-cl.html"><code>SnowflakeQuery_CL</code></a><br><a href="../tables/snowflakerolegrant-cl.html"><code>SnowflakeRoleGrant_CL</code></a><br><a href="../tables/snowflakeroles-cl.html"><code>SnowflakeRoles_CL</code></a><br><a href="../tables/snowflaketablestoragemetrics-cl.html"><code>SnowflakeTableStorageMetrics_CL</code></a><br><a href="../tables/snowflaketables-cl.html"><code>SnowflakeTables_CL</code></a><br><a href="../tables/snowflakeusergrant-cl.html"><code>SnowflakeUserGrant_CL</code></a><br><a href="../tables/snowflakeusers-cl.html"><code>SnowflakeUsers_CL</code></a><br><a href="../tables/snowflake-cl.html"><code>Snowflake_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/snowflake-snowflake-failed-logins-b4a062d1-c95b-4b55-b984-a7efbc2e3a0f-8b684bf6.html">Snowflake - Failed logins</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/snowflakeload-cl.html"><code>SnowflakeLoad_CL</code></a><br><a href="../tables/snowflakelogin-cl.html"><code>SnowflakeLogin_CL</code></a><br><a href="../tables/snowflakematerializedview-cl.html"><code>SnowflakeMaterializedView_CL</code></a><br><a href="../tables/snowflakequery-cl.html"><code>SnowflakeQuery_CL</code></a><br><a href="../tables/snowflakerolegrant-cl.html"><code>SnowflakeRoleGrant_CL</code></a><br><a href="../tables/snowflakeroles-cl.html"><code>SnowflakeRoles_CL</code></a><br><a href="../tables/snowflaketablestoragemetrics-cl.html"><code>SnowflakeTableStorageMetrics_CL</code></a><br><a href="../tables/snowflaketables-cl.html"><code>SnowflakeTables_CL</code></a><br><a href="../tables/snowflakeusergrant-cl.html"><code>SnowflakeUserGrant_CL</code></a><br><a href="../tables/snowflakeusers-cl.html"><code>SnowflakeUsers_CL</code></a><br><a href="../tables/snowflake-cl.html"><code>Snowflake_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/snowflake-snowflake-privileged-users'-source-ip-addresses-6aae5700-79da-4b41-98cc-f77bf7489f01-ba938487.html">Snowflake - Privileged users' source IP addresses</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/snowflakeload-cl.html"><code>SnowflakeLoad_CL</code></a><br><a href="../tables/snowflakelogin-cl.html"><code>SnowflakeLogin_CL</code></a><br><a href="../tables/snowflakematerializedview-cl.html"><code>SnowflakeMaterializedView_CL</code></a><br><a href="../tables/snowflakequery-cl.html"><code>SnowflakeQuery_CL</code></a><br><a href="../tables/snowflakerolegrant-cl.html"><code>SnowflakeRoleGrant_CL</code></a><br><a href="../tables/snowflakeroles-cl.html"><code>SnowflakeRoles_CL</code></a><br><a href="../tables/snowflaketablestoragemetrics-cl.html"><code>SnowflakeTableStorageMetrics_CL</code></a><br><a href="../tables/snowflaketables-cl.html"><code>SnowflakeTables_CL</code></a><br><a href="../tables/snowflakeusergrant-cl.html"><code>SnowflakeUserGrant_CL</code></a><br><a href="../tables/snowflakeusers-cl.html"><code>SnowflakeUsers_CL</code></a><br><a href="../tables/snowflake-cl.html"><code>Snowflake_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/snowflake-snowflake-rarely-used-account-fcc5f12b-bfa7-45f1-8722-a72eb77a5a4a-c2ce979f.html">Snowflake - Rarely used account</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/snowflakeload-cl.html"><code>SnowflakeLoad_CL</code></a><br><a href="../tables/snowflakelogin-cl.html"><code>SnowflakeLogin_CL</code></a><br><a href="../tables/snowflakematerializedview-cl.html"><code>SnowflakeMaterializedView_CL</code></a><br><a href="../tables/snowflakequery-cl.html"><code>SnowflakeQuery_CL</code></a><br><a href="../tables/snowflakerolegrant-cl.html"><code>SnowflakeRoleGrant_CL</code></a><br><a href="../tables/snowflakeroles-cl.html"><code>SnowflakeRoles_CL</code></a><br><a href="../tables/snowflaketablestoragemetrics-cl.html"><code>SnowflakeTableStorageMetrics_CL</code></a><br><a href="../tables/snowflaketables-cl.html"><code>SnowflakeTables_CL</code></a><br><a href="../tables/snowflakeusergrant-cl.html"><code>SnowflakeUserGrant_CL</code></a><br><a href="../tables/snowflakeusers-cl.html"><code>SnowflakeUsers_CL</code></a><br><a href="../tables/snowflake-cl.html"><code>Snowflake_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/snowflake-snowflake-rarely-used-privileged-users-112311cc-6361-4c56-9520-1147371b01ac-d9dcdee8.html">Snowflake - Rarely used privileged users</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/snowflakeload-cl.html"><code>SnowflakeLoad_CL</code></a><br><a href="../tables/snowflakelogin-cl.html"><code>SnowflakeLogin_CL</code></a><br><a href="../tables/snowflakematerializedview-cl.html"><code>SnowflakeMaterializedView_CL</code></a><br><a href="../tables/snowflakequery-cl.html"><code>SnowflakeQuery_CL</code></a><br><a href="../tables/snowflakerolegrant-cl.html"><code>SnowflakeRoleGrant_CL</code></a><br><a href="../tables/snowflakeroles-cl.html"><code>SnowflakeRoles_CL</code></a><br><a href="../tables/snowflaketablestoragemetrics-cl.html"><code>SnowflakeTableStorageMetrics_CL</code></a><br><a href="../tables/snowflaketables-cl.html"><code>SnowflakeTables_CL</code></a><br><a href="../tables/snowflakeusergrant-cl.html"><code>SnowflakeUserGrant_CL</code></a><br><a href="../tables/snowflakeusers-cl.html"><code>SnowflakeUsers_CL</code></a><br><a href="../tables/snowflake-cl.html"><code>Snowflake_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/snowflake-snowflake-time-consuming-queries-8f8a8ac1-82aa-4569-b3ec-46dbf2676bf0-25538b42.html">Snowflake - Time consuming queries</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/snowflakeload-cl.html"><code>SnowflakeLoad_CL</code></a><br><a href="../tables/snowflakelogin-cl.html"><code>SnowflakeLogin_CL</code></a><br><a href="../tables/snowflakematerializedview-cl.html"><code>SnowflakeMaterializedView_CL</code></a><br><a href="../tables/snowflakequery-cl.html"><code>SnowflakeQuery_CL</code></a><br><a href="../tables/snowflakerolegrant-cl.html"><code>SnowflakeRoleGrant_CL</code></a><br><a href="../tables/snowflakeroles-cl.html"><code>SnowflakeRoles_CL</code></a><br><a href="../tables/snowflaketablestoragemetrics-cl.html"><code>SnowflakeTableStorageMetrics_CL</code></a><br><a href="../tables/snowflaketables-cl.html"><code>SnowflakeTables_CL</code></a><br><a href="../tables/snowflakeusergrant-cl.html"><code>SnowflakeUserGrant_CL</code></a><br><a href="../tables/snowflakeusers-cl.html"><code>SnowflakeUsers_CL</code></a><br><a href="../tables/snowflake-cl.html"><code>Snowflake_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/snowflake-snowflake-unknown-query-type-98f57314-b6d3-4f3a-8e10-c691d8c946d5-c054f18f.html">Snowflake - Unknown query type</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/snowflakeload-cl.html"><code>SnowflakeLoad_CL</code></a><br><a href="../tables/snowflakelogin-cl.html"><code>SnowflakeLogin_CL</code></a><br><a href="../tables/snowflakematerializedview-cl.html"><code>SnowflakeMaterializedView_CL</code></a><br><a href="../tables/snowflakequery-cl.html"><code>SnowflakeQuery_CL</code></a><br><a href="../tables/snowflakerolegrant-cl.html"><code>SnowflakeRoleGrant_CL</code></a><br><a href="../tables/snowflakeroles-cl.html"><code>SnowflakeRoles_CL</code></a><br><a href="../tables/snowflaketablestoragemetrics-cl.html"><code>SnowflakeTableStorageMetrics_CL</code></a><br><a href="../tables/snowflaketables-cl.html"><code>SnowflakeTables_CL</code></a><br><a href="../tables/snowflakeusergrant-cl.html"><code>SnowflakeUserGrant_CL</code></a><br><a href="../tables/snowflakeusers-cl.html"><code>SnowflakeUsers_CL</code></a><br><a href="../tables/snowflake-cl.html"><code>Snowflake_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/snowflake-snowflake-users'-source-ip-addresses-169b4c88-10f5-42c2-a45f-0959689ca22a-e121838b.html">Snowflake - Users' source IP addresses</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/snowflakeload-cl.html"><code>SnowflakeLoad_CL</code></a><br><a href="../tables/snowflakelogin-cl.html"><code>SnowflakeLogin_CL</code></a><br><a href="../tables/snowflakematerializedview-cl.html"><code>SnowflakeMaterializedView_CL</code></a><br><a href="../tables/snowflakequery-cl.html"><code>SnowflakeQuery_CL</code></a><br><a href="../tables/snowflakerolegrant-cl.html"><code>SnowflakeRoleGrant_CL</code></a><br><a href="../tables/snowflakeroles-cl.html"><code>SnowflakeRoles_CL</code></a><br><a href="../tables/snowflaketablestoragemetrics-cl.html"><code>SnowflakeTableStorageMetrics_CL</code></a><br><a href="../tables/snowflaketables-cl.html"><code>SnowflakeTables_CL</code></a><br><a href="../tables/snowflakeusergrant-cl.html"><code>SnowflakeUserGrant_CL</code></a><br><a href="../tables/snowflakeusers-cl.html"><code>SnowflakeUsers_CL</code></a><br><a href="../tables/snowflake-cl.html"><code>Snowflake_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/snowflake-snowflake-757ff347.html">Snowflake</a></td>
+<td style="text-align: left;"><a href="../tables/snowflakeload-cl.html"><code>SnowflakeLoad_CL</code></a><br><a href="../tables/snowflakelogin-cl.html"><code>SnowflakeLogin_CL</code></a><br><a href="../tables/snowflakematerializedview-cl.html"><code>SnowflakeMaterializedView_CL</code></a><br><a href="../tables/snowflakequery-cl.html"><code>SnowflakeQuery_CL</code></a><br><a href="../tables/snowflakerolegrant-cl.html"><code>SnowflakeRoleGrant_CL</code></a><br><a href="../tables/snowflakeroles-cl.html"><code>SnowflakeRoles_CL</code></a><br><a href="../tables/snowflaketablestoragemetrics-cl.html"><code>SnowflakeTableStorageMetrics_CL</code></a><br><a href="../tables/snowflaketables-cl.html"><code>SnowflakeTables_CL</code></a><br><a href="../tables/snowflakeusergrant-cl.html"><code>SnowflakeUserGrant_CL</code></a><br><a href="../tables/snowflakeusers-cl.html"><code>SnowflakeUsers_CL</code></a><br><a href="../tables/snowflake-cl.html"><code>Snowflake_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/snowflake.html">Snowflake</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/snowflakeload-cl.html"><code>SnowflakeLoad_CL</code></a> <em>(read)</em><br><a href="../tables/snowflakelogin-cl.html"><code>SnowflakeLogin_CL</code></a> <em>(read)</em><br><a href="../tables/snowflakematerializedview-cl.html"><code>SnowflakeMaterializedView_CL</code></a> <em>(read)</em><br><a href="../tables/snowflakequery-cl.html"><code>SnowflakeQuery_CL</code></a> <em>(read)</em><br><a href="../tables/snowflakerolegrant-cl.html"><code>SnowflakeRoleGrant_CL</code></a> <em>(read)</em><br><a href="../tables/snowflakeroles-cl.html"><code>SnowflakeRoles_CL</code></a> <em>(read)</em><br><a href="../tables/snowflaketablestoragemetrics-cl.html"><code>SnowflakeTableStorageMetrics_CL</code></a> <em>(read)</em><br><a href="../tables/snowflaketables-cl.html"><code>SnowflakeTables_CL</code></a> <em>(read)</em><br><a href="../tables/snowflakeusergrant-cl.html"><code>SnowflakeUserGrant_CL</code></a> <em>(read)</em><br><a href="../tables/snowflakeusers-cl.html"><code>SnowflakeUsers_CL</code></a> <em>(read)</em><br><a href="../tables/snowflake-cl.html"><code>Snowflake_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.9</td>
+<td>03-02-2026</td>
+<td>Updated the <strong>analytic rule</strong> query.</td>
+</tr>
+<tr>
+<td>3.0.8</td>
+<td>22-12-2025</td>
+<td>Added a 120‑minute ingestion delay for the <strong>Snowflake connector</strong> and updated the parser KQL to surface accurate start/end timestamps.</td>
+</tr>
+<tr>
+<td>3.0.7</td>
+<td>10-12-2025</td>
+<td>Resolved bug in <strong>CCF Data Connector</strong> related to Output stream for Snowflake tables.</td>
+</tr>
+<tr>
+<td>3.0.6</td>
+<td>20-11-2025</td>
+<td>Resolved bug in <strong>CCF Data Connector</strong> related to SQL queries</td>
+</tr>
+<tr>
+<td>3.0.5</td>
+<td>13-10-2025</td>
+<td>Updated Parser to support function app table</td>
+</tr>
+<tr>
+<td>3.0.4</td>
+<td>23-09-2025</td>
+<td>Updated parser to extend the normalized fields, and updated Analytic Rules, Workbooks to use CCF connector fields.</td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>09-09-2025</td>
+<td>Updated DCR and Poller to prevent redundant data ingestion, improve pagination and handle connection interruptions for <strong>Snowflake CCF connector</strong></td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>20-08-2025</td>
+<td>Moving Snowflake <strong>CCF Data Connector</strong> to GA.</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>26-05-2025</td>
+<td>Migrated the <strong>Function app</strong> connector to <strong>CCP</strong> Data Connector and Updated <strong>Parser</strong></td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>31-08-2023</td>
+<td>Manual deployment instructions updated for <strong>Data Connector</strong> &amp; Convert <strong>Parser</strong> from text to Yaml</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

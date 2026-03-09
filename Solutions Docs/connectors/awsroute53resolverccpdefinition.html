@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon Web Services S3 DNS Route53 via Codeless Connector Framework &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Amazon Web Services S3 DNS Route53 (via Codeless Connector Framework)</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Aws.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>AWSRoute53ResolverCCPDefinition</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/amazon-web-services-route-53.html">Amazon Web Services Route 53</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/ccf.html">CCF</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services%20Route%2053/Data%20Connectors/AWSRoute53Resolver_CCP/AWSRoute53Resolver_DataConnectorDefinition.json">AWSRoute53Resolver_DataConnectorDefinition.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Configuration</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services%20Route%2053/Data%20Connectors/AWSRoute53Resolver_CCP/AWSRoute53Resolver_PollingConfig.json">AWSRoute53Resolver_PollingConfig.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Capabilities</strong></td>
+<td style="text-align: left;"><code>AmazonWebServicesS3</code></td>
+</tr>
+</tbody>
+</table>
+<p>This connector enables ingestion of AWS Route 53 DNS logs into Microsoft Sentinel for enhanced visibility and threat detection. It supports DNS Resolver query logs ingested directly from AWS S3 buckets, while Public DNS query logs and Route 53 audit logs can be ingested using Microsoft Sentinel's AWS CloudWatch and CloudTrail connectors. Comprehensive instructions are provided to guide you through the setup of each log type. Leverage this connector to monitor DNS activity, detect potential threats, and improve your security posture in cloud environments.</p>
+<h2>Additional Information</h2>
+<p>📖 <strong>Setup Guide:</strong> <a href="https://learn.microsoft.com/azure/sentinel/connect-aws-configure-environment">Connect Microsoft Sentinel to AWS</a> - Configure your AWS environment for Microsoft Sentinel integration</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/awsroute53resolver.html"><code>AWSRoute53Resolver</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): Read and Write permissions are required.
+- <strong>Keys</strong> (Workspace): Read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a></p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. AWS Route53</strong></p>
+<p>This connector enables the ingestion of AWS Route 53 DNS logs into Microsoft Sentinel, providing enhanced visibility into DNS activity and strengthening threat detection capabilities. It supports direct ingestion of DNS Resolver query logs from AWS S3 buckets, while Public DNS query logs and Route 53 audit logs can be ingested via Microsoft Sentinel’s AWS CloudWatch and CloudTrail connectors. Detailed setup instructions are provided for each log type. Use this connector to monitor DNS traffic, identify potential threats, and enhance your cloud security posture.</p>
+<p>You can ingest the following type of logs from AWS Route 53 to Microsoft Sentinel:
+1. Route 53 Resolver query logs
+2. Route 53 Public Hosted zones query logs (via Microsoft Sentinel CloudWatch connector)
+3. Route 53 audit logs (via Microsoft Sentinel CloudTrail connector)</p>
+<p><strong>Ingesting Route53 Resolver query logs in Microsoft Sentinel</strong></p>
+<p>### List of Resources Required:</p>
+<ul>
+<li>Open ID Connect (OIDC) web identity provider</li>
+<li>IAM Role</li>
+<li>Amazon S3 Bucket</li>
+<li>Amazon SQS</li>
+<li>Route 53 Resolver query logging configuration</li>
+<li>VPC to associate with Route53 Resolver query log config
+  #### 1. AWS CloudFormation Deployment 
+ To configure access on AWS, two templates has been generated to set up the AWS environment to send logs from an S3 bucket to your Log Analytics Workspace.
+ #### For each template, create Stack in AWS: 
+ 1. Go to <a href="https://aka.ms/awsCloudFormationLink#/stacks/create">AWS CloudFormation Stacks</a>. 
+ 2. Choose the ‘<strong>Specify template</strong>’ option, then ‘<strong>Upload a template file</strong>’ by clicking on ‘<strong>Choose file</strong>’ and selecting the appropriate CloudFormation template file provided below. click ‘<strong>Choose file</strong>’ and select the downloaded template. 
+ 3. Click '<strong>Next</strong>' and '<strong>Create stack</strong>'.</li>
+<li><strong>Template 1: OpenID connect authentication deployment</strong>: <code>Oidc</code>
+    &gt; <em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></li>
+<li><strong>Template 2: AWS Route53 resources deployment</strong>: <code>AWSRoute53Resolver</code>
+    &gt; <em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
+  ### 2. Connect new collectors 
+ To enable Amazon Web Services S3 DNS Route53 for Microsoft Sentinel, click the Add new collector button, fill the required information in the context pane and click on Connect.
+  <strong>Connector Management Interface</strong></li>
+</ul>
+<p>This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.</p>
+<p>📊 <strong>View Existing Collectors</strong>: A management table displays all currently configured data collectors with the following information:
+  - <strong>Role ARN</strong>
+  - <strong>Queue URL</strong></p>
+<p>➕ <strong>Add New Collector</strong>: Click the "Add new collector" button to configure a new data collector (see configuration form below).</p>
+<p>🔧 <strong>Manage Collectors</strong>: Use the actions menu to delete or modify existing collectors.</p>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration interface is only available when viewing the connector in the Microsoft Sentinel portal. You cannot configure data collectors through this static documentation.</p>
+</blockquote>
+<p><strong>Add new controller</strong></p>
+<p><em>AWS Security Hub connector</em></p>
+<p>When you click the "Add new collector" button in the portal, a configuration form will open. You'll need to provide:</p>
+<p><em>Account details</em></p>
+<ul>
+<li><strong>Role ARN</strong> (required)</li>
+<li><strong>Queue URL</strong> (required)</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration form is only available in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>Ingesting Route 53 Public Hosted zones query logs (via Microsoft Sentinel CloudWatch connector)</strong></p>
+<p>Public Hosted zone query logs are exported to CloudWatch service in AWS. We can use 'Amazon Web Services S3' connector to ingest CloudWatch logs from AWS to Microsoft Sentinel.
+<strong>Step 1: Configure logging for Public DNS queries</strong></p>
+<pre><code>1. Sign in to the AWS Management Console and open the Route 53 console at [AWS Route 53](https://console.aws.amazon.com/route53/).
+</code></pre>
+<ol start="2">
+<li>Navigate to Route 53 &gt; Hosted zones.</li>
+<li>Choose the Public hosted zone that you want to configure query logging for.</li>
+<li>In the Hosted zone details pane, click "Configure query logging".</li>
+<li>Choose an existing log group or create a new log group.</li>
+<li>
+<p>Choose Create.</p>
+<p><strong>Step 2: Configure Amazon Web Services S3 data connector for AWS CloudWatch</strong></p>
+<p>AWS CloudWatch logs can be exported to an S3 bucket using lambda function. To ingest Public DNS queries from <code>AWS CloudWatch</code> to <code>S3</code> bucket and then to Microsoft Sentinel, follow the instructions provided in the <a href="https://learn.microsoft.com/en-us/azure/sentinel/connect-aws?tabs=s3">Amazon Web Services S3 connector</a>.</p>
+</li>
+</ol>
+<p><strong>Ingesting Route 53 audit logs (via Microsoft Sentinel CloudTrail connector)</strong></p>
+<p>Route 53 audit logs i.e. the logs related to actions taken by user, role or AWS service in Route 53 can be exported to an S3 bucket via AWS CloudTrail service. We can use 'Amazon Web Services S3' connector to ingest CloudTrail logs from AWS to Microsoft Sentinel.
+<strong>Step 1: Configure logging for AWS Route 53 Audit logs</strong></p>
+<pre><code>1. Sign in to the AWS Management Console and open the CloudTrail console at [AWS CloudTrail](https://console.aws.amazon.com/cloudtrail)
+</code></pre>
+<ol start="2">
+<li>If you do not have an existing trail, click on 'Create trail'</li>
+<li>Enter a name for your trail in the Trail name field.</li>
+<li>Select Create new S3 bucket (you may also choose to use an existing S3 bucket).</li>
+<li>Leave the other settings as default, and click Next.</li>
+<li>Select Event type, make sure Management events is selected.</li>
+<li>Select API activity, 'Read' and 'Write'</li>
+<li>Click Next.</li>
+<li>
+<p>Review the settings and click 'Create trail'.</p>
+<p><strong>Step 2: Configure Amazon Web Services S3 data connector for AWS CloudTrail</strong></p>
+<p>To ingest audit and management logs from  <code>AWS CloudTrail</code> to Microsoft Sentinel, follow the instructions provided in the <a href="https://learn.microsoft.com/en-us/azure/sentinel/connect-aws?tabs=s3">Amazon Web Services S3 connector</a></p>
+</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

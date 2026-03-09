@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Endpoint enrichment - Crowdstrike &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Endpoint enrichment - Crowdstrike</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs below actions:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Playbooks/CrowdStrike_Enrichment_GetDeviceInformation/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Playbooks/CrowdStrike_Enrichment_GetDeviceInformation/readme.md">CrowdStrike_Enrichment_GetDeviceInformation/readme.md</a></em></p>
+</blockquote>
+<h1>Crowdstrike_Enrichment_GetDeviceInformation</h1>
+<p>## Summary
+ When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs below actions:
+ 1. Fetches the device information from Crowdstrike
+ 2. Enrich the incident with device information from Crowdstrike</p>
+<p><img alt="comment" src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Playbooks/CrowdStrike_Enrichment_GetDeviceInformation/images/comment.png" /></p>
+<p><img alt="Crowdstrike_Enrichment_GetDeviceInformation" src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Playbooks/CrowdStrike_Enrichment_GetDeviceInformation/images/designerOverviewCollapsedLight.png" /></p>
+<h3>Prerequisites</h3>
+<ol>
+<li>Azure Key vault is required for storing the Crowdstrike ClientID and Secrets, create key vault if not exists <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fquickstarts%2Fmicrosoft.keyvault%2Fkey-vault-secret-create%2Fazuredeploy.json">learn how</a></li>
+<li>Add Crowdstrike Client ID and Client Secret in Key vault secrets and capture the keys which are required during the template deployment</li>
+<li>CrowdStrike_Base playbook needs to be deployed prior to the deployment of this playbook under the same subscription and under the same resource group.</li>
+<li>CrowdStrike_Base playbook needs to be added in the access policy of the Key Vault <a href="https://docs.microsoft.com/azure/key-vault/general/assign-access-policy-portal">learn how</a></li>
+</ol>
+<h3>Deployment instructions</h3>
+<ol>
+<li>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
+<li>Fill in the required parameters:<ul>
+<li>Playbook_Name: Enter the playbook name here (Ex:Crowdstrike_ContainHost)</li>
+<li>CrowdStrike_Base_Playbook_Name : Enter the base playbook name here (Ex:CrowdStrike_Base)</li>
+</ul>
+</li>
+</ol>
+<h3>Post-Deployment instructions</h3>
+<h4>a. Authorize connections</h4>
+<p>Once deployment is complete, you will need to authorize connections.
+1.  Click the Microsoft Sentinel connection resource
+2.  Click edit API connection
+3.  Click Authorize
+4.  Sign in
+5.  Click Save</p>
+<h4>b. Configurations in Sentinel</h4>
+<ol>
+<li>In Microsoft sentinel analytical rules should be configured to trigger an incident with risky device </li>
+<li>Configure the automation rules to trigger this playbook</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCrowdStrike%2520Falcon%2520Endpoint%2520Protection%2FPlaybooks%2FCrowdStrike_Enrichment_GetDeviceInformation%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCrowdStrike%2520Falcon%2520Endpoint%2520Protection%2FPlaybooks%2FCrowdStrike_Enrichment_GetDeviceInformation%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<h2>Playbook steps explained</h2>
+<h3>When Microsoft Sentinel incident creation rule is triggered</h3>
+<p>Microsoft Sentinel incident is created. The playbook receives the incident as the input.</p>
+<h3>Entities - Get Hosts</h3>
+<p>Get the list of risky devices as entities from the Incident</p>
+<h3>Initialize_variable_comment</h3>
+<p>Initialize a string variable to store comments to update in the incident</p>
+<h3>Initialize variable timestamp</h3>
+<p>Initialize timestamp variable to hold the timestamp for the past 3 days</p>
+<h3>CrowdStrike Base</h3>
+<p>Call the base logic App to get access token and Falcon Host URL</p>
+<h3>HTTP-Get device id</h3>
+<p>This gets the device id from crowdstrike by filtering on hostname</p>
+<h3>Parse JSON Get device id response</h3>
+<p>This prepares Json message for the device id response</p>
+<p>### Condition to check if device is present in crowdstrike</p>
+<ol>
+<li>If device is present, get the device information from crowdstrike API and prepares HTML table with required information</li>
+<li>Set the timestamp for past 3 days and search for detections on the host and get the detection information</li>
+<li>check if detection information is present create HTML table for detection information</li>
+</ol>
+<p>### Compose image to add in the incident
+This action will compose the Crowdstrike image to add to the incident comments</p>
+<h3>Add a comment to the incident with the information</h3>
+<p>This action will enrich the incident with the constructed HTML table with device information</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/crowdstrike-falcon-endpoint-protection.html">Back to CrowdStrike Falcon Endpoint Protection</a></p>
+</div>
+</body>
+</html>

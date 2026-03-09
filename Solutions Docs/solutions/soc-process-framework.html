@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOC-Process-Framework &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>SOC-Process-Framework</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="SOC-Process-Framework Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Rin Ure - rin.ure@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-04-08</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC-Process-Framework">SOC-Process-Framework</a></td>
+</tr>
+</tbody>
+</table>
+<p>The Get-SOCActions Playbook with SocRA Watchlist gives SOCs the ability to onboard SOC Actions for their Analysts to follow that snap to the SOC Process Framework Workbook.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p><strong>This solution does not include data connectors.</strong></p>
+<p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
+<h2>Tables Used</h2>
+<p>This solution queries <strong>1 table(s)</strong> from its content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/usage.html"><code>Usage</code></a></td>
+<td>Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h3>Internal Tables</h3>
+<p>The following <strong>1 table(s)</strong> are used internally by this solution's content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
+<td>Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>20 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Watchlists</td>
+<td style="text-align: left;">12</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">7</td>
+</tr>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-process-framework-building-a-soclargestaff-48143514.html">Building_a_SOCLargeStaff</a></td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-process-framework-building-a-socmediumstaff-8a8cc226.html">Building_a_SOCMediumStaff</a></td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-process-framework-building-a-socparttimestaff-8ef82164.html">Building_a_SOCPartTimeStaff</a></td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-process-framework-building-a-socsmallstaff-4a5be90f.html">Building_a_SOCSmallStaff</a></td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-process-framework-socirplanning-18961eff.html">SOCIRPlanning</a></td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-process-framework-socprocessframework-5c770df0.html">SOCProcessFramework</a></td>
+<td style="text-align: left;"><a href="../tables/usage.html"><code>Usage</code></a><br><em>Internal use:</em><br><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-process-framework-updatesocmaturityscore-d96c410d.html">UpdateSOCMaturityScore</a></td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-process-framework-get-soc-actions-287c5e40.html">Get-SOC-Actions</a></td>
+<td style="text-align: left;">This playbook uses the SOC Recommended Actions Watchlist to automatically enrich incidents generated...</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h3>Watchlists</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-process-framework-socdepartmental-0a699ff5.html">SOCDepartmental</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-process-framework-socemaildistribution-892eac6a.html">SOCEmailDistribution</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-process-framework-socexternalcontacts-4a1a005e.html">SOCExternalContacts</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-process-framework-socirp-aea3fd1d.html">SOCIRP</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-process-framework-socinternalcontacts-72a64dc4.html">SOCInternalContacts</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-process-framework-socma-16c2d66a.html">SOCMA</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-process-framework-socpager-7c674671.html">SOCPager</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-process-framework-socusecase-0978b37d.html">SOCUseCase</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-process-framework-soccontacts-3893f7fa.html">SOCcontacts</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-process-framework-socgeneralit-cfa7937a.html">SOCgeneralIT</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-process-framework-socworkstations-b5789743.html">SOCworkstations</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-process-framework-socra-406f9217.html">SocRA</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC-Process-Framework/README.md">SOC-Process-Framework/README.md</a></em></p>
+</blockquote>
+<h2>Author: Rin Ure</h2>
+<p><img alt="SOC Process Framework" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC-Process-Framework/SOCProcessFrameworkSolutionLanding.png" /><br></p>
+<h2>Table of Contents</h2>
+<ol>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#workbooks">Workbooks</a></li>
+<li><a href="#watchlists">Watchlists</a></li>
+<li><a href="#playbooks">Playbooks</a></li>
+<li><a href="#postdeployment">Post Deployment Steps</a></li>
+</ol>
+<p><a name="overview"></p>
+<h2>Overview</h2>
+<p>This Solution contains all resources for the SOC Process Framework Microsoft Sentinel Solution.
+The SOC Process Framework Solution is built in order to easily integrate with Microsoft Sentinel and build a standard SOC Process and Procedure Framework within your Organization.</p>
+<p>By deploying this solution, you'll be able to monitor progress within your SOC Operations and update the SOC CMMI Assessment Score.
+This solution consists of the following resources:
+- Integrated workbooks interconnected into a single workbook for single pane of glass operation.
+- One Playbook for pushing SOC Actions to your Incidents.
+- Multiple Watchlists helping you maintain and organize your SOC efforts, including IR Planning, SOC CMMI Assessment Score, and many more.</p>
+<p><a name="workbooks"></p>
+<h2>Workbooks</h2>
+<p>The workbooks contained in this solution have visualizations about the SOC Progress, Procedures, and Activity and provides an overview of the overall SOC Maturity.
+These workbooks and their dependances are deployed for you through this solution.</p>
+<p><a name="watchlists"></p>
+<h2>Watchlists</h2>
+<p>The watchlists contained within this solution have information that pertain to Incident Response Planning, the SOC Maturity (CMMI) Scoring, Recommended SOC Actions, and more...
+All of these watchlists give the customer ease of access to updating pertanant information regarding their SOC Operations and more.</p>
+<p><a name="playbooks"></p>
+<h2>Playbooks</h2>
+<p>Currently the only Playbook in this solution is the Get-SOCActions Playbook for delivering custom Analyst Actions to take per Incident. This allows Organizations the ability to create/add their own scripted actions they want an Analyst to take. After deploying this Solution, please see the Post-Deployment Instructions before running the Playbook.</p>
+<p><a name="postdeployment"></p>
+<h3>Post-Deployment Instructions</h3>
+<p><strong>1. After deploying the playbook, you must authorize the connections leveraged and assign permissions</strong></p>
+<ol>
+<li>Visit the playbook resource.</li>
+<li>Under "Development Tools" (located on the left), click "API Connections".</li>
+<li>Ensure each connection has been authorized.</li>
+</ol>
+<p><strong>2. Assign Microsoft Sentinel Responder Role to Playbook</strong></p>
+<p>This playbook uses a managed identity, which must have the Microsoft Sentinel Responder role assigned in the Sentinel instances to enable adding actions.</p>
+<ol>
+<li>Select the Playbook resource.</li>
+<li>In the left menu, click Identity.</li>
+<li>Under Permissions, click Azure role assignments.</li>
+<li>Click Add role assignment (Preview).</li>
+</ol>
+<p><em>[Content truncated...]</em></p>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.2</td>
+<td>10-07-2025</td>
+<td>Updates to the <strong>playbook</strong> description, prerequisites, and post-deployment instructions, as well as adjustments to variable naming conventions for consistency .</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>24-07-2023</td>
+<td>Update Table markdown from " : " to " - " in SOCProcessFramework <strong>Workbook</strong> .</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>12-07-2023</td>
+<td>Correction of <strong>Logo</strong> in the solution.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

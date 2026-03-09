@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microsoft 365 &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Microsoft 365</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/office365_logo.svg" alt="Microsoft 365 Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com/">https://support.microsoft.com/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.5</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-05-23</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20365">Microsoft 365</a></td>
+</tr>
+</tbody>
+</table>
+<p>The Microsoft 365 solution for Microsoft Sentinel enables you to ingest operational logs from Microsoft 365 (formerly, Office 365) to gain insights into user and admin activity across your collaboration platforms such as Teams, SharePoint and Exchange.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>a. <a href="https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api">Azure Monitor HTTP Data Collector API</a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/office365.html">Microsoft 365 (formerly, Office 365)</a></li>
+</ul>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>3 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+<td><a href="../connectors/office365.html">Microsoft 365 (formerly, Office 365)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/operation.html"><code>Operation</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+<td>-</td>
+<td>Hunting</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>40 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">21</td>
+</tr>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">16</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">3</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-accessed-files-shared-by-temporary-external-user-bff058b2-500e-4ae5-bb49-a5b1423cbd5b-0f3d0272.html">Accessed files shared by temporary external user</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-exchange-auditlog-disabled-194dd92e-d6e7-4249-85a5-273350a7f5ce-9595c198.html">Exchange AuditLog Disabled</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-exchange-workflow-mailitemsaccessed-operation-anomaly-b4ceb583-4c44-4555-8ecf-39f572e827ba-0035b923.html">Exchange workflow MailItemsAccessed operation anomaly</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-external-user-added-and-removed-in-short-timeframe-bff093b2-500e-4ae5-bb49-a5b1423cbd5b-5d676e58.html">External user added and removed in short timeframe</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-mail-redirect-via-exo-transport-rule-500415fb-bba7-4227-a08a-9857fb61b6a7-63b69125.html">Mail redirect via ExO transport rule</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Collection, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-malicious-inbox-rule-7b907bf7-77d4-41d0-a208-5643ff75bf9a-809a0fef.html">Malicious Inbox Rule</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Persistence, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-multiple-teams-deleted-by-a-single-user-173f8699-6af5-484a-8b06-8c47ba89b380-fee08c77.html">Multiple Teams deleted by a single user</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-multiple-users-email-forwarded-to-same-destination-871ba14c-88ef-48aa-ad38-810f26760ca3-2182889a.html">Multiple users email forwarded to same destination</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Collection, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-new-executable-via-office-fileuploaded-operation-d722831e-88f5-4e25-b106-4ef6e29f8c13-14098899.html">New executable via Office FileUploaded Operation</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CommandAndControl, LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-office-policy-tampering-fbd72eb8-087e-466b-bd54-1ca6ea08c6d3-dcc56d58.html">Office Policy Tampering</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Persistence, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-office365-sharepoint-file-transfer-folders-above-threshold-8a547285-801c-4290-aa2e-5e7e20ca157d-1211cb69.html">Office365 Sharepoint File transfer Folders above threshold</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-office365-sharepoint-file-transfer-above-threshold-8b4f03e7-3460-4401-824d-e65a8dd464f0-55393788.html">Office365 Sharepoint File transfer above threshold</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-rare-and-potentially-high-risk-office-operations-957cb240-f45d-4491-9ba5-93430a3c08be-0f639b30.html">Rare and potentially high-risk Office operations</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Persistence, Collection</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-sharepointfileoperation-via-devices-with-previously-unseen-user-agents-5dd76a87-9f87-4576-bab3-268b0e2b338b-ccd6f2dd.html">SharePointFileOperation via devices with previously unseen user agents</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-sharepointfileoperation-via-previously-unseen-ips-4b11568b-3f5f-4ba1-80c8-7f1dc8390eb7-e94212cd.html">SharePointFileOperation via previously unseen IPs</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4>Retired/Deprecated Rules</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Status</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-possible-forest-blizzard-attempted-credential-harvesting-sept-2020-04384937-e927-4595-8f3c-89ff58ed231f-c339f23c.html">Possible Forest Blizzard attempted credential harvesting - Sept 2020</a> ⚠️</td>
+<td style="text-align: left;">Retired</td>
+<td style="text-align: left;">This analytic rule is retired because IoCs are outdated. It is recommended to use Microsoft Entra ID Solution's Analytic rules instead to detect crede...</td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-anomalous-access-to-other-users'-mailboxes-271e8881-3044-4332-a5f4-42264c2e0315-9868f994.html">Anomalous access to other users' mailboxes</a></td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-bots-added-to-multiple-teams-9eb64924-ec8d-44d0-b1f2-10665150fb74-b469374c.html">Bots added to multiple teams</a></td>
+<td style="text-align: left;">Persistence, Collection</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-exes-with-double-file-extension-and-access-summary-d12580c2-1474-4125-a8a3-553f50d91215-647a7b68.html">Exes with double file extension and access summary</a></td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-external-user-added-and-removed-in-a-short-timeframe-119d9e1c-afcc-4d23-b239-cdb4e7bf851c-733c7514.html">External user added and removed in a short timeframe</a></td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-external-user-from-a-new-organisation-added-to-teams-6fce5baf-bfc2-4c56-a6b7-9c4733fc5a45-c611f8a9.html">External user from a new organisation added to Teams</a></td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-files-uploaded-to-teams-and-access-summary-90e198a9-efb6-4719-ad89-81b8e93633a7-969f9eb8.html">Files uploaded to teams and access summary</a></td>
+<td style="text-align: left;">InitialAccess, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-mail-redirect-via-exo-transport-rule-9891684a-1e3a-4546-9403-3439513cbc70-09a65cff.html">Mail redirect via ExO transport rule</a></td>
+<td style="text-align: left;">Collection, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-multiple-teams-deleted-by-a-single-user-64990414-b015-4edf-bef0-343b741e68c5-4d5737ab.html">Multiple Teams deleted by a single user</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-multiple-users-email-forwarded-to-same-destination-a1551ae4-f61c-4bca-9c57-4d0d681db2e9-2e204a61.html">Multiple users email forwarded to same destination</a></td>
+<td style="text-align: left;">Collection, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-new-admin-account-activity-seen-which-was-not-seen-historically-723c5f46-133f-4f1e-ada6-5c138f811d75-81219d98.html">New Admin account activity seen which was not seen historically</a></td>
+<td style="text-align: left;">PrivilegeEscalation, Collection</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-new-windows-reserved-filenames-staged-on-office-file-services-641ecd2d-27c9-4f05-8433-8205096b09fc-56b1939d.html">New Windows Reserved Filenames staged on Office file services</a></td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-non-owner-mailbox-login-activity-0a8f410d-38b5-4d75-90da-32b472b97230-5ba0724d.html">Non-owner mailbox login activity</a></td>
+<td style="text-align: left;">Collection, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-office-mail-forwarding-hunting-version-d49fc965-aef3-49f6-89ad-10cc4697eb5b-08bdc191.html">Office Mail Forwarding - Hunting Version</a></td>
+<td style="text-align: left;">Collection, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-powershell-or-non-browser-mailbox-login-activity-49a4f65a-fe18-408e-afec-042fde93d3ce-d9f865de.html">PowerShell or non-browser mailbox login activity</a></td>
+<td style="text-align: left;">Execution, Persistence, Collection</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-previously-unseen-bot-or-application-added-to-teams-bf76e508-9282-4cf1-9cc1-5c20c3dea2ee-9699a7e1.html">Previously unseen bot or application added to Teams</a></td>
+<td style="text-align: left;">Persistence, Collection</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-sharepointfileoperation-via-clientip-with-previously-unseen-user-agents-e8ae1375-4640-430c-ae8e-2514d09c71eb-01381674.html">SharePointFileOperation via clientIP with previously unseen user agents</a></td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-sharepointfileoperation-via-devices-with-previously-unseen-user-agents-f2367171-1514-4c67-88ef-27434b6a1093-8d3d8113.html">SharePointFileOperation via devices with previously unseen user agents</a></td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-sharepointfileoperation-via-previously-unseen-ips-e3d24cfd-b2a1-4ba7-8f80-0360892f9d57-bf177f44.html">SharePointFileOperation via previously unseen IPs</a></td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-user-added-to-teams-and-immediately-uploads-file-3d6d0c04-7337-40cf-ace6-c471d442356d-ae882f16.html">User added to Teams and immediately uploads file</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-user-made-owner-of-multiple-teams-558f15dd-3171-4b11-bf24-31c0610a20e0-775b29b2.html">User made Owner of multiple teams</a></td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-windows-reserved-filenames-staged-on-office-file-services-61c28cd7-3139-4731-8ea7-2cbbeabb4684-b20eb95c.html">Windows Reserved Filenames staged on Office file services</a></td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-exchangeonline-c35f597f.html">ExchangeOnline</a></td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a><br><a href="../tables/operation.html"><code>Operation</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-office365-0c09583c.html">Office365</a></td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a><br><a href="../tables/operation.html"><code>Operation</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-365-sharepointandonedrive-f8028d14.html">SharePointAndOneDrive</a></td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a><br><a href="../tables/operation.html"><code>Operation</code></a></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.</p>
+</blockquote>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.5</td>
+<td>04-02-2025</td>
+<td>Updated <strong>Analytic Rule</strong> MailItemsAccessedTimeSeries.yaml</td>
+</tr>
+<tr>
+<td>3.0.4</td>
+<td>27-08-2024</td>
+<td>Updated <strong>Analytic Rule</strong>  for Same names</td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>12-06-2024</td>
+<td>Updated <strong>Analytic Rule</strong>  for Bug Fixes ExternalUserAddedRemovedInTeams.yaml</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>09-05-2024</td>
+<td>Updated <strong>Analytic Rule</strong> to get expected result and Entity Mapping exchange_auditlogdisabled.yaml and fixed typo description in <strong>Analytic Rules</strong> ExternalUserAddedRemovedInTeams.yaml</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>04-01-2024</td>
+<td>Updated <strong>Analytic Rules</strong>, <strong>Hunting Queries</strong> and <strong>Workbook</strong> for Bug Fixes</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>08-08-2023</td>
+<td>Renamed <strong>Data Connector</strong> in the solution to Microsoft 365 (formerly, Office 365) so that the naming aligns in Content Hub and Data Connector gallery.<br/> Updated <strong>Hunting Queries</strong> to have descriptions that meet the 255 characters limit.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

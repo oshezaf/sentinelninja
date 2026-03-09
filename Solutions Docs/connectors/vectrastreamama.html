@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recommended Vectra AI Stream via AMA &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>[Recommended] Vectra AI Stream via AMA</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AIVectraDetect.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>VectraStreamAma</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Vectra AI</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/ama.html">AMA</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20AI%20Stream/Data%20Connectors/template_VectraStreamAma.json">template_VectraStreamAma.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+</tbody>
+</table>
+<p>The Vectra AI Stream connector allows to send Network Metadata collected by Vectra Sensors accross the Network and Cloud to Microsoft Sentinel</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/vectra-beacon-cl.html"><code>vectra_beacon_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/vectra-dcerpc-cl.html"><code>vectra_dcerpc_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/vectra-dhcp-cl.html"><code>vectra_dhcp_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/vectra-dns-cl.html"><code>vectra_dns_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/vectra-http-cl.html"><code>vectra_http_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/vectra-isession-cl.html"><code>vectra_isession_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/vectra-kerberos-cl.html"><code>vectra_kerberos_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/vectra-ldap-cl.html"><code>vectra_ldap_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/vectra-ntlm-cl.html"><code>vectra_ntlm_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/vectra-radius-cl.html"><code>vectra_radius_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/vectra-rdp-cl.html"><code>vectra_rdp_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/vectra-smbfiles-cl.html"><code>vectra_smbfiles_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/vectra-smbmapping-cl.html"><code>vectra_smbmapping_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/vectra-smtp-cl.html"><code>vectra_smtp_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/vectra-ssh-cl.html"><code>vectra_ssh_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/vectra-ssl-cl.html"><code>vectra_ssl_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/vectra-x509-cl.html"><code>vectra_x509_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Vectra AI Stream configuration</strong>: must be configured to export Stream metadata in JSON</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+<p><strong>NOTE:</strong> This data connector depends on parsers based on a Kusto Function to work as expected which are deployed as part of the Microsoft Sentinel Solution.</p>
+<p><strong>IMPORTANT:</strong> Vectra AI Stream connector is only available for <strong>Linux</strong> agents with <strong>syslog-ng</strong>. Make sure that syslog-ng is installed!</p>
+</blockquote>
+<p>In the first part, we are going to create the custom tables requires for this solution (using an ARM template). Then we are going to configure the Data Connector.
+<strong>Please proceed with these steps:</strong></p>
+<p><strong>Step 1. Create custom  tables in Log Analytic Workspace (ARM Template)</strong></p>
+<ol>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below. </p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fvectranetworks%2FMicrosoft_Sentinel%2Fmain%2FStream%2FAMA%2FARM_Templates%2Fazuredeploy_CustomTables_connector.json"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+2. Provide the required details such as the resource group and Microsoft Log Analytics Workspace (<strong>the workspace must exist!</strong>)
+4. Click <strong>Review + Create</strong> to deploy.</p>
+<p><em>Note: Once deployed, you must be able to see the custom tables in your Log Analytic Workspace (Settings ---&gt; Tables).</em></p>
+</li>
+</ol>
+<p><strong>Step 2. Install the Syslog via AMA Data connector</strong></p>
+<p><em>Note: This is only required if it has not been install yet in Microsoft Sentinel.</em>
+1. Microsoft Sentinel workspace ---&gt; Content Management ---&gt; Content Hub.</p>
+<ol start="2">
+<li>
+<p>Search for 'Syslog' (Provider is Microsoft) and select it.</p>
+</li>
+<li>
+<p>Check 'Install' buton on the bottom of the right panel.</p>
+</li>
+</ol>
+<p><strong>Step 3. Configure the Syslog via AMA data connector</strong></p>
+<p><em>Note: Two different Data Collection Rules (DCR) are going to be created during this step</em>
+1. Navigate to Microsoft Sentinel workspace ---&gt; configuration ---&gt; Data connector.</p>
+<ol start="2">
+<li>
+<p>Search for 'Syslog via AMA' data connector and open it.</p>
+</li>
+<li>
+<p>Check If there is no existing DCR configured to collect required facility of logs: LOG_USER/LOG_NOTICE and LOG_LOCAL0/LOG_NOTICE.</p>
+</li>
+<li>
+<p>Create a first DCR (Data Collection Rule). Specify a name. Then, in the Resources tab, select the instance where AMA is going to run. In the Collect tab, select LOG_USER/LOG_NOTICE.</p>
+</li>
+<li>
+<p>Create a second DCR. Specify a different name. Then, in the Resources tab, choose the same host. In the Collect tab, select LOG_LOCAL0/LOG_NOTICE</p>
+<p>Note:- It is recommended to install minimum 1.27 version of AMA agent <a href="https://learn.microsoft.com/azure/azure-monitor/agents/azure-monitor-agent-manage?tabs=azure-portal">Learn more</a> and ensure there is no duplicate DCR as it can cause log duplicacy.</p>
+</li>
+</ol>
+<p>In the next section, we are goning to modify the syslog-ng configuration that has been created where the AMA is deployed. Then, we are going to modify the DCR configuration to be able to sent the network metadata from Vectra Stream to different custom tables.
+<strong>Please proceed with these steps:</strong></p>
+<p><strong>Step 1. Modify the syslog-ng configuration</strong></p>
+<p><em>Note: A DCR cannot have more than 10 output flows. As we have 16 custom tables in this solution, we need to split the traffic to two DCR using syslog-ng.</em>
+1. Download the modified syslog-ng configuration file: <a href="https://raw.githubusercontent.com/vectranetworks/Microsoft_Sentinel/main/Stream/AMA/syslog-ng/azuremonitoragent-tcp.conf">azuremonitoragent-tcp.conf</a>.
+2. Log into the instance where syslog-ng/AMA is running.
+3. Browse to /etc/syslog-ng/conf.d/  and replace the content of <em>azuremonitoragent-tcp.conf</em> file with the one that you just downloaded.
+4. Save and restart syslog-ng (<em>systemctl restart syslog-ng</em>).</p>
+<p><strong>Step 2. Modify the Data Collection rules configuration</strong></p>
+<p><em>Note: The Data Collection Rules that have been created are located in Azure Monitor (<strong>Monitor ---&gt; Settings ---&gt; Data Collection Rules</strong>)</em>
+ 1. Locate the 2 DCR that you created in Microsoft Sentinel.
+ 2. Open the first DCR where Syslog facility is LOG_USER. Then go to Automation ---&gt; Export template ---&gt; Deploy --&gt; Edit template.
+ 3. Download the dataFlows configuration for LOG_USER DCR: <a href="https://raw.githubusercontent.com/vectranetworks/Microsoft_Sentinel/main/Stream/AMA/dcr/Stream_DataFlows_dcr1.json">Stream_DataFlows_dcr1.json</a> and find/replace the destination placeholder '<WORKSPACE_NAME>' with your workspace name.
+ 4. Locate the dataFlows section in the template (Azure Monitor) and replace it with the content of the configuration you downloaded.
+ 5. In the same DCR, locate the key: resources -&gt; properties -&gt; destinations -&gt; name and replace 'DataCollectionEvent' with the name of the Log Analytics Workspace (same as step 3).
+ 6. Save --&gt; Review + Create --&gt; Create.
+ 7. Open the second DCR than you created (Facilily is LOG_LOCAL0) and edit the template (Automation ---&gt; Export template ---&gt; Deploy --&gt; Edit template).
+ 8. Download the dataFlows configuration for LOG_LOCAL0 DCR: <a href="https://raw.githubusercontent.com/vectranetworks/Microsoft_Sentinel/main/Stream/AMA/dcr/Stream_DataFlows_dcr2.json">Stream_DataFlows_dcr2.json</a> and find/replace the destination placeholder '<WORKSPACE_NAME>' with your wokrspace name.
+ 9. Locate the dataFlows section in the template (Azure Monitor) and replace it with the content of the configuration you downloaded.
+ 10. In the same DCR, locate the key: resources -&gt; properties -&gt; destinations -&gt; name and replace 'DataCollectionEvent' with the name of the Log Analytics Workspace.
+ 11. Save --&gt; Review + Create --&gt; Create.</p>
+<p><strong>2. Configure Vectra AI Stream</strong></p>
+<p>Configure Vectra AI Brain to forward Stream metadata in JSON format to your Microsoft Sentinel workspace via AMA.</p>
+<p>From the Vectra UI, navigate to Settings &gt; Stream and Edit the destination configuration:</p>
+<ol>
+<li>Select Publisher: RAW JSON</li>
+<li>Set the server IP or hostname (which is the host whhere AMA is running)</li>
+<li>Set all the port to <strong>514</strong>.</li>
+<li>Save.</li>
+</ol>
+<p><strong>3. Run the following command to validate (or set up) that syslog-ng is listening on port 514</strong></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

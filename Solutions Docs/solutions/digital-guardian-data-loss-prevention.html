@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Guardian Data Loss Prevention &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Digital Guardian Data Loss Prevention</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Digital Guardian Data Loss Prevention Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2021-07-23</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital%20Guardian%20Data%20Loss%20Prevention">Digital Guardian Data Loss Prevention</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pre-requisites</strong></td>
+<td style="text-align: left;"><a href="syslog.html">Syslog</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://digitalguardian.com/platform-overview">Digital Guardian Data Loss Prevention (DLP)</a> data connector provides the capability to ingest Digital Guardian DLP logs into Microsoft Sentinel.</p>
+<p>This solution is dependent on the Syslog solution containing the Syslog via AMA connector to collect the logs. The Syslog solution will be installed as part of this solution installation. </p>
+<p><strong>NOTE</strong>: Microsoft recommends installation of Syslog via AMA Connector.Legacy connector uses the Log Analytics agent which were deprecated on <strong>Aug 31, 2024.</strong> Using MMA and AMA on same machine can cause log duplication and extra ingestion cost <a href="https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate">more details</a>.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#pre-requisites">Pre-requisites</a></li>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Pre-requisites</h2>
+<p>This solution depends on <strong>1 other solution(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="syslog.html">Syslog</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Data Connectors</h2>
+<p>This solution has <strong>1 discovered data connector(s)⚠️</strong> (not in Solution definition):</p>
+<ul>
+<li><a href="../connectors/digitalguardiandlp.html">[Deprecated] Digital Guardian Data Loss Prevention</a> ⚠️</li>
+</ul>
+<p>Connectors from dependency solutions:</p>
+<ul>
+<li><a href="../connectors/syslog.html">Syslog via Legacy Agent</a> <em>(dependency on <a href="syslog.html">Syslog</a>)</em></li>
+<li><a href="../connectors/syslogama.html">Syslog via AMA</a> <em>(dependency on <a href="syslog.html">Syslog</a>)</em></li>
+</ul>
+<p><em>⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.</em></p>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+<td><a href="../connectors/syslogama.html">Syslog via AMA</a> (dependency), <a href="../connectors/syslog.html">Syslog via Legacy Agent</a> (dependency), <a href="../connectors/digitalguardiandlp.html">[Deprecated] Digital Guardian Data Loss Prevention</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>22 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/digital-guardian-data-loss-prevention-digital-guardian-bulk-exfiltration-to-external-domain-5f75a873-b524-4ba5-a3b8-2c20db517148-16d27910.html">Digital Guardian - Bulk exfiltration to external domain</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/digital-guardian-data-loss-prevention-digital-guardian-exfiltration-to-external-domain-a19885c8-1e44-47e3-81df-d1d109f5c92d-fb713a44.html">Digital Guardian - Exfiltration to external domain</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/digital-guardian-data-loss-prevention-digital-guardian-exfiltration-to-online-fileshare-f7b6ddef-c1e9-46f0-8539-dbba7fb8a5b8-696301bd.html">Digital Guardian - Exfiltration to online fileshare</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/digital-guardian-data-loss-prevention-digital-guardian-exfiltration-to-private-email-edead9b5-243a-466b-ae78-2dae32ab1117-71788af9.html">Digital Guardian - Exfiltration to private email</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/digital-guardian-data-loss-prevention-digital-guardian-exfiltration-using-dns-protocol-39e25deb-49bb-4cdb-89c1-c466d596e2bd-9c7b7098.html">Digital Guardian - Exfiltration using DNS protocol</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/digital-guardian-data-loss-prevention-digital-guardian-incident-with-not-blocked-action-07bca129-e7d6-4421-b489-32abade0b6a7-499ad258.html">Digital Guardian - Incident with not blocked action</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/digital-guardian-data-loss-prevention-digital-guardian-multiple-incidents-from-user-e8901dac-2549-4948-b793-5197a5ed697a-e1d240c6.html">Digital Guardian - Multiple incidents from user</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/digital-guardian-data-loss-prevention-digital-guardian-possible-smtp-protocol-abuse-a374a933-f6c4-4200-8682-70402a9054dd-001679b1.html">Digital Guardian - Possible SMTP protocol abuse</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/digital-guardian-data-loss-prevention-digital-guardian-sensitive-data-transfer-over-insecure-channel-b52cda18-c1af-40e5-91f3-1fcbf9fa267e-0175d970.html">Digital Guardian - Sensitive data transfer over insecure channel</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/digital-guardian-data-loss-prevention-digital-guardian-unexpected-protocol-a14f2f95-bbd2-4036-ad59-e3aff132b296-acbf8917.html">Digital Guardian - Unexpected protocol</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/digital-guardian-data-loss-prevention-digital-guardian-files-sent-by-users-66dd7ab7-bbc0-48b7-a3b9-4e71e610df48-fff8bb41.html">Digital Guardian - Files sent by users</a></td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/digital-guardian-data-loss-prevention-digital-guardian-incident-domains-444c91d4-e4b8-4adc-9b05-61fe908441b8-770c2898.html">Digital Guardian - Incident domains</a></td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/digital-guardian-data-loss-prevention-digital-guardian-insecure-file-transfer-sources-196930a4-bd79-4800-b2bb-582a8f1c8dd4-173dbc52.html">Digital Guardian - Insecure file transfer sources</a></td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/digital-guardian-data-loss-prevention-digital-guardian-inspected-files-e459b709-55f7-48b6-8afc-0ae1062d3584-7b579b48.html">Digital Guardian - Inspected files</a></td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/digital-guardian-data-loss-prevention-digital-guardian-new-incidents-ae482a2c-b4e7-46fc-aeb7-744f7aad27ea-17962b79.html">Digital Guardian - New incidents</a></td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/digital-guardian-data-loss-prevention-digital-guardian-rare-urls-b9a69da9-1ca0-4e09-a24f-5d88d57e0402-94010434.html">Digital Guardian - Rare Urls</a></td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/digital-guardian-data-loss-prevention-digital-guardian-rare-destination-ports-82cba92e-fe2f-4bba-9b46-647040b24090-ebe03fc4.html">Digital Guardian - Rare destination ports</a></td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/digital-guardian-data-loss-prevention-digital-guardian-rare-network-protocols-8ab2f0db-baa1-495c-a8dd-718b81d0b8c7-37c677d6.html">Digital Guardian - Rare network protocols</a></td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/digital-guardian-data-loss-prevention-digital-guardian-urls-used-310433ca-67aa-406d-bbdf-c167a474b0a0-6a1b384a.html">Digital Guardian - Urls used</a></td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/digital-guardian-data-loss-prevention-digital-guardian-users'-incidents-83d5652c-025c-4cee-9f33-3bc114648859-8c54f914.html">Digital Guardian - Users' incidents</a></td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/digital-guardian-data-loss-prevention-digitalguardian-b2733981.html">DigitalGuardian</a></td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/digitalguardiandlpevent.html">DigitalGuardianDLPEvent</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.2</td>
+<td>26-12-2024</td>
+<td>Removed Deprecated <strong>Data connector</strong></td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>25-07-2024</td>
+<td>Deprecating data connectors</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>09-10-2023</td>
+<td>Fixed KQL validation failure in <strong>Hunting Query</strong> (Digital Guardian - Users incidents)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

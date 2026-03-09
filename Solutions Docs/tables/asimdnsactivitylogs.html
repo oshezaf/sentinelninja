@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASimDnsActivityLogs &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>ASimDnsActivityLogs</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for ASimDnsActivityLogs table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Normalized</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimdnsactivitylogs">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Logs Ingestion API</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (140 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimdnsactivitylogs">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">AdditionalFields</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Additional information, represented using key/value pairs provided by the source which do not map to ASim.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsFlags</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The DNS request flags, as provided by the reporting device. The structure of the DNS flags information may vary between different reporting devices.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsFlagsAuthenticated</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">The DNS authenticated answer flag, which is related to DNSSEC, indicates in a response that all data included in the answer and authority sections of the response have been verified by the server according to the policies of that server. see RFC 3655 Section 6.1 for more information.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsFlagsAuthoritative</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">The DNS authoritative answer flag indicates whether the response from the server was authoritative.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsFlagsCheckingDisabled</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">The DNS CD flag, which is related to DNSSEC, indicates in a query that non-verified data is acceptable to the system sending the query.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsFlagsRecursionAvailable</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">The DNS RA flag indicates in a response that that server supports recursive queries.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsFlagsRecursionDesired</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">The DNS recursion desired flag indicates in a request that that client would like the server to use recursive queries.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsFlagsTruncated</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">The DNS TC flag indicates that a response was truncates as it exceeded the maximum response size.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsFlagsZ</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">The DNS Z flag is a deprecated DNS flag, which might be reported by older DNS systems.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsNetworkDuration</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The amount of time, in milliseconds, for the completion of DNS request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsQuery</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The domain that needs to be resolved.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsQueryClass</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The DNS class ID as defined by the Internet Assigned Numbers Authority (IANA).</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsQueryClassName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The DNS class name as defined by the Internet Assigned Numbers Authority (IANA).</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsQueryType</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The DNS resource record type codes as defined by the Internet Assigned Numbers Authority (IANA).</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsQueryTypeName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The DNS resource record type name as defined by the Internet Assigned Numbers Authority (IANA).</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsResponseCode</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The DNS numerical response code as defined by the Internet Assigned Numbers Authority (IANA).</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsResponseIpCity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The city associated with the response IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsResponseIpCountry</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The country associated with the response IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsResponseIpLatitude</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The Latitude of the geographical coordinate associated with the response IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsResponseIpLongitude</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The longitude of the geographical coordinate associated with the response IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsResponseIpRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The region, or state, within a country, associated with the source IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsResponseName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The content of the response, as included in the record. The structure of the DNS response data may vary between different reporting devices.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsSessionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The DNS session identifier as reported by the reporting device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dst</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier of the server that received the DNS request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A descriptive text associated with the destination.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstDeviceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the destination device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstDomain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The domain of the destination device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstDomainType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of DstDomain.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstDvcId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the destination device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstDvcIdType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of DstDvcId.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstDvcScope</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The cloud platform scope the destination device belongs to. DvcScope maps to a subscription on Azure and to an account on AWS.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstDvcScopeId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The cloud platform scope ID the destination device belongs to. DvcScopeId map to a subscription ID on Azure and to an account ID on AWS.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstFQDN</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The destination device hostname, including domain information when available.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstGeoCity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The city associated with the destination IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstGeoCountry</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The country associated with the destination IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstGeoLatitude</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The latitude of the geographical coordinate associated with the destination IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstGeoLongitude</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The longitude of the geographical coordinate associated with the destination IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstGeoRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The region, or state, within a country, associated with the destination IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstHostname</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The destination device hostname, excluding domain information.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstIpAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address of the server receiving the DNS request. For a regular DNS request, this value would typically be the reporting device, and in most cases set to 127.0.0.1.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstOriginalRiskLevel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The risk level associated with the destination device as reported by the reporting device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstPortNumber</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Destination Port number.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstRiskLevel</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The risk level associated with the destination device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dvc</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier of the device reporting the event. The identifier can be either an IP Address, A hostname, or a device ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcAction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The action taken by the the reporting device on the request, such as blocking it.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A descriptive text associated with the device. For example: Primary Domain Controller.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcDomain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The domain of the device reporting the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcDomainType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of DvcDomain. Possible values include "Windows" and "FQDN".</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcFQDN</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The fully qualified hostname, including domain information, of the device reporting the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcHostname</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The hostname of the device reporting the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique ID of the device reporting the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcIdType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of DvcId.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcInterface</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The network interface on which data was captured. This field is typically relevant to network related activity which is captured by an intermediate or tap device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcIpAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP Address of the device reporting the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcMacAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The MAC address of the device reporting the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcOriginalAction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The original DvcAction as provided by the reporting device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcOs</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The operating system running on the device reporting the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcOsVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The version of the operating system on the device reporting the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcScope</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The cloud platform scope the device belongs to. DvcScope map to a subscription ID on Azure and to an account ID on AWS.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcScopeId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The cloud platform scope ID the device belongs to. DvcScopeId map to a subscription ID on Azure and to an account ID on AWS.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcZone</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The network segment of the device reporting the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The number of events described by the record. This value is used when the source supports aggregation, and a single record may represent multiple events.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventEndTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time at which the event ended. If the source supports aggregation and the record represents multiple events, the time that the last event was generated. If not provided by the source record, this field aliases the TimeGenerated field.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventMessage</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A general message or description.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventOriginalSeverity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The original severity as provided by the reporting device. This value is used to derive EventSeverity.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventOriginalType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The original event type or ID, for example, the original Windows event ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventOriginalUid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique ID of the original record.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventOwner</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The owner of the event, which is usually the department or subsidiary in which it was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventProduct</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The product generating the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventProductVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The version of the product generating the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventReportUrl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A URL of a resource that provides additional information about the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventResult</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The outcome of the event, represented by one of the following values: Success, Partial, Failure, NA (Not Applicable). The value may not be provided directly by the sources, in which case it is derived from other event fields, for example, the EventResultDetails field.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventResultDetails</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The DNS response code as defined by the Internet Assigned Numbers Authority (IANA).</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventSchemaVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The version of the schema.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventSeverity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The severity of the event. Valid values are: Informational, Low, Medium, or High.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventStartTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time at which the event started. If the source supports aggregation and the record represents multiple events, the time that the first event was generated. If not provided by the source record, this field aliases the TimeGenerated field.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventSubType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Either request or response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates the operation reported by the record. For DNS activity events, this value is the DNS opcode as defined by the Internet Assigned Numbers Authority (IANA).</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventVendor</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The vendor of the product generating the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkProtocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The transport protocol used by the network resolution event. The value can be UDP or TCP.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkProtocolVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The version of the network protocol. Typically used to differentiate between IPv4 and Ipv6.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RuleName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name or ID of the rule by associated with the inspection results.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RuleNumber</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The number of the rule associated with the inspection results.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">Src</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier of the source device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The number of the rule associated with the inspection results.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDeviceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the source device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDomain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The domain of the source device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDomainType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of SrcDomain.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDvcId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the source device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDvcIdType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of SrcDvcId.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDvcScope</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The cloud platform scope the source device belongs to. DvcScope maps to a subscription on Azure and to an account on AWS.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDvcScopeId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The cloud platform scope ID the source device belongs to. DvcScopeId map to a subscription ID on Azure and to an account ID on AWS.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcFQDN</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source device hostname, including domain information.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGeoCity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The city associated with the source IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGeoCountry</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The country associated with the source IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGeoLatitude</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The latitude of the geographical coordinate associated with the source IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGeoLongitude</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The longitude of the geographical coordinate associated with the source IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGeoRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The region, or state, within a country, associated with the source IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcHostname</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source device hostname, excluding domain information.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcIpAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address of the client sending the DNS request. For a recursive DNS request, this value would typically be the reporting device, and in most cases, set to 127.0.0.1.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcOriginalRiskLevel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The risk level associated with the source device as reported by the reporting device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcOriginalUserType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The original source user type, as provided by the source.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcPortNumber</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Source port of the DNS query.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcProcessGuid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A generated unique identifier (GUID) of the process that initiated the DNS request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcProcessId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The process ID (PID) of the process that initiated the DNS request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcProcessName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the process that initiated the DNS request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcRiskLevel</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The risk level associated with the source device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcUserId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A machine-readable, alphanumeric, unique representation of the source user.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcUserIdType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the ID stored in the SrcUserId field.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcUsername</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Source username, including domain information when available.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcUsernameType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the username stored in the SrcUsername field.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcUserScope</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The scope, such as Azure AD tenant, in which SrcUserId and SrcUsername are defined.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcUserScopeId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the scope, such as Azure AD tenant, in which SrcUserId and SrcUsername are defined.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcUserSessionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique ID of the sign-in session of the source user.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcUserType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the source user.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatCategory</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">If a DNS event source also provides DNS security, it may also evaluate the DNS event. For example, it can search for the IP address or domain in a threat intelligence database, and assign the domain or IP address with a Threat Category.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatConfidence</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The confidence level of the threat identified, normalized to a value between 0 and a 100.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatField</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The field for which a threat was identified. The value is either SrcIpAddr, DstIpAddr, Domain, or DnsResponseName.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatFirstReportedTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The first time the IP address or domain were identified as a threat.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatFirstReportedTime_d</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The first time the IP address or domain were identified as a threat.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the threat or malware identified in the web session.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatIpAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">An IP address for which a threat was identified. The field ThreatField contains the name of the field ThreatIpAddr represents. If a threat is identified in the Domain field, this field should be empty.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatIsActive</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">True ID the threat identified is considered an active threat.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatLastReportedTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The last time the IP address or domain were identified as a threat.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatLastReportedTime_d</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The last time the IP address or domain were identified as a threat.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the threat identified, as reported by the reporting device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatOriginalConfidence</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The original confidence level of the threat identified, as reported by the reporting device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatOriginalRiskLevel</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The original risk level associated with the threat identified, as reported by the reporting device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatOriginalRiskLevel_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The risk level associated with the threat identified, normalized to a value between 0 and a 100.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatRiskLevel</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The risk level associated with the threat identified, normalized to a value between 0 and a 100.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) reflecting the time in which the event was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TransactionIdHex</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The DNS unique hex transaction ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">UrlCategory</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A DNS event source may also look up the category of the requested Domains.</td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Information</h2>
+<p>📖 <strong>Related Documentation:</strong> <a href="https://learn.microsoft.com/azure/sentinel/dns-ama-fields#asim-normalized-dns-schema">ASIM normalized DNS schema</a> - describes the mapping of Windows DNS server fields into the normalized field names as they appear in the <a href="https://learn.microsoft.com/azure/sentinel/normalization-schema-dns#schema-details">DNS normalization schema</a></p>
+<h2>Solutions (4)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></li>
+<li><a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a></li>
+<li><a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></li>
+<li><a href="../solutions/windows-server-dns.html">Windows Server DNS</a></li>
+</ul>
+<h2>Connectors (2)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/asimdnsactivitylogs.html">Windows DNS Events via AMA</a></td>
+<td style="text-align: left;"><code>EventProduct == "DNS Server"</code><br><code>EventType == "Query"</code><br><code>EventVendor == "Microsoft"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Content Items Using This Table (2)</h2>
+<h3>Workbooks (2)</h3>
+<p><strong>In solution <a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.html">Lumen-Threat-Feed-Overview</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/team-cymru-scout-teamcymruscout-b64c6ed4.html">TeamCymruScout</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Parsers Using This Table (2)</h2>
+<h3>ASIM Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimdnsnative.html">ASimDnsNative</a></td>
+<td style="text-align: left;">Dns</td>
+<td style="text-align: left;">Native</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Other Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/crowdstrikereplicatorv2.html">CrowdStrikeReplicatorV2</a></td>
+<td style="text-align: left;"><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.securityinsights/dnsnormalized</code></li>
+</ul>
+<h2>Selection Criteria Summary (1 criteria, 1 total references)</h2>
+<p>References by type: 1 connectors, 0 content items, 0 ASIM parsers, 0 other parsers.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>EventProduct == "DNS Server"</code><br><code>EventType == "Query"</code><br><code>EventVendor == "Microsoft"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>EventProduct / EventVendor</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">EventProduct</th>
+<th style="text-align: left;">EventVendor</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>DNS Server</code></td>
+<td style="text-align: left;"><code>Microsoft</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>EventType</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>Query</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

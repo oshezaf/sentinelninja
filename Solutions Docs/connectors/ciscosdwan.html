@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cisco Software Defined WAN &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Cisco Software Defined WAN</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cisco-logo-72px.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>CiscoSDWAN</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Cisco</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/cisco-sd-wan.html">Cisco SD-WAN</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/ama.html">AMA</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20SD-WAN/Data%20Connectors/CiscoSDWAN.json">CiscoSDWAN.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+</tbody>
+</table>
+<p>The Cisco Software Defined WAN(SD-WAN) data connector provides the capability to ingest <a href="https://www.cisco.com/c/en_in/solutions/enterprise-networks/sd-wan/index.html">Cisco SD-WAN</a> Syslog and Netflow data into Microsoft Sentinel.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/ciscosdwannetflow-cl.html"><code>CiscoSDWANNetflow_CL</code></a> 🔶</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): write permission is required.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>To ingest Cisco SD-WAN Syslog and Netflow data into Microsoft Sentinel follow the steps below.</strong></p>
+<p><strong>1. Steps to ingest Syslog data to Microsoft sentinel</strong></p>
+<p>Azure Monitor Agent will be used to collect the syslog data into Microsoft sentinel. For that first need to create an azure arc server for the VM from which syslog data will be sent.</p>
+<p><strong>1.1 Steps to Add Azure Arc Server</strong></p>
+<ol>
+<li>In Azure portal, go to Servers - Azure Arc and click on Add.</li>
+<li>Select Generate Script under Add a single server section. A User can also generate scripts for Multiple Servers as well.</li>
+<li>Review the information on the Prerequisites page, then select Next.</li>
+<li>On the Resource details page, provide the subscription and resource group of the Microsoft Sentinel, Region, Operating system and Connectivity method. Then select Next.</li>
+<li>On the Tags page, review the default Physical location tags suggested and enter a value, or specify one or more Custom tags to support your standards. Then select Next</li>
+<li>Select Download to save the script file. </li>
+<li>Now that you have generated the script, the next step is to run it on the server that you want to onboard to Azure Arc. </li>
+<li>If you have Azure VM follow the steps mentioned in the <a href="https://learn.microsoft.com/azure/azure-arc/servers/plan-evaluate-on-azure-virtual-machine">link</a> before running the script. </li>
+<li>Run the script by the following command: <code>./&lt;ScriptName&gt;.sh</code></li>
+<li>After you install the agent and configure it to connect to Azure Arc-enabled servers, go to the Azure portal to verify that the server has successfully connected. View your machine in the Azure portal.<blockquote>
+<p><strong>Reference link:</strong> <a href="https://learn.microsoft.com/azure/azure-arc/servers/learn/quick-enable-hybrid-vm">https://learn.microsoft.com/azure/azure-arc/servers/learn/quick-enable-hybrid-vm</a></p>
+</blockquote>
+</li>
+</ol>
+<p><strong>1.2 Steps to Create Data Collection Rule (DCR)</strong></p>
+<ol>
+<li>In Azure Portal search for Monitor. Under Settings, select Data Collection Rules and Select Create.</li>
+<li>On the Basics panel, enter the Rule Name, Subscription, Resource group, Region and Platform Type.</li>
+<li>Select Next: Resources.</li>
+<li>Select Add resources.Use the filters to find the virtual machine that you&#39;ll use to collect logs.</li>
+<li>Select the virtual machine. Select Apply.</li>
+<li>Select Next: Collect and deliver.</li>
+<li>Select Add data source. For Data source type, select Linux syslog. </li>
+<li>For Minimum log level, leave the default values LOG_DEBUG.</li>
+<li>Select Next: Destination.</li>
+<li>Select Add destination and add Destination type, Subscription and Account or namespace.</li>
+<li>Select Add data source. Select Next: Review + create.</li>
+<li>Select Create. Wait for 20 minutes. In Microsoft Sentinel or Azure Monitor, verify that the Azure Monitor agent is running on your VM.<blockquote>
+<p><strong>Reference link:</strong> <a href="https://learn.microsoft.com/azure/sentinel/forward-syslog-monitor-agent">https://learn.microsoft.com/azure/sentinel/forward-syslog-monitor-agent</a></p>
+</blockquote>
+</li>
+</ol>
+<p><strong>2. Steps to ingest Netflow data to Microsoft sentinel</strong></p>
+<p>To Ingest Netflow data into Microsoft sentinel, Filebeat and Logstash needs to be installed and configured on the VM. After the configuration, vm will be able to receive netflow data on the configured port and that data will be ingested into the workspace of Microsoft sentinel.</p>
+<p><strong>2.1 Install filebeat and logstash</strong></p>
+<ol>
+<li>For the installation of filebeat and logstash using apt refer to this doc: </li>
+<li>Filebeat: <a href="https://www.elastic.co/guide/en/beats/filebeat/current/setup-repositories.html">https://www.elastic.co/guide/en/beats/filebeat/current/setup-repositories.html</a>. </li>
+<li>Logstash: <a href="https://www.elastic.co/guide/en/logstash/current/installing-logstash.html">https://www.elastic.co/guide/en/logstash/current/installing-logstash.html</a>. </li>
+<li>For the installation of filebeat and logstash for RedHat based Linux (yum) steps are as follows: </li>
+<li>Filebeat: <a href="https://www.elastic.co/guide/en/beats/filebeat/current/setup-repositories.html#_yum">https://www.elastic.co/guide/en/beats/filebeat/current/setup-repositories.html#_yum</a>. </li>
+<li>Logstash: <a href="https://www.elastic.co/guide/en/logstash/current/installing-logstash.html#_yum">https://www.elastic.co/guide/en/logstash/current/installing-logstash.html#_yum</a></li>
+</ol>
+<p><strong>2.2 Configure Filebeat to send events to Logstash</strong></p>
+<ol>
+<li>Edit filebeat.yml file: <code>vi /etc/filebeat/filebeat.yml</code> </li>
+<li>Comment out the Elasticsearch Output section. </li>
+<li>Uncomment Logstash Output section (Uncomment out only these two lines)-
+        output.logstash
+        hosts: ["localhost:5044"] </li>
+<li>In the Logstash Output section, if you want to send the data other than the default port i.e. 5044 port, then replace the port number in the hosts field. (Note: This port should be added in the conf file, while configuring logstash.) </li>
+<li>In the 'filebeat.inputs' section comment out existing configuration and add the following configuration: 
+        - type: netflow
+          max_message_size: 10KiB
+          host: "0.0.0.0:2055"
+          protocols: [ v5, v9, ipfix ]
+          expiration_timeout: 30m
+          queue_size: 8192
+          custom_definitions:
+          - /etc/filebeat/custom.yml
+          detect_sequence_reset: true
+          enabled: true </li>
+<li>In the Filebeat inputs section, if you want to receive the data other than the default port i.e. 2055 port, then replace the port number in the host field. </li>
+<li>Add the provided <a href="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Cisco%20SD-WAN/Data%20Connectors/custom.yml">custom.yml</a> file inside the /etc/filebeat/ directory. </li>
+<li>Open the filebeat input and output port in the firewall. </li>
+<li>Run command: <code>firewall-cmd --zone=public --permanent --add-port=2055/udp</code> </li>
+<li>Run command: <code>firewall-cmd --zone=public --permanent --add-port=5044/udp</code> <blockquote>
+<p>Note: if a custom port is added for filebeat input/output, then open that port in the firewall.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>2.3 Configure Logstash to send events to Microsoft Sentinel</strong></p>
+<ol>
+<li>Install the Azure Log Analytics plugin: </li>
+<li>Run Command: <code>sudo /usr/share/logstash/bin/logstash-plugin install microsoft-logstash-output-azure-loganalytics</code> </li>
+<li>Store the Log Analytics workspace key in the Logstash key store. The workspace key can be found in Azure Portal under Log analytic workspace &gt; Select workspace &gt; Under Settings select Agent &gt; Log Analytics agent instructions. </li>
+<li>Copy the Primary key and run the following commands: </li>
+<li><code>sudo /usr/share/logstash/bin/logstash-keystore --path.settings /etc/logstash create LogAnalyticsKey</code> </li>
+<li><code>sudo /usr/share/logstash/bin/logstash-keystore --path.settings /etc/logstash add LogAnalyticsKey</code> </li>
+<li>Create the configuration file /etc/logstash/cisco-netflow-to-sentinel.conf: 
+        input {
+            beats {
+                port =&gt; <port_number> #(Enter output port number which has been configured during filebeat configuration i.e. filebeat.yml file .)
+             }
+        }
+        output {
+            microsoft-logstash-output-azure-loganalytics {
+                workspace_id =&gt; "<workspace_id>"
+                workspace_key =&gt; "${LogAnalyticsKey}"
+                custom_log_table_name =&gt; "CiscoSDWANNetflow"
+            }
+        } <blockquote>
+<p>Note: If table is not present in Microsoft sentinel, then it will create a new table in sentinel.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>2.4 Run Filebeat:</strong></p>
+<ol>
+<li>Open a terminal and run the command: <blockquote>
+<p><code>systemctl start filebeat</code> </p>
+</blockquote>
+</li>
+<li>This command will start running filebeat in the background. To see the logs stop the filebeat (<code>systemctl stop filebeat</code>) then run the following command: <blockquote>
+<p><code>filebeat run -e</code></p>
+</blockquote>
+</li>
+</ol>
+<p><strong>2.5 Run Logstash:</strong></p>
+<ol>
+<li>In another terminal run the command: <blockquote>
+<p><code>/usr/share/logstash/bin/logstash --path.settings /etc/logstash -f /etc/logstash/cisco-netflow-to-sentinel.conf &amp;</code> </p>
+</blockquote>
+</li>
+<li>This command will start running the logstash in the background. To see the logs of logstash kill the above process and run the following command : <blockquote>
+<p><code>/usr/share/logstash/bin/logstash --path.settings /etc/logstash -f /etc/logstash/cisco-netflow-to-sentinel.conf</code></p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

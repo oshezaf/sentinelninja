@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Block URL - Cisco Meraki &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Block URL - Cisco Meraki</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>This playbook checks if malicious URL is blocked in Cisco Meraki network.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/ciscomeraki.html">CiscoMeraki</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/Block-URL/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/Block-URL/readme.md">Block-URL/readme.md</a></em></p>
+</blockquote>
+<h1>Cisco Meraki Block URL Playbook</h1>
+<p><img alt="meraki" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/Block-URL/../../Connector/MerakiConnector/logo.jpg" /></p>
+<h2>Summary</h2>
+<p>When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the below actions:
+ 1. Fetches a list of potentially malicious URLs.
+ 2. For each URL in the list, checks if the URL is blocked by the network of the organization.
+  - If URL is allowed by the network, then incident comment is created saying URL is allowed.
+  - If URL is blocked by the network, then incident comment is created saying URL is blocked.
+  - If URL is not blocked by the network and not part of the network, that URL is blocked by playbook.
+3. Update the incident with status 'Closed' and reason as
+  - For allowed URL - 'BenignPositive - SuspiciousButExpected'
+  - For blocked URL - 'TruePositive - SuspiciousActivity'</p>
+<p><img alt="Meraki" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/Block-URL/Images/PlaybookDesignerLight.jpg" /></p>
+<p><img alt="Meraki" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/Block-URL/Images/PlaybookDesignerDark.jpg" /></p>
+<p>## Pre-requisites for deployment
+1. Deploy the Cisco Meraki Custom Connector before the deployment of this playbook under the same subscription and same resource group. Capture the name of the connector during deployment.
+2. Cisco Meraki API Key should be known to establish a connection with Cisco Meraki Custom Connector. <a href="https://developer.cisco.com/meraki/api-v1/#!getting-started/authorization">Refer here</a>
+3. Organization name should be known. <a href="https://developer.cisco.com/meraki/api-v1/#!getting-started/find-your-organization-id">Refer here</a> 
+4. Network name should be known.<a href="https://developer.cisco.com/meraki/api-v1/#!getting-started/find-your-network-id">Refer here</a></p>
+<p>## Deployment Instructions
+ 1. Deploy the playbook by clicking on the "Deploy to Azure" button. This will take you to deploy an ARM Template wizard.</p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCiscoMeraki%2FPlaybooks%2FBlock-URL%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCiscoMeraki%2FPlaybooks%2FBlock-URL%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<ol start="2">
+<li>Fill in the required parameters for deploying the playbook.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Playbook Name</strong></td>
+<td>Enter the playbook name without spaces</td>
+</tr>
+<tr>
+<td><strong>Cisco Meraki Connector name</strong></td>
+<td>Enter the name of Cisco Meraki custom connector without spaces</td>
+</tr>
+<tr>
+<td><strong>Organization Name</strong></td>
+<td>Enter organization name</td>
+</tr>
+<tr>
+<td><strong>Network Name</strong></td>
+<td>Enter network name</td>
+</tr>
+</tbody>
+</table>
+<h1>Post-Deployment Instructions</h1>
+<h2>a. Authorize API connection</h2>
+<ul>
+<li>Once deployment is complete, go under deployment details and authorize Cisco Meraki connection. 
+1.  Click the Cisco Meraki connection
+2.  Click <strong>Edit API connection</strong>
+3.  Enter API Key
+4.  Click Save
+5. Similarly authorize teams api connection as well.</li>
+</ul>
+<h2>b. Configurations in Sentinel</h2>
+<ul>
+<li>In Microsoft sentinel analytical rules should be configured to trigger an incident with URLs. </li>
+<li>Configure the automation rules to trigger the playbook.</li>
+</ul>
+<h1>Playbook steps explained</h1>
+<h2>When Microsoft Sentinel incident creation rule is triggered</h2>
+<p>Captures potentially malicious or malware URL incident information.</p>
+<h2>Entities - Get URLs</h2>
+<p>Get the list of URLs as entities from the Incident.</p>
+<h2>Check if Organization exists</h2>
+<ul>
+<li>If organization name exists in list of organizations associated with the account, then return organization. </li>
+<li>If organization name does not exist, then terminate with the error that organization not found.</li>
+</ul>
+<p>## Check if network exists
+  *  If network name exists in list of networks associated with the organization, then return network associated with the organization. 
+ *  If network name does not exist, then terminate with the error that network not found.</p>
+<h2>For each malicious URL received from the incident</h2>
+<ul>
+<li>Checks if the URL is blocked or allowed by the network of the organization.</li>
+<li>If URL is allowed by the network then incident comment is created saying URL is allowed using content filtering.</li>
+<li>If URL is blocked by network then incident comment is created saying URL is blocked using content filtering.</li>
+<li>If URL is not part of the network, then such URL is blocked by playbook using content filtering. Incident Comment is created saying URL blocked by playbook.</li>
+<li>Add incident Comment from all the cases.</li>
+<li>Update the incident with status 'Closed' and reason as</li>
+<li>For allowed URL - 'BenignPositive - SuspiciousButExpected'</li>
+<li>For blocked URL - 'TruePositive - SuspiciousActivity'</li>
+</ul>
+<h2>Incident comment</h2>
+<p><em>[Content truncated...]</em></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/ciscomeraki.html">Back to CiscoMeraki</a></p>
+</div>
+</body>
+</html>

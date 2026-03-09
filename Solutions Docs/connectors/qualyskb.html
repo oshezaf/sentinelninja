@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qualys VM KnowledgeBase &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Qualys VM KnowledgeBase</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/qualys_logo.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>QualysKB</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Qualys</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/qualys-vm-knowledgebase.html">Qualys VM Knowledgebase</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Qualys%20VM%20Knowledgebase/Data%20Connectors/QualysKB_API_FunctionApp.json">QualysKB_API_FunctionApp.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Connector definition requires workspace key (SharedKey pattern)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.qualys.com/apps/vulnerability-management/">Qualys Vulnerability Management (VM)</a> KnowledgeBase (KB) connector provides the capability to ingest the latest vulnerability data from the Qualys KB into Microsoft Sentinel. </p>
+<p>This data can used to correlate and enrich vulnerability detections found by the <a href="https://docs.microsoft.com/azure/sentinel/connect-qualys-vm">Qualys Vulnerability Management (VM)</a> data connector.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/qualyskb-cl.html"><code>QualysKB_CL</code></a> 🔶</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
+- <strong>Qualys API Key</strong>: A Qualys VM API username and password is required. <a href="https://www.qualys.com/docs/qualys-api-vmpc-user-guide.pdf">See the documentation to learn more about Qualys VM API</a>.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>NOTE:</strong> This data connector depends on a parser based on a Kusto Function to work as expected which is deployed as part of the solution. To view the function code in Log Analytics, open Log Analytics/Microsoft Sentinel Logs blade, click Functions and search for the alias QualysVM Knowledgebase and load the function code or click <a href="https://aka.ms/sentinel-crowdstrikefalconendpointprotection-parser">here</a>, on the second line of the query, enter the hostname(s) of your QualysVM Knowledgebase device(s) and any other unique identifiers for the logstream. The function usually takes 10-15 minutes to activate after solution installation/update.</p>
+<blockquote>
+<p>This data connector depends on a parser based on a Kusto Function to work as expected. <a href="https://aka.ms/sentinel-qualyskb-parser">Follow the steps</a> to use the Kusto function alias, <strong>QualysKB</strong></p>
+<p><strong>(Optional Step)</strong> Securely store workspace and API authorization key(s) or token(s) in Azure Key Vault. Azure Key Vault provides a secure mechanism to store and retrieve key values. <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Follow these instructions</a> to use Azure Key Vault with an Azure Function App.</p>
+</blockquote>
+<p><strong>STEP 1 - Configuration steps for the Qualys API</strong></p>
+<ol>
+<li>Log into the Qualys Vulnerability Management console with an administrator account, select the <strong>Users</strong> tab and the <strong>Users</strong> subtab. </li>
+<li>Click on the <strong>New</strong> drop-down menu and select <strong>Users</strong>.</li>
+<li>Create a username and password for the API account. </li>
+<li>In the <strong>User Roles</strong> tab, ensure the account role is set to <strong>Manager</strong> and access is allowed to <strong>GUI</strong> and <strong>API</strong></li>
+<li>Log out of the administrator account and log into the console with the new API credentials for validation, then log out of the API account. </li>
+<li>Log back into the console using an administrator account and modify the API accounts User Roles, removing access to <strong>GUI</strong>. </li>
+<li>Save all changes.</li>
+</ol>
+<p><strong>STEP 2 - Choose ONE from the following two deployment options to deploy the connector and the associated Azure Function</strong></p>
+<blockquote>
+<p><strong>IMPORTANT:</strong> Before deploying the Qualys KB connector, have the Workspace ID and Workspace Primary Key (can be copied from the following), as well as the Qualys API username and password, readily available.
+- <strong>Workspace ID</strong>: <code>WorkspaceId</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
+- <strong>Primary Key</strong>: <code>PrimaryKey</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+<p><strong>Option 1 - Azure Resource Manager (ARM) Template</strong></p>
+<p>Use this method for automated deployment of the Qualys KB connector using an ARM Tempate.</p>
+<ol>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below. </p>
+<p><a href="https://aka.ms/sentinel-qualyskb-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://aka.ms/sentinel-qualyskb-azuredeploy-gov"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a>
+2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. 
+3. Enter the <strong>Workspace ID</strong>, <strong>Workspace Key</strong>, <strong>API Username</strong>, <strong>API Password</strong> , update the <strong>URI</strong>, and any additional URI <strong>Filter Parameters</strong> (This value should include a "&amp;" symbol between each parameter and should not include any spaces) </p>
+<blockquote>
+<ul>
+<li>Enter the URI that corresponds to your region. The complete list of API Server URLs can be <a href="https://www.qualys.com/docs/qualys-api-vmpc-user-guide.pdf#G4.735348">found here</a></li>
+<li>Note: If using Azure Key Vault secrets for any of the values above, use the<code>@Microsoft.KeyVault(SecretUri={Security Identifier})</code>schema in place of the string values. Refer to <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Key Vault references documentation</a> for further details. 
+4. Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>. 
+5. Click <strong>Purchase</strong> to deploy.</li>
+<li>Note: If deployment failed due to the storage account name being taken, change the <strong>Function Name</strong> to a unique value and redeploy.</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<p><strong>Option 2 - Manual Deployment of Azure Functions</strong></p>
+<p>This method provides the step-by-step instructions to deploy the Qualys KB connector manually with Azure Function.
+<strong>Step 1 - Deploy a Function App</strong></p>
+<pre><code>1. Download the [Azure Function App](https://aka.ms/sentinel-qualyskb-functioncode) file. Extract archive to your local development computer.
+</code></pre>
+<ol start="2">
+<li>Follow the <a href="https://github.com/Azure/Azure-Sentinel/blob/master/DataConnectors/AzureFunctionsManualDeployment.md#function-app-manual-deployment-instructions">function app manual deployment instructions</a> to deploy the Azure Functions app using VSCode.</li>
+<li>
+<p>After successful deployment of the function app, follow next steps for configuring it.</p>
+<p><strong>Step 2 - Configure the Function App</strong></p>
+<ol>
+<li>Go to Azure Portal for the Function App configuration.</li>
+<li>In the Function App, select the Function App Name and select <strong>Configuration</strong>.</li>
+<li>In the <strong>Application settings</strong> tab, select <strong>+ New application setting</strong>.</li>
+<li>Add each of the following seven (7) application settings individually, with their respective string values (case-sensitive): 
+    apiUsername
+    apiPassword
+    workspaceID
+    workspaceKey
+    uri
+    filterParameters
+    logAnalyticsUri (optional)<blockquote>
+<ul>
+<li>Enter the URI that corresponds to your region. The complete list of API Server URLs can be <a href="https://www.qualys.com/docs/qualys-api-vmpc-user-guide.pdf#G4.735348">found here</a>. The <code>uri</code> value must follow the following schema: <code>https://&lt;API Server&gt;/api/2.0</code> </li>
+<li>Add any additional filter parameters, for the <code>filterParameters</code> variable, that need to be appended to the URI. The <code>filterParameter</code> value should include a "&amp;" symbol between each parameter and should not include any spaces.</li>
+<li>Note: If using Azure Key Vault, use the<code>@Microsoft.KeyVault(SecretUri={Security Identifier})</code>schema in place of the string values. Refer to <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Key Vault references documentation</a> for further details.</li>
+<li>Use logAnalyticsUri to override the log analytics API endpoint for delegated cloud. For example, for public cloud, leave the value empty; for Azure GovUS cloud environment, specify the value in the following format: <code>https://&lt;CustomerId&gt;.ods.opinsights.azure.us</code>.</li>
+</ul>
+</blockquote>
+</li>
+<li>Once all application settings have been entered, click <strong>Save</strong>.</li>
+</ol>
+</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

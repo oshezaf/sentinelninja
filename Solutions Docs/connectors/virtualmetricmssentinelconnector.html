@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VirtualMetric DataStream for Microsoft Sentinel &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>VirtualMetric DataStream for Microsoft Sentinel</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/VirtualMetric.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>VirtualMetricMSSentinelConnector</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">VirtualMetric</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/ama.html">AMA</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VirtualMetric%20DataStream/Data%20Connectors/VirtualMetric-Sentinel/Template_Sentinel.json">Template_Sentinel.json</a></td>
+</tr>
+</tbody>
+</table>
+<p>VirtualMetric DataStream connector deploys Data Collection Rules to ingest security telemetry into Microsoft Sentinel.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>App Registration or Azure Managed Identity</strong>: VirtualMetric DataStream requires an Entra ID identity to authenticate and send logs to Microsoft Sentinel. You can choose between creating an App Registration with Client ID and Client Secret, or using Azure Managed Identity for enhanced security without credential management.
+- <strong>Resource Group Role Assignment</strong>: The chosen identity (App Registration or Managed Identity) must be assigned to the resource group containing the Data Collection Endpoint with the following roles: Monitoring Metrics Publisher (for log ingestion) and Monitoring Reader (for reading stream configuration).</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Configure VirtualMetric DataStream for Microsoft Sentinel</strong></p>
+<p>Configure the VirtualMetric DataStream for Microsoft Sentinel to send data.
+<strong>Register Application in Microsoft Entra ID (Optional)</strong></p>
+<p><strong>Choose your authentication method:</strong></p>
+<p><strong>Option A: Use Azure Managed Identity (Recommended)</strong>
+- Skip this step if you plan to use Azure Managed Identity for authentication.
+- Azure Managed Identity provides a more secure authentication method without managing credentials.</p>
+<p><strong>Option B: Register a Service Principal Application</strong></p>
+<ol>
+<li>
+<p><strong>Open the <a href="https://entra.microsoft.com/">Microsoft Entra ID page</a></strong>:
+   - Click the provided link to open the <strong>Microsoft Entra ID</strong> registration page in a new tab.
+   - Ensure you are logged in with an account that has <strong>Application Administrator</strong> or <strong>Global Administrator</strong> permissions.</p>
+</li>
+<li>
+<p><strong>Create a New Application</strong>:
+   - In the <strong>Microsoft Entra ID portal</strong>, select <strong>App registrations</strong> from the left-hand navigation.
+   - Click on <strong>+ New registration</strong>.
+   - Fill out the following fields:</p>
+<ul>
+<li><strong>Name</strong>: Enter a descriptive name for the app (e.g., "VirtualMetric ASIM Connector").</li>
+<li><strong>Supported account types</strong>: Choose <strong>Accounts in this organizational directory only</strong> (Single tenant).</li>
+<li><strong>Redirect URI</strong>: Leave this blank.</li>
+<li>Click <strong>Register</strong> to create the application.</li>
+</ul>
+</li>
+<li>
+<p><strong>Copy Application and Tenant IDs</strong>:
+   - Once the app is registered, note the <strong>Application (client) ID</strong> and <strong>Directory (tenant) ID</strong> from the <strong>Overview</strong> page. You'll need these for VirtualMetric DataStream configuration.</p>
+</li>
+<li>
+<p><strong>Create a Client Secret</strong>:
+   - In the <strong>Certificates &amp; secrets</strong> section, click <strong>+ New client secret</strong>.
+   - Add a description (e.g., 'VirtualMetric ASIM Secret') and set an appropriate expiration period.
+   - Click <strong>Add</strong>.
+   - <strong>Copy the client secret value immediately</strong>, as it will not be shown again. Store this securely for VirtualMetric DataStream configuration.</p>
+</li>
+</ol>
+<p><strong>Assign Required Permissions</strong></p>
+<p>Assign the required roles to your chosen authentication method (Service Principal or Managed Identity) in the resource group.</p>
+<p><strong>For Service Principal (if you completed Step 1):</strong></p>
+<ol>
+<li>
+<p><strong>Navigate to Your Resource Group</strong>:
+   - Open the <strong>Azure Portal</strong> and navigate to the <strong>Resource Group</strong> that contains your <strong>Log Analytics Workspace</strong> and where <strong>Data Collection Rules (DCRs)</strong> will be deployed.</p>
+</li>
+<li>
+<p><strong>Assign the Monitoring Metrics Publisher Role</strong>:
+   - In the <strong>Resource Group</strong>, click on <strong>Access control (IAM)</strong> from the left-hand menu.
+   - Click <strong>+ Add</strong> and select <strong>Add role assignment</strong>.
+   - In the <strong>Role</strong> tab, search for and select <strong>Monitoring Metrics Publisher</strong>.
+   - Click <strong>Next</strong> to go to the <strong>Members</strong> tab.
+   - Under <strong>Assign access to</strong>, select <strong>User, group, or service principal</strong>.
+   - Click <strong>+ Select members</strong> and search for your registered application by name or client ID.
+   - Select your application and click <strong>Select</strong>.
+   - Click <strong>Review + assign</strong> twice to complete the assignment.</p>
+</li>
+<li>
+<p><strong>Assign the Monitoring Reader Role</strong>:
+   - Repeat the same process to assign the <strong>Monitoring Reader</strong> role:
+   - Click <strong>+ Add</strong> and select <strong>Add role assignment</strong>.
+   - In the <strong>Role</strong> tab, search for and select <strong>Monitoring Reader</strong>.
+   - Follow the same member selection process as above.
+   - Click <strong>Review + assign</strong> twice to complete the assignment.</p>
+</li>
+</ol>
+<p><strong>For Azure Managed Identity:</strong></p>
+<ol>
+<li>
+<p><strong>Create or Identify Your Managed Identity</strong>:
+   - If using <strong>System-assigned Managed Identity</strong>: Enable it on your Azure resource (VM, App Service, etc.).
+   - If using <strong>User-assigned Managed Identity</strong>: Create one in your resource group if it doesn't exist.</p>
+</li>
+<li>
+<p><strong>Assign the Monitoring Metrics Publisher Role</strong>:
+   - Follow the same steps as above, but in the <strong>Members</strong> tab:
+   - Under <strong>Assign access to</strong>, select <strong>Managed identity</strong>.
+   - Click <strong>+ Select members</strong> and choose the appropriate managed identity type and select your identity.
+   - Click <strong>Select</strong>, then <strong>Review + assign</strong> twice to complete.</p>
+</li>
+<li>
+<p><strong>Assign the Monitoring Reader Role</strong>:
+   - Repeat the process to assign the <strong>Monitoring Reader</strong> role to the same managed identity.</p>
+</li>
+</ol>
+<p><strong>Required Permission Summary:</strong>
+The assigned roles provide the following capabilities:
+- <strong>Monitoring Metrics Publisher</strong>: Write data to Data Collection Endpoints (DCE) and send telemetry through Data Collection Rules (DCR)
+- <strong>Monitoring Reader</strong>: Read stream configuration and access Log Analytics workspace for ASIM table ingestion</p>
+<p><strong>Deploy Azure Infrastructure</strong></p>
+<p>Deploy the required Data Collection Endpoint (DCE) and Data Collection Rules (DCR) for Microsoft Sentinel tables using our ARM template.</p>
+<ol>
+<li>
+<p><strong>Deploy to Azure</strong>:
+   - Click the Deploy to Azure button below to automatically deploy the required infrastructure:
+   - <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FVirtualMetric%2520DataStream%2FData%2520Connectors%2FVirtualMetric-Sentinel%2FDeployToAzure.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+   - This will take you directly to the Azure portal to start the deployment.</p>
+</li>
+<li>
+<p><strong>Configure Deployment Parameters</strong>:
+   - On the custom deployment page, configure the following settings:</p>
+</li>
+</ol>
+<p><strong>Project details:</strong>
+   - <strong>Subscription</strong>: Select your Azure subscription from the dropdown
+   - <strong>Resource group</strong>: Select an existing resource group or click <strong>Create new</strong> to create a new one</p>
+<p><strong>Instance details:</strong>
+   - <strong>Region</strong>: Select the Azure region where your Log Analytics workspace is located (e.g., West Europe)
+   - <strong>Workspace</strong>: Enter your Log Analytics workspace name
+   - <strong>DCE Name</strong>: Provide a name for the Data Collection Endpoint (e.g., "vmetric-dce")
+   - <strong>DCR Name Prefix</strong>: Provide a prefix for the Data Collection Rules (e.g., "vmetric-dcr")</p>
+<ol start="3">
+<li>
+<p><strong>Complete the Deployment</strong>:
+   - Click <strong>Review + create</strong> to validate the template.
+   - Review the parameters and click <strong>Create</strong> to deploy the resources.
+   - Wait for the deployment to complete (typically takes 2-5 minutes).</p>
+</li>
+<li>
+<p><strong>Verify Deployed Resources</strong>:
+   - After deployment, verify the following resources were created:</p>
+<ul>
+<li><strong>Data Collection Endpoint (DCE)</strong>: Check <strong>Azure Portal &gt; Monitor &gt; Data Collection Endpoints</strong></li>
+<li><strong>Data Collection Rules (DCRs)</strong>: Check <strong>Azure Portal &gt; Monitor &gt; Data Collection Rules</strong></li>
+<li><strong>Copy the DCE Logs Ingestion URI</strong> from the DCE <strong>Overview</strong> page (format: <code>https://&lt;dce-name&gt;.&lt;region&gt;.ingest.monitor.azure.com</code>)</li>
+<li><strong>Copy the DCE Resource ID</strong> from the DCE <strong>Overview</strong> page (format: <code>/subscriptions/&lt;subscription-id&gt;/resourceGroups/&lt;resource-group-name&gt;/providers/Microsoft.Insights/dataCollectionEndpoints/&lt;dce-name&gt;</code>)</li>
+<li>For each DCR, note the <strong>Immutable ID</strong> from the <strong>Overview</strong> page - you'll need these for VirtualMetric DataStream configuration.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Configure VirtualMetric DataStream Integration</strong></p>
+<p>Set up VirtualMetric DataStream to send security telemetry to Microsoft Sentinel tables.</p>
+<ol>
+<li>
+<p><strong>Access VirtualMetric DataStream Configuration</strong>:
+   - Log into your <strong>VirtualMetric DataStream</strong> management console.
+   - Navigate to <strong>Fleet Management</strong> &gt; <strong>Targets</strong> section.
+   - Click <strong>Add new target</strong> button.
+   - Select <strong>Microsoft Sentinel</strong> target.</p>
+</li>
+<li>
+<p><strong>Configure General Settings</strong>:
+   - <strong>Name</strong>: Enter a name for your target (e.g., "cus01-ms-sentinel")
+   - <strong>Description</strong>: Optionally provide a description for the target configuration</p>
+</li>
+<li>
+<p><strong>Configure Azure Authentication</strong> (choose based on Step 1):</p>
+</li>
+</ol>
+<p><strong>For Service Principal Authentication:</strong>
+   - <strong>Managed Identity for Azure</strong>: Keep <strong>Disabled</strong>
+   - <strong>Tenant ID</strong>: Enter the Directory (tenant) ID from Step 1
+   - <strong>Client ID</strong>: Enter the Application (client) ID from Step 1
+   - <strong>Client Secret</strong>: Enter the client secret value from Step 1</p>
+<p><strong>For Azure Managed Identity:</strong>
+   - <strong>Managed Identity for Azure</strong>: Set to <strong>Enabled</strong></p>
+<ol start="4">
+<li>
+<p><strong>Configure Stream Properties</strong>:
+   - <strong>Endpoint</strong>: Choose your configuration method:</p>
+<ul>
+<li><strong>For manual stream configuration</strong>: Enter the DCE Logs Ingestion URI (format: <code>https://&lt;dce-name&gt;.&lt;region&gt;.ingest.monitor.azure.com</code>)</li>
+<li><strong>For auto stream detection</strong>: Enter the DCE Resource ID (format: <code>/subscriptions/&lt;subscription-id&gt;/resourceGroups/&lt;resource-group-name&gt;/providers/Microsoft.Insights/dataCollectionEndpoints/&lt;dce-name&gt;</code>)</li>
+<li><strong>Streams</strong>: Select <strong>Auto</strong> for automatic stream detection, or configure specific streams if needed</li>
+</ul>
+</li>
+<li>
+<p><strong>Verify Data Ingestion in Microsoft Sentinel</strong>:
+   - Return to your <strong>Log Analytics Workspace</strong>
+   - Run sample queries on the ASIM tables to confirm data is being received:
+     <code>kql
+     ASimNetworkSessionLogs
+     | where TimeGenerated &gt; ago(1h)
+     | take 10</code>
+   - Check the <strong>Microsoft Sentinel Overview</strong> dashboard for new data sources and event counts.</p>
+</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

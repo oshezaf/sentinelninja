@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lookout &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Lookout</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Lookout/Workbooks/Images/Logo/lookout.svg" alt="Lookout Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Lookout</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://www.lookout.com/support">https://www.lookout.com/support</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Lookout</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2021-10-18</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2025-12-18</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout">Lookout</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://lookout.com">Lookout</a> solution provides the capability to ingest <a href="https://www.lookout.com/products/mobile-endpoint-security">Lookout events</a> into Microsoft Sentinel through the Mobile Risk API. It can get events which helps to examine potential security risks and more. Refer to <a href="https://www.lookout.com/products/mobile-endpoint-security">API documentation</a> for more information.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>a. <a href="https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api">Azure Monitor HTTP Data Collector API</a></p>
+<p>b. <a href="https://aka.ms/Sentinel-CCP_Platform">Microsoft Sentinel Codeless Connector Platform</a></p>
+<p><span style='color:red; font-weight:bold;'>NOTE</span>: Microsoft recommends installation of "LookoutStreaming_Definition" (via Codeless Connector Framework). This connector is build on the Codeless Connector Framework (CCF), which uses the Log Ingestion API, which replaces ingestion via the <a href='https://aka.ms/Sentinel-Logs_migration' style='color:#1890F1;'>deprecated HTTP Data Collector API</a>. CCF-based data connectors also support <a href='https://aka.ms/Sentinel-DCR_Overview' style='color:#1890F1;'>Data Collection Rules</a> (DCRs) offering transformations and enrichment.</p>
+
+<p><span style='color:red; font-weight:bold;'>Important</span>: While the updated connector(s) can coexist with their legacy versions, running them together will result in duplicated data ingestion. You can disable the older versions of these connectors to avoid duplication of data.</p>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/lookoutapi.html">[DEPRECATED] Lookout</a> 🔶</li>
+<li><a href="../connectors/lookoutstreaming-definition.html">Lookout Mobile Threat Detection Connector (via Codeless Connector Framework) (Preview)</a></li>
+</ul>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>2 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/lookoutmtdv2-cl.html"><code>LookoutMtdV2_CL</code></a></td>
+<td><a href="../connectors/lookoutstreaming-definition.html">Lookout Mobile Threat Detection Connector (via Codeless Connector Framework) (Preview)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/lookout-cl.html"><code>Lookout_CL</code></a> 🔶</td>
+<td><a href="../connectors/lookoutapi.html">[DEPRECATED] Lookout</a></td>
+<td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>12 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/lookout-lookout-critical-audit-and-policy-changes-v2-6b2d4e8a-5f7c-4b9e-8a1d-3c5e7a9b2f4d-c2a4c32f.html">Lookout - Critical Audit and Policy Changes (v2)</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion, Persistence, PrivilegeEscalation, Impact</td>
+<td style="text-align: left;"><a href="../tables/lookoutmtdv2-cl.html"><code>LookoutMtdV2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/lookout-lookout-critical-smishing-and-phishing-alerts-v2-7a3e5f9b-4c8d-4a2e-9f1b-6d8e2a4c7f9e-766d3a1e.html">Lookout - Critical Smishing and Phishing Alerts (v2)</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess, CredentialAccess, Collection, Discovery</td>
+<td style="text-align: left;"><a href="../tables/lookoutmtdv2-cl.html"><code>LookoutMtdV2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/lookout-lookout-device-compliance-and-security-status-changes-v2-9c5b6d8f-3a02-4e9b-af4c-2d7e9b1f5a8c-f6dcf4b4.html">Lookout - Device Compliance and Security Status Changes (v2)</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Discovery, DefenseEvasion, Persistence</td>
+<td style="text-align: left;"><a href="../tables/lookoutmtdv2-cl.html"><code>LookoutMtdV2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/lookout-lookout-high-severity-mobile-threats-detected-v2-8b4a5c7e-2f91-4d8a-9e3b-1c6f8a2d4e9f-6f91a43d.html">Lookout - High Severity Mobile Threats Detected (v2)</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Discovery, DefenseEvasion, Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/lookoutmtdv2-cl.html"><code>LookoutMtdV2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/lookout-lookout-new-threat-events-found.-7593cc60-e294-402d-9202-279fb3c7d55f-4c60e079.html">Lookout - New Threat events found.</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Discovery</td>
+<td style="text-align: left;"><a href="../tables/lookout-cl.html"><code>Lookout_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/lookout-lookout-advanced-threat-hunting-multi-vector-attacks-lookout-advanced-threat-hunting-4973d03a.html">Lookout Advanced Threat Hunting - Multi-Vector Attacks</a></td>
+<td style="text-align: left;">Discovery, Persistence, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/lookoutmtdv2-cl.html"><code>LookoutMtdV2_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/lookout-lookoutevents-591b9350.html">LookoutEvents</a></td>
+<td style="text-align: left;"><a href="../tables/lookoutmtdv2-cl.html"><code>LookoutMtdV2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/lookout-lookouteventsv2-865167af.html">LookoutEventsV2</a></td>
+<td style="text-align: left;"><a href="../tables/lookoutmtdv2-cl.html"><code>LookoutMtdV2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/lookout-lookoutexecutivedashboard-f8721bde.html">LookoutExecutiveDashboard</a></td>
+<td style="text-align: left;"><a href="../tables/lookoutmtdv2-cl.html"><code>LookoutMtdV2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/lookout-lookoutioainvestigationdashboard-3c024d7b.html">LookoutIOAInvestigationDashboard</a></td>
+<td style="text-align: left;"><a href="../tables/lookoutmtdv2-cl.html"><code>LookoutMtdV2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/lookout-lookoutsecurityinvestigationdashboard-1578bafc.html">LookoutSecurityInvestigationDashboard</a></td>
+<td style="text-align: left;"><a href="../tables/lookoutmtdv2-cl.html"><code>LookoutMtdV2_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/lookoutevents.html">LookoutEvents</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/lookoutmtdv2-cl.html"><code>LookoutMtdV2_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout/README.md">Lookout/README.md</a></em></p>
+</blockquote>
+<h2>🚀 Overview</h2>
+<p>The Lookout Mobile Risk API v2 solution provides comprehensive mobile threat detection, device compliance monitoring, and security intelligence for Microsoft Sentinel. This enhanced version leverages the full capabilities of Lookout's Mobile Risk API v2 to deliver advanced threat correlation, smishing detection, and sophisticated security analytics.</p>
+<h2>✨ What's New in v2</h2>
+<h3>🆕 New Capabilities</h3>
+<ul>
+<li><strong>Smishing Detection</strong>: Advanced SMS phishing protection with impersonation analysis</li>
+<li><strong>Enhanced Device Intelligence</strong>: 50+ v2 fields including MDM integration details</li>
+<li><strong>Audit Trail</strong>: Complete administrative action tracking for compliance</li>
+<li><strong>Advanced Risk Scoring</strong>: Multi-dimensional threat assessment</li>
+<li><strong>Campaign Detection</strong>: Sophisticated coordinated attack identification</li>
+</ul>
+<h3>📊 Enhanced Components</h3>
+<ul>
+<li><strong>4 Analytics Rules</strong>: Comprehensive threat detection across all event types</li>
+<li><strong>6 Hunting Queries</strong>: Advanced threat correlation scenarios</li>
+<li><strong>Enhanced Workbook</strong>: Rich visualizations with v2 data insights</li>
+<li><strong>Validation Framework</strong>: Complete testing and validation methodology</li>
+</ul>
+<h2>📁 Solution Structure</h2>
+<p>```
+Solutions/Lookout/
+├── 📋 README.md                           # This file
+├── 🚀 DEPLOYMENT_GUIDE.md                 # Production deployment guide
+├── 🧪 DEV_TESTING_GUIDE.md               # Development testing guide
+├── 🔌 CODELESS_CONNECTOR_GUIDE.md         # 🆕 Codeless Connector Framework guide
+├── 📊 UPGRADE_ANALYSIS.md                 # v1 to v2 upgrade analysis
+├── 🗺️ V2_FIELD_MAPPING.md                # Complete v2 field mapping
+├── 🏗️ ARCHITECTURE_DIAGRAM.md            # Solution architecture
+├── 📝 TEST_DATA_SAMPLES.md               # Test data documentation
+├── 📄 TEST_DATA_SAMPLES.json             # Sample v2 event data
+├── 
+├── 📊 Data/
+│   └── Solution_Lookout.json             # Solution metadata
+├── 
+├── 🔌 Data Connectors/
+│   ├── requirements.txt                  # Python dependencies
+│   ├── LookoutAPISentinelConnector/      # Legacy function app connector
+│   └── LookoutStreamingConnector_ccp/    # Enhanced CCP connector
+│       ├── LookoutStreaming_DataConnectorDefinition.json
+│       ├── LookoutStreaming_DCR.json     # Data Collection Rule
+│       ├── LookoutStreaming_Table.json   # Table schema
+│       └── LookoutStreaming_PollingConfig.json
+├── 
+├── 🔍 Parsers/
+│   └── LookoutEvents.yaml                # Enhanced v2 parser
+├── 
+├── 🚨 Analytic Rules/
+│   ├── LookoutThreatEvent.yaml           # Legacy threat detection
+│   ├── LookoutThreatEventV2.yaml         # Enhanced threat detection
+│   ├── LookoutDeviceComplianceV2.yaml    # Device compliance monitoring
+│   ├── LookoutSmishingAlertV2.yaml       # 🆕 Smishing detection
+│   └── LookoutAuditEventV2.yaml          # 🆕 Audit event monitoring
+├── 
+├── 🎯 Hunting Queries/
+│   └── LookoutAdvancedThreatHunting.yaml # 🆕 6 advanced hunting scenarios
+├── 
+├── 📊 Workbooks/
+│   ├── LookoutEvents.json                # Legacy workbook</p>
+<p><em>[Content truncated...]</em></p>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.1</td>
+<td>18-12-2025</td>
+<td><strong>Parser</strong> v3.1.0 with support for Streaming/Polling/REST API field structures. Enhanced workbooks and dashboards. <strong>Analytic Rules</strong> updated with MITRE ATT&amp;CK mobile tactics. Added <strong>Jupyter Notebooks</strong> for threat hunting: Mobile Malware, Smishing, Device Compliance, and Audit/Insider Threat analysis.</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>07-11-2025</td>
+<td>New <strong>CCF Connector</strong> added to Solution - <em>Lookout Mobile Threat Detection Connector</em>.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

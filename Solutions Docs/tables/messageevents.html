@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MessageEvents &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>MessageEvents</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<blockquote>
+<p><strong>Defender XDR Only:</strong> This table is available in Microsoft Defender XDR advanced hunting but is not available in the Azure Monitor Log Analytics table reference.</p>
+</blockquote>
+<p>Messages sent and received within your organization at the time of delivery</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">XDR</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-messageevents-table">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (27 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/messageevents">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ConfidenceLevel</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of confidence levels for each threat type identified</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeliveryAction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Delivery action of the message: Delivered, Blocked</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeliveryLocation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Location of the message at the time of delivery</td>
+</tr>
+<tr>
+<td style="text-align: left;">DetectionMethods</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Methods used to detect malware, phishing, or other threats found in the message</td>
+</tr>
+<tr>
+<td style="text-align: left;">GroupId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier for the team or group that the message was sent to</td>
+</tr>
+<tr>
+<td style="text-align: left;">GroupName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the team or group that the message was sent to</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsExternalThread</td>
+<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">Indicates if there are external recipients in the thread (1) or none (0)</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsOwnedThread</td>
+<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">Boolean value indicating whether the message is owned by your organization or not (only the messages owned by your organization can be remediated)</td>
+</tr>
+<tr>
+<td style="text-align: left;">LastEditedTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Date and time when the message was last edited</td>
+</tr>
+<tr>
+<td style="text-align: left;">MessageFormatSubtype</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Subtype of message format, for example, HTML</td>
+</tr>
+<tr>
+<td style="text-align: left;">MessageFormatType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of message format; possible values: RichText, Text</td>
+</tr>
+<tr>
+<td style="text-align: left;">MessageId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier for the message (non-unique)</td>
+</tr>
+<tr>
+<td style="text-align: left;">MessageSubject</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Subject of the message, if it exists</td>
+</tr>
+<tr>
+<td style="text-align: left;">MessageVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Version number of the message</td>
+</tr>
+<tr>
+<td style="text-align: left;">ParentMessageId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier for the message that the current message was a reply to, otherwise this is the same as the MessageId</td>
+</tr>
+<tr>
+<td style="text-align: left;">RecipientDetails</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Array of recipient data (RecipientSmtpAddress, RecipientDisplayName, RecipientType, RecipientObjectId)</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReportId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the event</td>
+</tr>
+<tr>
+<td style="text-align: left;">SafetyTip</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The safety tip that has been added on a message, if any</td>
+</tr>
+<tr>
+<td style="text-align: left;">SenderDisplayName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the sender displayed in the address book, typically a combination of a first name, a middle initial, and a last name or surname</td>
+</tr>
+<tr>
+<td style="text-align: left;">SenderEmailAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Email address of the sender</td>
+</tr>
+<tr>
+<td style="text-align: left;">SenderObjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the senderâs account</td>
+</tr>
+<tr>
+<td style="text-align: left;">SenderType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of user that sent the message, for example, User, Group, Anonymous</td>
+</tr>
+<tr>
+<td style="text-align: left;">TeamsMessageId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the message, as generated by Microsoft 365</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreadId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier of the channel or chat thread that the message is part of</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreadSubtype</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates the channel type, possible values: None, PrivateChannel</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatTypes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Verdict from the filtering stack on whether the message contains malware, phishing, or other threats</td>
+</tr>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the event was recorded</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a></li>
+</ul>
+<hr />
+<h2>Content Items Using This Table (21)</h2>
+<h3>Hunting Queries (21)</h3>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-expanding-recipients-into-separate-rows-18fee342-8209-4270-9198-711646867e71-6a409deb.html">Expanding recipients into separate rows</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-external-malicious-teams-messages-sent-from-internal-senders-9cb4a6eb-c7ae-44ac-b12b-c16ec63da385-04ef94f1.html">External malicious Teams messages sent from internal senders</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-inbound-teams-messages-by-sender-domains-f304b75a-a2a0-45fb-814c-40b6e08211f0-46960408.html">Inbound Teams messages by sender domains</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-malicious-teams-messages-by-url-detection-methods-b3470167-2608-44a2-bd2f-8ebad88a27d5-1e9e7e62.html">Malicious Teams messages by URL detection methods</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-malicious-teams-messages-received-from-external-senders-3cb281a9-34e5-4864-8303-6c07e096818b-7bf50244.html">Malicious Teams messages received from external senders</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-possible-partner-impersonation-in-external-team-messages-f094e9f1-2d55-450d-af1a-0fdcd290f8c4-38f8b481.html">Possible partner impersonation in external Team messages</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-rare-domains-in-external-teams-messages-b2a36ca5-b6a4-4f27-a7d8-7f044885cccf-6bbf2e28.html">Rare Domains in External Teams Messages</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-suspicious-teams-display-name-02bdbd93-02b7-40e4-9468-d501463e57af-e0e082e9.html">Suspicious Teams Display Name</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-teams-communication-from-suspicious-external-users-c3a6f568-8200-4f2f-88b8-a4df5eb54ba9-dc8df746.html">Teams communication from suspicious external users</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-teams-communication-to-suspicious-external-users-12eeae9e-8f0a-4b8c-b437-31c998f15af8-dd66d010.html">Teams communication to suspicious external users</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-teams-messages-from-a-specific-sender-by-threadtype-f6f317c4-8ebe-4f93-9068-720705a75c65-f2ea159e.html">Teams messages from a specific sender by ThreadType</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-top-10-attacked-user-by-phish-messages-8b3bd5c3-1f37-4131-8b3a-a0f6d540e56d-bdaa7c04.html">Top 10 Attacked user by Phish messages</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-top-10-external-senders-sending-teams-phishing-messsages-0bd46e27-9d5a-4abd-889b-829a8b4d29a4-edd7c5d4.html">Top 10 External senders sending Teams phishing messsages</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-top-10-external-senders-sending-teams-messages-511406e2-2bdf-4b4d-a436-17dadbf4829f-13d808aa.html">Top 10 external senders sending Teams messages</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-top-external-sender-domains-malware-90cd91d1-7b90-421c-a5c9-0479b6b7e6a2-2c37f8c2.html">Top External Sender domains - Malware</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-top-external-sender-domains-phish-0c68250b-44b5-46f4-8cac-f3e7149e8c61-1bbf5dbd.html">Top External Sender domains - Phish</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-top-external-sender-domains-spam-0c829a3c-ead1-4ebc-92c9-2e85abb1edeb-01dc2bd1.html">Top External Sender domains - Spam</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-top-external-malicious-senders-74b581fc-e8cb-4b50-9d82-7b91d3a88a08-a3bfa117.html">Top External malicious Senders</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-top-domains-outbound-sending-malicious-teams-messages-inbound-ab2f1fd6-1023-425e-a429-ff74db5709be-6fb6bb25.html">Top domains outbound sending Malicious Teams messages inbound</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-total-number-of-mdo-teams-protection-detections-daily-75ade06c-7326-4e0d-9dfb-27e05043525b-3af53022.html">Total number of MDO Teams protection detections daily</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-punycode-lookalikes-9582b09c-a5cd-4da0-8244-52cc952da158-13260aaa.html">Punycode lookalikes</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

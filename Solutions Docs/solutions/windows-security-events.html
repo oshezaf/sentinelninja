@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Windows Security Events &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Windows Security Events</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Windows Security Events Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.10</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-05-23</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Security%20Events">Windows Security Events</a></td>
+</tr>
+</tbody>
+</table>
+<p>The Windows Security Events solution for Microsoft Sentinel allows you to ingest Security events from your Windows machines using the Windows Agent into Microsoft Sentinel. This solution includes two (2) data connectors to help ingest the logs.</p>
+<ol>
+<li>
+<p><strong>Windows Security Events via AMA</strong> - This data connector helps in ingesting Security Events logs into your Log Analytics Workspace using the new Azure Monitor Agent. Learn more about ingesting using the new Azure Monitor Agent <a href="https://learn.microsoft.com/azure/sentinel/connect-cef-ama">here</a>. <strong>Microsoft recommends using this Data Connector</strong>.</p>
+</li>
+<li>
+<p><strong>Security Events via Legacy Agent</strong> - This data connector helps in ingesting Security Events logs into your Log Analytics Workspace using the legacy Log Analytics agent.</p>
+</li>
+</ol>
+<P style="color:red">**NOTE:** Microsoft recommends installation of Windows Security Events via AMA Connector. Legacy connector uses the Log Analytics agent which is about to be deprecated by **Aug 31, 2024,** and thus should only be installed where AMA is not supported.</p>
+
+<p><strong>Additional Information</strong></p>
+<p>📖 <strong>Setup Guide:</strong> <a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#windows-security-events-via-ama">Windows security events via AMA</a> - Collect Windows security events using Azure Monitor Agent</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/securityevents.html">Security Events via Legacy Agent</a></li>
+<li><a href="../connectors/windowssecurityevents.html">Windows Security Events via AMA</a></li>
+</ul>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>3 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/event.html"><code>Event</code></a></td>
+<td>-</td>
+<td>Analytics, Hunting</td>
+</tr>
+<tr>
+<td><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+<td><a href="../connectors/securityevents.html">Security Events via Legacy Agent</a>, <a href="../connectors/windowssecurityevents.html">Windows Security Events via AMA</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/windowsevent.html"><code>WindowsEvent</code></a></td>
+<td>-</td>
+<td>Hunting</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>72 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">50</td>
+</tr>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">20</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">2</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-ad-fs-remote-auth-sync-connection-2f4165a6-c4fb-4e94-861e-37f1b4d6c0e6-a47c2516.html">AD FS Remote Auth Sync Connection</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-ad-fs-remote-http-network-connection-d57c33a9-76b9-40e0-9dfa-ff0404546410-3555cd57.html">AD FS Remote HTTP Network Connection</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/event.html"><code>Event</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-ad-user-enabled-and-password-not-set-within-48-hours-62085097-d113-459f-9ea7-30216f2ee6af-03184bd5.html">AD user enabled and password not set within 48 hours</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-adfs-database-named-pipe-connection-dcdf9bfc-c239-4764-a9f9-3612e6dff49c-29ef627a.html">ADFS Database Named Pipe Connection</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/event.html"><code>Event</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-excessive-windows-logon-failures-2391ce61-8c8d-41ac-9723-d945b2e90720-36e38369.html">Excessive Windows Logon Failures</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-exchange-oab-virtual-directory-attribute-containing-potential-webshell-faf1a6ff-53b5-4f92-8c55-4b20e9957594-0a1c5425.html">Exchange OAB Virtual Directory Attribute Containing Potential Webshell</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-gain-code-execution-on-adfs-server-via-smb-+-remote-service-or-scheduled-task-12dcea64-bec2-41c9-9df2-9f28461b1295-478b123d.html">Gain Code Execution on ADFS Server via SMB + Remote Service or Scheduled Task</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-microsoft-entra-id-local-device-join-information-and-transport-key-registry-keys-a356c8bd-c81d-428b-aa36-83be706be034-52ba1a8d.html">Microsoft Entra ID Local Device Join Information and Transport Key Registry Keys Access</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Discovery</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-nrt-base64-encoded-windows-process-command-lines-c3e5dbaa-a540-408c-8b36-68bdfb3df088-bed67057.html">NRT Base64 Encoded Windows Process Command-lines</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Execution, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-nrt-process-executed-from-binary-hidden-in-base64-encoded-file-7ad4c32b-d0d2-411c-a0e8-b557afa12fce-92d97690.html">NRT Process executed from binary hidden in Base64 encoded file</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Execution, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-nrt-security-event-log-cleared-508cef41-2cd8-4d40-a519-b04826a9085f-67c5b6b4.html">NRT Security Event log cleared</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-new-exe-deployed-via-default-domain-or-default-domain-controller-policies-05b4bccd-dd12-423d-8de4-5a6fb526bb4f-aa6653ca.html">New EXE deployed via Default Domain or Default Domain Controller Policies</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Execution, LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-non-domain-controller-active-directory-replication-b9d2eebc-5dcb-4888-8165-900db44443ab-b36ed5cd.html">Non Domain Controller Active Directory Replication</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-potential-fodhelper-uac-bypass-56f3f35c-3aca-4437-a1fb-b7a84dc4af00-9be2fced.html">Potential Fodhelper UAC Bypass</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-potential-re-named-sdelete-usage-720d12c6-a08c-44c4-b18f-2236412d59b0-d334efe2.html">Potential re-named sdelete usage</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">DefenseEvasion, Impact</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-process-execution-frequency-anomaly-2c55fe7a-b06f-4029-a5b9-c54a2320d7b8-7d56da33.html">Process Execution Frequency Anomaly</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-scheduled-task-hide-6dd2629c-534b-4275-8201-d7968b4fa77e-3293d2af.html">Scheduled Task Hide</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-sdelete-deployed-via-gpo-and-run-recursively-d9f28fdf-abc8-4f1a-a7e7-1aaec87a2fc5-8f72bd3c.html">Sdelete deployed via GPO and run recursively</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-securityevent-multiple-authentication-failures-followed-by-a-success-cf3ede88-a429-493b-9108-3e46d3c741f7-2bfab486.html">SecurityEvent - Multiple authentication failures followed by a success</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-starting-or-stopping-healthservice-to-avoid-detection-2bc7b4ae-eeaa-4538-ba15-ef298ec1ffae-cde90857.html">Starting or Stopping HealthService to Avoid Detection</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-ad-account-lockout-a308d780-1c39-4fa7-8c21-bb54f174b065-798b810f.html">AD Account Lockout</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-commands-executed-by-wmi-on-new-hosts-potential-impacket-9ce755c1-d2e6-4e2f-82d5-7871ec1aef91-d645d9b4.html">Commands executed by WMI on new hosts - potential Impacket</a></td>
+<td style="text-align: left;">Execution, LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-crash-dump-disabled-on-host-5a3615af-21c9-427e-8bf1-ed2350992bb4-8623f73e.html">Crash dump disabled on host</a></td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-cscript-script-daily-summary-breakdown-36abe031-962d-482e-8e1e-a556ed99d5a3-056955b7.html">Cscript script daily summary breakdown</a></td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-decoy-user-account-authentication-attempt-a4dbc292-87eb-11ec-a8a3-0242ac120002-38f94fe7.html">Decoy User Account Authentication Attempt</a></td>
+<td style="text-align: left;">LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-discord-download-invoked-from-cmd-line-e7dd442a-0af8-48eb-8358-9e91f4911849-404b8911.html">Discord download invoked from cmd line</a></td>
+<td style="text-align: left;">Execution, CommandAndControl, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-domain-controller-installation-media-creation-7e5f3a9a-542c-417a-a429-4ed500c5c4d8-fec25b2e.html">Domain controller installation media creation</a></td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a><br><a href="../tables/windowsevent.html"><code>WindowsEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-entropy-for-processes-for-a-given-host-05208917-82de-46f7-a190-a65739a690f4-59ba7296.html">Entropy for Processes for a given Host</a></td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-enumeration-of-users-and-groups-a1e993de-770a-4434-83e9-9e3b47a6e470-31ff9f63.html">Enumeration of users and groups</a></td>
+<td style="text-align: left;">Discovery</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-establishing-internal-proxies-ce38c16c-a560-46c0-88d6-7757b88f08e9-e3cde3e0.html">Establishing internal proxies</a></td>
+<td style="text-align: left;">CommandandControl</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a><br><a href="../tables/windowsevent.html"><code>WindowsEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-exchange-powershell-snapin-added-8afd1086-fc9a-4d26-b3ff-5c794c79a59a-8e25d87f.html">Exchange PowerShell Snapin Added</a></td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-group-added-to-built-in-domain-local-or-global-group-cb47a115-2616-4d56-890d-b28c14bc83e4-cbcd997b.html">Group added to Built in Domain Local or Global Group</a></td>
+<td style="text-align: left;">Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-host-exporting-mailbox-and-removing-export-2e2fab4b-83dd-4cf8-b2dd-063d0fd15513-f6188024.html">Host Exporting Mailbox and Removing Export</a></td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-hosts-running-a-rare-process-82e04ff9-a289-4005-9fcd-f1deec72e3fc-91003c14.html">Hosts Running a Rare Process</a></td>
+<td style="text-align: left;">Execution, Persistence, Discovery, LateralMovement, Collection</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-hosts-running-a-rare-process-with-commandline-5550b630-7b8a-444e-a585-ec8c7533c028-2ae5a42b.html">Hosts Running a Rare Process with Commandline</a></td>
+<td style="text-align: left;">Execution, Persistence, Discovery, LateralMovement, Collection</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-hosts-with-new-logons-62e2df59-1535-4c8e-ac6c-c91faeed0179-01cac37a.html">Hosts with new logons</a></td>
+<td style="text-align: left;">CredentialAccess, LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-invoke-powershelltcponeline-usage.-a344e28e-095d-47fb-84a8-d06edd31d2cb-5e9d5425.html">Invoke-PowerShellTcpOneLine Usage.</a></td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-krbrelayup-local-privilege-escalation-service-creation-ccbc73a1-d303-4613-aed4-478e996f454e-0d6549ff.html">KrbRelayUp Local Privilege Escalation Service Creation</a></td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/event.html"><code>Event</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-least-common-parent-and-child-process-pairs-3712595d-6f47-416b-963a-605201ed2764-304136a9.html">Least Common Parent And Child Process Pairs</a></td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-least-common-processes-including-folder-depth-6d04a1ef-1b4d-4ff8-a76c-ad7d1a396136-6a4e1ff5.html">Least Common Processes Including Folder Depth</a></td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-least-common-processes-by-command-line-088d30e9-c02b-46b1-bd1f-d5b6d6b782f0-21ac6383.html">Least Common Processes by Command Line</a></td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-long-lookback-user-account-created-and-deleted-within-10mins-6135a90e-ba30-4f36-9b6a-3a350050704b-6a4acaf0.html">Long lookback User Account Created and Deleted within 10mins</a></td>
+<td style="text-align: left;">Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-masquerading-files-60304ebf-ebdd-4869-a702-e0216d90ab46-fbac27a6.html">Masquerading files</a></td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-multiple-explicit-credential-usage-4648-events-9e3fab4b-94dd-4cf9-b2aa-063d0fd25513-bf7d18d4.html">Multiple Explicit Credential Usage - 4648 events</a></td>
+<td style="text-align: left;">Discovery, LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-new-child-process-of-w3wp.exe-f885fb16-dfd3-4c90-83d9-7a66b9d9b654-75c40006.html">New Child Process of W3WP.exe</a></td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-new-powershell-scripts-encoded-on-the-commandline-4e78daf1-8bba-4b5d-8a8b-c75fe9bbc2d9-fc78c747.html">New PowerShell scripts encoded on the commandline</a></td>
+<td style="text-align: left;">Execution, CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-new-processes-observed-in-last-24-hours-513e3a11-e1bb-4cfc-8af9-451da0407e6b-2f72302d.html">New processes observed in last 24 hours</a></td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-nishang-reverse-tcp-shell-in-base64-87c1f90a-f868-4528-a9c1-15520249cae6-29ac834c.html">Nishang Reverse TCP Shell in Base64</a></td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-potential-exploitation-of-ms-rprn-printer-bug-c29a03c6-d074-4934-afae-df1aeb30da70-2d22b8de.html">Potential Exploitation of MS-RPRN printer bug</a></td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-powershell-downloads-d83f40fc-bbcc-4020-8d45-ad2d82355cb2-eb98129c.html">PowerShell downloads</a></td>
+<td style="text-align: left;">Execution, CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-powercat-download-c2112ca3-aae0-4079-9bff-d74c54bb5fe5-e8217682.html">Powercat Download</a></td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-rare-process-path-0ff22697-dc58-4623-b844-a767629840cd-668afb9c.html">Rare Process Path</a></td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-rare-processes-run-by-service-accounts-af02987c-949d-47d5-b0ae-64d8e1b674e2-173a9ff0.html">Rare Processes Run by Service Accounts</a></td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-remote-task-creation-update-using-schtasks-process-1e4a5be3-4a60-4099-b286-2d3642575889-38edc3ad.html">Remote Task Creation/Update using Schtasks Process</a></td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-service-installation-from-user-writable-directory-5a9ccb48-1316-46e1-89d1-aca0355c305e-81f8a107.html">Service installation from user writable directory</a></td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/event.html"><code>Event</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-summary-of-failed-user-logons-by-reason-of-failure-e7642e6e-cf27-46ec-a4b9-e4475228fead-bc8b05cf.html">Summary of failed user logons by reason of failure</a></td>
+<td style="text-align: left;">CredentialAccess, LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-summary-of-user-logons-by-logon-type-d0f13bb9-e713-4f89-b610-1806326a1dea-12378152.html">Summary of user logons by logon type</a></td>
+<td style="text-align: left;">CredentialAccess, LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-summary-of-users-created-using-uncommon-undocumented-commandline-switches-5e76eaf9-79a7-448c-bace-28e5b53b8396-824f28e4.html">Summary of users created using uncommon/undocumented commandline switches</a></td>
+<td style="text-align: left;">CredentialAccess, LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-suspected-lsass-dump-58fe8fc8-54fa-48cd-bac3-197f8d862429-8666c9e8.html">Suspected LSASS Dump</a></td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-suspicious-enumeration-using-adfind-tool-dd6fb889-43ef-44e1-a01d-093ab4bb12b2-fef95624.html">Suspicious Enumeration using Adfind Tool</a></td>
+<td style="text-align: left;">Execution, Discovery, Collection</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-suspicious-windows-login-outside-normal-hours-e7bfbc3f-98c7-4aaa-a64c-de9c058b86b2-15ccdfd0.html">Suspicious Windows Login Outside Normal Hours</a></td>
+<td style="text-align: left;">InitialAccess, LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-suspicious-command-line-tokens-in-lolbins-or-lolscripts-6cdef739-18f6-4b3a-8fdc-93e9a4302dbf-46ec7a62.html">Suspicious command line tokens in LolBins or LolScripts</a></td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-uncommon-processes-bottom-5-2ff4b10c-7056-4898-83fd-774104189fd5-2ef29fea.html">Uncommon processes - bottom 5%</a></td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-user-account-added-to-built-in-sensitive-or-privileged-domain-local-or-global-gr-8d69a665-074a-443b-aae6-5dd9bdd5cfb1-0118579e.html">User Account added to Built in Sensitive or Privileged Domain Local or Global Group</a></td>
+<td style="text-align: left;">Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-user-account-added-or-removed-from-a-security-group-by-an-unauthorized-user-d57f675c-ad6c-44d0-95fb-3bf707e70155-3834c59d.html">User account added or removed from a security group by an unauthorized user</a></td>
+<td style="text-align: left;">Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-user-created-by-unauthorized-user-42ae9690-89ce-4063-9a90-465badad5395-6cbb1bb9.html">User created by unauthorized user</a></td>
+<td style="text-align: left;">Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-vip-account-more-than-6-failed-logons-in-10-892cd37e-f9e1-49c3-b0b2-d74f52ac7b71-f57a0ad0.html">VIP account more than 6 failed logons in 10</a></td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-vip-account-more-than-6-failed-logons-in-10-e8d36582-c403-4466-bd44-ebede5b6fa6e-f9a5b0f7.html">VIP account more than 6 failed logons in 10</a></td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-windows-system-shutdown-reboot-sysmon-14fab7a3-cb11-41d6-a19a-b55a4a0ef3b1-e2599fa5.html">Windows System Shutdown/Reboot(Sysmon)</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/event.html"><code>Event</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-windows-system-time-changed-on-hosts-9fd6f61d-2cc3-48de-acf5-7194e78d6ea1-9fe3fe4a.html">Windows System Time changed on hosts</a></td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-eventanalyzer-30e8f73e.html">EventAnalyzer</a></td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/windows-security-events-identityandaccess-d8681d3f.html">IdentityAndAccess</a></td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.11</td>
+<td>28-01-2026</td>
+<td>Updated <strong>Analytic Rule</strong> to fix the link from the description &amp;  Update <strong>Analytic Rule</strong> NonDCActiveDirectoryReplication - to reduce false positive results</td>
+</tr>
+<tr>
+<td>3.0.10</td>
+<td>12-01-2026</td>
+<td>Update <strong>Analytic Rule</strong> NonDCActiveDirectoryReplication - fix swapped fields</td>
+</tr>
+<tr>
+<td>3.0.9</td>
+<td>01-10-2024</td>
+<td>Removed kind from  <strong>Hunting Query</strong> [Service installation from user writable directory]</td>
+</tr>
+<tr>
+<td>3.0.8</td>
+<td>23-07-2024</td>
+<td>Updated the Workspace type from resource type picker to resource picker in <strong>Workbook</strong></td>
+</tr>
+<tr>
+<td>3.0.7</td>
+<td>12-06-2024</td>
+<td>Fixed the bugs from <strong>Analytic Rules</strong> NRT_execute_base64_decodedpayload.yaml and ADFSRemoteAuthSyncConnection.yaml</td>
+</tr>
+<tr>
+<td>3.0.6</td>
+<td>16-05-2024</td>
+<td>Fixed wrong fieldMappings of <strong>Analytic Rules</strong> password_not_set.yaml</td>
+</tr>
+<tr>
+<td>3.0.5</td>
+<td>21-03-2024</td>
+<td>Updated Entity Mappings of <strong>Analytic Rules</strong></td>
+</tr>
+<tr>
+<td>3.0.4</td>
+<td>06-03-2024</td>
+<td>Added New <strong>Hunting Queries</strong></td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>19-02-2024</td>
+<td>Updated Entity Mapping in  <strong>Analytical Rule</strong> [Non Domain Controller Active Directory Replication]</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>23-01-2024</td>
+<td>Added Sub-Technique in Template</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>13-12-2023</td>
+<td>Updated query in <strong>Analytical Rule</strong> (AD user enabled and password not set within 48 hours)</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>26-12-2023</td>
+<td>Modified text as there is rebranding from Azure Active Directory to Microsoft Entra ID.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

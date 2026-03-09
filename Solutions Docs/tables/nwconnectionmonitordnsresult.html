@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NWConnectionMonitorDNSResult &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>NWConnectionMonitorDNSResult</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for NWConnectionMonitorDNSResult table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Network</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/nwconnectionmonitordnsresult">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (38 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/nwconnectionmonitordnsresult">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">ChecksFailed</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The total number of checks failed under the test</td>
+</tr>
+<tr>
+<td style="text-align: left;">ChecksTotal</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The total number of checks done under the test</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConnectionMonitorResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The connection monitor resource id of the test</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The address of the destination configured for the test</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationAgentId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The destination agent id</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address of the destination</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The destination end point name</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationPort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The destination port configured for the test</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The resource id of the Destination machine</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationSubnet</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">If applicable, the subnet of the destination</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the destination machine configured for the test</td>
+</tr>
+<tr>
+<td style="text-align: left;">DomainName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The domain name of DNS Test</td>
+</tr>
+<tr>
+<td style="text-align: left;">Protocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The protocol of the test</td>
+</tr>
+<tr>
+<td style="text-align: left;">RecordId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The record id for unique identification of test result record</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseRecordCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The total count of DNS response records</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseRecords</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The DNS Response records</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseRecordType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of DNS response record</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The address of the source configured for the test</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceAgentId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source agent id</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address of the source</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source end point name</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The resource id of the source machine</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSubnet</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The subnet of the source</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the source machine configured for the test</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TestConfigurationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The test configuration name to which the test belongs to</td>
+</tr>
+<tr>
+<td style="text-align: left;">TestGroupName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The test group name to which the test belongs to</td>
+</tr>
+<tr>
+<td style="text-align: left;">TestResult</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The result of the test</td>
+</tr>
+<tr>
+<td style="text-align: left;">TestResultCriterion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The result criterion of the test</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) of when the log was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">ValidationChecks</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The validation checks of DNS Result</td>
+</tr>
+<tr>
+<td style="text-align: left;">ValidationIssues</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The issues identified as part of DNS Test</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.network/networkwatchers/connectionmonitors</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ServiceNow TISC &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>ServiceNow TISC</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ServiceNow.svg" alt="ServiceNow TISC Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">ServiceNow</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.servicenow.com/now">https://support.servicenow.com/now</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">ServiceNow</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2025-01-15</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2025-01-15</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ServiceNow%20TISC">ServiceNow TISC</a></td>
+</tr>
+</tbody>
+</table>
+<p>ServiceNow's Threat Intelligence Security Center (TISC) is an advanced security intelligence platform, and this solution integrates with Microsoft Sentinel to provide comprehensive threat detection, analysis, and response capabilities. This integration enables organizations to aggregate threat intelligence from multiple sources, automate security workflows, and enhance their overall security posture. The solution facilitates bi-directional data exchange between TISC and Microsoft Sentinel, allowing security teams to seamlessly share threat indicators and observables across both platforms. The integration supports incident enrichment workflows, enabling security analysts to make more informed decisions based on consolidated threat intelligence. Through custom connectors and playbooks, the solution streamlines security operations by automating threat data correlation, reducing manual effort, and accelerating incident response times.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p><strong>This solution does not include data connectors.</strong></p>
+<p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
+<h2>Content Items</h2>
+<p>This solution includes <strong>8 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">8</td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/servicenow-tisc-export-domain-entity-to-tisc-5de81ee3.html">Export Domain Entity to TISC</a></td>
+<td style="text-align: left;">This playbook leverages the ServiceNow TISC API to export Domain indicators found in Microsoft Senti...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/servicenow-tisc-export-hash-entity-to-tisc-6053b432.html">Export Hash Entity to TISC</a></td>
+<td style="text-align: left;">This playbook leverages the ServiceNow TISC API to export Hash indicators found in Microsoft Sentine...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/servicenow-tisc-export-ip-entity-to-tisc-3b5af420.html">Export IP Entity to TISC</a></td>
+<td style="text-align: left;">This playbook leverages the ServiceNow TISC API to export IP indicators found in Microsoft Sentinel ...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/servicenow-tisc-export-url-entity-to-tisc-b2fc0a62.html">Export URL Entity to TISC</a></td>
+<td style="text-align: left;">This playbook leverages the ServiceNow TISC API to export URL indicators found in Microsoft Sentinel...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/servicenow-tisc-export-all-incident-entities-to-tisc-e83bea33.html">Export all Incident Entities to TISC</a></td>
+<td style="text-align: left;">This playbook leverages the ServiceNow TISC API to export IP, Domain, URL, and Hash indicators found...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/servicenow-tisc-servicenow-tisc-batch-indicator-uploader-a81a3c4d.html">ServiceNow TISC Batch Indicator Uploader</a></td>
+<td style="text-align: left;">This playbook will write indicators in batch to ThreatIntelligenceIndicator log analytics table. Thi...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/servicenow-tisc-servicenow-tisc-import-observables-from-tisc-3a29aefe.html">ServiceNow TISC Import Observables from TISC</a></td>
+<td style="text-align: left;">This playbook leverages the ServiceNow TISC API to import IP, Domain, URL, and Hash observables from...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/servicenow-tisc-servicenow-tisc-incident-enrichment-fb8bc7bb.html">ServiceNow TISC Incident Enrichment</a></td>
+<td style="text-align: left;">This playbook leverages the ServiceNow TISC API to enrich IP, Domain, URL, and Hash indicators found...</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ServiceNow%20TISC/README.md">ServiceNow TISC/README.md</a></em></p>
+</blockquote>
+<h2>Introduction</h2>
+<p>ServiceNow's Threat Intelligence Security Center (TISC) is an advanced security intelligence platform, and this solution integrates with Microsoft Sentinel to provide comprehensive threat detection, analysis, and response capabilities. This integration enables organizations to aggregate threat intelligence from multiple sources, automate security workflows, and enhance their overall security posture. The solution facilitates bi-directional data exchange between TISC and Microsoft Sentinel, allowing security teams to seamlessly share threat indicators and observables across both platforms. The integration supports incident enrichment workflows, enabling security analysts to make more informed decisions based on consolidated threat intelligence. Through custom connectors and playbooks, the solution streamlines security operations by automating threat data correlation, reducing manual effort, and accelerating incident response times. </p>
+<p>ServiceNow TISC Azure Sentinel Solution enables a range of capabilities, listed as follows:
+ - Import Observables from TISC  to the Sentinel Workspace (into the ThreatIntelligenceIndicator table)
+ - Enirchment of Sentinel incidents by fetching all details of entities associated with the incident.
+ - Export entities associated to a Sentinel incident to TISC</p>
+<p>This solutions provides all the required playbooks, which the customers can deploy into their Sentinel Workspace.</p>
+<h2>Prerequisites</h2>
+<h3>Solution Dependencies</h3>
+<p>The Threat Intelligence solution from Microsoft Sentinel Content Hub must be installed for indicators to be forwarded to Microsoft Sentinel ThreatIntelligenceIndicator log table.</p>
+<h3>Roles and Permissions on Sentinel</h3>
+<p>Microsoft article that describes roles and permissions in Microsoft Sentinel Roles and permissions in <a href="https://learn.microsoft.com/en-us/azure/sentinel/roles">Microsoft Sentinel</a></p>
+<h3>ServiceNow TISC API Access</h3>
+<p>This solution is shipped with a custom connector which connects with TISC APIs for data exchange with Sentinel. The custom connector requires a valid username and password for the ServiceNow instance. And the user that is being used for the custom connector should have the following role:
+-  <code>sn_sec_tisc.api_azure_sentinel_solution</code></p>
+<h2>Custom Connector for TISC API</h2>
+<p>When installing the custom connector, make sure to provide valid ServiceNow instance URL in the configuration screen. </p>
+<p>Here are the list of components provided by the logic apps custom connector, which internally calls the TISC API. </p>
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <strong>Import Observables in Indicator STIX format</strong>
+      </td>
+      <td>
+        Returns list of observables that matches with filtering criteria in format accepted by the <a href="https://learn.microsoft.com/en-us/azure/sentinel/upload-indicators-api">Microsoft Sentinel Upload Indicator connector</a>
+      </td>
+    </tr>
+
+*[Content truncated...]*
+
+## Release Notes
+
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                     |
+|-------------|--------------------------------|--------------------------------------------------------|
+| 3.0.0       | 15-01-2025                     | Initial Solution Release                               |
+
+---
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md) · [🔍](https://oshezaf.github.io/sentinelninja/index.html)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+</div>
+</body>
+</html>

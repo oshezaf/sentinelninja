@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vectra AI Stream &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Vectra AI Stream</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AIVectraDetect.svg" alt="Vectra AI Stream Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Vectra AI</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://www.vectra.ai/support">https://www.vectra.ai/support</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Vectra TME Team - tme@vetcra.ai</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2021-10-18</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2024-05-02</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20AI%20Stream">Vectra AI Stream</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong> Please refer to the following before installing the solution: </p>
+<p>• There may be <a href="https://aka.ms/sentinelsolutionsknownissues">known issues</a> pertaining to this Solution, please refer to them before installing.</p>
+<p>The <a href="https://www.vectra.ai/products/platform">Vectra AI Stream</a> solution allows you to easily connect your Vectra Platform with Microsoft Sentinel, to ingest network metadata collected at scale throughout your environment by Vectra sensors (On-premise or Cloud). This gives you deep insight into your organization's network traffic and improves your security operation capabilities. For a complete list of protocols and attributes supported, check out our <a href="https://support.vectra.ai/s/article/KB-VS-1245">Network Metadata reference guide</a></p>
+<ol>
+<li>
+<p>** Vectra AI Stream (Network Enriched Metadata) via AMA<strong> - This data connector helps ingest Vectra AI Stream events into your Log Analytics Workspace using the new Azure Monitor Agent. Learn more about ingesting using the new Azure Monitor Agent <a href="https://learn.microsoft.com/en-us/azure/sentinel/connect-cef-syslog-ama">here</a>. </strong>Microsoft recommends using this Data Connector**.</p>
+</li>
+<li>
+<p>** Vectra AI Stream (Network Enriched Metadata) via Legacy Agent** - This data connector helps ingest Vectra AI Stream events into your Log Analytics Workspace using the legacy Log Analytics agent.</p>
+</li>
+</ol>
+<p><strong>NOTE:</strong> Microsoft recommends installation of ** Vectra AI Stream (Network Enriched Metadata) via AMA Connector. Legacy connector uses the Log Analytics agent which is about to be deprecated by <strong>Aug 31, 2024,</strong> and thus should only be installed where AMA is not supported. Using MMA and AMA on same machine can cause log duplication and extra ingestion cost <a href="https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate">more details</a>.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/aivectrastream.html">AI Vectra Stream via Legacy Agent</a> 🔶</li>
+<li><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a> 🔶</li>
+</ul>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>18 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/vectrastream-cl.html"><code>VectraStream_CL</code></a> 🔶</td>
+<td><a href="../connectors/aivectrastream.html">AI Vectra Stream via Legacy Agent</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-beacon-cl.html"><code>vectra_beacon_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-dcerpc-cl.html"><code>vectra_dcerpc_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-dhcp-cl.html"><code>vectra_dhcp_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-dns-cl.html"><code>vectra_dns_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-http-cl.html"><code>vectra_http_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-isession-cl.html"><code>vectra_isession_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-kerberos-cl.html"><code>vectra_kerberos_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-ldap-cl.html"><code>vectra_ldap_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-ntlm-cl.html"><code>vectra_ntlm_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-radius-cl.html"><code>vectra_radius_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-rdp-cl.html"><code>vectra_rdp_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-smbfiles-cl.html"><code>vectra_smbfiles_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-smbmapping-cl.html"><code>vectra_smbmapping_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-smtp-cl.html"><code>vectra_smtp_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-ssh-cl.html"><code>vectra_ssh_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-ssl-cl.html"><code>vectra_ssl_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-x509-cl.html"><code>vectra_x509_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>20 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">20</td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/vectrastream-function.html">VectraStream_function</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/vectrastream-cl.html"><code>VectraStream_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/vectra-beacon.html">vectra_beacon</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/vectra-beacon-cl.html"><code>vectra_beacon_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/vectra-dcerpc.html">vectra_dcerpc</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/vectra-dcerpc-cl.html"><code>vectra_dcerpc_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/vectra-dhcp.html">vectra_dhcp</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/vectra-dhcp-cl.html"><code>vectra_dhcp_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/vectra-dns.html">vectra_dns</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/vectra-dns-cl.html"><code>vectra_dns_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/vectra-http.html">vectra_http</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/vectra-http-cl.html"><code>vectra_http_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/vectra-isession.html">vectra_isession</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/vectra-isession-cl.html"><code>vectra_isession_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/vectra-kerberos.html">vectra_kerberos</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/vectra-kerberos-cl.html"><code>vectra_kerberos_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/vectra-ldap.html">vectra_ldap</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/vectra-ldap-cl.html"><code>vectra_ldap_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/vectra-match.html">vectra_match</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/vectra-match-cl.html"><code>vectra_match_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/vectra-ntlm.html">vectra_ntlm</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/vectra-ntlm-cl.html"><code>vectra_ntlm_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/vectra-radius.html">vectra_radius</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/vectra-radius-cl.html"><code>vectra_radius_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/vectra-rdp.html">vectra_rdp</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/vectra-rdp-cl.html"><code>vectra_rdp_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/vectra-smbfiles.html">vectra_smbfiles</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/vectra-smbfiles-cl.html"><code>vectra_smbfiles_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/vectra-smbmapping.html">vectra_smbmapping</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/vectra-smbmapping-cl.html"><code>vectra_smbmapping_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/vectra-smtp.html">vectra_smtp</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/vectra-smtp-cl.html"><code>vectra_smtp_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/vectra-ssh.html">vectra_ssh</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/vectra-ssh-cl.html"><code>vectra_ssh_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/vectra-ssl.html">vectra_ssl</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/vectra-ssl-cl.html"><code>vectra_ssl_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/vectra-stream.html">vectra_stream</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/vectra-x509.html">vectra_x509</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/vectra-x509-cl.html"><code>vectra_x509_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.1</td>
+<td>19-11-2024</td>
+<td>Added new <strong>Parser</strong> vectra_match to the Solution </br>Update the solution to support a new metadata type: match (suricata)</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>10-07-2024</td>
+<td>Added new <strong>AMA Data Connector</strong></br> Removed deprecated content <strong>Hunting Queries</strong> And <strong>Workbooks</strong></br> Added new <strong>Parsers</strong> to the Solution</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

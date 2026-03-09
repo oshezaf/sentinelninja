@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Shadows Playbook to Update Incident Status &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Digital Shadows Playbook to Update Incident Status</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>This playbook will update the status of Microsoft Sentinel incidents to match the status of the alerts imported from Digital Shadows SearchLight</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/digital-shadows.html">Digital Shadows</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital%20Shadows/Playbooks/DigitalShadowsPlaybooktoUpdateIncidentStatus/DigitalShadowsPlaybook-UpdateIncidentStatus.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital%20Shadows/Playbooks/DigitalShadowsPlaybooktoUpdateIncidentStatus/readme.md">DigitalShadowsPlaybooktoUpdateIncidentStatus/readme.md</a></em></p>
+</blockquote>
+<h1>DigitalShadowsPlaybook-UpdateIncidentStatus</h1>
+<h2>Overview</h2>
+<p>The DigitalShadowsPlaybook-UpdateIncidentStatus is run as an Alert automation by Analytics Rules created as part of the Digital Shadows SearchLight Solution. The main purpose of the playbook is to update the Microsoft Sentinel Incident Status as per the logs received by the Digital Shadows Data Connector. Following is the sequence of events take place for triggering the playbook:</p>
+<ol>
+<li>Digital Shadows Data Connector fetches the Triage Items from Digital Shadows Searchlight portal</li>
+<li>The Analytic Rule identifies an update in the Triage Item as an alert</li>
+<li>Each alert with new triage item (identified by the unique triage item id) generates a Microsoft Sentinel Incident</li>
+<li>All the updates detected by Analytic Rule are identified as alerts and correlated with an incident if the Incident (with same triage item id) already exists</li>
+<li>Creation of an alert triggers the "DigitalShadowsPlaybook-UpdateIncidentStatus" playbook as an Alert automation, so that the "Status" of the incident, associated with alert's triage item id, is updated</li>
+</ol>
+<h2>Playbook Workflow</h2>
+<p>Following is the workflow of the playbook:</p>
+<ol>
+<li>Playbook is triggered on alert creation</li>
+<li>Get incident associated with the alert</li>
+<li>Get the custom details from the alert</li>
+<li>Retrieve the updated value for Status</li>
+<li>Update the Incident Status by mapping the Digital Shadows Status to corresponding Microsoft Sentinel Incident Status</li>
+</ol>
+<h2>Prerequisite</h2>
+<p>This playbook is intended to be used with the Digital Shadows Data Connector and is typically installed as part of the Digital Shadows SearchLight Solution. It is not intended to be used standalone.</p>
+<p>If installing manually, for use with the Digital Shadows Data Connector, it needs to be deployed under the same subscription.</p>
+<p>Digital Shadows SearchLight API credentials are required to configure the connector.</p>
+<h2>Deploying the Playbook manually</h2>
+<p>As described above, this playbook is intended to be used as part of the Digital Shadows Solution and not standalone. The following instructions enable users to manually install the playbook if required.</p>
+<ol>
+<li>To deploy the Playbook, click the "Deploy to Azure" button. This will launch the ARM Template deployment wizard.</li>
+<li>Fill in the required parameters:<ul>
+<li>Playbook Name: Enter the playbook name here, a default is provided</li>
+</ul>
+</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDigital%20Shadows%2FPlaybooks%2FDigitalShadowsPlaybook-UpdateIncidentStatus.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDigital%20Shadows%2FPlaybooks%2FDigitalShadowsPlaybook-UpdateIncidentStatus.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<h2>Post-deployment instructions</h2>
+<h3>Configuring role assignment</h3>
+<p>Once deployment is complete, the playbook requires the 'Microsoft Sentinel Responder' role in order to be able to update the status of Incidents.</p>
+<ul>
+<li>Go to Microsoft Sentinel &gt; Settings</li>
+<li>Click "Workspace settings" to navigate to the Log Analytics workspace</li>
+<li>Click "Access control (IAM)"</li>
+<li>Click "Add" &gt; Add role assignment</li>
+<li>Select "Microsoft Sentinel Responder" from the list of Roles and click "Next"</li>
+<li>On the "Members" tab</li>
+<li>Assign access to: Managed identity</li>
+<li>Click "Select members"</li>
+<li>In the pop-out menu, click the "Managed identity" drop down and select "Logic app"</li>
+<li>Select the Logic app named "DigitalShadowsPlaybook-UpdateIncidentStatus" and click the Select button</li>
+<li>Optionally provide a description such as "Provide access to the Digital Shadows UpdateIncidentStatus playbook to update the status of Microsoft Sentinel Incidents from changes in Digital Shadows SearchLight Portal".</li>
+<li>Click "Review + assign" twice to create the new role assignment</li>
+</ul>
+<h3>Configuring the Analytic Rule</h3>
+<p>Once deployment is complete, the Digital Shadows Analytics Rules need to be configured with the playbook as an Alert automation.</p>
+<ul>
+<li>Go to Microsoft Sentinel &gt; Analytics</li>
+<li>The Digital Shadows Solution usually creates two Analytics Rules. Both need to be updated in the same way</li>
+<li>Select a rule and click on the "Edit" button</li>
+<li>Skip to the Automated response section</li>
+<li>Under "Alert automation" select the "DigitalShadowsPlaybook-UpdateIncidentStatus" playbook in the drop down</li>
+<li>Leave the remaining settings on the page unchanged</li>
+<li>Save the Analytic Rule</li>
+</ul>
+<p>Repeat these instructions for the other Analytic Rule. This will execute the playbook automatically when new alerts are created by the Digital Shadows Analytic Rules.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/digital-shadows.html">Back to Digital Shadows</a></p>
+</div>
+</body>
+</html>

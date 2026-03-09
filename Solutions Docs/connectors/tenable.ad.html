@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ 🔍 Tenable.ad &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>⚠️ 🔍 Tenable.ad</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+<p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
+</blockquote>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>Tenable.ad</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Tenable</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/tenablead.html">TenableAD</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/mma.html">MMA</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TenableAD/Data%20Connectors/Tenable.ad.json">Tenable.ad.json</a></td>
+</tr>
+</tbody>
+</table>
+<p>Tenable.ad connector allows to export Tenable.ad Indicators of Exposures, trailflow and Indicators of Attacks logs to Azure Sentinel in real time.</p>
+<p>It provides a data parser to manipulate the logs more easily. The different workbooks ease your Active Directory monitoring and provide different ways to visualize the data. The analytic templates allow to automate responses regarding different events, exposures, or attacks.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/alsidforadlog-cl.html"><code>AlsidForADLog_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/tenable-ad-cl.html"><code>Tenable_ad_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Access to Tenable.ad Configuration</strong>: Permissions to configure syslog alerting engine</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+<p>This data connector depends on a parser based on a Kusto Function to work as expected. <a href="https://raw.githubusercontent.com/tenable/Azure-Sentinel/Tenable.ad-connector/Solutions/TenableAD/Parsers/afad_parser.kql">Follow these steps</a> to create the Kusto Functions alias, <strong>afad_parser</strong></p>
+</blockquote>
+<p><strong>1. Configure the Syslog server</strong></p>
+<p>You will first need a <strong>linux Syslog</strong> server that Tenable.ad will send logs to. Typically you can run <strong>rsyslog</strong> on <strong>Ubuntu</strong>.
+ You can then configure this server as you wish, but it is recommended to be able to output Tenable.ad logs in a separate file.</p>
+<p>Configure rsyslog to accept logs from your Tenable.ad IP address.:</p>
+<pre><code class="language-shell">sudo -i
+
+# Set Tenable.ad source IP address
+export TENABLE_AD_IP={Enter your IP address}
+
+# Create rsyslog configuration file
+cat &gt; /etc/rsyslog.d/80-tenable.conf &lt;&lt; EOF
+\$ModLoad imudp
+\$UDPServerRun 514
+\$ModLoad imtcp
+\$InputTCPServerRun 514
+\$AllowedSender TCP, 127.0.0.1, $TENABLE_AD_IP
+\$AllowedSender UDP, 127.0.0.1, $TENABLE_AD_IP
+\$template MsgTemplate,&quot;%TIMESTAMP:::date-rfc3339% %HOSTNAME% %programname%[%procid%]:%msg%\n&quot;
+\$template remote-incoming-logs, &quot;/var/log/%PROGRAMNAME%.log&quot;
+*.* ?remote-incoming-logs;MsgTemplate
+EOF
+
+# Restart rsyslog
+systemctl restart rsyslog
+</code></pre>
+<p><strong>2. Install and onboard the Microsoft agent for Linux</strong></p>
+<p>The OMS agent will receive the Tenable.ad syslog events and publish it in Sentinel :
+<strong>Choose where to install the agent:</strong></p>
+<p><strong>Install agent on Azure Linux Virtual Machine</strong></p>
+<p>Select the machine to install the agent on and then click <strong>Connect</strong>.
+  - <strong>Install agent on Linux Virtual Machine</strong></p>
+<p><strong>Install agent on a non-Azure Linux Machine</strong></p>
+<p>Download the agent on the relevant machine and follow the instructions.
+  - <strong>Install agent on Linux (Non-Azure)</strong></p>
+<p><strong>3. Check agent logs on the Syslog server</strong></p>
+<pre><code class="language-shell">tail -f /var/opt/microsoft/omsagent/log/omsagent.log
+</code></pre>
+<p><strong>4. Configure Tenable.ad to send logs to your Syslog server</strong></p>
+<p>On your <strong>Tenable.ad</strong> portal, go to <em>System</em>, <em>Configuration</em> and then <em>Syslog</em>.
+From there you can create a new Syslog alert toward your Syslog server.</p>
+<p>Once this is done, check that the logs are correctly gathered on your server in a separate file (to do this, you can use the <em>Test the configuration</em> button in the Syslog alert configuration in Tenable.ad).
+If you used the Quickstart template, the Syslog server will by default listen on port 514 in UDP and 1514 in TCP, without TLS.</p>
+<p><strong>5. Configure the custom logs</strong></p>
+<p>Configure the agent to collect the logs.</p>
+<ol>
+<li>In Sentinel, go to <strong>Configuration</strong> -&gt; <strong>Settings</strong> -&gt; <strong>Workspace settings</strong> -&gt; <strong>Custom logs</strong>.</li>
+<li>Click <strong>Add custom log</strong>.</li>
+<li>Upload a sample Tenable.ad.log Syslog file from the <strong>Linux</strong> machine running the <strong>Syslog</strong> server and click <strong>Next</strong></li>
+<li>Set the record delimiter to <strong>New Line</strong> if not already the case and click <strong>Next</strong>.</li>
+<li>Select <strong>Linux</strong> and enter the file path to the <strong>Syslog</strong> file, click <strong>+</strong> then <strong>Next</strong>. The default location of the file is <code>/var/log/Tenable.ad.log</code> if you have a Tenable version &lt;3.1.0, you must also add this linux file location <code>/var/log/AlsidForAD.log</code>.</li>
+<li>Set the <strong>Name</strong> to <em>Tenable_ad_CL</em> (Azure automatically adds <em>_CL</em> at the end of the name, there must be only one, make sure the name is not <em>Tenable_ad_CL_CL</em>).</li>
+<li>Click <strong>Next</strong>, you will see a resume, then click <strong>Create</strong></li>
+</ol>
+<p><strong>6. Enjoy !</strong></p>
+<blockquote>
+<p>You should now be able to receive logs in the <em>Tenable_ad_CL</em> table, logs data can be parse using the <strong>afad_parser()</strong> function, used by all query samples, workbooks and analytic templates.</p>
+</blockquote>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

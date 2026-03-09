@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GCPDNS &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>GCPDNS</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for GCPDNS table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">GCP</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpdns">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (84 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpdns">Azure Monitor documentation</a> · <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformDNS/Data%20Connectors/GCPDNSLog_CCP/GCPDNSLog_DCR.json">Data Collection Rule definition</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthAnswer</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if the DNS response is authoritative.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationInfoPrincipalEmail</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Email address of the user or service account performing the action.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationInfoPrincipalSubject</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The subject identifier for the principal (user or service account).</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthorizationInfo</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details about the authorization decision for the request.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Target IP address of the request.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">GCPResourceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the resource being accessed or modified.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">GCPResourceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the resource (e.g., compute instance, DNS record).</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">insertId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier assigned to each log entry.</td>
+<td style="text-align: left;">DCR, Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">jsonPayload</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">DCR</td>
+</tr>
+<tr>
+<td style="text-align: left;">logName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the log where this entry is stored.</td>
+<td style="text-align: left;">DCR, Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">MethodName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The API method or operation invoked in the request.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The format or type of the payload in the log entry.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">Protocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Protocol used (e.g., TCP, UDP).</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">protoPayload</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">DCR</td>
+</tr>
+<tr>
+<td style="text-align: left;">QueryName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The domain name queried.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">QueryType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">DNS query type (RFC 1035 section 4.1.2).</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rdata</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">DNS answer in presentation format.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReqManZoneCloudLogConfigEnableLogging</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether logging was enabled in the request for the managed zone.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReqManZonePrivVisibConfigNetworks</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">List of networks configured for private visibility of the managed zone.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReqmetaCallerSuppliedUserAgent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User agent String provided by the caller.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReqmetaRequestAttributesTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp when the request was initiated.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestAPIType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of API request being logged.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestChangeAdditions</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of resource additions in the request.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestChangeDeletions</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of resource deletions in the request.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestManagedZone</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of the managed DNS zone in the request.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestManagedZoneDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Description of the managed DNS zone in the request.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestManagedZoneDnsName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The DNS name of the managed zone in the request.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestManagedZoneName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the managed DNS zone in the request.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestManagedZoneVisibility</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The visibility (public or private) of the managed zone in the request.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMetadataCallerIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of the caller initiating the request.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the resource affected by the request.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestProject</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Google Cloud project associated with the request.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the request (e.g., Create, Delete, Update).</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResManZoneCloudLogConfigEnableLogging</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether logging was enabled in the response for the managed zone.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">resource</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">DCR</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsLocation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Location of the resource.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsPolicyName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Represents the policy name associated with the DNS resource.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsProjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Google Cloud project ID associated with the resource.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsSourceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies the source type of the resource being modified</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsTargetName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The target resource name within Google Cloud DNS, such as the managed zone or DNS policy being modified.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsTargetType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of DNS resource being acted upon</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsZoneName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the managed DNS zone related to the operation.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">RespManZonePrivVisibConfigNetworks</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Lists networks associated with a private managed zone under private visibility configuration.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseChangeAdditions</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Represents additions made to DNS records (e.g., new A, AAAA, CNAME, or TXT records).</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseChangeDeletions</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of deletions in the response.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseChangeId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier for the change request in the response.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseChangeStartTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp indicating when the change operation started.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseChangeStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Status of the change operation in the response.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseCode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Response code for the operation.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseManagedZoneCreationTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp when the managed zone was created.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseManagedZoneDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Description of the managed zone returned in the response.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseManagedZoneDnsName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">DNS name of the managed zone returned in the response.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseManagedZoneFingerprint</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Fingerprint for detecting changes in the managed zone.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseManagedZoneId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the managed zone.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseManagedZoneName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the managed zone returned in the response.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseManagedZoneNameServers</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">List of name servers associated with the managed zone.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseManagedZoneRrsetCount</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The total number of resource record sets (RRsets) within a managed zone.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseManagedZoneVisibility</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Visibility setting (public/private) of the managed zone.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseOperationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the DNS operation performed.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseOperationStartTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp when the DNS operation started.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseOperationStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The status of the DNS operation</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseOperationType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of DNS operation executed (e.g., create, update, delete).</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseOperationUser</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The user or service account that performed the DNS operation.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseOpZoneContextNewValue</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The new value after an operation modifies a DNS managed zone.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseOpZoneContextOldValue</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The previous value before an operation modified the DNS managed zone.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of response returned from the API.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServerLatency</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Measures the latency of the request to Google Cloud DNS.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServiceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the Google Cloud service processing the request.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">severity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Log severity level (e.g., INFO, WARNING, ERROR).</td>
+<td style="text-align: left;">DCR, Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address from which the query originated.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceNetwork</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The originating network of the DNS request.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">StatusCode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">HTTP status code returned for the request.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp when the log entry was created.</td>
+<td style="text-align: left;">DCR, Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">timestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp when the log entry was recorded.</td>
+<td style="text-align: left;">DCR, Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">VmInstanceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Compute Engine VM instance ID.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">VmInstanceIdString</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The VM instance ID (if applicable) associated with the request.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">VmInstanceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Compute Engine VM instance name.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">VmProjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Google Cloud project ID of the network from which the query was sent.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">VmZoneName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the VM zone from which the query originated.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/googlecloudplatformdns.html">GoogleCloudPlatformDNS</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/gcpdnslogsccpdefinition.html">Google Cloud Platform DNS (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Content Items Using This Table (22)</h2>
+<h3>Analytic Rules (11)</h3>
+<p><strong>In solution <a href="../solutions/googlecloudplatformdns.html">GoogleCloudPlatformDNS</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-cve-2020-1350-sigred-exploitation-pattern-1267d53d-f5fd-418b-b8da-34453a5994c2-54c24855.html">Google DNS - CVE-2020-1350 (SIGRED) exploitation pattern</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-cve-2021-34527-printnightmare-external-exploit-e632e73a-06c4-47f6-8bed-b2498aa6e30f-67f817fe.html">Google DNS - CVE-2021-34527 (PrintNightmare) external exploit</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-cve-2021-40444-exploitation-6758c671-e9ee-495d-b6b0-92ffd08a8c3b-818ecc21.html">Google DNS - CVE-2021-40444 exploitation</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-exchange-online-autodiscover-abuse-424c2aca-5367-4247-917a-5d0f7035e40e-eb3b481d.html">Google DNS - Exchange online autodiscover abuse</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-ip-check-activity-35221a58-cacb-4174-9bb4-ee777784fbce-89e6bab9.html">Google DNS - IP check activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-malicous-python-packages-75491db8-eaf7-40bb-a46a-279872cc82f5-92bff549.html">Google DNS - Malicous Python packages</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-multiple-errors-for-source-7e81a935-5e91-45a5-92fd-3b58c180513b-91c296af.html">Google DNS - Multiple errors for source</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-multiple-errors-to-same-domain-da04a5d6-e2be-4cba-8cdb-a3f2efa87e9e-a76d7e80.html">Google DNS - Multiple errors to same domain</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-possible-data-exfiltration-705bed63-668f-4508-9d2d-26faf4010700-4755c5a5.html">Google DNS - Possible data exfiltration</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-request-to-dynamic-dns-service-09fc03e0-daec-4b22-8afa-4bba30d7e909-53e7965a.html">Google DNS - Request to dynamic DNS service</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-unc2452-nobelium-apt-group-activity-22a613ea-c338-4f91-bbd3-3be97b00ebf9-74349df9.html">Google DNS - UNC2452 (Nobelium) APT Group activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries (10)</h3>
+<p><strong>In solution <a href="../solutions/googlecloudplatformdns.html">GoogleCloudPlatformDNS</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-domains-with-rare-errors-9e3145ef-f6bf-4dd0-8783-a0847f68cb54-bd1078be.html">Google DNS - Domains with rare errors</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-errors-74267de2-ff2e-415a-9e2a-5a99b471a1e2-c553919c.html">Google DNS - Errors</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-rare-domains-49d88918-03c8-4e22-9c8b-843e79cad6f5-5826fbc2.html">Google DNS - Rare domains</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-requests-to-ip-lookup-resources-8459cf31-9c5d-48a8-88ca-c4b1a6014031-77b1e4f8.html">Google DNS - Requests to IP lookup resources</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-requests-to-tor-resources-53b91d17-f6a7-4439-8d9a-0aebf0abeea2-4663dbdd.html">Google DNS - Requests to TOR resources</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-requests-to-online-shares-e909c48d-7bd4-45d0-bfb9-319b5fdc6332-632d0c96.html">Google DNS - Requests to online shares</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-server-latency-3cff73de-8c4a-46f5-85d8-3f1c051876f1-1af26d07.html">Google DNS - Server latency</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-sources-with-high-number-of-errors-e85a5d94-1f9f-4ce1-b54d-c61bbd24c41f-bf442c7b.html">Google DNS - Sources with high number of errors</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-unexpected-top-level-domains-1823db08-2ba4-4624-900f-9be0f950ea57-0a238939.html">Google DNS - Unexpected top level domains</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-google-dns-unusual-top-level-domains-2aff9e01-d3bb-4455-94e3-66be758474bd-689a2946.html">Google DNS - Unusual top level domains</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks (1)</h3>
+<p><strong>In solution <a href="../solutions/googlecloudplatformdns.html">GoogleCloudPlatformDNS</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformdns-gcpdns-15de76e5.html">GCPDNS</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Parsers Using This Table (1)</h2>
+<h3>Other Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/gcpclouddns.html">GCPCloudDNS</a></td>
+<td style="text-align: left;"><a href="../solutions/googlecloudplatformdns.html">GoogleCloudPlatformDNS</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyfirma Attack Surface &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Cyfirma Attack Surface</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cyfirma_logo.svg" alt="Cyfirma Attack Surface Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">CYFIRMA</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://www.cyfirma.com/contact-us/">https://www.cyfirma.com/contact-us/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2025-03-27</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Attack%20Surface">Cyfirma Attack Surface</a></td>
+</tr>
+</tbody>
+</table>
+<p>The CYFIRMA Attack Surface solution provides ability to gain continuous visibility into their external digital footprint directly within Microsoft Sentinel. This integration enhances your security posture by identifying exposed assets, misconfigurations, and vulnerabilities across internet-facing infrastructure—enabling faster response to potential threats and reducing the attack surface before adversaries can exploit it. By ingesting enriched attack surface intelligence—covering open ports, vulnerable IPs, cloud misconfigurations, certificate issues, and more—into Microsoft Sentinel, security teams can correlate findings with other threat indicators, automate incident response, and drive proactive defense measures.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/cyfirmaattacksurfacealertsconnector.html">CYFIRMA Attack Surface</a></li>
+</ul>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>6 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/cyfirmaascertificatesalerts-cl.html"><code>CyfirmaASCertificatesAlerts_CL</code></a></td>
+<td><a href="../connectors/cyfirmaattacksurfacealertsconnector.html">CYFIRMA Attack Surface</a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/cyfirmaascloudweaknessalerts-cl.html"><code>CyfirmaASCloudWeaknessAlerts_CL</code></a></td>
+<td><a href="../connectors/cyfirmaattacksurfacealertsconnector.html">CYFIRMA Attack Surface</a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/cyfirmaasconfigurationalerts-cl.html"><code>CyfirmaASConfigurationAlerts_CL</code></a></td>
+<td><a href="../connectors/cyfirmaattacksurfacealertsconnector.html">CYFIRMA Attack Surface</a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/cyfirmaasdomainipreputationalerts-cl.html"><code>CyfirmaASDomainIPReputationAlerts_CL</code></a></td>
+<td><a href="../connectors/cyfirmaattacksurfacealertsconnector.html">CYFIRMA Attack Surface</a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/cyfirmaasdomainipvulnerabilityalerts-cl.html"><code>CyfirmaASDomainIPVulnerabilityAlerts_CL</code></a></td>
+<td><a href="../connectors/cyfirmaattacksurfacealertsconnector.html">CYFIRMA Attack Surface</a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/cyfirmaasopenportsalerts-cl.html"><code>CyfirmaASOpenPortsAlerts_CL</code></a></td>
+<td><a href="../connectors/cyfirmaattacksurfacealertsconnector.html">CYFIRMA Attack Surface</a></td>
+<td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>12 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">12</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/cyfirma-attack-surface-cyfirma-attack-surface-cloud-weakness-high-rule-87cd8b10-90f6-4967-a4a7-2142e848ec8f-e09f1271.html">CYFIRMA - Attack Surface - Cloud Weakness High Rule</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess, Collection, Discovery, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/cyfirmaascloudweaknessalerts-cl.html"><code>CyfirmaASCloudWeaknessAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyfirma-attack-surface-cyfirma-attack-surface-cloud-weakness-medium-rule-b8a3c5e2-04d5-4b61-9b62-b4f53a417f74-a425da1f.html">CYFIRMA - Attack Surface - Cloud Weakness Medium Rule</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, Collection, Discovery, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/cyfirmaascloudweaknessalerts-cl.html"><code>CyfirmaASCloudWeaknessAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyfirma-attack-surface-cyfirma-attack-surface-configuration-high-rule-30206b45-75d2-4c6a-87c5-f0861c1f2870-d9b14ee5.html">CYFIRMA - Attack Surface - Configuration High Rule</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess, Discovery, Persistence, Execution, DefenseEvasion, CredentialAccess, Collection, Reconnaissance</td>
+<td style="text-align: left;"><a href="../tables/cyfirmaasconfigurationalerts-cl.html"><code>CyfirmaASConfigurationAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyfirma-attack-surface-cyfirma-attack-surface-configuration-medium-rule-e1f88d08-5c32-4d35-a8ce-2f21cdb4b6de-b19cac46.html">CYFIRMA - Attack Surface - Configuration Medium Rule</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, Discovery, Persistence, Execution, DefenseEvasion, CredentialAccess, Collection, Reconnaissance</td>
+<td style="text-align: left;"><a href="../tables/cyfirmaasconfigurationalerts-cl.html"><code>CyfirmaASConfigurationAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyfirma-attack-surface-cyfirma-attack-surface-domain-ip-vulnerability-exposure-high-rule-fbe4f5e0-d93e-4c93-8cf9-925eb8ea7f2e-740b8ffd.html">CYFIRMA - Attack Surface - Domain/IP Vulnerability Exposure High Rule</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess, Discovery, DefenseEvasion, Persistence, Execution, Impact, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/cyfirmaasdomainipvulnerabilityalerts-cl.html"><code>CyfirmaASDomainIPVulnerabilityAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyfirma-attack-surface-cyfirma-attack-surface-domain-ip-vulnerability-exposure-medium-rule-a2f2c91b-5796-45e4-82c7-61763e6c2c9c-a7daa576.html">CYFIRMA - Attack Surface - Domain/IP Vulnerability Exposure Medium Rule</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, Discovery, DefenseEvasion, Persistence, Execution, Impact, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/cyfirmaasdomainipvulnerabilityalerts-cl.html"><code>CyfirmaASDomainIPVulnerabilityAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyfirma-attack-surface-cyfirma-attack-surface-malicious-domain-ip-reputation-high-rule-7ff6f6d7-9672-4567-99fc-cb8a58c3bce7-a9312300.html">CYFIRMA - Attack Surface - Malicious Domain/IP Reputation High Rule</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess, CommandAndControl, Reconnaissance, Impact, DefenseEvasion, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/cyfirmaasdomainipreputationalerts-cl.html"><code>CyfirmaASDomainIPReputationAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyfirma-attack-surface-cyfirma-attack-surface-malicious-domain-ip-reputation-medium-rule-70f137e4-e4ef-4635-92de-10c4f5b0fcd0-b9bb747e.html">CYFIRMA - Attack Surface - Malicious Domain/IP Reputation Medium Rule</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, CommandAndControl, Reconnaissance, Impact, DefenseEvasion, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/cyfirmaasdomainipreputationalerts-cl.html"><code>CyfirmaASDomainIPReputationAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyfirma-attack-surface-cyfirma-attack-surface-open-ports-high-rule-87e7eb3f-bb8e-46e5-8807-d3fc63d0f676-40437b75.html">CYFIRMA - Attack Surface - Open Ports High Rule</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess, CommandAndControl, Discovery, DefenseEvasion, Persistence</td>
+<td style="text-align: left;"><a href="../tables/cyfirmaasopenportsalerts-cl.html"><code>CyfirmaASOpenPortsAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyfirma-attack-surface-cyfirma-attack-surface-open-ports-medium-rule-9e18b6c3-d172-4bc6-a7d9-cc7b0a03a69e-84f299fd.html">CYFIRMA - Attack Surface - Open Ports Medium Rule</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, CommandAndControl, Discovery, DefenseEvasion, Persistence</td>
+<td style="text-align: left;"><a href="../tables/cyfirmaasopenportsalerts-cl.html"><code>CyfirmaASOpenPortsAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyfirma-attack-surface-cyfirma-attack-surface-weak-certificate-exposure-high-rule-3b5a1c0e-7f3a-4d47-8416-6c0b8b91e9ce-1c4f0d37.html">CYFIRMA - Attack Surface - Weak Certificate Exposure - High Rule</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">DefenseEvasion, ResourceDevelopment, Reconnaissance, InitialAccess, CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/cyfirmaascertificatesalerts-cl.html"><code>CyfirmaASCertificatesAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyfirma-attack-surface-cyfirma-attack-surface-weak-certificate-exposure-medium-rule-5a617ff2-3e3d-44e7-b761-9f0d542ae191-2acd25c4.html">CYFIRMA - Attack Surface - Weak Certificate Exposure - Medium Rule</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion, ResourceDevelopment, Reconnaissance, InitialAccess, CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/cyfirmaascertificatesalerts-cl.html"><code>CyfirmaASCertificatesAlerts_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.3</td>
+<td>04-09-2025</td>
+<td>Bugs fixes to <strong>CCF Data Connector</strong>.</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>24-07-2025</td>
+<td>Minor changes and New analytics rules added to <strong>CCF Data Connector</strong>.</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>17-06-2025</td>
+<td>Minor changes to <strong>CCF Data Connector</strong>.</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>14-04-2025</td>
+<td>Initial Solution Release.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

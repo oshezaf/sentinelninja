@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWSNLBAccessLogs &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>AWSNLBAccessLogs</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for AWSNLBAccessLogs table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">AWS</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awsnlbaccesslogs">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (27 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awsnlbaccesslogs">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">ALPNBEProtocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Application-layer protocol negotiated on the backend.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ALPNClientPrefList</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">List of application protocols preferred by the client during ALPN.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ALPNFEProtocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Application-layer protocol negotiated on the frontend (e.g., HTTP/1.1, h2).</td>
+</tr>
+<tr>
+<td style="text-align: left;">ChosenCertArn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ARN of the TLS certificate selected during the handshake.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ChosenCertSerial</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Serial number of the TLS certificate used in the connection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClientIPPort</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address and port of the client initiating the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConnectionTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Duration of the connection in milliseconds.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DomainName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Domain name requested by the client via SNI (Server Name Indication).</td>
+</tr>
+<tr>
+<td style="text-align: left;">IncomingTLSAlert</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of any incoming TLS alert message.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Listener</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Listener configuration used for the connection (protocol and port).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nlb</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier or name of the Network Load Balancer.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NLBType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of Network Load Balancer (e.g., 'gateway', 'application').</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReceivedBytes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Number of bytes received from the client.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SentBytes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Number of bytes sent to the client.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetIPPort</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address and port of the target receiving the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp when the log entry was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TLSCipher</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Cipher suite used for the TLS connection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TLSConnectionCreationTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Time taken to establish the complete TLS connection, including handshake.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TlsHandshakeTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Time taken to complete the TLS handshake in milliseconds.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TLSNamedGroup</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Elliptic curve or Diffie-Hellman group used in the handshake.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TLSProtocolVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Version of the TLS protocol used (e.g., TLS 1.2, TLS 1.3).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">Version</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Version of the NLB log format.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

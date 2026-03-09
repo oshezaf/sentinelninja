@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azure Web Application Firewall WAF &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Azure Web Application Firewall (WAF)</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/waf_logo.svg" alt="Azure Web Application Firewall (WAF) Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com/">https://support.microsoft.com/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-05-18</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Web%20Application%20Firewall%20%28WAF%29">Azure Web Application Firewall (WAF)</a></td>
+</tr>
+</tbody>
+</table>
+<p>The Azure Web Application Firewall (WAF) solution for Microsoft Sentinel allows you to ingest Diagnostic Metrics from Application Gateway, Front Door and CDN into Microsoft Sentinel.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/waf.html">Azure Web Application Firewall (WAF)</a> 🔶</li>
+</ul>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>4 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/agwaccesslogs.html"><code>AGWAccessLogs</code></a></td>
+<td>-</td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/agwfirewalllogs.html"><code>AGWFirewallLogs</code></a></td>
+<td>-</td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a> 🔶</td>
+<td><a href="../connectors/waf.html">Azure Web Application Firewall (WAF)</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/event.html"><code>Event</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>14 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">4</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-a-potentially-malicious-web-request-was-executed-against-a-web-server-46ac55ae-47b8-414a-8f94-89ccd1962178-ef0d4240.html">A potentially malicious web request was executed against a web server</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/agwaccesslogs.html"><code>AGWAccessLogs</code></a><br><a href="../tables/agwfirewalllogs.html"><code>AGWFirewallLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-afd-waf-code-injection-ded8168e-c806-4772-af30-10576e0a7529-19ad7bff.html">AFD WAF - Code Injection</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">DefenseEvasion, Execution, InitialAccess, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-afd-waf-path-traversal-attack-a4d99328-e4e6-493d-b0d5-57e6f9ddae77-2344821e.html">AFD WAF - Path Traversal Attack</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">DefenseEvasion, Execution, InitialAccess, PrivilegeEscalation, Discovery</td>
+<td style="text-align: left;"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-app-gw-waf-code-injection-912a18fc-6165-446b-8740-81ae6c3f75ee-5ee99e9c.html">App GW WAF - Code Injection</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">DefenseEvasion, Execution, InitialAccess, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/agwfirewalllogs.html"><code>AGWFirewallLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-app-gw-waf-path-traversal-attack-b6c3a8a6-d22c-4882-9c57-abc01690938b-ce8dc4ad.html">App GW WAF - Path Traversal Attack</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">DefenseEvasion, Execution, InitialAccess, PrivilegeEscalation, Discovery</td>
+<td style="text-align: left;"><a href="../tables/agwfirewalllogs.html"><code>AGWFirewallLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-app-gateway-waf-sqli-detection-bdb2cd63-99f2-472e-b1b9-acba473b6744-280638ed.html">App Gateway WAF - SQLi Detection</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">DefenseEvasion, Execution, InitialAccess, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/agwfirewalllogs.html"><code>AGWFirewallLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-app-gateway-waf-scanner-detection-9b8dd8fd-f192-42eb-84f6-541920400a7a-40d3fac2.html">App Gateway WAF - Scanner Detection</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">DefenseEvasion, Execution, InitialAccess, Reconnaissance, Discovery</td>
+<td style="text-align: left;"><a href="../tables/agwfirewalllogs.html"><code>AGWFirewallLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-app-gateway-waf-xss-detection-1c7ff502-2ad4-4970-9d29-9210c6753138-cf69ab37.html">App Gateway WAF - XSS Detection</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess, Execution</td>
+<td style="text-align: left;"><a href="../tables/agwfirewalllogs.html"><code>AGWFirewallLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-front-door-premium-waf-sqli-detection-16da3a2a-af29-48a0-8606-d467c180fe18-3acd0e4e.html">Front Door Premium WAF - SQLi Detection</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">DefenseEvasion, Execution, InitialAccess, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-front-door-premium-waf-xss-detection-b7643904-5081-4920-917e-a559ddc3448f-f46a8943.html">Front Door Premium WAF - XSS Detection</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess, Execution</td>
+<td style="text-align: left;"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-webapplicationfirewallfirewallevents-fffe3907.html">WebApplicationFirewallFirewallEvents</a></td>
+<td style="text-align: left;"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-webapplicationfirewallgatewayaccessevents-3b2791d0.html">WebApplicationFirewallGatewayAccessEvents</a></td>
+<td style="text-align: left;"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-webapplicationfirewalloverview-724b5122.html">WebApplicationFirewallOverview</a></td>
+<td style="text-align: left;"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-webapplicationfirewallwaftypeevents-bc7c447b.html">WebApplicationFirewallWAFTypeEvents</a></td>
+<td style="text-align: left;"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a><br><a href="../tables/event.html"><code>Event</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.2</td>
+<td>06-02-2025</td>
+<td>Extracting transactionId_g and hostname_s from the AdditionalFields column using parse_json and Removing the now unavailable details_message_s and details_data_s fields from <strong>Analytic Rules</strong> App Gateway WAF - SQLi Detection and App Gateway WAF - XSS Detection.</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>10-06-2024</td>
+<td>Added new <strong>Analytic Rules</strong> [App Gateway WAF - SQLi Detection and App Gateway WAF - XSS Detection]</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>21-12-2023</td>
+<td>Added ResourceProvide condition as it is standard for Application Gateway WAF logs</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

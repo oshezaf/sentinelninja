@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Netskope Alerts and Events &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Netskope Alerts and Events</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Netskope.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>NetskopeAlertsEvents</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Netskope</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/netskopev2.html">Netskopev2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/ccf.html">CCF</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/Data%20Connectors/NetskopeAlertsEvents_RestAPI_CCP/NetskopeAlertsEvents_ConnectorDefination.json">NetskopeAlertsEvents_ConnectorDefination.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Configuration</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/Data%20Connectors/NetskopeAlertsEvents_RestAPI_CCP/NetskopeAlertsEvents_Poller.json">NetskopeAlertsEvents_Poller.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Capabilities</strong></td>
+<td style="text-align: left;"><code>APIKey</code></td>
+</tr>
+</tbody>
+</table>
+<p>Netskope Security Alerts and Events</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/netskopealerts-cl.html"><code>NetskopeAlerts_CL</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/netskopeeventsapplication-cl.html"><code>NetskopeEventsApplication_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/netskopeeventsaudit-cl.html"><code>NetskopeEventsAudit_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/netskopeeventsconnection-cl.html"><code>NetskopeEventsConnection_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/netskopeeventsdlp-cl.html"><code>NetskopeEventsDLP_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/netskopeeventsendpoint-cl.html"><code>NetskopeEventsEndpoint_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/netskopeeventsinfrastructure-cl.html"><code>NetskopeEventsInfrastructure_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/netskopeeventsnetwork-cl.html"><code>NetskopeEventsNetwork_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/netskopeeventspage-cl.html"><code>NetskopeEventsPage_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): Read and Write permissions are required.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Netskope organisation url</strong>: The Netskope data connector requires you to provide your organisation url. You can find your organisation url by signing into the Netskope portal.
+- <strong>Netskope API key</strong>: The Netskope data connector requires you to provide a valid API key. You can create one by following the <a href="https://docs.netskope.com/en/rest-api-v2-overview-312207/">Netskope documentation</a>.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. STEP 1 - Create a Netskope API key.</strong></p>
+<p>Follow the <a href="https://docs.netskope.com/en/rest-api-v2-overview-312207/">Netskope documentation</a> for guidance on this step.</p>
+<p><strong>2. STEP 2 - Enter your Netskope product Details</strong></p>
+<p>Enter your Netskope organisation url &amp; API Token below:
+- <strong>Organisation Url</strong>: Enter your organisation url
+- <strong>API Key</strong>: (password field)
+- <strong>Netskope Alerts Remediation</strong> (select)
+  - Yes
+  - No
+- <strong>Netskope Alerts Uba</strong> (select)
+  - Yes
+  - No
+- <strong>Netskope Alerts Security Assessment</strong> (select)
+  - Yes
+  - No
+- <strong>Netskope Alerts Quarantine</strong> (select)
+  - Yes
+  - No
+- <strong>Netskope Alerts Policy</strong> (select)
+  - Yes
+  - No
+- <strong>Netskope Alerts Malware</strong> (select)
+  - Yes
+  - No
+- <strong>Netskope Alerts Malsite</strong> (select)
+  - Yes
+  - No
+- <strong>Netskope Alerts DLP</strong> (select)
+  - Yes
+  - No
+- <strong>Netskope Alerts CTEP</strong> (select)
+  - Yes
+  - No
+- <strong>Netskope Alerts Watchlist</strong> (select)
+  - Yes
+  - No
+- <strong>Netskope Alerts Compromised Credentials</strong> (select)
+  - Yes
+  - No
+- <strong>Netskope Alerts Content</strong> (select)
+  - Yes
+  - No
+- <strong>Netskope Alerts Device</strong> (select)
+  - Yes
+  - No
+- <strong>Netskope Events Application</strong> (select)
+  - Yes
+  - No
+- <strong>Netskope Events Audit</strong> (select)
+  - Yes
+  - No
+- <strong>Netskope Events Connection</strong> (select)
+  - Yes
+  - No
+- <strong>Netskope Events DLP</strong> (select)
+  - Yes
+  - No
+- <strong>Netskope Events Endpoint</strong> (select)
+  - Yes
+  - No
+- <strong>Netskope Events Infrastructure</strong> (select)
+  - Yes
+  - No
+- <strong>Netskope Events Network</strong> (select)
+  - Yes
+  - No
+- <strong>Netskope Events Page</strong> (select)
+  - Yes
+  - No
+<strong>OPTIONAL: Specify the Index the API uses.</strong></p>
+<p><strong>Configuring the index is optional and only required in advanced scenario's.</strong> 
+ Netskope uses an <a href="https://docs.netskope.com/en/using-the-rest-api-v2-dataexport-iterator-endpoints/#how-do-iterator-endpoints-function">index</a> to retrieve events. In some advanced cases (consuming the event in multiple Microsoft Sentinel workspaces, or pre-fatiguing the index to only retrieve recent data), a customer might want to have direct control over the index.
+  - <strong>Index</strong>: NetskopeCCP</p>
+<p><strong>3. STEP 3 - Click Connect</strong></p>
+<p>Verify all fields above were filled in correctly. Press the Connect to connect Netskope to Microsoft Sentinel.
+- Click 'connect' to establish connection</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

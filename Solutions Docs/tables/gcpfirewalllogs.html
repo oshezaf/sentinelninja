@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GCPFirewallLogs &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>GCPFirewallLogs</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for GCPFirewallLogs table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">GCP</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpfirewalllogs">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (37 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpfirewalllogs">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">Action</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Action that of the firewall rule.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">the IP address of the target device or service that incoming or outgoing network traffic is trying to reach.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestPort</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">the Port of the target device or service that incoming or outgoing network traffic is trying to reach.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Direction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The direction of that the firewall rule applies.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Disposition</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">the final action taken on network traffic that matches a given rule.</td>
+</tr>
+<tr>
+<td style="text-align: left;">GCPResourceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The identifier of the type associated with this resource, such as 'pubsub_subscription'.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InsertId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Optional. Providing a unique identifier for the log entry allows Logging to remove duplicate entries with the same timestamp and insertId in a single query result.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InstanceProjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">the project ID associated with the instance that was involved in the firewall rule event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InstanceRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">the region associated with the instance that was involved in the firewall rule event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InstanceVmName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">the virtual machine name associated with the instance that was involved in the firewall rule event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InstanceZone</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">the zone associated with the instance that was involved in the firewall rule event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IpPortInfo</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">The information regarding the rule port and protocol.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Information including a suffix identifying the log sub-type (e.g., admin activity, system access, data access) and where in the hierarchy the request was made.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Priority</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The priority of the rule.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The identifier of the Google Cloud Platform (GCP) project associated with this resource, such as "my-project".</td>
+</tr>
+<tr>
+<td style="text-align: left;">Protocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">the protocol of the target device or service that incoming or outgoing network traffic is trying to reach.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Referance</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The rule that triggered the log.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteLocationCity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The city name based on the resource location.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteLocationContinent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The continent name based on the resource location.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteLocationCountry</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The country name based on the resource location.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteLocationRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The region name based on the resource location.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLocation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The resource location information.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceSubnetworkName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The resource subnetwork name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceRange</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">The range of the ip addresses that the rule applied to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">the IP address of the source device or service that incoming or outgoing network traffic is trying to reach.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcPort</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">the Port of the source device or service that incoming or outgoing network traffic is trying to reach.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SubnetworkId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The resource subnetwork id.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time the log entry was received by logging.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time the event described by the log entry occurred.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">VpcName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the Virtual Private Network(VPC) where the firewall rule applied.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VpcProjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The project id of the Virtual Private Network(VPC) where the firewall rule applied.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VpcSubnetworkName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Subnetnetwork name of the Virtual Private Network(VPC) where the firewall rule applied.</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/google-cloud-platform-firewall-logs.html">Google Cloud Platform Firewall Logs</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/gcpfirewalllogsccpdefinition.html">GCP Pub/Sub Firewall Logs</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

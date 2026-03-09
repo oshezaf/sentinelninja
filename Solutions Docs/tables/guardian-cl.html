@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GuardianCL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Guardian_CL</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1</strong></td>
+<td style="text-align: left;">Yes 🔶 — uses type-suffixed column names</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (22 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Guardian_CL.json">KQL validation test schema</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Action_Taken_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">App_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Computer</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Input_Output_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ManagementGroupName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">MG</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Mode_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Policy_Violated_Control_Feature_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Policy_Violated_Description_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Policy_Violated_Theme_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Policy_Violated_Threshold_Setting_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Query_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">RawData</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Severity_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceIP_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Target_LLM_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">timestamp_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/aishield-ai-security-monitoring.html">AIShield AI Security Monitoring</a></li>
+</ul>
+<hr />
+<h2>Content Items Using This Table (29)</h2>
+<h3>Analytic Rules (29)</h3>
+<p><strong>In solution <a href="../solutions/aishield-ai-security-monitoring.html">AIShield AI Security Monitoring</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-additional-check-json-policy-violation-detection-9ff28525-3c6f-47ba-806b-ffd913406989-011e6a7c.html">Guardian- Additional check JSON Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-bii-detection-policy-violation-detection-e7493b80-88d0-44fb-b11d-40a0467cc497-e3e2a3d5.html">Guardian- BII Detection Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-ban-topic-policy-violation-detection-97a76b2d-02ea-4ae5-b0c4-79e834036481-104a0831.html">Guardian- Ban Topic Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-block-competitor-policy-violation-detection-e5d9eea1-3250-49ba-9e39-b5678ec7496b-e1edacf9.html">Guardian- Block Competitor Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-blocks-specific-strings-of-text-policy-violation-detection-9c63e0b5-bb83-4873-947a-4385386a6c21-371a7657.html">Guardian- Blocks specific strings of text Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-code-detection-policy-violation-detection-90f50a0b-6903-4ddc-adcc-c13ebb77ffa7-f743a096.html">Guardian- Code Detection Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-content-access-control-allowed-list-policy-violation-detection-aa88a190-d4d8-4f32-b533-3aa097c9ce3d-5b8b9ecf.html">Guardian- Content Access Control Allowed List Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-content-access-control-blocked-list-policy-violation-detection-4c7f0b49-d972-4d26-81ab-36cbe43ac437-a8b329fe.html">Guardian- Content Access Control Blocked List Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-content-safety-profanity-policy-violation-detection-de3ce72f-7826-4be1-ab1a-87a8299c54f6-c8e6928d.html">Guardian- Content Safety Profanity Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-content-safety-toxicity-policy-violation-detection.-378e5160-70cf-4f1a-b3c8-3bc2f0c884ad-8981f405.html">Guardian- Content Safety Toxicity Policy Violation Detection.</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-gender-bias-policy-violation-detection-cae24b9e-a614-4213-b382-00698e89b037-0a78cf3b.html">Guardian- Gender Bias Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-input-output-relevance-policy-violation-detection-76fd5899-0dd1-4336-9519-3c2c0d5d6ecb-b61cfb73.html">Guardian- Input Output Relevance Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-input-rate-limiter-policy-violation-detection-5d736bd5-b8ff-493c-bfbb-19674903fced-87897e06.html">Guardian- Input Rate Limiter Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-invisible-text-policy-violation-detection-1e31a465-e25d-4810-881b-8a79e0de9379-bb7788cb.html">Guardian- Invisible Text Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-language-detection-policy-violation-detection-e65938c4-1379-4f7a-bd22-78f670a239c3-86a2df40.html">Guardian- Language Detection Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-malicious-url-policy-violation-detection-8644d9e0-b810-4b55-889b-b8a9b3795b5d-9374d2f4.html">Guardian- Malicious URL Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-no-llm-output-policy-violation-detection-c0598d69-221e-4235-a1e4-bfd57ada8ce5-69cb46c5.html">Guardian- No LLM Output Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-not-safe-for-work-policy-violation-detection-f472bd5e-ffb3-4c8e-8abd-97aaa8ebcdff-1f391307.html">Guardian- Not Safe For Work Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-privacy-protection-pii-policy-violation-detection-d5065600-617b-4a16-b58a-4a46da9c1afd-5db3f04e.html">Guardian- Privacy Protection PII Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-racial-bias-policy-violation-detection-46103101-43d9-4c09-b8c8-898dcafe73c0-f589089e.html">Guardian- Racial Bias Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-regex-policy-violation-detection-d9ad323f-6115-4f19-9e81-feabceeb6730-a928450e.html">Guardian- Regex Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-same-input-output-language-detection-policy-violation-detection-b2841802-c53c-4667-be8a-9ea8771c944a-d3098709.html">Guardian- Same Input/Output Language Detection Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-secrets-policy-violation-detection-1cd8baa8-b8b4-436e-9f3f-4328f52a8e14-1884c973.html">Guardian- Secrets Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-security-integrity-checks-prompt-injection-policy-violation-det-d6b3372a-0fc4-40ec-9630-b96efb527fba-c6ebe3c3.html">Guardian- Security Integrity Checks Prompt Injection Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-sentiment-policy-violation-detection-24538989-9dea-4cc7-aa78-0969ca116051-487d5484.html">Guardian- Sentiment Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-special-pii-detection-policy-violation-detection-7e37bf0f-1a10-4a71-8207-19615ee75894-3db25753.html">Guardian- Special PII Detection Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-token-limit-policy-violation-detection-b7798389-6823-4af0-94e6-6135c4f8264e-2264ccae.html">Guardian- Token Limit Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-url-detection-policy-violation-detection-de6f4636-a51a-411d-95d8-4f9099865990-b6cfa7c6.html">Guardian- URL Detection Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aishield-ai-security-monitoring-guardian-url-reachability-policy-violation-detection-93a56919-105a-4ffe-9a8c-4ef6d0b101ac-cb95565e.html">Guardian- URL Reachability Policy Violation Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Parsers Using This Table (1)</h2>
+<h3>Other Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/guardian.html">Guardian</a></td>
+<td style="text-align: left;"><a href="../solutions/aishield-ai-security-monitoring.html">AIShield AI Security Monitoring</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

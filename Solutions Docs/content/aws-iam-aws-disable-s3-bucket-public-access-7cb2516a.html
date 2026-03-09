@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWS - Disable S3 Bucket Public Access &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>AWS - Disable S3 Bucket Public Access</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>This playbook disables public access AWS S3 bucket. It is triggered by an incident in Microsoft Sentinel and perform the following actions: 1. Get the Bucket Name from incident entities. 2. Call the AWS IAM Function App Connector to disable public access of S3 bucket. 3. Add a comment to the incident with the result of the action.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/aws-iam.html">AWS_IAM</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS_IAM/Playbooks/Playbooks/AWS-DisableS3BucketPublicAccess/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS_IAM/Playbooks/Playbooks/AWS-DisableS3BucketPublicAccess/readme.md">Playbooks/AWS-DisableS3BucketPublicAccess/readme.md</a></em></p>
+</blockquote>
+<h1>AWS-DisableS3BucketPublicAccess</h1>
+<h2>Summary</h2>
+<p>When a new Sentinel incident is created, this playbook gets triggered and performs the following actions:</p>
+<ol>
+<li>Get the Bucket Name from incident entities.</li>
+<li>Call the AWS IAM Function App Connector to disable public access of S3 bucket.</li>
+<li>Add a comment to the incident with the result of the action.</li>
+</ol>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS_IAM/Playbooks/Playbooks%5CAWS-DisableS3BucketPublicAccess/images/AWS-DisableS3BucketPublicAccess_light.png" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS_IAM/Playbooks/Playbooks%5CAWS-DisableS3BucketPublicAccess/images/AWS-DisableS3BucketPublicAccess_dark.png" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS_IAM/Playbooks/Playbooks%5CAWS-DisableS3BucketPublicAccess/images/AWS-DisableS3BucketPublicAccess_IncidentComment.png" width="50%"/><br></p>
+<h3>Prerequisites</h3>
+<ol>
+<li>Prior to the deployment of this playbook, <a href="../../AWS_IAM_FunctionAppConnector/">AWS IAM Function App Connector</a> needs to be deployed under the same subscription.</li>
+<li>Refer to <a href="../../AWS_IAM_FunctionAppConnector/readme.html">AWS IAM Function App Connector</a> documentation to obtain AWS Access Key ID and Secret Access Key.</li>
+</ol>
+<h3>Deployment instructions</h3>
+<ol>
+<li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
+<li>Fill in the required parameters:<ul>
+<li>Playbook Name: Enter the playbook name here</li>
+</ul>
+</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FAWS_IAM%2FPlaybooks%2FPlaybooks%2FAWS-DisableS3BucketPublicAccess%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FAWS_IAM%2FPlaybooks%2FPlaybooks%2FAWS-DisableS3BucketPublicAccess%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<h3>Post-Deployment instructions</h3>
+<h4>a. Authorize connections for Playbook</h4>
+<p>Once deployment is complete, authorize each connection.</p>
+<ol>
+<li>Click the Microsoft Sentinel connection resource</li>
+<li>Click edit API connection</li>
+<li>Click Authorize</li>
+<li>Sign in</li>
+<li>Click Save</li>
+<li>Repeat steps for other connections</li>
+</ol>
+<h4>b. Configure Analytic Rule to trigger Playbook in Microsoft Sentinel</h4>
+<ol>
+<li>In Microsoft sentinel, analytical rules should be configured to trigger an incident that contains Cloud Application instance. In the <em>Entity mapping</em> section of the analytics rule creation workflow, Cloud Application instance should be mapped to <strong>Name</strong> identifier of the <strong>Cloud Application</strong> entity type. Check the <a href="https://docs.microsoft.com/azure/sentinel/map-data-fields-to-entities">documentation</a> to learn more about mapping entities.</li>
+<li>Configure the automation rules to trigger the playbook. Check the <a href="https://docs.microsoft.com/azure/sentinel/tutorial-respond-threats-playbook">documentation</a> to learn more about automation rules.</li>
+</ol>
+<h4>c. Assign Playbook Microsoft Sentinel Responder Role</h4>
+<ol>
+<li>Select the Playbook (Logic App) resource</li>
+<li>Click on Identity Blade</li>
+<li>Choose System assigned tab</li>
+<li>Click on Azure role assignments</li>
+<li>Click on Add role assignments</li>
+<li>Select Scope - Resource group</li>
+<li>Select Subscription - where Playbook has been created</li>
+<li>Select Resource group - where Playbook has been created</li>
+<li>Select Role - Microsoft Sentinel Responder</li>
+<li>Click Save</li>
+</ol>
+<h1>References</h1>
+<ul>
+<li><a href="https://docs.aws.amazon.com/AmazonS3/latest/API/Type_API_Reference.html">AWS S3 API Documentation</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html">AWS S3 User Guide</a></li>
+<li><a href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html">AWS S3 Boto3 Documentation</a></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/aws-iam.html">Back to AWS_IAM</a></p>
+</div>
+</body>
+</html>

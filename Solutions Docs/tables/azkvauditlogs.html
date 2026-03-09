@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AZKVAuditLogs &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>AZKVAuditLogs</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for AZKVAuditLogs table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Audit, Azure Resources</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azkvauditlogs">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (51 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azkvauditlogs">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">AddressAuthorizationType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Address type (Public IP, subnet, private connection)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Algorithm</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Algorithm used to generate the key</td>
+</tr>
+<tr>
+<td style="text-align: left;">AppliedAssignmentId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">AssignmentId that eiher granted or denied access as part of access check</td>
+</tr>
+<tr>
+<td style="text-align: left;">CallerIpAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of the client that made the request</td>
+</tr>
+<tr>
+<td style="text-align: left;">CertificateIssuerProperties</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Information about certificate issuer properties including provider, id</td>
+</tr>
+<tr>
+<td style="text-align: left;">CertificatePolicyProperties</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Information about certificate policy properties including keyproperties, secretproperties, issuerproperties</td>
+</tr>
+<tr>
+<td style="text-align: left;">CertificateProperties</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Information about certificate audit properties including atttributes, subject, hashing algorithm</td>
+</tr>
+<tr>
+<td style="text-align: left;">CertificateRequestProperties</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Boolean value indicating if certificate request operation was cancelled</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClientInfo</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User agent information</td>
+</tr>
+<tr>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">An optional GUID that the client can pass to correlate client-side logs with service-side (Key Vault) logs.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DurationMs</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Time it took to service the REST API request, in milliseconds. This does not include the network latency, so the time you measure on the client side might not match this time</td>
+</tr>
+<tr>
+<td style="text-align: left;">EnabledForDeployment</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Specifies if the vault is enabled for deployment</td>
+</tr>
+<tr>
+<td style="text-align: left;">EnabledForDiskEncryption</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Specifes if disk encryption is enabled</td>
+</tr>
+<tr>
+<td style="text-align: left;">EnabledForTemplateDeployment</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Specifies whether template deployment is enabled</td>
+</tr>
+<tr>
+<td style="text-align: left;">EnablePurgeProtection</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Specifies if purge protection is enabled</td>
+</tr>
+<tr>
+<td style="text-align: left;">EnableRbacAuthorization</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Specifies if RBAC authorization is enabled</td>
+</tr>
+<tr>
+<td style="text-align: left;">EnableSoftDelete</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Specified is the vault is enabled for soft delete</td>
+</tr>
+<tr>
+<td style="text-align: left;">HsmPoolResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Resource ID of the HSM pool</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpStatusCode</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">HTTP status code of the request</td>
+</tr>
+<tr>
+<td style="text-align: left;">Id</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Resourceidentifier (Key ID or secret ID)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Identity</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Identity from the token that was presented in the REST API request. This is usually a user, a service principal, or the combination user+appId, as in the case of a request that results from an Azure PowerShell cmdlet.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsAccessPolicyMatch</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">True if the tenant matches vault tenant, and if the policy explicitly gives permission to the principal attempting the access.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsAddressAuthorized</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Specifies whether request came from an authorized entity</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsRbacAuthorized</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Specifies whether an access was granted or not as part of an access check</td>
+</tr>
+<tr>
+<td style="text-align: left;">KeyProperties</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Information about key properties including type, size, curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkAcls</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Information about network acls that govern access to the vault</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nsp</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Network security perimeter properties including access control list, nsp id's associated with profiles.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the operation</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">REST api version requested by the client.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Properties</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Information that varies based on the operation (Operationname). In most cases, this field contains client information (the user agent string passed by the client), the exact REST API request URI, and the HTTP status code. In addition, when an object is returned as a result of a request (for example, KeyCreate or VaultGet), it also contains the key URI (as id), vault URI, or secret URI.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestUri</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">URI of the request</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResultDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Additional description about the result, when available.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResultSignature</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">HTTP status of the request/response</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResultType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Result of the REST API request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SecretProperties</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Information about secret properties including type, atttributes</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sku</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Information about vault including family, name and capacity</td>
+</tr>
+<tr>
+<td style="text-align: left;">SoftDeleteRetentionInDays</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Specifies soft delete retention in days</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">StorageAccountProperties</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Information about storage account properties including activekeyname, resourceid</td>
+</tr>
+<tr>
+<td style="text-align: left;">StorageSasDefinitionProperties</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Information about storage sas definition properties including sastype, validityperiod</td>
+</tr>
+<tr>
+<td style="text-align: left;">SubnetId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Id of subnet if request comes from a known subnet</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp (in UTC) when operation occured.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tlsversion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Network crypto protocol</td>
+</tr>
+<tr>
+<td style="text-align: left;">TrustedService</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether the principal access the service is a trusted Service. If this field is null, principal is not a trusted service</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">VaultProperties</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Detailed vault properties containing accesspolicy, iprule, virtualnetwork etc</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.keyvault/vaults</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

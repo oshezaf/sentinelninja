@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWS Security Hub &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>AWS Security Hub</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Aws.svg" alt="AWS Security Hub Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2025-03-12</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2025-03-12</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Security%20Hub">AWS Security Hub</a></td>
+</tr>
+</tbody>
+</table>
+<p>AWS Security Hub Solution for Microsoft Sentinel provides data connector to ingest AWS Security Hub findings into Microsoft Sentinel.</p>
+<p><strong>Additional Information</strong></p>
+<p>📖 <strong>Setup Guide:</strong> <a href="https://learn.microsoft.com/azure/sentinel/connect-aws-configure-environment">Connect Microsoft Sentinel to AWS</a> - Configure your AWS environment for Microsoft Sentinel integration</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/awssecurityhubfindingsccpdefinition.html">AWS Security Hub Findings (via Codeless Connector Framework)</a></li>
+</ul>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/awssecurityhubfindings.html"><code>AWSSecurityHubFindings</code></a></td>
+<td><a href="../connectors/awssecurityhubfindingsccpdefinition.html">AWS Security Hub Findings (via Codeless Connector Framework)</a></td>
+<td>Analytics, Hunting</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>11 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">3</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/aws-security-hub-aws-security-hub-detect-cloudtrail-trails-lacking-kms-encryption-9c2f6c3b-7fd8-4c5a-9d9d-3c4f9e6a7b21-f0d5ec79.html">AWS Security Hub - Detect CloudTrail trails lacking KMS encryption</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/awssecurityhubfindings.html"><code>AWSSecurityHubFindings</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aws-security-hub-aws-security-hub-detect-ec2-security-groups-allowing-unrestricted-high-risk-ports-d2b6fa0f-6a4c-4c48-8c64-5e2e1ac4e7b9-64a6560b.html">AWS Security Hub - Detect EC2 Security groups allowing unrestricted high-risk ports</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess, LateralMovement, Discovery</td>
+<td style="text-align: left;"><a href="../tables/awssecurityhubfindings.html"><code>AWSSecurityHubFindings</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aws-security-hub-aws-security-hub-detect-iam-policies-allowing-full-administrative-privileges-de1f71d2-d127-439d-a8a2-e64d3187298a-e5815f1e.html">AWS Security Hub - Detect IAM Policies allowing full administrative privileges</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/awssecurityhubfindings.html"><code>AWSSecurityHubFindings</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aws-security-hub-aws-security-hub-detect-iam-root-user-access-key-existence-171cbece-be87-4467-8754-63d82b3d3dfb-5ee6a7fb.html">AWS Security Hub - Detect IAM root user Access Key existence</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">PrivilegeEscalation, Persistence</td>
+<td style="text-align: left;"><a href="../tables/awssecurityhubfindings.html"><code>AWSSecurityHubFindings</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aws-security-hub-aws-security-hub-detect-sqs-queue-lacking-encryption-at-rest-7b8c5e2d-6f1c-4a1f-9e2a-3c5f7a8b9c10-2f99fc74.html">AWS Security Hub - Detect SQS Queue lacking encryption at rest</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/awssecurityhubfindings.html"><code>AWSSecurityHubFindings</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aws-security-hub-aws-security-hub-detect-sqs-queue-policy-allowing-public-access-4f0f3c2a-8d44-43f8-9d9a-5b1e0d5f2c11-e5c6f3b7.html">AWS Security Hub - Detect SQS Queue policy allowing public access</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Exfiltration, Collection</td>
+<td style="text-align: left;"><a href="../tables/awssecurityhubfindings.html"><code>AWSSecurityHubFindings</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aws-security-hub-aws-security-hub-detect-ssm-documents-public-sharing-enabled-0aa20f8c-b8e4-4a34-a5b8-8b2d9dd7d1c2-2776d00c.html">AWS Security Hub - Detect SSM documents public sharing enabled</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/awssecurityhubfindings.html"><code>AWSSecurityHubFindings</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aws-security-hub-aws-security-hub-detect-root-user-lacking-mfa-6b3b9b1d-0d5d-4d4a-9f0f-8d1e2c7a5f44-e099b5c2.html">AWS Security Hub - Detect root user lacking MFA</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">PrivilegeEscalation, Persistence, CredentialAccess, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/awssecurityhubfindings.html"><code>AWSSecurityHubFindings</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/aws-security-hub-aws-security-hub-cloudtrail-trails-without-log-file-validation-e40c3c7d-0b6d-4f2d-90a4-4d9d77c2e3f5-632597f9.html">AWS Security Hub - CloudTrail trails without log file validation</a></td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/awssecurityhubfindings.html"><code>AWSSecurityHubFindings</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aws-security-hub-aws-security-hub-ec2-instances-with-public-ipv4-address-2b7f9e4e-6c3a-4c8f-9b1d-1a2f3e4c5d6b-a62da3c4.html">AWS Security Hub - EC2 instances with public IPv4 address</a></td>
+<td style="text-align: left;">InitialAccess, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/awssecurityhubfindings.html"><code>AWSSecurityHubFindings</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aws-security-hub-aws-security-hub-iam-users-with-console-password-and-no-mfa-d5818873-a2ab-4467-8e97-60fe56ca10cc-19aaeb10.html">AWS Security Hub - IAM users with console password and no MFA</a></td>
+<td style="text-align: left;">PrivilegeEscalation, CredentialAccess, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/awssecurityhubfindings.html"><code>AWSSecurityHubFindings</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.2</td>
+<td>27-08-2025</td>
+<td>AWS Security Hub added <strong>Analytical Rule</strong> and <strong>Hunting Queries</strong></td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>27-06-2025</td>
+<td>AWS Security Hub <strong>CCF Data Connector</strong> moving to GA</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>14-05-2025</td>
+<td>New <strong>Data Connector</strong>, Pre Release</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

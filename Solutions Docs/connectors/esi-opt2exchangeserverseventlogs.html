@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microsoft Exchange Logs and Events &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Microsoft Exchange Logs and Events</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>ESI-Opt2ExchangeServersEventLogs</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/ama.html">AMA</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20On-Premises/Data%20Connectors/ESI-Opt2ExchangeServersEventLogs.json">ESI-Opt2ExchangeServersEventLogs.json</a></td>
+</tr>
+</tbody>
+</table>
+<p>[Option 2] - Using Azure Monitor Agent - You can stream all Exchange Security &amp; Application Event logs from the Windows machines connected to your Microsoft Sentinel workspace using the Windows agent. This connection enables you to create custom alerts, and improve investigation.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/event.html"><code>Event</code></a></td>
+<td style="text-align: left;"><code>EventLog == "Application"</code></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+</tr>
+</tbody>
+</table>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Azure Log Analytics will be deprecated</strong>: Azure Log Analytics will be deprecated, to collect data from non-Azure VMs, Azure Arc is recommended. <a href="https://docs.microsoft.com/azure/azure-monitor/agents/azure-monitor-agent-install?tabs=ARMAgentPowerShell,PowerShellWindows,PowerShellWindowsArc,CLIWindows,CLIWindowsArc">Learn more</a>
+- <strong>Detailled documentation</strong>: &gt;<strong>NOTE:</strong> Detailled documentation on Installation procedure and usage can be found <a href="https://aka.ms/MicrosoftExchangeSecurityGithub">here</a></p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+<p><strong>NOTE:</strong> This solution is based on options. This allows you to choose which data will be ingest as some options can generate a very high volume of data. Depending on what you want to collect, track in your Workbooks, Analytics Rules, Hunting capabilities you will choose the option(s) you will deploy. Each options are independant for one from the other. To learn more about each option: <a href="https://aka.ms/ESI_DataConnectorOptions">'Microsoft Exchange Security' wiki</a></p>
+<p>This Data Connector is the <strong>option 2</strong> of the wiki.</p>
+</blockquote>
+<p><strong>1.  Download and install the agents needed to collect logs for Microsoft Sentinel</strong></p>
+<p>Type of servers (Exchange Servers, Domain Controllers linked to Exchange Servers or all Domain Controllers) depends on the option you want to deploy.
+<strong>Deploy Monitor Agents</strong></p>
+<p>This step is required only if it's the first time you onboard your Exchange Servers/Domain Controllers
+<strong>Deploy the Azure Arc Agent</strong></p>
+<blockquote>
+<p><a href="https://docs.microsoft.com/azure/azure-monitor/agents/azure-monitor-agent-install?tabs=ARMAgentPowerShell,PowerShellWindows,PowerShellWindowsArc,CLIWindows,CLIWindowsArc">Learn more</a></p>
+</blockquote>
+<p><strong>2. [Option 2] Security/Application/System logs of Exchange Servers</strong></p>
+<p>The Security/Application/System logs of Exchange Servers are collected using Data Collection Rules (DCR).
+<strong>Security Event log collection</strong></p>
+<p><strong>Data Collection Rules - Security Event logs</strong></p>
+<p><strong>Enable data collection rule for Security Logs</strong>
+Security Events logs are collected only from <strong>Windows</strong> agents.
+1. Add Exchange Servers on <em>Resources</em> tab.
+2. Select Security log level</p>
+<blockquote>
+<p><strong>Common level</strong> is the minimum required. Please select 'Common' or 'All Security Events' on DCR definition.
+  - <strong>Create data collection rule</strong>
+<strong>Application and System Event log collection</strong></p>
+</blockquote>
+<p><strong>Enable data collection rule</strong></p>
+<blockquote>
+<p>Application and System Events logs are collected only from <strong>Windows</strong> agents.
+<strong>Option 1 - Azure Resource Manager (ARM) Template (Prefered method)</strong></p>
+</blockquote>
+<pre><code>Use this method for automated deployment of the DCR.
+</code></pre>
+<ol>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below. </p>
+<p><a href="https://aka.ms/sentinel-ESI-DCROption2-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. 
+3. Enter the <strong>Workspace Name</strong> 'and/or Other required fields'.</p>
+<blockquote>
+<ol start="4">
+<li>Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>. </li>
+<li>Click <strong>Purchase</strong> to deploy.</li>
+</ol>
+</blockquote>
+<p><strong>Option 2 - Manual Deployment of Azure Automation</strong></p>
+<p>Use the following step-by-step instructions to deploy manually a Data Collection Rule.
+<strong>A. Create DCR, Type Event log</strong></p>
+<ol>
+<li>From the Azure Portal, navigate to <a href="https://portal.azure.com/#view/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/~/dataCollectionRules">Azure Data collection rules</a>.</li>
+<li>Click <strong>+ Create</strong> at the top.</li>
+<li>In the <strong>Basics</strong> tab, fill the required fields, Select Windows as platform type and give a name to the DCR. </li>
+<li>In the <strong>Resources</strong> tab, enter you Exchange Servers.</li>
+<li>In 'Collect and deliver', add a Data Source type 'Windows Event logs' and select 'Basic' option.</li>
+<li>For Application, select 'Critical', 'Error' and 'Warning'. For System, select Critical/Error/Warning/Information. </li>
+<li>'Make other preferable configuration changes', if needed, then click <strong>Create</strong>.</li>
+</ol>
+<p><strong>Assign the DCR to all Exchange Servers</strong></p>
+<p>Add all your Exchange Servers to the DCR</p>
+</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DeviceNetworkEvents &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>DeviceNetworkEvents</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Network connection and related events</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">MDE</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicenetworkevents">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicenetworkevents-table">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (51 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicenetworkevents">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of activity that triggered the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AdditionalFields</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Additional information about the entity or event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AppGuardContainerId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier for the virtualized container used by Application Guard to isolate browser activity.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the device in the service.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Fully qualified domain name (FQDN) of the device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessAccountDomain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Domain of the account that ran the initiating process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessAccountName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User name of the account that ran the initiating process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessAccountObjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Azure AD object ID of the user account that ran the initiating process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessAccountSid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Security Identifier (SID) of the account that ran the initiating process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessAccountUpn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User principal name (UPN) of the account that ran the initiating process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessCommandLine</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Command line used to run the initiating process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessCreationTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the process that initiated the event was started.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessFileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the initiating process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessFileSize</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Size of the file (bytes) that ran the process responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessFolderPath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Folder containing the initiating process (image file).</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Process ID (PID) of the initiating process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessIntegrityLevel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Integrity level of the initiating process. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources..</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessMD5</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">MD5 hash of the initiating process (image file).</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessParentCreationTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the parent of the process responsible for the event was started.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessParentFileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the parent process that spawned the initiating process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessParentId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Process ID (PID) of the parent process that spawned the initiating process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessRemoteSessionDeviceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Device name of the remote device from which the initiating process's RDP session was initiated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessRemoteSessionIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of the remote device from which the initiating process's RDP session was initiated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessSessionId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Windows session ID of the initiating process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessSHA1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SHA-1 hash of the initiating process (image file).</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessSHA256</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SHA-256 hash of the initiating process (image file). In some cases this column may not be populated - please use the InitiatingProcessSHA1 column instead.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessTokenElevation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the initiating process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessUniqueId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the initiating process; this is equal to the Process Start Key in Windows devices.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessVersionInfoCompanyName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The company name in version information (image file) responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessVersionInfoFileDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The description in version information (image file) responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessVersionInfoInternalFileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The internal file name in version information (image file) responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessVersionInfoOriginalFileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The original file name in version information (image file) responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessVersionInfoProductName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The product name in version information (image file) responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessVersionInfoProductVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The product version in version information (image file) responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsInitiatingProcessRemoteSession</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the initiating process was run under a remote desktop protocol (RDP) session (true) or locally (false).</td>
+</tr>
+<tr>
+<td style="text-align: left;">LocalIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address assigned to the local machine used during communication.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LocalIPType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LocalPort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">TCP port on the local machine used during communication.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MachineGroup</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Machine group of the machine. This group is used by role-based access control to determine access to the machine.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Protocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP protocol used, whether TCP or UDP.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address that was being connected to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteIPType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemotePort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">TCP port on the remote device that was being connected to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteUrl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">URL or fully qualified domain name (FQDN) that was being connected to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReportId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns..</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time the event was recorded by the MDE agent on the endpoint.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (13)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a></li>
+<li><a href="../solutions/cyware.html">Cyware</a></li>
+<li><a href="../solutions/dora-compliance.html">DORA Compliance</a></li>
+<li><a href="../solutions/endpoint-threat-protection-essentials.html">Endpoint Threat Protection Essentials</a></li>
+<li><a href="../solutions/falconfriday.html">FalconFriday</a></li>
+<li><a href="../solutions/hipaa-compliance.html">HIPAA Compliance</a></li>
+<li><a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a></li>
+<li><a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a></li>
+<li><a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a></li>
+<li><a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></li>
+<li><a href="../solutions/threat-intelligence.html">Threat Intelligence</a></li>
+<li><a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></li>
+<li><a href="../solutions/zinc-open-source.html">Zinc Open Source</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/microsoftthreatprotection.html">Microsoft Defender XDR</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Content Items Using This Table (31)</h2>
+<h3>Analytic Rules (16)</h3>
+<p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong> <code>ActionType == "InboundConnectionAccepted"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990-c6cdb809.html">Log4j vulnerability exploit aka Log4Shell IP IOC</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/falconfriday.html">FalconFriday</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-dcom-lateral-movement-d58035ff-0bac-4c61-a7f4-f58939ff9764-9dd841b7.html">DCOM Lateral Movement</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-smb-windows-admin-shares-9da25366-2c77-41a5-a159-0da5e2f5fb90-2e2330d9.html">SMB/Windows Admin Shares</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-execution-of-software-vulnerable-to-webp-buffer-overflow-of-cve-2023-4863-26e81021-2de6-4442-a74a-a77885e96911-15de3ea9.html">Execution of software vulnerable to webp buffer overflow of CVE-2023-4863</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-rare-process-as-a-service-91a451e3-178f-41b2-9e5d-da97d75b9971-365d2f3a.html">Rare Process as a Service</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-regsvr32-rundll32-image-loads-abnormal-extension-36fbd4e7-5630-4414-aa42-702a7fdded21-4cc759a2.html">Regsvr32 Rundll32 Image Loads Abnormal Extension</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-regsvr32-rundll32-with-anomalous-parent-process-2624fc55-0998-4897-bb48-1c6422befce4-d1e3cdd5.html">Regsvr32 Rundll32 with Anomalous Parent Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-sunburst-network-beacons-ce1e7025-866c-41f3-9b08-ec170e05e73e-b0c0854f.html">SUNBURST network beacons</a></td>
+<td style="text-align: left;"><code>ActionType == "ConnectionSuccess"</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/threat-intelligence.html">Threat Intelligence</a>:</strong> <code>ActionType !has "ConnectionFailed"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-ti-map-domain-entity-to-devicenetworkevents-c308b2f3-eebe-4a20-905c-cb8293b062db-1b8b91ec.html">TI Map Domain Entity to DeviceNetworkEvents</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-ti-map-ip-entity-to-devicenetworkevents-b2df4979-d34a-48b3-a7d9-f473a4bf8058-1cf5dff4.html">TI Map IP Entity to DeviceNetworkEvents</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-ti-map-url-entity-to-devicenetworkevents-6ddbd892-a9be-47be-bab7-521241695bd6-16a87b1d.html">TI Map URL Entity to DeviceNetworkEvents</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a>:</strong> <code>ActionType !has "ConnectionFailed"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-domain-entity-to-devicenetworkevents-1546f3b3-de8a-4e62-bfea-815422154981-be5129ac.html">TI Map Domain Entity to DeviceNetworkEvents</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-ip-entity-to-devicenetworkevents-2474343c-9135-42ec-9c40-a1bace43da5c-3e3eda3e.html">TI Map IP Entity to DeviceNetworkEvents</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-url-entity-to-devicenetworkevents-4f0356b2-d344-4c19-9375-31b9575d80cb-edd30654.html">TI Map URL Entity to DeviceNetworkEvents</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/zinc-open-source.html">Zinc Open Source</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/zinc-open-source-zinc-actor-iocs-files-october-2022-9a7f6651-801b-491c-a548-8b454b356eaa-72407d32.html">Zinc Actor IOCs files - October 2022</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.html">[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries (9)</h3>
+<p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/apache-log4j-vulnerability-detection-malicious-connection-to-ldap-port-for-cve-2021-44228-vulnerability-19abc034-139e-4e64-a05d-cb07ce8b003b-ea04e1a2.html">Malicious Connection to LDAP port for CVE-2021-44228 vulnerability</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/cyware.html">Cyware</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/cyware-detecting-suspicious-powershell-command-executions-deb99c6f-1903-455b-bb2c-0036614110bc-ec55d474.html">Detecting Suspicious PowerShell Command Executions</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/endpoint-threat-protection-essentials.html">Endpoint Threat Protection Essentials</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/endpoint-threat-protection-essentials-download-of-new-file-using-curl-7108c86b-a3ef-42d0-b50b-3e251fb1f84c-09e03acc.html">Download of New File Using Curl</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-detect-maisniper-e17ddfc6-7478-443b-99ff-286f3d09b8aa-ab6dfb83.html">Detect MaiSniper</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-rare-process-as-a-service-96976bb1-1993-45b8-a477-8236ee93976b-cf1c1157.html">Rare Process as a Service</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-recon-with-rundll-76c14475-9a22-4cc1-922c-437d7f614a36-e593fe5e.html">Recon with Rundll</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-regsvr32-rundll32-image-loads-abnormal-extension-b1f8aac2-766d-47ec-8787-84bc7692ff77-8be87cf1.html">Regsvr32 Rundll32 Image Loads Abnormal Extension</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-regsvr32-rundll32-with-anomalous-parent-process-54ea2379-28e7-48e1-8dfd-aaf8fb1331ba-f2e2f8cf.html">Regsvr32 Rundll32 with Anomalous Parent Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-snip3-malicious-network-connectivity-b3470e40-39ae-4c28-9282-440038f6f964-47add26a.html">Snip3 Malicious Network Connectivity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks (6)</h3>
+<p><strong>In solution <a href="../solutions/dora-compliance.html">DORA Compliance</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/dora-compliance-doracompliance-21bcc12f.html">DORACompliance</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/hipaa-compliance.html">HIPAA Compliance</a>:</strong> <code>ActionType == "ConnectionSuccess"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/hipaa-compliance-hipaacompliance-3850f8c8.html">HIPAACompliance</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.html">Lumen-Threat-Feed-Overview</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.html">MicrosoftDefenderForEndPoint</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/team-cymru-scout-teamcymruscout-b64c6ed4.html">TeamCymruScout</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Parsers Using This Table (1)</h2>
+<h3>ASIM Parsers (1) — Selection Criteria: <code>ActionType == "ConnectionFailed"</code></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Product</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimnetworksessionmicrosoft365defender.html">ASimNetworkSessionMicrosoft365Defender</a></td>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: left;">M365 Defender for Endpoint</td>
+</tr>
+</tbody>
+</table>
+<h2>Selection Criteria Summary (4 criteria, 10 total references)</h2>
+<p>References by type: 0 connectors, 9 content items, 1 ASIM parsers, 0 other parsers.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>ActionType !has "ConnectionFailed"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>6</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType == "ConnectionSuccess"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType == "InboundConnectionAccepted"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType == "ConnectionFailed"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>9</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>10</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>ActionType</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>!has ConnectionFailed</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>6</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ConnectionSuccess</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>InboundConnectionAccepted</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ConnectionFailed</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

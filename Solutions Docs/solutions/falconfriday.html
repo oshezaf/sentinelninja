@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FalconFriday &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>FalconFriday</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/falconforce_logo.svg" alt="FalconFriday Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">FalconForce</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://www.falconforce.nl/en/">https://www.falconforce.nl/en/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">FalconForce - info@falconforce.nl</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2021-10-18</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/FalconFriday">FalconFriday</a></td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://github.com/FalconForceTeam/FalconFriday/blob/master/README.md">FalconFriday</a> is a blog post series by FalconForce providing the community with free detection content for various attacks seen and executed in the wild by FalconForce.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p><strong>This solution does not include data connectors.</strong></p>
+<p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
+<h2>Tables Used</h2>
+<p>This solution queries <strong>11 table(s)</strong> from its content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/aadnoninteractiveusersigninlogs.html"><code>AADNonInteractiveUserSignInLogs</code></a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/deviceevents.html"><code>DeviceEvents</code></a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/devicefileevents.html"><code>DeviceFileEvents</code></a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/deviceimageloadevents.html"><code>DeviceImageLoadEvents</code></a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/devicelogonevents.html"><code>DeviceLogonEvents</code></a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/devicenetworkevents.html"><code>DeviceNetworkEvents</code></a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/deviceregistryevents.html"><code>DeviceRegistryEvents</code></a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+<td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>30 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">30</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-asr-bypassing-writing-executable-content-efe4efef-5ca7-4b51-a53e-0e96492ce97a-78c522d8.html">ASR Bypassing Writing Executable Content</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/devicefileevents.html"><code>DeviceFileEvents</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-access-token-manipulation-create-process-with-token-8df80270-b4fa-4a7a-931e-8d17c0b321ae-d1e3f3fd.html">Access Token Manipulation - Create Process with Token</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">PrivilegeEscalation, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/devicelogonevents.html"><code>DeviceLogonEvents</code></a><br><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-beacon-traffic-based-on-common-user-agents-visiting-limited-number-of-domains-6345c923-99eb-4a83-b11d-7af0ffa75577-e0e2298a.html">Beacon Traffic Based on Common User Agents Visiting Limited Number of Domains</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-certified-pre-owned-tgts-requested-with-certificate-authentication-b838a13c-052e-45b8-a5ac-7d3eb62efa11-8b984753.html">Certified Pre-Owned - TGTs requested with certificate authentication</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-certified-pre-owned-backup-of-ca-private-key-rule-1-aa5eaac7-1264-4833-b620-8f062be75541-ac010cd6.html">Certified Pre-Owned - backup of CA private key - rule 1</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-certified-pre-owned-backup-of-ca-private-key-rule-2-88f8fbc0-345d-458e-85f6-f73921d5ef50-fbc7bd12.html">Certified Pre-Owned - backup of CA private key - rule 2</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-component-object-model-hijacking-vault7-trick-1aaff41f-4e18-45b1-bb34-de6eb4943cf2-23d9ec72.html">Component Object Model Hijacking - Vault7 trick</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/deviceregistryevents.html"><code>DeviceRegistryEvents</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-dcom-lateral-movement-d58035ff-0bac-4c61-a7f4-f58939ff9764-9dd841b7.html">DCOM Lateral Movement</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/devicenetworkevents.html"><code>DeviceNetworkEvents</code></a><br><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-detect-.net-runtime-being-loaded-in-jscript-for-code-execution-9f921513-65f3-48a2-ae7d-326c5901c55e-fd9342fe.html">Detect .NET runtime being loaded in JScript for code execution</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/deviceimageloadevents.html"><code>DeviceImageLoadEvents</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-detecting-uac-bypass-changepk-and-slui-registry-tampering-829a69ba-93e1-491f-8a1f-b19506e9d88a-8d651a60.html">Detecting UAC bypass - ChangePK and SLUI registry tampering</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-detecting-uac-bypass-elevated-com-interface-2d5efc71-2e91-4ca2-8506-857eecb453ec-e0911a66.html">Detecting UAC bypass - elevated COM interface</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-detecting-uac-bypass-modify-windows-store-settings-8b8fbf9c-35d4-474b-8151-a40173521293-03123f75.html">Detecting UAC bypass - modify Windows Store settings</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-disable-or-modify-windows-defender-20d52a04-b5d8-402d-88e2-7929d12cbdcd-3b3084de.html">Disable or Modify Windows Defender</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-excessive-share-permissions-aba0b08c-aace-40c5-a21d-39153023dcaa-6377fa2a.html">Excessive share permissions</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Collection, Discovery</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-expired-access-credentials-being-used-in-azure-433c3b0a-7278-4d74-b137-963ac6f9a7e7-965eac08.html">Expired access credentials being used in Azure</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-hijack-execution-flow-dll-side-loading-3084b487-fad6-4000-9544-6085b9657290-16d7660f.html">Hijack Execution Flow - DLL Side-Loading</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Persistence, PrivilegeEscalation, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/devicefileevents.html"><code>DeviceFileEvents</code></a><br><a href="../tables/deviceimageloadevents.html"><code>DeviceImageLoadEvents</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-ingress-tool-transfer-certutil-f0be11a9-ec48-4df6-801d-479556044d4e-e41d03ca.html">Ingress Tool Transfer - Certutil</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CommandAndControl, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/devicefileevents.html"><code>DeviceFileEvents</code></a><br><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-match-legitimate-name-or-location-2-dd22dc4f-ab7c-4d0a-84ad-cc393638ba31-6d4321f9.html">Match Legitimate Name or Location - 2</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-microsoft-entra-id-rare-useragent-app-sign-in-87d5cd18-211d-4fd4-9b86-65d23fed87ea-f1fc55a9.html">Microsoft Entra ID Rare UserAgent App Sign-in</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/aadnoninteractiveusersigninlogs.html"><code>AADNonInteractiveUserSignInLogs</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-microsoft-entra-id-useragent-os-missmatch-6a638d80-f6b2-473b-9087-3cac78a84b40-e6a7d745.html">Microsoft Entra ID UserAgent OS Missmatch</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/aadnoninteractiveusersigninlogs.html"><code>AADNonInteractiveUserSignInLogs</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-office-asr-rule-triggered-from-browser-spawned-office-process.-30580043-2451-4d35-b49f-065728529f4a-65634609.html">Office ASR rule triggered from browser spawned office process.</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/deviceevents.html"><code>DeviceEvents</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-oracle-suspicious-command-execution-e6c5ff42-0f42-4cec-994a-dabb92fe36e1-0ab82658.html">Oracle suspicious command execution</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">LateralMovement, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-password-spraying-e00f72ab-fea1-4a31-9ecc-eea6397cd38d-9fc40186.html">Password Spraying</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/devicelogonevents.html"><code>DeviceLogonEvents</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-remote-desktop-protocol-sharprdp-cc46e76c-0d04-40b0-9c8b-929aa40513e7-7ea028f9.html">Remote Desktop Protocol - SharpRDP</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/devicelogonevents.html"><code>DeviceLogonEvents</code></a><br><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-rename-system-utilities-335ddff8-b615-42cd-b593-86e419b45d78-753d3370.html">Rename System Utilities</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-smb-windows-admin-shares-9da25366-2c77-41a5-a159-0da5e2f5fb90-2e2330d9.html">SMB/Windows Admin Shares</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/devicenetworkevents.html"><code>DeviceNetworkEvents</code></a><br><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-suspicious-process-injection-from-office-application-a4d8e681-6f30-440a-a2f3-c312bc1389d0-f6ee7c3b.html">Suspicious Process Injection from Office application</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/deviceevents.html"><code>DeviceEvents</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-suspicious-named-pipes-ddf7c669-db26-4215-acaf-11e2953a04e6-377a4889.html">Suspicious named pipes</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Execution, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/deviceevents.html"><code>DeviceEvents</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-suspicious-parentprocess-relationship-office-child-processes.-5ee34fa1-64ed-48c7-afa2-794b244f6c60-081c16fa.html">Suspicious parentprocess relationship - Office child processes.</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-trusted-developer-utilities-proxy-execution-5c2bb446-926f-4160-a233-21e335c2c290-aac01cd9.html">Trusted Developer Utilities Proxy Execution</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.0</td>
+<td>24-06-2024</td>
+<td>Modified text as there is rebranding from Azure Active Directory to Microsoft Entra ID and Added missing AMA <strong>Data Connector</strong> reference in <strong>Analytic rules</strong>.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

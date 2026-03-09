@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Druva Quarantine Playbook for inSync Workloads &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Druva Quarantine Playbook for inSync Workloads</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>This playbook uses Druva-Ransomware-Response capabilities to stop the spread of ransomware and avoid reinfection or contamination spread to your inSync User based workloads.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/druvadatasecuritycloud.html">DruvaDataSecurityCloud</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DruvaDataSecurityCloud/Playbooks/DruvaQuarantineInsyncWorkloads/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DruvaDataSecurityCloud/Playbooks/DruvaQuarantineInsyncWorkloads/readme.md">DruvaQuarantineInsyncWorkloads/readme.md</a></em></p>
+</blockquote>
+<h1>Druva Quarantine Insync Workload Resource</h1>
+<h2>Summary</h2>
+<p>This playbook uses Druva-Ransomware-Response capabilities to stop the spread of ransomware and avoid reinfection or contamination spread to your environment.</p>
+<h3>Prerequisites</h3>
+<ol>
+<li>Verify ARR (Accelerated Ransomware Recovery) should be enabled for the respective Device using Resource ID on the <a href="https://console.druva.com/">Druva Security Cloud Platform</a>.</li>
+<li>Generate Druva API Client Credentials<ul>
+<li>Use the following link to navigate to Druva's documentation page and refer the steps to generate API Client Credentials.</li>
+<li><a href="https://help.druva.com/en/articles/8580838-create-and-manage-api-credentials">Druva's Documentation Page</a></li>
+<li>Copy/Paste or Store the creds for future use.</li>
+</ul>
+</li>
+<li>Store Service account credentials in Key Vault Secrets and obtain keyvault name.<ul>
+<li>Create a Key Vault with name as Druva-ClientCredential</li>
+<li>Go to KeyVault -&gt; secrets -&gt; Generate/import and create 'Druva-ClientID' &amp; 'Druva-ClientSecret' for storing client_id and client_secret respectively.</li>
+<li>Store the secrets obtained for your organization and user from Druva Console UI in the previous step.</li>
+</ul>
+</li>
+</ol>
+<h3>Deployment instructions</h3>
+<ol>
+<li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
+<li>Fill in the required parameters:<ul>
+<li>PlaybookName: Name by which you want to deploy the playbook.</li>
+<li>keyvaultName: Name of keyvault where secrets are stored.</li>
+</ul>
+</li>
+<li>Validate the deployment:<ul>
+<li>Check if the resources (e.g., Key Vault, API connections, Logic Apps) are created successfully.</li>
+<li>Verify the deployment logs for any errors.</li>
+</ul>
+</li>
+<li>Authorize connections:<ul>
+<li>Follow the steps in the 'postDeployment' section to authorize connections.</li>
+</ul>
+</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDruvaDataSecurityCloud%2FPlaybooks%2FDruvaQuarantineInsyncWorkload%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDruvaDataSecurityCloud%2FPlaybooks%2FDruvaQuarantineInsyncWorkload%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<h3>Post-Deployment instructions</h3>
+<h4>a. Authorize connections</h4>
+<p>Once deployment is complete, authorize each connection keyvault.</p>
+<ol>
+<li>Login to the Microsoft Azure portal and in the search box type API Connections.</li>
+<li>Find API connection option.</li>
+<li>Check for your created API connection exists. eg. <playbookname>-KeyVault-Connection</li>
+<li>Check Status should be ready for the same API Connection.</li>
+</ol>
+<h4>b. Grant permissions</h4>
+<p>Make sure that this playbook and your user has the IAM role permission granted as 'Key Vault Secrets User'</p>
+<h3>Execute the playbook:</h3>
+<ol>
+<li>Trigger the playbook manually by using the dropdown option as 'run_with_payload'.</li>
+<li>On triggering a side screen will appear in which there will be a section named as 'Body'.</li>
+<li>Inside body paste the json obtained from the below with respective edited values according to your resources.
+    ```json
+    {
+        "username" : "<username_in_which_devices_are_registered_to_quarantine>",
+        "fromDate" : "&lt;2024-12-01&gt;",
+        "toDate" : "&lt;2024-12-18&gt;"
+    }</li>
+<li>Hit the 'run' button at the bottom.</li>
+<li>Navigate to the playbook home page and check the run history if the run was successful or not.</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/druvadatasecuritycloud.html">Back to DruvaDataSecurityCloud</a></p>
+</div>
+</body>
+</html>

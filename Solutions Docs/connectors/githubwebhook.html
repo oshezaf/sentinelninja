@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub using Webhooks &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>GitHub (using Webhooks)</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/GitHub.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>GitHubWebhook</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/github.html">GitHub</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub/Data%20Connectors/GithubWebhook/GithubWebhook_API_FunctionApp.json">GithubWebhook_API_FunctionApp.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Azure Function code uses SharedKey/HTTP Data Collector API</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.github.com">GitHub</a> webhook data connector provides the capability to ingest GitHub subscribed events into Microsoft Sentinel using <a href="https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads">GitHub webhook events</a>. The connector provides ability to get events into Microsoft Sentinel which helps to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more. </p>
+<p><strong>Note:</strong> If you are intended to ingest Github Audit logs, Please refer to GitHub Enterprise Audit Log Connector from "<strong>Data Connectors</strong>" gallery.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/githubscanaudit-cl.html"><code>githubscanaudit_CL</code></a> 🔶</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+<p><strong>NOTE:</strong> This connector has been built on http trigger based Azure Function. And it provides an endpoint to which github will be connected through it's webhook capability and posts the subscribed events into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
+<p><strong>(Optional Step)</strong> Securely store workspace and API authorization key(s) or token(s) in Azure Key Vault. Azure Key Vault provides a secure mechanism to store and retrieve key values. <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Follow these instructions</a> to use Azure Key Vault with an Azure Function App.</p>
+</blockquote>
+<p><strong>Choose ONE from the following two deployment options to deploy the connector and the associated Azure Function</strong></p>
+<blockquote>
+<p><strong>IMPORTANT:</strong> Before deploying the Github Webhook connector, have the Workspace ID  and Workspace Primary Key (can be copied from the following).
+- <strong>Workspace ID</strong>: <code>WorkspaceId</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
+- <strong>Primary Key</strong>: <code>PrimaryKey</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+<p><strong>Option 1 - Azure Resource Manager (ARM) Template</strong></p>
+<p>Use this method for automated deployment of the GitHub data connector using an ARM Tempate.</p>
+<ol>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below. </p>
+<p><a href="https://aka.ms/sentinel-GitHubwebhookAPI-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. </p>
+<blockquote>
+<p><strong>NOTE:</strong> Within the same resource group, you can't mix Windows and Linux apps in the same region and deploy. 
+3. Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>. 
+5. Click <strong>Purchase</strong> to deploy.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Option 2 - Manual Deployment of Azure Functions</strong></p>
+<p>Use the following step-by-step instructions to deploy the GitHub webhook data connector manually with Azure Functions (Deployment via Visual Studio Code).
+<strong>Step 1 - Deploy a Function App</strong></p>
+<pre><code>1. Download the [Azure Function App](https://aka.ms/sentinel-GitHubWebhookAPI-functionapp) file. Extract archive to your local development computer.
+</code></pre>
+<ol start="2">
+<li>Follow the <a href="https://github.com/Azure/Azure-Sentinel/blob/master/DataConnectors/AzureFunctionsManualDeployment.md#function-app-manual-deployment-instructions">function app manual deployment instructions</a> to deploy the Azure Functions app using VSCode.</li>
+<li>
+<p>After successful deployment of the function app, follow next steps for configuring it.</p>
+<p><strong>Step 2 - Configure the Function App</strong></p>
+<ol>
+<li>Go to Azure Portal for the Function App configuration. </li>
+<li>In the Function App, select the Function App Name and select <strong>Configuration</strong>.</li>
+<li>In the <strong>Application settings</strong> tab, select ** New application setting**.</li>
+<li>Add each of the following application settings individually, with their respective string values (case-sensitive): 
+    WorkspaceID
+    WorkspaceKey
+    logAnalyticsUri (optional) - Use logAnalyticsUri to override the log analytics API endpoint for dedicated cloud. For example, for public cloud, leave the value empty; for Azure GovUS cloud environment, specify the value in the following format: <code>https://&lt;CustomerId&gt;.ods.opinsights.azure.us</code>.</li>
+<li>Once all application settings have been entered, click <strong>Save</strong>.</li>
+</ol>
+</li>
+</ol>
+<p><strong>Post Deployment steps</strong></p>
+<p><strong>STEP 1 - To get the Azure Function url</strong></p>
+<ol>
+<li>Go to Azure function Overview page and Click on "Functions" in the left blade.</li>
+<li>Click on the function called "GithubwebhookConnector".</li>
+<li>Go to "GetFunctionurl" and copy the function url.</li>
+</ol>
+<p><strong>STEP 2 - Configure Webhook to Github Organization</strong></p>
+<ol>
+<li>Go to <a href="https://www.github.com">GitHub</a> and open your account and click on "Your Organizations."</li>
+<li>Click on Settings.</li>
+<li>Click on "Webhooks" and enter the function app url which was copied from above STEP 1 under payload URL textbox. </li>
+<li>Choose content type as "application/json". </li>
+<li>Subscribe for events and Click on "Add Webhook"</li>
+</ol>
+<p><em>Now we are done with the github Webhook configuration. Once the github events triggered and after the delay of 20 to 30 mins (As there will be a dealy for LogAnalytics to spin up the resources for the first time), you should be able to see all the transactional events from the Github into LogAnalytics workspace table called "githubscanaudit_CL".</em></p>
+<p>For more details, Click <a href="https://aka.ms/sentinel-gitHubwebhooksteps">here</a></p>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub\Data Connectors\GithubWebhook\README.md">GitHub\Data Connectors\GithubWebhook\README.md</a></em></p>
+</blockquote>
+<h1>Ingest GitHub events into sentinel through Webhook dataconnector</h1>
+<p>Author: Prathibha Tadikamalla</p>
+<p>The Azure function based github dataconnector using webhook pushes all the github subscribed events into Sentinel. All these events will be placed into the table called "githubscanaudit_CL". As of now the solution has 3 parsers based on the below events:
+  * <a href="https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#code_scanning_alert">Code Scanning Alert</a>
+  * <a href="https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#repository_vulnerability_alert">Repository Vulnerability Alert (Dependabot)</a>
+  * <a href="https://docs.github.com/en/enterprise-cloud@latest/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#secret_scanning_alert">Secret Scanning Alert</a></p>
+<p>Following are the configuration steps to deploy Function App.</p>
+<h2><strong>Pre-requisites</strong></h2>
+<h2>Configuration Steps to Deploy Function App</h2>
+<ol>
+<li>
+<p>Click on Deploy to Azure (For both Commercial &amp; Azure GOV)<br />
+<a href="https://aka.ms/sentinel-GitHubwebhookAPI-azuredeploy"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+<a href="https://aka.ms/sentinel-GitHubwebhookAPI-azuredeploy-gov"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+</li>
+<li>
+<p>Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong><br />
+<strong>Note</strong><br />
+   Best practice : Create new Resource Group while deploying - all the resources of your custom Data connector will reside in the newly created Resource 
+   Group</p>
+</li>
+<li>
+<p>Enter the following value in the ARM template deployment</p>
+</li>
+</ol>
+<pre><code>&quot;FunctionName&quot;: The name of the Azure function. Default value will be given as &quot;fngithubwebhook&quot;
+&quot;Workspace Id&quot;: The Sentinel Log Analytics Workspace Id  
+&quot;Workspace Key&quot;: The Sentinel Log Analytics Workspace Key  
+</code></pre>
+<h2><strong>Post Deployment Steps</strong></h2>
+<p>#### <strong>Get the Function app endpoint</strong>
+1. Follow the below steps to get the endpoint. 
+     * Go to Azure function Overview page and go to "Functions" and click on "GithubwebhookConnector"    <br />
+<img alt="" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub%5CData%20Connectors%5CGithubWebhook/Images/GotoFunction.jpg" />
+     * Go to "GetFunctionUrl" highlighted in the below image and copy the function url.
+         <img alt="" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub%5CData%20Connectors%5CGithubWebhook/Images/functionappcompleteurl.jpg" />
+     * You can also generate a new function key as provided in the below image and replace the {code} parameter value in the function app url.
+    Ex: https://fngithubwebhookconnector.azurewebsites.net/api/GithubWebhookConnector?code={apikey}
+        <img alt="" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub%5CData%20Connectors%5CGithubWebhook/Images/FunctionAppfunctionKey.jpg" /></p>
+<p>### <strong>Configure Webhook to Github Organization</strong>      <br />
+    *  Go to github and open your account and click on "Your Organizations"</p>
+<pre><code>   ![](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub%5CData%20Connectors%5CGithubWebhook/Images/Githubstep1.JPG)
+
+*  Click on Settings
+
+   ![](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub%5CData%20Connectors%5CGithubWebhook/Images/GithubStep2.jpg)
+
+*  Click on "Webhooks" and configure the function app endpoint as shown below. Ensure you choose to GitHub Advanced Security events: `Code scanning alerts`, `Repository vulnerability alerts`, and `Secret scanning alerts`
+
+   ![](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub%5CData%20Connectors%5CGithubWebhook/Images/GithubStep3.jpg)
+</code></pre>
+<ol start="4">
+<li>
+<p>With that you are done with the github configuration. After the delay of 10 to 20 mins (since LogAnalytics needs sometime to spin up the resources for the first time), you should be able to see all the transactional events from the Github into LogAnalytics workspace table called "githubscanaudit_CL" as shown below. </p>
+<p><img alt="" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub%5CData%20Connectors%5CGithubWebhook/Images/LogAnalyticsdata.jpg" /></p>
+</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

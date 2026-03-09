@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HDInsightRangerAuditLogs &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>HDInsightRangerAuditLogs</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for HDInsightRangerAuditLogs table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Audit, Azure Resources</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/hdinsightrangerauditlogs">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (34 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/hdinsightrangerauditlogs">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccessName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the access method.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Action</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of action made by the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AdditionalInfo</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Additional info about the request including the remote and forwarded IPs</td>
+</tr>
+<tr>
+<td style="text-align: left;">CliIpAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of where CLI request was made.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CliType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of CLI used to create request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClusterName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of cluster.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClusterResource</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Resource involved in request event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClusterResourceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of resource accessed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClusterType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the cluster that emitted the record.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID for correlated events. Can be used to identify correlated events between multiple tables.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Enforcer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the policy enforcer.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Number of events associated with the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventDurationMs</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Duration of the event in milliseconds.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HostName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of host where log was emitted.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Id</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID of the event request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of log the record came from.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The operation associated with log record.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Policy</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Code representing the policy.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Repo</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name the repo.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RepoType</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Integer representing the repo type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestData</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source that provides the request data.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestUser</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Username associated with the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Result</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Status code of the event result.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SequenceNumber</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Sequence number of the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SessionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID associated witht the user session.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tags</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">List of tags associated with the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) of when the log was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.hdinsight/clusters</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

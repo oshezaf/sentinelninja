@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>&lt;img src=&quot;../images/asim-badge.png&quot; alt=&quot;ASIM&quot; height=&quot;32&quot;&gt; Business Email Compromise - Financial Fraud &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1><img src="../images/asim-badge.png" alt="ASIM" height="32"> Business Email Compromise - Financial Fraud</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Business Email Compromise - Financial Fraud Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com/">https://support.microsoft.com/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.10</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2023-08-04</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Business%20Email%20Compromise%20-%20Financial%20Fraud">Business Email Compromise - Financial Fraud</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pre-requisites</strong></td>
+<td style="text-align: left;"><a href="microsoft-entra-id.html">Microsoft Entra ID</a>, <a href="microsoft-365.html">Microsoft 365</a>, <a href="amazon-web-services.html">Amazon Web Services</a>, <a href="microsoft-defender-xdr.html">Microsoft Defender XDR</a>, <a href="okta-single-sign-on.html">Okta Single Sign-On</a></td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://www.microsoft.com/en-in/security/business/security-101/what-is-business-email-compromise-bec?rtc=1">Business Email Compromise (BEC)</a> attacks often aim to commit financial fraud by locating sensitive payment or invoice details and using these to hijack legitimate transactions. This solution, in combination with other solutions listed below, provide a range of content to help detect and investigate BEC attacks at different stages of the attack cycle, and across multiple data sources including AWS, SAP, Okta, Dynamics 365, Microsoft Entra ID, Microsoft 365 and network logs.</p>
+<p>This content covers all stages of the attack chain from an initial phishing attack vector, establishing persistence to an environment, locating and collecting sensitive financial information from data stores, and then perpetrating and hiding their fraud. This range of content complements the coverage <a href="https://learn.microsoft.com/microsoft-365/security/defender/automatic-attack-disruption">Microsoft Defender XDR provides across Microsoft Defender products</a>.</p>
+<p>In order to gain the most comprehensive coverage possible customers should deploy the content included in this solution as well as content from the following solutions:</p>
+<ol>
+<li>
+<p>Microsoft Entra ID solution for Sentinel</p>
+</li>
+<li>
+<p>Microsoft 365 solution for Sentinel</p>
+</li>
+<li>
+<p>Amazon Web Services</p>
+</li>
+<li>
+<p>Microsoft Defender XDR</p>
+</li>
+<li>
+<p>Okta Single Sign On</p>
+</li>
+</ol>
+<h2>Contents</h2>
+<ul>
+<li><a href="#pre-requisites">Pre-requisites</a></li>
+<li><a href="#asim-pre-requisites">ASIM Pre-requisites</a></li>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Pre-requisites</h2>
+<p>This solution depends on <strong>5 other solution(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="amazon-web-services.html">Amazon Web Services</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="microsoft-365.html">Microsoft 365</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="microsoft-defender-xdr.html">Microsoft Defender XDR</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="microsoft-entra-id.html">Microsoft Entra ID</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="okta-single-sign-on.html">Okta Single Sign-On</a></td>
+</tr>
+</tbody>
+</table>
+<h2><a id="asim-pre-requisites"></a><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Pre-requisites</h2>
+<p>This solution uses the <a href="../asim/imfileevent.html"><code>imFileEvent</code></a> <a href="https://learn.microsoft.com/azure/sentinel/normalization">ASIM (Advanced Security Information Model)</a> parser to provide normalized, source-agnostic data access, expanding detection coverage without modifying queries.</p>
+<h3>Supported Products</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Dependency Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#google-workspace">Google Workspace</a></td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-365-defender-for-endpoint">Microsoft 365 Defender for EndPoint</a></td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-azure-blob-storage">Microsoft Azure Blob Storage</a></td>
+<td style="text-align: left;"><a href="azure-storage.html">Azure Storage</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-azure-file-storage">Microsoft Azure File Storage</a></td>
+<td style="text-align: left;"><a href="azure-storage.html">Azure Storage</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-azure-queue-storage">Microsoft Azure Queue Storage</a></td>
+<td style="text-align: left;"><a href="azure-storage.html">Azure Storage</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-azure-table-storage">Microsoft Azure Table Storage</a></td>
+<td style="text-align: left;"><a href="azure-storage.html">Azure Storage</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-sharepoint">Microsoft SharePoint</a></td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-sysmon-for-linux">Microsoft Sysmon for Linux</a></td>
+<td style="text-align: left;"><a href="syslog.html">Syslog</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-windows-events">Microsoft Windows Events</a></td>
+<td style="text-align: left;"><a href="windows-forwarded-events.html">Windows Forwarded Events</a><br><a href="windows-security-events.html">Windows Security Events</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#native">Native</a></td>
+<td style="text-align: left;"><a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a><br><a href="vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#sentinelone">SentinelOne</a></td>
+<td style="text-align: left;"><a href="sentinelone.html">SentinelOne</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#vmware-carbon-black-cloud">VMware Carbon Black Cloud</a></td>
+<td style="text-align: left;"><a href="vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#windows-sysmon">Windows Sysmon</a></td>
+<td style="text-align: left;"><a href="windows-forwarded-events.html">Windows Forwarded Events</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Data Connectors</h2>
+<p><strong>This solution does not include its own data connectors</strong> but uses connectors from dependency solutions:</p>
+<ul>
+<li><a href="../connectors/aws.html">Amazon Web Services</a> <em>(dependency on <a href="amazon-web-services.html">Amazon Web Services</a>)</em></li>
+<li><a href="../connectors/awss3.html">Amazon Web Services S3</a> <em>(dependency on <a href="amazon-web-services.html">Amazon Web Services</a>)</em></li>
+<li><a href="../connectors/awss3wafccpdefinition.html">Amazon Web Services S3 WAF</a> <em>(dependency on <a href="amazon-web-services.html">Amazon Web Services</a>)</em></li>
+<li><a href="../connectors/azureactivedirectory.html">Microsoft Entra ID</a> <em>(dependency on <a href="microsoft-entra-id.html">Microsoft Entra ID</a>)</em></li>
+<li><a href="../connectors/azurestorageaccount.html">Azure Storage Account</a> <em>(dependency on <a href="azure-storage.html">Azure Storage</a>)</em></li>
+<li><a href="../connectors/crowdstrikeapiconnector.html">CrowdStrike API Data Connector (via Codeless Connector Framework)</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
+<li><a href="../connectors/crowdstrikefalconadversaryintelligence.html">CrowdStrike Falcon Adversary Intelligence </a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
+<li><a href="../connectors/crowdstrikefalconendpointprotection.html">[Deprecated] CrowdStrike Falcon Endpoint Protection via Legacy Agent</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
+<li><a href="../connectors/crowdstrikefalconendpointprotectionama.html">[Deprecated] CrowdStrike Falcon Endpoint Protection via AMA</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
+<li><a href="../connectors/crowdstrikefalcons3ccpdefinition.html">CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
+<li><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
+<li><a href="../connectors/microsoftthreatprotection.html">Microsoft Defender XDR</a> <em>(dependency on <a href="microsoft-defender-xdr.html">Microsoft Defender XDR</a>)</em></li>
+<li><a href="../connectors/office365.html">Microsoft 365 (formerly, Office 365)</a> <em>(dependency on <a href="microsoft-365.html">Microsoft 365</a>)</em></li>
+<li><a href="../connectors/oktasso.html">Okta Single Sign-On</a> <em>(dependency on <a href="okta-single-sign-on.html">Okta Single Sign-On</a>)</em></li>
+<li><a href="../connectors/oktasso-polling.html">Okta Single Sign-On (Polling CCP)</a> <em>(dependency on <a href="okta-single-sign-on.html">Okta Single Sign-On</a>)</em></li>
+<li><a href="../connectors/oktassov2.html">Okta Single Sign-On</a> <em>(dependency on <a href="okta-single-sign-on.html">Okta Single Sign-On</a>)</em></li>
+<li><a href="../connectors/oktasinglesignon-usingazurefunctions.html">Okta Single Sign-On (using Azure Functions)</a> <em>(dependency on <a href="okta-single-sign-on.html">Okta Single Sign-On</a>)</em></li>
+<li><a href="../connectors/securityevents.html">Security Events via Legacy Agent</a> <em>(dependency on <a href="windows-security-events.html">Windows Security Events</a>)</em></li>
+<li><a href="../connectors/sentinelone.html">SentinelOne</a> <em>(dependency on <a href="sentinelone.html">SentinelOne</a>)</em></li>
+<li><a href="../connectors/sentineloneccp.html">SentinelOne</a> <em>(dependency on <a href="sentinelone.html">SentinelOne</a>)</em></li>
+<li><a href="../connectors/syslog.html">Syslog via Legacy Agent</a> <em>(dependency on <a href="syslog.html">Syslog</a>)</em></li>
+<li><a href="../connectors/syslogama.html">Syslog via AMA</a> <em>(dependency on <a href="syslog.html">Syslog</a>)</em></li>
+<li><a href="../connectors/vmwarecarbonblack.html">VMware Carbon Black Cloud</a> <em>(dependency on <a href="vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a>)</em></li>
+<li><a href="../connectors/windowsforwardedevents.html">Windows Forwarded Events</a> <em>(dependency on <a href="windows-forwarded-events.html">Windows Forwarded Events</a>)</em></li>
+<li><a href="../connectors/windowssecurityevents.html">Windows Security Events via AMA</a> <em>(dependency on <a href="windows-security-events.html">Windows Security Events</a>)</em></li>
+<li><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a> <em>(dependency on <a href="vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a>)</em></li>
+</ul>
+<h2>Tables Used</h2>
+<p>This solution queries <strong>6 table(s)</strong> from its content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/awscloudtrail.html"><code>AWSCloudTrail</code></a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+<td>Analytics, Hunting</td>
+</tr>
+<tr>
+<td><a href="../tables/awsbucketapilogs-cl.html"><code>AwsBucketAPILogs_CL</code></a></td>
+<td>Hunting</td>
+</tr>
+<tr>
+<td><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+<td>Hunting</td>
+</tr>
+<tr>
+<td><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+<td>Analytics, Hunting</td>
+</tr>
+<tr>
+<td><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+<td>Hunting</td>
+</tr>
+</tbody>
+</table>
+<h3>Internal Tables</h3>
+<p>The following <strong>2 table(s)</strong> are used internally by this solution's content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+<td>Hunting</td>
+</tr>
+<tr>
+<td><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+<td>Analytics, Hunting</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>20 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">13</td>
+</tr>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">7</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-account-elevated-to-new-role-c1c66f0b-5531-4a3e-a619-9d2f770ef730-301c0a50.html">Account Elevated to New Role</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-authentication-method-changed-for-privileged-account-feb0a2fb-ae75-4343-8cbc-ed545f1da289-05036a5e.html">Authentication Method Changed for Privileged Account</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a><br><em>Internal use:</em><br><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-malicious-bec-inbox-rule-8ac77493-3cae-4840-8634-15fb23f8fb68-ae4ecd95.html">Malicious BEC Inbox Rule</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Persistence, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-privileged-account-permissions-changed-0433c8a3-9aa6-4577-beef-2ea23be41137-ddff1dcb.html">Privileged Account Permissions Changed</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a><br><em>Internal use:</em><br><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/business-email-compromise-financial-fraud-suspicious-access-of-bec-related-documents-cd8d946d-10a4-40a9-bac1-6d0a6c847d65-1afb8e2e.html">Suspicious access of BEC related documents</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imfileevent.html"><code>imFileEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-suspicious-access-of-bec-related-documents-in-aws-s3-buckets-f3e2d35f-1202-4215-995c-4654ef07d1d8-5612c5c0.html">Suspicious access of BEC related documents in AWS S3 buckets</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/awscloudtrail.html"><code>AWSCloudTrail</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-user-added-to-admin-role-2a09f8cb-deb7-4c40-b08b-9137667f1c0b-3a4fbb41.html">User Added to Admin Role</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-email-forwarding-configuration-with-sap-download-0576750e-6b61-4545-845f-f5b8f29a0cc4-0b297ea9.html">Email Forwarding Configuration with SAP download</a></td>
+<td style="text-align: left;">InitialAccess, Collection, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/emailevents.html"><code>EmailEvents</code></a><br><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-high-count-download-from-a-sap-privileged-account-2843e796-3d6c-4a78-a815-1db783b346a3-6000edff.html">High count download from a SAP Privileged account</a></td>
+<td style="text-align: left;">InitialAccess, Exfiltration</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-login-attempts-using-legacy-auth-b7918a0a-c6fe-4b6d-9111-b0b0c477f1a8-3c2feb3c.html">Login attempts using Legacy Auth</a></td>
+<td style="text-align: left;">InitialAccess, Persistence</td>
+<td style="text-align: left;"><a href="../tables/signinlogs.html"><code>SigninLogs</code></a><br><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a><br><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-microsoft-entra-id-signins-from-new-locations-41fa6e2d-afe9-4398-9356-cec3a927e44e-6ce1e4de.html">Microsoft Entra ID signins from new locations</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/signinlogs.html"><code>SigninLogs</code></a><br><em>Internal use:</em><br><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-office-mail-rule-creation-with-suspicious-archive-mail-move-ac-f50a26d7-ffdb-4471-90b9-3be78c60e4f2-4287ee6e.html">Office Mail Rule Creation with suspicious archive mail move activity</a></td>
+<td style="text-align: left;">Collection, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-risky-sign-in-with-new-mfa-method-bfacf634-c75e-4291-998c-ecbc0323d943-114a4a02.html">Risky Sign-in with new MFA method</a></td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a><br><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a><br><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-s3-bucket-outbound-data-transfer-anomaly-0ef8dee1-eb94-44c8-b59b-2eb096a4b983-3e43e48f.html">S3 Bucket outbound Data transfer anomaly</a></td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/awsbucketapilogs-cl.html"><code>AwsBucketAPILogs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-successful-signin-from-non-compliant-device-99885ff5-00cf-49e8-9452-6de6aba2a5c7-20eaa2d1.html">Successful Signin From Non-Compliant Device</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/signinlogs.html"><code>SigninLogs</code></a><br><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a><br><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-suspicious-data-access-to-s3-bucket-from-unknown-ip-669e1338-b1a2-4d73-b720-a1e60d5d1474-b350221c.html">Suspicious Data Access to S3 Bucket from Unknown IP</a></td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-user-accounts-new-single-factor-auth-8eace93b-f38c-47b7-a21d-739556d31db6-94f60108.html">User Accounts - New Single Factor Auth</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-user-accounts-unusual-authentications-occurring-when-countries-f56b2223-0d4d-4347-9de4-822d195624ee-ea198d62.html">User Accounts - Unusual authentications occurring when countries do not conduct normal business operations.</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/signinlogs.html"><code>SigninLogs</code></a><br><em>Internal use:</em><br><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-user-login-ip-address-teleportation-09a7c5fc-0649-4f7d-a21b-36a754cef6b6-e3c0bf58.html">User Login IP Address Teleportation</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/signinlogs.html"><code>SigninLogs</code></a><br><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a><br><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-user-detection-added-to-privilege-groups-based-in-watchlist-8c5bc38a-438d-48fb-ae3f-7f356d3e5ba9-ddbfdf3a.html">User detection added to privilege groups based in Watchlist</a></td>
+<td style="text-align: left;">Reconnaissance, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.10</td>
+<td>10-11-2025</td>
+<td>Update in <strong>Analytical Rule</strong> alert description</td>
+</tr>
+<tr>
+<td>3.0.9</td>
+<td>05-06-2024</td>
+<td><strong>Analytical Rule</strong> description updated</td>
+</tr>
+<tr>
+<td>3.0.8</td>
+<td>04-04-2024</td>
+<td>Updated <strong>Entity Mappings</strong></td>
+</tr>
+<tr>
+<td>3.0.7</td>
+<td>28-02-2024</td>
+<td>Removed usage of BlastRadius from <strong>Hunting Queries</strong></td>
+</tr>
+<tr>
+<td>3.0.6</td>
+<td>16-02-2024</td>
+<td>Updated the solution to fix <strong>Analytic Rules</strong> deployment issue</td>
+</tr>
+<tr>
+<td>3.0.5</td>
+<td>08-02-2024</td>
+<td>Tagged for dependent solutions for deployment</td>
+</tr>
+<tr>
+<td>3.0.4</td>
+<td>10-01-2024</td>
+<td>Updated <strong>Analytic Rule</strong> (AuthenticationMethodChangedforPrivilegedAccount.yaml)</td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>23-11-2023</td>
+<td>Updated description of <strong>Hunting query</strong></td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>06-11-2023</td>
+<td>Changes for rebranding from Microsoft 365 Defender to Microsoft Defender XDR</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>03-11-2023</td>
+<td>Updated <strong>Analytic Rule</strong> datatype and descriptions for <strong>Hunting queries</strong></td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>07-08-2023</td>
+<td>Initial Solution Release</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

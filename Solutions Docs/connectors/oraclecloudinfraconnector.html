@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oracle Cloud Infrastructure via Codeless Connector Framework &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Oracle Cloud Infrastructure (via Codeless Connector Framework)</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>OracleCloudInfraConnector</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/oracle-cloud-infrastructure.html">Oracle Cloud Infrastructure</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/ccf.html">CCF</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Oracle%20Cloud%20Infrastructure/Data%20Connectors/Oracle_Cloud_Infrastructure_CCP/OCI_DataConnector_DataConnectorDefinition.json">OCI_DataConnector_DataConnectorDefinition.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Configuration</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Oracle%20Cloud%20Infrastructure/Data%20Connectors/Oracle_Cloud_Infrastructure_CCP/OCI_DataConnector_PollingConfig.json">OCI_DataConnector_PollingConfig.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Capabilities</strong></td>
+<td style="text-align: left;"><code>OCI</code>, <code>Oracle</code></td>
+</tr>
+</tbody>
+</table>
+<p>The Oracle Cloud Infrastructure (OCI) data connector provides the capability to ingest OCI Logs from <a href="https://docs.oracle.com/iaas/Content/Streaming/Concepts/streamingoverview.htm">OCI Stream</a> into Microsoft Sentinel using the <a href="https://docs.oracle.com/iaas/api/#/streaming/streaming/20180418">OCI Streaming REST API</a>.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/oci-logsv2-cl.html"><code>OCI_LogsV2_CL</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): Read and Write permissions are required.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>OCI Streaming API access</strong>: Access to the OCI Streaming API through a API Signing Keys is required.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Connect to OCI Streaming API to start collecting Event logs in Microsoft Sentinel</strong></p>
+<p>1) Log in to the OCI console and access the navigation menu.
+2) In the navigation menu, go to "Analytics &amp; AI" -&gt; "Streaming".
+3) Click "Create Stream".
+4) Select an existing "Stream Pool" or create a new one.
+5) Enter the following details:
+   - "Stream Name"
+   - "Retention"
+   - "Number of Partitions"
+   - "Total Write Rate"
+   - "Total Read Rate" (based on your data volume)
+6) In the navigation menu, go to "Logging" -&gt; "Service Connectors".
+7) Click "Create Service Connector".
+8) Enter the following details:
+   - "Connector Name"
+   - "Description"
+   - "Resource Compartment"
+9) Select the "Source": "Logging".
+10) Select the "Target": "Streaming".
+11) (Optional) Configure "Log Group", "Filters", or use a "custom search query" to stream only the required logs.
+12) Configure the "Target" by selecting the previously created stream.
+13) Click "Create".
+14) Follow the documentation to create a <a href="https://docs.oracle.com/en-us/iaas/Content/API/Concepts/apisigningkey.htm">Private Key and API Key Configuration File</a>. Save the Pem File, pass phrase (Optional, it is not set when using the OCI console to generate the API signing key pair) and fingerprint in a secured place for use when connect.
+<strong>Connector Management Interface</strong></p>
+<p>This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.</p>
+<p>📊 <strong>View Existing Collectors</strong>: A management table displays all currently configured data collectors with the following information:
+- <strong>Tenant Id</strong>
+- <strong>Stream</strong>
+- <strong>Cursor Type</strong>
+- <strong>Partition / GroupName</strong></p>
+<p>➕ <strong>Add New Collector</strong>: Click the "Add new collector" button to configure a new data collector (see configuration form below).</p>
+<p>🔧 <strong>Manage Collectors</strong>: Use the actions menu to delete or modify existing collectors.</p>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration interface is only available when viewing the connector in the Microsoft Sentinel portal. You cannot configure data collectors through this static documentation.</p>
+</blockquote>
+<p><strong>Add Oracle Cloud Infrastructure Data Stream</strong></p>
+<p><em>Connect to Oracle Cloud Infrastructure Data</em></p>
+<p>When you click the "Add stream" button in the portal, a configuration form will open. You'll need to provide:</p>
+<ul>
+<li><strong>Stream OCID</strong> (required): Provide the OCI Stream OCID (E.g. ocid1.stream.oc1..xxxxxxEXAMPLExxxxxx)</li>
+<li><strong>Public Message Endpoint of the stream (Service Endpoint Base URL)</strong> (required): Provide the Service Endpoint Base URL: (https://cell-1.streaming.ap-hyderabad-1.oci.oraclecloud.com)</li>
+<li><strong>Cursor Type</strong> (required): Select from available options</li>
+<li>Individual Cursor</li>
+<li>Group Cursor (preview)</li>
+<li><strong>Partition Id / Group name</strong> (required): Individual Cursor - Partition Id (E.g. 0 or 1 or 2), Group Cursor - Group name</li>
+<li><strong>Tenant ID</strong> (required): OCI Tenant ID (E.g. ocid1.tenancy.oc1..xxxxxxEXAMPLExxxxxx)</li>
+<li><strong>User ID</strong> (required): Provide the User Id. (E.g. ocid1.user.oc1..xxxxxxEXAMPLExxxxxx)</li>
+<li><strong>Pem File Content</strong> (required): Provide the Pem File content.</li>
+<li><strong>Fingerprint</strong> (required): Provide the fingerprint for the Pem File Content. (E.g. 12:34:56:78:90:AB:CD:EF:GH:IJ:KL:MN:OP)</li>
+<li><strong>Pem File Pass Phrase (Optional)</strong> (optional): Just Leave blank If not encrypted)</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration form is only available in the Microsoft Sentinel portal.</p>
+</blockquote>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

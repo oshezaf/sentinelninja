@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PaloAlto-PAN-OS &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>PaloAlto-PAN-OS</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/PaloAlto-PAN-OS/logo/Palo-alto-logo.png" alt="PaloAlto-PAN-OS Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.9</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2021-08-09</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2021-09-20</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS">PaloAlto-PAN-OS</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pre-requisites</strong></td>
+<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.paloaltonetworks.com/network-security/next-generation-firewall">Palo Alto Networks (Firewall)</a> Solution for Microsoft Sentinel allows you to easily connect your Palo Alto Networks Firewall logs with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation. This gives you more insight into your organization's network and improves your security operation capabilities. This solution also contains playbooks to help in automated remediation.</p>
+<p>This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation.</p>
+<p><strong>NOTE:</strong> Microsoft recommends installation of CEF via AMA Connector. The existing connectors were deprecated on <strong>Aug 31, 2024</strong>.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#pre-requisites">Pre-requisites</a></li>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Pre-requisites</h2>
+<p>This solution depends on <strong>1 other solution(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Data Connectors</h2>
+<p>This solution has <strong>2 discovered data connector(s)⚠️</strong> (not in Solution definition):</p>
+<ul>
+<li><a href="../connectors/paloaltonetworks.html">[Deprecated] Palo Alto Networks (Firewall) via Legacy Agent</a> ⚠️</li>
+<li><a href="../connectors/paloaltonetworksama.html">[Deprecated] Palo Alto Networks (Firewall) via AMA</a> ⚠️</li>
+</ul>
+<p>Connectors from dependency solutions:</p>
+<ul>
+<li><a href="../connectors/cef.html">Common Event Format (CEF)</a> <em>(dependency on <a href="common-event-format.html">Common Event Format</a>)</em></li>
+<li><a href="../connectors/cefama.html">Common Event Format (CEF) via AMA</a> <em>(dependency on <a href="common-event-format.html">Common Event Format</a>)</em></li>
+</ul>
+<p><em>⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.</em></p>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+<td><a href="../connectors/cef.html">Common Event Format (CEF)</a> (dependency), <a href="../connectors/cefama.html">Common Event Format (CEF) via AMA</a> (dependency), <a href="../connectors/paloaltonetworksama.html">[Deprecated] Palo Alto Networks (Firewall) via AMA</a>, <a href="../connectors/paloaltonetworks.html">[Deprecated] Palo Alto Networks (Firewall) via Legacy Agent</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>16 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">7</td>
+</tr>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">2</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/paloalto-pan-os-microsoft-covid-19-file-hash-indicator-matches-2be4ef67-a93f-4d8a-981a-88158cb73abd-3ed74bda.html">Microsoft COVID-19 file hash indicator matches</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloalto-pan-os-palo-alto-possible-internal-to-external-port-scanning-5b72f527-e3f6-4a00-9908-8e4fee14da9f-56e27714.html">Palo Alto - possible internal to external port scanning</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Discovery</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a><br><a href="../tables/fluentbit-cl.html"><code>fluentbit_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloalto-pan-os-palo-alto-possible-nmap-scan-on-with-top-100-option-4d61bb9a-7f6d-45b1-ac0e-517e2a92f6fd-008533ce.html">Palo Alto - possible nmap scan on with top 100 option</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Reconnaissance</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloalto-pan-os-palo-alto-potential-beaconing-detected-f0be259a-34ac-4946-aa15-ca2b115d5feb-7815de87.html">Palo Alto - potential beaconing detected</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a><br><a href="../tables/fluentbit-cl.html"><code>fluentbit_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloalto-pan-os-palo-alto-threat-signatures-from-unusual-ip-addresses-89a86f70-615f-4a79-9621-6f68c50f365f-44162468.html">Palo Alto Threat signatures from Unusual IP addresses</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Discovery, Exfiltration, CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a><br><a href="../tables/fluentbit-cl.html"><code>fluentbit_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/paloalto-pan-os-palo-alto-high-risk-ports-0a57accf-3548-4e38-a861-99687c958f59-955c29a8.html">Palo Alto - high-risk ports</a></td>
+<td style="text-align: left;">InitialAccess, Discovery</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a><br><a href="../tables/fluentbit-cl.html"><code>fluentbit_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloalto-pan-os-palo-alto-potential-beaconing-detected-2f8522fc-7807-4f0a-b53d-458296edab8d-02b916be.html">Palo Alto - potential beaconing detected</a></td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a><br><a href="../tables/fluentbit-cl.html"><code>fluentbit_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/paloalto-pan-os-paloaltonetworkthreat-4d4c5438.html">PaloAltoNetworkThreat</a></td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloalto-pan-os-paloaltooverview-9f519554.html">PaloAltoOverview</a></td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/paloalto-pan-os-block-ip-palo-alto-pan-os-entity-trigger-98a5201a.html">Block IP - Palo Alto PAN-OS - Entity trigger</a></td>
+<td style="text-align: left;">This playbook interacts with relevant stakeholders, such incident response team, to approve blocking...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloalto-pan-os-get-system-info-palo-alto-pan-os-xml-api-9b6e0855.html">Get System Info - Palo Alto PAN-OS XML API</a></td>
+<td style="text-align: left;">This playbook allows us to get System Info of a Palo Alto device for a Microsoft Sentinel alert.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloalto-pan-os-get-threat-pcap-palo-alto-pan-os-xml-api-eb78018c.html">Get Threat PCAP - Palo Alto PAN-OS XML API</a></td>
+<td style="text-align: left;">This playbook allows us to get a threat PCAP for a given PCAP ID.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloalto-pan-os-paloalto-pan-os-blockip-5d80131f.html">PaloAlto-PAN-OS-BlockIP</a></td>
+<td style="text-align: left;">This playbook allows blocking/unblocking IPs in PaloAlto, using <strong>Address Object Groups</strong>. This allo...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloalto-pan-os-paloalto-pan-os-blockurl-ae66f4b0.html">PaloAlto-PAN-OS-BlockURL</a></td>
+<td style="text-align: left;">This playbook allows blocking/unblocking URLs in PaloAlto, using <strong>predefined address group</strong>. This ...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloalto-pan-os-paloalto-pan-os-blockurl-entitytrigger-834bcda9.html">PaloAlto-PAN-OS-BlockURL-EntityTrigger</a></td>
+<td style="text-align: left;">This playbook allows blocking/unblocking URLs in PaloAlto, using <strong>predefined address group</strong>. This ...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloalto-pan-os-paloalto-pan-os-geturlcategoryinfo-7c7cb20a.html">PaloAlto-PAN-OS-GetURLCategoryInfo</a></td>
+<td style="text-align: left;">When a new sentinal incident is created, this playbook gets triggered and performs below actions:</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.11</td>
+<td>13-01-2026</td>
+<td>Updated non-functional link from PaloAlto-NetworkBeaconing <strong>Analytic rule</strong></td>
+</tr>
+<tr>
+<td>3.0.10</td>
+<td>13-11-2025</td>
+<td>Adding New Detection Rule for Nmap Top 100 Port Scan</td>
+</tr>
+<tr>
+<td>3.0.9</td>
+<td>06-01-2025</td>
+<td>Removing Custom Entity mappings from <strong>Analytic Rule</strong></td>
+</tr>
+<tr>
+<td>3.0.8</td>
+<td>15-11-2024</td>
+<td>Corrected <strong>Data Connector</strong> count in CreateUiDefinition</td>
+</tr>
+<tr>
+<td>3.0.7</td>
+<td>11-11-2024</td>
+<td>Removed Deprecated <strong>Data Connector</strong></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Updated <strong>Analytic Rule</strong> for entity mappings</td>
+</tr>
+<tr>
+<td>3.0.6</td>
+<td>12-07-2024</td>
+<td>Deprecated <strong>Data Connector</strong></td>
+</tr>
+<tr>
+<td>3.0.5</td>
+<td>30-04-2024</td>
+<td>Updated the <strong>Data Connector</strong> to fix conectivity criteria query</td>
+</tr>
+<tr>
+<td>3.0.4</td>
+<td>16-04-2024</td>
+<td>Fixed existing rule for sites with private IP addresses other than 10/8</td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>11-04-2024</td>
+<td>Enhanced the existing <strong>Workbook</strong> as per requirement</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>12-02-2024</td>
+<td>Addition of new PaloAlto-PAN-OS AMA <strong>Data Connector</strong></td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>22-01-2024</td>
+<td>Added subTechniques in Template</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>12-12-2023</td>
+<td>Fixed <strong>Playbooks</strong> issue</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

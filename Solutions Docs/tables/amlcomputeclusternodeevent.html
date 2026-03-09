@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AmlComputeClusterNodeEvent &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>AmlComputeClusterNodeEvent</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for AmlComputeClusterNodeEvent table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Azure Resources</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amlcomputeclusternodeevent">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (26 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amlcomputeclusternodeevent">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClusterCreationTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Time when cluster was created</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClusterName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the cluster</td>
+</tr>
+<tr>
+<td style="text-align: left;">InternalOperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">NodeAllocationTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Time when Node was allocated</td>
+</tr>
+<tr>
+<td style="text-align: left;">NodeBootTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Time when Node was booted up</td>
+</tr>
+<tr>
+<td style="text-align: left;">NodeId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID of the cluster node created</td>
+</tr>
+<tr>
+<td style="text-align: left;">Offer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Offer associated with the VM creation</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the operation associated with the log event</td>
+</tr>
+<tr>
+<td style="text-align: left;">Publisher</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Publisher of the vm image. For example, microsoft-dsvm</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResizeEndTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Time when cluster scale up/down ended</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResizeStartTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Time when cluster scale up/down started</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResultSignature</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Sku</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Sku of the Node/VM created</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">StartTaskEndTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Time when task assigned to a node ended</td>
+</tr>
+<tr>
+<td style="text-align: left;">StartTaskStartTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Time when task was assigned to a node and started</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Time when the log entry was generated</td>
+</tr>
+<tr>
+<td style="text-align: left;">TotalE2ETimeInSeconds</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Total time node was active</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">Version</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Version of the image used while Node/VM is created</td>
+</tr>
+<tr>
+<td style="text-align: left;">VmFamilyName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Vm family to which the node belongs</td>
+</tr>
+<tr>
+<td style="text-align: left;">VmPriority</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Priority of the node created Dedicated/LowPriority</td>
+</tr>
+<tr>
+<td style="text-align: left;">VmSize</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Vm size of the node</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.machinelearningservices/workspaces</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

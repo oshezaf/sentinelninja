@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lumen Defender Threat Feed &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Lumen Defender Threat Feed</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Lumen%20Defender%20Threat%20Feed/Workbooks/Images/Logo/Lumen.svg" alt="Lumen Defender Threat Feed Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Lumen Technologies, Inc.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://www.lumen.com/en-us/contact-us/support.html">https://www.lumen.com/en-us/contact-us/support.html</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Matthew Collier - matthew.collier@lumen.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2025-09-12</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2025-09-12</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lumen%20Defender%20Threat%20Feed">Lumen Defender Threat Feed</a></td>
+</tr>
+</tbody>
+</table>
+<p>The Lumen Defender Threat Feed for Microsoft Sentinel solution delivers high-confidence threat intelligence indicators of compromise directly into your Sentinel workspace.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/lumenthreatfeedconnector.html">Lumen Defender Threat Feed Data Connector</a></li>
+</ul>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>22 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/aadmanagedidentitysigninlogs.html"><code>AADManagedIdentitySignInLogs</code></a></td>
+<td>-</td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/aadnoninteractiveusersigninlogs.html"><code>AADNonInteractiveUserSignInLogs</code></a></td>
+<td>-</td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/aadserviceprincipalsigninlogs.html"><code>AADServicePrincipalSignInLogs</code></a></td>
+<td>-</td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/adfssigninlogs.html"><code>ADFSSignInLogs</code></a></td>
+<td>-</td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/asimauthenticationeventlogs.html"><code>ASimAuthenticationEventLogs</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/asimdnsactivitylogs.html"><code>ASimDnsActivityLogs</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/asimfileeventlogs.html"><code>ASimFileEventLogs</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/asimnetworksessionlogs.html"><code>ASimNetworkSessionLogs</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/asimprocesseventlogs.html"><code>ASimProcessEventLogs</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/asimwebsessionlogs.html"><code>ASimWebSessionLogs</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+<td>-</td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/deviceevents.html"><code>DeviceEvents</code></a></td>
+<td>-</td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/devicefileevents.html"><code>DeviceFileEvents</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/devicenetworkevents.html"><code>DeviceNetworkEvents</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/dnsevents.html"><code>DnsEvents</code></a></td>
+<td>-</td>
+<td>Analytics, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+<td>-</td>
+<td>Analytics, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+<td>-</td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+<td>-</td>
+<td>Analytics, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/windowsevent.html"><code>WindowsEvent</code></a></td>
+<td>-</td>
+<td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<h3>Internal Tables</h3>
+<p>The following <strong>3 table(s)</strong> are used internally by this solution's content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+<td><a href="../connectors/lumenthreatfeedconnector.html">Lumen Defender Threat Feed Data Connector</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>10 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-commonsecuritylog-bc8a262a-5db3-4ac1-8757-519ed36ed929-6c2a7f14.html">Lumen TI IPAddress in CommonSecurityLog</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-deviceevents-fa566691-42a2-4136-6a8b-ffa3ea510000-675847d2.html">Lumen TI IPAddress in DeviceEvents</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/deviceevents.html"><code>DeviceEvents</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-identitylogonevents-a7cd18cd-1503-47ec-8dca-65d750540637-db253b1e.html">Lumen TI IPAddress in IdentityLogonEvents</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/aadmanagedidentitysigninlogs.html"><code>AADManagedIdentitySignInLogs</code></a><br><a href="../tables/aadnoninteractiveusersigninlogs.html"><code>AADNonInteractiveUserSignInLogs</code></a><br><a href="../tables/aadserviceprincipalsigninlogs.html"><code>AADServicePrincipalSignInLogs</code></a><br><a href="../tables/adfssigninlogs.html"><code>ADFSSignInLogs</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-officeactivity-0e96c419-68eb-4235-947e-7e86e136cda0-3117094c.html">Lumen TI IPAddress in OfficeActivity</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-securityevents-140a2cb5-4b4a-485c-aab3-2415c24d37e6-27374577.html">Lumen TI IPAddress in SecurityEvents</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-signinlogs-1425aea5-a9e5-4288-886e-934b90664a91-470061c8.html">Lumen TI IPAddress in SigninLogs</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/signinlogs.html"><code>SigninLogs</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-windowsevents-4776281c-6c49-46ac-8444-4dd8ba2f4565-915cc28f.html">Lumen TI IPAddress in WindowsEvents</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/windowsevent.html"><code>WindowsEvent</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/lumen-defender-threat-feed-lumen-ti-domain-in-dnsevents-29bf5bcd-6795-4c79-a91f-aaef5a618bab-3483c267.html">Lumen TI domain in DnsEvents</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/dnsevents.html"><code>DnsEvents</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/lumen-defender-threat-feed-lumen-ti-ipaddress-indicator-in-commonsecuritylog-4e329d3a-9fc0-4be7-9000-e092e7f68011-8e375221.html">Lumen TI IPAddress indicator in CommonSecurityLog</a></td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.html">Lumen-Threat-Feed-Overview</a></td>
+<td style="text-align: left;"><a href="../tables/asimauthenticationeventlogs.html"><code>ASimAuthenticationEventLogs</code></a><br><a href="../tables/asimdnsactivitylogs.html"><code>ASimDnsActivityLogs</code></a><br><a href="../tables/asimfileeventlogs.html"><code>ASimFileEventLogs</code></a><br><a href="../tables/asimnetworksessionlogs.html"><code>ASimNetworkSessionLogs</code></a><br><a href="../tables/asimprocesseventlogs.html"><code>ASimProcessEventLogs</code></a><br><a href="../tables/asimwebsessionlogs.html"><code>ASimWebSessionLogs</code></a><br><a href="../tables/auditlogs.html"><code>AuditLogs</code></a><br><a href="../tables/azureactivity.html"><code>AzureActivity</code></a><br><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a><br><a href="../tables/devicefileevents.html"><code>DeviceFileEvents</code></a><br><a href="../tables/devicenetworkevents.html"><code>DeviceNetworkEvents</code></a><br><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a><br><a href="../tables/dnsevents.html"><code>DnsEvents</code></a><br><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a><br><em>Internal use:</em><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a><br><a href="../tables/securityincident.html"><code>SecurityIncident</code></a><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lumen%20Defender%20Threat%20Feed/README.md">Lumen Defender Threat Feed/README.md</a></em></p>
+</blockquote>
+<p><a href="https://www.lumen.com/"><img alt="Lumen" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lumen%20Defender%20Threat%20Feed/Workbooks/Images/Logo/Lumen.svg" /></a></p>
+<h1>Lumen Defender Threat Feed for Microsoft Sentinel</h1>
+<p>Within a SIEM like Microsoft Sentinel, threat indicators (IoCs) help correlate known-bad artifacts—such as IPs, domains, URLs, and file hashes—with activity in your environment. Lumen’s Black Lotus Labs® (BLL) harnesses unmatched network visibility and machine intelligence to produce high-confidence indicators that can be operationalized at scale for detection and investigation.</p>
+<p>Learn more:</p>
+<ul>
+<li>Black Lotus Labs overview: <a href="https://www.lumen.com/en-us/security/black-lotus-labs.html">https://www.lumen.com/en-us/security/black-lotus-labs.html</a></li>
+<li>BLL blog archive: <a href="https://blog.lumen.com/black-lotus-labs/">https://blog.lumen.com/black-lotus-labs/</a></li>
+<li>BLL on X/Twitter: <a href="https://twitter.com/blacklotuslabs">https://twitter.com/blacklotuslabs</a></li>
+</ul>
+<h2>Key features</h2>
+<p>Lumen Defender Threat Feed for Microsoft Sentinel offers powerful intelligence capabilities designed for security operations:</p>
+<h3>Lumen Defender Threat Feed Data Connector</h3>
+<ul>
+<li>The Lumen Defender Threat Feed connector (Azure Durable Functions) pulls indicators from Lumen’s Threat Feed API and writes them to the Sentinel Threat Intelligence store via the STIX Objects Upload API.</li>
+<li>Microsoft Sentinel analytic rules correlate Lumen indicators with your logs and create alerts/incidents for matches.</li>
+</ul>
+<h3>Threat Research Workbook (Visibility)</h3>
+<ul>
+<li>The Lumen workbook surfaces ingestion trends, active indicators by type, risk distribution, tags, sightings across curated tables, and correlated alerts/incidents.</li>
+</ul>
+<h3>Hunting (Proactive)</h3>
+<ul>
+<li>Included hunting queries help you pivot on a suspicious indicator across common data sources (e.g., CommonSecurityLog, Device* tables, DNS, SigninLogs, OfficeActivity).</li>
+</ul>
+<h2>Solution contents</h2>
+<ul>
+<li>Data Connector</li>
+<li><code>Data Connectors/LumenThreatFeed</code> (ARM templates + Function App implementation)</li>
+<li>Analytic Rules (examples)</li>
+<li><code>Lumen_DomainEntity_DNS.yaml</code></li>
+<li><code>Lumen_IPEntity_CommonSecurityLog.yaml</code></li>
+<li><code>Lumen_IPEntity_DeviceEvents.yaml</code></li>
+<li><code>Lumen_IPEntity_IdentityLogonEvents.yaml</code></li>
+<li><code>Lumen_IPEntity_OfficeActivity.yaml</code></li>
+<li><code>Lumen_IPEntity_SecurityEvent.yaml</code></li>
+<li><code>Lumen_IPEntity_SigninLogs.yaml</code></li>
+<li><code>Lumen_IPEntity_WindowsEvents.yaml</code></li>
+<li>Hunting Queries</li>
+<li><code>Lumen_IPIndicator_CommonSecurityLog.yaml</code></li>
+<li>Workbook</li>
+<li><code>Workbooks/Lumen-Threat-Feed-Overview.json</code></li>
+</ul>
+<h2>Support</h2>
+<ul>
+<li>Lumen Defender Threat Feed/API access: <a href="mailto:DefenderThreatFeedSales@Lumen.com?subject=API%20Access%20Request">DefenderThreatFeedSales@Lumen.com</a> or your Lumen representative</li>
+<li>If you need assistance in setting up the solution: <a href="mailto:DefenderThreatFeedSupport@Lumen.com?subject=Solution%20Support%20Request">DefenderThreatFeedSupport@lumen.com</a></li>
+<li>Microsoft Sentinel configuration: Your Azure admin team</li>
+<li>Solution content issues: Contact Lumen for assistance</li>
+</ul>
+<p><em>[Content truncated...]</em></p>
+<h2>Release Notes</h2>
+<h1>Release Notes</h1>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date Modified (DD-MM-YYYY)</th>
+<th>Change History</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0.0</td>
+<td>09-12-2025</td>
+<td>Initial Solution Release</td>
+</tr>
+<tr>
+<td>1.1.0</td>
+<td>10-23-2025</td>
+<td>Update data connector to utilize more frequent TI object updates and improvements to Workbook</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

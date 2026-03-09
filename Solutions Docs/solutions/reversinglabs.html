@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ReversingLabs &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>ReversingLabs</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/reversinglabs.svg" alt="ReversingLabs Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">ReversingLabs</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.reversinglabs.com/hc/en-us">https://support.reversinglabs.com/hc/en-us</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">ReversingLabs - support@reversinglabs.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-08-08</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2024-07-17</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ReversingLabs">ReversingLabs</a></td>
+</tr>
+</tbody>
+</table>
+<p>The ReversingLabs Content Pack solution for Microsoft Sentinel includes a number of Microsoft Sentinel resources designed to automate your security operations using the power of Spectra Intelligence (formerly TitaniumCloud) and Spectra Analyze (formerly A1000) APIs.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#internal-tables">Internal Tables</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p><strong>This solution does not include data connectors.</strong></p>
+<p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
+<h2>Internal Tables</h2>
+<p>The following <strong>4 table(s)</strong> are used internally by this solution's content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/rlticloudquotas-cl.html"><code>RLTiCloudQuotas_CL</code></a></td>
+<td>Playbooks (writes), Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+<td>Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>6 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/reversinglabs-reversinglabs-capabilitiesoverview-cf6695da.html">ReversingLabs-CapabilitiesOverview</a></td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/rlticloudquotas-cl.html"><code>RLTiCloudQuotas_CL</code></a><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a><br><a href="../tables/securityincident.html"><code>SecurityIncident</code></a><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/reversinglabs-reversinglabs-checkquota-9c8101f9.html">ReversingLabs-CheckQuota</a></td>
+<td style="text-align: left;">This playbook will check your ReversingLabs TitaniumCloud API quota and provide usage details. To be...</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/rlticloudquotas-cl.html"><code>RLTiCloudQuotas_CL</code></a> <em>(write)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/reversinglabs-spectraanalyze-enrichfilehash-21eafc26.html">SpectraAnalyze-EnrichFileHash</a></td>
+<td style="text-align: left;">This playbook will enrich a Microsoft Sentinel incident with file hash information from a Spectra An...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/reversinglabs-spectraanalyze-enrichnetworkentities-e8e8b530.html">SpectraAnalyze-EnrichNetworkEntities</a></td>
+<td style="text-align: left;">This playbook will enrich a network entities (IP addresses, URLs, and domain names) with information...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/reversinglabs-spectraintelligence-enrichfilehash-dbcd2082.html">SpectraIntelligence-EnrichFileHash</a></td>
+<td style="text-align: left;">This playbook will enrich a Microsoft Sentinel Incident with file hash information from ReversingLab...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/reversinglabs-spectraintelligence-enrichnetworkentities-d024cb1e.html">SpectraIntelligence-EnrichNetworkEntities</a></td>
+<td style="text-align: left;">This playbook will enrich a Microsoft Sentinel Incident with information about network entities (IP ...</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.2</td>
+<td>08-08-2025</td>
+<td>Updated Reversing Labs <strong>workbook</strong> with new ThreatIntelIndicators Table</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>17-07-2024</td>
+<td><strong>What's New</strong> <br/> - Playbook | SpectraAnalyze-EnrichNetworkEntities: New playbook that enriches network entities (IP addresses, URLs, and domain names) with data from a Spectra Analyze appliance | v1.0.0<br/> - Playbook | SpectraIntelligence-EnrichNetworkEntities: New playbook that enriches network entities (IP addresses, URLs, and domain names) with data from Spectra Intelligence. | v1.0.0 <br/> - Playbook | SpectraAnalyze-EnrichFileHash: New playbook exmaple for enriching file hash entities with data from a Spectra Analyze apliance | v1.0.0 <br/> <strong>What's Changed</strong> <br/> - Playbook | ReversingLabs-EnrichFileHash has been renamed to SpectraIntelligence-EnrichFileHash</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>09-08-2023</td>
+<td><strong>Playbook</strong> | ReversingLabs-EnrichFileHash: Updated to use new TitaniumCloud Logic App connector; Added AV scan results | v2.0.0  <br/> <strong>Workbook</strong> | ReversingLabs-CapabilitiesOverview: Remove hardcoded parameter value "ti_feed_check"; Update indicator quality query to be more accurate for uniqueness check | v1.1.2</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

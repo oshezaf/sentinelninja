@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWSNetworkFirewallFlow &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>AWSNetworkFirewallFlow</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for AWSNetworkFirewallFlow table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">AWS</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awsnetworkfirewallflow">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (36 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awsnetworkfirewallflow">Azure Monitor documentation</a> · <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services%20NetworkFirewall/Data%20Connectors/AWSNetworkFirewallLogs_CCP/AWSNetworkFirewallLog_DCR.json">Data Collection Rule definition</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ack</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the ACK flag is set in the TCP packet (true/false).</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">AppProto</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The application layer protocol detected (e.g., HTTP, HTTPS, DNS).</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">availability_zone</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">DCR</td>
+</tr>
+<tr>
+<td style="text-align: left;">AvailabilityZone</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The AWS Availability Zone where the firewall instance is located.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The destination IP address of the packet.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestPort</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The destination port to which the packet was sent.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ecn</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the ECN flag is set in the TCP packet (true/false).</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">event</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">DCR</td>
+</tr>
+<tr>
+<td style="text-align: left;">event_timestamp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">DCR</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventTimestamp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The epoch timestamp of when the event occurred.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of event recorded (e.g., flow, alert, drop, pass).</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fin</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the FIN flag is set in the TCP packet (true/false).</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">firewall_name</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">DCR</td>
+</tr>
+<tr>
+<td style="text-align: left;">FirewallName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the AWS Network Firewall instance generating the log.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">FlowId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the network flow related to this event.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetFlowAge</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The duration of the network flow in seconds.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetFlowBytes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The total number of bytes transferred in the network flow.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetFlowEnd</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp when the network flow ended.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetFlowMaxttl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The maximum Time-to-Live (TTL) observed in the network flow.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetFlowMinttl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The minimum Time-to-Live (TTL) observed in the network flow.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetFlowPkts</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The number of packets in the network flow.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetFlowStart</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp when the network flow started.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">Proto</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The protocol used (e.g., TCP, UDP, ICMP).</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">Psh</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the PSH flag is set in the TCP packet (true/false).</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rst</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the RST flag is set in the TCP packet (true/false).</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source IP address of the packet that triggered the event.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcPort</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source port from which the packet originated.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">Syn</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the SYN flag is set in the TCP packet (true/false).</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">TCPFlags</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The TCP flags observed in the packet</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp when the log entry was created in AWS Network Firewall.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The exact timestamp when the event was captured.</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+<td style="text-align: left;">Azure Monitor docs</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/amazon-web-services-networkfirewall.html">Amazon Web Services NetworkFirewall</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/awsnetworkfirewallccpdefinition.html">Amazon Web Services NetworkFirewall (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

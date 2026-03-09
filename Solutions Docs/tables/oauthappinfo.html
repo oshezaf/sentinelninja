@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OAuthAppInfo &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>OAuthAppInfo</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<blockquote>
+<p><strong>Defender XDR Only:</strong> This table is available in Microsoft Defender XDR advanced hunting but is not available in the Azure Monitor Log Analytics table reference.</p>
+</blockquote>
+<p>Microsoft 365-connected OAuth applications registered with Microsoft Entra ID and available in the Defender for Cloud Apps app governance capability</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">XDR</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-oauthappinfo-table">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (16 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/oauthappinfo">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">AddedOnTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the application was registered</td>
+</tr>
+<tr>
+<td style="text-align: left;">AppName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The application's display name as exposed by the associated service principal</td>
+</tr>
+<tr>
+<td style="text-align: left;">AppOrigin</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether the app is internal to the organization or registered in an external tenant</td>
+</tr>
+<tr>
+<td style="text-align: left;">AppOwnerTenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies the ID of the tenant where the app was registered</td>
+</tr>
+<tr>
+<td style="text-align: left;">AppStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Status of the app; can be: Enabled, DisabledByMicrosoft, DisabledByAppGovernancePolicy, DisabledByUser, Deleted (information for apps with Deleted status is only available for 30 days since the app was deleted)</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConsentedUsersCount</td>
+<td style="text-align: left;">integer</td>
+<td style="text-align: left;">Count of users who have consented to the app; this information is only available when the app isn't admin consented</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsAdminConsented</td>
+<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">Value is True if a user has provided admin consent to the app on behalf of all the users in the org, otherwise the value is False</td>
+</tr>
+<tr>
+<td style="text-align: left;">LastModifiedTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp when the app was last modified</td>
+</tr>
+<tr>
+<td style="text-align: left;">LastUsedTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the app last signed in. Tracking of this data goes back to June, 2022</td>
+</tr>
+<tr>
+<td style="text-align: left;">OAuthAppId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique  identifier for the app as assigned by Microsoft Entra ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">Permissions</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Contains an array of permission objects; each permission object includes PermissionName, TargetAppId, TargetAppDisplayName, PermissionType, PrivilegeLevel, UsageStatus</td>
+</tr>
+<tr>
+<td style="text-align: left;">PrivilegeLevel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The privilege level of the app based on the highest classified permission granted to the app</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReportId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the record</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServicePrincipalId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique identifier for the service principal instance of the application in the tenant</td>
+</tr>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the record was created</td>
+</tr>
+<tr>
+<td style="text-align: left;">VerifiedPublisher</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Specifies details about the verified publisher of the application which this service principal represents. It includes information such as: DisplayName, VerifiedPublisherId, AddedDateTime</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

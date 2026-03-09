@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GoogleCloudPlatformIAM &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>GoogleCloudPlatformIAM</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/google_logo.svg" alt="GoogleCloudPlatformIAM Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.5</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2021-07-30</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformIAM">GoogleCloudPlatformIAM</a></td>
+</tr>
+</tbody>
+</table>
+<p>The Google Cloud Platform Identity and Access Management (IAM) solution provides the capability to ingest <a href="https://cloud.google.com/iam/docs/audit-logging">GCP IAM logs</a> into Microsoft Sentinel using the GCP Logging API. Refer to <a href="https://cloud.google.com/logging/docs/api">GCP Logging API documentation</a> for more information.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong> </p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>• <a href="https://aka.ms/Sentinel-CCP_Platform">Microsoft Sentinel Codeless Connector Framework</a></p>
+<p><strong>Additional Information</strong></p>
+<p>📖 <strong>Setup Guide:</strong> <a href="https://learn.microsoft.com/azure/sentinel/connect-google-cloud-platform">Google Cloud Platform connectors</a> - Connect GCP logs to Microsoft Sentinel</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong> (plus 1 discovered⚠️):</p>
+<ul>
+<li><a href="../connectors/gcpiamccpdefinition.html">Google Cloud Platform IAM (via Codeless Connector Framework)</a></li>
+<li><a href="../connectors/gcpiamdataconnector.html">[DEPRECATED] Google Cloud Platform IAM</a> ⚠️ 🔶</li>
+</ul>
+<p><em>⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.</em></p>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>2 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/gcpiam.html"><code>GCPIAM</code></a></td>
+<td><a href="../connectors/gcpiamccpdefinition.html">Google Cloud Platform IAM (via Codeless Connector Framework)</a></td>
+<td>Analytics, Hunting</td>
+</tr>
+<tr>
+<td><a href="../tables/gcp-iam-cl.html"><code>GCP_IAM_CL</code></a> 🔶</td>
+<td><a href="../connectors/gcpiamdataconnector.html">[DEPRECATED] Google Cloud Platform IAM</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>25 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformiam-gcp-iam-disable-data-access-logging-2530a631-9605-404d-ae58-58ef1f91b17c-b5c24a62.html">GCP IAM - Disable Data Access Logging</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/gcpiam.html"><code>GCPIAM</code></a><br><a href="../tables/gcp-iam-cl.html"><code>GCP_IAM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformiam-gcp-iam-empty-user-agent-9e0d8632-d33d-4075-979e-c972674f77b3-a16b7078.html">GCP IAM - Empty user agent</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/gcpiam.html"><code>GCPIAM</code></a><br><a href="../tables/gcp-iam-cl.html"><code>GCP_IAM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformiam-gcp-iam-high-privileged-role-added-to-service-account-86112c4b-2535-4178-aa0e-ed9e32e3f054-e62bc201.html">GCP IAM - High privileged role added to service account</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/gcpiam.html"><code>GCPIAM</code></a><br><a href="../tables/gcp-iam-cl.html"><code>GCP_IAM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformiam-gcp-iam-new-authentication-token-for-service-account-80e4db30-5636-4fbd-8816-24c3ded8d243-45af187b.html">GCP IAM - New Authentication Token for Service Account</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/gcpiam.html"><code>GCPIAM</code></a><br><a href="../tables/gcp-iam-cl.html"><code>GCP_IAM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformiam-gcp-iam-new-service-account-a768aa52-453e-4e3e-80c2-62928d2e2f56-903c98c3.html">GCP IAM - New Service Account</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/gcpiam.html"><code>GCPIAM</code></a><br><a href="../tables/gcp-iam-cl.html"><code>GCP_IAM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformiam-gcp-iam-new-service-account-key-fc135860-8773-4ead-b5be-9789af1ff8ff-ddbcaf48.html">GCP IAM - New Service Account Key</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/gcpiam.html"><code>GCPIAM</code></a><br><a href="../tables/gcp-iam-cl.html"><code>GCP_IAM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformiam-gcp-iam-privileges-enumeration-52d88912-fa8b-4db2-b247-ee9225e41e8f-7998e5d2.html">GCP IAM - Privileges Enumeration</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Discovery</td>
+<td style="text-align: left;"><a href="../tables/gcpiam.html"><code>GCPIAM</code></a><br><a href="../tables/gcp-iam-cl.html"><code>GCP_IAM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformiam-gcp-iam-publicly-exposed-storage-bucket-4a433846-4b05-4a27-99d7-92093feded79-7f5ffaae.html">GCP IAM - Publicly exposed storage bucket</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Discovery</td>
+<td style="text-align: left;"><a href="../tables/gcpiam.html"><code>GCPIAM</code></a><br><a href="../tables/gcp-iam-cl.html"><code>GCP_IAM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformiam-gcp-iam-service-account-enumeration-50e0437e-912d-4cd0-ac19-fef0aebdd3d7-5d27b7f1.html">GCP IAM - Service Account Enumeration</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Discovery</td>
+<td style="text-align: left;"><a href="../tables/gcpiam.html"><code>GCPIAM</code></a><br><a href="../tables/gcp-iam-cl.html"><code>GCP_IAM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformiam-gcp-iam-service-account-keys-enumeration-7ad3cfed-18c0-44af-9e9d-9fb5472a2321-1e046e4f.html">GCP IAM - Service Account Keys Enumeration</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Discovery</td>
+<td style="text-align: left;"><a href="../tables/gcpiam.html"><code>GCPIAM</code></a><br><a href="../tables/gcp-iam-cl.html"><code>GCP_IAM_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformiam-gcp-iam-changed-roles-0ab42aac-2c86-443c-80fa-ef8cdd0d997e-d2250be5.html">GCP IAM - Changed roles</a></td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/gcpiam.html"><code>GCPIAM</code></a><br><a href="../tables/gcp-iam-cl.html"><code>GCP_IAM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformiam-gcp-iam-deleted-service-accounts-b758750b-18e8-4aec-a831-c9a1a312d314-9ce24ba0.html">GCP IAM - Deleted service accounts</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/gcpiam.html"><code>GCPIAM</code></a><br><a href="../tables/gcp-iam-cl.html"><code>GCP_IAM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformiam-gcp-iam-disabled-service-accounts-f228b2ca-3604-475a-8bd1-33b6c5dbcd3d-71041e65.html">GCP IAM - Disabled service accounts</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/gcpiam.html"><code>GCPIAM</code></a><br><a href="../tables/gcp-iam-cl.html"><code>GCP_IAM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformiam-gcp-iam-new-custom-roles-e9accd25-ecff-4076-b2da-3102bf95bec5-1b828f0f.html">GCP IAM - New custom roles</a></td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/gcpiam.html"><code>GCPIAM</code></a><br><a href="../tables/gcp-iam-cl.html"><code>GCP_IAM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformiam-gcp-iam-new-service-account-keys-33bf838b-a85e-4051-8646-07f4e47ee4ea-d2e0206e.html">GCP IAM - New service account keys</a></td>
+<td style="text-align: left;">LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/gcpiam.html"><code>GCPIAM</code></a><br><a href="../tables/gcp-iam-cl.html"><code>GCP_IAM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformiam-gcp-iam-new-service-accounts-52518413-437b-4f79-86d3-28c8c1fafb66-85c410bc.html">GCP IAM - New service accounts</a></td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/gcpiam.html"><code>GCPIAM</code></a><br><a href="../tables/gcp-iam-cl.html"><code>GCP_IAM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformiam-gcp-iam-rare-iam-actions-85e64fe8-aeed-4021-85de-fdf539917ca1-dee16ec6.html">GCP IAM - Rare IAM actions</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/gcpiam.html"><code>GCPIAM</code></a><br><a href="../tables/gcp-iam-cl.html"><code>GCP_IAM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformiam-gcp-iam-rare-user-agent-ee96562f-cb40-42fd-80d6-dce38cb38f5c-c76775d3.html">GCP IAM - Rare user agent</a></td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/gcpiam.html"><code>GCPIAM</code></a><br><a href="../tables/gcp-iam-cl.html"><code>GCP_IAM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformiam-gcp-iam-top-service-accounts-by-failed-actions-27234847-8d3f-4d33-a3ef-5d3ec2575154-690da1f5.html">GCP IAM - Top service accounts by failed actions</a></td>
+<td style="text-align: left;">Discovery</td>
+<td style="text-align: left;"><a href="../tables/gcpiam.html"><code>GCPIAM</code></a><br><a href="../tables/gcp-iam-cl.html"><code>GCP_IAM_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformiam-gcp-iam-top-source-ip-addresses-with-failed-actions-2f906618-68e1-49ae-a961-8483cb7b6523-0c683ae9.html">GCP IAM - Top source IP addresses with failed actions</a></td>
+<td style="text-align: left;">Discovery</td>
+<td style="text-align: left;"><a href="../tables/gcpiam.html"><code>GCPIAM</code></a><br><a href="../tables/gcp-iam-cl.html"><code>GCP_IAM_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformiam-gcp-iam-59739972.html">GCP_IAM</a></td>
+<td style="text-align: left;"><a href="../tables/gcp-iam-cl.html"><code>GCP_IAM_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformiam-gcp-disableserviceaccountfromteams-0b9edb6a.html">GCP-DisableServiceAccountFromTeams</a></td>
+<td style="text-align: left;">When a new sentinel incident is created, this playbook gets triggered and performs the following act...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformiam-gcp-disableserviceaccountkey-d3d8482c.html">GCP-DisableServiceAccountKey</a></td>
+<td style="text-align: left;">Once a new sentinel incident is created, this playbook gets triggered and performs the following act...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/googlecloudplatformiam-gcp-enrichserviseaccountinfo-4a930a19.html">GCP-EnrichServiseAccountInfo</a></td>
+<td style="text-align: left;">Once a new sentinel incident is created, this playbook gets triggered and performs the following act...</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/gcp-iam.html">GCP_IAM</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/gcpiam.html"><code>GCPIAM</code></a> <em>(read)</em><br><a href="../tables/gcp-iam-cl.html"><code>GCP_IAM_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>ChangeHistory</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.7</td>
+<td>28-08-2025</td>
+<td>Improved type handling in the parser query by explicitly converting certain fields to bool and datetime.</td>
+</tr>
+<tr>
+<td>3.0.6</td>
+<td>31-07-2025</td>
+<td>Removed deprecated <strong>Data Connector</strong></td>
+</tr>
+<tr>
+<td>3.0.5</td>
+<td>27-06-2025</td>
+<td>GoogleCloudPlatformIAM <strong>CCF Data Connector</strong> moving to GA</td>
+</tr>
+<tr>
+<td>3.0.4</td>
+<td>13-06-2025</td>
+<td>Updated Standard Table configuration in <strong>CCF Data Connector</strong>.</td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>28-05-2025</td>
+<td>Implementation of Standard Table functionality to <strong>CCF Data Connector</strong>.</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>18-02-2025</td>
+<td>Migrated the <strong>Function app</strong> connector to CCP <strong>Data Connctor</strong> and Updated <strong>Parser</strong>.</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>10-09-2024</td>
+<td>Repackaged solution to add existing <strong>Parser</strong>.</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>04-09-2024</td>
+<td>Updated the python runtime version to 3.11.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

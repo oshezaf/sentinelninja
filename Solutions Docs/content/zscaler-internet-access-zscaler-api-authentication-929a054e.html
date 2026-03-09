@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zscaler API authentication &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Zscaler API authentication</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>This playbook generates access token in Zscaler API. Call this playbook as a step in functional Zscaler playbooks. The output is a JSessionID which can be used to do other API actions</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/zscaler-internet-access.html">Zscaler Internet Access</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Playbooks/Zscaler%20API%20authentication/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Playbooks/Zscaler%20API%20authentication/readme.md">Zscaler API authentication/readme.md</a></em></p>
+</blockquote>
+<h1>Zscaler - Authentication</h1>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Playbooks/Zscaler%20API%20authentication/../Images/Zscaler.png" width="200"><br></p>
+<h2>Table of Contents</h2>
+<ol>
+<li><a href="#overview">Summary</a></li>
+<li><a href="prerequisites">Prerequisites</a></li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="postdeployment">postdeployment</a></li>
+<li><a href="#Authentication">Authentication</a></li>
+<li><a href="#references">References</a></li>
+</ol>
+<p><a name="summary"></a></p>
+<h2>Summary</h2>
+<p>This folder contains 1 playbook: 
+* Zscaler Authentication: Can be used to handle the Zscaler Authentication authentication process. The output is a JSessionID which can be used to do other API actions. The playbook can be embedded in other playbooks. Refer this link for the authentication Process: <a href="https://help.zscaler.com/zia/api-getting-started#CreateSession">Authenticate and create an API session</a></p>
+<p><img alt="Playbook" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Playbooks/Zscaler%20API%20authentication/../Images/Authentication.png" /></p>
+<p><a name="Prerequisites"></a></p>
+<h2>Prerequisites</h2>
+<ol>
+<li>Playbook templates leverage the Zscaler API. To use the Zscaler capabilities, you need a Zscaler API key. Refer this link: <a href="https://help.zscaler.com/zia/api-getting-started">API Developers Guide: Getting Started</a></li>
+</ol>
+<p><a name="deployment"></a></p>
+<h2>Deployment instructions</h2>
+<p>You can choose to deploy one ore more playbooks.</p>
+<ol>
+<li>Deploy a playbook by clicking on "Deploy to Azure" button. This will take you to deplyoing an ARM Template wizard.</li>
+<li>Fill in the required parameters:<ul>
+<li>Resource group</li>
+<li>Region</li>
+<li>Playbook name</li>
+<li>Storage account name (newly created storage account, which is used by the playbook)</li>
+<li>Zscaler Admin Url</li>
+<li>Zscaler Key</li>
+<li>Zscaler Username</li>
+<li>Zscaler Password</li>
+</ul>
+</li>
+</ol>
+<h3>Add IP to category:</h3>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FPlaybooks%2FZscaler%2FAuthentication%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FPlaybooks%2FZscaler%2FAuthentication%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<p><a name="postdeployment"></a></p>
+<h2>Post-Deployment instructions</h2>
+<h3>a. Authorize connections</h3>
+<p>Once the deployment is completed, you will need to authorize the Azure Sentinel connection.Please complete the following steps:
+ 1. Click edit API connection
+ 1. Fill in the necessary information
+ 1. Click Authorize
+ 1. Sign in
+ 1. Click Save</p>
+<p><a name="references"></a></p>
+<h2>Learn more</h2>
+<ul>
+<li><a href="https://help.zscaler.com/zia/api" target="_blank">Zscaler API</a></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/zscaler-internet-access.html">Back to Zscaler Internet Access</a></p>
+</div>
+</body>
+</html>

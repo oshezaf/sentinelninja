@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StorageTableLogs &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>StorageTableLogs</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for StorageTableLogs table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Azure Resources</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/storagetablelogs">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (50 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/storagetablelogs">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccountName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the storage account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationHash</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The hash of authentication token.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of authentication that was used to make the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthorizationDetails</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Detailed policy information used to authorize the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CallerIpAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address of the requester, including the port number.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Category</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The category of requested operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClientRequestId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The x-ms-client-request-id header value of the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConditionsUsed</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A semicolon-separated list of key-value pairs that represent a condition.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ContentLengthHeader</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The value of the Content-Length header for the request sent to the storage service.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID that is used to correlate logs across resources.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DurationMs</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The total time, expressed in milliseconds, to perform the requested operation. This includes the time to read the incoming request, and to send the response to the requester.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Etag</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ETag identifier for the returned object, in quotes.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LastModifiedTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The Last Modified Time (LMT) for the returned object. This field is empty for operations that can return multiple objects.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Location</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The location of storage account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MetricResponseType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Records the metric response for correlation between metrics and logs.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ObjectKey</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The key of the requested object, in quotes.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The number of each logged operation that is involved in the request. This count starts with an index of 0. Some requests require more than one operation, such as a request to copy a blob. Most requests perform only one operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of REST operation that was performed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The storage service version that was specified when the request was made. This is equivalent to the value of the x-ms-version header.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Protocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The protocol that is used in the operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReferrerHeader</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Referer header value.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySize</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The size of the request packets, expressed in bytes, that are read by the storage service. If a request is unsuccessful, this value might be empty.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequesterAppId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Open Authorization (OAuth) application ID that is used as the requester.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequesterAudience</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The OAuth audience of the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequesterObjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The OAuth object ID of the requester.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequesterTenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The OAuth tenant ID of identity.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequesterTokenIssuer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The OAuth token issuer.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequesterUpn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The User Principal Names of requestor.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestHeaderSize</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The size of the request header expressed in bytes. If a request is unsuccessful, this value might be empty.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMd5</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The value of either the Content-MD5 header or the x-ms-content-md5 header in the request. The MD5 hash value specified in this field represents the content in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseBodySize</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The size of the response packets written by the storage service, in bytes. If a request is unsuccessful, this value may be empty.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseHeaderSize</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The size of the response header expressed in bytes. If a request is unsuccessful, this value might be empty.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseMd5</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The value of the MD5 hash calculated by the storage service.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SasExpiryStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Records any violations in the request SAS token as per the SAS policy set in the storage account. Ex: longer SAS token duration specified than allowed per SAS policy</td>
+</tr>
+<tr>
+<td style="text-align: left;">SchemaVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The schema version of the log.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServerLatencyMs</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The total time expressed in milliseconds to perform the requested operation. This value doesn't include network latency (the time to read the incoming request and send the response to the requester).</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServiceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The service associated with this request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">StatusCode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The HTTP status code for the request. If the request is interrupted, this value might be set to Unknown.</td>
+</tr>
+<tr>
+<td style="text-align: left;">StatusText</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The status of the requested operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The Universal Time Coordinated (UTC) time when the request was received by storage.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TlsVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The TLS version used in the connection of request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">Uri</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Uniform resource identifier that is requested.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserAgentHeader</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The User-Agent header value, in quotes.</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (2)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/azure-storage.html">Azure Storage</a></li>
+<li><a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/azurestorageaccount.html">Azure Storage Account</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Content Items Using This Table (1)</h2>
+<h3>Workbooks (1)</h3>
+<p><strong>In solution <a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.html">ZeroTrustTIC3</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Parsers Using This Table (1)</h2>
+<h3>ASIM Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimfileeventazuretablestorage.html">ASimFileEventAzureTableStorage</a></td>
+<td style="text-align: left;">FileEvent</td>
+<td style="text-align: left;">Microsoft Azure Table Storage</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.storage/storageaccounts</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

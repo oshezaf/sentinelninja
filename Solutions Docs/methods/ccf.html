@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Codeless Connector Framework CCF &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Codeless Connector Framework (CCF)</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../methods-index.html">Back to Methods Index</a></p>
+<hr />
+<p>The Codeless Connector Framework (CCF) enables creating data connectors using a declarative JSON configuration without writing code. CCF connectors can poll REST APIs, process responses, and ingest data into custom log tables. This framework is used for many modern Microsoft Sentinel connectors.</p>
+<h2>Documentation</h2>
+<ul>
+<li><a href="https://learn.microsoft.com/azure/sentinel/create-codeless-connector">📖 Create a codeless connector</a></li>
+<li><a href="https://learn.microsoft.com/azure/sentinel/data-connector-connection-rules-reference">📖 Codeless Connector Platform reference</a></li>
+<li><a href="https://learn.microsoft.com/azure/sentinel/data-connector-ui-definitions-reference">📖 Connector definition reference</a></li>
+</ul>
+<h2>Statistics</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Metric</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Total Connectors</td>
+<td style="text-align: right;"><strong>106</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">Active</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr>
+<td style="text-align: left;">Deprecated 🚫</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Unpublished ⚠️</td>
+<td style="text-align: right;">6</td>
+</tr>
+</tbody>
+</table>
+<h2>Connectors Using This Method</h2>
+<h3>Active Connectors</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Publisher</th>
+<th style="text-align: center;">Tables</th>
+<th style="text-align: left;">Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/confluenceauditccpdefinition.html"> Atlassian Confluence Audit (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/atlassianconfluenceaudit.html">AtlassianConfluenceAudit</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/dragossitestoreccp.html"> Dragos Notifications via Cloud Sitestore</a></td>
+<td style="text-align: left;">Dragos</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/dragos.html">Dragos</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/1password-serverless.html">1Password (Serverless)</a></td>
+<td style="text-align: left;">Unknown (ARM variable)</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/1password.html">1Password</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/1passwordccpdefinition.html">1Password (Serverless)</a></td>
+<td style="text-align: left;">1Password</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/1password.html">1Password</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/alicloudactiontrailccpdefinition.html">Alibaba Cloud ActionTrail (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/alibaba-cloud-actiontrail.html">Alibaba Cloud ActionTrail</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/awscloudfrontccpdefinition.html">Amazon Web Services CloudFront (via Codeless Connector Framework) (Preview)</a> ➕</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/aws-cloudfront.html">AWS CloudFront</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/awsnetworkfirewallccpdefinition.html">Amazon Web Services NetworkFirewall (via Codeless Connector Framework)</a> ➕</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;"><a href="../solutions/amazon-web-services-networkfirewall.html">Amazon Web Services NetworkFirewall</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/awsroute53resolverccpdefinition.html">Amazon Web Services S3 DNS Route53 (via Codeless Connector Framework)</a> ➕</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/amazon-web-services-route-53.html">Amazon Web Services Route 53</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/awss3vpcflowlogsparquetdefinition.html">Amazon Web Services S3 VPC Flow Logs</a> ⚠️ ➕</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/aws-vpc-flow-logs.html">AWS VPC Flow Logs</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/awss3wafccpdefinition.html">Amazon Web Services S3 WAF</a> ➕</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/amazon-web-services.html">Amazon Web Services</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/anvilogicccfdefinition.html">Anvilogic</a></td>
+<td style="text-align: left;">Anvilogic</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/anvilogic.html">Anvilogic</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/atlassianconfluence.html">Atlassian Confluence</a></td>
+<td style="text-align: left;">Atlassian</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/atlassianconfluenceaudit.html">AtlassianConfluenceAudit</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/jiraauditccpdefinition.html">Atlassian Jira Audit (using REST API)</a> 🔶</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/atlassianjiraaudit.html">AtlassianJiraAudit</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/auth0connectorccpdefinition.html">Auth0 Logs</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/auth0.html">Auth0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/awss3serveraccesslogsdefinition.html">AWS S3 Server Access Logs (via Codeless Connector Framework)</a> ➕</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/aws-accesslogs.html">AWS_AccessLogs</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/awssecurityhubfindingsccpdefinition.html">AWS Security Hub Findings (via Codeless Connector Framework)</a> ➕</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/aws-security-hub.html">AWS Security Hub</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/azuredevopsauditlogs.html">Azure DevOps Audit Logs (via Codeless Connector Platform)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/azuredevopsauditing.html">AzureDevOpsAuditing</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/bigiddspmlogsconnectordefinition.html">BigID DSPM connector</a> ⚠️</td>
+<td style="text-align: left;">BigID</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/bigid.html">BigID</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/bitwardeneventlogs.html">Bitwarden Event Logs</a></td>
+<td style="text-align: left;">Bitwarden Inc</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;"><a href="../solutions/bitwarden.html">Bitwarden</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/boxeventsccpdefinition.html">Box Events (CCP)</a> 🔶</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/box.html">Box</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/cloudguardccpdefinition.html">Check Point CloudGuard CNAPP Connector for Microsoft Sentinel</a></td>
+<td style="text-align: left;">CheckPoint</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/check-point-cloudguard-cnapp.html">Check Point CloudGuard CNAPP</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/checkpointcyberintalerts.html">Check Point Cyberint Alerts Connector (via Codeless Connector Platform)</a></td>
+<td style="text-align: left;">Checkpoint Cyberint</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/check-point-cyberint-alerts.html">Check Point Cyberint Alerts</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/checkpointcyberintioc.html">Check Point Cyberint IOC Connector</a></td>
+<td style="text-align: left;">Checkpoint Cyberint</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/check-point-cyberint-ioc.html">Check Point Cyberint IOC</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ciscomerakimultirule.html">Cisco Meraki (using REST API)</a> ➕</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;"><a href="../solutions/cisco-meraki-events-via-rest-api.html">Cisco Meraki Events via REST API</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ciscosecureendpointlogsccpdefinition.html">Cisco Secure Endpoint (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/cisco-secure-endpoint.html">Cisco Secure Endpoint</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/cloudflaredefinition.html">Cloudflare (Using Blob Container) (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/cloudflare.html">Cloudflare</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/cortexxdrincidents.html">Cortex XDR - Incidents</a> 🔶</td>
+<td style="text-align: left;">DEFEND Ltd.</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/cortex-xdr.html">Cortex XDR</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/crowdstrikeapiconnector.html">CrowdStrike API Data Connector (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;"><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/crowdstrikefalcons3ccpdefinition.html">CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</a> 🔶</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: left;"><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/cyblevisionalerts.html">Cyble Vision Alerts</a></td>
+<td style="text-align: left;">Cyble</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/cyble-vision.html">Cyble Vision</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/cyeradspmccf.html">Cyera DSPM Microsoft Sentinel Data Connector</a> ⚠️</td>
+<td style="text-align: left;">Cyera Inc</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;"><a href="../solutions/cyeradspm.html">CyeraDSPM</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/cyfirmaattacksurfacealertsconnector.html">CYFIRMA Attack Surface</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: left;"><a href="../solutions/cyfirma-attack-surface.html">Cyfirma Attack Surface</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/cyfirmabrandintelligencealertsdc.html">CYFIRMA Brand Intelligence</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;"><a href="../solutions/cyfirma-brand-intelligence.html">Cyfirma Brand Intelligence</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/cyfirmacompromisedaccountsdataconnector.html">CYFIRMA Compromised Accounts</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/cyfirma-compromised-accounts.html">Cyfirma Compromised Accounts</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/cyfirmacyberintelligencedc.html">CYFIRMA Cyber Intelligence</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;"><a href="../solutions/cyfirma-cyber-intelligence.html">Cyfirma Cyber Intelligence</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/cyfirmadigitalriskalertsconnector.html">CYFIRMA Digital Risk</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: left;"><a href="../solutions/cyfirma-digital-risk.html">Cyfirma Digital Risk</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/cyfirmavulnerabilitiesinteldc.html">CYFIRMA Vulnerabilities Intelligence</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/cyfirma-vulnerabilities-intel.html">Cyfirma Vulnerabilities Intel</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/cyrenthreatintel.html">Cyren Threat Intelligence</a> 🔶</td>
+<td style="text-align: left;">Cyren</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/cyrenthreatintelligence.html">CyrenThreatIntelligence</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/druvaeventccpdefinition.html">Druva Events Connector</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;"><a href="../solutions/druvadatasecuritycloud.html">DruvaDataSecurityCloud</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/dynamics365finance.html">Dynamics 365 Finance and Operations</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ermesbrowsersecurityevents.html">Ermes Browser Security Events</a></td>
+<td style="text-align: left;">Ermes Cyber Security S.p.A.</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/ermes-browser-security.html">Ermes Browser Security</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/gcpcloudrunlogs-connectordefinition.html">GCP Cloud Run (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/google-cloud-platform-cloud-run.html">Google Cloud Platform Cloud Run</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/gcpcloudsqlccfdefinition.html">GCP Cloud SQL (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/googlecloudplatformsql.html">GoogleCloudPlatformSQL</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/gcpauditlogsdefinition.html">GCP Pub/Sub Audit Logs</a> ➕</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/google-cloud-platform-audit-logs.html">Google Cloud Platform Audit Logs</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/gcppub-subauditlogs.html">GCP Pub/Sub Audit Logs</a> ➕</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/google-cloud-platform-audit-logs.html">Google Cloud Platform Audit Logs</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/gcpfirewalllogsccpdefinition.html">GCP Pub/Sub Firewall Logs</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/google-cloud-platform-firewall-logs.html">Google Cloud Platform Firewall Logs</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/gcpfloadbalancerlogsccpdefinition.html">GCP Pub/Sub Load Balancer Logs (via Codeless Connector Platform).</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/google-cloud-platform-load-balancer-logs.html">Google Cloud Platform Load Balancer Logs</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/gcpvpcflowlogsccpdefinition.html">GCP Pub/Sub VPC Flow Logs (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/google-cloud-platform-vpc-flow-logs.html">Google Cloud Platform VPC Flow Logs</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/githubauditdefinitionv2.html">GitHub Enterprise Audit Log (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/github.html">GitHub</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/googleapigeexlogsccpdefinition.html">Google ApigeeX (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/google-apigee.html">Google Apigee</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/gcpcdnlogsccpdefinition.html">Google Cloud Platform CDN (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/googlecloudplatformcdn.html">GoogleCloudPlatformCDN</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/gcpcloudidslogsccpdefinition.html">Google Cloud Platform Cloud IDS (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/googlecloudplatformids.html">GoogleCloudPlatformIDS</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/gcpmonitorccpdefinition.html">Google Cloud Platform Cloud Monitoring (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/google-cloud-platform-cloud-monitoring.html">Google Cloud Platform Cloud Monitoring</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/gcpcomputeenginelogsccpdefinition.html">Google Cloud Platform Compute Engine (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/google-cloud-platform-compute-engine.html">Google Cloud Platform Compute Engine</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/gcpdnslogsccpdefinition.html">Google Cloud Platform DNS (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/googlecloudplatformdns.html">GoogleCloudPlatformDNS</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/gcpiamccpdefinition.html">Google Cloud Platform IAM (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/googlecloudplatformiam.html">GoogleCloudPlatformIAM</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/gcpnatlogsccpdefinition.html">Google Cloud Platform NAT (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/googlecloudplatformnat.html">GoogleCloudPlatformNAT</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/gcpresourcemanagerlogsccfdefinition.html">Google Cloud Platform Resource Manager (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/googlecloudplatformresourcemanager.html">GoogleCloudPlatformResourceManager</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/gkeccpdefinition.html">Google Kubernetes Engine (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: left;"><a href="../solutions/google-kubernetes-engine.html">Google Kubernetes Engine</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/googleworkspaceccpdefinition.html">Google Workspace Activities (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/googleworkspacereports.html">GoogleWorkspaceReports</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/illumioinsightsdefinition.html">Illumio Insights</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/illumio-insight.html">Illumio Insight</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/illumioinsightssummaryccp.html">Illumio Insights Summary</a></td>
+<td style="text-align: left;">Illumio</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/illumio-insight.html">Illumio Insight</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/illumiosaasccfdefinition.html">Illumio Saas</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/illumiosaas.html">IllumioSaaS</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/impervacloudwaflogsccfdefinition.html">Imperva Cloud WAF</a> 🔶</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/impervacloudwaf.html">ImpervaCloudWAF</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/lookoutstreaming-definition.html">Lookout Mobile Threat Detection Connector (via Codeless Connector Framework) (Preview)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/lookout.html">Lookout</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/securepracticemailriskconnector.html">MailRisk by Secure Practice</a></td>
+<td style="text-align: left;">Secure Practice</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/mailrisk.html">MailRisk</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/meshstackeventlogsdefinition.html">meshStack Event Logs</a> ⚠️</td>
+<td style="text-align: left;">meshcloud</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/meshstack.html">meshStack</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/microsoftcopilot.html">Microsoft Copilot</a> ⚠️</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/microsoft-copilot.html">Microsoft Copilot</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/miroauditlogsdataconnector.html">Miro Audit Logs (Enterprise Plan)</a></td>
+<td style="text-align: left;">Miro</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/miro.html">Miro</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/mirocontentlogsdataconnector.html">Miro Content Logs (Enterprise Plan + Enterprise Guard)</a></td>
+<td style="text-align: left;">Miro</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/miro.html">Miro</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/morphisecccf.html">Morphisec API Data Connector (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Morphisec</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/morphisec.html">Morphisec</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/netskopealertsevents.html">Netskope Alerts and Events</a></td>
+<td style="text-align: left;">Netskope</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: left;"><a href="../solutions/netskopev2.html">Netskopev2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/oktassov2.html">Okta Single Sign-On</a> 🔶</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/okta-single-sign-on.html">Okta Single Sign-On</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/oktasinglesignon-usingazurefunctions.html">Okta Single Sign-On (using Azure Functions)</a> 🔶</td>
+<td style="text-align: left;">Okta</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/okta-single-sign-on.html">Okta Single Sign-On</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/oneloginiamlogsccpdefinition.html">OneLogin IAM Platform (via Codeless Connector Framework)</a> 🔶</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/oneloginiam.html">OneLoginIAM</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/oci-connector-ccp-definition.html">Oracle Cloud Infrastructure (via CCP) – Preview</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/oracle-cloud-infrastructure.html">Oracle Cloud Infrastructure</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/oraclecloudinfraconnector.html">Oracle Cloud Infrastructure (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/oracle-cloud-infrastructure.html">Oracle Cloud Infrastructure</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/cortexxdrdataconnector.html">Palo Alto Cortex XDR</a> 🔶</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;"><a href="../solutions/cortex-xdr.html">Cortex XDR</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/paloaltoexpanseccpdefinition.html">Palo Alto Cortex Xpanse (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/palo-alto-cortex-xpanse-ccf.html">Palo Alto Cortex Xpanse CCF</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/paloaltoprismacloudcspmccpdefinition.html">Palo Alto Prisma Cloud CSPM (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/paloaltoprismacloud.html">PaloAltoPrismaCloud</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/paloaltoprismacloudcwpp.html">Palo Alto Prisma Cloud CWPP (using REST API)</a> 🔶</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/palo-alto-prisma-cloud-cwpp.html">Palo Alto Prisma Cloud CWPP</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/pingoneauditlogsccpdefinition.html">Ping One (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/pingone.html">PingOne</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/proofpointccpdefinition.html">Proofpoint On Demand Email Security (via Codeless Connector Platform)</a> 🔶</td>
+<td style="text-align: left;">Proofpoint</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/proofpoint-on-demand-pod-email-security.html">Proofpoint On demand(POD) Email Security</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/proofpointtapv2.html">Proofpoint TAP (via Codeless Connector Platform)</a></td>
+<td style="text-align: left;">Proofpoint</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;"><a href="../solutions/proofpointtap.html">ProofPointTap</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/qscoutappeventsccfdefinition.html">QscoutAppEventsConnector (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Quokka</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/quokka.html">Quokka</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/qualysvmlogsccpdefinition.html">Qualys Vulnerability Management (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/qualysvm.html">QualysVM</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/rsaidplus-adminglogs-connector.html">RSA ID Plus Admin Logs Connector</a></td>
+<td style="text-align: left;">RSA</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/rsaidplus-adminlogs-connector.html">RSAIDPlus_AdminLogs_Connector</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/salesforceservicecloudccpdefinition.html">Salesforce Service Cloud (via Codeless Connector Framework)</a> 🔶</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/salesforce-service-cloud.html">Salesforce Service Cloud</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/sapbtpauditevents.html">SAP BTP</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/sap-btp.html">SAP BTP</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/sapetdalerts.html">SAP Enterprise Threat Detection, cloud edition</a></td>
+<td style="text-align: left;">SAP</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/sap-etd-cloud.html">SAP ETD Cloud</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/saps4publicalerts.html">SAP S/4HANA Cloud Public Edition</a></td>
+<td style="text-align: left;">SAP</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/sap-s4-cloud-public-edition.html">SAP S4 Cloud Public Edition</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/sentineloneccp.html">SentinelOne</a> 🔶</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;"><a href="../solutions/sentinelone.html">SentinelOne</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/slackaudit.html">Slack</a> 🔶</td>
+<td style="text-align: left;">Slack</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/slackaudit.html">SlackAudit</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/slackauditlogsccpdefinition.html">SlackAudit (via Codeless Connector Framework)</a> 🔶</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/slackaudit.html">SlackAudit</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/snowflakelogsccpdefinition.html">Snowflake (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: left;"><a href="../solutions/snowflake.html">Snowflake</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/socprimeauditlogsdataconnector.html">SOC Prime Platform Audit Logs Data Connector</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/soc-prime-ccf.html">SOC Prime CCF</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/sophosendpointprotectionccpdefinition.html">Sophos Endpoint Protection (using REST API)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/sophos-endpoint-protection.html">Sophos Endpoint Protection</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/styxviewendpointconnectordefinition.html">StyxView Alerts (via Codeless Connector Platform)</a> ⚠️</td>
+<td style="text-align: left;">Styx Intelligence</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/styx-intelligence.html">Styx Intelligence</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/tacitredthreatintel.html">TacitRed Compromised Credentials</a></td>
+<td style="text-align: left;">TacitRed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/tacitredthreatintelligence.html">TacitRedThreatIntelligence</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/tropicoalertsdefinition.html">Tropico Security - Alerts</a></td>
+<td style="text-align: left;">Tropico Security</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/tropico.html">Tropico</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/tropicoeventsdefinition.html">Tropico Security - Events</a></td>
+<td style="text-align: left;">Tropico Security</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/tropico.html">Tropico</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/tropicoincidentsdefinition.html">Tropico Security - Incidents</a></td>
+<td style="text-align: left;">Tropico Security</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/tropico.html">Tropico</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/versaseccmsccpdefinition.html">VersasecCms</a></td>
+<td style="text-align: left;">Versasec AB</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/versaseccms.html">VersasecCMS</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: left;"><a href="../solutions/vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/workdayccpdefinition.html">Workday User Activity</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/workday.html">Workday</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/zerofoxalertsdefinition.html">ZeroFox Enterprise - Alerts (Polling CCF)</a></td>
+<td style="text-align: left;">ZeroFox Enterprise</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/zerofox.html">ZeroFox</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../methods-index.html">Back to Methods Index</a></p>
+</div>
+</body>
+</html>

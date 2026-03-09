@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>42Crunch API Protection &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>42Crunch API Protection</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/42CrunchLogo.svg" alt="42Crunch API Protection Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">42Crunch API Protection</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://42crunch.com/">https://42crunch.com/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">2.0.3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">42Crunch - plugins@42crunch.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-09-21</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/42Crunch%20API%20Protection">42Crunch API Protection</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://42crunch.com/">42Crunch</a> API Protection solution protects APIs by installing a microfirewall inline with the API server. Access logs from the microfirewall are emitted to Microsoft Sentinel allowing analysis and investigation of attacks.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/42crunchapiprotection.html">API Protection</a> 🔶</li>
+</ul>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/apifirewall-log-1-cl.html"><code>apifirewall_log_1_CL</code></a> 🔶</td>
+<td><a href="../connectors/42crunchapiprotection.html">API Protection</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>12 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">11</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/42crunch-api-protection-api-api-scraping-d944d564-b6fa-470d-b5ab-41b341878c5e-a52c8975.html">API - API Scraping</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Reconnaissance, Collection</td>
+<td style="text-align: left;"><a href="../tables/apifirewall-log-1-cl.html"><code>apifirewall_log_1_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/42crunch-api-protection-api-account-takeover-25c86f99-0a91-4b7f-88f3-599a008e5ab8-6d2b117c.html">API - Account Takeover</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">CredentialAccess, Discovery</td>
+<td style="text-align: left;"><a href="../tables/apifirewall-log-1-cl.html"><code>apifirewall_log_1_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/42crunch-api-protection-api-anomaly-detection-2c59e609-e0a0-4e8e-adc5-ab4224be8a36-33e8704d.html">API - Anomaly Detection</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Reconnaissance</td>
+<td style="text-align: left;"><a href="../tables/apifirewall-log-1-cl.html"><code>apifirewall_log_1_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/42crunch-api-protection-api-bola-1b047dc3-a879-4f99-949b-d1dc867efc83-209dd431.html">API - BOLA</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/apifirewall-log-1-cl.html"><code>apifirewall_log_1_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/42crunch-api-protection-api-invalid-host-access-28500be7-cfcf-40e1-bad4-bc524e9283e2-d314655b.html">API - Invalid host access</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Reconnaissance</td>
+<td style="text-align: left;"><a href="../tables/apifirewall-log-1-cl.html"><code>apifirewall_log_1_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/42crunch-api-protection-api-jwt-validation-bbd163f4-1f56-434f-9c23-b06713c119c2-c3a5eaee.html">API - JWT validation</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">InitialAccess, CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/apifirewall-log-1-cl.html"><code>apifirewall_log_1_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/42crunch-api-protection-api-kiterunner-detection-421b38ec-4295-4aed-8299-c92e268ad663-56f29884.html">API - Kiterunner detection</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Reconnaissance, Discovery</td>
+<td style="text-align: left;"><a href="../tables/apifirewall-log-1-cl.html"><code>apifirewall_log_1_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/42crunch-api-protection-api-password-cracking-d951d64d-0ecd-4675-8c79-6c870d5f72ac-693d5746.html">API - Password Cracking</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/apifirewall-log-1-cl.html"><code>apifirewall_log_1_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/42crunch-api-protection-api-rate-limiting-c6258d51-7b82-4942-8293-94c1dcf91595-4ec87f01.html">API - Rate limiting</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Discovery, InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/apifirewall-log-1-cl.html"><code>apifirewall_log_1_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/42crunch-api-protection-api-rate-limiting-b808063b-07d5-432c-95d0-8900da61cce9-3103815b.html">API - Rate limiting</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/apifirewall-log-1-cl.html"><code>apifirewall_log_1_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/42crunch-api-protection-api-suspicious-login-7bdc10d6-aa24-4ca9-9a93-802cd8761354-d5428b70.html">API - Suspicious Login</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">CredentialAccess, InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/apifirewall-log-1-cl.html"><code>apifirewall_log_1_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/42crunch-api-protection-42crunchapiprotectionworkbook-5ba91507.html">42CrunchAPIProtectionWorkbook</a></td>
+<td style="text-align: left;"><a href="../tables/apifirewall-log-1-cl.html"><code>apifirewall_log_1_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.0</td>
+<td>15-07-2024</td>
+<td>Missing Tactics and Techniques added</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

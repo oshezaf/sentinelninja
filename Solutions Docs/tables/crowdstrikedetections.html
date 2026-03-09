@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CrowdStrikeDetections &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>CrowdStrikeDetections</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for CrowdStrikeDetections table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Crowdstrike</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikedetections">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (108 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikedetections">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AddedPrivileges</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Privileges added during the detection process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AdversaryIds</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of adversary IDs associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AgentScanId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier for the agent scan that detected this threat.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AggregateId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Aggregate ID associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AllegedFiletype</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The suspected file type of the malicious file.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AssignedToName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the user assigned to investigate the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AssignedToUid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User ID of the assigned investigator.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AssignedToUuid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">UUID of the assigned investigator.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Behaviors</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of behaviors detected that contributed to this detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BehaviorsProcessed</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of behaviors that have been processed and analyzed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ChildProcessIds</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of child process IDs spawned by the detected process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Customer ID in the CrowdStrike platform.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CloudIndicator</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if the detection involves cloud-based indicators.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cmdline</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Command line used to execute the detected process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CompositeId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Composite identifier combining multiple detection attributes.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Confidence</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Confidence score of the detection (0-100).</td>
+</tr>
+<tr>
+<td style="text-align: left;">CrawledTimestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp when the detection data was last crawled.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CreatedTimestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp when the detection was first created.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DateUpdated</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Date when the detection record was last updated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Description</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Description of the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DetectionContext</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Additional context information about the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DetectionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DetectionType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type or category of the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Device</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Information about the device where the detection occurred.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EmailSent</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if an email notification was sent for this detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EndTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp when the detection ended.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Entities</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Entities associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EntityValues</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Values of the entities associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FalconHostLink</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Link to the detection details in the CrowdStrike Falcon console.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Filename</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the file associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Filepath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Full path to the file associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FirstBehavior</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp of the first behavior in the detection sequence.</td>
+</tr>
+<tr>
+<td style="text-align: left;">GlobalPrevalence</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Global prevalence rating of the detected file.</td>
+</tr>
+<tr>
+<td style="text-align: left;">GrandparentDetails</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Details about the grandparent process in the process tree.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HostInfo</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Information about the host where the detection occurred.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Id</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Incident</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Associated incident information if the detection is part of an incident.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IndicatorId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier for the indicator of compromise (IOC) that triggered the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IocContext</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Context information about the indicator of compromise.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LastBehavior</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp of the most recent behavior in the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LocalPrevalence</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Local prevalence rating of the detected file within the organization.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LocalProcessId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Local process ID on the system where the detection occurred.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogonDomain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Domain used for user logon associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MaxConfidence</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Maximum confidence score across all behaviors in the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MaxSeverity</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Maximum severity level across all behaviors in the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MaxSeverityDisplayName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Text representation of the maximum severity level.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Md5</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">MD5 hash of the detected file.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MitreAttack</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">MITRE ATT&amp;CK tactics and techniques associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkAccesses</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of network connections made by the detected process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Objective</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Objective associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OsName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Operating system name where the detection occurred.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OverwatchNotes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Notes added by CrowdStrike Overwatch analysts.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ParentDetails</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Details about the parent process in the process tree.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ParentProcessId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Process ID of the parent process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PatternDisposition</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Numerical identifier for the action taken by the detection pattern.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PatternDispositionDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Text description of the pattern disposition action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PatternDispositionDetails</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Detailed information about the pattern disposition.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PolyId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Poly ID associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PreviousPrivileges</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Privileges previously held before the detection process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Privileges</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Current privileges associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessEndTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Timestamp when the detected process ended.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Process ID of the detected process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessStartTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Timestamp when the detected process started.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Quarantined</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if the detected file was quarantined.</td>
+</tr>
+<tr>
+<td style="text-align: left;">QuarantinedFiles</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of files that were quarantined as part of this detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">References</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">References associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ScanId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier for the scan that detected the threat.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Scenario</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Scenario associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SecondsToResolved</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Time in seconds from detection creation to resolution.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SecondsToTriaged</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Time in seconds from detection creation to triage.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Severity</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Severity level of the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SeverityName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the severity level associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sha1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SHA1 hash of the detected file.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sha256</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SHA256 hash of the detected file.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ShowInUi</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if the detection should be displayed in the user interface.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceAccountDomain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source account domain associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceAccountName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source account name associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceAccountObjectGuid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source account object GUID associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceAccountObjectSid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source account object SID associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceAccountSamAccountName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source account SAM account name associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceAccountUpn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source account UPN associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceEventModel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source event model associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Current status of the detection (e.g., new, in_progress, resolved).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tactic</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Tactic associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TacticId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID of the tactic associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TacticIds</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">IDs of the tactics associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tactics</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Tactics associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Technique</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Technique associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TechniqueId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID of the technique associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TechniqueIds</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">IDs of the techniques associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Techniques</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Techniques associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TemplateInstanceId</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Instance ID of the detection template used.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TemplateInterfaceId</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Interface ID of the detection template.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TemplateInterfaceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the detection template interface.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) when the detection was ingested.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TreeId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier for the process tree associated with the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TreeRoot</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Root process identifier of the process tree.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TriggeringProcessGraphId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Graph ID of the process that triggered the detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">UpdatedTimestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp when the detection was last updated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User ID associated with the detected process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Username associated with the detected process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserPrincipal</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User principal name (UPN) associated with the detected process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">XdrDetectionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">XDR detection ID associated with the detection.</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/crowdstrikeapiconnector.html">CrowdStrike API Data Connector (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

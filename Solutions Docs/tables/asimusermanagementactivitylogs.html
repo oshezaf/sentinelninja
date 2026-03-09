@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASimUserManagementActivityLogs &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>ASimUserManagementActivityLogs</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for ASimUserManagementActivityLogs table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Normalized</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimusermanagementactivitylogs">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Logs Ingestion API</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (114 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimusermanagementactivitylogs">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActingAppId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the application used by the actor to perform the activity, including a process, browser, or service.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActingAppName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the application used by the actor to perform the activity, including a process, browser, or service.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActingAppType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of acting application.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActingOriginalAppType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The acting application type as reported by the reporting device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorOriginalUserType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The original actor user type, if provided by the source.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorScope</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The scope, such as Azure AD tenant, in which ActorUserId and ActorUsername are defined.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorScopeId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The scope ID, such as Azure AD tenant ID, in which ActorUserId and ActorUsername are defined.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorSessionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique ID of the sign-in session of the Actor.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorUserAadId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Azure Active Directory ID of the actor.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorUserId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A machine-readable, alphanumeric, unique representation of the actor.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorUserIdType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the ID stored in the ActorUserId field.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorUsername</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Actor's username, including domain information when available.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorUsernameType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies the type of the user name stored in the ActorUsername field.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorUserSid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Windows user ID (SIDs) of the actor.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorUserType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the Actor.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AdditionalFields</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Additional information, represented using key/value pairs provided by the source which do not map to ASim.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcAction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">For reporting security systems, the action taken by the system.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A descriptive text associated with the device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcDomain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The domain of the device reporting the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcDomainType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of DvcDomain.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcFQDN</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The hostname of the device on which the event occurred or which reported the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcHostname</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The hostname of the device reporting the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique ID of the device on which the event occurred or which reported the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcIdType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of DvcId.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcInterface</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The network interface on which data was captured.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcIpAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP Address of the device reporting the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcMacAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The MAC address of the device on which the event occurred or which reported the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcOriginalAction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The original DvcAction as provided by the reporting device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcOs</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The operating system running on the device on which the event occurred or which reported the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcOsVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The version of the operating system on the device on which the event occurred or which reported the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcScope</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The cloud platform scope the device belongs to. DvcScope map to a subscription name on Azure and to an account ID on AWS.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcScopeId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The cloud platform scope ID the device belongs to. DvcScopeId map to a subscription ID on Azure and to an account ID on AWS.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcZone</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The network on which the event occurred or which reported the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The number of events described by the record.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventEndTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time in which the event ended. If the source supports aggregation and the record represents multiple events, the time when the last event was generated. If not provided by the source record, this field aliases the TimeGenerated field.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventMessage</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A general message or description.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventOriginalResultDetails</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The original result details provided by the source.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventOriginalSeverity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The original severity as provided by the reporting device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventOriginalSubType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The original event subtype or ID, if provided by the source.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventOriginalType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The original event type or ID, if provided by the source.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventOriginalUid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique ID of the original record, if provided by the source.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventOwner</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The owner of the event, which is usually the department or subsidiary in which it was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventProduct</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The product generating the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventProductVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The version of the product generating the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventReportUrl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A URL provided in the event for a resource that provides more information about the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventResult</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The outcome of the event, represented by one of the following values: Success, Partial, Failure, NA (Not Applicable). The value may not be provided directly by the sources, in which case it is derived from other event fields, for example, the EventResultDetails field.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventResultDetails</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Reason or details for the result reported in the EventResult field.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventSchema</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the schema</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventSchemaVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The version of the schema.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventSeverity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The severity of the event. Valid values are: Informational, Low, Medium, or High.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventStartTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time in which the event started. If the source supports aggregation and the record represents multiple events, the time when the first event was generated. If not provided by the source record, this field aliases the TimeGenerated field.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventSubType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Describes a subdivision of the operation reported in the EventType field.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Describes the operation reported by the record.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventVendor</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The vendor of the product generating the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">GroupId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A machine-readable, alphanumeric, unique representation of the group, for activities involving a group.</td>
+</tr>
+<tr>
+<td style="text-align: left;">GroupIdType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the ID stored in the GroupId field.</td>
+</tr>
+<tr>
+<td style="text-align: left;">GroupName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The group name, including domain information when available, for activities involving a group.</td>
+</tr>
+<tr>
+<td style="text-align: left;">GroupNameType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies the type of the group name stored in the GroupName field.</td>
+</tr>
+<tr>
+<td style="text-align: left;">GroupOriginalType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The original group type, if provided by the source.</td>
+</tr>
+<tr>
+<td style="text-align: left;">GroupType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the group, for activities involving a group.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpUserAgent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">When authentication is performed over HTTP or HTTPS, this field's value is the user_agent HTTP header provided by the acting application when performing the authentication.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NewPropertyValue</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The new value stored in the specified property.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PreviousPropertyValue</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The previous value that was stored in the specified property.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RuleName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name or ID of the rule by associated with the inspection results.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RuleNumber</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The number of the rule associated with the inspection results.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A descriptive text associated with the source device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDeviceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the source device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDomain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The domain of the source device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDomainType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of SrcDomain.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDvcId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the source device as reported in the record.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDvcIdType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of SrcDvcId.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDvcScope</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The cloud platform scope the source device belongs to. SrcDvcScope map to a subscription name on Azure and to an account ID on AWS.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDvcScopeId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The cloud platform scope ID the source device belongs to. SrcDvcScopeId map to a subscription ID on Azure and to an account ID on AWS.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcFQDN</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source device hostname, including domain information when available.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGeoCity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The city associated with the source IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGeoCountry</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The country associated with the source IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGeoLatitude</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The latitude of the geographical coordinate associated with the source IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGeoLongitude</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The longitude of the geographical coordinate associated with the source IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGeoRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The region within a country associated with the source IP address..</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcHostname</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source device hostname, excluding domain information.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcIpAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address of the source device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcMacAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The MAC address of the source device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcOriginalRiskLevel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The risk level associaeted with the identified Source as reported by the reporting device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcPortNumber</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The Source IP port from which the connection originated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcRiskLevel</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The risk level associated with the identified Source.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetOriginalUserType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The original destination user type, if provided by the source.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetUserId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A machine-readable, alphanumeric, unique representation of the target user.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetUserIdType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the ID stored in the TargetUserId field.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetUsername</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The target username, including domain information when available.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetUsernameType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies the type of the username stored in the TargetUsername field.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetUserScope</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The scope, such as Azure AD tenant name, in which TargetUserId and TargetUsername are defined.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetUserScopeId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The scope ID, such as Azure AD tenant ID, in which TargetUserId and TargetUsername are defined.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetUserSessionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique ID of the sign-in session of the user.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetUserType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of target user.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetUserUid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Unix or Linux user ID of the user.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatCategory</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The category of the threat or malware identified in activity.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatConfidence</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The confidence level of the threat identified, normalized to a value between 0 and a 100.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatField</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The field for which a threat was identified.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatFirstReportedTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The first time the IP address or domain were identified as a threat.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the threat or malware identified in the activity.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatIsActive</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">True ID the threat identified is considered an active threat.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatLastReportedTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The last time the IP address or domain were identified as a threat.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the threat or malware identified in the activity.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatOriginalConfidence</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The original confidence level of the threat identified, as reported by the reporting device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatOriginalRiskLevel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The risk level as reported by the reporting device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatRiskLevel</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The risk level associated with the identified threat. The level should be a number between 0 and 100.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) reflecting the time in which the event was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Parsers Using This Table (2)</h2>
+<h3>ASIM Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimusermanagementnative.html">ASimUserManagementNative</a></td>
+<td style="text-align: left;">UserManagement</td>
+<td style="text-align: left;">Native</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Other Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/crowdstrikereplicatorv2.html">CrowdStrikeReplicatorV2</a></td>
+<td style="text-align: left;"><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.securityinsights/asimtables</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

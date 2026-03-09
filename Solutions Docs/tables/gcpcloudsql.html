@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GCPCloudSQL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>GCPCloudSQL</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for GCPCloudSQL table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">GCP</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpcloudsql">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (116 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpcloudsql">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthInfoPrincipalEmail</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The principal email address initiating the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthInfoPrincipalSubject</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The subject associated with the principal.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthInfoServiceAccountKeyName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the service account key used for the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">GCPResourceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Full resource name of the Cloud SQL instance.</td>
+</tr>
+<tr>
+<td style="text-align: left;">GCPResourceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InsertId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the log entry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the log where the entry is recorded.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MetadataType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of metadata associated with the log entry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationFirst</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if this is the first log entry in an operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier of the associated operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationInsertTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp when the operation was inserted.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationLast</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if this is the last log entry in an operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationProducer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The service that produced the operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the payload in the log entry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReceiveTimestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp when the log was received.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodyBackup</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Backup configuration in the request body.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodyCloneContextDestinationInstanceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Destination instance name in clone context.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodyCommonName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Common name used for certificates.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodyDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Description of the instance or operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodyExportContext</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Export context details.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodyFailoverContext</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Context for failover configuration.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodyInstance</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Instance details in the request body.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodyKind</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The kind field in the request body.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodyLocation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Location setting in the request body.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodyNodeCount</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Number of nodes configured in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodyProject</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Project ID in the request body.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodyRestoreInstanceSettingsInstanceUid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">UID of the instance in restore settings.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodyRestoreInstanceSettingsName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Instance name in restore settings.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodyRestoreInstanceSettingsProject</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Project ID in restore settings.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodyRestoreInstanceSettingsRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Region in restore settings.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodyRotateServerCaContext</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Server CA rotation configuration context.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsActivationPolicy</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Activation policy for the instance.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsActiveDirectoryConfig</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Active Directory configuration settings.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsAvailabilityType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Availability type setting.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsBackupEnabled</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if backups are enabled.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsBackupLocation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Location for backups.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsBackupPointInTimeRecoveryEnabled</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Flag for point-in-time recovery.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsBackupStartTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Scheduled start time for backups.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsBinaryLogEnabled</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if binary logging is enabled.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsConnectionPoolConfig</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Connection pool configuration.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsdataCacheConfigDataCacheEnabled</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Flag for enabling data cache.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsDataDiskSizeGb</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Size of the data disk in GB.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsDataDiskType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of data disk used.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsDeletionProtectionEnabled</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if deletion protection is enabled.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsEdition</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Edition of the Cloud SQL instance.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsEnableGoogleMlIntegration</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Flag to enable Google ML integration.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsInsightsConfig</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Insights configuration settings.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsIPConfiguration</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">IP configuration settings.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsLocationPreference</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Location preference for the instance.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsMaintenanceWindow</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Maintenance window configuration.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsRetainBackupsOnDelete</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Flag to retain backups after deletion.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsRetentinedBackup</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Retention policy for backups.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsRetentionUnit</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unit of retention for backups.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsSqlServerAuditConfigRetentionInterval</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Audit retention interval for SQL Server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsSqlServerAuditConfigUploadInterval</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Audit upload interval for SQL Server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsStorageAutoResize</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if storage auto-resize is enabled.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsTier</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Service tier of the instance.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsTmeZone</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Time zone settings for the instance.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsTransactionLogRetentionDays</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Retention period for transaction logs.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsUserbackuplable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User backup label setting.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBodySettingsVersion</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Version information flag.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestDatabase</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Database name specified in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestEnableFinalBackup</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if final backup was enabled in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestEndTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp marking when the request processing completed</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestFilter</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Filter used in the request to narrow results.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestFinalBackupTtlDays</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Time to live (in days) for the final backup.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique ID of the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestInstance</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Instance identifier from the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMaxResults</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Maximum number of results requested.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMetadataCallerIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of the caller.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMetadataRequestAttributesAuth</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Authentication attributes of the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMetadataRequestAttributesDestinationAttributes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Destination attributes for the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMetadataRequestAttributesRequestReason</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Reason for the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMetadataRequestAttributesRequestTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp when the request was made.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name field from the request payload.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestOperation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The operation type included in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestPageSize</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Page size specified in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestParent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The parent resource under which the request is made.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestProject</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Project associated with the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID of the resource being requested.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestSha1Fingerprint</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SHA-1 fingerprint associated with the certificate.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestStartTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Start time specified in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsDatabaseId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Database identifier from resource labels.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsProjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Project ID from resource labels.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Region from resource labels.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseBackupContextBackupId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Backup ID from the response's backup context.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseBackupContextKind</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Kind of backup context returned.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseBackupContextName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name in the backup context of the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseClientCert</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Client certificate in the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseEphemeralCertKind</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Kind of ephemeral certificate in the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseInstanceUid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Instance UID returned in the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseKind</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Kind field of the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name included in the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseOperation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates the type of operation performed in the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseOperationType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Operation type in the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponsePromoteContextPrimary</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Primary instance in the promote context.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponsePromoteContextReplica</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Replica instance in the promote context.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseSelfLink</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Self-link URL of the response resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseServerCaCert</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">PEM-encoded CA certificate from the server used for TLS validation</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Status of the response operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseTargetId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Target ID in the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseTargetLink</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Target link URL in the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseTargetProject</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Project associated with the response target.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseUser</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User information from the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServiceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the GCP service handling the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Severity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Severity level of the log entry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">StatusCode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Status code returned by the operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">StatusMessage</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Message describing the status of the operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Time when the log entry was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp of the logged event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/googlecloudplatformsql.html">GoogleCloudPlatformSQL</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/gcpcloudsqlccfdefinition.html">GCP Cloud SQL (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

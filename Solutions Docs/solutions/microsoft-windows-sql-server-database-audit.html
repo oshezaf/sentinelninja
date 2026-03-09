@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microsoft Windows SQL Server Database Audit &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Microsoft Windows SQL Server Database Audit</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Microsoft Windows SQL Server Database Audit Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Community</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Community</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/issues">https://github.com/Azure/Azure-Sentinel/issues</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Community</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-11-29</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Windows%20SQL%20Server%20Database%20Audit">Microsoft Windows SQL Server Database Audit</a></td>
+</tr>
+</tbody>
+</table>
+<p>The Microsoft Windows SQL Server Database Audit solution for Microsoft Sentinel enables security monitoring scenarios using Windows events. The contents of the solution allow hunting for unauthorized access and other abnormalities with SQL database identities.</p>
+<h2>Data Connectors</h2>
+<p><strong>This solution does not include data connectors.</strong></p>
+<p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
+<h2>Content Items</h2>
+<p>This solution includes <strong>9 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">9</td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-windows-sql-server-database-audit-failed-logon-attempts-on-sql-server-d98256d5-0c9a-4ffc-8618-66a3404412f8-90519277.html">Failed Logon Attempts on SQL Server</a></td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-windows-sql-server-database-audit-failed-logon-on-sql-server-from-same-ipaddress-in-short-time-72727649-6445-46a3-b249-997a009fad89-ce597c3a.html">Failed Logon on SQL Server from Same IPAddress in Short time Span</a></td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-windows-sql-server-database-audit-multiple-failed-logon-on-sql-server-in-short-time-span-aef212b5-c770-42e1-9abf-bc513e4e749c-a2c0eaef.html">Multiple Failed Logon on SQL Server in Short time Span</a></td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-windows-sql-server-database-audit-new-user-created-on-sql-server-2b96760d-5307-44f0-94bd-8cf0ec52b1fb-13fde863.html">New User created on SQL Server</a></td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-windows-sql-server-database-audit-sql-user-deleted-from-database-7b8fa5f5-4f5b-4698-a4cf-720bbb215bea-6594ba88.html">SQL User deleted from Database</a></td>
+<td style="text-align: left;">Persistence, PrivilegeEscalation, Impact</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-windows-sql-server-database-audit-user-role-altered-on-sql-server-80a420b3-6a97-4b8f-9d86-4b43ee522fb2-d518c316.html">User Role altered on SQL Server</a></td>
+<td style="text-align: left;">Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-windows-sql-server-database-audit-user-added-to-sql-server-securityadmin-group-363ea6d1-b30d-4a44-b56a-63c3c8a99621-fa24c328.html">User added to SQL Server SecurityAdmin Group</a></td>
+<td style="text-align: left;">Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-windows-sql-server-database-audit-user-removed-from-sql-server-roles-5dd79877-8066-4ce4-ae03-eedd8ebf04f8-c113ae47.html">User removed from SQL Server Roles</a></td>
+<td style="text-align: left;">Persistence, PrivilegeEscalation, Impact</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-windows-sql-server-database-audit-user-removed-from-sql-server-securityadmin-group-f35b879c-c836-4502-94f2-c76b7f06f02d-1bad26c1.html">User removed from SQL Server SecurityAdmin Group</a></td>
+<td style="text-align: left;">Persistence, PrivilegeEscalation, Impact</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.1</td>
+<td>18-03-2024</td>
+<td>Change in <strong>Hunting Queries</strong> description</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>10-07-2023</td>
+<td>Updated <strong>Parser</strong> to correctly parse failed login events</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Added Entity mapping and version in all the <strong>Hunting Queries</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DeviceProcessEvents &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>DeviceProcessEvents</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Process creation and related events</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">MDE</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceprocessevents">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceprocessevents-table">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (74 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceprocessevents">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccountDomain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Domain of the account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccountName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User name of the account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccountObjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the account in Azure AD.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccountSid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Security Identifier (SID) of the account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccountUpn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User principal name (UPN) of the account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of activity that triggered the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AdditionalFields</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Additional information about the entity or event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AppGuardContainerId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier for the virtualized container used by Application Guard to isolate browser activity.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CreatedProcessSessionId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Windows session ID of the created process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the device in the service.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Fully qualified domain name (FQDN) of the device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the file that the recorded action was applied to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileSize</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Size of the file in bytes.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FolderPath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Folder containing the file that the recorded action was applied to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessAccountDomain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Domain of the account that ran the process responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessAccountName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User name of the account that ran the process responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessAccountObjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Azure AD object ID of the user account that ran the process responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessAccountSid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Security Identifier (SID) of the account that ran the process responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessAccountUpn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User principal name (UPN) of the account that ran the process responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessCommandLine</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Command line used to run the process that initiated the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessCreationTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the process that initiated the event was started.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessFileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the process that initiated the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessFileSize</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The size of the file (bytes) that ran the process responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessFolderPath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Folder containing the process (image file) that initiated the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Process ID (PID) of the process that initiated the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessIntegrityLevel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources..</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessLogonId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Identifier for a logon session of the process that initiated the event. This identifier is unique on the same machine only between restarts..</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessMD5</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">MD5 hash of the process (image file) that initiated the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessParentCreationTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the parent of the process responsible for the event was started.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessParentFileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the parent process that spawned the process responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessParentId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Process ID (PID) of the parent process that spawned the process responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessRemoteSessionDeviceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Device name of the remote device from which the initiating process's RDP session was initiated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessRemoteSessionIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of the remote device from which the initiating process's RDP session was initiated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessSessionId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Windows session ID of the initiating process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessSHA1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SHA-1 hash of the process (image file) that initiated the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessSHA256</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SHA-256 hash of the process (image file) that initiated the event. In some cases this column may not be populated - please use the InitiatingProcessSHA1 column instead.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessSignatureStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Information about the signature status of the process (image file) that initiated the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessSignerType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of file signer of the process (image file) that initiated the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessTokenElevation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the process that initiated the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessUniqueId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the initiating process; this is equal to the Process Start Key in Windows devices.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessVersionInfoCompanyName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The company name in version information (image file) responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessVersionInfoFileDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The description in version information (image file) responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessVersionInfoInternalFileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The internal file name in version information (image file) responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessVersionInfoOriginalFileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The original file name in version information (image file) responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessVersionInfoProductName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The product name in version information (image file) responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessVersionInfoProductVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The product version in version information (image file) responsible for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsInitiatingProcessRemoteSession</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the initiating process was run under a remote desktop protocol (RDP) session (true) or locally (false).</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsProcessRemoteSession</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the created process was run under a remote desktop protocol (RDP) session (true) or locally (false).</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogonId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Identifier for a logon session. This identifier is unique on the same machine only between restarts.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MachineGroup</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Machine group of the machine. This group is used by role-based access control to determine access to the machine.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MD5</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">MD5 hash of the file that the recorded action was applied to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessCommandLine</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Command line used to create the new process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessCreationTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time the process was created.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Process ID (PID) of the newly created process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessIntegrityLevel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Integrity level of the newly created process. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet downloaded. These integrity levels influence permissions to resources..</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessRemoteSessionDeviceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Device name of the remote device from which the created process's RDP session was initiated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessRemoteSessionIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of the remote device from which the created process's RDP session was initiated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessTokenElevation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the newly created process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessUniqueId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the process; this is equal to the Process Start Key in Windows devices.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessVersionInfoCompanyName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Company name from the version information of the newly created process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessVersionInfoFileDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Description from the version information of the newly created process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessVersionInfoInternalFileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Internal file name from the version information of the newly created process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessVersionInfoOriginalFileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Original file name from the version information of the newly created process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessVersionInfoProductName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Product name from the version information of the newly created process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessVersionInfoProductVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Product version from the version information of the newly created process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReportId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns..</td>
+</tr>
+<tr>
+<td style="text-align: left;">SHA1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SHA-1 hash of the file that the recorded action was applied to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SHA256</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SHA-256 of the file that the recorded action was applied to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time the event was recorded by the MDE agent on the endpoint.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (12)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/attacker-tools-threat-protection-essentials.html">Attacker Tools Threat Protection Essentials</a></li>
+<li><a href="../solutions/cyware.html">Cyware</a></li>
+<li><a href="../solutions/dev-0270-detection-and-hunting.html">Dev 0270 Detection and Hunting</a></li>
+<li><a href="../solutions/endpoint-threat-protection-essentials.html">Endpoint Threat Protection Essentials</a></li>
+<li><a href="../solutions/falconfriday.html">FalconFriday</a></li>
+<li><a href="../solutions/hipaa-compliance.html">HIPAA Compliance</a></li>
+<li><a href="../solutions/legacy-ioc-based-threat-protection.html">Legacy IOC based Threat Protection</a></li>
+<li><a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a></li>
+<li><a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a></li>
+<li><a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a></li>
+<li><a href="../solutions/microsoftdefenderforendpoint.html">MicrosoftDefenderForEndpoint</a></li>
+<li><a href="../solutions/zinc-open-source.html">Zinc Open Source</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/microsoftthreatprotection.html">Microsoft Defender XDR</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Content Items Using This Table (97)</h2>
+<h3>Analytic Rules (41)</h3>
+<p><strong>In solution <a href="../solutions/attacker-tools-threat-protection-essentials.html">Attacker Tools Threat Protection Essentials</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/attacker-tools-threat-protection-essentials-probable-adfind-recon-tool-usage-c63ae777-d5e0-4113-8c9a-c2c9d3d09fcd-3713de66.html">Probable AdFind Recon Tool Usage</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/dev-0270-detection-and-hunting.html">Dev 0270 Detection and Hunting</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/dev-0270-detection-and-hunting-dev-0270-new-user-creation-7965f0be-c039-4d18-8ee8-9a6add8aecf3-884bf05d.html">DEV-0270 New User Creation</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/dev-0270-detection-and-hunting-dev-0270-malicious-powershell-usage-422ca2bf-598b-4872-82bb-5f7e8fa731e7-02bc41bc.html">Dev-0270 Malicious Powershell usage</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/dev-0270-detection-and-hunting-dev-0270-registry-ioc-september-2022-2566e99f-ad0f-472a-b9ac-d3899c9283e6-d97be37a.html">Dev-0270 Registry IOC - September 2022</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/dev-0270-detection-and-hunting-dev-0270-wmic-discovery-6b652b4f-9810-4eec-9027-7aa88ce4db23-8289b5fe.html">Dev-0270 WMIC  Discovery</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/falconfriday.html">FalconFriday</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-access-token-manipulation-create-process-with-token-8df80270-b4fa-4a7a-931e-8d17c0b321ae-d1e3f3fd.html">Access Token Manipulation - Create Process with Token</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-dcom-lateral-movement-d58035ff-0bac-4c61-a7f4-f58939ff9764-9dd841b7.html">DCOM Lateral Movement</a></td>
+<td style="text-align: left;"><code>ActionType != "ListeningConnectionCreated"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-detecting-uac-bypass-changepk-and-slui-registry-tampering-829a69ba-93e1-491f-8a1f-b19506e9d88a-8d651a60.html">Detecting UAC bypass - ChangePK and SLUI registry tampering</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-detecting-uac-bypass-elevated-com-interface-2d5efc71-2e91-4ca2-8506-857eecb453ec-e0911a66.html">Detecting UAC bypass - elevated COM interface</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-detecting-uac-bypass-modify-windows-store-settings-8b8fbf9c-35d4-474b-8151-a40173521293-03123f75.html">Detecting UAC bypass - modify Windows Store settings</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-disable-or-modify-windows-defender-20d52a04-b5d8-402d-88e2-7929d12cbdcd-3b3084de.html">Disable or Modify Windows Defender</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-ingress-tool-transfer-certutil-f0be11a9-ec48-4df6-801d-479556044d4e-e41d03ca.html">Ingress Tool Transfer - Certutil</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-match-legitimate-name-or-location-2-dd22dc4f-ab7c-4d0a-84ad-cc393638ba31-6d4321f9.html">Match Legitimate Name or Location - 2</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-oracle-suspicious-command-execution-e6c5ff42-0f42-4cec-994a-dabb92fe36e1-0ab82658.html">Oracle suspicious command execution</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-remote-desktop-protocol-sharprdp-cc46e76c-0d04-40b0-9c8b-929aa40513e7-7ea028f9.html">Remote Desktop Protocol - SharpRDP</a></td>
+<td style="text-align: left;"><code>ActionType == "LogonSuccess"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-rename-system-utilities-335ddff8-b615-42cd-b593-86e419b45d78-753d3370.html">Rename System Utilities</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-smb-windows-admin-shares-9da25366-2c77-41a5-a159-0da5e2f5fb90-2e2330d9.html">SMB/Windows Admin Shares</a></td>
+<td style="text-align: left;"><code>ActionType == "InboundConnectionAccepted"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-suspicious-parentprocess-relationship-office-child-processes.-5ee34fa1-64ed-48c7-afa2-794b244f6c60-081c16fa.html">Suspicious parentprocess relationship - Office child processes.</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/falconfriday-trusted-developer-utilities-proxy-execution-5c2bb446-926f-4160-a233-21e335c2c290-aac01cd9.html">Trusted Developer Utilities Proxy Execution</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-account-creation-450f4e56-5bba-4070-b9d9-9204ba9d777d-b3cc4be4.html">Account Creation</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-bitsadmin-activity-2a1dc4c2-a8d6-4a0e-8539-9b971c851195-44faa570.html">Bitsadmin Activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-clearing-of-forensic-evidence-from-event-logs-using-wevtutil-515d0bba-b297-4f83-8280-20ff7f27ecb1-b91bc0f3.html">Clearing of forensic evidence from event logs using wevtutil</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-deletion-of-data-on-multiple-drives-using-cipher-exe-03caa992-477f-4b19-8e2a-8cd58f8f9652-a1302600.html">Deletion of data on multiple drives using cipher exe</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-detect-suspicious-commands-initiated-by-webserver-processes-fa2f7d8a-6726-465a-aa72-6f6e3d4c99d7-6071b885.html">Detect Suspicious Commands Initiated by Webserver Processes</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-disabling-security-services-via-registry-32b29155-3fd3-4a9e-a0ca-a67e2593b60b-e9f38271.html">Disabling Security Services via Registry</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-doppelpaymer-stop-services-5bdc1504-880c-4b30-a39c-7c746535928d-6df3ea36.html">Doppelpaymer Stop Services</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-dopplepaymer-procdump-1be34fb9-f81b-47ae-84fb-465e6686d76c-cc25e831.html">DopplePaymer Procdump</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-execution-of-software-vulnerable-to-webp-buffer-overflow-of-cve-2023-4863-26e81021-2de6-4442-a74a-a77885e96911-15de3ea9.html">Execution of software vulnerable to webp buffer overflow of CVE-2023-4863</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-java-executing-cmd-to-run-powershell-2c81c0a0-9823-4a14-b21a-2b4acd3335d2-106ea66a.html">Java Executing cmd to run Powershell</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-lsass-credential-dumping-with-procdump-c332b840-61e4-462e-a201-0e2d69bad45d-36f7eb44.html">LSASS Credential Dumping with Procdump</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-lazagne-credential-theft-7d0d3050-8dac-4b83-bfae-902f7dc0c21c-2a344765.html">LaZagne Credential Theft</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-office-apps-launching-wscipt-174de33b-107b-4cd8-a85d-b4025a35453f-49a22465.html">Office Apps Launching Wscipt</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-potential-build-process-compromise-mde-1bf6e165-5e32-420e-ab4f-0da8558a8be2-c676927e.html">Potential Build Process Compromise - MDE</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-qakbot-campaign-self-deletion-47c02e21-3949-4e05-a28e-576cd75ff6f6-a7a7167c.html">Qakbot Campaign Self Deletion</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-qakbot-discovery-activies-ba9db6b2-3d05-42ae-8aee-3a15bbe29f27-5676e3c6.html">Qakbot Discovery Activies</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-rare-process-as-a-service-91a451e3-178f-41b2-9e5d-da97d75b9971-365d2f3a.html">Rare Process as a Service</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-regsvr32-rundll32-with-anomalous-parent-process-2624fc55-0998-4897-bb48-1c6422befce4-d1e3cdd5.html">Regsvr32 Rundll32 with Anomalous Parent Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-shadow-copy-deletions-28c63a44-2d35-48b7-831b-3ed24af17c7e-dcc95706.html">Shadow Copy Deletions</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-stopping-multiple-processes-using-taskkill-4dd31bd5-11a3-4b9c-a7c5-4927ab4f2a77-6e396de6.html">Stopping multiple processes using taskkill</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/zinc-open-source.html">Zinc Open Source</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/zinc-open-source-zinc-actor-iocs-files-october-2022-9a7f6651-801b-491c-a548-8b454b356eaa-72407d32.html">Zinc Actor IOCs files - October 2022</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.html">[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries (52)</h3>
+<p><strong>In solution <a href="../solutions/cyware.html">Cyware</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/cyware-detecting-suspicious-powershell-command-executions-47559078-dc4c-4de3-96fe-270d4ca95446-741c48d3.html">Detecting Suspicious PowerShell Command Executions</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/endpoint-threat-protection-essentials.html">Endpoint Threat Protection Essentials</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/endpoint-threat-protection-essentials-backup-deletion-56ebae61-89cf-42d9-99f4-3dff8ba33885-e1c87558.html">Backup Deletion</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/endpoint-threat-protection-essentials-potential-microsoft-security-services-tampering-e10e1d2f-265d-4d90-9037-7f3a6ed8a91e-8c1dc76e.html">Potential Microsoft Security Services Tampering</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/endpoint-threat-protection-essentials-rare-windows-firewall-rule-updates-using-netsh-e3e8c913-e5e9-4517-b4f7-dd1ec071888f-d0fef21e.html">Rare Windows Firewall Rule updates using Netsh</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/endpoint-threat-protection-essentials-unicode-obfuscation-in-command-line-a953f304-12e4-48ae-bedc-d58fb1b0c6a6-25c755ef.html">Unicode Obfuscation in Command Line</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/legacy-ioc-based-threat-protection.html">Legacy IOC based Threat Protection</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/legacy-ioc-based-threat-protection-dev-0056-command-line-activity-november-2021-e2629949-2043-4421-8064-bca23c8491dd-1cdb73c2.html">Dev-0056 Command Line Activity November 2021</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/legacy-ioc-based-threat-protection-dev-0322-command-line-activity-november-2021-78fa22f9-0c13-4847-bbe6-6a7aa1b47547-84856956.html">Dev-0322 Command Line Activity November 2021</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/legacy-ioc-based-threat-protection-dev-0322-file-drop-activity-november-2021-5bf2d4d8-ea03-4673-aaf8-716a61446022-414e8f6c.html">Dev-0322 File Drop Activity November 2021</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/legacy-ioc-based-threat-protection-nylon-typhoon-command-line-activity-november-2021-bb30abbc-9af6-4a37-9536-e9207e023989-bdd1efea.html">Nylon Typhoon Command Line Activity November 2021</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/legacy-ioc-based-threat-protection-solarwinds-inventory-278592b5-612b-48a4-bb38-4c01ff8ee2a5-c7f23741.html">SolarWinds Inventory</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-account-creation-d0585c34-1b03-473c-938d-11fe73f7e053-4486ca7f.html">Account Creation</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-anomalous-payload-delivered-from-iso-files-14694b88-a6e9-4cd1-9c4a-e382bdd82d8d-9bc45897.html">Anomalous Payload Delivered from ISO files</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-bitsadmin-activity-bba7bbbe-5aa3-4c08-bd23-dd6cd8ccaf20-7a642ef6.html">Bitsadmin Activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-check-for-multiple-signs-of-ransomware-activity-4f669adc-2c00-4bc8-896b-e59f068dcb18-164f406c.html">Check for multiple signs of Ransomware Activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-clear-system-logs-6284b962-ab0d-46d8-a47f-1eb1ac1be463-c8af8f2d.html">Clear System Logs</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-clearing-of-forensic-evidence-from-event-logs-using-wevtutil-3dd9ab09-0ea3-4f47-ba10-f84045ab52c3-f7cf440c.html">Clearing of forensic evidence from event logs using wevtutil</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-credential-harvesting-using-lazagne-79f9bb6b-6d31-412e-b3bc-6e5ad1303112-a9fbb57d.html">Credential Harvesting Using LaZagne</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-dllhost.exe-wmic-domain-discovery-f086d58b-c44b-4fae-903b-f65ad042a4ee-83b2c14e.html">DLLHost.exe WMIC domain discovery</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-deletion-of-data-on-multiple-drives-using-cipher-exe-cb2fb8f9-89bd-485e-8422-da8cb6c7bc23-f8c40db4.html">Deletion of data on multiple drives using cipher exe</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-detect-maisniper-e17ddfc6-7478-443b-99ff-286f3d09b8aa-ab6dfb83.html">Detect MaiSniper</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-detect-malicious-use-of-msiexec-mimikatz-58e6170e-0512-4485-9638-463fdde85b0e-0de34535.html">Detect Malicious use of Msiexec Mimikatz</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-detect-suspicious-commands-initiated-by-webserver-processes-fa2f7d8a-6726-465a-aa72-6f6e3d4c99d7-f6d9e7c9.html">Detect Suspicious Commands Initiated by Webserver Processes</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-detect-suspicious-mshta-usage-81f02314-2ff5-45cb-a35d-0deb546a0104-6bc93255.html">Detect Suspicious Mshta Usage</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-disabling-services-via-registry-06ea5081-cdea-40c8-b829-240ece951243-b119d09b.html">Disabling Services via Registry</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-doppelpaymer-stop-services-abf42310-51c7-4d7f-98d2-e5af09859aab-837c2062.html">Doppelpaymer Stop Services</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-dopplepaymer-procdump-89b31213-4350-4730-8d27-26667ce53894-14013cca.html">DopplePaymer Procdump</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-enumeration-of-users-&amp;-groups-for-lateral-movement-29683151-e15d-4c0c-845b-892be89bf080-776e21b6.html">Enumeration of Users &amp; Groups for Lateral Movement</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-imminent-ransomware-846bf25e-3d2d-4122-9b60-adfadd2fc616-8ac809d0.html">Imminent Ransomware</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-java-executing-cmd-to-run-powershell-a18e8bcf-e05d-4e45-bc6e-2c5004729fbd-5f3d8e5c.html">Java Executing cmd to run Powershell</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-judgement-panda-exfil-activity-d7b7dcad-d806-4a61-b8fc-0d7c9c45bdec-328fcbc7.html">Judgement Panda Exfil Activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-lazagne-credential-theft-829cf5ba-39d5-4986-814e-d46f8437c27b-582ee4d3.html">LaZagne Credential Theft</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-mitre-suspicious-events-8722489a-d6f1-4b66-98e9-e3dfda902019-d9aac0e5.html">MITRE - Suspicious Events</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-malicious-use-of-msbuild-as-lolbin-1850a459-b009-43d0-a575-8284b737eef8-536fff50.html">Malicious Use of MSBuild as LOLBin</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-office-apps-launching-wscipt-fe912310-32f5-4256-933b-d4b45e7e6e54-b7198749.html">Office Apps Launching Wscipt</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-possible-teams-phishing-activity-01cf63bd-debd-4d03-847c-d19c31844501-3b0f03e4.html">Possible Teams phishing activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-powershell-downloads-3842e70d-45be-43b1-8206-4ebc4c305f34-740af97e.html">PowerShell Downloads</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-powershell-adding-exclusion-path-for-microsoft-defender-of-programdata-88707168-d4a4-4ca7-a516-b2ee0310af1b-015fc198.html">PowerShell adding exclusion path for Microsoft Defender of ProgramData</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-qakbot-campaign-self-deletion-63ecff0f-3a86-468b-8c9e-a7a88fe33ebb-060f18ee.html">Qakbot Campaign Self Deletion</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-qakbot-discovery-activies-e18109aa-f252-48ec-b115-1b7c16e1174f-741aed07.html">Qakbot Discovery Activies</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-qakbot-reconnaissance-activities-d6991ef1-b225-4780-b6a6-cfe9b5278f5e-9d2f618d.html">Qakbot Reconnaissance Activities</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-rare-process-as-a-service-96976bb1-1993-45b8-a477-8236ee93976b-cf1c1157.html">Rare Process as a Service</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-regsvr32-rundll32-with-anomalous-parent-process-54ea2379-28e7-48e1-8dfd-aaf8fb1331ba-f2e2f8cf.html">Regsvr32 Rundll32 with Anomalous Parent Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-shadow-copy-deletions-aa3a8508-c0ff-404d-8d5c-4e7f548b0d86-2314d5da.html">Shadow Copy Deletions</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-spoolsv-spawning-rundll32-3cc2127f-d9ca-46a0-9628-89f702be82b3-a70aa85d.html">Spoolsv Spawning Rundll32</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-stopping-multiple-processes-using-taskkill-4dd31bd5-11a3-4b9c-a7c5-4927ab4f2a77-452d3cd2.html">Stopping multiple processes using taskkill</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-suspicious-tomcat-confluence-process-launch-c5b3e559-7c44-442c-9e73-c753abb02c13-64887431.html">Suspicious Tomcat Confluence Process Launch</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-turning-off-services-using-sc-exe-9674f529-f0e9-4305-862d-479ccc9e28f1-0bc91883.html">Turning off services using sc exe</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-webserver-executing-suspicious-applications-761230a3-71ad-4522-bfbc-1dca698ffc42-109b5a61.html">Webserver Executing Suspicious Applications</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoftdefenderforendpoint.html">MicrosoftDefenderForEndpoint</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoftdefenderforendpoint-probable-adfind-recon-tool-usage-c63ae777-d5e0-4113-8c9a-c2c9d3d09fcd-d6063f03.html">Probable AdFind Recon Tool Usage</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Standalone Content:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoftdefenderforendpoint-sunburst-suspicious-solarwinds-child-processes-4a3073ac-7383-48a9-90a8-eb6716183a54-27b732fb.html">SUNBURST suspicious SolarWinds child processes</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-detect-malicious-use-of-msiexec-7a5597de-7e99-470d-944f-acb163b9cb14-a76d8af7.html">Detect Malicious use of MSIExec</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-lsass-credential-dumping-with-procdump-0b985ed8-aacd-41ba-9b17-489be9224159-bfd6b1c4.html">LSASS Credential Dumping with Procdump</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks (4)</h3>
+<p><strong>In solution <a href="../solutions/hipaa-compliance.html">HIPAA Compliance</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/hipaa-compliance-hipaacompliance-3850f8c8.html">HIPAACompliance</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.html">Lumen-Threat-Feed-Overview</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.html">MicrosoftDefenderForEndPoint</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Parsers Using This Table (1)</h2>
+<h3>ASIM Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimprocesseventmicrosoft365d.html">ASimProcessEventMicrosoft365D</a></td>
+<td style="text-align: left;">ProcessEvent</td>
+<td style="text-align: left;">Microsoft 365 Defender for endpoint</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Selection Criteria Summary (3 criteria, 3 total references)</h2>
+<p>References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>ActionType != "ListeningConnectionCreated"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType == "LogonSuccess"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType == "InboundConnectionAccepted"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>ActionType</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>!= ListeningConnectionCreated</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>LogonSuccess</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>InboundConnectionAccepted</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>W3CIISLog &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>W3CIISLog</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for W3CIISLog table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">IT &amp; Management Tools, Virtual Machines</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/w3ciislog">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (44 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/w3ciislog">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureDeploymentID</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Azure deployment ID of the cloud service the log belongs to. Only populated when events are collected using Azure Diagnostics agent when data is pulled from Azure storage.</td>
+</tr>
+<tr>
+<td style="text-align: left;">cIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of the client that accessed the web server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Computer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the computer that the event was collected from.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Confidence</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Only populated for IIS logs collected from Azure Cloud Services through Azure Diagnostics Extension.</td>
+</tr>
+<tr>
+<td style="text-align: left;">csBytes</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Number of bytes that the server received.</td>
+</tr>
+<tr>
+<td style="text-align: left;">csCookie</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Content of the cookie sent or received if any.</td>
+</tr>
+<tr>
+<td style="text-align: left;">csHost</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Host header name if any.</td>
+</tr>
+<tr>
+<td style="text-align: left;">csMethod</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Method of the request such as GET or POST.</td>
+</tr>
+<tr>
+<td style="text-align: left;">csReferer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Site that the user last visited. This site provided a link to the current site.</td>
+</tr>
+<tr>
+<td style="text-align: left;">csUriQuery</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The query if any that the client was trying to perform. A Universal Resource Identifier (URI) query is necessary only for dynamic pages.</td>
+</tr>
+<tr>
+<td style="text-align: left;">csUriStem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Target of the action such as a web page for example Default.htm.</td>
+</tr>
+<tr>
+<td style="text-align: left;">csUserAgent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Browser type of the client.</td>
+</tr>
+<tr>
+<td style="text-align: left;">csUserName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the authenticated user that accessed the server. Anonymous users are indicated by a hyphen.</td>
+</tr>
+<tr>
+<td style="text-align: left;">csVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Protocol version that the client used.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Description</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension).</td>
+</tr>
+<tr>
+<td style="text-align: left;">FirstReportedDateTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension).</td>
+</tr>
+<tr>
+<td style="text-align: left;">IndicatorThreatType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension).</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsActive</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension).</td>
+</tr>
+<tr>
+<td style="text-align: left;">LastReportedDateTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension).</td>
+</tr>
+<tr>
+<td style="text-align: left;">MaliciousIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension).</td>
+</tr>
+<tr>
+<td style="text-align: left;">ManagementGroupName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the management group for Operations Manager agents. For other agents this is AOI-<workspace ID>.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteIPCountry</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Country/region of the IP address of the client.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteIPLatitude</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Latitude of the client IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteIPLongitude</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Longitude of the client IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Role</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Role instance of the cloud service the log belongs to. Only populated when events are collected using Azure Diagnostics agent and data is pulled from Azure storage.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RoleInstance</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Role of the cloud service the log belongs to. Only populated when events are collected using Azure Diagnostics agent and data is pulled from Azure storage.</td>
+</tr>
+<tr>
+<td style="text-align: left;">scBytes</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Number of bytes that the server sent.</td>
+</tr>
+<tr>
+<td style="text-align: left;">scStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">HTTP status code.</td>
+</tr>
+<tr>
+<td style="text-align: left;">scSubStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Substatus error code.</td>
+</tr>
+<tr>
+<td style="text-align: left;">scWin32Status</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Windows status code.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Severity</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Only populated for IIS logs collected from Azure Cloud Services through Azure Diagnostics Extension.</td>
+</tr>
+<tr>
+<td style="text-align: left;">sIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of the server on which the log file entry was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">sPort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Server port number that is configured for the service.</td>
+</tr>
+<tr>
+<td style="text-align: left;">sSiteName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the IIS site.</td>
+</tr>
+<tr>
+<td style="text-align: left;">StorageAccount</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Only populated for IIS logs collected from Azure Cloud Services through Azure Diagnostics Extension.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time the record was created.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeTaken</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Length of time to process the request in milliseconds.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TLPLevel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Only populated for IIS logs collected from Azure Cloud Services through Azure Diagnostics Extension.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (8)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a></li>
+<li><a href="../solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></li>
+<li><a href="../solutions/network-threat-protection-essentials.html">Network Threat Protection Essentials</a></li>
+<li><a href="../solutions/soc-handbook.html">SOC Handbook</a></li>
+<li><a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></li>
+<li><a href="../solutions/threat-intelligence.html">Threat Intelligence</a></li>
+<li><a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></li>
+<li><a href="../solutions/web-shells-threat-protection.html">Web Shells Threat Protection</a></li>
+</ul>
+<h2>Connectors (2)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/esi-exchangeadminauditlogevents.html">[Deprecated] Microsoft Exchange Logs and Events</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/esi-opt5exchangeiislogs.html">IIS Logs of Microsoft Exchange Servers</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Content Items Using This Table (14)</h2>
+<h3>Analytic Rules (7)</h3>
+<p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990-c6cdb809.html">Log4j vulnerability exploit aka Log4Shell IP IOC</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/apache-log4j-vulnerability-detection-user-agent-search-for-log4j-exploitation-attempt-29283b22-a1c0-4d16-b0a9-3460b655a46a-d67cde36.html">User agent search for log4j exploitation attempt</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/network-threat-protection-essentials.html">Network Threat Protection Essentials</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/network-threat-protection-essentials-new-useragent-observed-in-last-24-hours-b725d62c-eb77-42ff-96f6-bdc6745fc6e0-a94f1913.html">New UserAgent observed in last 24 hours</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/threat-intelligence.html">Threat Intelligence</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-ti-map-ip-entity-to-w3ciislog-5e45930c-09b1-4430-b2d1-cc75ada0dc0f-b8687c20.html">TI Map IP Entity to W3CIISLog</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-ip-entity-to-w3ciislog-888c4736-e604-48eb-b2c7-3462356d9510-ad1df7ff.html">TI Map IP Entity to W3CIISLog</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/web-shells-threat-protection.html">Web Shells Threat Protection</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/web-shells-threat-protection-malicious-web-application-requests-linked-with-microsoft-defender-for-endpo-fbfbf530-506b-49a4-81ad-4030885a195c-8a9494a2.html">Malicious web application requests linked with Microsoft Defender for Endpoint (formerly Microsoft Defender ATP) alerts</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/web-shells-threat-protection-supernova-webshell-2acc91c3-17c2-4388-938e-4eac2d5894e8-79d870d5.html">SUPERNOVA webshell</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries (3)</h3>
+<p><strong>In solution <a href="../solutions/network-threat-protection-essentials.html">Network Threat Protection Essentials</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/network-threat-protection-essentials-exploit-and-pentest-framework-user-agent-df75ac6c-7b0b-40d2-82e4-191c012f1a07-77056d12.html">Exploit and Pentest Framework User Agent</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/web-shells-threat-protection.html">Web Shells Threat Protection</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/web-shells-threat-protection-web-shell-activity-e0c947c3-fe83-46ff-bbda-a43224a785fd-524bd9eb.html">Web Shell Activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/web-shells-threat-protection-webshell-detection-cc087e7c-4db0-4bf9-9e48-287a9c9c3fbc-b4d60786.html">Webshell Detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks (4)</h3>
+<p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/apache-log4j-vulnerability-detection-log4jpostcompromisehunting-8811d292.html">Log4jPostCompromiseHunting</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-admin-activity-dd1fad82.html">Microsoft Exchange Admin Activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/soc-handbook.html">SOC Handbook</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-handbook-securitystatus-93651545.html">SecurityStatus</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/team-cymru-scout-teamcymruscout-b64c6ed4.html">TeamCymruScout</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Parsers Using This Table (1)</h2>
+<h3>ASIM Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimwebsessioniis.html">ASimWebSessionIIS</a></td>
+<td style="text-align: left;">WebSession</td>
+<td style="text-align: left;">Internet Information Services (IIS)</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.compute/virtualmachines</code></li>
+<li><code>microsoft.conenctedvmwarevsphere/virtualmachines</code></li>
+<li><code>microsoft.azurestackhci/virtualmachines</code></li>
+<li><code>microsoft.scvmm/virtualmachines</code></li>
+<li><code>microsoft.compute/virtualmachinescalesets</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

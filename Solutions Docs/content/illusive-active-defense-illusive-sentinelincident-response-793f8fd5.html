@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Illusive-SentinelIncident-Response &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Illusive-SentinelIncident-Response</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p align="left"> <img width="300" height="100" src="./Images/logo.jpg"> </a> </p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/illusive-active-defense.html">Illusive Active Defense</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Response/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>Not listed in Solution JSON:</strong> This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.</p>
+</blockquote>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Response/readme.md">Illusive-SentinelIncident-Response/readme.md</a></em></p>
+</blockquote>
+<p align="left">  
+<img width="300" height="100" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Response/Images/logo.jpg"> </a>
+</p>
+
+<h1>Illusive Incident Response Playbook</h1>
+<p>The Incident Response playbook leverages Sentinel analytic rules and CrowdStrike or Microsoft Defender for Endpoint integration to automate incident response when specified Illusive incidents are discovered.</p>
+<p>Use this playbook to quickly stop or slow down ransomware attacks and critical incidents detected by Illusive in your organization. Upon detection, Sentinel is instructed to use the triggering process information reported by Illusive remove or kill the process. If the triggering process cannot be killed, Sentinel is instructed to isolate the host. These capabilities are available for organizations with CrowdStrike Falcon or Microsoft Defender for Endpoint.</p>
+<ol>
+<li><a href="#playbook-workflow">Playbook workflow</a></li>
+<li><a href="#playbook-execution">Playbook execution</a></li>
+<li><a href="#Access_playbook">Access Playbook</a></li>
+<li><a href="#playbook-retry-mechanism">Playbook retry mechanism</a> </li>
+</ol>
+<h2>Playbook Workflow</h2>
+<ol>
+<li>Perform the general solution setup. <a href="https://github.com/IllusiveNetworks-Labs/Azure-Sentinel/tree/Illusive/Solutions/Illusive%20Active%20Defense">(see instructions here)</a></li>
+<li><a href="#add-api-permissions">Add API permissions to the Azure app</a></li>
+<li><a href="#enable-mde">Enable Microsoft Defender for Endpoint</a> (Only when using MDE for incident response) </li>
+<li><a href="#create-illusive-playbook">Create the Illusive playbook</a></li>
+<li><a href="#API_connection">Connect the playbook to Azure Sentinel</a></li>
+</ol>
+<p><a name="add-api-permissions"></p>
+<h2>Add API permissions to the Azure app</h2>
+<ol>
+<li>From the Azure console, find the Azure app you created to run the Illusive Sentinel Solution. </li>
+<li>Go to <strong>API Permissions</strong>.</li>
+<li>Click <strong>Add a permission</strong>.</li>
+<li>Under <strong>Request API permissions&gt;API’s my organization uses</strong>, search for and select <strong>WindowsDefenderATP</strong>, select select <strong>Delegated permissions</strong> and check the following permissions:
+   - Machine.Isolate – to isolate device
+   - Machine.Read – to find agent ID - to collect data from a single machine. 
+   - File.Read.All – for process handling, find and erase/stop suspicious executables
+   - Machine.StopAndQuarantine – for process handling, find and erase/stop suspicious executables</li>
+<li>Select Application permissions and check the following permissions:<ul>
+<li>Machine.Isolate – to isolate device</li>
+<li>Machine.Read.All – to find agent ID – to query all machines and collect device information even if we don’t have a device ID.</li>
+<li>File.Read.All – for process handling, find and erase/stop suspicious executables</li>
+<li>Machine.StopAndQuarantine – for process handling, find and erase/stop suspicious executables</li>
+</ul>
+</li>
+<li>Click <strong>Add permissions</strong>.</li>
+<li>Once all the API permissions are added, click <strong>Grant admin consent for Default Directory</strong> and click <strong>Yes</strong>.</li>
+<li>Verify admin consent has been granted. This step is important, even if the admin consent status is green. Only a Global Admin can approve admin consent requests.</li>
+<li>Go to <strong>Enterprise&gt;Admin Consent requests</strong>.</li>
+<li>Go to <strong>My pending</strong> and verify that this permission is not pending.<br />
+ The result should look like this:
+ <br />
+<p align="center">  
+      <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Response/Images/azure-app-api-incident-response-permissions-admin-consent-granted.png"> </a>
+   </p>
+</li>
+</ol>
+<p><a name="enable-mde"></p>
+<h2>Enable Microsoft Defender for Endpoint</h2>
+<p>Allow the Illusive Incident Response playbook to stop an attack by triggering an incident response from MDE.</p>
+<p><strong>Attention:</strong> If you use CrowdStrike as your incident response tool, you can skip this procedure.</p>
+<ol>
+<li>From the Azure Search bar, search for the <strong>Subscription</strong> in which MDE is installed.
+     <p align="center"><br />
+        <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Response/Images/Configure_MDE_1%28Subscriptions_MDE_1%29.png"> </a>
+     </p></li>
+<li>Click on the existing <strong>Subscription.</strong></li>
+<li>Click <strong>Security</strong> in the Subscription menu.</li>
+<li>Ensure Microsoft Defender for Endpoint is <strong>On.</strong>
+     <p align="center"><br />
+        <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Response/Images/Configure_MDE_2%28Subscriptions_MDE_2%29.png"> </a>
+     </p></li>
+<li>If MDE is off, click <strong>Security Center.</strong>
+     <p align="center"><br />
+        <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Response/Images/Configure_MDE_OFF_%28Subscriptions_MDE_2%29.png"> </a>
+     </p></li>
+<li>Find the Azure Defender card and click <strong>Enable Azure Defender.</strong>
+     <p align="center">  </li>
+</ol>
+<p><em>[Content truncated...]</em></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/illusive-active-defense.html">Back to Illusive Active Defense</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cisco Duo Security &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Cisco Duo Security</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cisco-logo-72px.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>CiscoDuoSecurity</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Cisco</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/ciscoduosecurity.html">CiscoDuoSecurity</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoDuoSecurity/Data%20Connectors/CiscoDuo_API_FunctionApp.json">CiscoDuo_API_FunctionApp.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Azure Function code uses SharedKey/HTTP Data Collector API</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+</tbody>
+</table>
+<p>The Cisco Duo Security data connector provides the capability to ingest <a href="https://duo.com/docs/adminapi#authentication-logs">authentication logs</a>, <a href="https://duo.com/docs/adminapi#administrator-logs">administrator logs</a>, <a href="https://duo.com/docs/adminapi#telephony-logs">telephony logs</a>, <a href="https://duo.com/docs/adminapi#offline-enrollment-logs">offline enrollment logs</a> and <a href="https://duo.com/docs/adminapi#trust-monitor">Trust Monitor events</a> into Microsoft Sentinel using the Cisco Duo Admin API. Refer to <a href="https://duo.com/docs/adminapi">API documentation</a> for more information.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/ciscoduo-cl.html"><code>CiscoDuo_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
+- <strong>Cisco Duo API credentials</strong>: Cisco Duo API credentials with permission <em>Grant read log</em> is required for Cisco Duo API. See the <a href="https://duo.com/docs/adminapi#first-steps">documentation</a> to learn more about creating Cisco Duo API credentials.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+<p><strong>NOTE:</strong> This connector uses Azure Functions to connect to the Cisco Duo API to pull logs into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
+<p><strong>(Optional Step)</strong> Securely store workspace and API authorization key(s) or token(s) in Azure Key Vault. Azure Key Vault provides a secure mechanism to store and retrieve key values. <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Follow these instructions</a> to use Azure Key Vault with an Azure Function App.</p>
+<p><strong>NOTE:</strong> This data connector depends on a parser based on a Kusto Function to work as expected <a href="https://aka.ms/sentinel-CiscoDuoSecurity-parser"><strong>CiscoDuo</strong></a> which is deployed with the Microsoft Sentinel Solution.</p>
+</blockquote>
+<p><strong>STEP 1 - Obtaining Cisco Duo Admin API credentials</strong></p>
+<ol>
+<li>Follow <a href="https://duo.com/docs/adminapi#first-steps">the instructions</a> to obtain <strong>integration key</strong>, <strong>secret key</strong>, and <strong>API hostname</strong>. Use <strong>Grant read log</strong> permission in the 4th step of <a href="https://duo.com/docs/adminapi#first-steps">the instructions</a>.</li>
+</ol>
+<p><strong>STEP 2 - Choose ONE from the following two deployment options to deploy the connector and the associated Azure Function</strong></p>
+<blockquote>
+<p><strong>IMPORTANT:</strong> Before deploying the data connector, have the Workspace ID and Workspace Primary Key (can be copied from the following), as well as Azure Blob Storage connection string and container name, readily available.
+- <strong>Workspace ID</strong>: <code>WorkspaceId</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
+- <strong>Primary Key</strong>: <code>PrimaryKey</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+<p><strong>3. Option 1 - Azure Resource Manager (ARM) Template</strong></p>
+<p>Use this method for automated deployment of the data connector using an ARM Template.</p>
+<ol>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below. </p>
+<p><a href="https://aka.ms/sentinel-CiscoDuoSecurity-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://aka.ms/sentinel-CiscoDuoSecurity-azuredeploy-gov"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a>
+2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. 
+3. Enter the <strong>Cisco Duo Integration Key</strong>, <strong>Cisco Duo Secret Key</strong>, <strong>Cisco Duo API Hostname</strong>, <strong>Cisco Duo Log Types</strong>, <strong>Microsoft Sentinel Workspace Id</strong>, <strong>Microsoft Sentinel Shared Key</strong>
+4. Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>.
+5. Click <strong>Purchase</strong> to deploy.</p>
+</li>
+</ol>
+<p><strong>4. Option 2 - Manual Deployment of Azure Functions</strong></p>
+<p>Use the following step-by-step instructions to deploy the data connector manually with Azure Functions (Deployment via Visual Studio Code).
+<strong>Step 1 - Deploy a Function App</strong></p>
+<ol>
+<li>Download the <a href="https://aka.ms/sentinel-CiscoDuoSecurity-functionapp">Azure Function App</a> file. Extract archive to your local development computer.</li>
+<li>Follow the <a href="https://github.com/Azure/Azure-Sentinel/blob/master/DataConnectors/AzureFunctionsManualDeployment.md#function-app-manual-deployment-instructions">function app manual deployment instructions</a> to deploy the Azure Functions app using VSCode.</li>
+<li>After successful deployment of the function app, follow next steps for configuring it.</li>
+</ol>
+<p><strong>Step 2 - Configure the Function App</strong></p>
+<ol>
+<li>In the Function App, select the Function App Name and select <strong>Configuration</strong>.</li>
+<li>In the <strong>Application settings</strong> tab, select <strong>+ New application setting</strong>.</li>
+<li>Add each of the following application settings individually, with their respective string values (case-sensitive): 
+        CISCO_DUO_INTEGRATION_KEY
+        CISCO_DUO_SECRET_KEY
+        CISCO_DUO_API_HOSTNAME
+        CISCO_DUO_LOG_TYPES
+        WORKSPACE_ID
+        SHARED_KEY
+        logAnalyticsUri (Optional)
+ - Use logAnalyticsUri to override the log analytics API endpoint for dedicated cloud. For example, for public cloud, leave the value empty; for Azure GovUS cloud environment, specify the value in the following format: <code>https://WORKSPACE_ID.ods.opinsights.azure.us</code>. </li>
+<li>Once all application settings have been entered, click <strong>Save</strong>.</li>
+</ol>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoDuoSecurity\Data Connectors\README.md">CiscoDuoSecurity\Data Connectors\README.md</a></em></p>
+</blockquote>
+<p>To package the function app for deployment, follow these steps:</p>
+<ol>
+<li>install the Azure Function Core Tools if you haven't already.</li>
+<li>Rename local.settings.example.json to local.settings.json and configure any necessary settings.</li>
+<li>Once you have confirmed your changes,</li>
+<li>Navigate to the root directory of your function app in the terminal.</li>
+<li>Run the following command to create a deployment package:</li>
+</ol>
+<p><code>bash
+   func pack &lt;FunctionAppName&gt; --output &lt;FunctionAppName&gt;.zip</code></p>
+<p>Replace <code>&lt;FunctionAppName&gt;</code> with the name of the Azure Function App.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

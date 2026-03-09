@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salesforce Service Cloud &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Salesforce Service Cloud</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/salesforce_logo.svg" alt="Salesforce Service Cloud Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com/">https://support.microsoft.com/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.10</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-05-16</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud">Salesforce Service Cloud</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.salesforce.com/in/products/service-cloud/overview/">Salesforce Service Cloud</a> solution for Microsoft Sentinel enables you to ingest Service Cloud events into Microsoft Sentinel.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong> </p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>• <a href="https://aka.ms/Sentinel-CCP_Platform">Microsoft Sentinel Codeless Connector Framework</a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong> (plus 1 discovered⚠️):</p>
+<ul>
+<li><a href="../connectors/salesforceservicecloud.html">[DEPRECATED] Salesforce Service Cloud</a> ⚠️ 🔶</li>
+<li><a href="../connectors/salesforceservicecloudccpdefinition.html">Salesforce Service Cloud (via Codeless Connector Framework)</a> 🔶</li>
+</ul>
+<p><em>⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.</em></p>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>2 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/salesforceservicecloudv2-cl.html"><code>SalesforceServiceCloudV2_CL</code></a> 🔶</td>
+<td><a href="../connectors/salesforceservicecloudccpdefinition.html">Salesforce Service Cloud (via Codeless Connector Framework)</a>, <a href="../connectors/salesforceservicecloud.html">[DEPRECATED] Salesforce Service Cloud</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/salesforceservicecloud-cl.html"><code>SalesforceServiceCloud_CL</code></a> 🔶</td>
+<td><a href="../connectors/salesforceservicecloud.html">[DEPRECATED] Salesforce Service Cloud</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h3>Internal Tables</h3>
+<p>The following <strong>1 table(s)</strong> are used internally by this solution's content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>5 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/salesforce-service-cloud-brute-force-attack-against-user-credentials-5a6ce089-e756-40fb-b022-c8e8864a973a-39827da6.html">Brute force attack against user credentials</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/salesforceservicecloudv2-cl.html"><code>SalesforceServiceCloudV2_CL</code></a><br><a href="../tables/salesforceservicecloud-cl.html"><code>SalesforceServiceCloud_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/salesforce-service-cloud-potential-password-spray-attack-64d16e62-1a17-4a35-9ea7-2b9fe6f07118-5b230e48.html">Potential Password Spray Attack</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/salesforceservicecloudv2-cl.html"><code>SalesforceServiceCloudV2_CL</code></a><br><a href="../tables/salesforceservicecloud-cl.html"><code>SalesforceServiceCloud_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/salesforce-service-cloud-user-sign-in-from-different-countries-3094e036-e5ae-4d6e-8626-b0f86ebc71f2-a92654f0.html">User Sign in from different countries</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/salesforceservicecloudv2-cl.html"><code>SalesforceServiceCloudV2_CL</code></a><br><a href="../tables/salesforceservicecloud-cl.html"><code>SalesforceServiceCloud_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/salesforce-service-cloud-salesforceservicecloud-a9451acb.html">SalesforceServiceCloud</a></td>
+<td style="text-align: left;"><a href="../tables/salesforceservicecloudv2-cl.html"><code>SalesforceServiceCloudV2_CL</code></a><br><a href="../tables/salesforceservicecloud-cl.html"><code>SalesforceServiceCloud_CL</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/salesforceservicecloud.html">SalesforceServiceCloud</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/salesforceservicecloudv2-cl.html"><code>SalesforceServiceCloudV2_CL</code></a> <em>(read)</em><br><a href="../tables/salesforceservicecloud-cl.html"><code>SalesforceServiceCloud_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.10</td>
+<td>23-01-2026</td>
+<td>Update the Salesforce data connector with instructions for the Salesforce Shield Event Monitoring license requirement</td>
+</tr>
+<tr>
+<td>3.0.9</td>
+<td>17-11-2025</td>
+<td>Resolved bug in <strong>CCF Data Connector</strong> related to column names</td>
+</tr>
+<tr>
+<td>3.0.8</td>
+<td>04-11-2025</td>
+<td>Resolved bugs in <strong>Analytic rules</strong> related to TimestampDerived field.</td>
+</tr>
+<tr>
+<td>3.0.7</td>
+<td>02-11-2025</td>
+<td>Updated CCF Data Connector polling config to v65.0.</td>
+</tr>
+<tr>
+<td>3.0.6</td>
+<td>17-10-2025</td>
+<td>Updated KQL transformation logic to map USER_NAME to the UserEmail column instead of USER_EMAIL.</td>
+</tr>
+<tr>
+<td>3.0.5</td>
+<td>20-08-2025</td>
+<td>Moving Salesforce Service cloud <strong>CCF Data Connector</strong> to GA.</td>
+</tr>
+<tr>
+<td>3.0.4</td>
+<td>11-07-2025</td>
+<td>Salesforce <strong>Workbook</strong> updated with new ThreatIntelIndicators.</td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>03-07-2025</td>
+<td>Added Preview tag to CCF Connector title.<br/>Deprecated Function app Connector.</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>24-03-2025</td>
+<td>Updated <strong>Analytic rules</strong> query to use TimeStampDerived column rather than TimeGenerated.</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>06-02-2025</td>
+<td>Updated timeframes for Salesforce cloud <strong>Analytic rules</strong>.</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>05-09-2023</td>
+<td>Manual deployment instructions updated for <strong>Data Connector</strong>.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

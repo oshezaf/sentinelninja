@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tenable App &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Tenable App</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Tenable.svg" alt="Tenable App Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Tenable</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://www.tenable.com/support/technical-support">https://www.tenable.com/support/technical-support</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.1.2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Tenable - support@tenable.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2024-06-06</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2025-06-19</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable%20App">Tenable App</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.tenable.com/products/vulnerability-management">Tenable App</a> solution provides the capability to ingest Asset and Vulnerability data into Microsoft Sentinel through the REST API from the Tenable platform (Managed in the cloud). Refer to <a href="https://developer.tenable.com/reference/navigate">API documentation</a> for more information.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>a. <a href="https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api">Azure Monitor HTTP Data Collector API</a></p>
+<p>b. <a href="https://azure.microsoft.com/services/functions/#overview">Azure Functions</a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/tenableie.html">Tenable Identity Exposure</a></li>
+<li><a href="../connectors/tenablevm.html">Tenable Vulnerability Management</a></li>
+</ul>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>7 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/alsidforadlog-cl.html"><code>AlsidForADLog_CL</code></a></td>
+<td><a href="../connectors/tenableie.html">Tenable Identity Exposure</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/tenable-ie-cl.html"><code>Tenable_IE_CL</code></a></td>
+<td><a href="../connectors/tenableie.html">Tenable Identity Exposure</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/tenable-vm-asset-cl.html"><code>Tenable_VM_Asset_CL</code></a></td>
+<td><a href="../connectors/tenablevm.html">Tenable Vulnerability Management</a></td>
+<td>Playbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/tenable-vm-compliance-cl.html"><code>Tenable_VM_Compliance_CL</code></a></td>
+<td><a href="../connectors/tenablevm.html">Tenable Vulnerability Management</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/tenable-vm-vuln-cl.html"><code>Tenable_VM_Vuln_CL</code></a></td>
+<td><a href="../connectors/tenablevm.html">Tenable Vulnerability Management</a></td>
+<td>Playbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/tenable-was-asset-cl.html"><code>Tenable_WAS_Asset_CL</code></a></td>
+<td><a href="../connectors/tenablevm.html">Tenable Vulnerability Management</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/tenable-was-vuln-cl.html"><code>Tenable_WAS_Vuln_CL</code></a></td>
+<td><a href="../connectors/tenablevm.html">Tenable Vulnerability Management</a></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>20 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">12</td>
+</tr>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">2</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/tenable-app-tie-active-directory-attacks-pathways-de549a62-f595-4810-88bd-621338186588-8d945f8a.html">TIE Active Directory attacks pathways</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/alsidforadlog-cl.html"><code>AlsidForADLog_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tenable-app-tie-dcshadow-874e3530-552e-437b-ba2e-227979e7e43c-398b98b9.html">TIE DCShadow</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/alsidforadlog-cl.html"><code>AlsidForADLog_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tenable-app-tie-dcsync-19d1f964-ddcf-437b-92ce-b9c1c14d24f1-8c44578b.html">TIE DCSync</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/alsidforadlog-cl.html"><code>AlsidForADLog_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tenable-app-tie-golden-ticket-216e12dd-165a-4537-b241-32e1bd3330c7-7def72b1.html">TIE Golden Ticket</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/alsidforadlog-cl.html"><code>AlsidForADLog_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tenable-app-tie-indicators-of-attack-6c75f0d2-2973-4188-bb05-ec7bc8696120-0f2547b1.html">TIE Indicators of Attack</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/alsidforadlog-cl.html"><code>AlsidForADLog_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tenable-app-tie-indicators-of-exposures-f6ae2eb2-97c9-4e0f-ae73-7420ef80d99d-af82d6d0.html">TIE Indicators of Exposures</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/alsidforadlog-cl.html"><code>AlsidForADLog_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tenable-app-tie-lsass-memory-7851f57c-98b6-43c6-9747-9bb7cf11f21c-105e8678.html">TIE LSASS Memory</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/alsidforadlog-cl.html"><code>AlsidForADLog_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tenable-app-tie-password-guessing-d1416c25-5a56-4a88-8d7c-568e6551a307-1b7ef1ae.html">TIE Password Guessing</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/alsidforadlog-cl.html"><code>AlsidForADLog_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tenable-app-tie-password-spraying-f47eb8cb-4acb-4ee4-887d-0247c6d73a72-ec0050b3.html">TIE Password Spraying</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/alsidforadlog-cl.html"><code>AlsidForADLog_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tenable-app-tie-password-issues-87af910a-e9c0-4c96-8045-f778ba405251-e62ae59a.html">TIE Password issues</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/alsidforadlog-cl.html"><code>AlsidForADLog_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tenable-app-tie-privileged-accounts-issues-5c170c73-75ba-48ea-8dfc-e4e2d4f23979-a4f698a7.html">TIE privileged accounts issues</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/alsidforadlog-cl.html"><code>AlsidForADLog_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tenable-app-tie-user-accounts-issues-c4562ef3-d821-4089-b6c0-120d95c855e6-748b2811.html">TIE user accounts issues</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/alsidforadlog-cl.html"><code>AlsidForADLog_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/tenable-app-tenableieioa-03d04cb0.html">TenableIEIoA</a></td>
+<td style="text-align: left;"><a href="../tables/alsidforadlog-cl.html"><code>AlsidForADLog_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tenable-app-tenableieioe-ef6095f6.html">TenableIEIoE</a></td>
+<td style="text-align: left;"><a href="../tables/alsidforadlog-cl.html"><code>AlsidForADLog_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/tenable-app-tenable-vm-enrich-incident-with-asset-info-c63aded0.html">Tenable VM - Enrich incident with asset info</a></td>
+<td style="text-align: left;">Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol...</td>
+<td style="text-align: left;"><a href="../tables/tenable-vm-asset-cl.html"><code>Tenable_VM_Asset_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tenable-app-tenable-vm-enrich-incident-with-vulnerability-info-a70a5679.html">Tenable VM - Enrich incident with vulnerability info</a></td>
+<td style="text-align: left;">Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol...</td>
+<td style="text-align: left;"><a href="../tables/tenable-vm-vuln-cl.html"><code>Tenable_VM_Vuln_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tenable-app-tenable-vm-launch-scan-432d5e79.html">Tenable VM - Launch Scan</a></td>
+<td style="text-align: left;">Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol...</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/tenablevmassets.html">TenableVMAssets</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/tenable-vm-asset-cl.html"><code>Tenable_VM_Asset_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/tenablevmvulnerabilities.html">TenableVMVulnerabilities</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/tenable-vm-vuln-cl.html"><code>Tenable_VM_Vuln_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/afad-parser.html">afad_parser</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/tenable-ie-cl.html"><code>Tenable_IE_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.1.2</td>
+<td>27-01-2026</td>
+<td>Corrected Tenable_IE_CL table references in Data Connector Configuration. <br/> Update PyTenableUABuild value to 3.1.0 in template.</td>
+</tr>
+<tr>
+<td>3.1.1</td>
+<td>12-09-2025</td>
+<td>Added button for Azure Gov Cloud in the UI page of the data connector.</td>
+</tr>
+<tr>
+<td>3.1.0</td>
+<td>19-06-2025</td>
+<td>Updated the python runtime version to 3.12. Updated pyTenable sdk version to 1.7.4. Added support for WAS Asset and WAS Vuln data ingestion. Removed Queue Trigger functions and updated with Durable Functions. Added support for Log Ingestion API and updated parsers and playbooks accordingly</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>05-09-2024</td>
+<td>Updated the python runtime version to 3.11</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>03-07-2024</td>
+<td>Initial Solution Release</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

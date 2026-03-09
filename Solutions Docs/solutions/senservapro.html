@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SenservaPro &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>SenservaPro</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/SenservaPro/Data Connectors/Logo/SenservaPro_logo.svg" alt="SenservaPro Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Senserva</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://www.senserva.com/contact/">https://www.senserva.com/contact/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">2.0.2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Senserva - support@senserva.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-06-01</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SenservaPro">SenservaPro</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.senserva.com/">SenservaPro</a> solution provides a viewing experience for your SenservaPro scanning logs. View dashboards of your data, use queries to hunt &amp; explore, and create custom alerts.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>a. <a href="https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api">Azure Monitor HTTP Data Collector API</a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/senservapro.html">SenservaPro (Preview)</a> 🔶</li>
+</ul>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a> 🔶</td>
+<td><a href="../connectors/senservapro.html">SenservaPro (Preview)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>33 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">15</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">15</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">3</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-azure-secure-score-self-service-password-reset-114120b2-aaa0-4c4e-bdf1-2ee178465047-2811587a.html">Azure Secure Score Self Service Password Reset</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-azure-secure-score-mfa-registration-v2-8eb2b20a-bf64-4dcc-9d98-1ad559502c00-f958230b.html">Azure secure score MFA registration V2</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-azure-secure-score-pw-age-policy-new-88c9a5e0-31ec-490b-82e5-a286d9b99a67-a388e7f8.html">Azure secure score PW age policy new</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-azure-secure-score-admin-mfa-9a15c3dd-f72b-49a4-bcb7-94406395661e-9b276f73.html">Azure secure score admin MFA</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-azure-secure-score-block-legacy-authentication-c27bb559-28c5-4924-a7da-3bf04cd02c8f-e58244d1.html">Azure secure score block legacy authentication</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-azure-secure-score-one-admin-f539b2a7-d9e7-4438-aa20-893bc61df130-05fff552.html">Azure secure score one admin</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-azure-secure-score-role-overlap-8e6d9a66-f1b0-463d-ba90-11a5aec0e15a-1aa1a218.html">Azure secure score role overlap</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-azure-secure-score-sign-in-risk-policy-5231d757-a5b5-4ca7-a91b-aa3702970e02-315f1412.html">Azure secure score sign in risk policy</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-azure-secure-score-user-risk-policy-1c07a4cb-e31b-4917-bd2a-3572e42f602c-5f0430ce.html">Azure secure score user risk policy</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-non-admin-guest-9b6558c4-ba23-40ac-b95f-42f8a29a3b35-5eee1e43.html">Non-admin guest</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-senservapro-ad-applications-not-using-client-credentials-56910d7b-aae7-452c-a3ed-89f72ef59234-26525cfd.html">SenservaPro AD Applications Not Using Client Credentials</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-service-principal-not-using-client-credentials-d308318a-b298-4e57-82bd-74ae33c4a539-f716ee22.html">Service principal not using client credentials</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-stale-last-password-change-645a8724-5c7e-4a1f-81cb-c33aff1439eb-b265e3ab.html">Stale last password change</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-third-party-integrated-apps-bfa7ee22-b5a9-42c8-bd50-2e95885640bb-958898cb.html">Third party integrated apps</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-useraccountdisabled-24e0132f-61d1-41bd-9393-06136d1039c7-b567bfdb.html">UserAccountDisabled</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-application-not-using-client-credentials-1bdb9a37-dc72-4c5a-a222-08443865dc0d-f2f6e002.html">Application not using client credentials</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-azure-secure-score-self-service-password-reset-ef37b9a3-c792-4f2f-8a4e-f8416de43455-277440fa.html">Azure Secure Score Self Service Password Reset</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-azure-secure-score-mfa-registration-v2-6111b528-da13-4fa0-a2e6-4cb32d943f58-8dfa27a2.html">Azure secure score MFA registration V2</a></td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-azure-secure-score-pw-age-policy-new-54f23b1d-f8d3-46c5-85f9-24126446a688-e25066c2.html">Azure secure score PW age policy new</a></td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-azure-secure-score-admin-mfa-v2-95226772-981e-41ab-80e3-5b6a6f1d26d9-f8783eb7.html">Azure secure score admin MFA V2</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-azure-secure-score-block-legacy-authentication-e7bdd9f9-cb83-46e3-9a8e-f14198d3c530-527c3ac2.html">Azure secure score block legacy authentication</a></td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-azure-secure-score-integrated-apps-0810700d-f0e9-44ae-874f-45985921efde-d72185b9.html">Azure secure score integrated apps</a></td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-azure-secure-score-one-admin-27982ecb-493e-4dae-bb21-6f0b77b25526-9982dae3.html">Azure secure score one admin</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-azure-secure-score-role-overlap-ad9cddb0-6daa-4616-a397-b9df7d6082f4-a982060c.html">Azure secure score role overlap</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-azure-secure-score-sign-in-risk-policy-28c19364-ef24-4798-a656-d9c798559d98-51fc45ce.html">Azure secure score sign in risk policy</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-azure-secure-score-user-risk-policy-b91ac293-3855-4ab6-a9ee-e107930765d7-21af042b.html">Azure secure score user risk policy</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-non-admin-guest-9b6558c4-ba23-40ac-b95f-42f8a29a3b35-476a039b.html">Non-admin guest</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-service-principal-not-using-client-credentials-b604620b-0d87-4ffd-be2e-7e40e81ce559-da428640.html">Service principal not using client credentials</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-stale-last-password-change-29aebd0f-25ae-4d81-b0c2-2fb7f45f0340-2d9be67a.html">Stale last password change</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-useraccountdisabled-4ca722e6-b165-42cd-8eb2-88304a0fc3da-d628ecc7.html">UserAccountDisabled</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-senservaproanalyticsworkbook-aaafb530.html">SenservaProAnalyticsWorkbook</a></td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-senservapromultipleworkspaceworkbook-de5c1809.html">SenservaProMultipleWorkspaceWorkbook</a></td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/senservapro-senservaprosecurescoremultitenantworkbook-8e66feb9.html">SenservaProSecureScoreMultiTenantWorkbook</a></td>
+<td style="text-align: left;"><a href="../tables/senservapro-cl.html"><code>SenservaPro_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.0</td>
+<td>11-11-2023</td>
+<td>Modified text as there is rebranding from Azure Active Directory to Microsoft Entra ID.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

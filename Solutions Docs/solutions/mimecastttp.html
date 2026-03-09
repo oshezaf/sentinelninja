@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🚫 MimecastTTP &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>🚫 MimecastTTP</h1>
+<blockquote>
+<p>🚫 <strong>Deprecated:</strong> This solution has been deprecated and replaced by a newer integration.</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Mimecast.svg" alt="MimecastTTP Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Mimecast</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://mimecastsupport.zendesk.com/">https://mimecastsupport.zendesk.com/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Mimecast - dlapi@mimecast.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-02-24</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2022-02-24</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MimecastTTP">MimecastTTP</a></td>
+</tr>
+</tbody>
+</table>
+<p>The data connector for <a href="https://integrations.mimecast.com/tech-partners/microsoft-sentinel/">Mimecast Targeted Threat Protection</a> provides customers with the visibility into security events related to the Targeted Threat Protection inspection technologies within Microsoft Sentinel. The data connector provides pre-created dashboards to allow analysts to view insight into email based threats, aid in incident correlation and reduce investigation response times coupled with custom alert capabilities.<br />
+The Mimecast products included within the connector are: 
+- URL Protect 
+- Impersonation Protect 
+- Attachment Protect</p>
+<p>Microsoft Sentinel Solutions provide a consolidated way to acquire Microsoft Sentinel content like data connectors, workbooks, analytics, and automations in your workspace with a single deployment step.</p>
+<p><strong>NOTE: This integration is considered deprecated and has been replaced by the unified <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/mimecastnorthamerica1584469118674.azure-sentinel-solution-mimecast?tab=Overview">Mimecast integration</a>, which uses Mimecast's API 2.0 gateway. Please avoid using this version, and if already using it, migrate to the new integration. No further updates will be performed, and this version will be removed at a future date. For additional information, including the unified integration setup steps, go <a href="https://integrations.mimecast.com/tech-partners/microsoft-sentinel">here</a>.</strong></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/mimecastttpapi.html">Mimecast Targeted Threat Protection</a> 🔶</li>
+</ul>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>3 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/mimecastttpattachment-cl.html"><code>MimecastTTPAttachment_CL</code></a> 🔶</td>
+<td><a href="../connectors/mimecastttpapi.html">Mimecast Targeted Threat Protection</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/mimecastttpimpersonation-cl.html"><code>MimecastTTPImpersonation_CL</code></a> 🔶</td>
+<td><a href="../connectors/mimecastttpapi.html">Mimecast Targeted Threat Protection</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/mimecastttpurl-cl.html"><code>MimecastTTPUrl_CL</code></a> 🔶</td>
+<td><a href="../connectors/mimecastttpapi.html">Mimecast Targeted Threat Protection</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>4 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/mimecastttp-mimecast-targeted-threat-protection-attachment-protect-aa75944c-a663-4901-969e-7b55bfa49a73-ccc92056.html">Mimecast Targeted Threat Protection - Attachment Protect</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess, Discovery</td>
+<td style="text-align: left;"><a href="../tables/mimecastttpattachment-cl.html"><code>MimecastTTPAttachment_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/mimecastttp-mimecast-targeted-threat-protection-impersonation-protect-d8e7eca6-4b59-4069-a31e-a022b2a12ea4-d8d320d6.html">Mimecast Targeted Threat Protection - Impersonation Protect</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Exfiltration, Collection, Discovery</td>
+<td style="text-align: left;"><a href="../tables/mimecastttpimpersonation-cl.html"><code>MimecastTTPImpersonation_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/mimecastttp-mimecast-targeted-threat-protection-url-protect-9d5545bd-1450-4086-935c-62f15fc4a4c9-81f30fac.html">Mimecast Targeted Threat Protection - URL Protect</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess, Discovery</td>
+<td style="text-align: left;"><a href="../tables/mimecastttpurl-cl.html"><code>MimecastTTPUrl_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/mimecastttp-mimecastttpworkbook-22b40acb.html">MimecastTTPWorkbook</a></td>
+<td style="text-align: left;"><a href="../tables/mimecastttpattachment-cl.html"><code>MimecastTTPAttachment_CL</code></a><br><a href="../tables/mimecastttpimpersonation-cl.html"><code>MimecastTTPImpersonation_CL</code></a><br><a href="../tables/mimecastttpurl-cl.html"><code>MimecastTTPUrl_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.2</td>
+<td>06-03-2025</td>
+<td>Solution Deprecated</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>05-12-2023</td>
+<td>Enhanced <strong>Dataconnector</strong> to use existing workspace and updated checkpoint mechanism</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>23-08-2023</td>
+<td>Initial Solution Release</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

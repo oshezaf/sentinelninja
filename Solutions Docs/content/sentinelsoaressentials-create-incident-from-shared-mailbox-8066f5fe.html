@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Incident From Shared Mailbox &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Create Incident From Shared Mailbox</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>This playbook will create a new Microsoft Sentinel incident when new email arrives to shared mailbox with 'incident' keyword in the subject.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/sentinelsoaressentials.html">SentinelSOARessentials</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-SharedMailbox/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-SharedMailbox/readme.md">CreateIncident-SharedMailbox/readme.md</a></em></p>
+</blockquote>
+<h1>CreateIncident-SharedMailbox</h1>
+<p>author: Benjamin Kovacevic</p>
+<p>This playbook will create a new Microsoft Incident when a new email arrives in the shared mailbox with the "incident" keyword in the subject.</p>
+<h1>Prerequisites</h1>
+<ol>
+<li>Create a shared mailbox that will be used for incident creation.</li>
+<li>Prepare Subscription ID, Resource Group name, and Log Analytics Workspace name as it is needed for template deployment.</li>
+</ol>
+<h1>Quick Deployment</h1>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FCreateIncident-SharedMailbox%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FCreateIncident-SharedMailbox%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png" /></a>
+<br><br></p>
+<h1>Post-deployment</h1>
+<ol>
+<li>Assign Microsoft Sentinel Responder role to the managed identity. To do so, choose Identity blade under Settings of the Logic App.</li>
+<li>If notification about successful or unsuccessful incident creation is not needed, please delete the "Condition" step<br>
+<img alt="FormsTemplate" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-SharedMailbox/images/DeleteConditionDark.jpg" /><br></li>
+<li>Authorize Office 365 Outlook connector and Conversion Service connector (HTML to text)</li>
+<li>Utilize the email template to get correct data - https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-SharedMailbox/NewMicrosoftSentinelIncidentCreationTemplate.oft</li>
+</ol>
+<h1>Note for email template changes</h1>
+<ol>
+<li>The email subject must contain "incident" in the name. If this needs to be changed, please update the trigger:<br>
+<img alt="SubjectUpdate" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-SharedMailbox/images/EmailSubjectUpdateDark.jpg" /><br><br></li>
+<li>The email body must be in this order:<ul>
+<li>Incident Title: </li>
+<li>Incident Description: </li>
+<li>Incident Severity: (Informational/Low/Medium/High)</li>
+<li>Incident Status: (New/Active/Closed)</li>
+<li>Incident Tag: </li>
+<li>Assign Incident: (Assign/Unassign)</li>
+<li>Assign Incident to: </li>
+</ul>
+</li>
+<li>If the order or value of each or any line is changed, it is necessary to adjust that change to the playbook itself. For example - for the "Title" field in the playbook, we are trimming value from the email body that is between "Incident Title: " and "Incident Description: ". For that we are using expression "trim(first(split(last(split(body('Email_body_to_text'),'Incident Title: ')),'Incident Description: ')))"<br><br>
+If you change the order in email body and move "Incident Title" after "Incident Description" update expression for field Title to "trim(first(split(last(split(body('Email_body_to_text'),'<strong>Incident Title: </strong>')),'<strong>Incident Severity: </strong>')))" and fild "Description" to "trim(first(split(last(split(body('Email_body_to_text'),'<strong>Incident Description: </strong>')),'<strong>Incident Title: </strong>')))"<br><br>
+If you rename any field, an expression update is also needed. If you change line "Incident Title: " to "Title - ", update expressions to "trim(first(split(last(split(body('Email_body_to_text'),',<strong>Title - </strong>')),'Incident Description: ')))"
+<img alt="trim example" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-SharedMailbox/images/TrimExampleDark.jpg" /><br></li>
+<li>Note that lines "Incident Severity: ", "Incident Status: ", and "Assign Incident: " must have one of the offered values!</li>
+<li>Line "Assign Incident to: " must contain Azure AD object ID or UPN value!</li>
+</ol>
+<p>When editing, important information is that certain fields accept only certain values:<br>
+1. Severity - Informational/Low/Medium/High
+2. Status - New/Active/Closed
+3. Owner Object Id / UPN - only Azure AD object ID or user's UPN
+4. Assign/Unassign Owner - Assign/Unassign</p>
+<h1>Screenshots</h1>
+<p><strong>Playbook</strong> <br>
+<img alt="playbook screenshot" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-SharedMailbox/images/SharedMailboxPlaybookDark.jpg" /><br></p>
+<p><strong>Microsoft Sentinel Incident</strong><br>
+<img alt="SentinelIncident" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-SharedMailbox/images/SentinelIncidentDark.jpg" /><br></p>
+<p><strong>Email notification</strong><br>
+<img alt="Success" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-SharedMailbox/images/successDark.jpg" /><br><br></p>
+<p><em>[Content truncated...]</em></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/sentinelsoaressentials.html">Back to SentinelSOARessentials</a></p>
+</div>
+</body>
+</html>

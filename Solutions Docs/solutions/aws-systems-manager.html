@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWS Systems Manager &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>AWS Systems Manager</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/AWS%20Systems%20Manager/Playbooks/aws-logo.svg" alt="AWS Systems Manager Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com/">https://support.microsoft.com/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Systems%20Manager">AWS Systems Manager</a></td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html">AWS Systems Manager</a> is the operations hub for your AWS applications and resources and a secure end-to-end management solution for <a href="https://docs.aws.amazon.com/systems-manager/latest/userguide/operating-systems-and-machine-types.html#supported-machine-types">hybrid and multicloud</a> environments that enables secure operations at scale. This solution helps to enhance your SOAR capabilities by integrating Sentinel with AWS manager.</p>
+<h2>Data Connectors</h2>
+<p><strong>This solution does not include data connectors.</strong></p>
+<p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
+<h2>Content Items</h2>
+<p>This solution includes <strong>7 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">7</td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/aws-systems-manager-aws-systems-manager-get-missing-patches-for-ec2-instances-bf6441c2.html">AWS Systems Manager - Get Missing Patches for EC2 Instances</a></td>
+<td style="text-align: left;">When an incident is created in Microsoft Sentinel, this playbook gets triggered and perform the foll...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aws-systems-manager-aws-systems-manager-get-missing-patches-for-ec2-instances-for-given-hostname-9f828265.html">AWS Systems Manager - Get Missing Patches for EC2 Instances for given Hostname</a></td>
+<td style="text-align: left;">The playbook can be triggered manually from a Host Entity to get the missing patches on a managed EC...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aws-systems-manager-aws-systems-manager-get-missing-patches-for-ec2-instances-for-given-private-ip-4a86e668.html">AWS Systems Manager - Get Missing Patches for EC2 Instances for given Private IP</a></td>
+<td style="text-align: left;">The playbook can be triggered manually from an IP Entity to get the missing patches on a managed EC2...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aws-systems-manager-aws-systems-manager-run-automation-runbook-94bcc7cb.html">AWS Systems Manager - Run Automation Runbook</a></td>
+<td style="text-align: left;">When a new sentinel incident is created, this playbook gets triggered and runs the specified AWS Sys...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aws-systems-manager-aws-systems-manager-stop-managed-ec2-instances-070f6586.html">AWS Systems Manager - Stop Managed EC2 Instances</a></td>
+<td style="text-align: left;">This playbook can be used by SOC Analysts to stop malicious or compromised EC2 instances in AWS. Thi...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aws-systems-manager-aws-systems-manager-stop-managed-ec2-instances-host-entity-trigger-06c9b18a.html">AWS Systems Manager - Stop Managed EC2 Instances Host Entity Trigger</a></td>
+<td style="text-align: left;">This playbook can be used by SOC Analysts to stop malicious or compromised EC2 instances in AWS. The...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/aws-systems-manager-aws-systems-manager-stop-managed-ec2-instances-ip-entity-trigger-bcfcdc2a.html">AWS Systems Manager - Stop Managed EC2 Instances IP Entity Trigger</a></td>
+<td style="text-align: left;">This playbook can be used by SOC Analysts to stop malicious or compromised EC2 instances in AWS. The...</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.2</td>
+<td>01-14-2026</td>
+<td>Fixed AWS-SSM-GetInstancePatches Playbook and updated Function App pagination</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>29-01-2024</td>
+<td>App insights to LA change in data connector and repackage</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

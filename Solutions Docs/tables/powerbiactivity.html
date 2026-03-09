@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PowerBIActivity &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>PowerBIActivity</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for PowerBIActivity table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Audit, Security</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/powerbiactivity">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (41 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/powerbiactivity">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">Activity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the user or admin activity.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActivityId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the activity.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The UPN (User Principal Name) of the user who performed the action (specified in the Operation property) that resulted in the record being logged; for example, my_name@my_domain_name. Note that records for activity performed by system accounts (such as SHAREPOINT\system or NT AUTHORITY\SYSTEM) are also included. In SharePoint, another value display in the UserId property is app@sharepoint. This indicates that the "user" who performed the activity was an application that has the necessary permissions in SharePoint to perform organization-wide actions (such as search a SharePoint site or OneDrive account) on behalf of a user, admin, or service. For more information, see the app@sharepoint user in audit records.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorUserId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">An alternative ID for the user identified in the UserId property. For example, this property is populated with the passport unique ID (PUID) for events performed by users in SharePoint, OneDrive for Business, and Exchange. This property may also specify the same value as the UserID property for events occurring in other services and events performed by system accounts.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorUserType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of user that performed the operation. Possible types are: Admin, System, Application, Service Principal and Other.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DashboardId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the dashboard that the activity was performed on.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DashboardName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the dashboard where the event occurred.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DataClassification</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The data classification, if exists, for the dashboard where the event occurred.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DatasetName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the dataset where the event occurred.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DistributionMethod</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates the distribution method of the content.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventOriginalType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the user or admin activity that performed the activity. For a description of the most common operations/activities, see "Search the audit log" in the Office 365 Protection Center. For Exchange admin activity, this property identifies the name of the cmdlet that was run. For Dlp events, this can be "DlpRuleMatch", "DlpRuleUndo" or "DlpInfo", which are described under "DLP schema" below.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventOriginalUid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of an audit record.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventProduct</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Microsoft product name (PowerBI).</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventResult</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates whether the action (specified in the Operation property) was successful or not. Possible values are Succeeded, PartiallySucceeded, or Failed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventVendor</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Service vendor name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FolderAccessRequests</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of users that requested access to the folder.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsSuccess</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates whether the action was successful or not.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ItemName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the item that the activity was performed on.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MembershipInformation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Membership information about the group.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ObjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The full path name of the file or folder accessed by the user. For Exchange admin audit logging, the name of the object that was modified by the cmdlet.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OrganizationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The GUID for your organization's Office 365 tenant. This value will always be the same for your organization, regardless of the Office 365 service in which it occurs.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OrgAppPermission</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Permissions list for an organizational app (entire organization, specific users, or specific groups).</td>
+</tr>
+<tr>
+<td style="text-align: left;">PbiWorkspaceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the PowerBI workspace where the event occurred.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RecordType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of operation indicated by the record. See the AuditLogRecordType table for details on the types of audit log records.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReportName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the report where the event occurred.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Scope</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Event can be created by a hosted Office 365 service or an on-premises server. Possible values are online and onprem. Note that SharePoint is the only workload currently sending events from on-premises to Office 365.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SharingInformation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Information about the person to whom a sharing invitation is sent.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcIpAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format. For some services, the value displayed in this property might be the IP address for a trusted application (for example, Office on the web apps) calling into the service on behalf of a user and not the IP address of the device used by person who performed the activity. Also, for Azure Active Directory-related events, the IP address isn't logged and the value for the ClientIP property is null.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SwitchState</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Information about the state of various tenant level switches.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetAppName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the app where the event occurred.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The date and time in (UTC) when the user performed the activity.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserAgent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Information about the user's browser. This information is provided by the browser.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of user that performed the operation. Possible types are: Admin, System, Application, Service Principal and Other.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workload</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Office 365 service where the activity occurred.</td>
+</tr>
+<tr>
+<td style="text-align: left;">WorkspaceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the PowerBI workspace.</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/microsoft-powerbi.html">Microsoft PowerBI</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/officepowerbi.html">Microsoft PowerBI</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Content Items Using This Table (1)</h2>
+<h3>Workbooks (1)</h3>
+<p><strong>In solution <a href="../solutions/microsoft-powerbi.html">Microsoft PowerBI</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-powerbi-microsoftpowerbiactivityworkbook-657a784e.html">MicrosoftPowerBIActivityWorkbook</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samsung Knox Asset Intelligence &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Samsung Knox Asset Intelligence</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Samsung_Knox_Asset_Intelligence.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>SamsungDCDefinition</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Samsung</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/samsung-knox-asset-intelligence.html">Samsung Knox Asset Intelligence</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/rest-api.html">REST API</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Samsung%20Knox%20Asset%20Intelligence/Data%20Connectors/Template_Samsung.json">Template_Samsung.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Connector definition requires workspace key (SharedKey pattern)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+</tbody>
+</table>
+<p>Samsung Knox Asset Intelligence Data Connector lets you centralize your mobile security events and logs in order to view customized insights using the Workbook template, and identify incidents based on Analytics Rules templates.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/samsung-knox-application-cl.html"><code>Samsung_Knox_Application_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/samsung-knox-audit-cl.html"><code>Samsung_Knox_Audit_CL</code></a> 🔶</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/samsung-knox-network-cl.html"><code>Samsung_Knox_Network_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/samsung-knox-process-cl.html"><code>Samsung_Knox_Process_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/samsung-knox-system-cl.html"><code>Samsung_Knox_System_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/samsung-knox-user-cl.html"><code>Samsung_Knox_User_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Entra app</strong>: An Entra app needs to be registered and provisioned with ‘Microsoft Metrics Publisher’ role and configured with either Certificate or Client Secret as credentials for secure data transfer. See <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/logs/tutorial-logs-ingestion-portal">the Log ingestion tutorial to learn more about Entra App creation, registration and credential configuration.</a></p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p>This Data Connector uses the Microsoft Log Ingestion API to push security events into Microsoft Sentinel from Samsung Knox Asset Intelligence (KAI) solution.</p>
+<p><strong>2. STEP 1 - Create and register an Entra Application</strong></p>
+<blockquote>
+<p><strong>Note</strong>: This Data Connector can support either Certificate-based or Client Secret-based authentication. For Certificate-based authentication, you can download the Samsung CA-signed certificate (public key) from <a href="https://docs.samsungknox.com/admin/knox-asset-intelligence/assets/samsung-knox-validation-certificate.crt">KAI documentation portal</a>. For Client Secret-based authentication, you can create the secret during the Entra application registration. Ensure you copy the Client Secret value as soon as it is generated.</p>
+<p><strong>IMPORTANT:</strong> Save the values for Tenant (Directory) ID and Client (Application) ID. If Client Secret-based authentication is enabled, save Client Secret (Secret Value) associated with the Entra app.</p>
+</blockquote>
+<p><strong>3. STEP 2 - Automate deployment of this Data Connector using the below Azure Resource Manager (ARM) template</strong></p>
+<blockquote>
+<p><strong>IMPORTANT:</strong> Before deploying the Data Connector, copy the below Workspace name associated with your Microsoft Sentinel (also your Log Analytics) instance.
+- <strong>Workspace Name</strong>: <code>WorkspaceName</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+<ol>
+<li>
+<p>Click the button below to install Samsung Knox Intelligence Solution. </p>
+<p><a href="https://aka.ms/sentinel-SamsungDCDefinition-azuredeploy"><img alt="DeployToAzure" src="https://aka.ms/deploytoazurebutton" /></a>\n2. Provide the following required fields: Log Analytics Workspace Name, Log Analytics Workspace Location, Log Analytics Workspace Subscription (ID) and Log Analytics Workspace Resource Group.</p>
+</li>
+</ol>
+<p><strong>5. STEP 3 - Obtain Microsoft Sentinel Data Collection details</strong></p>
+<p>Once the ARM template is deployed, navigate to Data Collection Rules https://portal.azure.com/#browse/microsoft.insights%2Fdatacollectionrules? and save values associated with the Immutable ID (DCR) and Data Collection Endpoint (DCE). </p>
+<blockquote>
+<p><strong>IMPORTANT:</strong> To enable end-to-end integration, information related to Microsoft Sentinel DCE and DCR are required for configuration in Samsung Knox Asset Intelligence portal (STEP 4). </p>
+</blockquote>
+<p>Ensure the Entra Application created in STEP 1 has permissions to use the DCR created in order to send data to the DCE. Please refer to https://learn.microsoft.com/en-us/azure/azure-monitor/logs/tutorial-logs-ingestion-portal#assign-permissions-to-the-dcr to assign permissions accordingly.</p>
+<p><strong>6. STEP 4 - Connect to Samsung Knox Asset Intelligence solution to configure Microsoft Sentinel to push select Knox Security Events as Alerts</strong></p>
+<ol>
+<li>
+<p>Login to <a href="https://central.samsungknox.com/kaiadmin/dai/home">Knox Asset Intelligence administration portal</a> and navigate to <strong>Dashboard Settings</strong>; this is available at the top-right corner of the Portal.</p>
+<blockquote>
+<p><strong>Note</strong>: Ensure the login user has access to 'Security' and 'Manage dashboard view and data collection' permissions.</p>
+</blockquote>
+</li>
+<li>
+<p>Click on Security tab to view settings for Microsoft Sentinel Integration and Knox Security Logs.</p>
+</li>
+<li>
+<p>In the Security Operations Integration page, toggle on <strong>'Enable Microsoft Sentinel Integration'</strong> and enter appropriate values in the required fields.</p>
+</li>
+</ol>
+<blockquote>
+<p>a. Based on the authentication method used, refer to information saved from STEP 1 while registering the Entra application. </p>
+<p>b. For Microsoft Sentinel DCE and DCR, refer to the information saved from STEP 3. </p>
+</blockquote>
+<ol start="4">
+<li>
+<p>Click on <strong>'Test Connection'</strong> and ensure the connection is successful.</p>
+</li>
+<li>
+<p>Before you can Save, configure Knox Security Logs by selecting either  Essential or Advanced configuration <strong>(default: Essential).</strong></p>
+</li>
+<li>
+<p>To complete the Microsoft Sentinel integration, click <strong>'Save'</strong>.</p>
+</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

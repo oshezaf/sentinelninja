@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rubrik Turbo Threat Hunt &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Rubrik Turbo Threat Hunt</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>This playbook fetches the object mapped with incident and starts turbo threat hunt.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/rubriksecuritycloud.html">RubrikSecurityCloud</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikTurboThreatHunt/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikTurboThreatHunt/readme.md">RubrikTurboThreatHunt/readme.md</a></em></p>
+</blockquote>
+<h2>Summary</h2>
+<p>This playbook fetches the object mapped with incident and starts turbo threat hunt.</p>
+<h3>Prerequisites</h3>
+<ol>
+<li>The Rubrik Security Cloud data connector should be configured to send appropriate events to Microsoft Sentinel.</li>
+<li>The Rubrik Security Cloud solution should be configured to <a href="https://docs.rubrik.com/en-us/saas/saas/polaris_api_access_with_service_accounts.html">connect to Rubrik Security Cloud API end points using a Service Account</a>, the service account should be assigned a role that includes the relevant privileges necessary to perform the desired operations (see <a href="https://docs.rubrik.com/en-us/saas/saas/common/roles_and_permissions.html">Roles and Permissions</a> in the Rubrik Security Cloud user guide).</li>
+<li>Rubrik custom connector needs to be deployed prior to the deployment of this playbook, in the same resource group and region. Relevant instructions can be found in the connector doc page.</li>
+<li>Store Service account credentials in Key Vault and obtain keyvault name and tenantId
+    a. Create a Key Vault with unique name
+    b. Go to KeyVault -&gt; secrets -&gt; Generate/import and create 'Rubrik-AS-Int-ClientId' &amp; 'Rubrik-AS-Int-ClientSecret' for storing client_id and client_secret respectively</li>
+<li>Obtain Teams GroupId and ChannelId
+    a. Create a Team with a public channel.
+    b. Click on three dots (...) present on the right side of your newly created teams channel and Get link to the channel.
+    c. Copy the text from the link between /channel and /, decode it using an online url decoder and copy it to use as channelId.
+    d. Copy the text of the groupId parameter from the link to use as groupId.</li>
+</ol>
+<h3>Deployment instructions</h3>
+<ol>
+<li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
+<li>Fill in the required paramteres:<ul>
+<li>Playbook Name: Enter the playbook name here</li>
+<li>API Hostname: Hostname of the RubrikApi instance.</li>
+<li>Rubrik Connector name: Name of the Rubrik Custom Connector deployed previously</li>
+<li>keyvaultname: Name of keyvault where secrets are stored.</li>
+<li>tenantId: TenantId where keyvault is located.</li>
+<li>Teams Group Id: Id of the Teams Group where the adaptive card will be posted</li>
+<li>Teams Channel Id: Id of the Teams Channel where the adaptive card will be posted</li>
+<li>Polling Interval: Time Interval in minutes for checking hunt status (Ex: 5)</li>
+<li>Polling Timeout: Time limit in minutes for checking hunt status (Ex: 720)
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FRubrikSecurityCloud%2FPlaybooks%2FRubrikTurboThreatHunt%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FRubrikSecurityCloud%2FPlaybooks%2FRubrikTurboThreatHunt%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></li>
+</ul>
+</li>
+</ol>
+<h3>Post-Deployment instructions</h3>
+<h4>a. Authorize connections</h4>
+<p>Once deployment is complete, authorize each connection like keyvault.</p>
+<ol>
+<li>Click the connection resource</li>
+<li>Click edit API connection</li>
+<li>Click Authorize</li>
+<li>Sign in</li>
+<li>Click Save</li>
+<li>Repeat steps for other connections</li>
+</ol>
+<h4>a. Authorize connections</h4>
+<p>Once deployment is complete, authorize each connection like keyvault.</p>
+<ol>
+<li>Click the connection resource</li>
+<li>Click edit API connection</li>
+<li>Click Authorize</li>
+<li>Sign in</li>
+<li>Click Save</li>
+<li>Repeat steps for other connections</li>
+</ol>
+<h4>b. Assign Role to add comment into incident</h4>
+<p>Assign role to this playbook. <br />
+1. Go to Log Analytics Workspace → your workspace → Access Control → Add
+2. Add role assignment
+3. Assignment type: Job function roles -&gt; Add 'Microsoft Sentinel Contributor' as a Role
+4. Members: select managed identity for assigned access to and add your logic app as member
+5. Click on review+assign</p>
+<h4>c. Configurations in Microsoft Sentinel</h4>
+<ol>
+<li>In Microsoft sentinel, analytical rules should be configured to trigger an incident.</li>
+<li>To manually run the playbook on a particular incident follow the below steps:
+   a. Go to Microsoft Sentinel -&gt; your workspace -&gt; Incidents
+   b. Select an incident.
+   c. In the right pane, click on Actions, and from the dropdown select the 'Run Playbook' option.
+   d. Click on the Run button beside this playbook.</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/rubriksecuritycloud.html">Back to RubrikSecurityCloud</a></p>
+</div>
+</body>
+</html>

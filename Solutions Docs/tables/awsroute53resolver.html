@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWSRoute53Resolver &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>AWSRoute53Resolver</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for AWSRoute53Resolver table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">AWS</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awsroute53resolver">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (23 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awsroute53resolver">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccountId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The AWS account ID that owns the VPC which sent the query.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Answers</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Array of DNS response records, including resolved IP addresses and other query-related information.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FirewallDomainListId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID of the domain list that matched the query domain.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FirewallRuleAction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Rule action from the matching firewall rule.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FirewallRuleGroupId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID of the firewall rule group that applied to the query.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates the type of DNS log (e.g. ResolverQueryLogs).</td>
+</tr>
+<tr>
+<td style="text-align: left;">QueryClass</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The DNS query class. Usually IN (Internet).</td>
+</tr>
+<tr>
+<td style="text-align: left;">QueryName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The domain name that was queried.</td>
+</tr>
+<tr>
+<td style="text-align: left;">QueryType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The DNS record type requested (e.g. A, AAAA, MX).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rcode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Textual DNS response code (e.g. NOERROR, NXDOMAIN).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Region</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">AWS region where the log was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source IP address of the instance that made the query.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcIds</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Identifiers related to the source instance where the DNS query originated from or passed through.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcPort</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source port on the instance that made the query.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time the DNS query was received by Route 53 Resolver.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Transport</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The protocol used to send the query (e.g. UDP, TCP, TLS).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">Version</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Version of the log format.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VpcId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the VPC where the DNS query originated.</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/amazon-web-services-route-53.html">Amazon Web Services Route 53</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/awsroute53resolverccpdefinition.html">Amazon Web Services S3 DNS Route53 (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

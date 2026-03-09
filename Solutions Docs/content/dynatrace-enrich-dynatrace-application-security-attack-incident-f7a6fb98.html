@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enrich Dynatrace Application Security Attack Incident &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Enrich Dynatrace Application Security Attack Incident</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>This playbook will enriche Dynatrace Application Security Attack Incidents with additional information when new incident is opened.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/dynatrace.html">Dynatrace</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Playbooks/Enrich_DynatraceApplicationSecurityAttackIncident/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Playbooks/Enrich_DynatraceApplicationSecurityAttackIncident/readme.md">Enrich_DynatraceApplicationSecurityAttackIncident/readme.md</a></em></p>
+</blockquote>
+<h1>Enrich_DynatraceApplicationSecurityAttackIncident</h1>
+<p>author: Dynatrace</p>
+<p>This playbook uses the Dynatrace REST APIs to automatically enrich incidents created by Microsoft Sentinel. You need a valid Dynatrace tenant with <a href="https://www.dynatrace.com/platform/application-security/">Application Security</a> enabled. To learn more about the Dynatrace platform <a href="https://www.dynatrace.com/trial">Start your free trial</a></p>
+<p>** Prerequisites ** 
+- Follow <a href="https://docs.dynatrace.com/docs/shortlink/token#create-api-token">these instructions</a> to generate a Dynatrace access token, the token should have Read attacks (attacks.read) scope.
+- [Important step]Store the Dynatrace Access Token as a <a href="https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal">secret in Azure Key vault</a> and provide the key vault name during playbook deployment, by convention the secret name should be 'DynatraceAccessToken'.</p>
+<p>** Post Install Notes:**</p>
+<p>The Logic App uses a Managed System Identity (MSI) to update the Microsoft Sentinel Incident. </p>
+<p>Assign RBAC 'Microsoft Sentinel Responder' role to the Logic App at the Resource Group level of the Log Analytics Workspace.</p>
+<p>Assign access policy on key vault for Playbook to fetch the secret key</p>
+<h2>Initial Setup</h2>
+<p>A Microsoft Sentinel playbook is utilized by automation rules, therefore to automatically trigger this playbook you must setup a new automation rule. If you have not set permissions yet, <a href="https://docs.microsoft.com/azure/sentinel/automate-incident-handling-with-automation-rules#permissions-for-automation-rules-to-run-playbooks">review here</a></p>
+<p>Basic steps for setup of the playbook and automation rule are as follows :</p>
+<ol>
+<li>Go to the Automation blade in Microsoft Sentinel.</li>
+<li>Create a new playbook from the 'Enrich Dynatrace Application Security Attack Incident' <a href="https://learn.microsoft.com/en-us/azure/sentinel/use-playbook-templates">playbook template</a>
+- KeyvaultName: The name of the keyvault created as pre-requisite
+- DynatraceTenant: xyz.dynatrace.com</li>
+<li>Create a new <a href="https://learn.microsoft.com/en-us/azure/sentinel/create-manage-use-automation-rules">automation rule</a>
+- Name : Enrich Dynatrace Application Security Attack Incident
+- Trigger : When incident is created
+- Conditions : If Analytic rule name contains 'Dynatrace Application Security - Attack detection'
+- Actions : Run playbook EnrichDynatraceApplicationSecurityAttackIncident</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/dynatrace.html">Back to Dynatrace</a></p>
+</div>
+</body>
+</html>

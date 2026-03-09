@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bitsight data connector &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Bitsight data connector</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/BitSight.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>BitSight</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">BitSight Technologies, Inc.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/bitsight.html">BitSight</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight/Data%20Connectors/BitSightDataConnector/BitSight_API_FunctionApp.json">BitSight_API_FunctionApp.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>Azure Function code contains both Log Ingestion API and HTTP Data Collector API patterns</em></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.BitSight.com/">BitSight</a> Data Connector supports evidence-based cyber risk monitoring by bringing BitSight data in Microsoft Sentinel.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/bitsightalerts-data-cl.html"><code>BitsightAlerts_data_CL</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/bitsightbreaches-data-cl.html"><code>BitsightBreaches_data_CL</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/bitsightcompany-details-cl.html"><code>BitsightCompany_details_CL</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/bitsightcompany-rating-details-cl.html"><code>BitsightCompany_rating_details_CL</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/bitsightdiligence-historical-statistics-cl.html"><code>BitsightDiligence_historical_statistics_CL</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/bitsightdiligence-statistics-cl.html"><code>BitsightDiligence_statistics_CL</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/bitsightfindings-data-cl.html"><code>BitsightFindings_data_CL</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/bitsightfindings-summary-cl.html"><code>BitsightFindings_summary_CL</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/bitsightgraph-data-cl.html"><code>BitsightGraph_data_CL</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/bitsightindustrial-statistics-cl.html"><code>BitsightIndustrial_statistics_CL</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/bitsightobservation-statistics-cl.html"><code>BitsightObservation_statistics_CL</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
+- <strong>REST API Credentials/permissions</strong>: BitSight API Token is required.  See the documentation to <a href="https://help.bitsighttech.com/hc/en-us/articles/115014888388-API-Token-Management">learn more</a> about API Token.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+<p><strong>NOTE:</strong> This connector uses Azure Functions to connect to the BitSight API to pull its logs into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
+<p><strong>(Optional Step)</strong> Securely store workspace and API authorization key(s) or token(s) in Azure Key Vault. Azure Key Vault provides a secure mechanism to store and retrieve key values. <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Follow these instructions</a> to use Azure Key Vault with an Azure Function App.</p>
+</blockquote>
+<p><strong>STEP 1 - Steps to Create/Get Bitsight API Token</strong></p>
+<p>Follow these instructions to get a BitSight API Token.
+ 1. For SPM App: Refer to the <a href="https://service.bitsight.com/app/spm/account">User Preference</a> tab of your Account page, 
+        Go to Settings &gt; Account &gt; User Preferences &gt; API Token.
+ 2. For TPRM App: Refer to the <a href="https://service.bitsight.com/app/tprm/account">User Preference</a> tab of your Account page, 
+        Go to Settings &gt; Account &gt; User Preferences &gt; API Token.
+ 3. For Classic BitSight: Go to your <a href="https://service.bitsight.com/settings">Account</a> page, 
+        Go to Settings &gt; Account &gt; API Token.</p>
+<p><strong>STEP 2 - App Registration steps for the Application in Microsoft Entra ID</strong></p>
+<p>This integration requires an App registration in the Azure portal. Follow the steps in this section to create a new application in Microsoft Entra ID:
+ 1. Sign in to the <a href="https://portal.azure.com/">Azure portal</a>.
+ 2. Search for and select <strong>Microsoft Entra ID</strong>.
+ 3. Under <strong>Manage</strong>, select <strong>App registrations &gt; New registration</strong>.
+ 4. Enter a display <strong>Name</strong> for your application.
+ 5. Select <strong>Register</strong> to complete the initial app registration.
+ 6. When registration finishes, the Azure portal displays the app registration's Overview pane. You see the <strong>Application (client) ID</strong> and <strong>Tenant ID</strong>. The client ID and Tenant ID is required as configuration parameters for the execution of BitSight Data Connector. </p>
+<blockquote>
+<p><strong>Reference link:</strong> <a href="https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app">https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app</a></p>
+</blockquote>
+<p><strong>STEP 3 - Add a client secret for application in Microsoft Entra ID</strong></p>
+<p>Sometimes called an application password, a client secret is a string value required for the execution of BitSight Data Connector. Follow the steps in this section to create a new Client Secret:
+ 1. In the Azure portal, in <strong>App registrations</strong>, select your application.
+ 2. Select <strong>Certificates &amp; secrets &gt; Client secrets &gt; New client secret</strong>.
+ 3. Add a description for your client secret.
+ 4. Select an expiration for the secret or specify a custom lifetime. Limit is 24 months.
+ 5. Select <strong>Add</strong>. 
+ 6. <em>Record the secret's value for use in your client application code. This secret value is never displayed again after you leave this page.</em> The secret value is required as configuration parameter for the execution of BitSight Data Connector. </p>
+<blockquote>
+<p><strong>Reference link:</strong> <a href="https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret">https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret</a></p>
+</blockquote>
+<p><strong>STEP 4 - Get Object ID of your application in Microsoft Entra ID</strong></p>
+<p>After creating your app registration, follow the steps in this section to get Object ID:
+ 1. Go to <strong>Microsoft Entra ID</strong>.
+ 2. Select <strong>Enterprise applications</strong> from the left menu.
+ 3. Find your newly created application in the list (you can search by the name you provided).
+ 4. Click on the application.
+ 5. On the overview page, copy the <strong>Object ID</strong>. This is the <strong>AzureEntraObjectId</strong> needed for your ARM template role assignment.</p>
+<p><strong>STEP 5 - Assign role of Contributor to application in Microsoft Entra ID</strong></p>
+<p>Follow the steps in this section to assign the role:
+ 1. In the Azure portal, Go to <strong>Resource Group</strong> and select your resource group.
+ 2. Go to <strong>Access control (IAM)</strong> from left panel.
+ 3. Click on <strong>Add</strong>, and then select <strong>Add role assignment</strong>.
+ 4. Select <strong>Contributor</strong> as role and click on next.
+ 5. In <strong>Assign access to</strong>, select <code>User, group, or service principal</code>.
+ 6. Click on <strong>add members</strong> and type <strong>your app name</strong> that you have created and select it.
+ 7. Now click on <strong>Review + assign</strong> and then again click on <strong>Review + assign</strong>. </p>
+<blockquote>
+<p><strong>Reference link:</strong> <a href="https://learn.microsoft.com/azure/role-based-access-control/role-assignments-portal">https://learn.microsoft.com/azure/role-based-access-control/role-assignments-portal</a></p>
+</blockquote>
+<p><strong>STEP 6 - Choose ONE from the following two deployment options to deploy the connector and the associated Azure Function</strong></p>
+<blockquote>
+<p><strong>IMPORTANT:</strong> Before deploying the BitSight data connector, have the Workspace ID and Workspace Primary Key (can be copied from the following) readily available.., as well as the BitSight API Token.
+- <strong>Workspace ID</strong>: <code>WorkspaceId</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
+- <strong>Primary Key</strong>: <code>PrimaryKey</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+<p><strong>7. Option 1 - Azure Resource Manager (ARM) Template</strong></p>
+<p>Use this method for automated deployment of the BitSight connector.</p>
+<ol>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below. </p>
+<p><a href="https://aka.ms/sentinel-BitSight-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. 
+3. Enter the below information :  </p>
+<p>a. <strong>FunctionName</strong> - Name of the Azure Function App to be created. Default is BitSight. </p>
+<p>b. <strong>API_token</strong> - Enter API Token of your BitSight account. </p>
+<p>c. <strong>Azure_Client_Id</strong> - Enter Azure Client Id that you have created during app registration. </p>
+<p>d. <strong>Azure_Client_Secret</strong> - Enter Azure Client Secret that you have created during creating the client secret. </p>
+<p>e. <strong>Azure_Tenant_Id</strong> - Enter Azure Tenant Id of your Microsoft Entra ID. </p>
+<p>f. <strong>Azure_Entra_Object_Id</strong> - Enter Object id of your Microsoft Entra App. </p>
+<p>g. <strong>Companies</strong> - Please add valid company names separated by asterisk(<em>). For example: Actors Films</em>Goliath Investments LLC<em>HCL Group</em>Saperix, Inc. </p>
+<p>h. <strong>Location</strong> - The location in which the data collection rules and data collection endpoints should be deployed. </p>
+<p>i. <strong>WorkspaceName</strong> - Log analytics workspace name. Can be found under Log analytics "Settings". </p>
+<p>j. <strong>Portfolio_Companies_Table_Name</strong> - Name of the table to store portfolio companies. Default is BitsightPortfolio_Companies. Please do not keep this field as empty else you will get validation error. </p>
+<p>k. <strong>Alerts_Table_Name</strong> - Name of the table to store alerts. Default is BitsightAlerts_data. Please do not keep this field as empty else you will get validation error. </p>
+<p>l. <strong>Breaches_Table_Name</strong> - Name of the table to store breaches. Default is BitsightBreaches_data. Please do not keep this field as empty else you will get validation error. </p>
+<p>m. <strong>Company_Table_Name</strong> - Name of the table to store company details. Default is BitsightCompany_details. Please do not keep this field as empty else you will get validation error. </p>
+<p>n. <strong>Company_Rating_Details_Table_Name</strong> - Name of the table to store company rating details. Default is BitsightCompany_rating_details. Please do not keep this field as empty else you will get validation error. </p>
+<p>o. <strong>Diligence_Historical_Statistics_Table_Name</strong> - Name of the table to store diligence historical statistics. Default is BitsightDiligence_historical_statistics. Please do not keep this field as empty else you will get validation error. </p>
+<p>p. <strong>Diligence_Statistics_Table_Name</strong> - Name of the table to store diligence statistics. Default is BitsightDiligence_statistics. Please do not keep this field as empty else you will get validation error. </p>
+<p>q. <strong>Findings_Summary_Table_Name</strong> - Name of the table to store findings summary. Default is BitsightFindings_summary. Please do not keep this field as empty else you will get validation error. </p>
+<p>r. <strong>Findings_Table_Name</strong> - Name of the table to store findings data. Default is BitsightFindings_data. Please do not keep this field as empty else you will get validation error. </p>
+<p>s. <strong>Graph_Table_Name</strong> - Name of the table to store graph data. Default is BitsightGraph_data. Please do not keep this field as empty else you will get validation error. </p>
+<p>t. <strong>Industrial_Statistics_Table_Name</strong> - Name of the table to store industrial statistics. Default is BitsightIndustrial_statistics. Please do not keep this field as empty else you will get validation error. </p>
+<p>u. <strong>Observation_Statistics_Table_Name</strong> - Name of the table to store observation statistics. Default is BitsightObservation_statistics. Please do not keep this field as empty else you will get validation error. </p>
+<p>v. <strong>LogLevel</strong> - Select log level or log severity value from DEBUG, INFO, ERROR. By default it is set to INFO. </p>
+<p>w. <strong>Schedule</strong> - Please enter a valid Quartz cron-expression. (Example: 0 0 * * * *). </p>
+<p>x. <strong>Schedule_Portfolio</strong> - Please enter a valid Quartz cron-expression. (Example: 0 <em>/30 * * * </em>). </p>
+<p>y. <strong>AppInsightsWorkspaceResourceID</strong> - Use 'Log Analytic Workspace--&gt;Properties' blade having 'Resource ID' property value. This is a fully qualified resourceId which is in format '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}'. 
+4. Once all application settings have been entered, click <strong>Review + create</strong> to deploy..</p>
+</li>
+</ol>
+<p><strong>8. Option 2 - Manual Deployment of Azure Functions</strong></p>
+<p>Use the following step-by-step instructions to deploy the BitSight data connector manually with Azure Functions (Deployment via Visual Studio Code).</p>
+<p><strong>1. Deploy a Function App</strong></p>
+<blockquote>
+<p><strong>NOTE:</strong> You will need to <a href="https://docs.microsoft.com/azure/azure-functions/functions-create-first-function-python#prerequisites">prepare VS code</a> for Azure function development.</p>
+</blockquote>
+<ol>
+<li>Download the <a href="https://aka.ms/sentinel-BitSight310-functionapp">Azure Function App</a> file. Extract archive to your local development computer.</li>
+<li>Start VS Code. Choose File in the main menu and select Open Folder.</li>
+<li>Select the top level folder from extracted files.</li>
+<li>Choose the Azure icon in the Activity bar, then in the <strong>Azure: Functions</strong> area, choose the <strong>Deploy to function app</strong> button.
+If you aren't already signed in, choose the Azure icon in the Activity bar, then in the <strong>Azure: Functions</strong> area, choose <strong>Sign in to Azure</strong>
+If you're already signed in, go to the next step.</li>
+<li>
+<p>Provide the following information at the prompts:</p>
+<p>a. <strong>Select folder:</strong> Choose a folder from your workspace or browse to one that contains your function app.</p>
+<p>b. <strong>Select Subscription:</strong> Choose the subscription to use.</p>
+<p>c. Select <strong>Create new Function App in Azure</strong> (Don't choose the Advanced option)</p>
+<p>d. <strong>Enter a globally unique name for the function app:</strong> Type a name that is valid in a URL path. The name you type is validated to make sure that it's unique in Azure Functions. (e.g. BitSightXXXXX).</p>
+<p>e. <strong>Select a runtime:</strong> Choose Python 3.8 or above.</p>
+<p>f. Select a location for new resources. For better performance and lower costs choose the same <a href="https://azure.microsoft.com/regions/">region</a> where Microsoft Sentinel is located.</p>
+</li>
+<li>
+<p>Deployment will begin. A notification is displayed after your function app is created and the deployment package is applied.</p>
+</li>
+<li>Go to Azure Portal for the Function App configuration.</li>
+</ol>
+<p><strong>2. Configure the Function App</strong></p>
+<ol>
+<li>In the Function App, select the Function App Name and select <strong>Configuration</strong>.</li>
+<li>In the <strong>Application settings</strong> tab, select <strong>+ New application setting</strong>.</li>
+<li>
+<p>Add each of the following application settings individually, with their respective values (case-sensitive): </p>
+<p>a. <strong>FunctionName</strong> - Name of the Azure Function App to be created. Default is BitSight. </p>
+<p>b. <strong>API_token</strong> - Enter API Token of your BitSight account. </p>
+<p>c. <strong>Azure_Client_Id</strong> - Enter Azure Client Id that you have created during app registration. </p>
+<p>d. <strong>Azure_Client_Secret</strong> - Enter Azure Client Secret that you have created during creating the client secret. </p>
+<p>e. <strong>Azure_Tenant_Id</strong> - Enter Azure Tenant Id of your Microsoft Entra ID. </p>
+<p>f. <strong>Azure_Entra_Object_Id</strong> - Enter Object id of your Microsoft Entra App. </p>
+<p>g. <strong>Companies</strong> - Please add valid company names separated by asterisk(<em>). For example: Actors Films</em>Goliath Investments LLC<em>HCL Group</em>Saperix, Inc. </p>
+<p>h. <strong>Location</strong> - The location in which the data collection rules and data collection endpoints should be deployed. </p>
+<p>i. <strong>WorkspaceName</strong> - Log analytics workspace name. Can be found under Log analytics "Settings". </p>
+<p>j. <strong>Portfolio_Companies_Table_Name</strong> - Name of the table to store portfolio companies. Default is BitsightPortfolio_Companies. Please do not keep this field as empty else you will get validation error. </p>
+<p>k. <strong>Alerts_Table_Name</strong> - Name of the table to store alerts. Default is BitsightAlerts_data. Please do not keep this field as empty else you will get validation error. </p>
+<p>l. <strong>Breaches_Table_Name</strong> - Name of the table to store breaches. Default is BitsightBreaches_data. Please do not keep this field as empty else you will get validation error. </p>
+<p>m. <strong>Company_Table_Name</strong> - Name of the table to store company details. Default is BitsightCompany_details. Please do not keep this field as empty else you will get validation error. </p>
+<p>n. <strong>Company_Rating_Details_Table_Name</strong> - Name of the table to store company rating details. Default is BitsightCompany_rating_details. Please do not keep this field as empty else you will get validation error. </p>
+<p>o. <strong>Diligence_Historical_Statistics_Table_Name</strong> - Name of the table to store diligence historical statistics. Default is BitsightDiligence_historical_statistics. Please do not keep this field as empty else you will get validation error. </p>
+<p>p. <strong>Diligence_Statistics_Table_Name</strong> - Name of the table to store diligence statistics. Default is BitsightDiligence_statistics. Please do not keep this field as empty else you will get validation error. </p>
+<p>q. <strong>Findings_Summary_Table_Name</strong> - Name of the table to store findings summary. Default is BitsightFindings_summary. Please do not keep this field as empty else you will get validation error. </p>
+<p>r. <strong>Findings_Table_Name</strong> - Name of the table to store findings data. Default is BitsightFindings_data. Please do not keep this field as empty else you will get validation error. </p>
+<p>s. <strong>Graph_Table_Name</strong> - Name of the table to store graph data. Default is BitsightGraph_data. Please do not keep this field as empty else you will get validation error. </p>
+<p>t. <strong>Industrial_Statistics_Table_Name</strong> - Name of the table to store industrial statistics. Default is BitsightIndustrial_statistics. Please do not keep this field as empty else you will get validation error. </p>
+<p>u. <strong>Observation_Statistics_Table_Name</strong> - Name of the table to store observation statistics. Default is BitsightObservation_statistics. Please do not keep this field as empty else you will get validation error. </p>
+<p>v. <strong>LogLevel</strong> - Select log level or log severity value from DEBUG, INFO, ERROR. By default it is set to INFO. </p>
+<p>w. <strong>Schedule</strong> - Please enter a valid Quartz cron-expression. (Example: 0 0 * * * *). </p>
+<p>x. <strong>Schedule_Portfolio</strong> - Please enter a valid Quartz cron-expression. (Example: 0 <em>/30 * * * </em>). </p>
+<p>y. <strong>AppInsightsWorkspaceResourceID</strong> - Use 'Log Analytic Workspace--&gt;Properties' blade having 'Resource ID' property value. This is a fully qualified resourceId which is in format '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}'. 
+4. Once all application settings have been entered, click <strong>Save</strong>.</p>
+</li>
+</ol>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight\Data Connectors\BitSightDataConnector\README.md">BitSight\Data Connectors\BitSightDataConnector\README.md</a></em></p>
+</blockquote>
+<h1>BitSight Data Connector</h1>
+<ul>
+<li><a href="#Introduction">Introduction</a></li>
+<li><a href="#Description">Description</a></li>
+<li><a href="#Folders">Folders</a></li>
+<li><a href="#Prerequisites">Prerequisites</a></li>
+<li><a href="#Configuration">Configuration</a></li>
+<li><a href="#Installing-for-the-users">Installing for the users</a></li>
+<li><a href="#Installing-for-testing">Installing for testing</a></li>
+</ul>
+<h2>Introduction<a name="Introduction"></a></h2>
+<p>This folder contains the Azure function time trigger code for BitSight Data Connector. The connector will run periodically and ingest the BitSight data into the Microsoft Sentinel logs custom tables.</p>
+<h2>Description<a name="Description"></a></h2>
+<p>The <a href="https://www.BitSight.com/">BitSight</a> Data Connector supports evidence-based cyber risk monitoring by bringing BitSight data in Microsoft Sentinel.</p>
+<h2>Folders<a name="Folders"></a></h2>
+<ol>
+<li><code>BitSightDataConnector/</code> - This contains the package, requirements, ARM JSON file, connector page template JSON, and other dependencies.</li>
+<li><code>AlertsGraphStatisticsDetails/</code> - This contains the Azure function source code to ingest the data of below mentioned endpoints.<ul>
+<li>Alert Data</li>
+<li>Graph Data</li>
+<li>Diligence statistics</li>
+<li>Industries statistics</li>
+<li>Observations statistics</li>
+<li>Diligence historical statistics</li>
+</ul>
+</li>
+<li><code>BreachesDetails/</code> - This contains the Azure function source code to ingest the data of below mentioned endpoint.<ul>
+<li>Breaches details</li>
+</ul>
+</li>
+<li><code>CompaniesDetails/</code> - This contains the Azure function source code to ingest the data of below mentioned endpoint.<ul>
+<li>Companies details</li>
+</ul>
+</li>
+<li><code>FindingsDetails/</code> - This contains the Azure function source code to ingest the data of below mentioned endpoint.<ul>
+<li>Findings Data</li>
+</ul>
+</li>
+<li><code>FindingsSummaryDetails/</code> - This contains the Azure function source code to ingest the data of below mentioned endpoint.<ul>
+<li>Findings summary</li>
+</ul>
+</li>
+<li><code>PortFolioCompanies/</code> - This contains azure function source code to ingest the data of companies available in Portfolio which will be used by other functions to retrieve various details for each company.</li>
+<li><code>SharedCode/</code> - This contains the constants, logger, exceptions and common methods used in each azure function.</li>
+</ol>
+<h2>Prerequisites<a name="Prerequisites"></a></h2>
+<ol>
+<li>BitSight API Token is required.  See the documentation to <a href="https://help.bitsighttech.com/hc/en-us/articles/115014888388-API-Token-Management">learn more</a> about API Token.</li>
+</ol>
+<h2>Configuration<a name="Configuration"></a></h2>
+<h3>STEP 1 - Steps to Create/Get Bitsight API Token</h3>
+<p>Follow these instructions to get a BitSight API Token</p>
+<ol>
+<li>For SPM App: Refer to the <a href="https://service.bitsight.com/app/spm/account">User Preference</a> tab of your Account page, \n\t\tGo to Settings &gt; Account &gt; User Preferences &gt; API Token.</li>
+<li>For TPRM App: Refer to the <a href="https://service.bitsight.com/app/tprm/account">User Preference</a> tab of your Account page, \n\t\tGo to Settings &gt; Account &gt; User Preferences &gt; API Token.</li>
+<li>For Classic BitSight: Go to your <a href="https://service.bitsight.com/settings">Account</a> page, \n\t\tGo to Settings &gt; Account &gt; API Token.</li>
+</ol>
+<h3>STEP 2 - App Registration steps for the Application in Microsoft Entra ID</h3>
+<p>This integration requires an App registration in the Azure portal. Follow the steps in this section to create a new application in Microsoft Entra ID:</p>
+<ol>
+<li>Sign in to the Azure portal.</li>
+<li>Search for and select Microsoft Entra ID.</li>
+<li>Under Manage, select App registrations &gt; New registration.</li>
+<li>Enter a display Name for your application.</li>
+<li>Select Register to complete the initial app registration.</li>
+<li>When registration finishes, the Azure portal displays the app registration's Overview pane. You see the Application (client) ID and Tenant ID. The client ID and Tenant ID is required as configuration parameters for the execution of BitSight Data Connector.
+- Reference link: https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app</li>
+</ol>
+<h3>STEP 3 - Add a client secret for application in Microsoft Entra ID</h3>
+<p>Sometimes called an application password, a client secret is a string value required for the execution of BitSight Data Connector. Follow the steps in this section to create a new Client Secret:</p>
+<ol>
+<li>In the Azure portal, in App registrations, select your application.</li>
+<li>Select Certificates &amp; secrets &gt; Client secrets &gt; New client secret.</li>
+<li>Add a description for your client secret.</li>
+<li>Select an expiration for the secret or specify a custom lifetime. Limit is 24 months.</li>
+<li>Select Add.</li>
+<li>Record the secret's value for use in your client application code. This secret value is never displayed again after you leave this page. The secret value is required as configuration parameter for the execution of BitSight Data Connector.
+- Reference link: https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret</li>
+</ol>
+<h3>STEP 4 - Assign role of Contributor to application in Microsoft Entra ID</h3>
+<p>Follow the steps in this section to assign the role:</p>
+<ol>
+<li>In the Azure portal, Go to Resource Group and select your resource group.</li>
+<li>Go to Access control (IAM) from left panel.</li>
+<li>Click on Add, and then select Add role assignment.</li>
+<li>Select Contributor as role and click on next.</li>
+<li>In Assign access to, select User, group, or service principal.</li>
+<li>Click on add members and type your app name that you have created and select it.
+Now click on Review + assign and then again click on Review + assign.
+- Reference link: https://learn.microsoft.com/azure/role-based-access-control/role-assignments-portal</li>
+</ol>
+<h2>Installing for the users<a name="Installing-for-the-users"></a></h2>
+<p>After the solution is published, we can find the connector in the connector gallery of Microsoft Sentinel among other connectors in Data connectors section of Sentinel.</p>
+<p>i. Go to Microsoft Sentinel -&gt; Data Connectors</p>
+<p>ii. Click on the BitSight Data Connector, connector page will open.</p>
+<p>iii. Click on the blue <code>Deploy to Azure</code> button.</p>
+<p>It will lead to a custom deployment page where after user need to select <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>.
+And need to enter below information to configure BitSight Data Connector.
+User Inputs  | Default Value
+------------- | -------------
+Function Name  | BitSight
+API_token  | None
+Azure_Client_Id | None
+Azure_Client_Secret | None
+Azure_Tenant_Id | None
+Companies  | ALL
+Workspace ID  | None
+Workspace Key  | None
+Portfolio_Companies_Table_Name | Portfolio_Companies
+Alerts_Table_Name  | Alerts_data
+Breaches_Table_Name | BitsightBreaches_data
+Company_Table_Name  | BitsightCompany_details
+Company_Rating_Details_Table_Name  | BitsightCompany_rating_details
+Diligence_Historical_Statistics_Table_Name  | BitsightDiligence_historical_statistics
+Diligence_Statistics_Table_Name  | BitsightDiligence_statistics
+Findings_Summary_Table_Name  | BitsightFindings_summary
+Findings_Table_Name  | BitsightFindings_data
+Graph_Table_Name  | BitsightGraph_data
+Industrial_Statistics_Table_Name  | BitsightIndustrial_statistics
+Observation_Statistics_Table_Name  | BitsightObservation_statistics
+Log Level  | INFO
+Schedule  | 0 0 * * * *
+Schedule_Portfolio | 0 */30 *  * * *</p>
+<p>The connector should start ingesting the data into the logs at every time interval specified in Schedule during configuration.</p>
+<h2>Installing for testing<a name="Installing-for-testing"></a></h2>
+<p>i. Log in to Azure portal using the URL - <a href="https://ms.portal.azure.com/?feature.BringYourOwnConnector=true&amp;feature.experimentationflights=ConnectorsKO#home">Azure Portal-Home</a>.</p>
+<p>ii. Go to Microsoft Sentinel -&gt; Data Connectors</p>
+<p>iii. Click the “import” button at the top and select the json file <code>BitSight_API_FunctionApp.json</code> downloaded on your local machine from Github.</p>
+<p>iv. This will load the connector page and rest of the process will be same as the Installing for users guideline above.</p>
+<p>Each invocation and its logs of the function can be seen in Function App service of Azure, available in the Azure Portal outside the Microsoft Sentinel.</p>
+<p>i. Go to Function App and click on the function which you have deployed, identified with the given name at the deployment stage.</p>
+<p>ii. Go to Functions -&gt; Any of our function -&gt; Monitor</p>
+<p>iii. By clicking on invocation time, you can see all the logs for that run.</p>
+<p><strong>Note: Furthermore we can check logs in Application Insights of the given function in detail if needed. We can search the logs by operation ID in Transaction search section.</strong></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

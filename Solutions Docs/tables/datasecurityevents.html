@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DataSecurityEvents &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>DataSecurityEvents</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<blockquote>
+<p><strong>Defender XDR Only:</strong> This table is available in Microsoft Defender XDR advanced hunting but is not available in the Azure Monitor Log Analytics table reference.</p>
+</blockquote>
+<p>Information about user activities that violate user-defined or default policies in the Microsoft Purview suite of solutions</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">XDR</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-datasecurityevents-table">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (61 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/datasecurityevents">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">AadDeviceId</td>
+<td style="text-align: left;">guid</td>
+<td style="text-align: left;">Unique identifier for the device in Microsoft Entra ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccountObjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the account in Microsoft Entra ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccountUpn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User principal name (UPN) of the account</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of activity that triggered the event</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActivityId</td>
+<td style="text-align: left;">guid</td>
+<td style="text-align: left;">Unique identifier of the activity log</td>
+</tr>
+<tr>
+<td style="text-align: left;">ApplicationNames</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">List of application names used or related to the event</td>
+</tr>
+<tr>
+<td style="text-align: left;">CcPolicyMatchInfo</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Details of the Communications Compliance policy matches for this event; in JSON array format</td>
+</tr>
+<tr>
+<td style="text-align: left;">CloudAppAlertId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the alert in Microsoft Defender for Cloud Apps</td>
+</tr>
+<tr>
+<td style="text-align: left;">Department</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the department that the account user belongs to</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceDestinationLocationType</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Indicates the type of location where the endpoint signals connected to; values can be: 0 (Unknown), 1 (Local), 2 (Remote), 3 (Removable), 4 (Cloud), 5 (File share)</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the device in Microsoft Defender for Endpoint</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Fully qualified domain name(FQDN) of the device</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceSourceLocationType</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Indicates the type of location where the endpoint signals originated from; values can be: 0 (Unknown), 1 (Local), 2 (Remote), 3 (Removable), 4 (Cloud), 5 (File share)</td>
+</tr>
+<tr>
+<td style="text-align: left;">DlpPolicyEnforcementMode</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Indicates the Data Loss Prevention policy that was enforced; value can be: 0 (None), 1 (Audit), 2 (Warn), 3 (Warn and bypass), 4 (Block), 5 (Allow)</td>
+</tr>
+<tr>
+<td style="text-align: left;">DlpPolicyMatchInfo</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Information around the list of data loss prevention (DLP) policies matching this event</td>
+</tr>
+<tr>
+<td style="text-align: left;">DlpPolicyRuleMatchInfo</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Details of the data loss prevention (DLP)  rules that matched with this event; in JSON array format</td>
+</tr>
+<tr>
+<td style="text-align: left;">EmailAttachmentCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Number of email attachments</td>
+</tr>
+<tr>
+<td style="text-align: left;">EmailAttachmentInfo</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Details of email attachments; in JSON array format</td>
+</tr>
+<tr>
+<td style="text-align: left;">EmailSubject</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Subject of the email</td>
+</tr>
+<tr>
+<td style="text-align: left;">ExternalUrlDomains</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Websites or service URLs involved in this event that is classified as External in Insider Risk Management global settings</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileRenameInfo</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of the file (file name and extension) before this event</td>
+</tr>
+<tr>
+<td style="text-align: left;">InternetMessageId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Public-facing identifier for the email or Teams message that is set by the sending email system</td>
+</tr>
+<tr>
+<td style="text-align: left;">IPAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP addresses of the clients on which the activity was performed; can contain multiple IPs if related to Microsoft Defender for Cloud Apps alerts</td>
+</tr>
+<tr>
+<td style="text-align: left;">IrmActionCategory</td>
+<td style="text-align: left;">enum</td>
+<td style="text-align: left;">A unique enumeration value indicating the activity category in Microsoft Purview Insider Risk Management</td>
+</tr>
+<tr>
+<td style="text-align: left;">IrmPolicyMatchInfo</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Details of Insider Risk Management policy matches for the content involved in the event; in JSON array format</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsHidden</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the user has marked the content as hidden (True) or not (False)</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsManagedDevice</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if the device is managed by the organization (True) or not (False)</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkMessageId</td>
+<td style="text-align: left;">guid</td>
+<td style="text-align: left;">Unique identifier for the email, generated by Microsoft 365</td>
+</tr>
+<tr>
+<td style="text-align: left;">ObjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the object that the recorded action was applied to, in case of files, it includes the extension</td>
+</tr>
+<tr>
+<td style="text-align: left;">ObjectName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the object that the recorded action was applied to, in case of files, it includes the extension</td>
+</tr>
+<tr>
+<td style="text-align: left;">ObjectSize</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Size of the object in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">ObjectType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of object, such as a file or a folder, that the recorded action was applied to</td>
+</tr>
+<tr>
+<td style="text-align: left;">Operation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the admin activity</td>
+</tr>
+<tr>
+<td style="text-align: left;">PhysicalAccessPointId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the physical access point</td>
+</tr>
+<tr>
+<td style="text-align: left;">PhysicalAccessPointName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the physical access point</td>
+</tr>
+<tr>
+<td style="text-align: left;">PhysicalAccessStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Status of physical access, whether it succeeded or failed</td>
+</tr>
+<tr>
+<td style="text-align: left;">PhysicalAssetTag</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Tag assigned to the asset as configured in Microsoft Insider Risk Management global settings</td>
+</tr>
+<tr>
+<td style="text-align: left;">PreviousSensitivityLabelId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The previous Microsoft Information Protection sensitivity label ID associated with the item in case of activities where the sensitivity label was changed</td>
+</tr>
+<tr>
+<td style="text-align: left;">PrinterName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">List of printers involved in the behavior</td>
+</tr>
+<tr>
+<td style="text-align: left;">RecipientEmailAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Email address of the recipient, or email address of the recipient after distribution list expansion</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemovableMediaManufacturer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Manufacturer name of the removable device</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemovableMediaModel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Model name of the removable device</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemovableMediaSerialNumber</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Serial number of the removable device</td>
+</tr>
+<tr>
+<td style="text-align: left;">SensitiveInfoTypeInfo</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Details of Data Loss Prevention sensitive info types detected in the impacted asset</td>
+</tr>
+<tr>
+<td style="text-align: left;">SensitivityLabelId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The current Microsoft Information Protection sensitivity label ID associated with the item</td>
+</tr>
+<tr>
+<td style="text-align: left;">SequenceCorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of the sequence activity</td>
+</tr>
+<tr>
+<td style="text-align: left;">SharepointSiteSensitivityLabelIds</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The current Microsoft Information Protection sensitivity label ID assigned to the parent site of the item related to SharePoint activities</td>
+</tr>
+<tr>
+<td style="text-align: left;">SiteUrl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The URL of the site where the file or folder accessed by the user is located</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceCodeInfo</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of the source code repository involved in the event</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceRelativeUrl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The URL of the folder that contains the file accessed by the user</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceUrlDomain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Domain where the device and email signals originated</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetFilePath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Target file path of endpoint activities</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetUrlDomain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Domain where the content was shared with or the user has browsed to</td>
+</tr>
+<tr>
+<td style="text-align: left;">TeamsChannelName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the Teams channel</td>
+</tr>
+<tr>
+<td style="text-align: left;">TeamsChannelType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the Teams channel</td>
+</tr>
+<tr>
+<td style="text-align: left;">TeamsTeamName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the Teams team</td>
+</tr>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the event was recorded</td>
+</tr>
+<tr>
+<td style="text-align: left;">UnallowedUrlDomains</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Websites or service URLs involved in this event that is configured as Unallowed in Insider Risk Management global settings</td>
+</tr>
+<tr>
+<td style="text-align: left;">UrlDomainInfo</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details about the websites or service URLs involved in the event</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserAlternateEmails</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Alternate emails or aliases of the user</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workload</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Microsoft 365 service where the event occurred</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

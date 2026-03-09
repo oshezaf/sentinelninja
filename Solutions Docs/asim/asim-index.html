@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>&lt;img src=&quot;../images/asim-badge.png&quot; alt=&quot;ASIM&quot; height=&quot;32&quot;&gt; ASIM Parsers Index &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1><img src="../images/asim-badge.png" alt="ASIM" height="32"> ASIM Parsers Index</h1>
+<p>The Advanced Security Information Model (ASIM) provides a layer of abstraction between the various data sources and the user. ASIM parsers normalize data from different sources to a common schema, enabling queries that work across multiple data sources.</p>
+<p>📚 <strong>Learn more:</strong> <a href="https://learn.microsoft.com/azure/sentinel/domain-based-essential-solutions">ASIM-based domain solutions for Microsoft Sentinel</a></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <strong>ASIM Parsers</strong> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<hr />
+<p><strong>11 schemas</strong> with 82 source parser pairs and 13 union parser pairs. See <a href="../statistics.html">📊 Statistics</a> for detailed breakdowns.</p>
+<p>* <em>Each parser pair consists of an ASim filtering parser and a vim parameter-based parser.</em></p>
+<h2>Schemas</h2>
+<ul>
+<li><a href="#alertevent">AlertEvent</a> (1 source pairs, 1 union pair)</li>
+<li><a href="#auditevent">AuditEvent</a> (8 source pairs, 1 union pair)</li>
+<li><a href="#authentication">Authentication</a> (14 source pairs, 1 union pair)</li>
+<li><a href="#dhcpevent">DhcpEvent</a> (1 source pairs, 1 union pair)</li>
+<li><a href="#dns">Dns</a> (7 source pairs, 1 union pair)</li>
+<li><a href="#fileevent">FileEvent</a> (8 source pairs, 1 union pair)</li>
+<li><a href="#networksession">NetworkSession</a> (18 source pairs, 1 union pair)</li>
+<li><a href="#processevent">ProcessEvent</a> (8 source pairs, 3 union pairs)</li>
+<li><a href="#registryevent">RegistryEvent</a> (4 source pairs, 1 union pair)</li>
+<li><a href="#usermanagement">UserManagement</a> (3 source pairs, 1 union pair)</li>
+<li><a href="#websession">WebSession</a> (8 source pairs, 1 union pair)</li>
+</ul>
+<h2>AlertEvent</h2>
+<h3>Union Parsers</h3>
+<p>These are the main entry points that combine all source parsers:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Built-in Name</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="asimalertevent.html">ASimAlertEvent</a></td>
+<td style="text-align: left;"><code>_ASim_AlertEvent</code></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEvent.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="imalertevent.html">imAlertEvent</a></td>
+<td style="text-align: left;"><code>_Im_AlertEvent</code></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/imAlertEvent.md">0.1.0</a></td>
+</tr>
+</tbody>
+</table>
+<h3>Supported Products</h3>
+<p><a href="asim-products-index.md#microsoft-defender-xdr">Microsoft Defender XDR</a>, <a href="asim-products-index.md#sentinelone">SentinelOne</a></p>
+<h3>Source Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="asimalerteventmicrosoftdefenderxdr.html">MicrosoftDefenderXDR</a></td>
+<td style="text-align: left;">Microsoft Defender XDR</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventMicrosoftDefenderXDR.md">0.2.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimalerteventsentinelonesingularity.html">SentinelOneSingularity</a></td>
+<td style="text-align: left;">SentinelOne</td>
+<td style="text-align: left;"><a href="../solutions/sentinelone.html">SentinelOne</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventSentinelOneSingularity.md">0.1.0</a></td>
+</tr>
+</tbody>
+</table>
+<h2>AuditEvent</h2>
+<h3>Union Parsers</h3>
+<p>These are the main entry points that combine all source parsers:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Built-in Name</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="asimauditevent.html">ASimAuditEvent</a></td>
+<td style="text-align: left;"><code>_ASim_AuditEvent</code></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEvent.md">0.1.3</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="imauditevent.html">imAuditEvent</a></td>
+<td style="text-align: left;"><code>_Im_AuditEvent</code></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/imAuditEvent.md">0.1.4</a></td>
+</tr>
+</tbody>
+</table>
+<h3>Supported Products</h3>
+<p><a href="asim-products-index.md#barracuda-waf">Barracuda WAF</a>, <a href="asim-products-index.md#cisco-ise">Cisco ISE</a>, <a href="asim-products-index.md#cisco-meraki">Cisco Meraki</a>, <a href="asim-products-index.md#crowdstrike-falcon-endpoint-protection">CrowdStrike Falcon Endpoint Protection</a>, <a href="asim-products-index.md#illumio-core">Illumio Core</a>, <a href="asim-products-index.md#infoblox-bloxone">Infoblox BloxOne</a>, <a href="asim-products-index.md#microsoft-azure">Microsoft Azure</a>, <a href="asim-products-index.md#microsoft-sharepoint">Microsoft SharePoint</a>, <a href="asim-products-index.md#microsoft-windows">Microsoft Windows</a>, <a href="asim-products-index.md#native">Native</a>, <a href="asim-products-index.md#sentinelone">SentinelOne</a>, <a href="asim-products-index.md#vectra">Vectra</a>, <a href="asim-products-index.md#vmware-carbon-black-cloud">VMware Carbon Black Cloud</a></p>
+<h3>Source Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="asimauditeventazureactivity.html">AzureActivity</a></td>
+<td style="text-align: left;">Microsoft Azure</td>
+<td style="text-align: left;"><a href="../solutions/azure-activity.html">Azure Activity</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventAzureActivity.md">0.3.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauditeventbarracudacef.html">BarracudaCEF</a></td>
+<td style="text-align: left;">Barracuda WAF</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventBarracudaCEF.md">0.2.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauditeventbarracudawaf.html">BarracudaWAF</a></td>
+<td style="text-align: left;">Barracuda WAF</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventBarracudaWAF.md">0.2.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauditeventciscoise.html">CiscoISE</a></td>
+<td style="text-align: left;">Cisco ISE</td>
+<td style="text-align: left;"><a href="../solutions/syslog.html">Syslog</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventCiscoISE.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauditeventciscomeraki.html">CiscoMeraki</a></td>
+<td style="text-align: left;">Cisco Meraki</td>
+<td style="text-align: left;"><a href="../solutions/ciscomeraki.html">CiscoMeraki</a><br><a href="../solutions/customlogsama.html">CustomLogsAma</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventCiscoMeraki.md">0.2.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauditeventciscomerakisyslog.html">CiscoMerakiSyslog</a></td>
+<td style="text-align: left;">Cisco Meraki</td>
+<td style="text-align: left;"><a href="../solutions/syslog.html">Syslog</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventCiscoMerakiSyslog.md">0.2.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauditeventcrowdstrikefalconhost.html">CrowdStrikeFalconHost</a></td>
+<td style="text-align: left;">CrowdStrike Falcon Endpoint Protection</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventCrowdStrikeFalconHost.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauditeventillumiosaascore.html">IllumioSaaSCore</a></td>
+<td style="text-align: left;">Illumio Core</td>
+<td style="text-align: left;"><a href="../solutions/illumiosaas.html">IllumioSaaS</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventIllumioSaaSCore.md">0.2.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauditeventinfobloxbloxone.html">InfobloxBloxOne</a></td>
+<td style="text-align: left;">Infoblox BloxOne</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventInfobloxBloxOne.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauditeventmicrosoftevent.html">MicrosoftEvent</a></td>
+<td style="text-align: left;">Microsoft Windows</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventMicrosoftEvent.md">0.2.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauditeventmicrosoftexchangeadmin365.html">MicrosoftExchangeAdmin365</a></td>
+<td style="text-align: left;">Microsoft SharePoint</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventMicrosoftExchangeAdmin365.md">0.2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauditeventmicrosoftsecurityevents.html">MicrosoftSecurityEvents</a></td>
+<td style="text-align: left;">Microsoft Windows</td>
+<td style="text-align: left;"><a href="../solutions/windows-security-events.html">Windows Security Events</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventMicrosoftSecurityEvents.md">0.2.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauditeventmicrosoftwindowsevents.html">MicrosoftWindowsEvents</a></td>
+<td style="text-align: left;">Microsoft Windows</td>
+<td style="text-align: left;"><a href="../solutions/windows-forwarded-events.html">Windows Forwarded Events</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventMicrosoftWindowsEvents.md">0.2.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauditeventnative.html">Native</a></td>
+<td style="text-align: left;">Native</td>
+<td style="text-align: left;"><a href="../solutions/cisco-meraki-events-via-rest-api.html">Cisco Meraki Events via REST API</a><br><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a><br><a href="../solutions/workday.html">Workday</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventNative.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauditeventsentinelone.html">SentinelOne</a></td>
+<td style="text-align: left;">SentinelOne</td>
+<td style="text-align: left;"><a href="../solutions/sentinelone.html">SentinelOne</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventSentinelOne.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauditeventvmwarecarbonblackcloud.html">VMwareCarbonBlackCloud</a></td>
+<td style="text-align: left;">VMware Carbon Black Cloud</td>
+<td style="text-align: left;"><a href="../solutions/vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventVMwareCarbonBlackCloud.md">0.2.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauditeventvectraxdraudit.html">VectraXDRAudit</a></td>
+<td style="text-align: left;">Vectra</td>
+<td style="text-align: left;"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventVectraXDRAudit.md">0.1.1</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Authentication</h2>
+<h3>Union Parsers</h3>
+<p>These are the main entry points that combine all source parsers:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Built-in Name</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="asimauthentication.html">ASimAuthentication</a></td>
+<td style="text-align: left;"><code>_ASim_Authentication</code></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthentication.md">0.2.6</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="imauthentication.html">imAuthentication</a></td>
+<td style="text-align: left;"><code>_Im_Authentication</code></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/imAuthentication.md">0.3.3</a></td>
+</tr>
+</tbody>
+</table>
+<h3>Supported Products</h3>
+<p><a href="asim-products-index.md#aws">AWS</a>, <a href="asim-products-index.md#barracuda-waf">Barracuda WAF</a>, <a href="asim-products-index.md#cisco-adaptive-security-appliance-asa">Cisco Adaptive Security Appliance (ASA)</a>, <a href="asim-products-index.md#cisco-ise">Cisco ISE</a>, <a href="asim-products-index.md#cisco-meraki">Cisco Meraki</a>, <a href="asim-products-index.md#crowdstrike-falcon-endpoint-protection">CrowdStrike Falcon Endpoint Protection</a>, <a href="asim-products-index.md#google-workspace">Google Workspace</a>, <a href="asim-products-index.md#illumio">Illumio</a>, <a href="asim-products-index.md#m365-defender-for-endpoint">M365 Defender for EndPoint</a>, <a href="asim-products-index.md#microsoft-defender-for-iot">Microsoft Defender for IoT</a>, <a href="asim-products-index.md#microsoft-entra-id">Microsoft Entra ID</a>, <a href="asim-products-index.md#native">Native</a>, <a href="asim-products-index.md#okta">Okta</a>, <a href="asim-products-index.md#openssh">OpenSSH</a>, <a href="asim-products-index.md#palo-alto-cortex-data-lake">Palo Alto Cortex Data Lake</a>, <a href="asim-products-index.md#postgresql">PostgreSQL</a>, <a href="asim-products-index.md#salesforce-service-cloud">Salesforce Service Cloud</a>, <a href="asim-products-index.md#sentinelone">SentinelOne</a>, <a href="asim-products-index.md#su">su</a>, <a href="asim-products-index.md#sudo">sudo</a>, <a href="asim-products-index.md#vectra">Vectra</a>, <a href="asim-products-index.md#vmware-carbon-black-cloud">VMware Carbon Black Cloud</a>, <a href="asim-products-index.md#windows-security-events">Windows Security Events</a></p>
+<h3>Source Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationaadmanagedidentitysigninlogs.html">AADManagedIdentitySignInLogs</a></td>
+<td style="text-align: left;">Microsoft Entra ID</td>
+<td style="text-align: left;"><a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationAADManagedIdentitySignInLogs.md">0.2.3</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationaadnoninteractiveusersigninlogs.html">AADNonInteractiveUserSignInLogs</a></td>
+<td style="text-align: left;">Microsoft Entra ID</td>
+<td style="text-align: left;"><a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationAADNonInteractiveUserSignInLogs.md">0.2.3</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationaadserviceprincipalsigninlogs.html">AADServicePrincipalSignInLogs</a></td>
+<td style="text-align: left;">Microsoft Entra ID</td>
+<td style="text-align: left;"><a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationAADServicePrincipalSignInLogs.md">0.2.3</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationawscloudtrail.html">AWSCloudTrail</a></td>
+<td style="text-align: left;">AWS</td>
+<td style="text-align: left;"><a href="../solutions/amazon-web-services.html">Amazon Web Services</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationAWSCloudTrail.md">0.2.2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationbarracudawaf.html">BarracudaWAF</a></td>
+<td style="text-align: left;">Barracuda WAF</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationBarracudaWAF.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationciscoasa.html">CiscoASA</a></td>
+<td style="text-align: left;">Cisco Adaptive Security Appliance (ASA)</td>
+<td style="text-align: left;"><a href="../solutions/ciscoasa.html">CiscoASA</a><br><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationCiscoASA.md">0.1.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationciscoise.html">CiscoISE</a></td>
+<td style="text-align: left;">Cisco ISE</td>
+<td style="text-align: left;"><a href="../solutions/syslog.html">Syslog</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationCiscoISE.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationciscomeraki.html">CiscoMeraki</a></td>
+<td style="text-align: left;">Cisco Meraki</td>
+<td style="text-align: left;"><a href="../solutions/ciscomeraki.html">CiscoMeraki</a><br><a href="../solutions/customlogsama.html">CustomLogsAma</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationCiscoMeraki.md">0.2.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationciscomerakisyslog.html">CiscoMerakiSyslog</a></td>
+<td style="text-align: left;">Cisco Meraki</td>
+<td style="text-align: left;"><a href="../solutions/syslog.html">Syslog</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationCiscoMerakiSyslog.md">0.2.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationcrowdstrikefalconhost.html">CrowdStrikeFalconHost</a></td>
+<td style="text-align: left;">CrowdStrike Falcon Endpoint Protection</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationCrowdStrikeFalconHost.md">0.2.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationgoogleworkspace.html">GoogleWorkspace</a></td>
+<td style="text-align: left;">Google Workspace</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationGoogleWorkspace.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationillumiosaascore.html">IllumioSaaSCore</a></td>
+<td style="text-align: left;">Illumio</td>
+<td style="text-align: left;"><a href="../solutions/illumiosaas.html">IllumioSaaS</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationIllumioSaaSCore.md">0.3.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationm365defender.html">M365Defender</a></td>
+<td style="text-align: left;">M365 Defender for EndPoint</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationM365Defender.md">0.2.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationmd4iot.html">MD4IoT</a></td>
+<td style="text-align: left;">Microsoft Defender for IoT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationMD4IoT.md">0.1.2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationmicrosoftwindowsevent.html">MicrosoftWindowsEvent</a></td>
+<td style="text-align: left;">Windows Security Events</td>
+<td style="text-align: left;"><a href="../solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a><br><a href="../solutions/windows-forwarded-events.html">Windows Forwarded Events</a><br><a href="../solutions/windows-security-events.html">Windows Security Events</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationMicrosoftWindowsEvent.md">0.2.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationnative.html">Native</a></td>
+<td style="text-align: left;">Native</td>
+<td style="text-align: left;"><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a><br><a href="../solutions/vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationNative.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationoktasso.html">OktaSSO</a></td>
+<td style="text-align: left;">Okta</td>
+<td style="text-align: left;"><a href="../solutions/okta-single-sign-on.html">Okta Single Sign-On</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationOktaSSO.md">0.4.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationoktav2.html">OktaV2</a></td>
+<td style="text-align: left;">Okta</td>
+<td style="text-align: left;"><a href="../solutions/okta-single-sign-on.html">Okta Single Sign-On</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationOktaV2.md">0.4.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationpaloaltocortexdatalake.html">PaloAltoCortexDataLake</a></td>
+<td style="text-align: left;">Palo Alto Cortex Data Lake</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationPaloAltoCortexDataLake.md">0.2.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationpostgresql.html">PostgreSQL</a></td>
+<td style="text-align: left;">PostgreSQL</td>
+<td style="text-align: left;"><a href="../solutions/customlogsama.html">CustomLogsAma</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationPostgreSQL.md">0.1.4</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationsalesforcesc.html">SalesforceSC</a></td>
+<td style="text-align: left;">Salesforce Service Cloud</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSalesforceSC.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationsentinelone.html">SentinelOne</a></td>
+<td style="text-align: left;">SentinelOne</td>
+<td style="text-align: left;"><a href="../solutions/sentinelone.html">SentinelOne</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSentinelOne.md">0.1.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationsigninlogs.html">SigninLogs</a></td>
+<td style="text-align: left;">Microsoft Entra ID</td>
+<td style="text-align: left;"><a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSigninLogs.md">0.4.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationsshd.html">Sshd</a></td>
+<td style="text-align: left;">OpenSSH</td>
+<td style="text-align: left;"><a href="../solutions/syslog.html">Syslog</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSshd.md">0.3.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationsu.html">Su</a></td>
+<td style="text-align: left;">su</td>
+<td style="text-align: left;"><a href="../solutions/syslog.html">Syslog</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSu.md">0.3.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationsudo.html">Sudo</a></td>
+<td style="text-align: left;">sudo</td>
+<td style="text-align: left;"><a href="../solutions/syslog.html">Syslog</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSudo.md">0.2.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationvmwarecarbonblackcloud.html">VMwareCarbonBlackCloud</a></td>
+<td style="text-align: left;">VMware Carbon Black Cloud</td>
+<td style="text-align: left;"><a href="../solutions/vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationVMwareCarbonBlackCloud.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimauthenticationvectraxdraudit.html">VectraXDRAudit</a></td>
+<td style="text-align: left;">Vectra</td>
+<td style="text-align: left;"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationVectraXDRAudit.md">0.1</a></td>
+</tr>
+</tbody>
+</table>
+<h2>DhcpEvent</h2>
+<h3>Union Parsers</h3>
+<p>These are the main entry points that combine all source parsers:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Built-in Name</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="asimdhcpevent.html">ASimDhcpEvent</a></td>
+<td style="text-align: left;"><code>_ASim_DhcpEvent</code></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDhcpEvent/CHANGELOG/ASimDhcpEvent.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="imdhcpevent.html">imDhcpEvent</a></td>
+<td style="text-align: left;"><code>_Im_DhcpEvent</code></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDhcpEvent/CHANGELOG/imDhcpEvent.md">0.1.0</a></td>
+</tr>
+</tbody>
+</table>
+<h3>Supported Products</h3>
+<p><a href="asim-products-index.md#infoblox-bloxone">Infoblox BloxOne</a>, <a href="asim-products-index.md#native">Native</a></p>
+<h3>Source Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="asimdhcpeventinfobloxbloxone.html">InfobloxBloxOne</a></td>
+<td style="text-align: left;">Infoblox BloxOne</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDhcpEvent/CHANGELOG/ASimDhcpEventInfobloxBloxOne.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimdhcpeventnative.html">Native</a></td>
+<td style="text-align: left;">Native</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDhcpEvent/CHANGELOG/ASimDhcpEventNative.md">0.1.0</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Dns</h2>
+<h3>Union Parsers</h3>
+<p>These are the main entry points that combine all source parsers:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Built-in Name</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="asimdns.html">ASimDns</a></td>
+<td style="text-align: left;"><code>_ASim_Dns</code></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDns.md">0.5.2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="imdns.html">imDns</a></td>
+<td style="text-align: left;"><code>_Im_Dns</code></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/imDns.md">0.5.2</a></td>
+</tr>
+</tbody>
+</table>
+<h3>Supported Products</h3>
+<p><a href="asim-products-index.md#azure-firewall">Azure Firewall</a>, <a href="asim-products-index.md#cisco-umbrella">Cisco Umbrella</a>, <a href="asim-products-index.md#corelight-zeek">Corelight Zeek</a>, <a href="asim-products-index.md#fortinet-fortigate">Fortinet FortiGate</a>, <a href="asim-products-index.md#gcp-cloud-dns">GCP Cloud DNS</a>, <a href="asim-products-index.md#infoblox-bloxone">Infoblox BloxOne</a>, <a href="asim-products-index.md#infoblox-nios">Infoblox NIOS</a>, <a href="asim-products-index.md#microsoft-windows-events-sysmon">Microsoft Windows Events Sysmon</a>, <a href="asim-products-index.md#ms-dns-events">MS DNS Events</a>, <a href="asim-products-index.md#native">Native</a>, <a href="asim-products-index.md#sentinelone">SentinelOne</a>, <a href="asim-products-index.md#vectra-ai-streams">Vectra AI Streams</a>, <a href="asim-products-index.md#zscaler-zia-dns">Zscaler ZIA DNS</a></p>
+<h3>Source Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="asimdnsazurefirewall.html">AzureFirewall</a></td>
+<td style="text-align: left;">Azure Firewall</td>
+<td style="text-align: left;"><a href="../solutions/azure-firewall.html">Azure Firewall</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsAzureFirewall.md">0.4.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimdnsciscoumbrella.html">CiscoUmbrella</a></td>
+<td style="text-align: left;">Cisco Umbrella</td>
+<td style="text-align: left;"><a href="../solutions/ciscoumbrella.html">CiscoUmbrella</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsCiscoUmbrella.md">0.3</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimdnscorelightzeek.html">CorelightZeek</a></td>
+<td style="text-align: left;">Corelight Zeek</td>
+<td style="text-align: left;"><a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsCorelightZeek.md">0.5.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimdnsfortinetfortigate.html">FortinetFortiGate</a></td>
+<td style="text-align: left;">Fortinet FortiGate</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsFortinetFortiGate.md">0.1.2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimdnsgcp.html">Gcp</a></td>
+<td style="text-align: left;">GCP Cloud DNS</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsGcp.md">0.4</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimdnsinfobloxbloxone.html">InfobloxBloxOne</a></td>
+<td style="text-align: left;">Infoblox BloxOne</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsInfobloxBloxOne.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimdnsinfobloxnios.html">InfobloxNIOS</a></td>
+<td style="text-align: left;">Infoblox NIOS</td>
+<td style="text-align: left;"><a href="../solutions/syslog.html">Syslog</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsInfobloxNIOS.md">0.6.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimdnsmicrosoftnxlog.html">MicrosoftNXlog</a></td>
+<td style="text-align: left;">MS DNS Events</td>
+<td style="text-align: left;"><a href="../solutions/nxlogdnslogs.html">NXLogDNSLogs</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsMicrosoftNXlog.md">0.5.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimdnsmicrosoftoms.html">MicrosoftOMS</a></td>
+<td style="text-align: left;">MS DNS Events</td>
+<td style="text-align: left;"><a href="../solutions/windows-server-dns.html">Windows Server DNS</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsMicrosoftOMS.md">0.4</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimdnsmicrosoftsysmon.html">MicrosoftSysmon</a></td>
+<td style="text-align: left;">Microsoft Windows Events Sysmon</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsMicrosoftSysmon.md">0.5.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimdnsmicrosoftsysmonwindowsevent.html">MicrosoftSysmonWindowsEvent</a></td>
+<td style="text-align: left;">Microsoft Windows Events Sysmon</td>
+<td style="text-align: left;"><a href="../solutions/windows-forwarded-events.html">Windows Forwarded Events</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsMicrosoftSysmonWindowsEvent.md">0.5.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimdnsnative.html">Native</a></td>
+<td style="text-align: left;">Native</td>
+<td style="text-align: left;"><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsNative.md">0.6.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimdnssentinelone.html">SentinelOne</a></td>
+<td style="text-align: left;">SentinelOne</td>
+<td style="text-align: left;"><a href="../solutions/sentinelone.html">SentinelOne</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsSentinelOne.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimdnsvectraai.html">VectraAI</a></td>
+<td style="text-align: left;">Vectra AI Streams</td>
+<td style="text-align: left;"><a href="../solutions/customlogsama.html">CustomLogsAma</a><br><a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsVectraAI.md">0.1.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimdnszscalerzia.html">ZscalerZIA</a></td>
+<td style="text-align: left;">Zscaler ZIA DNS</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsZscalerZIA.md">0.6</a></td>
+</tr>
+</tbody>
+</table>
+<h2>FileEvent</h2>
+<h3>Union Parsers</h3>
+<p>These are the main entry points that combine all source parsers:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Built-in Name</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="asimfileevent.html">ASimFileEvent</a></td>
+<td style="text-align: left;"><code>_ASim_FileEvent</code></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEvent.md">0.1.3</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="imfileevent.html">imFileEvent</a></td>
+<td style="text-align: left;"><code>_Im_FileEvent</code></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/imFileEvent.md">0.2.1</a></td>
+</tr>
+</tbody>
+</table>
+<h3>Supported Products</h3>
+<p><a href="asim-products-index.md#google-workspace">Google Workspace</a>, <a href="asim-products-index.md#microsoft-365-defender-for-endpoint">Microsoft 365 Defender for EndPoint</a>, <a href="asim-products-index.md#microsoft-azure-blob-storage">Microsoft Azure Blob Storage</a>, <a href="asim-products-index.md#microsoft-azure-file-storage">Microsoft Azure File Storage</a>, <a href="asim-products-index.md#microsoft-azure-queue-storage">Microsoft Azure Queue Storage</a>, <a href="asim-products-index.md#microsoft-azure-table-storage">Microsoft Azure Table Storage</a>, <a href="asim-products-index.md#microsoft-sharepoint">Microsoft SharePoint</a>, <a href="asim-products-index.md#microsoft-sysmon-for-linux">Microsoft Sysmon for Linux</a>, <a href="asim-products-index.md#microsoft-windows-events">Microsoft Windows Events</a>, <a href="asim-products-index.md#native">Native</a>, <a href="asim-products-index.md#sentinelone">SentinelOne</a>, <a href="asim-products-index.md#vmware-carbon-black-cloud">VMware Carbon Black Cloud</a>, <a href="asim-products-index.md#windows-sysmon">Windows Sysmon</a></p>
+<h3>Source Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="asimfileeventazureblobstorage.html">AzureBlobStorage</a></td>
+<td style="text-align: left;">Microsoft Azure Blob Storage</td>
+<td style="text-align: left;"><a href="../solutions/azure-storage.html">Azure Storage</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEventAzureBlobStorage.md">0.1.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimfileeventazurefilestorage.html">AzureFileStorage</a></td>
+<td style="text-align: left;">Microsoft Azure File Storage</td>
+<td style="text-align: left;"><a href="../solutions/azure-storage.html">Azure Storage</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEventAzureFileStorage.md">0.1.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimfileeventazurequeuestorage.html">AzureQueueStorage</a></td>
+<td style="text-align: left;">Microsoft Azure Queue Storage</td>
+<td style="text-align: left;"><a href="../solutions/azure-storage.html">Azure Storage</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEventAzureQueueStorage.md">0.1.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimfileeventazuretablestorage.html">AzureTableStorage</a></td>
+<td style="text-align: left;">Microsoft Azure Table Storage</td>
+<td style="text-align: left;"><a href="../solutions/azure-storage.html">Azure Storage</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEventAzureTableStorage.md">0.1.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimfileeventgoogleworkspace.html">GoogleWorkspace</a></td>
+<td style="text-align: left;">Google Workspace</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEventGoogleWorkspace.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimfileeventlinuxsysmonfilecreated.html">LinuxSysmonFileCreated</a></td>
+<td style="text-align: left;">Microsoft Sysmon for Linux</td>
+<td style="text-align: left;"><a href="../solutions/syslog.html">Syslog</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEventLinuxSysmonFileCreated.md">0.2.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimfileeventlinuxsysmonfiledeleted.html">LinuxSysmonFileDeleted</a></td>
+<td style="text-align: left;">Microsoft Sysmon for Linux</td>
+<td style="text-align: left;"><a href="../solutions/syslog.html">Syslog</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEventLinuxSysmonFileDeleted.md">0.2.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimfileeventmicrosoft365d.html">Microsoft365D</a></td>
+<td style="text-align: left;">Microsoft 365 Defender for EndPoint</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEventMicrosoft365D.md">0.2.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimfileeventmicrosoftsecurityevents.html">MicrosoftSecurityEvents</a></td>
+<td style="text-align: left;">Microsoft Windows Events</td>
+<td style="text-align: left;"><a href="../solutions/windows-security-events.html">Windows Security Events</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEventMicrosoftSecurityEvents.md">0.2.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimfileeventmicrosoftsharepoint.html">MicrosoftSharePoint</a></td>
+<td style="text-align: left;">Microsoft SharePoint</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEventMicrosoftSharePoint.md">0.3.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimfileeventmicrosoftsysmon.html">MicrosoftSysmon</a></td>
+<td style="text-align: left;">Windows Sysmon</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEventMicrosoftSysmon.md">0.5.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimfileeventmicrosoftsysmonwindowsevent.html">MicrosoftSysmonWindowsEvent</a></td>
+<td style="text-align: left;">Windows Sysmon</td>
+<td style="text-align: left;"><a href="../solutions/windows-forwarded-events.html">Windows Forwarded Events</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEventMicrosoftSysmonWindowsEvent.md">0.4.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimfileeventmicrosoftwindowsevents.html">MicrosoftWindowsEvents</a></td>
+<td style="text-align: left;">Microsoft Windows Events</td>
+<td style="text-align: left;"><a href="../solutions/windows-forwarded-events.html">Windows Forwarded Events</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEventMicrosoftWindowsEvents.md">0.2.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimfileeventnative.html">Native</a></td>
+<td style="text-align: left;">Native</td>
+<td style="text-align: left;"><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a><br><a href="../solutions/vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEventNative.md">0.1.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimfileeventsentinelone.html">SentinelOne</a></td>
+<td style="text-align: left;">SentinelOne</td>
+<td style="text-align: left;"><a href="../solutions/sentinelone.html">SentinelOne</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEventSentinelOne.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimfileeventvmwarecarbonblackcloud.html">VMwareCarbonBlackCloud</a></td>
+<td style="text-align: left;">VMware Carbon Black Cloud</td>
+<td style="text-align: left;"><a href="../solutions/vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEventVMwareCarbonBlackCloud.md">0.1.1</a></td>
+</tr>
+</tbody>
+</table>
+<h2>NetworkSession</h2>
+<h3>Union Parsers</h3>
+<p>These are the main entry points that combine all source parsers:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Built-in Name</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksession.html">ASimNetworkSession</a></td>
+<td style="text-align: left;"><code>_ASim_NetworkSession</code></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSession.md">0.7.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="imnetworksession.html">imNetworkSession</a></td>
+<td style="text-align: left;"><code>_Im_NetworkSession</code></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/imNetworkSession.md">0.6.2</a></td>
+</tr>
+</tbody>
+</table>
+<h3>Supported Products</h3>
+<p><a href="asim-products-index.md#appgate-sdp">AppGate SDP</a>, <a href="asim-products-index.md#aws-vpc">AWS VPC</a>, <a href="asim-products-index.md#azure-firewall">Azure Firewall</a>, <a href="asim-products-index.md#azure-nsg-flows">Azure NSG flows</a>, <a href="asim-products-index.md#azure-ntanetanalytics">Azure NTANetAnalytics</a>, <a href="asim-products-index.md#barracuda-waf">Barracuda WAF</a>, <a href="asim-products-index.md#checkpointfirewall">CheckPointFirewall</a>, <a href="asim-products-index.md#cisco-firepower">Cisco Firepower</a>, <a href="asim-products-index.md#cisco-ise">Cisco ISE</a>, <a href="asim-products-index.md#cisco-meraki">Cisco Meraki</a>, <a href="asim-products-index.md#ciscoasa">CiscoASA</a>, <a href="asim-products-index.md#corelight-zeek">Corelight Zeek</a>, <a href="asim-products-index.md#crowdstrike-falcon-endpoint-protection">CrowdStrike Falcon Endpoint Protection</a>, <a href="asim-products-index.md#forcepointfirewall">ForcePointFirewall</a>, <a href="asim-products-index.md#fortinet-fortigate">Fortinet FortiGate</a>, <a href="asim-products-index.md#illumio-saas-core">Illumio SaaS Core</a>, <a href="asim-products-index.md#m365-defender-for-endpoint">M365 Defender for Endpoint</a>, <a href="asim-products-index.md#microsoft-defender-for-iot">Microsoft Defender for IoT</a>, <a href="asim-products-index.md#native">Native</a>, <a href="asim-products-index.md#palo-alto-cortex-data-lake">Palo Alto Cortex Data Lake</a>, <a href="asim-products-index.md#palo-alto-panos">Palo Alto PanOS</a>, <a href="asim-products-index.md#sentinelone">SentinelOne</a>, <a href="asim-products-index.md#sonicwall">SonicWall</a>, <a href="asim-products-index.md#sysmon-for-linux">Sysmon for Linux</a>, <a href="asim-products-index.md#vectra-ai-streams">Vectra AI Streams</a>, <a href="asim-products-index.md#vmconnection">VMConnection</a>, <a href="asim-products-index.md#vmware-carbon-black-cloud">VMware Carbon Black Cloud</a>, <a href="asim-products-index.md#watchguard-fireware-os">WatchGuard Fireware OS</a>, <a href="asim-products-index.md#windows-firewall">Windows Firewall</a>, <a href="asim-products-index.md#windows-sysmon">Windows Sysmon</a>, <a href="asim-products-index.md#zscaler-zia-firewall">Zscaler ZIA Firewall</a></p>
+<h3>Source Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionawsvpc.html">AWSVPC</a></td>
+<td style="text-align: left;">AWS VPC</td>
+<td style="text-align: left;"><a href="../solutions/aws-vpc-flow-logs.html">AWS VPC Flow Logs</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionAWSVPC.md">0.3</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionappgatesdp.html">AppGateSDP</a></td>
+<td style="text-align: left;">AppGate SDP</td>
+<td style="text-align: left;"><a href="../solutions/syslog.html">Syslog</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionAppGateSDP.md">0.2.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionazurefirewall.html">AzureFirewall</a></td>
+<td style="text-align: left;">Azure Firewall</td>
+<td style="text-align: left;"><a href="../solutions/azure-firewall.html">Azure Firewall</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionAzureFirewall.md">0.2.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionazurensg.html">AzureNSG</a></td>
+<td style="text-align: left;">Azure NSG flows</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionAzureNSG.md">0.1.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionbarracudacef.html">BarracudaCEF</a></td>
+<td style="text-align: left;">Barracuda WAF</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionBarracudaCEF.md">0.2.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionbarracudawaf.html">BarracudaWAF</a></td>
+<td style="text-align: left;">Barracuda WAF</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionBarracudaWAF.md">0.2.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessioncheckpointfirewall.html">CheckPointFirewall</a></td>
+<td style="text-align: left;">CheckPointFirewall</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCheckPointFirewall.md">1.2.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionciscoasa.html">CiscoASA</a></td>
+<td style="text-align: left;">CiscoASA</td>
+<td style="text-align: left;"><a href="../solutions/ciscoasa.html">CiscoASA</a><br><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCiscoASA.md">1.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionciscofirepower.html">CiscoFirepower</a></td>
+<td style="text-align: left;">Cisco Firepower</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCiscoFirepower.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionciscoise.html">CiscoISE</a></td>
+<td style="text-align: left;">Cisco ISE</td>
+<td style="text-align: left;"><a href="../solutions/syslog.html">Syslog</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCiscoISE.md">1.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionciscomeraki.html">CiscoMeraki</a></td>
+<td style="text-align: left;">Cisco Meraki</td>
+<td style="text-align: left;"><a href="../solutions/ciscomeraki.html">CiscoMeraki</a><br><a href="../solutions/customlogsama.html">CustomLogsAma</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCiscoMeraki.md">1.2.2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionciscomerakisyslog.html">CiscoMerakiSyslog</a></td>
+<td style="text-align: left;">Cisco Meraki</td>
+<td style="text-align: left;"><a href="../solutions/syslog.html">Syslog</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCiscoMerakiSyslog.md">1.2.2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessioncorelightzeek.html">CorelightZeek</a></td>
+<td style="text-align: left;">Corelight Zeek</td>
+<td style="text-align: left;"><a href="../solutions/corelight.html">Corelight</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCorelightZeek.md">0.2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessioncrowdstrikefalconhost.html">CrowdStrikeFalconHost</a></td>
+<td style="text-align: left;">CrowdStrike Falcon Endpoint Protection</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCrowdStrikeFalconHost.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionforcepointfirewall.html">ForcePointFirewall</a></td>
+<td style="text-align: left;">ForcePointFirewall</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionForcePointFirewall.md">0.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionfortinetfortigate.html">FortinetFortiGate</a></td>
+<td style="text-align: left;">Fortinet FortiGate</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionFortinetFortiGate.md">0.6.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionillumiosaascore.html">IllumioSaaSCore</a></td>
+<td style="text-align: left;">Illumio SaaS Core</td>
+<td style="text-align: left;"><a href="../solutions/illumiosaas.html">IllumioSaaS</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionIllumioSaaSCore.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionlinuxsysmon.html">LinuxSysmon</a></td>
+<td style="text-align: left;">Sysmon for Linux</td>
+<td style="text-align: left;"><a href="../solutions/syslog.html">Syslog</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionLinuxSysmon.md">0.3.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionmd4iotagent.html">MD4IoTAgent</a></td>
+<td style="text-align: left;">Microsoft Defender for IoT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionMD4IoTAgent.md">0.2.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionmd4iotsensor.html">MD4IoTSensor</a></td>
+<td style="text-align: left;">Microsoft Defender for IoT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionMD4IoTSensor.md">0.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionmicrosoft365defender.html">Microsoft365Defender</a></td>
+<td style="text-align: left;">M365 Defender for Endpoint</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionMicrosoft365Defender.md">0.4</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionmicrosoftsecurityeventfirewall.html">MicrosoftSecurityEventFirewall</a></td>
+<td style="text-align: left;">Windows Firewall</td>
+<td style="text-align: left;"><a href="../solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a><br><a href="../solutions/windows-security-events.html">Windows Security Events</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionMicrosoftSecurityEventFirewall.md">0.5.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionmicrosoftsysmon.html">MicrosoftSysmon</a></td>
+<td style="text-align: left;">Windows Sysmon</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionMicrosoftSysmon.md">0.2.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionmicrosoftsysmonwindowsevent.html">MicrosoftSysmonWindowsEvent</a></td>
+<td style="text-align: left;">Windows Sysmon</td>
+<td style="text-align: left;"><a href="../solutions/windows-forwarded-events.html">Windows Forwarded Events</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionMicrosoftSysmonWindowsEvent.md">0.2.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionmicrosoftwindowseventfirewall.html">MicrosoftWindowsEventFirewall</a></td>
+<td style="text-align: left;">Windows Firewall</td>
+<td style="text-align: left;"><a href="../solutions/windows-forwarded-events.html">Windows Forwarded Events</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionMicrosoftWindowsEventFirewall.md">0.5.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionntanetanalytics.html">NTANetAnalytics</a></td>
+<td style="text-align: left;">Azure NTANetAnalytics</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionNTANetAnalytics.md">0.1.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionnative.html">Native</a></td>
+<td style="text-align: left;">Native</td>
+<td style="text-align: left;"><a href="../solutions/cisco-meraki-events-via-rest-api.html">Cisco Meraki Events via REST API</a><br><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a><br><a href="../solutions/vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionNative.md">0.3</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionpaloaltocef.html">PaloAltoCEF</a></td>
+<td style="text-align: left;">Palo Alto PanOS</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionPaloAltoCEF.md">0.7.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionpaloaltocortexdatalake.html">PaloAltoCortexDataLake</a></td>
+<td style="text-align: left;">Palo Alto Cortex Data Lake</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionPaloAltoCortexDataLake.md">0.1.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionsentinelone.html">SentinelOne</a></td>
+<td style="text-align: left;">SentinelOne</td>
+<td style="text-align: left;"><a href="../solutions/sentinelone.html">SentinelOne</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionSentinelOne.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionsonicwallfirewall.html">SonicWallFirewall</a></td>
+<td style="text-align: left;">SonicWall</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionSonicWallFirewall.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionvmconnection.html">VMConnection</a></td>
+<td style="text-align: left;">VMConnection</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionVMConnection.md">0.2.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionvmwarecarbonblackcloud.html">VMwareCarbonBlackCloud</a></td>
+<td style="text-align: left;">VMware Carbon Black Cloud</td>
+<td style="text-align: left;"><a href="../solutions/vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionVMwareCarbonBlackCloud.md">0.1.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionvectraai.html">VectraAI</a></td>
+<td style="text-align: left;">Vectra AI Streams</td>
+<td style="text-align: left;"><a href="../solutions/customlogsama.html">CustomLogsAma</a><br><a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionVectraAI.md">0.2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionwatchguardfirewareos.html">WatchGuardFirewareOS</a></td>
+<td style="text-align: left;">WatchGuard Fireware OS</td>
+<td style="text-align: left;"><a href="../solutions/syslog.html">Syslog</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionWatchGuardFirewareOS.md">0.1.4</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimnetworksessionzscalerzia.html">ZscalerZIA</a></td>
+<td style="text-align: left;">Zscaler ZIA Firewall</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionZscalerZIA.md">0.4</a></td>
+</tr>
+</tbody>
+</table>
+<h2>ProcessEvent</h2>
+<h3>Union Parsers</h3>
+<p>These are the main entry points that combine all source parsers:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Built-in Name</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="asimprocessevent.html">ASimProcessEvent</a></td>
+<td style="text-align: left;"><code>_ASim_ProcessEvent</code></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEvent.md">0.1.2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimprocesseventcreate.html">ASimProcessEventCreate</a></td>
+<td style="text-align: left;"><code>_ASim_ProcessEvent_Create</code></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventCreate.md">0.1.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimprocesseventterminate.html">ASimProcessEventTerminate</a></td>
+<td style="text-align: left;"><code>_ASim_ProcessEvent_Terminate</code></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventTerminate.md">0.1.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="improcesscreate.html">imProcessCreate</a></td>
+<td style="text-align: left;"><code>_Im_ProcessCreate</code></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/imProcessCreate.md">0.1.2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="improcessevent.html">imProcessEvent</a></td>
+<td style="text-align: left;"><code>_Im_ProcessEvent</code></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/imProcessEvent.md">0.1.3</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="improcessterminate.html">imProcessTerminate</a></td>
+<td style="text-align: left;"><code>_Im_ProcessTerminate</code></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/imProcessTerminate.md">0.1.2</a></td>
+</tr>
+</tbody>
+</table>
+<h3>Supported Products</h3>
+<p><a href="asim-products-index.md#microsoft-365-defender-for-endpoint">Microsoft 365 Defender for endpoint</a>, <a href="asim-products-index.md#microsoft-defender-for-iot">Microsoft Defender for IoT</a>, <a href="asim-products-index.md#microsoft-windows-events-sysmon">Microsoft Windows Events Sysmon</a>, <a href="asim-products-index.md#native">Native</a>, <a href="asim-products-index.md#security-events">Security Events</a>, <a href="asim-products-index.md#sentinelone">SentinelOne</a>, <a href="asim-products-index.md#sysmon">Sysmon</a>, <a href="asim-products-index.md#sysmon-for-linux">Sysmon for Linux</a>, <a href="asim-products-index.md#trend-micro-vision-one">Trend Micro Vision One</a>, <a href="asim-products-index.md#vmware-carbon-black-cloud">VMware Carbon Black Cloud</a></p>
+<h3>Source Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="asimprocesscreatelinuxsysmon.html">ProcessCreateLinuxSysmon</a></td>
+<td style="text-align: left;">Sysmon for Linux</td>
+<td style="text-align: left;"><a href="../solutions/syslog.html">Syslog</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessCreateLinuxSysmon.md">0.2.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimprocesscreatemicrosoftsecurityevents.html">ProcessCreateMicrosoftSecurityEvents</a></td>
+<td style="text-align: left;">Security Events</td>
+<td style="text-align: left;"><a href="../solutions/windows-security-events.html">Windows Security Events</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessCreateMicrosoftSecurityEvents.md">0.1.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimprocesscreatemicrosoftwindowsevents.html">ProcessCreateMicrosoftWindowsEvents</a></td>
+<td style="text-align: left;">Security Events</td>
+<td style="text-align: left;"><a href="../solutions/windows-forwarded-events.html">Windows Forwarded Events</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessCreateMicrosoftWindowsEvents.md">0.3.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimprocesscreatesentinelone.html">ProcessCreateSentinelOne</a></td>
+<td style="text-align: left;">SentinelOne</td>
+<td style="text-align: left;"><a href="../solutions/sentinelone.html">SentinelOne</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessCreateSentinelOne.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimprocesscreatetrendmicrovisionone.html">ProcessCreateTrendMicroVisionOne</a></td>
+<td style="text-align: left;">Trend Micro Vision One</td>
+<td style="text-align: left;"><a href="../solutions/trend-micro-vision-one.html">Trend Micro Vision One</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessCreateTrendMicroVisionOne.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimprocesscreatevmwarecarbonblackcloud.html">ProcessCreateVMwareCarbonBlackCloud</a></td>
+<td style="text-align: left;">VMware Carbon Black Cloud</td>
+<td style="text-align: left;"><a href="../solutions/vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessCreateVMwareCarbonBlackCloud.md">0.1.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimprocesseventcreatemicrosoftsysmon.html">CreateMicrosoftSysmon</a></td>
+<td style="text-align: left;">Sysmon</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventCreateMicrosoftSysmon.md">0.4.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimprocesseventcreatemicrosoftsysmonwindowsevent.html">CreateMicrosoftSysmonWindowsEvent</a></td>
+<td style="text-align: left;">Sysmon</td>
+<td style="text-align: left;"><a href="../solutions/windows-forwarded-events.html">Windows Forwarded Events</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventCreateMicrosoftSysmonWindowsEvent.md">0.4.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimprocesseventmd4iot.html">MD4IoT</a></td>
+<td style="text-align: left;">Microsoft Defender for IoT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventMD4IoT.md">0.1.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimprocesseventmicrosoft365d.html">Microsoft365D</a></td>
+<td style="text-align: left;">Microsoft 365 Defender for endpoint</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventMicrosoft365D.md">0.2.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimprocesseventnative.html">Native</a></td>
+<td style="text-align: left;">Native</td>
+<td style="text-align: left;"><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a><br><a href="../solutions/vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventNative.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimprocesseventterminatemicrosoftsysmon.html">TerminateMicrosoftSysmon</a></td>
+<td style="text-align: left;">Microsoft Windows Events Sysmon</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventTerminateMicrosoftSysmon.md">0.3.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimprocesseventterminatemicrosoftsysmonwindowsevent.html">TerminateMicrosoftSysmonWindowsEvent</a></td>
+<td style="text-align: left;">Microsoft Windows Events Sysmon</td>
+<td style="text-align: left;"><a href="../solutions/windows-forwarded-events.html">Windows Forwarded Events</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventTerminateMicrosoftSysmonWindowsEvent.md">0.4.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimprocessterminatelinuxsysmon.html">ProcessTerminateLinuxSysmon</a></td>
+<td style="text-align: left;">Sysmon for Linux</td>
+<td style="text-align: left;"><a href="../solutions/syslog.html">Syslog</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessTerminateLinuxSysmon.md">0.1.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimprocessterminatemicrosoftsecurityevents.html">ProcessTerminateMicrosoftSecurityEvents</a></td>
+<td style="text-align: left;">Security Events</td>
+<td style="text-align: left;"><a href="../solutions/windows-security-events.html">Windows Security Events</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessTerminateMicrosoftSecurityEvents.md">0.2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimprocessterminatemicrosoftwindowsevents.html">ProcessTerminateMicrosoftWindowsEvents</a></td>
+<td style="text-align: left;">Security Events</td>
+<td style="text-align: left;"><a href="../solutions/windows-forwarded-events.html">Windows Forwarded Events</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessTerminateMicrosoftWindowsEvents.md">0.2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimprocessterminatevmwarecarbonblackcloud.html">ProcessTerminateVMwareCarbonBlackCloud</a></td>
+<td style="text-align: left;">VMware Carbon Black Cloud</td>
+<td style="text-align: left;"><a href="../solutions/vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessTerminateVMwareCarbonBlackCloud.md">0.1.0</a></td>
+</tr>
+</tbody>
+</table>
+<h2>RegistryEvent</h2>
+<h3>Union Parsers</h3>
+<p>These are the main entry points that combine all source parsers:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Built-in Name</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="asimregistry.html">ASimRegistry</a></td>
+<td style="text-align: left;"><code>_ASim_RegistryEvent</code></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimRegistryEvent/CHANGELOG/ASimRegistry.md">0.1.3</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="imregistry.html">imRegistry</a></td>
+<td style="text-align: left;"><code>_Im_RegistryEvent</code></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimRegistryEvent/CHANGELOG/imRegistry.md">0.1.4</a></td>
+</tr>
+</tbody>
+</table>
+<h3>Supported Products</h3>
+<p><a href="asim-products-index.md#microsoft-365-defender-for-endpoint">Microsoft 365 Defender for Endpoint</a>, <a href="asim-products-index.md#microsoft-sysmon">Microsoft Sysmon</a>, <a href="asim-products-index.md#native">Native</a>, <a href="asim-products-index.md#security-events">Security Events</a>, <a href="asim-products-index.md#sentinelone">SentinelOne</a>, <a href="asim-products-index.md#trend-micro-vision-one">Trend Micro Vision One</a>, <a href="asim-products-index.md#vmware-carbon-black-cloud">VMware Carbon Black Cloud</a></p>
+<h3>Source Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="asimregistryeventmicrosoft365d.html">Microsoft365D</a></td>
+<td style="text-align: left;">Microsoft 365 Defender for Endpoint</td>
+<td style="text-align: left;"><a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimRegistryEvent/CHANGELOG/ASimRegistryEventMicrosoft365D.md">0.1.2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimregistryeventmicrosoftsecurityevent.html">MicrosoftSecurityEvent</a></td>
+<td style="text-align: left;">Security Events</td>
+<td style="text-align: left;"><a href="../solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a><br><a href="../solutions/windows-security-events.html">Windows Security Events</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimRegistryEvent/CHANGELOG/ASimRegistryEventMicrosoftSecurityEvent.md">0.3.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimregistryeventmicrosoftsysmon.html">MicrosoftSysmon</a></td>
+<td style="text-align: left;">Microsoft Sysmon</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimRegistryEvent/CHANGELOG/ASimRegistryEventMicrosoftSysmon.md">0.3.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimregistryeventmicrosoftsysmonwindowsevent.html">MicrosoftSysmonWindowsEvent</a></td>
+<td style="text-align: left;">Microsoft Sysmon</td>
+<td style="text-align: left;"><a href="../solutions/windows-forwarded-events.html">Windows Forwarded Events</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimRegistryEvent/CHANGELOG/ASimRegistryEventMicrosoftSysmonWindowsEvent.md">0.3.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimregistryeventmicrosoftwindowsevent.html">MicrosoftWindowsEvent</a></td>
+<td style="text-align: left;">Security Events</td>
+<td style="text-align: left;"><a href="../solutions/windows-forwarded-events.html">Windows Forwarded Events</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimRegistryEvent/CHANGELOG/ASimRegistryEventMicrosoftWindowsEvent.md">0.2.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimregistryeventnative.html">Native</a></td>
+<td style="text-align: left;">Native</td>
+<td style="text-align: left;"><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a><br><a href="../solutions/vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimRegistryEvent/CHANGELOG/ASimRegistryEventNative.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimregistryeventsentinelone.html">SentinelOne</a></td>
+<td style="text-align: left;">SentinelOne</td>
+<td style="text-align: left;"><a href="../solutions/sentinelone.html">SentinelOne</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimRegistryEvent/CHANGELOG/ASimRegistryEventSentinelOne.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimregistryeventtrendmicrovisionone.html">TrendMicroVisionOne</a></td>
+<td style="text-align: left;">Trend Micro Vision One</td>
+<td style="text-align: left;"><a href="../solutions/trend-micro-vision-one.html">Trend Micro Vision One</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimRegistryEvent/CHANGELOG/ASimRegistryEventTrendMicroVisionOne.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimregistryeventvmwarecarbonblackcloud.html">VMwareCarbonBlackCloud</a></td>
+<td style="text-align: left;">VMware Carbon Black Cloud</td>
+<td style="text-align: left;"><a href="../solutions/vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimRegistryEvent/CHANGELOG/ASimRegistryEventVMwareCarbonBlackCloud.md">0.1.1</a></td>
+</tr>
+</tbody>
+</table>
+<h2>UserManagement</h2>
+<h3>Union Parsers</h3>
+<p>These are the main entry points that combine all source parsers:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Built-in Name</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="asimusermanagement.html">ASimUserManagement</a></td>
+<td style="text-align: left;"><code>_ASim_UserManagement</code></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimUserManagement/CHANGELOG/ASimUserManagement.md">0.1.2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="imusermanagement.html">imUserManagement</a></td>
+<td style="text-align: left;"><code>_Im_UserManagement</code></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimUserManagement/CHANGELOG/imUserManagement.md">0.1.3</a></td>
+</tr>
+</tbody>
+</table>
+<h3>Supported Products</h3>
+<p><a href="asim-products-index.md#cisco-ise">Cisco ISE</a>, <a href="asim-products-index.md#microsoft">Microsoft</a>, <a href="asim-products-index.md#microsoft-security-event">Microsoft Security Event</a>, <a href="asim-products-index.md#microsoft-windows-event">Microsoft Windows Event</a>, <a href="asim-products-index.md#native">Native</a>, <a href="asim-products-index.md#sentinelone">SentinelOne</a></p>
+<h3>Source Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="asimusermanagementciscoise.html">CiscoISE</a></td>
+<td style="text-align: left;">Cisco ISE</td>
+<td style="text-align: left;"><a href="../solutions/syslog.html">Syslog</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimUserManagement/CHANGELOG/ASimUserManagementCiscoISE.md">0.1.2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimusermanagementlinuxauthpriv.html">LinuxAuthpriv</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: left;"><a href="../solutions/syslog.html">Syslog</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimUserManagement/CHANGELOG/ASimUserManagementLinuxAuthpriv.md">0.1.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimusermanagementmicrosoftsecurityevent.html">MicrosoftSecurityEvent</a></td>
+<td style="text-align: left;">Microsoft Security Event</td>
+<td style="text-align: left;"><a href="../solutions/windows-security-events.html">Windows Security Events</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimUserManagement/CHANGELOG/ASimUserManagementMicrosoftSecurityEvent.md">0.2.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimusermanagementmicrosoftwindowsevent.html">MicrosoftWindowsEvent</a></td>
+<td style="text-align: left;">Microsoft Windows Event</td>
+<td style="text-align: left;"><a href="../solutions/windows-forwarded-events.html">Windows Forwarded Events</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimUserManagement/CHANGELOG/ASimUserManagementMicrosoftWindowsEvent.md">0.2.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimusermanagementnative.html">Native</a></td>
+<td style="text-align: left;">Native</td>
+<td style="text-align: left;"><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimUserManagement/CHANGELOG/ASimUserManagementNative.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimusermanagementsentinelone.html">SentinelOne</a></td>
+<td style="text-align: left;">SentinelOne</td>
+<td style="text-align: left;"><a href="../solutions/sentinelone.html">SentinelOne</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimUserManagement/CHANGELOG/ASimUserManagementSentinelOne.md">0.1.1</a></td>
+</tr>
+</tbody>
+</table>
+<h2>WebSession</h2>
+<h3>Union Parsers</h3>
+<p>These are the main entry points that combine all source parsers:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Built-in Name</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="asimwebsession.html">ASimWebSession</a></td>
+<td style="text-align: left;"><code>_ASim_WebSession</code></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSession.md">0.5.4</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="imwebsession.html">imWebSession</a></td>
+<td style="text-align: left;"><code>_Im_WebSession</code></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/imWebSession.md">0.6.2</a></td>
+</tr>
+</tbody>
+</table>
+<h3>Supported Products</h3>
+<p><a href="asim-products-index.md#apache-http-server">Apache HTTP Server</a>, <a href="asim-products-index.md#azure-firewall">Azure Firewall</a>, <a href="asim-products-index.md#barracuda-waf">Barracuda WAF</a>, <a href="asim-products-index.md#cisco-firepower">Cisco Firepower</a>, <a href="asim-products-index.md#cisco-meraki">Cisco Meraki</a>, <a href="asim-products-index.md#citrix-netscaler">Citrix NetScaler</a>, <a href="asim-products-index.md#f5-big-ip-application-security-manager-asm">F5 BIG-IP Application Security Manager (ASM)</a>, <a href="asim-products-index.md#fortinet-fortigate">Fortinet FortiGate</a>, <a href="asim-products-index.md#internet-information-services-iis">Internet Information Services (IIS)</a>, <a href="asim-products-index.md#native">Native</a>, <a href="asim-products-index.md#palo-alto-cortex-data-lake">Palo Alto Cortex Data Lake</a>, <a href="asim-products-index.md#palo-alto-networks">Palo Alto Networks</a>, <a href="asim-products-index.md#sonicwall">SonicWall</a>, <a href="asim-products-index.md#squid-proxy">Squid Proxy</a>, <a href="asim-products-index.md#vectra-ai-streams">Vectra AI Streams</a>, <a href="asim-products-index.md#zscaler-zia">Zscaler ZIA</a></p>
+<h3>Source Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="asimwebsessionapachehttpserver.html">ApacheHTTPServer</a></td>
+<td style="text-align: left;">Apache HTTP Server</td>
+<td style="text-align: left;"><a href="../solutions/customlogsama.html">CustomLogsAma</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionApacheHTTPServer.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimwebsessionazurefirewall.html">AzureFirewall</a></td>
+<td style="text-align: left;">Azure Firewall</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionAzureFirewall.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimwebsessionbarracudacef.html">BarracudaCEF</a></td>
+<td style="text-align: left;">Barracuda WAF</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionBarracudaCEF.md">0.2.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimwebsessionbarracudawaf.html">BarracudaWAF</a></td>
+<td style="text-align: left;">Barracuda WAF</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionBarracudaWAF.md">0.2.2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimwebsessionciscofirepower.html">CiscoFirepower</a></td>
+<td style="text-align: left;">Cisco Firepower</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionCiscoFirepower.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimwebsessionciscomeraki.html">CiscoMeraki</a></td>
+<td style="text-align: left;">Cisco Meraki</td>
+<td style="text-align: left;"><a href="../solutions/cisco-sd-wan.html">Cisco SD-WAN</a><br><a href="../solutions/ciscomeraki.html">CiscoMeraki</a><br><a href="../solutions/customlogsama.html">CustomLogsAma</a><br><a href="../solutions/forescout-legacy.html">Forescout (Legacy)</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionCiscoMeraki.md">0.1.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimwebsessioncitrixnetscaler.html">CitrixNetScaler</a></td>
+<td style="text-align: left;">Citrix NetScaler</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionCitrixNetScaler.md">0.1.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimwebsessionf5asm.html">F5ASM</a></td>
+<td style="text-align: left;">F5 BIG-IP Application Security Manager (ASM)</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionF5ASM.md">0.1.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimwebsessionfortinetfortigate.html">FortinetFortiGate</a></td>
+<td style="text-align: left;">Fortinet FortiGate</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionFortinetFortiGate.md">0.3.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimwebsessioniis.html">IIS</a></td>
+<td style="text-align: left;">Internet Information Services (IIS)</td>
+<td style="text-align: left;"><a href="../solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionIIS.md">0.2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimwebsessionnative.html">Native</a></td>
+<td style="text-align: left;">Native</td>
+<td style="text-align: left;"><a href="../solutions/cisco-meraki-events-via-rest-api.html">Cisco Meraki Events via REST API</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionNative.md">0.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimwebsessionpaloaltocef.html">PaloAltoCEF</a></td>
+<td style="text-align: left;">Palo Alto Networks</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionPaloAltoCEF.md">0.2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimwebsessionpaloaltocortexdatalake.html">PaloAltoCortexDataLake</a></td>
+<td style="text-align: left;">Palo Alto Cortex Data Lake</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionPaloAltoCortexDataLake.md">0.1.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimwebsessionsonicwallfirewall.html">SonicWallFirewall</a></td>
+<td style="text-align: left;">SonicWall</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionSonicWallFirewall.md">0.1.1</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimwebsessionsquidproxy.html">SquidProxy</a></td>
+<td style="text-align: left;">Squid Proxy</td>
+<td style="text-align: left;"><a href="../solutions/customlogsama.html">CustomLogsAma</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionSquidProxy.md">0.4.0</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimwebsessionvectraai.html">VectraAI</a></td>
+<td style="text-align: left;">Vectra AI Streams</td>
+<td style="text-align: left;"><a href="../solutions/customlogsama.html">CustomLogsAma</a><br><a href="../solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionVectraAI.md">0.2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="asimwebsessionzscalerzia.html">ZscalerZIA</a></td>
+<td style="text-align: left;">Zscaler ZIA</td>
+<td style="text-align: left;"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionZscalerZIA.md">0.4.1</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <strong>ASIM Parsers</strong> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+</div>
+</body>
+</html>

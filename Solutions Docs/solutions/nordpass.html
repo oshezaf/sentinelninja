@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NordPass &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>NordPass</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NordPass.svg" alt="NordPass Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">NordPass</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.nordpass.com/">https://support.nordpass.com/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Nord Security Inc.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2025-04-22</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NordPass">NordPass</a></td>
+</tr>
+</tbody>
+</table>
+<p>NordPass for Microsoft Sentinel enables you to automatically transfer Activity Log data from NordPass to Microsoft Sentinel and get real-time insights such as item activity, all login attempts, and security notifications. This allows you to stay informed by setting any needed alerts by your organization to monitor these security events.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/nordpass.html">NordPass</a></li>
+</ul>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/nordpasseventlogs-cl.html"><code>NordPassEventLogs_CL</code></a></td>
+<td><a href="../connectors/nordpass.html">NordPass</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>10 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">9</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/nordpass-nordpass-activity-token-revocation-800314a6-759a-4575-93e2-1e080b1d33f9-4469b0a8.html">NordPass - Activity token revocation</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/nordpasseventlogs-cl.html"><code>NordPassEventLogs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nordpass-nordpass-declined-invitation-283d7506-f3c6-419a-ae9c-d9afe6a15d6d-905a2cf5.html">NordPass - Declined invitation</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/nordpasseventlogs-cl.html"><code>NordPassEventLogs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nordpass-nordpass-deleting-items-of-deleted-member-0068dca4-dea0-46a3-a970-655e067a145f-3d5122fd.html">NordPass - Deleting items of deleted member</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/nordpasseventlogs-cl.html"><code>NordPassEventLogs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nordpass-nordpass-domain-data-detected-in-breach-e3f2b6c9-df0c-4b36-a376-bb2762e4dbdc-374248c3.html">NordPass - Domain data detected in breach</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/nordpasseventlogs-cl.html"><code>NordPassEventLogs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nordpass-nordpass-manual-invitation,-suspension,-or-deletion-693c5217-e840-427f-9661-3fa0ef266040-050ce107.html">NordPass - Manual invitation, suspension, or deletion</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/nordpasseventlogs-cl.html"><code>NordPassEventLogs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nordpass-nordpass-user-data-detected-in-breach-c4d2eb42-a4ab-4db6-a270-3d2ed7e057a0-7d9dfaf4.html">NordPass - User data detected in breach</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/nordpasseventlogs-cl.html"><code>NordPassEventLogs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nordpass-nordpass-user-deletes-items-in-bulk-f72f630f-c890-49fe-b747-80f4fb3b6348-63e3aff5.html">NordPass - User deletes items in bulk</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Impact, Collection</td>
+<td style="text-align: left;"><a href="../tables/nordpasseventlogs-cl.html"><code>NordPassEventLogs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nordpass-nordpass-user-fails-authentication-27b261dc-68f3-489a-944f-bc252e0c1960-90f54b58.html">NordPass - User fails authentication</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/nordpasseventlogs-cl.html"><code>NordPassEventLogs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nordpass-nordpass-vault-export-c7f14b43-7625-4516-b137-30b7fda65bcf-aff9055e.html">NordPass - Vault export</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/nordpasseventlogs-cl.html"><code>NordPassEventLogs_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/nordpass-nordpass-9080f186.html">NordPass</a></td>
+<td style="text-align: left;"><a href="../tables/nordpasseventlogs-cl.html"><code>NordPassEventLogs_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NordPass/README.md">NordPass/README.md</a></em></p>
+</blockquote>
+<h1>NordPass Integration with Microsoft Sentinel</h1>
+<h2>Overview</h2>
+<p>This solution lets you monitor your organization’s user activities and track security incidents from NordPass’ Activity Log.</p>
+<p>The benefits of this integration:
+- <strong>Enhanced Security Monitoring:</strong> Detect unauthorized access and security risks.
+- <strong>Automated Threat Detection:</strong> Receive real-time alerts on suspicious activities.
+- <strong>Centralized Activity Logging:</strong> Maintain a comprehensive audit trail of user activities.</p>
+<h2>Resources Created</h2>
+<p>Once you deploy the solution, the following Azure resources will be created:</p>
+<details>
+<summary><strong>Azure Function</strong></summary>
+An <strong>Azure Function</strong> is a serverless solution that synchronizes activity between NordPass and Microsoft Sentinel.
+</details>
+
+<details>
+<summary><strong>Storage Account</strong></summary>
+A <strong>Storage Account</strong> contains Azure Function settings and configurations.
+</details>
+
+<details>
+<summary><strong>Custom Table</strong></summary>
+A <strong>Log Analytics Table</strong> named <code>NordPassEventLogs_CL</code> will be created to store synchronized activity events from NordPass. This table serves as the central repository for all collected log data.
+</details>
+
+<details>
+<summary><strong>Workbook</strong></summary>
+A <strong>Workbook</strong> will be created to aggregate NordPass activity data for enhanced visualization and analysis. Dashboards in this workbook give insights into your user’s activity trends, security alerts, and compliance statuses.
+</details>
+
+<details>
+<summary><strong>Analytic Rules</strong></summary>
+Multiple <strong>Analytic Rules</strong> will be created to facilitate incident escalation, allowing security teams to respond to threats proactively. 
+
+These rules include:
+- Users declining invites
+- Bulk deletion of items
+- Deleted users items were reassigned
+- Invites, suspensions, and deletions by Owners or Admins
+- Revoking tokens
+- Failed login attempts by users
+- Users exporting their vault
+
+These rules help automate security monitoring, creating actionable insights for your organization.
+</details>
+
+<h2>Requirements</h2>
+<p>To deploy this integration, ensure you have the following:
+- <a href="https://nordpass.com/plans/business/">NordPass Enterprise plan</a>.
+- <a href="https://support.nordpass.com/hc/en-us/articles/31972037289873">Token for Microsoft Sentinel integration</a>
+- <a href="https://azure.microsoft.com/free">Microsoft Azure</a>.
+- <a href="https://azure.microsoft.com/products/microsoft-sentinel/">Microsoft Sentinel</a></p>
+<p>You must also be a Contributor with User Access Administrator role or Owner of the Microsoft Sentinel Resource Group. This is needed to assign the correct RBAC role to Function App’s managed identity</p>
+<h2>Installation</h2>
+<p>You can easily install the NordPass Solution for Microsoft Sentinel in a few minutes. Click the button below to start the deployment wizard:</p>
+<p><a href="https://aka.ms/sentinel-Nordpass-azuredeploy"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
+<h2>Post-Deployment Configuration</h2>
+<p><em>[Content truncated...]</em></p>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.1</td>
+<td>25-08-2025</td>
+<td>Added new Activity Logs</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>22-04-2025</td>
+<td>Initial Solution Release.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

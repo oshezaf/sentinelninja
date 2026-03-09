@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PGSQLQueryStoreRuntime &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>PGSQLQueryStoreRuntime</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for PGSQLQueryStoreRuntime table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Audit, Azure Resources</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/pgsqlquerystoreruntime">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (42 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/pgsqlquerystoreruntime">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">BlkReadTime</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Total time the statement spent reading blocks in milliseconds for all calls in this time bucket. Only available if track_io_timing is enabled, otherwise zero.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BlkWriteTime</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Total time the statement spent writing blocks in milliseconds for all calls in this time bucket. Only available if track_io_timing is enabled, otherwise zero.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Calls</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Number of times the query executed within this time bucket.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DatabaseId</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">ID (OID) of database in which the statement was executed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EndTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The end time corresponding to the time bucket for this entry. Queries are aggregated by time buckets.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsSystemQuery</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Boolean value indicating if the query is run by Azure managed system user.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LocalBlksDirtied</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Total number of local blocks dirtied by the statement for all calls in this time bucket.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LocalBlksHit</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Total number of local block cache hits by the statement for all calls in this time bucket.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LocalBlksRead</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Total number of local blocks read by the statement for all calls in this time bucket.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LocalBlksWritten</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Total number of local blocks written by the statement for all calls in this time bucket.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Location</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Location of Azure Database for PostgreSQL Flexible server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogicalServerName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Logical name of the instance.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MaxExecDurationMs</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Maximum query execution duration in milliseconds in this time bucket.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MeanExecDurationMs</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Mean query execution duration in milliseconds in this time bucket.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MinExecDurationMs</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Minimum query execution duration in milliseconds in this time bucket.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ParametersCaptureStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates the status of capturing parameters of a parameterized query.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PlanId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">ID of the plan corresponding to this query if plan store is enabled, otherwise the field is empty.</td>
+</tr>
+<tr>
+<td style="text-align: left;">QueryId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique query ID of the statement that is an internal hash code, computed from the statement's parse tree.</td>
+</tr>
+<tr>
+<td style="text-align: left;">QueryType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates the query type of the statement. Possible values: select, update, insert, delete, utility, nothing, unknown.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReplicaRole</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Replica role example. Primary or secondary.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rows</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Total number of rows retrieved or affected by the statement for all calls in this time bucket.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RuntimeStatsEntryId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">ID of the runtime entry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SearchPath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Value of search_path set at the time the query was captured.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SearchPathCaptureStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates the status of capturing the search_path.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SharedBlksDirtied</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Total number of shared blocks dirtied by the statement for all calls in this time bucket.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SharedBlksHit</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Total number of shared block cache hits by the statement for all calls in this time bucket.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SharedBlksRead</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Total number of shared blocks read by the statement for all calls in this time bucket.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SharedBlksWritten</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Total number of shared blocks written by the statement for all calls in this time bucket.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">StartTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The start time corresponding to the time bucket for this entry. Queries are aggregated by time buckets.</td>
+</tr>
+<tr>
+<td style="text-align: left;">StdDevExecDurationMs</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Standard deviation of the query execution duration time in milliseconds in this time bucket.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TempBlksRead</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Total number of temporary file blocks read by the statement for all calls in this time bucket.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TempBlksWritten</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Total number of temporary file blocks written by the statement for all calls in this time bucket.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) of when the log was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TotalExecDurationMs</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Total query execution duration in milliseconds for all calls in this time bucket.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserId</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">ID (OID) of the user that executed the statement.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.dbforpostgresql/flexibleservers</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

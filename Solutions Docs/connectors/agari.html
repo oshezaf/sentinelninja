@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ Agari Phishing Defense and Brand Protection &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>⚠️ Agari Phishing Defense and Brand Protection</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/agari_logo.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>Agari</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Agari</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/agari.html">Agari</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Agari/Data%20Connectors/Agari_API_FunctionApp.json">Agari_API_FunctionApp.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Connector definition requires workspace key (SharedKey pattern)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+</tbody>
+</table>
+<p>This connector uses a Agari REST API connection to push data into Azure Sentinel Log Analytics.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/agari-apdpolicy-log-cl.html"><code>agari_apdpolicy_log_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/agari-apdtc-log-cl.html"><code>agari_apdtc_log_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/agari-bpalerts-log-cl.html"><code>agari_bpalerts_log_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
+- <strong>Agari Phishing Defense, Phishing Response or Brand Protection API Client ID and Secret</strong>: Ensure you have your Client ID and Secret keys. Instructions can be found on the <a href="https://developers.agari.com/agari-platform/docs/quick-start">Agari Developers Site</a>.
+- <strong>(Optional) Microsoft Security Graph API</strong>: The Agari Function App has the ability to share threat intelleigence with Sentinel via the Security Graph API. To use this feature, you will need to enable the <a href="https://docs.microsoft.com/azure/sentinel/connect-threat-intelligence">Sentinel Threat Intelligence Platforms connector</a> as well as register an application in Azure Active Directory.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+<p><strong>NOTE:</strong> This connector uses Azure Functions to connect to the Agari APIs to pull its logs into Azure Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
+<p><strong>(Optional Step)</strong> Securely store workspace and API authorization key(s) or token(s) in Azure Key Vault. Azure Key Vault provides a secure mechanism to store and retrieve key values. <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Follow these instructions</a> to use Azure Key Vault with an Azure Function App.</p>
+</blockquote>
+<p><strong>1. STEP 1 - Get your Agari API credentials</strong></p>
+<ol>
+<li>Log into any Agari product (Client ID and Secret are the same for all applications) </li>
+<li>Click on your username in the upper right and select <strong>Settings</strong></li>
+<li>Click on the <strong>Generate API Secret</strong> link to generate an API client_id and client_secret (the link will read <strong>Regenerate API Secret</strong> if you have already generated an API client ID/secret previously)</li>
+<li>Copy both the client_id and client_secret that are generated</li>
+</ol>
+<p><strong>2. STEP 2 - (Optional) Enable the Security Graph API</strong></p>
+<p>Follow the instrcutions found on article <a href="https://docs.microsoft.com/azure/sentinel/connect-threat-intelligence#connect-azure-sentinel-to-your-threat-intelligence-platform">Connect Azure Sentinel to your threat intelligence platform</a>. Once the application is created you will need to record the Tenant ID, Client ID and Client Secret.</p>
+<p><strong>3. STEP 3 - Deploy the connector and the associated Azure Function</strong></p>
+<blockquote>
+<p><strong>IMPORTANT:</strong> Before deploying the Agari Connector, have the Workspace ID and Workspace Primary Key (can be copied from the following), as well as the Agari API credentials from the previous step.
+- <strong>Workspace ID</strong>: <code>WorkspaceId</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
+- <strong>Primary Key</strong>: <code>PrimaryKey</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+<p><strong>4. Choose a deployement option</strong></p>
+<p><strong>5. Option 1: Deploy using the Azure Resource Manager (ARM) Template</strong></p>
+<ol>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below. </p>
+<p><a href="https://aka.ms/sentinel-agari-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a> 
+2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. 
+3. Enter the <strong>Workspace ID</strong>, <strong>Workspace Key</strong>, <strong>Agari Client ID</strong>, <strong>Agari Client Secret</strong>, select <code>True</code> or <code>False</code> for the products you subscribe to, and if you wish to share IoCs with Sentinel, select <code>True</code> For <strong>Enable Security Graph Sharing</strong>, and enter the required IDs from the Azure Application.</p>
+<blockquote>
+<ul>
+<li>The Function App will request data from the Agari APIs every 5 minutes, corresponding to the Funciton App Timer.</li>
+<li>Note: If using Azure Key Vault secrets for any of the values above, use the<code>@Microsoft.KeyVault(SecretUri={Security Identifier})</code>schema in place of the string values. Refer to <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Key Vault references documentation</a> for further details. 
+4. Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>. 
+5. Click <strong>Purchase</strong> to deploy.
+6. <strong>NOTE:</strong> Due to the use of Environment Variables to store log access times, the App requires 1 additonal manual step. In the Function App, select the Function App Name and select Click on <strong>Identity</strong> and for System assigned Identity, click on <strong>Azure role assignments</strong> and <strong>Add Role assignment</strong>. Select <strong>Subscription</strong> as the scope, select your subscription and set the Role to <strong>Contributor</strong>. Click on <strong>Save</strong>.</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<p><strong>6. Option 2: Manual Deployment of Azure Functions</strong></p>
+<p><strong>1. Create a Function App</strong></p>
+<ol>
+<li>From the Azure Portal, navigate to <a href="https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2Fsites/kind/functionapp">Function App</a>, and select <strong>+ Add</strong>.</li>
+<li>In the <strong>Basics</strong> tab, ensure Runtime stack is set to <strong>Powershell Core</strong>. </li>
+<li>In the <strong>Hosting</strong> tab, ensure the <strong>Consumption (Serverless)</strong> plan type is selected.</li>
+<li>Make other preferrable configuration changes, if needed, then click <strong>Create</strong>.</li>
+</ol>
+<p><strong>2. Import Function App Code</strong></p>
+<ol>
+<li>In the newly created Function App, select <strong>Functions</strong> on the left pane and click <strong>+ Add</strong>.</li>
+<li>Click on <strong>Code + Test</strong> on the left pane. </li>
+<li>Copy the <a href="https://aka.ms/sentinel-agari-functionapp">Function App Code</a> and paste into the Function App <code>run.ps1</code> editor.</li>
+<li>Click <strong>Save</strong>.</li>
+</ol>
+<p><strong>3. Configure the Function App</strong></p>
+<ol>
+<li>In the Function App, select the Function App Name and select <strong>Configuration</strong>.</li>
+<li>In the <strong>Application settings</strong> tab, select <strong>+ New application setting</strong>.</li>
+<li>Add each of the following eight to twelve (8-12) application settings individually, with their respective string values (case-sensitive): 
+        clientID
+        clientSecret
+        workspaceID
+        workspaceKey
+        enableBrandProtectionAPI
+        enablePhishingResponseAPI
+        enablePhishingDefenseAPI
+        resGroup
+        functionName
+        subId
+        enableSecurityGraphSharing
+        &lt;--- Required if enableSecurityGraphSharing is set to true ---&gt;
+        GraphTenantId
+        GraphClientId
+        GraphClientSecret
+        logAnalyticsUri (optional)<blockquote>
+<ul>
+<li>Enter your Agari ClientID and Secret in 'clientId' and 'clientSecret'</li>
+<li>Enter 'true' or 'false' for 'enablePhishingDefense', 'enableBrandProtection', 'enablePhishingResponse' as per your product subscriptions.</li>
+<li>Enter your Resource Group name in resGroup, the name of the Function (from previous step) in functionName and your Subscription ID in subId.</li>
+<li>Enter 'true' or 'false' for 'enableSecurtyGraphAPI'. If you are enabling the Security Graph, the 'GraphTenantId','GraphClientId', and 'GraphClientSecret' is required.</li>
+<li>Use logAnalyticsUri to override the log analytics API endpoint for dedicated cloud. For example, for public cloud, leave the value empty; for Azure GovUS cloud environment, specify the value in the following format: <code>https://&lt;CustomerId&gt;.ods.opinsights.azure.us</code>.</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<p><strong>4. Set Permissions for the App</strong></p>
+<ol>
+<li>
+<p>In the Function App, select the Function App Name and select Click on <strong>Identity</strong> and for System assigned Identity, set the status to On. </p>
+</li>
+<li>
+<p>Next, click on <strong>Azure role assignments</strong> and <strong>Add Role assignment</strong>. Select <strong>Subscription</strong> as the scope, select your subscription and set the Role to <strong>Contributor</strong>. Click on <strong>Save</strong>.</p>
+</li>
+</ol>
+<p><strong>5. Complete Setup.</strong></p>
+<ol>
+<li>Once all application settings have been entered, click <strong>Save</strong>. Note that it will take some time to have the required dependencies download, so you may see some inital failure messages.</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

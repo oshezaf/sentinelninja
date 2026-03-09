@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SlackAudit &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>SlackAudit</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/SlackAudit/Data%20Connectors/Logo/slacklogo.svg" alt="SlackAudit Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.5</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2021-03-24</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit">SlackAudit</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://slack.com/intl/en-in/">Slack</a> Audit solution provides the capability to ingest <a href="https://api.slack.com/admins/audit-logs">Slack Audit Records</a> events into Microsoft Sentinel through the REST API. Refer to <a href="https://api.slack.com/admins/audit-logs-call">API documentation</a> for more information.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong> </p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>• <a href="https://aka.ms/Sentinel-CCP_Platform">Microsoft Sentinel Codeless Connector Framework</a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong> (plus 2 discovered⚠️):</p>
+<ul>
+<li><a href="../connectors/slackaudit.html">Slack</a> ⚠️ 🔶</li>
+<li><a href="../connectors/slackauditapi.html">[DEPRECATED] Slack Audit</a> ⚠️ 🔶</li>
+<li><a href="../connectors/slackauditlogsccpdefinition.html">SlackAudit (via Codeless Connector Framework)</a> 🔶</li>
+</ul>
+<p><em>⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.</em></p>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>3 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/slackauditnativepoller-cl.html"><code>SlackAuditNativePoller_CL</code></a> 🔶</td>
+<td><a href="../connectors/slackaudit.html">Slack</a>, <a href="../connectors/slackauditapi.html">[DEPRECATED] Slack Audit</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/slackauditv2-cl.html"><code>SlackAuditV2_CL</code></a> 🔶</td>
+<td><a href="../connectors/slackauditlogsccpdefinition.html">SlackAudit (via Codeless Connector Framework)</a>, <a href="../connectors/slackauditapi.html">[DEPRECATED] Slack Audit</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/slackaudit-cl.html"><code>SlackAudit_CL</code></a> 🔶</td>
+<td><a href="../connectors/slackauditapi.html">[DEPRECATED] Slack Audit</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>21 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">9</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/slackaudit-slackaudit-empty-user-agent-04528635-a5f1-438b-ab74-21ca7bc3aa32-dc53a71b.html">SlackAudit - Empty User Agent</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/slackauditnativepoller-cl.html"><code>SlackAuditNativePoller_CL</code></a><br><a href="../tables/slackauditv2-cl.html"><code>SlackAuditV2_CL</code></a><br><a href="../tables/slackaudit-cl.html"><code>SlackAudit_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/slackaudit-slackaudit-multiple-archived-files-uploaded-in-short-period-of-time-3db0cb83-5fa4-4310-a8a0-d8d66183f0bd-21e5a2f1.html">SlackAudit - Multiple archived files uploaded in short period of time</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/slackauditnativepoller-cl.html"><code>SlackAuditNativePoller_CL</code></a><br><a href="../tables/slackauditv2-cl.html"><code>SlackAuditV2_CL</code></a><br><a href="../tables/slackaudit-cl.html"><code>SlackAudit_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/slackaudit-slackaudit-multiple-failed-logins-for-user-93a91c37-032c-4380-847c-957c001957ad-b5073227.html">SlackAudit - Multiple failed logins for user</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/slackauditnativepoller-cl.html"><code>SlackAuditNativePoller_CL</code></a><br><a href="../tables/slackauditv2-cl.html"><code>SlackAuditV2_CL</code></a><br><a href="../tables/slackaudit-cl.html"><code>SlackAudit_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/slackaudit-slackaudit-public-link-created-for-file-which-can-contain-sensitive-information.-279316e8-8965-47d2-9788-b94dc352c853-de99164f.html">SlackAudit - Public link created for file which can contain sensitive information.</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/slackauditnativepoller-cl.html"><code>SlackAuditNativePoller_CL</code></a><br><a href="../tables/slackauditv2-cl.html"><code>SlackAuditV2_CL</code></a><br><a href="../tables/slackaudit-cl.html"><code>SlackAudit_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/slackaudit-slackaudit-suspicious-file-downloaded.-132b98a5-07e9-401a-9b6f-453e52a53979-c4dde0cb.html">SlackAudit - Suspicious file downloaded.</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/slackauditnativepoller-cl.html"><code>SlackAuditNativePoller_CL</code></a><br><a href="../tables/slackauditv2-cl.html"><code>SlackAuditV2_CL</code></a><br><a href="../tables/slackaudit-cl.html"><code>SlackAudit_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/slackaudit-slackaudit-unknown-user-agent-3b11f06e-4afd-4ae6-8477-c61136619ac8-6974a0f1.html">SlackAudit - Unknown User Agent</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/slackauditnativepoller-cl.html"><code>SlackAuditNativePoller_CL</code></a><br><a href="../tables/slackauditv2-cl.html"><code>SlackAuditV2_CL</code></a><br><a href="../tables/slackaudit-cl.html"><code>SlackAudit_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/slackaudit-slackaudit-user-email-linked-to-account-changed.-9d85feb3-7f54-4181-b143-68abb1a86823-d563d143.html">SlackAudit - User email linked to account changed.</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/slackauditnativepoller-cl.html"><code>SlackAuditNativePoller_CL</code></a><br><a href="../tables/slackauditv2-cl.html"><code>SlackAuditV2_CL</code></a><br><a href="../tables/slackaudit-cl.html"><code>SlackAudit_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/slackaudit-slackaudit-user-login-after-deactivated.-e6e99dcb-4dff-48d2-8012-206ca166b36b-e5724d2b.html">SlackAudit - User login after deactivated.</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/slackauditnativepoller-cl.html"><code>SlackAuditNativePoller_CL</code></a><br><a href="../tables/slackauditv2-cl.html"><code>SlackAuditV2_CL</code></a><br><a href="../tables/slackaudit-cl.html"><code>SlackAudit_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/slackaudit-slackaudit-user-role-changed-to-admin-or-owner-be6c5fc9-2ac3-43e6-8fb0-cb139e04e43e-2ec5dec7.html">SlackAudit - User role changed to admin or owner</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/slackauditnativepoller-cl.html"><code>SlackAuditNativePoller_CL</code></a><br><a href="../tables/slackauditv2-cl.html"><code>SlackAuditV2_CL</code></a><br><a href="../tables/slackaudit-cl.html"><code>SlackAudit_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/slackaudit-slackaudit-applications-installed-cefd7f18-9359-4a99-bd18-965983bb724d-453a5c0c.html">SlackAudit - Applications installed</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/slackauditnativepoller-cl.html"><code>SlackAuditNativePoller_CL</code></a><br><a href="../tables/slackauditv2-cl.html"><code>SlackAuditV2_CL</code></a><br><a href="../tables/slackaudit-cl.html"><code>SlackAudit_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/slackaudit-slackaudit-deactivated-users-f2b2cd0d-6190-44aa-8e0e-265de45ee379-fbc0a693.html">SlackAudit - Deactivated users</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/slackauditnativepoller-cl.html"><code>SlackAuditNativePoller_CL</code></a><br><a href="../tables/slackauditv2-cl.html"><code>SlackAuditV2_CL</code></a><br><a href="../tables/slackaudit-cl.html"><code>SlackAudit_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/slackaudit-slackaudit-downloaded-files-stats-7865b00c-26c8-46db-9422-bb9e4ee696ac-6f7c397c.html">SlackAudit - Downloaded files stats</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/slackauditnativepoller-cl.html"><code>SlackAuditNativePoller_CL</code></a><br><a href="../tables/slackauditv2-cl.html"><code>SlackAuditV2_CL</code></a><br><a href="../tables/slackaudit-cl.html"><code>SlackAudit_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/slackaudit-slackaudit-failed-logins-with-unknown-username-b62b5a97-41e5-47cb-9b90-aa079f65f0c0-6f1116d0.html">SlackAudit - Failed logins with unknown username</a></td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/slackauditnativepoller-cl.html"><code>SlackAuditNativePoller_CL</code></a><br><a href="../tables/slackauditv2-cl.html"><code>SlackAuditV2_CL</code></a><br><a href="../tables/slackaudit-cl.html"><code>SlackAudit_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/slackaudit-slackaudit-new-user-created-d65400c2-50a3-46cc-b3e6-1cb72b953e72-63039815.html">SlackAudit - New User created</a></td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/slackauditnativepoller-cl.html"><code>SlackAuditNativePoller_CL</code></a><br><a href="../tables/slackauditv2-cl.html"><code>SlackAuditV2_CL</code></a><br><a href="../tables/slackaudit-cl.html"><code>SlackAudit_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/slackaudit-slackaudit-suspicious-files-downloaded-31e54776-f2db-4465-b951-410880e009ad-6895491d.html">SlackAudit - Suspicious files downloaded</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/slackauditnativepoller-cl.html"><code>SlackAuditNativePoller_CL</code></a><br><a href="../tables/slackauditv2-cl.html"><code>SlackAuditV2_CL</code></a><br><a href="../tables/slackaudit-cl.html"><code>SlackAudit_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/slackaudit-slackaudit-uploaded-files-stats-aa9bc100-012a-4348-820d-06606fc11299-ca14633c.html">SlackAudit - Uploaded files stats</a></td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/slackauditnativepoller-cl.html"><code>SlackAuditNativePoller_CL</code></a><br><a href="../tables/slackauditv2-cl.html"><code>SlackAuditV2_CL</code></a><br><a href="../tables/slackaudit-cl.html"><code>SlackAudit_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/slackaudit-slackaudit-user-permission-changed-7adbe474-debf-47c2-9d76-49efd4d2953b-dd08ba0e.html">SlackAudit - User Permission Changed</a></td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/slackauditnativepoller-cl.html"><code>SlackAuditNativePoller_CL</code></a><br><a href="../tables/slackauditv2-cl.html"><code>SlackAuditV2_CL</code></a><br><a href="../tables/slackaudit-cl.html"><code>SlackAudit_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/slackaudit-slackaudit-user-logins-by-ip-85850974-acbf-47bd-a635-4e3511b553c0-d29da94a.html">SlackAudit - User logins by IP</a></td>
+<td style="text-align: left;">InitialAccess, Persistence</td>
+<td style="text-align: left;"><a href="../tables/slackauditnativepoller-cl.html"><code>SlackAuditNativePoller_CL</code></a><br><a href="../tables/slackauditv2-cl.html"><code>SlackAuditV2_CL</code></a><br><a href="../tables/slackaudit-cl.html"><code>SlackAudit_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/slackaudit-slackaudit-users-joined-channels-without-invites-ef815b70-e6f6-427b-ac9f-56d73472c4c3-40b271cd.html">SlackAudit - Users joined channels without invites</a></td>
+<td style="text-align: left;">InitialAccess, Persistence</td>
+<td style="text-align: left;"><a href="../tables/slackauditnativepoller-cl.html"><code>SlackAuditNativePoller_CL</code></a><br><a href="../tables/slackauditv2-cl.html"><code>SlackAuditV2_CL</code></a><br><a href="../tables/slackaudit-cl.html"><code>SlackAudit_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/slackaudit-slackaudit-1483bfeb.html">SlackAudit</a></td>
+<td style="text-align: left;"><a href="../tables/slackauditnativepoller-cl.html"><code>SlackAuditNativePoller_CL</code></a><br><a href="../tables/slackauditv2-cl.html"><code>SlackAuditV2_CL</code></a><br><a href="../tables/slackaudit-cl.html"><code>SlackAudit_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/slackaudit.html">SlackAudit</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/slackauditnativepoller-cl.html"><code>SlackAuditNativePoller_CL</code></a> <em>(read)</em><br><a href="../tables/slackauditv2-cl.html"><code>SlackAuditV2_CL</code></a> <em>(read)</em><br><a href="../tables/slackaudit-cl.html"><code>SlackAudit_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.5</td>
+<td>12-12-2025</td>
+<td>Updated the <strong>Parser</strong> yaml file.</td>
+</tr>
+<tr>
+<td>3.0.4</td>
+<td>28-07-2025</td>
+<td>Removed Deprecated <strong>Data Connector</strong>.</td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>30-06-2025</td>
+<td>Moving <strong>CCF Data Connector</strong> to GA.</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>30-05-2025</td>
+<td>Preview tag added to <strong>CCF Data Connector</strong>.</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>24-04-2025</td>
+<td>Migrated the <strong>Function app Connector</strong> to <strong>CCP Data Connector</strong> and Updated the <strong>Parser</strong>.</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>23-08-2023</td>
+<td>Manual deployment instructions updated for <strong>Data Connector</strong> &amp; Convert <strong>Parser</strong> from text to yaml.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

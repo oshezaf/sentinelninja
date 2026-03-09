@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ATCExpressRouteCircuitIpfix &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>ATCExpressRouteCircuitIpfix</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for ATCExpressRouteCircuitIpfix table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Azure Resources</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/atcexpressroutecircuitipfix">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (42 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/atcexpressroutecircuitipfix">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">ATCRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Azure Traffic Collector (ATC) deployment region.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ATCResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Azure resource ID of Azure Traffic Collector (ATC).</td>
+</tr>
+<tr>
+<td style="text-align: left;">BgpNextHop</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Border Gateway Protocol (BGP) next hop as defined in the routing table.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Destination IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationPort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">TCP destination port.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dot1qCustomerVlanId</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Dot1q Customer VlanId.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dot1qVlanId</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Dot1q VlanId.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstAsn</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Destination Autonomous System Number (ASN).</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstMask</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Mask of destination subnet.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstSubnet</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Destination subnet of destination IP.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ExRCircuitDirectPortId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Azure resource ID of Express Route Circuit's direct port.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ExRCircuitId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Azure resource ID of Express Route Circuit.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ExRCircuitServiceKey</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Service key of Express Route Circuit.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FlowRecordTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp (UTC) when Express Route Circuit emitted this flow record.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flowsequence</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Flow sequence of this flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IcmpType</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Protocol type as specified in IP header.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IpClassOfService</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">IP Class of service as specified in IP header.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IpProtocolIdentifier</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Protocol type as specified in IP header.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IpVerCode</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">IP version as defined in the IP header.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MaxTtl</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Maximum time to live (TTL) as defined in the IP header.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MinTtl</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Minimum time to live (TTL) as defined in the IP header.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NextHop</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Next hop as per forwarding table.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NumberOfBytes</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Total number of bytes of packets captured in this flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NumberOfPackets</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Total number of packets captured in this flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The specific Azure Traffic Collector (ATC) operation that emitted this flow record.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PeeringType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Express Route Circuit peering type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Protocol</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Protocol type as specified in IP header.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SchemaVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Flow record schema version.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourcePort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">TCP source port.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcAsn</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Source Autonomous System Number (ASN).</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcMask</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Mask of source subnet.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcSubnet</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source subnet of source IP.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TcpFlag</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">TCP flag as defined in the TCP header.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp (UTC) when the Azure Traffic Collector (ATC) emitted this flow record.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.networkfunction/azuretrafficcollectors</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

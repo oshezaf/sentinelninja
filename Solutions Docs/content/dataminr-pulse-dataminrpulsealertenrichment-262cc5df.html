@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DataminrPulseAlertEnrichment &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>DataminrPulseAlertEnrichment</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>This playbook provides an end-to-end example of how alert enrichment works. This will extract the IP, Domain, HostName, URL or Hashes from the generated incident and call the Get alerts API of Dataminr Pulse to get the data associated with that parameter and enrich the incident by adding Dataminr Pulse alerts data as an incident comment.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/dataminr-pulse.html">Dataminr Pulse</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dataminr%20Pulse/Playbooks/DataminrPulseAlertEnrichment/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dataminr%20Pulse/Playbooks/DataminrPulseAlertEnrichment/readme.md">DataminrPulseAlertEnrichment/readme.md</a></em></p>
+</blockquote>
+<h1>Dataminr Pulse Alert Enrichment</h1>
+<ul>
+<li><a href="#Summary">Summary</a></li>
+<li><a href="#Prerequisites">Prerequisites</a></li>
+<li><a href="#Deployment-instructions">Deployment instructions</a></li>
+<li><a href="#Post-Deployment-instructions">Post-Deployment instructions</a></li>
+</ul>
+<h2>Summary<a name="Summary"></a></h2>
+<p>This playbook provides an end-to-end example of how alert enrichment works. This will extract the IP, Domain, HostName, URL or Hashes from the generated incident and call the Get alerts API of Dataminr Pulse to get the data associated with that parameter and enrich the incident by adding Dataminr Pulse alerts data as an incident comment.</p>
+<h3>Prerequisites<a name="Prerequisites"></a></h3>
+<ol>
+<li>Users must have a valid pair of Dataminr Pulse API Client ID and secret credentials.</li>
+<li>Store client credentials in Key Vault and obtain keyvault name and tenantId.<ul>
+<li>Create a Key Vault with unique name</li>
+<li>Go to KeyVault -&gt; secrets -&gt; Generate/import and create 'DataMinrPulse-clientId'&amp; 'DataMinrPulse-clientSecret' to store client_id and client_secret respectively. Also create a secret named 'DataMinrPulse-DmaToken' to store dmaToken.</li>
+</ul>
+</li>
+</ol>
+<h3>Deployment instructions<a name="Deployment-instructions"></a></h3>
+<ol>
+<li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
+<li>Fill in the required parameters:<ul>
+<li>Playbook Name: Enter the playbook name here</li>
+<li>Key Vault Name: Name of keyvault where secrets are stored.</li>
+<li>Tenant Id: TenantId of azure active directory where keyvault is located.</li>
+<li>BaseURL: Baseurl for your Dataminr account.</li>
+</ul>
+</li>
+</ol>
+<p><a href="https%3A%2F%2Fportal.azure.com%2F%23create%2FMicrosoft.Template%2Furi%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDataminr%20Pulse%2FPlaybooks%2FDataminrPulseAlertEnrichment%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https%3A%2F%2Fportal.azure.us%2F%23create%2FMicrosoft.Template%2Furi%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDataminr%20Pulse%2FPlaybooks%2FDataminrPulseAlertEnrichment%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<h3>Post-Deployment instructions<a name="Post-Deployment-instructions"></a></h3>
+<h4>a. Authorize connections</h4>
+<p>Once deployment is complete, authorize each connection.</p>
+<ol>
+<li>Click the Keyvault connection resource</li>
+<li>Click edit API connection</li>
+<li>Click Authorize</li>
+<li>Sign in</li>
+<li>Click Save</li>
+<li>Repeat steps for other connections</li>
+</ol>
+<h4>b. Assign Role to add comment in incident</h4>
+<p>After authorizing each connection, assign role to this playbook.</p>
+<ol>
+<li>Go to Log Analytics Workspace → <your workspace> → Access Control → Add</li>
+<li>Add role assignment</li>
+<li>Assignment type: Job function roles</li>
+<li>Role: Microsoft Sentinel Contributor</li>
+<li>Members: select managed identity for "assigned access to" and add your logic app as member.</li>
+<li>Click on review+assign</li>
+</ol>
+<h4>c. Add Access policy in Keyvault</h4>
+<p>Add access policy for playbook's managed identity to read, write secrets of keyvault.</p>
+<ol>
+<li>Go to logic app → <your logic app> → identity → System assigned Managed identity and copied it.</li>
+<li>Go to keyvaults → <your keyvault> → Access policies → create.</li>
+<li>Select all keys &amp; secrets permissions. Click next.</li>
+<li>In principal section, search by copied identity object ID. Click next.</li>
+<li>Click review + create.</li>
+</ol>
+<h4>d. Configurations in Microsoft Sentinel</h4>
+<ol>
+<li>In Microsoft Sentinel, Configure the analytic rules to trigger an incident.
+  * Analytic Rule must contain atleast one of the below fields mapped in Custom Details to successfully run this playbook.<ul>
+<li>DstDomain</li>
+<li>DstHostname</li>
+<li>DstIpAddr</li>
+<li>DstMacAddr</li>
+<li>SrcDomain</li>
+<li>SrcFileMD5</li>
+<li>SrcFileSHA1</li>
+<li>SrcFileSHA256</li>
+<li>SrcFileSHA512</li>
+<li>SrcHostname</li>
+<li>SrcIpAddr</li>
+<li>SrcMacAddr</li>
+<li>TargetFileMD5</li>
+<li>TargetFileSHA1</li>
+<li>TargetFileSHA256</li>
+<li>TargetFileSHA512</li>
+<li>Url</li>
+</ul>
+</li>
+<li>In Microsoft Sentinel, Configure the automation rules to trigger the playbook. 
+  * Go to Microsoft Sentinel -&gt; <your workspace> -&gt; Automation 
+  * Click on <strong>Create</strong> -&gt; <strong>Automation rule</strong>
+  * Provide name for your rule
+  * In Analytic rule name condition, select analytic rule which you have created.
+  * In Actions dropdown select <strong>Run playbook</strong>
+  * In second dropdown select your deployed playbook
+  * Click on <strong>Apply</strong>
+  * Save the Automation rule.</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/dataminr-pulse.html">Back to Dataminr Pulse</a></p>
+</div>
+</body>
+</html>

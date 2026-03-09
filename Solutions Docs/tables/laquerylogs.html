@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LAQueryLogs &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>LAQueryLogs</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for LAQueryLogs table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Audit</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/laquerylogs">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (34 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/laquerylogs">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">AADClientId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">AAD ClientId used by the caller.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AADEmail</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">AAD Email of the caller.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AADObjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">AAD ObjectId of the caller.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AADTenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">AAD TenantId of the caller.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConditionalDataAccess</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates whether the query was executed with an applicable attribute-based access control data access condition (ABAC), and if the condition had an error.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID for correlated events.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsBillableQuery</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether query execution is billed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsWorkspaceInFailover</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the queried workspace was in failover mode.</td>
+</tr>
+<tr>
+<td style="text-align: left;">QueryText</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The full body of the query as submitted by the user.</td>
+</tr>
+<tr>
+<td style="text-align: left;">QueryThumbprint</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A hash representing the query structure, useful for identifying similar queries.</td>
+</tr>
+<tr>
+<td style="text-align: left;">QueryTimeRangeEnd</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The end time (UTC) of the time range across which the query was was requested by the caller to be executed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">QueryTimeRangeStart</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The starting time (UTC) of the time range across which the query was was requested by the caller to be executed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestClientApp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ClientApp string in the request header (x-ms-app).</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestContext</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">ResourceId of all referenced workspaces, applications, and resources across which the query was requested by the caller to be executed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestContextFilters</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Filters applied to the request context.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestTarget</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ResourceId of the request URL.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseCode</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The HTTP response code for the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseDurationMs</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The duration (in ms) that the query took to execute.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseRowCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The number of rows that were returned.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ScannedGB</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">For billable queries, like Basic logs queries, indicates the total GB of data scanned in the query.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">StatsCPUTimeMs</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The CPU (in ms) used in the execution of this query.</td>
+</tr>
+<tr>
+<td style="text-align: left;">StatsDataProcessedEnd</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The end time (UTC) of the time range across which the data processed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">StatsDataProcessedStart</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The starting time (UTC) of the time range across which the data processed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">StatsRegionCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The number of regions that the workspaces accessed are spread across.</td>
+</tr>
+<tr>
+<td style="text-align: left;">StatsWorkspaceCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The number of workspaces that the query accessed, either explicitly or otherwise.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) at which the query was submitted.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">WorkspaceRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The region of the queried workspace.</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (3)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/dpdp-compliance.html">DPDP Compliance</a></li>
+<li><a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a></li>
+<li><a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a></li>
+</ul>
+<hr />
+<h2>Content Items Using This Table (3)</h2>
+<h3>Workbooks (3)</h3>
+<p><strong>In solution <a href="../solutions/dpdp-compliance.html">DPDP Compliance</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/dpdp-compliance-dpdpcompliance-18571e87.html">DPDPCompliance</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/gdpr-compliance-&amp;-data-security-gdprcomplianceanddatasecurity-a0958a9a.html">GDPRComplianceAndDataSecurity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.html">InsiderRiskManagement</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.operationalinsights/workspaces</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

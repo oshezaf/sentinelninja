@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Send-Sentinel-Alerts-to-Salem &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Send-Sentinel-Alerts-to-Salem</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>Use this playbook to send Microsoft Sentinel alerts to Salem Virtual Cyber Analyst</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/salemcyber.html">SalemCyber</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SalemCyber/Playbooks/SendAlertToSalem/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SalemCyber/Playbooks/SendAlertToSalem/readme.md">SendAlertToSalem/readme.md</a></em></p>
+</blockquote>
+<h1>Send Alerts to Salem Playbook Guide</h1>
+<h2>Overview</h2>
+<p>This playbook is designed to make it simple to send new Microsoft Sentinel alerts to Salem for investigation.  This playbook will forward alerts to the EventHub instance in the Salem managed resource group.</p>
+<h2>Prerequisites</h2>
+<ul>
+<li>Have an active Salem application installed in Azure.  The Salem app can be found in the <a href="https://portal.azure.com/#view/Microsoft_Azure_Marketplace/GalleryItemDetailsBladeNopdl/id/saleminc1627928803559.salemcyber">Azure Marketplace</a></li>
+</ul>
+<h2>Pre-deployment</h2>
+<h3>Update Event Hub network settings</h3>
+<p>Collect the Salem Event Hub send key.  This value will be required during playbook deployment and will enable the playbook to forward new Microsoft Sentinel Alerts to Salem.</p>
+<p>The key from the 'alerts' EventHub namespace in the Salem EventHub.  You can find this key in the Azure portal for the event hub resource in the Salem managed resource group.  The key will already exist, however, you can generate a new key if you wish.  If you do create a new key, ensure the key has 'send' permissions.</p>
+<h2>Post Deployment</h2>
+<h3>Authorize the API connection</h3>
+<p>When deploying the playbook, a new API connection resource was created and needs to be authorized.</p>
+<ol>
+<li>Find the API connections created by deploying the Defender APT integration.  The API connections will be called 'Salem-MicrosoftSentinel' and 'Salem-DefenderATP'</li>
+</ol>
+<h2>Update Event Hub network settings</h2>
+<p>The Salem Event Hub has default network rules that may prevent this playbook from connecting.  One way to allow network traffic to the Event Hub is to update the Event Hub network settings to allow inbound connections from the IP addresses associated with the region in which you deploy the playbook.  You can find the IP ranges based on the region you deployed this playbook, <a href="https://learn.microsoft.com/en-us/connectors/common/outbound-ip-addresses#azure-logic-apps">here</a></p>
+<p>The Event Hub used by Salem is located in the Salem managed resource group.  You can find this resource group in the overview page of the Salem application.</p>
+<p>It is also possible to use vNet integration or private endpoints to communicate between the playbook and the Salem Event Hub</p>
+<h2>Get Help</h2>
+<p>For support, contact <a href="mailto:support@salemcyber.com">support@salemcyber.com</a></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/salemcyber.html">Back to SalemCyber</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auth0 &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Auth0</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Auth0.svg" alt="Auth0 Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.1.1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-08-18</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0">Auth0</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://auth0.com/access-management">Auth0 Access Management</a> solution for Microsoft Sentinel provides the capability to ingest <a href="https://auth0.com/docs/api/management/v2/#!/Logs/get_logs">Auth0 log events</a> into your Microsoft Sentinel workspace.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong> </p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>a. <a href="https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api">Azure Monitor HTTP Data Collector API</a></p>
+<p>b. <a href="https://azure.microsoft.com/services/functions/#overview">Azure Functions</a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/auth0.html">Auth0 Access Management</a> 🔶</li>
+<li><a href="../connectors/auth0connectorccpdefinition.html">Auth0 Logs</a></li>
+</ul>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>2 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/auth0am-cl.html"><code>Auth0AM_CL</code></a> 🔶</td>
+<td><a href="../connectors/auth0.html">Auth0 Access Management</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/auth0logs-cl.html"><code>Auth0Logs_CL</code></a></td>
+<td><a href="../connectors/auth0connectorccpdefinition.html">Auth0 Logs</a></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>2 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">2</td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/auth0.html">Auth0</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/auth0am-cl.html"><code>Auth0AM_CL</code></a> <em>(read)</em><br><a href="../tables/auth0-cl.html"><code>Auth0_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/auth0am.html">Auth0AM</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/auth0am-cl.html"><code>Auth0AM_CL</code></a> <em>(read)</em><br><a href="../tables/auth0logs-cl.html"><code>Auth0Logs_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0/README.md">Auth0/README.md</a></em></p>
+</blockquote>
+<h1>Steps to Configure Auth0 app</h1>
+<p>The following are steps to be followed in Auth0 App.</p>
+<ol>
+<li>Please go to applications and select application from auth0 side, Please find below screen shot for reference :-</li>
+</ol>
+<p><img alt="" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0/Images/Applications.png%3Fraw%3Dtrue" /></p>
+<ol start="2">
+<li>
+<p>Click on settings of the App and note down the credentials
+<br><strong><em>a. Copy the domain
+    b. Get the client id value
+    c. Get the client secret</em></strong><br></p>
+</li>
+<li>
+<p>Under Application properties --&gt; Select Application type as Machine to Machine. Please find below screen shot for reference :-</p>
+</li>
+</ol>
+<p><img alt="" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0/Images/ApplicationProperties.png%3Fraw%3Dtrue" /></p>
+<ol start="4">
+<li>Under credentials tab --&gt; Select client secret (Post). Please find below screen shot for reference :-</li>
+</ol>
+<p><img alt="" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0/Images/Credentials.png%3Fraw%3Dtrue" /></p>
+<ol start="5">
+<li>Under API tab, please make sure Authorized to scopes, Please find below screen shot for reference :-</li>
+</ol>
+<p><img alt="" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0/Images/API.png%3Fraw%3Dtrue" /></p>
+<ol start="6">
+<li>Please make sure the domain value under settings --&gt; Environment Variables, please refer below screen shot for reference and other values are entered from the above step copied values and Domain should be  starts with https://,then click on Apply  and restart function app</li>
+</ol>
+<p><img alt="" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0/Images/functionappvalues.png%3Fraw%3Dtrue" /></p>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.1.2</td>
+<td>10-02-2025</td>
+<td>Advancing CCP <strong>Data Connector</strong> from Public preview to Global Availability.</td>
+</tr>
+<tr>
+<td>3.1.1</td>
+<td>22-01-2025</td>
+<td>Added Preview tag to CCP <strong>Data Connector</strong></td>
+</tr>
+<tr>
+<td>3.1.0</td>
+<td>13-12-2024</td>
+<td>Added new CCP <strong>Data Connector</strong> to the Solution</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>24-08-2024</td>
+<td>Updated the <strong>Data Connector</strong> Function app python runtime version to 3.11</td>
+</tr>
+<tr>
+<td></td>
+<td>11-12-2023</td>
+<td>Added new <strong>Parser</strong> (Auth0AM)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

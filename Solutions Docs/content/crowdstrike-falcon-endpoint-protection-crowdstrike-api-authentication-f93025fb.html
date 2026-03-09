@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crowdstrike API authentication &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Crowdstrike API authentication</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>This is Crowdstrike base template which is used to generate access token and this is used in actual crowdstrike templates. This playbook gets triggered when a new Http request is created and this is being called from other Crowdstrike playbooks.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Playbooks/CrowdStrike_Base/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Playbooks/CrowdStrike_Base/readme.md">CrowdStrike_Base/readme.md</a></em></p>
+</blockquote>
+<h1>CrowdStrike_Base</h1>
+<p>## Summary
+This is Crowdstrike base template which is used to generate access token and this is used in actual crowdstrike templates. This playbook gets triggered when a new Http request is created and this is being called from other Crowdstrike playbooks.</p>
+<p><img alt="CrowdStrike_Base" src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Playbooks/CrowdStrike_Base/images/designerScreenshotLight.png" /></p>
+<h3>Prerequisites</h3>
+<ol>
+<li>Azure Key vault is required for storing the Crowdstrike ClientID and Secrets, create key vault if not exists <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fquickstarts%2Fmicrosoft.keyvault%2Fkey-vault-secret-create%2Fazuredeploy.json">learn how</a></li>
+<li>Add Crowdstrike Client ID and Client Secret in Key vault secrets and capture the keys which are required during the template deployment</li>
+</ol>
+<h3>Deployment instructions</h3>
+<ol>
+<li>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
+<li>
+<p>Fill in the required parameters:</p>
+<ul>
+<li>keyvault_vaultName: Enter the Key vault name where the client ID and client secret is stored. secrets in key vault are used to generate the authorization key.</li>
+<li>ClientID: Enter the client Id key name used in key vault</li>
+<li>ClientSecret: Enter the client secret key name used in key vault</li>
+<li>Service_Endpoint: Enter the service endpoint of crowdstrike ex: {https://crowdsrtikeurl.com}</li>
+<li>Playbook_Name: Enter the playbook name here (Ex:CrowdStrike_Base)</li>
+</ul>
+</li>
+</ol>
+<h3>Post-Deployment instructions</h3>
+<h4>a. Authorize playbook</h4>
+<p>Once deployment is complete, we need to add the playbook in the access policy of the Keyvault <a href="https://docs.microsoft.com/azure/key-vault/general/assign-access-policy-portal">learn how</a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCrowdStrike%2520Falcon%2520Endpoint%2520Protection%2FPlaybooks%2FCrowdStrike_Base%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCrowdStrike%2520Falcon%2520Endpoint%2520Protection%2FPlaybooks%2FCrowdStrike_Base%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<h2>Playbook steps explained</h2>
+<h3>When a Http request is received</h3>
+<p>When a http request is received from another playbook or if this playbook is run manually, this playbook will be triggered</p>
+<h3>Initialize variable ClientID</h3>
+<p>Initialize a string variable which holds the ClientID key name from Keyvault</p>
+<h3>Initialize variable ClientSecret</h3>
+<p>Initialize a string variable which holds the ClientSecret key name from Keyvault</p>
+<h3>Get secret - Client ID</h3>
+<p>This gets the Client Id secret Value from Keyvault</p>
+<h3>Get secret - Client Secret</h3>
+<p>This gets the ClientSecret secret Value from Keyvault</p>
+<h3>Initialize variable Falcon Host URL</h3>
+<p>Initialize a string variable which holds the crowdstrike host Url</p>
+<h3>HTTP - Get Access Token</h3>
+<p>This action will get the OAuth2 access token from Crowdstike using ClientID and ClientSecret as inputs</p>
+<h3>Parse JSON - Access Token Response</h3>
+<p>This action will parse the response in to Json format</p>
+<h3>Response</h3>
+<p>This holds the access token and Crowdstrike host URL</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/crowdstrike-falcon-endpoint-protection.html">Back to CrowdStrike Falcon Endpoint Protection</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GCPIDS &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>GCPIDS</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for GCPIDS table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">GCP</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpids">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (74 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpids">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AlertSeverity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Severity of the threat. One of INFORMATIONAL, LOW, MEDIUM, HIGH, or CRITICAL.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AlertTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Time when the threat was discovered.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Application</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Suspected traffic's application type-for example, SSH.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationInfoPrincipalEmail</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Email address of the authenticated user or service account initiating the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthorizationInfo</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Information about permissions or roles evaluated for the operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Category</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Sub-type of the threat.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CVEs</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A list of CVEs associated with the threat.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationIPAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Suspected traffic's destination IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationPort</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Suspected traffic's destination port.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Details</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Additional information about the type of threat.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Direction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Suspected traffic's direction (client-to-server or server-to-client).</td>
+</tr>
+<tr>
+<td style="text-align: left;">ElapsedTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The elapsed time of the session.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InsertId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the log entry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IPProtocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Suspected traffic's IP protocol.</td>
+</tr>
+<tr>
+<td style="text-align: left;">JsonPayloadName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Threat name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">JsonPayloadType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the threat.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The full log name including resource path.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MethodName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the API method or function that was invoked.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Network</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The network associated with the IDS endpoint.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NumResponseItems</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Number of items returned in the response, if applicable.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationFirst</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if this is the first log entry in a sequence of operations.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the operation, useful for tracking and correlating across logs.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationLast</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if this is the last log entry in a sequence of operations.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationProducer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Component or service that generated the operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type or format of the payload associated with the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReceiveTimestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Time the log entry was received by Cloud Logging.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RepeatCount</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The number of sessions with the same source IP, destination IP, application, and type seen within 5 seconds.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestEndpointId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the endpoint that handled the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestEndpointName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the endpoint to which the request was sent.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestEndpointNetwork</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Network path or name through which the endpoint was accessed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestEndpointSeverity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Severity associated with the endpoint in the context of threat detection or access.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestEndpointThreatExceptions</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Threat exceptions applied to the endpoint for this request, if any.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestEndpointTrafficLogs</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details or references to traffic logs related to the endpoint request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMetadataCallerIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of the caller who initiated the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMetadataDestinationAttributes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Metadata attributes about the destination service or resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMetadataRequestAttributesAuth</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Authentication-related request attributes, such as tokens or auth levels.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMetadataRequestAttributesReason</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Reason for the request, such as a policy action or user-initiated change.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMetadataRequestAttributesTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp of when the request attributes were recorded.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name or identifier of the resource being accessed or modified in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestParent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Parent resource of the request, indicating hierarchy or context.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestUpdateMaskPaths</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The paths to be updated in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the resource involved in the log entry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsLocation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Geographic or regional location of the resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsMethod</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The method or operation performed on the resource, often linked to an API call or service method.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsProjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Project ID associated with the resource, typically representing the Google Cloud project.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsResourceContainer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the container or logical grouping the resource belongs to (e.g., folder, organization).</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsService</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Service label indicating which cloud service.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLocationCurrentLocations</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Current physical or logical location(s) of the resource at the time of the log entry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name or ID of the resource returned in the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseNetwork</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Network path or identifier associated with the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseSeverity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Severity level of the response, especially in the context of errors or alerts.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseState</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">State or result of the response action taken for the detected threat.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseThreatExceptions</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">List of any threat exceptions applied during the response, allowing specific threats to bypass enforcement.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseTrafficLogs</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether traffic logs were captured for the session or threat response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type or format of the response returned from the operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServiceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the cloud service associated with the log entry or threat detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SessionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">An internal numerical identifier applied to each session.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Severity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates the severity level of the log entry or event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceIPAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Suspected traffic's source IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourcePort</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source port of the traffic.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">StartTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time of the session start.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Status of the operation or request, such as SUCCESS, FAILURE, or ERROR.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique threat identifier.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp when the log entry was generated and ingested by the logging system.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The original timestamp of the event as recorded by the source system.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TotalBytes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The total number of bytes transferred in the session.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TotalPackets</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The total number of packets transferred in the session.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">URIOrFilename</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">URI or filename of the relevant threat, if applicable.</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/googlecloudplatformids.html">GoogleCloudPlatformIDS</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/gcpcloudidslogsccpdefinition.html">Google Cloud Platform Cloud IDS (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

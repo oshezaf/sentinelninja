@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AzureMetrics &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>AzureMetrics</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for AzureMetrics table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Low value</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azuremetrics">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (41 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azuremetrics">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">Average</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">CallerIpAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Deprecated</td>
+</tr>
+<tr>
+<td style="text-align: left;">Category</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Deprecated</td>
+</tr>
+<tr>
+<td style="text-align: left;">Confidence</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Deprecated</td>
+</tr>
+<tr>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Deprecated</td>
+</tr>
+<tr>
+<td style="text-align: left;">Count</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Number of samples collected during the time range. Can be used to determine the number of values that contributed to the average value.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Description</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Deprecated</td>
+</tr>
+<tr>
+<td style="text-align: left;">DurationMs</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Deprecated</td>
+</tr>
+<tr>
+<td style="text-align: left;">FirstReportedDateTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Deprecated</td>
+</tr>
+<tr>
+<td style="text-align: left;">IndicatorThreatType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Deprecated</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsActive</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Deprecated</td>
+</tr>
+<tr>
+<td style="text-align: left;">LastReportedDateTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Deprecated</td>
+</tr>
+<tr>
+<td style="text-align: left;">MaliciousIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Deprecated</td>
+</tr>
+<tr>
+<td style="text-align: left;">Maximum</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Maximum value collected during in the time range.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MetricName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Display name of the metric.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Minimum</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Minimum value collected during in the time range.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Deprecated</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Deprecated</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteIPCountry</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Deprecated</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteIPLatitude</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Deprecated</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteIPLongitude</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Deprecated</td>
+</tr>
+<tr>
+<td style="text-align: left;">Resource</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Resource name of the Azure resource reporting the metric.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceGroup</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Resource group name of the Azure resource reporting the metric.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Resource ID of the Azure resource reporting the metric. Same as _ResourceId present for backward compatibility reasons. _ResourceId should be used</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceProvider</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Resource provider of the Azure resource reporting the metric.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResultDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Deprecated</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResultSignature</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Deprecated</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResultType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Reduces the set of data collected. The syntax allowed depends on the operation. See the operation's description for details.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Severity</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Deprecated</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Subscription id of the Azure resource reporting the metric.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time the record was created.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGrain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Time grain of the metric e.g. PT1M</td>
+</tr>
+<tr>
+<td style="text-align: left;">TLPLevel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Deprecated</td>
+</tr>
+<tr>
+<td style="text-align: left;">Total</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Sum of all of the values in the time range.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">UnitName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unit of the metric. Examples include Seconds Percent Bytes.</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (2)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/azure-storage.html">Azure Storage</a></li>
+<li><a href="../solutions/slashnext.html">SlashNext</a></li>
+</ul>
+<h2>Connectors (2)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/azurestorageaccount.html">Azure Storage Account</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/slashnextfunctionapp.html">SlashNext Function App</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.operationalinsights/workspaces</code></li>
+<li><code>microsoft.aad/domainservices</code></li>
+<li><code>microsoft.containerservice/managedclusters</code></li>
+<li><code>microsoft.apimanagement/service</code></li>
+<li><code>microsoft.network/applicationgateways</code></li>
+<li><code>microsoft.servicenetworking/trafficcontrollers</code></li>
+<li><code>microsoft.web/sites</code></li>
+<li><code>microsoft.kubernetes/connectedclusters</code></li>
+<li><code>microsoft.cache/redis</code></li>
+<li><code>microsoft.hardwaresecuritymodules/cloudhsmclusters</code></li>
+<li><code>microsoft.communication/communicationservices</code></li>
+<li><code>microsoft.documentdb/databaseaccounts</code></li>
+<li><code>microsoft.datacollaboration/workspaces</code></li>
+<li><code>microsoft.eventgrid/namespaces</code></li>
+<li><code>microsoft.eventgrid/topics</code></li>
+<li><code>microsoft.eventhub/namespaces</code></li>
+<li><code>microsoft.network/azurefirewalls</code></li>
+<li><code>microsoft.keyvault/vaults</code></li>
+<li><code>microsoft.managednetworkfabric/networkdevices</code></li>
+<li><code>microsoft.documentdb/mongoclusters</code></li>
+<li><code>microsoft.networkcloud/baremetalmachines</code></li>
+<li><code>microsoft.networkcloud/clustermanagers</code></li>
+<li><code>microsoft.networkcloud/clusters</code></li>
+<li><code>microsoft.networkcloud/storageappliances</code></li>
+<li><code>microsoft.network/loadbalancers</code></li>
+<li><code>microsoft.relay/namespaces</code></li>
+<li><code>microsoft.servicebus/namespaces</code></li>
+<li><code>microsoft.sql/servers</code></li>
+<li><code>microsoft.networkfunction/azuretrafficcollectors</code></li>
+<li><code>microsoft.network/networkmanagers</code></li>
+<li><code>microsoft.cognitiveservices/accounts</code></li>
+<li><code>microsoft.connectedcache/cachenodes</code></li>
+<li><code>microsoft.connectedvehicle/platformaccounts</code></li>
+<li><code>microsoft.databricks/workspaces</code></li>
+<li><code>microsoft.dbformysql/flexibleservers</code></li>
+<li><code>microsoft.dbforpostgresql/flexibleservers</code></li>
+<li><code>microsoft.devcenter/devcenters</code></li>
+<li><code>microsoft.compute/virtualmachines</code></li>
+<li><code>microsoft.machinelearningservices/workspaces</code></li>
+<li><code>microsoft.media/mediaservices</code></li>
+<li><code>microsoft.azureplaywrightservice/accounts</code></li>
+<li><code>microsoft.networkanalytics/dataproducts</code></li>
+<li><code>microsoft.storage/storageaccounts</code></li>
+<li><code>microsoft.storagecache/amlfilesytems</code></li>
+<li><code>microsoft.storagemover/storagemovers</code></li>
+<li><code>microsoft.synapse/workspaces</code></li>
+<li><code>microsoft.desktopvirtualization/hostpools</code></li>
+<li><code>microsoft.desktopvirtualization/applicationgroups</code></li>
+<li><code>microsoft.desktopvirtualization/workspaces</code></li>
+<li><code>microsoft.timeseriesinsights/environments</code></li>
+<li><code>microsoft.workloadmonitor/monitors</code></li>
+<li><code>microsoft.analysisservices/servers</code></li>
+<li><code>microsoft.batch/batchaccounts</code></li>
+<li><code>microsoft.appplatform/spring</code></li>
+<li><code>microsoft.signalrservice/signalr</code></li>
+<li><code>microsoft.containerregistry/registries</code></li>
+<li><code>microsoft.kusto/clusters</code></li>
+<li><code>microsoft.blockchain/blockchainmembers</code></li>
+<li><code>microsoft.eventgrid/domains</code></li>
+<li><code>microsoft.eventgrid/partnernamespaces</code></li>
+<li><code>microsoft.eventgrid/partnertopics</code></li>
+<li><code>microsoft.eventgrid/systemtopics</code></li>
+<li><code>microsoft.conenctedvmwarevsphere/virtualmachines</code></li>
+<li><code>microsoft.azurestackhci/virtualmachines</code></li>
+<li><code>microsoft.scvmm/virtualmachines</code></li>
+<li><code>microsoft.compute/virtualmachinescalesets</code></li>
+<li><code>microsoft.hybridcontainerservice/provisionedclusters</code></li>
+<li><code>microsoft.insights/autoscalesettings</code></li>
+<li><code>microsoft.devices/iothubs</code></li>
+<li><code>microsoft.servicefabric/clusters</code></li>
+<li><code>microsoft.logic/workflows</code></li>
+<li><code>microsoft.automation/automationaccounts</code></li>
+<li><code>microsoft.datafactory/factories</code></li>
+<li><code>microsoft.datalakestore/accounts</code></li>
+<li><code>microsoft.datalakeanalytics/accounts</code></li>
+<li><code>microsoft.powerbidedicated/capacities</code></li>
+<li><code>microsoft.datashare/accounts</code></li>
+<li><code>microsoft.sql/managedinstances</code></li>
+<li><code>microsoft.sql/servers/databases</code></li>
+<li><code>microsoft.dbformysql/servers</code></li>
+<li><code>microsoft.dbforpostgresql/servers</code></li>
+<li><code>microsoft.dbforpostgresql/serversv2</code></li>
+<li><code>microsoft.dbformariadb/servers</code></li>
+<li><code>microsoft.devices/provisioningservices</code></li>
+<li><code>microsoft.network/expressroutecircuits</code></li>
+<li><code>microsoft.network/frontdoors</code></li>
+<li><code>microsoft.network/networkinterfaces</code></li>
+<li><code>microsoft.network/networksecuritygroups</code></li>
+<li><code>microsoft.network/publicipaddresses</code></li>
+<li><code>microsoft.network/trafficmanagerprofiles</code></li>
+<li><code>microsoft.network/virtualnetworkgateways</code></li>
+<li><code>microsoft.network/vpngateways</code></li>
+<li><code>microsoft.network/virtualnetworks</code></li>
+<li><code>microsoft.search/searchservices</code></li>
+<li><code>microsoft.streamanalytics/streamingjobs</code></li>
+<li><code>microsoft.network/bastionhosts</code></li>
+<li><code>microsoft.healthcareapis/services</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

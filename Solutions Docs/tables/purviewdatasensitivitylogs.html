@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PurviewDataSensitivityLogs &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>PurviewDataSensitivityLogs</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for PurviewDataSensitivityLogs table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Azure Resources, Security</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/purviewdatasensitivitylogs">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (33 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/purviewdatasensitivitylogs">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActivityType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of data sensitivity event: classification, labeling.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AssetCreationTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Time (UTC) at which the asset was created.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AssetLastScanTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Time (UTC) at which the asset was last scanned.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AssetModifiedTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Time (UTC) at which the asset was last modified.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AssetName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the asset scanned.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AssetPath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Path of the asset scanned in a source.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AssetType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of asset that was scanned: file, column, table, generic.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Classification</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Names of the classifications found.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClassificationDetails</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of classification details: ID, name, count, uniquecount, confidence.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClassificationTrigger</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The trigger for the classification event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileExtension</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">File extension of the asset scanned. Only populated when asset type is a file.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileSize</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">File size of the asset scanned in bytes. Only populated when asset type is a file.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PurviewAccountName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the Purview account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PurviewRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Region of the Purview account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PurviewTenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Tenant ID associated with the Purview account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SensitivityLabel</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Names for the labels found.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SensitivityLabelDetails</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of label details: ID, name, order.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SensitivityLabelTrigger</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The trigger for the sensitivity label event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceCollectionName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the data source collection name in Purview.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the data source scanned as registered in Purview.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourcePath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Resource Path of the data source. Ex: ARM path for Azure resources and ARN for AWS resources.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The location of the data source that was scanned.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceScanId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The associated Purview scan ID for the source.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Subscription ID associated with the data source. Account ID for AWS resources.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of data source scanned: azuredatalakegen1, azureblob, azuredataexplorer, amazons3 etc.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Time (UTC) when the log was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (3)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/dpdp-compliance.html">DPDP Compliance</a></li>
+<li><a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a></li>
+<li><a href="../solutions/microsoft-purview.html">Microsoft Purview</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/microsoftazurepurview.html">Microsoft Purview</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Content Items Using This Table (5)</h2>
+<h3>Analytic Rules (2)</h3>
+<p><strong>In solution <a href="../solutions/microsoft-purview.html">Microsoft Purview</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-purview-sensitive-data-discovered-in-the-last-24-hours-7ae7e8b0-07e9-43cb-b783-b04082f09060-60c3db5f.html">Sensitive Data Discovered in the Last 24 Hours</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-purview-sensitive-data-discovered-in-the-last-24-hours-customized-79f296d9-e6e4-45dc-9ca7-1770955435fa-d7061393.html">Sensitive Data Discovered in the Last 24 Hours - Customized</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks (3)</h3>
+<p><strong>In solution <a href="../solutions/dpdp-compliance.html">DPDP Compliance</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/dpdp-compliance-dpdpcompliance-18571e87.html">DPDPCompliance</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/gdpr-compliance-&amp;-data-security-gdprcomplianceanddatasecurity-a0958a9a.html">GDPRComplianceAndDataSecurity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoft-purview.html">Microsoft Purview</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-purview-microsoftpurview-c44ab5ce.html">MicrosoftPurview</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.securityinsights/purview</code></li>
+<li><code>microsoft.purview/accounts</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

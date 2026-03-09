@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CrowdStrike Falcon Data Replicator CrowdStrike Managed AWS-S3 &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/Logo/crowdstrike.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>CrowdstrikeReplicatorv2</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Crowdstrike</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/CrowdstrikeReplicatorCLv2/CrowdstrikeReplicatorV2_ConnectorUI.json">CrowdstrikeReplicatorV2_ConnectorUI.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Connector definition requires workspace key (SharedKey pattern)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+</tbody>
+</table>
+<p>This connector enables the ingestion of FDR data into Microsoft Sentinel using Azure Functions to support the assessment of potential security risks, analysis of collaboration activities, identification of configuration issues, and other operational insights.<p><span style='color:red; font-weight:bold;'>NOTE:</span></p><div style='margin-left:20px;'><p>1. CrowdStrike FDR license must be available &amp; enabled.</p><p>2. The connector uses a Key &amp; Secret based authentication and is suitable for CrowdStrike Managed buckets.</p><p>3. For environments that use a fully owned AWS S3 bucket, Microsoft recommends using the <strong>CrowdStrike Falcon Data Replicator (AWS S3)</strong> connector.</p></div></p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/asimauditeventlogs.html"><code>ASimAuditEventLogs</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/asimauthenticationeventlogs.html"><code>ASimAuthenticationEventLogs</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/asimauthenticationeventlogs-cl.html"><code>ASimAuthenticationEventLogs_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/asimdnsactivitylogs.html"><code>ASimDnsActivityLogs</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/asimfileeventlogs.html"><code>ASimFileEventLogs</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/asimfileeventlogs-cl.html"><code>ASimFileEventLogs_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/asimnetworksessionlogs.html"><code>ASimNetworkSessionLogs</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/asimprocesseventlogs.html"><code>ASimProcessEventLogs</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/asimprocesseventlogs-cl.html"><code>ASimProcessEventLogs_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/asimregistryeventlogs.html"><code>ASimRegistryEventLogs</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/asimregistryeventlogs-cl.html"><code>ASimRegistryEventLogs_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/asimusermanagementactivitylogs.html"><code>ASimUserManagementActivityLogs</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/asimusermanagementlogs-cl.html"><code>ASimUserManagementLogs_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/crowdstrike-additional-events-cl.html"><code>CrowdStrike_Additional_Events_CL</code></a> 🔶</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/crowdstrike-secondary-data-cl.html"><code>CrowdStrike_Secondary_Data_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
+- <strong>SQS and AWS S3 account credentials/permissions</strong>: <strong>AWS_SECRET</strong>, <strong>AWS_REGION_NAME</strong>, <strong>AWS_KEY</strong>, <strong>QUEUE_URL</strong> is required.  <a href="https://www.crowdstrike.com/blog/tech-center/intro-to-falcon-data-replicator/">See the documentation to learn more about data pulling</a>. To start, contact CrowdStrike support. At your request they will create a CrowdStrike managed Amazon Web Services (AWS) S3 bucket for short term storage purposes as well as a SQS (simple queue service) account for monitoring changes to the S3 bucket.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+<p><strong>NOTE:</strong> This connector uses Azure Functions to connect to the AWS SQS / S3 to pull logs into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
+<p><strong>(Optional Step)</strong> Securely store API authorization key(s) or token(s) in Azure Key Vault. Azure Key Vault provides a secure mechanism to store and retrieve key values. <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Follow these instructions</a> to use Azure Key Vault with an Azure Function App.</p>
+</blockquote>
+<p><strong>1. Prerequisites</strong></p>
+<ol>
+<li>Configure FDR in CrowdStrike - You must contact the <a href="https://supportportal.crowdstrike.com/">CrowdStrike support team</a> to enable CrowdStrike FDR.<ul>
+<li>Once CrowdStrike FDR is enabled,  from the CrowdStrike console, navigate to Support --&gt; API Clients and Keys. </li>
+<li>You need to Create new credentials to copy the AWS Access Key ID, AWS Secret Access Key, SQS Queue URL and AWS Region. </li>
+</ul>
+</li>
+<li>Register AAD application - For DCR to authentiate to ingest data into log analytics, you must use AAD application. <ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/logs/tutorial-logs-ingestion-portal#create-azure-ad-application">Follow the instructions here</a> (steps 1-5) to get <strong>AAD Tenant Id</strong>, <strong>AAD Client Id</strong> and <strong>AAD Client Secret</strong>. </li>
+<li>For <strong>AAD Principal</strong> Id of this application, access the AAD App through <a href="https://aad.portal.azure.com/#view/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/~/AppAppsPreview/menuId/">AAD Portal</a> and capture Object Id from the application overview page.</li>
+</ul>
+</li>
+</ol>
+<p><strong>2. Deployment Options</strong></p>
+<p>Choose ONE from the following two deployment options to deploy the connector and the associated Azure Function</p>
+<p><strong>3. Option 1 - Azure Resource Manager (ARM) Template</strong></p>
+<p>Use this method for automated deployment of the Crowdstrike Falcon Data Replicator connector V2 using an ARM Tempate.</p>
+<ol>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below. </p>
+<p><a href="https://aka.ms/sentinel-CrowdstrikeReplicatorV2-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://aka.ms/sentinel-CrowdstrikeReplicatorV2-azuredeploy-gov"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a>        <br />
+2. Provide the required details such as Microsoft Sentinel Workspace, CrowdStrike AWS credentials, Azure AD Application details and ingestion configurations </p>
+<blockquote>
+<p><strong>NOTE:</strong> Within the same resource group, you can't mix Windows and Linux apps in the same region. Select existing resource group without Windows apps in it or create new resource group. It is recommended to create a new Resource Group for deployment of function app and associated resources.
+3. Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>. 
+4. Click <strong>Purchase</strong> to deploy.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>4. Option 2 - Manual Deployment of Azure Functions</strong></p>
+<p>Use the following step-by-step instructions to deploy the Crowdstrike Falcon Data Replicator connector manually with Azure Functions (Deployment via Visual Studio Code).</p>
+<p><strong>1. Deploy DCE, DCR and Custom Tables for data ingestion</strong></p>
+<ol>
+<li>Deploy the required DCE,  DCR(s) and the Custom Tables by using the <a href="https://aka.ms/sentinel-CrowdstrikeReplicatorV2-azuredeploy-data-resource">Data Collection Resource ARM template</a> </li>
+<li>After successful deployment of DCE and DCR(s), get the below information and keep it handy (required during Azure Functions app deployment).<ul>
+<li>DCE log ingestion - Follow the instructions available at <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/logs/tutorial-logs-ingestion-portal#create-data-collection-endpoint">Create data collection endpoint</a> (Step 3).</li>
+<li>Immutable Ids of one or more DCRs (as applicable) - Follow the instructions available at <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/logs/tutorial-logs-ingestion-portal#collect-information-from-the-dcr">Collect information from the DCR</a> (Stpe 2).</li>
+</ul>
+</li>
+</ol>
+<p><strong>2. Deploy a Function App</strong></p>
+<ol>
+<li>Download the <a href="https://aka.ms/sentinel-CrowdstrikeReplicatorV2-functionapp">Azure Function App</a> file. Extract archive to your local development computer.</li>
+<li>Follow the <a href="https://github.com/Azure/Azure-Sentinel/blob/master/DataConnectors/AzureFunctionsManualDeployment.md#function-app-manual-deployment-instructions">function app manual deployment instructions</a> to deploy the Azure Functions app using VSCode.</li>
+<li>After successful deployment of the function app, follow next steps for configuring it.</li>
+</ol>
+<p><strong>3. Configure the Function App</strong></p>
+<ol>
+<li>Go to Azure Portal for the Function App configuration.</li>
+<li>In the Function App, select the Function App Name and select <strong>Configuration</strong>.</li>
+<li>In the <strong>Application settings</strong> tab, select ** New application setting**.</li>
+<li>Add each of the following application settings individually, with their respective string values (case-sensitive): 
+        AWS_KEY
+        AWS_SECRET
+        AWS_REGION_NAME
+        QUEUE_URL
+        USER_SELECTION_REQUIRE_RAW //True if raw data is required
+        USER_SELECTION_REQUIRE_SECONDARY //True if secondary data is required
+        MAX_QUEUE_MESSAGES_MAIN_QUEUE // 100 for consumption and 150 for Premium
+        MAX_SCRIPT_EXEC_TIME_MINUTES // add the value of 10 here
+        AZURE_TENANT_ID
+        AZURE_CLIENT_ID
+        AZURE_CLIENT_SECRET
+        DCE_INGESTION_ENDPOINT
+        NORMALIZED_DCR_ID
+        RAW_DATA_DCR_ID
+        EVENT_TO_TABLE_MAPPING_LINK // File is present on github. Add if the file can be accessed using internet
+        REQUIRED_FIELDS_SCHEMA_LINK //File is present on github. Add if the file can be accessed using internet
+        Schedule //Add value as '0 <em>/1 * * * </em>' to ensure the function runs every minute.</li>
+<li>Once all application settings have been entered, click <strong>Save</strong>.</li>
+</ol>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike Falcon Endpoint Protection\Data Connectors\CrowdstrikeReplicatorCLv2\README.md">CrowdStrike Falcon Endpoint Protection\Data Connectors\CrowdstrikeReplicatorCLv2\README.md</a></em></p>
+</blockquote>
+<h1>CrowdStrike Data connector based on CLv2 ingestion</h1>
+<p>This connector uses Azure Functions to connect to the AWS SQS / S3 to pull logs into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
+<h2>Prerequisites</h2>
+<ol>
+<li>Configure FDR in CrowdStrike - You must contact the <a href="https://supportportal.crowdstrike.com/">CrowdStrike support team</a> to enable CrowdStrike FDR.        <ol>
+<li>Once CrowdStrike FDR is enabled,  from the CrowdStrike console, navigate to Support --&gt; API Clients and Keys.</li>
+<li>You need to Create new credentials to copy the AWS Access Key ID, AWS Secret Access Key, SQS Queue URL and AWS Region. </li>
+</ol>
+</li>
+<li>Register AAD application - For DCR to authentiate to ingest data into log analytics, you must use AAD application.<ol>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/logs/tutorial-logs-ingestion-portal#create-azure-ad-application">Follow the instructions here</a> (steps 1-5) to get <strong>AAD Tenant Id</strong>, <strong>AAD Client Id</strong> and <strong>AAD Client Secret</strong>. </li>
+<li>For <strong>AAD Principal</strong> Id of this application, access the AAD App through <a href="https://aad.portal.azure.com/#view/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/~/AppAppsPreview/menuId/">AAD Portal</a> and capture Object Id from the application overview page.</li>
+</ol>
+</li>
+</ol>
+<h2>Deployment</h2>
+<p><a href="https://aka.ms/sentinel-CrowdstrikeReplicatorV2-azuredeploy"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

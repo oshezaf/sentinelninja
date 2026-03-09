@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AtlassianJiraAudit &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>AtlassianJiraAudit</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/atlassian.svg" alt="AtlassianJiraAudit Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-01-10</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit">AtlassianJiraAudit</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.atlassian.com/software/jira">Atlassian Jira</a> Audit solution provides the capability to ingest <a href="https://support.atlassian.com/jira-cloud-administration/docs/audit-activities-in-jira-applications/">Jira Audit Records</a> events into Microsoft Sentinel through the REST API. Refer to <a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-audit-records/">API documentation</a> for more information.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs: </p>
+<p>a. <a href="https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api">Azure Monitor HTTP Data Collector API</a> </p>
+<p>b.<a href="https://azure.microsoft.com/services/functions/#overview">Azure Functions</a> </p>
+<p>c.<a href="https://learn.microsoft.com/en-us/azure/sentinel/create-custom-connector#connect-with-the-codeless-connector-platform">Codeless Connector Platform (CCP)</a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/jiraauditapi.html">Atlassian Jira Audit</a> 🔶</li>
+<li><a href="../connectors/jiraauditccpdefinition.html">Atlassian Jira Audit (using REST API)</a> 🔶</li>
+</ul>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>2 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/jira-audit-cl.html"><code>Jira_Audit_CL</code></a> 🔶</td>
+<td><a href="../connectors/jiraauditapi.html">Atlassian Jira Audit</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/jira-audit-v2-cl.html"><code>Jira_Audit_v2_CL</code></a> 🔶</td>
+<td><a href="../connectors/jiraauditapi.html">Atlassian Jira Audit</a>, <a href="../connectors/jiraauditccpdefinition.html">Atlassian Jira Audit (using REST API)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>29 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">7</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-jira-global-permission-added-5b0cec45-4a91-4f08-bb1b-392427e8f440-fcb3ce16.html">Jira - Global permission added</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/jira-audit-cl.html"><code>Jira_Audit_CL</code></a><br><a href="../tables/jira-audit-v2-cl.html"><code>Jira_Audit_v2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-jira-new-site-admin-user-b894593a-2b4c-4573-bc47-78715224a6f5-75417588.html">Jira - New site admin user</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/jira-audit-cl.html"><code>Jira_Audit_CL</code></a><br><a href="../tables/jira-audit-v2-cl.html"><code>Jira_Audit_v2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-jira-new-site-admin-user-6bf42891-b54d-4b4e-8533-babc5b3ea4c5-cf4c124a.html">Jira - New site admin user</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/jira-audit-cl.html"><code>Jira_Audit_CL</code></a><br><a href="../tables/jira-audit-v2-cl.html"><code>Jira_Audit_v2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-jira-new-user-created-8c90f30f-c612-407c-91a0-c6a6b41ac199-ac7b54fe.html">Jira - New user created</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/jira-audit-cl.html"><code>Jira_Audit_CL</code></a><br><a href="../tables/jira-audit-v2-cl.html"><code>Jira_Audit_v2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-jira-permission-scheme-updated-72592618-fa57-45e1-9f01-ca8706a5e3f5-0d756ffb.html">Jira - Permission scheme updated</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/jira-audit-cl.html"><code>Jira_Audit_CL</code></a><br><a href="../tables/jira-audit-v2-cl.html"><code>Jira_Audit_v2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-jira-project-roles-changed-fb6a8001-fe87-4177-a8f3-df2302215c4f-0808c8fa.html">Jira - Project roles changed</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/jira-audit-cl.html"><code>Jira_Audit_CL</code></a><br><a href="../tables/jira-audit-v2-cl.html"><code>Jira_Audit_v2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-jira-user-removed-from-group-c13ecb19-4317-4d87-9a1c-52660dd44a7d-84ebd820.html">Jira - User removed from group</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/jira-audit-cl.html"><code>Jira_Audit_CL</code></a><br><a href="../tables/jira-audit-v2-cl.html"><code>Jira_Audit_v2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-jira-user-removed-from-project-5d3af0aa-833e-48ed-a29a-8cfd2705c953-c166d30e.html">Jira - User removed from project</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/jira-audit-cl.html"><code>Jira_Audit_CL</code></a><br><a href="../tables/jira-audit-v2-cl.html"><code>Jira_Audit_v2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-jira-user's-password-changed-multiple-times-943176e8-b979-45c0-8ad3-58ba6cfd41f0-4f11f866.html">Jira - User's password changed multiple times</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/jira-audit-cl.html"><code>Jira_Audit_CL</code></a><br><a href="../tables/jira-audit-v2-cl.html"><code>Jira_Audit_v2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-jira-workflow-scheme-copied-398aa0ca-45a2-4f79-bc21-ee583bbb63bc-cf3ceea7.html">Jira - Workflow scheme copied</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><a href="../tables/jira-audit-cl.html"><code>Jira_Audit_CL</code></a><br><a href="../tables/jira-audit-v2-cl.html"><code>Jira_Audit_v2_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-jira-blocked-tasks-3fdc31f0-a166-4a4d-b861-f3cd262fd4a1-7619835b.html">Jira - Blocked tasks</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/jira-audit-cl.html"><code>Jira_Audit_CL</code></a><br><a href="../tables/jira-audit-v2-cl.html"><code>Jira_Audit_v2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-jira-new-users-aadc0945-a399-47ba-b285-c0c09ee06375-a0481184.html">Jira - New users</a></td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/jira-audit-cl.html"><code>Jira_Audit_CL</code></a><br><a href="../tables/jira-audit-v2-cl.html"><code>Jira_Audit_v2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-jira-project-versions-e78cb74b-576b-4e35-a46c-8d328b2d4040-33cf3a6f.html">Jira - Project versions</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/jira-audit-cl.html"><code>Jira_Audit_CL</code></a><br><a href="../tables/jira-audit-v2-cl.html"><code>Jira_Audit_v2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-jira-project-versions-released-103ccb8d-f910-4978-aba7-1ad598db822b-5808a71c.html">Jira - Project versions released</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/jira-audit-cl.html"><code>Jira_Audit_CL</code></a><br><a href="../tables/jira-audit-v2-cl.html"><code>Jira_Audit_v2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-jira-updated-projects-eb409b8b-0267-4e95-b3a9-ee1a72c32409-bf0f6dcb.html">Jira - Updated projects</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/jira-audit-cl.html"><code>Jira_Audit_CL</code></a><br><a href="../tables/jira-audit-v2-cl.html"><code>Jira_Audit_v2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-jira-updated-users-d208b406-1509-455c-8c7d-7ffe2f893f24-bf922cc8.html">Jira - Updated users</a></td>
+<td style="text-align: left;">PrivilegeEscalation, Impact</td>
+<td style="text-align: left;"><a href="../tables/jira-audit-cl.html"><code>Jira_Audit_CL</code></a><br><a href="../tables/jira-audit-v2-cl.html"><code>Jira_Audit_v2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-jira-updated-workflow-schemes-3e6ff26d-05dc-4921-9a60-444a0e28cd45-4cce8c59.html">Jira - Updated workflow schemes</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/jira-audit-cl.html"><code>Jira_Audit_CL</code></a><br><a href="../tables/jira-audit-v2-cl.html"><code>Jira_Audit_v2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-jira-updated-workflows-d4dd32bb-84a4-4fdc-9118-3039cbabb4f8-9455eb38.html">Jira - Updated workflows</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/jira-audit-cl.html"><code>Jira_Audit_CL</code></a><br><a href="../tables/jira-audit-v2-cl.html"><code>Jira_Audit_v2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-jira-users'-ip-addresses-2265bbd2-7e97-4d69-bdfc-eeb646730d8f-5802966a.html">Jira - Users' IP addresses</a></td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/jira-audit-cl.html"><code>Jira_Audit_CL</code></a><br><a href="../tables/jira-audit-v2-cl.html"><code>Jira_Audit_v2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-jira-workflow-schemes-added-to-projects-2f875fa8-ced3-4059-b453-616dbc6eb276-1856cdef.html">Jira - Workflow schemes added to projects</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/jira-audit-cl.html"><code>Jira_Audit_CL</code></a><br><a href="../tables/jira-audit-v2-cl.html"><code>Jira_Audit_v2_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-atlassianjiraaudit-cdf2e001.html">AtlassianJiraAudit</a></td>
+<td style="text-align: left;"><a href="../tables/jira-audit-cl.html"><code>Jira_Audit_CL</code></a><br><a href="../tables/jira-audit-v2-cl.html"><code>Jira_Audit_v2_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-create-and-update-jira-issue-81d1c927.html">Create And Update Jira Issue</a></td>
+<td style="text-align: left;">This playbook will create or update incident in Jira. When incident is created, playbook will run an...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-create-jira-issue-alert-trigger-208cc448.html">Create Jira Issue alert-trigger</a></td>
+<td style="text-align: left;">This playbook will open a Jira Issue when a new incident is opened in Microsoft Sentinel.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-create-jira-issue-incident-trigger-58b60708.html">Create Jira Issue incident-trigger</a></td>
+<td style="text-align: left;">This playbook will open a Jira Issue when a new incident is opened in Microsoft Sentinel.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-sync-jira-from-sentinel-create-incident-f5933875.html">Sync Jira from Sentinel - Create incident</a></td>
+<td style="text-align: left;">This Playbook will create JIRA incidents for every Microsoft Sentinel which is created. It includes ...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-sync-jira-to-sentinel-assigned-user-dcc95a9e.html">Sync Jira to Sentinel - Assigned User</a></td>
+<td style="text-align: left;">This Playbook will sync the assigned user from JIRA to Microsoft Sentinel.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-sync-jira-to-sentinel-status-d52a723f.html">Sync Jira to Sentinel - Status</a></td>
+<td style="text-align: left;">This Playbook will sync the status from JIRA to Microsoft Sentinel.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-sync-jira-to-sentinel-public-comments-69fdd661.html">Sync Jira to Sentinel - public comments</a></td>
+<td style="text-align: left;">This Playbook will sync the public comments from JIRA to Microsoft Sentinel.</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/jiraaudit.html">JiraAudit</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/jira-audit-cl.html"><code>Jira_Audit_CL</code></a> <em>(read)</em><br><a href="../tables/jira-audit-v2-cl.html"><code>Jira_Audit_v2_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.4</td>
+<td>30-08-2024</td>
+<td>Updated parameters for CCP <strong>Data Connector</strong></td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>14-08-2024</td>
+<td><strong>Data Connector</strong>[Atlassian Jira Audit (using REST API)] Globally Available</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>22-05-2024</td>
+<td>Added new CCP <strong>Data Connector</strong> to the Solution</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>16-04-2024</td>
+<td>Added Deploy to Azure Goverment button for Government portal in <strong>Dataconnector</strong></td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>06-11-2023</td>
+<td>Modified text as there is rebranding from Azure Active Directory to Microsoft Entra ID.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

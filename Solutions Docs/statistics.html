@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microsoft Sentinel Documentation Statistics &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Microsoft Sentinel Documentation Statistics</h1>
+<p>This page provides comprehensive statistics across all Microsoft Sentinel solutions, connectors, tables, content items, and parsers.</p>
+<p><strong>Browse:</strong> <a href="README.html">🏠</a> · <a href="solutions-index.html">Solutions</a> · <a href="connectors-index.html">Connectors</a> · <a href="methods-index.html">Methods</a> · <a href="tables-index.html">Tables</a> · <a href="content/content-index.html">Content</a> · <a href="parsers/parsers-index.html">Parsers</a> · <a href="asim/asim-index.html">ASIM Parsers</a> · <a href="asim/asim-products-index.html">ASIM Products</a> · <strong>📊</strong> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<hr />
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#terminology">Terminology</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
+<li><a href="#tables">Tables</a></li>
+<li><a href="#content">Content</a></li>
+<li><a href="#parsers">Parsers</a></li>
+<li><a href="#asim-parsers">ASIM Parsers</a></li>
+<li><a href="#asim-products">ASIM Products</a></li>
+<li><a href="#pre-requisites">Pre-requisites</a></li>
+</ul>
+<h2>Terminology</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Term</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Published</strong></td>
+<td style="text-align: left;">Available in Microsoft Sentinel Content Hub for installation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Unpublished</strong> ⚠️</td>
+<td style="text-align: left;">Present on GitHub but not available in Content Hub</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Active</strong></td>
+<td style="text-align: left;">Published and not deprecated</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Deprecated</strong> 🚫</td>
+<td style="text-align: left;">Marked as no longer maintained or replaced by newer solution</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Discovered</strong> 🔍</td>
+<td style="text-align: left;">Found in solution folders but not listed in Solution JSON definitions</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>In Solutions</strong></td>
+<td style="text-align: left;">Listed in the Solution JSON definition file</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>📦 Solution</strong></td>
+<td style="text-align: left;">Content that is part of a published Content Hub package</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>📄 Standalone</strong></td>
+<td style="text-align: left;">GitHub content with metadata but not part of a Solution</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>🔗 GitHub Only</strong></td>
+<td style="text-align: left;">GitHub content without formal metadata</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Standalone Reference Tables</strong></td>
+<td style="text-align: left;">Tables in Azure Monitor reference not used by any Sentinel solution</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Support level: Microsoft, Partner, or Community</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions</h2>
+<h3>Availability</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Metric</th>
+<th style="text-align: right;">Total</th>
+<th style="text-align: right;">Published</th>
+<th style="text-align: right;">Unpublished ⚠️</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Solutions</td>
+<td style="text-align: right;"><strong>495</strong></td>
+<td style="text-align: right;">450</td>
+<td style="text-align: right;">45</td>
+</tr>
+<tr>
+<td style="text-align: left;">With Connectors</td>
+<td style="text-align: right;"><strong>312</strong></td>
+<td style="text-align: right;">286</td>
+<td style="text-align: right;">26</td>
+</tr>
+<tr>
+<td style="text-align: left;">With Content</td>
+<td style="text-align: right;"><strong>394</strong></td>
+<td style="text-align: right;">369</td>
+<td style="text-align: right;">25</td>
+</tr>
+</tbody>
+</table>
+<h3>Support Ownership</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Support Tier</th>
+<th style="text-align: right;">Total</th>
+<th style="text-align: right;">Published</th>
+<th style="text-align: right;">Unpublished ⚠️</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: right;"><strong>233</strong></td>
+<td style="text-align: right;">226</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td style="text-align: left;">Partner</td>
+<td style="text-align: right;"><strong>238</strong></td>
+<td style="text-align: right;">211</td>
+<td style="text-align: right;">27</td>
+</tr>
+<tr>
+<td style="text-align: left;">Community</td>
+<td style="text-align: right;"><strong>11</strong></td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Unknown</td>
+<td style="text-align: right;"><strong>13</strong></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: right;"><strong>495</strong></td>
+<td style="text-align: right;"><strong>450</strong></td>
+<td style="text-align: right;"><strong>45</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>Other Metrics</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Metric</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Unique Connectors</td>
+<td style="text-align: right;">392</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tables Used</td>
+<td style="text-align: right;">830</td>
+</tr>
+</tbody>
+</table>
+<h2>Connectors</h2>
+<h3>Availability</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Metric</th>
+<th style="text-align: right;">Total</th>
+<th style="text-align: right;">Active</th>
+<th style="text-align: right;">Deprecated 🚫</th>
+<th style="text-align: right;">Unpublished ⚠️</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">In Solutions</td>
+<td style="text-align: right;"><strong>392</strong></td>
+<td style="text-align: right;">323</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">38</td>
+</tr>
+<tr>
+<td style="text-align: left;">Discovered 🔍</td>
+<td style="text-align: right;"><strong>148</strong></td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">114</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: right;"><strong>540</strong></td>
+<td style="text-align: right;"><strong>351</strong></td>
+<td style="text-align: right;"><strong>145</strong></td>
+<td style="text-align: right;"><strong>44</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>Support Ownership</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Support Tier</th>
+<th style="text-align: right;">Total</th>
+<th style="text-align: right;">Active</th>
+<th style="text-align: right;">Deprecated 🚫</th>
+<th style="text-align: right;">Unpublished ⚠️</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: right;"><strong>244</strong></td>
+<td style="text-align: right;">152</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Partner</td>
+<td style="text-align: right;"><strong>275</strong></td>
+<td style="text-align: right;">189</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">37</td>
+</tr>
+<tr>
+<td style="text-align: left;">Community</td>
+<td style="text-align: right;"><strong>18</strong></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Unknown</td>
+<td style="text-align: right;"><strong>3</strong></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: right;"><strong>540</strong></td>
+<td style="text-align: right;"><strong>351</strong></td>
+<td style="text-align: right;"><strong>145</strong></td>
+<td style="text-align: right;"><strong>44</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>Collection Methods</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Collection Method</th>
+<th style="text-align: right;">Total</th>
+<th style="text-align: right;">Active</th>
+<th style="text-align: right;">Deprecated 🚫</th>
+<th style="text-align: right;">Unpublished ⚠️</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: right;"><strong>132</strong></td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/mma.html">MMA</a></td>
+<td style="text-align: right;"><strong>110</strong></td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
+<td style="text-align: right;"><strong>106</strong></td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/ama.html">AMA</a></td>
+<td style="text-align: right;"><strong>59</strong></td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/rest-api.html">REST API</a></td>
+<td style="text-align: right;"><strong>57</strong></td>
+<td style="text-align: right;">52</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/native.html">Native</a></td>
+<td style="text-align: right;"><strong>25</strong></td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/azure-diagnostics.html">Azure Diagnostics</a></td>
+<td style="text-align: right;"><strong>17</strong></td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/ccf-legacy.html">CCF (Legacy)</a></td>
+<td style="text-align: right;"><strong>16</strong></td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/ccf-push.html">CCF Push</a></td>
+<td style="text-align: right;"><strong>11</strong></td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/unknown.html">Unknown</a></td>
+<td style="text-align: right;"><strong>7</strong></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: right;"><strong>540</strong></td>
+<td style="text-align: right;"><strong>351</strong></td>
+<td style="text-align: right;"><strong>145</strong></td>
+<td style="text-align: right;"><strong>44</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>Collection Methods by Support Tier</h3>
+<p>Each cell shows: Active / Deprecated / Unpublished / <strong>Total</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Collection Method</th>
+<th style="text-align: center;">Microsoft</th>
+<th style="text-align: center;">Partner</th>
+<th style="text-align: center;">Community</th>
+<th style="text-align: center;">Unknown</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: center;">22 / 14 / 0 / <strong>36</strong></td>
+<td style="text-align: center;">64 / 6 / 25 / <strong>95</strong></td>
+<td style="text-align: center;">1 / 0 / 0 / <strong>1</strong></td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/mma.html">MMA</a></td>
+<td style="text-align: center;">8 / 57 / 1 / <strong>66</strong></td>
+<td style="text-align: center;">6 / 28 / 3 / <strong>37</strong></td>
+<td style="text-align: center;">0 / 5 / 0 / <strong>5</strong></td>
+<td style="text-align: center;">0 / 0 / 2 / <strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
+<td style="text-align: center;">59 / 0 / 2 / <strong>61</strong></td>
+<td style="text-align: center;">41 / 0 / 4 / <strong>45</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/ama.html">AMA</a></td>
+<td style="text-align: center;">10 / 16 / 0 / <strong>26</strong></td>
+<td style="text-align: center;">11 / 15 / 0 / <strong>26</strong></td>
+<td style="text-align: center;">4 / 3 / 0 / <strong>7</strong></td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/rest-api.html">REST API</a></td>
+<td style="text-align: center;">2 / 0 / 1 / <strong>3</strong></td>
+<td style="text-align: center;">45 / 0 / 4 / <strong>49</strong></td>
+<td style="text-align: center;">5 / 0 / 0 / <strong>5</strong></td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/native.html">Native</a></td>
+<td style="text-align: center;">25 / 0 / 0 / <strong>25</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/azure-diagnostics.html">Azure Diagnostics</a></td>
+<td style="text-align: center;">17 / 0 / 0 / <strong>17</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/ccf-legacy.html">CCF (Legacy)</a></td>
+<td style="text-align: center;">3 / 1 / 0 / <strong>4</strong></td>
+<td style="text-align: center;">11 / 0 / 1 / <strong>12</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/ccf-push.html">CCF Push</a></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">11 / 0 / 0 / <strong>11</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/unknown.html">Unknown</a></td>
+<td style="text-align: center;">6 / 0 / 0 / <strong>6</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">0 / 0 / 1 / <strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: center;">152 / 88 / 4 / <strong>244</strong></td>
+<td style="text-align: center;">189 / 49 / 37 / <strong>275</strong></td>
+<td style="text-align: center;">10 / 8 / 0 / <strong>18</strong></td>
+<td style="text-align: center;">0 / 0 / 3 / <strong>3</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>CCF Capabilities</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Metric</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">CCF Connectors (polling)</td>
+<td style="text-align: right;">106</td>
+</tr>
+<tr>
+<td style="text-align: left;">CCF Push Connectors</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td style="text-align: left;">CCF Legacy Connectors</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total CCF</strong></td>
+<td style="text-align: right;"><strong>133</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">With config file</td>
+<td style="text-align: right;">117</td>
+</tr>
+<tr>
+<td style="text-align: left;">With capabilities detected</td>
+<td style="text-align: right;">133</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Connector Kind</strong> (non-default kinds; REST API polling is the default):</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Kind</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">REST API Polling <em>(default)</em></td>
+<td style="text-align: right;">87</td>
+</tr>
+<tr>
+<td style="text-align: left;">GCP</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr>
+<td style="text-align: left;">AmazonWebServicesS3</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td style="text-align: left;">Push</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td style="text-align: left;">OCI</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Oracle</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">AliCloudSlsV1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">StorageAccountBlobContainer</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">PurviewAudit</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">WebSocket</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Authentication Methods:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Auth Type</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">APIKey</td>
+<td style="text-align: right;">55</td>
+</tr>
+<tr>
+<td style="text-align: left;">OAuth2</td>
+<td style="text-align: right;">21</td>
+</tr>
+<tr>
+<td style="text-align: left;">Basic</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td style="text-align: left;">JwtToken</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServicePrincipal</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>(none detected)</em></td>
+<td style="text-align: right;">42</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Request Features:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Feature</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Paging</td>
+<td style="text-align: right;">71</td>
+</tr>
+<tr>
+<td style="text-align: left;">POST</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nested</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">MvExpand</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Ingestion API</h3>
+<p>API-based connectors use one of two APIs to send data to the workspace:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Ingestion API</th>
+<th style="text-align: right;">Total</th>
+<th style="text-align: right;">Active</th>
+<th style="text-align: right;">Deprecated 🚫</th>
+<th style="text-align: right;">Unpublished ⚠️</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="methods/log-ingestion-api.html">Log Ingestion API</a></td>
+<td style="text-align: right;"><strong>47</strong></td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/http-data-collector-api.html">HTTP Data Collector API</a></td>
+<td style="text-align: right;"><strong>144</strong></td>
+<td style="text-align: right;">114</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/undetermined.html">Undetermined</a></td>
+<td style="text-align: right;"><strong>4</strong></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: right;"><strong>195</strong></td>
+<td style="text-align: right;"><strong>145</strong></td>
+<td style="text-align: right;"><strong>20</strong></td>
+<td style="text-align: right;"><strong>30</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>By Collection Method:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Collection Method</th>
+<th style="text-align: right;"><a href="methods/log-ingestion-api.html">Log Ingestion API</a></th>
+<th style="text-align: right;"><a href="methods/http-data-collector-api.html">HTTP Data Collector API</a></th>
+<th style="text-align: right;"><a href="methods/undetermined.html">Undetermined</a></th>
+<th style="text-align: right;"><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"><strong>129</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/rest-api.html">REST API</a></td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;"><strong>55</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/ccf-push.html">CCF Push</a></td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;"><strong>11</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: right;"><strong>47</strong></td>
+<td style="text-align: right;"><strong>144</strong></td>
+<td style="text-align: right;"><strong>4</strong></td>
+<td style="text-align: right;"><strong>195</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>Custom Log V1 (CLv1) 🔶</h3>
+<p>Connectors that use at least one Custom Log V1 table (identified by type-suffixed columns or <code>_CL</code> suffix with compatible collection method).</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Metric</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">CLv1 Connectors</td>
+<td style="text-align: right;"><strong>197</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">Active</td>
+<td style="text-align: right;">151</td>
+</tr>
+<tr>
+<td style="text-align: left;">Deprecated 🚫</td>
+<td style="text-align: right;">34</td>
+</tr>
+<tr>
+<td style="text-align: left;">Unpublished ⚠️</td>
+<td style="text-align: right;">12</td>
+</tr>
+</tbody>
+</table>
+<p><strong>By Collection Method:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Collection Method</th>
+<th style="text-align: right;">CLv1 Connectors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: right;">86</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/rest-api.html">REST API</a></td>
+<td style="text-align: right;">55</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/mma.html">MMA</a></td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/azure-diagnostics.html">Azure Diagnostics</a></td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/ccf-legacy.html">CCF (Legacy)</a></td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/ama.html">AMA</a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: right;"><strong>197</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>By Ingestion API:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Ingestion API</th>
+<th style="text-align: right;">CLv1 Connectors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="methods/log-ingestion-api.html">Log Ingestion API</a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/http-data-collector-api.html">HTTP Data Collector API</a></td>
+<td style="text-align: right;">138</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>(no API)</em></td>
+<td style="text-align: right;">56</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: right;"><strong>197</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>Tables</h2>
+<h3>Overview</h3>
+<p><strong>2024 tables</strong> documented across all discovery sources. <strong>1780 tables</strong> have schema information.</p>
+<h3>Discovery Sources</h3>
+<p>Each table is assigned a single discovery source ("Discovered Via") by priority: Connector &gt; Content &gt; Docs &gt; Schema. Within doc sources, priority is: Azure Monitor &gt; Defender XDR &gt; Sentinel Tables &gt; Feature Support &gt; Ingestion API. The "Total" column shows how many tables have each source regardless of priority, since a table can appear in multiple sources.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Discovery Source</th>
+<th style="text-align: right;">Discovered Via</th>
+<th style="text-align: right;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Connector</td>
+<td style="text-align: right;">830</td>
+<td style="text-align: right;">830</td>
+</tr>
+<tr>
+<td style="text-align: left;">Content</td>
+<td style="text-align: right;">219</td>
+<td style="text-align: right;">756</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables/tables-resourcetype">Azure Monitor Tables Reference</a></td>
+<td style="text-align: right;">618</td>
+<td style="text-align: right;">781</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/defender-xdr/advanced-hunting-schema-tables">Defender XDR Advanced Hunting Schema</a></td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">61</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">Sentinel Tables and Connectors Reference</a></td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">478</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">Azure Monitor Tables Feature Support</a></td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">702</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Logs Ingestion API</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">51</td>
+</tr>
+<tr>
+<td style="text-align: left;">Schema</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: right;">1780</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: right;"><strong>2024</strong></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+<p><em>31 tables are available in Defender XDR but not in Azure Monitor Log Analytics.</em></p>
+<h3>Schema Sources</h3>
+<p>Tables with schema information, by schema source. A single table may have schemas from multiple sources.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Schema Source</th>
+<th style="text-align: right;">Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Azure Monitor docs</td>
+<td style="text-align: right;">811</td>
+</tr>
+<tr>
+<td style="text-align: left;">DCR</td>
+<td style="text-align: right;">151</td>
+</tr>
+<tr>
+<td style="text-align: left;">KQL validation</td>
+<td style="text-align: right;">837</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total unique tables with schema</strong></td>
+<td style="text-align: right;"><strong>1780</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>Custom Log V1 (CLv1) 🔶</h3>
+<p><strong>515</strong> of 2024 tables are Custom Log V1 tables, identified by type-suffixed columns or <code>_CL</code> suffix with compatible collection method.</p>
+<p><strong>By Table Category:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Category</th>
+<th style="text-align: right;">CLv1 Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Uncategorized</td>
+<td style="text-align: right;">493</td>
+</tr>
+<tr>
+<td style="text-align: left;">Internal</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td style="text-align: left;">GCP</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;">Crowdstrike</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Various</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: right;"><strong>515</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>Content</h2>
+<h3>Content Items Summary</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Metric</th>
+<th style="text-align: right;">Total</th>
+<th style="text-align: right;">📦 Published</th>
+<th style="text-align: right;">📦 Unpublished</th>
+<th style="text-align: right;">📄 Standalone</th>
+<th style="text-align: right;">🔗 GitHub Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Content Items</strong></td>
+<td style="text-align: right;"><strong>6,606</strong></td>
+<td style="text-align: right;">4,748</td>
+<td style="text-align: right;">148</td>
+<td style="text-align: right;">437</td>
+<td style="text-align: right;">1,273</td>
+</tr>
+</tbody>
+</table>
+<h3>Content Items by Type</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Type</th>
+<th style="text-align: right;">Total</th>
+<th style="text-align: right;">📦 Published</th>
+<th style="text-align: right;">📦 Unpublished</th>
+<th style="text-align: right;">📄 Standalone</th>
+<th style="text-align: right;">🔗 GitHub Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: right;">2,369</td>
+<td style="text-align: right;">2,131</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">158</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: right;">2,292</td>
+<td style="text-align: right;">1,165</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">1,034</td>
+</tr>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: right;">820</td>
+<td style="text-align: right;">557</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">188</td>
+<td style="text-align: right;">36</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: right;">538</td>
+<td style="text-align: right;">333</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">185</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers*</td>
+<td style="text-align: right;">514</td>
+<td style="text-align: right;">502</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Watchlists</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;">Summary Rules</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+<p><em>* Parsers from solution content. See <a href="parsers/parsers-index.html">Parsers</a> section for all parsers including legacy.</em></p>
+<h2>Parsers</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Category</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Legacy Parsers</td>
+<td style="text-align: right;">35</td>
+</tr>
+<tr>
+<td style="text-align: left;">Solution Parsers (in Solution JSON)</td>
+<td style="text-align: right;">489</td>
+</tr>
+<tr>
+<td style="text-align: left;">Discovered Parsers 🔍</td>
+<td style="text-align: right;">28</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total Parsers</strong></td>
+<td style="text-align: right;"><strong>552</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">Solutions with Parsers</td>
+<td style="text-align: right;">158</td>
+</tr>
+</tbody>
+</table>
+<h2>ASIM Parsers</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Metric</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Schemas</strong></td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source Parser Pairs</strong>*</td>
+<td style="text-align: right;">82</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Union Parser Pairs</strong>*</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Empty Parsers</strong></td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+<p>* <em>Each parser pair consists of an ASim filtering parser and a vim parameter-based parser.</em></p>
+<h2>ASIM Products</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Metric</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Products</strong></td>
+<td style="text-align: right;">80</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source Parser Pairs</strong>*</td>
+<td style="text-align: right;">82</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Schemas Covered</strong></td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Tables Used</strong></td>
+<td style="text-align: right;">73</td>
+</tr>
+</tbody>
+</table>
+<p>* <em>Each parser pair consists of an ASim filtering parser and a vim parameter-based parser.</em></p>
+<h3>Products per Schema</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: right;">Products</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: right;">31</td>
+</tr>
+<tr>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: right;">23</td>
+</tr>
+<tr>
+<td style="text-align: left;">WebSession</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuditEvent</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dns</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileEvent</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessEvent</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">RegistryEvent</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserManagement</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;">AlertEvent</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">DhcpEvent</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: right;"><strong>80</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>Pre-requisites</h2>
+<h3>Overview</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Metric</th>
+<th style="text-align: right;">Total</th>
+<th style="text-align: right;">Explicit (required)</th>
+<th style="text-align: right;">ASIM (optional)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Dependency records</td>
+<td style="text-align: right;"><strong>831</strong></td>
+<td style="text-align: right;">239</td>
+<td style="text-align: right;">592</td>
+</tr>
+<tr>
+<td style="text-align: left;">Solutions with dependencies</td>
+<td style="text-align: right;"><strong>122</strong></td>
+<td style="text-align: right;">109</td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr>
+<td style="text-align: left;">Unique dependency targets</td>
+<td style="text-align: right;"><strong>55</strong></td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">29</td>
+</tr>
+</tbody>
+</table>
+<h3>ASIM Pre-requisites by Schema</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">ASIM Schema</th>
+<th style="text-align: right;">Solutions Using</th>
+<th style="text-align: right;">Solutions Providing Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">AuditEvent</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dns</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileEvent</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkSession</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessEvent</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td style="text-align: left;">RegistryEvent</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td style="text-align: left;">WebSession</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total unique</strong></td>
+<td style="text-align: right;"><strong>25</strong></td>
+<td style="text-align: right;"><strong>29</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>Most Depended-Upon Solutions</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: right;">Depended On By</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="solutions/common-event-format.html">Common Event Format</a></td>
+<td style="text-align: right;">83</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="solutions/syslog.html">Syslog</a></td>
+<td style="text-align: right;">66</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="solutions/customlogsama.html">CustomLogsAma</a></td>
+<td style="text-align: right;">49</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="solutions/windows-forwarded-events.html">Windows Forwarded Events</a></td>
+<td style="text-align: right;">43</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></td>
+<td style="text-align: right;">38</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="solutions/sentinelone.html">SentinelOne</a></td>
+<td style="text-align: right;">38</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
+<td style="text-align: right;">37</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="solutions/windows-security-events.html">Windows Security Events</a></td>
+<td style="text-align: right;">36</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+<td style="text-align: right;">35</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="solutions/vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
+<td style="text-align: right;">31</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="solutions/ciscomeraki.html">CiscoMeraki</a></td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="solutions/azure-firewall.html">Azure Firewall</a></td>
+<td style="text-align: right;">28</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="solutions/cisco-meraki-events-via-rest-api.html">Cisco Meraki Events via REST API</a></td>
+<td style="text-align: right;">28</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="solutions/corelight.html">Corelight</a></td>
+<td style="text-align: right;">25</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>Generated by Solutions Analyzer - March 2026</em></p>
+</div>
+</body>
+</html>

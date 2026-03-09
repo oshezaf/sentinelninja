@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mimecast Targeted Threat Protection &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Mimecast Targeted Threat Protection</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Mimecast.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>MimecastTTPAPI</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Mimecast</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/mimecast.html">Mimecast</a>, <a href="../solutions/mimecastttp.html">MimecastTTP</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mimecast/Data%20Connectors/MimecastTTP/Mimecast_TTP_FunctionApp.json">Mimecast_TTP_FunctionApp.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>Azure Function code uses LogsIngestionClient/Log Ingestion API</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+</tbody>
+</table>
+<p>The data connector for <a href="https://integrations.mimecast.com/tech-partners/microsoft-sentinel/">Mimecast Targeted Threat Protection</a> provides customers with the visibility into security events related to the Targeted Threat Protection inspection technologies within Microsoft Sentinel. The data connector provides pre-created dashboards to allow analysts to view insight into email based threats, aid in incident correlation and reduce investigation response times coupled with custom alert capabilities.  </p>
+<p>The Mimecast products included within the connector are: </p>
+<ul>
+<li>
+<p>URL Protect </p>
+</li>
+<li>
+<p>Impersonation Protect </p>
+</li>
+<li>
+<p>Attachment Protect</p>
+</li>
+</ul>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/mimecastttpattachment-cl.html"><code>MimecastTTPAttachment_CL</code></a> 🔶</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/mimecastttpimpersonation-cl.html"><code>MimecastTTPImpersonation_CL</code></a> 🔶</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/mimecastttpurl-cl.html"><code>MimecastTTPUrl_CL</code></a> 🔶</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/ttp-attachment-cl.html"><code>Ttp_Attachment_CL</code></a></td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/ttp-impersonation-cl.html"><code>Ttp_Impersonation_CL</code></a></td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/ttp-url-cl.html"><code>Ttp_Url_CL</code></a></td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Azure Subscription</strong>: Azure Subscription with owner role is required to register an application in Microsoft Entra ID and assign role of contributor to app in resource group.
+- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
+- <strong>REST API Credentials/permissions</strong>: See the documentation to learn more about API on the <a href="https://integrations.mimecast.com/documentation/">Rest API reference</a></p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Resource group</strong></p>
+<p>You need to have a resource group created with a subscription you are going to use.</p>
+<p><strong>2. Functions app</strong></p>
+<p>You need to have an Azure App registered for this connector to use
+1. Application Id
+2. Tenant Id
+3. Client Id
+4. Client Secret</p>
+<blockquote>
+<p><strong>NOTE:</strong> This connector uses Azure Functions to connect to a Mimecast API to pull its logs into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
+<p><strong>(Optional Step)</strong> Securely store workspace and API authorization key(s) or token(s) in Azure Key Vault. Azure Key Vault provides a secure mechanism to store and retrieve key values. <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Follow these instructions</a> to use Azure Key Vault with an Azure Function App.</p>
+</blockquote>
+<p><strong>STEP 1 - App Registration steps for the Application in Microsoft Entra ID</strong></p>
+<p>This integration requires an App registration in the Azure portal. Follow the steps in this section to create a new application in Microsoft Entra ID:
+ 1. Sign in to the <a href="https://portal.azure.com/">Azure portal</a>.
+ 2. Search for and select <strong>Microsoft Entra ID</strong>.
+ 3. Under <strong>Manage</strong>, select <strong>App registrations &gt; New registration</strong>.
+ 4. Enter a display <strong>Name</strong> for your application.
+ 5. Select <strong>Register</strong> to complete the initial app registration.
+ 6. When registration finishes, the Azure portal displays the app registration's Overview pane. You see the <strong>Application (client) ID</strong> and <strong>Tenant ID</strong>. The client ID and Tenant ID is required as configuration parameters for the execution of Mimecast Data Connector. </p>
+<blockquote>
+<p><strong>Reference link:</strong> <a href="https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app">https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app</a></p>
+</blockquote>
+<p><strong>STEP 2 - Add a client secret for application in Microsoft Entra ID</strong></p>
+<p>Sometimes called an application password, a client secret is a string value required for the execution of Mimecast Data Connector. Follow the steps in this section to create a new Client Secret:
+ 1. In the Azure portal, in <strong>App registrations</strong>, select your application.
+ 2. Select <strong>Certificates &amp; secrets &gt; Client secrets &gt; New client secret</strong>.
+ 3. Add a description for your client secret.
+ 4. Select an expiration for the secret or specify a custom lifetime. Limit is 24 months.
+ 5. Select <strong>Add</strong>. 
+ 6. <em>Record the secret's value for use in your client application code. This secret value is never displayed again after you leave this page.</em> The secret value is required as configuration parameter for the execution of Mimecast Data Connector. </p>
+<blockquote>
+<p><strong>Reference link:</strong> <a href="https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret">https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret</a></p>
+</blockquote>
+<p><strong>STEP 3 - Get Object ID of your application in Microsoft Entra ID</strong></p>
+<p>After creating your app registration, follow the steps in this section to get Object ID:
+ 1. Go to <strong>Microsoft Entra ID</strong>.
+ 2. Select <strong>Enterprise applications</strong> from the left menu.
+ 3. Find your newly created application in the list (you can search by the name you provided).
+ 4. Click on the application.
+ 5. On the overview page, copy the <strong>Object ID</strong>. This is the <strong>AzureEntraObjectId</strong> needed for your ARM template role assignment.</p>
+<p><strong>STEP 4 - Deploy Mimecast API Connector</strong></p>
+<blockquote>
+<p><strong>IMPORTANT:</strong> Before deploying the Mimecast API connector, have the Mimecast API authorization key(s) or Token, readily available.</p>
+</blockquote>
+<p><strong>7. Azure Resource Manager (ARM) Template</strong></p>
+<p>Use this method for automated deployment of the Mimecast Targeted Threat Protection Data connector.</p>
+<ol>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below. </p>
+<p><a href="https://aka.ms/sentinel-MimecastTTPAzureDeploy-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://aka.ms/sentinel-MimecastTTPAzureDeploy-azuredeploy-gov"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a>
+2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Region</strong>. 
+3. Enter the below information : </p>
+<p>a. Location - The location in which the data collection rules and data collection endpoints should be deployed</p>
+<p>b. WorkspaceName - Enter Microsoft Sentinel Workspace Name of Log Analytics workspace</p>
+<p>c. AzureClientID - Enter Azure Client ID that you have created during app registration</p>
+<p>d. AzureClientSecret - Enter Azure Client Secret that you have created during creating the client secret</p>
+<p>e. AzureTenantID - Enter Azure Tenant ID of your Azure Active Directory</p>
+<p>f. AzureEntraObjectID - Enter Object id of your Microsoft Entra App</p>
+<p>g. MimecastBaseURL - Enter Base URL of Mimecast API 2.0 (e.g. https://api.services.mimecast.com)</p>
+<p>h. MimecastClientID - Enter Mimecast Client ID for authentication</p>
+<p>i. MimecastClientSecret - Enter Mimecast Client Secret for authentication</p>
+<p>j. StartDate - Enter the start date in the 'yyyy-mm-dd' format. If you do not provide a date, data from the last 60 days will be fetched automatically. Ensure that the date is in the past and properly formatted</p>
+<p>k. MimecastTTPAttachmentTableName - Enter name of the table used to store TTP Attachment data. Default is 'Ttp_Attachment'</p>
+<p>l. MimecastTTPImpersonationTableName - Enter name of the table used to store TTP Impersonation data. Default is 'Ttp_Impersonation'</p>
+<p>m. MimecastTTPUrlTableName - Enter name of the table used to store TTP Attachment data. Default is 'Ttp_Url'</p>
+<p>n. Schedule - Please enter a valid Quartz cron-expression. (Example: 0 0 <em>/1 * * </em>) Do not keep the value empty, minimum value is 10 minutes</p>
+<p>l. LogLevel - Please add log level or log severity value. By default it is set to INFO</p>
+<p>o. AppInsightsWorkspaceResourceId - Migrate Classic Application Insights to Log Analytic Workspace which is retiring by 29 Febraury 2024. Use 'Log Analytic Workspace--&gt;Properties' blade having 'Resource ID' property value. This is a fully qualified resourceId which is in format '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}' 
+4. Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>. 
+5. Click <strong>Purchase</strong> to deploy.</p>
+</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

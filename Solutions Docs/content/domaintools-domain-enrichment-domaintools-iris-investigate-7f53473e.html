@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Domain Enrichment - DomainTools Iris Investigate &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Domain Enrichment - DomainTools Iris Investigate</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>Given a domain or set of domains associated with an incident return all Iris Investigate data for those domains as comments in the incident.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/domaintools.html">DomainTools</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/readme.md">DomainTools-Iris-Investigate-Playbook/readme.md</a></em></p>
+</blockquote>
+<p><img alt="DomainTools" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/logo.png" /><br></p>
+<h2>DomainTools Iris Investigate Domain Playbook</h2>
+<h2>Table of Contents</h2>
+<ol>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#deployplaybook">Deploy DomainTools-Iris-Investigate-Playbook</a></li>
+<li><a href="#authentication">Authentication</a></li>
+<li><a href="#prerequisites">Prerequisites</a></li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="#postdeployment">Post Deployment Steps</a></li>
+</ol>
+<p><a name="overview"></p>
+<h2>Overview</h2>
+<p>This playbook uses the DomainTools Iris Investigate API. Given a domain or set of domains associated with an incident, return Whois, mailserver, DNS, SSL and related indicators from Iris Investigate, highlighting fields where fewer than 200 domains share an attribute. This is useful in order to clue investigators where there could be additional indicators of interest available via the Iris Investigate UI or API.</p>
+<p>Visit https://www.domaintools.com/integrations to request a Api key.</p>
+<p>When a new Azure Sentinel Incident is created, and this playbook is triggered, it performs these actions:</p>
+<ul>
+<li>It fetches all the Host/DNS/URL entities in the Incident.</li>
+<li>Iterates through the Host/DNS/URL entities and fetches the results from Iris Investigate for each entity.</li>
+<li>All the details from DomainTools Iris Investigate will be added as comments in a tabular format.</li>
+<li>All the response attributes that have count value(Count of connected domains sharing this attribute) greater than 1 and less than "Pivot_Threshold" parameter value in the playbook(default to 200), link the DomainTools Iris Investigate UI for further investigation.</li>
+</ul>
+<p><img alt="Incident Comments" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/investigate_comments.png" /></p>
+<p><a name="deployplaybook"></p>
+<h2>Links to deploy the DomainTools Iris Investigate Domain Playbook</h2>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDomainTools%2FPlaybooks%2FDomainTools-Iris-Investigate-Playbook%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDomainTools%2FPlaybooks%2FDomainTools-Iris-Investigate-Playbook%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<p><a name="authentication"></p>
+<h2>Authentication</h2>
+<p>Authentication methods this connector supports:
+ - <a href="https://www.domaintools.com/integrations">API Key authentication</a></p>
+<p><a name="prerequisites"></p>
+<h2>Prerequisites</h2>
+<ul>
+<li>A DomainTools API Key provisioned for Iris Investigate</li>
+<li>DomainTools Function App should be deployed</li>
+</ul>
+<p><a name="deployment"></p>
+<h3>Deployment instructions</h3>
+<ul>
+<li>Deploy the playbooks by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
+<li>Fill in the required parameters for deploying the playbook.
+  <img alt="deployment" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/deployment.png" />  </li>
+<li>Click "Review + create". Once the validation is successful, click on "Create".</li>
+</ul>
+<p><a name="postdeployment"></p>
+<h3>Post-Deployment instructions</h3>
+<h4>a. Playbook parameters:</h4>
+<p>Once deployment is complete, you can change the playbook parameters to get the desired results as explained below.
+- Open the Logic App in the edit mode. click on parameters
+  <img alt="pivots" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/parameters.png" />
+- If "Fetch_Guided_Pivots_Results" is set to True, It will get the following details for each entity:
+  - Reverse Email Domain
+  - Reverese IP
+  - Pivot MX Host
+  - Pivot by MX IP
+  - Pivot by Nameserver IP Address
+  - Pivot Nameserver Host
+  - Pivot by Registrant Name
+  - Pivot by Registrant Org
+  - Reverse Email
+  - Pivot SSL Email
+  - Pivot by SSL Hash
+    <img alt="pivots" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/guided_pivot_comments.png" />
+- If you provide tags in the "Find_Domains_With_Malicious_tags" paramter, if a specified set of tags is observed, the playbook will mark the incident as “severe” in Sentinel and add a comment.
+    <img alt="tags" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/malicious_tags_comments.png" />
+- If "Fetch_Domain Tools_DNSDB_Results" is set to True, It will get the DNSDB Rdata details for each entity:
+    <img alt="rdata" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/dnsdb_rdata_comments.png" />
+- Save the Logic App.</p>
+<p><em>[Content truncated...]</em></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/domaintools.html">Back to DomainTools</a></p>
+</div>
+</body>
+</html>

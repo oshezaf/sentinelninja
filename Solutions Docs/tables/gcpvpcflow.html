@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GCPVPCFlow &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>GCPVPCFlow</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for GCPVPCFlow table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">GCP</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpvpcflow">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (109 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpvpcflow">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">BytesSent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Amount of bytes sent from the source to the destination.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestGatewayInterconnectName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">If the type of the gateway is INTERCONNECT_ATTACHMENT, this field is populated with the name of the Cloud Interconnect connection on which the VLAN attachment is configured.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestGatewayInterconnectProjectNumber</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">If the type of the gateway is INTERCONNECT_ATTACHMENT, this field is populated with the Google Cloud project number of the Cloud Interconnect connection on which the VLAN attachment is configured.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestGatewayLocation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Region of the destination gateway</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestGatewayName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the destination gateway</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestGatewayProjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Google Cloud project ID of the destination gateway</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestGatewayType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the destination gateway. Can be INTERCONNECT_ATTACHMENT or VPN_TUNNEL.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestGatewayVpc</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">VPC network details of the gateway</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestGkeClusterLocation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Location of the destination cluster. This can be a zone or a region depending if the cluster is zonal or regional.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestGkeClusterName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Destination GKE cluster name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestGkePodName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the destination Pod</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestGkePodNamespace</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Namespace of the destination Pod</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestGkePodWorkloadName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the top-level destination workload controller</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestGkePodWorkloadType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the top-level destination workload controller.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestGkeService</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Destination GKE Service name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestGoogleServiceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">This field is set to GOOGLE_API if the destination is a Google API service.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestInstanceGroupName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the instance group</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestInstanceGroupRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">If the instance group is regional, this field is populated with the region of the instance group.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestInstanceGroupZone</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">If the instance group is zonal, this field is populated with the zone of the instance group.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestInstanceProjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID of the Google Cloud project that contains the VM resource</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestInstanceRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Region of the VM</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestInstanceVmName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Instance name of the VM</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestInstanceZone</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Zone of the VM</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Destination IP address</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestLocationAsn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ASN of the external destination network to which this endpoint belongs.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestLocationCity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">City for external destination endpoints.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestLocationContinent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Continent for external destination endpoints.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestLocationCountry</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Country for external destination endpoints.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestLocationRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Region for external destination endpoints.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestPort</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Destination port</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestVpcName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the network</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestVpcProjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID of the Google Cloud project containing the VPC</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestVpcSubnetworkName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the subnet</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestVpcSubnetworkRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Region of the subnet</td>
+</tr>
+<tr>
+<td style="text-align: left;">EndTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp of the last observed packet during the aggregated time interval.</td>
+</tr>
+<tr>
+<td style="text-align: left;">GCPResourceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the resource (e.g., compute instance, DNS record).</td>
+</tr>
+<tr>
+<td style="text-align: left;">InsertId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier assigned to each log entry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InternetRoutingDetailsEgressAsn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">List of relevant AS paths. If there are multiple AS paths available to the flow, the field might contain more than one AS path.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LbBackendGroupLocation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Location of the backend group</td>
+</tr>
+<tr>
+<td style="text-align: left;">LbBackendGroupName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the backend group</td>
+</tr>
+<tr>
+<td style="text-align: left;">LbBackendGroupType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the backend group</td>
+</tr>
+<tr>
+<td style="text-align: left;">LbBackendServiceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the backend service.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LbForwardingRuleName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the forwarding rule</td>
+</tr>
+<tr>
+<td style="text-align: left;">LbForwardingRuleProjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Google Cloud project ID of the forwarding rule</td>
+</tr>
+<tr>
+<td style="text-align: left;">LbReporter</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Cloud Load Balancing reporter. Can be either CLIENT or BACKEND</td>
+</tr>
+<tr>
+<td style="text-align: left;">LbScheme</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Load balancer scheme</td>
+</tr>
+<tr>
+<td style="text-align: left;">LbType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Load balancer type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LbUrlMapName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the URL map. Populated if the type of the load balancer is APPLICATION_LOAD_BALANCER.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LbVpc</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">VPC network details of the load balancer</td>
+</tr>
+<tr>
+<td style="text-align: left;">Location</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Location of the resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the log where this entry is stored.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkServiceDscp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">If the Differentiated Services field is present in packet headers, this field is populated with the DSCP value.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PacketsSent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Number of packets sent from the source to the destination.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ProjectId of the resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Protocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IANA protocol number</td>
+</tr>
+<tr>
+<td style="text-align: left;">PscAttachmentProjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Google Cloud project ID of the service attachment</td>
+</tr>
+<tr>
+<td style="text-align: left;">PscAttachmentRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Region of the service attachment</td>
+</tr>
+<tr>
+<td style="text-align: left;">PscAttachmentVpc</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">VPC network details of the service attachment</td>
+</tr>
+<tr>
+<td style="text-align: left;">PscEndpointConnectionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Private Service Connect connection ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">PscEndpointProjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Google Cloud project ID of the Private Service Connect endpoint</td>
+</tr>
+<tr>
+<td style="text-align: left;">PscEndpointRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Region of the endpoint. Not populated if the target service type is GLOBAL_GOOGLE_APIS.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PscEndpointTargetServiceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Target service type. Can be either GLOBAL_GOOGLE_APIS or PUBLISHED_SERVICE.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PscEndpointVpc</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">VPC network details of the Private Service Connect endpoint</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReceiveTimestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp of the event when it was received by the logging service.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Reporter</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The side which reported the flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rttmsec</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The measured latency is the time elapsed between sending a SEQ and receiving a corresponding ACK.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGatewayInterconnectName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">If the type of the gateway is INTERCONNECT_ATTACHMENT, this field is populated with the name of the Cloud Interconnect connection on which the VLAN attachment is configured.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGatewayInterconnectProjectNumber</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">If the type of the gateway is INTERCONNECT_ATTACHMENT, this field is populated with the Google Cloud project number of the Cloud Interconnect connection on which the VLAN attachment is configured.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGatewayLocation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Region of the gateway</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGatewayName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the gateway</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGatewayProjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Google Cloud project ID of the gateway</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGatewayType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the gateway. Can be INTERCONNECT_ATTACHMENT or VPN_TUNNEL.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGatewayVpc</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">VPC network details of the gateway</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGkeClusterLocation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Location of the source cluster. This can be a zone or a region depending if the cluster is zonal or regional.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGkeClusterName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source GKE cluster name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGkePodName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the source Pod</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGkePodNamespace</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Namespace of the source Pod</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGkePodWorkloadName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the top-level source workload controller</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGkePodWorkloadType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the top-level source workload controller.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGkeService</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Source GKE Service name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGoogleServiceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">This field is set to GOOGLE_API if the source is a Google API service.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcInstanceGroupName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the source instance group</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcInstanceGroupRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">If the source instance group is regional, this field is populated with the region of the source instance group.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcInstanceGroupZone</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">If the source instance group is zonal, this field is populated with the zone of the source instance group.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcInstanceProjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID of the Google Cloud project that contains the source VM resource</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcInstanceRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Region of the source VM</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcInstanceVmName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Instance name of the source VM</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcInstanceZone</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Zone of the source VM</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source IP address</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcLocationAsn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ASN of the external source network to which this endpoint belongs.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcLocationCity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">City for external source endpoints.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcLocationContinent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Continent for external source endpoints.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcLocationCountry</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Country for external source endpoints.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcLocationRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Region for external source endpoints.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcPort</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source port</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcVpcName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the source network</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcVpcProjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID of the Google Cloud project containing the VPC</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcVpcSubnetworkName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the source subnet,</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcVpcSubnetworkRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the source region</td>
+</tr>
+<tr>
+<td style="text-align: left;">StartTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp of the first observed packet during the aggregated time interval.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SubnetworkId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID of the Google Cloud project containing the VPC</td>
+</tr>
+<tr>
+<td style="text-align: left;">SubnetworkName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the subnet</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time the log entry was received by logging.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp of the log entry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/google-cloud-platform-vpc-flow-logs.html">Google Cloud Platform VPC Flow Logs</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/gcpvpcflowlogsccpdefinition.html">GCP Pub/Sub VPC Flow Logs (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

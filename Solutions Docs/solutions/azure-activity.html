@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azure Activity &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Azure Activity</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/azureactivity_logo.svg" alt="Azure Activity Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com/">https://support.microsoft.com/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-04-18</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Activity">Azure Activity</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://docs.microsoft.com/azure/azure-monitor/essentials/activity-log">Azure Activity</a> solution for Microsoft Sentinel enables you to ingest Azure Activity Administrative, Security, Service Health, Alert, Recommendation, Policy, Autoscale and Resource Health <a href="https://docs.microsoft.com/azure/azure-monitor/reference/tables/azureactivity">logs</a> using Diagnostic Settings into Microsoft Sentinel.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/azureactivity.html">Azure Activity</a></li>
+</ul>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+<td><a href="../connectors/azureactivity.html">Azure Activity</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h3>Internal Tables</h3>
+<p>The following <strong>1 table(s)</strong> are used internally by this solution's content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+<td>-</td>
+<td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>31 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">15</td>
+</tr>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">14</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">2</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-azure-machine-learning-write-operations-68c89998-8052-4c80-a1f6-9d81060b6d57-78e6b271.html">Azure Machine Learning Write Operations</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">InitialAccess, Execution, Impact</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-creation-of-expensive-computes-in-azure-9736e5f1-7b6e-4bfb-a708-e53ff1d182c3-ceac9b06.html">Creation of expensive computes in Azure</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-mass-cloud-resource-deletions-time-series-anomaly-ed43bdb7-eaab-4ea4-be52-6951fcfa7e3b-bbd8cfc2.html">Mass Cloud resource deletions Time Series Anomaly</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-microsoft-entra-id-hybrid-health-ad-fs-new-server-88f453ff-7b9e-45bb-8c12-4058ca5e44ee-ede40a47.html">Microsoft Entra ID Hybrid Health AD FS New Server</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-microsoft-entra-id-hybrid-health-ad-fs-service-delete-86a036b2-3686-42eb-b417-909fc0867771-676dbeac.html">Microsoft Entra ID Hybrid Health AD FS Service Delete</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-microsoft-entra-id-hybrid-health-ad-fs-suspicious-application-d9938c3b-16f9-444d-bc22-ea9a9110e0fd-8920c2ac.html">Microsoft Entra ID Hybrid Health AD FS Suspicious Application</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-nrt-creation-of-expensive-computes-in-azure-56fe0db0-6779-46fa-b3c5-006082a53064-7552960d.html">NRT Creation of expensive computes in Azure</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-nrt-microsoft-entra-id-hybrid-health-ad-fs-new-server-ec491363-5fe7-4eff-b68e-f42dcb76fcf6-5534b382.html">NRT Microsoft Entra ID Hybrid Health AD FS New Server</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-new-cloudshell-user-6d7214d9-4a28-44df-aafb-0910b9e6ae3e-a064ab7a.html">New CloudShell User</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-rare-subscription-level-operations-in-azure-23de46ea-c425-4a77-b456-511ae4855d69-121f6490.html">Rare subscription-level operations in Azure</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CredentialAccess, Persistence</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-subscription-moved-to-another-tenant-48c026d8-7f36-4a95-9568-6f1420d66e37-856f8155.html">Subscription moved to another tenant</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-suspicious-resource-deployment-9fb57e58-3ed8-4b89-afcf-c8e786508b1c-a84aefba.html">Suspicious Resource deployment</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-suspicious-granting-of-permissions-to-an-account-b2c15736-b9eb-4dae-8b02-3016b6a45a32-6643d8bb.html">Suspicious granting of permissions to an account</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a><br><em>Internal use:</em><br><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-suspicious-number-of-resource-creation-or-deployment-activities-361dd1e3-1c11-491e-82a3-bb2e44ac36ba-812975d5.html">Suspicious number of resource creation or deployment activities</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-anomalous-azure-operation-hunting-model-43cb0347-bdcc-4e83-af5a-cebbd03971d8-cab991db.html">Anomalous Azure Operation Hunting Model</a></td>
+<td style="text-align: left;">LateralMovement, CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-azure-machine-learning-write-operations-26d116bd-324b-4bb8-b102-d4a282607ad7-c243c1ab.html">Azure Machine Learning Write Operations</a></td>
+<td style="text-align: left;">InitialAccess, Execution, Impact</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-azure-network-security-group-nsg-administrative-operations-e94d6756-981c-4f02-9a81-d006d80c8b41-633c60f3.html">Azure Network Security Group NSG Administrative Operations</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-azure-vm-run-command-executed-from-azure-ip-address-efe843ca-3ce7-4896-9f8b-f2c374ae6527-1a85a75b.html">Azure VM Run Command executed from Azure IP address</a></td>
+<td style="text-align: left;">LateralMovement, CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-azure-virtual-network-subnets-administrative-operations-57784ba5-7791-422e-916f-65ef94fe1dbb-9d2f39f9.html">Azure Virtual Network Subnets Administrative Operations</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-azure-storage-key-enumeration-5d2399f9-ea5c-4e67-9435-1fba745f3a39-dc9ad5ce.html">Azure storage key enumeration</a></td>
+<td style="text-align: left;">Discovery</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-azureactivity-administration-from-vps-providers-1b8779c9-abf2-444f-a21f-437b8f90ac4a-2a957dc6.html">AzureActivity Administration From VPS Providers</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-common-deployed-resources-0278e3b8-9899-45c5-8928-700cd80d2d80-cd2dd606.html">Common deployed resources</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-creation-of-an-anomalous-number-of-resources-a09e6368-065b-4f1e-a4ce-b1b3a64b493b-70888297.html">Creation of an anomalous number of resources</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-granting-permissions-to-account-860cda84-765b-4273-af44-958b7cca85f7-74a48e32.html">Granting permissions to account</a></td>
+<td style="text-align: left;">Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-microsoft-sentinel-analytics-rules-administrative-operations-ef7ef44e-6129-4d8e-94fe-b5530415d8e5-4b1b530d.html">Microsoft Sentinel Analytics Rules Administrative Operations</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-microsoft-sentinel-connectors-administrative-operations-17201aa8-0916-4078-a020-7ea3a9262889-4cf8c28d.html">Microsoft Sentinel Connectors Administrative Operations</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-microsoft-sentinel-workbooks-administrative-operations-5a1f9655-c893-4091-8dc0-7f11d7676506-d2f3274a.html">Microsoft Sentinel Workbooks Administrative Operations</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-port-opened-for-an-azure-resource-9e146876-e303-49af-b847-b029d1a66852-03c8ef50.html">Port opened for an Azure Resource</a></td>
+<td style="text-align: left;">CommandAndControl, Impact</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-rare-custom-script-extension-81fd68a2-9ad6-4a1c-7bd7-18efe5c99081-a79becd9.html">Rare Custom Script Extension</a></td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-azureactivity-dc7bc453.html">AzureActivity</a></td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-azureservicehealthworkbook-d3085bda.html">AzureServiceHealthWorkbook</a></td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.3</td>
+<td>19-02-2025</td>
+<td>Added new <strong>Workbook</strong> Azure Service Health to the Solution and added new <strong>Hunting query</strong> Machine_Learning_Creation.yaml. <br/> Added new <strong>Analytic Rule</strong> Machine_Learning_Creation.yaml</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>21-02-2024</td>
+<td>Modified Entity Mappings of <strong>Analytic Rules</strong></td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>23-01-2024</td>
+<td>Added subTechniques in Template</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>06-11-2023</td>
+<td>Modified text as there is rebranding from Azure Active Directory to Microsoft Entra ID. <br/> Optimized the <strong>Analytic Rule</strong> query logic to achieve expected results</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

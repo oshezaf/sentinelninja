@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ ESET Protect Platform &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>⚠️ ESET Protect Platform</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/eset-logo.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>ESETProtectPlatform</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">ESET</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/eset-protect-platform.html">ESET Protect Platform</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ESET%20Protect%20Platform/Data%20Connectors/ESETProtectPlatform_API_FunctionApp.json">ESETProtectPlatform_API_FunctionApp.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>Azure Function code uses LogsIngestionClient/Log Ingestion API</em></td>
+</tr>
+</tbody>
+</table>
+<p>The ESET Protect Platform data connector enables users to inject detections data from <a href="https://www.eset.com/int/business/protect-platform/">ESET Protect Platform</a> using the provided <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ESET%20Protect%20Platform/Data%20Connectors">Integration REST API</a>. Integration REST API runs as scheduled Azure Function App.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/integrationtableincidents-cl.html"><code>IntegrationTableIncidents_CL</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/integrationtable-cl.html"><code>IntegrationTable_CL</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
+- <strong>Permission to register an application in Microsoft Entra ID</strong>: Sufficient permissions to register an application with your Microsoft Entra tenant are required.
+- <strong>Permission to assign a role to the registered application</strong>: Permission to assign the Monitoring Metrics Publisher role to the registered application in Microsoft Entra ID is required.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+<p><strong>NOTE:</strong> The ESET Protect Platform data connector uses Azure Functions to connect to the ESET Protect Platform via Eset Connect API to pull detections logs into Microsoft Sentinel. This process might result in additional data ingestion costs. See details on the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a>.</p>
+<p><strong>NOTE:</strong> The newest version of the ESET PROTECT Platform and Microsoft Sentinel integration pulls not only detections logs but also newly created incidents. If your integration was set up before 20.06.2025, please follow <a href="https://help.eset.com/eset_connect/en-US/update_ms_sentinel_integration.html">these steps</a> to update it.</p>
+</blockquote>
+<p><strong>1. Step 1 -  Create an API user</strong></p>
+<p>Use this <a href="https://help.eset.com/eset_connect/en-US/create_api_user_account.html">instruction</a> to create an ESET Connect API User account with <strong>Login</strong> and <strong>Password</strong>.</p>
+<p><strong>2. Step 2 -  Create a registered application</strong></p>
+<p>Create a Microsoft Entra ID registered application by following the steps in the <a href="https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app">Register a new application instruction.</a></p>
+<p><strong>3. Step 3 - Deploy the ESET Protect Platform data connector using the Azure Resource Manager (ARM) template</strong></p>
+<ol>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below. </p>
+<p><a href="https://aka.ms/sentinel-EsetProtectionPlatform-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
+</li>
+<li>
+<p>Select the name of the <strong>Log Analytics workspace</strong> associated with your Microsoft Sentinel. Select the same <strong>Resource Group</strong> as the Resource Group of the Log Analytics workspace.</p>
+</li>
+<li>
+<p>Type the parameters of the registered application in Microsoft Entra ID: <strong>Azure Client ID</strong>, <strong>Azure Client Secret</strong>, <strong>Azure Tenant ID</strong>, <strong>Object ID</strong>. You can find the <strong>Object ID</strong> on Azure Portal by following this path </p>
+<blockquote>
+<p>Microsoft Entra ID -&gt; Manage (on the left-side menu) -&gt; Enterprise applications -&gt; Object ID column (the value next to your registered application name).</p>
+</blockquote>
+</li>
+<li>
+<p>Provide the ESET Connect API user account <strong>Login</strong> and <strong>Password</strong> obtained in <strong>Step 1</strong>.</p>
+</li>
+<li>
+<p>Select one or more ESET products (ESET PROTECT, ESET Inspect, ESET Cloud Office Security) from which detections are retrieved.</p>
+</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

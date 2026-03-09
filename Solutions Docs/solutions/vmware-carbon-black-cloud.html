@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VMware Carbon Black Cloud &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>VMware Carbon Black Cloud</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="VMware Carbon Black Cloud Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com/">https://support.microsoft.com/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.6</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-06-01</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Carbon%20Black%20Cloud">VMware Carbon Black Cloud</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.broadcom.com/products/carbon-black/threat-prevention/carbon-black-cloud">VMware Carbon Black Cloud</a> solution for Microsoft Sentinel allows ingesting Carbon Black <a href="https://developer.carbonblack.com/reference/carbon-black-cloud/cb-defense/latest/rest-api/#audit-log-events">Audit</a>, <a href="https://developer.carbonblack.com/reference/carbon-black-cloud/cb-defense/latest/rest-api/#notifications">Notification</a> and <a href="https://developer.carbonblack.com/reference/carbon-black-cloud/platform/deprecated/data-forwarder-config-api/">Event</a> logs into Microsoft Sentinel.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>a. <a href="https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api">Azure Monitor HTTP Data Collector API</a></p>
+<p>b. <a href="https://azure.microsoft.com/services/functions/#overview">Azure Functions</a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/vmwarecarbonblack.html">VMware Carbon Black Cloud</a> 🔶</li>
+<li><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a></li>
+</ul>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>10 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/asimauthenticationeventlogs.html"><code>ASimAuthenticationEventLogs</code></a></td>
+<td><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/asimfileeventlogs.html"><code>ASimFileEventLogs</code></a></td>
+<td><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/asimnetworksessionlogs.html"><code>ASimNetworkSessionLogs</code></a></td>
+<td><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/asimprocesseventlogs.html"><code>ASimProcessEventLogs</code></a></td>
+<td><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/asimregistryeventlogs.html"><code>ASimRegistryEventLogs</code></a></td>
+<td><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/carbonblackauditlogs-cl.html"><code>CarbonBlackAuditLogs_CL</code></a> 🔶</td>
+<td><a href="../connectors/vmwarecarbonblack.html">VMware Carbon Black Cloud</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/carbonblackevents-cl.html"><code>CarbonBlackEvents_CL</code></a> 🔶</td>
+<td><a href="../connectors/vmwarecarbonblack.html">VMware Carbon Black Cloud</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/carbonblacknotifications-cl.html"><code>CarbonBlackNotifications_CL</code></a> 🔶</td>
+<td><a href="../connectors/vmwarecarbonblack.html">VMware Carbon Black Cloud</a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/carbonblack-alerts-cl.html"><code>CarbonBlack_Alerts_CL</code></a></td>
+<td><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/carbonblack-watchlist-cl.html"><code>CarbonBlack_Watchlist_CL</code></a></td>
+<td><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>6 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/vmware-carbon-black-cloud-critical-threat-detected-2ca4e7fc-c61a-49e5-9736-5da8035c47e0-a9660dac.html">Critical Threat Detected</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/carbonblacknotifications-cl.html"><code>CarbonBlackNotifications_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vmware-carbon-black-cloud-known-malware-detected-9f86885f-f31f-4e66-a39d-352771ee789e-b24b2c6a.html">Known Malware Detected</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/carbonblackevents-cl.html"><code>CarbonBlackEvents_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/vmware-carbon-black-cloud-vmwarecarbonblack-d982f4a4.html">VMwareCarbonBlack</a></td>
+<td style="text-align: left;"><a href="../tables/carbonblackevents-cl.html"><code>CarbonBlackEvents_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/vmware-carbon-black-cloud-endpoint-enrichment-carbon-black-ec9cdcca.html">Endpoint enrichment - Carbon Black</a></td>
+<td style="text-align: left;">This playbook will collect device information from Carbon Black and post a report on the incident.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vmware-carbon-black-cloud-endpoint-take-action-from-teams-carbon-black-e05c582f.html">Endpoint take action from Teams - Carbon Black</a></td>
+<td style="text-align: left;">This playbook sends an adaptive card to the SOC Teams channel, lets the analyst decide on action: Qu...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vmware-carbon-black-cloud-isolate-endpoint-carbon-black-f4c26c76.html">Isolate endpoint - Carbon Black</a></td>
+<td style="text-align: left;">This playbook will quarantine the host in Carbon Black.</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.6</td>
+<td>28-01-2026</td>
+<td>Updated all VMware Carbon Black Cloud product page URLs to now point to the new  <strong>Broadcom URL</strong></td>
+</tr>
+<tr>
+<td>3.0.5</td>
+<td>22-01-2025</td>
+<td>Removed Custom Entity mappings from <strong>Analytic rules</strong></td>
+</tr>
+<tr>
+<td>3.0.4</td>
+<td>19-11-2024</td>
+<td>Modified TransformKQL queries of CCP <strong>Data Connector</strong></td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>28-10-2024</td>
+<td>Added Sample Queries to the CCP <strong>Data Connector</strong> template</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>15-10-2024</td>
+<td>Added new CCP <strong>Data Connector</strong> to the Solution</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>17-04-2024</td>
+<td>Added Azure Deploy button for government portal deployments in <strong>Data connectors</strong></td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>19-02-2024</td>
+<td>Alterts API integration done in Carbon Black <strong>Function App</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AOIDatabaseQuery &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>AOIDatabaseQuery</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for AOIDatabaseQuery table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Audit, Azure Resources</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aoidatabasequery">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (43 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aoidatabasequery">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">ApplicationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the application that invoked the query.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CacheDiskHits</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Disk cache hits.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CacheDiskMisses</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Disk cache misses.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CacheMemoryHits</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Memory cache hits.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CacheMemoryMisses</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Memory cache misses.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CacheShardsBypassBytes</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Shards cache bypass bytes.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CacheShardsColdHits</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Shards cold cache hits.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CacheShardsColdMisses</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Shards cold cache misses.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CacheShardsHotHits</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Shards hot cache hits.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CacheShardsHotMisses</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Shards hot cache misses.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ComponentFault</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The entity that caused the query to fail. For example, if the query result is too large, the ComponentFault will be 'Client'. If an internal error occured, it will be 'Server'.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The client request ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DatabaseName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the database that the command ran on.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DurationMs</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Command duration in milliseconds.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FailureReason</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The failure reason.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LastUpdatedOn</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Time (UTC) at which this command ended.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Location</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The region where this query was executed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MaxDataScannedTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Maximum data scan time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MemoryPeak</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Memory peak.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MinDataScannedTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Minimum data scan time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of this operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Principal</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The principal that invoked the query.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RootActivityId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The root activity ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ScannedExtentsCount</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Scanned extents count.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ScannedRowsCount</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Scanned rows count.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">StartedOn</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Time (UTC) at which this command started.</td>
+</tr>
+<tr>
+<td style="text-align: left;">State</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The state the command ended with.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TableCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Table count.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TablesStatistics</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Tables statistics.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">Text</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The text of the invoked query.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time (UTC) at which this event was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TotalCPU</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Total CPU duration time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TotalExtentsCount</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Total extents count.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TotalRowsCount</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Total rows count.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">User</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The user that invoked the query.</td>
+</tr>
+<tr>
+<td style="text-align: left;">WorkloadGroup</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The workload group the query was classified to.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.networkanalytics/dataproducts</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced ServiceNow Teams Integration Playbook &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Advanced ServiceNow Teams Integration Playbook</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>This playbook showcases an example of triggering an incident within a targeted Teams channel and opening up a ticket within Service Now. Additionally The playbook will also list playbooks that can be initiated from teams using an adaptive card and callbacks that will take action upon certain entities identified in the incident.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/teams.html">Teams</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams/Playbooks/Advanced-ServiceNow-Teams-Integration/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams/Playbooks/Advanced-ServiceNow-Teams-Integration/readme.md">Advanced-ServiceNow-Teams-Integration/readme.md</a></em></p>
+</blockquote>
+<h1>Advanced - ServiceNow &amp; Teams Integration</h1>
+<p><strong>Author:</strong> Jing Nghik</p>
+<p><img alt="Alt Text" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams/Playbooks/Advanced-ServiceNow-Teams-Integration/Media/animated.gif" /></p>
+<p>This arm template will deploy multiple logic app playbooks and api connectors. 
+- <strong>(Main playbook)</strong> \<playbookName>-workflow-incident
+- <strong>(playbook function)</strong> - \<playbookName>-function-getListOfTaggedPlaybooks
+This playbooks purpose is to locate any playbooks that have been tagged with playbook to populate the Investigation Response list dynamically.
+- <strong>(Check IP - Example playbook)</strong> - \<playbookName>-checkIPOnVirusTotal - Simple playbook to check IP on VirusTotal. This playbook is an example that will be available in Microsoft Sentinel and the main playbook.
+- All the API connectors are reused across the same playbook to prevent duplicate API connectors created. </p>
+<h2>Updates</h2>
+<ul>
+<li>Migrated playbook to support incidents instead of alerts</li>
+<li>fixed some JSON parsing problems with adaptive cards by adding an compose action to render the card.</li>
+</ul>
+<p>Video Walkthrough
+<a href="https://www.youtube.com/watch?v=RgspwmcwjxQ"><img alt="IMAGE ALT TEXT HERE" src="https://img.youtube.com/vi/RgspwmcwjxQ/0.jpg" /></a></p>
+<h2>Requirements</h2>
+<p>In order to fully utilize this playbook. There are a number of pre-configuration steps required before deploying the Logic App.</p>
+<p><strong>You will need the following:</strong>
+- ServiceNow instance URL, Username, and password
+You can create a dev environment to test with for free at https://developer.servicenow.com/dev.do
+- access/authorization to enable api connectors for Azure resource manager, teams, and Microsoft Sentinel.
+- Teams Group ID, Alert Channel ID, Investigation Response Channel ID 
+The group ID and Channel ID can be obtained by going to Teams and getting the link which has the values you need for the parameters. (Will need to URL decode it if there are special characters). <a href="https://www.urldecoder.org/">URL Decoder Link</a>
+<img alt="Alt Text" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams/Playbooks/Advanced-ServiceNow-Teams-Integration/Media/teams.png" /></p>
+<ul>
+<li>Investigation Channel ID can also use the same ID as alert channel if desired. </li>
+</ul>
+<h2>Workflow</h2>
+<ol>
+<li>Based on the rules, Microsoft Sentinel triggers an incident or alert. </li>
+<li>This runs a linked playbook that first will check to determine if an existing serviceNow ticket already exists with the same incident ID (to prevent duplicate tickets)</li>
+<li>The ticket is opened in serviceNow and a Teams message is created in the Alerts channel with alert/incident details.</li>
+<li>A corresponding investigation response message is sent with a list of available playbooks that can be run from teams. </li>
+<li>Based on selected playbooks submitted, the playbooks are ran ad-hoc by routing the alert body to the selected playbook.</li>
+<li>If the executed playbook returns a response, that message is updated in the related serviceNow ticket, commented in the Microsoft Sentinel Incident, and also added added as a reply to the Initial Teams Alert message.</li>
+</ol>
+<h2>Setup Steps</h2>
+<ol>
+<li>Click Deploy to Azure and fill in parameters</li>
+<li>Populate the Teams Group and Channel IDs to ensure it messages are generated in the right channel.</li>
+<li>Search for API connectors and find the deployment prefix and fix any connectors by authorizing the connection.
+<img alt="Alt Text" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams/Playbooks/Advanced-ServiceNow-Teams-Integration/Media/apiconnectors.png" /></li>
+<li>Manually trigger an Microsoft Sentinel alert to test. </li>
+</ol>
+<h2>Deploy the ARM template</h2>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FTeams%2FPlaybooks%2FAdvanced-ServiceNow-Teams-Integration%2Fazuredeploy.json" target="_blank">
+    <img src="https://aka.ms/deploytoazurebutton"/>
+</a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Teams/Playbooks/Advanced-ServiceNow-Teams-Integration/azuredeploy.json" target="_blank"><img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png"/></a></p>
+<h2>Thanks!</h2>
+<p><strong>Thank you to the following people for contributing to my efforts in building this playbook!</strong>
+- Twitter <a href="https://twitter.com/thijslecomte">@thijslecomte</a> - For showing me how to make my first template!
+- <strong>Jan Ignacio, Joey Cruz, Sreedhar Ande, Nicholas Dicola, Rod Trent, Nathan Swift</strong> for pushing me to contribute to this repo, testing, and feedback.</p>
+<h2>Todo list</h2>
+<ul>
+<li>Have the playbook support buth alerts and incidents. (Only works for alerts)</li>
+<li>A way to support other messaging services and ticketing platforms</li>
+<li>selectable card templates</li>
+<li>Way to not create a new teams thread if one already exists. </li>
+<li>support pager duty and teams on-call.</li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/teams.html">Back to Teams</a></p>
+</div>
+</body>
+</html>

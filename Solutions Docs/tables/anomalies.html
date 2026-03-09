@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anomalies &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Anomalies</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for Anomalies table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Internal</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/anomalies">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Logs Ingestion API</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (38 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/anomalies">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActivityInsights</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Insights about the activites corresponding to the generated anomaly as JSON.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AnomalyDetails</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">JSON object containing general information about the rule and algorithm that generated the anomaly as well as explanations for the anomaly.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AnomalyReasons</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">The detailed explanation of the generated anomaly as JSON.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AnomalyTemplateId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the Anomaly template that generated this anomaly.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AnomalyTemplateName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the Anomaly template that generated this anomaly.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AnomalyTemplateVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The version of the Anomaly template that generated this anomaly.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Description</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The description of the anomaly.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationDevice</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The destination device for which the anomaly was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationIpAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The destination ip address for which the anomaly was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestinationLocation</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Info about the destination location for which the anomaly was generated as JSON.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceInsights</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Insights about the devices corresponding to the generated anomaly as JSON.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EndTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time (UTC) when the anomaly ended.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Entities</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">JSON object containing all entities involved in the generated anomaly.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ExtendedLinks</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of links pointing to the data that generated the anomaly.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ExtendedProperties</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">JSON object with additional data on the anomaly as key-value pairs.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Id</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the generated anomaly.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RuleConfigVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The configuration version of the Anomaly analytics rule that generated this anomaly.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RuleId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the Anomaly analytics rule that generated this anomaly.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RuleName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the Anomaly analytics rule that generated this anomaly.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RuleStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The status (Flighting/Production) of the Anomaly analytics rule that generated this anomaly.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Score</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The score of the anomaly.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceDevice</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source device for which the anomaly was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceIpAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source ip address for which the anomaly was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceLocation</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Info about the source location for which the anomaly was generated as JSON.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">StartTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time (UTC) when the anomaly started.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tactics</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">List of MITRE ATT&amp;CK tactics (strings) corresponding to the anomaly.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Techniques</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">List MITRE ATT&amp;CK techniques (strings) corresponding to the anomaly.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) of when the anomaly was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserInsights</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Insights about the users corresponding to the generated anomaly as JSON.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The username for which the anomaly was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserPrincipalName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The UPN of the user for which the anomaly was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VendorName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the vendor that generated this anomaly.</td>
+</tr>
+<tr>
+<td style="text-align: left;">WorkspaceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the Sentinel workspace.</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (11)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/dns-essentials.html">DNS Essentials</a></li>
+<li><a href="../solutions/dpdp-compliance.html">DPDP Compliance</a></li>
+<li><a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a></li>
+<li><a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a></li>
+<li><a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a></li>
+<li><a href="../solutions/network-session-essentials.html">Network Session Essentials</a></li>
+<li><a href="../solutions/pci-dss-compliance.html">PCI DSS Compliance</a></li>
+<li><a href="../solutions/soc-handbook.html">SOC Handbook</a></li>
+<li><a href="../solutions/securitythreatessentialsolution.html">SecurityThreatEssentialSolution</a></li>
+<li><a href="../solutions/ueba-essentials.html">UEBA Essentials</a></li>
+<li><a href="../solutions/web-session-essentials.html">Web Session Essentials</a></li>
+</ul>
+<hr />
+<h2>Content Items Using This Table (25)</h2>
+<h3>Analytic Rules (11)</h3>
+<p><strong>In solution <a href="../solutions/dns-essentials.html">DNS Essentials</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/dns-essentials-detect-dns-queries-reporting-multiple-errors-from-different-clients-anomaly-based-asim-dn-cf687598-5a2c-46f8-81c8-06b15ed489b1-e7ae2b7d.html">Detect DNS queries reporting multiple errors from different clients - Anomaly Based (ASIM DNS Solution)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/dns-essentials-detect-excessive-nxdomain-dns-queries-anomaly-based-asim-dns-solution-02f23312-1a33-4390-8b80-f7cd4df4dea0-980141b9.html">Detect excessive NXDOMAIN DNS queries - Anomaly based (ASIM DNS Solution)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/dns-essentials-potential-dga-domain-generation-algorithm-detected-via-repetitive-failures-anomaly-based--01191239-274e-43c9-b154-3a042692af06-1a7b8167.html">Potential DGA(Domain Generation Algorithm) detected via Repetitive Failures - Anomaly based (ASIM DNS Solution)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-anomalous-sign-in-location-by-user-account-and-authenticating-application-7cb8f77d-c52f-4e46-b82f-3cf2e106224a-c5368fb1.html">Anomalous sign-in location by user account and authenticating application</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-brute-force-attack-against-github-account-97ad74c4-fdd9-4a3f-b6bf-5e28f4f71e06-409b9696.html">Brute Force Attack against GitHub Account</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-privileged-accounts-sign-in-failure-spikes-34c5aff9-a8c2-4601-9654-c7e46342d03b-ebff2fbe.html">Privileged Accounts - Sign in Failure Spikes</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-user-accounts-sign-in-failure-due-to-ca-spikes-3a9d5ede-2b9d-43a2-acc4-d272321ff77c-0daea6fb.html">User Accounts - Sign in Failure due to CA Spikes</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/network-session-essentials.html">Network Session Essentials</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/network-session-essentials-anomaly-found-in-network-session-traffic-asim-network-session-schema-cd6def0d-3ef0-4d55-a7e3-faa96c46ba12-0317d139.html">Anomaly found in Network Session Traffic (ASIM Network Session schema)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/network-session-essentials-detect-port-misuse-by-anomaly-based-detection-asim-network-session-schema-cbf07406-fa2a-48b0-82b8-efad58db14ec-0bc6af2a.html">Detect port misuse by anomaly based detection (ASIM Network Session schema)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/securitythreatessentialsolution.html">SecurityThreatEssentialSolution</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/securitythreatessentialsolution-threat-essentials-time-series-anomaly-for-data-size-transferred-to-publi-b49a1093-cbf6-4973-89ac-2eef98f533c6-bc9cced1.html">Threat Essentials - Time series anomaly for data size transferred to public internet</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/web-session-essentials.html">Web Session Essentials</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/web-session-essentials-detect-unauthorized-data-transfers-using-timeseries-anomaly-asim-web-session-5965d3e7-8ed0-477c-9b42-e75d9237fab0-8fc606c8.html">Detect unauthorized data transfers using timeseries anomaly (ASIM Web Session)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries (8)</h3>
+<p><strong>In solution <a href="../solutions/dns-essentials.html">DNS Essentials</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/dns-essentials-[anomaly]-anomalous-increase-in-dns-activity-by-clients-asim-dns-solution-50f0cdfb-8b01-4eca-823d-2bbe6b8a5b95-eb2b2313.html">[Anomaly] Anomalous Increase in DNS activity by clients (ASIM DNS Solution)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/network-session-essentials.html">Network Session Essentials</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/network-session-essentials-detect-port-misuse-by-anomaly-asim-network-session-schema-906c20c6-b62c-4af7-be91-d7300e3bded2-d8a6fcbc.html">Detect port misuse by anomaly (ASIM Network Session schema)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/ueba-essentials.html">UEBA Essentials</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-high-score-activity-triage-a7b8c9d0-e1f2-3456-7890-abcdef123456-fb3e9dc1.html">Anomalous High-Score Activity Triage</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomaly-detection-trend-analysis-d0e1f2a3-b4c5-6789-0123-def456789012-8fe6ea06.html">Anomaly Detection Trend Analysis</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomaly-template-distribution-by-tactics-and-techniques-b8c9d0e1-f2a3-4567-8901-bcdef2345678-bf92b782.html">Anomaly Template Distribution by Tactics and Techniques</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-top-anomalous-source-ip-triage-e1f2a3b4-c5d6-7890-1234-abcdef567890-63722402.html">Top Anomalous Source IP Triage</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-ueba-multi-source-anomalous-activity-overview-b2c3d4e5-f6g7-8901-bcde-fg2345678901-43dc4d3b.html">UEBA Multi-Source Anomalous Activity Overview</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-user-centric-anomaly-investigation-c9d0e1f2-a3b4-5678-9012-cdef34567890-0fcdf7d4.html">User-Centric Anomaly Investigation</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks (6)</h3>
+<p><strong>In solution <a href="../solutions/dpdp-compliance.html">DPDP Compliance</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/dpdp-compliance-dpdpcompliance-18571e87.html">DPDPCompliance</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/gdpr-compliance-&amp;-data-security-gdprcomplianceanddatasecurity-a0958a9a.html">GDPRComplianceAndDataSecurity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.html">InsiderRiskManagement</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/pci-dss-compliance.html">PCI DSS Compliance</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/pci-dss-compliance-pcidsscompliance-b201eb3d.html">PCIDSSCompliance</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/soc-handbook.html">SOC Handbook</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-handbook-anomaliesvisualization-8cb75567.html">AnomaliesVisualization</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-handbook-anomalydata-44d72d0f.html">AnomalyData</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

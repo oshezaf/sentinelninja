@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miro Audit Logs Enterprise Plan &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Miro Audit Logs (Enterprise Plan)</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Miro.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>MiroAuditLogsDataConnector</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Miro</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/miro.html">Miro</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/ccf.html">CCF</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro/Data%20Connectors/MiroAuditLogs_CCF/MiroAuditLogs_DataConnectorDefinition.json">MiroAuditLogs_DataConnectorDefinition.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Configuration</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro/Data%20Connectors/MiroAuditLogs_CCF/MiroAuditLogs_PollingConfig.json">MiroAuditLogs_PollingConfig.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Capabilities</strong></td>
+<td style="text-align: left;"><code>APIKey</code>, <code>Paging</code></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://help.miro.com/hc/en-us/articles/360017571434-Audit-logs">Miro Audit Logs</a> data connector enables you to ingest organization-wide audit events from Miro into Microsoft Sentinel. Monitor user activities, security events, content access, team changes, and administrative actions to enhance your security operations and compliance capabilities.</p>
+<p><strong>Key features:</strong></p>
+<ul>
+<li>
+<p>Track user authentication and access patterns.</p>
+</li>
+<li>
+<p>Monitor content creation, sharing, and deletion.</p>
+</li>
+<li>
+<p>Audit team and organization configuration changes.</p>
+</li>
+<li>
+<p>Detect suspicious activities and policy violations.</p>
+</li>
+<li>
+<p>Meet compliance and regulatory requirements.</p>
+</li>
+</ul>
+<p><strong>Requirements:</strong></p>
+<ul>
+<li>
+<p><strong>Miro Plan</strong>: <a href="https://miro.com/pricing/">Enterprise Plan</a>.</p>
+</li>
+<li>
+<p><strong>OAuth scope</strong>: <code>auditlogs:read</code>.</p>
+</li>
+<li>
+<p><strong>Role</strong>: Company Admin in your Miro organization.</p>
+</li>
+</ul>
+<p>💡 <strong>Not on Enterprise Plan yet?</strong> Upgrade to <a href="https://miro.com/enterprise/">Miro Enterprise</a> to unlock audit logs and gain comprehensive visibility into your team's activities in Microsoft Sentinel.</p>
+<p>For detailed instructions, refer to the <a href="https://help.miro.com/hc/en-us/articles/31325908249362">documentation</a>.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/miroauditlogs-cl.html"><code>MiroAuditLogs_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): Read and Write permissions are required.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Miro Enterprise Plan</strong>: Miro Enterprise Plan subscription is required.
+- <strong>Miro OAuth Application</strong>: Miro OAuth application with auditlogs:read scope and Company Admin role is required.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>Step 1: Verify your Miro plan</strong></p>
+<ol>
+<li>Ensure your organization has an active <a href="https://miro.com/pricing/">Miro Enterprise Plan</a>.</li>
+<li>If you need to upgrade, contact <a href="https://miro.com/contact/sales/">Miro Sales</a> or your account manager.</li>
+<li>You must be a <strong>Company Admin</strong> to set up this integration.</li>
+</ol>
+<p><strong>Step 2: Choose your setup option</strong></p>
+<p>There are two ways to set up the Miro Audit Logs connector.</p>
+<p><strong>Option 1 (recommended):</strong> Use Enterprise integrations
+- Simplest setup with automatic token generation.
+- Recommended for most users.
+- See Option 1 below.</p>
+<p><strong>Option 2 (alternative):</strong> Create custom OAuth application
+- More control over OAuth app configuration.
+- For advanced users or custom integration needs.
+- See Option 2 below.</p>
+<p><strong>Note:</strong> When using Option 1, the integration is automatically tied to the team with the largest number of users in your organization. When using Option 2, you can choose which team to install the app to. However, <strong>the team selection does not affect which logs are collected</strong>—both options provide organization-wide log access. All integration-relevant events from all teams are included in your logs.</p>
+<p><strong>Option 1: Enterprise integrations (recommended)</strong></p>
+<ol>
+<li>Open <a href="https://miro.com/app/settings/">Miro Company Settings</a>.</li>
+<li>Expand the <strong>Apps and integrations</strong> section.</li>
+<li>Click <strong>Enterprise integrations</strong>.</li>
+<li>Enable the <strong>SIEM</strong> toggle.</li>
+<li>Copy the <strong>Access Token</strong> value that appears.</li>
+<li><strong>Important:</strong> Store the token securely—it provides full access to audit logs.</li>
+<li>The token will work until you disable the toggle.</li>
+<li>Proceed to Step 3.</li>
+</ol>
+<p><strong>Option 2: Custom OAuth application (alternative)</strong></p>
+<ol>
+<li>Go to <a href="https://miro.com/app/settings/user-profile/apps">Miro App Settings</a>.</li>
+<li>Click <strong>Create new app</strong>.</li>
+<li>Select <strong>Non-expiring access token</strong> option during app creation.</li>
+<li>Enable the OAuth scope: <strong><code>auditlogs:read</code></strong>.</li>
+<li>Click <strong>Install app and get OAuth token</strong>.</li>
+<li>Authorize the app to access your organization.</li>
+<li>Copy the <strong>Access Token</strong> that is displayed.</li>
+<li><strong>Important:</strong> Store the token securely—it provides full access to audit logs.</li>
+<li>The token will work until you uninstall the app.</li>
+</ol>
+<p><strong>Step 3: Learn more</strong></p>
+<p>For detailed information about Miro audit logs:
+- <a href="https://help.miro.com/hc/en-us/articles/360017571434-Audit-logs">Miro Audit Logs documentation</a>
+- <a href="https://developers.miro.com/reference/enterprise-get-audit-logs">Miro API reference</a>
+- <a href="https://developers.miro.com/reference/authorization-flow-for-expiring-access-tokens">OAuth non-expiring tokens</a>
+- <a href="https://miro.com/app/settings/">Enterprise integrations settings</a></p>
+<p><strong>6. Connect to Miro to start collecting audit logs in Microsoft Sentinel.</strong></p>
+<p><strong>Step 4: Connect to Miro</strong></p>
+<p>Provide your Miro access token below to complete the connection.
+- <strong>Access token</strong>: (password field)
+- Click 'Connect' to establish connection</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

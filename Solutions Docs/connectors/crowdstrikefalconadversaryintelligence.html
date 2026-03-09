@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CrowdStrike Falcon Adversary Intelligence &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>CrowdStrike Falcon Adversary Intelligence</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/Logo/crowdstrike.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>CrowdStrikeFalconAdversaryIntelligence</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">CrowdStrike</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/CrowdStrikeFalconAdversaryIntelligence/CrowdStrikeFalconAdversaryIntelligence_FunctionApp.json">CrowdStrikeFalconAdversaryIntelligence_FunctionApp.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Connector definition requires workspace key (SharedKey pattern)</em></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.crowdstrike.com/">CrowdStrike</a> Falcon Indicators of Compromise connector retrieves the Indicators of Compromise from the Falcon Intel API and uploads them <a href="https://learn.microsoft.com/en-us/azure/sentinel/understand-threat-intelligence">Microsoft Sentinel Threat Intel</a>.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+</tr>
+</tbody>
+</table>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
+- <strong>CrowdStrike API Client ID and Client Secret</strong>: <strong>CROWDSTRIKE_CLIENT_ID</strong>, <strong>CROWDSTRIKE_CLIENT_SECRET</strong>, <strong>CROWDSTRIKE_BASE_URL</strong>. CrowdStrike credentials must have Indicators (Falcon Intelligence) read scope.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>STEP 1 - <a href="https://www.crowdstrike.com/blog/tech-center/get-access-falcon-apis/">Generate CrowdStrike API credentials</a>.</strong></p>
+<p>Make sure 'Indicators (Falcon Intelligence)' scope has 'read' selected</p>
+<p><strong>STEP 2 - <a href="https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app">Register an Entra App</a> with client secret.</strong></p>
+<p>Provide the Entra App principal with 'Microsoft Sentinel Contributor' role assignment on the respective log analytics workspace. <a href="https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal">How to assign roles on Azure</a>.</p>
+<p><strong>STEP 3 - Choose ONE from the following two deployment options to deploy the connector and the associated Azure Function</strong></p>
+<blockquote>
+<p><strong>IMPORTANT:</strong> Before deploying the CrowdStrike Falcon Indicator of Compromise connector, have the Workspace ID (can be copied from the following).
+- <strong>Workspace ID</strong>: <code>WorkspaceId</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+<p><strong>6. Option 1 - Azure Resource Manager (ARM) Template</strong></p>
+<p>Use this method for automated deployment of the CrowdStrike Falcon Adversary Intelligence connector connector using an ARM Tempate.</p>
+<ol>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below. </p>
+<p><a href="https://aka.ms/sentinel-CrowdStrikeFalconAdversaryIntelligence-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+2. Provide the following parameters: CrowdStrikeClientId, CrowdStrikeClientSecret, CrowdStrikeBaseUrl, WorkspaceId, TenantId, Indicators, AadClientId, AadClientSecret, LookBackDays</p>
+</li>
+</ol>
+<p><strong>7. Option 2 - Manual Deployment of Azure Functions</strong></p>
+<p>Use the following step-by-step instructions to deploy the CrowdStrike Falcon Adversary Intelligence connector manually with Azure Functions (Deployment via Visual Studio Code).</p>
+<p><strong>1. Deploy a Function App</strong></p>
+<blockquote>
+<p><strong>NOTE:</strong> You will need to <a href="https://docs.microsoft.com/azure/azure-functions/functions-create-first-function-python#prerequisites">prepare VS code</a> for Azure function development.</p>
+</blockquote>
+<ol>
+<li>Download the <a href="https://aka.ms/sentinel-CrowdStrikeFalconAdversaryIntelligence-Functionapp">Azure Function App</a> file. Extract archive to your local development computer.</li>
+<li>Start VS Code. Choose File in the main menu and select Open Folder.</li>
+<li>Select the top level folder from extracted files.</li>
+<li>Choose the Azure icon in the Activity bar, then in the <strong>Azure: Functions</strong> area, choose the <strong>Deploy to function app</strong> button.
+If you aren't already signed in, choose the Azure icon in the Activity bar, then in the <strong>Azure: Functions</strong> area, choose <strong>Sign in to Azure</strong>
+If you're already signed in, go to the next step.</li>
+<li>
+<p>Provide the following information at the prompts:</p>
+<p>a. <strong>Select folder:</strong> Choose a folder from your workspace or browse to one that contains your function app.</p>
+<p>b. <strong>Select Subscription:</strong> Choose the subscription to use.</p>
+<p>c. Select <strong>Create new Function App in Azure</strong> (Don't choose the Advanced option)</p>
+<p>d. <strong>Enter a globally unique name for the function app:</strong> Type a name that is valid in a URL path. The name you type is validated to make sure that it's unique in Azure Functions. (e.g. CrowdStrikeFalconIOCXXXXX).</p>
+<p>e. <strong>Select a runtime:</strong> Choose Python 3.12.</p>
+<p>f. Select a location for new resources. For better performance and lower costs choose the same <a href="https://azure.microsoft.com/regions/">region</a> where Microsoft Sentinel is located.</p>
+</li>
+<li>
+<p>Deployment will begin. A notification is displayed after your function app is created and the deployment package is applied.</p>
+</li>
+<li>Go to Azure Portal for the Function App configuration.</li>
+</ol>
+<p><strong>2. Configure the Function App</strong></p>
+<ol>
+<li>In the Function App, select the Function App Name and select <strong>Configuration</strong>.</li>
+<li>In the <strong>Application settings</strong> tab, select ** New application setting**.</li>
+<li>Add each of the following application settings individually, with their respective string values (case-sensitive): 
+        CROWDSTRIKE_CLIENT_ID
+        CROWDSTRIKE_CLIENT_SECRET
+        CROWDSTRIKE_BASE_URL
+        TENANT_ID
+        INDICATORS
+        WorkspaceKey
+        AAD_CLIENT_ID
+        AAD_CLIENT_SECRET 
+        LOOK_BACK_DAYS 
+        WORKSPACE_ID  </li>
+<li>Once all application settings have been entered, click <strong>Save</strong>.</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

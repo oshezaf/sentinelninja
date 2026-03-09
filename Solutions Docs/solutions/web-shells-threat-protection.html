@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>&lt;img src=&quot;../images/asim-badge.png&quot; alt=&quot;ASIM&quot; height=&quot;32&quot;&gt; Web Shells Threat Protection &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1><img src="../images/asim-badge.png" alt="ASIM" height="32"> Web Shells Threat Protection</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Web Shells Threat Protection Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com/">https://support.microsoft.com/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-05-22</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Web%20Shells%20Threat%20Protection">Web Shells Threat Protection</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pre-requisites</strong></td>
+<td style="text-align: left;"><a href="microsoft-defender-xdr.html">Microsoft Defender XDR</a>, <a href="windows-security-events.html">Windows Security Events</a>, <a href="azure-web-application-firewall-waf.html">Azure Web Application Firewall (WAF)</a></td>
+</tr>
+</tbody>
+</table>
+<p>The Web Shells Threat Protection solution contains security content that helps proactive and reactive detection of Web Shells used by attackers. Web Shells are malicious scripts that attackers use to compromise internet facing servers. These are commonly used as a backdoor into the targeted web applications and servers. Microsoft Security Research has highlighted the threat, usage and detection of Web Shells in an enterprise environment in the following blogs: </p>
+<ul>
+<li>
+<p><a href="https://www.microsoft.com/en-us/security/blog/2021/02/11/web-shell-attacks-continue-to-rise/">Web shell attacks continue to rise</a> </p>
+</li>
+<li>
+<p><a href="https://www.microsoft.com/en-us/security/blog/2021/03/25/analyzing-attacks-taking-advantage-of-the-exchange-server-vulnerabilities/">Analyzing attacks taking advantage of the Exchange Server vulnerabilities</a></p>
+</li>
+</ul>
+<p>For details on the data sources and ASIM parsers supported by this solution, see the <a href="#asim-pre-requisites">ASIM Pre-requisites</a> section below.</p>
+<p><strong>Keywords:</strong> WebDAV, SysAid, Mercury, CVE-2021-26855, CVE-2021-26857, CVE-2021-26858, CVE-2021-27065, SUPERNOVA, SpringShell, CVE-2022-22965</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#pre-requisites">Pre-requisites</a></li>
+<li><a href="#asim-pre-requisites">ASIM Pre-requisites</a></li>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Pre-requisites</h2>
+<p>This solution depends on <strong>3 other solution(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="azure-web-application-firewall-waf.html">Azure Web Application Firewall (WAF)</a></td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="microsoft-defender-xdr.html">Microsoft Defender XDR</a></td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="windows-security-events.html">Windows Security Events</a></td>
+<td style="text-align: left;">Also provides ASIM schemas: FileEvent</td>
+</tr>
+</tbody>
+</table>
+<h2><a id="asim-pre-requisites"></a><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Pre-requisites</h2>
+<p>This solution uses the <a href="../asim/imfileevent.html"><code>imFileEvent</code></a> <a href="https://learn.microsoft.com/azure/sentinel/normalization">ASIM (Advanced Security Information Model)</a> parser to provide normalized, source-agnostic data access, expanding detection coverage without modifying queries.</p>
+<h3>Supported Products</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Dependency Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#google-workspace">Google Workspace</a></td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-365-defender-for-endpoint">Microsoft 365 Defender for EndPoint</a></td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-azure-blob-storage">Microsoft Azure Blob Storage</a></td>
+<td style="text-align: left;"><a href="azure-storage.html">Azure Storage</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-azure-file-storage">Microsoft Azure File Storage</a></td>
+<td style="text-align: left;"><a href="azure-storage.html">Azure Storage</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-azure-queue-storage">Microsoft Azure Queue Storage</a></td>
+<td style="text-align: left;"><a href="azure-storage.html">Azure Storage</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-azure-table-storage">Microsoft Azure Table Storage</a></td>
+<td style="text-align: left;"><a href="azure-storage.html">Azure Storage</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-sharepoint">Microsoft SharePoint</a></td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-sysmon-for-linux">Microsoft Sysmon for Linux</a></td>
+<td style="text-align: left;"><a href="syslog.html">Syslog</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-windows-events">Microsoft Windows Events</a></td>
+<td style="text-align: left;"><a href="windows-forwarded-events.html">Windows Forwarded Events</a><br><a href="windows-security-events.html">Windows Security Events</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#native">Native</a></td>
+<td style="text-align: left;"><a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a><br><a href="vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#sentinelone">SentinelOne</a></td>
+<td style="text-align: left;"><a href="sentinelone.html">SentinelOne</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#vmware-carbon-black-cloud">VMware Carbon Black Cloud</a></td>
+<td style="text-align: left;"><a href="vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#windows-sysmon">Windows Sysmon</a></td>
+<td style="text-align: left;"><a href="windows-forwarded-events.html">Windows Forwarded Events</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Data Connectors</h2>
+<p><strong>This solution does not include its own data connectors</strong> but uses connectors from dependency solutions:</p>
+<ul>
+<li><a href="../connectors/azurestorageaccount.html">Azure Storage Account</a> <em>(dependency on <a href="azure-storage.html">Azure Storage</a>)</em></li>
+<li><a href="../connectors/crowdstrikeapiconnector.html">CrowdStrike API Data Connector (via Codeless Connector Framework)</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
+<li><a href="../connectors/crowdstrikefalconadversaryintelligence.html">CrowdStrike Falcon Adversary Intelligence </a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
+<li><a href="../connectors/crowdstrikefalconendpointprotection.html">[Deprecated] CrowdStrike Falcon Endpoint Protection via Legacy Agent</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
+<li><a href="../connectors/crowdstrikefalconendpointprotectionama.html">[Deprecated] CrowdStrike Falcon Endpoint Protection via AMA</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
+<li><a href="../connectors/crowdstrikefalcons3ccpdefinition.html">CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
+<li><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
+<li><a href="../connectors/microsoftthreatprotection.html">Microsoft Defender XDR</a> <em>(dependency on <a href="microsoft-defender-xdr.html">Microsoft Defender XDR</a>)</em></li>
+<li><a href="../connectors/securityevents.html">Security Events via Legacy Agent</a> <em>(dependency on <a href="windows-security-events.html">Windows Security Events</a>)</em></li>
+<li><a href="../connectors/sentinelone.html">SentinelOne</a> <em>(dependency on <a href="sentinelone.html">SentinelOne</a>)</em></li>
+<li><a href="../connectors/sentineloneccp.html">SentinelOne</a> <em>(dependency on <a href="sentinelone.html">SentinelOne</a>)</em></li>
+<li><a href="../connectors/syslog.html">Syslog via Legacy Agent</a> <em>(dependency on <a href="syslog.html">Syslog</a>)</em></li>
+<li><a href="../connectors/syslogama.html">Syslog via AMA</a> <em>(dependency on <a href="syslog.html">Syslog</a>)</em></li>
+<li><a href="../connectors/vmwarecarbonblack.html">VMware Carbon Black Cloud</a> <em>(dependency on <a href="vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a>)</em></li>
+<li><a href="../connectors/waf.html">Azure Web Application Firewall (WAF)</a> <em>(dependency on <a href="azure-web-application-firewall-waf.html">Azure Web Application Firewall (WAF)</a>)</em></li>
+<li><a href="../connectors/windowsforwardedevents.html">Windows Forwarded Events</a> <em>(dependency on <a href="windows-forwarded-events.html">Windows Forwarded Events</a>)</em></li>
+<li><a href="../connectors/windowssecurityevents.html">Windows Security Events via AMA</a> <em>(dependency on <a href="windows-security-events.html">Windows Security Events</a>)</em></li>
+<li><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a> <em>(dependency on <a href="vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a>)</em></li>
+</ul>
+<h2>Tables Used</h2>
+<p>This solution queries <strong>4 table(s)</strong> from its content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a></td>
+<td>Hunting</td>
+</tr>
+<tr>
+<td><a href="../tables/devicefileevents.html"><code>DeviceFileEvents</code></a></td>
+<td>Analytics, Hunting</td>
+</tr>
+<tr>
+<td><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/w3ciislog.html"><code>W3CIISLog</code></a></td>
+<td>Analytics, Hunting</td>
+</tr>
+</tbody>
+</table>
+<h3>Internal Tables</h3>
+<p>The following <strong>1 table(s)</strong> are used internally by this solution's content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
+<td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>9 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">3</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/web-shells-threat-protection-identify-sysaid-server-web-shell-creation-50eb4cbd-188f-44f4-b964-bab84dcdec10-5faaa2d1.html">Identify SysAid Server web shell creation</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imfileevent.html"><code>imFileEvent</code></a><br><a href="../tables/devicefileevents.html"><code>DeviceFileEvents</code></a><br><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/web-shells-threat-protection-malicious-web-application-requests-linked-with-microsoft-defender-for-endpo-fbfbf530-506b-49a4-81ad-4030885a195c-8a9494a2.html">Malicious web application requests linked with Microsoft Defender for Endpoint (formerly Microsoft Defender ATP) alerts</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/w3ciislog.html"><code>W3CIISLog</code></a><br><em>Internal use:</em><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/web-shells-threat-protection-supernova-webshell-2acc91c3-17c2-4388-938e-4eac2d5894e8-79d870d5.html">SUPERNOVA webshell</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Persistence, CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/w3ciislog.html"><code>W3CIISLog</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/web-shells-threat-protection-exchange-iis-worker-dropping-webshells-42e7df5b-80f6-49a5-946a-08026ec24807-918c2a7e.html">Exchange IIS Worker Dropping Webshells</a></td>
+<td style="text-align: left;">Execution, Persistence</td>
+<td style="text-align: left;"><a href="../tables/devicefileevents.html"><code>DeviceFileEvents</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/web-shells-threat-protection-possible-webshell-usage-attempt-related-to-springshell-cve-2022-22965-6911d1df-4204-43b2-a64c-3cb102551ddd-8605b97e.html">Possible Webshell usage attempt related to SpringShell(CVE-2022-22965)</a></td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/web-shells-threat-protection-possible-webshell-drop-8f2a256f-c9f1-4f0a-941a-a5a131d4bf3b-5ddc946f.html">Possible webshell drop</a></td>
+<td style="text-align: left;">Initial access, Execution, Persistence</td>
+<td style="text-align: left;"><a href="../tables/devicefileevents.html"><code>DeviceFileEvents</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/web-shells-threat-protection-umworkerprocess-creating-webshell-60d15bd4-1fad-4a70-bc3b-094dc1c5e554-5e3339db.html">UMWorkerProcess Creating Webshell</a></td>
+<td style="text-align: left;">Execution, Persistence, Exploit</td>
+<td style="text-align: left;"><a href="../tables/devicefileevents.html"><code>DeviceFileEvents</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/web-shells-threat-protection-web-shell-activity-e0c947c3-fe83-46ff-bbda-a43224a785fd-524bd9eb.html">Web Shell Activity</a></td>
+<td style="text-align: left;">Persistence, InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/w3ciislog.html"><code>W3CIISLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/web-shells-threat-protection-webshell-detection-cc087e7c-4db0-4bf9-9e48-287a9c9c3fbc-b4d60786.html">Webshell Detection</a></td>
+<td style="text-align: left;">Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/w3ciislog.html"><code>W3CIISLog</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.4</td>
+<td>10-06-2024</td>
+<td>Added missing AMA <strong>Data Connector</strong> reference in <strong>Analytic rules</strong></td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>12-04-2024</td>
+<td>Updated Entity Mapping and Query of <strong>Analytic Rule</strong> Supernovawebshell.yaml and MaliciousAlertLinkedWebRequests.yaml</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>22-02-2024</td>
+<td>Tagged for dependent Solutions for deployment</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>25-10-2023</td>
+<td>Changes for rebranding from Microsoft 365 Defender to Microsoft Defender XDR</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>12-07-2023</td>
+<td>Updated <strong>Hunting Queries</strong> descriptions to meet the 255 character limit.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

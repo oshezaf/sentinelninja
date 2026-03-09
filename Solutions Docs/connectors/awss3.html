@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon Web Services S3 &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Amazon Web Services S3</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Aws.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>AwsS3</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Amazon</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/amazon-web-services.html">Amazon Web Services</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/native.html">Native</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services/Data%20Connectors/template_AwsS3.json">template_AwsS3.json</a></td>
+</tr>
+</tbody>
+</table>
+<p>This connector allows you to ingest AWS service logs, collected in AWS S3 buckets, to Microsoft Sentinel. The currently supported data types are: </p>
+<ul>
+<li>
+<p>AWS CloudTrail</p>
+</li>
+<li>
+<p>VPC Flow Logs</p>
+</li>
+<li>
+<p>AWS GuardDuty</p>
+</li>
+<li>
+<p>AWSCloudWatch</p>
+</li>
+</ul>
+<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?linkid=2218883&amp;wt.mc_id=sentinel_dataconnectordocs_content_cnl_csasci">Microsoft Sentinel documentation</a>.</p>
+<h2>Additional Information</h2>
+<ul>
+<li>📖 <strong>Setup Guide:</strong> <a href="https://learn.microsoft.com/azure/sentinel/connect-aws-configure-environment">Connect Microsoft Sentinel to AWS</a> - Configure your AWS environment for Microsoft Sentinel integration</li>
+<li>📖 <strong>Related Documentation:</strong> <a href="https://learn.microsoft.com/azure/sentinel/connect-aws">AWS service logs</a> - Ingest AWS service logs into Microsoft Sentinel</li>
+<li>📖 <strong>Troubleshooting:</strong> <a href="https://learn.microsoft.com/azure/sentinel/aws-s3-troubleshoot">Troubleshoot AWS S3 connector issues</a> - Resolve common AWS S3 connector problems</li>
+</ul>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/awscloudtrail.html"><code>AWSCloudTrail</code></a></td>
+<td style="text-align: left;"><code>EventName == "CreateUser"</code></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/awscloudwatch.html"><code>AWSCloudWatch</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/awsguardduty.html"><code>AWSGuardDuty</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/awsvpcflow.html"><code>AWSVPCFlow</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): write permission.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Environment</strong>: you must have the following AWS resources defined and configured: S3, Simple Queue Service (SQS), IAM roles and permissions policies, and the AWS services whose logs you want to collect.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Set up your AWS environment</strong></p>
+<p>There are two options for setting up your AWS environment to send logs from an S3 bucket to your Log Analytics Workspace:
+<strong>Setup with PowerShell script (recommended)</strong>
+  Download and extract the files from the following link: <a href="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/DataConnectors/AWS-S3/ConfigAwsS3DataConnectorScripts.zip">AWS S3 Setup Script</a>.</p>
+<blockquote>
+<ol>
+<li>
+<p>Make sure that you have PowerShell on your machine: <a href="https://docs.microsoft.com/powershell/scripting/install/installing-powershell?view=powershell-7.2">Installation instructions for PowerShell</a>.</p>
+</li>
+<li>
+<p>Make sure that you have the AWS CLI on your machine: <a href="https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html">Installation instructions for the AWS CLI</a>.</p>
+</li>
+</ol>
+</blockquote>
+<p>Before running the script, run the aws configure command from your PowerShell command line, and enter the relevant information as prompted. See <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html">AWS Command Line Interface | Configuration basics</a> for details. Note: When Aws configure is run, Default output format should not be set to None. It must be set to some value, such as json.</p>
+<p><strong>Government Cloud:</strong>
+  Download and extract the files from the following link: <a href="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/DataConnectors/AWS-S3/ConfigAwsS3DataConnectorScriptsGov.zip">AWS S3 Setup Script</a>.</p>
+<blockquote>
+<ol>
+<li>
+<p>Make sure that you have PowerShell on your machine: <a href="https://docs.microsoft.com/powershell/scripting/install/installing-powershell?view=powershell-7.2">Installation instructions for PowerShell</a>.</p>
+</li>
+<li>
+<p>Make sure that you have the AWS CLI on your machine: <a href="https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html">Installation instructions for the AWS CLI</a>.</p>
+</li>
+</ol>
+</blockquote>
+<p>Before running the script, run the aws configure command from your PowerShell command line, and enter the relevant information as prompted. See <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html">AWS Command Line Interface | Configuration basics</a> for details. Note: When Aws configure is run, Default output format should not be set to None. It must be set to some value, such as json.
+  - <strong>Run script to set up the environment</strong>: <code>./ConfigAwsConnector.ps1</code>
+  - <strong>External ID (Workspace ID)</strong>: <code>WorkspaceId</code>
+    &gt; <em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+<p><strong>Manual Setup</strong></p>
+<p>Follow the instruction in the following link to set up the environment: <a href="https://aka.ms/AWSS3Connector">Connect AWS S3 to Microsoft Sentinel</a></p>
+<p><strong>2. Add connection</strong></p>
+<blockquote>
+<p>📋 <strong>Additional Configuration Step</strong>: This connector includes a configuration step of type <code>AwsS3</code>. Please refer to the Microsoft Sentinel portal for detailed configuration options for this step.</p>
+</blockquote>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

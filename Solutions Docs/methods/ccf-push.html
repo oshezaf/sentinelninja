@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Codeless Connector Framework - Push Mode CCF Push &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Codeless Connector Framework - Push Mode (CCF Push)</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../methods-index.html">Back to Methods Index</a></p>
+<hr />
+<p>CCF Push connectors use the Codeless Connector Framework in push mode, where the data source pushes events to Microsoft Sentinel via a DCR/DCE (Data Collection Rule / Data Collection Endpoint) pipeline. Unlike polling-based CCF connectors, CCF Push connectors do not actively pull data — the partner or data source sends data to the ingestion endpoint.</p>
+<h2>Documentation</h2>
+<ul>
+<li><a href="https://learn.microsoft.com/azure/sentinel/create-codeless-connector">📖 Create a codeless connector</a></li>
+<li><a href="https://learn.microsoft.com/azure/sentinel/data-connector-connection-rules-reference">📖 Codeless Connector Platform reference</a></li>
+<li><a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">📖 Logs Ingestion API overview</a></li>
+</ul>
+<h2>Statistics</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Metric</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Total Connectors</td>
+<td style="text-align: right;"><strong>11</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">Active</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td style="text-align: left;">Deprecated 🚫</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Unpublished ⚠️</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+<h2>Connectors Using This Method</h2>
+<h3>Active Connectors</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Publisher</th>
+<th style="text-align: center;">Tables</th>
+<th style="text-align: left;">Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/fireworkpush.html">Flare Push Connector</a></td>
+<td style="text-align: left;">Flare Systems</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/flare.html">Flare</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/halcyonpush.html">Halcyon Connector</a></td>
+<td style="text-align: left;">Halcyon</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;"><a href="../solutions/halcyon.html">Halcyon</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/jamfprotectpush.html">Jamf Protect Push Connector</a></td>
+<td style="text-align: left;">Jamf</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;"><a href="../solutions/jamf-protect.html">Jamf Protect</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/keepersecuritypush2.html">Keeper Security Push Connector</a></td>
+<td style="text-align: left;">Keeper Security</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/keeper-security.html">Keeper Security</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/obsidiandatasharing.html">Obsidian Datasharing Connector</a></td>
+<td style="text-align: left;">Obsidian Security</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/obsidian-datasharing.html">Obsidian Datasharing</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/onapsis.html">Onapsis Defend Integration</a></td>
+<td style="text-align: left;">Onapsis Platform</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/onapsis-defend.html">Onapsis Defend</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/onetrustpush.html">OneTrust</a></td>
+<td style="text-align: left;">OneTrust</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/onetrust.html">OneTrust</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/pathlock-tdnr.html">Pathlock Inc.: Threat Detection and Response for SAP</a></td>
+<td style="text-align: left;">Pathlock Inc.</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/pathlock-tdnr.html">Pathlock_TDnR</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/saplogserv.html">SAP LogServ (RISE), S/4HANA Cloud private edition</a></td>
+<td style="text-align: left;">SAP SE</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/sap-logserv.html">SAP LogServ</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/securitybridge.html">SecurityBridge Solution for SAP</a> ➕</td>
+<td style="text-align: left;">SecurityBridge Group GmbH</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="../solutions/securitybridge-app.html">SecurityBridge App</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/varonispurviewpush.html">Varonis Purview Push Connector</a></td>
+<td style="text-align: left;">Varonis</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/varonis-purview.html">Varonis Purview</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../methods-index.html">Back to Methods Index</a></p>
+</div>
+</body>
+</html>

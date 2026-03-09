@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Threat PCAP - Palo Alto PAN-OS XML API &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Get Threat PCAP - Palo Alto PAN-OS XML API</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>This playbook allows us to get a threat PCAP for a given PCAP ID.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/paloalto-pan-os.html">PaloAlto-PAN-OS</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS/Playbooks/PaloAltoPlaybooks/PaloAlto-PAN-OS-GetThreatPCAP/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS/Playbooks/PaloAltoPlaybooks/PaloAlto-PAN-OS-GetThreatPCAP/readme.md">PaloAltoPlaybooks/PaloAlto-PAN-OS-GetThreatPCAP/readme.md</a></em></p>
+</blockquote>
+<h1>PaloAlto-PAN-OS-GetThreatPCAP</h1>
+<p>## Summary</p>
+<p>This playbook allows us to get a threat PCAP for a given PCAP ID. </p>
+<p>When a new Sentinel incident is created, this playbook gets triggered and performs below actions:</p>
+<ol>
+<li>
+<p>Gets the various parameters from the alert</p>
+</li>
+<li>
+<p>Gets the PCAP from the device.</p>
+</li>
+<li>
+<p>Puts the PCAP in Blob Storage</p>
+</li>
+<li>
+<p>Creates a Sentinel Incident and updates it with a link to the blob.</p>
+</li>
+</ol>
+<h3>Prerequisites</h3>
+<ol>
+<li>PaloAlto connector needs to be deployed prior to the deployment of this playbook under the same subscription. Relevant instructions can be found in the connector doc page.</li>
+<li>Generate an API key.<a href="https://docs.paloaltonetworks.com/pan-os/10-1/pan-os-panorama-api/get-started-with-the-pan-os-xml-api/get-your-api-key">Refer this link on how to generate the API Key</a></li>
+<li>This playbook only works for Palo Alto incidents with a threat PCAP where the PCAP ID is not null or zero. </li>
+</ol>
+<h3>Deployment instructions</h3>
+<ol>
+<li>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FPaloAlto-PAN-OS%2FPlaybooks%2FPaloAltoPlaybooks%2FPaloAlto-PAN-OS-GetThreatPCAP%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>   <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FPaloAlto-PAN-OS%2FPlaybooks%2FPaloAltoPlaybooks%2FPaloAlto-PAN-OS-GetThreatPCAP%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<ol start="2">
+<li>Fill in the required parameters:<ul>
+<li>Playbook Name: The playbook name here (e.g. PaloAlto-PAN-OS-GetThreatPCAP)</li>
+<li>StorageAccountName:  The blob storage account where the threat PCAP will be stored</li>
+<li>StorageAccountFolderPath: The folder in the blob storage account where the threat PCAP will be stored</li>
+<li>LogAnalyticsResourceGroup: The Log Analytics resource group for logging for the Playbook.</li>
+<li>LogAnalyticsResourceName: The Log Analytics resource for logging for the Playbook.</li>
+<li>CustomConnectorName : Name of the custom connector, if you want to change the default name, make sure to use the same in all PaloAlto automation playbooks as well</li>
+</ul>
+</li>
+</ol>
+<h3>Post-Deployment instructions</h3>
+<h4>a. Authorize connections</h4>
+<p>Once deployment is complete, you will need to authorize each connection.
+1.  Click the Microsoft Sentinel connection resource
+2.  Click edit API connection
+3.  Click Authorize
+4.  Sign in
+5.  Click Save
+6.  Repeat steps for other connections such as Blob Store connection and PAN-OS API connection (For authorizing the PAN-OS API connection, API Key needs to be provided)</p>
+<h4>b. Configurations in Sentinel</h4>
+<ol>
+<li>In Microsoft sentinel analytical rules should be configured to trigger an incident with results having column "TimeGenerated", "Computer", "pcap_id", "sessionid", "event_time".</li>
+<li>Entity mapping not needed beacuse playbook will internally hit the query again and fetches the required column from result. </li>
+<li>Configure the automation rules to trigger this playbook</li>
+</ol>
+<h4>c. Assign Playbook Microsoft Sentinel Responder Role</h4>
+<ol>
+<li>Select the Playbook (Logic App) resource</li>
+<li>Click on Identity Blade</li>
+<li>Choose System assigned tab</li>
+<li>Click on Azure role assignments</li>
+<li>Click on Add role assignments</li>
+<li>Select Scope - Resource group</li>
+<li>Select Subscription - where Playbook has been created</li>
+<li>Select Resource group - where Playbook has been created</li>
+<li>Select Role - Microsoft Sentinel Responder</li>
+<li>Click Save (It takes 3-5 minutes to show the added role.)</li>
+</ol>
+<h2>Playbook steps explained</h2>
+<h3>When Microsoft Sentinel incident creation rule is triggered</h3>
+<p>Microsoft Sentinel incident is created. The playbook receives the incident as the input.</p>
+<h3>Run Query and List Results</h3>
+<p>Get the logs from the incident.</p>
+<h3>For Each</h3>
+<p>Iterates on each result and performs the following:</p>
+<h4>If alert is Palo Alto alert</h4>
+<p>Checks if the alert is a Palo Alto alert. Required when logs from various devices are present</p>
+<h5>If PCAP ID exists</h5>
+<p>Checks if a PCAP ID is present, and that it is not equal to zero. If the PCAP ID is absent or if it is zero, no PCAP exists.</p>
+<h6>Query XML API</h6>
+<p>Sets the PCAP ID, time generated, Session ID and the device name, and queries the device's XML API to retrieve a threat PCAP</p>
+<h6>Create Blob (V2)</h6>
+<p>Creates a blob in aV2 blob storage account, denoted by Storage Account Name, in the folder denoted by the Folder Path with a name of the type "paloalto1235678920220101102000.pcap" where the name is a concatenation of the  "paloalto"+pcapid+timegenerated+".pcap"</p>
+<h6>Alert - Get Incident</h6>
+<p>Creates Incident for the alert</p>
+<h6>Add Comment to Incident (V3)</h6>
+<p>Adds a comment containing a link to the pcap in the blob storage to the incident</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/paloalto-pan-os.html">Back to PaloAlto-PAN-OS</a></p>
+</div>
+</body>
+</html>

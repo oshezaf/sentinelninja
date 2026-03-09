@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CiscoUmbrella-AddIpToDestinationList &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>CiscoUmbrella-AddIpToDestinationList</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>This playbook creates a team notification and once acted on team notification it adds the IP to Cisco Cloud Security's destination list and also add's comment to incident. For more details, click <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Playbooks/CiscoUmbrellaPlaybooks/CiscoUmbrella-AddIpToDestinationList/readme.md#summary">here</a>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/ciscoumbrella.html">CiscoUmbrella</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Playbooks/CiscoUmbrellaPlaybooks/CiscoUmbrella-AddIpToDestinationList/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Playbooks/CiscoUmbrellaPlaybooks/CiscoUmbrella-AddIpToDestinationList/readme.md">CiscoUmbrellaPlaybooks/CiscoUmbrella-AddIpToDestinationList/readme.md</a></em></p>
+</blockquote>
+<h2>Summary</h2>
+<p>When a new sentinel incident is created, this playbook gets triggered and performs the following actions:</p>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Playbooks/CiscoUmbrellaPlaybooks%5CCiscoUmbrella-AddIpToDestinationList/Images/playbook_screenshot.png" width="28%"/><br></p>
+<ol>
+<li>Sends an adaptive card to the Teams channel where the analyst can choose an action to be taken.</li>
+</ol>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Playbooks/CiscoUmbrellaPlaybooks%5CCiscoUmbrella-AddIpToDestinationList/Images/teams_screenshot.png" width="50%"/><br></p>
+<ol start="2">
+<li>Adds an IP to the destination list chosen in the adaptive card.</li>
+<li>Changes incident status and severity depending on the action chosen in the adaptive card.</li>
+<li>Adds comment to the incident with information about the actions taken.</li>
+</ol>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Playbooks/CiscoUmbrellaPlaybooks%5CCiscoUmbrella-AddIpToDestinationList/Images/commentOnIncident.png" width="50%"/><br></p>
+<h3>Prerequisites</h3>
+<ol>
+<li>Login to Cisco Cloud Security dashboard and navigating to Admin--&gt;API Keys. Create New API Key if not already created and select the appropriate "Key Scope" with Read/Write permission. Store "Api Key" and "Key Secret" to a safe place. This "Api Key" is a "Client Id" and "Key Secret" is a "Secret" used for this Playbook.</li>
+<li>Store the "Api Key" and "Key Secret" from previous step to Key vault Secrets.</li>
+<li>To send notification to Microsoft Teams, Teams group id and channel id is needed at the time of playbook creation.</li>
+</ol>
+<h3>Deployment instructions</h3>
+<ol>
+<li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
+<li>Fill in the required parameters:<ul>
+<li>Playbook Name: Enter the playbook name here</li>
+<li>Teams Group Id: Id of the Teams Group where the adaptive card will be posted</li>
+<li>Teams Channel Id: Id of the Teams Channel where the adaptive card will be posted</li>
+<li>Keyvault name: Name of the key vault where secrets are stored.</li>
+<li>Cloud Security API Client Id Key Name: Name of the Secrets field from Keyvault where Cisco Cloud Security "API Key" value is stored.</li>
+<li>Cloud Security API Secret Key Name: Name of the Secrets field from Keyvault where Cisco Cloud Security "Key Secret" value is stored.</li>
+<li>Host End Point: Default is "api.umbrella.com" and is used for any API call to Cisco Cloud Security REST API's.</li>
+</ul>
+</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCiscoUmbrella%2FPlaybooksk%2FCiscoUmbrellaPlaybooks%2FCiscoUmbrella-AddIpToDestinationList%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCiscoUmbrella%2FPlaybooks%2FCiscoUmbrellaPlaybooks%2FCiscoUmbrella-AddIpToDestinationList%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<h3>Post-Deployment instructions</h3>
+<h4>a. Authorize connections</h4>
+<p>Once deployment is complete, authorize each connection.</p>
+<ol>
+<li>Click the Microsoft Sentinel connection resource</li>
+<li>Click edit API connection</li>
+<li>Click Authorize</li>
+<li>Sign in</li>
+<li>Click Save</li>
+<li>Repeat steps for other connections</li>
+</ol>
+<h4>b. Configurations in Sentinel</h4>
+<ol>
+<li>In Microsoft sentinel, analytical rules should be configured to trigger an incident with a malicious IP. In the <em>Entity mapping</em> section of the analytics rule creation workflow, malicious IP should be mapped to <strong>Address</strong> identifier of the <strong>IP</strong> entity type. Check the <a href="https://docs.microsoft.com/azure/sentinel/map-data-fields-to-entities">documentation</a> to learn more about mapping entities.</li>
+<li>Configure the automation rules to trigger the playbook.</li>
+</ol>
+<h4>c. Assign Playbook Microsoft Sentinel Responder Role</h4>
+<ol>
+<li>Select the Playbook (Logic App) resource</li>
+<li>Click on Identity Blade</li>
+<li>Choose System assigned tab</li>
+<li>Click on Azure role assignments</li>
+<li>Click on Add role assignments</li>
+<li>Select Scope - Resource group</li>
+<li>Select Subscription - where Playbook has been created</li>
+<li>Select Resource group - where Playbook has been created</li>
+<li>Select Role - Microsoft Sentinel Responder</li>
+<li>Click Save (It takes 3-5 minutes to show the added role.)</li>
+</ol>
+<h4>d. Assign access policy on key vault for Playbook to fetch the secret key</h4>
+<ol>
+<li>Select the Key vault resource where you have stored the secret</li>
+<li>Click on Access policies Blade</li>
+<li>Click on Create</li>
+<li>Under Secret permissions column , Select Get , List from "Secret Management Operations"</li>
+<li>Click next to go to Principal tab and choose your deployed playbook name</li>
+<li>Click Next leave application tab as it is .</li>
+<li>Click Review and create</li>
+<li>Click Create</li>
+</ol>
+<h1>References</h1>
+<ul>
+<li><a href="https://developer.cisco.com/docs/cloud-security/authentication/#authentication">Cisco Cloud Security API Documentation</a></li>
+</ul>
+<p><em>[Content truncated...]</em></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/ciscoumbrella.html">Back to CiscoUmbrella</a></p>
+</div>
+</body>
+</html>

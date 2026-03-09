@@ -1,0 +1,2617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AzureDiagnostics &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>AzureDiagnostics</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for AzureDiagnostics table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Various</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1</strong></td>
+<td style="text-align: left;">Yes 🔶 — uses type-suffixed column names</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azurediagnostics">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (169 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azurediagnostics">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">action_id_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">action_name_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">action_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">ActivityId_g</td>
+<td style="text-align: left;">Guid</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">AdditionalFields</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">AdHocOrScheduledJob_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">application_name_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">audit_schema_version_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">avg_cpu_percent_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">avg_mean_time_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">backendHostname_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Caller_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">callerId_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">CallerIPAddress</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">calls_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Category</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">client_ip_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">clientInfo_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">clientIP_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">clientIpAddress_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">clientPort_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">code_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">collectionName_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">conditions_destinationIP_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">conditions_destinationPortRange_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">conditions_None_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">conditions_protocols_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">conditions_sourceIP_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">conditions_sourcePortRange_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">count_executions_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">cpu_time_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">database_name_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">database_principal_name_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">DatabaseName_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">db_id_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">direction_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">dop_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">duration_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">duration_milliseconds_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">DurationMs</td>
+<td style="text-align: left;">BigInt</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">ElasticPoolName_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">endTime_t</td>
+<td style="text-align: left;">DateTime</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Environment_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">error_code_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">error_message_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">errorLevel_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">event_class_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">event_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">event_subclass_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">event_time_t</td>
+<td style="text-align: left;">DateTime</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">EventName_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">execution_type_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">executionInfo_endTime_t</td>
+<td style="text-align: left;">DateTime</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">executionInfo_exitCode_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">executionInfo_startTime_t</td>
+<td style="text-align: left;">DateTime</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">host_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">httpMethod_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">httpStatus_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">httpStatusCode_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">httpStatusCode_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">httpVersion_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">id_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">identity_claim_appid_g</td>
+<td style="text-align: left;">Guid</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">identity_claim_ipaddr_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">instanceId_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">interval_end_time_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">interval_start_time_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">ip_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">is_column_permission_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">isAccessPolicyMatch_b</td>
+<td style="text-align: left;">Bool</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">JobDurationInSecs_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">JobFailureCode_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">JobId_g</td>
+<td style="text-align: left;">Guid</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">jobId_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">JobOperation_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">JobOperationSubType_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">JobStartDateTime_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">JobStatus_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">JobUniqueId_g</td>
+<td style="text-align: left;">Guid</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Level</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">log_bytes_used_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">logical_io_reads_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">logical_io_writes_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">LogicalServerName_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">macAddress_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">matchedConnections_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">max_cpu_time_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">max_dop_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">max_duration_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">max_log_bytes_used_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">max_logical_io_reads_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">max_logical_io_writes_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">max_num_physical_io_reads_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">max_physical_io_reads_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">max_query_max_used_memory_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">max_rowcount_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">max_time_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">mean_time_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Message</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">min_time_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">msg_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">num_physical_io_reads_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">object_id_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">object_name_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationVersion</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">partitionKey_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">physical_io_reads_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">plan_id_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">policy_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">policyMode_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">primaryIPv4Address_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">priority_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">properties_enabledForDeployment_b</td>
+<td style="text-align: left;">Bool</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">properties_enabledForDiskEncryption_b</td>
+<td style="text-align: left;">Bool</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">properties_enabledForTemplateDeployment_b</td>
+<td style="text-align: left;">Bool</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">properties_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">properties_sku_Family_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">properties_sku_Name_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">properties_tenantId_g</td>
+<td style="text-align: left;">Guid</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">query_hash_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">query_id_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">query_max_used_memory_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">query_plan_hash_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">query_time_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">querytext_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">receivedBytes_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Region_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">requestCharge_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">requestQuery_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">requestResourceId_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">requestResourceType_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">requestUri_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">reserved_storage_mb_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Resource</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">resource_actionName_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">resource_location_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">resource_originRunId_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">resource_resourceGroupName_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">resource_runId_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">resource_subscriptionId_g</td>
+<td style="text-align: left;">Guid</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">resource_triggerName_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">resource_workflowId_g</td>
+<td style="text-align: left;">Guid</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">resource_workflowName_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceGroup</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceProvider</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceType</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">response_rows_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">resultCode_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">ResultDescription</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">resultDescription_ChildJobs_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">resultDescription_ErrorJobs_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">resultMessage_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">ResultSignature</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">ResultType</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">rootCauseAnalysis_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">routingRuleName_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">rowcount_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">ruleName_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">RunbookName_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">RunOn_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">schema_name_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">sentBytes_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">sequence_group_id_g</td>
+<td style="text-align: left;">Guid</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">sequence_number_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">server_principal_sid_s</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">session_id_d</td>
+<td style="text-align: left;">Double</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (36)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a></li>
+<li><a href="../solutions/azure-batch-account.html">Azure Batch Account</a></li>
+<li><a href="../solutions/azure-cognitive-search.html">Azure Cognitive Search</a></li>
+<li><a href="../solutions/azure-ddos-protection.html">Azure DDoS Protection</a></li>
+<li><a href="../solutions/azure-data-lake-storage-gen1.html">Azure Data Lake Storage Gen1</a></li>
+<li><a href="../solutions/azure-event-hubs.html">Azure Event Hubs</a></li>
+<li><a href="../solutions/azure-firewall.html">Azure Firewall</a></li>
+<li><a href="../solutions/azure-key-vault.html">Azure Key Vault</a></li>
+<li><a href="../solutions/azure-logic-apps.html">Azure Logic Apps</a></li>
+<li><a href="../solutions/azure-network-security-groups.html">Azure Network Security Groups</a></li>
+<li><a href="../solutions/azure-sql-database-solution-for-sentinel.html">Azure SQL Database solution for sentinel</a></li>
+<li><a href="../solutions/azure-service-bus.html">Azure Service Bus</a></li>
+<li><a href="../solutions/azure-stream-analytics.html">Azure Stream Analytics</a></li>
+<li><a href="../solutions/azure-web-application-firewall-waf.html">Azure Web Application Firewall (WAF)</a></li>
+<li><a href="../solutions/azure-kubernetes-service.html">Azure kubernetes Service</a></li>
+<li><a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a></li>
+<li><a href="../solutions/cloud-service-threat-protection-essentials.html">Cloud Service Threat Protection Essentials</a></li>
+<li><a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a></li>
+<li><a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a></li>
+<li><a href="../solutions/dpdp-compliance.html">DPDP Compliance</a></li>
+<li><a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a></li>
+<li><a href="../solutions/hipaa-compliance.html">HIPAA Compliance</a></li>
+<li><a href="../solutions/legacy-ioc-based-threat-protection.html">Legacy IOC based Threat Protection</a></li>
+<li><a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a></li>
+<li><a href="../solutions/nistsp80053.html">NISTSP80053</a></li>
+<li><a href="../solutions/pci-dss-compliance.html">PCI DSS Compliance</a></li>
+<li><a href="../solutions/soc-handbook.html">SOC Handbook</a></li>
+<li><a href="../solutions/sentinelsoaressentials.html">SentinelSOARessentials</a></li>
+<li><a href="../solutions/slashnext.html">SlashNext</a></li>
+<li><a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></li>
+<li><a href="../solutions/threat-intelligence.html">Threat Intelligence</a></li>
+<li><a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></li>
+<li><a href="../solutions/threatanalysis&amp;response.html">ThreatAnalysis&amp;Response</a></li>
+<li><a href="../solutions/web-shells-threat-protection.html">Web Shells Threat Protection</a></li>
+<li><a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a></li>
+<li><a href="../solutions/zinc-open-source.html">Zinc Open Source</a></li>
+</ul>
+<h2>Connectors (15)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/azurebatchaccount-ccp.html">Azure Batch Account</a></td>
+<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.BATCH"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/azurecognitivesearch-ccp.html">Azure Cognitive Search</a></td>
+<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.SEARCH"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/azuredatalakestoragegen1-ccp.html">Azure Data Lake Storage Gen1</a></td>
+<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.DATALAKESTORE"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/azureeventhub-ccp.html">Azure Event Hub</a></td>
+<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.EVENTHUB"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/azurefirewall.html">Azure Firewall</a></td>
+<td style="text-align: left;"><code>ResourceType == "AZUREFIREWALLS"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/azurekeyvault.html">Azure Key Vault</a></td>
+<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.KEYVAULT"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/azurekubernetes.html">Azure Kubernetes Service (AKS)</a></td>
+<td style="text-align: left;"><code>Category in "cluster-autoscaler,guard,kube-apiserver,kube-audit,kube-audit-admin,kube-controller-manager,kube-scheduler"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/azurelogicapps-ccp.html">Azure Logic Apps</a></td>
+<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.LOGIC"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/azurensg.html">Network Security Groups</a></td>
+<td style="text-align: left;"><code>Category in "NetworkSecurityGroupEvent,NetworkSecurityGroupRuleCounter"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/azureservicebus-ccp.html">Azure Service Bus</a></td>
+<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.SERVICEBUS"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/azuresql.html">Azure SQL Databases</a></td>
+<td style="text-align: left;"><code>Category in "AutomaticTuning,Basic,Blocks,DatabaseWaitStatistics,Deadlocks,DevOpsOperationsAudit,Errors,InstanceAndAppAdvanced,QueryStoreWaitStatistics,SQLInsights,SQLSecurityAuditEvents,Timeouts,WorkloadManagement"</code><br><code>Category contains "SQLSecurityAuditEvents"</code><br><code>ResourceProvider == "MICROSOFT.SQL"</code><br><code>ResourceType == "SERVERS/DATABASES"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/azurestreamanalytics-ccp.html">Azure Stream Analytics</a></td>
+<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.STREAMANALYTICS"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ddos.html">Azure DDoS Protection</a></td>
+<td style="text-align: left;"><code>Category == "DDoSMitigationReports"</code><br><code>ResourceType == "PUBLICIPADDRESSES"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/slashnextfunctionapp.html">SlashNext Function App</a></td>
+<td style="text-align: left;"><code>Resource == "SlashnextFunctionApp"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/waf.html">Azure Web Application Firewall (WAF)</a></td>
+<td style="text-align: left;"><code>ResourceType in "APPLICATIONGATEWAYS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS"</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Content Items Using This Table (79)</h2>
+<h3>Analytic Rules (36)</h3>
+<p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/apache-log4j-vulnerability-detection-azure-waf-matching-for-log4j-vuln-cve-2021-44228-2de8abd6-a613-450e-95ed-08e503369fb3-2f37c37a.html">Azure WAF matching for Log4j vuln(CVE-2021-44228)</a></td>
+<td style="text-align: left;"><code>Category in "ApplicationGatewayFirewallLog,FrontdoorWebApplicationFirewallLog"</code><br><code>ResourceProvider == "MICROSOFT.NETWORK"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990-c6cdb809.html">Log4j vulnerability exploit aka Log4Shell IP IOC</a></td>
+<td style="text-align: left;"><code>Category in "AzureFirewallApplicationRule,AzureFirewallNetworkRule"</code><br><code>ResourceType == "AZUREFIREWALLS"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/apache-log4j-vulnerability-detection-user-agent-search-for-log4j-exploitation-attempt-29283b22-a1c0-4d16-b0a9-3460b655a46a-d67cde36.html">User agent search for log4j exploitation attempt</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/azure-ddos-protection.html">Azure DDoS Protection</a>:</strong> <code>Category == "DDoSMitigationFlowLogs"</code><br><code>ResourceType == "PUBLICIPADDRESSES"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-ddos-protection-ddos-attack-ip-addresses-pps-threshold-6e76fd9d-8104-41eb-bad3-26054a3ad5f0-19898f82.html">DDoS Attack IP Addresses - PPS Threshold</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-ddos-protection-ddos-attack-ip-addresses-percent-threshold-402a42ad-f31c-48d1-8f80-0200846b7f25-45798bda.html">DDoS Attack IP Addresses - Percent Threshold</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/azure-firewall.html">Azure Firewall</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-firewall-abnormal-deny-rate-for-source-ip-d36bb1e3-5abc-4037-ad9a-24ba3469819e-bcaa208f.html">Abnormal Deny Rate for Source IP</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-firewall-abnormal-port-to-protocol-826f930c-2f25-4508-8e75-a95b809a4e15-f673b591.html">Abnormal Port to Protocol</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-firewall-multiple-sources-affected-by-the-same-ti-destination-4644baf7-3464-45dd-bd9d-e07687e25f81-c5003c22.html">Multiple Sources Affected by the Same TI Destination</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-firewall-port-scan-b2c5907b-1040-4692-9802-9946031017e8-a6887f4e.html">Port Scan</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-firewall-port-sweep-720335f4-ee8c-4270-9424-d0859222168c-d77c9cf0.html">Port Sweep</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-firewall-several-deny-actions-registered-f8dad4e9-3f19-4d70-ab7f-8f19ccd43a3e-e192f460.html">Several deny actions registered</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/azure-key-vault.html">Azure Key Vault</a>:</strong> <code>ResourceType == "VAULTS"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-key-vault-azure-key-vault-access-timeseries-anomaly-0914adab-90b5-47a3-a79f-7cdcac843aa7-3cd8ede1.html">Azure Key Vault access TimeSeries anomaly</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-key-vault-mass-secret-retrieval-from-azure-key-vault-24f8c234-d1ff-40ec-8b73-96b17a3a9c1c-f69dcdc4.html">Mass secret retrieval from Azure Key Vault</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-key-vault-nrt-sensitive-azure-key-vault-operations-884ead54-cb3f-4676-a1eb-b26532d6cbfd-6787446f.html">NRT Sensitive Azure Key Vault operations</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-key-vault-sensitive-azure-key-vault-operations-d6491be0-ab2d-439d-95d6-ad8ea39277c5-6dc5e1cc.html">Sensitive Azure Key Vault operations</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/azure-sql-database-solution-for-sentinel.html">Azure SQL Database solution for sentinel</a>:</strong> <code>Category == "SQLSecurityAuditEvents"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-sql-database-solution-for-sentinel-affected-rows-stateful-anomaly-on-database-2a632013-379d-4993-956f-615063d31e10-11212897.html">Affected rows stateful anomaly on database</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-sql-database-solution-for-sentinel-credential-errors-stateful-anomaly-on-database-daa32afa-b5b6-427d-93e9-e32f3f359dd7-ce884545.html">Credential errors stateful anomaly on database</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-sql-database-solution-for-sentinel-drop-attempts-stateful-anomaly-on-database-237c3855-138c-4588-a68f-b870abd3bfc9-7ce4340f.html">Drop attempts stateful anomaly on database</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-sql-database-solution-for-sentinel-execution-attempts-stateful-anomaly-on-database-3367fd5e-44b3-4746-a9a5-dc15c8202490-1b031009.html">Execution attempts stateful anomaly on database</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-sql-database-solution-for-sentinel-firewall-errors-stateful-anomaly-on-database-20f87813-3de0-4a9f-a8c0-6aaa3187be08-b973d4ce.html">Firewall errors stateful anomaly on database</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-sql-database-solution-for-sentinel-firewall-rule-manipulation-attempts-stateful-anomaly-on-databas-05030ca6-ef66-42ca-b672-2e84d4aaf5d7-c6bd8fb4.html">Firewall rule manipulation attempts stateful anomaly on database</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-sql-database-solution-for-sentinel-ole-object-manipulation-attempts-stateful-anomaly-on-database-dabd7284-004b-4237-b5ee-a22acab19eb2-08386257.html">OLE object manipulation attempts stateful anomaly on database</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-sql-database-solution-for-sentinel-outgoing-connection-attempts-stateful-anomaly-on-database-c105513d-e398-4a02-bd91-54b9b2d6fa7d-be32ef2f.html">Outgoing connection attempts stateful anomaly on database</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-sql-database-solution-for-sentinel-response-rows-stateful-anomaly-on-database-9851c360-5fd5-4bae-a117-b66d8476bf5e-50984d5e.html">Response rows stateful anomaly on database</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-sql-database-solution-for-sentinel-syntax-errors-stateful-anomaly-on-database-c815008d-f4d1-4645-b13b-8b4bc188d5de-75deac2f.html">Syntax errors stateful anomaly on database</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/azure-web-application-firewall-waf.html">Azure Web Application Firewall (WAF)</a>:</strong> <code>Category == "FrontDoorWebApplicationFirewallLog"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-afd-waf-code-injection-ded8168e-c806-4772-af30-10576e0a7529-19ad7bff.html">AFD WAF - Code Injection</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-afd-waf-path-traversal-attack-a4d99328-e4e6-493d-b0d5-57e6f9ddae77-2344821e.html">AFD WAF - Path Traversal Attack</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-front-door-premium-waf-sqli-detection-16da3a2a-af29-48a0-8606-d467c180fe18-3acd0e4e.html">Front Door Premium WAF - SQLi Detection</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-front-door-premium-waf-xss-detection-b7643904-5081-4920-917e-a559ddc3448f-f46a8943.html">Front Door Premium WAF - XSS Detection</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/threat-intelligence.html">Threat Intelligence</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-ti-map-ip-entity-to-azure-sql-security-audit-events-d0aa8969-1bbe-4da3-9e76-09e5f67c9d85-cbef7484.html">TI Map IP Entity to Azure SQL Security Audit Events</a></td>
+<td style="text-align: left;"><code>Category == "SQLSecurityAuditEvents"</code><br><code>ResourceProvider == "MICROSOFT.SQL"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-ti-map-ip-entity-to-azure-key-vault-logs-57c7e832-64eb-411f-8928-4133f01f4a25-7c3f7a41.html">TI map IP entity to Azure Key Vault logs</a></td>
+<td style="text-align: left;"><code>ResourceType == "VAULTS"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-ti-map-ip-entity-to-azurefirewall-0b904747-1336-4363-8d84-df2710bfe5e7-30fad35b.html">TI map IP entity to AzureFirewall</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-ip-entity-to-azure-sql-security-audit-events-239d987e-ee1b-4c49-b146-e88d682930a4-fb7a1cf3.html">TI Map IP Entity to Azure SQL Security Audit Events</a></td>
+<td style="text-align: left;"><code>Category == "SQLSecurityAuditEvents"</code><br><code>ResourceProvider == "MICROSOFT.SQL"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-ip-entity-to-azure-key-vault-logs-7c8051a7-3d29-4c0d-a340-893423f7b0a5-565bd210.html">TI map IP entity to Azure Key Vault logs</a></td>
+<td style="text-align: left;"><code>ResourceType == "VAULTS"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-ip-entity-to-azurefirewall-4992d2f3-d6c0-4271-adac-b23532ba4492-965a60e9.html">TI map IP entity to AzureFirewall</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/zinc-open-source.html">Zinc Open Source</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.html">[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries (19)</h3>
+<p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong> <code>Category in "ApplicationGatewayAccessLog,ApplicationGatewayFirewallLog,FrontdoorAccessLog,FrontdoorWebApplicationFirewallLog"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/apache-log4j-vulnerability-detection-azure-waf-log4j-cve-2021-44228-hunting-1d4d383e-0ca6-4d3a-a861-8f37aeef18cb-dcfb1bb2.html">Azure WAF Log4j CVE-2021-44228 hunting</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/azure-firewall.html">Azure Firewall</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-firewall-first-time-source-ip-to-destination-f055e82b-5ef6-4395-bc9e-99f7e451343a-b6cf8086.html">First Time Source IP to Destination</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-firewall-first-time-source-ip-to-destination-using-port-932fe71a-7a8c-4f35-bf88-321ab68ff562-850b4356.html">First Time Source IP to Destination Using Port</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-firewall-source-ip-abnormally-connects-to-multiple-destinations-d006f4f8-86bb-4c9d-9826-837762ddad6b-ec41bab6.html">Source IP Abnormally Connects to Multiple Destinations</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-firewall-uncommon-port-for-organization-8812a547-13e6-4d0c-b38d-476fb7351c52-f68ddc3e.html">Uncommon Port for Organization</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-firewall-uncommon-port-to-ip-3d93fa57-53e5-4d5e-96d4-ad734a8df3a4-582e485f.html">Uncommon Port to IP</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/azure-sql-database-solution-for-sentinel.html">Azure SQL Database solution for sentinel</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-sql-database-solution-for-sentinel-affected-rows-stateful-anomaly-on-database-hunting-query-9670ac84-e035-47f5-8eb5-9d863a8a7893-66ffcc6c.html">Affected rows stateful anomaly on database - hunting query</a></td>
+<td style="text-align: left;"><code>Category == "SQLSecurityAuditEvents"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-sql-database-solution-for-sentinel-anomalous-query-execution-time-724c7010-0afe-4d46-95ab-32f6737e658b-6f211c62.html">Anomalous Query Execution Time</a></td>
+<td style="text-align: left;"><code>Category == "SQLSecurityAuditEvents"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-sql-database-solution-for-sentinel-anomalous-query-execution-time-af55d5b0-6b4a-4874-8299-9d845bf7c1fd-21c7b493.html">Anomalous Query Execution Time</a></td>
+<td style="text-align: left;"><code>Category == "SQLSecurityAuditEvents"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-sql-database-solution-for-sentinel-boolean-blind-sql-injection-4cda0673-37f9-4765-af1f-556de2295cd7-513f1aae.html">Boolean Blind SQL Injection</a></td>
+<td style="text-align: left;"><code>Category == "SQLSecurityAuditEvents"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-sql-database-solution-for-sentinel-prevalence-based-sql-query-size-anomaly-2a21303e-be48-404f-a6f6-883a6acfe5ad-c554d854.html">Prevalence Based SQL Query Size Anomaly</a></td>
+<td style="text-align: left;"><code>Category == "SQLSecurityAuditEvents"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-sql-database-solution-for-sentinel-response-rows-stateful-anomaly-on-database-hunting-query-137tyi7c-7225-434b-8bfc-fea28v95ebd8-78e08eb9.html">Response rows stateful anomaly on database - hunting query</a></td>
+<td style="text-align: left;"><code>Category == "SQLSecurityAuditEvents"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-sql-database-solution-for-sentinel-suspicious-sql-stored-procedures-db5b0a77-1b1d-4a31-8ebb-c508ebc3bb38-4ec8f8ae.html">Suspicious SQL Stored Procedures</a></td>
+<td style="text-align: left;"><code>Category == "SQLSecurityAuditEvents"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-sql-database-solution-for-sentinel-time-based-sql-query-size-anomaly-e0944dec-3c92-4b2d-8e81-a950afeaba69-50b245a5.html">Time Based SQL Query Size Anomaly</a></td>
+<td style="text-align: left;"><code>Category == "SQLSecurityAuditEvents"</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/azure-kubernetes-service.html">Azure kubernetes Service</a>:</strong> <code>Category == "kube-audit"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-kubernetes-service-azure-rbac-aks-created-role-details-765dce51-689a-44b5-9b38-c9ae9441c7fc-9390272f.html">Azure RBAC AKS created role details</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-kubernetes-service-determine-users-with-cluster-admin-role-c3ac03d5-dbf2-49ab-a2de-83396a20a5fb-006175f6.html">Determine users with cluster admin role</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/cloud-service-threat-protection-essentials.html">Cloud Service Threat Protection Essentials</a>:</strong> <code>ResourceType == "VAULTS"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/cloud-service-threat-protection-essentials-azure-key-vault-access-policy-manipulation-8eff7055-9138-4edc-b8f0-48ea27e23c3c-8858b5d6.html">Azure Key Vault Access Policy Manipulation</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/legacy-ioc-based-threat-protection.html">Legacy IOC based Threat Protection</a>:</strong> <code>Category == "AzureFirewallNetworkRule"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/legacy-ioc-based-threat-protection-connection-from-external-ip-to-omi-related-ports-767b8f6d-8029-4c92-afe1-282167d9d49a-0ad0779a.html">Connection from external IP to OMI related Ports</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/web-shells-threat-protection.html">Web Shells Threat Protection</a>:</strong> <code>Category in "ApplicationGatewayAccessLog,ApplicationGatewayFirewallLog,FrontdoorAccessLog,FrontdoorWebApplicationFirewallLog"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/web-shells-threat-protection-possible-webshell-usage-attempt-related-to-springshell-cve-2022-22965-6911d1df-4204-43b2-a64c-3cb102551ddd-8605b97e.html">Possible Webshell usage attempt related to SpringShell(CVE-2022-22965)</a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks (24)</h3>
+<p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong> <code>Category in "ApplicationGatewayAccessLog,ApplicationGatewayFirewallLog,FrontdoorAccessLog,FrontdoorWebApplicationFirewallLog"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/apache-log4j-vulnerability-detection-log4jpostcompromisehunting-8811d292.html">Log4jPostCompromiseHunting</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/azure-ddos-protection.html">Azure DDoS Protection</a>:</strong> <code>Category in "DDoSMitigationFlowLogs,DDoSMitigationReports,DDoSProtectionNotifications"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-ddos-protection-azddosstandardworkbook-5256dfab.html">AzDDoSStandardWorkbook</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/azure-firewall.html">Azure Firewall</a>:</strong> <code>Category in "AzureFirewallApplicationRule,AzureFirewallDnsProxy,AzureFirewallNetworkRule"</code><br><code>ResourceType == "AZUREFIREWALLS"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-firewall-azurefirewallworkbook-b4bb528f.html">AzureFirewallWorkbook</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/azure-key-vault.html">Azure Key Vault</a>:</strong> <code>Category == "AuditEvent"</code><br><code>ResourceType == "VAULTS"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-key-vault-azurekeyvaultworkbook-72b1692d.html">AzureKeyVaultWorkbook</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/azure-sql-database-solution-for-sentinel.html">Azure SQL Database solution for sentinel</a>:</strong> <code>Category == "SQLSecurityAuditEvents"</code><br><code>ResourceType == "SERVERS/DATABASES"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-sql-database-solution-for-sentinel-workbook-azuresqlsecurity-2448278c.html">Workbook-AzureSQLSecurity</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/azure-web-application-firewall-waf.html">Azure Web Application Firewall (WAF)</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-webapplicationfirewallfirewallevents-fffe3907.html">WebApplicationFirewallFirewallEvents</a></td>
+<td style="text-align: left;"><code>ResourceType == "APPLICATIONGATEWAYS"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-webapplicationfirewallgatewayaccessevents-3b2791d0.html">WebApplicationFirewallGatewayAccessEvents</a></td>
+<td style="text-align: left;"><code>ResourceType == "APPLICATIONGATEWAYS"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-webapplicationfirewalloverview-724b5122.html">WebApplicationFirewallOverview</a></td>
+<td style="text-align: left;"><code>ResourceType == "APPLICATIONGATEWAYS"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-webapplicationfirewallwaftypeevents-bc7c447b.html">WebApplicationFirewallWAFTypeEvents</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/azure-kubernetes-service.html">Azure kubernetes Service</a>:</strong> <code>Category == "kube-audit"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-kubernetes-service-akssecurity-51e44b54.html">AksSecurity</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a>:</strong> <code>Category in "All,AzureFirewallNetworkRule,NetworkSecurityGroupRuleCounter"</code><br><code>ResourceProvider == "MICROSOFT.KEYVAULT"</code><br><code>ResourceType == "AZUREFIREWALLS"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.html">AzureSecurityBenchmark</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a>:</strong> <code>Category in "NetworkSecurityGroupEvent,kube-audit"</code><br><code>Category contains "SQL"</code><br><code>ResourceProvider == "MICROSOFT.KEYVAULT"</code><br><code>ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/continuousdiagnostics&amp;mitigation-continuousdiagnostics&amp;mitigation-d91b4b8c.html">ContinuousDiagnostics&amp;Mitigation</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a>:</strong> <code>Category == "AzureFirewallApplicationRule"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.html">CybersecurityMaturityModelCertification_CMMCV2</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/dpdp-compliance.html">DPDP Compliance</a>:</strong> <code>Category == "SQLSecurityAuditEvents"</code><br><code>ResourceType == "SERVERS/DATABASES"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/dpdp-compliance-dpdpcompliance-18571e87.html">DPDPCompliance</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a>:</strong> <code>Category == "SQLSecurityAuditEvents"</code><br><code>ResourceType == "SERVERS/DATABASES"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/gdpr-compliance-&amp;-data-security-gdprcomplianceanddatasecurity-a0958a9a.html">GDPRComplianceAndDataSecurity</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/hipaa-compliance.html">HIPAA Compliance</a>:</strong> <code>Category == "AzureFirewallNetworkRule"</code><br><code>Category == "SQLSecurityAuditEvents"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/hipaa-compliance-hipaacompliance-3850f8c8.html">HIPAACompliance</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong> <code>Category in "AzureFirewallApplicationRule,AzureFirewallNetworkRule,EntitlementManagement,FrontdoorWebApplicationFirewallLog,GatewayDiagnosticLog,GroupManagement,IKEDiagnosticLog,NetworkSecurityGroupEvent,RouteDiagnosticLog,TunnelDiagnosticLog,UserManagement,WebApplicationFirewallLogs,kube-audit"</code><br><code>Category contains "SQL"</code><br><code>ResourceProvider in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.KEYVAULT"</code><br><code>ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES,SERVERS/DATABASES"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/nistsp80053.html">NISTSP80053</a>:</strong> <code>Category in "NetworkSecurityGroupEvent,kube-audit"</code><br><code>Category contains "SQL"</code><br><code>ResourceProvider == "MICROSOFT.KEYVAULT"</code><br><code>ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/nistsp80053-nistsp80053-1f654213.html">NISTSP80053</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/pci-dss-compliance.html">PCI DSS Compliance</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/pci-dss-compliance-pcidsscompliance-b201eb3d.html">PCIDSSCompliance</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/soc-handbook.html">SOC Handbook</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-handbook-azuresentinelcost-81caaf3b.html">AzureSentinelCost</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/sentinelsoaressentials.html">SentinelSOARessentials</a>:</strong> <code>ResourceProvider == "MICROSOFT.LOGIC"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-automationhealth-09dce6f5.html">AutomationHealth</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/team-cymru-scout-teamcymruscout-b64c6ed4.html">TeamCymruScout</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/threatanalysis&amp;response.html">ThreatAnalysis&amp;Response</a>:</strong> <code>ResourceType == "PUBLICIPADDRESSES"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/threatanalysis&amp;response-dynamicthreatmodeling&amp;response-54123c47.html">DynamicThreatModeling&amp;Response</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a>:</strong> <code>Category in "ApplicationGatewayFirewallLog,AzureFirewallApplicationRule,AzureFirewallDnsProxy,AzureFirewallNetworkRule,DDoSMitigationReports,FrontdoorWebApplicationFirewallLog,NetworkSecurityGroupEvent,WebApplicationFirewallLogs,kube-audit"</code><br><code>Category contains "SQL"</code><br><code>ResourceProvider == "MICROSOFT.KEYVAULT"</code><br><code>ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.html">ZeroTrustTIC3</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Parsers Using This Table (2)</h2>
+<h3>Other Parsers (2)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/azurefirewallapplicationrule.html">AzureFirewallApplicationRule</a></td>
+<td style="text-align: left;"><em>(Legacy)</em></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/azurefirewallnetworkrule.html">AzureFirewallNetworkRule</a></td>
+<td style="text-align: left;"><em>(Legacy)</em></td>
+<td style="text-align: left;"><code>Category == "AzureFirewallNetworkRule"</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Selection Criteria Summary (37 criteria, 76 total references)</h2>
+<p>References by type: 15 connectors, 60 content items, 0 ASIM parsers, 1 other parsers.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>Category == "SQLSecurityAuditEvents"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>18</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ResourceType == "VAULTS"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>7</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Category == "FrontDoorWebApplicationFirewallLog"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Category in "ApplicationGatewayAccessLog,ApplicationGatewayFirewallLog,FrontdoorAccessLog,FrontdoorWebApplicationFirewallLog"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Category == "kube-audit"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Category == "SQLSecurityAuditEvents"</code><br><code>ResourceType == "SERVERS/DATABASES"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ResourceType == "APPLICATIONGATEWAYS"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.LOGIC"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Category == "DDoSMitigationFlowLogs"</code><br><code>ResourceType == "PUBLICIPADDRESSES"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Category == "SQLSecurityAuditEvents"</code><br><code>ResourceProvider == "MICROSOFT.SQL"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Category == "AzureFirewallNetworkRule"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Category in "NetworkSecurityGroupEvent,kube-audit"</code><br><code>Category contains "SQL"</code><br><code>ResourceProvider == "MICROSOFT.KEYVAULT"</code><br><code>ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.BATCH"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.EVENTHUB"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ResourceType in "APPLICATIONGATEWAYS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Category in "AutomaticTuning,Basic,Blocks,DatabaseWaitStatistics,Deadlocks,DevOpsOperationsAudit,Errors,InstanceAndAppAdvanced,QueryStoreWaitStatistics,SQLInsights,SQLSecurityAuditEvents,Timeouts,WorkloadManagement"</code><br><code>Category contains "SQLSecurityAuditEvents"</code><br><code>ResourceProvider == "MICROSOFT.SQL"</code><br><code>ResourceType == "SERVERS/DATABASES"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.KEYVAULT"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Category == "DDoSMitigationReports"</code><br><code>ResourceType == "PUBLICIPADDRESSES"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ResourceType == "AZUREFIREWALLS"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.SERVICEBUS"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.DATALAKESTORE"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.SEARCH"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Category in "cluster-autoscaler,guard,kube-apiserver,kube-audit,kube-audit-admin,kube-controller-manager,kube-scheduler"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Resource == "SlashnextFunctionApp"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.STREAMANALYTICS"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Category in "NetworkSecurityGroupEvent,NetworkSecurityGroupRuleCounter"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Category in "ApplicationGatewayFirewallLog,FrontdoorWebApplicationFirewallLog"</code><br><code>ResourceProvider == "MICROSOFT.NETWORK"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Category in "AzureFirewallApplicationRule,AzureFirewallNetworkRule"</code><br><code>ResourceType == "AZUREFIREWALLS"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Category in "DDoSMitigationFlowLogs,DDoSMitigationReports,DDoSProtectionNotifications"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Category in "AzureFirewallApplicationRule,AzureFirewallDnsProxy,AzureFirewallNetworkRule"</code><br><code>ResourceType == "AZUREFIREWALLS"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Category == "AuditEvent"</code><br><code>ResourceType == "VAULTS"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Category in "All,AzureFirewallNetworkRule,NetworkSecurityGroupRuleCounter"</code><br><code>ResourceProvider == "MICROSOFT.KEYVAULT"</code><br><code>ResourceType == "AZUREFIREWALLS"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Category == "AzureFirewallApplicationRule"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Category == "AzureFirewallNetworkRule"</code><br><code>Category == "SQLSecurityAuditEvents"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Category in "AzureFirewallApplicationRule,AzureFirewallNetworkRule,EntitlementManagement,FrontdoorWebApplicationFirewallLog,GatewayDiagnosticLog,GroupManagement,IKEDiagnosticLog,NetworkSecurityGroupEvent,RouteDiagnosticLog,TunnelDiagnosticLog,UserManagement,WebApplicationFirewallLogs,kube-audit"</code><br><code>Category contains "SQL"</code><br><code>ResourceProvider in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.KEYVAULT"</code><br><code>ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES,SERVERS/DATABASES"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ResourceType == "PUBLICIPADDRESSES"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Category in "ApplicationGatewayFirewallLog,AzureFirewallApplicationRule,AzureFirewallDnsProxy,AzureFirewallNetworkRule,DDoSMitigationReports,FrontdoorWebApplicationFirewallLog,NetworkSecurityGroupEvent,WebApplicationFirewallLogs,kube-audit"</code><br><code>Category contains "SQL"</code><br><code>ResourceProvider == "MICROSOFT.KEYVAULT"</code><br><code>ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>15</strong></td>
+<td style="text-align: center;"><strong>60</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;"><strong>76</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>Category</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>SQLSecurityAuditEvents</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">24</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>25</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>kube-audit</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>8</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AzureFirewallNetworkRule</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>8</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>FrontdoorWebApplicationFirewallLog</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>6</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>NetworkSecurityGroupEvent</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ApplicationGatewayFirewallLog</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AzureFirewallApplicationRule</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>FrontDoorWebApplicationFirewallLog</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains SQL</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DDoSMitigationReports</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DDoSMitigationFlowLogs</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ApplicationGatewayAccessLog</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>FrontdoorAccessLog</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>NetworkSecurityGroupRuleCounter</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AzureFirewallDnsProxy</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>WebApplicationFirewallLogs</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AutomaticTuning</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Basic</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Blocks</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DatabaseWaitStatistics</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Deadlocks</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DevOpsOperationsAudit</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Errors</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>InstanceAndAppAdvanced</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>QueryStoreWaitStatistics</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SQLInsights</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Timeouts</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>WorkloadManagement</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains SQLSecurityAuditEvents</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>cluster-autoscaler</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>guard</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>kube-apiserver</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>kube-audit-admin</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>kube-controller-manager</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>kube-scheduler</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DDoSProtectionNotifications</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AuditEvent</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>All</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EntitlementManagement</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>GatewayDiagnosticLog</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>GroupManagement</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>IKEDiagnosticLog</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>RouteDiagnosticLog</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>TunnelDiagnosticLog</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>UserManagement</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>Resource</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>SlashnextFunctionApp</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>ResourceProvider</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>MICROSOFT.KEYVAULT</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>6</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>MICROSOFT.SQL</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>MICROSOFT.LOGIC</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>MICROSOFT.BATCH</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>MICROSOFT.EVENTHUB</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>MICROSOFT.SERVICEBUS</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>MICROSOFT.DATALAKESTORE</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>MICROSOFT.SEARCH</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>MICROSOFT.STREAMANALYTICS</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>MICROSOFT.NETWORK</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>MICROSOFT.CONTAINERSERVICE</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>ResourceType</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>APPLICATIONGATEWAYS</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>8</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>PUBLICIPADDRESSES</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>8</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AZUREFIREWALLS</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>8</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>VAULTS</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>8</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CDNWEBAPPLICATIONFIREWALLPOLICIES</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>FRONTDOORS</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SERVERS/DATABASES</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>PROFILES</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

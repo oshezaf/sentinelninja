@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>workflow &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>workflow</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>&lt; 🏡home</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/sap.html">SAP</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP/Playbooks/SAPCollectorRemediate-STD/workflow.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>Not listed in Solution JSON:</strong> This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.</p>
+</blockquote>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP/Playbooks/SAPCollectorRemediate-STD/readme.md">SAPCollectorRemediate-STD/readme.md</a></em></p>
+</blockquote>
+<h1>Remediate SAP Sentinel Collector Agent attack</h1>
+<p>&lt; 🏡<a href="../README.html">home</a></p>
+<p>Sophisticated scenario distinguishing between SAP maintenance events and malicious deactivation of the audit log ingestion into Sentinel.</p>
+<p>Used Sentinel alert rule <code>[SAP - Data collection health check](https://learn.microsoft.com/azure/sentinel/monitor-sap-system-health#use-an-alert-rule-template)</code></p>
+<p><a href="https://learn.microsoft.com/azure/sap/center-sap-solutions/overview">Azure Center for SAP Solutions (ACSS)</a> health info exposed via the <a href="https://learn.microsoft.com/azure/governance/resource-graph/overview">Azure Resource Graph</a> qualify the incident to drive better triage processes at the SAP Security Operations teams.</p>
+<p>👨🏽‍🔧<a href="../INSTALLATION.html"><strong>installation guide</strong></a>.</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>🪂</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Logic Apps Infrastructure</td>
+<td><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSAP%2FPlaybooks%2FSAPCollectorRemediate-STD%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></td>
+</tr>
+<tr>
+<td>Logic Apps Connections</td>
+<td><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSAP%2FPlaybooks%2FSAPCollectorRemediate-STD%2Fazureconnectordeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></td>
+</tr>
+<tr>
+<td>Logic Apps Standard Connections configuration</td>
+<td>🔗<a href="connections.json">link</a></td>
+</tr>
+<tr>
+<td>Logic Apps Standard workflow</td>
+<td>🔗<a href="workflow.json">link</a></td>
+</tr>
+<tr>
+<td>Logic Apps Standard workflow parameters</td>
+<td>🔗<a href="workflowparameters.json">link</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Required Azure Roles</h2>
+<table>
+<thead>
+<tr>
+<th>Role Name</th>
+<th>Resource Type Scope</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://learn.microsoft.com/azure/role-based-access-control/built-in-roles#microsoft-sentinel-responder">Microsoft Sentinel Responder</a></td>
+<td>At least resource group where Sentinel lives</td>
+<td>Required for Incident state update</td>
+</tr>
+<tr>
+<td><a href="https://learn.microsoft.com/azure/sap/center-sap-solutions/manage-with-azure-rbac">Azure Center for SAP solutions reader</a></td>
+<td>Subscription level</td>
+<td>Required for Azure resource graph SAP Virtual Instance discovery by Sentinel known SAP SID</td>
+</tr>
+<tr>
+<td><a href="https://learn.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-contributor">Virtual Machine Contributor</a></td>
+<td>At least resource group/virtual machine where Sentinel Collector runs</td>
+<td>Required for remediation option to restart the collector VM</td>
+</tr>
+</tbody>
+</table>
+<p>Learn more about Microsoft Sentinel built-in roles <a href="https://learn.microsoft.com/azure/sentinel/roles">here</a> and Azure built-in roles <a href="https://learn.microsoft.com/azure/role-based-access-control/built-in-roles">here</a>.</p>
+<h2>Additional integration options with Azure Resource Graph query for ACSS</h2>
+<p><a href="https://portal.azure.com/?#view/HubsExtension/ArgQueryBlade">Azure Resource Graph Explorer🔗</a></p>
+<p>This playbook uses below query (dynmic SID param coming from Sentinel). Get inspired from it to expand to your own scenarios.</p>
+<p>Find the REST API docs for the resource graph <a href="https://learn.microsoft.com/rest/api/azureresourcegraph/resourcegraph(2021-03-01)/resources/resources?tabs=HTTP">here</a>.</p>
+<p><code>POST https://management.azure.com/providers/Microsoft.ResourceGraph/resources?api-version=2021-03-01</code></p>
+<p>BODY</p>
+<pre><code class="language-sql">// Global SAP ACSS details by SID
+// Click the &quot;Run query&quot; command above to execute the query and see results.
+resources
+| where type =~ 'Microsoft.Workloads/sapVirtualInstances' //get all resources of type SAP Virtual Instance
+| where name == 'P01' //get selected SAP SID
+| project id,name,tenantId,resourceGroup,subscriptionId,properties.health,properties.status //get only required fields
+</code></pre>
+<p><a href="#">🔝</a></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/sap.html">Back to SAP</a></p>
+</div>
+</body>
+</html>

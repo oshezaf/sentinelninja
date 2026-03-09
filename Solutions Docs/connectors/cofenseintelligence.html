@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ Cofense Intelligence Threat Indicators Ingestion &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>⚠️ Cofense Intelligence Threat Indicators Ingestion</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CofenseTriage.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>CofenseIntelligence</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Cofense</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/cofenseintelligence.html">CofenseIntelligence</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CofenseIntelligence/Data%20Connectors/CofenseIntelligenceDataConnector/CofenseIntelligence_API_FunctionApp.json">CofenseIntelligence_API_FunctionApp.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Azure Function code uses SharedKey/HTTP Data Collector API</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://cofense.com/product-services/phishing-intelligence/">Cofense-Intelligence</a> data connector provides the following capabilities: </p>
+<ol>
+<li>CofenseToSentinel : </li>
+</ol>
+<blockquote>
+<ul>
+<li>Get Threat Indicators from the Cofense Intelligence platform and create Threat Intelligence Indicators in Microsoft Sentinel. </li>
+</ul>
+</blockquote>
+<ol start="2">
+<li>SentinelToDefender : </li>
+</ol>
+<blockquote>
+<ul>
+<li>Get Malware from Cofense Intelligence and post to custom logs table. </li>
+</ul>
+</blockquote>
+<ol start="3">
+<li>CofenseIntelligenceMalware : </li>
+</ol>
+<blockquote>
+<ul>
+<li>Get Cofense Intelligence Threat Intelligence Indicators from Microsoft Sentinel Threat Intelligence and create/update Indicators in Microsoft Defender for Endpoints.</li>
+</ul>
+</blockquote>
+<ol start="4">
+<li>DownloadThreatReports : </li>
+</ol>
+<blockquote>
+<ul>
+<li>This data connector will fetch the malware data and create the Link from which we can download Threat Reports. </li>
+</ul>
+</blockquote>
+<ol start="5">
+<li>RetryFailedIndicators : </li>
+</ol>
+<blockquote>
+<ul>
+<li>This data connector will fetch failed indicators from failed indicators file and retry creating/updating Threat Intelligence indicators in Microsoft Sentinel. </li>
+</ul>
+</blockquote>
+<p>For more details of REST APIs refer to the below documentations: </p>
+<ol>
+<li>Cofense Intelligence API documentation: </li>
+</ol>
+<blockquote>
+<p>https://www.threathq.com/docs/rest_api_reference.html </p>
+</blockquote>
+<ol start="2">
+<li>Microsoft Threat Intelligence Indicator documentation: </li>
+</ol>
+<blockquote>
+<p>https://learn.microsoft.com/rest/api/securityinsights/preview/threat-intelligence-indicator </p>
+</blockquote>
+<ol start="3">
+<li>Microsoft Defender for Endpoints Indicator documentation: </li>
+</ol>
+<blockquote>
+<p>https://learn.microsoft.com/microsoft-365/security/defender-endpoint/ti-indicator?view=o365-worldwide</p>
+</blockquote>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/malware-data-cl.html"><code>Malware_Data_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Azure Subscription</strong>: Azure Subscription with owner role is required to register an application in azure active directory() and assign role of contributor to app in resource group.
+- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
+- <strong>REST API Credentials/permissions</strong>: <strong>Cofense Username</strong> and <strong>Password</strong> is required.  See the documentation to learn more about API on the <a href="https://www.threathq.com/docs/rest_api_reference.html">Rest API reference</a>
+- <strong>Microsoft Defender for Endpoints</strong>: <strong>Microsoft Defender for Endpoints License</strong> is required for SentinelToDefender function.</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+<p><strong>NOTE:</strong> This connector uses Azure Functions to connect to the Cofense Intelligence APIs to pull its Threat Indicators and create Threat Intelligence Indicators into Microsoft Sentinel Threat Intelligence and create/update Threat Indicators in Cofense. Likewise, it also creates/updates Cofense Based Threat Indicators in Microsoft Defender for Endpoints. All this might result in additional indicator and data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
+<p><strong>(Optional Step)</strong> Securely store workspace and API authorization key(s) or token(s) in Azure Key Vault. Azure Key Vault provides a secure mechanism to store and retrieve key values. <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Follow these instructions</a> to use Azure Key Vault with an Azure Function App.</p>
+</blockquote>
+<p><strong>STEP 1 - App Registration steps for the Microsoft Azure Active Directory Application</strong></p>
+<p>This integration requires an App registration in the Azure portal. Follow the steps in this section to create a new Azure Active Directory application:
+ 1. Sign in to the <a href="https://portal.azure.com/">Azure portal</a>.
+ 2. Search for and select <strong>Azure Active Directory</strong>.
+ 3. Under <strong>Manage</strong>, select <strong>App registrations &gt; New registration</strong>.
+ 4. Enter a display <strong>Name</strong> for your application.
+ 5. Select <strong>Register</strong> to complete the initial app registration.
+ 6. When registration finishes, the Azure portal displays the app registration's Overview pane. You see the <strong>Application (client) ID</strong> and <strong>Tenant ID</strong>. The client ID and Tenant ID is required as configuration parameters for the execution of CofenseIntelligence Data Connector. </p>
+<blockquote>
+<p><strong>Reference link:</strong> <a href="https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app">https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app</a></p>
+</blockquote>
+<p><strong>STEP 2 - Add a client secret for Microsoft Azure Active Directory Application</strong></p>
+<p>Sometimes called an application password, a client secret is a string value required for the execution of CofenseIntelligence Data Connector. Follow the steps in this section to create a new Client Secret:
+ 1. In the Azure portal, in <strong>App registrations</strong>, select your application.
+ 2. Select <strong>Certificates &amp; secrets &gt; Client secrets &gt; New client secret</strong>.
+ 3. Add a description for your client secret.
+ 4. Select an expiration for the secret or specify a custom lifetime. Limit is 24 months.
+ 5. Select <strong>Add</strong>. 
+ 6. <em>Record the secret's value for use in your client application code. This secret value is never displayed again after you leave this page.</em> The secret value is required as configuration parameter for the execution of CofenseIntelligence Data Connector. </p>
+<blockquote>
+<p><strong>Reference link:</strong> <a href="https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret">https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret</a></p>
+</blockquote>
+<p><strong>STEP 3 - Assign role of Contributor to Microsoft Azure Active Directory Application</strong></p>
+<p>Follow the steps in this section to assign the role:
+ 1. In the Azure portal, Go to <strong>Resource Group</strong> and select your resource group.
+ 2. Go to <strong>Access control (IAM)</strong> from left panel.
+ 3. Click on <strong>Add</strong>, and then select <strong>Add role assignment</strong>.
+ 4. Select <strong>Contributor</strong> as role and click on next.
+ 5. In <strong>Assign access to</strong>, select <code>User, group, or service principal</code>.
+ 6. Click on <strong>add members</strong> and type <strong>your app name</strong> that you have created and select it.
+ 7. Now click on <strong>Review + assign</strong> and then again click on <strong>Review + assign</strong>. </p>
+<blockquote>
+<p><strong>Reference link:</strong> <a href="https://learn.microsoft.com/azure/role-based-access-control/role-assignments-portal">https://learn.microsoft.com/azure/role-based-access-control/role-assignments-portal</a></p>
+</blockquote>
+<p><strong>STEP 4 - Assign Defender Threat Indicator permissions to Microsoft Azure Active Directory Application</strong></p>
+<p>Follow the steps in this section to assign the permissions:
+ 1. In the Azure portal, in <strong>App registrations</strong>, select <strong>your application</strong>.
+ 2. To enable an app to access Defender for Endpoint indicators, assign it <strong>'Ti.ReadWrite.All'</strong> permission, on your application page, select <strong>API Permissions &gt; Add permission &gt; APIs my organization uses &gt;, type WindowsDefenderATP, and then select WindowsDefenderATP</strong>.
+ 3. Select <strong>Application permissions &gt; Ti.ReadWrite.All</strong>, and then select <strong>Add permissions</strong>.
+ 4. Select <strong>Grant consent</strong>. </p>
+<blockquote>
+<p><strong>Reference link:</strong> <a href="https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exposed-apis-create-app-webapp?view=o365-worldwide">https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exposed-apis-create-app-webapp?view=o365-worldwide</a></p>
+</blockquote>
+<p><strong>STEP 5 - Steps to create/get Credentials for the Cofense Intelligence account</strong> </p>
+<p>Follow the steps in this section to create/get <strong>Cofense Username</strong> and <strong>Password</strong>:
+ 1. Login to https://threathq.com and go to the <strong>Settings menu</strong> on the left navigation bar.
+ 2. Choose the API Tokens tab and select <strong>Add a New Token</strong>
+ 3. Make sure to save the <strong>password</strong>, as it will not be accessible again.</p>
+<p><strong>STEP 6 - Choose ONE from the following two deployment options to deploy the connector and the associated Azure Function</strong></p>
+<blockquote>
+<p><strong>IMPORTANT:</strong> Before deploying the Cofense Intelligence Threat Indicators data connector, have the  Workspace ID and Workspace Primary Key (can be copied from the following) readily available.., as well as the Cofense API Authorization Key(s).
+- <strong>Workspace ID</strong>: <code>WorkspaceId</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
+- <strong>Primary Key</strong>: <code>PrimaryKey</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+<p><strong>7. Option 1 - Azure Resource Manager (ARM) Template</strong></p>
+<p>Use this method for automated deployment of the Cofense connector.</p>
+<ol>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below. </p>
+<p><a href="https://aka.ms/sentinel-CofenseIntelligence-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. 
+3. Enter the below information : 
+    Function Name 
+    Workspace ID 
+    Workspace Key 
+    Cofense BaseURL (https://<your-cofense-instance-name>/)<br />
+    Cofense Username 
+    Cofense Password 
+    Azure Client ID 
+    Azure Client Secret 
+    Azure Tenant ID 
+    Azure Resource Group Name 
+    Azure Workspace Name 
+    Azure Subscription ID 
+    RequireProxy 
+    Proxy Username (optional) 
+    Proxy Password (optional) 
+    Proxy URL (optional) 
+    Proxy Port (optional) 
+    LogLevel (optional) 
+    Malware_Data_Table_name
+    SendCofenseIndicatorToDefender 
+    Schedule 
+4. Click on <strong>Review+Create</strong>. 
+5. Then after validation click on <strong>Create</strong> to deploy.</p>
+</li>
+</ol>
+<p><strong>8. Option 2 - Manual Deployment of Azure Functions</strong></p>
+<p>Use the following step-by-step instructions to deploy the Cofense Intelligence Threat Indicators data connector manually with Azure Functions (Deployment via Visual Studio Code).</p>
+<p><strong>1. Deploy a Function App</strong></p>
+<blockquote>
+<p><strong>NOTE:</strong> You will need to <a href="https://docs.microsoft.com/azure/azure-functions/functions-create-first-function-python#prerequisites">prepare VS code</a> for Azure function development.</p>
+</blockquote>
+<ol>
+<li>Download the <a href="https://aka.ms/sentinel-CofenseIntelligence-functionapp">Azure Function App</a> file. Extract archive to your local development computer.</li>
+<li>Start VS Code. Choose File in the main menu and select Open Folder.</li>
+<li>Select the top level folder from extracted files.</li>
+<li>Choose the Azure icon in the Activity bar, then in the <strong>Azure: Functions</strong> area, choose the <strong>Deploy to function app</strong> button.
+If you aren't already signed in, choose the Azure icon in the Activity bar, then in the <strong>Azure: Functions</strong> area, choose <strong>Sign in to Azure</strong>
+If you're already signed in, go to the next step.</li>
+<li>
+<p>Provide the following information at the prompts:</p>
+<p>a. <strong>Select folder:</strong> Choose a folder from your workspace or browse to one that contains your function app.</p>
+<p>b. <strong>Select Subscription:</strong> Choose the subscription to use.</p>
+<p>c. Select <strong>Create new Function App in Azure</strong> (Don't choose the Advanced option)</p>
+<p>d. <strong>Enter a globally unique name for the function app:</strong> Type a name that is valid in a URL path. The name you type is validated to make sure that it's unique in Azure Functions. (e.g. CofenseXXXXX).</p>
+<p>e. <strong>Select a runtime:</strong> Choose Python 3.11 or above.</p>
+<p>f. Select a location for new resources. For better performance and lower costs choose the same <a href="https://azure.microsoft.com/regions/">region</a> where Microsoft Sentinel is located.</p>
+</li>
+<li>
+<p>Deployment will begin. A notification is displayed after your function app is created and the deployment package is applied.</p>
+</li>
+<li>Go to Azure Portal for the Function App configuration.</li>
+</ol>
+<p><strong>2. Configure the Function App</strong></p>
+<ol>
+<li>In the Function App, select the Function App Name and select <strong>Configuration</strong>.</li>
+<li>In the <strong>Application settings</strong> tab, select <strong>+ New application setting</strong>.</li>
+<li>Add each of the following application settings individually, with their respective values (case-sensitive): 
+        Workspace ID 
+        Workspace Key 
+        Cofense BaseURL (https://<your-cofense-instance-name>/)<br />
+        Cofense Username 
+        Cofense Password 
+        Azure Client ID 
+        Azure Client Secret 
+        Azure Tenant ID 
+        Azure Resource Group Name 
+        Azure Workspace Name 
+        Function App Name 
+        Azure Subscription ID 
+        RequireProxy 
+        Proxy Username (optional) 
+        Proxy Password (optional) 
+        Proxy URL (optional) 
+        Proxy Port (optional) 
+        LogLevel (optional) 
+        Malware_Data_Table_name
+        SendCofenseIndicatorToDefender 
+        Schedule </li>
+<li>Once all application settings have been entered, click <strong>Save</strong>.</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

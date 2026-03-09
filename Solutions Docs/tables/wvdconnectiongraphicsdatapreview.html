@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WVDConnectionGraphicsDataPreview &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>WVDConnectionGraphicsDataPreview</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for WVDConnectionGraphicsDataPreview table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Azure Virtual Desktop</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wvdconnectiongraphicsdatapreview">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (19 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wvdconnectiongraphicsdatapreview">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClientSkippedFramesPercentage</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The percentage of frames dropped because of slow client decoding in the second with the highest dropped frames in the last evaluated connection time interval</td>
+</tr>
+<tr>
+<td style="text-align: left;">CompressedFrameSizeInBytes</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The compressed size (bytes) of the frame with highest E2E delay in the last evaluated connection time interval</td>
+</tr>
+<tr>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The correlation ID for the activity</td>
+</tr>
+<tr>
+<td style="text-align: left;">DecodingTimeOnClientInMs</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The decoding time (milliseconds) of the frame with highest E2E delay in the last evaluated connection time interval</td>
+</tr>
+<tr>
+<td style="text-align: left;">EncodingDelayOnServerInMs</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The encoding time (milliseconds) of the frame with highest E2E delay in the last evaluated connection time interval</td>
+</tr>
+<tr>
+<td style="text-align: left;">EndToEndDelayInMs</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The highest end-to-end delay (milliseconds) of the frames sent in the last evaluated connection time interval. E2E delay is the delay from the time when a frame is captured on the server until the time frame is rendered on the client</td>
+</tr>
+<tr>
+<td style="text-align: left;">EstAvailableBandwidthKBps</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The average of estimated network bandwidth (kilobyte per second) in the last evaluated connection time interval</td>
+</tr>
+<tr>
+<td style="text-align: left;">EstRoundTripTimeInMs</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The average of estimated network round trip times (milliseconds) in the last evaluated connection time interval</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkSkippedFramesPercentage</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The percentage of frames dropped because of insufficient network bandwidth in the second with the highest dropped frames in the last evaluated connection time interval</td>
+</tr>
+<tr>
+<td style="text-align: left;">RenderingTimeOnClientInMs</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The rendering time (milliseconds) of the frame with highest E2E delay in the last evaluated connection time interval</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServerSkippedFramesPercentage</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The percentage of frames dropped because server is busy in the second with the highest dropped frames in the last evaluated connection time interval</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) when the QoE event was generated on the VM</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.desktopvirtualization/hostpools</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

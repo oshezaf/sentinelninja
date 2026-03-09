@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🚫 Deprecated Microsoft Exchange Logs and Events &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>🚫 [Deprecated] Microsoft Exchange Logs and Events</h1>
+<blockquote>
+<p>🚫 <strong>Deprecated:</strong> This connector has been deprecated and may be removed in future versions.</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>ESI-ExchangeAdminAuditLogEvents</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/mma.html">MMA</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20On-Premises/Data%20Connectors/ESI-ExchangeAdminAuditLogEvents.json">ESI-ExchangeAdminAuditLogEvents.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+</tbody>
+</table>
+<p>Deprecated, use the 'ESI-Opt' dataconnectors. You can stream all Exchange Audit events, IIS Logs, HTTP Proxy logs and Security Event logs from the Windows machines connected to your Microsoft Sentinel workspace using the Windows agent. This connection enables you to view dashboards, create custom alerts, and improve investigation. This is used by Microsoft Exchange Security Workbooks to provide security insights of your On-Premises Exchange environment</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/event.html"><code>Event</code></a></td>
+<td style="text-align: left;"><code>EventLog in "Application,MSExchange Management,System"</code></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/exchangehttpproxy-cl.html"><code>ExchangeHttpProxy_CL</code></a> 🔶</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/messagetrackinglog-cl.html"><code>MessageTrackingLog_CL</code></a> 🔶</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/w3ciislog.html"><code>W3CIISLog</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Detailled documentation</strong>: &gt;<strong>NOTE:</strong> Detailled documentation on Installation procedure and usage can be found <a href="https://aka.ms/MicrosoftExchangeSecurityGithub">here</a></p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+<p><strong>NOTE:</strong> This solution is based on options. This allows you to choose which data will be ingest as some options can generate a very high volume of data. Depending on what you want to collect, track in your Workbooks, Analytics Rules, Hunting capabilities you will choose the option(s) you will deploy. Each options are independant for one from the other. To learn more about each option: <a href="https://aka.ms/ESI_DataConnectorOptions">'Microsoft Exchange Security' wiki</a></p>
+</blockquote>
+<p><strong>1.  Download and install the agents needed to collect logs for Microsoft Sentinel</strong></p>
+<p>Type of servers (Exchange Servers, Domain Controllers linked to Exchange Servers or all Domain Controllers) depends on the option you want to deploy.
+<strong>Deploy Monitor Agents</strong></p>
+<p>This step is required only if it's the first time you onboard your Exchange Servers/Domain Controllers
+  <strong>Select which agent you want to install in your servers to collect logs:</strong></p>
+<p><strong>[Prefered] Azure Monitor Agent via Azure Arc</strong></p>
+<pre><code>**Deploy the Azure Arc Agent**
+</code></pre>
+<blockquote>
+<p><a href="https://docs.microsoft.com/azure/azure-monitor/agents/azure-monitor-agent-install?tabs=ARMAgentPowerShell,PowerShellWindows,PowerShellWindowsArc,CLIWindows,CLIWindowsArc">Learn more</a></p>
+</blockquote>
+<pre><code>**Install Azure Log Analytics Agent (Deprecated on 31/08/2024)**
+
+1. Download the Azure Log Analytics Agent and choose the deployment method in the below link.
+- **Install/configure: InstallAgentOnNonAzure**
+</code></pre>
+<p><strong>2.  Deploy log injestion following choosed options</strong>
+<strong>[Option 1] MS Exchange Management Log collection</strong></p>
+<p>Select how to stream MS Exchange Admin Audit event logs
+  <strong>MS Exchange Admin Audit event logs</strong></p>
+<p><strong>Data Collection Rules - When Azure Monitor Agent is used</strong></p>
+<pre><code>**Enable data collection rule**
+</code></pre>
+<blockquote>
+<p>Microsoft Exchange Admin Audit Events logs are collected only from <strong>Windows</strong> agents.
+<strong>Option 1 - Azure Resource Manager (ARM) Template</strong></p>
+</blockquote>
+<pre><code>  Use this method for automated deployment of the DCR.
+</code></pre>
+<ol>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below. </p>
+<p><a href="https://aka.ms/sentinel-ESI-DCROption1-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. 
+3. Enter the <strong>Workspace Name</strong> 'and/or Other required fields'.</p>
+<blockquote>
+<ol start="4">
+<li>Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>. </li>
+<li>Click <strong>Purchase</strong> to deploy.</li>
+</ol>
+</blockquote>
+<p><strong>Option 2 - Manual Deployment of Azure Automation</strong></p>
+<p>Use the following step-by-step instructions to deploy manually a Data Collection Rule.
+<strong>A. Create DCR, Type Event log</strong></p>
+<pre><code>1.  From the Azure Portal, navigate to [Azure Data collection rules](https://portal.azure.com/#view/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/~/dataCollectionRules).
+</code></pre>
+<ol start="2">
+<li>Click <strong>+ Create</strong> at the top.</li>
+<li>In the <strong>Basics</strong> tab, fill the required fields, Select Windows as platform type and give a name to the DCR. </li>
+<li>In the <strong>Resources</strong> tab, enter you Exchange Servers.</li>
+<li>In 'Collect and deliver', add a Data Source type 'Windows Event logs' and select 'Custom' option, enter 'MSExchange Management' as expression and Add it.</li>
+<li>'Make other preferable configuration changes', if needed, then click <strong>Create</strong>.</li>
+</ol>
+<p><strong>Assign the DCR to all Exchange Servers</strong></p>
+<p>Add all your Exchange Servers to the DCR</p>
+<p><strong>Data Collection Rules - When the legacy Azure Log Analytics Agent is used</strong></p>
+<p><strong>Configure the logs to be collected</strong></p>
+</li>
+</ol>
+<p>Configure the Events you want to collect and their severities.</p>
+<ol>
+<li>Under workspace <strong>Legacy agents management</strong>, select <strong>Windows Event logs</strong>.</li>
+<li>Click <strong>Add Windows event log</strong> and enter <strong>MSExchange Management</strong> as log name.</li>
+<li>Collect Error, Warning and Information types</li>
+<li>Click <strong>Save</strong>.<ul>
+<li><strong>Open Syslog settings</strong>
+<strong>[Option 2] Security/Application/System logs of Exchange Servers</strong></li>
+</ul>
+</li>
+</ol>
+<p>Select how to stream Security/Application/System logs of Exchange Servers
+  <strong>Security Event log collection</strong></p>
+<p><strong>Data Collection Rules - Security Event logs</strong></p>
+<pre><code>**Enable data collection rule for Security Logs**
+</code></pre>
+<p>Security Events logs are collected only from <strong>Windows</strong> agents.
+1. Add Exchange Servers on <em>Resources</em> tab.
+2. Select Security log level</p>
+<blockquote>
+<p><strong>Common level</strong> is the minimum required. Please select 'Common' or 'All Security Events' on DCR definition.
+    - <strong>Create data collection rule</strong>
+  <strong>Application and System Event log collection</strong></p>
+</blockquote>
+<p><strong>Data Collection Rules - When Azure Monitor Agent is used</strong></p>
+<pre><code>**Enable data collection rule**
+</code></pre>
+<blockquote>
+<p>Application and System Events logs are collected only from <strong>Windows</strong> agents.
+<strong>Option 1 - Azure Resource Manager (ARM) Template</strong></p>
+</blockquote>
+<pre><code>  Use this method for automated deployment of the DCR.
+</code></pre>
+<ol>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below. </p>
+<p><a href="https://aka.ms/sentinel-ESI-DCROption2-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. 
+3. Enter the <strong>Workspace Name</strong> 'and/or Other required fields'.</p>
+<blockquote>
+<ol start="4">
+<li>Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>. </li>
+<li>Click <strong>Purchase</strong> to deploy.</li>
+</ol>
+</blockquote>
+<p><strong>Option 2 - Manual Deployment of Azure Automation</strong></p>
+<p>Use the following step-by-step instructions to deploy manually a Data Collection Rule.
+<strong>A. Create DCR, Type Event log</strong></p>
+<pre><code>1.  From the Azure Portal, navigate to [Azure Data collection rules](https://portal.azure.com/#view/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/~/dataCollectionRules).
+</code></pre>
+<ol start="2">
+<li>Click <strong>+ Create</strong> at the top.</li>
+<li>In the <strong>Basics</strong> tab, fill the required fields, Select Windows as platform type and give a name to the DCR. </li>
+<li>In the <strong>Resources</strong> tab, enter you Exchange Servers.</li>
+<li>In 'Collect and deliver', add a Data Source type 'Windows Event logs' and select 'Basic' option.</li>
+<li>For Application, select 'Critical', 'Error' and 'Warning'. For System, select Critical/Error/Warning/Information. </li>
+<li>'Make other preferable configuration changes', if needed, then click <strong>Create</strong>.</li>
+</ol>
+<p><strong>Assign the DCR to all Exchange Servers</strong></p>
+<p>Add all your Exchange Servers to the DCR</p>
+<p><strong>Data Collection Rules - When the legacy Azure Log Analytics Agent is used</strong></p>
+<p><strong>Configure the logs to be collected</strong></p>
+</li>
+</ol>
+<p>Configure the Events you want to collect and their severities.</p>
+<ol>
+<li>Under workspace advanced settings <strong>Configuration</strong>, select <strong>Data</strong> and then <strong>Windows Event logs</strong>.</li>
+<li>Click <strong>Add Windows event log</strong> and search <strong>Application</strong> as log name.</li>
+<li>Click <strong>Add Windows event log</strong> and search <strong>System</strong> as log name.</li>
+<li>Collect Error (for all), Warning (for all) and Information (for System) types</li>
+<li>Click <strong>Save</strong>.<ul>
+<li><strong>Open Syslog settings</strong>
+<strong>[Option 3 and 4] Security logs of Domain Controllers</strong></li>
+</ul>
+</li>
+</ol>
+<p>Select how to stream Security logs of Domain Controllers. If you want to implement Option 3, you just need to select DC on same site as Exchange Servers. If you want to implement Option 4, you can select all DCs of your forest.
+<strong>[Option 3] List only Domain Controllers on the same site as Exchange Servers for next step</strong></p>
+<pre><code>**This limits the quantity of data injested but some incident can't be detected.**
+
+**[Option 4] List all Domain Controllers of your Active-Directory Forest for next step**
+
+**This allows collecting all security events**
+</code></pre>
+<p><strong>Security Event log collection</strong></p>
+<p><strong>Data Collection Rules - Security Event logs</strong></p>
+<pre><code>**Enable data collection rule for Security Logs**
+</code></pre>
+<p>Security Events logs are collected only from <strong>Windows</strong> agents.
+1. Add chosen DCs on <em>Resources</em> tab.
+2. Select Security log level</p>
+<blockquote>
+<p><strong>Common level</strong> is the minimum required. Please select 'Common' or 'All Security Events' on DCR definition.
+    - <strong>Create data collection rule</strong>
+<strong>[Option 5] IIS logs of Exchange Servers</strong></p>
+</blockquote>
+<p>Select how to stream IIS logs of Exchange Servers
+<strong>Data Collection Rules - When Azure Monitor Agent is used</strong></p>
+<pre><code>**Enable data collection rule**
+</code></pre>
+<blockquote>
+<p>IIS logs are collected only from <strong>Windows</strong> agents.
+    &gt; 📋 <strong>Additional Configuration Step</strong>: This connector includes a configuration step of type <code>AdminAuditEvents</code>. Please refer to the Microsoft Sentinel portal for detailed configuration options for this step.
+<strong>Option 1 - Azure Resource Manager (ARM) Template</strong></p>
+</blockquote>
+<pre><code>  Use this method for automated deployment of the DCE and DCR.
+</code></pre>
+<p><strong>A. Create DCE (If not already created for Exchange Servers)</strong></p>
+<pre><code>    1. Click the **Deploy to Azure** button below.
+
+[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://aka.ms/sentinel-ESI-DCEExchangeServers)
+</code></pre>
+<ol start="2">
+<li>Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. </li>
+<li>You can change the proposed name of the DCE.</li>
+<li>
+<p>Click <strong>Create</strong> to deploy.</p>
+<pre><code>**B. Deploy Data Connection Rule**
+
+1. Click the **Deploy to Azure** button below.
+</code></pre>
+<p><a href="https://aka.ms/sentinel-ESI-DCROption5-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. 
+3. Enter the <strong>Workspace ID</strong> 'and/or Other required fields'.</p>
+<blockquote>
+<ol start="4">
+<li>Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>. </li>
+<li>Click <strong>Purchase</strong> to deploy.</li>
+</ol>
+</blockquote>
+<p><strong>Option 2 - Manual Deployment of Azure Automation</strong></p>
+<p>Use the following step-by-step instructions to deploy manually a Data Collection Rule.
+<strong>A. Create DCE (If not already created for Exchange Servers)</strong></p>
+<pre><code>1.  From the Azure Portal, navigate to [Azure Data collection Endpoint](https://portal.azure.com/#view/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/~/dataCollectionEndpoints).
+</code></pre>
+<ol start="2">
+<li>Click <strong>+ Create</strong> at the top.</li>
+<li>In the <strong>Basics</strong> tab, fill the required fields and give a name to the DCE. </li>
+<li>
+<p>'Make other preferable configuration changes', if needed, then click <strong>Create</strong>.</p>
+<p><strong>B. Create DCR, Type IIS log</strong></p>
+<ol>
+<li>From the Azure Portal, navigate to <a href="https://portal.azure.com/#view/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/~/dataCollectionRules">Azure Data collection rules</a>.</li>
+<li>Click <strong>+ Create</strong> at the top.</li>
+<li>In the <strong>Basics</strong> tab, fill the required fields, Select Windows as platform type and give a name to the DCR. Select the created DCE. </li>
+<li>In the <strong>Resources</strong> tab, enter you Exchange Servers.</li>
+<li>In 'Collect and deliver', add a Data Source type 'IIS logs' (Do not enter a path if IIS Logs path is configured by default). Click on 'Add data source'</li>
+<li>'Make other preferable configuration changes', if needed, then click <strong>Create</strong>.</li>
+</ol>
+</li>
+</ol>
+<p><strong>Assign the DCR to all Exchange Servers</strong></p>
+<p>Add all your Exchange Servers to the DCR</p>
+<p><strong>Data Collection Rules - When the legacy Azure Log Analytics Agent is used</strong></p>
+<p><strong>Configure the logs to be collected</strong></p>
+</li>
+</ol>
+<p>Configure the Events you want to collect and their severities.</p>
+<ol>
+<li>Under workspace advanced settings <strong>Configuration</strong>, select <strong>Data</strong> and then <strong>IIS Logs</strong>.</li>
+<li>Check <strong>Collect W3C format IIS log files</strong></li>
+<li>Click <strong>Save</strong>.<ul>
+<li><strong>Open Syslog settings</strong>
+<strong>[Option 6] Message Tracking of Exchange Servers</strong></li>
+</ul>
+</li>
+</ol>
+<p>Select how to stream Message Tracking of Exchange Servers
+<strong>Data Collection Rules - When Azure Monitor Agent is used</strong></p>
+<pre><code>**Enable data collection rule**
+</code></pre>
+<blockquote>
+<p>Message Tracking are collected only from <strong>Windows</strong> agents.</p>
+</blockquote>
+<pre><code>ℹ️ **Attention**, Custom logs in Monitor Agent is in Preview. The deployment doesn't work as expected for the moment (March 2023).
+</code></pre>
+<p><strong>Option 1 - Azure Resource Manager (ARM) Template</strong></p>
+<pre><code>  Use this method for automated deployment of the DCE and DCR.
+</code></pre>
+<p><strong>A. Create DCE (If not already created for Exchange Servers)</strong></p>
+<pre><code>    1. Click the **Deploy to Azure** button below.
+
+[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://aka.ms/sentinel-ESI-DCEExchangeServers)
+</code></pre>
+<ol start="2">
+<li>Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. </li>
+<li>You can change the proposed name of the DCE.</li>
+<li>
+<p>Click <strong>Create</strong> to deploy.</p>
+<pre><code>**B. Deploy Data Connection Rule and Custom Table**
+
+1. Click the **Deploy to Azure** button below.
+</code></pre>
+<p><a href="https://aka.ms/sentinel-ESI-DCROption6-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. 
+3. Enter the <strong>Workspace ID</strong> 'and/or Other required fields'.</p>
+<blockquote>
+<ol start="4">
+<li>Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>. </li>
+<li>Click <strong>Purchase</strong> to deploy.</li>
+</ol>
+</blockquote>
+<p><strong>Option 2 - Manual Deployment of Azure Automation</strong></p>
+<p>Use the following step-by-step instructions to deploy manually a Data Collection Rule.
+<strong>A. Create DCE (If not already created for Exchange Servers)</strong></p>
+<pre><code>1.  From the Azure Portal, navigate to [Azure Data collection Endpoint](https://portal.azure.com/#view/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/~/dataCollectionEndpoints).
+</code></pre>
+<ol start="2">
+<li>Click <strong>+ Create</strong> at the top.</li>
+<li>In the <strong>Basics</strong> tab, fill the required fields and give a name to the DCE, like ESI-ExchangeServers. </li>
+<li>
+<p>'Make other preferable configuration changes', if needed, then click <strong>Create</strong>.</p>
+<p><strong>B. Create Custom DCR Table</strong></p>
+<ol>
+<li>Download the Example file from <a href="https://aka.ms/Sentinel-Sample-ESI-MessageTrackingExampleFile">Microsoft Sentinel GitHub</a>.</li>
+<li>From the Azure Portal, navigate to <a href="https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces">Workspace Analytics</a> and select your target Workspace.</li>
+<li>Click in 'Tables', click <strong>+ Create</strong> at the top and select <strong>New Custom log (DCR-Based)</strong>.</li>
+<li>In the <strong>Basics</strong> tab, enter <strong>MessageTrackingLog</strong> on the Table name, create a Data Collection rule with the name <strong>DCR-Option6-MessageTrackingLogs</strong> (for example) and select the previously created Data collection Endpoint.</li>
+<li>In the <strong>Schema and Transformation</strong> tab, choose the downloaded sample file and click on <strong>Transformation Editor</strong>.</li>
+<li>In the transformation field, enter the following KQL request :
+<em>source
+| extend TimeGenerated = todatetime(['date-time'])
+| extend
+    clientHostname = ['client-hostname'],
+    clientIP = ['client-ip'],
+    connectorId = ['connector-id'],
+    customData = ['custom-data'],
+    eventId = ['event-id'],
+    internalMessageId = ['internal-message-id'],
+    logId = ['log-id'],
+    messageId = ['message-id'],
+    messageInfo = ['message-info'],
+    messageSubject = ['message-subject'],
+    networkMessageId = ['network-message-id'],
+    originalClientIp =  ['original-client-ip'],
+    originalServerIp = ['original-server-ip'],
+    recipientAddress= ['recipient-address'],
+    recipientCount= ['recipient-count'],
+    recipientStatus= ['recipient-status'],
+    relatedRecipientAddress= ['related-recipient-address'],
+    returnPath= ['return-path'],
+    senderAddress= ['sender-address'],
+    senderHostname= ['server-hostname'],
+    serverIp= ['server-ip'],
+    sourceContext= ['source-context'],
+    schemaVersion=['schema-version'],
+    messageTrackingTenantId = ['tenant-id'],
+    totalBytes = ['total-bytes'],
+    transportTrafficType = ['transport-traffic-type']
+| project-away
+    ['client-ip'],
+    ['client-hostname'],
+    ['connector-id'],
+    ['custom-data'],
+    ['date-time'],
+    ['event-id'],
+    ['internal-message-id'],
+    ['log-id'],
+    ['message-id'],
+    ['message-info'],
+    ['message-subject'],
+    ['network-message-id'],
+    ['original-client-ip'],
+    ['original-server-ip'],
+    ['recipient-address'],
+    ['recipient-count'],
+    ['recipient-status'],
+    ['related-recipient-address'],
+    ['return-path'],
+    ['sender-address'],
+    ['server-hostname'],
+    ['server-ip'],
+    ['source-context'],
+    ['schema-version'],
+    ['tenant-id'],
+    ['total-bytes'],
+    ['transport-traffic-type']</em></li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>Click 'Run' and after 'Apply'.</p>
+</li>
+<li>
+<p>Click <strong>Next</strong>, then click <strong>Create</strong>.</p>
+<pre><code>**C. Modify the created DCR, Type Custom log**
+
+1.  From the Azure Portal, navigate to [Azure Data collection rules](https://portal.azure.com/#view/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/~/dataCollectionRules).
+</code></pre>
+<ol start="2">
+<li>Select the previously created DCR, like <strong>DCR-Option6-MessageTrackingLogs</strong>.</li>
+<li>In the <strong>Resources</strong> tab, enter you Exchange Servers.</li>
+<li>In <strong>Data Sources</strong>, add a Data Source type 'Custom Text logs' and enter 'C:\Program Files\Microsoft\Exchange Server\V15\TransportRoles\Logs\MessageTracking*.log' in file pattern, 'MessageTrackingLog_CL' in Table Name.
+6.in Transform field, enter the following KQL request :
+<em>source
+| extend TimeGenerated = todatetime(['date-time'])
+| extend
+clientHostname = ['client-hostname'],
+clientIP = ['client-ip'],
+connectorId = ['connector-id'],
+customData = ['custom-data'],
+eventId = ['event-id'],
+internalMessageId = ['internal-message-id'],
+logId = ['log-id'],
+messageId = ['message-id'],
+messageInfo = ['message-info'],
+messageSubject = ['message-subject'],
+networkMessageId = ['network-message-id'],
+originalClientIp =  ['original-client-ip'],
+originalServerIp = ['original-server-ip'],
+recipientAddress= ['recipient-address'],
+recipientCount= ['recipient-count'],
+recipientStatus= ['recipient-status'],
+relatedRecipientAddress= ['related-recipient-address'],
+returnPath= ['return-path'],
+senderAddress= ['sender-address'],
+senderHostname= ['server-hostname'],
+serverIp= ['server-ip'],
+sourceContext= ['source-context'],
+schemaVersion=['schema-version'],
+messageTrackingTenantId = ['tenant-id'],
+totalBytes = ['total-bytes'],
+transportTrafficType = ['transport-traffic-type']
+| project-away
+['client-ip'],
+['client-hostname'],
+['connector-id'],
+['custom-data'],
+['date-time'],
+['event-id'],
+['internal-message-id'],
+['log-id'],
+['message-id'],
+['message-info'],
+['message-subject'],
+['network-message-id'],
+['original-client-ip'],
+['original-server-ip'],
+['recipient-address'],
+['recipient-count'],
+['recipient-status'],
+['related-recipient-address'],
+['return-path'],
+['sender-address'],
+['server-hostname'],
+['server-ip'],
+['source-context'],
+['schema-version'],
+['tenant-id'],
+['total-bytes'],
+['transport-traffic-type']</em> </li>
+<li>Click on 'Add data source'.</li>
+</ol>
+<p><strong>Assign the DCR to all Exchange Servers</strong></p>
+<p>Add all your Exchange Servers to the DCR</p>
+<p><strong>Data Collection Rules - When the legacy Azure Log Analytics Agent is used</strong></p>
+<p><strong>Configure the logs to be collected</strong></p>
+</li>
+<li>
+<p>Under workspace <strong>Settings</strong> part, select <strong>Tables</strong>, click <strong>+ Create</strong> and click on <strong>New custom log (MMA-Based)</strong>.</p>
+</li>
+<li>Select Sample file <strong><a href="https://aka.ms/Sentinel-Sample-ESI-MessageTrackingLogsSampleCSV">MessageTracking Sample</a></strong> and click Next</li>
+<li>Select type <strong>Windows</strong> and enter the path <strong>C:\Program Files\Microsoft\Exchange Server\V15\TransportRoles\Logs\MessageTracking*.log</strong>. Click Next.</li>
+<li>Enter <strong>MessageTrackingLog</strong> as Table name and click Next.</li>
+<li>Click <strong>Save</strong>.<ul>
+<li><strong>Open Syslog settings</strong>
+<strong>[Option 7] HTTP Proxy of Exchange Servers</strong></li>
+</ul>
+</li>
+</ol>
+<p>Select how to stream HTTP Proxy of Exchange Servers
+<strong>Data Collection Rules - When Azure Monitor Agent is used</strong></p>
+<pre><code>**Enable data collection rule**
+</code></pre>
+<blockquote>
+<p>Message Tracking are collected only from <strong>Windows</strong> agents.</p>
+</blockquote>
+<pre><code>ℹ️ **Attention**, Custom logs in Monitor Agent is in Preview. The deployment doesn't work as expected for the moment (March 2023).
+</code></pre>
+<p><strong>Option 1 - Azure Resource Manager (ARM) Template</strong></p>
+<pre><code>  Use this method for automated deployment of the DCE and DCR.
+</code></pre>
+<p><strong>A. Create DCE (If not already created for Exchange Servers)</strong></p>
+<pre><code>    1. Click the **Deploy to Azure** button below.
+
+[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://aka.ms/sentinel-ESI-DCEExchangeServers)
+</code></pre>
+<ol start="2">
+<li>Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. </li>
+<li>You can change the proposed name of the DCE.</li>
+<li>
+<p>Click <strong>Create</strong> to deploy.</p>
+<pre><code>**B. Deploy Data Connection Rule**
+
+1. Click the **Deploy to Azure** button below.
+</code></pre>
+<p><a href="https://aka.ms/sentinel-ESI-DCROption7-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. 
+3. Enter the <strong>Workspace ID</strong> 'and/or Other required fields'.</p>
+<blockquote>
+<ol start="4">
+<li>Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>. </li>
+<li>Click <strong>Purchase</strong> to deploy.</li>
+</ol>
+</blockquote>
+<p><strong>Option 2 - Manual Deployment of Azure Automation</strong></p>
+<p>Use the following step-by-step instructions to deploy manually a Data Collection Rule.
+<strong>A. Create DCE (If not already created for Exchange Servers)</strong></p>
+<pre><code>1.  From the Azure Portal, navigate to [Azure Data collection Endpoint](https://portal.azure.com/#view/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/~/dataCollectionEndpoints).
+</code></pre>
+<ol start="2">
+<li>Click <strong>+ Create</strong> at the top.</li>
+<li>In the <strong>Basics</strong> tab, fill the required fields and give a name to the DCE. </li>
+<li>
+<p>'Make other preferable configuration changes', if needed, then click <strong>Create</strong>.</p>
+<p><strong>B. Create Custom DCR Table</strong></p>
+<ol>
+<li>Download the Example file from <a href="https://aka.ms/Sentinel-Sample-ESI-HTTPProxyExampleFile">Microsoft Sentinel GitHub</a>.</li>
+<li>From the Azure Portal, navigate to <a href="https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces">Workspace Analytics</a> and select your target Workspace.</li>
+<li>Click in 'Tables', click <strong>+ Create</strong> at the top and select <strong>New Custom log (DCR-Based)</strong>.</li>
+<li>In the <strong>Basics</strong> tab, enter <strong>ExchangeHttpProxy</strong> on the Table name, create a Data Collection rule with the name <strong>DCR-Option7-HTTPProxyLogs</strong> (for example) and select the previously created Data collection Endpoint.</li>
+<li>In the <strong>Schema and Transformation</strong> tab, choose the downloaded sample file and click on <strong>Transformation Editor</strong>.</li>
+<li>In the transformation field, enter the following KQL request :
+*source
+| extend TimeGenerated = todatetime(DateTime)
+| project-away DateTime
+*</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>Click 'Run' and after 'Apply'.</p>
+</li>
+<li>
+<p>Click <strong>Next</strong>, then click <strong>Create</strong>.</p>
+<pre><code>**C. Modify the created DCR, Type Custom log**
+
+1.  From the Azure Portal, navigate to [Azure Data collection rules](https://portal.azure.com/#view/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/~/dataCollectionRules).
+</code></pre>
+<ol start="2">
+<li>Select the previously created DCR, like <strong>DCR-Option7-HTTPProxyLogs</strong>.</li>
+<li>In the <strong>Resources</strong> tab, enter you Exchange Servers.</li>
+<li>In <strong>Data Sources</strong>, add a Data Source type 'Custom Text logs' and enter 'C:\Program Files\Microsoft\Exchange Server\V15\Logging\HttpProxy\Autodiscover*.log' in file pattern, 'ExchangeHttpProxy_CL' in Table Name.
+6.in Transform field, enter the following KQL request :
+<em>source
+| extend TimeGenerated = todatetime(DateTime)
+| project-away DateTime</em> </li>
+<li>Click on 'Add data source'.</li>
+</ol>
+<p><strong>Assign the DCR to all Exchange Servers</strong></p>
+<p>Add all your Exchange Servers to the DCR</p>
+<p><strong>Data Collection Rules - When the legacy Azure Log Analytics Agent is used</strong></p>
+<p><strong>Configure the logs to be collected</strong></p>
+</li>
+<li>
+<p>Under workspace <strong>Settings</strong> part, select <strong>Tables</strong>, click <strong>+ Create</strong> and click on <strong>New custom log (MMA-Based)</strong>.</p>
+</li>
+<li>Select Sample file <strong><a href="https://aka.ms/Sentinel-Sample-ESI-HttpProxySampleCSV">MessageTracking Sample</a></strong> and click Next</li>
+<li>Select type <strong>Windows</strong> and enter all the following paths <strong>C:\Program Files\Microsoft\Exchange Server\V15\Logging\HttpProxy\Autodiscover*.log</strong>, <strong>C:\Program Files\Microsoft\Exchange Server\V15\Logging\HttpProxy\Eas*.log</strong>, <strong>C:\Program Files\Microsoft\Exchange Server\V15\Logging\HttpProxy\Ecp*.log</strong>, <strong>C:\Program Files\Microsoft\Exchange Server\V15\Logging\HttpProxy\Ews*.log</strong>, <strong>C:\Program Files\Microsoft\Exchange Server\V15\Logging\HttpProxy\Mapi*.log</strong>, <strong>C:\Program Files\Microsoft\Exchange Server\V15\Logging\HttpProxy\Oab*.log</strong>, <strong>C:\Program Files\Microsoft\Exchange Server\V15\Logging\HttpProxy\Owa*.log</strong>, <strong>C:\Program Files\Microsoft\Exchange Server\V15\Logging\HttpProxy\OwaCalendar*.log</strong>, <strong>C:\Program Files\Microsoft\Exchange Server\V15\Logging\HttpProxy\PowerShell*.log</strong> and <strong>C:\Program Files\Microsoft\Exchange Server\V15\Logging\HttpProxy\RpcHttp*.log</strong> . Click Next.</li>
+<li>Enter <strong>ExchangeHttpProxy</strong> as Table name and click Next.</li>
+<li>Click <strong>Save</strong>.<ul>
+<li><strong>Open Syslog settings</strong></li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> This data connector depends on a parser based on a Kusto Function to work as expected. Parsers are automatically deployed with the solution. Follow the steps to create the Kusto Functions alias : <a href="https://aka.ms/sentinel-ESI-ExchangeCollector-ExchangeAdminAuditLogs-parser"><strong>ExchangeAdminAuditLogs</strong></a>
+<strong>Parsers are automatically deployed during Solution deployment. If you want to deploy manually, follow the steps below</strong></p>
+</blockquote>
+<p><strong>Manual Parser Deployment</strong>
+<strong>1. Download the Parser file</strong></p>
+<pre><code>The latest version of the file [**ExchangeAdminAuditLogs**](https://aka.ms/sentinel-ESI-ExchangeCollector-ExchangeAdminAuditLogs-parser)
+
+**2. Create Parser **ExchangeAdminAuditLogs** function**
+
+In 'Logs' explorer of your Microsoft Sentinel's log analytics, copy the content of the file to Log explorer
+
+**3. Save Parser **ExchangeAdminAuditLogs** function**
+
+Click on save button.
+</code></pre>
+<p>No parameter is needed for this parser.
+Click save again.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

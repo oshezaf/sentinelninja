@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🚫 🔍 Deprecated VMware vCenter &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>🚫 🔍 [Deprecated] VMware vCenter</h1>
+<blockquote>
+<p>🚫 <strong>Deprecated:</strong> This connector has been deprecated and may be removed in future versions.</p>
+<p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>VMwarevCenter</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">VMware</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/vmware-vcenter.html">VMware vCenter</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/mma.html">MMA</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20vCenter/Data%20Connectors/Connector_Syslog_vcenter.json">Connector_Syslog_vcenter.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.vmware.com/in/products/vcenter-server.html">vCenter</a> connector allows you to easily connect your vCenter server logs with Microsoft Sentinel. This gives you more insight into your organization's data centers and improves your security operation capabilities.</p>
+<h2>Additional Information</h2>
+<p>🛠️ <strong>Device Configuration:</strong> Table: <code>vcenter_CL</code>. Configure rsyslog with template and filtering for vpxd/vcenter-server messages. <a href="https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.monitoring.doc/GUID-9633A961-A5C3-4658-B099-B81E0512DC21.html">Configure vCenter syslog</a>. See <a href="https://learn.microsoft.com/azure/sentinel/unified-connector-custom-device#vmware-vcenter">Custom Logs via AMA configuration</a>.</p>
+<h2>Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/vcenter-cl.html"><code>vcenter_CL</code></a> 🔶</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2>Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Include custom pre-requisites if the connectivity requires - else delete customs</strong>: Description for any custom pre-requisite</p>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>NOTE:</strong> This data connector depends on a parser based on a Kusto Function to work as expected which is deployed as part of the solution. To view the function code in Log Analytics, open Log Analytics/Microsoft Sentinel Logs blade, click Functions and search for the alias VMware vCenter and load the function code or click <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20vCenter/Parsers/vCenter.txt">here</a>, on the second line of the query, enter the hostname(s) of your VMware vCenter device(s) and any other unique identifiers for the logstream. The function usually takes 10-15 minutes to activate after solution installation/update. </p>
+<blockquote>
+<ol>
+<li>If you have not installed the vCenter solution from ContentHub then <a href="https://aka.ms/sentinel-vCenter-parser">Follow the steps</a> to use the Kusto function alias, <strong>vCenter</strong></li>
+</ol>
+</blockquote>
+<p><strong>1. Install and onboard the agent for Linux</strong></p>
+<p>Typically, you should install the agent on a different computer from the one on which the logs are generated.</p>
+<blockquote>
+<p>Syslog logs are collected only from <strong>Linux</strong> agents.
+<strong>Choose where to install the agent:</strong></p>
+</blockquote>
+<p><strong>Install agent on Azure Linux Virtual Machine</strong></p>
+<p>Select the machine to install the agent on and then click <strong>Connect</strong>.
+  - <strong>Install agent on Linux Virtual Machine</strong></p>
+<p><strong>Install agent on a non-Azure Linux Machine</strong></p>
+<p>Download the agent on the relevant machine and follow the instructions.
+  - <strong>Install agent on Linux (Non-Azure)</strong></p>
+<p><strong>2. Configure the logs to be collected</strong></p>
+<p>Follow the configuration steps below to get vCenter server logs into Microsoft Sentinel. Refer to the <a href="https://docs.microsoft.com/azure/azure-monitor/agents/data-sources-json">Azure Monitor Documentation</a> for more details on these steps.
+ For vCenter Server logs, we have issues while parsing the data by OMS agent data using default settings. 
+So we advice to capture the logs into custom table <strong>vcenter_CL</strong> using below instructions. 
+1. Login to the server where you have installed OMS agent.
+2. Download config file vCenter.conf 
+        wget -v https://aka.ms/sentinel-vcenteroms-conf -O vcenter.conf 
+3. Copy vcenter.conf to the /etc/opt/microsoft/omsagent/<strong>workspace_id</strong>/conf/omsagent.d/ folder. 
+        cp vcenter.conf /etc/opt/microsoft/omsagent/&lt;<workspace_id>&gt;/conf/omsagent.d/
+4. Edit vcenter.conf as follows:</p>
+<pre><code> a. vcenter.conf uses the port **22033** by default. Ensure this port is not being used by any other source on your server
+
+ b. If you would like to change the default port for **vcenter.conf** make sure that you dont use default Azure monotoring /log analytic agent ports I.e.(For example CEF uses TCP port **25226** or **25224**)
+
+ c. replace **workspace_id** with real value of your Workspace ID (lines 13,14,15,18)
+</code></pre>
+<ol start="5">
+<li>Save changes and restart the Azure Log Analytics agent for Linux service with the following command:
+        sudo /opt/microsoft/omsagent/bin/service_control restart</li>
+<li>Modify /etc/rsyslog.conf file - add below template preferably at the beginning / before directives section <pre><code>$template vcenter,"%timestamp% %hostname% %msg%\ n"
+</code></pre>
+</li>
+</ol>
+<p><strong>Note - There is no space between slash(\) and character 'n' in above command.</strong></p>
+<ol start="7">
+<li>Create a custom conf file in /etc/rsyslog.d/ for example 10-vcenter.conf and add following filter conditions.</li>
+</ol>
+<p>Download config file <a href="https://aka.ms/sentinel-vcenter-conf">10-vCenter.conf</a></p>
+<pre><code> With an added statement you will need to create a filter which will specify the logs coming from the vcenter server to be forwarded to the custom table.
+
+ reference: [Filter Conditions — rsyslog 8.18.0.master documentation](https://rsyslog.readthedocs.io/en/latest/configuration/filters.html)
+
+ Here is an example of filtering that can be defined, this is not complete and will require additional testing for each installation.
+     if $rawmsg contains "vcenter-server" then @@127.0.0.1:22033;vcenter
+     &amp; stop 
+     if $rawmsg contains "vpxd" then @@127.0.0.1:22033;vcenter
+     &amp; stop
+</code></pre>
+<ol start="8">
+<li>Restart rsyslog
+         systemctl restart rsyslog
+- <strong>Workspace ID</strong>: <code>WorkspaceId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+</ol>
+<p><strong>3. Configure and connect the vCenter device(s)</strong></p>
+<p><a href="https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.monitoring.doc/GUID-9633A961-A5C3-4658-B099-B81E0512DC21.html">Follow these instructions</a> to configure the vCenter to forward syslog. Use the IP address or hostname for the Linux device with the Linux agent installed as the Destination IP address.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
+</div>
+</body>
+</html>

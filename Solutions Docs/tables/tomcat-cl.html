@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TomcatCL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Tomcat_CL</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1</strong></td>
+<td style="text-align: left;">Yes 🔶 — uses type-suffixed column names</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (6 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Tomcat_CL.json">KQL validation test schema</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Computer</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">RawData</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (3)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/customlogsama.html">CustomLogsAma</a></li>
+<li><a href="../solutions/oracleweblogicserver.html">OracleWebLogicServer</a></li>
+<li><a href="../solutions/tomcat.html">Tomcat</a></li>
+</ul>
+<h2>Connectors (2)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/apachetomcat.html">[Deprecated] Apache Tomcat</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Content Items Using This Table (23)</h2>
+<h3>Analytic Rules (10)</h3>
+<p><strong>In solution <a href="../solutions/tomcat.html">Tomcat</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/tomcat-tomcat-commands-in-uri-91f59cea-486f-11ec-81d3-0242ac130003-51da8e60.html">Tomcat - Commands in URI</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tomcat-tomcat-known-malicious-user-agent-5e77a818-5825-4ff6-a901-80891c4774d1-d27417cd.html">Tomcat - Known malicious user agent</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tomcat-tomcat-multiple-client-errors-from-single-ip-address-4fa66058-4870-11ec-81d3-0242ac130003-b533ed85.html">Tomcat - Multiple client errors from single IP address</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tomcat-tomcat-multiple-empty-requests-from-same-ip-7c9a1026-4872-11ec-81d3-0242ac130003-09e46852.html">Tomcat - Multiple empty requests from same IP</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tomcat-tomcat-multiple-server-errors-from-single-ip-address-de9df79c-4872-11ec-81d3-0242ac130003-69e7967d.html">Tomcat - Multiple server errors from single IP address</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tomcat-tomcat-put-file-and-get-file-from-same-ip-address-103d5ada-4874-11ec-81d3-0242ac130003-797d1317.html">Tomcat - Put file and get file from same IP address</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tomcat-tomcat-request-from-localhost-ip-address-a45dd6ea-4874-11ec-81d3-0242ac130003-60f83877.html">Tomcat - Request from localhost IP address</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tomcat-tomcat-request-to-sensitive-files-0c851bd4-4875-11ec-81d3-0242ac130003-4714e77e.html">Tomcat - Request to sensitive files</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tomcat-tomcat-server-errors-after-multiple-requests-from-same-ip-875da588-4875-11ec-81d3-0242ac130003-45171295.html">Tomcat - Server errors after multiple requests from same IP</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tomcat-tomcat-sql-injection-patterns-ce84741e-4875-11ec-81d3-0242ac130003-c09472fa.html">Tomcat - Sql injection patterns</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries (11)</h3>
+<p><strong>In solution <a href="../solutions/tomcat.html">Tomcat</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/tomcat-tomcat-abnormal-request-size-d5e1eb24-487a-11ec-81d3-0242ac130003-b206dce0.html">Tomcat - Abnormal request size</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tomcat-tomcat-catalina-errors-7be944be-487f-11ec-81d3-0242ac130003-ea5fabf7.html">Tomcat - Catalina errors</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tomcat-tomcat-rare-urls-requested-ed6686b4-4880-11ec-81d3-0242ac130003-da74a267.html">Tomcat - Rare URLs requested</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tomcat-tomcat-rare-files-requested-c2e8ad40-4880-11ec-81d3-0242ac130003-e159f787.html">Tomcat - Rare files requested</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tomcat-tomcat-rare-user-agents-with-client-errors-033d672c-4882-11ec-81d3-0242ac130003-43b7e6bf.html">Tomcat - Rare user agents with client errors</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tomcat-tomcat-rare-user-agents-with-server-errors-2be563f0-4882-11ec-81d3-0242ac130003-10a3a303.html">Tomcat - Rare user agents with server errors</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tomcat-tomcat-request-to-forbidden-file-72ae8a54-4879-11ec-81d3-0242ac130003-4b51809c.html">Tomcat - Request to forbidden file</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tomcat-tomcat-top-urls-client-errors-60725e58-4881-11ec-81d3-0242ac130003-bc4e910b.html">Tomcat - Top URLs client errors</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tomcat-tomcat-top-urls-server-errors-919725a4-4881-11ec-81d3-0242ac130003-5c154233.html">Tomcat - Top URLs server errors</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tomcat-tomcat-top-files-with-error-requests-191bd49e-4881-11ec-81d3-0242ac130003-ec63d37a.html">Tomcat - Top files with error requests</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tomcat-tomcat-uncommon-user-agent-strings-d214c244-4881-11ec-81d3-0242ac130003-cf441f7a.html">Tomcat - Uncommon user agent strings</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks (2)</h3>
+<p><strong>In solution <a href="../solutions/oracleweblogicserver.html">OracleWebLogicServer</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/oracleweblogicserver-oracleworkbook-2039f357.html">OracleWorkbook</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/tomcat.html">Tomcat</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/tomcat-tomcat-588ba946.html">Tomcat</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Parsers Using This Table (2)</h2>
+<h3>Other Parsers (2)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/tomcatevent.html">TomcatEvent</a></td>
+<td style="text-align: left;"><a href="../solutions/tomcat.html">Tomcat</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/tomcatevent.html">TomcatEvent</a></td>
+<td style="text-align: left;"><a href="../solutions/tomcat.html">Tomcat</a> ⚠️</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.</p>
+</blockquote>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

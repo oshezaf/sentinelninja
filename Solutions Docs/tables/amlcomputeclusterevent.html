@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AmlComputeClusterEvent &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>AmlComputeClusterEvent</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for AmlComputeClusterEvent table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Azure Resources</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amlcomputeclusterevent">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (46 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amlcomputeclusterevent">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">AllocationState</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Cluster allocation state</td>
+</tr>
+<tr>
+<td style="text-align: left;">AllocationStateTransitionTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Transition time from one state to another</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClusterErrorCodes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Error code received during cluster creation or scaling</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClusterName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the cluster</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClusterType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the cluster</td>
+</tr>
+<tr>
+<td style="text-align: left;">CoreCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Count of the cores in the cluster</td>
+</tr>
+<tr>
+<td style="text-align: left;">CreatedBy</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User who created the cluster</td>
+</tr>
+<tr>
+<td style="text-align: left;">CreationApiVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Api version used while creating the cluster</td>
+</tr>
+<tr>
+<td style="text-align: left;">CurrentNodeCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Current node count of the cluster</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of event during cluster creation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IdleNodeCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Idle node count of the cluster</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitialNodeCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Initial node count of the cluster</td>
+</tr>
+<tr>
+<td style="text-align: left;">InternalOperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">IsResizeGrow</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Flag indicating that cluster is scaling up</td>
+</tr>
+<tr>
+<td style="text-align: left;">LeavingNodeCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Leaving node count of the cluster</td>
+</tr>
+<tr>
+<td style="text-align: left;">MaximumNodeCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Maximum node count of the cluster</td>
+</tr>
+<tr>
+<td style="text-align: left;">MinimumNodeCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Minimum node count of the cluster</td>
+</tr>
+<tr>
+<td style="text-align: left;">NodeDeallocationOption</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">How the node should be deallocated</td>
+</tr>
+<tr>
+<td style="text-align: left;">NodeIdleTimeSecondsBeforeScaleDown</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Idle time in seconds before cluster is scaled down</td>
+</tr>
+<tr>
+<td style="text-align: left;">Offer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Offer with which the cluster is created</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the operation associated with the log event</td>
+</tr>
+<tr>
+<td style="text-align: left;">PreemptedNodeCount</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Preempted node count of the cluster</td>
+</tr>
+<tr>
+<td style="text-align: left;">PreparingNodeCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Preparing node count of the cluster</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProvisioningState</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Provisioning state of the cluster</td>
+</tr>
+<tr>
+<td style="text-align: left;">Publisher</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Publisher of the cluster type</td>
+</tr>
+<tr>
+<td style="text-align: left;">QuotaAllocated</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Allocated quota to the cluster</td>
+</tr>
+<tr>
+<td style="text-align: left;">QuotaUtilized</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Utilized quota of the cluster</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResultSignature</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">RunningNodeCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Running node count of the cluster</td>
+</tr>
+<tr>
+<td style="text-align: left;">ScalingType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of cluster scaling manual/auto</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sku</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Sku of the Node/VM created inside cluster</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">SubnetId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SubnetId of the cluster</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetNodeCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Target node count of the cluster while scaling up/down</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Time when the log entry was generated</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">UnusableNodeCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Unusable node count of the cluster</td>
+</tr>
+<tr>
+<td style="text-align: left;">Version</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Version of the image used while Node/VM is created</td>
+</tr>
+<tr>
+<td style="text-align: left;">VmFamilyName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the VM family of the nodes that can be created inside cluster</td>
+</tr>
+<tr>
+<td style="text-align: left;">VmPriority</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Priority of the nodes created inside a cluster Dedicated/LowPriority</td>
+</tr>
+<tr>
+<td style="text-align: left;">VmSize</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Vm size of the cluster</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.machinelearningservices/workspaces</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

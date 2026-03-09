@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HDInsightAmbariClusterAlerts &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>HDInsightAmbariClusterAlerts</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for HDInsightAmbariClusterAlerts table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Azure Resources</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/hdinsightambariclusteralerts">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (30 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/hdinsightambariclusteralerts">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">AlertFirmness</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The firmness of the alert.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AlertID</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The ID of the alert message.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AlertInstance</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Instance number of the alert.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClusterName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the cluster the alert came from.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClusterType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of cluster where the alert was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ComponentName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The component that generated the alert.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DefinitionId</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Id of the alert definition.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DefinitionName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the alert definition</td>
+</tr>
+<tr>
+<td style="text-align: left;">HostFQDN</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The FQDN of the host where the alert was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HostName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the host where the alert was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Label</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The label of the alert.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LatestTimestamp</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The latest time the alert occurred.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MaintenanceState</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The maintenance classifaction state of the alert.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Occurences</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The number of times an alert has occurred.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OriginalTimestamp</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The timestamp the alert first occurred.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReferenceURI</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The URI to the alert.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RepeatTolerance</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The total number of occurences an alert can have before being escalated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RepeatToleranceRemaining</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The amount of occurences left before an alert gets escalted.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Scope</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The scope of the alert.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServiceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the service that generated the alert.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">State</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The state of the alert.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">Text</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The informational text of the alert.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) of when the log was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.hdinsight/clusters</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

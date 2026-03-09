@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miro &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Miro</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Miro.svg" alt="Miro Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Miro</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://help.miro.com">https://help.miro.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Miro - enterprise_integrations@miro.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro">Miro</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://miro.com/">Miro</a> solution for Microsoft Sentinel provides the capability to ingest audit logs and content activity logs from <a href="https://developers.miro.com/reference">Miro REST APIs</a> into Microsoft Sentinel using the Codeless Connector Framework (CCF). This connector enables organizations to monitor and analyze activities within their Miro workspaces. For detailed instructions, refer to the <a href="https://help.miro.com/hc/en-us/articles/31325908249362">documentation</a>.</p>
+<p><strong>Underlying Microsoft technology used:</strong></p>
+<p>This solution is dependent on the following technology and this dependency may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>• <a href="https://learn.microsoft.com/azure/sentinel/create-codeless-connector">Codeless Connector Framework (CCF)</a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/miroauditlogsdataconnector.html">Miro Audit Logs (Enterprise Plan)</a></li>
+<li><a href="../connectors/mirocontentlogsdataconnector.html">Miro Content Logs (Enterprise Plan + Enterprise Guard)</a></li>
+</ul>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>2 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/miroauditlogs-cl.html"><code>MiroAuditLogs_CL</code></a></td>
+<td><a href="../connectors/miroauditlogsdataconnector.html">Miro Audit Logs (Enterprise Plan)</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/mirocontentlogs-cl.html"><code>MiroContentLogs_CL</code></a></td>
+<td><a href="../connectors/mirocontentlogsdataconnector.html">Miro Content Logs (Enterprise Plan + Enterprise Guard)</a></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro/README.md">Miro/README.md</a></em></p>
+</blockquote>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro/Logo/Miro.svg" alt="Miro" width="20%"/><br></p>
+<h2>Overview</h2>
+<p>The <a href="https://miro.com/">Miro</a> connector ingests audit logs and content activity logs from <a href="https://developers.miro.com/reference">Miro REST APIs</a> into Microsoft Sentinel using the Codeless Connector Framework (CCF). This centralizes Miro workspace activity monitoring in Microsoft Sentinel for security threat detection, incident investigation, and compliance reporting.</p>
+<h2>Data connectors</h2>
+<p>This solution includes two data connectors:</p>
+<ol>
+<li><strong>Miro Audit Logs (Enterprise Plan)</strong>: Organization-wide audit events including user authentication, content access, team changes, and administrative actions. <a href="https://developers.miro.com/reference/enterprise-get-audit-logs">API documentation</a> | <a href="https://developers.miro.com/reference/audit-logs">Audit logs overview</a>.</li>
+<li><strong>Miro Content Logs (Enterprise Plan + Enterprise Guard)</strong>: Content activity tracking including item creation, updates, and deletions for compliance and eDiscovery. <a href="https://developers.miro.com/reference/enterprise-board-content-item-logs-fetch">API documentation</a> | <a href="https://developers.miro.com/reference/board-content-logs">Content logs overview</a>.</li>
+</ol>
+<h2>Prerequisites</h2>
+<h3>General requirements</h3>
+<ul>
+<li>Active Microsoft Sentinel workspace.</li>
+<li>Company Admin role in your Miro organization.</li>
+<li>Miro OAuth access token (non-expiring).</li>
+</ul>
+<h3>Connector-specific requirements</h3>
+<p><strong>For audit logs connector:</strong></p>
+<ul>
+<li>Miro Enterprise Plan.</li>
+<li>OAuth scope: <code>auditlogs:read</code>.</li>
+<li>Access token.</li>
+</ul>
+<p><strong>For content logs connector:</strong></p>
+<ul>
+<li>Miro Enterprise Plan + Enterprise Guard add-on.</li>
+<li>OAuth scope: <code>contentlogs:export</code>.</li>
+<li>Access token.</li>
+<li>Miro organization ID.</li>
+</ul>
+<h2>Installation</h2>
+<p>There are two ways to set up the Miro connectors.</p>
+<ul>
+<li><strong>Option 1 (recommended):</strong> Use enterprise integrations. Simplest setup with automatic token generation.</li>
+<li><strong>Option 2 (alternative):</strong> Create custom OAuth application. More control over OAuth app configuration.</li>
+</ul>
+<p><strong>Note:</strong> When using Option 1, the integration is automatically tied to the team with the largest number of users in your organization. When using Option 2, you can choose which team to install the app to. However, <strong>the team selection does not affect which logs are collected</strong>—both options provide organization-wide log access. All integration-relevant events from all teams are included in your logs.</p>
+<hr />
+<h3>Option 1: Use enterprise integrations (recommended)</h3>
+<p>This is the simplest option for most users. It automatically creates an OAuth application and generates an access token for you through Miro's enterprise integrations settings.</p>
+<h4>For audit logs connector</h4>
+<ol>
+<li>Open <a href="https://miro.com/app/settings/">Miro company settings</a>.</li>
+<li>Expand the <strong>Apps and integrations</strong> section.</li>
+<li>Click <strong>Enterprise integrations</strong>.</li>
+<li>Enable the <strong>SIEM</strong> toggle.</li>
+<li>Copy the <strong>Access Token</strong> value that appears.</li>
+<li>Store the token securely.</li>
+</ol>
+<h4>For content logs connector</h4>
+<p><em>[Content truncated...]</em></p>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.0</td>
+<td>05-12-2025</td>
+<td>Initial release of the Miro solution with two <strong>CCF connectors</strong> (Audit Logs and Content Logs).</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

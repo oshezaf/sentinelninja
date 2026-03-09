@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UEBA Essentials &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>UEBA Essentials</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="UEBA Essentials Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com/">https://support.microsoft.com/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.5</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-06-27</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/UEBA%20Essentials">UEBA Essentials</a></td>
+</tr>
+</tbody>
+</table>
+<p>The Microsoft Sentinel UEBA content package will provide you with various queries based on UEBA tables, that allows you to hunt for tailored threat scenarios. You'll be able to investigate and search for anomalous activities over UEBA's enriched data, and get inspired to customize queries according to your own use-cases.</p>
+<p><strong>Important :</strong> Some of the queries that are part of this solution, make use of <a href="https://docs.microsoft.com/azure/sentinel/watchlist-schemas">Built-in Watchlist Templates</a> and will not work unless the corresponding watchlist is created. Other queries may requires changes to match your environment details.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p><strong>This solution does not include data connectors.</strong></p>
+<p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
+<h2>Tables Used</h2>
+<p>This solution queries <strong>4 table(s)</strong> from its content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+<td>Hunting</td>
+</tr>
+<tr>
+<td><a href="../tables/sentinelbehaviorentities.html"><code>SentinelBehaviorEntities</code></a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/sentinelbehaviorinfo.html"><code>SentinelBehaviorInfo</code></a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+<td>Hunting</td>
+</tr>
+</tbody>
+</table>
+<h3>Internal Tables</h3>
+<p>The following <strong>3 table(s)</strong> are used internally by this solution's content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/anomalies.html"><code>Anomalies</code></a></td>
+<td>Hunting</td>
+</tr>
+<tr>
+<td><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+<td>Hunting</td>
+</tr>
+<tr>
+<td><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+<td>Hunting</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>31 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">30</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomalies-on-users-tagged-as-vip-028ac38c-f5a4-483b-a58a-aa83d500bf27-67c13b87.html">Anomalies on users tagged as VIP</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-aws-console-login-without-mfa-from-uncommon-country-a1b2c3d4-e5f6-7890-abcd-ef1234567890-e27bf283.html">Anomalous AWS Console Login Without MFA from Uncommon Country</a></td>
+<td style="text-align: left;">InitialAccess, CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/tacitred-findings-cl.html"><code>TacitRed_Findings_CL</code></a><br><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-activity-role-assignment-bd6fda76-c0df-41b0-b8cd-808190e1ded0-f28cc576.html">Anomalous Activity Role Assignment</a></td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-code-execution-on-a-virtual-machine-f8ab176c-1f3f-4cb5-8dc1-f50d30bcae0d-1d294e0d.html">Anomalous Code Execution on a Virtual Machine</a></td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-database-export-activity-8cf3c78e-cd10-4bfb-bd69-d62dc7f375f1-547bf5ee.html">Anomalous Database Export Activity</a></td>
+<td style="text-align: left;">Collection</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-database-vulnerability-baseline-removal-fcb704ae-ac17-400a-9ed9-3c46bd0a3960-5de0e0ef.html">Anomalous Database Vulnerability Baseline Removal</a></td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-entra-high-privilege-role-modification-8741deeb-332e-4061-8873-5086040920e3-adf63a52.html">Anomalous Entra High-Privilege Role Modification</a></td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-failed-logon-77a58c08-bc8e-48b3-8fe9-6c38fd011cd9-d88b0a61.html">Anomalous Failed Logon</a></td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/signinlogs.html"><code>SigninLogs</code></a><br><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-first-time-device-logon-c3d4e5f6-g7h8-9012-cdef-gh3456789012-95978030.html">Anomalous First-Time Device Logon</a></td>
+<td style="text-align: left;">InitialAccess, LateralMovement</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-gcp-iam-activity-e5f6g7h8-i9j0-1234-efgh-ij5678901234-7903fc2f.html">Anomalous GCP IAM Activity</a></td>
+<td style="text-align: left;">PrivilegeEscalation, Persistence, CredentialAccess</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-geo-location-logon-eeea7fb9-21cf-4023-91dc-3f55d7548d14-3faf613a.html">Anomalous Geo Location Logon</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-high-privileged-role-assignment-5aa5083c-1de6-42bb-a128-2ec2aba1de39-89a0f496.html">Anomalous High-Privileged Role Assignment</a></td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-high-score-activity-triage-a7b8c9d0-e1f2-3456-7890-abcdef123456-fb3e9dc1.html">Anomalous High-Score Activity Triage</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-key-vault-modification-by-high-privilege-user-202ee40b-e6d8-4968-9a79-cf24c5c09db9-fa6954f8.html">Anomalous Key Vault Modification by High-Privilege User</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-microsoft-entra-id-account-creation-0454c8d8-d0a6-42a4-8d03-f5b4fdcbd173-21d82dda.html">Anomalous Microsoft Entra ID Account Creation</a></td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-okta-first-time-or-uncommon-actions-d4e5f6g7-h8i9-0123-defg-hi4567890123-0ea8a6e8.html">Anomalous Okta First-Time or Uncommon Actions</a></td>
+<td style="text-align: left;">InitialAccess, CredentialAccess, Persistence</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-password-reset-22b0262c-b6b5-4f15-82a4-93663e9965d7-b04b510f.html">Anomalous Password Reset</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-rdp-activity-c01d95d3-ee85-4e7f-9aed-e62356f1de76-f9c1ea17.html">Anomalous RDP Activity</a></td>
+<td style="text-align: left;">LateralMovement</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-resource-access-782f3bad-31f7-468f-8f58-3b74fc931914-129885e1.html">Anomalous Resource Access</a></td>
+<td style="text-align: left;">LateralMovement</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-sign-in-by-new-or-dormant-account-bb3bb9da-9598-4d1f-af78-7cc2fd413b0b-02e8af9c.html">Anomalous Sign-in by New or Dormant Account</a></td>
+<td style="text-align: left;">Persistence</td>
+<td style="text-align: left;"><a href="../tables/signinlogs.html"><code>SigninLogs</code></a><br><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-action-performed-in-tenant-by-privileged-user-9ba2b304-7767-4d54-b03c-b0161ae87cc7-f2b7cf70.html">Anomalous action performed in tenant by privileged user</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-connection-from-highly-privileged-user-741fdf32-e002-4577-ac9b-839fb49f128e-22b5a707.html">Anomalous connection from highly privileged user</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a><br><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-login-activity-originated-from-botnet,-tor-proxy-or-c2-c3b09dd3-ee50-41ae-b863-8603620e5f48-79aee61c.html">Anomalous login activity originated from Botnet, Tor proxy or C2</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomaly-detection-trend-analysis-d0e1f2a3-b4c5-6789-0123-def456789012-8fe6ea06.html">Anomaly Detection Trend Analysis</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-anomaly-template-distribution-by-tactics-and-techniques-b8c9d0e1-f2a3-4567-8901-bcdef2345678-bf92b782.html">Anomaly Template Distribution by Tactics and Techniques</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-dormant-local-admin-logon-2e20ec77-8d50-4959-a70d-79c341ee2c37-d3f55f49.html">Dormant Local Admin Logon</a></td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-dormant-account-activity-from-uncommon-country-7c303408-f913-42f8-8d7b-9eb64a229c4d-510c1ff6.html">Dormant account activity from uncommon country</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-top-anomalous-source-ip-triage-e1f2a3b4-c5d6-7890-1234-abcdef567890-63722402.html">Top Anomalous Source IP Triage</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-ueba-multi-source-anomalous-activity-overview-b2c3d4e5-f6g7-8901-bcde-fg2345678901-43dc4d3b.html">UEBA Multi-Source Anomalous Activity Overview</a></td>
+<td style="text-align: left;">InitialAccess, CredentialAccess, Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-user-centric-anomaly-investigation-c9d0e1f2-a3b4-5678-9012-cdef34567890-0fcdf7d4.html">User-Centric Anomaly Investigation</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/ueba-essentials-uebabehaviorsanalysisworkbook-c444e4d9.html">UEBABehaviorsAnalysisWorkbook</a></td>
+<td style="text-align: left;"><a href="../tables/sentinelbehaviorentities.html"><code>SentinelBehaviorEntities</code></a><br><a href="../tables/sentinelbehaviorinfo.html"><code>SentinelBehaviorInfo</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.5</td>
+<td>05-02-2026</td>
+<td>Resolved the UEBA Behaviors Analysis <strong>Workbook</strong> loading issue</td>
+</tr>
+<tr>
+<td>3.0.4</td>
+<td>29-01-2026</td>
+<td>Added new UEBA Behaviors Analysis <strong>Workbook</strong> to solution</td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>24-11-2025</td>
+<td>Added new <strong>Hunting Queries</strong></td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>04-11-2025</td>
+<td>Enhance UEBA Essentials with multi-cloud detection capabilities</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>23-09-2024</td>
+<td>Updated query logic in <strong>Hunting Query</strong> [Anomalous Sign-in Activity]</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>07-11-2023</td>
+<td>Modified text as there is rebranding from Azure Active Directory to Microsoft Entra ID.</td>
+</tr>
+<tr>
+<td>4.1.0</td>
+<td>23-11-2025</td>
+<td>Added new hunting queries: User-Centric Anomaly Investigation, Anomaly Detection Trend Analysis, Anomaly Template Distribution, Anomalous High-Score Activity Triage, Top Anomalous Source IP Triage. Updated solution version.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

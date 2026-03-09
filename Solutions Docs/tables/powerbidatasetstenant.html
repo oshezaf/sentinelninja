@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PowerBIDatasetsTenant &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>PowerBIDatasetsTenant</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for PowerBIDatasetsTenant table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Azure Resources</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/powerbidatasetstenant">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (36 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/powerbidatasetstenant">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">ApplicationContext</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Unique identifiers providing details about the context of the operation. E.g. Report ID, DatasetID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ApplicationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Contains the name of the client application that created the connection to the Power BI dataset. This is provided by the application and is optional.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ArtifactId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique ID of the resource logging the data.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ArtifactKind</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of artifact logging the operation e.g. Dataset.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ArtifactName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the Power BI artifact logging this operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">An event ID that can be used to correlated events between multiple tables.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CpuTimeMs</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Amount of CPU time (in milliseconds) used by the operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CustomerTenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the Power BI tenant.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DatasetMode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The mode of the dataset. Import, DirectQuery or Composite.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DurationMs</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Amount of time (in milliseconds) taken by the operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventText</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Contains verbose information associated with operation e.g. DAX query.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ExecutingUser</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The user executing the operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Identity</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Information about user and claims.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Level</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Contains the severity level of the operation being logged. Success, Informational, Warning, or Error.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogAnalyticsCategory</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique category of the events like Audit/Security/Request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationDetailName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Provides subcategories of OperationName.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The operation associated with the log record.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PowerBIWorkspaceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the Power BI workspace that contains the artifact being operated on.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PowerBIWorkspaceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the Power BI workspace containing the artifact.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PremiumCapacityId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the Premium capacity hosting the artifact being operated on.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProgressCounter</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Progress Counter.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Status of the operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">StatusCode</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Status code of the operation. It covers success and failure.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp(UTC) of when the log entry was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">User</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The user on whose behalf the operation is running. Used when an end user identity must be impersonated on the server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">XmlaObjectPath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A comma-separated list of parents, starting with the object's parent.</td>
+</tr>
+<tr>
+<td style="text-align: left;">XmlaProperties</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Properties of the XMLA request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">XmlaRequestId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique Identifier of request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">XmlaSessionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Analysis services session identifier.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.powerbi/tenants</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

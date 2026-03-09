@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multi Cloud Attack Coverage Essentials - Resource Abuse &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Multi Cloud Attack Coverage Essentials - Resource Abuse</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Multi Cloud Attack Coverage Essentials - Resource Abuse Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2023-11-22</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Multi%20Cloud%20Attack%20Coverage%20Essentials%20-%20Resource%20Abuse">Multi Cloud Attack Coverage Essentials - Resource Abuse</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pre-requisites</strong></td>
+<td style="text-align: left;"><a href="microsoft-defender-xdr.html">Microsoft Defender XDR</a>, <a href="microsoft-entra-id.html">Microsoft Entra ID</a>, <a href="amazon-web-services.html">Amazon Web Services</a>, <a href="googlecloudplatformiam.html">GoogleCloudPlatformIAM</a>, <a href="google-cloud-platform-audit-logs.html">Google Cloud Platform Audit Logs</a></td>
+</tr>
+</tbody>
+</table>
+<p>The rise of Multi Cloud Resource Abuse attacks poses a significant threat to the security and integrity of cloud infrastructures. These attacks target the vulnerabilities within AWS, GCP, and Azure cloud environments, aiming to exploit misconfigurations, weak access controls, or compromised credentials to gain unauthorized access, manipulate resources, and extract valuable data across diverse cloud platforms. The Multi Cloud Resource Abuse Attack Solution is designed to fortify the detection and prevention measures against such malicious activities. By integrating detection capabilities across AWS, GCP, and Azure cloud infrastructures, this solution offers a set of detection strategies across various cloud platforms, including AWS, GCP, and Azure, aiming to identify abnormal activities, unauthorized access attempts, resource misuse, and data exfiltration. The solution encompasses log monitoring, anomaly detection, and behaviour analysis to detect and respond to potential breaches or abuses. This solution extends its coverage to include a wide array of cloud-based services such as AWS IAM, Azure AD, GCP IAM, storage services, and more, ensuring a comprehensive approach to identifying, mitigating, and responding to potential threats.</p>
+<p>For details on the required solutions, see the <a href="#pre-requisites">Pre-requisites</a> section below.</p>
+<p><strong>Keywords:</strong> Multi-cloud, Cross-cloud, AWS, GCP, GuardDuty, AWS GuardDuty, GCP Security, Security Console, Cloud abuse, Resource Abuse</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#pre-requisites">Pre-requisites</a></li>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Pre-requisites</h2>
+<p>This solution depends on <strong>5 other solution(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="amazon-web-services.html">Amazon Web Services</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="google-cloud-platform-audit-logs.html">Google Cloud Platform Audit Logs</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="googlecloudplatformiam.html">GoogleCloudPlatformIAM</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="microsoft-defender-xdr.html">Microsoft Defender XDR</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="microsoft-entra-id.html">Microsoft Entra ID</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Data Connectors</h2>
+<p><strong>This solution does not include its own data connectors</strong> but uses connectors from dependency solutions:</p>
+<ul>
+<li><a href="../connectors/aws.html">Amazon Web Services</a> <em>(dependency on <a href="amazon-web-services.html">Amazon Web Services</a>)</em></li>
+<li><a href="../connectors/awss3.html">Amazon Web Services S3</a> <em>(dependency on <a href="amazon-web-services.html">Amazon Web Services</a>)</em></li>
+<li><a href="../connectors/awss3wafccpdefinition.html">Amazon Web Services S3 WAF</a> <em>(dependency on <a href="amazon-web-services.html">Amazon Web Services</a>)</em></li>
+<li><a href="../connectors/azureactivedirectory.html">Microsoft Entra ID</a> <em>(dependency on <a href="microsoft-entra-id.html">Microsoft Entra ID</a>)</em></li>
+<li><a href="../connectors/gcpauditlogsdefinition.html">GCP Pub/Sub Audit Logs</a> <em>(dependency on <a href="google-cloud-platform-audit-logs.html">Google Cloud Platform Audit Logs</a>)</em></li>
+<li><a href="../connectors/gcpiamccpdefinition.html">Google Cloud Platform IAM (via Codeless Connector Framework)</a> <em>(dependency on <a href="googlecloudplatformiam.html">GoogleCloudPlatformIAM</a>)</em></li>
+<li><a href="../connectors/gcpiamdataconnector.html">[DEPRECATED] Google Cloud Platform IAM</a> <em>(dependency on <a href="googlecloudplatformiam.html">GoogleCloudPlatformIAM</a>)</em></li>
+<li><a href="../connectors/gcppub-subauditlogs.html">GCP Pub/Sub Audit Logs</a> <em>(dependency on <a href="google-cloud-platform-audit-logs.html">Google Cloud Platform Audit Logs</a>)</em></li>
+<li><a href="../connectors/microsoftthreatprotection.html">Microsoft Defender XDR</a> <em>(dependency on <a href="microsoft-defender-xdr.html">Microsoft Defender XDR</a>)</em></li>
+</ul>
+<h2>Tables Used</h2>
+<p>This solution queries <strong>4 table(s)</strong> from its content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/awscloudtrail.html"><code>AWSCloudTrail</code></a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/awsguardduty.html"><code>AWSGuardDuty</code></a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/gcpauditlogs.html"><code>GCPAuditLogs</code></a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+<td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<h3>Internal Tables</h3>
+<p>The following <strong>2 table(s)</strong> are used internally by this solution's content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
+<td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>9 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">9</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/multi-cloud-attack-coverage-essentials-resource-abuse-cross-cloud-password-spray-detection-1f40ed57-f54b-462f-906a-ac3a89cc90d4-5128b308.html">Cross-Cloud Password Spray detection</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/awscloudtrail.html"><code>AWSCloudTrail</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/multi-cloud-attack-coverage-essentials-resource-abuse-cross-cloud-suspicious-compute-resource-creation-i-5c847e47-0a07-4c01-ab99-5817ad6cb11e-be6ace2e.html">Cross-Cloud Suspicious Compute resource creation in GCP</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">InitialAccess, Execution, Persistence, PrivilegeEscalation, CredentialAccess, Discovery, LateralMovement</td>
+<td style="text-align: left;"><a href="../tables/awsguardduty.html"><code>AWSGuardDuty</code></a><br><a href="../tables/gcpauditlogs.html"><code>GCPAuditLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/multi-cloud-attack-coverage-essentials-resource-abuse-cross-cloud-suspicious-user-activity-observed-in-g-58e306fe-1c49-4b8f-9b0e-15f25e8f0cd7-36b1a06d.html">Cross-Cloud Suspicious user activity observed in GCP Envourment</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, Execution, Persistence, PrivilegeEscalation, CredentialAccess, Discovery</td>
+<td style="text-align: left;"><a href="../tables/gcpauditlogs.html"><code>GCPAuditLogs</code></a><br><em>Internal use:</em><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/multi-cloud-attack-coverage-essentials-resource-abuse-cross-cloud-unauthorized-credential-access-detecti-122fbc6a-57ab-4aa7-b9a9-51ac4970cac1-bb7f7aa6.html">Cross-Cloud Unauthorized Credential Access Detection From AWS RDS Login</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess, InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/awsguardduty.html"><code>AWSGuardDuty</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/multi-cloud-attack-coverage-essentials-resource-abuse-high-risk-cross-cloud-user-impersonation-f4a28082-2808-4783-9736-33c1ae117475-11195fd6.html">High-Risk Cross-Cloud User Impersonation</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/awscloudtrail.html"><code>AWSCloudTrail</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/multi-cloud-attack-coverage-essentials-resource-abuse-successful-aws-console-login-from-ip-address-obser-188db479-d50a-4a9c-a041-644bae347d1f-57aa98e4.html">Successful AWS Console Login from IP Address Observed Conducting Password Spray</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/awscloudtrail.html"><code>AWSCloudTrail</code></a><br><em>Internal use:</em><br><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/multi-cloud-attack-coverage-essentials-resource-abuse-suspicious-aws-console-logins-by-credential-access-b51fe620-62ad-4ed2-9d40-5c97c0a8231f-dbe5a529.html">Suspicious AWS console logins by credential access alerts</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/awscloudtrail.html"><code>AWSCloudTrail</code></a><br><em>Internal use:</em><br><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/multi-cloud-attack-coverage-essentials-resource-abuse-unauthorized-user-access-across-aws-and-azure-60f31001-018a-42bf-8045-a92e1f361b7b-6d3ff85e.html">Unauthorized user access across AWS and Azure</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CredentialAccess, Exfiltration, Discovery</td>
+<td style="text-align: left;"><a href="../tables/awsguardduty.html"><code>AWSGuardDuty</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/multi-cloud-attack-coverage-essentials-resource-abuse-user-impersonation-by-identity-protection-alerts-11c3d541-5fa5-49df-8218-d1c98584473b-06b1ea41.html">User impersonation by Identity Protection alerts</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/awscloudtrail.html"><code>AWSCloudTrail</code></a><br><em>Internal use:</em><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.3</td>
+<td>07-06-2024</td>
+<td>Analytical Rule description updated</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>08-04-2024</td>
+<td>Added Account and FullName in entity mapping</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>23-02-2024</td>
+<td>Tagged for dependent solutions for deployment</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>22-11-2023</td>
+<td>Initial Release</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

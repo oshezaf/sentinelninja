@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TacitRed-IOC-CrowdStrike &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>TacitRed-IOC-CrowdStrike</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/tacitred_logo.svg" alt="TacitRed-IOC-CrowdStrike Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Data443 Risk Mitigation, Inc.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://www.data443.com">https://www.data443.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Data443 Risk Mitigation, Inc. - support@data443.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2025-11-25</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TacitRed-IOC-CrowdStrike">TacitRed-IOC-CrowdStrike</a></td>
+</tr>
+</tbody>
+</table>
+<p>The TacitRed CrowdStrike IOC Automation solution provides example playbooks that demonstrate how to consume TacitRed threat intelligence from Microsoft Sentinel and prepare indicators for ingestion into CrowdStrike.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p><strong>This solution does not include data connectors.</strong></p>
+<p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
+<h2>Content Items</h2>
+<p>This solution includes <strong>1 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/tacitred-ioc-crowdstrike-tacitred-to-crowdstrike-ioc-automation-899201f9.html">TacitRed to CrowdStrike IOC Automation</a></td>
+<td style="text-align: left;">This playbook fetches compromised credential findings from TacitRed threat intelligence and creates ...</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TacitRed-IOC-CrowdStrike/README.md">TacitRed-IOC-CrowdStrike/README.md</a></em></p>
+</blockquote>
+<h2>Overview</h2>
+<p>The TacitRed CrowdStrike IOC Automation solution provides playbooks that demonstrate how to consume TacitRed threat intelligence from Microsoft Sentinel and push indicators of compromise (IOCs) to CrowdStrike Falcon for automated threat response.</p>
+<h2>Solution Components</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Playbook</strong></td>
+<td>Logic App that fetches compromised credentials from TacitRed and creates custom IOC entries in CrowdStrike Falcon</td>
+</tr>
+</tbody>
+</table>
+<h2>Prerequisites</h2>
+<ul>
+<li>Microsoft Sentinel workspace</li>
+<li>TacitRed API Key</li>
+<li>CrowdStrike Falcon console access with API credentials (Client ID and Client Secret)</li>
+<li>Appropriate RBAC permissions to deploy Logic Apps</li>
+</ul>
+<h2>Deployment</h2>
+<ol>
+<li>Navigate to Microsoft Sentinel Content Hub</li>
+<li>Search for "TacitRed CrowdStrike"</li>
+<li>Click Install and follow the deployment wizard</li>
+<li>Provide the following parameters:
+   - <strong>TacitRed API Key</strong>: Your TacitRed API credentials
+   - <strong>CrowdStrike Client ID</strong>: Your CrowdStrike API Client ID
+   - <strong>CrowdStrike Client Secret</strong>: Your CrowdStrike API Client Secret
+   - <strong>CrowdStrike Base URL</strong>: Your CrowdStrike API URL (e.g., https://api.crowdstrike.com)</li>
+</ol>
+<h2>How It Works</h2>
+<ol>
+<li>The playbook runs on a scheduled trigger</li>
+<li>It queries TacitRed for recent compromised credential findings</li>
+<li>For each finding, it creates a custom IOC entry in CrowdStrike Falcon</li>
+<li>CrowdStrike can then use these IOCs for detection and response</li>
+</ol>
+<h2>Support</h2>
+<ul>
+<li><strong>Provider</strong>: Data443 Risk Mitigation, Inc.</li>
+<li><strong>Email</strong>: support@data443.com</li>
+<li><strong>Website</strong>: https://www.data443.com</li>
+</ul>
+<h2>Learn More</h2>
+<ul>
+<li><a href="https://learn.microsoft.com/azure/sentinel/">Microsoft Sentinel Documentation</a></li>
+<li><a href="https://data443.com/tacitred-attack-surface-intelligence/">TacitRed Platform</a></li>
+<li><a href="https://www.crowdstrike.com/resources/">CrowdStrike Falcon Documentation</a></li>
+</ul>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.0</td>
+<td>23-01-2026</td>
+<td>Initial Solution Release - <strong>Playbook</strong> for automated IOC synchronization between TacitRed and CrowdStrike Falcon. Supports Domain and SHA256 IOC types.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

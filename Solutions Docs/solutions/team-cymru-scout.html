@@ -1,0 +1,1828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>&lt;img src=&quot;../images/asim-badge.png&quot; alt=&quot;ASIM&quot; height=&quot;32&quot;&gt; Team Cymru Scout &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1><img src="../images/asim-badge.png" alt="ASIM" height="32"> Team Cymru Scout</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/TeamCymruScout.svg" alt="Team Cymru Scout Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Team Cymru</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="http://team-cymru.com">http://team-cymru.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.1.1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Team Cymru - support@cymru.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2024-07-16</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2025-05-16</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Team%20Cymru%20Scout">Team Cymru Scout</a></td>
+</tr>
+</tbody>
+</table>
+<p>Team Cymru Scout brings the most advanced AI-powered real-time intelligence into Microsoft Sentinel. The Microsoft Sentinel Integration allows you to perform LiveInvestigation on Indicators like IP, Domain and perform Correlation of Team Cymru Scout Data with Other Sources. It also leverage the capability to generate incident and notify when malicious ip found. </p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#asim-pre-requisites">ASIM Pre-requisites</a></li>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2><a id="asim-pre-requisites"></a><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Pre-requisites</h2>
+<p>This solution uses <a href="https://learn.microsoft.com/azure/sentinel/normalization">ASIM (Advanced Security Information Model)</a> parsers to provide normalized, source-agnostic data access, expanding detection coverage without modifying queries.</p>
+<h3>Supported Products</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Dependency Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-defender-for-iot">Microsoft Defender for IoT</a></td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="aws-vpc-flow-logs.html">AWS VPC Flow Logs</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="azure-firewall.html">Azure Firewall</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="cisco-meraki-events-via-rest-api.html">Cisco Meraki Events via REST API</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="ciscoasa.html">CiscoASA</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="ciscomeraki.html">CiscoMeraki</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="corelight.html">Corelight</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="customlogsama.html">CustomLogsAma</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="illumiosaas.html">IllumioSaaS</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="sentinelone.html">SentinelOne</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="syslog.html">Syslog</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="vectra-ai-stream.html">Vectra AI Stream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="windows-forwarded-events.html">Windows Forwarded Events</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="windows-security-events.html">Windows Security Events</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/teamcymruscout.html">Team Cymru Scout Data Connector</a></li>
+</ul>
+<p>Connectors from dependency solutions:</p>
+<ul>
+<li><a href="../connectors/aivectrastream.html">AI Vectra Stream via Legacy Agent</a> 🔶 <em>(dependency on <a href="vectra-ai-stream.html">Vectra AI Stream</a>)</em></li>
+<li><a href="../connectors/awss3vpcflowlogsparquetdefinition.html">Amazon Web Services S3 VPC Flow Logs</a> <em>(dependency on <a href="aws-vpc-flow-logs.html">AWS VPC Flow Logs</a>)</em></li>
+<li><a href="../connectors/azurefirewall.html">Azure Firewall</a> 🔶 <em>(dependency on <a href="azure-firewall.html">Azure Firewall</a>)</em></li>
+<li><a href="../connectors/cef.html">Common Event Format (CEF)</a> <em>(dependency on <a href="common-event-format.html">Common Event Format</a>)</em></li>
+<li><a href="../connectors/cefama.html">Common Event Format (CEF) via AMA</a> <em>(dependency on <a href="common-event-format.html">Common Event Format</a>)</em></li>
+<li><a href="../connectors/ciscoasa.html">Cisco ASA via Legacy Agent</a> <em>(dependency on <a href="ciscoasa.html">CiscoASA</a>)</em></li>
+<li><a href="../connectors/ciscoasaama.html">Cisco ASA/FTD via AMA</a> <em>(dependency on <a href="ciscoasa.html">CiscoASA</a>)</em></li>
+<li><a href="../connectors/ciscomeraki.html">[Deprecated] Cisco Meraki</a> 🔶 <em>(dependency on <a href="ciscomeraki.html">CiscoMeraki</a>)</em></li>
+<li><a href="../connectors/ciscomeraki-usingrestapi.html">Cisco Meraki (using REST API)</a> 🔶 <em>(dependency on <a href="ciscomeraki.html">CiscoMeraki</a>)</em></li>
+<li><a href="../connectors/ciscomerakimultirule.html">Cisco Meraki (using REST API)</a> <em>(dependency on <a href="cisco-meraki-events-via-rest-api.html">Cisco Meraki Events via REST API</a>)</em></li>
+<li><a href="../connectors/ciscomerakinativepoller.html">Cisco Meraki (using REST API)</a> 🔶 <em>(dependency on <a href="ciscomeraki.html">CiscoMeraki</a>)</em></li>
+<li><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> 🔶 <em>(dependency on <a href="corelight.html">Corelight</a>)</em></li>
+<li><a href="../connectors/crowdstrikeapiconnector.html">CrowdStrike API Data Connector (via Codeless Connector Framework)</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
+<li><a href="../connectors/crowdstrikefalconadversaryintelligence.html">CrowdStrike Falcon Adversary Intelligence </a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
+<li><a href="../connectors/crowdstrikefalconendpointprotection.html">[Deprecated] CrowdStrike Falcon Endpoint Protection via Legacy Agent</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
+<li><a href="../connectors/crowdstrikefalconendpointprotectionama.html">[Deprecated] CrowdStrike Falcon Endpoint Protection via AMA</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
+<li><a href="../connectors/crowdstrikefalcons3ccpdefinition.html">CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</a> 🔶 <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
+<li><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a> 🔶 <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
+<li><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> 🔶 <em>(dependency on <a href="customlogsama.html">CustomLogsAma</a>)</em></li>
+<li><a href="../connectors/esi-exchangeadminauditlogevents.html">[Deprecated] Microsoft Exchange Logs and Events</a> 🔶 <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
+<li><a href="../connectors/esi-exchangeonpremisescollector.html">Exchange Security Insights On-Premises Collector</a> 🔶 <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
+<li><a href="../connectors/esi-opt1exchangeadminauditlogsbyeventlogs.html">Microsoft Exchange Admin Audit Logs by Event Logs</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
+<li><a href="../connectors/esi-opt2exchangeserverseventlogs.html">Microsoft Exchange Logs and Events</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
+<li><a href="../connectors/esi-opt34domaincontrollerssecurityeventlogs.html"> Microsoft Active-Directory Domain Controllers Security Event Logs</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
+<li><a href="../connectors/esi-opt5exchangeiislogs.html">IIS Logs of Microsoft Exchange Servers</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
+<li><a href="../connectors/esi-opt6exchangemessagetrackinglogs.html">Microsoft Exchange Message Tracking Logs</a> 🔶 <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
+<li><a href="../connectors/esi-opt7exchangehttpproxylogs.html">Microsoft Exchange HTTP Proxy Logs</a> 🔶 <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
+<li><a href="../connectors/illumiosaasdataconnector.html">Illumio SaaS</a> <em>(dependency on <a href="illumiosaas.html">IllumioSaaS</a>)</em></li>
+<li><a href="../connectors/illumiosaasccfdefinition.html">Illumio Saas</a> <em>(dependency on <a href="illumiosaas.html">IllumioSaaS</a>)</em></li>
+<li><a href="../connectors/securityevents.html">Security Events via Legacy Agent</a> <em>(dependency on <a href="windows-security-events.html">Windows Security Events</a>)</em></li>
+<li><a href="../connectors/sentinelone.html">SentinelOne</a> 🔶 <em>(dependency on <a href="sentinelone.html">SentinelOne</a>)</em></li>
+<li><a href="../connectors/sentineloneccp.html">SentinelOne</a> 🔶 <em>(dependency on <a href="sentinelone.html">SentinelOne</a>)</em></li>
+<li><a href="../connectors/syslog.html">Syslog via Legacy Agent</a> <em>(dependency on <a href="syslog.html">Syslog</a>)</em></li>
+<li><a href="../connectors/syslogama.html">Syslog via AMA</a> <em>(dependency on <a href="syslog.html">Syslog</a>)</em></li>
+<li><a href="../connectors/vmwarecarbonblack.html">VMware Carbon Black Cloud</a> 🔶 <em>(dependency on <a href="vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a>)</em></li>
+<li><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a> 🔶 <em>(dependency on <a href="vectra-ai-stream.html">Vectra AI Stream</a>)</em></li>
+<li><a href="../connectors/virtualmetricdirectorproxy.html">VirtualMetric Director Proxy</a> <em>(dependency on <a href="virtualmetric-datastream.html">VirtualMetric DataStream</a>)</em></li>
+<li><a href="../connectors/virtualmetricmssentinelconnector.html">VirtualMetric DataStream for Microsoft Sentinel</a> <em>(dependency on <a href="virtualmetric-datastream.html">VirtualMetric DataStream</a>)</em></li>
+<li><a href="../connectors/virtualmetricmssentineldatalakeconnector.html">VirtualMetric DataStream for Microsoft Sentinel data lake</a> <em>(dependency on <a href="virtualmetric-datastream.html">VirtualMetric DataStream</a>)</em></li>
+<li><a href="../connectors/windowsforwardedevents.html">Windows Forwarded Events</a> <em>(dependency on <a href="windows-forwarded-events.html">Windows Forwarded Events</a>)</em></li>
+<li><a href="../connectors/windowssecurityevents.html">Windows Security Events via AMA</a> <em>(dependency on <a href="windows-security-events.html">Windows Security Events</a>)</em></li>
+<li><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a> <em>(dependency on <a href="vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a>)</em></li>
+</ul>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>266 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/aadmanagedidentitysigninlogs.html"><code>AADManagedIdentitySignInLogs</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/aadnoninteractiveusersigninlogs.html"><code>AADNonInteractiveUserSignInLogs</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/aadserviceprincipalsigninlogs.html"><code>AADServicePrincipalSignInLogs</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/asimparsers.html"><code>ASIMParsers</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/asimauditeventlogs.html"><code>ASimAuditEventLogs</code></a></td>
+<td><a href="../connectors/ciscomerakimultirule.html">Cisco Meraki (using REST API)</a> (dependency), <a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/asimauthenticationeventlogs.html"><code>ASimAuthenticationEventLogs</code></a></td>
+<td><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a> (dependency), <a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/asimauthenticationeventlogs-cl.html"><code>ASimAuthenticationEventLogs_CL</code></a> 🔶</td>
+<td><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/asimdhcpeventlogs.html"><code>ASimDhcpEventLogs</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/asimdnsactivitylogs.html"><code>ASimDnsActivityLogs</code></a></td>
+<td><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/asimfileeventlogs.html"><code>ASimFileEventLogs</code></a></td>
+<td><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a> (dependency), <a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/asimfileeventlogs-cl.html"><code>ASimFileEventLogs_CL</code></a> 🔶</td>
+<td><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/asimnetworksessionlogs.html"><code>ASimNetworkSessionLogs</code></a></td>
+<td><a href="../connectors/ciscomerakimultirule.html">Cisco Meraki (using REST API)</a> (dependency), <a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a> (dependency), <a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/asimprocesseventlogs.html"><code>ASimProcessEventLogs</code></a></td>
+<td><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a> (dependency), <a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/asimprocesseventlogs-cl.html"><code>ASimProcessEventLogs_CL</code></a> 🔶</td>
+<td><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/asimregistryeventlogs.html"><code>ASimRegistryEventLogs</code></a></td>
+<td><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a> (dependency), <a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/asimregistryeventlogs-cl.html"><code>ASimRegistryEventLogs_CL</code></a> 🔶</td>
+<td><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/asimusermanagementactivitylogs.html"><code>ASimUserManagementActivityLogs</code></a></td>
+<td><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/asimusermanagementlogs-cl.html"><code>ASimUserManagementLogs_CL</code></a> 🔶</td>
+<td><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/asimwebsessionlogs.html"><code>ASimWebSessionLogs</code></a></td>
+<td><a href="../connectors/ciscomerakimultirule.html">Cisco Meraki (using REST API)</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/awscloudtrail.html"><code>AWSCloudTrail</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/awsvpcflow.html"><code>AWSVPCFlow</code></a></td>
+<td><a href="../connectors/awss3vpcflowlogsparquetdefinition.html">Amazon Web Services S3 VPC Flow Logs</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/azfwapplicationrule.html"><code>AZFWApplicationRule</code></a></td>
+<td><a href="../connectors/azurefirewall.html">Azure Firewall</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/azfwdnsquery.html"><code>AZFWDnsQuery</code></a></td>
+<td><a href="../connectors/azurefirewall.html">Azure Firewall</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/azfwfatflow.html"><code>AZFWFatFlow</code></a></td>
+<td><a href="../connectors/azurefirewall.html">Azure Firewall</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/azfwflowtrace.html"><code>AZFWFlowTrace</code></a></td>
+<td><a href="../connectors/azurefirewall.html">Azure Firewall</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/azfwidpssignature.html"><code>AZFWIdpsSignature</code></a></td>
+<td><a href="../connectors/azurefirewall.html">Azure Firewall</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/azfwinternalfqdnresolutionfailure.html"><code>AZFWInternalFqdnResolutionFailure</code></a></td>
+<td><a href="../connectors/azurefirewall.html">Azure Firewall</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/azfwnatrule.html"><code>AZFWNatRule</code></a></td>
+<td><a href="../connectors/azurefirewall.html">Azure Firewall</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/azfwnetworkrule.html"><code>AZFWNetworkRule</code></a></td>
+<td><a href="../connectors/azurefirewall.html">Azure Firewall</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/azfwthreatintel.html"><code>AZFWThreatIntel</code></a></td>
+<td><a href="../connectors/azurefirewall.html">Azure Firewall</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/apachehttpserver-cl.html"><code>ApacheHTTPServer_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/asimparsersdata.html"><code>AsimParsersData</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/audits-data-cl.html"><code>Audits_Data_CL</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a> 🔶</td>
+<td><a href="../connectors/azurefirewall.html">Azure Firewall</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/azurenetworkanalytics-cl.html"><code>AzureNetworkAnalytics_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/carbonblackauditlogs-cl.html"><code>CarbonBlackAuditLogs_CL</code></a> 🔶</td>
+<td><a href="../connectors/vmwarecarbonblack.html">VMware Carbon Black Cloud</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/carbonblackevents-cl.html"><code>CarbonBlackEvents_CL</code></a> 🔶</td>
+<td><a href="../connectors/vmwarecarbonblack.html">VMware Carbon Black Cloud</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/carbonblacknotifications-cl.html"><code>CarbonBlackNotifications_CL</code></a> 🔶</td>
+<td><a href="../connectors/vmwarecarbonblack.html">VMware Carbon Black Cloud</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/carbonblack-alerts-cl.html"><code>CarbonBlack_Alerts_CL</code></a></td>
+<td><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/carbonblack-watchlist-cl.html"><code>CarbonBlack_Watchlist_CL</code></a></td>
+<td><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/ciscomerakinativepoller-cl.html"><code>CiscoMerakiNativePoller_CL</code></a></td>
+<td><a href="../connectors/ciscomeraki-usingrestapi.html">Cisco Meraki (using REST API)</a> (dependency), <a href="../connectors/ciscomerakinativepoller.html">Cisco Meraki (using REST API)</a> (dependency), <a href="../connectors/ciscomeraki.html">[Deprecated] Cisco Meraki</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/cisco-umbrella-dns-cl.html"><code>Cisco_Umbrella_dns_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+<td><a href="../connectors/ciscoasa.html">Cisco ASA via Legacy Agent</a> (dependency), <a href="../connectors/ciscoasaama.html">Cisco ASA/FTD via AMA</a> (dependency), <a href="../connectors/cef.html">Common Event Format (CEF)</a> (dependency), <a href="../connectors/cefama.html">Common Event Format (CEF) via AMA</a> (dependency), <a href="../connectors/virtualmetricmssentinelconnector.html">VirtualMetric DataStream for Microsoft Sentinel</a> (dependency), <a href="../connectors/virtualmetricmssentineldatalakeconnector.html">VirtualMetric DataStream for Microsoft Sentinel data lake</a> (dependency), <a href="../connectors/virtualmetricdirectorproxy.html">VirtualMetric Director Proxy</a> (dependency), <a href="../connectors/crowdstrikefalconendpointprotectionama.html">[Deprecated] CrowdStrike Falcon Endpoint Protection via AMA</a> (dependency), <a href="../connectors/crowdstrikefalconendpointprotection.html">[Deprecated] CrowdStrike Falcon Endpoint Protection via Legacy Agent</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/communication-data-cl.html"><code>Communication_Data_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-cl.html"><code>Corelight_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-bacnet-cl.html"><code>Corelight_v2_bacnet_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-capture-loss-cl.html"><code>Corelight_v2_capture_loss_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-cip-cl.html"><code>Corelight_v2_cip_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-conn-cl.html"><code>Corelight_v2_conn_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-conn-long-cl.html"><code>Corelight_v2_conn_long_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-conn-red-cl.html"><code>Corelight_v2_conn_red_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-corelight-burst-cl.html"><code>Corelight_v2_corelight_burst_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-corelight-overall-capture-loss-cl.html"><code>Corelight_v2_corelight_overall_capture_loss_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-corelight-profiling-cl.html"><code>Corelight_v2_corelight_profiling_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-datared-cl.html"><code>Corelight_v2_datared_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-dce-rpc-cl.html"><code>Corelight_v2_dce_rpc_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-dga-cl.html"><code>Corelight_v2_dga_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-dhcp-cl.html"><code>Corelight_v2_dhcp_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-dnp3-cl.html"><code>Corelight_v2_dnp3_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-dns-cl.html"><code>Corelight_v2_dns_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-dns-red-cl.html"><code>Corelight_v2_dns_red_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-dpd-cl.html"><code>Corelight_v2_dpd_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-encrypted-dns-cl.html"><code>Corelight_v2_encrypted_dns_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-enip-cl.html"><code>Corelight_v2_enip_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-enip-debug-cl.html"><code>Corelight_v2_enip_debug_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-enip-list-identity-cl.html"><code>Corelight_v2_enip_list_identity_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-etc-viz-cl.html"><code>Corelight_v2_etc_viz_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-files-cl.html"><code>Corelight_v2_files_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-files-red-cl.html"><code>Corelight_v2_files_red_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-ftp-cl.html"><code>Corelight_v2_ftp_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-generic-dns-tunnels-cl.html"><code>Corelight_v2_generic_dns_tunnels_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-generic-icmp-tunnels-cl.html"><code>Corelight_v2_generic_icmp_tunnels_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-http2-cl.html"><code>Corelight_v2_http2_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-http-cl.html"><code>Corelight_v2_http_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-http-red-cl.html"><code>Corelight_v2_http_red_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-icmp-specific-tunnels-cl.html"><code>Corelight_v2_icmp_specific_tunnels_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-intel-cl.html"><code>Corelight_v2_intel_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-ipsec-cl.html"><code>Corelight_v2_ipsec_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-irc-cl.html"><code>Corelight_v2_irc_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-iso-cotp-cl.html"><code>Corelight_v2_iso_cotp_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-kerberos-cl.html"><code>Corelight_v2_kerberos_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-known-certs-cl.html"><code>Corelight_v2_known_certs_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-known-devices-cl.html"><code>Corelight_v2_known_devices_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-known-domains-cl.html"><code>Corelight_v2_known_domains_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-known-hosts-cl.html"><code>Corelight_v2_known_hosts_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-known-names-cl.html"><code>Corelight_v2_known_names_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-known-remotes-cl.html"><code>Corelight_v2_known_remotes_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-known-services-cl.html"><code>Corelight_v2_known_services_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-known-users-cl.html"><code>Corelight_v2_known_users_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-local-subnets-cl.html"><code>Corelight_v2_local_subnets_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-local-subnets-dj-cl.html"><code>Corelight_v2_local_subnets_dj_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-local-subnets-graphs-cl.html"><code>Corelight_v2_local_subnets_graphs_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-log4shell-cl.html"><code>Corelight_v2_log4shell_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-modbus-cl.html"><code>Corelight_v2_modbus_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-mqtt-connect-cl.html"><code>Corelight_v2_mqtt_connect_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-mqtt-publish-cl.html"><code>Corelight_v2_mqtt_publish_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-mqtt-subscribe-cl.html"><code>Corelight_v2_mqtt_subscribe_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-mysql-cl.html"><code>Corelight_v2_mysql_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-notice-cl.html"><code>Corelight_v2_notice_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-ntlm-cl.html"><code>Corelight_v2_ntlm_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-ntp-cl.html"><code>Corelight_v2_ntp_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-ocsp-cl.html"><code>Corelight_v2_ocsp_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-openflow-cl.html"><code>Corelight_v2_openflow_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-packet-filter-cl.html"><code>Corelight_v2_packet_filter_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-pe-cl.html"><code>Corelight_v2_pe_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-profinet-cl.html"><code>Corelight_v2_profinet_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-profinet-dce-rpc-cl.html"><code>Corelight_v2_profinet_dce_rpc_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-profinet-debug-cl.html"><code>Corelight_v2_profinet_debug_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-radius-cl.html"><code>Corelight_v2_radius_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-rdp-cl.html"><code>Corelight_v2_rdp_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-reporter-cl.html"><code>Corelight_v2_reporter_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-rfb-cl.html"><code>Corelight_v2_rfb_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-s7comm-cl.html"><code>Corelight_v2_s7comm_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-signatures-cl.html"><code>Corelight_v2_signatures_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-sip-cl.html"><code>Corelight_v2_sip_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-smartpcap-cl.html"><code>Corelight_v2_smartpcap_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-smartpcap-stats-cl.html"><code>Corelight_v2_smartpcap_stats_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-smb-files-cl.html"><code>Corelight_v2_smb_files_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-smb-mapping-cl.html"><code>Corelight_v2_smb_mapping_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-smtp-cl.html"><code>Corelight_v2_smtp_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-smtp-links-cl.html"><code>Corelight_v2_smtp_links_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-snmp-cl.html"><code>Corelight_v2_snmp_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-socks-cl.html"><code>Corelight_v2_socks_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-software-cl.html"><code>Corelight_v2_software_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-specific-dns-tunnels-cl.html"><code>Corelight_v2_specific_dns_tunnels_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-ssh-cl.html"><code>Corelight_v2_ssh_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-ssl-cl.html"><code>Corelight_v2_ssl_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-ssl-red-cl.html"><code>Corelight_v2_ssl_red_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-stats-cl.html"><code>Corelight_v2_stats_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-stepping-cl.html"><code>Corelight_v2_stepping_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-stun-cl.html"><code>Corelight_v2_stun_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-stun-nat-cl.html"><code>Corelight_v2_stun_nat_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-suricata-corelight-cl.html"><code>Corelight_v2_suricata_corelight_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-suricata-eve-cl.html"><code>Corelight_v2_suricata_eve_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-suricata-stats-cl.html"><code>Corelight_v2_suricata_stats_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-suricata-zeek-stats-cl.html"><code>Corelight_v2_suricata_zeek_stats_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-syslog-cl.html"><code>Corelight_v2_syslog_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-tds-cl.html"><code>Corelight_v2_tds_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-tds-rpc-cl.html"><code>Corelight_v2_tds_rpc_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-tds-sql-batch-cl.html"><code>Corelight_v2_tds_sql_batch_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-traceroute-cl.html"><code>Corelight_v2_traceroute_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-tunnel-cl.html"><code>Corelight_v2_tunnel_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-unknown-smartpcap-cl.html"><code>Corelight_v2_unknown_smartpcap_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-util-stats-cl.html"><code>Corelight_v2_util_stats_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-vpn-cl.html"><code>Corelight_v2_vpn_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-weird-cl.html"><code>Corelight_v2_weird_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-weird-red-cl.html"><code>Corelight_v2_weird_red_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-weird-stats-cl.html"><code>Corelight_v2_weird_stats_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-wireguard-cl.html"><code>Corelight_v2_wireguard_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-x509-cl.html"><code>Corelight_v2_x509_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-x509-red-cl.html"><code>Corelight_v2_x509_red_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/corelight-v2-zeek-doctor-cl.html"><code>Corelight_v2_zeek_doctor_CL</code></a> 🔶</td>
+<td><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/crowdstrikealerts.html"><code>CrowdStrikeAlerts</code></a></td>
+<td><a href="../connectors/crowdstrikeapiconnector.html">CrowdStrike API Data Connector (via Codeless Connector Framework)</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/crowdstrikecases.html"><code>CrowdStrikeCases</code></a></td>
+<td><a href="../connectors/crowdstrikeapiconnector.html">CrowdStrike API Data Connector (via Codeless Connector Framework)</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/crowdstrikedetections.html"><code>CrowdStrikeDetections</code></a></td>
+<td><a href="../connectors/crowdstrikeapiconnector.html">CrowdStrike API Data Connector (via Codeless Connector Framework)</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/crowdstrikehosts.html"><code>CrowdStrikeHosts</code></a></td>
+<td><a href="../connectors/crowdstrikeapiconnector.html">CrowdStrike API Data Connector (via Codeless Connector Framework)</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/crowdstrikevulnerabilities.html"><code>CrowdStrikeVulnerabilities</code></a></td>
+<td><a href="../connectors/crowdstrikeapiconnector.html">CrowdStrike API Data Connector (via Codeless Connector Framework)</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/crowdstrike-additional-events-cl.html"><code>CrowdStrike_Additional_Events_CL</code></a> 🔶</td>
+<td><a href="../connectors/crowdstrikefalcons3ccpdefinition.html">CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</a> (dependency), <a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/crowdstrike-audit-events-cl.html"><code>CrowdStrike_Audit_Events_CL</code></a></td>
+<td><a href="../connectors/crowdstrikefalcons3ccpdefinition.html">CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/crowdstrike-auth-events-cl.html"><code>CrowdStrike_Auth_Events_CL</code></a></td>
+<td><a href="../connectors/crowdstrikefalcons3ccpdefinition.html">CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/crowdstrike-dns-events-cl.html"><code>CrowdStrike_DNS_Events_CL</code></a></td>
+<td><a href="../connectors/crowdstrikefalcons3ccpdefinition.html">CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/crowdstrike-file-events-cl.html"><code>CrowdStrike_File_Events_CL</code></a></td>
+<td><a href="../connectors/crowdstrikefalcons3ccpdefinition.html">CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/crowdstrike-network-events-cl.html"><code>CrowdStrike_Network_Events_CL</code></a></td>
+<td><a href="../connectors/crowdstrikefalcons3ccpdefinition.html">CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/crowdstrike-process-events-cl.html"><code>CrowdStrike_Process_Events_CL</code></a></td>
+<td><a href="../connectors/crowdstrikefalcons3ccpdefinition.html">CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/crowdstrike-registry-events-cl.html"><code>CrowdStrike_Registry_Events_CL</code></a></td>
+<td><a href="../connectors/crowdstrikefalcons3ccpdefinition.html">CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/crowdstrike-secondary-data-cl.html"><code>CrowdStrike_Secondary_Data_CL</code></a> 🔶</td>
+<td><a href="../connectors/crowdstrikefalcons3ccpdefinition.html">CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</a> (dependency), <a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/crowdstrike-user-events-cl.html"><code>CrowdStrike_User_Events_CL</code></a></td>
+<td><a href="../connectors/crowdstrikefalcons3ccpdefinition.html">CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/cymru-scout-account-usage-data-cl.html"><code>Cymru_Scout_Account_Usage_Data_CL</code></a></td>
+<td><a href="../connectors/teamcymruscout.html">Team Cymru Scout Data Connector</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/cymru-scout-domain-data-cl.html"><code>Cymru_Scout_Domain_Data_CL</code></a></td>
+<td><a href="../connectors/teamcymruscout.html">Team Cymru Scout Data Connector</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/cymru-scout-ip-data-communications-cl.html"><code>Cymru_Scout_IP_Data_Communications_CL</code></a></td>
+<td><a href="../connectors/teamcymruscout.html">Team Cymru Scout Data Connector</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/cymru-scout-ip-data-details-cl.html"><code>Cymru_Scout_IP_Data_Details_CL</code></a></td>
+<td><a href="../connectors/teamcymruscout.html">Team Cymru Scout Data Connector</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/cymru-scout-ip-data-fingerprints-cl.html"><code>Cymru_Scout_IP_Data_Fingerprints_CL</code></a></td>
+<td><a href="../connectors/teamcymruscout.html">Team Cymru Scout Data Connector</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/cymru-scout-ip-data-foundation-cl.html"><code>Cymru_Scout_IP_Data_Foundation_CL</code></a></td>
+<td><a href="../connectors/teamcymruscout.html">Team Cymru Scout Data Connector</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/cymru-scout-ip-data-openports-cl.html"><code>Cymru_Scout_IP_Data_OpenPorts_CL</code></a></td>
+<td><a href="../connectors/teamcymruscout.html">Team Cymru Scout Data Connector</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/cymru-scout-ip-data-pdns-cl.html"><code>Cymru_Scout_IP_Data_PDNS_CL</code></a></td>
+<td><a href="../connectors/teamcymruscout.html">Team Cymru Scout Data Connector</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/cymru-scout-ip-data-summary-certs-cl.html"><code>Cymru_Scout_IP_Data_Summary_Certs_CL</code></a></td>
+<td><a href="../connectors/teamcymruscout.html">Team Cymru Scout Data Connector</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/cymru-scout-ip-data-summary-details-cl.html"><code>Cymru_Scout_IP_Data_Summary_Details_CL</code></a></td>
+<td><a href="../connectors/teamcymruscout.html">Team Cymru Scout Data Connector</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/cymru-scout-ip-data-summary-fingerprints-cl.html"><code>Cymru_Scout_IP_Data_Summary_Fingerprints_CL</code></a></td>
+<td><a href="../connectors/teamcymruscout.html">Team Cymru Scout Data Connector</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/cymru-scout-ip-data-summary-openports-cl.html"><code>Cymru_Scout_IP_Data_Summary_OpenPorts_CL</code></a></td>
+<td><a href="../connectors/teamcymruscout.html">Team Cymru Scout Data Connector</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/cymru-scout-ip-data-summary-pdns-cl.html"><code>Cymru_Scout_IP_Data_Summary_PDNS_CL</code></a></td>
+<td><a href="../connectors/teamcymruscout.html">Team Cymru Scout Data Connector</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/cymru-scout-ip-data-x509-cl.html"><code>Cymru_Scout_IP_Data_x509_CL</code></a></td>
+<td><a href="../connectors/teamcymruscout.html">Team Cymru Scout Data Connector</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/devicelogonevents.html"><code>DeviceLogonEvents</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/devicenetworkevents.html"><code>DeviceNetworkEvents</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/dnsevents.html"><code>DnsEvents</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/domain-data-cl.html"><code>Domain_Data_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/esiexchangeconfig-cl.html"><code>ESIExchangeConfig_CL</code></a> 🔶</td>
+<td><a href="../connectors/esi-exchangeonpremisescollector.html">Exchange Security Insights On-Premises Collector</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/event.html"><code>Event</code></a></td>
+<td><a href="../connectors/esi-opt1exchangeadminauditlogsbyeventlogs.html">Microsoft Exchange Admin Audit Logs by Event Logs</a> (dependency), <a href="../connectors/esi-opt2exchangeserverseventlogs.html">Microsoft Exchange Logs and Events</a> (dependency), <a href="../connectors/esi-exchangeadminauditlogevents.html">[Deprecated] Microsoft Exchange Logs and Events</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/exchangehttpproxy-cl.html"><code>ExchangeHttpProxy_CL</code></a> 🔶</td>
+<td><a href="../connectors/esi-opt7exchangehttpproxylogs.html">Microsoft Exchange HTTP Proxy Logs</a> (dependency), <a href="../connectors/esi-exchangeadminauditlogevents.html">[Deprecated] Microsoft Exchange Logs and Events</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/fingerprints-data-cl.html"><code>Fingerprints_Data_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/gcp-dns-cl.html"><code>GCP_DNS_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/heartbeat.html"><code>Heartbeat</code></a></td>
+<td><a href="../connectors/ciscoasaama.html">Cisco ASA/FTD via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/identity-data-cl.html"><code>Identity_Data_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/illumiofloweventsv2-cl.html"><code>IllumioFlowEventsV2_CL</code></a></td>
+<td><a href="../connectors/illumiosaasccfdefinition.html">Illumio Saas</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/illumio-auditable-events-cl.html"><code>Illumio_Auditable_Events_CL</code></a></td>
+<td><a href="../connectors/illumiosaasdataconnector.html">Illumio SaaS</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/illumio-flow-events-cl.html"><code>Illumio_Flow_Events_CL</code></a></td>
+<td><a href="../connectors/illumiosaasdataconnector.html">Illumio SaaS</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/jbossevent-cl.html"><code>JBossEvent_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/juniperidp-cl.html"><code>JuniperIDP_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/marklogicaudit-cl.html"><code>MarkLogicAudit_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/messagetrackinglog-cl.html"><code>MessageTrackingLog_CL</code></a> 🔶</td>
+<td><a href="../connectors/esi-opt6exchangemessagetrackinglogs.html">Microsoft Exchange Message Tracking Logs</a> (dependency), <a href="../connectors/esi-exchangeadminauditlogevents.html">[Deprecated] Microsoft Exchange Logs and Events</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/mongodbaudit-cl.html"><code>MongoDBAudit_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/nginx-cl.html"><code>NGINX_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/ntanetanalytics.html"><code>NTANetAnalytics</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/nxlog-dns-server-cl.html"><code>NXLog_DNS_Server_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/okta-cl.html"><code>Okta_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/open-ports-data-cl.html"><code>Open_Ports_Data_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/oracleweblogicserver-cl.html"><code>OracleWebLogicServer_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/pdns-data-cl.html"><code>PDNS_Data_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/postgresql-cl.html"><code>PostgreSQL_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/proto-by-ip-data-cl.html"><code>Proto_By_IP_Data_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/salesforceservicecloud-cl.html"><code>SalesforceServiceCloud_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/securitybridgelogs-cl.html"><code>SecurityBridgeLogs_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+<td><a href="../connectors/esi-opt34domaincontrollerssecurityeventlogs.html"> Microsoft Active-Directory Domain Controllers Security Event Logs</a> (dependency), <a href="../connectors/securityevents.html">Security Events via Legacy Agent</a> (dependency), <a href="../connectors/windowssecurityevents.html">Windows Security Events via AMA</a> (dependency), <a href="../connectors/esi-exchangeadminauditlogevents.html">[Deprecated] Microsoft Exchange Logs and Events</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/securityiotrawevent.html"><code>SecurityIoTRawEvent</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a> 🔶</td>
+<td><a href="../connectors/sentineloneccp.html">SentinelOne</a> (dependency), <a href="../connectors/sentinelone.html">SentinelOne</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a> 🔶</td>
+<td><a href="../connectors/sentineloneccp.html">SentinelOne</a> (dependency), <a href="../connectors/sentinelone.html">SentinelOne</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a> 🔶</td>
+<td><a href="../connectors/sentineloneccp.html">SentinelOne</a> (dependency), <a href="../connectors/sentinelone.html">SentinelOne</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a> 🔶</td>
+<td><a href="../connectors/sentineloneccp.html">SentinelOne</a> (dependency), <a href="../connectors/sentinelone.html">SentinelOne</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a> 🔶</td>
+<td><a href="../connectors/sentineloneccp.html">SentinelOne</a> (dependency), <a href="../connectors/sentinelone.html">SentinelOne</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a> 🔶</td>
+<td><a href="../connectors/sentinelone.html">SentinelOne</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/squidproxy-cl.html"><code>SquidProxy_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/summary-details-cl.html"><code>Summary_Details_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/summary-details-top-certs-data-cl.html"><code>Summary_Details_Top_Certs_Data_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/summary-details-top-fingerprints-data-cl.html"><code>Summary_Details_Top_Fingerprints_Data_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/summary-details-top-open-ports-data-cl.html"><code>Summary_Details_Top_Open_Ports_Data_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/summary-details-top-pdns-data-cl.html"><code>Summary_Details_Top_Pdns_Data_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+<td><a href="../connectors/ciscomerakinativepoller.html">Cisco Meraki (using REST API)</a> (dependency), <a href="../connectors/ciscomeraki-usingrestapi.html">Cisco Meraki (using REST API)</a> (dependency), <a href="../connectors/syslogama.html">Syslog via AMA</a> (dependency), <a href="../connectors/syslog.html">Syslog via Legacy Agent</a> (dependency), <a href="../connectors/ciscomeraki.html">[Deprecated] Cisco Meraki</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/tomcat-cl.html"><code>Tomcat_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/top-asns-by-ip-data-cl.html"><code>Top_Asns_By_IP_Data_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/top-country-codes-by-ip-data-cl.html"><code>Top_Country_Codes_By_IP_Data_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/top-services-by-ip-data-cl.html"><code>Top_Services_By_IP_Data_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/top-tags-by-ip-data-cl.html"><code>Top_Tags_By_IP_Data_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/ubiquiti-cl.html"><code>Ubiquiti_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vmconnection.html"><code>VMConnection</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/vectrastream-cl.html"><code>VectraStream_CL</code></a> 🔶</td>
+<td><a href="../connectors/aivectrastream.html">AI Vectra Stream via Legacy Agent</a> (dependency), <a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/w3ciislog.html"><code>W3CIISLog</code></a></td>
+<td><a href="../connectors/esi-opt5exchangeiislogs.html">IIS Logs of Microsoft Exchange Servers</a> (dependency), <a href="../connectors/esi-exchangeadminauditlogevents.html">[Deprecated] Microsoft Exchange Logs and Events</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/whois-data-cl.html"><code>Whois_Data_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/windowsevent.html"><code>WindowsEvent</code></a></td>
+<td><a href="../connectors/windowsforwardedevents.html">Windows Forwarded Events</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/x509-data-cl.html"><code>X509_Data_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/zpa-cl.html"><code>ZPA_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/asimparsers.html"><code>asimParsers</code></a></td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/barracuda-cl.html"><code>barracuda_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/meraki-cl.html"><code>meraki_CL</code></a> 🔶</td>
+<td><a href="../connectors/ciscomeraki-usingrestapi.html">Cisco Meraki (using REST API)</a> (dependency), <a href="../connectors/ciscomerakinativepoller.html">Cisco Meraki (using REST API)</a> (dependency), <a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency), <a href="../connectors/ciscomeraki.html">[Deprecated] Cisco Meraki</a> (dependency)</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/vcenter-cl.html"><code>vcenter_CL</code></a> 🔶</td>
+<td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-beacon-cl.html"><code>vectra_beacon_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-dcerpc-cl.html"><code>vectra_dcerpc_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-dhcp-cl.html"><code>vectra_dhcp_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-dns-cl.html"><code>vectra_dns_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-http-cl.html"><code>vectra_http_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-isession-cl.html"><code>vectra_isession_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-kerberos-cl.html"><code>vectra_kerberos_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-ldap-cl.html"><code>vectra_ldap_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-ntlm-cl.html"><code>vectra_ntlm_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-radius-cl.html"><code>vectra_radius_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-rdp-cl.html"><code>vectra_rdp_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-smbfiles-cl.html"><code>vectra_smbfiles_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-smbmapping-cl.html"><code>vectra_smbmapping_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-smtp-cl.html"><code>vectra_smtp_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-ssh-cl.html"><code>vectra_ssh_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-ssl-cl.html"><code>vectra_ssl_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/vectra-x509-cl.html"><code>vectra_x509_CL</code></a> 🔶</td>
+<td><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a> (dependency)</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3>Internal Tables</h3>
+<p>The following <strong>1 table(s)</strong> are used internally by this solution's content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+<td><a href="../connectors/crowdstrikefalconadversaryintelligence.html">CrowdStrike Falcon Adversary Intelligence </a> (dependency)</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>28 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">22</td>
+</tr>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Watchlists</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/team-cymru-scout-teamcymruscout-b64c6ed4.html">TeamCymruScout</a></td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/asimnetworksessionmd4iotsensor.html"><code>ASimNetworkSessionMD4IoTSensor</code></a><br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/asim-authentication-microsoftsecurityevents.html"><code>_ASim_Authentication_MicrosoftSecurityEvents</code></a><br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/asimnetworksessionmd4iotsensor.html"><code>_ASim_NetworkSession_MD4IoTSensor</code></a><br><a href="../tables/aadmanagedidentitysigninlogs.html"><code>AADManagedIdentitySignInLogs</code></a><br><a href="../tables/aadnoninteractiveusersigninlogs.html"><code>AADNonInteractiveUserSignInLogs</code></a><br><a href="../tables/aadserviceprincipalsigninlogs.html"><code>AADServicePrincipalSignInLogs</code></a><br><a href="../tables/asimparsers.html"><code>ASIMParsers</code></a><br><a href="../tables/asimauditeventlogs.html"><code>ASimAuditEventLogs</code></a><br><a href="../tables/asimauthenticationeventlogs.html"><code>ASimAuthenticationEventLogs</code></a><br><a href="../tables/asimdhcpeventlogs.html"><code>ASimDhcpEventLogs</code></a><br><a href="../tables/asimdnsactivitylogs.html"><code>ASimDnsActivityLogs</code></a><br><a href="../tables/asimnetworksessionlogs.html"><code>ASimNetworkSessionLogs</code></a><br><a href="../tables/asimwebsessionlogs.html"><code>ASimWebSessionLogs</code></a><br><a href="../tables/awscloudtrail.html"><code>AWSCloudTrail</code></a><br><a href="../tables/awsvpcflow.html"><code>AWSVPCFlow</code></a><br><a href="../tables/azfwapplicationrule.html"><code>AZFWApplicationRule</code></a><br><a href="../tables/azfwdnsquery.html"><code>AZFWDnsQuery</code></a><br><a href="../tables/azfwidpssignature.html"><code>AZFWIdpsSignature</code></a><br><a href="../tables/azfwnatrule.html"><code>AZFWNatRule</code></a><br><a href="../tables/azfwnetworkrule.html"><code>AZFWNetworkRule</code></a><br><a href="../tables/azfwthreatintel.html"><code>AZFWThreatIntel</code></a><br><a href="../tables/apachehttpserver-cl.html"><code>ApacheHTTPServer_CL</code></a><br><a href="../tables/asimparsersdata.html"><code>AsimParsersData</code></a><br><a href="../tables/audits-data-cl.html"><code>Audits_Data_CL</code></a><br><a href="../tables/azureactivity.html"><code>AzureActivity</code></a><br><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a><br><a href="../tables/azurenetworkanalytics-cl.html"><code>AzureNetworkAnalytics_CL</code></a><br><a href="../tables/carbonblackauditlogs-cl.html"><code>CarbonBlackAuditLogs_CL</code></a><br><a href="../tables/carbonblackevents-cl.html"><code>CarbonBlackEvents_CL</code></a><br><a href="../tables/carbonblacknotifications-cl.html"><code>CarbonBlackNotifications_CL</code></a><br><a href="../tables/cisco-umbrella-dns-cl.html"><code>Cisco_Umbrella_dns_CL</code></a><br><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a><br><a href="../tables/communication-data-cl.html"><code>Communication_Data_CL</code></a><br><a href="../tables/corelight-cl.html"><code>Corelight_CL</code></a><br><a href="../tables/cymru-scout-account-usage-data-cl.html"><code>Cymru_Scout_Account_Usage_Data_CL</code></a><br><a href="../tables/cymru-scout-domain-data-cl.html"><code>Cymru_Scout_Domain_Data_CL</code></a><br><a href="../tables/cymru-scout-ip-data-details-cl.html"><code>Cymru_Scout_IP_Data_Details_CL</code></a><br><a href="../tables/cymru-scout-ip-data-foundation-cl.html"><code>Cymru_Scout_IP_Data_Foundation_CL</code></a><br><a href="../tables/cymru-scout-ip-data-summary-certs-cl.html"><code>Cymru_Scout_IP_Data_Summary_Certs_CL</code></a><br><a href="../tables/cymru-scout-ip-data-summary-details-cl.html"><code>Cymru_Scout_IP_Data_Summary_Details_CL</code></a><br><a href="../tables/cymru-scout-ip-data-summary-fingerprints-cl.html"><code>Cymru_Scout_IP_Data_Summary_Fingerprints_CL</code></a><br><a href="../tables/cymru-scout-ip-data-summary-openports-cl.html"><code>Cymru_Scout_IP_Data_Summary_OpenPorts_CL</code></a><br><a href="../tables/cymru-scout-ip-data-summary-pdns-cl.html"><code>Cymru_Scout_IP_Data_Summary_PDNS_CL</code></a><br><a href="../tables/devicelogonevents.html"><code>DeviceLogonEvents</code></a><br><a href="../tables/devicenetworkevents.html"><code>DeviceNetworkEvents</code></a><br><a href="../tables/dnsevents.html"><code>DnsEvents</code></a><br><a href="../tables/domain-data-cl.html"><code>Domain_Data_CL</code></a><br><a href="../tables/event.html"><code>Event</code></a><br><a href="../tables/fingerprints-data-cl.html"><code>Fingerprints_Data_CL</code></a><br><a href="../tables/gcp-dns-cl.html"><code>GCP_DNS_CL</code></a><br><a href="../tables/gworkspace-reportsapi-login-cl.html"><code>GWorkspace_ReportsAPI_login_CL</code></a><br><a href="../tables/identity-data-cl.html"><code>Identity_Data_CL</code></a><br><a href="../tables/illumio-auditable-events-cl.html"><code>Illumio_Auditable_Events_CL</code></a><br><a href="../tables/illumio-flow-events-cl.html"><code>Illumio_Flow_Events_CL</code></a><br><a href="../tables/ntanetanalytics.html"><code>NTANetAnalytics</code></a><br><a href="../tables/nxlog-dns-server-cl.html"><code>NXLog_DNS_Server_CL</code></a><br><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a><br><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a><br><a href="../tables/open-ports-data-cl.html"><code>Open_Ports_Data_CL</code></a><br><a href="../tables/pdns-data-cl.html"><code>PDNS_Data_CL</code></a><br><a href="../tables/postgresql-cl.html"><code>PostgreSQL_CL</code></a><br><a href="../tables/proto-by-ip-data-cl.html"><code>Proto_By_IP_Data_CL</code></a><br><a href="../tables/salesforceservicecloud-cl.html"><code>SalesforceServiceCloud_CL</code></a><br><a href="../tables/securityevent.html"><code>SecurityEvent</code></a><br><a href="../tables/securityiotrawevent.html"><code>SecurityIoTRawEvent</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a><br><a href="../tables/squidproxy-cl.html"><code>SquidProxy_CL</code></a><br><a href="../tables/summary-details-cl.html"><code>Summary_Details_CL</code></a><br><a href="../tables/summary-details-top-certs-data-cl.html"><code>Summary_Details_Top_Certs_Data_CL</code></a><br><a href="../tables/summary-details-top-fingerprints-data-cl.html"><code>Summary_Details_Top_Fingerprints_Data_CL</code></a><br><a href="../tables/summary-details-top-open-ports-data-cl.html"><code>Summary_Details_Top_Open_Ports_Data_CL</code></a><br><a href="../tables/summary-details-top-pdns-data-cl.html"><code>Summary_Details_Top_Pdns_Data_CL</code></a><br><a href="../tables/syslog.html"><code>Syslog</code></a><br><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a><br><a href="../tables/top-asns-by-ip-data-cl.html"><code>Top_Asns_By_IP_Data_CL</code></a><br><a href="../tables/top-country-codes-by-ip-data-cl.html"><code>Top_Country_Codes_By_IP_Data_CL</code></a><br><a href="../tables/top-services-by-ip-data-cl.html"><code>Top_Services_By_IP_Data_CL</code></a><br><a href="../tables/top-tags-by-ip-data-cl.html"><code>Top_Tags_By_IP_Data_CL</code></a><br><a href="../tables/vmconnection.html"><code>VMConnection</code></a><br><a href="../tables/vectrastream-cl.html"><code>VectraStream_CL</code></a><br><a href="../tables/w3ciislog.html"><code>W3CIISLog</code></a><br><a href="../tables/whois-data-cl.html"><code>Whois_Data_CL</code></a><br><a href="../tables/windowsevent.html"><code>WindowsEvent</code></a><br><a href="../tables/x509-data-cl.html"><code>X509_Data_CL</code></a><br><a href="../tables/asimparsers.html"><code>asimParsers</code></a><br><a href="../tables/barracuda-cl.html"><code>barracuda_CL</code></a><br><a href="../tables/meraki-cl.html"><code>meraki_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/team-cymru-scout-team-cymru-scout-create-incident-and-notify-42341b2c.html">Team Cymru Scout Create Incident And Notify</a></td>
+<td style="text-align: left;">This playbook will create an incident for suspicious or malicious ip and notify to pre-defined or us...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/team-cymru-scout-team-cymru-scout-enrich-incident-e6d90c68.html">Team Cymru Scout Enrich Incident</a></td>
+<td style="text-align: left;">This playbook will fetch and ingest IP or Domain Indicator data based on Entity mapped in Microsoft ...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/team-cymru-scout-team-cymru-scout-live-investigation-9c215d68.html">Team Cymru Scout Live Investigation</a></td>
+<td style="text-align: left;">This playbook will fetch and ingest IP or Domain Indicator data based on input parameters given in t...</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cymruscoutaccountusage.html">CymruScoutAccountUsage</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cymru-scout-account-usage-data-cl.html"><code>Cymru_Scout_Account_Usage_Data_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cymruscoutcommunicationsdata.html">CymruScoutCommunicationsData</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/communication-data-cl.html"><code>Communication_Data_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../parsers/cymruscoutcorrelate.html">CymruScoutCorrelate</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/asimauditevent.html"><code>ASimAuditEvent</code></a> <em>(read)</em><br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/asimauthentication.html"><code>ASimAuthentication</code></a> <em>(read)</em><br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/asimdhcpevent.html"><code>ASimDhcpEvent</code></a> <em>(read)</em><br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/asimdns.html"><code>ASimDns</code></a> <em>(read)</em><br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/asimnetworksession.html"><code>ASimNetworkSession</code></a> <em>(read)</em><br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/asimwebsession.html"><code>ASimWebSession</code></a> <em>(read)</em><br><a href="../tables/asimparsersdata.html"><code>AsimParsersData</code></a> <em>(read)</em><br><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a> <em>(read)</em><br><a href="../tables/asimparsers.html"><code>asimParsers</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cymruscoutdomain.html">CymruScoutDomain</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cymru-scout-domain-data-cl.html"><code>Cymru_Scout_Domain_Data_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cymruscoutdomaindata.html">CymruScoutDomainData</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/domain-data-cl.html"><code>Domain_Data_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cymruscoutfingerprintsdata.html">CymruScoutFingerprintsData</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/fingerprints-data-cl.html"><code>Fingerprints_Data_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cymruscoutip.html">CymruScoutIP</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/cymru-scout-ip-data-details-cl.html"><code>Cymru_Scout_IP_Data_Details_CL</code></a> <em>(read)</em><br><a href="../tables/cymru-scout-ip-data-foundation-cl.html"><code>Cymru_Scout_IP_Data_Foundation_CL</code></a> <em>(read)</em><br><a href="../tables/cymru-scout-ip-data-summary-certs-cl.html"><code>Cymru_Scout_IP_Data_Summary_Certs_CL</code></a> <em>(read)</em><br><a href="../tables/cymru-scout-ip-data-summary-details-cl.html"><code>Cymru_Scout_IP_Data_Summary_Details_CL</code></a> <em>(read)</em><br><a href="../tables/cymru-scout-ip-data-summary-fingerprints-cl.html"><code>Cymru_Scout_IP_Data_Summary_Fingerprints_CL</code></a> <em>(read)</em><br><a href="../tables/cymru-scout-ip-data-summary-openports-cl.html"><code>Cymru_Scout_IP_Data_Summary_OpenPorts_CL</code></a> <em>(read)</em><br><a href="../tables/cymru-scout-ip-data-summary-pdns-cl.html"><code>Cymru_Scout_IP_Data_Summary_PDNS_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cymruscoutidentity.html">CymruScoutIdentity</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/identity-data-cl.html"><code>Identity_Data_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cymruscoutopenportsdata.html">CymruScoutOpenPortsData</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/open-ports-data-cl.html"><code>Open_Ports_Data_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cymruscoutpdnsdata.html">CymruScoutPdnsData</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/pdns-data-cl.html"><code>PDNS_Data_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cymruscoutprotobyip.html">CymruScoutProtoByIP</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/proto-by-ip-data-cl.html"><code>Proto_By_IP_Data_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cymruscoutsummary.html">CymruScoutSummary</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/summary-details-cl.html"><code>Summary_Details_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cymruscoutsummarytopcerts.html">CymruScoutSummaryTopCerts</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/summary-details-top-certs-data-cl.html"><code>Summary_Details_Top_Certs_Data_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cymruscoutsummarytopfingerprints.html">CymruScoutSummaryTopFingerprints</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/summary-details-top-fingerprints-data-cl.html"><code>Summary_Details_Top_Fingerprints_Data_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cymruscoutsummarytopopenports.html">CymruScoutSummaryTopOpenPorts</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/summary-details-top-open-ports-data-cl.html"><code>Summary_Details_Top_Open_Ports_Data_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cymruscoutsummarytoppdns.html">CymruScoutSummaryTopPdns</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/summary-details-top-pdns-data-cl.html"><code>Summary_Details_Top_Pdns_Data_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cymruscouttopasnsbyip.html">CymruScoutTopAsnsByIP</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/top-asns-by-ip-data-cl.html"><code>Top_Asns_By_IP_Data_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cymruscouttopcountrycodesbyip.html">CymruScoutTopCountryCodesByIP</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/top-country-codes-by-ip-data-cl.html"><code>Top_Country_Codes_By_IP_Data_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cymruscouttopservicesbyip.html">CymruScoutTopServicesByIP</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/top-services-by-ip-data-cl.html"><code>Top_Services_By_IP_Data_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cymruscouttoptagsbyip.html">CymruScoutTopTagsByIP</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/top-tags-by-ip-data-cl.html"><code>Top_Tags_By_IP_Data_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cymruscoutwhois.html">CymruScoutWhois</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/whois-data-cl.html"><code>Whois_Data_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cymruscoutx509data.html">CymruScoutX509Data</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/x509-data-cl.html"><code>X509_Data_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h3>Watchlists</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/team-cymru-scout-teamcymruscoutdomaindata-17b10d52.html">TeamCymruScoutDomainData</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/team-cymru-scout-teamcymruscoutipdata-71f47feb.html">TeamCymruScoutIPData</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.1.1</td>
+<td>25-09-2025</td>
+<td>Fixed bug in TeamCymruScoutEnrichIncident playbook.</td>
+</tr>
+<tr>
+<td>3.1.0</td>
+<td>16-05-2025</td>
+<td>Updated Workbook, Parser, Data Connector and created new playbook.</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>07-08-2024</td>
+<td>Added Solution for Team Cymru Scout.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

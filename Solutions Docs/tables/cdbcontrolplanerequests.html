@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CDBControlPlaneRequests &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>CDBControlPlaneRequests</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for CDBControlPlaneRequests table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Audit, Azure Resources</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cdbcontrolplanerequests">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (63 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cdbcontrolplanerequests">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccountName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the Cosmos DB account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AcledSubnets</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ACL'd subnets for the account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActivityId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Activity ID of the operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ApiKind</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The API kind for the account (SQL, Graph, Mongo, Cassanda, Table) that is specified during account creation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ApiKindResourceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The resource against which this Control Plane operation was executed (e.g. Database, Container etc.)</td>
+</tr>
+<tr>
+<td style="text-align: left;">AssociatedRoleDefinitionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the IAM role definition for the IAM role created for the account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BackupIntervalInMinutes</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The time (in minutes) between consecutive backup snapshots for the Cosmos DB account. Valid range: 60 - 1440 minutes.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BackupRetentionIntervalInHours</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The duration of time (in hours) for which backup snapshots are retained for the Cosmos DB account. Valid range: 8 - 720 hours.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BackupStorageRedundancy</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of backup storage redundancy for the Cosmos DB account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cors</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Collection of account's Cross Origin Resource Sharing Rules</td>
+</tr>
+<tr>
+<td style="text-align: left;">CurrentWriteRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The current write region for this account (applies when a regional failover is triggered to choose a new write region).</td>
+</tr>
+<tr>
+<td style="text-align: left;">DefaultConsistencyLevel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The default consistency level for the Cosmos DB account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DurationMs</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The time taken (in milliseconds) for this control plane operation to complete.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EnableAutomaticFailover</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Boolean flag to enable automatic failover for the Cosmos DB account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EnableCassandraRequestsTrace</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Boolean flag indicating if diagnostic logs are enabled for all Cassandra API operations.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EnableControlPlaneRequestsTrace</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Boolean flag indicting if diagnostic logs are enabled for Control Plane operations.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EnableDataPlaneRequestsTrace</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Boolean flag indicating if diagnostic logs are enabled for all Data Plane Operations.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EnableGremlinRequestsTrace</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Boolean flag indicating if diagnostic logs are enabled for Gremlin operations.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EnableMongoRequestsTrace</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Boolean flag indicating if diagnostic logs are enabled for all Mongo API operations.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EnablePrivateEndpointConnection</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Boolean flag to enable private endpoints for the Cosmos DB account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EnableVirtualNetworkFilter</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Boolean flag indicating if VNet filters were enabled for the account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpMethod</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The HTTP method issued for this control plane operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpStatusCode</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The HTTP status code of the control plane operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IpRangeFilter</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP range filter specified as part of the VNet rules for the Cosmos DB account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsServiceManagedFailover</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Boolean flag to indicate if the failover event was initiated by the service or by the customer.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MaxStalenessIntervalInSeconds</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The maximum staleness value (in seconds) for the Cosmos DB account when using the Bounded Staleness consistency setting.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MaxStalenessPrefix</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The max staleness prefix for the Cosmos DB account when using the Bounded Staleness consistency setting.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MultipleWriteLocations</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Boolean flag indicating if the Cosmos DB account is a multi-master account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NewWriteRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The new write region for the Cosmos DB account (after a user-initiated failover operation is executed).</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Control Plane Operation that was executed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of control plane operation, which was executed. Examples of operations included Add/Remove region, Indexing Policy updates, VNet and firewall rule creation, Backup Retention Policy changes etc.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PrivateEndpointArmUrl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ARM URL of the private endpoint created for the account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PrivateEndpointConnections</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The list of private endpoints for the Cosmos DB account (in each region).</td>
+</tr>
+<tr>
+<td style="text-align: left;">RegionName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The region in which this control plan operation was executed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceDetails</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The specific resource within the account against which the Control Plane Operation was executed. For e.g. the index for the container for which the indexing policy was created or updated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceUri</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The URI of the Cosmos DB resource (e.g. Database, Container) against which the control plane operation was execution.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Result</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The result of the operation indicating either success or failure.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RoleAssignmentId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The role assignment Id for the IAM role created for the account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RoleAssignmentPrincipalId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Principal ID associated with the IAM Role Assignment created for the account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RoleAssignmentPrincipalType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Principal type of the IAM role assignment created for the account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RoleAssignmentScope</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The scope of access for the IAM role created for the account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RoleDefinitionAssignableScopes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The assignable scopes for the IAM role created for the account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RoleDefinitionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Id of the IAM role created for the account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RoleDefinitionName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the IAM role created for the account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RoleDefinitionPermissions</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The permissions associated with the IAM role created for the account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RoleDefinitionType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of IAM role created for the account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">SqlQueryTextTraceType</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Boolean flag indicating if full query text logging is enabled.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetBackupMode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The backup mode after update. This can be either Continuous or Periodic.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetContinuousTier</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The continuous tier after updating. This can be either Continuous7Days or Continuous30Days.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp (in UTC) when this Control Plane operation was executed against the Cosmos DB account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">VirtualNetworkName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the Vnet for the account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VirtualNetworkResourceEntries</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The list of IP addresses being included as part of the VNet rule for the account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VnetArmUrl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ARM URL for the VNet for the account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VnetDatabaseAccountEntries</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The list of virtual networks specified for the account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VnetLocation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Azure region in which the VNet for the account is location.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VnetResourceGroupName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the resource group within which the VNet is created.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.documentdb/databaseaccounts</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

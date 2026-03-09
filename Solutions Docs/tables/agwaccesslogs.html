@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AGWAccessLogs &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>AGWAccessLogs</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for AGWAccessLogs table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Audit, Azure Resources, Network</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/agwaccesslogs">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (48 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/agwaccesslogs">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">BackendPoolName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The backend pool associated with the given request log.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BackendSettingName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The backend setting name associated with the given request log.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BackendSslCipher</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Cipher suite used for TLS communication with the backend server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BackendSslProtocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SSL/TLS protocol used for communication with the backend server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClientIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP of the immediate client of Application Gateway. If another proxy fronts your application gateway, this displays the IP of that fronting proxy.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClientPort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Port of the client that initiated the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClientResponseTime</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Time difference (in seconds) between first byte received from the backend to first byte sent to the client.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ErrorInfo</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Error category of the failing request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Host</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Address listed in the host header of the request. If rewritten using header rewrite, this field contains the updated host name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpMethod</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">HTTP method used by the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpStatus</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">HTTP status code returned to the client from Application Gateway.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">HTTP version of the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InstanceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Application Gateway instance that served the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ListenerName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The listener associated with given request log.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OriginalHost</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">This field contains the original request host name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OriginalRequestUriWithArgs</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">This field contains the original request URL.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReceivedBytes</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Size of packet received, in bytes.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestQuery</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Query string portion of the request URI.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestUri</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">URI of the received request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RuleName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The rule associated with the given request log.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SentBytes</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Size of packet sent, in bytes.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServerConnectTime</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Time (in seconds) taken to establish a connection with the backend server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServerHeaderTime</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Time (in seconds) taken to receive the response headers from the backend server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServerResponseLatency</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Latency of the response (in seconds) from the backend server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServerRouted</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The backend server that application gateway routes the request to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServerStatus</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">HTTP status code of the backend server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">SslCipher</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Cipher suite being used for TLS communication (if TLS is enabled).</td>
+</tr>
+<tr>
+<td style="text-align: left;">SslClientCertificateFingerprint</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Fingerprint of the SSL client certificate.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SslClientCertificateIssuerName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Issuer name of the SSL client certificate.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SslClientVerify</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Status of SSL client certificate verification.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SslEnabled</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Whether communication to the backend pools used TLS. Valid values are on and off.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SslProtocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SSL/TLS protocol being used (if TLS is enabled).</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Time (UTC) when the log was created.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeTaken</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Length of time (in seconds) that it takes for the first byte of a client request to be processed and its last-byte sent in the response to the client. It's important to note that the Time-Taken field usually includes the time that the request and response packets are traveling over the network.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TransactionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier to correlate the request received from the client.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">UpstreamSourcePort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The source port used by Application Gateway when initiating a connection to the backend target.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserAgent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User agent from the HTTP request header.</td>
+</tr>
+<tr>
+<td style="text-align: left;">WafEvaluationTime</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Length of time (in seconds) that it takes for the request to be processed by the WAF.</td>
+</tr>
+<tr>
+<td style="text-align: left;">WafMode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Value can be either Detection or Prevention.</td>
+</tr>
+<tr>
+<td style="text-align: left;">WafPolicyId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The resource ID of the WAF policy associated with the Application Gateway.</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/azure-web-application-firewall-waf.html">Azure Web Application Firewall (WAF)</a></li>
+</ul>
+<hr />
+<h2>Content Items Using This Table (1)</h2>
+<h3>Analytic Rules (1)</h3>
+<p><strong>In solution <a href="../solutions/azure-web-application-firewall-waf.html">Azure Web Application Firewall (WAF)</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-a-potentially-malicious-web-request-was-executed-against-a-web-server-46ac55ae-47b8-414a-8f94-89ccd1962178-ef0d4240.html">A potentially malicious web request was executed against a web server</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.network/applicationgateways</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

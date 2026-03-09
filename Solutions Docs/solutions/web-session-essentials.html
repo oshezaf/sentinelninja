@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>&lt;img src=&quot;../images/asim-badge.png&quot; alt=&quot;ASIM&quot; height=&quot;32&quot;&gt; Web Session Essentials &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1><img src="../images/asim-badge.png" alt="ASIM" height="32"> Web Session Essentials</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Web Session Essentials Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2023-06-29</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Web%20Session%20Essentials">Web Session Essentials</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pre-requisites</strong></td>
+<td style="text-align: left;"><a href="paloalto-pan-os.html">PaloAlto-PAN-OS</a>, <a href="squidproxy.html">SquidProxy</a>, <a href="vectra-ai-stream.html">Vectra AI Stream</a>, <a href="zscaler-internet-access.html">Zscaler Internet Access</a></td>
+</tr>
+</tbody>
+</table>
+<p>Web Session Essentials is a <a href="https://learn.microsoft.com/azure/sentinel/sentinel-solutions-catalog#domain-solutions">domain solution</a> and does not include any data connectors. The content in this solution requires one of the product solutions below, as well as any other connector or data source normalized to the <a href="https://aka.ms/AboutASIM">ASIM</a>.</p>
+<p>For details on the data sources and ASIM parsers supported by this solution, see the <a href="#asim-pre-requisites">ASIM Pre-requisites</a> section below.</p>
+<p><strong>Recommendation :-</strong></p>
+<p>It is highly recommended to use the <strong>SummarizeWebSessionData</strong> logic app playbook provided with this solution as it will significantly improve the performance of the Workbook, Analytic rules &amp; Hunting queries.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#pre-requisites">Pre-requisites</a></li>
+<li><a href="#asim-pre-requisites">ASIM Pre-requisites</a></li>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Pre-requisites</h2>
+<p>This solution depends on <strong>4 other solution(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="paloalto-pan-os.html">PaloAlto-PAN-OS</a></td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="squidproxy.html">SquidProxy</a></td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="vectra-ai-stream.html">Vectra AI Stream</a></td>
+<td style="text-align: left;">Also provides ASIM schemas: WebSession</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="zscaler-internet-access.html">Zscaler Internet Access</a></td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h2><a id="asim-pre-requisites"></a><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Pre-requisites</h2>
+<p>This solution uses the <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a> <a href="https://learn.microsoft.com/azure/sentinel/normalization">ASIM (Advanced Security Information Model)</a> parser to provide normalized, source-agnostic data access, expanding detection coverage without modifying queries.</p>
+<h3>Supported Products</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Dependency Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#apache-http-server">Apache HTTP Server</a></td>
+<td style="text-align: left;"><a href="customlogsama.html">CustomLogsAma</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#azure-firewall">Azure Firewall</a></td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#barracuda-waf">Barracuda WAF</a></td>
+<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#cisco-firepower">Cisco Firepower</a></td>
+<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#cisco-meraki">Cisco Meraki</a></td>
+<td style="text-align: left;"><a href="cisco-sd-wan.html">Cisco SD-WAN</a><br><a href="ciscomeraki.html">CiscoMeraki</a><br><a href="customlogsama.html">CustomLogsAma</a><br><a href="forescout-legacy.html">Forescout (Legacy)</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#citrix-netscaler">Citrix NetScaler</a></td>
+<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#f5-big-ip-application-security-manager-asm">F5 BIG-IP Application Security Manager (ASM)</a></td>
+<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#fortinet-fortigate">Fortinet FortiGate</a></td>
+<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#internet-information-services-iis">Internet Information Services (IIS)</a></td>
+<td style="text-align: left;"><a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#native">Native</a></td>
+<td style="text-align: left;"><a href="cisco-meraki-events-via-rest-api.html">Cisco Meraki Events via REST API</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#palo-alto-cortex-data-lake">Palo Alto Cortex Data Lake</a></td>
+<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#palo-alto-networks">Palo Alto Networks</a></td>
+<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#sonicwall">SonicWall</a></td>
+<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#squid-proxy">Squid Proxy</a></td>
+<td style="text-align: left;"><a href="customlogsama.html">CustomLogsAma</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#vectra-ai-streams">Vectra AI Streams</a></td>
+<td style="text-align: left;"><a href="customlogsama.html">CustomLogsAma</a><br><a href="vectra-ai-stream.html">Vectra AI Stream</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asim-products-index.md#zscaler-zia">Zscaler ZIA</a></td>
+<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Data Connectors</h2>
+<p><strong>This solution does not include its own data connectors</strong> but uses connectors from dependency solutions:</p>
+<ul>
+<li><a href="../connectors/aivectrastream.html">AI Vectra Stream via Legacy Agent</a> <em>(dependency on <a href="vectra-ai-stream.html">Vectra AI Stream</a>)</em></li>
+<li><a href="../connectors/cef.html">Common Event Format (CEF)</a> <em>(dependency on <a href="common-event-format.html">Common Event Format</a>)</em></li>
+<li><a href="../connectors/cefama.html">Common Event Format (CEF) via AMA</a> <em>(dependency on <a href="common-event-format.html">Common Event Format</a>)</em></li>
+<li><a href="../connectors/ciscomeraki.html">[Deprecated] Cisco Meraki</a> <em>(dependency on <a href="ciscomeraki.html">CiscoMeraki</a>)</em></li>
+<li><a href="../connectors/ciscomeraki-usingrestapi.html">Cisco Meraki (using REST API)</a> <em>(dependency on <a href="ciscomeraki.html">CiscoMeraki</a>)</em></li>
+<li><a href="../connectors/ciscomerakimultirule.html">Cisco Meraki (using REST API)</a> <em>(dependency on <a href="cisco-meraki-events-via-rest-api.html">Cisco Meraki Events via REST API</a>)</em></li>
+<li><a href="../connectors/ciscomerakinativepoller.html">Cisco Meraki (using REST API)</a> <em>(dependency on <a href="ciscomeraki.html">CiscoMeraki</a>)</em></li>
+<li><a href="../connectors/ciscosdwan.html">Cisco Software Defined WAN</a> <em>(dependency on <a href="cisco-sd-wan.html">Cisco SD-WAN</a>)</em></li>
+<li><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> <em>(dependency on <a href="customlogsama.html">CustomLogsAma</a>)</em></li>
+<li><a href="../connectors/esi-exchangeadminauditlogevents.html">[Deprecated] Microsoft Exchange Logs and Events</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
+<li><a href="../connectors/esi-exchangeonpremisescollector.html">Exchange Security Insights On-Premises Collector</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
+<li><a href="../connectors/esi-opt1exchangeadminauditlogsbyeventlogs.html">Microsoft Exchange Admin Audit Logs by Event Logs</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
+<li><a href="../connectors/esi-opt2exchangeserverseventlogs.html">Microsoft Exchange Logs and Events</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
+<li><a href="../connectors/esi-opt34domaincontrollerssecurityeventlogs.html"> Microsoft Active-Directory Domain Controllers Security Event Logs</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
+<li><a href="../connectors/esi-opt5exchangeiislogs.html">IIS Logs of Microsoft Exchange Servers</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
+<li><a href="../connectors/esi-opt6exchangemessagetrackinglogs.html">Microsoft Exchange Message Tracking Logs</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
+<li><a href="../connectors/esi-opt7exchangehttpproxylogs.html">Microsoft Exchange HTTP Proxy Logs</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
+<li><a href="../connectors/forescout.html">Forescout</a> <em>(dependency on <a href="forescout-legacy.html">Forescout (Legacy)</a>)</em></li>
+<li><a href="../connectors/paloaltonetworks.html">[Deprecated] Palo Alto Networks (Firewall) via Legacy Agent</a> <em>(dependency on <a href="paloalto-pan-os.html">PaloAlto-PAN-OS</a>)</em></li>
+<li><a href="../connectors/paloaltonetworksama.html">[Deprecated] Palo Alto Networks (Firewall) via AMA</a> <em>(dependency on <a href="paloalto-pan-os.html">PaloAlto-PAN-OS</a>)</em></li>
+<li><a href="../connectors/squidproxy.html">[Deprecated] Squid Proxy</a> <em>(dependency on <a href="squidproxy.html">SquidProxy</a>)</em></li>
+<li><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a> <em>(dependency on <a href="vectra-ai-stream.html">Vectra AI Stream</a>)</em></li>
+<li><a href="../connectors/virtualmetricdirectorproxy.html">VirtualMetric Director Proxy</a> <em>(dependency on <a href="virtualmetric-datastream.html">VirtualMetric DataStream</a>)</em></li>
+<li><a href="../connectors/virtualmetricmssentinelconnector.html">VirtualMetric DataStream for Microsoft Sentinel</a> <em>(dependency on <a href="virtualmetric-datastream.html">VirtualMetric DataStream</a>)</em></li>
+<li><a href="../connectors/virtualmetricmssentineldatalakeconnector.html">VirtualMetric DataStream for Microsoft Sentinel data lake</a> <em>(dependency on <a href="virtualmetric-datastream.html">VirtualMetric DataStream</a>)</em></li>
+<li><a href="../connectors/zscaler.html">[Deprecated] Zscaler via Legacy Agent</a> <em>(dependency on <a href="zscaler-internet-access.html">Zscaler Internet Access</a>)</em></li>
+<li><a href="../connectors/zscalerama.html">[Deprecated] Zscaler via AMA</a> <em>(dependency on <a href="zscaler-internet-access.html">Zscaler Internet Access</a>)</em></li>
+</ul>
+<h2>Tables Used</h2>
+<p>This solution queries <strong>1 table(s)</strong> from its content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a></td>
+<td>Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h3>Internal Tables</h3>
+<p>The following <strong>7 table(s)</strong> are used internally by this solution's content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/anomalies.html"><code>Anomalies</code></a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/watchlist.html"><code>Watchlist</code></a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/websession-summarized-dstip-cl.html"><code>WebSession_Summarized_DstIP_CL</code></a></td>
+<td>Playbooks (writes), Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/websession-summarized-srcip-cl.html"><code>WebSession_Summarized_SrcIP_CL</code></a></td>
+<td>Analytics, Playbooks (writes), Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/websession-summarized-srcinfo-cl.html"><code>WebSession_Summarized_SrcInfo_CL</code></a></td>
+<td>Analytics, Playbooks (writes), Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/websession-summarized-threatinfo-cl.html"><code>WebSession_Summarized_ThreatInfo_CL</code></a></td>
+<td>Playbooks (writes), Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2>Content Items</h2>
+<p>This solution includes <strong>26 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">15</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">9</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/web-session-essentials-detect-local-file-inclusion-lfi-in-web-requests-asim-web-session-7bb55d05-ef39-4a40-8079-0bc3c05e7881-a7ad6ac3.html">Detect Local File Inclusion(LFI) in web requests (ASIM Web Session)</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess, Execution</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a><br><em>Internal use:</em><br><a href="../tables/watchlist.html"><code>Watchlist</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/web-session-essentials-detect-urls-containing-known-malicious-keywords-or-commands-asim-web-session-32c08696-2e37-4730-86f8-97d9c8b184c9-e787b1ad.html">Detect URLs containing known malicious keywords or commands (ASIM Web Session)</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess, CommandAndControl</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a><br><em>Internal use:</em><br><a href="../tables/watchlist.html"><code>Watchlist</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/web-session-essentials-detect-instances-of-multiple-client-errors-occurring-within-a-brief-period-of-tim-faa40333-1e8b-40cc-a003-51ae41fa886f-81de3667.html">Detect instances of multiple client errors occurring within a brief period of time (ASIM Web Session)</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, CommandAndControl</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/web-session-essentials-detect-instances-of-multiple-server-errors-occurring-within-a-brief-period-of-tim-a59ba76c-0205-4966-948e-3d5640140688-c9557003.html">Detect instances of multiple server errors occurring within a brief period of time (ASIM Web Session)</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, Impact</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/web-session-essentials-detect-known-risky-user-agents-asim-web-session-6a4dbcf8-f5e2-4b33-b34f-2db6487613f0-02ac6657.html">Detect known risky user agents (ASIM Web Session)</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, CommandAndControl</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a><br><em>Internal use:</em><br><a href="../tables/watchlist.html"><code>Watchlist</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/web-session-essentials-detect-potential-file-enumeration-activity-asim-web-session-b3731ce1-1f04-47c4-95c2-9827408c4375-a932da88.html">Detect potential file enumeration activity (ASIM Web Session)</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Discovery, CommandAndControl, CredentialAccess</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/web-session-essentials-detect-potential-presence-of-a-malicious-file-with-a-double-extension-asim-web-se-6a71687f-00cf-44d3-93fc-8cbacc7b5615-3eb819c9.html">Detect potential presence of a malicious file with a double extension (ASIM Web Session)</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion, Persistence, CommandAndControl</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/web-session-essentials-detect-presence-of-private-ip-addresses-in-urls-asim-web-session-e3a7722a-e099-45a9-9afb-6618e8f05405-224cd172.html">Detect presence of private IP addresses in URLs (ASIM Web Session)</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Exfiltration, CommandAndControl</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/web-session-essentials-detect-presence-of-uncommon-user-agents-in-web-requests-asim-web-session-2d50d937-d7f2-4c05-b151-9af7f9ec747e-f39e98ed.html">Detect presence of uncommon user agents in web requests (ASIM Web Session)</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a><br><em>Internal use:</em><br><a href="../tables/websession-summarized-srcinfo-cl.html"><code>WebSession_Summarized_SrcInfo_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/web-session-essentials-detect-requests-for-an-uncommon-resources-on-the-web-asim-web-session-c99cf650-c53b-4c4c-9671-7d7500191a10-6c125d61.html">Detect requests for an uncommon resources on the web (ASIM Web Session)</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/web-session-essentials-detect-threat-information-in-web-requests-asim-web-session-7d2ed1c7-da26-45fd-b4ea-b6f2bbeccea7-0bd0a85e.html">Detect threat information in web requests (ASIM Web Session)</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/web-session-essentials-detect-unauthorized-data-transfers-using-timeseries-anomaly-asim-web-session-5965d3e7-8ed0-477c-9b42-e75d9237fab0-8fc606c8.html">Detect unauthorized data transfers using timeseries anomaly (ASIM Web Session)</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a><br><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a><br><a href="../tables/websession-summarized-srcip-cl.html"><code>WebSession_Summarized_SrcIP_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/web-session-essentials-detect-web-requests-to-potentially-harmful-files-asim-web-session-c6608467-3678-45fe-b038-b590ce6d00fb-170f0dec.html">Detect web requests to potentially harmful files (ASIM Web Session)</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, Persistence, Execution</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a><br><em>Internal use:</em><br><a href="../tables/watchlist.html"><code>Watchlist</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/web-session-essentials-identify-instances-where-a-single-source-is-observed-using-multiple-user-agents-a-813ccf3b-0321-4622-b0bc-63518fd14454-4eaea7cb.html">Identify instances where a single source is observed using multiple user agents (ASIM Web Session)</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, CredentialAccess</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/web-session-essentials-the-download-of-potentially-risky-files-from-the-discord-content-delivery-network-b7fe8f27-7010-404b-aec5-6e5245cea580-7bb8623e.html">The download of potentially risky files from the Discord Content Delivery Network (CDN) (ASIM Web Session)</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a><br><em>Internal use:</em><br><a href="../tables/watchlist.html"><code>Watchlist</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/web-session-essentials-beaconing-traffic-based-on-common-user-agents-visiting-limited-number-of-domains--8ece8108-7bf7-4571-8f32-ebfd92a6b1ad-b2fd36bc.html">Beaconing traffic based on common user agents visiting limited number of domains (ASIM Web Session)</a></td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/web-session-essentials-detect-ipaddress-in-the-requested-url-asim-web-session-e8adb0d9-c4fa-4557-97d0-cb9e221a63b2-2eac378f.html">Detect IPAddress in the requested URL (ASIM Web Session)</a></td>
+<td style="text-align: left;">Exfiltration, CommandAndControl</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/web-session-essentials-detect-kali-linux-useragent-asim-web-session-05f5cccd-ee93-4293-b7ad-05820aaa54a4-b7bc92d8.html">Detect Kali Linux UserAgent (ASIM Web Session)</a></td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/web-session-essentials-detect-threat-information-in-web-requests-asim-web-session-6e813653-df72-4b14-954e-5619d1b6d586-0533fc68.html">Detect threat information in web requests (ASIM Web Session)</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/web-session-essentials-empty-user-agent-detected-asim-web-session-69e53015-a309-4a8f-a94d-df61a9217e2f-e68ea0a6.html">Empty User Agent Detected (ASIM Web Session)</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/web-session-essentials-excessive-number-of-forbidden-requests-detected-asim-web-session-43c2832e-6c01-4dc1-bd9e-bc3f330c2b31-62e59fca.html">Excessive number of forbidden requests detected (ASIM Web Session)</a></td>
+<td style="text-align: left;">Persistence, CredentialAccess</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/web-session-essentials-potential-beaconing-detected-asim-web-session-6338ca43-ae7c-4a91-9fe4-0f1ad4edf4a5-7f1aedf8.html">Potential beaconing detected (ASIM Web Session)</a></td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/web-session-essentials-potential-beaconing-detected-similar-sent-bytes-asim-web-session-75929222-fee5-4f97-a2cc-cb6f29444385-cd842e58.html">Potential beaconing detected - Similar sent bytes (ASIM Web Session)</a></td>
+<td style="text-align: left;">CommandAndControl</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/web-session-essentials-request-from-bots-and-crawlers-asim-web-session-b653c2e0-ae0f-490b-9b2e-836858d28976-9673d4d5.html">Request from bots and crawlers (ASIM Web Session)</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/web-session-essentials-websessionessentials-73073115.html">WebSessionEssentials</a></td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a><br><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a><br><em>Internal use:</em><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a><br><a href="../tables/websession-summarized-dstip-cl.html"><code>WebSession_Summarized_DstIP_CL</code></a><br><a href="../tables/websession-summarized-srcip-cl.html"><code>WebSession_Summarized_SrcIP_CL</code></a><br><a href="../tables/websession-summarized-srcinfo-cl.html"><code>WebSession_Summarized_SrcInfo_CL</code></a><br><a href="../tables/websession-summarized-threatinfo-cl.html"><code>WebSession_Summarized_ThreatInfo_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/web-session-essentials-summarize-web-session-data-ea664ad8.html">Summarize Web Session Data</a></td>
+<td style="text-align: left;">The 'SummarizeWebSessionData' Playbook helps with summarizing the Web Session logs and ingesting the...</td>
+<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a> <em>(read)</em><br><em>Internal use:</em><br><a href="../tables/websession-summarized-dstip-cl.html"><code>WebSession_Summarized_DstIP_CL</code></a> <em>(read/write)</em><br><a href="../tables/websession-summarized-srcip-cl.html"><code>WebSession_Summarized_SrcIP_CL</code></a> <em>(read/write)</em><br><a href="../tables/websession-summarized-srcinfo-cl.html"><code>WebSession_Summarized_SrcInfo_CL</code></a> <em>(read/write)</em><br><a href="../tables/websession-summarized-threatinfo-cl.html"><code>WebSession_Summarized_ThreatInfo_CL</code></a> <em>(read/write)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.3</td>
+<td>06-06-2024</td>
+<td>Updated Entity Mapping <strong>Analytic Rule</strong> CommandInURL.yaml</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>31-01-2024</td>
+<td>Updated the solution to fix <strong>Analytic Rules</strong> deployment issue</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>02-01-2024</td>
+<td>Tagged for dependent Solutions for deployment</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>11-09-2023</td>
+<td>Initial Solution Release</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

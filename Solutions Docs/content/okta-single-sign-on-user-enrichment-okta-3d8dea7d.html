@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User enrichment - Okta &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>User enrichment - Okta</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>This playbook will collect user information from Okta and post a report on the incident.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/okta-single-sign-on.html">Okta Single Sign-On</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks/Okta-EnrichIncidentWithUserDetails/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks/Okta-EnrichIncidentWithUserDetails/readme.md">OktaPlaybooks/Okta-EnrichIncidentWithUserDetails/readme.md</a></em></p>
+</blockquote>
+<h1>Okta-Enrich Incident With User Details Playbook</h1>
+<p>## Summary
+ When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs below actions
+ 1. Fetches the user details and user group details from Okta
+ 2. Adds a rich comment to the incident with all the collected information
+    <img alt="Comment example" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks%5COkta-EnrichIncidentWithUserDetails/images/Incident_Comment.png" /></p>
+<p><img alt="Playbook Designer view" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks%5COkta-EnrichIncidentWithUserDetails/Okta-EnrichIncidentwithuserdetails.PNG" /><br></p>
+<h3>Prerequisites</h3>
+<ol>
+<li>Okta Custom Connector needs to be deployed prior to the deployment of this playbook under the same subscription.</li>
+<li>Generate an API key.Refer this link <a href="https://developer.okta.com/docs/guides/create-an-api-token/overview/"> how to generate the API Key</a></li>
+</ol>
+<h3>Deployment instructions</h3>
+<ol>
+<li>
+<p>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deplyoing an ARM Template wizard.
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FPlaybooks%2FOkta%2FOktaPlaybooks%2FOkta-EnrichIncidentWithUserDetails%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FPlaybooks%2FOkta%2FOktaPlaybooks%2FOkta-EnrichIncidentWithUserDetails%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+</li>
+<li>
+<p>Fill in the required paramteres:</p>
+<ul>
+<li>Playbook Name: Enter the playbook name here (Ex:OktaPlaybook)</li>
+</ul>
+</li>
+</ol>
+<h3>Post-Deployment instructions</h3>
+<h4>a. Authorize connections</h4>
+<p>Once deployment is complete, you will need to authorize each connection.
+1.  Click the Microsoft Sentinel connection resource
+2.  Click edit API connection
+3.  Click Authorize
+4.  Sign in
+5.  Click Save
+6.  Repeat steps for Okta Api  Connection (For authorizing the Okta API connection, API Key needs to be provided)</p>
+<h4>b. Configurations in Sentinel</h4>
+<ol>
+<li>In Microsoft sentinel analytical rules should be configured to trigger an incident with risky user account </li>
+<li>Configure the automation rules to trigger this playbook</li>
+</ol>
+<h2>Playbook steps explained</h2>
+<h3>When Microsoft Sentinel incident creation rule is triggered</h3>
+<p>Microsoft Sentinel incident is created. The playbook receives the incident as the input.</p>
+<h3>Entities - Get Accounts</h3>
+<p>Get the list of risky/malicious accounts as entities from the Incident</p>
+<h3>Initialize variable to collect group details</h3>
+<p>Initialize an array variable to compose user group details to use it later while updating the incident</p>
+<h3>For each-risky account received from the incident</h3>
+<p>Iterates on the accounts found in this incident (probably one) and performs the following:</p>
+<ol>
+<li>For the risky user account, playbook uses "Get User" action to get user details from Okta</li>
+<li>For each user, playbook uses "Get User Groups" action to get user  group details from Okta</li>
+</ol>
+<p>a. Compose array of groups for updating incident with group details</p>
+<p>b. Append groups to group array variable</p>
+<ol start="3">
+<li>
+<p>Create HTML table format of user group details such as group id,group name and group description</p>
+</li>
+<li>
+<p>Add a comment to the incident with the information below:</p>
+<p>a. User information collected by "Get User" action from Okta such as</p>
+<ul>
+<li>User id, User name, User login, User email, User status, User created, User activated, User statusChanged, User lastLogin, User lastUpdated, User passwordChanged</li>
+</ul>
+<p>b. User groups information collected by "Get User Groups" action from Okta such as</p>
+<ul>
+<li>Group id,Group name and Group description</li>
+</ul>
+</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/okta-single-sign-on.html">Back to Okta Single Sign-On</a></p>
+</div>
+</body>
+</html>

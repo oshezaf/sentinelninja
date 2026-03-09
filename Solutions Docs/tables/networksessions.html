@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NetworkSessions &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>NetworkSessions</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for NetworkSessions table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Security</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networksessions">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (127 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networksessions">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AdditionalFields</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">When no respective column in the schema matches, additional fields can be stored in a JSON bag.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CloudAppId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the destination application for an HTTP application as identified by a proxy. This value is usually specific to the proxy used.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CloudAppName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the destination application for an HTTP application as identified by a proxy.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CloudAppOperation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The operation the user performed in the context of the destination application for an HTTP application as identified by a proxy. This value is usually specific to the proxy used.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CloudAppRiskLevel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The risk level associated with an HTTP application as identified by a proxy. This value is usually specific to the proxy used.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstBytes</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The number of bytes sent from the destination to the source for the connection or session.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstDomainHostname</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The domain of the destination host.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstDvcDomain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Domain of the destination device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstDvcFqdn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The fully qualified domain name of the host where the log was created.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstDvcHostname</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The device name of the destination device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstDvcIpAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The destination IP address of a device that is not directly associated with the network packet.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstDvcMacAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The destination MAC address of a device that is not directly associated with the network packet.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstGeoCity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The city associated with the destination IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstGeoCountry</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The country associated with the source IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstGeoLatitude</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The latitude of the geographical coordinate associated with the destination IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstGeoLongitude</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The longitude of the geographical coordinate associated with the destination IP address</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstGeoRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The region within a country associated with the destination IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstInterfaceGuid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">GUID of the network interface which was used for authentication request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstInterfaceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The network interface used for the connection or session by the destination device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstIpAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address of the connection or session destination.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstMacAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The MAC address of the network interface at which the connection or session terminated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstNatIpAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">If reported by an intermediary NAT device such as a firewall, the IP address used by the NAT device for communication with the source.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstNatPortNumber</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">If reported by an intermediary NAT device such as a firewall, the port used by the NAT device for communication with the source.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstPackets</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The number of packets sent from the destination to the source for the connection or session. The meaning of a packet is defined by the reporting device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstPortNumber</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The destination IP port.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The resource Id of the destination device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstUserAadId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Azure AD account object ID of the user at the destination end of the session.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstUserDomain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The domain or computer name of the account at the destination of the session.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstUserName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The username of the identity associated with the session's destination.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstUserSid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The User ID of the identity associated with the session's destination. Typically, the identity used to authenticate a server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstUserUpn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The UPN of the identity associated with the session's destination.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstZone</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The network zone of the destination, as defined by the reporting device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcAction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">If reported by an intermediary device such as a firewall, the action taken by device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcHostname</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The device name of the device generating the message.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcInboundInterface</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">If reported by an intermediary device such as a firewall, the network interface used by it for the connection to the source device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcIpAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address of the device generating the record.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcMacAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The MAC address of the network interface of the reporting device from which the event was sent.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcOutboundInterface</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">If reported by an intermediary device such as a firewall, the network interface used by it for the connection to the destination device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The number of events aggregated, if applicable.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventEndTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time in which the event ended.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventMessage</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A general message or description, either included in, or generated from the record.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventOriginalUid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The record ID from the reporting device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventProduct</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The product generating the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventProductVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The version of the product generating the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventReportUrl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A link to the full report created by the reporting device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The resource ID of the device generating the message.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventResult</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The result reported for the activity. Empty value when not applicable.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventResultDetails</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Reason for the result reported in EventResult</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventSchemaVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Azure Sentinel Schema Version.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventSeverity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">If the activity reported has a security impact, denotes the severity of the impact.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventStartTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time in which the event stated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventSubType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Additional description of type if applicable.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventTimeIngested</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time the event was ingested to Azure Sentinel. Will be added by Azure Sentinel.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of event being collected.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventUid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier used by Sentinel to mark a row.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventVendor</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The vendor of the product generating the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileExtension</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the file transmitted over the network connections for protocols such as FTP and HTTP.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileHashMd5</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The MD5 hash value of the file transmitted over the network connections for protocols.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileHashSha1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The SHA1 hash value of the file transmitted over the network connections for protocols.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileHashSha256</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The SHA256 hash value of the file transmitted over the network connections for protocols.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileHashSha512</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The SHA512 hash value of the file transmitted over the network connections for protocols.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileMimeType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The MIME type of the file transmitted over the network connections for protocols such as FTP and HTTP.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The filename transmitted over the network connections for protocols such as FTP and HTTP which provide the file name information.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FilePath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The full path, including file name, of the file.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileSize</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The file size, in bytes, of the file transmitted over the network connections for protocols.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpContentType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The HTTP Response content type header for HTTP/HTTPS network sessions.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpReferrerOriginal</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The HTTP referrer header for HTTP/HTTPS network sessions.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpRequestMethod</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The HTTP Method for HTTP/HTTPS network sessions.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpRequestTime</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The amount of time it took to send the request to the server, if applicable.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpRequestXff</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The HTTP X-Forwarded-For header for HTTP/HTTPS network sessions.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpResponseTime</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The amount of time it took to receive a response in the server, if applicable.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpStatusCode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The HTTP Status Code for HTTP/HTTPS network sessions.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpUserAgentOriginal</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The HTTP user agent header for HTTP/HTTPS network sessions.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The HTTP Request Version for HTTP/HTTPS network connections.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkApplicationProtocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The application layer protocol used by the connection or session.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkBytes</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Number of bytes sent in both directions. If both BytesReceived and BytesSent exist, BytesTotal should equal their sum.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkDirection</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The direction the connection or session, into or out of the organization.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkDuration</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The amount of time, in millisecond, for the completion of the network session or connection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkIcmpCode</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">For an ICMP message, ICMP message type numeric value (RFC 2780 or RFC 4443).</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkIcmpType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">For an ICMP message, ICMP message type text representation (RFC 2780 or RFC 4443).</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkPackets</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Number of packets sent in both directions. If both PacketsReceived and PacketsSent exist, BytesTotal should equal their sum.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkProtocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP protocol used by the connection or session. Typically, TCP, UDP or ICMP.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkRuleName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name or ID of the rule by which DeviceAction was decided upon.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkRuleNumber</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Matched rule number.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkSessionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The session identifier as reported by the reporting device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcBytes</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The number of bytes sent from the source to the destination for the connection or session.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDvcDomain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Domain of the device from which session was initiated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDvcFqdn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The fully qualified domain name of the host where the log was created.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDvcHostname</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The device name of the source device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDvcIpAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source IP address of a device not directly associated with the network packet (collected by a provider or explicitly calculated).</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDvcMacAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source MAC address of a device that is not directly associated with the network packet.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDvcModelName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The model of the source device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDvcModelNumber</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The model number of the source device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDvcOs</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The OS of the source device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDvcType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the source device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGeoCity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The city associated with the source IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGeoCountry</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The country associated with the source IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGeoLatitude</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The latitude of the geographical coordinate associated with the source IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGeoLongitude</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The longitude of the geographical coordinate associated with the source IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGeoRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The region within a country associated with the source IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcInterfaceGuid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">GUID of the network interface used.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcInterfaceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The network interface used for the connection or session by the source device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcIpAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address from which the connection or session originated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcMacAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The MAC address of the network interface from which the connection od session originated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcNatIpAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">If reported by an intermediary NAT device such as a firewall, the IP address used by the NAT device for communication with the destination.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcNatPortNumber</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">If reported by an intermediary NAT device such as a firewall, the port used by the NAT device for communication with the destination.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcPackets</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The number of packets sent from the source to the destination for the connection or session. The meaning of a packet is defined by the reporting device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcPortNumber</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The IP port from which the connection originated. May not be relevant for a session comprising multiple connections.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The resource ID of the device generating the message.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcUserAadId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Azure AD account object ID of the user at the source end of the session.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcUserDomain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The domain for the account initiating the session.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcUserName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The username of the identity associated with the sessions source. Typically, user performing an action on the client.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcUserSid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The user ID of the identity associated with the sessions source. Typically, user performing an action on the client.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcUserUpn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">UPN of the account initiating the session.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcZone</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The network zone of the source, as defined by the reporting device.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatCategory</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The category of a threat identified by a security system such as Web Security Gateway of an IPS and is associated with this network session.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of a threat identified by a security system such as Web Security Gateway of an IPS and is associated with this network session.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the threat or malware identified.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time the event occurred, as reported by reporting source.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">UrlCategory</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The defined grouping of a URL (or could be just based on the domain in the URL) related to what it is (i.e.: adult, news, advertising, parked domains, etc.).</td>
+</tr>
+<tr>
+<td style="text-align: left;">UrlHostname</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The domain part of an HTTP request URL for HTTP/HTTPS network sessions.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UrlOriginal</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The HTTP request URL for HTTP/HTTPS network sessions.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

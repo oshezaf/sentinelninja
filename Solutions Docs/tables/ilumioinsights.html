@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IlumioInsights &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>IlumioInsights</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for IlumioInsights table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Security</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ilumioinsights">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (38 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ilumioinsights">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Azure resource ID associated with the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CvssSeverity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">CVSS (Common Vulnerability Scoring System) severity rating.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestCity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">City where the destination IP is geolocated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestCountry</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Country where the destination IP is located.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of the destination.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestIsWellKnown</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if the destination is a known/trusted entity.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestLabel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Label or tag assigned to the destination entity.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestPort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Port number on the destination endpoint.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DestThreatLevel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Threat level associated with the destination IP.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FlowCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Number of flows or sessions detected for this event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IllumioTenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Tenant ID assigned by Illumio for multi-tenant environments.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IllumioUrl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">URL to view the record or associated details in the Illumio console.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Port</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Source or service port involved in the communication.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Proto</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Protocol used in the communication (e.g., TCP, UDP).</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceInternalId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Internal identifier for the monitored resource within Illumio.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Azure region where the resource is deployed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceSubId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Azure subscription ID that contains the resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceTenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Azure tenant ID to which the resource belongs.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceVnetId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier for the Virtual Network (VNet) associated with the resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Service</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the detected or used service (e.g., HTTP, SSH).</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcCity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">City where the source IP is geolocated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcCountry</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Country where the source IP is located.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of the source.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcIsWellKnown</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if the source is a known/trusted entity.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcLabel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Label or tag assigned to the source entity.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcPort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Port number used by the source entity.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcThreatLevel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Threat level (e.g., Low, Medium, High) associated with the source IP.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Current status of the insight (e.g., Active, Resolved).</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp when the record or event was logged.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TotalReceivedBytes</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Total number of bytes received during the communication flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TotalSentBytes</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Total number of bytes sent during the communication flow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">UniqueId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the specific insight or event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VEScore</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Vulnerability exposure score indicating the risk level.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shodan - Enrich IP Address &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Shodan - Enrich IP Address</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<hr />
+<p>This playbook can be triggered manually from an IP Address Entity context to fetch geo location and running services details from Shodan.io.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/shodan.html">Shodan</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Shodan/Playbooks/ShodanPlaybooks/Shodan-EnrichIP-EntityTrigger/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Shodan/Playbooks/ShodanPlaybooks/Shodan-EnrichIP-EntityTrigger/readme.md">ShodanPlaybooks/Shodan-EnrichIP-EntityTrigger/readme.md</a></em></p>
+</blockquote>
+<h1>Shodan-EnrichIP-EntityTrigger</h1>
+<h2>Summary</h2>
+<p>The playbook can be triggered manually from an IP Entity context to fetch geo location and running services details from Shodan.io. This playbook performs following actions:</p>
+<ol>
+<li>Get the IP Address from entity. </li>
+<li>Query Shodan.io to fetch geo location and running services details.</li>
+<li>Collect all the details and format as table.</li>
+<li>Add the collected details as comment to the incident.</li>
+</ol>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Shodan/Playbooks/ShodanPlaybooks%5CShodan-EnrichIP-EntityTrigger/images/Shodan-EnrichIP-EntityTrigger_light.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Shodan/Playbooks/ShodanPlaybooks%5CShodan-EnrichIP-EntityTrigger/images/ShodanIPEnrichmentIncidentComment_light.jpg" width="50%"/><br></p>
+<h3>Prerequisites</h3>
+<ol>
+<li>Prior to the deployment of this playbook, <a href="../../CustomConnector/ShodanCustomConnector/azuredeploy.json">Shodan Logic App Custom Connector</a> needs to be deployed under the same subscription.</li>
+<li>Refer to <a href="../../CustomConnector/ShodanCustomConnector/readme.html">Shodan Logic App Custom Connector</a> documentation for deployment instructions.</li>
+</ol>
+<h3>Deployment instructions</h3>
+<ol>
+<li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
+<li>Fill in the required parameters:<ul>
+<li>Playbook Name</li>
+<li>Custom Connector Name</li>
+</ul>
+</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FShodan%2FPlaybooks%2FShodanPlaybooks%2FShodan-EnrichIP-EntityTrigger%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FShodan%2FPlaybooks%2FShodanPlaybooks%2FShodan-EnrichIP-EntityTrigger%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<h3>Post-Deployment instructions</h3>
+<h4>a. Authorize connections</h4>
+<p>Once deployment is complete, authorize each connection.</p>
+<ol>
+<li>Select the Microsoft Sentinel connection resource</li>
+<li>Click Edit API connection blade</li>
+<li>Click Authorize/Provide credentials</li>
+<li>Click Save</li>
+<li>Repeat these steps for other connections</li>
+</ol>
+<h4>b. Assign Playbook Microsoft Sentinel Responder Role</h4>
+<ol>
+<li>Select the Playbook (Logic App) resource</li>
+<li>Click on Identity Blade</li>
+<li>Choose System assigned tab</li>
+<li>Click on Azure role assignments</li>
+<li>Click on Add role assignments</li>
+<li>Select Scope - Resource group</li>
+<li>Select Subscription - where Playbook has been created</li>
+<li>Select Resource group - where Playbook has been created</li>
+<li>Select Role - Microsoft Sentinel Responder</li>
+<li>Click Save</li>
+</ol>
+<h1>References</h1>
+<ul>
+<li><a href="https://developer.shodan.io/api">Shodan API Quick Reference</a></li>
+<li><a href="https://developer.shodan.io/api/requirements">Get Shodan API Key</a></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/shodan.html">Back to Shodan</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EntraIdSpnSignInEvents &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>EntraIdSpnSignInEvents</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<blockquote>
+<p><strong>Defender XDR Only:</strong> This table is available in Microsoft Defender XDR advanced hunting but is not available in the Azure Monitor Log Analytics table reference.</p>
+</blockquote>
+<p>Microsoft Entra service principal and managed identity sign-ins</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">XDR</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-entraidspnsigninevents-table">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (19 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/entraidspnsigninevents">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Application</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Application that performed the recorded action</td>
+</tr>
+<tr>
+<td style="text-align: left;">ApplicationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the application</td>
+</tr>
+<tr>
+<td style="text-align: left;">City</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">City where the account user is located</td>
+</tr>
+<tr>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the sign-in event</td>
+</tr>
+<tr>
+<td style="text-align: left;">Country</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Two-letter code indicating the country/region where the client IP address is geolocated</td>
+</tr>
+<tr>
+<td style="text-align: left;">ErrorCode</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Contains the error code if a sign-in error occurs. To find a description of a specific error code, visithttps://aka.ms/AADsigninsErrorCodes.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IPAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address assigned to the endpoint and used during related network communications</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsManagedIdentity</td>
+<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">Indicates whether the sign-in was initiated by a managed identity</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The north to south coordinates of the sign-in location</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The east to west coordinates of the sign-in location</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReportId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the event</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the request</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceDisplayName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Display name of the resource accessed. The display name can contain any character.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the resource accessed</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceTenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the tenant of the resource accessed</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServicePrincipalId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the service principal that initiated the sign-in</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServicePrincipalName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the service principal that initiated the sign-in</td>
+</tr>
+<tr>
+<td style="text-align: left;">State</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">State where the sign-in occurred, if available</td>
+</tr>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the record was generated</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

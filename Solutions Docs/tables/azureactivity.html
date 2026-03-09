@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AzureActivity &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>AzureActivity</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for AzureActivity table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Audit, Azure Resources, Security</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azureactivity">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (37 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azureactivity">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActivityStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">ActivityStatusValue</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Status of the operation in display-friendly format. Common values include Started, In Progress, Succeeded, Failed, Active, Resolved.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActivitySubstatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">ActivitySubstatusValue</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Substatus of the operation in display-friendly format. E.g. OK (HTTP Status Code: 200).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Authorization</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Blob of RBAC properties of the event. Usually includes the "action", "role" and "scope" properties. Stored as string. The use of Authorization_d should be preferred going forward.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Authorization_d</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Blob of RBAC properties of the event. Usually includes the "action", "role" and "scope" properties. Stored as dynamic column.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Caller</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">GUID of the caller.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CallerIpAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of the user who has performed the operation UPN claim or SPN claim based on availability.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Category</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">CategoryValue</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Category of the activity log e.g. Administrative, Policy, Security.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Claims</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The JWT token used by Active Directory to authenticate the user or application to perform this operation in Resource Manager. The use of claims_d should be preferred going forward.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Claims_d</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">The JWT token used by Active Directory to authenticate the user or application to perform this operation in Resource Manager.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Usually a GUID in the string format. Events that share a correlationId belong to the same uber action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventDataId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of an event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventSubmissionTimestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp when the event became available for querying.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hierarchy</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Management group hierarchy of the management group or subscription that event belongs to.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HTTPRequest</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Blob describing the Http Request. Usually includes the "clientRequestId", "clientIpAddress" and "method" (HTTP method. For example, PUT).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Level</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Level of the event. One of the following values: Critical, Error, Warning, Informational and Verbose.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">GUID of the operation</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationNameValue</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier of the operation e.g. Microsoft.Storage/storageAccounts/listAccountSas/action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Properties</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Set of <Key Value> pairs (i.e. Dictionary) describing the details of the event. Stored as string. Usage of Properties_d is recommended instead.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Properties_d</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Set of <Key Value> pairs (i.e. Dictionary) describing the details of the event. Stored as dynamic column.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Resource</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceGroup</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Resource group name of the impacted resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceProvider</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceProviderValue</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Id of the resource provider for the impacted resource - e.g. Microsoft.Storage.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Subscription ID of the impacted resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp when the event was generated by the Azure service processing the request corresponding the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (20)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a></li>
+<li><a href="../solutions/azure-activity.html">Azure Activity</a></li>
+<li><a href="../solutions/azure-sql-database-solution-for-sentinel.html">Azure SQL Database solution for sentinel</a></li>
+<li><a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a></li>
+<li><a href="../solutions/cloud-service-threat-protection-essentials.html">Cloud Service Threat Protection Essentials</a></li>
+<li><a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a></li>
+<li><a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a></li>
+<li><a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a></li>
+<li><a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a></li>
+<li><a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a></li>
+<li><a href="../solutions/nistsp80053.html">NISTSP80053</a></li>
+<li><a href="../solutions/soc-handbook.html">SOC Handbook</a></li>
+<li><a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a></li>
+<li><a href="../solutions/securitythreatessentialsolution.html">SecurityThreatEssentialSolution</a></li>
+<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
+<li><a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></li>
+<li><a href="../solutions/threat-intelligence.html">Threat Intelligence</a></li>
+<li><a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></li>
+<li><a href="../solutions/threatanalysis&amp;response.html">ThreatAnalysis&amp;Response</a></li>
+<li><a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/azureactivity.html">Azure Activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Content Items Using This Table (54)</h2>
+<h3>Analytic Rules (21)</h3>
+<p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990-c6cdb809.html">Log4j vulnerability exploit aka Log4Shell IP IOC</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/azure-activity.html">Azure Activity</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-azure-machine-learning-write-operations-68c89998-8052-4c80-a1f6-9d81060b6d57-78e6b271.html">Azure Machine Learning Write Operations</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-creation-of-expensive-computes-in-azure-9736e5f1-7b6e-4bfb-a708-e53ff1d182c3-ceac9b06.html">Creation of expensive computes in Azure</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-mass-cloud-resource-deletions-time-series-anomaly-ed43bdb7-eaab-4ea4-be52-6951fcfa7e3b-bbd8cfc2.html">Mass Cloud resource deletions Time Series Anomaly</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-microsoft-entra-id-hybrid-health-ad-fs-new-server-88f453ff-7b9e-45bb-8c12-4058ca5e44ee-ede40a47.html">Microsoft Entra ID Hybrid Health AD FS New Server</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-microsoft-entra-id-hybrid-health-ad-fs-service-delete-86a036b2-3686-42eb-b417-909fc0867771-676dbeac.html">Microsoft Entra ID Hybrid Health AD FS Service Delete</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-microsoft-entra-id-hybrid-health-ad-fs-suspicious-application-d9938c3b-16f9-444d-bc22-ea9a9110e0fd-8920c2ac.html">Microsoft Entra ID Hybrid Health AD FS Suspicious Application</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-nrt-creation-of-expensive-computes-in-azure-56fe0db0-6779-46fa-b3c5-006082a53064-7552960d.html">NRT Creation of expensive computes in Azure</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-nrt-microsoft-entra-id-hybrid-health-ad-fs-new-server-ec491363-5fe7-4eff-b68e-f42dcb76fcf6-5534b382.html">NRT Microsoft Entra ID Hybrid Health AD FS New Server</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-new-cloudshell-user-6d7214d9-4a28-44df-aafb-0910b9e6ae3e-a064ab7a.html">New CloudShell User</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-rare-subscription-level-operations-in-azure-23de46ea-c425-4a77-b456-511ae4855d69-121f6490.html">Rare subscription-level operations in Azure</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-subscription-moved-to-another-tenant-48c026d8-7f36-4a95-9568-6f1420d66e37-856f8155.html">Subscription moved to another tenant</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-suspicious-resource-deployment-9fb57e58-3ed8-4b89-afcf-c8e786508b1c-a84aefba.html">Suspicious Resource deployment</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-suspicious-granting-of-permissions-to-an-account-b2c15736-b9eb-4dae-8b02-3016b6a45a32-6643d8bb.html">Suspicious granting of permissions to an account</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-suspicious-number-of-resource-creation-or-deployment-activities-361dd1e3-1c11-491e-82a3-bb2e44ac36ba-812975d5.html">Suspicious number of resource creation or deployment activities</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/maturitymodelforeventlogmanagementm2131-m2131-dataconnectoraddedchangedremoved-eeb11b6b-e626-4228-b74d-3e730dca8999-c8fea928.html">M2131_DataConnectorAddedChangedRemoved</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/securitythreatessentialsolution.html">SecurityThreatEssentialSolution</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/securitythreatessentialsolution-threat-essentials-mass-cloud-resource-deletions-time-series-anomaly-fa2658fe-3714-4c55-bb12-2b7275c628e8-119af452.html">Threat Essentials - Mass Cloud resource deletions Time Series Anomaly</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/threat-intelligence.html">Threat Intelligence</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-ti-map-ip-entity-to-azureactivity-2441bce9-02e4-407b-8cc7-7d597f38b8b0-eefa9066.html">TI Map IP Entity to AzureActivity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-ti-map-email-entity-to-azureactivity-cca3b4d9-ac39-4109-8b93-65bb284003e6-d3038f92.html">TI map Email entity to AzureActivity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-ip-entity-to-azureactivity-7a0c9989-1618-4126-9290-fb77b976d181-f4b651f6.html">TI Map IP Entity to AzureActivity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-email-entity-to-azureactivity-a9a4d1ee-0f52-4a1f-8def-a2fb4462104c-65a34698.html">TI map Email entity to AzureActivity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries (17)</h3>
+<p><strong>In solution <a href="../solutions/azure-activity.html">Azure Activity</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-anomalous-azure-operation-hunting-model-43cb0347-bdcc-4e83-af5a-cebbd03971d8-cab991db.html">Anomalous Azure Operation Hunting Model</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-azure-machine-learning-write-operations-26d116bd-324b-4bb8-b102-d4a282607ad7-c243c1ab.html">Azure Machine Learning Write Operations</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-azure-network-security-group-nsg-administrative-operations-e94d6756-981c-4f02-9a81-d006d80c8b41-633c60f3.html">Azure Network Security Group NSG Administrative Operations</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-azure-vm-run-command-executed-from-azure-ip-address-efe843ca-3ce7-4896-9f8b-f2c374ae6527-1a85a75b.html">Azure VM Run Command executed from Azure IP address</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-azure-virtual-network-subnets-administrative-operations-57784ba5-7791-422e-916f-65ef94fe1dbb-9d2f39f9.html">Azure Virtual Network Subnets Administrative Operations</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-azure-storage-key-enumeration-5d2399f9-ea5c-4e67-9435-1fba745f3a39-dc9ad5ce.html">Azure storage key enumeration</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-azureactivity-administration-from-vps-providers-1b8779c9-abf2-444f-a21f-437b8f90ac4a-2a957dc6.html">AzureActivity Administration From VPS Providers</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-common-deployed-resources-0278e3b8-9899-45c5-8928-700cd80d2d80-cd2dd606.html">Common deployed resources</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-creation-of-an-anomalous-number-of-resources-a09e6368-065b-4f1e-a4ce-b1b3a64b493b-70888297.html">Creation of an anomalous number of resources</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-granting-permissions-to-account-860cda84-765b-4273-af44-958b7cca85f7-74a48e32.html">Granting permissions to account</a></td>
+<td style="text-align: left;"><code>OperationName == "Create role assignment"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-microsoft-sentinel-analytics-rules-administrative-operations-ef7ef44e-6129-4d8e-94fe-b5530415d8e5-4b1b530d.html">Microsoft Sentinel Analytics Rules Administrative Operations</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-microsoft-sentinel-connectors-administrative-operations-17201aa8-0916-4078-a020-7ea3a9262889-4cf8c28d.html">Microsoft Sentinel Connectors Administrative Operations</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-microsoft-sentinel-workbooks-administrative-operations-5a1f9655-c893-4091-8dc0-7f11d7676506-d2f3274a.html">Microsoft Sentinel Workbooks Administrative Operations</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-port-opened-for-an-azure-resource-9e146876-e303-49af-b847-b029d1a66852-03c8ef50.html">Port opened for an Azure Resource</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-rare-custom-script-extension-81fd68a2-9ad6-4a1c-7bd7-18efe5c99081-a79becd9.html">Rare Custom Script Extension</a></td>
+<td style="text-align: left;"><code>OperationName == "Create or Update Virtual Machine Extension"</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/cloud-service-threat-protection-essentials.html">Cloud Service Threat Protection Essentials</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/cloud-service-threat-protection-essentials-azure-resources-assigned-public-ip-addresses-8d5996b2-7d4c-4dcf-bb0d-0d7fdf0e2c75-5ca26ce3.html">Azure Resources Assigned Public IP Addresses</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a>:</strong> <code>OperationName contains "delete"</code><br><code>OperationName contains "remove"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoftpurviewinsiderriskmanagement-insider-risk-possible-sabotage-3201b17a-06e1-4a8d-8157-c69345baa808-cead04e6.html">Insider Risk_Possible Sabotage</a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks (15)</h3>
+<p><strong>In solution <a href="../solutions/azure-activity.html">Azure Activity</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-azureactivity-dc7bc453.html">AzureActivity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-activity-azureservicehealthworkbook-d3085bda.html">AzureServiceHealthWorkbook</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/azure-sql-database-solution-for-sentinel.html">Azure SQL Database solution for sentinel</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-sql-database-solution-for-sentinel-workbook-azuresqlsecurity-2448278c.html">Workbook-AzureSQLSecurity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.html">AzureSecurityBenchmark</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/continuousdiagnostics&amp;mitigation-continuousdiagnostics&amp;mitigation-d91b4b8c.html">ContinuousDiagnostics&amp;Mitigation</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.html">CybersecurityMaturityModelCertification_CMMCV2</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.html">Lumen-Threat-Feed-Overview</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.html">InsiderRiskManagement</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/nistsp80053.html">NISTSP80053</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/nistsp80053-nistsp80053-1f654213.html">NISTSP80053</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/soc-handbook.html">SOC Handbook</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/soc-handbook-investigationinsights-6227a80b.html">InvestigationInsights</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/sox-it-compliance-soxitcompliance-6426e0a3.html">SOXITCompliance</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/team-cymru-scout-teamcymruscout-b64c6ed4.html">TeamCymruScout</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/threatanalysis&amp;response.html">ThreatAnalysis&amp;Response</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/threatanalysis&amp;response-dynamicthreatmodeling&amp;response-54123c47.html">DynamicThreatModeling&amp;Response</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.html">ZeroTrustTIC3</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Parsers Using This Table (1)</h2>
+<h3>ASIM Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimauditeventazureactivity.html">ASimAuditEventAzureActivity</a></td>
+<td style="text-align: left;">AuditEvent</td>
+<td style="text-align: left;">Microsoft Azure</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.aad/domainservices</code></li>
+<li><code>microsoft.azureadgraph/tenants</code></li>
+<li><code>microsoft.containerservice/managedclusters</code></li>
+<li><code>microsoft.apimanagement/service</code></li>
+<li><code>microsoft.appconfiguration/configurationstores</code></li>
+<li><code>microsoft.network/applicationgateways</code></li>
+<li><code>microsoft.servicenetworking/trafficcontrollers</code></li>
+<li><code>microsoft.web/sites</code></li>
+<li><code>microsoft.kubernetes/connectedclusters</code></li>
+<li><code>microsoft.toolchainorchestrator/diagnostics</code></li>
+<li><code>microsoft.attestation/attestationproviders</code></li>
+<li><code>microsoft.cache/redis</code></li>
+<li><code>microsoft.cdn/profiles</code></li>
+<li><code>microsoft.hardwaresecuritymodules/cloudhsmclusters</code></li>
+<li><code>microsoft.communication/communicationservices</code></li>
+<li><code>microsoft.documentdb/databaseaccounts</code></li>
+<li><code>microsoft.datacollaboration/workspaces</code></li>
+<li><code>microsoft.digitaltwins/digitaltwinsinstances</code></li>
+<li><code>microsoft.network/dnsresolverpolicies</code></li>
+<li><code>microsoft.eventgrid/namespaces</code></li>
+<li><code>microsoft.eventgrid/topics</code></li>
+<li><code>microsoft.eventhub/namespaces</code></li>
+<li><code>microsoft.network/azurefirewalls</code></li>
+<li><code>microsoft.dashboard/grafana</code></li>
+<li><code>microsoft.keyvault/vaults</code></li>
+<li><code>microsoft.loadtestservice/loadtests</code></li>
+<li><code>microsoft.managednetworkfabric/networkdevices</code></li>
+<li><code>microsoft.documentdb/cassandraclusters</code></li>
+<li><code>microsoft.documentdb/mongoclusters</code></li>
+<li><code>microsoft.dashboard/dashboard</code></li>
+<li><code>microsoft.networkcloud/baremetalmachines</code></li>
+<li><code>microsoft.networkcloud/clustermanagers</code></li>
+<li><code>microsoft.networkcloud/clusters</code></li>
+<li><code>microsoft.networkcloud/storageappliances</code></li>
+<li><code>microsoft.network/loadbalancers</code></li>
+<li><code>microsoft.purview/accounts</code></li>
+<li><code>microsoft.recoveryservices/vaults</code></li>
+<li><code>microsoft.relay/namespaces</code></li>
+<li><code>microsoft.servicebus/namespaces</code></li>
+<li><code>microsoft.sql/servers</code></li>
+<li><code>microsoft.networkfunction/azuretrafficcollectors</code></li>
+<li><code>microsoft.network/networkmanagers</code></li>
+<li><code>microsoft.botservice/botservices</code></li>
+<li><code>microsoft.chaos/experiments</code></li>
+<li><code>microsoft.cognitiveservices/accounts</code></li>
+<li><code>microsoft.connectedcache/cachenodes</code></li>
+<li><code>microsoft.connectedvehicle/platformaccounts</code></li>
+<li><code>microsoft.network/networkwatchers/connectionmonitors</code></li>
+<li><code>microsoft.app/managedenvironments</code></li>
+<li><code>microsoft.d365customerinsights/instances</code></li>
+<li><code>microsoft.databricks/workspaces</code></li>
+<li><code>microsoft.dbformysql/flexibleservers</code></li>
+<li><code>microsoft.dbforpostgresql/flexibleservers</code></li>
+<li><code>microsoft.devcenter/devcenters</code></li>
+<li><code>microsoft.devopsinfrastructure/pools</code></li>
+<li><code>microsoft.durabletask/schedulers</code></li>
+<li><code>microsoft.experimentation/experimentworkspaces</code></li>
+<li><code>microsoft.hdinsight/clusters</code></li>
+<li><code>microsoft.compute/virtualmachines</code></li>
+<li><code>microsoft.logic/integrationaccounts</code></li>
+<li><code>microsoft.machinelearningservices/workspaces</code></li>
+<li><code>microsoft.machinelearningservices/registries</code></li>
+<li><code>microsoft.media/mediaservices</code></li>
+<li><code>microsoft.azureplaywrightservice/accounts</code></li>
+<li><code>microsoft.graph/tenants</code></li>
+<li><code>microsoft.networkanalytics/dataproducts</code></li>
+<li><code>microsoft.onlineexperimentation/workspaces</code></li>
+<li><code>microsoft.storage/storageaccounts</code></li>
+<li><code>microsoft.storagecache/amlfilesytems</code></li>
+<li><code>microsoft.storagemover/storagemovers</code></li>
+<li><code>microsoft.synapse/workspaces</code></li>
+<li><code>microsoft.edge/diagnostics</code></li>
+<li><code>microsoft.desktopvirtualization/hostpools</code></li>
+<li><code>microsoft.zerotrustsegmentation/segmentationmanagers</code></li>
+<li><code>default</code></li>
+<li><code>subscription</code></li>
+<li><code>resourcegroup</code></li>
+<li><code>microsoft.signalrservice/webpubsub</code></li>
+<li><code>microsoft.insights/components</code></li>
+<li><code>microsoft.desktopvirtualization/applicationgroups</code></li>
+<li><code>microsoft.desktopvirtualization/workspaces</code></li>
+<li><code>microsoft.timeseriesinsights/environments</code></li>
+<li><code>microsoft.workloadmonitor/monitors</code></li>
+<li><code>microsoft.analysisservices/servers</code></li>
+<li><code>microsoft.batch/batchaccounts</code></li>
+<li><code>microsoft.appplatform/spring</code></li>
+<li><code>microsoft.signalrservice/signalr</code></li>
+<li><code>microsoft.containerregistry/registries</code></li>
+<li><code>microsoft.kusto/clusters</code></li>
+<li><code>microsoft.blockchain/blockchainmembers</code></li>
+<li><code>microsoft.eventgrid/domains</code></li>
+<li><code>microsoft.eventgrid/partnernamespaces</code></li>
+<li><code>microsoft.eventgrid/partnertopics</code></li>
+<li><code>microsoft.eventgrid/systemtopics</code></li>
+<li><code>microsoft.conenctedvmwarevsphere/virtualmachines</code></li>
+<li><code>microsoft.azurestackhci/virtualmachines</code></li>
+<li><code>microsoft.scvmm/virtualmachines</code></li>
+<li><code>microsoft.compute/virtualmachinescalesets</code></li>
+<li><code>microsoft.hybridcontainerservice/provisionedclusters</code></li>
+<li><code>microsoft.insights/autoscalesettings</code></li>
+<li><code>microsoft.devices/iothubs</code></li>
+<li><code>microsoft.servicefabric/clusters</code></li>
+<li><code>microsoft.logic/workflows</code></li>
+<li><code>microsoft.automation/automationaccounts</code></li>
+<li><code>microsoft.datafactory/factories</code></li>
+<li><code>microsoft.datalakestore/accounts</code></li>
+<li><code>microsoft.datalakeanalytics/accounts</code></li>
+<li><code>microsoft.powerbidedicated/capacities</code></li>
+<li><code>microsoft.datashare/accounts</code></li>
+<li><code>microsoft.sql/managedinstances</code></li>
+<li><code>microsoft.sql/servers/databases</code></li>
+<li><code>microsoft.dbformysql/servers</code></li>
+<li><code>microsoft.dbforpostgresql/servers</code></li>
+<li><code>microsoft.dbforpostgresql/serversv2</code></li>
+<li><code>microsoft.dbformariadb/servers</code></li>
+<li><code>microsoft.devices/provisioningservices</code></li>
+<li><code>microsoft.network/expressroutecircuits</code></li>
+<li><code>microsoft.network/frontdoors</code></li>
+<li><code>microsoft.network/networkinterfaces</code></li>
+<li><code>microsoft.network/networksecuritygroups</code></li>
+<li><code>microsoft.network/publicipaddresses</code></li>
+<li><code>microsoft.network/trafficmanagerprofiles</code></li>
+<li><code>microsoft.network/virtualnetworkgateways</code></li>
+<li><code>microsoft.network/vpngateways</code></li>
+<li><code>microsoft.network/virtualnetworks</code></li>
+<li><code>microsoft.search/searchservices</code></li>
+<li><code>microsoft.streamanalytics/streamingjobs</code></li>
+<li><code>microsoft.network/bastionhosts</code></li>
+<li><code>microsoft.healthcareapis/services</code></li>
+</ul>
+<h2>Selection Criteria Summary (3 criteria, 3 total references)</h2>
+<p>References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>OperationName == "Create role assignment"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>OperationName == "Create or Update Virtual Machine Extension"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>OperationName contains "delete"</code><br><code>OperationName contains "remove"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>OperationName</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>Create role assignment</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Create or Update Virtual Machine Extension</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains delete</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains remove</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

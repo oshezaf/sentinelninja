@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oracle Cloud Infrastructure &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>Oracle Cloud Infrastructure</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Oracle Cloud Infrastructure Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-06-01</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Oracle%20Cloud%20Infrastructure">Oracle Cloud Infrastructure</a></td>
+</tr>
+</tbody>
+</table>
+<p>The Oracle Cloud Infrastructure (OCI) solution provides the capability to ingest OCI Logs from <a href="https://docs.oracle.com/iaas/Content/Streaming/Concepts/streamingoverview.htm">OCI Stream</a> into Microsoft Sentinel using the <a href="https://docs.oracle.com/iaas/api/#/streaming/streaming/20180418">OCI Streaming REST API</a>.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This Solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>• <a href="https://aka.ms/Sentinel-CCP_Platform">Microsoft Sentinel Codeless Connector Framework</a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2>Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong> (plus 2 discovered⚠️):</p>
+<ul>
+<li><a href="../connectors/oci-connector-ccp-definition.html">Oracle Cloud Infrastructure (via CCP) – Preview</a> ⚠️</li>
+<li><a href="../connectors/oraclecloudinfraconnector.html">Oracle Cloud Infrastructure (via Codeless Connector Framework)</a></li>
+<li><a href="../connectors/oraclecloudinfrastructurelogsconnector.html">[DEPRECATED] Oracle Cloud Infrastructure</a> ⚠️ 🔶</li>
+</ul>
+<p><em>⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.</em></p>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Tables Used</h2>
+<p>This solution uses <strong>2 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/oci-logsv2-cl.html"><code>OCI_LogsV2_CL</code></a></td>
+<td><a href="../connectors/oci-connector-ccp-definition.html">Oracle Cloud Infrastructure (via CCP) – Preview</a>, <a href="../connectors/oraclecloudinfraconnector.html">Oracle Cloud Infrastructure (via Codeless Connector Framework)</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/oci-logs-cl.html"><code>OCI_Logs_CL</code></a> 🔶</td>
+<td><a href="../connectors/oraclecloudinfrastructurelogsconnector.html">[DEPRECATED] Oracle Cloud Infrastructure</a></td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
+</blockquote>
+<h2>Content Items</h2>
+<p>This solution includes <strong>22 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3>Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/oracle-cloud-infrastructure-oci-discovery-activity-61f995d7-8038-4ff0-ad2b-eccfd18fcc8c-3b103bbb.html">OCI - Discovery activity</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Discovery</td>
+<td style="text-align: left;"><a href="../tables/oci-logsv2-cl.html"><code>OCI_LogsV2_CL</code></a><br><a href="../tables/oci-logs-cl.html"><code>OCI_Logs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracle-cloud-infrastructure-oci-event-rule-deleted-31b15699-0b55-4246-851e-93f9cefb6f5c-52b327bf.html">OCI - Event rule deleted</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/oci-logsv2-cl.html"><code>OCI_LogsV2_CL</code></a><br><a href="../tables/oci-logs-cl.html"><code>OCI_Logs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracle-cloud-infrastructure-oci-inbound-ssh-connection-eb6e07a1-2895-4c55-9c27-ac84294f0e46-b168a5f8.html">OCI - Inbound SSH connection</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/oci-logsv2-cl.html"><code>OCI_LogsV2_CL</code></a><br><a href="../tables/oci-logs-cl.html"><code>OCI_Logs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracle-cloud-infrastructure-oci-insecure-metadata-endpoint-9c4b1b9c-6462-41ce-8f2e-ce8c104331fc-b22ffd8a.html">OCI - Insecure metadata endpoint</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Discovery</td>
+<td style="text-align: left;"><a href="../tables/oci-logsv2-cl.html"><code>OCI_LogsV2_CL</code></a><br><a href="../tables/oci-logs-cl.html"><code>OCI_Logs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracle-cloud-infrastructure-oci-instance-metadata-access-a55b4bbe-a014-4ae9-a50d-441ba5e98b65-9c40229f.html">OCI - Instance metadata access</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Discovery</td>
+<td style="text-align: left;"><a href="../tables/oci-logsv2-cl.html"><code>OCI_LogsV2_CL</code></a><br><a href="../tables/oci-logs-cl.html"><code>OCI_Logs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracle-cloud-infrastructure-oci-multiple-instances-launched-a79cf2b9-a511-4282-ba5d-812e14b07831-c81054f3.html">OCI - Multiple instances launched</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/oci-logsv2-cl.html"><code>OCI_LogsV2_CL</code></a><br><a href="../tables/oci-logs-cl.html"><code>OCI_Logs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracle-cloud-infrastructure-oci-multiple-instances-terminated-252e651d-d825-480c-bdeb-8b239354577d-58dfd5da.html">OCI - Multiple instances terminated</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/oci-logsv2-cl.html"><code>OCI_LogsV2_CL</code></a><br><a href="../tables/oci-logs-cl.html"><code>OCI_Logs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracle-cloud-infrastructure-oci-multiple-rejects-on-rare-ports-482c24b9-a700-4b2a-85d3-1c42110ba78c-1acf665f.html">OCI - Multiple rejects on rare ports</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Reconnaissance</td>
+<td style="text-align: left;"><a href="../tables/oci-logsv2-cl.html"><code>OCI_LogsV2_CL</code></a><br><a href="../tables/oci-logs-cl.html"><code>OCI_Logs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracle-cloud-infrastructure-oci-ssh-scanner-e087d4fb-af0b-4e08-a067-b9ba9e5f8840-a4b0a62f.html">OCI - SSH scanner</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Reconnaissance</td>
+<td style="text-align: left;"><a href="../tables/oci-logsv2-cl.html"><code>OCI_LogsV2_CL</code></a><br><a href="../tables/oci-logs-cl.html"><code>OCI_Logs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracle-cloud-infrastructure-oci-unexpected-user-agent-a0b9a7ca-3e6d-4996-ae35-759df1d67a54-ec9d7de9.html">OCI - Unexpected user agent</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/oci-logsv2-cl.html"><code>OCI_LogsV2_CL</code></a><br><a href="../tables/oci-logs-cl.html"><code>OCI_Logs_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/oracle-cloud-infrastructure-oci-delete-operations-eed33749-85c4-47cc-9776-12eeb3172888-62fef1b2.html">OCI - Delete operations</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/oci-logsv2-cl.html"><code>OCI_LogsV2_CL</code></a><br><a href="../tables/oci-logs-cl.html"><code>OCI_Logs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracle-cloud-infrastructure-oci-deleted-users-4f7c20dc-702c-491d-908e-3b5f8bdc73ab-9424b8e4.html">OCI - Deleted users</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/oci-logsv2-cl.html"><code>OCI_LogsV2_CL</code></a><br><a href="../tables/oci-logs-cl.html"><code>OCI_Logs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracle-cloud-infrastructure-oci-destination-ports-inbound-traffic-3bdfa923-3fc8-4651-8954-dab2bef2bdd1-7abbc360.html">OCI - Destination ports (inbound traffic)</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/oci-logsv2-cl.html"><code>OCI_LogsV2_CL</code></a><br><a href="../tables/oci-logs-cl.html"><code>OCI_Logs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracle-cloud-infrastructure-oci-destination-ports-outbound-traffic-fff09b57-24ff-4e47-8a29-6292b0310e19-a5e0c310.html">OCI - Destination ports (outbound traffic)</a></td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/oci-logsv2-cl.html"><code>OCI_LogsV2_CL</code></a><br><a href="../tables/oci-logs-cl.html"><code>OCI_Logs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracle-cloud-infrastructure-oci-launched-instances-3df69415-2dec-4457-9433-97a3c15a4b70-2f0f2a81.html">OCI - Launched instances</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/oci-logsv2-cl.html"><code>OCI_LogsV2_CL</code></a><br><a href="../tables/oci-logs-cl.html"><code>OCI_Logs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracle-cloud-infrastructure-oci-new-users-c411dc09-a8ca-44f9-a594-242b5e90ada8-53c9f4f0.html">OCI - New users</a></td>
+<td style="text-align: left;">InitialAccess, Persistence</td>
+<td style="text-align: left;"><a href="../tables/oci-logsv2-cl.html"><code>OCI_LogsV2_CL</code></a><br><a href="../tables/oci-logs-cl.html"><code>OCI_Logs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracle-cloud-infrastructure-oci-terminated-instances-51101a78-a802-4a83-ac02-ef31416ffbc7-09371e34.html">OCI - Terminated instances</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/oci-logsv2-cl.html"><code>OCI_LogsV2_CL</code></a><br><a href="../tables/oci-logs-cl.html"><code>OCI_Logs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracle-cloud-infrastructure-oci-update-activities-e4353276-19a5-4833-a271-be507170269e-51a407a0.html">OCI - Update activities</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/oci-logsv2-cl.html"><code>OCI_LogsV2_CL</code></a><br><a href="../tables/oci-logs-cl.html"><code>OCI_Logs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracle-cloud-infrastructure-oci-updated-instances-7b17d83a-7a88-4867-accf-494736bcec50-72bc8aa3.html">OCI - Updated instances</a></td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/oci-logsv2-cl.html"><code>OCI_LogsV2_CL</code></a><br><a href="../tables/oci-logs-cl.html"><code>OCI_Logs_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/oracle-cloud-infrastructure-oci-user-source-ip-addresses-01dc84d2-ef1d-4df6-9499-e1c4a305f01f-d4d386ac.html">OCI - User source IP addresses</a></td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/oci-logsv2-cl.html"><code>OCI_LogsV2_CL</code></a><br><a href="../tables/oci-logs-cl.html"><code>OCI_Logs_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/oracle-cloud-infrastructure-oraclecloudinfrastructureoci-601b3646.html">OracleCloudInfrastructureOCI</a></td>
+<td style="text-align: left;"><a href="../tables/oci-logsv2-cl.html"><code>OCI_LogsV2_CL</code></a><br><a href="../tables/oci-logs-cl.html"><code>OCI_Logs_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/ocilogs.html">OCILogs</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/oci-logsv2-cl.html"><code>OCI_LogsV2_CL</code></a> <em>(read)</em><br><a href="../tables/oci-logs-cl.html"><code>OCI_Logs_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.1.0</td>
+<td>03-02-2026</td>
+<td>Add support for group Cursor</td>
+</tr>
+<tr>
+<td>3.0.8</td>
+<td>05-02-2026</td>
+<td>fix name in package 3.0.7</td>
+</tr>
+<tr>
+<td>3.0.7</td>
+<td>26-01-2026</td>
+<td>Improve Instructions part of the connector with more InfoMessage.</td>
+</tr>
+<tr>
+<td>3.0.6</td>
+<td>09-12-2025</td>
+<td>Support Multistream + multi partition.</td>
+</tr>
+<tr>
+<td>3.0.5</td>
+<td>13-11-2025</td>
+<td>Updated partition id text box's description with zero-based indexing.</td>
+</tr>
+<tr>
+<td>3.0.4</td>
+<td>22-09-2025</td>
+<td>Updated the OCI <strong>CCF Data Connector</strong> instructions to include information about the partition ID limitation.</td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>25-08-2025</td>
+<td>Moving OCI <strong>CCF Data Connector</strong> to GA</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>14-07-2025</td>
+<td>Introduced new <strong>CCF Connector</strong> to the Solution - "OCI-Connector-CCP-Definition".</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>05-10-2023</td>
+<td>Manual deployment instructions updated for <strong>Data Connector</strong>.</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>21-08-2023</td>
+<td>Modified the <strong>Parser</strong> by adding Columnifexists condition to avoid errors.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProofpointPODMessageCL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>ProofpointPODMessage_CL</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1</strong></td>
+<td style="text-align: left;">Yes 🔶 — uses type-suffixed column names</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (10 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Proofpoint%20On%20demand%28POD%29%20Email%20Security/Data%20Connectors/ProofPointEmailSecurity_CCP/ProofpointPOD_DCR.json">Data Collection Rule definition</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">connection</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">envelope</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">filter</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">guid</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">metadata</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">msg</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">msgParts</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">pps</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">ts</td>
+<td style="text-align: left;">string</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/proofpoint-on-demand-pod-email-security.html">Proofpoint On demand(POD) Email Security</a></li>
+</ul>
+<h2>Connectors (2)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/proofpointccpdefinition.html">Proofpoint On Demand Email Security (via Codeless Connector Platform)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/proofpointpod.html">[Deprecated] Proofpoint On Demand Email Security</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Content Items Using This Table (21)</h2>
+<h3>Analytic Rules (10)</h3>
+<p><strong>In solution <a href="../solutions/proofpoint-on-demand-pod-email-security.html">Proofpoint On demand(POD) Email Security</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/proofpoint-on-demand-pod-email-security-proofpointpod-binary-file-in-attachment-eb68b129-5f17-4f56-bf6d-dde48d5e615a-ae200d61.html">ProofpointPOD - Binary file in attachment</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/proofpoint-on-demand-pod-email-security-proofpointpod-email-sender-ip-in-ti-list-78979d32-e63f-4740-b206-cfb300c735e0-63420dc8.html">ProofpointPOD - Email sender IP in TI list</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/proofpoint-on-demand-pod-email-security-proofpointpod-email-sender-in-ti-list-35a0792a-1269-431e-ac93-7ae2980d4dde-f2f02f35.html">ProofpointPOD - Email sender in TI list</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/proofpoint-on-demand-pod-email-security-proofpointpod-high-risk-message-not-discarded-c7cd6073-6d2c-4284-a5c8-da27605bdfde-62212676.html">ProofpointPOD - High risk message not discarded</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/proofpoint-on-demand-pod-email-security-proofpointpod-multiple-archived-attachments-to-the-same-recipien-bda5a2bd-979b-4828-a91f-27c2a5048f7f-0539879e.html">ProofpointPOD - Multiple archived attachments to the same recipient</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/proofpoint-on-demand-pod-email-security-proofpointpod-multiple-large-emails-to-the-same-recipient-d1aba9a3-5ab1-45ef-8ed4-da57dc3c0d32-75b9c537.html">ProofpointPOD - Multiple large emails to the same recipient</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/proofpoint-on-demand-pod-email-security-proofpointpod-multiple-protected-emails-to-unknown-recipient-f8127962-7739-4211-a4a9-390a7a00e91f-2fbc9011.html">ProofpointPOD - Multiple protected emails to unknown recipient</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/proofpoint-on-demand-pod-email-security-proofpointpod-possible-data-exfiltration-to-private-email-aedc5b33-2d7c-42cb-a692-f25ef637cbb1-618ec629.html">ProofpointPOD - Possible data exfiltration to private email</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/proofpoint-on-demand-pod-email-security-proofpointpod-suspicious-attachment-f6a51e2c-2d6a-4f92-a090-cfb002ca611f-2cc6d3d5.html">ProofpointPOD - Suspicious attachment</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/proofpoint-on-demand-pod-email-security-proofpointpod-weak-ciphers-56b0a0cd-894e-4b38-a0a1-c41d9f96649a-f36413c2.html">ProofpointPOD - Weak ciphers</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries (10)</h3>
+<p><strong>In solution <a href="../solutions/proofpoint-on-demand-pod-email-security.html">Proofpoint On demand(POD) Email Security</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/proofpoint-on-demand-pod-email-security-proofpointpod-emails-with-high-score-of-'adult'-filter-classifie-0794a162-8635-43fd-81ed-2cf2604575b1-5d25de5e.html">ProofpointPOD - Emails with high score of 'adult' filter classifier value</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/proofpoint-on-demand-pod-email-security-proofpointpod-emails-with-high-score-of-'malware'-filter-classif-eb74aaab-ebf4-4763-9b03-b1a33fe48600-0cf4c124.html">ProofpointPOD - Emails with high score of 'malware' filter classifier value</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/proofpoint-on-demand-pod-email-security-proofpointpod-emails-with-high-score-of-'phish'-filter-classifie-a0d56fcd-edb3-46f1-aaa3-12d606a48ff1-80ac3b4d.html">ProofpointPOD - Emails with high score of 'phish' filter classifier value</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/proofpoint-on-demand-pod-email-security-proofpointpod-emails-with-high-score-of-'spam'-filter-classifier-c9ff3690-b754-4c91-b866-4d07098da074-968bb165.html">ProofpointPOD - Emails with high score of 'spam' filter classifier value</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/proofpoint-on-demand-pod-email-security-proofpointpod-emails-with-high-score-of-'suspect'-filter-classif-bc619ce8-0807-4b13-93ea-0d7b79c7ee68-5027a04d.html">ProofpointPOD - Emails with high score of 'suspect' filter classifier value</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/proofpoint-on-demand-pod-email-security-proofpointpod-large-size-outbound-emails-dd9674cf-898b-4c80-96f1-f70bec66e6fc-4ee9c6c0.html">ProofpointPOD - Large size outbound emails</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/proofpoint-on-demand-pod-email-security-proofpointpod-recipients-with-high-number-of-discarded-or-reject-d324e435-31d3-4aa3-907c-76f4917820a9-4eec2939.html">ProofpointPOD - Recipients with high number of discarded or rejected emails</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/proofpoint-on-demand-pod-email-security-proofpointpod-recipients-with-large-number-of-corrupted-emails-c334e1e8-a7da-4c23-a9c0-fdda26b07606-fcc5ff05.html">ProofpointPOD - Recipients with large number of corrupted emails</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/proofpoint-on-demand-pod-email-security-proofpointpod-senders-with-large-number-of-corrupted-messages-af7f133a-5fed-4ebf-8272-4330c884c7ca-4e6469ff.html">ProofpointPOD - Senders with large number of corrupted messages</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/proofpoint-on-demand-pod-email-security-proofpointpod-suspicious-file-types-in-attachments-7b281f4a-6a9a-439f-8b4f-f08eb24f2fb7-e9c4582c.html">ProofpointPOD - Suspicious file types in attachments</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks (1)</h3>
+<p><strong>In solution <a href="../solutions/proofpoint-on-demand-pod-email-security.html">Proofpoint On demand(POD) Email Security</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/proofpoint-on-demand-pod-email-security-proofpointpod-14c159d7.html">ProofpointPOD</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Parsers Using This Table (1)</h2>
+<h3>Other Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/proofpointpod.html">ProofpointPOD</a></td>
+<td style="text-align: left;"><a href="../solutions/proofpoint-on-demand-pod-email-security.html">Proofpoint On demand(POD) Email Security</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

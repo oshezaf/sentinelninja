@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HDInsightStormTopologyMetrics &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>HDInsightStormTopologyMetrics</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for HDInsightStormTopologyMetrics table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Azure Resources</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/hdinsightstormtopologymetrics">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (60 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/hdinsightstormtopologymetrics">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">Acked</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The number of Tuple "trees" successfully processed. A value of 0 is expected if no acking is done.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AssignedCPUPercent</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Percent of CPU cores assigned to the topology.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AssignedMemOffHeapMB</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">MB of off heap memory assigned to the topology.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AssignedMemOnHeapMB</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">MB of on heap memory assigned to the topology.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AssignedTotalMemMB</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">MB of total memory assigned to the topology.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BoltId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the bolt.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Capacity</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">If this is around 1.0, the corresponding Bolt is running as fast as it can, so you may want to increase the Bolt's parallelism. This is (number executed * average execute latency) / measurement time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClusterName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the cluster.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClusterType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the cluster.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CompleteLatencyMs</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The average time (millisecond) a Tuple "tree" takes to be completely processed by the Topology. A value of 0 is expected if no acking is done.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID for correlated events. Can be used to identify correlated events between multiple tables.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Debug</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Boolean representing whether debug tracing is activated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Emitted</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The number of Tuples emitted.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EncodedBoltId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The encoded ID of the bolt.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EncodedId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The enocded ID of the topology.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EncodedSpoutId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The encoded ID of the Spout.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ErrorHost</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Host where the error occurred.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ErrorPort</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Port associated with the error.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ErrorWorkerLogLink</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Link to the log of the worker where an error occurred.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Executed</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The number of incoming Tuples processed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ExecuteLatencyMs</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The average time (millisecond) a Tuple spends in the execute method. The execute method may complete without sending an Ack for the tuple.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Executors</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The number of threads being used to execute a task.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ExecutorsTotal</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The total amount of executors currently used and already used to execute a task.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Failed</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The number of Tuple "trees" that were explicitly failed or timed out before acking was completed. A value of 0 is expected if no acking is done.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HostName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Hostname of the host the record came from.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Id</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the component the record is from (could be spout, bolt, or name of topology).</td>
+</tr>
+<tr>
+<td style="text-align: left;">InstanceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of record shape (there are bolt, spout, topology, and topology_stats record shapes).</td>
+</tr>
+<tr>
+<td style="text-align: left;">LastError</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Last error to occur in the component.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MsgTimeout</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The number of seconds until a message times out.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The operation associated with log record.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Owner</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the user that owns the topology.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessLatencyMs</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The average time (millisecond) it takes to Ack a Tuple after it is first received. Bolts that join, aggregate or batch may not Ack a tuple until a number of other Tuples have been received(.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReplicationCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The amount of replicas kept by the topology.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestedCpuPercent</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The percent of CPU requested by the topology.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMemOffHeapMB</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">MB of off heap memory requested by the topology.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMemOnHeapMB</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">MB of on heap memory requested by the topology.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SamplingPct</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Percentage of messages sampled to calculate metrics.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SchedulerDisplayResource</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Boolean describing the scheduler display setting.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">SpoutId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the spout.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The status of the topology.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tasks</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The number of tasks running.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TasksTotal</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The total amount of tasks run.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) of when the log was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TopologyId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the topology.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TopologyName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the topology.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Transferred</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The number of Tuples emitted that sent to one or more bolts.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">Uptime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The length of time an Executor (thread) has been alive.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UptimeSeconds</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The amount of time the topology has been running in seconds.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Window</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The time window for the metrics in the record in seconds.</td>
+</tr>
+<tr>
+<td style="text-align: left;">WindowHint</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The time window for the metrics in the record in hours, minutes, seconds format.</td>
+</tr>
+<tr>
+<td style="text-align: left;">WindowPretty</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">String description of the time window for the metrics in the record.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workers</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">JSON with worker specific metrics.</td>
+</tr>
+<tr>
+<td style="text-align: left;">WorkersTotal</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The total amount of workers.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.hdinsight/clusters</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

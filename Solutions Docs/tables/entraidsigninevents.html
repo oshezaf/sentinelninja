@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EntraIdSignInEvents &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>EntraIdSignInEvents</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<blockquote>
+<p><strong>Defender XDR Only:</strong> This table is available in Microsoft Defender XDR advanced hunting but is not available in the Azure Monitor Log Analytics table reference.</p>
+</blockquote>
+<p>Microsoft Entra interactive and non-interactive sign-ins</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">XDR</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-entraidsigninevents-table">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (44 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/entraidsigninevents">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">AccountDisplayName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name displayed in the address book entry for the account user. This is usually a combination of the given name, middle initial, and surname of the user.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccountObjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the account in Microsoft Entra ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccountUpn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User principal name (UPN) of the account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AlternateSignInName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">On-premises user principal name (UPN) of the user signing in to Microsoft Entra ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">Application</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Application that performed the recorded action</td>
+</tr>
+<tr>
+<td style="text-align: left;">ApplicationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the application</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationProcessingDetails</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details about the authentication processor</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationRequirement</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of authentication required for the sign-in. Possible values: multiFactorAuthentication (MFA was required) and singleFactorAuthentication (no MFA was required).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Browser</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details about the version of the browser used to sign in</td>
+</tr>
+<tr>
+<td style="text-align: left;">City</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">City where the account user is located</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClientAppUsed</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates the client app used</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConditionalAccessPolicies</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of the conditional access policies applied to the sign-in event</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConditionalAccessStatus</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Status of the conditional access policies applied to the sign-in. Possible values are 0 (policies applied), 1 (attempt to apply policies failed), or 2 (policies not applied).</td>
+</tr>
+<tr>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier of the sign-in event</td>
+</tr>
+<tr>
+<td style="text-align: left;">Country</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Two-letter code indicating the country/region where the client IP address is geolocated</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Fully qualified domain name (FQDN) of the device</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceTrustType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates the trust type of the device that signed in. For managed device scenarios only. Possible values are Workplace, AzureAd, and ServerAd.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EndpointCall</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Information about the Microsoft Entra ID endpoint that the request was sent to and the type of request sent during sign in.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EntraIdDeviceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the device in Microsoft Entra ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">ErrorCode</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Contains the error code if a sign-in error occurs. To find a description of a specific error code, visithttps://aka.ms/AADsigninsErrorCodes.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IPAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address assigned to the device during communication</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsCompliant</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Indicates whether the device that initiated the sign-in is compliant (1) or non-compliant (0)</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsExternalUser</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Indicates if the user that signed in is external. Possible values: -1 (not set), 0 (not external), 1 (external).</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsGuestUser</td>
+<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">Indicates whether the user that signed in is a guest in the tenant</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsManaged</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Indicates whether the device that initiated the sign-in is a managed device (1) or not a managed device (0)</td>
+</tr>
+<tr>
+<td style="text-align: left;">LastPasswordChangeTimestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the user that signed in last changed their password</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The north to south coordinates of the sign-in location</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogonType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of logon session, specifically interactive, remote interactive (RDP), network, batch, and service</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The east to west coordinates of the sign-in location</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkLocationDetails</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Network location details of the authentication processor of the sign-in event</td>
+</tr>
+<tr>
+<td style="text-align: left;">OSPlatform</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Platform of the operating system running on the device. Indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10, and Windows 7.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReportId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the event</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the request</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceDisplayName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Display name of the resource accessed. The display name can contain any character.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the resource accessed</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceTenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the tenant of the resource accessed</td>
+</tr>
+<tr>
+<td style="text-align: left;">RiskDetails</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Details about the risky state of the user that signed in</td>
+</tr>
+<tr>
+<td style="text-align: left;">RiskLevelAggregated</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Aggregated risk level during sign-in. Possible values: 0 (aggregated risk level not set), 1 (none), 10 (low), 50 (medium), or 100 (high).</td>
+</tr>
+<tr>
+<td style="text-align: left;">RiskState</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Indicates risky user state. Possible values: 0 (none), 1 (confirmed safe), 2 (remediated), 3 (dismissed), 4 (at risk), or 5 (confirmed compromised).</td>
+</tr>
+<tr>
+<td style="text-align: left;">SessionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique number assigned to a user by a website's server for the duration of the visit or session</td>
+</tr>
+<tr>
+<td style="text-align: left;">State</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">State where the sign-in occurred, if available</td>
+</tr>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the record was generated</td>
+</tr>
+<tr>
+<td style="text-align: left;">TokenIssuerType</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Indicates if the token issuer is Microsoft Entra ID (0) or Active Directory Federation Services (1)</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserAgent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User agent information from the web browser or other client application</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

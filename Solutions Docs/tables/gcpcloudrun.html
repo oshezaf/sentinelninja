@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GCPCloudRun &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>GCPCloudRun</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<p>Reference for GCPCloudRun table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">GCP</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpcloudrun">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (91 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpcloudrun">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">GCPResourceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of GCP resource (e.g., 'CloudRunService', 'CloudRunJob').</td>
+</tr>
+<tr>
+<td style="text-align: left;">InsertId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the log entry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">JsonPayloadMessage</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The message field extracted from the jsonPayload.</td>
+</tr>
+<tr>
+<td style="text-align: left;">JsonPayloadRequest</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The request field extracted from the jsonPayload.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Labels</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Generic labels associated with the log entry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the log from which the entry originated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadAuthenticationInfoPrincipalSubject</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The subject identifier of the authenticated principal.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadAuthenticationInfoServiceAccountKeyName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the service account key used for authentication.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadAuthInfoPrincipalEmail</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The email address of the principal (user or service account) that initiated the action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadAuthorizationInfo</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Detailed authorization information for the logged action, represented as a Dynamic (JSON) object.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadMethodName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the API method that was invoked.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestBuildpackBuildBaseImage</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The base image used by the buildpack for the build process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestBuildpackBuildEnableAutomaticUpdates</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates whether automatic updates are enabled for the buildpack build.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestDomainMappingApiVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The API version of the Cloud Run domain mapping in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestDomainMappingKind</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The 'kind' of the Cloud Run domain mapping (e.g., 'DomainMapping').</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestDomainMappingMetadataAnnotations</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Annotations associated with the Cloud Run domain mapping's request metadata.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestDomainMappingMetadataName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the Cloud Run domain mapping within the request metadata.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestDomainMappingMetadataNameSpace</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The namespace of the Cloud Run domain mapping within the request metadata.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestDomainMappingSpec</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The specification details of the Cloud Run domain mapping in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestDomainMappingStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The status of the Cloud Run domain mapping in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestImageUri</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The URI of the container image used for the Cloud Run service.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestJobApiVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The API version of the Cloud Run job in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestJobKind</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The 'kind' of the Cloud Run job (e.g., 'Job').</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestJobMetadataAnnotations</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Annotations associated with the Cloud Run job's request metadata.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestJobMetadataName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the Cloud Run job within the request metadata.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestJobMetadataNameSpace</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The namespace of the Cloud Run job within the request metadata.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestJobSpec</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The specification details of the Cloud Run job in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestLabelSelector</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The label selector used in the request, typically for filtering resources.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadrequestMetadataCallerIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address of the client that made the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadrequestMetadatacallerSuppliedUserAgent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The user agent String provided by the caller.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadrequestMetadataDestinationAttributes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Attributes related to the destination of the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadrequestMetadatarequestAttributesAuth</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Authentication attributes embedded within the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestMetadataRequestAttributesReason</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The reason specified in the request attributes metadata.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadrequestMetadatarequestAttributesTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp associated with the request attributes.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the specific request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestOptionsRequestedPolicyVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The requested policy version within the request options.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestParent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The parent resource of the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The GCP region where the request originated or was processed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestResource</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The resource specified in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestServiceApiVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The API version of the Cloud Run service in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestServiceKind</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The 'kind' of the Cloud Run service (e.g., 'Service').</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestServiceLatestRevision</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the latest revision for the Cloud Run service in the request status.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestServiceMetadataAnnotations</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Annotations associated with the Cloud Run service's request metadata.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestServiceMetadataCreationTimestamp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The timestamp when the Cloud Run service in the request metadata was created.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestServiceMetadataGeneration</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The generation number of the Cloud Run service in the request metadata.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestServiceMetadatalabels</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Labels from the Cloud Run service metadata within the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestServiceMetadataName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the Cloud Run service within the request metadata.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestServiceMetadataNameSpace</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The namespace of the Cloud Run service within the request metadata.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestServiceMetadataResourceVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The resource version of the Cloud Run service in the request metadata.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestServiceMetadataSelfLink</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The self-link URL for the Cloud Run service in the request metadata.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestServiceMetadataUID</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique identifier (UID) of the Cloud Run service in the request metadata.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestServiceObservedGeneration</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The observed generation of the Cloud Run service in the request status.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestServiceReadyRevision</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the ready revision for the Cloud Run service in the request status.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestServiceServiceURL</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The URL of the Cloud Run service in the request status.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestServiceSpec</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The specification details of the Cloud Run service in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestServiceStatusConditions</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Conditions indicating the current state of the Cloud Run service in the request status.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestServiceTraffic</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Traffic distribution settings for the Cloud Run service in the request status.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestStorageSourceGeneration</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The generation of the storage source used in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadRequestType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of request made to the Cloud Run service.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadResourceLocationCurrentLocations</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Current location(s) of the resource involved in the log entry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadResourceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the GCP resource relevant to the log entry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadResponseApiVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The API version of the response from the Cloud Run service.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadResponseKind</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The 'kind' of resource returned in the response (e.g., 'Service').</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadResponseMetadataAnnotations</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Annotations associated with the response metadata, typically key-value pairs.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadResponseMetadataCreationTimestamp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The timestamp when the resource in the response metadata was created.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadResponseMetadataGeneration</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The generation number of the resource in the response metadata.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadResponseMetadataName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the resource within the response metadata.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadResponseMetadataResourceVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The resource version of the resource in the response metadata, indicating its state.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadResponseMetadataSelfLink</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The self-link URL for the resource in the response metadata.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadResponseMetadataUID</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique identifier (UID) of the resource in the response metadata.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadResponseNameSpace</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The namespace of the resource within the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadResponseServiceMetadatalabels</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Labels from the service metadata within the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadResponseSpec</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The specification details of the resource in the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadResponseStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The status of the operation or resource in the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadResponseType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of response received from the Cloud Run service.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadServiceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the GCP service involved in the log entry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PayloadType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of payload contained within the log entry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReceiveTimestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp when the log entry was received by Log Analytics.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsConfigurationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the associated Cloud Run configuration.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsJobName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the associated Cloud Run job.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelslocation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The GCP location of the Cloud Run resource.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsProjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The GCP project ID where the Cloud Run resource resides.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsRevisionName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the associated Cloud Run revision.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceLabelsServiceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the associated Cloud Run service.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Severity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The severity level of the log entry (e.g., INFO, WARNING, ERROR).</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp when the log entry was originally generated in GCP.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/google-cloud-platform-cloud-run.html">Google Cloud Platform Cloud Run</a></li>
+</ul>
+<h2>Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/gcpcloudrunlogs-connectordefinition.html">GCP Cloud Run (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DisruptionAndResponseEvents &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
+    <div class="navbar-nav-links">
+        <a href="https://oshezaf.github.io/sentinelninja/index.html" title="Interactive index">&#128269; Interactive</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1>DisruptionAndResponseEvents</h1>
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<hr />
+<blockquote>
+<p><strong>Defender XDR Only:</strong> This table is available in Microsoft Defender XDR advanced hunting but is not available in the Azure Monitor Log Analytics table reference.</p>
+</blockquote>
+<p><a href="automatic-attack-disruption.html">Automatic attack disruption</a> events in Microsoft Defender XDR</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">XDR</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-disruptionandresponseevents-table">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Schema (37 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/disruptionandresponseevents">Azure Monitor documentation</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ActionType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of disruption action takenTip: For more information, seeActionType values.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationProtocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Authentication protocol that the compromised user used to sign in; possible values: Undefined, NTLM, Kerberos</td>
+</tr>
+<tr>
+<td style="text-align: left;">CompromisedAccountCount</td>
+<td style="text-align: left;">integer</td>
+<td style="text-align: left;">Number of compromised accounts that are part of the policy</td>
+</tr>
+<tr>
+<td style="text-align: left;">DataSources</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Products or services that provided information for the event; for example: Microsoft Defender for Endpoint</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the device that reported the event; the reporting device can be the one that blocked the access, the compromised device itself, or even a different device that is aware of the attack</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the device that reported the event; the reporting device can be the one that blocked the access, the compromised device itself, or even a different device that is aware of the attack</td>
+</tr>
+<tr>
+<td style="text-align: left;">DomainName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Domain name that the device that reported the event is joined to; the reporting device can be the one that blocked the access, the compromised device itself, or even a different device that is aware of the attack</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the file that the attacker attempted to access</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessFileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the process that triggered the block action, based on the perspective of the reporting device</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatingProcessId</td>
+<td style="text-align: left;">integer</td>
+<td style="text-align: left;">Process ID (PID) of the process that triggered that block action, based on the perspective of the reporting device</td>
+</tr>
+<tr>
+<td style="text-align: left;">InterfaceFriendlyName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Friendly name of the interface represented by the interface UUID</td>
+</tr>
+<tr>
+<td style="text-align: left;">InterfaceUuid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier (UUID) for the Remote Procedure Call (RPC) interface that the attacker attempted to access</td>
+</tr>
+<tr>
+<td style="text-align: left;">IpAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address that the attacker attempted to access</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsPolicyOn</td>
+<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">Indicates the current state of the policy on the device at the time of the disruption event; possible values: true (the policy is on, therefore it was applied or enforced), false (the policy was turned off or revoked from the device)</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogonId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Identifier for a logon session; this is unique on the same device only between restarts</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogonType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of logon session the user attempted; possible values: interactive, remote interactive (RDP), network, batch job, service</td>
+</tr>
+<tr>
+<td style="text-align: left;">PolicyHash</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique hash of the policy</td>
+</tr>
+<tr>
+<td style="text-align: left;">PolicyId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the policy</td>
+</tr>
+<tr>
+<td style="text-align: left;">PolicyName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the policy</td>
+</tr>
+<tr>
+<td style="text-align: left;">PolicyVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Version of the policy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Port</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Port that the attacker attempted to access</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReportType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The nature and impact level of the reported event; possible values: Prevented (the action, such as a connection or authentication attempt, was fully blocked before execution), Blocked (an active connection or session was forcibly terminated, with partial impact on the device), PolicyUpdated (the client received and possibly applied a new policy)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Service</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the service the attacker attempted to use, if the attacker signed in using Kerberos or NTLM; for example: SMB, HTTP, cifs, SMB, host, ldap, SMB, krbtgt</td>
+</tr>
+<tr>
+<td style="text-align: left;">SessionId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Unique number assigned to a user by a website's server for the duration of the visit or session</td>
+</tr>
+<tr>
+<td style="text-align: left;">ShareName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the share location that the attacker attempted to access</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceDeviceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the device that the attack originated from</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceDeviceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Host name of the device where the attack originated from</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceDomainName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Domain name of the device where the attack originated from</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceIpAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address where the attacker communication originated from and was blocked by automatic attack disruption</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourcePort</td>
+<td style="text-align: left;">integer</td>
+<td style="text-align: left;">Port where the attacker communication originated from</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceUserDomainName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The domain name of the account conducting the malicious activity</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceUserName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The user name of the account conducting the malicious activity</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceUserSid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The security identifier of the account conducting the malicious activity</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetDeviceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the device that was targeted or attacked</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetDeviceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the device that was targeted or attacked</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetDomainName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Domain name of the device that was targeted or attacked</td>
+</tr>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the event was recorded</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+</div>
+</body>
+</html>
