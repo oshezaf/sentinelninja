@@ -49,12 +49,12 @@ This solution uses **1 table(s)**:
 
 ## Content Items
 
-This solution includes **2 content item(s)**:
+This solution includes **2 content item(s)** (1 in solution, 1 discovered 🔍):
 
-| Content Type | Count |
-|:-------------|:------|
-| Workbooks | 1 |
-| Parsers | 1 |
+| Content Type | Total | In Solution | Discovered |
+|:-------------|------:|------------:|-----------:|
+| Workbooks | 1 | 1 | - |
+| Parsers | 1 | 0 | 1 |
 
 ### Workbooks
 

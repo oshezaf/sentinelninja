@@ -42,7 +42,7 @@ This solution provides **1 data connector(s)** (plus 2 discovered⚠️):
 - [1Password (Serverless)](../connectors/1password-serverless.md) ⚠️
 - [1Password (Serverless)](../connectors/1passwordccpdefinition.md)
 
-*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
 ## Tables Used
 
@@ -50,7 +50,7 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`OnePasswordEventLogs_CL`](../tables/onepasswordeventlogs-cl.md) | [1Password](../connectors/1password.md), [1Password (Serverless)](../connectors/1password-serverless.md), [1Password (Serverless)](../connectors/1passwordccpdefinition.md) | Analytics, Workbooks |
+| [`OnePasswordEventLogs_CL`](../tables/onepasswordeventlogs-cl.md) | [1Password](../connectors/1password.md), [1Password (Serverless)](../connectors/1passwordccpdefinition.md), [1Password (Serverless)](../connectors/1password-serverless.md) | Analytics, Workbooks |
 | [`SigninLogs`](../tables/signinlogs.md) | - | Workbooks |
 
 ## Content Items

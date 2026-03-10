@@ -56,11 +56,11 @@ This solution queries **21 table(s)** from its content items:
 
 ## Content Items
 
-This solution includes **23 content item(s)**:
+This solution includes **23 content item(s)** (0 in solution, 23 discovered 🔍):
 
-| Content Type | Count |
-|:-------------|:------|
-| Playbooks | 23 |
+| Content Type | Total | In Solution | Discovered |
+|:-------------|------:|------------:|-----------:|
+| Playbooks | 23 | 0 | 23 |
 
 ### Playbooks
 

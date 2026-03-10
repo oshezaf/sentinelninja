@@ -28,9 +28,9 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 - [MailGuard 365](../connectors/mailguard365.md) ⚠️ 🔶
 
-*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 ## Tables Used
 
@@ -41,15 +41,15 @@ This solution uses **1 table(s)**:
 | [`MailGuard365_Threats_CL`](../tables/mailguard365-threats-cl.md) 🔶 | [MailGuard 365](../connectors/mailguard365.md) | Hunting, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 ## Content Items
 
-This solution includes **4 content item(s)**:
+This solution includes **4 content item(s)** (0 in solution, 4 discovered 🔍):
 
-| Content Type | Count |
-|:-------------|:------|
-| Hunting Queries | 3 |
-| Workbooks | 1 |
+| Content Type | Total | In Solution | Discovered |
+|:-------------|------:|------------:|-----------:|
+| Hunting Queries | 3 | 0 | 3 |
+| Workbooks | 1 | 0 | 1 |
 
 ### Hunting Queries
 

@@ -51,13 +51,13 @@ This solution uses **3 table(s)**:
 
 ## Content Items
 
-This solution includes **40 content item(s)**:
+This solution includes **40 content item(s)** (39 in solution, 1 discovered 🔍):
 
-| Content Type | Count |
-|:-------------|:------|
-| Hunting Queries | 21 |
-| Analytic Rules | 16 |
-| Workbooks | 3 |
+| Content Type | Total | In Solution | Discovered |
+|:-------------|------:|------------:|-----------:|
+| Hunting Queries | 21 | 21 | - |
+| Analytic Rules | 16 | 15 | 1 |
+| Workbooks | 3 | 3 | - |
 
 ### Analytic Rules
 

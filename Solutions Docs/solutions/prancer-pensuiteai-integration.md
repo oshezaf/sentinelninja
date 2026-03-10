@@ -27,9 +27,9 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 - [Prancer Data Connector](../connectors/prancerlogdata.md) ⚠️ 🔶
 
-*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 ## Tables Used
 
@@ -40,16 +40,16 @@ This solution uses **1 table(s)**:
 | [`prancer_CL`](../tables/prancer-cl.md) 🔶 | [Prancer Data Connector](../connectors/prancerlogdata.md) | Analytics, Hunting, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 ## Content Items
 
-This solution includes **14 content item(s)**:
+This solution includes **14 content item(s)** (0 in solution, 14 discovered 🔍):
 
-| Content Type | Count |
-|:-------------|:------|
-| Analytic Rules | 11 |
-| Hunting Queries | 2 |
-| Workbooks | 1 |
+| Content Type | Total | In Solution | Discovered |
+|:-------------|------:|------------:|-----------:|
+| Analytic Rules | 11 | 0 | 11 |
+| Hunting Queries | 2 | 0 | 2 |
+| Workbooks | 1 | 0 | 1 |
 
 ### Analytic Rules
 

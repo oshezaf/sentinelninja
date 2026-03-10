@@ -40,9 +40,9 @@ This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 - [[DEPRECATED] Snowflake](../connectors/snowflakedataconnector.md) ⚠️ 🔶
 - [Snowflake (via Codeless Connector Framework)](../connectors/snowflakelogsccpdefinition.md)
 
-*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 ## Tables Used
 
@@ -63,7 +63,7 @@ This solution uses **11 table(s)**:
 | [`Snowflake_CL`](../tables/snowflake-cl.md) 🔶 | [[DEPRECATED] Snowflake](../connectors/snowflakedataconnector.md) | Analytics, Hunting, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 ## Content Items
 
 This solution includes **22 content item(s)**:

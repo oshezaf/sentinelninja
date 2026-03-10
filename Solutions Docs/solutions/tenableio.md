@@ -41,7 +41,7 @@ This solution provides **1 data connector(s)**:
 
 - [Tenable.io Vulnerability Management](../connectors/tenableioapi.md) 🔶
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 ## Tables Used
 
@@ -53,15 +53,15 @@ This solution uses **2 table(s)**:
 | [`Tenable_IO_Vuln_CL`](../tables/tenable-io-vuln-cl.md) 🔶 | [Tenable.io Vulnerability Management](../connectors/tenableioapi.md) | Playbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 ## Content Items
 
-This solution includes **5 content item(s)**:
+This solution includes **5 content item(s)** (3 in solution, 2 discovered 🔍):
 
-| Content Type | Count |
-|:-------------|:------|
-| Playbooks | 3 |
-| Parsers | 2 |
+| Content Type | Total | In Solution | Discovered |
+|:-------------|------:|------------:|-----------:|
+| Playbooks | 3 | 3 | - |
+| Parsers | 2 | 0 | 2 |
 
 ### Playbooks
 

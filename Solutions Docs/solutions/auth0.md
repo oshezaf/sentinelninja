@@ -45,7 +45,7 @@ This solution provides **2 data connector(s)**:
 - [Auth0 Access Management](../connectors/auth0.md) 🔶
 - [Auth0 Logs](../connectors/auth0connectorccpdefinition.md)
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 ## Tables Used
 
@@ -57,7 +57,7 @@ This solution uses **2 table(s)**:
 | [`Auth0Logs_CL`](../tables/auth0logs-cl.md) | [Auth0 Logs](../connectors/auth0connectorccpdefinition.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 ## Content Items
 
 This solution includes **2 content item(s)**:

@@ -50,13 +50,13 @@ This solution uses **1 table(s)**:
 
 ## Content Items
 
-This solution includes **6 content item(s)**:
+This solution includes **6 content item(s)** (3 in solution, 3 discovered 🔍):
 
-| Content Type | Count |
-|:-------------|:------|
-| Playbooks | 3 |
-| Workbooks | 2 |
-| Analytic Rules | 1 |
+| Content Type | Total | In Solution | Discovered |
+|:-------------|------:|------------:|-----------:|
+| Playbooks | 3 | 0 | 3 |
+| Workbooks | 2 | 2 | - |
+| Analytic Rules | 1 | 1 | - |
 
 ### Analytic Rules
 

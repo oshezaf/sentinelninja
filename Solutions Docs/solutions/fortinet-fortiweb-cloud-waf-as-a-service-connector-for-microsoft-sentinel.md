@@ -40,7 +40,7 @@ This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 - [[Deprecated] Fortinet FortiWeb Web Application Firewall via Legacy Agent](../connectors/fortinetfortiweb.md) ⚠️
 - [Fortinet FortiWeb Web Application Firewall via AMA](../connectors/fortinetfortiwebama.md)
 
-*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
 ## Tables Used
 

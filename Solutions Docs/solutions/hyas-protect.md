@@ -33,7 +33,7 @@ This solution provides **1 data connector(s)**:
 
 - [HYAS Protect](../connectors/hyasprotect.md) 🔶
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 ## Tables Used
 
@@ -44,7 +44,7 @@ This solution uses **1 table(s)**:
 | [`HYASProtectDnsSecurityLogs_CL`](../tables/hyasprotectdnssecuritylogs-cl.md) 🔶 | [HYAS Protect](../connectors/hyasprotect.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 ## Content Items
 
 This solution includes **1 content item(s)**:

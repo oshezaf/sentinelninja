@@ -54,13 +54,13 @@ This solution queries **10 table(s)** from its content items:
 
 ## Content Items
 
-This solution includes **11 content item(s)**:
+This solution includes **11 content item(s)** (10 in solution, 1 discovered 🔍):
 
-| Content Type | Count |
-|:-------------|:------|
-| Playbooks | 8 |
-| Workbooks | 2 |
-| Analytic Rules | 1 |
+| Content Type | Total | In Solution | Discovered |
+|:-------------|------:|------------:|-----------:|
+| Playbooks | 8 | 8 | - |
+| Workbooks | 2 | 1 | 1 |
+| Analytic Rules | 1 | 1 | - |
 
 ### Analytic Rules
 

@@ -20,11 +20,11 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Content Items
 
-This solution includes **4 content item(s)**:
+This solution includes **4 content item(s)** (0 in solution, 4 discovered 🔍):
 
-| Content Type | Count |
-|:-------------|:------|
-| Playbooks | 4 |
+| Content Type | Total | In Solution | Discovered |
+|:-------------|------:|------------:|-----------:|
+| Playbooks | 4 | 0 | 4 |
 
 ### Playbooks
 

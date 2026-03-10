@@ -45,13 +45,13 @@ This solution uses **1 table(s)**:
 
 ## Content Items
 
-This solution includes **15 content item(s)**:
+This solution includes **15 content item(s)** (14 in solution, 1 discovered 🔍):
 
-| Content Type | Count |
-|:-------------|:------|
-| Analytic Rules | 12 |
-| Workbooks | 2 |
-| Parsers | 1 |
+| Content Type | Total | In Solution | Discovered |
+|:-------------|------:|------------:|-----------:|
+| Analytic Rules | 12 | 12 | - |
+| Workbooks | 2 | 2 | - |
+| Parsers | 1 | 0 | 1 |
 
 ### Analytic Rules
 

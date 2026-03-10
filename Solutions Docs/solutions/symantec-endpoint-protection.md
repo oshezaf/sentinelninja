@@ -56,7 +56,7 @@ Connectors from dependency solutions:
 - [Syslog via Legacy Agent](../connectors/syslog.md) *(dependency on [Syslog](syslog.md))*
 - [Syslog via AMA](../connectors/syslogama.md) *(dependency on [Syslog](syslog.md))*
 
-*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
 ## Tables Used
 

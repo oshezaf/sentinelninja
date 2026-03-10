@@ -33,7 +33,7 @@ This solution provides **1 data connector(s)**:
 
 - [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) 🔶
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 ## Tables Used
 
@@ -49,7 +49,7 @@ This solution uses **6 table(s)**:
 | [`Samsung_Knox_User_CL`](../tables/samsung-knox-user-cl.md) 🔶 | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Analytics, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 ## Content Items
 
 This solution includes **8 content item(s)**:

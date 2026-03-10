@@ -48,7 +48,7 @@ This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 - [Cisco ASA via Legacy Agent](../connectors/ciscoasa.md) ⚠️
 - [Cisco ASA/FTD via AMA](../connectors/ciscoasaama.md)
 
-*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
 ## Tables Used
 

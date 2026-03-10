@@ -50,11 +50,11 @@ This solution uses **2 table(s)**:
 
 ## Content Items
 
-This solution includes **4 content item(s)**:
+This solution includes **4 content item(s)** (2 in solution, 2 discovered 🔍):
 
-| Content Type | Count |
-|:-------------|:------|
-| Analytic Rules | 4 |
+| Content Type | Total | In Solution | Discovered |
+|:-------------|------:|------------:|-----------:|
+| Analytic Rules | 4 | 2 | 2 |
 
 ### Analytic Rules
 

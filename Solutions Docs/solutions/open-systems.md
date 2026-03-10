@@ -27,9 +27,9 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 - [Open Systems Data Connector](../connectors/opensystems.md) ⚠️ 🔶
 
-*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 ## Tables Used
 
@@ -43,14 +43,14 @@ This solution uses **4 table(s)**:
 | [`OpenSystemsZtnaLogs_CL`](../tables/opensystemsztnalogs-cl.md) 🔶 | [Open Systems Data Connector](../connectors/opensystems.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 ## Content Items
 
-This solution includes **5 content item(s)**:
+This solution includes **5 content item(s)** (0 in solution, 5 discovered 🔍):
 
-| Content Type | Count |
-|:-------------|:------|
-| Parsers | 5 |
+| Content Type | Total | In Solution | Discovered |
+|:-------------|------:|------------:|-----------:|
+| Parsers | 5 | 0 | 5 |
 
 ### Parsers
 

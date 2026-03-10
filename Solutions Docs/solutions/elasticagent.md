@@ -52,11 +52,11 @@ This solution uses **1 table(s)**:
 
 ## Content Items
 
-This solution includes **1 content item(s)**:
+This solution includes **1 content item(s)** (0 in solution, 1 discovered 🔍):
 
-| Content Type | Count |
-|:-------------|:------|
-| Parsers | 1 |
+| Content Type | Total | In Solution | Discovered |
+|:-------------|------:|------------:|-----------:|
+| Parsers | 1 | 0 | 1 |
 
 ### Parsers
 

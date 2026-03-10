@@ -50,13 +50,13 @@ This solution uses **2 table(s)**:
 
 ## Content Items
 
-This solution includes **15 content item(s)**:
+This solution includes **15 content item(s)** (13 in solution, 2 discovered 🔍):
 
-| Content Type | Count |
-|:-------------|:------|
-| Analytic Rules | 8 |
-| Workbooks | 6 |
-| Parsers | 1 |
+| Content Type | Total | In Solution | Discovered |
+|:-------------|------:|------------:|-----------:|
+| Analytic Rules | 8 | 8 | - |
+| Workbooks | 6 | 4 | 2 |
+| Parsers | 1 | 1 | - |
 
 ### Analytic Rules
 

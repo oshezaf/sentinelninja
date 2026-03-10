@@ -28,11 +28,11 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Content Items
 
-This solution includes **2 content item(s)**:
+This solution includes **2 content item(s)** (0 in solution, 2 discovered 🔍):
 
-| Content Type | Count |
-|:-------------|:------|
-| Playbooks | 2 |
+| Content Type | Total | In Solution | Discovered |
+|:-------------|------:|------------:|-----------:|
+| Playbooks | 2 | 0 | 2 |
 
 ### Playbooks
 

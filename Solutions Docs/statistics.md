@@ -268,21 +268,21 @@ Tables with schema information, by schema source. A single table may have schema
 
 ### Content Items Summary
 
-| Metric | Total | 📦 Published | 📦 Unpublished | 📄 Standalone | 🔗 GitHub Only |
-|:-------|------:|-------------:|---------------:|--------------:|---------------:|
-| **Content Items** | **6,606** | 4,748 | 148 | 437 | 1,273 |
+| Metric | Total | 📦 In Solution | 📦 Discovered | 📦 Unpublished | 📄 Standalone | 🔗 GitHub Only |
+|:-------|------:|---------------:|--------------:|---------------:|--------------:|---------------:|
+| **Content Items** | **6,606** | 4,538 | 358 | 148 | 437 | 1,273 |
 
 ### Content Items by Type
 
-| Type | Total | 📦 Published | 📦 Unpublished | 📄 Standalone | 🔗 GitHub Only |
-|:-----|------:|-------------:|---------------:|--------------:|---------------:|
-| Analytic Rules | 2,369 | 2,131 | 68 | 158 | 12 |
-| Hunting Queries | 2,292 | 1,165 | 9 | 84 | 1,034 |
-| Playbooks | 820 | 557 | 39 | 188 | 36 |
-| Workbooks | 538 | 333 | 20 | 0 | 185 |
-| Parsers* | 514 | 502 | 12 | 0 | 0 |
-| Watchlists | 48 | 42 | 0 | 0 | 6 |
-| Summary Rules | 25 | 18 | 0 | 7 | 0 |
+| Type | Total | 📦 In Solution | 📦 Discovered | 📦 Unpublished | 📄 Standalone | 🔗 GitHub Only |
+|:-----|------:|---------------:|--------------:|---------------:|--------------:|---------------:|
+| Analytic Rules | 2,369 | 1,931 | 268 | 68 | 158 | 12 |
+| Hunting Queries | 2,292 | 1,160 | 14 | 9 | 84 | 1,034 |
+| Playbooks | 820 | 556 | 40 | 39 | 188 | 36 |
+| Workbooks | 538 | 343 | 10 | 20 | 0 | 185 |
+| Parsers* | 514 | 488 | 26 | 12 | 0 | 0 |
+| Watchlists | 48 | 42 | 0 | 0 | 0 | 6 |
+| Summary Rules | 25 | 18 | 0 | 0 | 7 | 0 |
 
 *\* Parsers from solution content. See [Parsers](parsers/parsers-index.md) section for all parsers including legacy.*
 

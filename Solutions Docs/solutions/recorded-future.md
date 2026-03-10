@@ -176,14 +176,14 @@ The following **3 table(s)** are used internally by this solution's content item
 
 ## Content Items
 
-This solution includes **37 content item(s)**:
+This solution includes **37 content item(s)** (33 in solution, 4 discovered 🔍):
 
-| Content Type | Count |
-|:-------------|:------|
-| Playbooks | 21 |
-| Workbooks | 8 |
-| Analytic Rules | 4 |
-| Hunting Queries | 4 |
+| Content Type | Total | In Solution | Discovered |
+|:-------------|------:|------------:|-----------:|
+| Playbooks | 21 | 21 | - |
+| Workbooks | 8 | 8 | - |
+| Analytic Rules | 4 | 4 | - |
+| Hunting Queries | 4 | 0 | 4 |
 
 ### Analytic Rules
 

@@ -26,7 +26,7 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 - [Palo Alto Networks Cortex XDR](../connectors/paloaltonetworkscortex.md) ⚠️
 
-*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
 ## Tables Used
 
@@ -38,12 +38,12 @@ This solution uses **1 table(s)**:
 
 ## Content Items
 
-This solution includes **2 content item(s)**:
+This solution includes **2 content item(s)** (0 in solution, 2 discovered 🔍):
 
-| Content Type | Count |
-|:-------------|:------|
-| Workbooks | 1 |
-| Playbooks | 1 |
+| Content Type | Total | In Solution | Discovered |
+|:-------------|------:|------------:|-----------:|
+| Workbooks | 1 | 0 | 1 |
+| Playbooks | 1 | 0 | 1 |
 
 ### Workbooks
 

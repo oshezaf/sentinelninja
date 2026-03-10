@@ -45,14 +45,14 @@ This solution uses **1 table(s)**:
 
 ## Content Items
 
-This solution includes **93 content item(s)**:
+This solution includes **93 content item(s)** (92 in solution, 1 discovered 🔍):
 
-| Content Type | Count |
-|:-------------|:------|
-| Parsers | 45 |
-| Analytic Rules | 44 |
-| Playbooks | 3 |
-| Workbooks | 1 |
+| Content Type | Total | In Solution | Discovered |
+|:-------------|------:|------------:|-----------:|
+| Parsers | 45 | 45 | - |
+| Analytic Rules | 44 | 43 | 1 |
+| Playbooks | 3 | 3 | - |
+| Workbooks | 1 | 1 | - |
 
 ### Analytic Rules
 

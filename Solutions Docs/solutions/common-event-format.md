@@ -47,7 +47,7 @@ This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 - [Common Event Format (CEF)](../connectors/cef.md)
 - [Common Event Format (CEF) via AMA](../connectors/cefama.md) ⚠️
 
-*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
 ## Tables Used
 

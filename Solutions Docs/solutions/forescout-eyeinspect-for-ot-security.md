@@ -35,9 +35,9 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 - [Forescout eyeInspect for OT Security](../connectors/forescout-eyeinspect-for-ot-security.md) ⚠️ 🔶
 
-*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 ## Tables Used
 
@@ -49,7 +49,7 @@ This solution uses **2 table(s)**:
 | [`ForescoutOtAsset_CL`](../tables/forescoutotasset-cl.md) 🔶 | [Forescout eyeInspect for OT Security](../connectors/forescout-eyeinspect-for-ot-security.md) | Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 ## Content Items
 
 This solution includes **1 content item(s)**:

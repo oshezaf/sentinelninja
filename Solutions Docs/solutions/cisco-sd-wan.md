@@ -40,7 +40,7 @@ This solution provides **1 data connector(s)**:
 
 - [Cisco Software Defined WAN](../connectors/ciscosdwan.md) 🔶
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 ## Tables Used
 
@@ -52,17 +52,17 @@ This solution uses **2 table(s)**:
 | [`Syslog`](../tables/syslog.md) | [Cisco Software Defined WAN](../connectors/ciscosdwan.md) | Analytics, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 ## Content Items
 
-This solution includes **12 content item(s)**:
+This solution includes **12 content item(s)** (8 in solution, 4 discovered 🔍):
 
-| Content Type | Count |
-|:-------------|:------|
-| Analytic Rules | 4 |
-| Parsers | 4 |
-| Playbooks | 3 |
-| Workbooks | 1 |
+| Content Type | Total | In Solution | Discovered |
+|:-------------|------:|------------:|-----------:|
+| Analytic Rules | 4 | 4 | - |
+| Parsers | 4 | 0 | 4 |
+| Playbooks | 3 | 3 | - |
+| Workbooks | 1 | 1 | - |
 
 ### Analytic Rules
 

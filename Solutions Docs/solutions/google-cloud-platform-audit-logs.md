@@ -39,7 +39,7 @@ This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 - [GCP Pub/Sub Audit Logs](../connectors/gcpauditlogsdefinition.md)
 - [GCP Pub/Sub Audit Logs](../connectors/gcppub-subauditlogs.md) ⚠️
 
-*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
 ## Tables Used
 
@@ -47,7 +47,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | [GCP Pub/Sub Audit Logs](../connectors/gcpauditlogsdefinition.md), [GCP Pub/Sub Audit Logs](../connectors/gcppub-subauditlogs.md) | Analytics, Hunting |
+| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | [GCP Pub/Sub Audit Logs](../connectors/gcppub-subauditlogs.md), [GCP Pub/Sub Audit Logs](../connectors/gcpauditlogsdefinition.md) | Analytics, Hunting |
 
 ## Content Items
 

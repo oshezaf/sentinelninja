@@ -22,11 +22,11 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Content Items
 
-This solution includes **3 content item(s)**:
+This solution includes **3 content item(s)** (0 in solution, 3 discovered 🔍):
 
-| Content Type | Count |
-|:-------------|:------|
-| Playbooks | 3 |
+| Content Type | Total | In Solution | Discovered |
+|:-------------|------:|------------:|-----------:|
+| Playbooks | 3 | 0 | 3 |
 
 ### Playbooks
 

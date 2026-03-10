@@ -51,13 +51,13 @@ The following **2 table(s)** are used internally by this solution's content item
 
 ## Content Items
 
-This solution includes **24 content item(s)**:
+This solution includes **24 content item(s)** (23 in solution, 1 discovered 🔍):
 
-| Content Type | Count |
-|:-------------|:------|
-| Analytic Rules | 15 |
-| Playbooks | 8 |
-| Workbooks | 1 |
+| Content Type | Total | In Solution | Discovered |
+|:-------------|------:|------------:|-----------:|
+| Analytic Rules | 15 | 15 | - |
+| Playbooks | 8 | 7 | 1 |
+| Workbooks | 1 | 1 | - |
 
 ### Analytic Rules
 

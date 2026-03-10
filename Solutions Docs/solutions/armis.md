@@ -37,7 +37,7 @@ This solution provides **2 data connector(s)** (plus 2 discovered⚠️):
 - [Armis Alerts Activities](../connectors/armisalertsactivities.md)
 - [Armis Devices](../connectors/armisdevices.md)
 
-*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
 ## Tables Used
 

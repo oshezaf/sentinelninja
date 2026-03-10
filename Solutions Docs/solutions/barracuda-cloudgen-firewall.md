@@ -52,7 +52,7 @@ Connectors from dependency solutions:
 - [Syslog via Legacy Agent](../connectors/syslog.md) *(dependency on [Syslog](syslog.md))*
 - [Syslog via AMA](../connectors/syslogama.md) *(dependency on [Syslog](syslog.md))*
 
-*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
 ## Tables Used
 
@@ -66,12 +66,12 @@ This solution uses **3 table(s)**:
 
 ## Content Items
 
-This solution includes **2 content item(s)**:
+This solution includes **2 content item(s)** (1 in solution, 1 discovered 🔍):
 
-| Content Type | Count |
-|:-------------|:------|
-| Workbooks | 1 |
-| Parsers | 1 |
+| Content Type | Total | In Solution | Discovered |
+|:-------------|------:|------------:|-----------:|
+| Workbooks | 1 | 0 | 1 |
+| Parsers | 1 | 1 | - |
 
 ### Workbooks
 

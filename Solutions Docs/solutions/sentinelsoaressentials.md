@@ -53,12 +53,12 @@ The following **2 table(s)** are used internally by this solution's content item
 
 ## Content Items
 
-This solution includes **29 content item(s)**:
+This solution includes **29 content item(s)** (28 in solution, 1 discovered 🔍):
 
-| Content Type | Count |
-|:-------------|:------|
-| Playbooks | 25 |
-| Workbooks | 4 |
+| Content Type | Total | In Solution | Discovered |
+|:-------------|------:|------------:|-----------:|
+| Playbooks | 25 | 25 | - |
+| Workbooks | 4 | 3 | 1 |
 
 ### Workbooks
 

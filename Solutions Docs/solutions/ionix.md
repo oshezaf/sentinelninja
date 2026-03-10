@@ -39,7 +39,7 @@ This solution provides **1 data connector(s)**:
 
 - [IONIX Security Logs](../connectors/cyberpionsecuritylogs.md) 🔶
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 ## Tables Used
 
@@ -50,7 +50,7 @@ This solution uses **1 table(s)**:
 | [`CyberpionActionItems_CL`](../tables/cyberpionactionitems-cl.md) 🔶 | [IONIX Security Logs](../connectors/cyberpionsecuritylogs.md) | Analytics, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 ## Content Items
 
 This solution includes **2 content item(s)**:
