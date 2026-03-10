@@ -20,8 +20,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-05-25 |
 | **Solution Folder** | [SymantecProxySG](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SymantecProxySG) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-symantec-proxysg) |
-| **Popularity** | 🟢 High (82%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-symantec-proxysg) · Popularity: 🟢 High (82%) |
 | **Pre-requisites** | [Syslog](syslog.md) |
 
 The [Symantec ProxySG](https://www.broadcom.com/products/cyber-security/network/web-protection#our-swg-solution) solution for Microsoft Sentinel enables you to ingest Symantec ProxySG’s network proxy traffic logs into Microsoft Sentinel.

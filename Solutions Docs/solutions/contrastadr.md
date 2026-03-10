@@ -19,10 +19,9 @@
 | **Version** | 3.0.1 |
 | **Author** | Contrast Security |
 | **First Published** | 2025-01-18 |
-| **Last Updated** | 2025-01-18 |
+| **Last Updated** | 2026-01-22 |
 | **Solution Folder** | [ContrastADR](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContrastADR) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/contrast_security.contrast_adr_azure_sentinel_solution) |
-| **Popularity** | ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/contrast_security.contrast_adr_azure_sentinel_solution) · Popularity: ⚪ Very Low (0%) |
 
 The [Contrast Security](https://www.contrastsecurity.com/contrast-adr) solution for Microsoft Sentinel enables you to ingest [Contrast Security events] generated using the Contrast Webhook ,
 

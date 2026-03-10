@@ -9,13 +9,13 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="wiz">Wiz</h1>
+<h1>Wiz</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Wiz.svg" alt="" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
@@ -56,7 +56,7 @@
 </tbody>
 </table>
 <p>The Wiz connector allows you to easily send Wiz Issues, Vulnerability Findings, and Audit logs to Microsoft Sentinel.</p>
-<h2 id="tables-ingested">Tables Ingested</h2>
+<h2>Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -109,14 +109,14 @@
 <blockquote>
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
-<h2 id="permissions">Permissions</h2>
+<h2>Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): read and write permissions are required.
 - <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
 <p><strong>Custom Permissions:</strong>
 - <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
 - <strong>Wiz Service Account credentials</strong>: Ensure you have your Wiz service account client ID and client secret, API endpoint URL, and auth URL. Instructions can be found on <a href="https://docs.wiz.io/wiz-docs/docs/azure-sentinel-native-integration#collect-authentication-info-from-wiz">Wiz documentation</a>.</p>
-<h2 id="setup-instructions">Setup Instructions</h2>
+<h2>Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 <p><strong>NOTE:</strong> This connector: Uses Azure Functions to connect to Wiz API to pull Wiz Issues, Vulnerability Findings, and Audit Logs into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.
@@ -163,8 +163,8 @@ Creates an Azure Key Vault with all the required parameters stored as secrets.</
 <p>Follow <a href="https://docs.wiz.io/wiz-docs/docs/azure-sentinel-native-integration#manual-deployment">Wiz documentation</a> to deploy the connector manually.</p>
 </blockquote>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 </div>
 
 </body>

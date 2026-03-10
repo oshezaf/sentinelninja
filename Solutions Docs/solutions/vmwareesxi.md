@@ -19,10 +19,9 @@
 | **Version** | 3.0.6 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-12 |
+| **Last Updated** | 2026-01-07 |
 | **Solution Folder** | [VMWareESXi](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMWareESXi) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-vmwareesxi) |
-| **Popularity** | 🟢 High (93%) |
-| **Rating** | ★★★★★ 5.0/5 (1 ratings) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-vmwareesxi) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟢 High (93%) |
 | **Pre-requisites** | [Syslog](syslog.md) |
 
 The VMware ESXi solution for Microsoft Sentinel enables you to ingest VMWare ESXi logs into Microsoft Sentinel.

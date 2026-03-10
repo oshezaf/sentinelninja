@@ -8,26 +8,26 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (8 columns)
+## Schema (9 columns)
 
-**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SentinelOneAlerts_CL.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne%5CData%20Connectors%5CSentinelOne_ccp/table%20-%20Alerts.json)
 
-| Column Name | Type |
-|:------------|:-----|
-| AgentDetectionInfo | string |
-| AlertInfo | string |
-| ContainerInfo | string |
-| KubernetesInfo | string |
-| RuleInfo | string |
-| SourceParentProcessInfo | string |
-| SourceProcessInfo | string |
-| TargetProcessInfo | string |
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| AgentDetectionInfo | string | Detection information related to the agent. |
+| AlertInfo | string | Details about the alert. |
+| ContainerInfo | string | Information about the container. |
+| KubernetesInfo | string | Kubernetes-related information. |
+| RuleInfo | string | Information regarding the applied rule. |
+| SourceParentProcessInfo | string | Information about the parent process of the source. |
+| SourceProcessInfo | string | Information about the source process. |
+| TargetProcessInfo | string | Details regarding the target process. |
+| TimeGenerated | datetime | The timestamp (UTC) reflecting the time in which the event was generated. |
 
 ## Solutions (1)
 

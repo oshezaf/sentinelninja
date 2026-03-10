@@ -9,17 +9,17 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="deprecated-zscaler-private-access">🚫 🔍 [Deprecated] Zscaler Private Access</h1>
+<h1>🚫 🔍 [Deprecated] Zscaler Private Access</h1>
 <blockquote>
 <p>🚫 <strong>Deprecated:</strong> This connector has been deprecated and may be removed in future versions.</p>
 <p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
 </blockquote>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ZscalerLogo.svg" alt="" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
@@ -49,16 +49,12 @@
 <td style="text-align: left;"><strong>Connector Definition Files</strong></td>
 <td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Private%20Access%20%28ZPA%29/Data%20Connectors/Connector_LogAnalytics_agent_Zscaler_ZPA.json">Connector_LogAnalytics_agent_Zscaler_ZPA.json</a></td>
 </tr>
-<tr>
-<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
-<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
-</tr>
 </tbody>
 </table>
 <p>The <a href="https://help.zscaler.com/zpa/what-zscaler-private-access">Zscaler Private Access (ZPA)</a> data connector provides the capability to ingest <a href="https://help.zscaler.com/zpa/log-streaming-service">Zscaler Private Access events</a> into Microsoft Sentinel. Refer to <a href="https://help.zscaler.com/zpa">Zscaler Private Access documentation</a> for more information.</p>
-<h2 id="additional-information">Additional Information</h2>
+<h2>Additional Information</h2>
 <p>🛠️ <strong>Device Configuration:</strong> Table: <code>ZPA_CL</code>. Configure rsyslog ruleset with UDP input. Select JSON as log template. <a href="https://help.zscaler.com/zpa/configuring-log-receiver">Configure ZPA log receiver</a>. See <a href="https://learn.microsoft.com/azure/sentinel/unified-connector-custom-device#zscaler-private-access-zpa">Custom Logs via AMA configuration</a>.</p>
-<h2 id="tables-ingested">Tables Ingested</h2>
+<h2>Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -71,7 +67,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/zpa-cl.html"><code>ZPA_CL</code></a> 🔶</td>
+<td style="text-align: left;"><a href="../tables/zpa-cl.html"><code>ZPA_CL</code></a></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✓</td>
@@ -81,11 +77,11 @@
 <blockquote>
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
-<h2 id="permissions">Permissions</h2>
+<h2>Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): read and write permissions are required.
 - <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
-<h2 id="setup-instructions">Setup Instructions</h2>
+<h2>Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 <p><strong>NOTE:</strong> This data connector depends on a parser based on a Kusto Function to work as expected. <a href="https://aka.ms/sentinel-ZscalerPrivateAccess-parser">Follow these steps</a> to create the Kusto Functions alias, <strong>ZPAEvent</strong></p>
@@ -135,20 +131,20 @@ Zscaler Private Access logs are delivered via Log Streaming Service (LSS). Refer
 </blockquote>
 </li>
 </ol>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler Private Access (ZPA)\Data Connectors\README.md">Zscaler Private Access (ZPA)\Data Connectors\README.md</a></em></p>
 </blockquote>
-<h1 id="zscaler-private-access-zpa">Zscaler Private Access (ZPA)</h1>
+<h1>Zscaler Private Access (ZPA)</h1>
 <p>The <a href="https://help.zscaler.com/zpa/what-zscaler-private-access">Zscaler Private Access (ZPA)</a> data connector provides the capability to ingest <a href="https://help.zscaler.com/zpa/log-streaming-service">Zscaler Private Access events</a> into Microsoft Sentinel. Refer to <a href="https://help.zscaler.com/zpa">Zscaler Private Access documentation</a> for more information.</p>
-<h1 id="requirements">Requirements</h1>
+<h1>Requirements</h1>
 <ol>
 <li>ZPA device log forwarding configuration uses the port "<strong>22033</strong>" by default. Ensure this port is not being used by any other source on your server.</li>
 <li>If you would like to change the default port for ZPA configuartion(<strong>zpa.conf</strong>) make sure that it should not get conflict with default AMA agent ports i.e. (For example CEF uses "<strong>25226</strong>" or "<strong>25224</strong>")</li>
 </ol>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 </div>
 
 </body>

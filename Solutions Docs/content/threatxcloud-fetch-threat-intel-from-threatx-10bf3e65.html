@@ -9,12 +9,12 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="fetch-threat-intel-from-threatx">Fetch Threat Intel from ThreatX</h1>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Back to Content Index</a></p>
+<h1>Fetch Threat Intel from ThreatX</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook provides/updates the threat intel and essential details in comments section of triggered incident so that SOC analysts can directly take corrective measure to stop the attack</p>
 <table>
@@ -39,22 +39,22 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ThreatXCloud/Playbooks/ThreatXPlaybooks/ThreatX-Enrichment/readme.md">ThreatXPlaybooks/ThreatX-Enrichment/readme.md</a></em></p>
 </blockquote>
-<h1 id="threatx-enrichment-info-playbook">ThreatX-enrichment Info Playbook</h1>
+<h1>ThreatX-enrichment Info Playbook</h1>
 <p>## Summary
  When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs below actions
  1. Fetches the list of Ip's from incident entites .
  2. Make the APi call to get the latest threat information/details from cloud console and update the same incidents comments with result.</p>
-<h3 id="prerequisites">Prerequisites</h3>
+<h3>Prerequisites</h3>
 <ol>
 <li>ThreatX-WAFCustomConnector needs to be deployed prior to the deployment of this playbook under the same subscription.</li>
 <li>API key. To get API Key, login into your ThreatX cloud instance dashboard and navigate to Settings --&gt; API Key --&gt; Add API Key.</li>
 <li>[Important Steps] Store the API secret key in Key vault and provide the key name of the stored secret during deployment</li>
 </ol>
-<h3 id="deployment-instructions">Deployment instructions</h3>
+<h3>Deployment instructions</h3>
 <ol>
 <li>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
 </ol>
@@ -69,8 +69,8 @@
 </ul>
 </li>
 </ol>
-<h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
-<h4 id="a-authorize-connections-perform-this-action-if-needed">a. Authorize connections (Perform this action if needed)</h4>
+<h3>Post-Deployment instructions</h3>
+<h4>a. Authorize connections (Perform this action if needed)</h4>
 <p>Once deployment is complete, you will need to authorize each connection.
 1.  Click the Microsoft Sentinel connection resource
 2.  Click edit API connection
@@ -78,12 +78,12 @@
 4.  Sign in
 5.  Click Save
 6.  Repeat steps for ThreatX Api  Connection (For authorizing the ThreatX API connection, API Key needs to be provided)</p>
-<h4 id="b-configurations-in-sentinel">b. Configurations in Sentinel</h4>
+<h4>b. Configurations in Sentinel</h4>
 <ol>
 <li>In Microsoft sentinel analytical rules should be configured to trigger an incident with risky URL or IP Address. </li>
 <li>Configure the automation rules to trigger this playbook , mapping of IP and URL entities is necessary</li>
 </ol>
-<h4 id="c-assign-playbook-microsoft-sentinel-responder-role">c. Assign Playbook Microsoft Sentinel Responder Role</h4>
+<h4>c. Assign Playbook Microsoft Sentinel Responder Role</h4>
 <ol>
 <li>Select the Playbook (Logic App) resource</li>
 <li>Click on Identity Blade</li>
@@ -96,7 +96,7 @@
 <li>Select Role - Microsoft Sentinel Responder</li>
 <li>Click Save (It takes 3-5 minutes to show the added role.)</li>
 </ol>
-<h4 id="d-assign-access-policy-on-key-vault-for-playbook-to-fetch-the-secret-key">D. Assign access policy on key vault for Playbook to fetch the secret key</h4>
+<h4>D. Assign access policy on key vault for Playbook to fetch the secret key</h4>
 <ol>
 <li>Select the Keyvault resource where you have stored the secret</li>
 <li>Click on Access policies Blade</li>
@@ -107,12 +107,12 @@
 <li>Click Review and create</li>
 <li>Click Create</li>
 </ol>
-<h1 id="references">References</h1>
+<h1>References</h1>
 <ul>
 <li><a href="https://support.threatx.com/hc">Threatx support documentation</a></li>
 </ul>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/threatxcloud.html">Back to ThreatXCloud</a></p>
 </div>
 

@@ -18,8 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-16 |
 | **Solution Folder** | [Cloud Service Threat Protection Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloud%20Service%20Threat%20Protection%20Essentials) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-cloudservicedetection) |
-| **Popularity** | ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-cloudservicedetection) · Popularity: ⚪ Very Low (0%) |
 | **Pre-requisites** | [Microsoft 365](microsoft-365.md), [Azure Activity](azure-activity.md), [Azure Key Vault](azure-key-vault.md) |
 
 As cloud services increase in popularity, the volume of attacks against them is also increasing. Broad visibility, context and timely detection of these attacks are important for organization as they move more workloads to the cloud. The **Cloud Service Threat Protection Essentials** contains security content that is relevant for detection of attacks against various cloud services like key vault, storage, compute etc.

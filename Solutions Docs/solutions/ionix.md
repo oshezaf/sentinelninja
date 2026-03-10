@@ -20,8 +20,7 @@
 | **Author** | IONIX |
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [IONIX](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IONIX) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cyberpion1597832716616.cyberpion_mss) |
-| **Popularity** | 🔵 Medium (57%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cyberpion1597832716616.cyberpion_mss) · Popularity: 🔵 Medium (57%) |
 
 The [IONIX](https://ionix.io/) solution for Microsoft Sentinel enables you to ingest vulnerability logs from the IONIX platform into Microsoft Sentinel.
 

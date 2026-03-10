@@ -13,41 +13,41 @@
 
 ## Schema (31 columns)
 
-**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CrowdStrike_User_Events_CL.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection%5CData%20Connectors%5CCrowdStrikeS3FDR_ccp/CrowdStrike_User_Events_CL.json)
 
-| Column Name | Type |
-|:------------|:-----|
-| AdditionalFields | dynamic |
-| aid | string |
-| aip | string |
-| BoundingLimitCount | long |
-| BoundingLimitDuration | string |
-| cid | string |
-| ConfigBuild | string |
-| ConfigStateHash | string |
-| ContextProcessId | string |
-| ContextThreadId | string |
-| ContextTimeStamp | real |
-| CrowdStrikeId | string |
-| DomainSid | string |
-| EffectiveTransmissionClass | string |
-| Entitlements | string |
-| event_platform | string |
-| event_simpleName | string |
-| GroupRid | string |
-| InterfaceGuid | string |
-| InterfaceVersion | string |
-| name | string |
-| OciContainerId | string |
-| RpcClientProcessId | string |
-| RpcClientThreadId | string |
-| RpcNestingLevel | string |
-| RpcOpNum | string |
-| TimeGenerated | datetime |
-| timestamp | long |
-| TreeId | string |
-| UserName | string |
-| UserRid | string |
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| AdditionalFields | dynamic |  |
+| aid | string |  |
+| aip | string |  |
+| BoundingLimitCount | long |  |
+| BoundingLimitDuration | string |  |
+| cid | string |  |
+| ConfigBuild | string |  |
+| ConfigStateHash | string |  |
+| ContextProcessId | string |  |
+| ContextThreadId | string |  |
+| ContextTimeStamp | real |  |
+| CrowdStrikeId | string |  |
+| DomainSid | string |  |
+| EffectiveTransmissionClass | string |  |
+| Entitlements | string |  |
+| event_platform | string |  |
+| event_simpleName | string |  |
+| GroupRid | string |  |
+| InterfaceGuid | string |  |
+| InterfaceVersion | string |  |
+| name | string |  |
+| OciContainerId | string |  |
+| RpcClientProcessId | string |  |
+| RpcClientThreadId | string |  |
+| RpcNestingLevel | string |  |
+| RpcOpNum | string |  |
+| TimeGenerated | datetime | The timestamp (UTC) reflecting the time in which the event was generated. |
+| timestamp | long |  |
+| TreeId | string |  |
+| UserName | string |  |
+| UserRid | string |  |
 
 ## Solutions (1)
 

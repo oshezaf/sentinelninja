@@ -20,8 +20,7 @@
 | **Author** | Julian Wang - julian.wang@forescout.com |
 | **First Published** | 2022-06-28 |
 | **Solution Folder** | [ForescoutHostPropertyMonitor](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ForescoutHostPropertyMonitor) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/forescout.azure-sentinel-solution-forescout) |
-| **Popularity** | ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/forescout.azure-sentinel-solution-forescout) · Popularity: ⚪ Very Low (0%) |
 
 Forescout Host Property Monitor offers host property analysis, incident generation and action dispatching for hosts managed by Forescout Continuum platform.
 
@@ -45,9 +44,9 @@ This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ForescoutComplianceStatus_CL`](../tables/forescoutcompliancestatus-cl.md) 🔶 | [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) | Workbooks |
+| [`ForescoutComplianceStatus_CL`](../tables/forescoutcompliancestatus-cl.md) | [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) | Workbooks |
 | [`ForescoutHostProperties_CL`](../tables/forescouthostproperties-cl.md) 🔶 | [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) | Analytics, Workbooks |
-| [`ForescoutPolicyStatus_CL`](../tables/forescoutpolicystatus-cl.md) 🔶 | [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) | Workbooks |
+| [`ForescoutPolicyStatus_CL`](../tables/forescoutpolicystatus-cl.md) | [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) | Workbooks |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.

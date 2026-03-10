@@ -9,13 +9,13 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="senservapro-preview">SenservaPro (Preview)</h1>
+<h1>SenservaPro (Preview)</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/SenservaPro/Data Connectors/Logo/SenservaPro_logo.svg" alt="" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
@@ -56,7 +56,7 @@
 </tbody>
 </table>
 <p>The SenservaPro data connector provides a viewing experience for your SenservaPro scanning logs. View dashboards of your data, use queries to hunt &amp; explore, and create custom alerts.</p>
-<h2 id="tables-ingested">Tables Ingested</h2>
+<h2>Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -79,11 +79,11 @@
 <blockquote>
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
-<h2 id="permissions">Permissions</h2>
+<h2>Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): read and write permissions are required.
 - <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
-<h2 id="setup-instructions">Setup Instructions</h2>
+<h2>Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
@@ -95,11 +95,11 @@
 - <strong>Primary Key</strong>: <code>PrimaryKey</code>
 <em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
 </blockquote>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SenservaPro\Data Connectors\SenservaPro_Sentinel_Connector.md">SenservaPro\Data Connectors\SenservaPro_Sentinel_Connector.md</a></em></p>
 </blockquote>
-<h1 id="connect-your-senservapro-to-azure-sentinel">Connect your SenservaPro to Azure Sentinel</h1>
+<h1>Connect your SenservaPro to Azure Sentinel</h1>
 <p>The SenservaPro connector allows you to connect SenservaPro Azure Active Directory focused advanced security analytics data with your Azure Sentinel, allowing you view dashboards from Senservaa, create custom alerts, and improve investigation with Hunting queries also provided by Senserva. The Senserva data is multi-tenant enabled. </p>
 <blockquote>
 <p>[!NOTE]
@@ -107,24 +107,24 @@ Data is stored in the geographic location of the workspace on which you are runn
 Senserva analytics data never leaves the tenant in which Senserva is installed.
 Integration between SenservaPro and Azure Sentinel makes use of the Log Analytics Workspace REST API.</p>
 </blockquote>
-<h2 id="configure-and-connect-senservapro">Configure and connect SenservaPro</h2>
+<h2>Configure and connect SenservaPro</h2>
 <p>SenservaPro is fully integrated into Azure and exports logs directly to Azure Sentinel every time a Senserva monitored Azure Active Directory configuration changes, or account status changes due to something like a Risky User warning.
 1. In the Azure Sentinel portal, click Data connectors and select 'SenservaPro' and then Open connector page.</p>
 <ol start="2">
 <li>You will install the data provider to the connector as part of your SenservaPro setup from <a href="https://azuremarketplace.microsoft.com/marketplace/apps/senservallc.senserva">our Azure Marketplace offering.</a></li>
 </ol>
-<h2 id="find-your-data">Find your data</h2>
+<h2>Find your data</h2>
 <p>The data appears in Log Analytics under CustomLogs SenservaPro_CL after a successful connection is established. Senserva data  is continually updated automatically once the connection is established. To use the relevant schema in Log Analytics for the SenservaPro, search for SenservaPro_CL.</p>
-<h2 id="validate-connectivity">Validate connectivity</h2>
+<h2>Validate connectivity</h2>
 <p>It may take up to 20 minutes until your logs start to appear in Log Analytics. </p>
-<h2 id="next-steps">Next steps</h2>
+<h2>Next steps</h2>
 <p>In this document you learned how to connect SenservaPro to Azure Sentinel. To learn more about Azure Sentinel, see the following articles:
 - Learn how to <a href="quickstart-get-visibility.html">get visibility into your data, and potential threats</a>.
 - Get started <a href="tutorial-detect-threats-built-in.html">detecting threats with Azure Sentinel</a>.
 - <a href="tutorial-monitor-your-data.html">Use workbooks</a> to monitor your data.</p>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 </div>
 
 </body>

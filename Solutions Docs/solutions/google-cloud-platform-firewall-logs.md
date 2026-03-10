@@ -18,8 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2024-11-03 |
 | **Solution Folder** | [Google Cloud Platform Firewall Logs](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Firewall%20Logs) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gcpfirewalllogs-api) |
-| **Popularity** | ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gcpfirewalllogs-api) · Popularity: ⚪ Very Low (0%) |
 
 The Google Cloud Platform (GCP) firewall logs, ingested from Sentinel's connector, enables you to capture and track all network activity that occurs in your GCP intances. These firewall logs provide valuable insights for monitoring user activity, troubleshooting issues, and ensuring compliance with security regulations. They serve as a record of events that practitioners can utilize to monitor access and identify potential threats across GCP resources.
 

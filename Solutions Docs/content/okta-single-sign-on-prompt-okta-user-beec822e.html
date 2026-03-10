@@ -9,12 +9,12 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="prompt-okta-user">Prompt Okta user</h1>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Back to Content Index</a></p>
+<h1>Prompt Okta user</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook uses the OKTA connector to prompt the risky user on Teams. User is asked action was taken by them. Based on the user confirmation the SOC admin is notified to investige on the user account. Also, comment is added to the incident with user information and summary of actions taken.</p>
 <table>
@@ -39,11 +39,11 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks/Okta-PromptUser/readme.md">OktaPlaybooks/Okta-PromptUser/readme.md</a></em></p>
 </blockquote>
-<h1 id="okta-prompt-user-playbook">Okta-Prompt User Playbook</h1>
+<h1>Okta-Prompt User Playbook</h1>
 <p>## Summary</p>
 <p>When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs below actions:
 1. An adaptive card is sent to the risky user asking if they have done the malicious activity
@@ -55,12 +55,12 @@
 <img alt="Adaptive Card example" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks%5COkta-PromptUser/images/AdaptivecardtotheEnduser.PNG" /><br><br></p>
 <p><strong>This is the adaptive card SOC will recieve if user confirms they didn't to the malicious activity:</strong><br><br>
 <img alt="Adaptive Card example" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks%5COkta-PromptUser/images/AdaptivecardtoSOCadminon%2520teamschannel.PNG" /><br><br></p>
-<h3 id="prerequisites">Prerequisites</h3>
+<h3>Prerequisites</h3>
 <ol>
 <li>Okta custom connector needs to be deployed prior to the deployment of this playbook under the same subscription.</li>
 <li>Generate an API key.Refer this link <a href="https://developer.okta.com/docs/guides/create-an-api-token/overview/"> how to generate the API Key</a></li>
 </ol>
-<h3 id="deployment-instructions">Deployment instructions</h3>
+<h3>Deployment instructions</h3>
 <ol>
 <li>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deplyoing an ARM Template wizard.</li>
 </ol>
@@ -75,8 +75,8 @@
 </ul>
 </li>
 </ol>
-<h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
-<h4 id="a-authorize-connections">a. Authorize connections</h4>
+<h3>Post-Deployment instructions</h3>
+<h4>a. Authorize connections</h4>
 <p>Once deployment is complete, you will need to authorize each connection.
 1.  Click the Microsoft Sentinel connection resource
 2.  Click edit API connection
@@ -84,29 +84,29 @@
 4.  Sign in
 5.  Click Save
 6.  Repeat steps for other connections such as Teams connection and Okta Api  Connection (For authorizing the Okta API connection, the API Key needs to be provided)</p>
-<h4 id="b-configurations-in-sentinel">b. Configurations in Sentinel</h4>
+<h4>b. Configurations in Sentinel</h4>
 <ol>
 <li>In Microsoft sentinel analytical rules should be configured to trigger an incident with risky user account </li>
 <li>Configure the automation rules to trigger this playbook</li>
 </ol>
-<h2 id="playbook-steps-explained">Playbook steps explained</h2>
-<h3 id="when-microsoft-sentinel-incident-creation-rule-is-triggered">When Microsoft Sentinel incident creation rule is triggered</h3>
+<h2>Playbook steps explained</h2>
+<h3>When Microsoft Sentinel incident creation rule is triggered</h3>
 <p>Microsoft Sentinel incident is created. The playbook receives the incident as the input.</p>
-<h3 id="entities-get-accounts">Entities - Get Accounts</h3>
+<h3>Entities - Get Accounts</h3>
 <p>Get the list of risky/malicious accounts as entities from the Incident</p>
-<h3 id="for-each-risky-account-received-from-the-incident">For each-risky account received from the incident</h3>
+<h3>For each-risky account received from the incident</h3>
 <p>Iterates on the accounts found in this incident (probably one) and performs the following:
 For the risky user account, playbook uses "Get User" action to get user details from Okta</p>
-<h4 id="posts-an-adaptive-card-to-user">Posts an Adaptive card to  user</h4>
+<h4>Posts an Adaptive card to  user</h4>
 <p>In this step we post a message in Microsoft Teams to the risky user with Incident details and ask for his confirmation on the malicious activity described in the incident.</p>
-<h4 id="if-condition-based-on-the-user-confirmation">If Condition based on the user confirmation</h4>
-<h4 id="if-the-user-confirms-it-was-him">If the user confirms it was him:</h4>
+<h4>If Condition based on the user confirmation</h4>
+<h4>If the user confirms it was him:</h4>
 <p>a. Incident is commented with all the  details below
    * User information collected by "Get User" action from Okta
      User id, User name, User login, User email, User status, User created, User activated, User statusChanged, User lastLogin, User lastUpdated, User passwordChanged
    * Actions taken on Sentinel </p>
 <p>b. Close Incident</p>
-<h4 id="if-the-user-confirms-it-was-not-him">If the user confirms it was not him:</h4>
+<h4>If the user confirms it was not him:</h4>
 <p>a. Playbook uses "Clear User Sessions" action to clear the user sessions in Okta</p>
 <p>b. Playbook uses "Reset Password" action to resest the password of the user in Okta</p>
 <p>c. SOC user will be sent an adaptive card with the user details, Incident information to investigate further</p>
@@ -116,7 +116,7 @@ For the risky user account, playbook uses "Get User" action to get user details 
 </ul>
 <p><em>[Content truncated...]</em></p>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/okta-single-sign-on.html">Back to Okta Single Sign-On</a></p>
 </div>
 

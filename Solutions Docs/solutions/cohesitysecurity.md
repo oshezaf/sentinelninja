@@ -20,9 +20,7 @@
 | **Author** | Cohesity - support@cohesity.com |
 | **First Published** | 2022-10-10 |
 | **Solution Folder** | [CohesitySecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CohesitySecurity) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cohesitydev1592001764720.cohesity_sentinel_data_connector) |
-| **Popularity** | 🟡 Low (23%) |
-| **Rating** | ★★★★★ 5.0/5 (1 ratings) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cohesitydev1592001764720.cohesity_sentinel_data_connector) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟡 Low (23%) |
 
 This product integrates Cohesity Helios with Microsoft Sentinel to stay updated with the security events from your Cohesity environment and immediately respond to a ransomware attack or an anomaly
 
@@ -37,9 +35,7 @@ This product integrates Cohesity Helios with Microsoft Sentinel to stay updated 
 
 This solution provides **1 data connector(s)**:
 
-- [Cohesity](../connectors/cohesitydataconnector.md) 🔶
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+- [Cohesity](../connectors/cohesitydataconnector.md)
 
 ## Tables Used
 
@@ -47,10 +43,8 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Cohesity_CL`](../tables/cohesity-cl.md) 🔶 | [Cohesity](../connectors/cohesitydataconnector.md) | - |
+| [`Cohesity_CL`](../tables/cohesity-cl.md) | [Cohesity](../connectors/cohesitydataconnector.md) | - |
 
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 ## Content Items
 
 This solution includes **5 content item(s)**:

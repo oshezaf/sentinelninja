@@ -18,9 +18,7 @@
 | **Author** | Sophos |
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [Sophos Cloud Optix](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20Cloud%20Optix) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sophos.sophos_cloud_optix_mss) |
-| **Popularity** | 🔵 Medium (69%) |
-| **Rating** | ★★★★★ 4.6/5 (21 ratings) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sophos.sophos_cloud_optix_mss) · Rating: ★★★★★ 4.6/5 (21 ratings) · Popularity: 🔵 Medium (69%) |
 
 The [Sophos](https://www.sophos.com) Cloud Optix solution allows you to easily connect your [Sophos Cloud Optix](https://www.sophos.com/en-us/products/cloud-optix) logs with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation. 
 

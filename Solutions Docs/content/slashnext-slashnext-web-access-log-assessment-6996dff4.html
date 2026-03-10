@@ -9,12 +9,12 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="slashnext-web-access-log-assessment">SlashNext Web Access Log Assessment</h1>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Back to Content Index</a></p>
+<h1>SlashNext Web Access Log Assessment</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>Designed to analyze Web Access logs from Web Gateways and Firewalls. Scan your logs for continuous detection of phishing and malicious threat URLs clicked by end users. Identify threats missed by current security layers.The playbook shall extract all the URLs from the logs to perform analysis using SlashNext Connector and create an incident for each unique malicious URL found in the web logs.</p>
 <table>
@@ -39,22 +39,22 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlashNext/Playbooks/SlashNextWebAccessLogAssessment/readme.md">SlashNextWebAccessLogAssessment/readme.md</a></em></p>
 </blockquote>
 <p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlashNext/Playbooks/SlashNextWebAccessLogAssessment/../logo/slashnext-logo.png" alt="drawing" width="50%"/><br></p>
-<h2 id="overview">Overview</h2>
+<h2>Overview</h2>
 <p>Designed to analyze Web Access logs from Web Gateways and Firewalls. 
 Scan your logs for continuous detection of phishing and malicious threat URLs clicked by end users.
 Identify threats missed by current security layers</p>
 <p>The playbook shall extract all the URLs from the logs to perform analysis using SlashNext Connector
 and create an incident for each unique malicious URL found in the web logs.</p>
-<h2 id="slashnext-web-access-log-assessment-playbook">SlashNext Web Access Log Assessment Playbook</h2>
-<h3 id="prerequisites">Prerequisites</h3>
+<h2>SlashNext Web Access Log Assessment Playbook</h2>
+<h3>Prerequisites</h3>
 <p><strong>SlashNext Logic Apps Connector</strong> supports <strong>Basic</strong> authentication, while creating connection you will be asked to provide API key. 
 To acquire SlashNext API key, please contact us at <a href="mailto:support@slashnext.com">support@slashnext.com</a> or visit <a href="www.slashnext.com">SlashNext.com</a></p>
-<h3 id="deployment-instructions">Deployment Instructions</h3>
+<h3>Deployment Instructions</h3>
 <ol>
 <li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
 <li>Fill in the required parameters:<ul>
@@ -64,8 +64,8 @@ To acquire SlashNext API key, please contact us at <a href="mailto:support@slash
 </ol>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSlashNext%2FPlaybooks%2FSlashNextWebAccessLogAssessment%2Fdeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
 <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSlashNext%2FPlaybooks%2FSlashNextWebAccessLogAssessment%2Fdeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
-<h3 id="post-deployment-instructions">Post-Deployment Instructions</h3>
-<h4 id="a-authorize-connections">a. Authorize connections</h4>
+<h3>Post-Deployment Instructions</h3>
+<h4>a. Authorize connections</h4>
 <p>Once deployment is complete, authorize SlashNext Logic Apps Connector connection.</p>
 <ol>
 <li>Click on the SlashNext connection resource</li>
@@ -73,7 +73,7 @@ To acquire SlashNext API key, please contact us at <a href="mailto:support@slash
 <li>Enter API key acquired from SlashNext</li>
 <li>Click <strong>Save</strong></li>
 </ol>
-<h4 id="b-configure-logic-app-permissions">b. Configure Logic App Permissions</h4>
+<h4>b. Configure Logic App Permissions</h4>
 <ol>
 <li>Click on <strong>Identity</strong></li>
 <li>Select <strong>Azure role assignment</strong> from system assigned tab</li>
@@ -85,7 +85,7 @@ To acquire SlashNext API key, please contact us at <a href="mailto:support@slash
 </ol>
 </li>
 </ol>
-<h4 id="c-set-following-variables-in-logic-app-as-per-the-environment">c. Set following Variables in Logic App as per the Environment</h4>
+<h4>c. Set following Variables in Logic App as per the Environment</h4>
 <ol>
 <li>Subscription Id</li>
 <li>Workspace Id</li>
@@ -93,7 +93,7 @@ To acquire SlashNext API key, please contact us at <a href="mailto:support@slash
 <li>Workspace Name</li>
 </ol>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/slashnext.html">Back to SlashNext</a></p>
 </div>
 

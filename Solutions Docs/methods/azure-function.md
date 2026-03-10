@@ -32,7 +32,7 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [1Password](../connectors/1password.md) | 1Password | 1 | [1Password](../solutions/1password.md) |
 | [AbnormalSecurity ](../connectors/abnormalsecurity.md) 🔶 | AbnormalSecurity | 2 | [AbnormalSecurity](../solutions/abnormalsecurity.md) |
 | [Agari Phishing Defense and Brand Protection](../connectors/agari.md) ⚠️ 🔶 | Agari | 3 | [Agari](../solutions/agari.md) |
-| [AliCloud](../connectors/alicloud.md) 🔶 | AliCloud | 1 | [Alibaba Cloud](../solutions/alibaba-cloud.md) |
+| [AliCloud](../connectors/alicloud.md) | AliCloud | 1 | [Alibaba Cloud](../solutions/alibaba-cloud.md) |
 | [Armis Activities](../connectors/armisactivities.md) | Armis | 1 | [Armis](../solutions/armis.md) |
 | [Armis Alerts](../connectors/armisalerts.md) | Armis | 1 | [Armis](../solutions/armis.md) |
 | [Armis Alerts Activities](../connectors/armisalertsactivities.md) | Armis | 2 | [Armis](../solutions/armis.md) |
@@ -40,10 +40,10 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [Armorblox](../connectors/armorblox.md) 🔶 | Armorblox | 1 | [Armorblox](../solutions/armorblox.md) |
 | [Atlassian Jira Audit](../connectors/jiraauditapi.md) 🔶 | Atlassian | 2 | [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
 | [Auth0 Access Management](../connectors/auth0.md) 🔶 | Auth0 | 1 | [Auth0](../solutions/auth0.md) |
-| [BeyondTrust PM Cloud](../connectors/beyondtrustpmcloud.md) 🔶 | BeyondTrust | 2 | [BeyondTrustPMCloud](../solutions/beyondtrustpmcloud.md) |
+| [BeyondTrust PM Cloud](../connectors/beyondtrustpmcloud.md) | BeyondTrust | 2 | [BeyondTrustPMCloud](../solutions/beyondtrustpmcloud.md) |
 | [Bitglass](../connectors/bitglass.md) 🔶 | Bitglass | 1 | [Bitglass](../solutions/bitglass.md) |
 | [Bitsight data connector](../connectors/bitsight.md) | BitSight Technologies, Inc. | 11 | [BitSight](../solutions/bitsight.md) |
-| [Bloodhound Enterprise](../connectors/bloodhoundenterprise.md) 🔶 | SpecterOps | 1 | [BloodHound Enterprise](../solutions/bloodhound-enterprise.md) |
+| [Bloodhound Enterprise](../connectors/bloodhoundenterprise.md) | SpecterOps | 1 | [BloodHound Enterprise](../solutions/bloodhound-enterprise.md) |
 | [Box](../connectors/boxdataconnector.md) 🔶 | Box | 2 | [Box](../solutions/box.md) |
 | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md) 🔶 | Cisco | 12 | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
 | [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) 🔶 | Cisco | 12 | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
@@ -51,15 +51,15 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [Cisco ETD](../connectors/ciscoetd.md) 🔶 | Cisco | 1 | [Cisco ETD](../solutions/cisco-etd.md) |
 | [Cofense Intelligence Threat Indicators Ingestion](../connectors/cofenseintelligence.md) ⚠️ 🔶 | Cofense | 2 | [CofenseIntelligence](../solutions/cofenseintelligence.md) |
 | [Cofense Triage Threat Indicators Ingestion](../connectors/cofensetriage.md) ⚠️ 🔶 | Cofense | 3 | [CofenseTriage](../solutions/cofensetriage.md) |
-| [Cohesity](../connectors/cohesitydataconnector.md) 🔶 | Cohesity | 1 | [CohesitySecurity](../solutions/cohesitysecurity.md) |
+| [Cohesity](../connectors/cohesitydataconnector.md) | Cohesity | 1 | [CohesitySecurity](../solutions/cohesitysecurity.md) |
 | [CommvaultSecurityIQ](../connectors/commvaultsecurityiq-cl.md) 🔶 | Commvault | 1 | [Commvault Security IQ](../solutions/commvault-security-iq.md) |
 | [ContrastADR](../connectors/contrastadr.md) 🔶 | Contrast Security | 2 | [ContrastADR](../solutions/contrastadr.md) |
 | [CrowdStrike Falcon Adversary Intelligence ](../connectors/crowdstrikefalconadversaryintelligence.md) | CrowdStrike | 1 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
-| [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) 🔶 | Crowdstrike | 15 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
+| [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) | Crowdstrike | 15 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | [Cyber Blind Spot Integration](../connectors/cbspollingidazurefunctions.md) 🔶 | CTM360 | 1 | [CTM360](../solutions/ctm360.md) |
 | [CyberArkAudit](../connectors/cyberarkaudit.md) | CyberArk | 1 | [CyberArkAudit](../solutions/cyberarkaudit.md) |
 | [CyberArkEPM](../connectors/cyberarkepm.md) 🔶 | CyberArk | 1 | [CyberArkEPM](../solutions/cyberarkepm.md) |
-| [Cybersixgill Actionable Alerts](../connectors/cybersixgillactionablealerts.md) 🔶 | Cybersixgill | 1 | [Cybersixgill-Actionable-Alerts](../solutions/cybersixgill-actionable-alerts.md) |
+| [Cybersixgill Actionable Alerts](../connectors/cybersixgillactionablealerts.md) | Cybersixgill | 1 | [Cybersixgill-Actionable-Alerts](../solutions/cybersixgill-actionable-alerts.md) |
 | [Cyera DSPM Azure Functions Microsoft Sentinel Data Connector](../connectors/cyerafunctionsconnector.md) ⚠️ | Cyera Inc | 5 | [CyeraDSPM](../solutions/cyeradspm.md) |
 | [Dataminr Pulse Alerts Data Connector](../connectors/dataminrpulsealerts.md) | Dataminr | 1 | [Dataminr Pulse](../solutions/dataminr-pulse.md) |
 | [Digital Shadows Searchlight](../connectors/digitalshadowssearchlightazurefunctions.md) 🔶 | Digital Shadows | 1 | [Digital Shadows](../solutions/digital-shadows.md) |
@@ -131,16 +131,16 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [Trend Vision One](../connectors/trendmicroxdr.md) 🔶 | Trend Micro | 4 | [Trend Micro Vision One](../solutions/trend-micro-vision-one.md) |
 | [Varonis SaaS](../connectors/varonissaas.md) 🔶 | Varonis | 1 | [VaronisSaaS](../solutions/varonissaas.md) |
 | [Vectra XDR](../connectors/vectraxdr.md) | Vectra | 6 | [Vectra XDR](../solutions/vectra-xdr.md) |
-| [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) 🔶 | Veeam | 6 | [Veeam](../solutions/veeam.md) |
+| [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Veeam | 6 | [Veeam](../solutions/veeam.md) |
 | [VirtualMetric Director Proxy](../connectors/virtualmetricdirectorproxy.md) | VirtualMetric | 1 | [VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | [VMRayThreatIntelligence](../connectors/vmray.md) | VMRay | 1 | [VMRay](../solutions/vmray.md) |
 | [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) 🔶 | VMware | 3 | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
 | [VMware SD-WAN and SASE Connector](../connectors/vmwaresdwan.md) ⚠️ | VMware by Broadcom | 4 | [VMware SASE](../solutions/vmware-sase.md) |
 | [WithSecure Elements API (Azure Function)](../connectors/withsecureelementsviafunction.md) | WithSecure | 1 | [WithSecureElementsViaFunction](../solutions/withsecureelementsviafunction.md) |
 | [Wiz](../connectors/wiz.md) 🔶 | Wiz | 6 | [Wiz](../solutions/wiz.md) |
-| [Workplace from Facebook](../connectors/workplacefacebook.md) 🔶 | Facebook | 1 | [Workplace from Facebook](../solutions/workplace-from-facebook.md) |
+| [Workplace from Facebook](../connectors/workplacefacebook.md) | Facebook | 1 | [Workplace from Facebook](../solutions/workplace-from-facebook.md) |
 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) 🔶 | ZeroFox | 20 | [ZeroFox](../solutions/zerofox.md) |
-| [Zoom Reports](../connectors/zoom.md) 🔶 | Zoom | 1 | [ZoomReports](../solutions/zoomreports.md) |
+| [Zoom Reports](../connectors/zoom.md) | Zoom | 1 | [ZoomReports](../solutions/zoomreports.md) |
 
 ### Deprecated Connectors 🚫
 

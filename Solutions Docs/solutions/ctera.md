@@ -19,9 +19,9 @@
 | **Version** | 3.0.1 |
 | **Author** | CTERA Networks - support@ctera.com |
 | **First Published** | 2024-07-28 |
+| **Last Updated** | 2025-12-14 |
 | **Solution Folder** | [CTERA](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CTERA) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cteranetworksltd1651947437632.ctera-microsoft-sentinel) |
-| **Popularity** | ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cteranetworksltd1651947437632.ctera-microsoft-sentinel) · Popularity: ⚪ Very Low (0%) |
 
 The CTERA solution allows you to ingest and analyze events from CTERA Edge Filers and Portal to Microsoft Sentinel. It detects ransomware incidents and potentially attacking users, abnormal user and excessive deletions  .
 

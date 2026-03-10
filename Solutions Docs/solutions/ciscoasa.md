@@ -20,9 +20,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-23 |
 | **Solution Folder** | [CiscoASA](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ciscoasa) |
-| **Popularity** | 🟢 High (89%) |
-| **Rating** | ★★☆☆☆ 1.5/5 (2 ratings) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ciscoasa) · Rating: ★★☆☆☆ 1.5/5 (2 ratings) · Popularity: 🟢 High (89%) |
 
 The [Cisco ASA](https://www.cisco.com/c/en_in/products/security/adaptive-security-appliance-asa-software/index.html) solution for Microsoft Sentinel enables you to ingest [Cisco ASA logs](https://www.cisco.com/c/en/us/td/docs/security/asa/syslog/b_syslog/messages-listed-by-severity-level.html) into Microsoft Sentinel. 
 

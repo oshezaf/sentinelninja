@@ -20,8 +20,7 @@
 | **Author** | Veeam Software - microsoftappsupport@veeam.com |
 | **First Published** | 2025-08-26 |
 | **Solution Folder** | [Veeam](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veeam) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/veeamsoftware.azure-sentinel-solution-veeamapp) |
-| **Popularity** | ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/veeamsoftware.azure-sentinel-solution-veeamapp) · Popularity: ⚪ Very Low (0%) |
 
 Veeam App for Microsoft Sentinel allows Veeam Data Platform Advanced and Premium customers to combine the powerful cyberthreat detection and response features of Microsoft Sentinel with a simple and powerful data platform that goes beyond backup, providing organizations with reliable data protection, seamless recovery, and vital security insights.
 
@@ -53,9 +52,7 @@ g. [Azure Log Analytics](https://learn.microsoft.com/azure/azure-monitor/logs/lo
 
 This solution provides **1 data connector(s)**:
 
-- [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) 🔶
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+- [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md)
 
 ## Tables Used
 
@@ -65,15 +62,13 @@ This solution uses **8 table(s)**:
 |-------|-------------------|----------------|
 | [`Event`](../tables/event.md) | - | Workbooks |
 | [`Syslog`](../tables/syslog.md) | - | Analytics, Workbooks |
-| [`VeeamAuthorizationEvents_CL`](../tables/veeamauthorizationevents-cl.md) 🔶 | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Workbooks |
-| [`VeeamCovewareFindings_CL`](../tables/veeamcovewarefindings-cl.md) 🔶 | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | - |
-| [`VeeamMalwareEvents_CL`](../tables/veeammalwareevents-cl.md) 🔶 | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Analytics, Workbooks |
-| [`VeeamOneTriggeredAlarms_CL`](../tables/veeamonetriggeredalarms-cl.md) 🔶 | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Analytics, Workbooks |
-| [`VeeamSecurityComplianceAnalyzer_CL`](../tables/veeamsecuritycomplianceanalyzer-cl.md) 🔶 | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Analytics, Workbooks |
-| [`VeeamSessions_CL`](../tables/veeamsessions-cl.md) 🔶 | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Analytics |
+| [`VeeamAuthorizationEvents_CL`](../tables/veeamauthorizationevents-cl.md) | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Workbooks |
+| [`VeeamCovewareFindings_CL`](../tables/veeamcovewarefindings-cl.md) | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | - |
+| [`VeeamMalwareEvents_CL`](../tables/veeammalwareevents-cl.md) | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Analytics, Workbooks |
+| [`VeeamOneTriggeredAlarms_CL`](../tables/veeamonetriggeredalarms-cl.md) | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Analytics, Workbooks |
+| [`VeeamSecurityComplianceAnalyzer_CL`](../tables/veeamsecuritycomplianceanalyzer-cl.md) | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Analytics, Workbooks |
+| [`VeeamSessions_CL`](../tables/veeamsessions-cl.md) | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Analytics |
 
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 ## Content Items
 
 This solution includes **164 content item(s)**:

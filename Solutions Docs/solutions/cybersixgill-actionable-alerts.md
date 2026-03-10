@@ -21,8 +21,7 @@
 | **First Published** | 2023-02-27 |
 | **Last Updated** | 2024-09-24 |
 | **Solution Folder** | [Cybersixgill-Actionable-Alerts](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cybersixgill-Actionable-Alerts) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cybersixgill1657701397011.azure-sentinel-cybersixgill-actionable-alerts) |
-| **Popularity** | ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cybersixgill1657701397011.azure-sentinel-cybersixgill-actionable-alerts) · Popularity: ⚪ Very Low (0%) |
 
 Cybersixgill Actionable Alerts provides a premium automated customized threat intelligence feed from the deep and dark web. Monitor activity in the underground regarding your key assets (Names, IP Address, Domains, CVEs, Third party suppliers ) relevant to their brand, industry, and geolocation and receive real time alert notifications on incoming threats on your organization including: Contextual data, assessments and recommendations
 
@@ -36,9 +35,7 @@ Cybersixgill Actionable Alerts provides a premium automated customized threat i
 
 This solution provides **1 data connector(s)**:
 
-- [Cybersixgill Actionable Alerts](../connectors/cybersixgillactionablealerts.md) 🔶
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+- [Cybersixgill Actionable Alerts](../connectors/cybersixgillactionablealerts.md)
 
 ## Tables Used
 
@@ -46,10 +43,8 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CyberSixgill_Alerts_CL`](../tables/cybersixgill-alerts-cl.md) 🔶 | [Cybersixgill Actionable Alerts](../connectors/cybersixgillactionablealerts.md) | Hunting, Workbooks |
+| [`CyberSixgill_Alerts_CL`](../tables/cybersixgill-alerts-cl.md) | [Cybersixgill Actionable Alerts](../connectors/cybersixgillactionablealerts.md) | Hunting, Workbooks |
 
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 ## Content Items
 
 This solution includes **5 content item(s)**:

@@ -8,64 +8,64 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (46 columns)
+## Schema (47 columns)
 
-**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SentinelOneThreats_CL.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne%5CData%20Connectors%5CSentinelOne_ccp/table%20-%20Threats.json)
 
-| Column Name | Type |
-|:------------|:-----|
-| AccountId | string |
-| AccountName | string |
-| AgentComputerName | string |
-| AgentDetectionInfo | dynamic |
-| AgentDomain | string |
-| AgentId | string |
-| AgentInfected | bool |
-| AgentIp | string |
-| AgentIsActive | bool |
-| AgentIsDecommissioned | bool |
-| AgentMachineType | string |
-| AgentNetworkStatus | string |
-| AgentOsType | string |
-| AgentRealtimeInfo | dynamic |
-| AgentVersion | string |
-| AutomaticallyResolved | bool |
-| CertId | string |
-| Classification | string |
-| ClassificationSource | string |
-| CloudVerdict | string |
-| CollectionId | string |
-| CreatedAt | datetime |
-| Engines | string |
-| FileContentHash | string |
-| FileDisplayName | string |
-| FileExtensionType | string |
-| FilePath | string |
-| FileSha256 | string |
-| FileVerificationType | string |
-| Id | string |
-| Indicators | string |
-| InitiatedBy | string |
-| InitiatedByDescription | string |
-| InitiatingUserId | string |
-| IsCertValid | bool |
-| MitigationMode | string |
-| MitigationReport | string |
-| MitigationStatus | string |
-| ProcessArguments | string |
-| SiteId | string |
-| SiteName | string |
-| ThreatInfo | dynamic |
-| ThreatName | string |
-| UpdatedAt | datetime |
-| Username | string |
-| WhiteningOptions | string |
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| AccountId | string | The unique identifier for the account. |
+| AccountName | string | The name of the account associated with the event. |
+| AgentComputerName | string | The computer name of the agent. |
+| AgentDetectionInfo | dynamic | The information of the agent in detection. |
+| AgentDomain | string | The domain of the agent. |
+| AgentId | string | The unique identifier for the agent. |
+| AgentInfected | bool | Indicates whether the agent is infected. |
+| AgentIp | string | The IP address of the agent. |
+| AgentIsActive | bool | Indicates whether the agent is active. |
+| AgentIsDecommissioned | bool | Indicates whether the agent is decommissioned. |
+| AgentMachineType | string | The machine type of the agent. |
+| AgentNetworkStatus | string | The network status of the agent. |
+| AgentOsType | string | The operating system type of the agent. |
+| AgentRealtimeInfo | dynamic | The information of the agent in realtime. |
+| AgentVersion | string | The version of the agent. |
+| AutomaticallyResolved | bool | Indicates whether the issue was automatically resolved. |
+| CertId | string | The certificate ID. |
+| Classification | string | The classification of the event. |
+| ClassificationSource | string | The source of the classification. |
+| CloudVerdict | string | The cloud verdict for the file. |
+| CollectionId | string | The unique identifier for the collection. |
+| CreatedAt | datetime | The timestamp (UTC) when the record was created. |
+| Engines | string | Details of the engines used. |
+| FileContentHash | string | The hash of the file content. |
+| FileDisplayName | string | The display name of the file. |
+| FileExtensionType | string | The type of file extension. |
+| FilePath | string | The path of the file. |
+| FileSha256 | string | The SHA-256 hash of the file. |
+| FileVerificationType | string | The type of file verification. |
+| Id | string | The unique identifier for the record. |
+| Indicators | string | Details of the indicators. |
+| InitiatedBy | string | Indicates by whom or what the action was initiated. |
+| InitiatedByDescription | string | Description of the initiated by field. |
+| InitiatingUserId | string | The unique identifier for the initiating user. |
+| IsCertValid | bool | Indicates whether the certificate is valid. |
+| MitigationMode | string | The mode of mitigation applied. |
+| MitigationReport | string | Report of the actions taken by the Agent. |
+| MitigationStatus | string | The status of mitigation. |
+| ProcessArguments | string | The unique identifier for the malicious group. |
+| SiteId | string | The unique identifier for the site. |
+| SiteName | string | The name of the site. |
+| ThreatInfo | dynamic | The information about the threat. |
+| ThreatName | string | Details about the threat name. |
+| TimeGenerated | datetime | The timestamp (UTC) reflecting the time in which the event was generated. |
+| UpdatedAt | datetime | The timestamp (UTC) when the record was last updated. |
+| Username | string | The username associated with the event. |
+| WhiteningOptions | string | Details of the whitening options. |
 
 ## Solutions (1)
 

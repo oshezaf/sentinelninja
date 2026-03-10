@@ -13,74 +13,74 @@
 
 ## Schema (64 columns)
 
-**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CrowdStrike_Network_Events_CL.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection%5CData%20Connectors%5CCrowdStrikeS3FDR_ccp/CrowdStrike_Network_Events_CL.json)
 
-| Column Name | Type |
-|:------------|:-----|
-| AdditionalFields | dynamic |
-| aid | string |
-| aip | string |
-| BoundingLimitCount | long |
-| BoundingLimitDuration | string |
-| cid | string |
-| CommandLine | string |
-| ConfigBuild | string |
-| ConfigStateHash | string |
-| ConnectionDirection | string |
-| ConnectionFlags | string |
-| ContextProcessId | string |
-| ContextThreadId | string |
-| ContextTimeStamp | real |
-| CrowdStrikeId | string |
-| EffectiveTransmissionClass | string |
-| Entitlements | string |
-| event_platform | string |
-| event_simpleName | string |
-| EventOrigin | string |
-| FirewallAction | string |
-| HbfwRuleFlags | string |
-| HbfwRuleId | string |
-| IcmpCode | string |
-| IcmpType | string |
-| ImageFileName | string |
-| InContext | string |
-| InterfaceAlias | string |
-| InterfaceIndex | long |
-| IsUnique | string |
-| LocalAddressIP4 | string |
-| LocalAddressIP6 | string |
-| LocalAddressMaskIP4 | string |
-| LocalAddressMaskIP6 | string |
-| LocalPort | long |
-| LocalPortRangeOperation | string |
-| LocalPortRangeStart | string |
-| name | string |
-| NegateInterface | string |
-| NegateLocalAddress | string |
-| NegateRemoteAddress | string |
-| NeighborList | string |
-| NetLuidIndex | long |
-| NetworkProfile | string |
-| OciContainerId | string |
-| PhysicalAddress | string |
-| PolicyIdentifier | string |
-| Protocol | string |
-| RemoteAddressIP4 | string |
-| RemoteAddressIP6 | string |
-| RemoteAddressMaskIP4 | string |
-| RemoteAddressMaskIP6 | string |
-| RemoteAddressString | string |
-| RemotePort | long |
-| RemotePortRangeOperation | string |
-| RemotePortRangeStart | string |
-| RuleAction | string |
-| RuleMatchCount | long |
-| RuleMatchCountSinceLastReport | long |
-| TcpConnectErrorCode | string |
-| TimeGenerated | datetime |
-| timestamp | long |
-| TreeId | string |
-| UserName | string |
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| AdditionalFields | dynamic |  |
+| aid | string |  |
+| aip | string |  |
+| BoundingLimitCount | long |  |
+| BoundingLimitDuration | string |  |
+| cid | string |  |
+| CommandLine | string |  |
+| ConfigBuild | string |  |
+| ConfigStateHash | string |  |
+| ConnectionDirection | string |  |
+| ConnectionFlags | string |  |
+| ContextProcessId | string |  |
+| ContextThreadId | string |  |
+| ContextTimeStamp | real |  |
+| CrowdStrikeId | string |  |
+| EffectiveTransmissionClass | string |  |
+| Entitlements | string |  |
+| event_platform | string |  |
+| event_simpleName | string |  |
+| EventOrigin | string |  |
+| FirewallAction | string |  |
+| HbfwRuleFlags | string |  |
+| HbfwRuleId | string |  |
+| IcmpCode | string |  |
+| IcmpType | string |  |
+| ImageFileName | string |  |
+| InContext | string |  |
+| InterfaceAlias | string |  |
+| InterfaceIndex | long |  |
+| IsUnique | string |  |
+| LocalAddressIP4 | string |  |
+| LocalAddressIP6 | string |  |
+| LocalAddressMaskIP4 | string |  |
+| LocalAddressMaskIP6 | string |  |
+| LocalPort | long |  |
+| LocalPortRangeOperation | string |  |
+| LocalPortRangeStart | string |  |
+| name | string |  |
+| NegateInterface | string |  |
+| NegateLocalAddress | string |  |
+| NegateRemoteAddress | string |  |
+| NeighborList | string |  |
+| NetLuidIndex | long |  |
+| NetworkProfile | string |  |
+| OciContainerId | string |  |
+| PhysicalAddress | string |  |
+| PolicyIdentifier | string |  |
+| Protocol | string |  |
+| RemoteAddressIP4 | string |  |
+| RemoteAddressIP6 | string |  |
+| RemoteAddressMaskIP4 | string |  |
+| RemoteAddressMaskIP6 | string |  |
+| RemoteAddressString | string |  |
+| RemotePort | long |  |
+| RemotePortRangeOperation | string |  |
+| RemotePortRangeStart | string |  |
+| RuleAction | string |  |
+| RuleMatchCount | long |  |
+| RuleMatchCountSinceLastReport | long |  |
+| TcpConnectErrorCode | string |  |
+| TimeGenerated | datetime | The timestamp (UTC) reflecting the time in which the event was generated. |
+| timestamp | long |  |
+| TreeId | string |  |
+| UserName | string |  |
 
 ## Solutions (1)
 

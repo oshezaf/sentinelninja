@@ -20,8 +20,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-04-20 |
 | **Solution Folder** | [Microsoft Defender For Identity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20For%20Identity) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-mdefenderforidentity) |
-| **Popularity** | 🟢 High (92%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-mdefenderforidentity) · Popularity: 🟢 High (92%) |
 
 The [Microsoft Defender for Identity](https://docs.microsoft.com/defender-for-identity/what-is) solution for Microsoft Sentinel allows you to ingest [security alerts](https://docs.microsoft.com/defender-for-identity/suspicious-activity-guide) reported in the Microsoft Defender for Identity platform to get better insights into the identity posture of your organization’s Active Directory environment.
 

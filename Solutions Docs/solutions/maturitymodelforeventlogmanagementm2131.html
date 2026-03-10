@@ -9,14 +9,14 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="maturity-model-for-event-log-management-m2131"><img src="../images/asim-badge.png" alt="ASIM" height="32"> Maturity Model For Event Log Management M2131</h1>
+<h1><img src="../images/asim-badge.png" alt="ASIM" height="32"> Maturity Model For Event Log Management M2131</h1>
 <p><em>Solution: MaturityModelForEventLogManagementM2131</em></p>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="MaturityModelForEventLogManagementM2131 Logo" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
 <table>
 <thead>
@@ -60,16 +60,12 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Marketplace</strong></td>
-<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-maturitymodelforeventlogma">Azure Marketplace</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Popularity</strong></td>
-<td style="text-align: left;">🟡 Low (28%)</td>
+<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-maturitymodelforeventlogma">Azure Marketplace</a> · Popularity: 🟡 Low (28%)</td>
 </tr>
 </tbody>
 </table>
 <p>This solution is designed to enable Cloud Architects, Security Engineers, and Governance Risk Compliance Professionals to increase visibility before, during, and after a cybersecurity incident. The solution includes (1) workbook, (4) hunting queries, (8) analytics rules, and (3) playbooks providing a comprehensive approach to design, build, monitoring, and response in logging architectures. Information from logs on information systems1 (for both on-premises systems and connections hosted by third parties, such as cloud services providers (CSPs) is invaluable in the detection, investigation, and remediation of cyber threats. Executive Order 14028, Improving the Nation's Cybersecurity, directs decisive action to improve the Federal Government’s investigative and remediation capabilities. This memorandum was developed in accordance with and addresses the requirements in section 8 of the Executive Order for logging, log retention, and log management, with a focus on ensuring centralized access and visibility for the highest-level enterprise security operations center (SOC) of each agency. In addition, this memorandum establishes requirements for agencies3 to increase the sharing of such information, as needed and appropriate, to accelerate incident response efforts and to enable more effective defense of Federal information and executive branch departments and agencies. For more information, see (💡<a href="https://www.whitehouse.gov/wp-content/uploads/2021/08/M-21-31-Improving-the-Federal-Governments-Investigative-and-Remediation-Capabilities-Related-to-Cybersecurity-Incidents.pdf">Improving the Federal Government’s Investigative and Remediation Capabilities Related to Cybersecurity Incidents (M-21-31)</a>).</p>
-<h2 id="contents">Contents</h2>
+<h2>Contents</h2>
 <ul>
 <li><a href="#asim-pre-requisites">ASIM Pre-requisites</a></li>
 <li><a href="#data-connectors">Data Connectors</a></li>
@@ -77,9 +73,9 @@
 <li><a href="#content-items">Content Items</a></li>
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
-<h2 id="asim-pre-requisites"><a id="asim-pre-requisites"></a><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Pre-requisites</h2>
+<h2><a id="asim-pre-requisites"></a><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Pre-requisites</h2>
 <p>This solution uses the <a href="../asim/imdns.html"><code>_Im_Dns</code></a> and <a href="../asim/imnetworksession.html"><code>_Im_NetworkSession</code></a> <a href="https://learn.microsoft.com/azure/sentinel/normalization">ASIM (Advanced Security Information Model)</a> parsers to provide normalized, source-agnostic data access, expanding detection coverage without modifying queries.</p>
-<h3 id="supported-products">Supported Products</h3>
+<h3>Supported Products</h3>
 <table>
 <thead>
 <tr>
@@ -242,7 +238,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="data-connectors">Data Connectors</h2>
+<h2>Data Connectors</h2>
 <p><strong>This solution does not include its own data connectors</strong> but uses connectors from dependency solutions:</p>
 <ul>
 <li><a href="../connectors/aivectrastream.html">AI Vectra Stream via Legacy Agent</a> <em>(dependency on <a href="vectra-ai-stream.html">Vectra AI Stream</a>)</em></li>
@@ -293,7 +289,7 @@
 <li><a href="../connectors/windowssecurityevents.html">Windows Security Events via AMA</a> <em>(dependency on <a href="windows-security-events.html">Windows Security Events</a>)</em></li>
 <li><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a> <em>(dependency on <a href="vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a>)</em></li>
 </ul>
-<h2 id="tables-used">Tables Used</h2>
+<h2>Tables Used</h2>
 <p>This solution queries <strong>45 table(s)</strong> from its content items:</p>
 <table>
 <thead>
@@ -485,7 +481,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="internal-tables">Internal Tables</h3>
+<h3>Internal Tables</h3>
 <p>The following <strong>5 table(s)</strong> are used internally by this solution's content items:</p>
 <table>
 <thead>
@@ -517,7 +513,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="content-items">Content Items</h2>
+<h2>Content Items</h2>
 <p>This solution includes <strong>16 content item(s)</strong>:</p>
 <table>
 <thead>
@@ -545,7 +541,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="analytic-rules">Analytic Rules</h3>
+<h3>Analytic Rules</h3>
 <table>
 <thead>
 <tr>
@@ -606,7 +602,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries">Hunting Queries</h3>
+<h3>Hunting Queries</h3>
 <table>
 <thead>
 <tr>
@@ -638,7 +634,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks</h3>
+<h3>Workbooks</h3>
 <table>
 <thead>
 <tr>
@@ -653,7 +649,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="playbooks">Playbooks</h3>
+<h3>Playbooks</h3>
 <table>
 <thead>
 <tr>
@@ -680,22 +676,22 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MaturityModelForEventLogManagementM2131/README.md">MaturityModelForEventLogManagementM2131/README.md</a></em></p>
 </blockquote>
-<h1 id="overview">Overview</h1>
+<h1>Overview</h1>
 <hr />
-<h2 id="microsoft-sentinel-maturity-model-for-event-log-management-m-21-31-solution">Microsoft Sentinel: Maturity Model for Event Log Management (M-21-31) Solution</h2>
+<h2>Microsoft Sentinel: Maturity Model for Event Log Management (M-21-31) Solution</h2>
 <p>This solution is designed to enable Cloud Architects, Security Engineers, and Governance Risk Compliance Professionals to increase visibility before, during, and after a cybersecurity incident. The solution includes (1) workbook, (4) hunting queries, (8) analytics rules, and (3) playbooks providing a comprehensive approach to design, build, monitoring, and response in logging architectures. Information from logs on information systems1 (for both on-premises systems and connections hosted by third parties, such as cloud services providers (CSPs) is invaluable in the detection, investigation, and remediation of cyber threats. "Executive Order 14028, Improving the Nation's Cybersecurity, directs decisive action to improve the Federal Government’s investigative and remediation capabilities. This memorandum was developed in accordance with and addresses the requirements in section 8 of the Executive Order for logging, log retention, and log management, with a focus on ensuring centralized access and visibility for the highest-level enterprise security operations center (SOC) of each agency. In addition, this memorandum establishes requirements for agencies3 to increase the sharing of such information, as needed and appropriate, to accelerate incident response efforts and to enable more effective defense of Federal information and executive branch departments and agencies." For more information, see 💡<a href="https://www.whitehouse.gov/wp-content/uploads/2021/08/M-21-31-Improving-the-Federal-Governments-Investigative-and-Remediation-Capabilities-Related-to-Cybersecurity-Incidents.pdf">Improving the Federal Government’s Investigative and Remediation Capabilities Related to Cybersecurity Incidents (M-21-31)</a>.</p>
-<h2 id="try-on-portal">Try on Portal</h2>
+<h2>Try on Portal</h2>
 <p>You can deploy the solution by clicking on the buttons below:</p>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FMaturityModelForEventLogManagementM2131%2FPackage%2FmainTemplate.json" target="_blank"><img src="https://aka.ms/deploytoazurebutton"/></a>
 <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FMaturityModelForEventLogManagementM2131%2FPackage%2FmainTemplate.json" target="_blank"><img src="https://aka.ms/deploytoazuregovbutton"/></a></p>
 <p><img alt="Workbook Overview" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MaturityModelForEventLogManagementM2131/Workbooks/Images/MaturityModelForEventLogManagement_M2131Black.png?raw=true" /></p>
-<h2 id="getting-started">Getting Started</h2>
+<h2>Getting Started</h2>
 <p><em>[Content truncated...]</em></p>
-<h2 id="release-notes">Release Notes</h2>
+<h2>Release Notes</h2>
 <table>
 <thead>
 <tr>
@@ -728,8 +724,8 @@
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 </div>
 
 </body>

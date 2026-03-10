@@ -5,16 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Syslog &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
-
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="syslog">Syslog</h1>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Back to Tables Index</a></p>
+<h1>Syslog</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <p>Reference for Syslog table in Azure Monitor Logs.</p>
 <table>
@@ -63,9 +65,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="schema-17-columns">Schema (17 columns)</h2>
+<h2>Schema (17 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/syslog">Azure Monitor documentation</a></p>
-<table>
+<table id="schema-table">
 <thead>
 <tr>
 <th style="text-align: left;">Column Name</th>
@@ -161,7 +163,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="solutions-55">Solutions (55)</h2>
+<h2>Solutions (55)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a></li>
@@ -220,7 +222,7 @@
 <li><a href="../solutions/watchguard-firebox.html">Watchguard Firebox</a></li>
 <li><a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a></li>
 </ul>
-<h2 id="connectors-38">Connectors (38)</h2>
+<h2>Connectors (38)</h2>
 <p>This table is ingested by the following connectors:</p>
 <table>
 <thead>
@@ -385,8 +387,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table-357">Content Items Using This Table (357)</h2>
-<h3 id="analytic-rules-237">Analytic Rules (237)</h3>
+<h2>Content Items Using This Table (357)</h2>
+<h3>Analytic Rules (237)</h3>
 <p><strong>In solution <a href="../solutions/ctera.html">CTERA</a>:</strong></p>
 <table>
 <thead>
@@ -1398,7 +1400,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries-82">Hunting Queries (82)</h3>
+<h3>Hunting Queries (82)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
 <table>
 <thead>
@@ -1787,7 +1789,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks-38">Workbooks (38)</h3>
+<h3>Workbooks (38)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong> <code>Facility == "user"</code><br><code>SyslogMessage has "AUOMS_EXECVE"</code><br><code>SyslogMessage has "jndi"</code><br><code>SyslogMessage has_any "corba,dns,iiop,ldap,nds,nis,rmi"</code></p>
 <table>
 <thead>
@@ -1992,7 +1994,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a>:</strong> <code>SyslogMessage has "DHCPREQUEST"</code></p>
+<p><strong>In solution <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a>:</strong> <code>SyslogMessage !has "response:"</code><br><code>SyslogMessage has_all "client"</code></p>
 <table>
 <thead>
 <tr>
@@ -2253,7 +2255,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/veeam-veeamsecurityactivities-f559a349.html">VeeamSecurityActivities</a></td>
-<td style="text-align: left;"><code>SyslogMessage has "instanceId"</code><br><code>SyslogMessage has "predefined_alarm_id"</code><br><code>SyslogMessage has "instanceId"</code></td>
+<td style="text-align: left;"><code>SyslogMessage has "instanceId"</code><br><code>SyslogMessage has "predefined_alarm_id"</code><br><code>SyslogMessage has "predefined_alarm_id"</code></td>
 </tr>
 </tbody>
 </table>
@@ -2272,8 +2274,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="parsers-using-this-table-94">Parsers Using This Table (94)</h2>
-<h3 id="asim-parsers-19">ASIM Parsers (19)</h3>
+<h2>Parsers Using This Table (94)</h2>
+<h3>ASIM Parsers (19)</h3>
 <table>
 <thead>
 <tr>
@@ -2400,7 +2402,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="other-parsers-75">Other Parsers (75)</h3>
+<h3>Other Parsers (75)</h3>
 <table>
 <thead>
 <tr>
@@ -2790,7 +2792,7 @@
 <blockquote>
 <p>⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.</p>
 </blockquote>
-<h2 id="resource-types">Resource Types</h2>
+<h2>Resource Types</h2>
 <p>This table collects data from the following Azure resource types:</p>
 <ul>
 <li><code>microsoft.operationalinsights/workspaces</code></li>
@@ -2803,7 +2805,7 @@
 <li><code>microsoft.compute/virtualmachinescalesets</code></li>
 <li><code>microsoft.hybridcontainerservice/provisionedclusters</code></li>
 </ul>
-<h2 id="selection-criteria-summary-88-criteria-411-total-references">Selection Criteria Summary (88 criteria, 411 total references)</h2>
+<h2>Selection Criteria Summary (88 criteria, 411 total references)</h2>
 <p>References by type: 5 connectors, 331 content items, 16 ASIM parsers, 59 other parsers.</p>
 <table>
 <thead>
@@ -2930,6 +2932,14 @@
 <td style="text-align: center;"><strong>5</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>SyslogMessage !has "response:"</code><br><code>SyslogMessage has_all "client"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>Facility == "local7"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">3</td>
@@ -2978,14 +2988,6 @@
 <td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>SyslogMessage !has "response:"</code><br><code>SyslogMessage has_all "client"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;"><strong>3</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>ProcessName == "box_Firewall_Activity"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
@@ -3007,14 +3009,6 @@
 <td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>SyslogMessage has "DHCPREQUEST"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
@@ -3226,7 +3220,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>SyslogMessage has "instanceId"</code><br><code>SyslogMessage has "predefined_alarm_id"</code><br><code>SyslogMessage has "instanceId"</code></td>
+<td style="text-align: left;"><code>SyslogMessage has "instanceId"</code><br><code>SyslogMessage has "predefined_alarm_id"</code><br><code>SyslogMessage has "predefined_alarm_id"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -3458,6 +3452,14 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>SyslogMessage has "DHCPREQUEST"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>SyslogMessage has "r-l-e"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -3531,7 +3533,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="facility-processname">Facility / ProcessName</h3>
+<h3>Facility / ProcessName</h3>
 <table>
 <thead>
 <tr>
@@ -4015,7 +4017,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="syslogmessage">SyslogMessage</h3>
+<h3>SyslogMessage</h3>
 <table>
 <thead>
 <tr>
@@ -4031,10 +4033,10 @@
 <tr>
 <td style="text-align: left;"><code>has instanceId</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">114</td>
+<td style="text-align: center;">113</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">3</td>
-<td style="text-align: center;"><strong>117</strong></td>
+<td style="text-align: center;"><strong>116</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>contains &lt;EPOevent&gt;</code></td>
@@ -4093,6 +4095,22 @@
 <td style="text-align: center;"><strong>9</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>!has response:</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_all client</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>has purity.alert</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">3</td>
@@ -4101,28 +4119,20 @@
 <td style="text-align: center;"><strong>5</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>!has response:</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;"><strong>4</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_all client</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;"><strong>4</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>has_all &lt;Provider Name=</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">4</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has predefined_alarm_id</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>has bytes read</code></td>
@@ -4229,14 +4239,6 @@
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has DHCPREQUEST</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>has_any change</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
@@ -4266,14 +4268,6 @@
 <td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has predefined_alarm_id</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
@@ -5269,6 +5263,14 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>has DHCPREQUEST</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>has r-l-e</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -5303,9 +5305,33 @@
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 </div>
-
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
 </body>
 </html>

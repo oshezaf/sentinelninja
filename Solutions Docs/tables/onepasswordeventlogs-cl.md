@@ -15,12 +15,12 @@
 
 ## Schema (28 columns)
 
-**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/OnePasswordEventLogs_CL.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/1Password%5CData%20Connectors%5C1Password_ccpv2/1Password_tables.json)
 
 | Column Name | Type |
 |:------------|:-----|
 | action | string |
-| action_Type | string |
+| action_type | string |
 | actor_details | dynamic |
 | actor_uuid | string |
 | aux_details | dynamic |
@@ -35,7 +35,7 @@
 | location | dynamic |
 | log_source | string |
 | object_details | dynamic |
-| object_Type | string |
+| object_type | string |
 | object_uuid | string |
 | session | dynamic |
 | session_uuid | string |

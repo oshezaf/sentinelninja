@@ -749,7 +749,7 @@ This table is ingested by the following connectors:
 | [IllumioFlowData](../content/illumiosaas-illumioflowdata-b836f8b9.md) | `SyslogMessage has "illumio_pce/agent"` |
 | [IllumioOnPremHealth](../content/illumiosaas-illumioonpremhealth-4cde69e6.md) | `SyslogMessage has "disk=Policy"`<br>`SyslogMessage has "disk=Traffic"`<br>`SyslogMessage has "illumio_pce/system_health"`<br>`SyslogMessage has "src=collector"`<br>`SyslogMessage has "src=disk_latency"`<br>`SyslogMessage has "src=flow_analytics"` |
 
-**In solution [Infoblox NIOS](../solutions/infoblox-nios.md):** `SyslogMessage has "DHCPREQUEST"`
+**In solution [Infoblox NIOS](../solutions/infoblox-nios.md):** `SyslogMessage !has "response:"`<br>`SyslogMessage has_all "client"`
 
 | Content Item |
 |:-------------|
@@ -863,7 +863,7 @@ This table is ingested by the following connectors:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [VeeamDataPlatformMonitoring](../content/veeam-veeamdataplatformmonitoring-a61e8871.md) | `SyslogMessage has "instanceId"` |
-| [VeeamSecurityActivities](../content/veeam-veeamsecurityactivities-f559a349.md) | `SyslogMessage has "instanceId"`<br>`SyslogMessage has "predefined_alarm_id"`<br>`SyslogMessage has "instanceId"` |
+| [VeeamSecurityActivities](../content/veeam-veeamsecurityactivities-f559a349.md) | `SyslogMessage has "instanceId"`<br>`SyslogMessage has "predefined_alarm_id"`<br>`SyslogMessage has "predefined_alarm_id"` |
 
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
 
@@ -1013,17 +1013,16 @@ References by type: 5 connectors, 331 content items, 16 ASIM parsers, 59 other p
 | `ProcessName == "gw-audit"` | - | 6 | - | - | **6** |
 | `ProcessName contains "squid"` | - | 6 | - | - | **6** |
 | `ProcessName == "ERAServer"` | - | 3 | - | 2 | **5** |
+| `SyslogMessage !has "response:"`<br>`SyslogMessage has_all "client"` | - | 2 | - | 2 | **4** |
 | `Facility == "local7"` | - | 3 | - | 1 | **4** |
 | `SyslogMessage has "purity.alert"` | - | 2 | - | 2 | **4** |
 | `ProcessName == "SymantecServer"` | - | 3 | - | 1 | **4** |
 | `Facility == "local5"` | - | 3 | - | 1 | **4** |
 | `SyslogMessage has_all "<Provider Name="` | - | - | 4 | - | **4** |
 | `Facility != "cron"` | 3 | - | - | - | **3** |
-| `SyslogMessage !has "response:"`<br>`SyslogMessage has_all "client"` | - | 1 | - | 2 | **3** |
 | `ProcessName == "box_Firewall_Activity"` | - | 1 | - | 2 | **3** |
 | `Facility == "local7"`<br>`ProcessName == "GitLab-Application-Logs"` | - | 1 | - | 1 | **2** |
 | `ProcessName has "sftp"`<br>`SyslogMessage has "bytes read"`<br>`SyslogMessage has "close"`<br>`SyslogMessage has "session opened for"` | - | 2 | - | - | **2** |
-| `SyslogMessage has "DHCPREQUEST"` | - | 1 | - | 1 | **2** |
 | `SyslogMessage contains "AuditLog"`<br>`SyslogMessage contains "Device,"`<br>`SyslogMessage contains "DeviceControl"`<br>`SyslogMessage contains "ScriptControl"`<br>`SyslogMessage contains "Threat"` | - | - | - | 2 | **2** |
 | `ProcessName contains "Exabeam"` | - | - | - | 2 | **2** |
 | `ProcessName == "gw-audit"`<br>`SyslogMessage contains "gw-audit[-]:"`<br>`SyslogMessage contains "portal portal[-]:"` | 1 | - | - | - | **1** |
@@ -1050,7 +1049,7 @@ References by type: 5 connectors, 331 content items, 16 ASIM parsers, 59 other p
 | `SyslogMessage contains "runas"`<br>`SyslogMessage contains "sudo"`<br>`ProcessName has_any "hostd-probe,vmkwarning,vpxd-main"` | - | 1 | - | - | **1** |
 | `Facility in "auth,authpriv"` | - | 1 | - | - | **1** |
 | `SyslogMessage has_any "ALTER TABLE,CREATE TABLE,DROP TABLE,database modified,schema change"`<br>`SyslogMessage has_any "auditd stopped,logging stopped,rsyslog stopped,syslog stopped"`<br>`SyslogMessage has_any "change,config,edit,modified,updated"`<br>`SyslogMessage has_any "change,config,modified,registry,updated"`<br>`SyslogMessage has_any "checksum mismatch,file deleted,file modified,file tamper"` | - | 1 | - | - | **1** |
-| `SyslogMessage has "instanceId"`<br>`SyslogMessage has "predefined_alarm_id"`<br>`SyslogMessage has "instanceId"` | - | 1 | - | - | **1** |
+| `SyslogMessage has "instanceId"`<br>`SyslogMessage has "predefined_alarm_id"`<br>`SyslogMessage has "predefined_alarm_id"` | - | 1 | - | - | **1** |
 | `SyslogMessage contains "ACTION=VCF"`<br>`SyslogMessage contains "VCF Alert"` | - | 1 | - | - | **1** |
 | `ProcessName == "sshd"`<br>`SyslogMessage has "Failed"`<br>`SyslogMessage has "but this does not map back to the address"`<br>`SyslogMessage has "key RSA"`<br>`SyslogMessage has "publickey"`<br>`SyslogMessage startswith "Accepted"`<br>`SyslogMessage startswith "Failed"`<br>`SyslogMessage startswith "Invalid user"`<br>`SyslogMessage startswith "Nasty PTR record"`<br>`SyslogMessage startswith "Timeout"`<br>`SyslogMessage startswith "message repeated"`<br>`SyslogMessage startswith "reverse mapping checking getaddrinfo for"` | - | - | 1 | - | **1** |
 | `ProcessName == "su"`<br>`SyslogMessage has_all "pam_unix(su"`<br>`SyslogMessage startswith "FAILED SU"`<br>`SyslogMessage startswith "Successful su for"` | - | - | 1 | - | **1** |
@@ -1079,6 +1078,7 @@ References by type: 5 connectors, 331 content items, 16 ASIM parsers, 59 other p
 | `SyslogMessage has_any "AccessRight,AdminGroup,AdminMember,Created Role,Login_Allowed,Login_Denied,balanced,balancing,delegatedzone,failover,forwardzone"` | - | - | - | 1 | **1** |
 | `SyslogMessage has "DHCPRELEASE"` | - | - | - | 1 | **1** |
 | `SyslogMessage has "Removed"` | - | - | - | 1 | **1** |
+| `SyslogMessage has "DHCPREQUEST"` | - | - | - | 1 | **1** |
 | `SyslogMessage has "r-l-e"` | - | - | - | 1 | **1** |
 | `SyslogMessage has "gss_accept_sec_context"` | - | - | - | 1 | **1** |
 | `SyslogMessage has "zone"` | - | - | - | 1 | **1** |
@@ -1150,7 +1150,7 @@ References by type: 5 connectors, 331 content items, 16 ASIM parsers, 59 other p
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `has instanceId` | - | 114 | - | 3 | **117** |
+| `has instanceId` | - | 113 | - | 3 | **116** |
 | `contains <EPOevent>` | - | 25 | - | 1 | **26** |
 | `contains <UpdateEvents>` | - | 25 | - | 1 | **26** |
 | `contains Oracle Unified Audit` | - | 22 | - | 2 | **24** |
@@ -1158,10 +1158,11 @@ References by type: 5 connectors, 331 content items, 16 ASIM parsers, 59 other p
 | `contains number_of_incidents` | - | 21 | - | 1 | **22** |
 | `has AUOMS_EXECVE` | - | 10 | - | - | **10** |
 | `has illumio_pce/agent` | - | 8 | - | 1 | **9** |
+| `!has response:` | - | 2 | 1 | 2 | **5** |
+| `has_all client` | - | 2 | 1 | 2 | **5** |
 | `has purity.alert` | - | 3 | - | 2 | **5** |
-| `!has response:` | - | 1 | 1 | 2 | **4** |
-| `has_all client` | - | 1 | 1 | 2 | **4** |
 | `has_all <Provider Name=` | - | - | 4 | - | **4** |
+| `has predefined_alarm_id` | - | 2 | - | 1 | **3** |
 | `has bytes read` | - | 2 | - | - | **2** |
 | `has close` | - | 2 | - | - | **2** |
 | `has session opened for` | - | 2 | - | - | **2** |
@@ -1175,12 +1176,10 @@ References by type: 5 connectors, 331 content items, 16 ASIM parsers, 59 other p
 | `has_any nds` | - | 2 | - | - | **2** |
 | `has_any nis` | - | 2 | - | - | **2** |
 | `has_any rmi` | - | 2 | - | - | **2** |
-| `has DHCPREQUEST` | - | 1 | - | 1 | **2** |
 | `has_any change` | - | 2 | - | - | **2** |
 | `has_any config` | - | 2 | - | - | **2** |
 | `has_any modified` | - | 2 | - | - | **2** |
 | `has_any updated` | - | 2 | - | - | **2** |
-| `has predefined_alarm_id` | - | 1 | - | 1 | **2** |
 | `contains AuditLog` | - | - | - | 2 | **2** |
 | `contains Device,` | - | - | - | 2 | **2** |
 | `contains DeviceControl` | - | - | - | 2 | **2** |
@@ -1305,6 +1304,7 @@ References by type: 5 connectors, 331 content items, 16 ASIM parsers, 59 other p
 | `has Option` | - | - | - | 1 | **1** |
 | `has DHCPRELEASE` | - | - | - | 1 | **1** |
 | `has Removed` | - | - | - | 1 | **1** |
+| `has DHCPREQUEST` | - | - | - | 1 | **1** |
 | `has r-l-e` | - | - | - | 1 | **1** |
 | `has gss_accept_sec_context` | - | - | - | 1 | **1** |
 | `has zone` | - | - | - | 1 | **1** |

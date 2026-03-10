@@ -9,12 +9,12 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="vectra-operate-on-entity-source-ip">Vectra Operate On Entity Source IP</h1>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Back to Content Index</a></p>
+<h1>Vectra Operate On Entity Source IP</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This Playbook will extract the ip from entities associated with an incident on which playbook is triggered.</p>
 <table>
@@ -39,13 +39,13 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Playbooks/VectraOperateOnEntitySourceIP/readme.md">VectraOperateOnEntitySourceIP/readme.md</a></em></p>
 </blockquote>
-<h2 id="summary">Summary</h2>
+<h2>Summary</h2>
 <p>This Playbook will extract the IP address from entities associated with an incident on which the playbook is triggered.</p>
-<h3 id="prerequisites">Prerequisites</h3>
+<h3>Prerequisites</h3>
 <ol>
 <li>The Vectra XDR data connector should be configured to create alerts and generate an incident.</li>
 <li>Obtain the key vault name and tenantId where client credentials are stored using which access token will be generated.
@@ -54,7 +54,7 @@
    * NOTE: Ensure the Permission model in the Access Configuration of Key Vault is set to <strong>'Vault access policy'</strong>.</li>
 <li>Ensure that VectraGenerateAccessToken playbook is deployed before deploying the VectraOperateOnEntitySourceIP playbook.</li>
 </ol>
-<h3 id="deployment-instructions">Deployment Instructions</h3>
+<h3>Deployment Instructions</h3>
 <ol>
 <li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
 <li>Fill in the required parameters:
@@ -65,8 +65,8 @@
    * GenerateAccessCredPlaybookName: Playbook name which is deployed as part of prerequisites.</li>
 </ol>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FVectraXDR%2FPlaybooks%2FVectraOperateOnEntitySourceIP%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FVectraXDR%2FPlaybooks%2FVectraOperateOnEntitySourceIP%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
-<h3 id="post-deployment-instructions">Post-Deployment Instructions</h3>
-<h4 id="a-authorize-connections">a. Authorize Connections</h4>
+<h3>Post-Deployment Instructions</h3>
+<h4>a. Authorize Connections</h4>
 <p>Once deployment is complete, authorize each connection.
 1. Go to your logic app → API connections → Select keyvault connection resource.
 2. Go to General → Edit API connection.
@@ -74,7 +74,7 @@
 4. Sign in.
 5. Click Save.
 6. Repeat steps for other connections.</p>
-<h4 id="b-add-access-policy-in-key-vault">b. Add Access Policy in Key Vault</h4>
+<h4>b. Add Access Policy in Key Vault</h4>
 <p>Add access policy for the playbook's managed identity and authorized user to read and write secrets of the key vault.
 1. Go to logic app → <em>your logic app</em> → identity → System assigned Managed identity and copy Object (principal) ID.
 2. Go to key vaults → <em>your keyvault</em> → Access policies → create.
@@ -82,7 +82,7 @@
 4. In the principal section, search by copied object ID. Click next.
 5. Click review + create.
 6. Repeat the above steps 2 to 5 to add access policy for the user account using which connection is authorized.</p>
-<h4 id="c-configurations-in-microsoft-sentinel">c. Configurations in Microsoft Sentinel</h4>
+<h4>c. Configurations in Microsoft Sentinel</h4>
 <ol>
 <li>In Microsoft Sentinel, an analytical rule should be configured to trigger an incident that has Host Entity mapped.</li>
 <li>To manually run the playbook on a particular incident, follow the steps below:
@@ -92,7 +92,7 @@
    * Click on the Run button beside this playbook.</li>
 </ol>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/vectra-xdr.html">Back to Vectra XDR</a></p>
 </div>
 

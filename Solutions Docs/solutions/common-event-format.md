@@ -20,8 +20,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-30 |
 | **Solution Folder** | [Common Event Format](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Common%20Event%20Format) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-commoneventformat) |
-| **Popularity** | 🟢 High (84%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-commoneventformat) · Popularity: 🟢 High (84%) |
 
 The Common Event Format (CEF) solution for Microsoft Sentinel allows you to ingest logs from any product and/or appliance that can send logs in the [Common Event Format (CEF) over Syslog messages](https://docs.microsoft.com/azure/sentinel/connect-common-event-format). 
 

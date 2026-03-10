@@ -9,12 +9,12 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="ciscoise-false-positives-clear-policies">CiscoISE-False Positives Clear Policies</h1>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Back to Content Index</a></p>
+<h1>CiscoISE-False Positives Clear Policies</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook gets triggered when a new sentinel incident is created 1.For each MAC address (MACAddress provided in the alert custom entities) in the incident checks if it is was rejected in Cisco ISE. 2.If MAC address was rejected, checks if it is in the safe list (safe list is a custom <a href="https://docs.microsoft.com/azure/sentinel/watchlists">Watchlist</a> that contains safe MAC addresses). If it is in safe list, releases endpoint with this MAC address in Cisco ISE. 3.Adds comment to the incident wi</p>
 <table>
@@ -39,12 +39,12 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ISE/Playbooks/CiscoISE-FalsePositivesClearPolicies/readme.md">CiscoISE-FalsePositivesClearPolicies/readme.md</a></em></p>
 </blockquote>
-<h1 id="ciscoise-falsepositivesclearpolicies">CiscoISE-FalsePositivesClearPolicies</h1>
-<h2 id="summary">Summary</h2>
+<h1>CiscoISE-FalsePositivesClearPolicies</h1>
+<h2>Summary</h2>
 <p>When a new sentinel incident is created, this playbook gets triggered and performs the following actions:</p>
 <ol>
 <li>For each MAC address (<em>MACAddress</em> provided in the alert custom entities) in the incident checks if it is was rejected in Cisco ISE.</li>
@@ -53,13 +53,13 @@ If it is in safe list, releases endpoint with this MAC address in Cisco ISE.</li
 <li>Adds comment to the incident with information about the released endpoints.</li>
 </ol>
 <p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ISE/Playbooks/CiscoISE-FalsePositivesClearPolicies/playbook_screenshot.png" width="50%"/><br></p>
-<h3 id="prerequisites">Prerequisites</h3>
+<h3>Prerequisites</h3>
 <ol>
 <li>Prior to the deployment of this playbook, Cisco ISE Connector needs to be deployed under the same subscription.</li>
 <li>Obtain Cisco ISE ERS API credentials. Refer to Cisco ISE Custom Connector documentation.</li>
 <li><a href="https://docs.microsoft.com/azure/sentinel/watchlists">Watchlist</a> with safe MAC addresses list needs to be created.</li>
 </ol>
-<h3 id="deployment-instructions">Deployment instructions</h3>
+<h3>Deployment instructions</h3>
 <ol>
 <li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
 <li>Fill in the required paramteres:<ul>
@@ -70,8 +70,8 @@ If it is in safe list, releases endpoint with this MAC address in Cisco ISE.</li
 </li>
 </ol>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCisco%2520ISE%2FPlaybooks%2FCiscoISE-FalsePositivesClearPolicies%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCisco%2520ISE%2FPlaybooks%2FCiscoISE-FalsePositivesClearPolicies%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
-<h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
-<h4 id="a-authorize-connections">a. Authorize connections</h4>
+<h3>Post-Deployment instructions</h3>
+<h4>a. Authorize connections</h4>
 <p>Once deployment is complete, authorize each connection.</p>
 <ol>
 <li>Click the Azure Sentinel connection resource</li>
@@ -81,13 +81,13 @@ If it is in safe list, releases endpoint with this MAC address in Cisco ISE.</li
 <li>Click Save</li>
 <li>Repeat steps for other connections</li>
 </ol>
-<h4 id="b-configurations-in-sentinel">b. Configurations in Sentinel</h4>
+<h4>b. Configurations in Sentinel</h4>
 <ol>
 <li>In Azure sentinel, analytical rules should be configured to trigger an incident. An incident should have the <em>MACAddress</em> custom entity that contains MAC address of an endpoint in Cisco ISE. It can be obtained from the corresponding field in Cisco ISE logs. Check the <a href="https://docs.microsoft.com/azure/sentinel/surface-custom-details-in-alerts">documentation</a> to learn more about adding custom entities to incidents.</li>
 <li>Configure the automation rules to trigger the playbook.</li>
 </ol>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/cisco-ise.html">Back to Cisco ISE</a></p>
 </div>
 

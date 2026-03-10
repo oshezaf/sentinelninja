@@ -20,8 +20,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-29 |
 | **Solution Folder** | [Azure Service Bus](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Service%20Bus) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-servicebus) |
-| **Popularity** | 🟢 High (90%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-servicebus) · Popularity: 🟢 High (90%) |
 
 The [Azure Service Bus](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview) solution for Microsoft Sentinel enables you to ingest Azure Service Bus diagnostics logs using Diagnostic Settings into Microsoft Sentinel. 
 

@@ -9,13 +9,13 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="microsoft-dataverse">Microsoft Dataverse</h1>
+<h1>Microsoft Dataverse</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/PowerPlatform.svg" alt="" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
@@ -48,13 +48,13 @@
 </tbody>
 </table>
 <p>Microsoft Dataverse is a scalable and secure data platform that enables organizations to store and manage data used by business applications. The Microsoft Dataverse data connector provides the capability to ingest Dataverse and Dynamics 365 CRM activity logs from the Microsoft Purview Audit log into Microsoft Sentinel.</p>
-<h2 id="additional-information">Additional Information</h2>
+<h2>Additional Information</h2>
 <ul>
 <li>📖 <strong>Solution Overview:</strong> <a href="https://learn.microsoft.com/azure/sentinel/business-applications/power-platform-solution-overview">Microsoft Business Apps solution</a> - Monitor and protect Power Platform and Dynamics 365 environments</li>
 <li>📖 <strong>Deployment Guide:</strong> <a href="https://learn.microsoft.com/azure/sentinel/business-applications/deploy-power-platform-solution">Deploy Power Platform connectors</a> - Prerequisites and setup for Dataverse activity logging</li>
 <li>📖 <strong>Security Content:</strong> <a href="https://learn.microsoft.com/azure/sentinel/business-applications/power-platform-solution-security-content">Power Platform security content reference</a> - Analytics rules for Dataverse threat detection</li>
 </ul>
-<h2 id="tables-ingested">Tables Ingested</h2>
+<h2>Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -74,7 +74,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="permissions">Permissions</h2>
+<h2>Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): Read and Write permissions are required.
 - <strong>Keys</strong> (Workspace): Read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a></p>
@@ -83,7 +83,7 @@
 - <strong>Micorosft Purview Audit</strong>: Microsoft Purview Audit (Standard or Premium) must be activated.
 - <strong>Production Dataverse</strong>: Activity logging is available only for Production environments. Other types, such as sandbox, do not support activity logging.
 - <strong>Dataverse Audit Settings</strong>: Audit settings must be configured both globally and at the entity/table level. <a href="https://learn.microsoft.com/azure/sentinel/business-applications/deploy-power-platform-solution">See the documentation to learn more about Dataverse audit settings</a>.</p>
-<h2 id="setup-instructions">Setup Instructions</h2>
+<h2>Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
@@ -91,8 +91,8 @@
 <p>This connector uses the Office Management API to get your Dataverse audit logs. The logs will be stored and processed in your existing Microsoft Sentinel workspace. You can find the data in the <strong>DataverseActivity</strong> table.
 - Click 'Connect' to establish connection</p>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 </div>
 
 </body>

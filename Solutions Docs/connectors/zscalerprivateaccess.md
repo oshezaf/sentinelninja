@@ -19,7 +19,6 @@
 | **Used in Solutions** | [Zscaler Private Access (ZPA)](../solutions/zscaler-private-access-zpa.md) |
 | **Collection Method** | [MMA](../methods/mma.md) |
 | **Connector Definition Files** | [Connector_LogAnalytics_agent_Zscaler_ZPA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Private%20Access%20%28ZPA%29/Data%20Connectors/Connector_LogAnalytics_agent_Zscaler_ZPA.json) |
-| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 
 The [Zscaler Private Access (ZPA)](https://help.zscaler.com/zpa/what-zscaler-private-access) data connector provides the capability to ingest [Zscaler Private Access events](https://help.zscaler.com/zpa/log-streaming-service) into Microsoft Sentinel. Refer to [Zscaler Private Access documentation](https://help.zscaler.com/zpa) for more information.
 
@@ -33,7 +32,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ZPA_CL`](../tables/zpa-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`ZPA_CL`](../tables/zpa-cl.md) | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

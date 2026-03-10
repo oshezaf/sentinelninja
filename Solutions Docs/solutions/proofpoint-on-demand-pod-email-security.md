@@ -19,9 +19,9 @@
 | **Version** | 3.1.2 |
 | **Author** | Proofpoint, Inc. - azure-support@proofpoint.com |
 | **First Published** | 2021-03-31 |
+| **Last Updated** | 2025-12-23 |
 | **Solution Folder** | [Proofpoint On demand(POD) Email Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Proofpoint%20On%20demand%28POD%29%20Email%20Security) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/proofpointinc1600438591120.azure-sentinel-proofpointpod) |
-| **Popularity** | ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/proofpointinc1600438591120.azure-sentinel-proofpointpod) · Popularity: ⚪ Very Low (0%) |
 
 The [Proofpoint on Demand Email Security](https://www.proofpoint.com/us/products/email-security-and-protection/email-protection) solution for Microsoft Sentinel enables you to ingest Proofpoint on Demand Email Protection data and activity logs for monitoring email activity, events and threats in your organization.
   
@@ -41,7 +41,7 @@ The [Proofpoint on Demand Email Security](https://www.proofpoint.com/us/products
 
 This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [Proofpoint On Demand Email Security (via Codeless Connector Platform)](../connectors/proofpointccpdefinition.md) 🔶
+- [Proofpoint On Demand Email Security (via Codeless Connector Platform)](../connectors/proofpointccpdefinition.md)
 - [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) ⚠️ 🔶
 
 > 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
@@ -54,8 +54,8 @@ This solution uses **7 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ProofpointPODMailLog_CL`](../tables/proofpointpodmaillog-cl.md) 🔶 | [Proofpoint On Demand Email Security (via Codeless Connector Platform)](../connectors/proofpointccpdefinition.md), [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
-| [`ProofpointPODMessage_CL`](../tables/proofpointpodmessage-cl.md) 🔶 | [Proofpoint On Demand Email Security (via Codeless Connector Platform)](../connectors/proofpointccpdefinition.md), [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
+| [`ProofpointPODMailLog_CL`](../tables/proofpointpodmaillog-cl.md) | [Proofpoint On Demand Email Security (via Codeless Connector Platform)](../connectors/proofpointccpdefinition.md), [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
+| [`ProofpointPODMessage_CL`](../tables/proofpointpodmessage-cl.md) | [Proofpoint On Demand Email Security (via Codeless Connector Platform)](../connectors/proofpointccpdefinition.md), [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
 | [`ProofpointPOD_maillog_CL`](../tables/proofpointpod-maillog-cl.md) 🔶 | [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
 | [`ProofpointPOD_message_CL`](../tables/proofpointpod-message-cl.md) 🔶 | [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | - | Analytics |

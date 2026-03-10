@@ -20,9 +20,7 @@
 | **Author** | Samsung - kai.sme@samsung.com |
 | **First Published** | 2025-01-15 |
 | **Solution Folder** | [Samsung Knox Asset Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Samsung%20Knox%20Asset%20Intelligence) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/samsungelectronics1632791654245.azure-sentinel-solution-samsung-knox-kai) |
-| **Popularity** | 🔵 Medium (79%) |
-| **Rating** | ★★★★★ 5.0/5 (2 ratings) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/samsungelectronics1632791654245.azure-sentinel-solution-samsung-knox-kai) · Rating: ★★★★★ 5.0/5 (2 ratings) · Popularity: 🔵 Medium (79%) |
 
 The Knox Asset Intelligence for Microsoft Sentinel solution enables enterprise IT and SecOps (Security Operations) administrators to view and manage security threats to their Samsung Knox mobile devices. By integrating security events and logs from Knox Asset Intelligence with the Azure Monitor Log Ingestion API, the solution lets enterprise organizations easily view, identify and investigate security threats in near-real-time with Microsoft Sentinel.
 
@@ -36,9 +34,7 @@ The Knox Asset Intelligence for Microsoft Sentinel solution enables enterprise I
 
 This solution provides **1 data connector(s)**:
 
-- [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) 🔶
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+- [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md)
 
 ## Tables Used
 
@@ -46,15 +42,13 @@ This solution uses **6 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Samsung_Knox_Application_CL`](../tables/samsung-knox-application-cl.md) 🔶 | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Workbooks |
-| [`Samsung_Knox_Audit_CL`](../tables/samsung-knox-audit-cl.md) 🔶 | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Analytics, Workbooks |
-| [`Samsung_Knox_Network_CL`](../tables/samsung-knox-network-cl.md) 🔶 | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Workbooks |
-| [`Samsung_Knox_Process_CL`](../tables/samsung-knox-process-cl.md) 🔶 | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Analytics, Workbooks |
-| [`Samsung_Knox_System_CL`](../tables/samsung-knox-system-cl.md) 🔶 | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Analytics, Workbooks |
-| [`Samsung_Knox_User_CL`](../tables/samsung-knox-user-cl.md) 🔶 | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Analytics, Workbooks |
+| [`Samsung_Knox_Application_CL`](../tables/samsung-knox-application-cl.md) | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Workbooks |
+| [`Samsung_Knox_Audit_CL`](../tables/samsung-knox-audit-cl.md) | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Analytics, Workbooks |
+| [`Samsung_Knox_Network_CL`](../tables/samsung-knox-network-cl.md) | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Workbooks |
+| [`Samsung_Knox_Process_CL`](../tables/samsung-knox-process-cl.md) | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Analytics, Workbooks |
+| [`Samsung_Knox_System_CL`](../tables/samsung-knox-system-cl.md) | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Analytics, Workbooks |
+| [`Samsung_Knox_User_CL`](../tables/samsung-knox-user-cl.md) | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Analytics, Workbooks |
 
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 ## Content Items
 
 This solution includes **8 content item(s)**:

@@ -9,13 +9,13 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="legacy-ioc-based-threat-protection"><img src="../images/asim-badge.png" alt="ASIM" height="32"> Legacy IOC based Threat Protection</h1>
+<h1><img src="../images/asim-badge.png" alt="ASIM" height="32"> Legacy IOC based Threat Protection</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Legacy IOC based Threat Protection Logo" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
 <table>
 <thead>
@@ -59,11 +59,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Marketplace</strong></td>
-<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ioclegacy">Azure Marketplace</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Popularity</strong></td>
-<td style="text-align: left;">🔵 Medium (56%)</td>
+<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ioclegacy">Azure Marketplace</a> · Popularity: 🔵 Medium (56%)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Pre-requisites</strong></td>
@@ -73,7 +69,7 @@
 </table>
 <p>Microsoft Security Research, based on ongoing trends and exploits creates content that help identify existence of known IOCs based on known prevalent attacks and threat actor tactics/techniques, such as Nobelium, Gallium, Solorigate, etc. This solution contains packaged content written on some legacy IOCs that have been prevalent in the past but may still be relevant.</p>
 <p>For details on the data sources and ASIM parsers supported by this solution, see the <a href="#asim-pre-requisites">ASIM Pre-requisites</a> section below.</p>
-<h2 id="contents">Contents</h2>
+<h2>Contents</h2>
 <ul>
 <li><a href="#pre-requisites">Pre-requisites</a></li>
 <li><a href="#asim-pre-requisites">ASIM Pre-requisites</a></li>
@@ -81,7 +77,7 @@
 <li><a href="#tables-used">Tables Used</a></li>
 <li><a href="#content-items">Content Items</a></li>
 </ul>
-<h2 id="pre-requisites">Pre-requisites</h2>
+<h2>Pre-requisites</h2>
 <p>This solution depends on <strong>24 other solution(s)</strong>:</p>
 <table>
 <thead>
@@ -189,9 +185,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="asim-pre-requisites"><a id="asim-pre-requisites"></a><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Pre-requisites</h2>
+<h2><a id="asim-pre-requisites"></a><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Pre-requisites</h2>
 <p>This solution uses the <a href="../asim/imfileevent.html"><code>imFileEvent</code></a>, <a href="../asim/imnetworksession.html"><code>imNetworkSession</code></a>, <a href="../asim/improcesscreate.html"><code>imProcessCreate</code></a>, and <a href="../asim/imregistry.html"><code>imRegistry</code></a> <a href="https://learn.microsoft.com/azure/sentinel/normalization">ASIM (Advanced Security Information Model)</a> parsers to provide normalized, source-agnostic data access, expanding detection coverage without modifying queries.</p>
-<h3 id="supported-products">Supported Products</h3>
+<h3>Supported Products</h3>
 <table>
 <thead>
 <tr>
@@ -382,7 +378,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="data-connectors">Data Connectors</h2>
+<h2>Data Connectors</h2>
 <p><strong>This solution does not include its own data connectors</strong> but uses connectors from dependency solutions:</p>
 <ul>
 <li><a href="../connectors/aivectrastream.html">AI Vectra Stream via Legacy Agent</a> <em>(dependency on <a href="vectra-ai-stream.html">Vectra AI Stream</a>)</em></li>
@@ -456,7 +452,7 @@
 <li><a href="../connectors/zscalerama.html">[Deprecated] Zscaler via AMA</a> <em>(dependency on <a href="zscaler-internet-access.html">Zscaler Internet Access</a>)</em></li>
 <li><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a> <em>(dependency on <a href="vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a>)</em></li>
 </ul>
-<h2 id="tables-used">Tables Used</h2>
+<h2>Tables Used</h2>
 <p>This solution queries <strong>11 table(s)</strong> from its content items:</p>
 <table>
 <thead>
@@ -512,7 +508,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="internal-tables">Internal Tables</h3>
+<h3>Internal Tables</h3>
 <p>The following <strong>1 table(s)</strong> are used internally by this solution's content items:</p>
 <table>
 <thead>
@@ -528,7 +524,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="content-items">Content Items</h2>
+<h2>Content Items</h2>
 <p>This solution includes <strong>10 content item(s)</strong>:</p>
 <table>
 <thead>
@@ -544,7 +540,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries">Hunting Queries</h3>
+<h3>Hunting Queries</h3>
 <table>
 <thead>
 <tr>
@@ -606,7 +602,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="release-notes">Release Notes</h2>
+<h2>Release Notes</h2>
 <table>
 <thead>
 <tr>
@@ -649,8 +645,8 @@
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 </div>
 
 </body>

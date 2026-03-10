@@ -9,13 +9,13 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="endpoint-threat-protection-essentials"><img src="../images/asim-badge.png" alt="ASIM" height="32"> Endpoint Threat Protection Essentials</h1>
+<h1><img src="../images/asim-badge.png" alt="ASIM" height="32"> Endpoint Threat Protection Essentials</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Endpoint Threat Protection Essentials Logo" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
 <table>
 <thead>
@@ -54,16 +54,16 @@
 <td style="text-align: left;">2022-11-16</td>
 </tr>
 <tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2026-02-19</td>
+</tr>
+<tr>
 <td style="text-align: left;"><strong>Solution Folder</strong></td>
 <td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Endpoint%20Threat%20Protection%20Essentials">Endpoint Threat Protection Essentials</a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Marketplace</strong></td>
-<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-endpointthreat">Azure Marketplace</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Popularity</strong></td>
-<td style="text-align: left;">🔵 Medium (72%)</td>
+<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-endpointthreat">Azure Marketplace</a> · Popularity: 🔵 Medium (72%)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Pre-requisites</strong></td>
@@ -74,7 +74,7 @@
 <p>The <strong>Endpoint Threat Protection Essentials</strong> solution provides content to monitor, detect and investigate threats related to windows machines. The solution looks for things like suspicious commandlines, PowerShell based attacks, LOLBins, registry manipulation, scheduled tasks etc. which are some of the most commonly used techniques by attackers when targeting endpoints.  </p>
 <p>For details on the data sources and ASIM parsers supported by this solution, see the <a href="#asim-pre-requisites">ASIM Pre-requisites</a> section below.</p>
 <p><strong>Keywords:</strong> LOLBins, PowerShell, Registry, Lsass, Commandline, scheduled tasks, Malware.</p>
-<h2 id="contents">Contents</h2>
+<h2>Contents</h2>
 <ul>
 <li><a href="#pre-requisites">Pre-requisites</a></li>
 <li><a href="#asim-pre-requisites">ASIM Pre-requisites</a></li>
@@ -82,7 +82,7 @@
 <li><a href="#tables-used">Tables Used</a></li>
 <li><a href="#content-items">Content Items</a></li>
 </ul>
-<h2 id="pre-requisites">Pre-requisites</h2>
+<h2>Pre-requisites</h2>
 <p>This solution depends on <strong>3 other solution(s)</strong>:</p>
 <table>
 <thead>
@@ -106,9 +106,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="asim-pre-requisites"><a id="asim-pre-requisites"></a><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Pre-requisites</h2>
+<h2><a id="asim-pre-requisites"></a><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Pre-requisites</h2>
 <p>This solution uses the <a href="../asim/asimprocesseventcreate.html"><code>_ASim_ProcessEvent_Create</code></a>, <a href="../asim/improcesscreate.html"><code>imProcessCreate</code></a>, and <a href="../asim/imregistry.html"><code>imRegistry</code></a> <a href="https://learn.microsoft.com/azure/sentinel/normalization">ASIM (Advanced Security Information Model)</a> parsers to provide normalized, source-agnostic data access, expanding detection coverage without modifying queries.</p>
-<h3 id="supported-products">Supported Products</h3>
+<h3>Supported Products</h3>
 <table>
 <thead>
 <tr>
@@ -163,7 +163,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="data-connectors">Data Connectors</h2>
+<h2>Data Connectors</h2>
 <p><strong>This solution does not include its own data connectors</strong> but uses connectors from dependency solutions:</p>
 <ul>
 <li><a href="../connectors/crowdstrikeapiconnector.html">CrowdStrike API Data Connector (via Codeless Connector Framework)</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
@@ -192,7 +192,7 @@
 <li><a href="../connectors/windowssecurityevents.html">Windows Security Events via AMA</a> <em>(dependency on <a href="windows-security-events.html">Windows Security Events</a>)</em></li>
 <li><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a> <em>(dependency on <a href="vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a>)</em></li>
 </ul>
-<h2 id="tables-used">Tables Used</h2>
+<h2>Tables Used</h2>
 <p>This solution queries <strong>6 table(s)</strong> from its content items:</p>
 <table>
 <thead>
@@ -228,7 +228,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="content-items">Content Items</h2>
+<h2>Content Items</h2>
 <p>This solution includes <strong>29 content item(s)</strong>:</p>
 <table>
 <thead>
@@ -248,7 +248,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="analytic-rules">Analytic Rules</h3>
+<h3>Analytic Rules</h3>
 <table>
 <thead>
 <tr>
@@ -345,7 +345,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries">Hunting Queries</h3>
+<h3>Hunting Queries</h3>
 <table>
 <thead>
 <tr>
@@ -432,7 +432,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="release-notes">Release Notes</h2>
+<h2>Release Notes</h2>
 <table>
 <thead>
 <tr>
@@ -480,8 +480,8 @@
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 </div>
 
 </body>

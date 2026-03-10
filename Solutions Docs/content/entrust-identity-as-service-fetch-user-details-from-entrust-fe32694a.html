@@ -9,12 +9,12 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="fetch-user-details-from-entrust">Fetch User Details From Entrust</h1>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Back to Content Index</a></p>
+<h1>Fetch User Details From Entrust</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook provides the user essential details in comments section of triggered incident so that SOC analysts can directly take corrective measure to stop the attack from unknown/compromised entity</p>
 <table>
@@ -39,18 +39,18 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Entrust%20identity%20as%20Service/Playbooks/EntrustPlaybooks/Entrust-EnrichIncidentWithUserDetails/readme.md">EntrustPlaybooks/Entrust-EnrichIncidentWithUserDetails/readme.md</a></em></p>
 </blockquote>
-<h1 id="entrust-enrich-incident-with-user-details-playbook">Entrust-Enrich Incident with User Details Playbook</h1>
+<h1>Entrust-Enrich Incident with User Details Playbook</h1>
 <p>## Summary
  When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs below actions.
  1. Fetches the user details, user group and roles details from Entrust
  2. Adds a rich comment to the incident with all the collected information
     <img alt="Comment example" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Entrust%20identity%20as%20Service/Playbooks/EntrustPlaybooks%5CEntrust-EnrichIncidentWithUserDetails/Images/Entrust-EnrichIncidentWithUserDetails_incident_comment.png" /></p>
 <p><img alt="Playbook Designer view" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Entrust%20identity%20as%20Service/Playbooks/EntrustPlaybooks%5CEntrust-EnrichIncidentWithUserDetails/Images/Entrust-EnrichIncidentWithUserDetails_light.png" /><br></p>
-<h3 id="prerequisites">Prerequisites</h3>
+<h3>Prerequisites</h3>
 <ol>
 <li>User should be having an active subscription of product to open the product documentation.</li>
 <li>For Json API keys, Kindly login to entrust Identity as a service portal.</li>
@@ -60,7 +60,7 @@
 <li>Make a note of application id and hostname.</li>
 <li>Store the Shared Secret Key in key vault Secrets. </li>
 </ol>
-<h3 id="deployment-instructions">Deployment instructions</h3>
+<h3>Deployment instructions</h3>
 <ol>
 <li>
 <p>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.
@@ -78,14 +78,14 @@
 </ul>
 </li>
 </ol>
-<h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
-<h4 id="a-configurations-in-sentinel">a. Configurations in Sentinel</h4>
+<h3>Post-Deployment instructions</h3>
+<h4>a. Configurations in Sentinel</h4>
 <ol>
 <li>In Microsoft sentinel analytical rules should be configured to trigger an incident with risky user account.</li>
 <li>Configure the automation rules to trigger this playbook.</li>
 <li>Proper Entity mapping is needed for making a successful run of playbook.</li>
 </ol>
-<h4 id="b-assign-playbook-microsoft-sentinel-responder-role">b. Assign Playbook Microsoft Sentinel Responder Role</h4>
+<h4>b. Assign Playbook Microsoft Sentinel Responder Role</h4>
 <ol>
 <li>Select the Playbook (Logic App) resource</li>
 <li>Click on Identity Blade</li>
@@ -98,7 +98,7 @@
 <li>Select Role - Microsoft Sentinel Responder</li>
 <li>Click Save (It takes 3-5 minutes to show the added role.)</li>
 </ol>
-<h4 id="c-assign-access-policy-on-key-vault-for-playbook-to-fetch-the-secret-key">c. Assign access policy on key vault for Playbook to fetch the secret key</h4>
+<h4>c. Assign access policy on key vault for Playbook to fetch the secret key</h4>
 <ol>
 <li>Select the Key vault resource where you have stored the secret</li>
 <li>Click on Access policies Blade</li>
@@ -109,13 +109,13 @@
 <li>Click Review and create</li>
 <li>Click Create</li>
 </ol>
-<h1 id="references">References</h1>
+<h1>References</h1>
 <ul>
 <li><a href="https://www.entrust.com/-/media/documentation/datasheets/entrust-identity-as-a-service-ss.pdf">Entrust Product Review</a></li>
 <li><a href="https://www.entrust.com/documentation">Entrust documentation</a></li>
 </ul>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/entrust-identity-as-service.html">Back to Entrust identity as Service</a></p>
 </div>
 

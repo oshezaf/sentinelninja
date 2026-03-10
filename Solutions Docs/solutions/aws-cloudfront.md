@@ -18,8 +18,7 @@
 | **Author** | Microsoft |
 | **First Published** | 2025-03-20 |
 | **Solution Folder** | [AWS CloudFront](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20CloudFront) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-aws-cloudfront) |
-| **Popularity** | 🟢 High (80%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-aws-cloudfront) · Popularity: 🟢 High (80%) |
 
 The Amazon Web Services CloudFront for Microsoft Sentinel allows you to enable Security monitoring of AWS services by allowing ingestion of logs from the AWS S3Bucket, SQS Queue.
 

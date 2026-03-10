@@ -9,12 +9,12 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="ncscnlsharestixbundle">NCSCNLShareSTIXBundle</h1>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Back to Content Index</a></p>
+<h1>NCSCNLShareSTIXBundle</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook gets triggered every hour and perform the following actions: 1. Get all the threat intelligence indicators from Microsoft Sentinel Workspace with given tag. 2. Filter all the indicators whose export in not completed. 3. Share the STIX Bundle, that includes the 'Indicator, corresponding Identities, Markings and optional Sighting' with the to provided TAXII server.</p>
 <table>
@@ -39,13 +39,13 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NCSC-NL%20NDN%20Cyber%20Threat%20Intelligence%20Sharing/Playbooks/NCSCNLShareSTIXBundle/readme.md">NCSCNLShareSTIXBundle/readme.md</a></em></p>
 </blockquote>
-<h1 id="ncsc-nl-ndn-cyber-threat-intelligence-sharing">NCSC-NL NDN Cyber Threat Intelligence Sharing</h1>
+<h1>NCSC-NL NDN Cyber Threat Intelligence Sharing</h1>
 <p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NCSC-NL%20NDN%20Cyber%20Threat%20Intelligence%20Sharing/Playbooks/NCSCNLShareSTIXBundle/images/ncsc-nl-header.png" width="50%"/><br></p>
-<h2 id="summary">Summary</h2>
+<h2>Summary</h2>
 <p>This playbook is inspired on the previous <em>ACSC</em> codecase and is enhanced with an additional Sighting feature and API key support. It gets triggered every day and perform the following actions:</p>
 <ol>
 <li>Get all the threat intelligence indicators from Microsoft Sentinel Workspace with given tag.</li>
@@ -55,11 +55,11 @@
 <li>Add Grouping and Identity Objects to indicators.</li>
 <li>Export the bundle to provided TAXII server.</li>
 </ol>
-<h3 id="prerequisites">Prerequisites</h3>
+<h3>Prerequisites</h3>
 <ol>
 <li>Have TAXII Server Url, Collection ID, your Organization STIX Identity and API Key available before the deployment of the Playbook.</li>
 </ol>
-<h3 id="deployment-instructions">Deployment instructions</h3>
+<h3>Deployment instructions</h3>
 <ol>
 <li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
 <li>Fill in the required parameters:<ul>
@@ -83,8 +83,8 @@
 </li>
 </ol>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FNCSC-NL%2520NDN%2520Cyber%2520Threat%2520Intelligence%2520Sharing%2FPlaybooks%2FNCSCNLShareSTIXBundle%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
-<h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
-<h4 id="a-authorize-playbook-to-access-log-analytics-workspace">a. Authorize Playbook to access Log Analytics Workspace</h4>
+<h3>Post-Deployment instructions</h3>
+<h4>a. Authorize Playbook to access Log Analytics Workspace</h4>
 <p>Once deployment is complete, assign playbook Log Analytics contributor role.</p>
 <ol>
 <li>Go to Log Analytics Workspace resource</li>
@@ -98,13 +98,13 @@
 <li>Select the correct identity and click on Select</li>
 <li>Click on "Review + assign" </li>
 </ol>
-<h1 id="references">References</h1>
+<h1>References</h1>
 <ul>
 <li><a href="https://www.ncsc.nl/aansluiten-en-samenwerken/">NCSC-NL</a></li>
 <li><a href="https://www.ncsc.nl/aansluiten-en-samenwerken/aansluiting-bij-het-ndn">NDN</a></li>
 </ul>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/ncsc-nl-ndn-cyber-threat-intelligence-sharing.html">Back to NCSC-NL NDN Cyber Threat Intelligence Sharing</a></p>
 </div>
 

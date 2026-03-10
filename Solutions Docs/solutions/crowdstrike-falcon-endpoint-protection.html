@@ -9,13 +9,13 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="crowdstrike-falcon-endpoint-protection">CrowdStrike Falcon Endpoint Protection</h1>
+<h1>CrowdStrike Falcon Endpoint Protection</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/Logo/crowdstrike.svg" alt="CrowdStrike Falcon Endpoint Protection Logo" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
 <table>
 <thead>
@@ -54,20 +54,16 @@
 <td style="text-align: left;">2022-06-01</td>
 </tr>
 <tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2026-03-09</td>
+</tr>
+<tr>
 <td style="text-align: left;"><strong>Solution Folder</strong></td>
 <td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection">CrowdStrike Falcon Endpoint Protection</a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Marketplace</strong></td>
-<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-crowdstrikefalconep">Azure Marketplace</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Popularity</strong></td>
-<td style="text-align: left;">🟢 High (92%)</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Rating</strong></td>
-<td style="text-align: left;">★☆☆☆☆ 1.0/5 (1 ratings)</td>
+<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-crowdstrikefalconep">Azure Marketplace</a> · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🟢 High (92%)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Pre-requisites</strong></td>
@@ -77,14 +73,14 @@
 </table>
 <p>The <a href="https://www.crowdstrike.com/products/">CrowdStrike Falcon Endpoint Protection</a> solution allows you to easily onboard CrowdStrike Falcon Endpoint Protection to Microsoft Sentinel. The data collected can be used to create custom dashboards, alerts, and improve investigation. This gives you more insight into your organization's endpoints and improves your security operation capabilities. </p>
 <p>This solution contains multiple Data Connectors that help ingest Falcon Data Replicator logs, Adversary Intelligence &amp; other more specific data from CrowdStrike. Carefully review the capabilities of each connector and configure/enable the most relevant connector based on specific requirements.</p>
-<h2 id="contents">Contents</h2>
+<h2>Contents</h2>
 <ul>
 <li><a href="#pre-requisites">Pre-requisites</a></li>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#tables-used">Tables Used</a></li>
 <li><a href="#content-items">Content Items</a></li>
 </ul>
-<h2 id="pre-requisites">Pre-requisites</h2>
+<h2>Pre-requisites</h2>
 <p>This solution depends on <strong>1 other solution(s)</strong>:</p>
 <table>
 <thead>
@@ -98,15 +94,15 @@
 </tr>
 </tbody>
 </table>
-<h2 id="data-connectors">Data Connectors</h2>
+<h2>Data Connectors</h2>
 <p>This solution provides <strong>4 data connector(s)</strong> (plus 2 discovered⚠️):</p>
 <ul>
 <li><a href="../connectors/crowdstrikeapiconnector.html">CrowdStrike API Data Connector (via Codeless Connector Framework)</a></li>
 <li><a href="../connectors/crowdstrikefalconadversaryintelligence.html">CrowdStrike Falcon Adversary Intelligence </a></li>
 <li><a href="../connectors/crowdstrikefalconendpointprotection.html">[Deprecated] CrowdStrike Falcon Endpoint Protection via Legacy Agent</a> ⚠️</li>
 <li><a href="../connectors/crowdstrikefalconendpointprotectionama.html">[Deprecated] CrowdStrike Falcon Endpoint Protection via AMA</a> ⚠️</li>
-<li><a href="../connectors/crowdstrikefalcons3ccpdefinition.html">CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</a> 🔶</li>
-<li><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a> 🔶</li>
+<li><a href="../connectors/crowdstrikefalcons3ccpdefinition.html">CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</a></li>
+<li><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a></li>
 </ul>
 <p>Connectors from dependency solutions:</p>
 <ul>
@@ -115,9 +111,8 @@
 </ul>
 <blockquote>
 <p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
-<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
-<h2 id="tables-used">Tables Used</h2>
+<h2>Tables Used</h2>
 <p>This solution uses <strong>29 table(s)</strong>:</p>
 <table>
 <thead>
@@ -139,7 +134,7 @@
 <td>-</td>
 </tr>
 <tr>
-<td><a href="../tables/asimauthenticationeventlogs-cl.html"><code>ASimAuthenticationEventLogs_CL</code></a> 🔶</td>
+<td><a href="../tables/asimauthenticationeventlogs-cl.html"><code>ASimAuthenticationEventLogs_CL</code></a></td>
 <td><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a></td>
 <td>-</td>
 </tr>
@@ -154,7 +149,7 @@
 <td>-</td>
 </tr>
 <tr>
-<td><a href="../tables/asimfileeventlogs-cl.html"><code>ASimFileEventLogs_CL</code></a> 🔶</td>
+<td><a href="../tables/asimfileeventlogs-cl.html"><code>ASimFileEventLogs_CL</code></a></td>
 <td><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a></td>
 <td>-</td>
 </tr>
@@ -169,7 +164,7 @@
 <td>-</td>
 </tr>
 <tr>
-<td><a href="../tables/asimprocesseventlogs-cl.html"><code>ASimProcessEventLogs_CL</code></a> 🔶</td>
+<td><a href="../tables/asimprocesseventlogs-cl.html"><code>ASimProcessEventLogs_CL</code></a></td>
 <td><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a></td>
 <td>-</td>
 </tr>
@@ -179,7 +174,7 @@
 <td>-</td>
 </tr>
 <tr>
-<td><a href="../tables/asimregistryeventlogs-cl.html"><code>ASimRegistryEventLogs_CL</code></a> 🔶</td>
+<td><a href="../tables/asimregistryeventlogs-cl.html"><code>ASimRegistryEventLogs_CL</code></a></td>
 <td><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a></td>
 <td>-</td>
 </tr>
@@ -189,7 +184,7 @@
 <td>-</td>
 </tr>
 <tr>
-<td><a href="../tables/asimusermanagementlogs-cl.html"><code>ASimUserManagementLogs_CL</code></a> 🔶</td>
+<td><a href="../tables/asimusermanagementlogs-cl.html"><code>ASimUserManagementLogs_CL</code></a></td>
 <td><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a></td>
 <td>-</td>
 </tr>
@@ -224,7 +219,7 @@
 <td>-</td>
 </tr>
 <tr>
-<td><a href="../tables/crowdstrike-additional-events-cl.html"><code>CrowdStrike_Additional_Events_CL</code></a> 🔶</td>
+<td><a href="../tables/crowdstrike-additional-events-cl.html"><code>CrowdStrike_Additional_Events_CL</code></a></td>
 <td><a href="../connectors/crowdstrikefalcons3ccpdefinition.html">CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</a>, <a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a></td>
 <td>-</td>
 </tr>
@@ -264,7 +259,7 @@
 <td>-</td>
 </tr>
 <tr>
-<td><a href="../tables/crowdstrike-secondary-data-cl.html"><code>CrowdStrike_Secondary_Data_CL</code></a> 🔶</td>
+<td><a href="../tables/crowdstrike-secondary-data-cl.html"><code>CrowdStrike_Secondary_Data_CL</code></a></td>
 <td><a href="../connectors/crowdstrikefalcons3ccpdefinition.html">CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</a>, <a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a></td>
 <td>-</td>
 </tr>
@@ -275,7 +270,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="internal-tables">Internal Tables</h3>
+<h3>Internal Tables</h3>
 <p>The following <strong>1 table(s)</strong> are used internally by this solution's content items:</p>
 <table>
 <thead>
@@ -293,10 +288,7 @@
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
-</blockquote>
-<h2 id="content-items">Content Items</h2>
+<h2>Content Items</h2>
 <p>This solution includes <strong>10 content item(s)</strong> (9 in solution, 1 discovered 🔍):</p>
 <table>
 <thead>
@@ -334,7 +326,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="analytic-rules">Analytic Rules</h3>
+<h3>Analytic Rules</h3>
 <table>
 <thead>
 <tr>
@@ -359,7 +351,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks</h3>
+<h3>Workbooks</h3>
 <table>
 <thead>
 <tr>
@@ -374,7 +366,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="playbooks">Playbooks</h3>
+<h3>Playbooks</h3>
 <table>
 <thead>
 <tr>
@@ -401,7 +393,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="parsers">Parsers</h3>
+<h3>Parsers</h3>
 <table>
 <thead>
 <tr>
@@ -436,7 +428,7 @@
 <blockquote>
 <p>⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.</p>
 </blockquote>
-<h2 id="release-notes">Release Notes</h2>
+<h2>Release Notes</h2>
 <table>
 <thead>
 <tr>
@@ -569,8 +561,8 @@
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 </div>
 
 </body>

@@ -44,7 +44,7 @@ This content item queries data from the following tables:
 | [`AZFWNatRule`](../tables/azfwnatrule.md) |  | ✓ | ✗ | ✓ |
 | [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) |  | ✓ | ✗ | ✓ |
 | [`AZFWThreatIntel`](../tables/azfwthreatintel.md) |  | ✓ | ✗ | ✓ |
-| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) 🔶 |  | ✓ | ✓ | ✓ |
+| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) |  | ✓ | ✓ | ✓ |
 | [`AsimParsersData`](../tables/asimparsersdata.md) |  | ? | ? | ? |
 | [`Audits_Data_CL`](../tables/audits-data-cl.md) |  | ✓ | ✓ | ✓ |
 | [`AzureActivity`](../tables/azureactivity.md) |  | ✗ | ✗ | ✗ |
@@ -84,7 +84,7 @@ This content item queries data from the following tables:
 | [`Okta_CL`](../tables/okta-cl.md) 🔶 |  | ✗ | ✓ | ✗ |
 | [`Open_Ports_Data_CL`](../tables/open-ports-data-cl.md) 🔶 |  | ? | ✓ | ? |
 | [`PDNS_Data_CL`](../tables/pdns-data-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`PostgreSQL_CL`](../tables/postgresql-cl.md) 🔶 |  | ✓ | ✓ | ✓ |
+| [`PostgreSQL_CL`](../tables/postgresql-cl.md) |  | ✓ | ✓ | ✓ |
 | [`Proto_By_IP_Data_CL`](../tables/proto-by-ip-data-cl.md) 🔶 |  | ? | ✓ | ? |
 | [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) 🔶 |  | ? | ✓ | ? |
 | [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ✓ |
@@ -111,7 +111,7 @@ This content item queries data from the following tables:
 | [`X509_Data_CL`](../tables/x509-data-cl.md) 🔶 |  | ? | ✓ | ? |
 | [`asimParsers`](../tables/asimparsers.md) |  | ? | ? | ? |
 | [`barracuda_CL`](../tables/barracuda-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`meraki_CL`](../tables/meraki-cl.md) 🔶 |  | ✓ | ✓ | ✓ |
+| [`meraki_CL`](../tables/meraki-cl.md) |  | ✓ | ✓ | ✓ |
 
 ---
 

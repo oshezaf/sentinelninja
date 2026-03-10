@@ -15,7 +15,7 @@
 
 ## Schema (25 columns)
 
-**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/jamfprotectunifiedlogs_CL.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Jamf%20Protect%5CData%20Connectors%5CJamfProtect_ccp/table4.json)
 
 | Column Name | Type |
 |:------------|:-----|

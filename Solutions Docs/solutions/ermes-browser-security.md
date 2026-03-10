@@ -19,9 +19,9 @@
 | **Version** | 3.1.0 |
 | **Author** | dev@ermes.company |
 | **First Published** | 2023-09-29 |
+| **Last Updated** | 2025-12-17 |
 | **Solution Folder** | [Ermes Browser Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Ermes%20Browser%20Security) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/ermes.azure-sentinel-solution-ermes-browser-security) |
-| **Popularity** | ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/ermes.azure-sentinel-solution-ermes-browser-security) · Popularity: ⚪ Very Low (0%) |
 
 The [Ermes Browser Security](https://www.ermes.company) Solution for Microsoft Sentinel provides a simple way to ingest Security and Audit events from Ermes into Microsoft Sentinel.
 

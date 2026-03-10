@@ -19,10 +19,9 @@
 | **Version** | 3.2.3 |
 | **Author** | Corelight - info@corelight.com |
 | **First Published** | 2022-06-01 |
+| **Last Updated** | 2026-02-02 |
 | **Solution Folder** | [Corelight](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Corelight) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/corelightinc1584998267292.corelight-for-azure-sentinel) |
-| **Popularity** | ⚪ Very Low (0%) |
-| **Rating** | ★★★★★ 4.8/5 (20 ratings) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/corelightinc1584998267292.corelight-for-azure-sentinel) · Rating: ★★★★★ 4.8/5 (20 ratings) · Popularity: ⚪ Very Low (0%) |
 
 The [Corelight](https://corelight.com/) solution provides the capability to ingest events from [Zeek](https://zeek.org/) and [Suricata](https://suricata.io/) via Corelight Sensors into Microsoft Sentinel.
 

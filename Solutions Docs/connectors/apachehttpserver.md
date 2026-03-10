@@ -19,7 +19,6 @@
 | **Used in Solutions** | [ApacheHTTPServer](../solutions/apachehttpserver.md) |
 | **Collection Method** | [MMA](../methods/mma.md) |
 | **Connector Definition Files** | [Connector_ApacheHTTPServer_agent.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ApacheHTTPServer/Data%20Connectors/Connector_ApacheHTTPServer_agent.json) |
-| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 
 The Apache HTTP Server data connector provides the capability to ingest [Apache HTTP Server](http://httpd.apache.org/) events into Microsoft Sentinel. Refer to [Apache Logs documentation](https://httpd.apache.org/docs/2.4/logs.html) for more information.
 
@@ -33,7 +32,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

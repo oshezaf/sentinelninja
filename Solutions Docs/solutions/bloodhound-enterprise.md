@@ -32,9 +32,7 @@ The BloodHound Enterprise Microsoft Sentinel solution ingests your BloodHound En
 
 This solution provides **1 data connector(s)**:
 
-- [Bloodhound Enterprise](../connectors/bloodhoundenterprise.md) 🔶
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+- [Bloodhound Enterprise](../connectors/bloodhoundenterprise.md)
 
 ## Tables Used
 
@@ -42,15 +40,13 @@ This solution uses **6 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`BHEAttackPathsData_CL`](../tables/bheattackpathsdata-cl.md) 🔶 | [Bloodhound Enterprise](../connectors/bloodhoundenterprise.md) | Analytics, Workbooks |
+| [`BHEAttackPathsData_CL`](../tables/bheattackpathsdata-cl.md) | [Bloodhound Enterprise](../connectors/bloodhoundenterprise.md) | Analytics, Workbooks |
 | [`BHEAttackPathsTimelineData_CL`](../tables/bheattackpathstimelinedata-cl.md) | - | Workbooks |
 | [`BHEAuditLogsData_CL`](../tables/bheauditlogsdata-cl.md) | - | Workbooks |
 | [`BHEFindingTrendsData_CL`](../tables/bhefindingtrendsdata-cl.md) | - | Workbooks |
 | [`BHEPostureHistoryData_CL`](../tables/bheposturehistorydata-cl.md) | - | Workbooks |
 | [`BHETierZeroAssetsData_CL`](../tables/bhetierzeroassetsdata-cl.md) | - | Workbooks |
 
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 ## Content Items
 
 This solution includes **108 content item(s)**:

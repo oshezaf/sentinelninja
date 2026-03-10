@@ -9,14 +9,14 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="ping-one">Ping One</h1>
+<h1>Ping One</h1>
 <p><em>Solution: PingOne</em></p>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="PingOne Logo" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
 <table>
 <thead>
@@ -64,11 +64,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Marketplace</strong></td>
-<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-pingone">Azure Marketplace</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Popularity</strong></td>
-<td style="text-align: left;">🔵 Medium (67%)</td>
+<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-pingone">Azure Marketplace</a> · Popularity: 🔵 Medium (67%)</td>
 </tr>
 </tbody>
 </table>
@@ -76,18 +72,18 @@
 <p><strong>Underlying Microsoft Technologies used:</strong></p>
 <p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs</p>
 <p>• <a href="https://learn.microsoft.com/en-us/azure/sentinel/create-codeless-connector">Codeless Connector Framework (CCF)</a></p>
-<h2 id="contents">Contents</h2>
+<h2>Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#tables-used">Tables Used</a></li>
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
-<h2 id="data-connectors">Data Connectors</h2>
+<h2>Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/pingoneauditlogsccpdefinition.html">Ping One (via Codeless Connector Framework)</a></li>
 </ul>
-<h2 id="tables-used">Tables Used</h2>
+<h2>Tables Used</h2>
 <p>This solution uses <strong>1 table(s)</strong>:</p>
 <table>
 <thead>
@@ -105,16 +101,16 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PingOne/README.md">PingOne/README.md</a></em></p>
 </blockquote>
-<h1 id="ping-identity-pingone-audit-logs-ccp-connector">Ping Identity – PingOne Audit Logs CCP Connector</h1>
-<h2 id="summary"><strong>Summary</strong></h2>
+<h1>Ping Identity – PingOne Audit Logs CCP Connector</h1>
+<h2><strong>Summary</strong></h2>
 <p>This Microsoft Sentinel data connector enables ingestion of <strong>audit activity logs</strong> from <strong>PingOne</strong> via the CCP framework. These logs capture administrative actions, configuration changes, sign-in attempts, and other audit-relevant events across the PingOne platform.</p>
 <p>This solution helps security teams monitor identity infrastructure for suspicious behavior, policy violations, and compliance-relevant changes by sending normalized audit data to <strong>Microsoft Sentinel</strong> in near real-time.</p>
 <hr />
-<h2 id="features"><strong>Features</strong></h2>
+<h2><strong>Features</strong></h2>
 <ul>
 <li>Connects to the <strong>PingOne Audit Activities API</strong>.</li>
 <li>Parses and ingests audit logs into the custom Log Analytics table: <code>PingOne_AuditActivitiesV2_CL</code>.</li>
@@ -122,7 +118,7 @@
 <li>Integrates into Sentinel analytics, hunting queries, and incident detection.</li>
 </ul>
 <hr />
-<h2 id="prerequisites"><strong>Prerequisites</strong></h2>
+<h2><strong>Prerequisites</strong></h2>
 <ol>
 <li>A valid <strong>PingOne</strong> tenant.</li>
 <li>A <strong>Client Credentials</strong> application in PingOne with:<br />
@@ -134,7 +130,7 @@
 <li>Access to an Azure subscription with <strong>Microsoft Sentinel</strong> enabled and permissions to deploy Data Connectors.</li>
 </ol>
 <hr />
-<h2 id="generating-pingone-oauth-client-credentials"><strong>Generating PingOne OAuth Client Credentials</strong></h2>
+<h2><strong>Generating PingOne OAuth Client Credentials</strong></h2>
 <ol>
 <li>Sign into the <em>PingOne Identity portal</em></li>
 <li>Go to <strong>Connections &gt; Applications</strong>.</li>
@@ -159,7 +155,7 @@
 </ol>
 <p>These credentials are required for connector deployment.</p>
 <hr />
-<h3 id="deployment-parameters"><strong>Deployment Parameters</strong></h3>
+<h3><strong>Deployment Parameters</strong></h3>
 <ul>
 <li><strong>Client ID</strong></li>
 <li><strong>Client Secret</strong></li>
@@ -168,8 +164,8 @@
 </ul>
 <p>Once deployed, the connector will begin ingesting audit logs from PingOne and send them to the <code>PingOne_AuditActivitiesV2_CL</code> table in your Sentinel workspace.</p>
 <hr />
-<h2 id="post-deployment-steps"><strong>Post-Deployment Steps</strong></h2>
-<h3 id="assign-required-roles"><strong>Assign Required Roles</strong></h3>
+<h2><strong>Post-Deployment Steps</strong></h2>
+<h3><strong>Assign Required Roles</strong></h3>
 <p>Ensure the deployed Data Connector has the required permissions to write to Log Analytics:</p>
 <ol>
 <li>Go to <strong>Microsoft Sentinel</strong> &gt; <strong>Configuration</strong> &gt; <strong>Data Connectors</strong>.</li>
@@ -177,9 +173,9 @@
 <li>Ensure the connector has appropriate permissions to send data to your <strong>Log Analytics Workspace</strong>.</li>
 </ol>
 <hr />
-<h2 id="how-logs-are-generated"><strong>How Logs are Generated</strong></h2>
+<h2><strong>How Logs are Generated</strong></h2>
 <p><em>[Content truncated...]</em></p>
-<h2 id="release-notes">Release Notes</h2>
+<h2>Release Notes</h2>
 <table>
 <thead>
 <tr>
@@ -207,8 +203,8 @@
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 </div>
 
 </body>

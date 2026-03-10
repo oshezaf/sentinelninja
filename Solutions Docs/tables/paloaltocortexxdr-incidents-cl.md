@@ -8,86 +8,54 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (68 columns)
+## Schema (37 columns)
 
-**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/PaloAltoCortexXDR_Incidents_CL.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cortex%20XDR%5CData%20Connectors%5CCortexXDR_ccp/table_incidents.json)
 
-| Column Name | Type |
-|:------------|:-----|
-| _ResourceId | string |
-| aggregated_score_d | real |
-| alert_categories_s | string |
-| alert_count_d | real |
-| AlertCategories | string |
-| AlertCount | string |
-| alerts_grouping_status_s | string |
-| AlertsGroupingStatus | string |
-| assigned_user_mail_s | string |
-| assigned_user_pretty_name_s | string |
-| Computer | string |
-| creation_time_d | real |
-| CreationTime | string |
-| critical_severity_alert_count_d | real |
-| CriticalSeverityAlertCount | string |
-| Description | string |
-| description_s | string |
-| high_severity_alert_count_d | real |
-| HighSeverityAlertCount | string |
-| host_count_d | real |
-| HostCount | string |
-| Hosts | string |
-| hosts_s | string |
-| incident_id_s | string |
-| incident_sources_s | string |
-| IncidentId | string |
-| IncidentSources | string |
-| low_severity_alert_count_d | real |
-| LowSeverityAlertCount | string |
-| ManagementGroupName | string |
-| manual_description_s | string |
-| manual_severity_s | string |
-| med_severity_alert_count_d | real |
-| MedSeverityAlertCount | string |
-| MG | string |
-| mitre_tactics_ids_and_names_s | string |
-| mitre_techniques_ids_and_names_s | string |
-| modification_time_d | real |
-| ModificationTime | string |
-| notes_s | string |
-| original_tags_s | string |
-| OriginalTags | string |
-| predicted_score_d | real |
-| RawData | string |
-| resolve_comment_s | string |
-| ResolveComment | string |
-| resolved_timestamp_d | real |
-| ResolvedTimestamp | string |
-| Severity | string |
-| severity_s | string |
-| SourceSystem | string |
-| Starred | string |
-| starred_b | bool |
-| Status | string |
-| status_s | string |
-| Tags | string |
-| tags_s | string |
-| TenantId | string |
-| TimeGenerated | datetime |
-| Type | string |
-| user_count_d | real |
-| UserCount | string |
-| Users | string |
-| users_s | string |
-| wildfire_hits_d | real |
-| WildfireHits | string |
-| xdr_url_s | string |
-| XdrUrl | string |
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| AlertCategories | dynamic | The alert grouping status. |
+| AlertCount | int | The number of alerts regarding the incident. |
+| AlertsGroupingStatus | string | The alert grouping status. |
+| AssignedUserMail | string | The assigned user mail address. |
+| assignedUserPrettyName | string | The assign user display name. |
+| CreationTime | datetime | The time which the incident was created. |
+| CriticalSeverityAlertCount | int | The number of critical severity alerts regarding the incident. |
+| Description | string | The description of the incident. |
+| DetectionTime | datetime | The time which the incident was detected. |
+| HighSeverityAlertCount | int | The number of high severity alerts regarding the incident. |
+| HostCount | int | The host count regarding the incident. |
+| Hosts | dynamic | The hosts regarding the incident. |
+| IncidentId | string | The unique identifier for the incident. |
+| IncidentName | string | The name of the incident |
+| IncidentSources | dynamic | The sources regarding the incident. |
+| LowSeverityAlertCount | int | The number of low severity alerts regarding the incident. |
+| ManualDescription | string | Any comments associated with the event. |
+| ManualScore | int | The manual score of the incident. |
+| ManualSeverity | string | The severity applied manually regarding the incident. |
+| MedSeverityAlertCount | int | The number of medium severity alerts regarding the incident. |
+| MitreTacticsIdsAndNames | dynamic | Mitre tactics ids and names. |
+| MitreTechniquesIdsAndNames | dynamic | Mitre techniques ids and names. |
+| ModificationTime | datetime | The time which the incident was updated. |
+| Notes | string | The notes regarding the incident. |
+| OriginalTags | dynamic | The original tags of the incident. |
+| ResolveComment | string | The resolve comment writen in the incident. |
+| ResolvedTimestamp | datetime | The timestemp when the incident has been resolved. |
+| RuleBasedScore | int | The rule base score of the incident. |
+| Severity | string | The severity of the incident. |
+| Starred | bool | Is the incident starred. |
+| Status | string | The status of the incident. |
+| Tags | dynamic | The tags of the incident. |
+| TimeGenerated | datetime | The timestamp (UTC) reflecting the time in which the event was generated. |
+| UserCount | int | The user count regarding the incident. |
+| Users | dynamic | Any comments associated with the event. |
+| WildfireHits | int | The wild fire hits. |
+| XdrUrl | string | The link of the incident. |
 
 ## Solutions (2)
 

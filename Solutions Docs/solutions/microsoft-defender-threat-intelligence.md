@@ -18,9 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-03-23 |
 | **Solution Folder** | [Microsoft Defender Threat Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20Threat%20Intelligence) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-microsoftdefenderthreatint) |
-| **Popularity** | 🟢 High (92%) |
-| **Rating** | ★☆☆☆☆ 1.0/5 (1 ratings) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-microsoftdefenderthreatint) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🟢 High (92%) |
 
 Microsoft centralizes numerous data sets into a single platform, Microsoft Defender Threat Intelligence [(MDTI)](https://learn.microsoft.com/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti), making it easier for Microsoft’s community and customers to conduct infrastructure analysis. Microsoft’s primary focus is to provide as much data as possible about Internet infrastructure to support a variety of security use cases and enabling automation for Incident management in Microsoft Sentinel.
 

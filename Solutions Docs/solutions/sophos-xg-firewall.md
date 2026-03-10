@@ -20,8 +20,7 @@
 | **Author** | SophosXGFirewall |
 | **First Published** | 2021-10-20 |
 | **Solution Folder** | [Sophos XG Firewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20XG%20Firewall) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-sophosxgfirewall) |
-| **Popularity** | 🟢 High (91%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-sophosxgfirewall) · Popularity: 🟢 High (91%) |
 | **Pre-requisites** | [Syslog](syslog.md) |
 
 The [Sophos XG Firewall](https://www.sophos.com/products/next-gen-firewall) solution for Microsoft Sentinel enables you to ingest Sophos XG Firewall logs into Microsoft Sentinel.

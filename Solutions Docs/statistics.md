@@ -187,38 +187,38 @@ Connectors that use at least one Custom Log V1 table (identified by type-suffixe
 
 | Metric | Count |
 |:-------|------:|
-| CLv1 Connectors | **197** |
-| Active | 153 |
-| Deprecated 🚫 | 34 |
-| Unpublished ⚠️ | 10 |
+| CLv1 Connectors | **155** |
+| Active | 125 |
+| Deprecated 🚫 | 21 |
+| Unpublished ⚠️ | 9 |
 
 **By Collection Method:**
 
 | Collection Method | CLv1 Connectors |
 |:-----------------|----------------:|
-| [Azure Function](methods/azure-function.md) | 86 |
-| [REST API](methods/rest-api.md) | 55 |
-| [MMA](methods/mma.md) | 18 |
-| [CCF](methods/ccf.md) | 16 |
+| [Azure Function](methods/azure-function.md) | 76 |
+| [REST API](methods/rest-api.md) | 49 |
 | [Azure Diagnostics](methods/azure-diagnostics.md) | 14 |
-| [CCF (Legacy)](methods/ccf-legacy.md) | 5 |
-| [AMA](methods/ama.md) | 3 |
-| **Total** | **197** |
+| [CCF](methods/ccf.md) | 6 |
+| [MMA](methods/mma.md) | 5 |
+| [CCF (Legacy)](methods/ccf-legacy.md) | 3 |
+| [AMA](methods/ama.md) | 2 |
+| **Total** | **155** |
 
 **By Ingestion API:**
 
 | Ingestion API | CLv1 Connectors |
 |:-------------|----------------:|
 | [Log Ingestion API](methods/log-ingestion-api.md) | 3 |
-| [HTTP Data Collector API](methods/http-data-collector-api.md) | 138 |
-| *(no API)* | 56 |
-| **Total** | **197** |
+| [HTTP Data Collector API](methods/http-data-collector-api.md) | 122 |
+| *(no API)* | 30 |
+| **Total** | **155** |
 
 ## Tables
 
 ### Overview
 
-**2024 tables** documented across all discovery sources. **1780 tables** have schema information.
+**2024 tables** documented across all discovery sources. **1785 tables** have schema information.
 
 ### Discovery Sources
 
@@ -233,7 +233,7 @@ Each table is assigned a single discovery source ("Discovered Via") by priority:
 | [Sentinel Tables and Connectors Reference](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) | 12 | 478 |
 | [Azure Monitor Tables Feature Support](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) | 78 | 702 |
 | [Azure Monitor Logs Ingestion API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) | 1 | 51 |
-| Schema | 240 | 1780 |
+| Schema | 240 | 1785 |
 | **Total** | **2024** | |
 
 *31 tables are available in Defender XDR but not in Azure Monitor Log Analytics.*
@@ -246,23 +246,23 @@ Tables with schema information, by schema source. A single table may have schema
 |:-------------|-------:|
 | Azure Monitor docs | 811 |
 | DCR | 151 |
-| KQL validation | 837 |
-| **Total unique tables with schema** | **1780** |
+| KQL validation | 816 |
+| Connector definition | 26 |
+| **Total unique tables with schema** | **1785** |
 
 ### Custom Log V1 (CLv1) 🔶
 
-**515** of 2024 tables are Custom Log V1 tables, identified by type-suffixed columns or `_CL` suffix with compatible collection method.
+**429** of 2024 tables are Custom Log V1 tables, identified by type-suffixed columns or `_CL` suffix with compatible collection method.
 
 **By Table Category:**
 
 | Category | CLv1 Tables |
 |:---------|------------:|
-| Uncategorized | 493 |
+| Uncategorized | 409 |
 | Internal | 14 |
 | GCP | 5 |
-| Crowdstrike | 2 |
 | Various | 1 |
-| **Total** | **515** |
+| **Total** | **429** |
 
 ## Content
 

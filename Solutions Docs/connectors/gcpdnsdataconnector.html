@@ -9,17 +9,17 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="deprecated-google-cloud-platform-dns">🚫 🔍 [DEPRECATED] Google Cloud Platform DNS</h1>
+<h1>🚫 🔍 [DEPRECATED] Google Cloud Platform DNS</h1>
 <blockquote>
 <p>🚫 <strong>Deprecated:</strong> This connector has been deprecated and may be removed in future versions.</p>
 <p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
 </blockquote>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/google_logo.svg" alt="" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
@@ -62,9 +62,9 @@
 <p>The Google Cloud Platform DNS data connector provides the capability to ingest <a href="https://cloud.google.com/dns/docs/monitoring#using_logging">Cloud DNS query logs</a> and <a href="https://cloud.google.com/dns/docs/audit-logging">Cloud DNS audit logs</a> into Microsoft Sentinel using the GCP Logging API. Refer to <a href="https://cloud.google.com/logging/docs/api">GCP Logging API documentation</a> for more information.</p>
 <p><span style='color:red; font-weight:bold;'>NOTE</span>: This data connector has been deprecated, consider moving to the CCF data connector available in the solution which replaces ingestion via the <a href='https://learn.microsoft.com/en-us/azure/azure-monitor/logs/custom-logs-migrate' style='color:#1890F1;'>deprecated HTTP Data Collector API</a>.</p>
 
-<h2 id="additional-information">Additional Information</h2>
+<h2>Additional Information</h2>
 <p>📖 <strong>Setup Guide:</strong> <a href="https://learn.microsoft.com/azure/sentinel/connect-google-cloud-platform">Google Cloud Platform connectors</a> - Connect GCP logs to Microsoft Sentinel</p>
-<h2 id="tables-ingested">Tables Ingested</h2>
+<h2>Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -87,14 +87,14 @@
 <blockquote>
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
-<h2 id="permissions">Permissions</h2>
+<h2>Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
 - <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
 <p><strong>Custom Permissions:</strong>
 - <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
 - <strong>GCP service account</strong>: GCP service account with permissions to read logs (with "logging.logEntries.list" permission) is required for GCP Logging API. Also json file with service account key is required. See the documentation to learn more about <a href="https://cloud.google.com/logging/docs/access-control#permissions_and_roles">permissions</a>, <a href="https://cloud.google.com/iam/docs/creating-managing-service-accounts">creating service account</a> and <a href="https://cloud.google.com/iam/docs/creating-managing-service-account-keys">creating service account key</a>.</p>
-<h2 id="setup-instructions">Setup Instructions</h2>
+<h2>Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 <p><strong>NOTE:</strong> This connector uses Azure Functions to connect to the GCP API to pull logs into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
@@ -174,8 +174,8 @@ If you're already signed in, go to the next step.</li>
 <li>Once all application settings have been entered, click <strong>Save</strong>.</li>
 </ol>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 </div>
 
 </body>

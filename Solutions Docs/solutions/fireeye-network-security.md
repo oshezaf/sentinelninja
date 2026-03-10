@@ -18,8 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-01 |
 | **Solution Folder** | [FireEye Network Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/FireEye%20Network%20Security) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-fireeyenx) |
-| **Popularity** | 🟡 Low (10%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-fireeyenx) · Popularity: 🟡 Low (10%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The [FireEye Network Security (NX)](https://www.fireeye.com/products/network-security.html) solution provides the capability to ingest FireEye Network Security logs into Microsoft Sentinel.

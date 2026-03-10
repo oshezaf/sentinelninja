@@ -9,14 +9,14 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="microsoft-sysmon-for-linux-solution">Microsoft Sysmon For Linux Solution</h1>
+<h1>Microsoft Sysmon For Linux Solution</h1>
 <p><em>Solution: Microsoft Sysmon For Linux</em></p>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Microsoft Sysmon For Linux Logo" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
 <table>
 <thead>
@@ -60,11 +60,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Marketplace</strong></td>
-<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-sysmonforlinux">Azure Marketplace</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Popularity</strong></td>
-<td style="text-align: left;">⚪ Very Low (0%)</td>
+<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-sysmonforlinux">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Pre-requisites</strong></td>
@@ -75,13 +71,13 @@
 <p><a href="https://github.com/Sysinternals/SysmonForLinux">Sysmon for Linux</a> provides detailed information about process creations, network connections and other system events. The Sysmon for Linux connector uses <a href="https://docs.microsoft.com/azure/sentinel/connect-syslog">Syslog</a> as its data ingestion method. This solution depends on ASIM to work as expected. <a href="https://github.com/Azure/Azure-Sentinel/tree/master/ASIM">Deploy ASIM</a> to get the full value from the solution.</p>
 <p>This solution is dependent on the Syslog solution containing the Syslog via AMA connector to collect the logs. The Syslog  solution will be installed as part of this solution installation. </p>
 <p><strong>NOTE</strong>: Microsoft recommends installation of Syslog via AMA Connector. Legacy connector uses the Log Analytics agent which is about to be deprecated by <strong>Aug 31, 2024</strong>. Using MMA and AMA on same machine can cause log duplication and extra ingestion cost <a href="https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate">more details</a>.</p>
-<h2 id="contents">Contents</h2>
+<h2>Contents</h2>
 <ul>
 <li><a href="#pre-requisites">Pre-requisites</a></li>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#tables-used">Tables Used</a></li>
 </ul>
-<h2 id="pre-requisites">Pre-requisites</h2>
+<h2>Pre-requisites</h2>
 <p>This solution depends on <strong>1 other solution(s)</strong>:</p>
 <table>
 <thead>
@@ -95,7 +91,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="data-connectors">Data Connectors</h2>
+<h2>Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/microsoftsysmonforlinux.html">[Deprecated] Microsoft Sysmon For Linux</a></li>
@@ -105,7 +101,7 @@
 <li><a href="../connectors/syslog.html">Syslog via Legacy Agent</a> <em>(dependency on <a href="syslog.html">Syslog</a>)</em></li>
 <li><a href="../connectors/syslogama.html">Syslog via AMA</a> <em>(dependency on <a href="syslog.html">Syslog</a>)</em></li>
 </ul>
-<h2 id="tables-used">Tables Used</h2>
+<h2>Tables Used</h2>
 <p>This solution uses <strong>1 table(s)</strong>:</p>
 <table>
 <thead>
@@ -123,7 +119,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="release-notes">Release Notes</h2>
+<h2>Release Notes</h2>
 <table>
 <thead>
 <tr>
@@ -141,8 +137,8 @@
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 </div>
 
 </body>

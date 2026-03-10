@@ -13,6 +13,35 @@
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
+## Schema (22 columns)
+
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0%5CData%20Connectors%5CAuth0_CCP/table.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| ActorUserId | string |
+| ActorUsername | string |
+| Audience | string |
+| ClientId | string |
+| ClientName | string |
+| Connection | string |
+| ConnectionId | string |
+| Description | string |
+| Details | dynamic |
+| event_date | datetime |
+| EventType | string |
+| HttpUserAgent | string |
+| IsMobile | bool |
+| LocationInfo | dynamic |
+| LogId | string |
+| Scope | string |
+| SrcHostname | string |
+| SrcIpAddr | string |
+| Strategy | string |
+| StrategyType | string |
+| TenantName | string |
+| TimeGenerated | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

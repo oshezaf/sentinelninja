@@ -17,9 +17,9 @@
 | **Version** | 3.0.10 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-16 |
+| **Last Updated** | 2026-01-27 |
 | **Solution Folder** | [Salesforce Service Cloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-salesforceservicecloud) |
-| **Popularity** | 🟢 High (93%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-salesforceservicecloud) · Popularity: 🟢 High (93%) |
 
 The [Salesforce Service Cloud](https://www.salesforce.com/in/products/service-cloud/overview/) solution for Microsoft Sentinel enables you to ingest Service Cloud events into Microsoft Sentinel.
   
@@ -40,7 +40,7 @@ The [Salesforce Service Cloud](https://www.salesforce.com/in/products/service-cl
 This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
 - [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) ⚠️ 🔶
-- [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md) 🔶
+- [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md)
 
 > 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
@@ -52,7 +52,7 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) 🔶 | [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md), [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | Analytics, Workbooks |
+| [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) | [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md), [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | Analytics, Workbooks |
 | [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) 🔶 | [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | Analytics, Workbooks |
 
 ### Internal Tables

@@ -19,10 +19,9 @@
 | **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-31 |
+| **Last Updated** | 2025-12-14 |
 | **Solution Folder** | [MicrosoftDefenderForEndpoint](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MicrosoftDefenderForEndpoint) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-microsoftdefenderendpoint) |
-| **Popularity** | 🟢 High (98%) |
-| **Rating** | ★★★☆☆ 2.7/5 (3 ratings) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-microsoftdefenderendpoint) · Rating: ★★★☆☆ 2.7/5 (3 ratings) · Popularity: 🟢 High (98%) |
 
 The [Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide) solution for Microsoft Sentinel enables you to ingest security alerts from the Defender for Endpoint platform, integrating them into your Microsoft Sentinel Incidents queue. 
  

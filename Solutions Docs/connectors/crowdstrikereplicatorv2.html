@@ -9,13 +9,13 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="crowdstrike-falcon-data-replicator-crowdstrike-managed-aws-s3">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</h1>
+<h1>CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/Logo/crowdstrike.svg" alt="" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
@@ -49,14 +49,10 @@
 <td style="text-align: left;"><strong>Ingestion API</strong></td>
 <td style="text-align: left;"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Connector definition requires workspace key (SharedKey pattern)</em></td>
 </tr>
-<tr>
-<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
-<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
-</tr>
 </tbody>
 </table>
 <p>This connector enables the ingestion of FDR data into Microsoft Sentinel using Azure Functions to support the assessment of potential security risks, analysis of collaboration activities, identification of configuration issues, and other operational insights.<p><span style='color:red; font-weight:bold;'>NOTE:</span></p><div style='margin-left:20px;'><p>1. CrowdStrike FDR license must be available &amp; enabled.</p><p>2. The connector uses a Key &amp; Secret based authentication and is suitable for CrowdStrike Managed buckets.</p><p>3. For environments that use a fully owned AWS S3 bucket, Microsoft recommends using the <strong>CrowdStrike Falcon Data Replicator (AWS S3)</strong> connector.</p></div></p>
-<h2 id="tables-ingested">Tables Ingested</h2>
+<h2>Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -81,7 +77,7 @@
 <td style="text-align: center;">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/asimauthenticationeventlogs-cl.html"><code>ASimAuthenticationEventLogs_CL</code></a> 🔶</td>
+<td style="text-align: left;"><a href="../tables/asimauthenticationeventlogs-cl.html"><code>ASimAuthenticationEventLogs_CL</code></a></td>
 <td style="text-align: center;">?</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">?</td>
@@ -99,7 +95,7 @@
 <td style="text-align: center;">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/asimfileeventlogs-cl.html"><code>ASimFileEventLogs_CL</code></a> 🔶</td>
+<td style="text-align: left;"><a href="../tables/asimfileeventlogs-cl.html"><code>ASimFileEventLogs_CL</code></a></td>
 <td style="text-align: center;">?</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">?</td>
@@ -117,7 +113,7 @@
 <td style="text-align: center;">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/asimprocesseventlogs-cl.html"><code>ASimProcessEventLogs_CL</code></a> 🔶</td>
+<td style="text-align: left;"><a href="../tables/asimprocesseventlogs-cl.html"><code>ASimProcessEventLogs_CL</code></a></td>
 <td style="text-align: center;">?</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">?</td>
@@ -129,7 +125,7 @@
 <td style="text-align: center;">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/asimregistryeventlogs-cl.html"><code>ASimRegistryEventLogs_CL</code></a> 🔶</td>
+<td style="text-align: left;"><a href="../tables/asimregistryeventlogs-cl.html"><code>ASimRegistryEventLogs_CL</code></a></td>
 <td style="text-align: center;">?</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">?</td>
@@ -141,19 +137,19 @@
 <td style="text-align: center;">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/asimusermanagementlogs-cl.html"><code>ASimUserManagementLogs_CL</code></a> 🔶</td>
+<td style="text-align: left;"><a href="../tables/asimusermanagementlogs-cl.html"><code>ASimUserManagementLogs_CL</code></a></td>
 <td style="text-align: center;">?</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/crowdstrike-additional-events-cl.html"><code>CrowdStrike_Additional_Events_CL</code></a> 🔶</td>
+<td style="text-align: left;"><a href="../tables/crowdstrike-additional-events-cl.html"><code>CrowdStrike_Additional_Events_CL</code></a></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/crowdstrike-secondary-data-cl.html"><code>CrowdStrike_Secondary_Data_CL</code></a> 🔶</td>
+<td style="text-align: left;"><a href="../tables/crowdstrike-secondary-data-cl.html"><code>CrowdStrike_Secondary_Data_CL</code></a></td>
 <td style="text-align: center;">?</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">?</td>
@@ -163,14 +159,14 @@
 <blockquote>
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
-<h2 id="permissions">Permissions</h2>
+<h2>Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
 - <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
 <p><strong>Custom Permissions:</strong>
 - <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
 - <strong>SQS and AWS S3 account credentials/permissions</strong>: <strong>AWS_SECRET</strong>, <strong>AWS_REGION_NAME</strong>, <strong>AWS_KEY</strong>, <strong>QUEUE_URL</strong> is required.  <a href="https://www.crowdstrike.com/blog/tech-center/intro-to-falcon-data-replicator/">See the documentation to learn more about data pulling</a>. To start, contact CrowdStrike support. At your request they will create a CrowdStrike managed Amazon Web Services (AWS) S3 bucket for short term storage purposes as well as a SQS (simple queue service) account for monitoring changes to the S3 bucket.</p>
-<h2 id="setup-instructions">Setup Instructions</h2>
+<h2>Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 <p><strong>NOTE:</strong> This connector uses Azure Functions to connect to the AWS SQS / S3 to pull logs into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
@@ -247,13 +243,13 @@
         Schedule //Add value as '0 <em>/1 * * * </em>' to ensure the function runs every minute.</li>
 <li>Once all application settings have been entered, click <strong>Save</strong>.</li>
 </ol>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike Falcon Endpoint Protection\Data Connectors\CrowdstrikeReplicatorCLv2\README.md">CrowdStrike Falcon Endpoint Protection\Data Connectors\CrowdstrikeReplicatorCLv2\README.md</a></em></p>
 </blockquote>
-<h1 id="crowdstrike-data-connector-based-on-clv2-ingestion">CrowdStrike Data connector based on CLv2 ingestion</h1>
+<h1>CrowdStrike Data connector based on CLv2 ingestion</h1>
 <p>This connector uses Azure Functions to connect to the AWS SQS / S3 to pull logs into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
-<h2 id="prerequisites">Prerequisites</h2>
+<h2>Prerequisites</h2>
 <ol>
 <li>Configure FDR in CrowdStrike - You must contact the <a href="https://supportportal.crowdstrike.com/">CrowdStrike support team</a> to enable CrowdStrike FDR.        <ol>
 <li>Once CrowdStrike FDR is enabled,  from the CrowdStrike console, navigate to Support --&gt; API Clients and Keys.</li>
@@ -266,11 +262,11 @@
 </ol>
 </li>
 </ol>
-<h2 id="deployment">Deployment</h2>
+<h2>Deployment</h2>
 <p><a href="https://aka.ms/sentinel-CrowdstrikeReplicatorV2-azuredeploy"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 </div>
 
 </body>

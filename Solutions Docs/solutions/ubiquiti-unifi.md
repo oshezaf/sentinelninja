@@ -17,10 +17,9 @@
 | **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-01 |
+| **Last Updated** | 2026-01-12 |
 | **Solution Folder** | [Ubiquiti UniFi](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Ubiquiti%20UniFi) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ubiquitiunifi) |
-| **Popularity** | 🟢 High (94%) |
-| **Rating** | ★☆☆☆☆ 1.0/5 (1 ratings) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ubiquitiunifi) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🟢 High (94%) |
 | **Pre-requisites** | [CustomLogsAma](customlogsama.md) |
 
 The [Ubiquiti UniFi](https://www.ui.com/) solution provides the capability to ingest [Ubiquiti UniFi firewall, dns, ssh, AP events](https://help.ui.com/hc/articles/204959834-UniFi-How-to-View-Log-Files) into Microsoft Sentinel.
@@ -48,7 +47,7 @@ This solution depends on **1 other solution(s)**:
 
 This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] Ubiquiti UniFi](../connectors/ubiquitiunifi.md) ⚠️ 🔶
+- [[Deprecated] Ubiquiti UniFi](../connectors/ubiquitiunifi.md) ⚠️
 
 Connectors from dependency solutions:
 
@@ -64,23 +63,23 @@ This solution uses **17 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`JBossEvent_CL`](../tables/jbossevent-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`JuniperIDP_CL`](../tables/juniperidp-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`MarkLogicAudit_CL`](../tables/marklogicaudit-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`MongoDBAudit_CL`](../tables/mongodbaudit-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`NGINX_CL`](../tables/nginx-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`OracleWebLogicServer_CL`](../tables/oracleweblogicserver-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`PostgreSQL_CL`](../tables/postgresql-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`SecurityBridgeLogs_CL`](../tables/securitybridgelogs-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`JBossEvent_CL`](../tables/jbossevent-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`JuniperIDP_CL`](../tables/juniperidp-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`MarkLogicAudit_CL`](../tables/marklogicaudit-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`MongoDBAudit_CL`](../tables/mongodbaudit-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`NGINX_CL`](../tables/nginx-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`OracleWebLogicServer_CL`](../tables/oracleweblogicserver-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`PostgreSQL_CL`](../tables/postgresql-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`SecurityBridgeLogs_CL`](../tables/securitybridgelogs-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
 | [`SquidProxy_CL`](../tables/squidproxy-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | - | Analytics |
-| [`Tomcat_CL`](../tables/tomcat-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency), [[Deprecated] Ubiquiti UniFi](../connectors/ubiquitiunifi.md) | Analytics, Hunting, Workbooks |
+| [`Tomcat_CL`](../tables/tomcat-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency), [[Deprecated] Ubiquiti UniFi](../connectors/ubiquitiunifi.md) | Analytics, Hunting, Workbooks |
 | [`VectraStream_CL`](../tables/vectrastream-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`ZPA_CL`](../tables/zpa-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`meraki_CL`](../tables/meraki-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`vcenter_CL`](../tables/vcenter-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`ZPA_CL`](../tables/zpa-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`meraki_CL`](../tables/meraki-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`vcenter_CL`](../tables/vcenter-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.

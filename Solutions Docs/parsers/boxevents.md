@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`BoxEventsV2_CL`](../tables/boxeventsv2-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`BoxEventsV2_CL`](../tables/boxeventsv2-cl.md) | ✓ | ✓ | ✓ |
 | [`BoxEvents_CL`](../tables/boxevents-cl.md) 🔶 | ✗ | ✓ | ✗ |
 
 ---

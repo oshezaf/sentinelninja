@@ -19,10 +19,9 @@
 | **Version** | 3.3.6 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-16 |
+| **Last Updated** | 2026-02-24 |
 | **Solution Folder** | [Microsoft Entra ID](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azureactivedirectory) |
-| **Popularity** | 🟢 High (95%) |
-| **Rating** | ★★★☆☆ 2.7/5 (3 ratings) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azureactivedirectory) · Rating: ★★★☆☆ 2.7/5 (3 ratings) · Popularity: 🟢 High (95%) |
 
 The [Microsoft Entra ID](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)  solution for Microsoft Sentinel enables you to ingest Microsoft Entra ID [Audit](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-audit-logs), [Sign-in](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-sign-ins), [Provisioning](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-provisioning-logs), [Risk Events and Risky User/Service Principal](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk#risky-users) logs using Diagnostic Settings into Microsoft Sentinel.
 

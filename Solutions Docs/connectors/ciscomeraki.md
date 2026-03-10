@@ -19,7 +19,6 @@
 | **Used in Solutions** | [CiscoMeraki](../solutions/ciscomeraki.md) |
 | **Collection Method** | [MMA](../methods/mma.md) |
 | **Connector Definition Files** | [Connector_Syslog_CiscoMeraki.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Data%20Connectors/Connector_Syslog_CiscoMeraki.json) |
-| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 
 The [Cisco Meraki](https://meraki.cisco.com/) connector allows you to easily connect your Cisco Meraki (MX/MR/MS) logs with Microsoft Sentinel. This gives you more insight into your organization's network and improves your security operation capabilities.
 
@@ -35,7 +34,7 @@ This connector ingests data into the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md) | ? | ✓ | ? |
 | [`Syslog`](../tables/syslog.md) | ✓ | ✓ | ✓ |
-| [`meraki_CL`](../tables/meraki-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`meraki_CL`](../tables/meraki-cl.md) | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

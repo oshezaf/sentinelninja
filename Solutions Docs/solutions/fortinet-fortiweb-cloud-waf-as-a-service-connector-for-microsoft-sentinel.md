@@ -20,9 +20,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-23 |
 | **Solution Folder** | [Fortinet FortiWeb Cloud WAF-as-a-Service connector for Microsoft Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiWeb%20Cloud%20WAF-as-a-Service%20connector%20for%20Microsoft%20Sentinel) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-fortiwebcloud) |
-| **Popularity** | 🔵 Medium (61%) |
-| **Rating** | ★★★★★ 5.0/5 (2 ratings) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-fortiwebcloud) · Rating: ★★★★★ 5.0/5 (2 ratings) · Popularity: 🔵 Medium (61%) |
 
 The [Fortinet FortiWeb Cloud WAF-as-a-Service connector](https://www.fortinet.com/products/web-application-firewall/fortiweb) solution for Microsoft Sentinel provides an automated approach for SecOps analysts to remediate attacks at application level by blocking suspicious IP and URL and also empowers to gather threat intelligence data for malicious IP activity. By leveraging the FortiWeb API, the connector can automate these security operations, tasks using Microsoft Sentinel Playbooks which can dramatically reduce the window that attackers can take advantage of.
 

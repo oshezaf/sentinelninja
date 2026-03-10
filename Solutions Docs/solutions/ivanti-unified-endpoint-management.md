@@ -18,8 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-07-05 |
 | **Solution Folder** | [Ivanti Unified Endpoint Management](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Ivanti%20Unified%20Endpoint%20Management) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ivantiuem) |
-| **Popularity** | 🔵 Medium (52%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ivantiuem) · Popularity: 🔵 Medium (52%) |
 | **Pre-requisites** | [Syslog](syslog.md) |
 
 The [Ivanti Unified Endpoint Management](https://www.ivanti.com/products/endpoint-manager) data connector provides the capability to ingest [Ivanti UEM Alerts](https://help.ivanti.com/ld/help/en_US/LDMS/11.0/Windows/alert-c-monitoring-overview.htm) into Microsoft Sentinel. 

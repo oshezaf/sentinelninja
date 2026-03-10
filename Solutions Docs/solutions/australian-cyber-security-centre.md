@@ -18,8 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-23 |
 | **Solution Folder** | [Australian Cyber Security Centre](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Australian%20Cyber%20Security%20Centre) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-australiancybersecurity) |
-| **Popularity** | ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-australiancybersecurity) · Popularity: ⚪ Very Low (0%) |
 
 This solution allows customers to share threat intelligence with the Australian Cyber Security Centre (ACSC) through the Cyber Threat Intelligence Sharing (CTIS) program. This solution contains a playbook that can be used to get indicators from Microsoft Sentinel and convert them into STIX bundles to be posted to the CTIS TAXII 2.1 server as a Contributing Partner. This solution is only available to deeded ACSC partners that have completed onboarding to the CTIS program. Credentials will be provided during the onboarding process. For more information please contact community@ctis-au.org or visit the [ACSC Partner Portal](https://partners.cyber.gov.au/login?ec=302&startURL=%2Fs%2F).
 

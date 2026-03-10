@@ -9,12 +9,12 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="send-incident-teams-adaptive-card-with-xdr-portal-links">Send incident Teams Adaptive Card with XDR Portal links</h1>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Back to Content Index</a></p>
+<h1>Send incident Teams Adaptive Card with XDR Portal links</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook will send a Teams adaptive card with incident and entity information with all links pointing to the security.microsoft.com portal</p>
 <table>
@@ -39,20 +39,20 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-Incident-Teams-Adaptive-Card-XDRPortal/readme.md">Send-Incident-Teams-Adaptive-Card-XDRPortal/readme.md</a></em></p>
 </blockquote>
-<h1 id="send-incident-teams-adaptive-card-xdrportal">Send-Incident-Teams-Adaptive-Card-XDRPortal</h1>
+<h1>Send-Incident-Teams-Adaptive-Card-XDRPortal</h1>
 <p>author: Brian Delaney</p>
-<h2 id="summary">Summary</h2>
+<h2>Summary</h2>
 <p>This playbook sends a Teams adaptive card with an incident report including alert details and entity information. Incident and entity links go to the security.microsoft.com portal.  Sentinel must be connected to the XDR portal for this to work on all incidents.</p>
-<h2 id="prerequisites">Prerequisites</h2>
+<h2>Prerequisites</h2>
 <ul>
 <li>A Microsoft 365 (M365) account to send Teams cards (the user account will be used in the Microsoft Teams connector for sending emails).</li>
 <li>Sentinel must be connected to the <a href="https://learn.microsoft.com/en-us/azure/sentinel/move-to-defender">XDR Portal</a></li>
 </ul>
-<h2 id="deployment-instructions">Deployment instructions</h2>
+<h2>Deployment instructions</h2>
 <ol>
 <li>To deploy the playbook, click the Deploy to Azure button below. This will launch the ARM Template deployment wizard.</li>
 <li>Fill in the required parameters:<ul>
@@ -65,8 +65,8 @@
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FSend-Incident-Teams-Adaptive-Card-XDRPortal%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
 <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FSend-Incident-Teams-Adaptive-Card-XDRPortal%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a>
 <br><br></p>
-<h2 id="post-deployment-instructions">Post-deployment Instructions</h2>
-<h3 id="authorize-connections">Authorize connections</h3>
+<h2>Post-deployment Instructions</h2>
+<h3>Authorize connections</h3>
 <p>Once deployment is complete, authorize the connection.</p>
 <ol>
 <li>Open the Logic App in the Azure portal.</li>
@@ -76,7 +76,7 @@
 <li>Sign in with the account to be used for sending email</li>
 <li>Click Save.</li>
 </ol>
-<h3 id="select-a-team-channel">Select a Team &amp; Channel</h3>
+<h3>Select a Team &amp; Channel</h3>
 <ol>
 <li>With the Logic App open in the Azure portal locate the 'Post card in a chat or channel' step and click it</li>
 <li>Select the appropriate team in the <em>Team</em> drop down menu</li>
@@ -86,7 +86,7 @@
 <blockquote>
 <p>Note: If you do not see the desired Team/Channel, ensure that the user that made the connection is a member of the team and has access to the channel.</p>
 </blockquote>
-<h3 id="grant-permissions">Grant Permissions</h3>
+<h3>Grant Permissions</h3>
 <ol>
 <li>Locate and note the Logic App managed identity id (Logic App -&gt; Settings -&gt; Identity)</li>
 <li>Locate a note the Entra ID Tenant ID (Entra ID -&gt; Tenant ID)</li>
@@ -110,18 +110,18 @@ foreach ($PermissionName in $permissions) {
 Write-Host &quot;Assigned permissions to Managed Identity Service Principal.&quot;
 
 </code></pre>
-<h3 id="attach-the-playbook">Attach the playbook</h3>
+<h3>Attach the playbook</h3>
 <ol>
 <li>In Microsoft Sentinel, configure an automation rule to trigger this playbook when an incident is created.
    - <a href="https://docs.microsoft.com/azure/sentinel/automate-incident-handling-with-automation-rules#creating-and-managing-automation-rules">Learn more about automation rules</a></li>
 </ol>
-<h2 id="screenshots">Screenshots</h2>
+<h2>Screenshots</h2>
 <p><strong>Playbook</strong><br>
 <img alt="Playbook" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-Incident-Teams-Adaptive-Card-XDRPortal/images/LightPlaybook_SendTeamsCardXDR.png" /></p>
 <p><strong>Email</strong><br>
 <img alt="Email" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-Incident-Teams-Adaptive-Card-XDRPortal/images/LightCard_SendTeamsCardXDR.png" /></p>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/sentinelsoaressentials.html">Back to SentinelSOARessentials</a></p>
 </div>
 

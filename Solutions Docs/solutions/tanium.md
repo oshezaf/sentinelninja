@@ -21,8 +21,7 @@
 | **First Published** | 2022-05-16 |
 | **Last Updated** | 2025-07-03 |
 | **Solution Folder** | [Tanium](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/taniuminc1646329360287.tanium_sentinel_connector) |
-| **Popularity** | 🔵 Medium (74%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/taniuminc1646329360287.tanium_sentinel_connector) · Popularity: 🔵 Medium (74%) |
 
 The [Tanium](https://www.tanium.com/) solution for Microsoft Sentinel enables you to ingest Tanium Threat Response alerts as Microsoft Sentinel incidents as well as incorporate Tanium's real-time endpoint data.
 

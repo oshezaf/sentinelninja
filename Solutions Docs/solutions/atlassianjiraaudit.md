@@ -20,8 +20,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-10 |
 | **Solution Folder** | [AtlassianJiraAudit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-atlassianjiraaudit) |
-| **Popularity** | 🔵 Medium (79%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-atlassianjiraaudit) · Popularity: 🔵 Medium (79%) |
 
 The [Atlassian Jira](https://www.atlassian.com/software/jira) Audit solution provides the capability to ingest [Jira Audit Records](https://support.atlassian.com/jira-cloud-administration/docs/audit-activities-in-jira-applications/) events into Microsoft Sentinel through the REST API. Refer to [API documentation](https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-audit-records/) for more information.
 
@@ -46,7 +45,7 @@ This solution takes a dependency on the following technologies, and some of thes
 This solution provides **2 data connector(s)**:
 
 - [Atlassian Jira Audit](../connectors/jiraauditapi.md) 🔶
-- [Atlassian Jira Audit (using REST API)](../connectors/jiraauditccpdefinition.md) 🔶
+- [Atlassian Jira Audit (using REST API)](../connectors/jiraauditccpdefinition.md)
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
@@ -57,7 +56,7 @@ This solution uses **2 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`Jira_Audit_CL`](../tables/jira-audit-cl.md) 🔶 | [Atlassian Jira Audit](../connectors/jiraauditapi.md) | Analytics, Hunting, Workbooks |
-| [`Jira_Audit_v2_CL`](../tables/jira-audit-v2-cl.md) 🔶 | [Atlassian Jira Audit](../connectors/jiraauditapi.md), [Atlassian Jira Audit (using REST API)](../connectors/jiraauditccpdefinition.md) | Analytics, Hunting, Workbooks |
+| [`Jira_Audit_v2_CL`](../tables/jira-audit-v2-cl.md) | [Atlassian Jira Audit](../connectors/jiraauditapi.md), [Atlassian Jira Audit (using REST API)](../connectors/jiraauditccpdefinition.md) | Analytics, Hunting, Workbooks |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.

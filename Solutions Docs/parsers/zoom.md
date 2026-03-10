@@ -20,7 +20,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Zoom_CL`](../tables/zoom-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`Zoom_CL`](../tables/zoom-cl.md) | ✓ | ✓ | ✓ |
 
 ---
 

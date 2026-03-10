@@ -9,12 +9,12 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="ip-enrichment-domaintools-parsed-whois">IP Enrichment - DomainTools Parsed Whois</h1>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Back to Content Index</a></p>
+<h1>IP Enrichment - DomainTools Parsed Whois</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook uses the DomainTools Parsed Whois API. Given a ip address or set of ip addresses associated with an incident, return Whois information data for the extracted ip addresess as comments to the incident.</p>
 <table>
@@ -39,13 +39,13 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-IP-Address-Playbook/readme.md">DomainTools-IP-Address-Playbook/readme.md</a></em></p>
 </blockquote>
 <p><img alt="DomainTools" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-IP-Address-Playbook/images/logo.png" /><br></p>
-<h2 id="domaintools-ip-address-enrichment-playbook">DomainTools IP Address Enrichment Playbook</h2>
-<h2 id="table-of-contents">Table of Contents</h2>
+<h2>DomainTools IP Address Enrichment Playbook</h2>
+<h2>Table of Contents</h2>
 <ol>
 <li><a href="#overview">Overview</a></li>
 <li><a href="#deployplaybook">Deploy DomainTools-IP-Address-Playbook</a></li>
@@ -55,7 +55,7 @@
 <li><a href="#postdeployment">Post Deployment Steps</a></li>
 </ol>
 <p><a name="overview"></p>
-<h2 id="overview">Overview</h2>
+<h2>Overview</h2>
 <p>This playbook uses the DomainTools Parsed Whois API. It is able to provide whois information for a IP or set of IPs associated with an incident. </p>
 <p>Visit https://www.domaintools.com/integrations to request a Api key.</p>
 <p>When a new Azure Sentinel Incident is created, and this playbook is triggered, it performs these actions:</p>
@@ -66,20 +66,20 @@
 </ul>
 <p><img alt="Incident Comments" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-IP-Address-Playbook/images/ip_comments.png" /></p>
 <p><a name="deployplaybook"></p>
-<h2 id="links-to-deploy-the-domaintools-ip-address-playbook">Links to deploy the DomainTools IP Address Playbook</h2>
+<h2>Links to deploy the DomainTools IP Address Playbook</h2>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDomainTools%2FPlaybooks%2FDomainTools-IP-Address-Playbook%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDomainTools%2FPlaybooks%2FDomainTools-IP-Address-Playbook%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
 <p><a name="authentication"></p>
-<h2 id="authentication">Authentication</h2>
+<h2>Authentication</h2>
 <p>Authentication methods this connector supports:
  - <a href="https://www.domaintools.com/integrations">API Key authentication</a></p>
 <p><a name="prerequisites"></p>
-<h2 id="prerequisites">Prerequisites</h2>
+<h2>Prerequisites</h2>
 <ul>
 <li>A DomainTools API Key</li>
 <li>DomainTools Function App should be deployed</li>
 </ul>
 <p><a name="deployment"></p>
-<h3 id="deployment-instructions">Deployment instructions</h3>
+<h3>Deployment instructions</h3>
 <ul>
 <li>Deploy the playbooks by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
 <li>Fill in the required parameters for deploying the playbook.
@@ -87,17 +87,17 @@
 <li>Click "Review + create". Once the validation is successful, click on "Create".</li>
 </ul>
 <p><a name="postdeployment"></p>
-<h3 id="post-deployment-instructions">Post-Deployment instructions:</h3>
+<h3>Post-Deployment instructions:</h3>
 <ul>
 <li>As a best practice, we have used the Sentinel connection in Logic Apps that use "ManagedSecurityIdentity" permissions. Please refer to <a href="https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-managed-identity-for-azure-sentinel-logic-apps/ba-p/2068204">this document</a> and provide permissions to the Logic App accordingly.</li>
 </ul>
-<h4 id="b-configurations-in-sentinel">b. Configurations in Sentinel:</h4>
+<h4>b. Configurations in Sentinel:</h4>
 <ul>
 <li>In Azure Sentinel, analytical rules should be configured to trigger an incident with risky IP Address indicators.</li>
 <li>Configure the automation rules to trigger the playbook.</li>
 </ul>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/domaintools.html">Back to DomainTools</a></p>
 </div>
 

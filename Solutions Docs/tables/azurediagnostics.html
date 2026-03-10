@@ -5,16 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AzureDiagnostics &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
-
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="azurediagnostics">AzureDiagnostics</h1>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Back to Tables Index</a></p>
+<h1>AzureDiagnostics</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <p>Reference for AzureDiagnostics table in Azure Monitor Logs.</p>
 <table>
@@ -55,9 +57,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="schema-169-columns">Schema (169 columns)</h2>
+<h2>Schema (169 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azurediagnostics">Azure Monitor documentation</a></p>
-<table>
+<table id="schema-table">
 <thead>
 <tr>
 <th style="text-align: left;">Column Name</th>
@@ -913,7 +915,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="solutions-36">Solutions (36)</h2>
+<h2>Solutions (36)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a></li>
@@ -953,7 +955,7 @@
 <li><a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a></li>
 <li><a href="../solutions/zinc-open-source.html">Zinc Open Source</a></li>
 </ul>
-<h2 id="connectors-15">Connectors (15)</h2>
+<h2>Connectors (15)</h2>
 <p>This table is ingested by the following connectors:</p>
 <table>
 <thead>
@@ -1026,8 +1028,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table-79">Content Items Using This Table (79)</h2>
-<h3 id="analytic-rules-36">Analytic Rules (36)</h3>
+<h2>Content Items Using This Table (79)</h2>
+<h3>Analytic Rules (36)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
 <table>
 <thead>
@@ -1247,7 +1249,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries-19">Hunting Queries (19)</h3>
+<h3>Hunting Queries (19)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong> <code>Category in "ApplicationGatewayAccessLog,ApplicationGatewayFirewallLog,FrontdoorAccessLog,FrontdoorWebApplicationFirewallLog"</code></p>
 <table>
 <thead>
@@ -1390,7 +1392,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks-24">Workbooks (24)</h3>
+<h3>Workbooks (24)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong> <code>Category in "ApplicationGatewayAccessLog,ApplicationGatewayFirewallLog,FrontdoorAccessLog,FrontdoorWebApplicationFirewallLog"</code></p>
 <table>
 <thead>
@@ -1684,8 +1686,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="parsers-using-this-table-2">Parsers Using This Table (2)</h2>
-<h3 id="other-parsers-2">Other Parsers (2)</h3>
+<h2>Parsers Using This Table (2)</h2>
+<h3>Other Parsers (2)</h3>
 <table>
 <thead>
 <tr>
@@ -1707,7 +1709,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="selection-criteria-summary-37-criteria-76-total-references">Selection Criteria Summary (37 criteria, 76 total references)</h2>
+<h2>Selection Criteria Summary (37 criteria, 76 total references)</h2>
 <p>References by type: 15 connectors, 60 content items, 0 ASIM parsers, 1 other parsers.</p>
 <table>
 <thead>
@@ -1818,71 +1820,7 @@
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.SERVICEBUS"</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.DATALAKESTORE"</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.BATCH"</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.KEYVAULT"</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ResourceType in "APPLICATIONGATEWAYS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS"</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.SEARCH"</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>Category in "AutomaticTuning,Basic,Blocks,DatabaseWaitStatistics,Deadlocks,DevOpsOperationsAudit,Errors,InstanceAndAppAdvanced,QueryStoreWaitStatistics,SQLInsights,SQLSecurityAuditEvents,Timeouts,WorkloadManagement"</code><br><code>Category contains "SQLSecurityAuditEvents"</code><br><code>ResourceProvider == "MICROSOFT.SQL"</code><br><code>ResourceType == "SERVERS/DATABASES"</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>Resource == "SlashnextFunctionApp"</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ResourceType == "AZUREFIREWALLS"</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -1898,7 +1836,39 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.KEYVAULT"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Resource == "SlashnextFunctionApp"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.DATALAKESTORE"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>Category in "cluster-autoscaler,guard,kube-apiserver,kube-audit,kube-audit-admin,kube-controller-manager,kube-scheduler"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.SEARCH"</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -1914,6 +1884,14 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.SERVICEBUS"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.STREAMANALYTICS"</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1922,7 +1900,31 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>ResourceType in "APPLICATIONGATEWAYS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ResourceType == "AZUREFIREWALLS"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.EVENTHUB"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.BATCH"</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -2027,7 +2029,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="category">Category</h3>
+<h3>Category</h3>
 <table>
 <thead>
 <tr>
@@ -2402,7 +2404,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="resource">Resource</h3>
+<h3>Resource</h3>
 <table>
 <thead>
 <tr>
@@ -2425,7 +2427,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="resourceprovider">ResourceProvider</h3>
+<h3>ResourceProvider</h3>
 <table>
 <thead>
 <tr>
@@ -2463,14 +2465,6 @@
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>MICROSOFT.SERVICEBUS</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>MICROSOFT.DATALAKESTORE</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -2479,7 +2473,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>MICROSOFT.BATCH</code></td>
+<td style="text-align: left;"><code>MICROSOFT.SEARCH</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -2487,7 +2481,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>MICROSOFT.SEARCH</code></td>
+<td style="text-align: left;"><code>MICROSOFT.SERVICEBUS</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -2504,6 +2498,14 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>MICROSOFT.EVENTHUB</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>MICROSOFT.BATCH</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -2528,7 +2530,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="resourcetype">ResourceType</h3>
+<h3>ResourceType</h3>
 <table>
 <thead>
 <tr>
@@ -2541,6 +2543,14 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align: left;"><code>PUBLICIPADDRESSES</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>8</strong></td>
+</tr>
 <tr>
 <td style="text-align: left;"><code>APPLICATIONGATEWAYS</code></td>
 <td style="text-align: center;">1</td>
@@ -2558,20 +2568,20 @@
 <td style="text-align: center;"><strong>8</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>PUBLICIPADDRESSES</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>8</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>VAULTS</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">8</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;"><strong>8</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SERVERS/DATABASES</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>5</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>CDNWEBAPPLICATIONFIREWALLPOLICIES</code></td>
@@ -2590,14 +2600,6 @@
 <td style="text-align: center;"><strong>5</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>SERVERS/DATABASES</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>5</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>PROFILES</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">4</td>
@@ -2608,9 +2610,33 @@
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 </div>
-
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
 </body>
 </html>

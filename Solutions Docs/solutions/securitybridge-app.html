@@ -9,14 +9,14 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="securitybridge-sap-data-to-microsoft-sentinel">SecurityBridge: SAP data to Microsoft Sentinel</h1>
+<h1>SecurityBridge: SAP data to Microsoft Sentinel</h1>
 <p><em>Solution: SecurityBridge App</em></p>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SecurityBridgeLogo-Vector-TM_75x75.svg" alt="SecurityBridge App Logo" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
 <table>
 <thead>
@@ -60,35 +60,30 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Marketplace</strong></td>
-<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/securitybridge1647511278080.securitybridge-sentinel-app-1">Azure Marketplace</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Popularity</strong></td>
-<td style="text-align: left;">⚪ Very Low (9%)</td>
+<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/securitybridge1647511278080.securitybridge-sentinel-app-1">Azure Marketplace</a> · Popularity: ⚪ Very Low (9%)</td>
 </tr>
 </tbody>
 </table>
 <p>The <a href="https://securitybridge.com/">SecurityBridge App</a> solution provides the capability to ingest SecurityBridge Threat Detection events from all on-premise and cloud based SAP instances into Microsoft Sentinel.</p>
 <p>This solution is dependent on the Custom logs via AMA connector to collect the logs. The Custom logs solution will be installed as part of this solution installation. </p>
 <p><strong>NOTE</strong>: Microsoft recommends installation of Custom logs via AMA Connector. Legacy connector uses the Log Analytics agent which were deprecated on <strong>Aug 31, 2024.</strong> Using MMA and AMA on same machine can cause log duplication and extra ingestion cost <a href="https://learn.microsoft.com/azure/sentinel/ama-migrate?WT.mc_id=Portal-fx">more details</a>.</p>
-<h2 id="contents">Contents</h2>
+<h2>Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#tables-used">Tables Used</a></li>
 <li><a href="#content-items">Content Items</a></li>
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
-<h2 id="data-connectors">Data Connectors</h2>
+<h2>Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong> (plus 1 discovered⚠️):</p>
 <ul>
 <li><a href="../connectors/securitybridge.html">SecurityBridge Solution for SAP</a></li>
-<li><a href="../connectors/securitybridgesap.html">SecurityBridge Threat Detection for SAP</a> ⚠️ 🔶</li>
+<li><a href="../connectors/securitybridgesap.html">SecurityBridge Threat Detection for SAP</a> ⚠️</li>
 </ul>
 <blockquote>
 <p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
-<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
-<h2 id="tables-used">Tables Used</h2>
+<h2>Tables Used</h2>
 <p>This solution uses <strong>3 table(s)</strong>:</p>
 <table>
 <thead>
@@ -105,7 +100,7 @@
 <td>-</td>
 </tr>
 <tr>
-<td><a href="../tables/securitybridgelogs-cl.html"><code>SecurityBridgeLogs_CL</code></a> 🔶</td>
+<td><a href="../tables/securitybridgelogs-cl.html"><code>SecurityBridgeLogs_CL</code></a></td>
 <td><a href="../connectors/securitybridgesap.html">SecurityBridge Threat Detection for SAP</a></td>
 <td>-</td>
 </tr>
@@ -116,10 +111,7 @@
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
-</blockquote>
-<h2 id="content-items">Content Items</h2>
+<h2>Content Items</h2>
 <p>This solution includes <strong>2 content item(s)</strong>:</p>
 <table>
 <thead>
@@ -139,7 +131,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="analytic-rules">Analytic Rules</h3>
+<h3>Analytic Rules</h3>
 <table>
 <thead>
 <tr>
@@ -158,7 +150,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks</h3>
+<h3>Workbooks</h3>
 <table>
 <thead>
 <tr>
@@ -173,11 +165,11 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityBridge%20App/README.md">SecurityBridge App/README.md</a></em></p>
 </blockquote>
-<h1 id="deployment-of-sentinel-connector-for-securitybridge-threat-detection-for-sap-through-content-hub">Deployment of Sentinel Connector for SecurityBridge Threat Detection for SAP through Content Hub</h1>
+<h1>Deployment of Sentinel Connector for SecurityBridge Threat Detection for SAP through Content Hub</h1>
 <p>This ARM template will deploy a connecter for "SecurityBridge Threat Detection for SAP" with the following elements:
 * Connector
 * Workbook
@@ -189,13 +181,13 @@
 * Search for <code>SecurityBridge Threat Detection for SAP</code>
 * Click on <code>Install</code> and then click on <code>Create</code>
 * Follow the steps to install the connector</p>
-<h1 id="deployment-of-sentinel-connector-for-securitybridge-threat-detection-for-sap-through-arm-template">Deployment of Sentinel Connector for SecurityBridge Threat Detection for SAP through ARM template</h1>
+<h1>Deployment of Sentinel Connector for SecurityBridge Threat Detection for SAP through ARM template</h1>
 <p>This ARM template will deploy a connecter for "SecurityBridge Threat Detection for SAP" with the following elements:
 * Connector
 * Workbook
 * Parser Function</p>
 <p>This is only a temporary solution to deploy the connector manually until the official connector is available on the content hub.</p>
-<h3 id="pre-reqs">Pre-reqs</h3>
+<h3>Pre-reqs</h3>
 <ul>
 <li>Log in: You should be logged into the Azure Sentinel Environment</li>
 <li>Workspace Name: Workspace id of the azure sentinel.</li>
@@ -205,7 +197,7 @@
 <li>Cron job to be added to the machine to append the newly created logs into an already existing file</li>
 <li>Logs reception in a custom table named "SecurityBridgeLogs_CL"</li>
 </ul>
-<h3 id="installation-steps">Installation Steps</h3>
+<h3>Installation Steps</h3>
 <ul>
 <li>Click on the Deploy to Azure button below</li>
 <li>Select the <strong>Resource Group</strong> where Azure Sentinel is deployed</li>
@@ -216,7 +208,7 @@
 <li>Click on <strong>Create</strong></li>
 </ul>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Ffrozenstrawberries%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSecurityBridge%2FPackage%2FmainTemplate.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
-<h2 id="release-notes">Release Notes</h2>
+<h2>Release Notes</h2>
 <table>
 <thead>
 <tr>
@@ -254,8 +246,8 @@
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 </div>
 
 </body>

@@ -19,10 +19,9 @@
 | **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-09-08 |
+| **Last Updated** | 2026-01-23 |
 | **Solution Folder** | [CiscoMeraki](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ciscomeraki) |
-| **Popularity** | 🟢 High (89%) |
-| **Rating** | ★☆☆☆☆ 1.0/5 (3 ratings) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ciscomeraki) · Rating: ★☆☆☆☆ 1.0/5 (3 ratings) · Popularity: 🟢 High (89%) |
 | **Pre-requisites** | [CustomLogsAma](customlogsama.md) |
 
 The Cisco Meraki solution allows you to easily connect your Cisco Meraki (MX/MR/MS) logs with Microsoft Sentinel. This gives you more insight into your organization's network and improves your security operation capabilities.
@@ -55,9 +54,9 @@ This solution depends on **1 other solution(s)**:
 
 This solution has **3 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) ⚠️ 🔶
-- [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md) ⚠️ 🔶
-- [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) ⚠️ 🔶
+- [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) ⚠️
+- [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md) ⚠️
+- [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) ⚠️
 
 Connectors from dependency solutions:
 
@@ -73,24 +72,24 @@ This solution uses **18 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | Workbooks |
-| [`JBossEvent_CL`](../tables/jbossevent-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`JuniperIDP_CL`](../tables/juniperidp-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`MarkLogicAudit_CL`](../tables/marklogicaudit-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`MongoDBAudit_CL`](../tables/mongodbaudit-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`NGINX_CL`](../tables/nginx-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`OracleWebLogicServer_CL`](../tables/oracleweblogicserver-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`PostgreSQL_CL`](../tables/postgresql-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`SecurityBridgeLogs_CL`](../tables/securitybridgelogs-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md), [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | Workbooks |
+| [`JBossEvent_CL`](../tables/jbossevent-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`JuniperIDP_CL`](../tables/juniperidp-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`MarkLogicAudit_CL`](../tables/marklogicaudit-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`MongoDBAudit_CL`](../tables/mongodbaudit-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`NGINX_CL`](../tables/nginx-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`OracleWebLogicServer_CL`](../tables/oracleweblogicserver-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`PostgreSQL_CL`](../tables/postgresql-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`SecurityBridgeLogs_CL`](../tables/securitybridgelogs-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
 | [`SquidProxy_CL`](../tables/squidproxy-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`Syslog`](../tables/syslog.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | Workbooks |
-| [`Tomcat_CL`](../tables/tomcat-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`Syslog`](../tables/syslog.md) | [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md), [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | Workbooks |
+| [`Tomcat_CL`](../tables/tomcat-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
 | [`VectraStream_CL`](../tables/vectrastream-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`ZPA_CL`](../tables/zpa-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`meraki_CL`](../tables/meraki-cl.md) 🔶 | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md), [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | Workbooks |
-| [`vcenter_CL`](../tables/vcenter-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`ZPA_CL`](../tables/zpa-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`meraki_CL`](../tables/meraki-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md), [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | Workbooks |
+| [`vcenter_CL`](../tables/vcenter-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
 
 ### Internal Tables
 

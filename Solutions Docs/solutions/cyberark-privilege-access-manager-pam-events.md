@@ -20,8 +20,7 @@
 | **Author** | Cyberark |
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [CyberArk Enterprise Password Vault (EPV) Events](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArk%20Enterprise%20Password%20Vault%20%28EPV%29%20Events) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cyberark.cyberark_epv_events_mss) |
-| **Popularity** | 🔵 Medium (67%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cyberark.cyberark_epv_events_mss) · Popularity: 🔵 Medium (67%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 [CyberArk Enterprise Password Vault](https://docs.cyberark.com/Product-Doc/OnlineHelp/AAM-CP/Latest/en/Content/CP%20for%20zOS/Installing-the-Enterprise-Password-Vault.htm?TocPath=Installation%7Cz%2FOS%20Credential%20Provider%7C_____2#:~:text=%20Enterprise%20Password%20Vault%20%201%20Install%20the,applications%20and%20create%2C%20request%2C%20access%20and...%20More%20) Solution for Microsoft Sentinel enables ingestion of Common Event Format (CEF) logs into Microsoft Sentinel. The EPV generates an xml Syslog message for every action taken against the Vault. The EPV will send the xml messages through the Sentinel.xsl translator to be converted into CEF standard format and sent to a syslog server of your choice (syslog-ng, rsyslog). The Log Analytics agent installed on your syslog staging server will import the messages into Azure Log Analytics. Refer to the [CyberArk documentation](https://docs.cyberark.com/Product-Doc/OnlineHelp/PAS/Latest/en/Content/PASIMP/DV-Integrating-with-SIEM-Applications.htm) for more guidance on SIEM integrations.

@@ -21,8 +21,7 @@
 | **First Published** | 2022-10-18 |
 | **Last Updated** | 2023-10-16 |
 | **Solution Folder** | [Dynatrace](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/dynatrace.dynatrace_azure_sentinel) |
-| **Popularity** | 🔵 Medium (69%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/dynatrace.dynatrace_azure_sentinel) · Popularity: 🔵 Medium (69%) |
 
 - Review the solution [Release Notes](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/ReleaseNotes.md)
 

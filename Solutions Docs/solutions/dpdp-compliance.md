@@ -17,9 +17,9 @@
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2026-01-26 |
+| **Last Updated** | 2026-02-06 |
 | **Solution Folder** | [DPDP Compliance](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DPDP%20Compliance) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-dpdp-compliance) |
-| **Popularity** | ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-dpdp-compliance) · Popularity: ⚪ Very Low (0%) |
 | **Pre-requisites** | [Microsoft Defender XDR](microsoft-defender-xdr.md), [Microsoft Purview](microsoft-purview.md), [Microsoft Purview Information Protection](microsoft-purview-information-protection.md), [Azure SQL Database solution for sentinel](azure-sql-database-solution-for-sentinel.md), [Microsoft 365](microsoft-365.md), [Microsoft Entra ID](microsoft-entra-id.md) |
 
 This workbook helps you track, visualize and monitor DPDP (Digital Personal Data Protection) related requirements across your enterprise. It consolidates data from Defender XDR, Microsoft Purview, Azure SQL Databases, Microsoft 365, UEBA and Entra ID solution.

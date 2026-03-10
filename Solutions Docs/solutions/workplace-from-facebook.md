@@ -18,8 +18,7 @@
 | **Author** | Microsoft |
 | **First Published** | 2022-05-18 |
 | **Solution Folder** | [Workplace from Facebook](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Workplace%20from%20Facebook) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-workplacefromfacebook) |
-| **Popularity** | 🟡 Low (34%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-workplacefromfacebook) · Popularity: 🟡 Low (34%) |
 
 The [Workplace](https://www.workplace.com/) data connector provides the capability to ingest common Workplace events into Microsoft Sentinel through Webhooks.
 
@@ -41,9 +40,7 @@ This solution takes a dependency on the following technologies, and some of thes
 
 This solution provides **1 data connector(s)**:
 
-- [Workplace from Facebook](../connectors/workplacefacebook.md) 🔶
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+- [Workplace from Facebook](../connectors/workplacefacebook.md)
 
 ## Tables Used
 
@@ -51,10 +48,8 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Workplace_Facebook_CL`](../tables/workplace-facebook-cl.md) 🔶 | [Workplace from Facebook](../connectors/workplacefacebook.md) | - |
+| [`Workplace_Facebook_CL`](../tables/workplace-facebook-cl.md) | [Workplace from Facebook](../connectors/workplacefacebook.md) | - |
 
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 ## Content Items
 
 This solution includes **1 content item(s)** (0 in solution, 1 discovered 🔍):

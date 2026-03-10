@@ -17,9 +17,9 @@
 | **Version** | 3.0.4 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-16 |
+| **Last Updated** | 2026-02-19 |
 | **Solution Folder** | [Endpoint Threat Protection Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Endpoint%20Threat%20Protection%20Essentials) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-endpointthreat) |
-| **Popularity** | 🔵 Medium (72%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-endpointthreat) · Popularity: 🔵 Medium (72%) |
 | **Pre-requisites** | [Windows Security Events](windows-security-events.md), [Microsoft Defender XDR](microsoft-defender-xdr.md), [Windows Forwarded Events](windows-forwarded-events.md) |
 
 The **Endpoint Threat Protection Essentials** solution provides content to monitor, detect and investigate threats related to windows machines. The solution looks for things like suspicious commandlines, PowerShell based attacks, LOLBins, registry manipulation, scheduled tasks etc. which are some of the most commonly used techniques by attackers when targeting endpoints.  

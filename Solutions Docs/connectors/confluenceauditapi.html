@@ -9,17 +9,17 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="deprecated-atlassian-confluence-audit">🚫 🔍 [Deprecated] Atlassian Confluence Audit</h1>
+<h1>🚫 🔍 [Deprecated] Atlassian Confluence Audit</h1>
 <blockquote>
 <p>🚫 <strong>Deprecated:</strong> This connector has been deprecated and may be removed in future versions.</p>
 <p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
 </blockquote>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
@@ -53,14 +53,10 @@
 <td style="text-align: left;"><strong>Ingestion API</strong></td>
 <td style="text-align: left;"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Azure Function code uses SharedKey/HTTP Data Collector API</em></td>
 </tr>
-<tr>
-<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
-<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
-</tr>
 </tbody>
 </table>
 <p>The <a href="https://www.atlassian.com/software/confluence">Atlassian Confluence</a> Audit data connector provides the capability to ingest <a href="https://support.atlassian.com/confluence-cloud/docs/view-the-audit-log/">Confluence Audit Records</a> for more information. The connector provides ability to get events which helps to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more.<p><span style='color:red; font-weight:bold;'>NOTE</span>: This data connector has been deprecated, consider moving to the CCP data connector available in the solution which replaces ingestion via the <a href='https://learn.microsoft.com/en-us/azure/azure-monitor/logs/custom-logs-migrate' style='color:#1890F1;'>deprecated HTTP Data Collector API</a>.</p></p>
-<h2 id="tables-ingested">Tables Ingested</h2>
+<h2>Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -73,7 +69,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/confluence-audit-cl.html"><code>Confluence_Audit_CL</code></a> 🔶</td>
+<td style="text-align: left;"><a href="../tables/confluence-audit-cl.html"><code>Confluence_Audit_CL</code></a></td>
 <td style="text-align: center;">?</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">?</td>
@@ -83,14 +79,14 @@
 <blockquote>
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
-<h2 id="permissions">Permissions</h2>
+<h2>Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
 - <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
 <p><strong>Custom Permissions:</strong>
 - <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
 - <strong>REST API Credentials/permissions</strong>: <strong>ConfluenceAccessToken</strong>, <strong>ConfluenceUsername</strong> is required for REST API. <a href="https://developer.atlassian.com/cloud/confluence/rest/api-group-audit/">See the documentation to learn more about API</a>. Check all <a href="https://developer.atlassian.com/cloud/confluence/rest/intro/#auth">requirements and follow  the instructions</a> for obtaining credentials.</p>
-<h2 id="setup-instructions">Setup Instructions</h2>
+<h2>Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 <p><strong>NOTE:</strong> This connector uses Azure Functions to connect to the Confluence REST API to pull its logs into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
@@ -167,8 +163,8 @@ If you're already signed in, go to the next step.</li>
 <li>Once all application settings have been entered, click <strong>Save</strong>.</li>
 </ol>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 </div>
 
 </body>

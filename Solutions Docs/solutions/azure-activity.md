@@ -19,9 +19,9 @@
 | **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-04-18 |
+| **Last Updated** | 2026-02-27 |
 | **Solution Folder** | [Azure Activity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Activity) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azureactivity) |
-| **Popularity** | 🟢 High (96%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azureactivity) · Popularity: 🟢 High (96%) |
 
 The [Azure Activity](https://docs.microsoft.com/azure/azure-monitor/essentials/activity-log) solution for Microsoft Sentinel enables you to ingest Azure Activity Administrative, Security, Service Health, Alert, Recommendation, Policy, Autoscale and Resource Health [logs](https://docs.microsoft.com/azure/azure-monitor/reference/tables/azureactivity) using Diagnostic Settings into Microsoft Sentinel.
 

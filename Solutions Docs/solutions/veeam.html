@@ -9,14 +9,14 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="veeam-app-for-microsoft-sentinel">Veeam App for Microsoft Sentinel</h1>
+<h1>Veeam App for Microsoft Sentinel</h1>
 <p><em>Solution: Veeam</em></p>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/VeeamLogo.svg" alt="Veeam Logo" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
 <table>
 <thead>
@@ -60,11 +60,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Marketplace</strong></td>
-<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/veeamsoftware.azure-sentinel-solution-veeamapp">Azure Marketplace</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Popularity</strong></td>
-<td style="text-align: left;">⚪ Very Low (0%)</td>
+<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/veeamsoftware.azure-sentinel-solution-veeamapp">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
 </tr>
 </tbody>
 </table>
@@ -78,21 +74,18 @@
 <p>e. <a href="https://azure.microsoft.com/products/service-bus/">Azure Relays</a></p>
 <p>f. <a href="https://azure.microsoft.com/products/logic-apps/">Azure Logic Apps</a></p>
 <p>g. <a href="https://learn.microsoft.com/azure/azure-monitor/logs/log-analytics-overview">Azure Log Analytics</a></p>
-<h2 id="contents">Contents</h2>
+<h2>Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#tables-used">Tables Used</a></li>
 <li><a href="#content-items">Content Items</a></li>
 </ul>
-<h2 id="data-connectors">Data Connectors</h2>
+<h2>Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
-<li><a href="../connectors/veeamcustomtablesdataconnector.html">Veeam Data Connector (using Azure Functions)</a> 🔶</li>
+<li><a href="../connectors/veeamcustomtablesdataconnector.html">Veeam Data Connector (using Azure Functions)</a></li>
 </ul>
-<blockquote>
-<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
-</blockquote>
-<h2 id="tables-used">Tables Used</h2>
+<h2>Tables Used</h2>
 <p>This solution uses <strong>8 table(s)</strong>:</p>
 <table>
 <thead>
@@ -114,41 +107,38 @@
 <td>Analytics, Workbooks</td>
 </tr>
 <tr>
-<td><a href="../tables/veeamauthorizationevents-cl.html"><code>VeeamAuthorizationEvents_CL</code></a> 🔶</td>
+<td><a href="../tables/veeamauthorizationevents-cl.html"><code>VeeamAuthorizationEvents_CL</code></a></td>
 <td><a href="../connectors/veeamcustomtablesdataconnector.html">Veeam Data Connector (using Azure Functions)</a></td>
 <td>Workbooks</td>
 </tr>
 <tr>
-<td><a href="../tables/veeamcovewarefindings-cl.html"><code>VeeamCovewareFindings_CL</code></a> 🔶</td>
+<td><a href="../tables/veeamcovewarefindings-cl.html"><code>VeeamCovewareFindings_CL</code></a></td>
 <td><a href="../connectors/veeamcustomtablesdataconnector.html">Veeam Data Connector (using Azure Functions)</a></td>
 <td>-</td>
 </tr>
 <tr>
-<td><a href="../tables/veeammalwareevents-cl.html"><code>VeeamMalwareEvents_CL</code></a> 🔶</td>
+<td><a href="../tables/veeammalwareevents-cl.html"><code>VeeamMalwareEvents_CL</code></a></td>
 <td><a href="../connectors/veeamcustomtablesdataconnector.html">Veeam Data Connector (using Azure Functions)</a></td>
 <td>Analytics, Workbooks</td>
 </tr>
 <tr>
-<td><a href="../tables/veeamonetriggeredalarms-cl.html"><code>VeeamOneTriggeredAlarms_CL</code></a> 🔶</td>
+<td><a href="../tables/veeamonetriggeredalarms-cl.html"><code>VeeamOneTriggeredAlarms_CL</code></a></td>
 <td><a href="../connectors/veeamcustomtablesdataconnector.html">Veeam Data Connector (using Azure Functions)</a></td>
 <td>Analytics, Workbooks</td>
 </tr>
 <tr>
-<td><a href="../tables/veeamsecuritycomplianceanalyzer-cl.html"><code>VeeamSecurityComplianceAnalyzer_CL</code></a> 🔶</td>
+<td><a href="../tables/veeamsecuritycomplianceanalyzer-cl.html"><code>VeeamSecurityComplianceAnalyzer_CL</code></a></td>
 <td><a href="../connectors/veeamcustomtablesdataconnector.html">Veeam Data Connector (using Azure Functions)</a></td>
 <td>Analytics, Workbooks</td>
 </tr>
 <tr>
-<td><a href="../tables/veeamsessions-cl.html"><code>VeeamSessions_CL</code></a> 🔶</td>
+<td><a href="../tables/veeamsessions-cl.html"><code>VeeamSessions_CL</code></a></td>
 <td><a href="../connectors/veeamcustomtablesdataconnector.html">Veeam Data Connector (using Azure Functions)</a></td>
 <td>Analytics</td>
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
-</blockquote>
-<h2 id="content-items">Content Items</h2>
+<h2>Content Items</h2>
 <p>This solution includes <strong>164 content item(s)</strong>:</p>
 <table>
 <thead>
@@ -180,7 +170,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="analytic-rules">Analytic Rules</h3>
+<h3>Analytic Rules</h3>
 <table>
 <thead>
 <tr>
@@ -985,7 +975,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks</h3>
+<h3>Workbooks</h3>
 <table>
 <thead>
 <tr>
@@ -1004,7 +994,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="playbooks">Playbooks</h3>
+<h3>Playbooks</h3>
 <table>
 <thead>
 <tr>
@@ -1091,7 +1081,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="parsers">Parsers</h3>
+<h3>Parsers</h3>
 <table>
 <thead>
 <tr>
@@ -1123,7 +1113,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="watchlists">Watchlists</h3>
+<h3>Watchlists</h3>
 <table>
 <thead>
 <tr>
@@ -1190,7 +1180,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="release-notes">Release Notes</h2>
+<h2>Release Notes</h2>
 <table>
 <thead>
 <tr>
@@ -1218,8 +1208,8 @@
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 </div>
 
 </body>

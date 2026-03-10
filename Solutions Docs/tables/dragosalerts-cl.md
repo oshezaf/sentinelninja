@@ -15,7 +15,7 @@
 
 ## Schema (26 columns)
 
-**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/DragosAlerts_CL.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dragos%5CData%20Connectors%5CDragosSiteStore_CCP/table.json)
 
 | Column Name | Type |
 |:------------|:-----|

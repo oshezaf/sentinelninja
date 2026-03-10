@@ -20,8 +20,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-09-28 |
 | **Solution Folder** | [AWS_IAM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS_IAM) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-amazonwebservicesiam) |
-| **Popularity** | 🟢 High (96%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-amazonwebservicesiam) · Popularity: 🟢 High (96%) |
 
 The [Amazon Web Services (AWS) Identity and Access Management (IAM)](https://aws.amazon.com/iam/) Solution for Microsoft Sentinel allows you to manage resources in AWS via playbooks thats use the [AWS IAM API](https://docs.aws.amazon.com/IAM/latest/APIReference/welcome.html). The Playbboks included in the solution allow Enriching Incident with user information add tag to a user in AWS and delete access keys for users.
 

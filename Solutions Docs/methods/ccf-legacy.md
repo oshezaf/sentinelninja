@@ -28,8 +28,8 @@ Legacy CCF connectors embed their polling configuration directly in the connecto
 
 | Connector | Publisher | Tables | Solution |
 |:----------|:----------|:------:|:---------|
-| [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md) 🔶 | Microsoft | 3 | [CiscoMeraki](../solutions/ciscomeraki.md) |
-| [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) ➕ 🔶 | Microsoft | 3 | [CiscoMeraki](../solutions/ciscomeraki.md) |
+| [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md) | Microsoft | 3 | [CiscoMeraki](../solutions/ciscomeraki.md) |
+| [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) ➕ | Microsoft | 3 | [CiscoMeraki](../solutions/ciscomeraki.md) |
 | [Dynatrace Attacks](../connectors/dynatraceattacks.md) | Dynatrace | 1 | [Dynatrace](../solutions/dynatrace.md) |
 | [Dynatrace Audit Logs](../connectors/dynatraceauditlogs.md) | Dynatrace | 1 | [Dynatrace](../solutions/dynatrace.md) |
 | [Dynatrace Problems](../connectors/dynatraceproblems.md) | Dynatrace | 1 | [Dynatrace](../solutions/dynatrace.md) |

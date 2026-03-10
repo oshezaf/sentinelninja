@@ -19,9 +19,7 @@
 | **First Published** | 2023-07-29 |
 | **Last Updated** | 2023-07-29 |
 | **Solution Folder** | [MISP2Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MISP2Sentinel) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftsentinelcommunity.azure-sentinel-solution-misp2sentinel) |
-| **Popularity** | 🟢 High (86%) |
-| **Rating** | ★★★★★ 5.0/5 (2 ratings) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftsentinelcommunity.azure-sentinel-solution-misp2sentinel) · Rating: ★★★★★ 5.0/5 (2 ratings) · Popularity: 🟢 High (86%) |
 
 The MISP2Sentinel solution allows you to automatically push threat indicators from [MISP](https://www.misp-project.org/) to Microsoft Sentinel via the Upload Indicators REST API.
 

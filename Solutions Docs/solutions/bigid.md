@@ -19,9 +19,9 @@
 | **Version** | 3.0.0 |
 | **Author** | BigID - mhebrard@bigid.com |
 | **First Published** | 2025-10-07 |
+| **Last Updated** | 2026-03-02 |
 | **Solution Folder** | [BigID](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BigID) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/big-id.azure-sentinel-solution-bigid) |
-| **Popularity** | ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/big-id.azure-sentinel-solution-bigid) · Popularity: ⚪ Very Low (0%) |
 
 The BigID solution for Microsoft Sentinel enables you to ingest BigID DSPM cases and affected objects into Microsoft Sentinel.
 

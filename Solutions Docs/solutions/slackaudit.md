@@ -19,9 +19,9 @@
 | **Version** | 3.0.5 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-03-24 |
+| **Last Updated** | 2025-12-17 |
 | **Solution Folder** | [SlackAudit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-slackaudit) |
-| **Popularity** | ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-slackaudit) · Popularity: ⚪ Very Low (0%) |
 
 The [Slack](https://slack.com/intl/en-in/) Audit solution provides the capability to ingest [Slack Audit Records](https://api.slack.com/admins/audit-logs) events into Microsoft Sentinel through the REST API. Refer to [API documentation](https://api.slack.com/admins/audit-logs-call) for more information.
  
@@ -43,7 +43,7 @@ This solution provides **1 data connector(s)** (plus 2 discovered⚠️):
 
 - [Slack](../connectors/slackaudit.md) ⚠️ 🔶
 - [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) ⚠️ 🔶
-- [SlackAudit (via Codeless Connector Framework)](../connectors/slackauditlogsccpdefinition.md) 🔶
+- [SlackAudit (via Codeless Connector Framework)](../connectors/slackauditlogsccpdefinition.md)
 
 > 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
@@ -56,7 +56,7 @@ This solution uses **3 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) 🔶 | [Slack](../connectors/slackaudit.md), [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) | Analytics, Hunting, Workbooks |
-| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) 🔶 | [SlackAudit (via Codeless Connector Framework)](../connectors/slackauditlogsccpdefinition.md), [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) | Analytics, Hunting, Workbooks |
+| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | [SlackAudit (via Codeless Connector Framework)](../connectors/slackauditlogsccpdefinition.md), [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) | Analytics, Hunting, Workbooks |
 | [`SlackAudit_CL`](../tables/slackaudit-cl.md) 🔶 | [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) | Analytics, Hunting, Workbooks |
 
 

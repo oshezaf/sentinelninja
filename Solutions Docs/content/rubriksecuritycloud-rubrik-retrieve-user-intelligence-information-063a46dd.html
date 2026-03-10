@@ -9,12 +9,12 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="rubrik-retrieve-user-intelligence-information">Rubrik Retrieve User Intelligence Information</h1>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Back to Content Index</a></p>
+<h1>Rubrik Retrieve User Intelligence Information</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook queries Rubrik Security Cloud to get risk detail and policy hits details for a username or email address, and enriches the incident by adding incident comment</p>
 <table>
@@ -39,17 +39,17 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikRetrieveUserIntelligenceInformation/readme.md">RubrikRetrieveUserIntelligenceInformation/readme.md</a></em></p>
 </blockquote>
-<h2 id="summary">Summary</h2>
+<h2>Summary</h2>
 <p>This playbook queries Rubrik Security Cloud to get risk detail and policy hits details for a username or email address, and enriches the incident by adding incident comment</p>
-<h3 id="prerequisites">Prerequisites</h3>
+<h3>Prerequisites</h3>
 <ol>
 <li>The Rubrik Security Cloud solution should be configured to <a href="https://docs.rubrik.com/en-us/saas/saas/polaris_api_access_with_service_accounts.html">connect to Rubrik Security Cloud API end points using a Service Account</a>, the service account should be assigned a role that includes the relevant privileges necessary to perform the desired operations (see <a href="https://docs.rubrik.com/en-us/saas/saas/common/roles_and_permissions.html">Roles and Permissions</a> in the Rubrik Security Cloud user guide).</li>
 </ol>
-<h3 id="deployment-instructions">Deployment instructions</h3>
+<h3>Deployment instructions</h3>
 <ol>
 <li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
 <li>Fill in the required parameters:
@@ -60,8 +60,8 @@
 * UserPolicyHitsTableName: Table name to store user policy hits data into Log Analytics Workspace.</li>
 </ol>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FRubrikSecurityCloud%2FPlaybooks%2FRubrikRetrieveUserIntelligenceInformation%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FRubrikSecurityCloud%2FPlaybooks%2FRubrikRetrieveUserIntelligenceInformation%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
-<h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
-<h4 id="a-authorize-connections">a. Authorize connections</h4>
+<h3>Post-Deployment instructions</h3>
+<h4>a. Authorize connections</h4>
 <p>Once deployment is complete, authorize each connection like keyvault, azureloganalytics.
 1. Go to your logic app -&gt; API connections -&gt; Select keyvault connection resource
 2. Go to General -&gt; edit API connection
@@ -71,7 +71,7 @@
 6. Sign in
 7. Click Save
 8. Repeat steps for other connections</p>
-<h4 id="b-assign-role-to-add-a-comment-in-the-incident">b. Assign Role to add a comment in the incident</h4>
+<h4>b. Assign Role to add a comment in the incident</h4>
 <p>After authorizing each connection, assign a role to this playbook.
 1. Go to Log Analytics Workspace → <your workspace> → Access Control → Add
 2. Add role assignment
@@ -80,7 +80,7 @@
 5. Members: select managed identity for "assigned access to" and add your logic app as a member.
 6. Click on review+assign</p>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/rubriksecuritycloud.html">Back to RubrikSecurityCloud</a></p>
 </div>
 

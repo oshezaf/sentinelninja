@@ -21,8 +21,7 @@
 | **First Published** | 2020-12-14 |
 | **Last Updated** | 2025-11-18 |
 | **Solution Folder** | [QualysVM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-qualysvm) |
-| **Popularity** | 🟢 High (90%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-qualysvm) · Popularity: 🟢 High (90%) |
 
 The [Qualys Vulnerability Management](https://www.qualys.com/apps/vulnerability-management-detection-response/) solution for Microsoft Sentinel enables you to ingest host vulnerability detection data into Microsoft Sentinel.
 

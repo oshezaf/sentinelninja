@@ -20,8 +20,7 @@
 | **Author** | SecurityBridge - support@securitybridge.com |
 | **First Published** | 2022-02-17 |
 | **Solution Folder** | [SecurityBridge App](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityBridge%20App) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/securitybridge1647511278080.securitybridge-sentinel-app-1) |
-| **Popularity** | ⚪ Very Low (9%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/securitybridge1647511278080.securitybridge-sentinel-app-1) · Popularity: ⚪ Very Low (9%) |
 
 The [SecurityBridge App](https://securitybridge.com/) solution provides the capability to ingest SecurityBridge Threat Detection events from all on-premise and cloud based SAP instances into Microsoft Sentinel.
 
@@ -41,11 +40,9 @@ This solution is dependent on the Custom logs via AMA connector to collect the l
 This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
 - [SecurityBridge Solution for SAP](../connectors/securitybridge.md)
-- [SecurityBridge Threat Detection for SAP](../connectors/securitybridgesap.md) ⚠️ 🔶
+- [SecurityBridge Threat Detection for SAP](../connectors/securitybridgesap.md) ⚠️
 
 > 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 ## Tables Used
 
@@ -54,11 +51,9 @@ This solution uses **3 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`ABAPAuditLog`](../tables/abapauditlog.md) | [SecurityBridge Solution for SAP](../connectors/securitybridge.md) | - |
-| [`SecurityBridgeLogs_CL`](../tables/securitybridgelogs-cl.md) 🔶 | [SecurityBridge Threat Detection for SAP](../connectors/securitybridgesap.md) | - |
+| [`SecurityBridgeLogs_CL`](../tables/securitybridgelogs-cl.md) | [SecurityBridge Threat Detection for SAP](../connectors/securitybridgesap.md) | - |
 | [`SecurityBridge_CL`](../tables/securitybridge-cl.md) | [SecurityBridge Solution for SAP](../connectors/securitybridge.md) | - |
 
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 ## Content Items
 
 This solution includes **2 content item(s)**:

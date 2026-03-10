@@ -19,10 +19,9 @@
 | **Version** | 3.0.5 |
 | **Author** | Community |
 | **First Published** | 2022-11-30 |
+| **Last Updated** | 2026-01-15 |
 | **Solution Folder** | [SOC Handbook](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC%20Handbook) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftsentinelcommunity.azure-sentinel-solution-sochandbook) |
-| **Popularity** | 🟢 High (86%) |
-| **Rating** | ★★★★★ 5.0/5 (1 ratings) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftsentinelcommunity.azure-sentinel-solution-sochandbook) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟢 High (86%) |
 
 The SOC Handbook solution for Microsoft Sentinel provides a collection of resources that enable and empower SOC Analysts to get better visibility and understanding of point-in-time security posture of organizational resources.
 

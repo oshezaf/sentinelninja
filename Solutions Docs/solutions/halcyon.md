@@ -19,10 +19,9 @@
 | **Version** | 3.0.0 |
 | **Author** | Halcyon |
 | **First Published** | 2025-12-22 |
-| **Last Updated** | 2025-12-22 |
+| **Last Updated** | 2026-01-22 |
 | **Solution Folder** | [Halcyon](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Halcyon) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/halcyontech1743610828684.azure-sentinel-solution-halcyon) |
-| **Popularity** | ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/halcyontech1743610828684.azure-sentinel-solution-halcyon) · Popularity: ⚪ Very Low (0%) |
 
 The [Halcyon](https://www.halcyon.ai) solution for Microsoft Sentinel enables you to ingest Halcyon Events and Alerts into Microsoft Sentinel using the Microsoft Sentinel Analytics Workspace.
 

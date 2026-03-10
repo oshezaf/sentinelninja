@@ -17,9 +17,9 @@
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-10-08 |
+| **Last Updated** | 2026-02-27 |
 | **Solution Folder** | [DORA Compliance](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DORA%20Compliance) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-doracompliance) |
-| **Popularity** | ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-doracompliance) · Popularity: ⚪ Very Low (0%) |
 
 This Solution enables Microsoft Sentinel users to harness the power of their SIEM to assist in meeting DORA requirements. This Solution comes with pre-defined dashboards, visualizations, and reports, providing users with immediate insights in their DORA environment.
 

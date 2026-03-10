@@ -9,13 +9,13 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="transmit-security-connector">Transmit Security Connector</h1>
+<h1>Transmit Security Connector</h1>
 <p><img src="https://github.com/Azure/Azure-Sentinel/raw/refs/heads/master/Logos/Transmit_Security_Logo.svg" alt="" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
@@ -56,7 +56,7 @@
 </tbody>
 </table>
 <p>The [Transmit Security] data connector provides the capability to ingest common Transmit Security API events into Microsoft Sentinel through the REST API. <a href="https://developer.transmitsecurity.com/">Refer to API documentation for more information</a>. The connector provides ability to get events which helps to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more.</p>
-<h2 id="tables-ingested">Tables Ingested</h2>
+<h2>Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -79,7 +79,7 @@
 <blockquote>
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
-<h2 id="permissions">Permissions</h2>
+<h2>Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
 - <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
@@ -87,7 +87,7 @@
 - <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
 - <strong>REST API Client ID</strong>: <strong>TransmitSecurityClientID</strong> is required. See the documentation to learn more about API on the <code>https://developer.transmitsecurity.com/</code>.
 - <strong>REST API Client Secret</strong>: <strong>TransmitSecurityClientSecret</strong> is required. See the documentation to learn more about API on the <code>https://developer.transmitsecurity.com/</code>.</p>
-<h2 id="setup-instructions">Setup Instructions</h2>
+<h2>Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 <p><strong>NOTE:</strong> This connector uses Azure Functions to connect to the Transmit Security API to pull its logs into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
@@ -201,19 +201,19 @@
 <ol start="4">
 <li>Once all application settings have been entered, click <strong>Apply</strong>.</li>
 </ol>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TransmitSecurity\Data Connectors\readme.md">TransmitSecurity\Data Connectors\readme.md</a></em></p>
 </blockquote>
-<h1 id="transmit-security-integration-for-microsoft-sentinel">Transmit Security Integration for Microsoft Sentinel</h1>
-<h2 id="introduction">Introduction</h2>
+<h1>Transmit Security Integration for Microsoft Sentinel</h1>
+<h2>Introduction</h2>
 <p>This folder contains the Azure Function Time Trigger code for the Transmit Security-Microsoft Sentinel connector. The connector will run periodically and ingest Transmit Security data into the Microsoft Sentinel logs custom table <code>TransmitSecurityActivity_CL</code>.</p>
-<h2 id="folders">Folders</h2>
+<h2>Folders</h2>
 <ol>
 <li><strong>TransmitSecurity/</strong> - Contains the package, requirements, ARM JSON file, connector page template JSON, and other dependencies.</li>
 <li><strong>TransmitSecurityConnector/</strong> - Contains the Azure Function source code along with sample data.</li>
 </ol>
-<h2 id="installing-for-users">Installing for Users</h2>
+<h2>Installing for Users</h2>
 <p>After the solution is published, you can find the connector in the connector gallery of Microsoft Sentinel among other connectors in the Data Connectors section.</p>
 <ol>
 <li>Go to <strong>Microsoft Sentinel</strong> -&gt; <strong>Data Connectors</strong>.</li>
@@ -222,14 +222,14 @@
 </ol>
 <p>This will lead to a custom deployment page where, after entering accurate credentials and other information, the resources will be created.</p>
 <p>The connector should start ingesting data into the logs within the next 10-15 minutes.</p>
-<h2 id="installing-for-testing">Installing for Testing</h2>
+<h2>Installing for Testing</h2>
 <ol>
 <li>Log in to the Azure portal using the URL - <a href="https://aka.ms/sentineldataconnectorvalidateurl">https://aka.ms/sentineldataconnectorvalidateurl</a>.</li>
 <li>Go to <strong>Microsoft Sentinel</strong> -&gt; <strong>Data Connectors</strong>.</li>
 <li>Click the <strong>Import</strong> button at the top and select the JSON file <code>TransmitSecurity_API_FunctionApp.JSON</code> downloaded on your local machine from GitHub.</li>
 <li>This will load the connector page; the rest of the process will be the same as the <strong>Installing for Users</strong> guideline above.</li>
 </ol>
-<h2 id="monitoring-the-function">Monitoring the Function</h2>
+<h2>Monitoring the Function</h2>
 <p>Each invocation and its logs of the function can be seen in the Function App service of Azure, available in the Azure Portal outside Microsoft Sentinel.</p>
 <ol>
 <li>Go to <strong>Function App</strong> and click on the function you have deployed, identified by the name given at the deployment stage.</li>
@@ -238,8 +238,8 @@
 </ol>
 <p><strong>Note:</strong> For more detailed logs, check Application Insights of the function. You can search the logs by operation ID in the Transaction search section.</p>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 </div>
 
 </body>

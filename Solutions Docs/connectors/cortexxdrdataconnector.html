@@ -9,13 +9,13 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="palo-alto-cortex-xdr">Palo Alto Cortex XDR</h1>
+<h1>Palo Alto Cortex XDR</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CortexXDR_Logo.svg" alt="" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
@@ -53,14 +53,10 @@
 <td style="text-align: left;"><strong>CCF Capabilities</strong></td>
 <td style="text-align: left;"><code>APIKey</code>, <code>Paging</code>, <code>POST</code></td>
 </tr>
-<tr>
-<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
-<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
-</tr>
 </tbody>
 </table>
 <p>The <a href="https://cortex-panw.stoplight.io/docs/cortex-xdr/branches/main/09agw06t5dpvw-cortex-xdr-rest-api">Palo Alto Cortex XDR</a> data connector allows ingesting logs from the Palo Alto Cortex XDR API into Microsoft Sentinel. The data connector is built on Microsoft Sentinel Codeless Connector Platform. It uses the Palo Alto Cortex XDR API to fetch logs and it supports DCR-based <a href="https://docs.microsoft.com/azure/azure-monitor/logs/custom-logs-overview">ingestion time transformations</a> that parses the received security data into a custom table so that queries don't need to parse it again, thus resulting in better performance.</p>
-<h2 id="tables-ingested">Tables Ingested</h2>
+<h2>Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -97,7 +93,7 @@
 <td style="text-align: center;">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/paloaltocortexxdr-incidents-cl.html"><code>PaloAltoCortexXDR_Incidents_CL</code></a> 🔶</td>
+<td style="text-align: left;"><a href="../tables/paloaltocortexxdr-incidents-cl.html"><code>PaloAltoCortexXDR_Incidents_CL</code></a></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✓</td>
@@ -107,21 +103,21 @@
 <blockquote>
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
-<h2 id="permissions">Permissions</h2>
+<h2>Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): Read and Write permissions are required.</p>
-<h2 id="setup-instructions">Setup Instructions</h2>
+<h2>Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
-<h4 id="configuration-steps-for-the-palo-alto-cortex-xdr-api">Configuration steps for the Palo Alto Cortex XDR API</h4>
+<h4>Configuration steps for the Palo Alto Cortex XDR API</h4>
 <p>Follow the instructions to obtain the credentials. you can also follow this <a href="https://cortex-panw.stoplight.io/docs/cortex-xdr/branches/main/3u3j0e7hcx8t1-get-started-with-cortex-xdr-ap-is">guide</a> to generate API key.</p>
-<h4 id="1-retrieve-api-url">1. Retrieve API URL</h4>
+<h4>1. Retrieve API URL</h4>
 <p>1.1. Log in to the Palo Alto Cortex XDR [<strong>Management Console</strong>] with Admin user credentials
    1.2. In the [<strong>Management Console</strong>], click [<strong>Settings</strong>] -&gt; [<strong>Configurations</strong>] 
    1.3. Under [<strong>Integrations</strong>] click on [<strong>API Keys</strong>].
    1.4. In the [<strong>Settings</strong>] Page click on [<strong>Copy API URL</strong>] in the top right corner.</p>
-<h4 id="2-retrieve-api-token">2. Retrieve API Token</h4>
+<h4>2. Retrieve API Token</h4>
 <p>2.1. Log in to the Palo Alto Cortex XDR [<strong>Management Console</strong>] with Admin user credentials
  2.2. In the [<strong>Management Console</strong>], click [<strong>Settings</strong>] -&gt; [<strong>Configurations</strong>] 
    2.3. Under [<strong>Integrations</strong>] click on [<strong>API Keys</strong>].
@@ -133,8 +129,8 @@
 - <strong>API Token</strong>: (password field)
 - Click 'Connect' to establish connection</p>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 </div>
 
 </body>

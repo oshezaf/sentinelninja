@@ -9,12 +9,12 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="needs-review-incident-email-notification">Needs-Review-Incident-Email-Notification</h1>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Back to Content Index</a></p>
+<h1>Needs-Review-Incident-Email-Notification</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook will send an email notification when a new incident is created in Microsoft Sentinel.</p>
 <table>
@@ -39,31 +39,31 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Armorblox/Playbooks/Needs-Review-Incident-Email-Notification/readme.md">Needs-Review-Incident-Email-Notification/readme.md</a></em></p>
 </blockquote>
 <p><strong>Author:</strong> Armorblox</p>
 <p>This playbook will send an email notification when a new incident is created in Microsoft Sentinel.</p>
-<h2 id="pre-requisites">Pre-requisites</h2>
+<h2>Pre-requisites</h2>
 <p>An O365 account to be used to send email notification. The user account will be used in O365 connector (Send an email).</p>
-<h2 id="parameters">Parameters</h2>
+<h2>Parameters</h2>
 <p>Notification Email - The receiver's mail address.</p>
-<h2 id="deployment">Deployment</h2>
+<h2>Deployment</h2>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Farmorblox%2FAzure-Sentinel%2Fxoriant%2FSolutions%2FArmorblox%2FPlaybooks%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
 <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Farmorblox%2FAzure-Sentinel%2xoriant%2FSolutions%2FArmorblox%2FPlaybooks%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
-<h2 id="post-deployment">Post-deployment</h2>
-<h3 id="configure-connections">Configure connections</h3>
+<h2>Post-deployment</h2>
+<h3>Configure connections</h3>
 <p>Once this Playbooks template is deployed, you will need to go into the Logic App, edit it and click on each of the steps that require an authenticated connection to your tenant and complete the connection process. These steps will have an exclamation mark showing that the connection needs to be completed. Make sure to also open the "For each" step which also contains a step that requires an authenticated connection.<br>
 Note:  Emails sent with this playbook will be from the user that creates the connection.</p>
-<h3 id="attach-the-playbook">Attach the playbook</h3>
+<h3>Attach the playbook</h3>
 <p>After deployment, attach this playbook to the <code>Armorblox Needs Review</code> analytic rule so it runs when the alert is created.</br>
 Note: Playbook is disabled by default. Please enable it before assigning to the Automation rule.</p>
-<h2 id="screenshots">Screenshots</h2>
-<h3 id="playbook-screenshot">Playbook screenshot</h3>
+<h2>Screenshots</h2>
+<h3>Playbook screenshot</h3>
 <p><img alt="Playbook" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Armorblox/Playbooks/Needs-Review-Incident-Email-Notification/images/Playbook_Send-email-alert.png" /></p>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/armorblox.html">Back to Armorblox</a></p>
 </div>
 

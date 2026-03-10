@@ -43,7 +43,7 @@ The Microsoft Monitoring Agent (MMA), also known as the Log Analytics agent, is 
 | [One Identity Safeguard](../connectors/oneidentity.md) | One Identity LLC. | 1 | [OneIdentity](../solutions/oneidentity.md) |
 | [Palo Alto Networks Cortex XDR](../connectors/paloaltonetworkscortex.md) ⚠️ | Palo Alto Networks | 1 | [Palo Alto - XDR (Cortex)](../solutions/palo-alto-xdr-cortex.md) |
 | [Security Events via Legacy Agent](../connectors/securityevents.md) ➕ | Microsoft | 1 | [Windows Security Events](../solutions/windows-security-events.md) |
-| [SecurityBridge Threat Detection for SAP](../connectors/securitybridgesap.md) ➕ 🔶 | SecurityBridge | 1 | [SecurityBridge App](../solutions/securitybridge-app.md) |
+| [SecurityBridge Threat Detection for SAP](../connectors/securitybridgesap.md) ➕ | SecurityBridge | 1 | [SecurityBridge App](../solutions/securitybridge-app.md) |
 | [Semperis Directory Services Protector](../connectors/semperisdsp.md) | SEMPERIS | 1 | [Semperis Directory Services Protector](../solutions/semperis-directory-services-protector.md) |
 | [Syslog via Legacy Agent](../connectors/syslog.md) | Microsoft | 1 | [Syslog](../solutions/syslog.md) |
 | [Tenable Identity Exposure](../connectors/tenableie.md) | Tenable | 2 | [Tenable App](../solutions/tenable-app.md) |

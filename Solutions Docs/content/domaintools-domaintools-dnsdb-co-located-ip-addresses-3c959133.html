@@ -9,12 +9,12 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="domaintools-dnsdb-co-located-ip-addresses">DomainTools DNSDB Co-Located IP Addresses</h1>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Back to Content Index</a></p>
+<h1>DomainTools DNSDB Co-Located IP Addresses</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook uses the Farsight DNSDB connector to automatically enrich IP Addresses found in the Microsoft Sentinel incidents. This lookup will identify all the IPs that are co-located (based on Domain) based on the Offense Source value. This would be set of IPs that also shared the same Domain as the originating IP address.</p>
 <table>
@@ -39,14 +39,14 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Co-Located-Addresses/readme.md">DomainTools-DNSDB-Co-Located-Addresses/readme.md</a></em></p>
 </blockquote>
 <p><img alt="DomainTools DNSDB" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Co-Located-Addresses/images/logo.png" /></p>
-<h1 id="domaintools-dnsdb-co-located-addresses">DomainTools DNSDB Co-Located Addresses</h1>
+<h1>DomainTools DNSDB Co-Located Addresses</h1>
 <p>This playbook uses the Farsight DNSDB connector to automatically enrich IP Addresses found in the Microsoft Sentinel incidents. This lookup will identify all the IPs that are co-located (based on Domain) based on the Offense Source value. This would be set of IPs that also shared the same Domain as the originating IP address.</p>
-<h2 id="table-of-contents">Table of Contents</h2>
+<h2>Table of Contents</h2>
 <ol>
 <li><a href="#overview">Overview</a></li>
 <li><a href="#prerequisites">Prerequisites</a></li>
@@ -54,7 +54,7 @@
 <li><a href="#postdeployment">Post Deployment Steps</a></li>
 </ol>
 <p><a name="overview"></p>
-<h2 id="overview">Overview</h2>
+<h2>Overview</h2>
 <ul>
 <li>This playbook fetches all the IP Addresses from the incident.</li>
 <li>Iterates through each entity, perform logic.</li>
@@ -62,12 +62,12 @@
 </ul>
 <p><img alt="Incident Comments" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Co-Located-Addresses/images/comments.png" /></p>
 <p><a name="prerequisites"></p>
-<h2 id="prerequisites">Prerequisites</h2>
+<h2>Prerequisites</h2>
 <ul>
 <li>A DomainTools DNSDB API Key.</li>
 </ul>
 <p><a name="deployment"></p>
-<h2 id="deployment-instructions">Deployment Instructions</h2>
+<h2>Deployment Instructions</h2>
 <ul>
 <li>Deploy the playbooks by clicking on the "Deploy to Azure" button. This will take you to the Deploy an ARM Template wizard.</li>
 <li>Fill in the required parameters for deploying the playbook.</li>
@@ -76,8 +76,8 @@
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDomainTools%2FPlaybooks%2FDomainTools-DNSDB-Co-Located-Addresses%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
 <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDomainTools%2FPlaybooks%2FDomainTools-DNSDB-Co-Located-Addresses%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
 <p><a name="postdeployment"></p>
-<h2 id="post-deployment-instructions">Post-Deployment Instructions</h2>
-<h3 id="authorize-connections">Authorize connections</h3>
+<h2>Post-Deployment Instructions</h2>
+<h3>Authorize connections</h3>
 <p>Once deployment is complete please open the logic app and follow below steps
 - As a best practice, we have used the Sentinel connection in Logic Apps that use "ManagedSecurityIdentity" permissions. Please refer to <a href="https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-managed-identity-for-azure-sentinel-logic-apps/ba-p/2068204">this document</a> and provide permissions to the Logic App accordingly.
 - Provide connection details for the Farsight DNSDB Custom Connector.
@@ -87,14 +87,14 @@
 <img alt="incident after" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Co-Located-Addresses/images/results_after.png" />
 <img alt="incident before" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Co-Located-Addresses/images/results_before.png" />
 - Save the Logic App. If the Logic App prompts any missing connections, please update the connections accordingly.</p>
-<h3 id="configurations-in-sentinel">Configurations in Sentinel:</h3>
+<h3>Configurations in Sentinel:</h3>
 <ul>
 <li>Configure the analytic rules-&gt;Automated response&gt;Automation rules to trigger this playbook.</li>
 <li>Configure Incident Settings , Enable create incidents.</li>
 <li>Configure "Microsoft Sentinel Responder" permission to this playbook, from settings&gt;workspace settings&gt;Access control (IAM)&gt;Add role assignment.</li>
 </ul>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/domaintools.html">Back to DomainTools</a></p>
 </div>
 

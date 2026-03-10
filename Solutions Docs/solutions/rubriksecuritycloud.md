@@ -19,11 +19,9 @@
 | **Version** | 3.5.1 |
 | **Author** | Ben Meadowcroft - ben.meadowcroft@rubrik.com |
 | **First Published** | 2022-07-19 |
-| **Last Updated** | 2025-07-25 |
+| **Last Updated** | 2025-12-14 |
 | **Solution Folder** | [RubrikSecurityCloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rubrik_inc.rubrik_sentinel) |
-| **Popularity** | 🟢 High (85%) |
-| **Rating** | ★★★★★ 5.0/5 (1 ratings) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rubrik_inc.rubrik_sentinel) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟢 High (85%) |
 
 The [Rubrik Security Cloud](https://www.rubrik.com/) solution enables security operations teams to integrate insights from Rubrik’s Data Observability services into Microsoft Sentinel. 
 

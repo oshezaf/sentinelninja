@@ -16,7 +16,6 @@
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [BeyondTrustPMCloud_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BeyondTrustPMCloud/Data%20Connectors/BeyondTrustPMCloud_API_FunctionApp.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
-| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 
 The BeyondTrust Privilege Management Cloud data connector provides the capability to ingest activity audit logs and client event logs from BeyondTrust PM Cloud into Microsoft Sentinel.
 
@@ -30,8 +29,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`BeyondTrustPM_ActivityAudits_CL`](../tables/beyondtrustpm-activityaudits-cl.md) 🔶 | ? | ✓ | ? |
-| [`BeyondTrustPM_ClientEvents_CL`](../tables/beyondtrustpm-clientevents-cl.md) 🔶 | ? | ✓ | ? |
+| [`BeyondTrustPM_ActivityAudits_CL`](../tables/beyondtrustpm-activityaudits-cl.md) | ? | ✓ | ? |
+| [`BeyondTrustPM_ClientEvents_CL`](../tables/beyondtrustpm-clientevents-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

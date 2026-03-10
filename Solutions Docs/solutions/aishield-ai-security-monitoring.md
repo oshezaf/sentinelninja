@@ -21,8 +21,7 @@
 | **First Published** | 2022-01-11 |
 | **Last Updated** | 2025-03-06 |
 | **Solution Folder** | [AIShield AI Security Monitoring](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AIShield%20AI%20Security%20Monitoring) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rbei.bgsw_aishield_sentinel) |
-| **Popularity** | ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rbei.bgsw_aishield_sentinel) · Popularity: ⚪ Very Low (0%) |
 
 The [AIShield AI Security Monitoring](https://www.boschaishield.com/) solution allows users to connect with AIShield custom defense mechanism logs with Microsoft Sentinel. It gives users more insight into their organization's AI assets security posturing and improves their AI systems security operation capabilities. AIShield.GuArdIan analyzes the LLM generated content to identify and mitigate harmful content, safeguarding against legal, policy, role based, and usage based violations.
 
@@ -42,9 +41,7 @@ a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azur
 
 This solution provides **1 data connector(s)**:
 
-- [AIShield](../connectors/boschaishield.md) 🔶
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+- [AIShield](../connectors/boschaishield.md)
 
 ## Tables Used
 
@@ -52,7 +49,7 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`AIShield_CL`](../tables/aishield-cl.md) 🔶 | [AIShield](../connectors/boschaishield.md) | Analytics, Workbooks |
+| [`AIShield_CL`](../tables/aishield-cl.md) | [AIShield](../connectors/boschaishield.md) | Analytics, Workbooks |
 | [`Guardian_CL`](../tables/guardian-cl.md) 🔶 | - | Analytics |
 
 

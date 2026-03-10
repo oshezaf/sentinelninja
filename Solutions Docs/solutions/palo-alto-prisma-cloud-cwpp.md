@@ -20,8 +20,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-24 |
 | **Solution Folder** | [Palo Alto Prisma Cloud CWPP](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Palo%20Alto%20Prisma%20Cloud%20CWPP) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-prismacloudcompute) |
-| **Popularity** | 🔵 Medium (74%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-prismacloudcompute) · Popularity: 🔵 Medium (74%) |
 
 The [Prisma Alto Prisma Cloud CWPP](https://prisma.pan.dev/api/cloud/cwpp/audits/#operation/get-audits-incidents) solution for Microsoft Sentinel allows you to connect to your Palo Alto Prisma Cloud CWPP instance and ingest alerts into your Microsoft Sentinel workspace using the Prisma Cloud API.
 

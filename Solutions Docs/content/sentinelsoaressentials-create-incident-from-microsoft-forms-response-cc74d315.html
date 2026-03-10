@@ -9,12 +9,12 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="create-incident-from-microsoft-forms-response">Create Incident From Microsoft Forms Response</h1>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Back to Content Index</a></p>
+<h1>Create Incident From Microsoft Forms Response</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook will create a new Microsoft Sentinel incident when Microsoft Forms response is submitted.</p>
 <table>
@@ -39,14 +39,14 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-MicrosoftForms/readme.md">CreateIncident-MicrosoftForms/readme.md</a></em></p>
 </blockquote>
-<h1 id="createincident-microsoftforms">CreateIncident-MicrosoftForms</h1>
+<h1>CreateIncident-MicrosoftForms</h1>
 <p>author: Benjamin Kovacevic</p>
 <p>This playbook will create a new Microsoft Incident when Microsoft Forms response is submitted. </p>
-<h1 id="prerequisites">Prerequisites</h1>
+<h1>Prerequisites</h1>
 <ol>
 <li>Create Microsoft Forms from template - https://forms.office.com/Pages/ShareFormPage.aspx?id=b6PlTP9aoEiHWDhi2Ji_bQ9ohJdYaDxFpei_Nyf2P35UQVBRWk83OUhCUjUyU0pUWkdIV1FMNjFCVC4u&amp;sharetoken=7MfhwUMCnEB9pBTvSX7w</li>
 <li>After the template deployment, save Microsoft Forms ID as it will be needed to deploy the playbook. It is possible to choose Form ID after the playbook is deployed as well using Logic App Designer.<br>
@@ -54,11 +54,11 @@
 <li>Configure who can fill the template - the suggestion is either specific people from the organization or the whole organization - https://support.microsoft.com/en-us/topic/choose-who-can-fill-out-a-form-or-quiz-c90c641e-6f88-45c5-9cb9-aca2b4083949</li>
 <li>Prepare Subscription ID, Resource Group name, and Log Analytics Workspace name as it is needed for template deployment.</li>
 </ol>
-<h1 id="quick-deployment">Quick Deployment</h1>
+<h1>Quick Deployment</h1>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FCreateIncident-MicrosoftForms%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
 <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FCreateIncident-MicrosoftForms%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png" /></a>
 <br><br></p>
-<h1 id="post-deployment">Post-deployment</h1>
+<h1>Post-deployment</h1>
 <ol>
 <li>Assign Microsoft Sentinel Responder role to the managed identity. To do so, choose Identity blade under Settings of the Logic App.</li>
 <li>If Microsoft Forms ID wasn't entered while deploying, open Logic App Designer and choose Microsoft Forms from the drop-down menu</li>
@@ -66,7 +66,7 @@
 <img alt="FormsTemplate" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-MicrosoftForms/images/DeleteConditionDark.jpg" /><br></li>
 <li>Authorize Microsoft Forms, Office 365 Outlook connector, and Conversion Service connector (HTML to text). Note: If in step 3, email notification is deleted, there will be no Office 365 Outlook connector.</li>
 </ol>
-<h1 id="note-for-microsoft-forms-changes">Note for Microsoft Forms changes</h1>
+<h1>Note for Microsoft Forms changes</h1>
 <p>If there are made any changes to the Microsoft Forms template (questions changed or translated to the local language), there is a need to adjust the playbooks template by mapping correct values in Logic App Designer:<br>
 <img alt="FormsTemplate" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-MicrosoftForms/images/mapDynamicContentDark.jpg" /><br><br></p>
 <p>When editing, important information is that certain fields accept only certain values:<br>
@@ -74,7 +74,7 @@
 2. Status - New/Active/Closed
 3. Owner Object Id / UPN - only Azure AD object ID or user's UPN
 4. Assign/Unassign Owner - Assign/Unassign</p>
-<h1 id="screenshots">Screenshots</h1>
+<h1>Screenshots</h1>
 <p><strong>Playbook</strong> <br>
 <img alt="playbook screenshot" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-MicrosoftForms/images/MSFormsPlaybookDark.jpg" /><br></p>
 <p><strong>Microsoft Forms template</strong><br>
@@ -85,7 +85,7 @@
 <img alt="Success" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-MicrosoftForms/images/successDark.jpg" /><br><br>
 <img alt="Failure" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-MicrosoftForms/images/UnsuccessDark.jpg" /><br></p>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/sentinelsoaressentials.html">Back to SentinelSOARessentials</a></p>
 </div>
 

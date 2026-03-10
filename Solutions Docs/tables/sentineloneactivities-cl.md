@@ -8,40 +8,40 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (22 columns)
+## Schema (23 columns)
 
-**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SentinelOneActivities_CL.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne%5CData%20Connectors%5CSentinelOne_ccp/table%20-%20Activities.json)
 
-| Column Name | Type |
-|:------------|:-----|
-| AccountId | string |
-| AccountName | string |
-| ActivityType | real |
-| ActivityUuid | string |
-| AgentId | string |
-| AgentUpdatedVersion | string |
-| Comments | string |
-| CreatedAt | datetime |
-| Data | string |
-| Description | string |
-| GroupId | string |
-| GroupName | string |
-| Hash | string |
-| Id | string |
-| OsFamily | string |
-| PrimaryDescription | string |
-| SecondaryDescription | string |
-| SiteId | string |
-| SiteName | string |
-| ThreatId | string |
-| UpdatedAt | datetime |
-| UserId | string |
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| AccountId | string | The unique identifier for the account. |
+| AccountName | string | The name of the account associated with the event. |
+| ActivityType | real | The type of activity represented by an integer. |
+| ActivityUuid | string | The UUID of the activity associated with the event. |
+| AgentId | string | The unique identifier for the agent. |
+| AgentUpdatedVersion | string | The version of the agent that was updated. |
+| Comments | string | Any comments associated with the event. |
+| CreatedAt | datetime | The timestamp (UTC) when the record was created. |
+| Data | string | Activity metadata. |
+| Description | string | The description of the event. |
+| GroupId | string | The unique identifier for the group. |
+| GroupName | string | The name of the group associated with the event. |
+| Hash | string | The hash associated with the event. |
+| Id | string | The unique identifier for the record. |
+| OsFamily | string | The operating system family, such as macOS. |
+| PrimaryDescription | string | The primary description of the event. |
+| SecondaryDescription | string | The secondary description of the event. |
+| SiteId | string | The unique identifier for the site. |
+| SiteName | string | The name of the site associated with the event. |
+| ThreatId | string | The unique identifier for the threat. |
+| TimeGenerated | datetime | The timestamp (UTC) reflecting the time in which the event was generated. |
+| UpdatedAt | datetime | The timestamp (UTC) when the record was last updated. |
+| UserId | string | The unique identifier for the user. |
 
 ## Solutions (1)
 

@@ -21,9 +21,7 @@
 | **First Published** | 2023-03-29 |
 | **Last Updated** | 2023-03-29 |
 | **Solution Folder** | [Cynerio](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cynerio) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cynerio1681887657820.cynerio-medical-device-security-sentinel-connector) |
-| **Popularity** | ⚪ Very Low (0%) |
-| **Rating** | ★★★★★ 5.0/5 (1 ratings) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cynerio1681887657820.cynerio-medical-device-security-sentinel-connector) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: ⚪ Very Low (0%) |
 
 The [Cynerio](https://www.cynerio.com/) solution for Microsoft Sentinel enables you to ingest Cynerio Security Events to the Microsoft Sentinel platform, providing more insight into your organization network security posture and improving your security operation capabilities.
 

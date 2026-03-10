@@ -18,8 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-10-11 |
 | **Solution Folder** | [Minemeld](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Minemeld) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-minemeld) |
-| **Popularity** | ⚪ Very Low (6%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-minemeld) · Popularity: ⚪ Very Low (6%) |
 
 The [Minemeld](https://www.paloaltonetworks.com/products/secure-the-network/subscriptions/minemeld)  solution for Microsoft Sentinel has SOAR Connector and Playbooks, which not only enriches the Microsoft Sentinel incident using Minemeld indicators data but also helps to add indicators to Minemeld platform if needed.
 

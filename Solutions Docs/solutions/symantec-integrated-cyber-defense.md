@@ -18,8 +18,7 @@
 | **Author** | Symantec |
 | **First Published** | 2022-06-02 |
 | **Solution Folder** | [Symantec Integrated Cyber Defense](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Symantec%20Integrated%20Cyber%20Defense) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.symantec_icdx_mss) |
-| **Popularity** | ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.symantec_icdx_mss) · Popularity: ⚪ Very Low (0%) |
 
 The [Symantec Integrated Cyber Defense Exchange](https://www.broadcom.com/products/cyber-security/integrated-cyber-defense/integrated-cyber-defense-exchange) (ICDx) solution allows you to easily connect your Symantec security solutions logs with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation.
 

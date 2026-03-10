@@ -20,8 +20,7 @@
 | **Author** | Talon |
 | **First Published** | 2023-01-25 |
 | **Solution Folder** | [Talon](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Talon) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/taloncybersecurityltd1654088115170.talonconnector) |
-| **Popularity** | ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/taloncybersecurityltd1654088115170.talonconnector) · Popularity: ⚪ Very Low (0%) |
 
 The [Talon](https://talon-sec.com/) events and audit logs connector allows you to easily connect your [Talon activity logs with Microsoft Sentinel](https://docs.console.talon-sec.com/en/articles/254-microsoft-sentinel-integration), to view dashboards, create custom alerts, and improve investigation./n/n**Underlying Microsoft Technologies used:**
 

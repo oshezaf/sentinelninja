@@ -20,8 +20,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-08-18 |
 | **Solution Folder** | [OneLoginIAM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OneLoginIAM) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-oneloginiam) |
-| **Popularity** | 🟡 Low (26%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-oneloginiam) · Popularity: 🟡 Low (26%) |
 
 The [OneLogin](https://www.onelogin.com/) solution for Microsoft Sentinel provides the capability to ingest common OneLogin IAM Platform events into Microsoft Sentinel.
   
@@ -42,7 +41,7 @@ The [OneLogin](https://www.onelogin.com/) solution for Microsoft Sentinel provid
 This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
 - [[DEPRECATED] OneLogin IAM Platform](../connectors/onelogin.md) ⚠️ 🔶
-- [OneLogin IAM Platform (via Codeless Connector Framework)](../connectors/oneloginiamlogsccpdefinition.md) 🔶
+- [OneLogin IAM Platform (via Codeless Connector Framework)](../connectors/oneloginiamlogsccpdefinition.md)
 
 > 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
@@ -54,8 +53,8 @@ This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`OneLoginEventsV2_CL`](../tables/onelogineventsv2-cl.md) 🔶 | [OneLogin IAM Platform (via Codeless Connector Framework)](../connectors/oneloginiamlogsccpdefinition.md), [[DEPRECATED] OneLogin IAM Platform](../connectors/onelogin.md) | - |
-| [`OneLoginUsersV2_CL`](../tables/oneloginusersv2-cl.md) 🔶 | [OneLogin IAM Platform (via Codeless Connector Framework)](../connectors/oneloginiamlogsccpdefinition.md), [[DEPRECATED] OneLogin IAM Platform](../connectors/onelogin.md) | - |
+| [`OneLoginEventsV2_CL`](../tables/onelogineventsv2-cl.md) | [OneLogin IAM Platform (via Codeless Connector Framework)](../connectors/oneloginiamlogsccpdefinition.md), [[DEPRECATED] OneLogin IAM Platform](../connectors/onelogin.md) | - |
+| [`OneLoginUsersV2_CL`](../tables/oneloginusersv2-cl.md) | [OneLogin IAM Platform (via Codeless Connector Framework)](../connectors/oneloginiamlogsccpdefinition.md), [[DEPRECATED] OneLogin IAM Platform](../connectors/onelogin.md) | - |
 | [`OneLogin_CL`](../tables/onelogin-cl.md) 🔶 | [[DEPRECATED] OneLogin IAM Platform](../connectors/onelogin.md) | - |
 
 

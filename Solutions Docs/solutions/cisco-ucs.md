@@ -18,8 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [Cisco UCS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20UCS) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ciscoucs) |
-| **Popularity** | ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ciscoucs) · Popularity: ⚪ Very Low (0%) |
 | **Pre-requisites** | [Syslog](syslog.md) |
 
 The [Cisco UCS](https://www.cisco.com/c/en/us/products/servers-unified-computing/index.html) solution for Microsoft Sentinel enables you to ingest Cisco UCS faults, events, and audit logs into Microsoft Sentinel.

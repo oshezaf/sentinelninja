@@ -20,8 +20,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [Azure Key Vault](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Key%20Vault) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azurekeyvault) |
-| **Popularity** | 🟢 High (92%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azurekeyvault) · Popularity: 🟢 High (92%) |
 
 [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) Solution for Microsoft Sentinel enables you to stream Azure Key Vault diagnostics logs into Microsoft Sentinel, allowing you to continuously monitor activity in all your instances.
 

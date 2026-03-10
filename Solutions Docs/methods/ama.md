@@ -43,7 +43,7 @@ The Azure Monitor Agent (AMA) is the recommended agent for collecting logs from 
 | [ Microsoft Active-Directory Domain Controllers Security Event Logs](../connectors/esi-opt34domaincontrollerssecurityeventlogs.md) | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
 | [[Recommended] Infoblox Cloud Data Connector via AMA](../connectors/infobloxclouddataconnectorama.md) | Infoblox | 1 | [Infoblox](../solutions/infoblox.md) |
 | [[Recommended] Infoblox SOC Insight Data Connector via AMA](../connectors/infobloxsocinsightsdataconnector-ama.md) | Infoblox | 1 | [Infoblox](../solutions/infoblox.md) |
-| [[Recommended] Vectra AI Stream via AMA](../connectors/vectrastreamama.md) 🔶 | Vectra AI | 17 | [Vectra AI Stream](../solutions/vectra-ai-stream.md) |
+| [[Recommended] Vectra AI Stream via AMA](../connectors/vectrastreamama.md) | Vectra AI | 17 | [Vectra AI Stream](../solutions/vectra-ai-stream.md) |
 | [Automated Logic WebCTRL ](../connectors/automatedlogicwebctrl.md) | AutomatedLogic | 1 | [ALC-WebCTRL](../solutions/alc-webctrl.md) |
 | [Cisco ASA/FTD via AMA](../connectors/ciscoasaama.md) ➕ | Microsoft | 2 | [CiscoASA](../solutions/ciscoasa.md) |
 | [Cisco Software Defined WAN](../connectors/ciscosdwan.md) 🔶 | Cisco | 2 | [Cisco SD-WAN](../solutions/cisco-sd-wan.md) |

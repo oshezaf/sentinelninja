@@ -33,11 +33,9 @@ Forescout eyeInspect is a cybersecurity platform designed for Operational Tech
 
 This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [Forescout eyeInspect for OT Security](../connectors/forescout-eyeinspect-for-ot-security.md) ⚠️ 🔶
+- [Forescout eyeInspect for OT Security](../connectors/forescout-eyeinspect-for-ot-security.md) ⚠️
 
 > 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 ## Tables Used
 
@@ -45,11 +43,9 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ForescoutOtAlert_CL`](../tables/forescoutotalert-cl.md) 🔶 | [Forescout eyeInspect for OT Security](../connectors/forescout-eyeinspect-for-ot-security.md) | Workbooks |
-| [`ForescoutOtAsset_CL`](../tables/forescoutotasset-cl.md) 🔶 | [Forescout eyeInspect for OT Security](../connectors/forescout-eyeinspect-for-ot-security.md) | Workbooks |
+| [`ForescoutOtAlert_CL`](../tables/forescoutotalert-cl.md) | [Forescout eyeInspect for OT Security](../connectors/forescout-eyeinspect-for-ot-security.md) | Workbooks |
+| [`ForescoutOtAsset_CL`](../tables/forescoutotasset-cl.md) | [Forescout eyeInspect for OT Security](../connectors/forescout-eyeinspect-for-ot-security.md) | Workbooks |
 
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 ## Content Items
 
 This solution includes **1 content item(s)**:

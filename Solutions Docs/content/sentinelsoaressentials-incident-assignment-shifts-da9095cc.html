@@ -9,12 +9,12 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="incident-assignment-shifts">Incident Assignment Shifts</h1>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Back to Content Index</a></p>
+<h1>Incident Assignment Shifts</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook will assign an Incident to an owner based on the Shifts schedule in Microsoft Teams. When an incident is assigned, the incident owner will be notified via email. Incidents are assigned to users based on the following criteria:<br> <em>Only users who have started their shifts during the time the Logic App runs will be considered. </em>Users who still have at least 1 hours left before going off shift (can be configured in playbook) *User with the least incidents assigned on the current Shif</p>
 <table>
@@ -39,19 +39,19 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Incident-Assignment-Shifts/readme.md">Incident-Assignment-Shifts/readme.md</a></em></p>
 </blockquote>
-<h1 id="incident-assignment-shifts_1">Incident-Assignment-Shifts</h1>
+<h1>Incident-Assignment-Shifts</h1>
 <p>author: Jeremy Tan</p>
 <p>version: 2.2</p>
 <p>This playbook will assign an Incident to an owner based on the Shifts schedule in Microsoft Teams.</p>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FIncident-Assignment-Shifts%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
 <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FIncident-Assignment-Shifts%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
-<h2 id="pre-requisites">Pre-requisites:</h2>
+<h2>Pre-requisites:</h2>
 <p>Ensure you have the following details:</p>
-<h3 id="1-user-account-or-service-principal-or-managed-identity-with-microsoft-sentinel-responder-role">1. User account or Service Principal or Managed Identity with Microsoft Sentinel Responder role</h3>
+<h3>1. User account or Service Principal or Managed Identity with Microsoft Sentinel Responder role</h3>
 <ul>
 <li>
 <p>Create or use an existing user account/ Service Principal/ Managed Identity with Microsoft Sentinel Responder role.</p>
@@ -63,7 +63,7 @@
 <p>This example will walk you through using System Managed Identity for the above connectors.</p>
 </li>
 </ul>
-<h3 id="2-setup-shifts-schedule">2. Setup Shifts schedule</h3>
+<h3>2. Setup Shifts schedule</h3>
 <ul>
 <li>
 <p>You must have the <a href="https://support.microsoft.com/office/get-started-in-shifts-5f3e30d8-1821-4904-be26-c3cd25a497d6">Shifts</a> schedule setup in Microsoft Teams.</p>
@@ -73,7 +73,7 @@
 </li>
 </ul>
 <p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Incident-Assignment-Shifts/images/Pic2.png" width="700" height="350"></p>
-<h3 id="3-user-account-with-owner-role-in-microsoft-teams">3. User account with Owner role in Microsoft Teams</h3>
+<h3>3. User account with Owner role in Microsoft Teams</h3>
 <ul>
 <li>
 <p>Create or use an existing user account or managed identity with <strong>Owner</strong> role in a Team.</p>
@@ -82,7 +82,7 @@
 <p>The user account will be used in Shifts connector (List all shifts).</p>
 </li>
 </ul>
-<h3 id="4-user-account-or-service-principal-with-log-analytics-reader-role">4. User account or Service Principal with Log Analytics Reader role</h3>
+<h3>4. User account or Service Principal with Log Analytics Reader role</h3>
 <ul>
 <li>
 <p>Create or use an existing user account or Service Principal with Log Analytics Reader role on the Microsoft Sentinel workspace.</p>
@@ -91,12 +91,12 @@
 <p>The user account or Service Principal will be used in Azure Monitor Logs connector (Run query and list results).</p>
 </li>
 </ul>
-<h3 id="5-an-o365-account-to-be-used-to-send-email-notification">5. An O365 account to be used to send email notification</h3>
+<h3>5. An O365 account to be used to send email notification</h3>
 <ul>
 <li>The user account will be used in O365 connector (Send an email).</li>
 </ul>
-<h2 id="post-deployment-configuration">Post Deployment Configuration:</h2>
-<h3 id="1-enable-managed-identity-and-configure-role-assignment">1. Enable Managed Identity and configure role assignment</h3>
+<h2>Post Deployment Configuration:</h2>
+<h3>1. Enable Managed Identity and configure role assignment</h3>
 <ul>
 <li>Once deployed, go to the Logic App's blade and click on <strong>Identity</strong> under Settings.</li>
 <li>Select <strong>On</strong> under the <strong>System assigned</strong> tab. Click <strong>Save</strong> and select <strong>Yes</strong> when prompted.</li>
@@ -113,7 +113,7 @@
 <li>Select <strong>Resource group</strong> under Scope and select the <strong>Subscription</strong> and <strong>Resource group</strong> where the Microsoft Sentinel <strong>Workspace</strong> is located. 
   Select <strong>Microsoft Sentinel Responder</strong> under Role and click <strong>Save</strong>.</li>
 </ul>
-<h3 id="2-configure-connections">2. Configure connections</h3>
+<h3>2. Configure connections</h3>
 <ul>
 <li>Edit the Logic App or go to Logic app designer.</li>
 <li>Expand each step to find the following connectors (6 in total) with <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Incident-Assignment-Shifts/readmeImages/Pic1.png" width="30" height="30">. 
@@ -125,7 +125,7 @@
   6. Send an email  </li>
 <li>Fix these connectors by adding a new connection to each connector and sign in with the accounts described under pre-requisites.</li>
 </ul>
-<h3 id="3-select-the-shifts-schedule">3. Select the Shifts schedule</h3>
+<h3>3. Select the Shifts schedule</h3>
 <ul>
 <li>Edit the Logic App or go to Logic app designer.</li>
 <li>Find the <strong>List all shifts</strong> connector, click on the <strong>X</strong> sign next to Team field for the drop-down list to appear.</li>
@@ -139,14 +139,14 @@
 <ul>
 <li>Save the Logic App once you have completed the above steps.</li>
 </ul>
-<h2 id="incident-assignment-logic">Incident Assignment Logic:</h2>
+<h2>Incident Assignment Logic:</h2>
 <p>Incidents are assigned to users based on the following criteria:</p>
 <ul>
 <li>Only users who have started their shifts during the time the Logic App runs will be considered.</li>
 </ul>
 <p><em>[Content truncated...]</em></p>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/sentinelsoaressentials.html">Back to SentinelSOARessentials</a></p>
 </div>
 

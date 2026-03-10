@@ -20,8 +20,7 @@
 | **Author** | archTIS |
 | **First Published** | 2021-10-20 |
 | **Solution Folder** | [NC Protect Data Connector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NC%20Protect%20Data%20Connector) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/nucleuscyber.nc-protect-azure-sentinel-data-connector) |
-| **Popularity** | 🔵 Medium (68%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/nucleuscyber.nc-protect-azure-sentinel-data-connector) · Popularity: 🔵 Medium (68%) |
 
 The [NC Protect Data Connector (archtis.com)](https://info.archtis.com/get-started-with-nc-protect-sentinel-data-connector) provides the capability to ingest user activity logs and events into Microsoft Sentinel. The connector provides visibility into NC Protect user activity logs and events in Microsoft Sentinel to improve monitoring and investigation capabilities 
 

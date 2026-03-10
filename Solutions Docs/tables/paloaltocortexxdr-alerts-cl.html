@@ -5,16 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PaloAltoCortexXDRAlertsCL &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
-
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="paloaltocortexxdr_alerts_cl">PaloAltoCortexXDR_Alerts_CL</h1>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Back to Tables Index</a></p>
+<h1>PaloAltoCortexXDR_Alerts_CL</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <table>
 <thead>
@@ -42,13 +44,581 @@
 </tr>
 </tbody>
 </table>
-<h2 id="solutions-2">Solutions (2)</h2>
+<h2>Schema (111 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cortex%20XDR%5CData%20Connectors%5CCortexXDR_ccp/table_alerts.json">Connector definition</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Action</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Action taken in response to the alert (e.g., block, quarantine, notify).</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionCountry</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Country in which the action was taken.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionExternalHostname</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">External hostname associated with the action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionFileMacroSha256</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SHA256 hash of the file macro involved in the action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionFileMd5</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">MD5 hash of the file involved in the action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionFileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the file involved in the action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionFilePath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Path to the file involved in the action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionFileSha256</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SHA256 hash of the file involved in the action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionLocalIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Local IP address associated with the action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionLocalIpV6</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Local IPv6 address associated with the action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionLocalPort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Local port associated with the action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionPretty</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Human-readable version of the action taken for the alert.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionProcessCausalityId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Causality ID of the action process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionProcessImageCommandLine</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Command line used by the action process's image.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionProcessImageName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the action process's image.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionProcessImageSha256</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SHA256 hash of the action process's image.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionProcessInstanceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Instance ID of the action process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionProcessSignatureStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Signature status of the action process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionProcessSignatureVendor</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Vendor of the signature for the action process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionRegistryData</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Dynamic object containing registry data for the action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionRegistryFullKey</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Full registry key associated with the action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionRegistryKeyName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the registry key associated with the action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionRegistryValueName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the registry value associated with the action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionRemoteIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Remote IP address associated with the action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionRemoteIpV6</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Remote IPv6 address associated with the action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionRemotePort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Remote port associated with the action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorCausalityId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Causality ID associated with the actor.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorProcessCausalityId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Causality ID of the actor's process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorProcessCommandLine</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Command line used by the actor's process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorProcessImageMd5</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">MD5 hash of the actor's process image.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorProcessImageName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the image used by the actor's process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorProcessImagePath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Path to the actor's process image.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorProcessImageSha256</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SHA256 hash of the actor's process image.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorProcessInstanceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Instance ID of the actor's process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorProcessOsPid</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">OS process ID of the actor's process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorProcessSignatureStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Signature status of the actor's process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorProcessSignatureVendor</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Vendor of the signature for the actor's process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorThreadThreadId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Thread ID of the actor's thread.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AgentDataCollectionStatus</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Status indicating whether the agent is actively collecting data (true/false).</td>
+</tr>
+<tr>
+<td style="text-align: left;">AgentFQDN</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Fully qualified domain name (FQDN) of the endpoint device where the alert originated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AgentOSType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Operating system type of the agent (e.g., Windows, macOS, Linux).</td>
+</tr>
+<tr>
+<td style="text-align: left;">AgentVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Version of the Cortex XDR agent that generated the alert.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AlertDomain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Domain associated with the alert.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AlertId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the alert in Cortex XDR.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AttemptCounter</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Number of attempts to match this alert with detection rules.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BiocIndicator</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicator or behavior related to the alert, stored as a dynamic object (behavioral IOC data).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Category</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Category or classification of the alert (e.g., malware, suspicious activity).</td>
+</tr>
+<tr>
+<td style="text-align: left;">CausalityActorCausalityId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Causality ID of the actor involved.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CausalityActorProcessCommandLine</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Command line used by the causality actor's process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CausalityActorProcessImageMd5</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">MD5 hash of the causality actor's process image.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CausalityActorProcessImageName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the causality actor's process image.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CausalityActorProcessImagePath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Path to the causality actor's process image.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CausalityActorProcessImageSha256</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SHA256 hash of the causality actor's process image.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CausalityActorProcessSignatureStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Signature status of the causality actor's process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CloudProvider</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Cloud provider associated with the log entry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClusterName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the cluster involved.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ContainerId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier for the container.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ContainerName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the container.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Description</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Detailed description of the alert or detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DetectionTimestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp when the detection occurred, in Unix epoch format.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsQueryName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">DNS query name associated with the log entry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstActionExternalHostname</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Destination external hostname for the action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstActionExternalPort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Destination external port for the action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EndMatchAttempt</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp of the last match attempt in Unix epoch format.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EndpointId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the endpoint where the alert was detected.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventTimestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp for when the event occurred.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the event being logged.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ExternalId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the alert in the external system (Cortex XDR).</td>
+</tr>
+<tr>
+<td style="text-align: left;">FwEmailRecipient</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Email recipient in the firewall log.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FwEmailSender</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Email sender in the firewall log.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FwEmailSubject</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Subject line of the email in the firewall log.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FwIsPhishing</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if the firewall log entry is related to phishing.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FwRule</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Description of the firewall rule.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FwRuleId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier for the firewall rule.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FwUrlDomain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Domain of the URL in the firewall log.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HostIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of the host machine where the alert was generated, represented as a dynamic object.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HostName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the host machine where the alert was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IdentityType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of identity associated with the entry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ImageId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier for the image.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ImageName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the image involved.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LocalInsert</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Local timestamp of when the alert was inserted into the system in Unix epoch format.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MacAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">MAC address of the endpoint device, represented as a dynamic object.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MaliciousUrls</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Dynamic object containing malicious URLs related to the entry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MatchingServiceRuleId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID of the matching rule or service used to trigger the alert.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MatchingStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Status of matching detection logic (e.g., matched or not matched).</td>
+</tr>
+<tr>
+<td style="text-align: left;">MitreTacticIdAndName</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">MITRE ATT&amp;CK tactic ID and name associated with the alert.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MitreTechniqueIdAndName</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">MITRE ATT&amp;CK technique ID and name associated with the alert.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ModuleId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier for the module.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Name</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the detection or alert.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Namespace</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Namespace associated with the log entry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the operation being logged.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OsActorCausalityId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Causality ID associated with the OS actor.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OsActorEffectiveUsername</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Effective username of the OS actor.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OsActorProcessCausalityId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Causality ID of the OS actor.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OsActorProcessCommandLine</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Command line used by the OS actor's process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OsActorProcessImageName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the image used by the OS actor's process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OsActorProcessImagePath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Path to the OS actor's process image.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OsActorProcessImageSha256</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SHA256 hash of the OS actor's process image.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OsActorProcessOsPid</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">OS process ID of the OS actor's process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OsActorProcessSignatureStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Signature status of the OS actor's process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OsActorProcessSignatureVendor</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Vendor of the signature for the OS actor's process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OsActorThreadThreadId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Thread ID of the OS actor's thread.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of resource involved in the log entry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Severity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Level of severity of the alert (e.g., Low, Medium, High, Critical).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Source</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source of the alert or detection data (e.g., Cortex XDR, endpoint agent).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Starred</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the alert has been marked as important or starred (true/false).</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) reflecting the time in which the event was generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserAgent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User agent string associated with the log entry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Username associated with the log entry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Whitelisted</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the alert has been whitelisted (true/false).</td>
+</tr>
+</tbody>
+</table>
+<h2>Solutions (2)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/cortex-xdr.html">Cortex XDR</a></li>
 <li><a href="../solutions/palo-alto-cortex-xdr-ccp.html">Palo Alto Cortex XDR CCP</a></li>
 </ul>
-<h2 id="connectors-1">Connectors (1)</h2>
+<h2>Connectors (1)</h2>
 <p>This table is ingested by the following connectors:</p>
 <table>
 <thead>
@@ -66,9 +636,33 @@
 </table>
 <hr />
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 </div>
-
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
 </body>
 </html>

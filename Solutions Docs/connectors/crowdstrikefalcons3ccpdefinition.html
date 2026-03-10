@@ -9,13 +9,13 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="crowdstrike-falcon-data-replicator-aws-s3-via-codeless-connector-framework">CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</h1>
+<h1>CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/Logo/crowdstrike.svg" alt="" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
@@ -53,14 +53,10 @@
 <td style="text-align: left;"><strong>CCF Capabilities</strong></td>
 <td style="text-align: left;"><code>AmazonWebServicesS3</code></td>
 </tr>
-<tr>
-<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
-<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
-</tr>
 </tbody>
 </table>
 <p>The Crowdstrike Falcon Data Replicator (S3) connector provides the capability to ingest FDR event datainto Microsoft Sentinel from the AWS S3 bucket where the FDR logs have been streamed. The connector provides ability to get events from Falcon Agents which helps to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more.<p><span style='color:red; font-weight:bold;'>NOTE:</span></p><div style='margin-left:20px;'><p>1. CrowdStrike FDR license must be available &amp; enabled.</p><p>2. The connector requires an IAM role to be configured on AWS to allow access to the AWS S3 bucket and may not be suitable for environments that leverage CrowdStrike - managed buckets.</p><p>3. For environments that leverage CrowdStrike-managed buckets, please configure the <strong>CrowdStrike Falcon Data Replicator (CrowdStrike-Managed AWS S3)</strong> connector.</p></div></p>
-<h2 id="tables-ingested">Tables Ingested</h2>
+<h2>Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -73,7 +69,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/crowdstrike-additional-events-cl.html"><code>CrowdStrike_Additional_Events_CL</code></a> 🔶</td>
+<td style="text-align: left;"><a href="../tables/crowdstrike-additional-events-cl.html"><code>CrowdStrike_Additional_Events_CL</code></a></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✓</td>
@@ -121,7 +117,7 @@
 <td style="text-align: center;">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/crowdstrike-secondary-data-cl.html"><code>CrowdStrike_Secondary_Data_CL</code></a> 🔶</td>
+<td style="text-align: left;"><a href="../tables/crowdstrike-secondary-data-cl.html"><code>CrowdStrike_Secondary_Data_CL</code></a></td>
 <td style="text-align: center;">?</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">?</td>
@@ -137,21 +133,21 @@
 <blockquote>
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
-<h2 id="permissions">Permissions</h2>
+<h2>Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): Read and Write permissions are required.</p>
-<h2 id="setup-instructions">Setup Instructions</h2>
+<h2>Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
-<h4 id="requirements">Requirements:</h4>
+<h4>Requirements:</h4>
 <p>In order to use the Falcon Data Replicator feature the following are required: 
  1. <strong>Subscription:</strong> 
  1.1.  Falcon Data Replicator. 
  1.2. Falcon Insight XDR. 
  2. <strong>Roles:</strong> 
  2.1. Falcon Administrator.</p>
-<h4 id="1-setup-your-crowdstrike-aws-environments">1. Setup your CrowdStrike &amp; AWS environments</h4>
+<h4>1. Setup your CrowdStrike &amp; AWS environments</h4>
 <p>To configure access on AWS, use the following two templates provided to set up the AWS environment. This will enable sending logs from an S3 bucket to your Log Analytics Workspace.
  #### For each template, create Stack in AWS: 
  1. Go to <a href="https://aka.ms/awsCloudFormationLink#/stacks/create">AWS CloudFormation Stacks</a>. 
@@ -169,7 +165,7 @@ Make sure that your bucket will be created in the same AWS region as your Falcon
 - <strong>Template 2: AWS CrowdStrike resources deployment</strong>: <code>CrowdStrike</code>
 <em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
 </blockquote>
-<h4 id="using-your-own-s3-bucket">Using your own S3 Bucket</h4>
+<h4>Using your own S3 Bucket</h4>
 <p>In order to use your own S3 bucket you can refernace the following guide <a href="https://falcon.us-2.crowdstrike.com/documentation/page/fa572b1c/falcon-data-replicator#g4f79236">Use your own S3 bucket</a> or follow this steps: 
  1. Create support case with the following Name: <strong>Using Self S3 bucket for FDR</strong> 
  2. Add the following information: 
@@ -181,7 +177,7 @@ Make sure that your bucket will be created in the same AWS region as your Falcon
  |-----------------|-----------|
  | Primary Events | data/    |
  | Secondary Events | fdrv2/ </p>
-<h4 id="2-connect-new-collectors">2. Connect new collectors</h4>
+<h4>2. Connect new collectors</h4>
 <p>To enable AWS S3 for Microsoft Sentinel, click the Add new collector button, fill the required information in the context pane and click on Connect.
 <strong>Connector Management Interface</strong></p>
 <p>This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.</p>
@@ -209,8 +205,8 @@ Make sure that your bucket will be created in the same AWS region as your Falcon
 <p>💡 <strong>Portal-Only Feature</strong>: This configuration form is only available in the Microsoft Sentinel portal.</p>
 </blockquote>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 </div>
 
 </body>

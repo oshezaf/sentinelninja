@@ -9,14 +9,14 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="beyondtrust-privileged-management-cloud-for-microsoft-sentinel">BeyondTrust Privileged Management Cloud for Microsoft Sentinel</h1>
+<h1>BeyondTrust Privileged Management Cloud for Microsoft Sentinel</h1>
 <p><em>Solution: BeyondTrustPMCloud</em></p>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/BeyondTrustLogo.svg" alt="BeyondTrustPMCloud Logo" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
 <table>
 <thead>
@@ -55,16 +55,16 @@
 <td style="text-align: left;">2025-10-31</td>
 </tr>
 <tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2026-02-27</td>
+</tr>
+<tr>
 <td style="text-align: left;"><strong>Solution Folder</strong></td>
 <td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BeyondTrustPMCloud">BeyondTrustPMCloud</a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Marketplace</strong></td>
-<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/beyondtrust.azure-sentinel-solution-beyondtrustpmcloud">Azure Marketplace</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Popularity</strong></td>
-<td style="text-align: left;">⚪ Very Low (0%)</td>
+<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/beyondtrust.azure-sentinel-solution-beyondtrustpmcloud">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
 </tr>
 </tbody>
 </table>
@@ -73,22 +73,19 @@
 <p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
 <p>a. <a href="https://docs.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Logs Ingestion API</a></p>
 <p>b. <a href="https://azure.microsoft.com/services/functions/#overview">Azure Functions</a></p>
-<h2 id="contents">Contents</h2>
+<h2>Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#tables-used">Tables Used</a></li>
 <li><a href="#content-items">Content Items</a></li>
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
-<h2 id="data-connectors">Data Connectors</h2>
+<h2>Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
-<li><a href="../connectors/beyondtrustpmcloud.html">BeyondTrust PM Cloud</a> 🔶</li>
+<li><a href="../connectors/beyondtrustpmcloud.html">BeyondTrust PM Cloud</a></li>
 </ul>
-<blockquote>
-<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
-</blockquote>
-<h2 id="tables-used">Tables Used</h2>
+<h2>Tables Used</h2>
 <p>This solution uses <strong>2 table(s)</strong>:</p>
 <table>
 <thead>
@@ -100,21 +97,18 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../tables/beyondtrustpm-activityaudits-cl.html"><code>BeyondTrustPM_ActivityAudits_CL</code></a> 🔶</td>
+<td><a href="../tables/beyondtrustpm-activityaudits-cl.html"><code>BeyondTrustPM_ActivityAudits_CL</code></a></td>
 <td><a href="../connectors/beyondtrustpmcloud.html">BeyondTrust PM Cloud</a></td>
 <td>Workbooks</td>
 </tr>
 <tr>
-<td><a href="../tables/beyondtrustpm-clientevents-cl.html"><code>BeyondTrustPM_ClientEvents_CL</code></a> 🔶</td>
+<td><a href="../tables/beyondtrustpm-clientevents-cl.html"><code>BeyondTrustPM_ClientEvents_CL</code></a></td>
 <td><a href="../connectors/beyondtrustpmcloud.html">BeyondTrust PM Cloud</a></td>
 <td>Workbooks</td>
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
-</blockquote>
-<h2 id="content-items">Content Items</h2>
+<h2>Content Items</h2>
 <p>This solution includes <strong>1 content item(s)</strong>:</p>
 <table>
 <thead>
@@ -130,7 +124,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks</h3>
+<h3>Workbooks</h3>
 <table>
 <thead>
 <tr>
@@ -145,16 +139,16 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BeyondTrustPMCloud/README.md">BeyondTrustPMCloud/README.md</a></em></p>
 </blockquote>
-<h2 id="solution-overview">Solution Overview</h2>
+<h2>Solution Overview</h2>
 <p>The BeyondTrust PM Cloud solution provides comprehensive visibility into privilege management activities and endpoint security events from BeyondTrust Privilege Management Cloud.</p>
 <p><strong>Included Components:</strong>
 - <strong>Data Connectors:</strong> 1
 - <strong>Workbooks:</strong> 1</p>
-<h3 id="in-this-article">In this article</h3>
+<h3>In this article</h3>
 <p><a href="#solution-overview">Solution Overview</a>\
 <a href="#connector-attributes">Connector Attributes</a>\
 <a href="#data-tables">Data Tables</a>\
@@ -162,7 +156,7 @@
 <a href="#prerequisites">Prerequisites</a>\
 <a href="#installation">Installation</a>\
 <a href="#next-steps">Next Steps</a></p>
-<h2 id="connector-attributes">Connector Attributes</h2>
+<h2>Connector Attributes</h2>
 <table>
 <thead>
 <tr>
@@ -189,7 +183,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="data-tables">Data Tables</h2>
+<h2>Data Tables</h2>
 <p>The connector automatically creates two custom tables in your Log Analytics workspace during deployment:</p>
 <ul>
 <li><strong><code>BeyondTrustPM_ActivityAudits_CL</code></strong> (~40 columns) - Administrative activities, policy changes, user management, configuration audits</li>
@@ -205,25 +199,25 @@
 - <strong>Ingestion:</strong> Azure Monitor Logs Ingestion API with Data Collection Rules (DCRs)
 - <strong>Rate Limiting:</strong> Compliance with BeyondTrust API limits (1000 requests per 100 seconds)
 - <strong>State Management:</strong> Azure Table Storage for incremental data retrieval</p>
-<h2 id="query-samples">Query Samples</h2>
-<h4 id="all-activity-audits">All Activity Audits</h4>
+<h2>Query Samples</h2>
+<h4>All Activity Audits</h4>
 <pre><code class="language-kusto">BeyondTrustPM_ActivityAudits_CL
 | sort by TimeGenerated desc
 </code></pre>
-<h4 id="all-client-events">All Client Events</h4>
+<h4>All Client Events</h4>
 <pre><code class="language-kusto">BeyondTrustPM_ClientEvents_CL
 | sort by TimeGenerated desc
 </code></pre>
-<h2 id="prerequisites">Prerequisites</h2>
+<h2>Prerequisites</h2>
 <p>To integrate with BeyondTrust PM Cloud make sure you have the following:</p>
 <ul>
 <li><strong>Microsoft.Web/sites permissions:</strong> Read and write permissions to Azure Functions to create a Function App is required. See the <a href="https://learn.microsoft.com/azure/azure-functions/">Azure Functions documentation</a> for details.</li>
 <li><strong>BeyondTrust PM Cloud API credentials:</strong> OAuth Client ID and Client Secret with appropriate permissions. Contact BeyondTrust support to obtain API access credentials.</li>
 <li><strong>Azure Log Analytics workspace</strong> configured for Microsoft Sentinel</li>
 </ul>
-<h2 id="installation">Installation</h2>
+<h2>Installation</h2>
 <p><em>[Content truncated...]</em></p>
-<h2 id="release-notes">Release Notes</h2>
+<h2>Release Notes</h2>
 <table>
 <thead>
 <tr>
@@ -241,8 +235,8 @@
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 </div>
 
 </body>

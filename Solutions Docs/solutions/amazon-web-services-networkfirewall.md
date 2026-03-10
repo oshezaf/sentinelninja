@@ -20,8 +20,7 @@
 | **Author** | Microsoft |
 | **First Published** | 2025-03-20 |
 | **Solution Folder** | [Amazon Web Services NetworkFirewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services%20NetworkFirewall) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-aws-networkfirewall) |
-| **Popularity** | 🟡 Low (36%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-aws-networkfirewall) · Popularity: 🟡 Low (36%) |
 
 The Amazon Web Services Network Firewall for Microsoft Sentinel allows you to enable Security monitoring of AWS services by allowing ingestion of logs from the AWS S3Bucket, SQS Queue.
 

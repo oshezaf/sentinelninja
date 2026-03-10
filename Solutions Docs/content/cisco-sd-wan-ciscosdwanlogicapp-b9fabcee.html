@@ -9,12 +9,12 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="ciscosdwanlogicapp">CiscoSDWANLogicAPP</h1>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Back to Content Index</a></p>
+<h1>CiscoSDWANLogicAPP</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook provides an end-to-end example of sending an email, posting a message to the Microsoft Teams channel, and creating 3rd party ticket for the suspicious activity found in the data.</p>
 <table>
@@ -39,19 +39,19 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20SD-WAN/Playbooks/CiscoSDWANLogicAPP/readme.md">CiscoSDWANLogicAPP/readme.md</a></em></p>
 </blockquote>
-<h1 id="cisco-sdwan-logic-app">Cisco SDWAN Logic App</h1>
+<h1>Cisco SDWAN Logic App</h1>
 <ul>
 <li><a href="#Summary">Summary</a></li>
 <li><a href="#Deployment-instructions">Deployment instructions</a></li>
 <li><a href="#Post-Deployment-instructions">Post-Deployment instructions</a></li>
 </ul>
-<h2 id="summary">Summary<a name="Summary"></a></h2>
+<h2>Summary<a name="Summary"></a></h2>
 <p>This playbook provides an end-to-end example of sending an email, posting a message to the Microsoft Teams channel, and creating 3rd party ticket for the suspicious activity found in the data.</p>
-<h3 id="deployment-instructions">Deployment instructions<a name="Deployment-instructions"></a></h3>
+<h3>Deployment instructions<a name="Deployment-instructions"></a></h3>
 <ol>
 <li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
 <li>Fill the below parameters:<ul>
@@ -70,8 +70,8 @@
 </li>
 </ol>
 <p><a href="https%3A%2F%2Fportal.azure.com%2F%23create%2FMicrosoft.Template%2Furi%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCisco%20SD-WAN%2FPlaybooks%2FCiscoSDWANLogicApp%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https%3A%2F%2Fportal.azure.com%2F%23create%2FMicrosoft.Template%2Furi%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCisco%20SD-WAN%2FPlaybooks%2FCiscoSDWANLogicApp%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
-<h3 id="post-deployment-instructions">Post-Deployment instructions<a name="Post-Deployment-instructions"></a></h3>
-<h5 id="a-authorize-connections">a. Authorize connections</h5>
+<h3>Post-Deployment instructions<a name="Post-Deployment-instructions"></a></h3>
+<h5>a. Authorize connections</h5>
 <p>Once deployment is complete, authorize each connection like MicrosoftSentinel.</p>
 <ol>
 <li>Click the connection resource</li>
@@ -80,7 +80,7 @@
 <li>Sign in</li>
 <li>Click Save</li>
 </ol>
-<h5 id="b-configurations-in-microsoft-sentinel">b. Configurations in Microsoft Sentinel</h5>
+<h5>b. Configurations in Microsoft Sentinel</h5>
 <ol>
 <li>In Microsoft Sentinel, analytics rules should be configured to trigger an incident. <blockquote>
 <ol>
@@ -101,7 +101,7 @@
 </blockquote>
 </li>
 </ol>
-<h4 id="sample-analytics-rule-query">Sample analytics rule query</h4>
+<h4>Sample analytics rule query</h4>
 <ul>
 <li>Analytic Rule : Monitor Critical IPs</li>
 </ul>
@@ -135,7 +135,7 @@
 | project Malware, SourceIP, Username
 </code></pre>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/cisco-sd-wan.html">Back to Cisco SD-WAN</a></p>
 </div>
 

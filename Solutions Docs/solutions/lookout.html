@@ -9,14 +9,14 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="lookout-mobile-threat-defense-for-microsoft-sentinel">Lookout Mobile Threat Defense for Microsoft Sentinel</h1>
+<h1>Lookout Mobile Threat Defense for Microsoft Sentinel</h1>
 <p><em>Solution: Lookout</em></p>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Lookout/Workbooks/Images/Logo/lookout.svg" alt="Lookout Logo" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
 <table>
 <thead>
@@ -56,7 +56,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Last Updated</strong></td>
-<td style="text-align: left;">2025-12-18</td>
+<td style="text-align: left;">2026-01-13</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Solution Folder</strong></td>
@@ -64,11 +64,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Marketplace</strong></td>
-<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/lookoutinc.lookout_mtd_sentinel">Azure Marketplace</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Popularity</strong></td>
-<td style="text-align: left;">🔵 Medium (50%)</td>
+<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/lookoutinc.lookout_mtd_sentinel">Azure Marketplace</a> · Popularity: 🔵 Medium (50%)</td>
 </tr>
 </tbody>
 </table>
@@ -81,14 +77,14 @@
 
 <p><span style='color:red; font-weight:bold;'>Important</span>: While the updated connector(s) can coexist with their legacy versions, running them together will result in duplicated data ingestion. You can disable the older versions of these connectors to avoid duplication of data.</p>
 
-<h2 id="contents">Contents</h2>
+<h2>Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#tables-used">Tables Used</a></li>
 <li><a href="#content-items">Content Items</a></li>
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
-<h2 id="data-connectors">Data Connectors</h2>
+<h2>Data Connectors</h2>
 <p>This solution provides <strong>2 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/lookoutapi.html">[DEPRECATED] Lookout</a> 🔶</li>
@@ -97,7 +93,7 @@
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
-<h2 id="tables-used">Tables Used</h2>
+<h2>Tables Used</h2>
 <p>This solution uses <strong>2 table(s)</strong>:</p>
 <table>
 <thead>
@@ -123,7 +119,7 @@
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
-<h2 id="content-items">Content Items</h2>
+<h2>Content Items</h2>
 <p>This solution includes <strong>12 content item(s)</strong>:</p>
 <table>
 <thead>
@@ -151,7 +147,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="analytic-rules">Analytic Rules</h3>
+<h3>Analytic Rules</h3>
 <table>
 <thead>
 <tr>
@@ -194,7 +190,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries">Hunting Queries</h3>
+<h3>Hunting Queries</h3>
 <table>
 <thead>
 <tr>
@@ -211,7 +207,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks</h3>
+<h3>Workbooks</h3>
 <table>
 <thead>
 <tr>
@@ -242,7 +238,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="parsers">Parsers</h3>
+<h3>Parsers</h3>
 <table>
 <thead>
 <tr>
@@ -259,14 +255,14 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout/README.md">Lookout/README.md</a></em></p>
 </blockquote>
-<h2 id="overview">🚀 Overview</h2>
+<h2>🚀 Overview</h2>
 <p>The Lookout Mobile Risk API v2 solution provides comprehensive mobile threat detection, device compliance monitoring, and security intelligence for Microsoft Sentinel. This enhanced version leverages the full capabilities of Lookout's Mobile Risk API v2 to deliver advanced threat correlation, smishing detection, and sophisticated security analytics.</p>
-<h2 id="whats-new-in-v2">✨ What's New in v2</h2>
-<h3 id="new-capabilities">🆕 New Capabilities</h3>
+<h2>✨ What's New in v2</h2>
+<h3>🆕 New Capabilities</h3>
 <ul>
 <li><strong>Smishing Detection</strong>: Advanced SMS phishing protection with impersonation analysis</li>
 <li><strong>Enhanced Device Intelligence</strong>: 50+ v2 fields including MDM integration details</li>
@@ -274,14 +270,14 @@
 <li><strong>Advanced Risk Scoring</strong>: Multi-dimensional threat assessment</li>
 <li><strong>Campaign Detection</strong>: Sophisticated coordinated attack identification</li>
 </ul>
-<h3 id="enhanced-components">📊 Enhanced Components</h3>
+<h3>📊 Enhanced Components</h3>
 <ul>
 <li><strong>4 Analytics Rules</strong>: Comprehensive threat detection across all event types</li>
 <li><strong>6 Hunting Queries</strong>: Advanced threat correlation scenarios</li>
 <li><strong>Enhanced Workbook</strong>: Rich visualizations with v2 data insights</li>
 <li><strong>Validation Framework</strong>: Complete testing and validation methodology</li>
 </ul>
-<h2 id="solution-structure">📁 Solution Structure</h2>
+<h2>📁 Solution Structure</h2>
 <p>```
 Solutions/Lookout/
 ├── 📋 README.md                           # This file
@@ -322,7 +318,7 @@ Solutions/Lookout/
 ├── 📊 Workbooks/
 │   ├── LookoutEvents.json                # Legacy workbook</p>
 <p><em>[Content truncated...]</em></p>
-<h2 id="release-notes">Release Notes</h2>
+<h2>Release Notes</h2>
 <table>
 <thead>
 <tr>
@@ -345,8 +341,8 @@ Solutions/Lookout/
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 </div>
 
 </body>

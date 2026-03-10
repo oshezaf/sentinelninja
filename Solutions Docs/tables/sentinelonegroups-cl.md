@@ -8,33 +8,33 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (15 columns)
+## Schema (16 columns)
 
-**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SentinelOneGroups_CL.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne%5CData%20Connectors%5CSentinelOne_ccp/table%20-%20Groups.json)
 
-| Column Name | Type |
-|:------------|:-----|
-| CreatedAt | datetime |
-| Creator | string |
-| CreatorId | string |
-| FilterId | string |
-| FilterName | string |
-| GroupType | string |
-| Id | string |
-| Inherits | string |
-| IsDefault | string |
-| Name | string |
-| Rank | real |
-| RegistrationToken | string |
-| SiteId | string |
-| TotalAgents | string |
-| UpdatedAt | datetime |
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| CreatedAt | datetime | The timestamp (UTC) when the object was created. |
+| Creator | string | The name of the creator. |
+| CreatorId | string | The unique identifier of the creator. |
+| FilterId | string | The unique identifier of the filter. |
+| FilterName | string | The name of the filter applied. |
+| GroupType | string | The type of the object. |
+| Id | string | The unique identifier for the object. |
+| Inherits | string | Indicates whether the object inherits properties. |
+| IsDefault | string | Indicates whether this is the default setting. |
+| Name | string | The name of the object. |
+| Rank | real | The rank of the object. |
+| RegistrationToken | string | The token used for registration. |
+| SiteId | string | The unique identifier of the site. |
+| TimeGenerated | datetime | The timestamp (UTC) reflecting the time in which the event was generated. |
+| TotalAgents | string | The total number of agents. |
+| UpdatedAt | datetime | The timestamp (UTC) when the object was last updated. |
 
 ## Solutions (1)
 

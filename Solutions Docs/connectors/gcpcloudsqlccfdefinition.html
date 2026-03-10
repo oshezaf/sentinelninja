@@ -9,13 +9,13 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="gcp-cloud-sql-via-codeless-connector-framework">GCP Cloud SQL (via Codeless Connector Framework)</h1>
+<h1>GCP Cloud SQL (via Codeless Connector Framework)</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/google_logo.svg" alt="" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
@@ -56,7 +56,7 @@
 </tbody>
 </table>
 <p>The GCP Cloud SQL data connector provides the capability to ingest Audit logs into Microsoft Sentinel using the GCP Cloud SQL API. Refer to <a href="https://cloud.google.com/sql/docs/mysql/audit-logging">GCP cloud SQL Audit Logs</a> documentation for more information.</p>
-<h2 id="tables-ingested">Tables Ingested</h2>
+<h2>Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -76,22 +76,22 @@
 </tr>
 </tbody>
 </table>
-<h2 id="permissions">Permissions</h2>
+<h2>Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): Read and Write permissions are required.</p>
-<h2 id="setup-instructions">Setup Instructions</h2>
+<h2>Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
 <p><strong>1. Connect GCP Cloud SQL to Microsoft Sentinel</strong></p>
-<h4 id="1-setup-the-gcp-environment">1. Setup the GCP environment</h4>
+<h4>1. Setup the GCP environment</h4>
 <p>Ensure to have the following resources from the GCP Console:
  Project ID, Project Name, GCP Subscription name for the project, Workload Identity Pool ID, Workspace Identity Provider ID, and a Service Account to establish the connection.
  For more information, refer the <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformSQL/Data%20Connectors/Readme.md">Connector tutorial</a> for log setup and authentication setup tutorial.
  Log set up script: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/DataConnectors/GCP/Terraform/sentinel_resources_creation/GCPCloudSQLLogsSetup/GCPCloudSQLLogsSetup.tf">Click Here</a>
 Authentication set up script: <a href="https://github.com/Azure/Azure-Sentinel/tree/master/DataConnectors/GCP/Terraform/sentinel_resources_creation/GCPInitialAuthenticationSetup">Click here</a></p>
 <p><strong>Government Cloud:</strong></p>
-<h4 id="1-setup-the-gcp-environment_1">1. Setup the GCP environment</h4>
+<h4>1. Setup the GCP environment</h4>
 <p>Ensure to have the following resources from the GCP Console:
  Project ID, Project Name, GCP Subscription name for the project, Workload Identity Pool ID, Workspace Identity Provider ID, and a Service Account to establish the connection.
  For more information, refer the <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformSQL/Data%20Connectors/Readme.md">Connector tutorial</a> for log setup and authentication setup tutorial.
@@ -101,8 +101,8 @@ Authentication set up script: <a href="https://github.com/Azure/Azure-Sentinel/t
 <blockquote>
 <p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
 </blockquote>
-<h4 id="2-in-the-google-cloud-console-enable-cloud-sql-api-if-not-enabled-previously-and-save-the-changes">2. In the Google Cloud Console, enable Cloud SQL API, if not enabled previously, and save the changes.</h4>
-<h4 id="3-connect-new-collectors">3. Connect new collectors</h4>
+<h4>2. In the Google Cloud Console, enable Cloud SQL API, if not enabled previously, and save the changes.</h4>
+<h4>3. Connect new collectors</h4>
 <p>To enable GCP Cloud SQL Logs for Microsoft Sentinel, click the Add new collector button, fill the required information in the context pane and click on Connect.
 <strong>GCP Collector Management</strong></p>
 <p>📊 <strong>View GCP Collectors</strong>: A management interface displays your configured Google Cloud Platform data collectors.</p>
@@ -118,12 +118,12 @@ Authentication set up script: <a href="https://github.com/Azure/Azure-Sentinel/t
 <blockquote>
 <p>💡 <strong>Portal-Only Feature</strong>: This configuration form is only available in the Microsoft Sentinel portal.</p>
 </blockquote>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformSQL\Data Connectors\Readme.md">GoogleCloudPlatformSQL\Data Connectors\Readme.md</a></em></p>
 </blockquote>
-<h1 id="integrating-google-cloud-platform-cloud-sql-into-microsoft-sentinel">Integrating Google Cloud Platform Cloud SQL into Microsoft Sentinel</h1>
-<h2 id="table-of-contents">Table of contents</h2>
+<h1>Integrating Google Cloud Platform Cloud SQL into Microsoft Sentinel</h1>
+<h2>Table of contents</h2>
 <ul>
 <li><a href="#intro">Introduction</a></li>
 <li><a href="#step2">Prerequisites</a></li>
@@ -131,10 +131,10 @@ Authentication set up script: <a href="https://github.com/Azure/Azure-Sentinel/t
 <li><a href="#auth">Steps to execute Terraform Scripts for Authentication setup</a></li>
 </ul>
 <p><a name="intro"></p>
-<h2 id="introduction">Introduction</h2>
+<h2>Introduction</h2>
 <p>The Cloud SQL Codeless Connector for Microsoft Sentinel enables seamless integration of Cloud SQL logs with Microsoft Sentinel without the need for custom code. Developed as part of the Codeless Connector Platform(CCP), this connector simplifies the process of collecting and ingesting Cloud SQL audit logs, instance operation logs from Google Cloud Platform into Sentinel.</p>
 <p><a name="step2"></p>
-<h2 id="prerequisites">Prerequisites</h2>
+<h2>Prerequisites</h2>
 <p>The below mentioned resources are required to connect GCP with Sentinel.
 - Project ID
 - Project Number
@@ -148,7 +148,7 @@ Authentication set up script: <a href="https://github.com/Azure/Azure-Sentinel/t
 <li>Authentication setup file</li>
 </ul>
 <p><a name="log"></p>
-<h2 id="steps-to-execute-terraform-scripts-for-log-setup">Steps to execute Terraform scripts for Log Setup</h2>
+<h2>Steps to execute Terraform scripts for Log Setup</h2>
 <p>To access the terraform script for Log Setup <a href="https://github.com/v-bgoriparth/CloudSql/blob/main/GCPCloudSQLLogSetup.tf">Click here</a>.
 - Launch the cloud shell in Google Cloud Console.
 - Execute the below mentioned commands.
@@ -174,7 +174,7 @@ Authentication set up script: <a href="https://github.com/Azure/Azure-Sentinel/t
 </li>
 </ul>
 <p><a name="auth"></p>
-<h2 id="steps-to-execute-terraform-script-for-authentication-setup">Steps to execute Terraform script for Authentication setup</h2>
+<h2>Steps to execute Terraform script for Authentication setup</h2>
 <ul>
 <li>If the Authentication setup file is previously executed in the project while configuring any other GCP data connectors, there is no need to execute the Authentication setup file again. You can use the existing <code>Workload Identity Pool ID</code> and <code>Workload Identity Provider ID</code> for authentication  purpose.</li>
 <li>If these fields are not generated previously, execute the Authentication Setup file.</li>
@@ -183,8 +183,8 @@ Authentication set up script: <a href="https://github.com/Azure/Azure-Sentinel/t
 <li>After executing the authentication setup file, <code>Workload Identity Pool ID</code> and <code>Workload Identity Provider ID</code> are generated in the project.Save those details for future reference.</li>
 </ul>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 </div>
 
 </body>

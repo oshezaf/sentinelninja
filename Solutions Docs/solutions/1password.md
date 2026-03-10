@@ -20,8 +20,7 @@
 | **Author** | Rogier Dijkman (SecureHats) |
 | **First Published** | 2023-12-01 |
 | **Solution Folder** | [1Password](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/1Password) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/1password1617200969773.azure-sentinel-solution-1password) |
-| **Popularity** | 🟢 High (91%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/1password1617200969773.azure-sentinel-solution-1password) · Popularity: 🟢 High (91%) |
 
 The [1Password](https://www.1password.com) solution for Microsoft Sentinel enables you to ingest sign-in attempts, item usage, and audit events from your 1Password Business account using the [1Password Events Reporting API](https://developer.1password.com/docs/events-api). This allows you to monitor and investigate events in 1Password in Microsoft Sentinel along with the other applications and services your organization uses.
 

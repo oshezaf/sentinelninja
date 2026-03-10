@@ -19,9 +19,9 @@
 | **Version** | 3.0.3 |
 | **Author** | svc.cv-securityiq@commvault.com |
 | **First Published** | 2023-08-17 |
+| **Last Updated** | 2026-02-20 |
 | **Solution Folder** | [Commvault Security IQ](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Commvault%20Security%20IQ) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/commvault.microsoft-sentinel-solution-commvaultsecurityiq) |
-| **Popularity** | ⚪ Very Low (8%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/commvault.microsoft-sentinel-solution-commvaultsecurityiq) · Popularity: ⚪ Very Low (8%) |
 
 This Microsoft Sentinel integration enables Commvault users to ingest alerts and other data into their Microsoft Sentinel instance. With Analytic Rules, Microsoft Sentinel can automatically create Microsoft Sentinel incidents.
 

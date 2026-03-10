@@ -9,12 +9,12 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="aws-systems-manager-get-missing-patches-for-ec2-instances-for-given-hostname">AWS Systems Manager - Get Missing Patches for EC2 Instances for given Hostname</h1>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Back to Content Index</a></p>
+<h1>AWS Systems Manager - Get Missing Patches for EC2 Instances for given Hostname</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>The playbook can be triggered manually from a Host Entity to get the missing patches on a managed EC2 instance. This playbook performs the following actions: 1. Get the Hostname from the Host Entity. 2. Get the Instance ID from AWS EC2 for given Hostname. 3. Get the missing patches for the Instance ID. 4. Add the missing patches to the incident comment.</p>
 <table>
@@ -39,12 +39,12 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Systems%20Manager/Playbooks/AWSSystemsManagerPlaybooks/AWS-SSM-GetInstancePatches-HostEntityTrigger/readme.md">AWSSystemsManagerPlaybooks/AWS-SSM-GetInstancePatches-HostEntityTrigger/readme.md</a></em></p>
 </blockquote>
-<h1 id="aws-ssm-getinstancepatches-hostentitytrigger">AWS-SSM-GetInstancePatches-HostEntityTrigger</h1>
-<h2 id="summary">Summary</h2>
+<h1>AWS-SSM-GetInstancePatches-HostEntityTrigger</h1>
+<h2>Summary</h2>
 <p>The playbook can be triggered manually from a Host Entity to get the missing patches on a managed EC2 instance. This playbook performs the following actions:</p>
 <ol>
 <li>Get the Hostname from the Host Entity.</li>
@@ -54,12 +54,12 @@
 </ol>
 <p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Systems%20Manager/Playbooks/AWSSystemsManagerPlaybooks%5CAWS-SSM-GetInstancePatches-HostEntityTrigger/images/AWS-SSM-GetInstancePatches-HostTrigger_light.jpg" width="50%"/><br>
 <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Systems%20Manager/Playbooks/AWSSystemsManagerPlaybooks%5CAWS-SSM-GetInstancePatches-HostEntityTrigger/images/AWS-SSM-GetInstancePatches-HostTrigger_IncidentComment.jpg" width="50%"/><br></p>
-<h3 id="prerequisites">Prerequisites</h3>
+<h3>Prerequisites</h3>
 <ol>
 <li>Prior to the deployment of this playbook, <a href="../../CustomConnector/AWS_SSM_FunctionAppConnector/">AWS Systems Manager API Function App Connector</a> needs to be deployed under the same subscription.</li>
 <li>Refer to <a href="../../CustomConnector/AWS_SSM_FunctionAppConnector/readme.html">AWS Systems Manager API Function App Connector</a> documentation to obtain AWS Access Key ID, Secret Access Key and Region. </li>
 </ol>
-<h3 id="deployment-instructions">Deployment instructions</h3>
+<h3>Deployment instructions</h3>
 <ol>
 <li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
 <li>Fill in the required parameters:<ul>
@@ -69,8 +69,8 @@
 </li>
 </ol>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FAWS%2520Systems%2520Manager%2FPlaybooks%2FAWSSystemsManagerPlaybooks%2FAWS-SSM-GetInstancePatches-HostEntityTrigger%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FAWS%2520Systems%2520Manager%2FPlaybooks%2FAWSSystemsManagerPlaybooks%2FAWS-SSM-GetInstancePatches-HostEntityTrigger%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
-<h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
-<h4 id="a-authorize-connections">a. Authorize connections</h4>
+<h3>Post-Deployment instructions</h3>
+<h4>a. Authorize connections</h4>
 <p>Once deployment is complete, authorize each connection.</p>
 <ol>
 <li>Click the Microsoft Sentinel connection resource</li>
@@ -80,7 +80,7 @@
 <li>Click Save</li>
 <li>Repeat steps for other connections</li>
 </ol>
-<h4 id="b-assign-playbook-microsoft-sentinel-responder-role">b. Assign Playbook Microsoft Sentinel Responder Role</h4>
+<h4>b. Assign Playbook Microsoft Sentinel Responder Role</h4>
 <ol>
 <li>Select the Playbook (Logic App) resource</li>
 <li>Click on Identity Blade</li>
@@ -93,16 +93,16 @@
 <li>Select Role - Microsoft Sentinel Responder</li>
 <li>Click Save</li>
 </ol>
-<h4 id="c-function-app-settings-update-instructions">c. Function App Settings Update Instructions</h4>
+<h4>c. Function App Settings Update Instructions</h4>
 <p>Refer to <a href="../../CustomConnector/AWS_SSM_FunctionAppConnector/readme.html">AWS Systems Manager API Function App Connector</a> documentation for Function App <strong>Application Settings (Access Key ID, Secret Access Key and Region)</strong> update instruction.</p>
-<h1 id="references">References</h1>
+<h1>References</h1>
 <ul>
 <li><a href="https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DeleteDocument.html">AWS Systems Manager API Documentation</a></li>
 <li><a href="https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html">AWS Systems Manager User Guide</a></li>
 <li><a href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html">AWS Systems Manager Boto3 Documentation</a></li>
 </ul>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/aws-systems-manager.html">Back to AWS Systems Manager</a></p>
 </div>
 

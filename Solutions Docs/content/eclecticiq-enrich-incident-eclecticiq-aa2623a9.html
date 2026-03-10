@@ -9,12 +9,12 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="enrich-incident-eclecticiq">Enrich Incident - EclecticIQ</h1>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Back to Content Index</a></p>
+<h1>Enrich Incident - EclecticIQ</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook perform look up into EclecticIQ for the entities (Account, Host, IP, FileHash, URL) present result to Microsoft Sentinel incident</p>
 <table>
@@ -39,23 +39,23 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/EclecticIQ/Playbooks/EclecticIQPlaybooks/EclecticIQ-EnrichIncident/readme.md">EclecticIQPlaybooks/EclecticIQ-EnrichIncident/readme.md</a></em></p>
 </blockquote>
-<h1 id="elasticsearch-enrichincident-playbook">ElasticSearch-EnrichIncident Playbook</h1>
+<h1>ElasticSearch-EnrichIncident Playbook</h1>
 <p>## Summary
  When a new Azure Sentinel incident is created, this playbook gets triggered and performs below actions
  1. For each Entity (Accounts, Host, IP Address, FileHash, URL) available in Sentinel incident, it performs lookup for a match in EclecticIQ
  2. If it finds the match, this playbook adds a rich comment to the incident with all the collected information
     <img alt="Comment example" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/EclecticIQ/Playbooks/EclecticIQPlaybooks%5CEclecticIQ-EnrichIncident/images/EclecticIQ_EI_IncidentComment_DarkTheme.png" /></p>
 <p><img alt="Playbook Designer view" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/EclecticIQ/Playbooks/EclecticIQPlaybooks%5CEclecticIQ-EnrichIncident/images/EclecticIQ_EI_Workflow_DarkTheme.png" /><br></p>
-<h3 id="prerequisites">Prerequisites</h3>
+<h3>Prerequisites</h3>
 <ol>
 <li>EclecticIQ Custom Connector needs to be deployed prior to the deployment of this playbook under the same subscription.</li>
 <li>API key. To get API Key, find the instructions here https://developers.eclecticiq.com/docs/authenticate#generate-api-token.</li>
 </ol>
-<h3 id="deployment-instructions">Deployment instructions</h3>
+<h3>Deployment instructions</h3>
 <ol>
 <li>
 <p>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deplyoing an ARM Template wizard.
@@ -70,8 +70,8 @@
 </ul>
 </li>
 </ol>
-<h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
-<h4 id="a-authorize-connections">a. Authorize connections</h4>
+<h3>Post-Deployment instructions</h3>
+<h4>a. Authorize connections</h4>
 <p>Once deployment is complete, you will need to authorize each connection.
 1.  Click the Azure Sentinel connection resource
 2.  Click edit API connection
@@ -79,12 +79,12 @@
 4.  Sign in
 5.  Click Save
 6.  Repeat steps for EclecticIQ API  Connection (For authorizing the EclecticIQ API connection, API Key needs to be provided)</p>
-<h4 id="b-configurations-in-sentinel">b. Configurations in Sentinel</h4>
+<h4>b. Configurations in Sentinel</h4>
 <ol>
 <li>In Azure sentinel analytical rules should be configured to trigger an incident with risky user account or host or URL or FileHash or IP Address. </li>
 <li>Configure the automation rules to trigger this playbook</li>
 </ol>
-<h4 id="c-assign-playbook-microsoft-sentinel-responder-role">c. Assign Playbook Microsoft Sentinel Responder Role</h4>
+<h4>c. Assign Playbook Microsoft Sentinel Responder Role</h4>
 <ol>
 <li>Select the Playbook (Logic App) resource</li>
 <li>Click on Identity Blade</li>
@@ -98,7 +98,7 @@
 <li>Click Save (It takes 3-5 minutes to show the added role.)</li>
 </ol>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/eclecticiq.html">Back to EclecticIQ</a></p>
 </div>
 

@@ -19,10 +19,9 @@
 | **Version** | 3.0.7 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-11 |
-| **Last Updated** | 2022-11-11 |
+| **Last Updated** | 2026-02-09 |
 | **Solution Folder** | [Network Session Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Network%20Session%20Essentials) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-networksession) |
-| **Popularity** | 🟢 High (84%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-networksession) · Popularity: 🟢 High (84%) |
 | **Pre-requisites** | [Amazon Web Services](amazon-web-services.md), [Azure Firewall](azure-firewall.md), [Azure Network Security Groups](azure-network-security-groups.md), [Check Point](check-point.md), [CiscoASA](ciscoasa.md), [CiscoMeraki](ciscomeraki.md), [Corelight](corelight.md), [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md), [IoTOTThreatMonitoringwithDefenderforIoT](iototthreatmonitoringwithdefenderforiot.md), [Microsoft Defender for Cloud](microsoft-defender-for-cloud.md), [Microsoft Sysmon For Linux](microsoft-sysmon-for-linux.md), [Windows Firewall](windows-firewall.md), [PaloAlto-PAN-OS](paloalto-pan-os.md), [Vectra AI Stream](vectra-ai-stream.md), [Watchguard Firebox](watchguard-firebox.md), [Zscaler Internet Access](zscaler-internet-access.md), [IllumioSaaS](illumiosaas.md) |
 
 [Network Session Essentials](https://aka.ms/NetworkSessionEssential) is a [domain solution](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fazure%2Fsentinel%2Fsentinel-solutions-catalog%23domain-solutions&data=05%7C01%7Ckavishbakshi%40microsoft.com%7Cbe2a496082b24caa4b8c08da9cefacca%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637994850502413731%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=OJegu%2B2EqD7rmYmK9pm9QniD6YWp5ooloZ6tHzcwVi0%3D&reserved=0) and does not include any data connectors. The content in this solution requires one of the product solutions below , as well as any other connector or data source normalized to the [ASIM](https://aka.ms/AboutASIM).

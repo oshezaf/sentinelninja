@@ -5,16 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SentinelOneAgentsCL &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
-
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="sentineloneagents_cl">SentinelOneAgents_CL</h1>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Back to Tables Index</a></p>
+<h1>SentinelOneAgents_CL</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <table>
 <thead>
@@ -24,10 +26,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align: left;"><strong>Custom Log V1</strong></td>
-<td style="text-align: left;">Yes 🔶 — uses type-suffixed column names</td>
-</tr>
 <tr>
 <td style="text-align: left;"><strong>Supports Transformations</strong></td>
 <td style="text-align: left;">✓ Yes</td>
@@ -46,296 +44,370 @@
 </tr>
 </tbody>
 </table>
-<h2 id="schema-68-columns">Schema (68 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SentinelOneAgents_CL.json">KQL validation test schema</a></p>
-<table>
+<h2>Schema (69 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne%5CData%20Connectors%5CSentinelOne_ccp/table%20-%20Agents.json">Connector definition</a></p>
+<table id="schema-table">
 <thead>
 <tr>
 <th style="text-align: left;">Column Name</th>
 <th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;">AccountId</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique identifier for the account.</td>
 </tr>
 <tr>
 <td style="text-align: left;">AccountName</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The account name.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ActiveDirectory</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Details about the active directory.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ActiveThreats</td>
 <td style="text-align: left;">real</td>
+<td style="text-align: left;">The number of active threats.</td>
 </tr>
 <tr>
 <td style="text-align: left;">AgentVersion</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The version of the agent.</td>
 </tr>
 <tr>
 <td style="text-align: left;">AllowRemoteShell</td>
 <td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether remote shell is allowed.</td>
 </tr>
 <tr>
 <td style="text-align: left;">AppsVulnerabilityStatus</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The vulnerability status of the applications.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ComputerName</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the computer.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ConsoleMigrationStatus</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The status of the console migration.</td>
 </tr>
 <tr>
 <td style="text-align: left;">CoreCount</td>
 <td style="text-align: left;">real</td>
+<td style="text-align: left;">The number of CPU cores.</td>
 </tr>
 <tr>
 <td style="text-align: left;">CpuCount</td>
 <td style="text-align: left;">real</td>
+<td style="text-align: left;">The number of CPUs.</td>
 </tr>
 <tr>
 <td style="text-align: left;">CpuId</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The identifier of the CPU.</td>
 </tr>
 <tr>
 <td style="text-align: left;">CreatedAt</td>
 <td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) when the object was created.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Domain</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The domain of the object.</td>
 </tr>
 <tr>
 <td style="text-align: left;">EncryptedApplications</td>
 <td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the applications are encrypted.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ExternalId</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The external identifier associated with the object.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ExternalIp</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The external IP address of the object.</td>
 </tr>
 <tr>
 <td style="text-align: left;">FullDiskScanLastUpdatedAt</td>
 <td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) when the full disk scan was last updated.</td>
 </tr>
 <tr>
 <td style="text-align: left;">GroupId</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique identifier for the group.</td>
 </tr>
 <tr>
 <td style="text-align: left;">GroupIp</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address of the group.</td>
 </tr>
 <tr>
 <td style="text-align: left;">GroupName</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the group.</td>
 </tr>
 <tr>
 <td style="text-align: left;">GroupUpdatedAt</td>
 <td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) when the group was last updated.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Id</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique identifier for the object.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Infected</td>
 <td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the object is infected.</td>
 </tr>
 <tr>
 <td style="text-align: left;">InRemoteShellSession</td>
 <td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the object is in a remote shell session.</td>
 </tr>
 <tr>
 <td style="text-align: left;">InstallerType</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of installer used.</td>
 </tr>
 <tr>
 <td style="text-align: left;">IsActive</td>
 <td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the object is active.</td>
 </tr>
 <tr>
 <td style="text-align: left;">IsDecommissioned</td>
 <td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the object is decommissioned.</td>
 </tr>
 <tr>
 <td style="text-align: left;">IsPendingUninstall</td>
 <td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the object is pending uninstallation.</td>
 </tr>
 <tr>
 <td style="text-align: left;">IsUninstalled</td>
 <td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the object is uninstalled.</td>
 </tr>
 <tr>
 <td style="text-align: left;">IsUpToDate</td>
 <td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the object is up to date.</td>
 </tr>
 <tr>
 <td style="text-align: left;">LastActiveDate</td>
 <td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) when the object was last active.</td>
 </tr>
 <tr>
 <td style="text-align: left;">LastIpToMgmt</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The last IP address used for management.</td>
 </tr>
 <tr>
 <td style="text-align: left;">LastLoggedInUserName</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The username of the last logged-in user.</td>
 </tr>
 <tr>
 <td style="text-align: left;">LicenseKey</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The license key associated with the object.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Locations</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The locations associated with the object.</td>
 </tr>
 <tr>
 <td style="text-align: left;">LocationType</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of location.</td>
 </tr>
 <tr>
 <td style="text-align: left;">MachineType</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of machine.</td>
 </tr>
 <tr>
 <td style="text-align: left;">MissingPermissions</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of the missing permissions.</td>
 </tr>
 <tr>
 <td style="text-align: left;">MitigationMode</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The mitigation mode applied.</td>
 </tr>
 <tr>
 <td style="text-align: left;">MitigationModeSuspicious</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The suspicious mitigation mode applied.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ModelName</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The model name of the object.</td>
 </tr>
 <tr>
 <td style="text-align: left;">NetworkInterfaces</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of the network interfaces.</td>
 </tr>
 <tr>
 <td style="text-align: left;">NetworkQuarantineEnabled</td>
 <td style="text-align: left;">bool</td>
+<td style="text-align: left;">Is Network Quarantine Enabled on the device.</td>
 </tr>
 <tr>
 <td style="text-align: left;">NetworkStatus</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The network status of the object.</td>
 </tr>
 <tr>
 <td style="text-align: left;">OperationalStateExpiration</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Agent operational state.</td>
 </tr>
 <tr>
 <td style="text-align: left;">OsArch</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The OS architecture.</td>
 </tr>
 <tr>
 <td style="text-align: left;">OsName</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the operating system.</td>
 </tr>
 <tr>
 <td style="text-align: left;">OsRevision</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The OS revision.</td>
 </tr>
 <tr>
 <td style="text-align: left;">OsStartTime</td>
 <td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) when the operating system started.</td>
 </tr>
 <tr>
 <td style="text-align: left;">OsType</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of operating system.</td>
 </tr>
 <tr>
 <td style="text-align: left;">OsUsername</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The username associated with the operating system.</td>
 </tr>
 <tr>
 <td style="text-align: left;">PolicyUpdatedAt</td>
 <td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) when the policy was last updated.</td>
 </tr>
 <tr>
 <td style="text-align: left;">RangerStatus</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The status of the ranger.</td>
 </tr>
 <tr>
 <td style="text-align: left;">RangerVersion</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The version of the ranger.</td>
 </tr>
 <tr>
 <td style="text-align: left;">RegisteredAt</td>
 <td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) when the object was registered.</td>
 </tr>
 <tr>
 <td style="text-align: left;">RemoteProfilingState</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Agent remote profiling state.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ScanAbortedAt</td>
 <td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) when the scan was aborted.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ScanFinishedAt</td>
 <td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) when the scan was finished.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ScanStartedAt</td>
 <td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) when the scan was started.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ScanStatus</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The scan status of the object.</td>
 </tr>
 <tr>
 <td style="text-align: left;">SiteId</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique identifier for the site.</td>
 </tr>
 <tr>
 <td style="text-align: left;">SiteName</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the site.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ThreatRebootRequired</td>
 <td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether a reboot is required due to a threat.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) reflecting the time in which the event was generated.</td>
 </tr>
 <tr>
 <td style="text-align: left;">TotalMemory</td>
 <td style="text-align: left;">real</td>
+<td style="text-align: left;">The total memory available in MB.</td>
 </tr>
 <tr>
 <td style="text-align: left;">UpdatedAt</td>
 <td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) when the object was last updated.</td>
 </tr>
 <tr>
 <td style="text-align: left;">UserActionsNeeded</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of the user actions needed.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Uuid</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique identifier for the object.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="solutions-1">Solutions (1)</h2>
+<h2>Solutions (1)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/sentinelone.html">SentinelOne</a></li>
 </ul>
-<h2 id="connectors-2">Connectors (2)</h2>
+<h2>Connectors (2)</h2>
 <p>This table is ingested by the following connectors:</p>
 <table>
 <thead>
@@ -356,8 +428,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table-22">Content Items Using This Table (22)</h2>
-<h3 id="analytic-rules-11">Analytic Rules (11)</h3>
+<h2>Content Items Using This Table (22)</h2>
+<h3>Analytic Rules (11)</h3>
 <p><strong>In solution <a href="../solutions/sentinelone.html">SentinelOne</a>:</strong></p>
 <table>
 <thead>
@@ -413,7 +485,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries-10">Hunting Queries (10)</h3>
+<h3>Hunting Queries (10)</h3>
 <p><strong>In solution <a href="../solutions/sentinelone.html">SentinelOne</a>:</strong></p>
 <table>
 <thead>
@@ -465,7 +537,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks-1">Workbooks (1)</h3>
+<h3>Workbooks (1)</h3>
 <p><strong>In solution <a href="../solutions/sentinelone.html">SentinelOne</a>:</strong></p>
 <table>
 <thead>
@@ -481,8 +553,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="parsers-using-this-table-1">Parsers Using This Table (1)</h2>
-<h3 id="other-parsers-1">Other Parsers (1)</h3>
+<h2>Parsers Using This Table (1)</h2>
+<h3>Other Parsers (1)</h3>
 <table>
 <thead>
 <tr>
@@ -500,9 +572,33 @@
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 </div>
-
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
 </body>
 </html>

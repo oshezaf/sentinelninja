@@ -9,13 +9,13 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="jboss">JBoss</h1>
+<h1>JBoss</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="JBoss Logo" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
 <table>
 <thead>
@@ -59,11 +59,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Marketplace</strong></td>
-<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-jboss">Azure Marketplace</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Popularity</strong></td>
-<td style="text-align: left;">🟡 Low (21%)</td>
+<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-jboss">Azure Marketplace</a> · Popularity: 🟡 Low (21%)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Pre-requisites</strong></td>
@@ -74,14 +70,14 @@
 <p>The JBoss Enterprise Application Platform data connector provides the capability to ingest <a href="https://www.redhat.com/en/technologies/jboss-middleware/application-platform">JBoss</a> events into Microsoft Sentinel. Refer to <a href="https://access.redhat.com/documentation/red_hat_jboss_enterprise_application_platform/7.0/html/configuration_guide/logging_with_jboss_eap">Red Hat documentation</a> for more information.</p>
 <p>This solution is dependent on the Custom logs via AMA connector to collect the logs. The Custom logs solution will be installed as part of this solution installation.</p>
 <p><strong>NOTE</strong>: Microsoft recommends installation of Custom logs via AMA Connector.Legacy connector uses the Log Analytics agent which were deprecated on <strong>Aug 31, 2024.</strong> Using MMA and AMA on same machine can cause log duplication and extra ingestion cost <a href="https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate">more details</a>.</p>
-<h2 id="contents">Contents</h2>
+<h2>Contents</h2>
 <ul>
 <li><a href="#pre-requisites">Pre-requisites</a></li>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#tables-used">Tables Used</a></li>
 <li><a href="#content-items">Content Items</a></li>
 </ul>
-<h2 id="pre-requisites">Pre-requisites</h2>
+<h2>Pre-requisites</h2>
 <p>This solution depends on <strong>1 other solution(s)</strong>:</p>
 <table>
 <thead>
@@ -95,7 +91,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="data-connectors">Data Connectors</h2>
+<h2>Data Connectors</h2>
 <p>This solution has <strong>1 discovered data connector(s)⚠️</strong> (not in Solution definition):</p>
 <ul>
 <li><a href="../connectors/jbosseap.html">[Deprecated] JBoss Enterprise Application Platform</a> ⚠️</li>
@@ -108,7 +104,7 @@
 <p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
-<h2 id="tables-used">Tables Used</h2>
+<h2>Tables Used</h2>
 <p>This solution uses <strong>17 table(s)</strong>:</p>
 <table>
 <thead>
@@ -120,12 +116,12 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../tables/apachehttpserver-cl.html"><code>ApacheHTTPServer_CL</code></a> 🔶</td>
+<td><a href="../tables/apachehttpserver-cl.html"><code>ApacheHTTPServer_CL</code></a></td>
 <td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
 <td>-</td>
 </tr>
 <tr>
-<td><a href="../tables/jbossevent-cl.html"><code>JBossEvent_CL</code></a> 🔶</td>
+<td><a href="../tables/jbossevent-cl.html"><code>JBossEvent_CL</code></a></td>
 <td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
 <td>-</td>
 </tr>
@@ -135,37 +131,37 @@
 <td>-</td>
 </tr>
 <tr>
-<td><a href="../tables/juniperidp-cl.html"><code>JuniperIDP_CL</code></a> 🔶</td>
+<td><a href="../tables/juniperidp-cl.html"><code>JuniperIDP_CL</code></a></td>
 <td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
 <td>-</td>
 </tr>
 <tr>
-<td><a href="../tables/marklogicaudit-cl.html"><code>MarkLogicAudit_CL</code></a> 🔶</td>
+<td><a href="../tables/marklogicaudit-cl.html"><code>MarkLogicAudit_CL</code></a></td>
 <td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
 <td>-</td>
 </tr>
 <tr>
-<td><a href="../tables/mongodbaudit-cl.html"><code>MongoDBAudit_CL</code></a> 🔶</td>
+<td><a href="../tables/mongodbaudit-cl.html"><code>MongoDBAudit_CL</code></a></td>
 <td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
 <td>-</td>
 </tr>
 <tr>
-<td><a href="../tables/nginx-cl.html"><code>NGINX_CL</code></a> 🔶</td>
+<td><a href="../tables/nginx-cl.html"><code>NGINX_CL</code></a></td>
 <td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
 <td>-</td>
 </tr>
 <tr>
-<td><a href="../tables/oracleweblogicserver-cl.html"><code>OracleWebLogicServer_CL</code></a> 🔶</td>
+<td><a href="../tables/oracleweblogicserver-cl.html"><code>OracleWebLogicServer_CL</code></a></td>
 <td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
 <td>-</td>
 </tr>
 <tr>
-<td><a href="../tables/postgresql-cl.html"><code>PostgreSQL_CL</code></a> 🔶</td>
+<td><a href="../tables/postgresql-cl.html"><code>PostgreSQL_CL</code></a></td>
 <td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
 <td>-</td>
 </tr>
 <tr>
-<td><a href="../tables/securitybridgelogs-cl.html"><code>SecurityBridgeLogs_CL</code></a> 🔶</td>
+<td><a href="../tables/securitybridgelogs-cl.html"><code>SecurityBridgeLogs_CL</code></a></td>
 <td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
 <td>-</td>
 </tr>
@@ -175,12 +171,12 @@
 <td>-</td>
 </tr>
 <tr>
-<td><a href="../tables/tomcat-cl.html"><code>Tomcat_CL</code></a> 🔶</td>
+<td><a href="../tables/tomcat-cl.html"><code>Tomcat_CL</code></a></td>
 <td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
 <td>-</td>
 </tr>
 <tr>
-<td><a href="../tables/ubiquiti-cl.html"><code>Ubiquiti_CL</code></a> 🔶</td>
+<td><a href="../tables/ubiquiti-cl.html"><code>Ubiquiti_CL</code></a></td>
 <td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
 <td>-</td>
 </tr>
@@ -190,17 +186,17 @@
 <td>-</td>
 </tr>
 <tr>
-<td><a href="../tables/zpa-cl.html"><code>ZPA_CL</code></a> 🔶</td>
+<td><a href="../tables/zpa-cl.html"><code>ZPA_CL</code></a></td>
 <td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
 <td>-</td>
 </tr>
 <tr>
-<td><a href="../tables/meraki-cl.html"><code>meraki_CL</code></a> 🔶</td>
+<td><a href="../tables/meraki-cl.html"><code>meraki_CL</code></a></td>
 <td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
 <td>-</td>
 </tr>
 <tr>
-<td><a href="../tables/vcenter-cl.html"><code>vcenter_CL</code></a> 🔶</td>
+<td><a href="../tables/vcenter-cl.html"><code>vcenter_CL</code></a></td>
 <td><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency)</td>
 <td>-</td>
 </tr>
@@ -209,7 +205,7 @@
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
-<h2 id="content-items">Content Items</h2>
+<h2>Content Items</h2>
 <p>This solution includes <strong>1 content item(s)</strong>:</p>
 <table>
 <thead>
@@ -225,7 +221,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="parsers">Parsers</h3>
+<h3>Parsers</h3>
 <table>
 <thead>
 <tr>
@@ -242,7 +238,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="release-notes">Release Notes</h2>
+<h2>Release Notes</h2>
 <table>
 <thead>
 <tr>
@@ -265,8 +261,8 @@
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 </div>
 
 </body>

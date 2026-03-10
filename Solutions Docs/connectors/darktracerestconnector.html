@@ -9,13 +9,13 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="darktrace-connector-for-microsoft-sentinel-rest-api">Darktrace Connector for Microsoft Sentinel REST API</h1>
+<h1>Darktrace Connector for Microsoft Sentinel REST API</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Darktrace.svg" alt="" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
@@ -56,7 +56,7 @@
 </tbody>
 </table>
 <p>The Darktrace REST API connector pushes real-time events from Darktrace to Microsoft Sentinel and is designed to be used with the Darktrace Solution for Sentinel. The connector writes logs to a custom log table titled "darktrace_model_alerts_CL"; Model Breaches, AI Analyst Incidents, System Alerts and Email Alerts can be ingested - additional filters can be set up on the Darktrace System Configuration page. Data is pushed to Sentinel from Darktrace masters.</p>
-<h2 id="tables-ingested">Tables Ingested</h2>
+<h2>Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -79,7 +79,7 @@
 <blockquote>
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
-<h2 id="permissions">Permissions</h2>
+<h2>Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): read and write permissions are required.
 - <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
@@ -88,7 +88,7 @@
  Data is sent to the <a href="https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api">Azure Monitor HTTP Data Collector API</a> over HTTPs from Darktrace masters, therefore outbound connectivity from the Darktrace master to Microsoft Sentinel REST API is required.
 - <strong>Filter Darktrace Data</strong>: During configuration it is possible to set up additional filtering on the Darktrace System Configuration page to constrain the amount or types of data sent.
 - <strong>Try the Darktrace Sentinel Solution</strong>: You can get the most out of this connector by installing the Darktrace Solution for Microsoft Sentinel. This will provide workbooks to visualise alert data and analytics rules to automatically create alerts and incidents from Darktrace Model Breaches and AI Analyst incidents.</p>
-<h2 id="setup-instructions">Setup Instructions</h2>
+<h2>Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
@@ -112,19 +112,19 @@
 <li>Click "Verify Alert Settings" to attempt authentication and send out a test alert</li>
 <li>Run a "Look for Test Alerts" sample query to validate that the test alert has been received</li>
 </ol>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Darktrace\Data Connectors\Doc_DarktraceConnectorRESTAPI.md">Darktrace\Data Connectors\Doc_DarktraceConnectorRESTAPI.md</a></em></p>
 </blockquote>
 <!-- Taken from https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/DataConnectors/Templates/Doc_Template_REST_API_Connector.md -->
 
-<h1 id="connect-darktrace-to-microsoft-sentinel">Connect Darktrace to Microsoft Sentinel</h1>
+<h1>Connect Darktrace to Microsoft Sentinel</h1>
 <p>The Darktrace Data Connector allows you to easily connect your AI detections from within Darktrace's Product Suite with your Microsoft Sentinel workspace, to view dashboards, create custom alerts, and improve investigation. The connector allows Darktrace to send AI Analyst Incidents, Model Breaches, Email Alerts and System Health Alerts to Sentinel. Integration between Darktrace and Microsoft Sentinel makes use of REST API: data is sent from Darktrace to Sentinel using HTTPs.</p>
 <blockquote>
 <p>[!NOTE]
 Data will be stored in the geographic location of the workspace on which you are running Microsoft Sentinel.</p>
 </blockquote>
-<h2 id="configure-and-connect-darktrace-to-microsoft-sentinel">Configure and connect Darktrace to Microsoft Sentinel</h2>
+<h2>Configure and connect Darktrace to Microsoft Sentinel</h2>
 <p>Darktrace can integrate and export alerting data directly to Microsoft Sentinel.</p>
 <ol>
 <li>
@@ -134,22 +134,22 @@ Data will be stored in the geographic location of the workspace on which you are
 <p>Follow the configuration steps in the configuration wizard. Detailed configuration steps can be found on the <a href="https://customerportal.darktrace.com/product-guides/main/microsoft-sentinel-introduction">Darktrace Customer Portal</a>.</p>
 </li>
 </ol>
-<h2 id="find-your-data">Find your data</h2>
+<h2>Find your data</h2>
 <p>After a successful connection is established, the data appears in Log Analytics under CustomLogs <code>darktrace_model_alerts_CL</code>.
 To use the relevant schema in Log Analytics for Darktrace, search for <code>darktrace_model_alerts_CL</code>.</p>
-<h2 id="validate-connectivity">Validate connectivity</h2>
+<h2>Validate connectivity</h2>
 <p>It may take up to 20 minutes until your logs start to appear in Log Analytics. You can look for test alerts sent during connection validation by using one of the sample queries shipping with the connector.</p>
-<h2 id="next-steps">Next steps</h2>
+<h2>Next steps</h2>
 <p>In this document, you learned how to connect Darktrace to Microsoft Sentinel. To learn more about Microsoft Sentinel, see the following articles:
 - Learn how to <a href="https://docs.microsoft.com/azure/sentinel/get-visibility">get visibility into your data, and potential threats</a>.
 - Get started <a href="https://docs.microsoft.com/azure/sentinel/detect-threats-built-in">detecting threats with Microsoft Sentinel</a>.
 - <a href="https://docs.microsoft.com/azure/sentinel/monitor-your-data">Use workbooks</a> to monitor your data.</p>
-<h3 id="install-as-a-solution-preview">Install as a solution (Preview)</h3>
+<h3>Install as a solution (Preview)</h3>
 <p>To get the most out of the Data Connector, consider installing the Darktrace Solution for Microsoft Sentinel from the Sentinel Content Hub. The solution will allow you to operationalize Darktrace data in Microsoft Sentinel by visualising alerting using Workbooks as well as turning Darktrace alerting into Microsoft Sentinel Incident and Alerts.</p>
 <p>For more information, see the <a href="https://docs.microsoft.com/azure/sentinel/sentinel-solutions">Microsoft Sentinel solution overview</a> and visit the <a href="https://azure.microsoft.com/marketplace/">Azure Marketplace</a></p>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 </div>
 
 </body>

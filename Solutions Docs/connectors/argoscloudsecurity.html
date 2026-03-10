@@ -9,13 +9,13 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="argos-cloud-security">ARGOS Cloud Security</h1>
+<h1>ARGOS Cloud Security</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/ARGOSCloudSecurity/Workbooks/images/logos/argos-logo.svg" alt="" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
@@ -56,7 +56,7 @@
 </tbody>
 </table>
 <p>The ARGOS Cloud Security integration for Microsoft Sentinel allows you to have all your important cloud security events in one place. This enables you to easily create dashboards, alerts, and correlate events across multiple systems. Overall this will improve your organization's security posture and security incident response.</p>
-<h2 id="tables-ingested">Tables Ingested</h2>
+<h2>Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -79,11 +79,11 @@
 <blockquote>
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
-<h2 id="permissions">Permissions</h2>
+<h2>Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): read and write permissions are required.
 - <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
-<h2 id="setup-instructions">Setup Instructions</h2>
+<h2>Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
@@ -102,32 +102,32 @@
 - <strong>Primary Key</strong>: <code>PrimaryKey</code>
 <em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
 </blockquote>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ARGOSCloudSecurity\Data Connectors\ARGOS_REST_API_Connector.md">ARGOSCloudSecurity\Data Connectors\ARGOS_REST_API_Connector.md</a></em></p>
 </blockquote>
-<h1 id="connect-your-argos-cloud-security-to-azure-sentinel">Connect your ARGOS Cloud Security to Azure Sentinel</h1>
+<h1>Connect your ARGOS Cloud Security to Azure Sentinel</h1>
 <p>ARGOS Cloud Security connector allows you to easily connect all your ARGOS Cloud Security security solution logs with your Azure Sentinel, to view dashboards, create custom alerts, and improve investigation. In addition this integration allows you to correlate your ARGOS Cloud Security events to other events that are happening in your environment. Integration between ARGOS Cloud Security and Azure Sentinel makes use of REST API.</p>
 <blockquote>
 <p>[!NOTE]
 Data will be stored in the geographic location of the workspace on which you are running Azure Sentinel. This can be different to the geographic location of your ARGOS Cloud Security subscription.</p>
 </blockquote>
-<h2 id="configure-and-connect-argos-cloud-security">Configure and connect ARGOS Cloud Security</h2>
+<h2>Configure and connect ARGOS Cloud Security</h2>
 <p>ARGOS Cloud Security can integrate and export detections directly to Azure Sentinel.</p>
 <ol>
 <li>In the Azure Sentinel portal, click Data connectors and select ARGOS Cloud Security and then Open connector page.</li>
 <li>Either follow the instructions on the <a href="https://www.argos-security.io/resources#integrations">ARGOS Resources</a> page on how to configure the integration or if you are already logged in to ARGOS then head to the <a href="https://app.argos-security.io/account/sentinel">Sentinel integration page</a> and configure it right away.</li>
 </ol>
-<h2 id="find-your-data">Find your data</h2>
+<h2>Find your data</h2>
 <p>After a successful connection is established, the data appears in Log Analytics under CustomLogs ARGOS_CL.
 To use the relevant schema in Log Analytics for the ARGOS Cloud Security, search for ARGOS_CL.</p>
-<h2 id="validate-connectivity">Validate connectivity</h2>
+<h2>Validate connectivity</h2>
 <p>It may take up to 20 minutes until your logs start to appear in Log Analytics.</p>
-<h2 id="next-steps">Next steps</h2>
+<h2>Next steps</h2>
 <p>In this document, you learned how to connect ARGOS Cloud Security to Azure Sentinel.</p>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 </div>
 
 </body>

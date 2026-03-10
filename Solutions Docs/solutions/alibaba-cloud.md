@@ -18,8 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-27 |
 | **Solution Folder** | [Alibaba Cloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alibaba%20Cloud) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-alibabacloud) |
-| **Popularity** | ⚪ Very Low (5%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-alibabacloud) · Popularity: ⚪ Very Low (5%) |
 
 The [Alibaba Cloud](https://www.alibabacloud.com/product/log-service) solution provides the capability to retrieve logs from cloud applications using the Cloud API and more events into Microsoft Sentinel through the [REST API](https://aliyun-log-python-sdk.readthedocs.io/api.html). 
  
@@ -41,9 +40,7 @@ The [Alibaba Cloud](https://www.alibabacloud.com/product/log-service) solution p
 
 This solution provides **1 data connector(s)**:
 
-- [AliCloud](../connectors/alicloud.md) 🔶
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+- [AliCloud](../connectors/alicloud.md)
 
 ## Tables Used
 
@@ -51,10 +48,8 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`AliCloud_CL`](../tables/alicloud-cl.md) 🔶 | [AliCloud](../connectors/alicloud.md) | - |
+| [`AliCloud_CL`](../tables/alicloud-cl.md) | [AliCloud](../connectors/alicloud.md) | - |
 
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 ## Content Items
 
 This solution includes **1 content item(s)**:

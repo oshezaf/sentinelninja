@@ -9,12 +9,12 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="url-enrichment-cisco-meraki">URL Enrichment - Cisco Meraki</h1>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Back to Content Index</a></p>
+<h1>URL Enrichment - Cisco Meraki</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook checks if malicious URL is blocked or unblocked by Cisco Meraki network.</p>
 <table>
@@ -39,13 +39,13 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/URL-Enrichment/readme.md">URL-Enrichment/readme.md</a></em></p>
 </blockquote>
-<h1 id="cisco-meraki-url-enrichment-playbook">Cisco Meraki URL Enrichment Playbook</h1>
+<h1>Cisco Meraki URL Enrichment Playbook</h1>
 <p><img alt="meraki" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/URL-Enrichment/../../Connector/MerakiConnector/logo.jpg" /></p>
-<h2 id="summary">Summary</h2>
+<h2>Summary</h2>
 <p>When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the below actions:
  1. Fetches a list of potentially malicious URLs.
  2. For each URL in the list, checks if the URL is blocked by any of the networks of the organization.
@@ -87,8 +87,8 @@
 </tr>
 </tbody>
 </table>
-<h1 id="post-deployment-instructions">Post-Deployment Instructions</h1>
-<h2 id="a-authorize-api-connection">a. Authorize API connection</h2>
+<h1>Post-Deployment Instructions</h1>
+<h2>a. Authorize API connection</h2>
 <ul>
 <li>Once deployment is complete, go under deployment details and authorize Cisco Meraki connection. 
 1.  Click the Cisco Meraki connection
@@ -96,22 +96,22 @@
 3.  Enter API Key
 4.  Click Save</li>
 </ul>
-<h2 id="b-configurations-in-sentinel">b. Configurations in Sentinel</h2>
+<h2>b. Configurations in Sentinel</h2>
 <ul>
 <li>In Microsoft sentinel analytical rules should be configured to trigger an incident with URLs. </li>
 <li>Configure the automation rules to trigger the playbook.</li>
 </ul>
-<h1 id="playbook-steps-explained">Playbook steps explained</h1>
-<h2 id="when-microsoft-sentinel-incident-creation-rule-is-triggered">When Microsoft Sentinel incident creation rule is triggered</h2>
+<h1>Playbook steps explained</h1>
+<h2>When Microsoft Sentinel incident creation rule is triggered</h2>
 <p>Captures potentially malicious or malware URL incident information.</p>
-<h2 id="entities-get-urls">Entities - Get URLs</h2>
+<h2>Entities - Get URLs</h2>
 <p>Get the list of URLs as entities from the Incident.</p>
-<h2 id="check-if-organization-exists">Check if Organization exists</h2>
+<h2>Check if Organization exists</h2>
 <ul>
 <li>If organization name exists in list of organizations associated with the account, then get list of networks associated with the organization. </li>
 <li>If organization name does not exist, then terminate with the error that organization not found.</li>
 </ul>
-<h2 id="for-each-malicious-url-received-from-the-incident">For each malicious URL received from the incident</h2>
+<h2>For each malicious URL received from the incident</h2>
 <ul>
 <li>Checks if the URL is blocked by any of the networks of the organization.<ul>
 <li>If URL is allowed by the network, then incident comment is created saying URL is allowed.</li>
@@ -121,11 +121,11 @@
 </li>
 <li>Add incident Comment from all the cases.</li>
 </ul>
-<h2 id="incident-comment">Incident Comment</h2>
+<h2>Incident Comment</h2>
 <p><img alt="meraki" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/URL-Enrichment/Images/IncidentCommentLight.jpg" /></p>
 <p><img alt="meraki" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/URL-Enrichment/Images/IncidentCommentDark.jpg" /></p>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/ciscomeraki.html">Back to CiscoMeraki</a></p>
 </div>
 

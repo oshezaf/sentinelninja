@@ -20,9 +20,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-20 |
 | **Solution Folder** | [Box](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Box) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-box) |
-| **Popularity** | 🔵 Medium (59%) |
-| **Rating** | ★☆☆☆☆ 1.0/5 (1 ratings) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-box) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🔵 Medium (59%) |
 
 The [Box](https://developer.box.com/guides/events/enterprise-events/for-enterprise/) solution connector provides the capability to ingest [Box enterprise's events](https://developer.box.com/guides/events/#admin-events) into Microsoft Sentinel using the Box REST API 
  
@@ -55,7 +53,7 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`BoxEventsV2_CL`](../tables/boxeventsv2-cl.md) 🔶 | [Box](../connectors/boxdataconnector.md), [Box Events (CCP)](../connectors/boxeventsccpdefinition.md) | Analytics, Hunting, Workbooks |
+| [`BoxEventsV2_CL`](../tables/boxeventsv2-cl.md) | [Box](../connectors/boxdataconnector.md), [Box Events (CCP)](../connectors/boxeventsccpdefinition.md) | Analytics, Hunting, Workbooks |
 | [`BoxEvents_CL`](../tables/boxevents-cl.md) 🔶 | [Box](../connectors/boxdataconnector.md), [Box Events (CCP)](../connectors/boxeventsccpdefinition.md) | Analytics, Hunting, Workbooks |
 
 

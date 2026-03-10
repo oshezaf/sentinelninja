@@ -17,9 +17,9 @@
 | **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-16 |
+| **Last Updated** | 2026-01-29 |
 | **Solution Folder** | [Attacker Tools Threat Protection Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Attacker%20Tools%20Threat%20Protection%20Essentials) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-attackertools) |
-| **Popularity** | 🟡 Low (18%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-attackertools) · Popularity: 🟡 Low (18%) |
 | **Pre-requisites** | [Windows Security Events](windows-security-events.md), [Windows Server DNS](windows-server-dns.md), [Windows Forwarded Events](windows-forwarded-events.md), [Microsoft Entra ID](microsoft-entra-id.md) |
 
 The **Attacker Tools Threat Protection Essentials** solution contains security content that is relevant for detection of tools commonly used by attackers in various campaigns. These tools can be commercial, open-source, built-in or publicly available and have historically been seen used by adversaries in different phases of the ATTACK kill chain.  

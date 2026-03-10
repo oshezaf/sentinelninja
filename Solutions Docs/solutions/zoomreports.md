@@ -20,8 +20,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-23 |
 | **Solution Folder** | [ZoomReports](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZoomReports) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-zoomreports) |
-| **Popularity** | 🟡 Low (14%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-zoomreports) · Popularity: 🟡 Low (14%) |
 
 The [Zoom](https://zoom.us/) Reports solution enables you to ingest Zoom Reports' events into Microsoft Sentinel through the [Zoom Report REST API](https://developers.zoom.us/docs/api/)
   
@@ -44,9 +43,7 @@ The [Zoom](https://zoom.us/) Reports solution enables you to ingest Zoom Reports
 
 This solution provides **1 data connector(s)**:
 
-- [Zoom Reports](../connectors/zoom.md) 🔶
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+- [Zoom Reports](../connectors/zoom.md)
 
 ## Tables Used
 
@@ -54,10 +51,8 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Zoom_CL`](../tables/zoom-cl.md) 🔶 | [Zoom Reports](../connectors/zoom.md) | Workbooks |
+| [`Zoom_CL`](../tables/zoom-cl.md) | [Zoom Reports](../connectors/zoom.md) | Workbooks |
 
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 ## Content Items
 
 This solution includes **2 content item(s)**:

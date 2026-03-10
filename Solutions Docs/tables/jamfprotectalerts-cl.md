@@ -15,13 +15,13 @@
 
 ## Schema (55 columns)
 
-**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/jamfprotectalerts_CL.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Jamf%20Protect%5CData%20Connectors%5CJamfProtect_ccp/table.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| ActingProcessGuid | string |
-| ActingProcessId | real |
-| ActingProcessName | string |
+| ActingProcessGuid | dynamic |
+| ActingProcessId | int |
+| ActingProcessName | dynamic |
 | DvcHostname | dynamic |
 | DvcId | dynamic |
 | DvcIpAddr | dynamic |
@@ -39,8 +39,8 @@
 | EventType | string |
 | EventVendor | string |
 | input | dynamic |
-| ParentProcessGuid | string |
-| ParentProcessId | real |
+| ParentProcessGuid | dynamic |
+| ParentProcessId | int |
 | ParentProcessName | dynamic |
 | ProcessEventSubType | string |
 | ProcessEventType | string |
@@ -66,13 +66,13 @@
 | TargetFileSize | dynamic |
 | TargetHostname | dynamic |
 | TargetProcessCommandLine | dynamic |
-| TargetProcessCurrentDirectory | string |
+| TargetProcessCurrentDirectory | dynamic |
 | TargetProcessGuid | dynamic |
 | TargetProcessId | dynamic |
 | TargetProcessName | dynamic |
-| TargetProcessSHA1 | string |
-| TargetProcessSHA256 | string |
-| TargetProcessStatusCode | real |
+| TargetProcessSHA1 | dynamic |
+| TargetProcessSHA256 | dynamic |
+| TargetProcessStatusCode | dynamic |
 | TimeGenerated | datetime |
 
 ## Solutions (1)

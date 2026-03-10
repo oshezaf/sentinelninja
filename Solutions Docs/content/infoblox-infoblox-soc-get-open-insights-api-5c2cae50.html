@@ -9,12 +9,12 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="infoblox-soc-get-open-insights-api">Infoblox-SOC-Get-Open-Insights-API</h1>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Back to Content Index</a></p>
+<h1>Infoblox-SOC-Get-Open-Insights-API</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>Leverages the Infoblox SOC Insights API to ingest all Open/Active SOC Insights at time of run into the custom InfobloxInsight table. This playbook is scheduled to run on a daily basis.</p>
 <table>
@@ -39,7 +39,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="tables-used">Tables Used</h2>
+<h2>Tables Used</h2>
 <p>This content item queries data from the following tables:</p>
 <table>
 <thead>
@@ -59,7 +59,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20SOC%20Get%20Open%20Insights%20API/readme.md">Infoblox SOC Get Open Insights API/readme.md</a></em></p>
 </blockquote>
@@ -69,18 +69,18 @@
 <li><a href="#Deployment-instructions">Deployment instructions</a></li>
 <li><a href="#Post-Deployment-instructions">Post-Deployment instructions</a></li>
 </ul>
-<h2 id="summary">Summary<a name="Summary"></a></h2>
+<h2>Summary<a name="Summary"></a></h2>
 <p>This playbook uses the Infoblox SOC Insights REST API to ingest all Open/Active SOC Insights at time of run into the custom <code>InfobloxInsight</code> table. </p>
 <p>This playbook is an alternative to using the <strong>Infoblox SOC Insight Data Connectors via the Microsoft forwarding agent</strong>, which require the <strong>Infoblox Cloud Data Connector (CDC)</strong>. Instead, this playbook <strong>ingests the same type of data via REST API</strong>. This way, you do not need to set up and deploy and Infoblox CDC in your environment. </p>
 <p>You can use both methods in the same workspace, but <strong>beware of duplicate data</strong>.</p>
 <p>Simply input your <strong>Infoblox API Key</strong> into the playbook parameters and it will ingest every open SOC Insight at runtime.</p>
 <p>The Analytic Query <strong>Infoblox - SOC Insight Detected - API Source</strong> will read this data for insights and create an Incident when one is found. It is OK to run the playbook multiple times, as the Analytic Queries will group SOC Insight Incidents into one that have the same Infoblox Insight ID in the underlying data tables.</p>
 <p>This playbook is scheduled to run on a daily basis. You can increase or decrease recurrence.</p>
-<h3 id="prerequisites">Prerequisites<a name="Prerequisites"></a></h3>
+<h3>Prerequisites<a name="Prerequisites"></a></h3>
 <ol>
 <li>User must have a valid Infoblox API Key.</li>
 </ol>
-<h3 id="deployment-instructions">Deployment instructions<a name="Deployment-instructions"></a></h3>
+<h3>Deployment instructions<a name="Deployment-instructions"></a></h3>
 <ol>
 <li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
 <li>Fill in the required parameters:<ul>
@@ -92,8 +92,8 @@
 </li>
 </ol>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FInfoblox%2FPlaybooks%2FInfoblox%20SOC%20Get%20Open%20Insights%20API%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FInfoblox%2FPlaybooks%2FInfoblox%20SOC%20Get%20Open%20Insights%20API%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
-<h3 id="post-deployment-instructions">Post-Deployment instructions<a name="Post-Deployment-instructions"></a></h3>
-<h4 id="a-authorize-connections">a. Authorize connections</h4>
+<h3>Post-Deployment instructions<a name="Post-Deployment-instructions"></a></h3>
+<h4>a. Authorize connections</h4>
 <p>Once deployment is complete, authorize each connection.</p>
 <ol>
 <li>Go to your logic app -&gt; API connections -&gt; Select connection resource</li>
@@ -102,7 +102,7 @@
 <li>Click Save</li>
 </ol>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/infoblox.html">Back to Infoblox</a></p>
 </div>
 

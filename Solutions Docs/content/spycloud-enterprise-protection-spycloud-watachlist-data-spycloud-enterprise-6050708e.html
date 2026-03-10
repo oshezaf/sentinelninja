@@ -9,12 +9,12 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="spycloud-watachlist-data-spycloud-enterprise">SpyCloud Watachlist data - SpyCloud Enterprise</h1>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Back to Content Index</a></p>
+<h1>SpyCloud Watachlist data - SpyCloud Enterprise</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This Playbook will run daily, gets the watchlist data from SpyCloud API and saved it into the custom logs.</p>
 <table>
@@ -39,13 +39,13 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Monitor-Watchlist-Data/readme.md">SpyCloud-Monitor-Watchlist-Data/readme.md</a></em></p>
 </blockquote>
-<h1 id="spycloud-enterprise-monitor-watchlist-data-playbook">SpyCloud Enterprise Monitor Watchlist Data Playbook</h1>
+<h1>SpyCloud Enterprise Monitor Watchlist Data Playbook</h1>
 <p><img alt="SpyCloud Enterprise" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Monitor-Watchlist-Data/images/logo.png" /></p>
-<h2 id="table-of-contents">Table of Contents</h2>
+<h2>Table of Contents</h2>
 <ol>
 <li><a href="#overview">Overview</a></li>
 <li><a href="#prerequisites">Prerequisites</a></li>
@@ -53,20 +53,20 @@
 <li><a href="#postdeployment">Post Deployment Steps</a></li>
 </ol>
 <p><a name="overview"></p>
-<h1 id="overview">Overview</h1>
+<h1>Overview</h1>
 <p>This playbook gets triggered on a daily basis and performs the following actions:</p>
 <ul>
 <li>Gets the new watchlist records from the SpyCloud database and saves them into the custom logs table.</li>
 <li>Gets the modified watchlist records from the SpyCloud database and saves them into the custom logs table.</li>
 </ul>
 <p><a name="prerequisites"></p>
-<h2 id="prerequisites">Prerequisites</h2>
+<h2>Prerequisites</h2>
 <ul>
 <li>A SpyCloud Enterprise API Key</li>
 <li>SpyCloud Enterprise custom connector needs to be deployed prior to the deployment of this playbook, in the same resource group and region. Relevant instructions can be found on the connector documentation page.</li>
 </ul>
 <p><a name="deployment"></p>
-<h2 id="deployment-instructions">Deployment Instructions</h2>
+<h2>Deployment Instructions</h2>
 <ul>
 <li>Deploy the playbooks by clicking on the "Deploy to Azure" button. This will take you to the Deploy an ARM Template wizard.</li>
 <li>Fill in the required parameters for deploying the playbook.
@@ -76,25 +76,25 @@
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSpyCloud%20Enterprise%20Protection%2FPlaybooks%2FSpyCloud-Monitor-Watchlist-Data%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
 <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSpyCloud%20Enterprise%20Protection%2FPlaybooks%2FSpyCloud-Monitor-Watchlist-Data%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
 <p><a name="postdeployment"></p>
-<h2 id="post-deployment-instructions">Post-Deployment Instructions</h2>
-<h3 id="provide-custom-log-table-name">Provide Custom Log Table Name</h3>
+<h2>Post-Deployment Instructions</h2>
+<h3>Provide Custom Log Table Name</h3>
 <ul>
 <li>Open the Logic App in the edit mode, click on "Parameters" and provide the name of the custom log table, for ex:SpycloudWatchlistData and click on close.
   <img alt="parameters" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Monitor-Watchlist-Data/images/parameters.png" /></li>
 </ul>
-<h3 id="recurrence-trigger-instructions">Recurrence Trigger Instructions</h3>
+<h3>Recurrence Trigger Instructions</h3>
 <ul>
 <li>The Logic App will run on an interval set to daily. Please do not change the interval, as it may result in duplication of data.</li>
 <li>If you do not wish to run the playbook immediately, set the start time.
   <img alt="recurrence" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Monitor-Watchlist-Data/images/recurrence.png" /></li>
 </ul>
-<h3 id="authorize-connections">Authorize connections</h3>
+<h3>Authorize connections</h3>
 <p>Once deployment is complete, you will need to authorize each connection:
 - Provide connection details for the SpyCloud Enterprise Custom Connector.
 - Provide connection details for the Azure Log Analytics Data Collector. You need to provide a "Workspace ID" and "Workspace Key", You can obtain the "Workspace ID" in the overview of your "Log Analytics Workspace" and "Workspace key" from the "Agents&gt; Log Analytics agent instructions" section. You can use either a "Primary key" or a "Secondary key".
 - Save the Logic App. If the Logic App prompts for any missing connections, please update the connections similarly.</p>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/spycloud-enterprise-protection.html">Back to SpyCloud Enterprise Protection</a></p>
 </div>
 

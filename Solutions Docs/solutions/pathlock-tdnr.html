@@ -9,14 +9,14 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="pathlock-cac-threat-detection-response-microsoft-sentinel-integration">Pathlock CAC: Threat Detection &amp; Response Microsoft Sentinel Integration</h1>
+<h1>Pathlock CAC: Threat Detection &amp; Response Microsoft Sentinel Integration</h1>
 <p><em>Solution: Pathlock_TDnR</em></p>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/pathlock_logo.svg" alt="Pathlock_TDnR Logo" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
 <table>
 <thead>
@@ -60,11 +60,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Marketplace</strong></td>
-<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/pathlockinc1631410274035.pathlock_tdnr">Azure Marketplace</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Popularity</strong></td>
-<td style="text-align: left;">⚪ Very Low (0%)</td>
+<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/pathlockinc1631410274035.pathlock_tdnr">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
 </tr>
 </tbody>
 </table>
@@ -76,18 +72,18 @@
 - Automate alerting and response workflows in Microsoft Sentinel for faster mean-time-to-detect (MTTD) and mean-time-to-respond (MTTR).
 - Maintain audit readiness by demonstrating end-to-end visibility of SAP threat activity.</p>
 <p>This out-of-the-box connector simplifies secure event forwarding from SAP to Microsoft Sentinel—enabling centralized analysis, compliance reporting, and proactive response within your existing security ecosystem.</p>
-<h2 id="contents">Contents</h2>
+<h2>Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#tables-used">Tables Used</a></li>
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
-<h2 id="data-connectors">Data Connectors</h2>
+<h2>Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/pathlock-tdnr.html">Pathlock Inc.: Threat Detection and Response for SAP</a></li>
 </ul>
-<h2 id="tables-used">Tables Used</h2>
+<h2>Tables Used</h2>
 <p>This solution uses <strong>2 table(s)</strong>:</p>
 <table>
 <thead>
@@ -110,7 +106,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pathlock_TDnR/README.md">Pathlock_TDnR/README.md</a></em></p>
 </blockquote>
@@ -118,7 +114,7 @@
 - Connector
 - Workbook
 - Parser Function</p>
-<h2 id="deployment-via-content-hub">Deployment via Content Hub</h2>
+<h2>Deployment via Content Hub</h2>
 <p>To deploy using the Content Hub:</p>
 <ol>
 <li>Log in to the Azure Portal.</li>
@@ -128,9 +124,9 @@
 <li>Click <strong>Install</strong>, then <strong>Create</strong>.</li>
 <li>Follow the prompts to complete the installation.</li>
 </ol>
-<h2 id="deployment-via-arm-template">Deployment via ARM Template</h2>
+<h2>Deployment via ARM Template</h2>
 <p>If the connector is not yet available in the Content Hub, you can deploy it manually using the provided ARM template.</p>
-<h3 id="prerequisites">Prerequisites</h3>
+<h3>Prerequisites</h3>
 <ul>
 <li>Access to the Microsoft Sentinel environment.</li>
 <li>Workspace name and location (found in Sentinel &gt; Settings &gt; Workspace Settings &gt; Properties &gt; Location).</li>
@@ -139,7 +135,7 @@
 <li>Cron job configured to append new logs to an existing file.</li>
 <li>Logs must be received in a custom table named <code>Pathlock_TDnR_CL</code>.</li>
 </ul>
-<h3 id="installation-steps">Installation Steps</h3>
+<h3>Installation Steps</h3>
 <ol>
 <li>Click the <strong>Deploy to Azure</strong> button below.</li>
 <li>Select the Resource Group where Microsoft Sentinel is deployed.</li>
@@ -151,7 +147,7 @@
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Ffrozenstrawberries%2FAzure-Sentinel%2Fmaster%2FSolutions%2FPathlock_TDnR%2FPackage%2FmainTemplate.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
 <hr />
 <p><em>This solution is provided by Pathlock as a temporary deployment method until the official connector is available in the Content Hub.</em></p>
-<h2 id="release-notes">Release Notes</h2>
+<h2>Release Notes</h2>
 <table>
 <thead>
 <tr>
@@ -169,8 +165,8 @@
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 </div>
 
 </body>

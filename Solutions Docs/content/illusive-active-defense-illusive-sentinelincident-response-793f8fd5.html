@@ -9,12 +9,12 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="illusive-sentinelincident-response">Illusive-SentinelIncident-Response</h1>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Back to Content Index</a></p>
+<h1>Illusive-SentinelIncident-Response</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
 <p align="left"> <img width="300" height="100" src="./Images/logo.jpg"> </a> </p>
 
@@ -43,7 +43,7 @@
 <blockquote>
 <p>⚠️ <strong>Not listed in Solution JSON:</strong> This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.</p>
 </blockquote>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Response/readme.md">Illusive-SentinelIncident-Response/readme.md</a></em></p>
 </blockquote>
@@ -51,7 +51,7 @@
 <img width="300" height="100" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Response/Images/logo.jpg"> </a>
 </p>
 
-<h1 id="illusive-incident-response-playbook">Illusive Incident Response Playbook</h1>
+<h1>Illusive Incident Response Playbook</h1>
 <p>The Incident Response playbook leverages Sentinel analytic rules and CrowdStrike or Microsoft Defender for Endpoint integration to automate incident response when specified Illusive incidents are discovered.</p>
 <p>Use this playbook to quickly stop or slow down ransomware attacks and critical incidents detected by Illusive in your organization. Upon detection, Sentinel is instructed to use the triggering process information reported by Illusive remove or kill the process. If the triggering process cannot be killed, Sentinel is instructed to isolate the host. These capabilities are available for organizations with CrowdStrike Falcon or Microsoft Defender for Endpoint.</p>
 <ol>
@@ -60,7 +60,7 @@
 <li><a href="#Access_playbook">Access Playbook</a></li>
 <li><a href="#playbook-retry-mechanism">Playbook retry mechanism</a> </li>
 </ol>
-<h2 id="playbook-workflow">Playbook Workflow</h2>
+<h2>Playbook Workflow</h2>
 <ol>
 <li>Perform the general solution setup. <a href="https://github.com/IllusiveNetworks-Labs/Azure-Sentinel/tree/Illusive/Solutions/Illusive%20Active%20Defense">(see instructions here)</a></li>
 <li><a href="#add-api-permissions">Add API permissions to the Azure app</a></li>
@@ -69,7 +69,7 @@
 <li><a href="#API_connection">Connect the playbook to Azure Sentinel</a></li>
 </ol>
 <p><a name="add-api-permissions"></p>
-<h2 id="add-api-permissions-to-the-azure-app">Add API permissions to the Azure app</h2>
+<h2>Add API permissions to the Azure app</h2>
 <ol>
 <li>From the Azure console, find the Azure app you created to run the Illusive Sentinel Solution. </li>
 <li>Go to <strong>API Permissions</strong>.</li>
@@ -99,7 +99,7 @@
 </li>
 </ol>
 <p><a name="enable-mde"></p>
-<h2 id="enable-microsoft-defender-for-endpoint">Enable Microsoft Defender for Endpoint</h2>
+<h2>Enable Microsoft Defender for Endpoint</h2>
 <p>Allow the Illusive Incident Response playbook to stop an attack by triggering an incident response from MDE.</p>
 <p><strong>Attention:</strong> If you use CrowdStrike as your incident response tool, you can skip this procedure.</p>
 <ol>
@@ -122,7 +122,7 @@
 </ol>
 <p><em>[Content truncated...]</em></p>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/illusive-active-defense.html">Back to Illusive Active Defense</a></p>
 </div>
 

@@ -13,81 +13,81 @@
 
 ## Schema (71 columns)
 
-**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CrowdStrike_File_Events_CL.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection%5CData%20Connectors%5CCrowdStrikeS3FDR_ccp/CrowdStrike_File_Events_CL.json)
 
-| Column Name | Type |
-|:------------|:-----|
-| AdditionalFields | dynamic |
-| aid | string |
-| aip | string |
-| AuthenticationId | string |
-| BoundingLimitCount | long |
-| BoundingLimitDuration | string |
-| cid | string |
-| ClientId | string |
-| CommandLine | string |
-| ConfigBuild | string |
-| ConfigStateHash | string |
-| ContextProcessId | string |
-| ContextThreadId | string |
-| ContextTimeStamp | real |
-| CrowdStrikeId | string |
-| DesiredAccess | string |
-| DiskParentDeviceInstanceId | string |
-| EffectiveTransmissionClass | string |
-| ELFSubType | string |
-| Entitlements | string |
-| event_platform | string |
-| event_simpleName | string |
-| EventOrigin | string |
-| FileAttributes | string |
-| FileCategory | string |
-| FileEcpBitmask | string |
-| FileFlags | string |
-| FileIdentifier | string |
-| FileObject | string |
-| FileOperatorSid | string |
-| FileWrittenFlags | string |
-| FixedFileVersion | string |
-| GID | string |
-| HandleCreateAuthenticationId | string |
-| ImageFileName | string |
-| Information | string |
-| IrpFlags | string |
-| IsOnNetwork | string |
-| IsOnRemovableDisk | string |
-| IsTransactedFile | string |
-| MachOSubType | string |
-| MajorFunction | string |
-| MinorFunction | string |
-| MSOfficeSubType | string |
-| name | string |
-| NewFileIdentifier | string |
-| OciContainerId | string |
-| OperationFlags | string |
-| Options | string |
-| OriginalFilename | string |
-| PatternId | string |
-| SHA256HashData | string |
-| ShareAccess | string |
-| Size | long |
-| SourceFileName | string |
-| Status | string |
-| Tags | string |
-| TargetDirectoryName | string |
-| TargetFileName | string |
-| TemporaryFileName | string |
-| TimeGenerated | datetime |
-| timestamp | long |
-| TokenType | string |
-| TreeId | string |
-| UID | string |
-| UnixMode | string |
-| UserName | string |
-| USN | string |
-| VnodeModificationType | string |
-| VnodeType | string |
-| VolumeSessionUUID | string |
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| AdditionalFields | dynamic |  |
+| aid | string |  |
+| aip | string |  |
+| AuthenticationId | string |  |
+| BoundingLimitCount | long |  |
+| BoundingLimitDuration | string |  |
+| cid | string |  |
+| ClientId | string |  |
+| CommandLine | string |  |
+| ConfigBuild | string |  |
+| ConfigStateHash | string |  |
+| ContextProcessId | string |  |
+| ContextThreadId | string |  |
+| ContextTimeStamp | real |  |
+| CrowdStrikeId | string |  |
+| DesiredAccess | string |  |
+| DiskParentDeviceInstanceId | string |  |
+| EffectiveTransmissionClass | string |  |
+| ELFSubType | string |  |
+| Entitlements | string |  |
+| event_platform | string |  |
+| event_simpleName | string |  |
+| EventOrigin | string |  |
+| FileAttributes | string |  |
+| FileCategory | string |  |
+| FileEcpBitmask | string |  |
+| FileFlags | string |  |
+| FileIdentifier | string |  |
+| FileObject | string |  |
+| FileOperatorSid | string |  |
+| FileWrittenFlags | string |  |
+| FixedFileVersion | string |  |
+| GID | string |  |
+| HandleCreateAuthenticationId | string |  |
+| ImageFileName | string |  |
+| Information | string |  |
+| IrpFlags | string |  |
+| IsOnNetwork | string |  |
+| IsOnRemovableDisk | string |  |
+| IsTransactedFile | string |  |
+| MachOSubType | string |  |
+| MajorFunction | string |  |
+| MinorFunction | string |  |
+| MSOfficeSubType | string |  |
+| name | string |  |
+| NewFileIdentifier | string |  |
+| OciContainerId | string |  |
+| OperationFlags | string |  |
+| Options | string |  |
+| OriginalFilename | string |  |
+| PatternId | string |  |
+| SHA256HashData | string |  |
+| ShareAccess | string |  |
+| Size | long |  |
+| SourceFileName | string |  |
+| Status | string |  |
+| Tags | string |  |
+| TargetDirectoryName | string |  |
+| TargetFileName | string |  |
+| TemporaryFileName | string |  |
+| TimeGenerated | datetime | The timestamp (UTC) reflecting the time in which the event was generated. |
+| timestamp | long |  |
+| TokenType | string |  |
+| TreeId | string |  |
+| UID | string |  |
+| UnixMode | string |  |
+| UserName | string |  |
+| USN | string |  |
+| VnodeModificationType | string |  |
+| VnodeType | string |  |
+| VolumeSessionUUID | string |  |
 
 ## Solutions (1)
 

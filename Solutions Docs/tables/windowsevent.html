@@ -5,16 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WindowsEvent &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
-
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="windowsevent">WindowsEvent</h1>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Back to Tables Index</a></p>
+<h1>WindowsEvent</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <p>Reference for WindowsEvent table in Azure Monitor Logs.</p>
 <table>
@@ -63,9 +65,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="schema-26-columns">Schema (26 columns)</h2>
+<h2>Schema (26 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/windowsevent">Azure Monitor documentation</a></p>
-<table>
+<table id="schema-table">
 <thead>
 <tr>
 <th style="text-align: left;">Column Name</th>
@@ -206,7 +208,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="solutions-10">Solutions (10)</h2>
+<h2>Solutions (10)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/attacker-tools-threat-protection-essentials.html">Attacker Tools Threat Protection Essentials</a></li>
@@ -220,7 +222,7 @@
 <li><a href="../solutions/windows-forwarded-events.html">Windows Forwarded Events</a></li>
 <li><a href="../solutions/windows-security-events.html">Windows Security Events</a></li>
 </ul>
-<h2 id="connectors-1">Connectors (1)</h2>
+<h2>Connectors (1)</h2>
 <p>This table is ingested by the following connectors:</p>
 <table>
 <thead>
@@ -237,8 +239,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table-24">Content Items Using This Table (24)</h2>
-<h3 id="analytic-rules-13">Analytic Rules (13)</h3>
+<h2>Content Items Using This Table (24)</h2>
+<h3>Analytic Rules (13)</h3>
 <p><strong>In solution <a href="../solutions/attacker-tools-threat-protection-essentials.html">Attacker Tools Threat Protection Essentials</a>:</strong></p>
 <table>
 <thead>
@@ -365,7 +367,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries-10">Hunting Queries (10)</h3>
+<h3>Hunting Queries (10)</h3>
 <p><strong>In solution <a href="../solutions/attacker-tools-threat-protection-essentials.html">Attacker Tools Threat Protection Essentials</a>:</strong></p>
 <table>
 <thead>
@@ -450,7 +452,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks-1">Workbooks (1)</h3>
+<h3>Workbooks (1)</h3>
 <p><strong>In solution <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a>:</strong></p>
 <table>
 <thead>
@@ -466,8 +468,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="parsers-using-this-table-12">Parsers Using This Table (12)</h2>
-<h3 id="asim-parsers-12">ASIM Parsers (12)</h3>
+<h2>Parsers Using This Table (12)</h2>
+<h3>ASIM Parsers (12)</h3>
 <table>
 <thead>
 <tr>
@@ -552,12 +554,12 @@
 </tr>
 </tbody>
 </table>
-<h2 id="resource-types">Resource Types</h2>
+<h2>Resource Types</h2>
 <p>This table collects data from the following Azure resource types:</p>
 <ul>
 <li><code>microsoft.securityinsights/securityinsights</code></li>
 </ul>
-<h2 id="selection-criteria-summary-15-criteria-18-total-references">Selection Criteria Summary (15 criteria, 18 total references)</h2>
+<h2>Selection Criteria Summary (15 criteria, 18 total references)</h2>
 <p>References by type: 0 connectors, 7 content items, 11 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
@@ -701,7 +703,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="eventid">EventID</h3>
+<h3>EventID</h3>
 <table>
 <thead>
 <tr>
@@ -884,7 +886,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="provider">Provider</h3>
+<h3>Provider</h3>
 <table>
 <thead>
 <tr>
@@ -916,9 +918,33 @@
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 </div>
-
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
 </body>
 </html>

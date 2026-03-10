@@ -18,8 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-05-22 |
 | **Solution Folder** | [Entrust identity as Service](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Entrust%20identity%20as%20Service) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-entrustidentity) |
-| **Popularity** | 🟡 Low (11%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-entrustidentity) · Popularity: 🟡 Low (11%) |
 
 Entrust  offers Cloud-based identity and access management (IAM) solution with multi-factor authentication (MFA), credential-based password less access, and single sign-on (SSO). Integrating it with Microsoft Sentinel will give the ability to enrich incidents and mangae user entity access as part of incident remediation process.
 

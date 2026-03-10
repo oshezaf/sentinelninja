@@ -9,12 +9,12 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="https://oshezaf.github.io/sentinelninja/index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
-<h1 id="google-cloud-platform-bigquery-query-bigquery-table">Google Cloud Platform BigQuery - Query BigQuery Table</h1>
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Back to Content Index</a></p>
+<h1>Google Cloud Platform BigQuery - Query BigQuery Table</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook can be run from incident context manually or from automation rule to query the GCP BigQuery table and enrich the incident with results.</p>
 <table>
@@ -39,12 +39,12 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-documentation">Additional Documentation</h2>
+<h2>Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20BigQuery/Playbooks/GCPBigQueryPlaybooks/GCPBigQuery-GetQueryResults/readme.md">GCPBigQueryPlaybooks/GCPBigQuery-GetQueryResults/readme.md</a></em></p>
 </blockquote>
-<h1 id="gcpbigquery-getqueryresults">GCPBigQuery-GetQueryResults</h1>
-<h2 id="summary">Summary</h2>
+<h1>GCPBigQuery-GetQueryResults</h1>
+<h2>Summary</h2>
 <p>This playbook can be run from incident context manually or from automation rule to query the GCP BigQuery table and enrich the incident with query results. The playbook performs following actions:</p>
 <ol>
 <li>Runs the SQL query as Query job and gets the result.</li>
@@ -53,12 +53,12 @@
 </ol>
 <p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20BigQuery/Playbooks/GCPBigQueryPlaybooks%5CGCPBigQuery-GetQueryResults/images/GCPBigQuery-GetQueryResults_light.jpg" width="50%"/><br>
 <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20BigQuery/Playbooks/GCPBigQueryPlaybooks%5CGCPBigQuery-GetQueryResults/images/GCPBigQuery-GetQueryResultsOutput_light.jpg" width="50%"/><br></p>
-<h3 id="prerequisites">Prerequisites</h3>
+<h3>Prerequisites</h3>
 <ol>
 <li>Prior to the deployment of this playbook, <a href="../../CustomConnector/GCPBigQueryCustomConnector/azuredeploy.json">GCPBigQuery Logic App Custom Connector</a> needs to be deployed under the same subscription.</li>
 <li>Refer to <a href="../../CustomConnector/GCPBigQueryCustomConnector/readme.html">GCPBigQuery Logic App Custom Connector</a> documentation for deployment instructions.</li>
 </ol>
-<h3 id="deployment-instructions">Deployment instructions</h3>
+<h3>Deployment instructions</h3>
 <ol>
 <li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
 <li>Fill in the required parameters:<ul>
@@ -70,8 +70,8 @@
 </li>
 </ol>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGoogle%2520Cloud%2520Platform%2520BigQuery%2FPlaybooks%2FGCPBigQueryPlaybooks%2FGCPBigQuery-GetQueryResults%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGoogle%2520Cloud%2520Platform%2520BigQuery%2FPlaybooks%2FGCPBigQueryPlaybooks%2FGCPBigQuery-GetQueryResults%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
-<h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
-<h4 id="a-authorize-connections">a. Authorize connections</h4>
+<h3>Post-Deployment instructions</h3>
+<h4>a. Authorize connections</h4>
 <p>Once deployment is complete, authorize each connection.</p>
 <ol>
 <li>Select the Microsoft Sentinel connection resource</li>
@@ -80,11 +80,11 @@
 <li>Click Save</li>
 <li>Repeat these steps for other connections</li>
 </ol>
-<h4 id="b-configurations-in-sentinel">b. Configurations in Sentinel</h4>
+<h4>b. Configurations in Sentinel</h4>
 <ol>
 <li>In Microsoft Sentinel, configure the automation rule/analytical rule to trigger the playbook. Check the <a href="https://docs.microsoft.com/azure/sentinel/tutorial-respond-threats-playbook">documentation</a> to learn more about automation rules.</li>
 </ol>
-<h4 id="c-assign-playbook-microsoft-sentinel-responder-role">c. Assign Playbook Microsoft Sentinel Responder Role</h4>
+<h4>c. Assign Playbook Microsoft Sentinel Responder Role</h4>
 <ol>
 <li>Select the Playbook (Logic App) resource</li>
 <li>Click on Identity Blade</li>
@@ -97,13 +97,13 @@
 <li>Select Role - Microsoft Sentinel Responder</li>
 <li>Click Save</li>
 </ol>
-<h1 id="references">References</h1>
+<h1>References</h1>
 <ul>
 <li><a href="https://cloud.google.com/bigquery/docs/reference/rest">BigQuery API Quick Reference</a></li>
 <li><a href="https://cloud.google.com/bigquery/docs">BigQuery Documentation</a></li>
 </ul>
 <hr />
-<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/google-cloud-platform-bigquery.html">Back to Google Cloud Platform BigQuery</a></p>
 </div>
 

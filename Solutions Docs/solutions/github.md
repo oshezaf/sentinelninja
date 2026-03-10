@@ -19,10 +19,9 @@
 | **Version** | 3.1.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-18 |
+| **Last Updated** | 2026-02-04 |
 | **Solution Folder** | [GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftcorporation1622712991604.sentinel4github) |
-| **Popularity** | 🟢 High (82%) |
-| **Rating** | ★★☆☆☆ 2.3/5 (3 ratings) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftcorporation1622712991604.sentinel4github) · Rating: ★★☆☆☆ 2.3/5 (3 ratings) · Popularity: 🟢 High (82%) |
 
 The [GitHub](https://github.com/) Solution for Microsoft Sentinel enables you to easily ingest events and logs from GitHub to Microsoft Sentinel using GitHub audit log API and  webhooks. This enables you to view and analyze this data in your workbooks, query it to create custom alerts, and incorporate it to improve your investigation process, giving you more insight into your platform security.
  

@@ -20,8 +20,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-07-30 |
 | **Solution Folder** | [GoogleCloudPlatformSQL](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformSQL) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gcpsql) |
-| **Popularity** | ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gcpsql) · Popularity: ⚪ Very Low (0%) |
 
 The GCP Cloud SQL solution provides the capability to ingest [GCP Cloud SQL logs](https://cloud.google.com/sql/docs/introduction) into Microsoft Sentinel using the GCP Logging API.
   

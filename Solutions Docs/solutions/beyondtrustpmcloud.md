@@ -19,9 +19,9 @@
 | **Version** | 3.0.0 |
 | **Author** | BeyondTrust - mysupport@beyondtrust.com |
 | **First Published** | 2025-10-31 |
+| **Last Updated** | 2026-02-27 |
 | **Solution Folder** | [BeyondTrustPMCloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BeyondTrustPMCloud) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/beyondtrust.azure-sentinel-solution-beyondtrustpmcloud) |
-| **Popularity** | ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/beyondtrust.azure-sentinel-solution-beyondtrustpmcloud) · Popularity: ⚪ Very Low (0%) |
 
 The BeyondTrust PM Cloud solution provides a data connector to ingest activity audit logs and client event logs from BeyondTrust Privilege Management Cloud into Microsoft Sentinel.
 
@@ -44,9 +44,7 @@ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 
 This solution provides **1 data connector(s)**:
 
-- [BeyondTrust PM Cloud](../connectors/beyondtrustpmcloud.md) 🔶
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+- [BeyondTrust PM Cloud](../connectors/beyondtrustpmcloud.md)
 
 ## Tables Used
 
@@ -54,11 +52,9 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`BeyondTrustPM_ActivityAudits_CL`](../tables/beyondtrustpm-activityaudits-cl.md) 🔶 | [BeyondTrust PM Cloud](../connectors/beyondtrustpmcloud.md) | Workbooks |
-| [`BeyondTrustPM_ClientEvents_CL`](../tables/beyondtrustpm-clientevents-cl.md) 🔶 | [BeyondTrust PM Cloud](../connectors/beyondtrustpmcloud.md) | Workbooks |
+| [`BeyondTrustPM_ActivityAudits_CL`](../tables/beyondtrustpm-activityaudits-cl.md) | [BeyondTrust PM Cloud](../connectors/beyondtrustpmcloud.md) | Workbooks |
+| [`BeyondTrustPM_ClientEvents_CL`](../tables/beyondtrustpm-clientevents-cl.md) | [BeyondTrust PM Cloud](../connectors/beyondtrustpmcloud.md) | Workbooks |
 
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 ## Content Items
 
 This solution includes **1 content item(s)**:

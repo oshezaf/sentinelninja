@@ -20,8 +20,7 @@
 | **Author** | app-integrations@illumio.com |
 | **First Published** | 2024-05-13 |
 | **Solution Folder** | [IllumioSaaS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/illumioinc1629822633689.illumio_sentinel) |
-| **Popularity** | 🔵 Medium (70%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/illumioinc1629822633689.illumio_sentinel) · Popularity: 🔵 Medium (70%) |
 
 **1. Azure Function App: **
 

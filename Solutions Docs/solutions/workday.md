@@ -17,9 +17,9 @@
 | **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2024-02-15 |
+| **Last Updated** | 2026-02-17 |
 | **Solution Folder** | [Workday](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Workday) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-workday) |
-| **Popularity** | 🟢 High (88%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-workday) · Popularity: 🟢 High (88%) |
 
 The [Workday](https://www.workday.com/) solution for Microsoft Sentinel enables you to ingest User Activity Logs from Workday into Microsoft Sentinel using [Workday's API](https://community.workday.com/sites/default/files/file-hosting/restapi/index.html#privacy/v1/get-/activityLogging). 
 

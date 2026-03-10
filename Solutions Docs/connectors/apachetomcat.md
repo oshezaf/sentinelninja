@@ -19,7 +19,6 @@
 | **Used in Solutions** | [Tomcat](../solutions/tomcat.md) |
 | **Collection Method** | [MMA](../methods/mma.md) |
 | **Connector Definition Files** | [Connector_Tomcat_agent.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tomcat/Data%20Connectors/Connector_Tomcat_agent.json) |
-| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 
 The Apache Tomcat solution provides the capability to ingest [Apache Tomcat](http://tomcat.apache.org/) events into Microsoft Sentinel. Refer to [Apache Tomcat documentation](http://tomcat.apache.org/tomcat-10.0-doc/logging.html) for more information.
 
@@ -33,7 +32,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Tomcat_CL`](../tables/tomcat-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`Tomcat_CL`](../tables/tomcat-cl.md) | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
