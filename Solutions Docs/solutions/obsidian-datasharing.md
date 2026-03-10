@@ -1,4 +1,6 @@
-# Obsidian Datasharing
+# Accelerate SaaS Threat Detection and Response
+
+*Solution: Obsidian Datasharing*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/obsidian_security_logo.svg" alt="Obsidian Datasharing Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2024-01-01 |
 | **Solution Folder** | [Obsidian Datasharing](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Obsidian%20Datasharing) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/391c3d87-edc8-4f72-a719-825c022b8eb4.azure-sentinel-solution-obsidian-activity-threat) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 The Obsidian Datasharing solution for Microsoft Sentinel enables you to ingest Obsidian events into your Microsoft Sentinel Analytics Workspace.
 

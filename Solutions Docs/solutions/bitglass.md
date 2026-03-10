@@ -1,4 +1,6 @@
-# Bitglass
+# Bitglass Solution
+
+*Solution: Bitglass*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Bitglass Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2021-10-23 |
 | **Solution Folder** | [Bitglass](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Bitglass) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-bitglass) |
+| **Popularity** | 🟡 Low (14%) |
 
 The [Bitglass](https://www.forcepoint.com/bitglass) solution provides the capability to retrieve security event logs of the Bitglass services and more events into Microsoft Sentinel through the REST API. The connector provides ability to get events which helps to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more.
  

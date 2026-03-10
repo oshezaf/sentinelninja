@@ -1,4 +1,6 @@
-# RiskIQ
+# RiskIQ Illuminate Solution
+
+*Solution: RiskIQ*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="RiskIQ Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2021-10-20 |
 | **Solution Folder** | [RiskIQ](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RiskIQ) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-riskiq) |
+| **Popularity** | 🟡 Low (29%) |
 
 [RiskIQ Illuminate](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-threat-intelligence) is a complete security intelligence offering, blending attack surface visibility with detailed threat intelligence. With RiskIQ Illuminate, security teams will accelerate their investigations, increase their visibility, respond more effectively to threats, and maximize the impact of their existing security solutions.
 

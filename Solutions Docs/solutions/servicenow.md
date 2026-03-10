@@ -1,4 +1,6 @@
-# Servicenow
+# ServiceNow
+
+*Solution: Servicenow*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Servicenow Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-09-19 |
 | **Solution Folder** | [Servicenow](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Servicenow) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-servicenow) |
+| **Popularity** | 🟢 High (92%) |
 
 The ServiceNow ITSM solution for Microsoft Sentinel makes it easy to synchronize incidents between Microsoft Sentinel and [ServiceNow IT Service Management (ITSM)](https://www.servicenow.com/products/itsm.html). This can be achieved by either one of the following two options - 
 

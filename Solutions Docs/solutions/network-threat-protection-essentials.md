@@ -19,6 +19,7 @@
 | **First Published** | 2022-11-16 |
 | **Solution Folder** | [Network Threat Protection Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Network%20Threat%20Protection%20Essentials) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-networkthreatdetection) |
+| **Popularity** | 🔵 Medium (61%) |
 | **Pre-requisites** | [Microsoft 365](microsoft-365.md), [Amazon Web Services](amazon-web-services.md), [Windows Server DNS](windows-server-dns.md), [Azure Firewall](azure-firewall.md), [Windows Forwarded Events](windows-forwarded-events.md), [Zscaler Internet Access](zscaler-internet-access.md), [PaloAlto-PAN-OS](paloalto-pan-os.md), [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md), [Check Point](check-point.md) |
 
 The **Network Threat Protection Essentials** solution contain queries that identifies suspicious network behavior based on various data sources ingested in Sentinel. The solution contains queries to detect common network-based attacks - things like malicious user agents, mining pools, Base64 encoded IPv4 address in request URL etc. The solution will be constantly updated to add more detection/hunting query as well as other sentinel content.

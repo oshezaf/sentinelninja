@@ -1,4 +1,6 @@
-# Sophos Endpoint Protection
+# Sophos Endpoint Protection Solution
+
+*Solution: Sophos Endpoint Protection*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/sophos_logo.svg" alt="Sophos Endpoint Protection Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2021-07-07 |
 | **Solution Folder** | [Sophos Endpoint Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20Endpoint%20Protection) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-sophosep) |
+| **Popularity** | 🟢 High (85%) |
 
 The [Sophos Endpoint Protection](https://www.sophos.com/products/endpoint-antivirus.aspx) solution provides the capability to ingest to ingest [Sophos events](https://developer.sophos.com/docs/siem-v1/1/routes/events/get) and [Sophos alerts](https://developer.sophos.com/docs/siem-v1/1/routes/alerts/get) into Microsoft Sentinel. Refer to [Sophos Central documentation](https://docs.sophos.com/central/Customer/help/en-us/central/Customer/concepts/Logs.html) for more information.
 

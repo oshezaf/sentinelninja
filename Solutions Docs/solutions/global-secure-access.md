@@ -1,4 +1,6 @@
-# Global Secure Access
+# Global Secure Access solution for Sentinel
+
+*Solution: Global Secure Access*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/gsa.svg" alt="Global Secure Access Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2024-04-08 |
 | **Solution Folder** | [Global Secure Access](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Global%20Secure%20Access) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-globalsecureaccess) |
+| **Popularity** | 🟢 High (91%) |
 
 [Global Secure Access](https://aka.ms/GlobalSecureAccess) is a [domain solution](https://learn.microsoft.com/en-us/azure/sentinel/sentinel-solutions-catalog#domain-solutions) and does not include any data connectors. The content in this solution requires one of the product solutions below.
 

@@ -1,4 +1,6 @@
-# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Google Threat Intelligence
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Google Threat Intelligence Solution (public preview)
+
+*Solution: Google Threat Intelligence*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/GoogleThreatIntelligence.svg" alt="Google Threat Intelligence Logo" width="75" height="75">
 
@@ -20,6 +22,7 @@
 | **Last Updated** | 2024-10-26 |
 | **Solution Folder** | [Google Threat Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Threat%20Intelligence) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/virustotalsl1681486227461.azure-sentinel-solution-google) |
+| **Popularity** | 🔵 Medium (73%) |
 
 This Google Threat Intelligence Solution contains Playbooks that can help enrich incident information with threat information and intelligence for IPs, file hashes and URLs from Google Threat Intelligence. Enriched information can help drive focused investigations in Security Operations.
 

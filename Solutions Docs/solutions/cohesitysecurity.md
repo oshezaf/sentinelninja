@@ -1,4 +1,6 @@
-# CohesitySecurity
+# Cohesity Security Integration for Microsoft Sentinel
+
+*Solution: CohesitySecurity*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cohesity-Logo.svg" alt="CohesitySecurity Logo" width="75" height="75">
 
@@ -19,6 +21,8 @@
 | **First Published** | 2022-10-10 |
 | **Solution Folder** | [CohesitySecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CohesitySecurity) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cohesitydev1592001764720.cohesity_sentinel_data_connector) |
+| **Popularity** | 🟡 Low (23%) |
+| **Rating** | ★★★★★ 5.0/5 (1 ratings) |
 
 This product integrates Cohesity Helios with Microsoft Sentinel to stay updated with the security events from your Cohesity environment and immediately respond to a ransomware attack or an anomaly
 

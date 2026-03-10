@@ -19,6 +19,7 @@
 | **First Published** | 2022-06-27 |
 | **Solution Folder** | [UEBA Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/UEBA%20Essentials) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-uebaessentials) |
+| **Popularity** | 🔵 Medium (67%) |
 
 The Microsoft Sentinel UEBA content package will provide you with various queries based on UEBA tables, that allows you to hunt for tailored threat scenarios. You'll be able to investigate and search for anomalous activities over UEBA's enriched data, and get inspired to customize queries according to your own use-cases.
 

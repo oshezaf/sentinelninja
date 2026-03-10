@@ -1,4 +1,6 @@
-# Azure Event Hubs
+# Azure Event Hubs solution for Sentinel
+
+*Solution: Azure Event Hubs*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Azure Event Hubs Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-06-01 |
 | **Solution Folder** | [Azure Event Hubs](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Event%20Hubs) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-eventhub) |
+| **Popularity** | 🟢 High (84%) |
 
 The [Azure Event Hubs](https://docs.microsoft.com/azure/event-hubs/event-hubs-about) solution for Microsoft Sentinel enables you to ingest Azure Event Hubs diagnostics logs using Diagnostic Settings into Microsoft Sentinel.
 

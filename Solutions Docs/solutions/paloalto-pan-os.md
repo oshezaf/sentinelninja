@@ -1,4 +1,6 @@
-# PaloAlto-PAN-OS
+# Palo Alto PAN-OS Solution
+
+*Solution: PaloAlto-PAN-OS*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/PaloAlto-PAN-OS/logo/Palo-alto-logo.png" alt="PaloAlto-PAN-OS Logo" width="75" height="75">
 
@@ -20,6 +22,7 @@
 | **Last Updated** | 2021-09-20 |
 | **Solution Folder** | [PaloAlto-PAN-OS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-paloaltopanos) |
+| **Popularity** | 🟢 High (91%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The [Palo Alto Networks (Firewall)](https://www.paloaltonetworks.com/network-security/next-generation-firewall) Solution for Microsoft Sentinel allows you to easily connect your Palo Alto Networks Firewall logs with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation. This gives you more insight into your organization's network and improves your security operation capabilities. This solution also contains playbooks to help in automated remediation.

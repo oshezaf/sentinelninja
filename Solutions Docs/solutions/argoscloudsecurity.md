@@ -1,4 +1,6 @@
-# ARGOSCloudSecurity
+# ARGOS Cloud Security for Microsoft Sentinel
+
+*Solution: ARGOSCloudSecurity*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/ARGOSCloudSecurity/Workbooks/images/logos/argos-logo.svg" alt="ARGOSCloudSecurity Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-08-16 |
 | **Solution Folder** | [ARGOSCloudSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ARGOSCloudSecurity) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/argoscloudsecurity1605618416175.argos-sentinel) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 The ARGOS Cloud Security integration for Microsoft Sentinel allows you to have all your important cloud security events in one place. This enables you to easily create dashboards, alerts, and correlate events across multiple systems. Overall this will improve your organization's security posture and security incident response.
 

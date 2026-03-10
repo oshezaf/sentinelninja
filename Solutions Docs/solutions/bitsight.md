@@ -1,4 +1,6 @@
-# BitSight
+# Bitsight
+
+*Solution: BitSight*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/BitSight.svg" alt="BitSight Logo" width="75" height="75">
 
@@ -20,6 +22,7 @@
 | **Last Updated** | 2024-02-20 |
 | **Solution Folder** | [BitSight](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bitsighttechnologiesinc1695119434818.bitsight_v1) |
+| **Popularity** | ⚪ Very Low (9%) |
 
 The BitSight solution enables security operations teams to integrate insights from BitSight’s Data Observability services into Microsoft Sentinel. The insights include Security Ratings, Count of Observations by Risk Vector, Compromised Systems, Infections, Count of Diligence Observations and Vulnerabilities for companies in your portfolio.
 

@@ -1,4 +1,6 @@
-# Vectra AI Detect
+# Vectra Detect for Microsoft Sentinel
+
+*Solution: Vectra AI Detect*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AIVectraDetect.svg" alt="Vectra AI Detect Logo" width="75" height="75">
 
@@ -20,6 +22,7 @@
 | **Last Updated** | 2023-04-17 |
 | **Solution Folder** | [Vectra AI Detect](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20AI%20Detect) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/vectraaiinc.ai_vectra_detect_mss) |
+| **Popularity** | 🟡 Low (25%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The [Vectra AI Detect](https://www.vectra.ai/products/platform%22%20/t%20%22_blank) solution for Microsoft Sentinel enables you to ingest Vectra AI logs into Microsoft Sentinel, using the Common Event Format (CEF) for Security Monitoring.

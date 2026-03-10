@@ -1,4 +1,6 @@
-# Prancer PenSuiteAI Integration
+# Prancer PenSuite AI
+
+*Solution: Prancer PenSuiteAI Integration*
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -15,6 +17,9 @@
 | **First Published** | 2023-08-02 |
 | **Solution Folder** | [Prancer PenSuiteAI Integration](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Prancer%20PenSuiteAI%20Integration) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/prancerenterprise1600813133757.microsoft-sentinel-solution-prancer) |
+| **Popularity** | ⚪ Very Low (0%) |
+
+Prancer PenSuite AI provides integration with Microsoft Sentinel
 
 ## Contents
 

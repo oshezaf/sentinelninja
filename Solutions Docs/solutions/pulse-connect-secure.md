@@ -19,6 +19,7 @@
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [Pulse Connect Secure](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pulse%20Connect%20Secure) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-pulseconnectsecure) |
+| **Popularity** | 🟡 Low (12%) |
 | **Pre-requisites** | [Syslog](syslog.md) |
 
 The [Pulse Connect Secure](https://www.ivanti.com/products/connect-secure-vpn?psredirect) solution for Microsoft Sentinel enables you to ingest Pulse Connect Secure logs into Microsoft Sentinel.

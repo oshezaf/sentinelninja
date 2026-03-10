@@ -1,4 +1,6 @@
-# Azure Batch Account
+# Azure Batch Account solution for Sentinel
+
+*Solution: Azure Batch Account*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Azure Batch Account Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-06-30 |
 | **Solution Folder** | [Azure Batch Account](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Batch%20Account) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-batchaccount) |
+| **Popularity** | 🟢 High (85%) |
 
 The [Azure Batch Account](https://docs.microsoft.com/azure/batch/accounts) solution for Microsoft Sentinel enables you to ingest Azure Batch Account diagnostics logs using Diagnostic Settings into Microsoft Sentinel.
 

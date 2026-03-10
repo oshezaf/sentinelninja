@@ -1,4 +1,6 @@
-# TenableIO
+# Tenable App for Microsoft Sentinel
+
+*Solution: TenableIO*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/tenableio_logo.svg" alt="TenableIO Logo" width="75" height="75">
 
@@ -19,6 +21,8 @@
 | **First Published** | 2022-06-01 |
 | **Solution Folder** | [TenableIO](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TenableIO) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/tenable.tenable-sentinel-integration) |
+| **Popularity** | 🟢 High (82%) |
+| **Rating** | ★★☆☆☆ 2.0/5 (4 ratings) |
 
 The [Tenableio](https://www.tenable.com/products/tenable-io) solution provides the capability to ingest Asset and Vulnerability data into Microsoft Sentinel through the REST API from the Tenable.io platform (Managed in the cloud). Refer to [API documentation](https://developer.tenable.com/reference/navigate) for more information.
 

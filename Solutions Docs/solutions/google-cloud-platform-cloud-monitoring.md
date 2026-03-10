@@ -1,4 +1,6 @@
-# Google Cloud Platform Cloud Monitoring
+# Google Cloud Platform Cloud Monitoring Solution
+
+*Solution: Google Cloud Platform Cloud Monitoring*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/google_logo.svg" alt="Google Cloud Platform Cloud Monitoring Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-07-01 |
 | **Solution Folder** | [Google Cloud Platform Cloud Monitoring](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Cloud%20Monitoring) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gcpmonitoring) |
+| **Popularity** | 🟡 Low (41%) |
 
 The [Google Cloud Platform](https://cloud.google.com/gcp) Cloud Monitoring data connector provides the capability to ingest [GCP Monitoring metrics](https://cloud.google.com/monitoring/api/metrics_gcp) into Microsoft Sentinel using the GCP Monitoring API. Refer to [GCP Monitoring API documentation](https://cloud.google.com/monitoring/api/v3) for more information. 
  

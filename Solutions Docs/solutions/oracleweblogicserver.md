@@ -1,4 +1,6 @@
-# OracleWebLogicServer
+# Oracle WebLogic Server
+
+*Solution: OracleWebLogicServer*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="OracleWebLogicServer Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-01-06 |
 | **Solution Folder** | [OracleWebLogicServer](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OracleWebLogicServer) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-oracleweblogicserver) |
+| **Popularity** | 🔵 Medium (57%) |
 | **Pre-requisites** | [CustomLogsAma](customlogsama.md) |
 
 The [Oracle](https://www.oracle.com/index.html) WebLogic Server solution for Microsoft Sentinel provides the capability to ingest [Oracle Web Logic Server](https://docs.oracle.com/en/middleware/standalone/weblogic-server/index.html) events into Microsoft Sentinel. Oracle WebLogic Server is a server for building and deploying enterprise Java EE applications with support for new features for lowering cost of operations, improving performance, enhancing scalability, and supporting the Oracle Applications portfolio.

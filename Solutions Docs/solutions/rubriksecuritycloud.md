@@ -1,4 +1,6 @@
-# RubrikSecurityCloud
+# Rubrik Integration with Sentinel for Ransomware Protection
+
+*Solution: RubrikSecurityCloud*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/rubrikLogo.svg" alt="RubrikSecurityCloud Logo" width="75" height="75">
 
@@ -20,6 +22,8 @@
 | **Last Updated** | 2025-07-25 |
 | **Solution Folder** | [RubrikSecurityCloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rubrik_inc.rubrik_sentinel) |
+| **Popularity** | 🟢 High (85%) |
+| **Rating** | ★★★★★ 5.0/5 (1 ratings) |
 
 The [Rubrik Security Cloud](https://www.rubrik.com/) solution enables security operations teams to integrate insights from Rubrik’s Data Observability services into Microsoft Sentinel. 
 

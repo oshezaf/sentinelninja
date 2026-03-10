@@ -1,4 +1,6 @@
-# DruvaDataSecurityCloud
+# Druva Integration with Microsoft Sentinel
+
+*Solution: DruvaDataSecurityCloud*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Druva_Logo.svg" alt="DruvaDataSecurityCloud Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2024-12-24 |
 | **Solution Folder** | [DruvaDataSecurityCloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DruvaDataSecurityCloud) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/druva-azuresentinel-solution.azure-sentinel-solution-druva) |
+| **Popularity** | 🟢 High (81%) |
 
 The [Druva Event CCP Connector] solution provides the capability to ingest to ingest [Druva events]
 

@@ -1,4 +1,6 @@
-# CiscoUmbrella
+# Cisco Cloud Security
+
+*Solution: CiscoUmbrella*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cisco-logo-72px.svg" alt="CiscoUmbrella Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-04-01 |
 | **Solution Folder** | [CiscoUmbrella](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ciscoumbrella) |
+| **Popularity** | 🟢 High (83%) |
 
 The Cisco Cloud Security solution for Microsoft Sentinel enables you to ingest [Cisco Secure Access](https://docs.sse.cisco.com/sse-user-guide/docs/welcome-cisco-secure-access) and [Cisco Umbrella](https://docs.umbrella.com/umbrella-user-guide/docs/getting-started) [logs](https://docs.sse.cisco.com/sse-user-guide/docs/manage-your-logs) stored in Amazon S3 into Microsoft Sentinel using the Amazon S3 REST API
 

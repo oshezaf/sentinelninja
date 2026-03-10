@@ -19,6 +19,8 @@
 | **First Published** | 2022-05-23 |
 | **Solution Folder** | [Windows Security Events](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Security%20Events) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-securityevents) |
+| **Popularity** | 🟢 High (96%) |
+| **Rating** | ★★★☆☆ 3.0/5 (4 ratings) |
 
 The Windows Security Events solution for Microsoft Sentinel allows you to ingest Security events from your Windows machines using the Windows Agent into Microsoft Sentinel. This solution includes two (2) data connectors to help ingest the logs.
 

@@ -1,4 +1,6 @@
-# Phosphorus
+# Phosphorus Connector for Microsoft Sentinel
+
+*Solution: Phosphorus*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Phosphorus.svg" alt="Phosphorus Logo" width="75" height="75">
 
@@ -20,6 +22,8 @@
 | **Last Updated** | 2024-08-13 |
 | **Solution Folder** | [Phosphorus](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Phosphorus) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/4043.microsoft-sentinel-solution-phosphorus) |
+| **Popularity** | ⚪ Very Low (3%) |
+| **Rating** | ★★★★★ 5.0/5 (1 ratings) |
 
 Phosphorus Microsoft Sentinel Solution is a data connector used to ingest device data logs into Microsoft Sentinel.
 

@@ -1,4 +1,6 @@
-# ThreatXCloud
+# ThreatX WAF
+
+*Solution: ThreatXCloud*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="ThreatXCloud Logo" width="75" height="75">
 
@@ -20,6 +22,8 @@
 | **Last Updated** | 2022-09-23 |
 | **Solution Folder** | [ThreatXCloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ThreatXCloud) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-threatxwaf) |
+| **Popularity** | ⚪ Very Low (0%) |
+| **Rating** | ★★★★★ 5.0/5 (1 ratings) |
 
 The [ThreatX](https://www.threatx.com/products/) solution for Microsoft Sentinel provides an automated approach for analysts to remediate the attacks happening at application level by blocking the suspicious ip and url and also empowers them to gather the threat intelligence data for the malicious ip activity. This solution includes SOAR Connector and Playbooks by which the analyst can automate the security operations tasks
 

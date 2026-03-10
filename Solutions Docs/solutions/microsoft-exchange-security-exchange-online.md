@@ -1,4 +1,6 @@
-# Microsoft Exchange Security - Exchange Online
+# Microsoft Exchange Security for Exchange Online
+
+*Solution: Microsoft Exchange Security - Exchange Online*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Microsoft Exchange Security - Exchange Online Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-12-21 |
 | **Solution Folder** | [Microsoft Exchange Security - Exchange Online](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20Online) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftsentinelcommunity.azure-sentinel-solution-esionline) |
+| **Popularity** | 🟢 High (95%) |
 
 The Exchange Security Audit and Configuration Insight solution analyze Exchange Online configuration and logs from a security lens to provide insights and alerts.
 

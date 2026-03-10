@@ -1,4 +1,6 @@
-# Azure Storage
+# Azure Storage solution for Sentinel
+
+*Solution: Azure Storage*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/StorageAccount.svg" alt="Azure Storage Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-05-12 |
 | **Solution Folder** | [Azure Storage](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Storage) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azurestorageaccount) |
+| **Popularity** | 🟢 High (98%) |
 
 The [Azure Storage account](https://docs.microsoft.com/azure/storage/common/storage-account-overview) Solution for Microsoft Sentinel enables you to stream Azure Storage accounts diagnostics logs into your Microsoft Sentinel workspace, allowing you to continuously monitor activity in all your instances, and detect malicious activity in your organization. 
 

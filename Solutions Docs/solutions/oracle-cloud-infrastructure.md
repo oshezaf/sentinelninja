@@ -19,6 +19,8 @@
 | **First Published** | 2022-06-01 |
 | **Solution Folder** | [Oracle Cloud Infrastructure](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Oracle%20Cloud%20Infrastructure) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ocilogs) |
+| **Popularity** | 🟢 High (81%) |
+| **Rating** | ★★★★★ 5.0/5 (1 ratings) |
 
 The Oracle Cloud Infrastructure (OCI) solution provides the capability to ingest OCI Logs from [OCI Stream](https://docs.oracle.com/iaas/Content/Streaming/Concepts/streamingoverview.htm) into Microsoft Sentinel using the [OCI Streaming REST API](https://docs.oracle.com/iaas/api/#/streaming/streaming/20180418).
 

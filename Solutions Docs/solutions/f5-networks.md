@@ -1,4 +1,6 @@
-# F5 Networks
+# F5 Advanced WAF Integration via Syslog/CEF for Microsoft Sentinel
+
+*Solution: F5 Networks*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="F5 Networks Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-05-12 |
 | **Solution Folder** | [F5 Networks](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/F5%20Networks) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/f5-networks.f5_networks_data_mss) |
+| **Popularity** | 🔵 Medium (60%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The [F5 Networks](https://www.f5.com/) solution for Microsoft Sentinel enables you to ingest F5 Network firewall logs into Microsoft Sentinel, using the Common Event Format (CEF) for Security Monitoring.

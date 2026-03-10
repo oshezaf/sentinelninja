@@ -1,4 +1,6 @@
-# ZeroTrust(TIC3.0)
+# Zero Trust (TIC 3.0) Solution
+
+*Solution: ZeroTrust(TIC3.0)*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="ZeroTrust(TIC3.0) Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2021-10-20 |
 | **Solution Folder** | [ZeroTrust(TIC3.0)](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroTrust%28TIC3.0%29) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-zerotrust) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 The Microsoft Sentinel Zero Trust (TIC 3.0) solution provides a mechanism for viewing log queries aligned to Zero Trust and Trusted Internet Connections models across the Microsoft and partner ecosystem. This solution enables governance and compliance teams to design, build, monitor, and respond to Zero Trust (TIC 3.0) requirements across 25+ Microsoft and 3rd party products. The solution includes the new Zero Trust (TIC 3.0) Workbook, (1) Analytics Rule, and (3) Playbooks. While only Microsoft Sentinel and Microsoft Defender for Cloud are required to get started, the solution is enhanced with numerous Microsoft offerings. This Solution enables Security Architects, Engineers, SecOps Analysts, Managers, and IT Pros to gain situational awareness visibility for the security posture of cloud, multi-cloud, hybrid, and on-premise workloads. For more information, see 💡[Microsoft Zero Trust Model](https://www.microsoft.com/en-in/security/business/zero-trust?rtc=1) 💡[Trusted Internet Connections: Core Guidance Documents](https://www.cisa.gov/tic) 
 

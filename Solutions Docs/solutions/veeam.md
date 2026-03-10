@@ -1,4 +1,6 @@
-# Veeam
+# Veeam App for Microsoft Sentinel
+
+*Solution: Veeam*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/VeeamLogo.svg" alt="Veeam Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2025-08-26 |
 | **Solution Folder** | [Veeam](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veeam) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/veeamsoftware.azure-sentinel-solution-veeamapp) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 Veeam App for Microsoft Sentinel allows Veeam Data Platform Advanced and Premium customers to combine the powerful cyberthreat detection and response features of Microsoft Sentinel with a simple and powerful data platform that goes beyond backup, providing organizations with reliable data protection, seamless recovery, and vital security insights.
 

@@ -19,6 +19,7 @@
 | **First Published** | 2024-11-20 |
 | **Solution Folder** | [Doppel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Doppel) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/doppel.azure-sentinel-solution-doppel) |
+| **Popularity** | 🟡 Low (45%) |
 
 The Doppel Integration for Microsoft Sentinel streamlines the ingestion of Doppel security events and alerts through a custom data connector, converting raw event logs into a compatible format for use in Workbooks. This enhances digital risk visibility by enabling users to monitor threats, analyze alerts by category, and gain actionable insights.
 

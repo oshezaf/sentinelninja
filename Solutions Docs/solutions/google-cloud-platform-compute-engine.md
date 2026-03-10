@@ -19,6 +19,7 @@
 | **First Published** | 2022-07-07 |
 | **Solution Folder** | [Google Cloud Platform Compute Engine](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Compute%20Engine) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gcpcomputeengine) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 The Google Cloud Platform Compute Engine solution provides the capability to ingest [Compute Engine Audit logs](https://cloud.google.com/compute/docs/logging/audit-logging) into Microsoft Sentinel using the Compute Engine API.
 

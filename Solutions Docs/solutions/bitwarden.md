@@ -1,4 +1,6 @@
-# Bitwarden
+# Bitwarden Event Logs
+
+*Solution: Bitwarden*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Bitwarden.svg" alt="Bitwarden Logo" width="75" height="75">
 
@@ -20,6 +22,7 @@
 | **Last Updated** | 2024-10-02 |
 | **Solution Folder** | [Bitwarden](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Bitwarden) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/8bit-solutions-llc.bitwarden-sentinel-integration) |
+| **Popularity** | 🔵 Medium (74%) |
 
 This application provides insight into activity of your Bitwarden organization such as user's activity (logged in, changed password, 2fa, etc.), cipher activity (created, updated, deleted, shared, etc.), collection activity, organization activity, and more.
 

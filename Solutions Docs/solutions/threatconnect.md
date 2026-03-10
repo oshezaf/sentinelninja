@@ -1,4 +1,6 @@
-# <img src="../images/asim-badge.png" alt="ASIM" height="32"> ThreatConnect
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> ThreatConnect Solution for Microsoft Sentinel
+
+*Solution: ThreatConnect*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ThreatConnect.svg" alt="ThreatConnect Logo" width="75" height="75">
 
@@ -20,6 +22,7 @@
 | **Last Updated** | 2023-09-11 |
 | **Solution Folder** | [ThreatConnect](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ThreatConnect) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/threatconnectinc1694630408738.sentinel-threatconnect-byol-enterprise) |
+| **Popularity** | ⚪ Very Low (6%) |
 
 The [ThreatConnect Threat Intelligence Platform](https://threatconnect.com/) solution for Microsoft Sentinel provides Workbooks and Analytics to demonstrate the value of ThreatConnect data inside Microsoft Sentintel.
 

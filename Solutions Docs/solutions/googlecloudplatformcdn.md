@@ -19,6 +19,7 @@
 | **First Published** | 2025-03-07 |
 | **Solution Folder** | [GoogleCloudPlatformCDN](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformCDN) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gcp-cdn) |
+| **Popularity** | 🟢 High (89%) |
 
 The Google Cloud Platform CDN solution provides the capability to ingest [Cloud CDN Audit logs](https://cloud.google.com/cdn/docs/audit-logging) and [Cloud CDN traffic logs](https://cloud.google.com/cdn/docs/logging) into Microsoft Sentinel using the GCP Compute Engine API and GCP Logging API. 
 

@@ -1,4 +1,6 @@
-# SAP LogServ
+# SAP LogServ (RISE), S/4HANA Cloud private edition
+
+*Solution: SAP LogServ*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SAPBTP.svg" alt="SAP LogServ Logo" width="75" height="75">
 
@@ -20,6 +22,7 @@
 | **Last Updated** | 2025-07-18 |
 | **Solution Folder** | [SAP LogServ](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20LogServ) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sap_jasondau.azure-sentinel-solution-saplogserv) |
+| **Popularity** | 🟢 High (80%) |
 
 SAP LogServ provides the SAP RISE logs to Microsoft Sentinel, allowing SOC teams to ingest, monitor, and hunt across SAP data. This integration enhances security by enabling faster detection, investigation, and mitigation of risks within SAP RISE environments.
 

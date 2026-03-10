@@ -1,4 +1,6 @@
-# Datawiza
+# Datawiza Sentinel Solution
+
+*Solution: Datawiza*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/datawiza_logo.svg" alt="Datawiza Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2025-11-10 |
 | **Solution Folder** | [Datawiza](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Datawiza) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/datawiza.datawiza-sentinel-solution-dap) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 Send Datawiza Access Proxy access and MFA logs to Microsoft Sentinel for real-time security insights and analytics. Improve visibility, accelerate investigations, and meet audit/compliance requirements.
 

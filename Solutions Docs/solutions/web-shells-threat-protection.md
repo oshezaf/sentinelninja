@@ -19,6 +19,7 @@
 | **First Published** | 2022-05-22 |
 | **Solution Folder** | [Web Shells Threat Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Web%20Shells%20Threat%20Protection) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-webshellsthreatprotection) |
+| **Popularity** | 🟡 Low (46%) |
 | **Pre-requisites** | [Microsoft Defender XDR](microsoft-defender-xdr.md), [Windows Security Events](windows-security-events.md), [Azure Web Application Firewall (WAF)](azure-web-application-firewall-waf.md) |
 
 The Web Shells Threat Protection solution contains security content that helps proactive and reactive detection of Web Shells used by attackers. Web Shells are malicious scripts that attackers use to compromise internet facing servers. These are commonly used as a backdoor into the targeted web applications and servers. Microsoft Security Research has highlighted the threat, usage and detection of Web Shells in an enterprise environment in the following blogs: 

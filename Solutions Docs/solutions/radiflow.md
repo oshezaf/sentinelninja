@@ -1,4 +1,6 @@
-# Radiflow
+# Radiflow OT/ICS Threat and Anomaly Detection Connector for Microsoft Sentinel
+
+*Solution: Radiflow*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Radiflow.svg" alt="Radiflow Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2024-06-26 |
 | **Solution Folder** | [Radiflow](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Radiflow) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/radiflow.azure-sentinel-solution-radiflow) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 The [Radiflow](https://www.radiflow.com/) solution for Microsoft Sentinel enables ingestion of [iSID](https://www.radiflow.com/products/ot-visibility-and-anomaly-detection/) events into Microsoft Sentinel.
 

@@ -1,4 +1,6 @@
-# Recorded Future Identity
+# Recorded Future Identity Solution
+
+*Solution: Recorded Future Identity*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/RecordedFuture.svg" alt="Recorded Future Identity Logo" width="75" height="75">
 
@@ -20,6 +22,8 @@
 | **Last Updated** | 2025-04-02 |
 | **Solution Folder** | [Recorded Future Identity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future%20Identity) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/recordedfuture1605638642586.recorded_future_identity_solution) |
+| **Popularity** | 🟡 Low (31%) |
+| **Rating** | ★★★★★ 4.7/5 (218 ratings) |
 
 [Recorded Future](https://www.recordedfuture.com/) Identity Intelligence enables security and IT teams to detect identity compromises, for both employees and customers. To do this, Recorded Future automates the collection, analysis, and production of identity intelligence from a vast range of sources. Organizations can incorporate identity intelligence into automated workflows that regularly monitor for compromised credentials and take immediate action with applications such as Entra ID and Microsoft Sentinel.
 There are many ways organizations can utilize Recorded Future Identity Intelligence; the playbooks in this Solution are just a quick introduction to some of those ways. In particular, these playbooks include several actions that can be coordinated, or used separately. They include:

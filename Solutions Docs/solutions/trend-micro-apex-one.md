@@ -1,4 +1,6 @@
-# Trend Micro Apex One
+# Trend Micro Apex One Solution
+
+*Solution: Trend Micro Apex One*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Trend_Micro_Logo.svg" alt="Trend Micro Apex One Logo" width="75" height="75">
 
@@ -20,6 +22,7 @@
 | **Last Updated** | 2022-03-24 |
 | **Solution Folder** | [Trend Micro Apex One](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Apex%20One) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-trendmicroapexone) |
+| **Popularity** | 🟡 Low (30%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The [Trend Micro Apex One](https://www.trendmicro.com/business/products/user-protection/sps/endpoint.htmlhttps:/www.trendmicro.com/business/products/user-protection/sps/endpoint.html) solution for Microsoft Sentinel enables ingestion of [Trend Micro Apex One events](https://aka.ms/sentinel-TrendMicroApex-OneEvents) into Microsoft Sentinel. Refer to [Trend Micro Apex Central](https://aka.ms/sentinel-TrendMicroApex-OneCentral) for more information. 

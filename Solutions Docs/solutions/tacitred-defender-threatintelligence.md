@@ -1,4 +1,6 @@
-# TacitRed-Defender-ThreatIntelligence
+# TacitRed Defender Threat Intelligence
+
+*Solution: TacitRed-Defender-ThreatIntelligence*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/tacitred_logo.svg" alt="TacitRed-Defender-ThreatIntelligence Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2025-11-10 |
 | **Solution Folder** | [TacitRed-Defender-ThreatIntelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TacitRed-Defender-ThreatIntelligence) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/data443riskmitigationinc1761580347231.azure-sentinel-solution-tacitred-defender-ti) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 The TacitRed Defender Threat Intelligence solution integrates TacitRed's threat intelligence feed with Microsoft Sentinel. It automatically retrieves compromised credentials and other threat indicators from TacitRed and ingests them into Microsoft Sentinel using the Upload API for enhanced threat detection.
 

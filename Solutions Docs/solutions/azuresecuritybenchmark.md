@@ -1,4 +1,6 @@
-# <img src="../images/asim-badge.png" alt="ASIM" height="32"> AzureSecurityBenchmark
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Azure Security Benchmark
+
+*Solution: AzureSecurityBenchmark*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="AzureSecurityBenchmark Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-06-17 |
 | **Solution Folder** | [AzureSecurityBenchmark](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AzureSecurityBenchmark) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azuresecuritybenchmark) |
+| **Popularity** | 🟢 High (92%) |
 
 The Azure Security Benchmark v3 Solution is designed to enable Cloud Architects, Security Engineers, and Governance Risk Compliance Professionals to gain situational awareness for cloud security posture and hardening. Benchmark recommendations provide a starting point for selecting specific security configuration settings and facilitate risk reduction. The Azure Security Benchmark includes a collection of high-impact security recommendations for improving posture. This workbook provides visibility and situational awareness for security capabilities delivered with Microsoft technologies in predominantly cloud-based environments. Customer experience will vary by user and some panels may require additional configurations for operation.
 

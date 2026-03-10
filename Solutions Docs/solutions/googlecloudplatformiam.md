@@ -1,4 +1,6 @@
-# GoogleCloudPlatformIAM
+# Google Cloud Platform IAM
+
+*Solution: GoogleCloudPlatformIAM*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/google_logo.svg" alt="GoogleCloudPlatformIAM Logo" width="75" height="75">
 
@@ -19,6 +21,8 @@
 | **First Published** | 2021-07-30 |
 | **Solution Folder** | [GoogleCloudPlatformIAM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformIAM) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gcpiam) |
+| **Popularity** | 🟢 High (89%) |
+| **Rating** | ★☆☆☆☆ 1.0/5 (1 ratings) |
 
 The Google Cloud Platform Identity and Access Management (IAM) solution provides the capability to ingest [GCP IAM logs](https://cloud.google.com/iam/docs/audit-logging) into Microsoft Sentinel using the GCP Logging API. Refer to [GCP Logging API documentation](https://cloud.google.com/logging/docs/api) for more information.
   

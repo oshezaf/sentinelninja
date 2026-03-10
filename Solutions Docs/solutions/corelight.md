@@ -1,4 +1,6 @@
-# Corelight
+# Corelight for Microsoft Sentinel
+
+*Solution: Corelight*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Corelight/Data%20Connectors/Logo/corelight.svg" alt="Corelight Logo" width="75" height="75">
 
@@ -19,6 +21,8 @@
 | **First Published** | 2022-06-01 |
 | **Solution Folder** | [Corelight](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Corelight) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/corelightinc1584998267292.corelight-for-azure-sentinel) |
+| **Popularity** | ⚪ Very Low (0%) |
+| **Rating** | ★★★★★ 4.8/5 (20 ratings) |
 
 The [Corelight](https://corelight.com/) solution provides the capability to ingest events from [Zeek](https://zeek.org/) and [Suricata](https://suricata.io/) via Corelight Sensors into Microsoft Sentinel.
 

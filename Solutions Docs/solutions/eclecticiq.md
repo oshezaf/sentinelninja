@@ -1,4 +1,6 @@
-# EclecticIQ
+# EclecticIQ (Preview)
+
+*Solution: EclecticIQ*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="EclecticIQ Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-09-30 |
 | **Solution Folder** | [EclecticIQ](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/EclecticIQ) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-eclecticiqtip) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 [EclecticIQ](https://eclecticiq.com/) is a global provider of threat intelligence, hunting and response technology and services. This solution includes SOAR Connector and Playbooks which leverage EclecticIQ Observables data to not only enrich Microsoft Sentinel incidents but also add indicators to EclecticIQ.
 

@@ -1,4 +1,6 @@
-# NozomiNetworks
+# Nozomi Networks
+
+*Solution: NozomiNetworks*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="NozomiNetworks Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-07-12 |
 | **Solution Folder** | [NozomiNetworks](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NozomiNetworks) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-nozominetworks) |
+| **Popularity** | 🟡 Low (35%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The [Nozomi Networks](https://www.nozominetworks.com/) solution provides the capability to ingest Nozomi Networks Events into Microsoft Sentinel. Refer to the Nozomi Networks [PDF documentation](https://www.nozominetworks.com/resources/data-sheets-brochures-learning-guides/) for more information.

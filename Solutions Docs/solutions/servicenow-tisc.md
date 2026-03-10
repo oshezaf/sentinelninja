@@ -1,4 +1,6 @@
-# ServiceNow TISC
+# Threat Intelligence Security Center for Microsoft Sentinel
+
+*Solution: ServiceNow TISC*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ServiceNow.svg" alt="ServiceNow TISC Logo" width="75" height="75">
 
@@ -20,6 +22,7 @@
 | **Last Updated** | 2025-01-15 |
 | **Solution Folder** | [ServiceNow TISC](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ServiceNow%20TISC) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/servicenow1594831756316.sentinel-solution-tisc) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 ServiceNow's Threat Intelligence Security Center (TISC) is an advanced security intelligence platform, and this solution integrates with Microsoft Sentinel to provide comprehensive threat detection, analysis, and response capabilities. This integration enables organizations to aggregate threat intelligence from multiple sources, automate security workflows, and enhance their overall security posture. The solution facilitates bi-directional data exchange between TISC and Microsoft Sentinel, allowing security teams to seamlessly share threat indicators and observables across both platforms. The integration supports incident enrichment workflows, enabling security analysts to make more informed decisions based on consolidated threat intelligence. Through custom connectors and playbooks, the solution streamlines security operations by automating threat data correlation, reducing manual effort, and accelerating incident response times.
 

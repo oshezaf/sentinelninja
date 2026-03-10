@@ -1,4 +1,6 @@
-# Azure kubernetes Service
+# Azure Kubernetes Service (AKS) solution for Sentinel
+
+*Solution: Azure kubernetes Service*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Azure kubernetes Service Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-06-01 |
 | **Solution Folder** | [Azure kubernetes Service](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20kubernetes%20Service) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azurekubernetes) |
+| **Popularity** | 🔵 Medium (78%) |
 
 The [Azure Kubernetes Services (AKS)](https://docs.microsoft.com/azure/aks/?WT.mc_id=Portal-fx) solution allows you to ingest AKS activity logs using Diagnostic Setting into Microsoft Sentinel.
 

@@ -1,4 +1,6 @@
-# Check Point
+# Check Point for Microsoft Sentinel solutions
+
+*Solution: Check Point*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Check%20Point/Logo/Check_Point.svg" alt="Check Point Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2021-08-13 |
 | **Solution Folder** | [Check Point](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/checkpoint.checkpoint-sentinel-solutions) |
+| **Popularity** | 🟡 Low (41%) |
 
 The [Checkpoint solution](https://www.checkpoint.com/quantum/next-generation-firewall/) for Microsoft Sentinel enables you to ingest [Check Point firewall logs](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk122323) into Microsoft Sentinel.  
 

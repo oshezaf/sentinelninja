@@ -19,6 +19,8 @@
 | **First Published** | 2022-06-29 |
 | **Solution Folder** | [PCI DSS Compliance](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PCI%20DSS%20Compliance) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-pcidsscompliance) |
+| **Popularity** | 🔵 Medium (76%) |
+| **Rating** | ★★★★★ 5.0/5 (1 ratings) |
 
 This Solution enables Microsoft Sentinel users to harness the power of their SIEM to assist in meeting PCI-DSS 3.2.1 requirements. This Solution comes with pre-defined dashboards, visualizations, and reports, providing users with immediate insights in their PCI environment.
 

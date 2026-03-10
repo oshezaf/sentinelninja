@@ -1,4 +1,6 @@
-# MailRisk
+# MailRisk data connector for Microsoft Sentinel
+
+*Solution: MailRisk*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/securepractice_logo.svg" alt="MailRisk Logo" width="75" height="75">
 
@@ -20,6 +22,7 @@
 | **Last Updated** | 2025-10-27 |
 | **Solution Folder** | [MailRisk](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MailRisk) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/securepracticeas1650887373770.microsoft-sentinel-solution-mailrisk) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 The [MailRisk by Secure Practice](https://securepractice.co/) solution for Microsoft Sentinel enables you to ingest email reported with the MailRisk plugin into Microsoft Sentinel Log Analytics using the Codeless Connector Framework (CCF) with REST API Polling.
 

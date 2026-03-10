@@ -1,4 +1,6 @@
-# Digital Guardian Data Loss Prevention
+# Digital Guardian Data Loss Prevention Solution
+
+*Solution: Digital Guardian Data Loss Prevention*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Digital Guardian Data Loss Prevention Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2021-07-23 |
 | **Solution Folder** | [Digital Guardian Data Loss Prevention](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital%20Guardian%20Data%20Loss%20Prevention) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-digitalguardiandlp) |
+| **Popularity** | 🔵 Medium (58%) |
 | **Pre-requisites** | [Syslog](syslog.md) |
 
 The [Digital Guardian Data Loss Prevention (DLP)](https://digitalguardian.com/platform-overview) data connector provides the capability to ingest Digital Guardian DLP logs into Microsoft Sentinel.

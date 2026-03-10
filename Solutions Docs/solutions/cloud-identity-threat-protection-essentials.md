@@ -19,6 +19,7 @@
 | **First Published** | 2022-11-16 |
 | **Solution Folder** | [Cloud Identity Threat Protection Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloud%20Identity%20Threat%20Protection%20Essentials) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-cloudthreatdetection) |
+| **Popularity** | 🔵 Medium (57%) |
 | **Pre-requisites** | [Microsoft Entra ID](microsoft-entra-id.md), [Amazon Web Services](amazon-web-services.md), [Microsoft Entra ID Protection](microsoft-entra-id-protection.md) |
 
 As more and more companies move to the cloud - attacks to the cloud identity system are becoming more commonplace. The **Cloud Identity Threat Protection Essentials** solution looks for most common cloud focused identity attacks such as Suspicious Sign-ins, privilege grants, MFA disable etc. Rapid detection of these attacks can enable organizations to respond faster and stop them from progressing further.

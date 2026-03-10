@@ -1,4 +1,6 @@
-# Trend Micro TippingPoint
+# Trend Micro TippingPoint for Microsoft Sentinel
+
+*Solution: Trend Micro TippingPoint*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Trend_Micro_Logo.svg" alt="Trend Micro TippingPoint Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [Trend Micro TippingPoint](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20TippingPoint) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/trendmicro.trend_micro_tippingpoint_mss) |
+| **Popularity** | ⚪ Very Low (8%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The [Trend Micro](https://www.trendmicro.com/en_in/business.html) TippingPoint Microsoft Sentinel Solution allows you to easily connect your [TippingPoint](https://www.trendmicro.com/en_us/business/products/network/intrusion-prevention/tipping-point-threat-protection-system.html) SMS IPS events with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation.

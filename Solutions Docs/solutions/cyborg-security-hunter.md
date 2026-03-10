@@ -1,4 +1,6 @@
-# Cyborg Security HUNTER
+# Cyborg Security HUNTER Platform - Threat Hunting Packages for Microsoft Sentinel
+
+*Solution: Cyborg Security HUNTER*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cyborgsecurity-logo-75px.svg" alt="Cyborg Security HUNTER Logo" width="75" height="75">
 
@@ -20,6 +22,7 @@
 | **Last Updated** | 2023-09-22 |
 | **Solution Folder** | [Cyborg Security HUNTER](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyborg%20Security%20HUNTER) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cyborgsecurityinc1689265652101.azure-sentinel-solution-cyborgsecurity-hunter) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 The [Cyborg Security HUNTER](https://www.cyborgsecurity.com/) solution for Microsoft Sentinel helps analysts to configure the 'Open in Tool' button within the HUNTER platform, allowing the Microsoft Sentinel hunt packages to be deployed in the Microsoft Sentinel Platform
 

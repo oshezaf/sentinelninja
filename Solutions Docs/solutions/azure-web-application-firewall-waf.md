@@ -1,4 +1,6 @@
-# Azure Web Application Firewall (WAF)
+# Azure Web Application Firewall solution for Sentinel
+
+*Solution: Azure Web Application Firewall (WAF)*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/waf_logo.svg" alt="Azure Web Application Firewall (WAF) Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-05-18 |
 | **Solution Folder** | [Azure Web Application Firewall (WAF)](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Web%20Application%20Firewall%20%28WAF%29) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azurewebapplicationfirewal) |
+| **Popularity** | 🟢 High (87%) |
 
 The Azure Web Application Firewall (WAF) solution for Microsoft Sentinel allows you to ingest Diagnostic Metrics from Application Gateway, Front Door and CDN into Microsoft Sentinel.
 

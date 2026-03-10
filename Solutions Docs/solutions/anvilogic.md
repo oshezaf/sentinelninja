@@ -1,4 +1,6 @@
-# Anvilogic
+# Anvilogic Connector for Microsoft Sentinel
+
+*Solution: Anvilogic*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Anvilogic.svg" alt="Anvilogic Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2025-06-20 |
 | **Solution Folder** | [Anvilogic](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Anvilogic) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/anvilogic1725900018831.azure-sentinel-solution-anvilogic) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 The [Anvilogic](https://www.anvilogic.com/) solution for Microsoft Sentinel enables you to ingest Anvilogic Alerts into Microsoft Sentinel.
 

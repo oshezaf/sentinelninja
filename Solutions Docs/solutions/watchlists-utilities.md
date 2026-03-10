@@ -1,4 +1,6 @@
-# Watchlists Utilities
+# Watchlists Utilities Solution
+
+*Solution: Watchlists Utilities*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Watchlists Utilities Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-05-23 |
 | **Solution Folder** | [Watchlists Utilities](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Watchlists%20Utilities) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-watchlistsutilities) |
+| **Popularity** | 🔵 Medium (76%) |
 
 The Watchlist Utilities solution for Microsoft Sentinel contains Playbooks that can help automate watchlist usage and integration with incident's management. These include use cases for adding entities (Hosts, IP, URL, User, etc.) to Microsoft Sentinel Watchlists and for incident management.
 

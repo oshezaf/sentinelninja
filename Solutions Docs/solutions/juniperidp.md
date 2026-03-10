@@ -1,4 +1,6 @@
-# JuniperIDP
+# Juniper IDP Solution
+
+*Solution: JuniperIDP*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="JuniperIDP Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2021-03-31 |
 | **Solution Folder** | [JuniperIDP](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JuniperIDP) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-juniperidp) |
+| **Popularity** | 🔵 Medium (62%) |
 | **Pre-requisites** | [CustomLogsAma](customlogsama.md) |
 
 The [Juniper](https://www.juniper.net/) IDP solution provides the capability to ingest [Juniper IDP](https://www.juniper.net/documentation/us/en/software/junos/idp-policy/topics/topic-map/security-idp-overview.html) events into Microsoft Sentinel.

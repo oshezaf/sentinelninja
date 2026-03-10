@@ -19,6 +19,7 @@
 | **First Published** | 2022-08-18 |
 | **Solution Folder** | [Auth0](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-auth0) |
+| **Popularity** | 🟢 High (82%) |
 
 The [Auth0 Access Management](https://auth0.com/access-management) solution for Microsoft Sentinel provides the capability to ingest [Auth0 log events](https://auth0.com/docs/api/management/v2/#!/Logs/get_logs) into your Microsoft Sentinel workspace.
   

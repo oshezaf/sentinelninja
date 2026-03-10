@@ -1,4 +1,6 @@
-# 🚫 MimecastSEG
+# 🚫 Mimecast Cloud Gateway MTA - DEPRECATED
+
+*Solution: MimecastSEG*
 
 > 🚫 **Deprecated:** This solution has been deprecated and replaced by a newer integration.
 
@@ -22,6 +24,7 @@
 | **Last Updated** | 2022-02-24 |
 | **Solution Folder** | [MimecastSEG](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MimecastSEG) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/mimecastnorthamerica1584469118674.azure-sentinel-solution-mimecastseg) |
+| **Popularity** | 🟡 Low (44%) |
 
 The data connector for [Mimecast Secure Email Gateway](https://integrations.mimecast.com/tech-partners/microsoft-sentinel/) allows easy log collection from the Secure Email Gateway to surface email insight and user activity within Microsoft Sentinel. The data connector provides pre-created dashboards to allow analysts to view insight into email based threats, aid in incident correlation and reduce investigation response times coupled with custom alert capabilities. Mimecast products and features required: 
 - Mimecast Secure Email Gateway 

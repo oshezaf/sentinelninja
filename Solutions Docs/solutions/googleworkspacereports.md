@@ -1,4 +1,6 @@
-# GoogleWorkspaceReports
+# Google Workspace Reports
+
+*Solution: GoogleWorkspaceReports*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/google-workspace-logo.svg" alt="GoogleWorkspaceReports Logo" width="75" height="75">
 
@@ -19,6 +21,8 @@
 | **First Published** | 2022-01-24 |
 | **Solution Folder** | [GoogleWorkspaceReports](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleWorkspaceReports) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-googleworkspacereports) |
+| **Popularity** | 🔵 Medium (72%) |
+| **Rating** | ★☆☆☆☆ 1.0/5 (1 ratings) |
 
 The [Google Workspace](https://workspace.google.com/) solution for Microsoft Sentinel enables you to ingest Google Workspace Activity events into Microsoft Sentinel. 
  

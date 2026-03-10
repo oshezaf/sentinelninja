@@ -1,4 +1,6 @@
-# RidgeSecurity
+# Ridge Security RidgeBot for Microsoft Sentinel
+
+*Solution: RidgeSecurity*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/RidgeSecurity.svg" alt="RidgeSecurity Logo" width="75" height="75">
 
@@ -20,6 +22,8 @@
 | **Last Updated** | 2023-10-23 |
 | **Solution Folder** | [RidgeSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RidgeSecurity) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/ridgesecuritytechnologyinc1670890478389.microsoft-sentinel-solution-ridgesecurity) |
+| **Popularity** | ⚪ Very Low (0%) |
+| **Rating** | ★★★★★ 4.7/5 (91 ratings) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 [The RidgeSecurity](https://ridgesecurity.ai/) Microsoft Sentinel Solution lets users have visibility in real-time with Microsoft Sentinel, allowing creation of custom Dashboards, Workbooks, Notebooks and Custom Alerts to improve investigation. 

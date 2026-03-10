@@ -1,4 +1,6 @@
-# SOC-Process-Framework
+# SOC Process Framework
+
+*Solution: SOC-Process-Framework*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="SOC-Process-Framework Logo" width="75" height="75">
 
@@ -19,6 +21,8 @@
 | **First Published** | 2022-04-08 |
 | **Solution Folder** | [SOC-Process-Framework](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC-Process-Framework) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-socprocessframework) |
+| **Popularity** | 🟡 Low (28%) |
+| **Rating** | ★★★★★ 5.0/5 (1 ratings) |
 
 The Get-SOCActions Playbook with SocRA Watchlist gives SOCs the ability to onboard SOC Actions for their Analysts to follow that snap to the SOC Process Framework Workbook.
 

@@ -1,4 +1,6 @@
-# Pure Storage
+# Pure Storage Solution for Microsoft Sentinel
+
+*Solution: Pure Storage*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/purestorage_logo.svg" alt="Pure Storage Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2024-02-05 |
 | **Solution Folder** | [Pure Storage](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pure%20Storage) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/purestoragemarketplaceadmin.microsoft-sentinel-solution-purestorage) |
+| **Popularity** | 🔵 Medium (68%) |
 
 Solution for Microsoft Sentinel to ingest logs from PureStorage arrays
 

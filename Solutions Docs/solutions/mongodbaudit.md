@@ -1,4 +1,6 @@
-# MongoDBAudit
+# MongoDB Audit
+
+*Solution: MongoDBAudit*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="MongoDBAudit Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-06-01 |
 | **Solution Folder** | [MongoDBAudit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MongoDBAudit) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-mongodbaudit) |
+| **Popularity** | 🟡 Low (21%) |
 | **Pre-requisites** | [CustomLogsAma](customlogsama.md) |
 
 The [MongoDBAudit](https://www.mongodb.com/) solution allows you to ingest Mongo DB audit information into Microsoft Sentinel. Refer to [MongoDB documentation](https://www.mongodb.com/docs/manual/tutorial/getting-started/) for more information.

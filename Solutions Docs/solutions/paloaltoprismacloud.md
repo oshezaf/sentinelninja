@@ -1,4 +1,6 @@
-# PaloAltoPrismaCloud
+# Palo Alto Prisma Cloud CSPM Solution
+
+*Solution: PaloAltoPrismaCloud*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/PaloAltoPrismaCloud/logo/Palo-alto-logo.png" alt="PaloAltoPrismaCloud Logo" width="75" height="75">
 
@@ -19,6 +21,8 @@
 | **First Published** | 2021-04-16 |
 | **Solution Folder** | [PaloAltoPrismaCloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAltoPrismaCloud) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-paloaltoprisma) |
+| **Popularity** | 🔵 Medium (77%) |
+| **Rating** | ★★★★☆ 4.3/5 (110 ratings) |
 
 The [Palo Alto Prisma Cloud](https://www.paloaltonetworks.com/prisma/cloud) CSPM solution provides the capability to ingest Prisma Cloud CSPM alerts and audit logs into Microsoft Sentinel using the Prisma Cloud CSPM API. Refer to Prisma Cloud CSPM API documentation for more information. 
  

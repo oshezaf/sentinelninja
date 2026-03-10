@@ -1,4 +1,6 @@
-# EatonForeseer
+# Eaton Foreseer
+
+*Solution: EatonForeseer*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="EatonForeseer Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-06-28 |
 | **Solution Folder** | [EatonForeseer](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/EatonForeseer) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-eatonforeseer) |
+| **Popularity** | 🟡 Low (14%) |
 
 [Eaton Foreseer](https://www.eaton.com/in/en-us/catalog/services/foreseer.html) OT application generates logs into Microsoft Sentinel using MMA or AMA, use the Analytics template for creating Analytic Rules on unauthorized login attempts into the application and gain insights into login activity using the provided workbooks.
 

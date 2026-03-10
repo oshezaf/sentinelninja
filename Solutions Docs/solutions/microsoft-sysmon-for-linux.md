@@ -1,4 +1,6 @@
-# Microsoft Sysmon For Linux
+# Microsoft Sysmon For Linux Solution
+
+*Solution: Microsoft Sysmon For Linux*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Microsoft Sysmon For Linux Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2021-10-27 |
 | **Solution Folder** | [Microsoft Sysmon For Linux](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Sysmon%20For%20Linux) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-sysmonforlinux) |
+| **Popularity** | ⚪ Very Low (0%) |
 | **Pre-requisites** | [Syslog](syslog.md) |
 
 [Sysmon for Linux](https://github.com/Sysinternals/SysmonForLinux) provides detailed information about process creations, network connections and other system events. The Sysmon for Linux connector uses [Syslog](https://docs.microsoft.com/azure/sentinel/connect-syslog) as its data ingestion method. This solution depends on ASIM to work as expected. [Deploy ASIM](https://github.com/Azure/Azure-Sentinel/tree/master/ASIM) to get the full value from the solution.

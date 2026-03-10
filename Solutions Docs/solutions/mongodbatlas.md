@@ -1,4 +1,6 @@
-# MongoDBAtlas
+# MongoDB Atlas Solution for Microsoft Sentinel
+
+*Solution: MongoDBAtlas*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/MongoDBAtlas/Data%20Connectors/Logos/mongodb.svg" alt="MongoDBAtlas Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2025-08-22 |
 | **Solution Folder** | [MongoDBAtlas](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MongoDBAtlas) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/mongodb.azure-sentinel-solution-mongodbatlas) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 This custom data connector uses a Function App to pull MongoDB Atlas log files (MDBA) data from the MongoDB Atlas Administation API and uploads into the selected Log Analytics workspace via the Azure Log Ingestion API.
 

@@ -1,4 +1,6 @@
-# Zinc Open Source
+# ZINC Open Source Threat Protection
+
+*Solution: Zinc Open Source*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Zinc Open Source Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-10-03 |
 | **Solution Folder** | [Zinc Open Source](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zinc%20Open%20Source) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-zincopensource) |
+| **Popularity** | ⚪ Very Low (0%) |
 | **Pre-requisites** | [Windows Security Events](windows-security-events.md), [Microsoft Defender XDR](microsoft-defender-xdr.md), [Windows Server DNS](windows-server-dns.md), [F5 Big-IP](f5-big-ip.md), [CiscoASA](ciscoasa.md), [PaloAlto-PAN-OS](paloalto-pan-os.md), [Common Event Format](common-event-format.md), [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md), [Check Point](check-point.md), [Microsoft 365](microsoft-365.md), [Azure Firewall](azure-firewall.md), [Windows Firewall](windows-firewall.md), [Windows Forwarded Events](windows-forwarded-events.md) |
 
 Microsoft security research teams have detected a wide range of social engineering campaigns using weaponized legitimate open-source software by an actor tracked as ZINC.  ZINC employed traditional social engineering tactics by initially connecting with individuals on LinkedIn, followed by communication over WhatsApp, which acted as the means of delivery for their malicious payloads. ZINC was found weaponizing a wide range of open-source software including PuTTY, KiTTY, TightVNC, Sumatra PDF Reader etc. For more technical and in-depth information about the attack, please read the [Microsoft Security blog post](https://www.microsoft.com/security/blog/2022/09/29/zinc-weaponizing-open-source-software/).This solution provides content to detect and investigate signals related to the attack in Microsoft Sentinel.

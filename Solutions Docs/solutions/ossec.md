@@ -19,6 +19,7 @@
 | **First Published** | 2022-05-19 |
 | **Solution Folder** | [OSSEC](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OSSEC) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ossec) |
+| **Popularity** | ⚪ Very Low (0%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The OSSEC solution provides the capability to ingest [OSSEC](https://www.ossec.net/) events into Microsoft Sentinel. Refer to [OSSEC documentation](https://www.ossec.net/docs/) for more information.

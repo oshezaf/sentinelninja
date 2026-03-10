@@ -19,6 +19,7 @@
 | **First Published** | 2023-07-12 |
 | **Solution Folder** | [Cisco Meraki Events via REST API](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Meraki%20Events%20via%20REST%20API) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ciscomerakinativepoller) |
+| **Popularity** | 🔵 Medium (79%) |
 
 The Cisco Meraki Events via REST API solution for Microsoft Sentinel enables you to easily ingest the following events from [Cisco Meraki MX security appliance](https://meraki.cisco.com/products/security-sd-wan/) to Microsoft Sentinel using Cisco Meraki API:
  1. [Organization Appliance Security Events](https://developer.cisco.com/meraki/api-latest/#!get-organization-appliance-security-events) 

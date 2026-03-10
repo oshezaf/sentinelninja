@@ -1,4 +1,6 @@
-# ForescoutHostPropertyMonitor
+# Forescout eyeExtend for Microsoft Sentinel
+
+*Solution: ForescoutHostPropertyMonitor*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/forescout-logo.svg" alt="ForescoutHostPropertyMonitor Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-06-28 |
 | **Solution Folder** | [ForescoutHostPropertyMonitor](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ForescoutHostPropertyMonitor) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/forescout.azure-sentinel-solution-forescout) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 Forescout Host Property Monitor offers host property analysis, incident generation and action dispatching for hosts managed by Forescout Continuum platform.
 

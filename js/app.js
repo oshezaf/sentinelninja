@@ -85,7 +85,8 @@ $(document).ready(function() {
             order: [[1, 'asc']],
             columnDefs: [
                 { targets: 0, orderable: false, searchable: false, width: '40px' },
-                { targets: [6,7,8], className: 'text-center' },
+                { targets: [7,8,9], className: 'text-center' },
+                { targets: 6, className: 'text-center' },
             ]
         });
     }

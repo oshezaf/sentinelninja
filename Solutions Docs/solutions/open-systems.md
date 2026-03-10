@@ -1,4 +1,6 @@
-# Open Systems
+# Open Systems Data Connector for Microsoft Sentinel
+
+*Solution: Open Systems*
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -15,6 +17,9 @@
 | **First Published** | 2025-05-12 |
 | **Solution Folder** | [Open Systems](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Open%20Systems) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/opensystemsag1582030008223.azure-sentinel-solution-osag) |
+| **Popularity** | ⚪ Very Low (0%) |
+
+The data connector ingests log data into Microsoft Sentinel using Open Systems Logs API.
 
 ## Contents
 

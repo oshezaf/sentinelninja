@@ -1,4 +1,6 @@
-# ContinuousDiagnostics&Mitigation
+# Continuous Diagnostics& Mitigation
+
+*Solution: ContinuousDiagnostics&Mitigation*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="ContinuousDiagnostics&Mitigation Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-08-24 |
 | **Solution Folder** | [ContinuousDiagnostics&Mitigation](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContinuousDiagnostics%26Mitigation) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-continuousdiagnostics) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 This solution enables Compliance Teams, Architects, SecOps Analysts, and Consultants to gain situational awareness for cloud workload security posture. This solution is designed to augment staffing through automation, visibility, assessment, monitoring and remediation. This solution includes (1) Workbook for build/design/reporting, (1) Analytics rule for monitoring and (1) Hunting query for assessment. 
 

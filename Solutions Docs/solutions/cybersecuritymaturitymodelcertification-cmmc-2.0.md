@@ -1,4 +1,6 @@
-# CybersecurityMaturityModelCertification(CMMC)2.0
+# Cybersecurity Maturity Model Certification (CMMC) 2.0
+
+*Solution: CybersecurityMaturityModelCertification(CMMC)2.0*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="CybersecurityMaturityModelCertification(CMMC)2.0 Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-01-06 |
 | **Solution Folder** | [CybersecurityMaturityModelCertification(CMMC)2.0](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CybersecurityMaturityModelCertification%28CMMC%292.0) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-cmmcv2) |
+| **Popularity** | 🟢 High (80%) |
 
 The Microsoft Sentinel Cybersecurity Maturity Model Certification (CMMC) 2.0 solution provides a mechanism for viewing log queries aligned to CMMC 2.0 requirements across the Microsoft portfolio. This solution enables governance and compliance teams to design, build, monitor, and respond to CMMC 2.0 requirements across 25+ Microsoft products. While only Microsoft Sentinel is required to get started, the solution is enhanced with numerous Microsoft offerings. This solution enables Security Architects, Engineers, SecOps Analysts, Managers, and IT Pros to gain situational awareness visibility for the security posture of cloud workloads. There are also recommendations for selecting, designing, deploying, and configuring Microsoft offerings for alignment with respective security best practice.
 

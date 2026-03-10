@@ -1,4 +1,6 @@
-# Cribl
+# Cribl Stream Solution for Microsoft Sentinel
+
+*Solution: Cribl*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cribl-Logo.svg" alt="Cribl Logo" width="75" height="75">
 
@@ -20,6 +22,7 @@
 | **Last Updated** | 2024-09-05 |
 | **Solution Folder** | [Cribl](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cribl) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/criblinc1673975616879.microsoft-sentinel-solution-cribl) |
+| **Popularity** | 🔵 Medium (57%) |
 
 Cribl is a vendor neutral, purpose-built processing engine for data security and IT operations focused on centralized parsing and processing of event data.
 

@@ -1,4 +1,6 @@
-# IoTOTThreatMonitoringwithDefenderforIoT
+# Microsoft Defender for IoT solution for Microsoft Sentinel
+
+*Solution: IoTOTThreatMonitoringwithDefenderforIoT*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="IoTOTThreatMonitoringwithDefenderforIoT Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2021-10-26 |
 | **Solution Folder** | [IoTOTThreatMonitoringwithDefenderforIoT](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IoTOTThreatMonitoringwithDefenderforIoT) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-unifiedmicrosoftsocforot) |
+| **Popularity** | 🔵 Medium (78%) |
 
 The [Microsoft Defender for IoT](https://azure.microsoft.com/services/iot-defender/) solution for Microsoft Sentinel allows you to ingest Security alerts reported in Microsoft Defender for IoT on assessing your Internet of Things (IoT)/Operational Technology (OT) infrastructure. 
 

@@ -19,6 +19,7 @@
 | **First Published** | 2022-05-16 |
 | **Solution Folder** | [Salesforce Service Cloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-salesforceservicecloud) |
+| **Popularity** | 🟢 High (93%) |
 
 The [Salesforce Service Cloud](https://www.salesforce.com/in/products/service-cloud/overview/) solution for Microsoft Sentinel enables you to ingest Service Cloud events into Microsoft Sentinel.
   

@@ -1,4 +1,6 @@
-# Vectra AI Stream
+# Vectra AI Stream for Microsoft Sentinel
+
+*Solution: Vectra AI Stream*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AIVectraDetect.svg" alt="Vectra AI Stream Logo" width="75" height="75">
 
@@ -20,6 +22,7 @@
 | **Last Updated** | 2024-05-02 |
 | **Solution Folder** | [Vectra AI Stream](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20AI%20Stream) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/vectraaiinc.vectra_sentinel_solution) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 **Note:** Please refer to the following before installing the solution: 
 

@@ -1,4 +1,6 @@
-# Microsoft PowerBI
+# Microsoft PowerBI solution for Sentinel
+
+*Solution: Microsoft PowerBI*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/PowerBILogo.svg" alt="Microsoft PowerBI Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-05-23 |
 | **Solution Folder** | [Microsoft PowerBI](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20PowerBI) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-microsoftpowerbi) |
+| **Popularity** | 🟢 High (95%) |
 
 The [Microsoft PowerBI](https://docs.microsoft.com/power-bi/fundamentals/power-bi-overview) solution enables you to track user activities in your PowerBI environment. You can filter the audit data by date range, user, dashboard, report, dataset, and activity type.
 

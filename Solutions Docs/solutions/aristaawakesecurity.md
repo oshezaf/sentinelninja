@@ -1,4 +1,6 @@
-# AristaAwakeSecurity
+# Arista NDR for Microsoft Sentinel
+
+*Solution: AristaAwakeSecurity*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AristaAwakeSecurity.svg" alt="AristaAwakeSecurity Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2021-10-18 |
 | **Solution Folder** | [AristaAwakeSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AristaAwakeSecurity) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/arista-networks.awake-security) |
+| **Popularity** | ⚪ Very Low (0%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The [Awake Security Arista Networks solution](https://awakesecurity.com/) for Microsoft Sentinel enable users to send detection model matches from the Awake Security Platform to Microsoft Sentinel.

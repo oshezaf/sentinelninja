@@ -1,4 +1,6 @@
-# AIShield AI Security Monitoring
+# AIShield - AI Security Monitoring for Microsoft Sentinel
+
+*Solution: AIShield AI Security Monitoring*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/AIShield%20AI%20Security%20Monitoring/Data%20Connectors/Logo/AIShield_Logo.svg" alt="AIShield AI Security Monitoring Logo" width="75" height="75">
 
@@ -20,6 +22,7 @@
 | **Last Updated** | 2025-03-06 |
 | **Solution Folder** | [AIShield AI Security Monitoring](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AIShield%20AI%20Security%20Monitoring) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rbei.bgsw_aishield_sentinel) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 The [AIShield AI Security Monitoring](https://www.boschaishield.com/) solution allows users to connect with AIShield custom defense mechanism logs with Microsoft Sentinel. It gives users more insight into their organization's AI assets security posturing and improves their AI systems security operation capabilities. AIShield.GuArdIan analyzes the LLM generated content to identify and mitigate harmful content, safeguarding against legal, policy, role based, and usage based violations.
 

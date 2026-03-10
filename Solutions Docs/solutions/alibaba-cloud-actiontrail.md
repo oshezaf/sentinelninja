@@ -1,4 +1,6 @@
-# Alibaba Cloud ActionTrail
+# Alibaba Cloud Action Trail
+
+*Solution: Alibaba Cloud ActionTrail*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="Alibaba Cloud ActionTrail Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2025-07-03 |
 | **Solution Folder** | [Alibaba Cloud ActionTrail](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alibaba%20Cloud%20ActionTrail) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-alibabacloud-actiontrail) |
+| **Popularity** | ⚪ Very Low (5%) |
 
 The Microsoft Sentinel solution for Alibaba Cloud ActionTrail Logs enables seamless integration of Alibaba Cloud audit data into Sentinel. It empowers security teams to monitor user activity, detect threats, and investigate incidents across Alibaba Cloud environments—enhancing visibility and security posture in multi-cloud deployments.
 

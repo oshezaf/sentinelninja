@@ -1,4 +1,6 @@
-# BlinkOps
+# BlinkOps and Microsoft Sentinel
+
+*Solution: BlinkOps*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/blinkops.svg" alt="BlinkOps Logo" width="75" height="75">
 
@@ -19,6 +21,9 @@
 | **First Published** | 2025-05-05 |
 | **Solution Folder** | [BlinkOps](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BlinkOps) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/blinkoperations1709924858838.azure-sentinel-blink_automation) |
+| **Popularity** | 🟡 Low (35%) |
+
+BlinkOps integrates with Sentinel to automate incident response and streamline security operations.
 
 ## Data Connectors
 

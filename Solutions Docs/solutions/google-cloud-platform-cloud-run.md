@@ -19,6 +19,7 @@
 | **First Published** | 2021-07-30 |
 | **Solution Folder** | [Google Cloud Platform Cloud Run](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Cloud%20Run) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gcpcloudrun) |
+| **Popularity** | 🟡 Low (46%) |
 
 The GCP Cloud Run solution provides the capability to ingest [GCP Run logs](https://cloud.google.com/run/docs/audit-logging#google.cloud.run.v2.Executions) into Microsoft Sentinel using the GCP Logging API. Refer to [GCP Cloud Run API documentation](https://cloud.google.com/run/docs/audit-logging#google.cloud.run.v2.Executions) for more information.
   

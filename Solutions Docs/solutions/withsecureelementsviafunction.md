@@ -1,4 +1,6 @@
-# WithSecureElementsViaFunction
+# WithSecure™ Elements via Function for Microsoft Sentinel
+
+*Solution: WithSecureElementsViaFunction*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/WithSecure.svg" alt="WithSecureElementsViaFunction Logo" width="75" height="75">
 
@@ -20,6 +22,7 @@
 | **Last Updated** | 2025-04-25 |
 | **Solution Folder** | [WithSecureElementsViaFunction](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WithSecureElementsViaFunction) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/withsecurecorporation.sentinel-solution-withsecure-via-function) |
+| **Popularity** | 🟡 Low (28%) |
 
 WithSecure Elements is the unified cloud-based cyber security platform designed to reduce risk, complexity, and inefficiency.
 Elevate your security from your endpoints to your cloud applications. Arm yourself against every type of cyber threat, from targeted attacks to zero-day ransomware.

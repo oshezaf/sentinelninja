@@ -1,4 +1,6 @@
-# SlackAudit
+# Slack Audit Solution
+
+*Solution: SlackAudit*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/SlackAudit/Data%20Connectors/Logo/slacklogo.svg" alt="SlackAudit Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2021-03-24 |
 | **Solution Folder** | [SlackAudit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-slackaudit) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 The [Slack](https://slack.com/intl/en-in/) Audit solution provides the capability to ingest [Slack Audit Records](https://api.slack.com/admins/audit-logs) events into Microsoft Sentinel through the REST API. Refer to [API documentation](https://api.slack.com/admins/audit-logs-call) for more information.
  

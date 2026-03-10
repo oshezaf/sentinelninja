@@ -1,4 +1,6 @@
-# Azure Data Lake Storage Gen1
+# Azure Data Lake Storage Gen1 solution for Sentinel
+
+*Solution: Azure Data Lake Storage Gen1*
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -15,6 +17,9 @@
 | **First Published** | 2022-06-24 |
 | **Solution Folder** | [Azure Data Lake Storage Gen1](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Data%20Lake%20Storage%20Gen1) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-datalakestoragegen1) |
+| **Popularity** | 🟢 High (95%) |
+
+Azure Data Lake Storage Gen1 solution for Sentinel
 
 ## Data Connectors
 

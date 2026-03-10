@@ -1,4 +1,6 @@
-# Illusive Platform
+# Illusive Attack Surface Analysis and Incident Logs for Microsoft Sentinel
+
+*Solution: Illusive Platform*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/illusiveAttackManagementSystem.svg" alt="Illusive Platform Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-05-25 |
 | **Solution Folder** | [Illusive Platform](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Platform) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/illusivenetworks.illusive_platform_mss) |
+| **Popularity** | ⚪ Very Low (0%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The Illusive Platform solution for Microsoft Sentinel enables you to ingest Illusive Platform’s attack surface analysis data and incident logs into Microsoft Sentinel and view this information in dedicated dashboards that offer insight into your organization's attack surface risk (ASM Dashboard) and track unauthorized lateral movement in your organization's network (ADS Dashboard).

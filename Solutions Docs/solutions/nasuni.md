@@ -1,4 +1,6 @@
-# Nasuni
+# Nasuni for Microsoft Sentinel
+
+*Solution: Nasuni*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Nasuni/Data%20Connectors/Logo/Nasuni.svg" alt="Nasuni Logo" width="75" height="75">
 
@@ -20,6 +22,7 @@
 | **Last Updated** | 2023-07-07 |
 | **Solution Folder** | [Nasuni](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Nasuni) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/nasunicorporation.nasuni-sentinel) |
+| **Popularity** | ⚪ Very Low (0%) |
 | **Pre-requisites** | [Syslog](syslog.md) |
 
 The [Nasuni](https://www.nasuni.com) solution for Microsoft Sentinel allows you to analyze Nasuni audit events and Notifications collected via Syslog. It includes analytics rules to automatically generate Incidents when a ransomware attack is detected and perform appropriate entity mapping. 

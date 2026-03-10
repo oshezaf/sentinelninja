@@ -1,4 +1,6 @@
-# CiscoWSA
+# Cisco WSA
+
+*Solution: CiscoWSA*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cisco-logo-72px.svg" alt="CiscoWSA Logo" width="75" height="75">
 
@@ -19,6 +21,8 @@
 | **First Published** | 2021-06-29 |
 | **Solution Folder** | [CiscoWSA](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoWSA) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ciscowsa) |
+| **Popularity** | ⚪ Very Low (0%) |
+| **Rating** | ★★★☆☆ 3.0/5 (1 ratings) |
 | **Pre-requisites** | [Syslog](syslog.md) |
 
 The [Cisco Web Security Appliance (WSA)](https://www.cisco.com/c/en/us/products/security/web-security-appliance/index.html) solution provides the capability to ingest [Cisco WSA Access Logs](https://www.cisco.com/c/en/us/td/docs/security/wsa/wsa_14-0/User-Guide/b_WSA_UserGuide_14_0/b_WSA_UserGuide_11_7_chapter_010101.html) into Microsoft Sentinel.

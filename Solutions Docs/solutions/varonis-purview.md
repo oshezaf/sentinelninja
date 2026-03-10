@@ -1,4 +1,6 @@
-# Varonis Purview
+# Varonis for Purview DSPM
+
+*Solution: Varonis Purview*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/VaronisLogo.svg" alt="Varonis Purview Logo" width="75" height="75">
 
@@ -20,6 +22,7 @@
 | **Last Updated** | 2025-10-01 |
 | **Solution Folder** | [Varonis Purview](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Varonis%20Purview) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/varonis.azure-sentinel-solution-varonispurview) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 Varonis Data Security SaaS Platform: Automatically find your critical data, remediate risk, and stop threats — before your data can be compromised.
 

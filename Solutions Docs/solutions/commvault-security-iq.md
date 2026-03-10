@@ -1,4 +1,6 @@
-# Commvault Security IQ
+# Commvault Cloud for Sentinel
+
+*Solution: Commvault Security IQ*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Commvault-Logo.svg" alt="Commvault Security IQ Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2023-08-17 |
 | **Solution Folder** | [Commvault Security IQ](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Commvault%20Security%20IQ) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/commvault.microsoft-sentinel-solution-commvaultsecurityiq) |
+| **Popularity** | ⚪ Very Low (8%) |
 
 This Microsoft Sentinel integration enables Commvault users to ingest alerts and other data into their Microsoft Sentinel instance. With Analytic Rules, Microsoft Sentinel can automatically create Microsoft Sentinel incidents.
 

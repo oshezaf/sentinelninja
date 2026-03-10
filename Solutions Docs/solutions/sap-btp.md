@@ -1,4 +1,6 @@
-# SAP BTP
+# Sentinel Solution for SAP® BTP
+
+*Solution: SAP BTP*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SAPBTP.svg" alt="SAP BTP Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2023-04-04 |
 | **Solution Folder** | [SAP BTP](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20BTP) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sentinel4sap.sap_btp_sentinel_solution) |
+| **Popularity** | 🔵 Medium (60%) |
 
 SAP® Business Technology Platform (BTP) is an infrastructure that allows SAP® customers to build no-code/low-code custom apps integrating to SAP® and third-party applications and datasets in order to achieve better business value by streamlining user's activities and interactions with the organization's business applications.
 

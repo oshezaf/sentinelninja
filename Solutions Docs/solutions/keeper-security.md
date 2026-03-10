@@ -1,4 +1,6 @@
-# Keeper Security
+# Keeper Security SIEM integration with Microsoft Sentinel
+
+*Solution: Keeper Security*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/keeper_security.svg" alt="Keeper Security Logo" width="75" height="75">
 
@@ -20,6 +22,7 @@
 | **Last Updated** | 2025-06-03 |
 | **Solution Folder** | [Keeper Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Keeper%20Security) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/keepersecurity.keeper-security-integration) |
+| **Popularity** | 🟢 High (89%) |
 
 The [Keeper Security](https://keepersecurity.com/) solution for Microsoft Sentinel enables you to ingest [Keeper Security](https://keepersecurity.com/) forwarded into Microsoft Sentinel using the Microsoft Sentinel Analytics Workspace.
 

@@ -1,4 +1,6 @@
-# ShadowByte Aria
+# Shadowbyte's Threat Intelligence for Sentinel
+
+*Solution: ShadowByte Aria*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/aria-logo.svg" alt="ShadowByte Aria Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2021-12-24 |
 | **Solution Folder** | [ShadowByte Aria](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ShadowByte%20Aria) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/shadowbyte1641237427416.ariasent1) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 The [Shadowbytes ARIA Threat Intelligence](https://shadowbyte.com/products/aria/) solution allows you to easily connect your Shadowbytes ARIA Threat Intelligence logs with Microsoft Sentinel.
 

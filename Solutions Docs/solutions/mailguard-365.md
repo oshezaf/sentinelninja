@@ -1,4 +1,6 @@
-# MailGuard 365
+# MailGuard 365 for Microsoft Sentinel
+
+*Solution: MailGuard 365*
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -16,6 +18,9 @@
 | **Last Updated** | 2023-06-08 |
 | **Solution Folder** | [MailGuard 365](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MailGuard%20365) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/mailguardptylimited.microsoft-sentinel-solution-mailguard365) |
+| **Popularity** | ⚪ Very Low (0%) |
+
+Integrate MailGuard 365 with Microsoft Sentinel to accelerate threat detection and response
 
 ## Contents
 

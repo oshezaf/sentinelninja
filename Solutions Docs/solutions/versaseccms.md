@@ -1,4 +1,6 @@
-# VersasecCMS
+# vSEC:CMS Sentinel
+
+*Solution: VersasecCMS*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/versasec-logo.svg" alt="VersasecCMS Logo" width="75" height="75">
 
@@ -18,6 +20,7 @@
 | **Author** | Versasec AB - info@versasec.com |
 | **Solution Folder** | [VersasecCMS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VersasecCMS) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/versasec.azure-sentinel-solution-versaseccms) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 Ingests Versasec Cms system logs into Microsoft Sentinel using a REST API poller (CCF).
 

@@ -19,6 +19,7 @@
 | **First Published** | 2022-09-29 |
 | **Solution Folder** | [URLhaus](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/URLhaus) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-urlhaus) |
+| **Popularity** | 🟡 Low (43%) |
 
 The URLhaus solution for Microsoft  Sentinel allows enriching incidents with additional information about file hashes, Hostname and URL using feeds and lists from URLhaus.Beside the APIs documented on URLhaus that serves various feeds and lists, abuse.ch also offers a dedicated API that allows to gather information on a specific URL, file hash or host from URLhaus through an automated way. It is also possible to retrieve a payload (malware sample) URLhaus has collected from malware URLs it tracks.
 

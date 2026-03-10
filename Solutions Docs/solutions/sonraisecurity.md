@@ -1,4 +1,6 @@
-# SonraiSecurity
+# Sonrai Security for Microsoft Sentinel
+
+*Solution: SonraiSecurity*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/SonraiSecurity/Workbooks/Images/Logo/Sonrai.svg" alt="SonraiSecurity Logo" width="75" height="75">
 
@@ -18,6 +20,8 @@
 | **First Published** | 2021-10-18 |
 | **Solution Folder** | [SonraiSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SonraiSecurity) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sonraisecurityllc1584373214489.sonrai_sentinel_offer) |
+| **Popularity** | ⚪ Very Low (0%) |
+| **Rating** | ★★★★★ 4.7/5 (25 ratings) |
 
 The [Sonrai Security](https://sonraisecurity.com/) solution provides the capability to ingest Sonrai tickets into Microsoft Sentinel through the REST API.
  

@@ -1,4 +1,6 @@
-# Infoblox
+# Infoblox App for Microsoft Sentinel
+
+*Solution: Infoblox*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/infoblox_logo.svg" alt="Infoblox Logo" width="75" height="75">
 
@@ -20,6 +22,7 @@
 | **Last Updated** | 2024-07-15 |
 | **Solution Folder** | [Infoblox](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/infoblox.infoblox-app-for-microsoft-sentinel) |
+| **Popularity** | 🟡 Low (42%) |
 
 The Infoblox Solution for Microsoft Sentinel is designed to enhance the capabilities of Security Operations Centers (SOC) by integrating actionable intelligence and contextual network data derived from DNS data into Microsoft Sentinel. This integration provides SOC analysts with the tools they need to quickly identify and respond to potential threats such as malware and data exfiltration, improving overall security posture. With seamless configuration and intuitive dashboards, the solution ensures that critical security events are monitored and correlated, offering actionable insights that streamline threat detection and response. 
 SOC analysts will benefit from the app’s ability to provide contextual network data, including user and device attribution, through various lookups and visualizations. By leveraging unique DNS-based threat intelligence, audit logs and other data sources, analysts can conduct faster and more effective investigations. The solution’s functionalities, such as SOC Insights Overview and DNS Events, empower analysts to reduce alert fatigue by focusing on correlated events, ultimately leading to improved efficiency and protection against emerging threats.

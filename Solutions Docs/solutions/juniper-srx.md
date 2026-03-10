@@ -19,6 +19,7 @@
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [Juniper SRX](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Juniper%20SRX) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-junipersrx) |
+| **Popularity** | 🟢 High (82%) |
 | **Pre-requisites** | [Syslog](syslog.md) |
 
 The [Juniper SRX](https://www.juniper.net/us/en/products/security/srx-series.html) solution for Microsoft Sentinel enables you to ingest Juniper SRX traffic and system logs into Microsoft Sentinel.

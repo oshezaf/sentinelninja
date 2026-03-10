@@ -1,4 +1,6 @@
-# Illumio Insight
+# Illumio for Microsoft Sentinel Data Lake Connector
+
+*Solution: Illumio Insight*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="Illumio Insight Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2025-08-10 |
 | **Solution Folder** | [Illumio Insight](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illumio%20Insight) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/illumioinc1629822633689.azure-sentinel-solution-illumioinsight) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 The Illumio Insights data connector allows ingesting logs from the Illumio API into Microsoft Sentinel. The data connector is built on Microsoft Sentinel Codeless Connector Platform. It uses the Illumio API to fetch logs and it supports DCR-based ingestion time transformations that parses the received security data into a custom table so that queries don't need to parse it again, thus resulting in better performance.
 

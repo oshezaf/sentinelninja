@@ -1,4 +1,6 @@
-# Microsoft 365
+# Microsoft 365 solution for Sentinel
+
+*Solution: Microsoft 365*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/office365_logo.svg" alt="Microsoft 365 Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-05-23 |
 | **Solution Folder** | [Microsoft 365](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20365) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-office365) |
+| **Popularity** | 🟢 High (90%) |
 
 The Microsoft 365 solution for Microsoft Sentinel enables you to ingest operational logs from Microsoft 365 (formerly, Office 365) to gain insights into user and admin activity across your collaboration platforms such as Teams, SharePoint and Exchange.
   

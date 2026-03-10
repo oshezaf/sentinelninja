@@ -1,4 +1,6 @@
-# Quokka
+# Quokka Q-scout for Microsoft Sentinel
+
+*Solution: Quokka*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/quokka_logo.svg" alt="Quokka Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2025-10-30 |
 | **Solution Folder** | [Quokka](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Quokka) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/quokka.azure-sentinel-solution-quokka) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 The Qscout CCF data connector ingest app events logs from Quokka Qscout platform
 

@@ -1,4 +1,6 @@
-# AzureDevOpsAuditing
+# Azure DevOps Auditing
+
+*Solution: AzureDevOpsAuditing*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AzureDevOps.svg" alt="AzureDevOpsAuditing Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-09-20 |
 | **Solution Folder** | [AzureDevOpsAuditing](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AzureDevOpsAuditing) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azuredevopsauditing) |
+| **Popularity** | 🟢 High (88%) |
 
 The [Azure DevOps](https://azure.microsoft.com/products/devops/) Auditing solution for Microsoft Sentinel allows monitoring Azure DevOps [audit events](https://docs.microsoft.com/azure/devops/organizations/audit/azure-devops-auditing?view=azure-devops&tabs=preview-page#review-audit-log) to enable detection of malicious and/or unauthorized access and modification in the repository or pipelines. <p><span style='color:red; font-weight:bold;'>NOTE</span>: Microsoft recommends installation of Azure DevOps Audit Logs (Preview) (via Codeless Connector Platform). This connector is build on the Codeless Connector Platform (CCP), which uses the Log Ingestion API, which replaces ingestion via the <a href='https://learn.microsoft.com/en-us/azure/azure-monitor/logs/custom-logs-migrate' style='color:#1890F1;'>deprecated HTTP Data Collector API</a>. CCP-based data connectors also support <a href='https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/data-collection-rule-overview' style='color:#1890F1;'>Data Collection Rules</a> (DCRs) offering transformations and enrichment.</p> 
 

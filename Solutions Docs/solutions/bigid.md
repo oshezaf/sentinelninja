@@ -1,4 +1,6 @@
-# BigID
+# Azure Sentinel Integrations for Purview DSPM
+
+*Solution: BigID*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/bigid.svg" alt="BigID Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2025-10-07 |
 | **Solution Folder** | [BigID](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BigID) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/big-id.azure-sentinel-solution-bigid) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 The BigID solution for Microsoft Sentinel enables you to ingest BigID DSPM cases and affected objects into Microsoft Sentinel.
 

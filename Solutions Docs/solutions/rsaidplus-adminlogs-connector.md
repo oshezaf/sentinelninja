@@ -1,4 +1,6 @@
-# RSAIDPlus_AdminLogs_Connector
+# RSA ID Plus Admin Logs Connector
+
+*Solution: RSAIDPlus_AdminLogs_Connector*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/RSA_IDPlus.svg" alt="RSAIDPlus_AdminLogs_Connector Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2025-10-14 |
 | **Solution Folder** | [RSAIDPlus_AdminLogs_Connector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RSAIDPlus_AdminLogs_Connector) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rsasecurity1687281258544.azure-sentinel-solution-rsa_id_plus_admin_log) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 The RSA ID Plus Admin Logs Data Connector enables seamless integration between RSA ID Plus and Microsoft Sentinel. This connector ingests Admin Events logs from RSA ID Plus Cloud Administration Console using the RSA Admin API and stores them securely in your Azure Log Analytics (ALA) workspace. These logs can then be used for monitoring, analysis, and threat detection within Microsoft Sentinel.
 

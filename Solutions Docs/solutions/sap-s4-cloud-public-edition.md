@@ -1,4 +1,6 @@
-# SAP S4 Cloud Public Edition
+# SAP S/4HANA Public Cloud - Microsoft Sentinel Integration
+
+*Solution: SAP S4 Cloud Public Edition*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SAPBTP.svg" alt="SAP S4 Cloud Public Edition Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2025-09-12 |
 | **Solution Folder** | [SAP S4 Cloud Public Edition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20S4%20Cloud%20Public%20Edition) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sap_jasondau.azure-sentinel-solution-s4hana-public) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 SAP S/4HANA Cloud is a next-generation enterprise resource planning (ERP) suite designed to help businesses run more efficiently and effectively.
 

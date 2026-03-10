@@ -1,4 +1,6 @@
-# Proofpoint On demand(POD) Email Security
+# Proofpoint On Demand (POD) Email Security for Sentinel
+
+*Solution: Proofpoint On demand(POD) Email Security*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/PFPTLogo.svg" alt="Proofpoint On demand(POD) Email Security Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2021-03-31 |
 | **Solution Folder** | [Proofpoint On demand(POD) Email Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Proofpoint%20On%20demand%28POD%29%20Email%20Security) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/proofpointinc1600438591120.azure-sentinel-proofpointpod) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 The [Proofpoint on Demand Email Security](https://www.proofpoint.com/us/products/email-security-and-protection/email-protection) solution for Microsoft Sentinel enables you to ingest Proofpoint on Demand Email Protection data and activity logs for monitoring email activity, events and threats in your organization.
   

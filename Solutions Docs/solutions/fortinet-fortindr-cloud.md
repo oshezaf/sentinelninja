@@ -1,4 +1,6 @@
-# Fortinet FortiNDR Cloud
+# Fortinet FortiNDR Cloud for Microsoft Sentinel
+
+*Solution: Fortinet FortiNDR Cloud*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/fortinet_logo.svg" alt="Fortinet FortiNDR Cloud Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2024-01-15 |
 | **Solution Folder** | [Fortinet FortiNDR Cloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiNDR%20Cloud) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/fortinet.fortindrcloud-sentinel) |
+| **Popularity** | 🔵 Medium (62%) |
 
 The [Fortinet FortiNDR Cloud](https://docs.fortinet.com/product/fortindr-cloud) solution for Microsoft Sentinel provides the capability to ingest Fortinet FortiNDR Cloud events into Microsoft Sentinel. For questions about Fortinet FortiNDR Cloud, please contact Fortinet at [fnc-sentinel@fortinet.com](mailto:fnc-sentinel@fortinet.com).
 

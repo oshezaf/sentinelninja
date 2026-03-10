@@ -19,6 +19,7 @@
 | **First Published** | 2021-05-02 |
 | **Solution Folder** | [Barracuda CloudGen Firewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Barracuda%20CloudGen%20Firewall) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftsentinelcommunity.azure-sentinel-solution-barracudacloudgenfirewall) |
+| **Popularity** | 🟢 High (85%) |
 | **Pre-requisites** | [Syslog](syslog.md) |
 
 The [Barracuda CloudGen Firewall ](https://www.barracuda.com/products/cloudgenfirewall) (CGFW) Solution for Microsoft Sentinel allows you to easily connect your Barracuda CGFW syslogs with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation. This gives you more insight into your organization's network and improves your security operation capabilities.

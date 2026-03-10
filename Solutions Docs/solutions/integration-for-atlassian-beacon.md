@@ -1,4 +1,6 @@
-# Integration for Atlassian Beacon
+# Atlassian Beacon solution for Microsoft Sentinel
+
+*Solution: Integration for Atlassian Beacon*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Integration for Atlassian Beacon Logo" width="75" height="75">
 
@@ -19,6 +21,8 @@
 | **First Published** | 2023-09-22 |
 | **Solution Folder** | [Integration for Atlassian Beacon](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Integration%20for%20Atlassian%20Beacon) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/defendlimited1682894612656.microsoft-sentinel-solution-atlassian-beacon) |
+| **Popularity** | ⚪ Very Low (0%) |
+| **Rating** | ★★★★★ 5.0/5 (1 ratings) |
 
 The [Atlassian Beacon](https://www.atlassian.com/software/beacon) solution provides the capability to ingest Atlassian Beacon Alerts into Microsoft Sentinel.
 

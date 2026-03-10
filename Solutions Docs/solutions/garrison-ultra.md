@@ -1,4 +1,6 @@
-# Garrison ULTRA
+# Garrison ULTRA for Microsoft Sentinel
+
+*Solution: Garrison ULTRA*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Garrison_Logomark.svg" alt="Garrison ULTRA Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2024-10-04 |
 | **Solution Folder** | [Garrison ULTRA](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Garrison%20ULTRA) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/garrisontechnologyltd1725375696148.microsoft-sentinel-solution-garrison-ultra) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 The [Garrison ULTRA](https://www.garrison.com/garrison-ultra-cloud-platform) solution allows you ingest logs from Garrison ULTRA into Microsoft Sentinel.
 

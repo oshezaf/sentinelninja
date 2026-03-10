@@ -1,4 +1,6 @@
-# Azure Cognitive Search
+# Azure Cognitive Search solution for Sentinel
+
+*Solution: Azure Cognitive Search*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Azure Cognitive Search Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-06-28 |
 | **Solution Folder** | [Azure Cognitive Search](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Cognitive%20Search) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azurecognitivesearch) |
+| **Popularity** | 🟢 High (96%) |
 
 The [Azure Cognitive Search](https://docs.microsoft.com/azure/search/search-what-is-azure-search) solution for Microsoft Sentinel enables you to ingest Azure Cognitive Search diagnostics logs using Diagnostic Settings into Microsoft Sentinel. 
 

@@ -1,4 +1,6 @@
-# GoogleCloudPlatformDNS
+# Google Cloud Platform DNS Solution
+
+*Solution: GoogleCloudPlatformDNS*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/google_logo.svg" alt="GoogleCloudPlatformDNS Logo" width="75" height="75">
 
@@ -19,6 +21,8 @@
 | **First Published** | 2022-07-07 |
 | **Solution Folder** | [GoogleCloudPlatformDNS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformDNS) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gcpdns) |
+| **Popularity** | ⚪ Very Low (0%) |
+| **Rating** | ★☆☆☆☆ 1.0/5 (1 ratings) |
 
 The Google Cloud Platform DNS solution  provides the capability to ingest [Cloud DNS query logs](https://cloud.google.com/dns/docs/monitoring#using_logging) and [Cloud DNS audit logs](https://cloud.google.com/dns/docs/audit-logging) into Microsoft Sentinel using the [GCP Logging](https://cloud.google.com/logging/docs/api) API. Refer to GCP Logging [API documentation](https://cloud.google.com/logging/docs/api) for more information.
 

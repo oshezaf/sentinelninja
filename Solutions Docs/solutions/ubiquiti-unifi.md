@@ -19,6 +19,8 @@
 | **First Published** | 2022-06-01 |
 | **Solution Folder** | [Ubiquiti UniFi](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Ubiquiti%20UniFi) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ubiquitiunifi) |
+| **Popularity** | 🟢 High (94%) |
+| **Rating** | ★☆☆☆☆ 1.0/5 (1 ratings) |
 | **Pre-requisites** | [CustomLogsAma](customlogsama.md) |
 
 The [Ubiquiti UniFi](https://www.ui.com/) solution provides the capability to ingest [Ubiquiti UniFi firewall, dns, ssh, AP events](https://help.ui.com/hc/articles/204959834-UniFi-How-to-View-Log-Files) into Microsoft Sentinel.

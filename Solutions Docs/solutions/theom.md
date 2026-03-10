@@ -1,4 +1,6 @@
-# Theom
+# Theom for Microsoft Sentinel Solution - Data Cloud and Data Lakehouse Attack Detection
+
+*Solution: Theom*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/theom-logo.svg" alt="Theom Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-11-04 |
 | **Solution Folder** | [Theom](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Theom) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/theominc1667512729960.theom_sentinel) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 [Theom](https://www.theom.ai/) for Microsoft Sentinel helps you prevent data breaches in the cloud by enabling your Microsoft Sentinel instance to receive critical alerts on data security and access from your Theom environment.
 

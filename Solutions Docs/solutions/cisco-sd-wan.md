@@ -1,4 +1,6 @@
-# Cisco SD-WAN
+# Cisco Catalyst SD-WAN Sentinel Application
+
+*Solution: Cisco SD-WAN*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cisco-logo-72px.svg" alt="Cisco SD-WAN Logo" width="75" height="75">
 
@@ -20,6 +22,7 @@
 | **Last Updated** | 2024-06-01 |
 | **Solution Folder** | [Cisco SD-WAN](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20SD-WAN) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cisco.cisco-catalyst-sdwan-sentinel) |
+| **Popularity** | 🔵 Medium (53%) |
 
 The [Cisco SD-WAN](https://www.cisco.com/c/en_in/solutions/enterprise-networks/sd-wan/index.html) solution for Microsoft Sentinel enables you to ingest Syslog and Netflow logs into Microsoft Sentinel, providing insight into network threats and vulnerabilities.
  

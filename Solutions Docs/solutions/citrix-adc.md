@@ -19,6 +19,8 @@
 | **First Published** | 2022-06-02 |
 | **Solution Folder** | [Citrix ADC](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20ADC) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-citrixadc) |
+| **Popularity** | 🟢 High (93%) |
+| **Rating** | ★★★★★ 4.6/5 (85 ratings) |
 | **Pre-requisites** | [Syslog](syslog.md) |
 
 The [Citrix ADC](https://www.citrix.com/products/citrix-adc/) (formerly NetScaler) enables you to ingest Citrix ADC logs into Microsoft Sentinel. Refer the [Citrix ADC log collection guide](https://support.citrix.com/article/CTX227560) for more details.

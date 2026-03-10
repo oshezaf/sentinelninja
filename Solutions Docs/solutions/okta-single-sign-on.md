@@ -1,4 +1,6 @@
-# Okta Single Sign-On
+# Okta Single Sign-On Solution
+
+*Solution: Okta Single Sign-On*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/okta_logo.svg" alt="Okta Single Sign-On Logo" width="75" height="75">
 
@@ -19,6 +21,8 @@
 | **First Published** | 2022-03-24 |
 | **Solution Folder** | [Okta Single Sign-On](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-okta) |
+| **Popularity** | 🟢 High (88%) |
+| **Rating** | ★☆☆☆☆ 1.0/5 (1 ratings) |
 
 The [Okta Single Sign-On (SSO)](https://www.okta.com/products/single-sign-on) solution for Microsoft Sentinel provides the capability to ingest [audit and event logs](https://www.okta.com/integrate/documentation/isv-syslog-references/) into Microsoft Sentinel using the Okta API.
   

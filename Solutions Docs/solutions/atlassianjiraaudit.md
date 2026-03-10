@@ -1,4 +1,6 @@
-# AtlassianJiraAudit
+# Atlassian Jira Audit
+
+*Solution: AtlassianJiraAudit*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/atlassian.svg" alt="AtlassianJiraAudit Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-01-10 |
 | **Solution Folder** | [AtlassianJiraAudit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-atlassianjiraaudit) |
+| **Popularity** | 🔵 Medium (79%) |
 
 The [Atlassian Jira](https://www.atlassian.com/software/jira) Audit solution provides the capability to ingest [Jira Audit Records](https://support.atlassian.com/jira-cloud-administration/docs/audit-activities-in-jira-applications/) events into Microsoft Sentinel through the REST API. Refer to [API documentation](https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-audit-records/) for more information.
 

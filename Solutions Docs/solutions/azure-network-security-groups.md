@@ -1,4 +1,6 @@
-# Azure Network Security Groups
+# Azure Network Security Groups solution for Sentinel
+
+*Solution: Azure Network Security Groups*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AzureNetworkSecurityGroups.svg" alt="Azure Network Security Groups Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-05-23 |
 | **Solution Folder** | [Azure Network Security Groups](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Network%20Security%20Groups) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-networksecuritygroup) |
+| **Popularity** | 🟢 High (94%) |
 
 The [Network Security Group](https://docs.microsoft.com/azure/virtual-network/network-security-groups-overview) solution enables you to stream and ingest diagnostic logs from your Azure NSG instances for Security Monitoring in to Microsoft Sentinel using Resource Diagnostic settings. 
 

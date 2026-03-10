@@ -1,4 +1,6 @@
-# SeraphicSecurity
+# Seraphic Security connector integration package for Microsoft Sentinel
+
+*Solution: SeraphicSecurity*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/LogoSeraphicSecurity.svg" alt="SeraphicSecurity Logo" width="75" height="75">
 
@@ -20,6 +22,7 @@
 | **Last Updated** | 2023-07-31 |
 | **Solution Folder** | [SeraphicSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SeraphicSecurity) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/seraphicalgorithmsltd1616061090462.seraphic-security-sentinel) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 The Seraphic Web Security data connector provides the capability to ingest [Seraphic Web Security](https://seraphicsecurity.com/) events and alerts into Microsoft Sentinel.
 

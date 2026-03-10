@@ -1,4 +1,6 @@
-# Valence Security
+# Valence Security for Microsoft Sentinel
+
+*Solution: Valence Security*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ValenceSecurityLogo.svg" alt="Valence Security Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2023-11-20 |
 | **Solution Folder** | [Valence Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Valence%20Security) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/valencesecurityinc1673598943514.valence_sentinel_solution) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 [Valence Security](https://valencesecurity.com/) SaaS security platform: Valence is the first SaaS security company to combine SSPM and advanced remediation with business user collaboration to find and fix SaaS security risks. SaaS applications are becoming decentrally managed and more complex, which is introducing misconfiguration, identity, data, and SaaS-to-SaaS integration risks. The Valence SaaS Security Platform provides visibility and remediation capabilities for business-critical SaaS applications such as Microsoft 365, Google Workspace, Salesforce, GitHub and Slack. With Valence, security teams can empower their business to securely adopt SaaS.
 

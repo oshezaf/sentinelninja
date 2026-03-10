@@ -1,4 +1,6 @@
-# Veritas NetBackup
+# NetBackup - Microsoft Sentinel Integration
+
+*Solution: Veritas NetBackup*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Veritas NetBackup Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2023-09-25 |
 | **Solution Folder** | [Veritas NetBackup](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veritas%20NetBackup) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/veritas.veritas-sentinel) |
+| **Popularity** | 🔵 Medium (61%) |
 
 The [Veritas](https://www.veritas.com/) solution for Microsoft Sentinel allows you to analyze NetBackup audit events. The solution uses analytics rules to automatically generate incidents when an abnormal user activity is detected in NetBackup.
 

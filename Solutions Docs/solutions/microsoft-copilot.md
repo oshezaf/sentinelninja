@@ -1,4 +1,6 @@
-# Microsoft Copilot
+# Microsoft Copilot (Preview)
+
+*Solution: Microsoft Copilot*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Copilot_logo.svg" alt="Microsoft Copilot Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2025-10-01 |
 | **Solution Folder** | [Microsoft Copilot](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Copilot) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-microsoftcopilot) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 The [Microsoft Copilot](https://www.microsoft.com/en-us/microsoft-365/copilot) solution allows you to stream your Microsoft Copilot audit logs into Microsoft Sentinel in order to track your Copilot activities.
 

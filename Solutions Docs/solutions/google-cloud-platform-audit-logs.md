@@ -19,6 +19,7 @@
 | **First Published** | 2023-03-29 |
 | **Solution Folder** | [Google Cloud Platform Audit Logs](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Audit%20Logs) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gcpauditlogs-api) |
+| **Popularity** | 🔵 Medium (72%) |
 
 The Google Cloud Platform (GCP) audit logs, ingested from Microsoft Sentinel's connector, enables you to capture and track all activity that occurs in your GCP environment. These audit logs provide valuable insights for monitoring user activity, troubleshooting issues, and ensuring compliance with security regulations. They serve as a record of events that practitioners can utilize to monitor access and identify potential threats across GCP resources.
 
@@ -48,7 +49,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | [GCP Pub/Sub Audit Logs](../connectors/gcpauditlogsdefinition.md), [GCP Pub/Sub Audit Logs](../connectors/gcppub-subauditlogs.md) | Analytics, Hunting |
+| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | [GCP Pub/Sub Audit Logs](../connectors/gcppub-subauditlogs.md), [GCP Pub/Sub Audit Logs](../connectors/gcpauditlogsdefinition.md) | Analytics, Hunting |
 
 ## Content Items
 

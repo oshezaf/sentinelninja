@@ -1,4 +1,6 @@
-# HolmSecurity
+# Holm Security for Microsoft Sentinel
+
+*Solution: HolmSecurity*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="HolmSecurity Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-07-18 |
 | **Solution Folder** | [HolmSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HolmSecurity) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/holmsecurityswedenab1639511288603.holmsecurity_sc_sentinel) |
+| **Popularity** | 🔵 Medium (79%) |
 
 The [Holm Security](https://www.holmsecurity.com/) solution provides the capability to poll data from Holm Security Center into Microsoft Sentinel.
   

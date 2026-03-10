@@ -1,4 +1,6 @@
-# Rapid7InsightVM
+# InsightVM CloudAPI
+
+*Solution: Rapid7InsightVM*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Rapid7InsightVM Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2021-07-07 |
 | **Solution Folder** | [Rapid7InsightVM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Rapid7InsightVM) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-rapid7insightvm) |
+| **Popularity** | 🔵 Medium (71%) |
 
 The [Rapid7 Insight platform](https://www.rapid7.com/products/insightvm/) brings together Rapid7’s library of vulnerability research, exploit knowledge, global attacker behavior, Internet-wide scanning data, exposure analytics, and real-time reporting to provide a fully available, scalable, and efficient way to collect your vulnerability data and turn it into answers. InsightVM leverages this platform for live vulnerability and endpoint analytics.
  

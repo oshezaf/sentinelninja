@@ -1,4 +1,6 @@
-# 🚫 MimecastTIRegional
+# 🚫 Mimecast Cloud Gateway Threat Intel Regional Feed - DEPRECATED
+
+*Solution: MimecastTIRegional*
 
 > 🚫 **Deprecated:** This solution has been deprecated and replaced by a newer integration.
 
@@ -22,6 +24,7 @@
 | **Last Updated** | 2023-09-11 |
 | **Solution Folder** | [MimecastTIRegional](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MimecastTIRegional) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/mimecastnorthamerica1584469118674.azure-sentinel-solution-mimecasttiregional) |
+| **Popularity** | ⚪ Very Low (1%) |
 
 The data connector for Mimecast Intelligence for Microsoft provides regional threat intelligence curated from Mimecast’s email inspection technologies with pre-created dashboards to allow analysts to view insight into email based threats, aid in incident correlation and reduce investigation response times.  
 Mimecast products and features required: 

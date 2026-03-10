@@ -1,4 +1,6 @@
-# ReversingLabs
+# ReversingLabs Content Pack for Microsoft Sentinel
+
+*Solution: ReversingLabs*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/reversinglabs.svg" alt="ReversingLabs Logo" width="75" height="75">
 
@@ -20,6 +22,7 @@
 | **Last Updated** | 2024-07-17 |
 | **Solution Folder** | [ReversingLabs](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ReversingLabs) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/reversinglabs1597673283347.rl_offer_content_hub_aoae) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 The ReversingLabs Content Pack solution for Microsoft Sentinel includes a number of Microsoft Sentinel resources designed to automate your security operations using the power of Spectra Intelligence (formerly TitaniumCloud) and Spectra Analyze (formerly A1000) APIs.
 

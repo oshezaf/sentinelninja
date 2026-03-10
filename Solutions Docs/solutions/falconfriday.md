@@ -1,4 +1,6 @@
-# FalconFriday
+# FalconFriday free content: custom detections for Microsoft Defender XDR and Sentinel.
+
+*Solution: FalconFriday*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/falconforce_logo.svg" alt="FalconFriday Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2021-10-18 |
 | **Solution Folder** | [FalconFriday](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/FalconFriday) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/falconforcebv1623147592118.falconfriday_content) |
+| **Popularity** | ⚪ Very Low (0%) |
 
 [FalconFriday](https://github.com/FalconForceTeam/FalconFriday/blob/master/README.md) is a blog post series by FalconForce providing the community with free detection content for various attacks seen and executed in the wild by FalconForce.
 

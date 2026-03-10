@@ -1,4 +1,6 @@
-# Dragos
+# Dragos Platform integration with Microsoft Sentinel
+
+*Solution: Dragos*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Dragos.svg" alt="Dragos Logo" width="75" height="75">
 
@@ -20,6 +22,7 @@
 | **Last Updated** | 2025-01-23 |
 | **Solution Folder** | [Dragos](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dragos) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/dragosinc1734451815609.microsoft-sentinel-solution-dragos) |
+| **Popularity** | 🟡 Low (41%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The [Dragos Platform](https://www.dragos.com/) is the leading Industrial Cyber Security platform it offers a comprehensive Operational Technology (OT) cyber threat detection built by unrivaled industrial cybersecurity expertise. This solution enables Dragos Platform notification data to be viewed in Microsoft Sentinel so that security analysts are able to triage potential cyber security events occurring in their industrial environments.

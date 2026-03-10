@@ -1,4 +1,6 @@
-# Symantec Endpoint Protection
+# Symantec Endpoint Protection Solution
+
+*Solution: Symantec Endpoint Protection*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/symantec_logo.svg" alt="Symantec Endpoint Protection Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2022-07-01 |
 | **Solution Folder** | [Symantec Endpoint Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Symantec%20Endpoint%20Protection) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-symantecendpointprotection) |
+| **Popularity** | 🔵 Medium (59%) |
 | **Pre-requisites** | [Syslog](syslog.md) |
 
 The [Symantec Endpoint Protection (SEP)](https://www.broadcom.com/products/cyber-security/endpoint/end-user/enterprise) solution allows you to easily connect your SEP logs with Microsoft Sentinel.

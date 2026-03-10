@@ -1,4 +1,6 @@
-# GitLab
+# Gitlab
+
+*Solution: GitLab*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="GitLab Logo" width="75" height="75">
 
@@ -20,6 +22,7 @@
 | **Last Updated** | 2022-06-27 |
 | **Solution Folder** | [GitLab](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitLab) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gitlab) |
+| **Popularity** | 🔵 Medium (64%) |
 | **Pre-requisites** | [Syslog](syslog.md) |
 
 The [GitLab](https://about.gitlab.com/solutions/devops-platform/) solution allows you to easily connect your GitLab (GitLab Enterprise Edition - Standalone) logs into Microsoft Sentinel. This gives you more security insight into your organization's DevOps pipelines.

@@ -1,4 +1,6 @@
-# Cyfirma Cyber Intelligence
+# CYFIRMA Cyber Intelligence
+
+*Solution: Cyfirma Cyber Intelligence*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cyfirma_logo.svg" alt="Cyfirma Cyber Intelligence Logo" width="75" height="75">
 
@@ -19,6 +21,7 @@
 | **First Published** | 2025-05-15 |
 | **Solution Folder** | [Cyfirma Cyber Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Cyber%20Intelligence) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cyfirmaholdingspteltd1742879329545.azure-sentinel-solution-cyfirma-cyber-intelligence) |
+| **Popularity** | 🟡 Low (17%) |
 
 The CYFIRMA Cyber Intelligence solution integrates with Microsoft Sentinel to provide actionable intelligence on IOCs, threat actors, malicious campaigns, and malware. This integration enables security teams to detect, analyze, and respond to emerging threats by correlating external threat data with internal telemetry. By ingesting enriched threat intelligence into Sentinel, organizations gain visibility into malicious activity, track threat actor tactics, and automate defense mechanisms to mitigate risks proactively.
 
