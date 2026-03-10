@@ -18,6 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2024-07-21 |
 | **Solution Folder** | [CustomLogsAma](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CustomLogsAma) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-customlogsviaama) |
 
 Many applications log information to text or JSON files instead of standard logging services, such as Windows Event logs, Syslog or CEF. The Custom Logs solution allows you to collect events from files on both Windows and Linux computers and stream them to custom logs tables you created. While streaming the data you can parse and transform the contents using the DCR. After collecting the data, you can apply analytic rules, hunting, searching, threat intelligence, enrichments and more.
 

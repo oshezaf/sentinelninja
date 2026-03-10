@@ -18,6 +18,7 @@
 | **Author** | Cyble Inc |
 | **First Published** | 2025-05-05 |
 | **Solution Folder** | [Cyble Vision](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyble%20Vision) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cybleinc1737472004964.cybleinc1737472004964-azure-sentinel-offerid) |
 
 This Solution provides Playbooks for Cyble Vision Threat Intelligence ingestion and IOC enrichment, integrating Cyble APIs.
 

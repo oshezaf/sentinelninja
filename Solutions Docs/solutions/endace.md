@@ -1,6 +1,4 @@
-# ⚠️ Endace
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+# Endace
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/endace_vert_logo_black.svg" alt="Endace Logo" width="75" height="75">
 
@@ -20,6 +18,7 @@
 | **Author** | Endace - support@endace.com |
 | **First Published** | 2025-03-24 |
 | **Solution Folder** | [Endace](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Endace) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/endace-usa-limited.azure-sentinel-solution-endace) |
 | **Pre-requisites** | endace-usa-limited.azure-sentinel-solution-commoneventformat |
 
 The Endace (https://www.endace.com) solution for Microsoft Sentinel enables you to create Pivot-to-Vision URL links from alerts in your CEF logs.

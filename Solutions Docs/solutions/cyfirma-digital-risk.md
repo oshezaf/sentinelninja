@@ -18,6 +18,7 @@
 | **Author** | Microsoft |
 | **First Published** | 2025-03-27 |
 | **Solution Folder** | [Cyfirma Digital Risk](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Digital%20Risk) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cyfirmaholdingspteltd1742879329545.azure-sentinel-solution-cyfirma-digital-risk) |
 
 The CYFIRMA Digital Risk solution integrates with Microsoft Sentinel to provide real-time intelligence on data exposures across dark web forums, ransomware groups, public sources, and code repositories. It enables organizations to detect leaked credentials, internal documents, source code, and PII/CIIs that could be exploited by threat actors. Enriched intelligence is ingested into Microsoft Sentinel, helping security teams correlate external threats with internal activity, detect compromised accounts, and automate incident response.
 

@@ -18,6 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-09-28 |
 | **Solution Folder** | [ImpervaCloudWAF](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ImpervaCloudWAF) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-impervawafcloud) |
 
 [Imperva Cloud WAF](https://www.imperva.com/resources/resource-library/datasheets/imperva-cloud-waf/) offers the industry's leading web application security firewall, providing enterprise-class protection against the most sophisticated security threats. As a cloud-based WAF, it ensures that your website is always protected against any type of application layer hacking attempt. Imperva Cloud WAF is a key component of Imperva's market-leading, full stack application security solution which brings defence-in-depth to a new level.
 

@@ -18,6 +18,7 @@
 | **Author** | Microsoft |
 | **First Published** | 2025-03-27 |
 | **Solution Folder** | [Cyfirma Attack Surface](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Attack%20Surface) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cyfirmaholdingspteltd1742879329545.azure-sentinel-solution-cyfirma-attack-surface) |
 
 The CYFIRMA Attack Surface solution provides ability to gain continuous visibility into their external digital footprint directly within Microsoft Sentinel. This integration enhances your security posture by identifying exposed assets, misconfigurations, and vulnerabilities across internet-facing infrastructure—enabling faster response to potential threats and reducing the attack surface before adversaries can exploit it. By ingesting enriched attack surface intelligence—covering open ports, vulnerable IPs, cloud misconfigurations, certificate issues, and more—into Microsoft Sentinel, security teams can correlate findings with other threat indicators, automate incident response, and drive proactive defense measures.
 

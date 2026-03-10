@@ -18,6 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-09-07 |
 | **Solution Folder** | [RSA SecurID](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RSA%20SecurID) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-securid) |
 | **Pre-requisites** | [Syslog](syslog.md) |
 
 The [RSA® SecurID Authentication Manager](https://www.securid.com) data connector provides the capability to ingest [RSA® SecurID Authentication Manager events](https://community.rsa.com/t5/rsa-authentication-manager/rsa-authentication-manager-log-messages/ta-p/630160) into Microsoft Sentinel. Refer to [RSA® SecurID Authentication Manager documentation](https://community.securid.com/t5/securid-authentication-manager/tkb-p/authentication-manager-documentation) for more information. 

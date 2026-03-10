@@ -18,6 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [Microsoft Defender for Cloud Apps](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20for%20Cloud%20Apps) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-microsoftdefendercloudapps) |
 
 The [Microsoft Defender for Cloud Apps](https://docs.microsoft.com/defender-cloud-apps/) solution for Microsoft Sentinel enables you to ingest security alerts and discovery logs from the Defender for Cloud Apps platform, providing visibility into threats in your cloud app environment, including coverage for shadow IT, impossible travel, ransomware, and data exfiltration use cases.
 

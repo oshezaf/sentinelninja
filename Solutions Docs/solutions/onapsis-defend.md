@@ -19,6 +19,7 @@
 | **First Published** | 2025-07-17 |
 | **Last Updated** | 2025-07-17 |
 | **Solution Folder** | [Onapsis Defend](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Onapsis%20Defend) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/onapsis.azure-sentinel-solution-onapsis-defend) |
 
 Empower security teams with deep visibility into unique exploit, zero-day, and threat actor activity; suspicious user or insider behavior; sensitive data downloads; security control violations; and more - all enriched by the SAP experts at Onapsis.
 

@@ -18,6 +18,7 @@
 | **Author** | Trend Micro |
 | **First Published** | 2022-05-10 |
 | **Solution Folder** | [Trend Micro Deep Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Deep%20Security) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/trendmicro.trend_micro_deep_security_mss) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The [Trend Micro Deep Security](https://www.trendmicro.com/en_us/business/products/hybrid-cloud/deep-security.html) solution for Microsoft Sentinel enables you to ingest Deep Security logs into Microsoft Sentinel, using the Common Event Format (CEF) for Security Monitoring.

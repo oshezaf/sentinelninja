@@ -17,6 +17,7 @@
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **Solution Folder** | [AWS Systems Manager](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Systems%20Manager) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-awssystemsmanager) |
 
 [AWS Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html) is the operations hub for your AWS applications and resources and a secure end-to-end management solution for [hybrid and multicloud](https://docs.aws.amazon.com/systems-manager/latest/userguide/operating-systems-and-machine-types.html#supported-machine-types) environments that enables secure operations at scale. This solution helps to enhance your SOAR capabilities by integrating Sentinel with AWS manager.
 

@@ -18,6 +18,7 @@
 | **Author** | DomainTools - memberservices@domaintools.com |
 | **First Published** | 2022-10-20 |
 | **Solution Folder** | [DomainTools](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/domaintoolsllc1647901527537.domaintools-iris-investigate) |
 
 The [Domaintools Iris investigate](https://www.domaintools.com/products/platform/iris-investigate/) solution for Microsoft Sentinel contains Playbooks that can help Enrich domain & investigate domain, domain risk score, Malicious tags, URL's and DNS from Domain tools. This enriched / investigated information can help drive better analysis in security Operations.
 

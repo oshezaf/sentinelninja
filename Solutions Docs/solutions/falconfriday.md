@@ -18,6 +18,7 @@
 | **Author** | FalconForce - info@falconforce.nl |
 | **First Published** | 2021-10-18 |
 | **Solution Folder** | [FalconFriday](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/FalconFriday) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/falconforcebv1623147592118.falconfriday_content) |
 
 [FalconFriday](https://github.com/FalconForceTeam/FalconFriday/blob/master/README.md) is a blog post series by FalconForce providing the community with free detection content for various attacks seen and executed in the wild by FalconForce.
 

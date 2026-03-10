@@ -18,6 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-01 |
 | **Solution Folder** | [CrowdStrike Falcon Endpoint Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-crowdstrikefalconep) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The [CrowdStrike Falcon Endpoint Protection](https://www.crowdstrike.com/products/) solution allows you to easily onboard CrowdStrike Falcon Endpoint Protection to Microsoft Sentinel. The data collected can be used to create custom dashboards, alerts, and improve investigation. This gives you more insight into your organization's endpoints and improves your security operation capabilities. 

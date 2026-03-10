@@ -18,6 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-08-01 |
 | **Solution Folder** | [MarkLogicAudit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MarkLogicAudit) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-marklogicaudit) |
 | **Pre-requisites** | [CustomLogsAma](customlogsama.md) |
 
 The MarkLogic Solution provides the capability to ingest [MarkLogic Audit](https://www.marklogic.com/) logs into Microsoft Sentinel. Refer to [MarkLogic documentation](https://docs.marklogic.com/guide/getting-started) for more information.

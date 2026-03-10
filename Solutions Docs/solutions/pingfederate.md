@@ -18,6 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-01 |
 | **Solution Folder** | [PingFederate](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PingFederate) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-pingfederate) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The [PingFederate](https://www.pingidentity.com/en/pingone/pingfederate.html) solution provides the capability to ingest [PingFederate](https://docs.pingidentity.com/bundle/pingfederate-102/page/lly1564002980532.html) events into Microsoft Sentinel. Refer to [PingFederate documentation](https://docs.pingidentity.com/bundle/pingfederate-102/page/tle1564002955874.html) for more information.

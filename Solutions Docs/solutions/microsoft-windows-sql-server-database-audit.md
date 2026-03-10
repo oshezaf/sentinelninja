@@ -18,6 +18,7 @@
 | **Author** | Community |
 | **First Published** | 2022-11-29 |
 | **Solution Folder** | [Microsoft Windows SQL Server Database Audit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Windows%20SQL%20Server%20Database%20Audit) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftsentinelcommunity.azure-sentinel-solution-sqlserverdatabaseaudit) |
 
 The Microsoft Windows SQL Server Database Audit solution for Microsoft Sentinel enables security monitoring scenarios using Windows events. The contents of the solution allow hunting for unauthorized access and other abnormalities with SQL database identities.
 

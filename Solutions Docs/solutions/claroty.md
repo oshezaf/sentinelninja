@@ -18,6 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-23 |
 | **Solution Folder** | [Claroty](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Claroty) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-claroty) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The [Claroty](https://claroty.com/) solution for Microsoft Sentinel enables ingestion of  [Continuous Threat Detection](https://claroty.com/resources/datasheets/continuous-threat-detection) and [Secure Remote Access](https://claroty.com/industrial-cybersecurity/sra) events into Microsoft Sentinel. 

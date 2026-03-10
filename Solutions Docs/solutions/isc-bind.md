@@ -18,6 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-09-20 |
 | **Solution Folder** | [ISC Bind](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ISC%20Bind) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-iscbind) |
 | **Pre-requisites** | [Syslog](syslog.md) |
 
 The [ISC Bind](https://www.isc.org/bind/) solution for Microsoft Sentinel allows you to ingest ISC Bind logs to get better insights into your organization's network traffic data, DNS query data, traffic statistics and improves your security operation capabilities.

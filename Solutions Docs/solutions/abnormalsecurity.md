@@ -18,6 +18,7 @@
 | **Author** | AbnormalSecurity - support@abnormalsecurity.com |
 | **First Published** | 2021-10-20 |
 | **Solution Folder** | [AbnormalSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbnormalSecurity) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/abnormalsecuritycorporation1593011233180.fe1b4806-215b-4610-bf95-965a7a65579c) |
 
 The Abnormal Security Events solution provides the capability to ingest threat and case logs into Microsoft Sentinel using the [Abnormal Security Rest API](https://app.swaggerhub.com/apis/abnormal-security/abx/).
  

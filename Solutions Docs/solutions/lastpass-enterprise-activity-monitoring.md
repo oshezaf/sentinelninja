@@ -19,6 +19,7 @@
 | **First Published** | 2021-10-20 |
 | **Last Updated** | 2022-01-12 |
 | **Solution Folder** | [LastPass](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/LastPass) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/thecollectiveconsultingbv1584980370320.lastpass-enterprise-monitoring-solution) |
 
 [Lastpass Enterprise Activity Monitoring ](https://www.lastpass.com/en/products/business) is a cloud password manager used by organizations to securely save and share passwords.
 

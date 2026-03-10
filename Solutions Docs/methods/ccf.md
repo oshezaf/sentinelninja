@@ -19,9 +19,9 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **106** |
-| Active | 100 |
+| Active | 102 |
 | Deprecated 🚫 | 0 |
-| Unpublished ⚠️ | 6 |
+| Unpublished ⚠️ | 4 |
 
 ## Connectors Using This Method
 
@@ -46,7 +46,7 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [AWS S3 Server Access Logs (via Codeless Connector Framework)](../connectors/awss3serveraccesslogsdefinition.md) ➕ | Microsoft | 1 | [AWS_AccessLogs](../solutions/aws-accesslogs.md) |
 | [AWS Security Hub Findings (via Codeless Connector Framework)](../connectors/awssecurityhubfindingsccpdefinition.md) ➕ | Microsoft | 1 | [AWS Security Hub](../solutions/aws-security-hub.md) |
 | [Azure DevOps Audit Logs (via Codeless Connector Platform)](../connectors/azuredevopsauditlogs.md) | Microsoft | 1 | [AzureDevOpsAuditing](../solutions/azuredevopsauditing.md) |
-| [BigID DSPM connector](../connectors/bigiddspmlogsconnectordefinition.md) ⚠️ | BigID | 2 | [BigID](../solutions/bigid.md) |
+| [BigID DSPM connector](../connectors/bigiddspmlogsconnectordefinition.md) | BigID | 2 | [BigID](../solutions/bigid.md) |
 | [Bitwarden Event Logs](../connectors/bitwardeneventlogs.md) | Bitwarden Inc | 3 | [Bitwarden](../solutions/bitwarden.md) |
 | [Box Events (CCP)](../connectors/boxeventsccpdefinition.md) 🔶 | Microsoft | 2 | [Box](../solutions/box.md) |
 | [Check Point CloudGuard CNAPP Connector for Microsoft Sentinel](../connectors/cloudguardccpdefinition.md) | CheckPoint | 1 | [Check Point CloudGuard CNAPP](../solutions/check-point-cloudguard-cnapp.md) |
@@ -96,7 +96,7 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [Lookout Mobile Threat Detection Connector (via Codeless Connector Framework) (Preview)](../connectors/lookoutstreaming-definition.md) | Microsoft | 1 | [Lookout](../solutions/lookout.md) |
 | [MailRisk by Secure Practice](../connectors/securepracticemailriskconnector.md) | Secure Practice | 1 | [MailRisk](../solutions/mailrisk.md) |
 | [meshStack Event Logs](../connectors/meshstackeventlogsdefinition.md) ⚠️ | meshcloud | 1 | [meshStack](../solutions/meshstack.md) |
-| [Microsoft Copilot](../connectors/microsoftcopilot.md) ⚠️ | Microsoft | 1 | [Microsoft Copilot](../solutions/microsoft-copilot.md) |
+| [Microsoft Copilot](../connectors/microsoftcopilot.md) | Microsoft | 1 | [Microsoft Copilot](../solutions/microsoft-copilot.md) |
 | [Miro Audit Logs (Enterprise Plan)](../connectors/miroauditlogsdataconnector.md) | Miro | 1 | [Miro](../solutions/miro.md) |
 | [Miro Content Logs (Enterprise Plan + Enterprise Guard)](../connectors/mirocontentlogsdataconnector.md) | Miro | 1 | [Miro](../solutions/miro.md) |
 | [Morphisec API Data Connector (via Codeless Connector Framework)](../connectors/morphisecccf.md) | Morphisec | 1 | [Morphisec](../solutions/morphisec.md) |

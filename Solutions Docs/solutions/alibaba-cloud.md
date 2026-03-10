@@ -18,6 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-27 |
 | **Solution Folder** | [Alibaba Cloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alibaba%20Cloud) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-alibabacloud) |
 
 The [Alibaba Cloud](https://www.alibabacloud.com/product/log-service) solution provides the capability to retrieve logs from cloud applications using the Cloud API and more events into Microsoft Sentinel through the [REST API](https://aliyun-log-python-sdk.readthedocs.io/api.html). 
  

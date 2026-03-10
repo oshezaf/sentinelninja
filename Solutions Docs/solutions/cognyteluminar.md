@@ -18,6 +18,7 @@
 | **Author** | Cognyte |
 | **First Published** | 2023-09-15 |
 | **Solution Folder** | [CognyteLuminar](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CognyteLuminar) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognytetechnologiesisraelltd.microsoft-sentinel-solution-cognyte-luminar) |
 
 Luminar IOCs and Leaked Credentials connector allows integration of intelligence-based IOC data and customer-related leaked records identified by Luminar.
 

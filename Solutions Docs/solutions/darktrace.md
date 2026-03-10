@@ -18,6 +18,7 @@
 | **Author** | Darktrace |
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [Darktrace](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Darktrace) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/darktrace1655286944672.darktrace_for_sentinel) |
 
 The [Darktrace](https://darktrace.com/) Sentinel Solution lets users connect Darktrace AI-based alerting in real-time with Microsoft Sentinel, allowing creation of custom Dashboards, Workbooks, Notebooks and Custom Alerts to improve investigation. Microsoft Sentinel's enhanced visibility into Darktrace logs enables monitoring and mitigation of security threats. 
 

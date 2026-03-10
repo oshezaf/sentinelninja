@@ -18,6 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-08-04 |
 | **Solution Folder** | [Business Email Compromise - Financial Fraud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Business%20Email%20Compromise%20-%20Financial%20Fraud) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-bec_financialfraud) |
 | **Pre-requisites** | [Microsoft Entra ID](microsoft-entra-id.md), [Microsoft 365](microsoft-365.md), [Amazon Web Services](amazon-web-services.md), [Microsoft Defender XDR](microsoft-defender-xdr.md), [Okta Single Sign-On](okta-single-sign-on.md) |
 
 [Business Email Compromise (BEC)](https://www.microsoft.com/en-in/security/business/security-101/what-is-business-email-compromise-bec?rtc=1) attacks often aim to commit financial fraud by locating sensitive payment or invoice details and using these to hijack legitimate transactions. This solution, in combination with other solutions listed below, provide a range of content to help detect and investigate BEC attacks at different stages of the attack cycle, and across multiple data sources including AWS, SAP, Okta, Dynamics 365, Microsoft Entra ID, Microsoft 365 and network logs.

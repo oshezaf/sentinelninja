@@ -18,6 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-08-18 |
 | **Solution Folder** | [OpenVPN](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenVPN) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-openvpn) |
 | **Pre-requisites** | [Syslog](syslog.md) |
 
 The [OpenVPN](https://github.com/OpenVPN) solution for Microsoft Sentinel provides the capability to ingest OpenVPN Server logs into Microsoft Sentinel. These logs contain details and specifics about VPN connection activity.

@@ -19,6 +19,7 @@
 | **First Published** | 2022-01-10 |
 | **Last Updated** | 2022-01-10 |
 | **Solution Folder** | [Joshua-Cyberiskvision](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Joshua-Cyberiskvision) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/almavivaspa1636563933762.joshua-cyberiskvision) |
 
 [Joshua Cyberiskvision](https://www.cyberiskvision.com/) enables organizations to define, monitor, analyze, and improve their level of Global Cybersecurity following a predictive and context-aware approach that uses a broad spectrum cyber intelligence-driven logic. The Joshua Solution automates the ingest of Joshua Cyberiskvision threat indicators into the ThreatIntelligenceIndicator table of Microsoft Sentinel workspace.
 

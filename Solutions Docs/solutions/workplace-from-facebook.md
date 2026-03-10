@@ -18,6 +18,7 @@
 | **Author** | Microsoft |
 | **First Published** | 2022-05-18 |
 | **Solution Folder** | [Workplace from Facebook](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Workplace%20from%20Facebook) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-workplacefromfacebook) |
 
 The [Workplace](https://www.workplace.com/) data connector provides the capability to ingest common Workplace events into Microsoft Sentinel through Webhooks.
 

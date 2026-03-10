@@ -18,6 +18,7 @@
 | **Author** | Wiz - support@wiz.io |
 | **First Published** | 2023-06-20 |
 | **Solution Folder** | [Wiz](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Wiz) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/wizinc1627338511749.wizinc1627338511749_wiz_mss-sentinel) |
 
 The [Wiz](https://wiz.io/) solution for Microsoft Sentinel enables you to ingest [Wiz Issues](https://docs.wiz.io/wiz-docs/docs/issues), [Wiz Vulnerability Findings](https://docs.wiz.io/wiz-docs/docs/vulnerability-findings), and [Wiz Audit Logs](https://docs.wiz.io/wiz-docs/docs/audit-log-settings) into Microsoft Sentinel using the Wiz REST API.
 

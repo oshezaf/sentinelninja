@@ -18,6 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-23 |
 | **Solution Folder** | [Azure Firewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sentinel4azurefirewall.sentinel4azurefirewall) |
 
 The [Azure Firewall](https://docs.microsoft.com/azure/firewall/overview) solution for Microsoft Sentinel enables ingestion of DNS Proxy, Application Rule and Network Rule [logs](https://docs.microsoft.com/azure/firewall/logs-and-metrics) from Azure Firewalls.
 

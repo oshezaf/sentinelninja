@@ -19,9 +19,9 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **144** |
-| Active | 114 |
+| Active | 116 |
 | Deprecated 🚫 | 20 |
-| Unpublished ⚠️ | 10 |
+| Unpublished ⚠️ | 8 |
 
 ### By Collection Method
 
@@ -51,7 +51,7 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [Azure CloudNGFW By Palo Alto Networks](../connectors/azurecloudngfwbypaloaltonetworks.md) 🔶 | [REST API](../methods/rest-api.md) | Palo Alto Networks | 1 | [Azure Cloud NGFW By Palo Alto Networks](../solutions/azure-cloud-ngfw-by-palo-alto-networks.md) |
 | [BETTER Mobile Threat Defense (MTD)](../connectors/bettermtd.md) 🔶 | [REST API](../methods/rest-api.md) | BETTER Mobile | 4 | [BETTER Mobile Threat Defense (MTD)](../solutions/better-mobile-threat-defense-mtd.md) |
 | [Beyond Security beSECURE](../connectors/beyondsecuritybesecure.md) ⚠️ 🔍 🔶 | [REST API](../methods/rest-api.md) | Beyond Security | 3 | [Beyond Security beSECURE](../solutions/beyond-security-besecure.md) |
-| [BeyondTrust PM Cloud](../connectors/beyondtrustpmcloud.md) ⚠️ 🔶 | [Azure Function](../methods/azure-function.md) | BeyondTrust | 2 | [BeyondTrustPMCloud](../solutions/beyondtrustpmcloud.md) |
+| [BeyondTrust PM Cloud](../connectors/beyondtrustpmcloud.md) 🔶 | [Azure Function](../methods/azure-function.md) | BeyondTrust | 2 | [BeyondTrustPMCloud](../solutions/beyondtrustpmcloud.md) |
 | [Bitglass](../connectors/bitglass.md) 🔶 | [Azure Function](../methods/azure-function.md) | Bitglass | 1 | [Bitglass](../solutions/bitglass.md) |
 | [Bloodhound Enterprise](../connectors/bloodhoundenterprise.md) 🔶 | [Azure Function](../methods/azure-function.md) | SpecterOps | 1 | [BloodHound Enterprise](../solutions/bloodhound-enterprise.md) |
 | [Box](../connectors/boxdataconnector.md) 🔶 | [Azure Function](../methods/azure-function.md) | Box | 2 | [Box](../solutions/box.md) |
@@ -75,7 +75,7 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [Cybersixgill Actionable Alerts](../connectors/cybersixgillactionablealerts.md) 🔶 | [Azure Function](../methods/azure-function.md) | Cybersixgill | 1 | [Cybersixgill-Actionable-Alerts](../solutions/cybersixgill-actionable-alerts.md) |
 | [Cynerio Security Events](../connectors/cyneriosecurityevents.md) 🔶 | [REST API](../methods/rest-api.md) | Cynerio | 1 | [Cynerio](../solutions/cynerio.md) |
 | [Darktrace Connector for Microsoft Sentinel REST API](../connectors/darktracerestconnector.md) 🔶 | [REST API](../methods/rest-api.md) | Darktrace | 1 | [Darktrace](../solutions/darktrace.md) |
-| [Datawiza DAP](../connectors/datawizadapsolution.md) ⚠️ 🔶 | [REST API](../methods/rest-api.md) | Datawiza | 1 | [Datawiza](../solutions/datawiza.md) |
+| [Datawiza DAP](../connectors/datawizadapsolution.md) 🔶 | [REST API](../methods/rest-api.md) | Datawiza | 1 | [Datawiza](../solutions/datawiza.md) |
 | [Derdack SIGNL4](../connectors/derdacksignl4.md) 🔶 | [REST API](../methods/rest-api.md) | Derdack | 2 | [SIGNL4](../solutions/signl4.md) |
 | [Digital Shadows Searchlight](../connectors/digitalshadowssearchlightazurefunctions.md) 🔶 | [Azure Function](../methods/azure-function.md) | Digital Shadows | 1 | [Digital Shadows](../solutions/digital-shadows.md) |
 | [Doppel Data Connector](../connectors/doppel-dataconnector.md) 🔶 | [REST API](../methods/rest-api.md) | Doppel | 1 | [Doppel](../solutions/doppel.md) |

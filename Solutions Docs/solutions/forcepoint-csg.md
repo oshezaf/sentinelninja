@@ -18,6 +18,7 @@
 | **Author** | Forcepoint |
 | **First Published** | 2022-05-10 |
 | **Solution Folder** | [Forcepoint CSG](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20CSG) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftsentinelcommunity.azure-sentinel-solution-forcepoint-csg) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 [Forcepoint Cloud Security Gateway](https://www.forcepoint.com/product/cloud-security-gateway) (CSG) Solution for Microsoft Sentinel exports web and/or email logs so that custom dashboards can be created using Workbooks to visualize events and insights on activities of Forcepoint Cloud Security Gateway.

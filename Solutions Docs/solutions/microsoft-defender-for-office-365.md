@@ -18,6 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-17 |
 | **Solution Folder** | [Microsoft Defender for Office 365](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20for%20Office%20365) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-microsoftdefenderforo365) |
 
 The [Microsoft Defender for Office 365](https://www.microsoft.com/security/business/threat-protection/office-365-defender) solution for Microsoft Sentinel enables you to ingest security alerts from the Defender for Office 365 platform, providing visibility into threats within email messages, links (URLs) and collaboration tools.
 

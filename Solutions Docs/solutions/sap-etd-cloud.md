@@ -19,6 +19,7 @@
 | **First Published** | 2025-02-17 |
 | **Last Updated** | 2025-09-11 |
 | **Solution Folder** | [SAP ETD Cloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20ETD%20Cloud) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sap_jasondau.azure-sentinel-solution-sapetd) |
 
 The Microsoft Sentinel Solution for SAP ETD integrates SAP Enterprise Threat Detection entities into Microsoft Sentinel, allowing SOC teams to ingest, monitor, and hunt across SAP data. This integration enhances security by enabling faster detection, investigation, and mitigation of risks within SAP environments.
 

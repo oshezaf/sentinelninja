@@ -19,6 +19,7 @@
 | **First Published** | 2023-05-02 |
 | **Last Updated** | 2023-07-20 |
 | **Solution Folder** | [Island](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Island) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/islandtechnologyinc1679434413850.island-sentinel-solution) |
 
 The [Island Enterprise Browser](https://www.island.io/) solution for Microsoft Sentinel enables you to ingest events for both User Activity and Admin Audit via API using Microsoft Sentinel CCP Data Connectors.
 

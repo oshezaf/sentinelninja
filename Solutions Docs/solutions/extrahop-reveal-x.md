@@ -18,6 +18,7 @@
 | **Author** | ExtraHop |
 | **First Published** | 2022-05-19 |
 | **Solution Folder** | [ExtraHop Reveal(x)](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ExtraHop%20Reveal%28x%29) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/extrahop.extrahop_revealx_mss) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The [ExtraHop Reveal(x)](https://www.extrahop.com/products/security/) Solution for Microsoft Sentinel enables ingestion of Common Event Format (CEF) logs into Microsoft Sentinel. This solution enables you to view dashboards, create custom alerts, and improve investigation. This integration gives you the ability to gain insight into your organization's network and improve your security operation capabilities.

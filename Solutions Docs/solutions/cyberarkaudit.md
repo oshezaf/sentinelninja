@@ -18,6 +18,7 @@
 | **Author** | CyberArk Business Development - BizDevTech@cyberark.com |
 | **First Published** | 2024-03-01 |
 | **Solution Folder** | [CyberArkAudit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkAudit) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cyberark.cyberark_audit_sentinel) |
 
 The integration between CyberArk Audit and Microsoft Sentinel aims to seamlessly connect the robust audit capabilities of CyberArk with the advanced security analytics and threat detection features of Microsoft Sentinel
 

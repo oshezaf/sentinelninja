@@ -19,9 +19,9 @@ REST API-based connectors use the Azure Monitor Data Collector API or Logs Inges
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **57** |
-| Active | 52 |
+| Active | 53 |
 | Deprecated 🚫 | 0 |
-| Unpublished ⚠️ | 5 |
+| Unpublished ⚠️ | 4 |
 
 ## Connectors Using This Method
 
@@ -44,7 +44,7 @@ REST API-based connectors use the Azure Monitor Data Collector API or Logs Inges
 | [Cynerio Security Events](../connectors/cyneriosecurityevents.md) 🔶 | Cynerio | 1 | [Cynerio](../solutions/cynerio.md) |
 | [Darktrace Connector for Microsoft Sentinel REST API](../connectors/darktracerestconnector.md) 🔶 | Darktrace | 1 | [Darktrace](../solutions/darktrace.md) |
 | [Datalake2Sentinel](../connectors/datalake2sentinelconnector.md) | Orange Cyberdefense | 1 | [Datalake2Sentinel](../solutions/datalake2sentinel.md) |
-| [Datawiza DAP](../connectors/datawizadapsolution.md) ⚠️ 🔶 | Datawiza | 1 | [Datawiza](../solutions/datawiza.md) |
+| [Datawiza DAP](../connectors/datawizadapsolution.md) 🔶 | Datawiza | 1 | [Datawiza](../solutions/datawiza.md) |
 | [Derdack SIGNL4](../connectors/derdacksignl4.md) 🔶 | Derdack | 2 | [SIGNL4](../solutions/signl4.md) |
 | [Doppel Data Connector](../connectors/doppel-dataconnector.md) 🔶 | Doppel | 1 | [Doppel](../solutions/doppel.md) |
 | [Exchange Security Insights On-Premises Collector](../connectors/esi-exchangeonpremisescollector.md) 🔶 | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |

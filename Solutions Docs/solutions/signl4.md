@@ -19,6 +19,7 @@
 | **First Published** | 2021-12-10 |
 | **Last Updated** | 2021-12-10 |
 | **Solution Folder** | [SIGNL4](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SIGNL4) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/derdack.azure-sentinel-solution-signl4) |
 
 The SIGNL4 Mobile Alerting solution provides the capability to read security alerts into Microsoft Sentinel using the Microsoft Graph Security API. It adds real-time mobile alerting to your services, systems, and processes in no time. SIGNL4 notifies through persistent mobile push, SMS text and voice calls with acknowledgement, tracking and escalation. Refer to [SIGNL4 documentation](https://www.signl4.com/) for more information. 
 

@@ -18,6 +18,7 @@
 | **Author** | Flare - support@flare.io |
 | **First Published** | 2021-10-20 |
 | **Solution Folder** | [Flare](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Flare) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/flaresystmesinc1617114736428.flare-systems-firework-sentinel) |
 
 The Flare Systems [Firework](https://flare.io/platform/) solution allows you to receive data and intelligence from Firework on Microsoft Sentinel.
 

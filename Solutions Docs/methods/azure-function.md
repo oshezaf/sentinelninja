@@ -19,9 +19,9 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **132** |
-| Active | 87 |
+| Active | 88 |
 | Deprecated 🚫 | 20 |
-| Unpublished ⚠️ | 25 |
+| Unpublished ⚠️ | 24 |
 
 ## Connectors Using This Method
 
@@ -40,7 +40,7 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [Armorblox](../connectors/armorblox.md) 🔶 | Armorblox | 1 | [Armorblox](../solutions/armorblox.md) |
 | [Atlassian Jira Audit](../connectors/jiraauditapi.md) 🔶 | Atlassian | 2 | [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
 | [Auth0 Access Management](../connectors/auth0.md) 🔶 | Auth0 | 1 | [Auth0](../solutions/auth0.md) |
-| [BeyondTrust PM Cloud](../connectors/beyondtrustpmcloud.md) ⚠️ 🔶 | BeyondTrust | 2 | [BeyondTrustPMCloud](../solutions/beyondtrustpmcloud.md) |
+| [BeyondTrust PM Cloud](../connectors/beyondtrustpmcloud.md) 🔶 | BeyondTrust | 2 | [BeyondTrustPMCloud](../solutions/beyondtrustpmcloud.md) |
 | [Bitglass](../connectors/bitglass.md) 🔶 | Bitglass | 1 | [Bitglass](../solutions/bitglass.md) |
 | [Bitsight data connector](../connectors/bitsight.md) | BitSight Technologies, Inc. | 11 | [BitSight](../solutions/bitsight.md) |
 | [Bloodhound Enterprise](../connectors/bloodhoundenterprise.md) 🔶 | SpecterOps | 1 | [BloodHound Enterprise](../solutions/bloodhound-enterprise.md) |

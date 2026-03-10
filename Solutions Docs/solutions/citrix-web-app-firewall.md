@@ -18,6 +18,7 @@
 | **Author** | Citrix Systems |
 | **First Published** | 2022-05-06 |
 | **Solution Folder** | [Citrix Web App Firewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20Web%20App%20Firewall) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/citrix.citrix_waf_mss) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 [Citrix Web App Firewall (WAF)](https://www.citrix.com/products/citrix-web-app-firewall/) Solution for Microsoft Sentinel enables ingestion of Common Event Format (CEF) logs into Microsoft Sentinel to enable you to take advantage of search & correlation, alerting, and threat intelligence enrichment for each log.

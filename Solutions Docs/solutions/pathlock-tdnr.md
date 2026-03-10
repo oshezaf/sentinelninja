@@ -18,6 +18,7 @@
 | **Author** | Pathlock Inc. - support@pathlock.com |
 | **First Published** | 2022-02-17 |
 | **Solution Folder** | [Pathlock_TDnR](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pathlock_TDnR) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/pathlockinc1631410274035.pathlock_tdnr) |
 
 The [Pathlock TD&R](https://pathlock.com/products/cybersecurity-application-controls/) integration enables organizations to seamlessly forward Pathlock Threat Detection and Response (TD&R) events from both on-premise and cloud-based SAP systems into Microsoft Sentinel Solution for SAP for unified security visibility and incident correlation across the enterprise.
 

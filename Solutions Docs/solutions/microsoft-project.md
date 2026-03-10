@@ -18,6 +18,7 @@
 | **Author** | Microsoft |
 | **First Published** | 2022-05-23 |
 | **Solution Folder** | [Microsoft Project](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Project) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-microsoftproject) |
 
 The [Microsoft Project](https://www.microsoft.com/en-us/microsoft-365/project/project-management-software) solution allows you to stream your Microsoft Project audit logs into Microsoft Sentinel in order to track your project activities.
 

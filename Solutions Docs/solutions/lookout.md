@@ -19,6 +19,7 @@
 | **First Published** | 2021-10-18 |
 | **Last Updated** | 2025-12-18 |
 | **Solution Folder** | [Lookout](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/lookoutinc.lookout_mtd_sentinel) |
 
 The [Lookout](https://lookout.com) solution provides the capability to ingest [Lookout events](https://www.lookout.com/products/mobile-endpoint-security) into Microsoft Sentinel through the Mobile Risk API. It can get events which helps to examine potential security risks and more. Refer to [API documentation](https://www.lookout.com/products/mobile-endpoint-security) for more information.
 

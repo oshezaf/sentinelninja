@@ -18,6 +18,7 @@
 | **Author** | Zimperium |
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [Zimperium Mobile Threat Defense](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zimperium%20Mobile%20Threat%20Defense) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/zimperiuminc.zimperium_mobile_threat_defense_mss) |
 
 The [Zimperium](https://www.zimperium.com/) Mobile Threat Defense solution gives you the ability to connect the [Zimperium Mobile Threat Defense](https://www.zimperium.com/mtd-maturity-model/) log with Microsoft Sentinel to view dashboards, create custom alerts, and improve investigation.
 

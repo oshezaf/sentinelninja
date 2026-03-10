@@ -18,6 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-11 |
 | **Solution Folder** | [Windows Server DNS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Server%20DNS) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-dns) |
 
 The [DNS](https://docs.microsoft.com/windows-server/networking/dns/dns-top) solution for Microsoft Sentinel allows you to ingest DNS analytic and audit logs into Microsoft Sentinel. The DNS logs are collected only from Windows agents.
 

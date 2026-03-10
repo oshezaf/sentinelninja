@@ -18,6 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-12-16 |
 | **Solution Folder** | [NGINX HTTP Server](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NGINX%20HTTP%20Server) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-nginx) |
 | **Pre-requisites** | [CustomLogsAma](customlogsama.md) |
 
 The [NGINX](https://nginx.org/) HTTP Server data connector provides the capability to ingest [NGINX HTTP Server](https://nginx.org/#basic_http_features) events into Microsoft Sentinel. Refer to [NGINX Logs documentation](https://nginx.org/en/docs/http/ngx_http_log_module.html) for more information.

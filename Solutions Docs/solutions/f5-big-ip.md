@@ -18,6 +18,7 @@
 | **Author** | F5 Networks |
 | **First Published** | 2022-05-25 |
 | **Solution Folder** | [F5 BIG-IP](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/F5%20BIG-IP) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/f5-networks.f5_bigip_mss) |
 
 The [F5 BIG-IP](https://www.f5.com/products/big-ip-services) Solution for Microsoft Sentinel allows you to easily connect your F5 logs with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation. This gives you more insight into your organization's network and improves your security operation capabilities.
 

@@ -18,6 +18,7 @@
 | **Author** | Zscaler |
 | **First Published** | 2022-05-25 |
 | **Solution Folder** | [Zscaler Internet Access](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/zscaler1579058425289.zscaler_internet_access_mss) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The [Zscaler Internet Access](https://www.zscaler.com/products/zscaler-internet-access) Solution for Microsoft Sentinel enables you to easily connect your Zscaler Internet Access (ZIA) logs with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation. Using Zscaler on Microsoft Sentinel will provide you more insights into your organization’s Internet usage and will enhance its security operation capabilities. 

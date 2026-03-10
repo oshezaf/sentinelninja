@@ -18,6 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-11-18 |
 | **Solution Folder** | [ALC-WebCTRL](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ALC-WebCTRL) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-automated-logic-webctrl) |
 
 The [Automated Logic WebCTRL](https://www.automatedlogic.com/en/products/webctrl-building-automation-system/) solution allows you to easily stream the audit logs from the WebCTRL SQL server hosted on Windows machines connected to your Microsoft Sentinel. This connection enables you to view dashboards, create custom alerts and improve investigation. This gives insights into your Industrial Control Systems that are monitored or controlled by the WebCTRL BAS application. 
 

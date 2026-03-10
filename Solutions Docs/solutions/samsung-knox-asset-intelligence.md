@@ -18,6 +18,7 @@
 | **Author** | Samsung - kai.sme@samsung.com |
 | **First Published** | 2025-01-15 |
 | **Solution Folder** | [Samsung Knox Asset Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Samsung%20Knox%20Asset%20Intelligence) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/samsungelectronics1632791654245.azure-sentinel-solution-samsung-knox-kai) |
 
 The Knox Asset Intelligence for Microsoft Sentinel solution enables enterprise IT and SecOps (Security Operations) administrators to view and manage security threats to their Samsung Knox mobile devices. By integrating security events and logs from Knox Asset Intelligence with the Azure Monitor Log Ingestion API, the solution lets enterprise organizations easily view, identify and investigate security threats in near-real-time with Microsoft Sentinel.
 

@@ -18,6 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-20 |
 | **Solution Folder** | [Box](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Box) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-box) |
 
 The [Box](https://developer.box.com/guides/events/enterprise-events/for-enterprise/) solution connector provides the capability to ingest [Box enterprise's events](https://developer.box.com/guides/events/#admin-events) into Microsoft Sentinel using the Box REST API 
  

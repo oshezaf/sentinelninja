@@ -18,6 +18,7 @@
 | **Author** | Quokka - mvang@quokka.io |
 | **First Published** | 2025-10-30 |
 | **Solution Folder** | [Quokka](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Quokka) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/quokka.azure-sentinel-solution-quokka) |
 
 The Qscout CCF data connector ingest app events logs from Quokka Qscout platform
 

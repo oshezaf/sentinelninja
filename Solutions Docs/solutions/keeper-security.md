@@ -19,6 +19,7 @@
 | **First Published** | 2025-06-03 |
 | **Last Updated** | 2025-06-03 |
 | **Solution Folder** | [Keeper Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Keeper%20Security) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/keepersecurity.keeper-security-integration) |
 
 The [Keeper Security](https://keepersecurity.com/) solution for Microsoft Sentinel enables you to ingest [Keeper Security](https://keepersecurity.com/) forwarded into Microsoft Sentinel using the Microsoft Sentinel Analytics Workspace.
 

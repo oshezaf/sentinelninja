@@ -17,6 +17,7 @@
 | **Version** | 1.0.0 |
 | **Author** | Versasec AB - info@versasec.com |
 | **Solution Folder** | [VersasecCMS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VersasecCMS) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/versasec.azure-sentinel-solution-versaseccms) |
 
 Ingests Versasec Cms system logs into Microsoft Sentinel using a REST API poller (CCF).
 

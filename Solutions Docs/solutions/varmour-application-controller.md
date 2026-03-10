@@ -18,6 +18,7 @@
 | **Author** | vArmour |
 | **First Published** | 2022-06-01 |
 | **Solution Folder** | [vArmour Application Controller](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/vArmour%20Application%20Controller) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/varmournetworks.varmour_sentinel) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 This vArmour solution enables streaming of Application Controller Violation Alerts into Microsoft Sentinel, so you can take advantage of search & correlation, alerting, & threat intelligence enrichment for each log.
