@@ -2,7 +2,7 @@
 
 This documentation provides comprehensive information about Microsoft Sentinel Solutions, including data connectors, log tables, content items, parsers, and ASIM parsers.
 
-**Browse:** **🏠** · [Solutions](solutions-index.md) · [Connectors](connectors-index.md) · [Methods](methods-index.md) · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md) · [📊](statistics.md) · [🔍](https://oshezaf.github.io/sentinelninja/index.html)
+**Browse:** **🏠** · [Solutions](solutions-index.md) · [Connectors](connectors-index.md) · [Methods](methods-index.md) · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md) · [📊](statistics.md)
 
 ## Overview
 

@@ -9,15 +9,12 @@
 </head>
 <body>
 <nav class="navbar">
-    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
-    <div class="navbar-nav-links">
-        <a href="https://oshezaf.github.io/sentinelninja/index.html#content" title="Interactive index">&#128269; Interactive</a>
-    </div>
+    <a href="https://oshezaf.github.io/sentinelninja/index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
 <h1 id="ciscoise-false-positives-clear-policies">CiscoISE-False Positives Clear Policies</h1>
-<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
-<p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook gets triggered when a new sentinel incident is created 1.For each MAC address (MACAddress provided in the alert custom entities) in the incident checks if it is was rejected in Cisco ISE. 2.If MAC address was rejected, checks if it is in the safe list (safe list is a custom <a href="https://docs.microsoft.com/azure/sentinel/watchlists">Watchlist</a> that contains safe MAC addresses). If it is in safe list, releases endpoint with this MAC address in Cisco ISE. 3.Adds comment to the incident wi</p>
 <table>
@@ -90,7 +87,7 @@ If it is in safe list, releases endpoint with this MAC address in Cisco ISE.</li
 <li>Configure the automation rules to trigger the playbook.</li>
 </ol>
 <hr />
-<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
+<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/cisco-ise.html">Back to Cisco ISE</a></p>
 </div>
 

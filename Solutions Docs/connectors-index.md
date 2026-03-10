@@ -2,7 +2,7 @@
 
 Data connectors are the ingestion mechanism for Microsoft Sentinel, enabling you to collect security data from various sources into your Log Analytics workspace. Each connector defines how data flows from a source system to Sentinel tables, including the collection method (such as Azure Functions, Diagnostic Settings, or Log Analytics Agent) and the target table schema.
 
-**Browse:** [🏠](README.md) · [Solutions](solutions-index.md) · **Connectors** · [Methods](methods-index.md) · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md) · [📊](statistics.md) · [🔍](https://oshezaf.github.io/sentinelninja/index.html)
+**Browse:** [🏠](README.md) · [Solutions](solutions-index.md) · **Connectors** · [Methods](methods-index.md) · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md) · [📊](statistics.md)
 
 ---
 
@@ -693,5 +693,5 @@ The following **145 connector(s)** are deprecated:
 
 ---
 
-**Browse:** [🏠](README.md) · [Solutions](solutions-index.md) · **Connectors** · [Methods](methods-index.md) · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md) · [📊](statistics.md) · [🔍](https://oshezaf.github.io/sentinelninja/index.html)
+**Browse:** [🏠](README.md) · [Solutions](solutions-index.md) · **Connectors** · [Methods](methods-index.md) · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md) · [📊](statistics.md)
 

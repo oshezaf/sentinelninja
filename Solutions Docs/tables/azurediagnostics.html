@@ -9,15 +9,12 @@
 </head>
 <body>
 <nav class="navbar">
-    <span class="navbar-brand">Microsoft Sentinel &mdash; Solutions Analyzer</span>
-    <div class="navbar-nav-links">
-        <a href="https://oshezaf.github.io/sentinelninja/index.html#tables" title="Interactive index">&#128269; Interactive</a>
-    </div>
+    <a href="https://oshezaf.github.io/sentinelninja/index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
 </nav>
 <div class="doc-content">
 <h1 id="azurediagnostics">AzureDiagnostics</h1>
-<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
-<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Back to Tables Index</a></p>
 <hr />
 <p>Reference for AzureDiagnostics table in Azure Monitor Logs.</p>
 <table>
@@ -1821,7 +1818,15 @@
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Category in "NetworkSecurityGroupEvent,NetworkSecurityGroupRuleCounter"</code></td>
+<td style="text-align: left;"><code>ResourceType in "APPLICATIONGATEWAYS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.SERVICEBUS"</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -1837,55 +1842,15 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.DATALAKESTORE"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>ResourceType == "AZUREFIREWALLS"</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.STREAMANALYTICS"</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.SEARCH"</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.EVENTHUB"</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>Category in "cluster-autoscaler,guard,kube-apiserver,kube-audit,kube-audit-admin,kube-controller-manager,kube-scheduler"</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>Category in "AutomaticTuning,Basic,Blocks,DatabaseWaitStatistics,Deadlocks,DevOpsOperationsAudit,Errors,InstanceAndAppAdvanced,QueryStoreWaitStatistics,SQLInsights,SQLSecurityAuditEvents,Timeouts,WorkloadManagement"</code><br><code>Category contains "SQLSecurityAuditEvents"</code><br><code>ResourceProvider == "MICROSOFT.SQL"</code><br><code>ResourceType == "SERVERS/DATABASES"</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ResourceType in "APPLICATIONGATEWAYS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS"</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -1901,7 +1866,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.BATCH"</code></td>
+<td style="text-align: left;"><code>Category in "cluster-autoscaler,guard,kube-apiserver,kube-audit,kube-audit-admin,kube-controller-manager,kube-scheduler"</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -1917,7 +1882,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.DATALAKESTORE"</code></td>
+<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.STREAMANALYTICS"</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -1925,7 +1890,39 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.SERVICEBUS"</code></td>
+<td style="text-align: left;"><code>Category in "AutomaticTuning,Basic,Blocks,DatabaseWaitStatistics,Deadlocks,DevOpsOperationsAudit,Errors,InstanceAndAppAdvanced,QueryStoreWaitStatistics,SQLInsights,SQLSecurityAuditEvents,Timeouts,WorkloadManagement"</code><br><code>Category contains "SQLSecurityAuditEvents"</code><br><code>ResourceProvider == "MICROSOFT.SQL"</code><br><code>ResourceType == "SERVERS/DATABASES"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.SEARCH"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.BATCH"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ResourceProvider == "MICROSOFT.EVENTHUB"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Category in "NetworkSecurityGroupEvent,NetworkSecurityGroupRuleCounter"</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -2466,6 +2463,22 @@
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>MICROSOFT.SERVICEBUS</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>MICROSOFT.DATALAKESTORE</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>MICROSOFT.STREAMANALYTICS</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -2482,14 +2495,6 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>MICROSOFT.EVENTHUB</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>MICROSOFT.BATCH</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -2498,15 +2503,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>MICROSOFT.DATALAKESTORE</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>MICROSOFT.SERVICEBUS</code></td>
+<td style="text-align: left;"><code>MICROSOFT.EVENTHUB</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -2545,7 +2542,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>AZUREFIREWALLS</code></td>
+<td style="text-align: left;"><code>APPLICATIONGATEWAYS</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">7</td>
 <td style="text-align: center;">-</td>
@@ -2553,7 +2550,7 @@
 <td style="text-align: center;"><strong>8</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>APPLICATIONGATEWAYS</code></td>
+<td style="text-align: left;"><code>AZUREFIREWALLS</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">7</td>
 <td style="text-align: center;">-</td>
@@ -2577,14 +2574,6 @@
 <td style="text-align: center;"><strong>8</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>SERVERS/DATABASES</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>5</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>CDNWEBAPPLICATIONFIREWALLPOLICIES</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">4</td>
@@ -2594,6 +2583,14 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>FRONTDOORS</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SERVERS/DATABASES</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">4</td>
 <td style="text-align: center;">-</td>
@@ -2611,8 +2608,8 @@
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
-<p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="https://oshezaf.github.io/sentinelninja/index.html">🏠</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#solutions">Solutions</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Connectors</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#connectors">Methods</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Tables</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#content">Content</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#parsers">Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Parsers</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="https://oshezaf.github.io/sentinelninja/index.html#tables">Back to Tables Index</a></p>
 </div>
 
 </body>
