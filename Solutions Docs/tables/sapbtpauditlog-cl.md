@@ -13,24 +13,23 @@
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (12 columns)
+## Schema (11 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20BTP/Data%20Connectors/SAPBTPPollerConnector/SAPBTP_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SAPBTPAuditLog_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| als_service_id | string |
-| app_or_service_id | string |
-| category | string |
-| format_version | string |
-| message | string |
-| message_uuid | string |
-| org_id | string |
-| space_id | string |
+| AlsServiceId | string |
+| Category | string |
+| Message | dynamic |
+| MessageUuid | string |
+| OrgId | string |
+| SpaceId | string |
 | SubaccountName | string |
-| tenant | string |
-| time | datetime |
-| user | string |
+| Tenant | string |
+| TimeGenerated | datetime |
+| UpdatedOn | datetime |
+| UserName | string |
 
 ## Solutions (1)
 

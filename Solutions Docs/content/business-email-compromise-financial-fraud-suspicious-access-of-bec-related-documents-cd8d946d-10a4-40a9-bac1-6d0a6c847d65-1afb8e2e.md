@@ -1,4 +1,4 @@
-# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Suspicious access of BEC related documents
+# Suspicious access of BEC related documents
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -18,12 +18,6 @@
 | **Tactics** | Collection |
 | **Techniques** | T1530 |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Business%20Email%20Compromise%20-%20Financial%20Fraud/Analytic%20Rules/SuspiciousAccessOfBECRelatedDocuments.yaml) |
-
-## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
-
-This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
-
-- [`imFileEvent`](../asim/imfileevent.md)
 
 ---
 

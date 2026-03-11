@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>CarbonBlack_Watchlist_CL</h1>
@@ -32,8 +35,8 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (32 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Carbon%20Black%20Cloud/Data%20Connectors/VMwareCarbonBlackCloud_ccp/CarbonBlack_DCR.json">Data Collection Rule definition</a></p>
+<h2>Schema (33 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Carbon%20Black%20Cloud%5CData%20Connectors%5CVMwareCarbonBlackCloud_ccp/table_watclist.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
 <tr>
@@ -43,131 +46,135 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">create_time</td>
+<td style="text-align: left;">CreateTime</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">device_external_ip</td>
+<td style="text-align: left;">DeviceExternalIp</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">device_id</td>
+<td style="text-align: left;">DeviceId</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">device_internal_ip</td>
+<td style="text-align: left;">DeviceInternalIp</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">device_name</td>
+<td style="text-align: left;">DeviceName</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">device_os</td>
+<td style="text-align: left;">DeviceOs</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">ioc_hit</td>
+<td style="text-align: left;">IocHit</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">ioc_id</td>
+<td style="text-align: left;">IocId</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">org_key</td>
+<td style="text-align: left;">OrgKey</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">parent_cmdline</td>
+<td style="text-align: left;">ParentCmdline</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">parent_guid</td>
+<td style="text-align: left;">ParentGuid</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">parent_hash</td>
+<td style="text-align: left;">ParentHash</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">parent_path</td>
+<td style="text-align: left;">ParentPath</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">parent_pid</td>
+<td style="text-align: left;">ParentPid</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">parent_publisher</td>
+<td style="text-align: left;">ParentPublisher</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">parent_reputation</td>
+<td style="text-align: left;">ParentReputation</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">parent_username</td>
+<td style="text-align: left;">ParentUsername</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">process_cmdline</td>
+<td style="text-align: left;">ProcessCmdline</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">process_guid</td>
+<td style="text-align: left;">ProcessGuid</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">process_hash</td>
+<td style="text-align: left;">ProcessHash</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">process_path</td>
+<td style="text-align: left;">ProcessPath</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">process_pid</td>
+<td style="text-align: left;">ProcessPid</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">process_publisher</td>
+<td style="text-align: left;">ProcessPublisher</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">process_reputation</td>
+<td style="text-align: left;">ProcessReputation</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">process_username</td>
+<td style="text-align: left;">ProcessUsername</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">report_id</td>
+<td style="text-align: left;">ReportId</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">report_name</td>
+<td style="text-align: left;">ReportName</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">report_tags</td>
+<td style="text-align: left;">ReportTags</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">schema</td>
+<td style="text-align: left;">Schema</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">severity</td>
+<td style="text-align: left;">Severity</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">type</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">Watchlists</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">watchlists</td>
+<td style="text-align: left;">WatchlistsType</td>
 <td style="text-align: left;">string</td>
 </tr>
 </tbody>

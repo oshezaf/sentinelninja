@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>GKEControllerManager</h1>
@@ -53,15 +56,14 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (30 columns)</h2>
-<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gkecontrollermanager">Azure Monitor documentation</a> · <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Kubernetes%20Engine/Data%20Connectors/GoogleKubernetesEngineLogs_ccp/GoogleKubernetesEngineLogs_DCR.json">Data Collection Rule definition</a></p>
+<h2>Schema (26 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gkecontrollermanager">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
 <tr>
 <th style="text-align: left;">Column Name</th>
 <th style="text-align: left;">Type</th>
 <th style="text-align: left;">Description</th>
-<th style="text-align: left;">Source</th>
 </tr>
 </thead>
 <tbody>
@@ -69,181 +71,131 @@
 <td style="text-align: left;">_BilledSize</td>
 <td style="text-align: left;">real</td>
 <td style="text-align: left;">The record size in bytes</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">_IsBillable</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ClusterName</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The name of the GKE cluster from which the log was generated.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ComponentLocation</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The zone or region of the Kubernetes component emitting the log.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ComponentName</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The name of the GKE control plane component (e.g., kube-controller-manager).</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ComputeResourceName</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The name of the compute resource (e.g., VM name or controller name) associated with the log.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Duration</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The time duration the operation took, generally in seconds with fractional precision (e.g., 1.234567s).</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">insertId</td>
+<td style="text-align: left;">InsertId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">A unique identifier for the log entry to prevent duplication.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">jsonPayload</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">Key</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">A unique identifier for the Kubernetes resource (typically namespace/name).</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Kind</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of Kubernetes resource being managed or referenced (e.g., Deployment, ReplicaSet).</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">labels</td>
+<td style="text-align: left;">Labels</td>
 <td style="text-align: left;">dynamic</td>
 <td style="text-align: left;">Dynamic field containing various labels associated with the log entry.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Location</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The geographical location (region or zone) of the cluster.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Logger</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The logging class or module that generated the message, often used for categorizing logs.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">logName</td>
+<td style="text-align: left;">LogName</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The full resource name of the log (e.g., projects/{project_id}/logs/{log_id}).</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Message</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The content of the log message.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Pid</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The process ID of the component that emitted the log, if available.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ProjectID</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The Google Cloud project ID where the GKE cluster is hosted.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">receiveTimestamp</td>
+<td style="text-align: left;">ReceiveTimestamp</td>
 <td style="text-align: left;">datetime</td>
 <td style="text-align: left;">The time the log was received by Cloud Logging.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">resource</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">severity</td>
+<td style="text-align: left;">Severity</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The severity level of the log (e.g., DEBUG, INFO, WARNING, ERROR).</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SourceFile</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The source file in the Kubernetes codebase where the log originated.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SourceLine</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The line number in the source file where the log was emitted.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">sourceLocation</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">SourceSystem</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SyncStatus</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The synchronization status or result of the controller operation (e.g., success, error, requeue).</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">TenantId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The Log Analytics workspace ID</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">TimeGenerated</td>
 <td style="text-align: left;">datetime</td>
 <td style="text-align: left;">The timestamp indicating when the log event was created or generated by the source system.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">timestamp</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">Type</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The name of the table</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 </tbody>
 </table>

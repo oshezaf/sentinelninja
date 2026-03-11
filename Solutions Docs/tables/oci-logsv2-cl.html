@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>OCI_LogsV2_CL</h1>
@@ -26,6 +29,10 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1</strong></td>
+<td style="text-align: left;">Yes 🔶 — uses type-suffixed column names</td>
+</tr>
 <tr>
 <td style="text-align: left;"><strong>Supports Transformations</strong></td>
 <td style="text-align: left;">✓ Yes</td>
@@ -44,59 +51,1076 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (11 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Oracle%20Cloud%20Infrastructure/Data%20Connectors/Oracle_Cloud_Infrastructure_CCP/OCI_DataConnector_DCR.json">Data Collection Rule definition</a></p>
+<h2>Schema (212 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Oracle%20Cloud%20Infrastructure%5CData%20Connectors%5COracle_Cloud_Infrastructure_CCP/OCI_DataConnector_Table.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
 <tr>
 <th style="text-align: left;">Column Name</th>
 <th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;">data</td>
 <td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Data</td>
 </tr>
 <tr>
-<td style="text-align: left;">dataschema</td>
+<td style="text-align: left;">data_action_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Data action s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_additionalDetails_description_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data additional details description s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_additionalDetails_homeRegionKey_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data additional details home region key s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_additionalDetails_id_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data additional details id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_additionalDetails_imageId_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data additional details image id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_additionalDetails_isAccessable_b</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Data additional details is accessable b</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_additionalDetails_isFreeTier_b</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Data additional details is free tier b</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_additionalDetails_lifeCycleState_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data additional details life cycle state s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_additionalDetails_namespace_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data additional details namespace s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_additionalDetails_oracleMyServicesIdentifier_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data additional details oracle my services identifier s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_additionalDetails_shape_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data additional details shape s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_additionalDetails_type_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data additional details type s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_additionalDetails_userId_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data additional details user id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_additionalDetails_volumeId_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data additional details volume id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_additionalDetails_X_Real_Port_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data additional details x real port s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_availabilityDomain_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data availability domain s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_bytesOut_d</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Data bytes out d</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_compartmentId_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data compartment id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_compartmentName_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data compartment name s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_definedTags_Oracle_Tags_CreatedBy_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data defined tags oracle tags created by s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_definedTags_Oracle_Tags_CreatedOn_t</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Data defined tags oracle tags created on t</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_destinationAddress_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data destination address s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_destinationPort_d</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Data destination port d</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_endTime_d</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Data end time d</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_eventGroupingId_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data event grouping id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_eventName_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data event name s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_flowid_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data flowid s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_freeformTags_VCN_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data freeform tags vcn s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_identity_authType_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data identity auth type s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_identity_callerId_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data identity caller id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_identity_callerName_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data identity caller name s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_identity_consoleSessionId_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data identity console session id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_identity_credentials_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data identity credentials s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_identity_ipAddress_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data identity ip address s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_identity_principalId_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data identity principal id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_identity_principalName_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data identity principal name s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_identity_tenantId_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data identity tenant id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_packets_d</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Data packets d</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_protocol_d</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Data protocol d</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_protocolName_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data protocol name s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_Accept_Encoding_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers accept encoding s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_Accept_Language_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers accept language s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_Accept_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers accept s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_auth_info_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers auth info s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_authorization_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers authorization s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_Cache_Control_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers cache control s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_Connection_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers connection s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_Content_Length_d</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Data request headers content length d</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_Content_Type_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers content type s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_Cookie_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers cookie s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_Date_t</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Data request headers date t</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_If_None_Match_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers if none match s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_oci_original_url_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers oci original url s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_oci_skip_authorization_for_splat_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers oci skip authorization for splat s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_oci_splat_audited_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers oci splat audited s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_oci_splat_generated_ocids_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers oci splat generated ocids s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_oci_splat_internal_context_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers oci splat internal context s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_opc_client_info_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers opc client info s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_opc_obo_token_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers opc obo token s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_opc_principal_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers opc principal s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_opc_request_id_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers opc request id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_opc_retry_token_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers opc retry token s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_Origin_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers origin s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_Referer_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers referer s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_User_Agent_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers user agent s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_x_content_sha256_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers x content sha256 s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_x_date_t</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Data request headers x date t</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_X_Forwarded_For_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers x forwarded for s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_X_Forwarded_Host_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers x forwarded host s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_X_Forwarded_Port_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers x forwarded port s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_X_Forwarded_Proto_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers x forwarded proto s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_X_OCI_LB_NetworkMetadata_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers x oci lb network metadata s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_X_OCI_LB_PrivateAccessMetadata_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers x oci lb private access metadata s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_X_Oracle_Auth_Client_CN_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers x oracle auth client cn s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_X_Real_IP_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers x real ip s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_headers_X_Real_Port_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request headers x real port s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_id_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_accessLevel_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request parameters access level s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_availabilityDomain_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request parameters availability domain s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_compartmentId_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request parameters compartment id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_compartmentIdInSubtree_b</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Data request parameters compartment id in subtree b</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_endTime_t</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Data request parameters end time t</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_fields_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request parameters fields s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_granularity_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request parameters granularity s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_id_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request parameters id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_imageId_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request parameters image id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_includeSubcompartments_b</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Data request parameters include subcompartments b</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_instanceId_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request parameters instance id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_isBanner_b</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Data request parameters is banner b</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_isMergeEnabled_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request parameters is merge enabled s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_lifecycleState_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request parameters lifecycle state s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_limit_d</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Data request parameters limit d</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_name_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request parameters name s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_operatingSystem_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request parameters operating system s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_operatingSystemVersion_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request parameters operating system version s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_page_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request parameters page s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_param0_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request parameters param0 s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_protocol_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request parameters protocol s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_serviceName_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request parameters service name s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_shape_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request parameters shape s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_sortBy_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request parameters sort by s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_sortOrder_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request parameters sort order s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_startTime_t</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Data request parameters start time t</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_streamPoolId_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request parameters stream pool id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_subnetId_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request parameters subnet id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_tenancy_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request parameters tenancy s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_userId_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request parameters user id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_parameters_vcnId_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request parameters vcn id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_request_path_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data request path s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_resourceId_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data resource id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_Access_Control_Allow_Credentials_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data response headers access control allow credentials s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_access_control_allow_methods_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data response headers access control allow methods s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_Access_Control_Allow_Origin_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data response headers access control allow origin s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_Access_Control_Expose_Headers_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data response headers access control expose headers s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_Cache_Control_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data response headers cache control s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_Connection_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data response headers connection s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_Content_Encoding_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data response headers content encoding s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_Content_Length_d</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Data response headers content length d</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_Content_Security_Policy_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data response headers content security policy s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_Content_Type_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data response headers content type s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_Date_t</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Data response headers date t</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_Etag_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data response headers etag s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_Location_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data response headers location s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_opc_limit_d</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Data response headers opc limit d</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_opc_next_page_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data response headers opc next page s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_opc_prev_page_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data response headers opc prev page s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_opc_previous_page_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data response headers opc previous page s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_Opc_Request_Id_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data response headers opc request id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_opc_work_request_id_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data response headers opc work request id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_Pragma_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data response headers pragma s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_Strict_Transport_Security_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data response headers strict transport security s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_Timing_Allow_Origin_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data response headers timing allow origin s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_Transfer_Encoding_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data response headers transfer encoding s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_Vary_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data response headers vary s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_x_api_id_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data response headers x api id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_X_Content_Type_Options_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data response headers x content type options s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_X_Frame_Options_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data response headers x frame options s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_headers_X_Xss_Protection_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data response headers x xss protection s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_payload_id_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data response payload id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_payload_resourceName_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data response payload resource name s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_responseTime_d</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Data response response time d</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_response_status_d</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Data response status d</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_sourceAddress_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data source address s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_sourcePort_d</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Data source port d</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_startTime_d</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Data start time d</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_compartmentId_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data state change current compartment id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_configuration_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data state change current configuration s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_definedTags_Oracle_Tags_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data state change current defined tags oracle tags s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_definedTags_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data state change current defined tags s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_displayName_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data state change current display name s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_fingerprint_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data state change current fingerprint s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_freeformTags_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data state change current freeform tags s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_id_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data state change current id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_Instance_agentConfig_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data state change current instance agent config s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_Instance_availabilityConfig_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data state change current instance availability config s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_Instance_availabilityDomain_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data state change current instance availability domain s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_Instance_compartmentId_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data state change current instance compartment id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_Instance_definedTags_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data state change current instance defined tags s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_Instance_displayName_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data state change current instance display name s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_instanceId_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data state change current instance id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_isEnabled_b</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Data state change current is enabled b</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_keyId_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data state change current key id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_keyValue_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data state change current key value s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_lifecycleDetails_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data state change current lifecycle details s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_lifecycleState_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data state change current lifecycle state s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_LoadBalancers_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data state change current load balancers s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_logGroupId_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data state change current log group id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_logType_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data state change current log type s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_retentionDuration_d</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Data state change current retention duration d</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_systemTags_orcl_cloud_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data state change current system tags orcl cloud s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_tenancyId_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data state change current tenancy id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_timeCreated_t</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Data state change current time created t</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_timeLastModified_t</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Data state change current time last modified t</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_timeUpdated_t</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Data state change current time updated t</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_userDisplayName_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data state change current user display name s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_userId_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data state change current user id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_stateChange_current_userName_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data state change current user name s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_status_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data status s</td>
+</tr>
+<tr>
+<td style="text-align: left;">data_version_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data version s</td>
+</tr>
+<tr>
+<td style="text-align: left;">dataschema_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Dataschema s</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstBytes</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Dst bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstIpAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Dst ip addr</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstPortNumber</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Dst port number</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventEndTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Event end time</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventMessage</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Event message</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventProduct</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Event product</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventStartTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Event start time</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Event type</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventVendor</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Event vendor</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpRequestMethod</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Http request method</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpStatusCode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Http status code</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpUserAgentOriginal</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Http user agent original</td>
 </tr>
 <tr>
 <td style="text-align: left;">id</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Id</td>
+</tr>
+<tr>
+<td style="text-align: left;">id_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Id s</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkProtocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Network protocol</td>
 </tr>
 <tr>
 <td style="text-align: left;">oracle</td>
 <td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Oracle</td>
 </tr>
 <tr>
-<td style="text-align: left;">source</td>
+<td style="text-align: left;">oracle_compartmentid_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Oracle compartmentid s</td>
 </tr>
 <tr>
-<td style="text-align: left;">specversion</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">stream</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">time</td>
+<td style="text-align: left;">oracle_ingestedtime_t</td>
 <td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Oracle ingestedtime t</td>
 </tr>
 <tr>
-<td style="text-align: left;">type</td>
+<td style="text-align: left;">oracle_loggroupid_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Oracle loggroupid s</td>
+</tr>
+<tr>
+<td style="text-align: left;">oracle_logid_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Oracle logid s</td>
+</tr>
+<tr>
+<td style="text-align: left;">oracle_tenantid_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Oracle tenantid s</td>
+</tr>
+<tr>
+<td style="text-align: left;">oracle_vniccompartmentocid_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Oracle vniccompartmentocid s</td>
+</tr>
+<tr>
+<td style="text-align: left;">oracle_vnicocid_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Oracle vnicocid s</td>
+</tr>
+<tr>
+<td style="text-align: left;">oracle_vnicsubnetocid_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Oracle vnicsubnetocid s</td>
+</tr>
+<tr>
+<td style="text-align: left;">source_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source s</td>
+</tr>
+<tr>
+<td style="text-align: left;">specversion_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specversion s</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcIpAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Src ip addr</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcPortNumber</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Src port number</td>
+</tr>
+<tr>
+<td style="text-align: left;">StreamName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Stream name</td>
+</tr>
+<tr>
+<td style="text-align: left;">time_t</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Time t</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time when the log entry was generated</td>
 </tr>
 </tbody>
 </table>

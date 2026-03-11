@@ -10,40 +10,41 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
-## Schema (28 columns)
+## Schema (29 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Styx%20Intelligence/Data%20Connectors/Alerts/StyxView%20Alerts_DCR.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Styx%20Intelligence%5CData%20Connectors%5CAlerts/StyxView%20Alerts_Table.json)
 
-| Column Name | Type |
-|:------------|:-----|
-| alert_account_id | int |
-| alert_account_name | string |
-| alert_alert_status_id | int |
-| alert_client_id | int |
-| alert_client_name | string |
-| alert_content | string |
-| alert_datetime | datetime |
-| alert_entity_category_id | int |
-| alert_entity_category_name | string |
-| alert_entity_description | string |
-| alert_entity_details | string |
-| alert_entity_id | int |
-| alert_entity_impact | string |
-| alert_entity_name | string |
-| alert_id | int |
-| alert_id_original | int |
-| alert_l3_page_link | string |
-| alert_notification_sent | int |
-| alert_project_id | int |
-| alert_project_name | string |
-| alert_read | int |
-| alert_severity | int |
-| alert_solution_id | int |
-| alert_solution_name | string |
-| alert_status_value | string |
-| alert_ticket_number | string |
-| alert_timestamp_original | datetime |
-| alert_uuid | string |
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| AlertAccountId | int |  |
+| AlertAccountName | string |  |
+| AlertAlertStatusId | int |  |
+| AlertClientId | int |  |
+| AlertClientName | string |  |
+| AlertContent | string |  |
+| AlertDateTime | datetime |  |
+| AlertEntityCategoryId | int |  |
+| AlertEntityCategoryName | string |  |
+| AlertEntityDescription | string |  |
+| AlertEntityDetails | string |  |
+| AlertEntityId | int |  |
+| AlertEntityImpact | string |  |
+| AlertEntityName | string |  |
+| AlertId | int |  |
+| AlertIdOriginal | int |  |
+| AlertL3PageLink | string |  |
+| AlertNotificationSent | int |  |
+| AlertProjectId | int |  |
+| AlertProjectName | string |  |
+| AlertRead | int |  |
+| AlertSeverity | int |  |
+| AlertSolutionId | int |  |
+| AlertSolutionName | string |  |
+| AlertStatusValue | string |  |
+| AlertTicketNumber | string |  |
+| AlertTimestampOriginal | datetime |  |
+| AlertUuid | string |  |
+| TimeGenerated | datetime | The timestamp (UTC) reflecting the time in which the event was generated. |
 
 ## Solutions (1)
 

@@ -13,15 +13,15 @@
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (34 columns)
+## Schema (33 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Brand%20Intelligence/Data%20Connectors/CyfirmaBIAlerts_ccp/CyfirmaBIAlerts_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyfirmaBISocialHandlersAlerts_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
 | action | string |
-| alert_created_date | datetime |
 | alert_object_uid | string |
+| Alert_title | string |
 | alert_uid | string |
 | asset_comments | string |
 | asset_type | string |
@@ -35,7 +35,6 @@
 | dr_sub_domain | string |
 | first_seen | datetime |
 | impact | string |
-| is_third_party | boolean |
 | last_seen | datetime |
 | notes | dynamic |
 | posted_date | string |
@@ -50,7 +49,7 @@
 | source_type | dynamic |
 | status | string |
 | sub_category | string |
-| title | string |
+| TimeGenerated | datetime |
 | uid | string |
 | use_cases | string |
 

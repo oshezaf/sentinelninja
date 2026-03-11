@@ -3,16 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>&lt;img src=&quot;../images/asim-badge.png&quot; alt=&quot;ASIM&quot; height=&quot;32&quot;&gt; DNS Essentials Solution for Microsoft Sentinel Preview &mdash; Solutions Analyzer</title>
+<title>DNS Essentials Solution for Microsoft Sentinel Preview &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
     <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
-<h1><img src="../images/asim-badge.png" alt="ASIM" height="32"> DNS Essentials Solution for Microsoft Sentinel (Preview)</h1>
+<h1>DNS Essentials Solution for Microsoft Sentinel (Preview)</h1>
 <p><em>Solution: DNS Essentials</em></p>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="DNS Essentials Logo" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
@@ -65,7 +68,21 @@
 </tbody>
 </table>
 <p>This is a <a href="https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fazure%2Fsentinel%2Fsentinel-solutions-catalog%23domain-solutions&amp;data=05%7C01%7Ckavishbakshi%40microsoft.com%7Cbe2a496082b24caa4b8c08da9cefacca%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637994850502413731%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=OJegu%2B2EqD7rmYmK9pm9QniD6YWp5ooloZ6tHzcwVi0%3D&amp;reserved=0">domain solution</a> and does not include any data connectors. The content in this solution requires one of the product solutions below, as well as any other connector or data source normalized to the <a href="https://aka.ms/AboutASIM">ASIM</a>.</p>
-<p>For details on the data sources and ASIM parsers supported by this solution, see the <a href="#asim-pre-requisites">ASIM Pre-requisites</a> section below.</p>
+<p><strong>Prerequisite :-</strong></p>
+<p>Install one or more of the listed solutions, or develop your custom ASIM parsers to unlock the value provided by this solution.
+ 1. Windows Server DNS 
+ 2. Azure Firewall 
+ 3. Cisco Umbrella 
+ 4. Corelight Zeek 
+ 5. Google Cloud Platform DNS 
+ 6. Infoblox NIOS 
+ 7. ISC Bind 
+ 8. Vectra AI 
+ 9. Zscaler Internet Access </p>
+<p><strong>Underlying Microsoft Technologies used:</strong> </p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in Preview state or might result in additional ingestion or operational costs: 
+ 1. Product solutions as described above 
+ 2. Logic app for data summarization</p>
 <p><strong>Recommendation :-</strong></p>
 <p>It is highly recommended to use the <strong>Summarize Data for DNS Essentials Solution</strong> logic app playbook provided with this solution as it will significantly improve the performance of the Workbook, Analytic rules &amp; Hunting queries.</p>
 <p><strong>Additional Information</strong></p>
@@ -75,106 +92,13 @@
 </ul>
 <h2>Contents</h2>
 <ul>
-<li><a href="#asim-pre-requisites">ASIM Pre-requisites</a></li>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#internal-tables">Internal Tables</a></li>
 <li><a href="#content-items">Content Items</a></li>
 </ul>
-<h2><a id="asim-pre-requisites"></a><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Pre-requisites</h2>
-<p>This solution uses the <a href="../asim/imdns.html"><code>_Im_Dns</code></a> <a href="https://learn.microsoft.com/azure/sentinel/normalization">ASIM (Advanced Security Information Model)</a> parser to provide normalized, source-agnostic data access, expanding detection coverage without modifying queries.</p>
-<h3>Supported Products</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Product</th>
-<th style="text-align: left;">Dependency Solution</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#azure-firewall">Azure Firewall</a></td>
-<td style="text-align: left;"><a href="azure-firewall.html">Azure Firewall</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#cisco-umbrella">Cisco Umbrella</a></td>
-<td style="text-align: left;"><a href="ciscoumbrella.html">CiscoUmbrella</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#corelight-zeek">Corelight Zeek</a></td>
-<td style="text-align: left;"><a href="corelight.html">Corelight</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#fortinet-fortigate">Fortinet FortiGate</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#gcp-cloud-dns">GCP Cloud DNS</a></td>
-<td style="text-align: left;">-</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#infoblox-bloxone">Infoblox BloxOne</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#infoblox-nios">Infoblox NIOS</a></td>
-<td style="text-align: left;"><a href="syslog.html">Syslog</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#ms-dns-events">MS DNS Events</a></td>
-<td style="text-align: left;"><a href="nxlogdnslogs.html">NXLogDNSLogs</a><br><a href="windows-server-dns.html">Windows Server DNS</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-windows-events-sysmon">Microsoft Windows Events Sysmon</a></td>
-<td style="text-align: left;"><a href="windows-forwarded-events.html">Windows Forwarded Events</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#native">Native</a></td>
-<td style="text-align: left;"><a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#sentinelone">SentinelOne</a></td>
-<td style="text-align: left;"><a href="sentinelone.html">SentinelOne</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#vectra-ai-streams">Vectra AI Streams</a></td>
-<td style="text-align: left;"><a href="customlogsama.html">CustomLogsAma</a><br><a href="vectra-ai-stream.html">Vectra AI Stream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#zscaler-zia-dns">Zscaler ZIA DNS</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-</tbody>
-</table>
 <h2>Data Connectors</h2>
-<p><strong>This solution does not include its own data connectors</strong> but uses connectors from dependency solutions:</p>
-<ul>
-<li><a href="../connectors/aivectrastream.html">AI Vectra Stream via Legacy Agent</a> <em>(dependency on <a href="vectra-ai-stream.html">Vectra AI Stream</a>)</em></li>
-<li><a href="../connectors/asimdnsactivitylogs.html">Windows DNS Events via AMA</a> <em>(dependency on <a href="windows-server-dns.html">Windows Server DNS</a>)</em></li>
-<li><a href="../connectors/azurefirewall.html">Azure Firewall</a> <em>(dependency on <a href="azure-firewall.html">Azure Firewall</a>)</em></li>
-<li><a href="../connectors/cef.html">Common Event Format (CEF)</a> <em>(dependency on <a href="common-event-format.html">Common Event Format</a>)</em></li>
-<li><a href="../connectors/cefama.html">Common Event Format (CEF) via AMA</a> <em>(dependency on <a href="common-event-format.html">Common Event Format</a>)</em></li>
-<li><a href="../connectors/ciscoumbrelladataconnector.html">Cisco Cloud Security</a> <em>(dependency on <a href="ciscoumbrella.html">CiscoUmbrella</a>)</em></li>
-<li><a href="../connectors/ciscoumbrelladataconnectorelasticpremium.html">Cisco Cloud Security (using elastic premium plan)</a> <em>(dependency on <a href="ciscoumbrella.html">CiscoUmbrella</a>)</em></li>
-<li><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> <em>(dependency on <a href="corelight.html">Corelight</a>)</em></li>
-<li><a href="../connectors/crowdstrikeapiconnector.html">CrowdStrike API Data Connector (via Codeless Connector Framework)</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
-<li><a href="../connectors/crowdstrikefalconadversaryintelligence.html">CrowdStrike Falcon Adversary Intelligence </a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
-<li><a href="../connectors/crowdstrikefalconendpointprotection.html">[Deprecated] CrowdStrike Falcon Endpoint Protection via Legacy Agent</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
-<li><a href="../connectors/crowdstrikefalconendpointprotectionama.html">[Deprecated] CrowdStrike Falcon Endpoint Protection via AMA</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
-<li><a href="../connectors/crowdstrikefalcons3ccpdefinition.html">CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
-<li><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
-<li><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> <em>(dependency on <a href="customlogsama.html">CustomLogsAma</a>)</em></li>
-<li><a href="../connectors/dns.html">DNS</a> <em>(dependency on <a href="windows-server-dns.html">Windows Server DNS</a>)</em></li>
-<li><a href="../connectors/nxlogdnslogs.html">NXLog DNS Logs</a> <em>(dependency on <a href="nxlogdnslogs.html">NXLogDNSLogs</a>)</em></li>
-<li><a href="../connectors/sentinelone.html">SentinelOne</a> <em>(dependency on <a href="sentinelone.html">SentinelOne</a>)</em></li>
-<li><a href="../connectors/sentineloneccp.html">SentinelOne</a> <em>(dependency on <a href="sentinelone.html">SentinelOne</a>)</em></li>
-<li><a href="../connectors/syslog.html">Syslog via Legacy Agent</a> <em>(dependency on <a href="syslog.html">Syslog</a>)</em></li>
-<li><a href="../connectors/syslogama.html">Syslog via AMA</a> <em>(dependency on <a href="syslog.html">Syslog</a>)</em></li>
-<li><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a> <em>(dependency on <a href="vectra-ai-stream.html">Vectra AI Stream</a>)</em></li>
-<li><a href="../connectors/virtualmetricdirectorproxy.html">VirtualMetric Director Proxy</a> <em>(dependency on <a href="virtualmetric-datastream.html">VirtualMetric DataStream</a>)</em></li>
-<li><a href="../connectors/virtualmetricmssentinelconnector.html">VirtualMetric DataStream for Microsoft Sentinel</a> <em>(dependency on <a href="virtualmetric-datastream.html">VirtualMetric DataStream</a>)</em></li>
-<li><a href="../connectors/virtualmetricmssentineldatalakeconnector.html">VirtualMetric DataStream for Microsoft Sentinel data lake</a> <em>(dependency on <a href="virtualmetric-datastream.html">VirtualMetric DataStream</a>)</em></li>
-<li><a href="../connectors/windowsforwardedevents.html">Windows Forwarded Events</a> <em>(dependency on <a href="windows-forwarded-events.html">Windows Forwarded Events</a>)</em></li>
-</ul>
+<p><strong>This solution does not include data connectors.</strong></p>
+<p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
 <h2>Internal Tables</h2>
 <p>The following <strong>5 table(s)</strong> are used internally by this solution's content items:</p>
 <table>
@@ -247,58 +171,58 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/dns-essentials-detect-dns-queries-reporting-multiple-errors-from-different-clients-anomaly-based-asim-dn-cf687598-5a2c-46f8-81c8-06b15ed489b1-e7ae2b7d.html">Detect DNS queries reporting multiple errors from different clients - Anomaly Based (ASIM DNS Solution)</a></td>
+<td style="text-align: left;"><a href="../content/dns-essentials-detect-dns-queries-reporting-multiple-errors-from-different-clients-anomaly-based-asim-dn-cf687598-5a2c-46f8-81c8-06b15ed489b1-e7ae2b7d.html">Detect DNS queries reporting multiple errors from different clients - Anomaly Based (ASIM DNS Solution)</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">CommandAndControl</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imdns.html"><code>_Im_Dns</code></a><br><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a></td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/dns-essentials-detect-dns-queries-reporting-multiple-errors-from-different-clients-static-threshold-base-5b8344eb-fa28-4ac3-bcff-bc19d5d63089-d16106dc.html">Detect DNS queries reporting multiple errors from different clients - Static threshold based (ASIM DNS Solution)</a></td>
+<td style="text-align: left;"><a href="../content/dns-essentials-detect-dns-queries-reporting-multiple-errors-from-different-clients-static-threshold-base-5b8344eb-fa28-4ac3-bcff-bc19d5d63089-d16106dc.html">Detect DNS queries reporting multiple errors from different clients - Static threshold based (ASIM DNS Solution)</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">CommandAndControl</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imdns.html"><code>_Im_Dns</code></a></td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/dns-essentials-detect-excessive-nxdomain-dns-queries-anomaly-based-asim-dns-solution-02f23312-1a33-4390-8b80-f7cd4df4dea0-980141b9.html">Detect excessive NXDOMAIN DNS queries - Anomaly based (ASIM DNS Solution)</a></td>
+<td style="text-align: left;"><a href="../content/dns-essentials-detect-excessive-nxdomain-dns-queries-anomaly-based-asim-dns-solution-02f23312-1a33-4390-8b80-f7cd4df4dea0-980141b9.html">Detect excessive NXDOMAIN DNS queries - Anomaly based (ASIM DNS Solution)</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">CommandAndControl</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imdns.html"><code>_Im_Dns</code></a><br><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a></td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/dns-essentials-detect-excessive-nxdomain-dns-queries-static-threshold-based-asim-dns-solution-4ab8b09e-3c23-4974-afbe-7e653779eb2b-b0da6e00.html">Detect excessive NXDOMAIN DNS queries - Static threshold based (ASIM DNS Solution)</a></td>
+<td style="text-align: left;"><a href="../content/dns-essentials-detect-excessive-nxdomain-dns-queries-static-threshold-based-asim-dns-solution-4ab8b09e-3c23-4974-afbe-7e653779eb2b-b0da6e00.html">Detect excessive NXDOMAIN DNS queries - Static threshold based (ASIM DNS Solution)</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">CommandAndControl</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imdns.html"><code>_Im_Dns</code></a></td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/dns-essentials-ngrok-reverse-proxy-on-network-asim-dns-solution-50b0dfb7-2c94-4eaf-a332-a5936d78c263-4a9c6d43.html">Ngrok Reverse Proxy on Network (ASIM DNS Solution)</a></td>
+<td style="text-align: left;"><a href="../content/dns-essentials-ngrok-reverse-proxy-on-network-asim-dns-solution-50b0dfb7-2c94-4eaf-a332-a5936d78c263-4a9c6d43.html">Ngrok Reverse Proxy on Network (ASIM DNS Solution)</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">CommandAndControl</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imdns.html"><code>_Im_Dns</code></a></td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/dns-essentials-potential-dga-domain-generation-algorithm-detected-via-repetitive-failures-anomaly-based--01191239-274e-43c9-b154-3a042692af06-1a7b8167.html">Potential DGA(Domain Generation Algorithm) detected via Repetitive Failures - Anomaly based (ASIM DNS Solution)</a></td>
+<td style="text-align: left;"><a href="../content/dns-essentials-potential-dga-domain-generation-algorithm-detected-via-repetitive-failures-anomaly-based--01191239-274e-43c9-b154-3a042692af06-1a7b8167.html">Potential DGA(Domain Generation Algorithm) detected via Repetitive Failures - Anomaly based (ASIM DNS Solution)</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">CommandAndControl</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imdns.html"><code>_Im_Dns</code></a><br><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a></td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/dns-essentials-potential-dga-domain-generation-algorithm-detected-via-repetitive-failures-static-thresho-89ba52fa-96a7-4653-829a-ca49bb13336c-71c9371c.html">Potential DGA(Domain Generation Algorithm) detected via Repetitive Failures - Static threshold based (ASIM DNS Solution)</a></td>
+<td style="text-align: left;"><a href="../content/dns-essentials-potential-dga-domain-generation-algorithm-detected-via-repetitive-failures-static-thresho-89ba52fa-96a7-4653-829a-ca49bb13336c-71c9371c.html">Potential DGA(Domain Generation Algorithm) detected via Repetitive Failures - Static threshold based (ASIM DNS Solution)</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">CommandAndControl</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imdns.html"><code>_Im_Dns</code></a></td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/dns-essentials-rare-client-observed-with-high-reverse-dns-lookup-count-anomaly-based-asim-dns-solution-0fe6bde4-b215-480c-99b4-84a96edcdbd7-c30ddd41.html">Rare client observed with high reverse DNS lookup count - Anomaly based (ASIM DNS Solution)</a></td>
+<td style="text-align: left;"><a href="../content/dns-essentials-rare-client-observed-with-high-reverse-dns-lookup-count-anomaly-based-asim-dns-solution-0fe6bde4-b215-480c-99b4-84a96edcdbd7-c30ddd41.html">Rare client observed with high reverse DNS lookup count - Anomaly based (ASIM DNS Solution)</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">Reconnaissance</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imdns.html"><code>_Im_Dns</code></a></td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/dns-essentials-rare-client-observed-with-high-reverse-dns-lookup-count-static-threshold-based-asim-dns-s-77b7c820-5f60-4779-8bdb-f06e21add5f1-4a01cdd0.html">Rare client observed with high reverse DNS lookup count - Static threshold based (ASIM DNS Solution)</a></td>
+<td style="text-align: left;"><a href="../content/dns-essentials-rare-client-observed-with-high-reverse-dns-lookup-count-static-threshold-based-asim-dns-s-77b7c820-5f60-4779-8bdb-f06e21add5f1-4a01cdd0.html">Rare client observed with high reverse DNS lookup count - Static threshold based (ASIM DNS Solution)</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">Reconnaissance</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imdns.html"><code>_Im_Dns</code></a></td>
+<td style="text-align: left;">-</td>
 </tr>
 </tbody>
 </table>
@@ -313,54 +237,54 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/dns-essentials-cve-2020-1350-sigred-exploitation-pattern-asim-dns-solution-0a8f5777-f38a-4c37-b531-411bdecef976-beaf980e.html">CVE-2020-1350 (SIGRED) exploitation pattern (ASIM DNS Solution)</a></td>
+<td style="text-align: left;"><a href="../content/dns-essentials-cve-2020-1350-sigred-exploitation-pattern-asim-dns-solution-0a8f5777-f38a-4c37-b531-411bdecef976-beaf980e.html">CVE-2020-1350 (SIGRED) exploitation pattern (ASIM DNS Solution)</a></td>
 <td style="text-align: left;">DefenseEvasion, PrivilegeEscalation</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imdns.html"><code>_Im_Dns</code></a></td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/dns-essentials-connection-to-unpopular-website-detected-asim-dns-solution-83e70a34-d96f-419d-815b-43d1499e88ed-193019cc.html">Connection to Unpopular Website Detected (ASIM DNS Solution)</a></td>
+<td style="text-align: left;"><a href="../content/dns-essentials-connection-to-unpopular-website-detected-asim-dns-solution-83e70a34-d96f-419d-815b-43d1499e88ed-193019cc.html">Connection to Unpopular Website Detected (ASIM DNS Solution)</a></td>
 <td style="text-align: left;">CommandAndControl</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imdns.html"><code>_Im_Dns</code></a><br><em>Internal use:</em><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a></td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/dns-essentials-increase-in-dns-requests-by-client-than-the-daily-average-count-asim-dns-solution-b31b5d70-4c75-4a5f-8af7-6a83f6eb372c-150365d8.html">Increase in DNS Requests by client than the daily average count (ASIM DNS Solution)</a></td>
+<td style="text-align: left;"><a href="../content/dns-essentials-increase-in-dns-requests-by-client-than-the-daily-average-count-asim-dns-solution-b31b5d70-4c75-4a5f-8af7-6a83f6eb372c-150365d8.html">Increase in DNS Requests by client than the daily average count (ASIM DNS Solution)</a></td>
 <td style="text-align: left;">CommandAndControl, Exfiltration</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imdns.html"><code>_Im_Dns</code></a></td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/dns-essentials-possible-dns-tunneling-or-data-exfiltration-activity-asim-dns-solution-74e8773c-dfa9-45ca-bb60-5d767303e5b3-4f04fe19.html">Possible DNS Tunneling or Data Exfiltration Activity (ASIM DNS Solution)</a></td>
+<td style="text-align: left;"><a href="../content/dns-essentials-possible-dns-tunneling-or-data-exfiltration-activity-asim-dns-solution-74e8773c-dfa9-45ca-bb60-5d767303e5b3-4f04fe19.html">Possible DNS Tunneling or Data Exfiltration Activity (ASIM DNS Solution)</a></td>
 <td style="text-align: left;">CommandAndControl, Exfiltration</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imdns.html"><code>_Im_Dns</code></a></td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/dns-essentials-potential-beaconing-activity-asim-dns-solution-c4956c0b-4527-406c-b135-ef44002e1e70-2cb4ba7f.html">Potential beaconing activity (ASIM DNS Solution)</a></td>
+<td style="text-align: left;"><a href="../content/dns-essentials-potential-beaconing-activity-asim-dns-solution-c4956c0b-4527-406c-b135-ef44002e1e70-2cb4ba7f.html">Potential beaconing activity (ASIM DNS Solution)</a></td>
 <td style="text-align: left;">CommandAndControl</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imdns.html"><code>_Im_Dns</code></a></td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/dns-essentials-top-25-dns-queries-with-most-failures-in-last-24-hours-asim-dns-solution-4717929b-121d-4d90-b7ba-e3259ef16aca-f88092fc.html">Top 25 DNS queries with most failures in last 24 hours (ASIM DNS Solution)</a></td>
+<td style="text-align: left;"><a href="../content/dns-essentials-top-25-dns-queries-with-most-failures-in-last-24-hours-asim-dns-solution-4717929b-121d-4d90-b7ba-e3259ef16aca-f88092fc.html">Top 25 DNS queries with most failures in last 24 hours (ASIM DNS Solution)</a></td>
 <td style="text-align: left;">CommandAndControl</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imdns.html"><code>_Im_Dns</code></a></td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/dns-essentials-top-25-domains-with-large-number-of-subdomains-asim-dns-solution-5366b848-0886-439f-b312-0b94bb687d06-95f74336.html">Top 25 Domains with large number of Subdomains (ASIM DNS Solution)</a></td>
+<td style="text-align: left;"><a href="../content/dns-essentials-top-25-domains-with-large-number-of-subdomains-asim-dns-solution-5366b848-0886-439f-b312-0b94bb687d06-95f74336.html">Top 25 Domains with large number of Subdomains (ASIM DNS Solution)</a></td>
 <td style="text-align: left;">CommandAndControl, Exfiltration</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imdns.html"><code>_Im_Dns</code></a></td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/dns-essentials-top-25-sources-clients-with-high-number-of-errors-in-last-24hours-asim-dns-solution-b35f6633-0d18-494c-a5e4-2828daf442bf-dd4cdd6a.html">Top 25 Sources(Clients) with high number of errors in last 24hours (ASIM DNS Solution)</a></td>
+<td style="text-align: left;"><a href="../content/dns-essentials-top-25-sources-clients-with-high-number-of-errors-in-last-24hours-asim-dns-solution-b35f6633-0d18-494c-a5e4-2828daf442bf-dd4cdd6a.html">Top 25 Sources(Clients) with high number of errors in last 24hours (ASIM DNS Solution)</a></td>
 <td style="text-align: left;">CommandAndControl</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imdns.html"><code>_Im_Dns</code></a></td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/dns-essentials-unexpected-top-level-domains-asim-dns-solution-4c8d6412-5a48-42c3-8b5e-1f29fb15c749-c748185b.html">Unexpected top level domains (ASIM DNS Solution)</a></td>
+<td style="text-align: left;"><a href="../content/dns-essentials-unexpected-top-level-domains-asim-dns-solution-4c8d6412-5a48-42c3-8b5e-1f29fb15c749-c748185b.html">Unexpected top level domains (ASIM DNS Solution)</a></td>
 <td style="text-align: left;">CommandAndControl</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imdns.html"><code>_Im_Dns</code></a></td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/dns-essentials-[anomaly]-anomalous-increase-in-dns-activity-by-clients-asim-dns-solution-50f0cdfb-8b01-4eca-823d-2bbe6b8a5b95-eb2b2313.html">[Anomaly] Anomalous Increase in DNS activity by clients (ASIM DNS Solution)</a></td>
+<td style="text-align: left;"><a href="../content/dns-essentials-[anomaly]-anomalous-increase-in-dns-activity-by-clients-asim-dns-solution-50f0cdfb-8b01-4eca-823d-2bbe6b8a5b95-eb2b2313.html">[Anomaly] Anomalous Increase in DNS activity by clients (ASIM DNS Solution)</a></td>
 <td style="text-align: left;">CommandAndControl, Exfiltration</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imdns.html"><code>_Im_Dns</code></a><br><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a></td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -374,8 +298,8 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/dns-essentials-dnssolutionworkbook-9b8ac8e7.html">DNSSolutionWorkbook</a></td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imdns.html"><code>_Im_Dns</code></a><br><em>Internal use:</em><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a><br><a href="../tables/dns-summarized-logs-sourceinfo-cl.html"><code>DNS_Summarized_Logs_sourceInfo_CL</code></a><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+<td style="text-align: left;"><a href="../content/dns-essentials-dnssolutionworkbook-9b8ac8e7.html">DNSSolutionWorkbook</a></td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a><br><a href="../tables/dns-summarized-logs-sourceinfo-cl.html"><code>DNS_Summarized_Logs_sourceInfo_CL</code></a><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -390,9 +314,9 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/dns-essentials-summarize-data-for-dns-essentials-solution-bd44274c.html">Summarize Data for DNS Essentials Solution</a></td>
+<td style="text-align: left;"><a href="../content/dns-essentials-summarize-data-for-dns-essentials-solution-bd44274c.html">Summarize Data for DNS Essentials Solution</a></td>
 <td style="text-align: left;">This playbook summarizes data for DNS Essentials Solution and ingests into custom tables.</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imdns.html"><code>_Im_Dns</code></a> <em>(read)</em><br><em>Internal use:</em><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a> <em>(read/write)</em><br><a href="../tables/dns-summarized-logs-sourceinfo-cl.html"><code>DNS_Summarized_Logs_sourceInfo_CL</code></a> <em>(read/write)</em></td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a> <em>(read/write)</em><br><a href="../tables/dns-summarized-logs-sourceinfo-cl.html"><code>DNS_Summarized_Logs_sourceInfo_CL</code></a> <em>(read/write)</em></td>
 </tr>
 </tbody>
 </table>

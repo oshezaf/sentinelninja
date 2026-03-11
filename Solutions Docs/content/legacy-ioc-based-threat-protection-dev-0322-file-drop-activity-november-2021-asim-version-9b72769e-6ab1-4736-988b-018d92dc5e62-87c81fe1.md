@@ -1,4 +1,4 @@
-# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Dev-0322 File Drop Activity November 2021 (ASIM Version)
+# Dev-0322 File Drop Activity November 2021 (ASIM Version)
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -18,12 +18,6 @@ This query hunts for file creation events linked to Dev-0322's compromise of ZOH
 | **Required Connectors** | [MicrosoftDefenderAdvancedThreatProtection](../connectors/microsoftdefenderadvancedthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Legacy%20IOC%20based%20Threat%20Protection/Hunting%20Queries/Dev-0322FileDropActivityNovember2021%28ASIMVersion%29.yaml) |
 
-## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
-
-This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
-
-- [`imFileEvent`](../asim/imfileevent.md)
-
 ## Tables Used
 
 This content item queries data from the following tables:
@@ -31,7 +25,6 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
-| [`imProcess`](../tables/improcess.md) | ? | ? | ? |
 
 ---
 

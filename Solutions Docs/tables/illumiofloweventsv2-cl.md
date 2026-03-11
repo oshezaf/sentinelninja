@@ -12,7 +12,7 @@
 
 ## Schema (18 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS/Data%20Connectors/IllumioSaasLogs_ccf/IllumioSaasLogs_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/IllumioFlowEventsV2_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
@@ -32,8 +32,8 @@
 | SrcLabels | string |
 | SrcName | string |
 | SrcType | string |
-| StartTime | datetime |
 | Status | string |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

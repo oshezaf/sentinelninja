@@ -12,7 +12,7 @@
 
 ## Schema (41 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Morphisec/Data%20Connectors/Morphisec_CCF/Morphisec_DCR.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Morphisec%5CData%20Connectors%5CMorphisec_CCF/Morphisec_Table.json)
 
 | Column Name | Type |
 |:------------|:-----|

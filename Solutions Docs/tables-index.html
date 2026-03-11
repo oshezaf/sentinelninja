@@ -10,13 +10,16 @@
 <body>
 <nav class="navbar">
     <a href="../index.html" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>Microsoft Sentinel Tables Index</h1>
 <p>Tables in Microsoft Sentinel store the security data ingested by data connectors and referenced by content items such as analytics rules and hunting queries. Each table represents a specific data type (such as sign-in logs, network traffic, or security events) and follows a defined schema with columns for relevant attributes.</p>
 <p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <strong>Tables</strong> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="statistics.html">📊</a></p>
 <hr />
-<p><strong>2024 tables</strong> documented (830 ingested by connectors, 219 referenced by content only). See <a href="statistics.html">📊 Statistics</a> for detailed breakdowns.</p>
+<p><strong>2008 tables</strong> documented (829 ingested by connectors, 196 referenced by content only). See <a href="statistics.html">📊 Statistics</a> for detailed breakdowns.</p>
 <p>The <strong>Discovered Via</strong> column shows how each table was identified. When a table appears in multiple sources, the highest-priority source is shown:</p>
 <ol>
 <li><strong>Connector</strong> — the table is ingested by a data connector</li>
@@ -1265,9 +1268,9 @@
 <tr>
 <td><a href="tables/alsidforadlog-cl.html">AlsidForADLog_CL</a> 📖</td>
 <td style="text-align: left;">Connector</td>
-<td style="text-align: center;"><a href="tables/alsidforadlog-cl.html">1</a></td>
-<td style="text-align: center;"><a href="tables/alsidforadlog-cl.html">1</a></td>
-<td style="text-align: left;">-</td>
+<td style="text-align: center;"><a href="tables/alsidforadlog-cl.html">3</a></td>
+<td style="text-align: center;"><a href="tables/alsidforadlog-cl.html">3</a></td>
+<td style="text-align: left;">Analytics, Workbooks</td>
 </tr>
 <tr>
 <td><a href="tables/amatelemetryevents.html">AMATelemetryEvents</a></td>
@@ -1802,7 +1805,7 @@
 <td style="text-align: left;">Analytics, Workbooks</td>
 </tr>
 <tr>
-<td><a href="tables/argsentdc-cl.html">argsentdc_CL</a> 📖</td>
+<td><a href="tables/argsentdc-cl.html">argsentdc_CL</a></td>
 <td style="text-align: left;">Connector</td>
 <td style="text-align: center;"><a href="tables/argsentdc-cl.html">1</a></td>
 <td style="text-align: center;"><a href="tables/argsentdc-cl.html">1</a></td>
@@ -1865,13 +1868,6 @@
 <td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td><a href="asim/asimauditevent.html">ASimAuditEvent</a></td>
-<td style="text-align: left;">Content</td>
-<td style="text-align: center;"><a href="asim/asimauditevent.html">1</a></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: left;">Workbooks</td>
-</tr>
-<tr>
 <td><a href="tables/asimauditeventlogs.html">ASimAuditEventLogs</a> 📖</td>
 <td style="text-align: left;">Connector</td>
 <td style="text-align: center;"><a href="tables/asimauditeventlogs.html">6</a></td>
@@ -1908,10 +1904,10 @@
 </tr>
 <tr>
 <td><a href="asim/asimdns.html">ASimDns</a> 📖</td>
-<td style="text-align: left;">Content</td>
-<td style="text-align: center;"><a href="asim/asimdns.html">1</a></td>
+<td style="text-align: left;">Schema</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: left;">Workbooks</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
 <td><a href="tables/asimdnsactivitylogs.html">ASimDnsActivityLogs</a> 📖 ➕</td>
@@ -1949,13 +1945,6 @@
 <td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td><a href="asim/asimnetworksession.html">ASimNetworkSession</a></td>
-<td style="text-align: left;">Content</td>
-<td style="text-align: center;"><a href="asim/asimnetworksession.html">1</a></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: left;">Workbooks</td>
-</tr>
-<tr>
 <td><a href="tables/asimnetworksessionlogs.html">ASimNetworkSessionLogs</a> 📖</td>
 <td style="text-align: left;">Connector</td>
 <td style="text-align: center;"><a href="tables/asimnetworksessionlogs.html">6</a></td>
@@ -1963,46 +1952,11 @@
 <td style="text-align: left;">Workbooks</td>
 </tr>
 <tr>
-<td><a href="asim/asimnetworksessionmd4iotsensor.html">ASimNetworkSessionMD4IoTSensor</a></td>
-<td style="text-align: left;">Content</td>
-<td style="text-align: center;"><a href="asim/asimnetworksessionmd4iotsensor.html">1</a></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: left;">Workbooks</td>
-</tr>
-<tr>
 <td><a href="asim/asimnetworksessionsonicwallfirewall.html">ASimNetworkSessionSonicWallFirewall</a> 📖</td>
-<td style="text-align: left;">Content</td>
-<td style="text-align: center;"><a href="asim/asimnetworksessionsonicwallfirewall.html">1</a></td>
+<td style="text-align: left;">Schema</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: left;">Analytics, Hunting, Workbooks</td>
-</tr>
-<tr>
-<td><a href="tables/asimparsers.html">ASIMParsers</a></td>
-<td style="text-align: left;">Content</td>
-<td style="text-align: center;"><a href="tables/asimparsers.html">1</a></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: left;">Workbooks</td>
-</tr>
-<tr>
-<td><a href="tables/asimparsers.html">asimParsers</a></td>
-<td style="text-align: left;">Content</td>
-<td style="text-align: center;"><a href="tables/asimparsers.html">1</a></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: left;">Workbooks</td>
-</tr>
-<tr>
-<td><a href="tables/asimparsersdata.html">AsimParsersData</a></td>
-<td style="text-align: left;">Content</td>
-<td style="text-align: center;"><a href="tables/asimparsersdata.html">1</a></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: left;">Workbooks</td>
-</tr>
-<tr>
-<td><a href="asim/asimprocessevent.html">ASimProcessEvent</a></td>
-<td style="text-align: left;">Content</td>
-<td style="text-align: center;"><a href="asim/asimprocessevent.html">1</a></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
 <td><a href="tables/asimprocesseventlogs.html">ASimProcessEventLogs</a> 📖</td>
@@ -2047,24 +2001,10 @@
 <td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td><a href="asim/asimwebsession.html">ASimWebSession</a></td>
-<td style="text-align: left;">Content</td>
-<td style="text-align: center;"><a href="asim/asimwebsession.html">1</a></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: left;">Workbooks</td>
-</tr>
-<tr>
 <td><a href="tables/asimwebsessionlogs.html">ASimWebSessionLogs</a> 📖</td>
 <td style="text-align: left;">Connector</td>
 <td style="text-align: center;"><a href="tables/asimwebsessionlogs.html">3</a></td>
 <td style="text-align: center;"><a href="tables/asimwebsessionlogs.html">1</a></td>
-<td style="text-align: left;">Workbooks</td>
-</tr>
-<tr>
-<td><a href="asim/asimwebsessionsonicwallfirewall.html">ASimWebSessionSonicWallFirewall</a></td>
-<td style="text-align: left;">Content</td>
-<td style="text-align: center;"><a href="asim/asimwebsessionsonicwallfirewall.html">1</a></td>
-<td style="text-align: center;">-</td>
 <td style="text-align: left;">Workbooks</td>
 </tr>
 <tr>
@@ -2369,7 +2309,7 @@
 <td style="text-align: left;">Hunting</td>
 </tr>
 <tr>
-<td><a href="tables/awscloudfront-accesslog-cl.html">AWSCloudFront_AccessLog_CL</a> 📖</td>
+<td><a href="tables/awscloudfront-accesslog-cl.html">AWSCloudFront_AccessLog_CL</a></td>
 <td style="text-align: left;">Connector</td>
 <td style="text-align: center;"><a href="tables/awscloudfront-accesslog-cl.html">1</a></td>
 <td style="text-align: center;"><a href="tables/awscloudfront-accesslog-cl.html">1</a></td>
@@ -2943,14 +2883,14 @@
 <td style="text-align: left;">Workbooks</td>
 </tr>
 <tr>
-<td><a href="tables/bigiddspmassetstore-cl.html">BigIDDSPMAssetStore_CL</a> 📖</td>
+<td><a href="tables/bigiddspmassetstore-cl.html">BigIDDSPMAssetStore_CL</a></td>
 <td style="text-align: left;">Connector</td>
 <td style="text-align: center;"><a href="tables/bigiddspmassetstore-cl.html">1</a></td>
 <td style="text-align: center;"><a href="tables/bigiddspmassetstore-cl.html">1</a></td>
 <td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td><a href="tables/bigiddspmcatalog-cl.html">BigIDDSPMCatalog_CL</a> 📖</td>
+<td><a href="tables/bigiddspmcatalog-cl.html">BigIDDSPMCatalog_CL</a></td>
 <td style="text-align: left;">Connector</td>
 <td style="text-align: center;"><a href="tables/bigiddspmcatalog-cl.html">1</a></td>
 <td style="text-align: center;"><a href="tables/bigiddspmcatalog-cl.html">1</a></td>
@@ -5071,35 +5011,35 @@
 <td style="text-align: left;">Analytics, Workbooks</td>
 </tr>
 <tr>
-<td><a href="tables/cyeraassets-cl.html">CyeraAssets_CL</a> 📖</td>
+<td><a href="tables/cyeraassets-cl.html">CyeraAssets_CL</a></td>
 <td style="text-align: left;">Connector</td>
 <td style="text-align: center;"><a href="tables/cyeraassets-cl.html">1</a></td>
 <td style="text-align: center;"><a href="tables/cyeraassets-cl.html">2</a></td>
 <td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td><a href="tables/cyeraassets-ms-cl.html">CyeraAssets_MS_CL</a> 📖</td>
+<td><a href="tables/cyeraassets-ms-cl.html">CyeraAssets_MS_CL</a></td>
 <td style="text-align: left;">Connector</td>
 <td style="text-align: center;"><a href="tables/cyeraassets-ms-cl.html">1</a></td>
 <td style="text-align: center;"><a href="tables/cyeraassets-ms-cl.html">2</a></td>
 <td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td><a href="tables/cyeraclassifications-cl.html">CyeraClassifications_CL</a> 📖</td>
+<td><a href="tables/cyeraclassifications-cl.html">CyeraClassifications_CL</a></td>
 <td style="text-align: left;">Connector</td>
 <td style="text-align: center;"><a href="tables/cyeraclassifications-cl.html">1</a></td>
 <td style="text-align: center;"><a href="tables/cyeraclassifications-cl.html">2</a></td>
 <td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td><a href="tables/cyeraidentities-cl.html">CyeraIdentities_CL</a> 📖</td>
+<td><a href="tables/cyeraidentities-cl.html">CyeraIdentities_CL</a></td>
 <td style="text-align: left;">Connector</td>
 <td style="text-align: center;"><a href="tables/cyeraidentities-cl.html">1</a></td>
 <td style="text-align: center;"><a href="tables/cyeraidentities-cl.html">2</a></td>
 <td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td><a href="tables/cyeraissues-cl.html">CyeraIssues_CL</a> 📖</td>
+<td><a href="tables/cyeraissues-cl.html">CyeraIssues_CL</a></td>
 <td style="text-align: left;">Connector</td>
 <td style="text-align: center;"><a href="tables/cyeraissues-cl.html">1</a></td>
 <td style="text-align: center;"><a href="tables/cyeraissues-cl.html">2</a></td>
@@ -6471,21 +6411,21 @@
 <td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td><a href="tables/druvainsyncevents-cl.html">DruvaInsyncEvents_CL</a> 📖</td>
+<td><a href="tables/druvainsyncevents-cl.html">DruvaInsyncEvents_CL</a></td>
 <td style="text-align: left;">Connector</td>
 <td style="text-align: center;"><a href="tables/druvainsyncevents-cl.html">1</a></td>
 <td style="text-align: center;"><a href="tables/druvainsyncevents-cl.html">1</a></td>
 <td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td><a href="tables/druvaplatformevents-cl.html">DruvaPlatformEvents_CL</a> 📖</td>
+<td><a href="tables/druvaplatformevents-cl.html">DruvaPlatformEvents_CL</a></td>
 <td style="text-align: left;">Connector</td>
 <td style="text-align: center;"><a href="tables/druvaplatformevents-cl.html">1</a></td>
 <td style="text-align: center;"><a href="tables/druvaplatformevents-cl.html">1</a></td>
 <td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td><a href="tables/druvasecurityevents-cl.html">DruvaSecurityEvents_CL</a> 📖</td>
+<td><a href="tables/druvasecurityevents-cl.html">DruvaSecurityEvents_CL</a></td>
 <td style="text-align: left;">Connector</td>
 <td style="text-align: center;"><a href="tables/druvasecurityevents-cl.html">1</a></td>
 <td style="text-align: center;"><a href="tables/druvasecurityevents-cl.html">1</a></td>
@@ -6793,7 +6733,7 @@
 <td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td><a href="tables/ermesbrowsersecurityevents-cl.html">ErmesBrowserSecurityEvents_CL</a> 📖</td>
+<td><a href="tables/ermesbrowsersecurityevents-cl.html">ErmesBrowserSecurityEvents_CL</a></td>
 <td style="text-align: left;">Connector</td>
 <td style="text-align: center;"><a href="tables/ermesbrowsersecurityevents-cl.html">1</a></td>
 <td style="text-align: center;"><a href="tables/ermesbrowsersecurityevents-cl.html">1</a></td>
@@ -7325,7 +7265,7 @@
 <td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td><a href="tables/gcploadbalancerlogs-cl.html">GCPLoadBalancerLogs_CL</a> 📖</td>
+<td><a href="tables/gcploadbalancerlogs-cl.html">GCPLoadBalancerLogs_CL</a></td>
 <td style="text-align: left;">Connector</td>
 <td style="text-align: center;"><a href="tables/gcploadbalancerlogs-cl.html">1</a></td>
 <td style="text-align: center;"><a href="tables/gcploadbalancerlogs-cl.html">1</a></td>
@@ -8319,20 +8259,6 @@
 <td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td><a href="tables/image.html">image</a></td>
-<td style="text-align: left;">Content</td>
-<td style="text-align: center;"><a href="tables/image.html">1</a></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: left;">Workbooks</td>
-</tr>
-<tr>
-<td><a href="tables/image.html">Image</a></td>
-<td style="text-align: left;">Content</td>
-<td style="text-align: center;"><a href="tables/image.html">2</a></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: left;">Analytics, Hunting</td>
-</tr>
-<tr>
 <td><a href="asim/imauthentication.html">imAuthentication</a> 📖</td>
 <td style="text-align: left;">Schema</td>
 <td style="text-align: center;">-</td>
@@ -8348,52 +8274,24 @@
 </tr>
 <tr>
 <td><a href="asim/imfileevent.html">imFileEvent</a> 📖</td>
-<td style="text-align: left;">Content</td>
-<td style="text-align: center;"><a href="asim/imfileevent.html">5</a></td>
+<td style="text-align: left;">Schema</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: left;">Analytics, Hunting, Workbooks</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
 <td><a href="asim/imnetworksession.html">imNetworkSession</a> 📖</td>
-<td style="text-align: left;">Content</td>
-<td style="text-align: center;"><a href="asim/imnetworksession.html">2</a></td>
+<td style="text-align: left;">Schema</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: left;">Hunting, Workbooks</td>
-</tr>
-<tr>
-<td><a href="tables/impact-score.html">impact_score</a></td>
-<td style="text-align: left;">Content</td>
-<td style="text-align: center;"><a href="tables/impact-score.html">1</a></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: left;">Workbooks</td>
-</tr>
-<tr>
-<td><a href="tables/impacteduser.html">ImpactedUser</a></td>
-<td style="text-align: left;">Connector</td>
-<td style="text-align: center;"><a href="tables/impacteduser.html">1</a></td>
-<td style="text-align: center;"><a href="tables/impacteduser.html">1</a></td>
-<td style="text-align: left;">Analytics, Hunting</td>
-</tr>
-<tr>
-<td><a href="tables/impactscore.html">ImpactScore</a></td>
-<td style="text-align: left;">Content</td>
-<td style="text-align: center;"><a href="tables/impactscore.html">1</a></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: left;">Workbooks</td>
-</tr>
-<tr>
-<td><a href="tables/impersonationstart.html">impersonationStart</a></td>
-<td style="text-align: left;">Content</td>
-<td style="text-align: center;"><a href="tables/impersonationstart.html">1</a></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: left;">Analytics</td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
 <td><a href="tables/impervawafcloud.html">ImpervaWAFCloud</a> 📖</td>
-<td style="text-align: left;">Content</td>
-<td style="text-align: center;"><a href="tables/impervawafcloud.html">1</a></td>
+<td style="text-align: left;">Schema</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: left;">Analytics, Hunting, Workbooks</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
 <td><a href="tables/impervawafcloud-cl.html">ImpervaWAFCloud_CL</a> 📖 🔶</td>
@@ -8411,17 +8309,17 @@
 </tr>
 <tr>
 <td><a href="tables/improcess.html">imProcess</a> 📖</td>
-<td style="text-align: left;">Content</td>
-<td style="text-align: center;"><a href="tables/improcess.html">2</a></td>
+<td style="text-align: left;">Schema</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: left;">Hunting, Workbooks</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
 <td><a href="asim/improcesscreate.html">imProcessCreate</a> 📖</td>
-<td style="text-align: left;">Content</td>
-<td style="text-align: center;"><a href="asim/improcesscreate.html">2</a></td>
+<td style="text-align: left;">Schema</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: left;">Hunting</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
 <td><a href="tables/improcesstermiante.html">imProcessTermiante</a> 📖</td>
@@ -8432,10 +8330,10 @@
 </tr>
 <tr>
 <td><a href="asim/imregistry.html">imRegistry</a> 📖</td>
-<td style="text-align: left;">Content</td>
-<td style="text-align: center;"><a href="asim/imregistry.html">2</a></td>
+<td style="text-align: left;">Schema</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: left;">Hunting</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
 <td><a href="asim/imwebsession.html">imWebSession</a> 📖</td>
@@ -8443,13 +8341,6 @@
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: left;">-</td>
-</tr>
-<tr>
-<td><a href="tables/imwebsessions.html">imWebSessions</a></td>
-<td style="text-align: left;">Content</td>
-<td style="text-align: center;"><a href="tables/imwebsessions.html">1</a></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: left;">Workbooks</td>
 </tr>
 <tr>
 <td><a href="tables/incidentfileactions-cl.html">IncidentFileActions_CL</a></td>
@@ -8676,7 +8567,7 @@
 <td style="text-align: left;">Workbooks</td>
 </tr>
 <tr>
-<td><a href="tables/iocsent-cl.html">iocsent_CL</a> 📖</td>
+<td><a href="tables/iocsent-cl.html">iocsent_CL</a></td>
 <td style="text-align: left;">Connector</td>
 <td style="text-align: center;"><a href="tables/iocsent-cl.html">1</a></td>
 <td style="text-align: center;"><a href="tables/iocsent-cl.html">1</a></td>
@@ -9621,7 +9512,7 @@
 <td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td><a href="tables/meshstackeventlogs-cl.html">meshStackEventLogs_CL</a> 📖</td>
+<td><a href="tables/meshstackeventlogs-cl.html">meshStackEventLogs_CL</a></td>
 <td style="text-align: left;">Connector</td>
 <td style="text-align: center;"><a href="tables/meshstackeventlogs-cl.html">1</a></td>
 <td style="text-align: center;"><a href="tables/meshstackeventlogs-cl.html">1</a></td>
@@ -10538,7 +10429,7 @@
 <td style="text-align: left;">Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
-<td><a href="tables/oci-logsv2-cl.html">OCI_LogsV2_CL</a> 📖</td>
+<td><a href="tables/oci-logsv2-cl.html">OCI_LogsV2_CL</a> 📖 🔶</td>
 <td style="text-align: left;">Connector</td>
 <td style="text-align: center;"><a href="tables/oci-logsv2-cl.html">1</a></td>
 <td style="text-align: center;"><a href="tables/oci-logsv2-cl.html">2</a></td>
@@ -11091,7 +10982,7 @@
 <td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td><a href="tables/pingone-auditactivitiesv2-cl.html">PingOne_AuditActivitiesV2_CL</a> 📖</td>
+<td><a href="tables/pingone-auditactivitiesv2-cl.html">PingOne_AuditActivitiesV2_CL</a></td>
 <td style="text-align: left;">Connector</td>
 <td style="text-align: center;"><a href="tables/pingone-auditactivitiesv2-cl.html">1</a></td>
 <td style="text-align: center;"><a href="tables/pingone-auditactivitiesv2-cl.html">1</a></td>
@@ -12729,7 +12620,7 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="tables/tacitred-findings-cl.html">TacitRed_Findings_CL</a> 📖</td>
+<td><a href="tables/tacitred-findings-cl.html">TacitRed_Findings_CL</a> 📖 🔶</td>
 <td style="text-align: left;">Connector</td>
 <td style="text-align: center;"><a href="tables/tacitred-findings-cl.html">1</a></td>
 <td style="text-align: center;"><a href="tables/tacitred-findings-cl.html">1</a></td>
@@ -12829,16 +12720,16 @@
 <tr>
 <td><a href="tables/tenable-ad-cl.html">Tenable_ad_CL</a> 📖</td>
 <td style="text-align: left;">Connector</td>
-<td style="text-align: center;"><a href="tables/tenable-ad-cl.html">3</a></td>
-<td style="text-align: center;"><a href="tables/tenable-ad-cl.html">3</a></td>
-<td style="text-align: left;">Analytics, Workbooks</td>
+<td style="text-align: center;"><a href="tables/tenable-ad-cl.html">1</a></td>
+<td style="text-align: center;"><a href="tables/tenable-ad-cl.html">1</a></td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
 <td><a href="tables/tenable-ie-cl.html">Tenable_IE_CL</a> 📖</td>
 <td style="text-align: left;">Connector</td>
-<td style="text-align: center;"><a href="tables/tenable-ie-cl.html">3</a></td>
-<td style="text-align: center;"><a href="tables/tenable-ie-cl.html">3</a></td>
-<td style="text-align: left;">Analytics, Workbooks</td>
+<td style="text-align: center;"><a href="tables/tenable-ie-cl.html">1</a></td>
+<td style="text-align: center;"><a href="tables/tenable-ie-cl.html">1</a></td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
 <td><a href="tables/tenable-io-assets-cl.html">Tenable_IO_Assets_CL</a> 📖 🔶</td>
@@ -14458,7 +14349,7 @@
 <td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td><a href="tables/zerofoxalertpoller-cl.html">ZeroFoxAlertPoller_CL</a> 📖</td>
+<td><a href="tables/zerofoxalertpoller-cl.html">ZeroFoxAlertPoller_CL</a> 📖 🔶</td>
 <td style="text-align: left;">Connector</td>
 <td style="text-align: center;"><a href="tables/zerofoxalertpoller-cl.html">1</a></td>
 <td style="text-align: center;"><a href="tables/zerofoxalertpoller-cl.html">1</a></td>

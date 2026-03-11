@@ -1,4 +1,4 @@
-# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Detect IPAddress in the requested URL (ASIM Web Session)
+# Detect IPAddress in the requested URL (ASIM Web Session)
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -16,12 +16,6 @@ This rule detects IPAddress in the requested URL
 | **Tactics** | Exfiltration, CommandAndControl |
 | **Techniques** | T1041, T1071.001, T1001 |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Web%20Session%20Essentials/Hunting%20Queries/IPAddressInURL.yaml) |
-
-## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
-
-This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
-
-- [`_Im_WebSession`](../asim/imwebsession.md)
 
 ---
 

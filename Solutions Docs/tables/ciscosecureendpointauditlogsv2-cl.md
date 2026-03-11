@@ -13,21 +13,22 @@
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (9 columns)
+## Schema (10 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Secure%20Endpoint/Data%20Connectors/CiscoSecureEndpointLogs_ccp/CiscoSecureEndpointLogs_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CiscoSecureEndpointAuditLogsV2_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| audit_log_id | string |
-| audit_log_type | string |
-| audit_log_user | string |
-| created_at | datetime |
-| event | string |
-| item | string |
-| message | string |
-| new_attributes | string |
-| old_attributes | string |
+| AuditLogId | string |
+| AuditLogType | string |
+| AuditLogUser | string |
+| CreatedAt | datetime |
+| Event | string |
+| Item | string |
+| Message | string |
+| NewAttributes | string |
+| OldAttributes | string |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

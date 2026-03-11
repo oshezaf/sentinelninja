@@ -13,22 +13,6 @@
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (9 columns)
-
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Ermes%20Browser%20Security/Data%20Connectors/ErmesBrowserSecurityEvents_CCF/ErmesBrowserSecurityEvents_DCR.json)
-
-| Column Name | Type |
-|:------------|:-----|
-| _created | string |
-| client_ip | string |
-| event_cat | string |
-| event_id | string |
-| level | string |
-| log_data | dynamic |
-| message | dynamic |
-| timestamp | string |
-| username | string |
-
 ## Solutions (1)
 
 This table is used by the following solutions:

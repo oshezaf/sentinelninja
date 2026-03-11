@@ -10,26 +10,30 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
-## Schema (14 columns)
+## Schema (18 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20Endpoint%20Protection/Data%20Connectors/SophosEP_ccp/SophosEP_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SophosEPAlerts_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| created_at | datetime |
-| customer_id | string |
+| Created | datetime |
+| CustomerId | string |
 | data | dynamic |
 | description | string |
+| DvcAction | string |
+| DvcHostname | string |
 | event_service_event_id | string |
-| id | string |
+| EventEndTime | datetime |
+| EventOriginalUid | string |
+| EventProduct | string |
+| EventSeverity | string |
+| EventType | string |
+| EventVendor | string |
 | info | dynamic |
-| location | string |
-| severity | string |
-| source | string |
-| threat | string |
-| threat_cleanable | boolean |
-| type | string |
-| when | datetime |
+| Source | string |
+| threat_cleanable | bool |
+| ThreatName | string |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

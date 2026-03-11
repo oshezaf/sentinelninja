@@ -13,84 +13,43 @@
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (72 columns)
+## Schema (31 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout/Data%20Connectors/LookoutStreamingConnector_ccp/LookoutStreaming_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/LookoutMtdV2_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
 | actor | dynamic |
-| actor_device_guid | string |
-| actor_guid | string |
-| actor_type | string |
 | audit | dynamic |
 | audit_attribute_changes | dynamic |
-| audit_type | string |
 | change_type | string |
 | client_lookout_sdk_version | string |
 | client_ota_version | string |
 | client_package_name | string |
 | client_package_version | string |
-| created_time | datetime |
 | device | dynamic |
 | device_activated_at | datetime |
 | device_activation_status | string |
 | device_checkin_time | datetime |
 | device_customer_id | string |
 | device_deactivated_at | datetime |
-| device_email_address | string |
 | device_group_guid | string |
-| device_guid | string |
-| device_manufacturer | string |
-| device_model | string |
-| device_os_version | string |
 | device_permissions | dynamic |
-| device_platform | string |
-| device_security_status | string |
 | device_settings | dynamic |
 | device_vulns | dynamic |
 | enterprise_guid | string |
 | event_type | string |
 | id | string |
 | log_type | string |
-| mdm_connector_id | int |
+| mdm_connector_id | string |
 | mdm_connector_uuid | string |
 | mdm_external_id | string |
 | risky_config | dynamic |
 | smishing_alert | dynamic |
-| smishing_alert_description | string |
-| smishing_alert_id | string |
-| smishing_alert_severity | string |
-| smishing_alert_type | string |
 | smishing_detections | dynamic |
 | target | dynamic |
-| target_email_address | string |
-| target_guid | string |
-| target_manufacturer | string |
-| target_model | string |
-| target_os_version | string |
-| target_platform | string |
-| target_type | string |
 | threat | dynamic |
-| threat_action | string |
-| threat_application_name | string |
-| threat_assessments | string |
-| threat_classification | string |
-| threat_classifications | string |
-| threat_description | string |
-| threat_file_name | string |
-| threat_file_path | string |
-| threat_id | string |
-| threat_package_name | string |
-| threat_package_sha | string |
-| threat_pcp_device_response | string |
-| threat_pcp_reporting_reason | string |
-| threat_risk | string |
-| threat_severity | string |
-| threat_status | string |
-| threat_type | string |
 | TimeGenerated | datetime |
-| type | string |
 
 ## Solutions (1)
 

@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>ZeroFoxAlertPoller_CL</h1>
@@ -26,6 +29,10 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1</strong></td>
+<td style="text-align: left;">Yes 🔶 — uses type-suffixed column names</td>
+</tr>
 <tr>
 <td style="text-align: left;"><strong>Supports Transformations</strong></td>
 <td style="text-align: left;">✓ Yes</td>
@@ -44,8 +51,8 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (28 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox/Data%20Connectors/Alerts/ZeroFoxAlerts_DCR.json">Data Collection Rule definition</a></p>
+<h2>Schema (50 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ZeroFoxAlertPoller_CL.json">KQL validation test schema</a></p>
 <table id="schema-table">
 <thead>
 <tr>
@@ -55,116 +62,204 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">alert_type</td>
+<td style="text-align: left;">alert_type_s</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">asset</td>
-<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">asset_entity_group_id_d</td>
+<td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">asset_term</td>
+<td style="text-align: left;">asset_entity_group_name_s</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">assignee</td>
+<td style="text-align: left;">asset_id_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">asset_image_s</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">business_network</td>
+<td style="text-align: left;">asset_labels_s</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">content_created_at</td>
+<td style="text-align: left;">asset_name_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">asset_term_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">assignee_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">business_network_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">content_created_at_t</td>
 <td style="text-align: left;">datetime</td>
 </tr>
 <tr>
-<td style="text-align: left;">darkweb_term</td>
+<td style="text-align: left;">darkweb_term_s</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">entered_by</td>
+<td style="text-align: left;">entered_by_s</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">entity</td>
-<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">entity_account_s</td>
+<td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">escalated</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">entity_email_receiver_id_s</td>
+<td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">id</td>
-<td style="text-align: left;">int</td>
+<td style="text-align: left;">entity_entity_group_id_d</td>
+<td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">last_modified</td>
+<td style="text-align: left;">entity_entity_group_name_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">entity_id_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">entity_image_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">entity_labels_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">entity_name_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">entity_term_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">escalated_b</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">id_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">last_modified_t</td>
 <td style="text-align: left;">datetime</td>
 </tr>
 <tr>
-<td style="text-align: left;">logs</td>
+<td style="text-align: left;">logs_s</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">metadata</td>
+<td style="text-align: left;">metadata_s</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">network</td>
+<td style="text-align: left;">network_s</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">notes</td>
+<td style="text-align: left;">notes_s</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">offending_content_url</td>
+<td style="text-align: left;">offending_content_url_s</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">perpetrator</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">protected_locations</td>
+<td style="text-align: left;">perpetrator_content_s</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">protected_social_object</td>
+<td style="text-align: left;">perpetrator_display_name_s</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">reviewed</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">perpetrator_id_d</td>
+<td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">reviews</td>
+<td style="text-align: left;">perpetrator_name_s</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">rule_group_id</td>
-<td style="text-align: left;">int</td>
-</tr>
-<tr>
-<td style="text-align: left;">rule_id</td>
-<td style="text-align: left;">int</td>
-</tr>
-<tr>
-<td style="text-align: left;">rule_name</td>
+<td style="text-align: left;">perpetrator_network_s</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">severity</td>
-<td style="text-align: left;">int</td>
+<td style="text-align: left;">perpetrator_timestamp_t</td>
+<td style="text-align: left;">datetime</td>
 </tr>
 <tr>
-<td style="text-align: left;">status</td>
+<td style="text-align: left;">perpetrator_type_s</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">tags</td>
+<td style="text-align: left;">perpetrator_url_s</td>
 <td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">protected_locations_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">protected_social_object_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">reviewed_b</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">reviews_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">rule_group_id_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">rule_id_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">rule_name_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Severity</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">status_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">tags_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">timestamp_t</td>
+<td style="text-align: left;">datetime</td>
 </tr>
 </tbody>
 </table>

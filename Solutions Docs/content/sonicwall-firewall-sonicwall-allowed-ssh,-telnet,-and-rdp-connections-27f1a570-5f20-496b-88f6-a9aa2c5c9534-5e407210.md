@@ -1,4 +1,4 @@
-# <img src="../images/asim-badge.png" alt="ASIM" height="32"> SonicWall - Allowed SSH, Telnet, and RDP Connections
+# SonicWall - Allowed SSH, Telnet, and RDP Connections
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -20,12 +20,6 @@ This rule identifies allowed inbound SSH, Telnet, and RDP connections. This anal
 | **Techniques** | T1190, T1133, T1059, T1133, T1110, T1003, T1087, T1018, T1021, T1005, T1048, T1041, T1011, T1567, T1490 |
 | **Required Connectors** | [CEF](../connectors/cef.md), [SonicWallFirewall](../connectors/sonicwallfirewall.md), [CefAma](../connectors/cefama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SonicWall%20Firewall/Analytic%20Rules/AllowedInboundSSHTelnetRDPConnections.yaml) |
-
-## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
-
-This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
-
-- [`ASimNetworkSessionSonicWallFirewall`](../asim/asimnetworksessionsonicwallfirewall.md)
 
 ---
 

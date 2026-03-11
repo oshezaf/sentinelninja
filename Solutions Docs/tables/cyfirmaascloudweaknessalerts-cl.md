@@ -15,12 +15,12 @@
 
 ## Schema (28 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Attack%20Surface/Data%20Connectors/CyfirmaASAlerts_ccp/CyfirmaASAlerts_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyfirmaASCloudWeaknessAlerts_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| alert_created_date | datetime |
 | alert_object_uid | string |
+| Alert_title | string |
 | alert_uid | string |
 | asset_category | string |
 | asset_comments | string |
@@ -31,7 +31,7 @@
 | description | string |
 | first_seen | datetime |
 | impact | string |
-| is_third_party | boolean |
+| is_third_party | bool |
 | last_seen | datetime |
 | notes | dynamic |
 | recommendations | string |
@@ -44,7 +44,7 @@
 | source_type | dynamic |
 | status | string |
 | sub_category | string |
-| title | string |
+| TimeGenerated | datetime |
 | uid | string |
 | use_cases | string |
 

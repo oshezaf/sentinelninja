@@ -59,7 +59,7 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 | Metric | Count |
 |:-------|------:|
 | Unique Connectors | 392 |
-| Tables Used | 830 |
+| Tables Used | 829 |
 
 ## Connectors
 
@@ -126,11 +126,11 @@ Each cell shows: Active / Deprecated / Unpublished / **Total**
 | With config file | 117 |
 | With capabilities detected | 133 |
 
-**Connector Kind** (non-default kinds; REST API polling is the default):
+**Connector Kind** (non-default kinds; REST Pull API polling is the default):
 
 | Kind | Count |
 |:-----|------:|
-| REST API Polling *(default)* | 87 |
+| REST Pull API Polling *(default)* | 87 |
 | GCP | 16 |
 | AmazonWebServicesS3 | 11 |
 | Push | 11 |
@@ -167,19 +167,19 @@ API-based connectors use one of two APIs to send data to the workspace:
 
 | Ingestion API | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-------------|------:|-------:|-----------:|------------:|
-| [Log Ingestion API](methods/log-ingestion-api.md) | **47** | 27 | 0 | 20 |
+| [Log Ingestion API](methods/log-ingestion-api.md) | **46** | 27 | 0 | 19 |
 | [HTTP Data Collector API](methods/http-data-collector-api.md) | **144** | 116 | 20 | 8 |
 | [Undetermined](methods/undetermined.md) | **4** | 4 | 0 | 0 |
-| **Total** | **195** | **147** | **20** | **28** |
+| **Total** | **194** | **147** | **20** | **27** |
 
 **By Collection Method:**
 
 | Collection Method | [Log Ingestion API](methods/log-ingestion-api.md) | [HTTP Data Collector API](methods/http-data-collector-api.md) | [Undetermined](methods/undetermined.md) | **Total** |
 |:-----------------|------:|------:|------:|------:|
-| [Azure Function](methods/azure-function.md) | 36 | 89 | 4 | **129** |
+| [Azure Function](methods/azure-function.md) | 35 | 89 | 4 | **128** |
 | [REST API](methods/rest-api.md) | - | 55 | - | **55** |
 | [CCF Push](methods/ccf-push.md) | 11 | - | - | **11** |
-| **Total** | **47** | **144** | **4** | **195** |
+| **Total** | **46** | **144** | **4** | **194** |
 
 ### Custom Log V1 (CLv1) 🔶
 
@@ -187,8 +187,8 @@ Connectors that use at least one Custom Log V1 table (identified by type-suffixe
 
 | Metric | Count |
 |:-------|------:|
-| CLv1 Connectors | **155** |
-| Active | 125 |
+| CLv1 Connectors | **159** |
+| Active | 129 |
 | Deprecated 🚫 | 21 |
 | Unpublished ⚠️ | 9 |
 
@@ -199,11 +199,11 @@ Connectors that use at least one Custom Log V1 table (identified by type-suffixe
 | [Azure Function](methods/azure-function.md) | 76 |
 | [REST API](methods/rest-api.md) | 49 |
 | [Azure Diagnostics](methods/azure-diagnostics.md) | 14 |
-| [CCF](methods/ccf.md) | 6 |
+| [CCF](methods/ccf.md) | 10 |
 | [MMA](methods/mma.md) | 5 |
 | [CCF (Legacy)](methods/ccf-legacy.md) | 3 |
 | [AMA](methods/ama.md) | 2 |
-| **Total** | **155** |
+| **Total** | **159** |
 
 **By Ingestion API:**
 
@@ -211,14 +211,14 @@ Connectors that use at least one Custom Log V1 table (identified by type-suffixe
 |:-------------|----------------:|
 | [Log Ingestion API](methods/log-ingestion-api.md) | 3 |
 | [HTTP Data Collector API](methods/http-data-collector-api.md) | 122 |
-| *(no API)* | 30 |
-| **Total** | **155** |
+| *(no API)* | 34 |
+| **Total** | **159** |
 
 ## Tables
 
 ### Overview
 
-**2024 tables** documented across all discovery sources. **1785 tables** have schema information.
+**2008 tables** documented across all discovery sources. **1768 tables** have schema information.
 
 ### Discovery Sources
 
@@ -226,15 +226,15 @@ Each table is assigned a single discovery source ("Discovered Via") by priority:
 
 | Discovery Source | Discovered Via | Total |
 |:-----------------|---------------:|------:|
-| Connector | 830 | 830 |
-| Content | 219 | 757 |
+| Connector | 829 | 829 |
+| Content | 196 | 732 |
 | [Azure Monitor Tables Reference](https://learn.microsoft.com/azure/azure-monitor/reference/tables/tables-resourcetype) | 618 | 781 |
 | [Defender XDR Advanced Hunting Schema](https://learn.microsoft.com/defender-xdr/advanced-hunting-schema-tables) | 26 | 61 |
 | [Sentinel Tables and Connectors Reference](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) | 12 | 478 |
 | [Azure Monitor Tables Feature Support](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) | 78 | 702 |
 | [Azure Monitor Logs Ingestion API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) | 1 | 51 |
-| Schema | 240 | 1785 |
-| **Total** | **2024** | |
+| Schema | 248 | 1768 |
+| **Total** | **2008** | |
 
 *31 tables are available in Defender XDR but not in Azure Monitor Log Analytics.*
 
@@ -245,24 +245,24 @@ Tables with schema information, by schema source. A single table may have schema
 | Schema Source | Tables |
 |:-------------|-------:|
 | Azure Monitor docs | 811 |
-| DCR | 151 |
-| KQL validation | 816 |
-| Connector definition | 26 |
-| **Total unique tables with schema** | **1785** |
+| DCR | 9 |
+| KQL validation | 878 |
+| Connector definition | 69 |
+| **Total unique tables with schema** | **1768** |
 
 ### Custom Log V1 (CLv1) 🔶
 
-**429** of 2024 tables are Custom Log V1 tables, identified by type-suffixed columns or `_CL` suffix with compatible collection method.
+**432** of 2008 tables are Custom Log V1 tables, identified by type-suffixed columns or `_CL` suffix with compatible collection method.
 
 **By Table Category:**
 
 | Category | CLv1 Tables |
 |:---------|------------:|
-| Uncategorized | 409 |
+| Uncategorized | 412 |
 | Internal | 14 |
 | GCP | 5 |
 | Various | 1 |
-| **Total** | **429** |
+| **Total** | **432** |
 
 ## Content
 
@@ -341,42 +341,29 @@ Tables with schema information, by schema source. A single table may have schema
 
 | Metric | Total | Explicit (required) | ASIM (optional) |
 |:-------|------:|--------------------:|----------------:|
-| Dependency records | **831** | 239 | 592 |
-| Solutions with dependencies | **122** | 109 | 25 |
-| Unique dependency targets | **55** | 42 | 29 |
-
-### ASIM Pre-requisites by Schema
-
-| ASIM Schema | Solutions Using | Solutions Providing Data |
-|:------------|----------------:|------------------------:|
-| AuditEvent | 1 | 15 |
-| Dns | 7 | 13 |
-| FileEvent | 7 | 7 |
-| NetworkSession | 15 | 18 |
-| ProcessEvent | 5 | 7 |
-| RegistryEvent | 3 | 8 |
-| WebSession | 12 | 9 |
-| **Total unique** | **25** | **29** |
+| Dependency records | **239** | 239 | 0 |
+| Solutions with dependencies | **109** | 109 | 0 |
+| Unique dependency targets | **42** | 42 | 0 |
 
 ### Most Depended-Upon Solutions
 
 | Solution | Depended On By |
 |:---------|---------------:|
-| [Common Event Format](solutions/common-event-format.md) | 83 |
-| [Syslog](solutions/syslog.md) | 66 |
-| [CustomLogsAma](solutions/customlogsama.md) | 49 |
-| [Windows Forwarded Events](solutions/windows-forwarded-events.md) | 43 |
-| [CrowdStrike Falcon Endpoint Protection](solutions/crowdstrike-falcon-endpoint-protection.md) | 38 |
-| [SentinelOne](solutions/sentinelone.md) | 38 |
-| [Vectra AI Stream](solutions/vectra-ai-stream.md) | 37 |
-| [Windows Security Events](solutions/windows-security-events.md) | 36 |
-| [VirtualMetric DataStream](solutions/virtualmetric-datastream.md) | 35 |
-| [VMware Carbon Black Cloud](solutions/vmware-carbon-black-cloud.md) | 31 |
-| [CiscoMeraki](solutions/ciscomeraki.md) | 30 |
-| [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security-exchange-on-premises.md) | 30 |
-| [Azure Firewall](solutions/azure-firewall.md) | 28 |
-| [Cisco Meraki Events via REST API](solutions/cisco-meraki-events-via-rest-api.md) | 28 |
-| [Corelight](solutions/corelight.md) | 25 |
+| [Common Event Format](solutions/common-event-format.md) | 48 |
+| [Syslog](solutions/syslog.md) | 31 |
+| [CustomLogsAma](solutions/customlogsama.md) | 14 |
+| [Microsoft Entra ID](solutions/microsoft-entra-id.md) | 10 |
+| [Microsoft Defender XDR](solutions/microsoft-defender-xdr.md) | 10 |
+| [Microsoft 365](solutions/microsoft-365.md) | 9 |
+| [PaloAlto-PAN-OS](solutions/paloalto-pan-os.md) | 8 |
+| [Amazon Web Services](solutions/amazon-web-services.md) | 8 |
+| [CiscoASA](solutions/ciscoasa.md) | 6 |
+| [Azure Firewall](solutions/azure-firewall.md) | 6 |
+| [Check Point](solutions/check-point.md) | 6 |
+| [Zscaler Internet Access](solutions/zscaler-internet-access.md) | 6 |
+| [Windows Server DNS](solutions/windows-server-dns.md) | 5 |
+| [Azure Activity](solutions/azure-activity.md) | 5 |
+| [Windows Security Events](solutions/windows-security-events.md) | 5 |
 
 ---
 

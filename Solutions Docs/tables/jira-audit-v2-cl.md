@@ -13,23 +13,31 @@
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (11 columns)
+## Schema (19 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit/Data%20Connectors/JiraAuditAPISentinelConnector_ccpv2/JiraAudit_DCR.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit%5CData%20Connectors%5CJiraAuditAPISentinelConnector_ccpv2/JiraAudit_tables.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| associatedItems | dynamic |
-| authorAccountId | string |
-| authorKey | string |
-| category | string |
-| changedValues | dynamic |
-| created | datetime |
-| eventSource | string |
-| id | int |
+| AssociatedItems | dynamic |
+| ChangedValues | dynamic |
+| EventCategoryType | string |
+| EventCreationTime | datetime |
+| EventId | int |
+| EventMessage | string |
+| EventProduct | string |
+| EventSource | string |
+| EventVendor | string |
 | objectItem | dynamic |
-| remoteAddress | string |
-| summary | string |
+| ObjectItemId | string |
+| ObjectItemName | string |
+| ObjectItemParentId | string |
+| ObjectItemParentName | string |
+| ObjectItemTypeName | string |
+| SrcIpAddr | string |
+| TimeGenerated | datetime |
+| UserName | string |
+| UserSid | string |
 
 ## Solutions (1)
 

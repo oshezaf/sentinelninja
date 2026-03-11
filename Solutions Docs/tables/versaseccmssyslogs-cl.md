@@ -13,13 +13,22 @@
 | **Lake-Only Ingestion** | ✗ No |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (1 columns)
+## Schema (10 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VersasecCMS/Data%20Connectors/VersasecCMS_CCF/VersasecCMS_DCR.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VersasecCMS%5CData%20Connectors%5CVersasecCMS_CCF/VersasecCMS_Table_SysLogs.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| rowData | dynamic |
+| CLID | string |
+| ComputerName | string |
+| ID | real |
+| Param1 | string |
+| SyslogID | real |
+| SyslogIDCode | string |
+| SyslogIDStrg | string |
+| TicketRef | string |
+| TimeGenerated | datetime |
+| UserID | real |
 
 ## Solutions (1)
 

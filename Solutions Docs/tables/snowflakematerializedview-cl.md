@@ -13,13 +13,14 @@
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (1 columns)
+## Schema (2 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Snowflake/Data%20Connectors/SnowflakeLogs_ccp/SnowflakeLogs_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SnowflakeMaterializedView_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| data | dynamic |
+| Data | string |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

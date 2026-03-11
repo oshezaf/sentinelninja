@@ -3,16 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>&lt;img src=&quot;../images/asim-badge.png&quot; alt=&quot;ASIM&quot; height=&quot;32&quot;&gt; Google Threat Intelligence Solution public preview &mdash; Solutions Analyzer</title>
+<title>Google Threat Intelligence Solution public preview &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
     <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
-<h1><img src="../images/asim-badge.png" alt="ASIM" height="32"> Google Threat Intelligence Solution (public preview)</h1>
+<h1>Google Threat Intelligence Solution (public preview)</h1>
 <p><em>Solution: Google Threat Intelligence</em></p>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/GoogleThreatIntelligence.svg" alt="Google Threat Intelligence Logo" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
@@ -71,295 +74,14 @@
 <p>This Google Threat Intelligence Solution contains Playbooks that can help enrich incident information with threat information and intelligence for IPs, file hashes and URLs from Google Threat Intelligence. Enriched information can help drive focused investigations in Security Operations.</p>
 <h2>Contents</h2>
 <ul>
-<li><a href="#asim-pre-requisites">ASIM Pre-requisites</a></li>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#internal-tables">Internal Tables</a></li>
 <li><a href="#content-items">Content Items</a></li>
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
-<h2><a id="asim-pre-requisites"></a><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Pre-requisites</h2>
-<p>This solution uses the <a href="../asim/imdns.html"><code>_Im_Dns</code></a>, <a href="../asim/imfileevent.html"><code>_Im_FileEvent</code></a>, <a href="../asim/imnetworksession.html"><code>_Im_NetworkSession</code></a>, and <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a> <a href="https://learn.microsoft.com/azure/sentinel/normalization">ASIM (Advanced Security Information Model)</a> parsers to provide normalized, source-agnostic data access, expanding detection coverage without modifying queries.</p>
-<h3>Supported Products</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Product</th>
-<th style="text-align: left;">Dependency Solution</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#aws-vpc">AWS VPC</a></td>
-<td style="text-align: left;"><a href="aws-vpc-flow-logs.html">AWS VPC Flow Logs</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#apache-http-server">Apache HTTP Server</a></td>
-<td style="text-align: left;"><a href="customlogsama.html">CustomLogsAma</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#appgate-sdp">AppGate SDP</a></td>
-<td style="text-align: left;"><a href="syslog.html">Syslog</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#azure-firewall">Azure Firewall</a></td>
-<td style="text-align: left;"><a href="azure-firewall.html">Azure Firewall</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#azure-nsg-flows">Azure NSG flows</a></td>
-<td style="text-align: left;">-</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#azure-ntanetanalytics">Azure NTANetAnalytics</a></td>
-<td style="text-align: left;">-</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#barracuda-waf">Barracuda WAF</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#checkpointfirewall">CheckPointFirewall</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#cisco-firepower">Cisco Firepower</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#cisco-ise">Cisco ISE</a></td>
-<td style="text-align: left;"><a href="syslog.html">Syslog</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#cisco-meraki">Cisco Meraki</a></td>
-<td style="text-align: left;"><a href="cisco-sd-wan.html">Cisco SD-WAN</a><br><a href="ciscomeraki.html">CiscoMeraki</a><br><a href="customlogsama.html">CustomLogsAma</a><br><a href="forescout-legacy.html">Forescout (Legacy)</a><br><a href="syslog.html">Syslog</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#cisco-umbrella">Cisco Umbrella</a></td>
-<td style="text-align: left;"><a href="ciscoumbrella.html">CiscoUmbrella</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#ciscoasa">CiscoASA</a></td>
-<td style="text-align: left;"><a href="ciscoasa.html">CiscoASA</a><br><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#citrix-netscaler">Citrix NetScaler</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#corelight-zeek">Corelight Zeek</a></td>
-<td style="text-align: left;"><a href="corelight.html">Corelight</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#crowdstrike-falcon-endpoint-protection">CrowdStrike Falcon Endpoint Protection</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#f5-big-ip-application-security-manager-asm">F5 BIG-IP Application Security Manager (ASM)</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#forcepointfirewall">ForcePointFirewall</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#fortinet-fortigate">Fortinet FortiGate</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#gcp-cloud-dns">GCP Cloud DNS</a></td>
-<td style="text-align: left;">-</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#google-workspace">Google Workspace</a></td>
-<td style="text-align: left;">-</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#illumio-saas-core">Illumio SaaS Core</a></td>
-<td style="text-align: left;"><a href="illumiosaas.html">IllumioSaaS</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#infoblox-bloxone">Infoblox BloxOne</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#infoblox-nios">Infoblox NIOS</a></td>
-<td style="text-align: left;"><a href="syslog.html">Syslog</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#internet-information-services-iis">Internet Information Services (IIS)</a></td>
-<td style="text-align: left;"><a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#m365-defender-for-endpoint">M365 Defender for Endpoint</a></td>
-<td style="text-align: left;">-</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#ms-dns-events">MS DNS Events</a></td>
-<td style="text-align: left;"><a href="nxlogdnslogs.html">NXLogDNSLogs</a><br><a href="windows-server-dns.html">Windows Server DNS</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-365-defender-for-endpoint">Microsoft 365 Defender for EndPoint</a></td>
-<td style="text-align: left;">-</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-azure-blob-storage">Microsoft Azure Blob Storage</a></td>
-<td style="text-align: left;"><a href="azure-storage.html">Azure Storage</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-azure-file-storage">Microsoft Azure File Storage</a></td>
-<td style="text-align: left;"><a href="azure-storage.html">Azure Storage</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-azure-queue-storage">Microsoft Azure Queue Storage</a></td>
-<td style="text-align: left;"><a href="azure-storage.html">Azure Storage</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-azure-table-storage">Microsoft Azure Table Storage</a></td>
-<td style="text-align: left;"><a href="azure-storage.html">Azure Storage</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-defender-for-iot">Microsoft Defender for IoT</a></td>
-<td style="text-align: left;">-</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-sharepoint">Microsoft SharePoint</a></td>
-<td style="text-align: left;">-</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-sysmon-for-linux">Microsoft Sysmon for Linux</a></td>
-<td style="text-align: left;"><a href="syslog.html">Syslog</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-windows-events">Microsoft Windows Events</a></td>
-<td style="text-align: left;"><a href="windows-forwarded-events.html">Windows Forwarded Events</a><br><a href="windows-security-events.html">Windows Security Events</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-windows-events-sysmon">Microsoft Windows Events Sysmon</a></td>
-<td style="text-align: left;"><a href="windows-forwarded-events.html">Windows Forwarded Events</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#native">Native</a></td>
-<td style="text-align: left;"><a href="cisco-meraki-events-via-rest-api.html">Cisco Meraki Events via REST API</a><br><a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a><br><a href="vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#palo-alto-cortex-data-lake">Palo Alto Cortex Data Lake</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#palo-alto-networks">Palo Alto Networks</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#palo-alto-panos">Palo Alto PanOS</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#sentinelone">SentinelOne</a></td>
-<td style="text-align: left;"><a href="sentinelone.html">SentinelOne</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#sonicwall">SonicWall</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#squid-proxy">Squid Proxy</a></td>
-<td style="text-align: left;"><a href="customlogsama.html">CustomLogsAma</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#sysmon-for-linux">Sysmon for Linux</a></td>
-<td style="text-align: left;"><a href="syslog.html">Syslog</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#vmconnection">VMConnection</a></td>
-<td style="text-align: left;">-</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#vmware-carbon-black-cloud">VMware Carbon Black Cloud</a></td>
-<td style="text-align: left;"><a href="vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#vectra-ai-streams">Vectra AI Streams</a></td>
-<td style="text-align: left;"><a href="customlogsama.html">CustomLogsAma</a><br><a href="vectra-ai-stream.html">Vectra AI Stream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#watchguard-fireware-os">WatchGuard Fireware OS</a></td>
-<td style="text-align: left;"><a href="syslog.html">Syslog</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#windows-firewall">Windows Firewall</a></td>
-<td style="text-align: left;"><a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a><br><a href="windows-forwarded-events.html">Windows Forwarded Events</a><br><a href="windows-security-events.html">Windows Security Events</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#windows-sysmon">Windows Sysmon</a></td>
-<td style="text-align: left;"><a href="windows-forwarded-events.html">Windows Forwarded Events</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#zscaler-zia">Zscaler ZIA</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#zscaler-zia-dns">Zscaler ZIA DNS</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#zscaler-zia-firewall">Zscaler ZIA Firewall</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-</tbody>
-</table>
 <h2>Data Connectors</h2>
-<p><strong>This solution does not include its own data connectors</strong> but uses connectors from dependency solutions:</p>
-<ul>
-<li><a href="../connectors/aivectrastream.html">AI Vectra Stream via Legacy Agent</a> <em>(dependency on <a href="vectra-ai-stream.html">Vectra AI Stream</a>)</em></li>
-<li><a href="../connectors/asimdnsactivitylogs.html">Windows DNS Events via AMA</a> <em>(dependency on <a href="windows-server-dns.html">Windows Server DNS</a>)</em></li>
-<li><a href="../connectors/awss3vpcflowlogsparquetdefinition.html">Amazon Web Services S3 VPC Flow Logs</a> <em>(dependency on <a href="aws-vpc-flow-logs.html">AWS VPC Flow Logs</a>)</em></li>
-<li><a href="../connectors/azurefirewall.html">Azure Firewall</a> <em>(dependency on <a href="azure-firewall.html">Azure Firewall</a>)</em></li>
-<li><a href="../connectors/azurestorageaccount.html">Azure Storage Account</a> <em>(dependency on <a href="azure-storage.html">Azure Storage</a>)</em></li>
-<li><a href="../connectors/cef.html">Common Event Format (CEF)</a> <em>(dependency on <a href="common-event-format.html">Common Event Format</a>)</em></li>
-<li><a href="../connectors/cefama.html">Common Event Format (CEF) via AMA</a> <em>(dependency on <a href="common-event-format.html">Common Event Format</a>)</em></li>
-<li><a href="../connectors/ciscoasa.html">Cisco ASA via Legacy Agent</a> <em>(dependency on <a href="ciscoasa.html">CiscoASA</a>)</em></li>
-<li><a href="../connectors/ciscoasaama.html">Cisco ASA/FTD via AMA</a> <em>(dependency on <a href="ciscoasa.html">CiscoASA</a>)</em></li>
-<li><a href="../connectors/ciscomeraki.html">[Deprecated] Cisco Meraki</a> <em>(dependency on <a href="ciscomeraki.html">CiscoMeraki</a>)</em></li>
-<li><a href="../connectors/ciscomeraki-usingrestapi.html">Cisco Meraki (using REST API)</a> <em>(dependency on <a href="ciscomeraki.html">CiscoMeraki</a>)</em></li>
-<li><a href="../connectors/ciscomerakimultirule.html">Cisco Meraki (using REST API)</a> <em>(dependency on <a href="cisco-meraki-events-via-rest-api.html">Cisco Meraki Events via REST API</a>)</em></li>
-<li><a href="../connectors/ciscomerakinativepoller.html">Cisco Meraki (using REST API)</a> <em>(dependency on <a href="ciscomeraki.html">CiscoMeraki</a>)</em></li>
-<li><a href="../connectors/ciscosdwan.html">Cisco Software Defined WAN</a> <em>(dependency on <a href="cisco-sd-wan.html">Cisco SD-WAN</a>)</em></li>
-<li><a href="../connectors/ciscoumbrelladataconnector.html">Cisco Cloud Security</a> <em>(dependency on <a href="ciscoumbrella.html">CiscoUmbrella</a>)</em></li>
-<li><a href="../connectors/ciscoumbrelladataconnectorelasticpremium.html">Cisco Cloud Security (using elastic premium plan)</a> <em>(dependency on <a href="ciscoumbrella.html">CiscoUmbrella</a>)</em></li>
-<li><a href="../connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> <em>(dependency on <a href="corelight.html">Corelight</a>)</em></li>
-<li><a href="../connectors/crowdstrikeapiconnector.html">CrowdStrike API Data Connector (via Codeless Connector Framework)</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
-<li><a href="../connectors/crowdstrikefalconadversaryintelligence.html">CrowdStrike Falcon Adversary Intelligence </a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
-<li><a href="../connectors/crowdstrikefalconendpointprotection.html">[Deprecated] CrowdStrike Falcon Endpoint Protection via Legacy Agent</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
-<li><a href="../connectors/crowdstrikefalconendpointprotectionama.html">[Deprecated] CrowdStrike Falcon Endpoint Protection via AMA</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
-<li><a href="../connectors/crowdstrikefalcons3ccpdefinition.html">CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
-<li><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
-<li><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> <em>(dependency on <a href="customlogsama.html">CustomLogsAma</a>)</em></li>
-<li><a href="../connectors/dns.html">DNS</a> <em>(dependency on <a href="windows-server-dns.html">Windows Server DNS</a>)</em></li>
-<li><a href="../connectors/esi-exchangeadminauditlogevents.html">[Deprecated] Microsoft Exchange Logs and Events</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
-<li><a href="../connectors/esi-exchangeonpremisescollector.html">Exchange Security Insights On-Premises Collector</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
-<li><a href="../connectors/esi-opt1exchangeadminauditlogsbyeventlogs.html">Microsoft Exchange Admin Audit Logs by Event Logs</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
-<li><a href="../connectors/esi-opt2exchangeserverseventlogs.html">Microsoft Exchange Logs and Events</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
-<li><a href="../connectors/esi-opt34domaincontrollerssecurityeventlogs.html"> Microsoft Active-Directory Domain Controllers Security Event Logs</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
-<li><a href="../connectors/esi-opt5exchangeiislogs.html">IIS Logs of Microsoft Exchange Servers</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
-<li><a href="../connectors/esi-opt6exchangemessagetrackinglogs.html">Microsoft Exchange Message Tracking Logs</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
-<li><a href="../connectors/esi-opt7exchangehttpproxylogs.html">Microsoft Exchange HTTP Proxy Logs</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
-<li><a href="../connectors/forescout.html">Forescout</a> <em>(dependency on <a href="forescout-legacy.html">Forescout (Legacy)</a>)</em></li>
-<li><a href="../connectors/illumiosaasdataconnector.html">Illumio SaaS</a> <em>(dependency on <a href="illumiosaas.html">IllumioSaaS</a>)</em></li>
-<li><a href="../connectors/illumiosaasccfdefinition.html">Illumio Saas</a> <em>(dependency on <a href="illumiosaas.html">IllumioSaaS</a>)</em></li>
-<li><a href="../connectors/nxlogdnslogs.html">NXLog DNS Logs</a> <em>(dependency on <a href="nxlogdnslogs.html">NXLogDNSLogs</a>)</em></li>
-<li><a href="../connectors/securityevents.html">Security Events via Legacy Agent</a> <em>(dependency on <a href="windows-security-events.html">Windows Security Events</a>)</em></li>
-<li><a href="../connectors/sentinelone.html">SentinelOne</a> <em>(dependency on <a href="sentinelone.html">SentinelOne</a>)</em></li>
-<li><a href="../connectors/sentineloneccp.html">SentinelOne</a> <em>(dependency on <a href="sentinelone.html">SentinelOne</a>)</em></li>
-<li><a href="../connectors/syslog.html">Syslog via Legacy Agent</a> <em>(dependency on <a href="syslog.html">Syslog</a>)</em></li>
-<li><a href="../connectors/syslogama.html">Syslog via AMA</a> <em>(dependency on <a href="syslog.html">Syslog</a>)</em></li>
-<li><a href="../connectors/vmwarecarbonblack.html">VMware Carbon Black Cloud</a> <em>(dependency on <a href="vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a>)</em></li>
-<li><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a> <em>(dependency on <a href="vectra-ai-stream.html">Vectra AI Stream</a>)</em></li>
-<li><a href="../connectors/virtualmetricdirectorproxy.html">VirtualMetric Director Proxy</a> <em>(dependency on <a href="virtualmetric-datastream.html">VirtualMetric DataStream</a>)</em></li>
-<li><a href="../connectors/virtualmetricmssentinelconnector.html">VirtualMetric DataStream for Microsoft Sentinel</a> <em>(dependency on <a href="virtualmetric-datastream.html">VirtualMetric DataStream</a>)</em></li>
-<li><a href="../connectors/virtualmetricmssentineldatalakeconnector.html">VirtualMetric DataStream for Microsoft Sentinel data lake</a> <em>(dependency on <a href="virtualmetric-datastream.html">VirtualMetric DataStream</a>)</em></li>
-<li><a href="../connectors/windowsforwardedevents.html">Windows Forwarded Events</a> <em>(dependency on <a href="windows-forwarded-events.html">Windows Forwarded Events</a>)</em></li>
-<li><a href="../connectors/windowssecurityevents.html">Windows Security Events via AMA</a> <em>(dependency on <a href="windows-security-events.html">Windows Security Events</a>)</em></li>
-<li><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a> <em>(dependency on <a href="vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a>)</em></li>
-</ul>
+<p><strong>This solution does not include data connectors.</strong></p>
+<p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
 <h2>Internal Tables</h2>
 <p>The following <strong>1 table(s)</strong> are used internally by this solution's content items:</p>
 <table>
@@ -412,28 +134,28 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-domain-d9e1646c-dc17-4150-ac85-581f5c9cb41f-473cd3b4.html">Google Threat Intelligence - Threat Hunting Domain</a></td>
+<td style="text-align: left;"><a href="../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-domain-d9e1646c-dc17-4150-ac85-581f5c9cb41f-473cd3b4.html">Google Threat Intelligence - Threat Hunting Domain</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">CommandAndControl</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imdns.html"><code>_Im_Dns</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-hash-8f9cd0e5-b4ab-4821-95e2-1082fcd784c7-681b75ff.html">Google Threat Intelligence - Threat Hunting Hash</a></td>
+<td style="text-align: left;"><a href="../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-hash-8f9cd0e5-b4ab-4821-95e2-1082fcd784c7-681b75ff.html">Google Threat Intelligence - Threat Hunting Hash</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">Execution</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imfileevent.html"><code>_Im_FileEvent</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-ip-7edb2abb-7ef7-4685-92eb-a628703ccf9f-694732dc.html">Google Threat Intelligence - Threat Hunting IP</a></td>
+<td style="text-align: left;"><a href="../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-ip-7edb2abb-7ef7-4685-92eb-a628703ccf9f-694732dc.html">Google Threat Intelligence - Threat Hunting IP</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">CommandAndControl</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imnetworksession.html"><code>_Im_NetworkSession</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-url-89290690-54c4-4196-91c5-d32b1df5d873-c5fc6b01.html">Google Threat Intelligence - Threat Hunting Url</a></td>
+<td style="text-align: left;"><a href="../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-url-89290690-54c4-4196-91c5-d32b1df5d873-c5fc6b01.html">Google Threat Intelligence - Threat Hunting Url</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">InitialAccess</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -448,24 +170,24 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-domain-34288e97-5194-4f2e-abf2-c2783189f6ae-2dfdacdc.html">Google Threat Intelligence - Threat Hunting Domain</a></td>
+<td style="text-align: left;"><a href="../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-domain-34288e97-5194-4f2e-abf2-c2783189f6ae-2dfdacdc.html">Google Threat Intelligence - Threat Hunting Domain</a></td>
 <td style="text-align: left;">-</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imdns.html"><code>_Im_Dns</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-hash-0051a0d9-684f-4317-abbd-c1e5c24b39cb-5660b61d.html">Google Threat Intelligence - Threat Hunting Hash</a></td>
+<td style="text-align: left;"><a href="../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-hash-0051a0d9-684f-4317-abbd-c1e5c24b39cb-5660b61d.html">Google Threat Intelligence - Threat Hunting Hash</a></td>
 <td style="text-align: left;">-</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imfileevent.html"><code>_Im_FileEvent</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-ip-faa83502-2763-49ae-9216-e576fa1fdccb-c11a3364.html">Google Threat Intelligence - Threat Hunting IP</a></td>
+<td style="text-align: left;"><a href="../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-ip-faa83502-2763-49ae-9216-e576fa1fdccb-c11a3364.html">Google Threat Intelligence - Threat Hunting IP</a></td>
 <td style="text-align: left;">-</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imnetworksession.html"><code>_Im_NetworkSession</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-url-a1705fa5-c904-4f1b-9e2d-a4ccb30377a2-b18588af.html">Google Threat Intelligence - Threat Hunting Url</a></td>
+<td style="text-align: left;"><a href="../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-url-a1705fa5-c904-4f1b-9e2d-a4ccb30377a2-b18588af.html">Google Threat Intelligence - Threat Hunting Url</a></td>
 <td style="text-align: left;">-</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
 </tr>
 </tbody>
 </table>

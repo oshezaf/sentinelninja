@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>Syslog</h1>
@@ -1842,18 +1845,16 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/cisco-sd-wan.html">Cisco SD-WAN</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/cisco-sd-wan.html">Cisco SD-WAN</a>:</strong> <code>SyslogMessage has "%FW-6-LOG_SUMMARY:"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Content Item</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/cisco-sd-wan-ciscosdwan-1291f60c.html">CiscoSDWAN</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -1994,7 +1995,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a>:</strong> <code>SyslogMessage !has "response:"</code><br><code>SyslogMessage has_all "client"</code></p>
+<p><strong>In solution <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a>:</strong> <code>SyslogMessage has "DHCPINFORM"</code></p>
 <table>
 <thead>
 <tr>
@@ -2255,7 +2256,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/veeam-veeamsecurityactivities-f559a349.html">VeeamSecurityActivities</a></td>
-<td style="text-align: left;"><code>SyslogMessage has "instanceId"</code><br><code>SyslogMessage has "predefined_alarm_id"</code><br><code>SyslogMessage has "predefined_alarm_id"</code></td>
+<td style="text-align: left;"><code>SyslogMessage has "instanceId"</code><br><code>SyslogMessage has "predefined_alarm_id"</code><br><code>SyslogMessage has "instanceId"</code></td>
 </tr>
 </tbody>
 </table>
@@ -2805,8 +2806,8 @@
 <li><code>microsoft.compute/virtualmachinescalesets</code></li>
 <li><code>microsoft.hybridcontainerservice/provisionedclusters</code></li>
 </ul>
-<h2>Selection Criteria Summary (88 criteria, 411 total references)</h2>
-<p>References by type: 5 connectors, 331 content items, 16 ASIM parsers, 59 other parsers.</p>
+<h2>Selection Criteria Summary (88 criteria, 412 total references)</h2>
+<p>References by type: 5 connectors, 332 content items, 16 ASIM parsers, 59 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -2932,14 +2933,6 @@
 <td style="text-align: center;"><strong>5</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>SyslogMessage !has "response:"</code><br><code>SyslogMessage has_all "client"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;"><strong>4</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>Facility == "local7"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">3</td>
@@ -2988,6 +2981,14 @@
 <td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>SyslogMessage !has "response:"</code><br><code>SyslogMessage has_all "client"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>ProcessName == "box_Firewall_Activity"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
@@ -3009,6 +3010,22 @@
 <td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SyslogMessage has "%FW-6-LOG_SUMMARY:"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SyslogMessage has "DHCPINFORM"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
@@ -3220,7 +3237,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>SyslogMessage has "instanceId"</code><br><code>SyslogMessage has "predefined_alarm_id"</code><br><code>SyslogMessage has "predefined_alarm_id"</code></td>
+<td style="text-align: left;"><code>SyslogMessage has "instanceId"</code><br><code>SyslogMessage has "predefined_alarm_id"</code><br><code>SyslogMessage has "instanceId"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -3316,14 +3333,6 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>SyslogMessage has "%FW-6-LOG_SUMMARY:"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>SyslogMessage has "Stealthwatch"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -3397,14 +3406,6 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>SyslogMessage has "DHCPEXPIRE"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>SyslogMessage has "DHCPINFORM"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -3526,10 +3527,10 @@
 <tr>
 <td style="text-align: left;"><strong>Total</strong></td>
 <td style="text-align: center;"><strong>5</strong></td>
-<td style="text-align: center;"><strong>331</strong></td>
+<td style="text-align: center;"><strong>332</strong></td>
 <td style="text-align: center;"><strong>16</strong></td>
 <td style="text-align: center;"><strong>59</strong></td>
-<td style="text-align: center;"><strong>411</strong></td>
+<td style="text-align: center;"><strong>412</strong></td>
 </tr>
 </tbody>
 </table>
@@ -4033,10 +4034,10 @@
 <tr>
 <td style="text-align: left;"><code>has instanceId</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">113</td>
+<td style="text-align: center;">114</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">3</td>
-<td style="text-align: center;"><strong>116</strong></td>
+<td style="text-align: center;"><strong>117</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>contains &lt;EPOevent&gt;</code></td>
@@ -4095,22 +4096,6 @@
 <td style="text-align: center;"><strong>9</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>!has response:</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;"><strong>5</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_all client</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;"><strong>5</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>has purity.alert</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">3</td>
@@ -4119,20 +4104,28 @@
 <td style="text-align: center;"><strong>5</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>!has response:</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_all client</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>has_all &lt;Provider Name=</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">4</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;"><strong>4</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has predefined_alarm_id</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>has bytes read</code></td>
@@ -4239,6 +4232,22 @@
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>has %FW-6-LOG_SUMMARY:</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has DHCPINFORM</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>has_any change</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
@@ -4268,6 +4277,14 @@
 <td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has predefined_alarm_id</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
@@ -5007,14 +5024,6 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has %FW-6-LOG_SUMMARY:</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>has Stealthwatch</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -5216,14 +5225,6 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>has DHCPEXPIRE</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has DHCPINFORM</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>

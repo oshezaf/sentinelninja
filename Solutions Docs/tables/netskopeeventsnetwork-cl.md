@@ -12,11 +12,10 @@
 
 ## Schema (67 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/Data%20Connectors/NetskopeAlertsEvents_RestAPI_CCP/NetskopeAlertsEvents_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/NetskopeEventsNetwork_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| _id | string |
 | access_method | string |
 | action | string |
 | app | string |
@@ -26,7 +25,7 @@
 | ccl | string |
 | client_bytes | int |
 | client_packets | int |
-| count | int |
+| count_i | int |
 | device | string |
 | domain | string |
 | dst_country | string |
@@ -71,13 +70,14 @@
 | srcip | string |
 | srcport | int |
 | start_time | string |
+| TimeGenerated | datetime |
 | timestamp | int |
 | total_packets | int |
 | traffic_type | string |
 | tunnel_id | string |
 | tunnel_type | string |
 | tunnel_up_time | int |
-| type | string |
+| type_s | string |
 | ur_normalized | string |
 | user | string |
 | userip | string |

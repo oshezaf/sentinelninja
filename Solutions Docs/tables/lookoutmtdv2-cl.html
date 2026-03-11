@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>LookoutMtdV2_CL</h1>
@@ -44,8 +47,8 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (72 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout/Data%20Connectors/LookoutStreamingConnector_ccp/LookoutStreaming_DCR.json">Data Collection Rule definition</a></p>
+<h2>Schema (31 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/LookoutMtdV2_CL.json">KQL validation test schema</a></p>
 <table id="schema-table">
 <thead>
 <tr>
@@ -59,28 +62,12 @@
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">actor_device_guid</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">actor_guid</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">actor_type</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
 <td style="text-align: left;">audit</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
 <td style="text-align: left;">audit_attribute_changes</td>
 <td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">audit_type</td>
-<td style="text-align: left;">string</td>
 </tr>
 <tr>
 <td style="text-align: left;">change_type</td>
@@ -101,10 +88,6 @@
 <tr>
 <td style="text-align: left;">client_package_version</td>
 <td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">created_time</td>
-<td style="text-align: left;">datetime</td>
 </tr>
 <tr>
 <td style="text-align: left;">device</td>
@@ -131,40 +114,12 @@
 <td style="text-align: left;">datetime</td>
 </tr>
 <tr>
-<td style="text-align: left;">device_email_address</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
 <td style="text-align: left;">device_group_guid</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">device_guid</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">device_manufacturer</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">device_model</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">device_os_version</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
 <td style="text-align: left;">device_permissions</td>
 <td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">device_platform</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">device_security_status</td>
-<td style="text-align: left;">string</td>
 </tr>
 <tr>
 <td style="text-align: left;">device_settings</td>
@@ -192,7 +147,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">mdm_connector_id</td>
-<td style="text-align: left;">int</td>
+<td style="text-align: left;">string</td>
 </tr>
 <tr>
 <td style="text-align: left;">mdm_connector_uuid</td>
@@ -211,22 +166,6 @@
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">smishing_alert_description</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">smishing_alert_id</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">smishing_alert_severity</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">smishing_alert_type</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
 <td style="text-align: left;">smishing_detections</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
@@ -235,112 +174,12 @@
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">target_email_address</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">target_guid</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">target_manufacturer</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">target_model</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">target_os_version</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">target_platform</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">target_type</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
 <td style="text-align: left;">threat</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">threat_action</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">threat_application_name</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">threat_assessments</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">threat_classification</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">threat_classifications</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">threat_description</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">threat_file_name</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">threat_file_path</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">threat_id</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">threat_package_name</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">threat_package_sha</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">threat_pcp_device_response</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">threat_pcp_reporting_reason</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">threat_risk</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">threat_severity</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">threat_status</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">threat_type</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
 <td style="text-align: left;">TimeGenerated</td>
 <td style="text-align: left;">datetime</td>
-</tr>
-<tr>
-<td style="text-align: left;">type</td>
-<td style="text-align: left;">string</td>
 </tr>
 </tbody>
 </table>

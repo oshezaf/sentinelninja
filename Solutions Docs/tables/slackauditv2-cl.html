@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>SlackAuditV2_CL</h1>
@@ -44,8 +47,8 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (7 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit/Data%20Connectors/SlackAuditLog_CCP/SlackAuditLog_DCR.json">Data Collection Rule definition</a></p>
+<h2>Schema (9 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit%5CData%20Connectors%5CSlackAuditLog_CCP/SlackAuditLog_Table.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
 <tr>
@@ -55,32 +58,40 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">action</td>
+<td style="text-align: left;">Action</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">actor</td>
+<td style="text-align: left;">ActionDescription</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">context</td>
+<td style="text-align: left;">Actor</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">date_create</td>
+<td style="text-align: left;">Context</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">DateCreate</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">details</td>
+<td style="text-align: left;">Details</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">entity</td>
+<td style="text-align: left;">Entity</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">id</td>
+<td style="text-align: left;">Id</td>
 <td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
 </tr>
 </tbody>
 </table>

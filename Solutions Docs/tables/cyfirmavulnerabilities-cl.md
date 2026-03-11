@@ -15,7 +15,7 @@
 
 ## Schema (10 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Vulnerabilities%20Intel/Data%20Connectors/CyfirmaVulnerabilitiesIntel_ccp/CyfirmaVulnerabilitiesIntel_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyfirmaVulnerabilities_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
@@ -28,7 +28,7 @@
 | modified | datetime |
 | name | string |
 | spec_version | string |
-| type | string |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

@@ -15,12 +15,12 @@
 
 ## Schema (37 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Attack%20Surface/Data%20Connectors/CyfirmaASAlerts_ccp/CyfirmaASAlerts_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyfirmaASCertificatesAlerts_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| alert_created_date | datetime |
 | alert_object_uid | string |
+| Alert_title | string |
 | alert_uid | string |
 | asset_comments | string |
 | attacks | dynamic |
@@ -30,8 +30,8 @@
 | cert_type | string |
 | description | string |
 | first_seen | datetime |
-| is_third_party | boolean |
-| is_vulnerable | boolean |
+| is_third_party | bool |
+| is_vulnerable | bool |
 | issued_by | string |
 | issued_to | string |
 | issuer_public_hash | string |
@@ -42,14 +42,14 @@
 | safe_flag_comments | string |
 | safe_flag_marked_by | string |
 | safe_flag_marked_date | string |
-| self_signed | boolean |
+| self_signed | bool |
 | serial | string |
 | severity | string |
 | source | string |
 | status | string |
 | sub_category | string |
 | sub_domain | string |
-| title | string |
+| TimeGenerated | datetime |
 | top_domain | string |
 | uid | string |
 | use_cases | string |

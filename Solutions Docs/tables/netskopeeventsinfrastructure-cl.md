@@ -12,11 +12,10 @@
 
 ## Schema (10 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/Data%20Connectors/NetskopeAlertsEvents_RestAPI_CCP/NetskopeAlertsEvents_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/NetskopeEventsInfrastructure_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| _id | string |
 | boolean_metric_value | string |
 | hostname | string |
 | metric_name | string |
@@ -25,6 +24,7 @@
 | metric_value | string |
 | package_version | string |
 | serial | string |
+| TimeGenerated | datetime |
 | timestamp | int |
 
 ## Solutions (1)

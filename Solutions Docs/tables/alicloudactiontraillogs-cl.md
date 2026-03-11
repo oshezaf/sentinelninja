@@ -13,13 +13,39 @@
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (1 columns)
+## Schema (27 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alibaba%20Cloud%20ActionTrail/Data%20Connectors/AliCloudCloudTrailConnector_CCP/AliCloudActionTrail_DCR.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alibaba%20Cloud%20ActionTrail%5CData%20Connectors%5CAliCloudCloudTrailConnector_CCP/AliCloudActionTrail_table.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| value | string |
+| acsRegion | string |
+| additionalEventData | dynamic |
+| apiVersion | string |
+| errorCode | string |
+| errorMessage | string |
+| eventAttributes | dynamic |
+| eventCategory | string |
+| eventId | string |
+| eventName | string |
+| eventRW | string |
+| eventSource | string |
+| eventTime | string |
+| eventType | string |
+| eventVersion | string |
+| isGlobal | bool |
+| referencedResources | dynamic |
+| requestId | string |
+| requestParameterJson | string |
+| requestParameters | dynamic |
+| resourceName | string |
+| resourceType | string |
+| responseElements | dynamic |
+| serviceName | string |
+| sourceIpAddress | string |
+| TimeGenerated | datetime |
+| userAgent | string |
+| userIdentity | dynamic |
 
 ## Solutions (1)
 

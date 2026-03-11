@@ -13,9 +13,9 @@
 | **Lake-Only Ingestion** | ✗ No |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (11 columns)
+## Schema (12 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illumio%20Insight/Data%20Connectors/IllumioInsightsSummaryConnector_CCP/IllumioInsightsSummary_DCR.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illumio%20Insight%5CData%20Connectors%5CIllumioInsightsSummaryConnector_CCP/table_IllumioInsightsSummary.json)
 
 | Column Name | Type |
 |:------------|:-----|
@@ -26,10 +26,11 @@
 | IllumioTenantId | string |
 | Persona | string |
 | ReportId | string |
-| ReportPayload | string |
+| ReportPayload | dynamic |
 | SummaryEndDate | string |
 | SummaryStartDate | string |
 | Tags | dynamic |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

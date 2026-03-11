@@ -10,15 +10,6 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
-## Schema (2 columns)
-
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/meshStack/Data%20Connectors/meshStackEventLogs_ccp/meshStackEventLogs_DCR.json)
-
-| Column Name | Type |
-|:------------|:-----|
-| metadata | dynamic |
-| spec | dynamic |
-
 ## Solutions (1)
 
 This table is used by the following solutions:

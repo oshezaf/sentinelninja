@@ -10,44 +10,45 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
-## Schema (32 columns)
+## Schema (33 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Carbon%20Black%20Cloud/Data%20Connectors/VMwareCarbonBlackCloud_ccp/CarbonBlack_DCR.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Carbon%20Black%20Cloud%5CData%20Connectors%5CVMwareCarbonBlackCloud_ccp/table_watclist.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| create_time | string |
-| device_external_ip | string |
-| device_id | string |
-| device_internal_ip | string |
-| device_name | string |
-| device_os | string |
-| ioc_hit | string |
-| ioc_id | string |
-| org_key | string |
-| parent_cmdline | string |
-| parent_guid | string |
-| parent_hash | string |
-| parent_path | string |
-| parent_pid | string |
-| parent_publisher | string |
-| parent_reputation | string |
-| parent_username | string |
-| process_cmdline | string |
-| process_guid | string |
-| process_hash | string |
-| process_path | string |
-| process_pid | string |
-| process_publisher | string |
-| process_reputation | string |
-| process_username | string |
-| report_id | string |
-| report_name | string |
-| report_tags | string |
-| schema | string |
-| severity | string |
-| type | string |
-| watchlists | string |
+| CreateTime | string |
+| DeviceExternalIp | string |
+| DeviceId | string |
+| DeviceInternalIp | string |
+| DeviceName | string |
+| DeviceOs | string |
+| IocHit | string |
+| IocId | string |
+| OrgKey | string |
+| ParentCmdline | string |
+| ParentGuid | string |
+| ParentHash | string |
+| ParentPath | string |
+| ParentPid | string |
+| ParentPublisher | string |
+| ParentReputation | string |
+| ParentUsername | string |
+| ProcessCmdline | string |
+| ProcessGuid | string |
+| ProcessHash | string |
+| ProcessPath | string |
+| ProcessPid | string |
+| ProcessPublisher | string |
+| ProcessReputation | string |
+| ProcessUsername | string |
+| ReportId | string |
+| ReportName | string |
+| ReportTags | string |
+| Schema | string |
+| Severity | string |
+| TimeGenerated | datetime |
+| Watchlists | string |
+| WatchlistsType | string |
 
 ## Solutions (1)
 

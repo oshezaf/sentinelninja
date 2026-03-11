@@ -15,29 +15,29 @@
 
 ## Schema (19 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OneLoginIAM/Data%20Connectors/OneLoginIAMLogs_ccp/OneLoginIAMLogs_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/OneLoginEventsV2_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| account_id | real |
-| actor_system | string |
-| actor_user_id | real |
-| actor_user_name | string |
-| app_id | real |
-| app_name | string |
-| created_at | datetime |
-| custom_message | string |
-| event_type_id | real |
-| id | real |
-| ipaddr | string |
-| notes | string |
-| policy_id | real |
-| policy_name | string |
-| policy_type | string |
-| role_id | real |
-| role_name | string |
-| user_id | real |
-| user_name | string |
+| AccountId | real |
+| ActorSystem | string |
+| ActorUserId | real |
+| ActorUserName | string |
+| AppId | real |
+| AppName | string |
+| CustomMessage | string |
+| EventId | real |
+| EventTypeId | real |
+| Ipaddr | string |
+| Notes | string |
+| PolicyId | real |
+| PolicyName | string |
+| PolicyType | string |
+| RoleId | real |
+| RoleName | string |
+| TimeGenerated | datetime |
+| UserId | real |
+| UserName | string |
 
 ## Solutions (1)
 

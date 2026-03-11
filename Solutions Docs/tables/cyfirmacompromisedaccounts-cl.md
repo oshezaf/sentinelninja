@@ -13,17 +13,17 @@
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (26 columns)
+## Schema (25 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Compromised%20Accounts/Data%20Connectors/CyfirmaCompromisedAccounts_ccp/CyfirmaCompAcc_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyfirmaCompromisedAccounts_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
 | antivirus | string |
 | asset_comment | string |
 | breach_date | string |
+| Category | string |
 | computer_name | string |
-| cookie_sessions | dynamic |
 | description | string |
 | email | string |
 | first_seen | datetime |
@@ -40,8 +40,7 @@
 | safe_flag_comments | string |
 | source | string |
 | system_info | string |
-| title | string |
-| type | string |
+| TimeGenerated | datetime |
 | uid | string |
 | url | string |
 | user_name | string |

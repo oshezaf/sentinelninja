@@ -12,18 +12,18 @@
 
 ## Schema (8 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAltoPrismaCloud/Data%20Connectors/PrismaCloudCSPMLog_CCF/PaloAltoPrismaCloudCSPMLog_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/PaloAltoPrismaCloudAuditV2_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| action | string |
-| actionType | string |
-| ipAddress | string |
-| resourceName | string |
-| resourceType | string |
-| result | string |
-| timestamp | real |
-| user | string |
+| Action | string |
+| ActionType | string |
+| IPAddress | string |
+| ResourceName | string |
+| ResourceType | string |
+| Result | string |
+| TimeGenerated | datetime |
+| User | string |
 
 ## Solutions (1)
 

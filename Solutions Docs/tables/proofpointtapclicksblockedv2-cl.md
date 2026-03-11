@@ -13,9 +13,9 @@
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (16 columns)
+## Schema (17 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ProofPointTap/Data%20Connectors/ProofpointTAP_CCP/ProofpointTAP_DCR.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ProofPointTap%5CData%20Connectors%5CProofpointTAP_CCP/ProofPointTAPClicksBlockedV2_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
@@ -33,6 +33,7 @@
 | threatStatus | string |
 | threatTime | datetime |
 | threatURL | string |
+| TimeGenerated | datetime |
 | url | string |
 | userAgent | string |
 

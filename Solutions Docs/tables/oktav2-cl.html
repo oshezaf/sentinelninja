@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>OktaV2_CL</h1>
@@ -32,8 +35,8 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (17 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Data%20Connectors/OktaNativePollerConnectorV2/OktaSSOv2_DCR.json">Data Collection Rule definition</a></p>
+<h2>Schema (58 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/OktaV2_CL.json">KQL validation test schema</a></p>
 <table id="schema-table">
 <thead>
 <tr>
@@ -43,71 +46,235 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">actor</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">authenticationContext</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">client</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">debugContext</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">displayMessage</td>
+<td style="text-align: left;">ActingAppName</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">DomainName</td>
+<td style="text-align: left;">ActingAppType</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">eventType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">legacyEventType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">outcome</td>
+<td style="text-align: left;">ActorDetailEntry</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">published</td>
+<td style="text-align: left;">ActorDisplayName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorSessionId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorUserId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorUserIdType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorUsername</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorUsernameType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorUserType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationContextAuthenticationProvider</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationContextAuthenticationStep</td>
+<td style="text-align: left;">int</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationContextCredentialProvider</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationContextInterface</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationContextIssuerId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationContextIssuerType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DebugData</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcAction</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventMessage</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventOriginalResultDetails</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventOriginalType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventOriginalUid</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventResult</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventSeverity</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpUserAgent</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">LegacyEventType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogonMethod</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OriginalActorAlternateId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OriginalClientDevice</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OriginalOutcomeResult</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OriginalSeverity</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OriginalTarget</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">OriginalUserId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OriginalUserType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Request</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">SecurityContextAsNumber</td>
+<td style="text-align: left;">int</td>
+</tr>
+<tr>
+<td style="text-align: left;">SecurityContextAsOrg</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SecurityContextDomain</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SecurityContextIsProxy</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDeviceType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDvcId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDvcIdType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcDvcOs</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGeoCity</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGeoCountry</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGeoLatitude</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGeoLongtitude</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGeoPostalCode</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcGeoRegion</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcIpAddr</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcIsp</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcZone</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
 <td style="text-align: left;">datetime</td>
 </tr>
 <tr>
-<td style="text-align: left;">request</td>
+<td style="text-align: left;">TransactionDetail</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">securityContext</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">severity</td>
+<td style="text-align: left;">TransactionId</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">target</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">transaction</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">uuid</td>
+<td style="text-align: left;">TransactionType</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">version</td>
+<td style="text-align: left;">Version</td>
 <td style="text-align: left;">string</td>
 </tr>
 </tbody>

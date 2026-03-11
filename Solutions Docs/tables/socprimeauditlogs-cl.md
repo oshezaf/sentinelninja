@@ -13,19 +13,22 @@
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (7 columns)
+## Schema (10 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC%20Prime%20CCF/Data%20Connectors/SOCPrime_ccp/SOCPrime_DCR.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC%20Prime%20CCF%5CData%20Connectors%5CSOCPrime_ccp/SOCPrime_table.json)
 
-| Column Name | Type |
-|:------------|:-----|
-| event_name | string |
-| event_page | string |
-| source_ip | string |
-| timestamp | datetime |
-| user_agent | string |
-| user_email | string |
-| user_name | string |
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| EventName | string | Event Name |
+| EventProduct | string |  |
+| EventType | string |  |
+| EventVendor | string |  |
+| HttpUserAgent | string |  |
+| SourceIp | string |  |
+| TimeGenerated | datetime | The timestamp (UTC) reflecting the time in which the event was generated. |
+| Uri | string |  |
+| UserEmail | string |  |
+| UserName | string |  |
 
 ## Solutions (1)
 

@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>HalcyonNetworkSession_CL</h1>
@@ -44,8 +47,8 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (394 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Halcyon/Data%20Connectors/Halcyon_ccp/Halcyon_DCR.json">Data Collection Rule definition</a></p>
+<h2>Schema (161 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Halcyon%5CData%20Connectors%5CHalcyon_ccp/Halcyon_table_NetworkSession.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
 <tr>
@@ -55,284 +58,8 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">ActingAppId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActingAppName</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActingAppType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActingOriginalAppType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActingProcessCommandLine</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActingProcessCreationTime</td>
-<td style="text-align: left;">datetime</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActingProcessFileCompany</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActingProcessFileDescription</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActingProcessFileInternalName</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActingProcessFilename</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActingProcessFileOriginalName</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActingProcessFileProduct</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActingProcessFileSize</td>
-<td style="text-align: left;">long</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActingProcessFileVersion</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActingProcessGuid</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActingProcessId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActingProcessIMPHASH</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActingProcessInjectedAddress</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActingProcessIntegrityLevel</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActingProcessIsHidden</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActingProcessMD5</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActingProcessName</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActingProcessSHA1</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActingProcessSHA256</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActingProcessSHA512</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActingProcessTokenElevation</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActorOriginalUserType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActorScope</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActorScopeId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActorSessionId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActorUserAadId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActorUserId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActorUserIdType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActorUsername</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActorUsernameType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActorUserSid</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ActorUserType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
 <td style="text-align: left;">AdditionalFields</td>
 <td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">DhcpCircuitId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">DhcpLeaseDuration</td>
-<td style="text-align: left;">int</td>
-</tr>
-<tr>
-<td style="text-align: left;">DhcpSessionDuration</td>
-<td style="text-align: left;">int</td>
-</tr>
-<tr>
-<td style="text-align: left;">DhcpSessionId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">DhcpSrcDHCId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">DhcpSubscriberId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">DhcpUserClass</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">DhcpUserClassId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">DhcpVendorClass</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">DhcpVendorClassId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">DnsFlags</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">DnsFlagsAuthenticated</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">DnsFlagsAuthoritative</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">DnsFlagsCheckingDisabled</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">DnsFlagsRecursionAvailable</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">DnsFlagsRecursionDesired</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">DnsFlagsTruncated</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">DnsFlagsZ</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">DnsNetworkDuration</td>
-<td style="text-align: left;">int</td>
-</tr>
-<tr>
-<td style="text-align: left;">DnsQuery</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">DnsQueryClass</td>
-<td style="text-align: left;">int</td>
-</tr>
-<tr>
-<td style="text-align: left;">DnsQueryClassName</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">DnsQueryType</td>
-<td style="text-align: left;">int</td>
-</tr>
-<tr>
-<td style="text-align: left;">DnsQueryTypeName</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">DnsResponseCode</td>
-<td style="text-align: left;">int</td>
-</tr>
-<tr>
-<td style="text-align: left;">DnsResponseIpCity</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">DnsResponseIpCountry</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">DnsResponseIpLatitude</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">DnsResponseIpLongitude</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">DnsResponseIpRegion</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">DnsResponseName</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">DnsSessionId</td>
-<td style="text-align: left;">string</td>
 </tr>
 <tr>
 <td style="text-align: left;">Dst</td>
@@ -355,10 +82,6 @@
 <td style="text-align: left;">long</td>
 </tr>
 <tr>
-<td style="text-align: left;">DstDescription</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
 <td style="text-align: left;">DstDeviceType</td>
 <td style="text-align: left;">string</td>
 </tr>
@@ -376,6 +99,10 @@
 </tr>
 <tr>
 <td style="text-align: left;">DstDvcIdType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstDvcOs</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
@@ -427,6 +154,10 @@
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
+<td style="text-align: left;">DstIsp</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
 <td style="text-align: left;">DstMacAddr</td>
 <td style="text-align: left;">string</td>
 </tr>
@@ -455,6 +186,18 @@
 <td style="text-align: left;">int</td>
 </tr>
 <tr>
+<td style="text-align: left;">DstProcessGuid</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstProcessId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstProcessName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
 <td style="text-align: left;">DstRiskLevel</td>
 <td style="text-align: left;">int</td>
 </tr>
@@ -479,11 +222,23 @@
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
+<td style="text-align: left;">DstUserScope</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstUserScopeId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
 <td style="text-align: left;">DstUserType</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstVlanId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstVmName</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
@@ -527,10 +282,6 @@
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">DvcInboundInterface</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
 <td style="text-align: left;">DvcInterface</td>
 <td style="text-align: left;">string</td>
 </tr>
@@ -555,19 +306,11 @@
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">DvcOutboundInterface</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
 <td style="text-align: left;">DvcScope</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
 <td style="text-align: left;">DvcScopeId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">DvcSubscriptionId</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
@@ -595,10 +338,6 @@
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventOriginalSubType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
 <td style="text-align: left;">EventOriginalType</td>
 <td style="text-align: left;">string</td>
 </tr>
@@ -607,19 +346,11 @@
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventOwner</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
 <td style="text-align: left;">EventProduct</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventProductVersion</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">EventReportUrl</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
@@ -656,110 +387,6 @@
 </tr>
 <tr>
 <td style="text-align: left;">EventVendor</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">FileContentType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">FileMD5</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">FileName</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">FileSHA1</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">FileSHA256</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">FileSHA512</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">FileSize</td>
-<td style="text-align: left;">int</td>
-</tr>
-<tr>
-<td style="text-align: left;">GroupId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">GroupIdType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">GroupName</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">GroupNameType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">GroupOriginalType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">GroupType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">HashType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">HttpContentFormat</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">HttpContentType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">HttpHost</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">HttpReferrer</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">HttpRequestMethod</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">HttpRequestTime</td>
-<td style="text-align: left;">int</td>
-</tr>
-<tr>
-<td style="text-align: left;">HttpRequestXff</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">HttpResponseTime</td>
-<td style="text-align: left;">int</td>
-</tr>
-<tr>
-<td style="text-align: left;">HttpUserAgent</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">HttpVersion</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">LogonMethod</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">LogonProtocol</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
@@ -815,150 +442,6 @@
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">NewPropertyValue</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">NewValue</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">Object</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ObjectId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ObjectType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">OldValue</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">Operation</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">OriginalObjectType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ParentProcessCommandLine</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ParentProcessCreationTime</td>
-<td style="text-align: left;">datetime</td>
-</tr>
-<tr>
-<td style="text-align: left;">ParentProcessFileCompany</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ParentProcessFileDescription</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ParentProcessFileProduct</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ParentProcessFileVersion</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ParentProcessGuid</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ParentProcessId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ParentProcessIMPHASH</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ParentProcessInjectedAddress</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ParentProcessIntegrityLevel</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ParentProcessIsHidden</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">ParentProcessMD5</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ParentProcessName</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ParentProcessSHA1</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ParentProcessSHA256</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ParentProcessSHA512</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ParentProcessTokenElevation</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">PreviousPropertyValue</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">RegistryKey</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">RegistryPreviousKey</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">RegistryPreviousValue</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">RegistryPreviousValueData</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">RegistryPreviousValueType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">RegistryValue</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">RegistryValueData</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">RegistryValueType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">RequestedIpAddr</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
 <td style="text-align: left;">Rule</td>
 <td style="text-align: left;">string</td>
 </tr>
@@ -969,6 +452,10 @@
 <tr>
 <td style="text-align: left;">RuleNumber</td>
 <td style="text-align: left;">int</td>
+</tr>
+<tr>
+<td style="text-align: left;">SessionId</td>
+<td style="text-align: left;">string</td>
 </tr>
 <tr>
 <td style="text-align: left;">SourceSystem</td>
@@ -993,10 +480,6 @@
 <tr>
 <td style="text-align: left;">SrcBytes</td>
 <td style="text-align: left;">long</td>
-</tr>
-<tr>
-<td style="text-align: left;">SrcDescription</td>
-<td style="text-align: left;">string</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcDeviceType</td>
@@ -1029,54 +512,6 @@
 <tr>
 <td style="text-align: left;">SrcDvcScopeId</td>
 <td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">SrcFileCreationTime</td>
-<td style="text-align: left;">datetime</td>
-</tr>
-<tr>
-<td style="text-align: left;">SrcFileDirectory</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">SrcFileExtension</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">SrcFileMD5</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">SrcFileMimeType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">SrcFileName</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">SrcFilePath</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">SrcFilePathType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">SrcFileSHA1</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">SrcFileSHA256</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">SrcFileSHA512</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">SrcFileSize</td>
-<td style="text-align: left;">long</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcFQDN</td>
@@ -1195,15 +630,7 @@
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">SrcUserSessionId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
 <td style="text-align: left;">SrcUserType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">SrcUserUid</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
@@ -1211,332 +638,16 @@
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
+<td style="text-align: left;">SrcVmName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
 <td style="text-align: left;">SrcZone</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">TargetAppId</td>
+<td style="text-align: left;">TcpFlags</td>
 <td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetAppName</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetAppType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetDescription</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetDeviceType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetDomain</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetDomainType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetDvcId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetDvcIdType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetDvcOs</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetDvcScope</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetDvcScopeId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetFileCreationTime</td>
-<td style="text-align: left;">datetime</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetFileDirectory</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetFileExtension</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetFileMD5</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetFileMimeType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetFileName</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetFilePath</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetFilePathType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetFileSHA1</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetFileSHA256</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetFileSHA512</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetFileSize</td>
-<td style="text-align: left;">long</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetFQDN</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetGeoCity</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetGeoCountry</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetGeoLatitude</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetGeoLongitude</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetGeoRegion</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetHostname</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetIpAddr</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetOriginalAppType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetOriginalRiskLevel</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetOriginalUserType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetPortNumber</td>
-<td style="text-align: left;">int</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetProcessCommandLine</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetProcessCreationTime</td>
-<td style="text-align: left;">datetime</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetProcessCurrentDirectory</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetProcessFileCompany</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetProcessFileDescription</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetProcessFileInternalName</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetProcessFilename</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetProcessFileOriginalName</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetProcessFileProduct</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetProcessFileSize</td>
-<td style="text-align: left;">long</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetProcessFileVersion</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetProcessGuid</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetProcessId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetProcessIMPHASH</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetProcessInjectedAddress</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetProcessIntegrityLevel</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetProcessIsHidden</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetProcessMD5</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetProcessName</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetProcessSHA1</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetProcessSHA256</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetProcessSHA512</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetProcessStatusCode</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetProcessTokenElevation</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetRiskLevel</td>
-<td style="text-align: left;">int</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetScope</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetScopeId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetSessionId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetUrl</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetUserId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetUserIdType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetUsername</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetUsernameType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetUserScope</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetUserScopeId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetUserSessionGuid</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetUserSessionId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetUserType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetUserUid</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TcpFlagsAck</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">TcpFlagsFin</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">TcpFlagsPsh</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">TcpFlagsRst</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">TcpFlagsSyn</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">TcpFlagsUrg</td>
-<td style="text-align: left;">boolean</td>
 </tr>
 <tr>
 <td style="text-align: left;">ThreatCategory</td>
@@ -1551,15 +662,7 @@
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">ThreatFilePath</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
 <td style="text-align: left;">ThreatFirstReportedTime</td>
-<td style="text-align: left;">datetime</td>
-</tr>
-<tr>
-<td style="text-align: left;">ThreatFirstReportedTime_d</td>
 <td style="text-align: left;">datetime</td>
 </tr>
 <tr>
@@ -1572,14 +675,10 @@
 </tr>
 <tr>
 <td style="text-align: left;">ThreatIsActive</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
 <td style="text-align: left;">ThreatLastReportedTime</td>
-<td style="text-align: left;">datetime</td>
-</tr>
-<tr>
-<td style="text-align: left;">ThreatLastReportedTime_d</td>
 <td style="text-align: left;">datetime</td>
 </tr>
 <tr>
@@ -1595,40 +694,12 @@
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">ThreatOriginalRiskLevel_s</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
 <td style="text-align: left;">ThreatRiskLevel</td>
 <td style="text-align: left;">int</td>
 </tr>
 <tr>
 <td style="text-align: left;">TimeGenerated</td>
 <td style="text-align: left;">datetime</td>
-</tr>
-<tr>
-<td style="text-align: left;">TransactionIdHex</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">Url</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">UrlCategory</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">UrlOriginal</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ValueType</td>
-<td style="text-align: left;">string</td>
 </tr>
 </tbody>
 </table>

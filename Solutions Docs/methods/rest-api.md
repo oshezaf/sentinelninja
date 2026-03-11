@@ -1,4 +1,4 @@
-# REST API / Custom Integration
+# Unknown Collection Method
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -6,13 +6,11 @@
 
 ---
 
-REST API-based connectors use the Azure Monitor Data Collector API or Logs Ingestion API to send data to Microsoft Sentinel. These connectors may use custom scripts, Logic Apps, or other integration methods to collect and ingest data.
+The collection method for these connectors could not be automatically determined. Please refer to the individual connector documentation for setup instructions.
 
 ## Documentation
 
-- [📖 Logs Ingestion API overview](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview)
-- [📖 Send data using the Logs Ingestion API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-walkthrough)
-- [📖 Create custom logs](https://learn.microsoft.com/azure/sentinel/create-custom-connector)
+- [📖 Microsoft Sentinel data connectors](https://learn.microsoft.com/azure/sentinel/connect-data-sources)
 
 ## Statistics
 

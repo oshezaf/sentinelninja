@@ -10,29 +10,70 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
-## Schema (17 columns)
+## Schema (58 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Data%20Connectors/OktaNativePollerConnectorV2/OktaSSOv2_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/OktaV2_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| actor | dynamic |
-| authenticationContext | dynamic |
-| client | dynamic |
-| debugContext | dynamic |
-| displayMessage | string |
-| DomainName | string |
-| eventType | string |
-| legacyEventType | string |
-| outcome | dynamic |
-| published | datetime |
-| request | dynamic |
-| securityContext | dynamic |
-| severity | string |
-| target | dynamic |
-| transaction | dynamic |
-| uuid | string |
-| version | string |
+| ActingAppName | string |
+| ActingAppType | string |
+| ActorDetailEntry | dynamic |
+| ActorDisplayName | string |
+| ActorSessionId | string |
+| ActorUserId | string |
+| ActorUserIdType | string |
+| ActorUsername | string |
+| ActorUsernameType | string |
+| ActorUserType | string |
+| AuthenticationContextAuthenticationProvider | string |
+| AuthenticationContextAuthenticationStep | int |
+| AuthenticationContextCredentialProvider | string |
+| AuthenticationContextInterface | string |
+| AuthenticationContextIssuerId | string |
+| AuthenticationContextIssuerType | string |
+| DebugData | dynamic |
+| DvcAction | string |
+| EventMessage | string |
+| EventOriginalResultDetails | string |
+| EventOriginalType | string |
+| EventOriginalUid | string |
+| EventResult | string |
+| EventSeverity | string |
+| HttpUserAgent | string |
+| LegacyEventType | string |
+| LogonMethod | string |
+| OriginalActorAlternateId | string |
+| OriginalClientDevice | string |
+| OriginalOutcomeResult | string |
+| OriginalSeverity | string |
+| OriginalTarget | dynamic |
+| OriginalUserId | string |
+| OriginalUserType | string |
+| Request | dynamic |
+| SecurityContextAsNumber | int |
+| SecurityContextAsOrg | string |
+| SecurityContextDomain | string |
+| SecurityContextIsProxy | bool |
+| SrcDeviceType | string |
+| SrcDvcId | string |
+| SrcDvcIdType | string |
+| SrcDvcOs | string |
+| SrcGeoCity | string |
+| SrcGeoCountry | string |
+| SrcGeoLatitude | real |
+| SrcGeoLongtitude | real |
+| SrcGeoPostalCode | string |
+| SrcGeoRegion | string |
+| SrcIpAddr | string |
+| SrcIsp | string |
+| SrcZone | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| TransactionDetail | dynamic |
+| TransactionId | string |
+| TransactionType | string |
+| Version | string |
 
 ## Solutions (2)
 

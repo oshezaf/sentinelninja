@@ -15,11 +15,10 @@
 
 ## Schema (201 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/Data%20Connectors/NetskopeAlertsEvents_RestAPI_CCP/NetskopeAlertsEvents_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/NetskopeAlerts_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| _id | string |
 | access_method | string |
 | account_id | string |
 | account_name | string |
@@ -32,7 +31,7 @@
 | alert_type | string |
 | app | string |
 | app_activity | string |
-| app_session_id | long |
+| app_sessionid | string |
 | appcategory | string |
 | appsuite | string |
 | asset_id | string |
@@ -44,7 +43,7 @@
 | breach_score | string |
 | breach_target_references | string |
 | browser | string |
-| browser_session_id | long |
+| browser_sessionid | string |
 | browser_version | string |
 | bypass_traffic | string |
 | category | string |
@@ -55,17 +54,17 @@
 | conn_duration | int |
 | conn_endtime | int |
 | conn_starttime | int |
-| connection_id | long |
+| connectionid | string |
 | CononicalName | string |
-| count | int |
+| count_i | int |
 | data_type | string |
 | device | string |
 | device_classification | string |
 | dlp_file | string |
-| dlp_incident_id | long |
+| dlp_incidentid | string |
 | dlp_is_unique_count | string |
 | dlp_mail_parent_id | string |
-| dlp_parent_id | long |
+| dlp_parentid | string |
 | dlp_profile | string |
 | dlp_rule | string |
 | dlp_rule_count | int |
@@ -89,7 +88,7 @@
 | exposure | string |
 | external_collaborator_count | int |
 | external_email | int |
-| file_cls_encrypted | boolean |
+| file_cls_encrypted | bool |
 | file_lang | string |
 | file_path | string |
 | file_size | int |
@@ -156,7 +155,7 @@
 | region_id | string |
 | region_name | string |
 | req_cnt | int |
-| request_id | long |
+| requestid | string |
 | resource_category | string |
 | resource_group | string |
 | resp_cnt | int |
@@ -198,17 +197,18 @@
 | threat_source_id | int |
 | threshold | int |
 | threshold_time | int |
+| TimeGenerated | datetime |
 | timestamp | int |
-| title | string |
+| title_s | string |
 | to_object | string |
 | total_collaborator_count | int |
 | traffic_type | string |
-| transaction_id | long |
+| transactionid | string |
 | true_obj_category | string |
 | true_obj_type | string |
 | tss_mode | string |
 | two_factor_auth | string |
-| type | string |
+| type_s | string |
 | universal_connector | string |
 | ur_normalized | string |
 | url | string |

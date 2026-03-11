@@ -137,6 +137,14 @@ table.dataTable tbody td {
     object-fit: contain;
     border-radius: 4px;
 }
+.sol-logo-fallback {
+    display: inline-block;
+    width: 28px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 28px;
+    opacity: 0.5;
+}
 
 /* Links in table cells */
 table.dataTable a {

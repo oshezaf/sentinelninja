@@ -15,24 +15,24 @@
 
 ## Schema (14 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20LogServ/Data%20Connectors/SAPLogServ_PUSH_CCP/SAPLogServ_DCR.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20LogServ%5CData%20Connectors%5CSAPLogServ_PUSH_CCP/table.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| _raw | string |
-| _time | real |
 | clz_dir | string |
 | clz_subdir | string |
 | cribl_breaker | string |
 | cribl_pipe | string |
 | host | string |
 | index | string |
+| Raw | string |
 | region | string |
 | source | string |
 | sourcetype | string |
 | test | dynamic |
 | test1 | dynamic |
 | TimeGenerated | datetime |
+| UnixTimestamp | real |
 
 ## Solutions (1)
 

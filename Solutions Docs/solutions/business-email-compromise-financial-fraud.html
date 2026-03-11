@@ -3,16 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>&lt;img src=&quot;../images/asim-badge.png&quot; alt=&quot;ASIM&quot; height=&quot;32&quot;&gt; Business Email Compromise - Financial Fraud &mdash; Solutions Analyzer</title>
+<title>Business Email Compromise - Financial Fraud &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
     <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
-<h1><img src="../images/asim-badge.png" alt="ASIM" height="32"> Business Email Compromise - Financial Fraud</h1>
+<h1>Business Email Compromise - Financial Fraud</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Business Email Compromise - Financial Fraud Logo" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
@@ -90,7 +93,6 @@
 <h2>Contents</h2>
 <ul>
 <li><a href="#pre-requisites">Pre-requisites</a></li>
-<li><a href="#asim-pre-requisites">ASIM Pre-requisites</a></li>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#tables-used">Tables Used</a></li>
 <li><a href="#content-items">Content Items</a></li>
@@ -121,71 +123,6 @@
 </tr>
 </tbody>
 </table>
-<h2><a id="asim-pre-requisites"></a><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Pre-requisites</h2>
-<p>This solution uses the <a href="../asim/imfileevent.html"><code>imFileEvent</code></a> <a href="https://learn.microsoft.com/azure/sentinel/normalization">ASIM (Advanced Security Information Model)</a> parser to provide normalized, source-agnostic data access, expanding detection coverage without modifying queries.</p>
-<h3>Supported Products</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Product</th>
-<th style="text-align: left;">Dependency Solution</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#google-workspace">Google Workspace</a></td>
-<td style="text-align: left;">-</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-365-defender-for-endpoint">Microsoft 365 Defender for EndPoint</a></td>
-<td style="text-align: left;">-</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-azure-blob-storage">Microsoft Azure Blob Storage</a></td>
-<td style="text-align: left;"><a href="azure-storage.html">Azure Storage</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-azure-file-storage">Microsoft Azure File Storage</a></td>
-<td style="text-align: left;"><a href="azure-storage.html">Azure Storage</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-azure-queue-storage">Microsoft Azure Queue Storage</a></td>
-<td style="text-align: left;"><a href="azure-storage.html">Azure Storage</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-azure-table-storage">Microsoft Azure Table Storage</a></td>
-<td style="text-align: left;"><a href="azure-storage.html">Azure Storage</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-sharepoint">Microsoft SharePoint</a></td>
-<td style="text-align: left;">-</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-sysmon-for-linux">Microsoft Sysmon for Linux</a></td>
-<td style="text-align: left;"><a href="syslog.html">Syslog</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-windows-events">Microsoft Windows Events</a></td>
-<td style="text-align: left;"><a href="windows-forwarded-events.html">Windows Forwarded Events</a><br><a href="windows-security-events.html">Windows Security Events</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#native">Native</a></td>
-<td style="text-align: left;"><a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a><br><a href="vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#sentinelone">SentinelOne</a></td>
-<td style="text-align: left;"><a href="sentinelone.html">SentinelOne</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#vmware-carbon-black-cloud">VMware Carbon Black Cloud</a></td>
-<td style="text-align: left;"><a href="vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#windows-sysmon">Windows Sysmon</a></td>
-<td style="text-align: left;"><a href="windows-forwarded-events.html">Windows Forwarded Events</a></td>
-</tr>
-</tbody>
-</table>
 <h2>Data Connectors</h2>
 <p><strong>This solution does not include its own data connectors</strong> but uses connectors from dependency solutions:</p>
 <ul>
@@ -193,28 +130,12 @@
 <li><a href="../connectors/awss3.html">Amazon Web Services S3</a> <em>(dependency on <a href="amazon-web-services.html">Amazon Web Services</a>)</em></li>
 <li><a href="../connectors/awss3wafccpdefinition.html">Amazon Web Services S3 WAF</a> <em>(dependency on <a href="amazon-web-services.html">Amazon Web Services</a>)</em></li>
 <li><a href="../connectors/azureactivedirectory.html">Microsoft Entra ID</a> <em>(dependency on <a href="microsoft-entra-id.html">Microsoft Entra ID</a>)</em></li>
-<li><a href="../connectors/azurestorageaccount.html">Azure Storage Account</a> <em>(dependency on <a href="azure-storage.html">Azure Storage</a>)</em></li>
-<li><a href="../connectors/crowdstrikeapiconnector.html">CrowdStrike API Data Connector (via Codeless Connector Framework)</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
-<li><a href="../connectors/crowdstrikefalconadversaryintelligence.html">CrowdStrike Falcon Adversary Intelligence </a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
-<li><a href="../connectors/crowdstrikefalconendpointprotection.html">[Deprecated] CrowdStrike Falcon Endpoint Protection via Legacy Agent</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
-<li><a href="../connectors/crowdstrikefalconendpointprotectionama.html">[Deprecated] CrowdStrike Falcon Endpoint Protection via AMA</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
-<li><a href="../connectors/crowdstrikefalcons3ccpdefinition.html">CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
-<li><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
 <li><a href="../connectors/microsoftthreatprotection.html">Microsoft Defender XDR</a> <em>(dependency on <a href="microsoft-defender-xdr.html">Microsoft Defender XDR</a>)</em></li>
 <li><a href="../connectors/office365.html">Microsoft 365 (formerly, Office 365)</a> <em>(dependency on <a href="microsoft-365.html">Microsoft 365</a>)</em></li>
 <li><a href="../connectors/oktasso.html">Okta Single Sign-On</a> <em>(dependency on <a href="okta-single-sign-on.html">Okta Single Sign-On</a>)</em></li>
 <li><a href="../connectors/oktasso-polling.html">Okta Single Sign-On (Polling CCP)</a> <em>(dependency on <a href="okta-single-sign-on.html">Okta Single Sign-On</a>)</em></li>
 <li><a href="../connectors/oktassov2.html">Okta Single Sign-On</a> <em>(dependency on <a href="okta-single-sign-on.html">Okta Single Sign-On</a>)</em></li>
 <li><a href="../connectors/oktasinglesignon-usingazurefunctions.html">Okta Single Sign-On (using Azure Functions)</a> <em>(dependency on <a href="okta-single-sign-on.html">Okta Single Sign-On</a>)</em></li>
-<li><a href="../connectors/securityevents.html">Security Events via Legacy Agent</a> <em>(dependency on <a href="windows-security-events.html">Windows Security Events</a>)</em></li>
-<li><a href="../connectors/sentinelone.html">SentinelOne</a> <em>(dependency on <a href="sentinelone.html">SentinelOne</a>)</em></li>
-<li><a href="../connectors/sentineloneccp.html">SentinelOne</a> <em>(dependency on <a href="sentinelone.html">SentinelOne</a>)</em></li>
-<li><a href="../connectors/syslog.html">Syslog via Legacy Agent</a> <em>(dependency on <a href="syslog.html">Syslog</a>)</em></li>
-<li><a href="../connectors/syslogama.html">Syslog via AMA</a> <em>(dependency on <a href="syslog.html">Syslog</a>)</em></li>
-<li><a href="../connectors/vmwarecarbonblack.html">VMware Carbon Black Cloud</a> <em>(dependency on <a href="vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a>)</em></li>
-<li><a href="../connectors/windowsforwardedevents.html">Windows Forwarded Events</a> <em>(dependency on <a href="windows-forwarded-events.html">Windows Forwarded Events</a>)</em></li>
-<li><a href="../connectors/windowssecurityevents.html">Windows Security Events via AMA</a> <em>(dependency on <a href="windows-security-events.html">Windows Security Events</a>)</em></li>
-<li><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a> <em>(dependency on <a href="vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a>)</em></li>
 </ul>
 <h2>Tables Used</h2>
 <p>This solution queries <strong>6 table(s)</strong> from its content items:</p>
@@ -328,10 +249,10 @@
 <td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a><br><em>Internal use:</em><br><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/business-email-compromise-financial-fraud-suspicious-access-of-bec-related-documents-cd8d946d-10a4-40a9-bac1-6d0a6c847d65-1afb8e2e.html">Suspicious access of BEC related documents</a></td>
+<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-suspicious-access-of-bec-related-documents-cd8d946d-10a4-40a9-bac1-6d0a6c847d65-1afb8e2e.html">Suspicious access of BEC related documents</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">Collection</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imfileevent.html"><code>imFileEvent</code></a></td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-suspicious-access-of-bec-related-documents-in-aws-s3-buckets-f3e2d35f-1202-4215-995c-4654ef07d1d8-5612c5c0.html">Suspicious access of BEC related documents in AWS S3 buckets</a></td>

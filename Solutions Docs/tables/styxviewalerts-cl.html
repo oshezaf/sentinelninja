@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>StyxViewAlerts_CL</h1>
@@ -32,127 +35,161 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (28 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Styx%20Intelligence/Data%20Connectors/Alerts/StyxView%20Alerts_DCR.json">Data Collection Rule definition</a></p>
+<h2>Schema (29 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Styx%20Intelligence%5CData%20Connectors%5CAlerts/StyxView%20Alerts_Table.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
 <tr>
 <th style="text-align: left;">Column Name</th>
 <th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">alert_account_id</td>
+<td style="text-align: left;">AlertAccountId</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_account_name</td>
+<td style="text-align: left;">AlertAccountName</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_alert_status_id</td>
+<td style="text-align: left;">AlertAlertStatusId</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_client_id</td>
+<td style="text-align: left;">AlertClientId</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_client_name</td>
+<td style="text-align: left;">AlertClientName</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_content</td>
+<td style="text-align: left;">AlertContent</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_datetime</td>
+<td style="text-align: left;">AlertDateTime</td>
 <td style="text-align: left;">datetime</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_entity_category_id</td>
+<td style="text-align: left;">AlertEntityCategoryId</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_entity_category_name</td>
+<td style="text-align: left;">AlertEntityCategoryName</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_entity_description</td>
+<td style="text-align: left;">AlertEntityDescription</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_entity_details</td>
+<td style="text-align: left;">AlertEntityDetails</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_entity_id</td>
+<td style="text-align: left;">AlertEntityId</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_entity_impact</td>
+<td style="text-align: left;">AlertEntityImpact</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_entity_name</td>
+<td style="text-align: left;">AlertEntityName</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_id</td>
+<td style="text-align: left;">AlertId</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_id_original</td>
+<td style="text-align: left;">AlertIdOriginal</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_l3_page_link</td>
+<td style="text-align: left;">AlertL3PageLink</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_notification_sent</td>
+<td style="text-align: left;">AlertNotificationSent</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_project_id</td>
+<td style="text-align: left;">AlertProjectId</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_project_name</td>
+<td style="text-align: left;">AlertProjectName</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_read</td>
+<td style="text-align: left;">AlertRead</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_severity</td>
+<td style="text-align: left;">AlertSeverity</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_solution_id</td>
+<td style="text-align: left;">AlertSolutionId</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_solution_name</td>
+<td style="text-align: left;">AlertSolutionName</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_status_value</td>
+<td style="text-align: left;">AlertStatusValue</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_ticket_number</td>
+<td style="text-align: left;">AlertTicketNumber</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_timestamp_original</td>
+<td style="text-align: left;">AlertTimestampOriginal</td>
 <td style="text-align: left;">datetime</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_uuid</td>
+<td style="text-align: left;">AlertUuid</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) reflecting the time in which the event was generated.</td>
 </tr>
 </tbody>
 </table>

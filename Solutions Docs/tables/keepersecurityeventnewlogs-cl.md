@@ -15,19 +15,19 @@
 
 ## Schema (9 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Keeper%20Security/Data%20Connectors/KeeperSecurity_ccp/KepperSecurity_DCR.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Keeper%20Security%5CData%20Connectors%5CKeeperSecurity_ccp/KepperSecurity_table.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| audit_event | string |
-| category | string |
-| client_version | string |
-| data | dynamic |
-| enterprise_id | int |
-| remote_address | string |
+| AuditEvent | string |
+| Category | string |
+| ClientVersion | string |
+| Data | dynamic |
+| EnterpriseId | int |
+| RemoteAddress | string |
 | TimeGenerated | datetime |
-| timestamp | datetime |
-| username | string |
+| Timestamp | datetime |
+| Username | string |
 
 ## Solutions (1)
 

@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>CyfirmaSPEPIIAndCIIAlerts_CL</h1>
@@ -44,8 +47,8 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (32 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Digital%20Risk/Data%20Connectors/CyfirmaDigitalRiskAlerts_ccp/CyfirmaDigitalRiskAlerts_DCR.json">Data Collection Rule definition</a></p>
+<h2>Schema (31 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyfirmaSPEPIIAndCIIAlerts_CL.json">KQL validation test schema</a></p>
 <table id="schema-table">
 <thead>
 <tr>
@@ -55,11 +58,11 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">alert_created_date</td>
-<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">alert_object_uid</td>
+<td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_object_uid</td>
+<td style="text-align: left;">Alert_title</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
@@ -115,10 +118,6 @@
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">is_third_party</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
 <td style="text-align: left;">last_seen</td>
 <td style="text-align: left;">string</td>
 </tr>
@@ -171,8 +170,8 @@
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">title</td>
-<td style="text-align: left;">string</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
 </tr>
 <tr>
 <td style="text-align: left;">uid</td>

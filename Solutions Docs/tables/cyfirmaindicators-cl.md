@@ -13,25 +13,30 @@
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (14 columns)
+## Schema (19 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Cyber%20Intelligence/Data%20Connectors/CyfirmaCyberIntelligence_ccp/CyfirmaCyberIntel_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyfirmaIndicators_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| confidence | int |
+| ConfidenceScore | int |
+| Country | dynamic |
 | created | datetime |
-| description | string |
+| Description | string |
 | extensions | dynamic |
-| id | string |
-| indicator_types | dynamic |
-| labels | dynamic |
+| IndicatorID | string |
+| IPAbuse | string |
 | modified | datetime |
 | name | string |
 | pattern | string |
-| pattern_type | string |
-| spec_version | string |
-| type | string |
+| RecommendedActions | string |
+| Roles | string |
+| SecurityVendors | string |
+| Sources | string |
+| Tags | dynamic |
+| ThreatActors | dynamic |
+| ThreatType | dynamic |
+| TimeGenerated | datetime |
 | valid_from | datetime |
 
 ## Solutions (1)

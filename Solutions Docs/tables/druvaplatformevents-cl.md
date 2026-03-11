@@ -10,23 +10,6 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
-## Schema (10 columns)
-
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DruvaDataSecurityCloud/Data%20Connectors/Druva_ccp/Druva_DCR.json)
-
-| Column Name | Type |
-|:------------|:-----|
-| category | string |
-| details | dynamic |
-| feature | string |
-| globalID | string |
-| productID | int |
-| syslogFacility | int |
-| syslogSeverity | int |
-| TimeGenerated | datetime |
-| timeStamp | int |
-| type | string |
-
 ## Solutions (1)
 
 This table is used by the following solutions:

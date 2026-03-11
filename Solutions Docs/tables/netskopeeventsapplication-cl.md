@@ -12,11 +12,10 @@
 
 ## Schema (146 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/Data%20Connectors/NetskopeAlertsEvents_RestAPI_CCP/NetskopeAlertsEvents_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/NetskopeEventsApplication_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| _id | string |
 | access_method | string |
 | action | string |
 | activity | string |
@@ -24,13 +23,13 @@
 | alert_type | string |
 | app | string |
 | app_activity | string |
-| app_session_id | long |
+| app_sessionid | string |
 | appcategory | string |
 | appsuite | string |
 | audit_category | string |
 | audit_type | string |
 | browser | string |
-| browser_session_id | long |
+| browser_sessionid | string |
 | browser_version | string |
 | category | string |
 | cci | int |
@@ -38,19 +37,19 @@
 | channel_id | string |
 | client_bytes | int |
 | conn_duration | int |
-| connection_id | long |
+| connectionid | string |
 | CononicalName | string |
-| count | int |
+| count_i | int |
 | custom_connector | string |
 | data_center | string |
 | data_type | string |
 | device | string |
 | device_classification | string |
 | dlp_file | string |
-| dlp_incident_id | long |
+| dlp_incidentid | string |
 | dlp_is_unique_count | string |
 | dlp_mail_parent_id | string |
-| dlp_parent_id | long |
+| dlp_parentid | string |
 | dlp_profile | string |
 | dlp_rule | string |
 | dlp_rule_count | int |
@@ -111,7 +110,7 @@
 | protocol | string |
 | referer | string |
 | req_cnt | int |
-| request_id | long |
+| requestid | string |
 | resp_cnt | int |
 | sAMAccountName | string |
 | sanctioned_instance | string |
@@ -139,16 +138,17 @@
 | suppression_key | string |
 | suppression_start_time | int |
 | telemetry_app | string |
+| TimeGenerated | datetime |
 | timestamp | int |
-| title | string |
+| title_s | string |
 | to_user | string |
 | total_collaborator_count | int |
 | traffic_type | string |
-| transaction_id | long |
+| transactionid | string |
 | true_obj_category | string |
 | true_obj_type | string |
 | tss_mode | string |
-| type | string |
+| type_s | string |
 | universal_connector | string |
 | ur_normalized | string |
 | url | string |

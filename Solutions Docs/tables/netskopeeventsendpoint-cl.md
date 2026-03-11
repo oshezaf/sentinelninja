@@ -12,17 +12,16 @@
 
 ## Schema (59 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/Data%20Connectors/NetskopeAlertsEvents_RestAPI_CCP/NetskopeAlertsEvents_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/NetskopeEventsEndpoint_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| _id | string |
 | access_method | string |
 | action | string |
 | activity | string |
 | activity_type | string |
 | alert | string |
-| alert_generated | boolean |
+| alert_generated | bool |
 | alert_name | string |
 | alert_type | string |
 | app | string |
@@ -36,18 +35,18 @@
 | device_name | string |
 | device_sn | string |
 | device_type | string |
-| dlp_incident_id | long |
+| dlp_incidentid | string |
 | dlp_profile | string |
 | dlp_profile_name | string |
 | dlp_rule | string |
 | driver | string |
-| event_recovered | boolean |
+| event_recovered | bool |
 | executable_hash | string |
-| executable_signed | boolean |
+| executable_signed | bool |
 | file_origin | string |
 | file_size | int |
 | file_type | string |
-| incident_id | long |
+| incidentid | string |
 | justification | string |
 | location | string |
 | md5 | string |
@@ -70,8 +69,9 @@
 | source_file_directory | string |
 | source_file_name | string |
 | sub_type | string |
+| TimeGenerated | datetime |
 | timestamp | int |
-| type | string |
+| type_s | string |
 | unc_path | string |
 | user | string |
 | vendor_id | string |

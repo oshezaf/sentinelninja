@@ -26,7 +26,6 @@ This content item queries data from the following tables:
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ | ? |
 | [`Event`](../tables/event.md) | `Source == "Microsoft-Windows-Sysmon"` | ✓ | ✗ | ✗ |
-| [`Image`](../tables/image.md) |  | ? | ? | ? |
 | [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ✓ |
 | [`WindowsEvent`](../tables/windowsevent.md) | `EventID in "1,4688"` | ✓ | ✓ | ✓ |
 

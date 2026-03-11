@@ -5,13 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CyeraAssetsCL &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
-<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+
 </head>
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>CyeraAssets_CL</h1>
@@ -29,222 +30,6 @@
 <tr>
 <td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
 <td style="text-align: left;">✓ Yes</td>
-</tr>
-</tbody>
-</table>
-<h2>Schema (51 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyeraDSPM/Data%20Connectors/CyeraDSPM_CCF/CyeraDSPM_DCR.json">Data Collection Rule definition</a></p>
-<table id="schema-table">
-<thead>
-<tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">aadTenantId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">account</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">arn</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">autoScan</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">azureId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">classificationGroups</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">classificationLevel</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">cloudProviderTags</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">cloudProviderUrl</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">collections</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">createdDate</td>
-<td style="text-align: left;">datetime</td>
-</tr>
-<tr>
-<td style="text-align: left;">customCollections</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">datastoreOwners</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">datastoreSizeInGiB</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">dataType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">discoveredDate</td>
-<td style="text-align: left;">datetime</td>
-</tr>
-<tr>
-<td style="text-align: left;">driveId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">encrypted</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">engine</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">frameworks</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">ghost</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">infrastructure</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">issues</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">lastDataRefresh</td>
-<td style="text-align: left;">datetime</td>
-</tr>
-<tr>
-<td style="text-align: left;">lastModifiedDate</td>
-<td style="text-align: left;">datetime</td>
-</tr>
-<tr>
-<td style="text-align: left;">lastModifiedTime</td>
-<td style="text-align: left;">datetime</td>
-</tr>
-<tr>
-<td style="text-align: left;">lastScannedDate</td>
-<td style="text-align: left;">datetime</td>
-</tr>
-<tr>
-<td style="text-align: left;">learned</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">logging</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">name</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">owner</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">projectIds</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">provider</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">publicAccessibilityState</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">rdsEndpoint</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">recordCountBySensitivity</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">region</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">regions</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">resourceId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">scanningState</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">sensitivity</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">sensitivityDisplayName</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">siteId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">siteName</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">sslEnforced</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-</tr>
-<tr>
-<td style="text-align: left;">type</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">uid</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">userId</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">userTags</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">vpc</td>
-<td style="text-align: left;">string</td>
 </tr>
 </tbody>
 </table>
@@ -278,30 +63,6 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 </div>
-<script>
-$(function() {
-    var t = $('#schema-table');
-    if (!t.length) return;
-    // Add filter row to thead
-    var hdr = t.find('thead');
-    var cols = hdr.find('tr:first th').length;
-    var fr = $('<tr class="filters"></tr>');
-    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
-    hdr.append(fr);
-    // Init DataTable
-    var dt = t.DataTable({
-        paging: false,
-        info: true,
-        orderCellsTop: true,
-        dom: 'frti',
-    });
-    // Per-column filter
-    hdr.find('tr.filters input').each(function(i) {
-        $(this).on('keyup change', function() {
-            dt.column(i).search(this.value).draw();
-        });
-    });
-});
-</script>
+
 </body>
 </html>

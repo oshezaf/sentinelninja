@@ -15,7 +15,7 @@
 
 ## Schema (50 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OneTrust/Data%20Connectors/OneTrustLogs_CCF/OneTrustLogs_DCR.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OneTrust%5CData%20Connectors%5COneTrustLogs_CCF/OneTrustLogs_table.json)
 
 | Column Name | Type |
 |:------------|:-----|
@@ -42,9 +42,9 @@
 | IngestionTime | datetime |
 | InternalUserWithPermissionCount | int |
 | IPAddress | string |
-| IsAssetRemoved | boolean |
+| IsAssetRemoved | bool |
 | ISP | string |
-| IsProtectedByDlp | boolean |
+| IsProtectedByDlp | bool |
 | LastAccessDateTime | datetime |
 | LastModifiedDateTime | datetime |
 | Location | string |
@@ -62,7 +62,7 @@
 | Subdomain | string |
 | SubWorkload | string |
 | ThreatCategory | dynamic |
-| ThreatDetected | boolean |
+| ThreatDetected | bool |
 | ThreatName | dynamic |
 | TimeGenerated | datetime |
 | TopLevelDomain | string |

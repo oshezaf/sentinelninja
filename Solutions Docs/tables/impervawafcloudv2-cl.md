@@ -10,20 +10,66 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
-## Schema (8 columns)
+## Schema (54 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ImpervaCloudWAF/Data%20Connectors/ImpervaCloudWAFLogs_ccf/ImpervaCloudWAFLogs_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ImpervaWAFCloudV2_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| Field1 | string |
-| Field2 | string |
-| Field3 | string |
-| Field4 | string |
-| Field5 | string |
-| Field6 | string |
-| Field7 | string |
-| Field8 | string |
+| Act | string |
+| AdditionalReqHeaders | string |
+| AdditionalResHeaders | string |
+| AdditionalRuleInfo | string |
+| App | string |
+| AttackName | string |
+| AttackSeverity | string |
+| CapSupport | string |
+| CCode | string |
+| CiCode | string |
+| ClApp | string |
+| ClAppSig | string |
+| Cn1 | string |
+| CoSupport | string |
+| Cpt | string |
+| Customer | string |
+| DeliveryRuleDetails | string |
+| DeviceExternalId | string |
+| DeviceFacility | string |
+| DeviceVersion | string |
+| Dproc | string |
+| End | string |
+| EventProduct | string |
+| EventType | string |
+| EventVendor | string |
+| FileId | string |
+| FilePermission | string |
+| FileType | string |
+| In | string |
+| JavascriptSupport | string |
+| Latitude | string |
+| LogVersion | string |
+| Longitude | string |
+| PostBody | string |
+| QStr | string |
+| Ref | string |
+| Request | string |
+| RequestClientApplication | string |
+| RequestMethod | string |
+| RuleName | string |
+| SignatureId | string |
+| SIP | string |
+| SiteId | string |
+| SiteTag | string |
+| SourceServiceName | string |
+| Spt | string |
+| Src | string |
+| Start | string |
+| Suid | string |
+| Tag | string |
+| TimeGenerated | datetime |
+| Ver | string |
+| VID | string |
+| Xff | string |
 
 ## Solutions (1)
 

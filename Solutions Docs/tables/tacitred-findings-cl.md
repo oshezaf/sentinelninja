@@ -8,19 +8,34 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (2 columns)
+## Schema (16 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TacitRedThreatIntelligence/Data%20Connectors/TacitRed_CCF/TacitRed_DCR.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TacitRedThreatIntelligence%5CData%20Connectors%5CTacitRed_CCF/TacitRed_Table.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| finding | dynamic |
-| severity | string |
+| campaign_id_s | string |
+| confidence_d | int |
+| detection_ts_t | datetime |
+| domain_s | string |
+| email_s | string |
+| findingType_s | string |
+| firstSeen_t | datetime |
+| lastSeen_t | datetime |
+| metadata_s | string |
+| notes_s | string |
+| severity_s | string |
+| source_s | string |
+| status_s | string |
+| TimeGenerated | datetime |
+| user_id_s | string |
+| username_s | string |
 
 ## Solutions (1)
 

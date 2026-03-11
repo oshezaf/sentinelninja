@@ -32,7 +32,6 @@ This content item queries data from the following tables:
 | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ | ? |
 | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
 | [`Event`](../tables/event.md) | ✓ | ✗ | ✗ |
-| [`Image`](../tables/image.md) | ? | ? | ? |
 | [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ | ✓ |
 
 ---

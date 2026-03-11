@@ -8,45 +8,68 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (28 columns)
+## Schema (50 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox/Data%20Connectors/Alerts/ZeroFoxAlerts_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ZeroFoxAlertPoller_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| alert_type | string |
-| asset | dynamic |
-| asset_term | string |
-| assignee | string |
-| business_network | string |
-| content_created_at | datetime |
-| darkweb_term | string |
-| entered_by | string |
-| entity | dynamic |
-| escalated | boolean |
-| id | int |
-| last_modified | datetime |
-| logs | string |
-| metadata | string |
-| network | string |
-| notes | string |
-| offending_content_url | string |
-| perpetrator | dynamic |
-| protected_locations | string |
-| protected_social_object | string |
-| reviewed | boolean |
-| reviews | string |
-| rule_group_id | int |
-| rule_id | int |
-| rule_name | string |
-| severity | int |
-| status | string |
-| tags | string |
+| alert_type_s | string |
+| asset_entity_group_id_d | real |
+| asset_entity_group_name_s | string |
+| asset_id_d | real |
+| asset_image_s | string |
+| asset_labels_s | string |
+| asset_name_s | string |
+| asset_term_s | string |
+| assignee_s | string |
+| business_network_s | string |
+| content_created_at_t | datetime |
+| darkweb_term_s | string |
+| entered_by_s | string |
+| entity_account_s | string |
+| entity_email_receiver_id_s | string |
+| entity_entity_group_id_d | real |
+| entity_entity_group_name_s | string |
+| entity_id_d | real |
+| entity_image_s | string |
+| entity_labels_s | string |
+| entity_name_s | string |
+| entity_term_s | string |
+| escalated_b | bool |
+| id_d | real |
+| last_modified_t | datetime |
+| logs_s | string |
+| metadata_s | string |
+| network_s | string |
+| notes_s | string |
+| offending_content_url_s | string |
+| perpetrator_content_s | string |
+| perpetrator_display_name_s | string |
+| perpetrator_id_d | real |
+| perpetrator_name_s | string |
+| perpetrator_network_s | string |
+| perpetrator_timestamp_t | datetime |
+| perpetrator_type_s | string |
+| perpetrator_url_s | string |
+| protected_locations_s | string |
+| protected_social_object_s | string |
+| reviewed_b | bool |
+| reviews_s | string |
+| rule_group_id_d | real |
+| rule_id_d | real |
+| rule_name_s | string |
+| Severity | real |
+| status_s | string |
+| tags_s | string |
+| TimeGenerated | datetime |
+| timestamp_t | datetime |
 
 ## Solutions (1)
 

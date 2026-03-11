@@ -13,23 +13,50 @@
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (11 columns)
+## Schema (38 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Box/Data%20Connectors/BoxEvents_ccp/BoxEvents_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/BoxEventsV2_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| accessible_by | dynamic |
+| accessible_by_id | string |
+| accessible_by_login | string |
+| accessible_by_name | string |
+| accessible_by_type | string |
 | additional_details | dynamic |
 | created_at | datetime |
-| created_by | dynamic |
+| created_by_id | string |
+| created_by_login | string |
+| created_by_name | string |
+| created_by_type | string |
+| event_category | string |
 | event_id | string |
 | event_type | string |
+| EventEndTime | string |
 | ip_address | string |
-| recorded_at | datetime |
-| session_id | string |
-| source | dynamic |
-| type | string |
+| session_id | dynamic |
+| source_file_id | string |
+| source_file_name | string |
+| source_folder_id | string |
+| source_folder_name | string |
+| source_id | string |
+| source_item_id | string |
+| source_item_name | string |
+| source_item_type | string |
+| source_login | string |
+| source_name | string |
+| source_owned_by_id | string |
+| source_owned_by_login | string |
+| source_owned_by_name | string |
+| source_owned_by_type | string |
+| source_parent_id | string |
+| source_parent_name | string |
+| source_parent_type | string |
+| source_type | string |
+| source_user_email | string |
+| source_user_id | string |
+| source_user_name | string |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

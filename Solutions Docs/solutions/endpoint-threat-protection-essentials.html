@@ -3,16 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>&lt;img src=&quot;../images/asim-badge.png&quot; alt=&quot;ASIM&quot; height=&quot;32&quot;&gt; Endpoint Threat Protection Essentials &mdash; Solutions Analyzer</title>
+<title>Endpoint Threat Protection Essentials &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
     <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
-<h1><img src="../images/asim-badge.png" alt="ASIM" height="32"> Endpoint Threat Protection Essentials</h1>
+<h1>Endpoint Threat Protection Essentials</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Endpoint Threat Protection Essentials Logo" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
@@ -72,12 +75,11 @@
 </tbody>
 </table>
 <p>The <strong>Endpoint Threat Protection Essentials</strong> solution provides content to monitor, detect and investigate threats related to windows machines. The solution looks for things like suspicious commandlines, PowerShell based attacks, LOLBins, registry manipulation, scheduled tasks etc. which are some of the most commonly used techniques by attackers when targeting endpoints.  </p>
-<p>For details on the data sources and ASIM parsers supported by this solution, see the <a href="#asim-pre-requisites">ASIM Pre-requisites</a> section below.</p>
+<p>For details on the required solutions, see the <a href="#pre-requisites">Pre-requisites</a> section below.</p>
 <p><strong>Keywords:</strong> LOLBins, PowerShell, Registry, Lsass, Commandline, scheduled tasks, Malware.</p>
 <h2>Contents</h2>
 <ul>
 <li><a href="#pre-requisites">Pre-requisites</a></li>
-<li><a href="#asim-pre-requisites">ASIM Pre-requisites</a></li>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#tables-used">Tables Used</a></li>
 <li><a href="#content-items">Content Items</a></li>
@@ -88,109 +90,27 @@
 <thead>
 <tr>
 <th style="text-align: left;">Solution</th>
-<th style="text-align: left;">Details</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="microsoft-defender-xdr.html">Microsoft Defender XDR</a></td>
-<td style="text-align: left;">Also provides ASIM schemas: RegistryEvent</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="windows-forwarded-events.html">Windows Forwarded Events</a></td>
-<td style="text-align: left;">Also provides ASIM schemas: ProcessEvent, RegistryEvent</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="windows-security-events.html">Windows Security Events</a></td>
-<td style="text-align: left;">Also provides ASIM schemas: ProcessEvent, RegistryEvent</td>
-</tr>
-</tbody>
-</table>
-<h2><a id="asim-pre-requisites"></a><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Pre-requisites</h2>
-<p>This solution uses the <a href="../asim/asimprocesseventcreate.html"><code>_ASim_ProcessEvent_Create</code></a>, <a href="../asim/improcesscreate.html"><code>imProcessCreate</code></a>, and <a href="../asim/imregistry.html"><code>imRegistry</code></a> <a href="https://learn.microsoft.com/azure/sentinel/normalization">ASIM (Advanced Security Information Model)</a> parsers to provide normalized, source-agnostic data access, expanding detection coverage without modifying queries.</p>
-<h3>Supported Products</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Product</th>
-<th style="text-align: left;">Dependency Solution</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-365-defender-for-endpoint">Microsoft 365 Defender for Endpoint</a></td>
-<td style="text-align: left;"><a href="microsoft-defender-xdr.html">Microsoft Defender XDR</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-365-defender-for-endpoint">Microsoft 365 Defender for endpoint</a></td>
-<td style="text-align: left;">-</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-defender-for-iot">Microsoft Defender for IoT</a></td>
-<td style="text-align: left;">-</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#microsoft-sysmon">Microsoft Sysmon</a></td>
-<td style="text-align: left;"><a href="windows-forwarded-events.html">Windows Forwarded Events</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#native">Native</a></td>
-<td style="text-align: left;"><a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a><br><a href="vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#security-events">Security Events</a></td>
-<td style="text-align: left;"><a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a><br><a href="windows-forwarded-events.html">Windows Forwarded Events</a><br><a href="windows-security-events.html">Windows Security Events</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#sentinelone">SentinelOne</a></td>
-<td style="text-align: left;"><a href="sentinelone.html">SentinelOne</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#sysmon">Sysmon</a></td>
-<td style="text-align: left;"><a href="windows-forwarded-events.html">Windows Forwarded Events</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#sysmon-for-linux">Sysmon for Linux</a></td>
-<td style="text-align: left;"><a href="syslog.html">Syslog</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#trend-micro-vision-one">Trend Micro Vision One</a></td>
-<td style="text-align: left;"><a href="trend-micro-vision-one.html">Trend Micro Vision One</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#vmware-carbon-black-cloud">VMware Carbon Black Cloud</a></td>
-<td style="text-align: left;"><a href="vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
 </tr>
 </tbody>
 </table>
 <h2>Data Connectors</h2>
 <p><strong>This solution does not include its own data connectors</strong> but uses connectors from dependency solutions:</p>
 <ul>
-<li><a href="../connectors/crowdstrikeapiconnector.html">CrowdStrike API Data Connector (via Codeless Connector Framework)</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
-<li><a href="../connectors/crowdstrikefalconadversaryintelligence.html">CrowdStrike Falcon Adversary Intelligence </a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
-<li><a href="../connectors/crowdstrikefalconendpointprotection.html">[Deprecated] CrowdStrike Falcon Endpoint Protection via Legacy Agent</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
-<li><a href="../connectors/crowdstrikefalconendpointprotectionama.html">[Deprecated] CrowdStrike Falcon Endpoint Protection via AMA</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
-<li><a href="../connectors/crowdstrikefalcons3ccpdefinition.html">CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
-<li><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
-<li><a href="../connectors/esi-exchangeadminauditlogevents.html">[Deprecated] Microsoft Exchange Logs and Events</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
-<li><a href="../connectors/esi-exchangeonpremisescollector.html">Exchange Security Insights On-Premises Collector</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
-<li><a href="../connectors/esi-opt1exchangeadminauditlogsbyeventlogs.html">Microsoft Exchange Admin Audit Logs by Event Logs</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
-<li><a href="../connectors/esi-opt2exchangeserverseventlogs.html">Microsoft Exchange Logs and Events</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
-<li><a href="../connectors/esi-opt34domaincontrollerssecurityeventlogs.html"> Microsoft Active-Directory Domain Controllers Security Event Logs</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
-<li><a href="../connectors/esi-opt5exchangeiislogs.html">IIS Logs of Microsoft Exchange Servers</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
-<li><a href="../connectors/esi-opt6exchangemessagetrackinglogs.html">Microsoft Exchange Message Tracking Logs</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
-<li><a href="../connectors/esi-opt7exchangehttpproxylogs.html">Microsoft Exchange HTTP Proxy Logs</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
 <li><a href="../connectors/microsoftthreatprotection.html">Microsoft Defender XDR</a> <em>(dependency on <a href="microsoft-defender-xdr.html">Microsoft Defender XDR</a>)</em></li>
 <li><a href="../connectors/securityevents.html">Security Events via Legacy Agent</a> <em>(dependency on <a href="windows-security-events.html">Windows Security Events</a>)</em></li>
-<li><a href="../connectors/sentinelone.html">SentinelOne</a> <em>(dependency on <a href="sentinelone.html">SentinelOne</a>)</em></li>
-<li><a href="../connectors/sentineloneccp.html">SentinelOne</a> <em>(dependency on <a href="sentinelone.html">SentinelOne</a>)</em></li>
-<li><a href="../connectors/syslog.html">Syslog via Legacy Agent</a> <em>(dependency on <a href="syslog.html">Syslog</a>)</em></li>
-<li><a href="../connectors/syslogama.html">Syslog via AMA</a> <em>(dependency on <a href="syslog.html">Syslog</a>)</em></li>
-<li><a href="../connectors/trendmicroxdr.html">Trend Vision One</a> <em>(dependency on <a href="trend-micro-vision-one.html">Trend Micro Vision One</a>)</em></li>
-<li><a href="../connectors/vmwarecarbonblack.html">VMware Carbon Black Cloud</a> <em>(dependency on <a href="vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a>)</em></li>
 <li><a href="../connectors/windowsforwardedevents.html">Windows Forwarded Events</a> <em>(dependency on <a href="windows-forwarded-events.html">Windows Forwarded Events</a>)</em></li>
 <li><a href="../connectors/windowssecurityevents.html">Windows Security Events via AMA</a> <em>(dependency on <a href="windows-security-events.html">Windows Security Events</a>)</em></li>
-<li><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a> <em>(dependency on <a href="vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a>)</em></li>
 </ul>
 <h2>Tables Used</h2>
 <p>This solution queries <strong>6 table(s)</strong> from its content items:</p>
@@ -356,14 +276,14 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/endpoint-threat-protection-essentials-backup-deletion-56ebae61-89cf-42d9-99f4-3dff8ba33885-e1c87558.html">Backup Deletion</a></td>
+<td style="text-align: left;"><a href="../content/endpoint-threat-protection-essentials-backup-deletion-56ebae61-89cf-42d9-99f4-3dff8ba33885-e1c87558.html">Backup Deletion</a></td>
 <td style="text-align: left;">Impact</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/improcesscreate.html"><code>imProcessCreate</code></a><br><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a><br><a href="../tables/securityevent.html"><code>SecurityEvent</code></a><br><a href="../tables/windowsevent.html"><code>WindowsEvent</code></a></td>
+<td style="text-align: left;"><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a><br><a href="../tables/securityevent.html"><code>SecurityEvent</code></a><br><a href="../tables/windowsevent.html"><code>WindowsEvent</code></a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/endpoint-threat-protection-essentials-certutil-lolbins-and-lolscripts,-normalized-process-events-eb022863-9ae2-41d4-b633-29e4d024b76f-bf894765.html">Certutil (LOLBins and LOLScripts, Normalized Process Events)</a></td>
+<td style="text-align: left;"><a href="../content/endpoint-threat-protection-essentials-certutil-lolbins-and-lolscripts,-normalized-process-events-eb022863-9ae2-41d4-b633-29e4d024b76f-bf894765.html">Certutil (LOLBins and LOLScripts, Normalized Process Events)</a></td>
 <td style="text-align: left;">CommandAndControl</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/asimprocesseventcreate.html"><code>_ASim_ProcessEvent_Create</code></a></td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/endpoint-threat-protection-essentials-detect-certutil-lolbins-and-lolscripts-usage-0e429446-2798-49e4-924d-c37338f24e23-bc9b437b.html">Detect Certutil (LOLBins and LOLScripts) Usage</a></td>
@@ -381,9 +301,9 @@
 <td style="text-align: left;"><a href="../tables/event.html"><code>Event</code></a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/endpoint-threat-protection-essentials-persisting-via-ifeo-registry-key-f82c89fa-c969-4d12-832f-04d55d14522c-6020db66.html">Persisting via IFEO Registry Key</a></td>
+<td style="text-align: left;"><a href="../content/endpoint-threat-protection-essentials-persisting-via-ifeo-registry-key-f82c89fa-c969-4d12-832f-04d55d14522c-6020db66.html">Persisting via IFEO Registry Key</a></td>
 <td style="text-align: left;">Persistence</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imregistry.html"><code>imRegistry</code></a><br><a href="../tables/event.html"><code>Event</code></a><br><a href="../tables/securityevent.html"><code>SecurityEvent</code></a><br><a href="../tables/windowsevent.html"><code>WindowsEvent</code></a></td>
+<td style="text-align: left;"><a href="../tables/event.html"><code>Event</code></a><br><a href="../tables/securityevent.html"><code>SecurityEvent</code></a><br><a href="../tables/windowsevent.html"><code>WindowsEvent</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/endpoint-threat-protection-essentials-potential-microsoft-security-services-tampering-e10e1d2f-265d-4d90-9037-7f3a6ed8a91e-8c1dc76e.html">Potential Microsoft Security Services Tampering</a></td>
@@ -421,14 +341,14 @@
 <td style="text-align: left;"><a href="../tables/deviceevents.html"><code>DeviceEvents</code></a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/endpoint-threat-protection-essentials-unicode-obfuscation-in-command-line-a953f304-12e4-48ae-bedc-d58fb1b0c6a6-25c755ef.html">Unicode Obfuscation in Command Line</a></td>
+<td style="text-align: left;"><a href="../content/endpoint-threat-protection-essentials-unicode-obfuscation-in-command-line-a953f304-12e4-48ae-bedc-d58fb1b0c6a6-25c755ef.html">Unicode Obfuscation in Command Line</a></td>
 <td style="text-align: left;">DefenseEvasion</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/improcesscreate.html"><code>imProcessCreate</code></a><br><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a><br><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+<td style="text-align: left;"><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a><br><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/endpoint-threat-protection-essentials-windows-system-shutdown-reboot-normalized-process-events-5db1f6f9-9de9-43a9-b7cc-357486b42fc6-4a6147b7.html">Windows System Shutdown/Reboot (Normalized Process Events)</a></td>
+<td style="text-align: left;"><a href="../content/endpoint-threat-protection-essentials-windows-system-shutdown-reboot-normalized-process-events-5db1f6f9-9de9-43a9-b7cc-357486b42fc6-4a6147b7.html">Windows System Shutdown/Reboot (Normalized Process Events)</a></td>
 <td style="text-align: left;">Impact</td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/asimprocesseventcreate.html"><code>_ASim_ProcessEvent_Create</code></a></td>
+<td style="text-align: left;">-</td>
 </tr>
 </tbody>
 </table>

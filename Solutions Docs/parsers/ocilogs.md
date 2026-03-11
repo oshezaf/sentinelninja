@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`OCI_LogsV2_CL`](../tables/oci-logsv2-cl.md) | ✓ | ✓ | ✓ |
+| [`OCI_LogsV2_CL`](../tables/oci-logsv2-cl.md) 🔶 | ✓ | ✓ | ✓ |
 | [`OCI_Logs_CL`](../tables/oci-logs-cl.md) 🔶 | ? | ✓ | ? |
 
 ---

@@ -10,47 +10,6 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
-## Schema (34 columns)
-
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyeraDSPM/Data%20Connectors/CyeraDSPM_CCF/CyeraDSPM_DCR.json)
-
-| Column Name | Type |
-|:------------|:-----|
-| businessFunction | string |
-| category | string |
-| classificationGroupsNames | dynamic |
-| country | string |
-| creationTime | datetime |
-| department | string |
-| description | string |
-| displayId | string |
-| displayName | string |
-| domain | string |
-| hasCopilot | boolean |
-| hasMultipleParents | boolean |
-| isAdmin | boolean |
-| isEnabled | boolean |
-| isStale | boolean |
-| issueCountBySeverity | dynamic |
-| jobTitle | string |
-| lastActiveTime | datetime |
-| lastPasswordUpdateTime | datetime |
-| managerId | string |
-| membersCount | dynamic |
-| multiFactorAuthenticationStatus | string |
-| officeLocation | string |
-| reportsTo | string |
-| scopeDisplayName | string |
-| scopeId | string |
-| scopeNamespace | string |
-| seniorityLevel | string |
-| sensitiveRecords | real |
-| sensitivity | string |
-| sensitivityBreakdown | dynamic |
-| TimeGenerated | datetime |
-| trustLevel | string |
-| uid | string |
-
 ## Solutions (1)
 
 This table is used by the following solutions:

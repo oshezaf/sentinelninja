@@ -6,10 +6,6 @@
 
 ---
 
-| Attribute | Value |
-|:----------|:------|
-| **Category** | Normalized |
-
 ## Schema (267 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ASimNetworkSessionSonicWallFirewall.json)
@@ -284,39 +280,7 @@
 | UserSessionType | string |
 | UUID | string |
 
-## Solutions (1)
-
-This table is used by the following solutions:
-
-- [SonicWall Firewall](../solutions/sonicwall-firewall.md)
-
 ---
-
-## Content Items Using This Table (3)
-
-### Analytic Rules (1)
-
-**In solution [SonicWall Firewall](../solutions/sonicwall-firewall.md):**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [SonicWall - Allowed SSH, Telnet, and RDP Connections](../content/sonicwall-firewall-sonicwall-allowed-ssh,-telnet,-and-rdp-connections-27f1a570-5f20-496b-88f6-a9aa2c5c9534-5e407210.md) |  |
-
-### Hunting Queries (1)
-
-**In solution [SonicWall Firewall](../solutions/sonicwall-firewall.md):**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [Outbound SSH/SCP Connections](../content/sonicwall-firewall-outbound-ssh-scp-connections-dedb8fb9-3caa-4b00-ae88-1898eed78917-0b8386aa.md) |  |
-
-### Workbooks (1)
-
-**In solution [SonicWall Firewall](../solutions/sonicwall-firewall.md):**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [SonicWallFirewall](../content/sonicwall-firewall-sonicwallfirewall-108e460f.md) |  |
 
 ---
 

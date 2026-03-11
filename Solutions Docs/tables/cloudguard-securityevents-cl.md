@@ -15,11 +15,11 @@
 
 ## Schema (44 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20CloudGuard%20CNAPP/Data%20Connectors/CloudGuard_ccp/CloudGuard_DCR.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20CloudGuard%20CNAPP%5CData%20Connectors%5CCloudGuard_ccp/CloudGuard_Tables.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| acknowledged | boolean |
+| acknowledged | bool |
 | action | string |
 | additionalFields | dynamic |
 | alertType | string |
@@ -30,7 +30,6 @@
 | cloudAccountId | string |
 | cloudAccountType | string |
 | comments | dynamic |
-| createdTime | datetime |
 | description | string |
 | entityDome9Id | string |
 | entityExternalId | string |
@@ -39,9 +38,9 @@
 | entityTags | dynamic |
 | entityType | string |
 | entityTypeByEnvironmentType | string |
+| EventId | string |
 | findingKey | string |
-| id | string |
-| isExcluded | boolean |
+| isExcluded | bool |
 | labels | dynamic |
 | lastSeenTime | datetime |
 | magellan | dynamic |
@@ -61,6 +60,7 @@
 | status | string |
 | statusReason | string |
 | tag | string |
+| TimeGenerated | datetime |
 | updatedTime | datetime |
 | webhookResponses | dynamic |
 

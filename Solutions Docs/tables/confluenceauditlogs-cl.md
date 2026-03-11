@@ -13,23 +13,42 @@
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (11 columns)
+## Schema (30 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianConfluenceAudit/Data%20Connectors/AtlassianConfluenceAuditLogs_CCP/AtlassianConfluenceAudit_DCR.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianConfluenceAudit%5CData%20Connectors%5CAtlassianConfluenceAuditLogs_CCP/AtlassianConfluenceAudit_table.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| affectedObject | dynamic |
-| associatedObjects | dynamic |
-| author | dynamic |
-| category | string |
-| changedValues | dynamic |
-| creationDate | long |
-| description | string |
-| remoteAddress | string |
-| summary | string |
-| superAdmin | boolean |
-| sysAdmin | boolean |
+| AffectedObjectName | string |
+| AffectedObjectObjectType | string |
+| AssociatedObjects | dynamic |
+| AuthorAccountId | string |
+| AuthorAccountType | string |
+| AuthorDisplayName | string |
+| AuthorExternalCollaborator | bool |
+| AuthorIsExternalCollaborator | bool |
+| AuthorPublicName | string |
+| AuthorType | string |
+| AuthorUserKey | string |
+| AuthorUsername | string |
+| Category | string |
+| ChangedValues | dynamic |
+| CreationDate | long |
+| Description | string |
+| DstUserSid | string |
+| EventCategoryType | string |
+| EventCreationTime | long |
+| EventMessage | string |
+| EventProduct | string |
+| EventVendor | string |
+| RemoteAddress | string |
+| SrcIpAddr | string |
+| SrcUserName | string |
+| Summary | string |
+| SuperAdmin | bool |
+| SysAdmin | bool |
+| TimeGenerated | datetime |
+| UserIdentity | string |
 
 ## Solutions (1)
 

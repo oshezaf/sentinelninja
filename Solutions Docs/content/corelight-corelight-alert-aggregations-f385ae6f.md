@@ -125,8 +125,6 @@ This content item queries data from the following tables:
 | [`Corelight_v2_x509_CL`](../tables/corelight-v2-x509-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_x509_red_CL`](../tables/corelight-v2-x509-red-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_zeek_doctor_CL`](../tables/corelight-v2-zeek-doctor-cl.md) 🔶 | ? | ✓ | ? |
-| [`ImpactScore`](../tables/impactscore.md) | ? | ? | ? |
-| [`impact_score`](../tables/impact-score.md) | ? | ? | ? |
 
 ---
 

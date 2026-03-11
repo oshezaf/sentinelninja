@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>AWSVPCFlow</h1>
@@ -65,15 +68,14 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (97 columns)</h2>
-<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awsvpcflow">Azure Monitor documentation</a> · <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20VPC%20Flow%20Logs/Data%20Connectors/AWSVPCFlowLogs_CCP/AWSVPCFlowLogs_DCR.json">Data Collection Rule definition</a></p>
+<h2>Schema (45 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awsvpcflow">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
 <tr>
 <th style="text-align: left;">Column Name</th>
 <th style="text-align: left;">Type</th>
 <th style="text-align: left;">Description</th>
-<th style="text-align: left;">Source</th>
 </tr>
 </thead>
 <tbody>
@@ -81,583 +83,226 @@
 <td style="text-align: left;">_BilledSize</td>
 <td style="text-align: left;">real</td>
 <td style="text-align: left;">The record size in bytes</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">_IsBillable</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">account-id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">account_id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">AccountId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The AWS account ID of the owner of the source network interface for which traffic is recorded. If the network interface is created by an AWS service, for example when creating a VPC endpoint or Network Load Balancer, the record may display unknown for this field.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">action</td>
+<td style="text-align: left;">Action</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The action that is associated with the traffic.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">az-id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">az_id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">AzId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The ID of the Availability Zone.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">bytes</td>
-<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Bytes</td>
+<td style="text-align: left;">long</td>
 <td style="text-align: left;">The number of bytes transferred during the flow.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">dstaddr</td>
+<td style="text-align: left;">DstAddr</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The destination address for outgoing traffic.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">dstport</td>
-<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">DstPort</td>
+<td style="text-align: left;">int</td>
 <td style="text-align: left;">The destination port of the traffic.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">ecs-cluster-arn</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">ecs-cluster-name</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">ecs-container-id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">ecs-container-instance-arn</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">ecs-container-instance-id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">ecs-second-container-id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">ecs-service-name</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">ecs-task-arn</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">ecs-task-definition-arn</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">ecs-task-id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">ecs_cluster_arn</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">ecs_cluster_name</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">ecs_container_id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">ecs_container_instance_arn</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">ecs_container_instance_id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">ecs_second_container_id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">ecs_service_name</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">ecs_task_arn</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">ecs_task_definition_arn</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">ecs_task_id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">EcsClusterArn</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Optional. Providing a unique identifier for the log entry allows Logging to remove duplicate entries with the same timestamp and insertId in a single query result.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EcsClusterName</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Optional. Providing a unique identifier for the log entry allows Logging to remove duplicate entries with the same timestamp and insertId in a single query result.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EcsContainerId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Optional. Providing a unique identifier for the log entry allows Logging to remove duplicate entries with the same timestamp and insertId in a single query result.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EcsContainerInstanceArn</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Optional. Providing a unique identifier for the log entry allows Logging to remove duplicate entries with the same timestamp and insertId in a single query result.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EcsContainerInstanceId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Optional. Providing a unique identifier for the log entry allows Logging to remove duplicate entries with the same timestamp and insertId in a single query result.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EcsSecondContainerId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Optional. Providing a unique identifier for the log entry allows Logging to remove duplicate entries with the same timestamp and insertId in a single query result.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EcsServiceName</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Optional. Providing a unique identifier for the log entry allows Logging to remove duplicate entries with the same timestamp and insertId in a single query result.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EcsTaskArn</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Optional. Providing a unique identifier for the log entry allows Logging to remove duplicate entries with the same timestamp and insertId in a single query result.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EcsTaskDefinitionArn</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Optional. Providing a unique identifier for the log entry allows Logging to remove duplicate entries with the same timestamp and insertId in a single query result.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EcsTaskId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Optional. Providing a unique identifier for the log entry allows Logging to remove duplicate entries with the same timestamp and insertId in a single query result.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">end</td>
-<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">End</td>
+<td style="text-align: left;">datetime</td>
 <td style="text-align: left;">The time when the last packet of the flow was received within the aggregation interval.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">flow-direction</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">flow_direction</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">FlowDirection</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The direction of the flow with respect to the interface where traffic is captured.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">instance-id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">instance_id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">InstanceId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The ID of the instance that's associated with network interface for which the traffic is recorded.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">interface-id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">interface_id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">InterfaceId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The ID of the network interface for which the traffic is recorded.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">log-status</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">log_status</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">LogStatus</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The logging status of the flow log.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">packets</td>
-<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Packets</td>
+<td style="text-align: left;">int</td>
 <td style="text-align: left;">The number of packets transferred during the flow.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">pkt-dst-aws-service</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">pkt-dstaddr</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">pkt-src-aws-service</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">pkt-srcaddr</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">pkt_dst_aws_service</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">pkt_dstaddr</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">pkt_src_aws_service</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">pkt_srcaddr</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">PktDstAddr</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The packet-level (original) destination IP address for the traffic.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">PktDstAwsService</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The name of the subset of IP address ranges for the PktDstAddr field, if the destination IP address is for an AWS service.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">PktSrcAddr</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The packet-level (original) source IP address of the traffic.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">PktSrcAwsService</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The name of the subset of IP address ranges for the PktSrcAddr field, if the source IP address is for an AWS service.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">protocol</td>
-<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Protocol</td>
+<td style="text-align: left;">int</td>
 <td style="text-align: left;">The IANA protocol number of the traffic.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">region</td>
+<td style="text-align: left;">Region</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The Region that contains the network interface for which traffic is recorded.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SourceSystem</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">srcaddr</td>
+<td style="text-align: left;">SrcAddr</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The source address for incoming traffic.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">srcport</td>
-<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">SrcPort</td>
+<td style="text-align: left;">int</td>
 <td style="text-align: left;">The source port of the traffic.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">start</td>
-<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Start</td>
+<td style="text-align: left;">datetime</td>
 <td style="text-align: left;">The remote ip of the request.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">sublocation-id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">sublocation-type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">sublocation_id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">sublocation_type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">SublocationId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The ID of the sublocation that contains the network interface for which traffic is recorded.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SublocationType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of sublocation that is returned in the sublocationId field.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">subnet-id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">subnet_id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">SubnetId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The ID of the subnet.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">tcp-flags</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">tcp_flags</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">TcpFlags</td>
 <td style="text-align: left;">int</td>
 <td style="text-align: left;">The bitmask value for the following TCP flags.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">TenantId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The Log Analytics workspace ID</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">TimeGenerated</td>
 <td style="text-align: left;">datetime</td>
 <td style="text-align: left;">The timestamp (UTC) of when the event was generated. This value will be the same as 'start' input field or the data arrival time to Azure Monitor in case the 'start' input field is empty or missing.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">traffic-path</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">traffic_path</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">TrafficPath</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The path that egress traffic takes to the destination.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">TrafficType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of traffic. The possible values are: IPv4, IPv6, and EFA. For more information search for 'Elastic Fabric Adapter (EFA)'.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">type</td>
+<td style="text-align: left;">Type</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The name of the table</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">version</td>
-<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Version</td>
+<td style="text-align: left;">int</td>
 <td style="text-align: left;">The VPC Flow Logs version.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">vpc-id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">vpc_id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">VpcId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The ID of the VPC.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 </tbody>
 </table>

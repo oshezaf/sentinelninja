@@ -15,19 +15,19 @@
 
 ## Schema (9 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OneLoginIAM/Data%20Connectors/OneLoginIAMLogs_ccp/OneLoginIAMLogs_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/OneLoginUsersV2_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| created_at | datetime |
-| department | string |
-| email | string |
-| firstname | string |
-| id | real |
-| lastname | string |
-| openid_name | string |
-| title | string |
-| username | string |
+| TimeGenerated | datetime |
+| UserAttributesDepartment | string |
+| UserAttributesEmail | string |
+| UserAttributesFirstname | string |
+| UserAttributesId | real |
+| UserAttributesLastname | string |
+| UserAttributesOpenidName | string |
+| UserAttributesTitle | string |
+| UserAttributesUsername | string |
 
 ## Solutions (1)
 

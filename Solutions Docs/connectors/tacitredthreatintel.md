@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [TacitRed_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TacitRedThreatIntelligence/Data%20Connectors/TacitRed_CCF/TacitRed_ConnectorDefinition.json) |
 | **CCF Configuration** | [TacitRed_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TacitRedThreatIntelligence/Data%20Connectors/TacitRed_CCF/TacitRed_PollerConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
+| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 
 Ingest compromised credential findings from TacitRed using the Common Connector Framework (CCF).
 
@@ -26,7 +27,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`TacitRed_Findings_CL`](../tables/tacitred-findings-cl.md) | ✗ | ✓ | ✗ |
+| [`TacitRed_Findings_CL`](../tables/tacitred-findings-cl.md) 🔶 | ✗ | ✓ | ✗ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

@@ -13,14 +13,14 @@
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (31 columns)
+## Schema (30 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Digital%20Risk/Data%20Connectors/CyfirmaDigitalRiskAlerts_ccp/CyfirmaDigitalRiskAlerts_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyfirmaSPESourceCodeAlerts_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| alert_created_date | datetime |
 | alert_object_uid | string |
+| Alert_title | string |
 | alert_uid | string |
 | asset_comments | string |
 | asset_name | string |
@@ -33,7 +33,6 @@
 | dr_sub_domain | string |
 | first_seen | datetime |
 | impact | string |
-| is_third_party | boolean |
 | last_seen | datetime |
 | notes | dynamic |
 | posted_date | string |
@@ -47,7 +46,7 @@
 | source | string |
 | status | string |
 | sub_category | string |
-| title | string |
+| TimeGenerated | datetime |
 | uid | string |
 | use_cases | string |
 

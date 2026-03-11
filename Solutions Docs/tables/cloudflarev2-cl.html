@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>CloudflareV2_CL</h1>
@@ -44,8 +47,8 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (494 columns)</h2>
-<p><strong>Source:</strong> Data Collection Rule definition (<a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloudflare%20CCF/Data%20Connectors/CloudflareLog_CCF/CloudflareLog_DCR.json">1</a>, <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloudflare/Data%20Connectors/CloudflareLog_CCF/CloudflareLog_DCR.json">2</a>)</p>
+<h2>Schema (495 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloudflare%5CData%20Connectors%5CCloudflareLog_CCF/CloudflareLog_Table.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
 <tr>
@@ -64,7 +67,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">ActionResult</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
 <td style="text-align: left;">ActionType</td>
@@ -96,7 +99,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">Allowed</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
 <td style="text-align: left;">AppDomain</td>
@@ -216,7 +219,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">CacheReserveUsed</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
 <td style="text-align: left;">CacheResponseBytes</td>
@@ -228,7 +231,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">CacheTieredFill</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
 <td style="text-align: left;">CategoryIDs</td>
@@ -500,7 +503,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">ConnectionReuse</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
 <td style="text-align: left;">ConnectTimestamp</td>
@@ -692,7 +695,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">EdgeCFConnectingO2O</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
 <td style="text-align: left;">EdgeColoCode</td>
@@ -988,7 +991,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">IpFirewall</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
 <td style="text-align: left;">IPFragmentOffset</td>
@@ -1080,11 +1083,11 @@
 </tr>
 <tr>
 <td style="text-align: left;">IsIsolated</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
 <td style="text-align: left;">IsResponseCached</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
 <td style="text-align: left;">JA3Hash</td>
@@ -1124,6 +1127,10 @@
 </tr>
 <tr>
 <td style="text-align: left;">Logs</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogType</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
@@ -1352,7 +1359,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">PostureEvaluatedResult</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
 <td style="text-align: left;">PostureExpectedJSON</td>
@@ -1412,7 +1419,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">Quarantined</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
 <td style="text-align: left;">QueryCategoryIDs</td>
@@ -1424,7 +1431,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">QueryDO</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
 <td style="text-align: left;">QueryID</td>
@@ -1448,7 +1455,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">QueryRD</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
 <td style="text-align: left;">QuerySize</td>
@@ -1456,7 +1463,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">QueryTCP</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
 <td style="text-align: left;">QueryType</td>
@@ -1564,11 +1571,11 @@
 </tr>
 <tr>
 <td style="text-align: left;">ResponseCached</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
 <td style="text-align: left;">ResponseCachedStale</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
 <td style="text-align: left;">ResponseHeaders</td>
@@ -1859,6 +1866,10 @@
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
 <td style="text-align: left;">Timestamp</td>
 <td style="text-align: left;">string</td>
 </tr>
@@ -1884,10 +1895,6 @@
 </tr>
 <tr>
 <td style="text-align: left;">TriggeredRuleID</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">Type</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
@@ -1940,7 +1947,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">URLContainsCDNCGIPath</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
 <td style="text-align: left;">URLHost</td>
@@ -2016,7 +2023,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">WorkerSubrequest</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
 <td style="text-align: left;">WorkerSubrequestCount</td>

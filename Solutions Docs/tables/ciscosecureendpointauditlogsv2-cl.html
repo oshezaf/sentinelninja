@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>CiscoSecureEndpointAuditLogsV2_CL</h1>
@@ -44,8 +47,8 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (9 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Secure%20Endpoint/Data%20Connectors/CiscoSecureEndpointLogs_ccp/CiscoSecureEndpointLogs_DCR.json">Data Collection Rule definition</a></p>
+<h2>Schema (10 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CiscoSecureEndpointAuditLogsV2_CL.json">KQL validation test schema</a></p>
 <table id="schema-table">
 <thead>
 <tr>
@@ -55,40 +58,44 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">audit_log_id</td>
+<td style="text-align: left;">AuditLogId</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">audit_log_type</td>
+<td style="text-align: left;">AuditLogType</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">audit_log_user</td>
+<td style="text-align: left;">AuditLogUser</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">created_at</td>
+<td style="text-align: left;">CreatedAt</td>
 <td style="text-align: left;">datetime</td>
 </tr>
 <tr>
-<td style="text-align: left;">event</td>
+<td style="text-align: left;">Event</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">item</td>
+<td style="text-align: left;">Item</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">message</td>
+<td style="text-align: left;">Message</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">new_attributes</td>
+<td style="text-align: left;">NewAttributes</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">old_attributes</td>
+<td style="text-align: left;">OldAttributes</td>
 <td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
 </tr>
 </tbody>
 </table>

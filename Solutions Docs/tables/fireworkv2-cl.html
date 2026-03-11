@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>FireworkV2_CL</h1>
@@ -32,147 +35,221 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (33 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Flare/Data%20Connectors/FlareFireworkEventLogs_ccp/FlareFireworkEventLogs_DCR.json">Data Collection Rule definition</a></p>
+<h2>Schema (41 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Flare%5CData%20Connectors%5CFlareFireworkEventLogs_ccp/FlareFireworkEventLogs_Table.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
 <tr>
 <th style="text-align: left;">Column Name</th>
 <th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;">actor</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Actor/threat actor name</td>
 </tr>
 <tr>
 <td style="text-align: left;">alert_content</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Content formatted for alerting</td>
 </tr>
 <tr>
 <td style="text-align: left;">asset_uuids</td>
 <td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of related asset UUIDs</td>
 </tr>
 <tr>
 <td style="text-align: left;">author_id</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Author identifier</td>
 </tr>
 <tr>
 <td style="text-align: left;">category_name</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Category of the event</td>
 </tr>
 <tr>
 <td style="text-align: left;">code</td>
 <td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Code metadata</td>
 </tr>
 <tr>
 <td style="text-align: left;">content</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Full content of the event</td>
 </tr>
 <tr>
 <td style="text-align: left;">content_preview</td>
 <td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Preview of the content</td>
 </tr>
 <tr>
 <td style="text-align: left;">data</td>
 <td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Additional data payload</td>
 </tr>
 <tr>
 <td style="text-align: left;">event_title</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Title of the event</td>
 </tr>
 <tr>
 <td style="text-align: left;">event_type</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the search item</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventOriginalType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Original event type (ASIM)</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventOriginalUid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Original unique identifier (ASIM)</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventProduct</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Event product name (ASIM)</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventSchemaVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Schema version (ASIM)</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventSeverity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Severity level: Informational, Low, Medium, High, Critical (ASIM)</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventVendor</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Event vendor name - Flare (ASIM)</td>
 </tr>
 <tr>
 <td style="text-align: left;">external_url</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">External URL reference</td>
 </tr>
 <tr>
 <td style="text-align: left;">first_crawled_at</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">When the item was first crawled</td>
 </tr>
 <tr>
 <td style="text-align: left;">highlights</td>
 <td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Highlighted matches in the content</td>
 </tr>
 <tr>
 <td style="text-align: left;">id</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the item</td>
 </tr>
 <tr>
 <td style="text-align: left;">identifiers</td>
 <td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Array of matched identifiers [{id, type, name, query, group}]</td>
 </tr>
 <tr>
 <td style="text-align: left;">keyword</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Matched keyword</td>
 </tr>
 <tr>
 <td style="text-align: left;">materialized_at</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">When the item was materialized</td>
 </tr>
 <tr>
 <td style="text-align: left;">project_name</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Project name (for code-related events)</td>
 </tr>
 <tr>
 <td style="text-align: left;">related</td>
 <td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of related URLs</td>
 </tr>
 <tr>
 <td style="text-align: left;">risk</td>
 <td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Risk object containing score</td>
+</tr>
+<tr>
+<td style="text-align: left;">RiskScore</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Extracted risk score (1-5)</td>
 </tr>
 <tr>
 <td style="text-align: left;">sha</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Commit SHA (for code-related events)</td>
 </tr>
 <tr>
 <td style="text-align: left;">sort</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">source</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Source identifier</td>
 </tr>
 <tr>
 <td style="text-align: left;">source_name</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Human-readable source name</td>
 </tr>
 <tr>
 <td style="text-align: left;">tags</td>
 <td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of tags</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp when the event was ingested (ASIM)</td>
 </tr>
 <tr>
 <td style="text-align: left;">timestamp</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Original timestamp from Flare</td>
 </tr>
 <tr>
 <td style="text-align: left;">timestamp_formatted</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Formatted timestamp string</td>
 </tr>
 <tr>
 <td style="text-align: left;">uid</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier (UID format)</td>
 </tr>
 <tr>
-<td style="text-align: left;">url</td>
+<td style="text-align: left;">Url</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Source URL (ASIM)</td>
 </tr>
 <tr>
 <td style="text-align: left;">user_notes</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">User notes on the event</td>
 </tr>
 <tr>
 <td style="text-align: left;">user_risk_score</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;">User-assigned risk score override</td>
 </tr>
 <tr>
 <td style="text-align: left;">victim_name</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Victim name if applicable</td>
 </tr>
 </tbody>
 </table>

@@ -19,18 +19,18 @@ The Log Ingestion API is the modern, recommended method for sending custom data 
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **47** |
+| Total Connectors | **46** |
 | Active | 27 |
 | Deprecated 🚫 | 0 |
-| Unpublished ⚠️ | 20 |
+| Unpublished ⚠️ | 19 |
 
 ### By Collection Method
 
 | Collection Method | Count |
 |:-----------------|------:|
-| [Azure Function](../methods/azure-function.md) | 36 |
+| [Azure Function](../methods/azure-function.md) | 35 |
 | [CCF Push](../methods/ccf-push.md) | 11 |
-| **Total** | **47** |
+| **Total** | **46** |
 
 ## Connectors Using This API
 
@@ -40,7 +40,6 @@ The Log Ingestion API is the modern, recommended method for sending custom data 
 |:----------|:------------------|:----------|:------:|:---------|
 | [Bitsight data connector](../connectors/bitsight.md) | [Azure Function](../methods/azure-function.md) | BitSight Technologies, Inc. | 11 | [BitSight](../solutions/bitsight.md) |
 | [CyberArkAudit](../connectors/cyberarkaudit.md) | [Azure Function](../methods/azure-function.md) | CyberArk | 1 | [CyberArkAudit](../solutions/cyberarkaudit.md) |
-| [Cyera DSPM Azure Functions Microsoft Sentinel Data Connector](../connectors/cyerafunctionsconnector.md) ⚠️ | [Azure Function](../methods/azure-function.md) | Cyera Inc | 5 | [CyeraDSPM](../solutions/cyeradspm.md) |
 | [Dataminr Pulse Alerts Data Connector](../connectors/dataminrpulsealerts.md) | [Azure Function](../methods/azure-function.md) | Dataminr | 1 | [Dataminr Pulse](../solutions/dataminr-pulse.md) |
 | [ESET Protect Platform](../connectors/esetprotectplatform.md) ⚠️ | [Azure Function](../methods/azure-function.md) | ESET | 2 | [ESET Protect Platform](../solutions/eset-protect-platform.md) |
 | [Feedly](../connectors/feedly.md) 🔶 | [Azure Function](../methods/azure-function.md) | Feedly | 1 | [Feedly](../solutions/feedly.md) |

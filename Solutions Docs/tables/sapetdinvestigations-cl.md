@@ -13,9 +13,9 @@
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (15 columns)
+## Schema (16 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20ETD%20Cloud/Data%20Connectors/SAPETD_PUSH_CCP/SAPETD_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SAPETDInvestigations_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
@@ -24,7 +24,7 @@
 | CompletionTimestamp | datetime |
 | createdAt | datetime |
 | createdBy | string |
-| CustomerNotification | boolean |
+| CustomerNotification | bool |
 | Description | string |
 | InvestigationId | int |
 | ManagementVisibility | string |
@@ -32,6 +32,7 @@
 | Severity | string |
 | Status | string |
 | Systems | dynamic |
+| TimeGenerated | datetime |
 | Users | dynamic |
 | Version | string |
 

@@ -6,10 +6,6 @@
 
 ---
 
-| Attribute | Value |
-|:----------|:------|
-| **Category** | Normalized |
-
 ## Schema (151 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ASimDns.json)
@@ -168,23 +164,7 @@
 | UrlCategory | string |
 | User | string |
 
-## Solutions (1)
-
-This table is used by the following solutions:
-
-- [Dataminr Pulse](../solutions/dataminr-pulse.md)
-
 ---
-
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md) |  |
 
 ## Parsers Using This Table (1)
 

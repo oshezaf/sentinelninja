@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>NetskopeEventsPage_CL</h1>
@@ -33,7 +36,7 @@
 </tbody>
 </table>
 <h2>Schema (86 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/Data%20Connectors/NetskopeAlertsEvents_RestAPI_CCP/NetskopeAlertsEvents_DCR.json">Data Collection Rule definition</a></p>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/NetskopeEventsPage_CL.json">KQL validation test schema</a></p>
 <table id="schema-table">
 <thead>
 <tr>
@@ -43,10 +46,6 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_id</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
 <td style="text-align: left;">access_method</td>
 <td style="text-align: left;">string</td>
 </tr>
@@ -55,8 +54,8 @@
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">app_session_id</td>
-<td style="text-align: left;">long</td>
+<td style="text-align: left;">app_sessionid</td>
+<td style="text-align: left;">string</td>
 </tr>
 <tr>
 <td style="text-align: left;">appcategory</td>
@@ -67,8 +66,8 @@
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">browser_session_id</td>
-<td style="text-align: left;">long</td>
+<td style="text-align: left;">browser_sessionid</td>
+<td style="text-align: left;">string</td>
 </tr>
 <tr>
 <td style="text-align: left;">browser_version</td>
@@ -111,15 +110,15 @@
 <td style="text-align: left;">int</td>
 </tr>
 <tr>
-<td style="text-align: left;">connection_id</td>
-<td style="text-align: left;">long</td>
+<td style="text-align: left;">connectionid</td>
+<td style="text-align: left;">string</td>
 </tr>
 <tr>
 <td style="text-align: left;">CononicalName</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">count</td>
+<td style="text-align: left;">count_i</td>
 <td style="text-align: left;">int</td>
 </tr>
 <tr>
@@ -243,8 +242,8 @@
 <td style="text-align: left;">int</td>
 </tr>
 <tr>
-<td style="text-align: left;">request_id</td>
-<td style="text-align: left;">long</td>
+<td style="text-align: left;">requestid</td>
+<td style="text-align: left;">string</td>
 </tr>
 <tr>
 <td style="text-align: left;">resp_cnt</td>
@@ -339,6 +338,10 @@
 <td style="text-align: left;">int</td>
 </tr>
 <tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
 <td style="text-align: left;">timestamp</td>
 <td style="text-align: left;">int</td>
 </tr>
@@ -347,11 +350,11 @@
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">transaction_id</td>
-<td style="text-align: left;">long</td>
+<td style="text-align: left;">transactionid</td>
+<td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">type</td>
+<td style="text-align: left;">type_s</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>

@@ -13,19 +13,21 @@
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (7 columns)
+## Schema (9 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit/Data%20Connectors/SlackAuditLog_CCP/SlackAuditLog_DCR.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit%5CData%20Connectors%5CSlackAuditLog_CCP/SlackAuditLog_Table.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| action | string |
-| actor | dynamic |
-| context | dynamic |
-| date_create | real |
-| details | dynamic |
-| entity | dynamic |
-| id | string |
+| Action | string |
+| ActionDescription | dynamic |
+| Actor | dynamic |
+| Context | dynamic |
+| DateCreate | real |
+| Details | dynamic |
+| Entity | dynamic |
+| Id | string |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

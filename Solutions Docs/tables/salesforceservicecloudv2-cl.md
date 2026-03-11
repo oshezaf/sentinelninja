@@ -13,228 +13,229 @@
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (216 columns)
+## Schema (217 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud/Data%20Connectors/SalesforceSentinelConnector_CCP/SalesforceServiceCloud_DCR.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud%5CData%20Connectors%5CSalesforceSentinelConnector_CCP/SalesforceServiceCloud_Tables.json)
 
-| Column Name | Type |
-|:------------|:-----|
-| ACTION | string |
-| ANALYTICS_MODE | string |
-| API_TYPE | string |
-| API_VERSION | string |
-| APP_NAME | string |
-| APP_TYPE | string |
-| ARTICLE_ID | string |
-| ARTICLE_STATUS | string |
-| ARTICLE_VERSION | string |
-| ARTICLE_VERSION_ID | string |
-| AVERAGE_ROW_SIZE | string |
-| BATCH_ID | string |
-| BROWSER_NAME | string |
-| BROWSER_TYPE | string |
-| BROWSER_VERSION | string |
-| CALLOUT_TIME | string |
-| CIPHER_SUITE | string |
-| CLASS_NAME | string |
-| CLICKED_RECORD_ID | string |
-| CLIENT_ID | string |
-| CLIENT_INFO | string |
-| CLIENT_IP | string |
-| CLIENT_NAME | string |
-| CLIENT_VERSION | string |
-| COMPONENT_ID | string |
-| COMPONENT_ID_DERIVED | string |
-| COMPONENT_NAME | string |
-| CONNECTION_TYPE | string |
-| CONSOLE_ID | string |
-| CONSOLE_ID_DERIVED | string |
-| CONTEXT | string |
-| CONTROLLER_TYPE | string |
-| CPU_TIME | string |
-| DASHBOARD_COMPONENT_ID | string |
-| DASHBOARD_ID | string |
-| DASHBOARD_ID_DERIVED | string |
-| DASHBOARD_TYPE | string |
-| DATA | string |
-| DB_BLOCKS | string |
-| DB_CPU_TIME | string |
-| DB_TOTAL_TIME | string |
-| DELIVERY_ID | string |
-| DELIVERY_LOCATION | string |
-| DEVICE_ID | string |
-| DEVICE_MODEL | string |
-| DEVICE_PLATFORM | string |
-| DEVICE_SESSION_ID | string |
-| DISPLAY_TYPE | string |
-| DOCUMENT_ID | string |
-| DOCUMENT_ID_DERIVED | string |
-| DST_BYTES | string |
-| DST_USER | string |
-| DST_USER_SID | string |
-| DST_USER_SID_DERIVED | string |
-| DURATION | string |
-| DVC_ACTION | string |
-| DVC_OS | string |
-| DVC_OS_NAME | string |
-| DVC_OS_VERSION | string |
-| EFFECTIVE_PAGE_TIME | string |
-| ENTITY | string |
-| ENTITY_ID | string |
-| ENTITY_NAME | string |
-| ENTITY_TYPE | string |
-| ENTRY_POINT | string |
-| EPT | string |
-| EVENT_COUNT | string |
-| EVENT_END_TIME | string |
-| EVENT_RESULT | string |
-| EVENT_TYPE | string |
-| EXCEPTION_MESSAGE | string |
-| EXCEPTION_TYPE | string |
-| EXEC_TIME | string |
-| FILE_PREVIEW_TYPE | string |
-| FILE_SIZE | string |
-| FILE_TYPE | string |
-| GRANDPARENT_UI_ELEMENT | string |
-| HTTP_HEADERS | string |
-| HTTP_METHOD | string |
-| HTTP_REFERRER_ORIGINAL | string |
-| HTTP_USER_AGENT | string |
-| HTTP_USER_AGENT_ORIGINAL | string |
-| IS_AJAX_REQUEST | string |
-| IS_API | string |
-| IS_ERROR | string |
-| IS_FIRST_REQUEST | string |
-| IS_GUEST | string |
-| IS_LONG_RUNNING_REQUEST | string |
-| IS_MOBILE | string |
-| IS_NEW | string |
-| IS_SCHEDULED | string |
-| IS_SECURE | string |
-| IS_SUCCESS | string |
-| JOB_ID | string |
-| LANGUAGE | string |
-| LAST_VERSION | string |
-| LICENSE_CONTEXT | string |
-| LIMIT_USAGE_PERCENT | string |
-| LOG_GROUP_ID | string |
-| LOGIN_KEY | string |
-| LOGIN_STATUS | string |
-| MANAGED_PACKAGE_NAMESPACE | string |
-| MEDIA_TYPE | string |
-| METHOD | string |
-| METHOD_NAME | string |
-| NAME | string |
-| NETWORK_DURATION | string |
-| NUM_CLICKS | string |
-| NUM_RESULTS | string |
-| NUM_SESSIONS | string |
-| NUMBER_BUCKETS | string |
-| NUMBER_COLUMNS | string |
-| NUMBER_EXCEPTION_FILTERS | string |
-| NUMBER_FAILURES | string |
-| NUMBER_FIELDS | string |
-| NUMBER_SOQL_QUERIES | string |
-| OPERATION_TYPE | string |
-| ORGANIZATION_ID | string |
-| ORIGIN | string |
-| OS_NAME | string |
-| OS_VERSION | string |
-| PAGE_APP_NAME | string |
-| PAGE_CONTEXT | string |
-| PAGE_ENTITY_ID | string |
-| PAGE_ENTITY_TYPE | string |
-| PAGE_NAME | string |
-| PAGE_START_TIME | string |
-| PAGE_URL | string |
-| PARENT_UI_ELEMENT | string |
-| PLATFORM_TYPE | string |
-| PREFIXES_SEARCHED | string |
-| PREVPAGE_APP_NAME | string |
-| PREVPAGE_CONTEXT | string |
-| PREVPAGE_ENTITY_ID | string |
-| PREVPAGE_ENTITY_TYPE | string |
-| PREVPAGE_URL | string |
-| QUERY | string |
-| QUERY_ID | string |
-| QUIDDITY | string |
-| RANK | string |
-| READ_TIME | string |
-| RECORD_ID | string |
-| RECORD_ID_DERIVED | string |
-| RECORD_TYPE | string |
-| REFERRER_URI | string |
-| RELATED_ENTITY_ID | string |
-| RELATED_LIST | string |
-| RENDERING_TYPE | string |
-| REOPEN_COUNT | string |
-| REPORT_DESCRIPTION | string |
-| REPORT_ID | string |
-| REPORT_ID_DERIVED | string |
-| REQUEST_ID | string |
-| REQUEST_SIZE | string |
-| REQUEST_STATUS | string |
-| REQUEST_TYPE | string |
-| RESOLUTION_TYPE | string |
-| RESPONSE_SIZE | string |
-| ROW_COUNT | string |
-| ROWS_PROCESSED | string |
-| RUN_TIME | string |
-| SDK_APP_TYPE | string |
-| SDK_APP_VERSION | string |
-| SDK_VERSION | string |
-| SEARCH_QUERY | string |
-| SESSION_ID | string |
-| SESSION_KEY | string |
-| SESSION_LEVEL | string |
-| SESSION_TYPE | string |
-| SHARED_WITH_ENTITY_ID | string |
-| SHARING_OPERATION | string |
-| SHARING_PERMISSION | string |
-| SITE_ID | string |
-| SORT | string |
-| SOURCE_IP | string |
-| SRC_BYTES | string |
-| SRC_DVC_ID | string |
-| SRC_DVC_MODEL_NAME | string |
-| SRC_IP_ADDR | string |
-| SRC_NAT_IP_ADDR | string |
-| STACK_TRACE | string |
-| STATUS_CODE | string |
-| SUCCESS | string |
-| TAB_ID | string |
-| TARGET_UI_ELEMENT | string |
-| TIME | string |
-| TIMESTAMP | string |
-| TIMESTAMP_DERIVED | datetime |
-| TLS_PROTOCOL | string |
-| TOTAL_TIME | string |
-| TRANSACTION_TYPE | string |
-| TRIGGER_ID | string |
-| TRIGGER_NAME | string |
-| TRIGGER_TYPE | string |
-| UI_EVENT_ID | string |
-| UI_EVENT_SEQUENCE_NUM | string |
-| UI_EVENT_SOURCE | string |
-| UI_EVENT_TIMESTAMP | string |
-| UI_EVENT_TYPE | string |
-| URI | string |
-| URI_ID_DERIVED | string |
-| URL | string |
-| URL_ORIGINAL | string |
-| USER | string |
-| USER_AGENT | string |
-| USER_EMAIL | string |
-| USER_ID | string |
-| USER_ID_DERIVED | string |
-| USER_INITIATED_LOGOUT | string |
-| USER_NAME | string |
-| USER_TYPE | string |
-| VERSION_ID | string |
-| VERSION_ID_DERIVED | string |
-| VIEW_STATE_SIZE | string |
-| WAVE_SESSION_ID | string |
-| WAVE_TIMESTAMP | string |
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| Action | string | The action performed. |
+| AnalyticsMode | string | The analytics mode. |
+| ApiType | string | The API type. |
+| ApiVersion | string | The API version. |
+| AppName | string | The app name. |
+| AppType | string | The app type. |
+| ArticleId | string | The article ID. |
+| ArticleStatus | string | The article status. |
+| ArticleVersion | string | The article version. |
+| ArticleVersionId | string | The article version ID. |
+| AverageRowSize | string | The average row size. |
+| BatchId | string | The batch ID. |
+| BrowserName | string | The browser name. |
+| BrowserType | string | The browser type. |
+| BrowserVersion | string | The browser version. |
+| CalloutTime | string | The callout time. |
+| CipherSuite | string | The cipher suite. |
+| ClassName | string | The class name. |
+| ClickedRecordId | string | The clicked record ID. |
+| ClientId | string | The client ID. |
+| ClientInfo | string | The client info. |
+| ClientIp | string | The client IP address. |
+| ClientName | string | The name of the client. |
+| ClientVersion | string | The client version. |
+| ComponentId | string | The component ID. |
+| ComponentIdDerived | string | The component ID derived. |
+| ComponentName | string | The component name. |
+| ConnectionType | string | The connection type. |
+| ConsoleId | string | The console ID. |
+| ConsoleIdDerived | string | The console ID derived. |
+| Context | string | The context. |
+| ControllerType | string | The controller type. |
+| CpuTime | string | The CPU time. |
+| DashboardComponentId | string | The dashboard component ID. |
+| DashboardId | string | The dashboard ID. |
+| DashboardIdDerived | string | The dashboard ID derived. |
+| DashboardType | string | The dashboard type. |
+| Data | string | The data. |
+| DbBlocks | string | The database blocks. |
+| DbCpuTime | string | The database CPU time. |
+| DbTotalTime | string | The database total time. |
+| DeliveryId | string | The delivery ID. |
+| DeliveryLocation | string | The delivery location. |
+| DeviceId | string | The device ID. |
+| DeviceModel | string | The device model. |
+| DevicePlatform | string | The device platform. |
+| DeviceSessionId | string | The device session ID. |
+| DisplayType | string | The display type. |
+| DocumentId | string | The document ID. |
+| DocumentIdDerived | string | The document ID derived. |
+| DstBytes | string | The destination bytes. |
+| DstUser | string | The destination user. |
+| DstUserSid | string | The destination user SID. |
+| DstUserSidDerived | string | The destination user SID derived. |
+| Duration | string | The duration. |
+| DvcAction | string | The DVC action. |
+| DvcOs | string | The DVC OS. |
+| DvcOsName | string | The DVC OS name. |
+| DvcOsVersion | string | The DVC OS version. |
+| EffectivePageTime | string | The effective page time. |
+| Entity | string | The entity. |
+| EntityId | string | The entity ID. |
+| EntityName | string | The entity name. |
+| EntityType | string | The entity type. |
+| EntryPoint | string | The entry point. |
+| Ept | string | The EPT. |
+| EventCount | string | The event count. |
+| EventEndTime | string | The event end time. |
+| EventResult | string | The event result. |
+| EventType | string | The type of the event. |
+| ExceptionMessage | string | The exception message. |
+| ExceptionType | string | The exception type. |
+| ExecTime | string | The execution time of the request. |
+| FilePreviewType | string | The file preview type. |
+| FileSize | string | The file size. |
+| FileType | string | The file type. |
+| GrandparentUiElement | string | The grandparent UI element. |
+| HttpHeaders | string | The HTTP headers. |
+| HttpMethod | string | The HTTP method. |
+| HttpReferrerOriginal | string | The HTTP referrer original. |
+| HttpUserAgent | string | The HTTP user agent. |
+| HttpUserAgentOriginal | string | The HTTP user agent original. |
+| IsAjaxRequest | string | Indicates if the request is an AJAX request. |
+| IsApi | string | Indicates if the request is an API request. |
+| IsError | string | Indicates if there was an error. |
+| IsFirstRequest | string | Indicates if this is the first request. |
+| IsGuest | string | Indicates if the user is a guest. |
+| IsLongRunningRequest | string | Indicates if the job is a long-running request. |
+| IsMobile | string | Indicates if the job is mobile. |
+| IsNew | string | Indicates if the job is new. |
+| IsScheduled | string | Indicates if the job is scheduled. |
+| IsSecure | string | Indicates if the connection is secure. |
+| IsSuccess | string | Indicates if the operation was successful. |
+| JobId | string | The job ID. |
+| Language | string | The language. |
+| LastVersion | string | The last version. |
+| LicenseContext | string | The license context. |
+| LimitUsagePercent | string | The limit usage percent. |
+| LogGroupId | string | The log group ID. |
+| LoginKey | string | The login key. |
+| LoginStatus | string | The login status. |
+| ManagedPackageNamespace | string | The managed package namespace. |
+| MediaType | string | The media type. |
+| Method | string | The method. |
+| MethodName | string | The method name. |
+| Name | string | The name. |
+| NetworkDuration | string | The network duration. |
+| NumberBuckets | string | The number of buckets. |
+| NumberColumns | string | The number of columns. |
+| NumberExceptionFilters | string | The number of exception filters. |
+| NumberFailures | string | The number of failures. |
+| NumberFields | string | The number of fields. |
+| NumberSoqlQueries | string | The number of SOQL queries. |
+| NumClicks | string | The number of clicks. |
+| NumResults | string | The number of results. |
+| NumSessions | string | The number of sessions. |
+| OperationType | string | The operation type. |
+| OrganizationId | string | The organization ID. |
+| Origin | string | The origin. |
+| OsName | string | The operating system name. |
+| OsVersion | string | The operating system version. |
+| PageAppName | string | The page app name. |
+| PageContext | string | The page context. |
+| PageEntityId | string | The page entity ID. |
+| PageEntityType | string | The page entity type. |
+| PageName | string | The page name. |
+| PageStartTime | string | The page start time. |
+| PageUrl | string | The page URL. |
+| ParentUiElement | string | The parent UI element. |
+| PlatformType | string | The platform type. |
+| PrefixesSearched | string | The prefixes searched. |
+| PrevpageAppName | string | The previous page app name. |
+| PrevpageContext | string | The previous page context. |
+| PrevpageEntityId | string | The previous page entity ID. |
+| PrevpageEntityType | string | The previous page entity type. |
+| PrevpageUrl | string | The previous page URL. |
+| Query | string | The query. |
+| QueryId | string | The query ID. |
+| Quiddity | string | The quiddity. |
+| Rank | string | The rank. |
+| ReadTime | string | The read time. |
+| RecordId | string | The record ID. |
+| RecordIdDerived | string | The derived record ID. |
+| RecordType | string | The record type. |
+| ReferrerUri | string | The referrer URI. |
+| RelatedEntityId | string | The related entity ID. |
+| RelatedList | string | The related list. |
+| RenderingType | string | The rendering type. |
+| ReopenCount | string | The reopen count. |
+| ReportDescription | string | The report description. |
+| ReportId | string | The report ID. |
+| ReportIdDerived | string | The derived report ID. |
+| RequestId | string | The request ID. |
+| RequestSize | string | The size of the request payload. |
+| RequestStatus | string | The request status. |
+| RequestType | string | The request type. |
+| ResolutionType | string | The resolution type. |
+| ResponseSize | string | The size of the response payload. |
+| RowCount | string | The row count. |
+| RowsProcessed | string | The rows processed. |
+| RunTime | string | The run time. |
+| SdkAppType | string | The SDK app type. |
+| SdkAppVersion | string | The SDK app version. |
+| SdkVersion | string | The SDK version. |
+| SearchQuery | string | The search query. |
+| SessionId | string | The session ID. |
+| SessionKey | string | The session key. |
+| SessionLevel | string | The session level. |
+| SessionType | string | The session type. |
+| SharedWithEntityId | string | The shared with entity ID. |
+| SharingOperation | string | The sharing operation. |
+| SharingPermission | string | The sharing permission. |
+| SiteId | string | The site ID. |
+| Sort | string | The sort order. |
+| SourceIp | string | The source IP address. |
+| SrcBytes | string | The source bytes. |
+| SrcDvcId | string | The source device ID. |
+| SrcDvcModelName | string | The source device model name. |
+| SrcIpAddr | string | The source IP address. |
+| SrcNatIpAddr | string | The source NAT IP address. |
+| StackTrace | string | The stack trace. |
+| StatusCode | string | The status code of the response. |
+| Success | string | Indicates if the request was successful. |
+| TabId | string | The tab ID. |
+| TargetUiElement | string | The target UI element. |
+| Time | string | The time of the event. |
+| TimeGenerated | datetime |  |
+| TimeStamp | string | The timestamp of the event. |
+| TimestampDerived | datetime | The derived timestamp. |
+| TlsProtocol | string | The TLS protocol. |
+| TotalTime | string | The total time. |
+| TransactionType | string | The transaction type. |
+| TriggerId | string | The trigger ID. |
+| TriggerName | string | The trigger name. |
+| TriggerType | string | The trigger type. |
+| UiEventId | string | The UI event ID. |
+| UiEventSequenceNum | string | The UI event sequence number. |
+| UiEventSource | string | The UI event source. |
+| UiEventTimestamp | string | The UI event timestamp. |
+| UiEventType | string | The UI event type. |
+| Uri | string | The URI of the request. |
+| UriIdDerived | string | The derived URI ID. |
+| Url | string | The URL of the request. |
+| UrlOriginal | string | The original URL. |
+| User | string | The user. |
+| UserAgent | string | The user agent. |
+| UserEmail | string | The user email. |
+| UserId | string | The user ID. |
+| UserIdDerived | string | The derived user ID. |
+| UserInitiatedLogout | string | Indicates if the logout was user-initiated. |
+| UserName | string | The user name. |
+| UserType | string | The type of the user. |
+| VersionId | string | The version ID. |
+| VersionIdDerived | string | The derived version ID. |
+| ViewStateSize | string | The view state size. |
+| WaveSessionId | string | The wave session ID. |
+| WaveTimeStamp | string | The wave timestamp. |
 
 ## Solutions (1)
 

@@ -3,16 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>&lt;img src=&quot;../images/asim-badge.png&quot; alt=&quot;ASIM&quot; height=&quot;32&quot;&gt; GDPR Compliance &mdash; Solutions Analyzer</title>
+<title>GDPR Compliance &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
     <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
-<h1><img src="../images/asim-badge.png" alt="ASIM" height="32"> GDPR Compliance</h1>
+<h1>GDPR Compliance</h1>
 <p><em>Solution: GDPR Compliance &amp; Data Security</em></p>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="GDPR Compliance & Data Security Logo" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
@@ -76,7 +79,6 @@
 <h2>Contents</h2>
 <ul>
 <li><a href="#pre-requisites">Pre-requisites</a></li>
-<li><a href="#asim-pre-requisites">ASIM Pre-requisites</a></li>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#tables-used">Tables Used</a></li>
 <li><a href="#content-items">Content Items</a></li>
@@ -107,113 +109,14 @@
 </tr>
 </tbody>
 </table>
-<h2><a id="asim-pre-requisites"></a><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Pre-requisites</h2>
-<p>This solution uses the <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a> <a href="https://learn.microsoft.com/azure/sentinel/normalization">ASIM (Advanced Security Information Model)</a> parser to provide normalized, source-agnostic data access, expanding detection coverage without modifying queries.</p>
-<h3>Supported Products</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Product</th>
-<th style="text-align: left;">Dependency Solution</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#apache-http-server">Apache HTTP Server</a></td>
-<td style="text-align: left;"><a href="customlogsama.html">CustomLogsAma</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#azure-firewall">Azure Firewall</a></td>
-<td style="text-align: left;">-</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#barracuda-waf">Barracuda WAF</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#cisco-firepower">Cisco Firepower</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#cisco-meraki">Cisco Meraki</a></td>
-<td style="text-align: left;"><a href="cisco-sd-wan.html">Cisco SD-WAN</a><br><a href="ciscomeraki.html">CiscoMeraki</a><br><a href="customlogsama.html">CustomLogsAma</a><br><a href="forescout-legacy.html">Forescout (Legacy)</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#citrix-netscaler">Citrix NetScaler</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#f5-big-ip-application-security-manager-asm">F5 BIG-IP Application Security Manager (ASM)</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#fortinet-fortigate">Fortinet FortiGate</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#internet-information-services-iis">Internet Information Services (IIS)</a></td>
-<td style="text-align: left;"><a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#native">Native</a></td>
-<td style="text-align: left;"><a href="cisco-meraki-events-via-rest-api.html">Cisco Meraki Events via REST API</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#palo-alto-cortex-data-lake">Palo Alto Cortex Data Lake</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#palo-alto-networks">Palo Alto Networks</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#sonicwall">SonicWall</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#squid-proxy">Squid Proxy</a></td>
-<td style="text-align: left;"><a href="customlogsama.html">CustomLogsAma</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#vectra-ai-streams">Vectra AI Streams</a></td>
-<td style="text-align: left;"><a href="customlogsama.html">CustomLogsAma</a><br><a href="vectra-ai-stream.html">Vectra AI Stream</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../asim/asim-products-index.md#zscaler-zia">Zscaler ZIA</a></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a><br><a href="virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-</tr>
-</tbody>
-</table>
 <h2>Data Connectors</h2>
 <p><strong>This solution does not include its own data connectors</strong> but uses connectors from dependency solutions:</p>
 <ul>
-<li><a href="../connectors/aivectrastream.html">AI Vectra Stream via Legacy Agent</a> <em>(dependency on <a href="vectra-ai-stream.html">Vectra AI Stream</a>)</em></li>
 <li><a href="../connectors/azureactivedirectory.html">Microsoft Entra ID</a> <em>(dependency on <a href="microsoft-entra-id.html">Microsoft Entra ID</a>)</em></li>
-<li><a href="../connectors/cef.html">Common Event Format (CEF)</a> <em>(dependency on <a href="common-event-format.html">Common Event Format</a>)</em></li>
-<li><a href="../connectors/cefama.html">Common Event Format (CEF) via AMA</a> <em>(dependency on <a href="common-event-format.html">Common Event Format</a>)</em></li>
-<li><a href="../connectors/ciscomeraki.html">[Deprecated] Cisco Meraki</a> <em>(dependency on <a href="ciscomeraki.html">CiscoMeraki</a>)</em></li>
-<li><a href="../connectors/ciscomeraki-usingrestapi.html">Cisco Meraki (using REST API)</a> <em>(dependency on <a href="ciscomeraki.html">CiscoMeraki</a>)</em></li>
-<li><a href="../connectors/ciscomerakimultirule.html">Cisco Meraki (using REST API)</a> <em>(dependency on <a href="cisco-meraki-events-via-rest-api.html">Cisco Meraki Events via REST API</a>)</em></li>
-<li><a href="../connectors/ciscomerakinativepoller.html">Cisco Meraki (using REST API)</a> <em>(dependency on <a href="ciscomeraki.html">CiscoMeraki</a>)</em></li>
-<li><a href="../connectors/ciscosdwan.html">Cisco Software Defined WAN</a> <em>(dependency on <a href="cisco-sd-wan.html">Cisco SD-WAN</a>)</em></li>
-<li><a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> <em>(dependency on <a href="customlogsama.html">CustomLogsAma</a>)</em></li>
-<li><a href="../connectors/esi-exchangeadminauditlogevents.html">[Deprecated] Microsoft Exchange Logs and Events</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
-<li><a href="../connectors/esi-exchangeonpremisescollector.html">Exchange Security Insights On-Premises Collector</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
-<li><a href="../connectors/esi-opt1exchangeadminauditlogsbyeventlogs.html">Microsoft Exchange Admin Audit Logs by Event Logs</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
-<li><a href="../connectors/esi-opt2exchangeserverseventlogs.html">Microsoft Exchange Logs and Events</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
-<li><a href="../connectors/esi-opt34domaincontrollerssecurityeventlogs.html"> Microsoft Active-Directory Domain Controllers Security Event Logs</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
-<li><a href="../connectors/esi-opt5exchangeiislogs.html">IIS Logs of Microsoft Exchange Servers</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
-<li><a href="../connectors/esi-opt6exchangemessagetrackinglogs.html">Microsoft Exchange Message Tracking Logs</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
-<li><a href="../connectors/esi-opt7exchangehttpproxylogs.html">Microsoft Exchange HTTP Proxy Logs</a> <em>(dependency on <a href="microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a>)</em></li>
-<li><a href="../connectors/forescout.html">Forescout</a> <em>(dependency on <a href="forescout-legacy.html">Forescout (Legacy)</a>)</em></li>
 <li><a href="../connectors/microsoftazurepurview.html">Microsoft Purview</a> <em>(dependency on <a href="microsoft-purview.html">Microsoft Purview</a>)</em></li>
 <li><a href="../connectors/microsoftpurviewinformationprotection.html">Microsoft Purview Information Protection</a> <em>(dependency on <a href="microsoft-purview-information-protection.html">Microsoft Purview Information Protection</a>)</em></li>
 <li><a href="../connectors/microsoftthreatprotection.html">Microsoft Defender XDR</a> <em>(dependency on <a href="microsoft-defender-xdr.html">Microsoft Defender XDR</a>)</em></li>
 <li><a href="../connectors/office365.html">Microsoft 365 (formerly, Office 365)</a> <em>(dependency on <a href="microsoft-365.html">Microsoft 365</a>)</em></li>
-<li><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a> <em>(dependency on <a href="vectra-ai-stream.html">Vectra AI Stream</a>)</em></li>
-<li><a href="../connectors/virtualmetricdirectorproxy.html">VirtualMetric Director Proxy</a> <em>(dependency on <a href="virtualmetric-datastream.html">VirtualMetric DataStream</a>)</em></li>
-<li><a href="../connectors/virtualmetricmssentinelconnector.html">VirtualMetric DataStream for Microsoft Sentinel</a> <em>(dependency on <a href="virtualmetric-datastream.html">VirtualMetric DataStream</a>)</em></li>
-<li><a href="../connectors/virtualmetricmssentineldatalakeconnector.html">VirtualMetric DataStream for Microsoft Sentinel data lake</a> <em>(dependency on <a href="virtualmetric-datastream.html">VirtualMetric DataStream</a>)</em></li>
 </ul>
 <h2>Tables Used</h2>
 <p>This solution queries <strong>12 table(s)</strong> from its content items:</p>
@@ -329,8 +232,8 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../content/gdpr-compliance-&amp;-data-security-gdprcomplianceanddatasecurity-a0958a9a.html">GDPRComplianceAndDataSecurity</a></td>
-<td style="text-align: left;"><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> <a href="../asim/imwebsession.html"><code>_Im_WebSession</code></a><br><a href="../tables/aadnoninteractiveusersigninlogs.html"><code>AADNonInteractiveUserSignInLogs</code></a><br><a href="../tables/aaduserriskevents.html"><code>AADUserRiskEvents</code></a><br><a href="../tables/auditlogs.html"><code>AuditLogs</code></a><br><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a><br><a href="../tables/laquerylogs.html"><code>LAQueryLogs</code></a><br><a href="../tables/microsoftpurviewinformationprotection.html"><code>MicrosoftPurviewInformationProtection</code></a><br><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a><br><a href="../tables/operation.html"><code>Operation</code></a><br><a href="../tables/purviewdatasensitivitylogs.html"><code>PurviewDataSensitivityLogs</code></a><br><a href="../tables/securityevent.html"><code>SecurityEvent</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a><br><a href="../tables/syslog.html"><code>Syslog</code></a><br><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a><br><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
+<td style="text-align: left;"><a href="../content/gdpr-compliance-&amp;-data-security-gdprcomplianceanddatasecurity-a0958a9a.html">GDPRComplianceAndDataSecurity</a></td>
+<td style="text-align: left;"><a href="../tables/aadnoninteractiveusersigninlogs.html"><code>AADNonInteractiveUserSignInLogs</code></a><br><a href="../tables/aaduserriskevents.html"><code>AADUserRiskEvents</code></a><br><a href="../tables/auditlogs.html"><code>AuditLogs</code></a><br><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a><br><a href="../tables/laquerylogs.html"><code>LAQueryLogs</code></a><br><a href="../tables/microsoftpurviewinformationprotection.html"><code>MicrosoftPurviewInformationProtection</code></a><br><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a><br><a href="../tables/operation.html"><code>Operation</code></a><br><a href="../tables/purviewdatasensitivitylogs.html"><code>PurviewDataSensitivityLogs</code></a><br><a href="../tables/securityevent.html"><code>SecurityEvent</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a><br><a href="../tables/syslog.html"><code>Syslog</code></a><br><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a><br><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
 </tr>
 </tbody>
 </table>

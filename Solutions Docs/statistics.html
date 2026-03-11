@@ -10,6 +10,9 @@
 <body>
 <nav class="navbar">
     <a href="../index.html" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>Microsoft Sentinel Documentation Statistics</h1>
@@ -173,7 +176,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">Tables Used</td>
-<td style="text-align: right;">830</td>
+<td style="text-align: right;">829</td>
 </tr>
 </tbody>
 </table>
@@ -480,7 +483,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Connector Kind</strong> (non-default kinds; REST API polling is the default):</p>
+<p><strong>Connector Kind</strong> (non-default kinds; REST Pull API polling is the default):</p>
 <table>
 <thead>
 <tr>
@@ -490,7 +493,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">REST API Polling <em>(default)</em></td>
+<td style="text-align: left;">REST Pull API Polling <em>(default)</em></td>
 <td style="text-align: right;">87</td>
 </tr>
 <tr>
@@ -608,10 +611,10 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="methods/log-ingestion-api.html">Log Ingestion API</a></td>
-<td style="text-align: right;"><strong>47</strong></td>
+<td style="text-align: right;"><strong>46</strong></td>
 <td style="text-align: right;">27</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">20</td>
+<td style="text-align: right;">19</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="methods/http-data-collector-api.html">HTTP Data Collector API</a></td>
@@ -629,10 +632,10 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Total</strong></td>
-<td style="text-align: right;"><strong>195</strong></td>
+<td style="text-align: right;"><strong>194</strong></td>
 <td style="text-align: right;"><strong>147</strong></td>
 <td style="text-align: right;"><strong>20</strong></td>
-<td style="text-align: right;"><strong>28</strong></td>
+<td style="text-align: right;"><strong>27</strong></td>
 </tr>
 </tbody>
 </table>
@@ -650,10 +653,10 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
-<td style="text-align: right;">36</td>
+<td style="text-align: right;">35</td>
 <td style="text-align: right;">89</td>
 <td style="text-align: right;">4</td>
-<td style="text-align: right;"><strong>129</strong></td>
+<td style="text-align: right;"><strong>128</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="methods/rest-api.html">REST API</a></td>
@@ -671,10 +674,10 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Total</strong></td>
-<td style="text-align: right;"><strong>47</strong></td>
+<td style="text-align: right;"><strong>46</strong></td>
 <td style="text-align: right;"><strong>144</strong></td>
 <td style="text-align: right;"><strong>4</strong></td>
-<td style="text-align: right;"><strong>195</strong></td>
+<td style="text-align: right;"><strong>194</strong></td>
 </tr>
 </tbody>
 </table>
@@ -690,11 +693,11 @@
 <tbody>
 <tr>
 <td style="text-align: left;">CLv1 Connectors</td>
-<td style="text-align: right;"><strong>155</strong></td>
+<td style="text-align: right;"><strong>159</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;">Active</td>
-<td style="text-align: right;">125</td>
+<td style="text-align: right;">129</td>
 </tr>
 <tr>
 <td style="text-align: left;">Deprecated 🚫</td>
@@ -729,7 +732,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
-<td style="text-align: right;">6</td>
+<td style="text-align: right;">10</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="methods/mma.html">MMA</a></td>
@@ -745,7 +748,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Total</strong></td>
-<td style="text-align: right;"><strong>155</strong></td>
+<td style="text-align: right;"><strong>159</strong></td>
 </tr>
 </tbody>
 </table>
@@ -768,17 +771,17 @@
 </tr>
 <tr>
 <td style="text-align: left;"><em>(no API)</em></td>
-<td style="text-align: right;">30</td>
+<td style="text-align: right;">34</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Total</strong></td>
-<td style="text-align: right;"><strong>155</strong></td>
+<td style="text-align: right;"><strong>159</strong></td>
 </tr>
 </tbody>
 </table>
 <h2>Tables</h2>
 <h3>Overview</h3>
-<p><strong>2024 tables</strong> documented across all discovery sources. <strong>1785 tables</strong> have schema information.</p>
+<p><strong>2008 tables</strong> documented across all discovery sources. <strong>1768 tables</strong> have schema information.</p>
 <h3>Discovery Sources</h3>
 <p>Each table is assigned a single discovery source ("Discovered Via") by priority: Connector &gt; Content &gt; Docs &gt; Schema. Within doc sources, priority is: Azure Monitor &gt; Defender XDR &gt; Sentinel Tables &gt; Feature Support &gt; Ingestion API. The "Total" column shows how many tables have each source regardless of priority, since a table can appear in multiple sources.</p>
 <table>
@@ -792,13 +795,13 @@
 <tbody>
 <tr>
 <td style="text-align: left;">Connector</td>
-<td style="text-align: right;">830</td>
-<td style="text-align: right;">830</td>
+<td style="text-align: right;">829</td>
+<td style="text-align: right;">829</td>
 </tr>
 <tr>
 <td style="text-align: left;">Content</td>
-<td style="text-align: right;">219</td>
-<td style="text-align: right;">757</td>
+<td style="text-align: right;">196</td>
+<td style="text-align: right;">732</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables/tables-resourcetype">Azure Monitor Tables Reference</a></td>
@@ -827,12 +830,12 @@
 </tr>
 <tr>
 <td style="text-align: left;">Schema</td>
-<td style="text-align: right;">240</td>
-<td style="text-align: right;">1785</td>
+<td style="text-align: right;">248</td>
+<td style="text-align: right;">1768</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Total</strong></td>
-<td style="text-align: right;"><strong>2024</strong></td>
+<td style="text-align: right;"><strong>2008</strong></td>
 <td style="text-align: right;"></td>
 </tr>
 </tbody>
@@ -854,24 +857,24 @@
 </tr>
 <tr>
 <td style="text-align: left;">DCR</td>
-<td style="text-align: right;">151</td>
+<td style="text-align: right;">9</td>
 </tr>
 <tr>
 <td style="text-align: left;">KQL validation</td>
-<td style="text-align: right;">816</td>
+<td style="text-align: right;">878</td>
 </tr>
 <tr>
 <td style="text-align: left;">Connector definition</td>
-<td style="text-align: right;">26</td>
+<td style="text-align: right;">69</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Total unique tables with schema</strong></td>
-<td style="text-align: right;"><strong>1785</strong></td>
+<td style="text-align: right;"><strong>1768</strong></td>
 </tr>
 </tbody>
 </table>
 <h3>Custom Log V1 (CLv1) 🔶</h3>
-<p><strong>429</strong> of 2024 tables are Custom Log V1 tables, identified by type-suffixed columns or <code>_CL</code> suffix with compatible collection method.</p>
+<p><strong>432</strong> of 2008 tables are Custom Log V1 tables, identified by type-suffixed columns or <code>_CL</code> suffix with compatible collection method.</p>
 <p><strong>By Table Category:</strong></p>
 <table>
 <thead>
@@ -883,7 +886,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;">Uncategorized</td>
-<td style="text-align: right;">409</td>
+<td style="text-align: right;">412</td>
 </tr>
 <tr>
 <td style="text-align: left;">Internal</td>
@@ -899,7 +902,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Total</strong></td>
-<td style="text-align: right;"><strong>429</strong></td>
+<td style="text-align: right;"><strong>432</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1169,73 +1172,21 @@
 <tbody>
 <tr>
 <td style="text-align: left;">Dependency records</td>
-<td style="text-align: right;"><strong>831</strong></td>
+<td style="text-align: right;"><strong>239</strong></td>
 <td style="text-align: right;">239</td>
-<td style="text-align: right;">592</td>
+<td style="text-align: right;">0</td>
 </tr>
 <tr>
 <td style="text-align: left;">Solutions with dependencies</td>
-<td style="text-align: right;"><strong>122</strong></td>
+<td style="text-align: right;"><strong>109</strong></td>
 <td style="text-align: right;">109</td>
-<td style="text-align: right;">25</td>
+<td style="text-align: right;">0</td>
 </tr>
 <tr>
 <td style="text-align: left;">Unique dependency targets</td>
-<td style="text-align: right;"><strong>55</strong></td>
+<td style="text-align: right;"><strong>42</strong></td>
 <td style="text-align: right;">42</td>
-<td style="text-align: right;">29</td>
-</tr>
-</tbody>
-</table>
-<h3>ASIM Pre-requisites by Schema</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">ASIM Schema</th>
-<th style="text-align: right;">Solutions Using</th>
-<th style="text-align: right;">Solutions Providing Data</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">AuditEvent</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">15</td>
-</tr>
-<tr>
-<td style="text-align: left;">Dns</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">13</td>
-</tr>
-<tr>
-<td style="text-align: left;">FileEvent</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">7</td>
-</tr>
-<tr>
-<td style="text-align: left;">NetworkSession</td>
-<td style="text-align: right;">15</td>
-<td style="text-align: right;">18</td>
-</tr>
-<tr>
-<td style="text-align: left;">ProcessEvent</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">7</td>
-</tr>
-<tr>
-<td style="text-align: left;">RegistryEvent</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">8</td>
-</tr>
-<tr>
-<td style="text-align: left;">WebSession</td>
-<td style="text-align: right;">12</td>
-<td style="text-align: right;">9</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Total unique</strong></td>
-<td style="text-align: right;"><strong>25</strong></td>
-<td style="text-align: right;"><strong>29</strong></td>
+<td style="text-align: right;">0</td>
 </tr>
 </tbody>
 </table>
@@ -1250,63 +1201,63 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="solutions/common-event-format.html">Common Event Format</a></td>
-<td style="text-align: right;">83</td>
+<td style="text-align: right;">48</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="solutions/syslog.html">Syslog</a></td>
-<td style="text-align: right;">66</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="solutions/customlogsama.html">CustomLogsAma</a></td>
-<td style="text-align: right;">49</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="solutions/windows-forwarded-events.html">Windows Forwarded Events</a></td>
-<td style="text-align: right;">43</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></td>
-<td style="text-align: right;">38</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="solutions/sentinelone.html">SentinelOne</a></td>
-<td style="text-align: right;">38</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="solutions/vectra-ai-stream.html">Vectra AI Stream</a></td>
-<td style="text-align: right;">37</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="solutions/windows-security-events.html">Windows Security Events</a></td>
-<td style="text-align: right;">36</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-<td style="text-align: right;">35</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="solutions/vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></td>
 <td style="text-align: right;">31</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="solutions/ciscomeraki.html">CiscoMeraki</a></td>
-<td style="text-align: right;">30</td>
+<td style="text-align: left;"><a href="solutions/customlogsama.html">CustomLogsAma</a></td>
+<td style="text-align: right;">14</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
-<td style="text-align: right;">30</td>
+<td style="text-align: left;"><a href="solutions/microsoft-entra-id.html">Microsoft Entra ID</a></td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a></td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="solutions/microsoft-365.html">Microsoft 365</a></td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="solutions/paloalto-pan-os.html">PaloAlto-PAN-OS</a></td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="solutions/amazon-web-services.html">Amazon Web Services</a></td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="solutions/ciscoasa.html">CiscoASA</a></td>
+<td style="text-align: right;">6</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="solutions/azure-firewall.html">Azure Firewall</a></td>
-<td style="text-align: right;">28</td>
+<td style="text-align: right;">6</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="solutions/cisco-meraki-events-via-rest-api.html">Cisco Meraki Events via REST API</a></td>
-<td style="text-align: right;">28</td>
+<td style="text-align: left;"><a href="solutions/check-point.html">Check Point</a></td>
+<td style="text-align: right;">6</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="solutions/corelight.html">Corelight</a></td>
-<td style="text-align: right;">25</td>
+<td style="text-align: left;"><a href="solutions/zscaler-internet-access.html">Zscaler Internet Access</a></td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="solutions/windows-server-dns.html">Windows Server DNS</a></td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="solutions/azure-activity.html">Azure Activity</a></td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="solutions/windows-security-events.html">Windows Security Events</a></td>
+<td style="text-align: right;">5</td>
 </tr>
 </tbody>
 </table>

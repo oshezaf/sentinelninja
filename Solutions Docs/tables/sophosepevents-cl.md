@@ -13,34 +13,40 @@
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (23 columns)
+## Schema (29 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20Endpoint%20Protection/Data%20Connectors/SophosEP_ccp/SophosEP_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SophosEPEvents_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
 | amsi_threat_data | dynamic |
 | appCerts | dynamic |
-| appSha256 | string |
-| core_remedy_items | dynamic |
-| created_at | datetime |
-| customer_id | string |
+| AppSha256 | string |
+| CoreRemedyItems | string |
+| CoreRemedyTotalItems | int |
+| Created | datetime |
+| CustomerId | string |
 | details | dynamic |
-| endpoint_id | string |
-| endpoint_type | string |
-| group | string |
-| id | string |
+| DstUserSid | string |
+| DvcAction | string |
+| DvcHostname | string |
+| EndpointId | string |
+| EventEndTime | datetime |
+| EventMessage | string |
+| EventOriginalUid | string |
+| EventProduct | string |
+| EventSeverity | string |
+| EventSubType | string |
+| EventType | string |
+| EventVendor | string |
 | ips_threat_data | dynamic |
-| location | string |
-| name | string |
-| origin | string |
-| severity | string |
-| source | string |
+| Source | string |
 | source_info | dynamic |
-| threat | string |
-| type | string |
-| user_id | string |
-| when | datetime |
+| SrcDvcType | string |
+| SrcIpAddr | string |
+| ThreatCategory | string |
+| ThreatName | string |
+| TimeGenerated | datetime |
 | whitelist_properties | dynamic |
 
 ## Solutions (1)

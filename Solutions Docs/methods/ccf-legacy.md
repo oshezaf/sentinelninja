@@ -48,7 +48,7 @@ Legacy CCF connectors embed their polling configuration directly in the connecto
 
 | Connector | Publisher | Tables | Solution |
 |:----------|:----------|:------:|:---------|
-| 🚫 [[Deprecated] GitHub Enterprise Audit Log](../connectors/githubecauditlogpolling.md) | GitHub | 3 | [GitHub](../solutions/github.md) |
+| 🚫 [[Deprecated] GitHub Enterprise Audit Log](../connectors/githubecauditlogpolling.md) | GitHub | 2 | [GitHub](../solutions/github.md) |
 
 ---
 

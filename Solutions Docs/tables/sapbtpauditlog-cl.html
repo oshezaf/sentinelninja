@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>SAPBTPAuditLog_CL</h1>
@@ -44,8 +47,8 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (12 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20BTP/Data%20Connectors/SAPBTPPollerConnector/SAPBTP_DCR.json">Data Collection Rule definition</a></p>
+<h2>Schema (11 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SAPBTPAuditLog_CL.json">KQL validation test schema</a></p>
 <table id="schema-table">
 <thead>
 <tr>
@@ -55,35 +58,27 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">als_service_id</td>
+<td style="text-align: left;">AlsServiceId</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">app_or_service_id</td>
+<td style="text-align: left;">Category</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">category</td>
+<td style="text-align: left;">Message</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">MessageUuid</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">format_version</td>
+<td style="text-align: left;">OrgId</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">message</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">message_uuid</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">org_id</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">space_id</td>
+<td style="text-align: left;">SpaceId</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
@@ -91,15 +86,19 @@
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">tenant</td>
+<td style="text-align: left;">Tenant</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">time</td>
+<td style="text-align: left;">TimeGenerated</td>
 <td style="text-align: left;">datetime</td>
 </tr>
 <tr>
-<td style="text-align: left;">user</td>
+<td style="text-align: left;">UpdatedOn</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserName</td>
 <td style="text-align: left;">string</td>
 </tr>
 </tbody>

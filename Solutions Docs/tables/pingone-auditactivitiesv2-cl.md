@@ -13,23 +13,6 @@
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (10 columns)
-
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PingOne/Data%20Connectors/PingOneAuditLogs_ccp/PingOneAuditLogs_DCR.json)
-
-| Column Name | Type |
-|:------------|:-----|
-| action | dynamic |
-| actors | dynamic |
-| correlationId | string |
-| createdAt | datetime |
-| id | string |
-| internalCorrelation | dynamic |
-| recordedAt | datetime |
-| resources | dynamic |
-| result | dynamic |
-| source | dynamic |
-
 ## Solutions (1)
 
 This table is used by the following solutions:

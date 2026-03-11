@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>OneLoginEventsV2_CL</h1>
@@ -45,7 +48,7 @@
 </tbody>
 </table>
 <h2>Schema (19 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OneLoginIAM/Data%20Connectors/OneLoginIAMLogs_ccp/OneLoginIAMLogs_DCR.json">Data Collection Rule definition</a></p>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/OneLoginEventsV2_CL.json">KQL validation test schema</a></p>
 <table id="schema-table">
 <thead>
 <tr>
@@ -55,79 +58,79 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">account_id</td>
+<td style="text-align: left;">AccountId</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">actor_system</td>
+<td style="text-align: left;">ActorSystem</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">actor_user_id</td>
+<td style="text-align: left;">ActorUserId</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">actor_user_name</td>
+<td style="text-align: left;">ActorUserName</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">app_id</td>
+<td style="text-align: left;">AppId</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">app_name</td>
+<td style="text-align: left;">AppName</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">created_at</td>
+<td style="text-align: left;">CustomMessage</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventId</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventTypeId</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ipaddr</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Notes</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">PolicyId</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">PolicyName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">PolicyType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">RoleId</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">RoleName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
 <td style="text-align: left;">datetime</td>
 </tr>
 <tr>
-<td style="text-align: left;">custom_message</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">event_type_id</td>
+<td style="text-align: left;">UserId</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">id</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">ipaddr</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">notes</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">policy_id</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">policy_name</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">policy_type</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">role_id</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">role_name</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">user_id</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">user_name</td>
+<td style="text-align: left;">UserName</td>
 <td style="text-align: left;">string</td>
 </tr>
 </tbody>

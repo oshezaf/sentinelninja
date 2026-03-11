@@ -13,23 +13,24 @@
 | **Lake-Only Ingestion** | ✗ No |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (11 columns)
+## Schema (12 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Quokka/Data%20Connectors/QuokkaQscoutAppEventsLogs_ccf/QuokkaQscoutAppEventsLogs_DCR.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Quokka%5CData%20Connectors%5CQuokkaQscoutAppEventsLogs_ccf/QuokkaQScoutAppEventsLogs_Table.json)
 
-| Column Name | Type |
-|:------------|:-----|
-| app_id | string |
-| device_os_build_version | string |
-| mdm_device_id | string |
-| mdm_source | string |
-| org_id | string |
-| package | string |
-| platform | string |
-| received_at | datetime |
-| result_type | string |
-| results | dynamic |
-| version | string |
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| app_id | string |  |
+| device_os_build_version | string | The OS build version of the device |
+| mdm_device_id | string | The unique identifier of the device in MDM |
+| mdm_source | string | The Mobile Device Management source |
+| org_id | string | Unique identifier of the organization |
+| package | string | The package name of the application |
+| platform | string | The platform of the device (e.g., iOS, Android) |
+| received_at | datetime | The timestamp when the event was received from QScout |
+| result_type | string | The type of result returned |
+| results | dynamic | The detailed results of the app event |
+| TimeGenerated | datetime | The timestamp (UTC) reflecting the time when the event was ingested |
+| version | string | The version of the application |
 
 ## Solutions (1)
 

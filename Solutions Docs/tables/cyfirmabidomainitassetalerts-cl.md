@@ -13,15 +13,15 @@
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (38 columns)
+## Schema (37 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Brand%20Intelligence/Data%20Connectors/CyfirmaBIAlerts_ccp/CyfirmaBIAlerts_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyfirmaBIDomainITAssetAlerts_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
 | action | string |
-| alert_created_date | datetime |
 | alert_object_uid | string |
+| Alert_title | string |
 | alert_uid | string |
 | asset_comments | string |
 | asset_type | string |
@@ -37,10 +37,9 @@
 | host_provider | string |
 | impact | string |
 | ip_address | string |
-| is_third_party | boolean |
+| is_third_party | bool |
 | last_seen | datetime |
 | mail_server | string |
-| notes | dynamic |
 | recommendation | string |
 | registered_date | string |
 | risk_score | int |
@@ -54,7 +53,7 @@
 | status | string |
 | sub_category | string |
 | suspected_threat_actor | dynamic |
-| title | string |
+| TimeGenerated | datetime |
 | uid | string |
 | use_cases | string |
 

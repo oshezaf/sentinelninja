@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>GKEAudit</h1>
@@ -61,15 +64,14 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (17 columns)</h2>
-<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gkeaudit">Azure Monitor documentation</a> · <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Kubernetes%20Engine/Data%20Connectors/GoogleKubernetesEngineLogs_ccp/GoogleKubernetesEngineLogs_DCR.json">Data Collection Rule definition</a></p>
+<h2>Schema (15 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gkeaudit">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
 <tr>
 <th style="text-align: left;">Column Name</th>
 <th style="text-align: left;">Type</th>
 <th style="text-align: left;">Description</th>
-<th style="text-align: left;">Source</th>
 </tr>
 </thead>
 <tbody>
@@ -77,103 +79,76 @@
 <td style="text-align: left;">_BilledSize</td>
 <td style="text-align: left;">real</td>
 <td style="text-align: left;">The record size in bytes</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">_IsBillable</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">insertId</td>
+<td style="text-align: left;">InsertId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">A unique identifier for the log entry, used to deduplicate log records.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">jsonPayload</td>
+<td style="text-align: left;">JsonPayload</td>
 <td style="text-align: left;">dynamic</td>
 <td style="text-align: left;">The JSON representation of the log entry payload, often containing key audit data when not using ProtoPayload.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">labels</td>
+<td style="text-align: left;">Labels</td>
 <td style="text-align: left;">dynamic</td>
 <td style="text-align: left;">Custom key-value pairs that provide additional metadata for the log entry, such as environment or custom tags.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">logName</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The full name of the log (e.g., projects/[PROJECT_ID]/logs/cloudaudit.googleapis.com%2Factivity), showing the type and location of the log data.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">LogType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The category or type of log, such as GKEAudit, indicating the origin of the log data.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">operation</td>
+<td style="text-align: left;">Operation</td>
 <td style="text-align: left;">dynamic</td>
 <td style="text-align: left;">Contains information about an operation associated with the log, such as operation ID and producer.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">protoPayload</td>
+<td style="text-align: left;">ProtoPayload</td>
 <td style="text-align: left;">dynamic</td>
 <td style="text-align: left;">A structured representation of the audit log entry using the Protobuf format. Contains detailed audit event data such as method name, status, and authentication info.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">receiveTimestamp</td>
+<td style="text-align: left;">ReceiveTimestamp</td>
 <td style="text-align: left;">datetime</td>
 <td style="text-align: left;">The time when the log entry was received by the logging system.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">resource</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">severity</td>
+<td style="text-align: left;">Severity</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The severity level of the log entry (e.g., INFO, WARNING, ERROR). Indicates the importance or impact of the event.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SourceSystem</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">TenantId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The Log Analytics workspace ID</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">TimeGenerated</td>
 <td style="text-align: left;">datetime</td>
 <td style="text-align: left;">The timestamp indicating when the log event was created or generated by the source system.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">timestamp</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">Type</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The name of the table</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 </tbody>
 </table>

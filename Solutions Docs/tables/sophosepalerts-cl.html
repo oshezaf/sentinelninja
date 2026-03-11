@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>SophosEPAlerts_CL</h1>
@@ -32,8 +35,8 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (14 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20Endpoint%20Protection/Data%20Connectors/SophosEP_ccp/SophosEP_DCR.json">Data Collection Rule definition</a></p>
+<h2>Schema (18 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SophosEPAlerts_CL.json">KQL validation test schema</a></p>
 <table id="schema-table">
 <thead>
 <tr>
@@ -43,11 +46,11 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">created_at</td>
+<td style="text-align: left;">Created</td>
 <td style="text-align: left;">datetime</td>
 </tr>
 <tr>
-<td style="text-align: left;">customer_id</td>
+<td style="text-align: left;">CustomerId</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
@@ -59,11 +62,39 @@
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
+<td style="text-align: left;">DvcAction</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DvcHostname</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
 <td style="text-align: left;">event_service_event_id</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">id</td>
+<td style="text-align: left;">EventEndTime</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventOriginalUid</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventProduct</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventSeverity</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventVendor</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
@@ -71,31 +102,19 @@
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">location</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">severity</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">source</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">threat</td>
+<td style="text-align: left;">Source</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
 <td style="text-align: left;">threat_cleanable</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
-<td style="text-align: left;">type</td>
+<td style="text-align: left;">ThreatName</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">when</td>
+<td style="text-align: left;">TimeGenerated</td>
 <td style="text-align: left;">datetime</td>
 </tr>
 </tbody>

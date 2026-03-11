@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>ASimNetworkSessionLogs</h1>
@@ -65,15 +68,14 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (237 columns)</h2>
-<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimnetworksessionlogs">Azure Monitor documentation</a> · <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Carbon%20Black%20Cloud/Data%20Connectors/VMwareCarbonBlackCloud_ccp/CarbonBlack_DCR.json">Data Collection Rule definition</a></p>
+<h2>Schema (146 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimnetworksessionlogs">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
 <tr>
 <th style="text-align: left;">Column Name</th>
 <th style="text-align: left;">Type</th>
 <th style="text-align: left;">Description</th>
-<th style="text-align: left;">Source</th>
 </tr>
 </thead>
 <tbody>
@@ -81,1423 +83,731 @@
 <td style="text-align: left;">_BilledSize</td>
 <td style="text-align: left;">real</td>
 <td style="text-align: left;">The record size in bytes</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">_IsBillable</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">_ResourceId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">_SubscriptionId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">action</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">action_s</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">AdditionalFields</td>
 <td style="text-align: left;">dynamic</td>
 <td style="text-align: left;">Additional information, represented using key/value pairs provided by the source which do not map to ASim.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">alert_id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">backend_timestamp</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">childproc_cmdline</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">childproc_guid</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">childproc_hash</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">childproc_name</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">childproc_pid</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">childproc_publisher</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">childproc_reputation</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">childproc_username</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">crossproc_action</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">crossproc_api</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">crossproc_guid</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">crossproc_hash</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">crossproc_name</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">crossproc_publisher</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">crossproc_reputation</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">crossproc_target</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">device_external_ip</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">device_group</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">device_id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">device_name</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">device_os</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">device_timestamp</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstAppId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The ID of the destination application, as reported by the reporting device.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstAppName</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The name of the destination application.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstAppType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of the destination application.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstBytes</td>
 <td style="text-align: left;">long</td>
 <td style="text-align: left;">The number of bytes sent from the destination to the source for the connection or session. If the event is aggregated, DstBytes is the sum over all aggregated sessions.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstDescription</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">A descriptive text associated with the destination.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstDeviceType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of the destination device.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstDomain</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The domain of the destination device.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstDomainType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of DstDomain.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstDvcId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The ID of the destination device.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstDvcIdType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of DstDvcId.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstFQDN</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The destination device hostname, including domain information when available.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstGeoCity</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The city associated with the destination IP address.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstGeoCountry</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The country associated with the destination IP address.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstGeoLatitude</td>
 <td style="text-align: left;">real</td>
 <td style="text-align: left;">The latitude of the geographical coordinate associated with the destination IP address.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstGeoLongitude</td>
 <td style="text-align: left;">real</td>
 <td style="text-align: left;">The longitude of the geographical coordinate associated with the destination IP address.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstGeoRegion</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The region, or state, within a country associated with the destination IP address.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstHostname</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The destination device hostname, excluding domain information.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstInterfaceGuid</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The GUID of the network interface used on the destination device.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstInterfaceName</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The network interface used for the connection or session by the destination device.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstIpAddr</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The IP address of the connection or session destination.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstMacAddr</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The MAC address of the network interface used for the connection or session by the destination device.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstNatIpAddr</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The DstNatIpAddr represents either of: The original address of the destination device if network address translation was used or the IP address used by the intermediary device for communication with the source.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstNatPortNumber</td>
 <td style="text-align: left;">int</td>
 <td style="text-align: left;">If reported by an intermediary NAT device, the port used by the NAT device for communication with the source.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstOriginalUserType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The original destination user type, if provided by the source.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstPackets</td>
 <td style="text-align: left;">long</td>
 <td style="text-align: left;">The number of packets sent from the destination to the source for the connection or session. The meaning of a packet is defined by the reporting device. If the event is aggregated, DstPackets is the sum over all aggregated sessions.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstPortNumber</td>
 <td style="text-align: left;">int</td>
 <td style="text-align: left;">The destination IP port.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstSubscriptionId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The cloud platform subscription ID the destination device belongs to. DstSubscriptionId map to a subscription ID on Azure and to an account ID on AWS.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstUserId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">A machine-readable, alphanumeric, unique representation of the destination user.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstUserIdType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of the ID stored in the DstUserId field.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstUsername</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The destination username, including domain information when available. Use the simple form only if domain information isn't available.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstUsernameType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Specifies the type of the username stored in the DstUsername field.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstUserType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of destination user.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstVlanId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The VLAN ID related to the destination device.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstZone</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The network zone of the destination, as defined by the reporting device.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Dvc</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">A unique identifier of the device on which the event occurred or which reported the event.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DvcAction</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The action taken on the network session.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DvcDescription</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">A descriptive text associated with the device. For example: Primary Domain Controller.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DvcDomain</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The domain of the device reporting the event.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DvcDomainType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of DvcDomain. Possible values include 'Windows' and 'FQDN'.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DvcFQDN</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The hostname of the device on which the event occurred or which reported the event.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DvcHostname</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The hostname of the device reporting the event.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DvcId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The unique ID of the device on which the event occurred or which reported the event.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DvcIdType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of DvcId.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DvcInboundInterface</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">If reported by an intermediary device, the network interface used by the NAT device for the connection to the source device.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DvcInterface</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The network interface on which data was captured. This field is typically relevant to network related activity which is captured by an intermediate or tap device.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DvcIpAddr</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The IP Address of the device reporting the event.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DvcMacAddr</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The MAC address of the device on which the event occurred or which reported the event. Example: 00:1B:44:11:3A:B7.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DvcOriginalAction</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The original DvcAction as provided by the reporting device.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DvcOs</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The operating system running on the device reporting the event.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DvcOsVersion</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The version of the operating system on the device reporting the event.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DvcOutboundInterface</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">If reported by an intermediary device, the network interface used by the NAT device for the connection to the destination device.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DvcSubscriptionId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The cloud platform subscription ID the device belongs to. DvcSubscriptionId map to a subscription ID on Azure and to an account ID on AWS.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DvcZone</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The network on which the event occurred or which reported the event. The zone is defined by the reporting device.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">event_description</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">event_id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">event_origin</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventCount</td>
 <td style="text-align: left;">int</td>
 <td style="text-align: left;">This value is used when the source supports aggregation, and a single record may represent multiple events.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventEndTime</td>
 <td style="text-align: left;">datetime</td>
 <td style="text-align: left;">The time in which the event ended. If the source supports aggregation and the record represents multiple events, the time that the last event was generated. If not provided by the source record, this field aliases the TimeGenerated field.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventMessage</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">A general message or description.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventOriginalResultDetails</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The original result details provided by the source. This value is used to derive EventResultDetails, which should have only one of the values documented for each schema.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventOriginalSeverity</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The original severity as provided by the reporting device. This value is used to derive EventSeverity.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventOriginalSubType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The original event subtype or ID, if provided by the source. For example, this field will be used to store the original Windows logon type. This value is used to derive EventSubType, which should have only one of the values documented for each schema.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventOriginalType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The original event type or ID, if provided by the source.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventOriginalUid</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">A unique ID of the original record, if provided by the source.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventProduct</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The product generating the event.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventProductVersion</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The version of the product generating the event.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventReportUrl</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">A URL provided in the event for a resource that provides more information about the event.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventResult</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The outcome of the event, represented by one of the following values: Success, Partial, Failure, NA (Not Applicable). The value may not be provided directly by the sources, in which case it is derived from other event fields, for example, the EventResultDetails field.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventResultDetails</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Reason or details for the result reported in the EventResult field.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventSchemaVersion</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The version of the schema.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventSeverity</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The severity of the event. Valid values are: Informational, Low, Medium, or High.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventStartTime</td>
 <td style="text-align: left;">datetime</td>
 <td style="text-align: left;">The time in which the event started. If the source supports aggregation and the record represents multiple events, the time that the first event was generated. If not provided by the source record, this field aliases the TimeGenerated field.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventSubType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Additional description of the event type, if applicable.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The operation reported by the record.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventVendor</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The vendor of the product generating the event.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">fileless_scriptload_cmdline</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">fileless_scriptload_cmdline_length</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">fileless_scriptload_hash</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">filemod_hash</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">filemod_name</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">local_ip</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">local_port</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_application_protocol</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_bytes_received</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_bytes_sent</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_community_id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_domain</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_first_packet_timestamp</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_inbound</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_ja3_local_fingerprint</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_ja3_local_fingerprint_fields</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_ja3_remote_fingerprint</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_ja3_remote_fingerprint_fields</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_last_packet_timestamp</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_protocol</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_proxy_domain</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_proxy_ip</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_proxy_port</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_remote_device_id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_remote_device_name</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_request_headers</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_request_method</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_request_url</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_response_headers</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_response_status_code</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_server_name_indication</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_tls_certificate_issuer_name</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_tls_certificate_subject_name</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_tls_cipher</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">netconn_tls_version</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">NetworkApplicationProtocol</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The application layer protocol used by the connection or session.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">NetworkBytes</td>
 <td style="text-align: left;">long</td>
 <td style="text-align: left;">Number of bytes sent in both directions. If both BytesReceived and BytesSent exist, BytesTotal should equal their sum. If the event is aggregated, NetworkBytes is the sum over all aggregated sessions.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">NetworkConnectionHistory</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">TCP flags and other potential IP header information.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">NetworkDirection</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The direction of the connection or session.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">NetworkDuration</td>
 <td style="text-align: left;">int</td>
 <td style="text-align: left;">The amount of time, in milliseconds, for the completion of the network session or connection.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">NetworkIcmpCode</td>
 <td style="text-align: left;">int</td>
 <td style="text-align: left;">For an ICMP message, the ICMP message type numeric value as described in RFC 2780 for IPv4 network connections, or in RFC 4443 for IPv6 network connections.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">NetworkIcmpType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">For an ICMP message, the ICMP message type text representation, as described in RFC 2780 for IPv4 network connections, or in RFC 4443 for IPv6 network connections.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">NetworkPackets</td>
 <td style="text-align: left;">long</td>
 <td style="text-align: left;">The number of packets sent in both directions. If both PacketsReceived and PacketsSent exist, BytesTotal should equal their sum. The meaning of a packet is defined by the reporting device. If the event is aggregated, NetworkPackets is the sum over all aggregated sessions.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">NetworkProtocol</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The IP protocol used by the connection or session as listed in IANA protocol assignment, which is typically TCP, UDP, or ICMP.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">NetworkProtocolVersion</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The version of NetworkProtocol.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">NetworkRuleName</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The name or ID of the rule by which DvcAction was decided upon.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">NetworkRuleNumber</td>
 <td style="text-align: left;">int</td>
 <td style="text-align: left;">The number of the rule by which DvcAction was decided upon.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">NetworkSessionId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The session identifier as reported by the reporting device.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">org_key</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">parent_cmdline</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">parent_guid</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">parent_hash</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">parent_path</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">parent_pid</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">parent_reputation</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">process_cmdline</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">process_duration</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">process_fork_pid</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">process_guid</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">process_hash</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">process_path</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">process_path_s</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">process_pid</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">process_pid_d</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">process_publisher</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">process_reputation</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">process_terminated</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">process_username</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">process_username_s</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">remote_ip</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">remote_port</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">schema</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">sensor_action</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">SourceSystem</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcAppId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The ID of the source application, as reported by the reporting device.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcAppName</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The name of the source application.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcAppType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of the source application.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcBytes</td>
 <td style="text-align: left;">long</td>
 <td style="text-align: left;">The number of bytes sent from the source to the destination for the connection or session. If the event is aggregated, SrcBytes is the sum over all aggregated sessions.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcDescription</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">A descriptive text associated with the source.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcDeviceType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of the source device.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcDomain</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The domain of the source device.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcDomainType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of SrcDomain.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcDvcId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The ID of the source device.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcDvcIdType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of SrcDvcId.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcFQDN</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The source device hostname, including domain information when available.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcGeoCity</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The city associated with the source IP address.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcGeoCountry</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The country associated with the source IP address.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcGeoLatitude</td>
 <td style="text-align: left;">real</td>
 <td style="text-align: left;">The latitude of the geographical coordinate associated with the source IP address.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcGeoLongitude</td>
 <td style="text-align: left;">real</td>
 <td style="text-align: left;">The longitude of the geographical coordinate associated with the source IP address.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcGeoRegion</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The region within a country associated with the source IP address.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcHostname</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The source device hostname, excluding domain information. If no device name is available, may store the relevant IP address.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcInterfaceGuid</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The GUID of the network interface used on the source device.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcInterfaceName</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The network interface used for the connection or session by the source device.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcIpAddr</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The IP address from which the connection or session originated.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcMacAddr</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The MAC address of the network interface from which the connection or session originated.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcNatIpAddr</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The SrcNatIpAddr represents either of: The original address of the source device if network address translation was used or the IP address used by the intermediary device for communication with the destination.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcNatPortNumber</td>
 <td style="text-align: left;">int</td>
 <td style="text-align: left;">If reported by an intermediary NAT device, the port used by the NAT device for communication with the destination.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcOriginalUserType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The original destination user type, if provided by the by the reporting device.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcPackets</td>
 <td style="text-align: left;">long</td>
 <td style="text-align: left;">The number of packets sent from the source to the destination for the connection or session. The meaning of a packet is defined by the reporting device. If the event is aggregated, SrcPackets is the sum over all aggregated sessions.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcPortNumber</td>
 <td style="text-align: left;">int</td>
 <td style="text-align: left;">The IP port from which the connection originated. Might not be relevant for a session comprising multiple connections.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcSubscriptionId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The cloud platform subscription ID the source device belongs to. SrcSubscriptionId map to a subscription ID on Azure and to an account ID on AWS.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcUserId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">A machine-readable, alphanumeric, unique representation of the source user.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcUserIdType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of the ID stored in the SrcUserId field.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcUsername</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The source username, including domain information when available.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcUsernameType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Specifies the type of the username stored in the SrcUsername field.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcUserType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of the source user.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcVlanId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The VLAN ID related to the source device.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcZone</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The network zone of the source, as defined by the reporting device.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">target_cmdline</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">TcpFlagsAck</td>
 <td style="text-align: left;">bool</td>
 <td style="text-align: left;">The TCP ACK flag reported. The acknowledgment flag is used to acknowledge the successful receipt of a packet. As we can see from the diagram above, the receiver sends an ACK as well as a SYN in the second step of the three way handshake process to tell the sender that it received its initial packet.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">TcpFlagsFin</td>
 <td style="text-align: left;">bool</td>
 <td style="text-align: left;">The TCP FIN flag reported. The finished flag means there is no more data from the sender. Therefore, it is used in the last packet sent from the sender.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">TcpFlagsPsh</td>
 <td style="text-align: left;">bool</td>
 <td style="text-align: left;">The TCP PSH flag reported. The push flag is somewhat similar to the URG flag and tells the receiver to process these packets as they are received instead of buffering them.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">TcpFlagsRst</td>
 <td style="text-align: left;">bool</td>
 <td style="text-align: left;">The TCP RST flag reported. The reset flag gets sent from the receiver to the sender when a packet is sent to a particular host that was not expecting it.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">TcpFlagsSyn</td>
 <td style="text-align: left;">bool</td>
 <td style="text-align: left;">The TCP SYN flag reported. The synchronisation flag is used as a first step in establishing a three way handshake between two hosts. Only the first packet from both the sender and receiver should have this flag set.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">TcpFlagsUrg</td>
 <td style="text-align: left;">bool</td>
 <td style="text-align: left;">The TCP URG flag reported. The urgent flag is used to notify the receiver to process the urgent packets before processing all other packets. The receiver will be notified when all known urgent data has been received. See RFC 6093 for more details.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">TenantId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The Log Analytics workspace ID</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ThreatCategory</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The category of the threat or malware identified in the network session.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ThreatConfidence</td>
 <td style="text-align: left;">int</td>
 <td style="text-align: left;">The confidence level of the threat identified, normalized to a value between 0 and a 100.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ThreatField</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The field for which a threat was identified. The value is either SrcIpAddr, DstIpAddr, Domain, or DnsResponseName.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ThreatFirstReportedTime</td>
 <td style="text-align: left;">datetime</td>
 <td style="text-align: left;">The first time the IP address or domain were identified as a threat.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ThreatId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The ID of the threat or malware identified in the network session.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ThreatIpAddr</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">An IP address for which a threat was identified. The field ThreatField contains the name of the field ThreatIpAddr represents.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ThreatIsActive</td>
 <td style="text-align: left;">bool</td>
 <td style="text-align: left;">True ID the threat identified is considered an active threat.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ThreatLastReportedTime</td>
 <td style="text-align: left;">datetime</td>
 <td style="text-align: left;">The last time the IP address or domain were identified as a threat.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ThreatName</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The name of the threat or malware identified in the network session.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ThreatOriginalConfidence</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The original confidence level of the threat identified, as reported by the reporting device.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ThreatOriginalRiskLevel</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The risk level as reported by the reporting device.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ThreatRiskLevel</td>
 <td style="text-align: left;">int</td>
 <td style="text-align: left;">The risk level associated with the session. The level is a number between 0 to 100.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">TimeGenerated</td>
 <td style="text-align: left;">datetime</td>
 <td style="text-align: left;">The timestamp (UTC) reflecting the time in which the event was generated.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">type</td>
+<td style="text-align: left;">Type</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The name of the table</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">version</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 </tbody>
 </table>

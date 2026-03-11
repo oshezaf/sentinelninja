@@ -10,21 +10,24 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
-## Schema (9 columns)
+## Schema (12 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro/Data%20Connectors/MiroContentLogs_CCF/MiroContentLogs_DCR.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro%5CData%20Connectors%5CMiroContentLogs_CCF/MiroContentLogs_Table.json)
 
-| Column Name | Type |
-|:------------|:-----|
-| actionTime | string |
-| actionType | string |
-| actor | dynamic |
-| contentId | string |
-| id | string |
-| itemId | string |
-| itemType | string |
-| relationships | dynamic |
-| state | dynamic |
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| actionTime | datetime | Timestamp when the action was performed |
+| actionType | string | Type of action performed (create, update, delete, etc.) |
+| actor_email | string | Email address of the user who performed the action |
+| actor_id | string | Unique identifier of the user who performed the action |
+| actor_name | string | Name of the user who performed the action |
+| contentId | string | Unique identifier of the content affected |
+| id | string | Unique identifier of the content log event |
+| itemId | string | Unique identifier of the item affected |
+| itemType | string | Type of the content item |
+| relationships | dynamic | Relationships of the content item in JSON format |
+| state | dynamic | State information of the content item in JSON format |
+| TimeGenerated | datetime | The timestamp (UTC) reflecting the time when the event was ingested |
 
 ## Solutions (1)
 

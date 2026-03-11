@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>ABAPAuditLog</h1>
@@ -61,15 +64,14 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (61 columns)</h2>
-<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/abapauditlog">Azure Monitor documentation</a> · <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20S4%20Cloud%20Public%20Edition/Data%20Connectors/SAPS4PublicPollerConnector/SAPS4Public_DCR.json">Data Collection Rule definition</a></p>
+<h2>Schema (43 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/abapauditlog">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
 <tr>
 <th style="text-align: left;">Column Name</th>
 <th style="text-align: left;">Type</th>
 <th style="text-align: left;">Description</th>
-<th style="text-align: left;">Source</th>
 </tr>
 </thead>
 <tbody>
@@ -77,367 +79,216 @@
 <td style="text-align: left;">_BilledSize</td>
 <td style="text-align: left;">real</td>
 <td style="text-align: left;">The record size in bytes</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">_IsBillable</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">AbapProgramName</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The AbapProgramName is a four-character alphanumeric code that is used identify a specific program within the SAP system.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">AgentId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Unique agent or integration suite identifier.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">AlertSeverity</td>
 <td style="text-align: left;">real</td>
 <td style="text-align: left;">The AlertSeverity is a number between 0 and 255; the larger the number, the greater the severity.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">AlertSeverityText</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The AlertSeverityText refers to the text description associated with a specific alert or notification severity level. It provides a detailed explanation of the severity level and is used in various SAP transactions and reports.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">AlertValue</td>
 <td style="text-align: left;">real</td>
 <td style="text-align: left;">The AlertValue represents the importance of the message of a log attribute, characterized by color and severity.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">AuditClassId</td>
 <td style="text-align: left;">real</td>
 <td style="text-align: left;">The AuditClassId is a numeric identifier used to classify different types of audit events in SAP. It helps group similar events together and is used in various transactions and reports to provide information about audit events and to help with auditing and compliance requirements.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ClientId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The ClientId is a three-digit number that identifies a specific client within an SAP system. The ClientId is used in various SAP transactions and configuration settings to identify the client and ensure that the correct client is being accessed or configured.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Computer</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The Computer refers to the name or IP address of the user's machine. It is used to identify the machine from which a specific activity or event was performed.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">counter</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">Email</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The Email refers to the email address associated with a specific user. It is used to identify the user via email within the SAP system.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">email_adress</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">eventID</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">Host</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The Host refers to the name of the computer or server on which the SAP system is running. It is used to identify and locate the SAP system within a network.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Instance</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The Instance refers to a specific installation of an SAP system on a server. An SAP system can have multiple instances running on the same server, each with its own set of processes and resources. The Instance is identified by a unique name that is set during the installation of the SAP system, following syntax: <HOST><SYSID><SYSNR>.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">log_tstmp</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">MessageClass</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The MessageClass is a grouping or category for specific messages or log entries used to organize and classify messages and log entries within an SAP system.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">MessageContainerId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The MessageContainerId is a unique identifier for a specific message container, which is a logical grouping of related messages or log entries within an SAP system.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">MessageId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The MessageId is a unique identifier for a specific message or log entry used to identify and track messages and log entries within an SAP system.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">MessageText</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The MessageText is the text of a specific message or log entry. It provides information about the event or issue that is being logged and is used in various SAP transactions and reports to provide context and details about specific messages or log entries.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">MonitoringObjectName</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The MonitoringObjectName is the name of the object being monitored by a specific monitoring activity. It is used in various SAP monitoring tools and reports to provide information about the status and performance of the monitored object.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">MonitorShortName</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The MonitorShortName is the short name of the MTE(Monitoring Tree Element) in which the alert occurred.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">param_a</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">param_b</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">param_c</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">param_d</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">RemoteIpCountry</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The country of the TerminalIpV6 according to the GEO information at the time of the record ingestion.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">RemoteIpLatitude</td>
 <td style="text-align: left;">real</td>
 <td style="text-align: left;">The Latitude of the TerminalIpV6 according to the GEO information at the time of the record ingestion.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">RemoteIpLongitude</td>
 <td style="text-align: left;">real</td>
 <td style="text-align: left;">The Longitude of the TerminalIpV6 according to the GEO information at the time of the record ingestion.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">rsau_text</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">SalDateChar8</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The SalDateChar8 is the date the event occured in char8 format (yyyyMMdd) eg: 20190101.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SalIpAddress</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The SALIpAddress refers to the IP address associated with a specific user or system that generated a specific log entry.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SalTimeChar6</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The SalTimeChar6 is the time the event occured in char6 format (hhMMss) eg: 110804.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SapProcessType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The SapProcessType refers to the type of process that is being executed within the SAP system. This can include various types of processes such as background jobs, dialog processes, or update processes.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SapWorkProcessName</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The SapWorkProcessName refers to the name of a specific work process within the SAP system used to identify and monitor specific work processes. It is typically a unique alphanumeric code.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">sid</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">slgmand</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">slgrepna</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">slgtc</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">SourceSystem</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SystemId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The SystemId is a unique identifier for a specific SAP system. It is a three-character alphanumeric code that is used to distinguish between different SAP systems.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SystemNumber</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The SystemNumber is a two-digit number that identifies a specific SAP system. It is set during the installation of an SAP system and cannot be changed afterwards. The SystemNumber is used in various SAP transactions and configuration settings to identify the system and ensure that the correct system is being accessed or configured.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SystemRole</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The SAP system's role.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SystemUniqueId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Unique system identifier.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">TenantId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The Log Analytics workspace ID</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">terminal_name</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">TerminalIpV6</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The TerminalIPv6 refers to the IPv6 address associated with the user's terminal or device. It is used to identify the location and origin of specific activities or events performed by the user within the SAP system.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">TimeGenerated</td>
 <td style="text-align: left;">datetime</td>
 <td style="text-align: left;">Date and time when the record was generated</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">TransactionCode</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">the TransactionCode is a unique identifier for a specific SAP transaction used to identify and execute a specific transaction within the SAP system. It is typically a four-character alphanumeric code and can be used in various SAP transactions and reports.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Type</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The name of the table</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">UpdatedOn</td>
 <td style="text-align: left;">datetime</td>
 <td style="text-align: left;">The date and time of the event occured in the SAP system in UTC format.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">User</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The User who performed the a specific event or activity.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">user_fullname</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">useralias</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">UserDescription</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">UserID</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">Variable1</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The Variable1 used by the SAP system for additional information regarding the event or activity that was performed.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Variable2</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The Variable2 used by the SAP system for additional information regarding the event or activity that was performed.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Variable3</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The Variable3 used by the SAP system for additional information regarding the event or activity that was performed.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Variable4</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The Variable4 used by the SAP system for additional information regarding the event or activity that was performed.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 </tbody>
 </table>

@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>MiroContentLogs_CL</h1>
@@ -32,51 +35,76 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (9 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro/Data%20Connectors/MiroContentLogs_CCF/MiroContentLogs_DCR.json">Data Collection Rule definition</a></p>
+<h2>Schema (12 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro%5CData%20Connectors%5CMiroContentLogs_CCF/MiroContentLogs_Table.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
 <tr>
 <th style="text-align: left;">Column Name</th>
 <th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;">actionTime</td>
-<td style="text-align: left;">string</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp when the action was performed</td>
 </tr>
 <tr>
 <td style="text-align: left;">actionType</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of action performed (create, update, delete, etc.)</td>
 </tr>
 <tr>
-<td style="text-align: left;">actor</td>
-<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">actor_email</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Email address of the user who performed the action</td>
+</tr>
+<tr>
+<td style="text-align: left;">actor_id</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the user who performed the action</td>
+</tr>
+<tr>
+<td style="text-align: left;">actor_name</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the user who performed the action</td>
 </tr>
 <tr>
 <td style="text-align: left;">contentId</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the content affected</td>
 </tr>
 <tr>
 <td style="text-align: left;">id</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the content log event</td>
 </tr>
 <tr>
 <td style="text-align: left;">itemId</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the item affected</td>
 </tr>
 <tr>
 <td style="text-align: left;">itemType</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the content item</td>
 </tr>
 <tr>
 <td style="text-align: left;">relationships</td>
 <td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Relationships of the content item in JSON format</td>
 </tr>
 <tr>
 <td style="text-align: left;">state</td>
 <td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">State information of the content item in JSON format</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) reflecting the time when the event was ingested</td>
 </tr>
 </tbody>
 </table>

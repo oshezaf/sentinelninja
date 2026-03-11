@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>GKEAPIServer</h1>
@@ -53,15 +56,14 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (39 columns)</h2>
-<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gkeapiserver">Azure Monitor documentation</a> · <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Kubernetes%20Engine/Data%20Connectors/GoogleKubernetesEngineLogs_ccp/GoogleKubernetesEngineLogs_DCR.json">Data Collection Rule definition</a></p>
+<h2>Schema (35 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gkeapiserver">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
 <tr>
 <th style="text-align: left;">Column Name</th>
 <th style="text-align: left;">Type</th>
 <th style="text-align: left;">Description</th>
-<th style="text-align: left;">Source</th>
 </tr>
 </thead>
 <tbody>
@@ -69,235 +71,176 @@
 <td style="text-align: left;">_BilledSize</td>
 <td style="text-align: left;">real</td>
 <td style="text-align: left;">The record size in bytes</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">_IsBillable</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ApfAdditionalLatency</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Additional latency due to APF throttling.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ApfExecutionTime</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Time taken to execute the request excluding APF wait time.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ApfFs</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">APF Flow Schema.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ApfFSeats</td>
 <td style="text-align: left;">int</td>
 <td style="text-align: left;">Final number of seats used after adjustments.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ApfISeats</td>
 <td style="text-align: left;">int</td>
 <td style="text-align: left;">Number of seats initially allocated by APF.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ApfPl</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">API Priority and Fairness (APF) Priority Level.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">AuditID</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Unique identifier for the audit log entry.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ClusterName</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Name of the Kubernetes cluster.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ComponentLocation</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Region or zone where the API server is located.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ComponentName</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Name of the GKE component generating the log (typically apiserver).</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ComputeResourceName</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Name of the compute instance or pod.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">HttpVerb</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">HTTP method (e.g., GET, POST, PUT, DELETE).</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">insertId</td>
+<td style="text-align: left;">InsertId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Unique ID for the log entry used to prevent duplication.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">jsonPayload</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">labels</td>
+<td style="text-align: left;">Labels</td>
 <td style="text-align: left;">dynamic</td>
 <td style="text-align: left;">Dynamic field containing various labels associated with the log entry.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Latency</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Total time taken to serve the request.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Location</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">GCP region or zone.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">logName</td>
+<td style="text-align: left;">LogName</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Name of the log stream, usually indicating the source.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Message</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The content of the log message.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Pid</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Process ID that generated the log entry.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">ProjectID</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">GCP project ID where the GKE cluster resides.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Protocol</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Protocol used for the request (e.g., HTTP/1.1).</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">receiveTimestamp</td>
+<td style="text-align: left;">ReceiveTimestamp</td>
 <td style="text-align: left;">datetime</td>
 <td style="text-align: left;">Timestamp when GCP Logging received the log.</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">resource</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">ResponseCode</td>
 <td style="text-align: left;">int</td>
 <td style="text-align: left;">HTTP response status code.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
-<td style="text-align: left;">severity</td>
+<td style="text-align: left;">Severity</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Log severity level (e.g., INFO, WARNING, ERROR).</td>
-<td style="text-align: left;">DCR, Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SourceFile</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Source file in the API server codebase where the log originated.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SourceLine</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Line number in the source file.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">sourceLocation</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">SourceSystem</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcIP</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Source IP address of the client that sent the request.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">TenantId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The Log Analytics workspace ID</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">TimeGenerated</td>
 <td style="text-align: left;">datetime</td>
 <td style="text-align: left;">The timestamp indicating when the log event was created or generated by the source system.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">timestamp</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">Type</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The name of the table</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">URI</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Full URI of the API request to the Kubernetes API server.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">UserAgent</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The User-Agent string sent with the request.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 </tbody>
 </table>

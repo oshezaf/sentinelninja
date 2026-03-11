@@ -12,28 +12,27 @@
 
 ## Schema (49 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/Data%20Connectors/NetskopeAlertsEvents_RestAPI_CCP/NetskopeAlertsEvents_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/NetskopeEventsDLP_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| _id | string |
 | access_method | string |
 | acting_user | string |
 | activity | string |
 | app | string |
-| app_session_id | long |
+| app_sessionid | string |
 | assignee | string |
 | bcc | string |
 | cc | string |
 | channel | string |
 | classification | string |
-| connection_id | long |
+| connectionid | string |
 | destination_app | string |
 | destination_instance_id | string |
 | dlp_file | string |
-| dlp_incident_id | long |
+| dlp_incidentid | string |
 | dlp_match_info | dynamic |
-| dlp_parent_id | long |
+| dlp_parentid | string |
 | dst_location | string |
 | exposure | string |
 | file_lang | string |
@@ -44,7 +43,7 @@
 | inline_dlp_match_info | dynamic |
 | instance | string |
 | instance_id | string |
-| latest_incident_id | long |
+| latest_incidentid | string |
 | md5 | string |
 | object | string |
 | object_type | string |
@@ -56,8 +55,9 @@
 | site | string |
 | src_location | string |
 | status | string |
+| TimeGenerated | datetime |
 | timestamp | int |
-| title | string |
+| title_s | string |
 | to_user | string |
 | true_obj_category | string |
 | true_obj_type | string |

@@ -12,17 +12,16 @@
 
 ## Schema (86 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/Data%20Connectors/NetskopeAlertsEvents_RestAPI_CCP/NetskopeAlertsEvents_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/NetskopeEventsConnection_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| _id | string |
 | access_method | string |
 | app | string |
-| app_session_id | long |
+| app_sessionid | string |
 | appcategory | string |
 | browser | string |
-| browser_session_id | long |
+| browser_sessionid | string |
 | browser_version | string |
 | bypass_reason | string |
 | bypass_traffic | string |
@@ -33,9 +32,9 @@
 | conn_duration | int |
 | conn_endtime | int |
 | conn_starttime | int |
-| connection_id | long |
+| connectionid | string |
 | CononicalName | string |
-| count | int |
+| count_i | int |
 | device | string |
 | domain | string |
 | dst_country | string |
@@ -66,7 +65,7 @@
 | policy | string |
 | protocol | string |
 | req_cnt | int |
-| request_id | long |
+| requestid | string |
 | resp_cnt | int |
 | resp_content_len | int |
 | resp_content_type | string |
@@ -90,10 +89,11 @@
 | ssl_decrypt_policy | string |
 | suppression_end_time | int |
 | suppression_start_time | int |
+| TimeGenerated | datetime |
 | timestamp | int |
 | traffic_type | string |
-| transaction_id | long |
-| type | string |
+| transactionid | string |
+| type_s | string |
 | ur_normalized | string |
 | url | string |
 | user | string |

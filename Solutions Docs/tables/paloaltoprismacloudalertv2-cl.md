@@ -13,28 +13,112 @@
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (16 columns)
+## Schema (100 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAltoPrismaCloud/Data%20Connectors/PrismaCloudCSPMLog_CCF/PaloAltoPrismaCloudCSPMLog_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/PaloAltoPrismaCloudAlertV2_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| alertRules | string |
-| alertTime | real |
-| firstSeen | real |
-| history | string |
-| id | string |
-| investigateOptions | string |
-| lastSeen | real |
-| lastUpdated | real |
-| metadata | dynamic |
-| policy | dynamic |
-| policyId | string |
-| reason | string |
-| resource | dynamic |
-| riskDetail | dynamic |
-| saveSearchId | string |
-| status | string |
+| AlertRules | string |
+| AlertTime | datetime |
+| FirstSeen | datetime |
+| History | string |
+| ID | string |
+| InvestigateOptions | string |
+| LastSeen | datetime |
+| Metadata | dynamic |
+| MetadataRemediable | bool |
+| Policy | dynamic |
+| PolicyaiRemediable | bool |
+| PolicyDeleted | bool |
+| PolicyDescription | string |
+| PolicyFindingTypes | string |
+| PolicyhasSearchExecutionSupport | bool |
+| PolicyId | string |
+| PolicyLabels | string |
+| PolicyLastModifiedBy | datetime |
+| PolicyLastModifiedOn | datetime |
+| PolicyName | string |
+| PolicyPolicyId | string |
+| PolicyPolicyType | string |
+| PolicyRecommendation | string |
+| PolicyRemediable | string |
+| PolicyRemediationcliScriptTemplate | string |
+| PolicyRemediationDescription | string |
+| PolicyRemediationImpact | string |
+| PolicySeverity | string |
+| PolicySystemDefault | bool |
+| Reason | string |
+| Resource | dynamic |
+| ResourceAccount | string |
+| ResourceAccountId | string |
+| ResourceAdditionalInfoAccessKeyAge | datetime |
+| ResourceAdditionalInfoInactiveSinceTs | datetime |
+| ResourceCloudAccountGroups | string |
+| ResourceCloudServiceName | string |
+| ResourceDataAccesskey1Active | bool |
+| ResourceDataAccesskey1LastRotated | datetime |
+| ResourceDataAccesskey1LastUsedDate | datetime |
+| ResourceDataAccesskey1LastUsedRegion | string |
+| ResourceDataAccesskey1LastUsedService | string |
+| ResourceDataAccesskey2Active | bool |
+| ResourceDataAccesskey2LastRotated | datetime |
+| ResourceDataAccesskey2LastUsedDate | datetime |
+| ResourceDataAccesskey2LastUsedRegion | string |
+| ResourceDataAccesskey2LastUsedService | string |
+| ResourceDataAdditionalInfo | string |
+| ResourceDataArn | string |
+| ResourceDataAssignIpv6AddressOnCreation | string |
+| ResourceDataAvailabilityZone | string |
+| ResourceDataAvailabilityZoneId | string |
+| ResourceDataBlockPublicAccessStates | string |
+| ResourceDataCert1Active | bool |
+| ResourceDatacert1LastRotated | datetime |
+| ResourceDataCert2Active | bool |
+| ResourceDatacert2LastRotated | datetime |
+| ResourceDatacidrBlock | string |
+| ResourceDataCloudType | string |
+| ResourceDataDefaultForAz | bool |
+| ResourceDataGroupName | string |
+| ResourceDataipPermissions | string |
+| ResourceDataipPermissionsEgress | string |
+| ResourceDataipv6CidrBlockAssociationSet | string |
+| ResourceDataIsShared | bool |
+| ResourceDataMapCustomerOwnedIpOnLaunch | string |
+| ResourceDataMapPublicIpOnLaunch | bool |
+| ResourceDataMfaActive | bool |
+| ResourceDataOwnerId | string |
+| ResourceDataPasswordEnabled | bool |
+| ResourceDatapasswordLastChanged | datetime |
+| ResourceDatapasswordLastUsed | datetime |
+| ResourceDataPasswordNextRotation | datetime |
+| ResourceDataResourceConfigJsonAvailable | bool |
+| ResourceDataResourceDetailsAvailable | bool |
+| ResourceDataResourceTs | datetime |
+| ResourceDataSecurityGroupArn | string |
+| ResourceDataState | string |
+| ResourceDataSubnetArn | string |
+| ResourceDataSubnetId | string |
+| ResourceDataTags | string |
+| ResourceDataUnifiedAssetId | string |
+| ResourceDataUser | string |
+| ResourceDataUserCreationTime | datetime |
+| ResourceDatavpcId | string |
+| ResourceId | string |
+| ResourceName | string |
+| ResourceRegion | string |
+| ResourceRegionId | string |
+| ResourceResourceApiName | string |
+| ResourceResourceType | string |
+| Resourcerrn | string |
+| Resourceurl | string |
+| RiskDetailRating | string |
+| RiskDetailRiskScoreMaxScore | string |
+| RiskDetailRiskScoreScore | string |
+| RiskDetailScore | string |
+| SaveSearchId | string |
+| Status | string |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

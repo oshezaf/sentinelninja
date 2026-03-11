@@ -10,45 +10,53 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
-## Schema (33 columns)
+## Schema (41 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Flare/Data%20Connectors/FlareFireworkEventLogs_ccp/FlareFireworkEventLogs_DCR.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Flare%5CData%20Connectors%5CFlareFireworkEventLogs_ccp/FlareFireworkEventLogs_Table.json)
 
-| Column Name | Type |
-|:------------|:-----|
-| actor | string |
-| alert_content | string |
-| asset_uuids | dynamic |
-| author_id | string |
-| category_name | string |
-| code | dynamic |
-| content | string |
-| content_preview | dynamic |
-| data | dynamic |
-| event_title | string |
-| event_type | string |
-| external_url | string |
-| first_crawled_at | string |
-| highlights | dynamic |
-| id | string |
-| identifiers | dynamic |
-| keyword | string |
-| materialized_at | string |
-| project_name | string |
-| related | dynamic |
-| risk | dynamic |
-| sha | string |
-| sort | string |
-| source | string |
-| source_name | string |
-| tags | dynamic |
-| timestamp | string |
-| timestamp_formatted | string |
-| uid | string |
-| url | string |
-| user_notes | string |
-| user_risk_score | int |
-| victim_name | string |
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| actor | string | Actor/threat actor name |
+| alert_content | string | Content formatted for alerting |
+| asset_uuids | dynamic | List of related asset UUIDs |
+| author_id | string | Author identifier |
+| category_name | string | Category of the event |
+| code | dynamic | Code metadata |
+| content | string | Full content of the event |
+| content_preview | dynamic | Preview of the content |
+| data | dynamic | Additional data payload |
+| event_title | string | Title of the event |
+| event_type | string | Type of the search item |
+| EventOriginalType | string | Original event type (ASIM) |
+| EventOriginalUid | string | Original unique identifier (ASIM) |
+| EventProduct | string | Event product name (ASIM) |
+| EventSchemaVersion | string | Schema version (ASIM) |
+| EventSeverity | string | Severity level: Informational, Low, Medium, High, Critical (ASIM) |
+| EventVendor | string | Event vendor name - Flare (ASIM) |
+| external_url | string | External URL reference |
+| first_crawled_at | string | When the item was first crawled |
+| highlights | dynamic | Highlighted matches in the content |
+| id | string | Unique identifier of the item |
+| identifiers | dynamic | Array of matched identifiers [{id, type, name, query, group}] |
+| keyword | string | Matched keyword |
+| materialized_at | string | When the item was materialized |
+| project_name | string | Project name (for code-related events) |
+| related | dynamic | List of related URLs |
+| risk | dynamic | Risk object containing score |
+| RiskScore | int | Extracted risk score (1-5) |
+| sha | string | Commit SHA (for code-related events) |
+| sort | string |  |
+| source | string | Source identifier |
+| source_name | string | Human-readable source name |
+| tags | dynamic | List of tags |
+| TimeGenerated | datetime | Timestamp when the event was ingested (ASIM) |
+| timestamp | string | Original timestamp from Flare |
+| timestamp_formatted | string | Formatted timestamp string |
+| uid | string | Unique identifier (UID format) |
+| Url | string | Source URL (ASIM) |
+| user_notes | string | User notes on the event |
+| user_risk_score | int | User-assigned risk score override |
+| victim_name | string | Victim name if applicable |
 
 ## Solutions (1)
 

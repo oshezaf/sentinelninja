@@ -28,7 +28,6 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`Syslog`](../tables/syslog.md) | `Facility == "local7"`<br>`ProcessName == "GitLab-Audit-Logs"` | ✓ | ✓ | ✓ |
-| [`impersonationStart`](../tables/impersonationstart.md) |  | ? | ? | ? |
 
 ---
 

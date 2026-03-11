@@ -13,15 +13,15 @@
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (494 columns)
+## Schema (495 columns)
 
-**Source:** Data Collection Rule definition ([1](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloudflare%20CCF/Data%20Connectors/CloudflareLog_CCF/CloudflareLog_DCR.json), [2](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloudflare/Data%20Connectors/CloudflareLog_CCF/CloudflareLog_DCR.json))
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloudflare%5CData%20Connectors%5CCloudflareLog_CCF/CloudflareLog_Table.json)
 
 | Column Name | Type |
 |:------------|:-----|
 | AccountID | string |
 | Action | string |
-| ActionResult | boolean |
+| ActionResult | bool |
 | ActionType | string |
 | ActorEmail | string |
 | ActorID | string |
@@ -29,7 +29,7 @@
 | ActorType | string |
 | AlertID | string |
 | AlertReasons | string |
-| Allowed | boolean |
+| Allowed | bool |
 | AppDomain | string |
 | Application | string |
 | ApplicationIDs | int |
@@ -59,10 +59,10 @@
 | BytesReceived | int |
 | BytesSent | int |
 | CacheCacheStatus | string |
-| CacheReserveUsed | boolean |
+| CacheReserveUsed | bool |
 | CacheResponseBytes | int |
 | CacheResponseStatus | int |
-| CacheTieredFill | boolean |
+| CacheTieredFill | bool |
 | CategoryIDs | int |
 | CategoryNames | string |
 | CC | string |
@@ -130,7 +130,7 @@
 | ColoName | string |
 | Connection | string |
 | ConnectionCloseReason | string |
-| ConnectionReuse | boolean |
+| ConnectionReuse | bool |
 | ConnectTimestamp | string |
 | ContentScanObjResults | string |
 | ContentScanObjSizes | int |
@@ -178,7 +178,7 @@
 | DstIP | string |
 | DstPort | int |
 | EDEErrors | int |
-| EdgeCFConnectingO2O | boolean |
+| EdgeCFConnectingO2O | bool |
 | EdgeColoCode | string |
 | EdgeColoID | int |
 | EdgeEndTimestamp | string |
@@ -252,7 +252,7 @@
 | IPAddress | string |
 | IPDestinationAddress | string |
 | IPDestinationSubnet | string |
-| IpFirewall | boolean |
+| IpFirewall | bool |
 | IPFragmentOffset | int |
 | IPHeaderLength | int |
 | IPMoreFragments | int |
@@ -275,8 +275,8 @@
 | IPv6ExtensionHeaders | string |
 | IPv6FlowLabel | int |
 | IPv6Identification | int |
-| IsIsolated | boolean |
-| IsResponseCached | boolean |
+| IsIsolated | bool |
+| IsResponseCached | bool |
 | JA3Hash | string |
 | JA4 | string |
 | JA4Signals | string |
@@ -287,6 +287,7 @@
 | Location | string |
 | LocationID | string |
 | Logs | string |
+| LogType | string |
 | MatchedCategoryIDs | int |
 | MatchedCategoryNames | string |
 | MatchedIndicatorFeedIDs | int |
@@ -343,7 +344,7 @@
 | PolicyName | string |
 | PostureCheckName | string |
 | PostureCheckType | string |
-| PostureEvaluatedResult | boolean |
+| PostureEvaluatedResult | bool |
 | PostureExpectedJSON | string |
 | PostureReceivedJSON | string |
 | PrivateAppAUD | string |
@@ -358,18 +359,18 @@
 | PTY | string |
 | PurposeJustificationPrompt | string |
 | PurposeJustificationResponse | string |
-| Quarantined | boolean |
+| Quarantined | bool |
 | QueryCategoryIDs | int |
 | QueryCategoryNames | string |
-| QueryDO | boolean |
+| QueryDO | bool |
 | QueryID | string |
 | QueryIndicatorFeedIDs | int |
 | QueryIndicatorFeedNames | string |
 | QueryName | string |
 | QueryNameReversed | string |
-| QueryRD | boolean |
+| QueryRD | bool |
 | QuerySize | int |
-| QueryTCP | boolean |
+| QueryTCP | bool |
 | QueryType | int |
 | QueryTypeName | string |
 | R2Path | string |
@@ -396,8 +397,8 @@
 | ResourceRecords | string |
 | ResourceRecordsJSON | string |
 | ResourceType | string |
-| ResponseCached | boolean |
-| ResponseCachedStale | boolean |
+| ResponseCached | bool |
+| ResponseCachedStale | bool |
 | ResponseHeaders | string |
 | ResponseReason | string |
 | RuleEvaluationDurationMs | int |
@@ -470,6 +471,7 @@
 | TemporaryAccessApprovers | string |
 | TemporaryAccessDuration | int |
 | ThreatCategories | string |
+| TimeGenerated | datetime |
 | Timestamp | string |
 | TimeZone | string |
 | TimeZoneInferredMethod | string |
@@ -477,7 +479,6 @@
 | ToName | string |
 | TransportProtocol | string |
 | TriggeredRuleID | string |
-| Type | string |
 | UDPChecksum | int |
 | UDPPayloadLength | int |
 | UntrustedCertificateAction | string |
@@ -490,7 +491,7 @@
 | UpstreamResponseTimeMs | int |
 | URI | string |
 | URL | string |
-| URLContainsCDNCGIPath | boolean |
+| URLContainsCDNCGIPath | bool |
 | URLHost | string |
 | UserAgent | string |
 | UserEmail | string |
@@ -509,7 +510,7 @@
 | WorkerCPUTime | int |
 | WorkerScriptName | string |
 | WorkerStatus | string |
-| WorkerSubrequest | boolean |
+| WorkerSubrequest | bool |
 | WorkerSubrequestCount | int |
 | WorkerWallTimeUs | int |
 | ZoneName | string |

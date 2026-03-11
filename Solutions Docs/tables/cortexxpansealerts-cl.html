@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>CortexXpanseAlerts_CL</h1>
@@ -45,7 +48,7 @@
 </tbody>
 </table>
 <h2>Schema (76 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Palo%20Alto%20Cortex%20Xpanse%20CCF/Data%20Connectors/CortexXpanse_ccp/CortexXpanse_DCR.json">Data Collection Rule definition</a></p>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Palo%20Alto%20Cortex%20Xpanse%20CCF%5CData%20Connectors%5CCortexXpanse_ccp/CortexXpanse_Table.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
 <tr>
@@ -55,308 +58,308 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">action</td>
+<td style="text-align: left;">Action</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">action_country</td>
+<td style="text-align: left;">ActionCountry</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">action_external_hostname</td>
+<td style="text-align: left;">ActionExternalHostname</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">action_local_ip</td>
+<td style="text-align: left;">ActionLocalIp</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">action_local_ip_v6</td>
+<td style="text-align: left;">ActionLocalIpV6</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">action_local_port</td>
+<td style="text-align: left;">ActionLocalPort</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">action_pretty</td>
+<td style="text-align: left;">ActionPretty</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">action_remote_ip</td>
+<td style="text-align: left;">ActionRemoteIp</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">action_remote_ip_v6</td>
+<td style="text-align: left;">ActionRemoteIpV6</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">action_remote_port</td>
+<td style="text-align: left;">ActionRemotePort</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_id</td>
+<td style="text-align: left;">AlertId</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">alert_type</td>
+<td style="text-align: left;">AlertType</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">asm_alert_categories</td>
+<td style="text-align: left;">AsmAlertCategories</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">asset_identifiers</td>
+<td style="text-align: left;">AssetIdentifiers</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">asset_ids</td>
+<td style="text-align: left;">AssetIds</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">attack_surface_rule_id</td>
+<td style="text-align: left;">AttackSurfaceRuleId</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">attack_surface_rule_name</td>
+<td style="text-align: left;">AttackSurfaceRuleName</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">aws_cloud_tags</td>
+<td style="text-align: left;">AwsCloudTags</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">azure_cloud_tags</td>
+<td style="text-align: left;">AzureCloudTags</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">business_unit_hierarchies</td>
+<td style="text-align: left;">BusinessUnitHierarchies</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">case_id</td>
+<td style="text-align: left;">CaseId</td>
 <td style="text-align: left;">int</td>
 </tr>
 <tr>
-<td style="text-align: left;">category</td>
+<td style="text-align: left;">Category</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">certificate</td>
+<td style="text-align: left;">Certificate</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">certificate_subject_organization</td>
+<td style="text-align: left;">CertificateSubjectOrganization</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">cloud_management_status</td>
+<td style="text-align: left;">CloudManagementStatus</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">cloud_provider</td>
+<td style="text-align: left;">CloudProvider</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">cloud_providers</td>
+<td style="text-align: left;">CloudProviders</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">country_codes</td>
+<td style="text-align: left;">CountryCodes</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">deduplicate_tokens</td>
+<td style="text-align: left;">DeduplicateTokens</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">description</td>
+<td style="text-align: left;">Description</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">detection_timestamp</td>
-<td style="text-align: left;">long</td>
-</tr>
-<tr>
-<td style="text-align: left;">domain_names</td>
+<td style="text-align: left;">DomainNames</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">dynamic_fields</td>
+<td style="text-align: left;">DynamicFields</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">end_match_attempt_ts</td>
-<td style="text-align: left;">long</td>
+<td style="text-align: left;">EndMatchAttemptTs</td>
+<td style="text-align: left;">datetime</td>
 </tr>
 <tr>
-<td style="text-align: left;">endpoint_id</td>
+<td style="text-align: left;">EndpointId</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">event_id</td>
+<td style="text-align: left;">EventId</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">event_timestamp</td>
+<td style="text-align: left;">Events</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventTimestamp</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">event_type</td>
+<td style="text-align: left;">EventType</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">events</td>
+<td style="text-align: left;">ExternalId</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">external_id</td>
+<td style="text-align: left;">ExternallyDetectedVersion</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">externally_detected_version</td>
+<td style="text-align: left;">FilterRuleId</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">filter_rule_id</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">gcp_cloud_tags</td>
+<td style="text-align: left;">GcpCloudTags</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">host_ip</td>
+<td style="text-align: left;">HostIp</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">host_name</td>
+<td style="text-align: left;">HostName</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">image_name</td>
+<td style="text-align: left;">ImageName</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">integration_source</td>
+<td style="text-align: left;">IntegrationSource</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">ipv4_addresses</td>
+<td style="text-align: left;">Ipv4Addresses</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">ipv6_addresses</td>
+<td style="text-align: left;">Ipv6Addresses</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">is_whitelisted</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">IsWhitelisted</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
-<td style="text-align: left;">last_modified_ts</td>
-<td style="text-align: left;">long</td>
+<td style="text-align: left;">LastModifiedTs</td>
+<td style="text-align: left;">datetime</td>
 </tr>
 <tr>
-<td style="text-align: left;">last_observed</td>
-<td style="text-align: left;">long</td>
+<td style="text-align: left;">LastObserved</td>
+<td style="text-align: left;">datetime</td>
 </tr>
 <tr>
-<td style="text-align: left;">local_insert_ts</td>
-<td style="text-align: left;">long</td>
+<td style="text-align: left;">LocalInsertTs</td>
+<td style="text-align: left;">datetime</td>
 </tr>
 <tr>
-<td style="text-align: left;">mac_addresses</td>
+<td style="text-align: left;">MacAddresses</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">malicious_urls</td>
+<td style="text-align: left;">MaliciousUrls</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">matching_service_rule_id</td>
+<td style="text-align: left;">MatchingServiceRuleId</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">matching_status</td>
+<td style="text-align: left;">MatchingStatus</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">mitre_tactic_id_and_name</td>
+<td style="text-align: left;">MitreTacticIdAndName</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">mitre_technique_id_and_name</td>
+<td style="text-align: left;">MitreTechniqueIdAndName</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">name</td>
+<td style="text-align: left;">Name</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">port_number</td>
+<td style="text-align: left;">PortNumber</td>
 <td style="text-align: left;">int</td>
 </tr>
 <tr>
-<td style="text-align: left;">port_protocol</td>
+<td style="text-align: left;">PortProtocol</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">project</td>
+<td style="text-align: left;">ProjectName</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">remediation_guidance</td>
+<td style="text-align: left;">RemediationGuidance</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">resolution_comment</td>
+<td style="text-align: left;">ResolutionComment</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">resolution_status</td>
+<td style="text-align: left;">ResolutionStatus</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">resource_sub_type</td>
+<td style="text-align: left;">ResourceSubType</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">resource_type</td>
+<td style="text-align: left;">ResourceType</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">service_ids</td>
+<td style="text-align: left;">ServiceIds</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">severity</td>
+<td style="text-align: left;">Severity</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">source</td>
+<td style="text-align: left;">Source</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">starred</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">Starred</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
-<td style="text-align: left;">tags</td>
+<td style="text-align: left;">Tags</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">user_name</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserName</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">website_ids</td>
+<td style="text-align: left;">WebsiteIds</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">xpanse_first_observed</td>
-<td style="text-align: left;">long</td>
+<td style="text-align: left;">XpanseFirstObserved</td>
+<td style="text-align: left;">datetime</td>
 </tr>
 </tbody>
 </table>

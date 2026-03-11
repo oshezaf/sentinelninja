@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>MailRiskEventEmails_CL</h1>
@@ -32,39 +35,171 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (6 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MailRisk/Data%20Connectors/MailRisk_CCP/MailRisk_DCR.json">Data Collection Rule definition</a></p>
+<h2>Schema (31 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MailRisk%5CData%20Connectors%5CMailRisk_CCP/table%20-%20MailRiskEmails.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
 <tr>
 <th style="text-align: left;">Column Name</th>
 <th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">company_id</td>
+<td style="text-align: left;">AssessedAt</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) when the email was assessed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Assessments</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">The assessments related to the email.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Attachments</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">The attachments contained in the email.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AttachmentsCount</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;">The number of attachments in the email.</td>
 </tr>
 <tr>
-<td style="text-align: left;">created_at</td>
+<td style="text-align: left;">Category</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The risk category of the email.</td>
 </tr>
 <tr>
-<td style="text-align: left;">email</td>
-<td style="text-align: left;">string</td>
+<td style="text-align: left;">CheckedAt</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) when the email was checked.</td>
 </tr>
 <tr>
-<td style="text-align: left;">email_id</td>
+<td style="text-align: left;">CompanyId</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;">The unique identifier for the company.</td>
 </tr>
 <tr>
-<td style="text-align: left;">event</td>
+<td style="text-align: left;">ContentStatus</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The content status of the email.</td>
 </tr>
 <tr>
-<td style="text-align: left;">event_id</td>
+<td style="text-align: left;">EventType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FeedbackProvided</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if feedback was provided for the email.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FeedbackRequested</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if feedback was requested for the email.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FromEmail</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The email address of the sender.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FromName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the sender.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Headers</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">The headers of the email.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Id</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;">The unique identifier for the email.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Links</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">The links contained in the email.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LinksCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The number of links in the email.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MessageId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The message identifier of the email.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OriginatingIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The originating IP address of the email.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReplyTo</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The reply-to email address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReportedAt</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) when the email was reported.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReportedRisk</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The reported risk score for the email.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReporterDomain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The domain of the reporter.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Risk</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The risk level assigned to the email.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RiskSource</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source of the risk assessment.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SentAt</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) when the email was sent.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SizeBytes</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The size of the email in bytes.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SpamScore</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The spam score assigned to the email.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SPF</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The SPF (Sender Policy Framework) result for the email.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Subject</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The subject of the email.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) reflecting the time in which the event was generated.</td>
 </tr>
 </tbody>
 </table>

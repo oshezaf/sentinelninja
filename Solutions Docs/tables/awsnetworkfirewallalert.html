@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>AWSNetworkFirewallAlert</h1>
@@ -53,15 +56,14 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (34 columns)</h2>
-<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awsnetworkfirewallalert">Azure Monitor documentation</a> · <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services%20NetworkFirewall/Data%20Connectors/AWSNetworkFirewallLogs_CCP/AWSNetworkFirewallLog_DCR.json">Data Collection Rule definition</a></p>
+<h2>Schema (30 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awsnetworkfirewallalert">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
 <tr>
 <th style="text-align: left;">Column Name</th>
 <th style="text-align: left;">Type</th>
 <th style="text-align: left;">Description</th>
-<th style="text-align: left;">Source</th>
 </tr>
 </thead>
 <tbody>
@@ -69,205 +71,151 @@
 <td style="text-align: left;">_BilledSize</td>
 <td style="text-align: left;">real</td>
 <td style="text-align: left;">The record size in bytes</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">_IsBillable</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">AlertAction</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The action taken when an alert was triggered (e.g., allowed, dropped, rejected).</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">AppProto</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The application layer protocol detected.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">availability_zone</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">AvailabilityZone</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The AWS Availability Zone where the firewall instance is located.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Category</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The category of the detected threat or network activity.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DestIp</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The destination IP address of the packet.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">DestPort</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The destination port to which the packet was sent.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Direction</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The direction of the traffic (e.g., inbound, outbound).</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">event</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
-</tr>
-<tr>
-<td style="text-align: left;">event_timestamp</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventTimestamp</td>
 <td style="text-align: left;">datetime</td>
 <td style="text-align: left;">The epoch timestamp of when the event occurred.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of event recorded (e.g., alert, flow, drop, pass).</td>
-<td style="text-align: left;">Azure Monitor docs</td>
-</tr>
-<tr>
-<td style="text-align: left;">firewall_name</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DCR</td>
 </tr>
 <tr>
 <td style="text-align: left;">FirewallName</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The name of the AWS Network Firewall instance generating the log.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">FlowId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">A unique identifier for the network flow related to this event.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">PktSrc</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The source of the packet (e.g., internal, external, firewall rule).</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Proto</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The protocol used (e.g., TCP, UDP, ICMP).</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Rev</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The revision number of the matched Suricata rule.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Severity</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The severity level of the event, typically based on Suricata rule classifications.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Signature</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The name or description of the Suricata rule that triggered the alert.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SignatureId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The unique identifier of the Suricata rule that matched the event.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Sni</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The Server Name Indication (SNI) from TLS traffic.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SourceSystem</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcIp</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The source port from which the packet originated.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcPort</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The source port from which the packet originated.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">TenantId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The Log Analytics workspace ID</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">TimeGenerated</td>
 <td style="text-align: left;">datetime</td>
 <td style="text-align: left;">The timestamp when the log entry was created in AWS Network Firewall.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Timestamp</td>
 <td style="text-align: left;">datetime</td>
 <td style="text-align: left;">The exact timestamp when the event was captured.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">TxId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The transaction ID associated with the specific network flow.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Type</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The name of the table</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">VerdictAction</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The final decision made by the firewall (e.g., pass, drop, alert).</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 <tr>
 <td style="text-align: left;">Version</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The version of the log schema or Suricata rule format used.</td>
-<td style="text-align: left;">Azure Monitor docs</td>
 </tr>
 </tbody>
 </table>

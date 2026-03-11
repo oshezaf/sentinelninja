@@ -14,9 +14,9 @@
 | **Lake-Only Ingestion** | ✗ No |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (21 columns)
+## Schema (19 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyrenThreatIntelligence/Data%20Connectors/CyrenThreatIntel_CCF/Cyren_DCR.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyrenThreatIntelligence%5CData%20Connectors%5CCyrenThreatIntel_CCF/Cyren_Table.json)
 
 | Column Name | Type |
 |:------------|:-----|
@@ -31,14 +31,12 @@
 | ip_s | string |
 | lastSeen_t | datetime |
 | object_type_s | string |
-| payload | dynamic |
 | port_d | int |
 | protocol_s | string |
 | relationships_s | string |
 | risk_d | int |
 | source_s | string |
 | TimeGenerated | datetime |
-| timestamp | datetime |
 | type_s | string |
 | url_s | string |
 

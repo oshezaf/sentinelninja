@@ -5,13 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DruvaInsyncEventsCL &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
-<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+
 </head>
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>DruvaInsyncEvents_CL</h1>
@@ -29,90 +30,6 @@
 <tr>
 <td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
 <td style="text-align: left;">✓ Yes</td>
-</tr>
-</tbody>
-</table>
-<h2>Schema (18 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DruvaDataSecurityCloud/Data%20Connectors/Druva_ccp/Druva_DCR.json">Data Collection Rule definition</a></p>
-<table id="schema-table">
-<thead>
-<tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">clientOS</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">clientVersion</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">eventDetails</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">eventID</td>
-<td style="text-align: left;">int</td>
-</tr>
-<tr>
-<td style="text-align: left;">eventState</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">eventType</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">facility</td>
-<td style="text-align: left;">int</td>
-</tr>
-<tr>
-<td style="text-align: left;">initiator</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">inSyncDataSourceID</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">inSyncDataSourceName</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">inSyncUserEmail</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">inSyncUserID</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">inSyncUserName</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ip</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">profileID</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">profileName</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">severity</td>
-<td style="text-align: left;">int</td>
-</tr>
-<tr>
-<td style="text-align: left;">timestamp</td>
-<td style="text-align: left;">datetime</td>
 </tr>
 </tbody>
 </table>
@@ -142,30 +59,6 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 </div>
-<script>
-$(function() {
-    var t = $('#schema-table');
-    if (!t.length) return;
-    // Add filter row to thead
-    var hdr = t.find('thead');
-    var cols = hdr.find('tr:first th').length;
-    var fr = $('<tr class="filters"></tr>');
-    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
-    hdr.append(fr);
-    // Init DataTable
-    var dt = t.DataTable({
-        paging: false,
-        info: true,
-        orderCellsTop: true,
-        dom: 'frti',
-    });
-    // Per-column filter
-    hdr.find('tr.filters input').each(function(i) {
-        $(this).on('keyup change', function() {
-            dt.column(i).search(this.value).draw();
-        });
-    });
-});
-</script>
+
 </body>
 </html>

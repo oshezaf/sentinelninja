@@ -15,18 +15,18 @@
 
 ## Schema (8 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Proofpoint%20On%20demand%28POD%29%20Email%20Security/Data%20Connectors/ProofPointEmailSecurity_CCP/ProofpointPOD_DCR.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Proofpoint%20On%20demand%28POD%29%20Email%20Security%5CData%20Connectors%5CProofPointEmailSecurity_CCP/ProofpointPOD_Table_MailLog.json)
 
 | Column Name | Type |
 |:------------|:-----|
 | data | string |
+| eventTime | datetime |
 | id | string |
 | metadata | dynamic |
 | pps | dynamic |
 | sm | dynamic |
 | TimeGenerated | datetime |
 | tls | dynamic |
-| ts | string |
 
 ## Solutions (1)
 

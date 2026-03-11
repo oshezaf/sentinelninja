@@ -1,4 +1,4 @@
-# <img src="../images/asim-badge.png" alt="ASIM" height="32"> TeamCymruScout
+# TeamCymruScout
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -12,14 +12,6 @@
 | **Solution** | [Team Cymru Scout](../solutions/team-cymru-scout.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Team%20Cymru%20Scout/Workbooks/TeamCymruScout.json) |
 
-## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
-
-This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
-
-- [`ASimNetworkSessionMD4IoTSensor`](../asim/asimnetworksessionmd4iotsensor.md)
-- [`_ASim_Authentication_MicrosoftSecurityEvents`](../asim/asim-authentication-microsoftsecurityevents.md)
-- [`_ASim_NetworkSession_MD4IoTSensor`](../asim/asimnetworksessionmd4iotsensor.md)
-
 ## Tables Used
 
 This content item queries data from the following tables:
@@ -29,7 +21,6 @@ This content item queries data from the following tables:
 | [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md) |  | ✓ | ✗ | ✓ |
 | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) |  | ✓ | ✗ | ✓ |
 | [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) |  | ✓ | ✗ | ✓ |
-| [`ASIMParsers`](../tables/asimparsers.md) |  | ? | ? | ? |
 | [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) |  | ✓ | ✓ | ✓ |
 | [`ASimAuthenticationEventLogs`](../tables/asimauthenticationeventlogs.md) |  | ✓ | ✓ | ? |
 | [`ASimDhcpEventLogs`](../tables/asimdhcpeventlogs.md) |  | ✓ | ✓ | ? |
@@ -45,7 +36,6 @@ This content item queries data from the following tables:
 | [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) |  | ✓ | ✗ | ✓ |
 | [`AZFWThreatIntel`](../tables/azfwthreatintel.md) |  | ✓ | ✗ | ✓ |
 | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) |  | ✓ | ✓ | ✓ |
-| [`AsimParsersData`](../tables/asimparsersdata.md) |  | ? | ? | ? |
 | [`Audits_Data_CL`](../tables/audits-data-cl.md) |  | ✓ | ✓ | ✓ |
 | [`AzureActivity`](../tables/azureactivity.md) |  | ✗ | ✗ | ✗ |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 |  | ✗ | ✗ | ✗ |
@@ -109,7 +99,6 @@ This content item queries data from the following tables:
 | [`Whois_Data_CL`](../tables/whois-data-cl.md) 🔶 |  | ? | ✓ | ? |
 | [`WindowsEvent`](../tables/windowsevent.md) |  | ✓ | ✓ | ✓ |
 | [`X509_Data_CL`](../tables/x509-data-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`asimParsers`](../tables/asimparsers.md) |  | ? | ? | ? |
 | [`barracuda_CL`](../tables/barracuda-cl.md) 🔶 |  | ? | ✓ | ? |
 | [`meraki_CL`](../tables/meraki-cl.md) |  | ✓ | ✓ | ✓ |
 

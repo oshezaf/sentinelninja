@@ -42,7 +42,7 @@ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 
 This solution provides **2 data connector(s)**:
 
-- [ZeroFox Enterprise - Alerts (Polling CCF)](../connectors/zerofoxalertsdefinition.md)
+- [ZeroFox Enterprise - Alerts (Polling CCF)](../connectors/zerofoxalertsdefinition.md) 🔶
 - [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) 🔶
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
@@ -53,7 +53,7 @@ This solution uses **21 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ZeroFoxAlertPoller_CL`](../tables/zerofoxalertpoller-cl.md) | [ZeroFox Enterprise - Alerts (Polling CCF)](../connectors/zerofoxalertsdefinition.md) | Analytics |
+| [`ZeroFoxAlertPoller_CL`](../tables/zerofoxalertpoller-cl.md) 🔶 | [ZeroFox Enterprise - Alerts (Polling CCF)](../connectors/zerofoxalertsdefinition.md) | Analytics |
 | [`ZeroFox_CTI_C2_CL`](../tables/zerofox-cti-c2-cl.md) 🔶 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
 | [`ZeroFox_CTI_advanced_dark_web_CL`](../tables/zerofox-cti-advanced-dark-web-cl.md) 🔶 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
 | [`ZeroFox_CTI_botnet_CL`](../tables/zerofox-cti-botnet-cl.md) 🔶 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |

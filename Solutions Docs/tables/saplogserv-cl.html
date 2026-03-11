@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>SAPLogServ_CL</h1>
@@ -45,7 +48,7 @@
 </tbody>
 </table>
 <h2>Schema (14 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20LogServ/Data%20Connectors/SAPLogServ_PUSH_CCP/SAPLogServ_DCR.json">Data Collection Rule definition</a></p>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20LogServ%5CData%20Connectors%5CSAPLogServ_PUSH_CCP/table.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
 <tr>
@@ -54,14 +57,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align: left;">_raw</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">_time</td>
-<td style="text-align: left;">real</td>
-</tr>
 <tr>
 <td style="text-align: left;">clz_dir</td>
 <td style="text-align: left;">string</td>
@@ -87,6 +82,10 @@
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
+<td style="text-align: left;">Raw</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
 <td style="text-align: left;">region</td>
 <td style="text-align: left;">string</td>
 </tr>
@@ -109,6 +108,10 @@
 <tr>
 <td style="text-align: left;">TimeGenerated</td>
 <td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">UnixTimestamp</td>
+<td style="text-align: left;">real</td>
 </tr>
 </tbody>
 </table>

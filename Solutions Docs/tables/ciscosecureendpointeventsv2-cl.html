@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>CiscoSecureEndpointEventsV2_CL</h1>
@@ -44,8 +47,8 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (33 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Secure%20Endpoint/Data%20Connectors/CiscoSecureEndpointLogs_ccp/CiscoSecureEndpointLogs_DCR.json">Data Collection Rule definition</a></p>
+<h2>Schema (194 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CiscoSecureEndpointEventsV2_CL.json">KQL validation test schema</a></p>
 <table id="schema-table">
 <thead>
 <tr>
@@ -55,135 +58,779 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">bp_data</td>
-<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">BpDataAudit</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
-<td style="text-align: left;">cloud_ioc</td>
-<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">BpDataDemo</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
-<td style="text-align: left;">command_line</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">computer</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">connector_guid</td>
+<td style="text-align: left;">BpDataDetailsActions</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">date</td>
+<td style="text-align: left;">BpDataDetailsEngEpoch</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataDetailsEngVer</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataDetailsMatchedActivityEvents</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataDetailsMatchedActivityLimited</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataDetailsMatchedActivityMatched</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataDetailsSchema</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataDetailsSchemaEpoch</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataDetailsSigId</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataDetailsSigRev</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataDetailsSigSetVersion</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataDetection</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataDeviceAgentList</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataDeviceHostname</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataDeviceHwInfoBiosManufacturer</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataDeviceHwInfoBiosVer</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataDeviceHwInfoCpuBits</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataDeviceHwInfoCpuType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataDeviceHwInfoSerialNumber</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataDeviceHwInfoUuid</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataDeviceHwInfoVendorName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataDeviceNetworkInterfaces</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataDeviceOsBuild</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataDeviceOsEdition</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataDeviceOsMachineUuid</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataDeviceOsName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataDeviceOsTypeId</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataDeviceOsVersion</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataDeviceTypeId</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataEcx</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataEndTs</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataEngine</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataErrorCode</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataErrorSource</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataNormalizedName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataNormalizedObservablesAll</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataNormalizedObservablesFileName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataNormalizedObservablesFilePath</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataNormalizedSeverityId</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataObservablesFile</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataPackageManagerCurrentVersion</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataPackageManagerPendingVersion</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataPackageManagerSerialNumber</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataPackageName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataPackageUri</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataRemediated</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataSeverity</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataSilent</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataStartTs</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataSts</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataTactics</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataTechniques</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpDataType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">CloudIocDescription</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">CloudIocShortDescription</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">CommandLineArguments</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ComputerActive</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">ComputerConnectorGuid</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ComputerExternalIp</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ComputerHostname</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ComputerLinksComputer</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ComputerLinksGroup</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ComputerLinksTrajectory</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ComputerNetworkAddresses</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ComputerUser</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConnectorGuid</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Date</td>
 <td style="text-align: left;">datetime</td>
 </tr>
 <tr>
-<td style="text-align: left;">detection</td>
+<td style="text-align: left;">Detection</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">detection_id</td>
+<td style="text-align: left;">DetectionId</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">device_control</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">endpoint_ioc_scan</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">error</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">event_type</td>
+<td style="text-align: left;">DeviceControlAccess</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">event_type_id</td>
+<td style="text-align: left;">DeviceControlConfigurationId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlConfigurationRevision</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">file</td>
-<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">DeviceControlDataAudit</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
-<td style="text-align: left;">forensic_snapshot</td>
-<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">DeviceControlDataDemo</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
-<td style="text-align: left;">group_guids</td>
+<td style="text-align: left;">DeviceControlDataDetailsAccess</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">hostname</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">id</td>
+<td style="text-align: left;">DeviceControlDataDetailsDeviceDataDeviceClass</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">isolation</td>
-<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">DeviceControlDataDetailsDeviceDataDeviceProtocol</td>
+<td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">network_info</td>
-<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">DeviceControlDataDetailsDeviceDataDeviceSubClass</td>
+<td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">orbital</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">policy</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">product_update</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">scan</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">severity</td>
+<td style="text-align: left;">DeviceControlDataDetailsDeviceDataHardwareId</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">start_date</td>
+<td style="text-align: left;">DeviceControlDataDetailsDeviceDataInstanceId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlDataDetailsDeviceDataProductId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlDataDetailsDeviceDataProductName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlDataDetailsDeviceDataSerialNumberId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlDataDetailsDeviceDataSetupClassId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlDataDetailsDeviceDataSetupClassName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlDataDetailsDeviceDataUsbSpec</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlDataDetailsDeviceDataVendorId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlDataDetailsDeviceDataVendorName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlDataDetailsEngVersion</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlDataDetailsMatchedRuleDisplayName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlDataDetailsMatchedRuleId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlDataDetailsMatchedRulePriority</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlDataDetailsPhase</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlDataDetailsRulesetId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlDataDetailsRulesetRev</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlDataDetailsRulesetVersion</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlDataDetection</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlDataEngine</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlDataId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlDataNormalizedSeverityId</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlDataPackageManagerSerialNumber</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlDataPackageName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlDataSilent</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlDataSts</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlDataType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlDeviceId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlInstanceId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlProductId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlProductName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlRuleId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlSerialNumberId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlVendorId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceControlVendorName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">EndpointIocScanClean</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">EndpointIocScanDescription</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">EndpointIocScanMaliciousDetections</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">EndpointIocScanMatchedObjects</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">EndpointIocScanScannedObjects</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">ErrorDescription</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ErrorErrorCode</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventTypeId</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileArchivedFileDisposition</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileArchivedFileIdentitySha256</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileAttackDetailsApplication</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileAttackDetailsAttackedModule</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileAttackDetailsBaseAddress</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileAttackDetailsIndicators</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileAttackDetailsSuspiciousFiles</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileDisposition</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileFileName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileFilePath</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileIdentityMd5</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileIdentitySha1</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileIdentitySha256</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileParentDisposition</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileParentFileName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileParentIdentityMd5</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileParentIdentitySha1</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileParentIdentitySha256</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileParentProcessId</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">ForensicSnapshotUrl</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">GroupGuids</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hostname</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Id</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsolationDuration</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsolationUser</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkInfoDirtyUrl</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkInfoLocalIp</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkInfoLocalPort</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkInfoNfmDirection</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkInfoNfmProtocol</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkInfoParentDisposition</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkInfoParentFileName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkInfoParentIdentityMd5</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkInfoParentIdentitySha1</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkInfoParentIdentitySha256</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkInfoParentProcessId</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkInfoRemoteIp</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkInfoRemotePort</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">OrbitalOldVersion</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OrbitalVersion</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">PolicySerialNumber</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProductUpdateCurrentVersion</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProductUpdateUpdateVersion</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ScanClean</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">ScanDescription</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ScanMaliciousDetections</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">ScanScannedFiles</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">ScanScannedPaths</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">ScanScannedProcesses</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">Severity</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">StartDate</td>
 <td style="text-align: left;">datetime</td>
 </tr>
 <tr>
-<td style="text-align: left;">start_timestamp</td>
+<td style="text-align: left;">StartTimestamp</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">tactics</td>
+<td style="text-align: left;">Tactics</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">techniques</td>
+<td style="text-align: left;">Techniques</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">threat_hunting</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">timestamp</td>
+<td style="text-align: left;">ThreatHuntingIncidentEndTime</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">timestamp_nanoseconds</td>
+<td style="text-align: left;">ThreatHuntingIncidentHuntGuid</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatHuntingIncidentRemediation</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatHuntingIncidentReportGuid</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatHuntingIncidentStartTime</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">vulnerabilities</td>
+<td style="text-align: left;">ThreatHuntingIncidentSummary</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatHuntingIncidentTitle</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatHuntingSeverity</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatHuntingTactics</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ThreatHuntingTechniques</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimestampNanoseconds</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">Vulnerabilities</td>
 <td style="text-align: left;">string</td>
 </tr>
 </tbody>

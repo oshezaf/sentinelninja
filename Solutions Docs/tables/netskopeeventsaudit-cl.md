@@ -12,20 +12,20 @@
 
 ## Schema (13 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/Data%20Connectors/NetskopeAlertsEvents_RestAPI_CCP/NetskopeAlertsEvents_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/NetskopeEventsAudit_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| _id | string |
 | audit_log_event | string |
 | ccl | string |
-| count | int |
+| count_i | int |
 | organization_unit | string |
 | sAMAccountName | string |
 | severity_level | int |
 | supporting_data | dynamic |
+| TimeGenerated | datetime |
 | timestamp | int |
-| type | string |
+| type_s | string |
 | ur_normalized | string |
 | user | string |
 | userPrincipalName | string |

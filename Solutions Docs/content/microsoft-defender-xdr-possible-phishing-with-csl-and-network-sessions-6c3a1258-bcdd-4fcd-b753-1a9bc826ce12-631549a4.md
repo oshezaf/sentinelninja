@@ -1,4 +1,4 @@
-# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Possible Phishing with CSL and Network Sessions
+# Possible Phishing with CSL and Network Sessions
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -20,12 +20,6 @@ This query looks for malicious URL clicks in phishing email recognized by MDO in
 | **Techniques** | T1566, T1102 |
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md), [Zscaler](../connectors/zscaler.md), [Fortinet](../connectors/fortinet.md), [CheckPoint](../connectors/checkpoint.md), [PaloAltoNetworks](../connectors/paloaltonetworks.md), [AWSS3](../connectors/awss3.md), [WindowsForwardedEvents](../connectors/windowsforwardedevents.md), [SecurityEvents](../connectors/securityevents.md), [WindowsSecurityEvents](../connectors/windowssecurityevents.md), [MicrosoftSysmonForLinux](../connectors/microsoftsysmonforlinux.md), [AzureNSG](../connectors/azurensg.md), [AzureMonitor(VMInsights)](../connectors/azuremonitor-vminsights.md), [AIVectraStream](../connectors/aivectrastream.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Analytic%20Rules/PossiblePhishingwithCSL%26NetworkSession.yaml) |
-
-## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
-
-This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
-
-- [`_Im_NetworkSession`](../asim/imnetworksession.md)
 
 ## Tables Used
 

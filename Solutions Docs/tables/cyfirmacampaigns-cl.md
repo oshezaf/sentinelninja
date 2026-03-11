@@ -13,24 +13,25 @@
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
 
-## Schema (12 columns)
+## Schema (13 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Cyber%20Intelligence/Data%20Connectors/CyfirmaCyberIntelligence_ccp/CyfirmaCyberIntel_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyfirmaCampaigns_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| aliases | string |
-| confidence | int |
-| created | datetime |
-| description | string |
+| Aliases | string |
+| CampaignID | string |
+| Country | dynamic |
+| Created | datetime |
+| Description | string |
 | extensions | dynamic |
-| first_seen | datetime |
-| id | string |
-| last_seen | datetime |
-| modified | datetime |
-| name | string |
-| spec_version | string |
-| type | string |
+| FirstSeen | datetime |
+| Industries | dynamic |
+| LastSeen | datetime |
+| Modified | datetime |
+| Name | string |
+| Technologies | dynamic |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

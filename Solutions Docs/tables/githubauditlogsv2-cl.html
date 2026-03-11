@@ -12,6 +12,9 @@
 <body>
 <nav class="navbar">
     <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
 </nav>
 <div class="doc-content">
 <h1>GitHubAuditLogsV2_CL</h1>
@@ -45,7 +48,7 @@
 </tbody>
 </table>
 <h2>Schema (232 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub/Data%20Connectors/GitHubAuditLogs_CCF/GitHubAuditLogs_DCR.json">Data Collection Rule definition</a></p>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub%5CData%20Connectors%5CGitHubAuditLogs_CCF/GitHubAuditLogs_Table.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
 <tr>
@@ -55,931 +58,931 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">@timestamp</td>
+<td style="text-align: left;">Action</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Active</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActiveWas</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActivityType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Actor</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorId</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">_document_id</td>
+<td style="text-align: left;">ActorIp</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">action</td>
+<td style="text-align: left;">ActorIsBot</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">AdminEnforced</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">After</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">active</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">active_was</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">actor</td>
+<td style="text-align: left;">AlertNumbers</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">actor_id</td>
+<td style="text-align: left;">AllowDeletionsEnforcementLevel</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">actor_ip</td>
+<td style="text-align: left;">AllowedValues</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">actor_is_bot</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">AllowForcePushesEnforcementLevel</td>
+<td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">actor_location</td>
+<td style="text-align: left;">ApplicationClientId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuditLogStreamId</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuditLogStreamResult</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuditLogStreamSink</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuditLogStreamSinkDetails</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthorizedActorNames</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BaseRole</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Before</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BlockedUser</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Branch</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Business</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">BusinessId</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">CanCreateRepositories</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">CommitId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">CommitOid</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">CompletedAt</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">Conclusion</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Config</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConfigWas</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ContentType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">CountryCode</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">CreatedAt</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">CreateProtected</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">CustomPattern</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DefaultForNewPrivateRepos</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">DefaultForNewPublicRepos</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">DefaultValue</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DefinitionId</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeployKeyFingerprint</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Description</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DismissalApproverId</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">DismissStaleReviewsOnPush</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">DocumentId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DomainName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Email</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Emoji</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Enablement</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">EnforcementLevel</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">EnvironmentName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Event</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Events</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventsWere</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ExemptAdministrators</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">Explanation</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ExternalIdentityNameid</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ExternalIdentityUsername</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fingerprint</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">GhsaId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">HashedToken</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">HeadBranch</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">HeadSha</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">HookId</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">IgnoreApprovalsFromContributors</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">Integration</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">InvitationId</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">InviteeEmail</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">IpAllowListEntry</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsHostedRunner</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">Issuer</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">IssueTypeName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">JobName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">JobWorkflowRef</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Key</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Limit</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">LimitedAvailability</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">LinearHistoryRequirementEnforcementLevel</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">LockAllowsFetchAndMerge</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">LockBranchEnforcementLevel</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">MembershipType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">MergeQueueEnforcementLevel</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">Message</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Name</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">NewAccess</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">NewPolicy</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">NewProjectBaseRole</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">NewRepoPermission</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">NewRepoRunnersPolicy</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OauthApplication</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OauthApplicationId</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">OauthApplicationState</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OauthApplicationUrl</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OldAccess</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OldDefaultValue</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OldDescription</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OldEnabled</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">OldIssueTypeName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OldPermission</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OldProjectBaseRole</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OldRepoPermission</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OldRepoRunnersPolicy</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OldRequired</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">OldRolePermissions</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OldTokenExpiration</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">OldUser</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OldValuesEditableBy</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OpensshPublicKey</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Org</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OrganizationRoleId</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">OrganizationRoleName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OrgId</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">OverriddenCodes</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Owner</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OwnerType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Permission</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Policy</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">PreviousVisibility</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProgrammaticAccessType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProjectId</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProjectNumber</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">PropertyName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">PublicProject</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">PublicRepo</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">PullRequestId</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">PullRequestReviewsEnforcementLevel</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">PullRequestTitle</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">PullRequestUrl</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">QuerySuite</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReadOnly</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">Reason</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Reasons</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Recipient</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ref</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Referrer</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Repo</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">RepoId</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">RepositoriesRemoved</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">RepositoriesRemovedNames</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">RepositorySecurityConfigurationFailureReason</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">admin_enforced</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">after</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">alert_numbers</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">allow_deletions_enforcement_level</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">allow_force_pushes_enforcement_level</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">allowed_values</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">application_client_id</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">audit_log_stream_id</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">audit_log_stream_result</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">audit_log_stream_sink</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">audit_log_stream_sink_details</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">authorized_actor_names</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">base_role</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">before</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">blocked_user</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">branch</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">business</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">business_id</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">can_create_repositories</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">commit_id</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">commit_oid</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">completed_at</td>
-<td style="text-align: left;">datetime</td>
-</tr>
-<tr>
-<td style="text-align: left;">conclusion</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">config</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">config_was</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">content_type</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">create_protected</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">created_at</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">custom_pattern</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">data</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">default_for_new_private_repos</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">default_for_new_public_repos</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">default_value</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">definition_id</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">deploy_key_fingerprint</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">description</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">dismiss_stale_reviews_on_push</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">dismissal_approver_id</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">domain_name</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">email</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">emoji</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">enablement</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">enforcement_level</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">environment_name</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">event</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">events</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">events_were</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">exempt_administrators</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">explanation</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">external_identity_nameid</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">external_identity_username</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">fingerprint</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ghsa_id</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">hashed_token</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">head_branch</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">head_sha</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">hook_id</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">ignore_approvals_from_contributors</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">integration</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">invitation_id</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">invitee_email</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ip_allow_list_entry</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">is_hosted_runner</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">issue_type_name</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">issuer</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">job_name</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">job_workflow_ref</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">key</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">limit</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">limited_availability</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">linear_history_requirement_enforcement_level</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">lock_allows_fetch_and_merge</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">lock_branch_enforcement_level</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">membership_type</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">merge_queue_enforcement_level</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">message</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">name</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">new_access</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">new_policy</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">new_project_base_role</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">new_repo_permission</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">new_repo_runners_policy</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">oauth_application</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">oauth_application_id</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">oauth_application_state</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">oauth_application_url</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">old_access</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">old_default_value</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">old_description</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">old_enabled</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">old_issue_type_name</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">old_permission</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">old_project_base_role</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">old_repo_permission</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">old_repo_runners_policy</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">old_required</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">old_role_permissions</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">old_token_expiration</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">old_user</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">old_values_editable_by</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">openssh_public_key</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">operation_type</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">org</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">org_id</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">organization_role_id</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">organization_role_name</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">overridden_codes</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">owner</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">owner_type</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">permission</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">policy</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">previous_visibility</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">programmatic_access_type</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">project_id</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">project_number</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">property_name</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">public_project</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">public_repo</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">pull_request_id</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">pull_request_reviews_enforcement_level</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">pull_request_title</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">pull_request_url</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">query_suite</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">read_only</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">reason</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">reasons</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">recipient</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ref</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">referrer</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">repo</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">repo_id</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">repositories_removed</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">repositories_removed_names</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">repository_security_configuration_failure_reason</td>
+<td style="text-align: left;">RepositorySecurityConfigurationState</td>
 <td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
-<td style="text-align: left;">repository_security_configuration_state</td>
-<td style="text-align: left;">dynamic</td>
-</tr>
-<tr>
-<td style="text-align: left;">repository_selection</td>
+<td style="text-align: left;">RepositorySelection</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">request_access_security_header</td>
+<td style="text-align: left;">RequestAccessSecurityHeader</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">request_category</td>
+<td style="text-align: left;">RequestCategory</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">request_id</td>
+<td style="text-align: left;">RequestId</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">require_code_owner_review</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">RequireCodeOwnerReview</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
-<td style="text-align: left;">require_last_push_approval</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">Required</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
-<td style="text-align: left;">required</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">required_approving_review_count</td>
+<td style="text-align: left;">RequiredApprovingReviewCount</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">required_deployments_enforcement_level</td>
+<td style="text-align: left;">RequiredDeploymentsEnforcementLevel</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">required_review_thread_resolution_enforcement_level</td>
+<td style="text-align: left;">RequiredReviewThreadResolutionEnforcementLevel</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">required_status_checks_enforcement_level</td>
+<td style="text-align: left;">RequiredStatusChecksEnforcementLevel</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">role_permissions</td>
+<td style="text-align: left;">RequireLastPushApproval</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">RolePermissions</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">rule_suite_id</td>
+<td style="text-align: left;">RulesetBypassActors</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">RulesetConditions</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">RulesetConditionsUpdated</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">RulesetEnforcement</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">RulesetId</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">ruleset_bypass_actors</td>
+<td style="text-align: left;">RulesetName</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">ruleset_conditions</td>
+<td style="text-align: left;">RulesetRules</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">ruleset_conditions_updated</td>
+<td style="text-align: left;">RulesetRulesDeleted</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">ruleset_enforcement</td>
+<td style="text-align: left;">RulesetSourceType</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">ruleset_id</td>
+<td style="text-align: left;">RuleSuiteId</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">ruleset_name</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ruleset_rules</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ruleset_rules_deleted</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">ruleset_source_type</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">run_attempt</td>
+<td style="text-align: left;">RunAttempt</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">run_number</td>
+<td style="text-align: left;">RunnerGroupAllowPublic</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">RunnerGroupId</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">runner_group_allow_public</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">RunnerGroupName</td>
+<td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">runner_group_id</td>
+<td style="text-align: left;">RunnerGroupRestrictedToWorkflows</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">RunnerGroupSelectedWorkflowRefs</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">RunnerId</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">runner_group_name</td>
+<td style="text-align: left;">RunnerLabels</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">runner_group_restricted_to_workflows</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">runner_group_selected_workflow_refs</td>
+<td style="text-align: left;">RunnerName</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">runner_id</td>
+<td style="text-align: left;">RunnerOwnerType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">RunNumber</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">runner_labels</td>
+<td style="text-align: left;">SecretsPassed</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">runner_name</td>
+<td style="text-align: left;">SecurityConfigurationCodeScanning</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">runner_owner_type</td>
-<td style="text-align: left;">string</td>
+<td style="text-align: left;">SecurityConfigurationCodeSecuritySkuEnabled</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
-<td style="text-align: left;">secrets_passed</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">security_configuration_code_scanning</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">security_configuration_code_security_sku_enabled</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">security_configuration_created_at</td>
+<td style="text-align: left;">SecurityConfigurationCreatedAt</td>
 <td style="text-align: left;">datetime</td>
 </tr>
 <tr>
-<td style="text-align: left;">security_configuration_dependabot_alerts</td>
+<td style="text-align: left;">SecurityConfigurationDependabotAlerts</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">security_configuration_dependabot_security_updates</td>
+<td style="text-align: left;">SecurityConfigurationDependabotSecurityUpdates</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">security_configuration_dependency_graph</td>
+<td style="text-align: left;">SecurityConfigurationDependencyGraph</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">security_configuration_dependency_graph_autosubmit_action</td>
+<td style="text-align: left;">SecurityConfigurationDependencyGraphAutosubmitAction</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">security_configuration_description</td>
+<td style="text-align: left;">SecurityConfigurationDescription</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">security_configuration_enable_ghas</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">SecurityConfigurationEnableGhas</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
-<td style="text-align: left;">security_configuration_id</td>
+<td style="text-align: left;">SecurityConfigurationId</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">security_configuration_name</td>
+<td style="text-align: left;">SecurityConfigurationName</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">security_configuration_private_vulnerability_reporting</td>
+<td style="text-align: left;">SecurityConfigurationPrivateVulnerabilityReporting</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">security_configuration_secret_protection_sku_enabled</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">SecurityConfigurationSecretProtectionSkuEnabled</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
-<td style="text-align: left;">security_configuration_secret_scanning</td>
+<td style="text-align: left;">SecurityConfigurationSecretScanning</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">security_configuration_secret_scanning_delegated_bypass</td>
+<td style="text-align: left;">SecurityConfigurationSecretScanningDelegatedBypass</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">security_configuration_secret_scanning_generic_secrets</td>
+<td style="text-align: left;">SecurityConfigurationSecretScanningGenericSecrets</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">security_configuration_secret_scanning_non_provider_patterns</td>
+<td style="text-align: left;">SecurityConfigurationSecretScanningNonProviderPatterns</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">security_configuration_secret_scanning_push_protection</td>
+<td style="text-align: left;">SecurityConfigurationSecretScanningPushProtection</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">security_configuration_secret_scanning_validity_checks</td>
+<td style="text-align: left;">SecurityConfigurationSecretScanningValidityChecks</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">security_configuration_updated_at</td>
+<td style="text-align: left;">SecurityConfigurationUpdatedAt</td>
 <td style="text-align: left;">datetime</td>
 </tr>
 <tr>
-<td style="text-align: left;">signature_requirement_enforcement_level</td>
+<td style="text-align: left;">SignatureRequirementEnforcementLevel</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">source</td>
+<td style="text-align: left;">Source</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">sso_url</td>
+<td style="text-align: left;">SsoUrl</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">started_at</td>
+<td style="text-align: left;">StartedAt</td>
 <td style="text-align: left;">datetime</td>
 </tr>
 <tr>
-<td style="text-align: left;">strict_required_status_checks_policy</td>
-<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">StrictRequiredStatusChecksPolicy</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
-<td style="text-align: left;">target_login</td>
+<td style="text-align: left;">TargetLogin</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">team</td>
+<td style="text-align: left;">Team</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">threat_model</td>
+<td style="text-align: left;">ThreatModel</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">token_expiration</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">TokenExpiration</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">token_id</td>
+<td style="text-align: left;">TokenId</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">topic</td>
+<td style="text-align: left;">Topic</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">transport_protocol</td>
+<td style="text-align: left;">TransportProtocol</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">transport_protocol_name</td>
+<td style="text-align: left;">TransportProtocolName</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">trigger_id</td>
+<td style="text-align: left;">TriggerId</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">two_factor_method</td>
+<td style="text-align: left;">TwoFactorMethod</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">type</td>
+<td style="text-align: left;">UpdatedAllowedTypes</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">User</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">updated_allowed_types</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">user</td>
+<td style="text-align: left;">UserAgent</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">user_agent</td>
-<td style="text-align: left;">string</td>
+<td style="text-align: left;">UserCanInviteCollaborators</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
-<td style="text-align: left;">user_can_invite_collaborators</td>
-<td style="text-align: left;">boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">user_id</td>
+<td style="text-align: left;">UserId</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">value_type</td>
+<td style="text-align: left;">ValuesEditableBy</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">values_editable_by</td>
+<td style="text-align: left;">ValueType</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">visibility</td>
+<td style="text-align: left;">Visibility</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">vulnerability_alert_rule_actions_alert_actions_auto_dismiss</td>
+<td style="text-align: left;">VulnerabilityAlertRuleActionsAlertActionsAutoDismiss</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">vulnerability_alert_rule_actions_version</td>
+<td style="text-align: left;">VulnerabilityAlertRuleActionsVersion</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">vulnerability_alert_rule_conditions_cwe</td>
+<td style="text-align: left;">VulnerabilityAlertRuleConditionsCwe</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">vulnerability_alert_rule_conditions_ecosystem</td>
+<td style="text-align: left;">VulnerabilityAlertRuleConditionsEcosystem</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">vulnerability_alert_rule_conditions_scope</td>
+<td style="text-align: left;">VulnerabilityAlertRuleConditionsScope</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">vulnerability_alert_rule_id</td>
+<td style="text-align: left;">VulnerabilityAlertRuleId</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">vulnerability_alert_rule_name</td>
+<td style="text-align: left;">VulnerabilityAlertRuleName</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">workflow_id</td>
+<td style="text-align: left;">WorkflowId</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">workflow_run_id</td>
+<td style="text-align: left;">WorkflowRunId</td>
 <td style="text-align: left;">real</td>
 </tr>
 </tbody>

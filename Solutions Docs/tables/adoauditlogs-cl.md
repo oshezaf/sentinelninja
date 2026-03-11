@@ -15,34 +15,34 @@
 
 ## Schema (24 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AzureDevOpsAuditing/Data%20Connectors/AzureDevOpsAuditLogs_CCP/AzureDevOpsAuditLogs_DCR.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AzureDevOpsAuditing%5CData%20Connectors%5CAzureDevOpsAuditLogs_CCP/AzureDevOpsAuditLogs_Table.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| actionId | string |
-| activityId | string |
-| actorClientId | string |
-| actorCUID | string |
-| actorDisplayName | string |
-| actorImageUrl | string |
-| actorUPN | string |
-| actorUserId | string |
-| area | string |
-| authenticationMechanism | string |
-| category | string |
-| categoryDisplayName | string |
-| correlationId | string |
-| data | dynamic |
-| details | string |
-| id | string |
-| ipAddress | string |
-| projectId | string |
-| projectName | string |
-| scopeDisplayName | string |
-| scopeId | string |
-| scopeType | string |
-| timestamp | string |
-| userAgent | string |
+| ActionId | string |
+| ActivityId | string |
+| ActorClientId | string |
+| ActorCUID | string |
+| ActorDisplayName | string |
+| ActorImageUrl | string |
+| ActorUPN | string |
+| ActorUserId | string |
+| Area | string |
+| AuthenticationMechanism | string |
+| Category | string |
+| CategoryDisplayName | string |
+| CorrelationId | string |
+| Data | dynamic |
+| Details | string |
+| Id | string |
+| IpAddress | string |
+| ProjectId | string |
+| ProjectName | string |
+| ScopeDisplayName | string |
+| ScopeId | string |
+| ScopeType | string |
+| TimeGenerated | datetime |
+| UserAgent | string |
 
 ## Solutions (1)
 

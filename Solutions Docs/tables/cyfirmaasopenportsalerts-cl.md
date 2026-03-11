@@ -15,19 +15,19 @@
 
 ## Schema (28 columns)
 
-**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Attack%20Surface/Data%20Connectors/CyfirmaASAlerts_ccp/CyfirmaASAlerts_DCR.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyfirmaASOpenPortsAlerts_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| alert_created_date | datetime |
 | alert_object_uid | string |
+| Alert_title | string |
 | alert_uid | string |
 | asset_comments | string |
 | category | string |
 | description | string |
 | first_seen | datetime |
 | ip | string |
-| is_third_party | boolean |
+| is_third_party | bool |
 | last_seen | datetime |
 | notes | dynamic |
 | open_ports | dynamic |
@@ -40,7 +40,7 @@
 | status | string |
 | sub_category | string |
 | sub_domain | string |
-| title | string |
+| TimeGenerated | datetime |
 | top_domain | string |
 | uid | string |
 | use_cases | string |
