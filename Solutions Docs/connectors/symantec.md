@@ -13,7 +13,7 @@
 | **Connector ID** | `Symantec` |
 | **Publisher** | Symantec |
 | **Used in Solutions** | [Symantec Integrated Cyber Defense](../solutions/symantec-integrated-cyber-defense.md) |
-| **Collection Method** | [REST API](../methods/rest-api.md) |
+| **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [SymantecICDX.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Symantec%20Integrated%20Cyber%20Defense/Data%20Connectors/SymantecICDX.JSON) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |

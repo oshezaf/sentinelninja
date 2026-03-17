@@ -36,11 +36,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
@@ -49,10 +49,6 @@
 <tr>
 <td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/laquerylogs">View Documentation</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -100,7 +96,7 @@
 <tr>
 <td style="text-align: left;">AADObjectId</td>
 <td style="text-align: left;">string</td>
-<td style="text-align: left;">AAD ObjectId of the caller.</td>
+<td style="text-align: left;">AAD ObjectId of the caller, or the 'aai' claim for GDAP scenarios.</td>
 </tr>
 <tr>
 <td style="text-align: left;">AADTenantId</td>
@@ -239,16 +235,100 @@
 </tr>
 </tbody>
 </table>
-<h2>Solutions (3)</h2>
+<h2>Solutions (4)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/dpdp-compliance.html">DPDP Compliance</a></li>
 <li><a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a></li>
 <li><a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a></li>
+<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 </ul>
 <hr />
-<h2>Content Items Using This Table (3)</h2>
-<h3>Workbooks (3)</h3>
+<h2>Content Items Using This Table (20)</h2>
+<h3>Analytic Rules (1)</h3>
+<p><strong>Standalone Content:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-users-searching-for-vip-user-activity-f7f4a77e-f68f-4b56-9aaf-a0c9d87d7a8e-aebfac5d.html">Users searching for VIP user activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries (11)</h3>
+<p><strong>Standalone Content:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-cross-workspace-query-anomolies-8f18c6ea-fcd0-4d9a-a8fd-19a6aaa1660c-c649c5f9.html">Cross workspace query anomolies</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-multiple-large-queries-made-by-user-cd11d6a1-e2ad-47fa-9a9f-4c70b143d4fd-5c0b6215.html">Multiple large queries made by user</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-new-serviceprincipal-running-queries-98e4df23-7bd2-480d-814a-a03f77efc670-8103d8fa.html">New ServicePrincipal running queries</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-new-client-running-queries-1dd98313-f43f-4d8b-9870-5a1dfb2cf93f-c7d32c1c.html">New client running queries</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-new-users-running-queries-8c4fb385-98b0-4ef5-b3da-65db0fb22d89-113f7831.html">New users running queries</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-query-data-volume-anomolies-97543188-a4e8-4439-980d-17b231149617-2488d78c.html">Query data volume anomolies</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-query-looking-for-secrets-2bf19f27-0466-4c16-a821-ce84e524476d-bba63411.html">Query looking for secrets</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-user-returning-more-data-than-daily-average-8699df3f-f89e-431f-9dea-056c4ce7014a-cb19a4e5.html">User returning more data than daily average</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-user-running-multiple-queries-that-fail-a2fca6ac-1155-4eec-934b-65aa62cdbb09-4fd90040.html">User running multiple queries that fail</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-cross-service-azure-data-explorer-queries-58b17f82-f594-4d36-9b78-4e4b03992708-26494ee3.html">Cross-service Azure Data Explorer queries</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-new-users-calling-sensitive-watchlist-f3dc87f3-64f9-405d-aa1b-fed98f859357-5436e4d3.html">New users calling sensitive Watchlist</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks (8)</h3>
 <p><strong>In solution <a href="../solutions/dpdp-compliance.html">DPDP Compliance</a>:</strong></p>
 <table>
 <thead>
@@ -290,6 +370,37 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.html">InsiderRiskManagement</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-azurelogcoverage-05245bb5.html">AzureLogCoverage</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-loganalyticsqueryanalysis-50cfc93a.html">LogAnalyticsQueryAnalysis</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-logsourcesandanalyticrulescoverage-d4c48df0.html">LogSourcesAndAnalyticRulesCoverage</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-workspaceauditing-b4e840dd.html">WorkspaceAuditing</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-workspaceusage-97e7cfa7.html">WorkspaceUsage</a></td>
 <td style="text-align: left;"></td>
 </tr>
 </tbody>

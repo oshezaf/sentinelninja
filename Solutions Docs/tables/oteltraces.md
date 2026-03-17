@@ -12,7 +12,6 @@ Reference for OTelTraces table in Azure Monitor Logs.
 |:----------|:------|
 | **Category** | Applications |
 | **Basic Logs Eligible** | ✓ Yes |
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/oteltraces) |
 

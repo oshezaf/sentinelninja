@@ -11,13 +11,11 @@ Reference for DnsInventory table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Network |
-| **Basic Logs Eligible** | ✗ No |
-| **Supports Transformations** | ✓ Yes |
+| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✓ Yes |
+| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dnsinventory) |
-| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
-| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
 
 ## Schema (18 columns)
 
@@ -60,15 +58,21 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [Windows Server DNS](../solutions/windows-server-dns.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [Dns](../content/windows-server-dns-dns-ed7f9abb.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Dns](../content/github-only-dns-ff664046.md) |  |
 
 ## Resource Types
 

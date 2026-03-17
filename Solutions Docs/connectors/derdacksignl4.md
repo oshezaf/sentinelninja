@@ -13,7 +13,7 @@
 | **Connector ID** | `DerdackSIGNL4` |
 | **Publisher** | Derdack |
 | **Used in Solutions** | [SIGNL4](../solutions/signl4.md) |
-| **Collection Method** | [REST API](../methods/rest-api.md) |
+| **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [DerdackSIGNL4.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SIGNL4/Data%20Connectors/DerdackSIGNL4.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |

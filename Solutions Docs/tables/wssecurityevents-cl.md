@@ -10,8 +10,7 @@
 |:----------|:------|
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes |
-| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Schema (16 columns)
 
@@ -52,15 +51,21 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [WithSecureElementsViaFunction](../solutions/withsecureelementsviafunction.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [WithSecureTopComputersByInfections](../content/withsecureelementsviafunction-withsecuretopcomputersbyinfections-63577228.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [WithSecureTopComputersByInfections](../content/github-only-withsecuretopcomputersbyinfections-b9ae720b.md) |  |
 
 ---
 

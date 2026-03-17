@@ -19,7 +19,7 @@
 | **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-20 |
-| **Last Updated** | 2026-01-22 |
+| **Last Updated** | 2026-03-12 |
 | **Solution Folder** | [ZeroTrust(TIC3.0)](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroTrust%28TIC3.0%29) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-zerotrust) · Popularity: ⚪ Very Low (0%) |
 

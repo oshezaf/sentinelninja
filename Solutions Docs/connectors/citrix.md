@@ -13,7 +13,7 @@
 | **Connector ID** | `Citrix` |
 | **Publisher** | CITRIX |
 | **Used in Solutions** | [Citrix Analytics for Security](../solutions/citrix-analytics-for-security.md) |
-| **Collection Method** | [REST API](../methods/rest-api.md) |
+| **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [CitrixSecurityAnalytics.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20Analytics%20for%20Security/Data%20Connectors/CitrixSecurityAnalytics.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |

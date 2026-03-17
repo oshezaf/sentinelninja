@@ -36,11 +36,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
@@ -53,10 +53,6 @@
 <tr>
 <td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identitydirectoryevents-table">View Documentation</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -213,11 +209,12 @@
 </tr>
 </tbody>
 </table>
-<h2>Solutions (2)</h2>
+<h2>Solutions (3)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a></li>
 <li><a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a></li>
+<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 </ul>
 <h2>Connectors (1)</h2>
 <p>This table is ingested by the following connectors:</p>
@@ -236,8 +233,8 @@
 </tbody>
 </table>
 <hr />
-<h2>Content Items Using This Table (3)</h2>
-<h3>Hunting Queries (1)</h3>
+<h2>Content Items Using This Table (13)</h2>
+<h3>Hunting Queries (7)</h3>
 <p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>ActionType == "SAM Account Name changed"</code></p>
 <table>
 <thead>
@@ -251,7 +248,53 @@
 </tr>
 </tbody>
 </table>
-<h3>Workbooks (2)</h3>
+<p><strong>Standalone Content:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-active-directory-account-lockout-and-unlocks-9f384f37-ff17-446d-b49a-40c6fb98b1ba-0da18d82.html">Active Directory Account lockout and unlocks</a></td>
+<td style="text-align: left;"><code>ActionType == "Account Unlock changed"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-find-deleted-accounts-and-by-whom-e5b0ee9b-7fa4-4641-8363-bd2d72f1bf5b-af461c5b.html">Find_deleted_accounts_and_by_whom</a></td>
+<td style="text-align: left;"><code>ActionType == "Account deleted"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-mdi-group-memebership-changes-b66fb322-247a-4472-a231-2533b34ed059-9c3957c4.html">MDI_Group_Memebership_Changes</a></td>
+<td style="text-align: left;"><code>ActionType == "Group Membership changed"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-mdi-objects-moving-ous-4a6fc14d-5f8e-49fe-8623-c20dd0d826a8-d5857b66.html">MDI_Objects_Moving_OUs</a></td>
+<td style="text-align: left;"><code>ActionType == "Account Path changed"</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-active-directory-sensitive-group-modifications-20774145-ef68-42ab-9f3f-19fecbcdbac9-aff95e29.html">Active Directory Sensitive Group Modifications</a></td>
+<td style="text-align: left;"><code>ActionType == "Group Membership changed"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-sam-name-changes-cve-2021-42278-89ce68d5-dd48-4f3f-b102-336fc4ebdda9-e19aa6ce.html">SAM-Name-Changes-CVE-2021-42278</a></td>
+<td style="text-align: left;"><code>ActionType == "SAM Account Name changed"</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks (6)</h3>
 <p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong></p>
 <table>
 <thead>
@@ -280,8 +323,35 @@
 </tr>
 </tbody>
 </table>
-<h2>Selection Criteria Summary (2 criteria, 2 total references)</h2>
-<p>References by type: 0 connectors, 2 content items, 0 ASIM parsers, 0 other parsers.</p>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-dodzerotrustworkbook-844294c8.html">DoDZeroTrustWorkbook</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-zerotruststrategyworkbook-cd80dc2b.html">ZeroTrustStrategyWorkbook</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-microsoftdefenderforidentity-215ba93a.html">microsoftdefenderforidentity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Selection Criteria Summary (6 criteria, 8 total references)</h2>
+<p>References by type: 0 connectors, 8 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -296,6 +366,38 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><code>ActionType == "SAM Account Name changed"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType == "Group Membership changed"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType == "Account deleted"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType == "Account Path changed"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType == "Account Unlock changed"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -313,10 +415,10 @@
 <tr>
 <td style="text-align: left;"><strong>Total</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;"><strong>8</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;"><strong>8</strong></td>
 </tr>
 </tbody>
 </table>
@@ -335,6 +437,38 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><code>SAM Account Name changed</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Group Membership changed</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Account deleted</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Account Path changed</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Account Unlock changed</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>

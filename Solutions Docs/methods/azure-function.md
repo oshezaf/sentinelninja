@@ -19,9 +19,9 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **132** |
-| Active | 88 |
+| Active | 105 |
 | Deprecated 🚫 | 20 |
-| Unpublished ⚠️ | 24 |
+| Unpublished ⚠️ | 7 |
 
 ## Connectors Using This Method
 
@@ -77,23 +77,23 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [Illumio SaaS](../connectors/illumiosaasdataconnector.md) | Illumio | 2 | [IllumioSaaS](../solutions/illumiosaas.md) |
 | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) 🔶 | Imperva | 2 | [ImpervaCloudWAF](../solutions/impervacloudwaf.md) |
 | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) 🔶 | Infoblox | 18 | [Infoblox](../solutions/infoblox.md) |
-| [IPinfo Abuse Data Connector](../connectors/ipinfoabusedataconnector.md) ⚠️ | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo ASN Data Connector](../connectors/ipinfoasndataconnector.md) ⚠️ | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo Carrier Data Connector](../connectors/ipinfocarrierdataconnector.md) ⚠️ | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo Company Data Connector](../connectors/ipinfocompanydataconnector.md) ⚠️ | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo Country ASN Data Connector](../connectors/ipinfocountrydataconnector.md) ⚠️ | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo Domain Data Connector](../connectors/ipinfodomaindataconnector.md) ⚠️ | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo Iplocation Data Connector](../connectors/ipinfoiplocationdataconnector.md) ⚠️ | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo Iplocation Extended Data Connector](../connectors/ipinfoiplocationextendeddataconnector.md) ⚠️ | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo Privacy Data Connector](../connectors/ipinfoprivacydataconnector.md) ⚠️ | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo Privacy Extended Data Connector](../connectors/ipinfoprivacyextendeddataconnector.md) ⚠️ | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo RIRWHOIS Data Connector](../connectors/ipinforirwhoisdataconnector.md) ⚠️ | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo RWHOIS Data Connector](../connectors/ipinforwhoisdataconnector.md) ⚠️ | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo WHOIS ASN Data Connector](../connectors/ipinfowhoisasndataconnector.md) ⚠️ | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo WHOIS MNT Data Connector](../connectors/ipinfowhoismntdataconnector.md) ⚠️ | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo WHOIS NET Data Connector](../connectors/ipinfowhoisnetdataconnector.md) ⚠️ | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo WHOIS ORG Data Connector](../connectors/ipinfowhoisorgdataconnector.md) ⚠️ | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo WHOIS POC Data Connector](../connectors/ipinfowhoispocdataconnector.md) ⚠️ | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo Abuse Data Connector](../connectors/ipinfoabusedataconnector.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo ASN Data Connector](../connectors/ipinfoasndataconnector.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo Carrier Data Connector](../connectors/ipinfocarrierdataconnector.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo Company Data Connector](../connectors/ipinfocompanydataconnector.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo Country ASN Data Connector](../connectors/ipinfocountrydataconnector.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo Domain Data Connector](../connectors/ipinfodomaindataconnector.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo Iplocation Data Connector](../connectors/ipinfoiplocationdataconnector.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo Iplocation Extended Data Connector](../connectors/ipinfoiplocationextendeddataconnector.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo Privacy Data Connector](../connectors/ipinfoprivacydataconnector.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo Privacy Extended Data Connector](../connectors/ipinfoprivacyextendeddataconnector.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo RIRWHOIS Data Connector](../connectors/ipinforirwhoisdataconnector.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo RWHOIS Data Connector](../connectors/ipinforwhoisdataconnector.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo WHOIS ASN Data Connector](../connectors/ipinfowhoisasndataconnector.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo WHOIS MNT Data Connector](../connectors/ipinfowhoismntdataconnector.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo WHOIS NET Data Connector](../connectors/ipinfowhoisnetdataconnector.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo WHOIS ORG Data Connector](../connectors/ipinfowhoisorgdataconnector.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo WHOIS POC Data Connector](../connectors/ipinfowhoispocdataconnector.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
 | [JoeSandboxThreatIntelligence](../connectors/joesandbox.md) | Joe Security LLC | 1 | [JoeSandbox](../solutions/joesandbox.md) |
 | [Lookout Cloud Security for Microsoft Sentinel](../connectors/lookoutcloudsecuritydataconnector.md) 🔶 | Lookout | 1 | [Lookout Cloud Security Platform for Microsoft Sentinel](../solutions/lookout-cloud-security-platform-for-microsoft-sentinel.md) |
 | [Lumen Defender Threat Feed Data Connector](../connectors/lumenthreatfeedconnector.md) | Lumen Technologies, Inc. | 1 | [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md) |

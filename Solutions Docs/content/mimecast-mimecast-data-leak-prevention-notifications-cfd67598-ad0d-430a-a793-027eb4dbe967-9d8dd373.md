@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Seg_Dlp_CL`](../tables/seg-dlp-cl.md) | ✗ | ✓ | ✗ |
+| [`Seg_Dlp_CL`](../tables/seg-dlp-cl.md) | ✓ | ✓ | ✓ |
 
 ---
 

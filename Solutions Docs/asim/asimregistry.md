@@ -30,7 +30,7 @@ This union parser includes parsers for the following products:
 | Product | Source Parser | Solutions |
 |:--------|:--------------|:----------|
 | Microsoft 365 Defender for Endpoint | [_ASim_RegistryEvent_Microsoft365D](asimregistryeventmicrosoft365d.md) | [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
-| Security Events | [_ASim_RegistryEvent_MicrosoftSecurityEvent](asimregistryeventmicrosoftsecurityevent.md) | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md)<br>[Windows Security Events](../solutions/windows-security-events.md) |
+| Security Events | [_ASim_RegistryEvent_MicrosoftSecurityEvent](asimregistryeventmicrosoftsecurityevent.md) | [Windows Security Events](../solutions/windows-security-events.md) |
 | Microsoft Sysmon | [_ASim_RegistryEvent_MicrosoftSysmon](asimregistryeventmicrosoftsysmon.md) |  |
 | Microsoft Sysmon | [_ASim_RegistryEvent_MicrosoftSysmonWindowsEvent](asimregistryeventmicrosoftsysmonwindowsevent.md) | [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
 | Security Events | [_ASim_RegistryEvent_MicrosoftWindowsEvent](asimregistryeventmicrosoftwindowsevent.md) | [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
@@ -38,22 +38,6 @@ This union parser includes parsers for the following products:
 | SentinelOne | [_ASim_RegistryEvent_SentinelOne](asimregistryeventsentinelone.md) | [SentinelOne](../solutions/sentinelone.md) |
 | Trend Micro Vision One | [_ASim_RegistryEvent_TrendMicroVisionOne](asimregistryeventtrendmicrovisionone.md) | [Trend Micro Vision One](../solutions/trend-micro-vision-one.md) |
 | VMware Carbon Black Cloud | [_ASim_RegistryEvent_VMwareCarbonBlackCloud](asimregistryeventvmwarecarbonblackcloud.md) | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
-
-## Source Tables
-
-This parser reads from the following tables:
-
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`ASimRegistryEventMicrosoft365D`](../asim/asimregistryeventmicrosoft365d.md) | ? | ? | ? |
-| [`ASimRegistryEventMicrosoftSecurityEvent`](../asim/asimregistryeventmicrosoftsecurityevent.md) | ? | ? | ? |
-| [`ASimRegistryEventMicrosoftSysmon`](../asim/asimregistryeventmicrosoftsysmon.md) | ? | ? | ? |
-| [`ASimRegistryEventMicrosoftSysmonWindowsEvent`](../asim/asimregistryeventmicrosoftsysmonwindowsevent.md) | ? | ? | ? |
-| [`ASimRegistryEventMicrosoftWindowsEvent`](../asim/asimregistryeventmicrosoftwindowsevent.md) | ? | ? | ? |
-| [`ASimRegistryEventNative`](../asim/asimregistryeventnative.md) | ? | ? | ? |
-| [`ASimRegistryEventSentinelOne`](../asim/asimregistryeventsentinelone.md) | ? | ? | ? |
-| [`ASimRegistryEventTrendMicroVisionOne`](../asim/asimregistryeventtrendmicrovisionone.md) | ? | ? | ? |
-| [`ASimRegistryEventVMwareCarbonBlackCloud`](../asim/asimregistryeventvmwarecarbonblackcloud.md) | ? | ? | ? |
 
 ## Parameters
 

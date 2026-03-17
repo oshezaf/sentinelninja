@@ -13,7 +13,7 @@
 | **Connector ID** | `SSG` |
 | **Publisher** | Siemens AG |
 | **Used in Solutions** | [SINEC Security Guard](../solutions/sinec-security-guard.md) |
-| **Collection Method** | [REST API](../methods/rest-api.md) |
+| **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [data_connector_GenericUI.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SINEC%20Security%20Guard/Data%20Connectors/data_connector_GenericUI.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
 

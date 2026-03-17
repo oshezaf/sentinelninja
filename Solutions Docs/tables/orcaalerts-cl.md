@@ -11,8 +11,7 @@
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes |
-| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Schema (82 columns)
 
@@ -119,15 +118,21 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [Orca Security Alerts](../solutions/orca-security-alerts.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [OrcaAlerts](../content/orca-security-alerts-orcaalerts-8a812d22.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [OrcaAlerts](../content/github-only-orcaalerts-1d7fde1d.md) |  |
 
 ---
 

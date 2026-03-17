@@ -21,7 +21,7 @@
 | **First Published** | 2022-05-06 |
 | **Last Updated** | 2025-12-14 |
 | **Solution Folder** | [Perimeter 81](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Perimeter%2081) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/perimeter811605117499319.perimeter_81___mss) · Rating: ★★★★★ 4.7/5 (199 ratings) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/perimeter811605117499319.perimeter_81___mss) · Rating: ★★★★★ 4.7/5 (200 ratings) · Popularity: ⚪ Very Low (0%) |
 
 The [Perimeter 81](https://www.perimeter81.com/) Activity Logs connector allows you to easily connect your [Perimeter 81 activity logs with Microsoft Sentinel](https://support.perimeter81.com/docs/ms-sentinel), to view dashboards, create custom alerts, and improve investigation./n/n**Underlying Microsoft Technologies used:**
 

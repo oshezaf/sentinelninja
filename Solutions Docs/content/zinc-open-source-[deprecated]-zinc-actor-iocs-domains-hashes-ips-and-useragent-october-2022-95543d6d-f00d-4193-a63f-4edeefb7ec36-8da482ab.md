@@ -36,7 +36,7 @@ This content item queries data from the following tables:
 | [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ | ✓ |
 | [`Event`](../tables/event.md) | ✓ | ✗ | ✗ |
 | [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ | ✓ |
-| [`VMConnection`](../tables/vmconnection.md) | ✗ | ✗ | ? |
+| [`VMConnection`](../tables/vmconnection.md) | ? | ✗ | ? |
 
 ---
 

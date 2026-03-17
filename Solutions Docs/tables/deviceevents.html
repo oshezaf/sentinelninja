@@ -36,11 +36,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
@@ -48,7 +48,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
@@ -57,14 +57,6 @@
 <tr>
 <td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceevents-table">View Documentation</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -436,7 +428,7 @@
 </tr>
 </tbody>
 </table>
-<h2>Solutions (9)</h2>
+<h2>Solutions (10)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a></li>
@@ -447,6 +439,7 @@
 <li><a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a></li>
 <li><a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a></li>
 <li><a href="../solutions/soc-handbook.html">SOC Handbook</a></li>
+<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 <li><a href="../solutions/zinc-open-source.html">Zinc Open Source</a></li>
 </ul>
 <h2>Connectors (1)</h2>
@@ -466,8 +459,8 @@
 </tbody>
 </table>
 <hr />
-<h2>Content Items Using This Table (29)</h2>
-<h3>Analytic Rules (16)</h3>
+<h2>Content Items Using This Table (108)</h2>
+<h3>Analytic Rules (21)</h3>
 <p><strong>In solution <a href="../solutions/endpoint-threat-protection-essentials.html">Endpoint Threat Protection Essentials</a>:</strong> <code>ActionType == "PowerShellCommand"</code></p>
 <table>
 <thead>
@@ -596,7 +589,38 @@
 </tr>
 </tbody>
 </table>
-<h3>Hunting Queries (9)</h3>
+<p><strong>Standalone Content:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-adfs-dkm-master-key-export-18e6a87e-9d06-4a4e-8b59-3469cd49552d-b85786be.html">ADFS DKM Master Key Export</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-azure-vm-run-command-operations-executing-a-unique-powershell-script-5239248b-abfb-4c6a-8177-b104ade5db56-babdd66c.html">Azure VM Run Command operations executing a unique PowerShell script</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-mass-download-&amp;-copy-to-usb-device-by-single-user-6267ce44-1e9d-471b-9f1e-ae76a6b7aa84-8c8cd6f4.html">Mass Download &amp; copy to USB device by single user</a></td>
+<td style="text-align: left;"><code>ActionType in "FileCreated,FileDownloaded,FileRenamed,UsbDriveMounted"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-prestige-ransomware-iocs-oct-2022-bca9c877-2afc-4246-a26d-087ab1cdcd5f-ab904866.html">Prestige ransomware IOCs Oct 2022</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-windows-host-username-encoded-in-base64-web-request-6e715730-82c0-496c-983b-7a20c4590bd9-92229d72.html">Windows host username encoded in base64 web request</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries (76)</h3>
 <p><strong>In solution <a href="../solutions/endpoint-threat-protection-essentials.html">Endpoint Threat Protection Essentials</a>:</strong> <code>ActionType == "PowerShellCommand"</code></p>
 <table>
 <thead>
@@ -664,7 +688,297 @@
 </tr>
 </tbody>
 </table>
-<h3>Workbooks (4)</h3>
+<p><strong>Standalone Content:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-mde-avscantimesandtype-0a3ddbb6-d691-4cc5-aca1-1fe780258163-08a3924f.html">MDE_AVScanTimesAndType</a></td>
+<td style="text-align: left;"><code>ActionType in "AntivirusScanCancelled,AntivirusScanCompleted"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-mde-blockingasrrules-ffa67017-fb8e-4706-9651-5911f96c1f20-fd209a7b.html">MDE_BlockingASRRules</a></td>
+<td style="text-align: left;"><code>ActionType startswith "ASR"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-mde-listalpnpdevicesallowedorblocked-d99350b8-212d-42b9-b336-62f870453c5c-de3d93fc.html">MDE_ListAlPnPDevicesAllowedorBlocked</a></td>
+<td style="text-align: left;"><code>ActionType in "PnpDeviceAllowed,PnpDeviceBlocked"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-mde-showusbmounteddevicesanddriveletter-fd57f946-9d0c-4c80-af9f-4bcd8257bd4d-8ed06969.html">MDE_ShowUSBMountedDevicesAndDriveLetter</a></td>
+<td style="text-align: left;"><code>ActionType contains "USB"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-mde-showusbmountedandfilescopied-ca4cf47f-6dfd-487a-a759-01d97120bfe2-66f21ec5.html">MDE_ShowUSBMountedandfilescopied</a></td>
+<td style="text-align: left;"><code>ActionType == "FileCreated"</code><br><code>ActionType contains "USB"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-mde-smartscreencheck-dde77b9b-799c-44c8-adfa-45007f312487-10770797.html">MDE_SmartScreenCheck</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-ars-ransomware-event-triggered-ff9a1b12-e446-44ff-a576-7f53caa32044-dee8c375.html">ARS Ransomware Event triggered</a></td>
+<td style="text-align: left;"><code>ActionType has_any "AsrRansomwareAudited,AsrRansomwareBlocked"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-asr-rules-categorized-detection-graph-4a7bf574-fe5f-4168-97e7-5a8aa19a5eed-072334aa.html">ASR rules categorized detection graph</a></td>
+<td style="text-align: left;"><code>ActionType in "AsrAdobeReaderChildProcessBlocked,AsrExecutableEmailContentBlocked,AsrExecutableOfficeContentBlocked,AsrLsassCredentialTheftBlocked,AsrObfuscatedScriptBlocked,AsrOfficeChildProcessBlocked,AsrOfficeCommAppChildProcessBlocked,AsrOfficeMacroWin32ApiCallsBlocked,AsrOfficeProcessInjectionBlocked,AsrPersistenceThroughWmiBlocked,AsrPsexecWmiChildProcessBlocked,AsrRansomwareBlocked,AsrScriptExecutableDownloadBlocked,AsrUntrustedExecutableBlocked,AsrUntrustedUsbProcessBlocked,AsrVulnerableSignedDriverBlocked"</code><br><code>ActionType startswith "asr"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-av-detections-with-source-52c9e90b-84f4-4e2d-ae3d-eef85e8aa069-0c3cb3a4.html">AV Detections with Source</a></td>
+<td style="text-align: left;"><code>ActionType == "AntivirusDetection"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-av-detections-with-usb-disk-drive-12198f2f-c53b-4617-8df8-120c66cbb373-fe2a71b5.html">AV Detections with USB Disk Drive</a></td>
+<td style="text-align: left;"><code>ActionType in "AntivirusDetection,PnpDeviceConnected"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-antivirus-detections-aa9ad4ae-a19a-4262-b151-8a723227bc4e-450dbcb7.html">Antivirus detections</a></td>
+<td style="text-align: left;"><code>ActionType == "AntivirusDetection"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-azure-vm-run-command-linked-with-mde-55fbc363-6cc9-4201-bd68-d980b612082b-bf841a1b.html">Azure VM Run Command linked with MDE</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.html">Baseline Comparison</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-c2-namedpipe-ec3f7141-383e-4f32-b698-ba2ee1852c9c-d8d0259c.html">C2-NamedPipe</a></td>
+<td style="text-align: left;"><code>ActionType == "NamedPipeEvent"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-create-account-1-eba83f84-b844-4fc9-96f4-cb51b0b20c1d-dd413b60.html">Create account (1)</a></td>
+<td style="text-align: left;"><code>ActionType == "UserAccountCreated"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-dnspattern-[nobelium]-6c87bdb8-a44e-452a-b782-542640d985e3-79e5127f.html">DNSPattern [Nobelium]</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-doc-attachment-with-link-to-download-cf259a7a-801a-435a-af3f-3ef998561145-16155f72.html">Doc attachment with link to download</a></td>
+<td style="text-align: left;"><code>ActionType == "BrowserLaunchedToOpenUrl"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-email-link-+-download-+-smartscreen-warning-b29c75ca-a110-4c58-8d0b-6afac6d61078-bc09f2d6.html">Email link + download + SmartScreen warning</a></td>
+<td style="text-align: left;"><code>ActionType in "BrowserLaunchedToOpenUrl,SmartScreenAppWarning,SmartScreenUserOverride"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-encodeddomainurl-[nobelium]-c561bf69-6a6c-4d0a-960a-b69e0e7c8f51-72f5ce64.html">EncodedDomainURL [Nobelium]</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-exploitguardasrstats-4302c0fa-dda5-4a6a-b29a-a96736bce088-5eed5631.html">ExploitGuardASRStats</a></td>
+<td style="text-align: left;"><code>ActionType endswith "Audited"</code><br><code>ActionType startswith "Asr"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-exploitguardasrstats-1-f809e596-87ff-4849-8eeb-cc636f0c92a0-c13848fe.html">ExploitGuardASRStats (1)</a></td>
+<td style="text-align: left;"><code>ActionType endswith "Blocked"</code><br><code>ActionType startswith "Asr"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-exploitguardasrstats-2-d8892c99-08d2-4385-a767-0754c41d7fb9-99596fbe.html">ExploitGuardASRStats (2)</a></td>
+<td style="text-align: left;"><code>ActionType endswith "Audited"</code><br><code>ActionType startswith "ASR"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-exploitguardasrdescriptions-8ab60d62-b4a3-431b-8cd9-9a080213afc0-a616ad1a.html">ExploitGuardAsrDescriptions</a></td>
+<td style="text-align: left;"><code>ActionType startswith "Asr"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-exploitguardblockofficechildprocess-835e8f87-f387-4ee5-ab79-d03b5e5e816b-ea563944.html">ExploitGuardBlockOfficeChildProcess</a></td>
+<td style="text-align: left;"><code>ActionType == "AsrOfficeChildProcessBlocked"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-exploitguardblockofficechildprocess-2-6df0dd4f-5572-4ab9-bde7-1f322547bff7-de31c46a.html">ExploitGuardBlockOfficeChildProcess (2)</a></td>
+<td style="text-align: left;"><code>ActionType == "AsrOfficeChildProcessBlocked"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-exploitguardcontrolledfolderaccess-c4e021bc-59f8-4464-9f93-3b08d8b28cc3-8c89c23c.html">ExploitGuardControlledFolderAccess</a></td>
+<td style="text-align: left;"><code>ActionType startswith "ControlledFolderAccess"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-exploitguardcontrolledfolderaccess-1-ce33163e-68ba-470e-8641-ed61d43d38e1-cca44516.html">ExploitGuardControlledFolderAccess (1)</a></td>
+<td style="text-align: left;"><code>ActionType startswith "ControlledFolderAccess"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-exploitguardcontrolledfolderaccess-2-01dacb6d-4964-42a5-b248-516fc40d605d-7160a920.html">ExploitGuardControlledFolderAccess (2)</a></td>
+<td style="text-align: left;"><code>ActionType contains "ControlledFolderAccess"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-exploitguardnetworkprotectionevents-47bf14f0-c6b7-4dd3-a13f-b9a3e7972e2f-6863dd06.html">ExploitGuardNetworkProtectionEvents</a></td>
+<td style="text-align: left;"><code>ActionType == "ExploitGuardNetworkProtectionBlocked"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-exploitguardstats-e76703a0-21f4-4c20-8d4b-92e1768cf240-763cd670.html">ExploitGuardStats</a></td>
+<td style="text-align: left;"><code>ActionType endswith "Blocked"</code><br><code>ActionType startswith "ExploitGuard"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-exploitguardstats-1-263f7a27-7c44-4e28-adc3-df5cb3fdc2bb-179ea306.html">ExploitGuardStats (1)</a></td>
+<td style="text-align: left;"><code>ActionType endswith "Audited"</code><br><code>ActionType startswith "ExploitGuard"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-files-copied-to-usb-drives-fc2c5bbb-5347-4903-87e6-c2c76c43e420-289491f6.html">Files copied to USB drives</a></td>
+<td style="text-align: left;"><code>ActionType in "FileCreated,UsbDriveMounted"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-lemonduck-registration-function-9e963c83-c569-4c9e-a729-d8f7ca05464d-b1642697.html">LemonDuck-registration-function</a></td>
+<td style="text-align: left;"><code>ActionType == "PowerShellCommand"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-localadmingroupchanges-dd2c4f48-b732-4a75-b2c4-b44bacc66d00-632cb4a0.html">LocalAdminGroupChanges</a></td>
+<td style="text-align: left;"><code>ActionType == "UserAccountAddedToLocalGroup"</code><br><code>ActionType contains "UserAccountCreated"</code><br><code>ActionType contains "UserAccountModified"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-map-external-devices-10838671-0c35-4d5b-95f8-06d5b4d5bf61-c41b8511.html">Map external devices</a></td>
+<td style="text-align: left;"><code>ActionType == "PnpDeviceConnected"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-map-external-devices-1-a091241a-5df7-497f-b4fa-b36641e7373d-9afa448b.html">Map external devices (1)</a></td>
+<td style="text-align: left;"><code>ActionType == "PnpDeviceConnected"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-open-email-link-67be3fdd-6942-45f8-8663-d825b61d1ab9-581f8253.html">Open email link</a></td>
+<td style="text-align: left;"><code>ActionType == "BrowserLaunchedToOpenUrl"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-pua-threatname-per-computer-1a954599-aa03-421d-a35f-dbe18859bdd5-f8b0f109.html">PUA ThreatName per Computer</a></td>
+<td style="text-align: left;"><code>ActionType == "AntivirusDetection"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-pivot-from-detections-to-related-downloads-351f7035-836c-4f4b-80bb-188220ba9215-f029976d.html">Pivot from detections to related downloads</a></td>
+<td style="text-align: left;"><code>ActionType == "AntivirusDetection"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-possible-file-copy-to-usb-drive-34be41b9-eddf-43ca-b208-5b912937f496-537e220c.html">Possible File Copy to USB Drive</a></td>
+<td style="text-align: left;"><code>ActionType == "PnpDeviceConnected"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-powershellcommand-uncommon-commands-on-machine-7d3acc08-312c-4139-85c9-f08299b79932-977320bd.html">PowershellCommand - uncommon commands on machine</a></td>
+<td style="text-align: left;"><code>ActionType == "PowerShellCommand"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-powershellcommand-footprint-261d966b-5c1a-4d28-b444-3a8caac6246e-d15f6c91.html">PowershellCommand footprint</a></td>
+<td style="text-align: left;"><code>ActionType == "PowerShellCommand"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-smartscreen-url-block-ignored-by-user-172e5bee-9298-4c59-bd2a-e96d87e8e6d8-a0038d18.html">SmartScreen URL block ignored by user</a></td>
+<td style="text-align: left;"><code>ActionType in "SmartScreenUrlWarning,SmartScreenUserOverride"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-smartscreen-app-block-ignored-by-user-333ad16e-620b-4f36-af3b-da33f8d16cc2-14dcf47d.html">SmartScreen app block ignored by user</a></td>
+<td style="text-align: left;"><code>ActionType in "SmartScreenAppWarning,SmartScreenUserOverride"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-suspiciousurlclicked-959f8d6a-53b8-488f-a628-999b3410702e-9def1dab.html">SuspiciousUrlClicked</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-system-guard-security-level-baseline-9365b174-d46f-41e9-998a-73e2fe5ae2d9-53d816b4.html">System Guard Security Level Baseline</a></td>
+<td style="text-align: left;"><code>ActionType == "DeviceBootAttestationInfo"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-system-guard-security-level-drop-701bee2f-c4d9-4f72-be03-e6bb1314e71c-7da994da.html">System Guard Security Level Drop</a></td>
+<td style="text-align: left;"><code>ActionType == "DeviceBootAttestationInfo"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-user-navigation-to-redirected-url-daf19704-a996-4df7-9a0b-3efac47fea5a-b78fb1a5.html">User navigation to redirected URL</a></td>
+<td style="text-align: left;"><code>ActionType == "BrowserLaunchedToOpenUrl"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-web-content-filtering-events-7f7a796d-1511-4930-b9da-5971db4352ec-21b59992.html">Web Content Filtering Events</a></td>
+<td style="text-align: left;"><code>ActionType in "ExploitGuardNetworkProtectionAudited,ExploitGuardNetworkProtectionBlocked"</code><br><code>ActionType startswith "SmartScreenUrl"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-windows-filtering-events-firewall-fb02b8f1-1eb9-43f9-b6e6-cca78a323f2b-a1e4e18e.html">Windows filtering events (Firewall)</a></td>
+<td style="text-align: left;"><code>ActionType in "FirewallInboundConnectionBlocked,FirewallInboundConnectionToAppBlocked,FirewallOutboundConnectionBlocked"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-anomalous-payload-delivered-from-iso-file-3539f855-611c-4787-b8a9-e3437f138805-3eb29c28.html">anomalous-payload-delivered-from-iso-file</a></td>
+<td style="text-align: left;"><code>ActionType == "BrowserLaunchedToOpenUrl"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-c2-lookup-from-nonbrowser[nobelium]-f7dd2c5f-7bb3-4a0a-80a1-45c4d79e4c03-b27a688b.html">c2-lookup-from-nonbrowser[Nobelium]</a></td>
+<td style="text-align: left;"><code>ActionType == "DnsQueryResponse"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-c2-lookup-response[nobelium]-4417c444-6ff7-47db-bde0-b6b9ef1b9080-700dd29f.html">c2-lookup-response[Nobelium]</a></td>
+<td style="text-align: left;"><code>ActionType == "DnsQueryResponse"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-deimos-component-execution-0e86928c-cc9f-494c-a79e-04f647eb5ef8-b6e4ffdf.html">deimos-component-execution</a></td>
+<td style="text-align: left;"><code>ActionType == "AmsiScriptContent"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-impacket-atexec-75e3a1b2-bd6d-4e79-8c74-85a3bc0b0617-a33eaf14.html">detect-impacket-atexec</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-impacket-psexec-module-6e6e6486-1bfc-4de0-bcbe-1ed88dfee2a1-ba6e359d.html">detect-impacket-psexec-module</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-f0a94abb.html">detect-impacket-wmiexec</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-32647bb7.html">detect-impacket-wmiexec</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-afdcfc01.html">detect-impacket-wmiexec</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-impacket-wmipersist-34167b0d-f295-4b30-8555-d8fa6990cde5-ae3536ba.html">detect-impacket-wmipersist</a></td>
+<td style="text-align: left;"><code>ActionType == "WmiBindEventFilterToConsumer"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-insider-threat-detection-queries-12-e86221a2-7961-440a-a759-8c7a1fbe40b2-bebb320c.html">insider-threat-detection-queries (12)</a></td>
+<td style="text-align: left;"><code>ActionType == "UserAccountCreated"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-insider-threat-detection-queries-19-a358a812-0e1b-4cbb-a91c-0bb1dbd3ea13-e876eef3.html">insider-threat-detection-queries (19)</a></td>
+<td style="text-align: left;"><code>ActionType == "UserAccountCreated"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-insider-threat-detection-queries-4-1b6d19d5-c1f9-43b0-8db6-1c44c3c965b3-76c5d77a.html">insider-threat-detection-queries (4)</a></td>
+<td style="text-align: left;"><code>ActionType startswith "ScreenshotTaken"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-lsass-credential-dumping-a50138af-4bad-4615-9e55-ced36a836806-0a5fbccf.html">lsass-credential-dumping</a></td>
+<td style="text-align: left;"><code>ActionType in "FileCreated,OpenProcessApiCall"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-rare-sch-task-with-activity-ce76992a-8cd6-4605-9f45-cde9aae87244-3f342058.html">rare_sch_task_with_activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-scheduled-task-creation-34208765-264e-4abe-805b-f645925fbadb-b5b47dbc.html">scheduled task creation</a></td>
+<td style="text-align: left;"><code>ActionType == "ScheduledTaskCreated"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-snip3-detectsanboxie-function-call-32664c67-34d7-4c7a-88cd-c48b55b7ef91-c112772e.html">snip3-detectsanboxie-function-call</a></td>
+<td style="text-align: left;"><code>ActionType == "PowerShellCommand"</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks (11)</h3>
 <p><strong>In solution <a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a>:</strong></p>
 <table>
 <thead>
@@ -719,8 +1033,47 @@
 </tr>
 </tbody>
 </table>
-<h2>Selection Criteria Summary (13 criteria, 20 total references)</h2>
-<p>References by type: 0 connectors, 20 content items, 0 ASIM parsers, 0 other parsers.</p>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-attacksurfacereduction-31c2d611.html">AttackSurfaceReduction</a></td>
+<td style="text-align: left;"><code>ActionType startswith "Asr"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-dodzerotrustworkbook-844294c8.html">DoDZeroTrustWorkbook</a></td>
+<td style="text-align: left;"><code>ActionType == "AntivirusScanCompleted"</code><br><code>ActionType startswith "Asr"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-exchangecompromisehunting-4fe3c3f0.html">ExchangeCompromiseHunting</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-microsoftdefenderforendpoint-ac005534.html">MicrosoftDefenderForEndPoint</a></td>
+<td style="text-align: left;"><code>ActionType in "AntivirusDetection,PnpDeviceConnected"</code><br><code>ActionType endswith "Audited"</code><br><code>ActionType endswith "Blocked"</code><br><code>ActionType startswith "Asr"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-solarwindspostcompromisehunting-09062974.html">SolarWindsPostCompromiseHunting</a></td>
+<td style="text-align: left;"><code>ActionType contains "ExploitGuardNonMicrosoftSignedBlocked"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-zerotruststrategyworkbook-cd80dc2b.html">ZeroTrustStrategyWorkbook</a></td>
+<td style="text-align: left;"><code>ActionType == "AntivirusScanCompleted"</code><br><code>ActionType startswith "Asr"</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Selection Criteria Summary (44 criteria, 76 total references)</h2>
+<p>References by type: 0 connectors, 76 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -736,37 +1089,117 @@
 <tr>
 <td style="text-align: left;"><code>ActionType == "PowerShellCommand"</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
+<td style="text-align: center;">7</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;"><strong>7</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType == "BrowserLaunchedToOpenUrl"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>5</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>ActionType == "NamedPipeEvent"</code></td>
 <td style="text-align: center;">-</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType == "AntivirusDetection"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType in "FileCreated,UsbDriveMounted"</code></td>
+<td style="text-align: center;">-</td>
 <td style="text-align: center;">3</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType in "FileCreated,UsbDriveMounted"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>ActionType == "UserAccountAddedToLocalGroup"</code><br><code>ActionType contains "UserAccountCreated"</code><br><code>ActionType contains "UserAccountModified"</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>ActionType == "AmsiScriptContent"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType == "PnpDeviceConnected"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType == "UserAccountCreated"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType == "ScheduledTaskCreated"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType == "DnsQueryResponse"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType == "DeviceBootAttestationInfo"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType startswith "Asr"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType == "AsrOfficeChildProcessBlocked"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType startswith "ControlledFolderAccess"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>
@@ -798,7 +1231,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType == "BrowserLaunchedToOpenUrl"</code></td>
+<td style="text-align: left;"><code>ActionType in "FileCreated,FileDownloaded,FileRenamed,UsbDriveMounted"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -806,7 +1239,183 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType == "ScheduledTaskCreated"</code></td>
+<td style="text-align: left;"><code>ActionType in "AsrAdobeReaderChildProcessBlocked,AsrExecutableEmailContentBlocked,AsrExecutableOfficeContentBlocked,AsrLsassCredentialTheftBlocked,AsrObfuscatedScriptBlocked,AsrOfficeChildProcessBlocked,AsrOfficeCommAppChildProcessBlocked,AsrOfficeMacroWin32ApiCallsBlocked,AsrOfficeProcessInjectionBlocked,AsrPersistenceThroughWmiBlocked,AsrPsexecWmiChildProcessBlocked,AsrRansomwareBlocked,AsrScriptExecutableDownloadBlocked,AsrUntrustedExecutableBlocked,AsrUntrustedUsbProcessBlocked,AsrVulnerableSignedDriverBlocked"</code><br><code>ActionType startswith "asr"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType in "FileCreated,OpenProcessApiCall"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType in "BrowserLaunchedToOpenUrl,SmartScreenAppWarning,SmartScreenUserOverride"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType in "AntivirusScanCancelled,AntivirusScanCompleted"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType startswith "ASR"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType in "PnpDeviceAllowed,PnpDeviceBlocked"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType == "FileCreated"</code><br><code>ActionType contains "USB"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType contains "USB"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType startswith "ScreenshotTaken"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType == "WmiBindEventFilterToConsumer"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType in "AntivirusDetection,PnpDeviceConnected"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType endswith "Blocked"</code><br><code>ActionType startswith "Asr"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType endswith "Audited"</code><br><code>ActionType startswith "ASR"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType endswith "Audited"</code><br><code>ActionType startswith "Asr"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType contains "ControlledFolderAccess"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType == "ExploitGuardNetworkProtectionBlocked"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType endswith "Audited"</code><br><code>ActionType startswith "ExploitGuard"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType endswith "Blocked"</code><br><code>ActionType startswith "ExploitGuard"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType in "SmartScreenAppWarning,SmartScreenUserOverride"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType in "SmartScreenUrlWarning,SmartScreenUserOverride"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType in "FirewallInboundConnectionBlocked,FirewallInboundConnectionToAppBlocked,FirewallOutboundConnectionBlocked"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType has_any "AsrRansomwareAudited,AsrRansomwareBlocked"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType in "ExploitGuardNetworkProtectionAudited,ExploitGuardNetworkProtectionBlocked"</code><br><code>ActionType startswith "SmartScreenUrl"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -830,20 +1439,12 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType startswith "Asr"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><strong>Total</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>20</strong></td>
+<td style="text-align: center;"><strong>76</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>20</strong></td>
+<td style="text-align: center;"><strong>76</strong></td>
 </tr>
 </tbody>
 </table>
@@ -863,69 +1464,205 @@
 <tr>
 <td style="text-align: left;"><code>PowerShellCommand</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
+<td style="text-align: center;">7</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>NamedPipeEvent</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;"><strong>7</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>FileCreated</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
+<td style="text-align: center;">7</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;"><strong>7</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>BrowserLaunchedToOpenUrl</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>6</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AntivirusDetection</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>6</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>UsbDriveMounted</code></td>
 <td style="text-align: center;">-</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>PnpDeviceConnected</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>startswith Asr</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>NamedPipeEvent</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>endswith Audited</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>UserAccountAddedToLocalGroup</code></td>
+<td style="text-align: center;">-</td>
 <td style="text-align: center;">3</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>UserAccountAddedToLocalGroup</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>contains UserAccountCreated</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>contains UserAccountModified</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>AmsiScriptContent</code></td>
 <td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AsrOfficeChildProcessBlocked</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SmartScreenUserOverride</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>UserAccountCreated</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>endswith Blocked</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ScheduledTaskCreated</code></td>
+<td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>startswith Asr</code></td>
+<td style="text-align: left;"><code>DnsQueryResponse</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SmartScreenAppWarning</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>startswith ASR</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains USB</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DeviceBootAttestationInfo</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>startswith ControlledFolderAccess</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ExploitGuardNetworkProtectionBlocked</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>startswith ExploitGuard</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>
@@ -973,7 +1710,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>BrowserLaunchedToOpenUrl</code></td>
+<td style="text-align: left;"><code>FileDownloaded</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -981,7 +1718,263 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ScheduledTaskCreated</code></td>
+<td style="text-align: left;"><code>FileRenamed</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AsrAdobeReaderChildProcessBlocked</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AsrExecutableEmailContentBlocked</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AsrExecutableOfficeContentBlocked</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AsrLsassCredentialTheftBlocked</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AsrObfuscatedScriptBlocked</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AsrOfficeCommAppChildProcessBlocked</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AsrOfficeMacroWin32ApiCallsBlocked</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AsrOfficeProcessInjectionBlocked</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AsrPersistenceThroughWmiBlocked</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AsrPsexecWmiChildProcessBlocked</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AsrRansomwareBlocked</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AsrScriptExecutableDownloadBlocked</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AsrUntrustedExecutableBlocked</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AsrUntrustedUsbProcessBlocked</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AsrVulnerableSignedDriverBlocked</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>startswith asr</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>OpenProcessApiCall</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AntivirusScanCancelled</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AntivirusScanCompleted</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>PnpDeviceAllowed</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>PnpDeviceBlocked</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>startswith ScreenshotTaken</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>WmiBindEventFilterToConsumer</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains ControlledFolderAccess</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SmartScreenUrlWarning</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>FirewallInboundConnectionBlocked</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>FirewallInboundConnectionToAppBlocked</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>FirewallOutboundConnectionBlocked</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any AsrRansomwareAudited</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any AsrRansomwareBlocked</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ExploitGuardNetworkProtectionAudited</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>startswith SmartScreenUrl</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1046,38 +2039,6 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>Update user</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>AntivirusDetection</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>PnpDeviceConnected</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>endswith Audited</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>endswith Blocked</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>

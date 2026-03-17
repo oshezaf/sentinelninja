@@ -17,7 +17,7 @@
 | **Connector ID** | `BeyondSecuritybeSECURE` |
 | **Publisher** | Beyond Security |
 | **Used in Solutions** | [Beyond Security beSECURE](../solutions/beyond-security-besecure.md) |
-| **Collection Method** | [REST API](../methods/rest-api.md) |
+| **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [Beyond%20Security%20beSECURE.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Beyond%20Security%20beSECURE/Data%20Connectors/Beyond%20Security%20beSECURE.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |

@@ -11,11 +11,10 @@ Reference for Alert table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Azure Monitor |
-| **Basic Logs Eligible** | ✗ No |
-| **Supports Transformations** | ✓ Yes |
+| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alert) |
-| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
 
 ## Schema (73 columns)
 
@@ -98,6 +97,16 @@ Reference for Alert table in Azure Monitor Logs.
 | ValueFlagsDescription | string |  |
 
 ---
+
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) |  |
 
 ---
 

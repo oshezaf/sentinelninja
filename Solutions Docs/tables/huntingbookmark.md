@@ -11,11 +11,10 @@ Reference for HuntingBookmark table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Security |
-| **Basic Logs Eligible** | ✗ No |
-| **Supports Transformations** | ✓ Yes |
+| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/huntingbookmark) |
-| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
 
 ## Schema (24 columns)
 
@@ -56,9 +55,9 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (4)
 
-### Workbooks (2)
+### Workbooks (4)
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 
@@ -66,6 +65,13 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [AnomalyData](../content/soc-handbook-anomalydata-44d72d0f.md) |  |
 | [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [AnomalyData](../content/github-only-anomalydata-27a3f7c6.md) |  |
+| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
 
 ---
 

@@ -36,11 +36,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✗ No</td>
+<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
@@ -48,19 +48,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/officeactivity">View Documentation</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Sentinel Tables and Connectors Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">View Documentation</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -814,7 +806,7 @@
 <li><a href="../solutions/soc-handbook.html">SOC Handbook</a></li>
 <li><a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a></li>
 <li><a href="../solutions/securitythreatessentialsolution.html">SecurityThreatEssentialSolution</a></li>
-<li><a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></li>
+<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 <li><a href="../solutions/teams.html">Teams</a></li>
 <li><a href="../solutions/threat-intelligence.html">Threat Intelligence</a></li>
 <li><a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></li>
@@ -838,8 +830,8 @@
 </tbody>
 </table>
 <hr />
-<h2>Content Items Using This Table (79)</h2>
-<h3>Analytic Rules (33)</h3>
+<h2>Content Items Using This Table (104)</h2>
+<h3>Analytic Rules (42)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
 <table>
 <thead>
@@ -1102,7 +1094,54 @@
 </tr>
 </tbody>
 </table>
-<h3>Hunting Queries (26)</h3>
+<p><strong>Standalone Content:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-anomalous-login-followed-by-teams-action-2b701288-b428-4fb8-805e-e4372c574786-2da015d8.html">Anomalous login followed by Teams action</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-detecting-impossible-travel-with-mailbox-permission-tampering-&amp;-privilege-escalation--1399664f-9434-497c-9cde-42e4d74ae20e-03f12b2c.html">Detecting Impossible travel with mailbox permission tampering &amp; Privilege Escalation attempt</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-europium-hash-and-ip-iocs-september-2022-9d8b5a18-b7db-4c23-84a6-95febaf7e1e4-24b34350.html">Europium - Hash and IP IOCs - September 2022</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-high-risk-office-operation-conducted-by-ip-address-that-recently-attempted-to-log-int-9adbd1c3-a4be-44ef-ac2f-503fd25692ee-6176c458.html">High risk Office operation conducted by IP Address that recently attempted to log into a disabled account</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-malformed-user-agent-a357535e-f722-4afe-b375-cff362b2b376-cf52b023.html">Malformed user agent</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.html">Mercury - Domain, Hash and IP IOCs - August 2022</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-multiple-password-reset-by-user-0b9ae89d-8cad-461c-808f-0494f70ad5c4-910658bf.html">Multiple Password Reset by user</a></td>
+<td style="text-align: left;"><code>OfficeWorkload == "AzureActiveDirectory"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-nrt-malicious-inbox-rule-b79f6190-d104-4691-b7db-823e05980895-a7d65038.html">NRT Malicious Inbox Rule</a></td>
+<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-nrt-multiple-users-email-forwarded-to-same-destination-3b05727d-a8d1-477d-bbdd-d957da96ac7b-d149a49e.html">NRT Multiple users email forwarded to same destination</a></td>
+<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries (30)</h3>
 <p><strong>In solution <a href="../solutions/business-email-compromise-financial-fraud.html">Business Email Compromise - Financial Fraud</a>:</strong></p>
 <table>
 <thead>
@@ -1262,7 +1301,45 @@
 </tr>
 </tbody>
 </table>
-<h3>Workbooks (20)</h3>
+<p><strong>Standalone Content:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-rare-domains-seen-in-cloud-logs-66fb97d1-55c3-4268-ac22-b9742d0fdccc-81d64f4e.html">Rare domains seen in Cloud Logs</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-tracking-password-changes-bac44fe4-c0bc-4e90-aa48-2e346fda803f-28bae834.html">Tracking Password Changes</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.html">Tracking Privileged Account Rare Activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-new-location-sign-in-with-mail-forwarding-activity-a689a21c-9369-47e6-b5fa-e1f65045c1cf-7ac74009.html">New Location Sign in with Mail forwarding activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks (32)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
 <table>
 <thead>
@@ -1455,20 +1532,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a>:</strong> <code>OperationName has_any "Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user"</code><br><code>OperationName has_any "directory write,policy update,role assignment,role update"</code></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Content Item</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/sox-it-compliance-soxitcompliance-6426e0a3.html">SOXITCompliance</a></td>
-</tr>
-</tbody>
-</table>
-<p><strong>In solution <a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a>:</strong></p>
 <table>
 <thead>
 <tr>
@@ -1478,7 +1542,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/team-cymru-scout-teamcymruscout-b64c6ed4.html">TeamCymruScout</a></td>
+<td style="text-align: left;"><a href="../content/sox-it-compliance-soxitcompliance-6426e0a3.html">SOXITCompliance</a></td>
 <td style="text-align: left;"></td>
 </tr>
 </tbody>
@@ -1506,6 +1570,69 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.html">ZeroTrustTIC3</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-advancedworkbookconcepts-3495e806.html">AdvancedWorkbookConcepts</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-datacollectionhealthmonitoring-360bf8be.html">DataCollectionHealthMonitoring</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-data-latency-workbook-6c04e6e6.html">Data_Latency_Workbook</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-dodzerotrustworkbook-844294c8.html">DoDZeroTrustWorkbook</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-exchangeonline-663577e1.html">ExchangeOnline</a></td>
+<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-investigationinsights-8694eaf8.html">InvestigationInsights</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-log4jpostcompromisehunting-7193cd47.html">Log4jPostCompromiseHunting</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-microsoftteams-429824b1.html">MicrosoftTeams</a></td>
+<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code><br><code>RecordType == "SharePointFileOperation"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-office365-fa05d9ea.html">Office365</a></td>
+<td style="text-align: left;"><code>OfficeWorkload in "Exchange,OneDrive,SharePoint"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-sharepointandonedrive-a82e2f82.html">SharePointAndOneDrive</a></td>
+<td style="text-align: left;"><code>OfficeWorkload in "OneDrive,SharePoint"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-solarwindspostcompromisehunting-09062974.html">SolarWindsPostCompromiseHunting</a></td>
+<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-zerotruststrategyworkbook-cd80dc2b.html">ZeroTrustStrategyWorkbook</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -1542,8 +1669,8 @@
 </tr>
 </tbody>
 </table>
-<h2>Selection Criteria Summary (16 criteria, 51 total references)</h2>
-<p>References by type: 1 connectors, 48 content items, 1 ASIM parsers, 1 other parsers.</p>
+<h2>Selection Criteria Summary (16 criteria, 53 total references)</h2>
+<p>References by type: 1 connectors, 50 content items, 1 ASIM parsers, 1 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -1559,10 +1686,10 @@
 <tr>
 <td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">13</td>
+<td style="text-align: center;">15</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>13</strong></td>
+<td style="text-align: center;"><strong>15</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code></td>
@@ -1637,6 +1764,14 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>OfficeWorkload == "AzureActiveDirectory"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>OfficeWorkload in "Exchange,OneDrive,SPO/OneDrive,SharePoint,Teams"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
@@ -1677,20 +1812,12 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>OperationName has_any "Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user"</code><br><code>OperationName has_any "directory write,policy update,role assignment,role update"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><strong>Total</strong></td>
 <td style="text-align: center;"><strong>1</strong></td>
-<td style="text-align: center;"><strong>48</strong></td>
+<td style="text-align: center;"><strong>50</strong></td>
 <td style="text-align: center;"><strong>1</strong></td>
 <td style="text-align: center;"><strong>1</strong></td>
-<td style="text-align: center;"><strong>51</strong></td>
+<td style="text-align: center;"><strong>53</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1710,10 +1837,10 @@
 <tr>
 <td style="text-align: left;"><code>Exchange</code></td>
 <td style="text-align: center;">1</td>
-<td style="text-align: center;">19</td>
+<td style="text-align: center;">21</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>20</strong></td>
+<td style="text-align: center;"><strong>22</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>MicrosoftTeams</code></td>
@@ -1758,10 +1885,10 @@
 <tr>
 <td style="text-align: left;"><code>AzureActiveDirectory</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
+<td style="text-align: center;">4</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;"><strong>4</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>has_any Exchange</code></td>
@@ -1781,101 +1908,6 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>Teams</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-</tbody>
-</table>
-<h3>OperationName</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><code>has_any Add directory role member</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_any Add member to role</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_any Add user</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_any Create user</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_any Role assignment</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_any Update user</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_any directory write</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_any policy update</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_any role assignment</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_any role update</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>

@@ -20,9 +20,9 @@ The Log Ingestion API is the modern, recommended method for sending custom data 
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **46** |
-| Active | 27 |
+| Active | 44 |
 | Deprecated 🚫 | 0 |
-| Unpublished ⚠️ | 19 |
+| Unpublished ⚠️ | 2 |
 
 ### By Collection Method
 
@@ -46,23 +46,23 @@ The Log Ingestion API is the modern, recommended method for sending custom data 
 | [Flare Push Connector](../connectors/fireworkpush.md) | [CCF Push](../methods/ccf-push.md) | Flare Systems | 1 | [Flare](../solutions/flare.md) |
 | [Halcyon Connector](../connectors/halcyonpush.md) | [CCF Push](../methods/ccf-push.md) | Halcyon | 5 | [Halcyon](../solutions/halcyon.md) |
 | [Illumio SaaS](../connectors/illumiosaasdataconnector.md) | [Azure Function](../methods/azure-function.md) | Illumio | 2 | [IllumioSaaS](../solutions/illumiosaas.md) |
-| [IPinfo Abuse Data Connector](../connectors/ipinfoabusedataconnector.md) ⚠️ | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo ASN Data Connector](../connectors/ipinfoasndataconnector.md) ⚠️ | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo Carrier Data Connector](../connectors/ipinfocarrierdataconnector.md) ⚠️ | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo Company Data Connector](../connectors/ipinfocompanydataconnector.md) ⚠️ | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo Country ASN Data Connector](../connectors/ipinfocountrydataconnector.md) ⚠️ | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo Domain Data Connector](../connectors/ipinfodomaindataconnector.md) ⚠️ | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo Iplocation Data Connector](../connectors/ipinfoiplocationdataconnector.md) ⚠️ | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo Iplocation Extended Data Connector](../connectors/ipinfoiplocationextendeddataconnector.md) ⚠️ | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo Privacy Data Connector](../connectors/ipinfoprivacydataconnector.md) ⚠️ | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo Privacy Extended Data Connector](../connectors/ipinfoprivacyextendeddataconnector.md) ⚠️ | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo RIRWHOIS Data Connector](../connectors/ipinforirwhoisdataconnector.md) ⚠️ | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo RWHOIS Data Connector](../connectors/ipinforwhoisdataconnector.md) ⚠️ | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo WHOIS ASN Data Connector](../connectors/ipinfowhoisasndataconnector.md) ⚠️ | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo WHOIS MNT Data Connector](../connectors/ipinfowhoismntdataconnector.md) ⚠️ | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo WHOIS NET Data Connector](../connectors/ipinfowhoisnetdataconnector.md) ⚠️ | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo WHOIS ORG Data Connector](../connectors/ipinfowhoisorgdataconnector.md) ⚠️ | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [IPinfo WHOIS POC Data Connector](../connectors/ipinfowhoispocdataconnector.md) ⚠️ | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo Abuse Data Connector](../connectors/ipinfoabusedataconnector.md) | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo ASN Data Connector](../connectors/ipinfoasndataconnector.md) | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo Carrier Data Connector](../connectors/ipinfocarrierdataconnector.md) | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo Company Data Connector](../connectors/ipinfocompanydataconnector.md) | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo Country ASN Data Connector](../connectors/ipinfocountrydataconnector.md) | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo Domain Data Connector](../connectors/ipinfodomaindataconnector.md) | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo Iplocation Data Connector](../connectors/ipinfoiplocationdataconnector.md) | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo Iplocation Extended Data Connector](../connectors/ipinfoiplocationextendeddataconnector.md) | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo Privacy Data Connector](../connectors/ipinfoprivacydataconnector.md) | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo Privacy Extended Data Connector](../connectors/ipinfoprivacyextendeddataconnector.md) | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo RIRWHOIS Data Connector](../connectors/ipinforirwhoisdataconnector.md) | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo RWHOIS Data Connector](../connectors/ipinforwhoisdataconnector.md) | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo WHOIS ASN Data Connector](../connectors/ipinfowhoisasndataconnector.md) | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo WHOIS MNT Data Connector](../connectors/ipinfowhoismntdataconnector.md) | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo WHOIS NET Data Connector](../connectors/ipinfowhoisnetdataconnector.md) | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo WHOIS ORG Data Connector](../connectors/ipinfowhoisorgdataconnector.md) | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [IPinfo WHOIS POC Data Connector](../connectors/ipinfowhoispocdataconnector.md) | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
 | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | [CCF Push](../methods/ccf-push.md) | Jamf | 3 | [Jamf Protect](../solutions/jamf-protect.md) |
 | [Keeper Security Push Connector](../connectors/keepersecuritypush2.md) | [CCF Push](../methods/ccf-push.md) | Keeper Security | 1 | [Keeper Security](../solutions/keeper-security.md) |
 | [Mimecast Audit](../connectors/mimecastauditapi.md) 🔶 | [Azure Function](../methods/azure-function.md) | Mimecast | 2 | [Mimecast](../solutions/mimecast.md) |

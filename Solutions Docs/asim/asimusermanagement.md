@@ -36,19 +36,6 @@ This union parser includes parsers for the following products:
 | Native | [_ASim_UserManagement_Native](asimusermanagementnative.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | SentinelOne | [_ASim_UserManagement_SentinelOne](asimusermanagementsentinelone.md) | [SentinelOne](../solutions/sentinelone.md) |
 
-## Source Tables
-
-This parser reads from the following tables:
-
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`ASimUserManagementCiscoISE`](../asim/asimusermanagementciscoise.md) | ? | ? | ? |
-| [`ASimUserManagementLinuxAuthpriv`](../asim/asimusermanagementlinuxauthpriv.md) | ? | ? | ? |
-| [`ASimUserManagementMicrosoftSecurityEvent`](../asim/asimusermanagementmicrosoftsecurityevent.md) | ? | ? | ? |
-| [`ASimUserManagementMicrosoftWindowsEvent`](../asim/asimusermanagementmicrosoftwindowsevent.md) | ? | ? | ? |
-| [`ASimUserManagementNative`](../asim/asimusermanagementnative.md) | ? | ? | ? |
-| [`ASimUserManagementSentinelOne`](../asim/asimusermanagementsentinelone.md) | ? | ? | ? |
-
 ## Parameters
 
 | Name | Type | Default |

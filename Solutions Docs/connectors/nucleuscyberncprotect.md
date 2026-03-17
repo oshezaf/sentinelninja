@@ -13,7 +13,7 @@
 | **Connector ID** | `NucleusCyberNCProtect` |
 | **Publisher** | archTIS |
 | **Used in Solutions** | [NC Protect Data Connector](../solutions/nc-protect-data-connector.md) |
-| **Collection Method** | [REST API](../methods/rest-api.md) |
+| **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [NucleusCyberNCProtect.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NC%20Protect%20Data%20Connector/Data%20Connectors/NucleusCyberNCProtect.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |

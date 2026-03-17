@@ -18,8 +18,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SentinelBehaviorEntities`](../tables/sentinelbehaviorentities.md) | ✗ | ✗ | ? |
-| [`SentinelBehaviorInfo`](../tables/sentinelbehaviorinfo.md) | ✗ | ✗ | ? |
+| [`SentinelBehaviorEntities`](../tables/sentinelbehaviorentities.md) | ? | ✗ | ? |
+| [`SentinelBehaviorInfo`](../tables/sentinelbehaviorinfo.md) | ? | ✗ | ? |
 
 ---
 

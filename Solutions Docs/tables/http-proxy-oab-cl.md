@@ -6,6 +6,11 @@
 
 ---
 
+| Attribute | Value |
+|:----------|:------|
+| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
+| **Ingestion API Supported** | ✓ Yes |
+
 ## Schema (14 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/http_proxy_oab_CL.json)
@@ -27,7 +32,24 @@
 | TimeGenerated | datetime |
 | Type | string |
 
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [Standalone Content](../solutions/standalone-content.md)
+
 ---
+
+## Content Items Using This Table (2)
+
+### Analytic Rules (2)
+
+**Standalone Content:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Exchange Server Suspicious File Downloads.](../content/standalone-content-exchange-server-suspicious-file-downloads.-8955c0fb-3408-47b0-a3b9-a1faec41e427-acdc8937.md) |  |
+| [Silk Typhoon Suspicious File Downloads.](../content/standalone-content-silk-typhoon-suspicious-file-downloads.-03e04c97-8cae-48b3-9d2f-4ab262e4ffff-62287297.md) |  |
 
 ---
 

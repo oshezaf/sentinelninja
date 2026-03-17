@@ -10,8 +10,7 @@
 |:----------|:------|
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes |
-| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Schema (8 columns)
 
@@ -28,13 +27,12 @@
 | TimeGenerated | datetime |
 | Type | string |
 
-## Solutions (3)
+## Solutions (2)
 
 This table is used by the following solutions:
 
 - [ApacheHTTPServer](../solutions/apachehttpserver.md)
 - [CustomLogsAma](../solutions/customlogsama.md)
-- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 
 ## Connectors (2)
 
@@ -47,7 +45,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (22)
+## Content Items Using This Table (21)
 
 ### Analytic Rules (10)
 
@@ -83,19 +81,13 @@ This table is ingested by the following connectors:
 | [Apache - Top files requested with errors](../content/apachehttpserver-apache-top-files-requested-with-errors-afe13b7c-38b8-11ec-8d3d-0242ac130003-552d4bde.md) |  |
 | [Apache - Unexpected Post Requests](../content/apachehttpserver-apache-unexpected-post-requests-c21ea046-3ae7-11ec-8d3d-0242ac130003-e7427332.md) |  |
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [ApacheHTTPServer](../solutions/apachehttpserver.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [ApacheHTTPServer](../content/apachehttpserver-apachehttpserver-112ebf76.md) |  |
-
-**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 ## Parsers Using This Table (3)
 

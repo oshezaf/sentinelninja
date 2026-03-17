@@ -63,7 +63,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [ASimDnsMicrosoftNXLog](../parsers/asimdnsmicrosoftnxlog.md) | - | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_Dns`](../asim/imdns.md) *(read)* |
+| [ASimDnsMicrosoftNXLog](../parsers/asimdnsmicrosoftnxlog.md) | - | - |
 
 ---
 

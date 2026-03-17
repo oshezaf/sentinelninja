@@ -16,7 +16,7 @@ Microsoft Entra interactive and non-interactive sign-ins
 | **Ingestion API Supported** | ✗ No |
 | **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-entraidsigninevents-table) |
 
-## Schema (44 columns)
+## Schema (45 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/entraidsigninevents)
 
@@ -44,8 +44,9 @@ Microsoft Entra interactive and non-interactive sign-ins
 | ErrorCode | int | Contains the error code if a sign-in error occurs. To find a description of a specific error code, visithttps://aka.ms/AADsigninsErrorCodes. |
 | IPAddress | string | IP address assigned to the device during communication |
 | IsCompliant | int | Indicates whether the device that initiated the sign-in is compliant (1) or non-compliant (0) |
+| IsConfidentialClient | boolean | Indicates if the sign in was done via confidential client applications |
 | IsExternalUser | int | Indicates if the user that signed in is external. Possible values: -1 (not set), 0 (not external), 1 (external). |
-| IsGuestUser | boolean | Indicates whether the user that signed in is a guest in the tenant |
+| IsGuestUser | boolean | Indicates if the sign in was done via confidential client applications |
 | IsManaged | int | Indicates whether the device that initiated the sign-in is a managed device (1) or not a managed device (0) |
 | LastPasswordChangeTimestamp | datetime | Date and time when the user that signed in last changed their password |
 | Latitude | string | The north to south coordinates of the sign-in location |

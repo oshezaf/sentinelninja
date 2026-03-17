@@ -9,9 +9,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Entra |
-| **Supports Transformations** | ✓ Yes |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
 
 ---
 

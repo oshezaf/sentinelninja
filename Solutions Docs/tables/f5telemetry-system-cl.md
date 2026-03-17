@@ -11,8 +11,7 @@
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes |
-| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Schema (14 columns)
 
@@ -51,9 +50,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (4)
 
-### Workbooks (2)
+### Workbooks (4)
 
 **In solution [F5 Big-IP](../solutions/f5-big-ip.md):**
 
@@ -61,6 +60,13 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [F5BIGIPSystemMetrics](../content/f5-big-ip-f5bigipsystemmetrics-70978c22.md) |  |
 | [F5Networks](../content/f5-big-ip-f5networks-56be211d.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [F5BIGIPSystemMetrics](../content/github-only-f5bigipsystemmetrics-f6e795e8.md) |  |
+| [F5Networks](../content/github-only-f5networks-1dca2cd9.md) |  |
 
 ---
 

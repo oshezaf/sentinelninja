@@ -98,7 +98,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [ASimAuthenticationHalcyon](asimauthenticationhalcyon.md) | 📦 [Halcyon](../solutions/halcyon.md) | HalcyonAuthenticationEvents_CL |
 | [ASimAuthenticationOpenSystems](asimauthenticationopensystems.md) ⚠️ | 📦 [Open Systems](../solutions/open-systems.md) | OpenSystemsAuthenticationLogs_CL |
 | [ASimDnsHalcyon](asimdnshalcyon.md) | 📦 [Halcyon](../solutions/halcyon.md) | HalcyonDnsActivity_CL |
-| [ASimDnsMicrosoftNXLog](asimdnsmicrosoftnxlog.md) | 📦 [NXLogDNSLogs](../solutions/nxlogdnslogs.md) | _Im_Dns |
+| [ASimDnsMicrosoftNXLog](asimdnsmicrosoftnxlog.md) | 📦 [NXLogDNSLogs](../solutions/nxlogdnslogs.md) | ? |
 | [ASimFileEventHalcyon](asimfileeventhalcyon.md) | 📦 [Halcyon](../solutions/halcyon.md) | HalcyonFileActivity_CL |
 | [ASimNetworkSessionHalcyon](asimnetworksessionhalcyon.md) | 📦 [Halcyon](../solutions/halcyon.md) | HalcyonNetworkSession_CL |
 | [ASimNetworkSessionOpenSystemsFirewall](asimnetworksessionopensystemsfirewall.md) ⚠️ | 📦 [Open Systems](../solutions/open-systems.md) | OpenSystemsFirewallLogs_CL |
@@ -260,7 +260,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [corelight_stepping](corelight-stepping.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_stepping_CL |
 | [corelight_stun](corelight-stun.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_stun_CL |
 | [corelight_stun_nat](corelight-stun-nat.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_stun_nat_CL |
-| [corelight_suri_aggregations](corelight-suri-aggregations.md) | 📦 [Corelight](../solutions/corelight.md) | impact_score |
+| [corelight_suri_aggregations](corelight-suri-aggregations.md) | 📦 [Corelight](../solutions/corelight.md) | ? |
 | [corelight_suricata_corelight](corelight-suricata-corelight.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_suricata_corelight_CL |
 | [corelight_suricata_eve](corelight-suricata-eve.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_suricata_eve_CL |
 | [corelight_suricata_stats](corelight-suricata-stats.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_suricata_stats_CL |
@@ -296,7 +296,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [CylancePROTECT-old](cylanceprotect-old.md) ⚠️ | 📦 [Blackberry CylancePROTECT](../solutions/blackberry-cylanceprotect.md) | Syslog |
 | [CymruScoutAccountUsage](cymruscoutaccountusage.md) | 📦 [Team Cymru Scout](../solutions/team-cymru-scout.md) | Cymru_Scout_Account_Usage_Data_CL |
 | [CymruScoutCommunicationsData](cymruscoutcommunicationsdata.md) | 📦 [Team Cymru Scout](../solutions/team-cymru-scout.md) | Communication_Data_CL |
-| [CymruScoutCorrelate](cymruscoutcorrelate.md) | 📦 [Team Cymru Scout](../solutions/team-cymru-scout.md) | ASimAuditEvent, ASimAuthentication, ... |
+| [CymruScoutCorrelate](cymruscoutcorrelate.md) | 📦 [Team Cymru Scout](../solutions/team-cymru-scout.md) | ThreatIntelligenceIndicator |
 | [CymruScoutDomain](cymruscoutdomain.md) | 📦 [Team Cymru Scout](../solutions/team-cymru-scout.md) | Cymru_Scout_Domain_Data_CL |
 | [CymruScoutDomainData](cymruscoutdomaindata.md) | 📦 [Team Cymru Scout](../solutions/team-cymru-scout.md) | Domain_Data_CL |
 | [CymruScoutFingerprintsData](cymruscoutfingerprintsdata.md) | 📦 [Team Cymru Scout](../solutions/team-cymru-scout.md) | Fingerprints_Data_CL |
@@ -387,7 +387,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [GetClassificationList](getclassificationlist.md) | 📂 *Legacy* | ? |
 | [getForgeRockUsers](getforgerockusers.md) ⚠️ | 📦 [ForgeRock Common Audit for CEF](../solutions/forgerock-common-audit-for-cef.md) | CommonSecurityLog |
 | [GitHubAudit](githubaudit.md) | 📂 *Legacy* | GitHub_CL |
-| [GitHubAuditData](githubauditdata.md) | 📦 [GitHub](../solutions/github.md) | GitHubAuditLogPolling_CL, GitHubAuditLogsV2_CL, ... |
+| [GitHubAuditData](githubauditdata.md) | 📦 [GitHub](../solutions/github.md) | GitHubAuditLogPolling_CL, GitHubAuditLogsV2_CL |
 | [GitHubCodeScanningData](githubcodescanningdata.md) | 📦 [GitHub](../solutions/github.md) | githubscanaudit_CL |
 | [GitHubDependabotData](githubdependabotdata.md) | 📦 [GitHub](../solutions/github.md) | githubscanaudit_CL |
 | [GitHubRepo](githubrepo.md) | 📂 *Legacy* | GitHubRepoLogs_CL |
@@ -483,7 +483,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 |:-------|:-------|:-------|
 | [MapNetflowUsername](mapnetflowusername.md) ⚠️ | 📦 [Cisco SD-WAN](../solutions/cisco-sd-wan.md) | ? |
 | [MarkLogicAudit](marklogicaudit.md) | 📦 [MarkLogicAudit](../solutions/marklogicaudit.md) | MarkLogicAudit_CL |
-| [McAfee Common Security Log Parser](mcafee-common-security-log-parser.md) | 📂 *Legacy* | CommonSecurityLog |
+| [McAfeeCommonSecurityLog](mcafeecommonsecuritylog.md) | 📂 *Legacy* | CommonSecurityLog |
 | [McAfeeEPOEvent](mcafeeepoevent.md) | 📦 [McAfee ePolicy Orchestrator](../solutions/mcafee-epolicy-orchestrator.md) | Syslog |
 | [McAfeeNSPEvent](mcafeenspevent.md) | 📦 [McAfee Network Security Platform](../solutions/mcafee-network-security-platform.md) | Syslog |
 | [MCASActivity](mcasactivity.md) | 📂 *Legacy* | MCASActivity_CL |

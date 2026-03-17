@@ -38,21 +38,6 @@ This union parser includes parsers for the following products:
 | Security Events | [_ASim_ProcessEvent_TerminateMicrosoftWindowsEvents](asimprocessterminatemicrosoftwindowsevents.md) | [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
 |  | [_ASim_ProcessEvent_TerminateVMwareCarbonBlackCloud](asim-processevent-terminatevmwarecarbonblackcloud.md) |  |
 
-## Source Tables
-
-This parser reads from the following tables:
-
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`ASimProcessEventMD4IoT`](../asim/asimprocesseventmd4iot.md) | ? | ? | ? |
-| [`ASimProcessEventMicrosoft365D`](../asim/asimprocesseventmicrosoft365d.md) | ? | ? | ? |
-| [`ASimProcessEventNative`](../asim/asimprocesseventnative.md) | ? | ? | ? |
-| [`ASimProcessTerminateLinuxSysmon`](../asim/asimprocessterminatelinuxsysmon.md) | ? | ? | ? |
-| [`ASimProcessTerminateMicrosoftSecurityEvents`](../asim/asimprocessterminatemicrosoftsecurityevents.md) | ? | ? | ? |
-| [`ASimProcessTerminateMicrosoftSysmon`](../tables/asimprocessterminatemicrosoftsysmon.md) | ? | ? | ? |
-| [`ASimProcessTerminateMicrosoftWindowsEvents`](../asim/asimprocessterminatemicrosoftwindowsevents.md) | ? | ? | ? |
-| [`ASimProcessTerminateVMwareCarbonBlackCloud`](../asim/asimprocessterminatevmwarecarbonblackcloud.md) | ? | ? | ? |
-
 ## References
 
 - [ASIM Process Schema](https://aka.ms/ASimProcessEventDoc)

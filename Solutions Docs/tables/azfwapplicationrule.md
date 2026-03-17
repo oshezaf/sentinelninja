@@ -11,13 +11,11 @@ Reference for AZFWApplicationRule table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Security |
-| **Basic Logs Eligible** | ✓ Yes |
-| **Supports Transformations** | ✓ Yes |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✓ Yes |
+| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azfwapplicationrule) |
-| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
-| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
 
 ## Schema (23 columns)
 
@@ -54,7 +52,7 @@ Reference for AZFWApplicationRule table in Azure Monitor Logs.
 This table is used by the following solutions:
 
 - [Azure Firewall](../solutions/azure-firewall.md)
-- [Team Cymru Scout](../solutions/team-cymru-scout.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 
 ## Connectors (1)
@@ -67,9 +65,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (13)
+## Content Items Using This Table (14)
 
-### Analytic Rules (6)
+### Analytic Rules (8)
 
 **In solution [Azure Firewall](../solutions/azure-firewall.md):**
 
@@ -87,6 +85,13 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [TI map IP entity to AzureFirewall](../content/threat-intelligence-new-ti-map-ip-entity-to-azurefirewall-4992d2f3-d6c0-4271-adac-b23532ba4492-965a60e9.md) |  |
 
+**Standalone Content:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Known Forest Blizzard group domains - July 2019](../content/standalone-content-known-forest-blizzard-group-domains-july-2019-074ce265-f684-41cd-af07-613c5f3e6d0d-a6ae8c57.md) |  |
+| [Mercury - Domain, Hash and IP IOCs - August 2022](../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.md) |  |
+
 ### Hunting Queries (5)
 
 **In solution [Azure Firewall](../solutions/azure-firewall.md):**
@@ -99,19 +104,13 @@ This table is ingested by the following connectors:
 | [Uncommon Port for Organization](../content/azure-firewall-uncommon-port-for-organization-8812a547-13e6-4d0c-b38d-476fb7351c52-f68ddc3e.md) |  |
 | [Uncommon Port to IP](../content/azure-firewall-uncommon-port-to-ip-3d93fa57-53e5-4d5e-96d4-ad734a8df3a4-582e485f.md) |  |
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [Azure Firewall](../solutions/azure-firewall.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [AzureFirewallWorkbook-StructuredLogs](../content/azure-firewall-azurefirewallworkbook-structuredlogs-e125f99e.md) |  |
-
-**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 ## Parsers Using This Table (1)
 

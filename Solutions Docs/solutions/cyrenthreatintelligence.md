@@ -19,7 +19,7 @@
 | **Version** | 3.0.1 |
 | **Author** | Data443 Risk Mitigation, Inc. - support@data443.com |
 | **First Published** | 2025-11-16 |
-| **Last Updated** | 2026-03-02 |
+| **Last Updated** | 2026-03-16 |
 | **Solution Folder** | [CyrenThreatIntelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyrenThreatIntelligence) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/data443riskmitigationinc1761580347231.azure-sentinel-solution-cyren-threat-intel) · Popularity: ⚪ Very Low (0%) |
 

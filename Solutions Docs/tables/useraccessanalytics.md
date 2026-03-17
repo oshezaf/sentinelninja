@@ -12,7 +12,6 @@ Reference for UserAccessAnalytics table in Azure Monitor Logs.
 |:----------|:------|
 | **Category** | Security |
 | **Basic Logs Eligible** | ✗ No |
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/useraccessanalytics) |
 
@@ -45,6 +44,16 @@ Reference for UserAccessAnalytics table in Azure Monitor Logs.
 | Type | string | The name of the table |
 
 ---
+
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 
 ---
 

@@ -12,11 +12,10 @@ Reference for NetworkAccessGenerativeAIInsights table in Azure Monitor Logs.
 |:----------|:------|
 | **Category** | IT & Management Tools, Network, Security |
 | **Basic Logs Eligible** | ✓ Yes |
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccessgenerativeaiinsights) |
 
-## Schema (14 columns)
+## Schema (17 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccessgenerativeaiinsights)
 
@@ -29,6 +28,9 @@ Reference for NetworkAccessGenerativeAIInsights table in Azure Monitor Logs.
 | DestinationUrl | string | The URL of the generative AI endpoint accessed. |
 | EventId | string | Unique identifier for the generative AI event. |
 | EventType | string | The type of generative AI event that occurred. |
+| McpClientName | string | The name of the MCP client initiating the MCP communication. |
+| McpServerName | string | The name of the MCP server handling the MCP requests. |
+| SessionId | string | Unique identifier for the session. |
 | SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | SubActivity | string | The specific type of operation within the activity. |
 | TenantId | string | The Log Analytics workspace ID |

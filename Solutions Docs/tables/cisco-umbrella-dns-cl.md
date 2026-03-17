@@ -11,8 +11,7 @@
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes |
-| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Schema (15 columns)
 
@@ -36,12 +35,11 @@
 | TimeGenerated | datetime |
 | Timestamp_t | datetime |
 
-## Solutions (2)
+## Solutions (1)
 
 This table is used by the following solutions:
 
 - [CiscoUmbrella](../solutions/ciscoumbrella.md)
-- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 
 ## Connectors (2)
 
@@ -54,9 +52,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (22)
+## Content Items Using This Table (31)
 
-### Analytic Rules (10)
+### Analytic Rules (20)
 
 **GitHub Only:**
 
@@ -72,6 +70,16 @@ This table is ingested by the following connectors:
 | [Cisco Cloud Security - Request to blocklisted file type](../content/ciscoumbrella-cisco-cloud-security-request-to-blocklisted-file-type-de58ee9e-b229-4252-8537-41a4c2f4045e-4fbd74eb.md) |  |
 | [Cisco Cloud Security - URI contains IP address](../content/ciscoumbrella-cisco-cloud-security-uri-contains-ip-address-ee1818ec-5f65-4991-b711-bcf2ab7e36c3-8213dfcd.md) |  |
 | [Cisco Cloud Security - Windows PowerShell User-Agent Detected](../content/ciscoumbrella-cisco-cloud-security-windows-powershell-user-agent-detected-b12b3dab-d973-45af-b07e-e29bb34d8db9-9add09cc.md) |  |
+| [Cisco Umbrella - Connection to Unpopular Website Detected](../content/github-only-cisco-umbrella-connection-to-unpopular-website-detected-75297f62-10a8-4fc1-9b2a-12f25c6f05a7-f1ef1f4f.md) |  |
+| [Cisco Umbrella - Connection to non-corporate private network](../content/github-only-cisco-umbrella-connection-to-non-corporate-private-network-c9b6d281-b96b-4763-b728-9a04b9fe1246-d0eaf302.md) |  |
+| [Cisco Umbrella - Crypto Miner User-Agent Detected](../content/github-only-cisco-umbrella-crypto-miner-user-agent-detected-b619d1f1-7f39-4c7e-bf9e-afbb46457997-0f9ddd1e.md) |  |
+| [Cisco Umbrella - Empty User Agent Detected](../content/github-only-cisco-umbrella-empty-user-agent-detected-2b328487-162d-4034-b472-59f1d53684a1-905ba02a.md) |  |
+| [Cisco Umbrella - Hack Tool User-Agent Detected](../content/github-only-cisco-umbrella-hack-tool-user-agent-detected-8d537f3c-094f-430c-a588-8a87da36ee3a-e3f1aadd.md) |  |
+| [Cisco Umbrella - Rare User Agent Detected](../content/github-only-cisco-umbrella-rare-user-agent-detected-8c8de3fa-6425-4623-9cd9-45de1dd0569a-0e96a6a6.md) |  |
+| [Cisco Umbrella - Request Allowed to harmful/malicious URI category](../content/github-only-cisco-umbrella-request-allowed-to-harmful-malicious-uri-category-d6bf1931-b1eb-448d-90b2-de118559c7ce-7f7031e1.md) |  |
+| [Cisco Umbrella - Request to blocklisted file type](../content/github-only-cisco-umbrella-request-to-blocklisted-file-type-de58ee9e-b229-4252-8537-41a4c2f4045e-098588eb.md) |  |
+| [Cisco Umbrella - URI contains IP address](../content/github-only-cisco-umbrella-uri-contains-ip-address-ee1818ec-5f65-4991-b711-bcf2ab7e36c3-33d6f7f0.md) |  |
+| [Cisco Umbrella - Windows PowerShell User-Agent Detected](../content/github-only-cisco-umbrella-windows-powershell-user-agent-detected-b12b3dab-d973-45af-b07e-e29bb34d8db9-f6bce1e2.md) |  |
 
 ### Hunting Queries (10)
 
@@ -90,19 +98,13 @@ This table is ingested by the following connectors:
 | [Cisco Cloud Security - Proxy 'Allowed' to unreliable categories.](../content/ciscoumbrella-cisco-cloud-security-proxy-'allowed'-to-unreliable-categories.-daf2f3cf-0f0d-45c1-b428-3c23d643859b-b99f1692.md) |  |
 | [Cisco Cloud Security - Requests to uncategorized resources](../content/ciscoumbrella-cisco-cloud-security-requests-to-uncategorized-resources-de2ec986-ee24-465f-adf2-b718997074c1-635d0044.md) |  |
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [CiscoUmbrella](../solutions/ciscoumbrella.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [CiscoUmbrella](../content/ciscoumbrella-ciscoumbrella-dcc07ffb.md) |  |
-
-**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 ## Parsers Using This Table (2)
 

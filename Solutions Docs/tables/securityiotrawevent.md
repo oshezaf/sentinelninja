@@ -11,11 +11,10 @@ Reference for SecurityIoTRawEvent table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Security |
-| **Basic Logs Eligible** | ✗ No |
-| **Supports Transformations** | ✓ Yes |
+| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityiotrawevent) |
-| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
 
 ## Schema (15 columns)
 
@@ -39,23 +38,7 @@ Reference for SecurityIoTRawEvent table in Azure Monitor Logs.
 | TimeStamp | datetime | The date and time the raw event was first detected. |
 | Type | string | The name of the table |
 
-## Solutions (1)
-
-This table is used by the following solutions:
-
-- [Team Cymru Scout](../solutions/team-cymru-scout.md)
-
 ---
-
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 ## Parsers Using This Table (3)
 

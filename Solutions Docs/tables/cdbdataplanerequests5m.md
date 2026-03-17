@@ -12,7 +12,6 @@ Reference for CDBDataPlaneRequests5M table in Azure Monitor Logs.
 |:----------|:------|
 | **Category** | Audit, Azure Resources |
 | **Basic Logs Eligible** | ✓ Yes |
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cdbdataplanerequests5m) |
 
@@ -47,7 +46,7 @@ Reference for CDBDataPlaneRequests5M table in Azure Monitor Logs.
 | PartitionId | string | The physical partition ID for the Cosmos DB container against which the requests in this interval were issued. |
 | RegionName | string | The Azure region to which the requests in this interval were issued. |
 | RequestCount | real | The number of requests aggregated in this interval. |
-| RequestResourceId | string | The ID of the specific Cosmos DB resource within the account against which the data plane requests in the interval were executed. |
+| RequestResourceId | string | Deprecated. The ID of the specific Cosmos DB resource within the account against which the data plane requests in the interval were executed. |
 | RequestResourceType | string | The Cosmos DB resource type within the account against which the data plane requests in the interval were executed, can be one of Database, Collection, Document, Attachment, User, Permission, StoredProcedure, Trigger, UserDefinedFunction, Offer. |
 | ResourceTokenPermissionId | string | The ID of the resource token associated with the resource accessed by the requests in this interval. |
 | ResourceTokenPermissionMode | string | The permission mode of the resource token associated with the resource accessed by this requests in this interval. |

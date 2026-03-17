@@ -11,13 +11,12 @@ Reference for NetworkAccessConnectionEvents table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | IT & Management Tools, Network, Security |
-| **Basic Logs Eligible** | ✓ Yes |
-| **Supports Transformations** | ✓ Yes |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccessconnectionevents) |
-| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
 
-## Schema (42 columns)
+## Schema (45 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccessconnectionevents)
 
@@ -29,14 +28,17 @@ Reference for NetworkAccessConnectionEvents table in Azure Monitor Logs.
 | AppId | string | Destination Application ID accessed in Azure AD during the transaction. |
 | ClientDeviceName | string | The name of the client device making the connection. |
 | ConnectionId | string | Unique identifier representing the connection this traffic log was initiated from. |
+| CrossTenantAccessType | string | Indication of B2B connection. |
 | DestinationFqdn | string | The destination device hostname, including domain information when available. |
 | DestinationIp | string | The IP address of the connection or session destination. |
 | DestinationPort | int | The destination IP port. |
 | DeviceCategory | string | Device type the transaction originated from. Client, Branch. |
 | DeviceId | string | The ID of the source device as reported in the record. |
+| DeviceJoinType | string | Device registration type, for BYOD scenarios. |
 | DeviceOperatingSystem | string | The client connecting operating system type. |
 | DeviceOperatingSystemVersion | string | The client connecting operating system version. |
 | EventType | string | The type of the connection event. |
+| HomeTenantId | string | The home tenant ID for B2B scenarios. |
 | InitiatingProcessName | string | The process initiating the traffic transaction. |
 | IsLocal | bool | Represents if the connection was triggered by Intelligent Local Access. |
 | NetworkProtocol | string | The network protocol, IPv6 or IPv4. |

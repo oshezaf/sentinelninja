@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ | ✓ |
-| [`VMConnection`](../tables/vmconnection.md) | ✗ | ✗ | ? |
+| [`VMConnection`](../tables/vmconnection.md) | ? | ✗ | ? |
 
 ---
 

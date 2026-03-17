@@ -56,7 +56,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../tables/aadmanagedidentitysigninlogs.html"><code>AADManagedIdentitySignInLogs</code></a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"</code><br><code>OperationName !contains "external"</code><br><code>OperationName !contains "invite"</code><br><code>OperationName !contains "licnense"</code><br><code>OperationName contains "group"</code><br><code>OperationName contains "member"</code><br><code>OperationName contains "principal"</code><br><code>OperationName contains "role"</code><br><code>OperationName contains "user"</code></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">✓</td>
@@ -91,14 +91,14 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/alertevidence.html"><code>AlertEvidence</code></a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"</code></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">✓</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
-<td style="text-align: left;"><code>OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"</code><br><code>OperationName !contains "external"</code><br><code>OperationName !contains "invite"</code><br><code>OperationName !contains "licnense"</code><br><code>OperationName contains "group"</code><br><code>OperationName contains "member"</code><br><code>OperationName contains "principal"</code><br><code>OperationName contains "role"</code><br><code>OperationName contains "user"</code></td>
+<td style="text-align: left;"></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">✓</td>
@@ -112,7 +112,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a> 🔶</td>
-<td style="text-align: left;"><code>Category in "AzureFirewallApplicationRule,AzureFirewallNetworkRule,EntitlementManagement,FrontdoorWebApplicationFirewallLog,GatewayDiagnosticLog,GroupManagement,IKEDiagnosticLog,NetworkSecurityGroupEvent,RouteDiagnosticLog,TunnelDiagnosticLog,UserManagement,WebApplicationFirewallLogs,kube-audit"</code><br><code>Category contains "SQL"</code><br><code>ResourceProvider in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.KEYVAULT"</code><br><code>ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES,SERVERS/DATABASES"</code></td>
+<td style="text-align: left;"><code>Category in "AzureFirewallApplicationRule,AzureFirewallNetworkRule,EntitlementManagement,FrontdoorWebApplicationFirewallLog,GatewayDiagnosticLog,GroupManagement,IKEDiagnosticLog,NetworkSecurityGroupEvent,RouteDiagnosticLog,TunnelDiagnosticLog,UserManagement,WebApplicationFirewallLogs,kube-audit"</code><br><code>Category contains "SQL"</code><br><code>Resource == "SOC-NS-AG-WAFV2"</code><br><code>ResourceProvider in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.KEYVAULT"</code><br><code>ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES,SERVERS/DATABASES"</code></td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">✗</td>
@@ -203,7 +203,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
-<td style="text-align: left;"><code>ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"</code></td>
+<td style="text-align: left;"></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">✓</td>
@@ -225,7 +225,7 @@
 <tr>
 <td style="text-align: left;"><a href="../tables/heartbeat.html"><code>Heartbeat</code></a></td>
 <td style="text-align: left;"></td>
-<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">?</td>
 </tr>
@@ -288,7 +288,7 @@
 <tr>
 <td style="text-align: left;"><a href="../tables/operation.html"><code>Operation</code></a></td>
 <td style="text-align: left;"></td>
-<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">?</td>
 </tr>
@@ -379,21 +379,21 @@
 <tr>
 <td style="text-align: left;"><a href="../tables/usage.html"><code>Usage</code></a></td>
 <td style="text-align: left;"></td>
-<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/vmcomputer.html"><code>VMComputer</code></a></td>
 <td style="text-align: left;"></td>
-<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/vmprocess.html"><code>VMProcess</code></a></td>
 <td style="text-align: left;"></td>
-<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">?</td>
 </tr>

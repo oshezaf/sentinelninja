@@ -325,7 +325,7 @@ This solution includes **153 content item(s)**:
 | [corelight_stepping](../parsers/corelight-stepping.md) | - | [`Corelight_v2_stepping_CL`](../tables/corelight-v2-stepping-cl.md) *(read)* |
 | [corelight_stun](../parsers/corelight-stun.md) | - | [`Corelight_v2_stun_CL`](../tables/corelight-v2-stun-cl.md) *(read)* |
 | [corelight_stun_nat](../parsers/corelight-stun-nat.md) | - | [`Corelight_v2_stun_nat_CL`](../tables/corelight-v2-stun-nat-cl.md) *(read)* |
-| [corelight_suri_aggregations](../parsers/corelight-suri-aggregations.md) | - | [`impact_score`](../tables/impact-score.md) *(read)* |
+| [corelight_suri_aggregations](../parsers/corelight-suri-aggregations.md) | - | - |
 | [corelight_suricata_corelight](../parsers/corelight-suricata-corelight.md) | - | [`Corelight_v2_suricata_corelight_CL`](../tables/corelight-v2-suricata-corelight-cl.md) *(read)* |
 | [corelight_suricata_eve](../parsers/corelight-suricata-eve.md) | - | [`Corelight_v2_suricata_eve_CL`](../tables/corelight-v2-suricata-eve-cl.md) *(read)* |
 | [corelight_suricata_stats](../parsers/corelight-suricata-stats.md) | - | [`Corelight_v2_suricata_stats_CL`](../tables/corelight-v2-suricata-stats-cl.md) *(read)* |

@@ -36,11 +36,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
@@ -53,10 +53,6 @@
 <tr>
 <td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceprocessevents-table">View Documentation</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -443,7 +439,7 @@
 </tr>
 </tbody>
 </table>
-<h2>Solutions (12)</h2>
+<h2>Solutions (13)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/attacker-tools-threat-protection-essentials.html">Attacker Tools Threat Protection Essentials</a></li>
@@ -457,6 +453,7 @@
 <li><a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a></li>
 <li><a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a></li>
 <li><a href="../solutions/microsoftdefenderforendpoint.html">MicrosoftDefenderForEndpoint</a></li>
+<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 <li><a href="../solutions/zinc-open-source.html">Zinc Open Source</a></li>
 </ul>
 <h2>Connectors (1)</h2>
@@ -476,8 +473,8 @@
 </tbody>
 </table>
 <hr />
-<h2>Content Items Using This Table (97)</h2>
-<h3>Analytic Rules (41)</h3>
+<h2>Content Items Using This Table (362)</h2>
+<h3>Analytic Rules (48)</h3>
 <p><strong>In solution <a href="../solutions/attacker-tools-threat-protection-essentials.html">Attacker Tools Threat Protection Essentials</a>:</strong></p>
 <table>
 <thead>
@@ -650,7 +647,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-potential-build-process-compromise-mde-1bf6e165-5e32-420e-ab4f-0da8558a8be2-c676927e.html">Potential Build Process Compromise - MDE</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActionType in "FileCreated,FileModified"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-qakbot-campaign-self-deletion-47c02e21-3949-4e05-a28e-576cd75ff6f6-a7a7167c.html">Qakbot Campaign Self Deletion</a></td>
@@ -697,7 +694,46 @@
 </tr>
 </tbody>
 </table>
-<h3>Hunting Queries (52)</h3>
+<p><strong>Standalone Content:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-audit-policy-manipulation-using-auditpol-utility-66276b14-32c5-4226-88e3-080dacc31ce1-c1e75d10.html">Audit policy manipulation using auditpol utility</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-dev-0228-file-path-hashes-november-2021-3b443f22-9be9-4c35-ac70-a94757748439-59975a39.html">Dev-0228 File Path Hashes November 2021</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-email-access-via-active-sync-2f561e20-d97b-4b13-b02d-18b34af6e87c-db926024.html">Email access via active sync</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-identify-mango-sandstorm-powershell-commands-ce74dc9a-cb3c-4081-8c2f-7d39f6b7bae1-0c4365d3.html">Identify Mango Sandstorm powershell commands</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-sunburst-suspicious-solarwinds-child-processes-4a3073ac-7383-48a9-90a8-eb6716183a54-79d6bcd9.html">SUNBURST suspicious SolarWinds child processes</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-security-service-registry-acl-modification-473d57e6-f787-435c-a16b-b38b51fa9a4b-e336a7bc.html">Security Service Registry ACL Modification</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-unusual-identity-creation-using-exchange-powershell-0a3f4f4f-46ad-4562-acd6-f17730a5aef4-15284931.html">Unusual identity creation using exchange powershell</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries (307)</h3>
 <p><strong>In solution <a href="../solutions/cyware.html">Cyware</a>:</strong></p>
 <table>
 <thead>
@@ -959,6 +995,14 @@
 </thead>
 <tbody>
 <tr>
+<td style="text-align: left;"><a href="../content/standalone-content-list-all-the-vscode-extensions-which-are-installed-on-a-user-system-75830932-794e-4a18-b62f-cc2a010080b5-7d90993c.html">List all the VScode Extensions which are installed on a user system</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-mde-findspowershellexecutionevents-a8767489-6dd5-4173-a49e-7f0365dd6e16-361ac29b.html">MDE_FindsPowerShellExecutionEvents</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="../content/microsoftdefenderforendpoint-sunburst-suspicious-solarwinds-child-processes-4a3073ac-7383-48a9-90a8-eb6716183a54-27b732fb.html">SUNBURST suspicious SolarWinds child processes</a></td>
 <td style="text-align: left;"></td>
 </tr>
@@ -974,16 +1018,1028 @@
 </thead>
 <tbody>
 <tr>
+<td style="text-align: left;"><a href="../content/github-only-7-zip-prep-for-exfiltration-66d73c14-f888-4748-a0ae-609577fcb51f-5c78f93d.html">7-zip-prep-for-exfiltration</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-apt-baby-shark-26721b80-a9b7-4594-9b0f-ec21e5da1bc2-2d7f9282.html">APT Baby Shark</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-apt29-thinktanks-40446d6e-745d-4689-a477-6b6a43a15755-c2f9bfde.html">APT29 thinktanks</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-abuse.ch-recent-threat-feed-2bcdf59a-679d-4585-93e7-f14d674de205-f83323a5.html">Abuse.ch Recent Threat Feed</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-abuse.ch-recent-threat-feed-1-8bd9e7c0-82b9-43b4-b58e-53d1ee6d9180-d82c3247.html">Abuse.ch Recent Threat Feed (1)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-accessibility-features-a5649d8b-e54b-4e2b-925a-106bf838d69c-dbe14580.html">Accessibility Features</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-add-malicious-user-to-admins-and-rdp-users-group-via-powershell-44a201c4-502a-4b75-871e-a2dc7f6d2e98-f49eeb1a.html">Add malicious user to Admins and RDP users group via PowerShell</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-applocker-policy-design-assistant-7ae72c80-c114-43cd-bd99-46dab7c13338-5b32f24a.html">AppLocker Policy Design Assistant</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-backup-deletion-fc2c12c1-ee93-45c2-9a1f-f8a143ec3eb1-f98a2e92.html">Backup deletion</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-base64-detector-and-decoder-89fc1421-8387-4c2b-9bcb-75ead57ccb2c-25716cea.html">Base64 Detector and Decoder</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-base64encodepefile-1174ae5b-8ce9-4321-a4e2-99e5f016beed-0c3ad660.html">Base64encodePEFile</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.html">Baseline Comparison</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-bear-activity-gtr-2019-376d30db-e3ab-49fb-852a-00d1ade65a54-002c22c8.html">Bear Activity GTR 2019</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-bitsadmin-activity-2458e226-76e6-458c-8bf7-8766cc993b82-80426643.html">Bitsadmin Activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-cve-2021-36934-usage-detection-ab0afd3c-47fc-4a82-83ad-5c92528bdf08-7a7786df.html">CVE-2021-36934 usage detection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-check-for-multiple-signs-of-ransomware-activity-3b0a6901-6149-4856-bc6e-149ca654bc8c-fd676ca9.html">Check for multiple signs of ransomware activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-clearing-of-forensic-evidence-from-event-logs-using-wevtutil-4c086156-63ea-469c-bc85-c57e2ed4ac32-3c9fec5f.html">Clearing of forensic evidence from event logs using wevtutil</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-cloud-hopper-8c54c0f3-fbd4-426b-8f58-363efbdc09fa-9b001260.html">Cloud Hopper</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-crashing-applications-53b250f6-c684-4932-aca9-a06045a962d6-7eb5f0ac.html">Crashing Applications</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-create-account-ae177dc6-a3ba-474d-87a9-28ff7efb7b21-15687752.html">Create account</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-create-new-user-with-known-dev-0270-username-and-password-f2e7c61a-6e29-4ddf-ac2e-97eb7b37d621-2d31c2c7.html">Create new user with known DEV-0270 username and password</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-critical-user-management-operations-followed-by-disabling-of-system-restore-from-admin-accou-dcc15282-2bcb-496e-84db-3c90d0dc0a0c-dedc200e.html">Critical user management operations followed by disabling of System Restore from admin account</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-dllhost.exe-wmic-domain-discovery-dc612ff9-88ac-4968-97c1-6789cd48c5d8-a0ca5c33.html">DLLHost.exe WMIC domain discovery</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-dllhost.exe-file-creation-via-powershell-361aa11c-c7ad-4ef0-99fd-2ef52ddd2ba6-28f19422.html">DLLHost.exe file creation via PowerShell</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-darkside-046d30fc-02b5-4b5f-a244-9c0da92baa5e-df54a8d8.html">DarkSide</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-deletion-of-data-on-multiple-drives-using-cipher-exe-65d15781-c7bf-447e-8c33-a2a94e727bf4-28532750.html">Deletion of data on multiple drives using cipher exe</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-encoded-powershell-f58a7f64-acd3-4cf6-ab6d-be76130cf251-22e3fe7a.html">Detect Encoded Powershell</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-detect-malicious-use-of-msiexec-7a5597de-7e99-470d-944f-acb163b9cb14-a76d8af7.html">Detect Malicious use of MSIExec</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-disable-controlled-folders-176cd213-94d7-4984-9b3b-b787ed8a1c55-4366eb19.html">Disable Controlled Folders</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-disabling-services-via-registry-3c6038db-c915-42f3-b20e-22ac7ebb1182-fba16639.html">Disabling Services via Registry</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-discovering-potentially-tampered-devices-[nobelium]-ba850be4-2f02-40fb-834d-d0a9ac0672d3-378fbd79.html">Discovering potentially tampered devices [Nobelium]</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-discovery-for-highly-privileged-accounts-d3123681-8eed-4a6d-b0c0-05d0075e3e69-4520e089.html">Discovery for highly-privileged accounts</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-dopplepaymer-in-memory-malware-implant-c7927ab6-63c8-41bc-a5d7-fc15826e2b57-66cd1527.html">Dopplepaymer In-Memory Malware Implant</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-dragon-fly-0132d53e-8457-4ed3-b9be-e3ef5ea7d273-c2198cf3.html">Dragon Fly</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-electron-cve-2018-1000006-2953f075-035c-4803-9ea2-a9b0771ffc3d-1e8e8e25.html">Electron-CVE-2018-1000006</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-elise-backdoor-2a044f6d-a670-4977-9c7b-da556aa6c8d0-afbfaf05.html">Elise backdoor</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-email-data-exfiltration-via-powershell-1115e499-45a0-470c-b0ec-e2f204831341-1048dcae.html">Email data exfiltration via PowerShell</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-emojihunt-3e246f82-6a80-4cd3-8d4c-8afa2b7451d2-de1dd4f4.html">EmojiHunt</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-enumeration-of-users-&amp;-groups-for-lateral-movement-dde6f931-559e-4e21-9409-6286de59771e-844cbb61.html">Enumeration of users &amp; groups for lateral movement</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-equation-group-c2-communication-4f0fdeab-1d34-4c1e-9121-8ac800988de8-9c6a60fc.html">Equation Group C2 Communication</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-excel-macro-execution-fa2c1c3a-18f8-4c83-8501-ea110873f99f-9835a497.html">Excel Macro Execution</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-excel-launching-anomalous-processes-f387a52b-a1c3-43dc-b4cf-e6cbf895a3da-643b9b5f.html">Excel launching anomalous processes</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-executebase64decodedpayload-0c068643-049c-4c10-8771-ef3865627aa2-70736120.html">ExecuteBase64DecodedPayload</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-hostexportingmailboxandremovingexport[solarigate]-1a6f998a-b9a4-4030-bd58-6606d66608f9-3cb8218b.html">HostExportingMailboxAndRemovingExport[Solarigate]</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-hurricane-panda-activity-c8a459ae-cb3e-46c0-82b1-670649dd3e7a-f24f7fba.html">Hurricane Panda activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-identify-unusual-identity-additions-related-to-europium-5daf2787-98b1-4c38-8487-107076a97930-10a904d6.html">Identify unusual identity additions related to EUROPIUM</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-imminent-ransomware-26534fba-d2bf-449a-af40-c287c2874668-d6835d69.html">Imminent Ransomware</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-inhibit-recovery-by-disabling-tools-and-functionality-8490deec-067e-49d5-a617-a8f8b9ebd8bd-4f71e260.html">Inhibit recovery by disabling tools and functionality</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-judgement-panda-exfil-activity-ae8a5c5d-4cfb-4a59-9adb-eb6c6c219620-ec57df47.html">Judgement Panda exfil activity</a></td>
 <td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-lsass-credential-dumping-with-procdump-0b985ed8-aacd-41ba-9b17-489be9224159-bfd6b1c4.html">LSASS Credential Dumping with Procdump</a></td>
 <td style="text-align: left;"></td>
 </tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-lazagne-credential-theft-f699a3e0-598e-4177-a110-c53c1bfeb897-f3af78fe.html">LaZagne Credential Theft</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-lemonduck-competition-killer-9f6b9f77-0183-4d5b-89a3-761d308cbfad-ff475186.html">LemonDuck-competition-killer</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-lemonduck-component-download-structure-036bf8d8-954c-467a-8573-76f0fce614ff-3cbc2e53.html">LemonDuck-component-download-structure</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-lemonduck-component-names-bcb5f147-863a-4972-aec9-48f67cc24727-80a0561c.html">LemonDuck-component-names</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-lemonduck-defender-exclusions-a67288b7-a5e2-4cb8-b792-604f7485bfb1-69af1b16.html">LemonDuck-defender-exclusions</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-linux-dynoroot-cve-2018-1111-445a1251-b7ad-44db-8b86-51d79b34e726-01ef0666.html">Linux-DynoRoot-CVE-2018-1111</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-mitre-suspicious-events-132beb12-7146-45a5-9132-c82feee53b71-54da484f.html">MITRE - Suspicious Events</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-macoceanlotusbackdoor-02b7dd9d-397a-4726-9761-1130b663f8cf-632793fa.html">MacOceanLotusBackdoor</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-macoceanlotusdropper-1b7f5ba1-6712-4d74-ab88-182932b6af0d-6c1d88fc.html">MacOceanLotusDropper</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-make-folderpath-vogon-poetry-3dbe65c4-c2ba-4139-9d7e-bf551d50d600-0b5969aa.html">Make FolderPath Vogon Poetry</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-malware-in-recyclebin-5fa993a8-b9cd-419b-b67a-b783bf7dadbb-dbdf6f0b.html">Malware_In_recyclebin</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-masquerading-system-executable-e1528e63-165f-4810-b2eb-24a181a3011e-fb9138ba.html">Masquerading system executable</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-mass-account-password-change-4d8285d1-deac-4eb6-8cdf-267ed37ef39e-a1ea37c9.html">Mass account password change</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-modifying-the-registry-to-add-a-ransom-message-notification-acd4112f-5271-4680-ab2a-f07952d71888-52476027.html">Modifying the registry to add a ransom message notification</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-ntds-theft-2a03d94e-991b-44f7-a2b3-e12ce6fd6c57-25792428.html">NTDS theft</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-psexec-attrib-commands-28f56c18-a66e-4c51-94f6-3c8902cb58af-f76ba752.html">PSExec Attrib commands</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-password-protected-archive-creation-8ec6abaa-de36-4510-86c2-1a1aeeb004ab-6c569e72.html">Password Protected Archive Creation</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-possible-ransomware-related-destruction-activity-d1b322ed-87bf-491a-9bfe-2f19d84359ed-3a95a305.html">Possible Ransomware Related Destruction Activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-possible-teams-phishing-activity-ca7f7287-d688-4256-ae46-e68ad2f657c8-8b27fa17.html">Possible Teams phishing activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-possible-command-injection-attempts-against-azure-integration-runtimes-2d1a3e86-f1a0-49d0-b88a-55789e1d6660-cb9d3e64.html">Possible command injection attempts against Azure Integration Runtimes</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-potentialmicrosoftdefendertampering[solarigate]-3f16e2c2-c0ba-4286-be9a-f22d001d2de7-1bfa7717.html">PotentialMicrosoftDefenderTampering[Solarigate]</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-powershell-adding-exclusion-path-for-microsoft-defender-of-programdata-bd6e909c-dfb1-4f8f-a94a-14d417bbe87b-fd59d62c.html">PowerShell adding exclusion path for Microsoft Defender of ProgramData</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-powershell-downloads-c34d1d0e-1cf4-45d0-b628-a2cfde329182-85979262.html">PowerShell downloads</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-qakbot-discovery-activies-4c290208-c36d-4e57-8d6d-f7e790dc0d3f-308cfdf3.html">Qakbot discovery activies</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-qakbot-reconnaissance-activities-2faad0ef-63f4-40aa-98e8-b713d9a8b3f7-49785d74.html">Qakbot reconnaissance activities</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-ransomware-hits-healthcare-alternate-data-streams-use-90985951-5998-45d3-831f-8fd3c66ac9f9-afe8f059.html">Ransomware hits healthcare - Alternate Data Streams use</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-ransomware-hits-healthcare-cipher.exe-tool-deleting-data-afef7d05-0618-4bd7-9fbc-2e94ee764245-e7b55f90.html">Ransomware hits healthcare - Cipher.exe tool deleting data</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-ransomware-hits-healthcare-clearing-of-system-logs-24216c89-0e83-4b53-8eb7-3349e52c3703-e10b9cfd.html">Ransomware hits healthcare - Clearing of system logs</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-ransomware-hits-healthcare-robbinhood-activity-61ca48de-5973-4f9d-8f9c-e24776b6ba45-64c62cf3.html">Ransomware hits healthcare - Robbinhood activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-ransomware-hits-healthcare-turning-off-system-restore-c6387bdd-c0ee-4b88-bbc2-3897586ecdda-4825f973.html">Ransomware hits healthcare - Turning off System Restore</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-rare-firewall-rule-changes-using-netsh-3dc5dc8b-160b-407e-9925-24a91e3599df-309055ae.html">Rare firewall rule changes using netsh</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-rare-process-as-a-service-a60ac80f-dce6-43ec-b102-9ae8c094d5dc-8648e4a1.html">Rare-process-as-a-service</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-redmenshen-bpfdoor-backdoor-bfb8eaed-941c-4866-a2cc-d5d4465bfc2a-737c8d3e.html">RedMenshen-BPFDoor-backdoor</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-aeroadmin-create-process-f71acfc6-769e-484e-9918-4fe1b50e51c2-d6c6083c.html">Remote Management and Monitoring tool - AeroAdmin - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-ammyy-create-process-60b5405c-81b6-46b4-91ef-d668e06e727e-50a36273.html">Remote Management and Monitoring tool - Ammyy - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-anydesk-create-process-e9c26766-0fe4-49b6-ae27-c41c41aae094-cc6c7687.html">Remote Management and Monitoring tool - AnyDesk - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-anyviewer-create-process-e8b80bd6-79ce-4562-aac0-d3204089675a-7224b5f3.html">Remote Management and Monitoring tool - AnyViewer - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-atera-create-process-532c895a-75b9-4c9f-969c-30bb3cfb6ac7-77b5a168.html">Remote Management and Monitoring tool - Atera - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-awesun-create-process-007fcd0d-38c8-44a9-be56-827c4d57b150-0fdac034.html">Remote Management and Monitoring tool - AweSun - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-barracudarmm-create-process-1d86c50f-6a57-447a-b340-583e8099c7b3-9a81902c.html">Remote Management and Monitoring tool - BarracudaRMM - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-beyondtrust-create-process-ed311c3c-8c3c-440c-b1a4-2b613e0414df-5cee35d6.html">Remote Management and Monitoring tool - BeyondTrust - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-chromerdp-create-process-c218f38e-0004-4800-9312-88ebf3e6414a-af3e4fcd.html">Remote Management and Monitoring tool - ChromeRDP - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-connectwise-create-process-83f7b313-b955-4988-b524-b2da55c67b43-216e2f60.html">Remote Management and Monitoring tool - ConnectWise - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-dameware-create-process-b4b09d6f-bd13-489d-9ccb-2dbc772e7c56-89a39cb2.html">Remote Management and Monitoring tool - DameWare - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-desktopnow-create-process-5c854b68-79c8-4bd7-abe4-7c670b02c938-de52ffb6.html">Remote Management and Monitoring tool - DesktopNow - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-distantdesktop-create-process-cbc0887e-d1df-4a33-bef6-4794539d8ecb-bbee5a38.html">Remote Management and Monitoring tool - DistantDesktop - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-fleetdeck-create-process-6783cf8f-00f9-4784-b98d-c53ecd697946-08146460.html">Remote Management and Monitoring tool - FleetDeck - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-getscreen-create-process-c231063d-dff3-478f-8c5c-95417a111333-3b0faf46.html">Remote Management and Monitoring tool - GetScreen - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-islonline-create-process-dbcc7dcc-fa1e-46fa-84ee-06701c7094b8-df53f0f7.html">Remote Management and Monitoring tool - ISLOnline - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-iperiusremote-create-process-62e701c0-0c0d-4f8c-b6f6-f7428b9b255a-32391794.html">Remote Management and Monitoring tool - IperiusRemote - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-level-create-process-42ee6265-ed2d-42b6-9c69-095092dce2e3-a5577920.html">Remote Management and Monitoring tool - Level - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-litemanager-create-process-02481117-1b9e-4afa-8b88-b3b7e9089c91-10d36c80.html">Remote Management and Monitoring tool - LiteManager - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-logmein-create-process-4dae9fe6-6f66-421f-bdbf-979bed59b7c0-fd6d2343.html">Remote Management and Monitoring tool - LogMeIn - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-msp360-cloudberry-create-process-2ed71614-0c21-4a41-962a-386234d5d000-3cbb3db1.html">Remote Management and Monitoring tool - MSP360_CloudBerry - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-meshcentral-create-process-7306e156-49a7-4ff6-9d8f-d6e6d531e426-f4abe69a.html">Remote Management and Monitoring tool - MeshCentral - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-nable-create-process-16adb026-28ae-4b2e-b1b9-bd53f337eb29-42d16aaa.html">Remote Management and Monitoring tool - NAble - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-naverisk-create-process-3063ab0b-a34c-42f2-bcdd-8c5974cc47fd-d20920f0.html">Remote Management and Monitoring tool - Naverisk - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-netsupport-create-process-54ce8c70-403e-4659-88f7-8bd63a10fdca-2b3371f5.html">Remote Management and Monitoring tool - NetSupport - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-ninjarmm-create-process-a121db5b-c51a-4258-b520-1212824ad24f-eb0623b8.html">Remote Management and Monitoring tool - NinjaRMM - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-optitune-create-process-cd635304-7a01-40a1-8d95-d530cd3f51fe-088b12f9.html">Remote Management and Monitoring tool - OptiTune - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-pdq-create-process-262e8802-7dd0-4825-830f-3f0a034cc8b4-c81b4c52.html">Remote Management and Monitoring tool - PDQ - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-panorama9-create-process-277a8a9d-8f33-43ea-8977-0de619772d01-98e0a394.html">Remote Management and Monitoring tool - Panorama9 - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-pcvisit-create-process-5472e953-c247-4e89-b849-3b16b839aeb5-81a185d7.html">Remote Management and Monitoring tool - PcVisit - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-pulseway-create-process-f6f5c4c8-d942-447b-aa61-9d6df846b17f-2d35d665.html">Remote Management and Monitoring tool - Pulseway - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-rport-create-process-c9f414d3-beeb-4837-a5a1-cb5da313e37f-c945db67.html">Remote Management and Monitoring tool - RPort - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-realvnc-create-process-865f9d1e-a01a-46b9-a909-2f93fbab5331-b48bee2f.html">Remote Management and Monitoring tool - RealVNC - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-remotedesktopplus-create-process-6e98184a-6794-4c94-923b-d0ab052ca92e-aae7cec3.html">Remote Management and Monitoring tool - RemoteDesktopPlus - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-remotepc-create-process-9d0d3529-3e9d-4a37-9d77-edc30123f392-f6e7afa2.html">Remote Management and Monitoring tool - RemotePC - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-remoteutilities-create-process-3d1b2b49-432a-4592-bb9c-ef4b260736bc-9037f211.html">Remote Management and Monitoring tool - RemoteUtilities - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-rustdesk-create-process-a06c66b9-35be-4b73-9b9a-4f8710c52c94-45b704c5.html">Remote Management and Monitoring tool - RustDesk - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-screenmeet-create-process-ed216e3a-ff25-41da-821f-93be217af439-9b9a1088.html">Remote Management and Monitoring tool - ScreenMeet - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-servereye-create-process-620a171b-e35d-43cd-8544-b725421e3364-272baf30.html">Remote Management and Monitoring tool - ServerEye - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-showmypc-create-process-014b6036-6475-48f3-b859-0c47e48fb469-57fc4019.html">Remote Management and Monitoring tool - ShowMyPC - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-simplehelp-create-process-76d5ccb5-d3e0-4081-bced-74adadc26958-93a4d670.html">Remote Management and Monitoring tool - SimpleHelp - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-splashtop-create-process-19a50e60-549c-4708-a504-c25834157705-ce38a8f9.html">Remote Management and Monitoring tool - Splashtop - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-supremo-create-process-81c97abb-353e-4643-8321-9e3b1b67fc58-c18c78bc.html">Remote Management and Monitoring tool - SupRemo - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-syncromsp-create-process-f9919f87-a7ba-4f47-a942-e30c46eb7a7d-32a739f7.html">Remote Management and Monitoring tool - SyncroMSP - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-tacticalrmm-create-process-e4b2b90d-bd72-45a0-93b0-b9a2a8bd17c8-0cdf8f90.html">Remote Management and Monitoring tool - TacticalRMM - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-teamviewer-create-process-715e9eaf-cb93-4455-952f-744125677797-d5b870f6.html">Remote Management and Monitoring tool - TeamViewer - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-tigervnc-create-process-e44636e5-dcfa-4ba2-802c-db858c61ffd4-1aaf024f.html">Remote Management and Monitoring tool - TigerVNC - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-tightvnc-create-process-0170143d-c5b9-49c2-ad03-be86564a7855-dd990512.html">Remote Management and Monitoring tool - TightVNC - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-ultraviewer-create-process-ff759b20-a8c4-4a7d-85cd-3c335a676f09-33e12e0e.html">Remote Management and Monitoring tool - UltraViewer - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-xmreality-create-process-bbb3a927-18e6-471a-a8cc-5d080dd2b108-9ac169a3.html">Remote Management and Monitoring tool - XMReality - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-zohoassist-create-process-4a4e44ca-5cfb-40f4-b1d9-03e00aa55f82-74fecf25.html">Remote Management and Monitoring tool - ZohoAssist - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-mremoteng-create-process-a2d8dde6-007d-4bea-964d-97bb81006849-cdee76b0.html">Remote Management and Monitoring tool - mRemoteNG - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-monitoring-tool-parsec.app-create-process-c9634424-f700-45b6-a8ec-c2e3d3e2a82b-9e9020f7.html">Remote Management and Monitoring tool - parsec.app - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-remote-management-and-montioring-tool-action1-create-process-cab70ba2-e9e7-4f38-8b3c-0808fd4756a0-a7810838.html">Remote Management and Montioring tool - Action1 - Create Process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-renamed-rclone-exfil-2b2e8b89-ba54-48f9-a24f-b9ae16a7ef6d-1598b722.html">Renamed Rclone Exfil</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-shadow-copy-deletions-ff9a1c12-e448-55ff-a576-7f53caa32044-96f024d8.html">Shadow Copy Deletions</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-spoolsv-spawning-rundll32-49fb12a4-f0e9-4f18-a468-9722717774c6-0db26f82.html">Spoolsv Spawning Rundll32</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-stolen-images-execution-0e959fe8-f086-4497-b538-60fb0b5d8e37-ee68131b.html">Stolen Images Execution</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-stopping-multiple-processes-using-taskkill-f8e4bee5-bc59-45f9-86e5-3b0a1bd1b572-e7f9e21a.html">Stopping multiple processes using taskkill</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-stopping-processes-using-net-stop-70c0b10a-3596-4903-baf2-60b5d453bf8c-e1fdb682.html">Stopping processes using net stop</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-strrat-av-discovery-7ea16edd-7acc-4817-a06d-0e845b4a7260-f55d594c.html">StrRAT-AV-Discovery</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-strrat-malware-persistence-fa9ef60d-4025-490b-94bd-5bff2aa3b4a7-70d428bb.html">StrRAT-Malware-Persistence</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-suspicious-bitlocker-encryption-476c9326-c53d-495c-8a54-c304a43cb446-bfe8af16.html">Suspicious Bitlocker Encryption</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-suspicious-jscript-staging-comment-8495c33d-0048-447f-b1e5-27fa5e7f7417-310a112f.html">Suspicious JScript staging comment</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-suspicious-powershell-curl-flags-9cde2f21-35c9-452b-b149-ebbed3d0c7ae-d42c1e0e.html">Suspicious PowerShell curl flags</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-suspicious-tomcat-confluence-process-launch-500e4cf1-9c25-4dfa-88f1-a23d95407e35-164720e5.html">Suspicious Tomcat Confluence Process Launch</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-suspicious-process-event-creation-from-vmware-horizon-tomcatservice-afa7c7b7-7d1f-4898-9daf-b35500ff8f2f-fb0bc3c7.html">Suspicious process event creation from VMWare Horizon TomcatService</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-suspiciousenumerationusingadfind[nobelium]-9df6cf43-679c-4ffe-8da7-7b1174b17e5b-f139ed05.html">SuspiciousEnumerationUsingAdfind[Nobelium]</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-turning-off-system-restore-5de97d18-b12b-4acf-9c3e-c96a67e80312-a09a6a73.html">Turning off System Restore</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-turning-off-services-using-sc-exe-5c446a44-748e-48d3-9b13-fbd7dde5b164-ca85849a.html">Turning off services using sc exe</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-use-of-msbuild-as-lolbin-166c732a-a02e-4c7a-a441-cb74fe3c3f2d-b34f4050.html">Use of MSBuild as LOLBin</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-vmware-lpe-2022-22960-1d468d49-ffea-4daf-ba6b-72525ec17b61-15888824.html">VMWare-LPE-2022-22960</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-wastedlocker-downloader-4a8dec0a-2cfc-40a6-af59-e6657c26d0c1-ff4249a8.html">WastedLocker Downloader</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-webserver-executing-suspicious-applications-1a9dfc1d-6dd2-42e5-81ef-fb90f3d96239-bcc646c8.html">Webserver Executing Suspicious Applications</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-zip-doc-word-launching-mshta-e9924adb-3f5b-4ef2-8672-89ae381226f9-304a3d04.html">Zip-Doc - Word Launching MSHTA</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-alt-data-streams-7d8692e0-e643-43cb-ac77-6efc5a6b7f4d-95ce681f.html">alt-data-streams</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-anomalous-payload-delivered-from-iso-file-3539f855-611c-4787-b8a9-e3437f138805-3eb29c28.html">anomalous-payload-delivered-from-iso-file</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-app-armor-stopped-a188fa21-dd3a-4cf9-910b-1384711f7dce-d7b5a08f.html">app-armor-stopped</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-apt-sofacy-36a6028d-f977-455f-be11-669e993a25d6-cc5ef74d.html">apt sofacy</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-apt-sofacy-zebrocy-92f02b0b-cd8e-4d49-957c-5ad0ee86da65-f6430eae.html">apt sofacy zebrocy</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-apt-ta17-293a-ps-6ee810f8-aeca-45c7-81d8-5646ed558961-3136bb9c.html">apt ta17 293a ps</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-apt-tropictrooper-f035c5e9-af5f-4ba7-8242-03faf3e096cf-872d7766.html">apt tropictrooper</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-apt-unidentified-nov-18-04990281-436c-4dff-aff9-bcd4417d0937-b8ce05ab.html">apt unidentified nov 18</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-check-for-shadowhammer-activity-implant-fb6f89ae-4af3-4c37-8f12-d719e882e8a5-da57d533.html">check-for-shadowhammer-activity-implant</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-clear-system-logs-5aa2b168-ab4f-44ab-8668-7845c7defcb1-86c8d25b.html">clear-system-logs</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-cobalt-strike-invoked-w-wmi-a0063a56-668f-4661-a00e-5ea82cd2ed4a-093d11a2.html">cobalt-strike-invoked-w-wmi</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-confluence-weblogic-targeted-8b8be25f-1bc0-4d57-81a7-76ef97f1d64f-6b0dcc76.html">confluence-weblogic-targeted</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-cve-2019-0808-set-scheduled-task-80cb5ddb-baf2-4eb2-9751-8f77c072eb4d-0240f385.html">cve-2019-0808-set-scheduled-task</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-cypherpunk-exclusive-commands-2affa440-24b5-48b2-a377-d5968a499658-1db07105.html">cypherpunk-exclusive-commands</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-cypherpunk-remote-exec-w-psexesvc-6941f6b3-9e08-4f45-ac26-fe4a23d4d613-88e2a42b.html">cypherpunk-remote-exec-w-psexesvc</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-deleting-data-w-cipher-tool-ccf00363-6636-4748-9df5-a22f6cb977bd-1bedad11.html">deleting-data-w-cipher-tool</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-anomalous-process-trees-a3bbacd9-7e8a-4dbc-a168-d08740f9904e-27eb50c7.html">detect-anomalous-process-trees</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-cve-2019-0863-angrypolarbearbug2-exploit-8cc1b312-46c6-4f41-bc66-f8a12fac7e67-8d64f829.html">detect-cve-2019-0863-AngryPolarBearBug2-exploit</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-cve-2019-0973-installerbypass-exploit-9c721e08-0a1b-4baf-b3ea-262dc1831faa-fc7fa9dc.html">detect-cve-2019-0973-installerbypass-exploit</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-cve-2019-1129-byebear-exploit-e9ff9991-7e5e-4bd4-8dea-e38db7e0027e-cd061490.html">detect-cve-2019-1129-byebear-exploit</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-cyzfc-activity-2-cbfd03f0-34c7-4e03-af37-50eae2892b38-5e555132.html">detect-cyzfc-activity (2)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-cyzfc-activity-3-5c9c8f5c-01cf-4670-9beb-ee90e0a4ec58-659ab825.html">detect-cyzfc-activity (3)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-doublepulsar-execution-10a17179-d143-476d-80cd-c5a6cca66d59-94331698.html">detect-doublepulsar-execution</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-exploitation-of-cve-2018-8653-1f541cc3-2c46-4f2a-9b4b-e082f25ec369-55a4893d.html">detect-exploitation-of-cve-2018-8653</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-impacket-atexec-75e3a1b2-bd6d-4e79-8c74-85a3bc0b0617-a33eaf14.html">detect-impacket-atexec</a></td>
+<td style="text-align: left;"><code>ActionType in "NamedPipeEvent,RegistryKeyCreated"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-impacket-dcomexec-3069ee4c-68a2-4512-9048-4751bc0fbac2-d07da8d4.html">detect-impacket-dcomexec</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-impacket-psexec-module-6e6e6486-1bfc-4de0-bcbe-1ed88dfee2a1-ba6e359d.html">detect-impacket-psexec-module</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-f0a94abb.html">detect-impacket-wmiexec</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-32647bb7.html">detect-impacket-wmiexec</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-afdcfc01.html">detect-impacket-wmiexec</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-mailsniper-726085be-fa36-4b0f-991a-b5bc8fe53d87-3a39373b.html">detect-mailsniper</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-malicious-rar-extraction-dac6bcd8-35c9-4937-88e8-3b1c00dcebe2-a606a2c1.html">detect-malicious-rar-extraction</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-malicious-use-of-msiexec-7a5597de-7e99-470d-944f-acb163b9cb14-83379a5e.html">detect-malicious-use-of-msiexec</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-malicious-use-of-msiexec-mimikatz-dc75c3e4-ed46-4183-b1c1-c075c2a4a6d5-92db5cc9.html">detect-malicious-use-of-msiexec-mimikatz</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-malicious-use-of-msiexec-powershell-1189dc7d-6d2a-4aa9-ad5f-bebed51474d9-a77a263b.html">detect-malicious-use-of-msiexec-powershell</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-nbtscan-activity-28ebbb87-535b-4ba0-80f4-6fbf80b7c55a-2d50bb55.html">detect-nbtscan-activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-office-applications-spawning-msdt-cve-2022-30190-cd1c9815-1f2c-483e-a875-b81bfcc1489b-e726503c.html">detect-office-applications-spawning-msdt-CVE-2022-30190</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-office-products-spawning-wmic-2c0a068e-b30c-4e6a-928c-f05b60c43066-62e45e0a.html">detect-office-products-spawning-wmic</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-prifou-pua-62bc4944-46dd-4c2f-ba04-72837bbfec3f-6e8f169c.html">detect-prifou-pua</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-steganography-exfiltration-e0003bf6-b5f2-4dd1-a130-8651eb0b9f04-5c9b5fd7.html">detect-steganography-exfiltration</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-suspicious-commands-initiated-by-web-server-processes-7fdc5f4a-700d-4713-abfc-181f02968726-bf7ed421.html">detect-suspicious-commands-initiated-by-web-server-processes</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-suspicious-mshta-usage-9462573d-09e3-4878-a118-db5c964228e0-6227264f.html">detect-suspicious-mshta-usage</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-uac-elevation-e1f15a3e.html">detect-uac-elevation</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-web-server-exploit-doublepulsar-da3b2b82-74a0-4b0e-8ef7-ac43515b4c70-6db82011.html">detect-web-server-exploit-doublepulsar</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-doppelpaymer-34ade758-9e1e-4e65-9adc-1b8d6f081ebf-c10a27a2.html">doppelpaymer</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-doppelpaymer-procdump-ce3cc53c-14a7-4ee5-95c6-b26cbc01d20b-f51f5671.html">doppelpaymer-procdump</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-doppelpaymer-psexec-82ab54b5-6387-4d84-b04f-165115272fae-dcbd5254.html">doppelpaymer-psexec</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-doppelpaymer-stop-services-a1c2f319-21a9-4f63-a130-cc1875123fe5-19ebe346.html">doppelpaymer-stop-services</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-evasive-powershell-executions-33e69a06-206e-4eda-930d-13d2f61f9185-3dec70e4.html">evasive-powershell-executions</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-evasive-powershell-strings-d08b4ce0-3c97-4637-9577-0856f6cdd222-75db9af6.html">evasive-powershell-strings</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-exchange-powershell-snapin-loaded-f87ae1b7-ecd1-418f-bb2a-68b4a7658677-08d3c677.html">exchange-powershell-snapin-loaded</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-hiding-java-class-file-c5196191-609a-407f-a623-f37785eca019-3753e6c0.html">hiding-java-class-file</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-insider-threat-detection-queries-13-daa0abc7-08e6-45d4-86c3-5fd54aab0837-67df3bc0.html">insider-threat-detection-queries (13)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-insider-threat-detection-queries-14-81881945-a4e5-44bd-b36f-8b5a90cfb073-51658a32.html">insider-threat-detection-queries (14)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-insider-threat-detection-queries-2-1cdf6fe8-6232-48ba-bbd8-b9881c30e0e9-8b3f26dc.html">insider-threat-detection-queries (2)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-insider-threat-detection-queries-3-72e7f2c9-aba5-427e-b2ec-f68c191010ec-a0dafdae.html">insider-threat-detection-queries (3)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-insider-threat-detection-queries-8-2eb45b94-4848-4e02-9679-ceb10b2445f2-d3a1e6ac.html">insider-threat-detection-queries (8)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-java-executing-cmd-to-run-powershell-99a5a930-9ca6-440e-95f4-dfe23d217157-f57f275b.html">java-executing-cmd-to-run-powershell</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-jse-launched-by-word-da127884-b65b-4ccf-b178-320d9cac3e15-997616d5.html">jse-launched-by-word</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-kinsing-miner-download-b7d58293-7cb6-4e39-8788-03447f971f96-5458dc1f.html">kinsing-miner-download</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-launch-questd-w-osascript-4e186f05-8cff-4afa-a0c8-4f0f0e7aeb82-8ca89ebc.html">launch-questd-w-osascript</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-launching-base64-powershell[nobelium]-fd25665b-9376-4c38-b046-76757eff0e40-b99b9275.html">launching-base64-powershell[Nobelium]</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-launching-cmd-echo[nobelium]-c250fb07-a349-4c2c-a38c-2321e32235ca-1a9aeb03.html">launching-cmd-echo[Nobelium]</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-lazagne-97839232-ff2c-4924-983d-f21d25276e88-7a525651.html">lazagne</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-locate-shlayer-payload-decryption-activity-d405146b-47a7-4bcf-b2c5-ccf8a2db9a1d-b72a4b1f.html">locate-shlayer-payload-decryption-activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-locate-shlayer-payload-decrytion-activity-7abb6bbb-cb2b-4702-a96d-8d53b7a8e054-9df80a62.html">locate-shlayer-payload-decrytion-activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-locate-surfbuyer-downloader-decoding-activity-1f60df62-6551-48f6-8e65-64f61ff43def-c8ebac7f.html">locate-surfbuyer-downloader-decoding-activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-oceanlotus-apt32-files-d868871c-bdd6-45e9-9e9d-e3c4521654a7-df57d4d6.html">oceanlotus-apt32-files</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-office-apps-launching-wscipt-1d438d7a-be4b-4bee-a116-fac9a2a621c7-2f0d033b.html">office-apps-launching-wscipt</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-oracle-weblogic-executing-powershell-2397f77e-e33e-4658-9a81-fe9dbafb810d-8e8bbd09.html">oracle-webLogic-executing-powershell</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-powercat-download-12793a73-e49d-4b3d-bb87-e4d4a326d610-351e8878.html">powercat-download</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-powershell-activity-after-email-from-malicious-sender-0605673c-8363-40b3-bbe2-ac1a2c17d116-17a5b050.html">powershell-activity-after-email-from-malicious-sender</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-powershell-version-2.0-execution-76e64c0d-b640-4724-8096-4c4cda0ec6e0-2a33de7b.html">powershell-version-2.0-execution</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-procdump-lsass-credentials-0b985ed8-aacd-41ba-9b17-489be9224159-4d59622b.html">procdump-lsass-credentials</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-python-based-attacks-on-macos-5a227ae6-1f40-499a-a4cc-6f6a0cc4d286-f673d02d.html">python-based-attacks-on-macos</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-python-use-by-ransomware-macos-8d52dce6-6143-44e9-8ff5-a62f2df742b2-dd2119b7.html">python-use-by-ransomware-macos</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-qakbot-campaign-esentutl-a0784604-ef4d-43b9-8e31-d234c649eeda-fb8e32da.html">qakbot-campaign-esentutl</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-qakbot-campaign-process-injection-c07d24d5-7c97-4ac4-873e-b364695df045-6a03e3ed.html">qakbot-campaign-process-injection</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-qakbot-campaign-self-deletion-0ec8d8df-2a7f-4cc0-9bd4-64d8f5103e3b-792fdfb8.html">qakbot-campaign-self-deletion</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-qakbot-campaign-suspicious-javascript-1ef38d9a-7d3e-4313-a961-169bb23ff270-7d20d5f8.html">qakbot-campaign-suspicious-javascript</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-ransom-note-creation-macos-fbe63fdf-142f-4b0a-b73e-8f16aaf46be7-72efc9f8.html">ransom-note-creation-macos</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-rare-sch-task-with-activity-ce76992a-8cd6-4605-9f45-cde9aae87244-3f342058.html">rare_sch_task_with_activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-rce-on-vulnerable-server-ec7ec6bb-c15a-4d2b-9682-a92bf5a22c8e-24434d66.html">rce-on-vulnerable-server</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-regsvr32-rundll32-with-anomalous-parent-process-bef2bd1b-885a-40f4-b48f-6f5564cd81f3-e7a12a36.html">regsvr32-rundll32-with-anomalous-parent-process</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-reverse-shell-nishang-7490e437-edc2-40b3-87fe-45b736593deb-6e627042.html">reverse-shell-nishang</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-reverse-shell-nishang-base64-5d091733-0e7e-4331-b2f1-127cb36e516e-6eda3485.html">reverse-shell-nishang-base64</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-reverse-shell-ransomware-macos-936d985d-f44c-4ec7-81ae-7aa1995f940d-5fee050e.html">reverse-shell-ransomware-macos</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-robbinhood-evasion-75f492b5-b4ab-446e-8a9f-0607fbee2baa-4a767eb5.html">robbinhood-evasion</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-shimcache-flushed-cd90d859-0d8f-458e-9d96-7f2945fe87a6-02c815de.html">shimcache-flushed</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-sql-server-abuse-8ff94182-f58f-4377-914c-dca523b8e180-4afedbdd.html">sql-server-abuse</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-tomcat-8-executing-powershell-eb5c922d-37f2-4790-9fa2-efd113c0f6d9-860f194b.html">tomcat-8-executing-powershell</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-turn-off-system-restore-f4c234fd-2889-41b6-ad4b-df257adf882b-e2d318d8.html">turn-off-system-restore</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-umworkerprocess-unusual-subprocess-activity-13355269-f755-4b81-8a72-e80c3f4a8016-d4a98cc0.html">umworkerprocess-unusual-subprocess-activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-wadhrama-data-destruction-08502f9f-7a04-4608-b5ad-5cfa129c073b-29523ed8.html">wadhrama-data-destruction</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-wadhrama-ransomware-733c3a83-5950-496c-90f0-d66f0efa3c35-87eecddd.html">wadhrama-ransomware</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-wdigest-caching-05a01ec8-ecab-4f9a-9aae-8d8cc061fe05-30a7e092.html">wdigest-caching</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-wifikeys-ad5c7f75-95e0-4eb9-93e5-b1793ef405d6-88c8943c.html">wifikeys</a></td>
+<td style="text-align: left;"></td>
+</tr>
 </tbody>
 </table>
-<h3>Workbooks (4)</h3>
+<h3>Workbooks (7)</h3>
 <p><strong>In solution <a href="../solutions/hipaa-compliance.html">HIPAA Compliance</a>:</strong></p>
 <table>
 <thead>
@@ -1044,6 +2100,29 @@
 </tr>
 </tbody>
 </table>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-microsoftdefenderforendpoint-ac005534.html">MicrosoftDefenderForEndPoint</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-solarwindspostcompromisehunting-09062974.html">SolarWindsPostCompromiseHunting</a></td>
+<td style="text-align: left;"><code>ActionType == "RemoteInteractiveLogon"</code><br><code>ActionType == "LdapSearch"</code></td>
+</tr>
+</tbody>
+</table>
 <h2>Parsers Using This Table (1)</h2>
 <h3>ASIM Parsers (1)</h3>
 <table>
@@ -1064,8 +2143,8 @@
 </tr>
 </tbody>
 </table>
-<h2>Selection Criteria Summary (3 criteria, 3 total references)</h2>
-<p>References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.</p>
+<h2>Selection Criteria Summary (5 criteria, 5 total references)</h2>
+<p>References by type: 0 connectors, 5 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -1103,12 +2182,28 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>ActionType in "FileCreated,FileModified"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType in "NamedPipeEvent,RegistryKeyCreated"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><strong>Total</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;"><strong>5</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;"><strong>5</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1143,6 +2238,38 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>InboundConnectionAccepted</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>FileCreated</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>FileModified</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>NamedPipeEvent</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>RegistryKeyCreated</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>

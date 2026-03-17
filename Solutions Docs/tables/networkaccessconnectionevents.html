@@ -36,11 +36,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
@@ -50,13 +50,9 @@
 <td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccessconnectionevents">View Documentation</a></td>
 </tr>
-<tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
-</tr>
 </tbody>
 </table>
-<h2>Schema (42 columns)</h2>
+<h2>Schema (45 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccessconnectionevents">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -98,6 +94,11 @@
 <td style="text-align: left;">Unique identifier representing the connection this traffic log was initiated from.</td>
 </tr>
 <tr>
+<td style="text-align: left;">CrossTenantAccessType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indication of B2B connection.</td>
+</tr>
+<tr>
 <td style="text-align: left;">DestinationFqdn</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The destination device hostname, including domain information when available.</td>
@@ -123,6 +124,11 @@
 <td style="text-align: left;">The ID of the source device as reported in the record.</td>
 </tr>
 <tr>
+<td style="text-align: left;">DeviceJoinType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Device registration type, for BYOD scenarios.</td>
+</tr>
+<tr>
 <td style="text-align: left;">DeviceOperatingSystem</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The client connecting operating system type.</td>
@@ -136,6 +142,11 @@
 <td style="text-align: left;">EventType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of the connection event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HomeTenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The home tenant ID for B2B scenarios.</td>
 </tr>
 <tr>
 <td style="text-align: left;">InitiatingProcessName</td>

@@ -39,10 +39,6 @@
 <td style="text-align: left;">✓ Yes</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✗ No</td>
-</tr>
-<tr>
 <td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
 <td style="text-align: left;">✗ No</td>
 </tr>
@@ -52,7 +48,7 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (14 columns)</h2>
+<h2>Schema (17 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccessgenerativeaiinsights">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -97,6 +93,21 @@
 <td style="text-align: left;">EventType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of generative AI event that occurred.</td>
+</tr>
+<tr>
+<td style="text-align: left;">McpClientName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the MCP client initiating the MCP communication.</td>
+</tr>
+<tr>
+<td style="text-align: left;">McpServerName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the MCP server handling the MCP requests.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SessionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the session.</td>
 </tr>
 <tr>
 <td style="text-align: left;">SourceSystem</td>

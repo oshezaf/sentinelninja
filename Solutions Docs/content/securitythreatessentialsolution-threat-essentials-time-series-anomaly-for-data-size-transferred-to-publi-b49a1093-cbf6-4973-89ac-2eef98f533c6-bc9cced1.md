@@ -29,7 +29,7 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ | ? |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ | ✓ |
-| [`VMConnection`](../tables/vmconnection.md) | ✗ | ✗ | ? |
+| [`VMConnection`](../tables/vmconnection.md) | ? | ✗ | ? |
 
 ---
 

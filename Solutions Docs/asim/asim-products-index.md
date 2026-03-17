@@ -72,7 +72,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | [Palo Alto PanOS](#palo-alto-panos) | 1 | 1 | 1 |
 | [PostgreSQL](#postgresql) | 1 | 1 | 1 |
 | [Salesforce Service Cloud](#salesforce-service-cloud) | 1 | 1 | 1 |
-| [Security Events](#security-events) | 6 | 2 | 5 |
+| [Security Events](#security-events) | 6 | 2 | 2 |
 | [SentinelOne](#sentinelone) | 9 | 9 | 1 |
 | [SonicWall](#sonicwall) | 2 | 2 | 1 |
 | [Squid Proxy](#squid-proxy) | 1 | 1 | 1 |
@@ -871,7 +871,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 **Schemas:** ProcessEvent, RegistryEvent
 
-**Tables:** [ASIM_GetAccountType](../tables/asim-getaccounttype.md), [ASIM_ParseSecurityEvents](../tables/asim-parsesecurityevents.md), [ASIM_ParseWindowsEvents](../tables/asim-parsewindowsevents.md), [SecurityEvent](../tables/securityevent.md), [WindowsEvent](../tables/windowsevent.md)
+**Tables:** [SecurityEvent](../tables/securityevent.md), [WindowsEvent](../tables/windowsevent.md)
 
 ### Parsers
 
@@ -881,8 +881,8 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | ASim: [ASimProcessCreateMicrosoftWindowsEvents](asimprocesscreatemicrosoftwindowsevents.md)<br>vim: [vimProcessCreateMicrosoftWindowsEvents](vimprocesscreatemicrosoftwindowsevents.md) | ProcessEvent | [WindowsEvent](../tables/windowsevent.md) | 0.3.0 |
 | ASim: [ASimProcessTerminateMicrosoftSecurityEvents](asimprocessterminatemicrosoftsecurityevents.md)<br>vim: [vimProcessTerminateMicrosoftSecurityEvents](vimprocessterminatemicrosoftsecurityevents.md) | ProcessEvent | [SecurityEvent](../tables/securityevent.md) | 0.2 |
 | ASim: [ASimProcessTerminateMicrosoftWindowsEvents](asimprocessterminatemicrosoftwindowsevents.md)<br>vim: [vimProcessTerminateMicrosoftWindowsEvents](vimprocessterminatemicrosoftwindowsevents.md) | ProcessEvent | [WindowsEvent](../tables/windowsevent.md) | 0.2 |
-| ASim: [ASimRegistryEventMicrosoftSecurityEvent](asimregistryeventmicrosoftsecurityevent.md)<br>vim: [vimRegistryEventMicrosoftSecurityEvent](vimregistryeventmicrosoftsecurityevent.md) | RegistryEvent | [ASIM_GetAccountType](../tables/asim-getaccounttype.md), [ASIM_ParseSecurityEvents](../tables/asim-parsesecurityevents.md), [SecurityEvent](../tables/securityevent.md) | 0.3.1 |
-| ASim: [ASimRegistryEventMicrosoftWindowsEvent](asimregistryeventmicrosoftwindowsevent.md)<br>vim: [vimRegistryEventMicrosoftWindowsEvent](vimregistryeventmicrosoftwindowsevent.md) | RegistryEvent | [ASIM_GetAccountType](../tables/asim-getaccounttype.md), [ASIM_ParseWindowsEvents](../tables/asim-parsewindowsevents.md), [WindowsEvent](../tables/windowsevent.md) | 0.2.1 |
+| ASim: [ASimRegistryEventMicrosoftSecurityEvent](asimregistryeventmicrosoftsecurityevent.md)<br>vim: [vimRegistryEventMicrosoftSecurityEvent](vimregistryeventmicrosoftsecurityevent.md) | RegistryEvent | [SecurityEvent](../tables/securityevent.md) | 0.3.1 |
+| ASim: [ASimRegistryEventMicrosoftWindowsEvent](asimregistryeventmicrosoftwindowsevent.md)<br>vim: [vimRegistryEventMicrosoftWindowsEvent](vimregistryeventmicrosoftwindowsevent.md) | RegistryEvent | [WindowsEvent](../tables/windowsevent.md) | 0.2.1 |
 
 ## SentinelOne
 

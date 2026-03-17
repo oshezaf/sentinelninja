@@ -67,7 +67,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (3)
 
 ### Analytic Rules (1)
 
@@ -77,13 +77,19 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Samsung Knox - Application Privilege Escalation or Change Events](../content/samsung-knox-asset-intelligence-samsung-knox-application-privilege-escalation-or-change-events-215e89ca-cdbc-4661-b8b2-7041f6ecc7fb-d43356a9.md) |  |
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [Samsung Knox Asset Intelligence](../solutions/samsung-knox-asset-intelligence.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [SamsungKnoxAssetIntelligence](../content/samsung-knox-asset-intelligence-samsungknoxassetintelligence-db535420.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [SamsungKnoxAssetIntelligence](../content/github-only-samsungknoxassetintelligence-0d539170.md) |  |
 
 ---
 

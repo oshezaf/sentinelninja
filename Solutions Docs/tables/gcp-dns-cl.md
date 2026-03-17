@@ -64,12 +64,11 @@
 | timestamp_t | datetime |
 | Type | string |
 
-## Solutions (2)
+## Solutions (1)
 
 This table is used by the following solutions:
 
 - [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md)
-- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 
 ## Connectors (1)
 
@@ -81,7 +80,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (23)
+## Content Items Using This Table (22)
 
 ### Analytic Rules (11)
 
@@ -118,19 +117,13 @@ This table is ingested by the following connectors:
 | [Google DNS - Unexpected top level domains](../content/googlecloudplatformdns-google-dns-unexpected-top-level-domains-1823db08-2ba4-4624-900f-9be0f950ea57-0a238939.md) |  |
 | [Google DNS - Unusual top level domains](../content/googlecloudplatformdns-google-dns-unusual-top-level-domains-2aff9e01-d3bb-4455-94e3-66be758474bd-689a2946.md) |  |
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [GCPDNS](../content/googlecloudplatformdns-gcpdns-15de76e5.md) |  |
-
-**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 ## Parsers Using This Table (2)
 

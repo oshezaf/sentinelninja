@@ -11,12 +11,11 @@ Inventory of software installed on devices, including their version information 
 | Attribute | Value |
 |:----------|:------|
 | **Category** | MDE |
-| **Basic Logs Eligible** | ✓ Yes |
-| **Supports Transformations** | ✓ Yes |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmsoftwareinventory) |
 | **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvmsoftwareinventory-table) |
-| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
 
 ## Schema (17 columns)
 
@@ -42,7 +41,29 @@ Inventory of software installed on devices, including their version information 
 | TimeGenerated | datetime | Date and time when the record was generated |
 | Type | string | The name of the table |
 
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [Standalone Content](../solutions/standalone-content.md)
+
 ---
+
+## Content Items Using This Table (2)
+
+### Hunting Queries (2)
+
+**Standalone Content:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [MDE_SoftwareInventorybyOS](../content/standalone-content-mde-softwareinventorybyos-36aa42d5-c2f5-4ede-9400-d55366bf0255-0f191efc.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Find Software By Name and Version](../content/github-only-find-software-by-name-and-version-929d1046-11a9-40c1-977e-bd1984b30c31-dd87e6fe.md) |  |
 
 ---
 

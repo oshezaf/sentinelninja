@@ -10,8 +10,7 @@
 |:----------|:------|
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes |
-| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Schema (24 columns)
 
@@ -44,11 +43,10 @@
 | username | string |
 | version | string |
 
-## Solutions (2)
+## Solutions (1)
 
 This table is used by the following solutions:
 
-- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Vectra XDR](../solutions/vectra-xdr.md)
 
 ## Connectors (1)
@@ -61,15 +59,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (1)
 
-### Workbooks (2)
-
-**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
+### Workbooks (1)
 
 **In solution [Vectra XDR](../solutions/vectra-xdr.md):**
 

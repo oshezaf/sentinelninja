@@ -19,8 +19,8 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`AWSCloudTrail`](../tables/awscloudtrail.md) |  | ✓ | ✓ | ✓ |
-| [`AuditLogs`](../tables/auditlogs.md) | `OperationName == "Consent to application"`<br>`OperationName == "Disable Strong Authentication"`<br>`OperationName contains "password"` | ✓ | ✗ | ✓ |
-| [`AzureActivity`](../tables/azureactivity.md) |  | ✗ | ✗ | ✗ |
+| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ✓ |
+| [`AzureActivity`](../tables/azureactivity.md) | `OperationName == "Consent to application"`<br>`OperationName == "Disable Strong Authentication"`<br>`OperationName contains "password"` | ✗ | ✗ | ✗ |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ | ? |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |  | ✓ | ✓ | ✓ |
 | [`DeviceLogonEvents`](../tables/devicelogonevents.md) |  | ✓ | ✗ | ? |
@@ -28,7 +28,7 @@ This content item queries data from the following tables:
 | [`HuntingBookmark`](../tables/huntingbookmark.md) |  | ✓ | ✗ | ? |
 | [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | ? |
 | [`OfficeActivity`](../tables/officeactivity.md) |  | ✓ | ✗ | ✓ |
-| [`Operation`](../tables/operation.md) |  | ✗ | ✗ | ? |
+| [`Operation`](../tables/operation.md) |  | ? | ✗ | ? |
 | [`ProtectionStatus`](../tables/protectionstatus.md) |  | ✓ | ✗ | ? |
 | [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |
 | [`SecurityBaseline`](../tables/securitybaseline.md) |  | ✓ | ✗ | ? |
@@ -40,7 +40,7 @@ This content item queries data from the following tables:
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |  | ✓ | ✗ | ✗ |
 | [`Update`](../tables/update.md) |  | ✓ | ✗ | ? |
 | [`UpdateSummary`](../tables/updatesummary.md) |  | ✓ | ✗ | ? |
-| [`Usage`](../tables/usage.md) |  | ✗ | ✗ | ? |
+| [`Usage`](../tables/usage.md) |  | ? | ✗ | ? |
 
 ---
 

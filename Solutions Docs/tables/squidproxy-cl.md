@@ -11,8 +11,7 @@
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes |
-| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Schema (26 columns)
 
@@ -47,13 +46,12 @@
 | Url_s | string |
 | Username_s | string |
 
-## Solutions (3)
+## Solutions (2)
 
 This table is used by the following solutions:
 
 - [CustomLogsAma](../solutions/customlogsama.md)
 - [SquidProxy](../solutions/squidproxy.md)
-- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 
 ## Connectors (2)
 
@@ -65,16 +63,6 @@ This table is ingested by the following connectors:
 | [[Deprecated] Squid Proxy](../connectors/squidproxy.md) |  |
 
 ---
-
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 ## Parsers Using This Table (2)
 

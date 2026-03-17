@@ -21,7 +21,7 @@
 | **First Published** | 2022-02-15 |
 | **Last Updated** | 2026-02-09 |
 | **Solution Folder** | [iboss](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/iboss) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/iboss.iboss-sentinel-connector) · Rating: ★★★★☆ 4.2/5 (15 ratings) · Popularity: 🟡 Low (49%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/iboss.iboss-sentinel-connector) · Rating: ★★★★☆ 4.2/5 (16 ratings) · Popularity: 🟡 Low (49%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The iboss Solution provides means to connect your Threat Console to Microsoft Sentinel and enrich your instance with iboss URL event logs. Our logs are forwarded in Common Event Format (CEF) over Syslog and the configuration required can be completed on the iboss platform without the use of a proxy. Take advantage of our connector to garner critical data points and gain insight into security threats.

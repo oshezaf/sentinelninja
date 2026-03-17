@@ -32,15 +32,6 @@ This union parser includes parsers for the following products:
 | Microsoft Defender XDR | [_ASim_AlertEvent_MicrosoftDefenderXDR](asimalerteventmicrosoftdefenderxdr.md) |  |
 | SentinelOne | [_ASim_AlertEvent_SentinelOneSingularity](asimalerteventsentinelonesingularity.md) | [SentinelOne](../solutions/sentinelone.md) |
 
-## Source Tables
-
-This parser reads from the following tables:
-
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`ASimAlertEventMicrosoftDefenderXDR`](../asim/asimalerteventmicrosoftdefenderxdr.md) | ? | ? | ? |
-| [`ASimAlertEventSentinelOneSingularity`](../asim/asimalerteventsentinelonesingularity.md) | ? | ? | ? |
-
 ## Parameters
 
 | Name | Type | Default |

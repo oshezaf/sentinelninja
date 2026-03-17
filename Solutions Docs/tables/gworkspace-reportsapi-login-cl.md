@@ -36,12 +36,11 @@
 | login_type_s | string |
 | TimeGenerated | datetime |
 
-## Solutions (2)
+## Solutions (1)
 
 This table is used by the following solutions:
 
 - [GoogleWorkspaceReports](../solutions/googleworkspacereports.md)
-- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 
 ## Connectors (1)
 
@@ -53,7 +52,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (26)
+## Content Items Using This Table (25)
 
 ### Analytic Rules (10)
 
@@ -93,19 +92,13 @@ This table is ingested by the following connectors:
 | [GWorkspace - User reported calendar invite as spam](../content/googleworkspacereports-gworkspace-user-reported-calendar-invite-as-spam-181bda98-5da9-11ec-bf63-0242ac130002-91c2be7a.md) |  |
 | [GWorkspace - Users with several devices](../content/googleworkspacereports-gworkspace-users-with-several-devices-1087fb40-5da9-11ec-bf63-0242ac130002-691cd7c6.md) |  |
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [GoogleWorkspaceReports](../solutions/googleworkspacereports.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [GoogleWorkspace](../content/googleworkspacereports-googleworkspace-6948e392.md) |  |
-
-**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 ## Parsers Using This Table (2)
 

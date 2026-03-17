@@ -6,16 +6,12 @@
 
 ---
 
-Reference for NCCVMOrchestrationLogs table in Azure Monitor Logs.
-
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Azure Resources |
-| **Basic Logs Eligible** | ✓ Yes |
-| **Supports Transformations** | ✓ Yes |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/nccvmorchestrationlogs) |
-| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
 
 ## Schema (17 columns)
 
@@ -42,12 +38,6 @@ Reference for NCCVMOrchestrationLogs table in Azure Monitor Logs.
 | Type | string | The name of the table |
 
 ---
-
-## Resource Types
-
-This table collects data from the following Azure resource types:
-
-- `microsoft.networkcloud/clusters`
 
 ---
 

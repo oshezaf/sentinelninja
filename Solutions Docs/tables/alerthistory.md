@@ -12,7 +12,6 @@ Reference for AlertHistory table in Azure Monitor Logs.
 |:----------|:------|
 | **Category** | Azure Monitor |
 | **Basic Logs Eligible** | ✗ No |
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alerthistory) |
 

@@ -30,12 +30,11 @@
 | TimeGenerated | datetime |
 | Type | string |
 
-## Solutions (2)
+## Solutions (1)
 
 This table is used by the following solutions:
 
 - [Corelight](../solutions/corelight.md)
-- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 
 ## Connectors (1)
 
@@ -46,16 +45,6 @@ This table is ingested by the following connectors:
 | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) |  |
 
 ---
-
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 ## Parsers Using This Table (2)
 

@@ -6,6 +6,11 @@
 
 ---
 
+| Attribute | Value |
+|:----------|:------|
+| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
+| **Ingestion API Supported** | ✓ Yes |
+
 ## Schema (44 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/DuoSecurityTrustMonitor_CL.json)
@@ -57,7 +62,23 @@
 | triaged_as_interesting_b | bool |
 | type_s | string |
 
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [Standalone Content](../solutions/standalone-content.md)
+
 ---
+
+## Content Items Using This Table (1)
+
+### Analytic Rules (1)
+
+**Standalone Content:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Trust Monitor Event](../content/standalone-content-trust-monitor-event-8dcf7238-a7d0-4cfd-8d0c-b230e3cd9182-75684fe5.md) |  |
 
 ## Parsers Using This Table (1)
 

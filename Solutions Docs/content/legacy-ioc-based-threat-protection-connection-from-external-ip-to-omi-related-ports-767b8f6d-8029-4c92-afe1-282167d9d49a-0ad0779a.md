@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category == "AzureFirewallNetworkRule"` | ✗ | ✗ | ✗ |
 | [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`VMConnection`](../tables/vmconnection.md) |  | ✗ | ✗ | ? |
+| [`VMConnection`](../tables/vmconnection.md) |  | ? | ✗ | ? |
 
 ---
 

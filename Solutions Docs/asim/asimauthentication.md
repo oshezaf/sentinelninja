@@ -59,41 +59,6 @@ This union parser includes parsers for the following products:
 | VMware Carbon Black Cloud | [_ASim_Authentication_VMwareCarbonBlackCloud](asimauthenticationvmwarecarbonblackcloud.md) | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
 | Vectra | [_ASim_Authentication_VectraXDRAudit](asimauthenticationvectraxdraudit.md) | [Vectra XDR](../solutions/vectra-xdr.md) |
 
-## Source Tables
-
-This parser reads from the following tables:
-
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`ASimAuthenticationAADManagedIdentitySignInLogs`](../asim/asimauthenticationaadmanagedidentitysigninlogs.md) | ? | ? | ? |
-| [`ASimAuthenticationAADNonInteractiveUserSignInLogs`](../asim/asimauthenticationaadnoninteractiveusersigninlogs.md) | ? | ? | ? |
-| [`ASimAuthenticationAADServicePrincipalSignInLogs`](../asim/asimauthenticationaadserviceprincipalsigninlogs.md) | ? | ? | ? |
-| [`ASimAuthenticationAWSCloudTrail`](../asim/asimauthenticationawscloudtrail.md) | ? | ? | ? |
-| [`ASimAuthenticationBarracudaWAF`](../asim/asimauthenticationbarracudawaf.md) | ? | ? | ? |
-| [`ASimAuthenticationCiscoASA`](../asim/asimauthenticationciscoasa.md) | ? | ? | ? |
-| [`ASimAuthenticationCiscoISE`](../asim/asimauthenticationciscoise.md) | ? | ? | ? |
-| [`ASimAuthenticationCiscoMeraki`](../asim/asimauthenticationciscomeraki.md) | ? | ? | ? |
-| [`ASimAuthenticationCiscoMerakiSyslog`](../asim/asimauthenticationciscomerakisyslog.md) | ? | ? | ? |
-| [`ASimAuthenticationCrowdStrikeFalconHost`](../asim/asimauthenticationcrowdstrikefalconhost.md) | ? | ? | ? |
-| [`ASimAuthenticationGoogleWorkspace`](../asim/asimauthenticationgoogleworkspace.md) | ? | ? | ? |
-| [`ASimAuthenticationIllumioSaaSCore`](../asim/asimauthenticationillumiosaascore.md) | ? | ? | ? |
-| [`ASimAuthenticationM365Defender`](../asim/asimauthenticationm365defender.md) | ? | ? | ? |
-| [`ASimAuthenticationMD4IoT`](../asim/asimauthenticationmd4iot.md) | ? | ? | ? |
-| [`ASimAuthenticationMicrosoftWindowsEvent`](../asim/asimauthenticationmicrosoftwindowsevent.md) | ? | ? | ? |
-| [`ASimAuthenticationNative`](../asim/asimauthenticationnative.md) | ? | ? | ? |
-| [`ASimAuthenticationOktaSSO`](../asim/asimauthenticationoktasso.md) | ? | ? | ? |
-| [`ASimAuthenticationOktaV2`](../asim/asimauthenticationoktav2.md) | ? | ? | ? |
-| [`ASimAuthenticationPaloAltoCortexDataLake`](../asim/asimauthenticationpaloaltocortexdatalake.md) | ? | ? | ? |
-| [`ASimAuthenticationPostgreSQL`](../asim/asimauthenticationpostgresql.md) | ? | ? | ? |
-| [`ASimAuthenticationSalesforceSC`](../asim/asimauthenticationsalesforcesc.md) | ? | ? | ? |
-| [`ASimAuthenticationSentinelOne`](../asim/asimauthenticationsentinelone.md) | ? | ? | ? |
-| [`ASimAuthenticationSigninLogs`](../asim/asimauthenticationsigninlogs.md) | ? | ? | ? |
-| [`ASimAuthenticationSshd`](../asim/asimauthenticationsshd.md) | ? | ? | ? |
-| [`ASimAuthenticationSu`](../asim/asimauthenticationsu.md) | ? | ? | ? |
-| [`ASimAuthenticationSudo`](../asim/asimauthenticationsudo.md) | ? | ? | ? |
-| [`ASimAuthenticationVMwareCarbonBlackCloud`](../asim/asimauthenticationvmwarecarbonblackcloud.md) | ? | ? | ? |
-| [`ASimAuthenticationVectraXDRAudit`](../asim/asimauthenticationvectraxdraudit.md) | ? | ? | ? |
-
 ## Parameters
 
 | Name | Type | Default |

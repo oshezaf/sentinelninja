@@ -1,6 +1,6 @@
-# ⚠️ IPinfo
+# IPinfo: IP geolocation & intelligence database
 
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+*Solution: IPinfo*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ipinfo.svg" alt="IPinfo Logo" width="75" height="75">
 
@@ -19,7 +19,9 @@
 | **Version** | 3.0.1 |
 | **Author** | IPinfo |
 | **First Published** | 2024-05-02 |
+| **Last Updated** | 2026-03-12 |
 | **Solution Folder** | [IPinfo](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IPinfo) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/idbllc1687537942583.microsoft-sentinel-solution-ipinfo-ipintelligence) · Popularity: ⚪ Very Low (0%) |
 
 The IPinfo data connectors installs Azure Function app to download different datasets like standard_location, standard_privacy and standard_company and insert them into custom log tables in Microsoft Sentinel
 

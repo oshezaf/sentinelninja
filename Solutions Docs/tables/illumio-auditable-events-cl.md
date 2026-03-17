@@ -10,8 +10,7 @@
 |:----------|:------|
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes |
-| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Schema (13 columns)
 
@@ -33,12 +32,11 @@
 | TimeGenerated | datetime |
 | version | int |
 
-## Solutions (2)
+## Solutions (1)
 
 This table is used by the following solutions:
 
 - [IllumioSaaS](../solutions/illumiosaas.md)
-- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 
 ## Connectors (1)
 
@@ -50,7 +48,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (8)
+## Content Items Using This Table (7)
 
 ### Analytic Rules (6)
 
@@ -65,19 +63,13 @@ This table is ingested by the following connectors:
 | [Illumio VEN Offline Detection Rule](../content/illumiosaas-illumio-ven-offline-detection-rule-ec07fcd3-724f-426d-9f53-041801ca5f6c-43578bfc.md) |  |
 | [Illumio VEN Suspend Detection Rule](../content/illumiosaas-illumio-ven-suspend-detection-rule-7379f752-18a2-43ca-8b74-70747dd792f8-c5108207.md) |  |
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [IllumioSaaS](../solutions/illumiosaas.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [IllumioAuditableEvents](../content/illumiosaas-illumioauditableevents-7d7e85b3.md) |  |
-
-**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 ## Parsers Using This Table (2)
 

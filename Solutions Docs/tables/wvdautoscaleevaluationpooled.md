@@ -6,13 +6,9 @@
 
 ---
 
-Reference for WVDAutoscaleEvaluationPooled table in Azure Monitor Logs.
-
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Azure Virtual Desktop |
-| **Basic Logs Eligible** | ✗ No |
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wvdautoscaleevaluationpooled) |
 
@@ -50,12 +46,6 @@ Reference for WVDAutoscaleEvaluationPooled table in Azure Monitor Logs.
 | UnhealthySessionHostCount | int | Number of session hosts in a faulty state. |
 
 ---
-
-## Resource Types
-
-This table collects data from the following Azure resource types:
-
-- `microsoft.desktopvirtualization/hostpools`
 
 ---
 

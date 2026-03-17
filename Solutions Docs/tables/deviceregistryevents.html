@@ -36,11 +36,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
@@ -53,10 +53,6 @@
 <tr>
 <td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceregistryevents-table">View Documentation</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Feature Support</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -318,11 +314,12 @@
 </tr>
 </tbody>
 </table>
-<h2>Solutions (3)</h2>
+<h2>Solutions (4)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/falconfriday.html">FalconFriday</a></li>
 <li><a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a></li>
+<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 <li><a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a></li>
 </ul>
 <h2>Connectors (1)</h2>
@@ -341,8 +338,8 @@
 </tbody>
 </table>
 <hr />
-<h2>Content Items Using This Table (5)</h2>
-<h3>Analytic Rules (2)</h3>
+<h2>Content Items Using This Table (26)</h2>
+<h3>Analytic Rules (3)</h3>
 <p><strong>In solution <a href="../solutions/falconfriday.html">FalconFriday</a>:</strong> <code>ActionType == "RegistryValueSet"</code></p>
 <table>
 <thead>
@@ -369,7 +366,20 @@
 </tr>
 </tbody>
 </table>
-<h3>Hunting Queries (1)</h3>
+<p><strong>Standalone Content:</strong> <code>ActionType == "RegistryValueSet"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-com-registry-key-modified-to-point-to-file-in-color-profile-folder-ed8c9153-6f7a-4602-97b4-48c336b299e1-d490be15.html">COM Registry Key Modified to Point to File in Color Profile Folder</a></td>
+</tr>
+</tbody>
+</table>
+<h3>Hunting Queries (19)</h3>
 <p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>ActionType == "RegistryValueSet"</code></p>
 <table>
 <thead>
@@ -383,7 +393,101 @@
 </tr>
 </tbody>
 </table>
-<h3>Workbooks (2)</h3>
+<p><strong>Standalone Content:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-mde-findmountedisoanddriveletters-19270420-5d36-43df-8bed-c34a47fadc92-9edbea2e.html">MDE_FindMountedISOandDriveLetters</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-mde-proxychangesviaregistry-7d905049-7e23-451e-bb57-0bfb6dd43f60-5f256293.html">MDE_ProxyChangesViaRegistry</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-accessibility-features-a5649d8b-e54b-4e2b-925a-106bf838d69c-dbe14580.html">Accessibility Features</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.html">Baseline Comparison</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-knotweed-com-registry-key-modified-to-point-to-color-profile-folder-9c1331df-9bb3-4b52-b7d7-5a6e9e6d97b4-d37a60f6.html">KNOTWEED-COM Registry Key Modified to Point to Color Profile Folder</a></td>
+<td style="text-align: left;"><code>ActionType == "RegistryValueSet"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-mosaicloader-625dce50-2fec-4f49-be92-ad4cab98b313-31f04ab2.html">MosaicLoader</a></td>
+<td style="text-align: left;"><code>ActionType == "RegistryValueSet"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-oceanlotus-registry-activity-3e571521-6f73-423f-9280-aff6170c9d81-1a08b9f1.html">OceanLotus registry activity</a></td>
+<td style="text-align: left;"><code>ActionType == "RegistryValueSet"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-runmru-with-non-ascii-characters-6e8ee46f-80ee-46f6-be49-49a66f01edce-e16ca0cd.html">RunMRU with non-ASCII characters</a></td>
+<td style="text-align: left;"><code>ActionType == "RegistryValueSet"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-services-dd76f1c0-edc9-45cb-aeae-f5142caf583c-adae9da2.html">Services</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-suspicious-registry-keys-fab0fc37-d74a-43b6-9f13-d517b9cbcb14-4ef94be0.html">Suspicious Registry Keys</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-detect-impacket-atexec-75e3a1b2-bd6d-4e79-8c74-85a3bc0b0617-a33eaf14.html">detect-impacket-atexec</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-qakbot-campaign-registry-edit-3f305589-cde2-4509-8204-63cb2a00117c-2575a13b.html">qakbot-campaign-registry-edit</a></td>
+<td style="text-align: left;"><code>ActionType == "RegistryValueSet"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-rare-sch-task-with-activity-ce76992a-8cd6-4605-9f45-cde9aae87244-3f342058.html">rare_sch_task_with_activity</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-suspicious-base64-encoded-registry-keys-4751319e-6d20-4c26-893d-baaad90f0747-3b8dcc39.html">suspicious-base64-encoded-registry-keys</a></td>
+<td style="text-align: left;"><code>ActionType has_any "RegistryKeyCreated,RegistryValueSet"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-suspicious-command-interpreters-added-to-registry-74dd8aa9-996b-44b1-bf36-9ac9ef6d2c02-d9fd92fe.html">suspicious-command-interpreters-added-to-registry</a></td>
+<td style="text-align: left;"><code>ActionType has_any "RegistryKeyCreated,RegistryValueSet"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-suspicious-keywords-in-registry-749f313e-08b4-48f6-9f9d-ba57c1abbf55-0fb6d342.html">suspicious-keywords-in-registry</a></td>
+<td style="text-align: left;"><code>ActionType has_any "RegistryKeyCreated,RegistryValueSet"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-wadhrama-credential-dump-8348d279-c95f-4dbe-b952-65048dc06559-6f945582.html">wadhrama-credential-dump</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-wdigest-caching-05a01ec8-ecab-4f9a-9aae-8d8cc061fe05-30a7e092.html">wdigest-caching</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3>Workbooks (4)</h3>
 <p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong></p>
 <table>
 <thead>
@@ -414,6 +518,25 @@
 </tr>
 </tbody>
 </table>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-microsoftdefenderforendpoint-ac005534.html">MicrosoftDefenderForEndPoint</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
 <h2>Parsers Using This Table (1)</h2>
 <h3>ASIM Parsers (1) — Selection Criteria: <code>ActionType in "RegistryKeyDeleted,RegistryKeyRenamed,RegistryValueDeleted,RegistryValueSet"</code></h3>
 <table>
@@ -432,8 +555,8 @@
 </tr>
 </tbody>
 </table>
-<h2>Selection Criteria Summary (2 criteria, 5 total references)</h2>
-<p>References by type: 1 connectors, 3 content items, 1 ASIM parsers, 0 other parsers.</p>
+<h2>Selection Criteria Summary (3 criteria, 14 total references)</h2>
+<p>References by type: 1 connectors, 12 content items, 1 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -449,10 +572,18 @@
 <tr>
 <td style="text-align: left;"><code>ActionType == "RegistryValueSet"</code></td>
 <td style="text-align: center;">1</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>10</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType has_any "RegistryKeyCreated,RegistryValueSet"</code></td>
+<td style="text-align: center;">-</td>
 <td style="text-align: center;">3</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>4</strong></td>
+<td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>ActionType in "RegistryKeyDeleted,RegistryKeyRenamed,RegistryValueDeleted,RegistryValueSet"</code></td>
@@ -465,10 +596,10 @@
 <tr>
 <td style="text-align: left;"><strong>Total</strong></td>
 <td style="text-align: center;"><strong>1</strong></td>
-<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;"><strong>12</strong></td>
 <td style="text-align: center;"><strong>1</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>5</strong></td>
+<td style="text-align: center;"><strong>14</strong></td>
 </tr>
 </tbody>
 </table>
@@ -488,10 +619,26 @@
 <tr>
 <td style="text-align: left;"><code>RegistryValueSet</code></td>
 <td style="text-align: center;">1</td>
-<td style="text-align: center;">3</td>
+<td style="text-align: center;">9</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>5</strong></td>
+<td style="text-align: center;"><strong>11</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any RegistryKeyCreated</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any RegistryValueSet</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>RegistryKeyDeleted</code></td>

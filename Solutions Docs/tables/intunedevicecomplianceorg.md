@@ -12,7 +12,6 @@ Reference for IntuneDeviceComplianceOrg table in Azure Monitor Logs.
 |:----------|:------|
 | **Category** | Intune |
 | **Basic Logs Eligible** | ✗ No |
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/intunedevicecomplianceorg) |
 
@@ -52,6 +51,17 @@ Reference for IntuneDeviceComplianceOrg table in Azure Monitor Logs.
 | UserName | string | The user name. |
 
 ---
+
+## Content Items Using This Table (2)
+
+### Workbooks (2)
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ---
 

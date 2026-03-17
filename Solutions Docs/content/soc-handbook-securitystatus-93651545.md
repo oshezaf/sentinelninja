@@ -23,7 +23,7 @@ This content item queries data from the following tables:
 | [`Perf`](../tables/perf.md) | ✓ | ✗ | ? |
 | [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ | ✓ |
 | [`Syslog`](../tables/syslog.md) | ✓ | ✓ | ✓ |
-| [`VMConnection`](../tables/vmconnection.md) | ✗ | ✗ | ? |
+| [`VMConnection`](../tables/vmconnection.md) | ? | ✗ | ? |
 | [`W3CIISLog`](../tables/w3ciislog.md) | ✓ | ✗ | ✗ |
 | [`WindowsFirewall`](../tables/windowsfirewall.md) | ✓ | ✗ | ? |
 | [`WireData`](../tables/wiredata.md) | ✓ | ✗ | ? |

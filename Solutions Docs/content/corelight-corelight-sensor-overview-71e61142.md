@@ -23,7 +23,7 @@ This content item queries data from the following tables:
 | [`Corelight_v2_corelight_metrics_memory_CL`](../tables/corelight-v2-corelight-metrics-memory-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_corelight_metrics_system_CL`](../tables/corelight-v2-corelight-metrics-system-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_corelight_metrics_zeek_doctor_CL`](../tables/corelight-v2-corelight-metrics-zeek-doctor-cl.md) 🔶 | ? | ✓ | ? |
-| [`Usage`](../tables/usage.md) | ✗ | ✗ | ? |
+| [`Usage`](../tables/usage.md) | ? | ✗ | ? |
 
 ---
 

@@ -47,7 +47,7 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (44 columns)</h2>
+<h2>Schema (45 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/entraidsigninevents">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -169,6 +169,11 @@
 <td style="text-align: left;">Indicates whether the device that initiated the sign-in is compliant (1) or non-compliant (0)</td>
 </tr>
 <tr>
+<td style="text-align: left;">IsConfidentialClient</td>
+<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">Indicates if the sign in was done via confidential client applications</td>
+</tr>
+<tr>
 <td style="text-align: left;">IsExternalUser</td>
 <td style="text-align: left;">int</td>
 <td style="text-align: left;">Indicates if the user that signed in is external. Possible values: -1 (not set), 0 (not external), 1 (external).</td>
@@ -176,7 +181,7 @@
 <tr>
 <td style="text-align: left;">IsGuestUser</td>
 <td style="text-align: left;">boolean</td>
-<td style="text-align: left;">Indicates whether the user that signed in is a guest in the tenant</td>
+<td style="text-align: left;">Indicates if the sign in was done via confidential client applications</td>
 </tr>
 <tr>
 <td style="text-align: left;">IsManaged</td>
