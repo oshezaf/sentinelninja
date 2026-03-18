@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Pathlock CAC: Threat Detection &amp; Response Microsoft Sentinel Integration</h1>
+<h1 id="pathlock-cac-threat-detection-amp-response-microsoft-sentinel-integration">Pathlock CAC: Threat Detection &amp; Response Microsoft Sentinel Integration</h1>
 <p><em>Solution: Pathlock_TDnR</em></p>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/pathlock_logo.svg" alt="Pathlock_TDnR Logo" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
@@ -75,18 +75,18 @@
 - Automate alerting and response workflows in Microsoft Sentinel for faster mean-time-to-detect (MTTD) and mean-time-to-respond (MTTR).
 - Maintain audit readiness by demonstrating end-to-end visibility of SAP threat activity.</p>
 <p>This out-of-the-box connector simplifies secure event forwarding from SAP to Microsoft Sentinel—enabling centralized analysis, compliance reporting, and proactive response within your existing security ecosystem.</p>
-<h2>Contents</h2>
+<h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#tables-used">Tables Used</a></li>
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
-<h2>Data Connectors</h2>
+<h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/pathlock-tdnr.html">Pathlock Inc.: Threat Detection and Response for SAP</a></li>
 </ul>
-<h2>Tables Used</h2>
+<h2 id="tables-used">Tables Used</h2>
 <p>This solution uses <strong>2 table(s)</strong>:</p>
 <table>
 <thead>
@@ -109,7 +109,7 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pathlock_TDnR/README.md">Pathlock_TDnR/README.md</a></em></p>
 </blockquote>
@@ -117,7 +117,7 @@
 - Connector
 - Workbook
 - Parser Function</p>
-<h2>Deployment via Content Hub</h2>
+<h2 id="deployment-via-content-hub">Deployment via Content Hub</h2>
 <p>To deploy using the Content Hub:</p>
 <ol>
 <li>Log in to the Azure Portal.</li>
@@ -127,9 +127,9 @@
 <li>Click <strong>Install</strong>, then <strong>Create</strong>.</li>
 <li>Follow the prompts to complete the installation.</li>
 </ol>
-<h2>Deployment via ARM Template</h2>
+<h2 id="deployment-via-arm-template">Deployment via ARM Template</h2>
 <p>If the connector is not yet available in the Content Hub, you can deploy it manually using the provided ARM template.</p>
-<h3>Prerequisites</h3>
+<h3 id="prerequisites">Prerequisites</h3>
 <ul>
 <li>Access to the Microsoft Sentinel environment.</li>
 <li>Workspace name and location (found in Sentinel &gt; Settings &gt; Workspace Settings &gt; Properties &gt; Location).</li>
@@ -138,7 +138,7 @@
 <li>Cron job configured to append new logs to an existing file.</li>
 <li>Logs must be received in a custom table named <code>Pathlock_TDnR_CL</code>.</li>
 </ul>
-<h3>Installation Steps</h3>
+<h3 id="installation-steps">Installation Steps</h3>
 <ol>
 <li>Click the <strong>Deploy to Azure</strong> button below.</li>
 <li>Select the Resource Group where Microsoft Sentinel is deployed.</li>
@@ -150,7 +150,7 @@
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Ffrozenstrawberries%2FAzure-Sentinel%2Fmaster%2FSolutions%2FPathlock_TDnR%2FPackage%2FmainTemplate.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
 <hr />
 <p><em>This solution is provided by Pathlock as a temporary deployment method until the official connector is available in the Content Hub.</em></p>
-<h2>Release Notes</h2>
+<h2 id="release-notes">Release Notes</h2>
 <table>
 <thead>
 <tr>

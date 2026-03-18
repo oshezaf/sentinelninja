@@ -18,7 +18,7 @@
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [DuoSecurity](../content/github-only-duosecurity-51a3ff3a.md) |  |
 

@@ -12,6 +12,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (19 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyfirmaIndicators_CL.json)
@@ -60,7 +67,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cyfirma Cyber Intelligence](../solutions/cyfirma-cyber-intelligence.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [CYFIRMA - High severity Command & Control Network Indicators with Block Recommendation Rule](../content/cyfirma-cyber-intelligence-cyfirma-high-severity-command-&-control-network-indicators-with-block-recomme-6b61b716-afd9-4f6c-ad00-965d5987cafd-8651de1a.md) |  |
 | [CYFIRMA - High severity Command & Control Network Indicators with Monitor Recommendation Rule](../content/cyfirma-cyber-intelligence-cyfirma-high-severity-command-&-control-network-indicators-with-monitor-recom-6d8fb3fe-2501-4103-8137-34261fa3a596-cb3b99b5.md) |  |

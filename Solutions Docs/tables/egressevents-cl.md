@@ -10,6 +10,12 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Solutions (1)
 
 This table is used by the following solutions:
@@ -32,7 +38,7 @@ This table is ingested by the following connectors:
 
 **In solution [Egress Iris](../solutions/egress-iris.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [PreventWorkbook](../content/egress-iris-preventworkbook-e3444c6a.md) |  |
 

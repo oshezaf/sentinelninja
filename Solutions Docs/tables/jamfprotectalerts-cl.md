@@ -12,6 +12,14 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (55 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Jamf%20Protect%5CData%20Connectors%5CJamfProtect_ccp/table.json)
@@ -96,7 +104,7 @@ This table is ingested by the following connectors:
 
 **In solution [Jamf Protect](../solutions/jamf-protect.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Jamf Protect - Alerts](../content/jamf-protect-jamf-protect-alerts-6098daa0-f05e-44d5-b5a0-913e63ba3179-38dbdadd.md) |  |
 
@@ -104,7 +112,7 @@ This table is ingested by the following connectors:
 
 **In solution [Jamf Protect](../solutions/jamf-protect.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [JamfProtectDashboard](../content/jamf-protect-jamfprotectdashboard-b0beeadb.md) |  |
 

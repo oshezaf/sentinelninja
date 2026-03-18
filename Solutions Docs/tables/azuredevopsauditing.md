@@ -11,6 +11,12 @@
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
 
+## Contents
+
+- [Solutions](#solutions)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Solutions (3)
 
 This table is used by the following solutions:
@@ -27,7 +33,7 @@ This table is used by the following solutions:
 
 **In solution [AzureDevOpsAuditing](../solutions/azuredevopsauditing.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Azure DevOps Administrator Group Monitoring](../content/azuredevopsauditing-azure-devops-administrator-group-monitoring-89e6adbd-612c-4fbe-bc3d-32f81baf3b6c-bf5cb534.md) |  |
 | [Azure DevOps Agent Pool Created Then Deleted](../content/azuredevopsauditing-azure-devops-agent-pool-created-then-deleted-acfdee3f-b794-404a-aeba-ef6a1fa08ad1-b6abe93c.md) |  |
@@ -53,7 +59,7 @@ This table is used by the following solutions:
 
 **In solution [AzureDevOpsAuditing](../solutions/azuredevopsauditing.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Azure DevOps - Build Check Deleted](../content/azuredevopsauditing-azure-devops-build-check-deleted-940386c3-4b2c-4147-ac8e-dcddedaaae52-6714bd40.md) |  |
 | [Azure DevOps - Build Deleted After Pipeline Modification](../content/azuredevopsauditing-azure-devops-build-deleted-after-pipeline-modification-47857f1f-f8e6-470d-b132-03a8a606b3f4-80419f62.md) |  |
@@ -77,13 +83,13 @@ This table is used by the following solutions:
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |  |
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |  |
 

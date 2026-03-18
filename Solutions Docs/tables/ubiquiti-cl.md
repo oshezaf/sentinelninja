@@ -12,6 +12,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Solutions (2)
 
 This table is used by the following solutions:
@@ -36,7 +43,7 @@ This table is ingested by the following connectors:
 
 **In solution [Ubiquiti UniFi](../solutions/ubiquiti-unifi.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Ubiquiti - Connection to known malicious IP or C2](../content/ubiquiti-unifi-ubiquiti-connection-to-known-malicious-ip-or-c2-db60ca0b-b668-439b-b889-b63b57ef20fb-badbf4fb.md) |  |
 | [Ubiquiti - Large ICMP to external server](../content/ubiquiti-unifi-ubiquiti-large-icmp-to-external-server-6df85d74-e32f-4b71-80e5-bfe2af00be1c-7ddb3e88.md) |  |
@@ -53,7 +60,7 @@ This table is ingested by the following connectors:
 
 **In solution [Ubiquiti UniFi](../solutions/ubiquiti-unifi.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Ubiquiti - DNS requests timed out](../content/ubiquiti-unifi-ubiquiti-dns-requests-timed-out-1e55cd44-36ee-47c5-98e6-7d6bb5f9cb37-1fe35e7f.md) |  |
 | [Ubiquiti - Hidden internal DNS server](../content/ubiquiti-unifi-ubiquiti-hidden-internal-dns-server-2ad0b4eb-cc60-4d81-9fbe-d1d6f5f6da3a-a067e99e.md) |  |
@@ -70,7 +77,7 @@ This table is ingested by the following connectors:
 
 **In solution [Ubiquiti UniFi](../solutions/ubiquiti-unifi.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Ubiquiti](../content/ubiquiti-unifi-ubiquiti-d31b17b9.md) |  |
 

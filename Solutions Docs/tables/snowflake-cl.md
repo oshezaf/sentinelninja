@@ -11,6 +11,14 @@
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (75 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Snowflake_CL.json)
@@ -115,7 +123,7 @@ This table is ingested by the following connectors:
 
 **In solution [Snowflake](../solutions/snowflake.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Snowflake - Abnormal query process time](../content/snowflake-snowflake-abnormal-query-process-time-1376f5e5-855a-4f88-8591-19eba4575a0f-cec38277.md) |  |
 | [Snowflake - Multiple failed queries](../content/snowflake-snowflake-multiple-failed-queries-5f8a81d9-7d27-4ff5-a0ce-4285ee02c2c8-558c4df2.md) |  |
@@ -132,7 +140,7 @@ This table is ingested by the following connectors:
 
 **In solution [Snowflake](../solutions/snowflake.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Snowflake - Credit consuming queries](../content/snowflake-snowflake-credit-consuming-queries-6e8315eb-86a0-4a15-925d-a36c29d13bbd-9287cd1e.md) |  |
 | [Snowflake - Deleted databases](../content/snowflake-snowflake-deleted-databases-09cc7b43-2ea1-464f-a72c-2ec187405505-c3576198.md) |  |
@@ -149,7 +157,7 @@ This table is ingested by the following connectors:
 
 **In solution [Snowflake](../solutions/snowflake.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Snowflake](../content/snowflake-snowflake-757ff347.md) |  |
 

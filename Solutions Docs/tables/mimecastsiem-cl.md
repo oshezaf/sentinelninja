@@ -13,6 +13,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (18 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/MimecastSIEM_CL.json)
@@ -60,7 +67,7 @@ This table is ingested by the following connectors:
 
 **In solution [MimecastSEG](../solutions/mimecastseg.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Mimecast Secure Email Gateway - AV](../content/mimecastseg-mimecast-secure-email-gateway-av-0f0dc725-29dc-48c3-bf10-bd2f34fd1cbb-b6da5aa5.md) |  |
 | [Mimecast Secure Email Gateway - Attachment Protect](../content/mimecastseg-mimecast-secure-email-gateway-attachment-protect-72264f4f-61fb-4f4f-96c4-635571a376c2-c674cc1a.md) |  |
@@ -74,7 +81,7 @@ This table is ingested by the following connectors:
 
 **In solution [MimecastSEG](../solutions/mimecastseg.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [MimecastSEGworkbook](../content/mimecastseg-mimecastsegworkbook-d46e4786.md) |  |
 

@@ -13,6 +13,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (79 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/darktrace_model_alerts_CL.json)
@@ -121,7 +128,7 @@ This table is ingested by the following connectors:
 
 **In solution [Darktrace](../solutions/darktrace.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Darktrace AI Analyst](../content/darktrace-darktrace-ai-analyst-ffa2977f-3077-4bba-b1bf-f3417699cbb0-c8c73532.md) |  |
 | [Darktrace Model Breach](../content/darktrace-darktrace-model-breach-a3c7b8ed-56a9-47b7-98e5-2555c16e17c9-0057eb81.md) |  |
@@ -131,7 +138,7 @@ This table is ingested by the following connectors:
 
 **In solution [Darktrace](../solutions/darktrace.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [DarktraceWorkbook](../content/darktrace-darktraceworkbook-b6b8de88.md) |  |
 

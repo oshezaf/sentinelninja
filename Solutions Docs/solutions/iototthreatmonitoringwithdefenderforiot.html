@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Microsoft Defender for IoT solution for Microsoft Sentinel</h1>
+<h1 id="microsoft-defender-for-iot-solution-for-microsoft-sentinel">Microsoft Defender for IoT solution for Microsoft Sentinel</h1>
 <p><em>Solution: IoTOTThreatMonitoringwithDefenderforIoT</em></p>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="IoTOTThreatMonitoringwithDefenderforIoT Logo" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
@@ -71,19 +71,19 @@
 <p>** Underlying Microsoft Technologies used: ** </p>
 <p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:  </p>
 <p>a. <a href="https://docs.microsoft.com/azure/sentinel/create-codeless-connector?tabs=deploy-via-arm-template%2Cconnect-via-the-azure-portal">Codeless Connector Platform/Native Microsoft Sentinel Polling</a></p>
-<h2>Contents</h2>
+<h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#internal-tables">Internal Tables</a></li>
 <li><a href="#content-items">Content Items</a></li>
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
-<h2>Data Connectors</h2>
+<h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/iot.html">Microsoft Defender for IoT</a></li>
 </ul>
-<h2>Internal Tables</h2>
+<h2 id="internal-tables">Internal Tables</h2>
 <p>The following <strong>2 table(s)</strong> are used internally by this solution's content items:</p>
 <table>
 <thead>
@@ -106,7 +106,7 @@
 </tr>
 </tbody>
 </table>
-<h2>Content Items</h2>
+<h2 id="content-items">Content Items</h2>
 <p>This solution includes <strong>24 content item(s)</strong> (23 in solution, 1 discovered 🔍):</p>
 <table>
 <thead>
@@ -138,7 +138,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Analytic Rules</h3>
+<h3 id="analytic-rules">Analytic Rules</h3>
 <table>
 <thead>
 <tr>
@@ -241,7 +241,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Workbooks</h3>
+<h3 id="workbooks">Workbooks</h3>
 <table>
 <thead>
 <tr>
@@ -256,7 +256,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Playbooks</h3>
+<h3 id="playbooks">Playbooks</h3>
 <table>
 <thead>
 <tr>
@@ -311,33 +311,33 @@
 <blockquote>
 <p>⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.</p>
 </blockquote>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IoTOTThreatMonitoringwithDefenderforIoT/README.md">IoTOTThreatMonitoringwithDefenderforIoT/README.md</a></em></p>
 </blockquote>
-<h1>Overview</h1>
+<h1 id="overview">Overview</h1>
 <p>There has been a long-standing split between ICS/SCADA (OT) and Corporate (IT) cybersecurity. This split was often driven by significant differences in technology/tooling. Microsoft Defender for IoT's integration with Microsoft Sentinel drives convergency by providing a single pane for coverage of both D4IOT (OT) and Microsoft Sentinel (IT) alerting. This solution includes Workbooks and Analytics rules providing a guide OT detection and Analysis.</p>
-<h2>Try on Portal</h2>
+<h2 id="try-on-portal">Try on Portal</h2>
 <p>You can deploy the solution by clicking on the buttons below:</p>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FIoTOTThreatMonitoringwithDefenderforIoT%2FPackage%2FmainTemplate.json" target="_blank"><img src="https://aka.ms/deploytoazurebutton"/></a>
 <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FIoTOTThreatMonitoringwithDefenderforIoT%2FPackage%2FmainTemplate.json" target="_blank"><img src="https://aka.ms/deploytoazuregovbutton"/></a></p>
 <p><img alt="Workbook Overview" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IoTOTThreatMonitoringwithDefenderforIoT/Workbooks/Images/IoTOTThreatMonitoringwithDefenderforIoTBlack.png?raw=true" /></p>
-<h2>Getting Started</h2>
+<h2 id="getting-started">Getting Started</h2>
 <p>1️⃣ <a href="https://docs.microsoft.com/azure/defender-for-iot/device-builders/quickstart-onboard-iot-hub">Onboard Microsoft Defender for IoT</a>
 2️⃣ <a href="https://docs.microsoft.com/azure/sentinel/quickstart-onboard">Onboard Microsoft Sentinel</a> 
 3️⃣ <a href="https://docs.microsoft.com/azure/defender-for-iot/organizations/how-to-configure-with-sentinel">Enable Microsoft Defender for IoT Connector to Microsoft Sentinel</a>
 4️⃣ View the Workbook: Microsoft Sentinel &gt; Workbooks &gt; My Workbooks &gt; IoT/OT Threat Monitoring with Defender for IoT &gt; View
 5️⃣ View the Analytics Rules: Navigate to Microsoft Sentinel &gt; Analytics &gt; Search "IOT"</p>
-<h2>Workbook</h2>
+<h2 id="workbook">Workbook</h2>
 <p>The OT Threat Monitoring with Defender for IoT Workbook features OT filtering for Security Alerts, Incidents, Vulnerabilities and Asset Inventory. The workbook features a dynamic assessment of the MITRE ATT&amp;CK for ICS matrix across your environment to analyze and respond to OT-based threats. This workbook is designed to enable SecOps Analysts, Security Engineers, and MSSPs to gain situational awareness for IT/OT security posture.</p>
-<h2>Analytics Rules</h2>
-<h3>1) Denial of Service (Microsoft Defender for IoT)</h3>
+<h2 id="analytics-rules">Analytics Rules</h2>
+<h3 id="1-denial-of-service">1) Denial of Service (Microsoft Defender for IoT)</h3>
 <p>This alert leverages Defender for IoT to detect attacks that would prevent the use or proper operation of a DCS system including Denial of Service events.</p>
-<h3>2) Excessive Login Attempts (Microsoft Defender for IoT)</h3>
+<h3 id="2-excessive-login-attempts">2) Excessive Login Attempts (Microsoft Defender for IoT)</h3>
 <p>This alert leverages Defender for IoT to detect excessive login attempts that may indicate improper service configuration, human error, or malicious activity on the network such as a cyber threat attempting to manipulate the SCADA network.</p>
-<h3>3) Firmware Updates (Microsoft Defender for IoT)</h3>
+<h3 id="3-firmware-updates">3) Firmware Updates (Microsoft Defender for IoT)</h3>
 <p><em>[Content truncated...]</em></p>
-<h2>Release Notes</h2>
+<h2 id="release-notes">Release Notes</h2>
 <table>
 <thead>
 <tr>

@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>🚫 🔍 [Deprecated] Cisco Secure Email Gateway via Legacy Agent</h1>
+<h1 id="deprecated-cisco-secure-email-gateway-via-legacy-agent">🚫 🔍 [Deprecated] Cisco Secure Email Gateway via Legacy Agent</h1>
 <blockquote>
 <p>🚫 <strong>Deprecated:</strong> This connector has been deprecated and may be removed in future versions.</p>
 <p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
@@ -55,9 +55,9 @@
 </tbody>
 </table>
 <p>The <a href="https://www.cisco.com/c/en/us/products/security/email-security/index.html">Cisco Secure Email Gateway (SEG)</a> data connector provides the capability to ingest <a href="https://www.cisco.com/c/en/us/td/docs/security/esa/esa14-0/user_guide/b_ESA_Admin_Guide_14-0/b_ESA_Admin_Guide_12_1_chapter_0100111.html#con_1061902">Cisco SEG Consolidated Event Logs</a> into Microsoft Sentinel.</p>
-<h2>Additional Information</h2>
+<h2 id="additional-information">Additional Information</h2>
 <p>🛠️ <strong>Device Configuration:</strong> Configure <a href="https://www.cisco.com/c/en/us/td/docs/security/esa/esa14-0/user_guide/b_ESA_Admin_Guide_14-0/b_ESA_Admin_Guide_12_1_chapter_0100111.html#con_1134718">Log Subscription</a>. Select Consolidated Event Logs in Log Type field.</p>
-<h2>Tables Ingested</h2>
+<h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -80,11 +80,11 @@
 <blockquote>
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
-<h2>Permissions</h2>
+<h2 id="permissions">Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): read and write permissions are required.
 - <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
-<h2>Setup Instructions</h2>
+<h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 <p><strong>NOTE:</strong> This data connector depends on a parser based on a Kusto Function to work as expected <a href="https://aka.ms/sentinel-CiscoSEG-parser"><strong>CiscoSEGEvent</strong></a> which is deployed with the Microsoft Sentinel Solution.</p>

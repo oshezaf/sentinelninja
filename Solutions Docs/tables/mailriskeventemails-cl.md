@@ -10,6 +10,12 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+
 ## Schema (31 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MailRisk%5CData%20Connectors%5CMailRisk_CCP/table%20-%20MailRiskEmails.json)

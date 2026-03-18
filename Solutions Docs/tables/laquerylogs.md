@@ -16,6 +16,13 @@ Reference for LAQueryLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/laquerylogs) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Content Items](#content-items-using-this-table)
+- [Resource Types](#resource-types)
+
 ## Schema (34 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/laquerylogs)
@@ -74,7 +81,7 @@ This table is used by the following solutions:
 
 **Standalone Content:**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Users searching for VIP user activity](../content/standalone-content-users-searching-for-vip-user-activity-f7f4a77e-f68f-4b56-9aaf-a0c9d87d7a8e-aebfac5d.md) |  |
 
@@ -82,7 +89,7 @@ This table is used by the following solutions:
 
 **Standalone Content:**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Cross workspace query anomolies](../content/standalone-content-cross-workspace-query-anomolies-8f18c6ea-fcd0-4d9a-a8fd-19a6aaa1660c-c649c5f9.md) |  |
 | [Multiple large queries made by user](../content/standalone-content-multiple-large-queries-made-by-user-cd11d6a1-e2ad-47fa-9a9f-4c70b143d4fd-5c0b6215.md) |  |
@@ -96,7 +103,7 @@ This table is used by the following solutions:
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Cross-service Azure Data Explorer queries](../content/github-only-cross-service-azure-data-explorer-queries-58b17f82-f594-4d36-9b78-4e4b03992708-26494ee3.md) |  |
 | [New users calling sensitive Watchlist](../content/github-only-new-users-calling-sensitive-watchlist-f3dc87f3-64f9-405d-aa1b-fed98f859357-5436e4d3.md) |  |
@@ -105,25 +112,25 @@ This table is used by the following solutions:
 
 **In solution [DPDP Compliance](../solutions/dpdp-compliance.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [DPDPCompliance](../content/dpdp-compliance-dpdpcompliance-18571e87.md) |  |
 
 **In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md) |  |
 
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |  |
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
 | [LogAnalyticsQueryAnalysis](../content/github-only-loganalyticsqueryanalysis-50cfc93a.md) |  |

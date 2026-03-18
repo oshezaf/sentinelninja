@@ -66,7 +66,7 @@ Reference for MicrosoftGraphActivityLogs table in Azure Monitor Logs.
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [MicrosoftGraphActivityLogs](../content/github-only-microsoftgraphactivitylogs-55b4bbfd.md) |  |
 

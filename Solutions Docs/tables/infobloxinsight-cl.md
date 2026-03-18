@@ -16,6 +16,14 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (30 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/InfobloxInsight_CL.json)
@@ -76,13 +84,13 @@ This table is ingested by the following connectors:
 
 **In solution [Infoblox](../solutions/infoblox.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Infoblox - SOC Insight Detected - API Source](../content/infoblox-infoblox-soc-insight-detected-api-source-a5e2df87-f0c9-4540-8715-96e71b608986-05c34879.md) |  |
 
 **In solution [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Infoblox - SOC Insight Detected - API Source](../content/infoblox-soc-insights-infoblox-soc-insight-detected-api-source-cf9847bb-ab46-4050-bb81-75cab3f893dc-6b346252.md) |  |
 
@@ -90,13 +98,13 @@ This table is ingested by the following connectors:
 
 **In solution [Infoblox](../solutions/infoblox.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Infoblox_Workbook](../content/infoblox-infoblox-workbook-0b2c239e.md) |  |
 
 **In solution [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [InfobloxSOCInsightsWorkbook](../content/infoblox-soc-insights-infobloxsocinsightsworkbook-004063d9.md) |  |
 

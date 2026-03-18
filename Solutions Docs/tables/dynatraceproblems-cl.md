@@ -12,6 +12,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Solutions (1)
 
 This table is used by the following solutions:
@@ -34,7 +41,7 @@ This table is ingested by the following connectors:
 
 **In solution [Dynatrace](../solutions/dynatrace.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Dynatrace - Problem detection](../content/dynatrace-dynatrace-problem-detection-415978ff-074e-4203-824a-b06153d77bf7-a4be516e.md) |  |
 
@@ -42,7 +49,7 @@ This table is ingested by the following connectors:
 
 **In solution [Dynatrace](../solutions/dynatrace.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Dynatrace](../content/dynatrace-dynatrace-eddf4fe2.md) |  |
 

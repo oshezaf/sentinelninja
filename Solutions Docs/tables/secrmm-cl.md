@@ -11,6 +11,13 @@
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (33 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/secRMM_CL.json)
@@ -73,7 +80,7 @@ This table is ingested by the following connectors:
 
 **In solution [Squadra Technologies SecRmm](../solutions/squadra-technologies-secrmm.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Removable storage ONLINE event from secRMM](../content/squadra-technologies-secrmm-removable-storage-online-event-from-secrmm-a22b2ecf-1478-4400-877e-07a32e53a897-c1870014.md) |  |
 
@@ -81,13 +88,13 @@ This table is ingested by the following connectors:
 
 **In solution [Squadra Technologies SecRmm](../solutions/squadra-technologies-secrmm.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [AzureSentinelWorkbookForRemovableStorageSecurityEvents](../content/squadra-technologies-secrmm-azuresentinelworkbookforremovablestoragesecurityevents-c1ab5ac4.md) |  |
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [SquadraTechnologiesSecRMM](../content/github-only-squadratechnologiessecrmm-3e33bcf1.md) |  |
 

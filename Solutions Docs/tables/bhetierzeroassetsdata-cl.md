@@ -10,6 +10,12 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (110 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/BHETierZeroAssetsData_CL.json)
@@ -141,7 +147,7 @@ This table is used by the following solutions:
 
 **In solution [BloodHound Enterprise](../solutions/bloodhound-enterprise.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [BloodHoundEnterpriseTierZeroSearch](../content/bloodhound-enterprise-bloodhoundenterprisetierzerosearch-7e86d13a.md) |  |
 

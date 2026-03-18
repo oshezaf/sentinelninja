@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>User enrichment - Okta</h1>
+<h1 id="user-enrichment---okta">User enrichment - Okta</h1>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
@@ -42,23 +42,23 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks/Okta-EnrichIncidentWithUserDetails/readme.md">OktaPlaybooks/Okta-EnrichIncidentWithUserDetails/readme.md</a></em></p>
 </blockquote>
-<h1>Okta-Enrich Incident With User Details Playbook</h1>
+<h1 id="okta-enrich-incident-with-user-details-playbook">Okta-Enrich Incident With User Details Playbook</h1>
 <p>## Summary
  When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs below actions
  1. Fetches the user details and user group details from Okta
  2. Adds a rich comment to the incident with all the collected information
     <img alt="Comment example" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks%5COkta-EnrichIncidentWithUserDetails/images/Incident_Comment.png" /></p>
 <p><img alt="Playbook Designer view" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks%5COkta-EnrichIncidentWithUserDetails/Okta-EnrichIncidentwithuserdetails.PNG" /><br></p>
-<h3>Prerequisites</h3>
+<h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>Okta Custom Connector needs to be deployed prior to the deployment of this playbook under the same subscription.</li>
 <li>Generate an API key.Refer this link <a href="https://developer.okta.com/docs/guides/create-an-api-token/overview/"> how to generate the API Key</a></li>
 </ol>
-<h3>Deployment instructions</h3>
+<h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
 <li>
 <p>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deplyoing an ARM Template wizard.
@@ -72,8 +72,8 @@
 </ul>
 </li>
 </ol>
-<h3>Post-Deployment instructions</h3>
-<h4>a. Authorize connections</h4>
+<h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
+<h4 id="a-authorize-connections">a. Authorize connections</h4>
 <p>Once deployment is complete, you will need to authorize each connection.
 1.  Click the Microsoft Sentinel connection resource
 2.  Click edit API connection
@@ -81,19 +81,19 @@
 4.  Sign in
 5.  Click Save
 6.  Repeat steps for Okta Api  Connection (For authorizing the Okta API connection, API Key needs to be provided)</p>
-<h4>b. Configurations in Sentinel</h4>
+<h4 id="b-configurations-in-sentinel">b. Configurations in Sentinel</h4>
 <ol>
 <li>In Microsoft sentinel analytical rules should be configured to trigger an incident with risky user account </li>
 <li>Configure the automation rules to trigger this playbook</li>
 </ol>
-<h2>Playbook steps explained</h2>
-<h3>When Microsoft Sentinel incident creation rule is triggered</h3>
+<h2 id="playbook-steps-explained">Playbook steps explained</h2>
+<h3 id="when-microsoft-sentinel-incident-creation-rule-is-triggered">When Microsoft Sentinel incident creation rule is triggered</h3>
 <p>Microsoft Sentinel incident is created. The playbook receives the incident as the input.</p>
-<h3>Entities - Get Accounts</h3>
+<h3 id="entities---get-accounts">Entities - Get Accounts</h3>
 <p>Get the list of risky/malicious accounts as entities from the Incident</p>
-<h3>Initialize variable to collect group details</h3>
+<h3 id="initialize-variable-to-collect-group-details">Initialize variable to collect group details</h3>
 <p>Initialize an array variable to compose user group details to use it later while updating the incident</p>
-<h3>For each-risky account received from the incident</h3>
+<h3 id="for-each-risky-account-received-from-the-incident">For each-risky account received from the incident</h3>
 <p>Iterates on the accounts found in this incident (probably one) and performs the following:</p>
 <ol>
 <li>For the risky user account, playbook uses "Get User" action to get user details from Okta</li>

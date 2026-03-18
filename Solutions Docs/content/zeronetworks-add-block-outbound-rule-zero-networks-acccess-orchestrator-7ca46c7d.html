@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Add Block Outbound Rule - Zero Networks Acccess Orchestrator</h1>
+<h1 id="add-block-outbound-rule---zero-networks-acccess-orchestrator">Add Block Outbound Rule - Zero Networks Acccess Orchestrator</h1>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
@@ -42,23 +42,23 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroNetworks/Playbooks/ZeroNetworksSegment-AddBlockOutboundRule/readme.md">ZeroNetworksSegment-AddBlockOutboundRule/readme.md</a></em></p>
 </blockquote>
-<h1>Zero Networks Segment - Add Block Outbound Rule</h1>
-<h2>Summary</h2>
+<h1 id="zero-networks-segment---add-block-outbound-rule">Zero Networks Segment - Add Block Outbound Rule</h1>
+<h2 id="summary">Summary</h2>
 <p>This playbook allows blocking an IP outbound from protected assets in Zero Networks Segment.  </p>
 <p>When a new Sentinel incident is created, this playbook gets triggered and performs below actions
 1. For the IPs, we add them to a new outbound block rule in Segment.
 2. A comment is added to Microsoft Sentinel incident.</p>
 <p><strong>Playbook overview:</strong>
 <img alt="playbook overview" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroNetworks/Playbooks/ZeroNetworksSegment-AddBlockOutboundRule/images/designerDark.png" /></p>
-<h3>Prerequisites</h3>
+<h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>Zero Networks custom connector needs to be deployed prior to the deployment of this playbook, in the same resource group and region. Relevant instructions can be found in the connector doc page.</li>
 </ol>
-<h3>Deployment instructions</h3>
+<h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
 <li>Deploy the playbook by clicking on "Depoly to Azure" button. This will take you to deplyoing an ARM Template wizard.</li>
 </ol>
@@ -71,8 +71,8 @@
 </ul>
 </li>
 </ol>
-<h3>Post-Deployment instructions</h3>
-<h4>a. Authorize connections</h4>
+<h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
+<h4 id="a-authorize-connections">a. Authorize connections</h4>
 <p>Once deployment is complete, you will need to authorize each connection.
 1.  Click the Microsoft Sentinel connection resource
 2.  Click edit API connection
@@ -80,7 +80,7 @@
 4.  Sign in
 5.  Click Save
 6.  Repeat steps for other connections such as Zero Networks</p>
-<h4>c. Configurations in Microsoft Sentinel</h4>
+<h4 id="c-configurations-in-microsoft-sentinel">c. Configurations in Microsoft Sentinel</h4>
 <ol>
 <li>In Microsoft Sentinel, analytical rules should be configured to trigger an incident with IP Entity.</li>
 <li>Configure the automation rules to trigger this playbook</li>

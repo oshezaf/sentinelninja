@@ -12,6 +12,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (9 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/NordPassEventLogs_CL.json)
@@ -50,7 +57,7 @@ This table is ingested by the following connectors:
 
 **In solution [NordPass](../solutions/nordpass.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [NordPass - Activity token revocation](../content/nordpass-nordpass-activity-token-revocation-800314a6-759a-4575-93e2-1e080b1d33f9-4469b0a8.md) |  |
 | [NordPass - Declined invitation](../content/nordpass-nordpass-declined-invitation-283d7506-f3c6-419a-ae9c-d9afe6a15d6d-905a2cf5.md) |  |
@@ -66,13 +73,13 @@ This table is ingested by the following connectors:
 
 **In solution [NordPass](../solutions/nordpass.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [NordPass](../content/nordpass-nordpass-9080f186.md) |  |
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [NordPass](../content/github-only-nordpass-d00813f6.md) |  |
 

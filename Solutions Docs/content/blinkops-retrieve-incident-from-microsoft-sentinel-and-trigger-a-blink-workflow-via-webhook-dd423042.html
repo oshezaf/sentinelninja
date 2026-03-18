@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Retrieve Incident from Microsoft Sentinel and Trigger a Blink Workflow via Webhook</h1>
+<h1 id="retrieve-incident-from-microsoft-sentinel-and-trigger-a-blink-workflow-via-webhook">Retrieve Incident from Microsoft Sentinel and Trigger a Blink Workflow via Webhook</h1>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
@@ -42,16 +42,16 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BlinkOps/Playbooks/Sentinel-Incident-Handler/readme.md">Sentinel-Incident-Handler/readme.md</a></em></p>
 </blockquote>
-<h1>Blink-Sentinel-Incident-Trigger</h1>
-<h2>Summary</h2>
+<h1 id="blink-sentinel-incident-trigger">Blink-Sentinel-Incident-Trigger</h1>
+<h2 id="summary">Summary</h2>
 <p>This playbook automatically triggers when a <strong>Microsoft Sentinel incident is created or updated</strong>, and sends a structured HTTPS POST request to <strong>Blink</strong>. The integration enables seamless coordination between Sentinel Incident and Blink automation workflows, allowing for rapid incident response, ticketing, notification dispatch, or any custom workflow configured in Blink.</p>
 <p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BlinkOps/Playbooks/Sentinel-Incident-Handler/playbook_screenshot.png" width="50%"/></p>
 <hr />
-<h2>Prerequisites</h2>
+<h2 id="prerequisites">Prerequisites</h2>
 <p>Before deploying this playbook, ensure the following prerequisites are completed:</p>
 <ol>
 <li>Create an <strong>Event-Based Workflow</strong> in <a href="https://docs.blinkops.com/docs/workflows/building-workflows/triggers/event-based-triggers/webhooks">Blink</a> that is configured to trigger via webhook.
@@ -64,7 +64,7 @@
 </ol>
 <p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BlinkOps/Playbooks/Sentinel-Incident-Handler/Configure_Sentinel_Webhook.png" width="50%"/></p>
 <hr />
-<h2>Deployment Instructions</h2>
+<h2 id="deployment-instructions">Deployment Instructions</h2>
 <p>To deploy the playbook into your Azure environment:</p>
 <ol>
 <li>Click the <strong>Deploy to Azure</strong> button below to launch the ARM Template deployment wizard.</li>
@@ -75,9 +75,9 @@
 <p><a href=""><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a><br />
 <a href=""><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
 <hr />
-<h2>Post-Deployment Instructions</h2>
+<h2 id="post-deployment-instructions">Post-Deployment Instructions</h2>
 <p>Once the playbook is deployed successfully, follow these steps to connect it with Microsoft Sentinel's automation rules:</p>
-<h3>1. Create Automation Rule for <strong>Incident Created</strong></h3>
+<h3 id="1-create-automation-rule-for-incident-created">1. Create Automation Rule for <strong>Incident Created</strong></h3>
 <ul>
 <li>Go to: <strong>Microsoft Sentinel &gt; Configuration &gt; Automation</strong>.</li>
 <li>Click <strong>+ Create &gt; Automation rule</strong>.</li>
@@ -89,14 +89,14 @@
 <li><strong>Playbook</strong>: Select your deployed playbook (e.g., <code>Blink_Sentinel_Incident_Trigger</code>).</li>
 <li>Click <strong>Apply</strong>.</li>
 </ul>
-<h3>2. Create Automation Rule for <strong>Incident Updated</strong></h3>
+<h3 id="2-create-automation-rule-for-incident-updated">2. Create Automation Rule for <strong>Incident Updated</strong></h3>
 <ul>
 <li>Repeat the same steps as above.</li>
 <li>For the <strong>Trigger</strong>, select <code>When incident is updated</code>.</li>
 <li>Click <strong>Apply</strong>.</li>
 </ul>
 <hr />
-<h2>Support</h2>
+<h2 id="support">Support</h2>
 <p>For guidance on integrating Blink with other tools and services, visit the official <a href="https://docs.blinkops.com/">Blink Documentation</a>.</p>
 <hr />
 <hr />

@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>AD4IoT-SendEmailtoIoTOwner</h1>
+<h1 id="ad4iot-sendemailtoiotowner">AD4IoT-SendEmailtoIoTOwner</h1>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
@@ -42,7 +42,7 @@
 </tr>
 </tbody>
 </table>
-<h2>Tables Used</h2>
+<h2 id="tables-used">Tables Used</h2>
 <p>This content item queries data from the following tables:</p>
 <table>
 <thead>
@@ -62,24 +62,24 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IoTOTThreatMonitoringwithDefenderforIoT/Playbooks/SendEmailToIoTOwner/readme.md">SendEmailToIoTOwner/readme.md</a></em></p>
 </blockquote>
-<h1>Defender for IoT - Send Email to IoT Owner</h1>
-<h2>Summary</h2>
+<h1 id="defender-for-iot---send-email-to-iot-owner">Defender for IoT - Send Email to IoT Owner</h1>
+<h2 id="summary">Summary</h2>
 <p>This playbook send an email with the incident details to the IoT/OT device owner (as defined in Defender for IoT) to validate the incident and initiate incident response directly from the email. The incident is automatically updated based on the email response from the device owner.</p>
 <p>Email response options:</p>
 <p>Yes this is expected - the incident will be closed automatically</p>
 <p>No this is not expected - the incident will remain active, severity level will increase, and a confirmation tag will be added.</p>
-<h2>Prerequisites</h2>
+<h2 id="prerequisites">Prerequisites</h2>
 <p>The playbook require the following in order to connect and use the playbook:</p>
 <ol>
 <li>Reader role applied on the Azure subscription \ resource group scope</li>
 <li>Valid connections where required</li>
 <li>An automation rule to connect incident triggers with the playbook.</li>
 </ol>
-<h2>Deployment</h2>
+<h2 id="deployment">Deployment</h2>
 <p>To add the Security Admin role to the Azure subscription where the playbook is installed:</p>
 <p>1.Open the playbook from the Microsoft Sentinel Automation page.</p>
 <p>2.With the playbook opened as a Logic app, select Identity &gt; System assigned, and then in the Permissions area, select the Azure role assignments button.</p>

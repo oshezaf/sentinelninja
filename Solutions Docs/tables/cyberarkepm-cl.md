@@ -11,6 +11,14 @@
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (85 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyberArkEPM_CL.json)
@@ -125,7 +133,7 @@ This table is ingested by the following connectors:
 
 **In solution [CyberArkEPM](../solutions/cyberarkepm.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [CyberArkEPM - Attack attempt not blocked](../content/cyberarkepm-cyberarkepm-attack-attempt-not-blocked-8e8978a2-9188-4187-8909-5ea00507bf16-2c52bf85.md) |  |
 | [CyberArkEPM - MSBuild usage as LOLBin](../content/cyberarkepm-cyberarkepm-msbuild-usage-as-lolbin-a11bf869-458e-49fd-be03-58021b14be15-c30da3a6.md) |  |
@@ -142,7 +150,7 @@ This table is ingested by the following connectors:
 
 **In solution [CyberArkEPM](../solutions/cyberarkepm.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [CyberArkEPM - Elevation requests](../content/cyberarkepm-cyberarkepm-elevation-requests-20fc7ee2-5387-4c4c-8819-77fb7bfb8d2a-c48d1704.md) |  |
 | [CyberArkEPM - Powershell downloads](../content/cyberarkepm-cyberarkepm-powershell-downloads-576cac40-d6f5-4ef9-9c3d-013b94656bea-5c113d34.md) |  |
@@ -159,7 +167,7 @@ This table is ingested by the following connectors:
 
 **In solution [CyberArkEPM](../solutions/cyberarkepm.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [CyberArkEPM](../content/cyberarkepm-cyberarkepm-34ce07fb.md) |  |
 

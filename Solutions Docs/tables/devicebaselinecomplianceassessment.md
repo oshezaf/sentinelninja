@@ -16,6 +16,12 @@ Baseline compliance assessment snapshot, which indicates the status of various s
 | **Ingestion API Supported** | ✗ No |
 | **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicebaselinecomplianceassessment-table) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (12 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicebaselinecomplianceassessment)
@@ -49,7 +55,7 @@ This table is used by the following solutions:
 
 **Standalone Content:**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [MDE_FindDefenderSettingsOnEndpoints](../content/standalone-content-mde-finddefendersettingsonendpoints-f8386a89-20c2-41ab-8ae2-bab88de65f81-97b8b825.md) |  |
 

@@ -11,6 +11,14 @@
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (74 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/PaloAltoPrismaCloudAlert_CL.json)
@@ -114,7 +122,7 @@ This table is ingested by the following connectors:
 
 **In solution [PaloAltoPrismaCloud](../solutions/paloaltoprismacloud.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Palo Alto Prisma Cloud - Access keys are not rotated for 90 days](../content/paloaltoprismacloud-palo-alto-prisma-cloud-access-keys-are-not-rotated-for-90-days-777d4993-31bb-4d45-b949-84f58e09fa2f-741c6c72.md) |  |
 | [Palo Alto Prisma Cloud - Anomalous access key usage](../content/paloaltoprismacloud-palo-alto-prisma-cloud-anomalous-access-key-usage-bd602b90-f7f9-4ae9-bf8c-3672a24deb39-ba4d66a4.md) |  |
@@ -132,7 +140,7 @@ This table is ingested by the following connectors:
 
 **In solution [PaloAltoPrismaCloud](../solutions/paloaltoprismacloud.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Palo Alto Prisma Cloud - Access keys used](../content/paloaltoprismacloud-palo-alto-prisma-cloud-access-keys-used-f2e509e5-6eda-4626-a167-2875eb9c48af-3de24356.md) |  |
 | [Palo Alto Prisma Cloud - High risk score opened alerts](../content/paloaltoprismacloud-palo-alto-prisma-cloud-high-risk-score-opened-alerts-23a0867f-a522-4b34-acf4-0eadf75fc1e7-d49e04e7.md) |  |
@@ -148,7 +156,7 @@ This table is ingested by the following connectors:
 
 **In solution [PaloAltoPrismaCloud](../solutions/paloaltoprismacloud.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [PaloAltoPrismaCloudOverview](../content/paloaltoprismacloud-paloaltoprismacloudoverview-8eaa7569.md) |  |
 

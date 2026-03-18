@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Fortinet-FortiGate-ResponseOnBlockURL</h1>
+<h1 id="fortinet-fortigate-responseonblockurl">Fortinet-FortiGate-ResponseOnBlockURL</h1>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
@@ -42,11 +42,11 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiGate%20Next-Generation%20Firewall%20connector%20for%20Microsoft%20Sentinel/Playbooks/Fortinet_ResponseOnURL/readme.md">Fortinet_ResponseOnURL/readme.md</a></em></p>
 </blockquote>
-<h1>Fortinet - ResponseOnURL</h1>
+<h1 id="fortinet---responseonurl">Fortinet - ResponseOnURL</h1>
 <p>## Summary</p>
 <p>This playbook allows the SOC users to automatically response to Microsoft Sentinel incidents which includes URL's, by adding the URLs to the Sentinel URL blocked group.
  <a href="https://www.fortinet.com/fortiguard/threat-intelligence/threat-research">Learn more about Threat Intelligence in Fortinet policy</a></p>
@@ -55,7 +55,7 @@
 <img alt="Fortinet" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiGate%20Next-Generation%20Firewall%20connector%20for%20Microsoft%20Sentinel/Playbooks/Fortinet_ResponseOnURL/ResponseOnURLAdaptiveCard.PNG" /><br></p>
 <p><strong>This is the consolidate adaptive card about the summary of actions taken on IP and the incident configuration ::</strong><br><br>
 <img alt="Consolidated Adaptive Card example" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiGate%20Next-Generation%20Firewall%20connector%20for%20Microsoft%20Sentinel/Playbooks/Fortinet_ResponseOnURL/FortinetSummaryAdaptivecardURL.PNG" /><br></p>
-<h3>Prerequisites</h3>
+<h3 id="prerequisites">Prerequisites</h3>
 <ul>
 <li>Sentinel URL block group should create in the VM</li>
 <li>FortinetConnector needs to be deployed prior to the deployment of this playbook under the same subscription. Relevant instructions can be found in the connector doc page.</li>
@@ -63,7 +63,7 @@
 <li>FortinetConnector need to be authenticated with an API key. Relevant instructions can be found in the connector doc page.</li>
 <li>This playbook will add new address object to existing VM. </li>
 </ul>
-<h3>Deployment instructions</h3>
+<h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
 <li>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
 </ol>
@@ -79,7 +79,7 @@
 </ul>
 </li>
 </ol>
-<h3>Post-Deployment instructions</h3>
+<h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
 <ul>
 <li>Go to logic app designer.</li>
 <li>Look for the function call actions. You can find them by the titles:</li>
@@ -90,7 +90,7 @@
 <li>Save playbook.</li>
 <li>Go to Microsoft Sentinel, hook playbook to Microsoft Sentinel rules.</li>
 </ul>
-<h4>a. Authorize connections</h4>
+<h4 id="a-authorize-connections">a. Authorize connections</h4>
 <p>Once deployment is complete, you will need to authorize each connection.
 1.  Click the Microsoft Sentinel connection resource.
 2.  Click edit API connection.
@@ -98,21 +98,21 @@
 4.  Sign in.
 5.  Click Save.
 6.  Repeat steps for other connection such as Team's connection</p>
-<h2>Playbook steps explained</h2>
-<h4>b. Configurations in Sentinel</h4>
+<h2 id="playbook-steps-explained">Playbook steps explained</h2>
+<h4 id="b-configurations-in-sentinel">b. Configurations in Sentinel</h4>
 <ol>
 <li>In Microsoft sentinel analytical rules should be configured to trigger an incident with URL Entity.</li>
 <li>Configure the automation rules to trigger this playbook.</li>
 </ol>
-<h3>When Microsoft Sentinel incident creation rule is triggered</h3>
+<h3 id="when-microsoft-sentinel-incident-creation-rule-is-triggered">When Microsoft Sentinel incident creation rule is triggered</h3>
 <ul>
 <li>Microsoft Sentinel incident is created. The playbook receives the incident as the input.</li>
 </ul>
-<h3>Get Entities as URLs</h3>
+<h3 id="get-entities-as-urls">Get Entities as URLs</h3>
 <ul>
 <li>Get the list of risky/malicious URLs as entities from the Incident.</li>
 </ul>
-<h3>Initialize variables</h3>
+<h3 id="initialize-variables">Initialize variables</h3>
 <ul>
 <li>
 <p>Action Name (type-String) - To determine the action name to be displayed in the adaptive card such as Block or Unblock URL from predefined address group.</p>
@@ -130,7 +130,7 @@
 <p>Predefined group name(type-String)- You can change the pre-defined address group name here</p>
 </li>
 </ul>
-<h2>Post an adaptive card to the SOC channel</h2>
+<h2 id="post-an-adaptive-card-to-the-soc-channel">Post an adaptive card to the SOC channel</h2>
 <p><em>[Content truncated...]</em></p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>

@@ -16,6 +16,12 @@ URLs sent through Microsoft Teams messages in your organization
 | **Ingestion API Supported** | ✗ No |
 | **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-messageurlinfo-table) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (6 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/messageurlinfo)
@@ -43,7 +49,7 @@ This table is used by the following solutions:
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Hunt for malicious messages using External Threat Intelligence](../content/microsoft-defender-xdr-hunt-for-malicious-messages-using-external-threat-intelligence-28c79831-120c-4028-8a2b-4e4ae3082148-7fefb5f5.md) |  |
 | [Rare Domains in External Teams Messages](../content/microsoft-defender-xdr-rare-domains-in-external-teams-messages-b2a36ca5-b6a4-4f27-a7d8-7f044885cccf-6bbf2e28.md) |  |
@@ -53,7 +59,7 @@ This table is used by the following solutions:
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Hunt for malicious messages using External Threat Intelligence](../content/github-only-hunt-for-malicious-messages-using-external-threat-intelligence-4dcb872f-9b39-4b95-8f30-3664f9f70dc2-9728c854.md) |  |
 | [Punycode lookalikes](../content/microsoft-defender-xdr-punycode-lookalikes-9582b09c-a5cd-4da0-8244-52cc952da158-13260aaa.md) |  |

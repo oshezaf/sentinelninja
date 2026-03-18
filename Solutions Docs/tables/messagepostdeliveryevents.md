@@ -16,6 +16,12 @@ Security events that occurred after the delivery of a Microsoft Teams message in
 | **Ingestion API Supported** | ✗ No |
 | **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-messagepostdeliveryevents-table) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (15 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/messagepostdeliveryevents)
@@ -52,7 +58,7 @@ This table is used by the following solutions:
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Potentially malicious URL click in Teams](../content/microsoft-defender-xdr-potentially-malicious-url-click-in-teams-8d25156b-2ac4-4528-b1b1-f8427267f9f2-e9efebeb.md) |  |
 | [Teams Malware ZAP](../content/microsoft-defender-xdr-teams-malware-zap-4684afc7-3d05-4ec1-8fb0-342707d0ac5d-cc928c54.md) |  |
@@ -64,7 +70,7 @@ This table is used by the following solutions:
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Potentially malicious URL click in Teams](../content/github-only-potentially-malicious-url-click-in-teams-be6ae743-71b5-4cbf-b5f0-e7c99c8bd197-3db0c86d.md) |  |
 | [Teams Malware ZAP](../content/github-only-teams-malware-zap-dc961519-a3d3-4b95-8459-982858f0cca6-aef88905.md) |  |

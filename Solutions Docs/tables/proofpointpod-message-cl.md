@@ -11,6 +11,14 @@
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (110 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ProofpointPOD_message_CL.json)
@@ -150,7 +158,7 @@ This table is ingested by the following connectors:
 
 **In solution [Proofpoint On demand(POD) Email Security](../solutions/proofpoint-on-demand-pod-email-security.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [ProofpointPOD - Binary file in attachment](../content/proofpoint-on-demand-pod-email-security-proofpointpod-binary-file-in-attachment-eb68b129-5f17-4f56-bf6d-dde48d5e615a-ae200d61.md) |  |
 | [ProofpointPOD - Email sender IP in TI list](../content/proofpoint-on-demand-pod-email-security-proofpointpod-email-sender-ip-in-ti-list-78979d32-e63f-4740-b206-cfb300c735e0-63420dc8.md) |  |
@@ -167,7 +175,7 @@ This table is ingested by the following connectors:
 
 **In solution [Proofpoint On demand(POD) Email Security](../solutions/proofpoint-on-demand-pod-email-security.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [ProofpointPOD - Emails with high score of 'adult' filter classifier value](../content/proofpoint-on-demand-pod-email-security-proofpointpod-emails-with-high-score-of-'adult'-filter-classifie-0794a162-8635-43fd-81ed-2cf2604575b1-5d25de5e.md) |  |
 | [ProofpointPOD - Emails with high score of 'malware' filter classifier value](../content/proofpoint-on-demand-pod-email-security-proofpointpod-emails-with-high-score-of-'malware'-filter-classif-eb74aaab-ebf4-4763-9b03-b1a33fe48600-0cf4c124.md) |  |
@@ -184,13 +192,13 @@ This table is ingested by the following connectors:
 
 **In solution [Proofpoint On demand(POD) Email Security](../solutions/proofpoint-on-demand-pod-email-security.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ProofpointPOD](../content/proofpoint-on-demand-pod-email-security-proofpointpod-14c159d7.md) |  |
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ProofPointThreatDashboard](../content/github-only-proofpointthreatdashboard-cb711596.md) |  |
 | [ProofpointPOD](../content/github-only-proofpointpod-64db84d0.md) |  |

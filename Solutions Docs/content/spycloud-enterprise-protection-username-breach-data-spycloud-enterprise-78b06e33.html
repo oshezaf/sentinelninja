@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Username Breach Data - SpyCloud Enterprise</h1>
+<h1 id="username-breach-data---spycloud-enterprise">Username Breach Data - SpyCloud Enterprise</h1>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
@@ -42,13 +42,13 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Get-Username-Breach-Data-Playbook/readme.md">SpyCloud-Get-Username-Breach-Data-Playbook/readme.md</a></em></p>
 </blockquote>
-<h1>SpyCloud Enterprise Username Breach Data Playbook</h1>
+<h1 id="spycloud-enterprise-username-breach-data-playbook">SpyCloud Enterprise Username Breach Data Playbook</h1>
 <p><img alt="SpyCloud Enterprise" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Get-Username-Breach-Data-Playbook/images/logo.png" /></p>
-<h2>Table of Contents</h2>
+<h2 id="table-of-contents">Table of Contents</h2>
 <ol>
 <li><a href="#overview">Overview</a></li>
 <li><a href="#prerequisites">Prerequisites</a></li>
@@ -56,7 +56,7 @@
 <li><a href="#postdeployment">Post Deployment Steps</a></li>
 </ol>
 <p><a name="overview"></p>
-<h2>Overview</h2>
+<h2 id="overview">Overview</h2>
 <p>The SpyCloud Enterprise API is able to provide breach data for a username or set of usernames associated with an incident. When a new Microsoft Sentinel Incident is created, this playbook gets triggered and performs the following actions:</p>
 <ul>
 <li>It fetches all the account entities in the incident.</li>
@@ -65,13 +65,13 @@
 </ul>
 <p><img alt="Incident Comments" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Get-Username-Breach-Data-Playbook/images/comments.png" /></p>
 <p><a name="prerequisites"></p>
-<h2>Prerequisites</h2>
+<h2 id="prerequisites">Prerequisites</h2>
 <ul>
 <li>A SpyCloud Enterprise API Key</li>
 <li>SpyCloud Enterprise custom connector needs to be deployed prior to the deployment of this playbook, in the same resource group and region. Relevant instructions can be found on the connector documentation page.</li>
 </ul>
 <p><a name="deployment"></p>
-<h2>Deployment Instructions</h2>
+<h2 id="deployment-instructions">Deployment Instructions</h2>
 <ul>
 <li>Deploy the playbooks by clicking on the "Deploy to Azure" button. This will take you to deploy an ARM Template wizard.</li>
 <li>Fill in the required parameters for deploying the playbook.
@@ -81,14 +81,14 @@
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSpyCloud%20Enterprise%20Protection%2FPlaybooks%2FSpyCloud-Get-Username-Breach-Data-Playbook%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
 <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSpyCloud%20Enterprise%20Protection%2FPlaybooks%2FSpyCloud-Get-Username-Breach-Data-Playbook%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
 <p><a name="postdeployment"></p>
-<h2>Post Deployment Instructions</h2>
-<h3>Authorize connections</h3>
+<h2 id="post-deployment-instructions">Post Deployment Instructions</h2>
+<h3 id="authorize-connections">Authorize connections</h3>
 <p>Once deployment is complete, you will need to authorize each connection:
 - As a best practice, we have used the Sentinel connection in Logic Apps that use "ManagedSecurityIdentity" permissions. Please refer to <a href="https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-managed-identity-for-azure-sentinel-logic-apps/ba-p/2068204">this document</a> and provide permissions to the Logic App accordingly.
 - Provide connection details for the SpyCloud Enterprise Custom Connector.
 <img alt="for_each" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Get-Username-Breach-Data-Playbook/images/for_each.png" />
 - Save the Logic App. If the Logic App prompts any missing connections, please update the connections similarly.</p>
-<h3>Configurations in Sentinel:</h3>
+<h3 id="configurations-in-sentinel">Configurations in Sentinel:</h3>
 <ul>
 <li>In Microsoft Sentinel, analytical rules should be configured to trigger an incident with the Account entity.</li>
 <li>Configure the automation rules to trigger this playbook.</li>

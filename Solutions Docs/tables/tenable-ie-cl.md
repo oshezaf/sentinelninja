@@ -10,6 +10,14 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (10 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Tenable_IE_CL.json)
@@ -53,7 +61,7 @@ This table is ingested by the following connectors:
 
 **In solution [Alsid For AD](../solutions/alsid-for-ad.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Alsid Active Directory attacks pathways](../content/alsid-for-ad-alsid-active-directory-attacks-pathways-9649e203-3cb7-47ff-89a9-42f2a5eefe31-b1b754b8.md) |  |
 | [Alsid DCShadow](../content/alsid-for-ad-alsid-dcshadow-25e0b2dd-3ad3-4d5b-80dd-720f4ef0f12c-a4a36fc9.md) |  |
@@ -70,7 +78,7 @@ This table is ingested by the following connectors:
 
 **In solution [Tenable App](../solutions/tenable-app.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [TIE Active Directory attacks pathways](../content/tenable-app-tie-active-directory-attacks-pathways-de549a62-f595-4810-88bd-621338186588-8d945f8a.md) |  |
 | [TIE DCShadow](../content/tenable-app-tie-dcshadow-874e3530-552e-437b-ba2e-227979e7e43c-398b98b9.md) |  |
@@ -87,7 +95,7 @@ This table is ingested by the following connectors:
 
 **In solution [TenableAD](../solutions/tenablead.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Tenable.ad Active Directory attacks pathways](../content/tenablead-tenable.ad-active-directory-attacks-pathways-4639bb0a-ca12-4a57-8e53-f61c2c6034d6-79dfc456.md) |  |
 | [Tenable.ad DCShadow](../content/tenablead-tenable.ad-dcshadow-861044f3-6eef-4f79-8609-e3764abb02f4-f4472cd3.md) |  |
@@ -106,28 +114,28 @@ This table is ingested by the following connectors:
 
 **In solution [Alsid For AD](../solutions/alsid-for-ad.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [AlsidIoA](../content/alsid-for-ad-alsidioa-d26d67ed.md) |  |
 | [AlsidIoE](../content/alsid-for-ad-alsidioe-984d410f.md) |  |
 
 **In solution [Tenable App](../solutions/tenable-app.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [TenableIEIoA](../content/tenable-app-tenableieioa-03d04cb0.md) |  |
 | [TenableIEIoE](../content/tenable-app-tenableieioe-ef6095f6.md) |  |
 
 **In solution [TenableAD](../solutions/tenablead.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [TenableAdIoA](../content/tenablead-tenableadioa-34869e80.md) |  |
 | [TenableAdIoE](../content/tenablead-tenableadioe-cff627f5.md) |  |
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [AlsidIoA](../content/github-only-alsidioa-6dd0a5fc.md) |  |
 | [AlsidIoE](../content/github-only-alsidioe-3d7bf853.md) |  |

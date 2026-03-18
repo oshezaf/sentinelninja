@@ -12,6 +12,14 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (2 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/NGINX_CL.json)
@@ -45,7 +53,7 @@ This table is ingested by the following connectors:
 
 **In solution [NGINX HTTP Server](../solutions/nginx-http-server.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [NGINX - Command in URI](../content/nginx-http-server-nginx-command-in-uri-d84739ce-2f46-4391-b25e-a2edbea19d7e-3ba09d43.md) |  |
 | [NGINX - Core Dump](../content/nginx-http-server-nginx-core-dump-9a7f5a97-354b-4eac-b407-a1cc7fc4b4ec-6203a6f6.md) |  |
@@ -62,7 +70,7 @@ This table is ingested by the following connectors:
 
 **In solution [NGINX HTTP Server](../solutions/nginx-http-server.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [NGINX - Abnormal request size](../content/nginx-http-server-nginx-abnormal-request-size-930f8b54-3bef-11ec-8d3d-0242ac130003-1293beec.md) |  |
 | [NGINX - Rare URLs requested](../content/nginx-http-server-nginx-rare-urls-requested-fd2ae5f6-3bea-11ec-8d3d-0242ac130003-186d0095.md) |  |
@@ -79,7 +87,7 @@ This table is ingested by the following connectors:
 
 **In solution [NGINX HTTP Server](../solutions/nginx-http-server.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [NGINX](../content/nginx-http-server-nginx-b8b7e921.md) |  |
 

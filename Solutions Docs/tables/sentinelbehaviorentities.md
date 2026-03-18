@@ -15,6 +15,13 @@ Reference for SentinelBehaviorEntities table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelbehaviorentities) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Content Items](#content-items-using-this-table)
+- [Resource Types](#resource-types)
+
 ## Schema (49 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelbehaviorentities)
@@ -85,7 +92,7 @@ This table is used by the following solutions:
 
 **In solution [UEBA Essentials](../solutions/ueba-essentials.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [UEBABehaviorsAnalysisWorkbook](../content/ueba-essentials-uebabehaviorsanalysisworkbook-c444e4d9.md) |  |
 

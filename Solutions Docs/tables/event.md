@@ -17,6 +17,15 @@ Reference for Event table in Azure Monitor Logs.
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/event) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+- [Resource Types](#resource-types)
+
 ## Schema (22 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/event)
@@ -87,20 +96,20 @@ This table is ingested by the following connectors:
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):** `EventID == "3"`<br>`Source == "Microsoft-Windows-Sysmon"`
 
-| Content Item |
+| Analytic Rule |
 |:-------------|
 | [Log4j vulnerability exploit aka Log4Shell IP IOC](../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990-c6cdb809.md) |
 
 **In solution [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Credential Dumping Tools - File Artifacts](../content/attacker-tools-threat-protection-essentials-credential-dumping-tools-file-artifacts-32ffb19e-8ed8-40ed-87a0-1adb4746b7c4-38277ddb.md) | `EventID == "11"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` |
 | [Credential Dumping Tools - Service Installation](../content/attacker-tools-threat-protection-essentials-credential-dumping-tools-service-installation-4ebbb5c2-8802-11ec-a8a3-0242ac120002-507654df.md) | `EventID == "7045"`<br>`Source == "Service Control Manager"` |
 
 **In solution [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Detecting Macro Invoking ShellBrowserWindow COM Objects](../content/endpoint-threat-protection-essentials-detecting-macro-invoking-shellbrowserwindow-com-objects-e7470b35-0128-4508-bfc9-e01cfb3c2eb7-54d0e1c8.md) | `EventID == "1"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` |
 | [Dumping LSASS Process Into a File](../content/endpoint-threat-protection-essentials-dumping-lsass-process-into-a-file-a7b9df32-1367-402d-b385-882daf6e3020-8e3af60d.md) | `EventID == "10"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` |
@@ -112,35 +121,35 @@ This table is ingested by the following connectors:
 
 **In solution [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md):** `EventID in "1,6"`<br>`EventLog == "MSExchange Management"`
 
-| Content Item |
+| Analytic Rule |
 |:-------------|
 | [Server Oriented Cmdlet And User Oriented Cmdlet used](../content/microsoft-exchange-security-exchange-on-premises-server-oriented-cmdlet-and-user-oriented-cmdlet-used-7bce901b-9bc8-4948-8dfc-8f68878092d5-0bb5de2e.md) |
 | [VIP Mailbox manipulation](../content/microsoft-exchange-security-exchange-on-premises-vip-mailbox-manipulation-5170c3c4-b8c9-485c-910d-a21d965ee181-521c4b8b.md) |
 
 **In solution [Windows Forwarded Events](../solutions/windows-forwarded-events.md):** `EventID == "0"`<br>`EventLog == "Application"`<br>`Source == "MOVEit DMZ Audit"`
 
-| Content Item |
+| Analytic Rule |
 |:-------------|
 | [Progress MOVEIt File transfer above threshold](../content/windows-forwarded-events-progress-moveit-file-transfer-above-threshold-9bd18b63-f1ca-4375-95db-39fda00bfe20-ab42fd6b.md) |
 | [Progress MOVEIt File transfer folder count above threshold](../content/windows-forwarded-events-progress-moveit-file-transfer-folder-count-above-threshold-26a993ca-0a96-45a0-8405-05a210fb98f8-c970d686.md) |
 
 **In solution [Windows Security Events](../solutions/windows-security-events.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [AD FS Remote HTTP Network Connection](../content/windows-security-events-ad-fs-remote-http-network-connection-d57c33a9-76b9-40e0-9dfa-ff0404546410-3555cd57.md) | `EventID in "18,3"`<br>`Source == "Microsoft-Windows-Sysmon"` |
 | [ADFS Database Named Pipe Connection](../content/windows-security-events-adfs-database-named-pipe-connection-dcdf9bfc-c239-4764-a9f9-3612e6dff49c-29ef627a.md) | `EventID == "18"`<br>`Source == "Microsoft-Windows-Sysmon"` |
 
 **In solution [Zinc Open Source](../solutions/zinc-open-source.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Zinc Actor IOCs files - October 2022](../content/zinc-open-source-zinc-actor-iocs-files-october-2022-9a7f6651-801b-491c-a548-8b454b356eaa-72407d32.md) |  |
 | [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.md) |  |
 
 **Standalone Content:**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [ADFS DKM Master Key Export](../content/standalone-content-adfs-dkm-master-key-export-18e6a87e-9d06-4a4e-8b59-3469cd49552d-b85786be.md) |  |
 | [Audit policy manipulation using auditpol utility](../content/standalone-content-audit-policy-manipulation-using-auditpol-utility-66276b14-32c5-4226-88e3-080dacc31ce1-c1e75d10.md) | `Source == "Microsoft-Windows-Sysmon"` |
@@ -159,7 +168,7 @@ This table is ingested by the following connectors:
 
 **In solution [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Detect Certutil (LOLBins and LOLScripts) Usage](../content/endpoint-threat-protection-essentials-detect-certutil-lolbins-and-lolscripts-usage-0e429446-2798-49e4-924d-c37338f24e23-bc9b437b.md) | `EventID == "1"`<br>`Source == "Microsoft-Windows-Sysmon"` |
 | [Execution of File with One Character in the Name](../content/endpoint-threat-protection-essentials-execution-of-file-with-one-character-in-the-name-299472c4-8382-4c5b-82d9-718cda193393-14ba3a7f.md) | `EventID == "1"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` |
@@ -170,14 +179,14 @@ This table is ingested by the following connectors:
 
 **In solution [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md):** `Source == "Microsoft-Windows-Sysmon"`
 
-| Content Item |
+| Hunting Query |
 |:-------------|
 | [Known Nylon Typhoon Registry modifications patterns](../content/legacy-ioc-based-threat-protection-known-nylon-typhoon-registry-modifications-patterns-f090f8f4a-b986-42d2-b536-e0795c723e25-f442d105.md) |
 | [SolarWinds Inventory](../content/legacy-ioc-based-threat-protection-solarwinds-inventory-278592b5-612b-48a4-bb38-4c01ff8ee2a5-c7f23741.md) |
 
 **In solution [Windows Security Events](../solutions/windows-security-events.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [KrbRelayUp Local Privilege Escalation Service Creation](../content/windows-security-events-krbrelayup-local-privilege-escalation-service-creation-ccbc73a1-d303-4613-aed4-478e996f454e-0d6549ff.md) | `EventID == "7045"`<br>`Source == "Service Control Manager"` |
 | [Service installation from user writable directory](../content/windows-security-events-service-installation-from-user-writable-directory-5a9ccb48-1316-46e1-89d1-aca0355c305e-81f8a107.md) | `EventID == "7045"`<br>`Source == "Service Control Manager"` |
@@ -185,13 +194,13 @@ This table is ingested by the following connectors:
 
 **Standalone Content:**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Tracking Privileged Account Rare Activity](../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.md) |  |
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [AD FS Database Local SQL Statements](../content/github-only-ad-fs-database-local-sql-statements-81fab62b-ef92-487a-9c35-a91a116309e6-3d6b6fc8.md) | `EventID == "33205"`<br>`EventLog == "Application"`<br>`Source == "MSSQL$MICROSOFT##WID"` |
 | [Potential Local Exploitation for Privilege Escalation](../content/github-only-potential-local-exploitation-for-privilege-escalation-a78b826e-f2d1-42f9-b21b-20cf3bc2d391-4c7607f3.md) | `EventID == "1"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` |
@@ -202,56 +211,56 @@ This table is ingested by the following connectors:
 
 **In solution [Azure Web Application Firewall (WAF)](../solutions/azure-web-application-firewall-waf.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [WebApplicationFirewallWAFTypeEvents](../content/azure-web-application-firewall-waf-webapplicationfirewallwaftypeevents-bc7c447b.md) |  |
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |  |
 
 **In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |  |
 
 **In solution [DORA Compliance](../solutions/dora-compliance.md):** `EventID in "1001,1069,1205"`
 
-| Content Item |
+| Workbook |
 |:-------------|
 | [DORACompliance](../content/dora-compliance-doracompliance-21bcc12f.md) |
 
 **In solution [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md):** `EventID in "1,6"`<br>`EventLog == "MSExchange Management"`
 
-| Content Item |
+| Workbook |
 |:-------------|
 | [Microsoft Exchange Admin Activity](../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-admin-activity-dd1fad82.md) |
 | [Microsoft Exchange Search AdminAuditLog](../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-search-adminauditlog-fcf38c03.md) |
 
 **In solution [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md):** `EventID in "1,6"`<br>`EventLog == "MSExchange Management"`
 
-| Content Item |
+| Workbook |
 |:-------------|
 | [Microsoft Exchange Least Privilege with RBAC - Online](../content/microsoft-exchange-security-exchange-online-microsoft-exchange-least-privilege-with-rbac-online-e1522c02.md) |
 
 **In solution [PCI DSS Compliance](../solutions/pci-dss-compliance.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [PCIDSSCompliance](../content/pci-dss-compliance-pcidsscompliance-b201eb3d.md) |  |
 
 **In solution [Veeam](../solutions/veeam.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [VeeamSecurityActivities](../content/veeam-veeamsecurityactivities-f559a349.md) |  |
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) | `EventLog == "Application"`<br>`Source == "Microsoft-Windows-Sysmon"`<br>`Source startswith "MSExchange"` |
 | [InsecureProtocols](../content/github-only-insecureprotocols-bd42e6f8.md) | `EventLog == "Microsoft-Windows-SMBServer/Audit"`<br>`EventLog == "System"`<br>`Source == "NETLOGON"` |
@@ -315,10 +324,10 @@ References by type: 4 connectors, 42 content items, 6 ASIM parsers, 7 other pars
 | `EventID == "7045"`<br>`Source == "Service Control Manager"` | - | 3 | - | - | **3** |
 | `EventID == "3"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | 1 | 1 | - | **2** |
 | `EventID == "0"`<br>`EventLog == "Application"`<br>`Source == "MOVEit DMZ Audit"` | - | 2 | - | - | **2** |
-| `EventLog == "Application"` | 1 | - | - | - | **1** |
-| `EventLog == "MSExchange Management"` | 1 | - | - | - | **1** |
-| `Source == "ALCWebCTRL"` | 1 | - | - | - | **1** |
 | `EventLog in "Application,MSExchange Management,System"` | 1 | - | - | - | **1** |
+| `Source == "ALCWebCTRL"` | 1 | - | - | - | **1** |
+| `EventLog == "MSExchange Management"` | 1 | - | - | - | **1** |
+| `EventLog == "Application"` | 1 | - | - | - | **1** |
 | `EventID == "11"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` | - | 1 | - | - | **1** |
 | `EventID == "10"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` | - | 1 | - | - | **1** |
 | `EventID == "18"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | 1 | - | - | **1** |

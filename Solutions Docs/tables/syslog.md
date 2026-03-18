@@ -18,6 +18,15 @@ Reference for Syslog table in Azure Monitor Logs.
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/syslog) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+- [Resource Types](#resource-types)
+
 ## Schema (17 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/syslog)
@@ -155,7 +164,7 @@ This table is ingested by the following connectors:
 
 **In solution [CTERA](../solutions/ctera.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Antivirus Detected an Infected File](../content/ctera-antivirus-detected-an-infected-file-4f767afa-d666-4ed4-b453-a4f5ad35181b-5bf89171.md) | `SyslogMessage contains "found an infected file"` |
 | [CTERA Mass Access Denied Detection Analytic](../content/ctera-ctera-mass-access-denied-detection-analytic-88341fc3-38e1-46db-8bb1-6c052e749991-0ac24cd2.md) | `ProcessName == "gw-audit"` |
@@ -166,7 +175,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cisco ISE](../solutions/cisco-ise.md):** `ProcessName has_any "CISE,CSCO"`
 
-| Content Item |
+| Analytic Rule |
 |:-------------|
 | [CiscoISE -  Command executed with the highest privileges from new IP](../content/cisco-ise-ciscoise-command-executed-with-the-highest-privileges-from-new-ip-1fa0da3e-ec99-484f-aadb-93f59764e158-57351fb6.md) |
 | [CiscoISE - Attempt to delete local store logs](../content/cisco-ise-ciscoise-attempt-to-delete-local-store-logs-b6549a28-d61c-476e-b350-4404352ee427-fb593134.md) |
@@ -181,7 +190,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cisco SD-WAN](../solutions/cisco-sd-wan.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Cisco SDWAN - IPS Event Threshold](../content/cisco-sd-wan-cisco-sdwan-ips-event-threshold-dc3627c3-f9de-4f17-bfd3-ba99b64a0a67-de6de6a0.md) |  |
 | [Cisco SDWAN - Intrusion Events](../content/cisco-sd-wan-cisco-sdwan-intrusion-events-232a1c75-63fc-4c81-8b18-b4a739fccba8-806e2f0c.md) |  |
@@ -190,7 +199,7 @@ This table is ingested by the following connectors:
 
 **In solution [CiscoWSA](../solutions/ciscowsa.md):** `ProcessName == "cisco_wsa"`
 
-| Content Item |
+| Analytic Rule |
 |:-------------|
 | [Cisco WSA - Access to unwanted site](../content/ciscowsa-cisco-wsa-access-to-unwanted-site-38029e86-030c-46c4-8a91-a2be7c74d74c-3d994899.md) |
 | [Cisco WSA - Internet access from public IP](../content/ciscowsa-cisco-wsa-internet-access-from-public-ip-4250b050-e1c6-4926-af04-9484bbd7e94f-70c85e5f.md) |
@@ -206,7 +215,7 @@ This table is ingested by the following connectors:
 
 **In solution [Digital Guardian Data Loss Prevention](../solutions/digital-guardian-data-loss-prevention.md):** `SyslogMessage contains "managed_device_id"`<br>`SyslogMessage contains "number_of_incidents"`
 
-| Content Item |
+| Analytic Rule |
 |:-------------|
 | [Digital Guardian - Bulk exfiltration to external domain](../content/digital-guardian-data-loss-prevention-digital-guardian-bulk-exfiltration-to-external-domain-5f75a873-b524-4ba5-a3b8-2c20db517148-16d27910.md) |
 | [Digital Guardian - Exfiltration to external domain](../content/digital-guardian-data-loss-prevention-digital-guardian-exfiltration-to-external-domain-a19885c8-1e44-47e3-81df-d1d109f5c92d-fb713a44.md) |
@@ -221,14 +230,14 @@ This table is ingested by the following connectors:
 
 **In solution [ESETPROTECT](../solutions/esetprotect.md):** `ProcessName == "ERAServer"`
 
-| Content Item |
+| Analytic Rule |
 |:-------------|
 | [Threats detected by ESET](../content/esetprotect-threats-detected-by-eset-64badfab-1dd8-4491-927b-3ca206fa9a17-6283dd27.md) |
 | [Website blocked by ESET](../content/esetprotect-website-blocked-by-eset-7b84fc5b-9ffb-4e9b-945b-5d480e330b3f-e49e27d2.md) |
 
 **In solution [GitLab](../solutions/gitlab.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [GitLab - Abnormal number of repositories deleted](../content/gitlab-gitlab-abnormal-number-of-repositories-deleted-3efd09bd-a582-4410-b7ec-5ff21cfad7bd-e932ffd2.md) | `Facility == "local7"`<br>`ProcessName == "GitLab-Audit-Logs"` |
 | [GitLab - Brute-force Attempts](../content/gitlab-gitlab-brute-force-attempts-2238d13a-cf05-4973-a83f-d12a25dbb153-84a2fd44.md) | `Facility == "local7"`<br>`ProcessName == "GitLab-Application-Logs"` |
@@ -240,7 +249,7 @@ This table is ingested by the following connectors:
 
 **In solution [IllumioSaaS](../solutions/illumiosaas.md):** `SyslogMessage has "illumio_pce/agent"`
 
-| Content Item |
+| Analytic Rule |
 |:-------------|
 | [Illumio Enforcement Change Analytic Rule](../content/illumiosaas-illumio-enforcement-change-analytic-rule-599fdc92-eb6d-4b54-8d79-2a3f740a846a-d2fd3adb.md) |
 | [Illumio Firewall Tampering Analytic Rule](../content/illumiosaas-illumio-firewall-tampering-analytic-rule-e9e4e466-3970-4165-bc8d-7721c6ef34a6-c6814f6c.md) |
@@ -251,20 +260,20 @@ This table is ingested by the following connectors:
 
 **In solution [Infoblox Cloud Data Connector](../solutions/infoblox-cloud-data-connector.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Infoblox - TI - Syslog Match Found - URL](../content/infoblox-cloud-data-connector-infoblox-ti-syslog-match-found-url-28ee3c2b-eb4b-44de-a71e-e462843fea72-5ddcadfd.md) |  |
 
 **In solution [Infoblox NIOS](../solutions/infoblox-nios.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Excessive NXDOMAIN DNS Queries](../content/infoblox-nios-excessive-nxdomain-dns-queries-b8266f81-2715-41a6-9062-42486cbc9c73-d5682e5d.md) | `SyslogMessage !has "response:"`<br>`SyslogMessage has_all "client"` |
 | [Potential DHCP Starvation Attack](../content/infoblox-nios-potential-dhcp-starvation-attack-57e56fc9-417a-4f41-a579-5475aea7b8ce-acc426ab.md) |  |
 
 **In solution [McAfee ePolicy Orchestrator](../solutions/mcafee-epolicy-orchestrator.md):** `ProcessName contains "EPOEvents"`<br>`SyslogMessage contains "<EPOevent>"`<br>`SyslogMessage contains "<UpdateEvents>"`
 
-| Content Item |
+| Analytic Rule |
 |:-------------|
 | [McAfee ePO - Agent Handler down](../content/mcafee-epolicy-orchestrator-mcafee-epo-agent-handler-down-3c1425d3-93d4-4eaf-8aa0-370dbac94c82-ff3411b0.md) |
 | [McAfee ePO - Attempt uninstall McAfee agent](../content/mcafee-epolicy-orchestrator-mcafee-epo-attempt-uninstall-mcafee-agent-2eff5809-bf84-48e0-8288-768689672c37-dbc4435c.md) |
@@ -283,14 +292,14 @@ This table is ingested by the following connectors:
 
 **In solution [Nasuni](../solutions/nasuni.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Ransomware Attack Detected](../content/nasuni-ransomware-attack-detected-6c8770fb-c854-403e-a64d-0293ba344d5f-009250d8.md) | `SyslogMessage has "The Filer has detected a new ransomware attack"` |
 | [Ransomware Client Blocked](../content/nasuni-ransomware-client-blocked-0c96a5a2-d60d-427d-8399-8df7fe8e6536-b5c61929.md) | `SyslogMessage has "The Filer has enforced the mitigation policy on volume"` |
 
 **In solution [OracleDatabaseAudit](../solutions/oracledatabaseaudit.md):** `SyslogMessage contains "Oracle Unified Audit"`
 
-| Content Item |
+| Analytic Rule |
 |:-------------|
 | [OracleDBAudit - Connection to database from external IP](../content/oracledatabaseaudit-oracledbaudit-connection-to-database-from-external-ip-54aa2c17-acfd-4e3a-a1c4-99c88cf34ebe-1f0cb538.md) |
 | [OracleDBAudit - Connection to database from unknown IP](../content/oracledatabaseaudit-oracledbaudit-connection-to-database-from-unknown-ip-80b1dd6d-1aea-471e-be7a-a4a0afdeec80-58ee84fd.md) |
@@ -305,14 +314,14 @@ This table is ingested by the following connectors:
 
 **In solution [Pulse Connect Secure](../solutions/pulse-connect-secure.md):** `Facility == "local7"`
 
-| Content Item |
+| Analytic Rule |
 |:-------------|
 | [PulseConnectSecure - Large Number of Distinct Failed User Logins](../content/pulse-connect-secure-pulseconnectsecure-large-number-of-distinct-failed-user-logins-1fa1528e-f746-4794-8a41-14827f4cb798-146dc800.md) |
 | [PulseConnectSecure - Potential Brute Force Attempts](../content/pulse-connect-secure-pulseconnectsecure-potential-brute-force-attempts-34663177-8abf-4db1-b0a4-5683ab273f44-3cb9ad66.md) |
 
 **In solution [Pure Storage](../solutions/pure-storage.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [External Fabric Module XFM1 is unhealthy](../content/pure-storage-external-fabric-module-xfm1-is-unhealthy-a8130dcc-3617-41c0-a7ac-5f352bcfffaf-9171f737.md) | `SyslogMessage has "purity.alert"` |
 | [Pure Controller Failed](../content/pure-storage-pure-controller-failed-c317b007-84e7-4449-93f4-4444f6638fd0-857a505b.md) | `SyslogMessage has "purity.alert"` |
@@ -320,35 +329,35 @@ This table is ingested by the following connectors:
 
 **In solution [Sophos XG Firewall](../solutions/sophos-xg-firewall.md):** `Facility == "local0"`
 
-| Content Item |
+| Analytic Rule |
 |:-------------|
 | [Excessive Amount of Denied Connections from a Single Source](../content/sophos-xg-firewall-excessive-amount-of-denied-connections-from-a-single-source-3d645a88-2724-41a7-adea-db74c439cf79-2b4e4307.md) |
 | [Port Scan Detected](../content/sophos-xg-firewall-port-scan-detected-427e4c9e-8cf4-4094-a684-a2d060dbca38-b0e76aa0.md) |
 
 **In solution [Symantec Endpoint Protection](../solutions/symantec-endpoint-protection.md):** `ProcessName == "SymantecServer"`
 
-| Content Item |
+| Analytic Rule |
 |:-------------|
 | [Excessive Blocked Traffic Events Generated by User](../content/symantec-endpoint-protection-excessive-blocked-traffic-events-generated-by-user-fa0ab69c-7124-4f62-acdd-61017cf6ce89-abbc5183.md) |
 | [Malware Detected](../content/symantec-endpoint-protection-malware-detected-072ee087-17e1-474d-b162-bbe38bcab9f9-b5192972.md) |
 
 **In solution [Symantec VIP](../solutions/symantec-vip.md):** `Facility == "local5"`
 
-| Content Item |
+| Analytic Rule |
 |:-------------|
 | [ClientDeniedAccess](../content/symantec-vip-clientdeniedaccess-a9956d3a-07a9-44a6-a279-081a85020cae-b3aec064.md) |
 | [Excessive Failed Authentication from Invalid Inputs](../content/symantec-vip-excessive-failed-authentication-from-invalid-inputs-c775a46b-21b1-46d7-afa6-37e3e577a27b-0e6ce55d.md) |
 
 **In solution [SymantecProxySG](../solutions/symantecproxysg.md):** `Facility == "local0"`
 
-| Content Item |
+| Analytic Rule |
 |:-------------|
 | [Excessive Denied Proxy Traffic](../content/symantecproxysg-excessive-denied-proxy-traffic-7a58b253-0ef2-4248-b4e5-c350f15a8346-3c74e5a4.md) |
 | [User Accessed Suspicious URL Categories](../content/symantecproxysg-user-accessed-suspicious-url-categories-fb0f4a93-d8ad-4b54-9931-85bdb7550f90-b9a254cd.md) |
 
 **In solution [Syslog](../solutions/syslog.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Failed logon attempts in authpriv](../content/syslog-failed-logon-attempts-in-authpriv-e7ec9fa6-e7f7-41ed-a34b-b956837a3ee6-eb207cad.md) | `Facility == "authpriv"`<br>`SyslogMessage has "authentication failure"`<br>`SyslogMessage has "uid=0"`<br>`SyslogMessage has "user unknown"` |
 | [NRT Squid proxy events related to mining pools](../content/syslog-nrt-squid-proxy-events-related-to-mining-pools-dd03057e-4347-4853-bf1e-2b2d21eb4e59-bc48dba2.md) | `ProcessName contains "squid"` |
@@ -360,21 +369,21 @@ This table is ingested by the following connectors:
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [TI Map URL Entity to Syslog Data](../content/threat-intelligence-ti-map-url-entity-to-syslog-data-b31037ea-6f68-4fbd-bab2-d0d0f44c2fcf-b70131e6.md) |  |
 | [TI map Domain entity to Syslog](../content/threat-intelligence-ti-map-domain-entity-to-syslog-532f62c1-fba6-4baa-bbb6-4a32a4ef32fa-afa2706f.md) |  |
 
 **In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [TI Map URL Entity to Syslog Data](../content/threat-intelligence-new-ti-map-url-entity-to-syslog-data-4de24a28-dcd0-4a0d-bf14-96d8483dc05a-607492d9.md) |  |
 | [TI map Domain entity to Syslog](../content/threat-intelligence-new-ti-map-domain-entity-to-syslog-cd19434e-10f2-4e2f-b3c1-ce6f08ac5357-10e0f11d.md) |  |
 
 **In solution [VMWareESXi](../solutions/vmwareesxi.md):** `ProcessName has_any "hostd-probe,vmkwarning,vpxd-main"`
 
-| Content Item |
+| Analytic Rule |
 |:-------------|
 | [VMware ESXi - Dormant VM started](../content/vmwareesxi-vmware-esxi-dormant-vm-started-4cdcd5d8-89df-4076-a917-bc50abb9f2ab-af0d35be.md) |
 | [VMware ESXi - Low patch disk space](../content/vmwareesxi-vmware-esxi-low-patch-disk-space-48d992ba-d404-4159-a8c6-46f51d1325c7-d606fa04.md) |
@@ -393,7 +402,7 @@ This table is ingested by the following connectors:
 
 **In solution [VMware SASE](../solutions/vmware-sase.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [VMware SD-WAN Edge - IDS/IPS Alert triggered (Syslog)](../content/vmware-sase-vmware-sd-wan-edge-ids-ips-alert-triggered-syslog-a8e2bfd2-5d9c-4acc-aa55-30029e50d574-87cc70c3.md) | `SyslogMessage contains "VCF Alert"` |
 | [VMware SD-WAN Edge - Network Anomaly Detection - Potential Fragmentation Attack](../content/vmware-sase-vmware-sd-wan-edge-network-anomaly-detection-potential-fragmentation-attack-ce207901-ed7b-49ae-ada7-033e1fbb1240-9e11c9d7.md) | `SyslogMessage contains "VCF Drop"`<br>`SyslogMessage contains "packet too big"` |
@@ -401,7 +410,7 @@ This table is ingested by the following connectors:
 
 **In solution [Veeam](../solutions/veeam.md):** `SyslogMessage has "instanceId"`
 
-| Content Item |
+| Analytic Rule |
 |:-------------|
 | [Adding User or Group Failed](../content/veeam-adding-user-or-group-failed-6d1a5478-e613-44f4-a48f-12cc18568522-f478360e.md) |
 | [Application Group Deleted](../content/veeam-application-group-deleted-fa8d692d-5b00-4a6c-99b3-30b4710efa59-e00a6bd6.md) |
@@ -517,7 +526,7 @@ This table is ingested by the following connectors:
 
 **Standalone Content:**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Failed AzureAD logons but success logon to host](../content/standalone-content-failed-azuread-logons-but-success-logon-to-host-8ee967a2-a645-4832-85f4-72b635bcb3a6-d05c051f.md) | `Facility contains "auth"`<br>`ProcessName != "sudo"`<br>`SyslogMessage has "Accepted"` |
 | [Failed host logons but success logon to AzureAD](../content/standalone-content-failed-host-logons-but-success-logon-to-azuread-1ce5e766-26ab-4616-b7c8-3b33ae321e80-db4ff93a.md) | `Facility contains "auth"`<br>`ProcessName != "sudo"`<br>`SyslogMessage has "from"`<br>`SyslogMessage has_any "Accepted,Disconnected,Disconnecting,[preauth],disconnect"` |
@@ -528,7 +537,7 @@ This table is ingested by the following connectors:
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Linux security related process termination activity detected](../content/apache-log4j-vulnerability-detection-linux-security-related-process-termination-activity-detected-020b05d3-6447-402c-87b6-f8faff7c7e19-e5bfe56c.md) | `Facility == "user"`<br>`SyslogMessage has "AUOMS_EXECVE"` |
 | [Possible Container Miner related artifacts detected](../content/apache-log4j-vulnerability-detection-possible-container-miner-related-artifacts-detected-6fee32b3-3271-4a3f-9b01-dbd9432a1707-c7bdf860.md) | `Facility == "user"`<br>`SyslogMessage has "AUOMS_EXECVE"` |
@@ -540,7 +549,7 @@ This table is ingested by the following connectors:
 
 **In solution [CTERA](../solutions/ctera.md):** `ProcessName == "gw-audit"`
 
-| Content Item |
+| Hunting Query |
 |:-------------|
 | [CTERA Batch Access Denied Detection](../content/ctera-ctera-batch-access-denied-detection-26f7d89a-b7b7-47cb-ad11-281f66c17c3d-8e6c5c0a.md) |
 | [CTERA Batch File Deletions Detection](../content/ctera-ctera-batch-file-deletions-detection-23206903-0c36-4d68-ba4b-169c67355b53-1167ebd9.md) |
@@ -548,7 +557,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cisco ISE](../solutions/cisco-ise.md):** `ProcessName has_any "CISE,CSCO"`
 
-| Content Item |
+| Hunting Query |
 |:-------------|
 | [CiscoISE - Attempts to suspend the log collector](../content/cisco-ise-ciscoise-attempts-to-suspend-the-log-collector-abea259e-7d56-48d8-ae47-d159929eeed8-7b5a647e.md) |
 | [CiscoISE - Authentication attempts to suspended user account](../content/cisco-ise-ciscoise-authentication-attempts-to-suspended-user-account-72f60667-2a6d-421d-b98d-3d7c3b37a0e5-48bda20d.md) |
@@ -563,7 +572,7 @@ This table is ingested by the following connectors:
 
 **In solution [CiscoWSA](../solutions/ciscowsa.md):** `ProcessName == "cisco_wsa"`
 
-| Content Item |
+| Hunting Query |
 |:-------------|
 | [Cisco WSA - Blocked files](../content/ciscowsa-cisco-wsa-blocked-files-ebbd2b87-44c6-481a-8e4f-eaf5aa76e017-c8c3deae.md) |
 | [Cisco WSA - Potentially risky resources](../content/ciscowsa-cisco-wsa-potentially-risky-resources-8c35faed-a8cf-4d8d-8c67-f14f2ff6e7e9-51d7d5f5.md) |
@@ -578,7 +587,7 @@ This table is ingested by the following connectors:
 
 **In solution [Digital Guardian Data Loss Prevention](../solutions/digital-guardian-data-loss-prevention.md):** `SyslogMessage contains "managed_device_id"`<br>`SyslogMessage contains "number_of_incidents"`
 
-| Content Item |
+| Hunting Query |
 |:-------------|
 | [Digital Guardian - Files sent by users](../content/digital-guardian-data-loss-prevention-digital-guardian-files-sent-by-users-66dd7ab7-bbc0-48b7-a3b9-4e71e610df48-fff8bb41.md) |
 | [Digital Guardian - Incident domains](../content/digital-guardian-data-loss-prevention-digital-guardian-incident-domains-444c91d4-e4b8-4adc-9b05-61fe908441b8-770c2898.md) |
@@ -593,7 +602,7 @@ This table is ingested by the following connectors:
 
 **In solution [McAfee ePolicy Orchestrator](../solutions/mcafee-epolicy-orchestrator.md):** `ProcessName contains "EPOEvents"`<br>`SyslogMessage contains "<EPOevent>"`<br>`SyslogMessage contains "<UpdateEvents>"`
 
-| Content Item |
+| Hunting Query |
 |:-------------|
 | [McAfee ePO - Agent Errors](../content/mcafee-epolicy-orchestrator-mcafee-epo-agent-errors-dff3c841-6e3e-432e-ad68-3ddd7326bc01-af48929b.md) |
 | [McAfee ePO - Applications blocked or contained](../content/mcafee-epolicy-orchestrator-mcafee-epo-applications-blocked-or-contained-e838519b-1f03-417f-863b-6c1a141677ee-1c08ae78.md) |
@@ -608,13 +617,13 @@ This table is ingested by the following connectors:
 
 **In solution [Nasuni](../solutions/nasuni.md):** `SyslogMessage matchesregex "(nasuni.)([0-9A-Za-z]{8}-[0-9A-Za-z]{4}-[0-9A-Za-z]{4}-[0-9A-Za-z]{4}-[0-9A-Za-z]{1})"`
 
-| Content Item |
+| Hunting Query |
 |:-------------|
 | [Nasuni File Delete Activity](../content/nasuni-nasuni-file-delete-activity-64a3477e-d06f-4491-86a5-6f99702e267f-9caf20b1.md) |
 
 **In solution [OracleDatabaseAudit](../solutions/oracledatabaseaudit.md):** `SyslogMessage contains "Oracle Unified Audit"`
 
-| Content Item |
+| Hunting Query |
 |:-------------|
 | [OracleDBAudit - Action by Ip](../content/oracledatabaseaudit-oracledbaudit-action-by-ip-b43e074f-b630-4a16-80e5-138f4b6b64fb-d7d05129.md) |
 | [OracleDBAudit - Action by user](../content/oracledatabaseaudit-oracledbaudit-action-by-user-e0b49a22-1c63-4572-b913-b3f31b8e9edf-ba650a07.md) |
@@ -629,7 +638,7 @@ This table is ingested by the following connectors:
 
 **In solution [Syslog](../solutions/syslog.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Crypto currency miners EXECVE](../content/syslog-crypto-currency-miners-execve-1ef1c38f-26dd-4e28-b884-5b3665352648-c1378546.md) |  |
 | [Editing Linux scheduled tasks through Crontab](../content/syslog-editing-linux-scheduled-tasks-through-crontab-6f0f1821-5981-408a-930b-8b2ca60e9e6c-5de4e857.md) | `Facility == "cron"`<br>`ProcessName == "crontab"` |
@@ -643,19 +652,19 @@ This table is ingested by the following connectors:
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [TI Map File Entity to Syslog Event](../content/threat-intelligence-ti-map-file-entity-to-syslog-event-18f7de84-de55-4983-aca3-a18bc846b4e0-26e4aa14.md) |  |
 
 **In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [TI Map File Entity to Syslog Event](../content/threat-intelligence-new-ti-map-file-entity-to-syslog-event-f624417d-9e4e-462e-93e7-53ab7686a479-b72d3476.md) |  |
 
 **In solution [VMWareESXi](../solutions/vmwareesxi.md):** `ProcessName has_any "hostd-probe,vmkwarning,vpxd-main"`
 
-| Content Item |
+| Hunting Query |
 |:-------------|
 | [VMware ESXi - Download errors](../content/vmwareesxi-vmware-esxi-download-errors-6702f91d-c764-497b-8d67-1cce8a33b895-040e68b2.md) |
 | [VMware ESXi - List of dormant users.](../content/vmwareesxi-vmware-esxi-list-of-dormant-users.-a0f32708-e6fb-427f-94d2-b09cf64acdf8-1dadc601.md) |
@@ -670,7 +679,7 @@ This table is ingested by the following connectors:
 
 **Standalone Content:**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Disabled accounts using Squid proxy](../content/standalone-content-disabled-accounts-using-squid-proxy-959fe0f0-7ac0-467c-944f-5b8c6fdc9e72-ec4ae627.md) | `ProcessName contains "squid"` |
 | [Tracking Password Changes](../content/standalone-content-tracking-password-changes-bac44fe4-c0bc-4e90-aa48-2e346fda803f-28bae834.md) |  |
@@ -679,85 +688,85 @@ This table is ingested by the following connectors:
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):** `Facility == "user"`<br>`SyslogMessage has "AUOMS_EXECVE"`<br>`SyslogMessage has "jndi"`<br>`SyslogMessage has_any "corba,dns,iiop,ldap,nds,nis,rmi"`
 
-| Content Item |
+| Workbook |
 |:-------------|
 | [Log4jPostCompromiseHunting](../content/apache-log4j-vulnerability-detection-log4jpostcompromisehunting-8811d292.md) |
 
 **In solution [Barracuda CloudGen Firewall](../solutions/barracuda-cloudgen-firewall.md):** `ProcessName == "box_Firewall_Activity"`
 
-| Content Item |
+| Workbook |
 |:-------------|
 | [Barracuda](../content/barracuda-cloudgen-firewall-barracuda-9d8c6fb5.md) |
 
 **In solution [CTERA](../solutions/ctera.md):** `ProcessName == "gw-audit"`<br>`SyslogMessage contains "ctera_audit"`<br>`SyslogMessage contains "op=delete"`
 
-| Content Item |
+| Workbook |
 |:-------------|
 | [CTERA_Workbook](../content/ctera-ctera-workbook-5bba0e18.md) |
 
 **In solution [Cisco ISE](../solutions/cisco-ise.md):** `ProcessName has_any "CISE,CSCO"`
 
-| Content Item |
+| Workbook |
 |:-------------|
 | [CiscoISE](../content/cisco-ise-ciscoise-0e0e86f8.md) |
 
 **In solution [Cisco SD-WAN](../solutions/cisco-sd-wan.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [CiscoSDWAN](../content/cisco-sd-wan-ciscosdwan-1291f60c.md) |  |
 
 **In solution [CiscoMeraki](../solutions/ciscomeraki.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [CiscoMerakiWorkbook](../content/ciscomeraki-ciscomerakiworkbook-efe4feca.md) |  |
 
 **In solution [CiscoWSA](../solutions/ciscowsa.md):** `ProcessName == "cisco_wsa"`
 
-| Content Item |
+| Workbook |
 |:-------------|
 | [CiscoWSA](../content/ciscowsa-ciscowsa-ad840075.md) |
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |  |
 
 **In solution [DPDP Compliance](../solutions/dpdp-compliance.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [DPDPCompliance](../content/dpdp-compliance-dpdpcompliance-18571e87.md) |  |
 
 **In solution [Digital Guardian Data Loss Prevention](../solutions/digital-guardian-data-loss-prevention.md):** `SyslogMessage contains "managed_device_id"`<br>`SyslogMessage contains "number_of_incidents"`
 
-| Content Item |
+| Workbook |
 |:-------------|
 | [DigitalGuardian](../content/digital-guardian-data-loss-prevention-digitalguardian-b2733981.md) |
 
 **In solution [ESETPROTECT](../solutions/esetprotect.md):** `ProcessName == "ERAServer"`
 
-| Content Item |
+| Workbook |
 |:-------------|
 | [ESETPROTECT](../content/esetprotect-esetprotect-083ee366.md) |
 
 **In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md) |  |
 
 **In solution [HIPAA Compliance](../solutions/hipaa-compliance.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [HIPAACompliance](../content/hipaa-compliance-hipaacompliance-3850f8c8.md) |  |
 
 **In solution [IllumioSaaS](../solutions/illumiosaas.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [IllumioAuditableEvents](../content/illumiosaas-illumioauditableevents-7d7e85b3.md) | `SyslogMessage has "illumio_pce/agent"` |
 | [IllumioFlowData](../content/illumiosaas-illumioflowdata-b836f8b9.md) | `SyslogMessage has "illumio_pce/agent"` |
@@ -765,123 +774,123 @@ This table is ingested by the following connectors:
 
 **In solution [Infoblox NIOS](../solutions/infoblox-nios.md):** `SyslogMessage startswith "DHCPACK"`
 
-| Content Item |
+| Workbook |
 |:-------------|
 | [Infoblox-Workbook-V2](../content/infoblox-nios-infoblox-workbook-v2-a1f70727.md) |
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `SyslogMessage contains "runas"`<br>`SyslogMessage contains "sudo"`<br>`ProcessName has_any "hostd-probe,vmkwarning,vpxd-main"`
 
-| Content Item |
+| Workbook |
 |:-------------|
 | [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |
 
 **In solution [McAfee ePolicy Orchestrator](../solutions/mcafee-epolicy-orchestrator.md):** `ProcessName contains "EPOEvents"`<br>`SyslogMessage contains "<EPOevent>"`<br>`SyslogMessage contains "<UpdateEvents>"`
 
-| Content Item |
+| Workbook |
 |:-------------|
 | [McAfeeePOOverview](../content/mcafee-epolicy-orchestrator-mcafeeepooverview-aa678fa3.md) |
 
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):** `Facility in "auth,authpriv"`
 
-| Content Item |
+| Workbook |
 |:-------------|
 | [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |
 
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |  |
 
 **In solution [OracleDatabaseAudit](../solutions/oracledatabaseaudit.md):** `SyslogMessage contains "Oracle Unified Audit"`
 
-| Content Item |
+| Workbook |
 |:-------------|
 | [OracleDatabaseAudit](../content/oracledatabaseaudit-oracledatabaseaudit-7eda506f.md) |
 
 **In solution [PCI DSS Compliance](../solutions/pci-dss-compliance.md):** `SyslogMessage contains "Oracle Unified Audit"`
 
-| Content Item |
+| Workbook |
 |:-------------|
 | [PCIDSSCompliance](../content/pci-dss-compliance-pcidsscompliance-b201eb3d.md) |
 
 **In solution [Pulse Connect Secure](../solutions/pulse-connect-secure.md):** `Facility == "local7"`
 
-| Content Item |
+| Workbook |
 |:-------------|
 | [PulseConnectSecure](../content/pulse-connect-secure-pulseconnectsecure-56477077.md) |
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
 | [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md) |  |
 
 **In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):** `SyslogMessage has_any "ALTER TABLE,CREATE TABLE,DROP TABLE,database modified,schema change"`<br>`SyslogMessage has_any "auditd stopped,logging stopped,rsyslog stopped,syslog stopped"`<br>`SyslogMessage has_any "change,config,edit,modified,updated"`<br>`SyslogMessage has_any "change,config,modified,registry,updated"`<br>`SyslogMessage has_any "checksum mismatch,file deleted,file modified,file tamper"`
 
-| Content Item |
+| Workbook |
 |:-------------|
 | [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md) |
 
 **In solution [Sophos XG Firewall](../solutions/sophos-xg-firewall.md):** `Facility == "local0"`
 
-| Content Item |
+| Workbook |
 |:-------------|
 | [SophosXGFirewall](../content/sophos-xg-firewall-sophosxgfirewall-c77fae3a.md) |
 
 **In solution [Symantec Endpoint Protection](../solutions/symantec-endpoint-protection.md):** `ProcessName == "SymantecServer"`
 
-| Content Item |
+| Workbook |
 |:-------------|
 | [SymantecEndpointProtection](../content/symantec-endpoint-protection-symantecendpointprotection-1ac479ae.md) |
 
 **In solution [Symantec VIP](../solutions/symantec-vip.md):** `Facility == "local5"`
 
-| Content Item |
+| Workbook |
 |:-------------|
 | [SymantecVIP](../content/symantec-vip-symantecvip-eae32760.md) |
 
 **In solution [SymantecProxySG](../solutions/symantecproxysg.md):** `Facility == "local0"`
 
-| Content Item |
+| Workbook |
 |:-------------|
 | [SymantecProxySG](../content/symantecproxysg-symantecproxysg-dd9ed98f.md) |
 
 **In solution [Syslog](../solutions/syslog.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [LinuxMachines](../content/syslog-linuxmachines-b765d65a.md) |  |
 
 **In solution [VMWareESXi](../solutions/vmwareesxi.md):** `ProcessName has_any "hostd-probe,vmkwarning,vpxd-main"`
 
-| Content Item |
+| Workbook |
 |:-------------|
 | [VMWareESXi](../content/vmwareesxi-vmwareesxi-a632a286.md) |
 
 **In solution [VMware SASE](../solutions/vmware-sase.md):** `SyslogMessage contains "ACTION=VCF"`<br>`SyslogMessage contains "VCF Alert"`
 
-| Content Item |
+| Workbook |
 |:-------------|
 | [VMwareSASESOCDashboard](../content/vmware-sase-vmwaresasesocdashboard-36b12705.md) |
 
 **In solution [Veeam](../solutions/veeam.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [VeeamDataPlatformMonitoring](../content/veeam-veeamdataplatformmonitoring-a61e8871.md) | `SyslogMessage has "instanceId"` |
 | [VeeamSecurityActivities](../content/veeam-veeamsecurityactivities-f559a349.md) | `SyslogMessage has "instanceId"`<br>`SyslogMessage has "predefined_alarm_id"`<br>`SyslogMessage has "predefined_alarm_id"` |
 
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Barracuda](../content/github-only-barracuda-84e65401.md) |  |
 | [DCR-Toolkit](../content/github-only-dcr-toolkit-37d84106.md) |  |

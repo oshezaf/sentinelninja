@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Netskope Data Connector for Microsoft Sentinel</h1>
+<h1 id="netskope-data-connector-for-microsoft-sentinel">Netskope Data Connector for Microsoft Sentinel</h1>
 <p><em>Solution: Netskopev2</em></p>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Netskope.svg" alt="Netskopev2 Logo" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
@@ -72,14 +72,14 @@
 </tbody>
 </table>
 <p>Netskope solution for Microsoft Sentinel enables you to ingest Netskope alerts and events into Microsoft Sentinel. The connector provides visibility into Netskope Platform Events and Alerts in Microsoft Sentinel to improve monitoring and investigation capabilities.</p>
-<h2>Contents</h2>
+<h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#tables-used">Tables Used</a></li>
 <li><a href="#content-items">Content Items</a></li>
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
-<h2>Data Connectors</h2>
+<h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>3 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/netskopealertsevents.html">Netskope Alerts and Events</a></li>
@@ -87,9 +87,9 @@
 <li><a href="../connectors/netskopewebtransactionsdataconnector.html">Netskope Web Transactions Data Connector</a> 🔶</li>
 </ul>
 <blockquote>
-<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
+<p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
-<h2>Tables Used</h2>
+<h2 id="tables-used">Tables Used</h2>
 <p>This solution uses <strong>32 table(s)</strong>:</p>
 <table>
 <thead>
@@ -265,7 +265,7 @@
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
-<h2>Content Items</h2>
+<h2 id="content-items">Content Items</h2>
 <p>This solution includes <strong>37 content item(s)</strong>:</p>
 <table>
 <thead>
@@ -293,7 +293,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Analytic Rules</h3>
+<h3 id="analytic-rules">Analytic Rules</h3>
 <table>
 <thead>
 <tr>
@@ -312,7 +312,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Workbooks</h3>
+<h3 id="workbooks">Workbooks</h3>
 <table>
 <thead>
 <tr>
@@ -339,7 +339,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Playbooks</h3>
+<h3 id="playbooks">Playbooks</h3>
 <table>
 <thead>
 <tr>
@@ -361,7 +361,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Parsers</h3>
+<h3 id="parsers">Parsers</h3>
 <table>
 <thead>
 <tr>
@@ -523,24 +523,24 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/README.md">Netskopev2/README.md</a></em></p>
 </blockquote>
-<h2>Quick Links</h2>
+<h2 id="quick-links">Quick Links</h2>
 <ul>
 <li><strong>Alerts &amp; Events (CCF):</strong> <a href="https://community.netskope.com/discussions-37/sending-alerts-and-events-to-microsoft-sentinel-using-the-codeless-connector-platform-6910">Sending Alerts and Events to Microsoft Sentinel using the Codeless Connector Platform</a></li>
 <li><strong>Web Transactions (CCF):</strong> <a href="https://community.netskope.com/discussions-37/integration-web-transactions-from-netskope-log-streaming-to-microsoft-sentinel-7646">Integration: Web Transactions from Netskope Log Streaming to Microsoft Sentinel</a></li>
 <li><strong>Netskope Log Streaming Connector Documentation:</strong> <a href="https://docs.netskope.com/en/log-streaming/">View Documentation</a></li>
 </ul>
-<h2>Overview</h2>
+<h2 id="overview">Overview</h2>
 <p>The <strong>Netskope Microsoft Sentinel Solution</strong> integrates Netskope logs (events, alerts, and WebTransactions) into <strong>Microsoft Sentinel</strong> for centralized monitoring and investigation.  </p>
 <blockquote>
 <p><strong>Note:</strong> Work to update this solution is currently <strong>in progress</strong>. For any questions, please contact <strong>tech-alliances@netskope.com</strong>.</p>
 </blockquote>
 <hr />
-<h2>Contents</h2>
-<h3>Data Connectors</h3>
+<h2 id="contents">Contents</h2>
+<h3 id="data-connectors">Data Connectors</h3>
 <ol>
 <li><strong>NetskopeAlertsEvents_RestAPI_CCP</strong> <em>(Recommended)</em><br />
    Fetches alerts and events from Netskope using Microsoft's Codeless Connector Framework.</li>
@@ -552,22 +552,22 @@
 <blockquote>
 <p><strong>Note:</strong> Installation steps for each data connector are available on their respective <strong>UI pages</strong> within Microsoft Sentinel.</p>
 </blockquote>
-<h3>Workbook</h3>
+<h3 id="workbook">Workbook</h3>
 <blockquote>
 <p><strong>Note:</strong> The workbook is only compatible with the <strong>Azure Functions–based data connector</strong> data, and <strong>not</strong> compatible with <strong>NetskopeAlertsEvents_RestAPI_CCP</strong> or <strong>Netskope CE</strong> data.</p>
 </blockquote>
-<h3>Parsers</h3>
+<h3 id="parsers">Parsers</h3>
 <blockquote>
 <p><strong>Note:</strong> The parsers are only compatible with the <strong>Azure Functions–based data connector</strong> data, and <strong>not</strong> compatible with <strong>NetskopeAlertsEvents_RestAPI_CCP</strong> or <strong>Netskope CE</strong> data.</p>
 </blockquote>
 <hr />
-<h2>Support</h2>
+<h2 id="support">Support</h2>
 <ul>
 <li><a href="mailto:tech-alliances@netskope.com">tech-alliances@netskope.com</a></li>
 <li><a href="https://docs.netskope.com">Netskope Documentation</a></li>
 <li><a href="https://learn.microsoft.com/azure/sentinel">Microsoft Sentinel Documentation</a></li>
 </ul>
-<h2>Release Notes</h2>
+<h2 id="release-notes">Release Notes</h2>
 <table>
 <thead>
 <tr>

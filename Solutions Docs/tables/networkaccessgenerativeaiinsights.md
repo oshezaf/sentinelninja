@@ -15,6 +15,12 @@ Reference for NetworkAccessGenerativeAIInsights table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccessgenerativeaiinsights) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (17 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccessgenerativeaiinsights)
@@ -53,7 +59,7 @@ This table is used by the following solutions:
 
 **In solution [Global Secure Access](../solutions/global-secure-access.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [GSAMCPInsights](../content/global-secure-access-gsamcpinsights-87ae8ba3.md) |  |
 

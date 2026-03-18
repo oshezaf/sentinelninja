@@ -16,6 +16,12 @@ Reference for LASummaryLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/lasummarylogs) |
 
+## Contents
+
+- [Schema](#schema)
+- [Content Items](#content-items-using-this-table)
+- [Resource Types](#resource-types)
+
 ## Schema (16 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/lasummarylogs)
@@ -47,7 +53,7 @@ Reference for LASummaryLogs table in Azure Monitor Logs.
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [SummaryRulesWorkbook](../content/github-only-summaryrulesworkbook-d89cc3ca.md) |  |
 

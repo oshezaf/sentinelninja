@@ -11,6 +11,13 @@
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (28 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Armorblox_CL.json)
@@ -68,7 +75,7 @@ This table is ingested by the following connectors:
 
 **In solution [Armorblox](../solutions/armorblox.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Armorblox Needs Review Alert](../content/armorblox-armorblox-needs-review-alert-322d4765-be6b-4868-9e3f-138a4f339dd6-4344e5d8.md) |  |
 
@@ -76,7 +83,7 @@ This table is ingested by the following connectors:
 
 **In solution [Armorblox](../solutions/armorblox.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ArmorbloxOverview](../content/armorblox-armorbloxoverview-181ded5b.md) |  |
 

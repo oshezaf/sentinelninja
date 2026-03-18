@@ -12,6 +12,14 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (9 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/OracleWebLogicServer.json)
@@ -52,7 +60,7 @@ This table is ingested by the following connectors:
 
 **In solution [OracleWebLogicServer](../solutions/oracleweblogicserver.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Oracle - Command in URI](../content/oracleweblogicserver-oracle-command-in-uri-6ae36a5e-573f-11ec-bf63-0242ac130002-be93cbec.md) |  |
 | [Oracle - Malicious user agent](../content/oracleweblogicserver-oracle-malicious-user-agent-51d050ee-5740-11ec-bf63-0242ac130002-7d04739d.md) |  |
@@ -69,7 +77,7 @@ This table is ingested by the following connectors:
 
 **In solution [OracleWebLogicServer](../solutions/oracleweblogicserver.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Oracle - Abnormal request size](../content/oracleweblogicserver-oracle-abnormal-request-size-419a91d4-5741-11ec-bf63-0242ac130002-e2be3c41.md) |  |
 | [Oracle - Critical event severity](../content/oracleweblogicserver-oracle-critical-event-severity-877125e6-5779-11ec-bf63-0242ac130002-25c60ae0.md) |  |
@@ -86,7 +94,7 @@ This table is ingested by the following connectors:
 
 **In solution [OracleWebLogicServer](../solutions/oracleweblogicserver.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [OracleWorkbook](../content/oracleweblogicserver-oracleworkbook-2039f357.md) |  |
 

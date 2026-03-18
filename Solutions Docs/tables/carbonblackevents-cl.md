@@ -13,6 +13,14 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (115 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CarbonBlackEvents_CL.json)
@@ -157,7 +165,7 @@ This table is ingested by the following connectors:
 
 **In solution [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Known Malware Detected](../content/vmware-carbon-black-cloud-known-malware-detected-9f86885f-f31f-4e66-a39d-352771ee789e-b24b2c6a.md) |  |
 
@@ -165,7 +173,7 @@ This table is ingested by the following connectors:
 
 **In solution [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [VMwareCarbonBlack](../content/vmware-carbon-black-cloud-vmwarecarbonblack-d982f4a4.md) |  |
 

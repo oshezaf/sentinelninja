@@ -13,6 +13,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (25 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/MimecastTTPUrl_CL.json)
@@ -67,7 +74,7 @@ This table is ingested by the following connectors:
 
 **In solution [MimecastTTP](../solutions/mimecastttp.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Mimecast Targeted Threat Protection - URL Protect](../content/mimecastttp-mimecast-targeted-threat-protection-url-protect-9d5545bd-1450-4086-935c-62f15fc4a4c9-81f30fac.md) |  |
 
@@ -75,7 +82,7 @@ This table is ingested by the following connectors:
 
 **In solution [MimecastTTP](../solutions/mimecastttp.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [MimecastTTPWorkbook](../content/mimecastttp-mimecastttpworkbook-22b40acb.md) |  |
 

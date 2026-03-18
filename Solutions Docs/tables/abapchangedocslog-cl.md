@@ -10,6 +10,12 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Additional Information](#additional-information)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+
 ## Additional Information
 
 📖 **Related Documentation:** [SAP log and table reference](https://learn.microsoft.com/azure/sentinel/sap/sap-solution-log-reference) - SAP change documents log collected by the Microsoft Sentinel data connector

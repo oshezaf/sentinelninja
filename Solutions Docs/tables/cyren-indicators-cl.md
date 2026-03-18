@@ -13,6 +13,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (19 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyrenThreatIntelligence%5CData%20Connectors%5CCyrenThreatIntel_CCF/Cyren_Table.json)
@@ -61,7 +68,7 @@ This table is ingested by the following connectors:
 
 **In solution [CyrenThreatIntelligence](../solutions/cyrenthreatintelligence.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Cyren Feed Outage Detection](../content/cyrenthreatintelligence-cyren-feed-outage-detection-7f9a0d5c-3b4c-6d7e-1f2a-e3f4a5b6c7d8-a7fce6c8.md) |  |
 | [Cyren High-Risk IP Indicators](../content/cyrenthreatintelligence-cyren-high-risk-ip-indicators-5d7e8b3a-1f2c-4e5d-9a0b-c1d2e3f4a5b6-c726fd74.md) |  |
@@ -71,7 +78,7 @@ This table is ingested by the following connectors:
 
 **In solution [CyrenThreatIntelligence](../solutions/cyrenthreatintelligence.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [CyrenThreatIntelligenceDashboard](../content/cyrenthreatintelligence-cyrenthreatintelligencedashboard-f33799ef.md) |  |
 

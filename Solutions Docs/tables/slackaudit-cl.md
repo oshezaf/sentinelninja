@@ -11,6 +11,14 @@
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (30 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SlackAudit_CL.json)
@@ -70,7 +78,7 @@ This table is ingested by the following connectors:
 
 **In solution [SlackAudit](../solutions/slackaudit.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [SlackAudit - Empty User Agent](../content/slackaudit-slackaudit-empty-user-agent-04528635-a5f1-438b-ab74-21ca7bc3aa32-dc53a71b.md) |  |
 | [SlackAudit - Multiple archived files uploaded in short period of time](../content/slackaudit-slackaudit-multiple-archived-files-uploaded-in-short-period-of-time-3db0cb83-5fa4-4310-a8a0-d8d66183f0bd-21e5a2f1.md) |  |
@@ -86,7 +94,7 @@ This table is ingested by the following connectors:
 
 **In solution [SlackAudit](../solutions/slackaudit.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [SlackAudit - Applications installed](../content/slackaudit-slackaudit-applications-installed-cefd7f18-9359-4a99-bd18-965983bb724d-453a5c0c.md) |  |
 | [SlackAudit - Deactivated users](../content/slackaudit-slackaudit-deactivated-users-f2b2cd0d-6190-44aa-8e0e-265de45ee379-fbc0a693.md) |  |
@@ -103,7 +111,7 @@ This table is ingested by the following connectors:
 
 **In solution [SlackAudit](../solutions/slackaudit.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [SlackAudit](../content/slackaudit-slackaudit-1483bfeb.md) |  |
 

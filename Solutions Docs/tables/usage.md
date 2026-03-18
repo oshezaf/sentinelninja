@@ -15,6 +15,12 @@ Reference for Usage table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/usage) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (22 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/usage)
@@ -66,7 +72,7 @@ This table is used by the following solutions:
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [M2131_RecommendedDatatableUnhealthy](../content/maturitymodelforeventlogmanagementm2131-m2131-recommendeddatatableunhealthy-c61b167a-59ae-42af-bc98-36c78c5acb5c-492ca648.md) |  |
 
@@ -74,7 +80,7 @@ This table is used by the following solutions:
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [M2131_RecommendedDatatableNotLogged_EL0](../content/maturitymodelforeventlogmanagementm2131-m2131-recommendeddatatablenotlogged-el0-b3e0bfd4-52d2-4684-9514-716035cdbff2-0b7d3adf.md) |  |
 | [M2131_RecommendedDatatableNotLogged_EL1](../content/maturitymodelforeventlogmanagementm2131-m2131-recommendeddatatablenotlogged-el1-f9e0ae98-6828-4d5a-b596-7c4586bb14f6-b18b3bbb.md) |  |
@@ -85,31 +91,31 @@ This table is used by the following solutions:
 
 **In solution [Corelight](../solutions/corelight.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Corelight_Sensor_Overview](../content/corelight-corelight-sensor-overview-71e61142.md) |  |
 
 **In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |  |
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
 
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |  |
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md) |  |
 | [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
@@ -117,25 +123,25 @@ This table is used by the following solutions:
 
 **In solution [SOC-Process-Framework](../solutions/soc-process-framework.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [SOCProcessFramework](../content/soc-process-framework-socprocessframework-5c770df0.md) |  |
 
 **In solution [ThreatAnalysis&Response](../solutions/threatanalysis&response.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ThreatAnalysis&Response](../content/threatanalysis&response-threatanalysis&response-56e66291.md) |  |
 
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [AWSS3](../content/github-only-awss3-8722dc32.md) |  |
 | [ArchivingBasicLogsRetention](../content/github-only-archivingbasiclogsretention-2a012287.md) |  |

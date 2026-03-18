@@ -10,6 +10,12 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Solutions](#solutions)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Solutions (1)
 
 This table is used by the following solutions:
@@ -24,7 +30,7 @@ This table is used by the following solutions:
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [CiscoMeraki](../content/github-only-ciscomeraki-82d0689d.md) |  |
 

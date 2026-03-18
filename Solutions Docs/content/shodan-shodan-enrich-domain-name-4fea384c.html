@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Shodan - Enrich Domain Name</h1>
+<h1 id="shodan---enrich-domain-name">Shodan - Enrich Domain Name</h1>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
@@ -42,12 +42,12 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Shodan/Playbooks/ShodanPlaybooks/Shodan-EnrichDomain-EntityTrigger/readme.md">ShodanPlaybooks/Shodan-EnrichDomain-EntityTrigger/readme.md</a></em></p>
 </blockquote>
-<h1>Shodan-EnrichDomain-EntityTrigger</h1>
-<h2>Summary</h2>
+<h1 id="shodan-enrichdomain-entitytrigger">Shodan-EnrichDomain-EntityTrigger</h1>
+<h2 id="summary">Summary</h2>
 <p>The playbook can be triggered manually from a Domain Entity context to fetch geo location and running services details from Shodan.io. This playbook performs following actions:</p>
 <ol>
 <li>Get the domain name from entity. </li>
@@ -57,12 +57,12 @@
 </ol>
 <p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Shodan/Playbooks/ShodanPlaybooks%5CShodan-EnrichDomain-EntityTrigger/images/Shodan-EnrichDomain-EntityTrigger_light.jpg" width="50%"/><br>
 <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Shodan/Playbooks/ShodanPlaybooks%5CShodan-EnrichDomain-EntityTrigger/images/ShodanDomainEnrichmentIncidentComment_light.jpg" width="50%"/><br></p>
-<h3>Prerequisites</h3>
+<h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>Prior to the deployment of this playbook, <a href="../../CustomConnector/ShodanCustomConnector/azuredeploy.json">Shodan Logic App Custom Connector</a> needs to be deployed under the same subscription.</li>
 <li>Refer to <a href="../../CustomConnector/ShodanCustomConnector/readme.html">Shodan Logic App Custom Connector</a> documentation for deployment instructions.</li>
 </ol>
-<h3>Deployment instructions</h3>
+<h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
 <li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
 <li>Fill in the required parameters:<ul>
@@ -72,8 +72,8 @@
 </li>
 </ol>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FShodan%2FPlaybooks%2FShodanPlaybooks%2FShodan-EnrichDomain-EntityTrigger%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FShodan%2FPlaybooks%2FShodanPlaybooks%2FShodan-EnrichDomain-EntityTrigger%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
-<h3>Post-Deployment instructions</h3>
-<h4>a. Authorize connections</h4>
+<h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
+<h4 id="a-authorize-connections">a. Authorize connections</h4>
 <p>Once deployment is complete, authorize each connection.</p>
 <ol>
 <li>Select the Microsoft Sentinel connection resource</li>
@@ -82,7 +82,7 @@
 <li>Click Save</li>
 <li>Repeat these steps for other connections</li>
 </ol>
-<h4>b. Assign Playbook Microsoft Sentinel Responder Role</h4>
+<h4 id="b-assign-playbook-microsoft-sentinel-responder-role">b. Assign Playbook Microsoft Sentinel Responder Role</h4>
 <ol>
 <li>Select the Playbook (Logic App) resource</li>
 <li>Click on Identity Blade</li>
@@ -95,7 +95,7 @@
 <li>Select Role - Microsoft Sentinel Responder</li>
 <li>Click Save</li>
 </ol>
-<h1>References</h1>
+<h1 id="references">References</h1>
 <ul>
 <li><a href="https://developer.shodan.io/api">Shodan API Quick Reference</a></li>
 <li><a href="https://developer.shodan.io/api/requirements">Get Shodan API Key</a></li>

@@ -13,6 +13,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (32 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/MailGuard365_Threats_CL.json)
@@ -74,7 +81,7 @@ This table is ingested by the following connectors:
 
 **In solution [MailGuard 365](../solutions/mailguard-365.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [MailGuard 365 - High Confidence Threats](../content/mailguard-365-mailguard-365-high-confidence-threats-5e3aa1a5-5b69-421e-a3ac-32b04cb10353-07810d8b.md) |  |
 | [MailGuard 365 - Malware Threats](../content/mailguard-365-mailguard-365-malware-threats-daaae6ad-1fd0-4efa-b571-116689e67a20-d7393225.md) |  |
@@ -84,7 +91,7 @@ This table is ingested by the following connectors:
 
 **In solution [MailGuard 365](../solutions/mailguard-365.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [MailGuard365Dashboard](../content/mailguard-365-mailguard365dashboard-efc0fa81.md) |  |
 

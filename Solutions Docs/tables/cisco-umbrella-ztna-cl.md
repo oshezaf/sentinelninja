@@ -13,6 +13,14 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (31 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Cisco_Umbrella_ztna_CL.json)
@@ -74,7 +82,7 @@ This table is ingested by the following connectors:
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Cisco Cloud Security - Connection to Unpopular Website Detected](../content/ciscoumbrella-cisco-cloud-security-connection-to-unpopular-website-detected-75297f62-10a8-4fc1-9b2a-12f25c6f05a7-c775740f.md) |  |
 | [Cisco Cloud Security - Connection to non-corporate private network](../content/ciscoumbrella-cisco-cloud-security-connection-to-non-corporate-private-network-c9b6d281-b96b-4763-b728-9a04b9fe1246-dc2431a8.md) |  |
@@ -101,7 +109,7 @@ This table is ingested by the following connectors:
 
 **In solution [CiscoUmbrella](../solutions/ciscoumbrella.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Cisco Cloud Security - 'Blocked' User-Agents.](../content/ciscoumbrella-cisco-cloud-security-'blocked'-user-agents.-22e5e573-409b-433f-91de-50d6f0ad5a9e-d7476629.md) |  |
 | [Cisco Cloud Security - Anomalous FQDNs for domain](../content/ciscoumbrella-cisco-cloud-security-anomalous-fqdns-for-domain-c92741e6-8454-40bb-8830-069cb86946c6-b4d4c808.md) |  |
@@ -118,7 +126,7 @@ This table is ingested by the following connectors:
 
 **In solution [CiscoUmbrella](../solutions/ciscoumbrella.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [CiscoUmbrella](../content/ciscoumbrella-ciscoumbrella-dcc07ffb.md) |  |
 

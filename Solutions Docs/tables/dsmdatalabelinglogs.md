@@ -41,7 +41,7 @@ Reference for DSMDataLabelingLogs table in Azure Monitor Logs.
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [DSTIMWorkbook](../content/github-only-dstimworkbook-062fa645.md) |  |
 

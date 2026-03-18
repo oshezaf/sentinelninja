@@ -11,6 +11,14 @@
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (86 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CiscoSecureEndpoint_CL.json)
@@ -126,7 +134,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cisco Secure Endpoint](../solutions/cisco-secure-endpoint.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Cisco SE - Connection to known C2 server](../content/cisco-secure-endpoint-cisco-se-connection-to-known-c2-server-0f788a93-dc88-4f80-89ef-bef7cd0fef05-8712dcc0.md) |  |
 | [Cisco SE - Dropper activity on host](../content/cisco-secure-endpoint-cisco-se-dropper-activity-on-host-b6df3e11-de70-4779-ac9a-276c454a9025-05cf295f.md) |  |
@@ -144,7 +152,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cisco Secure Endpoint](../solutions/cisco-secure-endpoint.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Cisco SE - Infected hosts](../content/cisco-secure-endpoint-cisco-se-infected-hosts-2b2415f3-6bfd-48df-8f9f-a1ccf67449f5-ba154dcb.md) |  |
 | [Cisco SE - Infected users](../content/cisco-secure-endpoint-cisco-se-infected-users-f597ff7a-bddc-4cb1-83a8-62b0d7f4740d-d3b9b36b.md) |  |
@@ -161,7 +169,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cisco Secure Endpoint](../solutions/cisco-secure-endpoint.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Cisco Secure Endpoint Overview](../content/cisco-secure-endpoint-cisco-secure-endpoint-overview-653ce4d3.md) |  |
 

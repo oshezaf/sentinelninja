@@ -13,6 +13,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (23 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/TheomAlerts_CL.json)
@@ -65,7 +72,7 @@ This table is ingested by the following connectors:
 
 **In solution [Theom](../solutions/theom.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Theom - Critical data in API headers or body](../content/theom-theom-critical-data-in-api-headers-or-body-2ef36aaa-ec4a-473a-9734-f364ce8868f8-cfa35fd5.md) |  |
 | [Theom - Dark Data with large fin value](../content/theom-theom-dark-data-with-large-fin-value-545fdcc7-2123-4b8a-baf6-409f29aad4b1-d3ac84c1.md) |  |
@@ -92,7 +99,7 @@ This table is ingested by the following connectors:
 
 **In solution [Theom](../solutions/theom.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Theom](../content/theom-theom-71349edc.md) |  |
 

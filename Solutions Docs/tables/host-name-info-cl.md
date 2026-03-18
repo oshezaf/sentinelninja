@@ -11,6 +11,12 @@
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (62 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Host_Name_Info_CL.json)
@@ -94,7 +100,7 @@ This table is used by the following solutions:
 
 **In solution [Infoblox](../solutions/infoblox.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Infoblox_Workbook](../content/infoblox-infoblox-workbook-0b2c239e.md) |  |
 

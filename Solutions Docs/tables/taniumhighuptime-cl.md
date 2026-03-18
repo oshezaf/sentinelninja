@@ -24,7 +24,7 @@ This table is used by the following solutions:
 
 **In solution [Tanium](../solutions/tanium.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [TaniumWorkbook](../content/tanium-taniumworkbook-97052723.md) |  |
 

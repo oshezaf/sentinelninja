@@ -16,6 +16,12 @@ Reference for NTANetAnalytics table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ntanetanalytics) |
 
+## Contents
+
+- [Schema](#schema)
+- [Additional Information](#additional-information)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (93 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ntanetanalytics)

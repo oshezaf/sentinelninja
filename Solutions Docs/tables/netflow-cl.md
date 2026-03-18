@@ -18,7 +18,7 @@
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [UnifiSGNetflow](../content/github-only-unifisgnetflow-8a035168.md) |  |
 

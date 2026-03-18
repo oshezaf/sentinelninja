@@ -11,6 +11,14 @@
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (29 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Corelight_v2_dns_CL.json)
@@ -69,7 +77,7 @@ This table is ingested by the following connectors:
 
 **In solution [Corelight](../solutions/corelight.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Corelight - C2 DGA Detected Via Repetitive Failures](../content/corelight-corelight-c2-dga-detected-via-repetitive-failures-8eaa2268-74ee-492c-b869-450eff707fef-523acd4f.md) |  |
 
@@ -77,7 +85,7 @@ This table is ingested by the following connectors:
 
 **In solution [Corelight](../solutions/corelight.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Corelight - Repetitive DNS Failures](../content/corelight-corelight-repetitive-dns-failures-1ea3a384-77a4-4b0d-8e42-74d26b38ab5b-eef9a7ed.md) |  |
 
@@ -85,7 +93,7 @@ This table is ingested by the following connectors:
 
 **In solution [Corelight](../solutions/corelight.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Corelight](../content/corelight-corelight-90dad195.md) |  |
 | [Corelight_Alert_Aggregations](../content/corelight-corelight-alert-aggregations-f385ae6f.md) |  |

@@ -10,6 +10,13 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (57 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Samsung_Knox_System_CL.json)
@@ -96,7 +103,7 @@ This table is ingested by the following connectors:
 
 **In solution [Samsung Knox Asset Intelligence](../solutions/samsung-knox-asset-intelligence.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Samsung Knox - Mobile Device Boot Compromise Events](../content/samsung-knox-asset-intelligence-samsung-knox-mobile-device-boot-compromise-events-fae7e371-aee8-4d3f-8311-2255a45a30b3-015abeee.md) |  |
 | [Samsung Knox - Peripheral Access  Detection with Camera Events](../content/samsung-knox-asset-intelligence-samsung-knox-peripheral-access-detection-with-camera-events-cd526f4d-dbe9-4149-8a0a-9ec43c3abb16-ad75124d.md) |  |
@@ -106,13 +113,13 @@ This table is ingested by the following connectors:
 
 **In solution [Samsung Knox Asset Intelligence](../solutions/samsung-knox-asset-intelligence.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [SamsungKnoxAssetIntelligence](../content/samsung-knox-asset-intelligence-samsungknoxassetintelligence-db535420.md) |  |
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [SamsungKnoxAssetIntelligence](../content/github-only-samsungknoxassetintelligence-0d539170.md) |  |
 

@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Vectra XDR</h1>
+<h1 id="vectra-xdr">Vectra XDR</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AIVectraDetect.svg" alt="" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
@@ -55,7 +55,7 @@
 </tbody>
 </table>
 <p>The <a href="https://www.vectra.ai/">Vectra XDR</a> connector gives the capability to ingest Vectra Detections, Audits, Entity Scoring, Lockdown, Health and Entities data into Microsoft Sentinel through the Vectra REST API. Refer to the API documentation: <code>https://support.vectra.ai/s/article/KB-VS-1666</code> for more information.</p>
-<h2>Tables Ingested</h2>
+<h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -108,14 +108,14 @@
 <blockquote>
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
-<h2>Permissions</h2>
+<h2 id="permissions">Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
 - <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
 <p><strong>Custom Permissions:</strong>
 - <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
 - <strong>REST API Credentials/permissions</strong>: <strong>Vectra Client ID</strong> and <strong>Client Secret</strong>  is required for Health, Entity Scoring, Entities, Detections, Lockdown and Audit data collection.  See the documentation to learn more about API on the <code>https://support.vectra.ai/s/article/KB-VS-1666</code>.</p>
-<h2>Setup Instructions</h2>
+<h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 <p><strong>NOTE:</strong> This connector uses Azure Functions to connect to the Vectra API to pull its logs into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
@@ -306,20 +306,20 @@ If you're already signed in, go to the next step.</li>
  - Use logAnalyticsUri to override the log analytics API endpoint for dedicated cloud. For example, for public cloud, leave the value empty; for Azure GovUS cloud environment, specify the value in the following format: <code>https://&lt;CustomerId&gt;.ods.opinsights.azure.us</code>.</li>
 <li>Once all application settings have been entered, click <strong>Save</strong>.</li>
 </ol>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra XDR\Data Connectors\VectraDataConnector\README.md">Vectra XDR\Data Connectors\VectraDataConnector\README.md</a></em></p>
 </blockquote>
-<h1>Vectra Data Connector</h1>
+<h1 id="vectra-data-connector">Vectra Data Connector</h1>
 <ul>
 <li><a href="#Introduction">Introduction</a></li>
 <li><a href="#Folders">Folders</a></li>
 <li><a href="#Installing-for-the-users">Installing for the users</a></li>
 <li><a href="#Installing-for-testing">Installing for testing</a></li>
 </ul>
-<h2>Introduction<a name="Introduction"></a></h2>
+<h2 id="introduction">Introduction<a name="Introduction"></a></h2>
 <p>This folder contains the Azure function time trigger code for Vectra XDR Data Connector. The connector will run periodically and ingest the Vectra XDR data into the Microsoft Sentinel logs custom tables.</p>
-<h2>Folders<a name="Folders"></a></h2>
+<h2 id="folders">Folders<a name="Folders"></a></h2>
 <ol>
 <li>
 <p><code>VectraDataConnector/</code> - This contains the package, requirements, ARM JSON file, connector page template JSON, and other dependencies.</p>
@@ -355,7 +355,7 @@ If you're already signed in, go to the next step.</li>
 </ul>
 </li>
 </ol>
-<h2>Installing for the users<a name="Installing-for-the-users"></a></h2>
+<h2 id="installing-for-the-users">Installing for the users<a name="Installing-for-the-users"></a></h2>
 <p>After the solution is published, we can find the connector in the connector gallery of Microsoft Sentinel among other connectors in the Data connectors section of Sentinel.</p>
 <p>i. Go to Microsoft Sentinel -&gt; Data Connectors</p>
 <p>ii. Click on the Vectra XDR Data Connector, and the connector page will open.</p>
@@ -391,7 +391,7 @@ Detections Schedule  | 0 2/10 * * * *
 Audits Schedule  | 0 5/10 * * * *
 Entity Scoring Schedule  | 0 8/10 * * * *</p>
 <p>The connector should start ingesting the Vectra XDR data into the tables at every time interval specified in the Schedules during configuration.</p>
-<h2>Installing for testing<a name="Installing-for-testing"></a></h2>
+<h2 id="installing-for-testing">Installing for testing<a name="Installing-for-testing"></a></h2>
 <p>i. Log in to the Azure portal using the URL - <a href="https://aka.ms/sentineldataconnectorvalidateurl">Azure Portal-Home</a>.</p>
 <p>ii. Go to Microsoft Sentinel -&gt; Data Connectors</p>
 <p>iii. Click the “import” button at the top and select the JSON file VectraXDR_API_FunctionApp.json` downloaded on your local machine from Github.</p>

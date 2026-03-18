@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Endpoint take action from Teams - Carbon Black</h1>
+<h1 id="endpoint-take-action-from-teams---carbon-black">Endpoint take action from Teams - Carbon Black</h1>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
@@ -42,11 +42,11 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Carbon%20Black%20Cloud/Playbooks/CarbonBlack-TakeDeviceActionFromTeams/readme.md">CarbonBlack-TakeDeviceActionFromTeams/readme.md</a></em></p>
 </blockquote>
-<h1>CarbonBlack-TakeDeviceActionFromTeams playbook</h1>
+<h1 id="carbonblack-takedeviceactionfromteams-playbook">CarbonBlack-TakeDeviceActionFromTeams playbook</h1>
 <p>## Summary
  When a new Sentinel incident is created,this playbook gets triggered and performs below actions
  1. Fetches the devices information from CarbonBlack
@@ -58,13 +58,13 @@
 <li>Add a comment to the incident with the information collected from the carbon black, summary of the actions taken and close the incident
      <img alt="Comment example" src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/VMware%20Carbon%20Black%20Cloud/Playbooks/CarbonBlack-TakeDeviceActionFromTeams/images/Incident_Comment.png" /></li>
 </ol>
-<h3>Prerequisites</h3>
+<h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>CarbonBlack Custom Connector needs to be deployed prior to the deployment of this playbook under the same subscription.</li>
 <li>Generate an API key.Refer this link <a href="https://developer.carbonblack.com/reference/carbon-black-cloud/authentication/#creating-an-api-key"> how to generate the API Key</a></li>
 <li>Find Organization key by referring this link <a href="https://developer.carbonblack.com/reference/carbon-black-cloud/authentication/#creating-an-api-key"> Find Organization key by referring this link </a></li>
 </ol>
-<h3>Deployment instructions</h3>
+<h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
 <li>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
 <li>Fill in the required parameters:<ul>
@@ -78,8 +78,8 @@
 </li>
 </ol>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FVMware%2520Carbon%2520Black%2520Cloud%2FPlaybooks%2FCarbonBlack-TakeDeviceActionFromTeams%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FVMware%2520Carbon%2520Black%2520Cloud%2FPlaybooks%2FCarbonBlack-TakeDeviceActionFromTeams%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
-<h3>Post-Deployment instructions</h3>
-<h4>Authorize connections</h4>
+<h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
+<h4 id="authorize-connections">Authorize connections</h4>
 <p>Once deployment is complete, you will need to authorize each connection.
 1.  Click the Microsoft Sentinel connection resource
 2.  Click edit API connection
@@ -87,17 +87,17 @@
 4.  Sign in
 5.  Click Save
 6.  Repeat step 2&amp;3 while for CarbonBlack connector Connection to authorize connector API of the playbook (For authorizing the CarbonBlack API connection, API Key needs to be provided. API Key Value is the combination of API Key / API ID)</p>
-<h4>Configurations in Sentinel</h4>
+<h4 id="configurations-in-sentinel">Configurations in Sentinel</h4>
 <ol>
 <li>In Microsoft sentinel analytical rules should be configured to trigger an incident with risky device </li>
 <li>Configure the automation rules to trigger this playbook</li>
 </ol>
-<h2>Playbook steps explained</h2>
-<h3>When Azure Sentinel incident creation rule is triggered</h3>
+<h2 id="playbook-steps-explained">Playbook steps explained</h2>
+<h3 id="when-azure-sentinel-incident-creation-rule-is-triggered">When Azure Sentinel incident creation rule is triggered</h3>
 <p>Azure Sentinel incident is created. The playbook receives the incident as the input.</p>
-<h3>Entities - Get Hosts</h3>
+<h3 id="entities---get-hosts">Entities - Get Hosts</h3>
 <p>Get the list of risky devices as entities from the Incident</p>
-<h3>Initialize the below variables</h3>
+<h3 id="initialize-the-below-variables">Initialize the below variables</h3>
 <p>a. PolicyId - Assign the pre-configured policyId value</p>
 <p>b. OrganizationId - Assign the OrganizationId</p>
 <p>c. Information - SOC will take the action based on the note</p>
@@ -110,7 +110,7 @@
 <p>j. CarbonBlackDeviceInformation - Assign the CarbonBlack device information</p>
 <p>k. DevicesActionsNeeded - Assign the devices information that needs SOC action</p>
 <p>l. ComposeProductname - Compose the product name</p>
-<h3>For each-Hosts</h3>
+<h3 id="for-each-hosts">For each-Hosts</h3>
 <p>This action will perform the below actions
  a. Make a call to CarbonBlack API with the parameters such as Organization Key and Query [ Contains device name ]</p>
 <p>b. Verify the CarbonBlack API response_mode</p>

@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Keeper Security Push Connector</h1>
+<h1 id="keeper-security-push-connector">Keeper Security Push Connector</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/keeper_security.svg" alt="" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
@@ -63,7 +63,7 @@
 </tbody>
 </table>
 <p>The <a href="https://keepersecurity.com">Keeper Security</a> connector provides the capability to read raw event data from Keeper Security in Microsoft Sentinel.</p>
-<h2>Tables Ingested</h2>
+<h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -86,19 +86,19 @@
 <blockquote>
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
-<h2>Permissions</h2>
+<h2 id="permissions">Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): read and write permissions are required.</p>
 <p><strong>Custom Permissions:</strong>
 - <strong>Microsoft Entra</strong>: Permission to create an app registration in Microsoft Entra ID. Typically requires Entra ID Application Developer role or higher.
 - <strong>Microsoft Azure</strong>: Permission to assign Monitoring Metrics Publisher role on data collection rule (DCR). Typically requires Azure RBAC Owner or User Access Administrator role</p>
-<h2>Setup Instructions</h2>
+<h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
 <p><strong>1. Create ARM Resources and Provide the Required Permissions</strong></p>
 <p>This connector reads data from the tables that Keeper Security uses in a Microsoft Analytics Workspace, if the <a href="https://docs.keepersecurity.com/docs/data-forwarding">data forwarding</a> option is enabled in Keeper Security then raw event data is sent to the Microsoft Sentinel Ingestion API.</p>
-<h4>Automated Configuration and Secure Data Ingestion with Entra Application</h4>
+<h4 id="automated-configuration-and-secure-data-ingestion-with-entra-application">Automated Configuration and Secure Data Ingestion with Entra Application</h4>
 <p>Clicking on "Deploy" will trigger the creation of Log Analytics tables and a Data Collection Rule (DCR). 
 It will then create an Entra application, link the DCR to it, and set the entered secret in the application. This setup enables data to be sent securely to the DCR using an Entra token.
 Keeper Security connector resources</p>
@@ -119,7 +119,7 @@ Keeper Security connector resources</p>
 </blockquote>
 <p><strong>3. Update Keeper Admin Console</strong></p>
 <p>Configure the Keeper Admin Console with the Azure connection details to enable data forwarding to Microsoft Sentinel.</p>
-<h4>Configure Azure Monitor Logs in Keeper Admin Console</h4>
+<h4 id="configure-azure-monitor-logs-in-keeper-admin-console">Configure Azure Monitor Logs in Keeper Admin Console</h4>
 <p>In the <a href="https://keepersecurity.com/console/">Keeper Admin Console</a>, login as the Keeper Administrator. Then go to <strong>Reporting &amp; Alerts</strong> and select <strong>Azure Monitor Logs</strong>.</p>
 <p>Provide the following information from Step 2 above into the Admin Console:</p>
 <ul>

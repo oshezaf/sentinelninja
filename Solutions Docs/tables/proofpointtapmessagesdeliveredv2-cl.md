@@ -12,6 +12,14 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (30 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ProofPointTap%5CData%20Connectors%5CProofpointTAP_CCP/ProofPointTAPMessagesDeliveredV2_CL.json)
@@ -71,7 +79,7 @@ This table is ingested by the following connectors:
 
 **In solution [ProofPointTap](../solutions/proofpointtap.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Malware attachment delivered](../content/proofpointtap-malware-attachment-delivered-0558155e-4556-447e-9a22-828f2a7de06b-eaec71b9.md) |  |
 
@@ -79,7 +87,7 @@ This table is ingested by the following connectors:
 
 **In solution [ProofPointTap](../solutions/proofpointtap.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ProofpointTAP](../content/proofpointtap-proofpointtap-d0be2a01.md) |  |
 

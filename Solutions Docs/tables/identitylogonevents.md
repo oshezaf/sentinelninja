@@ -18,6 +18,13 @@ Authentication events on Active Directory and Microsoft online services
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identitylogonevents) |
 | **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identitylogonevents-table) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (33 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identitylogonevents)
@@ -81,7 +88,7 @@ This table is ingested by the following connectors:
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType == "LogonSuccess"`
 
-| Content Item |
+| Analytic Rule |
 |:-------------|
 | [Detect Potential Kerberoast Activities](../content/microsoft-defender-xdr-detect-potential-kerberoast-activities-12134de5-361b-427c-a1a0-d43f40a593c4-880800c1.md) |
 
@@ -89,19 +96,19 @@ This table is ingested by the following connectors:
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType == "LogonSuccess"`
 
-| Content Item |
+| Hunting Query |
 |:-------------|
 | [Detect Potential kerberoast Activities](../content/microsoft-defender-xdr-detect-potential-kerberoast-activities-35ca729c-04b4-4f6c-b383-caed1b85226e-9755135a.md) |
 
 **Standalone Content:**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Kerberos AS authentications](../content/standalone-content-kerberos-as-authentications-8abe561f-eecd-45cb-a0a3-152189d2c064-15a22f7a.md) |  |
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Detect potential kerberoast activities](../content/github-only-detect-potential-kerberoast-activities-ed25a5c7-2051-44f4-be22-b6cd2f0ad2d0-77205ebd.md) | `ActionType == "LogonSuccess"` |
 | [Detect-Not-Active-AD-User-Accounts](../content/github-only-detect-not-active-ad-user-accounts-9131b716-334f-416e-a50f-809927d63b42-c58cf5c0.md) |  |
@@ -112,13 +119,13 @@ This table is ingested by the following connectors:
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "LogonFailed,LogonSuccess"`
 
-| Content Item |
+| Workbook |
 |:-------------|
 | [MicrosoftDefenderForIdentity](../content/microsoft-defender-xdr-microsoftdefenderforidentity-19dcc30d.md) |
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [microsoftdefenderforidentity](../content/github-only-microsoftdefenderforidentity-215ba93a.md) | `ActionType in "LogonFailed,LogonSuccess"` |

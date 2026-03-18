@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>SIGNL4 Alerting and Response</h1>
+<h1 id="signl4-alerting-and-response">SIGNL4 Alerting and Response</h1>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
@@ -42,27 +42,27 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SIGNL4/Playbooks/SIGNL4_Alerting_and_Response/readme.md">SIGNL4_Alerting_and_Response/readme.md</a></em></p>
 </blockquote>
-<h1>SIGNL4 Alerting</h1>
+<h1 id="signl4-alerting">SIGNL4 Alerting</h1>
 <p>This playbook will be sending alerts with basic incidents to SIGNL4 teams when an incident is created in Microsoft Sentinel.</p>
-<h2>Pre-requisites:</h2>
+<h2 id="pre-requisites">Pre-requisites:</h2>
 <p>A <a href="https://www.signl4.com">SIGNL4</a> account.</p>
 <p><a href="https://www.signl4.com">SIGNL4</a> is a mobile alerting and incident response service for operational teams. You can send alerts via app push, SMS text or voice calls including tracking, escalation, on-call planning and collaboration.</p>
-<h2>Deployment:</h2>
+<h2 id="deployment">Deployment:</h2>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSIGNL4%2FPlaybooks%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSIGNL4%2FPlaybooks%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
-<h2>Post-deployment</h2>
-<h3>Configure connections</h3>
+<h2 id="post-deployment">Post-deployment</h2>
+<h3 id="configure-connections">Configure connections</h3>
 <p>Edit the Logic App or go to Logic app designer.
 Expand “Trigger Alert” and connector to your SIGNL4 account by adding a new connection or signing-in to your existing one.
 You also adapt the alert details to be sent according to your needs. You also might want to add conditions or further processing or enrichment before submitting the alert.</p>
-<h3>Attach the playbook</h3>
+<h3 id="attach-the-playbook">Attach the playbook</h3>
 <p>After deployment, attach this playbook to an automation rule so it runs when the incident is created.
 <a href="https://docs.microsoft.com/azure/sentinel/automate-incident-handling-with-automation-rules#creating-and-managing-automation-rules">Learn more about automation rules</a>
 Note: Playbook is disabled by default. Please enable it before assigning to the Automation rule!</p>
-<h2>Screenshot</h2>
+<h2 id="screenshot">Screenshot</h2>
 <p><img alt="Playbook" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SIGNL4/Playbooks/SIGNL4_Alerting_and_Response/images/SIGNL4-Playbook.png" /></p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>

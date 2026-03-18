@@ -12,6 +12,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (25 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/VeeamOneTriggeredAlarms_CL.json)
@@ -66,7 +73,7 @@ This table is ingested by the following connectors:
 
 **In solution [Veeam](../solutions/veeam.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Veeam ONE Application with No Recent Data Backup Sessions](../content/veeam-veeam-one-application-with-no-recent-data-backup-sessions-73e36985-d65d-4852-b3cc-5e8f4b64b39c-18d04ddc.md) |  |
 | [Veeam ONE Backup Copy RPO](../content/veeam-veeam-one-backup-copy-rpo-7fb6d1b6-48e4-442b-ba4d-1b5fb5fa379b-100c041e.md) |  |
@@ -91,13 +98,13 @@ This table is ingested by the following connectors:
 
 **In solution [Veeam](../solutions/veeam.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [VeeamSecurityActivities](../content/veeam-veeamsecurityactivities-f559a349.md) |  |
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [VeeamSecurityActivites](../content/github-only-veeamsecurityactivites-4f8fb3e5.md) |  |
 | [VeeamSecurityActivities](../content/github-only-veeamsecurityactivities-c31c4544.md) |  |

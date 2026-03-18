@@ -12,6 +12,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (14 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20LogServ%5CData%20Connectors%5CSAPLogServ_PUSH_CCP/table.json)
@@ -55,7 +62,7 @@ This table is ingested by the following connectors:
 
 **In solution [SAP LogServ](../solutions/sap-logserv.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [SAP LogServ - HANA DB - Assign Admin Authorizations](../content/sap-logserv-sap-logserv-hana-db-assign-admin-authorizations-4981469b-8618-43a7-b44c-5744594fa494-5de53ca7.md) |  |
 | [SAP LogServ - HANA DB - Audit Trail Policy Changes](../content/sap-logserv-sap-logserv-hana-db-audit-trail-policy-changes-e8394afb-82a7-4718-8d31-cc57ad352fa8-98541953.md) |  |
@@ -66,7 +73,7 @@ This table is ingested by the following connectors:
 
 **In solution [SAP LogServ](../solutions/sap-logserv.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [SAPLogServObserve](../content/sap-logserv-saplogservobserve-6fc88ed2.md) |  |
 

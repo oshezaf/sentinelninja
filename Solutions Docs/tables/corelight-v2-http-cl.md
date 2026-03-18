@@ -11,6 +11,14 @@
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (36 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Corelight_v2_http_CL.json)
@@ -76,7 +84,7 @@ This table is ingested by the following connectors:
 
 **In solution [Corelight](../solutions/corelight.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Corelight - External Proxy Detected](../content/corelight-corelight-external-proxy-detected-05850746-9ae4-412f-838b-844f0903f4a9-ddace3ce.md) |  |
 | [Corelight - Multiple Compressed Files Transferred over HTTP](../content/corelight-corelight-multiple-compressed-files-transferred-over-http-4e55e306-3022-43a1-870a-41c4d5116079-08a06d64.md) |  |
@@ -89,7 +97,7 @@ This table is ingested by the following connectors:
 
 **In solution [Corelight](../solutions/corelight.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Corelight - Compressed Files Transferred over HTTP](../content/corelight-corelight-compressed-files-transferred-over-http-f37e076e-69f6-4fcf-81dc-ca2bc5929eb5-09dc7d94.md) |  |
 | [Corelight - File uploads by source](../content/corelight-corelight-file-uploads-by-source-887e648f-32d7-4803-8cd4-2ceef7995872-c9abbff0.md) |  |
@@ -101,7 +109,7 @@ This table is ingested by the following connectors:
 
 **In solution [Corelight](../solutions/corelight.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Corelight](../content/corelight-corelight-90dad195.md) |  |
 | [Corelight_Alert_Aggregations](../content/corelight-corelight-alert-aggregations-f385ae6f.md) |  |

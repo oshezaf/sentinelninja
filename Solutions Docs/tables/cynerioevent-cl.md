@@ -13,6 +13,14 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (39 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CynerioEvent_CL.json)
@@ -81,7 +89,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cynerio](../solutions/cynerio.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Cynerio - Exploitation Attempt of IoT device](../content/cynerio-cynerio-exploitation-attempt-of-iot-device-3d853a88-92d2-4aec-a680-2bf7bb560c56-11f45b91.md) |  |
 | [Cynerio - IoT - Default password](../content/cynerio-cynerio-iot-default-password-84e0ea1f-766d-4775-836a-c0c9cca05085-7306adc3.md) |  |
@@ -93,7 +101,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cynerio](../solutions/cynerio.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [CynerioOverviewWorkbook](../content/cynerio-cyneriooverviewworkbook-b4cbafeb.md) |  |
 

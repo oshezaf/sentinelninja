@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Vectra Update Incident Based on Tag And Notify</h1>
+<h1 id="vectra-update-incident-based-on-tag-and-notify">Vectra Update Incident Based on Tag And Notify</h1>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
@@ -42,13 +42,13 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Playbooks/VectraUpdateIncidentBasedOnTagAndNotify/readme.md">VectraUpdateIncidentBasedOnTagAndNotify/readme.md</a></em></p>
 </blockquote>
-<h2>Summary</h2>
+<h2 id="summary">Summary</h2>
 <p>This playbook runs hourly to identify entities with Medium severity incidents, checks for user-defined tags in Vectra, and if found, upgrades the incident severity to High, adds a comment, and sends a notification to a specified MS Teams channel.</p>
-<h3>Prerequisites</h3>
+<h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>The Vectra XDR data connector should be configured to create alerts and generate an incident based on entity data in Microsoft Sentinel.</li>
 <li>Obtain Key Vault name and Tenant ID where client credentials are stored using which access token will be generated.
@@ -58,7 +58,7 @@
 <li>User must have a Microsoft Teams account.</li>
 <li>Ensure the VectraGenerateAccessToken playbook is deployed before deploying VectraUpdateIncidentBasedOnTagAndNotify playbook.</li>
 </ol>
-<h3>Deployment Instructions</h3>
+<h3 id="deployment-instructions">Deployment Instructions</h3>
 <ol>
 <li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
 <li>Fill in the required parameters:
@@ -74,8 +74,8 @@
    * GenerateAccessCredPlaybookName: Enter Playbook name which is deployed as part of prerequisites.</li>
 </ol>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FVectraXDR%2FPlaybooks%2FVectraUpdateIncidentBasedOnTagAndNotify%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FVectraXDR%2FPlaybooks%2FVectraUpdateIncidentBasedOnTagAndNotify%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
-<h2>Post-Deployment Instructions</h2>
-<h4>a. Authorize connections</h4>
+<h2 id="post-deployment-instructions">Post-Deployment Instructions</h2>
+<h4 id="a-authorize-connections">a. Authorize connections</h4>
 <p>Once deployment is complete, authorize each connection.
 1. Go to your logic app → API connections → Select keyvault connection resource.
 2. Go to General → Edit API connection.
@@ -83,7 +83,7 @@
 4. Sign in.
 5. Click Save.
 6. Repeat steps for other connections.</p>
-<h4>b. Add Access Policy in Key Vault</h4>
+<h4 id="b-add-access-policy-in-key-vault">b. Add Access Policy in Key Vault</h4>
 <p>Add access policy for the playbook's managed identity and authorized user to read and write secrets of the Key Vault.
 1. Go to Logic App → <em>your Logic App</em> → Identity → System assigned Managed identity and copy Object (principal) ID.
 2. Go to Key Vaults → <em>your Key Vault</em> → Access policies → Create.
@@ -91,7 +91,7 @@
 4. In the principal section, search by copied Object ID. Click Next.
 5. Click Review + Create.
 6. Repeat steps 2 to 5 to add access policy for the user account used to authorize the connection.</p>
-<h4>c. Assign Role to add comment in incident</h4>
+<h4 id="c-assign-role-to-add-comment-in-incident">c. Assign Role to add comment in incident</h4>
 <p>Assign role to this playbook.
 1. Go to Log Analytics Workspace → <em>your workspace</em> → Access Control → Add.
 2. Add role assignment.
@@ -99,7 +99,7 @@
 4. Role: Microsoft Sentinel Contributor.
 5. Members: select managed identity for assigned access to and add your logic app as member.
 6. Click on Review + Assign.</p>
-<h4>d. Configurations in Microsoft Sentinel</h4>
+<h4 id="d-configurations-in-microsoft-sentinel">d. Configurations in Microsoft Sentinel</h4>
 <ol>
 <li>In Microsoft Sentinel, the below analytical rules should be configured to trigger an incident:
    - Vectra Create Incident Based On Tag For Entity Type Account.

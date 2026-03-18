@@ -12,6 +12,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (33 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyfirmaBIProductSolutionAlerts_CL.json)
@@ -74,7 +81,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cyfirma Brand Intelligence](../solutions/cyfirma-brand-intelligence.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [CYFIRMA - Brand Intelligence - Product/Solution High Rule](../content/cyfirma-brand-intelligence-cyfirma-brand-intelligence-product-solution-high-rule-3a9a81bc-2f41-4d68-9cd1-7788326c92b1-e4a333af.md) |  |
 | [CYFIRMA - Brand Intelligence - Product/Solution Medium Rule](../content/cyfirma-brand-intelligence-cyfirma-brand-intelligence-product-solution-medium-rule-458d964f-d039-4ce0-9741-0b6245ba3374-e519caf4.md) |  |

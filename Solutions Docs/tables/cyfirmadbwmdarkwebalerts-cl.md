@@ -12,6 +12,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (29 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyfirmaDBWMDarkWebAlerts_CL.json)
@@ -70,7 +77,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cyfirma Digital Risk](../solutions/cyfirma-digital-risk.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [CYFIRMA - Data Breach and Web Monitoring - Dark Web High Rule](../content/cyfirma-digital-risk-cyfirma-data-breach-and-web-monitoring-dark-web-high-rule-c3f1f55b-7e54-4416-8afc-7d7876b29b0f-0108f021.md) |  |
 | [CYFIRMA - Data Breach and Web Monitoring - Dark Web Medium Rule](../content/cyfirma-digital-risk-cyfirma-data-breach-and-web-monitoring-dark-web-medium-rule-c0afeda7-4832-49a6-8d03-a5d137d513b5-9e7f4602.md) |  |

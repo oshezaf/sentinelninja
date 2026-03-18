@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>JoeSandbox URL Analyis</h1>
+<h1 id="joesandbox-url-analyis">JoeSandbox URL Analyis</h1>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
@@ -42,12 +42,12 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JoeSandbox/Playbooks/JoeSandbox-Submit-Url-Sentinel-Incident/readme.md">JoeSandbox-Submit-Url-Sentinel-Incident/readme.md</a></em></p>
 </blockquote>
-<h1>JoeSandbox URL Analysis Playbook</h1>
-<h2>Table of Contents</h2>
+<h1 id="joesandbox-url-analysis-playbook">JoeSandbox URL Analysis Playbook</h1>
+<h2 id="table-of-contents">Table of Contents</h2>
 <ol>
 <li><a href="#overview">Overview</a></li>
 <li><a href="#deployplaybook">Deploy Playbook</a></li>
@@ -57,7 +57,7 @@
 <li><a href="#postdeployment">Post Deployment Steps</a></li>
 </ol>
 <p><a name="overview"></p>
-<h1>Overview</h1>
+<h1 id="overview">Overview</h1>
 <p>When a new Azure Sentinel Incident is created, this playbook gets triggered and performs the following actions:</p>
 <ul>
 <li>It fetches all the URL objects in the Incident.</li>
@@ -66,7 +66,7 @@
 </ul>
 <p><img alt="Incident Comments" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JoeSandbox/Playbooks/JoeSandbox-Submit-Url-Sentinel-Incident/Images/incident_url_comment.png" /></p>
 <p><a name="deployplaybook"></p>
-<h2>Links to deploy Playbook:</h2>
+<h2 id="links-to-deploy-playbook">Links to deploy Playbook:</h2>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FJoeSandbox%2FPlaybooks%2FJoeSandbox-Submit-Url-Sentinel-Incident%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> 
 <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FJoeSandbox%2FPlaybooks%2FJoeSandbox-Submit-Url-Sentinel-Incident%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
 <ul>
@@ -115,28 +115,28 @@
 <li>Once you provide the above values, please click on <code>Review + create</code> button.</li>
 </ul>
 <p><a name="authentication"></p>
-<h2>Authentication</h2>
+<h2 id="authentication">Authentication</h2>
 <p>Authentication methods this connector supports:
 - <a href="https://www.joesecurity.org/joe-sandbox-cloud#subscriptions">API Key authentication</a></p>
 <p><a name="prerequisites"></p>
-<h2>Prerequisites for using and deploying playbook</h2>
+<h2 id="prerequisites-for-using-and-deploying-playbook">Prerequisites for using and deploying playbook</h2>
 <ul>
 <li>A JoeSanbox API Key.</li>
 <li>JoeSandbox CustomConnector</li>
 </ul>
 <p><a name="deployment"></p>
-<h4>Deployment instructions</h4>
+<h4 id="deployment-instructions">Deployment instructions</h4>
 <ul>
 <li>Deploy the playbooks by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
 <li>Fill in the required parameters for deploying the playbook.</li>
 <li>Click "Review + create". Once the validation is successful, click on "Create".</li>
 </ul>
 <p><a name="postdeployment"></p>
-<h3>Post-Deployment instructions.</h3>
+<h3 id="post-deployment-instructions">Post-Deployment instructions.</h3>
 <ul>
 <li>As a best practice, we have used the Sentinel connection in Logic Apps that use "ManagedSecurityIdentity" permissions. Please refer to <a href="https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-managed-identity-for-azure-sentinel-logic-apps/ba-p/2068204">this document</a> and provide permissions to the Logic App accordingly.</li>
 </ul>
-<h4>b. Configurations in Sentinel:</h4>
+<h4 id="b-configurations-in-sentinel">b. Configurations in Sentinel:</h4>
 <ul>
 <li>In Azure Sentinel, analytical rules should be configured to trigger an incident with URL indicators.</li>
 <li>Configure the automation rules to trigger the playbook.</li>

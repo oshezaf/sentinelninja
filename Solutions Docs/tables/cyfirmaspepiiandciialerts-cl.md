@@ -12,6 +12,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (31 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyfirmaSPEPIIAndCIIAlerts_CL.json)
@@ -72,7 +79,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cyfirma Digital Risk](../solutions/cyfirma-digital-risk.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [CYFIRMA - Social and Public Exposure - Exposure of PII/CII in Public Domain Rule](../content/cyfirma-digital-risk-cyfirma-social-and-public-exposure-exposure-of-pii-cii-in-public-domain-rule-52d71822-41e4-4c21-b36f-400294f2b43a-b233ea7b.md) |  |
 | [CYFIRMA - Social and Public Exposure - Exposure of PII/CII in Public Domain Rule](../content/cyfirma-digital-risk-cyfirma-social-and-public-exposure-exposure-of-pii-cii-in-public-domain-rule-b484f224-687f-4406-af8a-ff019f9f2c24-d3be53cc.md) |  |

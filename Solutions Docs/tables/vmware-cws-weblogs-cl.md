@@ -10,6 +10,13 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (48 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/VMware_CWS_Weblogs_CL.json)
@@ -87,7 +94,7 @@ This table is ingested by the following connectors:
 
 **In solution [VMware SASE](../solutions/vmware-sase.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [VMware Cloud Web Security - Web Access Policy Violation](../content/vmware-sase-vmware-cloud-web-security-web-access-policy-violation-b84a1f62-ad30-4ae1-8b21-3d304d8aa818-304b8b85.md) |  |
 
@@ -95,7 +102,7 @@ This table is ingested by the following connectors:
 
 **In solution [VMware SASE](../solutions/vmware-sase.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [VMwareSASESOCDashboard](../content/vmware-sase-vmwaresasesocdashboard-36b12705.md) |  |
 

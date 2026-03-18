@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Cisco Meraki Solution</h1>
+<h1 id="cisco-meraki-solution">Cisco Meraki Solution</h1>
 <p><em>Solution: CiscoMeraki</em></p>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/CiscoMeraki/Connector/MerakiConnector/logo.jpg" alt="CiscoMeraki Logo" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
@@ -80,7 +80,7 @@
 <p><strong>NOTE</strong>: Microsoft recommends installation of Custom logs via AMA Connector. Legacy connector uses the Log Analytics agent which were deprecated on <strong>Aug 31, 2024.</strong> Using MMA and AMA on same machine can cause log duplication and extra ingestion cost <a href="https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate">more details</a>.</p>
 <p><strong>Additional Information</strong></p>
 <p>📖 <strong>Vendor Documentation:</strong> <a href="https://documentation.meraki.com/General_Administration/Monitoring_and_Reporting/Syslog_Event_Types_and_Log_Samples">Cisco Meraki Syslog Events</a> - Syslog event types and log samples</p>
-<h2>Contents</h2>
+<h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#pre-requisites">Pre-requisites</a></li>
 <li><a href="#data-connectors">Data Connectors</a></li>
@@ -88,7 +88,7 @@
 <li><a href="#content-items">Content Items</a></li>
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
-<h2>Pre-requisites</h2>
+<h2 id="pre-requisites">Pre-requisites</h2>
 <p>This solution depends on <strong>1 other solution(s)</strong>:</p>
 <table>
 <thead>
@@ -102,7 +102,7 @@
 </tr>
 </tbody>
 </table>
-<h2>Data Connectors</h2>
+<h2 id="data-connectors">Data Connectors</h2>
 <p>This solution has <strong>3 discovered data connector(s)⚠️</strong> (not in Solution definition):</p>
 <ul>
 <li><a href="../connectors/ciscomeraki.html">[Deprecated] Cisco Meraki</a> ⚠️</li>
@@ -115,9 +115,9 @@
 </ul>
 <blockquote>
 <p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
-<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
+<p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
-<h2>Tables Used</h2>
+<h2 id="tables-used">Tables Used</h2>
 <p>This solution uses <strong>18 table(s)</strong>:</p>
 <table>
 <thead>
@@ -135,7 +135,7 @@
 </tr>
 <tr>
 <td><a href="../tables/ciscomerakinativepoller-cl.html"><code>CiscoMerakiNativePoller_CL</code></a></td>
-<td><a href="../connectors/ciscomerakinativepoller.html">Cisco Meraki (using REST API)</a>, <a href="../connectors/ciscomeraki-usingrestapi.html">Cisco Meraki (using REST API)</a>, <a href="../connectors/ciscomeraki.html">[Deprecated] Cisco Meraki</a></td>
+<td><a href="../connectors/ciscomeraki-usingrestapi.html">Cisco Meraki (using REST API)</a>, <a href="../connectors/ciscomerakinativepoller.html">Cisco Meraki (using REST API)</a>, <a href="../connectors/ciscomeraki.html">[Deprecated] Cisco Meraki</a></td>
 <td>Workbooks</td>
 </tr>
 <tr>
@@ -185,7 +185,7 @@
 </tr>
 <tr>
 <td><a href="../tables/syslog.html"><code>Syslog</code></a></td>
-<td><a href="../connectors/ciscomerakinativepoller.html">Cisco Meraki (using REST API)</a>, <a href="../connectors/ciscomeraki-usingrestapi.html">Cisco Meraki (using REST API)</a>, <a href="../connectors/ciscomeraki.html">[Deprecated] Cisco Meraki</a></td>
+<td><a href="../connectors/ciscomeraki-usingrestapi.html">Cisco Meraki (using REST API)</a>, <a href="../connectors/ciscomerakinativepoller.html">Cisco Meraki (using REST API)</a>, <a href="../connectors/ciscomeraki.html">[Deprecated] Cisco Meraki</a></td>
 <td>Workbooks</td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@
 </tr>
 <tr>
 <td><a href="../tables/meraki-cl.html"><code>meraki_CL</code></a></td>
-<td><a href="../connectors/ciscomerakinativepoller.html">Cisco Meraki (using REST API)</a>, <a href="../connectors/ciscomeraki-usingrestapi.html">Cisco Meraki (using REST API)</a>, <a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency), <a href="../connectors/ciscomeraki.html">[Deprecated] Cisco Meraki</a></td>
+<td><a href="../connectors/ciscomeraki-usingrestapi.html">Cisco Meraki (using REST API)</a>, <a href="../connectors/ciscomerakinativepoller.html">Cisco Meraki (using REST API)</a>, <a href="../connectors/customlogsviaama.html">Custom logs via AMA</a> (dependency), <a href="../connectors/ciscomeraki.html">[Deprecated] Cisco Meraki</a></td>
 <td>Workbooks</td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Internal Tables</h3>
+<h3 id="internal-tables">Internal Tables</h3>
 <p>The following <strong>1 table(s)</strong> are used internally by this solution's content items:</p>
 <table>
 <thead>
@@ -241,7 +241,7 @@
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
-<h2>Content Items</h2>
+<h2 id="content-items">Content Items</h2>
 <p>This solution includes <strong>7 content item(s)</strong>:</p>
 <table>
 <thead>
@@ -265,7 +265,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Workbooks</h3>
+<h3 id="workbooks">Workbooks</h3>
 <table>
 <thead>
 <tr>
@@ -280,7 +280,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Playbooks</h3>
+<h3 id="playbooks">Playbooks</h3>
 <table>
 <thead>
 <tr>
@@ -317,7 +317,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Parsers</h3>
+<h3 id="parsers">Parsers</h3>
 <table>
 <thead>
 <tr>
@@ -334,13 +334,13 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/README.md">CiscoMeraki/README.md</a></em></p>
 </blockquote>
-<h1>Cisco Meraki Logic Apps Custom Connector and Playbook Templates</h1>
+<h1 id="cisco-meraki-logic-apps-custom-connector-and-playbook-templates">Cisco Meraki Logic Apps Custom Connector and Playbook Templates</h1>
 <p><img alt="meraki" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Connector/MerakiConnector/logo.jpg" /></p>
-<h2>Table of Contents</h2>
+<h2 id="table-of-contents">Table of Contents</h2>
 <ol>
 <li><a href="#overview">Overview</a></li>
 <li><a href="#deploy">Deploy Custom Connector + 5 Playbook templates</a></li>
@@ -352,22 +352,22 @@
 <li><a href="#limitations">Limitations</a></li>
 </ol>
 <p><a name="overview"></p>
-<h1>Overview</h1>
+<h1 id="overview">Overview</h1>
 <p>Cisco Meraki connector connects to Cisco Meraki Dashboard API service endpoint and programmatically manages and monitors Meraki networks at scale.</p>
 <p><a name="deploy"></p>
-<h1>Deploy Custom connector + 5 Playbook templates</h1>
+<h1 id="deploy-custom-connector-5-playbook-templates">Deploy Custom connector + 5 Playbook templates</h1>
 <p>This package includes:
 * Custom connector for Cisco Meraki.
 * Five playbook templates leverage Cisco Meraki custom connector.</p>
 <p>You can choose to deploy the whole package : Connector + all five playbook templates, or each one seperately from it's specific folder.</p>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCiscoMeraki%2FConsolidatedTemplate.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
 <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCiscoMeraki%2FConsolidatedTemplate.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
-<h1>Cisco Meraki documentation</h1>
+<h1 id="cisco-meraki-documentation">Cisco Meraki documentation</h1>
 <p><a name="authentication"></p>
-<h1>Authentication</h1>
+<h1 id="authentication">Authentication</h1>
 <p>API Key Authentication</p>
 <p><a name="prerequisites"></p>
-<h1>Prerequisites for using and deploying Custom connector + 5 playbooks</h1>
+<h1 id="prerequisites-for-using-and-deploying-custom-connector-5-playbooks">Prerequisites for using and deploying Custom connector + 5 playbooks</h1>
 <ol>
 <li>Cisco Meraki API Key should be known to establish a connection with Cisco Meraki Custom Connector. <a href="https://developer.cisco.com/meraki/api-v1/#!getting-started/authorization">Refer here</a></li>
 <li>Cisco Meraki Dashboard API service endpoint should be known. (e.g. https://{CiscoMerakiDomain}/api/{VersionNumber}) <a href="https://developer.cisco.com/meraki/api-v1/#!schema">Refer here</a></li>
@@ -376,7 +376,7 @@
 <li>Network Group Policy name should be known. <a href="https://developer.cisco.com/meraki/api-v1/#!get-network-group-policy">Refer here</a></li>
 </ol>
 <p><a name="deployment"></p>
-<h1>Deployment instructions</h1>
+<h1 id="deployment-instructions">Deployment instructions</h1>
 <ol>
 <li>Deploy the Custom connector and playbooks by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
 <li>Fill in the required parameters for deploying custom connector and playbooks</li>
@@ -400,7 +400,7 @@
 </tbody>
 </table>
 <p><em>[Content truncated...]</em></p>
-<h2>Release Notes</h2>
+<h2 id="release-notes">Release Notes</h2>
 <table>
 <thead>
 <tr>

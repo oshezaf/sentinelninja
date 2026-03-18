@@ -12,6 +12,14 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (24 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AzureDevOpsAuditing%5CData%20Connectors%5CAzureDevOpsAuditLogs_CCP/AzureDevOpsAuditLogs_Table.json)
@@ -65,7 +73,7 @@ This table is ingested by the following connectors:
 
 **In solution [AzureDevOpsAuditing](../solutions/azuredevopsauditing.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Azure DevOps Administrator Group Monitoring](../content/azuredevopsauditing-azure-devops-administrator-group-monitoring-89e6adbd-612c-4fbe-bc3d-32f81baf3b6c-bf5cb534.md) |  |
 | [Azure DevOps Agent Pool Created Then Deleted](../content/azuredevopsauditing-azure-devops-agent-pool-created-then-deleted-acfdee3f-b794-404a-aeba-ef6a1fa08ad1-b6abe93c.md) |  |
@@ -91,7 +99,7 @@ This table is ingested by the following connectors:
 
 **In solution [AzureDevOpsAuditing](../solutions/azuredevopsauditing.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Azure DevOps - Build Check Deleted](../content/azuredevopsauditing-azure-devops-build-check-deleted-940386c3-4b2c-4147-ac8e-dcddedaaae52-6714bd40.md) |  |
 | [Azure DevOps - Build Deleted After Pipeline Modification](../content/azuredevopsauditing-azure-devops-build-deleted-after-pipeline-modification-47857f1f-f8e6-470d-b132-03a8a606b3f4-80419f62.md) |  |

@@ -11,6 +11,13 @@
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (30 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Authomize_v2_CL.json)
@@ -70,7 +77,7 @@ This table is ingested by the following connectors:
 
 **In solution [Authomize](../solutions/authomize.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [AWS role with admin privileges](../content/authomize-aws-role-with-admin-privileges-734c00a0-a95b-44dd-9b69-d926ed44256d-a1c34868.md) |  |
 | [AWS role with shadow admin privileges](../content/authomize-aws-role-with-shadow-admin-privileges-2526079b-3355-4756-a2d1-21e9cd957261-8e07d58b.md) |  |
@@ -98,7 +105,7 @@ This table is ingested by the following connectors:
 
 **In solution [Authomize](../solutions/authomize.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Admin SaaS account detected](../content/authomize-admin-saas-account-detected-b3430fb5-78aa-4729-8595-f66c06138478-6473e22c.md) |  |
 | [IaaS admin detected](../content/authomize-iaas-admin-detected-ab80b41c-23e5-4264-ac23-806aad2a57af-85ec11f2.md) |  |
@@ -111,7 +118,7 @@ This table is ingested by the following connectors:
 
 **In solution [Authomize](../solutions/authomize.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Authomize](../content/authomize-authomize-0bb90a63.md) |  |
 

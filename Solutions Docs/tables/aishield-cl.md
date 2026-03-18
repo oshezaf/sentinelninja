@@ -12,6 +12,14 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (17 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/AIShield_CL.json)
@@ -58,7 +66,7 @@ This table is ingested by the following connectors:
 
 **In solution [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [AIShield - Image Segmentation AI Model extraction high suspicious vulnerability detection](../content/aishield-ai-security-monitoring-aishield-image-segmentation-ai-model-extraction-high-suspicious-vulnerab-1ed02dcc-0bc9-465e-94b4-bd8969221602-7f56c1e7.md) |  |
 | [AIShield - Image classification AI Model Evasion high suspicious vulnerability detection](../content/aishield-ai-security-monitoring-aishield-image-classification-ai-model-evasion-high-suspicious-vulnerabi-76c9e83d-c6f9-4270-ad21-761410f9cc6c-9e4e83a7.md) |  |
@@ -74,7 +82,7 @@ This table is ingested by the following connectors:
 
 **In solution [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [AIShield](../content/aishield-ai-security-monitoring-aishield-af815b41.md) |  |
 

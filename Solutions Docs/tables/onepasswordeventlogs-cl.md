@@ -12,6 +12,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (28 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/1Password%5CData%20Connectors%5C1Password_ccpv2/1Password_tables.json)
@@ -71,7 +78,7 @@ This table is ingested by the following connectors:
 
 **In solution [1Password](../solutions/1password.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [1Password - Changes to SSO configuration](../content/1password-1password-changes-to-sso-configuration-9406f5ab-1197-4db9-8042-9f3345be061c-c5a1c84d.md) |  |
 | [1Password - Changes to firewall rules](../content/1password-1password-changes-to-firewall-rules-54e6bb8e-2935-422f-9387-dba1961abfd7-9690ea4a.md) |  |
@@ -96,13 +103,13 @@ This table is ingested by the following connectors:
 
 **In solution [1Password](../solutions/1password.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [1Password](../content/1password-1password-c64d377e.md) |  |
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [1Password](../content/github-only-1password-e0428620.md) |  |
 

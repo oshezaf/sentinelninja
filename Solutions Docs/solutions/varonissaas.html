@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Varonis for Sentinel Solutions</h1>
+<h1 id="varonis-for-sentinel-solutions">Varonis for Sentinel Solutions</h1>
 <p><em>Solution: VaronisSaaS</em></p>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/VaronisLogo.svg" alt="VaronisSaaS Logo" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
@@ -72,22 +72,22 @@
 </tbody>
 </table>
 <p>The Varonis SaaS integration allows you to retrieve Varonis DatAlert alerts, create incident and pull activities related to the alerts for conducting investigations.</p>
-<h2>Contents</h2>
+<h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#tables-used">Tables Used</a></li>
 <li><a href="#content-items">Content Items</a></li>
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
-<h2>Data Connectors</h2>
+<h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/varonissaas.html">Varonis SaaS</a> 🔶</li>
 </ul>
 <blockquote>
-<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
+<p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
-<h2>Tables Used</h2>
+<h2 id="tables-used">Tables Used</h2>
 <p>This solution uses <strong>1 table(s)</strong>:</p>
 <table>
 <thead>
@@ -108,7 +108,7 @@
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
-<h2>Content Items</h2>
+<h2 id="content-items">Content Items</h2>
 <p>This solution includes <strong>1 content item(s)</strong>:</p>
 <table>
 <thead>
@@ -124,7 +124,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Workbooks</h3>
+<h3 id="workbooks">Workbooks</h3>
 <table>
 <thead>
 <tr>
@@ -139,12 +139,12 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VaronisSaaS/README.md">VaronisSaaS/README.md</a></em></p>
 </blockquote>
-<h1>Varonis SaaS</h1>
-<h3>In this article</h3>
+<h1 id="varonis-saas">Varonis SaaS</h1>
+<h3 id="in-this-article">In this article</h3>
 <p><a href="#connector-attributes">Connector Attributes</a>\
 <a href="#query-samples">Connector Attributes</a>\
 <a href="#prerequisites">Prerequisites</a>\
@@ -152,7 +152,7 @@
 <a href="#next-steps">Next Steps</a></p>
 <p>Varonis SaaS provides the capability to ingest <a href="https://www.varonis.com/products/SaaS">Varonis Alerts</a> into Microsoft Sentinel.</p>
 <p>Varonis prioritizes deep data visibility, classification capabilities, and automated remediation for data access. Varonis builds a single prioritized view of risk for your data, so you can proactively and systematically eliminate risk from insider threats and cyberattacks.</p>
-<h2>Connector Attributes</h2>
+<h2 id="connector-attributes">Connector Attributes</h2>
 <table>
 <thead>
 <tr>
@@ -179,16 +179,16 @@
 </tr>
 </tbody>
 </table>
-<h2>Query samples</h2>
-<h4>All Varonis Data Alerts logs</h4>
+<h2 id="query-samples">Query samples</h2>
+<h4 id="all-varonis-data-alerts-logs">All Varonis Data Alerts logs</h4>
 <pre><code class="language-kusto">VaronisAlerts_CL
 | sort by TimeGenerated desc
 </code></pre>
-<h2>Prerequisites</h2>
+<h2 id="prerequisites">Prerequisites</h2>
 <p>To integrate with Varonis SaaS (using Azure Functions) make sure you have the following:
 - Microsoft.Web/sites permissions: Read and write permissions to Azure Functions to create a Function App is required. See the <a href="https://learn.microsoft.com/azure/azure-functions/">documentation</a> to learn more about Azure Functions.
 - Varonis API credentials: Varonis API credentials with permission read log is required for Varonis SaaS API. See the documentation to learn more about creating Varonis SaaS API credentials.</p>
-<h2>Vendor installation instructions</h2>
+<h2 id="vendor-installation-instructions">Vendor installation instructions</h2>
 <blockquote>
 <p>This connector uses Azure Functions to connect to the Varonis SaaS Endpoint API to pull logs into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
 </blockquote>
@@ -208,7 +208,7 @@
 <li>Click the Deploy to Azure button.\</li>
 </ol>
 <p><em>[Content truncated...]</em></p>
-<h2>Release Notes</h2>
+<h2 id="release-notes">Release Notes</h2>
 <table>
 <thead>
 <tr>

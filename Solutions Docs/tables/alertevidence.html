@@ -17,7 +17,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>AlertEvidence</h1>
+<h1 id="alertevidence">AlertEvidence</h1>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
@@ -60,7 +60,15 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (44 columns)</h2>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
+<li><a href="#content-items-using-this-table">Content Items</a></li>
+<li><a href="#parsers-using-this-table">Parsers</a></li>
+</ul>
+<h2 id="schema">Schema (44 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alertevidence">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -293,7 +301,7 @@
 </tr>
 </tbody>
 </table>
-<h2>Solutions (7)</h2>
+<h2 id="solutions">Solutions (7)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a></li>
@@ -304,7 +312,7 @@
 <li><a href="../solutions/vectra-xdr.html">Vectra XDR</a></li>
 <li><a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a></li>
 </ul>
-<h2>Connectors (1)</h2>
+<h2 id="connectors">Connectors (1)</h2>
 <p>This table is ingested by the following connectors:</p>
 <table>
 <thead>
@@ -321,13 +329,13 @@
 </tbody>
 </table>
 <hr />
-<h2>Content Items Using This Table (21)</h2>
-<h3>Analytic Rules (2)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (21)</h2>
+<h3 id="analytic-rules">Analytic Rules (2)</h3>
 <p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>ActionType == "BrowserLaunchedToOpenUrl"</code></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Analytic Rule</th>
 </tr>
 </thead>
 <tbody>
@@ -340,7 +348,7 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Analytic Rule</th>
 <th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
@@ -351,12 +359,12 @@
 </tr>
 </tbody>
 </table>
-<h3>Hunting Queries (12)</h3>
+<h3 id="hunting-queries">Hunting Queries (12)</h3>
 <p><strong>Standalone Content:</strong></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Hunting Query</th>
 <th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
@@ -371,7 +379,7 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Hunting Query</th>
 <th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
@@ -422,12 +430,12 @@
 </tr>
 </tbody>
 </table>
-<h3>Workbooks (7)</h3>
+<h3 id="workbooks">Workbooks (7)</h3>
 <p><strong>In solution <a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a>:</strong></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Workbook</th>
 <th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
@@ -442,7 +450,7 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Workbook</th>
 </tr>
 </thead>
 <tbody>
@@ -455,7 +463,7 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Workbook</th>
 </tr>
 </thead>
 <tbody>
@@ -468,7 +476,7 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Workbook</th>
 <th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
@@ -483,7 +491,7 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Workbook</th>
 </tr>
 </thead>
 <tbody>
@@ -496,7 +504,7 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Content Item</th>
+<th style="text-align: left;">Workbook</th>
 </tr>
 </thead>
 <tbody>
@@ -508,8 +516,8 @@
 </tr>
 </tbody>
 </table>
-<h2>Parsers Using This Table (1)</h2>
-<h3>ASIM Parsers (1)</h3>
+<h2 id="parsers-using-this-table">Parsers Using This Table (1)</h2>
+<h3 id="asim-parsers">ASIM Parsers (1)</h3>
 <table>
 <thead>
 <tr>
@@ -528,7 +536,7 @@
 </tr>
 </tbody>
 </table>
-<h2>Selection Criteria Summary (4 criteria, 6 total references)</h2>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (4 criteria, 6 total references)</h2>
 <p>References by type: 0 connectors, 6 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
@@ -584,7 +592,7 @@
 </tr>
 </tbody>
 </table>
-<h3>ActionType</h3>
+<h3 id="actiontype">ActionType</h3>
 <table>
 <thead>
 <tr>

@@ -17,6 +17,13 @@ Certificate information of signed files obtained from certificate verification e
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicefilecertificateinfo) |
 | **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-DeviceFileCertificateInfo-table) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (24 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicefilecertificateinfo)
@@ -70,7 +77,7 @@ This table is ingested by the following connectors:
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Remote Management and Monitoring tool - AeroAdmin - File Signature](../content/github-only-remote-management-and-monitoring-tool-aeroadmin-file-signature-fd1b5c85-1e18-49c1-a21f-ba9484866f27-834da9b7.md) |  |
 | [Remote Management and Monitoring tool - Ammyy - File Signature](../content/github-only-remote-management-and-monitoring-tool-ammyy-file-signature-7c20af02-4bce-4d6d-b609-3ddf5ca4fb59-c03424a5.md) |  |
@@ -131,13 +138,13 @@ This table is ingested by the following connectors:
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md) |  |
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |

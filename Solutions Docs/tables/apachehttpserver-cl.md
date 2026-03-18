@@ -12,6 +12,14 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (8 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ApacheHTTPServer_CL.json)
@@ -51,7 +59,7 @@ This table is ingested by the following connectors:
 
 **In solution [ApacheHTTPServer](../solutions/apachehttpserver.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Apache - Apache 2.4.49 flaw CVE-2021-41773](../content/apachehttpserver-apache-apache-2.4.49-flaw-cve-2021-41773-767f9dc4-3b01-11ec-8d3d-0242ac130003-0ca20cc4.md) |  |
 | [Apache - Command in URI](../content/apachehttpserver-apache-command-in-uri-54da6a42-3b00-11ec-8d3d-0242ac130003-e8de0502.md) |  |
@@ -68,7 +76,7 @@ This table is ingested by the following connectors:
 
 **In solution [ApacheHTTPServer](../solutions/apachehttpserver.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Apache - Rare URLs requested](../content/apachehttpserver-apache-rare-urls-requested-4c1a164e-3ae9-11ec-8d3d-0242ac130003-e7e235de.md) |  |
 | [Apache - Rare files requested](../content/apachehttpserver-apache-rare-files-requested-ae48a600-3ae9-11ec-8d3d-0242ac130003-154f06bb.md) |  |
@@ -85,7 +93,7 @@ This table is ingested by the following connectors:
 
 **In solution [ApacheHTTPServer](../solutions/apachehttpserver.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ApacheHTTPServer](../content/apachehttpserver-apachehttpserver-112ebf76.md) |  |
 

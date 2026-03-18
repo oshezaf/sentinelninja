@@ -11,6 +11,13 @@
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (65 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Netclean_Incidents_CL.json)
@@ -105,7 +112,7 @@ This table is ingested by the following connectors:
 
 **In solution [NetClean ProActive](../solutions/netclean-proactive.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [NetClean ProActive Incidents](../content/netclean-proactive-netclean-proactive-incidents-77548170-5c60-42e5-bdac-b0360d0779bb-1b0b1d6f.md) |  |
 
@@ -113,7 +120,7 @@ This table is ingested by the following connectors:
 
 **In solution [NetClean ProActive](../solutions/netclean-proactive.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [NetCleanProActiveWorkbook](../content/netclean-proactive-netcleanproactiveworkbook-47938b1a.md) |  |
 

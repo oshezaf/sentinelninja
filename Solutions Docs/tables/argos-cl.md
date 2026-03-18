@@ -13,6 +13,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (25 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ARGOS_CL.json)
@@ -67,7 +74,7 @@ This table is ingested by the following connectors:
 
 **In solution [ARGOSCloudSecurity](../solutions/argoscloudsecurity.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [ARGOS Cloud Security - Exploitable Cloud Resources](../content/argoscloudsecurity-argos-cloud-security-exploitable-cloud-resources-a9bf1b8c-c761-4840-b9a8-7535ca68ca28-4146438c.md) |  |
 
@@ -75,7 +82,7 @@ This table is ingested by the following connectors:
 
 **In solution [ARGOSCloudSecurity](../solutions/argoscloudsecurity.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ARGOSCloudSecurityWorkbook](../content/argoscloudsecurity-argoscloudsecurityworkbook-313e9d94.md) |  |
 

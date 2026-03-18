@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>🚫 ⚠️ [Deprecated] WithSecure Elements via Connector</h1>
+<h1 id="deprecated-withsecure-elements-via-connector">🚫 ⚠️ [Deprecated] WithSecure Elements via Connector</h1>
 <blockquote>
 <p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
 <p>🚫 <strong>Deprecated:</strong> This connector has been deprecated and may be removed in future versions.</p>
@@ -58,7 +58,7 @@
 <p>By connecting WithSecure Elements via Connector to Microsoft Sentinel, security events can be received in Common Event Format (CEF) over syslog.</p>
 <p>It requires deploying "Elements Connector" either on-prem or in cloud.</p>
 <p>The Common Event Format (CEF) provides natively search &amp; correlation, alerting and threat intelligence enrichment for each data log.</p>
-<h2>Tables Ingested</h2>
+<h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -83,11 +83,11 @@
 <blockquote>
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
-<h2>Permissions</h2>
+<h2 id="permissions">Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): read and write permissions are required.
 - <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
-<h2>Setup Instructions</h2>
+<h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
@@ -150,14 +150,14 @@ Then go to EPP, then Profiles, then use For Connector from where you can see the
 <p><strong>4. Secure your machine</strong></p>
 <p>Make sure to configure the machine's security according to your organization's security policy</p>
 <p><a href="https://aka.ms/SecureCEF">Learn more &gt;</a></p>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WithSecureElementsViaConnector\Data Connectors\WithSecureElementsViaConnnector.md">WithSecureElementsViaConnector\Data Connectors\WithSecureElementsViaConnnector.md</a></em></p>
 </blockquote>
-<h1>Connect your WithSecure Elements Connector to Microsoft Sentinel</h1>
+<h1 id="connect-your-withsecure-elements-connector-to-microsoft-sentinel">Connect your WithSecure Elements Connector to Microsoft Sentinel</h1>
 <p>This article explains how to connect your WithSecure Elements Connector appliance to Microsoft Sentinel. The WithSecure Elements Connector data connector allows you to easily connect your WithSecure Elements logs with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation.</p>
 <p><strong>Note</strong>: Data will be stored in the geographic location of the workspace on which you are running Microsoft Sentinel.</p>
-<h2>Forward WithSecure Elements logs to the Syslog agent</h2>
+<h2 id="forward-withsecure-elements-logs-to-the-syslog-agent">Forward WithSecure Elements logs to the Syslog agent</h2>
 <p>Configure With Secure Elements Connector to forward Syslog messages in CEF format to your Log Analytics workspace via the Syslog agent.
 1. Select or create a Linux machine that Microsoft Sentinel will use as the proxy between your WithSecurity solution and Sentinel. The machine can be on-prem environment, Microsoft Azure or other cloud based. Linux needs to have <code>syslog-ng</code> and <code>python</code>/<code>python3</code> installed.
 2. Install the Microsoft Monitoring Agent on your Linux machine and configure the machine to listen on the necessary port and forward messages to your Microsoft Sentinel workspace. The CEF collector collects CEF messages on port 514 TCP. You must have elevated permissions (sudo) on your machine.
@@ -169,7 +169,7 @@ Then go to EPP, then Profiles, then use For Connector from where you can see the
 8. Go to EPP, then Profiles, then use For Connector from where you can see the connector profiles. Create a new profile (or edit an existing not read-only profile). In Event forwarding enable it. SIEM system address: <strong>127.0.0.1:514</strong>. Set format to <strong>Common Event Format</strong>. Protocol is <strong>TCP</strong>. Save profile and assign it to Elements Connector in Devices tab.
 9. To use the relevant schema in Log Analytics for the WithSecure Elements Connector, search for CommonSecurityLog.
 10. Continue with <a href="https://docs.microsoft.com/azure/sentinel/troubleshooting-cef-syslog?tabs=rsyslog#validate-cef-connectivity">validating your CEF connectivity</a>.</p>
-<h2>Next steps</h2>
+<h2 id="next-steps">Next steps</h2>
 <p>In this document, you learned how to connect WithSecurity Elements Connector to Microsoft Sentinel. To learn more about Microsoft Sentinel, see the following articles:
 - Learn how to <a href="https://docs.microsoft.com/azure/sentinel/get-visibility">get visibility into your data, and potential threats</a>.
 - Get started <a href="https://docs.microsoft.com/azure/sentinel/detect-threats-built-in">detecting threats with Microsoft Sentinel</a>.

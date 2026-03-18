@@ -13,6 +13,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (12 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/MimecastDLP_CL.json)
@@ -54,7 +61,7 @@ This table is ingested by the following connectors:
 
 **In solution [MimecastSEG](../solutions/mimecastseg.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Mimecast Data Leak Prevention - Hold](../content/mimecastseg-mimecast-data-leak-prevention-hold-3e12b7b1-75e5-497c-ba01-b6cb30b60d7f-ff090522.md) |  |
 | [Mimecast Data Leak Prevention - Notifications](../content/mimecastseg-mimecast-data-leak-prevention-notifications-1818aeaa-4cc8-426b-ba54-539de896d299-b39fc5bc.md) |  |

@@ -24,7 +24,7 @@ This table is used by the following solutions:
 
 **In solution [SalemCyber](../solutions/salemcyber.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [SalemDashboard](../content/salemcyber-salemdashboard-e693bdd8.md) |  |
 

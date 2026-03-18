@@ -17,6 +17,14 @@ Reference for GCPDNS table in Azure Monitor Logs.
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpdns) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (81 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpdns)
@@ -127,7 +135,7 @@ This table is ingested by the following connectors:
 
 **In solution [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Google DNS - CVE-2020-1350 (SIGRED) exploitation pattern](../content/googlecloudplatformdns-google-dns-cve-2020-1350-sigred-exploitation-pattern-1267d53d-f5fd-418b-b8da-34453a5994c2-54c24855.md) |  |
 | [Google DNS - CVE-2021-34527 (PrintNightmare) external exploit](../content/googlecloudplatformdns-google-dns-cve-2021-34527-printnightmare-external-exploit-e632e73a-06c4-47f6-8bed-b2498aa6e30f-67f817fe.md) |  |
@@ -145,7 +153,7 @@ This table is ingested by the following connectors:
 
 **In solution [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Google DNS - Domains with rare errors](../content/googlecloudplatformdns-google-dns-domains-with-rare-errors-9e3145ef-f6bf-4dd0-8783-a0847f68cb54-bd1078be.md) |  |
 | [Google DNS - Errors](../content/googlecloudplatformdns-google-dns-errors-74267de2-ff2e-415a-9e2a-5a99b471a1e2-c553919c.md) |  |
@@ -162,7 +170,7 @@ This table is ingested by the following connectors:
 
 **In solution [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [GCPDNS](../content/googlecloudplatformdns-gcpdns-15de76e5.md) |  |
 

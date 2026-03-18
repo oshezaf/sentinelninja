@@ -12,6 +12,14 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (495 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloudflare%5CData%20Connectors%5CCloudflareLog_CCF/CloudflareLog_Table.json)
@@ -537,7 +545,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cloudflare](../solutions/cloudflare.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Cloudflare - Bad client IP](../content/cloudflare-cloudflare-bad-client-ip-a7ce6135-9d55-4f14-b058-adc2e920a4fa-e8c60cea.md) |  |
 | [Cloudflare - Client request from country in blocklist](../content/cloudflare-cloudflare-client-request-from-country-in-blocklist-40554544-6e4a-4413-8d14-bf2de939c5d9-6c55ff65.md) |  |
@@ -552,7 +560,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cloudflare CCF](../solutions/cloudflare-ccf.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Cloudflare - Bad client IP](../content/cloudflare-ccf-cloudflare-bad-client-ip-a7ce6135-9d55-4f14-b058-adc2e920a4fb-c9cbdeda.md) |  |
 | [Cloudflare - Client request from country in blocklist](../content/cloudflare-ccf-cloudflare-client-request-from-country-in-blocklist-40554544-6e4a-4413-8d14-bf2de939c5d0-7513ce22.md) |  |
@@ -569,7 +577,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cloudflare](../solutions/cloudflare.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Cloudflare - Client TLS errors](../content/cloudflare-cloudflare-client-tls-errors-20ef3865-fd1f-44a4-ac8f-8d026cf954e0-9983cefc.md) |  |
 | [Cloudflare - Client errors](../content/cloudflare-cloudflare-client-errors-5d72f483-929a-498a-b840-dff7deed2116-1bde1650.md) |  |
@@ -584,7 +592,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cloudflare CCF](../solutions/cloudflare-ccf.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Cloudflare - Client TLS errors](../content/cloudflare-ccf-cloudflare-client-tls-errors-20ef3865-fd1f-44a4-ac8f-8d026cf954e2-abdbb160.md) |  |
 | [Cloudflare - Client errors](../content/cloudflare-ccf-cloudflare-client-errors-5d72f483-929a-498a-b840-dff7deed2117-b06fd403.md) |  |
@@ -601,7 +609,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cloudflare CCF](../solutions/cloudflare-ccf.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Cloudflare](../content/cloudflare-ccf-cloudflare-fc7a6590.md) |  |
 

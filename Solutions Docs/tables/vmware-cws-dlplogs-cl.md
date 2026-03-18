@@ -10,6 +10,13 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (20 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/VMware_CWS_DLPLogs_CL.json)
@@ -59,7 +66,7 @@ This table is ingested by the following connectors:
 
 **In solution [VMware SASE](../solutions/vmware-sase.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [VMware Cloud Web Security - Data Loss Prevention Violation](../content/vmware-sase-vmware-cloud-web-security-data-loss-prevention-violation-d811ef72-66b9-43a3-ba29-cd9e4bf75b74-2c6b5792.md) |  |
 

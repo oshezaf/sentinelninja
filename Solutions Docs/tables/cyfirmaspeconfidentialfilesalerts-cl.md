@@ -12,6 +12,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (29 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyfirmaSPEConfidentialFilesAlerts_CL.json)
@@ -70,7 +77,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cyfirma Digital Risk](../solutions/cyfirma-digital-risk.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [CYFIRMA - Social and Public Exposure - Confidential Files Information Exposure Rule](../content/cyfirma-digital-risk-cyfirma-social-and-public-exposure-confidential-files-information-exposure-rule-67e9c4aa-a2fa-4e4e-9272-1a8da41475c6-3f32254f.md) |  |
 | [CYFIRMA - Social and Public Exposure - Confidential Files Information Exposure Rule](../content/cyfirma-digital-risk-cyfirma-social-and-public-exposure-confidential-files-information-exposure-rule-a2984be5-8d69-4139-b98f-e89c9c421c27-d4335323.md) |  |

@@ -17,6 +17,13 @@ Reference for AWSSecurityHubFindings table in Azure Monitor Logs.
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awssecurityhubfindings) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (34 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awssecurityhubfindings)
@@ -80,7 +87,7 @@ This table is ingested by the following connectors:
 
 **In solution [AWS Security Hub](../solutions/aws-security-hub.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [AWS Security Hub - Detect CloudTrail trails lacking KMS encryption](../content/aws-security-hub-aws-security-hub-detect-cloudtrail-trails-lacking-kms-encryption-9c2f6c3b-7fd8-4c5a-9d9d-3c4f9e6a7b21-f0d5ec79.md) |  |
 | [AWS Security Hub - Detect EC2 Security groups allowing unrestricted high-risk ports](../content/aws-security-hub-aws-security-hub-detect-ec2-security-groups-allowing-unrestricted-high-risk-ports-d2b6fa0f-6a4c-4c48-8c64-5e2e1ac4e7b9-64a6560b.md) |  |
@@ -95,7 +102,7 @@ This table is ingested by the following connectors:
 
 **In solution [AWS Security Hub](../solutions/aws-security-hub.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [AWS Security Hub - CloudTrail trails without log file validation](../content/aws-security-hub-aws-security-hub-cloudtrail-trails-without-log-file-validation-e40c3c7d-0b6d-4f2d-90a4-4d9d77c2e3f5-632597f9.md) |  |
 | [AWS Security Hub - EC2 instances with public IPv4 address](../content/aws-security-hub-aws-security-hub-ec2-instances-with-public-ipv4-address-2b7f9e4e-6c3a-4c8f-9b1d-1a2f3e4c5d6b-a62da3c4.md) |  |

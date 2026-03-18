@@ -12,6 +12,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (18 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/FinanceOperationsActivity_CL.json)
@@ -59,7 +66,7 @@ This table is ingested by the following connectors:
 
 **In solution [Microsoft Business Applications](../solutions/microsoft-business-applications.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [F&O - Bank account change following network alias reassignment](../content/microsoft-business-applications-f&o-bank-account-change-following-network-alias-reassignment-dccbdb5b-2ce7-4931-bfbe-f1ad6523ee64-3345fbe4.md) |  |
 | [F&O - Mass update or deletion of user records](../content/microsoft-business-applications-f&o-mass-update-or-deletion-of-user-records-5ab00fbb-ba2c-44dc-b02e-f119639b9a11-e077e1c5.md) |  |

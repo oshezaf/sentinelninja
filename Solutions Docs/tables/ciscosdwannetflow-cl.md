@@ -13,6 +13,14 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (167 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CiscoSDWANNetflow_CL.json)
@@ -209,7 +217,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cisco SD-WAN](../solutions/cisco-sd-wan.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Cisco SDWAN - Maleware Events](../content/cisco-sd-wan-cisco-sdwan-maleware-events-cb14defd-3415-4420-a2e4-2dd0f3e07a86-22961fd0.md) |  |
 | [Cisco SDWAN - Monitor Critical IPs](../content/cisco-sd-wan-cisco-sdwan-monitor-critical-ips-a62a207e-62be-4a74-acab-4466d5b3854f-5ff0b015.md) |  |
@@ -218,7 +226,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cisco SD-WAN](../solutions/cisco-sd-wan.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [CiscoSDWAN](../content/cisco-sd-wan-ciscosdwan-1291f60c.md) |  |
 

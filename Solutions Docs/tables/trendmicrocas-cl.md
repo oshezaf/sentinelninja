@@ -11,6 +11,14 @@
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (30 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/TrendMicroCAS_CL.json)
@@ -70,7 +78,7 @@ This table is ingested by the following connectors:
 
 **In solution [Trend Micro Cloud App Security](../solutions/trend-micro-cloud-app-security.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Trend Micro CAS - DLP violation](../content/trend-micro-cloud-app-security-trend-micro-cas-dlp-violation-1ddeb8ad-cad9-4db4-b074-f9da003ca3ed-c2ad4a9b.md) |  |
 | [Trend Micro CAS - Infected user](../content/trend-micro-cloud-app-security-trend-micro-cas-infected-user-3649dfb8-a5ca-47dd-8965-cd2f633ca533-c328711b.md) |  |
@@ -87,7 +95,7 @@ This table is ingested by the following connectors:
 
 **In solution [Trend Micro Cloud App Security](../solutions/trend-micro-cloud-app-security.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Trend Micro CAS - DLP violations](../content/trend-micro-cloud-app-security-trend-micro-cas-dlp-violations-001be88a-e98f-4e9a-ad30-62b9ad8222a5-4cb75935.md) |  |
 | [Trend Micro CAS - Files received via email services](../content/trend-micro-cloud-app-security-trend-micro-cas-files-received-via-email-services-5b2dc14b-a55c-4002-8c2a-94f521baa0f4-954b84fb.md) |  |
@@ -104,7 +112,7 @@ This table is ingested by the following connectors:
 
 **In solution [Trend Micro Cloud App Security](../solutions/trend-micro-cloud-app-security.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [TrendMicroCAS](../content/trend-micro-cloud-app-security-trendmicrocas-43101d68.md) |  |
 

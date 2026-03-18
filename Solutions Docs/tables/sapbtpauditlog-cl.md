@@ -12,6 +12,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (11 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SAPBTPAuditLog_CL.json)
@@ -52,7 +59,7 @@ This table is ingested by the following connectors:
 
 **In solution [SAP BTP](../solutions/sap-btp.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [BTP - Audit log service unavailable](../content/sap-btp-btp-audit-log-service-unavailable-8a3b5c7d-9e1f-4a2b-8c6d-3e5f7a9b1c2d-9b6571ac.md) |  |
 | [BTP - Build Work Zone unauthorized access and role tampering](../content/sap-btp-btp-build-work-zone-unauthorized-access-and-role-tampering-8e5f3a2c-9d1b-4c6e-a7f8-3b2d1e0c9a5f-6a45f625.md) |  |
@@ -74,7 +81,7 @@ This table is ingested by the following connectors:
 
 **In solution [SAP BTP](../solutions/sap-btp.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [SAPBTPActivity](../content/sap-btp-sapbtpactivity-8f5b3a2b.md) |  |
 

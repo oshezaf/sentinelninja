@@ -37,7 +37,7 @@ Defender Vulnerability Management assessment events including configuration and 
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Microsoft Defender AV Engine up to date info](../content/github-only-microsoft-defender-av-engine-up-to-date-info-02be358b-8733-46b7-8e3d-624b1f918237-1f994ffa.md) |  |
 | [Microsoft Defender AV Platform up to date information](../content/github-only-microsoft-defender-av-platform-up-to-date-information-4eba78b0-8e8e-4e9a-9aff-160372bdd201-2b9d34cb.md) |  |

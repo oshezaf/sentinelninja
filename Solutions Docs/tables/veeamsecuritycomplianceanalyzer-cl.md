@@ -12,6 +12,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (14 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/VeeamSecurityComplianceAnalyzer_CL.json)
@@ -55,7 +62,7 @@ This table is ingested by the following connectors:
 
 **In solution [Veeam](../solutions/veeam.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Best Practice Compliance Check Not Passed](../content/veeam-best-practice-compliance-check-not-passed-f920ac64-dfd0-4dea-9b7c-acecf1ea2b28-bd3d7387.md) |  |
 
@@ -63,13 +70,13 @@ This table is ingested by the following connectors:
 
 **In solution [Veeam](../solutions/veeam.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [VeeamSecurityActivities](../content/veeam-veeamsecurityactivities-f559a349.md) |  |
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [VeeamSecurityActivites](../content/github-only-veeamsecurityactivites-4f8fb3e5.md) |  |
 | [VeeamSecurityActivities](../content/github-only-veeamsecurityactivities-c31c4544.md) |  |

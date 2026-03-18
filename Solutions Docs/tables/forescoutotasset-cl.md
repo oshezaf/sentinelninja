@@ -10,6 +10,13 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (56 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ForescoutOtAsset_CL.json)
@@ -95,7 +102,7 @@ This table is ingested by the following connectors:
 
 **In solution [Forescout eyeInspect for OT Security](../solutions/forescout-eyeinspect-for-ot-security.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [eyeInspectOTSecurityWorkbook](../content/forescout-eyeinspect-for-ot-security-eyeinspectotsecurityworkbook-bab522c8.md) |  |
 

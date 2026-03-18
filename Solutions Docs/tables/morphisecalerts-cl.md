@@ -10,6 +10,14 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (41 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Morphisec%5CData%20Connectors%5CMorphisec_CCF/Morphisec_Table.json)
@@ -80,7 +88,7 @@ This table is ingested by the following connectors:
 
 **In solution [Morphisec](../solutions/morphisec.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Critical Severity Incident](../content/morphisec-critical-severity-incident-4f1c9e6e-8b6b-4d2a-9f3e-123456789abc-ecbf5667.md) |  |
 | [Device Alert Surge](../content/morphisec-device-alert-surge-5c8e1f2e-9d6b-4f4a-8f3e-123456789abc-7d970dee.md) |  |

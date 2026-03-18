@@ -12,6 +12,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (30 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyfirmaSPESourceCodeAlerts_CL.json)
@@ -71,7 +78,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cyfirma Digital Risk](../solutions/cyfirma-digital-risk.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [CYFIRMA - Social and Public Exposure - Source Code Exposure on Public Repositories Rule](../content/cyfirma-digital-risk-cyfirma-social-and-public-exposure-source-code-exposure-on-public-repositories-rule-42e6f16a-7773-44cc-8668-8f648bd1aa4f-0dbc3dd5.md) |  |
 | [CYFIRMA - Social and Public Exposure - Source Code Exposure on Public Repositories Rule](../content/cyfirma-digital-risk-cyfirma-social-and-public-exposure-source-code-exposure-on-public-repositories-rule-28e315a3-725d-4261-a6c2-e597d51541f4-fb2ff371.md) |  |

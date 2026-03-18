@@ -10,6 +10,14 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (58 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/OktaV2_CL.json)
@@ -98,7 +106,7 @@ This table is ingested by the following connectors:
 
 **In solution [Okta Single Sign-On](../solutions/okta-single-sign-on.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Device Registration from Malicious IP](../content/okta-single-sign-on-device-registration-from-malicious-ip-e36c6bd6-f86a-4282-93a5-b4a1b48dd849-7384eb46.md) |  |
 | [Failed Logins from Unknown or Invalid User](../content/okta-single-sign-on-failed-logins-from-unknown-or-invalid-user-884be6e7-e568-418e-9c12-89229865ffde-0b05185e.md) |  |
@@ -113,7 +121,7 @@ This table is ingested by the following connectors:
 
 **In solution [Okta Single Sign-On](../solutions/okta-single-sign-on.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Admin privilege granted (Okta)](../content/okta-single-sign-on-admin-privilege-granted-okta-5309ea6b-463c-4449-a3c4-2fc8ee0080ee-23fe94ba.md) |  |
 | [Create API Token (Okta)](../content/okta-single-sign-on-create-api-token-okta-c5134bac-044d-447a-a260-d1d439653ae7-0e45b431.md) |  |
@@ -130,7 +138,7 @@ This table is ingested by the following connectors:
 
 **In solution [Okta Single Sign-On](../solutions/okta-single-sign-on.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [OktaSingleSignOn](../content/okta-single-sign-on-oktasinglesignon-21c9f54c.md) |  |
 

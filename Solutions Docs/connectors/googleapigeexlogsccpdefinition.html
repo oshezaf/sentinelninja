@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Google ApigeeX (via Codeless Connector Framework)</h1>
+<h1 id="google-apigeex">Google ApigeeX (via Codeless Connector Framework)</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Google%20Apigee/logo/Google-Cloud-Branding.png" alt="" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
@@ -59,7 +59,7 @@
 </tbody>
 </table>
 <p>The Google ApigeeX data connector provides the capability to ingest Audit logs into Microsoft Sentinel using the Google Apigee API. Refer to <a href="https://cloud.google.com/apigee/docs/reference/apis/apigee/rest/?apix=true">Google Apigee API</a> documentation for more information.</p>
-<h2>Tables Ingested</h2>
+<h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -79,22 +79,22 @@
 </tr>
 </tbody>
 </table>
-<h2>Permissions</h2>
+<h2 id="permissions">Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): Read and Write permissions are required.</p>
-<h2>Setup Instructions</h2>
+<h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
 <p><strong>1. Connect Google ApigeeX to Microsoft Sentinel</strong></p>
-<h4>1. Setup the GCP environment</h4>
+<h4 id="1-setup-the-gcp-environment">1. Setup the GCP environment</h4>
 <p>Ensure to have the following resources from the GCP Console:
  Project ID, Project Name, GCP Subscription name for the project, Workload Identity Pool ID, Workspace Identity Provider ID, and a Service Account to establish the connection.
  For more information, refer the <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Apigee/Data%20Connectors/ApigeeXReadme.md">Connector tutorial</a> for log setup and authentication setup tutorial.
  Log set up script: <a href="https://github.com/Azure/Azure-Sentinel/tree/master/DataConnectors/GCP/Terraform/sentinel_resources_creation/GCPApigeeLogSetup">Click Here</a>
 Authentication set up script: <a href="https://github.com/Azure/Azure-Sentinel/tree/master/DataConnectors/GCP/Terraform/sentinel_resources_creation/GCPInitialAuthenticationSetup">Click here</a></p>
 <p><strong>Government Cloud:</strong></p>
-<h4>1. Setup the GCP environment</h4>
+<h4 id="1-setup-the-gcp-environment">1. Setup the GCP environment</h4>
 <p>Ensure to have the following resources from the GCP Console:
  Project ID, Project Name, GCP Subscription name for the project, Workload Identity Pool ID, Workspace Identity Provider ID, and a Service Account to establish the connection.
  For more information, refer the <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Apigee/Data%20Connectors/ApigeeXReadme.md">Connector tutorial</a> for log setup and authentication setup tutorial.
@@ -104,9 +104,9 @@ Authentication set up script: <a href="https://github.com/Azure/Azure-Sentinel/t
 <blockquote>
 <p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
 </blockquote>
-<h4>2. Enable ApigeeX logs</h4>
+<h4 id="2-enable-apigeex-logs">2. Enable ApigeeX logs</h4>
 <p>In the Google Cloud Console, enable Apigee API, if not enabled previously, and save the changes.</p>
-<h4>3. Connect new collectors</h4>
+<h4 id="3-connect-new-collectors">3. Connect new collectors</h4>
 <p>To enable ApigeeX Logs for Microsoft Sentinel, click on Add new collector button, provide the required information in the pop up and click on Connect.
 <strong>GCP Collector Management</strong></p>
 <p>📊 <strong>View GCP Collectors</strong>: A management interface displays your configured Google Cloud Platform data collectors.</p>

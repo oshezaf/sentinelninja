@@ -10,6 +10,13 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (7 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/VMware_VECO_EventLogs_CL.json)
@@ -46,7 +53,7 @@ This table is ingested by the following connectors:
 
 **In solution [VMware SASE](../solutions/vmware-sase.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [VMware Cloud Web Security - Policy Change Detected](../content/vmware-sase-vmware-cloud-web-security-policy-change-detected-3efebd49-c985-431b-9da8-d7d397092d18-1ae30e0f.md) |  |
 | [VMware Cloud Web Security - Policy Publish Event](../content/vmware-sase-vmware-cloud-web-security-policy-publish-event-b26a7d97-6b6e-43ab-870e-eb18460ae602-67b089d5.md) |  |
@@ -61,7 +68,7 @@ This table is ingested by the following connectors:
 
 **In solution [VMware SASE](../solutions/vmware-sase.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [VMwareSASESOCDashboard](../content/vmware-sase-vmwaresasesocdashboard-36b12705.md) |  |
 

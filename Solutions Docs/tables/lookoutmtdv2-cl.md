@@ -12,6 +12,14 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (31 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/LookoutMtdV2_CL.json)
@@ -72,7 +80,7 @@ This table is ingested by the following connectors:
 
 **In solution [Lookout](../solutions/lookout.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Lookout - Critical Audit and Policy Changes (v2)](../content/lookout-lookout-critical-audit-and-policy-changes-v2-6b2d4e8a-5f7c-4b9e-8a1d-3c5e7a9b2f4d-c2a4c32f.md) |  |
 | [Lookout - Critical Smishing and Phishing Alerts (v2)](../content/lookout-lookout-critical-smishing-and-phishing-alerts-v2-7a3e5f9b-4c8d-4a2e-9f1b-6d8e2a4c7f9e-766d3a1e.md) |  |
@@ -83,7 +91,7 @@ This table is ingested by the following connectors:
 
 **In solution [Lookout](../solutions/lookout.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Lookout Advanced Threat Hunting - Multi-Vector Attacks](../content/lookout-lookout-advanced-threat-hunting-multi-vector-attacks-lookout-advanced-threat-hunting-4973d03a.md) |  |
 
@@ -91,7 +99,7 @@ This table is ingested by the following connectors:
 
 **In solution [Lookout](../solutions/lookout.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [LookoutEvents](../content/lookout-lookoutevents-591b9350.md) |  |
 | [LookoutEventsV2](../content/lookout-lookouteventsv2-865167af.md) |  |

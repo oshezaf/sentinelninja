@@ -13,6 +13,14 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (82 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CiscoDuo_CL.json)
@@ -124,7 +132,7 @@ This table is ingested by the following connectors:
 
 **In solution [CiscoDuoSecurity](../solutions/ciscoduosecurity.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Cisco Duo - AD sync failed](../content/ciscoduosecurity-cisco-duo-ad-sync-failed-398dd1cd-3251-49d8-b927-5b93bae4a094-3833d11f.md) |  |
 | [Cisco Duo - Admin password reset](../content/ciscoduosecurity-cisco-duo-admin-password-reset-413e49a5-b107-4698-8428-46b89308bd22-f14125a1.md) |  |
@@ -141,7 +149,7 @@ This table is ingested by the following connectors:
 
 **In solution [CiscoDuoSecurity](../solutions/ciscoduosecurity.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Cisco Duo - Admin failure authentications](../content/ciscoduosecurity-cisco-duo-admin-failure-authentications-421bbeed-ad5b-4acd-9f0b-6b609da33914-7964a3f0.md) |  |
 | [Cisco Duo - Admin failure authentications](../content/ciscoduosecurity-cisco-duo-admin-failure-authentications-385b0938-3922-48ab-a57a-cb8650ab71a3-c63cf47e.md) |  |
@@ -158,7 +166,7 @@ This table is ingested by the following connectors:
 
 **In solution [CiscoDuoSecurity](../solutions/ciscoduosecurity.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [CiscoDuo](../content/ciscoduosecurity-ciscoduo-c9e00bc9.md) |  |
 

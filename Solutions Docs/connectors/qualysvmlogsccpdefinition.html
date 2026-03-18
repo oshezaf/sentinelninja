@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Qualys Vulnerability Management (via Codeless Connector Framework)</h1>
+<h1 id="qualys-vulnerability-management">Qualys Vulnerability Management (via Codeless Connector Framework)</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/qualys_logo.svg" alt="" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
@@ -59,7 +59,7 @@
 </tbody>
 </table>
 <p>The <a href="https://www.qualys.com/apps/vulnerability-management/">Qualys Vulnerability Management (VM)</a> data connector provides the capability to ingest vulnerability host detection data into Microsoft Sentinel through the Qualys API. The connector provides visibility into host detection data from vulerability scans.</p>
-<h2>Tables Ingested</h2>
+<h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -82,12 +82,12 @@
 <blockquote>
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
-<h2>Permissions</h2>
+<h2 id="permissions">Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): Read and Write permissions are required.</p>
 <p><strong>Custom Permissions:</strong>
 - <strong>API access and roles</strong>: Ensure the Qualys VM user has a role of Reader or higher. If the role is Reader, ensure that API access is enabled for the account. Auditor role is not supported to access the API. For more details, refer to the Qualys VM <a href="https://docs.qualys.com/en/vm/qweb-all-api/mergedProjects/qapi-assets/host_lists/host_detection.htm#v_3_0">Host Detection API</a> and <a href="https://qualysguard.qualys.com/qwebhelp/fo_portal/user_accounts/user_roles_comparison_vm.htm">User role Comparison</a> document.</p>
-<h2>Setup Instructions</h2>
+<h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
@@ -96,14 +96,14 @@
 <p><strong>NOTE:</strong> To gather data for Detections based on Host, expand the <strong>DetectionList</strong> column in the table.
 To gather data from Qualys VM, you need to provide the following resources</p>
 </blockquote>
-<h4>1. API Credentials</h4>
+<h4 id="1-api-credentials">1. API Credentials</h4>
 <p>To gather data from Qualys VM, you'll need Qualys API credentials, including your Username and Password.</p>
-<h4>2. API Server URL</h4>
+<h4 id="2-api-server-url">2. API Server URL</h4>
 <p>To gather data from Qualys VM, you'll need the Qualys API server URL specific to your region. You can find the exact API server URL for your region <a href="https://www.qualys.com/platform-identification/#api-urls">here</a>
 - <strong>Qualys API User Name</strong>: Enter UserName
 - <strong>Qualys API Password</strong>: (password field)
 - <strong>Qualys API Server URL</strong>: Enter API Server URL</p>
-<h4>3. Truncation Limit</h4>
+<h4 id="3-truncation-limit">3. Truncation Limit</h4>
 <p>Configure the maximum number of host records to retrieve per API call (20-5000 range). Higher values may improve performance but could impact API response times.
 - <strong>Truncation Limit</strong> (select)
   - 1000 - API default value

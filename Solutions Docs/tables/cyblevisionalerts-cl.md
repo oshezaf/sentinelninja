@@ -12,6 +12,14 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (72 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyble%20Vision%5CData%20Connectors%5CCybleVisionAlerts_CCF/CybleVision_Table.json)
@@ -113,7 +121,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cyble Vision](../solutions/cyble-vision.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Cyble Advisory Alerts Advisory](../content/cyble-vision-cyble-advisory-alerts-advisory-1932dcfd-a32e-49f9-a212-5bcd084fbd78-26eb1bc8.md) |  |
 | [Cyble Vision Alerts Assets](../content/cyble-vision-cyble-vision-alerts-assets-0012714c-c595-4dcd-8949-4a5c1d49aaa8-26bf60ce.md) |  |
@@ -164,7 +172,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cyble Vision](../solutions/cyble-vision.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [CybleVisionAlertsWorkbook](../content/cyble-vision-cyblevisionalertsworkbook-ccdef358.md) |  |
 

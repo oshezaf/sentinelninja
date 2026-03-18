@@ -27,7 +27,7 @@ This table is used by the following solutions:
 
 **In solution [Network Session Essentials](../solutions/network-session-essentials.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [NetworkSessionEssentials](../content/network-session-essentials-networksessionessentials-5de17c97.md) |  |
 

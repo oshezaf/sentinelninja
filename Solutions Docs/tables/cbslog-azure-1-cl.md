@@ -13,6 +13,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (13 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CBSLog_Azure_1_CL.json)
@@ -55,7 +62,7 @@ This table is ingested by the following connectors:
 
 **In solution [CTM360](../solutions/ctm360.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Apt (High)](../content/ctm360-apt-high-c115ce23-7b8d-4bc0-9aed-e4e510bcd446-e46e89b4.md) |  |
 | [Apt (Informational)](../content/ctm360-apt-informational-b3f52fba-35e0-4462-a2e3-483e9f5f06aa-28837f22.md) |  |

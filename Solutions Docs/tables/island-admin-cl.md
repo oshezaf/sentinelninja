@@ -12,6 +12,12 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Solutions (1)
 
 This table is used by the following solutions:
@@ -34,7 +40,7 @@ This table is ingested by the following connectors:
 
 **In solution [Island](../solutions/island.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [IslandAdminAuditOverview](../content/island-islandadminauditoverview-f64c0889.md) |  |
 

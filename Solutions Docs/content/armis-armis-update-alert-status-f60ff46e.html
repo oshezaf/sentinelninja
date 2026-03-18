@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Armis Update Alert Status</h1>
+<h1 id="armis-update-alert-status">Armis Update Alert Status</h1>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
@@ -42,20 +42,20 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Armis/Playbooks/ArmisUpdateAlertStatus/readme.md">ArmisUpdateAlertStatus/readme.md</a></em></p>
 </blockquote>
-<h1>ArmisUpdateAlertStatus</h1>
-<h2>Summary</h2>
+<h1 id="armisupdatealertstatus">ArmisUpdateAlertStatus</h1>
+<h2 id="summary">Summary</h2>
 <p>This playbook can be used to update the status of an Armis alert from the Microsoft Sentinel platform.</p>
-<h3>Prerequisites</h3>
+<h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>Store Armis API secret key in Key Vault and obtain keyvault name and tenantId.
     a. Create a Key Vault with unique name
     b. Go to KeyVault -&gt; secrets -&gt; Generate/import and create 'ArmisAPISecretKey' for storing Armis API Secret Key</li>
 </ol>
-<h3>Deployment instructions</h3>
+<h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
 <li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
 <li>Fill in the required paramteres:<ul>
@@ -67,8 +67,8 @@
 </li>
 </ol>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FArmis%2FPlaybooks%2FArmisUpdateAlertStatus%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FArmis%2FPlaybooks%2FArmisUpdateAlertStatus%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
-<h3>Post-deployment instructions</h3>
-<h4>a. Authorize connections</h4>
+<h3 id="post-deployment-instructions">Post-deployment instructions</h3>
+<h4 id="a-authorize-connections">a. Authorize connections</h4>
 <p>Once deployment is complete, authorize each connection like Microsoft Sentinel, Key vault.</p>
 <ol>
 <li>Click the Microsoft Sentinel connection resource</li>
@@ -78,12 +78,12 @@
 <li>Click Save</li>
 <li>Repeat steps for other connections</li>
 </ol>
-<h4>b. Configurations in Microsoft Sentinel</h4>
+<h4 id="b-configurations-in-microsoft-sentinel">b. Configurations in Microsoft Sentinel</h4>
 <ol>
 <li>In Microsoft Sentinel, analytics rules should be configured to trigger an incident. An incident should have the <em>alertID</em> - custom entity that contains alertId of each generated Armis alert and <em>alertStatus</em> - custom entity that contains alertStatus of each generated Armis alerts. It can be obtained from the corresponding field in Armis Alerts custom logs. Check the <a href="https://docs.microsoft.com/azure/sentinel/surface-custom-details-in-alerts">documentation</a> to learn more about adding custom entities to incidents.</li>
 <li>Configure the automation rules to trigger the playbook.</li>
 </ol>
-<h4>Sample analytics rule query</h4>
+<h4 id="sample-analytics-rule-query">Sample analytics rule query</h4>
 <p>```
 <Armis Alerts Table Name> | where Type == "<Type field of the custom log table>" and status_s == "<Armis Alert Status>" and severity_s != "Low"</p>
 <hr />

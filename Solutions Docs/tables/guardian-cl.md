@@ -11,6 +11,13 @@
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (22 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Guardian_CL.json)
@@ -54,7 +61,7 @@ This table is used by the following solutions:
 
 **In solution [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Guardian- Additional check JSON Policy Violation Detection](../content/aishield-ai-security-monitoring-guardian-additional-check-json-policy-violation-detection-9ff28525-3c6f-47ba-806b-ffd913406989-011e6a7c.md) |  |
 | [Guardian- BII Detection Policy Violation Detection](../content/aishield-ai-security-monitoring-guardian-bii-detection-policy-violation-detection-e7493b80-88d0-44fb-b11d-40a0467cc497-e3e2a3d5.md) |  |

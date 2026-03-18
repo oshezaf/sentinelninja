@@ -12,6 +12,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (31 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyfirmaASDomainIPReputationAlerts_CL.json)
@@ -72,7 +79,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cyfirma Attack Surface](../solutions/cyfirma-attack-surface.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [CYFIRMA - Attack Surface - Malicious Domain/IP Reputation High Rule](../content/cyfirma-attack-surface-cyfirma-attack-surface-malicious-domain-ip-reputation-high-rule-7ff6f6d7-9672-4567-99fc-cb8a58c3bce7-a9312300.md) |  |
 | [CYFIRMA - Attack Surface - Malicious Domain/IP Reputation Medium Rule](../content/cyfirma-attack-surface-cyfirma-attack-surface-malicious-domain-ip-reputation-medium-rule-70f137e4-e4ef-4635-92de-10c4f5b0fcd0-b9bb747e.md) |  |

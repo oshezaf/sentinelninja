@@ -12,6 +12,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (34 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyfirmaBIExecutivePeopleAlerts_CL.json)
@@ -75,7 +82,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cyfirma Brand Intelligence](../solutions/cyfirma-brand-intelligence.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [CYFIRMA - Brand Intelligence - Executive/People Impersonation High Rule](../content/cyfirma-brand-intelligence-cyfirma-brand-intelligence-executive-people-impersonation-high-rule-159d26a1-591c-4f70-b1ca-2843c881aaec-4e4601d7.md) |  |
 | [CYFIRMA - Brand Intelligence - Executive/People Impersonation Medium Rule](../content/cyfirma-brand-intelligence-cyfirma-brand-intelligence-executive-people-impersonation-medium-rule-59aa22f2-5b4f-4679-b289-003228255413-3f52696f.md) |  |

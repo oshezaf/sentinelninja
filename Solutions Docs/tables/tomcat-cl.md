@@ -12,6 +12,14 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (6 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Tomcat_CL.json)
@@ -50,7 +58,7 @@ This table is ingested by the following connectors:
 
 **In solution [Tomcat](../solutions/tomcat.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Tomcat - Commands in URI](../content/tomcat-tomcat-commands-in-uri-91f59cea-486f-11ec-81d3-0242ac130003-51da8e60.md) |  |
 | [Tomcat - Known malicious user agent](../content/tomcat-tomcat-known-malicious-user-agent-5e77a818-5825-4ff6-a901-80891c4774d1-d27417cd.md) |  |
@@ -67,7 +75,7 @@ This table is ingested by the following connectors:
 
 **In solution [Tomcat](../solutions/tomcat.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Tomcat - Abnormal request size](../content/tomcat-tomcat-abnormal-request-size-d5e1eb24-487a-11ec-81d3-0242ac130003-b206dce0.md) |  |
 | [Tomcat - Catalina errors](../content/tomcat-tomcat-catalina-errors-7be944be-487f-11ec-81d3-0242ac130003-ea5fabf7.md) |  |
@@ -85,13 +93,13 @@ This table is ingested by the following connectors:
 
 **In solution [OracleWebLogicServer](../solutions/oracleweblogicserver.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [OracleWorkbook](../content/oracleweblogicserver-oracleworkbook-2039f357.md) |  |
 
 **In solution [Tomcat](../solutions/tomcat.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Tomcat](../content/tomcat-tomcat-588ba946.md) |  |
 

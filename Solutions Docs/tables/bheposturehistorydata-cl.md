@@ -24,7 +24,7 @@ This table is used by the following solutions:
 
 **In solution [BloodHound Enterprise](../solutions/bloodhound-enterprise.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [BloodHoundPostureHistory](../content/bloodhound-enterprise-bloodhoundposturehistory-38b0f901.md) |  |
 

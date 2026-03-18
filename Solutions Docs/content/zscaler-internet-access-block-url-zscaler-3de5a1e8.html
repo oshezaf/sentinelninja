@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Block URL - Zscaler</h1>
+<h1 id="block-url---zscaler">Block URL - Zscaler</h1>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
@@ -42,13 +42,13 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Playbooks/Add-Url-To-Category/readme.md">Add-Url-To-Category/readme.md</a></em></p>
 </blockquote>
-<h1>Zscaler - Add URL to category</h1>
+<h1 id="zscaler---add-url-to-category">Zscaler - Add URL to category</h1>
 <p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Playbooks/Add-Url-To-Category/../Add-Url-To-Category/images/Sentinel_Add_URL_To_Category.png" width="200"><br></p>
-<h2>Table of Contents</h2>
+<h2 id="table-of-contents">Table of Contents</h2>
 <ol>
 <li><a href="#overview">Summary</a></li>
 <li><a href="prerequisites">Prerequisites</a></li>
@@ -58,19 +58,19 @@
 <li><a href="#references">References</a></li>
 </ol>
 <p><a name="summary"></a></p>
-<h2>Summary</h2>
+<h2 id="summary">Summary</h2>
 <p>This folder contains 1 playbook: 
 * Add IP to category: Add one or more URLs to an existing Zscaler category</p>
 <p><img alt="Playbook" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Playbooks/Add-Url-To-Category/../Add-Url-To-Category/images/designerLight.png" /></p>
 <p>The playbook is used to respond to an incident in Azure Sentinel and uses the Zscaler API. The playbook leverages the <a href="../authentication/readme.html">authentication playbook</a>.  The results of the scan are shown in the related Azure Sentinel Incident:</p>
 <p><img alt="Sentinel" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Playbooks/Add-Url-To-Category/../Add-Url-To-Category/images/designerDark.png" /></p>
 <p><a name="Prerequisites"></a></p>
-<h2>Prerequisites</h2>
+<h2 id="prerequisites">Prerequisites</h2>
 <ol>
 <li>Playbook templates leverage the Zscaler API. To use the Zscaler capabilities, you need a Zscaler API key. Refer this link: <a href="https://help.zscaler.com/zia/api-getting-started">API Developers Guide: Getting Started</a></li>
 </ol>
 <p><a name="deployment"></a></p>
-<h2>Deployment instructions</h2>
+<h2 id="deployment-instructions">Deployment instructions</h2>
 <p>You can choose to deploy one ore more playbooks.</p>
 <ol>
 <li>Deploy a playbook by clicking on "Deploy to Azure" button. This will take you to deplyoing an ARM Template wizard.</li>
@@ -87,7 +87,7 @@
 </ul>
 </li>
 </ol>
-<h3>Deploy Add URL to category playbook</h3>
+<h3 id="deploy-add-url-to-category-playbook">Deploy Add URL to category playbook</h3>
 <p>Deploy both the Authentication playbook as well as the Add URL to category playbook:</p>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FPlaybooks%2FZscaler%2FAdd-Url-To-Category%2Fdeployboth.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
 <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FPlaybooks%2FZscaler%2FAdd-Url-To-Category%2Fdeployboth.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a>
@@ -97,26 +97,26 @@
 <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FPlaybooks%2FZscaler%2FAdd-Url-To-Category%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
 <p>Please note: The <a href="../authentication/">authentication playbook</a> is a mandatory prerequisite for this playbook and must be deployed first within the same resource group. The name of the authentication playbook is used as a parameter for the playbook.</p>
 <p><a name="postdeployment"></a></p>
-<h2>Post-Deployment instructions</h2>
-<h3>a. Authorize connections</h3>
+<h2 id="post-deployment-instructions">Post-Deployment instructions</h2>
+<h3 id="a-authorize-connections">a. Authorize connections</h3>
 <p>Once the deployment is completed, you will need to authorize each connection. There are connection for Azure KeyVault and Azure Sentinel. For each connection complete the following steps:
  1. Click edit API connection
  1. Fill in the necessary information
  1. Click Authorize
  1. Sign in
  1. Click Save</p>
-<h3>b. Configurations in Azure Sentinel</h3>
+<h3 id="b-configurations-in-azure-sentinel">b. Configurations in Azure Sentinel</h3>
 <p>For Azure Sentinel some additional configuration is needed:
 1. Enable Azure Sentinel Analytics rules that create alerts and incidents which includes the relevant entities.
 1. Configure automation rule(s) to trigger the playbooks.</p>
-<h3>c. Optional: Change Zscaler Block Category</h3>
+<h3 id="c-optional-change-zscaler-block-category">c. Optional: Change Zscaler Block Category</h3>
 <p>The default Zscaler block category is configured during the deployment. It can be changed in the playbook using the following steps:
 1. Edit the playbook
 1. Edit the 'Set Zscaler Category' action
 1. Update the value to an existing Zscaler block category
 1. Save the playbook</p>
 <p><a name="references"></a></p>
-<h2>Learn more</h2>
+<h2 id="learn-more">Learn more</h2>
 <ul>
 <li><a href="https://help.zscaler.com/zia/api" target="_blank">Zscaler API</a></li>
 </ul>

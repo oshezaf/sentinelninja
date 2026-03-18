@@ -17,6 +17,13 @@ Events involving an on-premises domain controller running Active Directory (AD).
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identitydirectoryevents) |
 | **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identitydirectoryevents-table) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (28 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identitydirectoryevents)
@@ -76,13 +83,13 @@ This table is ingested by the following connectors:
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType == "SAM Account Name changed"`
 
-| Content Item |
+| Hunting Query |
 |:-------------|
 | [SAM Name Change CVE-2021-42278](../content/microsoft-defender-xdr-sam-name-change-cve-2021-42278-1299962c-804e-459a-8d3d-41d68bc45ba2-fdacc34d.md) |
 
 **Standalone Content:**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Active Directory Account lockout and unlocks](../content/standalone-content-active-directory-account-lockout-and-unlocks-9f384f37-ff17-446d-b49a-40c6fb98b1ba-0da18d82.md) | `ActionType == "Account Unlock changed"` |
 | [Find_deleted_accounts_and_by_whom](../content/standalone-content-find-deleted-accounts-and-by-whom-e5b0ee9b-7fa4-4641-8363-bd2d72f1bf5b-af461c5b.md) | `ActionType == "Account deleted"` |
@@ -91,7 +98,7 @@ This table is ingested by the following connectors:
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Active Directory Sensitive Group Modifications](../content/github-only-active-directory-sensitive-group-modifications-20774145-ef68-42ab-9f3f-19fecbcdbac9-aff95e29.md) | `ActionType == "Group Membership changed"` |
 | [SAM-Name-Changes-CVE-2021-42278](../content/github-only-sam-name-changes-cve-2021-42278-89ce68d5-dd48-4f3f-b102-336fc4ebdda9-e19aa6ce.md) | `ActionType == "SAM Account Name changed"` |
@@ -100,19 +107,19 @@ This table is ingested by the following connectors:
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [MicrosoftDefenderForIdentity](../content/microsoft-defender-xdr-microsoftdefenderforidentity-19dcc30d.md) |  |
 
 **In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):** `ActionType in "DirectoryRoleMembershipChanged,GroupMembershipChanged,PrivilegeEscalation,SensitiveAccountChanged,UserAccountControlChanged"`
 
-| Content Item |
+| Workbook |
 |:-------------|
 | [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md) |
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |

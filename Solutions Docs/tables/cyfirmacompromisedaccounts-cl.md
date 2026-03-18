@@ -12,6 +12,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (25 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyfirmaCompromisedAccounts_CL.json)
@@ -66,7 +73,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cyfirma Compromised Accounts](../solutions/cyfirma-compromised-accounts.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [CYFIRMA - Compromised Employees Detection Rule](../content/cyfirma-compromised-accounts-cyfirma-compromised-employees-detection-rule-72d3fb86-d1eb-44d6-9352-170c6bb45bb7-01f20155.md) |  |
 | [CYFIRMA - Customer Accounts Leaks Detection Rule](../content/cyfirma-compromised-accounts-cyfirma-customer-accounts-leaks-detection-rule-ebd1bf8d-aa18-4e66-9cad-555b71a290f1-ccb739cc.md) |  |

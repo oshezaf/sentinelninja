@@ -27,7 +27,7 @@ This table is used by the following solutions:
 
 **In solution [ReversingLabs](../solutions/reversinglabs.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ReversingLabs-CapabilitiesOverview](../content/reversinglabs-reversinglabs-capabilitiesoverview-cf6695da.md) |  |
 

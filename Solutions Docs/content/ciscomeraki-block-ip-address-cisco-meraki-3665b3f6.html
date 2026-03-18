@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Block IP Address - Cisco Meraki</h1>
+<h1 id="block-ip-address---cisco-meraki">Block IP Address - Cisco Meraki</h1>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
@@ -42,13 +42,13 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/Block-IP-Address/readme.md">Block-IP-Address/readme.md</a></em></p>
 </blockquote>
-<h1>Cisco Meraki Block IP Address Playbook</h1>
+<h1 id="cisco-meraki-block-ip-address-playbook">Cisco Meraki Block IP Address Playbook</h1>
 <p><img alt="meraki" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/Block-IP-Address/../../Connector/MerakiConnector/logo.jpg" /></p>
-<h2>Summary</h2>
+<h2 id="summary">Summary</h2>
 <p>When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the below actions:
  1. Fetches a list of potentially malicious IP addresses.
  2. For each IP address in the list, checks if the IP address is blocked by L3 firewall rule or L7 firewall rule of MX network.
@@ -98,8 +98,8 @@
 </tr>
 </tbody>
 </table>
-<h1>Post-Deployment Instructions</h1>
-<h2>a. Authorize API connection</h2>
+<h1 id="post-deployment-instructions">Post-Deployment Instructions</h1>
+<h2 id="a-authorize-api-connection">a. Authorize API connection</h2>
 <ul>
 <li>Once deployment is complete, go under deployment details and authorize Cisco Meraki connection. 
 1.  Click the Cisco Meraki connection
@@ -107,19 +107,19 @@
 3.  Enter API Key
 4.  Click Save</li>
 </ul>
-<h2>b. Configurations in Sentinel</h2>
+<h2 id="b-configurations-in-sentinel">b. Configurations in Sentinel</h2>
 <ul>
 <li>In Microsoft sentinel analytical rules should be configured to trigger an incident with IP addresses. </li>
 <li>Configure the automation rules to trigger the playbook.</li>
 </ul>
-<h1>Playbook steps explained</h1>
-<h2>When Microsoft Sentinel incident creation rule is triggered</h2>
+<h1 id="playbook-steps-explained">Playbook steps explained</h1>
+<h2 id="when-microsoft-sentinel-incident-creation-rule-is-triggered">When Microsoft Sentinel incident creation rule is triggered</h2>
 <p>Captures potentially malicious or malware IP addresses incident information.</p>
-<h2>Entities - Get IPs</h2>
+<h2 id="entities---get-ips">Entities - Get IPs</h2>
 <p>Get the list of IPs as entities from the Incident.</p>
-<h2>Compose image to add in the incident</h2>
+<h2 id="compose-image-to-add-in-the-incident">Compose image to add in the incident</h2>
 <p>This action will compose the Cisco Meraki image to add to the incident comments.</p>
-<h2>Check if Organization exists</h2>
+<h2 id="check-if-organization-exists">Check if Organization exists</h2>
 <ul>
 <li>If organization name exists in list of organizations associated with the account, then return organization. </li>
 <li>If organization name does not exist, then terminate with the error that organization not found.</li>
@@ -127,7 +127,7 @@
 <p>## Check if network exists
   *  If network name exists in list of networks associated with the organization, then return network associated with the organization. 
  *  If network name does not exist, then terminate with the error that network not found.</p>
-<h2>For each malicious IP received from the incident</h2>
+<h2 id="for-each-malicious-ip-received-from-the-incident">For each malicious IP received from the incident</h2>
 <ul>
 <li>Checks if the IP address is part of L3 firewall rule or L7 firewall rule of MX network.</li>
 <li>If IP address is part of both L3 firewall rule and L7 firewall rule but not blocked by either of the rules, then Incident Comment is created saying IP address allowed by firewall.</li>

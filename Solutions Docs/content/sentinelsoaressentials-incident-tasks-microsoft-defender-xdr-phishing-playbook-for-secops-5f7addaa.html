@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Incident tasks - Microsoft Defender XDR Phishing Playbook for SecOps</h1>
+<h1 id="incident-tasks---microsoft-defender-xdr-phishing-playbook-for-secops">Incident tasks - Microsoft Defender XDR Phishing Playbook for SecOps</h1>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
@@ -42,18 +42,18 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Defender_XDR_Phishing_Playbook_for_SecOps-Tasks/readme.md">Defender_XDR_Phishing_Playbook_for_SecOps-Tasks/readme.md</a></em></p>
 </blockquote>
-<h1>Defender_XDR_Phishing_Playbook_for_SecOps-Tasks</h1>
+<h1 id="defender_xdr_phishing_playbook_for_secops-tasks">Defender_XDR_Phishing_Playbook_for_SecOps-Tasks</h1>
 <p>author: Benji Kovacevic</p>
 <p>This playbook add Incident Tasks based on Microsoft Defender XDR Phishing Playbook for SecOps. This playbook will walk the analyst through four stages of responding to a phishing incident: containment, investigation, remediation and prevention. The step-by-step instructions will help you take the required remedial action to protect information and minimize further risks.</p>
-<h1>Quick Deployment</h1>
+<h1 id="quick-deployment">Quick Deployment</h1>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FDefender_XDR_Phishing_Playbook_for_SecOps-Tasks%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
 <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FDefender_XDR_Phishing_Playbook_for_SecOps-Tasks%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png" /></a>
 <br><br></p>
-<h1>Post-deployment</h1>
+<h1 id="post-deployment">Post-deployment</h1>
 <ol>
 <li>Assign Microsoft Sentinel Responder role to the managed identity. To do so, choose Identity blade under Settings of the Logic App.</li>
 <li>Assign playbook to the automation rule. - https://learn.microsoft.com/azure/sentinel/tutorial-respond-threats-playbook?tabs=LAC<br>
@@ -61,13 +61,13 @@ Conditions<br>
     Incident provider &gt; Equals &gt; Microsoft Defender XDR<br>
     <img alt="SentinelIncident" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Defender_XDR_Phishing_Playbook_for_SecOps-Tasks/images/automationRuleDark.jpg" /><br><br></li>
 </ol>
-<h2>Playbook will run if the alert has any of these keywords:<br></h2>
+<h2 id="playbook-will-run-if-the-alert-has-any-of-these-keywords">Playbook will run if the alert has any of these keywords:<br></h2>
 <pre><code>1. Phish
 2. ZAP
 3. removed after delivery
 4. URL click was detected
 </code></pre>
-<h1>Screenshots</h1>
+<h1 id="screenshots">Screenshots</h1>
 <p><strong>Playbook</strong> <br>
 <img alt="playbook screenshot" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Defender_XDR_Phishing_Playbook_for_SecOps-Tasks/images/playbookDark.jpg" /><br></p>
 <p><strong>Microsoft Sentinel Incident Tasks</strong><br>

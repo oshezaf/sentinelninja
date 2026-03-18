@@ -12,6 +12,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (9 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Keeper%20Security%5CData%20Connectors%5CKeeperSecurity_ccp/KepperSecurity_table.json)
@@ -50,7 +57,7 @@ This table is ingested by the following connectors:
 
 **In solution [Keeper Security](../solutions/keeper-security.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Keeper Security - Password Changed](../content/keeper-security-keeper-security-password-changed-f031fbbc-37d8-4667-b795-d386bf2b5ab2-b3c2c3bc.md) |  |
 | [Keeper Security - User MFA Changed](../content/keeper-security-keeper-security-user-mfa-changed-75ffc8a4-86db-4f48-8506-cb4c049be484-da722465.md) |  |
@@ -59,13 +66,13 @@ This table is ingested by the following connectors:
 
 **In solution [Keeper Security](../solutions/keeper-security.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [KeeperSecurityDashboard](../content/keeper-security-keepersecuritydashboard-f36797d1.md) |  |
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [KeeperSecurityDashboard](../content/github-only-keepersecuritydashboard-16fd45ec.md) |  |
 

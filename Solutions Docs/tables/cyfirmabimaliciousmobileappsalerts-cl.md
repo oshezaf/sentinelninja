@@ -12,6 +12,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (29 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyfirmaBIMaliciousMobileAppsAlerts_CL.json)
@@ -70,7 +77,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cyfirma Brand Intelligence](../solutions/cyfirma-brand-intelligence.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [CYFIRMA - Brand Intelligence - Malicious Mobile App High Rule](../content/cyfirma-brand-intelligence-cyfirma-brand-intelligence-malicious-mobile-app-high-rule-3176ac89-b195-48b7-a01e-740a6b26fb2f-0ea9e2ed.md) |  |
 | [CYFIRMA - Brand Intelligence - Malicious Mobile App Medium Rule](../content/cyfirma-brand-intelligence-cyfirma-brand-intelligence-malicious-mobile-app-medium-rule-b73e6628-d44c-4ad3-a801-ea225c5744ee-7ad99738.md) |  |

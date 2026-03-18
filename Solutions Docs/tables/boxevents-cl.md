@@ -13,6 +13,14 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (72 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/BoxEvents_CL.json)
@@ -115,7 +123,7 @@ This table is ingested by the following connectors:
 
 **In solution [Box](../solutions/box.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Box - Abmormal user activity](../content/box-box-abmormal-user-activity-1139230c-cf10-45db-b616-fed0d1415c05-d050017d.md) |  |
 | [Box - Executable file in folder](../content/box-box-executable-file-in-folder-b91ec98d-5747-45c8-b2f6-a07bf47068f0-524e216a.md) |  |
@@ -132,7 +140,7 @@ This table is ingested by the following connectors:
 
 **In solution [Box](../solutions/box.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Box - Deleted users](../content/box-box-deleted-users-4b4a1802-8fcc-4eeb-9ccd-b5bb16f4b64b-640b3c89.md) |  |
 | [Box - Downloaded data volume per user](../content/box-box-downloaded-data-volume-per-user-47e0a82d-fd66-4d6e-a64a-ac377f136426-48750ae0.md) |  |
@@ -149,7 +157,7 @@ This table is ingested by the following connectors:
 
 **In solution [Box](../solutions/box.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Box](../content/box-box-c7528016.md) |  |
 

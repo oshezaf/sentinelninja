@@ -12,6 +12,14 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (9 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit%5CData%20Connectors%5CSlackAuditLog_CCP/SlackAuditLog_Table.json)
@@ -51,7 +59,7 @@ This table is ingested by the following connectors:
 
 **In solution [SlackAudit](../solutions/slackaudit.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [SlackAudit - Empty User Agent](../content/slackaudit-slackaudit-empty-user-agent-04528635-a5f1-438b-ab74-21ca7bc3aa32-dc53a71b.md) |  |
 | [SlackAudit - Multiple archived files uploaded in short period of time](../content/slackaudit-slackaudit-multiple-archived-files-uploaded-in-short-period-of-time-3db0cb83-5fa4-4310-a8a0-d8d66183f0bd-21e5a2f1.md) |  |
@@ -67,7 +75,7 @@ This table is ingested by the following connectors:
 
 **In solution [SlackAudit](../solutions/slackaudit.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [SlackAudit - Applications installed](../content/slackaudit-slackaudit-applications-installed-cefd7f18-9359-4a99-bd18-965983bb724d-453a5c0c.md) |  |
 | [SlackAudit - Deactivated users](../content/slackaudit-slackaudit-deactivated-users-f2b2cd0d-6190-44aa-8e0e-265de45ee379-fbc0a693.md) |  |
@@ -84,7 +92,7 @@ This table is ingested by the following connectors:
 
 **In solution [SlackAudit](../solutions/slackaudit.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [SlackAudit](../content/slackaudit-slackaudit-1483bfeb.md) |  |
 

@@ -11,6 +11,13 @@
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (156 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Netskope_WebTX_CL.json)
@@ -189,19 +196,19 @@ This table is used by the following solutions:
 
 **In solution [Netskope](../solutions/netskope.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [NetskopeEvents](../content/netskope-netskopeevents-8c0bf08d.md) |  |
 
 **In solution [Netskopev2](../solutions/netskopev2.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [NetskopeCEDashboard](../content/netskopev2-netskopecedashboard-35668be9.md) |  |
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [NetskopeEvents](../content/github-only-netskopeevents-9ea84d68.md) |  |
 

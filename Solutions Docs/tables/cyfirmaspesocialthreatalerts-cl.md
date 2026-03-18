@@ -12,6 +12,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (30 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyfirmaSPESocialThreatAlerts_CL.json)
@@ -71,7 +78,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cyfirma Digital Risk](../solutions/cyfirma-digital-risk.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [CYFIRMA - Social and Public Exposure -  Social Media Threats  Activity Detected Rule](../content/cyfirma-digital-risk-cyfirma-social-and-public-exposure-social-media-threats-activity-detected-rule-4fe04459-13f1-4ff7-9b7c-f9be0c2aad6d-2e67b8fc.md) |  |
 | [CYFIRMA - Social and Public Exposure -  Social Media Threats  Activity Detected Rule](../content/cyfirma-digital-risk-cyfirma-social-and-public-exposure-social-media-threats-activity-detected-rule-b8149f2f-54da-4f7b-98e1-c01ca47e1e55-2aa4324a.md) |  |

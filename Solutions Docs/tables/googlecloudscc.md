@@ -18,6 +18,13 @@ Reference for GoogleCloudSCC table in Azure Monitor Logs.
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/googlecloudscc) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (9 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/googlecloudscc)
@@ -56,7 +63,7 @@ This table is ingested by the following connectors:
 
 **In solution [Google Cloud Platform Security Command Center](../solutions/google-cloud-platform-security-command-center.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [GCP Security Command Center - Detect DNSSEC disabled for DNS zones](../content/google-cloud-platform-security-command-center-gcp-security-command-center-detect-dnssec-disabled-for-dns-a9c7a4be-b7e7-4045-8028-0d1ffaa049af-30e58eb2.md) |  |
 | [GCP Security Command Center - Detect Firewall rules allowing unrestricted high-risk ports](../content/google-cloud-platform-security-command-center-gcp-security-command-center-detect-firewall-rules-allowing-f4f92ca4-6ebe-4f2a-90e5-b0d04b709651-ab46a4b7.md) |  |
@@ -68,7 +75,7 @@ This table is ingested by the following connectors:
 
 **In solution [Google Cloud Platform Security Command Center](../solutions/google-cloud-platform-security-command-center.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Identify Compute VMs with Secure Boot Disabled](../content/google-cloud-platform-security-command-center-identify-compute-vms-with-secure-boot-disabled-d87bb737-2f4e-4261-b863-23c8a8999693-ba77c545.md) |  |
 | [Identify GCP Instances with Full API Access](../content/google-cloud-platform-security-command-center-identify-gcp-instances-with-full-api-access-0cbdd537-b31b-41b7-a3f2-8a421ea89a43-1fe82858.md) |  |

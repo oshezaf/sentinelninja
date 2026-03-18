@@ -59,7 +59,7 @@ Information about AI agents created with Microsoft Copilot Studio, including age
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [AI Agents - Dormant Author Authentication Connection](../content/github-only-ai-agents-dormant-author-authentication-connection-2a5b8c1d-4e7f-0a1b-2c3d-4e5f6a7b8c9d-b10f02e7.md) |  |
 | [AI Agents - HTTP Requests to Connector Endpoints](../content/github-only-ai-agents-http-requests-to-connector-endpoints-8b3c7d9e-0f1a-2b3c-4d5e-6f7a8b9c0d1e-944d929a.md) |  |

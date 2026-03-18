@@ -12,6 +12,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (29 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyfirmaDBWMRansomwareAlerts_CL.json)
@@ -70,7 +77,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cyfirma Digital Risk](../solutions/cyfirma-digital-risk.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [CYFIRMA - Data Breach and Web Monitoring - Ransomware Exposure Detected Rule](../content/cyfirma-digital-risk-cyfirma-data-breach-and-web-monitoring-ransomware-exposure-detected-rule-ed1aabc1-e1c1-42f4-abac-fd5637730f13-b632239e.md) |  |
 | [CYFIRMA - Data Breach and Web Monitoring - Ransomware Exposure Detected Rule](../content/cyfirma-digital-risk-cyfirma-data-breach-and-web-monitoring-ransomware-exposure-detected-rule-d5f9a6fe-7fd2-488c-8690-0ca24fba43dc-2e4543c4.md) |  |

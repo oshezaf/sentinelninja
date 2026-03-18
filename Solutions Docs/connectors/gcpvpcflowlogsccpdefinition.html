@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>GCP Pub/Sub VPC Flow Logs (via Codeless Connector Framework)</h1>
+<h1 id="gcp-pubsub-vpc-flow-logs">GCP Pub/Sub VPC Flow Logs (via Codeless Connector Framework)</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/google_logo.svg" alt="" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
@@ -59,7 +59,7 @@
 </tbody>
 </table>
 <p>The Google Cloud Platform (GCP) VPC Flow Logs enable you to capture network traffic activity at the VPC level, allowing you to monitor access patterns, analyze network performance, and detect potential threats across GCP resources.</p>
-<h2>Tables Ingested</h2>
+<h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -79,20 +79,20 @@
 </tr>
 </tbody>
 </table>
-<h2>Permissions</h2>
+<h2 id="permissions">Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): Read and Write permissions are required.</p>
-<h2>Setup Instructions</h2>
+<h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
-<h4>1. Set up your GCP environment</h4>
+<h4 id="1-set-up-your-gcp-environment">1. Set up your GCP environment</h4>
 <p>You must have the following GCP resources defined and configured: topic, subscription for the topic, workload identity pool, workload identity provider, and service account with permissions to get and consume from the subscription. 
  To configure this data connector, execute the following Terraform scripts:
  1. Setup Required Resources: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/DataConnectors/GCP/Terraform/sentinel_resources_creation/GCPVPCFlowLogsSetup/readme.md">Configuration Guide</a>
  2. Setup Authentication: <a href="https://learn.microsoft.com/en-us/azure/sentinel/connect-google-cloud-platform?tabs=terraform%2Cauditlogs#gcp-authentication-setup">Authentication tutorial</a>. Note: If Authentication is already setup using another GCP data connector , kindly skip this step and use the existing service account and workload identity pool.</p>
 <p><strong>Government Cloud:</strong></p>
-<h4>1. Set up your GCP environment</h4>
+<h4 id="1-set-up-your-gcp-environment">1. Set up your GCP environment</h4>
 <p>You must have the following GCP resources defined and configured: topic, subscription for the topic, workload identity pool, workload identity provider, and service account with permissions to get and consume from the subscription. 
  To configure this data connector, execute the following Terraform scripts:
  1. Setup Required Resources: [Configuration Guide]https://github.com/Azure/Azure-Sentinel/blob/master/DataConnectors/GCP/Terraform/sentinel_resources_creation/GCPVPCFlowLogsSetup/readme.md)
@@ -101,10 +101,10 @@
 <blockquote>
 <p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
 </blockquote>
-<h4>2. Enable VPC Flow Logs</h4>
+<h4 id="2-enable-vpc-flow-logs">2. Enable VPC Flow Logs</h4>
 <p>In your GCP account, navigate to the VPC network section. Select the subnet you want to monitor and enable Flow Logs under the Logging section.</p>
 <p>For more information: <a href="https://cloud.google.com/vpc/docs/using-flow-logs">Google Cloud Documentation</a></p>
-<h4>3. Connect new collectors</h4>
+<h4 id="3-connect-new-collectors">3. Connect new collectors</h4>
 <p>To enable GCP VPC Flow Logs for Microsoft Sentinel, click the Add new collector button, fill in the required information in the context pane, and click Connect.
 <strong>GCP Collector Management</strong></p>
 <p>📊 <strong>View GCP Collectors</strong>: A management interface displays your configured Google Cloud Platform data collectors.</p>

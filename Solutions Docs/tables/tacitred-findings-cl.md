@@ -13,6 +13,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (16 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TacitRedThreatIntelligence%5CData%20Connectors%5CTacitRed_CCF/TacitRed_Table.json)
@@ -58,7 +65,7 @@ This table is ingested by the following connectors:
 
 **In solution [TacitRedThreatIntelligence](../solutions/tacitredthreatintelligence.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [TacitRed - High Confidence Compromise](../content/tacitredthreatintelligence-tacitred-high-confidence-compromise-b2c3d4e5-f6a7-8901-bcde-f23456789012-9220bb1c.md) |  |
 | [TacitRed - Repeat Compromise Detection](../content/tacitredthreatintelligence-tacitred-repeat-compromise-detection-a1b2c3d4-e5f6-7890-abcd-ef1234567890-01245705.md) |  |
@@ -67,7 +74,7 @@ This table is ingested by the following connectors:
 
 **In solution [TacitRedThreatIntelligence](../solutions/tacitredthreatintelligence.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [TacitRedSecOpsWorkbook](../content/tacitredthreatintelligence-tacitredsecopsworkbook-52402f02.md) |  |
 

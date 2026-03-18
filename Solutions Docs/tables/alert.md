@@ -104,7 +104,7 @@ Reference for Alert table in Azure Monitor Logs.
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) |  |
 

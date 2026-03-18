@@ -11,6 +11,14 @@
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (16 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/GWorkspace_ReportsAPI_user_accounts_CL.json)
@@ -56,7 +64,7 @@ This table is ingested by the following connectors:
 
 **In solution [GoogleWorkspaceReports](../solutions/googleworkspacereports.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [GWorkspace - API Access Granted](../content/googleworkspacereports-gworkspace-api-access-granted-c45a9804-5da8-11ec-bf63-0242ac130002-333bb900.md) |  |
 | [GWorkspace - Admin permissions granted](../content/googleworkspacereports-gworkspace-admin-permissions-granted-03f25156-6172-11ec-90d6-0242ac120003-8b9cd6f1.md) |  |
@@ -73,7 +81,7 @@ This table is ingested by the following connectors:
 
 **In solution [GoogleWorkspaceReports](../solutions/googleworkspacereports.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [GWorkspace - Document Copied from Share Drive to Private Drive](../content/googleworkspacereports-gworkspace-document-copied-from-share-drive-to-private-drive-69e8a40f-6508-4f43-8eef-2f78ad6174df-0174362a.md) |  |
 | [GWorkspace - Document shared externally](../content/googleworkspacereports-gworkspace-document-shared-externally-00d743e2-5dac-11ec-bf63-0242ac130002-a98aa9d1.md) |  |
@@ -94,7 +102,7 @@ This table is ingested by the following connectors:
 
 **In solution [GoogleWorkspaceReports](../solutions/googleworkspacereports.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [GoogleWorkspace](../content/googleworkspacereports-googleworkspace-6948e392.md) |  |
 

@@ -18,6 +18,13 @@ Reference for GCPAuditLogs table in Azure Monitor Logs.
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpauditlogs) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (29 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpauditlogs)
@@ -78,7 +85,7 @@ This table is ingested by the following connectors:
 
 **In solution [Google Cloud Platform Audit Logs](../solutions/google-cloud-platform-audit-logs.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [GCP Audit Logs - DNSSEC Disabled on Managed DNS Zone](../content/google-cloud-platform-audit-logs-gcp-audit-logs-dnssec-disabled-on-managed-dns-zone-9129a43e-e204-4a9a-969e-d8861ce3437c-ca50f855.md) |  |
 | [GCP Audit Logs - Data Access Logging Exemption Added for Principal](../content/google-cloud-platform-audit-logs-gcp-audit-logs-data-access-logging-exemption-added-for-principal-b7da45ce-fcc8-43c7-a37c-c08454579d26-e999603f.md) |  |
@@ -90,14 +97,14 @@ This table is ingested by the following connectors:
 
 **In solution [Multi Cloud Attack Coverage Essentials - Resource Abuse](../solutions/multi-cloud-attack-coverage-essentials-resource-abuse.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Cross-Cloud Suspicious Compute resource creation in GCP](../content/multi-cloud-attack-coverage-essentials-resource-abuse-cross-cloud-suspicious-compute-resource-creation-i-5c847e47-0a07-4c01-ab99-5817ad6cb11e-be6ace2e.md) |  |
 | [Cross-Cloud Suspicious user activity observed in GCP Envourment](../content/multi-cloud-attack-coverage-essentials-resource-abuse-cross-cloud-suspicious-user-activity-observed-in-g-58e306fe-1c49-4b8f-9b0e-15f25e8f0cd7-36b1a06d.md) |  |
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Suspicious VM Instance Creation Activity Detected](../content/github-only-suspicious-vm-instance-creation-activity-detected-1cc0ba27-c5ca-411a-a779-fbc89e26be83-597f094d.md) |  |
 
@@ -105,7 +112,7 @@ This table is ingested by the following connectors:
 
 **In solution [Google Cloud Platform Audit Logs](../solutions/google-cloud-platform-audit-logs.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [GCP Audit Logs - List Activities Disabling Data Access Logging for GCP Services](../content/google-cloud-platform-audit-logs-gcp-audit-logs-list-activities-disabling-data-access-logging-for-gcp-se-8f3a9b2d-5c6e-4a1f-9d8c-3e7b4f9a6c2d-0d14abaa.md) |  |
 | [GCP Audit Logs - List All GCP Firewall Operations by Principal](../content/google-cloud-platform-audit-logs-gcp-audit-logs-list-all-gcp-firewall-operations-by-principal-9c4b2f7e-6d8a-4e9b-8f5c-2a3d7e9f6b4a-58341b5a.md) |  |

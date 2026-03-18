@@ -13,6 +13,14 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (75 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/BitglassLogs_CL.json)
@@ -117,7 +125,7 @@ This table is ingested by the following connectors:
 
 **In solution [Bitglass](../solutions/bitglass.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Bitglass - Impossible travel distance](../content/bitglass-bitglass-impossible-travel-distance-cdb6e4a4-b9bd-4c30-94b9-ecce5a72d528-e3688693.md) |  |
 | [Bitglass - Login from new device](../content/bitglass-bitglass-login-from-new-device-bfca0251-1581-4185-906b-4805099e3216-97bd6496.md) |  |
@@ -134,7 +142,7 @@ This table is ingested by the following connectors:
 
 **In solution [Bitglass](../solutions/bitglass.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Bitglass - Applications used](../content/bitglass-bitglass-applications-used-8702d847-e540-4a52-a419-6d617eb200ae-ca49fc9c.md) |  |
 | [Bitglass - Insecure web protocol](../content/bitglass-bitglass-insecure-web-protocol-5fc73535-738c-46ce-88a2-69bda3fada02-0ab98b6e.md) |  |
@@ -151,7 +159,7 @@ This table is ingested by the following connectors:
 
 **In solution [Bitglass](../solutions/bitglass.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Bitglass](../content/bitglass-bitglass-1a09746b.md) |  |
 

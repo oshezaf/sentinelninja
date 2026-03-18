@@ -10,6 +10,13 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (38 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/BHEAttackPathsData_CL.json)
@@ -77,7 +84,7 @@ This table is ingested by the following connectors:
 
 **In solution [BloodHound Enterprise](../solutions/bloodhound-enterprise.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [BloodHound Attack Path Finding - AKS Contributor Role on Tier Zero Managed Cluster](../content/bloodhound-enterprise-bloodhound-attack-path-finding-aks-contributor-role-on-tier-zero-managed-cluster-77d9d959-e899-4a43-a376-d2e4059ca8f4-d360cab8.md) |  |
 | [BloodHound Attack Path Finding - AS-REP Roastable User Accounts](../content/bloodhound-enterprise-bloodhound-attack-path-finding-as-rep-roastable-user-accounts-1f9610b1-f9e0-4da2-9600-12f07ba6f437-52c9467a.md) |  |
@@ -186,7 +193,7 @@ This table is ingested by the following connectors:
 
 **In solution [BloodHound Enterprise](../solutions/bloodhound-enterprise.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [BloodHoundEnterpriseAttackPathDetails](../content/bloodhound-enterprise-bloodhoundenterpriseattackpathdetails-abb1936c.md) |  |
 | [BloodHoundEnterpriseAttackPathOverview](../content/bloodhound-enterprise-bloodhoundenterpriseattackpathoverview-0c29f688.md) |  |

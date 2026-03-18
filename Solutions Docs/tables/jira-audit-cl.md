@@ -13,6 +13,14 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (18 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Jira_Audit_CL.json)
@@ -60,7 +68,7 @@ This table is ingested by the following connectors:
 
 **In solution [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Jira - Global permission added](../content/atlassianjiraaudit-jira-global-permission-added-5b0cec45-4a91-4f08-bb1b-392427e8f440-fcb3ce16.md) |  |
 | [Jira - New site admin user](../content/atlassianjiraaudit-jira-new-site-admin-user-b894593a-2b4c-4573-bc47-78715224a6f5-75417588.md) |  |
@@ -77,7 +85,7 @@ This table is ingested by the following connectors:
 
 **In solution [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Jira - Blocked tasks](../content/atlassianjiraaudit-jira-blocked-tasks-3fdc31f0-a166-4a4d-b861-f3cd262fd4a1-7619835b.md) |  |
 | [Jira - New users](../content/atlassianjiraaudit-jira-new-users-aadc0945-a399-47ba-b285-c0c09ee06375-a0481184.md) |  |
@@ -94,7 +102,7 @@ This table is ingested by the following connectors:
 
 **In solution [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [AtlassianJiraAudit](../content/atlassianjiraaudit-atlassianjiraaudit-cdf2e001.md) |  |
 

@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Enrich Dynatrace Application Security Attack with related Microsoft Sentinel Security Alerts</h1>
+<h1 id="enrich-dynatrace-application-security-attack-with-related-microsoft-sentinel-security-alerts">Enrich Dynatrace Application Security Attack with related Microsoft Sentinel Security Alerts</h1>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
@@ -42,7 +42,7 @@
 </tr>
 </tbody>
 </table>
-<h2>Tables Used</h2>
+<h2 id="tables-used">Tables Used</h2>
 <p>This content item queries data from the following tables:</p>
 <table>
 <thead>
@@ -62,11 +62,11 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Playbooks/Enrich-DynatraceAppSecAttackWithSecurityAlerts/readme.md">Enrich-DynatraceAppSecAttackWithSecurityAlerts/readme.md</a></em></p>
 </blockquote>
-<h1>Enrich-DynatraceAppSecAttackWithSecurityAlerts</h1>
+<h1 id="enrich-dynatraceappsecattackwithsecurityalerts">Enrich-DynatraceAppSecAttackWithSecurityAlerts</h1>
 <p>author: Dynatrace</p>
 <p>This playbook will Report all Microsoft Sentinel Security Alerts related to a Dynatrace Application Security Attack back to Dynatrace. You need a valid Dynatrace tenant with <a href="https://www.dynatrace.com/platform/application-security/">Application Security</a> enabled, you will also need to install the relevant Microsoft Sentinel Connectors which would generated security alerts consumed by this playbook. To learn more about the Dynatrace platform <a href="https://www.dynatrace.com/trial">Start your free trial</a></p>
 <p>** Prerequisites ** 
@@ -77,7 +77,7 @@
 <p>The Logic App uses a Managed System Identity (MSI) to query the Log Analytics Workspace. </p>
 <p>Assign RBAC 'Microsoft Sentinel Reader' role to the Logic App at the Resource Group level of the Log Analytics Workspace.</p>
 <p>Assign access policy on key vault for Playbook to fetch the secret key</p>
-<h2>Initial Setup</h2>
+<h2 id="initial-setup">Initial Setup</h2>
 <p>A Microsoft Sentinel playbook is utilized by automation rules, therefore to automatically trigger this playbook you must setup a new automation rule. If you have not set permissions yet, <a href="https://docs.microsoft.com/azure/sentinel/automate-incident-handling-with-automation-rules#permissions-for-automation-rules-to-run-playbooks">review here</a></p>
 <p>Basic steps for setup of the playbook and automation rule are as follows :</p>
 <ol>

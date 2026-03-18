@@ -17,6 +17,13 @@ Reference for NetworkAccessTraffic table in Azure Monitor Logs.
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccesstraffic) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (80 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccesstraffic)
@@ -127,7 +134,7 @@ This table is ingested by the following connectors:
 
 **In solution [Global Secure Access](../solutions/global-secure-access.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [GSA - Detect Abnormal Deny Rate for Source to Destination IP](../content/global-secure-access-gsa-detect-abnormal-deny-rate-for-source-to-destination-ip-e3b6a9e7-4c3a-45e6-8baf-1d3bfa8e0c2b-aebab9fd.md) |  |
 | [GSA - Detect Connections Outside Operational Hours](../content/global-secure-access-gsa-detect-connections-outside-operational-hours-4c9f0a9e-44d7-4c9b-b7f0-f6a6e0d8f8fa-4e59bfee.md) |  |
@@ -141,7 +148,7 @@ This table is ingested by the following connectors:
 
 **In solution [Global Secure Access](../solutions/global-secure-access.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [GSAM365EnrichedEvents](../content/global-secure-access-gsam365enrichedevents-b8162378.md) |  |
 | [GSANetworkTraffic](../content/global-secure-access-gsanetworktraffic-b1c45294.md) |  |

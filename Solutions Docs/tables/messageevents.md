@@ -16,6 +16,12 @@ Messages sent and received within your organization at the time of delivery
 | **Ingestion API Supported** | ✗ No |
 | **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-messageevents-table) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (27 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/messageevents)
@@ -64,7 +70,7 @@ This table is used by the following solutions:
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Expanding recipients into separate rows](../content/microsoft-defender-xdr-expanding-recipients-into-separate-rows-18fee342-8209-4270-9198-711646867e71-6a409deb.md) |  |
 | [External malicious Teams messages sent from internal senders](../content/microsoft-defender-xdr-external-malicious-teams-messages-sent-from-internal-senders-9cb4a6eb-c7ae-44ac-b12b-c16ec63da385-04ef94f1.md) |  |
@@ -89,7 +95,7 @@ This table is used by the following solutions:
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Expanding recipients into separate rows](../content/github-only-expanding-recipients-into-separate-rows-70ba5995-866f-4a23-bacc-40b82056893b-5712515b.md) |  |
 | [External malicious Teams messages sent from internal senders](../content/github-only-external-malicious-teams-messages-sent-from-internal-senders-aee866e2-dc92-4563-a387-b9e5710246c0-8f0914c9.md) |  |

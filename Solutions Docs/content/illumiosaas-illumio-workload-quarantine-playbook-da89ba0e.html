@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Illumio Workload Quarantine Playbook</h1>
+<h1 id="illumio-workload-quarantine-playbook">Illumio Workload Quarantine Playbook</h1>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
@@ -42,20 +42,20 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS/Playbooks/Illumio-Quarantine-Workload/readme.md">Illumio-Quarantine-Workload/readme.md</a></em></p>
 </blockquote>
-<h1>Microsoft Sentinel Playbooks for Illumio Integration</h1>
+<h1 id="microsoft-sentinel-playbooks-for-illumio-integration">Microsoft Sentinel Playbooks for Illumio Integration</h1>
 <p>Playbooks are collections of procedures that can be run from Microsoft Sentinel.  </p>
 <hr />
-<h2>Quarantine Workload Playbook</h2>
+<h2 id="quarantine-workload-playbook">Quarantine Workload Playbook</h2>
 <ol>
 <li>The logic app can be invoked as a http request.</li>
 <li>The payload should contain workload hostname/s and label/s. </li>
 <li>Function app is called with the above payload which makes a call to the PCE and applies labels to the workloads mentioned in payload. </li>
 </ol>
-<h1>To deploy, follow the below steps</h1>
+<h1 id="to-deploy-follow-the-below-steps">To deploy, follow the below steps</h1>
 <p>Deploy the function app first
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Frefs%2Fheads%2Fmaster%2FSolutions%2FIllumioSaaS%2FPlaybooks%2FCustomConnector%2FIllumioSaaS_FunctionAppConnector%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
 <p>Deploy the logic app next:

@@ -13,6 +13,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (34 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/HackerViewLog_Azure_1_CL.json)
@@ -76,7 +83,7 @@ This table is ingested by the following connectors:
 
 **In solution [CTM360](../solutions/ctm360.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Cookies: HttpOnly Flag Not Used](../content/ctm360-cookies-httponly-flag-not-used-e303d68e-08a7-4382-ab31-6a4bd80e8066-c53d5dec.md) |  |
 | [Cookies: SameSite Flag Not Used](../content/ctm360-cookies-samesite-flag-not-used-f4a06203-66f0-4f84-8bc8-05a44161b426-76387375.md) |  |

@@ -13,6 +13,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (23 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/fluentbit_CL.json)
@@ -65,7 +72,7 @@ This table is ingested by the following connectors:
 
 **In solution [Azure Cloud NGFW By Palo Alto Networks](../solutions/azure-cloud-ngfw-by-palo-alto-networks.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [CloudNGFW By Palo Alto Networks - Threat signatures from Unusual IP addresses](../content/azure-cloud-ngfw-by-palo-alto-networks-cloudngfw-by-palo-alto-networks-threat-signatures-from-unusual-ip-89a86f70-615f-4a79-9621-6f68c50f365f-e067f0fd.md) |  |
 | [CloudNGFW By Palo Alto Networks - possible internal to external port scanning](../content/azure-cloud-ngfw-by-palo-alto-networks-cloudngfw-by-palo-alto-networks-possible-internal-to-external-por-5b72f527-e3f6-4a00-9908-8e4fee14da9f-caf604b3.md) |  |
@@ -75,7 +82,7 @@ This table is ingested by the following connectors:
 
 **In solution [Azure Cloud NGFW By Palo Alto Networks](../solutions/azure-cloud-ngfw-by-palo-alto-networks.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Palo Alto - high-risk ports](../content/azure-cloud-ngfw-by-palo-alto-networks-palo-alto-high-risk-ports-0a57accf-3548-4e38-a861-99687c958f59-567e550c.md) |  |
 | [Palo Alto - potential beaconing detected](../content/azure-cloud-ngfw-by-palo-alto-networks-palo-alto-potential-beaconing-detected-2f8522fc-7807-4f0a-b53d-458296edab8d-468ca67f.md) |  |
@@ -84,7 +91,7 @@ This table is ingested by the following connectors:
 
 **In solution [Azure Cloud NGFW By Palo Alto Networks](../solutions/azure-cloud-ngfw-by-palo-alto-networks.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [CloudNGFW-NetworkThreat](../content/azure-cloud-ngfw-by-palo-alto-networks-cloudngfw-networkthreat-c20fa626.md) |  |
 | [CloudNGFW-Overview](../content/azure-cloud-ngfw-by-palo-alto-networks-cloudngfw-overview-244e5c2e.md) |  |

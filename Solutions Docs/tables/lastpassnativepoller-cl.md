@@ -13,6 +13,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (12 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/LastPassNativePoller_CL.json)
@@ -54,7 +61,7 @@ This table is ingested by the following connectors:
 
 **In solution [Lastpass Enterprise Activity Monitoring](../solutions/lastpass-enterprise-activity-monitoring.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Employee account deleted](../content/lastpass-enterprise-activity-monitoring-employee-account-deleted-8a2cc466-342d-4ebb-8871-f9e1d83a24a5-b66df220.md) |  |
 | [Failed sign-ins into LastPass due to MFA](../content/lastpass-enterprise-activity-monitoring-failed-sign-ins-into-lastpass-due-to-mfa-760b8467-e6cc-4006-9149-5696845c1a54-fcbe15ea.md) |  |
@@ -66,7 +73,7 @@ This table is ingested by the following connectors:
 
 **In solution [Lastpass Enterprise Activity Monitoring](../solutions/lastpass-enterprise-activity-monitoring.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Failed sign-ins into LastPass due to MFA.](../content/lastpass-enterprise-activity-monitoring-failed-sign-ins-into-lastpass-due-to-mfa.-b43fc364-69fc-4d3e-8834-6743ab5725e9-ed093fc6.md) |  |
 | [Password moved to shared folders](../content/lastpass-enterprise-activity-monitoring-password-moved-to-shared-folders-e70f1b22-acd1-493f-bba5-b28bea988940-a97b85fb.md) |  |
@@ -75,7 +82,7 @@ This table is ingested by the following connectors:
 
 **In solution [Lastpass Enterprise Activity Monitoring](../solutions/lastpass-enterprise-activity-monitoring.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [LastPassWorkbook](../content/lastpass-enterprise-activity-monitoring-lastpassworkbook-a0d8c4ef.md) |  |
 

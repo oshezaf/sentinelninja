@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Cohesity</h1>
+<h1 id="cohesity">Cohesity</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cohesity-Logo.svg" alt="" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
@@ -55,7 +55,7 @@
 </tbody>
 </table>
 <p>The Cohesity function apps provide the ability to ingest Cohesity Datahawk ransomware alerts into Microsoft Sentinel.</p>
-<h2>Tables Ingested</h2>
+<h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -78,14 +78,14 @@
 <blockquote>
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
-<h2>Permissions</h2>
+<h2 id="permissions">Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
 - <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
 <p><strong>Custom Permissions:</strong>
 - <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
 - <strong>Azure Blob Storage connection string and container name</strong>: Azure Blob Storage connection string and container name</p>
-<h2>Setup Instructions</h2>
+<h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 <p><strong>NOTE:</strong> This connector uses Azure Functions that connect to the Azure Blob Storage and KeyVault. This might result in additional costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a>, <a href="https://azure.microsoft.com/pricing/details/storage/blobs/">Azure Blob Storage pricing page</a> and <a href="https://azure.microsoft.com/pricing/details/key-vault/">Azure KeyVault pricing page</a> for details.</p>
@@ -106,21 +106,21 @@
 5. Click <strong>Purchase</strong> to deploy.</p>
 </li>
 </ol>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CohesitySecurity\Data Connectors\Helios2Sentinel\readme.md">CohesitySecurity\Data Connectors\Helios2Sentinel\readme.md</a></em></p>
 </blockquote>
-<h1>Azure Functions</h1>
+<h1 id="azure-functions">Azure Functions</h1>
 <p>This solution uses Microsoft Azure functions requires to receive alerts and create Microsoft Sentinel incidents. You have to deploy the Azure functions.
 Before deployment, please make sure that all prerequisites are done correctly.</p>
-<h2>Prerequisites</h2>
+<h2 id="prerequisites">Prerequisites</h2>
 <ul>
 <li><em>(Recommendation)</em> Get access to <a href="https://visualstudio.microsoft.com/vs/community/">Visual Studio</a> or <a href="https://code.visualstudio.com/">Visual Studio Code</a> in case later you decide to change the code for your environment.</li>
 <li>Install <a href="https://dotnet.microsoft.com/download/dotnet-core">dotnet core</a>.</li>
 <li>Install <a href="https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest">azure-cli</a>.</li>
 <li>Install <a href="https://docs.microsoft.com/azure/azure-functions/functions-run-local">azure-functions-core-tools</a>.</li>
 </ul>
-<h2>Deployment</h2>
+<h2 id="deployment">Deployment</h2>
 <p>Click on the "Deploy to Azure" button to deploy the Azure functions. This step directs you to deploy an ARM Template wizard.</p>
 <p><a href="https://aka.ms/sentinel-Cohesity-azuredeploy"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
 <hr />

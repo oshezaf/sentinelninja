@@ -12,6 +12,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (29 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyfirmaDBWMPhishingAlerts_CL.json)
@@ -70,7 +77,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cyfirma Digital Risk](../solutions/cyfirma-digital-risk.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [CYFIRMA - Data Breach and Web Monitoring - Phishing Campaign Detection Rule](../content/cyfirma-digital-risk-cyfirma-data-breach-and-web-monitoring-phishing-campaign-detection-rule-17cce4fc-9b4c-4eef-a4c7-083b44545e6e-cee99da3.md) |  |
 | [CYFIRMA - Data Breach and Web Monitoring - Phishing Campaign Detection Rule](../content/cyfirma-digital-risk-cyfirma-data-breach-and-web-monitoring-phishing-campaign-detection-rule-00c7b41c-ddeb-4c49-acd7-2f7897e27fb4-eae6c1a8.md) |  |

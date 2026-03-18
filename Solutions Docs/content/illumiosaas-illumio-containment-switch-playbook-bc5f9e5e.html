@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Illumio Containment Switch Playbook</h1>
+<h1 id="illumio-containment-switch-playbook">Illumio Containment Switch Playbook</h1>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
@@ -42,14 +42,14 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS/Playbooks/Illumio-Port-Blocking-Switch/readme.md">Illumio-Port-Blocking-Switch/readme.md</a></em></p>
 </blockquote>
-<h1>Microsoft Sentinel Playbooks for Illumio Integration</h1>
+<h1 id="microsoft-sentinel-playbooks-for-illumio-integration">Microsoft Sentinel Playbooks for Illumio Integration</h1>
 <p>Playbooks are collections of procedures that can be run from Microsoft Sentinel.  </p>
 <hr />
-<h2>Containment Switch Playbook</h2>
+<h2 id="containment-switch-playbook">Containment Switch Playbook</h2>
 <p>The <strong>Containment Switch</strong> playbook is designed to help isolate workloads. It includes the following procedures:</p>
 <ol>
 <li><strong>Run an Explorer Query</strong><br />
@@ -69,14 +69,14 @@
 </ol>
 <p>Each procedure is implemented as a function within an Azure Function App.</p>
 <hr />
-<h3>How It Works</h3>
+<h3 id="how-it-works">How It Works</h3>
 <p>The playbook provides the following capabilities:</p>
 <ul>
 <li>Queries Illumio PCE for traffic matching the specified port-protocol combination.</li>
 <li>Parses the response to identify visibility-only workloads.</li>
 <li>Provisions rules and objects in the PCE based on the parsed data.</li>
 </ul>
-<h4>Example Input to the Playbook:</h4>
+<h4 id="example-input-to-the-playbook">Example Input to the Playbook:</h4>
 <pre><code class="language-json">{
   &quot;protocol&quot;: 17,
   &quot;port&quot;: 5354,
@@ -86,7 +86,7 @@
 <p>Regarding "applyChanges":
 If true, the playbook will create and provision changes (including workload enforcement changes).
 If false, it skips object creation/modification steps and only provides a summary of actions, but traffic query results and parsed workloads will still be available.</p>
-<h1>To deploy, follow the below link</h1>
+<h1 id="to-deploy-follow-the-below-link">To deploy, follow the below link</h1>
 <p>Deploy the function app first:
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Frefs%2Fheads%2Fmaster%2FSolutions%2FIllumioSaaS%2FPlaybooks%2FCustomConnector%2FIllumioSaaS_FunctionAppConnector%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
 <p>Deploy logic app next:

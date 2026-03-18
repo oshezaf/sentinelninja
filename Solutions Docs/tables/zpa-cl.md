@@ -12,6 +12,14 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (7 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ZPA_CL.json)
@@ -50,7 +58,7 @@ This table is ingested by the following connectors:
 
 **In solution [Zscaler Private Access (ZPA)](../solutions/zscaler-private-access-zpa.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Zscaler - Connections by dormant user](../content/zscaler-private-access-zpa-zscaler-connections-by-dormant-user-66bc77ee-3e45-11ec-9bbc-0242ac130002-f761f156.md) |  |
 | [Zscaler - Forbidden countries](../content/zscaler-private-access-zpa-zscaler-forbidden-countries-b3d112b4-3e1e-11ec-9bbc-0242ac130002-e3dd2b4c.md) |  |
@@ -67,7 +75,7 @@ This table is ingested by the following connectors:
 
 **In solution [Zscaler Private Access (ZPA)](../solutions/zscaler-private-access-zpa.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Zscaler - Abnormal total bytes size](../content/zscaler-private-access-zpa-zscaler-abnormal-total-bytes-size-181dc982-4631-11ec-81d3-0242ac130003-e7032088.md) |  |
 | [Zscaler - Applications using by accounts](../content/zscaler-private-access-zpa-zscaler-applications-using-by-accounts-6ae7b9e0-462a-11ec-81d3-0242ac130003-1ebaabc5.md) |  |
@@ -84,7 +92,7 @@ This table is ingested by the following connectors:
 
 **In solution [Zscaler Private Access (ZPA)](../solutions/zscaler-private-access-zpa.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ZscalerZPA](../content/zscaler-private-access-zpa-zscalerzpa-0c8a39a9.md) |  |
 

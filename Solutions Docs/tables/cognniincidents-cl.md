@@ -13,6 +13,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (22 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CognniIncidents_CL.json)
@@ -64,7 +71,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cognni](../solutions/cognni.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Cognni Incidents for Highly Sensitive Business Information](../content/cognni-cognni-incidents-for-highly-sensitive-business-information-44e80f00-b4f5-486b-a57d-4073746276df-99948920.md) |  |
 | [Cognni Incidents for Highly Sensitive Financial Information](../content/cognni-cognni-incidents-for-highly-sensitive-financial-information-7ebb7386-6c99-4331-aab1-a185a603eb47-6a8e85b1.md) |  |
@@ -86,13 +93,13 @@ This table is ingested by the following connectors:
 
 **In solution [Cognni](../solutions/cognni.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [CognniIncidentsWorkbook](../content/cognni-cognniincidentsworkbook-5343764a.md) |  |
 
 **GitHub Only:**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [CognniIncidentsWorkbook](../content/github-only-cognniincidentsworkbook-5f17cd01.md) |  |
 

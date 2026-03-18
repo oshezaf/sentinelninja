@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>CheckPhish - Get URL reputation</h1>
+<h1 id="checkphish---get-url-reputation">CheckPhish - Get URL reputation</h1>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
@@ -42,11 +42,11 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CheckPhish%20by%20Bolster/Playbooks/CheckPhishPlaybooks/CheckPhsh-Get-URLScanResult/readme.md">CheckPhishPlaybooks/CheckPhsh-Get-URLScanResult/readme.md</a></em></p>
 </blockquote>
-<h1>CheckPhish- Get Reputation of URL</h1>
+<h1 id="checkphish--get-reputation-of-url">CheckPhish- Get Reputation of URL</h1>
 <p>## Summary</p>
 <p>Once a new sentinal incident is created, this playbook gets triggered and performs the following actions:</p>
 <pre><code>1. Gets Information from CheckPhish by URL, provided in the alert custom entities.
@@ -54,12 +54,12 @@
 </code></pre>
 <p><img alt="Incident Comment" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CheckPhish%20by%20Bolster/Playbooks/CheckPhishPlaybooks%5CCheckPhsh-Get-URLScanResult/images/CheckPhishEnrichmentComment.png" /><br></p>
 <p><img alt="Playbook Designer view" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CheckPhish%20by%20Bolster/Playbooks/CheckPhishPlaybooks%5CCheckPhsh-Get-URLScanResult/images/CheckPhishFlow.png" /><br></p>
-<h3>Prerequisites</h3>
+<h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>CheckPhishbyBolsterCustomConnector Custom Connector needs to be deployed prior to the deployment of this playbook under the same subscription.</li>
 <li>API key. To get API Key, login into CheckPhish portal and select APIKey from the left side menu.</li>
 </ol>
-<h3>Deployment instructions</h3>
+<h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
 <li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
 </ol>
@@ -72,8 +72,8 @@
 </ul>
 </li>
 </ol>
-<h3>Post-Deployment instructions</h3>
-<h4>a. Authorize connections</h4>
+<h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
+<h4 id="a-authorize-connections">a. Authorize connections</h4>
 <p>Once deployment is complete, you will need to authorize each connection.
 1.  Click the Azure Sentinel connection resource
 2.  Click edit API connection
@@ -81,7 +81,7 @@
 4.  Sign in
 5.  Click Save
 6.  Repeat steps for CheckPhishbyBolsterCustomConnector Connection (For authorizing the CheckPhish API connection, API Key needs to be provided)</p>
-<h4>b. Configurations in Sentinel</h4>
+<h4 id="b-configurations-in-sentinel">b. Configurations in Sentinel</h4>
 <ol>
 <li>None</li>
 </ol>

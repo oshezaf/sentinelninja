@@ -11,6 +11,13 @@
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (587 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/jamfprotect_CL.json)
@@ -619,7 +626,7 @@ This table is used by the following solutions:
 
 **In solution [Jamf Protect](../solutions/jamf-protect.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Jamf Protect - Network Threats](../content/jamf-protect-jamf-protect-network-threats-44da53c3-f3b0-4b70-afff-f79275cb9442-34cfd4a7.md) |  |
 

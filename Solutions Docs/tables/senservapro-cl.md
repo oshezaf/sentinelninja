@@ -11,6 +11,13 @@
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (17 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SenservaPro_CL.json)
@@ -57,7 +64,7 @@ This table is ingested by the following connectors:
 
 **In solution [SenservaPro](../solutions/senservapro.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Azure Secure Score Self Service Password Reset](../content/senservapro-azure-secure-score-self-service-password-reset-114120b2-aaa0-4c4e-bdf1-2ee178465047-2811587a.md) |  |
 | [Azure secure score MFA registration V2](../content/senservapro-azure-secure-score-mfa-registration-v2-8eb2b20a-bf64-4dcc-9d98-1ad559502c00-f958230b.md) |  |
@@ -79,7 +86,7 @@ This table is ingested by the following connectors:
 
 **In solution [SenservaPro](../solutions/senservapro.md):**
 
-| Content Item | Selection Criteria |
+| Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Application not using client credentials](../content/senservapro-application-not-using-client-credentials-1bdb9a37-dc72-4c5a-a222-08443865dc0d-f2f6e002.md) |  |
 | [Azure Secure Score Self Service Password Reset](../content/senservapro-azure-secure-score-self-service-password-reset-ef37b9a3-c792-4f2f-8a4e-f8416de43455-277440fa.md) |  |
@@ -101,7 +108,7 @@ This table is ingested by the following connectors:
 
 **In solution [SenservaPro](../solutions/senservapro.md):**
 
-| Content Item | Selection Criteria |
+| Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [SenservaProAnalyticsWorkbook](../content/senservapro-senservaproanalyticsworkbook-aaafb530.md) |  |
 | [SenservaProMultipleWorkspaceWorkbook](../content/senservapro-senservapromultipleworkspaceworkbook-de5c1809.md) |  |

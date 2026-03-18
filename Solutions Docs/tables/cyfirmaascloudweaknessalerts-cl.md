@@ -12,6 +12,13 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (28 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyfirmaASCloudWeaknessAlerts_CL.json)
@@ -69,7 +76,7 @@ This table is ingested by the following connectors:
 
 **In solution [Cyfirma Attack Surface](../solutions/cyfirma-attack-surface.md):**
 
-| Content Item | Selection Criteria |
+| Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [CYFIRMA - Attack Surface - Cloud Weakness High Rule](../content/cyfirma-attack-surface-cyfirma-attack-surface-cloud-weakness-high-rule-87cd8b10-90f6-4967-a4a7-2142e848ec8f-e09f1271.md) |  |
 | [CYFIRMA - Attack Surface - Cloud Weakness Medium Rule](../content/cyfirma-attack-surface-cyfirma-attack-surface-cloud-weakness-medium-rule-b8a3c5e2-04d5-4b61-9b62-b4f53a417f74-a425da1f.md) |  |
