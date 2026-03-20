@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `ActionType !has "ConnectionFailed"` | ✓ | ✗ | ? |
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |  | ✓ | ✗ | ✗ |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |  | ✓ | ✓ | ✗ |
 
 ---
 

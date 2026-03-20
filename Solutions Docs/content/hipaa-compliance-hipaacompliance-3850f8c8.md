@@ -29,7 +29,7 @@ This content item queries data from the following tables:
 | [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ✓ |
 | [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ✓ |
 | [`Syslog`](../tables/syslog.md) |  | ✓ | ✓ | ✓ |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) |  | ✓ | ✗ | ✗ |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) |  | ✓ | ✓ | ✗ |
 | [`Watchlist`](../tables/watchlist.md) |  | ✓ | ✗ | ? |
 
 ---

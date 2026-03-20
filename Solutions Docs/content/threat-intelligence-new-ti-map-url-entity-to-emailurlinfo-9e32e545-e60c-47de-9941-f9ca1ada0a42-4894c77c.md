@@ -28,7 +28,7 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ✓ |
 | [`EmailUrlInfo`](../tables/emailurlinfo.md) | ✓ | ✗ | ? |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ | ✗ |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✓ | ✗ |
 
 ---
 

@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Event`](../tables/event.md) | `EventID in "1,6"`<br>`EventLog == "MSExchange Management"` | ✓ | ✗ | ✗ |
+| [`Event`](../tables/event.md) | `EventID in "1,6"`<br>`EventLog == "MSExchange Management"` | ✓ | ✓ | ✗ |
 | [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4624,4720,4722,4724,4725,4726,7036"` | ✓ | ✓ | ✓ |
 | [`W3CIISLog`](../tables/w3ciislog.md) |  | ✓ | ✗ | ✗ |
 

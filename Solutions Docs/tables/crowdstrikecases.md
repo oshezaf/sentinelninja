@@ -12,8 +12,9 @@ Reference for CrowdStrikeCases table in Azure Monitor Logs.
 |:----------|:------|
 | **Category** | Crowdstrike |
 | **Basic Logs Eligible** | ✓ Yes |
-| **Ingestion API Supported** | ✗ No |
+| **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikecases) |
+| **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
 ## Contents
 

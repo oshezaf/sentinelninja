@@ -48,7 +48,7 @@ This content item queries data from the following tables:
 | [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ✓ |
 | [`StorageBlobLogs`](../tables/storagebloblogs.md) |  | ✓ | ✗ | ✓ |
 | [`Syslog`](../tables/syslog.md) |  | ✓ | ✓ | ✓ |
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |  | ✓ | ✗ | ✗ |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |  | ✓ | ✓ | ✗ |
 | [`WindowsFirewall`](../tables/windowsfirewall.md) |  | ✓ | ✗ | ? |
 
 ---

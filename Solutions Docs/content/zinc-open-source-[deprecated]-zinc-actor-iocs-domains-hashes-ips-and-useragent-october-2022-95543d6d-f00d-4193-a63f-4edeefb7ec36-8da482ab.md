@@ -34,7 +34,7 @@ This content item queries data from the following tables:
 | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ | ? |
 | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
 | [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ | ✓ |
-| [`Event`](../tables/event.md) | ✓ | ✗ | ✗ |
+| [`Event`](../tables/event.md) | ✓ | ✓ | ✗ |
 | [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ | ✓ |
 | [`VMConnection`](../tables/vmconnection.md) | ? | ✗ | ? |
 

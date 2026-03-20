@@ -28,7 +28,7 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ | ✓ |
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ | ✗ |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✓ | ✗ |
 
 ---
 

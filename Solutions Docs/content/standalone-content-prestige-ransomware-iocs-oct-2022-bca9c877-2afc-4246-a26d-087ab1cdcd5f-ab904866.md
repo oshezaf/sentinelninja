@@ -30,7 +30,7 @@ This content item queries data from the following tables:
 | [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ | ✓ |
 | [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ | ? |
 | [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) | ✓ | ✗ | ? |
-| [`Event`](../tables/event.md) | ✓ | ✗ | ✗ |
+| [`Event`](../tables/event.md) | ✓ | ✓ | ✗ |
 | [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
 
 ## Associated Connectors

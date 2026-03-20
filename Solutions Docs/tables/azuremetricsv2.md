@@ -12,8 +12,9 @@ Reference for AzureMetricsV2 table in Azure Monitor Logs.
 |:----------|:------|
 | **Category** | Azure Monitor, Azure Resources |
 | **Basic Logs Eligible** | ✓ Yes |
-| **Ingestion API Supported** | ✗ No |
+| **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azuremetricsv2) |
+| **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
 ## Schema (19 columns)
 

@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`HalcyonAuthenticationEvents_CL`](../tables/halcyonauthenticationevents-cl.md) | ✗ | ✓ | ✗ |
+| [`HalcyonAuthenticationEvents_CL`](../tables/halcyonauthenticationevents-cl.md) | ✓ | ✓ | ✓ |
 
 ---
 

@@ -26,11 +26,13 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CrowdStrikeAlerts`](../tables/crowdstrikealerts.md) | ✓ | ✗ | ✓ |
-| [`CrowdStrikeCases`](../tables/crowdstrikecases.md) | ? | ✗ | ? |
-| [`CrowdStrikeDetections`](../tables/crowdstrikedetections.md) | ✓ | ✗ | ? |
-| [`CrowdStrikeHosts`](../tables/crowdstrikehosts.md) | ✓ | ✗ | ? |
-| [`CrowdStrikeVulnerabilities`](../tables/crowdstrikevulnerabilities.md) | ✓ | ✗ | ? |
+| [`CrowdStrikeAlerts`](../tables/crowdstrikealerts.md) | ✓ | ✓ | ✓ |
+| [`CrowdStrikeCases`](../tables/crowdstrikecases.md) | ? | ✓ | ? |
+| [`CrowdStrikeDetections`](../tables/crowdstrikedetections.md) | ✓ | ✓ | ? |
+| [`CrowdStrikeHosts`](../tables/crowdstrikehosts.md) | ✓ | ✓ | ? |
+| [`CrowdStrikeVulnerabilities`](../tables/crowdstrikevulnerabilities.md) | ✓ | ✓ | ? |
+
+> 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
 ## Permissions
 

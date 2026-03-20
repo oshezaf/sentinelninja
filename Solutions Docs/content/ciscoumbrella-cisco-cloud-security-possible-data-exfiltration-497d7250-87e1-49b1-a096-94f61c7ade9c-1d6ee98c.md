@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`Cisco_Umbrella_audit_CL`](../tables/cisco-umbrella-audit-cl.md) 🔶 | ✗ | ✓ | ✗ |
-| [`Cisco_Umbrella_cloudfirewall_CL`](../tables/cisco-umbrella-cloudfirewall-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`Cisco_Umbrella_cloudfirewall_CL`](../tables/cisco-umbrella-cloudfirewall-cl.md) 🔶 | ✓ | ✓ | ✓ |
 | [`Cisco_Umbrella_dlp_CL`](../tables/cisco-umbrella-dlp-cl.md) 🔶 | ✗ | ✓ | ✗ |
 | [`Cisco_Umbrella_dns_CL`](../tables/cisco-umbrella-dns-cl.md) 🔶 | ✓ | ✓ | ✓ |
 | [`Cisco_Umbrella_fileevent_CL`](../tables/cisco-umbrella-fileevent-cl.md) 🔶 | ✗ | ✓ | ✗ |

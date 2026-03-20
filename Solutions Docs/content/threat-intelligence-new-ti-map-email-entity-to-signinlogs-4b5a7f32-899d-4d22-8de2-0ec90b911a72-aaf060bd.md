@@ -28,7 +28,7 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) | ✓ | ✗ | ✓ |
 | [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ | ✓ |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ | ✗ |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✓ | ✗ |
 
 ---
 

@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
 | [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ | ✓ |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ | ✗ |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✓ | ✗ |
 
 ---
 

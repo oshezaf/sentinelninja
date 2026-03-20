@@ -13,8 +13,9 @@ Reference for CrowdStrikeVulnerabilities table in Azure Monitor Logs.
 | **Category** | Crowdstrike |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Ingestion API Supported** | ✗ No |
+| **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikevulnerabilities) |
+| **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
 ## Contents
 

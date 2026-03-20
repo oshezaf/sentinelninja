@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Event`](../tables/event.md) | ✓ | ✗ | ✗ |
+| [`Event`](../tables/event.md) | ✓ | ✓ | ✗ |
 
 ## Parameters
 

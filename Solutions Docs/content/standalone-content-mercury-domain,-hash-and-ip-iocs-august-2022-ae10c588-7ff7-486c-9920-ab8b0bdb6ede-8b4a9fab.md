@@ -35,7 +35,7 @@ This content item queries data from the following tables:
 | [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) | ✓ | ✗ | ? |
 | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ | ? |
 | [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ | ✓ |
-| [`Event`](../tables/event.md) | ✓ | ✗ | ✗ |
+| [`Event`](../tables/event.md) | ✓ | ✓ | ✗ |
 | [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ | ✓ |
 | [`VMConnection`](../tables/vmconnection.md) | ? | ✗ | ? |
 | [`WindowsFirewall`](../tables/windowsfirewall.md) | ✓ | ✗ | ? |

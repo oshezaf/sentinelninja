@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rapid7InsightVMCloudVulnerabilities &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="rapid7insightvmcloudvulnerabilities">Rapid7InsightVMCloudVulnerabilities</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<p>Reference for Rapid7InsightVMCloudVulnerabilities table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Security</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/rapid7insightvmcloudvulnerabilities">View Documentation</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Logs Ingestion API</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema">Schema (49 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/rapid7insightvmcloudvulnerabilities">Azure Monitor documentation</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">Added</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The date the vulnerability coverage was added (ISO 8601 YYYY-MM-DD)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Categories</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Comma-separated list of categories the vulnerability is classified under</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cves</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">All CVEs assigned to this vulnerability</td>
+</tr>
+<tr>
+<td style="text-align: left;">CvssV2AccessComplexity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Enum: L/M/H. CVSS v2 Access Complexity - attack conditions required to exploit</td>
+</tr>
+<tr>
+<td style="text-align: left;">CvssV2AccessVector</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Enum: L/A/N. CVSS v2 Access Vector - how the vulnerability is exploited (Local/Adjacent/Network)</td>
+</tr>
+<tr>
+<td style="text-align: left;">CvssV2Authentication</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Enum: N/S/M. CVSS v2 Authentication - number of authentications required to exploit</td>
+</tr>
+<tr>
+<td style="text-align: left;">CvssV2AvailabilityImpact</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Enum: N/P/C. CVSS v2 Availability Impact - impact to availability</td>
+</tr>
+<tr>
+<td style="text-align: left;">CvssV2ConfidentialityImpact</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Enum: N/P/C. CVSS v2 Confidentiality Impact - impact on confidentiality</td>
+</tr>
+<tr>
+<td style="text-align: left;">CvssV2ExploitScore</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The CVSS v2 exploit score</td>
+</tr>
+<tr>
+<td style="text-align: left;">CvssV2ImpactScore</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The CVSS v2 impact score</td>
+</tr>
+<tr>
+<td style="text-align: left;">CvssV2IntegrityImpact</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Enum: N/P/C. CVSS v2 Integrity Impact - impact to integrity</td>
+</tr>
+<tr>
+<td style="text-align: left;">CvssV2Score</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The CVSS v2 score (0-10)</td>
+</tr>
+<tr>
+<td style="text-align: left;">CvssV2Vector</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The CVSS v2 vector</td>
+</tr>
+<tr>
+<td style="text-align: left;">CvssV3AttackComplexity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Enum: L/H. CVSS v3 Attack Complexity - conditions beyond attacker control required</td>
+</tr>
+<tr>
+<td style="text-align: left;">CvssV3AttackVector</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Enum: N/A/L/P. CVSS v3 Attack Vector - context of exploitation</td>
+</tr>
+<tr>
+<td style="text-align: left;">CvssV3AvailabilityImpact</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Enum: N/L/H. CVSS v3 Availability Impact - impact to availability</td>
+</tr>
+<tr>
+<td style="text-align: left;">CvssV3ConfidentialityImpact</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Enum: N/L/H. CVSS v3 Confidentiality Impact - impact on confidentiality</td>
+</tr>
+<tr>
+<td style="text-align: left;">CvssV3ExploitScore</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The CVSS v3 exploit score</td>
+</tr>
+<tr>
+<td style="text-align: left;">CvssV3ImpactScore</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The CVSS v3 impact score</td>
+</tr>
+<tr>
+<td style="text-align: left;">CvssV3IntegrityImpact</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Enum: N/L/H. CVSS v3 Integrity Impact - impact to integrity</td>
+</tr>
+<tr>
+<td style="text-align: left;">CvssV3PrivilegesRequired</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Enum: N/L/H. CVSS v3 Privileges Required - level of privileges needed before exploit</td>
+</tr>
+<tr>
+<td style="text-align: left;">CvssV3Scope</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Enum: U/C. CVSS v3 Scope - impact remains in same authority or crosses</td>
+</tr>
+<tr>
+<td style="text-align: left;">CvssV3Score</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The CVSS v3 score (0-10)</td>
+</tr>
+<tr>
+<td style="text-align: left;">CvssV3UserInteraction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Enum: N/R. CVSS v3 User Interaction - whether user action is required</td>
+</tr>
+<tr>
+<td style="text-align: left;">CvssV3Vector</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The CVSS v3 vector</td>
+</tr>
+<tr>
+<td style="text-align: left;">DenialOfService</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Whether the vulnerability can lead to Denial of Service (DoS)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Description</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A verbose description of the vulnerability</td>
+</tr>
+<tr>
+<td style="text-align: left;">Exploits</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The exploits that can be used to exploit a vulnerability</td>
+</tr>
+<tr>
+<td style="text-align: left;">Id</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The identifier of the vulnerability</td>
+</tr>
+<tr>
+<td style="text-align: left;">Links</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">References to security standards this vulnerability is a part of</td>
+</tr>
+<tr>
+<td style="text-align: left;">MalwareKits</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The malware kits that are known to be used to exploit the vulnerability</td>
+</tr>
+<tr>
+<td style="text-align: left;">Modified</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The last date the vulnerability was modified (ISO 8601 YYYY-MM-DD)</td>
+</tr>
+<tr>
+<td style="text-align: left;">PciCvssScore</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The CVSS score adjusted for PCI rules (0-10)</td>
+</tr>
+<tr>
+<td style="text-align: left;">PciFail</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Whether presence on a host would cause a PCI failure</td>
+</tr>
+<tr>
+<td style="text-align: left;">PciSeverityScore</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The severity score adjusted for PCI rules (0-10)</td>
+</tr>
+<tr>
+<td style="text-align: left;">PciSpecialNotes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Special notes or remarks about the vulnerability pertaining to PCI compliance</td>
+</tr>
+<tr>
+<td style="text-align: left;">PciStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The PCI compliance status</td>
+</tr>
+<tr>
+<td style="text-align: left;">Published</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The date the vulnerability was first published (ISO 8601 YYYY-MM-DD)</td>
+</tr>
+<tr>
+<td style="text-align: left;">References</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Condensed references to security standards: [<source>:<id>,...]</td>
+</tr>
+<tr>
+<td style="text-align: left;">RiskScore</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The risk score of the vulnerability (e.g., Rapid7 Real Risk , 0-1000)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Severity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The severity of the vulnerability (none, informational, low, moderate, severe, critical)</td>
+</tr>
+<tr>
+<td style="text-align: left;">SeverityScore</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The severity score of the vulnerability (0-10)</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time the event was generated</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">VulnerabilityTitle</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The title (summary) of the vulnerability</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

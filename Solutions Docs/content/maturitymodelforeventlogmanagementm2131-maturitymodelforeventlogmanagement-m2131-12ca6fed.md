@@ -62,7 +62,7 @@ This content item queries data from the following tables:
 | [`StorageBlobLogs`](../tables/storagebloblogs.md) |  | ✓ | ✗ | ✓ |
 | [`StorageFileLogs`](../tables/storagefilelogs.md) |  | ✓ | ✗ | ✓ |
 | [`Syslog`](../tables/syslog.md) | `SyslogMessage contains "runas"`<br>`SyslogMessage contains "sudo"`<br>`ProcessName has_any "hostd-probe,vmkwarning,vpxd-main"` | ✓ | ✓ | ✓ |
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |  | ✓ | ✗ | ✗ |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |  | ✓ | ✓ | ✗ |
 | [`Update`](../tables/update.md) |  | ✓ | ✗ | ? |
 | [`Usage`](../tables/usage.md) |  | ? | ✗ | ? |
 | [`VMComputer`](../tables/vmcomputer.md) |  | ? | ✗ | ? |

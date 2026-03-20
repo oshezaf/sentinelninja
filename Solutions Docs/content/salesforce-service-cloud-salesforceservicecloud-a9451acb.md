@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) | ✓ | ✓ | ✓ |
 | [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) 🔶 | ? | ✓ | ? |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ | ✗ |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✓ | ✗ |
 
 ---
 

@@ -39,7 +39,7 @@ This content item queries data from the following tables:
 | [`Summary_Details_Top_Fingerprints_Data_CL`](../tables/summary-details-top-fingerprints-data-cl.md) 🔶 | ? | ✓ | ? |
 | [`Summary_Details_Top_Open_Ports_Data_CL`](../tables/summary-details-top-open-ports-data-cl.md) 🔶 | ? | ✓ | ? |
 | [`Summary_Details_Top_Pdns_Data_CL`](../tables/summary-details-top-pdns-data-cl.md) 🔶 | ? | ✓ | ? |
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ | ✗ |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✓ | ✗ |
 | [`Top_Asns_By_IP_Data_CL`](../tables/top-asns-by-ip-data-cl.md) 🔶 | ? | ✓ | ? |
 | [`Top_Country_Codes_By_IP_Data_CL`](../tables/top-country-codes-by-ip-data-cl.md) 🔶 | ? | ✓ | ? |
 | [`Top_Services_By_IP_Data_CL`](../tables/top-services-by-ip-data-cl.md) 🔶 | ? | ✓ | ? |

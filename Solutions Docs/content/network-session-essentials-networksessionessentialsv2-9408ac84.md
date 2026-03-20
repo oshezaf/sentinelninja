@@ -29,7 +29,7 @@ This content item queries data from the following tables:
 | [`NetworkSummary_Threat_CL`](../tables/networksummary-threat-cl.md) | ? | ✓ | ? |
 | [`NetworkSummary_Threat_IOC_CL`](../tables/networksummary-threat-ioc-cl.md) | ? | ✓ | ? |
 | [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ | ✗ |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✓ | ✗ |
 
 ---
 

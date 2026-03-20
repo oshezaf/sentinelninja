@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Event`](../tables/event.md) |  | ✓ | ✗ | ✗ |
+| [`Event`](../tables/event.md) |  | ✓ | ✓ | ✗ |
 | [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ✓ |
 | [`WindowsEvent`](../tables/windowsevent.md) | `EventID in "17,18,5145"` | ✓ | ✓ | ✓ |
 

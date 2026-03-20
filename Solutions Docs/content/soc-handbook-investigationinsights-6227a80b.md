@@ -37,7 +37,7 @@ This content item queries data from the following tables:
 | [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ✓ |
 | [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ✓ |
 | [`Syslog`](../tables/syslog.md) |  | ✓ | ✓ | ✓ |
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |  | ✓ | ✗ | ✗ |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |  | ✓ | ✓ | ✗ |
 | [`Update`](../tables/update.md) |  | ✓ | ✗ | ? |
 | [`UpdateSummary`](../tables/updatesummary.md) |  | ✓ | ✗ | ? |
 | [`Usage`](../tables/usage.md) |  | ? | ✗ | ? |

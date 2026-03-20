@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`MessageEvents`](../tables/messageevents.md) | ? | ✗ | ? |
 | [`MessageUrlInfo`](../tables/messageurlinfo.md) | ? | ✗ | ? |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ | ✗ |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✓ | ✗ |
 
 ## Associated Connectors
 

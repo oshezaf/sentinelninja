@@ -218,7 +218,7 @@ Connectors that use at least one Custom Log V1 table (identified by type-suffixe
 
 ### Overview
 
-**2012 tables** documented across all discovery sources. **1767 tables** have schema information.
+**2043 tables** documented across all discovery sources. **1774 tables** have schema information.
 
 ### Discovery Sources
 
@@ -228,13 +228,13 @@ Each table is assigned a single discovery source ("Discovered Via") by priority:
 |:-----------------|---------------:|------:|
 | Connector | 829 | 829 |
 | Content | 224 | 770 |
-| [Azure Monitor Tables Reference](https://learn.microsoft.com/azure/azure-monitor/reference/tables/tables-resourcetype) | 603 | 782 |
+| [Azure Monitor Tables Reference](https://learn.microsoft.com/azure/azure-monitor/reference/tables/tables-resourcetype) | 607 | 786 |
 | [Defender XDR Advanced Hunting Schema](https://learn.microsoft.com/defender-xdr/advanced-hunting-schema-tables) | 22 | 61 |
-| [Sentinel Tables and Connectors Reference](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) | 11 | 482 |
+| [Sentinel Tables and Connectors Reference](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) | 23 | 511 |
 | [Azure Monitor Tables Feature Support](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) | 77 | 702 |
-| [Azure Monitor Logs Ingestion API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) | 1 | 51 |
-| Schema | 245 | 1767 |
-| **Total** | **2012** | |
+| [Azure Monitor Logs Ingestion API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) | 16 | 117 |
+| Schema | 245 | 1774 |
+| **Total** | **2043** | |
 
 *31 tables are available in Defender XDR but not in Azure Monitor Log Analytics.*
 
@@ -244,15 +244,15 @@ Tables with schema information, by schema source. A single table may have schema
 
 | Schema Source | Tables |
 |:-------------|-------:|
-| Azure Monitor docs | 810 |
+| Azure Monitor docs | 817 |
 | DCR | 9 |
 | KQL validation | 878 |
 | Connector definition | 69 |
-| **Total unique tables with schema** | **1767** |
+| **Total unique tables with schema** | **1774** |
 
 ### Custom Log V1 (CLv1) 🔶
 
-**435** of 2012 tables are Custom Log V1 tables, identified by type-suffixed columns or `_CL` suffix with compatible collection method.
+**435** of 2043 tables are Custom Log V1 tables, identified by type-suffixed columns or `_CL` suffix with compatible collection method.
 
 **By Table Category:**
 

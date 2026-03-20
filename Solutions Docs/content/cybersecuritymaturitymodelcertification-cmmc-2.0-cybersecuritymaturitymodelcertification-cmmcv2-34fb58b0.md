@@ -29,7 +29,7 @@ This content item queries data from the following tables:
 | [`ConfigurationChange`](../tables/configurationchange.md) |  | ✓ | ✗ | ? |
 | [`DeviceEvents`](../tables/deviceevents.md) | `ActionType in "Add member to role,Add user,FileCreated,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user,UsbDriveMounted"` | ✓ | ✗ | ✓ |
 | [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ | ? |
-| [`Event`](../tables/event.md) |  | ✓ | ✗ | ✗ |
+| [`Event`](../tables/event.md) |  | ✓ | ✓ | ✗ |
 | [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | ? |
 | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) 🔶 |  | ? | ✓ | ? |
 | [`OfficeActivity`](../tables/officeactivity.md) | `RecordType == "MicrosoftTeams"` | ✓ | ✗ | ✓ |

@@ -26,12 +26,14 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GKEAPIServer`](../tables/gkeapiserver.md) | ✓ | ✗ | ? |
-| [`GKEApplication`](../tables/gkeapplication.md) | ✓ | ✗ | ? |
-| [`GKEAudit`](../tables/gkeaudit.md) | ✓ | ✗ | ✓ |
-| [`GKEControllerManager`](../tables/gkecontrollermanager.md) | ✓ | ✗ | ? |
-| [`GKEHPADecision`](../tables/gkehpadecision.md) | ✓ | ✗ | ? |
-| [`GKEScheduler`](../tables/gkescheduler.md) | ✓ | ✗ | ? |
+| [`GKEAPIServer`](../tables/gkeapiserver.md) | ✓ | ✓ | ? |
+| [`GKEApplication`](../tables/gkeapplication.md) | ✓ | ✓ | ? |
+| [`GKEAudit`](../tables/gkeaudit.md) | ✓ | ✓ | ✓ |
+| [`GKEControllerManager`](../tables/gkecontrollermanager.md) | ✓ | ✓ | ? |
+| [`GKEHPADecision`](../tables/gkehpadecision.md) | ✓ | ✓ | ? |
+| [`GKEScheduler`](../tables/gkescheduler.md) | ✓ | ✓ | ? |
+
+> 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
 ## Permissions
 

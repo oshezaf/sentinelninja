@@ -29,7 +29,7 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) | ✓ | ✗ | ✓ |
 | [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ | ✗ |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✓ | ✗ |
 | [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ | ? |
 
 ---
