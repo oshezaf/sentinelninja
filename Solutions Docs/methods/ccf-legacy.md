@@ -18,9 +18,9 @@ Legacy CCF connectors embed their polling configuration directly in the connecto
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **16** |
-| Active | 14 |
+| Active | 15 |
 | Deprecated 🚫 | 1 |
-| Unpublished ⚠️ | 1 |
+| Unpublished ⚠️ | 0 |
 
 ## Connectors Using This Method
 
@@ -34,7 +34,7 @@ Legacy CCF connectors embed their polling configuration directly in the connecto
 | [Dynatrace Audit Logs](../connectors/dynatraceauditlogs.md) | Dynatrace | 1 | [Dynatrace](../solutions/dynatrace.md) |
 | [Dynatrace Problems](../connectors/dynatraceproblems.md) | Dynatrace | 1 | [Dynatrace](../solutions/dynatrace.md) |
 | [Dynatrace Runtime Vulnerabilities](../connectors/dynatraceruntimevulnerabilities.md) | Dynatrace | 1 | [Dynatrace](../solutions/dynatrace.md) |
-| [Egress Defend](../connectors/egressdefendpolling.md) ⚠️ 🔶 | Egress Software Technologies | 1 | [Egress Defend](../solutions/egress-defend.md) |
+| [Egress Defend](../connectors/egressdefendpolling.md) 🔶 | Egress Software Technologies | 1 | [Egress Defend](../solutions/egress-defend.md) |
 | [Egress Iris Connector](../connectors/egresssiempolling.md) 🔶 | Egress Software Technologies | 2 | [Egress Iris](../solutions/egress-iris.md) |
 | [Island Enterprise Browser Admin Audit (Polling CCP)](../connectors/island-admin-polling.md) | Island | 1 | [Island](../solutions/island.md) |
 | [Island Enterprise Browser User Activity (Polling CCP)](../connectors/island-user-polling.md) | Island | 1 | [Island](../solutions/island.md) |
@@ -53,8 +53,6 @@ Legacy CCF connectors embed their polling configuration directly in the connecto
 ---
 
 > 🚫 **Deprecated:** This connector has been deprecated and may be removed in future versions.
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 ---
 

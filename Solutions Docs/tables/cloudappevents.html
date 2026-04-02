@@ -461,7 +461,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-calculate-overall-mdo-efficacy-ff56a21d-fc95-4c11-8f9d-cc59c48cd4e6-2e8ef8fb.html">Calculate overall MDO efficacy</a></td>
-<td style="text-align: left;"><code>ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"</code></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-file-malware-detection-trend-817043be-4b30-4e66-a742-8f601a78b08f-46ed5e59.html">File Malware Detection Trend</a></td>
@@ -477,7 +477,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-mdo-threat-protection-detections-trend-over-time-eb0e4edb-f423-49f8-a02a-4ededdd30dd5-227c1309.html">MDO Threat Protection Detections trend over time</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-malware-detections-by-workload-locations-ef29d6b6-9192-46aa-b16a-082c2da2f78f-1fe5ecb9.html">Malware detections by Workload Locations</a></td>
@@ -688,7 +688,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-calculate-overall-mdo-efficacy-f2206cb7-62ca-4596-9d3a-544b61963799-36a197b0.html">Calculate overall MDO efficacy</a></td>
-<td style="text-align: left;"><code>ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"</code></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-changes-to-blocked-teams-domains-3fb50170-4048-473e-acc0-af9ae186f4a3-38df3c33.html">Changes to Blocked Teams Domains</a></td>
@@ -768,7 +768,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-mdo-threat-protection-detections-trend-over-time-02698387-5bf0-4111-a6ca-0f592a238a8f-f1170f50.html">MDO Threat Protection Detections trend over time</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-mdo-daily-detection-summary-report-deb4b2c6-c10e-4044-8cf4-84243e40db73-ce48d397.html">MDO daily detection summary report</a></td>
@@ -1084,7 +1084,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,FileMalwareDetected,Malware ZAP,Phish ZAP,Redelivery,SubmissionNotification,UserSubmission"</code><br><code>ActionType contains "AdminSubmission"</code><br><code>ActionType contains "AdminSubmissionTriage"</code><br><code>ActionType contains "Submission"</code><br><code>ActionType contains "UserSubmission"</code><br><code>ActionType contains "UserSubmissionTriage"</code></p>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,FileMalwareDetected,SubmissionNotification,UserSubmission"</code><br><code>ActionType contains "AdminSubmission"</code><br><code>ActionType contains "AdminSubmissionTriage"</code><br><code>ActionType contains "Submission"</code><br><code>ActionType contains "UserSubmission"</code><br><code>ActionType contains "UserSubmissionTriage"</code></p>
 <table>
 <thead>
 <tr>
@@ -1227,14 +1227,6 @@
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>ActionType == "AdminMailAccess"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
@@ -1260,6 +1252,14 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>ActionType == "New-TenantAllowBlockListItems"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>
@@ -1427,7 +1427,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,FileMalwareDetected,Malware ZAP,Phish ZAP,Redelivery,SubmissionNotification,UserSubmission"</code><br><code>ActionType contains "AdminSubmission"</code><br><code>ActionType contains "AdminSubmissionTriage"</code><br><code>ActionType contains "Submission"</code><br><code>ActionType contains "UserSubmission"</code><br><code>ActionType contains "UserSubmissionTriage"</code></td>
+<td style="text-align: left;"><code>ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,FileMalwareDetected,SubmissionNotification,UserSubmission"</code><br><code>ActionType contains "AdminSubmission"</code><br><code>ActionType contains "AdminSubmissionTriage"</code><br><code>ActionType contains "Submission"</code><br><code>ActionType contains "UserSubmission"</code><br><code>ActionType contains "UserSubmissionTriage"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1458,20 +1458,20 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>AdminSubmissionSubmitted</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">41</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>41</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>UserSubmission</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">40</td>
+<td style="text-align: center;">42</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>40</strong></td>
+<td style="text-align: center;"><strong>42</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AdminSubmissionSubmitted</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">39</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>39</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>FileMalwareDetected</code></td>
@@ -1480,6 +1480,14 @@
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;"><strong>11</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AdminSubmission</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>9</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>MailItemsAccessed</code></td>
@@ -1496,14 +1504,6 @@
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;"><strong>9</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>AdminSubmission</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>7</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>contains AdminSubmission</code></td>
@@ -1552,30 +1552,6 @@
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;"><strong>4</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>Malware ZAP</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>Phish ZAP</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>Redelivery</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>contains AdminSubmissionTriage</code></td>
@@ -1635,6 +1611,22 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>New-TenantAllowBlockListItems</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Malware ZAP</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Phish ZAP</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>

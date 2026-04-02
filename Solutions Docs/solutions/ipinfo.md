@@ -19,7 +19,7 @@
 | **Version** | 3.0.1 |
 | **Author** | IPinfo |
 | **First Published** | 2024-05-02 |
-| **Last Updated** | 2026-03-12 |
+| **Last Updated** | 2026-03-27 |
 | **Solution Folder** | [IPinfo](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IPinfo) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/idbllc1687537942583.microsoft-sentinel-solution-ipinfo-ipintelligence) · Popularity: ⚪ Very Low (0%) |
 

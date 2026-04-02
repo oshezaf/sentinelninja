@@ -1,4 +1,4 @@
-# Trend Micro Deep Security for Microsoft Sentinel
+# TrendAI™ Deep Security™ for Microsoft Sentinel
 
 *Solution: Trend Micro Deep Security*
 
@@ -19,6 +19,7 @@
 | **Version** | 3.0.1 |
 | **Author** | Trend Micro |
 | **First Published** | 2022-05-10 |
+| **Last Updated** | 2026-03-20 |
 | **Solution Folder** | [Trend Micro Deep Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Deep%20Security) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/trendmicro.trend_micro_deep_security_mss) · Popularity: 🟡 Low (28%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |

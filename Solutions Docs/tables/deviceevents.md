@@ -277,8 +277,8 @@ This table is ingested by the following connectors:
 | [c2-lookup-from-nonbrowser[Nobelium]](../content/github-only-c2-lookup-from-nonbrowser[nobelium]-f7dd2c5f-7bb3-4a0a-80a1-45c4d79e4c03-b27a688b.md) | `ActionType == "DnsQueryResponse"` |
 | [c2-lookup-response[Nobelium]](../content/github-only-c2-lookup-response[nobelium]-4417c444-6ff7-47db-bde0-b6b9ef1b9080-700dd29f.md) | `ActionType == "DnsQueryResponse"` |
 | [deimos-component-execution](../content/github-only-deimos-component-execution-0e86928c-cc9f-494c-a79e-04f647eb5ef8-b6e4ffdf.md) | `ActionType == "AmsiScriptContent"` |
-| [detect-impacket-atexec](../content/github-only-detect-impacket-atexec-75e3a1b2-bd6d-4e79-8c74-85a3bc0b0617-a33eaf14.md) |  |
-| [detect-impacket-psexec-module](../content/github-only-detect-impacket-psexec-module-6e6e6486-1bfc-4de0-bcbe-1ed88dfee2a1-ba6e359d.md) |  |
+| [detect-impacket-atexec](../content/github-only-detect-impacket-atexec-75e3a1b2-bd6d-4e79-8c74-85a3bc0b0617-a33eaf14.md) | `ActionType in "NamedPipeEvent,RegistryKeyCreated"` |
+| [detect-impacket-psexec-module](../content/github-only-detect-impacket-psexec-module-6e6e6486-1bfc-4de0-bcbe-1ed88dfee2a1-ba6e359d.md) | `ActionType == "FileCreated"` |
 | [detect-impacket-wmiexec](../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-f0a94abb.md) |  |
 | [detect-impacket-wmiexec](../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-32647bb7.md) |  |
 | [detect-impacket-wmiexec](../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-afdcfc01.md) |  |
@@ -299,7 +299,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |  |
 
-**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):** `ActionType in "Add member to role,Add user,FileCreated,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user,UsbDriveMounted"`
+**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):** `ActionType in "FileCreated,UsbDriveMounted"`
 
 | Workbook |
 |:-------------|
@@ -322,24 +322,24 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [AttackSurfaceReduction](../content/github-only-attacksurfacereduction-31c2d611.md) | `ActionType startswith "Asr"` |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `ActionType == "AntivirusScanCompleted"`<br>`ActionType startswith "Asr"` |
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `ActionType startswith "Asr"` |
 | [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) |  |
 | [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) | `ActionType in "AntivirusDetection,PnpDeviceConnected"`<br>`ActionType endswith "Audited"`<br>`ActionType endswith "Blocked"`<br>`ActionType startswith "Asr"` |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `ActionType contains "ExploitGuardNonMicrosoftSignedBlocked"` |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `ActionType == "AntivirusScanCompleted"`<br>`ActionType startswith "Asr"` |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `ActionType startswith "Asr"` |
 
-## Selection Criteria Summary (44 criteria, 76 total references)
+## Selection Criteria Summary (45 criteria, 78 total references)
 
-References by type: 0 connectors, 76 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 78 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `ActionType == "PowerShellCommand"` | - | 7 | - | - | **7** |
 | `ActionType == "BrowserLaunchedToOpenUrl"` | - | 5 | - | - | **5** |
 | `ActionType == "NamedPipeEvent"` | - | 4 | - | - | **4** |
+| `ActionType in "FileCreated,UsbDriveMounted"` | - | 4 | - | - | **4** |
 | `ActionType == "AntivirusDetection"` | - | 4 | - | - | **4** |
-| `ActionType in "FileCreated,UsbDriveMounted"` | - | 3 | - | - | **3** |
 | `ActionType == "UserAccountAddedToLocalGroup"`<br>`ActionType contains "UserAccountCreated"`<br>`ActionType contains "UserAccountModified"` | - | 3 | - | - | **3** |
 | `ActionType == "AmsiScriptContent"` | - | 3 | - | - | **3** |
 | `ActionType == "PnpDeviceConnected"` | - | 3 | - | - | **3** |
@@ -362,6 +362,8 @@ References by type: 0 connectors, 76 content items, 0 ASIM parsers, 0 other pars
 | `ActionType in "PnpDeviceAllowed,PnpDeviceBlocked"` | - | 1 | - | - | **1** |
 | `ActionType == "FileCreated"`<br>`ActionType contains "USB"` | - | 1 | - | - | **1** |
 | `ActionType contains "USB"` | - | 1 | - | - | **1** |
+| `ActionType in "NamedPipeEvent,RegistryKeyCreated"` | - | 1 | - | - | **1** |
+| `ActionType == "FileCreated"` | - | 1 | - | - | **1** |
 | `ActionType startswith "ScreenshotTaken"` | - | 1 | - | - | **1** |
 | `ActionType == "WmiBindEventFilterToConsumer"` | - | 1 | - | - | **1** |
 | `ActionType in "AntivirusDetection,PnpDeviceConnected"` | - | 1 | - | - | **1** |
@@ -377,22 +379,21 @@ References by type: 0 connectors, 76 content items, 0 ASIM parsers, 0 other pars
 | `ActionType in "FirewallInboundConnectionBlocked,FirewallInboundConnectionToAppBlocked,FirewallOutboundConnectionBlocked"` | - | 1 | - | - | **1** |
 | `ActionType has_any "AsrRansomwareAudited,AsrRansomwareBlocked"` | - | 1 | - | - | **1** |
 | `ActionType in "ExploitGuardNetworkProtectionAudited,ExploitGuardNetworkProtectionBlocked"`<br>`ActionType startswith "SmartScreenUrl"` | - | 1 | - | - | **1** |
-| `ActionType in "Add member to role,Add user,FileCreated,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user,UsbDriveMounted"` | - | 1 | - | - | **1** |
 | `ActionType in "AntivirusDetection,PnpDeviceConnected"`<br>`ActionType endswith "Audited"`<br>`ActionType endswith "Blocked"`<br>`ActionType startswith "Asr"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **76** | **0** | **0** | **76** |
+| **Total** | **0** | **78** | **0** | **0** | **78** |
 
 ### ActionType
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `FileCreated` | - | 8 | - | - | **8** |
 | `PowerShellCommand` | - | 7 | - | - | **7** |
-| `FileCreated` | - | 7 | - | - | **7** |
 | `BrowserLaunchedToOpenUrl` | - | 6 | - | - | **6** |
 | `AntivirusDetection` | - | 6 | - | - | **6** |
+| `NamedPipeEvent` | - | 5 | - | - | **5** |
 | `UsbDriveMounted` | - | 5 | - | - | **5** |
 | `PnpDeviceConnected` | - | 5 | - | - | **5** |
 | `startswith Asr` | - | 5 | - | - | **5** |
-| `NamedPipeEvent` | - | 4 | - | - | **4** |
 | `endswith Audited` | - | 4 | - | - | **4** |
 | `UserAccountAddedToLocalGroup` | - | 3 | - | - | **3** |
 | `contains UserAccountCreated` | - | 3 | - | - | **3** |
@@ -439,6 +440,7 @@ References by type: 0 connectors, 76 content items, 0 ASIM parsers, 0 other pars
 | `AntivirusScanCompleted` | - | 1 | - | - | **1** |
 | `PnpDeviceAllowed` | - | 1 | - | - | **1** |
 | `PnpDeviceBlocked` | - | 1 | - | - | **1** |
+| `RegistryKeyCreated` | - | 1 | - | - | **1** |
 | `startswith ScreenshotTaken` | - | 1 | - | - | **1** |
 | `WmiBindEventFilterToConsumer` | - | 1 | - | - | **1** |
 | `contains ControlledFolderAccess` | - | 1 | - | - | **1** |
@@ -450,14 +452,6 @@ References by type: 0 connectors, 76 content items, 0 ASIM parsers, 0 other pars
 | `has_any AsrRansomwareBlocked` | - | 1 | - | - | **1** |
 | `ExploitGuardNetworkProtectionAudited` | - | 1 | - | - | **1** |
 | `startswith SmartScreenUrl` | - | 1 | - | - | **1** |
-| `Add member to role` | - | 1 | - | - | **1** |
-| `Add user` | - | 1 | - | - | **1** |
-| `InteractiveLogon` | - | 1 | - | - | **1** |
-| `RemoteInteractiveLogon` | - | 1 | - | - | **1** |
-| `Reset user password` | - | 1 | - | - | **1** |
-| `ResourceAccess` | - | 1 | - | - | **1** |
-| `Sign-in` | - | 1 | - | - | **1** |
-| `Update user` | - | 1 | - | - | **1** |
 
 ---
 

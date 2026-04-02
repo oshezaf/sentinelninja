@@ -148,11 +148,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
 
-**In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):**
+**In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):** `OperationName in "Add conditional access policy,Add member to group,Add member to restricted management administrative unit,Delete conditional access policy,Remove member from group,Remove member from restricted management administrative unit,Update conditional access policy,Update group"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [ConditionalAccessSISM](../content/microsoft-entra-id-conditionalaccesssism-90abe712.md) |  |
+| Workbook |
+|:-------------|
+| [ConditionalAccessSISM](../content/microsoft-entra-id-conditionalaccesssism-90abe712.md) |
 
 **GitHub Only:**
 
@@ -162,7 +162,7 @@ This table is ingested by the following connectors:
 | [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |
+| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `OperationName == "Add member to group"`<br>`OperationName in "Set domain authentication,Set federation settings on domain"`<br>`OperationName has_any "Add service principal,Certificates`<br>`secrets management"` |
 
 ## Parsers Using This Table (1)
 
@@ -172,15 +172,16 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|:-------------------|
 | [ASimAuthenticationAADServicePrincipalSignInLogs](../asim/asimauthenticationaadserviceprincipalsigninlogs.md) | Authentication | Microsoft Entra ID |  |
 
-## Selection Criteria Summary (2 criteria, 2 total references)
+## Selection Criteria Summary (3 criteria, 3 total references)
 
-References by type: 0 connectors, 2 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `OperationName == "Remove service principal"`<br>`OperationName has_all "Update application"` | - | 1 | - | - | **1** |
 | `OperationName in "Add service principal credentials,Update application - Certificates`<br>`secrets management"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **2** | **0** | **0** | **2** |
+| `OperationName in "Add conditional access policy,Add member to group,Add member to restricted management administrative unit,Delete conditional access policy,Remove member from group,Remove member from restricted management administrative unit,Update conditional access policy,Update group"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **3** | **0** | **0** | **3** |
 
 ### OperationName
 
@@ -190,6 +191,14 @@ References by type: 0 connectors, 2 content items, 0 ASIM parsers, 0 other parse
 | `has_all Update application` | - | 1 | - | - | **1** |
 | `Add service principal credentials` | - | 1 | - | - | **1** |
 | `Update application - Certificates` | - | 1 | - | - | **1** |
+| `Add conditional access policy` | - | 1 | - | - | **1** |
+| `Add member to group` | - | 1 | - | - | **1** |
+| `Add member to restricted management administrative unit` | - | 1 | - | - | **1** |
+| `Delete conditional access policy` | - | 1 | - | - | **1** |
+| `Remove member from group` | - | 1 | - | - | **1** |
+| `Remove member from restricted management administrative unit` | - | 1 | - | - | **1** |
+| `Update conditional access policy` | - | 1 | - | - | **1** |
+| `Update group` | - | 1 | - | - | **1** |
 
 ---
 

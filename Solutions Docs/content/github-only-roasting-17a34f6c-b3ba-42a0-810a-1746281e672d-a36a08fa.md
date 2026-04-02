@@ -22,8 +22,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `ActionType == "LDAP query"` | ✓ | ✗ | ? |
-| [`IdentityQueryEvents`](../tables/identityqueryevents.md) |  | ✓ | ✗ | ? |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |  | ✓ | ✗ | ? |
+| [`IdentityQueryEvents`](../tables/identityqueryevents.md) | `ActionType == "LDAP query"` | ✓ | ✗ | ? |
 
 ---
 

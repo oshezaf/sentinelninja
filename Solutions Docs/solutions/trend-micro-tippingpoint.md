@@ -1,4 +1,4 @@
-# Trend Micro TippingPoint for Microsoft Sentinel
+# TrendAI™ TippingPoint™ for Microsoft Sentinel
 
 *Solution: Trend Micro TippingPoint*
 
@@ -19,6 +19,7 @@
 | **Version** | 3.0.1 |
 | **Author** | Trend Micro |
 | **First Published** | 2022-05-02 |
+| **Last Updated** | 2026-03-20 |
 | **Solution Folder** | [Trend Micro TippingPoint](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20TippingPoint) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/trendmicro.trend_micro_tippingpoint_mss) · Popularity: ⚪ Very Low (8%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |

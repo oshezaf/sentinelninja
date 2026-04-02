@@ -19,6 +19,7 @@
 | **Version** | 3.0.0 |
 | **Author** | Microsoft |
 | **First Published** | 2025-03-20 |
+| **Last Updated** | 2026-03-24 |
 | **Solution Folder** | [Amazon Web Services NetworkFirewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services%20NetworkFirewall) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-aws-networkfirewall) · Popularity: 🟡 Low (36%) |
 

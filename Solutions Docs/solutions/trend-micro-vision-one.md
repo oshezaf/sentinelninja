@@ -1,4 +1,4 @@
-# Trend Vision One for Microsoft Sentinel
+# TrendAI Vision One™ for Microsoft Sentinel
 
 *Solution: Trend Micro Vision One*
 
@@ -19,7 +19,7 @@
 | **Version** | 3.0.0 |
 | **Author** | Trend Micro |
 | **First Published** | 2022-05-11 |
-| **Last Updated** | 2024-07-16 |
+| **Last Updated** | 2026-03-20 |
 | **Solution Folder** | [Trend Micro Vision One](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Vision%20One) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/trendmicro.trend_micro_vision_one_xdr_mss) · Popularity: 🔵 Medium (55%) |
 

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CloudDnsEvents &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="clouddnsevents">CloudDnsEvents</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<blockquote>
+<p><strong>Defender XDR Only:</strong> This table is available in Microsoft Defender XDR advanced hunting but is not available in the Azure Monitor Log Analytics table reference.</p>
+</blockquote>
+<p>DNS activity events from cloud infrastructure environments</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">XDR</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-clouddnsevents-table">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema">Schema (22 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/clouddnsevents">Azure Monitor documentation</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ActionType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of activity that triggered the event</td>
+</tr>
+<tr>
+<td style="text-align: left;">AdditionalFields</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Additional information about the entity or event</td>
+</tr>
+<tr>
+<td style="text-align: left;">AwsResourceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier specific to Amazon Web Services devices, containing the Amazon resource name</td>
+</tr>
+<tr>
+<td style="text-align: left;">AzureResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the Azure resource associated with the process</td>
+</tr>
+<tr>
+<td style="text-align: left;">ContainerId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The container identifier in Kubernetes or another runtime environment</td>
+</tr>
+<tr>
+<td style="text-align: left;">ContainerName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the container in Kubernetes or another runtime environment</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsEventSubType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Either request or response</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsEventType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of event associated with DNS operation (for example, query)</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsNetworkDuration</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The DNS request duration in milliseconds</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsQuery</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The domain that needs to be resolved</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsQueryTypeName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The DNS resource record type name as defined by the Internet Assigned Numbers Authority (IANA)</td>
+</tr>
+<tr>
+<td style="text-align: left;">DnsResponseCodeName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The DNS response code name as defined by the Internet Assigned Numbers Authority (IANA).</td>
+</tr>
+<tr>
+<td style="text-align: left;">GcpFullResourceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier specific to Google Cloud Platform devices, containing a combination of zone and ID for GCP</td>
+</tr>
+<tr>
+<td style="text-align: left;">ImageName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Container image name or ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">KubernetesNamespace</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Kubernetes namespace name</td>
+</tr>
+<tr>
+<td style="text-align: left;">KubernetesPodName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Kubernetes pod name</td>
+</tr>
+<tr>
+<td style="text-align: left;">KubernetesResource</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the Kubernetes resource that includes the namespace, resource type and name</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Process ID that initiated the DNS query</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the process that initiated the DNS query</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReportId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the event</td>
+</tr>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the event was recorded</td>
+</tr>
+<tr>
+<td style="text-align: left;">TransactionIdHex</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The DNS unique hex transaction ID</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

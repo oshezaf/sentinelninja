@@ -772,11 +772,11 @@ This table is ingested by the following connectors:
 | [IllumioFlowData](../content/illumiosaas-illumioflowdata-b836f8b9.md) | `SyslogMessage has "illumio_pce/agent"` |
 | [IllumioOnPremHealth](../content/illumiosaas-illumioonpremhealth-4cde69e6.md) | `SyslogMessage has "disk=Policy"`<br>`SyslogMessage has "disk=Traffic"`<br>`SyslogMessage has "illumio_pce/system_health"`<br>`SyslogMessage has "src=collector"`<br>`SyslogMessage has "src=disk_latency"`<br>`SyslogMessage has "src=flow_analytics"` |
 
-**In solution [Infoblox NIOS](../solutions/infoblox-nios.md):**
+**In solution [Infoblox NIOS](../solutions/infoblox-nios.md):** `SyslogMessage has "DHCPINFORM"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [Infoblox-Workbook-V2](../content/infoblox-nios-infoblox-workbook-v2-a1f70727.md) |  |
+| Workbook |
+|:-------------|
+| [Infoblox-Workbook-V2](../content/infoblox-nios-infoblox-workbook-v2-a1f70727.md) |
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `SyslogMessage contains "runas"`<br>`SyslogMessage contains "sudo"`<br>`ProcessName has_any "hostd-probe,vmkwarning,vpxd-main"`
 
@@ -1039,9 +1039,9 @@ This table collects data from the following Azure resource types:
 - `microsoft.compute/virtualmachinescalesets`
 - `microsoft.hybridcontainerservice/provisionedclusters`
 
-## Selection Criteria Summary (91 criteria, 414 total references)
+## Selection Criteria Summary (91 criteria, 415 total references)
 
-References by type: 5 connectors, 334 content items, 16 ASIM parsers, 59 other parsers.
+References by type: 5 connectors, 335 content items, 16 ASIM parsers, 59 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -1069,6 +1069,7 @@ References by type: 5 connectors, 334 content items, 16 ASIM parsers, 59 other p
 | `SyslogMessage !has "response:"`<br>`SyslogMessage has_all "client"` | - | 1 | - | 2 | **3** |
 | `ProcessName == "box_Firewall_Activity"` | - | 1 | - | 2 | **3** |
 | `ProcessName has "sftp"`<br>`SyslogMessage has "bytes read"`<br>`SyslogMessage has "close"`<br>`SyslogMessage has "session opened for"` | - | 2 | - | - | **2** |
+| `SyslogMessage has "DHCPINFORM"` | - | 1 | - | 1 | **2** |
 | `SyslogMessage contains "AuditLog"`<br>`SyslogMessage contains "Device,"`<br>`SyslogMessage contains "DeviceControl"`<br>`SyslogMessage contains "ScriptControl"`<br>`SyslogMessage contains "Threat"` | - | - | - | 2 | **2** |
 | `ProcessName contains "Exabeam"` | - | - | - | 2 | **2** |
 | `ProcessName == "gw-audit"`<br>`SyslogMessage contains "gw-audit[-]:"`<br>`SyslogMessage contains "portal portal[-]:"` | 1 | - | - | - | **1** |
@@ -1121,7 +1122,6 @@ References by type: 5 connectors, 334 content items, 16 ASIM parsers, 59 other p
 | `SyslogMessage has "bind"` | - | - | - | 1 | **1** |
 | `SyslogMessage startswith "DHCPDISCOVER"` | - | - | - | 1 | **1** |
 | `SyslogMessage has "DHCPEXPIRE"` | - | - | - | 1 | **1** |
-| `SyslogMessage has "DHCPINFORM"` | - | - | - | 1 | **1** |
 | `SyslogMessage has "DHCPOFFER"` | - | - | - | 1 | **1** |
 | `SyslogMessage has "Option"` | - | - | - | 1 | **1** |
 | `SyslogMessage has_any "AccessRight,AdminGroup,AdminMember,Created Role,Login_Allowed,Login_Denied,balanced,balancing,delegatedzone,failover,forwardzone"` | - | - | - | 1 | **1** |
@@ -1136,7 +1136,7 @@ References by type: 5 connectors, 334 content items, 16 ASIM parsers, 59 other p
 | `ProcessName == "SyslogAlertForwarderNSP"` | - | - | - | 1 | **1** |
 | `ProcessName == "openvpn"` | - | - | - | 1 | **1** |
 | `SyslogMessage has "predefined_alarm_id"` | - | - | - | 1 | **1** |
-| **Total** | **5** | **334** | **16** | **59** | **414** |
+| **Total** | **5** | **335** | **16** | **59** | **415** |
 
 ### Facility / ProcessName
 
@@ -1225,6 +1225,7 @@ References by type: 5 connectors, 334 content items, 16 ASIM parsers, 59 other p
 | `has_any nds` | - | 2 | - | - | **2** |
 | `has_any nis` | - | 2 | - | - | **2** |
 | `has_any rmi` | - | 2 | - | - | **2** |
+| `has DHCPINFORM` | - | 1 | - | 1 | **2** |
 | `has_any change` | - | 2 | - | - | **2** |
 | `has_any config` | - | 2 | - | - | **2** |
 | `has_any modified` | - | 2 | - | - | **2** |
@@ -1356,7 +1357,6 @@ References by type: 5 connectors, 334 content items, 16 ASIM parsers, 59 other p
 | `has bind` | - | - | - | 1 | **1** |
 | `startswith DHCPDISCOVER` | - | - | - | 1 | **1** |
 | `has DHCPEXPIRE` | - | - | - | 1 | **1** |
-| `has DHCPINFORM` | - | - | - | 1 | **1** |
 | `has DHCPOFFER` | - | - | - | 1 | **1** |
 | `has Option` | - | - | - | 1 | **1** |
 | `has DHCPRELEASE` | - | - | - | 1 | **1** |

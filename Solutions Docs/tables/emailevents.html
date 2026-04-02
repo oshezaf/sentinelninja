@@ -67,7 +67,7 @@
 <li><a href="#connectors">Connectors</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 </ul>
-<h2 id="schema">Schema (54 columns)</h2>
+<h2 id="schema">Schema (55 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/emailevents">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -202,6 +202,11 @@
 <td style="text-align: left;">IsFirstContact</td>
 <td style="text-align: left;">bool</td>
 <td style="text-align: left;">Is this the first contact between sender and reciever.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LastEventExecutionTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time (UTC) when the record was updated post merge.</td>
 </tr>
 <tr>
 <td style="text-align: left;">LatestDeliveryAction</td>
@@ -507,7 +512,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-calculate-overall-mdo-efficacy-ff56a21d-fc95-4c11-8f9d-cc59c48cd4e6-2e8ef8fb.html">Calculate overall MDO efficacy</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-compauth-failure-trend-eb560458-d96f-4c68-acbb-14b3c706ebe7-1841f166.html">CompAuth Failure Trend</a></td>
@@ -579,7 +584,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-mdo-threat-protection-detections-trend-over-time-eb0e4edb-f423-49f8-a02a-4ededdd30dd5-227c1309.html">MDO Threat Protection Detections trend over time</a></td>
-<td style="text-align: left;"><code>ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"</code></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-malware-detections-trend-e1dbe1d2-785a-4ecd-a1c0-233fc0e990bc-43903146.html">Malware Detections Trend</a></td>
@@ -822,7 +827,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-calculate-overall-mdo-efficacy-f2206cb7-62ca-4596-9d3a-544b61963799-36a197b0.html">Calculate overall MDO efficacy</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-campaign-with-suspicious-keywords-9b086a51-e396-4718-90d7-f7b3646e6581-cc3c8c2c.html">Campaign with suspicious keywords</a></td>
@@ -1042,7 +1047,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-mdo-threat-protection-detections-trend-over-time-02698387-5bf0-4111-a6ca-0f592a238a8f-f1170f50.html">MDO Threat Protection Detections trend over time</a></td>
-<td style="text-align: left;"><code>ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"</code></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-mdo-daily-detection-summary-report-deb4b2c6-c10e-4044-8cf4-84243e40db73-ce48d397.html">MDO daily detection summary report</a></td>
@@ -1598,7 +1603,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>ActionType in "AdminSubmissionSubmitted,Redelivery,Spam ZAP,UserSubmission"</code></p>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,Malware ZAP,Phish ZAP,Redelivery,Spam ZAP,UserSubmission"</code><br><code>ActionType == "Automated Remediation"</code><br><code>ActionType contains "Submission"</code><br><code>ActionType contains "UserSubmission"</code><br><code>ActionType contains "ZAP"</code><br><code>ActionType has "Malware ZAP"</code><br><code>ActionType has "Phish ZAP"</code><br><code>ActionType has "Spam ZAP"</code><br><code>ActionType has "ZAP"</code><br><code>ActionType has_any "ClickAllowed"</code><br><code>ActionType has_any "ClickBlocked"</code><br><code>ActionType has_any "UrlErrorPage"</code><br><code>ActionType has_any "UrlScanInProgress"</code></p>
 <table>
 <thead>
 <tr>
@@ -1692,7 +1697,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (5 criteria, 12 total references)</h2>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (6 criteria, 12 total references)</h2>
 <p>References by type: 0 connectors, 12 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
@@ -1707,7 +1712,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"</code></td>
+<td style="text-align: left;"><code>ActionType == "QuarantineReleaseMessage"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">4</td>
 <td style="text-align: center;">-</td>
@@ -1715,12 +1720,20 @@
 <td style="text-align: center;"><strong>4</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType == "QuarantineReleaseMessage"</code></td>
+<td style="text-align: left;"><code>ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">4</td>
+<td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>4</strong></td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>ActionType == "ClickAllowed"</code></td>
@@ -1731,7 +1744,7 @@
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType in "AdminSubmissionSubmitted,Redelivery,Spam ZAP,UserSubmission"</code></td>
+<td style="text-align: left;"><code>ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,Malware ZAP,Phish ZAP,Redelivery,Spam ZAP,UserSubmission"</code><br><code>ActionType == "Automated Remediation"</code><br><code>ActionType contains "Submission"</code><br><code>ActionType contains "UserSubmission"</code><br><code>ActionType contains "ZAP"</code><br><code>ActionType has "Malware ZAP"</code><br><code>ActionType has "Phish ZAP"</code><br><code>ActionType has "Spam ZAP"</code><br><code>ActionType has "ZAP"</code><br><code>ActionType has_any "ClickAllowed"</code><br><code>ActionType has_any "ClickBlocked"</code><br><code>ActionType has_any "UrlErrorPage"</code><br><code>ActionType has_any "UrlScanInProgress"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1770,7 +1783,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>UserSubmission</code></td>
+<td style="text-align: left;"><code>Malware ZAP</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">5</td>
 <td style="text-align: center;">-</td>
@@ -1778,28 +1791,12 @@
 <td style="text-align: center;"><strong>5</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>AdminSubmission</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>4</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>Malware ZAP</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>4</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>Phish ZAP</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>4</strong></td>
+<td style="text-align: center;"><strong>5</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>QuarantineReleaseMessage</code></td>
@@ -1810,6 +1807,38 @@
 <td style="text-align: center;"><strong>4</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>AdminSubmissionSubmitted</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Redelivery</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>UserSubmission</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AdminSubmission</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>ClickAllowed</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
@@ -1818,7 +1847,7 @@
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>AdminSubmissionSubmitted</code></td>
+<td style="text-align: left;"><code>AttackSimUserSubmission</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1826,7 +1855,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Redelivery</code></td>
+<td style="text-align: left;"><code>ClickBlocked</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1835,6 +1864,102 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>Spam ZAP</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Automated Remediation</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains Submission</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains UserSubmission</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains ZAP</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has Malware ZAP</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has Phish ZAP</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has Spam ZAP</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has ZAP</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any ClickAllowed</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any ClickBlocked</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any UrlErrorPage</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any UrlScanInProgress</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>

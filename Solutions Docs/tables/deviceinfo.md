@@ -165,7 +165,7 @@ This table is ingested by the following connectors:
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Anomalous Device Models](../content/github-only-anomalous-device-models-9ec67c0b-e319-4f1c-bbea-67119d03740a-3de88416.md) |  |
-| [Baseline Comparison](../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.md) | `ActionType == "PowerShellCommand"` |
+| [Baseline Comparison](../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.md) |  |
 | [Can Be Onboarded Devices](../content/github-only-can-be-onboarded-devices-90f30a21-5de6-4c5e-85cf-d81347361aec-f16fa7b2.md) |  |
 | [Commonality of Operating Systems](../content/github-only-commonality-of-operating-systems-5a540d69-a196-4e1f-9029-df8a100aa4a7-5e991975.md) |  |
 | [Count and Percentage of DeviceType out of total inventory](../content/github-only-count-and-percentage-of-devicetype-out-of-total-inventory-37b7a9cb-1304-49c3-84e6-9de8545f4043-724ba48a.md) |  |
@@ -201,27 +201,12 @@ This table is ingested by the following connectors:
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `ActionType in "Add member to role,Add user,AntivirusScanCompleted,InteractiveLogon,LogonSuccess,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` |
 | [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) |  |
 | [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
-
-## Selection Criteria Summary (1 criteria, 1 total references)
-
-References by type: 0 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.
-
-| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `ActionType == "PowerShellCommand"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **1** | **0** | **0** | **1** |
-
-### ActionType
-
-| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `PowerShellCommand` | - | 1 | - | - | **1** |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `ActionType in "Add member to role,Add user,AntivirusScanCompleted,InteractiveLogon,LogonSuccess,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` |
 
 ---
 

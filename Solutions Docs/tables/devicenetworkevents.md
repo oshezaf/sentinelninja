@@ -229,7 +229,7 @@ This table is ingested by the following connectors:
 | [Download of New File Using Curl](../content/github-only-download-of-new-file-using-curl-96066361-e101-4c8a-ad37-b0f58d75cd2b-761009fc.md) |  |
 | [EncodedDomainURL [Nobelium]](../content/github-only-encodeddomainurl-[nobelium]-c561bf69-6a6c-4d0a-960a-b69e0e7c8f51-72f5ce64.md) | `ActionType in "DNS query,DnsQueryResponse"` |
 | [Excel file download domain pattern](../content/github-only-excel-file-download-domain-pattern-1dd47f50-d42d-4e2f-9c2b-6e6c22147916-ed8cb6fe.md) |  |
-| [File Copy and Execution](../content/github-only-file-copy-and-execution-a27d5cb6-c533-4a81-9d11-d5c0ed257bc7-20375a6a.md) | `ActionType in "FileCreated,FileModified"` |
+| [File Copy and Execution](../content/github-only-file-copy-and-execution-a27d5cb6-c533-4a81-9d11-d5c0ed257bc7-20375a6a.md) |  |
 | [File footprint (1)](../content/github-only-file-footprint-1-1f80f1cf-97e1-4fb8-ad5a-e573fac7b9e3-599349e2.md) |  |
 | [Firewall Policy Design Assistant](../content/github-only-firewall-policy-design-assistant-7323d9ca-ebf9-42da-a57b-015969fbd660-4982c548.md) | `ActionType in "ConnectionFound,ConnectionRequest,ConnectionSuccess,InboundConnectionAccepted,ListeningConnectionCreated"` |
 | [Flash-CVE-2018-4848](../content/github-only-flash-cve-2018-4848-8e32bc35-72e6-4bc9-b3bb-2ee346c8acf0-300d8c2d.md) |  |
@@ -301,7 +301,7 @@ This table is ingested by the following connectors:
 | [Remote Management and Monitoring tool - parsec.app - Network Connection](../content/github-only-remote-management-and-monitoring-tool-parsec.app-network-connection-070b55d3-eb84-4312-a116-1af9965cd6e4-b89bf545.md) |  |
 | [Remote Management and Montioring tool - Action1 - Network Connection](../content/github-only-remote-management-and-montioring-tool-action1-network-connection-7da76b41-8c1d-4602-91c6-5d99738d38f4-2b2041fc.md) |  |
 | [Remote Management and Montioring tool - Addigy - Network Connection](../content/github-only-remote-management-and-montioring-tool-addigy-network-connection-4f0b3b8d-bde4-4cce-9ff7-1f0c0a7085af-dd1e9d14.md) |  |
-| [Roasting](../content/github-only-roasting-17a34f6c-b3ba-42a0-810a-1746281e672d-a36a08fa.md) | `ActionType == "LDAP query"` |
+| [Roasting](../content/github-only-roasting-17a34f6c-b3ba-42a0-810a-1746281e672d-a36a08fa.md) |  |
 | [RunDLL Suspicious Network Connection](../content/github-only-rundll-suspicious-network-connection-d0831db3-009f-40bb-9f82-c66b1f9674cd-46ab6288.md) |  |
 | [SMB shares discovery](../content/github-only-smb-shares-discovery-a3dc6ecb-d910-467b-844e-a3b87744c4c9-a86d4bee.md) |  |
 | [SolarWinds -CVE-2021-35211](../content/github-only-solarwinds-cve-2021-35211-ff01fb94-9b27-48b9-a304-2e86108b5ca4-b19d7fb2.md) | `ActionType == "ConnectionSuccess"` |
@@ -313,7 +313,7 @@ This table is ingested by the following connectors:
 | [cve-2019-0808-c2](../content/github-only-cve-2019-0808-c2-0be1295f-b417-477b-95d1-82ce7c43fa03-094fa25a.md) |  |
 | [detect-bluekeep-exploitation-attempts](../content/github-only-detect-bluekeep-exploitation-attempts-e380a30d-03ff-4d20-b2d5-d0683033d813-a1070ea7.md) |  |
 | [detect-cyzfc-activity (1)](../content/github-only-detect-cyzfc-activity-1-c28b23e0-0d6d-45a1-ab81-8268fdff0272-0d76d71e.md) |  |
-| [detect-impacket-dcomexec](../content/github-only-detect-impacket-dcomexec-3069ee4c-68a2-4512-9048-4751bc0fbac2-d07da8d4.md) | `ActionType == "InboundConnectionAccepted"` |
+| [detect-impacket-dcomexec](../content/github-only-detect-impacket-dcomexec-3069ee4c-68a2-4512-9048-4751bc0fbac2-d07da8d4.md) |  |
 | [detect-impacket-wmiexec](../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-f0a94abb.md) |  |
 | [detect-impacket-wmiexec](../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-32647bb7.md) |  |
 | [detect-impacket-wmiexec](../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-afdcfc01.md) |  |
@@ -373,7 +373,7 @@ This table is ingested by the following connectors:
 | [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) | `ActionType == "FileCreated"` |
 | [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) | `ActionType in "FileCreated,UsbDriveMounted"` |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |
+| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `ActionType == "RemoteInteractiveLogon"`<br>`ActionType == "LdapSearch"` |
 
 ## Parsers Using This Table (1)
 
@@ -383,24 +383,22 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|
 | [ASimNetworkSessionMicrosoft365Defender](../asim/asimnetworksessionmicrosoft365defender.md) | NetworkSession | M365 Defender for Endpoint |
 
-## Selection Criteria Summary (11 criteria, 23 total references)
+## Selection Criteria Summary (9 criteria, 20 total references)
 
-References by type: 0 connectors, 22 content items, 1 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 19 content items, 1 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `ActionType !has "ConnectionFailed"` | - | 6 | - | - | **6** |
 | `ActionType == "ConnectionSuccess"` | - | 4 | - | - | **4** |
 | `ActionType == "ConnectionFailed"` | - | 2 | 1 | - | **3** |
-| `ActionType == "InboundConnectionAccepted"` | - | 2 | - | - | **2** |
 | `ActionType in "DNS query,DnsQueryResponse"` | - | 2 | - | - | **2** |
+| `ActionType == "InboundConnectionAccepted"` | - | 1 | - | - | **1** |
 | `ActionType in "ExploitGuardNetworkProtectionBlocked,SmartScreenUrlWarning"` | - | 1 | - | - | **1** |
-| `ActionType == "LDAP query"` | - | 1 | - | - | **1** |
-| `ActionType in "FileCreated,FileModified"` | - | 1 | - | - | **1** |
 | `ActionType == "NetworkSignatureInspected"` | - | 1 | - | - | **1** |
 | `ActionType in "ConnectionFound,ConnectionRequest,ConnectionSuccess,InboundConnectionAccepted,ListeningConnectionCreated"` | - | 1 | - | - | **1** |
 | `ActionType in "FileCreated,UsbDriveMounted"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **22** | **1** | **0** | **23** |
+| **Total** | **0** | **19** | **1** | **0** | **20** |
 
 ### ActionType
 
@@ -408,19 +406,17 @@ References by type: 0 connectors, 22 content items, 1 ASIM parsers, 0 other pars
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `!has ConnectionFailed` | - | 6 | - | - | **6** |
 | `ConnectionSuccess` | - | 5 | - | - | **5** |
-| `InboundConnectionAccepted` | - | 3 | - | - | **3** |
 | `ConnectionFailed` | - | 2 | 1 | - | **3** |
+| `InboundConnectionAccepted` | - | 2 | - | - | **2** |
 | `DNS query` | - | 2 | - | - | **2** |
 | `DnsQueryResponse` | - | 2 | - | - | **2** |
-| `FileCreated` | - | 2 | - | - | **2** |
 | `ExploitGuardNetworkProtectionBlocked` | - | 1 | - | - | **1** |
 | `SmartScreenUrlWarning` | - | 1 | - | - | **1** |
-| `LDAP query` | - | 1 | - | - | **1** |
-| `FileModified` | - | 1 | - | - | **1** |
 | `NetworkSignatureInspected` | - | 1 | - | - | **1** |
 | `ConnectionFound` | - | 1 | - | - | **1** |
 | `ConnectionRequest` | - | 1 | - | - | **1** |
 | `ListeningConnectionCreated` | - | 1 | - | - | **1** |
+| `FileCreated` | - | 1 | - | - | **1** |
 | `UsbDriveMounted` | - | 1 | - | - | **1** |
 
 ---

@@ -29,11 +29,11 @@ This parser reads from the following tables:
 | [`ASimAuthenticationEventLogs`](../tables/asimauthenticationeventlogs.md) |  | ✓ | ✓ | ? |
 | [`ASimAuthenticationEventLogs_CL`](../tables/asimauthenticationeventlogs-cl.md) |  | ? | ✓ | ? |
 | [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) |  | ✓ | ✓ | ✓ |
-| [`ASimFileEventLogs`](../tables/asimfileeventlogs.md) | `EventProduct == "Falcon Data Replicator"`<br>`EventVendor == "CrowdStrike"` | ✓ | ✓ | ? |
+| [`ASimFileEventLogs`](../tables/asimfileeventlogs.md) |  | ✓ | ✓ | ? |
 | [`ASimFileEventLogs_CL`](../tables/asimfileeventlogs-cl.md) |  | ? | ✓ | ? |
 | [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) |  | ✓ | ✓ | ✓ |
 | [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) |  | ✓ | ✓ | ? |
-| [`ASimProcessEventLogs_CL`](../tables/asimprocesseventlogs-cl.md) |  | ? | ✓ | ? |
+| [`ASimProcessEventLogs_CL`](../tables/asimprocesseventlogs-cl.md) | `EventProduct == "Falcon Data Replicator"`<br>`EventVendor == "CrowdStrike"` | ? | ✓ | ? |
 | [`ASimRegistryEventLogs`](../tables/asimregistryeventlogs.md) |  | ✓ | ✓ | ? |
 | [`ASimRegistryEventLogs_CL`](../tables/asimregistryeventlogs-cl.md) |  | ? | ✓ | ? |
 | [`ASimUserManagementActivityLogs`](../tables/asimusermanagementactivitylogs.md) |  | ✓ | ✓ | ? |

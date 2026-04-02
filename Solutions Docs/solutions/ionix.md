@@ -1,4 +1,4 @@
-# Cyberpion Security Logs
+# IONIX Security Logs
 
 *Solution: IONIX*
 
@@ -19,6 +19,7 @@
 | **Version** | 3.0.0 |
 | **Author** | IONIX |
 | **First Published** | 2022-05-02 |
+| **Last Updated** | 2026-03-27 |
 | **Solution Folder** | [IONIX](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IONIX) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cyberpion1597832716616.cyberpion_mss) · Popularity: 🔵 Medium (57%) |
 

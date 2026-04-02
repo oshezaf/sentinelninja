@@ -19,6 +19,7 @@
 | **Version** | 3.0.5 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-07-07 |
+| **Last Updated** | 2026-03-27 |
 | **Solution Folder** | [Sophos Endpoint Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20Endpoint%20Protection) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-sophosep) · Popularity: 🟢 High (85%) |
 

@@ -19,7 +19,7 @@
 | **Version** | 3.0.0 |
 | **Author** | Varonis |
 | **First Published** | 2025-10-27 |
-| **Last Updated** | 2025-10-01 |
+| **Last Updated** | 2026-04-01 |
 | **Solution Folder** | [Varonis Purview](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Varonis%20Purview) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/varonis.azure-sentinel-solution-varonispurview) · Popularity: ⚪ Very Low (0%) |
 

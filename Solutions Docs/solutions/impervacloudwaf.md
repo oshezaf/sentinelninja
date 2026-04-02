@@ -19,6 +19,7 @@
 | **Version** | 2.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-09-28 |
+| **Last Updated** | 2026-04-01 |
 | **Solution Folder** | [ImpervaCloudWAF](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ImpervaCloudWAF) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-impervawafcloud) · Popularity: 🔵 Medium (79%) |
 
@@ -56,7 +57,7 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ImpervaWAFCloudV2_CL`](../tables/impervawafcloudv2-cl.md) | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md), [Imperva Cloud WAF](../connectors/impervacloudwaflogsccfdefinition.md) | - |
+| [`ImpervaWAFCloudV2_CL`](../tables/impervawafcloudv2-cl.md) | [Imperva Cloud WAF](../connectors/impervacloudwaflogsccfdefinition.md), [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) | - |
 | [`ImpervaWAFCloud_CL`](../tables/impervawafcloud-cl.md) 🔶 | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) | - |
 
 

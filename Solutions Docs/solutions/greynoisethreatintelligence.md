@@ -19,7 +19,7 @@
 | **Version** | 3.0.3 |
 | **Author** | JP Bourget jp@bluecycle.net |
 | **First Published** | 2023-09-05 |
-| **Last Updated** | 2025-07-28 |
+| **Last Updated** | 2026-03-24 |
 | **Solution Folder** | [GreyNoiseThreatIntelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GreyNoiseThreatIntelligence) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/greynoiseintelligenceinc1681236078693.microsoft-sentinel-byol-greynoise) · Popularity: ⚪ Very Low (0%) |
 

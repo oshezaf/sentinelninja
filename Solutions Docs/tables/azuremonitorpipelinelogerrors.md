@@ -11,7 +11,7 @@ Reference for AzureMonitorPipelineLogErrors table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Azure Resources |
-| **Basic Logs Eligible** | ✗ No |
+| **Basic Logs Eligible** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azuremonitorpipelinelogerrors) |
 

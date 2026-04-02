@@ -232,11 +232,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Workbook-AzureSQLSecurity](../content/azure-sql-database-solution-for-sentinel-workbook-azuresqlsecurity-2448278c.md) |  |
 
-**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
+**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):** `OperationName in "Add member to role,Add user,AzureFirewallIDSLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"`<br>`OperationName contains "create"`<br>`OperationName contains "delete"`<br>`OperationName contains "lockbox"`<br>`OperationName contains "remove"`<br>`OperationName contains "update"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |  |
+| Workbook |
+|:-------------|
+| [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):** `OperationName contains "PIM"`
 
@@ -244,11 +244,11 @@ This table is ingested by the following connectors:
 |:-------------|
 | [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |
 
-**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):**
+**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):** `OperationName in "Add member to role,Add user,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "Add"`<br>`OperationName contains "Audit"`<br>`OperationName contains "Change"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Log"`<br>`OperationName contains "Monitor"`<br>`OperationName contains "PIM"`<br>`OperationName contains "Remove"`<br>`OperationName contains "Update"`<br>`OperationName contains "Write"`<br>`OperationName contains "reset"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |  |
+| Workbook |
+|:-------------|
+| [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 
@@ -256,11 +256,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md) |  |
 
-**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
+**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"`<br>`OperationName !contains "external"`<br>`OperationName !contains "invite"`<br>`OperationName !contains "licnense"`<br>`OperationName contains "group"`<br>`OperationName contains "member"`<br>`OperationName contains "principal"`<br>`OperationName contains "role"`<br>`OperationName contains "user"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
+| Workbook |
+|:-------------|
+| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |
 
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):** `OperationName in "Add member to role,Add user,Consent to application,Create Deployment,Create or Update Virtual Machine,Create role assignment,List Storage Account Keys,Reset user password,Update user"`<br>`OperationName in "Set domain authentication,Set federation settings on domain,Sign-in activity"`<br>`OperationName != "Consent to application"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Update"`<br>`OperationName contains "delet"`<br>`OperationName contains "delete"`<br>`OperationName contains "remove"`<br>`OperationName has "Create"`<br>`OperationName has_any "Create,Update"`<br>`OperationName has_any "Ip,Security Rule"`
 
@@ -280,11 +280,11 @@ This table is ingested by the following connectors:
 |:-------------|
 | [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |
 
-**In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):**
+**In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):** `OperationName has_any "Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user"`<br>`OperationName has_any "directory write,policy update,role assignment,role update"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md) |  |
+| Workbook |
+|:-------------|
+| [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md) |
 
 **In solution [ThreatAnalysis&Response](../solutions/threatanalysis&response.md):**
 
@@ -315,7 +315,7 @@ This table is ingested by the following connectors:
 | [PlaybookHealth](../content/github-only-playbookhealth-6ce06262.md) | `OperationName == "Microsoft.Logic/workflows/workflowRunCompleted"`<br>`OperationName has "Create"`<br>`OperationName has "Delete"`<br>`OperationName has "Disable"`<br>`OperationName has "Enable"`<br>`OperationName has "set"`<br>`OperationName startswith "Microsoft.Logic/workflows/workflowAction"`<br>`OperationName startswith "Microsoft.Logic/workflows/workflowRun"`<br>`OperationName startswith "Microsoft.Logic/workflows/workflowRunCompleted"`<br>`OperationName startswith "Microsoft.Logic/workflows/workflowTrigger"` |
 | [SensitiveOperationsinAzureActivityLogReview](../content/github-only-sensitiveoperationsinazureactivitylogreview-eb1864d3.md) | `OperationName == "Create or Update Virtual Machine Extension"` |
 | [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
-| [WorkspaceAuditing](../content/github-only-workspaceauditing-b4e840dd.md) | `OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Update"` |
+| [WorkspaceAuditing](../content/github-only-workspaceauditing-b4e840dd.md) |  |
 | [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) | `OperationName !in "Microsoft.SecurityInsights/Incidents/investigations/write,Microsoft.SecurityInsights/dataConnectorsCheckRequirements/action"`<br>`ResourceProvider == "Microsoft.SecurityInsights"` |
 | [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `OperationName in "Add app role assignment grant to user,Add application,Add group,Add member to role,Add member to role completed (PIM activation),Add user,Create access package,Reset user password,Update conditional access policy,Update user,User requests access package assignment"`<br>`OperationName contains "PIM"`<br>`OperationName contains "create access package"`<br>`OperationName contains "permanent"`<br>`OperationName has "User requests access package assignment"`<br>`OperationName has "application"` |
 
@@ -461,9 +461,9 @@ This table collects data from the following Azure resource types:
 - `microsoft.network/bastionhosts`
 - `microsoft.healthcareapis/services`
 
-## Selection Criteria Summary (9 criteria, 9 total references)
+## Selection Criteria Summary (13 criteria, 13 total references)
 
-References by type: 0 connectors, 9 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 13 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -471,29 +471,57 @@ References by type: 0 connectors, 9 content items, 0 ASIM parsers, 0 other parse
 | `OperationName == "Create or Update Virtual Machine Extension"` | - | 1 | - | - | **1** |
 | `OperationName contains "delete"`<br>`OperationName contains "remove"` | - | 1 | - | - | **1** |
 | `OperationName has "Create"` | - | 1 | - | - | **1** |
+| `OperationName in "Add member to role,Add user,AzureFirewallIDSLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"`<br>`OperationName contains "create"`<br>`OperationName contains "delete"`<br>`OperationName contains "lockbox"`<br>`OperationName contains "remove"`<br>`OperationName contains "update"` | - | 1 | - | - | **1** |
 | `OperationName contains "PIM"` | - | 1 | - | - | **1** |
+| `OperationName in "Add member to role,Add user,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "Add"`<br>`OperationName contains "Audit"`<br>`OperationName contains "Change"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Log"`<br>`OperationName contains "Monitor"`<br>`OperationName contains "PIM"`<br>`OperationName contains "Remove"`<br>`OperationName contains "Update"`<br>`OperationName contains "Write"`<br>`OperationName contains "reset"` | - | 1 | - | - | **1** |
+| `OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"`<br>`OperationName !contains "external"`<br>`OperationName !contains "invite"`<br>`OperationName !contains "licnense"`<br>`OperationName contains "group"`<br>`OperationName contains "member"`<br>`OperationName contains "principal"`<br>`OperationName contains "role"`<br>`OperationName contains "user"` | - | 1 | - | - | **1** |
 | `OperationName in "Add member to role,Add user,Consent to application,Create Deployment,Create or Update Virtual Machine,Create role assignment,List Storage Account Keys,Reset user password,Update user"`<br>`OperationName in "Set domain authentication,Set federation settings on domain,Sign-in activity"`<br>`OperationName != "Consent to application"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Update"`<br>`OperationName contains "delet"`<br>`OperationName contains "delete"`<br>`OperationName contains "remove"`<br>`OperationName has "Create"`<br>`OperationName has_any "Create,Update"`<br>`OperationName has_any "Ip,Security Rule"` | - | 1 | - | - | **1** |
 | `OperationName contains "Delete"`<br>`OperationName contains "PIM"`<br>`OperationName contains "Remove"` | - | 1 | - | - | **1** |
 | `OperationName == "Consent to application"`<br>`OperationName == "Disable Strong Authentication"`<br>`OperationName contains "password"` | - | 1 | - | - | **1** |
+| `OperationName has_any "Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user"`<br>`OperationName has_any "directory write,policy update,role assignment,role update"` | - | 1 | - | - | **1** |
 | `OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,AzureFirewallThreatIntelLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **9** | **0** | **0** | **9** |
+| **Total** | **0** | **13** | **0** | **0** | **13** |
 
 ### OperationName
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `contains PIM` | - | 3 | - | - | **3** |
+| `Add member to role` | - | 5 | - | - | **5** |
+| `Add user` | - | 5 | - | - | **5** |
+| `Reset user password` | - | 5 | - | - | **5** |
+| `Update user` | - | 5 | - | - | **5** |
+| `contains PIM` | - | 5 | - | - | **5** |
+| `contains delete` | - | 3 | - | - | **3** |
+| `contains remove` | - | 3 | - | - | **3** |
+| `AzureFirewallIDSLog` | - | 3 | - | - | **3** |
+| `NetworkSecurityGroupEvents` | - | 3 | - | - | **3** |
+| `contains Delete` | - | 3 | - | - | **3** |
 | `Create role assignment` | - | 2 | - | - | **2** |
-| `contains delete` | - | 2 | - | - | **2** |
-| `contains remove` | - | 2 | - | - | **2** |
 | `has Create` | - | 2 | - | - | **2** |
-| `Add member to role` | - | 2 | - | - | **2** |
-| `Add user` | - | 2 | - | - | **2** |
+| `contains Create` | - | 2 | - | - | **2** |
+| `contains Remove` | - | 2 | - | - | **2** |
+| `contains Update` | - | 2 | - | - | **2** |
+| `ApplicationGatewayFirewall` | - | 2 | - | - | **2** |
 | `Consent to application` | - | 2 | - | - | **2** |
-| `Reset user password` | - | 2 | - | - | **2** |
-| `Update user` | - | 2 | - | - | **2** |
-| `contains Delete` | - | 2 | - | - | **2** |
 | `Create or Update Virtual Machine Extension` | - | 1 | - | - | **1** |
+| `contains create` | - | 1 | - | - | **1** |
+| `contains lockbox` | - | 1 | - | - | **1** |
+| `contains update` | - | 1 | - | - | **1** |
+| `contains Add` | - | 1 | - | - | **1** |
+| `contains Audit` | - | 1 | - | - | **1** |
+| `contains Change` | - | 1 | - | - | **1** |
+| `contains Log` | - | 1 | - | - | **1** |
+| `contains Monitor` | - | 1 | - | - | **1** |
+| `contains Write` | - | 1 | - | - | **1** |
+| `contains reset` | - | 1 | - | - | **1** |
+| `!contains external` | - | 1 | - | - | **1** |
+| `!contains invite` | - | 1 | - | - | **1** |
+| `!contains licnense` | - | 1 | - | - | **1** |
+| `contains group` | - | 1 | - | - | **1** |
+| `contains member` | - | 1 | - | - | **1** |
+| `contains principal` | - | 1 | - | - | **1** |
+| `contains role` | - | 1 | - | - | **1** |
+| `contains user` | - | 1 | - | - | **1** |
 | `Create Deployment` | - | 1 | - | - | **1** |
 | `Create or Update Virtual Machine` | - | 1 | - | - | **1** |
 | `List Storage Account Keys` | - | 1 | - | - | **1** |
@@ -501,20 +529,24 @@ References by type: 0 connectors, 9 content items, 0 ASIM parsers, 0 other parse
 | `Set federation settings on domain` | - | 1 | - | - | **1** |
 | `Sign-in activity` | - | 1 | - | - | **1** |
 | `!= Consent to application` | - | 1 | - | - | **1** |
-| `contains Create` | - | 1 | - | - | **1** |
-| `contains Update` | - | 1 | - | - | **1** |
 | `contains delet` | - | 1 | - | - | **1** |
 | `has_any Create` | - | 1 | - | - | **1** |
 | `has_any Update` | - | 1 | - | - | **1** |
 | `has_any Ip` | - | 1 | - | - | **1** |
 | `has_any Security Rule` | - | 1 | - | - | **1** |
-| `contains Remove` | - | 1 | - | - | **1** |
 | `Disable Strong Authentication` | - | 1 | - | - | **1** |
 | `contains password` | - | 1 | - | - | **1** |
-| `ApplicationGatewayFirewall` | - | 1 | - | - | **1** |
-| `AzureFirewallIDSLog` | - | 1 | - | - | **1** |
+| `has_any Add directory role member` | - | 1 | - | - | **1** |
+| `has_any Add member to role` | - | 1 | - | - | **1** |
+| `has_any Add user` | - | 1 | - | - | **1** |
+| `has_any Create user` | - | 1 | - | - | **1** |
+| `has_any Role assignment` | - | 1 | - | - | **1** |
+| `has_any Update user` | - | 1 | - | - | **1** |
+| `has_any directory write` | - | 1 | - | - | **1** |
+| `has_any policy update` | - | 1 | - | - | **1** |
+| `has_any role assignment` | - | 1 | - | - | **1** |
+| `has_any role update` | - | 1 | - | - | **1** |
 | `AzureFirewallThreatIntelLog` | - | 1 | - | - | **1** |
-| `NetworkSecurityGroupEvents` | - | 1 | - | - | **1** |
 
 ---
 

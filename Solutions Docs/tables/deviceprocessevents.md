@@ -315,7 +315,7 @@ This table is ingested by the following connectors:
 | [Backup deletion](../content/github-only-backup-deletion-fc2c12c1-ee93-45c2-9a1f-f8a143ec3eb1-f98a2e92.md) |  |
 | [Base64 Detector and Decoder](../content/github-only-base64-detector-and-decoder-89fc1421-8387-4c2b-9bcb-75ead57ccb2c-25716cea.md) |  |
 | [Base64encodePEFile](../content/github-only-base64encodepefile-1174ae5b-8ce9-4321-a4e2-99e5f016beed-0c3ad660.md) |  |
-| [Baseline Comparison](../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.md) |  |
+| [Baseline Comparison](../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.md) | `ActionType == "PowerShellCommand"` |
 | [Bear Activity GTR 2019](../content/github-only-bear-activity-gtr-2019-376d30db-e3ab-49fb-852a-00d1ade65a54-002c22c8.md) |  |
 | [Bitsadmin Activity](../content/github-only-bitsadmin-activity-2458e226-76e6-458c-8bf7-8766cc993b82-80426643.md) |  |
 | [CVE-2021-36934 usage detection](../content/github-only-cve-2021-36934-usage-detection-ab0afd3c-47fc-4a82-83ad-5c92528bdf08-7a7786df.md) |  |
@@ -486,8 +486,8 @@ This table is ingested by the following connectors:
 | [detect-cyzfc-activity (3)](../content/github-only-detect-cyzfc-activity-3-5c9c8f5c-01cf-4670-9beb-ee90e0a4ec58-659ab825.md) |  |
 | [detect-doublepulsar-execution](../content/github-only-detect-doublepulsar-execution-10a17179-d143-476d-80cd-c5a6cca66d59-94331698.md) |  |
 | [detect-exploitation-of-cve-2018-8653](../content/github-only-detect-exploitation-of-cve-2018-8653-1f541cc3-2c46-4f2a-9b4b-e082f25ec369-55a4893d.md) |  |
-| [detect-impacket-atexec](../content/github-only-detect-impacket-atexec-75e3a1b2-bd6d-4e79-8c74-85a3bc0b0617-a33eaf14.md) | `ActionType in "NamedPipeEvent,RegistryKeyCreated"` |
-| [detect-impacket-dcomexec](../content/github-only-detect-impacket-dcomexec-3069ee4c-68a2-4512-9048-4751bc0fbac2-d07da8d4.md) |  |
+| [detect-impacket-atexec](../content/github-only-detect-impacket-atexec-75e3a1b2-bd6d-4e79-8c74-85a3bc0b0617-a33eaf14.md) |  |
+| [detect-impacket-dcomexec](../content/github-only-detect-impacket-dcomexec-3069ee4c-68a2-4512-9048-4751bc0fbac2-d07da8d4.md) | `ActionType == "InboundConnectionAccepted"` |
 | [detect-impacket-psexec-module](../content/github-only-detect-impacket-psexec-module-6e6e6486-1bfc-4de0-bcbe-1ed88dfee2a1-ba6e359d.md) |  |
 | [detect-impacket-wmiexec](../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-f0a94abb.md) |  |
 | [detect-impacket-wmiexec](../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-32647bb7.md) |  |
@@ -574,11 +574,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md) |  |
 
-**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
+**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
+| Workbook |
+|:-------------|
+| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 
@@ -592,7 +592,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `ActionType == "RemoteInteractiveLogon"`<br>`ActionType == "LdapSearch"` |
+| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |
 
 ## Parsers Using This Table (1)
 
@@ -602,30 +602,38 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|:-------------------|
 | [ASimProcessEventMicrosoft365D](../asim/asimprocesseventmicrosoft365d.md) | ProcessEvent | Microsoft 365 Defender for endpoint |  |
 
-## Selection Criteria Summary (5 criteria, 5 total references)
+## Selection Criteria Summary (6 criteria, 7 total references)
 
-References by type: 0 connectors, 5 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 7 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `ActionType == "InboundConnectionAccepted"` | - | 2 | - | - | **2** |
 | `ActionType != "ListeningConnectionCreated"` | - | 1 | - | - | **1** |
 | `ActionType == "LogonSuccess"` | - | 1 | - | - | **1** |
-| `ActionType == "InboundConnectionAccepted"` | - | 1 | - | - | **1** |
 | `ActionType in "FileCreated,FileModified"` | - | 1 | - | - | **1** |
-| `ActionType in "NamedPipeEvent,RegistryKeyCreated"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **5** | **0** | **0** | **5** |
+| `ActionType == "PowerShellCommand"` | - | 1 | - | - | **1** |
+| `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **7** | **0** | **0** | **7** |
 
 ### ActionType
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `InboundConnectionAccepted` | - | 2 | - | - | **2** |
 | `!= ListeningConnectionCreated` | - | 1 | - | - | **1** |
 | `LogonSuccess` | - | 1 | - | - | **1** |
-| `InboundConnectionAccepted` | - | 1 | - | - | **1** |
 | `FileCreated` | - | 1 | - | - | **1** |
 | `FileModified` | - | 1 | - | - | **1** |
-| `NamedPipeEvent` | - | 1 | - | - | **1** |
-| `RegistryKeyCreated` | - | 1 | - | - | **1** |
+| `PowerShellCommand` | - | 1 | - | - | **1** |
+| `Add member to role` | - | 1 | - | - | **1** |
+| `Add user` | - | 1 | - | - | **1** |
+| `InteractiveLogon` | - | 1 | - | - | **1** |
+| `RemoteInteractiveLogon` | - | 1 | - | - | **1** |
+| `Reset user password` | - | 1 | - | - | **1** |
+| `ResourceAccess` | - | 1 | - | - | **1** |
+| `Sign-in` | - | 1 | - | - | **1** |
+| `Update user` | - | 1 | - | - | **1** |
 
 ---
 

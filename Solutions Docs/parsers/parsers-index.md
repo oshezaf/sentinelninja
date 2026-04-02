@@ -483,7 +483,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 |:-------|:-------|:-------|
 | [MapNetflowUsername](mapnetflowusername.md) ⚠️ | 📦 [Cisco SD-WAN](../solutions/cisco-sd-wan.md) | ? |
 | [MarkLogicAudit](marklogicaudit.md) | 📦 [MarkLogicAudit](../solutions/marklogicaudit.md) | MarkLogicAudit_CL |
-| [McAfeeCommonSecurityLog](mcafeecommonsecuritylog.md) | 📂 *Legacy* | CommonSecurityLog |
+| [McAfee Common Security Log Parser](mcafee-common-security-log-parser.md) | 📂 *Legacy* | CommonSecurityLog |
 | [McAfeeEPOEvent](mcafeeepoevent.md) | 📦 [McAfee ePolicy Orchestrator](../solutions/mcafee-epolicy-orchestrator.md) | Syslog |
 | [McAfeeNSPEvent](mcafeenspevent.md) | 📦 [McAfee Network Security Platform](../solutions/mcafee-network-security-platform.md) | Syslog |
 | [MCASActivity](mcasactivity.md) | 📂 *Legacy* | MCASActivity_CL |
@@ -590,7 +590,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [SophosXGFirewall](sophosxgfirewall.md) | 📦 [Sophos XG Firewall](../solutions/sophos-xg-firewall.md) | Syslog |
 | [SQLServer_Parser](sqlserver-parser.md) | 📂 *Legacy* | Event |
 | [SquidProxy](squidproxy.md) | 📦 [SquidProxy](../solutions/squidproxy.md) | SquidProxy_CL |
-| [StealthBits StealthDefend Parser](stealthbits-stealthdefend-parser.md) | 📂 *Legacy* | CommonSecurityLog |
+| [StealthDefend](stealthdefend.md) | 📂 *Legacy* | CommonSecurityLog |
 | [StealthwatchEvent](stealthwatchevent.md) | 📦 [Cisco Secure Cloud Analytics](../solutions/cisco-secure-cloud-analytics.md) | Syslog |
 | [SymantecDLP](symantecdlp.md) | 📦 [Broadcom SymantecDLP](../solutions/broadcom-symantecdlp.md) | CommonSecurityLog |
 | [SymantecEndpointProtection](symantecendpointprotection.md) | 📦 [Symantec Endpoint Protection](../solutions/symantec-endpoint-protection.md) | Syslog |

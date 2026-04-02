@@ -16,7 +16,7 @@ Reference for NetworkAccessConnectionEvents table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccessconnectionevents) |
 
-## Schema (45 columns)
+## Schema (53 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccessconnectionevents)
 
@@ -53,6 +53,14 @@ Reference for NetworkAccessConnectionEvents table in Azure Monitor Logs.
 | SecurityProfileVersion | string | The version of the security profile that blocked the connection. |
 | SecurityRuleId | string | The ID of the rule that determined the action. |
 | SourceIp | string | The IP address from which the connection or session originated. |
+| SourceIpAutonomousSystemNumber | string | The autonomous system number (ASN) associated with the source IP address. |
+| SourceIpCarrier | string | The network carrier associated with the source IP address. |
+| SourceIpCity | string | The city associated with the source IP address. |
+| SourceIpCountryCode | string | The two-letter country code associated with the source IP address. |
+| SourceIpLatitude | real | The latitude coordinate associated with the source IP address. |
+| SourceIpLongitude | real | The longitude coordinate associated with the source IP address. |
+| SourceIpState | string | The state or region associated with the source IP address. |
+| SourceIpStateCode | string | The source IP state or region code. |
 | SourcePort | int | The IP port from which the connection originated. |
 | SourcePrivateIp | string | The private IP address from which the connection or session originated. |
 | SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |

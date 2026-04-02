@@ -40,19 +40,19 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 
 | Metric | Total | Published | Unpublished ⚠️ |
 |:-------|------:|----------:|------------:|
-| Solutions | **495** | 457 | 38 |
-| With Connectors | **312** | 291 | 21 |
-| With Content | **394** | 372 | 22 |
+| Solutions | **495** | 458 | 37 |
+| With Connectors | **312** | 292 | 20 |
+| With Content | **394** | 373 | 21 |
 
 ### Support Ownership
 
 | Support Tier | Total | Published | Unpublished ⚠️ |
 |:-------------|------:|----------:|------------:|
 | Microsoft | **233** | 228 | 5 |
-| Partner | **238** | 216 | 22 |
+| Partner | **238** | 217 | 21 |
 | Community | **11** | 11 | 0 |
 | Unknown | **13** | 2 | 11 |
-| **Total** | **495** | **457** | **38** |
+| **Total** | **495** | **458** | **37** |
 
 ### Other Metrics
 
@@ -67,19 +67,19 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 
 | Metric | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-------|------:|-------:|-----------:|------------:|
-| In Solutions | **392** | 344 | 31 | 17 |
+| In Solutions | **392** | 345 | 31 | 16 |
 | Discovered 🔍 | **148** | 28 | 114 | 6 |
-| **Total** | **540** | **372** | **145** | **23** |
+| **Total** | **540** | **373** | **145** | **22** |
 
 ### Support Ownership
 
 | Support Tier | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-------------|------:|-------:|-----------:|------------:|
 | Microsoft | **244** | 153 | 88 | 3 |
-| Partner | **275** | 209 | 49 | 17 |
+| Partner | **275** | 210 | 49 | 16 |
 | Community | **18** | 10 | 8 | 0 |
 | Unknown | **3** | 0 | 0 | 3 |
-| **Total** | **540** | **372** | **145** | **23** |
+| **Total** | **540** | **373** | **145** | **22** |
 
 ### Collection Methods
 
@@ -92,10 +92,10 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 | [REST Pull API](methods/rest-pull-api.md) | **57** | 53 | 0 | 4 |
 | [Native](methods/native.md) | **25** | 25 | 0 | 0 |
 | [Azure Diagnostics](methods/azure-diagnostics.md) | **17** | 17 | 0 | 0 |
-| [CCF (Legacy)](methods/ccf-legacy.md) | **16** | 14 | 1 | 1 |
+| [CCF (Legacy)](methods/ccf-legacy.md) | **16** | 15 | 1 | 0 |
 | [CCF Push](methods/ccf-push.md) | **11** | 11 | 0 | 0 |
 | [Unknown](methods/unknown.md) | **7** | 6 | 0 | 1 |
-| **Total** | **540** | **372** | **145** | **23** |
+| **Total** | **540** | **373** | **145** | **22** |
 
 ### Collection Methods by Support Tier
 
@@ -110,10 +110,10 @@ Each cell shows: Active / Deprecated / Unpublished / **Total**
 | [REST Pull API](methods/rest-pull-api.md) | 2 / 0 / 1 / **3** | 46 / 0 / 3 / **49** | 5 / 0 / 0 / **5** | - |
 | [Native](methods/native.md) | 25 / 0 / 0 / **25** | - | - | - |
 | [Azure Diagnostics](methods/azure-diagnostics.md) | 17 / 0 / 0 / **17** | - | - | - |
-| [CCF (Legacy)](methods/ccf-legacy.md) | 3 / 1 / 0 / **4** | 11 / 0 / 1 / **12** | - | - |
+| [CCF (Legacy)](methods/ccf-legacy.md) | 3 / 1 / 0 / **4** | 12 / 0 / 0 / **12** | - | - |
 | [CCF Push](methods/ccf-push.md) | - | 11 / 0 / 0 / **11** | - | - |
 | [Unknown](methods/unknown.md) | 6 / 0 / 0 / **6** | - | - | 0 / 0 / 1 / **1** |
-| **Total** | 153 / 88 / 3 / **244** | 209 / 49 / 17 / **275** | 10 / 8 / 0 / **18** | 0 / 0 / 3 / **3** |
+| **Total** | 153 / 88 / 3 / **244** | 210 / 49 / 16 / **275** | 10 / 8 / 0 / **18** | 0 / 0 / 3 / **3** |
 
 ### CCF Capabilities
 
@@ -188,9 +188,9 @@ Connectors that use at least one Custom Log V1 table (identified by type-suffixe
 | Metric | Count |
 |:-------|------:|
 | CLv1 Connectors | **159** |
-| Active | 129 |
+| Active | 130 |
 | Deprecated 🚫 | 21 |
-| Unpublished ⚠️ | 9 |
+| Unpublished ⚠️ | 8 |
 
 **By Collection Method:**
 
@@ -218,7 +218,7 @@ Connectors that use at least one Custom Log V1 table (identified by type-suffixe
 
 ### Overview
 
-**2043 tables** documented across all discovery sources. **1774 tables** have schema information.
+**2060 tables** documented across all discovery sources. **1776 tables** have schema information.
 
 ### Discovery Sources
 
@@ -227,16 +227,16 @@ Each table is assigned a single discovery source ("Discovered Via") by priority:
 | Discovery Source | Discovered Via | Total |
 |:-----------------|---------------:|------:|
 | Connector | 829 | 829 |
-| Content | 224 | 770 |
+| Content | 224 | 769 |
 | [Azure Monitor Tables Reference](https://learn.microsoft.com/azure/azure-monitor/reference/tables/tables-resourcetype) | 607 | 786 |
-| [Defender XDR Advanced Hunting Schema](https://learn.microsoft.com/defender-xdr/advanced-hunting-schema-tables) | 22 | 61 |
-| [Sentinel Tables and Connectors Reference](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) | 23 | 511 |
-| [Azure Monitor Tables Feature Support](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) | 77 | 702 |
-| [Azure Monitor Logs Ingestion API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) | 16 | 117 |
-| Schema | 245 | 1774 |
-| **Total** | **2043** | |
+| [Defender XDR Advanced Hunting Schema](https://learn.microsoft.com/defender-xdr/advanced-hunting-schema-tables) | 24 | 63 |
+| [Sentinel Tables and Connectors Reference](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) | 35 | 522 |
+| [Azure Monitor Tables Feature Support](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) | 96 | 761 |
+| [Azure Monitor Logs Ingestion API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) | 0 | 117 |
+| Schema | 245 | 1776 |
+| **Total** | **2060** | |
 
-*31 tables are available in Defender XDR but not in Azure Monitor Log Analytics.*
+*33 tables are available in Defender XDR but not in Azure Monitor Log Analytics.*
 
 ### Schema Sources
 
@@ -244,15 +244,15 @@ Tables with schema information, by schema source. A single table may have schema
 
 | Schema Source | Tables |
 |:-------------|-------:|
-| Azure Monitor docs | 817 |
+| Azure Monitor docs | 819 |
 | DCR | 9 |
 | KQL validation | 878 |
 | Connector definition | 69 |
-| **Total unique tables with schema** | **1774** |
+| **Total unique tables with schema** | **1776** |
 
 ### Custom Log V1 (CLv1) 🔶
 
-**435** of 2043 tables are Custom Log V1 tables, identified by type-suffixed columns or `_CL` suffix with compatible collection method.
+**435** of 2060 tables are Custom Log V1 tables, identified by type-suffixed columns or `_CL` suffix with compatible collection method.
 
 **By Table Category:**
 
@@ -270,17 +270,17 @@ Tables with schema information, by schema source. A single table may have schema
 
 | Metric | Total | 📦 In Solution | 📦 Discovered | 📦 Unpublished | 📄 Standalone | 🔗 GitHub Only |
 |:-------|------:|---------------:|--------------:|---------------:|--------------:|---------------:|
-| **Content Items** | **6,606** | 4,538 | 358 | 145 | 437 | 1,273 |
+| **Content Items** | **6,606** | 4,538 | 358 | 140 | 437 | 1,273 |
 
 ### Content Items by Type
 
 | Type | Total | 📦 In Solution | 📦 Discovered | 📦 Unpublished | 📄 Standalone | 🔗 GitHub Only |
 |:-----|------:|---------------:|--------------:|---------------:|--------------:|---------------:|
-| Analytic Rules | 2,369 | 1,931 | 268 | 68 | 158 | 12 |
-| Hunting Queries | 2,292 | 1,160 | 14 | 8 | 84 | 1,034 |
+| Analytic Rules | 2,369 | 1,931 | 268 | 66 | 158 | 12 |
+| Hunting Queries | 2,292 | 1,160 | 14 | 7 | 84 | 1,034 |
 | Playbooks | 820 | 556 | 40 | 39 | 188 | 36 |
-| Workbooks | 538 | 343 | 10 | 18 | 0 | 185 |
-| Parsers* | 514 | 488 | 26 | 12 | 0 | 0 |
+| Workbooks | 538 | 343 | 10 | 17 | 0 | 185 |
+| Parsers* | 514 | 488 | 26 | 11 | 0 | 0 |
 | Watchlists | 48 | 42 | 0 | 0 | 0 | 6 |
 | Summary Rules | 25 | 18 | 0 | 0 | 7 | 0 |
 
@@ -367,4 +367,4 @@ Tables with schema information, by schema source. A single table may have schema
 
 ---
 
-*Generated by Solutions Analyzer - March 2026*
+*Generated by Solutions Analyzer - April 2026*

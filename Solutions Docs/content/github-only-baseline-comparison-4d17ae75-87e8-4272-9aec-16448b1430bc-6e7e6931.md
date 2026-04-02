@@ -27,11 +27,11 @@ This content item queries data from the following tables:
 | [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ | ✓ |
 | [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ | ? |
 | [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) |  | ✓ | ✗ | ? |
-| [`DeviceInfo`](../tables/deviceinfo.md) | `ActionType == "PowerShellCommand"` | ✓ | ✗ | ? |
+| [`DeviceInfo`](../tables/deviceinfo.md) |  | ✓ | ✗ | ? |
 | [`DeviceLogonEvents`](../tables/devicelogonevents.md) |  | ✓ | ✗ | ? |
 | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |  | ✓ | ✗ | ? |
 | [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) |  | ✓ | ✗ | ? |
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ | ? |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ActionType == "PowerShellCommand"` | ✓ | ✗ | ? |
 | [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) |  | ✓ | ✗ | ? |
 
 ---

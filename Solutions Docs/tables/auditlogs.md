@@ -297,7 +297,7 @@ This table is ingested by the following connectors:
 | [Storage Account Key Enumeration](../content/github-only-storage-account-key-enumeration-f19f913f-292a-41ed-9ac0-f3ea5e703d36-1724f133.md) |  |
 | [Storage Alerts Correlation with CommonSecurityLogs & AuditLogs](../content/github-only-storage-alerts-correlation-with-commonsecuritylogs-&-auditlogs-860a8df2-8d19-4c60-bf61-de1c02422797-30bd1fb3.md) |  |
 | [Successful Sign-In From Non-Compliant Device with bulk download activity](../content/github-only-successful-sign-in-from-non-compliant-device-with-bulk-download-activity-a5bb38e3-5ee2-47fe-a65d-c3c9341112ef-2c20eff5.md) |  |
-| [Unfamiliar Signin Correlation with AzurePortal Signin Attempts and AuditLogs](../content/github-only-unfamiliar-signin-correlation-with-azureportal-signin-attempts-and-auditlogs-6962473c-bcb8-421d-a0db-826078cad280-15192c3c.md) | `OperationName has_any "Add member to role"` |
+| [Unfamiliar Signin Correlation with AzurePortal Signin Attempts and AuditLogs](../content/github-only-unfamiliar-signin-correlation-with-azureportal-signin-attempts-and-auditlogs-6962473c-bcb8-421d-a0db-826078cad280-15192c3c.md) |  |
 
 ### Workbooks (25)
 
@@ -403,9 +403,9 @@ This table collects data from the following Azure resource types:
 - `microsoft.azureadgraph/tenants`
 - `microsoft.graph/tenants`
 
-## Selection Criteria Summary (49 criteria, 75 total references)
+## Selection Criteria Summary (48 criteria, 74 total references)
 
-References by type: 0 connectors, 75 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 74 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -456,9 +456,8 @@ References by type: 0 connectors, 75 content items, 0 ASIM parsers, 0 other pars
 | `OperationName in "Invite external user,Redeem external user invite"` | - | 1 | - | - | **1** |
 | `OperationName == "User registered security info"` | - | 1 | - | - | **1** |
 | `OperationName has_any "password,security info"` | - | 1 | - | - | **1** |
-| `OperationName has_any "Add member to role"` | - | 1 | - | - | **1** |
 | `OperationName in "Remove eligible member from role,Remove member from role"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **75** | **0** | **0** | **75** |
+| **Total** | **0** | **74** | **0** | **0** | **74** |
 
 ### OperationName
 
@@ -527,7 +526,6 @@ References by type: 0 connectors, 75 content items, 0 ASIM parsers, 0 other pars
 | `Read BitLocker key` | - | 1 | - | - | **1** |
 | `has_any password` | - | 1 | - | - | **1** |
 | `has_any security info` | - | 1 | - | - | **1** |
-| `has_any Add member to role` | - | 1 | - | - | **1** |
 | `Remove eligible member from role` | - | 1 | - | - | **1** |
 | `Remove member from role` | - | 1 | - | - | **1** |
 

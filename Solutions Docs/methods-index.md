@@ -19,10 +19,10 @@ Data connectors use different collection methods to ingest data into Microsoft S
 | [REST Pull API](methods/rest-pull-api.md) | **57** | 53 | 0 | 4 |
 | [Native](methods/native.md) | **25** | 25 | 0 | 0 |
 | [Azure Diagnostics](methods/azure-diagnostics.md) | **17** | 17 | 0 | 0 |
-| [CCF (Legacy)](methods/ccf-legacy.md) | **16** | 14 | 1 | 1 |
+| [CCF (Legacy)](methods/ccf-legacy.md) | **16** | 15 | 1 | 0 |
 | [CCF Push](methods/ccf-push.md) | **11** | 11 | 0 | 0 |
 | [Unknown](methods/unknown.md) | **7** | 6 | 0 | 1 |
-| **Total** | **540** | **372** | **145** | **23** |
+| **Total** | **540** | **373** | **145** | **22** |
 
 ---
 

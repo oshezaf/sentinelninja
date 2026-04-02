@@ -412,7 +412,7 @@ This table is ingested by the following connectors:
 | [Spike in failed sign-in events](../content/github-only-spike-in-failed-sign-in-events-51f4faf9-c3b1-4e9f-9c90-5d6afd191552-ac3569e5.md) |  |
 | [Storage Account Key Enumeration](../content/github-only-storage-account-key-enumeration-f19f913f-292a-41ed-9ac0-f3ea5e703d36-1724f133.md) |  |
 | [Successful Sign-In From Non-Compliant Device with bulk download activity](../content/github-only-successful-sign-in-from-non-compliant-device-with-bulk-download-activity-a5bb38e3-5ee2-47fe-a65d-c3c9341112ef-2c20eff5.md) | `OperationName has_any "Download group members,Download groups,Download user registeration details,Download users"` |
-| [Unfamiliar Signin Correlation with AzurePortal Signin Attempts and AuditLogs](../content/github-only-unfamiliar-signin-correlation-with-azureportal-signin-attempts-and-auditlogs-6962473c-bcb8-421d-a0db-826078cad280-15192c3c.md) |  |
+| [Unfamiliar Signin Correlation with AzurePortal Signin Attempts and AuditLogs](../content/github-only-unfamiliar-signin-correlation-with-azureportal-signin-attempts-and-auditlogs-6962473c-bcb8-421d-a0db-826078cad280-15192c3c.md) | `OperationName has_any "Add member to role"` |
 | [User Account Linked to Storage Account File Upload](../content/github-only-user-account-linked-to-storage-account-file-upload-bee57113-7b9d-4158-958c-a7f3d534c6c4-d30a8c48.md) | `OperationName in "PutBlob,PutRange"` |
 | [Users Authenticating to Other Microsoft Entra ID Tenants](../content/github-only-users-authenticating-to-other-microsoft-entra-id-tenants-9b4a1f38-2fae-44dd-9e85-685a2e4b9bb5-c7672be4.md) |  |
 
@@ -495,7 +495,7 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [AzureActiveDirectorySignins](../content/microsoft-entra-id-azureactivedirectorysignins-97204667.md) |  |
-| [ConditionalAccessSISM](../content/microsoft-entra-id-conditionalaccesssism-90abe712.md) | `OperationName in "Add conditional access policy,Add member to group,Add member to restricted management administrative unit,Delete conditional access policy,Remove member from group,Remove member from restricted management administrative unit,Update conditional access policy,Update group"` |
+| [ConditionalAccessSISM](../content/microsoft-entra-id-conditionalaccesssism-90abe712.md) |  |
 
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
 
@@ -515,11 +515,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
 
-**In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):** `OperationName has_any "Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user"`<br>`OperationName has_any "directory write,policy update,role assignment,role update"`
+**In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):**
 
-| Workbook |
-|:-------------|
-| [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md) |
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md) |  |
 
 **In solution [Teams](../solutions/teams.md):**
 
@@ -564,7 +564,7 @@ This table is ingested by the following connectors:
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [MicrosoftTeams](../content/github-only-microsoftteams-429824b1.md) |  |
 | [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `OperationName == "Add member to group"`<br>`OperationName in "Set domain authentication,Set federation settings on domain"`<br>`OperationName has_any "Add service principal,Certificates`<br>`secrets management"` |
+| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |
 | [UserMap](../content/github-only-usermap-db59dcfa.md) |  |
 | [User_Analytics_Workbook](../content/github-only-user-analytics-workbook-b95f3e5a.md) |  |
 | [WindowsFirewall](../content/github-only-windowsfirewall-e0440cb8.md) |  |
@@ -585,9 +585,9 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.graph/tenants`
 
-## Selection Criteria Summary (13 criteria, 13 total references)
+## Selection Criteria Summary (12 criteria, 12 total references)
 
-References by type: 0 connectors, 13 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 12 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -599,12 +599,11 @@ References by type: 0 connectors, 13 content items, 0 ASIM parsers, 0 other pars
 | `OperationName == "User registered security info"` | - | 1 | - | - | **1** |
 | `OperationName in "Register device,User registered security info"` | - | 1 | - | - | **1** |
 | `OperationName has_any "Download group members,Download groups,Download user registeration details,Download users"` | - | 1 | - | - | **1** |
+| `OperationName has_any "Add member to role"` | - | 1 | - | - | **1** |
 | `OperationName == "Sign-in activity"` | - | 1 | - | - | **1** |
 | `OperationName == "Add user"` | - | 1 | - | - | **1** |
 | `OperationName == "Add registered owner to device"` | - | 1 | - | - | **1** |
-| `OperationName in "Add conditional access policy,Add member to group,Add member to restricted management administrative unit,Delete conditional access policy,Remove member from group,Remove member from restricted management administrative unit,Update conditional access policy,Update group"` | - | 1 | - | - | **1** |
-| `OperationName has_any "Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user"`<br>`OperationName has_any "directory write,policy update,role assignment,role update"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **13** | **0** | **0** | **13** |
+| **Total** | **0** | **12** | **0** | **0** | **12** |
 
 ### OperationName
 
@@ -622,27 +621,10 @@ References by type: 0 connectors, 13 content items, 0 ASIM parsers, 0 other pars
 | `has_any Download groups` | - | 1 | - | - | **1** |
 | `has_any Download user registeration details` | - | 1 | - | - | **1** |
 | `has_any Download users` | - | 1 | - | - | **1** |
+| `has_any Add member to role` | - | 1 | - | - | **1** |
 | `Sign-in activity` | - | 1 | - | - | **1** |
 | `Add user` | - | 1 | - | - | **1** |
 | `Add registered owner to device` | - | 1 | - | - | **1** |
-| `Add conditional access policy` | - | 1 | - | - | **1** |
-| `Add member to group` | - | 1 | - | - | **1** |
-| `Add member to restricted management administrative unit` | - | 1 | - | - | **1** |
-| `Delete conditional access policy` | - | 1 | - | - | **1** |
-| `Remove member from group` | - | 1 | - | - | **1** |
-| `Remove member from restricted management administrative unit` | - | 1 | - | - | **1** |
-| `Update conditional access policy` | - | 1 | - | - | **1** |
-| `Update group` | - | 1 | - | - | **1** |
-| `has_any Add directory role member` | - | 1 | - | - | **1** |
-| `has_any Add member to role` | - | 1 | - | - | **1** |
-| `has_any Add user` | - | 1 | - | - | **1** |
-| `has_any Create user` | - | 1 | - | - | **1** |
-| `has_any Role assignment` | - | 1 | - | - | **1** |
-| `has_any Update user` | - | 1 | - | - | **1** |
-| `has_any directory write` | - | 1 | - | - | **1** |
-| `has_any policy update` | - | 1 | - | - | **1** |
-| `has_any role assignment` | - | 1 | - | - | **1** |
-| `has_any role update` | - | 1 | - | - | **1** |
 
 ---
 
