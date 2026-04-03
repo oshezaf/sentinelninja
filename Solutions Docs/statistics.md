@@ -218,7 +218,7 @@ Connectors that use at least one Custom Log V1 table (identified by type-suffixe
 
 ### Overview
 
-**2060 tables** documented across all discovery sources. **1776 tables** have schema information.
+**1859 tables** documented across all discovery sources. **1568 tables** have schema information.
 
 ### Discovery Sources
 
@@ -227,14 +227,14 @@ Each table is assigned a single discovery source ("Discovered Via") by priority:
 | Discovery Source | Discovered Via | Total |
 |:-----------------|---------------:|------:|
 | Connector | 829 | 829 |
-| Content | 224 | 769 |
+| Content | 224 | 770 |
 | [Azure Monitor Tables Reference](https://learn.microsoft.com/azure/azure-monitor/reference/tables/tables-resourcetype) | 607 | 786 |
 | [Defender XDR Advanced Hunting Schema](https://learn.microsoft.com/defender-xdr/advanced-hunting-schema-tables) | 24 | 63 |
 | [Sentinel Tables and Connectors Reference](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) | 35 | 522 |
 | [Azure Monitor Tables Feature Support](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) | 96 | 761 |
 | [Azure Monitor Logs Ingestion API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) | 0 | 117 |
-| Schema | 245 | 1776 |
-| **Total** | **2060** | |
+| Schema | 44 | 1568 |
+| **Total** | **1859** | |
 
 *33 tables are available in Defender XDR but not in Azure Monitor Log Analytics.*
 
@@ -246,13 +246,13 @@ Tables with schema information, by schema source. A single table may have schema
 |:-------------|-------:|
 | Azure Monitor docs | 819 |
 | DCR | 9 |
-| KQL validation | 878 |
+| KQL validation | 671 |
 | Connector definition | 69 |
-| **Total unique tables with schema** | **1776** |
+| **Total unique tables with schema** | **1568** |
 
 ### Custom Log V1 (CLv1) 🔶
 
-**435** of 2060 tables are Custom Log V1 tables, identified by type-suffixed columns or `_CL` suffix with compatible collection method.
+**435** of 1859 tables are Custom Log V1 tables, identified by type-suffixed columns or `_CL` suffix with compatible collection method.
 
 **By Table Category:**
 
