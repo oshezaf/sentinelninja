@@ -1,6 +1,6 @@
 # Analytic Rules - D
 
-**145 analytic rules** starting with 'D'.
+**128 analytic rules** starting with 'D'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -8,23 +8,16 @@
 
 ---
 
-**Jump to letter:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | [B](analytic-rules-b.md) | [C](analytic-rules-c.md) | **D** | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | [M](analytic-rules-m.md) | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [Z](analytic-rules-z.md)
+**Jump to letter:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | [B](analytic-rules-b.md) | [C](analytic-rules-c.md) | **D** | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | [M](analytic-rules-m.md) | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [X](analytic-rules-x.md) | [Z](analytic-rules-z.md)
 
 > **Source:** 📦 Solution | 📄 Standalone | 🔗 GitHub Only
 
 | Name | Severity | Source |
 |:-----|:---------|:-------|
-| [Dark Web (High)](ctm360-dark-web-high-e5ee49ee-9a10-4e6b-a8df-d8c35209ac33-21b2846b.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Dark Web (Informational)](ctm360-dark-web-informational-ab55aff7-7f23-43e8-a93c-6c417647f032-2f2f66bc.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Dark Web (Low)](ctm360-dark-web-low-5c05df18-604a-428c-b677-39305bde35a3-1200e9cd.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Dark Web (Medium)](ctm360-dark-web-medium-7b6a3f8d-c460-44d3-adb4-16abba92aef1-acfce2ee.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
+| [D3 Smart SOAR - High or critical severity incident detected](d3smartsoar-d3-smart-soar-high-or-critical-severity-incident-detected-48ef0be4-8240-4a03-bbb9-320b562d6ce4-a012d8d0.md) | High | 📦 [D3SmartSOAR](../solutions/d3smartsoar.md) |
 | [Darktrace AI Analyst](darktrace-darktrace-ai-analyst-ffa2977f-3077-4bba-b1bf-f3417699cbb0-c8c73532.md) | High | 📦 [Darktrace](../solutions/darktrace.md) |
 | [Darktrace Model Breach](darktrace-darktrace-model-breach-a3c7b8ed-56a9-47b7-98e5-2555c16e17c9-0057eb81.md) | Medium | 📦 [Darktrace](../solutions/darktrace.md) |
 | [Darktrace System Status](darktrace-darktrace-system-status-2e629769-60eb-4a14-8bfc-bde9be66ebeb-cc05125a.md) | Informational | 📦 [Darktrace](../solutions/darktrace.md) |
-| [Data Leakage (High)](ctm360-data-leakage-high-40ca1b4c-278a-49b6-b2c6-c236edb661cc-7db9ff8c.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Data Leakage (Informational)](ctm360-data-leakage-informational-37e5fff1-8fec-4d44-9881-dcdd99387f61-21da646d.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Data Leakage (Low)](ctm360-data-leakage-low-7256a913-fe0f-4c0c-bd2e-51942b118f7f-67c04e71.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Data Leakage (Medium)](ctm360-data-leakage-medium-57d1991c-29bc-4b15-b6b8-e753368be5b9-2e1d070d.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
 | [Dataminr - urgent alerts detected](dataminr-pulse-dataminr-urgent-alerts-detected-64a46029-3236-4d03-b5df-207366a623f1-d65138c6.md) | Medium | 📦 [Dataminr Pulse](../solutions/dataminr-pulse.md) |
 | [Dataverse - Anomalous application user activity](microsoft-business-applications-dataverse-anomalous-application-user-activity-0820da12-e895-417f-9175-7c256fcfb33e-25e83157.md) | Medium | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
 | [Dataverse - Audit log data deletion](microsoft-business-applications-dataverse-audit-log-data-deletion-f1634822-b7e9-44f5-95ac-fa4a04f14513-cd7a11d3.md) | Low | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
@@ -60,11 +53,15 @@
 | [Dataverse - TI map URL to DataverseActivity](microsoft-business-applications-dataverse-ti-map-url-to-dataverseactivity-d88a0e22-3b6a-40c2-af28-c064b44d03b7-bcfd5ea3.md) | Medium | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
 | [Dataverse - Unusual sign-in following disabled IP address-based cookie binding protection](microsoft-business-applications-dataverse-unusual-sign-in-following-disabled-ip-address-based-cookie-bin-d7c9549c-7246-4555-8e53-d7b0db546764-05625607.md) | Medium | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
 | [Dataverse - User bulk retrieval outside normal activity](microsoft-business-applications-dataverse-user-bulk-retrieval-outside-normal-activity-08cb7ffc-59c6-4e7d-88e0-327371c9431b-d673ce2b.md) | Low | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
+| [Datawiza - massive errors detected](datawiza-datawiza-massive-errors-detected-ddee1398-cf0b-46af-b583-78c3c29156dc-f782246e.md) | Medium | 📦 [Datawiza](../solutions/datawiza.md) |
 | [DCOM Lateral Movement](falconfriday-dcom-lateral-movement-d58035ff-0bac-4c61-a7f4-f58939ff9764-9dd841b7.md) | Medium | 📦 [FalconFriday](../solutions/falconfriday.md) |
+| [DDoS attack detected](azure-firewall-ddos-attack-detected-c3ffdbe6-2e62-4984-9e80-933ed90b2f6a-59acf5f9.md) | High | 📦 [Azure Firewall](../solutions/azure-firewall.md) |
 | [DDoS Attack IP Addresses - Percent Threshold](azure-ddos-protection-ddos-attack-ip-addresses-percent-threshold-402a42ad-f31c-48d1-8f80-0200846b7f25-45798bda.md) | Medium | 📦 [Azure DDoS Protection](../solutions/azure-ddos-protection.md) |
 | [DDoS Attack IP Addresses - PPS Threshold](azure-ddos-protection-ddos-attack-ip-addresses-pps-threshold-6e76fd9d-8104-41eb-bad3-26054a3ad5f0-19898f82.md) | Medium | 📦 [Azure DDoS Protection](../solutions/azure-ddos-protection.md) |
 | [Defender Alert Evidence](vectra-xdr-defender-alert-evidence-8138863e-e55f-4f02-ac94-72796e203d27-c82db71e.md) | High | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
 | [Deimos Component Execution](microsoft-defender-xdr-deimos-component-execution-c25a8cd4-5b4a-45a8-9ba0-3b753a652f6b-a4a127b5.md) | High | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
+| [Deleted a Custom Field Mapping profile](soc-prime-ccf-deleted-a-custom-field-mapping-profile-a1b2c3d4-e5f6-4078-9012-3456789abcde-7649773b.md) | Medium | 📦 [SOC Prime CCF](../solutions/soc-prime-ccf.md) |
+| [Deleted a Tenant](soc-prime-ccf-deleted-a-tenant-7d4a2b91-8e5c-4f2a-9d6b-3c1f0e4a5d8b-a3de424c.md) | Medium | 📦 [SOC Prime CCF](../solutions/soc-prime-ccf.md) |
 | [Deletion of data on multiple drives using cipher exe](microsoft-defender-xdr-deletion-of-data-on-multiple-drives-using-cipher-exe-03caa992-477f-4b19-8e2a-8cd58f8f9652-a1302600.md) | Medium | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Denial of Service (Microsoft Defender for IoT)](iototthreatmonitoringwithdefenderforiot-denial-of-service-microsoft-defender-for-iot-e068187a-01f5-4737-bc13-25db4027b7ea-d30730fd.md) | High | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
 | [Detaching Backups Started](veeam-detaching-backups-started-e0d937ca-4582-4c3b-b95b-82fff33ed610-4f43902a.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |
@@ -112,10 +109,6 @@
 | [Dev-0530 File Extension Rename](standalone-content-dev-0530-file-extension-rename-d82eb796-d1eb-43c8-a813-325ce3417cef-f293cb3e.md) | High | 📄 Standalone Content |
 | [Device Alert Surge](morphisec-device-alert-surge-5c8e1f2e-9d6b-4f4a-8f3e-123456789abc-7d970dee.md) | High | 📦 [Morphisec](../solutions/morphisec.md) |
 | [Device Registration from Malicious IP](okta-single-sign-on-device-registration-from-malicious-ip-e36c6bd6-f86a-4282-93a5-b4a1b48dd849-7384eb46.md) | High | 📦 [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
-| [Digital Content Theft (High)](ctm360-digital-content-theft-high-7527f7d0-7166-4466-a6e9-e0a713de4a8a-2fb511b6.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Digital Content Theft (Informational)](ctm360-digital-content-theft-informational-fd29986b-787c-4024-ae95-489f3a987a91-ede08b4e.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Digital Content Theft (Low)](ctm360-digital-content-theft-low-7f5eba11-606f-4fbd-9eb7-1712425697c6-ceaac5e3.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Digital Content Theft (Medium)](ctm360-digital-content-theft-medium-e944857e-4f1f-4388-a334-c938c6124441-a89b925b.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
 | [Digital Guardian - Bulk exfiltration to external domain](digital-guardian-data-loss-prevention-digital-guardian-bulk-exfiltration-to-external-domain-5f75a873-b524-4ba5-a3b8-2c20db517148-16d27910.md) | Medium | 📦 [Digital Guardian Data Loss Prevention](../solutions/digital-guardian-data-loss-prevention.md) |
 | [Digital Guardian - Exfiltration to external domain](digital-guardian-data-loss-prevention-digital-guardian-exfiltration-to-external-domain-a19885c8-1e44-47e3-81df-d1d109f5c92d-fb713a44.md) | Medium | 📦 [Digital Guardian Data Loss Prevention](../solutions/digital-guardian-data-loss-prevention.md) |
 | [Digital Guardian - Exfiltration to online fileshare](digital-guardian-data-loss-prevention-digital-guardian-exfiltration-to-online-fileshare-f7b6ddef-c1e9-46f0-8539-dbba7fb8a5b8-696301bd.md) | High | 📦 [Digital Guardian Data Loss Prevention](../solutions/digital-guardian-data-loss-prevention.md) |
@@ -130,24 +123,14 @@
 | [Digital Shadows Incident Creation for include-app](digital-shadows-digital-shadows-incident-creation-for-include-app-ede3071d-9317-45f9-b36c-6a6effee5294-078d7289.md) | Medium | 📦 [Digital Shadows](../solutions/digital-shadows.md) |
 | [Disable or Modify Windows Defender](falconfriday-disable-or-modify-windows-defender-20d52a04-b5d8-402d-88e2-7929d12cbdcd-3b3084de.md) | Medium | 📦 [FalconFriday](../solutions/falconfriday.md) |
 | [Disabling Security Services via Registry](microsoft-defender-xdr-disabling-security-services-via-registry-32b29155-3fd3-4a9e-a0ca-a67e2593b60b-e9f38271.md) | Medium | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
-| [Discord CDN Risky File Download](zscaler-internet-access-discord-cdn-risky-file-download-010bd98c-a6be-498c-bdcd-502308c0fdae-581fe083.md) | Medium | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| [Discord CDN Risky File Download](zscaler-internet-access-discord-cdn-risky-file-download-010bd98c-a6be-498c-bdcd-502308c0fdae-581fe083.md) ⚠️ | Medium | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 | [Discord CDN Risky File Download  (ASIM Web Session Schema)](standalone-content-discord-cdn-risky-file-download-asim-web-session-schema-01e8ffff-dc0c-43fe-aa22-d459c4204553-3ea85821.md) | Medium | 📄 Standalone Content |
 | [Disks Alerts From Prancer](prancer-pensuiteai-integration-disks-alerts-from-prancer-8c484ef9-d758-4827-9920-f4f77158f03e-68b007b3.md) ⚠️ | High | 📦 [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [Distributed Password cracking attempts in Microsoft Entra ID](microsoft-entra-id-distributed-password-cracking-attempts-in-microsoft-entra-id-bfb1c90f-8006-4325-98be-c7fffbc254d6-6613a279.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
-| [DMARC Not Configured](ctm360-dmarc-not-configured-c2b123c3-e909-4c2e-bd4a-92b7055cf7e0-35aa4863.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
 | [DNS events related to mining pools](windows-server-dns-dns-events-related-to-mining-pools-0d76e9cf-788d-4a69-ac7d-f234826b5bed-54471aa6.md) | Low | 📦 [Windows Server DNS](../solutions/windows-server-dns.md) |
 | [DNS events related to mining pools (ASIM DNS Schema)](standalone-content-dns-events-related-to-mining-pools-asim-dns-schema-c094384d-7ea7-4091-83be-18706ecca981-abae5162.md) | Low | 📄 Standalone Content |
 | [DNS events related to ToR proxies](windows-server-dns-dns-events-related-to-tor-proxies-a83ef0f4-dace-4767-bce3-ebd32599d2a0-144d141a.md) | Low | 📦 [Windows Server DNS](../solutions/windows-server-dns.md) |
 | [DNS events related to ToR proxies  (ASIM DNS Schema)](standalone-content-dns-events-related-to-tor-proxies-asim-dns-schema-3fe3c520-04f1-44b8-8398-782ed21435f8-67ce6a55.md) | Low | 📄 Standalone Content |
-| [Domain Infringement](ctm360-domain-infringement-0faddbac-0004-40fa-9046-a1ead13e005a-2564c693.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Domain Infringement (High)](ctm360-domain-infringement-high-65c57477-dcc6-447f-b76d-429d2ad11cbd-1752d158.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Domain Infringement (Informational)](ctm360-domain-infringement-informational-891724c5-8f42-41d0-aa3e-a58947cf4d3a-c4bb26c7.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Domain Infringement (Low)](ctm360-domain-infringement-low-755d21cf-527f-46d3-b9c0-9005419a7eb4-d47b37f1.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Domain Infringement (Medium)](ctm360-domain-infringement-medium-873f6a0f-68b7-4181-87c9-402b575458d9-3a87fb8b.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
-| [Doorway Page (High)](ctm360-doorway-page-high-4ae3be36-0c07-4e51-9765-1ab446e937f2-f9b75279.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Doorway Page (Informational)](ctm360-doorway-page-informational-7de074aa-de27-4129-8638-e10a5a15f9cc-c056bb40.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Doorway Page (Low)](ctm360-doorway-page-low-b011ec39-4dc1-44a2-96ef-e1c6ef4e17b4-34beb9e3.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Doorway Page (Medium)](ctm360-doorway-page-medium-2c8d6d6e-5d56-4d2f-9e1d-a79319f85b3f-6b97637a.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
 | [Doppelpaymer Stop Services](microsoft-defender-xdr-doppelpaymer-stop-services-5bdc1504-880c-4b30-a39c-7c746535928d-6df3ea36.md) | High | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [DopplePaymer Procdump](microsoft-defender-xdr-dopplepaymer-procdump-1be34fb9-f81b-47ae-84fb-465e6686d76c-cc25e831.md) | High | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Dragos Notifications](dragos-dragos-notifications-9a74fe72-4c21-4ac5-80d9-37434e809721-264e8545.md) | Medium | 📦 [Dragos](../solutions/dragos.md) |

@@ -75,7 +75,7 @@
 <td style="text-align: left;"><a href="../tables/googleworkspacereports.html"><code>GoogleWorkspaceReports</code></a></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
 </tr>
 </tbody>
 </table>
@@ -99,9 +99,7 @@
 <li>From <strong><em>APIs &amp; Services</em></strong> -&gt; <strong><em>Enabled APIs &amp; Services</em></strong>, enable <strong>Admin SDK API</strong> for this project.</li>
 <li>Go to <strong><em>APIs &amp; Services</em></strong> -&gt; <strong><em>OAuth Consent Screen</em></strong>. If not already configured, create a OAuth Consent Screen with the following steps:<ol>
 <li>Provide App Name and other mandatory information.</li>
-<li>Add authorized domains with API Access Enabled.</li>
-<li>In Scopes section, add <strong>Admin SDK API</strong> scope.</li>
-<li>In Test Users section, make sure the domain admin account is added.</li>
+<li>Pick External as User Type for the Audience.</li>
 </ol>
 </li>
 <li>Go to <strong><em>APIs &amp; Services</em></strong> -&gt; <strong><em>Credentials</em></strong> and create OAuth 2.0 Client ID<ol>
@@ -109,7 +107,10 @@
 <li>Select Web Application from the Application Type drop down.</li>
 <li>Provide a suitable name to the Web App and add the Redirect URI in the form below as the Authorized redirect URIs.</li>
 <li>Once you click Create, you will be provided with the Client ID and Client Secret. 
-Copy these values and use them in the configuration steps below.
+Copy these values and use them in the configuration steps below.</li>
+</ol>
+</li>
+<li>Go to <strong><em>Google Auth Platform</em></strong> -&gt; <strong><em>Data Access</em></strong>: Add <strong><em>Admin SDK API</em></strong> scope
 Configure steps for the Google Reports API oauth access. Then, provide the required information below and click on Connect.<blockquote>
 <ul>
 <li><strong>OAuth Configuration</strong>:</li>
@@ -119,8 +120,6 @@ Configure steps for the Google Reports API oauth access. Then, provide the requi
 <strong>Connector Management Interface</strong></li>
 </ul>
 </blockquote>
-</li>
-</ol>
 </li>
 </ol>
 <p>This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.</p>

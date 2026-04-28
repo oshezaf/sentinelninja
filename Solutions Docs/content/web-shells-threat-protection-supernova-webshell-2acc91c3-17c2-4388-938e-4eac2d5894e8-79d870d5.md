@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`W3CIISLog`](../tables/w3ciislog.md) | ✓ | ✗ | ✗ |
+| [`W3CIISLog`](../tables/w3ciislog.md) | ✓ | ✗ | ? |
 
 ---
 

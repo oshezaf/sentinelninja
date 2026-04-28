@@ -8,9 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -37,9 +35,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (22)
+## Content Items Using This Table (23)
 
-### Analytic Rules (12)
+### Analytic Rules (13)
 
 **In solution [GitHub](../solutions/github.md):**
 
@@ -57,6 +55,7 @@ This table is ingested by the following connectors:
 | [GitHub - pull request was merged](../content/github-github-pull-request-was-merged-0b85a077-8ba5-4cb5-90f7-1e882afe10c6-76d24a7f.md) |  |
 | [GitHub Activites from a New Country](../content/github-github-activites-from-a-new-country-f041e01d-840d-43da-95c8-4188f6cef546-14943f98.md) |  |
 | [GitHub Two Factor Auth Disable](../content/github-github-two-factor-auth-disable-3ff0fffb-d963-40c0-b235-3404f915add7-154f9e3d.md) |  |
+| [NRT GitHub Two Factor Auth Disable](../content/github-nrt-github-two-factor-auth-disable-594c653d-719a-4c23-b028-36e3413e632e-4470b247.md) |  |
 
 ### Hunting Queries (8)
 

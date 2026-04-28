@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zscaler Internet Access Cloud NSS CASB Activity Log Push Connector &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="zscaler-internet-access-cloud-nss-casb-activity-log-push-connector">Zscaler Internet Access Cloud NSS CASB Activity Log Push Connector</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ZscalerLogo.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>CloudNSSCASBActivityLogs_ccp</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Zscaler</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/zscaler-internet-access.html">Zscaler Internet Access</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/ccf-push.html">CCF Push</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Data%20Connectors/CloudNSSCASBActivityLogs_ccp/connectorDefinition.json">connectorDefinition.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Configuration</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Data%20Connectors/CloudNSSCASBActivityLogs_ccp/dataConnector.json">dataConnector.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Capabilities</strong></td>
+<td style="text-align: left;"><code>Push</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>CCF Push connectors use DCR-based Log Ingestion API</em></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.zscaler.com/">Zscaler</a> connector provides the capability to read ZIA CASB Activity log data in Microsoft Sentinel.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions are required.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Microsoft Entra</strong>: Permission to create an app registration in Microsoft Entra ID. Typically requires Entra ID Application Developer role or higher.
+- <strong>Microsoft Azure</strong>: Permission to assign Monitoring Metrics Publisher role on data collection rule (DCR). Typically requires Azure RBAC Owner or User Access Administrator role</p>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Create ARM Resources and Provide the Required Permissions</strong></p>
+<p>This connector reads data from the tables that Zscaler uses in a Microsoft Analytics Workspace, if the Cloud NSS option is enabled in Zscaler then raw event data is sent to the Microsoft Sentinel Ingestion API.</p>
+<h4 id="automated-configuration-and-secure-data-ingestion-with-entra-application">Automated Configuration and Secure Data Ingestion with Entra Application</h4>
+<p>Clicking on "Deploy" will trigger the creation of Log Analytics tables and a Data Collection Rule (DCR). 
+It will then create an Entra application, link the DCR to it, and set the entered secret in the application. This setup enables data to be sent securely to the DCR using an Entra token.
+Deploy Zscaler Internet Access Cloud NSS CASB Activity Log connector resources</p>
+<p><strong>2. Push your logs into the workspace</strong></p>
+<p>Use the following parameters to configure the your machine to send the logs to the workspace.
+- <strong>Tenant ID (Directory ID)</strong>: <code>TenantId</code></p>
+<blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
+- <strong>Entra App Registration Application ID</strong>: <code>ApplicationId</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
+- <strong>Entra App Registration Secret</strong>: <code>ApplicationSecret</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
+- <strong>Data Collection Endpoint Uri</strong>: <code>DataCollectionEndpoint</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
+- <strong>Data Collection Rule Immutable ID</strong>: <code>DataCollectionRuleId</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+</div>
+
+</body>
+</html>

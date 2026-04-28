@@ -25,11 +25,11 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Tenable_VM_Asset_CL`](../tables/tenable-vm-asset-cl.md) | ✓ | ✓ | ✓ |
-| [`Tenable_VM_Compliance_CL`](../tables/tenable-vm-compliance-cl.md) | ✓ | ✓ | ✓ |
-| [`Tenable_VM_Vuln_CL`](../tables/tenable-vm-vuln-cl.md) | ✓ | ✓ | ✓ |
-| [`Tenable_WAS_Asset_CL`](../tables/tenable-was-asset-cl.md) | ✓ | ✓ | ✓ |
-| [`Tenable_WAS_Vuln_CL`](../tables/tenable-was-vuln-cl.md) | ✓ | ✓ | ✓ |
+| [`Tenable_VM_Asset_CL`](../tables/tenable-vm-asset-cl.md) | ? | ✓ | ? |
+| [`Tenable_VM_Compliance_CL`](../tables/tenable-vm-compliance-cl.md) | ? | ✓ | ? |
+| [`Tenable_VM_Vuln_CL`](../tables/tenable-vm-vuln-cl.md) | ? | ✓ | ? |
+| [`Tenable_WAS_Asset_CL`](../tables/tenable-was-asset-cl.md) | ? | ✓ | ? |
+| [`Tenable_WAS_Vuln_CL`](../tables/tenable-was-vuln-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

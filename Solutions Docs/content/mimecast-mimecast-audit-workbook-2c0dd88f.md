@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Audit_CL`](../tables/audit-cl.md) | ✓ | ✓ | ✓ |
+| [`Audit_CL`](../tables/audit-cl.md) | ? | ✓ | ? |
 
 ---
 

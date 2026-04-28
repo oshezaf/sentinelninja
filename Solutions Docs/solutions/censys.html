@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ Censys &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="censys">⚠️ Censys</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Censys.svg" alt="Censys Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Censys Support</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://docs.censys.com">https://docs.censys.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Censys - support@censys.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2026-03-05</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2026-03-05</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Censys">Censys</a></td>
+</tr>
+</tbody>
+</table>
+<p>Leverage playbooks to enrich alerts and incidents with Censys Internet data. Analyst can lookup known information about IPs, domains, certificate SHAs in Censys.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p><strong>This solution does not include data connectors.</strong></p>
+<p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution queries <strong>19 table(s)</strong> from its content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/censyscertificatealert-cl.html"><code>CensysCertificateAlert_CL</code></a></td>
+<td>Playbooks (writes)</td>
+</tr>
+<tr>
+<td><a href="../tables/censyscertificate-cl.html"><code>CensysCertificate_CL</code></a></td>
+<td>Playbooks (writes)</td>
+</tr>
+<tr>
+<td><a href="../tables/censyshostalert-cl.html"><code>CensysHostAlert_CL</code></a></td>
+<td>Playbooks (writes)</td>
+</tr>
+<tr>
+<td><a href="../tables/censyshost-cl.html"><code>CensysHost_CL</code></a></td>
+<td>Playbooks (writes)</td>
+</tr>
+<tr>
+<td><a href="../tables/censysrescanhostalert-cl.html"><code>CensysRescanHostAlert_CL</code></a></td>
+<td>Playbooks (writes)</td>
+</tr>
+<tr>
+<td><a href="../tables/censysrescanhost-cl.html"><code>CensysRescanHost_CL</code></a></td>
+<td>Playbooks (writes)</td>
+</tr>
+<tr>
+<td><a href="../tables/censysrescanwebpropertyalert-cl.html"><code>CensysRescanWebPropertyAlert_CL</code></a></td>
+<td>Playbooks (writes)</td>
+</tr>
+<tr>
+<td><a href="../tables/censysrescanwebproperty-cl.html"><code>CensysRescanWebProperty_CL</code></a></td>
+<td>Playbooks (writes)</td>
+</tr>
+<tr>
+<td><a href="../tables/censyswebpropertyalert-cl.html"><code>CensysWebPropertyAlert_CL</code></a></td>
+<td>Playbooks (writes)</td>
+</tr>
+<tr>
+<td><a href="../tables/censyswebproperty-cl.html"><code>CensysWebProperty_CL</code></a></td>
+<td>Playbooks (writes)</td>
+</tr>
+<tr>
+<td><a href="../tables/censys-certificate-ioc-cl.html"><code>Censys_Certificate_IOC_CL</code></a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/censys-host-history-data-cl.html"><code>Censys_Host_History_Data_CL</code></a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/censys-host-ioc-cl.html"><code>Censys_Host_IOC_CL</code></a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/censys-host-services-cl.html"><code>Censys_Host_Services_CL</code></a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/censys-web-property-endpoint-cl.html"><code>Censys_Web_Property_Endpoint_CL</code></a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/censys-web-property-ioc-cl.html"><code>Censys_Web_Property_IOC_CL</code></a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/censys-web-property-threat-cl.html"><code>Censys_Web_Property_Threat_CL</code></a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/censys-web-property-vuln-cl.html"><code>Censys_Web_Property_Vuln_CL</code></a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/incident-enrich-data-cl.html"><code>Incident_Enrich_Data_CL</code></a></td>
+<td>Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h3 id="internal-tables">Internal Tables</h3>
+<p>The following <strong>3 table(s)</strong> are used internally by this solution's content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/censysrelatedinfrastructure-cl.html"><code>CensysRelatedInfrastructure_CL</code></a></td>
+<td>Playbooks (writes), Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
+<td>Playbooks, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
+<td>Playbooks, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>12 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">11</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-21c23ffd.html">Censys</a></td>
+<td style="text-align: left;"><a href="../tables/censys-certificate-ioc-cl.html"><code>Censys_Certificate_IOC_CL</code></a><br><a href="../tables/censys-host-history-data-cl.html"><code>Censys_Host_History_Data_CL</code></a><br><a href="../tables/censys-host-ioc-cl.html"><code>Censys_Host_IOC_CL</code></a><br><a href="../tables/censys-host-services-cl.html"><code>Censys_Host_Services_CL</code></a><br><a href="../tables/censys-web-property-endpoint-cl.html"><code>Censys_Web_Property_Endpoint_CL</code></a><br><a href="../tables/censys-web-property-ioc-cl.html"><code>Censys_Web_Property_IOC_CL</code></a><br><a href="../tables/censys-web-property-threat-cl.html"><code>Censys_Web_Property_Threat_CL</code></a><br><a href="../tables/censys-web-property-vuln-cl.html"><code>Censys_Web_Property_Vuln_CL</code></a><br><a href="../tables/incident-enrich-data-cl.html"><code>Incident_Enrich_Data_CL</code></a><br><em>Internal use:</em><br><a href="../tables/censysrelatedinfrastructure-cl.html"><code>CensysRelatedInfrastructure_CL</code></a><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a><br><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="playbooks">Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-ad-hoc-ioc-lookup-640123fb.html">Censys Ad-Hoc IOC Lookup</a></td>
+<td style="text-align: left;">This playbook will be triggered from the workbook. This will fetch associated IPs, Host(Domains) and...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-add-incident-comment-92f657fd.html">Censys Add Incident Comment</a></td>
+<td style="text-align: left;">This playbook is triggered via HTTP request and is designed to be used as a sub-playbook by other Ce...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-alert-enrichment-65242474.html">Censys Alert Enrichment</a></td>
+<td style="text-align: left;">This playbook is triggered by a Microsoft Sentinel Alert. It extracts IP addresses, domains, and cer...</td>
+<td style="text-align: left;"><a href="../tables/censyscertificatealert-cl.html"><code>CensysCertificateAlert_CL</code></a> <em>(write)</em><br><a href="../tables/censyshostalert-cl.html"><code>CensysHostAlert_CL</code></a> <em>(write)</em><br><a href="../tables/censyswebpropertyalert-cl.html"><code>CensysWebPropertyAlert_CL</code></a> <em>(write)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-alert-rescan-19e1ad3a.html">Censys Alert Rescan</a></td>
+<td style="text-align: left;">This playbook is triggered manually via HTTP request from a workbook or automation. It accepts input...</td>
+<td style="text-align: left;"><a href="../tables/censysrescanhostalert-cl.html"><code>CensysRescanHostAlert_CL</code></a> <em>(write)</em><br><a href="../tables/censysrescanwebpropertyalert-cl.html"><code>CensysRescanWebPropertyAlert_CL</code></a> <em>(write)</em><br><em>Internal use:</em><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a> <em>(read)</em><br><a href="../tables/securityincident.html"><code>SecurityIncident</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-entity-enrichment-certificate-ea0d81ab.html">Censys Entity Enrichment - Certificate</a></td>
+<td style="text-align: left;">This playbook is triggered automatically when a FileHash entity is detected in a Microsoft Sentinel ...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-entity-enrichment-host-c2bc1894.html">Censys Entity Enrichment - Host</a></td>
+<td style="text-align: left;">This playbook is triggered automatically when an IP entity is detected in a Microsoft Sentinel incid...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-entity-enrichment-web-property-e7db98e8.html">Censys Entity Enrichment - Web Property</a></td>
+<td style="text-align: left;">This playbook is triggered automatically when a DNS entity (domain name) is detected in a Microsoft ...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-host-history-62dd7b98.html">Censys Host History</a></td>
+<td style="text-align: left;">This playbook is triggered manually via HTTP request, typically invoked from a Microsoft Sentinel wo...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-incident-enrichment-099adc62.html">Censys Incident Enrichment</a></td>
+<td style="text-align: left;">This playbook will be triggered when any automation rule is attached or manually invoked. This will ...</td>
+<td style="text-align: left;"><a href="../tables/censyscertificate-cl.html"><code>CensysCertificate_CL</code></a> <em>(write)</em><br><a href="../tables/censyshost-cl.html"><code>CensysHost_CL</code></a> <em>(write)</em><br><a href="../tables/censyswebproperty-cl.html"><code>CensysWebProperty_CL</code></a> <em>(write)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-related-infrastructure-23870661.html">Censys Related Infrastructure</a></td>
+<td style="text-align: left;">This playbook retrieves related infrastructure details for Censys entities (hosts, certificates, or ...</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/censysrelatedinfrastructure-cl.html"><code>CensysRelatedInfrastructure_CL</code></a> <em>(write)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-rescan-51275b90.html">Censys Rescan</a></td>
+<td style="text-align: left;">This playbook will be triggered manually. This will fetch associated IPs from the incident and make ...</td>
+<td style="text-align: left;"><a href="../tables/censysrescanhost-cl.html"><code>CensysRescanHost_CL</code></a> <em>(write)</em><br><a href="../tables/censysrescanwebproperty-cl.html"><code>CensysRescanWebProperty_CL</code></a> <em>(write)</em><br><em>Internal use:</em><br><a href="../tables/securityincident.html"><code>SecurityIncident</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.0</td>
+<td>06-04-2026</td>
+<td>Added Support for Related Infrastructure Playbook and Workbook</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>05-03-2026</td>
+<td>Initial Solution for Censys with Playbooks and Workbook</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+</div>
+
+</body>
+</html>

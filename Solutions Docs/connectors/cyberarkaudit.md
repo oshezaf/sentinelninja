@@ -17,7 +17,11 @@
 | **Connector Definition Files** | [CyberArkAudit_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkAudit/Data%20Connectors/CyberArkAudit_API_FunctionApp.json) |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *Azure Function code uses LogsIngestionClient/Log Ingestion API* |
 
-The [CyberArk Audit](https://docs.cyberark.com/Audit/Latest/en/Content/Resources/_TopNav/cc_Home.htm) data connector provides the capability to retrieve security event logs of the CyberArk Audit service and more events into Microsoft Sentinel through the REST API. The connector provides ability to get events which helps to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more.
+The [CyberArk Audit](https://docs.cyberark.com/Audit/Latest/en/Content/Resources/_TopNav/cc_Home.htm) data connector provides the capability to retrieve security event logs of the CyberArk Audit service and more events into Microsoft Sentinel through the REST API, using **Azure Functions**. The connector provides ability to get events which helps to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more.
+
+
+
+>**IMPORTANT:** Deploy **only one** CyberArk Audit connector option in your workspace (either **Azure Functions** *or* **Codeless Connector Framework**). Deploying both is not recommended, as the data will be duplicated if both connectors are deployed.
 
 ## Tables Ingested
 
@@ -25,7 +29,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CyberArk_AuditEvents_CL`](../tables/cyberark-auditevents-cl.md) | ✓ | ✓ | ✓ |
+| [`CyberArk_AuditEvents_CL`](../tables/cyberark-auditevents-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -51,7 +55,7 @@ This connector ingests data into the following tables:
 
  Follow the [instructions](https://docs.cyberark.com/audit/latest/en/Content/Audit/isp_Microsoft_Sentinel.htm?tocpath=SIEM%20integrations%7C_____3) to obtain connection details and credentials.
 
-**STEP 2 - Choose ONE from the following two deployment options to deploy the connector and the associated Azure Function**
+**STEP 2 - Deploy connector and the associated Azure Function**
 
 >**IMPORTANT:** Before deploying the CyberArk Audit data connector, have the Workspace Name and Workspace Location (can be copied from the following).
 - **Workspace Name**: `WorkspaceName`
@@ -59,7 +63,7 @@ This connector ingests data into the following tables:
 - **Workspace Location**: `WorkspaceLocation`
   > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
 
-**3. Option 1 - Azure Resource Manager (ARM) Template**
+**3. Azure Resource Manager (ARM) Template**
 
 Use this method for automated deployment of the CyberArk Audit data connector using an ARM Template.
 
@@ -71,10 +75,6 @@ Use this method for automated deployment of the CyberArk Audit data connector us
 3. Enter the **CyberArkAuditUsername**, **CyberArkAuditPassword**, **CyberArkAuditServerURL**  and deploy. 
 4. Mark the checkbox labeled **I agree to the terms and conditions stated above**. 
 5. Click **Purchase** to deploy.
-
-**4. Option 2 - Manual Deployment of Azure Functions**
-
-Use the following step-by-step instructions to deploy the CyberArk Audit data connector manually with Azure Functions (Deployment via Visual Studio Code).
 
 **1. Deploy a Function App**
 

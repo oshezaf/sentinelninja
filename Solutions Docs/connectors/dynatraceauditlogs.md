@@ -1,4 +1,4 @@
-# Dynatrace Audit Logs
+# Dynatrace Audit Logs V1
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/dynatrace.svg" alt="" width="75" height="75">
 
@@ -14,7 +14,7 @@
 | **Publisher** | Dynatrace |
 | **Used in Solutions** | [Dynatrace](../solutions/dynatrace.md) |
 | **Collection Method** | [CCF (Legacy)](../methods/ccf-legacy.md) |
-| **Connector Definition Files** | [Connector_Dynatrace_AuditLogs.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Data%20Connectors/Connector_Dynatrace_AuditLogs.json) |
+| **Connector Definition Files** | [Connector_Dynatrace_AuditLogs.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Data%20Connectors/DynatraceAuditLogsV1/Connector_Dynatrace_AuditLogs.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
 
 This connector uses the [Dynatrace Audit Logs REST API](https://docs.dynatrace.com/docs/dynatrace-api/environment-api/audit-logs) to ingest tenant audit logs into Microsoft Sentinel Log Analytics
@@ -25,7 +25,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DynatraceAuditLogs_CL`](../tables/dynatraceauditlogs-cl.md) | ✓ | ✓ | ✓ |
+| [`DynatraceAuditLogsV2_CL`](../tables/dynatraceauditlogsv2-cl.md) | ? | ✓ | ? |
+| [`DynatraceAuditLogs_CL`](../tables/dynatraceauditlogs-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

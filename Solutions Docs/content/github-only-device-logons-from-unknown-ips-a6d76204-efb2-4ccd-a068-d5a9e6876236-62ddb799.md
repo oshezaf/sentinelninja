@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`DeviceLogonEvents`](../tables/devicelogonevents.md) | ✓ | ✗ | ? |
 | [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) | ✓ | ✗ | ? |
-| [`IdentityLogonEvents`](../tables/identitylogonevents.md) | ✓ | ✗ | ✓ |
+| [`IdentityLogonEvents`](../tables/identitylogonevents.md) | ✓ | ✗ | ? |
 
 ---
 

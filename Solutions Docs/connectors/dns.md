@@ -42,8 +42,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ | ✓ |
-| [`DnsInventory`](../tables/dnsinventory.md) | ✓ | ✗ | ✓ |
+| [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ | ? |
+| [`DnsInventory`](../tables/dnsinventory.md) | ✓ | ✗ | ? |
 
 ## Permissions
 

@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>IpinfoCORECL &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
-
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
@@ -28,16 +30,135 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✗ No</td>
-</tr>
-<tr>
 <td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
 <td style="text-align: left;">✓ Yes</td>
 </tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
+</ul>
+<h2 id="schema">Schema (22 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Ipinfo_CORE_CL.json">KQL validation test schema</a></p>
+<table id="schema-table">
+<thead>
 <tr>
-<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
-<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">as_domain</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">as_name</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">as_type</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">asn</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">city</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">continent</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">continent_code</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">country</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">country_code</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">is_anonymous</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">is_anycast</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">is_hosting</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">is_mobile</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">is_satellite</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">latitude</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">longitude</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">postal_code</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">range</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">region</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">region_code</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">timezone</td>
+<td style="text-align: left;">string</td>
+</tr>
+</tbody>
+</table>
+<h2 id="solutions">Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/ipinfo.html">IPinfo</a></li>
+</ul>
+<h2 id="connectors">Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/ipinfocoredataconnector.html">IPinfo Core Data Connector</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -46,6 +167,30 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 </div>
-
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
 </body>
 </html>

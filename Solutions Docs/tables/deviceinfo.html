@@ -603,18 +603,16 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>ActionType in "FileCreated,UsbDriveMounted"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.html">MicrosoftDefenderForEndPoint</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -629,15 +627,15 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-dodzerotrustworkbook-844294c8.html">DoDZeroTrustWorkbook</a></td>
-<td style="text-align: left;"><code>ActionType in "Add member to role,Add user,AntivirusScanCompleted,InteractiveLogon,LogonSuccess,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"</code></td>
+<td style="text-align: left;"><code>ActionType == "AntivirusScanCompleted"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-exchangecompromisehunting-4fe3c3f0.html">ExchangeCompromiseHunting</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActionType == "FileCreated"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-microsoftdefenderforendpoint-ac005534.html">MicrosoftDefenderForEndPoint</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActionType in "FileCreated,UsbDriveMounted"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
@@ -649,7 +647,70 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-zerotruststrategyworkbook-cd80dc2b.html">ZeroTrustStrategyWorkbook</a></td>
-<td style="text-align: left;"><code>ActionType in "Add member to role,Add user,AntivirusScanCompleted,InteractiveLogon,LogonSuccess,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"</code></td>
+<td style="text-align: left;"><code>ActionType == "AntivirusScanCompleted"</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (1 criteria, 1 total references)</h2>
+<p>References by type: 0 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>ActionType in "FileCreated,UsbDriveMounted"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="actiontype">ActionType</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>FileCreated</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>UsbDriveMounted</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>

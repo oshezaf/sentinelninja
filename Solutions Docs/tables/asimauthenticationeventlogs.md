@@ -164,22 +164,25 @@ Reference for ASimAuthenticationEventLogs table in Azure Monitor Logs.
 | TimeGenerated | datetime | The timestamp (UTC) reflecting the time in which the event was generated. |
 | Type | string | The name of the table |
 
-## Solutions (3)
+## Solutions (4)
 
 This table is used by the following solutions:
 
 - [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
+- [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md)
 - [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md)
 
-## Connectors (2)
+## Connectors (4)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) |  |
+| [[DEPRECATED] CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) |  |
+| [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
 | [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) |  |
+| [VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)](../connectors/carbonblackawss3.md) |  |
 
 ---
 

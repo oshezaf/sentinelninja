@@ -19,6 +19,7 @@
 | **Version** | 2.0.2 |
 | **Author** | Tenable - support@tenable.com |
 | **First Published** | 2022-06-01 |
+| **Last Updated** | 2026-04-16 |
 | **Solution Folder** | [TenableIO](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TenableIO) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/tenable.tenable-sentinel-integration) · Rating: ★★☆☆☆ 2.0/5 (4 ratings) · Popularity: 🟢 High (82%) |
 

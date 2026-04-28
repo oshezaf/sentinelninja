@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zoom Reports Connector via Codeless Connector Framework &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="zoom-reports-connector">Zoom Reports Connector (via Codeless Connector Framework)</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>ZoomReportsConnector</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/zoomreports.html">ZoomReports</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/ccf.html">CCF</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZoomReports/Data%20Connectors/ZoomReports_ccf/ConnectorDefinition.json">ConnectorDefinition.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Configuration</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZoomReports/Data%20Connectors/ZoomReports_ccf/PollingConfig.json">PollingConfig.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Capabilities</strong></td>
+<td style="text-align: left;"><code>JwtToken</code>, <code>Paging</code></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://developers.zoom.us/docs/api/">Zoom Reports</a> data connector enables you to ingest Zoom Reports data into Microsoft Sentinel through the Zoom REST API v2, allowing you to monitor and audit Zoom usage across your organization. This connector uses server-to-server OAuth account credentials for authentication and supports ingestion of multiple report types including Daily Usage Reports for meeting statistics and usage metrics, User Reports for active/inactive user host information, Telephony Reports for telephony usage statistics, Cloud Recording Usage Reports for cloud storage and recording usage, Operation Logs for administrative operations and audit trail, and Activity Logs for user sign-in/sign-out activities. Each report type is collected in a separate polling configuration with automatic pagination support using NextPageToken. The data connector is built on Microsoft Sentinel Codeless Connector Platform and supports DCR-based <a href="https://docs.microsoft.com/azure/azure-monitor/logs/custom-logs-overview">ingestion time transformations</a> for optimized query performance.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/zoomv2-cl.html"><code>ZoomV2_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): Read and Write permissions are required.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Zoom API access</strong>: Access to Zoom REST API v2 with account credentials</p>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Zoom Configuration</strong></p>
+<p>Configure Server-to-Server OAuth App and gather credentials</p>
+<h2 id="step-1-set-up-zoom-server-to-server-oauth-app-follow-create-an-app">Step 1: Set up Zoom Server-to-Server OAuth App, follow <a href="https://developers.zoom.us/docs/internal-apps/create/">Create an app</a>.</h2>
+<p>Please make sure to add Reports related scopes to your app:</p>
+<ul>
+<li>
+<p>report:read:list_users:admin</p>
+</li>
+<li>
+<p>report:read:cloud_recording:admin</p>
+</li>
+<li>
+<p>report:read:daily_usage:admin</p>
+</li>
+<li>
+<p>report:read:operation_logs:admin</p>
+</li>
+<li>
+<p>report:read:telephone:admin</p>
+</li>
+<li>
+<p>report:read:user_activities:admin</p>
+</li>
+</ul>
+<p>For more information, see <a href="https://developers.zoom.us/docs/internal-apps/">Zoom Server-to-Server OAuth Documentation</a> and <a href="https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#tag/Reports">Reports APIs</a>.</p>
+<h2 id="step-2-get-your-app-credentials">Step 2: Get Your App Credentials</h2>
+<p>Find your app credentials (Account ID, Client ID and Client Secret) on your <code>Personal app management</code> page on the Zoom App Marketplace</p>
+<h2 id="security-notes">Security Notes</h2>
+<ul>
+<li>
+<p>Store Account ID, Client ID and Client Secret securely</p>
+</li>
+<li>
+<p>Regularly rotate credentials for enhanced security</p>
+</li>
+<li><strong>Client ID</strong>: Zoom App Client ID</li>
+<li><strong>Client Secret</strong>: (password field)</li>
+<li><strong>Account ID</strong>: Your Zoom Account ID</li>
+<li><strong>Token Base URL</strong>: https://zoom.us/oauth/token</li>
+<li><strong>API Base URL</strong>: https://api.zoom.us/v2</li>
+</ul>
+<p><strong>2. Connect</strong></p>
+<p>Enable the Zoom Reports connector</p>
+<h3 id="activate-the-connector">Activate the Connector</h3>
+<p>Review your Zoom App credentials found in Step 2, then enable the connector to begin collecting Zoom Reports data.</p>
+<h3 id="monitoring">Monitoring</h3>
+<p>Check data arrival using these queries:</p>
+<p><strong>Check all report types:</strong></p>
+<pre><code class="language-kusto">
+ZoomV2_CL
+
+| where TimeGenerated &gt; ago(30m)
+
+| summarize Records = count() by EventType
+
+</code></pre>
+<p><strong>Check specific report type:</strong></p>
+<pre><code class="language-kusto">
+ZoomV2_CL
+
+| where EventType == 'dates'
+
+| where TimeGenerated &gt; ago(1h)
+
+| limit 10
+
+</code></pre>
+<p><strong>Monitor connector health:</strong></p>
+<pre><code class="language-kusto">
+ZoomV2_CL
+
+| where TimeGenerated &gt; ago(24h)
+
+| summarize LastRecord = max(TimeGenerated), RecordCount = count() by EventType
+
+| order by LastRecord desc
+
+</code></pre>
+<ul>
+<li>Click 'Connect' to establish connection</li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+</div>
+
+</body>
+</html>

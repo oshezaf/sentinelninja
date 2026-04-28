@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) | `OperationName == "Add user"` | ✓ | ✗ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName == "Add user"` | ✓ | ✗ | ? |
 
 ## Associated Connectors
 

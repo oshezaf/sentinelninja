@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SentinelImpervaWAFCloudV2Logs &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
-
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
@@ -19,6 +21,7 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
+<p>Reference for SentinelImpervaWAFCloudV2Logs table in Azure Monitor Logs.</p>
 <table>
 <thead>
 <tr>
@@ -28,6 +31,14 @@
 </thead>
 <tbody>
 <tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Security</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+</tr>
+<tr>
 <td style="text-align: left;"><strong>Supports Transformations</strong></td>
 <td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
@@ -35,13 +46,399 @@
 <td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
 <td style="text-align: left;">✗ No</td>
 </tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelimpervawafcloudv2logs">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
+<li><a href="#parsers-using-this-table">Parsers</a></li>
+</ul>
+<h2 id="schema">Schema (59 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelimpervawafcloudv2logs">Azure Monitor documentation</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">Act</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The action taken on the request, e.g. 'REQ_PASSED', 'REQ_BLOCKED'.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AdditionalReqHeaders</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Additional HTTP request headers captured.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AdditionalResHeaders</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Additional HTTP response headers captured.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AdditionalRuleInfo</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Additional information about the WAF rule that was triggered.</td>
+</tr>
+<tr>
+<td style="text-align: left;">App</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The application protocol, e.g. 'HTTPS', 'HTTP'.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AttackName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the detected attack or event classification.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AttackSeverity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The severity rating of the attack, from 0 to 10.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CapSupport</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Client capability support flags for advanced detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CCode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ISO country code of the request origin.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CiCode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The city code of the request origin.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClApp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The classified client application type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClAppSig</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The client application signature used for bot detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cn1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The HTTP response status code.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CoSupport</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Client cookie support indicator.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cpt</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The client port number of the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Customer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Imperva customer account name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeliveryRuleDetails</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details about the content delivery rule applied to the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceExternalId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">External device identifier from the WAF.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceFacility</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The facility or module that generated the event, e.g. 'waf'.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeviceVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The version of the WAF device firmware.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dproc</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The destination process name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">End</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The end timestamp of the event in Unix epoch milliseconds.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventProduct</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The product name generating the event, e.g. 'Incapsula WAF'.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of event, e.g. 'Normal', 'SQL Injection'.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventVendor</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The vendor of the product generating the event. Always 'Imperva'.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the log file.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FilePermission</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">File permission information associated with the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FileType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of file involved in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">In</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The size of the incoming request in bytes.</td>
+</tr>
+<tr>
+<td style="text-align: left;">JavascriptSupport</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Whether the client supports JavaScript execution.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The geographic latitude of the request origin.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">CEF log format version identifier.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The geographic longitude of the request origin.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PostBody</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The HTTP POST body content, if captured.</td>
+</tr>
+<tr>
+<td style="text-align: left;">QStr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The URL query string parameters.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ref</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The HTTP referer header value.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Request</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The requested URL path.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestClientApplication</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The client application or user agent string of the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMethod</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The HTTP request method, e.g. GET, POST, PUT, DELETE.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RuleName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the WAF rule that matched the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SignatureId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique identifier for the security signature that triggered.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The server IP address that handled the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SiteId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique identifier for the protected site in Imperva.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SiteTag</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Tags associated with the protected site.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceServiceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The hostname or service name of the protected site.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">Spt</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The server port number.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Src</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source IP address of the client making the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Start</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The start timestamp of the event in Unix epoch milliseconds.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Suid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The session user identifier or email associated with the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tag</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Tags associated with the event, such as attack classification labels.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp when the event occurred, derived from the CEF Start field.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ver</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The TLS or HTTP protocol version used.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VID</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The visitor identifier assigned by Imperva for tracking.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Xff</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The X-Forwarded-For header value indicating original client IP behind proxies.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="solutions">Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/impervacloudwaf.html">ImpervaCloudWAF</a></li>
+</ul>
+<h2 id="connectors">Connectors (2)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/impervacloudwaflogsccfdefinition.html">Imperva Cloud WAF (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/impervawafcloudapi.html">Imperva Cloud WAF</a></td>
+<td style="text-align: left;"></td>
+</tr>
 </tbody>
 </table>
 <hr />
+<h2 id="parsers-using-this-table">Parsers Using This Table (1)</h2>
+<h3 id="other-parsers">Other Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/impervawafcloud.html">ImpervaWAFCloud</a></td>
+<td style="text-align: left;"><a href="../solutions/impervacloudwaf.html">ImpervaCloudWAF</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 </div>
-
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
 </body>
 </html>

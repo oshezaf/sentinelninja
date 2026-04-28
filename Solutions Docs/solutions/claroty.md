@@ -17,6 +17,7 @@
 | **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-23 |
+| **Last Updated** | 2026-04-08 |
 | **Solution Folder** | [Claroty](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Claroty) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-claroty) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🔵 Medium (65%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
@@ -88,7 +89,7 @@ This solution includes **22 content item(s)**:
 | [Claroty - Policy violation](../content/claroty-claroty-policy-violation-3b22ac47-e02c-4599-a37a-57f965de17be-0b548fc4.md) | High | Discovery | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 | [Claroty - Suspicious activity](../content/claroty-claroty-suspicious-activity-99ad9f3c-304c-44c5-a61f-3a17f8b58218-64471eca.md) | High | Discovery | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 | [Claroty - Suspicious file transfer](../content/claroty-claroty-suspicious-file-transfer-5cf35bad-677f-4c23-8927-1611e7ff6f28-b144365c.md) | High | Discovery | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [Claroty - Treat detected](../content/claroty-claroty-treat-detected-731e5ac4-7fe1-4b06-9941-532f2e008bb3-e573bc69.md) | High | Discovery | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Claroty - Threat detected](../content/claroty-claroty-threat-detected-731e5ac4-7fe1-4b06-9941-532f2e008bb3-84acea52.md) | High | Discovery | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Hunting Queries
 
@@ -120,9 +121,10 @@ This solution includes **22 content item(s)**:
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                             |
-|-------------|--------------------------------|------------------------------------------------|
-| 3.0.3       | 18-11-2024                     | Removed Deprecated **Data Connectors**         |  
-| 3.0.2 	  | 10-07-2024 					   | Deprecated **Data Connector** 					|
+| ----------- | ------------------------------ | ---------------------------------------------- |
+| 3.0.4       | 03-04-2026                     | Fixed typo error in analytical rule            |
+| 3.0.3       | 18-11-2024                     | Removed Deprecated **Data Connectors**         |
+| 3.0.2       | 10-07-2024                     | Deprecated **Data Connector**                  |
 | 3.0.1       | 11-09-2023                     | Addition of new Claroty AMA **Data Connector** |
 | 3.0.0       | 27-07-2023                     | Corrected the links in the solution.           |
 

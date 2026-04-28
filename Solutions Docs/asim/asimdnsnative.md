@@ -16,8 +16,8 @@
 | **Schema Version** | 0.1.3 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Native |
-| **Parser Version** | 0.6.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsNative.md)) |
-| **Last Updated** | March 01 2023 |
+| **Parser Version** | 0.8.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsNative.md)) |
+| **Last Updated** | February 20 2026 |
 | **Unifying Parser** | [ASimDns](asimdns.md) |
 | **Source File** | [Parsers\ASimDns\Parsers\ASimDnsNative.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimDns/Parsers/ASimDnsNative.yaml) |
 
@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) | ✓ | ✓ | ✓ |
+| [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) | ✓ | ✓ | ? |
 
 ## Parameters
 
@@ -45,9 +45,9 @@ The following connectors provide data for this parser:
 
 | Connector | Solution |
 |:----------|:---------|
-| [CrowdstrikeReplicatorv2](../connectors/crowdstrikereplicatorv2.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
+| [SynqlyIntegrationConnector](../connectors/synqlyintegrationconnector.md) | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md) |
 
-**Solutions:** [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)
+**Solutions:** [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md)
 
 ## References
 

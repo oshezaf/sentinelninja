@@ -85,8 +85,8 @@ This table is ingested by the following connectors:
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
-| [DNSPattern [Nobelium]](../content/github-only-dnspattern-[nobelium]-6c87bdb8-a44e-452a-b782-542640d985e3-79e5127f.md) |  |
-| [EncodedDomainURL [Nobelium]](../content/github-only-encodeddomainurl-[nobelium]-c561bf69-6a6c-4d0a-960a-b69e0e7c8f51-72f5ce64.md) |  |
+| [DNSPattern [Nobelium]](../content/github-only-dnspattern-[nobelium]-6c87bdb8-a44e-452a-b782-542640d985e3-79e5127f.md) | `ActionType in "DNS query,DnsQueryResponse"` |
+| [EncodedDomainURL [Nobelium]](../content/github-only-encodeddomainurl-[nobelium]-c561bf69-6a6c-4d0a-960a-b69e0e7c8f51-72f5ce64.md) | `ActionType in "DNS query,DnsQueryResponse"` |
 | [MultipleLdaps](../content/github-only-multipleldaps-13476066-24d0-4b19-8fd5-28fe42ab35f6-3119160b.md) | `ActionType == "LDAP query"` |
 | [MultipleSensitiveLdaps](../content/github-only-multiplesensitiveldaps-36582cd7-ddd2-43bc-be79-293a61c42cbe-4ebd792d.md) | `ActionType == "LDAP query"` |
 | [PasswordSearch](../content/github-only-passwordsearch-ba3da496-7559-4288-834e-8de26a90eb6e-d2a90c36.md) | `ActionType == "LDAP query"` |
@@ -98,35 +98,40 @@ This table is ingested by the following connectors:
 
 ### Workbooks (3)
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "LogonFailed,LogonSuccess"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [MicrosoftDefenderForIdentity](../content/microsoft-defender-xdr-microsoftdefenderforidentity-19dcc30d.md) |  |
+| Workbook |
+|:-------------|
+| [MicrosoftDefenderForIdentity](../content/microsoft-defender-xdr-microsoftdefenderforidentity-19dcc30d.md) |
 
 **GitHub Only:**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [microsoftdefenderforidentity](../content/github-only-microsoftdefenderforidentity-215ba93a.md) |  |
+| [microsoftdefenderforidentity](../content/github-only-microsoftdefenderforidentity-215ba93a.md) | `ActionType in "LogonFailed,LogonSuccess"` |
 
-## Selection Criteria Summary (2 criteria, 8 total references)
+## Selection Criteria Summary (4 criteria, 11 total references)
 
-References by type: 0 connectors, 8 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 11 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `ActionType == "LDAP query"` | - | 6 | - | - | **6** |
 | `ActionType == "DNS query"` | - | 2 | - | - | **2** |
-| **Total** | **0** | **8** | **0** | **0** | **8** |
+| `ActionType in "DNS query,DnsQueryResponse"` | - | 2 | - | - | **2** |
+| `ActionType in "LogonFailed,LogonSuccess"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **11** | **0** | **0** | **11** |
 
 ### ActionType
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `LDAP query` | - | 6 | - | - | **6** |
-| `DNS query` | - | 2 | - | - | **2** |
+| `DNS query` | - | 4 | - | - | **4** |
+| `DnsQueryResponse` | - | 2 | - | - | **2** |
+| `LogonFailed` | - | 1 | - | - | **1** |
+| `LogonSuccess` | - | 1 | - | - | **1** |
 
 ---
 

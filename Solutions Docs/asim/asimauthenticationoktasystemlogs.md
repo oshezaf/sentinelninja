@@ -1,0 +1,52 @@
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Authentication ASIM parser for OktaSystemLogs
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · **ASIM Parsers** · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+
+↑ [Back to ASIM Index](asim-index.md)
+
+---
+
+## Parser Information
+
+| Property | Value |
+|:---------|:------|
+| **Parser Name** | `ASimAuthenticationOktaSystemLogs` |
+| **Built-in Parser** | `_ASim_Authentication_OktaSystemLogs` |
+| **Schema** | Authentication |
+| **Schema Version** | 0.1.3 |
+| **Parser Type** | 🔌 Source (product-specific) |
+| **Product** | Okta |
+| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationOktaSystemLogs.md)) |
+| **Last Updated** | Mar 11, 2026 |
+| **Unifying Parser** | [ASimAuthentication](asimauthentication.md) |
+| **Source File** | [Parsers\ASimAuthentication\Parsers\ASimAuthenticationOktaSystemLogs.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuthentication/Parsers/ASimAuthenticationOktaSystemLogs.yaml) |
+
+## Description
+
+This ASIM parser supports normalizing Okta sign in logs, stored in OktaSystemLogs table, to the ASIM Authentication schema.
+
+## Source Tables
+
+This parser reads from the following tables:
+
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`OktaSystemLogs`](../tables/oktasystemlogs.md) | ✓ | ✗ | ? |
+
+## Parameters
+
+| Name | Type | Default |
+|:-----|:-----|:--------|
+| `disabled` | bool | False |
+
+## References
+
+- [ASIM Authentication Schema](https://aka.ms/ASimAuthenticationDoc)
+- [ASIM](https://aka.ms/AboutASIM)
+
+---
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · **ASIM Parsers** · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+
+↑ [Back to ASIM Index](asim-index.md)
+

@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Dynamics365Activity`](../tables/dynamics365activity.md) | ✓ | ✗ | ✗ |
+| [`Dynamics365Activity`](../tables/dynamics365activity.md) | ✓ | ✗ | ? |
 
 ## Permissions
 

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NetApp Ransomware Resilience Volume Snapshot Playbook &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="netapp-ransomware-resilience-volume-snapshot-playbook">NetApp Ransomware Resilience Volume Snapshot Playbook</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<hr />
+<p>This playbook creates a NetApp volume snapshot using the updated NetApp Ransomware Resilience take-snapshot API endpoint and optionally polls for completion.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/netapp-ransomware-resilience.html">NetApp Ransomware Resilience</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks/NetApp-RansomwareResilience_Volume_Snapshot_Playbook/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks/NetApp-RansomwareResilience_Volume_Snapshot_Playbook/readme.md">NetApp-RansomwareResilience_Volume_Snapshot_Playbook/readme.md</a></em></p>
+</blockquote>
+<h1 id="netapp-ransomwareresilience-volume-snapshot">NetApp-RansomwareResilience-Volume-Snapshot</h1>
+<h2 id="overview">Overview</h2>
+<p>This playbook creates point-in-time snapshots of NetApp volumes to protect your data. When responding to a security incident, snapshots provide a clean recovery point and preserve evidence for investigation.</p>
+<h2 id="purpose">Purpose</h2>
+<p>During a ransomware or security incident, taking immediate snapshots of critical volumes ensures you have a clean copy of data before any potential corruption or encryption occurs. These snapshots can be used for recovery or forensic analysis.</p>
+<h2 id="deployment-order">Deployment Order</h2>
+<p><strong>This playbook should be deployed FIFTH</strong>, after:
+1. ✅ Auth Playbook (required)
+2. ✅ Async Poll Playbook (required)
+3. ✅ Enrich IP Playbook (optional)
+4. ✅ Enrich StorageVM Playbook (optional)</p>
+<h2 id="what-it-does">What It Does</h2>
+<ul>
+<li>Accepts volume ID, agent ID, and system ID as input</li>
+<li>Retrieves authentication from the Auth Playbook</li>
+<li>Initiates a snapshot creation operation via the NetApp API</li>
+<li>Uses the Async Poll Playbook to monitor snapshot completion</li>
+<li>Confirms when the snapshot is successfully created</li>
+<li>Returns snapshot details and status</li>
+</ul>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before deploying this playbook:
+1. Auth Playbook must be deployed and functioning correctly
+2. Async Poll Playbook must be deployed and functioning correctly
+3. Valid NetApp API credentials configured
+4. Sufficient storage capacity for snapshots</p>
+<h2 id="how-to-use">How to Use</h2>
+<p>This playbook can be:
+- Called manually when you identify a volume that needs protection
+- Triggered automatically by Microsoft Sentinel automation rules
+- Integrated into multi-step incident response workflows
+- Combined with enrichment playbooks to identify which volumes to snapshot</p>
+<p><strong>Input Required:</strong>
+- <code>volume_id</code>: The ID of the volume to snapshot
+- <code>agent_id</code>: The NetApp agent identifier
+- <code>system_id</code>: The NetApp system identifier</p>
+<h2 id="use-case-example">Use Case Example</h2>
+<p><strong>Ransomware Incident Response:</strong>
+1. Receive alert about suspicious file encryption activity
+2. Use Enrich IP or Enrich StorageVM playbooks to identify affected volumes
+3. <strong>Use this playbook to immediately snapshot clean volumes</strong>
+4. Use Volume Offline playbook to isolate compromised volumes
+5. Restore from snapshots if needed</p>
+<h2 id="important-notes">Important Notes</h2>
+<ul>
+<li>Snapshots preserve the current state of the volume</li>
+<li>Snapshots consume storage space—monitor your capacity</li>
+<li>Take snapshots BEFORE taking volumes offline for maximum data protection</li>
+<li>Regular snapshots are recommended as part of your backup strategy</li>
+</ul>
+<h2 id="post-deployment-configuration">Post-Deployment Configuration</h2>
+<p>After deploying this playbook:
+1. Test with a non-production volume using valid IDs
+2. Verify the snapshot is created successfully
+3. Configure automation rules to trigger snapshots during security incidents
+4. Document your snapshot retention policies</p>
+<h2 id="building-custom-workflows">Building Custom Workflows</h2>
+<p>Combine this playbook with others to create comprehensive incident response:
+- Enrich IP → Identify volumes → <strong>Take snapshots</strong> → Take volumes offline
+- Alert triggers → Enrich StorageVM → <strong>Take snapshots of all critical volumes</strong></p>
+<h2 id="need-help">Need Help?</h2>
+<p>If snapshot creation isn't working, verify:
+- The Auth Playbook is returning valid tokens
+- The Async Poll Playbook is functioning correctly
+- Volume ID, agent ID, and system ID are correct
+- You have sufficient storage capacity for snapshots
+- Your NetApp system supports snapshot operations</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/netapp-ransomware-resilience.html">Back to NetApp Ransomware Resilience</a></p>
+</div>
+
+</body>
+</html>

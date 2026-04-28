@@ -8,13 +8,44 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
+
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
+## Schema (8 columns)
+
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium%5CData%20Connectors/Table_HighUptime.json)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| Computer_ID_s | string |  |
+| Computer_Name_s | string |  |
+| Count_d | real |  |
+| High_Uptime_s | string |  |
+| Last_Logged_In_User_s | string |  |
+| Last_Reboot_s | string |  |
+| Reboot_Required_s | string |  |
+| TimeGenerated | datetime | The time at which the data was generated |
 
 ## Solutions (1)
 
 This table is used by the following solutions:
 
 - [Tanium](../solutions/tanium.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Tanium's CCF Push Connector](../connectors/taniumconnector.md) |  |
 
 ---
 

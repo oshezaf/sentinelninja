@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) | `OperationName has_any "password,security info"` | ✓ | ✗ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName has_any "password,security info"` | ✓ | ✗ | ? |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ | ? |
 | [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | ? |
 

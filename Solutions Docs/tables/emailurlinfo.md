@@ -42,7 +42,7 @@ Information about URLs on emails
 | UrlDomain | string | Domain part of the Url |
 | UrlLocation | string | Indicates which part of the email the URL is located |
 
-## Solutions (7)
+## Solutions (8)
 
 This table is used by the following solutions:
 
@@ -52,6 +52,7 @@ This table is used by the following solutions:
 - [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
+- [Visa Threat Intelligence (VTI)](../solutions/visa-threat-intelligence-vti.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
 ## Connectors (1)
@@ -64,9 +65,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (37)
+## Content Items Using This Table (38)
 
-### Analytic Rules (5)
+### Analytic Rules (6)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 
@@ -81,6 +82,12 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [TI Map URL Entity to EmailUrlInfo](../content/threat-intelligence-new-ti-map-url-entity-to-emailurlinfo-9e32e545-e60c-47de-9941-f9ca1ada0a42-4894c77c.md) |  |
 | [TI map Domain entity to EmailUrlInfo](../content/threat-intelligence-new-ti-map-domain-entity-to-emailurlinfo-b56e2290-c65b-45a5-9636-3651e85bbe5d-d68d3e26.md) |  |
+
+**In solution [Visa Threat Intelligence (VTI)](../solutions/visa-threat-intelligence-vti.md):**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [VTI - High Severity Domain Collision Detection](../content/visa-threat-intelligence-vti-vti-high-severity-domain-collision-detection-7be47078-657a-43cf-9c93-b4705a9f6134-72918c13.md) |  |
 
 **Standalone Content:**
 

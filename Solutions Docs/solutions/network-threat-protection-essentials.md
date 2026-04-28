@@ -20,7 +20,7 @@
 | **Last Updated** | 2026-01-30 |
 | **Solution Folder** | [Network Threat Protection Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Network%20Threat%20Protection%20Essentials) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-networkthreatdetection) · Popularity: 🔵 Medium (61%) |
-| **Pre-requisites** | [Microsoft 365](microsoft-365.md), [Amazon Web Services](amazon-web-services.md), [Windows Server DNS](windows-server-dns.md), [Azure Firewall](azure-firewall.md), [Windows Forwarded Events](windows-forwarded-events.md), [Zscaler Internet Access](zscaler-internet-access.md), [PaloAlto-PAN-OS](paloalto-pan-os.md), [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md), [Check Point](check-point.md) |
+| **Pre-requisites** | [Microsoft 365](microsoft-365.md), [Amazon Web Services](amazon-web-services.md), [Windows Server DNS](windows-server-dns.md), [Azure Firewall](azure-firewall.md), [Windows Forwarded Events](windows-forwarded-events.md), zscaler1579058425289.zscaler_internet_access_mss, [PaloAlto-PAN-OS](paloalto-pan-os.md), [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md), [Check Point](check-point.md) |
 
 The **Network Threat Protection Essentials** solution contain queries that identifies suspicious network behavior based on various data sources ingested in Sentinel. The solution contains queries to detect common network-based attacks - things like malicious user agents, mining pools, Base64 encoded IPv4 address in request URL etc. The solution will be constantly updated to add more detection/hunting query as well as other sentinel content.
  
@@ -37,7 +37,7 @@ For details on the required solutions, see the [Pre-requisites](#pre-requisites)
 
 ## Pre-requisites
 
-This solution depends on **9 other solution(s)**:
+This solution depends on **8 other solution(s)**:
 
 | Solution |
 |:---------|
@@ -49,7 +49,6 @@ This solution depends on **9 other solution(s)**:
 | [PaloAlto-PAN-OS](paloalto-pan-os.md) |
 | [Windows Forwarded Events](windows-forwarded-events.md) |
 | [Windows Server DNS](windows-server-dns.md) |
-| [Zscaler Internet Access](zscaler-internet-access.md) |
 
 ## Data Connectors
 
@@ -67,8 +66,6 @@ This solution depends on **9 other solution(s)**:
 - [[Deprecated] Palo Alto Networks (Firewall) via Legacy Agent](../connectors/paloaltonetworks.md) *(dependency on [PaloAlto-PAN-OS](paloalto-pan-os.md))*
 - [[Deprecated] Palo Alto Networks (Firewall) via AMA](../connectors/paloaltonetworksama.md) *(dependency on [PaloAlto-PAN-OS](paloalto-pan-os.md))*
 - [Windows Forwarded Events](../connectors/windowsforwardedevents.md) *(dependency on [Windows Forwarded Events](windows-forwarded-events.md))*
-- [[Deprecated] Zscaler via Legacy Agent](../connectors/zscaler.md) *(dependency on [Zscaler Internet Access](zscaler-internet-access.md))*
-- [[Deprecated] Zscaler via AMA](../connectors/zscalerama.md) *(dependency on [Zscaler Internet Access](zscaler-internet-access.md))*
 
 ## Tables Used
 

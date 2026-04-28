@@ -16,8 +16,8 @@
 | **Schema Version** | 0.1.0 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Microsoft 365 Defender for Endpoint |
-| **Parser Version** | 0.1.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimRegistryEvent/CHANGELOG/ASimRegistryEventMicrosoft365D.md)) |
-| **Last Updated** | Oct 10, 2023 |
+| **Parser Version** | 0.1.3 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimRegistryEvent/CHANGELOG/ASimRegistryEventMicrosoft365D.md)) |
+| **Last Updated** | Feb 26, 2026 |
 | **Unifying Parser** | [ASimRegistry](asimregistry.md) |
 | **Source File** | [Parsers\ASimRegistryEvent\Parsers\ASimRegistryEventMicrosoft365D.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimRegistryEvent/Parsers/ASimRegistryEventMicrosoft365D.yaml) |
 

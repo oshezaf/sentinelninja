@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) | `OperationName in "Remove eligible member from role,Remove member from role"` | ✓ | ✗ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName in "Remove eligible member from role,Remove member from role"` | ✓ | ✗ | ? |
 
 ## Associated Connectors
 

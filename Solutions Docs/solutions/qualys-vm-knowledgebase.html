@@ -46,7 +46,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.0.1</td>
+<td style="text-align: left;">3.1.1</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -55,6 +55,10 @@
 <tr>
 <td style="text-align: left;"><strong>First Published</strong></td>
 <td style="text-align: left;">2022-05-17</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2026-04-10</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Solution Folder</strong></td>
@@ -74,15 +78,16 @@
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/qualyskb.html">Qualys VM KnowledgeBase</a> 🔶</li>
+<li><a href="../connectors/qualyskbconnector.html">Qualys Knowledge Base (via Codeless Connector Framework)</a></li>
 </ul>
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>1 table(s)</strong>:</p>
+<p>This solution uses <strong>2 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -95,6 +100,11 @@
 <tr>
 <td><a href="../tables/qualyskb-cl.html"><code>QualysKB_CL</code></a> 🔶</td>
 <td><a href="../connectors/qualyskb.html">Qualys VM KnowledgeBase</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/qualysknowledgebase.html"><code>QualysKnowledgeBase</code></a></td>
+<td><a href="../connectors/qualyskbconnector.html">Qualys Knowledge Base (via Codeless Connector Framework)</a>, <a href="../connectors/qualyskb.html">Qualys VM KnowledgeBase</a></td>
 <td>-</td>
 </tr>
 </tbody>
@@ -131,7 +141,7 @@
 <tr>
 <td style="text-align: left;"><a href="../parsers/qualyskb.html">QualysKB</a></td>
 <td style="text-align: left;">-</td>
-<td style="text-align: left;"><a href="../tables/qualyskb-cl.html"><code>QualysKB_CL</code></a> <em>(read)</em></td>
+<td style="text-align: left;"><a href="../tables/qualyskb-cl.html"><code>QualysKB_CL</code></a> <em>(read)</em><br><a href="../tables/qualysknowledgebase.html"><code>QualysKnowledgeBase</code></a> <em>(read)</em></td>
 </tr>
 </tbody>
 </table>
@@ -145,6 +155,16 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>3.1.1</td>
+<td>23-04-2026</td>
+<td>Moved endpoint to target Qualys KB API v4.0</td>
+</tr>
+<tr>
+<td>3.1.0</td>
+<td>19-03-2026</td>
+<td>Added <strong>Codeless Connector</strong> to solution and updated parser to add fields and clean up typos.</td>
+</tr>
 <tr>
 <td>3.0.1</td>
 <td>03-05-2024</td>

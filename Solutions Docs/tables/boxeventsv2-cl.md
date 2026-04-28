@@ -8,9 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -77,8 +75,8 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Box](../connectors/boxdataconnector.md) |  |
-| [Box Events (CCP)](../connectors/boxeventsccpdefinition.md) |  |
+| [[DEPRECATED] Box Events (using Azure Function)](../connectors/boxdataconnector.md) |  |
+| [Box Events (via Codeless Connector Framework)](../connectors/boxeventsccpdefinition.md) |  |
 
 ---
 

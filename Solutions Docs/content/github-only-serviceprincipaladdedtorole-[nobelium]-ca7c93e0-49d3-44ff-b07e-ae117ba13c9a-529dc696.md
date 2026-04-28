@@ -23,7 +23,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "Add member to role."` | ✓ | ✗ | ✓ |
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "Add member to role."` | ✓ | ✗ | ? |
 
 ---
 

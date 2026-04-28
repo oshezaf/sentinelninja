@@ -13,8 +13,8 @@
 | Title | Parser for DynatraceProblems |
 | Location | Solution |
 | Solution | [Dynatrace](../solutions/dynatrace.md) |
-| Version | 1.0.0 |
-| Last Updated | 2023-08-23 |
+| Version | 2.0.0 |
+| Last Updated | 2026-04-02 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Parsers/DynatraceProblems.yaml) |
@@ -25,7 +25,8 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md) | ✗ | ✓ | ✗ |
+| [`DynatraceProblemsV2_CL`](../tables/dynatraceproblemsv2-cl.md) | ? | ✓ | ? |
+| [`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md) | ? | ✓ | ? |
 
 ---
 

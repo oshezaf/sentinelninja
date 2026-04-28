@@ -14,7 +14,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://bloodhoundenterprise.io/](https://bloodhoundenterprise.io/) |
 | **Categories** | domains |
-| **Version** | 3.2.0 |
+| **Version** | 3.2.2 |
 | **Author** | SpecterOps - support@specterops.io |
 | **First Published** | 2023-05-04 |
 | **Last Updated** | 2021-05-04 |

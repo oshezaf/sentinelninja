@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "Awake Security"`<br>`DeviceVendor == "Arista Networks"` | ✓ | ✓ | ✓ |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "Awake Security"`<br>`DeviceVendor == "Arista Networks"` | ✓ | ✓ | ? |
 
 ---
 

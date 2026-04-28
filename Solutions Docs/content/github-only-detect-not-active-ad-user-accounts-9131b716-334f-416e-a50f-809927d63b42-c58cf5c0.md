@@ -22,7 +22,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`IdentityLogonEvents`](../tables/identitylogonevents.md) | ✓ | ✗ | ✓ |
+| [`IdentityLogonEvents`](../tables/identitylogonevents.md) | ✓ | ✗ | ? |
 
 ---
 

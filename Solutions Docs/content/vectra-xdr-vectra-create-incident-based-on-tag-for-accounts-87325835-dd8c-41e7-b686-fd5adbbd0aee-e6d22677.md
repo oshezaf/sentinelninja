@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Entities_Data_CL`](../tables/entities-data-cl.md) | ✓ | ✓ | ✓ |
+| [`Entities_Data_CL`](../tables/entities-data-cl.md) | ? | ✓ | ? |
 
 ---
 

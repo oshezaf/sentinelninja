@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Syslog`](../tables/syslog.md) | `ProcessName in "cz-sessiond,cz-vpnd"`<br>`SyslogMessage has_all "[AUDIT]"`<br>`SyslogMessage has_any ":"` | ✓ | ✓ | ✓ |
+| [`Syslog`](../tables/syslog.md) | `ProcessName in "cz-sessiond,cz-vpnd"`<br>`SyslogMessage has_all "[AUDIT]"`<br>`SyslogMessage has_any ":"` | ✓ | ✓ | ? |
 
 ## Parameters
 

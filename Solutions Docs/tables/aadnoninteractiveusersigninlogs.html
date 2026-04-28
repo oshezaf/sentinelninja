@@ -47,10 +47,6 @@
 <td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
-</tr>
-<tr>
 <td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadnoninteractiveusersigninlogs">View Documentation</a></td>
 </tr>
@@ -64,7 +60,7 @@
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
-<h2 id="schema">Schema (83 columns)</h2>
+<h2 id="schema">Schema (85 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadnoninteractiveusersigninlogs">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -156,6 +152,11 @@
 <td style="text-align: left;">Set of CA policies that apply to this sign-in, each as CA: policy name, and/or MFA: Per-user.</td>
 </tr>
 <tr>
+<td style="text-align: left;">AuthenticatorAppLocation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The location of the authenticator app.</td>
+</tr>
+<tr>
 <td style="text-align: left;">AutonomousSystemNumber</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Autonomous System Number for the network.</td>
@@ -174,6 +175,11 @@
 <td style="text-align: left;">ClientCredentialType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of client credential used. Examples include client assertion, client secret, etc.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConditionalAccessAudiences</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of the conditional access audiences being applied for the sign-in.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ConditionalAccessPolicies</td>

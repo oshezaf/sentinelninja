@@ -31,8 +31,8 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AZFWDnsQuery`](../tables/azfwdnsquery.md) |  | ✓ | ✗ | ✓ |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category == "AzureFirewallDnsProxy"`<br>`ResourceType == "AZUREFIREWALLS"` | ✗ | ✗ | ✗ |
+| [`AZFWDnsQuery`](../tables/azfwdnsquery.md) |  | ✓ | ✗ | ? |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category == "AzureFirewallDnsProxy"`<br>`ResourceType == "AZUREFIREWALLS"` | ? | ✗ | ? |
 
 ## Parameters
 

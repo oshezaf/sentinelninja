@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) | `ActionType == "RegistryValueSet"` | ✓ | ✗ | ? |
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "4657"` | ✓ | ✓ | ✓ |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "4657"` | ✓ | ✓ | ? |
 
 ## Associated Connectors
 

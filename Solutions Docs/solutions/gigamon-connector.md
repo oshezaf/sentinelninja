@@ -42,10 +42,7 @@ Gigamon Application Metadata Intelligence empowers your Observability, Security 
 
 This solution provides **1 data connector(s)**:
 
-- [Gigamon AMX Data Connector](../connectors/gigamondataconnector.md) 🔶
-
-> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
-
+- [Gigamon AMX Connector](../connectors/gigamondefinition.md)
 
 ## Tables Used
 
@@ -53,10 +50,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Gigamon_CL`](../tables/gigamon-cl.md) 🔶 | [Gigamon AMX Data Connector](../connectors/gigamondataconnector.md) | Workbooks |
-
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+| [`GigamonV2_CL`](../tables/gigamonv2-cl.md) | [Gigamon AMX Connector](../connectors/gigamondefinition.md) | Workbooks |
 
 ## Content Items
 
@@ -70,13 +64,14 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Gigamon](../content/gigamon-connector-gigamon-07ba033c.md) | [`Gigamon_CL`](../tables/gigamon-cl.md) |
+| [Gigamon](../content/gigamon-connector-gigamon-07ba033c.md) | [`GigamonV2_CL`](../tables/gigamonv2-cl.md) |
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
-| 3.0.0       | 25-10-2023                     | Initial Solution Release                    |
+| 3.0.1       | 19-02-2026                     | **CCF** Push Connector.                     |  
+| 3.0.0       | 25-10-2023                     | Initial Solution Release.                   |
 
 ---
 

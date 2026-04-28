@@ -1,4 +1,4 @@
-# Netskope Alerts and Events
+# Netskope Alerts and Events (via Codeless Connector Framework)
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Netskope.svg" alt="" width="75" height="75">
 
@@ -26,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`NetskopeAlerts_CL`](../tables/netskopealerts-cl.md) | ✓ | ✓ | ✓ |
+| [`NetskopeAlerts_CL`](../tables/netskopealerts-cl.md) | ? | ✓ | ? |
 | [`NetskopeEventsApplication_CL`](../tables/netskopeeventsapplication-cl.md) | ? | ✓ | ? |
 | [`NetskopeEventsAudit_CL`](../tables/netskopeeventsaudit-cl.md) | ? | ✓ | ? |
 | [`NetskopeEventsConnection_CL`](../tables/netskopeeventsconnection-cl.md) | ? | ✓ | ? |

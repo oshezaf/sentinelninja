@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ValimailEnforceEventsCL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="valimailenforceevents_cl">ValimailEnforceEvents_CL</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
+<li><a href="#content-items-using-this-table">Content Items</a></li>
+</ul>
+<h2 id="schema">Schema (11 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ValimailEnforce%5CData%20Connectors%5CValimailEnforceEventLogs_ccp/ValimailEnforceEventLogs_Table.json">Connector definition</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Computer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Constant: ValimailReportingAPI</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventCategory</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Event category: User, Domain or Service management, DMARC, SPF, DKIM and policy changes</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventChange</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Detail of the action performed</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventSeverity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Impact of the change: high, medium,low or informational</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Action perfomed on the subject</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsHighValueEvent</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">True if the event can impact email deliverability</td>
+</tr>
+<tr>
+<td style="text-align: left;">PerformedAt</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time (UTC) when the action was performed</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Constant: ValimailEnforce</td>
+</tr>
+<tr>
+<td style="text-align: left;">Subject</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Subject of the performed action. Currently domains and application users</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time (UTC) when the event was registered</td>
+</tr>
+<tr>
+<td style="text-align: left;">User</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">email address or organization that performed the action</td>
+</tr>
+</tbody>
+</table>
+<h2 id="solutions">Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/valimailenforce.html">ValimailEnforce</a></li>
+</ul>
+<h2 id="connectors">Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/valimailenforceeventsconnector.html">Valimail Enforce Configuration Events</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="content-items-using-this-table">Content Items Using This Table (8)</h2>
+<h3 id="analytic-rules">Analytic Rules (4)</h3>
+<p><strong>In solution <a href="../solutions/valimailenforce.html">ValimailEnforce</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Analytic Rule</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/valimailenforce-valimail-enforce-dmarc-policy-weakened-to-none-44ec1fa4-a502-41ae-879a-3aad3557edce-ba6726ed.html">Valimail Enforce - DMARC Policy Weakened to None</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/valimailenforce-valimail-enforce-email-authentication-key-deleted-483078c6-d029-40f3-931a-30af0032008b-737952e9.html">Valimail Enforce - Email Authentication Key Deleted</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/valimailenforce-valimail-enforce-high-value-user-management-event-e960f5b0-cd80-474a-996a-013ff3989772-199686de.html">Valimail Enforce - High-Value User Management Event</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/valimailenforce-valimail-enforce-unusual-rate-of-configuration-changes-or-user-additions-3cbb78d9-81ac-42c9-b3cd-7e6baea7d9ff-19771ced.html">Valimail Enforce - Unusual Rate of Configuration Changes or User Additions</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hunting-queries">Hunting Queries (4)</h3>
+<p><strong>In solution <a href="../solutions/valimailenforce.html">ValimailEnforce</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Hunting Query</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/valimailenforce-valimail-enforce-bulk-domain-changes-by-single-user-85db7cdc-378e-48b9-b6cf-77fd622aa617-4970dc01.html">Valimail Enforce - Bulk Domain Changes by Single User</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/valimailenforce-valimail-enforce-configuration-change-rate-trend-ce30ce49-2eaf-483c-85cd-c27a645d5355-83699391.html">Valimail Enforce - Configuration Change Rate Trend</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/valimailenforce-valimail-enforce-dmarc-policy-change-history-ad6df9bc-5c1d-4dcd-8df9-516bc35f4dfe-df562b72.html">Valimail Enforce - DMARC Policy Change History</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/valimailenforce-valimail-enforce-high-value-event-summary-a2be34b7-e841-471a-aaac-142be8a74cab-8dcb669f.html">Valimail Enforce - High Value Event Summary</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

@@ -45,9 +45,9 @@ The following connectors provide data for this parser:
 
 | Connector | Solution |
 |:----------|:---------|
-| [CrowdstrikeReplicatorv2](../connectors/crowdstrikereplicatorv2.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
+| [SynqlyIntegrationConnector](../connectors/synqlyintegrationconnector.md) | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md) |
 
-**Solutions:** [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)
+**Solutions:** [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md)
 
 ## References
 

@@ -39,10 +39,6 @@
 <td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
 <td style="text-align: left;">✗ No</td>
 </tr>
-<tr>
-<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
-</tr>
 </tbody>
 </table>
 <h2 id="contents">Contents</h2>
@@ -51,13 +47,14 @@
 <li><a href="#connectors">Connectors</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 </ul>
-<h2 id="solutions">Solutions (32)</h2>
+<h2 id="solutions">Solutions (34)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a></li>
 <li><a href="../solutions/azure-key-vault.html">Azure Key Vault</a></li>
 <li><a href="../solutions/azure-sql-database-solution-for-sentinel.html">Azure SQL Database solution for sentinel</a></li>
 <li><a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a></li>
+<li><a href="../solutions/censys.html">Censys</a></li>
 <li><a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a></li>
 <li><a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a></li>
 <li><a href="../solutions/dora-compliance.html">DORA Compliance</a></li>
@@ -78,6 +75,7 @@
 <li><a href="../solutions/signl4.html">SIGNL4</a></li>
 <li><a href="../solutions/soc-handbook.html">SOC Handbook</a></li>
 <li><a href="../solutions/soc-process-framework.html">SOC-Process-Framework</a></li>
+<li><a href="../solutions/socradar.html">SOCRadar</a></li>
 <li><a href="../solutions/sentinelsoaressentials.html">SentinelSOARessentials</a></li>
 <li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 <li><a href="../solutions/threat-intelligence.html">Threat Intelligence</a></li>
@@ -108,8 +106,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (65)</h2>
-<h3 id="analytic-rules">Analytic Rules (2)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (70)</h2>
+<h3 id="analytic-rules">Analytic Rules (3)</h3>
 <p><strong>In solution <a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a>:</strong></p>
 <table>
 <thead>
@@ -129,7 +127,38 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (57)</h3>
+<p><strong>In solution <a href="../solutions/socradar.html">SOCRadar</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Analytic Rule</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/socradar-socradar-unsynced-closed-incident-6e2f8d4b-5a71-4c9e-b3f6-8a1c9d4e7b2a-ea970a79.html">SOCRadar Unsynced Closed Incident</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hunting-queries">Hunting Queries (1)</h3>
+<p><strong>In solution <a href="../solutions/socradar.html">SOCRadar</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Hunting Query</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/socradar-socradar-incident-correlation-3a665ce4-b824-4a79-861b-c9f80ab4daba-143cdc23.html">SOCRadar Incident Correlation</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks (58)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
 <table>
 <thead>
@@ -186,6 +215,21 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.html">AzureSecurityBenchmark</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/censys.html">Censys</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Workbook</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-21c23ffd.html">Censys</a></td>
 <td style="text-align: left;"></td>
 </tr>
 </tbody>

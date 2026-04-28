@@ -8,9 +8,46 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
+
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+
+## Schema (12 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/XbowAssessments_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| AssessmentId | string |
+| AssessmentName | string |
+| AssetId | string |
+| AssetName | string |
+| AttackCredits | real |
+| CreatedAt | string |
+| OrganizationId | string |
+| Progress | real |
+| RecentEvents | string |
+| State | string |
+| TimeGenerated | datetime |
+| Type | string |
+
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [XBOW](../solutions/xbow.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [XBOW Security Platform (via Azure Function)](../connectors/xbowsecurityconnector.md) |  |
 
 ---
 

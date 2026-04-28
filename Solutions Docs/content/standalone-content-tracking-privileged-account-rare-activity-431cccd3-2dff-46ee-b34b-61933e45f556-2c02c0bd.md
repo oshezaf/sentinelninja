@@ -24,13 +24,13 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) |  | ✓ | ✓ | ✓ |
-| [`Event`](../tables/event.md) |  | ✓ | ✓ | ✗ |
-| [`OfficeActivity`](../tables/officeactivity.md) |  | ✓ | ✗ | ✓ |
-| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4624,4625,4720,4726,4728,4732,4756,7045"` | ✓ | ✓ | ✓ |
-| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ✓ |
-| [`W3CIISLog`](../tables/w3ciislog.md) |  | ✓ | ✗ | ✗ |
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) |  | ✓ | ✓ | ? |
+| [`Event`](../tables/event.md) |  | ✓ | ✓ | ? |
+| [`OfficeActivity`](../tables/officeactivity.md) |  | ✓ | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4624,4625,4720,4726,4728,4732,4756,7045"` | ✓ | ✓ | ? |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ? |
+| [`W3CIISLog`](../tables/w3ciislog.md) |  | ✓ | ✗ | ? |
 
 ## Associated Connectors
 

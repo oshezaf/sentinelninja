@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>D3Security Sentinel Solution &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="d3security-sentinel-solution">D3Security Sentinel Solution</h1>
+<p><em>Solution: D3SmartSOAR</em></p>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/D3SOAR.svg" alt="D3SmartSOAR Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">D3 Security</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://d3security.com/company/contact/">https://d3security.com/company/contact/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.3.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">D3 Security - support@d3security.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2026-02-18</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2026-04-17</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/D3SmartSOAR">D3SmartSOAR</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Marketplace</strong></td>
+<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/d3securitymanagementsystemsinc1599258630765.azure-sentinel-solution-d3smartsoar">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
+</tr>
+</tbody>
+</table>
+<p>The D3 Smart SOAR solution for Microsoft Sentinel enables ingestion of D3 Smart SOAR alerts and events into Microsoft Sentinel via a codeless connector.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/d3soarconnectordefinition.html">D3 Smart SOAR Incidents</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/d3soarincidents-cl.html"><code>D3SOARIncidents_CL</code></a></td>
+<td><a href="../connectors/d3soarconnectordefinition.html">D3 Smart SOAR Incidents</a></td>
+<td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>1 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/d3smartsoar-d3-smart-soar-high-or-critical-severity-incident-detected-48ef0be4-8240-4a03-bbb9-320b562d6ce4-a012d8d0.html">D3 Smart SOAR - High or critical severity incident detected</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/d3soarincidents-cl.html"><code>D3SOARIncidents_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/D3SmartSOAR/README.md">D3SmartSOAR/README.md</a></em></p>
+</blockquote>
+<h1 id="d3-smart-soar-microsoft-sentinel-connector">D3 Smart SOAR — Microsoft Sentinel Connector</h1>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before connecting, configure the Time Zone of your D3 Smart SOAR site:</p>
+<ol>
+<li>In D3 Smart SOAR, go to <strong>Organization Management → Sites</strong>.</li>
+<li>Select the site you are connecting to Microsoft Sentinel.</li>
+<li>Set the <strong>Time Zone</strong> to <strong>(UTC+00:00) Coordinated Universal Time</strong>.</li>
+</ol>
+<p>This ensures incident timestamps align correctly with Microsoft Sentinel's polling window.</p>
+<h2 id="resources">Resources</h2>
+<ul>
+<li>Privacy Policy: https://d3security.com/privacy-policy/</li>
+<li>Support: https://d3security.com/company/contact/</li>
+</ul>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.3.0</td>
+<td>13-04-2026</td>
+<td>Added analytics rule for High and Critical severity incident detection.</td>
+</tr>
+<tr>
+<td>3.2.0</td>
+<td>01-04-2026</td>
+<td>Changed to Solution Template plan type. Updated offer ID to azure-sentinel-solution-d3smartsoar.</td>
+</tr>
+<tr>
+<td>3.1.0</td>
+<td>26-03-2026</td>
+<td>Fixed pagination using CountBasedPaging with nested JSON path paging (<code>$.CommandParams.PageIndex</code>). Updated publisher ID to match Partner Center registration. Updated branding to Microsoft Sentinel.</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>27-02-2026</td>
+<td>Initial release of D3 Smart SOAR data connector. Polls incidents every 5 minutes into D3SOARIncidents_CL with IncidentRawData and EventRawData dynamic fields via PollFromSentinel parameter.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+</div>
+
+</body>
+</html>

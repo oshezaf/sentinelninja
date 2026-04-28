@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) | `OperationName in "Approve access package assignment request,Request approved,User requests access package assignment"` | ✓ | ✗ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName in "Approve access package assignment request,Request approved,User requests access package assignment"` | ✓ | ✗ | ? |
 
 ## Associated Connectors
 

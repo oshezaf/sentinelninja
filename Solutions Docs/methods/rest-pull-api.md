@@ -19,8 +19,8 @@ REST Pull API-based connectors use the Azure Monitor Data Collector API or Logs 
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **57** |
-| Active | 53 |
-| Deprecated 🚫 | 0 |
+| Active | 52 |
+| Deprecated 🚫 | 1 |
 | Unpublished ⚠️ | 4 |
 
 ## Connectors Using This Method
@@ -37,6 +37,7 @@ REST Pull API-based connectors use the Azure Monitor Data Collector API or Logs 
 | [Azure CloudNGFW By Palo Alto Networks](../connectors/azurecloudngfwbypaloaltonetworks.md) 🔶 | Palo Alto Networks | 1 | [Azure Cloud NGFW By Palo Alto Networks](../solutions/azure-cloud-ngfw-by-palo-alto-networks.md) |
 | [BETTER Mobile Threat Defense (MTD)](../connectors/bettermtd.md) 🔶 | BETTER Mobile | 4 | [BETTER Mobile Threat Defense (MTD)](../solutions/better-mobile-threat-defense-mtd.md) |
 | [Beyond Security beSECURE](../connectors/beyondsecuritybesecure.md) ⚠️ 🔶 | Beyond Security | 3 | [Beyond Security beSECURE](../solutions/beyond-security-besecure.md) |
+| [blacklens.io](../connectors/blacklens-io.md) | snapSEC GmbH | 1 | [Blacklens](../solutions/blacklens.md) |
 | [CITRIX SECURITY ANALYTICS](../connectors/citrix.md) 🔶 | CITRIX | 4 | [Citrix Analytics for Security](../solutions/citrix-analytics-for-security.md) |
 | [Cognni](../connectors/cognnisentineldataconnector.md) 🔶 | Cognni | 1 | [Cognni](../solutions/cognni.md) |
 | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) 🔶 | Corelight | 108 | [Corelight](../solutions/corelight.md) |
@@ -53,10 +54,8 @@ REST Pull API-based connectors use the Azure Monitor Data Collector API or Logs 
 | [Forescout eyeInspect for OT Security](../connectors/forescout-eyeinspect-for-ot-security.md) ⚠️ | Forescout | 2 | [Forescout eyeInspect for OT Security](../solutions/forescout-eyeinspect-for-ot-security.md) |
 | [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) 🔶 | Forescout | 3 | [ForescoutHostPropertyMonitor](../solutions/forescouthostpropertymonitor.md) |
 | [Garrison ULTRA Remote Logs](../connectors/garrisonultraremotelogs.md) | Garrison | 1 | [Garrison ULTRA](../solutions/garrison-ultra.md) |
-| [Gigamon AMX Data Connector](../connectors/gigamondataconnector.md) 🔶 | Gigamon | 1 | [Gigamon Connector](../solutions/gigamon-connector.md) |
 | [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) 🔶 | Infoblox | 1 | [Infoblox](../solutions/infoblox.md) |
 | [InfoSecGlobal Data Connector](../connectors/infosecdataconnector.md) 🔶 | InfoSecGlobal | 1 | [AgileSec Analytics Connector](../solutions/agilesec-analytics-connector.md) |
-| [IONIX Security Logs](../connectors/cyberpionsecuritylogs.md) 🔶 | IONIX | 1 | [IONIX](../solutions/ionix.md) |
 | [MailGuard 365](../connectors/mailguard365.md) 🔶 | MailGuard365 | 1 | [MailGuard 365](../solutions/mailguard-365.md) |
 | [Microsoft Exchange HTTP Proxy Logs](../connectors/esi-opt7exchangehttpproxylogs.md) 🔶 | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
 | [Microsoft Exchange Message Tracking Logs](../connectors/esi-opt6exchangemessagetrackinglogs.md) 🔶 | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
@@ -87,7 +86,15 @@ REST Pull API-based connectors use the Azure Monitor Data Collector API or Logs 
 | [Theom](../connectors/theom.md) 🔶 | Theom | 1 | [Theom](../solutions/theom.md) |
 | [Zimperium Mobile Threat Defense](../connectors/zimperiummtdalerts.md) 🔶 | Zimperium | 2 | [Zimperium Mobile Threat Defense](../solutions/zimperium-mobile-threat-defense.md) |
 
+### Deprecated Connectors 🚫
+
+| Connector | Publisher | Tables | Solution |
+|:----------|:----------|:------:|:---------|
+| 🚫 [[DEPRECATED] IONIX Security Logs (Push)](../connectors/cyberpionsecuritylogs.md) | IONIX | 1 | [IONIX](../solutions/ionix.md) |
+
 ---
+
+> 🚫 **Deprecated:** This connector has been deprecated and may be removed in future versions.
 
 > ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 

@@ -17,7 +17,7 @@
 | **Version** | 3.0.13 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-04-02 |
-| **Last Updated** | 2026-03-26 |
+| **Last Updated** | 2026-04-15 |
 | **Solution Folder** | [Threat Intelligence (NEW)](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Threat%20Intelligence%20%28NEW%29) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-threatintelligence-updated) · Popularity: 🟢 High (95%) |
 
@@ -61,12 +61,12 @@ This solution uses **29 table(s)**:
 | [`AzureActivity`](../tables/azureactivity.md) | - | Analytics |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | - | Analytics |
 | [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) 🔶 | - | Analytics |
+| [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) 🔶 | - | Analytics |
 | [`CloudAppEvents`](../tables/cloudappevents.md) | - | Analytics |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [Threat Intelligence Platforms](../connectors/threatintelligence.md) | Analytics |
 | [`DeviceFileEvents`](../tables/devicefileevents.md) | - | Analytics |
 | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | - | Analytics |
 | [`DnsEvents`](../tables/dnsevents.md) | - | Analytics |
-| [`DuoSecurityAuthentication_CL`](../tables/duosecurityauthentication-cl.md) 🔶 | - | Analytics |
 | [`EmailEvents`](../tables/emailevents.md) | - | Analytics |
 | [`EmailUrlInfo`](../tables/emailurlinfo.md) | - | Analytics |
 | [`GitHub_CL`](../tables/github-cl.md) | - | Analytics |
@@ -96,11 +96,11 @@ The following **3 table(s)** are used internally by this solution's content item
 
 ## Content Items
 
-This solution includes **58 content item(s)**:
+This solution includes **59 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
-| Analytic Rules | 51 |
+| Analytic Rules | 52 |
 | Hunting Queries | 5 |
 | Workbooks | 1 |
 | Parsers | 1 |
@@ -115,7 +115,7 @@ This solution includes **58 content item(s)**:
 | [TI Map IP Entity to CommonSecurityLog](../content/threat-intelligence-new-ti-map-ip-entity-to-commonsecuritylog-cdd1933b-ef94-48a4-b94a-18d45b902751-8a8093d3.md) | Medium | CommandAndControl | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 | [TI Map IP Entity to DeviceNetworkEvents](../content/threat-intelligence-new-ti-map-ip-entity-to-devicenetworkevents-2474343c-9135-42ec-9c40-a1bace43da5c-3e3eda3e.md) | Medium | CommandAndControl | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 | [TI Map IP Entity to DnsEvents](../content/threat-intelligence-new-ti-map-ip-entity-to-dnsevents-6418fd33-92f2-407b-bd61-91c0d4bbcb8a-5cae9331.md) | Medium | CommandAndControl | [`DnsEvents`](../tables/dnsevents.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
-| [TI Map IP Entity to Duo Security](../content/threat-intelligence-new-ti-map-ip-entity-to-duo-security-4988c238-a118-442c-80bd-6c689a1b2e97-43e39fdc.md) | Medium | CommandAndControl | [`DuoSecurityAuthentication_CL`](../tables/duosecurityauthentication-cl.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
+| [TI Map IP Entity to Duo Security](../content/threat-intelligence-new-ti-map-ip-entity-to-duo-security-4988c238-a118-442c-80bd-6c689a1b2e97-43e39fdc.md) | Medium | CommandAndControl | [`CiscoDuo_CL`](../tables/ciscoduo-cl.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 | [TI Map IP Entity to SigninLogs](../content/threat-intelligence-new-ti-map-ip-entity-to-signinlogs-edfc9d8a-6fb3-49e2-80c9-fea15d941799-78ede5a3.md) | Medium | CommandAndControl | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 | [TI Map IP Entity to VMConnection](../content/threat-intelligence-new-ti-map-ip-entity-to-vmconnection-aed70d71-adb2-4f73-becd-02150b13950b-4964d0d5.md) | Medium | CommandAndControl | [`VMConnection`](../tables/vmconnection.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 | [TI Map IP Entity to W3CIISLog](../content/threat-intelligence-new-ti-map-ip-entity-to-w3ciislog-888c4736-e604-48eb-b2c7-3462356d9510-ad1df7ff.md) | Medium | CommandAndControl | [`W3CIISLog`](../tables/w3ciislog.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
@@ -160,6 +160,7 @@ This solution includes **58 content item(s)**:
 | [TI map IP entity to Web Session Events (ASIM Web Session schema)](../content/threat-intelligence-new-ti-map-ip-entity-to-web-session-events-asim-web-session-schema-0548be6c-135e-4eb6-b9ff-14a09df62c77-0e576920.md) | Medium | CommandAndControl | *Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 | [TI map IP entity to Workday(ASimAuditEventLogs)](../content/threat-intelligence-new-ti-map-ip-entity-to-workday-asimauditeventlogs-92e8e945-6e99-4e4b-bef8-468b4c19fc3a-7773b67f.md) | Medium | CommandAndControl | [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 | [TI map URL entity to Cloud App Events](../content/threat-intelligence-new-ti-map-url-entity-to-cloud-app-events-526df43b-f514-477c-af7a-c8d3586457fb-9db18791.md) | Medium | CommandAndControl | [`CloudAppEvents`](../tables/cloudappevents.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
+| [TI map URL entity to Web Session Events (ASIM Web Session schema)](../content/threat-intelligence-new-ti-map-url-entity-to-web-session-events-asim-web-session-schema-3b4a8c72-5a2e-4f1e-b61a-9d8b2a6d7a21-f004a2bb.md) | Medium | CommandAndControl, InitialAccess | *Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 
 ### Hunting Queries
 
@@ -187,6 +188,10 @@ This solution includes **58 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+|3.0.17       | 02-04-2026                     |  Updated **TI map Domain entity to SecurityAlert** analytic rule with deduplication and filters   |
+| 3.0.16      | 25-03-2026                     | Optimized **TI map Domain entity to EmailUrlInfo** analytic rule with deduplication and filters |
+| 3.0.15      | 09-03-2026                     | Update **IPEntity_DuoSecurity Analytic Rule**                |
+| 3.0.14      | 16-02-2026                     | Added **Analytic Rule** for URL IOC                  |
 | 3.0.13      | 27-01-2026                     | Updated package to include latest query changes.                  |
 | 3.0.12      | 23-12-2025                     | Replaces the 'AlertPriority' field with 'Severity' in the IPEntity_AppServiceHTTPLogs analytic rule and updates all related references.            |
 | 3.0.11      | 02-12-2025                     | Update Threat Intelligence package and release notes 	 |

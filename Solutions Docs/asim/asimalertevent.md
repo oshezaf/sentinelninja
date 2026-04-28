@@ -30,7 +30,7 @@ This union parser includes parsers for the following products:
 | Product | Source Parser | Solutions |
 |:--------|:--------------|:----------|
 | Microsoft Defender XDR | [_ASim_AlertEvent_MicrosoftDefenderXDR](asimalerteventmicrosoftdefenderxdr.md) |  |
-| SentinelOne | [_ASim_AlertEvent_SentinelOneSingularity](asimalerteventsentinelonesingularity.md) | [SentinelOne](../solutions/sentinelone.md) |
+| SentinelOne | [_ASim_AlertEvent_SentinelOneSingularity](asimalerteventsentinelonesingularity.md) |  |
 
 ## Parameters
 

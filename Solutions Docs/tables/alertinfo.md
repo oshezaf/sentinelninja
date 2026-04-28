@@ -107,12 +107,12 @@ This table is used by the following solutions:
 
 ### Workbooks (2)
 
-**GitHub Only:**
+**GitHub Only:** `ActionType in "Add member to role,Add user,InteractiveLogon,LogonSuccess,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
+| Workbook |
+|:-------------|
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |
 
 ---
 

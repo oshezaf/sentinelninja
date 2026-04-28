@@ -13,8 +13,8 @@
 | Title | Parser for TenableVMVulnerabilities |
 | Location | Solution |
 | Solution | [Tenable App](../solutions/tenable-app.md) |
-| Version | 1.0.0 |
-| Last Updated | 2025-05-23 |
+| Version | 1.0.1 |
+| Last Updated | 2026-03-20 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable%20App/Parsers/TenableVMVulnerabilities.yaml) |
@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Tenable_VM_Vuln_CL`](../tables/tenable-vm-vuln-cl.md) | ✓ | ✓ | ✓ |
+| [`Tenable_VM_Vuln_CL`](../tables/tenable-vm-vuln-cl.md) | ? | ✓ | ? |
 
 ---
 

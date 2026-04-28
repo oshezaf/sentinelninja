@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Audit Event ASIM parser for AWS CloudTrail activity &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#asim" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="audit-event-asim-parser-for-aws-cloudtrail-activity"><img src="../images/asim-badge.png" alt="ASIM" height="32"> Audit Event ASIM parser for AWS CloudTrail activity</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <strong>ASIM Parsers</strong> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#asim">Back to ASIM Index</a></p>
+<hr />
+<h2 id="parser-information">Parser Information</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Parser Name</strong></td>
+<td style="text-align: left;"><code>ASimAuditEventAWSCloudTrail</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Built-in Parser</strong></td>
+<td style="text-align: left;"><code>_ASim_AuditEvent_AWSCloudTrail</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Schema</strong></td>
+<td style="text-align: left;">AuditEvent</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Schema Version</strong></td>
+<td style="text-align: left;">0.1.2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Parser Type</strong></td>
+<td style="text-align: left;">🔌 Source (product-specific)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Product</strong></td>
+<td style="text-align: left;">AWS CloudTrail</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Parser Version</strong></td>
+<td style="text-align: left;">0.1.0 (<a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventAWSCloudTrail.md">version history</a>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">Feb 17, 2026</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Unifying Parser</strong></td>
+<td style="text-align: left;"><a href="asimauditevent.html">ASimAuditEvent</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source File</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuditEvent/Parsers/ASimAuditEventAWSCloudTrail.yaml">Parsers\ASimAuditEvent\Parsers\ASimAuditEventAWSCloudTrail.yaml</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="description">Description</h2>
+<p>This ASIM parser supports normalizing Audit Event activity in AWS Cloud Trail for the following event sources: (ec2.amazonaws.com)</p>
+<h2 id="source-tables">Source Tables</h2>
+<p>This parser reads from the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/awscloudtrail.html"><code>AWSCloudTrail</code></a></td>
+<td style="text-align: left;"><code>EventName in "AcceptAddressTransfer,AcceptCapacityReservationBillingOwnership,AcceptReservedInstancesExchangeQuote,AcceptTransitGatewayMulticastDomainAssociations,AcceptTransitGatewayPeeringAttachment,AcceptTransitGatewayVpcAttachment,AcceptVpcEndpointConnections,AcceptVpcPeeringConnection,AdvertiseByoipCidr,AllocateAddress,AllocateHosts,AllocateIpamPoolCidr,ApplySecurityGroupsToClientVpnTargetNetwork,AssignIpv6Addresses,AssignPrivateIpAddresses,AssignPrivateNatGatewayAddress,AssociateAddress,AssociateCapacityReservationBillingOwner,AssociateClientVpnTargetNetwork,AssociateDhcpOptions,AssociateEnclaveCertificateIamRole,AssociateIamInstanceProfile,AssociateInstanceEventWindow,AssociateIpamByoasn,AssociateIpamResourceDiscovery,AssociateNatGatewayAddress,AssociateRouteServer,AssociateRouteTable,AssociateSecurityGroupVpc,AssociateSubnetCidrBlock,AssociateTransitGatewayMulticastDomain,AssociateTransitGatewayPolicyTable,AssociateTransitGatewayRouteTable,AssociateTrunkInterface,AssociateVpcCidrBlock,AttachClassicLinkVpc,AttachInternetGateway,AttachNetworkInterface,AttachVerifiedAccessTrustProvider,AttachVolume,AttachVpnGateway,AuthorizeClientVpnIngress,AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,BundleInstance,CancelBundleTask,CancelCapacityReservation,CancelCapacityReservationFleets,CancelConversionTask,CancelDeclarativePoliciesReport,CancelExportTask,CancelImageLaunchPermission,CancelImportTask,CancelReservedInstancesListing,CancelSpotFleetRequests,CancelSpotInstanceRequests,ConfirmProductInstance,CopyFpgaImage,CopyImage,CopySnapshot,CopyVolumes,CreateCapacityManagerDataExport,CreateCapacityReservation,CreateCapacityReservationBySplitting,CreateCapacityReservationFleet,CreateCarrierGateway,CreateClientVpnEndpoint,CreateClientVpnRoute,CreateCoipCidr,CreateCoipPool,CreateCustomerGateway,CreateDefaultSubnet,CreateDefaultVpc,CreateDelegateMacVolumeOwnershipTask,CreateDhcpOptions,CreateEgressOnlyInternetGateway,CreateFleet,CreateFlowLogs,CreateFpgaImage,CreateImage,CreateImageUsageReport,CreateInstanceConnectEndpoint,CreateInstanceEventWindow,CreateInstanceExportTask,CreateInternetGateway,CreateInterruptibleCapacityReservationAllocation,CreateIpam,CreateIpamExternalResourceVerificationToken,CreateIpamPolicy,CreateIpamPool,CreateIpamPrefixListResolver,CreateIpamPrefixListResolverTarget,CreateIpamResourceDiscovery,CreateIpamScope,CreateKeyPair,CreateLaunchTemplate,CreateLaunchTemplateVersion,CreateLocalGatewayRoute,CreateLocalGatewayRouteTable,CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociation,CreateLocalGatewayRouteTableVpcAssociation,CreateLocalGatewayVirtualInterface,CreateLocalGatewayVirtualInterfaceGroup,CreateMacSystemIntegrityProtectionModificationTask,CreateManagedPrefixList,CreateNatGateway,CreateNetworkAcl,CreateNetworkAclEntry,CreateNetworkInsightsAccessScope,CreateNetworkInsightsPath,CreateNetworkInterface,CreateNetworkInterfacePermission,CreatePlacementGroup,CreatePublicIpv4Pool,CreateReplaceRootVolumeTask,CreateReservedInstancesListing,CreateRestoreImageTask,CreateRoute,CreateRouteServer,CreateRouteServerEndpoint,CreateRouteServerPeer,CreateRouteTable,CreateSecondaryNetwork,CreateSecondarySubnet,CreateSecurityGroup,CreateSnapshot,CreateSnapshots,CreateSpotDatafeedSubscription,CreateStoreImageTask,CreateSubnet,CreateSubnetCidrReservation,CreateTags,CreateTrafficMirrorFilter,CreateTrafficMirrorFilterRule,CreateTrafficMirrorSession,CreateTrafficMirrorTarget,CreateTransitGateway,CreateTransitGatewayConnect,CreateTransitGatewayConnectPeer,CreateTransitGatewayMeteringPolicy,CreateTransitGatewayMeteringPolicyEntry,CreateTransitGatewayMulticastDomain,CreateTransitGatewayPeeringAttachment,CreateTransitGatewayPolicyTable,CreateTransitGatewayPrefixListReference,CreateTransitGatewayRoute,CreateTransitGatewayRouteTable,CreateTransitGatewayRouteTableAnnouncement,CreateTransitGatewayVpcAttachment,CreateVerifiedAccessEndpoint,CreateVerifiedAccessGroup,CreateVerifiedAccessInstance,CreateVerifiedAccessTrustProvider,CreateVolume,CreateVpc,CreateVpcBlockPublicAccessExclusion,CreateVpcEncryptionControl,CreateVpcEndpoint,CreateVpcEndpointConnectionNotification,CreateVpcEndpointServiceConfiguration,CreateVpcPeeringConnection,CreateVpnConcentrator,CreateVpnConnection,CreateVpnConnectionRoute,CreateVpnGateway,DeleteCapacityManagerDataExport,DeleteCarrierGateway,DeleteClientVpnEndpoint,DeleteClientVpnRoute,DeleteCoipCidr,DeleteCoipPool,DeleteCustomerGateway,DeleteDhcpOptions,DeleteEgressOnlyInternetGateway,DeleteFleets,DeleteFlowLogs,DeleteFpgaImage,DeleteImageUsageReport,DeleteInstanceConnectEndpoint,DeleteInstanceEventWindow,DeleteInternetGateway,DeleteIpam,DeleteIpamExternalResourceVerificationToken,DeleteIpamPolicy,DeleteIpamPool,DeleteIpamPrefixListResolver,DeleteIpamPrefixListResolverTarget,DeleteIpamResourceDiscovery,DeleteIpamScope,DeleteKeyPair,DeleteLaunchTemplate,DeleteLaunchTemplateVersions,DeleteLocalGatewayRoute,DeleteLocalGatewayRouteTable,DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation,DeleteLocalGatewayRouteTableVpcAssociation,DeleteLocalGatewayVirtualInterface,DeleteLocalGatewayVirtualInterfaceGroup,DeleteManagedPrefixList,DeleteNatGateway,DeleteNetworkAcl,DeleteNetworkAclEntry,DeleteNetworkInsightsAccessScope,DeleteNetworkInsightsAccessScopeAnalysis,DeleteNetworkInsightsAnalysis,DeleteNetworkInsightsPath,DeleteNetworkInterface,DeleteNetworkInterfacePermission,DeletePlacementGroup,DeletePublicIpv4Pool,DeleteQueuedReservedInstances,DeleteRoute,DeleteRouteServer,DeleteRouteServerEndpoint,DeleteRouteServerPeer,DeleteRouteTable,DeleteSecondaryNetwork,DeleteSecondarySubnet,DeleteSecurityGroup,DeleteSnapshot,DeleteSpotDatafeedSubscription,DeleteSubnet,DeleteSubnetCidrReservation,DeleteTags,DeleteTrafficMirrorFilter,DeleteTrafficMirrorFilterRule,DeleteTrafficMirrorSession,DeleteTrafficMirrorTarget,DeleteTransitGateway,DeleteTransitGatewayConnect,DeleteTransitGatewayConnectPeer,DeleteTransitGatewayMeteringPolicy,DeleteTransitGatewayMeteringPolicyEntry,DeleteTransitGatewayMulticastDomain,DeleteTransitGatewayPeeringAttachment,DeleteTransitGatewayPolicyTable,DeleteTransitGatewayPrefixListReference,DeleteTransitGatewayRoute,DeleteTransitGatewayRouteTable,DeleteTransitGatewayRouteTableAnnouncement,DeleteTransitGatewayVpcAttachment,DeleteVerifiedAccessEndpoint,DeleteVerifiedAccessGroup,DeleteVerifiedAccessInstance,DeleteVerifiedAccessTrustProvider,DeleteVolume,DeleteVpc,DeleteVpcBlockPublicAccessExclusion,DeleteVpcEncryptionControl,DeleteVpcEndpointConnectionNotifications,DeleteVpcEndpointServiceConfigurations,DeleteVpcEndpoints,DeleteVpcPeeringConnection,DeleteVpnConcentrator,DeleteVpnConnection,DeleteVpnConnectionRoute,DeleteVpnGateway,DeprovisionByoipCidr,DeprovisionIpamByoasn,DeprovisionIpamPoolCidr,DeprovisionPublicIpv4PoolCidr,DeregisterImage,DeregisterInstanceEventNotificationAttributes,DeregisterTransitGatewayMulticastGroupMembers,DeregisterTransitGatewayMulticastGroupSources,DescribeAccountAttributes,DescribeAddressTransfers,DescribeAddresses,DescribeAddressesAttribute,DescribeAggregateIdFormat,DescribeAvailabilityZones,DescribeAwsNetworkPerformanceMetricSubscriptions,DescribeBundleTasks,DescribeByoipCidrs,DescribeCapacityBlockExtensionHistory,DescribeCapacityBlockExtensionOfferings,DescribeCapacityBlockOfferings,DescribeCapacityBlockStatus,DescribeCapacityBlocks,DescribeCapacityManagerDataExports,DescribeCapacityReservationBillingRequests,DescribeCapacityReservationFleets,DescribeCapacityReservationTopology,DescribeCapacityReservations,DescribeCarrierGateways,DescribeClassicLinkInstances,DescribeClientVpnAuthorizationRules,DescribeClientVpnConnections,DescribeClientVpnEndpoints,DescribeClientVpnRoutes,DescribeClientVpnTargetNetworks,DescribeCoipPools,DescribeConversionTasks,DescribeCustomerGateways,DescribeDeclarativePoliciesReports,DescribeDhcpOptions,DescribeEgressOnlyInternetGateways,DescribeElasticGpus,DescribeExportImageTasks,DescribeExportTasks,DescribeFastLaunchImages,DescribeFastSnapshotRestores,DescribeFleetHistory,DescribeFleetInstances,DescribeFleets,DescribeFlowLogs,DescribeFpgaImageAttribute,DescribeFpgaImages,DescribeHostReservationOfferings,DescribeHostReservations,DescribeHosts,DescribeIamInstanceProfileAssociations,DescribeIdFormat,DescribeIdentityIdFormat,DescribeImageAttribute,DescribeImageReferences,DescribeImageUsageReportEntries,DescribeImageUsageReports,DescribeImages,DescribeImportImageTasks,DescribeImportSnapshotTasks,DescribeInstanceAttribute,DescribeInstanceConnectEndpoints,DescribeInstanceCreditSpecifications,DescribeInstanceEventNotificationAttributes,DescribeInstanceEventWindows,DescribeInstanceImageMetadata,DescribeInstanceSqlHaHistoryStates,DescribeInstanceSqlHaStates,DescribeInstanceStatus,DescribeInstanceTopology,DescribeInstanceTypeOfferings,DescribeInstanceTypes,DescribeInstances,DescribeInternetGateways,DescribeIpamByoasn,DescribeIpamExternalResourceVerificationTokens,DescribeIpamPolicies,DescribeIpamPools,DescribeIpamPrefixListResolverTargets,DescribeIpamPrefixListResolvers,DescribeIpamResourceDiscoveries,DescribeIpamResourceDiscoveryAssociations,DescribeIpamScopes,DescribeIpams,DescribeIpv6Pools,DescribeKeyPairs,DescribeLaunchTemplateVersions,DescribeLaunchTemplates,DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations,DescribeLocalGatewayRouteTableVpcAssociations,DescribeLocalGatewayRouteTables,DescribeLocalGatewayVirtualInterfaceGroups,DescribeLocalGatewayVirtualInterfaces,DescribeLocalGateways,DescribeLockedSnapshots,DescribeMacHosts,DescribeMacModificationTasks,DescribeManagedPrefixLists,DescribeMovingAddresses,DescribeNatGateways,DescribeNetworkAcls,DescribeNetworkInsightsAccessScopeAnalyses,DescribeNetworkInsightsAccessScopes,DescribeNetworkInsightsAnalyses,DescribeNetworkInsightsPaths,DescribeNetworkInterfaceAttribute,DescribeNetworkInterfacePermissions,DescribeNetworkInterfaces,DescribeOutpostLags,DescribePlacementGroups,DescribePrefixLists,DescribePrincipalIdFormat,DescribePublicIpv4Pools,DescribeRegions,DescribeReplaceRootVolumeTasks,DescribeReservedInstances,DescribeReservedInstancesListings,DescribeReservedInstancesModifications,DescribeReservedInstancesOfferings,DescribeRouteServerEndpoints,DescribeRouteServerPeers,DescribeRouteServers,DescribeRouteTables,DescribeScheduledInstanceAvailability,DescribeScheduledInstances,DescribeSecondaryInterfaces,DescribeSecondaryNetworks,DescribeSecondarySubnets,DescribeSecurityGroupReferences,DescribeSecurityGroupRules,DescribeSecurityGroupVpcAssociations,DescribeSecurityGroups,DescribeServiceLinkVirtualInterfaces,DescribeSnapshotAttribute,DescribeSnapshotTierStatus,DescribeSnapshots,DescribeSpotDatafeedSubscription,DescribeSpotFleetInstances,DescribeSpotFleetRequestHistory,DescribeSpotFleetRequests,DescribeSpotInstanceRequests,DescribeSpotPriceHistory,DescribeStaleSecurityGroups,DescribeStoreImageTasks,DescribeSubnets,DescribeTags,DescribeTrafficMirrorFilterRules,DescribeTrafficMirrorFilters,DescribeTrafficMirrorSessions,DescribeTrafficMirrorTargets,DescribeTransitGatewayAttachments,DescribeTransitGatewayConnectPeers,DescribeTransitGatewayConnects,DescribeTransitGatewayMeteringPolicies,DescribeTransitGatewayMulticastDomains,DescribeTransitGatewayPeeringAttachments,DescribeTransitGatewayPolicyTables,DescribeTransitGatewayRouteTableAnnouncements,DescribeTransitGatewayRouteTables,DescribeTransitGatewayVpcAttachments,DescribeTransitGateways,DescribeTrunkInterfaceAssociations,DescribeVerifiedAccessEndpoints,DescribeVerifiedAccessGroups,DescribeVerifiedAccessInstanceLoggingConfigurations,DescribeVerifiedAccessInstances,DescribeVerifiedAccessTrustProviders,DescribeVolumeAttribute,DescribeVolumeStatus,DescribeVolumes,DescribeVolumesModifications,DescribeVpcAttribute,DescribeVpcBlockPublicAccessExclusions,DescribeVpcBlockPublicAccessOptions,DescribeVpcClassicLink,DescribeVpcClassicLinkDnsSupport,DescribeVpcEncryptionControls,DescribeVpcEndpointAssociations,DescribeVpcEndpointConnectionNotifications,DescribeVpcEndpointConnections,DescribeVpcEndpointServiceConfigurations,DescribeVpcEndpointServicePermissions,DescribeVpcEndpointServices,DescribeVpcEndpoints,DescribeVpcPeeringConnections,DescribeVpcs,DescribeVpnConcentrators,DescribeVpnConnections,DescribeVpnGateways,DetachClassicLinkVpc,DetachInternetGateway,DetachNetworkInterface,DetachVerifiedAccessTrustProvider,DetachVolume,DetachVpnGateway,DisableAddressTransfer,DisableAllowedImagesSettings,DisableAwsNetworkPerformanceMetricSubscription,DisableCapacityManager,DisableEbsEncryptionByDefault,DisableFastLaunch,DisableFastSnapshotRestores,DisableImage,DisableImageBlockPublicAccess,DisableImageDeprecation,DisableImageDeregistrationProtection,DisableInstanceSqlHaStandbyDetections,DisableIpamOrganizationAdminAccount,DisableIpamPolicy,DisableRouteServerPropagation,DisableSerialConsoleAccess,DisableSnapshotBlockPublicAccess,DisableTransitGatewayRouteTablePropagation,DisableVgwRoutePropagation,DisableVpcClassicLink,DisableVpcClassicLinkDnsSupport,DisassociateAddress,DisassociateCapacityReservationBillingOwner,DisassociateClientVpnTargetNetwork,DisassociateEnclaveCertificateIamRole,DisassociateIamInstanceProfile,DisassociateInstanceEventWindow,DisassociateIpamByoasn,DisassociateIpamResourceDiscovery,DisassociateNatGatewayAddress,DisassociateRouteServer,DisassociateRouteTable,DisassociateSecurityGroupVpc,DisassociateSubnetCidrBlock,DisassociateTransitGatewayMulticastDomain,DisassociateTransitGatewayPolicyTable,DisassociateTransitGatewayRouteTable,DisassociateTrunkInterface,DisassociateVpcCidrBlock,EnableAddressTransfer,EnableAllowedImagesSettings,EnableAwsNetworkPerformanceMetricSubscription,EnableCapacityManager,EnableEbsEncryptionByDefault,EnableFastLaunch,EnableFastSnapshotRestores,EnableImage,EnableImageBlockPublicAccess,EnableImageDeprecation,EnableImageDeregistrationProtection,EnableInstanceSqlHaStandbyDetections,EnableIpamOrganizationAdminAccount,EnableIpamPolicy,EnableRouteServerPropagation,EnableSerialConsoleAccess,EnableSnapshotBlockPublicAccess,EnableTransitGatewayRouteTablePropagation,EnableVgwRoutePropagation,EnableVolumeIO,EnableVpcClassicLink,EnableVpcClassicLinkDnsSupport,ExportClientVpnClientCertificateRevocationList,ExportClientVpnClientConfiguration,ExportImage,ExportTransitGatewayRoutes,ExportVerifiedAccessInstanceClientConfiguration,GetActiveVpnTunnelStatus,GetAllowedImagesSettings,GetAssociatedEnclaveCertificateIamRoles,GetAssociatedIpv6PoolCidrs,GetAwsNetworkPerformanceData,GetCapacityManagerAttributes,GetCapacityManagerMetricData,GetCapacityManagerMetricDimensions,GetCapacityReservationUsage,GetCoipPoolUsage,GetConsoleOutput,GetConsoleScreenshot,GetDeclarativePoliciesReportSummary,GetDefaultCreditSpecification,GetEbsDefaultKmsKeyId,GetEbsEncryptionByDefault,GetEnabledIpamPolicy,GetFlowLogsIntegrationTemplate,GetGroupsForCapacityReservation,GetHostReservationPurchasePreview,GetImageAncestry,GetImageBlockPublicAccessState,GetInstanceMetadataDefaults,GetInstanceTpmEkPub,GetInstanceTypesFromInstanceRequirements,GetInstanceUefiData,GetIpamAddressHistory,GetIpamDiscoveredAccounts,GetIpamDiscoveredPublicAddresses,GetIpamDiscoveredResourceCidrs,GetIpamPolicyAllocationRules,GetIpamPolicyOrganizationTargets,GetIpamPoolAllocations,GetIpamPoolCidrs,GetIpamPrefixListResolverRules,GetIpamPrefixListResolverVersionEntries,GetIpamPrefixListResolverVersions,GetIpamResourceCidrs,GetLaunchTemplateData,GetManagedPrefixListAssociations,GetManagedPrefixListEntries,GetNetworkInsightsAccessScopeAnalysisFindings,GetNetworkInsightsAccessScopeContent,GetPasswordData,GetReservedInstancesExchangeQuote,GetRouteServerAssociations,GetRouteServerPropagations,GetRouteServerRoutingDatabase,GetSecurityGroupsForVpc,GetSerialConsoleAccessStatus,GetSnapshotBlockPublicAccessState,GetSpotPlacementScores,GetSubnetCidrReservations,GetTransitGatewayAttachmentPropagations,GetTransitGatewayMeteringPolicyEntries,GetTransitGatewayMulticastDomainAssociations,GetTransitGatewayPolicyTableAssociations,GetTransitGatewayPolicyTableEntries,GetTransitGatewayPrefixListReferences,GetTransitGatewayRouteTableAssociations,GetTransitGatewayRouteTablePropagations,GetVerifiedAccessEndpointPolicy,GetVerifiedAccessEndpointTargets,GetVerifiedAccessGroupPolicy,GetVpcResourcesBlockingEncryptionEnforcement,GetVpnConnectionDeviceSampleConfiguration,GetVpnConnectionDeviceTypes,GetVpnTunnelReplacementStatus,ImportClientVpnClientCertificateRevocationList,ImportImage,ImportInstance,ImportKeyPair,ImportSnapshot,ImportVolume,ListImagesInRecycleBin,ListSnapshotsInRecycleBin,ListVolumesInRecycleBin,LockSnapshot,ModifyAddressAttribute,ModifyAvailabilityZoneGroup,ModifyCapacityReservation,ModifyCapacityReservationFleet,ModifyClientVpnEndpoint,ModifyDefaultCreditSpecification,ModifyEbsDefaultKmsKeyId,ModifyFleet,ModifyFpgaImageAttribute,ModifyHosts,ModifyIdFormat,ModifyIdentityIdFormat,ModifyImageAttribute,ModifyInstanceAttribute,ModifyInstanceCapacityReservationAttributes,ModifyInstanceConnectEndpoint,ModifyInstanceCpuOptions,ModifyInstanceCreditSpecification,ModifyInstanceEventStartTime,ModifyInstanceEventWindow,ModifyInstanceMaintenanceOptions,ModifyInstanceMetadataDefaults,ModifyInstanceMetadataOptions,ModifyInstanceNetworkPerformanceOptions,ModifyInstancePlacement,ModifyIpam,ModifyIpamPolicyAllocationRules,ModifyIpamPool,ModifyIpamPrefixListResolver,ModifyIpamPrefixListResolverTarget,ModifyIpamResourceCidr,ModifyIpamResourceDiscovery,ModifyIpamScope,ModifyLaunchTemplate,ModifyLocalGatewayRoute,ModifyManagedPrefixList,ModifyNetworkInterfaceAttribute,ModifyPrivateDnsNameOptions,ModifyPublicIpDnsNameOptions,ModifyReservedInstances,ModifyRouteServer,ModifySecurityGroupRules,ModifySnapshotAttribute,ModifySnapshotTier,ModifySpotFleetRequest,ModifySubnetAttribute,ModifyTrafficMirrorFilterNetworkServices,ModifyTrafficMirrorFilterRule,ModifyTrafficMirrorSession,ModifyTransitGateway,ModifyTransitGatewayMeteringPolicy,ModifyTransitGatewayPrefixListReference,ModifyTransitGatewayVpcAttachment,ModifyVerifiedAccessEndpoint,ModifyVerifiedAccessEndpointPolicy,ModifyVerifiedAccessGroup,ModifyVerifiedAccessGroupPolicy,ModifyVerifiedAccessInstance,ModifyVerifiedAccessInstanceLoggingConfiguration,ModifyVerifiedAccessTrustProvider,ModifyVolume,ModifyVolumeAttribute,ModifyVpcAttribute,ModifyVpcBlockPublicAccessExclusion,ModifyVpcBlockPublicAccessOptions,ModifyVpcEncryptionControl,ModifyVpcEndpoint,ModifyVpcEndpointConnectionNotification,ModifyVpcEndpointServiceConfiguration,ModifyVpcEndpointServicePayerResponsibility,ModifyVpcEndpointServicePermissions,ModifyVpcPeeringConnectionOptions,ModifyVpcTenancy,ModifyVpnConnection,ModifyVpnConnectionOptions,ModifyVpnTunnelCertificate,ModifyVpnTunnelOptions,MonitorInstances,MoveAddressToVpc,MoveByoipCidrToIpam,MoveCapacityReservationInstances,ProvisionByoipCidr,ProvisionIpamByoasn,ProvisionIpamPoolCidr,ProvisionPublicIpv4PoolCidr,PurchaseCapacityBlock,PurchaseCapacityBlockExtension,PurchaseHostReservation,PurchaseReservedInstancesOffering,PurchaseScheduledInstances,RebootInstances,RegisterImage,RegisterInstanceEventNotificationAttributes,RegisterTransitGatewayMulticastGroupMembers,RegisterTransitGatewayMulticastGroupSources,RejectCapacityReservationBillingOwnership,RejectTransitGatewayMulticastDomainAssociations,RejectTransitGatewayPeeringAttachment,RejectTransitGatewayVpcAttachment,RejectVpcEndpointConnections,RejectVpcPeeringConnection,ReleaseAddress,ReleaseHosts,ReleaseIpamPoolAllocation,ReplaceIamInstanceProfileAssociation,ReplaceImageCriteriaInAllowedImagesSettings,ReplaceNetworkAclAssociation,ReplaceNetworkAclEntry,ReplaceRoute,ReplaceRouteTableAssociation,ReplaceTransitGatewayRoute,ReplaceVpnTunnel,ReportInstanceStatus,RequestSpotFleet,RequestSpotInstances,ResetAddressAttribute,ResetEbsDefaultKmsKeyId,ResetFpgaImageAttribute,ResetImageAttribute,ResetInstanceAttribute,ResetNetworkInterfaceAttribute,ResetSnapshotAttribute,RestoreAddressToClassic,RestoreImageFromRecycleBin,RestoreManagedPrefixListVersion,RestoreSnapshotFromRecycleBin,RestoreSnapshotTier,RestoreVolumeFromRecycleBin,RevokeClientVpnIngress,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress,RunInstances,RunScheduledInstances,SearchLocalGatewayRoutes,SearchTransitGatewayMulticastGroups,SearchTransitGatewayRoutes,SendDiagnosticInterrupt,StartDeclarativePoliciesReport,StartInstances,StartNetworkInsightsAccessScopeAnalysis,StartNetworkInsightsAnalysis,StartVpcEndpointServicePrivateDnsVerification,StopInstances,TerminateClientVpnConnections,TerminateInstances,UnassignIpv6Addresses,UnassignPrivateIpAddresses,UnassignPrivateNatGatewayAddress,UnlockSnapshot,UnmonitorInstances,UpdateCapacityManagerOrganizationsAccess,UpdateInterruptibleCapacityReservationAllocation,UpdateSecurityGroupRuleDescriptionsEgress,UpdateSecurityGroupRuleDescriptionsIngress,WithdrawByoipCidr"</code></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/operation.html"><code>Operation</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<h2 id="parameters">Parameters</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>disabled</code></td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">False</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>pack</code></td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">False</td>
+</tr>
+</tbody>
+</table>
+<h2 id="associated-connectors">Associated Connectors</h2>
+<p>The following connectors provide data for this parser:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/aws.html">AWS</a></td>
+<td style="text-align: left;"><a href="../solutions/amazon-web-services.html">Amazon Web Services</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Solutions:</strong> <a href="../solutions/amazon-web-services.html">Amazon Web Services</a></p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://aka.ms/ASimAuditEventDoc">ASIM Audit Event Schema</a></li>
+<li><a href="https://aka.ms/AboutASIM">ASIM</a></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <strong>ASIM Parsers</strong> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#asim">Back to ASIM Index</a></p>
+</div>
+
+</body>
+</html>

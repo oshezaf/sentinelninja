@@ -183,20 +183,22 @@ Reference for ASimWebSessionLogs table in Azure Monitor Logs.
 | UrlCategory | string | The defined grouping of a URL or the domain part of the URL. |
 | UrlOriginal | string | The original value of the URL, when the URL was modified by the reporting device and both values are provided. |
 
-## Solutions (2)
+## Solutions (3)
 
 This table is used by the following solutions:
 
 - [Cisco Meraki Events via REST API](../solutions/cisco-meraki-events-via-rest-api.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
+- [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md)
 
-## Connectors (1)
+## Connectors (2)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) |  |
+| [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
 
 ---
 

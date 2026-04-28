@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct in "AI Analyst,Enterprise Immune System"`<br>`DeviceVendor == "Darktrace"` | ✓ | ✓ | ✓ |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct in "AI Analyst,Enterprise Immune System"`<br>`DeviceVendor == "Darktrace"` | ✓ | ✓ | ? |
 
 ---
 

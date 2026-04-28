@@ -28,7 +28,7 @@ This connector ingests data into the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload in "Exchange,MicrosoftTeams,OneDrive,SharePoint"` | ✓ | ✗ | ✓ |
+| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload in "Exchange,MicrosoftTeams,OneDrive,SharePoint"` | ✓ | ✗ | ? |
 
 ## Permissions
 

@@ -27,8 +27,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ | ✓ |
-| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ | ✓ |
+| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ | ? |
+| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ | ? |
 | [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ | ? |
 | [`DeviceInfo`](../tables/deviceinfo.md) | ✓ | ✗ | ? |
 

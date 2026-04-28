@@ -16,7 +16,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 3.1.3 |
+| **Version** | 3.1.4 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-18 |
 | **Last Updated** | 2026-03-27 |
@@ -45,11 +45,12 @@ The [GitHub](https://github.com/) Solution for Microsoft Sentinel enables you to
 
 ## Data Connectors
 
-This solution provides **3 data connector(s)**:
+This solution provides **4 data connector(s)**:
 
 - [GitHub Enterprise Audit Log (via Codeless Connector Framework)](../connectors/githubauditdefinitionv2.md)
 - [[Deprecated] GitHub Enterprise Audit Log](../connectors/githubecauditlogpolling.md)
-- [GitHub (using Webhooks)](../connectors/githubwebhook.md) 🔶
+- [GitHub (using Webhooks)](../connectors/githubwebhook.md)
+- [GitHub (using Webhooks) V2](../connectors/githubwebhookv2.md) 🔶
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
@@ -60,24 +61,24 @@ This solution uses **5 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`GitHubAdvancedSecurityAlerts_CL`](../tables/githubadvancedsecurityalerts-cl.md) 🔶 | [GitHub (using Webhooks) V2](../connectors/githubwebhookv2.md) | - |
 | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) | [[Deprecated] GitHub Enterprise Audit Log](../connectors/githubecauditlogpolling.md) | Analytics, Hunting |
 | [`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) | [GitHub Enterprise Audit Log (via Codeless Connector Framework)](../connectors/githubauditdefinitionv2.md), [[Deprecated] GitHub Enterprise Audit Log](../connectors/githubecauditlogpolling.md) | Analytics, Hunting |
 | [`GitHubRepoLogs_CL`](../tables/githubrepologs-cl.md) | - | Analytics |
-| [`GitHub_CL`](../tables/github-cl.md) | - | Analytics |
-| [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) 🔶 | [GitHub (using Webhooks)](../connectors/githubwebhook.md) | Workbooks |
+| [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) | [GitHub (using Webhooks)](../connectors/githubwebhook.md), [GitHub (using Webhooks) V2](../connectors/githubwebhookv2.md) | Workbooks |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 ## Content Items
 
-This solution includes **28 content item(s)**:
+This solution includes **29 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
 | Analytic Rules | 14 |
 | Hunting Queries | 8 |
-| Parsers | 4 |
+| Parsers | 5 |
 | Workbooks | 2 |
 
 ### Analytic Rules
@@ -97,7 +98,7 @@ This solution includes **28 content item(s)**:
 | [GitHub Activites from a New Country](../content/github-github-activites-from-a-new-country-f041e01d-840d-43da-95c8-4188f6cef546-14943f98.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
 | [GitHub Security Vulnerability in Repository](../content/github-github-security-vulnerability-in-repository-5436f471-b03d-41cb-b333-65891f887c43-30f5673a.md) | Informational | InitialAccess, Execution, PrivilegeEscalation, DefenseEvasion, CredentialAccess, LateralMovement | [`GitHubRepoLogs_CL`](../tables/githubrepologs-cl.md) |
 | [GitHub Two Factor Auth Disable](../content/github-github-two-factor-auth-disable-3ff0fffb-d963-40c0-b235-3404f915add7-154f9e3d.md) | Medium | DefenseEvasion | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
-| [NRT GitHub Two Factor Auth Disable](../content/github-nrt-github-two-factor-auth-disable-594c653d-719a-4c23-b028-36e3413e632e-4470b247.md) | Medium | DefenseEvasion | [`GitHub_CL`](../tables/github-cl.md) |
+| [NRT GitHub Two Factor Auth Disable](../content/github-nrt-github-two-factor-auth-disable-594c653d-719a-4c23-b028-36e3413e632e-4470b247.md) | Medium | DefenseEvasion | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
 
 ### Hunting Queries
 
@@ -126,12 +127,15 @@ This solution includes **28 content item(s)**:
 | [GitHubAuditData](../parsers/githubauditdata.md) | - | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) *(read)*<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) *(read)* |
 | [GitHubCodeScanningData](../parsers/githubcodescanningdata.md) | - | [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) *(read)* |
 | [GitHubDependabotData](../parsers/githubdependabotdata.md) | - | [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) *(read)* |
+| [GitHubScanAudit](../parsers/githubscanaudit.md) | - | - |
 | [GitHubSecretScanningData](../parsers/githubsecretscanningdata.md) | - | [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) *(read)* |
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                       |
 |-------------|--------------------------------|--------------------------------------------------------------------------|
+| 3.2.0       | 24-04-2026                     | Added **GitHub Webhook V2** data connector (CLv2/Logs Ingestion API) public preview |
+| 3.1.4       | 19-03-2026                     | Fix NRT 2FA rule for new parser format. |
 | 3.1.3       | 29-01-2026                     | Promoted GitHub Enterprise Cloud Audit Log CCF connector from Public Preview to GA. |
 | 3.1.2       | 24-11-2025                     | Added clarity to Github Enterprise Audit CCF connector definition to use API URL. |
 | 3.1.1       | 13-11-2025                     | Fixed URL handling for GitHub Enterprise Audit CCF connector.|

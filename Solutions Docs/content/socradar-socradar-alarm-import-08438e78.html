@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOCRadar-Alarm-Import &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="socradar-alarm-import">SOCRadar-Alarm-Import</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<hr />
+<p>Imports alarms from SOCRadar with optional audit logging and custom table storage. Supports all statuses or OPEN only.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/socradar.html">SOCRadar</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOCRadar/Playbooks/SOCRadar-Alarm-Import/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOCRadar/Playbooks/SOCRadar-Alarm-Import/readme.md">SOCRadar-Alarm-Import/readme.md</a></em></p>
+</blockquote>
+<h1 id="socradar-alarm-import">SOCRadar Alarm Import</h1>
+<p>Imports SOCRadar XTI platform alarms into Microsoft Sentinel as incidents.</p>
+<p>Deploying this playbook also provisions the Data Collection Endpoint, the <code>SOCRadar_Alarms_CL</code> and <code>SOCRadarAuditLog_CL</code> custom log tables, the associated Data Collection Rules, and the role assignments required by the Logic App's managed identity. No separate infrastructure deployment is needed.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>Paginated alarm fetching (100 per page)</li>
+<li>Duplicate detection via Microsoft Sentinel API</li>
+<li>Severity and status mapping</li>
+<li>Optional closed alarm import with classification</li>
+<li>Automatic tagging (SOCRadar, alarm type, sub type)</li>
+<li>Field truncation for large alarms</li>
+<li>Optional audit logging</li>
+</ul>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>SOCRadar XTI Platform API Key</li>
+<li>Microsoft Sentinel workspace</li>
+<li>Managed Identity with Microsoft Sentinel Responder role (default, Contributor optional)</li>
+</ul>
+<h2 id="deployment">Deployment</h2>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSOCRadar%2FPlaybooks%2FSOCRadar-Alarm-Import%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
+<p>You can also install this playbook via <strong>Microsoft Sentinel Content Hub</strong>.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/socradar.html">Back to SOCRadar</a></p>
+</div>
+
+</body>
+</html>

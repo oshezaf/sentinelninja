@@ -17,8 +17,8 @@ These connectors contain code patterns for both the Log Ingestion API and the HT
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **4** |
-| Active | 4 |
+| Total Connectors | **6** |
+| Active | 6 |
 | Deprecated 🚫 | 0 |
 | Unpublished ⚠️ | 0 |
 
@@ -26,8 +26,8 @@ These connectors contain code patterns for both the Log Ingestion API and the HT
 
 | Collection Method | Count |
 |:-----------------|------:|
-| [Azure Function](../methods/azure-function.md) | 4 |
-| **Total** | **4** |
+| [Azure Function](../methods/azure-function.md) | 6 |
+| **Total** | **6** |
 
 ## Connectors Using This API
 
@@ -39,6 +39,8 @@ These connectors contain code patterns for both the Log Ingestion API and the HT
 | [Armis Alerts](../connectors/armisalerts.md) 🔍 | [Azure Function](../methods/azure-function.md) | Armis | 1 | [Armis](../solutions/armis.md) |
 | [Armis Alerts Activities](../connectors/armisalertsactivities.md) | [Azure Function](../methods/azure-function.md) | Armis | 2 | [Armis](../solutions/armis.md) |
 | [Armis Devices](../connectors/armisdevices.md) | [Azure Function](../methods/azure-function.md) | Armis | 1 | [Armis](../solutions/armis.md) |
+| [GitHub (using Webhooks)](../connectors/githubwebhook.md) | [Azure Function](../methods/azure-function.md) | Microsoft | 1 | [GitHub](../solutions/github.md) |
+| [GitHub (using Webhooks) V2](../connectors/githubwebhookv2.md) 🔶 | [Azure Function](../methods/azure-function.md) | Microsoft | 2 | [GitHub](../solutions/github.md) |
 
 ---
 

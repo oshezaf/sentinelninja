@@ -27,8 +27,8 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ | ? |
-| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ✓ |
-| [`WindowsEvent`](../tables/windowsevent.md) | `EventID in "4670,4688"` | ✓ | ✓ | ✓ |
+| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ? |
+| [`WindowsEvent`](../tables/windowsevent.md) | `EventID in "4670,4688"` | ✓ | ✓ | ? |
 
 ## Associated Connectors
 

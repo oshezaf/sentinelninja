@@ -26,10 +26,10 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CloudAppEvents`](../tables/cloudappevents.md) |  | ✓ | ✗ | ✓ |
-| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType in "FileCreated,FileDownloaded,FileRenamed,UsbDriveMounted"` | ✓ | ✗ | ✓ |
+| [`CloudAppEvents`](../tables/cloudappevents.md) |  | ✓ | ✗ | ? |
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType in "FileCreated,FileDownloaded,FileRenamed,UsbDriveMounted"` | ✓ | ✗ | ? |
 | [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |
+| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ? |
 
 ## Associated Connectors
 

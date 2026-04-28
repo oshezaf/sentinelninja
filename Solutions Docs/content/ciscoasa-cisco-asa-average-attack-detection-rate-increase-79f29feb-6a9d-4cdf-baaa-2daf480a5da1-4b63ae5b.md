@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "733100"` | ✓ | ✓ | ✓ |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "733100"` | ✓ | ✓ | ? |
 
 ---
 

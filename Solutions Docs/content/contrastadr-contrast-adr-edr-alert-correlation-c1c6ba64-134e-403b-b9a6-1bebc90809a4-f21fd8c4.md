@@ -18,7 +18,7 @@ Correlates Contrast ADR incidents with specific high-risk attack patterns includ
 | **Kind** | Scheduled |
 | **Tactics** | Execution, DefenseEvasion, InitialAccess, CommandAndControl |
 | **Techniques** | T1059, T1055, T1190, T1008 |
-| **Required Connectors** | [ContrastADR](../connectors/contrastadr.md) |
+| **Required Connectors** | [ContrastADRCCF](../connectors/contrastadrccf.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContrastADR/Analytic%20Rules/Contrast_ADR_Confirmed_EDR.yaml) |
 
 ## Tables Used
@@ -27,8 +27,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ContrastADRIncident_CL`](../tables/contrastadrincident-cl.md) 🔶 | ✗ | ✓ | ✗ |
-| [`ContrastADR_CL`](../tables/contrastadr-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`ContrastADRAttackEvents_CL`](../tables/contrastadrattackevents-cl.md) | ? | ✓ | ? |
+| [`ContrastADRIncidents_CL`](../tables/contrastadrincidents-cl.md) | ? | ✓ | ? |
 
 ---
 

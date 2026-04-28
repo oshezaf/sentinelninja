@@ -18,7 +18,7 @@ Detects successful SQL injection attacks identified by Contrast ADR and correlat
 | **Kind** | Scheduled |
 | **Tactics** | InitialAccess, CredentialAccess, Collection, Exfiltration, CommandAndControl, Reconnaissance, CredentialAccess, LateralMovement, Discovery |
 | **Techniques** | T1190, T1552, T1005, T1041, T1008, T1590, T1571, T1528, T1021, T1046 |
-| **Required Connectors** | [ContrastADR](../connectors/contrastadr.md) |
+| **Required Connectors** | [ContrastADRCCF](../connectors/contrastadrccf.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContrastADR/Analytic%20Rules/Contrast_ADR_SQL_Injection_Alert_with_DLP_alerts.yaml) |
 
 ## Tables Used
@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ContrastADR_CL`](../tables/contrastadr-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`ContrastADRAttackEvents_CL`](../tables/contrastadrattackevents-cl.md) | ? | ✓ | ? |
 
 ---
 

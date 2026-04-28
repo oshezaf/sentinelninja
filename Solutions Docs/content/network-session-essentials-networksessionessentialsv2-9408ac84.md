@@ -28,8 +28,8 @@ This content item queries data from the following tables:
 | [`NetworkSummary_Source_Port_CL`](../tables/networksummary-source-port-cl.md) | ? | ✓ | ? |
 | [`NetworkSummary_Threat_CL`](../tables/networksummary-threat-cl.md) | ? | ✓ | ? |
 | [`NetworkSummary_Threat_IOC_CL`](../tables/networksummary-threat-ioc-cl.md) | ? | ✓ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✓ | ✗ |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✓ | ? |
 
 ---
 

@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | ✓ | ✓ | ✓ |
+| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | ✓ | ✓ | ? |
 
 ## Parameters
 
@@ -46,10 +46,10 @@ The following connectors provide data for this parser:
 | Connector | Solution |
 |:----------|:---------|
 | [CiscoMerakiMultiRule](../connectors/ciscomerakimultirule.md) | [Cisco Meraki Events via REST API](../solutions/cisco-meraki-events-via-rest-api.md) |
-| [CrowdstrikeReplicatorv2](../connectors/crowdstrikereplicatorv2.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
+| [SynqlyIntegrationConnector](../connectors/synqlyintegrationconnector.md) | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md) |
 | [WorkdayCCPDefinition](../connectors/workdayccpdefinition.md) | [Workday](../solutions/workday.md) |
 
-**Solutions:** [Cisco Meraki Events via REST API](../solutions/cisco-meraki-events-via-rest-api.md), [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md), [Workday](../solutions/workday.md)
+**Solutions:** [Cisco Meraki Events via REST API](../solutions/cisco-meraki-events-via-rest-api.md), [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md), [Workday](../solutions/workday.md)
 
 ## References
 

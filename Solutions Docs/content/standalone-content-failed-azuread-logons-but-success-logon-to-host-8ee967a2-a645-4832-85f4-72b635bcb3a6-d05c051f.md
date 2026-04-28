@@ -26,9 +26,9 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ✓ |
-| [`Syslog`](../tables/syslog.md) | `Facility contains "auth"`<br>`ProcessName != "sudo"`<br>`SyslogMessage has "Accepted"` | ✓ | ✓ | ✓ |
-| [`WindowsEvent`](../tables/windowsevent.md) |  | ✓ | ✓ | ✓ |
+| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ? |
+| [`Syslog`](../tables/syslog.md) | `Facility contains "auth"`<br>`ProcessName != "sudo"`<br>`SyslogMessage has "Accepted"` | ✓ | ✓ | ? |
+| [`WindowsEvent`](../tables/windowsevent.md) |  | ✓ | ✓ | ? |
 
 ## Associated Connectors
 

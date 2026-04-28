@@ -16,15 +16,15 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 3.0.7 |
+| **Version** | 3.0.11 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-11 |
 | **Last Updated** | 2026-03-27 |
 | **Solution Folder** | [Network Session Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Network%20Session%20Essentials) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-networksession) · Popularity: 🟢 High (84%) |
-| **Pre-requisites** | [Amazon Web Services](amazon-web-services.md), [Azure Firewall](azure-firewall.md), [Azure Network Security Groups](azure-network-security-groups.md), [Check Point](check-point.md), [CiscoASA](ciscoasa.md), [CiscoMeraki](ciscomeraki.md), [Corelight](corelight.md), [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md), [IoTOTThreatMonitoringwithDefenderforIoT](iototthreatmonitoringwithdefenderforiot.md), [Microsoft Defender for Cloud](microsoft-defender-for-cloud.md), [Microsoft Sysmon For Linux](microsoft-sysmon-for-linux.md), [Windows Firewall](windows-firewall.md), [PaloAlto-PAN-OS](paloalto-pan-os.md), [Vectra AI Stream](vectra-ai-stream.md), [Watchguard Firebox](watchguard-firebox.md), [Zscaler Internet Access](zscaler-internet-access.md), [IllumioSaaS](illumiosaas.md) |
+| **Pre-requisites** | [Amazon Web Services](amazon-web-services.md), [Azure Firewall](azure-firewall.md), [Azure Network Security Groups](azure-network-security-groups.md), [Check Point](check-point.md), [CiscoASA](ciscoasa.md), [CiscoMeraki](ciscomeraki.md), [Corelight](corelight.md), [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md), [IoTOTThreatMonitoringwithDefenderforIoT](iototthreatmonitoringwithdefenderforiot.md), [Microsoft Defender for Cloud](microsoft-defender-for-cloud.md), [Microsoft Sysmon For Linux](microsoft-sysmon-for-linux.md), [Windows Firewall](windows-firewall.md), [PaloAlto-PAN-OS](paloalto-pan-os.md), [Vectra AI Stream](vectra-ai-stream.md), [Watchguard Firebox](watchguard-firebox.md), zscaler1579058425289.zscaler_internet_access_mss, [IllumioSaaS](illumiosaas.md) |
 
-[Network Session Essentials](https://aka.ms/NetworkSessionEssential) is a [domain solution](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fazure%2Fsentinel%2Fsentinel-solutions-catalog%23domain-solutions&data=05%7C01%7Ckavishbakshi%40microsoft.com%7Cbe2a496082b24caa4b8c08da9cefacca%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637994850502413731%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=OJegu%2B2EqD7rmYmK9pm9QniD6YWp5ooloZ6tHzcwVi0%3D&reserved=0) and does not include any data connectors. The content in this solution requires one of the product solutions below , as well as any other connector or data source normalized to the [ASIM](https://aka.ms/AboutASIM).
+[Network Session Essentials](https://learn.microsoft.com/azure/sentinel/domain-based-essential-solutions) is a [domain solution](https://learn.microsoft.com/azure/sentinel/sentinel-solutions-catalog#domain-solutions) and does not include any data connectors. The content in this solution requires one of the product solutions below , as well as any other connector or data source normalized to the [ASIM](https://aka.ms/AboutASIM).
 
 For details on the required solutions, see the [Pre-requisites](#pre-requisites) section below.
 
@@ -46,7 +46,7 @@ It is highly recommended to use the **Summarize data** logic app playbook provid
 
 ## Pre-requisites
 
-This solution depends on **17 other solution(s)**:
+This solution depends on **16 other solution(s)**:
 
 | Solution |
 |:---------|
@@ -66,7 +66,6 @@ This solution depends on **17 other solution(s)**:
 | [Vectra AI Stream](vectra-ai-stream.md) |
 | [Watchguard Firebox](watchguard-firebox.md) |
 | [Windows Firewall](windows-firewall.md) |
-| [Zscaler Internet Access](zscaler-internet-access.md) |
 
 ## Data Connectors
 
@@ -98,8 +97,6 @@ This solution depends on **17 other solution(s)**:
 - [[Deprecated] WatchGuard Firebox](../connectors/watchguardfirebox.md) *(dependency on [Watchguard Firebox](watchguard-firebox.md))*
 - [Windows Firewall](../connectors/windowsfirewall.md) *(dependency on [Windows Firewall](windows-firewall.md))*
 - [Windows Firewall Events via AMA](../connectors/windowsfirewallama.md) *(dependency on [Windows Firewall](windows-firewall.md))*
-- [[Deprecated] Zscaler via Legacy Agent](../connectors/zscaler.md) *(dependency on [Zscaler Internet Access](zscaler-internet-access.md))*
-- [[Deprecated] Zscaler via AMA](../connectors/zscalerama.md) *(dependency on [Zscaler Internet Access](zscaler-internet-access.md))*
 
 ## Tables Used
 
@@ -221,6 +218,8 @@ This solution includes **38 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                    |
 |-------------|--------------------------------|-----------------------------------------------------------------------|
+| 3.0.11      | 24-03-2026                     | Bump solution version and Updated links to remove review.learn.                                 |
+| 3.0.10      | 14-02-2026                     | Updated links to remove review.learn.                                 |
 | 3.0.9       | 06-02-2026                     | Updated the relevant techniques in the **hunting queries**.	       |
 | 3.0.8       | 23-09-2025                     | Removed duplicate and redundant query blocks that previously handled different eps ranges, reducing code complexity and improving maintainability.
 | 3.0.7       | 4-07-2025                      | Summary rules added and updated requiredDataConnectors.			       |

@@ -18,8 +18,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md) 🔶 | ✗ | ✓ | ✗ |
-| [`Syslog`](../tables/syslog.md) | ✓ | ✓ | ✓ |
+| [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md) 🔶 | ? | ✓ | ? |
+| [`Syslog`](../tables/syslog.md) | ✓ | ✓ | ? |
 
 ---
 

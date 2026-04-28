@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>argsentdcCL &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
-
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
@@ -28,16 +30,180 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes</td>
-</tr>
-<tr>
 <td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
 <td style="text-align: left;">✓ Yes</td>
 </tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
+<li><a href="#content-items-using-this-table">Content Items</a></li>
+<li><a href="#parsers-using-this-table">Parsers</a></li>
+</ul>
+<h2 id="schema">Schema (38 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/argsentdc_CL.json">KQL validation test schema</a></p>
+<table id="schema-table">
+<thead>
 <tr>
-<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">acknowledged_by</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">acknowledged_date</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">alert_data</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">analysis_report</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">attachments</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">category</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">closed_by</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">closure_date</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">closure_reason</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">closure_reason_description</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">confidence</td>
+<td style="text-align: left;">int</td>
+</tr>
+<tr>
+<td style="text-align: left;">created_by</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">created_date</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">description</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">environment</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">event_title</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">event_type</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">id</td>
+<td style="text-align: left;">int</td>
+</tr>
+<tr>
+<td style="text-align: left;">impacts</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">indicators</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">iocs</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">mitre</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">modification_date</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">publish_date</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">recommendation</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ref_id</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">related_assets</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">related_entities</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">severity</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">source</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">source_category</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">status</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">tags</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">targeted_brands</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">targeted_vectors</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">threat_actor</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ticket_id</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
 </tr>
 </tbody>
 </table>
@@ -63,10 +229,85 @@
 </tbody>
 </table>
 <hr />
+<h2 id="content-items-using-this-table">Content Items Using This Table (3)</h2>
+<h3 id="analytic-rules">Analytic Rules (1)</h3>
+<p><strong>In solution <a href="../solutions/check-point-cyberint-alerts.html">Check Point Cyberint Alerts</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Analytic Rule</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/check-point-cyberint-alerts-check-point-exposure-management-alert-ingestion-anomaly-8d3b9c7e-5a2f-4e1d-b6c8-3f9a7e2d1b4c-1545e994.html">Check Point Exposure Management - Alert Ingestion Anomaly</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks (1)</h3>
+<p><strong>In solution <a href="../solutions/check-point-cyberint-alerts.html">Check Point Cyberint Alerts</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Workbook</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/check-point-cyberint-alerts-cpemalertoverview-1fe40da5.html">CPEMAlertOverview</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="parsers-using-this-table">Parsers Using This Table (1)</h2>
+<h3 id="other-parsers">Other Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cpemalerts.html">CPEMAlerts</a></td>
+<td style="text-align: left;"><a href="../solutions/check-point-cyberint-alerts.html">Check Point Cyberint Alerts</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 </div>
-
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
 </body>
 </html>

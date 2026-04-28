@@ -37,10 +37,10 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Awareness_Performance_Details_CL`](../tables/awareness-performance-details-cl.md) | ✓ | ✓ | ✓ |
-| [`Awareness_SafeScore_Details_CL`](../tables/awareness-safescore-details-cl.md) | ✓ | ✓ | ✓ |
-| [`Awareness_User_Data_CL`](../tables/awareness-user-data-cl.md) | ✓ | ✓ | ✓ |
-| [`Awareness_Watchlist_Details_CL`](../tables/awareness-watchlist-details-cl.md) | ✓ | ✓ | ✓ |
+| [`Awareness_Performance_Details_CL`](../tables/awareness-performance-details-cl.md) | ? | ✓ | ? |
+| [`Awareness_SafeScore_Details_CL`](../tables/awareness-safescore-details-cl.md) | ? | ✓ | ? |
+| [`Awareness_User_Data_CL`](../tables/awareness-user-data-cl.md) | ? | ✓ | ? |
+| [`Awareness_Watchlist_Details_CL`](../tables/awareness-watchlist-details-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

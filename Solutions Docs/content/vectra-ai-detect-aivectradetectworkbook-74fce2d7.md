@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "asc,audit,campaigns,health,hsc"`<br>`DeviceEventClassID !in "health,audit,campaigns,hsc,asc"`<br>`DeviceEventClassID !in "health,audit,campaigns,hsc,asc"`<br>`DeviceVendor == "Vectra Networks"` | ✓ | ✓ | ✓ |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "asc,audit,campaigns,health,hsc"`<br>`DeviceEventClassID !in "health,audit,campaigns,hsc,asc"`<br>`DeviceEventClassID !in "health,audit,campaigns,hsc,asc"`<br>`DeviceVendor == "Vectra Networks"` | ✓ | ✓ | ? |
 
 ---
 

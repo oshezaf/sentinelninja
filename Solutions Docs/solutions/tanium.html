@@ -47,7 +47,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.2.0</td>
+<td style="text-align: left;">3.3.0</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -59,7 +59,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Last Updated</strong></td>
-<td style="text-align: left;">2025-07-03</td>
+<td style="text-align: left;">2026-03-27</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Solution Folder</strong></td>
@@ -80,89 +80,100 @@
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p><strong>This solution does not include data connectors.</strong></p>
-<p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/taniumconnector.html">Tanium's CCF Push Connector</a> 🔶</li>
+</ul>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
+</blockquote>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution queries <strong>10 table(s)</strong> from its content items:</p>
+<p>This solution uses <strong>10 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
 <th>Table</th>
+<th>Used By Connectors</th>
 <th>Used By Content</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="../tables/taniumcomplycompliance-cl.html"><code>TaniumComplyCompliance_CL</code></a></td>
+<td><a href="../tables/taniumcomplycompliance-cl.html"><code>TaniumComplyCompliance_CL</code></a> 🔶</td>
+<td><a href="../connectors/taniumconnector.html">Tanium's CCF Push Connector</a></td>
 <td>Workbooks</td>
 </tr>
 <tr>
-<td><a href="../tables/taniumcomplyvulnerabilities-cl.html"><code>TaniumComplyVulnerabilities_CL</code></a></td>
+<td><a href="../tables/taniumcomplyvulnerabilities-cl.html"><code>TaniumComplyVulnerabilities_CL</code></a> 🔶</td>
+<td><a href="../connectors/taniumconnector.html">Tanium's CCF Push Connector</a></td>
 <td>Workbooks</td>
 </tr>
 <tr>
-<td><a href="../tables/taniumdefenderhealth-cl.html"><code>TaniumDefenderHealth_CL</code></a></td>
+<td><a href="../tables/taniumdefenderhealth-cl.html"><code>TaniumDefenderHealth_CL</code></a> 🔶</td>
+<td><a href="../connectors/taniumconnector.html">Tanium's CCF Push Connector</a></td>
 <td>Workbooks</td>
 </tr>
 <tr>
-<td><a href="../tables/taniumdiscoverunmanagedassets-cl.html"><code>TaniumDiscoverUnmanagedAssets_CL</code></a></td>
+<td><a href="../tables/taniumdiscoverunmanagedassets-cl.html"><code>TaniumDiscoverUnmanagedAssets_CL</code></a> 🔶</td>
+<td><a href="../connectors/taniumconnector.html">Tanium's CCF Push Connector</a></td>
 <td>Workbooks</td>
 </tr>
 <tr>
-<td><a href="../tables/taniumhighuptime-cl.html"><code>TaniumHighUptime_CL</code></a></td>
+<td><a href="../tables/taniumhighuptime-cl.html"><code>TaniumHighUptime_CL</code></a> 🔶</td>
+<td><a href="../connectors/taniumconnector.html">Tanium's CCF Push Connector</a></td>
 <td>Workbooks</td>
 </tr>
 <tr>
-<td><a href="../tables/taniumpatchcoveragestatus-cl.html"><code>TaniumPatchCoverageStatus_CL</code></a></td>
+<td><a href="../tables/taniumpatchcoveragestatus-cl.html"><code>TaniumPatchCoverageStatus_CL</code></a> 🔶</td>
+<td><a href="../connectors/taniumconnector.html">Tanium's CCF Push Connector</a></td>
 <td>Workbooks</td>
 </tr>
 <tr>
-<td><a href="../tables/taniumpatchlistapplicability-cl.html"><code>TaniumPatchListApplicability_CL</code></a></td>
+<td><a href="../tables/taniumpatchlistapplicability-cl.html"><code>TaniumPatchListApplicability_CL</code></a> 🔶</td>
+<td><a href="../connectors/taniumconnector.html">Tanium's CCF Push Connector</a></td>
 <td>Workbooks</td>
 </tr>
 <tr>
-<td><a href="../tables/taniumpatchlistcompliance-cl.html"><code>TaniumPatchListCompliance_CL</code></a></td>
+<td><a href="../tables/taniumpatchlistcompliance-cl.html"><code>TaniumPatchListCompliance_CL</code></a> 🔶</td>
+<td><a href="../connectors/taniumconnector.html">Tanium's CCF Push Connector</a></td>
 <td>Workbooks</td>
 </tr>
 <tr>
-<td><a href="../tables/taniumsccmclienthealth-cl.html"><code>TaniumSCCMClientHealth_CL</code></a></td>
+<td><a href="../tables/taniumsccmclienthealth-cl.html"><code>TaniumSCCMClientHealth_CL</code></a> 🔶</td>
+<td><a href="../connectors/taniumconnector.html">Tanium's CCF Push Connector</a></td>
 <td>Workbooks</td>
 </tr>
 <tr>
-<td><a href="../tables/taniumthreatresponse-cl.html"><code>TaniumThreatResponse_CL</code></a></td>
+<td><a href="../tables/taniumthreatresponse-cl.html"><code>TaniumThreatResponse_CL</code></a> 🔶</td>
+<td><a href="../connectors/taniumconnector.html">Tanium's CCF Push Connector</a></td>
 <td>Analytics, Workbooks</td>
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
+</blockquote>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>11 content item(s)</strong> (10 in solution, 1 discovered 🔍):</p>
+<p>This solution includes <strong>10 content item(s)</strong>:</p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Content Type</th>
-<th style="text-align: right;">Total</th>
-<th style="text-align: right;">In Solution</th>
-<th style="text-align: right;">Discovered</th>
+<th style="text-align: left;">Count</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;">Playbooks</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">-</td>
-</tr>
-<tr>
-<td style="text-align: left;">Workbooks</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: left;">8</td>
 </tr>
 <tr>
 <td style="text-align: left;">Analytic Rules</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">-</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
 </tr>
 </tbody>
 </table>
@@ -197,10 +208,6 @@
 <tr>
 <td style="text-align: left;"><a href="../content/tanium-taniumworkbook-97052723.html">TaniumWorkbook</a></td>
 <td style="text-align: left;"><a href="../tables/taniumcomplycompliance-cl.html"><code>TaniumComplyCompliance_CL</code></a><br><a href="../tables/taniumcomplyvulnerabilities-cl.html"><code>TaniumComplyVulnerabilities_CL</code></a><br><a href="../tables/taniumdefenderhealth-cl.html"><code>TaniumDefenderHealth_CL</code></a><br><a href="../tables/taniumdiscoverunmanagedassets-cl.html"><code>TaniumDiscoverUnmanagedAssets_CL</code></a><br><a href="../tables/taniumhighuptime-cl.html"><code>TaniumHighUptime_CL</code></a><br><a href="../tables/taniumpatchcoveragestatus-cl.html"><code>TaniumPatchCoverageStatus_CL</code></a><br><a href="../tables/taniumpatchlistapplicability-cl.html"><code>TaniumPatchListApplicability_CL</code></a><br><a href="../tables/taniumpatchlistcompliance-cl.html"><code>TaniumPatchListCompliance_CL</code></a><br><a href="../tables/taniumsccmclienthealth-cl.html"><code>TaniumSCCMClientHealth_CL</code></a><br><a href="../tables/taniumthreatresponse-cl.html"><code>TaniumThreatResponse_CL</code></a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/tanium-connect-module-connections-aa28580e.html">connect-module-connections</a> ⚠️</td>
-<td style="text-align: left;">-</td>
 </tr>
 </tbody>
 </table>
@@ -256,9 +263,6 @@
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p>⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.</p>
-</blockquote>
 <h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium/README.md">Tanium/README.md</a></em></p>

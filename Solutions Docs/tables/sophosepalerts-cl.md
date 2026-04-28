@@ -53,7 +53,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Sophos Endpoint Protection (using REST API)](../connectors/sophosendpointprotectionccpdefinition.md) |  |
+| [Sophos Endpoint Protection (via Codeless Connector Platform)](../connectors/sophosendpointprotectionccpdefinition.md) |  |
 
 ---
 

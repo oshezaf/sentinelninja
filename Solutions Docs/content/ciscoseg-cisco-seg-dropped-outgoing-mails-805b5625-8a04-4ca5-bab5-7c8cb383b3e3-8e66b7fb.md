@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "ESA_CONSOLIDATED_LOG_EVENT"` | ✓ | ✓ | ✓ |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "ESA_CONSOLIDATED_LOG_EVENT"` | ✓ | ✓ | ? |
 
 ---
 

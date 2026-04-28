@@ -24,8 +24,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ | ✓ |
-| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ | ✓ |
+| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ | ? |
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ | ? |
 
 ---
 

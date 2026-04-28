@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) | `OperationName has "StsRefreshTokenValidFrom"` | ✓ | ✗ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName has "StsRefreshTokenValidFrom"` | ✓ | ✗ | ? |
 
 ---
 

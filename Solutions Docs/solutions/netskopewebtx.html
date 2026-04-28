@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Netskope Web Transaction Events for Microsoft Sentinel &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="netskope-web-transaction-events-for-microsoft-sentinel">Netskope Web Transaction Events for Microsoft Sentinel</h1>
+<p><em>Solution: NetskopeWebTx</em></p>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/netskope.svg" alt="NetskopeWebTx Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Netskope</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://www.netskope.com/services#support">https://www.netskope.com/services#support</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">1.0.1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Netskope</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2026-02-10</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2026-04-09</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetskopeWebTx">NetskopeWebTx</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Marketplace</strong></td>
+<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netskope.netskope_webtx">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
+</tr>
+</tbody>
+</table>
+<p>The Netskope Web Transactions solution enables streaming of web transaction logs from Netskope to Microsoft Sentinel via Azure Blob Storage and Event Grid. It provides comprehensive visibility into web traffic, user activity, application usage, and security policy enforcement.</p>
+<p><strong>Included Content:</strong>
+- 1 Data Connector (CCP-based Blob Storage connector)
+- 1 Workbook (Web Transactions Dashboard)
+- 10 Analytics Rules</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/netskopewebtxconnector.html">Netskope Web Transaction Connector (via Blob Storage)</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/netskopewebtransactions-cl.html"><code>NetskopeWebTransactions_CL</code></a></td>
+<td><a href="../connectors/netskopewebtxconnector.html">Netskope Web Transaction Connector (via Blob Storage)</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>12 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/netskopewebtx-netskope-anomalous-user-behavior-high-volume-from-unmanaged-device-fa4c4f1c-3c5f-4c3a-a13f-924c30db56e9-a11677b7.html">Netskope - Anomalous User Behavior (High Volume from Unmanaged Device)</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Exfiltration, Collection</td>
+<td style="text-align: left;"><a href="../tables/netskopewebtransactions-cl.html"><code>NetskopeWebTransactions_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/netskopewebtx-netskope-data-movement-tracking-upload-download-monitoring-cf103180-cb81-4796-921d-3cc7eef4e817-0505a110.html">Netskope - Data Movement Tracking (Upload/Download Monitoring)</a></td>
+<td style="text-align: left;">Informational</td>
+<td style="text-align: left;">Exfiltration, Collection</td>
+<td style="text-align: left;"><a href="../tables/netskopewebtransactions-cl.html"><code>NetskopeWebTransactions_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/netskopewebtx-netskope-excessive-downloads-detection-spike-vs-baseline-dd0ebd84-ffbe-45df-848b-0615ac446b04-e6a1be75.html">Netskope - Excessive Downloads Detection (Spike vs Baseline)</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Exfiltration, Collection</td>
+<td style="text-align: left;"><a href="../tables/netskopewebtransactions-cl.html"><code>NetskopeWebTransactions_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/netskopewebtx-netskope-heavy-personal-cloud-storage-usage-shadow-it-272f9bca-5fd0-4413-b494-03b2d9f0bb9b-b4a5c41b.html">Netskope - Heavy Personal Cloud Storage Usage (Shadow IT)</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Exfiltration, Collection</td>
+<td style="text-align: left;"><a href="../tables/netskopewebtransactions-cl.html"><code>NetskopeWebTransactions_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/netskopewebtx-netskope-impossible-travel-detection-two-countries-in-less-than-1-hour-d1b88716-3cd4-4585-a9a2-2dd2c9b04ecb-2929a498.html">Netskope - Impossible Travel Detection (Two Countries in Less Than 1 Hour)</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess, CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/netskopewebtransactions-cl.html"><code>NetskopeWebTransactions_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/netskopewebtx-netskope-large-outbound-data-transfer-sensitive-upload-dlp-71e6586e-0d3f-4e33-b390-faa50b5e08fa-c78990bd.html">Netskope - Large Outbound Data Transfer / Sensitive Upload (DLP)</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/netskopewebtransactions-cl.html"><code>NetskopeWebTransactions_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/netskopewebtx-netskope-new-risky-app-access-vs-7-day-baseline-ba66b81c-2cf7-4c53-9db0-e8b6f537704a-4dbceb22.html">Netskope - New Risky App Access vs 7-Day Baseline</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, Discovery</td>
+<td style="text-align: left;"><a href="../tables/netskopewebtransactions-cl.html"><code>NetskopeWebTransactions_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/netskopewebtx-netskope-repeated-or-critical-policy-violations-dacab67e-fcf3-41c6-a191-579c7be1814d-4ad41000.html">Netskope - Repeated or Critical Policy Violations</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">DefenseEvasion, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/netskopewebtransactions-cl.html"><code>NetskopeWebTransactions_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/netskopewebtx-netskope-suspicious-network-context-unusual-ips-geo-ports-6d989fb0-933e-4ae6-88fa-10e7b51c8897-d6216d9a.html">Netskope - Suspicious Network Context (Unusual IPs/Geo/Ports)</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CommandAndControl, Exfiltration, Discovery</td>
+<td style="text-align: left;"><a href="../tables/netskopewebtransactions-cl.html"><code>NetskopeWebTransactions_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/netskopewebtx-netskope-unsanctioned-risky-cloud-app-access-shadow-it-cdc01279-d6ea-41b1-a32d-49d726be95b8-be0feda5.html">Netskope - Unsanctioned/Risky Cloud App Access (Shadow IT)</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, Exfiltration</td>
+<td style="text-align: left;"><a href="../tables/netskopewebtransactions-cl.html"><code>NetskopeWebTransactions_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/netskopewebtx-netskopewebtx-workbook-95a52b5a.html">NetskopeWebTx_Workbook</a></td>
+<td style="text-align: left;"><a href="../tables/netskopewebtransactions-cl.html"><code>NetskopeWebTransactions_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/netskopewebtx.html">NetskopeWebtx</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/netskopewebtransactions-cl.html"><code>NetskopeWebTransactions_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetskopeWebTx/README.md">NetskopeWebTx/README.md</a></em></p>
+</blockquote>
+<h2 id="overview">Overview</h2>
+<p>This solution enables ingestion of Netskope Web Transaction logs into Microsoft Sentinel for security monitoring, threat detection, and compliance analysis.</p>
+<h2 id="contents">Contents</h2>
+<h3 id="data-connectors">Data Connectors</h3>
+<ul>
+<li><strong>NetskopeWebTxConnector</strong> - Codeless Connector Platform (CCP) connector using Azure Blob Storage and Event Grid</li>
+</ul>
+<h3 id="workbooks">Workbooks</h3>
+<ul>
+<li><strong>Netskope Web Transactions Dashboard</strong> - Comprehensive visualization including:</li>
+<li>User Activity Analysis</li>
+<li>Application &amp; Category Usage</li>
+<li>Geographic Traffic Analysis</li>
+<li>HTTP Methods &amp; Status Codes</li>
+<li>SSL Errors &amp; Bypass Events</li>
+<li>Data Quality Monitoring</li>
+</ul>
+<h3 id="analytics-rules">Analytics Rules (10 Rules)</h3>
+<ol>
+<li><strong>Impossible Travel Detection</strong> - Users accessing from multiple countries within 1 hour</li>
+<li><strong>Excessive Downloads Detection</strong> - Spike vs 7-day baseline analysis</li>
+<li><strong>Unsanctioned/Risky Cloud App Access</strong> - Shadow IT detection</li>
+<li><strong>New Risky App vs Baseline</strong> - First-seen risky applications</li>
+<li><strong>Large Data Upload (DLP)</strong> - Potential data exfiltration</li>
+<li><strong>Policy Violations</strong> - Repeated or critical policy blocks</li>
+<li><strong>Anomalous User Behavior</strong> - High volume from unmanaged devices</li>
+<li><strong>Personal Cloud Storage Usage</strong> - Shadow IT storage apps</li>
+<li><strong>Suspicious Network Context</strong> - Unusual IPs/Geo/Ports</li>
+<li><strong>Data Movement Tracking</strong> - Upload/Download monitoring</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Microsoft Sentinel workspace</li>
+<li>Azure Blob Storage account with Netskope Web Transaction logs</li>
+<li>Event Grid System Topic on the storage account</li>
+<li>Appropriate RBAC permissions</li>
+</ul>
+<h2 id="deployment">Deployment</h2>
+<ol>
+<li>Deploy the Data Connector ARM template</li>
+<li>Configure blob container settings</li>
+<li>Deploy Analytics Rules</li>
+<li>Import the Workbook</li>
+</ol>
+<h2 id="log-table">Log Table</h2>
+<p><code>NetskopeWebTransactions_CL</code></p>
+<h2 id="version">Version</h2>
+<p>1.0.0</p>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.0</td>
+<td>11-02-2026</td>
+<td>Includes all CCF connector definitions and configurations.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+</div>
+
+</body>
+</html>

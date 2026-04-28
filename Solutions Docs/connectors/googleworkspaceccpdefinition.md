@@ -26,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GoogleWorkspaceReports`](../tables/googleworkspacereports.md) | ✓ | ✓ | ✓ |
+| [`GoogleWorkspaceReports`](../tables/googleworkspacereports.md) | ✓ | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -50,15 +50,14 @@ This connector ingests data into the following tables:
 3. From ***APIs & Services*** -> ***Enabled APIs & Services***, enable **Admin SDK API** for this project.
  4. Go to ***APIs & Services*** -> ***OAuth Consent Screen***. If not already configured, create a OAuth Consent Screen with the following steps:
 	 1. Provide App Name and other mandatory information.
-	 2. Add authorized domains with API Access Enabled.
-	 3. In Scopes section, add **Admin SDK API** scope.
-	 4. In Test Users section, make sure the domain admin account is added.
+	 2. Pick External as User Type for the Audience.
  5. Go to ***APIs & Services*** -> ***Credentials*** and create OAuth 2.0 Client ID
 	 1. Click on Create Credentials on the top and select Oauth client Id.
 	 2. Select Web Application from the Application Type drop down.
 	 3. Provide a suitable name to the Web App and add the Redirect URI in the form below as the Authorized redirect URIs.
 	 4. Once you click Create, you will be provided with the Client ID and Client Secret. 
 	Copy these values and use them in the configuration steps below.
+ 6. Go to ***Google Auth Platform*** -> ***Data Access***: Add ***Admin SDK API*** scope
 Configure steps for the Google Reports API oauth access. Then, provide the required information below and click on Connect.
 >
 - **OAuth Configuration**:

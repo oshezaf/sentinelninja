@@ -16,7 +16,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 3.1.2 |
+| **Version** | 3.1.4 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-20 |
 | **Solution Folder** | [Box](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Box) |
@@ -42,8 +42,8 @@ The [Box](https://developer.box.com/guides/events/enterprise-events/for-enterpri
 
 This solution provides **2 data connector(s)**:
 
-- [Box](../connectors/boxdataconnector.md) 🔶
-- [Box Events (CCP)](../connectors/boxeventsccpdefinition.md) 🔶
+- [[DEPRECATED] Box Events (using Azure Function)](../connectors/boxdataconnector.md) 🔶
+- [Box Events (via Codeless Connector Framework)](../connectors/boxeventsccpdefinition.md) 🔶
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
@@ -54,8 +54,8 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`BoxEventsV2_CL`](../tables/boxeventsv2-cl.md) | [Box](../connectors/boxdataconnector.md), [Box Events (CCP)](../connectors/boxeventsccpdefinition.md) | Analytics, Hunting, Workbooks |
-| [`BoxEvents_CL`](../tables/boxevents-cl.md) 🔶 | [Box](../connectors/boxdataconnector.md), [Box Events (CCP)](../connectors/boxeventsccpdefinition.md) | Analytics, Hunting, Workbooks |
+| [`BoxEventsV2_CL`](../tables/boxeventsv2-cl.md) | [Box Events (via Codeless Connector Framework)](../connectors/boxeventsccpdefinition.md), [[DEPRECATED] Box Events (using Azure Function)](../connectors/boxdataconnector.md) | Analytics, Hunting, Workbooks |
+| [`BoxEvents_CL`](../tables/boxevents-cl.md) 🔶 | [Box Events (via Codeless Connector Framework)](../connectors/boxeventsccpdefinition.md), [[DEPRECATED] Box Events (using Azure Function)](../connectors/boxdataconnector.md) | Analytics, Hunting, Workbooks |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
@@ -117,6 +117,8 @@ This solution includes **22 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.1.4       | 13-04-2026                     | Deprecate Box Events (using Azure Function) |
+| 3.1.3       | 24-03-2026                     | Rename to Box Events (via Codeless Connector Framework) |
 | 3.1.2       | 29-10-2025                     | Updated KQL queries in Workbook to use EventEndTime instead of TimeGenerated for time-based filtering |
 | 3.1.1       | 10-02-2025                     | Advancing CCP **Data Connector** from Public preview to Global Availability.|
 | 3.1.0       | 06-12-2024                     | Added new CCP **Data Connector** and modified **Parser**.           |

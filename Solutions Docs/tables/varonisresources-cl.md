@@ -1,4 +1,4 @@
-# varonisresources_CL
+# VaronisResources_CL
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -8,9 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -18,31 +16,34 @@
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
-## Schema (21 columns)
+## Schema (24 columns)
 
 **Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Varonis%20Purview/Data%20Connectors/VaronisPurview_ccp/VaronisPurview_DCR.json)
 
 | Column Name | Type |
 |:------------|:-----|
-| AADTenantID | dynamic |
+| AADTenantID | string |
 | AdditionalFields | dynamic |
 | AssetId | string |
+| AssetName | string |
 | AssetOwner | dynamic |
 | AssetPath | string |
 | AssetPermissions | dynamic |
 | AssetSource | string |
 | AssetType | string |
-| Classification | dynamic |
+| Classification | string |
+| ClassificationLastScanDateTime | datetime |
 | CreatedDateTime | datetime |
 | DAC_ModifiedDate | datetime |
 | FeedType | string |
 | IngestionTime | datetime |
 | IsAssetRemoved | boolean |
-| LastAccess | dynamic |
+| LastAccessDateTime | datetime |
 | LastModifiedDateTime | datetime |
 | Provider | string |
-| Risks | dynamic |
-| SubWorkload | dynamic |
+| Risks | string |
+| SensitivityLabel | string |
+| SubWorkload | string |
 | TimeGenerated | datetime |
 | Workload | string |
 

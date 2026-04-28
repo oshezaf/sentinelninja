@@ -29,7 +29,7 @@ This union parser includes parsers for the following products:
 
 | Product | Source Parser | Solutions |
 |:--------|:--------------|:----------|
-| Native | [_Im_ProcessEvent_Native](asimprocesseventnative.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)<br>[VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
+| Native | [_Im_ProcessEvent_Native](asimprocesseventnative.md) | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md)<br>[VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
 |  | [_Im_ProcessTerminate_LinuxSysmon](im-processterminate-linuxsysmon.md) |  |
 |  | [_Im_ProcessTerminate_MD4IoT](im-processterminate-md4iot.md) |  |
 |  | [_Im_ProcessTerminate_MicrosoftSecurityEvents](im-processterminate-microsoftsecurityevents.md) |  |
@@ -49,9 +49,9 @@ This union parser includes parsers for the following products:
 | `actingprocess_has_any` | dynamic | dynamic([]) |
 | `targetprocess_has_any` | dynamic | dynamic([]) |
 | `parentprocess_has_any` | dynamic | dynamic([]) |
-| `actorusername` | string | * |
+| `actorusername_has` | string | * |
 | `dvcipaddr_has_any_prefix` | dynamic | dynamic([]) |
-| `dvcname_has_any` | dynamic | dynamic([]) |
+| `dvchostname_has_any` | dynamic | dynamic([]) |
 | `eventtype` | string | * |
 
 ## References

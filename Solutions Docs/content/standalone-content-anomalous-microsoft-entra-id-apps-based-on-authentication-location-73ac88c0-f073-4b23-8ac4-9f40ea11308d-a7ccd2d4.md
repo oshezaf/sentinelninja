@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SigninLogs`](../tables/signinlogs.md) | `OperationName == "Sign-in activity"` | ✓ | ✗ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) | `OperationName == "Sign-in activity"` | ✓ | ✗ | ? |
 
 ## Associated Connectors
 

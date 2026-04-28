@@ -14,7 +14,6 @@ Reference for ASimDnsActivityLogs table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimdnsactivitylogs) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -179,22 +178,24 @@ Reference for ASimDnsActivityLogs table in Azure Monitor Logs.
 
 📖 **Related Documentation:** [ASIM normalized DNS schema](https://learn.microsoft.com/azure/sentinel/dns-ama-fields#asim-normalized-dns-schema) - describes the mapping of Windows DNS server fields into the normalized field names as they appear in the [DNS normalization schema](https://learn.microsoft.com/azure/sentinel/normalization-schema-dns#schema-details)
 
-## Solutions (3)
+## Solutions (4)
 
 This table is used by the following solutions:
 
 - [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
+- [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md)
 - [Windows Server DNS](../solutions/windows-server-dns.md)
 
-## Connectors (2)
+## Connectors (3)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [Windows DNS Events via AMA](../connectors/asimdnsactivitylogs.md) | `EventProduct == "DNS Server"`<br>`EventType == "Query"`<br>`EventVendor == "Microsoft"` |
-| [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) |  |
+| [[DEPRECATED] CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) |  |
+| [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
 
 ---
 

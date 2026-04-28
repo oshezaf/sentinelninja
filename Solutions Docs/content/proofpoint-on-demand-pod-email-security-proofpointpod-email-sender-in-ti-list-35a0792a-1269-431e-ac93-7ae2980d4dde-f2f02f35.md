@@ -26,11 +26,11 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ProofpointPODMailLog_CL`](../tables/proofpointpodmaillog-cl.md) | ✓ | ✓ | ✓ |
-| [`ProofpointPODMessage_CL`](../tables/proofpointpodmessage-cl.md) | ✓ | ✓ | ✓ |
+| [`ProofpointPODMailLog_CL`](../tables/proofpointpodmaillog-cl.md) | ? | ✓ | ? |
+| [`ProofpointPODMessage_CL`](../tables/proofpointpodmessage-cl.md) | ? | ✓ | ? |
 | [`ProofpointPOD_maillog_CL`](../tables/proofpointpod-maillog-cl.md) 🔶 | ? | ✓ | ? |
 | [`ProofpointPOD_message_CL`](../tables/proofpointpod-message-cl.md) 🔶 | ? | ✓ | ? |
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✓ | ✗ |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✓ | ? |
 | [`maillog_CL`](../tables/maillog-cl.md) 🔶 | ? | ✓ | ? |
 | [`message_CL`](../tables/message-cl.md) 🔶 | ? | ✓ | ? |
 

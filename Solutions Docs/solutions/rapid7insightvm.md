@@ -16,7 +16,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 3.1.1 |
+| **Version** | 3.2.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-07-07 |
 | **Solution Folder** | [Rapid7InsightVM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Rapid7InsightVM) |
@@ -38,21 +38,24 @@ This solution takes a dependency on the following technologies, and some of thes
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution provides **2 data connector(s)**:
 
 - [Rapid7 Insight Platform Vulnerability Management Reports](../connectors/insightvmcloudapi.md) 🔶
+- [Rapid7 Insight Platform Vulnerability Management Reports (via Codeless Connector Framework)](../connectors/rapid7insightvmconnector.md)
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 
 ## Tables Used
 
-This solution uses **2 table(s)**:
+This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`NexposeInsightVMCloud_assets_CL`](../tables/nexposeinsightvmcloud-assets-cl.md) 🔶 | [Rapid7 Insight Platform Vulnerability Management Reports](../connectors/insightvmcloudapi.md) | - |
 | [`NexposeInsightVMCloud_vulnerabilities_CL`](../tables/nexposeinsightvmcloud-vulnerabilities-cl.md) 🔶 | [Rapid7 Insight Platform Vulnerability Management Reports](../connectors/insightvmcloudapi.md) | - |
+| [`Rapid7InsightVMCloudAssets`](../tables/rapid7insightvmcloudassets.md) | [Rapid7 Insight Platform Vulnerability Management Reports (via Codeless Connector Framework)](../connectors/rapid7insightvmconnector.md) | - |
+| [`Rapid7InsightVMCloudVulnerabilities`](../tables/rapid7insightvmcloudvulnerabilities.md) | [Rapid7 Insight Platform Vulnerability Management Reports (via Codeless Connector Framework)](../connectors/rapid7insightvmconnector.md) | - |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
@@ -78,13 +81,14 @@ This solution includes **5 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [InsightVMAssets](../parsers/insightvmassets.md) | - | [`NexposeInsightVMCloud_assets_CL`](../tables/nexposeinsightvmcloud-assets-cl.md) *(read)* |
-| [InsightVMVulnerabilities](../parsers/insightvmvulnerabilities.md) | - | [`NexposeInsightVMCloud_vulnerabilities_CL`](../tables/nexposeinsightvmcloud-vulnerabilities-cl.md) *(read)* |
+| [InsightVMAssets](../parsers/insightvmassets.md) | - | [`NexposeInsightVMCloud_assets_CL`](../tables/nexposeinsightvmcloud-assets-cl.md) *(read)*<br>[`Rapid7InsightVMCloudAssets`](../tables/rapid7insightvmcloudassets.md) *(read)* |
+| [InsightVMVulnerabilities](../parsers/insightvmvulnerabilities.md) | - | [`NexposeInsightVMCloud_vulnerabilities_CL`](../tables/nexposeinsightvmcloud-vulnerabilities-cl.md) *(read)*<br>[`Rapid7InsightVMCloudVulnerabilities`](../tables/rapid7insightvmcloudvulnerabilities.md) *(read)* |
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                             |
 |-------------|--------------------------------|--------------------------------------------------------------------------------|
+| 3.2.0       | 05-03-2026                     | Added new Rapid7InsightVM **CCP data connector**.                              |
 | 3.1.1       | 05-02-2026                     | Update Az Func packages related to **InsightVMCloudData Connector**            |
 | 3.1.0       | 03-02-2026                     | Update **Data Connector** to use latest 4.x Azure Functions extension bundles  |
 | 3.0.1       | 03-05-2024                     | Fixed Metadata issue for ParserName and ParentId mismatch  |

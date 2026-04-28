@@ -27,8 +27,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) | ✓ | ✗ | ✓ |
-| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ | ✓ |
+| [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) | ✓ | ✗ | ? |
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ | ? |
 
 ---
 

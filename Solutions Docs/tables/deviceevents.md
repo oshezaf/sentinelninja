@@ -14,7 +14,6 @@ Multiple event types, including events triggered by security controls such as Mi
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceevents) |
 | **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceevents-table) |
 
@@ -277,7 +276,7 @@ This table is ingested by the following connectors:
 | [c2-lookup-from-nonbrowser[Nobelium]](../content/github-only-c2-lookup-from-nonbrowser[nobelium]-f7dd2c5f-7bb3-4a0a-80a1-45c4d79e4c03-b27a688b.md) | `ActionType == "DnsQueryResponse"` |
 | [c2-lookup-response[Nobelium]](../content/github-only-c2-lookup-response[nobelium]-4417c444-6ff7-47db-bde0-b6b9ef1b9080-700dd29f.md) | `ActionType == "DnsQueryResponse"` |
 | [deimos-component-execution](../content/github-only-deimos-component-execution-0e86928c-cc9f-494c-a79e-04f647eb5ef8-b6e4ffdf.md) | `ActionType == "AmsiScriptContent"` |
-| [detect-impacket-atexec](../content/github-only-detect-impacket-atexec-75e3a1b2-bd6d-4e79-8c74-85a3bc0b0617-a33eaf14.md) | `ActionType in "NamedPipeEvent,RegistryKeyCreated"` |
+| [detect-impacket-atexec](../content/github-only-detect-impacket-atexec-75e3a1b2-bd6d-4e79-8c74-85a3bc0b0617-a33eaf14.md) |  |
 | [detect-impacket-psexec-module](../content/github-only-detect-impacket-psexec-module-6e6e6486-1bfc-4de0-bcbe-1ed88dfee2a1-ba6e359d.md) | `ActionType == "FileCreated"` |
 | [detect-impacket-wmiexec](../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-f0a94abb.md) |  |
 | [detect-impacket-wmiexec](../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-32647bb7.md) |  |
@@ -329,9 +328,9 @@ This table is ingested by the following connectors:
 | [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `ActionType contains "ExploitGuardNonMicrosoftSignedBlocked"` |
 | [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `ActionType startswith "Asr"` |
 
-## Selection Criteria Summary (45 criteria, 78 total references)
+## Selection Criteria Summary (44 criteria, 77 total references)
 
-References by type: 0 connectors, 78 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 77 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -362,7 +361,6 @@ References by type: 0 connectors, 78 content items, 0 ASIM parsers, 0 other pars
 | `ActionType in "PnpDeviceAllowed,PnpDeviceBlocked"` | - | 1 | - | - | **1** |
 | `ActionType == "FileCreated"`<br>`ActionType contains "USB"` | - | 1 | - | - | **1** |
 | `ActionType contains "USB"` | - | 1 | - | - | **1** |
-| `ActionType in "NamedPipeEvent,RegistryKeyCreated"` | - | 1 | - | - | **1** |
 | `ActionType == "FileCreated"` | - | 1 | - | - | **1** |
 | `ActionType startswith "ScreenshotTaken"` | - | 1 | - | - | **1** |
 | `ActionType == "WmiBindEventFilterToConsumer"` | - | 1 | - | - | **1** |
@@ -380,7 +378,7 @@ References by type: 0 connectors, 78 content items, 0 ASIM parsers, 0 other pars
 | `ActionType has_any "AsrRansomwareAudited,AsrRansomwareBlocked"` | - | 1 | - | - | **1** |
 | `ActionType in "ExploitGuardNetworkProtectionAudited,ExploitGuardNetworkProtectionBlocked"`<br>`ActionType startswith "SmartScreenUrl"` | - | 1 | - | - | **1** |
 | `ActionType in "AntivirusDetection,PnpDeviceConnected"`<br>`ActionType endswith "Audited"`<br>`ActionType endswith "Blocked"`<br>`ActionType startswith "Asr"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **78** | **0** | **0** | **78** |
+| **Total** | **0** | **77** | **0** | **0** | **77** |
 
 ### ActionType
 
@@ -390,10 +388,10 @@ References by type: 0 connectors, 78 content items, 0 ASIM parsers, 0 other pars
 | `PowerShellCommand` | - | 7 | - | - | **7** |
 | `BrowserLaunchedToOpenUrl` | - | 6 | - | - | **6** |
 | `AntivirusDetection` | - | 6 | - | - | **6** |
-| `NamedPipeEvent` | - | 5 | - | - | **5** |
 | `UsbDriveMounted` | - | 5 | - | - | **5** |
 | `PnpDeviceConnected` | - | 5 | - | - | **5** |
 | `startswith Asr` | - | 5 | - | - | **5** |
+| `NamedPipeEvent` | - | 4 | - | - | **4** |
 | `endswith Audited` | - | 4 | - | - | **4** |
 | `UserAccountAddedToLocalGroup` | - | 3 | - | - | **3** |
 | `contains UserAccountCreated` | - | 3 | - | - | **3** |
@@ -440,7 +438,6 @@ References by type: 0 connectors, 78 content items, 0 ASIM parsers, 0 other pars
 | `AntivirusScanCompleted` | - | 1 | - | - | **1** |
 | `PnpDeviceAllowed` | - | 1 | - | - | **1** |
 | `PnpDeviceBlocked` | - | 1 | - | - | **1** |
-| `RegistryKeyCreated` | - | 1 | - | - | **1** |
 | `startswith ScreenshotTaken` | - | 1 | - | - | **1** |
 | `WmiBindEventFilterToConsumer` | - | 1 | - | - | **1** |
 | `contains ControlledFolderAccess` | - | 1 | - | - | **1** |

@@ -16,7 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.netskope.com/services#support](https://www.netskope.com/services#support) |
 | **Categories** | domains |
-| **Version** | 3.1.2 |
+| **Version** | 3.1.4 |
 | **Author** | Netskope |
 | **First Published** | 2024-03-18 |
 | **Last Updated** | 2024-03-18 |
@@ -36,7 +36,7 @@ Netskope solution for Microsoft Sentinel enables you to ingest Netskope alerts a
 
 This solution provides **3 data connector(s)**:
 
-- [Netskope Alerts and Events](../connectors/netskopealertsevents.md)
+- [Netskope Alerts and Events (via Codeless Connector Framework)](../connectors/netskopealertsevents.md)
 - [Netskope Data Connector](../connectors/netskopedataconnector.md) 🔶
 - [Netskope Web Transactions Data Connector](../connectors/netskopewebtransactionsdataconnector.md) 🔶
 
@@ -49,15 +49,15 @@ This solution uses **32 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`NetskopeAlerts_CL`](../tables/netskopealerts-cl.md) | [Netskope Alerts and Events](../connectors/netskopealertsevents.md) | Workbooks |
-| [`NetskopeEventsApplication_CL`](../tables/netskopeeventsapplication-cl.md) | [Netskope Alerts and Events](../connectors/netskopealertsevents.md) | Workbooks |
-| [`NetskopeEventsAudit_CL`](../tables/netskopeeventsaudit-cl.md) | [Netskope Alerts and Events](../connectors/netskopealertsevents.md) | - |
-| [`NetskopeEventsConnection_CL`](../tables/netskopeeventsconnection-cl.md) | [Netskope Alerts and Events](../connectors/netskopealertsevents.md) | - |
-| [`NetskopeEventsDLP_CL`](../tables/netskopeeventsdlp-cl.md) | [Netskope Alerts and Events](../connectors/netskopealertsevents.md) | - |
-| [`NetskopeEventsEndpoint_CL`](../tables/netskopeeventsendpoint-cl.md) | [Netskope Alerts and Events](../connectors/netskopealertsevents.md) | - |
-| [`NetskopeEventsInfrastructure_CL`](../tables/netskopeeventsinfrastructure-cl.md) | [Netskope Alerts and Events](../connectors/netskopealertsevents.md) | - |
-| [`NetskopeEventsNetwork_CL`](../tables/netskopeeventsnetwork-cl.md) | [Netskope Alerts and Events](../connectors/netskopealertsevents.md) | - |
-| [`NetskopeEventsPage_CL`](../tables/netskopeeventspage-cl.md) | [Netskope Alerts and Events](../connectors/netskopealertsevents.md) | - |
+| [`NetskopeAlerts_CL`](../tables/netskopealerts-cl.md) | [Netskope Alerts and Events (via Codeless Connector Framework)](../connectors/netskopealertsevents.md) | Workbooks |
+| [`NetskopeEventsApplication_CL`](../tables/netskopeeventsapplication-cl.md) | [Netskope Alerts and Events (via Codeless Connector Framework)](../connectors/netskopealertsevents.md) | Workbooks |
+| [`NetskopeEventsAudit_CL`](../tables/netskopeeventsaudit-cl.md) | [Netskope Alerts and Events (via Codeless Connector Framework)](../connectors/netskopealertsevents.md) | - |
+| [`NetskopeEventsConnection_CL`](../tables/netskopeeventsconnection-cl.md) | [Netskope Alerts and Events (via Codeless Connector Framework)](../connectors/netskopealertsevents.md) | - |
+| [`NetskopeEventsDLP_CL`](../tables/netskopeeventsdlp-cl.md) | [Netskope Alerts and Events (via Codeless Connector Framework)](../connectors/netskopealertsevents.md) | - |
+| [`NetskopeEventsEndpoint_CL`](../tables/netskopeeventsendpoint-cl.md) | [Netskope Alerts and Events (via Codeless Connector Framework)](../connectors/netskopealertsevents.md) | - |
+| [`NetskopeEventsInfrastructure_CL`](../tables/netskopeeventsinfrastructure-cl.md) | [Netskope Alerts and Events (via Codeless Connector Framework)](../connectors/netskopealertsevents.md) | - |
+| [`NetskopeEventsNetwork_CL`](../tables/netskopeeventsnetwork-cl.md) | [Netskope Alerts and Events (via Codeless Connector Framework)](../connectors/netskopealertsevents.md) | - |
+| [`NetskopeEventsPage_CL`](../tables/netskopeeventspage-cl.md) | [Netskope Alerts and Events (via Codeless Connector Framework)](../connectors/netskopealertsevents.md) | - |
 | [`NetskopeWebTransactions_CL`](../tables/netskopewebtransactions-cl.md) | - | Workbooks |
 | [`NetskopeWebtxData_CL`](../tables/netskopewebtxdata-cl.md) 🔶 | [Netskope Web Transactions Data Connector](../connectors/netskopewebtransactionsdataconnector.md) | Workbooks |
 | [`NetskopeWebtxErrors_CL`](../tables/netskopewebtxerrors-cl.md) 🔶 | [Netskope Web Transactions Data Connector](../connectors/netskopewebtransactionsdataconnector.md) | Analytics |
@@ -200,6 +200,8 @@ The **Netskope Microsoft Sentinel Solution** integrates Netskope logs (events, a
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.1.4       | 30-03-2026                     | Fix space in name. Rename to Netskope Alerts and Events (via Codeless Connector Framework)|
+| 3.1.3       | 20-03-2026                     | Rename to Netskope Alerts and Events(via Codeless Connector Framework)|
 | 3.1.2       | 31-10-2025                     | Added Dropdown in CCF UI page for data ingestion |
 | 3.1.1       | 15-10-2025                     | Added CCF WebTx Parser and Dashboard      |
 | 3.1.0       | 12-08-2025                     | Added **Parsers** and **Dashboards** for **CCP** and **CE** Data. |

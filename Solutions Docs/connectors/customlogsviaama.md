@@ -29,22 +29,22 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) | ✓ | ✓ | ✓ |
-| [`JBossEvent_CL`](../tables/jbossevent-cl.md) | ✗ | ✓ | ✗ |
-| [`JuniperIDP_CL`](../tables/juniperidp-cl.md) | ✓ | ✓ | ✓ |
-| [`MarkLogicAudit_CL`](../tables/marklogicaudit-cl.md) | ✗ | ✓ | ✗ |
-| [`MongoDBAudit_CL`](../tables/mongodbaudit-cl.md) | ✓ | ✓ | ✓ |
-| [`NGINX_CL`](../tables/nginx-cl.md) | ✓ | ✓ | ✓ |
-| [`OracleWebLogicServer_CL`](../tables/oracleweblogicserver-cl.md) | ✓ | ✓ | ✓ |
-| [`PostgreSQL_CL`](../tables/postgresql-cl.md) | ✓ | ✓ | ✓ |
-| [`SecurityBridgeLogs_CL`](../tables/securitybridgelogs-cl.md) | ✓ | ✓ | ✓ |
-| [`SquidProxy_CL`](../tables/squidproxy-cl.md) 🔶 | ✓ | ✓ | ✓ |
-| [`Tomcat_CL`](../tables/tomcat-cl.md) | ✓ | ✓ | ✓ |
-| [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) | ✓ | ✓ | ✓ |
-| [`VectraStream_CL`](../tables/vectrastream-cl.md) 🔶 | ✗ | ✓ | ✗ |
-| [`ZPA_CL`](../tables/zpa-cl.md) | ✓ | ✓ | ✓ |
-| [`meraki_CL`](../tables/meraki-cl.md) | ✓ | ✓ | ✓ |
-| [`vcenter_CL`](../tables/vcenter-cl.md) | ✓ | ✓ | ✓ |
+| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) | ? | ✓ | ? |
+| [`JBossEvent_CL`](../tables/jbossevent-cl.md) | ? | ✓ | ? |
+| [`JuniperIDP_CL`](../tables/juniperidp-cl.md) | ? | ✓ | ? |
+| [`MarkLogicAudit_CL`](../tables/marklogicaudit-cl.md) | ? | ✓ | ? |
+| [`MongoDBAudit_CL`](../tables/mongodbaudit-cl.md) | ? | ✓ | ? |
+| [`NGINX_CL`](../tables/nginx-cl.md) | ? | ✓ | ? |
+| [`OracleWebLogicServer_CL`](../tables/oracleweblogicserver-cl.md) | ? | ✓ | ? |
+| [`PostgreSQL_CL`](../tables/postgresql-cl.md) | ? | ✓ | ? |
+| [`SecurityBridgeLogs_CL`](../tables/securitybridgelogs-cl.md) | ? | ✓ | ? |
+| [`SquidProxy_CL`](../tables/squidproxy-cl.md) 🔶 | ? | ✓ | ? |
+| [`Tomcat_CL`](../tables/tomcat-cl.md) | ? | ✓ | ? |
+| [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) | ? | ✓ | ? |
+| [`VectraStream_CL`](../tables/vectrastream-cl.md) 🔶 | ? | ✓ | ? |
+| [`ZPA_CL`](../tables/zpa-cl.md) | ? | ✓ | ? |
+| [`meraki_CL`](../tables/meraki-cl.md) | ? | ✓ | ? |
+| [`vcenter_CL`](../tables/vcenter-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

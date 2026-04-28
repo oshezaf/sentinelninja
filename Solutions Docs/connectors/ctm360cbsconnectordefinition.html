@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🔍 CTM360 CyberBlindSpot Serverless &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="ctm360-cyberblindspot">🔍 CTM360 CyberBlindSpot (Serverless)</h1>
+<blockquote>
+<p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
+</blockquote>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>CTM360CBSConnectorDefinition</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">CTM360</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/ctm360.html">CTM360</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/ccf.html">CCF</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CTM360/Data%20Connectors/CCF/CBS/CTM360_CBS_ConnectorDefinition.json">CTM360_CBS_ConnectorDefinition.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Configuration</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CTM360/Data%20Connectors/CCF/CBS/CTM360_CBS_PollingConfig.json">CTM360_CBS_PollingConfig.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Capabilities</strong></td>
+<td style="text-align: left;"><code>APIKey</code></td>
+</tr>
+</tbody>
+</table>
+<p>The CTM360 Cyber Blind Spot (CBS) connector provides integration with CTM360's CBS platform to ingest security data across 6 module types: incidents, malware logs, breached credentials, compromised cards, domain infringement, and subdomain infringement. This connector uses the Codeless Connector Framework (CCF) for serverless data collection.</p>
+<p><strong>Data Types:</strong></p>
+<ul>
+<li>
+<p>CBSLog_AzureV2_CL</p>
+</li>
+<li>
+<p>CBS_MalwareLogs_AzureV2_CL</p>
+</li>
+<li>
+<p>CBS_BreachedCredentials_AzureV2_CL</p>
+</li>
+<li>
+<p>CBS_CompromisedCards_AzureV2_CL</p>
+</li>
+<li>
+<p>CBS_DomainInfringement_AzureV2_CL</p>
+</li>
+<li>
+<p>CBS_SubdomainInfringement_AzureV2_CL</p>
+</li>
+</ul>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/cbslog-azurev2-cl.html"><code>CBSLog_AzureV2_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/cbs-breachedcredentials-azurev2-cl.html"><code>CBS_BreachedCredentials_AzureV2_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/cbs-compromisedcards-azurev2-cl.html"><code>CBS_CompromisedCards_AzureV2_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/cbs-domaininfringement-azurev2-cl.html"><code>CBS_DomainInfringement_AzureV2_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/cbs-malwarelogs-azurev2-cl.html"><code>CBS_MalwareLogs_AzureV2_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/cbs-subdomaininfringement-azurev2-cl.html"><code>CBS_SubdomainInfringement_AzureV2_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): Read and Write permissions are required.
+- <strong>Keys</strong> (Workspace): Read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>CTM360 CBS API Key</strong>: A valid CTM360 Cyber Blind Spot API key is required to connect to the CBS API endpoint.</p>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Connect CTM360 Cyber Blind Spot to Microsoft Sentinel</strong></p>
+<p>This connector uses the Codeless Connector Framework (CCF) to ingest data from CTM360 CBS into Microsoft Sentinel. Data is collected every 5 minutes across 6 different module types.</p>
+<p>ℹ️ This connector creates 6 separate tables for different CBS module types: Incidents, Malware Logs, Breached Credentials, Compromised Cards, Domain Infringement, and Subdomain Infringement.</p>
+<p><strong>2. Step 1: Obtain CTM360 API Keys</strong></p>
+<p>To setup this integration, you will need CBS API Key. You can get these keys using the following links:</p>
+<p>CBS API Key found from this link: https://platform.ctm360.com/start/integrations after logging with you account</p>
+<p><strong>3. Step 2: Configure Connection</strong></p>
+<p>Enter your CTM360 CBS API key and connect to start data ingestion.
+- <strong>CTM360 CBS API Key</strong>: (password field)
+- Click 'Connect' to establish connection</p>
+<p><strong>4. Step 3: Verify Data Ingestion</strong></p>
+<p>After connecting, data should start flowing within 5-10 minutes. Use the sample queries above to verify data ingestion for each module type.</p>
+<p>ℹ️ Note: Initial data ingestion may take up to 30 minutes. The connector polls every 5 minutes with a 5-minute rolling window.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+</div>
+
+</body>
+</html>

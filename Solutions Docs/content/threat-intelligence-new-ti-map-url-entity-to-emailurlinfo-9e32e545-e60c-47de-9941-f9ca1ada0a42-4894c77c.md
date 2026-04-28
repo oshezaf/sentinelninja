@@ -26,9 +26,9 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ✓ |
+| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ? |
 | [`EmailUrlInfo`](../tables/emailurlinfo.md) | ✓ | ✗ | ? |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✓ | ✗ |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✓ | ? |
 
 ---
 

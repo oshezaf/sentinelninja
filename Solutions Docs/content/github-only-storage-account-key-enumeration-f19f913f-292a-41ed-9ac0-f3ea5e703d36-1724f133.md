@@ -24,9 +24,9 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ | ✓ |
-| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ | ✗ |
-| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ | ? |
+| [`AzureActivity`](../tables/azureactivity.md) | ? | ✗ | ? |
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ | ? |
 
 ## Associated Connectors
 

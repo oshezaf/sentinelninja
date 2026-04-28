@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RecordedFutureIdentityPlaybookAlertResultsCL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="recordedfutureidentity_playbookalertresults_cl">RecordedFutureIdentity_PlaybookAlertResults_CL</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#content-items-using-this-table">Content Items</a></li>
+</ul>
+<h2 id="schema">Schema (48 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/RecordedFutureIdentity_PlaybookAlertResults_CL.json">KQL validation test schema</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">alert_description</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_evidence_summary_assessments</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_evidence_summary_authorization_url</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_evidence_summary_compromised_host_antivirus</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_evidence_summary_compromised_host_computer_name</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_evidence_summary_compromised_host_exfiltration_date</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_evidence_summary_compromised_host_malware_file</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_evidence_summary_compromised_host_os</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_evidence_summary_compromised_host_os_username</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_evidence_summary_compromised_host_timezone</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_evidence_summary_compromised_host_uac</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_evidence_summary_dump_description</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_evidence_summary_dump_name</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_evidence_summary_exposed_secret_details_clear_text_hint</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_evidence_summary_exposed_secret_details_properties</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_evidence_summary_exposed_secret_effectively_clear</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_evidence_summary_exposed_secret_hashes</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_evidence_summary_exposed_secret_type</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_evidence_summary_infrastructure_ip</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_evidence_summary_malware_family_id</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_evidence_summary_malware_family_name</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_evidence_summary_subject</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_evidence_summary_technologies</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_status_actions_taken</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_status_alert_rule_id</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_status_alert_rule_label</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_status_alert_rule_name</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_status_assignee_id</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_status_assignee_name</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_status_case_rule_id</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_status_case_rule_label</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_status_created</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_status_entity_id</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_status_entity_name</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_status_organisation_id</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_status_organisation_name</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_status_owner_id</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_status_owner_name</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_status_owner_organisation_details_enterprise_id</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_status_owner_organisation_details_enterprise_name</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_status_owner_organisation_details_organisations</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_status_priority</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_status_reopen</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_status_status</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_status_targets</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">panel_status_updated</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">playbook_alert_id</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+</tbody>
+</table>
+<h2 id="solutions">Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/recorded-future-identity.html">Recorded Future Identity</a></li>
+</ul>
+<hr />
+<h2 id="content-items-using-this-table">Content Items Using This Table (1)</h2>
+<h3 id="analytic-rules">Analytic Rules (1)</h3>
+<p><strong>In solution <a href="../solutions/recorded-future-identity.html">Recorded Future Identity</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Analytic Rule</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/recorded-future-identity-recorded-future-identity-credential-exposure-detected-b1c2d3e4-5678-90ab-cdef-444444444444-dd38ff85.html">Recorded Future Identity - Credential Exposure Detected</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

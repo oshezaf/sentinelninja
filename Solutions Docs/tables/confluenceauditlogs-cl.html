@@ -30,16 +30,8 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes</td>
-</tr>
-<tr>
 <td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
 <td style="text-align: left;">✓ Yes</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -56,128 +48,159 @@
 <tr>
 <th style="text-align: left;">Column Name</th>
 <th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;">AffectedObjectName</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the affected object.</td>
 </tr>
 <tr>
 <td style="text-align: left;">AffectedObjectObjectType</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the affected object.</td>
 </tr>
 <tr>
 <td style="text-align: left;">AssociatedObjects</td>
 <td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">The associated objects of the audit log entry.</td>
 </tr>
 <tr>
 <td style="text-align: left;">AuthorAccountId</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The account ID of the author.</td>
 </tr>
 <tr>
 <td style="text-align: left;">AuthorAccountType</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The account type of the author.</td>
 </tr>
 <tr>
 <td style="text-align: left;">AuthorDisplayName</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The display name of the author.</td>
 </tr>
 <tr>
 <td style="text-align: left;">AuthorExternalCollaborator</td>
 <td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the author is an external collaborator.</td>
 </tr>
 <tr>
 <td style="text-align: left;">AuthorIsExternalCollaborator</td>
 <td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the author is an external collaborator.</td>
 </tr>
 <tr>
 <td style="text-align: left;">AuthorPublicName</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The public name of the author.</td>
 </tr>
 <tr>
 <td style="text-align: left;">AuthorType</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the author.</td>
 </tr>
 <tr>
 <td style="text-align: left;">AuthorUserKey</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The user key of the author.</td>
 </tr>
 <tr>
 <td style="text-align: left;">AuthorUsername</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The username of the author.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Category</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The category of the audit log entry.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ChangedValues</td>
 <td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">The changed values of the audit log entry.</td>
 </tr>
 <tr>
 <td style="text-align: left;">CreationDate</td>
 <td style="text-align: left;">long</td>
+<td style="text-align: left;">The creation date of the audit log entry.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Description</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The description of the audit log entry.</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstUserSid</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The destination user SID.</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventCategoryType</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The category type of the event.</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventCreationTime</td>
 <td style="text-align: left;">long</td>
+<td style="text-align: left;">The creation time of the event.</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventMessage</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The message of the event.</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventProduct</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The product of the event.</td>
 </tr>
 <tr>
 <td style="text-align: left;">EventVendor</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The vendor of the event.</td>
 </tr>
 <tr>
 <td style="text-align: left;">RemoteAddress</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The remote address of the author.</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcIpAddr</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The source IP address.</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcUserName</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The source username.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Summary</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The summary of the audit log entry.</td>
 </tr>
 <tr>
 <td style="text-align: left;">SuperAdmin</td>
 <td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the author is a super administrator.</td>
 </tr>
 <tr>
 <td style="text-align: left;">SysAdmin</td>
 <td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the author is a system administrator.</td>
 </tr>
 <tr>
 <td style="text-align: left;">TimeGenerated</td>
 <td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (in UTC) when the log entry was generated.</td>
 </tr>
 <tr>
 <td style="text-align: left;">UserIdentity</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">The identity of the user.</td>
 </tr>
 </tbody>
 </table>
@@ -197,7 +220,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../connectors/confluenceauditccpdefinition.html"> Atlassian Confluence Audit (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;"><a href="../connectors/atlassianconfluenceconnector.html">Atlassian Confluence Audit (via Codeless Connector Framework)</a></td>
 <td style="text-align: left;"></td>
 </tr>
 </tbody>

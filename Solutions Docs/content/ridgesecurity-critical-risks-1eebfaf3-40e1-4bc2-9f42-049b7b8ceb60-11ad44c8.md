@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "4001"`<br>`DeviceVendor == "RidgeSecurity"` | ✓ | ✓ | ✓ |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "4001"`<br>`DeviceVendor == "RidgeSecurity"` | ✓ | ✓ | ? |
 
 ---
 

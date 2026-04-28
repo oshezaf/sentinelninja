@@ -34,7 +34,7 @@ Reference for RemoteNetworkHealthLogs table in Azure Monitor Logs.
 | SentBytes | long | The number of bytes sent from the source to the destination for the connection or session. |
 | SourceIp | string | The public IP address. |
 | SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
-| Status | string | Remote network status. Possible values are: tunnelDisconnected, tunnelConnected, bgpDisconnected, bgpConnected, remoteNetworkAlive, unknownFutureValue. |
+| Status | string | Remote network status. Possible values are: tunnelDisconnected, tunnelConnected, bgpDisconnected, bgpConnected, remoteNetworkAlive, unknownFutureValue, packetDropped. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time (UTC) that the event was generated. |
 | Type | string | The name of the table |

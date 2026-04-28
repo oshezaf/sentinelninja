@@ -1,6 +1,6 @@
 # Analytic Rules - L
 
-**32 analytic rules** starting with 'L'.
+**28 analytic rules** starting with 'L'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -8,7 +8,7 @@
 
 ---
 
-**Jump to letter:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | [B](analytic-rules-b.md) | [C](analytic-rules-c.md) | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | **L** | [M](analytic-rules-m.md) | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [Z](analytic-rules-z.md)
+**Jump to letter:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | [B](analytic-rules-b.md) | [C](analytic-rules-c.md) | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | **L** | [M](analytic-rules-m.md) | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [X](analytic-rules-x.md) | [Z](analytic-rules-z.md)
 
 > **Source:** 📦 Solution | 📄 Standalone | 🔗 GitHub Only
 
@@ -17,10 +17,6 @@
 | [Lateral Movement Risk - Role Chain Length](authomize-lateral-movement-risk-role-chain-length-25bef734-4399-4c55-9579-4ebabd9cccf6-b59e2667.md) | Informational | 📦 [Authomize](../solutions/authomize.md) |
 | [Lateral Movement via DCOM](endpoint-threat-protection-essentials-lateral-movement-via-dcom-50cbf34a-4cdd-45d7-b3f5-8b53a1d0d14f-eb377b6e.md) | Medium | 📦 [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md) |
 | [LaZagne Credential Theft](microsoft-defender-xdr-lazagne-credential-theft-7d0d3050-8dac-4b83-bfae-902f7dc0c21c-2a344765.md) | Medium | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
-| [Leaked Credential](ctm360-leaked-credential-a0a46e91-3f94-4ed4-ab70-ecd36ae0ead0-e3829f54.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Leaked Credential (Informational)](ctm360-leaked-credential-informational-296e0e78-d744-407f-b543-4adf3eed1030-a3fc924a.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Leaked Credential (Low)](ctm360-leaked-credential-low-425007a5-b0e8-4f1a-9bb9-20aac8e97cd7-d5781d57.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Leaked Credential (Medium)](ctm360-leaked-credential-medium-51546727-6467-439e-8799-4cf0232394eb-0ad2b87c.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
 | [License Expired](veeam-license-expired-94724029-6ec3-4bf7-a0e9-c4e4cba0479f-6aee2823.md) | High | 📦 [Veeam](../solutions/veeam.md) |
 | [License Expiring](veeam-license-expiring-79adb08a-8218-492d-acf0-f8aa596f3444-e298567b.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |
 | [License Grace Period Started](veeam-license-grace-period-started-e4828d99-bb06-40b3-8f9d-0f68fb61e9ee-8b23941c.md) | High | 📦 [Veeam](../solutions/veeam.md) |
@@ -46,8 +42,6 @@
 | [Lumen TI IPAddress in SecurityEvents](lumen-defender-threat-feed-lumen-ti-ipaddress-in-securityevents-140a2cb5-4b4a-485c-aab3-2415c24d37e6-27374577.md) | Medium | 📦 [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md) |
 | [Lumen TI IPAddress in SigninLogs](lumen-defender-threat-feed-lumen-ti-ipaddress-in-signinlogs-1425aea5-a9e5-4288-886e-934b90664a91-470061c8.md) | Medium | 📦 [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md) |
 | [Lumen TI IPAddress in WindowsEvents](lumen-defender-threat-feed-lumen-ti-ipaddress-in-windowsevents-4776281c-6c49-46ac-8444-4dd8ba2f4565-915cc28f.md) | Medium | 📦 [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md) |
-
-> ⚠️ Items marked with ⚠️ are not listed in their Solution JSON file. They were discovered by scanning solution folders.
 
 ---
 

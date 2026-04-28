@@ -8,9 +8,45 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
+
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+
+## Schema (11 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/LightningAttackPaths_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| Blowout | bool |
+| Cost | int |
+| PathId | string |
+| RiskScore | int |
+| SourceId | string |
+| SourceLabel | string |
+| SourceType | string |
+| TargetId | string |
+| TargetLabel | string |
+| TargetType | string |
+| TimeGenerated | datetime |
+
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [SemperisLightning](../solutions/semperislightning.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Semperis Lightning Logs](../connectors/semperislightninglogsazurefunctions.md) |  |
 
 ---
 

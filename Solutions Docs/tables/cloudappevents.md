@@ -14,7 +14,6 @@ Events involving accounts and objects in Office 365 and other cloud apps and ser
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudappevents) |
 | **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-cloudappevents-table) |
 
@@ -146,7 +145,7 @@ This table is ingested by the following connectors:
 | [Admin Submissions by Submission Type (FP)](../content/microsoft-defender-xdr-admin-submissions-by-submission-type-fp-de074419-2ec5-4c7f-a7f6-0a49178b314c-c5fac397.md) | `ActionType == "AdminSubmissionSubmitted"`<br>`ActionType contains "Submission"` |
 | [BEC - File sharing tactics - Dropbox](../content/microsoft-defender-xdr-bec-file-sharing-tactics-dropbox-85dea577-1c76-44ff-8cad-b47182874ddb-d6e15c9c.md) | `ActionType in "Added users and/or groups to shared file/folder,Invited user to Dropbox`<br>`added them to shared file/folder"` |
 | [BEC - File sharing tactics - OneDrive or SharePoint](../content/microsoft-defender-xdr-bec-file-sharing-tactics-onedrive-or-sharepoint-da745698-da8a-40c5-b527-2e9328c2cefe-dcd744e3.md) | `ActionType in "AddedToSecureLink,SecureLinkCreated"` |
-| [Calculate overall MDO efficacy](../content/microsoft-defender-xdr-calculate-overall-mdo-efficacy-ff56a21d-fc95-4c11-8f9d-cc59c48cd4e6-2e8ef8fb.md) |  |
+| [Calculate overall MDO efficacy](../content/microsoft-defender-xdr-calculate-overall-mdo-efficacy-ff56a21d-fc95-4c11-8f9d-cc59c48cd4e6-2e8ef8fb.md) | `ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"` |
 | [File Malware Detection Trend](../content/microsoft-defender-xdr-file-malware-detection-trend-817043be-4b30-4e66-a742-8f601a78b08f-46ed5e59.md) | `ActionType == "FileMalwareDetected"` |
 | [File Malware by Top Malware Families (Anti Virus)](../content/microsoft-defender-xdr-file-malware-by-top-malware-families-anti-virus-a924de5a-89ce-43c7-8adc-b130e5f1924c-678bcc36.md) | `ActionType == "FileMalwareDetected"` |
 | [File Malware by Top Malware Families (Safe Attachments)](../content/microsoft-defender-xdr-file-malware-by-top-malware-families-safe-attachments-2de2de5d-87a3-4e13-9b97-5f42e44d0954-11fa443b.md) | `ActionType == "FileMalwareDetected"` |
@@ -164,7 +163,7 @@ This table is ingested by the following connectors:
 | [Top accounts performing user submissions](../content/microsoft-defender-xdr-top-accounts-performing-user-submissions-47506508-dee4-4d4d-93a8-1c78d63cd2eb-ed374abf.md) | `ActionType == "UserSubmission"` |
 | [Total Submissions by Submission Type](../content/microsoft-defender-xdr-total-submissions-by-submission-type-53c58a33-668d-46e1-9714-5892c87650d9-17869076.md) | `ActionType in "AdminSubmission,UserSubmission"` |
 | [Total Submissions by Submission Type](../content/microsoft-defender-xdr-total-submissions-by-submission-type-8cde246b-7ed1-429c-933a-f7d0363dbbc0-38a58290.md) | `ActionType in "AdminSubmission,UserSubmission"` |
-| [Total number of detections by MDO](../content/microsoft-defender-xdr-total-number-of-detections-by-mdo-0717b136-a1ef-4af0-a911-e189d0064099-8ced6caf.md) |  |
+| [Total number of detections by MDO](../content/microsoft-defender-xdr-total-number-of-detections-by-mdo-0717b136-a1ef-4af0-a911-e189d0064099-8ced6caf.md) | `ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"` |
 | [Unusual Volume of file deletion by users](../content/microsoft-defender-xdr-unusual-volume-of-file-deletion-by-users-2bdd260c-c687-4cb2-9992-87e5ce677678-3b144d45.md) |  |
 | [User Email Submission Trend (FN)](../content/microsoft-defender-xdr-user-email-submission-trend-fn-9c4359a1-0bf9-45b3-9a1a-f333c437a061-6ae2a9dd.md) | `ActionType in "AttackSimUserSubmission,UserSubmission"`<br>`ActionType contains "UserSubmission"` |
 | [User Email Submissions (FN) - Top Detection Overrides by Admins](../content/microsoft-defender-xdr-user-email-submissions-fn-top-detection-overrides-by-admins-58acf93f-27de-4af4-8a5f-d87ee59326f9-fef2e72b.md) | `ActionType == "UserSubmission"` |
@@ -182,8 +181,6 @@ This table is ingested by the following connectors:
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [ADFSDomainTrustMods[Nobelium]](../content/github-only-adfsdomaintrustmods[nobelium]-8b55db72-9ece-4e93-b551-cd7eb7355104-b7fc6a3c.md) | `ActionType in "Set domain authentication.,Set federation settings on domain."` |
-| [AI Agents - Dormant Author Authentication Connection](../content/github-only-ai-agents-dormant-author-authentication-connection-2a5b8c1d-4e7f-0a1b-2c3d-4e5f6a7b8c9d-b10f02e7.md) | `ActionType == "CopilotInteraction"` |
-| [AI Agents - Published Dormant (30d)](../content/github-only-ai-agents-published-dormant-30d-5e8f1a2b-3c4d-5e6f-7a8b-9c0d1e2f3a4b-96af1d20.md) | `ActionType == "CopilotInteraction"` |
 | [AIR investigation actions insight](../content/github-only-air-investigation-actions-insight-28a1ce89-ee88-47b3-872b-fb5c3c8b350c-95763a95.md) | `ActionType == "AirInvestigationData"` |
 | [ATP policy status check](../content/microsoft-defender-xdr-atp-policy-status-check-518e6938-10ef-4165-af19-82f1287141bc-99dce879.md) | `ActionType == "Set-AtpPolicyForO365"` |
 | [ATP policy status check](../content/github-only-atp-policy-status-check-518e6938-10ef-4165-af19-82f1287141bc-7b521f21.md) | `ActionType == "Set-AtpPolicyForO365"` |
@@ -205,9 +202,11 @@ This table is ingested by the following connectors:
 | [Audit Email Preview-Download action](../content/github-only-audit-email-preview-download-action-ba1a91ad-1f99-4386-b191-06a76ef213f8-137ebb20.md) |  |
 | [BEC - File sharing tactics - Dropbox](../content/github-only-bec-file-sharing-tactics-dropbox-6e056084-8951-460d-93f9-525880062de9-871269e7.md) | `ActionType in "Added users and/or groups to shared file/folder,Invited user to Dropbox`<br>`added them to shared file/folder"` |
 | [BEC - File sharing tactics - OneDrive or SharePoint](../content/github-only-bec-file-sharing-tactics-onedrive-or-sharepoint-cf8d2c27-8310-4b13-b135-1ba59ae0a3a2-fbbd5245.md) | `ActionType in "AddedToSecureLink,SecureLinkCreated"` |
-| [Calculate overall MDO efficacy](../content/github-only-calculate-overall-mdo-efficacy-f2206cb7-62ca-4596-9d3a-544b61963799-36a197b0.md) |  |
+| [Calculate overall MDO efficacy](../content/github-only-calculate-overall-mdo-efficacy-f2206cb7-62ca-4596-9d3a-544b61963799-36a197b0.md) | `ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"` |
 | [Changes to Blocked Teams Domains](../content/github-only-changes-to-blocked-teams-domains-3fb50170-4048-473e-acc0-af9ae186f4a3-38df3c33.md) | `ActionType == "TeamsAdminAction"` |
 | [Changes to Blocked Teams Domains (NRT)](../content/github-only-changes-to-blocked-teams-domains-nrt-f3ceca1b-8190-4511-beac-06b3368b8360-f9fcf37d.md) | `ActionType == "TeamsAdminAction"` |
+| [Copilot Studio AI Agents - Dormant Author Authentication Connection](../content/github-only-copilot-studio-ai-agents-dormant-author-authentication-connection-2a5b8c1d-4e7f-0a1b-2c3d-4e5f6a7b8c9d-3500cbed.md) | `ActionType == "CopilotInteraction"` |
+| [Copilot Studio AI Agents - Published Dormant (30d)](../content/github-only-copilot-studio-ai-agents-published-dormant-30d-5e8f1a2b-3c4d-5e6f-7a8b-9c0d1e2f3a4b-bdb68b50.md) | `ActionType == "CopilotInteraction"` |
 | [CredentialsAddAfterAdminConsentedToApp[Nobelium]](../content/github-only-credentialsaddafteradminconsentedtoapp[nobelium]-0d49b34e-ac5a-441f-a79f-672ad045870e-006b3161.md) | `ActionType in "Add service principal credentials.,Consent to application.,Update application - Certificates`<br>`secrets management"` |
 | [Email containing malware accessed on a unmanaged device](../content/microsoft-defender-xdr-email-containing-malware-accessed-on-a-unmanaged-device-439f817c-845c-4dda-a8d9-5c1f6831cee9-3e8d09b8.md) |  |
 | [Email containing malware accessed on a unmanaged device](../content/github-only-email-containing-malware-accessed-on-a-unmanaged-device-439f817c-845c-4dda-a8d9-5c1f6831cee9-2e5f8871.md) |  |
@@ -216,8 +215,8 @@ This table is ingested by the following connectors:
 | [File Malware by Top Malware Families (Safe Attachments)](../content/github-only-file-malware-by-top-malware-families-safe-attachments-afd90d9e-f8f5-41c7-823a-616907392503-682bc828.md) | `ActionType == "FileMalwareDetected"` |
 | [Group quarantine release](../content/microsoft-defender-xdr-group-quarantine-release-a12cac64-ea6d-46d4-91a6-262b165fb9ad-e8d4ae12.md) | `ActionType == "QuarantineReleaseMessage"` |
 | [Group quarantine release](../content/github-only-group-quarantine-release-a12cac64-ea6d-46d4-91a6-262b165fb9ad-9e1fce5c.md) | `ActionType == "QuarantineReleaseMessage"` |
-| [High Confidence Phish Released](../content/microsoft-defender-xdr-high-confidence-phish-released-9e8faa62-7222-48a5-a78f-ef2d22f866dc-1957e796.md) |  |
-| [High Confidence Phish Released](../content/github-only-high-confidence-phish-released-9e8faa62-7222-48a5-a78f-ef2d22f866dc-1ada080f.md) |  |
+| [High Confidence Phish Released](../content/microsoft-defender-xdr-high-confidence-phish-released-9e8faa62-7222-48a5-a78f-ef2d22f866dc-1957e796.md) | `ActionType == "QuarantineReleaseMessage"` |
+| [High Confidence Phish Released](../content/github-only-high-confidence-phish-released-9e8faa62-7222-48a5-a78f-ef2d22f866dc-1ada080f.md) | `ActionType == "QuarantineReleaseMessage"` |
 | [Hunt for Admin email access](../content/microsoft-defender-xdr-hunt-for-admin-email-access-e55e178e-48ba-4313-918a-2d3e16a95441-f6af219e.md) | `ActionType == "AdminMailAccess"` |
 | [Hunt for Admin email access](../content/github-only-hunt-for-admin-email-access-e55e178e-48ba-4313-918a-2d3e16a95441-d5705ebe.md) | `ActionType == "AdminMailAccess"` |
 | [Hunt for TABL changes](../content/microsoft-defender-xdr-hunt-for-tabl-changes-bc2d8214-afb6-4876-b210-25b69325b9b2-61da6233.md) | `ActionType contains "TenantAllowBlockListItems"` |
@@ -247,8 +246,8 @@ This table is ingested by the following connectors:
 | [OAuth Apps reading mail both via GraphAPI and directly [Nobelium]](../content/github-only-oauth-apps-reading-mail-both-via-graphapi-and-directly-[nobelium]-8ea80cde-a211-45e3-a7c3-62fae160026c-a816b2f6.md) | `ActionType == "MailItemsAccessed"` |
 | [OAuth Apps reading mail via GraphAPI anomaly [Nobelium]](../content/github-only-oauth-apps-reading-mail-via-graphapi-anomaly-[nobelium]-010d76aa-f2e9-4b88-8134-1ae59655aafe-f5708c74.md) | `ActionType == "MailItemsAccessed"` |
 | [Policy configuration changes for CloudApp Events](../content/github-only-policy-configuration-changes-for-cloudapp-events-fcd4d774-a0c2-4d12-9e9f-f51dfc310873-988943c1.md) | `ActionType in "Add owner to policy.,Add policy to service principal.,Add policy.,Delete policy.,Remove-CrossTenantAccessPolicy,Remove-LabelPolicy,Update authorization policy.,Update policy.,Write PolicyAssignments,Write PolicyExemptions"` |
-| [Quarantine Release Email Details](../content/microsoft-defender-xdr-quarantine-release-email-details-6f96f6d7-d972-421e-a59f-6b9a8de81324-190bb1b5.md) |  |
-| [Quarantine Release Email Details](../content/github-only-quarantine-release-email-details-6f96f6d7-d972-421e-a59f-6b9a8de81324-4e2cbc7d.md) |  |
+| [Quarantine Release Email Details](../content/microsoft-defender-xdr-quarantine-release-email-details-6f96f6d7-d972-421e-a59f-6b9a8de81324-190bb1b5.md) | `ActionType == "QuarantineReleaseMessage"` |
+| [Quarantine Release Email Details](../content/github-only-quarantine-release-email-details-6f96f6d7-d972-421e-a59f-6b9a8de81324-4e2cbc7d.md) | `ActionType == "QuarantineReleaseMessage"` |
 | [Quarantine release trend](../content/microsoft-defender-xdr-quarantine-release-trend-9f135aef-ad25-4df2-bdab-8399978a36a2-1547d717.md) | `ActionType == "QuarantineReleaseMessage"` |
 | [Quarantine release trend](../content/github-only-quarantine-release-trend-9f135aef-ad25-4df2-bdab-8399978a36a2-1a59411f.md) | `ActionType == "QuarantineReleaseMessage"` |
 | [Risky Sign-in with Device Registration](../content/github-only-risky-sign-in-with-device-registration-ce2b03f8-92a4-4ec7-b55b-e9fa562fafa4-dede1503.md) | `ActionType == "Add registered owner to device."` |
@@ -285,7 +284,7 @@ This table is ingested by the following connectors:
 | [Top accounts performing user submissions](../content/github-only-top-accounts-performing-user-submissions-dda13716-d906-45c5-877d-4df46ceb39e6-7a8cfc3e.md) | `ActionType == "UserSubmission"` |
 | [Total Submissions by Submission State](../content/github-only-total-submissions-by-submission-state-47e8ea7f-a7eb-4fe3-a96b-efe01155d9d3-5774f28b.md) | `ActionType in "AdminSubmission,UserSubmission"` |
 | [Total Submissions by Submission Type](../content/github-only-total-submissions-by-submission-type-9fd55150-611d-400c-a27f-b18f33c18a41-31b1705c.md) | `ActionType in "AdminSubmission,UserSubmission"` |
-| [Total number of detections by MDO](../content/github-only-total-number-of-detections-by-mdo-e1903106-9b25-472e-b4b7-4bcc05328a48-65f69a82.md) |  |
+| [Total number of detections by MDO](../content/github-only-total-number-of-detections-by-mdo-e1903106-9b25-472e-b4b7-4bcc05328a48-65f69a82.md) | `ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"` |
 | [Unusual volume of file deletion by user.](../content/github-only-unusual-volume-of-file-deletion-by-user.-611ebbc2-c789-42ad-93e3-6dc02bfa5e3d-b849c152.md) |  |
 | [UpdateStsRefreshToken[Solorigate]](../content/github-only-updatestsrefreshtoken[solorigate]-634dfbd6-0a42-40da-854e-2161cf137f14-89e3d513.md) | `ActionType == "Update StsRefreshTokenValidFrom Timestamp."` |
 | [User Email Submission Trend (FN)](../content/github-only-user-email-submission-trend-fn-395047c1-254e-43fb-ad6e-ae74c8e0a873-b9601c69.md) | `ActionType in "AttackSimUserSubmission,UserSubmission"`<br>`ActionType contains "UserSubmission"` |
@@ -309,7 +308,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,FileMalwareDetected,SubmissionNotification,UserSubmission"`<br>`ActionType contains "AdminSubmission"`<br>`ActionType contains "AdminSubmissionTriage"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "UserSubmissionTriage"`
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,FileMalwareDetected,Malware ZAP,Phish ZAP,Redelivery,Spam ZAP,SubmissionNotification,UserSubmission"`<br>`ActionType contains "AdminSubmission"`<br>`ActionType contains "AdminSubmissionTriage"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "UserSubmissionTriage"`
 
 | Workbook |
 |:-------------|
@@ -324,9 +323,9 @@ This table is ingested by the following connectors:
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `ActionType == "Add service principal."` |
 
-## Selection Criteria Summary (37 criteria, 145 total references)
+## Selection Criteria Summary (38 criteria, 153 total references)
 
-References by type: 0 connectors, 145 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 153 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -334,18 +333,19 @@ References by type: 0 connectors, 145 content items, 0 ASIM parsers, 0 other par
 | `ActionType == "UserSubmission"` | - | 24 | - | - | **24** |
 | `ActionType == "FileMalwareDetected"` | - | 10 | - | - | **10** |
 | `ActionType == "MailItemsAccessed"` | - | 9 | - | - | **9** |
+| `ActionType == "QuarantineReleaseMessage"` | - | 8 | - | - | **8** |
 | `ActionType == "AdminSubmissionSubmitted"`<br>`ActionType contains "Submission"` | - | 8 | - | - | **8** |
 | `ActionType in "AdminSubmission,UserSubmission"` | - | 5 | - | - | **5** |
-| `ActionType == "QuarantineReleaseMessage"` | - | 4 | - | - | **4** |
+| `ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"` | - | 4 | - | - | **4** |
 | `ActionType contains "AdminSubmission"` | - | 4 | - | - | **4** |
 | `ActionType in "SubmissionNotification,UserSubmission"` | - | 4 | - | - | **4** |
 | `ActionType in "AttackSimUserSubmission,UserSubmission"`<br>`ActionType contains "UserSubmission"` | - | 4 | - | - | **4** |
 | `ActionType == "Set-AtpPolicyForO365"` | - | 2 | - | - | **2** |
+| `ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"` | - | 2 | - | - | **2** |
 | `ActionType == "AdminMailAccess"` | - | 2 | - | - | **2** |
 | `ActionType contains "TenantAllowBlockListItems"` | - | 2 | - | - | **2** |
 | `ActionType in "AdminSubmission,UserSubmission"`<br>`ActionType contains "ZAP"` | - | 2 | - | - | **2** |
 | `ActionType == "New-TenantAllowBlockListItems"` | - | 2 | - | - | **2** |
-| `ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"` | - | 2 | - | - | **2** |
 | `ActionType in "Added users and/or groups to shared file/folder,Invited user to Dropbox`<br>`added them to shared file/folder"` | - | 2 | - | - | **2** |
 | `ActionType in "AddedToSecureLink,SecureLinkCreated"` | - | 2 | - | - | **2** |
 | `ActionType contains "Set-InboxRule"` | - | 2 | - | - | **2** |
@@ -353,9 +353,9 @@ References by type: 0 connectors, 145 content items, 0 ASIM parsers, 0 other par
 | `ActionType == "AirInvestigationData"` | - | 2 | - | - | **2** |
 | `ActionType contains "AdminSubmissionTriage"` | - | 2 | - | - | **2** |
 | `ActionType contains "UserSubmissionTriage"` | - | 2 | - | - | **2** |
-| `ActionType == "CopilotInteraction"` | - | 2 | - | - | **2** |
 | `ActionType in "Add service principal credentials.,Update application - Certificates`<br>`secrets management"` | - | 2 | - | - | **2** |
 | `ActionType == "TeamsAdminAction"` | - | 2 | - | - | **2** |
+| `ActionType == "CopilotInteraction"` | - | 2 | - | - | **2** |
 | `ActionType in "Add owner to policy.,Add policy to service principal.,Add policy.,Delete policy.,Remove-CrossTenantAccessPolicy,Remove-LabelPolicy,Update authorization policy.,Update policy.,Write PolicyAssignments,Write PolicyExemptions"` | - | 1 | - | - | **1** |
 | `ActionType in "Set domain authentication.,Set federation settings on domain."` | - | 1 | - | - | **1** |
 | `ActionType in "Add delegated permission grant.,Consent to application."` | - | 1 | - | - | **1** |
@@ -366,25 +366,28 @@ References by type: 0 connectors, 145 content items, 0 ASIM parsers, 0 other par
 | `ActionType == "Add registered owner to device."` | - | 1 | - | - | **1** |
 | `ActionType == "Update user."` | - | 1 | - | - | **1** |
 | `ActionType == "Add member to role."` | - | 1 | - | - | **1** |
-| `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,FileMalwareDetected,SubmissionNotification,UserSubmission"`<br>`ActionType contains "AdminSubmission"`<br>`ActionType contains "AdminSubmissionTriage"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "UserSubmissionTriage"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **145** | **0** | **0** | **145** |
+| `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,FileMalwareDetected,Malware ZAP,Phish ZAP,Redelivery,Spam ZAP,SubmissionNotification,UserSubmission"`<br>`ActionType contains "AdminSubmission"`<br>`ActionType contains "AdminSubmissionTriage"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "UserSubmissionTriage"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **153** | **0** | **0** | **153** |
 
 ### ActionType
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `UserSubmission` | - | 42 | - | - | **42** |
-| `AdminSubmissionSubmitted` | - | 39 | - | - | **39** |
+| `UserSubmission` | - | 44 | - | - | **44** |
+| `AdminSubmissionSubmitted` | - | 41 | - | - | **41** |
+| `AdminSubmission` | - | 11 | - | - | **11** |
 | `FileMalwareDetected` | - | 11 | - | - | **11** |
-| `AdminSubmission` | - | 9 | - | - | **9** |
 | `MailItemsAccessed` | - | 9 | - | - | **9** |
 | `contains Submission` | - | 9 | - | - | **9** |
+| `QuarantineReleaseMessage` | - | 8 | - | - | **8** |
+| `Malware ZAP` | - | 7 | - | - | **7** |
+| `Phish ZAP` | - | 7 | - | - | **7** |
 | `contains AdminSubmission` | - | 5 | - | - | **5** |
 | `SubmissionNotification` | - | 5 | - | - | **5** |
 | `AttackSimUserSubmission` | - | 5 | - | - | **5** |
 | `contains UserSubmission` | - | 5 | - | - | **5** |
-| `QuarantineReleaseMessage` | - | 4 | - | - | **4** |
 | `Add service principal credentials.` | - | 4 | - | - | **4** |
+| `Redelivery` | - | 3 | - | - | **3** |
 | `contains AdminSubmissionTriage` | - | 3 | - | - | **3** |
 | `contains UserSubmissionTriage` | - | 3 | - | - | **3** |
 | `Update application - Certificates` | - | 3 | - | - | **3** |
@@ -393,8 +396,6 @@ References by type: 0 connectors, 145 content items, 0 ASIM parsers, 0 other par
 | `contains TenantAllowBlockListItems` | - | 2 | - | - | **2** |
 | `contains ZAP` | - | 2 | - | - | **2** |
 | `New-TenantAllowBlockListItems` | - | 2 | - | - | **2** |
-| `Malware ZAP` | - | 2 | - | - | **2** |
-| `Phish ZAP` | - | 2 | - | - | **2** |
 | `Added users and/or groups to shared file/folder` | - | 2 | - | - | **2** |
 | `Invited user to Dropbox` | - | 2 | - | - | **2** |
 | `AddedToSecureLink` | - | 2 | - | - | **2** |
@@ -403,9 +404,9 @@ References by type: 0 connectors, 145 content items, 0 ASIM parsers, 0 other par
 | `AdminSubmissionTriage` | - | 2 | - | - | **2** |
 | `UserSubmissionTriage` | - | 2 | - | - | **2** |
 | `AirInvestigationData` | - | 2 | - | - | **2** |
-| `CopilotInteraction` | - | 2 | - | - | **2** |
 | `Consent to application.` | - | 2 | - | - | **2** |
 | `TeamsAdminAction` | - | 2 | - | - | **2** |
+| `CopilotInteraction` | - | 2 | - | - | **2** |
 | `Add owner to policy.` | - | 1 | - | - | **1** |
 | `Add policy to service principal.` | - | 1 | - | - | **1** |
 | `Add policy.` | - | 1 | - | - | **1** |
@@ -427,6 +428,7 @@ References by type: 0 connectors, 145 content items, 0 ASIM parsers, 0 other par
 | `Add registered owner to device.` | - | 1 | - | - | **1** |
 | `Update user.` | - | 1 | - | - | **1** |
 | `Add member to role.` | - | 1 | - | - | **1** |
+| `Spam ZAP` | - | 1 | - | - | **1** |
 
 ---
 

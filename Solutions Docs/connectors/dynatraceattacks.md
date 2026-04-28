@@ -1,4 +1,4 @@
-# Dynatrace Attacks
+# Dynatrace Attacks V1
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/dynatrace.svg" alt="" width="75" height="75">
 
@@ -14,7 +14,7 @@
 | **Publisher** | Dynatrace |
 | **Used in Solutions** | [Dynatrace](../solutions/dynatrace.md) |
 | **Collection Method** | [CCF (Legacy)](../methods/ccf-legacy.md) |
-| **Connector Definition Files** | [Connector_Dynatrace_Attacks.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Data%20Connectors/Connector_Dynatrace_Attacks.json) |
+| **Connector Definition Files** | [Connector_Dynatrace_Attacks.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Data%20Connectors/DynatraceAttacksV1/Connector_Dynatrace_Attacks.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
 
 This connector uses the Dynatrace Attacks REST API to ingest detected attacks into Microsoft Sentinel Log Analytics
@@ -25,7 +25,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md) | ✗ | ✓ | ✗ |
+| [`DynatraceAttacksV2_CL`](../tables/dynatraceattacksv2-cl.md) | ? | ✓ | ? |
+| [`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

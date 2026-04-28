@@ -16,7 +16,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-23 |
 | **Last Updated** | 2026-03-13 |
@@ -39,9 +39,12 @@ This solution takes a dependency on the following technologies, and some of thes
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [TheHive Project - TheHive](../connectors/thehiveprojectthehive.md) 🔶
+- [TheHive (via Codeless Connector Framework)](../connectors/thehiveconnector.md)
+- [TheHive Project - TheHive](../connectors/thehiveprojectthehive.md) ⚠️ 🔶
+
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
@@ -59,12 +62,12 @@ This solution uses **1 table(s)**:
 
 ## Content Items
 
-This solution includes **4 content item(s)**:
+This solution includes **4 content item(s)** (3 in solution, 1 discovered 🔍):
 
-| Content Type | Count |
-|:-------------|:------|
-| Playbooks | 3 |
-| Parsers | 1 |
+| Content Type | Total | In Solution | Discovered |
+|:-------------|------:|------------:|-----------:|
+| Playbooks | 3 | 3 | - |
+| Parsers | 1 | 0 | 1 |
 
 ### Playbooks
 
@@ -78,12 +81,16 @@ This solution includes **4 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [TheHive](../parsers/thehive.md) | - | [`TheHive_CL`](../tables/thehive-cl.md) *(read)* |
+| [TheHive](../parsers/thehive.md) ⚠️ | - | [`TheHive_CL`](../tables/thehive-cl.md) *(read)* |
+
+> ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.0.2       | 06-04-2026                     | codeless **Data Connector** bases on Rest + api polling Moved to GA + small fix to avoid arm-ttk validation issue		|  
+| 3.0.1       | 05-03-2026                     | codeless **Data Connector** bases on Rest api polling		|  
 | 3.0.0       | 05-09-2023                     | Manual deployment instructions updated for **Data Connector**		|
 
 ---

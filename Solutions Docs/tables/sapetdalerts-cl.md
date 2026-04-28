@@ -8,9 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -19,7 +17,7 @@
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
-## Schema (13 columns)
+## Schema (14 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SAPETDAlerts_CL.json)
 
@@ -37,6 +35,7 @@
 | Status | string |
 | Threshold | int |
 | TimeGenerated | datetime |
+| Users | dynamic |
 | Version | string |
 
 ## Solutions (1)

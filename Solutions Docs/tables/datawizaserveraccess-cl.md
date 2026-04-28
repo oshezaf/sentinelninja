@@ -9,15 +9,14 @@
 | Attribute | Value |
 |:----------|:------|
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
 - [Schema](#schema)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
 
 ## Schema (9 columns)
 
@@ -50,6 +49,16 @@ This table is ingested by the following connectors:
 | [Datawiza DAP](../connectors/datawizadapsolution.md) |  |
 
 ---
+
+## Content Items Using This Table (1)
+
+### Analytic Rules (1)
+
+**In solution [Datawiza](../solutions/datawiza.md):**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [Datawiza - massive errors detected](../content/datawiza-datawiza-massive-errors-detected-ddee1398-cf0b-46af-b583-78c3c29156dc-f782246e.md) |  |
 
 ---
 

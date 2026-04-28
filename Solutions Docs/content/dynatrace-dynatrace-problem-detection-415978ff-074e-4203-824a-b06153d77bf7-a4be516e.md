@@ -27,7 +27,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md) | ✗ | ✓ | ✗ |
+| [`DynatraceProblemsV2_CL`](../tables/dynatraceproblemsv2-cl.md) | ? | ✓ | ? |
+| [`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md) | ? | ✓ | ? |
 
 ---
 

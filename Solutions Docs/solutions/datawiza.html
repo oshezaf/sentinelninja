@@ -72,6 +72,12 @@
 </tbody>
 </table>
 <p>Send Datawiza Access Proxy access and MFA logs to Microsoft Sentinel for real-time security insights and analytics. Improve visibility, accelerate investigations, and meet audit/compliance requirements.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
 <h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
@@ -94,13 +100,48 @@
 <tr>
 <td><a href="../tables/datawizaserveraccess-cl.html"><code>datawizaserveraccess_CL</code></a> 🔶</td>
 <td><a href="../connectors/datawizadapsolution.html">Datawiza DAP</a></td>
-<td>-</td>
+<td>Analytics</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>1 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/datawiza-datawiza-massive-errors-detected-ddee1398-cf0b-46af-b583-78c3c29156dc-f782246e.html">Datawiza - massive errors detected</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Discovery</td>
+<td style="text-align: left;"><a href="../tables/datawizaserveraccess-cl.html"><code>datawizaserveraccess_CL</code></a></td>
+</tr>
+</tbody>
+</table>
 <h2 id="release-notes">Release Notes</h2>
 <table>
 <thead>
@@ -111,6 +152,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>3.0.1</td>
+<td>03-05-2026</td>
+<td>Added new analytics rules.</td>
+</tr>
 <tr>
 <td>3.0.0</td>
 <td>10-11-2025</td>

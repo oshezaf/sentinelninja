@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "<Provider Name="`<br>`SyslogMessage has_any "<EventID>23</EventID>,<EventID>26</EventID>"` | ✓ | ✓ | ✓ |
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "<Provider Name="`<br>`SyslogMessage has_any "<EventID>23</EventID>,<EventID>26</EventID>"` | ✓ | ✓ | ? |
 
 ## Parameters
 

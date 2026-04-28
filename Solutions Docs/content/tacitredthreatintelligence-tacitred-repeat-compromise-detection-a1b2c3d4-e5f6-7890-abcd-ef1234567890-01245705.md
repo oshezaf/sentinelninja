@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ | ? |
-| [`TacitRed_Findings_CL`](../tables/tacitred-findings-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`TacitRed_Findings_CL`](../tables/tacitred-findings-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

@@ -30,16 +30,8 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes</td>
-</tr>
-<tr>
 <td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
 <td style="text-align: left;">✓ Yes</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -51,7 +43,7 @@
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
-<h2 id="schema">Schema (217 columns)</h2>
+<h2 id="schema">Schema (456 columns)</h2>
 <p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud%5CData%20Connectors%5CSalesforceSentinelConnector_CCP/SalesforceServiceCloud_Tables.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
@@ -63,14 +55,74 @@
 </thead>
 <tbody>
 <tr>
+<td style="text-align: left;">AccessError</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The access error.</td>
+</tr>
+<tr>
 <td style="text-align: left;">Action</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The action performed.</td>
 </tr>
 <tr>
+<td style="text-align: left;">ActionMessage</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The action message.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The action name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The action type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActionVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The action version.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActualLoggedInUserId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The actual logged-in user ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AgentAction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The agent action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AllOrNone</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates if the operation is all or none.</td>
+</tr>
+<tr>
 <td style="text-align: left;">AnalyticsMode</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The analytics mode.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ApiCaller</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The API caller.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ApiClientCategory</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The API client category.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ApiFamily</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The API family.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ApiResource</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The API resource.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ApiType</td>
@@ -113,14 +165,74 @@
 <td style="text-align: left;">The article version ID.</td>
 </tr>
 <tr>
+<td style="text-align: left;">AssetId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The asset ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AssetType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The asset type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationContextClassReference</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The authentication context class reference.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationMethodReference</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The authentication method reference.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthenticationServiceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The authentication service ID.</td>
+</tr>
+<tr>
 <td style="text-align: left;">AverageRowSize</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The average row size.</td>
 </tr>
 <tr>
+<td style="text-align: left;">B2bEdition</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The B2B edition.</td>
+</tr>
+<tr>
+<td style="text-align: left;">B2bVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The B2B version.</td>
+</tr>
+<tr>
 <td style="text-align: left;">BatchId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The batch ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BlockedUri</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The blocked URI.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BlockedUriDomain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The blocked URI domain.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BotIdentifier</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The bot identifier.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BotSessionIdentifier</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The bot session identifier.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BrowserDeviceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The browser device type.</td>
 </tr>
 <tr>
 <td style="text-align: left;">BrowserName</td>
@@ -138,9 +250,29 @@
 <td style="text-align: left;">The browser version.</td>
 </tr>
 <tr>
+<td style="text-align: left;">Bytes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The bytes.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CallerPackageNamespace</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The caller package namespace.</td>
+</tr>
+<tr>
 <td style="text-align: left;">CalloutTime</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The callout time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CancelledReason</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The cancelled reason.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ChangeSetName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The change set name.</td>
 </tr>
 <tr>
 <td style="text-align: left;">CipherSuite</td>
@@ -156,6 +288,11 @@
 <td style="text-align: left;">ClickedRecordId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The clicked record ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClientGeo</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The client geographic location.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ClientId</td>
@@ -183,6 +320,11 @@
 <td style="text-align: left;">The client version.</td>
 </tr>
 <tr>
+<td style="text-align: left;">ColumnNumber</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The column number.</td>
+</tr>
+<tr>
 <td style="text-align: left;">ComponentId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The component ID.</td>
@@ -198,9 +340,34 @@
 <td style="text-align: left;">The component name.</td>
 </tr>
 <tr>
+<td style="text-align: left;">ConcurrencyMode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The concurrency mode.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConnectedAppId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The connected app ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConnectedAppName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The connected app name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConnectEnd</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The connection end time.</td>
+</tr>
+<tr>
 <td style="text-align: left;">ConnectionType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The connection type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConnectStart</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The connection start time.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ConsoleId</td>
@@ -218,14 +385,54 @@
 <td style="text-align: left;">The context.</td>
 </tr>
 <tr>
+<td style="text-align: left;">ContextId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The context ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ContextMap</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The context map.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ContinuationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The continuation ID.</td>
+</tr>
+<tr>
 <td style="text-align: left;">ControllerType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The controller type.</td>
 </tr>
 <tr>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The correlation ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Count</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The count.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CountryCode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The country code.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CountsAgainstApiLimit</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates if the request counts against the API limit.</td>
+</tr>
+<tr>
 <td style="text-align: left;">CpuTime</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The CPU time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CurrentSandboxOrgId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The current sandbox org ID.</td>
 </tr>
 <tr>
 <td style="text-align: left;">DashboardComponentId</td>
@@ -253,6 +460,16 @@
 <td style="text-align: left;">The data.</td>
 </tr>
 <tr>
+<td style="text-align: left;">DatasetIds</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The dataset IDs.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DataSourceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The data source name.</td>
+</tr>
+<tr>
 <td style="text-align: left;">DbBlocks</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The database blocks.</td>
@@ -268,6 +485,26 @@
 <td style="text-align: left;">The database total time.</td>
 </tr>
 <tr>
+<td style="text-align: left;">DecodedBodySize</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The decoded body size.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DelegatedUserId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The delegated user ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DelegatedUserIdDerived</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The derived delegated user ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DelegatedUserName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The delegated user name.</td>
+</tr>
+<tr>
 <td style="text-align: left;">DeliveryId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The delivery ID.</td>
@@ -276,6 +513,11 @@
 <td style="text-align: left;">DeliveryLocation</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The delivery location.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Description</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The description.</td>
 </tr>
 <tr>
 <td style="text-align: left;">DeviceId</td>
@@ -298,9 +540,24 @@
 <td style="text-align: left;">The device session ID.</td>
 </tr>
 <tr>
+<td style="text-align: left;">Directive</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The directive.</td>
+</tr>
+<tr>
 <td style="text-align: left;">DisplayType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The display type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Disposition</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The disposition.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DmlType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The DML type.</td>
 </tr>
 <tr>
 <td style="text-align: left;">DocumentId</td>
@@ -311,6 +568,56 @@
 <td style="text-align: left;">DocumentIdDerived</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The document ID derived.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DocumentUri</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The document URI.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Domain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The domain.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DomainLookupEnd</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The domain lookup end time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DomainLookupStart</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The domain lookup start time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DomComplete</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The DOM complete time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DomContentLoadedEventEnd</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The DOM content loaded event end time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DomContentLoadedEventStart</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The DOM content loaded event start time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DomInteractive</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The DOM interactive time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DownloadError</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The download error.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DownloadFormat</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The download format.</td>
 </tr>
 <tr>
 <td style="text-align: left;">DstBytes</td>
@@ -358,9 +665,39 @@
 <td style="text-align: left;">The DVC OS version.</td>
 </tr>
 <tr>
+<td style="text-align: left;">EasySuiteValue</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The easy suite value.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EffectiveAccountId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The effective account ID.</td>
+</tr>
+<tr>
 <td style="text-align: left;">EffectivePageTime</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The effective page time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EffectivePageTimeDeviation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The effective page time deviation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EffectivePageTimeDeviationErrorType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The effective page time deviation error type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EffectivePageTimeDeviationReason</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The effective page time deviation reason.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EncodedBodySize</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The encoded body size.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Entity</td>
@@ -393,6 +730,31 @@
 <td style="text-align: left;">The EPT.</td>
 </tr>
 <tr>
+<td style="text-align: left;">ErrorCode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The error code.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ErrorDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The error description.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ErrorMessage</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The error message.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ErrorTimestamp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The error timestamp.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EvaluationTimeMs</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The evaluation time in milliseconds.</td>
+</tr>
+<tr>
 <td style="text-align: left;">EventCount</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The event count.</td>
@@ -403,14 +765,29 @@
 <td style="text-align: left;">The event end time.</td>
 </tr>
 <tr>
+<td style="text-align: left;">EventObjectType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type.</td>
+</tr>
+<tr>
 <td style="text-align: left;">EventResult</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The event result.</td>
 </tr>
 <tr>
+<td style="text-align: left;">EventTimestamp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The event timestamp.</td>
+</tr>
+<tr>
 <td style="text-align: left;">EventType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ExceptionCategory</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The exception category.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ExceptionMessage</td>
@@ -428,6 +805,46 @@
 <td style="text-align: left;">The execution time of the request.</td>
 </tr>
 <tr>
+<td style="text-align: left;">ExecuteMs</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The execution time in milliseconds.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Expand</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The expand clause.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ExternalObject</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The external object.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FailureReason</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The failure reason.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FailureType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The failure type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FeatureId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The feature ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FetchMs</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The fetch time in milliseconds.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FetchStart</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The fetch start time.</td>
+</tr>
+<tr>
 <td style="text-align: left;">FilePreviewType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The file preview type.</td>
@@ -443,9 +860,69 @@
 <td style="text-align: left;">The file type.</td>
 </tr>
 <tr>
+<td style="text-align: left;">Filter</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The filter.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FirstEntityId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The first entity ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FirstInterimResponseStart</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The first interim response start time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FlowLoadTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The flow load time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FlowProcessType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The flow process type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FlowVersionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The flow version ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ForwardedForIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The forwarded-for IP address.</td>
+</tr>
+<tr>
 <td style="text-align: left;">GrandparentUiElement</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The grandparent UI element.</td>
+</tr>
+<tr>
+<td style="text-align: left;">GroupId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The group ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">GroupType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The group type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HasChart</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates if the report has a chart.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Having</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The HAVING clause.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Host</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The host.</td>
 </tr>
 <tr>
 <td style="text-align: left;">HttpHeaders</td>
@@ -456,6 +933,11 @@
 <td style="text-align: left;">HttpMethod</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The HTTP method.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpReferer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The HTTP referer.</td>
 </tr>
 <tr>
 <td style="text-align: left;">HttpReferrerOriginal</td>
@@ -473,6 +955,31 @@
 <td style="text-align: left;">The HTTP user agent original.</td>
 </tr>
 <tr>
+<td style="text-align: left;">InitialReferenceIds</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The initial reference IDs.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitiatorType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The initiator type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InsecureUri</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The insecure URI.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InvocationSource</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The invocation source.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InvokingApexClassName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The invoking Apex class name.</td>
+</tr>
+<tr>
 <td style="text-align: left;">IsAjaxRequest</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Indicates if the request is an AJAX request.</td>
@@ -481,6 +988,16 @@
 <td style="text-align: left;">IsApi</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Indicates if the request is an API request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsBlockedRedirection</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates if the redirection was blocked.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsCancelled</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates if the operation was cancelled.</td>
 </tr>
 <tr>
 <td style="text-align: left;">IsError</td>
@@ -498,9 +1015,19 @@
 <td style="text-align: left;">Indicates if the user is a guest.</td>
 </tr>
 <tr>
+<td style="text-align: left;">IsInitial</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates if this is the initial request.</td>
+</tr>
+<tr>
 <td style="text-align: left;">IsLongRunningRequest</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Indicates if the job is a long-running request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsManaged</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates if the package is managed.</td>
 </tr>
 <tr>
 <td style="text-align: left;">IsMobile</td>
@@ -511,6 +1038,26 @@
 <td style="text-align: left;">IsNew</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Indicates if the job is new.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsPush</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates if this is a push operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsReleased</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates if the package is released.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsRequestCollationOn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates if request collation is on.</td>
+</tr>
+<tr>
+<td style="text-align: left;">IsRetry</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates if this is a retry.</td>
 </tr>
 <tr>
 <td style="text-align: left;">IsScheduled</td>
@@ -528,9 +1075,39 @@
 <td style="text-align: left;">Indicates if the operation was successful.</td>
 </tr>
 <tr>
+<td style="text-align: left;">IsSuccessful</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates if the operation was successful.</td>
+</tr>
+<tr>
 <td style="text-align: left;">JobId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The job ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">JobStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The job status.</td>
+</tr>
+<tr>
+<td style="text-align: left;">KeyId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The key ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">KeyIdDerived</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The derived key ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">KeyPrefix</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The key prefix.</td>
+</tr>
+<tr>
+<td style="text-align: left;">KeyType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The key type.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Language</td>
@@ -538,9 +1115,19 @@
 <td style="text-align: left;">The language.</td>
 </tr>
 <tr>
+<td style="text-align: left;">LargeLanguageModel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The large language model.</td>
+</tr>
+<tr>
 <td style="text-align: left;">LastVersion</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The last version.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Library</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The library.</td>
 </tr>
 <tr>
 <td style="text-align: left;">LicenseContext</td>
@@ -548,9 +1135,29 @@
 <td style="text-align: left;">The license context.</td>
 </tr>
 <tr>
+<td style="text-align: left;">Limit</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The limit.</td>
+</tr>
+<tr>
 <td style="text-align: left;">LimitUsagePercent</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The limit usage percent.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LineNumber</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The line number.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LoadEventEnd</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The load event end time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LoadEventStart</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The load event start time.</td>
 </tr>
 <tr>
 <td style="text-align: left;">LogGroupId</td>
@@ -568,14 +1175,49 @@
 <td style="text-align: left;">The login status.</td>
 </tr>
 <tr>
+<td style="text-align: left;">LoginSubType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The login sub type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LoginType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The login type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LoginUrl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The login URL.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MalformedUrl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates if the URL was malformed.</td>
+</tr>
+<tr>
 <td style="text-align: left;">ManagedPackageNamespace</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The managed package namespace.</td>
 </tr>
 <tr>
+<td style="text-align: left;">MasterReportId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The master report ID.</td>
+</tr>
+<tr>
 <td style="text-align: left;">MediaType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The media type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MemberId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The member ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Message</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The message.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Method</td>
@@ -593,9 +1235,34 @@
 <td style="text-align: left;">The name.</td>
 </tr>
 <tr>
+<td style="text-align: left;">NamedCredentialName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The named credential name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NavigationType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The navigation type.</td>
+</tr>
+<tr>
 <td style="text-align: left;">NetworkDuration</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The network duration.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NetworkId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The network ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NextHopProtocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The next hop protocol.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NextLink</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The next link.</td>
 </tr>
 <tr>
 <td style="text-align: left;">NumberBuckets</td>
@@ -623,6 +1290,26 @@
 <td style="text-align: left;">The number of fields.</td>
 </tr>
 <tr>
+<td style="text-align: left;">NumberOfErrors</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The number of errors.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NumberOfInterviews</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The number of interviews.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NumberOfRecords</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The number of records.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NumberRequests</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The number of requests.</td>
+</tr>
+<tr>
 <td style="text-align: left;">NumberSoqlQueries</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The number of SOQL queries.</td>
@@ -633,9 +1320,24 @@
 <td style="text-align: left;">The number of clicks.</td>
 </tr>
 <tr>
+<td style="text-align: left;">NumGraphDepth</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The number of graph depth levels.</td>
+</tr>
+<tr>
 <td style="text-align: left;">NumResults</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The number of results.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NumRetries</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The number of retries.</td>
+</tr>
+<tr>
+<td style="text-align: left;">NumRows</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The number of rows.</td>
 </tr>
 <tr>
 <td style="text-align: left;">NumSessions</td>
@@ -643,9 +1345,44 @@
 <td style="text-align: left;">The number of sessions.</td>
 </tr>
 <tr>
+<td style="text-align: left;">Offset</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The offset.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Operation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationStage</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The operation stage.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationState</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The operation state.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The operation status.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The operation time.</td>
+</tr>
+<tr>
 <td style="text-align: left;">OperationType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The operation type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orderby</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The order by clause.</td>
 </tr>
 <tr>
 <td style="text-align: left;">OrganizationId</td>
@@ -658,6 +1395,11 @@
 <td style="text-align: left;">The origin.</td>
 </tr>
 <tr>
+<td style="text-align: left;">OriginRequestId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The origin request ID.</td>
+</tr>
+<tr>
 <td style="text-align: left;">OsName</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The operating system name.</td>
@@ -666,6 +1408,11 @@
 <td style="text-align: left;">OsVersion</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The operating system version.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PackageName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The package name.</td>
 </tr>
 <tr>
 <td style="text-align: left;">PageAppName</td>
@@ -688,6 +1435,21 @@
 <td style="text-align: left;">The page entity type.</td>
 </tr>
 <tr>
+<td style="text-align: left;">PageFlexiPageNameOrId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The FlexiPage name or ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PageFlexiPageType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The FlexiPage type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PageId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The page ID.</td>
+</tr>
+<tr>
 <td style="text-align: left;">PageName</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The page name.</td>
@@ -703,14 +1465,49 @@
 <td style="text-align: left;">The page URL.</td>
 </tr>
 <tr>
+<td style="text-align: left;">ParentCallout</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The parent callout.</td>
+</tr>
+<tr>
 <td style="text-align: left;">ParentUiElement</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The parent UI element.</td>
 </tr>
 <tr>
+<td style="text-align: left;">Path</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The path.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PendingSandboxOrgId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The pending sandbox org ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PermissionType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The permission type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PlannerIdentifier</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The planner identifier.</td>
+</tr>
+<tr>
 <td style="text-align: left;">PlatformType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The platform type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PolicyId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The policy ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PolicyIdDerived</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The derived policy ID.</td>
 </tr>
 <tr>
 <td style="text-align: left;">PrefixesSearched</td>
@@ -743,6 +1540,51 @@
 <td style="text-align: left;">The previous page URL.</td>
 </tr>
 <tr>
+<td style="text-align: left;">PricingApiEndpoint</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The pricing API endpoint.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PricingDetails</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The pricing details.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PricingErrorCode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The pricing error code.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PricingLogName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The pricing log name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PricingProcedure</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The pricing procedure.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PricingStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The pricing status.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProcessType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The process type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">PromptTemplate</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The prompt template.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProviderType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The provider type.</td>
+</tr>
+<tr>
 <td style="text-align: left;">Query</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The query.</td>
@@ -753,6 +1595,16 @@
 <td style="text-align: left;">The query ID.</td>
 </tr>
 <tr>
+<td style="text-align: left;">QueryIdentifier</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The query identifier.</td>
+</tr>
+<tr>
+<td style="text-align: left;">QueryType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The query type.</td>
+</tr>
+<tr>
 <td style="text-align: left;">Quiddity</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The quiddity.</td>
@@ -761,6 +1613,11 @@
 <td style="text-align: left;">Rank</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The rank.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RateLimitUsagePercent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The rate limit usage percent.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ReadTime</td>
@@ -778,9 +1635,44 @@
 <td style="text-align: left;">The derived record ID.</td>
 </tr>
 <tr>
+<td style="text-align: left;">RecordsFailed</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The number of records failed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RecordsProcessed</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The number of records processed.</td>
+</tr>
+<tr>
 <td style="text-align: left;">RecordType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The record type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RedirectCount</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The redirect count.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RedirectEnd</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The redirect end time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RedirectReason</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The redirect reason.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RedirectStart</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The redirect start time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Referrer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The referrer.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ReferrerUri</td>
@@ -796,6 +1688,16 @@
 <td style="text-align: left;">RelatedList</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The related list.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The remote address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RenderBlockingStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The render blocking status.</td>
 </tr>
 <tr>
 <td style="text-align: left;">RenderingType</td>
@@ -823,14 +1725,54 @@
 <td style="text-align: left;">The derived report ID.</td>
 </tr>
 <tr>
+<td style="text-align: left;">RequestCount</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The request count.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestedAccessLevel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The requested access level.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestFormSize</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The request form size.</td>
+</tr>
+<tr>
 <td style="text-align: left;">RequestId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The request ID.</td>
 </tr>
 <tr>
+<td style="text-align: left;">RequestMethod</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The request method.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestPath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The request path.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Requests</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The requests.</td>
+</tr>
+<tr>
 <td style="text-align: left;">RequestSize</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The size of the request payload.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestsLimit</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The requests limit.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestStart</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The request start time.</td>
 </tr>
 <tr>
 <td style="text-align: left;">RequestStatus</td>
@@ -843,9 +1785,24 @@
 <td style="text-align: left;">The request type.</td>
 </tr>
 <tr>
+<td style="text-align: left;">RequestUri</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The request URI.</td>
+</tr>
+<tr>
 <td style="text-align: left;">ResolutionType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The resolution type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResourceSample</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The resource sample.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseEnd</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The response end time.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ResponseSize</td>
@@ -853,9 +1810,39 @@
 <td style="text-align: left;">The size of the response payload.</td>
 </tr>
 <tr>
+<td style="text-align: left;">ResponseStart</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The response start time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The response status.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Result</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The result.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResultSizeMb</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The result size in MB.</td>
+</tr>
+<tr>
 <td style="text-align: left;">RowCount</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The row count.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rows</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The rows.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RowsFetched</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The rows fetched.</td>
 </tr>
 <tr>
 <td style="text-align: left;">RowsProcessed</td>
@@ -866,6 +1853,21 @@
 <td style="text-align: left;">RunTime</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The run time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SampleFactor</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The sample factor.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SandboxId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The sandbox ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SavedViewId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The saved view ID.</td>
 </tr>
 <tr>
 <td style="text-align: left;">SdkAppType</td>
@@ -883,9 +1885,39 @@
 <td style="text-align: left;">The SDK version.</td>
 </tr>
 <tr>
+<td style="text-align: left;">Search</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The search.</td>
+</tr>
+<tr>
 <td style="text-align: left;">SearchQuery</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The search query.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SecureConnectStart</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The secure connection start time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Select</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The select clause.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sequence</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The sequence.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServerRequestId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The server request ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServiceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The service name.</td>
 </tr>
 <tr>
 <td style="text-align: left;">SessionId</td>
@@ -928,14 +1960,39 @@
 <td style="text-align: left;">The site ID.</td>
 </tr>
 <tr>
+<td style="text-align: left;">SizeBytes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The size in bytes.</td>
+</tr>
+<tr>
 <td style="text-align: left;">Sort</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The sort order.</td>
 </tr>
 <tr>
+<td style="text-align: left;">Source</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceFile</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source file.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceHostname</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source hostname.</td>
+</tr>
+<tr>
 <td style="text-align: left;">SourceIp</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The source IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SqlId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The SQL ID.</td>
 </tr>
 <tr>
 <td style="text-align: left;">SrcBytes</td>
@@ -968,9 +2025,24 @@
 <td style="text-align: left;">The stack trace.</td>
 </tr>
 <tr>
+<td style="text-align: left;">StartTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The start time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The status.</td>
+</tr>
+<tr>
 <td style="text-align: left;">StatusCode</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The status code of the response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Subqueries</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The subqueries.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Success</td>
@@ -983,9 +2055,29 @@
 <td style="text-align: left;">The tab ID.</td>
 </tr>
 <tr>
+<td style="text-align: left;">TableName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The table name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetHostname</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The target hostname.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetOrgId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The target org ID.</td>
+</tr>
+<tr>
 <td style="text-align: left;">TargetUiElement</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The target UI element.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Throughput</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The throughput.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Time</td>
@@ -1013,6 +2105,16 @@
 <td style="text-align: left;">The TLS protocol.</td>
 </tr>
 <tr>
+<td style="text-align: left;">TotalExecutionTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The total execution time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TotalMs</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The total time in milliseconds.</td>
+</tr>
+<tr>
 <td style="text-align: left;">TotalTime</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The total time.</td>
@@ -1021,6 +2123,11 @@
 <td style="text-align: left;">TransactionType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The transaction type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TransferSize</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The transfer size.</td>
 </tr>
 <tr>
 <td style="text-align: left;">TriggerId</td>
@@ -1043,6 +2150,11 @@
 <td style="text-align: left;">The UI event ID.</td>
 </tr>
 <tr>
+<td style="text-align: left;">UiEventRelativeTimestamp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The UI event relative timestamp.</td>
+</tr>
+<tr>
 <td style="text-align: left;">UiEventSequenceNum</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The UI event sequence number.</td>
@@ -1063,6 +2175,41 @@
 <td style="text-align: left;">The UI event type.</td>
 </tr>
 <tr>
+<td style="text-align: left;">UiNumberColumns</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The UI number of columns.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UiRootActivityId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The UI root activity ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UiThreadResponseDelay</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The UI thread response delay.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UniqueId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UnloadEventEnd</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unload event end time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UnloadEventStart</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unload event start time.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UpdateType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The update type.</td>
+</tr>
+<tr>
 <td style="text-align: left;">Uri</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The URI of the request.</td>
@@ -1081,6 +2228,11 @@
 <td style="text-align: left;">UrlOriginal</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The original URL.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UseApiToken</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates if an API token was used.</td>
 </tr>
 <tr>
 <td style="text-align: left;">User</td>
@@ -1123,6 +2275,11 @@
 <td style="text-align: left;">The type of the user.</td>
 </tr>
 <tr>
+<td style="text-align: left;">UsingMru</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates if MRU was used.</td>
+</tr>
+<tr>
 <td style="text-align: left;">VersionId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The version ID.</td>
@@ -1131,6 +2288,21 @@
 <td style="text-align: left;">VersionIdDerived</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The derived version ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">VfControllerSize</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Visualforce controller size.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ViewingUserId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The viewing user ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ViewMode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The view mode.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ViewStateSize</td>
@@ -1146,6 +2318,21 @@
 <td style="text-align: left;">WaveTimeStamp</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The wave timestamp.</td>
+</tr>
+<tr>
+<td style="text-align: left;">WebstoreId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The webstore ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">WebstoreType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The webstore type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">WorkerStart</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The worker start time.</td>
 </tr>
 </tbody>
 </table>

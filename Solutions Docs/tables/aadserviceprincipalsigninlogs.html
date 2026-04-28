@@ -47,10 +47,6 @@
 <td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
-</tr>
-<tr>
 <td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadserviceprincipalsigninlogs">View Documentation</a></td>
 </tr>
@@ -64,7 +60,7 @@
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
-<h2 id="schema">Schema (45 columns)</h2>
+<h2 id="schema">Schema (46 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadserviceprincipalsigninlogs">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -129,6 +125,11 @@
 <td style="text-align: left;">ClientCredentialType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of client credential used. Examples include client assertion, client secret, etc.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConditionalAccessAudiences</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of the conditional access audiences being applied for the sign-in.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ConditionalAccessPolicies</td>
@@ -346,16 +347,18 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a>:</strong> <code>OperationName == "Remove service principal"</code><br><code>OperationName has_all "Update application"</code></p>
+<p><strong>In solution <a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a>:</strong></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Analytic Rule</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-entra-id-suspicious-service-principal-creation-activity-6852d9da-8015-4b95-8ecf-d9572ee0395d-57b7f81f.html">Suspicious Service Principal creation activity</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -375,16 +378,18 @@
 </tbody>
 </table>
 <h3 id="hunting-queries">Hunting Queries (1)</h3>
-<p><strong>GitHub Only:</strong> <code>OperationName in "Add service principal credentials,Update application - Certificates</code><br><code>secrets management"</code></p>
+<p><strong>GitHub Only:</strong></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Hunting Query</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-dormant-service-principal-update-creds-and-logs-in-e7cdfacc-d112-45c7-9e8f-2b52948d075c-2b79fa66.html">Dormant Service Principal Update Creds and Logs In</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -474,7 +479,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-solarwindspostcompromisehunting-09062974.html">SolarWindsPostCompromiseHunting</a></td>
-<td style="text-align: left;"><code>OperationName == "Add member to group"</code><br><code>OperationName in "Set domain authentication,Set federation settings on domain"</code><br><code>OperationName has_any "Add service principal,Certificates</code><br><code>secrets management"</code></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -498,8 +503,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (3 criteria, 3 total references)</h2>
-<p>References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (1 criteria, 1 total references)</h2>
+<p>References by type: 0 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -513,22 +518,6 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>OperationName == "Remove service principal"</code><br><code>OperationName has_all "Update application"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>OperationName in "Add service principal credentials,Update application - Certificates</code><br><code>secrets management"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>OperationName in "Add conditional access policy,Add member to group,Add member to restricted management administrative unit,Delete conditional access policy,Remove member from group,Remove member from restricted management administrative unit,Update conditional access policy,Update group"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
@@ -539,10 +528,10 @@
 <tr>
 <td style="text-align: left;"><strong>Total</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -559,38 +548,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align: left;"><code>Remove service principal</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_all Update application</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>Add service principal credentials</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>Update application - Certificates</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
 <tr>
 <td style="text-align: left;"><code>Add conditional access policy</code></td>
 <td style="text-align: center;">-</td>

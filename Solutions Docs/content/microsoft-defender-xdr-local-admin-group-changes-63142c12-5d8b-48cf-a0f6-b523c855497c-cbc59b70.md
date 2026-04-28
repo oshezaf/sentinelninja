@@ -23,7 +23,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType == "UserAccountAddedToLocalGroup"`<br>`ActionType contains "UserAccountCreated"`<br>`ActionType contains "UserAccountModified"` | ✓ | ✗ | ✓ |
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType == "UserAccountAddedToLocalGroup"`<br>`ActionType contains "UserAccountCreated"`<br>`ActionType contains "UserAccountModified"` | ✓ | ✗ | ? |
 | [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | ? |
 
 ---

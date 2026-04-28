@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.recordedfuture.com/](https://support.recordedfuture.com/) |
 | **Categories** | domains |
-| **Version** | 3.1.2 |
+| **Version** | 3.1.3 |
 | **Author** | Recorded Future Premier Integrations - support@recordedfuture.com |
 | **First Published** | 2022-09-06 |
-| **Last Updated** | 2025-04-02 |
+| **Last Updated** | 2026-03-06 |
 | **Solution Folder** | [Recorded Future Identity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future%20Identity) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/recordedfuture1605638642586.recorded_future_identity_solution) · Rating: ★★★★★ 4.7/5 (220 ratings) · Popularity: 🟡 Low (31%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/recordedfuture1605638642586.recorded_future_identity_solution) · Rating: ★★★★★ 4.7/5 (225 ratings) · Popularity: 🟡 Low (31%) |
 
 [Recorded Future](https://www.recordedfuture.com/) Identity Intelligence enables security and IT teams to detect identity compromises, for both employees and customers. To do this, Recorded Future automates the collection, analysis, and production of identity intelligence from a vast range of sources. Organizations can incorporate identity intelligence into automated workflows that regularly monitor for compromised credentials and take immediate action with applications such as Entra ID and Microsoft Sentinel.
 There are many ways organizations can utilize Recorded Future Identity Intelligence; the playbooks in this Solution are just a quick introduction to some of those ways. In particular, these playbooks include several actions that can be coordinated, or used separately. They include:
@@ -38,8 +38,7 @@ The playbooks have internal dependencies where you have to install:
 
 Before: 
 - RFI-Playbook-Alert-Importer 
-- RFI-Playbook-Alert-Importer-LAW 
-- RFI-Playbook-Alert-Importer-LAW-Sentinel.
+- RFI-Playbook-Alert-Importer-LAW
 
 This solution depends on underlying Microsoft technologies. Some of these dependencies either may be in Preview state or might result in additional ingestion or operational costs:
 * [Log Analytics](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/workspace-design)
@@ -49,6 +48,7 @@ This solution depends on underlying Microsoft technologies. Some of these depend
 ## Contents
 
 - [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
 - [Content Items](#content-items)
 - [Additional Documentation](#additional-documentation)
 
@@ -58,13 +58,28 @@ This solution depends on underlying Microsoft technologies. Some of these depend
 
 This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
+## Tables Used
+
+This solution queries **1 table(s)** from its content items:
+
+| Table | Used By Content |
+|-------|----------------|
+| [`RecordedFutureIdentity_PlaybookAlertResults_CL`](../tables/recordedfutureidentity-playbookalertresults-cl.md) | Analytics |
+
 ## Content Items
 
-This solution includes **8 content item(s)**:
+This solution includes **9 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
 | Playbooks | 8 |
+| Analytic Rules | 1 |
+
+### Analytic Rules
+
+| Name | Severity | Tactics | Tables Used |
+|:-----|:---------|:--------|:------------|
+| [Recorded Future Identity - Credential Exposure Detected](../content/recorded-future-identity-recorded-future-identity-credential-exposure-detected-b1c2d3e4-5678-90ab-cdef-444444444444-dd38ff85.md) | High | CredentialAccess | [`RecordedFutureIdentity_PlaybookAlertResults_CL`](../tables/recordedfutureidentity-playbookalertresults-cl.md) |
 
 ### Playbooks
 
@@ -72,7 +87,7 @@ This solution includes **8 content item(s)**:
 |:-----|:------------|:------------|
 | [RFI-Playbook-Alert-Importer](../content/recorded-future-identity-rfi-playbook-alert-importer-f012ff91.md) | This playbook fetches identity compromises from Recorded Future, places users in a security group an... | - |
 | [RFI-Playbook-Alert-Importer-LAW](../content/recorded-future-identity-rfi-playbook-alert-importer-law-baa813bb.md) | This playbook fetches identity compromises from Recorded Future, places users in a security group an... | - |
-| [RFI-Playbook-Alert-Importer-LAW-Sentinel](../content/recorded-future-identity-rfi-playbook-alert-importer-law-sentinel-1b8a3387.md) | This playbook fetches identity compromises from Recorded Future, places users in a security group an... | - |
+| [RFI-Playbook-Alert-Importer-LAW-Sentinel (DEPRECATED)](../content/recorded-future-identity-rfi-playbook-alert-importer-law-sentinel-deprecated-64ea3f24.md) | DEPRECATED: This playbook creates incidents via the Azure Microsoft Sentinel Logic Apps connector, w... | - |
 | [RFI-add-EntraID-security-group-user](../content/recorded-future-identity-rfi-add-entraid-security-group-user-d16ad1d4.md) | This playbook adds a compromised user to an EntraID security group. Triage and remediation should be... | - |
 | [RFI-confirm-EntraID-risky-user](../content/recorded-future-identity-rfi-confirm-entraid-risky-user-4f682c27.md) | This playbook confirms compromise of users deemed 'high risk' by EntraID. | - |
 | [RFI-lookup-and-save-user](../content/recorded-future-identity-rfi-lookup-and-save-user-ec7fa68f.md) | This playbook gets compromise identity details from Recorded Future Identity Intelligence and saves ... | - |
@@ -140,12 +155,12 @@ These playbooks and actions are designed to meet the following use cases:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.1.3       | 06-03-2026                     | Deprecated `RFI-Playbook-Alert-Importer-LAW-Sentinel` in preparation for Microsoft Defender Portal. Added Analytic Rule that will handle incident creation.|
 | 3.1.2       | 29-04-2025                     | Removed `Get Risky User` action from **Playbooks** due to Recorded Future can act as a authority on compromise.|
 | 3.1.1       | 02-04-2025                     | Updated documentation, restructured solution and added correct paths for **Playbooks**.|
 | 3.1.0       | 10-02-2025                     | Refactored solution to be based on Recorded Future **Playbook** Alerts, moved old solution to `v3.0` folder.<br> Added new **Playbooks**. |
 | 3.0.1       | 27-08-2024                     | Fixedhardcoded Resource Group and Analytics Workspace Name in search **Playbooks**. |
 | 3.0.0       | 15-04-2024                     | Fixedhardcoded SubscriptionID.<br> Entra ID renaming of **Playbooks** and readme.<br> Using solution format V3<br>Change prefix on all logic app installation names from RecordedFutureIdentity to RFI due to logic app name size limitation of 64 characters. |
-| 2.0.0       | 14-09-2022                     | Initial Solution Release. |
 
 ---
 

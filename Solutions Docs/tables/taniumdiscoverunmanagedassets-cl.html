@@ -43,177 +43,169 @@
 <ul>
 <li><a href="#schema">Schema</a></li>
 <li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 </ul>
-<h2 id="schema">Schema (40 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/TaniumDiscoverUnmanagedAssets_CL.json">KQL validation test schema</a></p>
+<h2 id="schema">Schema (30 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium%5CData%20Connectors/Table_DiscoverUnmanagedAssets.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
 <tr>
 <th style="text-align: left;">Column Name</th>
 <th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Arp_d</td>
-<td style="text-align: left;">real</td>
+<td style="text-align: left;">Arp_b</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">AwsApi_d</td>
-<td style="text-align: left;">real</td>
+<td style="text-align: left;">AwsApi_b</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">CentralizedNmap_d</td>
-<td style="text-align: left;">real</td>
+<td style="text-align: left;">CentralizedNmap_b</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">CloudTags_s</td>
-<td style="text-align: left;">string</td>
+<td style="text-align: left;">Connected_b</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Computer</td>
-<td style="text-align: left;">string</td>
+<td style="text-align: left;">CreatedAt_t</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Connected_d</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">CreatedAt_s</td>
-<td style="text-align: left;">string</td>
+<td style="text-align: left;">FirstManagedAt_t</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">HostName_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">id_d</td>
 <td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">ImageId_s</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">InstanceId_s</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">InstanceState_s</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">InstanceType_s</td>
-<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">IPAddress</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Labels_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">LastDiscoveredAt_s</td>
-<td style="text-align: left;">string</td>
+<td style="text-align: left;">LastDiscoveredAt_t</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">LaunchTime_s</td>
-<td style="text-align: left;">string</td>
+<td style="text-align: left;">LastManagedAt_t</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Locations_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">MacAddress_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">MacOrganization_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Managed_d</td>
-<td style="text-align: left;">real</td>
+<td style="text-align: left;">Managed_b</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">NatIpAddress_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Nmap_d</td>
-<td style="text-align: left;">real</td>
+<td style="text-align: left;">Nmap_b</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Os_s</td>
 <td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">OsGeneration_d</td>
-<td style="text-align: left;">real</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">OsGeneration_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">OwnerId_s</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">Ping_d</td>
-<td style="text-align: left;">real</td>
+<td style="text-align: left;">Ping_b</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Ports_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Profile_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Provider_s</td>
+<td style="text-align: left;">SatelliteDecId_g</td>
+<td style="text-align: left;">guid</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">SatelliteName_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">RawData</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">SatelliteNmap_d</td>
-<td style="text-align: left;">real</td>
+<td style="text-align: left;">SatelliteNmap_b</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">TaniumComputerId_d</td>
 <td style="text-align: left;">real</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">TimeGenerated</td>
 <td style="text-align: left;">datetime</td>
-</tr>
-<tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
+<td style="text-align: left;">The time at which the data was generated</td>
 </tr>
 <tr>
 <td style="text-align: left;">Unmanageable_d</td>
 <td style="text-align: left;">real</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">UpdatedAt_s</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">VirtualNetworkId_s</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">Zone_s</td>
-<td style="text-align: left;">string</td>
+<td style="text-align: left;">UpdatedAt_t</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -222,6 +214,22 @@
 <ul>
 <li><a href="../solutions/tanium.html">Tanium</a></li>
 </ul>
+<h2 id="connectors">Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/taniumconnector.html">Tanium's CCF Push Connector</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
 <hr />
 <h2 id="content-items-using-this-table">Content Items Using This Table (1)</h2>
 <h3 id="workbooks">Workbooks (1)</h3>

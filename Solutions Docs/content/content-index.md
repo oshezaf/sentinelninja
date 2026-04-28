@@ -6,7 +6,7 @@ Content items are the security artifacts that provide value from the data collec
 
 ---
 
-**6,606 content items** across all Microsoft Sentinel solutions. See [📊 Statistics](../statistics.md) for detailed breakdowns by type and source.
+**6,518 content items** across all Microsoft Sentinel solutions. See [📊 Statistics](../statistics.md) for detailed breakdowns by type and source.
 
 ---
 
@@ -14,12 +14,12 @@ Content is organized by type. Click on a content type below to browse all items 
 
 | Content Type | Count | Description |
 |:-------------|------:|:------------|
-| [Analytic Rules](analytic-rules.md) | 2369 | Detection rules for identifying security threats. [Learn more](https://learn.microsoft.com/azure/sentinel/detect-threats-built-in) |
-| [Hunting Queries](hunting-queries.md) | 2292 | Proactive threat hunting queries. [Learn more](https://learn.microsoft.com/azure/sentinel/hunting) |
-| [Playbooks](playbooks.md) | 820 | Automated response and remediation workflows. [Learn more](https://learn.microsoft.com/azure/sentinel/automate-responses-with-playbooks) |
-| [Workbooks](workbooks.md) | 538 | Interactive dashboards and reports. [Learn more](https://learn.microsoft.com/azure/sentinel/monitor-your-data) |
-| [Parsers](../parsers/parsers-index.md) | 514* | Data normalization and transformation functions. [Learn more](https://learn.microsoft.com/azure/sentinel/normalization) |
-| [Watchlists](watchlists.md) | 48 | Reference data lists for enrichment and filtering. [Learn more](https://learn.microsoft.com/azure/sentinel/watchlists) |
+| [Analytic Rules](analytic-rules.md) | 2178 | Detection rules for identifying security threats. [Learn more](https://learn.microsoft.com/azure/sentinel/detect-threats-built-in) |
+| [Hunting Queries](hunting-queries.md) | 2313 | Proactive threat hunting queries. [Learn more](https://learn.microsoft.com/azure/sentinel/hunting) |
+| [Playbooks](playbooks.md) | 865 | Automated response and remediation workflows. [Learn more](https://learn.microsoft.com/azure/sentinel/automate-responses-with-playbooks) |
+| [Workbooks](workbooks.md) | 562 | Interactive dashboards and reports. [Learn more](https://learn.microsoft.com/azure/sentinel/monitor-your-data) |
+| [Parsers](../parsers/parsers-index.md) | 526* | Data normalization and transformation functions. [Learn more](https://learn.microsoft.com/azure/sentinel/normalization) |
+| [Watchlists](watchlists.md) | 49 | Reference data lists for enrichment and filtering. [Learn more](https://learn.microsoft.com/azure/sentinel/watchlists) |
 | [Summary Rules](summary-rules.md) | 25 | Rules for aggregating and summarizing data. [Learn more](https://learn.microsoft.com/azure/sentinel/summary-rules) |
 
 \* *Parser count shows solution parsers only. The [Parsers Index](../parsers/parsers-index.md) includes additional legacy and discovered parsers.*

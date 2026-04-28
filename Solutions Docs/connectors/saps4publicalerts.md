@@ -26,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ABAPAuditLog`](../tables/abapauditlog.md) | ✓ | ✓ | ✓ |
+| [`ABAPAuditLog`](../tables/abapauditlog.md) | ✓ | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -38,6 +38,7 @@ This connector ingests data into the following tables:
 
 **Custom Permissions:**
 - **Client Id and Client Secret for Audit Retrieval API**: Enable API access in BTP.
+- **Microsoft Sentinel for SAP content package (60+ analytic rules, workbooks, parsers, and more)**: Deploy from Microsoft Sentinel content hub.
 
 ## Setup Instructions
 

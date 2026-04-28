@@ -26,8 +26,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category == "SQLSecurityAuditEvents"`<br>`ResourceProvider == "MICROSOFT.SQL"` | ✗ | ✗ | ✗ |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) |  | ✓ | ✓ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category == "SQLSecurityAuditEvents"`<br>`ResourceProvider == "MICROSOFT.SQL"` | ? | ✗ | ? |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) |  | ✓ | ✓ | ? |
 
 ---
 

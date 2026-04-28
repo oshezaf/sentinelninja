@@ -22,9 +22,9 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AlertEvidence`](../tables/alertevidence.md) |  | ✓ | ✗ | ✓ |
+| [`AlertEvidence`](../tables/alertevidence.md) |  | ✓ | ✗ | ? |
 | [`AlertInfo`](../tables/alertinfo.md) |  | ✓ | ✗ | ? |
-| [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ | ✓ |
+| [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ | ? |
 | [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ | ? |
 | [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) |  | ✓ | ✗ | ? |
 | [`DeviceInfo`](../tables/deviceinfo.md) |  | ✓ | ✗ | ? |

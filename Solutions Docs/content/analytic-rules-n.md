@@ -1,6 +1,6 @@
 # Analytic Rules - N
 
-**69 analytic rules** starting with 'N'.
+**79 analytic rules** starting with 'N'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -8,7 +8,7 @@
 
 ---
 
-**Jump to letter:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | [B](analytic-rules-b.md) | [C](analytic-rules-c.md) | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | [M](analytic-rules-m.md) | **N** | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [Z](analytic-rules-z.md)
+**Jump to letter:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | [B](analytic-rules-b.md) | [C](analytic-rules-c.md) | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | [M](analytic-rules-m.md) | **N** | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [X](analytic-rules-x.md) | [Z](analytic-rules-z.md)
 
 > **Source:** 📦 Solution | 📄 Standalone | 🔗 GitHub Only
 
@@ -16,6 +16,16 @@
 |:-----|:---------|:-------|
 | [NDMP Server Deleted](veeam-ndmp-server-deleted-e92ba6bb-53ea-4347-b1a6-2e015298bbdc-8a804f44.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |
 | [NetClean ProActive Incidents](netclean-proactive-netclean-proactive-incidents-77548170-5c60-42e5-bdac-b0360d0779bb-1b0b1d6f.md) | High | 📦 [NetClean ProActive](../solutions/netclean-proactive.md) |
+| [Netskope - Anomalous User Behavior (High Volume from Unmanaged Device)](netskopewebtx-netskope-anomalous-user-behavior-high-volume-from-unmanaged-device-fa4c4f1c-3c5f-4c3a-a13f-924c30db56e9-a11677b7.md) | Medium | 📦 [NetskopeWebTx](../solutions/netskopewebtx.md) |
+| [Netskope - Data Movement Tracking (Upload/Download Monitoring)](netskopewebtx-netskope-data-movement-tracking-upload-download-monitoring-cf103180-cb81-4796-921d-3cc7eef4e817-0505a110.md) | Informational | 📦 [NetskopeWebTx](../solutions/netskopewebtx.md) |
+| [Netskope - Excessive Downloads Detection (Spike vs Baseline)](netskopewebtx-netskope-excessive-downloads-detection-spike-vs-baseline-dd0ebd84-ffbe-45df-848b-0615ac446b04-e6a1be75.md) | Medium | 📦 [NetskopeWebTx](../solutions/netskopewebtx.md) |
+| [Netskope - Heavy Personal Cloud Storage Usage (Shadow IT)](netskopewebtx-netskope-heavy-personal-cloud-storage-usage-shadow-it-272f9bca-5fd0-4413-b494-03b2d9f0bb9b-b4a5c41b.md) | Medium | 📦 [NetskopeWebTx](../solutions/netskopewebtx.md) |
+| [Netskope - Impossible Travel Detection (Two Countries in Less Than 1 Hour)](netskopewebtx-netskope-impossible-travel-detection-two-countries-in-less-than-1-hour-d1b88716-3cd4-4585-a9a2-2dd2c9b04ecb-2929a498.md) | High | 📦 [NetskopeWebTx](../solutions/netskopewebtx.md) |
+| [Netskope - Large Outbound Data Transfer / Sensitive Upload (DLP)](netskopewebtx-netskope-large-outbound-data-transfer-sensitive-upload-dlp-71e6586e-0d3f-4e33-b390-faa50b5e08fa-c78990bd.md) | High | 📦 [NetskopeWebTx](../solutions/netskopewebtx.md) |
+| [Netskope - New Risky App Access vs 7-Day Baseline](netskopewebtx-netskope-new-risky-app-access-vs-7-day-baseline-ba66b81c-2cf7-4c53-9db0-e8b6f537704a-4dbceb22.md) | Medium | 📦 [NetskopeWebTx](../solutions/netskopewebtx.md) |
+| [Netskope - Repeated or Critical Policy Violations](netskopewebtx-netskope-repeated-or-critical-policy-violations-dacab67e-fcf3-41c6-a191-579c7be1814d-4ad41000.md) | High | 📦 [NetskopeWebTx](../solutions/netskopewebtx.md) |
+| [Netskope - Suspicious Network Context (Unusual IPs/Geo/Ports)](netskopewebtx-netskope-suspicious-network-context-unusual-ips-geo-ports-6d989fb0-933e-4ae6-88fa-10e7b51c8897-d6216d9a.md) | Medium | 📦 [NetskopeWebTx](../solutions/netskopewebtx.md) |
+| [Netskope - Unsanctioned/Risky Cloud App Access (Shadow IT)](netskopewebtx-netskope-unsanctioned-risky-cloud-app-access-shadow-it-cdc01279-d6ea-41b1-a32d-49d726be95b8-be0feda5.md) | Medium | 📦 [NetskopeWebTx](../solutions/netskopewebtx.md) |
 | [Netskope - WebTransaction Error Detection](netskopev2-netskope-webtransaction-error-detection-66c4cd4c-d391-47e8-b4e6-93e55d86ca9f-9bf88cfb.md) | Medium | 📦 [Netskopev2](../solutions/netskopev2.md) |
 | [Network ACL with all the open ports to a specified CIDR](amazon-web-services-network-acl-with-all-the-open-ports-to-a-specified-cidr-f8ea7d50-e33b-4b9d-9c3e-a59fcbcee281-147ac220.md) | High | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Network endpoint to host executable correlation](network-threat-protection-essentials-network-endpoint-to-host-executable-correlation-01f64465-b1ef-41ea-a7f5-31553a11ad43-f4ed06da.md) | Medium | 📦 [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md) |

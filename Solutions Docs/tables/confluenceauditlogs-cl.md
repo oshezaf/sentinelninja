@@ -8,9 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -22,38 +20,38 @@
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianConfluenceAudit%5CData%20Connectors%5CAtlassianConfluenceAuditLogs_CCP/AtlassianConfluenceAudit_table.json)
 
-| Column Name | Type |
-|:------------|:-----|
-| AffectedObjectName | string |
-| AffectedObjectObjectType | string |
-| AssociatedObjects | dynamic |
-| AuthorAccountId | string |
-| AuthorAccountType | string |
-| AuthorDisplayName | string |
-| AuthorExternalCollaborator | bool |
-| AuthorIsExternalCollaborator | bool |
-| AuthorPublicName | string |
-| AuthorType | string |
-| AuthorUserKey | string |
-| AuthorUsername | string |
-| Category | string |
-| ChangedValues | dynamic |
-| CreationDate | long |
-| Description | string |
-| DstUserSid | string |
-| EventCategoryType | string |
-| EventCreationTime | long |
-| EventMessage | string |
-| EventProduct | string |
-| EventVendor | string |
-| RemoteAddress | string |
-| SrcIpAddr | string |
-| SrcUserName | string |
-| Summary | string |
-| SuperAdmin | bool |
-| SysAdmin | bool |
-| TimeGenerated | datetime |
-| UserIdentity | string |
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| AffectedObjectName | string | The name of the affected object. |
+| AffectedObjectObjectType | string | The type of the affected object. |
+| AssociatedObjects | dynamic | The associated objects of the audit log entry. |
+| AuthorAccountId | string | The account ID of the author. |
+| AuthorAccountType | string | The account type of the author. |
+| AuthorDisplayName | string | The display name of the author. |
+| AuthorExternalCollaborator | bool | Indicates whether the author is an external collaborator. |
+| AuthorIsExternalCollaborator | bool | Indicates whether the author is an external collaborator. |
+| AuthorPublicName | string | The public name of the author. |
+| AuthorType | string | The type of the author. |
+| AuthorUserKey | string | The user key of the author. |
+| AuthorUsername | string | The username of the author. |
+| Category | string | The category of the audit log entry. |
+| ChangedValues | dynamic | The changed values of the audit log entry. |
+| CreationDate | long | The creation date of the audit log entry. |
+| Description | string | The description of the audit log entry. |
+| DstUserSid | string | The destination user SID. |
+| EventCategoryType | string | The category type of the event. |
+| EventCreationTime | long | The creation time of the event. |
+| EventMessage | string | The message of the event. |
+| EventProduct | string | The product of the event. |
+| EventVendor | string | The vendor of the event. |
+| RemoteAddress | string | The remote address of the author. |
+| SrcIpAddr | string | The source IP address. |
+| SrcUserName | string | The source username. |
+| Summary | string | The summary of the audit log entry. |
+| SuperAdmin | bool | Indicates whether the author is a super administrator. |
+| SysAdmin | bool | Indicates whether the author is a system administrator. |
+| TimeGenerated | datetime | The timestamp (in UTC) when the log entry was generated. |
+| UserIdentity | string | The identity of the user. |
 
 ## Solutions (1)
 
@@ -67,7 +65,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [ Atlassian Confluence Audit (via Codeless Connector Framework)](../connectors/confluenceauditccpdefinition.md) |  |
+| [Atlassian Confluence Audit (via Codeless Connector Framework)](../connectors/atlassianconfluenceconnector.md) |  |
 
 ---
 

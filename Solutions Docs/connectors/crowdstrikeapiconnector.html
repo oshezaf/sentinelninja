@@ -54,7 +54,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>CCF Capabilities</strong></td>
-<td style="text-align: left;"><code>OAuth2</code>, <code>Paging</code>, <code>POST</code>, <code>Nested</code></td>
+<td style="text-align: left;"><code>OAuth2</code>, <code>Paging</code>, <code>Nested</code></td>
 </tr>
 </tbody>
 </table>
@@ -75,7 +75,7 @@
 <td style="text-align: left;"><a href="../tables/crowdstrikealerts.html"><code>CrowdStrikeAlerts</code></a></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/crowdstrikecases.html"><code>CrowdStrikeCases</code></a></td>
@@ -134,6 +134,8 @@ For detailed instructions on retrieving the Base API URL, Client ID, and Client 
 <p><strong>Configure CrowdStrike API Connection</strong></p>
 <p><em>Connect to CrowdStrike to ingest security data</em></p>
 <p>When you click the "Add Connection" button in the portal, a configuration form will open. You'll need to provide:</p>
+<h4 id="required-api-scopes">Required API Scopes</h4>
+<p>In your CrowdStrike Falcon console, go to <strong>Support and resources &gt; API clients and keys</strong>, select your API client, and enable the following scopes with <strong>Read</strong> access: <strong>Alerts</strong>, <strong>Cases</strong>, <strong>Detections</strong>, <strong>Hosts</strong>, <strong>Spotlight Vulnerabilities</strong>.</p>
 <h4 id="1-retrieve-api-url">1. Retrieve API URL</h4>
 <p>Log in to your CrowdStrike Console and navigate to the API section to copy your Base API URL.</p>
 <h4 id="2-retrieve-client-credentials">2. Retrieve Client Credentials</h4>
@@ -146,6 +148,16 @@ For detailed instructions on retrieving the Base API URL, Client ID, and Client 
 <blockquote>
 <p>💡 <strong>Portal-Only Feature</strong>: This configuration form is only available in the Microsoft Sentinel portal.</p>
 </blockquote>
+<p><strong>2. Querying Detections (after successful connection)</strong>
+Once logs are ingesting, the <strong>CrowdStrikeDetections</strong> table contains individual alert records grouped by <code>aggregate_id</code>. To view true detection-level behavior, use the following KQL query to aggregate alerts by their detection group:</p>
+<pre><code>CrowdStrikeDetections
+| summarize
+    AlertCount = count(),
+    FirstSeen = min(CreatedTimestamp),
+    LastSeen = max(CreatedTimestamp),
+    MaxSeverity = max(Severity)
+by AggregateId
+</code></pre>
 <h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike Falcon Endpoint Protection\Data Connectors\CrowdStrikeAPI_ccp\README.md">CrowdStrike Falcon Endpoint Protection\Data Connectors\CrowdStrikeAPI_ccp\README.md</a></em></p>

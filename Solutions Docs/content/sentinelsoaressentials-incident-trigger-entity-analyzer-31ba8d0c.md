@@ -6,7 +6,7 @@
 
 ---
 
-This playbook is triggered by Microsoft Sentinel incidents and performs automated investigation and enrichment of URL and User entities associated with the incident.
+This playbook is triggered by Microsoft Sentinel incidents and performs automated investigation and enrichment of URL and User entities associated with the incident. It includes intelligent user identifier detection supporting objectGuid, aadUserId, UPN, and Name+UPNSuffix combinations.
 
 | Attribute | Value |
 |:----------|:------|

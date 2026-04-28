@@ -14,7 +14,6 @@ Reference for SecurityAlert table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityalert) |
 
 ## Contents
@@ -73,7 +72,7 @@ Reference for SecurityAlert table in Azure Monitor Logs.
 
 📖 **Related Documentation:** [Security alert schema reference](https://learn.microsoft.com/azure/sentinel/security-alert-schema) - Describes the SecurityAlert table schema and field definitions
 
-## Solutions (51)
+## Solutions (52)
 
 This table is used by the following solutions:
 
@@ -83,6 +82,7 @@ This table is used by the following solutions:
 - [Azure kubernetes Service](../solutions/azure-kubernetes-service.md)
 - [AzureDevOpsAuditing](../solutions/azuredevopsauditing.md)
 - [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md)
+- [Censys](../solutions/censys.md)
 - [Cloud Identity Threat Protection Essentials](../solutions/cloud-identity-threat-protection-essentials.md)
 - [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
 - [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
@@ -148,7 +148,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (174)
+## Content Items Using This Table (177)
 
 ### Analytic Rules (56)
 
@@ -361,7 +361,7 @@ This table is ingested by the following connectors:
 | [Storage Alerts Correlation with CommonSecurityLogs & AuditLogs](../content/github-only-storage-alerts-correlation-with-commonsecuritylogs-&-auditlogs-860a8df2-8d19-4c60-bf61-de1c02422797-30bd1fb3.md) |  |
 | [Unfamiliar Signin Correlation with AzurePortal Signin Attempts and AuditLogs](../content/github-only-unfamiliar-signin-correlation-with-azureportal-signin-attempts-and-auditlogs-6962473c-bcb8-421d-a0db-826078cad280-15192c3c.md) |  |
 
-### Workbooks (70)
+### Workbooks (72)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -392,6 +392,12 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |  |
+
+**In solution [Censys](../solutions/censys.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [Censys](../content/censys-censys-21c23ffd.md) |  |
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 
@@ -600,6 +606,7 @@ This table is ingested by the following connectors:
 | [ThreatIntelligence](../content/github-only-threatintelligence-250cda74.md) |  |
 | [UserEntityBehaviorAnalytics](../content/github-only-userentitybehavioranalytics-2c986bb5.md) |  |
 | [VisualizationDemo](../content/github-only-visualizationdemo-12456b23.md) |  |
+| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) |  |
 | [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 | [microsoftdefenderforidentity](../content/github-only-microsoftdefenderforidentity-215ba93a.md) |  |
 

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ Visa Threat Intelligence &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="visa-threat-intelligence">⚠️ Visa Threat Intelligence</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Visa_VTI_Logo.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>VisaThreatIntelligenceCCP</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/visa-threat-intelligence-vti.html">Visa Threat Intelligence (VTI)</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/ccf.html">CCF</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Visa%20Threat%20Intelligence%20%28VTI%29/Data%20Connectors/VisaThreatIntelligenceConnector.json">VisaThreatIntelligenceConnector.json</a></td>
+</tr>
+</tbody>
+</table>
+<h1 id="visa-threat-intelligence-connector">Visa Threat Intelligence Connector</h1>
+<p>This connector collects Indicators of Compromise (IOC) from the Visa Threat Intelligence Platform (VTIP) using HTTP polling and API Key-Shared Secret Authentication (X-Pay Token).</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/visathreatintelligenceioc-cl.html"><code>VisaThreatIntelligenceIOC_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): Read and Write permissions are required.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Visa API access</strong>: Access to Visa Threat Intelligence API: API Key-Shared Secret Authentication (X-Pay Token)</p>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Base Configuration</strong></p>
+<p>Configure your Visa API connection</p>
+<h2 id="base-configuration">Base Configuration</h2>
+<p>Provide the base URL for your VTIP API endpoints.
+- <strong>VTIP API endpoints Base URL</strong>: https://api.visa.com</p>
+<p>ℹ️ Enter the base URL of your VTIP API endpoints without trailing slash (e.g., https://api.visa.com)</p>
+<p><strong>2. Authentication Configuration</strong></p>
+<p>Provide credentials for X-Pay Token.</p>
+<blockquote>
+<p>Follow Visa Developer Tutorials <a href="https://developer.visa.com/pages/working-with-the-visa-api#decrypting-shared-secrets">API Key and Shared Secret (X-Pay Token)</a> to get api key and decrypted shared secret
+- <strong>API Key</strong>: (password field)
+- <strong>API Secret</strong>: (password field)</p>
+</blockquote>
+<p><strong>3. Connect</strong></p>
+<p>Enable data ingestion.
+- Click 'Connect' to establish connection</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+</div>
+
+</body>
+</html>

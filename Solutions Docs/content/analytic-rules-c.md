@@ -1,6 +1,6 @@
 # Analytic Rules - C
 
-**399 analytic rules** starting with 'C'.
+**385 analytic rules** starting with 'C'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -8,7 +8,7 @@
 
 ---
 
-**Jump to letter:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | [B](analytic-rules-b.md) | **C** | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | [M](analytic-rules-m.md) | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [Z](analytic-rules-z.md)
+**Jump to letter:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | [B](analytic-rules-b.md) | **C** | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | [M](analytic-rules-m.md) | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [X](analytic-rules-x.md) | [Z](analytic-rules-z.md)
 
 > **Source:** 📦 Solution | 📄 Standalone | 🔗 GitHub Only
 
@@ -28,6 +28,7 @@
 | [Changes to AWS Security Group ingress and egress settings](amazon-web-services-changes-to-aws-security-group-ingress-and-egress-settings-4f19d4e3-ec5f-4abc-9e61-819eb131758c-a08b61de.md) | Low | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Changes to internet facing AWS RDS Database instances](amazon-web-services-changes-to-internet-facing-aws-rds-database-instances-8c2ef238-67a0-497d-b1dd-5c8a0f533e25-7db09d92.md) | Low | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Changes to PIM Settings](standalone-content-changes-to-pim-settings-0ed0fe7c-af29-4990-af7f-bb5ccb231198-dc0157b2.md) | High | 📄 Standalone Content |
+| [Check Point Exposure Management - Alert Ingestion Anomaly](check-point-cyberint-alerts-check-point-exposure-management-alert-ingestion-anomaly-8d3b9c7e-5a2f-4e1d-b6c8-3f9a7e2d1b4c-1545e994.md) | Medium | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
 | [Chia_Crypto_Mining IOC - June 2021](windows-forwarded-events-chia-crypto-mining-ioc-june-2021-4d173248-439b-4741-8b37-f63ad0c896ae-e48dccbd.md) | Low | 📦 [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
 | [Cisco - firewall block but success logon to Microsoft Entra ID](standalone-content-cisco-firewall-block-but-success-logon-to-microsoft-entra-id-157c0cfc-d76d-463b-8755-c781608cdc1a-60e5d082.md) | Medium | 📄 Standalone Content |
 | [Cisco ASA - average attack detection rate increase](ciscoasa-cisco-asa-average-attack-detection-rate-increase-79f29feb-6a9d-4cdf-baaa-2daf480a5da1-4b63ae5b.md) | Low | 📦 [CiscoASA](../solutions/ciscoasa.md) |
@@ -118,7 +119,7 @@
 | [Claroty - Policy violation](claroty-claroty-policy-violation-3b22ac47-e02c-4599-a37a-57f965de17be-0b548fc4.md) | High | 📦 [Claroty](../solutions/claroty.md) |
 | [Claroty - Suspicious activity](claroty-claroty-suspicious-activity-99ad9f3c-304c-44c5-a61f-3a17f8b58218-64471eca.md) | High | 📦 [Claroty](../solutions/claroty.md) |
 | [Claroty - Suspicious file transfer](claroty-claroty-suspicious-file-transfer-5cf35bad-677f-4c23-8927-1611e7ff6f28-b144365c.md) | High | 📦 [Claroty](../solutions/claroty.md) |
-| [Claroty - Treat detected](claroty-claroty-treat-detected-731e5ac4-7fe1-4b06-9941-532f2e008bb3-e573bc69.md) | High | 📦 [Claroty](../solutions/claroty.md) |
+| [Claroty - Threat detected](claroty-claroty-threat-detected-731e5ac4-7fe1-4b06-9941-532f2e008bb3-84acea52.md) | High | 📦 [Claroty](../solutions/claroty.md) |
 | [Clearing of forensic evidence from event logs using wevtutil](microsoft-defender-xdr-clearing-of-forensic-evidence-from-event-logs-using-wevtutil-515d0bba-b297-4f83-8280-20ff7f27ecb1-b91bc0f3.md) | High | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [ClientDeniedAccess](symantec-vip-clientdeniedaccess-a9956d3a-07a9-44a6-a279-081a85020cae-b3aec064.md) | Medium | 📦 [Symantec VIP](../solutions/symantec-vip.md) |
 | [Cloud Gateway Deleted](veeam-cloud-gateway-deleted-72239d5b-ef96-4f15-896f-6cdcd9c53ca7-b39fbbe7.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |
@@ -151,14 +152,6 @@
 | [CloudNGFW By Palo Alto Networks - Threat signatures from Unusual IP addresses](azure-cloud-ngfw-by-palo-alto-networks-cloudngfw-by-palo-alto-networks-threat-signatures-from-unusual-ip-89a86f70-615f-4a79-9621-6f68c50f365f-e067f0fd.md) | Medium | 📦 [Azure Cloud NGFW By Palo Alto Networks](../solutions/azure-cloud-ngfw-by-palo-alto-networks.md) |
 | [CMMC 2.0 Level 1 (Foundational) Readiness Posture](cybersecuritymaturitymodelcertification-cmmc-2.0-cmmc-2.0-level-1-foundational-readiness-posture-fb127436-e5c4-4e31-85a8-d3507128dd09-3a67e6df.md) | Medium | 📦 [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md) |
 | [CMMC 2.0 Level 2 (Advanced) Readiness Posture](cybersecuritymaturitymodelcertification-cmmc-2.0-cmmc-2.0-level-2-advanced-readiness-posture-7bfe573b-3069-4e81-98fe-9a4cffbcbc24-0a9527c7.md) | Medium | 📦 [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md) |
-| [Code Repo (High)](ctm360-code-repo-high-861298b6-d72f-4389-bd7f-43e11d295970-116be28c.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Code Repo (Informational)](ctm360-code-repo-informational-541320e5-b2be-4544-87c3-33c4c8857e5f-0f0e322a.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Code Repo (Low)](ctm360-code-repo-low-40830b57-2d27-4010-9f0e-941fe4226cfc-f7039390.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Code Repo (Medium)](ctm360-code-repo-medium-c71460c7-cb57-42ab-9275-b0783f27de82-232c2421.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
-| [Code Repository](ctm360-code-repository-da2059f5-8463-49d5-a6dc-22597fd9ce66-23a193b8.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Code Repository (High)](ctm360-code-repository-high-7505ed8a-b08f-4811-830a-dc46998aedee-bfb806d4.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Code Repository (Low)](ctm360-code-repository-low-d92fe091-1263-4036-a8c0-9f5bf19f2b47-3a8654f6.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Code Repository (Medium)](ctm360-code-repository-medium-b25da727-d67f-4592-86c8-d41d14f9145a-529ee9d4.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
 | [Cognni Incidents for Highly Sensitive Business Information](cognni-cognni-incidents-for-highly-sensitive-business-information-44e80f00-b4f5-486b-a57d-4073746276df-99948920.md) | High | 📦 [Cognni](../solutions/cognni.md) |
 | [Cognni Incidents for Highly Sensitive Financial Information](cognni-cognni-incidents-for-highly-sensitive-financial-information-7ebb7386-6c99-4331-aab1-a185a603eb47-6a8e85b1.md) | High | 📦 [Cognni](../solutions/cognni.md) |
 | [Cognni Incidents for Highly Sensitive Governance Information](cognni-cognni-incidents-for-highly-sensitive-governance-information-2926ce29-08d2-4654-b2e8-7d8df70095d9-424c50ec.md) | High | 📦 [Cognni](../solutions/cognni.md) |
@@ -178,11 +171,6 @@
 | [COM Registry Key Modified to Point to File in Color Profile Folder](standalone-content-com-registry-key-modified-to-point-to-file-in-color-profile-folder-ed8c9153-6f7a-4602-97b4-48c336b299e1-d490be15.md) | Medium | 📄 Standalone Content |
 | [Commvault Cloud Alert](commvault-security-iq-commvault-cloud-alert-317e757e-c320-448e-8837-fc61a70fe609-276de419.md) | Medium | 📦 [Commvault Security IQ](../solutions/commvault-security-iq.md) |
 | [Component Object Model Hijacking - Vault7 trick](falconfriday-component-object-model-hijacking-vault7-trick-1aaff41f-4e18-45b1-bb34-de6eb4943cf2-23d9ec72.md) | Medium | 📦 [FalconFriday](../solutions/falconfriday.md) |
-| [Compromised Cards](ctm360-compromised-cards-3db2904c-a93e-4ea5-a1bb-11b3ea5ec0bb-ecceb410.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Compromised Cards (High)](ctm360-compromised-cards-high-2d5481d3-4aad-4ab8-bfea-6da5d6db9fe7-2491fcfe.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Compromised Cards (Informational)](ctm360-compromised-cards-informational-02536cb0-a292-4b30-917b-abfd31a39e14-c2634b91.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Compromised Cards (Low)](ctm360-compromised-cards-low-970a9ae9-2e9b-4a51-a1f0-b76acd28f62f-52224257.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Compromised Cards (Medium)](ctm360-compromised-cards-medium-1436c4c5-9304-4d0b-92cd-107e29ec4ef9-cb2c223f.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
 | [Conditional Access - A Conditional Access app exclusion has changed](microsoft-entra-id-conditional-access-a-conditional-access-app-exclusion-has-changed-0990a481-3bc8-4682-838c-313918dd858c-0a7b28b3.md) | Low | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Conditional Access - A Conditional Access Device platforms condition has changed (the Device platforms condition can be spoofed)](microsoft-entra-id-conditional-access-a-conditional-access-device-platforms-condition-has-changed-the-de-e3368079-a2c0-4f1c-9fb7-287e907393ef-136313dd.md) | Low | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Conditional Access - A Conditional Access policy was deleted](microsoft-entra-id-conditional-access-a-conditional-access-policy-was-deleted-2e96fa64-ac4d-4c92-b79e-e9c54b5d8230-ed16bbf9.md) | Low | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
@@ -207,9 +195,10 @@
 | [Contrast Exploits](contrast-protect-contrast-exploits-e1abb6ed-be18-40fd-be58-3d3d84041daf-470b92cd.md) | High | 📦 [Contrast Protect](../solutions/contrast-protect.md) |
 | [Contrast Probes](contrast-protect-contrast-probes-297596de-d9ae-4fb8-b6ff-00fc01c9462d-d1e26597.md) | Informational | 📦 [Contrast Protect](../solutions/contrast-protect.md) |
 | [Contrast Suspicious](contrast-protect-contrast-suspicious-f713404e-805c-4e0c-91fa-2c149f76a07d-f612944c.md) | Medium | 📦 [Contrast Protect](../solutions/contrast-protect.md) |
-| [Cookies: HttpOnly Flag Not Used](ctm360-cookies-httponly-flag-not-used-e303d68e-08a7-4382-ab31-6a4bd80e8066-c53d5dec.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
-| [Cookies: SameSite Flag Not Used](ctm360-cookies-samesite-flag-not-used-f4a06203-66f0-4f84-8bc8-05a44161b426-76387375.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Cookies: Secure Flag Not Used](ctm360-cookies-secure-flag-not-used-91da8421-6066-4570-8a0b-25d980810109-b7e4f695.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
+| [Copilot - File Uploads Disabled](microsoft-copilot-copilot-file-uploads-disabled-c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8-2b49efb6.md) | High | 📦 [Microsoft Copilot](../solutions/microsoft-copilot.md) |
+| [Copilot - Jailbreak Attempt Detected](microsoft-copilot-copilot-jailbreak-attempt-detected-e5f6a7b8-c9d0-41e2-f3a4-b5c6d7e8f9a0-37101c05.md) | High | 📦 [Microsoft Copilot](../solutions/microsoft-copilot.md) |
+| [Copilot - Plugin Created by Non-Admin User](microsoft-copilot-copilot-plugin-created-by-non-admin-user-a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6-534a022a.md) | High | 📦 [Microsoft Copilot](../solutions/microsoft-copilot.md) |
+| [Copilot - Plugin Tampering (Enable and Disable Within 5 Minutes)](microsoft-copilot-copilot-plugin-tampering-enable-and-disable-within-5-minutes-d4e5f6a7-b8c9-40d1-e2f3-a4b5c6d7e8f9-e650fbfe.md) | Medium | 📦 [Microsoft Copilot](../solutions/microsoft-copilot.md) |
 | [Corelight - C2 DGA Detected Via Repetitive Failures](corelight-corelight-c2-dga-detected-via-repetitive-failures-8eaa2268-74ee-492c-b869-450eff707fef-523acd4f.md) | Medium | 📦 [Corelight](../solutions/corelight.md) |
 | [Corelight - External Proxy Detected](corelight-corelight-external-proxy-detected-05850746-9ae4-412f-838b-844f0903f4a9-ddace3ce.md) | Low | 📦 [Corelight](../solutions/corelight.md) |
 | [Corelight - Forced External Outbound SMB](corelight-corelight-forced-external-outbound-smb-73f23aa2-5cc4-4507-940b-75c9092e9e01-7d9f3286.md) | Medium | 📦 [Corelight](../solutions/corelight.md) |
@@ -265,13 +254,9 @@
 | [CTERA Mass Access Denied Detection Analytic](ctera-ctera-mass-access-denied-detection-analytic-88341fc3-38e1-46db-8bb1-6c052e749991-0ac24cd2.md) | High | 📦 [CTERA](../solutions/ctera.md) |
 | [CTERA Mass Deletions Detection Analytic](ctera-ctera-mass-deletions-detection-analytic-5365f294-0c67-432a-bacf-b1282a3b6c46-6fc626fe.md) | High | 📦 [CTERA](../solutions/ctera.md) |
 | [CTERA Mass Permissions Changes Detection Analytic](ctera-ctera-mass-permissions-changes-detection-analytic-90502ac9-19a2-41f0-ba81-e352de90b61b-15e26af2.md) | High | 📦 [CTERA](../solutions/ctera.md) |
-| [Cyber Evil Twin Site (High)](ctm360-cyber-evil-twin-site-high-322cad0d-4794-4a57-bffd-17aeba840f16-d3b3640d.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Cyber Evil Twin Site (Informational)](ctm360-cyber-evil-twin-site-informational-5f39eedb-a8e7-461a-a313-32ef8bc8e3a8-f577c16c.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Cyber Evil Twin Site (Low)](ctm360-cyber-evil-twin-site-low-8a9b7cdd-4fae-46fc-ab06-65c8f61e5f12-6bf7d1ab.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Cyber Evil Twin Site (Medium)](ctm360-cyber-evil-twin-site-medium-4c1c4841-eaab-4204-a859-95ca2a033dd9-f7f8a7ab.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
-| [CyberArk - High-Risk Actions Outside Business Hours](cyberarkaudit-cyberark-high-risk-actions-outside-business-hours-3c9ee3ae.md) | High | 📦 [CyberArkAudit](../solutions/cyberarkaudit.md) |
-| [CyberArk - Multiple Failed Actions Followed by Success (15m)](cyberarkaudit-cyberark-multiple-failed-actions-followed-by-success-15m-707982e9.md) | Medium | 📦 [CyberArkAudit](../solutions/cyberarkaudit.md) |
-| [CyberArk - Sensitive Safe/Permission/Entitlement Changes (with customData)](cyberarkaudit-cyberark-sensitive-safe-permission-entitlement-changes-with-customdata-8af89ccf.md) | Low | 📦 [CyberArkAudit](../solutions/cyberarkaudit.md) |
+| [CyberArk - High-Risk Actions Outside Business Hours](cyberarkaudit-cyberark-high-risk-actions-outside-business-hours-3733e1ac-991b-4504-99e8-24ff4fbaf6e4-f02b1466.md) | High | 📦 [CyberArkAudit](../solutions/cyberarkaudit.md) |
+| [CyberArk - Multiple Failed Actions Followed by Success (15m)](cyberarkaudit-cyberark-multiple-failed-actions-followed-by-success-15m-bdf3cf98-d64f-4c55-97e4-43483d6d3237-7585ad5d.md) | Medium | 📦 [CyberArkAudit](../solutions/cyberarkaudit.md) |
+| [CyberArk - Sensitive Safe/Permission/Entitlement Changes (with customData)](cyberarkaudit-cyberark-sensitive-safe-permission-entitlement-changes-with-customdata-30938118-8812-4b5f-afa4-a8d4ba2b5d86-5cd42d25.md) | Low | 📦 [CyberArkAudit](../solutions/cyberarkaudit.md) |
 | [CyberArkEPM - Attack attempt not blocked](cyberarkepm-cyberarkepm-attack-attempt-not-blocked-8e8978a2-9188-4187-8909-5ea00507bf16-2c52bf85.md) | High | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
 | [CyberArkEPM - MSBuild usage as LOLBin](cyberarkepm-cyberarkepm-msbuild-usage-as-lolbin-a11bf869-458e-49fd-be03-58021b14be15-c30da3a6.md) | Medium | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
 | [CyberArkEPM - Multiple attack types](cyberarkepm-cyberarkepm-multiple-attack-types-c02f96b4-057b-4e63-87af-6376ef7a081b-c13c5274.md) | High | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
@@ -282,6 +267,7 @@
 | [CyberArkEPM - Uncommon Windows process started from System folder](cyberarkepm-cyberarkepm-uncommon-windows-process-started-from-system-folder-16b940d2-aaf8-4eaa-a5e1-05df5f5c3d43-515a91a8.md) | Medium | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
 | [CyberArkEPM - Unexpected executable extension](cyberarkepm-cyberarkepm-unexpected-executable-extension-911d5b75-a1ce-4f13-a839-9c2474768696-814c115f.md) | Medium | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
 | [CyberArkEPM - Unexpected executable location](cyberarkepm-cyberarkepm-unexpected-executable-location-c1fcbbd7-74f8-4f32-8116-0a533ebd3878-f588775e.md) | Medium | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
+| [CyberBlindSpot - Any Issue Detected](ctm360-cyberblindspot-any-issue-detected-abe1a662-d00d-482e-aa68-9394622ae02e-cd8c88d0.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
 | [Cyble Advisory Alerts Advisory](cyble-vision-cyble-advisory-alerts-advisory-1932dcfd-a32e-49f9-a212-5bcd084fbd78-26eb1bc8.md) ⚠️ | Low | 📦 [Cyble Vision](../solutions/cyble-vision.md) |
 | [Cyble Vision Alerts Assets](cyble-vision-cyble-vision-alerts-assets-0012714c-c595-4dcd-8949-4a5c1d49aaa8-26bf60ce.md) | Low | 📦 [Cyble Vision](../solutions/cyble-vision.md) |
 | [Cyble Vision Alerts Bitbucket](cyble-vision-cyble-vision-alerts-bitbucket-f3c25011-4509-41c8-be27-35d891531c39-c74f9461.md) | Low | 📦 [Cyble Vision](../solutions/cyble-vision.md) |

@@ -24,8 +24,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ | ✗ |
-| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ | ✓ |
+| [`AzureActivity`](../tables/azureactivity.md) | ? | ✗ | ? |
+| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ | ? |
 | [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ | ? |
 
 ## Associated Connectors

@@ -16,10 +16,10 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://proofpoint.my.site.com/community/s/](https://proofpoint.my.site.com/community/s/) |
 | **Categories** | domains |
-| **Version** | 3.1.2 |
+| **Version** | 3.1.4 |
 | **Author** | Proofpoint, Inc. - azure-support@proofpoint.com |
 | **First Published** | 2021-03-31 |
-| **Last Updated** | 2025-12-23 |
+| **Last Updated** | 2026-04-22 |
 | **Solution Folder** | [Proofpoint On demand(POD) Email Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Proofpoint%20On%20demand%28POD%29%20Email%20Security) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/proofpointinc1600438591120.azure-sentinel-proofpointpod) · Popularity: ⚪ Very Low (0%) |
 
@@ -123,6 +123,8 @@ This solution includes **22 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                   |
 |-------------|--------------------------------|------------------------------------------------------|
+| 3.1.4       | 17-04-2026                     | Update **ProofpointPOD_PollingConfig.json** to pass sinceTime parameter with firstWindowBackfillInMin configuration.|
+| 3.1.3       | 19-03-2026                     | Update **ProofpointPOD_PollingConfig.json** to pass user-agent header with solution package version.|
 | 3.1.2       | 08-12-2025                     | Update **ProofpointPOD_PollingConfig.json** to remove start and end time query params, it impacts time frames at server side and causes duplicate data ingestion.|  
 | 3.1.1       | 03-11-2025                     | Update support url in **SolutionMetadata.json**.|  
 | 3.1.0       | 31-07-2025                     | Updated Support details and publisherId in **SolutionMetadata.json**, updated Author details and Logo in **Solution_ProofPointPOD.json** from Microsoft to Proofpoint.|

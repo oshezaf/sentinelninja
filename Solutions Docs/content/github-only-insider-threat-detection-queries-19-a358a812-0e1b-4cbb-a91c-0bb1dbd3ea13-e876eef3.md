@@ -23,7 +23,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType == "UserAccountCreated"` | ✓ | ✗ | ✓ |
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType == "UserAccountCreated"` | ✓ | ✗ | ? |
 | [`DeviceLogonEvents`](../tables/devicelogonevents.md) |  | ✓ | ✗ | ? |
 
 ---

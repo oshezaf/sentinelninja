@@ -31,23 +31,13 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) 🔶 | ? | ✓ | ? |
 
 ## Parameters
 
 | Name | Type | Default |
 |:-----|:-----|:--------|
 | `disabled` | bool | False |
-
-## Associated Connectors
-
-The following connectors provide data for this parser:
-
-| Connector | Solution |
-|:----------|:---------|
-| [VMwareCarbonBlack](../connectors/vmwarecarbonblack.md) | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
-
-**Solutions:** [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md)
 
 ## References
 

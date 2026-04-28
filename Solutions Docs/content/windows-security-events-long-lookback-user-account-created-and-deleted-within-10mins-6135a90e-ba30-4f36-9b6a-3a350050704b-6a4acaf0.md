@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4720,4726"` | ✓ | ✓ | ✓ |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4720,4726"` | ✓ | ✓ | ? |
 
 ---
 

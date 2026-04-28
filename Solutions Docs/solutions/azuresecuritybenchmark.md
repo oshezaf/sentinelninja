@@ -19,6 +19,7 @@
 | **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-17 |
+| **Last Updated** | 2026-04-14 |
 | **Solution Folder** | [AzureSecurityBenchmark](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AzureSecurityBenchmark) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azuresecuritybenchmark) · Popularity: 🟢 High (92%) |
 
@@ -130,6 +131,7 @@ You can deploy the workbook by clicking on the buttons below:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                         |
 |-------------|--------------------------------|----------------------------------------------------------------------------|
+| 3.0.4       | 13-04-2026                     | Updated Azure Security Benchmark label and queries.             |
 | 3.0.3       | 10-09-2025                     | Removed the network map from the workbook.                      |
 | 3.0.2       | 12-04-2024                     | Updated Entity Mappings                                         |
 | 3.0.1       | 24-01-2023                     | Updated the solution to fix **Analytic Rules** deployment issue |

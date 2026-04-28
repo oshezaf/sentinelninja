@@ -8,9 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Solutions (1)
 
@@ -18,14 +16,13 @@ This table is used by the following solutions:
 
 - [CyeraDSPM](../solutions/cyeradspm.md)
 
-## Connectors (2)
+## Connectors (1)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [Cyera DSPM Microsoft Sentinel Data Connector](../connectors/cyeradspmccf.md) |  |
-| [Cyera DSPM Azure Functions Microsoft Sentinel Data Connector](../connectors/cyerafunctionsconnector.md) |  |
 
 ---
 

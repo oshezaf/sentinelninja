@@ -22,7 +22,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType in "ExploitGuardNetworkProtectionAudited,ExploitGuardNetworkProtectionBlocked"`<br>`ActionType startswith "SmartScreenUrl"` | ✓ | ✗ | ✓ |
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType in "ExploitGuardNetworkProtectionAudited,ExploitGuardNetworkProtectionBlocked"`<br>`ActionType startswith "SmartScreenUrl"` | ✓ | ✗ | ? |
 
 ---
 

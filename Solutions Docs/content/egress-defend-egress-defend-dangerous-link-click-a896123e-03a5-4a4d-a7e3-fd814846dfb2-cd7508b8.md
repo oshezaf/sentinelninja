@@ -28,6 +28,7 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`EgressDefend_CL`](../tables/egressdefend-cl.md) 🔶 | ? | ✓ | ? |
+| [`KnowBe4Defend_CL`](../tables/knowbe4defend-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

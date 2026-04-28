@@ -1,4 +1,6 @@
-# VMware Carbon Black Cloud
+# 🚫 [DEPRECATED] VMware Carbon Black Cloud (using Azure Function)
+
+> 🚫 **Deprecated:** This connector has been deprecated and may be removed in future versions.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75">
 
@@ -26,9 +28,9 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CarbonBlackAuditLogs_CL`](../tables/carbonblackauditlogs-cl.md) 🔶 | ✗ | ✓ | ✗ |
-| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) 🔶 | ✗ | ✓ | ✗ |
-| [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`CarbonBlackAuditLogs_CL`](../tables/carbonblackauditlogs-cl.md) 🔶 | ? | ✓ | ? |
+| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) 🔶 | ? | ✓ | ? |
+| [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) 🔶 | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

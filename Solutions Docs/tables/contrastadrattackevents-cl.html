@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ContrastADRAttackEventsCL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="contrastadrattackevents_cl">ContrastADRAttackEvents_CL</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
+<li><a href="#content-items-using-this-table">Content Items</a></li>
+<li><a href="#parsers-using-this-table">Parsers</a></li>
+</ul>
+<h2 id="schema">Schema (79 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContrastADR%5CData%20Connectors%5CContrastADRCCF/table_attackevents.json">Connector definition</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">agentVersion</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">application</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">application_agentLanguage</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">application_id</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">application_name</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">applicationId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">applicationMetadata</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">associatedAt</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">attackPayload</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">attackPayload_attackerInput</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">attackPayload_attackerInput_applicableAttack</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">attackPayload_attackerInput_confirmedAttack</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">attackPayload_attackerInput_documentPath</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">attackPayload_attackerInput_documentType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">attackPayload_attackerInput_effectiveAttack</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">attackPayload_attackerInput_filters</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">attackPayload_attackerInput_inputType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">attackPayload_attackerInput_name</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">attackPayload_attackerInput_patternsMatched</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">attackPayload_attackerInput_type</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">attackPayload_url</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">attackPayload_value</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">codeLocation_file</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">codeLocation_method</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">codeLocation_stack</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">detectedTime</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">environment</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">eventUuid</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">host</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">host_hostname</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">host_isDocker</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">host_isKubernetes</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">host_operatingSystem</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">host_runtimePath</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">host_runtimeVersion</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">incidentId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">issueId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mitreTactics</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">nativeId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">observationId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">observationType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">organizationUuid</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">parameters</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">request</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">request_body</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">request_headers_accept</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">request_headers_accept_encoding</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">request_headers_connection</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">request_headers_content_length</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">request_headers_content_type</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">request_headers_contrasttraceparent</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">request_headers_cookie</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">request_headers_host</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">request_headers_referer</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">request_headers_user_agent</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">request_headers_x_forwarded_host</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">request_headers_x_forwarded_port</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">request_headers_x_forwarded_proto</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">request_headers_x_forwarded_scheme</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">request_headers_x_real_ip</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">request_headers_x_request_id</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">request_headers_x_scheme</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">request_method</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">request_protocol</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">request_protocolVersion</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">request_queryString</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">result</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">rule</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ruleUuid</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">server</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">server_id</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">server_name</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">severity</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">sourceIp</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">timestamp</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">url</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">vectorAnalysis_callLocation</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">vectorAnalysis_vectorFields</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+</tbody>
+</table>
+<h2 id="solutions">Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/contrastadr.html">ContrastADR</a></li>
+</ul>
+<h2 id="connectors">Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/contrastadrccf.html">Contrast ADR Push Connector</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="content-items-using-this-table">Content Items Using This Table (11)</h2>
+<h3 id="analytic-rules">Analytic Rules (5)</h3>
+<p><strong>In solution <a href="../solutions/contrastadr.html">ContrastADR</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Analytic Rule</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/contrastadr-contrast-adr-dlp-sql-injection-correlation-1aac7737-d52f-483d-b225-6a27c1b29a9e-b5944c4e.html">Contrast ADR - DLP SQL Injection Correlation</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/contrastadr-contrast-adr-edr-alert-correlation-c1c6ba64-134e-403b-b9a6-1bebc90809a4-f21fd8c4.html">Contrast ADR - EDR Alert Correlation</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/contrastadr-contrast-adr-exploited-attack-event-ae4f67a6-0713-4a26-ae61-284e67b408c1-a0cf1f50.html">Contrast ADR - Exploited Attack Event</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/contrastadr-contrast-adr-exploited-attack-in-production-31417149-f3a2-4db4-9e5f-85e0a464f6a1-bb999f59.html">Contrast ADR - Exploited Attack in Production</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/contrastadr-contrast-adr-waf-alert-correlation-93641436-afb3-4921-8828-ceab0d15aaab-17b466db.html">Contrast ADR - WAF Alert Correlation</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks (6)</h3>
+<p><strong>In solution <a href="../solutions/contrastadr.html">ContrastADR</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Workbook</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/contrastadr-contrastadr-command-injection-workbook-2809c88c.html">ContrastADR_Command_Injection_Workbook</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/contrastadr-contrastadr-jndi-injection-workbook-893da6b3.html">ContrastADR_JNDI_Injection_Workbook</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/contrastadr-contrastadr-path-traversal-workbook-d0a4d6f2.html">ContrastADR_Path_Traversal_Workbook</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/contrastadr-contrastadr-sql-injection-workbook-ae68db46.html">ContrastADR_SQL_Injection_Workbook</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/contrastadr-contrastadr-untrusted-deserialization-workbook-6a1a62d6.html">ContrastADR_Untrusted_Deserialization_Workbook</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/contrastadr-contrastadr-xml-external-entity-injection-injection-workbook-75187815.html">ContrastADR_XML External_Entity_Injection_Injection_Workbook</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="parsers-using-this-table">Parsers Using This Table (1)</h2>
+<h3 id="other-parsers">Other Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/contrastadr.html">ContrastADR</a></td>
+<td style="text-align: left;"><a href="../solutions/contrastadr.html">ContrastADR</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

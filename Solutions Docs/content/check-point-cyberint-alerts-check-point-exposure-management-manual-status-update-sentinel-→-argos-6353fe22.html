@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check Point Exposure Management - Manual Status Update Sentinel → Argos &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="check-point-exposure-management---manual-status-update">Check Point Exposure Management - Manual Status Update (Sentinel → Argos)</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<hr />
+<p>On-demand playbook that reads the current Sentinel incident status and pushes it to the corresponding alert(s). Triggered manually from the incident actions menu.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/check-point-cyberint-alerts.html">Check Point Cyberint Alerts</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20Alerts/Playbooks/Sync/CPEM_ManualStatusUpdate/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20Alerts/Playbooks/Sync/CPEM_ManualStatusUpdate/readme.md">Sync/CPEM_ManualStatusUpdate/readme.md</a></em></p>
+</blockquote>
+<h2 id="summary">Summary</h2>
+<p>On-demand playbook that reads the current Sentinel incident status and pushes it to the corresponding alert(s). Analysts trigger this manually from the incident Actions menu when they want to explicitly sync status to Argos.</p>
+<p><strong>Flow:</strong>
+1. Calls <strong>Check_Point_EM_Base</strong> to retrieve API credentials.
+2. Reads the current incident status and close classification.
+3. Maps Sentinel status → Argos status and closure reason.
+4. For each linked alert, sends HTTP PUT to update the alert status.
+5. Adds a sync result comment and tags the incident <code>argos-manual-synced</code>.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ol>
+<li><strong>Check_Point_EM_Base</strong> playbook must be deployed in the same resource group.</li>
+<li>A valid Check Point Exposure Management API token configured in the Check_Point_EM_Base Key Vault.</li>
+</ol>
+<h2 id="deployment">Deployment</h2>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCheck%2520Point%2520Cyberint%2520Alerts%2FPlaybooks%2FCheck_Point_EM_ManualStatusUpdate%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PlaybookName</strong></td>
+<td>No</td>
+<td>Name of the Logic App (default: <code>Check_Point_EM_ManualStatusUpdate</code>)</td>
+</tr>
+<tr>
+<td><strong>Check_Point_EM_Base_PlaybookName</strong></td>
+<td>No</td>
+<td>Name of the base playbook (default: <code>Check_Point_EM_Base</code>)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="post-deployment">Post-Deployment</h2>
+<ol>
+<li>Grant the Logic App Managed Identity the <strong>Microsoft Sentinel Responder</strong> role on the resource group.</li>
+<li>Analysts can run this playbook from the Sentinel incident <strong>Actions &gt; Run playbook</strong> menu.</li>
+</ol>
+<h2 id="status-mapping">Status Mapping</h2>
+<table>
+<thead>
+<tr>
+<th>Sentinel Status</th>
+<th>Sentinel Classification</th>
+<th>Argos Status</th>
+<th>Argos Closure Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Active</td>
+<td>—</td>
+<td><code>open</code></td>
+<td>—</td>
+</tr>
+<tr>
+<td>Closed</td>
+<td>True Positive</td>
+<td><code>closed</code></td>
+<td><code>resolved</code></td>
+</tr>
+<tr>
+<td>Closed</td>
+<td>False Positive</td>
+<td><code>closed</code></td>
+<td><code>false_positive</code></td>
+</tr>
+<tr>
+<td>Closed</td>
+<td>Benign Positive</td>
+<td><code>closed</code></td>
+<td><code>no_longer_a_threat</code></td>
+</tr>
+<tr>
+<td>Closed</td>
+<td>Undetermined</td>
+<td><code>closed</code></td>
+<td><code>other</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="api-endpoints-used">API Endpoints Used</h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Endpoint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Update alert status</td>
+<td><code>PUT /api/v1/alerts/{alert_ref_id}</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/check-point-cyberint-alerts.html">Back to Check Point Cyberint Alerts</a></p>
+</div>
+
+</body>
+</html>

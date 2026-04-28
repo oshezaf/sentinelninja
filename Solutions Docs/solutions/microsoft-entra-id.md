@@ -16,10 +16,10 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | domains |
-| **Version** | 3.3.6 |
+| **Version** | 3.3.11 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-16 |
-| **Last Updated** | 2026-02-24 |
+| **Last Updated** | 2026-04-15 |
 | **Solution Folder** | [Microsoft Entra ID](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azureactivedirectory) · Rating: ★★★☆☆ 2.7/5 (3 ratings) · Popularity: 🟢 High (95%) |
 
@@ -73,13 +73,14 @@ The following **3 table(s)** are used internally by this solution's content item
 
 ## Content Items
 
-This solution includes **87 content item(s)**:
+This solution includes **88 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
 | Analytic Rules | 73 |
 | Playbooks | 11 |
 | Workbooks | 3 |
+| Watchlists | 1 |
 
 ### Analytic Rules
 
@@ -183,10 +184,19 @@ This solution includes **87 content item(s)**:
 | [Revoke Entra ID SignIn Sessions - incident trigger](../content/microsoft-entra-id-revoke-entra-id-signin-sessions-incident-trigger-e0f6ae42.md) | This playbook will revoke all signin sessions for the user using Graph API. It will send an email to... | - |
 | [Revoke-Entra ID SignInSessions alert trigger](../content/microsoft-entra-id-revoke-entra-id-signinsessions-alert-trigger-c72ead46.md) | This playbook will revoke all signin sessions for the user using Graph API. It will send an email to... | - |
 
+### Watchlists
+
+| Name | Description | Tables Used |
+|:-----|:------------|:------------|
+| [ConditionalAccessBenignStatusCodes](../content/microsoft-entra-id-conditionalaccessbenignstatuscodes-15507b1f.md) | - | - |
+
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                                                                                                                         |
 | ----------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 3.3.11       | 13-04-2026                    | Added **Watchlist** ConditionalAccessBenignStatusCodes and updated **BypassCondAccessRule** analytic rule |
+| 3.3.10       | 12-04-2026                    | Updated **AccountCreatedandDeletedinShortTimeframe** analytic rule to extend query period to 7 days, normalize UPN parsing, and use immutable UserId for improved detection accuracy and evasion resistance |
+| 3.3.9       | 23-02-2026                     | Updated **Block-AADUser Incident** trigger to fix the permissions for disable user block |
 | 3.3.8       | 06-02-2026                     | Fixed Broken Links in **Analytical Rule**. |
 | 3.3.7       | 20-01-2026                     | Updated Revoke-AADSignInSessions **Playbooks** Instructions. <br/> Add Conditional Access Insights **Workbook** for Microsoft Entra ID. |
 | 3.3.6       | 23-09-2025                     | Updated  **Analytical Rule** to fix the rule saving issue. <br/> Removed Preview Designation from **Microsoft Entra ID Connector** Data Types.  | 

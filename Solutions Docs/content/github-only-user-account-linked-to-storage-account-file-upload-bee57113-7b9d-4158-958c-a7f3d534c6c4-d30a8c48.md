@@ -24,9 +24,9 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SigninLogs`](../tables/signinlogs.md) | `OperationName in "PutBlob,PutRange"` | ✓ | ✗ | ✓ |
-| [`StorageBlobLogs`](../tables/storagebloblogs.md) |  | ✓ | ✗ | ✓ |
-| [`StorageFileLogs`](../tables/storagefilelogs.md) |  | ✓ | ✗ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) | `OperationName in "PutBlob,PutRange"` | ✓ | ✗ | ? |
+| [`StorageBlobLogs`](../tables/storagebloblogs.md) |  | ✓ | ✗ | ? |
+| [`StorageFileLogs`](../tables/storagefilelogs.md) |  | ✓ | ✗ | ? |
 
 ## Associated Connectors
 

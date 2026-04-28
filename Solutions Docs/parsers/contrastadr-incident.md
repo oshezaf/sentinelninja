@@ -15,8 +15,8 @@ This file is to parse the data from Contrast ADR platform
 | Title | Parser for ContrastADR Incident Schema |
 | Location | Solution |
 | Solution | [ContrastADR](../solutions/contrastadr.md) |
-| Version | 1.0.0 |
-| Last Updated | 2025-05-26 |
+| Version | 1.1.0 |
+| Last Updated | 2026-03-25 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContrastADR/Parsers/Contrast_incident_parser.yaml) |
@@ -27,7 +27,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ContrastADRIncident_CL`](../tables/contrastadrincident-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`ContrastADRIncidents_CL`](../tables/contrastadrincidents-cl.md) | ? | ✓ | ? |
 
 ---
 

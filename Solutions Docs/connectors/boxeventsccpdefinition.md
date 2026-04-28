@@ -1,4 +1,4 @@
-# Box Events (CCP)
+# Box Events (via Codeless Connector Framework)
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Box/Workbooks/Images/Logo/box.svg" alt="" width="75" height="75">
 
@@ -27,8 +27,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`BoxEventsV2_CL`](../tables/boxeventsv2-cl.md) | ✓ | ✓ | ✓ |
-| [`BoxEvents_CL`](../tables/boxevents-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`BoxEventsV2_CL`](../tables/boxeventsv2-cl.md) | ? | ✓ | ? |
+| [`BoxEvents_CL`](../tables/boxevents-cl.md) 🔶 | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

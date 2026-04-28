@@ -20,7 +20,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "nginx"`<br>`DeviceProduct == "pfsense"` | ✓ | ✓ | ✓ |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "nginx"`<br>`DeviceProduct == "pfsense"` | ✓ | ✓ | ? |
 
 ---
 

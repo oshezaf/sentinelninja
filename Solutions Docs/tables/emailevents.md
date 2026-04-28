@@ -14,7 +14,6 @@ Microsoft 365 email events, including email delivery and blocking events
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/emailevents) |
 | **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-emailevents-table) |
 
@@ -162,7 +161,7 @@ This table is ingested by the following connectors:
 | [Automated email notifications and suspicious sign-in activity](../content/microsoft-defender-xdr-automated-email-notifications-and-suspicious-sign-in-activity-0955f477-6471-468a-9b13-fc5fa96d7db2-7722bd78.md) |  |
 | [Bad email percentage of Inbound emails](../content/microsoft-defender-xdr-bad-email-percentage-of-inbound-emails-242561f3-568a-4864-be15-fbc85b2e77f9-3b521ce0.md) |  |
 | [Bulk Emails by Sender Bulk Complaint level](../content/microsoft-defender-xdr-bulk-emails-by-sender-bulk-complaint-level-2e903da3-32fe-46b0-8df7-5f39e55db17e-a6bce306.md) |  |
-| [Calculate overall MDO efficacy](../content/microsoft-defender-xdr-calculate-overall-mdo-efficacy-ff56a21d-fc95-4c11-8f9d-cc59c48cd4e6-2e8ef8fb.md) | `ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"` |
+| [Calculate overall MDO efficacy](../content/microsoft-defender-xdr-calculate-overall-mdo-efficacy-ff56a21d-fc95-4c11-8f9d-cc59c48cd4e6-2e8ef8fb.md) |  |
 | [CompAuth Failure Trend](../content/microsoft-defender-xdr-compauth-failure-trend-eb560458-d96f-4c68-acbb-14b3c706ebe7-1841f166.md) |  |
 | [DKIM Failure Trend](../content/microsoft-defender-xdr-dkim-failure-trend-14d47b2a-62b3-4c7b-819c-699e264c581d-01837526.md) |  |
 | [DMARC Failure Trend](../content/microsoft-defender-xdr-dmarc-failure-trend-62d6a2e6-4583-4538-a476-a5b3c672657b-ff4453e5.md) |  |
@@ -225,7 +224,7 @@ This table is ingested by the following connectors:
 | [Total Emails with Admin Overrides (Block)](../content/microsoft-defender-xdr-total-emails-with-admin-overrides-block-bd6aae91-6233-430b-a5af-15c6406a7770-72f52ec6.md) |  |
 | [Total Emails with User Overrides (Allow)](../content/microsoft-defender-xdr-total-emails-with-user-overrides-allow-e6b3edc5-ec6f-44ae-9bb4-60c9ea49154e-7cec0f95.md) |  |
 | [Total Emails with User Overrides (Block)](../content/microsoft-defender-xdr-total-emails-with-user-overrides-block-74e076da-58e8-436d-b7bc-68888dbb6091-e2ae9087.md) |  |
-| [Total number of detections by MDO](../content/microsoft-defender-xdr-total-number-of-detections-by-mdo-0717b136-a1ef-4af0-a911-e189d0064099-8ced6caf.md) | `ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"` |
+| [Total number of detections by MDO](../content/microsoft-defender-xdr-total-number-of-detections-by-mdo-0717b136-a1ef-4af0-a911-e189d0064099-8ced6caf.md) |  |
 | [User Email Submissions (FN) - Top Inbound P2 Senders](../content/microsoft-defender-xdr-user-email-submissions-fn-top-inbound-p2-senders-12798858-1916-4b59-a85e-8a7a4f7b43cf-ab8f972e.md) |  |
 | [User Email Submissions (FN) - Top Inbound P2 Senders domains](../content/microsoft-defender-xdr-user-email-submissions-fn-top-inbound-p2-senders-domains-385aca1d-2135-40c6-af8e-030c9e086cf5-8ef092ad.md) |  |
 | [Zero-day Malware Detections Trend](../content/microsoft-defender-xdr-zero-day-malware-detections-trend-a370ad6f-e7fa-4740-ab9e-cb5560e3599f-205be975.md) |  |
@@ -243,7 +242,7 @@ This table is ingested by the following connectors:
 | [Bad email percentage of Inbound emails](../content/github-only-bad-email-percentage-of-inbound-emails-2a662ac9-81de-4073-9374-45e3ebd5ae90-4e51cebe.md) |  |
 | [Bazacall Emails](../content/github-only-bazacall-emails-54f12c74-fb8e-4871-a13f-4da835b319a7-e43dc686.md) |  |
 | [Bulk Emails by Sender Bulk Complaint level](../content/github-only-bulk-emails-by-sender-bulk-complaint-level-46837704-62cb-4e37-ae25-eecced47c0f4-a91c459c.md) |  |
-| [Calculate overall MDO efficacy](../content/github-only-calculate-overall-mdo-efficacy-f2206cb7-62ca-4596-9d3a-544b61963799-36a197b0.md) | `ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"` |
+| [Calculate overall MDO efficacy](../content/github-only-calculate-overall-mdo-efficacy-f2206cb7-62ca-4596-9d3a-544b61963799-36a197b0.md) |  |
 | [Campaign with suspicious keywords](../content/microsoft-defender-xdr-campaign-with-suspicious-keywords-9b086a51-e396-4718-90d7-f7b3646e6581-cc3c8c2c.md) |  |
 | [Campaign with suspicious keywords](../content/github-only-campaign-with-suspicious-keywords-9b086a51-e396-4718-90d7-f7b3646e6581-52297bd3.md) |  |
 | [CompAuth Failure Trend](../content/github-only-compauth-failure-trend-9d5d0ba9-e1b3-4dbb-9beb-e0f4c7fb6524-191fcbde.md) |  |
@@ -278,8 +277,8 @@ This table is ingested by the following connectors:
 | [Fake Replies](../content/github-only-fake-replies-8c4da386-7a95-4927-b24c-a13137294e0c-73dfc95c.md) |  |
 | [Good emails from senders with bad patterns](../content/microsoft-defender-xdr-good-emails-from-senders-with-bad-patterns-e6259b03-622e-4e11-9c54-94987dad7c14-7456ce2d.md) |  |
 | [Good emails from senders with bad patterns](../content/github-only-good-emails-from-senders-with-bad-patterns-e6259b03-622e-4e11-9c54-94987dad7c14-9962c0bd.md) |  |
-| [High Confidence Phish Released](../content/microsoft-defender-xdr-high-confidence-phish-released-9e8faa62-7222-48a5-a78f-ef2d22f866dc-1957e796.md) | `ActionType == "QuarantineReleaseMessage"` |
-| [High Confidence Phish Released](../content/github-only-high-confidence-phish-released-9e8faa62-7222-48a5-a78f-ef2d22f866dc-1ada080f.md) | `ActionType == "QuarantineReleaseMessage"` |
+| [High Confidence Phish Released](../content/microsoft-defender-xdr-high-confidence-phish-released-9e8faa62-7222-48a5-a78f-ef2d22f866dc-1957e796.md) |  |
+| [High Confidence Phish Released](../content/github-only-high-confidence-phish-released-9e8faa62-7222-48a5-a78f-ef2d22f866dc-1ada080f.md) |  |
 | [Hunt for email bombing attacks](../content/github-only-hunt-for-email-bombing-attacks-24eb9c13-c188-4b3c-8e89-654e56ce4c56-4d5b0646.md) |  |
 | [Hunt for email conversation take over attempts](../content/microsoft-defender-xdr-hunt-for-email-conversation-take-over-attempts-fb46ca1b-0b46-4d9c-b3b3-2f8f807e9f72-2af16c6e.md) |  |
 | [Hunt for email conversation take over attempts](../content/github-only-hunt-for-email-conversation-take-over-attempts-fb46ca1b-0b46-4d9c-b3b3-2f8f807e9f72-20a75c33.md) |  |
@@ -341,8 +340,8 @@ This table is ingested by the following connectors:
 | [Punycode lookalikes](../content/github-only-punycode-lookalikes-9582b09c-a5cd-4da0-8244-52cc952da158-fcc5de42.md) |  |
 | [Quarantine Phish Reason](../content/github-only-quarantine-phish-reason-5caf3813-c628-48e2-be65-71b95be7ff85-c2eed69d.md) |  |
 | [Quarantine Phish Reason trend](../content/github-only-quarantine-phish-reason-trend-6f7df1b7-5613-45e5-9b82-3ec95d86e0e8-3da95a95.md) |  |
-| [Quarantine Release Email Details](../content/microsoft-defender-xdr-quarantine-release-email-details-6f96f6d7-d972-421e-a59f-6b9a8de81324-190bb1b5.md) | `ActionType == "QuarantineReleaseMessage"` |
-| [Quarantine Release Email Details](../content/github-only-quarantine-release-email-details-6f96f6d7-d972-421e-a59f-6b9a8de81324-4e2cbc7d.md) | `ActionType == "QuarantineReleaseMessage"` |
+| [Quarantine Release Email Details](../content/microsoft-defender-xdr-quarantine-release-email-details-6f96f6d7-d972-421e-a59f-6b9a8de81324-190bb1b5.md) |  |
+| [Quarantine Release Email Details](../content/github-only-quarantine-release-email-details-6f96f6d7-d972-421e-a59f-6b9a8de81324-4e2cbc7d.md) |  |
 | [Quarantine Spam Reason](../content/github-only-quarantine-spam-reason-35b21933-9d3e-4919-b545-2ada20d26e8e-cde3bdbd.md) |  |
 | [Quarantine Spam Reason trend](../content/github-only-quarantine-spam-reason-trend-014ffc5c-0ba5-49f9-989c-3833e0d1c2b8-f2b54296.md) |  |
 | [Quarantine releases by Detection Types](../content/github-only-quarantine-releases-by-detection-types-87754d3a-0077-4ff9-b46e-6336b8d02287-c85b108a.md) |  |
@@ -416,7 +415,7 @@ This table is ingested by the following connectors:
 | [Total Emails with Admin Overrides (Block)](../content/github-only-total-emails-with-admin-overrides-block-89a0a2aa-69c8-4586-95f5-7d003901adec-48d4dc98.md) |  |
 | [Total Emails with User Overrides (Allow)](../content/github-only-total-emails-with-user-overrides-allow-d7f4b1d0-018f-4033-8618-523bde350d23-aff9a197.md) |  |
 | [Total Emails with User Overrides (Block)](../content/github-only-total-emails-with-user-overrides-block-295ac28c-919c-48b9-8a38-a0f792f2b92b-1285a66e.md) |  |
-| [Total number of detections by MDO](../content/github-only-total-number-of-detections-by-mdo-e1903106-9b25-472e-b4b7-4bcc05328a48-65f69a82.md) | `ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"` |
+| [Total number of detections by MDO](../content/github-only-total-number-of-detections-by-mdo-e1903106-9b25-472e-b4b7-4bcc05328a48-65f69a82.md) |  |
 | [User Email Submissions (FN) - Top Inbound P2 Senders](../content/github-only-user-email-submissions-fn-top-inbound-p2-senders-4e8ea1c2-723d-4f72-bac6-82c464b6731e-3639f0c9.md) |  |
 | [User Email Submissions (FN) - Top Inbound P2 Senders domains](../content/github-only-user-email-submissions-fn-top-inbound-p2-senders-domains-d7822efc-9a33-4120-8c60-661396764af1-59e33131.md) |  |
 | [User clicks on malicious inbound emails](../content/microsoft-defender-xdr-user-clicks-on-malicious-inbound-emails-891f4865-75e5-4d40-bc24-ebf97da3ca9a-a5ebfb84.md) | `ActionType == "ClickAllowed"` |
@@ -442,7 +441,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,Malware ZAP,Phish ZAP,Redelivery,Spam ZAP,UserSubmission"`<br>`ActionType == "Automated Remediation"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "ZAP"`<br>`ActionType has "Malware ZAP"`<br>`ActionType has "Phish ZAP"`<br>`ActionType has "Spam ZAP"`<br>`ActionType has "ZAP"`<br>`ActionType has_any "ClickAllowed"`<br>`ActionType has_any "ClickBlocked"`<br>`ActionType has_any "UrlErrorPage"`<br>`ActionType has_any "UrlScanInProgress"`
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,Malware ZAP,Phish ZAP,Spam ZAP,UserSubmission"`<br>`ActionType == "Automated Remediation"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "ZAP"`<br>`ActionType has "Malware ZAP"`<br>`ActionType has "Phish ZAP"`<br>`ActionType has "Spam ZAP"`<br>`ActionType has "ZAP"`<br>`ActionType has_any "ClickAllowed"`<br>`ActionType has_any "ClickBlocked"`<br>`ActionType has_any "UrlErrorPage"`<br>`ActionType has_any "UrlScanInProgress"`
 
 | Workbook |
 |:-------------|
@@ -480,35 +479,29 @@ This table is ingested by the following connectors:
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [PhishingAnalysis](../content/github-only-phishinganalysis-8b6323cf.md) |  |
 
-## Selection Criteria Summary (6 criteria, 12 total references)
+## Selection Criteria Summary (3 criteria, 4 total references)
 
-References by type: 0 connectors, 12 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 4 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `ActionType == "QuarantineReleaseMessage"` | - | 4 | - | - | **4** |
-| `ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"` | - | 2 | - | - | **2** |
-| `ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"` | - | 2 | - | - | **2** |
 | `ActionType == "ClickAllowed"` | - | 2 | - | - | **2** |
-| `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,Malware ZAP,Phish ZAP,Redelivery,Spam ZAP,UserSubmission"`<br>`ActionType == "Automated Remediation"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "ZAP"`<br>`ActionType has "Malware ZAP"`<br>`ActionType has "Phish ZAP"`<br>`ActionType has "Spam ZAP"`<br>`ActionType has "ZAP"`<br>`ActionType has_any "ClickAllowed"`<br>`ActionType has_any "ClickBlocked"`<br>`ActionType has_any "UrlErrorPage"`<br>`ActionType has_any "UrlScanInProgress"` | - | 1 | - | - | **1** |
+| `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,Malware ZAP,Phish ZAP,Spam ZAP,UserSubmission"`<br>`ActionType == "Automated Remediation"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "ZAP"`<br>`ActionType has "Malware ZAP"`<br>`ActionType has "Phish ZAP"`<br>`ActionType has "Spam ZAP"`<br>`ActionType has "ZAP"`<br>`ActionType has_any "ClickAllowed"`<br>`ActionType has_any "ClickBlocked"`<br>`ActionType has_any "UrlErrorPage"`<br>`ActionType has_any "UrlScanInProgress"` | - | 1 | - | - | **1** |
 | `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **12** | **0** | **0** | **12** |
+| **Total** | **0** | **4** | **0** | **0** | **4** |
 
 ### ActionType
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Malware ZAP` | - | 5 | - | - | **5** |
-| `Phish ZAP` | - | 5 | - | - | **5** |
-| `QuarantineReleaseMessage` | - | 4 | - | - | **4** |
-| `AdminSubmissionSubmitted` | - | 3 | - | - | **3** |
-| `Redelivery` | - | 3 | - | - | **3** |
-| `UserSubmission` | - | 3 | - | - | **3** |
-| `AdminSubmission` | - | 2 | - | - | **2** |
 | `ClickAllowed` | - | 2 | - | - | **2** |
+| `AdminSubmissionSubmitted` | - | 1 | - | - | **1** |
 | `AttackSimUserSubmission` | - | 1 | - | - | **1** |
 | `ClickBlocked` | - | 1 | - | - | **1** |
+| `Malware ZAP` | - | 1 | - | - | **1** |
+| `Phish ZAP` | - | 1 | - | - | **1** |
 | `Spam ZAP` | - | 1 | - | - | **1** |
+| `UserSubmission` | - | 1 | - | - | **1** |
 | `Automated Remediation` | - | 1 | - | - | **1** |
 | `contains Submission` | - | 1 | - | - | **1** |
 | `contains UserSubmission` | - | 1 | - | - | **1** |

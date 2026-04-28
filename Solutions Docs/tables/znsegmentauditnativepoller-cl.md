@@ -8,9 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -25,12 +23,13 @@ This table is used by the following solutions:
 
 - [ZeroNetworks](../solutions/zeronetworks.md)
 
-## Connectors (1)
+## Connectors (2)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
+| [Zero Networks Segment Audit](../connectors/znsegmentauditccpdefinition.md) |  |
 | [Zero Networks Segment Audit](../connectors/zeronetworkssegmentauditnativepoller.md) |  |
 
 ---

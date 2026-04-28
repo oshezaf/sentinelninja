@@ -26,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) | ✓ | ✓ | ✓ |
+| [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -44,18 +44,34 @@ This connector ingests data into the following tables:
 
 **1. Connect to Salesforce Service Cloud API to start collecting event logs in Microsoft Sentinel**
 
-Be advised you must have an active [Salesforce Shield Event Monitoring](https://help.salesforce.com/s/articleView?id=sf.salesforce_shield) license in order to successfully connect this data connector. If you have this license, proceed.
-
 Follow [Create a Connected App in Salesforce for OAuth](https://help.salesforce.com/s/articleView?id=platform.ev_relay_create_connected_app.htm&type=5) and [Configure a Connected App for the OAuth 2.0 Client Credentials Flow](https://help.salesforce.com/s/articleView?id=xcloud.connected_app_client_credentials_setup.htm&type=5) to create a Connected App with access to the Salesforce Service Cloud API. Through those instructions, you should get the Consumer Key and Consumer Secret.
  For Salesforce Domain name, Go to Setup, type My Domain in the Quick Find box, and select My Domain to view your domain details. Make sure to enter the domain name without a trailing slash (e.g., https://your-domain.my.salesforce.com). Fill the form below with that information.
-- **Salesforce Domain Name**: Salesforce Domain Name
-- **Log Collection Interval** (select)
+**Connector Management Interface**
+
+This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.
+
+📊 **View Existing Collectors**: A management table displays all currently configured data collectors with the following information:
+- **Salesforce Domain**
+- **Grant Type**
+
+➕ **Add New Collector**: Click the "Add new collector" button to configure a new data collector (see configuration form below).
+
+🔧 **Manage Collectors**: Use the actions menu to delete or modify existing collectors.
+
+> 💡 **Portal-Only Feature**: This configuration interface is only available when viewing the connector in the Microsoft Sentinel portal. You cannot configure data collectors through this static documentation.
+
+**Configure API Connection**
+
+*Connect to Salesforce to ingest event log file*
+
+When you click the "Add Connection" button in the portal, a configuration form will open. You'll need to provide:
+
+- **Salesforce Domain Name** (required): Example: https://your-domain.my.salesforce.com
+- **Log Collection Interval** (required): Select from available options
   - Hourly
   - Daily
-- **OAuth Configuration**:
-  - Consumer Key
-  - Consumer Secret
-  - Click 'Connect' to authenticate
+
+> 💡 **Portal-Only Feature**: This configuration form is only available in the Microsoft Sentinel portal.
 
 ---
 

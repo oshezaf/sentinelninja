@@ -26,8 +26,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ✓ |
-| [`SigninLogs`](../tables/signinlogs.md) | `OperationName == "Update Application"` | ✓ | ✗ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName == "Update Application"` | ✓ | ✗ | ? |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ? |
 
 ## Associated Connectors
 

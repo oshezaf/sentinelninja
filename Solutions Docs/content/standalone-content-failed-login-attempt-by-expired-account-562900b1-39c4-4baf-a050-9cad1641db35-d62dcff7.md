@@ -24,8 +24,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4625,4769,4776"` | ✓ | ✓ | ✓ |
-| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ✓ |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4625,4769,4776"` | ✓ | ✓ | ? |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ? |
 
 ## Associated Connectors
 

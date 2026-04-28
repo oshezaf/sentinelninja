@@ -8,10 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
-| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -57,13 +54,14 @@ This table is used by the following solutions:
 
 - [GitHub](../solutions/github.md)
 
-## Connectors (1)
+## Connectors (2)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [GitHub (using Webhooks)](../connectors/githubwebhook.md) |  |
+| [GitHub (using Webhooks) V2](../connectors/githubwebhookv2.md) |  |
 
 ---
 
@@ -78,15 +76,16 @@ This table is ingested by the following connectors:
 | [GitHub](../content/github-github-87916f66.md) |  |
 | [GitHubAdvancedSecurity](../content/github-githubadvancedsecurity-62e1aa58.md) |  |
 
-## Parsers Using This Table (3)
+## Parsers Using This Table (4)
 
-### Other Parsers (3)
+### Other Parsers (4)
 
 | Parser | Solution | Selection Criteria |
 |:-------|:---------|:-------------------|
 | [GitHubCodeScanningData](../parsers/githubcodescanningdata.md) | [GitHub](../solutions/github.md) |  |
 | [GitHubDependabotData](../parsers/githubdependabotdata.md) | [GitHub](../solutions/github.md) |  |
 | [GitHubSecretScanningData](../parsers/githubsecretscanningdata.md) | [GitHub](../solutions/github.md) |  |
+| [githubscanaudit](../parsers/githubscanaudit.md) | [GitHub](../solutions/github.md) |  |
 
 ---
 

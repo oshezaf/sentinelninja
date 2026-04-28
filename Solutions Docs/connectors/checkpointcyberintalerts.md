@@ -1,6 +1,6 @@
 # Check Point Cyberint Alerts Connector (via Codeless Connector Platform)
 
-<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/checkpoint-cyberint.svg" alt="" width="75" height="75">
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/checkpoint.svg" alt="" width="75" height="75">
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -26,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`argsentdc_CL`](../tables/argsentdc-cl.md) | ✓ | ✓ | ✓ |
+| [`argsentdc_CL`](../tables/argsentdc-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -36,7 +36,7 @@ This connector ingests data into the following tables:
 - **Workspace** (Workspace): Read and Write permissions are required.
 
 **Custom Permissions:**
-- **Check Point Cyberint API Key, Argos URL, and Customer Name**: The connector API key, Argos URL, and Customer Name are required
+- **Check Point Cyberint API Key, Argos URL, Customer Name**: The connector API key, Argos URL, and Customer Name are required. Include CSV Attachments as JSON is optional.
 
 ## Setup Instructions
 
@@ -45,10 +45,28 @@ This connector ingests data into the following tables:
 **1. Connect Checkpoint Cyberint Alerts to Microsoft Sentinel**
 
 To enable the connector provide the required information below and click on Connect.
+
+**Argos URL** — Cyberint API URL for your tenant (e.g. `https://your_tenant.cyberint.io`)
+
+**API Token** — Cyberint API access token
+
+**Customer Name** — Company (client) name associated with your Cyberint instance
+
+**Severity** — Comma-separated list of severities to fetch (low, medium, high, very_high). If empty, all severities are fetched.
+
+**Environments** — Comma-separated list of environments to fetch (e.g. Production,Staging). If empty, all environments are fetched.
+
+**Polling Interval** — How often to poll for new alerts, in minutes (default: 5)
+
+**Include CSV Attachments as JSON** — Whether to include CSV attachments as JSON content in alerts (default: false)
 >
-- **Argos URL**: Argos URL
+- **Argos URL**: https://your_tenant.cyberint.io
 - **API Token**: (password field)
-- **Customer Name**: Customer Name
+- **Customer Name**: Company (client) name associated with your Cyberint instance
+- **Severity**: Comma-separated list (e.g. low,medium,high,very_high)
+- **Environments**: Comma-separated list
+- **Polling Interval (Minutes)**: Polling frequency in minutes
+- **Include CSV Attachments as JSON**: true or false
 - Click 'Connect' to establish connection
 
 ---

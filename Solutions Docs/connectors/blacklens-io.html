@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>blacklens.io &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="blacklensio">blacklens.io</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/blacklens.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>blacklens_io</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">snapSEC GmbH</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/blacklens.html">Blacklens</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/rest-pull-api.html">REST Pull API</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Blacklens/Data%20Connectors/blacklens_io.json">blacklens_io.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Connector definition requires workspace key (SharedKey pattern)</em></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://blacklens.io">blacklens.io</a> data connector allows you to ingest Attack Surface Management alerts from blacklens.io into Microsoft Sentinel using a webhook-based Logic App and the Azure Monitor Logs Ingestion API.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/blacklens-cl.html"><code>blacklens_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Azure Subscription</strong>: Contributor or Owner permissions on the resource group are required to deploy the data ingestion infrastructure (Data Collection Endpoint, Data Collection Rule, custom table, and Logic App).
+- <strong>blacklens.io Account</strong>: A blacklens.io account with webhook integration capabilities is required.</p>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Step 1 - Deploy the data ingestion infrastructure</strong></p>
+<p>This step deploys the required Azure resources: a Data Collection Endpoint, Data Collection Rule, custom Log Analytics table (<code>blacklens_CL</code>), and a webhook-triggered Logic App.</p>
+<ol>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below.</p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FBlacklens%2FData%20Connectors%2Fdeployment%2Fazuredeploy_blacklens.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
+</li>
+<li>
+<p>Select the <strong>Subscription</strong>, <strong>Resource Group</strong>, and <strong>Location</strong> where your Microsoft Sentinel workspace resides.</p>
+</li>
+<li>Enter the <strong>Workspace Name</strong> of your Log Analytics workspace.</li>
+<li>Click <strong>Review + create</strong> and then <strong>Create</strong>.</li>
+</ol>
+<p><strong>2. Step 2 - Copy the webhook URL</strong></p>
+<ol>
+<li>After the deployment succeeds, click the <strong>Outputs</strong> tab on the deployment page.</li>
+<li>Copy the <strong>webhookUrl</strong> value.</li>
+</ol>
+<p>Alternatively, navigate to <strong>Logic Apps</strong> &gt; <code>la-blacklens-alert-log-ingestion</code> &gt; <strong>Overview</strong> and copy the <strong>Workflow URL</strong>.</p>
+<p><strong>3. Step 3 - Configure blacklens.io</strong></p>
+<ol>
+<li>Log in to the <a href="https://blacklens.io">blacklens.io portal</a>.</li>
+<li>Navigate to the webhook integration settings.</li>
+<li>Paste the webhook URL copied in Step 2.</li>
+<li>Save the configuration.</li>
+<li>Link the webhook integration to at least one <strong>notification policy</strong> so that alerts are sent to the webhook.</li>
+</ol>
+<p>After a few minutes, a test incident should appear in Microsoft Sentinel.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+</div>
+
+</body>
+</html>

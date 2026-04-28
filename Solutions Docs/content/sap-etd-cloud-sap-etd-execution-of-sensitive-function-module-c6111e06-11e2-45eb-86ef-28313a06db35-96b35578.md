@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SAPETDAlerts_CL`](../tables/sapetdalerts-cl.md) | ✓ | ✓ | ✓ |
+| [`SAPETDAlerts_CL`](../tables/sapetdalerts-cl.md) | ? | ✓ | ? |
 
 ---
 

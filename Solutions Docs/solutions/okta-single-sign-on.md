@@ -16,7 +16,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 3.1.2 |
+| **Version** | 3.1.6 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-03-24 |
 | **Last Updated** | 2026-01-14 |
@@ -49,9 +49,9 @@ The [Okta Single Sign-On (SSO)](https://www.okta.com/products/single-sign-on) so
 
 This solution provides **2 data connector(s)** (plus 2 discovered⚠️):
 
-- [Okta Single Sign-On](../connectors/oktasso.md) 🔶
+- [[DEPRECATED] Okta Single Sign-On (using Azure Function)](../connectors/oktasso.md) 🔶
 - [Okta Single Sign-On (Polling CCP)](../connectors/oktasso-polling.md) ⚠️
-- [Okta Single Sign-On](../connectors/oktassov2.md) 🔶
+- [Okta Single Sign-On (via Codeless Connector Framework)](../connectors/oktassov2.md) 🔶
 - [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon-usingazurefunctions.md) ⚠️ 🔶
 
 > 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
@@ -66,8 +66,8 @@ This solution uses **3 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`OktaNativePoller_CL`](../tables/oktanativepoller-cl.md) | [Okta Single Sign-On (Polling CCP)](../connectors/oktasso-polling.md) | - |
-| [`OktaV2_CL`](../tables/oktav2-cl.md) | [Okta Single Sign-On](../connectors/oktassov2.md), [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon-usingazurefunctions.md) | Analytics, Hunting, Workbooks |
-| [`Okta_CL`](../tables/okta-cl.md) 🔶 | [Okta Single Sign-On](../connectors/oktasso.md), [Okta Single Sign-On](../connectors/oktassov2.md), [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon-usingazurefunctions.md) | Analytics, Hunting, Workbooks |
+| [`OktaV2_CL`](../tables/oktav2-cl.md) | [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon-usingazurefunctions.md), [Okta Single Sign-On (via Codeless Connector Framework)](../connectors/oktassov2.md) | Analytics, Hunting, Workbooks |
+| [`Okta_CL`](../tables/okta-cl.md) 🔶 | [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon-usingazurefunctions.md), [Okta Single Sign-On (via Codeless Connector Framework)](../connectors/oktassov2.md), [[DEPRECATED] Okta Single Sign-On (using Azure Function)](../connectors/oktasso.md) | Analytics, Hunting, Workbooks |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
@@ -137,6 +137,8 @@ This solution includes **24 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                            |
 |-------------|--------------------------------|---------------------------------------------------------------|
+| 3.1.6       | 14-04-2026                     | Deprecate Okta Single Sign-On (using Azure Function) |
+| 3.1.5       | 02-04-2026                     | Rename CCF solution to Okta Single Sign-On (via Codeless Connector Framework).<br> Add SessionId variable and reference in template. |
 | 3.1.4       | 13-01-2026                     | Updated non-functional link from MFA Fatigue (OKTA) **Analytic rule** |
 | 3.1.3       | 05-02-2025                     | Version Update |
 | 3.1.2       | 06-01-2025                     | Removing Custom Entity mappings from **Analytic Rule**                         |

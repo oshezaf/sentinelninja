@@ -16,7 +16,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | domains |
-| **Version** | 3.0.5 |
+| **Version** | 3.0.7 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-23 |
 | **Last Updated** | 2026-03-20 |
@@ -42,16 +42,18 @@ The [Zoom](https://zoom.us/) Reports solution enables you to ingest Zoom Reports
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution provides **2 data connector(s)**:
 
 - [Zoom Reports](../connectors/zoom.md)
+- [Zoom Reports Connector (via Codeless Connector Framework)](../connectors/zoomreportsconnector.md)
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`ZoomV2_CL`](../tables/zoomv2-cl.md) | [Zoom Reports Connector (via Codeless Connector Framework)](../connectors/zoomreportsconnector.md) | - |
 | [`Zoom_CL`](../tables/zoom-cl.md) | [Zoom Reports](../connectors/zoom.md) | Workbooks |
 
 ## Content Items
@@ -102,6 +104,8 @@ If you run into issues while creating for [Server to Server Oauth App](https://d
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.0.7       | 18-03-2026                     | Updated ZoomReports CCF to use a different table name and schema |
+| 3.0.6       | 13-03-2026                     | Added ZoomReports CCF Connector Public Preview |
 | 3.0.5       | 29-08-2024                     | Updated the python runtime version to 3.11  | 
 | 3.0.4       | 26-04-2024                     | Repackaged for fix on parser in maintemplate to have old parsername and parentid                    |
 | 3.0.3       | 18-04-2024                     | Repackaged for fix on parser in maintemplate                    |

@@ -1,4 +1,6 @@
-# IONIX Security Logs
+# 🚫 [DEPRECATED] IONIX Security Logs (Push)
+
+> 🚫 **Deprecated:** This connector has been deprecated and may be removed in future versions.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ionix-logo.svg" alt="" width="75" height="75">
 
@@ -18,7 +20,15 @@
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 
-The IONIX Security Logs data connector, ingests logs from the IONIX system directly into Sentinel. The connector allows users to visualize their data, create alerts and incidents and improve security investigations.
+⚠️ **This connector is deprecated and will be removed in June 2026.** Please use the new 'IONIX Security Logs (via Codeless Connector Framework)' connector instead, which provides automatic daily polling without requiring manual configuration in the IONIX portal.
+
+
+
+---
+
+
+
+The IONIX Security Logs data connector ingests logs from the IONIX system directly into Sentinel. The connector allows users to visualize their data, create alerts and incidents and improve security investigations.
 
 ## Tables Ingested
 
@@ -26,7 +36,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CyberpionActionItems_CL`](../tables/cyberpionactionitems-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`CyberpionActionItems_CL`](../tables/cyberpionactionitems-cl.md) 🔶 | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

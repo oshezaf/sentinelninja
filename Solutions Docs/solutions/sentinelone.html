@@ -46,7 +46,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.0.7</td>
+<td style="text-align: left;">3.0.9</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -58,7 +58,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Last Updated</strong></td>
-<td style="text-align: left;">2026-01-12</td>
+<td style="text-align: left;">2026-04-17</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Solution Folder</strong></td>
@@ -84,8 +84,8 @@
 <h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>2 data connector(s)</strong>:</p>
 <ul>
-<li><a href="../connectors/sentinelone.html">SentinelOne</a> 🔶</li>
-<li><a href="../connectors/sentineloneccp.html">SentinelOne</a></li>
+<li><a href="../connectors/sentinelone.html">[DEPRECATED] SentinelOne (using Azure Function)</a> 🔶</li>
+<li><a href="../connectors/sentineloneccp.html">SentinelOne (via Codeless Connector Framework)</a></li>
 </ul>
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
@@ -103,32 +103,32 @@
 <tbody>
 <tr>
 <td><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a></td>
-<td><a href="../connectors/sentinelone.html">SentinelOne</a>, <a href="../connectors/sentineloneccp.html">SentinelOne</a></td>
+<td><a href="../connectors/sentineloneccp.html">SentinelOne (via Codeless Connector Framework)</a>, <a href="../connectors/sentinelone.html">[DEPRECATED] SentinelOne (using Azure Function)</a></td>
 <td>Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
 <td><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a></td>
-<td><a href="../connectors/sentinelone.html">SentinelOne</a>, <a href="../connectors/sentineloneccp.html">SentinelOne</a></td>
+<td><a href="../connectors/sentineloneccp.html">SentinelOne (via Codeless Connector Framework)</a>, <a href="../connectors/sentinelone.html">[DEPRECATED] SentinelOne (using Azure Function)</a></td>
 <td>Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
 <td><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a></td>
-<td><a href="../connectors/sentinelone.html">SentinelOne</a>, <a href="../connectors/sentineloneccp.html">SentinelOne</a></td>
+<td><a href="../connectors/sentineloneccp.html">SentinelOne (via Codeless Connector Framework)</a>, <a href="../connectors/sentinelone.html">[DEPRECATED] SentinelOne (using Azure Function)</a></td>
 <td>Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
 <td><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a></td>
-<td><a href="../connectors/sentinelone.html">SentinelOne</a>, <a href="../connectors/sentineloneccp.html">SentinelOne</a></td>
+<td><a href="../connectors/sentineloneccp.html">SentinelOne (via Codeless Connector Framework)</a>, <a href="../connectors/sentinelone.html">[DEPRECATED] SentinelOne (using Azure Function)</a></td>
 <td>Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
 <td><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a></td>
-<td><a href="../connectors/sentinelone.html">SentinelOne</a>, <a href="../connectors/sentineloneccp.html">SentinelOne</a></td>
+<td><a href="../connectors/sentineloneccp.html">SentinelOne (via Codeless Connector Framework)</a>, <a href="../connectors/sentinelone.html">[DEPRECATED] SentinelOne (using Azure Function)</a></td>
 <td>Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
 <td><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a> 🔶</td>
-<td><a href="../connectors/sentinelone.html">SentinelOne</a></td>
+<td><a href="../connectors/sentinelone.html">[DEPRECATED] SentinelOne (using Azure Function)</a></td>
 <td>Analytics, Hunting, Workbooks</td>
 </tr>
 </tbody>
@@ -347,6 +347,16 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>3.0.9</td>
+<td>14-04-2026</td>
+<td>Deprecate SentinelOne (using Azure Function)</td>
+</tr>
+<tr>
+<td>3.0.8</td>
+<td>24-03-2026</td>
+<td>Rename CCF solution to SentinelOne (via Codeless Connector Framework)</td>
+</tr>
 <tr>
 <td>3.0.7</td>
 <td>09-01-2026</td>

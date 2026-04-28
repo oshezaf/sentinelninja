@@ -47,7 +47,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">1.0.0</td>
+<td style="text-align: left;">3.0.1</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -72,6 +72,7 @@
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
@@ -99,6 +100,67 @@
 <td><a href="../tables/versaseccmssyslogs-cl.html"><code>VersasecCmsSysLogs_CL</code></a></td>
 <td><a href="../connectors/versaseccmsccpdefinition.html">VersasecCms</a></td>
 <td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>3 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/versaseccms-versasec-cms-multiple-failed-login-attempts-b1db8b7e-9d74-48c3-9683-74483cbeff4e-7caa6cd1.html">Versasec CMS - Multiple Failed Login Attempts</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">CredentialAccess</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/versaseccmserror.html">VersasecCmsError</a></td>
+<td style="text-align: left;">Structured view of Versasec CMS error events</td>
+<td style="text-align: left;"><a href="../tables/versaseccmserrorlogs-cl.html"><code>VersasecCmsErrorLogs_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/versaseccmssyslog.html">VersasecCmsSyslog</a></td>
+<td style="text-align: left;">Standardized parser for Versasec CMS system activities</td>
+<td style="text-align: left;"><a href="../tables/versaseccmssyslogs-cl.html"><code>VersasecCmsSysLogs_CL</code></a> <em>(read)</em></td>
 </tr>
 </tbody>
 </table>
@@ -130,9 +192,19 @@
 </thead>
 <tbody>
 <tr>
+<td>3.0.2</td>
+<td>25-02-2026</td>
+<td>ApiVersion for SavedSearches has been updated by Micrososft</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>05-02-2026</td>
+<td>Improvement in paging request and added new <strong>Analytic Rule</strong> and <strong>Parsers</strong>.</td>
+</tr>
+<tr>
 <td>3.0.0</td>
 <td>11-12-2025</td>
-<td>Initial version</td>
+<td>Initial Solution Release.</td>
 </tr>
 </tbody>
 </table>

@@ -16,10 +16,10 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 2.0.2 |
+| **Version** | 3.1.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-09-28 |
-| **Last Updated** | 2026-04-01 |
+| **Last Updated** | 2026-04-16 |
 | **Solution Folder** | [ImpervaCloudWAF](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ImpervaCloudWAF) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-impervawafcloud) · Popularity: 🔵 Medium (79%) |
 
@@ -45,7 +45,7 @@ c. [Codeless Connector Framework (CCF)](https://learn.microsoft.com/en-us/azure/
 
 This solution provides **2 data connector(s)**:
 
-- [Imperva Cloud WAF](../connectors/impervacloudwaflogsccfdefinition.md)
+- [Imperva Cloud WAF (via Codeless Connector Framework)](../connectors/impervacloudwaflogsccfdefinition.md) 🔶
 - [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) 🔶
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
@@ -53,12 +53,13 @@ This solution provides **2 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **2 table(s)**:
+This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ImpervaWAFCloudV2_CL`](../tables/impervawafcloudv2-cl.md) | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md), [Imperva Cloud WAF](../connectors/impervacloudwaflogsccfdefinition.md) | - |
-| [`ImpervaWAFCloud_CL`](../tables/impervawafcloud-cl.md) 🔶 | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) | - |
+| [`ImpervaWAFCloudV2_CL`](../tables/impervawafcloudv2-cl.md) | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md), [Imperva Cloud WAF (via Codeless Connector Framework)](../connectors/impervacloudwaflogsccfdefinition.md) | - |
+| [`ImpervaWAFCloud_CL`](../tables/impervawafcloud-cl.md) 🔶 | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md), [Imperva Cloud WAF (via Codeless Connector Framework)](../connectors/impervacloudwaflogsccfdefinition.md) | - |
+| [`SentinelImpervaWAFCloudV2Logs`](../tables/sentinelimpervawafcloudv2logs.md) | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md), [Imperva Cloud WAF (via Codeless Connector Framework)](../connectors/impervacloudwaflogsccfdefinition.md) | - |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
@@ -114,12 +115,14 @@ This solution includes **22 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ImpervaWAFCloud](../parsers/impervawafcloud.md) | - | [`ImpervaWAFCloudV2_CL`](../tables/impervawafcloudv2-cl.md) *(read)*<br>[`ImpervaWAFCloud_CL`](../tables/impervawafcloud-cl.md) *(read)* |
+| [ImpervaWAFCloud](../parsers/impervawafcloud.md) | - | [`ImpervaWAFCloudV2_CL`](../tables/impervawafcloudv2-cl.md) *(read)*<br>[`ImpervaWAFCloud_CL`](../tables/impervawafcloud-cl.md) *(read)*<br>[`SentinelImpervaWAFCloudV2Logs`](../tables/sentinelimpervawafcloudv2logs.md) *(read)* |
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                               |
-|-------------|--------------------------------|------------------------------------------------- |  
+|-------------|--------------------------------|------------------------------------------------- |
+| 3.1.1       | 10-04-2026                     |  Add `"CsvEscapeMode": "NoEscape"` to prevent logs with embedded JSON from being dropped during ingestion |
+| 3.1.0       | 30-03-2026                     |  Promoted the Imperva Cloud WAF CCF connector to Public Preview |
 | 3.0.2       | 06-06-2025                     |  Migrated the **Function app** connector to **CCF** Data connector and updated **Parser**     |
 | 3.0.1       | 07-11-2024                     |  Added existing ***Parser* into the solution     | 
 | 3.0.0       | 22-08-2024                     |  Updated the python runtime version to **3.11**  |

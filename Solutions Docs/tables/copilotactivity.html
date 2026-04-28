@@ -47,10 +47,6 @@
 <td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
-</tr>
-<tr>
 <td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/copilotactivity">View Documentation</a></td>
 </tr>
@@ -61,6 +57,7 @@
 <li><a href="#schema">Schema</a></li>
 <li><a href="#solutions">Solutions</a></li>
 <li><a href="#connectors">Connectors</a></li>
+<li><a href="#content-items-using-this-table">Content Items</a></li>
 </ul>
 <h2 id="schema">Schema (24 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/copilotactivity">Azure Monitor documentation</a></p>
@@ -217,6 +214,86 @@
 </tbody>
 </table>
 <hr />
+<h2 id="content-items-using-this-table">Content Items Using This Table (8)</h2>
+<h3 id="analytic-rules">Analytic Rules (4)</h3>
+<p><strong>In solution <a href="../solutions/microsoft-copilot.html">Microsoft Copilot</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Analytic Rule</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-copilot-copilot-file-uploads-disabled-c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8-2b49efb6.html">Copilot - File Uploads Disabled</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-copilot-copilot-jailbreak-attempt-detected-e5f6a7b8-c9d0-41e2-f3a4-b5c6d7e8f9a0-37101c05.html">Copilot - Jailbreak Attempt Detected</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-copilot-copilot-plugin-created-by-non-admin-user-a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6-534a022a.html">Copilot - Plugin Created by Non-Admin User</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-copilot-copilot-plugin-tampering-enable-and-disable-within-5-minutes-d4e5f6a7-b8c9-40d1-e2f3-a4b5c6d7e8f9-e650fbfe.html">Copilot - Plugin Tampering (Enable and Disable Within 5 Minutes)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hunting-queries">Hunting Queries (2)</h3>
+<p><strong>In solution <a href="../solutions/microsoft-copilot.html">Microsoft Copilot</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Hunting Query</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-copilot-copilot-access-from-external-ip-address-f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1-76209661.html">Copilot - Access From External IP Address</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-copilot-copilot-plugin-enabled-after-being-disabled-b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7-7fec45a8.html">Copilot - Plugin Enabled After Being Disabled</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks (2)</h3>
+<p><strong>In solution <a href="../solutions/microsoft-copilot.html">Microsoft Copilot</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Workbook</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-copilot-microsoftcopilotactivitymonitoring-4219cdf5.html">MicrosoftCopilotActivityMonitoring</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Workbook</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-microsoftcopilotactivitymonitoring-5169439d.html">MicrosoftCopilotActivityMonitoring</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>

@@ -397,7 +397,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="solutions">Solutions (15)</h2>
+<h2 id="solutions">Solutions (16)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a></li>
@@ -413,6 +413,7 @@
 <li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 <li><a href="../solutions/threat-intelligence.html">Threat Intelligence</a></li>
 <li><a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></li>
+<li><a href="../solutions/visa-threat-intelligence-vti.html">Visa Threat Intelligence (VTI)</a></li>
 <li><a href="../solutions/web-shells-threat-protection.html">Web Shells Threat Protection</a></li>
 <li><a href="../solutions/zinc-open-source.html">Zinc Open Source</a></li>
 </ul>
@@ -433,8 +434,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (124)</h2>
-<h3 id="analytic-rules">Analytic Rules (21)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (125)</h2>
+<h3 id="analytic-rules">Analytic Rules (22)</h3>
 <p><strong>In solution <a href="../solutions/falconfriday.html">FalconFriday</a>:</strong></p>
 <table>
 <thead>
@@ -488,7 +489,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-potential-build-process-compromise-mde-1bf6e165-5e32-420e-ab4f-0da8558a8be2-c676927e.html">Potential Build Process Compromise - MDE</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActionType in "FileCreated,FileModified"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-rare-process-as-a-service-91a451e3-178f-41b2-9e5d-da97d75b9971-365d2f3a.html">Rare Process as a Service</a></td>
@@ -530,6 +531,21 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-file-hash-to-devicefileevents-event-d6f04915-4471-4cb3-b163-a8b72997cf72-94f54e22.html">TI map File Hash to DeviceFileEvents Event</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/visa-threat-intelligence-vti.html">Visa Threat Intelligence (VTI)</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Analytic Rule</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/visa-threat-intelligence-vti-vti-high-severity-sha1-collision-detection-dbd9e28f-973d-47f3-a8c3-9e18da846870-1dd78c47.html">VTI - High Severity SHA1 Collision Detection</a></td>
 <td style="text-align: left;"></td>
 </tr>
 </tbody>
@@ -1158,7 +1174,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-solarwindspostcompromisehunting-09062974.html">SolarWindsPostCompromiseHunting</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActionType == "RemoteInteractiveLogon"</code><br><code>ActionType == "LdapSearch"</code></td>
 </tr>
 </tbody>
 </table>
@@ -1182,8 +1198,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (6 criteria, 15 total references)</h2>
-<p>References by type: 0 connectors, 15 content items, 0 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (6 criteria, 16 total references)</h2>
+<p>References by type: 0 connectors, 16 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -1203,6 +1219,14 @@
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;"><strong>9</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType in "FileCreated,FileModified"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>ActionType in "FileCreated,FileRenamed"</code></td>
@@ -1229,14 +1253,6 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType in "FileCreated,FileModified"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
@@ -1247,10 +1263,10 @@
 <tr>
 <td style="text-align: left;"><strong>Total</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>15</strong></td>
+<td style="text-align: center;"><strong>16</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>15</strong></td>
+<td style="text-align: center;"><strong>16</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1270,10 +1286,10 @@
 <tr>
 <td style="text-align: left;"><code>FileCreated</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">13</td>
+<td style="text-align: center;">14</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>13</strong></td>
+<td style="text-align: center;"><strong>14</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>FileRenamed</code></td>
@@ -1286,10 +1302,10 @@
 <tr>
 <td style="text-align: left;"><code>FileModified</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>Add member to role</code></td>

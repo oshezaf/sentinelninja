@@ -85,7 +85,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Netskope Alerts and Events](../connectors/netskopealertsevents.md) |  |
+| [Netskope Alerts and Events (via Codeless Connector Framework)](../connectors/netskopealertsevents.md) |  |
 
 ---
 

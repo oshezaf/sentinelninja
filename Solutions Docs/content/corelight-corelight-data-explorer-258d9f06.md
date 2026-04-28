@@ -22,6 +22,7 @@ This content item queries data from the following tables:
 | [`Corelight_v2_capture_loss_CL`](../tables/corelight-v2-capture-loss-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_cip_CL`](../tables/corelight-v2-cip-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_conn_CL`](../tables/corelight-v2-conn-cl.md) 🔶 | ? | ✓ | ? |
+| [`Corelight_v2_conn_agg_CL`](../tables/corelight-v2-conn-agg-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_conn_long_CL`](../tables/corelight-v2-conn-long-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_conn_red_CL`](../tables/corelight-v2-conn-red-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_corelight_burst_CL`](../tables/corelight-v2-corelight-burst-cl.md) 🔶 | ? | ✓ | ? |
@@ -33,6 +34,7 @@ This content item queries data from the following tables:
 | [`Corelight_v2_dhcp_CL`](../tables/corelight-v2-dhcp-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_dnp3_CL`](../tables/corelight-v2-dnp3-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_dns_CL`](../tables/corelight-v2-dns-cl.md) 🔶 | ? | ✓ | ? |
+| [`Corelight_v2_dns_agg_CL`](../tables/corelight-v2-dns-agg-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_dns_red_CL`](../tables/corelight-v2-dns-red-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_dpd_CL`](../tables/corelight-v2-dpd-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_encrypted_dns_CL`](../tables/corelight-v2-encrypted-dns-cl.md) 🔶 | ? | ✓ | ? |
@@ -41,12 +43,14 @@ This content item queries data from the following tables:
 | [`Corelight_v2_enip_list_identity_CL`](../tables/corelight-v2-enip-list-identity-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_etc_viz_CL`](../tables/corelight-v2-etc-viz-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_files_CL`](../tables/corelight-v2-files-cl.md) 🔶 | ? | ✓ | ? |
+| [`Corelight_v2_files_agg_CL`](../tables/corelight-v2-files-agg-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_files_red_CL`](../tables/corelight-v2-files-red-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_ftp_CL`](../tables/corelight-v2-ftp-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_generic_dns_tunnels_CL`](../tables/corelight-v2-generic-dns-tunnels-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_generic_icmp_tunnels_CL`](../tables/corelight-v2-generic-icmp-tunnels-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_http2_CL`](../tables/corelight-v2-http2-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_http_CL`](../tables/corelight-v2-http-cl.md) 🔶 | ? | ✓ | ? |
+| [`Corelight_v2_http_agg_CL`](../tables/corelight-v2-http-agg-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_http_red_CL`](../tables/corelight-v2-http-red-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_icmp_specific_tunnels_CL`](../tables/corelight-v2-icmp-specific-tunnels-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_intel_CL`](../tables/corelight-v2-intel-cl.md) 🔶 | ? | ✓ | ? |
@@ -100,6 +104,7 @@ This content item queries data from the following tables:
 | [`Corelight_v2_specific_dns_tunnels_CL`](../tables/corelight-v2-specific-dns-tunnels-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_ssh_CL`](../tables/corelight-v2-ssh-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_ssl_CL`](../tables/corelight-v2-ssl-cl.md) 🔶 | ? | ✓ | ? |
+| [`Corelight_v2_ssl_agg_CL`](../tables/corelight-v2-ssl-agg-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_ssl_red_CL`](../tables/corelight-v2-ssl-red-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_stats_CL`](../tables/corelight-v2-stats-cl.md) 🔶 | ? | ✓ | ? |
 | [`Corelight_v2_stepping_CL`](../tables/corelight-v2-stepping-cl.md) 🔶 | ? | ✓ | ? |

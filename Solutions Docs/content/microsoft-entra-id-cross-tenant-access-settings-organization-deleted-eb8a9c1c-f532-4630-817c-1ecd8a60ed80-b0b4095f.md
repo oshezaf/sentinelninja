@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) | `OperationName has "Delete partner specific cross-tenant access setting"` | ✓ | ✗ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName has "Delete partner specific cross-tenant access setting"` | ✓ | ✗ | ? |
 
 ---
 

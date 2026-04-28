@@ -30,16 +30,8 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes</td>
-</tr>
-<tr>
 <td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
 <td style="text-align: left;">✓ Yes</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -50,7 +42,7 @@
 <li><a href="#connectors">Connectors</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 </ul>
-<h2 id="schema">Schema (13 columns)</h2>
+<h2 id="schema">Schema (14 columns)</h2>
 <p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SAPETDAlerts_CL.json">KQL validation test schema</a></p>
 <table id="schema-table">
 <thead>
@@ -107,6 +99,10 @@
 <tr>
 <td style="text-align: left;">TimeGenerated</td>
 <td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">Users</td>
+<td style="text-align: left;">dynamic</td>
 </tr>
 <tr>
 <td style="text-align: left;">Version</td>

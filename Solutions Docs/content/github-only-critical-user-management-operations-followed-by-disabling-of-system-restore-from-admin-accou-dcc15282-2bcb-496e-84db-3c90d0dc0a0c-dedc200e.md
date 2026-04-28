@@ -24,11 +24,11 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ? |
 | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ | ? |
 | [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | ? |
-| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ✓ |
-| [`WindowsEvent`](../tables/windowsevent.md) | `EventID == "4688"` | ✓ | ✓ | ✓ |
+| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ? |
+| [`WindowsEvent`](../tables/windowsevent.md) | `EventID == "4688"` | ✓ | ✓ | ? |
 
 ## Associated Connectors
 

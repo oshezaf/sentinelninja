@@ -6,7 +6,7 @@
 
 ---
 
-The query detects a scheduled task, created/updated remotely, using the Schtasks process.  Threat actors are using scheduled tasks for establishing persistence and moving laterally through the network. Ref: https://blog.menasec.net/2019/03/threat-hunting-25-scheduled-tasks-for.html
+The query detects a scheduled task, created/updated remotely, using the Schtasks process.  Threat actors are using scheduled tasks for establishing persistence and moving laterally through the network.
 
 | Attribute | Value |
 |:----------|:------|
@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "4688"` | ✓ | ✓ | ✓ |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "4688"` | ✓ | ✓ | ? |
 
 ---
 

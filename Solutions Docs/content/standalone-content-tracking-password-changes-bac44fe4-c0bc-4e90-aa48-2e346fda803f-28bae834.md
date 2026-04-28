@@ -24,12 +24,12 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ | ✓ |
-| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ | ✓ |
-| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ | ✓ |
-| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ | ✓ |
-| [`Syslog`](../tables/syslog.md) | ✓ | ✓ | ✓ |
-| [`WindowsEvent`](../tables/windowsevent.md) | ✓ | ✓ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ | ? |
+| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ | ? |
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ | ? |
+| [`Syslog`](../tables/syslog.md) | ✓ | ✓ | ? |
+| [`WindowsEvent`](../tables/windowsevent.md) | ✓ | ✓ | ? |
 
 ## Associated Connectors
 

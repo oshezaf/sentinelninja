@@ -24,8 +24,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | `RecordType == "SharePointFileOperation"` | ✓ | ✗ | ✓ |
-| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ✓ |
+| [`OfficeActivity`](../tables/officeactivity.md) | `RecordType == "SharePointFileOperation"` | ✓ | ✗ | ? |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ? |
 
 ---
 

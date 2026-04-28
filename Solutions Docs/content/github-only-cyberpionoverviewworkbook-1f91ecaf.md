@@ -18,7 +18,7 @@ The following connectors provide data for this content item:
 
 | Connector | Solution |
 |:----------|:---------|
-| [CyberpionSecurityLogs](../connectors/cyberpionsecuritylogs.md) | [IONIX](../solutions/ionix.md) |
+| [IONIXDefinition](../connectors/ionixdefinition.md) | [IONIX](../solutions/ionix.md) |
 
 **Solutions:** [IONIX](../solutions/ionix.md)
 

@@ -14,7 +14,6 @@ Reference for AZFWIdpsSignature table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azfwidpssignature) |
 
 ## Contents
@@ -66,16 +65,21 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (8)
 
-### Analytic Rules (2)
+### Analytic Rules (7)
 
 **In solution [Azure Firewall](../solutions/azure-firewall.md):**
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Abnormal Deny Rate for Source IP](../content/azure-firewall-abnormal-deny-rate-for-source-ip-d36bb1e3-5abc-4037-ad9a-24ba3469819e-bcaa208f.md) |  |
+| [DDoS attack detected](../content/azure-firewall-ddos-attack-detected-c3ffdbe6-2e62-4984-9e80-933ed90b2f6a-59acf5f9.md) |  |
+| [Elevation of Privilege attempt detected](../content/azure-firewall-elevation-of-privilege-attempt-detected-7a0f78b3-9a55-4ad0-a56d-b6616fdbff6a-b129ebd8.md) |  |
+| [High severity malicious activity detected](../content/azure-firewall-high-severity-malicious-activity-detected-504257c1-81e2-4609-8d40-b395e62f11c7-f6b4b12e.md) |  |
+| [Medium severity malicious activity detected](../content/azure-firewall-medium-severity-malicious-activity-detected-dfbe3963-42fb-4ebe-a00c-1cc44e2aa9f0-618233f6.md) |  |
 | [Several deny actions registered](../content/azure-firewall-several-deny-actions-registered-f8dad4e9-3f19-4d70-ab7f-8f19ccd43a3e-e192f460.md) |  |
+| [Web Application attack detected](../content/azure-firewall-web-application-attack-detected-8159a8d2-13a5-49af-847b-e062c45ab92b-0ae6b75d.md) |  |
 
 ### Workbooks (1)
 

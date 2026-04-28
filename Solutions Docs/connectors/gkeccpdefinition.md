@@ -28,7 +28,7 @@ This connector ingests data into the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`GKEAPIServer`](../tables/gkeapiserver.md) | ✓ | ✓ | ? |
 | [`GKEApplication`](../tables/gkeapplication.md) | ✓ | ✓ | ? |
-| [`GKEAudit`](../tables/gkeaudit.md) | ✓ | ✓ | ✓ |
+| [`GKEAudit`](../tables/gkeaudit.md) | ✓ | ✓ | ? |
 | [`GKEControllerManager`](../tables/gkecontrollermanager.md) | ✓ | ✓ | ? |
 | [`GKEHPADecision`](../tables/gkehpadecision.md) | ✓ | ✓ | ? |
 | [`GKEScheduler`](../tables/gkescheduler.md) | ✓ | ✓ | ? |
@@ -44,13 +44,14 @@ This connector ingests data into the following tables:
 
 > ⚠️ **Note**: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.
 
-#### 1. Set up your GCP environment 
+#### Please reference [Ingest Google Cloud Platform log data into Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/connect-google-cloud-platform?tabs=terraform%2Cauditlogs) 
+1. Set up your GCP environment 
 You must have the following GCP resources defined and configured: topic, subscription for the topic, workload identity pool, workload identity provider, and service account with permissions to get and consume from the subscription.
 
 To configure this data connector, execute the following Terraform scripts:
 
-1. Setup Required Resources: [Configuration Guide](https://github.com/Alekhya0824/GithubValidationREPO/blob/main/gke/Readme.md)
-2. Setup Authentication: [Authentication tutorial](https://learn.microsoft.com/en-us/azure/sentinel/connect-google-cloud-platform?tabs=terraform%2Cauditlogs#gcp-authentication-setup). Note: If Authentication is already setup using another GCP data connector, kindly skip this step and use the existing service account and workload identity pool.
+1. Setup Authentication: [Authentication tutorial](https://learn.microsoft.com/en-us/azure/sentinel/connect-google-cloud-platform?tabs=terraform%2Cauditlogs#gcp-authentication-setup). Note: If Authentication is already setup using another GCP data connector, kindly skip this step and use the existing service account and workload identity pool.
+2. Setup Required Resources: [Configuration Guide](https://github.com/Azure/Azure-Sentinel/blob/master/DataConnectors/GCP/Terraform/sentinel_resources_creation/GoogleKubernetesEngineLogsSetup/readme.md)
 - **Tenant ID: A unique identifier that is used as an input in the Terraform configuration within a GCP environment.**: `TenantId`
   > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
 #### 2. Enable Kubernetes Engine Logging 

@@ -29,8 +29,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`BeyondTrustPM_ActivityAudits_CL`](../tables/beyondtrustpm-activityaudits-cl.md) | ✓ | ✓ | ✓ |
-| [`BeyondTrustPM_ClientEvents_CL`](../tables/beyondtrustpm-clientevents-cl.md) | ✓ | ✓ | ✓ |
+| [`BeyondTrustPM_ActivityAudits_CL`](../tables/beyondtrustpm-activityaudits-cl.md) | ? | ✓ | ? |
+| [`BeyondTrustPM_ClientEvents_CL`](../tables/beyondtrustpm-clientevents-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -42,7 +42,7 @@ This connector ingests data into the following tables:
 
 **Custom Permissions:**
 - **Microsoft.Web/sites permissions**: Read and write permissions to Azure Functions to create a Function App is required. [See the documentation to learn more about Azure Functions](https://docs.microsoft.com/azure/azure-functions/).
-- **BeyondTrust PM Cloud API credentials**: BeyondTrust PM Cloud OAuth Client ID and Client Secret are required. Contact BeyondTrust support for API access.
+- **BeyondTrust PM Cloud API credentials**: BeyondTrust PM Cloud OAuth Client ID and Client Secret are required. The API account requires the following permissions: Audit - Read Only and Reporting - Read Only
 
 ## Setup Instructions
 
@@ -54,7 +54,10 @@ This connector ingests data into the following tables:
 
 **1. STEP 1 - Obtain BeyondTrust PM Cloud API credentials**
 
-Contact BeyondTrust support to obtain OAuth API credentials (Client ID and Client Secret) for accessing the BeyondTrust PM Cloud API.
+Create an API Account in your BeyondTrust PM Cloud instance with OAuth API credentials (Client ID and Client Secret). The API account requires the following permissions:
+
+- **Audit** - Read Only
+- **Reporting** - Read Only
 
 **2. STEP 2 - Deploy the connector and the associated Azure Function**
 
@@ -453,7 +456,7 @@ Estimated monthly costs depend on data volume and polling frequency. Monitor usa
 
 ## Version History
 
-- **v1.0**: Initial release with Activity Audits and Client Events support
+- **v3.0**: Initial release with Activity Audits and Client Events support
 - OAuth 2.0 authentication with automatic token refresh
 - Rate limiting and state management
 - Configurable polling intervals

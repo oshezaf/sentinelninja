@@ -25,16 +25,16 @@ This connector ingests data into the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) |  | ✓ | ✗ | ✓ |
-| [`AZFWDnsQuery`](../tables/azfwdnsquery.md) |  | ✓ | ✗ | ✓ |
-| [`AZFWFatFlow`](../tables/azfwfatflow.md) |  | ✓ | ✗ | ✓ |
-| [`AZFWFlowTrace`](../tables/azfwflowtrace.md) |  | ✓ | ✗ | ✓ |
-| [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) |  | ✓ | ✗ | ✓ |
-| [`AZFWInternalFqdnResolutionFailure`](../tables/azfwinternalfqdnresolutionfailure.md) |  | ✓ | ✗ | ✓ |
-| [`AZFWNatRule`](../tables/azfwnatrule.md) |  | ✓ | ✗ | ✓ |
-| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) |  | ✓ | ✗ | ✓ |
-| [`AZFWThreatIntel`](../tables/azfwthreatintel.md) |  | ✓ | ✗ | ✓ |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `ResourceType == "AZUREFIREWALLS"` | ✗ | ✗ | ✗ |
+| [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) |  | ✓ | ✗ | ? |
+| [`AZFWDnsQuery`](../tables/azfwdnsquery.md) |  | ✓ | ✗ | ? |
+| [`AZFWFatFlow`](../tables/azfwfatflow.md) |  | ✓ | ✗ | ? |
+| [`AZFWFlowTrace`](../tables/azfwflowtrace.md) |  | ✓ | ✗ | ? |
+| [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) |  | ✓ | ✗ | ? |
+| [`AZFWInternalFqdnResolutionFailure`](../tables/azfwinternalfqdnresolutionfailure.md) |  | ✓ | ✗ | ? |
+| [`AZFWNatRule`](../tables/azfwnatrule.md) |  | ✓ | ✗ | ? |
+| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) |  | ✓ | ✗ | ? |
+| [`AZFWThreatIntel`](../tables/azfwthreatintel.md) |  | ✓ | ✗ | ? |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `ResourceType == "AZUREFIREWALLS"` | ? | ✗ | ? |
 
 ## Permissions
 

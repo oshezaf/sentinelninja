@@ -29,9 +29,9 @@ The Azure Monitor Agent (AMA) is the recommended agent for collecting logs from 
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **59** |
+| Total Connectors | **58** |
 | Active | 25 |
-| Deprecated 🚫 | 34 |
+| Deprecated 🚫 | 33 |
 | Unpublished ⚠️ | 0 |
 
 ## Connectors Using This Method
@@ -103,7 +103,6 @@ The Azure Monitor Agent (AMA) is the recommended agent for collecting logs from 
 | 🚫 [[Deprecated] vArmour Application Controller via AMA](../connectors/varmouracama.md) | vArmour | 1 | [vArmour Application Controller](../solutions/varmour-application-controller.md) |
 | 🚫 [[Deprecated] Vectra AI Detect via AMA](../connectors/aivectradetectama.md) | Vectra AI | 1 | [Vectra AI Detect](../solutions/vectra-ai-detect.md) |
 | 🚫 [[Deprecated] WireX Network Forensics Platform via AMA](../connectors/wirex-systems-nfpama.md) | WireX_Systems | 1 | [WireX Network Forensics Platform](../solutions/wirex-network-forensics-platform.md) |
-| 🚫 [[Deprecated] Zscaler via AMA](../connectors/zscalerama.md) | Zscaler | 1 | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 
 ---
 

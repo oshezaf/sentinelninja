@@ -47,10 +47,6 @@
 <td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
-</tr>
-<tr>
 <td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/officeactivity">View Documentation</a></td>
 </tr>
@@ -1540,18 +1536,16 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a>:</strong> <code>OperationName has_any "Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user"</code><br><code>OperationName has_any "directory write,policy update,role assignment,role update"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/sox-it-compliance-soxitcompliance-6426e0a3.html">SOXITCompliance</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -1636,7 +1630,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-solarwindspostcompromisehunting-09062974.html">SolarWindsPostCompromiseHunting</a></td>
-<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code></td>
+<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code><br><code>OperationName == "Add member to group"</code><br><code>OperationName in "Set domain authentication,Set federation settings on domain"</code><br><code>OperationName has_any "Add service principal,Certificates</code><br><code>secrets management"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-zerotruststrategyworkbook-cd80dc2b.html">ZeroTrustStrategyWorkbook</a></td>
@@ -1677,8 +1671,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (16 criteria, 53 total references)</h2>
-<p>References by type: 1 connectors, 50 content items, 1 ASIM parsers, 1 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (17 criteria, 54 total references)</h2>
+<p>References by type: 1 connectors, 51 content items, 1 ASIM parsers, 1 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -1820,12 +1814,20 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>OperationName has_any "Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user"</code><br><code>OperationName has_any "directory write,policy update,role assignment,role update"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><strong>Total</strong></td>
 <td style="text-align: center;"><strong>1</strong></td>
-<td style="text-align: center;"><strong>50</strong></td>
+<td style="text-align: center;"><strong>51</strong></td>
 <td style="text-align: center;"><strong>1</strong></td>
 <td style="text-align: center;"><strong>1</strong></td>
-<td style="text-align: center;"><strong>53</strong></td>
+<td style="text-align: center;"><strong>54</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1916,6 +1918,101 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>Teams</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="operationname">OperationName</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>has_any Add directory role member</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any Add member to role</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any Add user</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any Create user</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any Role assignment</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any Update user</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any directory write</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any policy update</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any role assignment</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any role update</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>

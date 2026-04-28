@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAP - Lock User Agentless Basic &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="sap---lock-user">SAP - Lock User (Agentless Basic)</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<hr />
+<p>This playbook locks an SAP user when triggered by a Microsoft Sentinel incident. It dynamically finds SAP-specific alert details across all alerts in the incident, supporting complex multi-alert incidents from Defender XDR.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/sap.html">SAP</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP/Playbooks/Basic-SAPLockUser/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>Not listed in Solution JSON:</strong> This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.</p>
+</blockquote>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP/Playbooks/Basic-SAPLockUser/readme.md">Basic-SAPLockUser/readme.md</a></em></p>
+</blockquote>
+<h1 id="lock-sap-user-from-teams---basic">Lock SAP User from Teams - Basic (Consumption)</h1>
+<p>This playbook locks an SAP ERP user when triggered by a Microsoft Sentinel incident leveraging the SAP Integration Suite. It posts an adaptive card to a Teams channel, letting an analyst choose to <strong>block the user</strong> on SAP ERP (or flag as false positive).</p>
+<p>Unlike a static approach that assumes the SAP alert is always the first alert, this playbook <strong>dynamically searches all alerts</strong> in the incident for SAP-specific Custom Details (<code>SAP_User</code>, <code>SidGuid</code>, <code>AgentGuid</code>). This makes it compatible with <strong>complex, multi-alert incidents from Defender XDR</strong>.</p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSAP%2FPlaybooks%2FBasic-SAPLockUser%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSAP%2FPlaybooks%2FBasic-SAPLockUser%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<h2 id="overview">Overview</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Logic App type</strong></td>
+<td>Consumption</td>
+</tr>
+<tr>
+<td><strong>Trigger</strong></td>
+<td>Microsoft Sentinel incident</td>
+</tr>
+<tr>
+<td><strong>Connectors</strong></td>
+<td>Microsoft Sentinel (Managed Identity), Microsoft Teams</td>
+</tr>
+<tr>
+<td><strong>SAP integration</strong></td>
+<td>SAP Integration Suite (CPI) iFlow via OAuth2 client credentials</td>
+</tr>
+</tbody>
+</table>
+<h3 id="flow-summary">Flow summary</h3>
+<pre><code>Incident trigger
+  ├─ Filter all alerts → find SAP alert with Custom Details containing SAP_User
+  ├─ No SAP alert found? → add incident comment, exit gracefully
+  ├─ Post adaptive card to Teams (incident info + SAP user + block/flag)
+  ├─ Block path:
+  │     ├─ SAP ERP  → OAuth token → lock user via Integration Suite → notify + close incident
+  │     ├─ Entra ID → placeholder (extend with Entra ID connector)
+  │     └─ SAP BTP  → placeholder (extend with IAS/XSUAA REST call)
+  ├─ Flag path: close incident as false positive
+  └─ Error handlers: notify admin via Teams bot chat
+</code></pre>
+<h2 id="prerequisites">Prerequisites</h2>
+<ol>
+<li><strong>SAP Integration Suite</strong> with the community <a href="https://github.com/Azure-Samples/Sentinel-For-SAP-Community/tree/main/integration-artifacts/solution-packages/baseline-extension-package">user lock/unlock iFlow</a> deployed.</li>
+<li><strong>OAuth2 client credentials</strong> (client ID + secret) from the SAP Process Integration runtime.</li>
+<li><strong>Microsoft Teams</strong> channel for incident notifications (you'll need the Team ID and Channel ID).</li>
+<li><strong>Microsoft Sentinel Responder</strong> role assigned to the Logic App's managed identity on the Sentinel workspace.</li>
+</ol>
+<h2 id="deployment-parameters">Deployment parameters</h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PlaybookName</code></td>
+<td>Name of the Logic App resource</td>
+<td><code>SAPLockUser-Basic</code></td>
+</tr>
+<tr>
+<td><code>DefaultAdminEmail</code></td>
+<td>Admin UPN for error notifications via Teams bot</td>
+<td><code>admin@contoso.com</code></td>
+</tr>
+<tr>
+<td><code>SAPOAuthTokenEndpoint</code></td>
+<td>OAuth2 token URL for SAP BTP</td>
+<td><code>https://&lt;sub&gt;.authentication.&lt;region&gt;.hana.ondemand.com/oauth/token</code></td>
+</tr>
+<tr>
+<td><code>SAPOAuthClientId</code></td>
+<td>OAuth2 client ID (securestring)</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>SAPOAuthClientSecret</code></td>
+<td>OAuth2 client secret (securestring)</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>SAPClientId</code></td>
+<td>SAP MANDT / client number</td>
+<td><code>100</code></td>
+</tr>
+<tr>
+<td><code>TeamsTeamId</code></td>
+<td>Teams Team ID</td>
+<td><code>626751d1-...</code></td>
+</tr>
+<tr>
+<td><code>TeamsChannelId</code></td>
+<td>Teams Channel ID</td>
+<td><code>19:abc123...@thread.tacv2</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Tip:</strong> If you don't have the Teams IDs at deployment time, leave them empty and configure the <code>TeamsChannel</code> workflow parameter in the Logic App designer after deployment.</p>
+</blockquote>
+<h2 id="post-deployment-steps">Post-deployment steps</h2>
+<ol>
+<li><strong>Authorize the Teams connection</strong> — open the Logic App in the Azure portal → API connections → <code>teams-*</code> → Edit API connection → Authorize.</li>
+<li><strong>Assign Sentinel Responder role</strong> — grant the Logic App's managed identity the <em>Microsoft Sentinel Responder</em> role on the Log Analytics workspace.</li>
+<li><strong>Verify Teams channel</strong> — ensure the <code>TeamsChannel</code> parameter has valid <code>teamID</code> and <code>channelID</code> values.</li>
+<li><strong>Test</strong> — create a test incident with SAP Custom Details (<code>SAP_User</code>, <code>SidGuid</code>, <code>AgentGuid</code>) and verify the adaptive card appears in Teams.</li>
+</ol>
+<h2 id="key-differences-from-the-standard-std-version">Key differences from the Standard (STD) version</h2>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>This playbook (Consumption)</th>
+<th>STD version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Logic App type</td>
+<td>Consumption (pay-per-execution)</td>
+<td>Standard (dedicated hosting)</td>
+</tr>
+<tr>
+<td>VNet injection</td>
+<td>Not supported</td>
+<td>Supported</td>
+</tr>
+<tr>
+<td>Alert handling</td>
+<td>Dynamic — filters all alerts for SAP details</td>
+<td>Static — uses <code>alerts[0]</code></td>
+</tr>
+<tr>
+<td>Defender XDR</td>
+<td>✅ Complex multi-alert incidents</td>
+<td>⚠️ Assumes SAP alert is first</td>
+</tr>
+<tr>
+<td>SAP username</td>
+<td>Dynamic from Custom Details</td>
+<td>Hardcoded demo value</td>
+</tr>
+<tr>
+<td>Unlock flow</td>
+<td>Not included (add separately)</td>
+<td>Included with timeout auto-unlock</td>
+</tr>
+<tr>
+<td>Deployment</td>
+<td>ARM template with Deploy to Azure button</td>
+<td>ARM template for Standard + storage</td>
+</tr>
+</tbody>
+</table>
+<h2 id="extending-the-playbook">Extending the playbook</h2>
+<ul>
+<li><strong>Entra ID lock</strong> — add the <em>Microsoft Entra ID</em> connector with a "Disable user" action in the <code>Case_AAD</code> branch.</li>
+<li><strong>BTP/IAS lock</strong> — add an HTTP action calling SAP Cloud Identity Services SCIM API to set <code>active: false</code> in the <code>Case_BTP</code> branch.</li>
+</ul>
+<p><em>[Content truncated...]</em></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/sap.html">Back to SAP</a></p>
+</div>
+
+</body>
+</html>

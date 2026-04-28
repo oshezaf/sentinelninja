@@ -14,10 +14,10 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.lumen.com/en-us/contact-us/support.html](https://www.lumen.com/en-us/contact-us/support.html) |
 | **Categories** | domains |
-| **Version** | 3.1.0 |
+| **Version** | 3.2.0 |
 | **Author** | Matthew Collier - matthew.collier@lumen.com |
 | **First Published** | 2025-09-12 |
-| **Last Updated** | 2025-09-12 |
+| **Last Updated** | 2026-02-04 |
 | **Solution Folder** | [Lumen Defender Threat Feed](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lumen%20Defender%20Threat%20Feed) |
 
 The Lumen Defender Threat Feed for Microsoft Sentinel solution delivers high-confidence threat intelligence indicators of compromise directly into your Sentinel workspace.
@@ -31,9 +31,10 @@ The Lumen Defender Threat Feed for Microsoft Sentinel solution delivers high-con
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution provides **2 data connector(s)**:
 
-- [Lumen Defender Threat Feed Data Connector](../connectors/lumenthreatfeedconnector.md)
+- [Lumen Defender Threat Feed Data Connector V2](../connectors/lumenthreatfeedconnectorv2.md)
+- [Lumen Defender Threat Feed Data Connector V2 (using Azure Functions Flex Consumption Plan with Private Networking)](../connectors/lumenthreatfeedconnectorv2privatenetworking.md)
 
 ## Tables Used
 
@@ -72,7 +73,7 @@ The following **3 table(s)** are used internally by this solution's content item
 |-------|-------------------|----------------|
 | [`SecurityAlert`](../tables/securityalert.md) | - | Workbooks |
 | [`SecurityIncident`](../tables/securityincident.md) | - | Workbooks |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | [Lumen Defender Threat Feed Data Connector](../connectors/lumenthreatfeedconnector.md) | Analytics, Hunting, Workbooks |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | [Lumen Defender Threat Feed Data Connector V2](../connectors/lumenthreatfeedconnectorv2.md), [Lumen Defender Threat Feed Data Connector V2 (using Azure Functions Flex Consumption Plan with Private Networking)](../connectors/lumenthreatfeedconnectorv2privatenetworking.md) | Analytics, Hunting, Workbooks |
 
 ## Content Items
 
@@ -145,7 +146,7 @@ Lumen Defender Threat Feed for Microsoft Sentinel offers powerful intelligence c
 ## Solution contents
 
 - Data Connector
-  - `Data Connectors/LumenThreatFeed` (ARM templates + Function App implementation)
+  - `Data Connectors/LumenThreatFeedv2` (ARM templates + Function App implementation)
 - Analytic Rules (examples)
   - `Lumen_DomainEntity_DNS.yaml`
   - `Lumen_IPEntity_CommonSecurityLog.yaml`
@@ -176,8 +177,9 @@ Lumen Defender Threat Feed for Microsoft Sentinel offers powerful intelligence c
 
 | Version | Date Modified (DD-MM-YYYY) | Change History |
 |---------|----------------------------|----------------|
-| 1.0.0   | 09-12-2025                 | Initial Solution Release |
-| 1.1.0   | 10-23-2025                 | Update data connector to utilize more frequent TI object updates and improvements to Workbook |
+| 3.2.0   | 02-03-2026                 | Deprecated and removed V1.1 Connector. Update V2 data connector for API v3 compatibility: added QUEUED status handling, improved confidence value type conversion for string/integer support, and reordered response handling for new pagination behavior |
+| 3.1.0   | 10-23-2025                 | Update data connector to utilize more frequent TI object updates and improvements to Workbook |
+| 3.0.0   | 09-12-2025                 | Initial Solution Release |
 
 ---
 

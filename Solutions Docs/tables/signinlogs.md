@@ -14,7 +14,6 @@ Reference for SigninLogs table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/signinlogs) |
 
 ## Contents
@@ -26,7 +25,7 @@ Reference for SigninLogs table in Azure Monitor Logs.
 - [Parsers](#parsers-using-this-table)
 - [Resource Types](#resource-types)
 
-## Schema (93 columns)
+## Schema (95 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/signinlogs)
 
@@ -51,10 +50,12 @@ Reference for SigninLogs table in Azure Monitor Logs.
 | AuthenticationProtocol | string | Lists the protocol type or grant type used in the authentication. The possible values are: none, oAuth2, ropc, wsFederation, saml20, deviceCode. For authentications that use protocols other than the possible values listed, the protocol type is listed as none. |
 | AuthenticationRequirement | string | This holds the highest level of authentication needed through all the sign-in steps, for sign-in to succeed. |
 | AuthenticationRequirementPolicies | string | Sources of authentication requirement, such as conditional access, per-user MFA, identity protection, and security defaults. |
+| AuthenticatorAppLocation | string | The location of the authenticator app. |
 | AutonomousSystemNumber | string | The Autonomous System Number (ASN) of the network used by the actor. |
 | Category | string |  |
 | ClientAppUsed | string | The legacy client used for sign-in activity. For example: Browser, Exchange ActiveSync, Modern clients, IMAP, MAPI, SMTP, or POP. |
 | ClientCredentialType | string | The type of client credential used. Examples include client assertion, client secret, etc. |
+| ConditionalAccessAudiences | string | The audiences targeted by the conditional access policy. |
 | ConditionalAccessPolicies | dynamic | A list of conditional access policies that are triggered by the corresponding sign-in activity. |
 | ConditionalAccessStatus | string | The status of the conditional access policy triggered. Possible values: success, failure, or notApplied. |
 | CorrelationId | string | The identifier that's sent from the client when sign-in is initiated. This is used for troubleshooting the corresponding sign-in activity when calling for support. |
@@ -176,7 +177,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (147)
+## Content Items Using This Table (148)
 
 ### Analytic Rules (44)
 
@@ -238,7 +239,7 @@ This table is ingested by the following connectors:
 | [MFA Rejected by User](../content/microsoft-entra-id-mfa-rejected-by-user-d99cf5c3-d660-436c-895b-8a8f8448da23-b3c993fb.md) |  |
 | [MFA Spamming followed by Successful login](../content/microsoft-entra-id-mfa-spamming-followed-by-successful-login-a8cc6d5c-4e7e-4b48-b4ac-d8a116c62a8b-5935aa09.md) |  |
 | [Password spray attack against Microsoft Entra ID Seamless SSO](../content/microsoft-entra-id-password-spray-attack-against-microsoft-entra-id-seamless-sso-fb7ca1c9-e14c-40a3-856e-28f3c14ea1ba-0de0d722.md) |  |
-| [Possible SignIn from Azure Backdoor](../content/microsoft-entra-id-possible-signin-from-azure-backdoor-fa00014c-c5f4-4715-8f5b-ba567e19e41e-dd1ac846.md) | `OperationName == "Add unverified domain"` |
+| [Possible SignIn from Azure Backdoor](../content/microsoft-entra-id-possible-signin-from-azure-backdoor-fa00014c-c5f4-4715-8f5b-ba567e19e41e-dd1ac846.md) |  |
 
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
 
@@ -291,8 +292,8 @@ This table is ingested by the following connectors:
 | [New country signIn with correct password](../content/standalone-content-new-country-signin-with-correct-password-7808c05a-3afd-4d13-998a-a59e2297693f-319c8619.md) |  |
 | [Privileged User Logon from new ASN](../content/standalone-content-privileged-user-logon-from-new-asn-55073036-bb86-47d3-a85a-b113ac3d9396-417005b2.md) |  |
 | [Risky user signin observed in non-Microsoft network device](../content/standalone-content-risky-user-signin-observed-in-non-microsoft-network-device-042f2801-a375-4cfd-bd29-041fc7ed88a0-a75f8abe.md) |  |
-| [Suspicious Login from deleted guest account](../content/standalone-content-suspicious-login-from-deleted-guest-account-defe4855-0d33-4362-9557-009237623976-9a77037a.md) | `OperationName == "Delete user"` |
-| [URL Added to Application from Unknown Domain](../content/standalone-content-url-added-to-application-from-unknown-domain-017e095a-94d8-430c-a047-e51a11fb737b-9b989540.md) | `OperationName == "Update Application"` |
+| [Suspicious Login from deleted guest account](../content/standalone-content-suspicious-login-from-deleted-guest-account-defe4855-0d33-4362-9557-009237623976-9a77037a.md) |  |
+| [URL Added to Application from Unknown Domain](../content/standalone-content-url-added-to-application-from-unknown-domain-017e095a-94d8-430c-a047-e51a11fb737b-9b989540.md) |  |
 
 ### Hunting Queries (60)
 
@@ -400,23 +401,23 @@ This table is ingested by the following connectors:
 | [Administrators Authenticating to Another Microsoft Entra ID Tenant](../content/github-only-administrators-authenticating-to-another-microsoft-entra-id-tenant-3a0447c1-7f43-43d0-aeac-d5e1247964a8-2f7868c7.md) |  |
 | [Anomolous Sign Ins Based on Time](../content/github-only-anomolous-sign-ins-based-on-time-8ed5b8f1-a43a-49dc-847c-e44d7a590c17-7db3ce6c.md) |  |
 | [Dormant Service Principal Update Creds and Logs In](../content/github-only-dormant-service-principal-update-creds-and-logs-in-e7cdfacc-d112-45c7-9e8f-2b52948d075c-2b79fa66.md) |  |
-| [Dormant User Update MFA and Logs In](../content/github-only-dormant-user-update-mfa-and-logs-in-a67834b0-3359-40be-bf11-71faac93b509-e1f0ddc9.md) | `OperationName == "User registered security info"` |
+| [Dormant User Update MFA and Logs In](../content/github-only-dormant-user-update-mfa-and-logs-in-a67834b0-3359-40be-bf11-71faac93b509-e1f0ddc9.md) |  |
 | [Dormant User Update MFA and Logs In - UEBA](../content/github-only-dormant-user-update-mfa-and-logs-in-ueba-6adc74fb-37f9-4187-ba7c-84269b09a485-ad8c1897.md) |  |
-| [High Risk Sign In Around Authentication Method Added or Device Registration](../content/github-only-high-risk-sign-in-around-authentication-method-added-or-device-registration-d61c3213-77ba-4998-8818-1da2f85dacdf-af95e228.md) | `OperationName in "Register device,User registered security info"` |
+| [High Risk Sign In Around Authentication Method Added or Device Registration](../content/github-only-high-risk-sign-in-around-authentication-method-added-or-device-registration-d61c3213-77ba-4998-8818-1da2f85dacdf-af95e228.md) |  |
 | [Low & slow password attempts with volatile IP addresses](../content/github-only-low-&-slow-password-attempts-with-volatile-ip-addresses-3d217bb4-9cc2-4aba-838a-48e606e910e6-6761ead7.md) |  |
 | [New Location Sign in with Mail forwarding activity](../content/github-only-new-location-sign-in-with-mail-forwarding-activity-a689a21c-9369-47e6-b5fa-e1f65045c1cf-7ac74009.md) |  |
 | [Privileged Accounts Locked Out](../content/github-only-privileged-accounts-locked-out-fc12c925-84ce-4371-bcff-e745cd937da6-285eba43.md) |  |
-| [Risky Sign-in with Device Registration](../content/github-only-risky-sign-in-with-device-registration-f9f8b17c-52ed-4fd1-8edd-6278b6e2669f-6359d664.md) | `OperationName == "Add registered owner to device"` |
+| [Risky Sign-in with Device Registration](../content/github-only-risky-sign-in-with-device-registration-f9f8b17c-52ed-4fd1-8edd-6278b6e2669f-6359d664.md) |  |
 | [Sign-ins from IPs that attempt sign-ins to disabled accounts](../content/github-only-sign-ins-from-ips-that-attempt-sign-ins-to-disabled-accounts-53b6d42e-ff74-46a8-abee-ec72181f66ba-e036bce2.md) |  |
 | [Smart Lockouts](../content/github-only-smart-lockouts-02e86bf2-172c-4444-ae8e-e94c5ce2bea3-cf06fb78.md) |  |
 | [Spike in failed sign-in events](../content/github-only-spike-in-failed-sign-in-events-51f4faf9-c3b1-4e9f-9c90-5d6afd191552-ac3569e5.md) |  |
 | [Storage Account Key Enumeration](../content/github-only-storage-account-key-enumeration-f19f913f-292a-41ed-9ac0-f3ea5e703d36-1724f133.md) |  |
-| [Successful Sign-In From Non-Compliant Device with bulk download activity](../content/github-only-successful-sign-in-from-non-compliant-device-with-bulk-download-activity-a5bb38e3-5ee2-47fe-a65d-c3c9341112ef-2c20eff5.md) | `OperationName has_any "Download group members,Download groups,Download user registeration details,Download users"` |
-| [Unfamiliar Signin Correlation with AzurePortal Signin Attempts and AuditLogs](../content/github-only-unfamiliar-signin-correlation-with-azureportal-signin-attempts-and-auditlogs-6962473c-bcb8-421d-a0db-826078cad280-15192c3c.md) | `OperationName has_any "Add member to role"` |
+| [Successful Sign-In From Non-Compliant Device with bulk download activity](../content/github-only-successful-sign-in-from-non-compliant-device-with-bulk-download-activity-a5bb38e3-5ee2-47fe-a65d-c3c9341112ef-2c20eff5.md) |  |
+| [Unfamiliar Signin Correlation with AzurePortal Signin Attempts and AuditLogs](../content/github-only-unfamiliar-signin-correlation-with-azureportal-signin-attempts-and-auditlogs-6962473c-bcb8-421d-a0db-826078cad280-15192c3c.md) |  |
 | [User Account Linked to Storage Account File Upload](../content/github-only-user-account-linked-to-storage-account-file-upload-bee57113-7b9d-4158-958c-a7f3d534c6c4-d30a8c48.md) | `OperationName in "PutBlob,PutRange"` |
 | [Users Authenticating to Other Microsoft Entra ID Tenants](../content/github-only-users-authenticating-to-other-microsoft-entra-id-tenants-9b4a1f38-2fae-44dd-9e85-685a2e4b9bb5-c7672be4.md) |  |
 
-### Workbooks (43)
+### Workbooks (44)
 
 **In solution [1Password](../solutions/1password.md):**
 
@@ -554,7 +555,7 @@ This table is ingested by the following connectors:
 | [AzureActiveDirectorySignins](../content/github-only-azureactivedirectorysignins-f7e08e18.md) |  |
 | [AzureAuditActivityAndSignin](../content/github-only-azureauditactivityandsignin-17768883.md) |  |
 | [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
-| [ConditionalAccessTrendsandChanges](../content/github-only-conditionalaccesstrendsandchanges-114c89ab.md) | `OperationName in "Add conditional access policy,Add member to group,Delete conditional access policy,Update conditional access policy"`<br>`OperationName contains "group"` |
+| [ConditionalAccessTrendsandChanges](../content/github-only-conditionalaccesstrendsandchanges-114c89ab.md) |  |
 | [CopilotforSecurityMonitoring](../content/github-only-copilotforsecuritymonitoring-b67b6028.md) |  |
 | [DSTIMWorkbook](../content/github-only-dstimworkbook-062fa645.md) |  |
 | [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
@@ -569,6 +570,7 @@ This table is ingested by the following connectors:
 | [User_Analytics_Workbook](../content/github-only-user-analytics-workbook-b95f3e5a.md) |  |
 | [WindowsFirewall](../content/github-only-windowsfirewall-e0440cb8.md) |  |
 | [WindowsFirewallViaAMA](../content/github-only-windowsfirewallviaama-c6e9060b.md) |  |
+| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) |  |
 | [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ## Parsers Using This Table (1)
@@ -585,46 +587,27 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.graph/tenants`
 
-## Selection Criteria Summary (12 criteria, 12 total references)
+## Selection Criteria Summary (4 criteria, 4 total references)
 
-References by type: 0 connectors, 12 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 4 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `OperationName == "Add unverified domain"` | - | 1 | - | - | **1** |
-| `OperationName == "Update Application"` | - | 1 | - | - | **1** |
-| `OperationName == "Delete user"` | - | 1 | - | - | **1** |
 | `OperationName == "Update user"` | - | 1 | - | - | **1** |
 | `OperationName in "PutBlob,PutRange"` | - | 1 | - | - | **1** |
-| `OperationName == "User registered security info"` | - | 1 | - | - | **1** |
-| `OperationName in "Register device,User registered security info"` | - | 1 | - | - | **1** |
-| `OperationName has_any "Download group members,Download groups,Download user registeration details,Download users"` | - | 1 | - | - | **1** |
-| `OperationName has_any "Add member to role"` | - | 1 | - | - | **1** |
 | `OperationName == "Sign-in activity"` | - | 1 | - | - | **1** |
 | `OperationName == "Add user"` | - | 1 | - | - | **1** |
-| `OperationName == "Add registered owner to device"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **12** | **0** | **0** | **12** |
+| **Total** | **0** | **4** | **0** | **0** | **4** |
 
 ### OperationName
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `User registered security info` | - | 2 | - | - | **2** |
-| `Add unverified domain` | - | 1 | - | - | **1** |
-| `Update Application` | - | 1 | - | - | **1** |
-| `Delete user` | - | 1 | - | - | **1** |
 | `Update user` | - | 1 | - | - | **1** |
 | `PutBlob` | - | 1 | - | - | **1** |
 | `PutRange` | - | 1 | - | - | **1** |
-| `Register device` | - | 1 | - | - | **1** |
-| `has_any Download group members` | - | 1 | - | - | **1** |
-| `has_any Download groups` | - | 1 | - | - | **1** |
-| `has_any Download user registeration details` | - | 1 | - | - | **1** |
-| `has_any Download users` | - | 1 | - | - | **1** |
-| `has_any Add member to role` | - | 1 | - | - | **1** |
 | `Sign-in activity` | - | 1 | - | - | **1** |
 | `Add user` | - | 1 | - | - | **1** |
-| `Add registered owner to device` | - | 1 | - | - | **1** |
 
 ---
 

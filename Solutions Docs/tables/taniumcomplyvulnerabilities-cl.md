@@ -15,32 +15,42 @@
 
 - [Schema](#schema)
 - [Solutions](#solutions)
+- [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
-## Schema (12 columns)
+## Schema (13 columns)
 
-**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/TaniumComplyVulnerabilities_CL.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium%5CData%20Connectors/Table_ComplianceVulnerabilities.json)
 
-| Column Name | Type |
-|:------------|:-----|
-| Computer | string |
-| Computer_Name_s | string |
-| CVE_s | string |
-| CVE_Year_s | string |
-| CVSS_Score_s | string |
-| IP_Address_s | string |
-| Operating_System_Generation_s | string |
-| RawData | string |
-| Severity_s | string |
-| TimeGenerated | datetime |
-| Title_s | string |
-| Type | string |
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| Computer_ID_s | string |  |
+| Computer_Name_s | string |  |
+| CVE_s | string |  |
+| CVE_Year_s | string |  |
+| CVSS_Score_d | real |  |
+| CVSS_v3_Score_d | real |  |
+| CVSS_v3_Severity_s | string |  |
+| IP_Address_s | string |  |
+| Operating_System_Generation_s | string |  |
+| Scan_Type_s | string |  |
+| Severity_s | string |  |
+| TimeGenerated | datetime | The time at which the data was generated |
+| Title_s | string |  |
 
 ## Solutions (1)
 
 This table is used by the following solutions:
 
 - [Tanium](../solutions/tanium.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Tanium's CCF Push Connector](../connectors/taniumconnector.md) |  |
 
 ---
 

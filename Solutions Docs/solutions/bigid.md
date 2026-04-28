@@ -14,7 +14,7 @@
 |:------------------------|:------|
 | **Publisher** | BigID |
 | **Support Tier** | Partner |
-| **Support Link** | [https://www.bigid.com/support](https://www.bigid.com/support) |
+| **Support Link** | [https://support.bigid.com](https://support.bigid.com) |
 | **Categories** | domains |
 | **Version** | 3.0.0 |
 | **Author** | BigID - mhebrard@bigid.com |

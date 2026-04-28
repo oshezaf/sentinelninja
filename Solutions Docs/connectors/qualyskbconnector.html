@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qualys Knowledge Base via Codeless Connector Framework &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="qualys-knowledge-base">Qualys Knowledge Base (via Codeless Connector Framework)</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/qualys_logo.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>QualysKbConnector</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/qualys-vm-knowledgebase.html">Qualys VM Knowledgebase</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/ccf.html">CCF</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Qualys%20VM%20Knowledgebase/Data%20Connectors/QualysKB_ccf/QualysKB_ConnectorDefinition.json">QualysKB_ConnectorDefinition.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Configuration</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Qualys%20VM%20Knowledgebase/Data%20Connectors/QualysKB_ccf/QualysKB_PollingConfig.json">QualysKB_PollingConfig.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Capabilities</strong></td>
+<td style="text-align: left;"><code>Basic</code></td>
+</tr>
+</tbody>
+</table>
+<p>Ingest Qualys Knowledge Base Vulnerability Data into Microsoft Sentinel using version 4.0 of the Qualys API.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/qualysknowledgebase.html"><code>QualysKnowledgeBase</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): Read and Write permissions are required.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Qualys API access</strong>: Requires a Qualys User Account with read access to the Knowledge Base endpoints.</p>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<h2 id="step-1-set-credentials">Step 1: Set Credentials</h2>
+<p>Provide your Qualys API credentials to enable data ingestion from the Qualys Knowledge Base.
+To gather data from Qualys VM, you need to provide the following resources:
+- <strong>API Credentials</strong>: username and password for an account with read access to the Knowledge Base API. You can find the exact permissions needed in the <a href="https://docs.qualys.com/en/vm/api/scans/kbase/knowledgebase.htm">Qualys API documentation</a>.
+- <strong>API Server URL</strong>: the Qualys API server URL specific to your region. You can find the exact API server URL for your region <a href="https://www.qualys.com/platform-identification/#api-urls">here</a>
+- <strong>API Server URL</strong>: Enter API Server URL
+- <strong>Username</strong>: Enter Qualys username
+- <strong>Password</strong>: (password field)</p>
+<h2 id="step-2-set-any-optional-filters">Step 2: Set Any Optional Filters</h2>
+<p>Configure optional filters to customize which vulnerabilities are ingested. Learn more about available filters in the <a href="https://docs.qualys.com/en/vm/api/scans/kbase/knowledgebase.htm">Qualys API documentation</a>.</p>
+<h3 id="2a-filter-by-patch-status">2a. Filter by Patch Status</h3>
+<p>Choose to only show vulnerabilities that are patchable or not patchable.
+- <strong>Include vulnerabilities that are:</strong> (select)
+  - Both patchable and unpatchable (default)
+  - Patchable only
+  - Unpatchable only</p>
+<h3 id="2b-filter-by-discovery-method-and-authentication-types">2b. Filter by Discovery Method and Authentication Types</h3>
+<p>Choose to only receive vulnerabilities assigned a certain discovery method or having specific authentication types.
+- <strong>Discovery Method</strong> (select)
+  - All methods (default)
+  - Remote
+  - Authenticated
+  - Remote Only
+  - Authenticated Only
+  - ... and 1 more options
+- <strong>Discovery Authentication Types</strong>: e.g., Windows, Oracle, Unix, SNMP (comma-separated)</p>
+<h2 id="step-3-review-and-enable">Step 3: Review and Enable</h2>
+<p>Review your configuration settings and enable the connector to start ingesting Qualys Knowledge Base data into Microsoft Sentinel.
+- Click 'Connect Qualys KB' to establish connection</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+</div>
+
+</body>
+</html>

@@ -94,28 +94,25 @@
 <p><strong>1. Configure the Syslog server</strong></p>
 <p>You will first need a <strong>linux Syslog</strong> server that TenableIE will send logs to. Typically you can run <strong>rsyslog</strong> on <strong>Ubuntu</strong>.
  You can then configure this server as you wish, but it is recommended to be able to output TenableIE logs in a separate file.</p>
-<p>Configure rsyslog to accept logs from your TenableIE IP address.:</p>
-<pre><code class="language-shell">sudo -i
-
-# Set TenableIE source IP address
-export TENABLE_IE_IP={Enter your IP address}
-
-# Create rsyslog configuration file
-cat &gt; /etc/rsyslog.d/80-tenable.conf &lt;&lt; EOF
-\$ModLoad imudp
-\$UDPServerRun 514
-\$ModLoad imtcp
-\$InputTCPServerRun 514
-\$AllowedSender TCP, 127.0.0.1, $TENABLE_IE_IP
-\$AllowedSender UDP, 127.0.0.1, $TENABLE_IE_IP
-\$template MsgTemplate,&quot;%TIMESTAMP:::date-rfc3339% %HOSTNAME% %programname%[%procid%]:%msg%\n&quot;
-\$template remote-incoming-logs, &quot;/var/log/%PROGRAMNAME%.log&quot;
-*.* ?remote-incoming-logs;MsgTemplate
-EOF
-
-# Restart rsyslog
-systemctl restart rsyslog
-</code></pre>
+<p>Configure rsyslog to accept logs from your TenableIE IP address. Choose one of the following options:</p>
+<p><strong>Option 1: Using AllowedSender directive</strong></p>
+<p>This configuration restricts which hosts can send logs to your syslog server at the network level. It's more secure as it rejects unauthorized connections before processing them.</p>
+<ol>
+<li>Download the configuration file: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable%20App/Data%20Connectors/TenableIE/80-tenable-allowedsender.conf">80-tenable-allowedsender.conf</a></li>
+<li>Run in sudo mode: <code>sudo -i</code></li>
+<li>Set your TenableIE IP address: <code>export TENABLE_IE_IP={Enter your IP address}</code></li>
+<li>Execute the commands from the downloaded configuration file</li>
+<li>Restart rsyslog: <code>systemctl restart rsyslog</code></li>
+</ol>
+<p><strong>Option 2: Filter logs by source IP (For environments with multiple syslog sources)</strong></p>
+<p>This configuration accepts all incoming logs but only processes those from the specified TenableIE IP address. It's particularly useful when you have multiple syslog servers or applications sending logs to the same syslog server, and you want to selectively process only TenableIE logs.</p>
+<ol>
+<li>Download the configuration file: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable%20App/Data%20Connectors/TenableIE/80-tenable-filter.conf">80-tenable-filter.conf</a></li>
+<li>Run in sudo mode: <code>sudo -i</code></li>
+<li>Set your TenableIE IP address: <code>export TENABLE_IE_IP={Enter your IP address}</code></li>
+<li>Execute the commands from the downloaded configuration file</li>
+<li>Restart rsyslog: <code>systemctl restart rsyslog</code></li>
+</ol>
 <p><strong>2. Install and onboard the Microsoft agent for Linux</strong></p>
 <p>The OMS agent will receive the TenableIE syslog events and publish it in Microsoft Sentinel :
 <strong>Choose where to install the agent:</strong></p>
@@ -133,6 +130,7 @@ systemctl restart rsyslog
 From there you can create a new Syslog alert toward your Syslog server.</p>
 <p>Once this is done, check that the logs are correctly gathered on your server in a separate file (to do this, you can use the <em>Test the configuration</em> button in the Syslog alert configuration in TenableIE).
 If you used the Quickstart template, the Syslog server will by default listen on port 514 in UDP and 1514 in TCP, without TLS.</p>
+<p>Note: Both configuration options from Step 1 configure the syslog server to listen on port 514 for both UDP and TCP connections.</p>
 <p><strong>5. Configure the custom logs</strong></p>
 <p>Configure the agent to collect the logs.</p>
 <ol>
@@ -148,6 +146,224 @@ If you used the Quickstart template, the Syslog server will by default listen on
 <blockquote>
 <p>You should now be able to receive logs in the <em>Tenable_IE_CL</em> table, logs data can be parse using the <strong>afad_parser()</strong> function, used by all query samples, workbooks and analytic templates.</p>
 </blockquote>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable App\Data Connectors\TenableIE\README.md">Tenable App\Data Connectors\TenableIE\README.md</a></em></p>
+</blockquote>
+<h1 id="tenable-identity-exposure-data-connector">Tenable Identity Exposure Data Connector</h1>
+<p>This data connector allows Tenable Identity Exposure (formerly AlsidForAD) logs to be ingested into Microsoft Sentinel. The connector captures Indicators of Exposure, Indicators of Attack, and trailflow logs to help monitor your Active Directory environment.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li><strong>Linux Syslog Server</strong>: Typically running Ubuntu with rsyslog</li>
+<li><strong>Microsoft Sentinel Workspace</strong>: For log ingestion and analysis</li>
+<li><strong>Tenable Identity Exposure</strong>: Access to the TenableIE portal for syslog configuration</li>
+<li><strong>Microsoft OMS Agent for Linux</strong>: To forward syslog data to Sentinel</li>
+</ul>
+<h2 id="configuration-files">Configuration Files</h2>
+<p>The data connector provides two rsyslog configuration options:</p>
+<h3 id="1-80-tenable-allowedsenderconf">1. <code>80-tenable-allowedsender.conf</code></h3>
+<p><strong>Recommended for most setups</strong></p>
+<p>This configuration uses the <code>AllowedSender</code> directive to restrict which hosts can send logs to your syslog server at the network level.</p>
+<p><strong>Features:</strong></p>
+<ul>
+<li>✅ More secure - rejects unauthorized connections before processing</li>
+<li>✅ Network-level filtering</li>
+<li>✅ Recommended for single-tenant environments</li>
+<li>✅ Better performance as unwanted connections are dropped early</li>
+</ul>
+<p><strong>Use Case:</strong> Ideal when you have a dedicated syslog server for TenableIE or want maximum security.</p>
+<h3 id="2-80-tenable-filterconf">2. <code>80-tenable-filter.conf</code></h3>
+<p><strong>For environments with multiple syslog sources</strong></p>
+<p>This configuration accepts all incoming logs but only processes those from the specified TenableIE IP address using source IP filtering.</p>
+<p><strong>Features:</strong></p>
+<ul>
+<li>✅ Flexible - works with multiple syslog sources</li>
+<li>✅ Application-level filtering</li>
+<li>✅ Useful for shared syslog servers</li>
+<li>✅ Allows monitoring of multiple log sources</li>
+</ul>
+<p><strong>Use Case:</strong> Perfect when your syslog server receives logs from multiple applications and you need to selectively process only TenableIE logs.</p>
+<h2 id="step-by-step-configuration">Step-by-Step Configuration</h2>
+<h3 id="step-1-configure-the-syslog-server">Step 1: Configure the Syslog Server</h3>
+<p>Choose one of the following options:</p>
+<h4 id="option-1-using-allowedsender-directive">Option 1: Using AllowedSender Directive</h4>
+<ol>
+<li><strong>Download the configuration file:</strong></li>
+</ol>
+<p><code>https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable%20App/Data%20Connectors/TenableIE/80-tenable-allowedsender.conf</code></p>
+<ol start="2">
+<li><strong>Run in sudo mode:</strong></li>
+</ol>
+<p><code>bash
+   sudo -i</code></p>
+<ol start="3">
+<li><strong>Set your TenableIE IP address:</strong></li>
+</ol>
+<p><code>bash
+   export TENABLE_IE_IP={Enter your actual TenableIE IP address}</code></p>
+<ol start="4">
+<li>
+<p><strong>Execute the commands from the downloaded configuration file</strong> to create <code>/etc/rsyslog.d/80-tenable.conf</code></p>
+</li>
+<li>
+<p><strong>Restart rsyslog:</strong>
+   <code>bash
+   systemctl restart rsyslog</code></p>
+</li>
+</ol>
+<h4 id="option-2-filter-logs-by-source-ip">Option 2: Filter Logs by Source IP</h4>
+<ol>
+<li><strong>Download the configuration file:</strong></li>
+</ol>
+<p><code>https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable%20App/Data%20Connectors/TenableIE/80-tenable-filter.conf</code></p>
+<ol start="2">
+<li><strong>Run in sudo mode:</strong></li>
+</ol>
+<p><code>bash
+   sudo -i</code></p>
+<ol start="3">
+<li><strong>Set your TenableIE IP address:</strong></li>
+</ol>
+<p><code>bash
+   export TENABLE_IE_IP={Enter your actual TenableIE IP address}</code></p>
+<ol start="4">
+<li>
+<p><strong>Execute the commands from the downloaded configuration file</strong> to create <code>/etc/rsyslog.d/80-tenable.conf</code></p>
+</li>
+<li>
+<p><strong>Restart rsyslog:</strong>
+   <code>bash
+   systemctl restart rsyslog</code></p>
+</li>
+</ol>
+<h3 id="step-2-install-and-onboard-the-microsoft-agent-for-linux">Step 2: Install and Onboard the Microsoft Agent for Linux</h3>
+<p>The OMS agent will receive the TenableIE syslog events and publish them to Microsoft Sentinel.</p>
+<h4 id="choose-where-to-install-the-agent">Choose where to install the agent:</h4>
+<p><strong>Option A: Install agent on Azure Linux Virtual Machine</strong></p>
+<ul>
+<li>Select the machine to install the agent on and click <strong>Connect</strong> in the Sentinel portal</li>
+</ul>
+<p><strong>Option B: Install agent on a non-Azure Linux Machine</strong></p>
+<ul>
+<li>Download the agent on the relevant machine and follow the installation instructions</li>
+</ul>
+<h3 id="step-3-check-agent-logs-on-the-syslog-server">Step 3: Check Agent Logs on the Syslog Server</h3>
+<p>Verify the agent is running correctly:</p>
+<pre><code class="language-bash">tail -f /var/opt/microsoft/omsagent/log/omsagent.log
+</code></pre>
+<h3 id="step-4-configure-tenableie-to-send-logs-to-your-syslog-server">Step 4: Configure TenableIE to Send Logs to Your Syslog Server</h3>
+<ol>
+<li><strong>Log in to your TenableIE portal</strong></li>
+<li><strong>Navigate to:</strong> System → Configuration → Syslog</li>
+<li><strong>Create a new Syslog alert</strong> pointing to your syslog server</li>
+<li><strong>Test the configuration</strong> using the "Test the configuration" button</li>
+<li><strong>Verify logs are gathered</strong> in the separate file on your server</li>
+</ol>
+<p><strong>Default Port Configuration:</strong></p>
+<ul>
+<li>UDP: Port 514</li>
+<li>TCP: Port 514</li>
+<li>TLS: Not enabled by default</li>
+</ul>
+<h3 id="step-5-configure-custom-logs-in-microsoft-sentinel">Step 5: Configure Custom Logs in Microsoft Sentinel</h3>
+<ol>
+<li><strong>In Microsoft Sentinel, go to:</strong> Configuration → Settings → Workspace settings → Custom logs</li>
+<li><strong>Click "Add custom log"</strong></li>
+<li><strong>Upload a sample TenableIE.log file</strong> from your Linux syslog server and click <strong>Next</strong></li>
+<li><strong>Set the record delimiter</strong> to <strong>New Line</strong> and click <strong>Next</strong></li>
+<li><strong>Select Linux</strong> and enter the file path to the syslog file:
+   - Default location: <code>/var/log/TenableIE.log</code>
+   - For Tenable version &lt; 3.1.0: <code>/var/log/AlsidForAD.log</code></li>
+<li><strong>Click +</strong> then <strong>Next</strong></li>
+<li><strong>Set the Name</strong> to <code>Tenable_IE_CL</code> (Azure automatically adds <code>*_CL</code>)</li>
+<li><strong>Click Next</strong>, review the summary, then click <strong>Create</strong></li>
+</ol>
+<h3 id="step-6-verify-log-ingestion">Step 6: Verify Log Ingestion</h3>
+<p>You should now be able to receive logs in the <code>Tenable_IE_CL</code> table. Use the <code>afad_parser()</code> function to parse the log data, which is used by all query samples, workbooks, and analytic templates.</p>
+<h2 id="configuration-file-details">Configuration File Details</h2>
+<h3 id="rsyslog-configuration-parameters">rsyslog Configuration Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$ModLoad imudp</code></td>
+<td>Load UDP module for syslog reception</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><code>$UDPServerRun 514</code></td>
+<td>Run UDP server on port 514</td>
+<td>Standard syslog port</td>
+</tr>
+<tr>
+<td><code>$ModLoad imtcp</code></td>
+<td>Load TCP module for syslog reception</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><code>$InputTCPServerRun 514</code></td>
+<td>Run TCP server on port 514</td>
+<td>Standard syslog port</td>
+</tr>
+<tr>
+<td><code>$AllowedSender</code></td>
+<td>Restrict allowed sender IPs (Option 1 only)</td>
+<td>127.0.0.1, TENABLE_IE_IP</td>
+</tr>
+<tr>
+<td><code>$MsgTemplate</code></td>
+<td>Format log messages with timestamp</td>
+<td>RFC3339 format</td>
+</tr>
+<tr>
+<td><code>$remote-incoming-logs</code></td>
+<td>Template for log file location</td>
+<td><code>/var/log/%PROGRAMNAME%.log</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="common-issues">Common Issues</h3>
+<ol>
+<li>
+<p><strong>Logs not appearing in Sentinel:</strong>
+   - Check rsyslog service: <code>systemctl status rsyslog</code>
+   - Verify agent logs: <code>tail -f /var/opt/microsoft/omsagent/log/omsagent.log</code>
+   - Confirm firewall rules allow ports 514/UDP and 514/TCP</p>
+</li>
+<li>
+<p><strong>Permission denied errors:</strong>
+   - Ensure running commands with <code>sudo -i</code>
+   - Check file permissions in <code>/etc/rsyslog.d/</code></p>
+</li>
+<li>
+<p><strong>Incorrect IP filtering:</strong>
+   - Verify <code>TENABLE_IE_IP</code> environment variable is set correctly
+   - Check if TenableIE IP matches the actual source IP</p>
+</li>
+</ol>
+<h3 id="verification-commands">Verification Commands</h3>
+<pre><code class="language-bash"># Check rsyslog status
+systemctl status rsyslog
+
+# Check if configuration file exists
+ls -la /etc/rsyslog.d/80-tenable.conf
+
+# Monitor syslog in real-time
+tail -f /var/log/TenableIE.log
+
+# Check OMS agent status
+systemctl status omsagent
+
+# Test network connectivity
+telnet &lt;syslog-server-ip&gt; 514
+</code></pre>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>

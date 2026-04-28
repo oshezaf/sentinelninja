@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ | ? |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ | ? |
 
 ---

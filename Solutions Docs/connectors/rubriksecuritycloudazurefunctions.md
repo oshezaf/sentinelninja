@@ -26,10 +26,10 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Rubrik_Anomaly_Data_CL`](../tables/rubrik-anomaly-data-cl.md) 🔶 | ✓ | ✓ | ✓ |
-| [`Rubrik_Events_Data_CL`](../tables/rubrik-events-data-cl.md) 🔶 | ✓ | ✓ | ✓ |
-| [`Rubrik_Ransomware_Data_CL`](../tables/rubrik-ransomware-data-cl.md) 🔶 | ✓ | ✓ | ✓ |
-| [`Rubrik_ThreatHunt_Data_CL`](../tables/rubrik-threathunt-data-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`Rubrik_Anomaly_Data_CL`](../tables/rubrik-anomaly-data-cl.md) 🔶 | ? | ✓ | ? |
+| [`Rubrik_Events_Data_CL`](../tables/rubrik-events-data-cl.md) 🔶 | ? | ✓ | ? |
+| [`Rubrik_Ransomware_Data_CL`](../tables/rubrik-ransomware-data-cl.md) 🔶 | ? | ✓ | ? |
+| [`Rubrik_ThreatHunt_Data_CL`](../tables/rubrik-threathunt-data-cl.md) 🔶 | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

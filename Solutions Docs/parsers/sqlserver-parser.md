@@ -20,7 +20,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Event`](../tables/event.md) | `Source contains "MSSQL"` | ✓ | ✓ | ✗ |
+| [`Event`](../tables/event.md) | `Source contains "MSSQL"` | ✓ | ✓ | ? |
 
 ---
 

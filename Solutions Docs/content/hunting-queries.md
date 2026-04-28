@@ -8,7 +8,7 @@
 
 Hunting queries enable proactive threat hunting by security analysts. Unlike analytic rules that run automatically, hunting queries are designed for manual investigation to uncover hidden threats, explore suspicious patterns, and identify indicators of compromise that automated detection may have missed. [Learn more](https://learn.microsoft.com/azure/sentinel/hunting)
 
-**2292 hunting queries** across all Microsoft Sentinel solutions.
+**2313 hunting queries** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -25,6 +25,15 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 
 | Name | Tactics | Source |
 |:-----|:--------|:-------|
+| [A365 AI Agents - Hard-coded credentials in Tools or Actions](github-only-a365-ai-agents-hard-coded-credentials-in-tools-or-actions-1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d-0acbbd53.md) | CredentialAccess, InitialAccess | 🔗 GitHub Only |
+| [A365 AI Agents - HTTP Requests to Non-HTTPS Endpoints](github-only-a365-ai-agents-http-requests-to-non-https-endpoints-4f5a6b7c-8d9e-0f1a-2b3c-4d5e6f7a8b9c-9d4340c8.md) | CommandAndControl, CredentialAccess | 🔗 GitHub Only |
+| [A365 AI Agents - HTTP Requests to Non-standard Ports](github-only-a365-ai-agents-http-requests-to-non-standard-ports-9d0e1f2a-3b4c-5d6e-7f8a-9b0c1d2e3f4a-ac521aee.md) | CommandAndControl, Exfiltration | 🔗 GitHub Only |
+| [A365 AI Agents - MCP Tool Configured](github-only-a365-ai-agents-mcp-tool-configured-2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f-bac34b9a.md) | Execution | 🔗 GitHub Only |
+| [A365 AI Agents - Missing Tools in Instructions](github-only-a365-ai-agents-missing-tools-in-instructions-7d8e9f0a-1b2c-3d4e-5f6a-7b8c9d0e1f2a-14b1b82a.md) | Impact, DefenseEvasion | 🔗 GitHub Only |
+| [A365 AI Agents - Orphaned Agents with Disabled Owners](github-only-a365-ai-agents-orphaned-agents-with-disabled-owners-6e7f8a9b-0c1d-2e3f-4a5b-6c7d8e9f0a1b-069ee2a6.md) | Persistence, DefenseEvasion | 🔗 GitHub Only |
+| [A365 AI Agents - Publicly Shared](github-only-a365-ai-agents-publicly-shared-8c9d0e1f-2a3b-4c5d-6e7f-8a9b0c1d2e3f-f1f42fc4.md) | - | 🔗 GitHub Only |
+| [A365 AI Agents - Published Agents with Short Instructions](github-only-a365-ai-agents-published-agents-with-short-instructions-5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c-3833b204.md) | Impact, DefenseEvasion | 🔗 GitHub Only |
+| [A365 AI Agents - Published Agents without Instructions](github-only-a365-ai-agents-published-agents-without-instructions-3a4b5c6d-7e8f-9a0b-1c2d-3e4f5a6b7c8d-3cdf25a6.md) | Impact, DefenseEvasion | 🔗 GitHub Only |
 | [Abnormally Large JPEG Filed Downloaded from New Source](github-only-abnormally-large-jpeg-filed-downloaded-from-new-source-a2ff777e-46c8-4649-b19a-25a0ac059a18-4f19a836.md) | InitialAccess | 🔗 GitHub Only |
 | [Abnormally long DNS URI queries](windows-server-dns-abnormally-long-dns-uri-queries-a0954a17-cc66-4d47-9651-8bf524bbdcc8-2ac71219.md) | CommandAndControl, Exfiltration | 📦 [Windows Server DNS](../solutions/windows-server-dns.md) |
 | [Abuse.ch Recent Threat Feed](github-only-abuse.ch-recent-threat-feed-2bcdf59a-679d-4585-93e7-f14d674de205-f83323a5.md) | Execution, Persistence, Privilege escalation, Credential Access, Discovery, Impact, Exploit, Malware, component, Ransomware | 🔗 GitHub Only |
@@ -84,23 +93,9 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [Admin Submissions by Submission Type (FP)](github-only-admin-submissions-by-submission-type-fp-6f45e3cc-e810-43ce-a8df-289aaa2e0ca2-ed0be480.md) | InitialAccess | 🔗 GitHub Only |
 | [Administrators Authenticating to Another Microsoft Entra ID Tenant](github-only-administrators-authenticating-to-another-microsoft-entra-id-tenant-3a0447c1-7f43-43d0-aeac-d5e1247964a8-2f7868c7.md) | InitialAccess | 🔗 GitHub Only |
 | [Affected rows stateful anomaly on database - hunting query](azure-sql-database-solution-for-sentinel-affected-rows-stateful-anomaly-on-database-hunting-query-9670ac84-e035-47f5-8eb5-9d863a8a7893-66ffcc6c.md) | Impact | 📦 [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md) |
-| [AI Agents - Dormant Author Authentication Connection](github-only-ai-agents-dormant-author-authentication-connection-2a5b8c1d-4e7f-0a1b-2c3d-4e5f6a7b8c9d-b10f02e7.md) | - | 🔗 GitHub Only |
-| [AI Agents - Hard-coded credentials in Topics or Actions](github-only-ai-agents-hard-coded-credentials-in-topics-or-actions-3a5b2c6d-7e8f-9a0b-1c2d-3e4f5a6b7c8d-376c850d.md) | CredentialAccess, InitialAccess | 🔗 GitHub Only |
-| [AI Agents - HTTP Requests to Connector Endpoints](github-only-ai-agents-http-requests-to-connector-endpoints-8b3c7d9e-0f1a-2b3c-4d5e-6f7a8b9c0d1e-944d929a.md) | DefenseEvasion | 🔗 GitHub Only |
-| [AI Agents - HTTP Requests to Non-HTTPS Endpoints](github-only-ai-agents-http-requests-to-non-https-endpoints-7a2b6c8d-9e0f-1a2b-3c4d-5e6f7a8b9c0d-824d8061.md) | CommandAndControl, CredentialAccess | 🔗 GitHub Only |
-| [AI Agents - HTTP Requests to Non-standard Ports](github-only-ai-agents-http-requests-to-non-standard-ports-6f1a5b7c-8d9e-0f1a-2b3c-4d5e6f7a8b9c-6ed66cc8.md) | CommandAndControl, Exfiltration | 🔗 GitHub Only |
-| [AI Agents - MCP Tool Configured](github-only-ai-agents-mcp-tool-configured-6d8e5f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a-2e416314.md) | Execution | 🔗 GitHub Only |
-| [AI Agents - MCP Tool with Maker Credentials](github-only-ai-agents-mcp-tool-with-maker-credentials-7e9f6a0b-1c2d-3e4f-5a6b-7c8d9e0f1a2b-dd3543d6.md) | CredentialAccess, PrivilegeEscalation | 🔗 GitHub Only |
-| [AI Agents - No Authentication Required](github-only-ai-agents-no-authentication-required-2b7c1d3e-4f5a-6b7c-8d9e-0f1a2b3c4d5e-52f0e6e2.md) | InitialAccess, PrivilegeEscalation | 🔗 GitHub Only |
-| [AI Agents - Organization or Multi-tenant Shared](github-only-ai-agents-organization-or-multi-tenant-shared-4a8b2c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d-096b8bc4.md) | - | 🔗 GitHub Only |
-| [AI Agents - Orphaned Agents with Disabled Owners](github-only-ai-agents-orphaned-agents-with-disabled-owners-5e0f4a6b-7c8d-9e0f-1a2b-3c4d5e6f7a8b-397fc13b.md) | Persistence, DefenseEvasion | 🔗 GitHub Only |
-| [AI Agents - Published Agents with Author Authentication](github-only-ai-agents-published-agents-with-author-authentication-1f6a9b2c-3d4e-5f6a-7b8c-9d0e1f2a3b4c-825feb91.md) | - | 🔗 GitHub Only |
-| [AI Agents - Published Dormant (30d)](github-only-ai-agents-published-dormant-30d-5e8f1a2b-3c4d-5e6f-7a8b-9c0d1e2f3a4b-96af1d20.md) | - | 🔗 GitHub Only |
-| [AI Agents - Published Generative Orchestration without Instructions](github-only-ai-agents-published-generative-orchestration-without-instructions-8f0a7b1c-2d3e-4f5a-6b7c-8d9e0f1a2b3c-a16425bb.md) | Impact, DefenseEvasion | 🔗 GitHub Only |
-| [AI Agents - Sending email to AI controlled input values](github-only-ai-agents-sending-email-to-ai-controlled-input-values-9e4f8a1b-2c3d-4e5f-6a7b-8c9d0e1f2a3b-0de91e14.md) | Exfiltration, Impact | 🔗 GitHub Only |
-| [AI Agents - Sending email to external mailboxes](github-only-ai-agents-sending-email-to-external-mailboxes-0d5e9f1a-2b3c-4d5e-6f7a-8b9c0d1e2f3a-8b830fd1.md) | Exfiltration | 🔗 GitHub Only |
-| [AI Agents - Unpublished Unmodified (30d)](github-only-ai-agents-unpublished-unmodified-30d-7c0f3a6b-9d2e-1f4a-5b7c-8d0e2f5a8b1c-8914febf.md) | - | 🔗 GitHub Only |
-| [AI Agents - Unused Actions](github-only-ai-agents-unused-actions-3b6c9d0e-1f2a-3b4c-5d6e-7f8a9b0c1d2e-38ae2e90.md) | - | 🔗 GitHub Only |
+| [AI Agents - MCP Tool Configured](github-only-ai-agents-mcp-tool-configured-6d8e5f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a-06a4d484.md) | Execution | 🔗 GitHub Only |
+| [AI Agents - Orphaned Agents with Disabled Owners](github-only-ai-agents-orphaned-agents-with-disabled-owners-5e0f4a6b-7c8d-9e0f-1a2b-3c4d5e6f7a8b-4b3d8cb1.md) | Persistence, DefenseEvasion | 🔗 GitHub Only |
+| [AI Agents - Unpublished Unmodified (30d)](github-only-ai-agents-unpublished-unmodified-30d-7c0f3a6b-9d2e-1f4a-5b7c-8d0e2f5a8b1c-8768e1cc.md) | - | 🔗 GitHub Only |
 | [AIR investigation actions insight](microsoft-defender-xdr-air-investigation-actions-insight-77104824-b41e-412d-8e50-26971fe97ab0-128f9b33.md) | InitialAccess | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [AIR investigation actions insight](github-only-air-investigation-actions-insight-28a1ce89-ee88-47b3-872b-fb5c3c8b350c-95763a95.md) | InitialAccess | 🔗 GitHub Only |
 | [Alert Events from Internal IP Address](github-only-alert-events-from-internal-ip-address-f936ddfa-58e3-4db1-834b-fb50e8bd55c5-0c346d92.md) | - | 🔗 GitHub Only |
@@ -450,6 +445,22 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [Connectivity Failures by Device](github-only-connectivity-failures-by-device-d2097370-9cfb-4f52-ab1b-8cb07a033d44-b558d71d.md) | Misconfiguration | 🔗 GitHub Only |
 | [Connectivity Failures by Domain](github-only-connectivity-failures-by-domain-a4f7b0f0-93ad-47c9-bcce-dc08d8d04818-85ff7bc9.md) | Malware, component | 🔗 GitHub Only |
 | [Consent to Application discovery](standalone-content-consent-to-application-discovery-b09d6e57-c48b-491d-9c2b-ab73018e6534-7bcf5671.md) | Persistence | 📄 Standalone Content |
+| [Copilot - Access From External IP Address](microsoft-copilot-copilot-access-from-external-ip-address-f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1-76209661.md) | InitialAccess | 📦 [Microsoft Copilot](../solutions/microsoft-copilot.md) |
+| [Copilot - Plugin Enabled After Being Disabled](microsoft-copilot-copilot-plugin-enabled-after-being-disabled-b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7-7fec45a8.md) | DefenseEvasion | 📦 [Microsoft Copilot](../solutions/microsoft-copilot.md) |
+| [Copilot Studio AI Agents - Dormant Author Authentication Connection](github-only-copilot-studio-ai-agents-dormant-author-authentication-connection-2a5b8c1d-4e7f-0a1b-2c3d-4e5f6a7b8c9d-3500cbed.md) | - | 🔗 GitHub Only |
+| [Copilot Studio AI Agents - Hard-coded credentials in Topics or Actions](github-only-copilot-studio-ai-agents-hard-coded-credentials-in-topics-or-actions-3a5b2c6d-7e8f-9a0b-1c2d-3e4f5a6b7c8d-c05ecd20.md) | CredentialAccess, InitialAccess | 🔗 GitHub Only |
+| [Copilot Studio AI Agents - HTTP Requests to Connector Endpoints](github-only-copilot-studio-ai-agents-http-requests-to-connector-endpoints-8b3c7d9e-0f1a-2b3c-4d5e-6f7a8b9c0d1e-eb968e4c.md) | DefenseEvasion | 🔗 GitHub Only |
+| [Copilot Studio AI Agents - HTTP Requests to Non-HTTPS Endpoints](github-only-copilot-studio-ai-agents-http-requests-to-non-https-endpoints-7a2b6c8d-9e0f-1a2b-3c4d-5e6f7a8b9c0d-948f0c93.md) | CommandAndControl, CredentialAccess | 🔗 GitHub Only |
+| [Copilot Studio AI Agents - HTTP Requests to Non-standard Ports](github-only-copilot-studio-ai-agents-http-requests-to-non-standard-ports-6f1a5b7c-8d9e-0f1a-2b3c-4d5e6f7a8b9c-421292da.md) | CommandAndControl, Exfiltration | 🔗 GitHub Only |
+| [Copilot Studio AI Agents - MCP Tool with Maker Credentials](github-only-copilot-studio-ai-agents-mcp-tool-with-maker-credentials-7e9f6a0b-1c2d-3e4f-5a6b-7c8d9e0f1a2b-fa7f7fe6.md) | CredentialAccess, PrivilegeEscalation | 🔗 GitHub Only |
+| [Copilot Studio AI Agents - No Authentication Required](github-only-copilot-studio-ai-agents-no-authentication-required-2b7c1d3e-4f5a-6b7c-8d9e-0f1a2b3c4d5e-f0085d70.md) | InitialAccess, PrivilegeEscalation | 🔗 GitHub Only |
+| [Copilot Studio AI Agents - Organization or Multi-tenant Shared](github-only-copilot-studio-ai-agents-organization-or-multi-tenant-shared-4a8b2c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d-77437c33.md) | - | 🔗 GitHub Only |
+| [Copilot Studio AI Agents - Published Agents with Author Authentication](github-only-copilot-studio-ai-agents-published-agents-with-author-authentication-1f6a9b2c-3d4e-5f6a-7b8c-9d0e1f2a3b4c-e5ec22e6.md) | - | 🔗 GitHub Only |
+| [Copilot Studio AI Agents - Published Dormant (30d)](github-only-copilot-studio-ai-agents-published-dormant-30d-5e8f1a2b-3c4d-5e6f-7a8b-9c0d1e2f3a4b-bdb68b50.md) | - | 🔗 GitHub Only |
+| [Copilot Studio AI Agents - Published Generative Orchestration without Instructions](github-only-copilot-studio-ai-agents-published-generative-orchestration-without-instructions-8f0a7b1c-2d3e-4f5a-6b7c-8d9e0f1a2b3c-5e32963a.md) | Impact, DefenseEvasion | 🔗 GitHub Only |
+| [Copilot Studio AI Agents - Sending email to AI controlled input values](github-only-copilot-studio-ai-agents-sending-email-to-ai-controlled-input-values-9e4f8a1b-2c3d-4e5f-6a7b-8c9d0e1f2a3b-9e8cf5e7.md) | Exfiltration, Impact | 🔗 GitHub Only |
+| [Copilot Studio AI Agents - Sending email to external mailboxes](github-only-copilot-studio-ai-agents-sending-email-to-external-mailboxes-0d5e9f1a-2b3c-4d5e-6f7a-8b9c0d1e2f3a-c7f37367.md) | Exfiltration | 🔗 GitHub Only |
+| [Copilot Studio AI Agents - Unused Actions](github-only-copilot-studio-ai-agents-unused-actions-3b6c9d0e-1f2a-3b4c-5d6e-7f8a9b0c1d2e-0492066a.md) | - | 🔗 GitHub Only |
 | [Corelight - Abnormal Email Subject](corelight-corelight-abnormal-email-subject-e9441d57-39f4-41fb-aaad-d02e47783d1a-637876de.md) | InitialAccess | 📦 [Corelight](../solutions/corelight.md) |
 | [Corelight - Compressed Files Transferred over HTTP](corelight-corelight-compressed-files-transferred-over-http-f37e076e-69f6-4fcf-81dc-ca2bc5929eb5-09dc7d94.md) | Exfiltration | 📦 [Corelight](../solutions/corelight.md) |
 | [Corelight - External Facing Services](corelight-corelight-external-facing-services-3e42a796-9a4c-4ebf-a0e0-5282947986b5-c93e035f.md) | InitialAccess | 📦 [Corelight](../solutions/corelight.md) |
@@ -509,6 +520,7 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | Name | Tactics | Source |
 |:-----|:--------|:-------|
 | [Dangerous emails with links clicked](egress-defend-dangerous-emails-with-links-clicked-57ada8d5-7a26-4440-97fd-32c5c3fd0421-6c714e87.md) | Collection | 📦 [Egress Defend](../solutions/egress-defend.md) |
+| [Dangerous emails with links clicked](knowbe4-defend-dangerous-emails-with-links-clicked-40a3d172-79ec-4e46-95bd-21114ee0f863-eb38a85c.md) | Collection | 📦 [KnowBe4 Defend](../solutions/knowbe4-defend.md) |
 | [DarkSide](github-only-darkside-046d30fc-02b5-4b5f-a244-9c0da92baa5e-df54a8d8.md) | Ransomware | 🔗 GitHub Only |
 | [Data copied to other location than C drive](github-only-data-copied-to-other-location-than-c-drive-8899867b-0fd8-4cfd-b6f0-0f04ef37142c-d7d474ee.md) | - | 🔗 GitHub Only |
 | [Dataverse - Activity after failed logons](microsoft-business-applications-dataverse-activity-after-failed-logons-dafcc598-2987-4aa0-947e-7d0449677689-8b8942dc.md) | InitialAccess | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
@@ -1543,7 +1555,7 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [Proxy VBScript Execution via CurrentVersion Registry Key](cyborg-security-hunter-proxy-vbscript-execution-via-currentversion-registry-key-3ac1e703-3ed0-45e1-ae1d-0fa60baf99fb-df6259d3.md) | DefenseEvasion, Execution | 📦 [Cyborg Security HUNTER](../solutions/cyborg-security-hunter.md) |
 | [PSExec Attrib commands](github-only-psexec-attrib-commands-28f56c18-a66e-4c51-94f6-3c8902cb58af-f76ba752.md) | Discovery, Ransomware | 🔗 GitHub Only |
 | [PUA ThreatName per Computer](github-only-pua-threatname-per-computer-1a954599-aa03-421d-a35f-dbe18859bdd5-f8b0f109.md) | - | 🔗 GitHub Only |
-| [Punycode lookalikes](microsoft-defender-xdr-punycode-lookalikes-9582b09c-a5cd-4da0-8244-52cc952da158-13260aaa.md) ⚠️ | InitialAccess | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
+| [Punycode lookalikes](microsoft-defender-xdr-punycode-lookalikes-9582b09c-a5cd-4da0-8244-52cc952da158-13260aaa.md) | InitialAccess | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Punycode lookalikes](github-only-punycode-lookalikes-9582b09c-a5cd-4da0-8244-52cc952da158-fcc5de42.md) | InitialAccess | 🔗 GitHub Only |
 | [python-based-attacks-on-macos](github-only-python-based-attacks-on-macos-5a227ae6-1f40-499a-a4cc-6f6a0cc4d286-f673d02d.md) | Execution | 🔗 GitHub Only |
 | [python-use-by-ransomware-macos](github-only-python-use-by-ransomware-macos-8d52dce6-6143-44e9-8ff5-a62f2df742b2-dd2119b7.md) | Execution, Command and control | 🔗 GitHub Only |
@@ -1910,6 +1922,11 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [Snowflake - Time consuming queries](snowflake-snowflake-time-consuming-queries-8f8a8ac1-82aa-4569-b3ec-46dbf2676bf0-25538b42.md) | Impact | 📦 [Snowflake](../solutions/snowflake.md) |
 | [Snowflake - Unknown query type](snowflake-snowflake-unknown-query-type-98f57314-b6d3-4f3a-8e10-c691d8c946d5-c054f18f.md) | Impact | 📦 [Snowflake](../solutions/snowflake.md) |
 | [Snowflake - Users' source IP addresses](snowflake-snowflake-users'-source-ip-addresses-169b4c88-10f5-42c2-a45f-0959689ca22a-e121838b.md) | InitialAccess | 📦 [Snowflake](../solutions/snowflake.md) |
+| [SOCRadar Alarm Overview](socradar-socradar-alarm-overview-12a3dfda-ab80-4664-aed9-7f6f9f3b4a23-99062102.md) | Discovery | 📦 [SOCRadar](../solutions/socradar.md) |
+| [SOCRadar Alarm Trends](socradar-socradar-alarm-trends-bbafd1c6-8da9-4de3-b100-6964dedd3f3e-63397f7c.md) | Discovery | 📦 [SOCRadar](../solutions/socradar.md) |
+| [SOCRadar Audit Analysis](socradar-socradar-audit-analysis-afae44e5-e2e2-4f0e-9535-2aeb3766a847-56ecb658.md) | Discovery | 📦 [SOCRadar](../solutions/socradar.md) |
+| [SOCRadar Critical Alarms](socradar-socradar-critical-alarms-ffa80945-44de-4900-bda5-9f1410c60166-08a0f8c2.md) | Impact | 📦 [SOCRadar](../solutions/socradar.md) |
+| [SOCRadar Incident Correlation](socradar-socradar-incident-correlation-3a665ce4-b824-4a79-861b-c9f80ab4daba-143cdc23.md) | Discovery | 📦 [SOCRadar](../solutions/socradar.md) |
 | [SolarWinds -CVE-2021-35211](github-only-solarwinds-cve-2021-35211-ff01fb94-9b27-48b9-a304-2e86108b5ca4-b19d7fb2.md) | Command and control | 🔗 GitHub Only |
 | [SolarWinds Inventory](legacy-ioc-based-threat-protection-solarwinds-inventory-278592b5-612b-48a4-bb38-4c01ff8ee2a5-c7f23741.md) | Execution | 📦 [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md) |
 | [SolarWinds Inventory (Normalized Process Events)](github-only-solarwinds-inventory-normalized-process-events-c3f1606e-48eb-464e-a60c-d53af5a5796e-063305a6.md) | Execution | 🔗 GitHub Only |
@@ -2357,6 +2374,10 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 
 | Name | Tactics | Source |
 |:-----|:--------|:-------|
+| [Valimail Enforce - Bulk Domain Changes by Single User](valimailenforce-valimail-enforce-bulk-domain-changes-by-single-user-85db7cdc-378e-48b9-b6cf-77fd622aa617-4970dc01.md) | Impact, DefenseEvasion | 📦 [ValimailEnforce](../solutions/valimailenforce.md) |
+| [Valimail Enforce - Configuration Change Rate Trend](valimailenforce-valimail-enforce-configuration-change-rate-trend-ce30ce49-2eaf-483c-85cd-c27a645d5355-83699391.md) | Impact, DefenseEvasion, PrivilegeEscalation | 📦 [ValimailEnforce](../solutions/valimailenforce.md) |
+| [Valimail Enforce - DMARC Policy Change History](valimailenforce-valimail-enforce-dmarc-policy-change-history-ad6df9bc-5c1d-4dcd-8df9-516bc35f4dfe-df562b72.md) | DefenseEvasion | 📦 [ValimailEnforce](../solutions/valimailenforce.md) |
+| [Valimail Enforce - High Value Event Summary](valimailenforce-valimail-enforce-high-value-event-summary-a2be34b7-e841-471a-aaac-142be8a74cab-8dcb669f.md) | DefenseEvasion, Impact | 📦 [ValimailEnforce](../solutions/valimailenforce.md) |
 | [VIP account more than 6 failed logons in 10](windows-security-events-vip-account-more-than-6-failed-logons-in-10-892cd37e-f9e1-49c3-b0b2-d74f52ac7b71-f57a0ad0.md) | CredentialAccess | 📦 [Windows Security Events](../solutions/windows-security-events.md) |
 | [VIP account more than 6 failed logons in 10](windows-security-events-vip-account-more-than-6-failed-logons-in-10-e8d36582-c403-4466-bd44-ebede5b6fa6e-f9a5b0f7.md) | CredentialAccess | 📦 [Windows Security Events](../solutions/windows-security-events.md) |
 | [VMware Edge Cloud Orchestrator - High number of login failures from a source IP address](vmware-sase-vmware-edge-cloud-orchestrator-high-number-of-login-failures-from-a-source-ip-address-c514ecc9-fa74-4977-976b-847895ee7e71-67addd7b.md) | CredentialAccess, InitialAccess | 📦 [VMware SASE](../solutions/vmware-sase.md) |

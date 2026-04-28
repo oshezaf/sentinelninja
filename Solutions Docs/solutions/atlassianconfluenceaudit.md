@@ -16,7 +16,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 3.0.3 |
+| **Version** | 3.0.7 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-24 |
 | **Solution Folder** | [AtlassianConfluenceAudit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianConfluenceAudit) |
@@ -41,8 +41,8 @@ This solution takes a dependency on the following technologies, and some of thes
 This solution provides **1 data connector(s)** (plus 2 discovered⚠️):
 
 - [Atlassian Confluence](../connectors/atlassianconfluence.md) ⚠️
+- [Atlassian Confluence Audit (via Codeless Connector Framework)](../connectors/atlassianconfluenceconnector.md)
 - [[Deprecated] Atlassian Confluence Audit](../connectors/confluenceauditapi.md) ⚠️
-- [ Atlassian Confluence Audit (via Codeless Connector Framework)](../connectors/confluenceauditccpdefinition.md)
 
 > 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
@@ -53,7 +53,7 @@ This solution uses **3 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`AtlassianConfluenceNativePoller_CL`](../tables/atlassianconfluencenativepoller-cl.md) | [Atlassian Confluence](../connectors/atlassianconfluence.md) | - |
-| [`ConfluenceAuditLogs_CL`](../tables/confluenceauditlogs-cl.md) | [ Atlassian Confluence Audit (via Codeless Connector Framework)](../connectors/confluenceauditccpdefinition.md) | - |
+| [`ConfluenceAuditLogs_CL`](../tables/confluenceauditlogs-cl.md) | [Atlassian Confluence Audit (via Codeless Connector Framework)](../connectors/atlassianconfluenceconnector.md) | - |
 | [`Confluence_Audit_CL`](../tables/confluence-audit-cl.md) | [[Deprecated] Atlassian Confluence Audit](../connectors/confluenceauditapi.md) | - |
 
 ## Content Items
@@ -74,6 +74,7 @@ This solution includes **1 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                    |
 |-------------|--------------------------------|-------------------------------------------------------|
+| 3.0.7       | 07-04-2026                     | Updated **Data Connector** - *Atlassian Confluence Audit* to change DCR data flows.  |
 | 3.0.6       | 28-07-2025                     | Removed Deprecated **Data Connector**.  |
 | 3.0.5       | 06-05-2025                     | Launching CCP **Data Connector** - *Atlassian Confluence Audit* from Public Preview to Global Availability.           |
 | 3.0.4       | 16-04-2025                     | Updated **Parser** to support new and old table. <br/>Updated table name in **CCP Connector**.           |

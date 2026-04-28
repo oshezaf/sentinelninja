@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`MessageEvents`](../tables/messageevents.md) | ? | ✗ | ? |
 | [`MessageUrlInfo`](../tables/messageurlinfo.md) | ? | ✗ | ? |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✓ | ✗ |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✓ | ? |
 
 ## Associated Connectors
 
@@ -35,14 +35,16 @@ The following connectors provide data for this content item:
 | Connector | Solution |
 |:----------|:---------|
 | [CrowdStrikeFalconAdversaryIntelligence](../connectors/crowdstrikefalconadversaryintelligence.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
-| [LumenThreatFeedConnector](../connectors/lumenthreatfeedconnector.md) | [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md) |
+| [CyjaxIOCAPI](../connectors/cyjaxiocapi.md) | [Cyjax](../solutions/cyjax.md) |
+| [LumenThreatFeedConnectorV2](../connectors/lumenthreatfeedconnectorv2.md) | [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md) |
+| [LumenThreatFeedConnectorV2PrivateNetworking](../connectors/lumenthreatfeedconnectorv2privatenetworking.md) | [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md) |
 | [MicrosoftDefenderThreatIntelligence](../connectors/microsoftdefenderthreatintelligence.md) | [Threat Intelligence](../solutions/threat-intelligence.md) |
 | [PremiumMicrosoftDefenderForThreatIntelligence](../connectors/premiummicrosoftdefenderforthreatintelligence.md) | [Threat Intelligence](../solutions/threat-intelligence.md) |
 | [ThreatIntelligence](../connectors/threatintelligence.md) | [Threat Intelligence](../solutions/threat-intelligence.md) |
 | [ThreatIntelligenceTaxii](../connectors/threatintelligencetaxii.md) | [Threat Intelligence](../solutions/threat-intelligence.md) |
 | [ThreatIntelligenceUploadIndicatorsAPI](../connectors/threatintelligenceuploadindicatorsapi.md) | [Threat Intelligence](../solutions/threat-intelligence.md) |
 
-**Solutions:** [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md), [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md), [Threat Intelligence](../solutions/threat-intelligence.md)
+**Solutions:** [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md), [Cyjax](../solutions/cyjax.md), [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md), [Threat Intelligence](../solutions/threat-intelligence.md)
 
 ---
 

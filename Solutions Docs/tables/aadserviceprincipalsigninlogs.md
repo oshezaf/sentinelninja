@@ -14,7 +14,6 @@ Reference for AADServicePrincipalSignInLogs table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadserviceprincipalsigninlogs) |
 
 ## Contents
@@ -25,7 +24,7 @@ Reference for AADServicePrincipalSignInLogs table in Azure Monitor Logs.
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (45 columns)
+## Schema (46 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadserviceprincipalsigninlogs)
 
@@ -42,6 +41,7 @@ Reference for AADServicePrincipalSignInLogs table in Azure Monitor Logs.
 | AutonomousSystemNumber | string | Autonomous System Number for the network. |
 | Category | string | Category of the sign-in event |
 | ClientCredentialType | string | The type of client credential used. Examples include client assertion, client secret, etc. |
+| ConditionalAccessAudiences | string | Details of the conditional access audiences being applied for the sign-in. |
 | ConditionalAccessPolicies | string | Details of the conditional access policies being applied for the sign-in |
 | ConditionalAccessStatus | string | Status of all the conditionalAccess policies related to the sign-in |
 | CorrelationId | string | ID to provide sign-in trail |
@@ -108,11 +108,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Lumen TI IPAddress in IdentityLogonEvents](../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-identitylogonevents-a7cd18cd-1503-47ec-8dca-65d750540637-db253b1e.md) |  |
 
-**In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):** `OperationName == "Remove service principal"`<br>`OperationName has_all "Update application"`
+**In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):**
 
-| Analytic Rule |
-|:-------------|
-| [Suspicious Service Principal creation activity](../content/microsoft-entra-id-suspicious-service-principal-creation-activity-6852d9da-8015-4b95-8ecf-d9572ee0395d-57b7f81f.md) |
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [Suspicious Service Principal creation activity](../content/microsoft-entra-id-suspicious-service-principal-creation-activity-6852d9da-8015-4b95-8ecf-d9572ee0395d-57b7f81f.md) |  |
 
 **Standalone Content:**
 
@@ -122,11 +122,11 @@ This table is ingested by the following connectors:
 
 ### Hunting Queries (1)
 
-**GitHub Only:** `OperationName in "Add service principal credentials,Update application - Certificates`<br>`secrets management"`
+**GitHub Only:**
 
-| Hunting Query |
-|:-------------|
-| [Dormant Service Principal Update Creds and Logs In](../content/github-only-dormant-service-principal-update-creds-and-logs-in-e7cdfacc-d112-45c7-9e8f-2b52948d075c-2b79fa66.md) |
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Dormant Service Principal Update Creds and Logs In](../content/github-only-dormant-service-principal-update-creds-and-logs-in-e7cdfacc-d112-45c7-9e8f-2b52948d075c-2b79fa66.md) |  |
 
 ### Workbooks (9)
 
@@ -162,7 +162,7 @@ This table is ingested by the following connectors:
 | [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `OperationName == "Add member to group"`<br>`OperationName in "Set domain authentication,Set federation settings on domain"`<br>`OperationName has_any "Add service principal,Certificates`<br>`secrets management"` |
+| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |
 
 ## Parsers Using This Table (1)
 
@@ -172,25 +172,19 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|:-------------------|
 | [ASimAuthenticationAADServicePrincipalSignInLogs](../asim/asimauthenticationaadserviceprincipalsigninlogs.md) | Authentication | Microsoft Entra ID |  |
 
-## Selection Criteria Summary (3 criteria, 3 total references)
+## Selection Criteria Summary (1 criteria, 1 total references)
 
-References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `OperationName == "Remove service principal"`<br>`OperationName has_all "Update application"` | - | 1 | - | - | **1** |
-| `OperationName in "Add service principal credentials,Update application - Certificates`<br>`secrets management"` | - | 1 | - | - | **1** |
 | `OperationName in "Add conditional access policy,Add member to group,Add member to restricted management administrative unit,Delete conditional access policy,Remove member from group,Remove member from restricted management administrative unit,Update conditional access policy,Update group"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **3** | **0** | **0** | **3** |
+| **Total** | **0** | **1** | **0** | **0** | **1** |
 
 ### OperationName
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Remove service principal` | - | 1 | - | - | **1** |
-| `has_all Update application` | - | 1 | - | - | **1** |
-| `Add service principal credentials` | - | 1 | - | - | **1** |
-| `Update application - Certificates` | - | 1 | - | - | **1** |
 | `Add conditional access policy` | - | 1 | - | - | **1** |
 | `Add member to group` | - | 1 | - | - | **1** |
 | `Add member to restricted management administrative unit` | - | 1 | - | - | **1** |

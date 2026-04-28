@@ -8,7 +8,7 @@
 
 Playbooks are automated workflows built on Azure Logic Apps that respond to alerts and incidents. They can perform actions such as enriching alerts with threat intelligence, isolating compromised devices, blocking malicious IPs, notifying stakeholders, or creating tickets in external systems. [Learn more](https://learn.microsoft.com/azure/sentinel/automate-responses-with-playbooks)
 
-**820 playbooks** across all Microsoft Sentinel solutions.
+**865 playbooks** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -78,6 +78,8 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [AS-Blob-Storage-Add-Domains-to-Zscaler-URL-Category](standalone-content-as-blob-storage-add-domains-to-zscaler-url-category-dffe258e.md) | 📄 Standalone Content |
 | [AS-Block-GitHub-User](standalone-content-as-block-github-user-8d97b5dd.md) | 📄 Standalone Content |
 | [AS-Block-Hash-in-Defender](standalone-content-as-block-hash-in-defender-0c0410bc.md) | 📄 Standalone Content |
+| [AS-Checkmarx-Audit-Ingestion](standalone-content-as-checkmarx-audit-ingestion-8715fea6.md) | 📄 Standalone Content |
+| [AS-Checkmarx-SAST-Ingestion](standalone-content-as-checkmarx-sast-ingestion-2e72d789.md) | 📄 Standalone Content |
 | [AS-Clear-Okta-Network-Zone-List](standalone-content-as-clear-okta-network-zone-list-38fe847c.md) | 📄 Standalone Content |
 | [AS-Compromised-Machine-Tagging](standalone-content-as-compromised-machine-tagging-2c59f121.md) | 📄 Standalone Content |
 | [AS-Create-Opsgenie-Incident](standalone-content-as-create-opsgenie-incident-220c25ba.md) | 📄 Standalone Content |
@@ -170,7 +172,6 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Block URL - F5 BIG-IP](standalone-content-block-url-f5-big-ip-a53cff23.md) | 📄 Standalone Content |
 | [Block URL - Palo Alto PAN-OS](standalone-content-block-url-palo-alto-pan-os-e74b79b5.md) | 📄 Standalone Content |
 | [Block URL - Palo Alto Wildfire and PAN-OS](standalone-content-block-url-palo-alto-wildfire-and-pan-os-7b02ebc1.md) | 📄 Standalone Content |
-| [Block URL - Zscaler](zscaler-internet-access-block-url-zscaler-3de5a1e8.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 | [Block URL From Teams - Palo Alto Wildfire and PAN-OS](standalone-content-block-url-from-teams-palo-alto-wildfire-and-pan-os-9330592a.md) | 📄 Standalone Content |
 | [Block URLs - ForcepointNGFW](standalone-content-block-urls-forcepointngfw-9b39f8a0.md) | 📄 Standalone Content |
 | [Block_IPs_on_MDATP_Using_GraphSecurity](standalone-content-block-ips-on-mdatp-using-graphsecurity-819877d5.md) | 📄 Standalone Content |
@@ -185,8 +186,27 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [C19ImportToSentinel](github-only-c19importtosentinel-cc38013f.md) | 🔗 GitHub Only |
 | [C19IndicatorProcessor](github-only-c19indicatorprocessor-3c4b6d12.md) | 🔗 GitHub Only |
 | [CDC_Dismiss_Upstream_Events](standalone-content-cdc-dismiss-upstream-events-694a3d2e.md) | 📄 Standalone Content |
+| [Censys Ad-Hoc IOC Lookup](censys-censys-ad-hoc-ioc-lookup-640123fb.md) | 📦 [Censys](../solutions/censys.md) |
+| [Censys Add Incident Comment](censys-censys-add-incident-comment-92f657fd.md) | 📦 [Censys](../solutions/censys.md) |
+| [Censys Alert Enrichment](censys-censys-alert-enrichment-65242474.md) | 📦 [Censys](../solutions/censys.md) |
+| [Censys Alert Rescan](censys-censys-alert-rescan-19e1ad3a.md) | 📦 [Censys](../solutions/censys.md) |
+| [Censys Entity Enrichment - Certificate](censys-censys-entity-enrichment-certificate-ea0d81ab.md) | 📦 [Censys](../solutions/censys.md) |
+| [Censys Entity Enrichment - Host](censys-censys-entity-enrichment-host-c2bc1894.md) | 📦 [Censys](../solutions/censys.md) |
+| [Censys Entity Enrichment - Web Property](censys-censys-entity-enrichment-web-property-e7db98e8.md) | 📦 [Censys](../solutions/censys.md) |
+| [Censys Host History](censys-censys-host-history-62dd7b98.md) | 📦 [Censys](../solutions/censys.md) |
+| [Censys Incident Enrichment](censys-censys-incident-enrichment-099adc62.md) | 📦 [Censys](../solutions/censys.md) |
+| [Censys Related Infrastructure](censys-censys-related-infrastructure-23870661.md) | 📦 [Censys](../solutions/censys.md) |
+| [Censys Rescan](censys-censys-rescan-51275b90.md) | 📦 [Censys](../solutions/censys.md) |
 | [Change Incident Severity](standalone-content-change-incident-severity-744a5721.md) | 📄 Standalone Content |
 | [Change-Incident-Severity](standalone-content-change-incident-severity-4b4f6269.md) | 📄 Standalone Content |
+| [Check Point EM - Importer (Alerts → Sentinel Incidents)](check-point-cyberint-alerts-check-point-em-importer-alerts-→-sentinel-incidents-16ebefeb.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
+| [Check Point Exposure Management - Credential Leak Validation and Response](check-point-cyberint-alerts-check-point-exposure-management-credential-leak-validation-and-response-9bd4cdc5.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
+| [Check Point Exposure Management - Exporter (Sentinel → Argos)](check-point-cyberint-alerts-check-point-exposure-management-exporter-sentinel-→-argos-980b2f1d.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
+| [Check Point Exposure Management - Fetch Attachments On-Demand](check-point-cyberint-alerts-check-point-exposure-management-fetch-attachments-on-demand-08c67669.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
+| [Check Point Exposure Management - IOC Enrichment and Triage](check-point-cyberint-alerts-check-point-exposure-management-ioc-enrichment-and-triage-64607c13.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
+| [Check Point Exposure Management - Manual Status Update (Sentinel → Argos)](check-point-cyberint-alerts-check-point-exposure-management-manual-status-update-sentinel-→-argos-6353fe22.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
+| [Check Point Exposure Management - Phishing Takedown](check-point-cyberint-alerts-check-point-exposure-management-phishing-takedown-92d79290.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
+| [Check Point Exposure Management - Vulnerability Exploitation Monitoring](check-point-cyberint-alerts-check-point-exposure-management-vulnerability-exploitation-monitoring-4b89e280.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
 | [CheckPhish - Get URL reputation](checkphish-by-bolster-checkphish-get-url-reputation-529bb2b7.md) | 📦 [CheckPhish by Bolster](../solutions/checkphish-by-bolster.md) |
 | [checkpoint-add-host-to-group](check-point-checkpoint-add-host-to-group-1a66c770.md) | 📦 [Check Point](../solutions/check-point.md) |
 | [Cisco ASA - Create or Inbound Access Rule On Interface](ciscoasa-cisco-asa-create-or-inbound-access-rule-on-interface-a9375e8d.md) | 📦 [CiscoASA](../solutions/ciscoasa.md) |
@@ -246,6 +266,7 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Create-Incident-Logic-App](standalone-content-create-incident-logic-app-e7dfe0c9.md) | 📄 Standalone Content |
 | [Create-incident-on-missing-Data-Source](standalone-content-create-incident-on-missing-data-source-23c0fbea.md) | 📄 Standalone Content |
 | [credential-warning](flare-credential-warning-d8db989d.md) | 📦 [Flare](../solutions/flare.md) |
+| [CrowdSecurity-Suspicious-Login-Detection](github-only-crowdsecurity-suspicious-login-detection-72d88141.md) | 🔗 GitHub Only |
 | [Crowdstrike API authentication](crowdstrike-falcon-endpoint-protection-crowdstrike-api-authentication-f93025fb.md) | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | [Crowdstrike-ResponsefromTeams](standalone-content-crowdstrike-responsefromteams-0d7b6e98.md) | 📄 Standalone Content |
 | [Cybersixgill-Alert-Status-Update](cybersixgill-actionable-alerts-cybersixgill-alert-status-update-4e8681e6.md) | 📦 [Cybersixgill-Actionable-Alerts](../solutions/cybersixgill-actionable-alerts.md) |
@@ -253,6 +274,12 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Cyble-Threat-Intel-Playbook](standalone-content-cyble-threat-intel-playbook-50ecb8ce.md) | 📄 Standalone Content |
 | [Cyble-ThreatIntelligence-Ingest-Playbook](cyble-vision-cyble-threatintelligence-ingest-playbook-63c46da3.md) | 📦 [Cyble Vision](../solutions/cyble-vision.md) |
 | [CybleVisionAlert_Status_Update](cyble-vision-cyblevisionalert-status-update-6da41a7a.md) | 📦 [Cyble Vision](../solutions/cyble-vision.md) |
+| [Cyjax Ad Hoc Enrichment](cyjax-cyjax-ad-hoc-enrichment-a45ef0b4.md) | 📦 [Cyjax](../solutions/cyjax.md) |
+| [Cyjax Add Comment To Incident](cyjax-cyjax-add-comment-to-incident-1fec48a1.md) | 📦 [Cyjax](../solutions/cyjax.md) |
+| [Cyjax Data Breaches](cyjax-cyjax-data-breaches-9a3f7092.md) | 📦 [Cyjax](../solutions/cyjax.md) |
+| [Cyjax Domain Monitor](cyjax-cyjax-domain-monitor-66e866eb.md) | 📦 [Cyjax](../solutions/cyjax.md) |
+| [Cyjax Incident Enrichment](cyjax-cyjax-incident-enrichment-ce175d04.md) | 📦 [Cyjax](../solutions/cyjax.md) |
+| [Cyren to SentinelOne IOC Automation](cyren-sentinelone-threatintelligence-cyren-to-sentinelone-ioc-automation-aeb65ff5.md) | 📦 [Cyren-SentinelOne-ThreatIntelligence](../solutions/cyren-sentinelone-threatintelligence.md) |
 
 ## D
 
@@ -343,7 +370,6 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [FileHash Enrichment - Palo Alto Wildfire](standalone-content-filehash-enrichment-palo-alto-wildfire-4039c565.md) | 📄 Standalone Content |
 | [FileHash Enrichment - Virus Total Report - Alert Triggered](virustotal-filehash-enrichment-virus-total-report-alert-triggered-cb0a6f29.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
 | [FileHash Enrichment - Virus Total Report - Incident Triggered](virustotal-filehash-enrichment-virus-total-report-incident-triggered-4f1b5957.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
-| [FileHash Enrichment - Zscaler](zscaler-internet-access-filehash-enrichment-zscaler-0f34e8b2.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 | [Forescout-DNS_Sniff_Event_Playbook](forescouthostpropertymonitor-forescout-dns-sniff-event-playbook-171772ed.md) | 📦 [ForescoutHostPropertyMonitor](../solutions/forescouthostpropertymonitor.md) |
 | [Fortinet-FortiGate-IPEnrichment](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel-fortinet-fortigate-ipenrichment-6c7428bc.md) | 📦 [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](../solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) |
 | [Fortinet-FortiGate-ResponseOnBlockIP](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel-fortinet-fortigate-responseonblockip-4d2b4811.md) | 📦 [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](../solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) |
@@ -591,6 +617,13 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 |:-----|:-------|
 | [NCSCNLShareSTIXBundle](ncsc-nl-ndn-cyber-threat-intelligence-sharing-ncscnlsharestixbundle-5c475981.md) | 📦 [NCSC-NL NDN Cyber Threat Intelligence Sharing](../solutions/ncsc-nl-ndn-cyber-threat-intelligence-sharing.md) |
 | [Needs-Review-Incident-Email-Notification](armorblox-needs-review-incident-email-notification-0bf41abc.md) | 📦 [Armorblox](../solutions/armorblox.md) |
+| [NetApp Ransomware Resilience Async Poll Playbook](netapp-ransomware-resilience-netapp-ransomware-resilience-async-poll-playbook-a4a68793.md) | 📦 [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) |
+| [NetApp Ransomware Resilience Authentication Playbook](netapp-ransomware-resilience-netapp-ransomware-resilience-authentication-playbook-89467ad1.md) | 📦 [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) |
+| [NetApp Ransomware Resilience Enrich IP Playbook](netapp-ransomware-resilience-netapp-ransomware-resilience-enrich-ip-playbook-0190ca9d.md) | 📦 [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) |
+| [NetApp Ransomware Resilience Enrich StorageVM Playbook](netapp-ransomware-resilience-netapp-ransomware-resilience-enrich-storagevm-playbook-141af0cf.md) | 📦 [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) |
+| [NetApp Ransomware Resilience Volume Offline Playbook](netapp-ransomware-resilience-netapp-ransomware-resilience-volume-offline-playbook-12183796.md) | 📦 [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) |
+| [NetApp Ransomware Resilience Volume Snapshot Playbook](netapp-ransomware-resilience-netapp-ransomware-resilience-volume-snapshot-playbook-bda48157.md) | 📦 [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) |
+| [NetApp RRS Manual IP to Volume Offline](netapp-ransomware-resilience-netapp-rrs-manual-ip-to-volume-offline-5b223956.md) | 📦 [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) |
 | [NetskopeDataConnectorsTriggerSync](netskopev2-netskopedataconnectorstriggersync-51d2eb21.md) | 📦 [Netskopev2](../solutions/netskopev2.md) |
 | [NetskopeWebTxErrorEmail](netskopev2-netskopewebtxerroremail-7cafd67d.md) | 📦 [Netskopev2](../solutions/netskopev2.md) |
 | [new-inc-notification](standalone-content-new-inc-notification-e9a8ce34.md) | 📄 Standalone Content |
@@ -678,7 +711,7 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [RecordedFuture-Domain-IndicatorImport](recorded-future-recordedfuture-domain-indicatorimport-6bac2a40.md) | 📦 [Recorded Future](../solutions/recorded-future.md) |
 | [RecordedFuture-Hash-IndicatorImport](recorded-future-recordedfuture-hash-indicatorimport-a3134338.md) | 📦 [Recorded Future](../solutions/recorded-future.md) |
 | [RecordedFuture-HASH-Obs_in_Underground-TIProcessor](recorded-future-recordedfuture-hash-obs-in-underground-tiprocessor-bc84e786.md) | 📦 [Recorded Future](../solutions/recorded-future.md) |
-| [RecordedFuture-ImportToDefenderEndpoint](standalone-content-recordedfuture-importtodefenderendpoint-12001aee.md) | 📄 Standalone Content |
+| [RecordedFuture-ImportToDefenderEndpoint (DEPRECATED)](standalone-content-recordedfuture-importtodefenderendpoint-deprecated-fe0eed07.md) | 📄 Standalone Content |
 | [RecordedFuture-ImportToSentinel](recorded-future-recordedfuture-importtosentinel-375c16d8.md) | 📦 [Recorded Future](../solutions/recorded-future.md) |
 | [RecordedFuture-IOC_Enrichment](recorded-future-recordedfuture-ioc-enrichment-dda73772.md) | 📦 [Recorded Future](../solutions/recorded-future.md) |
 | [RecordedFuture-IP-Actively_Comm_C2_Server-TIProcessor](recorded-future-recordedfuture-ip-actively-comm-c2-server-tiprocessor-5ba5fd7f.md) | 📦 [Recorded Future](../solutions/recorded-future.md) |
@@ -691,12 +724,12 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [RecordedFuture-ThreatIntelligenceImport](recorded-future-recordedfuture-threatintelligenceimport-ef10c4ab.md) | 📦 [Recorded Future](../solutions/recorded-future.md) |
 | [RecordedFuture-ThreatMap-Importer](recorded-future-recordedfuture-threatmap-importer-58b1d1a3.md) | 📦 [Recorded Future](../solutions/recorded-future.md) |
 | [RecordedFuture-ThreatMapMalware-Importer](recorded-future-recordedfuture-threatmapmalware-importer-001905e9.md) | 📦 [Recorded Future](../solutions/recorded-future.md) |
-| [RecordedFuture-TIforDefenderEndpoint](standalone-content-recordedfuture-tifordefenderendpoint-e2e7170d.md) | 📄 Standalone Content |
+| [RecordedFuture-TIforDefenderEndpoint (DEPRECATED)](standalone-content-recordedfuture-tifordefenderendpoint-deprecated-2371ab28.md) | 📄 Standalone Content |
 | [RecordedFuture-Ukraine-IndicatorProcessor](recorded-future-recordedfuture-ukraine-indicatorprocessor-803dc885.md) | 📦 [Recorded Future](../solutions/recorded-future.md) |
 | [RecordedFuture-URL-IndicatorImport](recorded-future-recordedfuture-url-indicatorimport-6e39cf42.md) | 📦 [Recorded Future](../solutions/recorded-future.md) |
 | [RecordedFuture-URL-Recent_Rep_by_Insikt-TIProcessor](recorded-future-recordedfuture-url-recent-rep-by-insikt-tiprocessor-0e7085c0.md) | 📦 [Recorded Future](../solutions/recorded-future.md) |
-| [RecordedFuture_IP_SCF_ImportToDefenderEndpoint](standalone-content-recordedfuture-ip-scf-importtodefenderendpoint-fddfca42.md) | 📄 Standalone Content |
-| [RecordedFuture_IP_SCF_IndicatorProcessor](standalone-content-recordedfuture-ip-scf-indicatorprocessor-d5e305b3.md) | 📄 Standalone Content |
+| [RecordedFuture_IP_SCF_ImportToDefenderEndpoint (DEPRECATED)](standalone-content-recordedfuture-ip-scf-importtodefenderendpoint-deprecated-7d20bcc3.md) | 📄 Standalone Content |
+| [RecordedFuture_IP_SCF_IndicatorProcessor (DEPRECATED)](standalone-content-recordedfuture-ip-scf-indicatorprocessor-deprecated-024c3d12.md) | 📄 Standalone Content |
 | [Relate alerts to incident by IP](sentinelsoaressentials-relate-alerts-to-incident-by-ip-c7331925.md) | 📦 [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | [Remediate assets on prisma cloud](paloaltoprismacloud-remediate-assets-on-prisma-cloud-25186c76.md) | 📦 [PaloAltoPrismaCloud](../solutions/paloaltoprismacloud.md) |
 | [Remove-MDEAppExecution](standalone-content-remove-mdeappexecution-314a5658.md) | 📄 Standalone Content |
@@ -733,7 +766,7 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [RFI-lookup-and-save-user](recorded-future-identity-rfi-lookup-and-save-user-ec7fa68f.md) | 📦 [Recorded Future Identity](../solutions/recorded-future-identity.md) |
 | [RFI-Playbook-Alert-Importer](recorded-future-identity-rfi-playbook-alert-importer-f012ff91.md) | 📦 [Recorded Future Identity](../solutions/recorded-future-identity.md) |
 | [RFI-Playbook-Alert-Importer-LAW](recorded-future-identity-rfi-playbook-alert-importer-law-baa813bb.md) | 📦 [Recorded Future Identity](../solutions/recorded-future-identity.md) |
-| [RFI-Playbook-Alert-Importer-LAW-Sentinel](recorded-future-identity-rfi-playbook-alert-importer-law-sentinel-1b8a3387.md) | 📦 [Recorded Future Identity](../solutions/recorded-future-identity.md) |
+| [RFI-Playbook-Alert-Importer-LAW-Sentinel (DEPRECATED)](recorded-future-identity-rfi-playbook-alert-importer-law-sentinel-deprecated-64ea3f24.md) | 📦 [Recorded Future Identity](../solutions/recorded-future-identity.md) |
 | [RFI-search-external-user](recorded-future-identity-rfi-search-external-user-b3c5c779.md) | 📦 [Recorded Future Identity](../solutions/recorded-future-identity.md) |
 | [RFI-search-workforce-user](recorded-future-identity-rfi-search-workforce-user-cc3f078e.md) | 📦 [Recorded Future Identity](../solutions/recorded-future-identity.md) |
 | [RiskIQ Data Summary Alert](riskiq-riskiq-data-summary-alert-fbe48385.md) | 📦 [RiskIQ](../solutions/riskiq.md) |
@@ -789,6 +822,7 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 
 | Name | Source |
 |:-----|:-------|
+| [SAP - Lock User (Agentless Basic)](sap-sap-lock-user-agentless-basic-1dc6312e.md) ⚠️ | 📦 [SAP](../solutions/sap.md) |
 | [Search for Breaches - ShadowByte Aria](shadowbyte-aria-search-for-breaches-shadowbyte-aria-1984dbe7.md) | 📦 [ShadowByte Aria](../solutions/shadowbyte-aria.md) |
 | [Security workflow: alert verification with workload owners](microsoft-business-applications-security-workflow-alert-verification-with-workload-owners-b6c05acd.md) | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
 | [Send basic email](sentinelsoaressentials-send-basic-email-449e76ec.md) | 📦 [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
@@ -818,6 +852,8 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [SlashNext Phishing Incident Investigation Playbook](slashnext-slashnext-phishing-incident-investigation-playbook-ad170d4d.md) | 📦 [SlashNext](../solutions/slashnext.md) |
 | [SlashNext Security Events for Microsoft Sentinel - Get customer incidents and log](slashnext-siem-slashnext-security-events-for-microsoft-sentinel-get-customer-incidents-and-log-a81ddf6c.md) | 📦 [SlashNext SIEM](../solutions/slashnext-siem.md) |
 | [SlashNext Web Access Log Assessment](slashnext-slashnext-web-access-log-assessment-6996dff4.md) | 📦 [SlashNext](../solutions/slashnext.md) |
+| [SOCRadar-Alarm-Import](socradar-socradar-alarm-import-08438e78.md) | 📦 [SOCRadar](../solutions/socradar.md) |
+| [SOCRadar-Alarm-Sync](socradar-socradar-alarm-sync-1ffe3246.md) | 📦 [SOCRadar](../solutions/socradar.md) |
 | [SpectraAnalyze-EnrichFileHash](reversinglabs-spectraanalyze-enrichfilehash-21eafc26.md) | 📦 [ReversingLabs](../solutions/reversinglabs.md) |
 | [SpectraAnalyze-EnrichNetworkEntities](reversinglabs-spectraanalyze-enrichnetworkentities-e8e8b530.md) | 📦 [ReversingLabs](../solutions/reversinglabs.md) |
 | [SpectraIntelligence-EnrichFileHash](reversinglabs-spectraintelligence-enrichfilehash-dbcd2082.md) | 📦 [ReversingLabs](../solutions/reversinglabs.md) |
@@ -951,8 +987,17 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 
 | Name | Source |
 |:-----|:-------|
-| [Zscaler API authentication](zscaler-internet-access-zscaler-api-authentication-929a054e.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| [Zscaler OAuth2 Authentication](zscaler-internet-access-zscaler-oauth2-authentication-c37368ef.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| [Zscaler OAuth2 Blacklist URL](zscaler-internet-access-zscaler-oauth2-blacklist-url-27279293.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| [Zscaler OAuth2 Block IP](zscaler-internet-access-zscaler-oauth2-block-ip-e0e0e694.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| [Zscaler OAuth2 Block URL](zscaler-internet-access-zscaler-oauth2-block-url-4b1dadde.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| [Zscaler OAuth2 Lookup IP](zscaler-internet-access-zscaler-oauth2-lookup-ip-5af05082.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| [Zscaler OAuth2 Lookup URL](zscaler-internet-access-zscaler-oauth2-lookup-url-5639e8da.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| [Zscaler OAuth2 Unblock IP](zscaler-internet-access-zscaler-oauth2-unblock-ip-d1f2a8b5.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| [Zscaler OAuth2 Unblock URL](zscaler-internet-access-zscaler-oauth2-unblock-url-04fceeb1.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 | [Zscaler URL category lookup](standalone-content-zscaler-url-category-lookup-92bad5b5.md) | 📄 Standalone Content |
+| [Zscaler-Oauth2-UnblacklistURL](zscaler-internet-access-zscaler-oauth2-unblacklisturl-374efebd.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| [Zscaler-Oauth2-WhitelistURL](zscaler-internet-access-zscaler-oauth2-whitelisturl-0a27cd81.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 
 > ⚠️ Items marked with ⚠️ are not listed in their Solution JSON file. They were discovered by scanning solution folders.
 

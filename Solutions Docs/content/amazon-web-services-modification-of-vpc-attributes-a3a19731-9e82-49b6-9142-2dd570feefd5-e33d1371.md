@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "ModifyVpcAttribute"` | ✓ | ✓ | ✓ |
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "ModifyVpcAttribute"` | ✓ | ✓ | ? |
 
 ---
 

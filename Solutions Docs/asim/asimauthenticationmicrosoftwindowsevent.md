@@ -31,8 +31,8 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ✓ |
-| [`WindowsEvent`](../tables/windowsevent.md) | `EventID in "4624,4625,4634"`<br>`Provider == "Microsoft-Windows-Security-Auditing"` | ✓ | ✓ | ✓ |
+| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ? |
+| [`WindowsEvent`](../tables/windowsevent.md) | `EventID in "4624,4625,4634"`<br>`Provider == "Microsoft-Windows-Security-Auditing"` | ✓ | ✓ | ? |
 
 ## Parameters
 

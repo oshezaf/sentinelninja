@@ -31,12 +31,12 @@ This union parser includes parsers for the following products:
 |:--------|:--------------|:----------|
 | Microsoft Defender for IoT | [_ASim_ProcessEvent_MD4IoT](asimprocesseventmd4iot.md) |  |
 | Microsoft 365 Defender for endpoint | [_ASim_ProcessEvent_Microsoft365D](asimprocesseventmicrosoft365d.md) |  |
-| Native | [_ASim_ProcessEvent_Native](asimprocesseventnative.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)<br>[VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
+| Native | [_ASim_ProcessEvent_Native](asimprocesseventnative.md) | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md)<br>[VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
 | Sysmon for Linux | [_ASim_ProcessEvent_TerminateLinuxSysmon](asimprocessterminatelinuxsysmon.md) | [Syslog](../solutions/syslog.md) |
 | Security Events | [_ASim_ProcessEvent_TerminateMicrosoftSecurityEvents](asimprocessterminatemicrosoftsecurityevents.md) | [Windows Security Events](../solutions/windows-security-events.md) |
 | Microsoft Windows Events Sysmon | [_ASim_ProcessEvent_TerminateMicrosoftSysmon](asimprocesseventterminatemicrosoftsysmon.md) |  |
 | Security Events | [_ASim_ProcessEvent_TerminateMicrosoftWindowsEvents](asimprocessterminatemicrosoftwindowsevents.md) | [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
-|  | [_ASim_ProcessEvent_TerminateVMwareCarbonBlackCloud](asim-processevent-terminatevmwarecarbonblackcloud.md) |  |
+| VMware Carbon Black Cloud | [_ASim_ProcessEvent_TerminateVMwareCarbonBlackCloud](asimprocessterminatevmwarecarbonblackcloud.md) |  |
 
 ## References
 

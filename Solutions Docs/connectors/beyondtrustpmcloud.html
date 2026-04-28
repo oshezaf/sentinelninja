@@ -70,15 +70,15 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../tables/beyondtrustpm-activityaudits-cl.html"><code>BeyondTrustPM_ActivityAudits_CL</code></a></td>
+<td style="text-align: center;">?</td>
 <td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/beyondtrustpm-clientevents-cl.html"><code>BeyondTrustPM_ClientEvents_CL</code></a></td>
+<td style="text-align: center;">?</td>
 <td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
 </tr>
 </tbody>
 </table>
@@ -91,7 +91,7 @@
 - <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
 <p><strong>Custom Permissions:</strong>
 - <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
-- <strong>BeyondTrust PM Cloud API credentials</strong>: BeyondTrust PM Cloud OAuth Client ID and Client Secret are required. Contact BeyondTrust support for API access.</p>
+- <strong>BeyondTrust PM Cloud API credentials</strong>: BeyondTrust PM Cloud OAuth Client ID and Client Secret are required. The API account requires the following permissions: Audit - Read Only and Reporting - Read Only</p>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
@@ -99,7 +99,11 @@
 <p><strong>NOTE:</strong> This connector uses the OAuth 2.0 client credentials flow to authenticate with the BeyondTrust PM Cloud API.</p>
 </blockquote>
 <p><strong>1. STEP 1 - Obtain BeyondTrust PM Cloud API credentials</strong></p>
-<p>Contact BeyondTrust support to obtain OAuth API credentials (Client ID and Client Secret) for accessing the BeyondTrust PM Cloud API.</p>
+<p>Create an API Account in your BeyondTrust PM Cloud instance with OAuth API credentials (Client ID and Client Secret). The API account requires the following permissions:</p>
+<ul>
+<li><strong>Audit</strong> - Read Only</li>
+<li><strong>Reporting</strong> - Read Only</li>
+</ul>
 <p><strong>2. STEP 2 - Deploy the connector and the associated Azure Function</strong></p>
 <p>Use this method for automated deployment of the BeyondTrust PM Cloud data connector using an ARM Template.</p>
 <ol>
@@ -461,7 +465,7 @@ BeyondTrustPM_ClientEvents_CL
 <p>Estimated monthly costs depend on data volume and polling frequency. Monitor usage through Azure Cost Management.</p>
 <h2 id="version-history">Version History</h2>
 <ul>
-<li><strong>v1.0</strong>: Initial release with Activity Audits and Client Events support</li>
+<li><strong>v3.0</strong>: Initial release with Activity Audits and Client Events support</li>
 <li>OAuth 2.0 authentication with automatic token refresh</li>
 <li>Rate limiting and state management</li>
 <li>Configurable polling intervals</li>

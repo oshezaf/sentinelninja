@@ -8,19 +8,18 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
 - [Schema](#schema)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
+- [Parsers](#parsers-using-this-table)
 
 ## Schema (11 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VersasecCMS%5CData%20Connectors%5CVersasecCMS_CCF/VersasecCMS_Table_ErrorLogs.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VersasecCMS%5CData%20Connectors%5CVersasecCMS_CCF/VersasecCMSErrorLogs_Table.json)
 
 | Column Name | Type |
 |:------------|:-----|
@@ -51,6 +50,14 @@ This table is ingested by the following connectors:
 | [VersasecCms](../connectors/versaseccmsccpdefinition.md) |  |
 
 ---
+
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [VersasecCmsError](../parsers/versaseccmserror.md) | [VersasecCMS](../solutions/versaseccms.md) |  |
 
 ---
 

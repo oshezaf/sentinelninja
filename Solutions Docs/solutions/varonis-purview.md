@@ -37,13 +37,14 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`varonisresources_CL`](../tables/varonisresources-cl.md) | [Varonis Purview Push Connector](../connectors/varonispurviewpush.md) | - |
+| [`VaronisResources_CL`](../tables/varonisresources-cl.md) | [Varonis Purview Push Connector](../connectors/varonispurviewpush.md) | - |
 
 ## Release Notes
 
-| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
-|-------------|--------------------------------|---------------------------------------------|
-| 3.0.0       | 27-10-2025                     | Initial Solution Release |
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**           |
+|-------------|--------------------------------|------------------------------|
+| 3.0.1       | 25-03-2026                     | Updated Schema Configuration |
+| 3.0.0       | 27-10-2025                     | Initial Solution Release     |
 
 ---
 

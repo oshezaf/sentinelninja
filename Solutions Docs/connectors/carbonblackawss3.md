@@ -1,4 +1,6 @@
-# VMware Carbon Black Cloud via AWS S3
+# 🔍 VMware Carbon Black Cloud via AWS S3
+
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75">
 
@@ -14,7 +16,7 @@
 | **Publisher** | Microsoft |
 | **Used in Solutions** | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
-| **Connector Definition Files** | [CarbonBlackViaAWSS3_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Carbon%20Black%20Cloud/Data%20Connectors/CarbonBlackViaAWSS3_ConnectorDefinition.json), [CarbonBlack_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Carbon%20Black%20Cloud/Data%20Connectors/VMwareCarbonBlackCloud_ccp/CarbonBlack_DataConnectorDefinition.json) |
+| **Connector Definition Files** | [CarbonBlackViaAWSS3_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Carbon%20Black%20Cloud/Data%20Connectors/CarbonBlackViaAWSS3_ConnectorDefinition.json) |
 | **CCF Configuration** | [CarbonBlack_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Carbon%20Black%20Cloud/Data%20Connectors/VMwareCarbonBlackCloud_ccp/CarbonBlack_PollingConfig.json) |
 | **CCF Capabilities** | `AmazonWebServicesS3` |
 
@@ -28,10 +30,10 @@ This connector ingests data into the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`ASimAuthenticationEventLogs`](../tables/asimauthenticationeventlogs.md) | ✓ | ✓ | ? |
 | [`ASimFileEventLogs`](../tables/asimfileeventlogs.md) | ✓ | ✓ | ? |
-| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | ✓ | ✓ | ✓ |
+| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | ✓ | ✓ | ? |
 | [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) | ✓ | ✓ | ? |
 | [`ASimRegistryEventLogs`](../tables/asimregistryeventlogs.md) | ✓ | ✓ | ? |
-| [`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md) | ✗ | ✓ | ✗ |
+| [`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md) | ? | ✓ | ? |
 | [`CarbonBlack_Watchlist_CL`](../tables/carbonblack-watchlist-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.

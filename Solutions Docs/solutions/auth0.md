@@ -14,7 +14,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 3.1.1 |
+| **Version** | 3.1.5 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-08-18 |
 | **Last Updated** | 2026-03-27 |
@@ -44,8 +44,8 @@ The [Auth0 Access Management](https://auth0.com/access-management) solution for 
 
 This solution provides **2 data connector(s)**:
 
-- [Auth0 Access Management](../connectors/auth0.md) 🔶
-- [Auth0 Logs](../connectors/auth0connectorccpdefinition.md)
+- [[DEPRECATED] Auth0 Logs (using Azure Function)](../connectors/auth0.md) 🔶
+- [Auth0 Logs (via Codeless Connector Framework)](../connectors/auth0connectorccpdefinition.md)
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
@@ -56,8 +56,8 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Auth0AM_CL`](../tables/auth0am-cl.md) 🔶 | [Auth0 Access Management](../connectors/auth0.md) | - |
-| [`Auth0Logs_CL`](../tables/auth0logs-cl.md) | [Auth0 Logs](../connectors/auth0connectorccpdefinition.md) | - |
+| [`Auth0AM_CL`](../tables/auth0am-cl.md) 🔶 | [[DEPRECATED] Auth0 Logs (using Azure Function)](../connectors/auth0.md) | - |
+| [`Auth0Logs_CL`](../tables/auth0logs-cl.md) | [Auth0 Logs (via Codeless Connector Framework)](../connectors/auth0connectorccpdefinition.md) | - |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
@@ -113,6 +113,9 @@ The following are steps to be followed in Auth0 App.
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                     |
 |-------------|--------------------------------|--------------------------------------------------------|
+| 3.1.5       | 13-04-2026                     | Deprecate Auth0 Logs (using Azure Function) |
+| 3.1.4       | 30-03-2026                     | Fix space in name, Rename to Auth0 Logs (via Codeless Connector Framework)|
+| 3.1.3       | 20-03-2026                     | Rename to Auth0 Logs(via Codeless Connector Framework)|
 | 3.1.2       | 10-02-2025                     | Advancing CCP **Data Connector** from Public preview to Global Availability.           |
 | 3.1.1       | 22-01-2025                     | Added Preview tag to CCP **Data Connector**                                            |
 | 3.1.0       | 13-12-2024                     | Added new CCP **Data Connector** to the Solution                                       |

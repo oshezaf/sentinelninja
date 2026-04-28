@@ -16,7 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.commvault.com/support](https://www.commvault.com/support) |
 | **Categories** | domains |
-| **Version** | 3.0.3 |
+| **Version** | 3.0.4 |
 | **Author** | svc.cv-securityiq@commvault.com |
 | **First Published** | 2023-08-17 |
 | **Last Updated** | 2026-03-25 |
@@ -36,10 +36,7 @@ This Microsoft Sentinel integration enables Commvault users to ingest alerts and
 
 This solution provides **1 data connector(s)**:
 
-- [CommvaultSecurityIQ](../connectors/commvaultsecurityiq-cl.md) 🔶
-
-> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
-
+- [CommvaultSecurityIQ](../connectors/commvaultsecurityiq-cl.md)
 
 ## Tables Used
 
@@ -47,10 +44,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CommvaultSecurityIQ_CL`](../tables/commvaultsecurityiq-cl.md) 🔶 | [CommvaultSecurityIQ](../connectors/commvaultsecurityiq-cl.md) | Analytics |
-
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+| [`CommvaultAlerts_CL`](../tables/commvaultalerts-cl.md) | [CommvaultSecurityIQ](../connectors/commvaultsecurityiq-cl.md) | Analytics |
 
 ## Content Items
 
@@ -65,7 +59,7 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Commvault Cloud Alert](../content/commvault-security-iq-commvault-cloud-alert-317e757e-c320-448e-8837-fc61a70fe609-276de419.md) | Medium | DefenseEvasion, Impact | [`CommvaultSecurityIQ_CL`](../tables/commvaultsecurityiq-cl.md) |
+| [Commvault Cloud Alert](../content/commvault-security-iq-commvault-cloud-alert-317e757e-c320-448e-8837-fc61a70fe609-276de419.md) | Medium | DefenseEvasion, Impact | [`CommvaultAlerts_CL`](../tables/commvaultalerts-cl.md) |
 
 ### Playbooks
 
@@ -88,6 +82,7 @@ This SOAR integration connects Commvault Cloud with Microsoft Sentinel to enable
 This solution provides:
 - **Data Ingestion**: Automated collection of Commvault security events and anomalies
 - **Incident Creation**: Automatic creation of Sentinel incidents based on Commvault security events
+- **AI Powered Insights**: AI-driven coorelation of Commvault Threat Scan and Risk Analysis events with Sentinel Data Lake signals from tools like CrowdStrike, Netskope, and Palo Alto to validate impact on affected hosts and speed investigation.
 - **Incident Response**: Playbooks for automated remediation actions (disable users, disable data aging, etc.)
 
 ## Prerequisites
@@ -128,18 +123,17 @@ Installation
 
 **3\. Create KeyVault Secrets:**
 
-*   Azure Portal -> KeyVault -> Secrets -> Generate/Import -> Manual:
-    *   Name: access-token, Value: (Your Commvault/Metallic access token), Enabled: Yes -> Create.
-    *   Name: refresh-token, Value: (Your Commvault/Metallic refresh token), Enabled: Yes -> Create.
-    *   Name: environment-endpoint-url, Value: (Your Commvault/Metallic endpoint's URL), Enabled: Yes -> Create.
+*   Go to Azure Portal -> KeyVault -> Secrets
+*   Create following secrets each by clicking on Generate/Import -> Manual:
+
+| Name | Value | Enabled | Action |
+|---|---|---|---|
+| `"access-token"` | (Your Commvault/Metallic access token) | Yes | Create |
+| `"refresh-token"` | (Your Commvault/Metallic refresh token) | Yes | Create |
+| `"environment-endpoint-url"` | (Your Commvault/Metallic endpoint's URL) | Yes | Create |
 
 **4\. Install Commvault Cloud Solution:**
 
-*   Sentinel -> Content hub -> Search "Commvault Cloud" -> Install.
-
-**5\. Configure Data Connector:**
-
-*   Commvault Cloud -> CommvaultSecurityIQ (using Azure Functions) -> Open connector page -> Deploy to Azure -> Fill details -> Create.
 
 *[Content truncated...]*
 
@@ -147,6 +141,7 @@ Installation
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.0.4       | 05-03-2025                     | Migrate to new data ingestion model via DCR & DCE setup  |
 | 3.0.3       | 12-09-2025                     | Enhanced **Data connector** with configurable event collection and streamlined deployment  |
 | 3.0.2       | 28-03-2024                     | Update **Playbook** - Bug fix in disabling data aging  |
 | 3.0.1       | 28-03-2024                     | Adding **Data Connector** for Commvault Sentinel Integration|

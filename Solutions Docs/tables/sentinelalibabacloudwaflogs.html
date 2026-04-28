@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SentinelAlibabaCloudWAFLogs &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
-
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
@@ -19,6 +21,7 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
+<p>Reference for SentinelAlibabaCloudWAFLogs table in Azure Monitor Logs.</p>
 <table>
 <thead>
 <tr>
@@ -28,6 +31,14 @@
 </thead>
 <tbody>
 <tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Security</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+</tr>
+<tr>
 <td style="text-align: left;"><strong>Supports Transformations</strong></td>
 <td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
@@ -36,8 +47,465 @@
 <td style="text-align: left;">✓ Yes</td>
 </tr>
 <tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelalibabacloudwaflogs">View Documentation</a></td>
+</tr>
+<tr>
 <td style="text-align: left;"><strong>Azure Monitor Logs Ingestion API</strong></td>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema">Schema (88 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelalibabacloudwaflogs">Azure Monitor documentation</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccountAction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The action that is performed on the client request after an account security rule is triggered. The value is fixed as block</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccountRuleId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the account security rule that is triggered</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccountTest</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">The protection mode that is used for the client request after an account security rule is triggered. true: observation mode, false: prevention mode</td>
+</tr>
+<tr>
+<td style="text-align: left;">AclAction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The action that is performed on the client request after a rule created for the blocklist or custom protection policy (ACL) feature is triggered. Valid values: block, captcha_strict, captcha, js, captcha_strict_pass, captcha_pass, and js_pass</td>
+</tr>
+<tr>
+<td style="text-align: left;">AclRuleId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the rule that is triggered. The rule is created for the blocklist or ACL feature</td>
+</tr>
+<tr>
+<td style="text-align: left;">AclRuleType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the rule that is triggered. The rule is created for the blocklist or ACL feature. Valid values: custom (ACL feature), blocklist (blocklist feature)</td>
+</tr>
+<tr>
+<td style="text-align: left;">AclTest</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">The protection mode that is used for the client request after a rule created for the blocklist or ACL feature is triggered. true: observation mode, false: prevention mode</td>
+</tr>
+<tr>
+<td style="text-align: left;">AlgorithmRuleId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the rule that is triggered. The rule is created for the typical bot behavior identification feature</td>
+</tr>
+<tr>
+<td style="text-align: left;">AntiscanAction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The action that is performed on the client request after a rule created for the scan protection feature is triggered. The value is fixed as block</td>
+</tr>
+<tr>
+<td style="text-align: left;">AntiscanRuleId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the rule that is triggered. The rule is created for the scan protection feature</td>
+</tr>
+<tr>
+<td style="text-align: left;">AntiscanRuleType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the rule that is triggered. The rule is created for the scan protection feature. Valid values: highfreq, dirscan, scantools, collaborative</td>
+</tr>
+<tr>
+<td style="text-align: left;">AntiscanTest</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">The protection mode that is used for the client request after a rule created for the scan protection feature is triggered. true: observation mode, false: prevention mode</td>
+</tr>
+<tr>
+<td style="text-align: left;">BlockAction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The WAF protection feature that is triggered to block the request. Valid values: tmd, waf, acl, deeplearning, antiscan, antifraud, antibot</td>
+</tr>
+<tr>
+<td style="text-align: left;">BodyBytesSent</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The number of bytes in the request body</td>
+</tr>
+<tr>
+<td style="text-align: left;">BypassMatchedIds</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the rule that is triggered to allow the client request. Multiple IDs are separated with commas</td>
+</tr>
+<tr>
+<td style="text-align: left;">CcAction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The action that is performed on the client request after a rule created for the HTTP flood protection or custom protection policy (HTTP Flood Protection) feature is triggered. Valid values: block, captcha, js, captcha_pass, and js_pass</td>
+</tr>
+<tr>
+<td style="text-align: left;">CcBlocks</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates whether the client request is blocked by the HTTP flood protection feature. 1: The request is blocked, A different value: The request is allowed</td>
+</tr>
+<tr>
+<td style="text-align: left;">CcRuleId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the rule that is triggered. The rule is created for the HTTP flood protection or custom protection policy (HTTP Flood Protection) feature</td>
+</tr>
+<tr>
+<td style="text-align: left;">CcRuleType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the rule that is triggered. The rule is created for the HTTP flood protection or custom protection policy (HTTP Flood Protection) feature. Valid values: custom (custom protection rule), system (HTTP flood protection rule)</td>
+</tr>
+<tr>
+<td style="text-align: left;">CcTest</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">The protection mode that is used for the client request after a rule created for the HTTP flood protection or custom protection policy (HTTP Flood Protection) feature is triggered. true: observation mode, false: prevention mode</td>
+</tr>
+<tr>
+<td style="text-align: left;">ContentType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the requested content</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeeplearningAction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The action that is performed on the client request after a rule created for the Deep Learning Engine is triggered. The value is fixed as block</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeeplearningRuleId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the rule that is triggered. The rule is created for the Deep Learning Engine</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeeplearningRuleType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the rule that is triggered. The rule is created for the Deep Learning Engine. Valid values: xss, code_exec, webshell, sqli, lfilei, rfilei, crlf, other</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeeplearningTest</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">The protection mode that is used for the client request after a rule created for the Deep Learning Engine is triggered. true: observation mode, false: prevention mode</td>
+</tr>
+<tr>
+<td style="text-align: left;">DlpRuleId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the rule that is triggered. The rule is created for the data leakage prevention feature</td>
+</tr>
+<tr>
+<td style="text-align: left;">DlpTest</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">The protection mode that is used for the client request after a rule created for the data leakage prevention feature is triggered. true: observation mode, false: prevention mode</td>
+</tr>
+<tr>
+<td style="text-align: left;">FinalAction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The action that WAF performs on the client request. Valid values: block, captcha_strict, captcha, and js</td>
+</tr>
+<tr>
+<td style="text-align: left;">FinalPlugin</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The protection feature that performs the action specified by final_action on the client request. Valid values: waf, deeplearning, dlp, account, normalized, acl, cc, antiscan, scene, antifraud, intelligence, algorithm, wxbb</td>
+</tr>
+<tr>
+<td style="text-align: left;">FinalRuleId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the rule that is applied to the client request. The rule defines the action recorded in the final_action field</td>
+</tr>
+<tr>
+<td style="text-align: left;">FinalRuleType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The subtype of the rule that is applied to the client request. The rule is indicated by final_rule_id</td>
+</tr>
+<tr>
+<td style="text-align: left;">Host</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Host field of the request header. This field contains the domain name or IP address to access</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpCookie</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Cookie field of the request header. This field contains the cookie information about the client</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpReferer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Referer field of the request header. This field contains the source URL information about the request</td>
+</tr>
+<tr>
+<td style="text-align: left;">Https</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the request is an HTTPS request. true: The request is an HTTPS request, false: The request is an HTTP request</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpUserAgent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The User-Agent field of the request header. This field contains information such as the identifier of the client browser or operating system</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpXForwardedFor</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The X-Forwarded-For (XFF) field of the request header. This field is used to identify the actual IP address of the client that is connected to the web server by using an HTTP proxy or a load balancing device</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogProject</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the log project where the logs are stored.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The region where the log store is located.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogStore</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the log store where the logs are stored.</td>
+</tr>
+<tr>
+<td style="text-align: left;">MatchedHost</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The domain name of the origin server that is matched by WAF for the request. A wildcard domain name may be matched</td>
+</tr>
+<tr>
+<td style="text-align: left;">NormalizedAction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The action that is performed on the client request after a rule created for the positive security model feature is triggered. Valid values: block and continue</td>
+</tr>
+<tr>
+<td style="text-align: left;">NormalizedRuleId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the rule that is triggered. The rule is created for the positive security model feature</td>
+</tr>
+<tr>
+<td style="text-align: left;">NormalizedRuleType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the rule that is triggered. The rule is created for the positive security model feature. Valid values: User-Agent, Referer, URL, Cookie, Bod</td>
+</tr>
+<tr>
+<td style="text-align: left;">NormalizedTest</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">The protection mode that is used for the client request after a rule created for the positive security model feature is triggered. true: observation mode, false: prevention mode</td>
+</tr>
+<tr>
+<td style="text-align: left;">OwnerId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the Alibaba Cloud account</td>
+</tr>
+<tr>
+<td style="text-align: left;">Querystring</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The query string in the client request. The query string refers to the part that follows the question mark (?) in the requested URL</td>
+</tr>
+<tr>
+<td style="text-align: left;">RealClientIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The actual IP address of the client that initiates the request. WAF identifies the actual IP address based on the analysis of the request</td>
+</tr>
+<tr>
+<td style="text-align: left;">Region</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the region where the WAF instance resides. Valid values: cn (Chinese mainland), int (outside the Chinese mainland)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemoteAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address that is used to connect to WAF</td>
+</tr>
+<tr>
+<td style="text-align: left;">RemotePort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The port that is used to connect to WAF</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestLength</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The number of bytes in the client request. The request includes the request line, request headers, and request body. Unit: bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestMethod</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The request method</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestPath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The requested relative path. The relative path refers to the part between the domain name and the question mark (?) in the requested URL</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestTimeMsec</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The time that is taken by WAF to process the client request. Unit: milliseconds</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestTraceid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique identifier that is generated by WAF for the client request</td>
+</tr>
+<tr>
+<td style="text-align: left;">SceneAction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The action that is performed on the client request after a rule created for scenario-specific configuration is triggered. Valid values: block, captcha, js, captcha_pass, and js_pass</td>
+</tr>
+<tr>
+<td style="text-align: left;">SceneId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The scenario ID of the rule that is triggered. The rule is created for scenario-specific configuration</td>
+</tr>
+<tr>
+<td style="text-align: left;">SceneRuleId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the rule that is triggered. The rule is created for scenario-specific configuration</td>
+</tr>
+<tr>
+<td style="text-align: left;">SceneRuleType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the rule that is triggered. The rule is created for scenario-specific configuration. Valid values: bot_aialgo, js, intelligence, sdk, cc</td>
+</tr>
+<tr>
+<td style="text-align: left;">SceneTest</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">The protection mode that is used for the client request after a rule created for scenario-specific configuration is triggered. true: observation mode, false: prevention mode</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServerPort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The requested destination port</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServerProtocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The protocol and version that is used by the origin server to respond to the request forwarded by WAF</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">SslCipher</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The cipher suite that is used in the client request</td>
+</tr>
+<tr>
+<td style="text-align: left;">SslProtocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The SSL or TLS protocol and version that are used in the client request</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The HTTP status code that is returned by WAF to the client</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">Time</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The point in time at which the client request is initiated</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time when the log entry was generated</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">UaBrowser</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the browser that initiates the request</td>
+</tr>
+<tr>
+<td style="text-align: left;">UaBrowserFamily</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The family to which the browser belongs</td>
+</tr>
+<tr>
+<td style="text-align: left;">UaBrowserType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the browser that initiates the request</td>
+</tr>
+<tr>
+<td style="text-align: left;">UaBrowserVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The version of the browser that initiates the request</td>
+</tr>
+<tr>
+<td style="text-align: left;">UaDeviceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The device type of the client that initiates the request</td>
+</tr>
+<tr>
+<td style="text-align: left;">UaOs</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The operating system of the client that initiates the request</td>
+</tr>
+<tr>
+<td style="text-align: left;">UaOsFamily</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The family to which the operating system of the client belongs</td>
+</tr>
+<tr>
+<td style="text-align: left;">UpstreamAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The back-to-origin addresses used by WAF. Each address is in the IP:Port format. Multiple addresses are separated with commas</td>
+</tr>
+<tr>
+<td style="text-align: left;">UpstreamResponseTime</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The time that is taken by the origin server to respond to the request. The request is forwarded by WAF. Unit: seconds</td>
+</tr>
+<tr>
+<td style="text-align: left;">UpstreamStatus</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The status code that is returned by the origin server to WAF</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the Alibaba Cloud account to which the WAF instance belongs</td>
+</tr>
+<tr>
+<td style="text-align: left;">WafAction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The action that is performed on the client request after a rule created for the Protection Rules Engine is triggered. The value is fixed as block</td>
+</tr>
+<tr>
+<td style="text-align: left;">WafRuleId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the rule that is triggered. The rule is created for the Protection Rules Engine</td>
+</tr>
+<tr>
+<td style="text-align: left;">WafRuleType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the rule that is triggered. The rule is created for the Protection Rules Engine. Valid values: xss, code_exec, webshell, sqli, lfilei, rfilei, crlf, other</td>
+</tr>
+<tr>
+<td style="text-align: left;">WafTest</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">The protection mode that is used for the client request after a rule created for the Protection Rules Engine is triggered. true: observation mode, false: prevention mode</td>
 </tr>
 </tbody>
 </table>
@@ -46,6 +514,30 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 </div>
-
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
 </body>
 </html>

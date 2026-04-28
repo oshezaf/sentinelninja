@@ -9,9 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -110,11 +108,12 @@
 | user_name_s | string |
 | username_s | string |
 
-## Solutions (1)
+## Solutions (2)
 
 This table is used by the following solutions:
 
 - [CiscoDuoSecurity](../solutions/ciscoduosecurity.md)
+- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 
 ## Connectors (1)
 
@@ -126,9 +125,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (21)
+## Content Items Using This Table (22)
 
-### Analytic Rules (10)
+### Analytic Rules (11)
 
 **In solution [CiscoDuoSecurity](../solutions/ciscoduosecurity.md):**
 
@@ -144,6 +143,12 @@ This table is ingested by the following connectors:
 | [Cisco Duo - Multiple users deleted](../content/ciscoduosecurity-cisco-duo-multiple-users-deleted-6e4f9031-91d3-4fa1-8baf-624935f04ad8-9c38fc40.md) |  |
 | [Cisco Duo - New access device](../content/ciscoduosecurity-cisco-duo-new-access-device-f05271b6-26a5-49cf-ad73-4a202fba6eb6-3865b761.md) |  |
 | [Cisco Duo - Unexpected authentication factor](../content/ciscoduosecurity-cisco-duo-unexpected-authentication-factor-16c91a2c-17ad-4985-a9ad-4a4f1cb11830-872c74c5.md) |  |
+
+**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [TI Map IP Entity to Duo Security](../content/threat-intelligence-new-ti-map-ip-entity-to-duo-security-4988c238-a118-442c-80bd-6c689a1b2e97-43e39fdc.md) |  |
 
 ### Hunting Queries (10)
 

@@ -18,8 +18,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md) | ✓ | ✓ | ✓ |
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
+| [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md) | ? | ✓ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
 | [`Update`](../tables/update.md) | ✓ | ✗ | ? |
 
 ---

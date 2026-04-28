@@ -27,8 +27,6 @@ The Windows Security Events solution for Microsoft Sentinel allows you to ingest
 
 2. **Security Events via Legacy Agent** - This data connector helps in ingesting Security Events logs into your Log Analytics Workspace using the legacy Log Analytics agent.
 
-<P style="color:red">**NOTE:** Microsoft recommends installation of Windows Security Events via AMA Connector. Legacy connector uses the Log Analytics agent which is about to be deprecated by **Aug 31, 2024,** and thus should only be installed where AMA is not supported.</p>
-
 **Additional Information**
 
 📖 **Setup Guide:** [Windows security events via AMA](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#windows-security-events-via-ama) - Collect Windows security events using Azure Monitor Agent
@@ -157,6 +155,7 @@ This solution includes **72 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                         |
 |-------------|--------------------------------|--------------------------------------------------------------------------------------------|
+| 3.0.12      | 18-02-2026                     | Removed external blog reference text from "Remote Scheduled Task Creation or Update using ATSVC Named Pipe" and " Scheduled Task Creation or Update from User Writable Directory" **hunting query** description | 
 | 3.0.11      | 28-01-2026                     | Updated **Analytic Rule** to fix the link from the description &  Update **Analytic Rule** NonDCActiveDirectoryReplication - to reduce false positive results |
 | 3.0.10      | 12-01-2026                     | Update **Analytic Rule** NonDCActiveDirectoryReplication - fix swapped fields   |
 | 3.0.9       | 01-10-2024                     | Removed kind from  **Hunting Query** [Service installation from user writable directory]   |

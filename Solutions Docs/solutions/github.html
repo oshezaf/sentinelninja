@@ -47,7 +47,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.1.3</td>
+<td style="text-align: left;">3.1.4</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -93,11 +93,12 @@
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>3 data connector(s)</strong>:</p>
+<p>This solution provides <strong>4 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/githubauditdefinitionv2.html">GitHub Enterprise Audit Log (via Codeless Connector Framework)</a></li>
 <li><a href="../connectors/githubecauditlogpolling.html">[Deprecated] GitHub Enterprise Audit Log</a></li>
-<li><a href="../connectors/githubwebhook.html">GitHub (using Webhooks)</a> 🔶</li>
+<li><a href="../connectors/githubwebhook.html">GitHub (using Webhooks)</a></li>
+<li><a href="../connectors/githubwebhookv2.html">GitHub (using Webhooks) V2</a> 🔶</li>
 </ul>
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
@@ -114,6 +115,11 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="../tables/githubadvancedsecurityalerts-cl.html"><code>GitHubAdvancedSecurityAlerts_CL</code></a> 🔶</td>
+<td><a href="../connectors/githubwebhookv2.html">GitHub (using Webhooks) V2</a></td>
+<td>-</td>
+</tr>
+<tr>
 <td><a href="../tables/githubauditlogpolling-cl.html"><code>GitHubAuditLogPolling_CL</code></a></td>
 <td><a href="../connectors/githubecauditlogpolling.html">[Deprecated] GitHub Enterprise Audit Log</a></td>
 <td>Analytics, Hunting</td>
@@ -129,13 +135,8 @@
 <td>Analytics</td>
 </tr>
 <tr>
-<td><a href="../tables/github-cl.html"><code>GitHub_CL</code></a></td>
-<td>-</td>
-<td>Analytics</td>
-</tr>
-<tr>
-<td><a href="../tables/githubscanaudit-cl.html"><code>githubscanaudit_CL</code></a> 🔶</td>
-<td><a href="../connectors/githubwebhook.html">GitHub (using Webhooks)</a></td>
+<td><a href="../tables/githubscanaudit-cl.html"><code>githubscanaudit_CL</code></a></td>
+<td><a href="../connectors/githubwebhook.html">GitHub (using Webhooks)</a>, <a href="../connectors/githubwebhookv2.html">GitHub (using Webhooks) V2</a></td>
 <td>Workbooks</td>
 </tr>
 </tbody>
@@ -144,7 +145,7 @@
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>28 content item(s)</strong>:</p>
+<p>This solution includes <strong>29 content item(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -163,7 +164,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">Parsers</td>
-<td style="text-align: left;">4</td>
+<td style="text-align: left;">5</td>
 </tr>
 <tr>
 <td style="text-align: left;">Workbooks</td>
@@ -264,7 +265,7 @@
 <td style="text-align: left;"><a href="../content/github-nrt-github-two-factor-auth-disable-594c653d-719a-4c23-b028-36e3413e632e-4470b247.html">NRT GitHub Two Factor Auth Disable</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">DefenseEvasion</td>
-<td style="text-align: left;"><a href="../tables/github-cl.html"><code>GitHub_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/githubauditlogpolling-cl.html"><code>GitHubAuditLogPolling_CL</code></a><br><a href="../tables/githubauditlogsv2-cl.html"><code>GitHubAuditLogsV2_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -365,6 +366,11 @@
 <td style="text-align: left;"><a href="../tables/githubscanaudit-cl.html"><code>githubscanaudit_CL</code></a> <em>(read)</em></td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="../parsers/githubscanaudit.html">GitHubScanAudit</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="../parsers/githubsecretscanningdata.html">GitHubSecretScanningData</a></td>
 <td style="text-align: left;">-</td>
 <td style="text-align: left;"><a href="../tables/githubscanaudit-cl.html"><code>githubscanaudit_CL</code></a> <em>(read)</em></td>
@@ -381,6 +387,16 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>3.2.0</td>
+<td>24-04-2026</td>
+<td>Added <strong>GitHub Webhook V2</strong> data connector (CLv2/Logs Ingestion API) public preview</td>
+</tr>
+<tr>
+<td>3.1.4</td>
+<td>19-03-2026</td>
+<td>Fix NRT 2FA rule for new parser format.</td>
+</tr>
 <tr>
 <td>3.1.3</td>
 <td>29-01-2026</td>

@@ -14,10 +14,10 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 3.0.7 |
+| **Version** | 3.0.9 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2024-11-26 |
-| **Last Updated** | 2026-01-12 |
+| **Last Updated** | 2026-04-17 |
 | **Solution Folder** | [SentinelOne](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-sentinelone) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟢 High (87%) |
 
@@ -49,8 +49,8 @@ The [SentinelOne](https://www.sentinelone.com/) solution provides ability to bri
 
 This solution provides **2 data connector(s)**:
 
-- [SentinelOne](../connectors/sentinelone.md) 🔶
-- [SentinelOne](../connectors/sentineloneccp.md)
+- [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) 🔶
+- [SentinelOne (via Codeless Connector Framework)](../connectors/sentineloneccp.md)
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
@@ -61,12 +61,12 @@ This solution uses **6 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) | [SentinelOne](../connectors/sentinelone.md), [SentinelOne](../connectors/sentineloneccp.md) | Analytics, Hunting, Workbooks |
-| [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) | [SentinelOne](../connectors/sentinelone.md), [SentinelOne](../connectors/sentineloneccp.md) | Analytics, Hunting, Workbooks |
-| [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md) | [SentinelOne](../connectors/sentinelone.md), [SentinelOne](../connectors/sentineloneccp.md) | Analytics, Hunting, Workbooks |
-| [`SentinelOneGroups_CL`](../tables/sentinelonegroups-cl.md) | [SentinelOne](../connectors/sentinelone.md), [SentinelOne](../connectors/sentineloneccp.md) | Analytics, Hunting, Workbooks |
-| [`SentinelOneThreats_CL`](../tables/sentinelonethreats-cl.md) | [SentinelOne](../connectors/sentinelone.md), [SentinelOne](../connectors/sentineloneccp.md) | Analytics, Hunting, Workbooks |
-| [`SentinelOne_CL`](../tables/sentinelone-cl.md) 🔶 | [SentinelOne](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
+| [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) | [SentinelOne (via Codeless Connector Framework)](../connectors/sentineloneccp.md), [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
+| [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) | [SentinelOne (via Codeless Connector Framework)](../connectors/sentineloneccp.md), [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
+| [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md) | [SentinelOne (via Codeless Connector Framework)](../connectors/sentineloneccp.md), [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
+| [`SentinelOneGroups_CL`](../tables/sentinelonegroups-cl.md) | [SentinelOne (via Codeless Connector Framework)](../connectors/sentineloneccp.md), [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
+| [`SentinelOneThreats_CL`](../tables/sentinelonethreats-cl.md) | [SentinelOne (via Codeless Connector Framework)](../connectors/sentineloneccp.md), [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
+| [`SentinelOne_CL`](../tables/sentinelone-cl.md) 🔶 | [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
@@ -129,6 +129,8 @@ This solution includes **23 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.0.9       | 14-04-2026                     | Deprecate SentinelOne (using Azure Function) |
+| 3.0.8       | 24-03-2026                     | Rename CCF solution to SentinelOne (via Codeless Connector Framework) |
 | 3.0.7       | 09-01-2026                     | Updated broken URL and bumped the SentinelOne solution version |
 | 3.0.6       | 10-02-2025                     | Advancing CCP **Data Connector** from Public preview to Global Availability.|
 | 3.0.5       | 20-01-2025                     | Updated "Sentinel One - Agent uninstalled from multiple hosts" **Analytic Rule** with  ActivityType  |

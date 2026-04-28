@@ -90,7 +90,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Imperva Cloud WAF](../connectors/impervacloudwaflogsccfdefinition.md) |  |
+| [Imperva Cloud WAF (via Codeless Connector Framework)](../connectors/impervacloudwaflogsccfdefinition.md) |  |
 | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) |  |
 
 ---

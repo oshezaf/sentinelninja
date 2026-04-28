@@ -27,11 +27,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`HalcyonAuthenticationEvents_CL`](../tables/halcyonauthenticationevents-cl.md) | ✓ | ✓ | ✓ |
-| [`HalcyonDnsActivity_CL`](../tables/halcyondnsactivity-cl.md) | ✓ | ✓ | ✓ |
-| [`HalcyonFileActivity_CL`](../tables/halcyonfileactivity-cl.md) | ✓ | ✓ | ✓ |
-| [`HalcyonNetworkSession_CL`](../tables/halcyonnetworksession-cl.md) | ✓ | ✓ | ✓ |
-| [`HalcyonProcessEvent_CL`](../tables/halcyonprocessevent-cl.md) | ✓ | ✓ | ✓ |
+| [`HalcyonEvents_CL`](../tables/halcyonevents-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -56,7 +52,7 @@ Clicking on "Deploy" will trigger the creation of Log Analytics tables and a Dat
 It will then create an Entra application, link the DCR to it, and set the entered secret in the application. This setup enables data to be sent securely to the DCR using an Entra token.
 Deploy Halcyon Connector Resources
 
-**2. Configured your integration in the Halcyon Platform**
+**2. Configure your integration in the Halcyon Platform**
 
 Use the following parameters to configure your integration in the Halcyon Platform.
 - **Directory ID (Tenant ID)**: `TenantId`
@@ -67,7 +63,7 @@ Use the following parameters to configure your integration in the Halcyon Platfo
   > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
 - **Data Collection Endpoint (URL)**: `DataCollectionEndpoint`
   > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
-- **Data Collection Rule Immutable ID (Rule ID)**: `DataCollectionRuleId`
+- **Data Collection Rule ID (Rule ID)**: `DataCollectionRuleId`
   > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
 
 ---

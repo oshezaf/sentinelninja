@@ -6,7 +6,7 @@
 
 ---
 
-This query detects authentication attempt from a fake computer account(username ends with $).  Computer accounts are normally not authenticating via interactive logon or remote desktop neither they are unlocking the systems. Ref: https://blog.menasec.net/2019/02/threat-hunting-6-hiding-in-plain-sights.html
+This query detects authentication attempt from a fake computer account(username ends with $).  Computer accounts are normally not authenticating via interactive logon or remote desktop neither they are unlocking the systems.
 
 | Attribute | Value |
 |:----------|:------|
@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4624,4625"` | ✓ | ✓ | ✓ |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4624,4625"` | ✓ | ✓ | ? |
 
 ## Associated Connectors
 

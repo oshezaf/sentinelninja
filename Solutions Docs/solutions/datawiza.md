@@ -25,6 +25,12 @@
 
 Send Datawiza Access Proxy access and MFA logs to Microsoft Sentinel for real-time security insights and analytics. Improve visibility, accelerate investigations, and meet audit/compliance requirements.
 
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
@@ -40,16 +46,31 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`datawizaserveraccess_CL`](../tables/datawizaserveraccess-cl.md) 🔶 | [Datawiza DAP](../connectors/datawizadapsolution.md) | - |
+| [`datawizaserveraccess_CL`](../tables/datawizaserveraccess-cl.md) 🔶 | [Datawiza DAP](../connectors/datawizadapsolution.md) | Analytics |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+
+## Content Items
+
+This solution includes **1 content item(s)**:
+
+| Content Type | Count |
+|:-------------|:------|
+| Analytic Rules | 1 |
+
+### Analytic Rules
+
+| Name | Severity | Tactics | Tables Used |
+|:-----|:---------|:--------|:------------|
+| [Datawiza - massive errors detected](../content/datawiza-datawiza-massive-errors-detected-ddee1398-cf0b-46af-b583-78c3c29156dc-f782246e.md) | Medium | Discovery | [`datawizaserveraccess_CL`](../tables/datawizaserveraccess-cl.md) |
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                     |
 |-------------|--------------------------------|----------------------------------------|
-| 3.0.0       | 10-11-2025                     | Initial Solution Release.             |
+| 3.0.1       | 03-05-2026                     | Added new analytics rules.             |
+| 3.0.0       | 10-11-2025                     | Initial Solution Release.              |
 
 ---
 

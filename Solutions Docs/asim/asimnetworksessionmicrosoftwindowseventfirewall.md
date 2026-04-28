@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`WindowsEvent`](../tables/windowsevent.md) | `EventID in "5154,5155,5156,5158,5159"` | ✓ | ✓ | ✓ |
+| [`WindowsEvent`](../tables/windowsevent.md) | `EventID in "5154,5155,5156,5158,5159"` | ✓ | ✓ | ? |
 
 ## Parameters
 

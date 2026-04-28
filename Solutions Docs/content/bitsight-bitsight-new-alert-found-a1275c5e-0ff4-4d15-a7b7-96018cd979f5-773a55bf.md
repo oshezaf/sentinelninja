@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`BitsightAlerts_data_CL`](../tables/bitsightalerts-data-cl.md) | ✓ | ✓ | ✓ |
+| [`BitsightAlerts_data_CL`](../tables/bitsightalerts-data-cl.md) | ? | ✓ | ? |
 
 ---
 

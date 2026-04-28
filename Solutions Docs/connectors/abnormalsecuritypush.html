@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abnormal Security Push &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="abnormal-security">Abnormal Security (Push)</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/AbnormalSecurity/Data%20Connectors/Logo/abnormalsecurity.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>AbnormalSecurityPush</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Abnormal Security</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/abnormalsecurity.html">AbnormalSecurity</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/ccf-push.html">CCF Push</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbnormalSecurity/Data%20Connectors/AbnormalSecurity_CCF/AbnormalSecurity_connectorDefinition.json">AbnormalSecurity_connectorDefinition.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Configuration</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbnormalSecurity/Data%20Connectors/AbnormalSecurity_CCF/AbnormalSecurity_dataConnector.json">AbnormalSecurity_dataConnector.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Capabilities</strong></td>
+<td style="text-align: left;"><code>Push</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>CCF Push connectors use DCR-based Log Ingestion API</em></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://abnormalsecurity.com">Abnormal Security</a> connector pushes real-time security events (threats, cases, audit logs, abuse mailbox reports, posture changes, ATO cases, remediations, and vendor cases) from Abnormal's cloud email security platform into Microsoft Sentinel using the Codeless Connector Framework (CCF) Push pattern. Events are routed to per-event-type tables matching the legacy connector naming convention, enabling seamless migration.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/abnormal-security-abuse-mailbox-cl.html"><code>ABNORMAL_SECURITY_ABUSE_MAILBOX_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/abnormal-security-ato-case-cl.html"><code>ABNORMAL_SECURITY_ATO_CASE_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/abnormal-security-audit-log-cl.html"><code>ABNORMAL_SECURITY_AUDIT_LOG_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/abnormal-security-case-cl.html"><code>ABNORMAL_SECURITY_CASE_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/abnormal-security-posture-change-cl.html"><code>ABNORMAL_SECURITY_POSTURE_CHANGE_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/abnormal-security-remediation-cl.html"><code>ABNORMAL_SECURITY_REMEDIATION_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/abnormal-security-threat-log-cl.html"><code>ABNORMAL_SECURITY_THREAT_LOG_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/abnormal-security-vendor-case-cl.html"><code>ABNORMAL_SECURITY_VENDOR_CASE_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/abnormalsecuritylogs-cl.html"><code>AbnormalSecurityLogs_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions are required.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Microsoft Entra</strong>: Permission to create an app registration in Microsoft Entra ID. Typically requires Entra ID Application Developer role or higher.
+- <strong>Microsoft Azure</strong>: Permission to assign Monitoring Metrics Publisher role on data collection rule (DCR). Typically requires Azure RBAC Owner or User Access Administrator role.
+- <strong>Abnormal Security</strong>: Active Abnormal Security subscription with access to the SIEM integration settings.</p>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Deploy Connector Resources</strong></p>
+<p>This connector enables Abnormal Security to push real-time security events directly to Microsoft Sentinel via the Azure Monitor Ingestion API.</p>
+<h4 id="automated-configuration">Automated Configuration</h4>
+<p>Clicking <strong>Deploy</strong> will create:
+- 9 custom log tables for per-event-type routing
+- Data Collection Rule (DCR) with 9 streams
+- Data Collection Endpoint (DCE) for ingestion
+- Microsoft Entra application with OAuth credentials
+- Required IAM role assignments (Monitoring Metrics Publisher)</p>
+<p>This enables Abnormal Security to securely push events using OAuth 2.0 client credentials.
+Deploy Abnormal Security Push Connector</p>
+<p><strong>2. Configure Abnormal Security</strong></p>
+<p>Use the following parameters to configure the Microsoft Sentinel integration in the Abnormal Security Portal.
+- <strong>Tenant ID (Directory ID)</strong>: <code>TenantId</code></p>
+<blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
+- <strong>Application (Client) ID</strong>: <code>ApplicationId</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
+- <strong>Client Secret</strong>: <code>ApplicationSecret</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
+- <strong>Data Collection Endpoint URI</strong>: <code>DataCollectionEndpoint</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
+- <strong>Data Collection Rule Immutable ID</strong>: <code>DataCollectionRuleId</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
+- <strong>Fallback Stream Name</strong>: <code>Custom-AbnormalSecurityLogs</code>
+- <strong>Stream Prefix (for per-event-type routing)</strong>: <code>Custom-ABNORMAL_SECURITY_</code></p>
+</blockquote>
+<h4 id="configure-in-abnormal-security-portal">Configure in Abnormal Security Portal</h4>
+<ol>
+<li>Log in to <a href="https://portal.abnormalsecurity.com">Abnormal Security Portal</a></li>
+<li>Navigate to <strong>Settings &gt; Integrations &gt; SIEM</strong></li>
+<li>Select <strong>Microsoft Sentinel (Azure Monitor CCF)</strong></li>
+<li>Enter all 7 values from above</li>
+<li>Click <strong>Verify Credentials</strong> to test the connection</li>
+<li>Click <strong>Save</strong> and <strong>Enable</strong> the integration</li>
+</ol>
+<p><strong>Multi-table routing:</strong> Events are automatically routed to per-event-type tables (e.g., threat logs → <code>ABNORMAL_SECURITY_THREAT_LOG_CL</code>, cases → <code>ABNORMAL_SECURITY_CASE_CL</code>). Unknown event types go to the fallback table <code>AbnormalSecurityLogs_CL</code>.</p>
+<p><strong>3. Verify Data Ingestion</strong></p>
+<p>Confirm events are flowing from Abnormal Security to Sentinel.
+Wait 5-10 minutes after enabling the integration, then run this KQL query:</p>
+<p>union ABNORMAL_SECURITY_THREAT_LOG_CL, ABNORMAL_SECURITY_CASE_CL, ABNORMAL_SECURITY_AUDIT_LOG_CL, ABNORMAL_SECURITY_ABUSE_MAILBOX_CL, ABNORMAL_SECURITY_POSTURE_CHANGE_CL, ABNORMAL_SECURITY_ATO_CASE_CL, ABNORMAL_SECURITY_REMEDIATION_CL, ABNORMAL_SECURITY_VENDOR_CASE_CL, AbnormalSecurityLogs_CL | where TimeGenerated &gt; ago(1h) | extend event_type = tostring(abx_metadata.event_type) | summarize count() by event_type | order by count_ desc</p>
+<p>If no data appears after 15 minutes, verify credentials in the Abnormal Security Portal and check Azure Monitor for ingestion errors.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+</div>
+
+</body>
+</html>

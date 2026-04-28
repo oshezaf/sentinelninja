@@ -24,8 +24,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AzureActivity`](../tables/azureactivity.md) | `OperationName contains "delete"`<br>`OperationName contains "remove"` | ✗ | ✗ | ✗ |
-| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |
+| [`AzureActivity`](../tables/azureactivity.md) | `OperationName contains "delete"`<br>`OperationName contains "remove"` | ? | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ? |
 
 ---
 

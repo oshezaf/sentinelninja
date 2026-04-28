@@ -1,6 +1,6 @@
 # Analytic Rules - P
 
-**151 analytic rules** starting with 'P'.
+**139 analytic rules** starting with 'P'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -8,7 +8,7 @@
 
 ---
 
-**Jump to letter:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | [B](analytic-rules-b.md) | [C](analytic-rules-c.md) | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | [M](analytic-rules-m.md) | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | **P** | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [Z](analytic-rules-z.md)
+**Jump to letter:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | [B](analytic-rules-b.md) | [C](analytic-rules-c.md) | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | [M](analytic-rules-m.md) | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | **P** | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [X](analytic-rules-x.md) | [Z](analytic-rules-z.md)
 
 > **Source:** 📦 Solution | 📄 Standalone | 🔗 GitHub Only
 
@@ -47,18 +47,6 @@
 | [Password spray attack against Microsoft Entra ID Seamless SSO](microsoft-entra-id-password-spray-attack-against-microsoft-entra-id-seamless-sso-fb7ca1c9-e14c-40a3-856e-28f3c14ea1ba-0de0d722.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Password Spraying](falconfriday-password-spraying-e00f72ab-fea1-4a31-9ecc-eea6397cd38d-9fc40186.md) | Medium | 📦 [FalconFriday](../solutions/falconfriday.md) |
 | [PE file dropped in Color Profile Folder](standalone-content-pe-file-dropped-in-color-profile-folder-f68a5046-b7eb-4f69-9519-1e99708bb9e0-99c9d950.md) | Medium | 📄 Standalone Content |
-| [Pharming (High)](ctm360-pharming-high-40ce803b-6c79-442a-a7a7-dce63b67ac0a-79a9db6a.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Pharming (Informational)](ctm360-pharming-informational-c945e644-f30f-47b9-8042-c8184acebf8d-70d3271d.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Pharming (Low)](ctm360-pharming-low-e1e7b99e-087c-4628-a87d-6aefb23a8ca3-3d99206a.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Pharming (Medium)](ctm360-pharming-medium-d8c6738b-57c8-4f69-86d3-f4efa0535321-7f7b2a54.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
-| [Phish Redirector (High)](ctm360-phish-redirector-high-6edcbc5b-81eb-457f-a3ee-1c146aa74032-2093b3a3.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Phish Redirector (Informational)](ctm360-phish-redirector-informational-102224c3-c1de-460c-a501-7ba10d2b166e-bf3a8afc.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Phish Redirector (Low)](ctm360-phish-redirector-low-cca54d85-8faf-4c42-9265-f829a18c9e1c-b19a37b1.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Phish Redirector (Medium)](ctm360-phish-redirector-medium-b55eb6d1-1e16-40a9-a4e0-e40021c5bcef-c4d11dc2.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
-| [Phishing](ctm360-phishing-c3771865-b647-46a7-9be5-a96c418cebc0-65015552.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Phishing (Informational)](ctm360-phishing-informational-0e6b9d23-dc1b-4129-bf6b-a711332eedf4-38f3aa2d.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Phishing (Low)](ctm360-phishing-low-48d48a68-2da8-4207-9d15-1228e48a99ff-5d02e035.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Phishing (Medium)](ctm360-phishing-medium-a9bf702d-babf-4170-859a-09d568ecdae4-fbfff3e0.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
 | [Phishing link click observed in Network Traffic](standalone-content-phishing-link-click-observed-in-network-traffic-2fed0668-6d43-4c78-87e6-510f96f12145-72384c6d.md) | Medium | 📄 Standalone Content |
 | [PIM Elevation Request Rejected](microsoft-entra-id-pim-elevation-request-rejected-7d7e20f8-3384-4b71-811c-f5e950e8306c-aad39230.md) | High | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Ping Federate - Abnormal password reset attempts](pingfederate-ping-federate-abnormal-password-reset-attempts-e45a7334-2cb4-4690-8156-f02cac73d584-66f0ba30.md) | High | 📦 [PingFederate](../solutions/pingfederate.md) |

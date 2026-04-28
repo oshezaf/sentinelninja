@@ -16,7 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://help.sap.com/docs/SAP_ENTERPRISE_THREAT_DETECTION_CLOUD_EDITION](https://help.sap.com/docs/SAP_ENTERPRISE_THREAT_DETECTION_CLOUD_EDITION) |
 | **Categories** | domains |
-| **Version** | 3.0.3 |
+| **Version** | 3.0.4 |
 | **Author** | SAP |
 | **First Published** | 2025-02-17 |
 | **Last Updated** | 2025-09-11 |
@@ -67,6 +67,7 @@ This solution includes **4 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.0.4       |  16-04-2026                    | Added Users entity expansion to Alerts for email correlation |
 | 3.0.3       |  11-09-2025                    | Investigations API Connector added |
 | 3.0.2       |  24-06-2025                    | Data connector polling window reduced |
 | 3.0.1       |  31-03-2025                    | SAP OData entity change from TriggeringEvents to new NormalizedTriggeringEvents |

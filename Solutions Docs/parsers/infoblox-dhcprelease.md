@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "DHCPRELEASE"` | ✓ | ✓ | ✓ |
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "DHCPRELEASE"` | ✓ | ✓ | ? |
 
 ---
 

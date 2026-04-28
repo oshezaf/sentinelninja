@@ -46,7 +46,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.1.0</td>
+<td style="text-align: left;">3.2.0</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -58,7 +58,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Last Updated</strong></td>
-<td style="text-align: left;">2025-09-12</td>
+<td style="text-align: left;">2026-02-04</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Solution Folder</strong></td>
@@ -75,9 +75,10 @@
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
 <ul>
-<li><a href="../connectors/lumenthreatfeedconnector.html">Lumen Defender Threat Feed Data Connector</a></li>
+<li><a href="../connectors/lumenthreatfeedconnectorv2.html">Lumen Defender Threat Feed Data Connector V2</a></li>
+<li><a href="../connectors/lumenthreatfeedconnectorv2privatenetworking.html">Lumen Defender Threat Feed Data Connector V2 (using Azure Functions Flex Consumption Plan with Private Networking)</a></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
 <p>This solution uses <strong>22 table(s)</strong>:</p>
@@ -225,7 +226,7 @@
 </tr>
 <tr>
 <td><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
-<td><a href="../connectors/lumenthreatfeedconnector.html">Lumen Defender Threat Feed Data Connector</a></td>
+<td><a href="../connectors/lumenthreatfeedconnectorv2.html">Lumen Defender Threat Feed Data Connector V2</a>, <a href="../connectors/lumenthreatfeedconnectorv2privatenetworking.html">Lumen Defender Threat Feed Data Connector V2 (using Azure Functions Flex Consumption Plan with Private Networking)</a></td>
 <td>Analytics, Hunting, Workbooks</td>
 </tr>
 </tbody>
@@ -378,7 +379,7 @@
 <h2 id="solution-contents">Solution contents</h2>
 <ul>
 <li>Data Connector</li>
-<li><code>Data Connectors/LumenThreatFeed</code> (ARM templates + Function App implementation)</li>
+<li><code>Data Connectors/LumenThreatFeedv2</code> (ARM templates + Function App implementation)</li>
 <li>Analytic Rules (examples)</li>
 <li><code>Lumen_DomainEntity_DNS.yaml</code></li>
 <li><code>Lumen_IPEntity_CommonSecurityLog.yaml</code></li>
@@ -413,14 +414,19 @@
 </thead>
 <tbody>
 <tr>
-<td>1.0.0</td>
-<td>09-12-2025</td>
-<td>Initial Solution Release</td>
+<td>3.2.0</td>
+<td>02-03-2026</td>
+<td>Deprecated and removed V1.1 Connector. Update V2 data connector for API v3 compatibility: added QUEUED status handling, improved confidence value type conversion for string/integer support, and reordered response handling for new pagination behavior</td>
 </tr>
 <tr>
-<td>1.1.0</td>
+<td>3.1.0</td>
 <td>10-23-2025</td>
 <td>Update data connector to utilize more frequent TI object updates and improvements to Workbook</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>09-12-2025</td>
+<td>Initial Solution Release</td>
 </tr>
 </tbody>
 </table>

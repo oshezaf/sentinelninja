@@ -1,6 +1,6 @@
-# ⚠️ meshStack
+# meshStack Events for Azure Sentinel
 
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+*Solution: meshStack*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/meshcloud.svg" alt="meshStack Logo" width="75" height="75">
 
@@ -16,10 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://feedback.meshcloud.io](https://feedback.meshcloud.io) |
 | **Categories** | domains |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.1 |
 | **Author** | meshcloud - support@meshcloud.io |
 | **First Published** | 2025-12-15 |
+| **Last Updated** | 2026-04-16 |
 | **Solution Folder** | [meshStack](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/meshStack) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/meshcloudgmbh1628603483473.azure-sentinel-solution-meshstack) · Popularity: ⚪ Very Low (0%) |
 
 The meshStack solution for Microsoft Sentinel enables you to ingest meshStack Event Logs into Microsoft Sentinel.
 
@@ -124,6 +126,13 @@ These credentials are used in the OAuth2 client credentials flow:
 
 
 *[Content truncated...]*
+
+## Release Notes
+
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History** |
+|---|---|---|
+| 3.0.1 | 10-04-2026 | Updated **publisherId** in solution metadata to address best practice validation |
+| 3.0.0 | 15-12-2025 | Initial release |
 
 ---
 

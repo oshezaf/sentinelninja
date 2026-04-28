@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Syslog`](../tables/syslog.md) | `ProcessName == "sudo"`<br>`SyslogMessage has "COMMAND="`<br>`SyslogMessage has "TTY="`<br>`SyslogMessage has "USER="`<br>`SyslogMessage has "incorrect password attempts"`<br>`SyslogMessage has "session closed for user"`<br>`SyslogMessage has "user NOT in sudoers"` | ✓ | ✓ | ✓ |
+| [`Syslog`](../tables/syslog.md) | `ProcessName == "sudo"`<br>`SyslogMessage has "COMMAND="`<br>`SyslogMessage has "TTY="`<br>`SyslogMessage has "USER="`<br>`SyslogMessage has "incorrect password attempts"`<br>`SyslogMessage has "session closed for user"`<br>`SyslogMessage has "user NOT in sudoers"` | ✓ | ✓ | ? |
 
 ## Parameters
 

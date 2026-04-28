@@ -59,7 +59,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Last Updated</strong></td>
-<td style="text-align: left;">2023-10-16</td>
+<td style="text-align: left;">2026-04-23</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Solution Folder</strong></td>
@@ -71,9 +71,6 @@
 </tr>
 </tbody>
 </table>
-<ul>
-<li>Review the solution <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/ReleaseNotes.md">Release Notes</a></li>
-</ul>
 <p>Dynatrace is a leading observability platform that provides automatic and intelligent observability at scale for cloud-native and enterprise workloads; with Dynatrace Application Security, your DevSecOps teams can resolve security issues faster, accelerating software delivery.
 Integrating Dynatrace with Microsoft Sentinel enables DevSecOps teams to detect, prioritize, triage, and remediate attacks rapidly. DevSecOps teams benefit from the high-accuracy threat signals Dynatrace surfaces. It helps them avoid time-consuming investigation activities, freeing them up for more critical tasks.
 Microsoft Sentinel data connectors poll Dynatrace for new <a href="https://www.dynatrace.com/platform/application-security/">attacks, vulnerabilities, audit logs</a>, and <a href="https://docs.dynatrace.com/docs/shortlink/davis-ai-landing">problem events</a>.</p>
@@ -83,6 +80,10 @@ Microsoft Sentinel data connectors poll Dynatrace for new <a href="https://www.d
 - <strong>Audit logs</strong>, Security-relevant events for a Dynatrace tenant.
 - <strong>Problems</strong>, AI-powered observability problems raised across cloud and hybrid environments.</p>
 <p><a href="https://www.dynatrace.com/">Learn More about Dynatrace</a> | <a href="https://docs.dynatrace.com/docs">Dynatrace Docs</a></p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>a. <a href="https://learn.microsoft.com/azure/sentinel/overview">Microsoft Sentinel</a></p>
+<p>b. <a href="https://learn.microsoft.com/azure/logic-apps/logic-apps-overview">Azure Logic Apps</a></p>
 <h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
@@ -90,15 +91,19 @@ Microsoft Sentinel data connectors poll Dynatrace for new <a href="https://www.d
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>4 data connector(s)</strong>:</p>
+<p>This solution provides <strong>8 data connector(s)</strong>:</p>
 <ul>
-<li><a href="../connectors/dynatraceattacks.html">Dynatrace Attacks</a></li>
-<li><a href="../connectors/dynatraceauditlogs.html">Dynatrace Audit Logs</a></li>
-<li><a href="../connectors/dynatraceproblems.html">Dynatrace Problems</a></li>
-<li><a href="../connectors/dynatraceruntimevulnerabilities.html">Dynatrace Runtime Vulnerabilities</a></li>
+<li><a href="../connectors/dtrunvulnccpdefinition.html">Dynatrace Runtime Vulnerabilities V2</a></li>
+<li><a href="../connectors/dynatraceattacks.html">Dynatrace Attacks V1</a></li>
+<li><a href="../connectors/dynatraceattacksccpdefinition.html">Dynatrace Attacks V2</a></li>
+<li><a href="../connectors/dynatraceauditlogs.html">Dynatrace Audit Logs V1</a></li>
+<li><a href="../connectors/dynatraceauditlogsccpdefinition.html">Dynatrace Audit Logs V2</a></li>
+<li><a href="../connectors/dynatraceproblems.html">Dynatrace Problems V1</a></li>
+<li><a href="../connectors/dynatraceproblemsccpdefinition.html">Dynatrace Problems V2</a></li>
+<li><a href="../connectors/dynatraceruntimevulnerabilities.html">Dynatrace Runtime Vulnerabilities V1</a></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>4 table(s)</strong>:</p>
+<p>This solution uses <strong>8 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -109,23 +114,43 @@ Microsoft Sentinel data connectors poll Dynatrace for new <a href="https://www.d
 </thead>
 <tbody>
 <tr>
-<td><a href="../tables/dynatraceattacks-cl.html"><code>DynatraceAttacks_CL</code></a></td>
-<td><a href="../connectors/dynatraceattacks.html">Dynatrace Attacks</a></td>
+<td><a href="../tables/dynatraceattacksv2-cl.html"><code>DynatraceAttacksV2_CL</code></a></td>
+<td><a href="../connectors/dynatraceattacks.html">Dynatrace Attacks V1</a>, <a href="../connectors/dynatraceattacksccpdefinition.html">Dynatrace Attacks V2</a></td>
 <td>Analytics, Workbooks</td>
 </tr>
 <tr>
-<td><a href="../tables/dynatraceauditlogs-cl.html"><code>DynatraceAuditLogs_CL</code></a></td>
-<td><a href="../connectors/dynatraceauditlogs.html">Dynatrace Audit Logs</a></td>
+<td><a href="../tables/dynatraceattacks-cl.html"><code>DynatraceAttacks_CL</code></a></td>
+<td><a href="../connectors/dynatraceattacks.html">Dynatrace Attacks V1</a>, <a href="../connectors/dynatraceattacksccpdefinition.html">Dynatrace Attacks V2</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/dynatraceauditlogsv2-cl.html"><code>DynatraceAuditLogsV2_CL</code></a></td>
+<td><a href="../connectors/dynatraceauditlogs.html">Dynatrace Audit Logs V1</a>, <a href="../connectors/dynatraceauditlogsccpdefinition.html">Dynatrace Audit Logs V2</a></td>
 <td>Workbooks</td>
 </tr>
 <tr>
+<td><a href="../tables/dynatraceauditlogs-cl.html"><code>DynatraceAuditLogs_CL</code></a></td>
+<td><a href="../connectors/dynatraceauditlogs.html">Dynatrace Audit Logs V1</a>, <a href="../connectors/dynatraceauditlogsccpdefinition.html">Dynatrace Audit Logs V2</a></td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/dynatraceproblemsv2-cl.html"><code>DynatraceProblemsV2_CL</code></a></td>
+<td><a href="../connectors/dynatraceproblems.html">Dynatrace Problems V1</a>, <a href="../connectors/dynatraceproblemsccpdefinition.html">Dynatrace Problems V2</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+<tr>
 <td><a href="../tables/dynatraceproblems-cl.html"><code>DynatraceProblems_CL</code></a></td>
-<td><a href="../connectors/dynatraceproblems.html">Dynatrace Problems</a></td>
+<td><a href="../connectors/dynatraceproblems.html">Dynatrace Problems V1</a>, <a href="../connectors/dynatraceproblemsccpdefinition.html">Dynatrace Problems V2</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/dynatracesecurityproblemsv2-cl.html"><code>DynatraceSecurityProblemsV2_CL</code></a></td>
+<td><a href="../connectors/dynatraceruntimevulnerabilities.html">Dynatrace Runtime Vulnerabilities V1</a>, <a href="../connectors/dtrunvulnccpdefinition.html">Dynatrace Runtime Vulnerabilities V2</a></td>
 <td>Analytics, Workbooks</td>
 </tr>
 <tr>
 <td><a href="../tables/dynatracesecurityproblems-cl.html"><code>DynatraceSecurityProblems_CL</code></a></td>
-<td><a href="../connectors/dynatraceruntimevulnerabilities.html">Dynatrace Runtime Vulnerabilities</a></td>
+<td><a href="../connectors/dynatraceruntimevulnerabilities.html">Dynatrace Runtime Vulnerabilities V1</a>, <a href="../connectors/dtrunvulnccpdefinition.html">Dynatrace Runtime Vulnerabilities V2</a></td>
 <td>Analytics, Workbooks</td>
 </tr>
 </tbody>
@@ -191,31 +216,31 @@ Microsoft Sentinel data connectors poll Dynatrace for new <a href="https://www.d
 <td style="text-align: left;"><a href="../content/dynatrace-dynatrace-problem-detection-415978ff-074e-4203-824a-b06153d77bf7-a4be516e.html">Dynatrace - Problem detection</a></td>
 <td style="text-align: left;">Informational</td>
 <td style="text-align: left;">DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation</td>
-<td style="text-align: left;"><a href="../tables/dynatraceproblems-cl.html"><code>DynatraceProblems_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/dynatraceproblemsv2-cl.html"><code>DynatraceProblemsV2_CL</code></a><br><a href="../tables/dynatraceproblems-cl.html"><code>DynatraceProblems_CL</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/dynatrace-dynatrace-application-security-attack-detection-1b0b2065-8bac-5a00-83c4-1b58f69ac212-bb12d178.html">Dynatrace Application Security - Attack detection</a></td>
 <td style="text-align: left;">High</td>
 <td style="text-align: left;">Execution, Impact, InitialAccess, PrivilegeEscalation</td>
-<td style="text-align: left;"><a href="../tables/dynatraceattacks-cl.html"><code>DynatraceAttacks_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/dynatraceattacksv2-cl.html"><code>DynatraceAttacksV2_CL</code></a><br><a href="../tables/dynatraceattacks-cl.html"><code>DynatraceAttacks_CL</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/dynatrace-dynatrace-application-security-code-level-runtime-vulnerability-detection-305093b4-0fa2-57bc-bced-caea782a6e9c-7ce892bd.html">Dynatrace Application Security - Code-Level runtime vulnerability detection</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation</td>
-<td style="text-align: left;"><a href="../tables/dynatracesecurityproblems-cl.html"><code>DynatraceSecurityProblems_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/dynatracesecurityproblemsv2-cl.html"><code>DynatraceSecurityProblemsV2_CL</code></a><br><a href="../tables/dynatracesecurityproblems-cl.html"><code>DynatraceSecurityProblems_CL</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/dynatrace-dynatrace-application-security-non-critical-runtime-vulnerability-detection-ff0af873-a2f2-4233-8412-0ef4e00b0156-12214a98.html">Dynatrace Application Security - Non-critical runtime vulnerability detection</a></td>
 <td style="text-align: left;">Informational</td>
 <td style="text-align: left;">DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation</td>
-<td style="text-align: left;"><a href="../tables/dynatracesecurityproblems-cl.html"><code>DynatraceSecurityProblems_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/dynatracesecurityproblemsv2-cl.html"><code>DynatraceSecurityProblemsV2_CL</code></a><br><a href="../tables/dynatracesecurityproblems-cl.html"><code>DynatraceSecurityProblems_CL</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/dynatrace-dynatrace-application-security-third-party-runtime-vulnerability-detection-af99b078-124b-543a-9a50-66ef87c09f6a-ea28978d.html">Dynatrace Application Security - Third-Party runtime vulnerability detection</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation</td>
-<td style="text-align: left;"><a href="../tables/dynatracesecurityproblems-cl.html"><code>DynatraceSecurityProblems_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/dynatracesecurityproblemsv2-cl.html"><code>DynatraceSecurityProblemsV2_CL</code></a><br><a href="../tables/dynatracesecurityproblems-cl.html"><code>DynatraceSecurityProblems_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -230,7 +255,7 @@ Microsoft Sentinel data connectors poll Dynatrace for new <a href="https://www.d
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/dynatrace-dynatrace-eddf4fe2.html">Dynatrace</a></td>
-<td style="text-align: left;"><a href="../tables/dynatraceattacks-cl.html"><code>DynatraceAttacks_CL</code></a><br><a href="../tables/dynatraceauditlogs-cl.html"><code>DynatraceAuditLogs_CL</code></a><br><a href="../tables/dynatraceproblems-cl.html"><code>DynatraceProblems_CL</code></a><br><a href="../tables/dynatracesecurityproblems-cl.html"><code>DynatraceSecurityProblems_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/dynatraceattacksv2-cl.html"><code>DynatraceAttacksV2_CL</code></a><br><a href="../tables/dynatraceattacks-cl.html"><code>DynatraceAttacks_CL</code></a><br><a href="../tables/dynatraceauditlogsv2-cl.html"><code>DynatraceAuditLogsV2_CL</code></a><br><a href="../tables/dynatraceauditlogs-cl.html"><code>DynatraceAuditLogs_CL</code></a><br><a href="../tables/dynatraceproblemsv2-cl.html"><code>DynatraceProblemsV2_CL</code></a><br><a href="../tables/dynatraceproblems-cl.html"><code>DynatraceProblems_CL</code></a><br><a href="../tables/dynatracesecurityproblemsv2-cl.html"><code>DynatraceSecurityProblemsV2_CL</code></a><br><a href="../tables/dynatracesecurityproblems-cl.html"><code>DynatraceSecurityProblems_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -289,22 +314,22 @@ Microsoft Sentinel data connectors poll Dynatrace for new <a href="https://www.d
 <tr>
 <td style="text-align: left;"><a href="../parsers/dynatraceattacks.html">DynatraceAttacks</a></td>
 <td style="text-align: left;">-</td>
-<td style="text-align: left;"><a href="../tables/dynatraceattacks-cl.html"><code>DynatraceAttacks_CL</code></a> <em>(read)</em></td>
+<td style="text-align: left;"><a href="../tables/dynatraceattacksv2-cl.html"><code>DynatraceAttacksV2_CL</code></a> <em>(read)</em><br><a href="../tables/dynatraceattacks-cl.html"><code>DynatraceAttacks_CL</code></a> <em>(read)</em></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../parsers/dynatraceauditlogs.html">DynatraceAuditLogs</a></td>
 <td style="text-align: left;">-</td>
-<td style="text-align: left;"><a href="../tables/dynatraceauditlogs-cl.html"><code>DynatraceAuditLogs_CL</code></a> <em>(read)</em></td>
+<td style="text-align: left;"><a href="../tables/dynatraceauditlogsv2-cl.html"><code>DynatraceAuditLogsV2_CL</code></a> <em>(read)</em><br><a href="../tables/dynatraceauditlogs-cl.html"><code>DynatraceAuditLogs_CL</code></a> <em>(read)</em></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../parsers/dynatraceproblems.html">DynatraceProblems</a></td>
 <td style="text-align: left;">-</td>
-<td style="text-align: left;"><a href="../tables/dynatraceproblems-cl.html"><code>DynatraceProblems_CL</code></a> <em>(read)</em></td>
+<td style="text-align: left;"><a href="../tables/dynatraceproblemsv2-cl.html"><code>DynatraceProblemsV2_CL</code></a> <em>(read)</em><br><a href="../tables/dynatraceproblems-cl.html"><code>DynatraceProblems_CL</code></a> <em>(read)</em></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../parsers/dynatracesecurityproblems.html">DynatraceSecurityProblems</a></td>
 <td style="text-align: left;">-</td>
-<td style="text-align: left;"><a href="../tables/dynatracesecurityproblems-cl.html"><code>DynatraceSecurityProblems_CL</code></a> <em>(read)</em></td>
+<td style="text-align: left;"><a href="../tables/dynatracesecurityproblemsv2-cl.html"><code>DynatraceSecurityProblemsV2_CL</code></a> <em>(read)</em><br><a href="../tables/dynatracesecurityproblems-cl.html"><code>DynatraceSecurityProblems_CL</code></a> <em>(read)</em></td>
 </tr>
 </tbody>
 </table>
@@ -320,38 +345,18 @@ Microsoft Sentinel data connectors poll Dynatrace for new <a href="https://www.d
 <tbody>
 <tr>
 <td>3.0.2</td>
-<td>03-05-2024</td>
-<td>Repackaged for parser issue fix on reinstall</td>
+<td>02-04-2026</td>
+<td>Added DCR based connectors.</td>
 </tr>
 <tr>
 <td>3.0.1</td>
 <td>18-01-2024</td>
-<td>Changes for rebranding from Microsoft 365 Defender to Microsoft Defender XDR,</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>Updated user-agent strings used when calling Dynatrace REST API's,</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>Added new Entity Mappings to <strong>Analytic Rules</strong></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>Aligned Playbook, Data Connector &amp; Workbook version numbers with rest of solution</td>
+<td>Changes for rebranding from Microsoft 365 Defender to Microsoft Defender XDR, Updated user-agent strings used when calling Dynatrace REST API's, Added new Entity Mappings to <strong>Analytic Rules</strong>                                    Aligned Playbook, Data Connector &amp; Workbook version numbers with rest of solution.</td>
 </tr>
 <tr>
 <td>3.0.0</td>
 <td>16-10-2023</td>
 <td>Enabled new api paging mode on <strong>Data Connector</strong> to fix issues related to polling Dynatrace REST API's with a large number of results.</td>
-</tr>
-<tr>
-<td>2.0.0</td>
-<td>18-10-2022</td>
-<td>Initial Solution Release.</td>
 </tr>
 </tbody>
 </table>

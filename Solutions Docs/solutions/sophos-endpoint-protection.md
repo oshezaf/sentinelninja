@@ -16,10 +16,10 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | domains |
-| **Version** | 3.0.5 |
+| **Version** | 3.0.8 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-07-07 |
-| **Last Updated** | 2026-03-27 |
+| **Last Updated** | 2026-04-17 |
 | **Solution Folder** | [Sophos Endpoint Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20Endpoint%20Protection) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-sophosep) · Popularity: 🟢 High (85%) |
 
@@ -45,8 +45,8 @@ c. [Codeless Connector Platform (CCP)](https://learn.microsoft.com/en-us/azure/s
 
 This solution provides **2 data connector(s)**:
 
-- [Sophos Endpoint Protection](../connectors/sophosep.md) 🔶
-- [Sophos Endpoint Protection (using REST API)](../connectors/sophosendpointprotectionccpdefinition.md)
+- [[DEPRECATED] Sophos Endpoint Protection (using Azure Function)](../connectors/sophosep.md) 🔶
+- [Sophos Endpoint Protection (via Codeless Connector Platform)](../connectors/sophosendpointprotectionccpdefinition.md)
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
@@ -57,9 +57,9 @@ This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`SophosEPAlerts_CL`](../tables/sophosepalerts-cl.md) | [Sophos Endpoint Protection (using REST API)](../connectors/sophosendpointprotectionccpdefinition.md) | - |
-| [`SophosEPEvents_CL`](../tables/sophosepevents-cl.md) | [Sophos Endpoint Protection (using REST API)](../connectors/sophosendpointprotectionccpdefinition.md) | - |
-| [`SophosEP_CL`](../tables/sophosep-cl.md) 🔶 | [Sophos Endpoint Protection](../connectors/sophosep.md) | - |
+| [`SophosEPAlerts_CL`](../tables/sophosepalerts-cl.md) | [Sophos Endpoint Protection (via Codeless Connector Platform)](../connectors/sophosendpointprotectionccpdefinition.md) | - |
+| [`SophosEPEvents_CL`](../tables/sophosepevents-cl.md) | [Sophos Endpoint Protection (via Codeless Connector Platform)](../connectors/sophosendpointprotectionccpdefinition.md) | - |
+| [`SophosEP_CL`](../tables/sophosep-cl.md) 🔶 | [[DEPRECATED] Sophos Endpoint Protection (using Azure Function)](../connectors/sophosep.md) | - |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
@@ -82,6 +82,8 @@ This solution includes **1 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.0.8       | 14-04-2026                     | Deprecate Sophos Endpoint Protection (using Azure Function) |
+| 3.0.7       | 24-03-2026                     | Sophos Endpoint Protection (via Codeless Connector Platform)           |
 | 3.0.6       | 23-10-2025                     | Updated the solution to be compatible with tool changes for the connection name.            |
 | 3.0.5       | 21-08-2024                     | **Data Connector** [Sophos Endpoint Protection (using REST API)] Globally Available|
 | 3.0.4       | 01-07-2024                     | Update files for CCP Connector to fix the connectivity|

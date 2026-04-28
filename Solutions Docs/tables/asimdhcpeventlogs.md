@@ -20,6 +20,8 @@ Reference for ASimDhcpEventLogs table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
 - [Parsers](#parsers-using-this-table)
 - [Resource Types](#resource-types)
 
@@ -130,6 +132,20 @@ Reference for ASimDhcpEventLogs table in Azure Monitor Logs.
 | ThreatRiskLevel | int | The risk level associated with the identified threat. The level should be a number between 0 and 100. |
 | TimeGenerated | datetime | The timestamp (UTC) reflecting the time in which the event was generated. |
 | Type | string | The name of the table |
+
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
 
 ---
 

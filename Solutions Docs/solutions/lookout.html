@@ -47,7 +47,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.0.1</td>
+<td style="text-align: left;">3.0.2</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -59,7 +59,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Last Updated</strong></td>
-<td style="text-align: left;">2026-01-13</td>
+<td style="text-align: left;">2026-04-24</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Solution Folder</strong></td>
@@ -67,7 +67,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Marketplace</strong></td>
-<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/lookoutinc.lookout_mtd_sentinel">Azure Marketplace</a> · Popularity: 🔵 Medium (50%)</td>
+<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/lookoutinc.lookout_mtd_sentinel">Azure Marketplace</a> · Rating: ★☆☆☆☆ 1.0/5 (2 ratings) · Popularity: 🔵 Medium (50%)</td>
 </tr>
 </tbody>
 </table>
@@ -331,6 +331,21 @@ Solutions/Lookout/
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>3.0.4</td>
+<td>24-04-2026</td>
+<td>Fixed <code>APIKey</code> bracket escaping in <code>mainTemplate.json</code>: changed <code>[[parameters('applicationKey')]]</code> to <code>[[parameters('applicationKey')]</code> to prevent ARM expression evaluation error (<code>expected token 'EndOfData' and actual 'RightSquareBracket'</code>) when Sentinel instantiates the ResourcesDataConnector template.</td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>23-04-2026</td>
+<td>Version bump for certification resubmission. Fixed <code>workspace-location</code> parameter <code>defaultValue</code> to use <code>[resourceGroup().location]</code> ARM expression.</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>11-03-2026</td>
+<td>Updated <code>lastPublishDate</code> across solution metadata and package to 2026-03-11. Cleaned up stale v4.0.0 branches. Resubmission for certification after resolving link discrepancy flagged in Best Practice Test 300.4.1.1. Fixed product branding: updated "Azure Sentinel" to "Microsoft Sentinel" in workbook descriptions. Fixed DCR transform query error: undefined symbol <code>detections</code> corrected to <code>smishing_alert.detections</code>. Aligned data connector version from <code>1.0.0</code> to <code>3.0.2</code> for consistent version tracking across all solution components. Updated all template version references from <code>3.0.1</code> to <code>3.0.2</code> in package. Added <strong>Parsers</strong> and <strong>Notebooks</strong> steps to the install wizard (<code>createUiDefinition.json</code>) for improved discoverability during solution deployment.</td>
+</tr>
 <tr>
 <td>3.0.1</td>
 <td>18-12-2025</td>

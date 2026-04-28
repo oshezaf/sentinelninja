@@ -31,11 +31,11 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) |  | ✓ | ✗ | ✓ |
-| [`AZFWNatRule`](../tables/azfwnatrule.md) |  | ✓ | ✗ | ✓ |
-| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) |  | ✓ | ✗ | ✓ |
-| [`AZFWThreatIntel`](../tables/azfwthreatintel.md) |  | ✓ | ✗ | ✓ |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category == "AzureFirewallNetworkRule"` | ✗ | ✗ | ✗ |
+| [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) |  | ✓ | ✗ | ? |
+| [`AZFWNatRule`](../tables/azfwnatrule.md) |  | ✓ | ✗ | ? |
+| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) |  | ✓ | ✗ | ? |
+| [`AZFWThreatIntel`](../tables/azfwthreatintel.md) |  | ✓ | ✗ | ? |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category == "AzureFirewallNetworkRule"` | ? | ✗ | ? |
 
 ## Parameters
 

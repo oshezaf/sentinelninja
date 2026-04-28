@@ -15,31 +15,36 @@
 
 - [Schema](#schema)
 - [Solutions](#solutions)
+- [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
-## Schema (11 columns)
+## Schema (7 columns)
 
-**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/TaniumSCCMClientHealth_CL.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium%5CData%20Connectors/Table_SccmHealth.json)
 
-| Column Name | Type |
-|:------------|:-----|
-| Age_s | string |
-| Computer | string |
-| Computer_Name_s | string |
-| Count_s | string |
-| Health_Status_s | string |
-| IP_Address_s | string |
-| OS_Platform_s | string |
-| RawData | string |
-| Reason_s | string |
-| TimeGenerated | datetime |
-| Type | string |
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| Computer_Name_s | string |  |
+| Count_d | real |  |
+| Health_Status_s | string |  |
+| IP_Address_s | string |  |
+| OS_Platform_s | string |  |
+| Reason_s | string |  |
+| TimeGenerated | datetime | The time at which the data was generated |
 
 ## Solutions (1)
 
 This table is used by the following solutions:
 
 - [Tanium](../solutions/tanium.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Tanium's CCF Push Connector](../connectors/taniumconnector.md) |  |
 
 ---
 

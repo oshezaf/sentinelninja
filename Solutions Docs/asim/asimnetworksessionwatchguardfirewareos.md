@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Syslog`](../tables/syslog.md) | `SyslogMessage !has "3000-0151"`<br>`SyslogMessage !has "icmp"`<br>`SyslogMessage !has "igmp"`<br>`SyslogMessage !has "msg="`<br>`SyslogMessage has "3000-0151"`<br>`SyslogMessage has "icmp"`<br>`SyslogMessage has "igmp"`<br>`SyslogMessage has_any "msg_id="` | ✓ | ✓ | ✓ |
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage !has "3000-0151"`<br>`SyslogMessage !has "icmp"`<br>`SyslogMessage !has "igmp"`<br>`SyslogMessage !has "msg="`<br>`SyslogMessage has "3000-0151"`<br>`SyslogMessage has "icmp"`<br>`SyslogMessage has "igmp"`<br>`SyslogMessage has_any "msg_id="` | ✓ | ✓ | ? |
 
 ## Parameters
 

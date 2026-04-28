@@ -16,7 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.greynoise.io/contact/general](https://www.greynoise.io/contact/general) |
 | **Categories** | domains |
-| **Version** | 3.0.3 |
+| **Version** | 3.1.0 |
 | **Author** | JP Bourget jp@bluecycle.net |
 | **First Published** | 2023-09-05 |
 | **Last Updated** | 2026-03-24 |
@@ -87,6 +87,7 @@ This solution includes **6 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.1.0       | 12-03-2026                     | Updated to use GreyNoise Python SDK v3.0.3, updated Data Connector instructions, Fixed python module mismatches, bumped Az Functions Runtime |
 | 3.0.3      | 17-07-2025                     | Updated to use GreyNoise Python SDK v3.0.1, use new Threat Intel API, updated requirements.txt, updated Data Connector instructions |
 | 3.0.2       | 30-05-2024                     | Added missing AMA **Data Connector** reference in **Analytic rules**  |
 | 3.0.1       | 29-11-2023                     | Updated the **Data Connector** Instructions, Fixed a Data Connector bug with Benign Indicator Ingest|

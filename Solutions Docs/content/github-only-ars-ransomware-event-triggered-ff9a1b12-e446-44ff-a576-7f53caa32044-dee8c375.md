@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType has_any "AsrRansomwareAudited,AsrRansomwareBlocked"` | ✓ | ✗ | ✓ |
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType has_any "AsrRansomwareAudited,AsrRansomwareBlocked"` | ✓ | ✗ | ? |
 
 ---
 

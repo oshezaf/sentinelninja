@@ -43,93 +43,129 @@
 <ul>
 <li><a href="#schema">Schema</a></li>
 <li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 </ul>
-<h2 id="schema">Schema (19 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/TaniumDefenderHealth_CL.json">KQL validation test schema</a></p>
+<h2 id="schema">Schema (22 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium%5CData%20Connectors/Table_DefenderHealth.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
 <tr>
 <th style="text-align: left;">Column Name</th>
 <th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Age_s</td>
+<td style="text-align: left;">AntiMalware_Engine_Version_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">AntiSpyware_State_s</td>
+<td style="text-align: left;">AntiMalware_Product_Version_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Antivirus_State_s</td>
+<td style="text-align: left;">AntiMalware_Service_State_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Asset_IP_Address_s</td>
+<td style="text-align: left;">AntiSpyware_Signature_Days_Age_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Asset_OS_Platform_s</td>
+<td style="text-align: left;">AntiSpyware_Signature_Update_Date_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Computer</td>
+<td style="text-align: left;">AntiSpyware_Signature_Version_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Computer_ID_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Computer_Name_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Count_s</td>
-<td style="text-align: left;">string</td>
+<td style="text-align: left;">Count_d</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Defender_Process_s</td>
+<td style="text-align: left;">Health_Issues_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Defender_Process_StartType_s</td>
+<td style="text-align: left;">IP_Address_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Health_s</td>
+<td style="text-align: left;">Is_AntiMalware_Service_Enabled_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Is_AntiSpyware_Service_Enabled_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Is_Defender_Healthy_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Is_Defender_Installed_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">OS_Platform_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">QuickScan_Age_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">RawData</td>
+<td style="text-align: left;">QuickScan_Overdue_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Signature_Update_Age_s</td>
+<td style="text-align: left;">QuickScan_Signature_Version_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QuickScan_Start_Time_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">QuickScan_Stop_Time_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">TimeGenerated</td>
 <td style="text-align: left;">datetime</td>
-</tr>
-<tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">Windows_Defender_Client_Version_s</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">Windows_Defender_Installed_s</td>
-<td style="text-align: left;">string</td>
+<td style="text-align: left;">The time at which the data was generated</td>
 </tr>
 </tbody>
 </table>
@@ -138,6 +174,22 @@
 <ul>
 <li><a href="../solutions/tanium.html">Tanium</a></li>
 </ul>
+<h2 id="connectors">Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/taniumconnector.html">Tanium's CCF Push Connector</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
 <hr />
 <h2 id="content-items-using-this-table">Content Items Using This Table (1)</h2>
 <h3 id="workbooks">Workbooks (1)</h3>

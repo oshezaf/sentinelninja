@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`WindowsEvent`](../tables/windowsevent.md) | `Provider == "Microsoft-Windows-Eventlog"` | ✓ | ✓ | ✓ |
+| [`WindowsEvent`](../tables/windowsevent.md) | `Provider == "Microsoft-Windows-Eventlog"` | ✓ | ✓ | ? |
 
 ## Parameters
 

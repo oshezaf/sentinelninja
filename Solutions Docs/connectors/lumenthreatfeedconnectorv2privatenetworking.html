@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lumen Defender Threat Feed Data Connector V2 using Azure Functions Flex Consumption Plan with Private Networking &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="lumen-defender-threat-feed-data-connector-v2">Lumen Defender Threat Feed Data Connector V2 (using Azure Functions Flex Consumption Plan with Private Networking)</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Lumen%20Defender%20Threat%20Feed/Workbooks/Images/Logo/Lumen.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>LumenThreatFeedConnectorV2PrivateNetworking</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Lumen Technologies, Inc.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lumen%20Defender%20Threat%20Feed/Data%20Connectors/LumenThreatFeedv2/LumenThreatFeedConnectorV2_PrivateNetworking_ConnectorUI.json">LumenThreatFeedConnectorV2_PrivateNetworking_ConnectorUI.json</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.lumen.com/en-us/security/black-lotus-labs.html">Lumen Defender Threat Feed</a> connector provides the capability to ingest STIX-formatted threat intelligence indicators from Lumen's Black Lotus Labs research team into Microsoft Sentinel. The connector automatically downloads and uploads threat intelligence indicators including IPv4 addresses and domains to the ThreatIntelIndicators table via the STIX Objects Upload API.</p>
+<p><strong>NOTE:</strong> This data connector uses the <a href="https://learn.microsoft.com/azure/azure-functions/flex-consumption-plan">Azure Functions Flex Consumption Plan</a> with VNet integration for secure, private network access to storage resources. More pricing details are <a href="https://azure.microsoft.com/pricing/details/functions/#pricing">here</a>.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Log Analytics Workspace</strong> (Workspace): Read and write permissions on the Log Analytics workspace are required.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
+- <strong>Azure Entra App Registration</strong>: An Azure Entra application registration with the Microsoft Sentinel Contributor role assigned is required for STIX Objects API access. <a href="https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app">See the documentation to learn more about Azure Entra applications</a>.
+- <strong>Microsoft Sentinel Contributor Role</strong>: Microsoft Sentinel Contributor role is required for the Azure Entra application to upload threat intelligence indicators.
+- <strong>Lumen Defender Threat Feed API Key</strong>: A Lumen Defender Threat Feed API Key is required for accessing threat intelligence data. <a href="mailto:DefenderThreatFeedSales@Lumen.com?subject=API%20Access%20Request">Contact Lumen for API access</a>.
+- <strong>Virtual Network permissions (for private access)</strong>: For private storage account access, <strong>Network Contributor</strong> permissions are required on the Virtual Network and subnets. The Function App subnet must be delegated to <strong>Microsoft.App/environments</strong> for Flex Consumption VNet integration.</p>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+<p><strong>NOTE:</strong> This connector uses Azure Functions with the Flex Consumption Plan to connect to the Lumen Defender Threat Feed API and upload threat intelligence indicators to Microsoft Sentinel via the STIX Objects API. The Flex Consumption Plan enables VNet integration for secure, private network access to storage resources. This might result in additional data ingestion and compute costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
+<p><strong>(Optional Step)</strong> Securely store API keys and secrets in Azure Key Vault. Azure Key Vault provides a secure mechanism to store and retrieve key values. <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Follow these instructions</a> to use Azure Key Vault with an Azure Functions App.</p>
+</blockquote>
+<p><strong>1. Configuration</strong></p>
+<p><strong>STEP 1 - Network Prerequisites for Private Access</strong></p>
+<blockquote>
+<p><strong>IMPORTANT:</strong> When deploying with private storage account access, <strong>you need a Virtual Network with two properly configured subnets.</strong> You can either use an existing VNet or deploy one using the template below.</p>
+</blockquote>
+<p><strong>Option A: Deploy a New Virtual Network (Recommended for new deployments)</strong></p>
+<p>Use this template to create a properly configured VNet with two subnets:
+- <strong>Function App Subnet</strong>: Delegated to Microsoft.App/environments for Flex Consumption VNet integration
+- <strong>Private Endpoint Subnet</strong>: For storage account private endpoints</p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FLumen%2520Defender%2520Threat%2520Feed%2FData%2520Connectors%2FLumenThreatFeedv2%2Fazuredeploy_VNet_for_PrivateEndpoint.json"><img alt="Deploy VNet to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
+<p>After deployment, note the following output values for use in STEP 5:
+- <strong>VNet Name</strong> (default: lumen-threatfeed-vnet)
+- <strong>VNet Resource Group</strong>
+- <strong>Function App Subnet Name</strong> (default: functionapp-subnet)
+- <strong>Private Endpoint Subnet Name</strong> (default: privateendpoint-subnet)</p>
+<p><strong>Option B: Use an Existing Virtual Network</strong></p>
+<p>If using an existing VNet, ensure the following requirements are met:</p>
+<blockquote>
+<ul>
+<li><strong>Virtual Network</strong>: Must be in the same region where you plan to deploy the Function App</li>
+<li><strong>Function App Subnet</strong>: Must be delegated to <strong>Microsoft.App/environments</strong> (required for Flex Consumption Plan)</li>
+<li><strong>Private Endpoint Subnet</strong>: Must NOT be delegated to any service</li>
+<li><strong>Subnet Size</strong>: Minimum /24 recommended for each subnet</li>
+<li><strong>Subnet Delegation</strong>: Configure using one of the following methods:</li>
+<li><strong>Azure Portal</strong>: Virtual networks → Select VNet → Subnets → Select subnet → Delegate to <strong>Microsoft.App/environments</strong></li>
+<li><strong>Azure CLI</strong>: <code>az network vnet subnet update --resource-group &lt;rg-name&gt; --vnet-name &lt;vnet-name&gt; --name &lt;subnet-name&gt; --delegations Microsoft.App/environments</code></li>
+</ul>
+<p><strong>Note:</strong> The connector deployment will automatically create private endpoints for storage services (blob, queue, table, file) and configure Private DNS zones.</p>
+</blockquote>
+<p><strong>STEP 2 - Obtain Lumen Defender Threat Feed API Key</strong></p>
+<ol>
+<li><a href="mailto:DefenderThreatFeedSales@Lumen.com?subject=API%20Access%20Request">Contact Lumen</a> to obtain API access to our Threat Feed API service</li>
+<li>Obtain your API key for authentication.</li>
+</ol>
+<p><strong>STEP 3 - Configure Azure Entra ID Application and gather information</strong></p>
+<ol>
+<li>Create a new Entra app registration from the <strong>App registrations</strong> tab in the Entra ID section of the Azure portal. <a href="https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app">See the documentation for a guide to registering an application in Microsoft Entra ID.</a></li>
+<li>Create a client secret and note the <strong>Application ID</strong>, <strong>Tenant ID</strong>, and <strong>Client Secret</strong></li>
+<li>Assign the <strong>Microsoft Sentinel Contributor</strong> role to the newly registered application in the <strong>Access control (IAM)</strong> menu of your Microsoft Sentinel Log Analytics Workspace</li>
+<li>Make note of your <strong>Workspace ID</strong>, which can be obtained from the <strong>overview</strong> page of the Log Analytics Workspace for your Microsoft Sentinel instance.
+- <strong>Tenant ID</strong>: <code>TenantId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
+- <strong>Workspace ID</strong>: <code>WorkspaceId</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+</ol>
+<p><strong>STEP 4 - Enable the </strong>Threat Intelligence Upload Indicators API (Preview)<strong> data connector in Microsoft Sentinel</strong></p>
+<ol>
+<li>Deploy the <strong>Threat Intelligence (New) Solution</strong>, which includes the <strong>Threat Intelligence Upload Indicators API (Preview)</strong></li>
+<li>Browse to the Content Hub, find and select the <strong>Threat Intelligence (NEW)</strong> solution.</li>
+<li>Select the <strong>Install/Update</strong> button.</li>
+</ol>
+<p><strong>STEP 5 - Deploy the Azure Function with Private Networking</strong></p>
+<blockquote>
+<p><strong>IMPORTANT:</strong> Before deploying the Lumen Defender Threat Feed connector, have the following information readily available:
+- Tenant ID and Workspace ID
+- Azure Entra application details (Client ID, Client Secret)
+- Lumen API key
+- Virtual Network name and Resource Group
+- Function App Subnet name (delegated to Microsoft.App/environments)
+- Private Endpoint Subnet name (non-delegated)</p>
+</blockquote>
+<ol>
+<li>Click the Deploy to Azure button.</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FLumen%2520Defender%2520Threat%2520Feed%2FData%2520Connectors%2FLumenThreatFeedv2%2Fazuredeploy_Connector_LumenThreatFeed_AzureFunction_v2_privateendpoint.json"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
+<ol start="2">
+<li>Fill in the appropriate values for each parameter:</li>
+</ol>
+<p><strong>Basic Settings:</strong>
+- <strong>Subscription</strong>: Confirm the correct subscription is selected or use the dropdown to change your selection
+- <strong>Resource Group</strong>: Select the resource group to be used by the Function App and related resources
+- <strong>Function Name</strong>: Enter a globally unique name for the Function App (11-character limit recommended)
+- <strong>App Insights Workspace Resource ID</strong>: The Resource ID of the Log Analytics Workspace for Application Insights (click <strong>JSON View</strong> on the Log Analytics workspace to copy)</p>
+<p><strong>Lumen API Settings:</strong>
+- <strong>Lumen API Key</strong>: Obtain an API key through Lumen support
+- <strong>Lumen Base URL</strong>: Filled in automatically and should generally not be changed
+- <strong>Confidence Threshold</strong> (Optional): Minimum confidence score (60-100) for indicators (default: 60)
+- <strong>Enable IPv4</strong> (Optional): Enable IPv4 address indicators (default: true)
+- <strong>Enable Domain</strong> (Optional): Enable domain name indicators (default: true)</p>
+<p><strong>Azure Entra ID Settings:</strong>
+- <strong>Workspace ID</strong>: Found in the "Overview" tab for the Log Analytics Workspace of the Microsoft Sentinel instance
+- <strong>Tenant ID</strong>: Obtained from the Entra App Registration overview page (listed as Directory ID)
+- <strong>Client ID</strong>: Obtained from the Entra App Registration overview page (listed as Application ID)
+- <strong>Client Secret</strong>: Obtained when the secret is created during the app registration process</p>
+<p><strong>Private Networking Settings:</strong>
+- <strong>VNet Resource Group Name</strong>: The resource group containing the Virtual Network (if using the VNet template from STEP 1, this is where you deployed it)
+- <strong>VNet Name</strong>: The name of the Virtual Network (default from VNet template: lumen-threatfeed-vnet)
+- <strong>Function App Subnet Name</strong>: The subnet delegated to Microsoft.App/environments (default from VNet template: functionapp-subnet)
+- <strong>Private Endpoint Subnet Name</strong>: The subnet for private endpoints (default from VNet template: privateendpoint-subnet)
+- <strong>Create Private DNS Zones</strong>: Set to true to create new Private DNS Zones, or false to use existing ones</p>
+<blockquote>
+<p><strong>Note:</strong> Ensure the Function App subnet is delegated to Microsoft.App/environments before deployment. The deployment will create private endpoints for storage account services and configure Private DNS zones automatically.</p>
+</blockquote>
+<p><strong>STEP 6 - Verify Deployment</strong></p>
+<ol>
+<li>The connector polls for indicator updates every 15 minutes.</li>
+<li>Verify that the Function App is properly integrated with the Virtual Network by checking the Networking settings in the Azure Portal</li>
+<li>Confirm that private endpoints were created for the storage account services (blob, file, queue, table)</li>
+<li>After the app performs its first run, review the indicators ingested by either viewing the "Lumen Defender Threat Feed Overview" workbook or viewing the "Threat Intelligence" section in Microsoft Sentinel. In Microsoft Sentinel "Threat Intelligence", filter for source "Lumen" to display only Lumen generated indicators.</li>
+</ol>
+<p><strong>Troubleshooting Private Networking Issues</strong></p>
+<p>If the Function App is not receiving data after deployment:</p>
+<ol>
+<li><strong>Check VNet Integration</strong>: Navigate to Function App → Networking → VNet integration and verify the Function App subnet is connected</li>
+<li><strong>Verify Private Endpoints</strong>: Navigate to the storage account → Networking → Private endpoint connections and verify all endpoints are in "Approved" state</li>
+<li><strong>Check DNS Resolution</strong>: Ensure private DNS zones are properly linked to the VNet for storage account resolution</li>
+<li><strong>Review Function Logs</strong>: Check Application Insights or Function App logs for connection errors</li>
+<li><strong>Subnet Delegation</strong>: Confirm the Function App subnet is delegated to <strong>Microsoft.App/environments</strong> (required for Flex Consumption Plan)</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+</div>
+
+</body>
+</html>

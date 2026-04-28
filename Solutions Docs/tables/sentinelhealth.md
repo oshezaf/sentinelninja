@@ -54,9 +54,9 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (5)
+## Content Items Using This Table (6)
 
-### Workbooks (5)
+### Workbooks (6)
 
 **In solution [SentinelSOARessentials](../solutions/sentinelsoaressentials.md):**
 
@@ -72,6 +72,7 @@ This table is used by the following solutions:
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [OptimizationWorkbook](../content/github-only-optimizationworkbook-7387c8bb.md) |  |
 | [SentinelHealth](../content/github-only-sentinelhealth-408e260c.md) |  |
+| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) |  |
 
 ---
 

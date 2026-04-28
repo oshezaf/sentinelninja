@@ -47,7 +47,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.0.3</td>
+<td style="text-align: left;">3.0.4</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -82,11 +82,8 @@
 <h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
-<li><a href="../connectors/commvaultsecurityiq-cl.html">CommvaultSecurityIQ</a> 🔶</li>
+<li><a href="../connectors/commvaultsecurityiq-cl.html">CommvaultSecurityIQ</a></li>
 </ul>
-<blockquote>
-<p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
-</blockquote>
 <h2 id="tables-used">Tables Used</h2>
 <p>This solution uses <strong>1 table(s)</strong>:</p>
 <table>
@@ -99,15 +96,12 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../tables/commvaultsecurityiq-cl.html"><code>CommvaultSecurityIQ_CL</code></a> 🔶</td>
+<td><a href="../tables/commvaultalerts-cl.html"><code>CommvaultAlerts_CL</code></a></td>
 <td><a href="../connectors/commvaultsecurityiq-cl.html">CommvaultSecurityIQ</a></td>
 <td>Analytics</td>
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
-</blockquote>
 <h2 id="content-items">Content Items</h2>
 <p>This solution includes <strong>4 content item(s)</strong>:</p>
 <table>
@@ -143,7 +137,7 @@
 <td style="text-align: left;"><a href="../content/commvault-security-iq-commvault-cloud-alert-317e757e-c320-448e-8837-fc61a70fe609-276de419.html">Commvault Cloud Alert</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">DefenseEvasion, Impact</td>
-<td style="text-align: left;"><a href="../tables/commvaultsecurityiq-cl.html"><code>CommvaultSecurityIQ_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/commvaultalerts-cl.html"><code>CommvaultAlerts_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -184,6 +178,7 @@
 <p>This solution provides:
 - <strong>Data Ingestion</strong>: Automated collection of Commvault security events and anomalies
 - <strong>Incident Creation</strong>: Automatic creation of Sentinel incidents based on Commvault security events
+- <strong>AI Powered Insights</strong>: AI-driven coorelation of Commvault Threat Scan and Risk Analysis events with Sentinel Data Lake signals from tools like CrowdStrike, Netskope, and Palo Alto to validate impact on affected hosts and speed investigation.
 - <strong>Incident Response</strong>: Playbooks for automated remediation actions (disable users, disable data aging, etc.)</p>
 <h2 id="prerequisites">Prerequisites</h2>
 <p>Before beginning the installation, ensure you have:</p>
@@ -222,21 +217,40 @@
 </ul>
 <p><strong>3. Create KeyVault Secrets:</strong></p>
 <ul>
-<li>Azure Portal -&gt; KeyVault -&gt; Secrets -&gt; Generate/Import -&gt; Manual:<ul>
-<li>Name: access-token, Value: (Your Commvault/Metallic access token), Enabled: Yes -&gt; Create.</li>
-<li>Name: refresh-token, Value: (Your Commvault/Metallic refresh token), Enabled: Yes -&gt; Create.</li>
-<li>Name: environment-endpoint-url, Value: (Your Commvault/Metallic endpoint's URL), Enabled: Yes -&gt; Create.</li>
+<li>Go to Azure Portal -&gt; KeyVault -&gt; Secrets</li>
+<li>Create following secrets each by clicking on Generate/Import -&gt; Manual:</li>
 </ul>
-</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+<th>Enabled</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>"access-token"</code></td>
+<td>(Your Commvault/Metallic access token)</td>
+<td>Yes</td>
+<td>Create</td>
+</tr>
+<tr>
+<td><code>"refresh-token"</code></td>
+<td>(Your Commvault/Metallic refresh token)</td>
+<td>Yes</td>
+<td>Create</td>
+</tr>
+<tr>
+<td><code>"environment-endpoint-url"</code></td>
+<td>(Your Commvault/Metallic endpoint's URL)</td>
+<td>Yes</td>
+<td>Create</td>
+</tr>
+</tbody>
+</table>
 <p><strong>4. Install Commvault Cloud Solution:</strong></p>
-<ul>
-<li>Sentinel -&gt; Content hub -&gt; Search "Commvault Cloud" -&gt; Install.</li>
-</ul>
-<p><strong>5. Configure Data Connector:</strong></p>
-<ul>
-<li>Commvault Cloud -&gt; CommvaultSecurityIQ (using Azure Functions) -&gt; Open connector page -&gt; Deploy to Azure -&gt; Fill details -&gt; Create.</li>
-</ul>
 <p><em>[Content truncated...]</em></p>
 <h2 id="release-notes">Release Notes</h2>
 <table>
@@ -248,6 +262,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>3.0.4</td>
+<td>05-03-2025</td>
+<td>Migrate to new data ingestion model via DCR &amp; DCE setup</td>
+</tr>
 <tr>
 <td>3.0.3</td>
 <td>12-09-2025</td>

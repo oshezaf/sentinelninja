@@ -26,8 +26,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | `EventVendor == "Workday"` | ✓ | ✓ | ✓ |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) |  | ✓ | ✓ | ✗ |
+| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | `EventVendor == "Workday"` | ✓ | ✓ | ? |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) |  | ✓ | ✓ | ? |
 
 ---
 

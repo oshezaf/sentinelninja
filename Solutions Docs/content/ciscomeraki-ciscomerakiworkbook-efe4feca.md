@@ -19,9 +19,9 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md) | ? | ✓ | ? |
-| [`Syslog`](../tables/syslog.md) | ✓ | ✓ | ✓ |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✓ | ✗ |
-| [`meraki_CL`](../tables/meraki-cl.md) | ✓ | ✓ | ✓ |
+| [`Syslog`](../tables/syslog.md) | ✓ | ✓ | ? |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✓ | ? |
+| [`meraki_CL`](../tables/meraki-cl.md) | ? | ✓ | ? |
 
 ---
 

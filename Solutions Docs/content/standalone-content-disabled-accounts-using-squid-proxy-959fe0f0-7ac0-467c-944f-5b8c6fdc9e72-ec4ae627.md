@@ -24,8 +24,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ✓ |
-| [`Syslog`](../tables/syslog.md) | `ProcessName contains "squid"` | ✓ | ✓ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ? |
+| [`Syslog`](../tables/syslog.md) | `ProcessName contains "squid"` | ✓ | ✓ | ? |
 
 ## Associated Connectors
 

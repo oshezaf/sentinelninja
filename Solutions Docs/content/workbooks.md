@@ -8,7 +8,7 @@
 
 Workbooks are interactive dashboards that visualize security data from Microsoft Sentinel. They combine charts, tables, and text to provide insights into your security posture, help monitor key metrics, and support investigation with drill-down capabilities. [Learn more](https://learn.microsoft.com/azure/sentinel/monitor-your-data)
 
-**538 workbooks** across all Microsoft Sentinel solutions.
+**562 workbooks** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -135,6 +135,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | Name | Source |
 |:-----|:-------|
 | [CEFOverviewWorkbook](common-event-format-cefoverviewworkbook-a335b98c.md) | 📦 [Common Event Format](../solutions/common-event-format.md) |
+| [Censys](censys-censys-21c23ffd.md) | 📦 [Censys](../solutions/censys.md) |
 | [CheckPoint](check-point-checkpoint-2a6f42ae.md) | 📦 [Check Point](../solutions/check-point.md) |
 | [CheckPoint](github-only-checkpoint-b1258523.md) | 🔗 GitHub Only |
 | [Cisco](ciscoasa-cisco-87e00b58.md) | 📦 [CiscoASA](../solutions/ciscoasa.md) |
@@ -152,6 +153,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [CiscoWSA](ciscowsa-ciscowsa-ad840075.md) | 📦 [CiscoWSA](../solutions/ciscowsa.md) |
 | [Citrix](citrix-analytics-for-security-citrix-7f228429.md) | 📦 [Citrix Analytics for Security](../solutions/citrix-analytics-for-security.md) |
 | [Citrix](github-only-citrix-c2c704c4.md) | 🔗 GitHub Only |
+| [CitrixAnalytics](citrix-analytics-ccf-citrixanalytics-e5da2e00.md) | 📦 [Citrix Analytics CCF](../solutions/citrix-analytics-ccf.md) |
 | [CitrixWAF](citrix-web-app-firewall-citrixwaf-f26995f5.md) | 📦 [Citrix Web App Firewall](../solutions/citrix-web-app-firewall.md) |
 | [CitrixWAF](github-only-citrixwaf-7cf41b7f.md) | 🔗 GitHub Only |
 | [ClarotyOverview](claroty-clarotyoverview-724141ff.md) | 📦 [Claroty](../solutions/claroty.md) |
@@ -166,7 +168,6 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [CognniIncidentsWorkbook](github-only-cognniincidentsworkbook-5f17cd01.md) | 🔗 GitHub Only |
 | [ConditionalAccessSISM](microsoft-entra-id-conditionalaccesssism-90abe712.md) | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [ConditionalAccessTrendsandChanges](github-only-conditionalaccesstrendsandchanges-114c89ab.md) | 🔗 GitHub Only |
-| [connect-module-connections](tanium-connect-module-connections-aa28580e.md) ⚠️ | 📦 [Tanium](../solutions/tanium.md) |
 | [ContinuousDiagnostics&Mitigation](continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) | 📦 [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md) |
 | [ContrastADR_Command_Injection_Workbook](contrastadr-contrastadr-command-injection-workbook-2809c88c.md) | 📦 [ContrastADR](../solutions/contrastadr.md) |
 | [ContrastADR_Cross_Site_Scripting_Workbook](contrastadr-contrastadr-cross-site-scripting-workbook-22b0e57c.md) | 📦 [ContrastADR](../solutions/contrastadr.md) |
@@ -185,6 +186,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [Corelight_Data_Explorer](corelight-corelight-data-explorer-258d9f06.md) | 📦 [Corelight](../solutions/corelight.md) |
 | [Corelight_Security_Workflow](corelight-corelight-security-workflow-7c756761.md) | 📦 [Corelight](../solutions/corelight.md) |
 | [Corelight_Sensor_Overview](corelight-corelight-sensor-overview-71e61142.md) | 📦 [Corelight](../solutions/corelight.md) |
+| [CPEMAlertOverview](check-point-cyberint-alerts-cpemalertoverview-1fe40da5.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
 | [CriblWorkbook](github-only-criblworkbook-923de34f.md) | 🔗 GitHub Only |
 | [CrowdStrikeFalconEndpointProtection](crowdstrike-falcon-endpoint-protection-crowdstrikefalconendpointprotection-b9a8efc3.md) | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | [CTERA_Workbook](ctera-ctera-workbook-5bba0e18.md) | 📦 [CTERA](../solutions/ctera.md) |
@@ -194,6 +196,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [CyberpionOverviewWorkbook](github-only-cyberpionoverviewworkbook-1f91ecaf.md) | 🔗 GitHub Only |
 | [CybersecurityMaturityModelCertification_CMMCV2](cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) | 📦 [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md) |
 | [CybleVisionAlertsWorkbook](cyble-vision-cyblevisionalertsworkbook-ccdef358.md) | 📦 [Cyble Vision](../solutions/cyble-vision.md) |
+| [Cyjax](cyjax-cyjax-ba2b870a.md) | 📦 [Cyjax](../solutions/cyjax.md) |
 | [CynerioOverviewWorkbook](cynerio-cyneriooverviewworkbook-b4cbafeb.md) | 📦 [Cynerio](../solutions/cynerio.md) |
 | [CyrenThreatIntelligenceDashboard](cyrenthreatintelligence-cyrenthreatintelligencedashboard-f33799ef.md) | 📦 [CyrenThreatIntelligence](../solutions/cyrenthreatintelligence.md) |
 
@@ -349,6 +352,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 |:-----|:-------|
 | [KeeperSecurityDashboard](keeper-security-keepersecuritydashboard-f36797d1.md) | 📦 [Keeper Security](../solutions/keeper-security.md) |
 | [KeeperSecurityDashboard](github-only-keepersecuritydashboard-16fd45ec.md) | 🔗 GitHub Only |
+| [KnowBe4DefendMetrics](knowbe4-defend-knowbe4defendmetrics-2e05a83a.md) | 📦 [KnowBe4 Defend](../solutions/knowbe4-defend.md) |
 
 ## L
 
@@ -389,6 +393,8 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [Microsoft Exchange Security Review - Online](microsoft-exchange-security-exchange-online-microsoft-exchange-security-review-online-bf15f919.md) | 📦 [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md) |
 | [MicrosoftCloudAppSecurity](microsoft-defender-for-cloud-apps-microsoftcloudappsecurity-0234df86.md) | 📦 [Microsoft Defender for Cloud Apps](../solutions/microsoft-defender-for-cloud-apps.md) |
 | [MicrosoftCloudAppSecurity](github-only-microsoftcloudappsecurity-2887ca06.md) | 🔗 GitHub Only |
+| [MicrosoftCopilotActivityMonitoring](microsoft-copilot-microsoftcopilotactivitymonitoring-4219cdf5.md) | 📦 [Microsoft Copilot](../solutions/microsoft-copilot.md) |
+| [MicrosoftCopilotActivityMonitoring](github-only-microsoftcopilotactivitymonitoring-5169439d.md) | 🔗 GitHub Only |
 | [MicrosoftDefenderForEndPoint](microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md) | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [MicrosoftDefenderForEndPoint](github-only-microsoftdefenderforendpoint-ac005534.md) | 🔗 GitHub Only |
 | [MicrosoftDefenderForIdentity](microsoft-defender-xdr-microsoftdefenderforidentity-19dcc30d.md) | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
@@ -429,6 +435,8 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [NetskopeDashboard](netskopev2-netskopedashboard-7f2bb16f.md) | 📦 [Netskopev2](../solutions/netskopev2.md) |
 | [NetskopeEvents](netskope-netskopeevents-8c0bf08d.md) | 📦 [Netskope](../solutions/netskope.md) |
 | [NetskopeEvents](github-only-netskopeevents-9ea84d68.md) | 🔗 GitHub Only |
+| [NetskopeWebTx_Workbook](netskopewebtx-netskopewebtx-workbook-95a52b5a.md) | 📦 [NetskopeWebTx](../solutions/netskopewebtx.md) |
+| [NetskopeWebTx_Workbook](github-only-netskopewebtx-workbook-8c510694.md) | 🔗 GitHub Only |
 | [NetworkSessionEssentials](network-session-essentials-networksessionessentials-5de17c97.md) | 📦 [Network Session Essentials](../solutions/network-session-essentials.md) |
 | [NetworkSessionEssentialsV2](network-session-essentials-networksessionessentialsv2-9408ac84.md) | 📦 [Network Session Essentials](../solutions/network-session-essentials.md) |
 | [NGINX](nginx-http-server-nginx-b8b7e921.md) | 📦 [NGINX HTTP Server](../solutions/nginx-http-server.md) |
@@ -436,6 +444,23 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [NordPass](nordpass-nordpass-9080f186.md) | 📦 [NordPass](../solutions/nordpass.md) |
 | [NordPass](github-only-nordpass-d00813f6.md) | 🔗 GitHub Only |
 | [NormalizedNetworkEvents](github-only-normalizednetworkevents-24273c1e.md) | 🔗 GitHub Only |
+| [NSSAuditLogs](zscaler-internet-access-nssauditlogs-87498814.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| [NSSCASBActivityLogs](zscaler-internet-access-nsscasbactivitylogs-0f33695f.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| [NSSCASBCloudStorageLogs](zscaler-internet-access-nsscasbcloudstoragelogs-82b90374.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| [NSSCASBCollabLogs](zscaler-internet-access-nsscasbcollablogs-c8df0b8f.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| [NSSCASBCRMLogs](zscaler-internet-access-nsscasbcrmlogs-26d4fe79.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| [NSSCASBEmail](zscaler-internet-access-nsscasbemail-b49ea906.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| [NSSCASBFileSharingLogs](zscaler-internet-access-nsscasbfilesharinglogs-9c3c0d80.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| [NSSCASBITSMLogs](zscaler-internet-access-nsscasbitsmlogs-d4dec864.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| [NSSCASBRepoLogs](zscaler-internet-access-nsscasbrepologs-fe9ebeee.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| [NSSDNSLogs](zscaler-internet-access-nssdnslogs-42cf7154.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| [NSSEmailDLPLogs](zscaler-internet-access-nssemaildlplogs-f9c40d5b.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| [NSSEndpointDLPLogs](zscaler-internet-access-nssendpointdlplogs-0e576c1a.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| [NSSFWLogs](zscaler-internet-access-nssfwlogs-388b174c.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| [NSSTunnelLogs](zscaler-internet-access-nsstunnellogs-b80054bc.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| [NSSWebLogsOffice365](zscaler-internet-access-nssweblogsoffice365-2d8bc9c5.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| [NSSWebLogsOverview](zscaler-internet-access-nssweblogsoverview-075f4b3c.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| [NSSWebLogsThreats](zscaler-internet-access-nssweblogsthreats-fa8d9804.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 | [NucleusCyber_NCProtect_Workbook](nc-protect-data-connector-nucleuscyber-ncprotect-workbook-14169a8f.md) | 📦 [NC Protect Data Connector](../solutions/nc-protect-data-connector.md) |
 
 ## O
@@ -548,6 +573,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [SOCIRPlanning](soc-process-framework-socirplanning-18961eff.md) | 📦 [SOC-Process-Framework](../solutions/soc-process-framework.md) |
 | [SOCProcessFramework](soc-process-framework-socprocessframework-5c770df0.md) | 📦 [SOC-Process-Framework](../solutions/soc-process-framework.md) |
 | [SOCProcessFramework](github-only-socprocessframework-84c05ae1.md) | 🔗 GitHub Only |
+| [SOCRadar-Dashboard](socradar-socradar-dashboard-df56f072.md) | 📦 [SOCRadar](../solutions/socradar.md) |
 | [SolarWindsPostCompromiseHunting](github-only-solarwindspostcompromisehunting-09062974.md) | 🔗 GitHub Only |
 | [SonicWallFirewall](sonicwall-firewall-sonicwallfirewall-108e460f.md) | 📦 [SonicWall Firewall](../solutions/sonicwall-firewall.md) |
 | [SonicWallFirewall](github-only-sonicwallfirewall-7b4c1651.md) | 🔗 GitHub Only |
@@ -614,6 +640,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 
 | Name | Source |
 |:-----|:-------|
+| [VaikoraAgentSignalsDashboard](vaikora-sentinel-vaikoraagentsignalsdashboard-310774ee.md) | 📦 [Vaikora-Sentinel](../solutions/vaikora-sentinel.md) |
 | [ValenceAlertsWorkbook](valence-security-valencealertsworkbook-fae392cb.md) | 📦 [Valence Security](../solutions/valence-security.md) |
 | [vArmour_AppContoller_Workbook](varmour-application-controller-varmour-appcontoller-workbook-89c75f45.md) | 📦 [vArmour Application Controller](../solutions/varmour-application-controller.md) |
 | [VaronisSaaS](varonissaas-varonissaas-5667e619.md) | 📦 [VaronisSaaS](../solutions/varonissaas.md) |
@@ -630,6 +657,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [VMWareESXi](vmwareesxi-vmwareesxi-a632a286.md) | 📦 [VMWareESXi](../solutions/vmwareesxi.md) |
 | [VMwareSASESOCDashboard](vmware-sase-vmwaresasesocdashboard-36b12705.md) | 📦 [VMware SASE](../solutions/vmware-sase.md) |
 | [Votiro Monitoring Dashboard](votiro-votiro-monitoring-dashboard-733f09ff.md) | 📦 [Votiro](../solutions/votiro.md) |
+| [VTI_IOC_Feed](visa-threat-intelligence-vti-vti-ioc-feed-33721f01.md) | 📦 [Visa Threat Intelligence (VTI)](../solutions/visa-threat-intelligence-vti.md) |
 
 ## W
 
@@ -667,13 +695,9 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [ZimperiumWorkbooks](github-only-zimperiumworkbooks-4e6ee705.md) | 🔗 GitHub Only |
 | [ZNSegmentAudit](zeronetworks-znsegmentaudit-0143013d.md) | 📦 [ZeroNetworks](../solutions/zeronetworks.md) |
 | [ZoomReports](zoomreports-zoomreports-c76868a1.md) | 📦 [ZoomReports](../solutions/zoomreports.md) |
-| [ZscalerFirewall](zscaler-internet-access-zscalerfirewall-bc68adf2.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 | [ZscalerFirewall](github-only-zscalerfirewall-93b3d68c.md) | 🔗 GitHub Only |
-| [ZscalerOffice365Apps](zscaler-internet-access-zscaleroffice365apps-bcb66bac.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 | [ZscalerOffice365Apps](github-only-zscaleroffice365apps-06fce14f.md) | 🔗 GitHub Only |
-| [ZscalerThreats](zscaler-internet-access-zscalerthreats-c11e0924.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 | [ZscalerThreats](github-only-zscalerthreats-fa1de313.md) | 🔗 GitHub Only |
-| [ZscalerWebOverview](zscaler-internet-access-zscalerweboverview-7e8374eb.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 | [ZscalerWebOverview](github-only-zscalerweboverview-096f23f2.md) | 🔗 GitHub Only |
 | [ZscalerZPA](zscaler-private-access-zpa-zscalerzpa-0c8a39a9.md) | 📦 [Zscaler Private Access (ZPA)](../solutions/zscaler-private-access-zpa.md) |
 

@@ -16,47 +16,42 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://abnormalsecurity.com/contact](https://abnormalsecurity.com/contact) |
 | **Categories** | domains |
-| **Version** | 3.0.1 |
+| **Version** | 3.0.0 |
 | **Author** | AbnormalSecurity - support@abnormalsecurity.com |
 | **First Published** | 2021-10-20 |
+| **Last Updated** | 2026-02-17 |
 | **Solution Folder** | [AbnormalSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbnormalSecurity) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/abnormalsecuritycorporation1593011233180.fe1b4806-215b-4610-bf95-965a7a65579c) · Popularity: 🟡 Low (29%) |
 
-The Abnormal Security Events solution provides the capability to ingest threat and case logs into Microsoft Sentinel using the [Abnormal Security Rest API](https://app.swaggerhub.com/apis/abnormal-security/abx/).
- 
- 
- 
- **Underlying Microsoft Technologies used:** 
- 
- 
- 
- This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
- 
- 
- 
- a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api) 
- 
- 
- 
- b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
+The Abnormal Security solution provides real-time security event ingestion from Abnormal's cloud email security platform into Microsoft Sentinel. Supports both push-based (CCF Push) and pull-based (Azure Functions) connectors. The push connector routes events to per-event-type tables (threats, cases, audit logs, abuse mailbox, posture changes, ATO cases, remediations, vendor cases) using the Codeless Connector Framework.
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution provides **2 data connector(s)**:
 
 - [AbnormalSecurity ](../connectors/abnormalsecurity.md) 🔶
+- [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md)
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 
 ## Tables Used
 
-This solution uses **2 table(s)**:
+This solution uses **11 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`ABNORMAL_CASES_CL`](../tables/abnormal-cases-cl.md) | [AbnormalSecurity ](../connectors/abnormalsecurity.md) | - |
+| [`ABNORMAL_SECURITY_ABUSE_MAILBOX_CL`](../tables/abnormal-security-abuse-mailbox-cl.md) | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
+| [`ABNORMAL_SECURITY_ATO_CASE_CL`](../tables/abnormal-security-ato-case-cl.md) | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
+| [`ABNORMAL_SECURITY_AUDIT_LOG_CL`](../tables/abnormal-security-audit-log-cl.md) | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
+| [`ABNORMAL_SECURITY_CASE_CL`](../tables/abnormal-security-case-cl.md) | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
+| [`ABNORMAL_SECURITY_POSTURE_CHANGE_CL`](../tables/abnormal-security-posture-change-cl.md) | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
+| [`ABNORMAL_SECURITY_REMEDIATION_CL`](../tables/abnormal-security-remediation-cl.md) | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
+| [`ABNORMAL_SECURITY_THREAT_LOG_CL`](../tables/abnormal-security-threat-log-cl.md) | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
+| [`ABNORMAL_SECURITY_VENDOR_CASE_CL`](../tables/abnormal-security-vendor-case-cl.md) | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
 | [`ABNORMAL_THREAT_MESSAGES_CL`](../tables/abnormal-threat-messages-cl.md) 🔶 | [AbnormalSecurity ](../connectors/abnormalsecurity.md) | - |
+| [`AbnormalSecurityLogs_CL`](../tables/abnormalsecuritylogs-cl.md) | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
@@ -65,7 +60,8 @@ This solution uses **2 table(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                             |
 |-------------|--------------------------------|--------------------------------------------------------------------------------|
-| 3.0.0       | 29-06-2023                     | Renaming Azure Function to Azure Functions in **Data Connector** Description and  Updated the python runtime version to 3.11      |
+| 3.0.0       | 04-03-2026                     | Added CCF Push connector with multi-table routing (9 tables), DeployPushConnectorButton, and OAuth 2.0 authentication. Legacy Azure Functions connector retained for backward compatibility. |
+| 2.0.1       | 29-06-2023                     | Renaming Azure Function to Azure Functions in **Data Connector** Description and  Updated the python runtime version to 3.11      |
 
 ---
 

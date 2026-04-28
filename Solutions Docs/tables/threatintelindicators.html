@@ -47,10 +47,6 @@
 <td style="text-align: left;">✓ Yes</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
-<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
-</tr>
-<tr>
 <td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelindicators">View Documentation</a></td>
 </tr>
@@ -212,12 +208,13 @@
 </tr>
 </tbody>
 </table>
-<h2 id="solutions">Solutions (14)</h2>
+<h2 id="solutions">Solutions (15)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/ciscomeraki.html">CiscoMeraki</a></li>
 <li><a href="../solutions/cofensetriage.html">CofenseTriage</a></li>
 <li><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></li>
+<li><a href="../solutions/cyjax.html">Cyjax</a></li>
 <li><a href="../solutions/dns-essentials.html">DNS Essentials</a></li>
 <li><a href="../solutions/dora-compliance.html">DORA Compliance</a></li>
 <li><a href="../solutions/global-secure-access.html">Global Secure Access</a></li>
@@ -230,7 +227,7 @@
 <li><a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></li>
 <li><a href="../solutions/threatconnect.html">ThreatConnect</a></li>
 </ul>
-<h2 id="connectors">Connectors (7)</h2>
+<h2 id="connectors">Connectors (9)</h2>
 <p>This table is ingested by the following connectors:</p>
 <table>
 <thead>
@@ -245,7 +242,15 @@
 <td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../connectors/lumenthreatfeedconnector.html">Lumen Defender Threat Feed Data Connector</a></td>
+<td style="text-align: left;"><a href="../connectors/cyjaxiocapi.html">Cyjax Threat Intelligence IOC Connector</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/lumenthreatfeedconnectorv2.html">Lumen Defender Threat Feed Data Connector V2</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/lumenthreatfeedconnectorv2privatenetworking.html">Lumen Defender Threat Feed Data Connector V2 (using Azure Functions Flex Consumption Plan with Private Networking)</a></td>
 <td style="text-align: left;"></td>
 </tr>
 <tr>
@@ -271,8 +276,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (103)</h2>
-<h3 id="analytic-rules">Analytic Rules (70)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (105)</h2>
+<h3 id="analytic-rules">Analytic Rules (71)</h3>
 <p><strong>In solution <a href="../solutions/global-secure-access.html">Global Secure Access</a>:</strong></p>
 <table>
 <thead>
@@ -606,6 +611,10 @@
 <td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-url-entity-to-cloud-app-events-526df43b-f514-477c-af7a-c8d3586457fb-9db18791.html">TI map URL entity to Cloud App Events</a></td>
 <td style="text-align: left;"></td>
 </tr>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-url-entity-to-web-session-events-asim-web-session-schema-3b4a8c72-5a2e-4f1e-b61a-9d8b2a6d7a21-f004a2bb.html">TI map URL entity to Web Session Events (ASIM Web Session schema)</a></td>
+<td style="text-align: left;"></td>
+</tr>
 </tbody>
 </table>
 <h3 id="hunting-queries">Hunting Queries (15)</h3>
@@ -724,7 +733,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (18)</h3>
+<h3 id="workbooks">Workbooks (19)</h3>
 <p><strong>In solution <a href="../solutions/ciscomeraki.html">CiscoMeraki</a>:</strong></p>
 <table>
 <thead>
@@ -751,6 +760,21 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/cofensetriage-cofensetriagethreatindicators-b9ec5acc.html">CofenseTriageThreatIndicators</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/cyjax.html">Cyjax</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Workbook</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/cyjax-cyjax-ba2b870a.html">Cyjax</a></td>
 <td style="text-align: left;"></td>
 </tr>
 </tbody>
@@ -929,8 +953,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="parsers-using-this-table">Parsers Using This Table (1)</h2>
-<h3 id="other-parsers">Other Parsers (1)</h3>
+<h2 id="parsers-using-this-table">Parsers Using This Table (3)</h2>
+<h3 id="other-parsers">Other Parsers (3)</h3>
 <table>
 <thead>
 <tr>
@@ -940,6 +964,16 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cyjaxcorrelate.html">CyjaxCorrelate</a></td>
+<td style="text-align: left;"><a href="../solutions/cyjax.html">Cyjax</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cyjaxthreatindicator.html">CyjaxThreatIndicator</a></td>
+<td style="text-align: left;"><a href="../solutions/cyjax.html">Cyjax</a></td>
+<td style="text-align: left;"></td>
+</tr>
 <tr>
 <td style="text-align: left;"><a href="../parsers/threatintelindicatorsv2.html">ThreatIntelIndicatorsv2</a></td>
 <td style="text-align: left;"><a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></td>

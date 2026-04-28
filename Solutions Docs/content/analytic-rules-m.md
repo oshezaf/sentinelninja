@@ -1,6 +1,6 @@
 # Analytic Rules - M
 
-**126 analytic rules** starting with 'M'.
+**107 analytic rules** starting with 'M'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -8,7 +8,7 @@
 
 ---
 
-**Jump to letter:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | [B](analytic-rules-b.md) | [C](analytic-rules-c.md) | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | **M** | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [Z](analytic-rules-z.md)
+**Jump to letter:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | [B](analytic-rules-b.md) | [C](analytic-rules-c.md) | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | **M** | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [X](analytic-rules-x.md) | [Z](analytic-rules-z.md)
 
 > **Source:** 📦 Solution | 📄 Standalone | 🔗 GitHub Only
 
@@ -27,24 +27,8 @@
 | [Mail.Read Permissions Granted to Application](microsoft-entra-id-mail.read-permissions-granted-to-application-2560515c-07d1-434e-87fb-ebe3af267760-50b99956.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Malformed user agent](standalone-content-malformed-user-agent-a357535e-f722-4afe-b375-cff362b2b376-cf52b023.md) | Medium | 📄 Standalone Content |
 | [Malicious BEC Inbox Rule](business-email-compromise-financial-fraud-malicious-bec-inbox-rule-8ac77493-3cae-4840-8634-15fb23f8fb68-ae4ecd95.md) | Medium | 📦 [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md) |
-| [Malicious Domain (High)](ctm360-malicious-domain-high-db0a42b9-e088-40e7-bde2-d502a8e9ad22-8bfd7bb0.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Malicious Domain (Informational)](ctm360-malicious-domain-informational-cae16d3f-017d-4a11-b03e-d4222b962e7d-911f7b9b.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Malicious Domain (Low)](ctm360-malicious-domain-low-d7fa9ddd-236c-4b98-a424-d0cad1167804-d50aa571.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Malicious Domain (Medium)](ctm360-malicious-domain-medium-823d57cb-833f-4e7f-9cbd-e6d38994f684-db2c8360.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
 | [Malicious Inbox Rule](microsoft-365-malicious-inbox-rule-7b907bf7-77d4-41d0-a208-5643ff75bf9a-809a0fef.md) | Medium | 📦 [Microsoft 365](../solutions/microsoft-365.md) |
-| [Malicious Ip (High)](ctm360-malicious-ip-high-1b94c418-856e-462e-8fe8-857d6c4d43e5-80edb361.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Malicious Ip (Informational)](ctm360-malicious-ip-informational-c0b33093-736c-43a7-8a03-fb64774177d4-817fc4e6.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Malicious Ip (Low)](ctm360-malicious-ip-low-b83d6f50-3a4c-445f-ae8b-d663c4270f37-8c3f6e17.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Malicious Ip (Medium)](ctm360-malicious-ip-medium-b1b09038-a1b6-45b6-9200-e611f36b0a84-102ab5fc.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
-| [Malicious Redirector (High)](ctm360-malicious-redirector-high-b793f1c0-02b8-4f83-9cae-007700451f29-7dcb6dff.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Malicious Redirector (Informational)](ctm360-malicious-redirector-informational-ed036278-9fec-4152-ac73-366f138fc679-fbf4d07f.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Malicious Redirector (Low)](ctm360-malicious-redirector-low-6c8f0638-640f-4834-a3ed-40ed35d7df4a-b5ad7e40.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Malicious Redirector (Medium)](ctm360-malicious-redirector-medium-d7b4a1f8-b910-478e-814d-1f66ae58b49e-17c0f9fc.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
 | [Malicious web application requests linked with Microsoft Defender for Endpoint (formerly Microsoft Defender ATP) alerts](web-shells-threat-protection-malicious-web-application-requests-linked-with-microsoft-defender-for-endpo-fbfbf530-506b-49a4-81ad-4030885a195c-8a9494a2.md) | Medium | 📦 [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md) |
-| [Malware (High)](ctm360-malware-high-3a442652-3a02-4433-8e0a-7766396537da-fa57a474.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Malware (Informational)](ctm360-malware-informational-3cd89407-f242-408a-bbc8-eb1652bc16c1-aed550e7.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Malware (Low)](ctm360-malware-low-764b5494-3b80-42dd-8a5e-8d835db62a51-222dd612.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Malware (Medium)](ctm360-malware-medium-735337b2-70b9-415a-b905-a0bd0d7f9ea6-11ed5fc3.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
 | [Malware Activity Detected](veeam-malware-activity-detected-9a7c80ef-8dc2-4b07-834d-b9ca18d603f7-acf84aa0.md) | High | 📦 [Veeam](../solutions/veeam.md) |
 | [Malware attachment delivered](proofpointtap-malware-attachment-delivered-0558155e-4556-447e-9a22-828f2a7de06b-eaec71b9.md) | Medium | 📦 [ProofPointTap](../solutions/proofpointtap.md) |
 | [Malware Detected](symantec-endpoint-protection-malware-detected-072ee087-17e1-474d-b162-bbe38bcab9f9-b5192972.md) | Medium | 📦 [Symantec Endpoint Protection](../solutions/symantec-endpoint-protection.md) |
@@ -73,6 +57,7 @@
 | [McAfee ePO - Threat was not blocked](mcafee-epolicy-orchestrator-mcafee-epo-threat-was-not-blocked-6d70a26a-c119-45b7-b4c6-44ac4fd1bcb7-299c7a2f.md) | High | 📦 [McAfee ePolicy Orchestrator](../solutions/mcafee-epolicy-orchestrator.md) |
 | [McAfee ePO - Unable to clean or delete infected file](mcafee-epolicy-orchestrator-mcafee-epo-unable-to-clean-or-delete-infected-file-9860e89f-72c8-425e-bac9-4a170798d3ea-aa3ef2fa.md) | High | 📦 [McAfee ePolicy Orchestrator](../solutions/mcafee-epolicy-orchestrator.md) |
 | [McAfee ePO - Update failed](mcafee-epolicy-orchestrator-mcafee-epo-update-failed-4f0c91c3-1690-48f0-b538-4282dd5417a4-9c8f9364.md) | Medium | 📦 [McAfee ePolicy Orchestrator](../solutions/mcafee-epolicy-orchestrator.md) |
+| [Medium severity malicious activity detected](azure-firewall-medium-severity-malicious-activity-detected-dfbe3963-42fb-4ebe-a00c-1cc44e2aa9f0-618233f6.md) | Medium | 📦 [Azure Firewall](../solutions/azure-firewall.md) |
 | [Mercury - Domain, Hash and IP IOCs - August 2022](standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.md) | High | 📄 Standalone Content |
 | [MFA Fatigue (OKTA)](okta-single-sign-on-mfa-fatigue-okta-c2697b81-7fe9-4f57-ba1d-de46c6f91f9c-44b7ecc7.md) | Medium | 📦 [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
 | [MFA Rejected by User](microsoft-entra-id-mfa-rejected-by-user-d99cf5c3-d660-436c-895b-8a8f8448da23-b3c993fb.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
@@ -121,10 +106,6 @@
 | [Missing Domain Controller Heartbeat](standalone-content-missing-domain-controller-heartbeat-b8b8ba09-1e89-45a1-8bd7-691cd23bfa32-3caae499.md) | High | 📄 Standalone Content |
 | [Modification of Accessibility Features](standalone-content-modification-of-accessibility-features-d714ef62-1a56-4779-804f-91c4158e528d-44b1d2cd.md) | Medium | 📄 Standalone Content |
 | [Modified domain federation trust settings](microsoft-entra-id-modified-domain-federation-trust-settings-95dc4ae3-e0f2-48bd-b996-cdd22b90f9af-cb9684ef.md) | High | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
-| [Money Mule Account (High)](ctm360-money-mule-account-high-f24f7b7a-74cc-4f7a-a1d9-e2b22ab41eac-ab3e57ed.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Money Mule Account (Informational)](ctm360-money-mule-account-informational-65c395f5-e20b-432c-85d8-388b65d0e8ba-f143fb25.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Money Mule Account (Low)](ctm360-money-mule-account-low-04fab81c-8cf3-4c9d-80dc-a789e52525a2-7d39d927.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Money Mule Account (Medium)](ctm360-money-mule-account-medium-249aa6df-5f52-46d9-a908-c28c00db1cee-6a89d80e.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
 | [Monitor AWS Credential abuse or hijacking](amazon-web-services-monitor-aws-credential-abuse-or-hijacking-32555639-b639-4c2b-afda-c0ae0abefa55-b389d8ba.md) | Low | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [MosaicLoader](microsoft-defender-xdr-mosaicloader-506f4d6b-3864-4bb1-8f75-a13fb066f97a-66639731.md) | High | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Multi-Factor Authentication Disabled](veeam-multi-factor-authentication-disabled-6881f4f5-f58e-43d7-a05e-b5d05a4c09f9-2fe15a9f.md) | High | 📦 [Veeam](../solutions/veeam.md) |
@@ -140,8 +121,6 @@
 | [Multiple Sources Affected by the Same TI Destination](azure-firewall-multiple-sources-affected-by-the-same-ti-destination-4644baf7-3464-45dd-bd9d-e07687e25f81-c5003c22.md) | Medium | 📦 [Azure Firewall](../solutions/azure-firewall.md) |
 | [Multiple Teams deleted by a single user](microsoft-365-multiple-teams-deleted-by-a-single-user-173f8699-6af5-484a-8b06-8c47ba89b380-fee08c77.md) | Low | 📦 [Microsoft 365](../solutions/microsoft-365.md) |
 | [Multiple users email forwarded to same destination](microsoft-365-multiple-users-email-forwarded-to-same-destination-871ba14c-88ef-48aa-ad38-810f26760ca3-2182889a.md) | Medium | 📦 [Microsoft 365](../solutions/microsoft-365.md) |
-
-> ⚠️ Items marked with ⚠️ are not listed in their Solution JSON file. They were discovered by scanning solution folders.
 
 ---
 

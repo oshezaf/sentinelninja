@@ -1,6 +1,6 @@
 # Analytic Rules - I
 
-**51 analytic rules** starting with 'I'.
+**47 analytic rules** starting with 'I'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -8,7 +8,7 @@
 
 ---
 
-**Jump to letter:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | [B](analytic-rules-b.md) | [C](analytic-rules-c.md) | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | **I** | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | [M](analytic-rules-m.md) | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [Z](analytic-rules-z.md)
+**Jump to letter:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | [B](analytic-rules-b.md) | [C](analytic-rules-c.md) | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | **I** | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | [M](analytic-rules-m.md) | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [X](analytic-rules-x.md) | [Z](analytic-rules-z.md)
 
 > **Source:** 📦 Solution | 📄 Standalone | 🔗 GitHub Only
 
@@ -39,10 +39,6 @@
 | [Imperva - Request from unexpected countries](impervacloudwaf-imperva-request-from-unexpected-countries-58300723-22e0-4096-b33a-aa9b992c3564-5720b4f7.md) | High | 📦 [ImpervaCloudWAF](../solutions/impervacloudwaf.md) |
 | [Imperva - Request from unexpected IP address to admin panel](impervacloudwaf-imperva-request-from-unexpected-ip-address-to-admin-panel-427c025d-c068-4844-8205-66879e89bcfa-660e22b0.md) | High | 📦 [ImpervaCloudWAF](../solutions/impervacloudwaf.md) |
 | [Imperva - Request to unexpected destination port](impervacloudwaf-imperva-request-to-unexpected-destination-port-0ba78922-033c-468c-82de-2974d7b1797d-c749ee63.md) | High | 📦 [ImpervaCloudWAF](../solutions/impervacloudwaf.md) |
-| [Inaccurate Content (High)](ctm360-inaccurate-content-high-92d39e56-60b8-4b53-879d-f49a79b006a2-9ede577e.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Inaccurate Content (Informational)](ctm360-inaccurate-content-informational-ced040aa-361c-4b88-b0ea-29f12529ce77-efe9bf11.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Inaccurate Content (Low)](ctm360-inaccurate-content-low-0a548312-d964-45e7-b92c-1c9579c6c2d0-d1349db5.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Inaccurate Content (Medium)](ctm360-inaccurate-content-medium-971057ea-c555-4d60-b140-4d2c5a15997c-baecadd4.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
 | [Infoblox - Data Exfiltration Attack](infoblox-cloud-data-connector-infoblox-data-exfiltration-attack-8db2b374-0337-49bd-94c9-cfbf8e5d83ad-0a635c49.md) | Medium | 📦 [Infoblox Cloud Data Connector](../solutions/infoblox-cloud-data-connector.md) |
 | [Infoblox - High Threat Level Query Not Blocked Detected](infoblox-cloud-data-connector-infoblox-high-threat-level-query-not-blocked-detected-dc7af829-d716-4774-9d6f-03d9aa7c27a4-fa962d5e.md) | Medium | 📦 [Infoblox Cloud Data Connector](../solutions/infoblox-cloud-data-connector.md) |
 | [Infoblox - Many High Threat Level Queries From Single Host Detected](infoblox-cloud-data-connector-infoblox-many-high-threat-level-queries-from-single-host-detected-3822b794-fa89-4420-aad6-0e1a2307f419-c7bc74ac.md) | Medium | 📦 [Infoblox Cloud Data Connector](../solutions/infoblox-cloud-data-connector.md) |
@@ -65,8 +61,6 @@
 | [Invalid Code for Multi-Factor Authentication Entered](veeam-invalid-code-for-multi-factor-authentication-entered-5220a0b0-ab15-43cf-a77e-2273d35cfe8e-1dc5cb8d.md) | High | 📦 [Veeam](../solutions/veeam.md) |
 | [IP address of Windows host encoded in web request](standalone-content-ip-address-of-windows-host-encoded-in-web-request-a4ce20ae-a2e4-4d50-b40d-d49f1353b6cc-f6bf2fcd.md) | Medium | 📄 Standalone Content |
 | [IP with multiple failed Microsoft Entra ID logins successfully logs in to Palo Alto VPN](standalone-content-ip-with-multiple-failed-microsoft-entra-id-logins-successfully-logs-in-to-palo-alto-v-ba144bf8-75b8-406f-9420-ed74397f9479-e519f696.md) | Medium | 📄 Standalone Content |
-
-> ⚠️ Items marked with ⚠️ are not listed in their Solution JSON file. They were discovered by scanning solution folders.
 
 ---
 

@@ -13,8 +13,8 @@
 | Title | Parser for ZNSegmentAudit |
 | Location | Solution |
 | Solution | [ZeroNetworks](../solutions/zeronetworks.md) |
-| Version | 1.0.1 |
-| Last Updated | 2024-10-08 |
+| Version | 1.0.2 |
+| Last Updated | 2025-12-15 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroNetworks/Parsers/ZNSegmentAudit.yaml) |
@@ -25,8 +25,8 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ZNSegmentAuditNativePoller_CL`](../tables/znsegmentauditnativepoller-cl.md) | ✗ | ✓ | ✗ |
-| [`ZNSegmentAudit_CL`](../tables/znsegmentaudit-cl.md) 🔶 | ? | ✓ | ? |
+| [`ZNAudit_CL`](../tables/znaudit-cl.md) | ? | ✓ | ? |
+| [`ZNSegmentAuditNativePoller_CL`](../tables/znsegmentauditnativepoller-cl.md) | ? | ✓ | ? |
 
 ---
 

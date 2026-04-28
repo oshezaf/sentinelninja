@@ -1,4 +1,4 @@
-# Island Enterprise Browser Admin Audit (Polling CCP)
+# Island Enterprise Browser Admin Events (Legacy)
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/island.svg" alt="" width="75" height="75">
 
@@ -13,11 +13,12 @@
 | **Connector ID** | `Island_Admin_Polling` |
 | **Publisher** | Island |
 | **Used in Solutions** | [Island](../solutions/island.md) |
-| **Collection Method** | [CCF (Legacy)](../methods/ccf-legacy.md) |
+| **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [IslandAdminAPIConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Island/Data%20Connectors/IslandAdminAPIConnector.json) |
+| **CCF Configuration** | [IslandV2_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Island/Data%20Connectors/IslandV2_CCP/IslandV2_PollerConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
 
-The [Island](https://www.island.io) Admin connector provides the capability to ingest Island Admin Audit logs into Microsoft Sentinel.
+This is a legacy connector and is no longer recommended. Please use the **Island Enterprise Browser V2 Data Connector** instead, which supports user, admin and system events within a single connector.
 
 ## Tables Ingested
 
@@ -25,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Island_Admin_CL`](../tables/island-admin-cl.md) | ✓ | ✓ | ✓ |
+| [`Island_Admin_CL`](../tables/island-admin-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -43,8 +44,7 @@ This connector ingests data into the following tables:
 
 **1. Connect Island to Microsoft Sentinel**
 
-Provide the Island API URL and Key.  API URL is https://management.island.io/api/external/v1/adminActions for US or https://eu.management.island.io/api/external/v1/adminActions for EU.
-  Generate the API Key in the Management Console under Settings > API.
+This is a legacy connector. For full setup instructions, refer to the [official Island documentation](https://documentation.island.io/docs/configure-the-microsoft-sentinel-integration) (requires login to the Island Management Console).
 > 📋 **Additional Configuration Step**: This connector includes a configuration step of type `APIKey`. Please refer to the Microsoft Sentinel portal for detailed configuration options for this step.
 
 ---

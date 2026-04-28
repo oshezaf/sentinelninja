@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Microsoft Copilot Preview &mdash; Solutions Analyzer</title>
+<title>Microsoft Copilot &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,8 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="microsoft-copilot">Microsoft Copilot (Preview)</h1>
-<p><em>Solution: Microsoft Copilot</em></p>
+<h1 id="microsoft-copilot">Microsoft Copilot</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Copilot_logo.svg" alt="Microsoft Copilot Logo" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
@@ -47,7 +46,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.0.1</td>
+<td style="text-align: left;">3.0.2</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -59,7 +58,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Last Updated</strong></td>
-<td style="text-align: left;">2026-01-30</td>
+<td style="text-align: left;">2026-04-03</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Solution Folder</strong></td>
@@ -71,11 +70,17 @@
 </tr>
 </tbody>
 </table>
-<p>The <a href="https://www.microsoft.com/en-us/microsoft-365/copilot">Microsoft Copilot</a> solution allows you to stream your Microsoft Copilot audit logs into Microsoft Sentinel in order to track your Copilot activities.</p>
+<p>The <a href="https://www.microsoft.com/en-us/microsoft-365/copilot">Microsoft Copilot</a> solution allows you to stream your Microsoft Copilot audit logs from M365 Copilot and Security Copilot into Microsoft Sentinel in order to track Copilot activities across your organization.</p>
 <p><strong>Underlying Microsoft Technologies used:</strong></p>
 <p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
 <ul>
 <li><a href="https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview">Office Management API</a></li>
+</ul>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
@@ -96,7 +101,105 @@
 <tr>
 <td><a href="../tables/copilotactivity.html"><code>CopilotActivity</code></a></td>
 <td><a href="../connectors/microsoftcopilot.html">Microsoft Copilot</a></td>
-<td>-</td>
+<td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>7 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-copilot-copilot-file-uploads-disabled-c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8-2b49efb6.html">Copilot - File Uploads Disabled</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/copilotactivity.html"><code>CopilotActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-copilot-copilot-jailbreak-attempt-detected-e5f6a7b8-c9d0-41e2-f3a4-b5c6d7e8f9a0-37101c05.html">Copilot - Jailbreak Attempt Detected</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess, CredentialAccess, Impact</td>
+<td style="text-align: left;"><a href="../tables/copilotactivity.html"><code>CopilotActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-copilot-copilot-plugin-created-by-non-admin-user-a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6-534a022a.html">Copilot - Plugin Created by Non-Admin User</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Persistence, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/copilotactivity.html"><code>CopilotActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-copilot-copilot-plugin-tampering-enable-and-disable-within-5-minutes-d4e5f6a7-b8c9-40d1-e2f3-a4b5c6d7e8f9-e650fbfe.html">Copilot - Plugin Tampering (Enable and Disable Within 5 Minutes)</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Discovery, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/copilotactivity.html"><code>CopilotActivity</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hunting-queries">Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-copilot-copilot-access-from-external-ip-address-f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1-76209661.html">Copilot - Access From External IP Address</a></td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/copilotactivity.html"><code>CopilotActivity</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-copilot-copilot-plugin-enabled-after-being-disabled-b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7-7fec45a8.html">Copilot - Plugin Enabled After Being Disabled</a></td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/copilotactivity.html"><code>CopilotActivity</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-copilot-microsoftcopilotactivitymonitoring-4219cdf5.html">MicrosoftCopilotActivityMonitoring</a></td>
+<td style="text-align: left;"><a href="../tables/copilotactivity.html"><code>CopilotActivity</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -110,6 +213,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>3.0.2</td>
+<td>02-04-2026</td>
+<td>Update Solution and Connector Descriptions. <br> Added a <strong>Analytic rules</strong>, <strong>Hunting Queries</strong> and <strong>Workbook</strong> for Microsoft Copilot Activity Monitoring and detection. <br> Solution push to GA.</td>
+</tr>
 <tr>
 <td>3.0.1</td>
 <td>12-12-2025</td>

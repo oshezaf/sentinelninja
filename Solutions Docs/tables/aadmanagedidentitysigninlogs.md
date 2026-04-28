@@ -14,7 +14,6 @@ Reference for AADManagedIdentitySignInLogs table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadmanagedidentitysigninlogs) |
 
 ## Contents
@@ -25,7 +24,7 @@ Reference for AADManagedIdentitySignInLogs table in Azure Monitor Logs.
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (46 columns)
+## Schema (47 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadmanagedidentitysigninlogs)
 
@@ -41,6 +40,7 @@ Reference for AADManagedIdentitySignInLogs table in Azure Monitor Logs.
 | AuthenticationProcessingDetails | string | Provides the details associated with authentication processor |
 | Category | string | Category of the sign-in event |
 | ClientCredentialType | string |  |
+| ConditionalAccessAudiences | string | Details of the conditional access audiences being applied for the sign-in. |
 | ConditionalAccessPolicies | string | Details of the conditional access policies being applied for the sign-in |
 | ConditionalAccessStatus | string | Status of all the conditionalAccess policies related to the sign-in |
 | CorrelationId | string | ID to provide sign-in trail |

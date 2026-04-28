@@ -26,8 +26,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ | ✓ |
-| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ | ✓ |
+| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ | ? |
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ | ? |
 
 ## Associated Connectors
 

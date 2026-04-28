@@ -31,7 +31,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md) | ✓ | ✗ | ✓ |
+| [`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md) | ✓ | ✗ | ? |
 
 ## Permissions
 

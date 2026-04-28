@@ -24,8 +24,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ✓ |
-| [`SigninLogs`](../tables/signinlogs.md) | `OperationName == "User registered security info"` | ✓ | ✗ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName == "User registered security info"` | ✓ | ✗ | ? |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ? |
 
 ## Associated Connectors
 

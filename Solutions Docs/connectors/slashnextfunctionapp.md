@@ -26,8 +26,8 @@ This connector ingests data into the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Resource == "SlashnextFunctionApp"` | ✗ | ✗ | ✗ |
-| [`AzureMetrics`](../tables/azuremetrics.md) |  | ✗ | ✗ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Resource == "SlashnextFunctionApp"` | ? | ✗ | ? |
+| [`AzureMetrics`](../tables/azuremetrics.md) |  | ? | ✗ | ? |
 
 ## Permissions
 

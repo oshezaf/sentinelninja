@@ -50,15 +50,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Ingestion API</strong></td>
-<td style="text-align: left;"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Azure Function code uses SharedKey/HTTP Data Collector API</em></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
-<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+<td style="text-align: left;"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>Azure Function code uses LogsIngestionClient/Log Ingestion API</em></td>
 </tr>
 </tbody>
 </table>
-<p>The <a href="https://extrahop.com/">ExtraHop</a> Detections Data Connector enables you to import detection data from ExtraHop RevealX to Microsoft Sentinel through webhook payloads.</p>
+<p>The <a href="https://extrahop.com/">ExtraHop</a> Detections Data Connector enables you to import detection data from ExtraHop RevealX to Microsoft Sentinel through webhook payloads. Data is ingested using the Azure Monitor Log Ingestion API via a Data Collection Rule (DCR).</p>
 <h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
@@ -72,10 +68,10 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/extrahop-detections-cl.html"><code>ExtraHop_Detections_CL</code></a> 🔶</td>
-<td style="text-align: center;">✗</td>
+<td style="text-align: left;"><a href="../tables/extrahop-detections-cl.html"><code>ExtraHop_Detections_CL</code></a></td>
+<td style="text-align: center;">?</td>
 <td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
 </tr>
 </tbody>
 </table>
@@ -87,98 +83,90 @@
 - <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
 - <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
 <p><strong>Custom Permissions:</strong>
-- <strong>Azure Subscription</strong>: Azure Subscription with owner role is required to register an application in Microsoft Entra ID and assign role of contributor to app in resource group.
+- <strong>Azure Subscription</strong>: Azure Subscription with owner role is required to register an application in Microsoft Entra ID, create a Data Collection Endpoint, Data Collection Rule, and assign the required roles.
+- <strong>Microsoft Entra App Registration</strong>: A Microsoft Entra ID App Registration (Service Principal) with a Client Secret is required. The app's Object ID must be provided so the deployment can assign it the necessary role to publish logs via the Log Ingestion API.
 - <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
 - <strong>ExtraHop RevealX permissions</strong>: The following is required on your ExtraHop RevealX system:
- 1.Your RevealX system must be running firmware version 9.9.2 or later.
- 2.Your RevealX system must be connected to ExtraHop Cloud Services.
- 3.Your user account must have System Administratin privileges on RevealX 360 or Full Write privileges on RevealX Enterprise.</p>
+ 1. Your RevealX system must be running firmware version 9.9.2 or later.
+ 2. Your RevealX system must be connected to ExtraHop Cloud Services.
+ 3. Your user account must have System Administration privileges on RevealX 360 or Full Write privileges on RevealX Enterprise.</p>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
-<p><strong>NOTE:</strong> This connector uses Azure Functions to connect to the ExtraHop in which logs are pushed via ExtraHop webhook and it will ingest logs into Microsoft Sentinel. Furthermore, the connector will fetch the ingested data from the custom logs table and create Threat Intelligence Indicators into Microsoft Sentinel Threat Intelligence. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
-<p><strong>(Optional Step)</strong> Securely store workspace and API authorization key(s) or token(s) in Azure Key Vault. Azure Key Vault provides a secure mechanism to store and retrieve key values. <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Follow these instructions</a> to use Azure Key Vault with an Azure Function App.</p>
+<p><strong>NOTE:</strong> This connector uses Azure Functions to receive ExtraHop webhook payloads and ingest them into Microsoft Sentinel using the <strong>Azure Monitor Log Ingestion API</strong> (DCR-based ingestion). This replaces the legacy Log Analytics HTTP Data Collector API. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
+<p><strong>(Optional Step)</strong> Securely store API credentials in Azure Key Vault. Azure Key Vault provides a secure mechanism to store and retrieve key values. <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Follow these instructions</a> to use Azure Key Vault with an Azure Function App.</p>
 </blockquote>
 <p><strong>NOTE:</strong> This data connector depends on a parser based on a Kusto Function to work as expected which is deployed as part of the solution. To view the function code in Log Analytics, open Log Analytics/Microsoft Sentinel Logs blade, click Functions and search for the alias <strong>ExtraHopDetections</strong> and load the function code or click <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ExtraHop/Parsers/ExtraHopDetections.yaml">here</a>. The function usually takes 10-15 minutes to activate after solution installation/update.</p>
-<p><strong>STEP 1 - Choose ONE from the following two deployment options to deploy the connector and the associated Azure Function</strong></p>
+<p><strong>2. Configuration:</strong></p>
+<p><strong>STEP 1 - App Registration steps for the Application in Microsoft Entra ID</strong></p>
+<p>This integration requires an App registration in the Azure portal. Follow the steps in this section to create a new application in Microsoft Entra ID:
+ 1. Sign in to the <a href="https://portal.azure.com/">Azure portal</a>.
+ 2. Search for and select <strong>Microsoft Entra ID</strong>.
+ 3. Under <strong>Manage</strong>, select <strong>App registrations &gt; New registration</strong>.
+ 4. Enter a display <strong>Name</strong> for your application (e.g., <code>ExtraHopSentinelConnector</code>).
+ 5. Select <strong>Register</strong> to complete the initial app registration.
+ 6. When registration finishes, the Azure portal displays the app registration's Overview pane. You see the <strong>Application (client) ID</strong> and <strong>Tenant ID</strong>. The client ID and Tenant ID is required as configuration parameters for the execution of ExtraHop Data Connector. </p>
 <blockquote>
-<p><strong>IMPORTANT:</strong> Before deploying the ExtraHop Microsoft Sentinel data connector, have the Workspace ID and Workspace Primary Key (can be copied from the following) readily available.
-- <strong>Workspace ID</strong>: <code>WorkspaceId</code>
-<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
-- <strong>Primary Key</strong>: <code>PrimaryKey</code>
-<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+<p><strong>Reference link:</strong> <a href="https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app">https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app</a></p>
 </blockquote>
-<p><strong>3. Option 1 - Azure Resource Manager (ARM) Template</strong></p>
-<p>Complete the following steps for automated deployment of the ExtraHop Detections Data Connector.</p>
+<p><strong>STEP 2 - Add a client secret for application in Microsoft Entra ID</strong></p>
+<p>Sometimes called an application password, a client secret is a string value required for the execution of ExtraHop Data Connector. Follow the steps in this section to create a new Client Secret:
+ 1. In the Azure portal, in <strong>App registrations</strong>, select your application.
+ 2. Select <strong>Certificates &amp; secrets &gt; Client secrets &gt; New client secret</strong>.
+ 3. Add a description for your client secret.
+ 4. Select an expiration for the secret or specify a custom lifetime. Limit is 24 months.
+ 5. Select <strong>Add</strong>. 
+ 6. <em>Record the secret's value for use in your client application code. This secret value is never displayed again after you leave this page.</em> The secret value is required as configuration parameter for the execution of ExtraHop Data Connector. </p>
+<blockquote>
+<p><strong>Reference link:</strong> <a href="https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret">https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret</a></p>
+</blockquote>
+<p><strong>STEP 3 - Get Object ID of your application in Microsoft Entra ID</strong></p>
+<p>After creating your app registration, follow the steps in this section to get Object ID:
+ 1. Go to <strong>Microsoft Entra ID</strong>.
+ 2. Select <strong>Enterprise applications</strong> from the left menu.
+ 3. Find your newly created application in the list (you can search by the name you provided).
+ 4. Click on the application.
+ 5. On the overview page, copy the <strong>Object ID</strong>. This is the <strong>AzureEntraObjectID</strong> needed for your ARM template role assignment.</p>
+<p><strong>STEP 4 - Deploy ExtraHop Data Connector</strong></p>
+<blockquote>
+<p><strong>IMPORTANT:</strong> Before deploying the ExtraHop Data connector, have the Microsoft Entra ID App Registration details (Client ID, Client Secret, Tenant ID, and Object ID) readily available.</p>
+</blockquote>
+<p><strong>6. Deploy the ExtraHop Detections Data Connector:</strong></p>
+<p>Use this method for automated deployment of the ExtraHop Detections Data connector.</p>
 <ol>
 <li>
 <p>Click the <strong>Deploy to Azure</strong> button below. </p>
 <p><a href="https://aka.ms/sentinel-ExtraHop-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>
-2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. 
-3. Enter the values for the following parameters:</p>
-<p>a. <strong>Function Name</strong> - Enter the Function Name you want. </p>
-<p>b. <strong>Workspace ID</strong> - Enter the Workspace ID of the log analytics Workspace. </p>
-<p>c. <strong>Workspace Key</strong> - Enter the Workspace Key of the log analytics Workspace. </p>
-<p>d. <strong>Detections Table Name</strong> - Enter the name of the table used to store ExtraHop detection data. </p>
-<p>e. <strong>LogLevel</strong> - Select Debug, Info, Error, or Warning for the log level or log severity value. </p>
-<p>f. <strong>AppInsightsWorkspaceResourceID</strong> - Enter the value of the 'Log Analytic Workspace--&gt;Properties--&gt;Resource ID' property. 
-4. Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>. 
-5. Click <strong>Purchase</strong> to deploy.</p>
-</li>
-</ol>
-<p><strong>4. Option 2 - Manual Deployment of Azure Functions</strong></p>
-<p>Complete the following steps to manually deploy the ExtraHop Detections Data Connector with Azure Functions (Deployment via Visual Studio Code).</p>
-<p><strong>5. 1) Deploy a Function App</strong></p>
-<blockquote>
-<p><strong>NOTE:</strong> You will need to <a href="https://docs.microsoft.com/azure/azure-functions/functions-create-first-function-python#prerequisites">prepare VS code</a> for Azure function development.</p>
-</blockquote>
-<ol>
-<li>Download the <a href="https://aka.ms/sentinel-ExtraHop-functionapp">Azure Function App</a> file. Extract archive to your local development computer.</li>
-<li>Start VS Code. Choose File in the main menu and select Open Folder.</li>
-<li>Select the top level folder from extracted files.</li>
-<li>Choose the Azure icon in the Activity bar, then in the <strong>Azure: Functions</strong> area, choose the <strong>Deploy to function app</strong> button.
-If you aren't already signed in, choose the Azure icon in the Activity bar, then in the <strong>Azure: Functions</strong> area, choose <strong>Sign in to Azure</strong>
-If you're already signed in, go to the next step.</li>
-<li>
-<p>Provide the following information at the prompts:</p>
-<p>a. <strong>Select folder:</strong> Choose a folder from your workspace or browse to one that contains your function app.</p>
-<p>b. <strong>Select Subscription:</strong> Choose the subscription to use.</p>
-<p>c. Select <strong>Create new Function App in Azure</strong> (Don't choose the Advanced option)</p>
-<p>d. <strong>Enter a globally unique name for the function app:</strong> Type a name that is valid in a URL path. The name you type is validated to make sure that it's unique in Azure Functions. (e.g. ExtraHopXXXXX).</p>
-<p>e. <strong>Select a runtime:</strong> Choose Python 3.11 or above.</p>
-<p>f. Select a location for new resources. For better performance and lower costs choose the same <a href="https://azure.microsoft.com/regions/">region</a> where Microsoft Sentinel is located.</p>
+2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Region</strong>. 
+3. Enter the below information : </p>
+<p>a. <strong>FunctionName</strong> - Enter the Function App name (used to name all related resources). Must be 1-11 characters. Default: <code>ExtraHop</code></p>
+<p>b. <strong>Location</strong> - The location in which the data collection rules and data collection endpoints should be deployed</p>
+<p>c. <strong>WorkspaceName</strong> - Enter Microsoft Sentinel Workspace Name of Log Analytics workspace</p>
+<p>d. <strong>AzureClientId</strong> - Enter Azure Client ID that you have created during app registration</p>
+<p>e. <strong>AzureClientSecret</strong> - Enter Azure Client Secret that you have created during creating the client secret</p>
+<p>f. <strong>AzureEntraObjectID</strong> - Enter Object id of your Microsoft Entra App</p>
+<p>g. <strong>TenantId</strong> - Enter Tenant ID of your Microsoft Entra ID</p>
+<p>h. <strong>DetectionsTableName</strong> - Enter name of the table used to store ExtraHop Detections logs. Default is 'ExtraHop_Detections'</p>
+<p>i. <strong>LogLevel</strong> - Select log level or log severity value from Debug, Info, Error, Warning. By default it is set to Info</p>
+<p>j. <strong>AppInsightsWorkspaceResourceID</strong> - Migrate Classic Application Insights to Log Analytic Workspace which is retiring by 29 Febraury 2024. Use 'Log Analytic Workspace--&gt;Properties' blade having 'Resource ID' property value. This is a fully qualified resourceId which is in format '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}'</p>
 </li>
 <li>
-<p>Deployment will begin. A notification is displayed after your function app is created and the deployment package is applied.</p>
+<p>Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>. </p>
 </li>
-<li>Go to Azure Portal for the Function App configuration.</li>
+<li>Click <strong>Purchase</strong> to deploy.</li>
 </ol>
-<p><strong>6. 2) Configure the Function App</strong></p>
-<ol>
-<li>In the Function App, select the Function App Name and select <strong>Configuration</strong>.</li>
-<li>In the <strong>Application settings</strong> tab, select <strong>+ New application setting</strong>.</li>
-<li>
-<p>Add each of the following application settings individually, with the following respective values (case-sensitive): </p>
-<p>a. <strong>Function Name</strong> - Enter the Function Name you want. </p>
-<p>b. <strong>Workspace ID</strong> - Enter the Workspace ID of the log analytics Workspace. </p>
-<p>c. <strong>Workspace Key</strong> - Enter the Workspace Key of the log analytics Workspace. </p>
-<p>d. <strong>Detections Table Name</strong> - Enter the name of the table used to store ExtraHop detection data. </p>
-<p>e. <strong>LogLevel</strong> - Select Debug, Info, Error, or Warning for the log level or log severity value. </p>
-<p>f. <strong>logAnalyticsUri (optional)</strong> - Configure this option to override the log analytics API endpoint for dedicated cloud. For example, for public cloud, leave the value empty; for Azure GovUS cloud environment, specify the value in the following format: <code>https://&lt;CustomerId&gt;.ods.opinsights.azure.us</code>.
-4. Once all application settings have been entered, click <strong>Save</strong>.</p>
-</li>
-</ol>
-<p><strong>STEP 2 - Post Deployment</strong></p>
+<p><strong>STEP 5 - Post Deployment</strong></p>
+<p>After successful deployment, configure the webhook connection from ExtraHop RevealX to Microsoft Sentinel.</p>
 <p><strong>8. 1) Get the Function App endpoint</strong></p>
 <ol>
-<li>Go to the Azure function overview page and click the <strong>"Functions"</strong> tab.</li>
-<li>Click on the function called <strong>"ExtraHopHttpStarter"</strong>.</li>
-<li>Go to <strong>"GetFunctionurl"</strong> and copy the function url available under <strong>"default (Function key)"</strong>.</li>
-<li>Replace <strong>{functionname}</strong>  with <strong>"ExtraHopDetectionsOrchestrator"</strong> in copied function url.</li>
+<li>Go to the Azure function overview page and click the <strong>Functions</strong> tab.</li>
+<li>Click on the function called <strong>ExtraHopHttpStarter</strong>.</li>
+<li>Go to <strong>Get Function URL</strong> and copy the function URL available under <strong>default (Function key)</strong>.</li>
+<li>Replace <strong>{functionname}</strong> with <strong>ExtraHopDetectionsOrchestrator</strong> in the copied function URL.</li>
 </ol>
 <p><strong>9. 2) Configure a connection to Microsoft Sentinel and specify webhook payload criteria from RevealX</strong></p>
-<p>From your ExtraHop system, configure the Microsoft Sentinel integration to establish a connection between Microsoft Sentinel and ExtraHop RevealX and to create detection notification rules that will send webhook data to Microsoft Sentinel. For detailed instructions, refer to <a href="https://docs.extrahop.com/current/integrations-microsoft-sentinel-siem/">Integrate ExtraHop RevealX with Microsoft Sentinel SIEM</a>.</p>
-<p><em>After notification rules have been configured and Microsoft Sentinel is receiving webhook data, the Function App is triggered and you can view ExtraHop detections from the Log Analytics workspace table named "ExtraHop_Detections_CL".</em></p>
+<p>From your ExtraHop system, configure the Microsoft Sentinel integration to establish a connection between Microsoft Sentinel and ExtraHop RevealX and to create detection notification rules that will send webhook data to Microsoft Sentinel. For detailed instructions, refer to <a href="https://docs.extrahop.com/current/rx-enterprise-integrations-microsoft-sentinel-siem/">Integrate ExtraHop RevealX with Microsoft Sentinel SIEM</a>.</p>
+<p><em>After notification rules have been configured and Microsoft Sentinel is receiving webhook data, the Function App is triggered and you can view ExtraHop detections from the Log Analytics workspace custom table. Use the </em><em>ExtraHopDetections</em><em> parser function for a normalized view of the data.</em></p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>

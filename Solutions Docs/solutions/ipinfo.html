@@ -47,7 +47,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.0.1</td>
+<td style="text-align: left;">3.0.5</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -73,20 +73,23 @@
 </table>
 <p>The IPinfo data connectors installs Azure Function app to download different datasets like standard_location, standard_privacy and standard_company and insert them into custom log tables in Microsoft Sentinel</p>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>17 data connector(s)</strong>:</p>
+<p>This solution provides <strong>20 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/ipinfoasndataconnector.html">IPinfo ASN Data Connector</a></li>
 <li><a href="../connectors/ipinfoabusedataconnector.html">IPinfo Abuse Data Connector</a></li>
 <li><a href="../connectors/ipinfocarrierdataconnector.html">IPinfo Carrier Data Connector</a></li>
 <li><a href="../connectors/ipinfocompanydataconnector.html">IPinfo Company Data Connector</a></li>
+<li><a href="../connectors/ipinfocoredataconnector.html">IPinfo Core Data Connector</a></li>
 <li><a href="../connectors/ipinfocountrydataconnector.html">IPinfo Country ASN Data Connector</a></li>
 <li><a href="../connectors/ipinfodomaindataconnector.html">IPinfo Domain Data Connector</a></li>
 <li><a href="../connectors/ipinfoiplocationdataconnector.html">IPinfo Iplocation Data Connector</a></li>
 <li><a href="../connectors/ipinfoiplocationextendeddataconnector.html">IPinfo Iplocation Extended Data Connector</a></li>
+<li><a href="../connectors/ipinfoplusdataconnector.html">IPinfo Plus Data Connector</a></li>
 <li><a href="../connectors/ipinfoprivacydataconnector.html">IPinfo Privacy Data Connector</a></li>
 <li><a href="../connectors/ipinfoprivacyextendeddataconnector.html">IPinfo Privacy Extended Data Connector</a></li>
 <li><a href="../connectors/ipinforirwhoisdataconnector.html">IPinfo RIRWHOIS Data Connector</a></li>
 <li><a href="../connectors/ipinforwhoisdataconnector.html">IPinfo RWHOIS Data Connector</a></li>
+<li><a href="../connectors/ipinforesproxydataconnector.html">IPinfo ResProxy Data Connector</a></li>
 <li><a href="../connectors/ipinfowhoisasndataconnector.html">IPinfo WHOIS ASN Data Connector</a></li>
 <li><a href="../connectors/ipinfowhoismntdataconnector.html">IPinfo WHOIS MNT Data Connector</a></li>
 <li><a href="../connectors/ipinfowhoisnetdataconnector.html">IPinfo WHOIS NET Data Connector</a></li>
@@ -94,7 +97,7 @@
 <li><a href="../connectors/ipinfowhoispocdataconnector.html">IPinfo WHOIS POC Data Connector</a></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>17 table(s)</strong>:</p>
+<p>This solution uses <strong>20 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -112,6 +115,11 @@
 <tr>
 <td><a href="../tables/ipinfo-abuse-cl.html"><code>Ipinfo_Abuse_CL</code></a></td>
 <td><a href="../connectors/ipinfoabusedataconnector.html">IPinfo Abuse Data Connector</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/ipinfo-core-cl.html"><code>Ipinfo_CORE_CL</code></a></td>
+<td><a href="../connectors/ipinfocoredataconnector.html">IPinfo Core Data Connector</a></td>
 <td>-</td>
 </tr>
 <tr>
@@ -145,6 +153,11 @@
 <td>-</td>
 </tr>
 <tr>
+<td><a href="../tables/ipinfo-plus-cl.html"><code>Ipinfo_PLUS_CL</code></a></td>
+<td><a href="../connectors/ipinfoplusdataconnector.html">IPinfo Plus Data Connector</a></td>
+<td>-</td>
+</tr>
+<tr>
 <td><a href="../tables/ipinfo-privacy-cl.html"><code>Ipinfo_Privacy_CL</code></a></td>
 <td><a href="../connectors/ipinfoprivacydataconnector.html">IPinfo Privacy Data Connector</a></td>
 <td>-</td>
@@ -152,6 +165,11 @@
 <tr>
 <td><a href="../tables/ipinfo-privacy-extended-cl.html"><code>Ipinfo_Privacy_extended_CL</code></a></td>
 <td><a href="../connectors/ipinfoprivacyextendeddataconnector.html">IPinfo Privacy Extended Data Connector</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/ipinfo-residential-proxy-cl.html"><code>Ipinfo_RESIDENTIAL_PROXY_CL</code></a></td>
+<td><a href="../connectors/ipinforesproxydataconnector.html">IPinfo ResProxy Data Connector</a></td>
 <td>-</td>
 </tr>
 <tr>
@@ -202,9 +220,29 @@
 </thead>
 <tbody>
 <tr>
+<td>3.0.5</td>
+<td>21-03-2026</td>
+<td>Modified zip files to resolve dependency issues</td>
+</tr>
+<tr>
+<td>3.0.4</td>
+<td>13-03-2026</td>
+<td>Updated zip files for all connectors to fix the folder structure</td>
+</tr>
+<tr>
+<td>3.0.3</td>
+<td>03-03-2026</td>
+<td>Added 3 New Data Connectors i.e. Core, Plus and Residential Proxy</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>03-02-2026</td>
+<td>Update <strong>Data Connector</strong> and packaging refresh to resolve Marketplace validation issues</td>
+</tr>
+<tr>
 <td>3.0.1</td>
 <td>19-08-2024</td>
-<td>IPinfo New Data Connectors</td>
+<td>IPinfo New <strong>Data Connectors</strong></td>
 </tr>
 <tr>
 <td>3.0.0</td>

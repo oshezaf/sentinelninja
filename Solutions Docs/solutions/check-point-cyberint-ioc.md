@@ -2,7 +2,7 @@
 
 *Solution: Check Point Cyberint IOC*
 
-<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/checkpoint-cyberint.svg" alt="Check Point Cyberint IOC Logo" width="75" height="75">
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/checkpoint.svg" alt="Check Point Cyberint IOC Logo" width="75" height="75">
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -19,6 +19,7 @@
 | **Version** | 3.0.1 |
 | **Author** | Cyberint - support@checkpoint.com |
 | **First Published** | 2025-04-29 |
+| **Last Updated** | 2026-04-21 |
 | **Solution Folder** | [Check Point Cyberint IOC](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20IOC) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/checkpoint.azure-sentinel-checkpoint-cyberint-ioc) · Popularity: 🟡 Low (32%) |
 
@@ -42,7 +43,7 @@ This solution uses **1 table(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**       |
 | ----------- | ------------------------------ | ------------------------ |
-| 3.0.2       | 22-01-2026                     | Check Point Cyberint IOC **Data Connector** Improvements. |
+| 3.0.2       | 03-04-2026                     | Fixed table schema definition causing connector creation failure.<br>Fixed apiEndpoint URL construction (removed duplicate https:// prefix).<br>Added Customer Name configuration field.<br>Improved connector UI with field descriptions, placeholders, and password masking for API Token.<br>Updated connector description and prerequisites text. |
 | 3.0.1       | 12-09-2025                     | Replaces the variable reference for graphQueriesTableName with the explicit table name **'iocsent_CL'** |
 | 3.0.0       | 17-06-2025                     | Initial Solution release. |
 

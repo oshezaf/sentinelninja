@@ -26,9 +26,9 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ✓ |
-| [`Syslog`](../tables/syslog.md) | `Facility contains "auth"`<br>`ProcessName != "sudo"`<br>`SyslogMessage has "from"`<br>`SyslogMessage has_any "Accepted,Disconnected,Disconnecting,[preauth],disconnect"` | ✓ | ✓ | ✓ |
-| [`WindowsEvent`](../tables/windowsevent.md) | `EventID == "4625"` | ✓ | ✓ | ✓ |
+| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ? |
+| [`Syslog`](../tables/syslog.md) | `Facility contains "auth"`<br>`ProcessName != "sudo"`<br>`SyslogMessage has "from"`<br>`SyslogMessage has_any "Accepted,Disconnected,Disconnecting,[preauth],disconnect"` | ✓ | ✓ | ? |
+| [`WindowsEvent`](../tables/windowsevent.md) | `EventID == "4625"` | ✓ | ✓ | ? |
 
 ## Associated Connectors
 

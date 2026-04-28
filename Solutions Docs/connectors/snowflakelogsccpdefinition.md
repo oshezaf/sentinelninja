@@ -26,16 +26,16 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SnowflakeLoad_CL`](../tables/snowflakeload-cl.md) | ✓ | ✓ | ✓ |
-| [`SnowflakeLogin_CL`](../tables/snowflakelogin-cl.md) | ✓ | ✓ | ✓ |
-| [`SnowflakeMaterializedView_CL`](../tables/snowflakematerializedview-cl.md) | ✓ | ✓ | ✓ |
-| [`SnowflakeQuery_CL`](../tables/snowflakequery-cl.md) | ✓ | ✓ | ✓ |
-| [`SnowflakeRoleGrant_CL`](../tables/snowflakerolegrant-cl.md) | ✓ | ✓ | ✓ |
-| [`SnowflakeRoles_CL`](../tables/snowflakeroles-cl.md) | ✓ | ✓ | ✓ |
-| [`SnowflakeTableStorageMetrics_CL`](../tables/snowflaketablestoragemetrics-cl.md) | ✓ | ✓ | ✓ |
-| [`SnowflakeTables_CL`](../tables/snowflaketables-cl.md) | ✓ | ✓ | ✓ |
-| [`SnowflakeUserGrant_CL`](../tables/snowflakeusergrant-cl.md) | ✓ | ✓ | ✓ |
-| [`SnowflakeUsers_CL`](../tables/snowflakeusers-cl.md) | ✓ | ✓ | ✓ |
+| [`SnowflakeLoad_CL`](../tables/snowflakeload-cl.md) | ? | ✓ | ? |
+| [`SnowflakeLogin_CL`](../tables/snowflakelogin-cl.md) | ? | ✓ | ? |
+| [`SnowflakeMaterializedView_CL`](../tables/snowflakematerializedview-cl.md) | ? | ✓ | ? |
+| [`SnowflakeQuery_CL`](../tables/snowflakequery-cl.md) | ? | ✓ | ? |
+| [`SnowflakeRoleGrant_CL`](../tables/snowflakerolegrant-cl.md) | ? | ✓ | ? |
+| [`SnowflakeRoles_CL`](../tables/snowflakeroles-cl.md) | ? | ✓ | ? |
+| [`SnowflakeTableStorageMetrics_CL`](../tables/snowflaketablestoragemetrics-cl.md) | ? | ✓ | ? |
+| [`SnowflakeTables_CL`](../tables/snowflaketables-cl.md) | ? | ✓ | ? |
+| [`SnowflakeUserGrant_CL`](../tables/snowflakeusergrant-cl.md) | ? | ✓ | ? |
+| [`SnowflakeUsers_CL`](../tables/snowflakeusers-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

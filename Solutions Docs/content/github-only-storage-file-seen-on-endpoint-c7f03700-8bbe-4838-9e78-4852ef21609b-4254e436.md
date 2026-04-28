@@ -25,8 +25,8 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`DeviceFileEvents`](../tables/devicefileevents.md) | `ActionType == "FileCreated"` | ✓ | ✗ | ? |
-| [`StorageBlobLogs`](../tables/storagebloblogs.md) |  | ✓ | ✗ | ✓ |
-| [`StorageFileLogs`](../tables/storagefilelogs.md) |  | ✓ | ✗ | ✓ |
+| [`StorageBlobLogs`](../tables/storagebloblogs.md) |  | ✓ | ✗ | ? |
+| [`StorageFileLogs`](../tables/storagefilelogs.md) |  | ✓ | ✗ | ? |
 
 ## Associated Connectors
 

@@ -18,9 +18,9 @@ The Microsoft Monitoring Agent (MMA), also known as the Log Analytics agent, is 
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **110** |
+| Total Connectors | **109** |
 | Active | 14 |
-| Deprecated 🚫 | 90 |
+| Deprecated 🚫 | 89 |
 | Unpublished ⚠️ | 6 |
 
 ## Connectors Using This Method
@@ -143,7 +143,6 @@ The Microsoft Monitoring Agent (MMA), also known as the Log Analytics agent, is 
 | 🚫 [[Deprecated] WireX Network Forensics Platform via Legacy Agent](../connectors/wirex-systems-nfp.md) | WireX_Systems | 1 | [WireX Network Forensics Platform](../solutions/wirex-network-forensics-platform.md) |
 | 🚫 [[Deprecated] WithSecure Elements via Connector](../connectors/withsecureelementsviaconnector.md) | WithSecure | 1 | [WithSecureElementsViaConnector](../solutions/withsecureelementsviaconnector.md) |
 | 🚫 [[Deprecated] Zscaler Private Access](../connectors/zscalerprivateaccess.md) | Zscaler | 1 | [Zscaler Private Access (ZPA)](../solutions/zscaler-private-access-zpa.md) |
-| 🚫 [[Deprecated] Zscaler via Legacy Agent](../connectors/zscaler.md) | Zscaler | 1 | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 
 ---
 

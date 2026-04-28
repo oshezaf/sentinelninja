@@ -13,8 +13,8 @@
 | Title | Parser for InsightVMAssets |
 | Location | Solution |
 | Solution | [Rapid7InsightVM](../solutions/rapid7insightvm.md) |
-| Version | 1.0.0 |
-| Last Updated | 2023-08-23 |
+| Version | 2.0.0 |
+| Last Updated | 2026-02-11 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Rapid7InsightVM/Parsers/InsightVMAssets.yaml) |
@@ -25,7 +25,8 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`NexposeInsightVMCloud_assets_CL`](../tables/nexposeinsightvmcloud-assets-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`NexposeInsightVMCloud_assets_CL`](../tables/nexposeinsightvmcloud-assets-cl.md) 🔶 | ? | ✓ | ? |
+| [`Rapid7InsightVMCloudAssets`](../tables/rapid7insightvmcloudassets.md) | ✓ | ✓ | ? |
 
 ---
 

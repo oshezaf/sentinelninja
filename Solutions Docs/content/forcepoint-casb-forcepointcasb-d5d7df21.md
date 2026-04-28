@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct in "CASB Admin audit log,Cloud Service Monitoring,SaaS Security Gateway"`<br>`DeviceVendor == "Forcepoint CASB"` | ✓ | ✓ | ✓ |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct in "CASB Admin audit log,Cloud Service Monitoring,SaaS Security Gateway"`<br>`DeviceVendor == "Forcepoint CASB"` | ✓ | ✓ | ? |
 
 ---
 

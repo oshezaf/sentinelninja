@@ -16,8 +16,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.ionix.io/contact-us/](https://www.ionix.io/contact-us/) |
 | **Categories** | domains |
-| **Version** | 3.0.0 |
-| **Author** | IONIX |
+| **Version** | 3.1.0 |
+| **Author** | IONIX - support@ionix.io |
 | **First Published** | 2022-05-02 |
 | **Last Updated** | 2026-03-27 |
 | **Solution Folder** | [IONIX](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IONIX) |
@@ -29,7 +29,7 @@ The [IONIX](https://ionix.io/) solution for Microsoft Sentinel enables you to in
 
 This solution is dependent on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
 
-a. [Codeless Connector Platform/Native Sentinel Polling](https://docs.microsoft.com/azure/sentinel/create-codeless-connector?tabs=deploy-via-arm-template%2Cconnect-via-the-azure-portal)
+a. [Codeless Connector Platform/Native Microsoft Sentinel Polling](https://docs.microsoft.com/azure/sentinel/create-codeless-connector?tabs=deploy-via-arm-template%2Cconnect-via-the-azure-portal)
 
 ## Contents
 
@@ -39,9 +39,10 @@ a. [Codeless Connector Platform/Native Sentinel Polling](https://docs.microsoft.
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution provides **2 data connector(s)**:
 
-- [IONIX Security Logs](../connectors/cyberpionsecuritylogs.md) 🔶
+- [[DEPRECATED] IONIX Security Logs (Push)](../connectors/cyberpionsecuritylogs.md) 🔶
+- [IONIX Security Logs (via Codeless Connector Framework)](../connectors/ionixdefinition.md) 🔶
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
@@ -52,7 +53,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CyberpionActionItems_CL`](../tables/cyberpionactionitems-cl.md) 🔶 | [IONIX Security Logs](../connectors/cyberpionsecuritylogs.md) | Analytics, Workbooks |
+| [`CyberpionActionItems_CL`](../tables/cyberpionactionitems-cl.md) 🔶 | [IONIX Security Logs (via Codeless Connector Framework)](../connectors/ionixdefinition.md), [[DEPRECATED] IONIX Security Logs (Push)](../connectors/cyberpionsecuritylogs.md) | Analytics, Workbooks |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
@@ -82,7 +83,8 @@ This solution includes **2 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| 3.0.0       | 20-09-2023                     | 	A UI-only update as part of a re-branding from "Cyberpion" to "IONIX" (no change to core functionality) \| v1.0.1 |
+| 3.1.0       | 16-02-2026                     | Added new CCF RestApiPoller data connector (recommended). Automatic daily polling from IONIX API. Old push connector marked as deprecated - will be removed June 2026. Updated workbook and analytics rule with id_s deduplication. |
+| 3.0.0       | 20-09-2023                     | A UI-only update as part of a re-branding from "Cyberpion" to "IONIX" (no change to core functionality) \| v1.0.1 |
 
 ---
 

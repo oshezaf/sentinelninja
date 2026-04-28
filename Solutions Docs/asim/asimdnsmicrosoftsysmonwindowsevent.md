@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`WindowsEvent`](../tables/windowsevent.md) | `EventID == "22"`<br>`Provider == "Microsoft-Windows-Sysmon"` | ✓ | ✓ | ✓ |
+| [`WindowsEvent`](../tables/windowsevent.md) | `EventID == "22"`<br>`Provider == "Microsoft-Windows-Sysmon"` | ✓ | ✓ | ? |
 
 ## Parameters
 

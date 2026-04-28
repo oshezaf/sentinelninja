@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Syslog`](../tables/syslog.md) | `SyslogMessage contains "Reverse path forwarding check fail"`<br>`SyslogMessage contains "VCF Drop"` | ✓ | ✓ | ✓ |
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage contains "Reverse path forwarding check fail"`<br>`SyslogMessage contains "VCF Drop"` | ✓ | ✓ | ? |
 
 ---
 

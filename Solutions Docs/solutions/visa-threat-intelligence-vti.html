@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ Visa Threat Intelligence VTI &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="visa-threat-intelligence">⚠️ Visa Threat Intelligence (VTI)</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Visa_VTI_Logo.svg" alt="Visa Threat Intelligence (VTI) Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Visa Inc.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://developer.visa.com/capabilities/visa_threat_intelligence">https://developer.visa.com/capabilities/visa_threat_intelligence</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Visa Inc. - GDLVTIPSupport@visa.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2026-02-20</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2026-02-20</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Visa%20Threat%20Intelligence%20%28VTI%29">Visa Threat Intelligence (VTI)</a></td>
+</tr>
+</tbody>
+</table>
+<p>Visa Threat Intelligence (VTI) is a Microsoft Sentinel solution that provides insights into global cyber threats, leveraging Visa's extensive threat intelligence data. This solution enables security teams to proactively identify and respond to emerging threats, enhancing their overall security posture. By integrating VTI with Microsoft Sentinel, organizations can benefit from real-time threat intelligence, advanced analytics, and automated response capabilities to protect their digital assets effectively.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/visathreatintelligenceccp.html">Visa Threat Intelligence</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>3 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/devicefileevents.html"><code>DeviceFileEvents</code></a></td>
+<td>-</td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/emailurlinfo.html"><code>EmailUrlInfo</code></a></td>
+<td>-</td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/visathreatintelligenceioc-cl.html"><code>VisaThreatIntelligenceIOC_CL</code></a></td>
+<td><a href="../connectors/visathreatintelligenceccp.html">Visa Threat Intelligence</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>3 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/visa-threat-intelligence-vti-vti-high-severity-domain-collision-detection-7be47078-657a-43cf-9c93-b4705a9f6134-72918c13.html">VTI - High Severity Domain Collision Detection</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/emailurlinfo.html"><code>EmailUrlInfo</code></a><br><a href="../tables/visathreatintelligenceioc-cl.html"><code>VisaThreatIntelligenceIOC_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/visa-threat-intelligence-vti-vti-high-severity-sha1-collision-detection-dbd9e28f-973d-47f3-a8c3-9e18da846870-1dd78c47.html">VTI - High Severity SHA1 Collision Detection</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Execution</td>
+<td style="text-align: left;"><a href="../tables/devicefileevents.html"><code>DeviceFileEvents</code></a><br><a href="../tables/visathreatintelligenceioc-cl.html"><code>VisaThreatIntelligenceIOC_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/visa-threat-intelligence-vti-vti-ioc-feed-33721f01.html">VTI_IOC_Feed</a></td>
+<td style="text-align: left;"><a href="../tables/visathreatintelligenceioc-cl.html"><code>VisaThreatIntelligenceIOC_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="release-notes">Release Notes</h2>
+<h1 id="visa-threat-intelligence-plugin-for-microsoft-sentinel">Visa Threat Intelligence Plugin for Microsoft Sentinel</h1>
+<h2 id="content">Content</h2>
+<ol>
+<li>Data Connectors – the data connector json files
+   * VisaThreatIntelligenceConnector.json</li>
+<li>
+<p>Workbooks – workbook json files and black and white preview images of the workbook
+   * VTI_IOC_Feed.json
+   * Imagaes/Preview/VTIOverview_black.png
+   * Imagaes/Preview/VTIOverview_white.png</p>
+</li>
+<li>
+<p>Analytic Rules – yaml file templates of analytic rules
+   * VTIP_high_severrity_domain.yaml
+   * VTIP_high_severrity_sha1.yaml</p>
+</li>
+</ol>
+<h3 id="copyright-2026-visa-inc">Copyright 2026 Visa Inc.</h3>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.3</td>
+<td>04/21/2026</td>
+<td>Updated <strong>createUiDefinition</strong> to include connector information</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>04/21/2026</td>
+<td>Fixed issue with the zip file</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>03/10/2026</td>
+<td>Fixed missing data connector information from <strong>mainTemplate</strong> file</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>12/16/2025</td>
+<td>Initial release with <strong>Data Connector</strong>, <strong>Workbook</strong>, and <strong>Analytic Rules</strong> for Visa Threat Intelligence</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+</div>
+
+</body>
+</html>

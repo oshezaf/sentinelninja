@@ -8,10 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -21,66 +18,71 @@
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (54 columns)
+## Schema (59 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ExtraHop_Detections_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
 | _ResourceId | string |
-| additional_participants_s | string |
-| assignee_s | string |
-| categories_array_s | string |
-| categories_ids_s | string |
-| categories_string_s | string |
-| description_s | string |
-| dst_device_ipaddrs_s | string |
-| dst_device_macaddr_s | string |
-| dst_device_name_s | string |
-| dst_device_oid_d | real |
-| dst_device_role_s | string |
-| dst_endpoint_s | string |
-| dst_hostname_s | string |
-| dst_ipaddr_s | string |
-| dst_role_s | string |
-| dst_type_s | string |
-| dst_username_s | string |
-| id_d | real |
-| is_user_created_b | int |
-| mitre_tactics_string_s | string |
-| mitre_techniques_s | string |
-| mitre_techniques_string_s | string |
-| mod_time_d | real |
-| properties_client_port_d | real |
-| properties_command_s | string |
-| properties_randomness_d | real |
-| properties_s | string |
-| properties_server_port_d | real |
-| properties_user_s | string |
-| recommended_b | int |
-| recommended_factors_s | string |
-| recommended_s | string |
-| risk_score_d | real |
-| sourcetype_s | string |
-| src_device_ipaddrs_s | string |
-| src_device_macaddr_s | string |
-| src_device_name_s | string |
-| src_device_oid_d | real |
-| src_device_role_s | string |
-| src_endpoint_s | string |
-| src_hostname_s | string |
-| src_ipaddr_s | string |
-| src_role_s | string |
-| src_type_s | string |
-| src_username_s | string |
-| status_s | string |
-| ticket_id_d | real |
-| time_d | real |
+| additional_participants | dynamic |
+| assignee | string |
+| categories_array | dynamic |
+| categories_ids | dynamic |
+| categories_string | string |
+| description | string |
+| DetectionTitle | string |
+| DetectionType | string |
+| dst | dynamic |
+| dst_device | dynamic |
+| dst_device_ipaddrs | dynamic |
+| dst_device_macaddr | string |
+| dst_device_name | string |
+| dst_device_oid | real |
+| dst_device_role | string |
+| dst_endpoint | string |
+| dst_external | bool |
+| dst_hostname | string |
+| dst_ipaddr | string |
+| dst_role | string |
+| dst_type | string |
+| dst_username | string |
+| id | real |
+| is_user_created | bool |
+| mitre_tactics_string | string |
+| mitre_techniques | dynamic |
+| mitre_techniques_string | string |
+| mod_time | real |
+| properties | dynamic |
+| properties_client_port | real |
+| properties_command | string |
+| properties_randomness | real |
+| properties_server_port | real |
+| properties_user | string |
+| recommended | bool |
+| recommended_factors | dynamic |
+| resolution | string |
+| risk_score | real |
+| src | dynamic |
+| src_device | dynamic |
+| src_device_ipaddrs | dynamic |
+| src_device_macaddr | string |
+| src_device_name | string |
+| src_device_oid | real |
+| src_device_role | string |
+| src_endpoint | string |
+| src_external | bool |
+| src_hostname | string |
+| src_ipaddr | string |
+| src_role | string |
+| src_type | string |
+| src_username | string |
+| status | string |
+| ticket_id | real |
 | TimeGenerated | datetime |
-| title_s | string |
+| timestamp | real |
 | Type | string |
-| type_s | string |
-| url_s | string |
+| url | string |
 
 ## Solutions (1)
 

@@ -15,89 +15,97 @@
 
 - [Schema](#schema)
 - [Solutions](#solutions)
+- [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
-## Schema (69 columns)
+## Schema (68 columns)
 
-**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/TaniumThreatResponse_CL.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium%5CData%20Connectors/Table_ThreatResponseAlerts.json)
 
-| Column Name | Type |
-|:------------|:-----|
-| Alert_Id_g | string |
-| Computer | string |
-| Computer_IP_s | string |
-| Computer_Name_s | string |
-| fake_b | bool |
-| Impact_Score_d | real |
-| Impact_Score_s | string |
-| Intel_Id_d | real |
-| Intel_Labels_s | string |
-| Intel_Name_s | string |
-| Intel_Type_s | string |
-| Match_Details_finding_artifact_artifact_hash_s | string |
-| Match_Details_finding_artifact_instance_hash_s | string |
-| Match_Details_finding_artifact_windows_defender_event_event_s | string |
-| Match_Details_finding_artifact_windows_defender_event_timestamp_ms_s | string |
-| Match_Details_finding_description_s | string |
-| Match_Details_finding_first_seen_t | datetime |
-| Match_Details_finding_hunt_id_s | string |
-| Match_Details_finding_intel_id_s | string |
-| Match_Details_finding_last_seen_t | datetime |
-| Match_Details_finding_source_name_s | string |
-| Match_Details_finding_system_info_bits_d | real |
-| Match_Details_finding_system_info_build_number_s | string |
-| Match_Details_finding_system_info_os_s | string |
-| Match_Details_finding_system_info_patch_level_s | string |
-| Match_Details_finding_system_info_platform_s | string |
-| Match_Details_finding_threat_id_s | string |
-| Match_Details_finding_whats_s | string |
-| Match_Details_hash_d | real |
-| Match_Details_match_contexts_s | string |
-| Match_Details_match_hash_d | real |
-| Match_Details_match_properties_args_s | string |
-| Match_Details_match_properties_cwd_s | string |
-| Match_Details_match_properties_file_fullpath_s | string |
-| Match_Details_match_properties_file_md5_g | string |
-| Match_Details_match_properties_file_md5_s | string |
-| Match_Details_match_properties_fullpath_s | string |
-| Match_Details_match_properties_md5_g | string |
-| Match_Details_match_properties_md5_s | string |
-| Match_Details_match_properties_name_s | string |
-| Match_Details_match_properties_parent_args_s | string |
-| Match_Details_match_properties_parent_file_s | string |
-| Match_Details_match_properties_parent_name_s | string |
-| Match_Details_match_properties_parent_parent_s | string |
-| Match_Details_match_properties_parent_pid_d | real |
-| Match_Details_match_properties_parent_ppid_d | real |
-| Match_Details_match_properties_parent_recorder_unique_id_s | string |
-| Match_Details_match_properties_parent_start_time_s | string |
-| Match_Details_match_properties_parent_start_time_t | datetime |
-| Match_Details_match_properties_parent_user_s | string |
-| Match_Details_match_properties_pid_d | real |
-| Match_Details_match_properties_ppid_d | real |
-| Match_Details_match_properties_recorder_unique_id_s | string |
-| Match_Details_match_properties_sha1_s | string |
-| Match_Details_match_properties_sha256_s | string |
-| Match_Details_match_properties_size_d | real |
-| Match_Details_match_properties_start_time_s | string |
-| Match_Details_match_properties_start_time_t | datetime |
-| Match_Details_match_properties_user_s | string |
-| Match_Details_match_source_s | string |
-| Match_Details_match_type_s | string |
-| Match_Details_match_version_d | real |
-| Match_Details_service_id_g | string |
-| MITRE_Techniques_s | string |
-| RawData | string |
-| TimeGenerated | datetime |
-| Timestamp_s | string |
-| Timestamp_t | datetime |
-| Type | string |
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| Alert_Id_g | guid |  |
+| Computer_IP_s | string |  |
+| Computer_Name_s | string |  |
+| EID | string |  |
+| Impact_Score_s | string |  |
+| Intel_Id_d | real |  |
+| Intel_Labels_s | string |  |
+| Intel_Name_s | string |  |
+| Intel_Type_s | string |  |
+| IntelSource | string |  |
+| Link | string |  |
+| Match_Details_config_id_d | real |  |
+| Match_Details_config_rev_id_d | real |  |
+| Match_Details_finding_artifact_artifact_hash_s | string |  |
+| Match_Details_finding_artifact_instance_hash_s | string |  |
+| Match_Details_finding_artifact_windows_defender_event | string |  |
+| Match_Details_finding_description_s | string |  |
+| Match_Details_finding_domain_s | string |  |
+| Match_Details_finding_finding_id_s | string |  |
+| Match_Details_finding_first_seen_t | datetime |  |
+| Match_Details_finding_hunt_id_s | string |  |
+| Match_Details_finding_intel_id_s | string |  |
+| Match_Details_finding_last_seen_t | datetime |  |
+| Match_Details_finding_reporting_id_s | string |  |
+| Match_Details_finding_source_name_s | string |  |
+| Match_Details_finding_system_info_bits_d | real |  |
+| Match_Details_finding_system_info_build_number_s | string |  |
+| Match_Details_finding_system_info_logged_on_user_s | string |  |
+| Match_Details_finding_system_info_os_s | string |  |
+| Match_Details_finding_system_info_patch_level_s | string |  |
+| Match_Details_finding_system_info_platform_s | string |  |
+| Match_Details_finding_threat_id_s | string |  |
+| Match_Details_finding_type_id_s | string |  |
+| Match_Details_finding_whats_s | string |  |
+| Match_Details_intel_id_d | real |  |
+| Match_Details_json | string | The raw json from the match details. |
+| Match_Details_match_contexts_s | string |  |
+| Match_Details_match_hash_s | string |  |
+| Match_Details_match_properties_args_s | string |  |
+| Match_Details_match_properties_file_fullpath_s | string |  |
+| Match_Details_match_properties_file_md5_g | guid |  |
+| Match_Details_match_properties_file_sha1_s | string |  |
+| Match_Details_match_properties_file_sha256_s | string |  |
+| Match_Details_match_properties_file_size_s | string |  |
+| Match_Details_match_properties_name_s | string |  |
+| Match_Details_match_properties_parent_args_s | string |  |
+| Match_Details_match_properties_parent_file_s | string |  |
+| Match_Details_match_properties_parent_name_s | string |  |
+| Match_Details_match_properties_parent_parent_s | string |  |
+| Match_Details_match_properties_parent_pid_d | real |  |
+| Match_Details_match_properties_parent_ppid_d | real |  |
+| Match_Details_match_properties_parent_recorder_table_id_s | string |  |
+| Match_Details_match_properties_parent_recorder_unique_id_s | string |  |
+| Match_Details_match_properties_parent_start_time_t | datetime |  |
+| Match_Details_match_properties_parent_user_s | string |  |
+| Match_Details_match_properties_pid_d | real |  |
+| Match_Details_match_properties_ppid_d | real |  |
+| Match_Details_match_properties_recorder_table_id_s | string |  |
+| Match_Details_match_properties_recorder_unique_id_s | string |  |
+| Match_Details_match_properties_start_time_t | datetime |  |
+| Match_Details_match_properties_user_s | string |  |
+| Match_Details_match_source_s | string |  |
+| Match_Details_match_type_s | string |  |
+| Match_Details_match_version_d | real |  |
+| MatchDets_finding_artifact_WindowsDefenderEvent_timestamp_ms | string |  |
+| MITRE_Techniques_s | string |  |
+| TimeGenerated | datetime | The time at which the data was generated |
+| Timestamp_t | datetime |  |
 
 ## Solutions (1)
 
 This table is used by the following solutions:
 
 - [Tanium](../solutions/tanium.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Tanium's CCF Push Connector](../connectors/taniumconnector.md) |  |
 
 ---
 

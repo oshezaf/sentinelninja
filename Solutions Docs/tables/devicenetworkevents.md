@@ -218,7 +218,7 @@ This table is ingested by the following connectors:
 | [Connection to Rare DNS Hosts](../content/github-only-connection-to-rare-dns-hosts-402b16b9-b41d-477a-9e24-78fc1acdd051-df8eea59.md) |  |
 | [Connectivity Failures by Device](../content/github-only-connectivity-failures-by-device-d2097370-9cfb-4f52-ab1b-8cb07a033d44-b558d71d.md) | `ActionType == "ConnectionFailed"` |
 | [Connectivity Failures by Domain](../content/github-only-connectivity-failures-by-domain-a4f7b0f0-93ad-47c9-bcce-dc08d8d04818-85ff7bc9.md) | `ActionType == "ConnectionFailed"` |
-| [DNSPattern [Nobelium]](../content/github-only-dnspattern-[nobelium]-6c87bdb8-a44e-452a-b782-542640d985e3-79e5127f.md) | `ActionType in "DNS query,DnsQueryResponse"` |
+| [DNSPattern [Nobelium]](../content/github-only-dnspattern-[nobelium]-6c87bdb8-a44e-452a-b782-542640d985e3-79e5127f.md) |  |
 | [Defender for Endpoint Telemetry](../content/github-only-defender-for-endpoint-telemetry-676912f9-0e47-4599-889a-7b90a3542382-0dc352d3.md) |  |
 | [Detect Azure RemoteIP](../content/github-only-detect-azure-remoteip-a883cf6b-52dd-480a-8581-4e5774fc9002-22a2d883.md) |  |
 | [DetectTorrentUse](../content/github-only-detecttorrentuse-4011047d-6a0b-4ef0-bf62-d3eda0784e15-6cbb16d4.md) |  |
@@ -227,7 +227,7 @@ This table is ingested by the following connectors:
 | [Discovering potentially tampered devices [Nobelium]](../content/github-only-discovering-potentially-tampered-devices-[nobelium]-ba850be4-2f02-40fb-834d-d0a9ac0672d3-378fbd79.md) |  |
 | [DofoilNameCoinServerTraffic](../content/github-only-dofoilnamecoinservertraffic-4c62c572-8c8b-4a67-bde3-b94e5f09ce99-a544a38a.md) |  |
 | [Download of New File Using Curl](../content/github-only-download-of-new-file-using-curl-96066361-e101-4c8a-ad37-b0f58d75cd2b-761009fc.md) |  |
-| [EncodedDomainURL [Nobelium]](../content/github-only-encodeddomainurl-[nobelium]-c561bf69-6a6c-4d0a-960a-b69e0e7c8f51-72f5ce64.md) | `ActionType in "DNS query,DnsQueryResponse"` |
+| [EncodedDomainURL [Nobelium]](../content/github-only-encodeddomainurl-[nobelium]-c561bf69-6a6c-4d0a-960a-b69e0e7c8f51-72f5ce64.md) |  |
 | [Excel file download domain pattern](../content/github-only-excel-file-download-domain-pattern-1dd47f50-d42d-4e2f-9c2b-6e6c22147916-ed8cb6fe.md) |  |
 | [File Copy and Execution](../content/github-only-file-copy-and-execution-a27d5cb6-c533-4a81-9d11-d5c0ed257bc7-20375a6a.md) |  |
 | [File footprint (1)](../content/github-only-file-footprint-1-1f80f1cf-97e1-4fb8-ad5a-e573fac7b9e3-599349e2.md) |  |
@@ -360,20 +360,20 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "FileCreated,UsbDriveMounted"`
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 
-| Workbook |
-|:-------------|
-| [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md) |
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md) |  |
 
 **GitHub Only:**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
-| [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) | `ActionType == "FileCreated"` |
-| [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) | `ActionType in "FileCreated,UsbDriveMounted"` |
+| [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) |  |
+| [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `ActionType == "RemoteInteractiveLogon"`<br>`ActionType == "LdapSearch"` |
+| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |
 
 ## Parsers Using This Table (1)
 
@@ -383,22 +383,20 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|
 | [ASimNetworkSessionMicrosoft365Defender](../asim/asimnetworksessionmicrosoft365defender.md) | NetworkSession | M365 Defender for Endpoint |
 
-## Selection Criteria Summary (9 criteria, 20 total references)
+## Selection Criteria Summary (7 criteria, 17 total references)
 
-References by type: 0 connectors, 19 content items, 1 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 16 content items, 1 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `ActionType !has "ConnectionFailed"` | - | 6 | - | - | **6** |
 | `ActionType == "ConnectionSuccess"` | - | 4 | - | - | **4** |
 | `ActionType == "ConnectionFailed"` | - | 2 | 1 | - | **3** |
-| `ActionType in "DNS query,DnsQueryResponse"` | - | 2 | - | - | **2** |
 | `ActionType == "InboundConnectionAccepted"` | - | 1 | - | - | **1** |
 | `ActionType in "ExploitGuardNetworkProtectionBlocked,SmartScreenUrlWarning"` | - | 1 | - | - | **1** |
 | `ActionType == "NetworkSignatureInspected"` | - | 1 | - | - | **1** |
 | `ActionType in "ConnectionFound,ConnectionRequest,ConnectionSuccess,InboundConnectionAccepted,ListeningConnectionCreated"` | - | 1 | - | - | **1** |
-| `ActionType in "FileCreated,UsbDriveMounted"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **19** | **1** | **0** | **20** |
+| **Total** | **0** | **16** | **1** | **0** | **17** |
 
 ### ActionType
 
@@ -408,16 +406,12 @@ References by type: 0 connectors, 19 content items, 1 ASIM parsers, 0 other pars
 | `ConnectionSuccess` | - | 5 | - | - | **5** |
 | `ConnectionFailed` | - | 2 | 1 | - | **3** |
 | `InboundConnectionAccepted` | - | 2 | - | - | **2** |
-| `DNS query` | - | 2 | - | - | **2** |
-| `DnsQueryResponse` | - | 2 | - | - | **2** |
 | `ExploitGuardNetworkProtectionBlocked` | - | 1 | - | - | **1** |
 | `SmartScreenUrlWarning` | - | 1 | - | - | **1** |
 | `NetworkSignatureInspected` | - | 1 | - | - | **1** |
 | `ConnectionFound` | - | 1 | - | - | **1** |
 | `ConnectionRequest` | - | 1 | - | - | **1** |
 | `ListeningConnectionCreated` | - | 1 | - | - | **1** |
-| `FileCreated` | - | 1 | - | - | **1** |
-| `UsbDriveMounted` | - | 1 | - | - | **1** |
 
 ---
 

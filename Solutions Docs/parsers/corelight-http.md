@@ -13,8 +13,8 @@
 | Title | Corelight HTTP Events |
 | Location | Solution |
 | Solution | [Corelight](../solutions/corelight.md) |
-| Version | 1.1.2 |
-| Last Updated | 2025-11-06 |
+| Version | 1.1.3 |
+| Last Updated | 2026-03-19 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Corelight/Parsers/corelight_http.yaml) |

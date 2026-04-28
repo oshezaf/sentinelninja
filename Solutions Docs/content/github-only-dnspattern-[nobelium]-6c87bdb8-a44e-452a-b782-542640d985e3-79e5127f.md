@@ -23,9 +23,9 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ | ✓ |
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `ActionType in "DNS query,DnsQueryResponse"` | ✓ | ✗ | ? |
-| [`IdentityQueryEvents`](../tables/identityqueryevents.md) |  | ✓ | ✗ | ? |
+| [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ | ? |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |  | ✓ | ✗ | ? |
+| [`IdentityQueryEvents`](../tables/identityqueryevents.md) | `ActionType in "DNS query,DnsQueryResponse"` | ✓ | ✗ | ? |
 
 ---
 

@@ -47,7 +47,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.0.2</td>
+<td style="text-align: left;">3.0.3</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -83,12 +83,17 @@
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<p>This solution provides <strong>2 data connector(s)</strong> (plus 1 discovered⚠️):</p>
 <ul>
-<li><a href="../connectors/zeronetworkssegmentauditnativepoller.html">Zero Networks Segment Audit</a></li>
+<li><a href="../connectors/znsegmentauditccpdefinition.html">Zero Networks Segment Audit</a></li>
+<li><a href="../connectors/znsegmentpushccpdefinition.html">Zero Networks Segment (Push)</a></li>
+<li><a href="../connectors/zeronetworkssegmentauditnativepoller.html">Zero Networks Segment Audit</a> ⚠️</li>
 </ul>
+<blockquote>
+<p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
+</blockquote>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>2 table(s)</strong>:</p>
+<p>This solution uses <strong>5 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -99,20 +104,32 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a></td>
-<td><a href="../connectors/zeronetworkssegmentauditnativepoller.html">Zero Networks Segment Audit</a></td>
+<td><a href="../tables/znaudit-cl.html"><code>ZNAudit_CL</code></a></td>
+<td><a href="../connectors/znsegmentpushccpdefinition.html">Zero Networks Segment (Push)</a></td>
 <td>Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
-<td><a href="../tables/znsegmentaudit-cl.html"><code>ZNSegmentAudit_CL</code></a> 🔶</td>
+<td><a href="../tables/znidentityactivity-cl.html"><code>ZNIdentityActivity_CL</code></a></td>
+<td><a href="../connectors/znsegmentpushccpdefinition.html">Zero Networks Segment (Push)</a></td>
 <td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/znnetworkactivity-cl.html"><code>ZNNetworkActivity_CL</code></a></td>
+<td><a href="../connectors/znsegmentpushccpdefinition.html">Zero Networks Segment (Push)</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/znrpcactivity-cl.html"><code>ZNRPCActivity_CL</code></a></td>
+<td><a href="../connectors/znsegmentpushccpdefinition.html">Zero Networks Segment (Push)</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a></td>
+<td><a href="../connectors/znsegmentauditccpdefinition.html">Zero Networks Segment Audit</a>, <a href="../connectors/zeronetworkssegmentauditnativepoller.html">Zero Networks Segment Audit</a></td>
 <td>Analytics, Hunting, Workbooks</td>
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
-</blockquote>
 <h2 id="content-items">Content Items</h2>
 <p>This solution includes <strong>12 content item(s)</strong>:</p>
 <table>
@@ -160,19 +177,19 @@
 <td style="text-align: left;"><a href="../content/zeronetworks-zero-networks-segement-machine-removed-from-protection-a4ce12ca-d01d-460a-b15e-6c74ef328b82-f5e27fd6.html">Zero Networks Segement - Machine Removed from protection</a></td>
 <td style="text-align: left;">High</td>
 <td style="text-align: left;">DefenseEvasion</td>
-<td style="text-align: left;"><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a><br><a href="../tables/znsegmentaudit-cl.html"><code>ZNSegmentAudit_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/znaudit-cl.html"><code>ZNAudit_CL</code></a><br><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/zeronetworks-zero-networks-segment-new-api-token-created-603a6b18-b54a-43b7-bb61-d2b0b47d224a-514e9182.html">Zero Networks Segment - New API Token created</a></td>
 <td style="text-align: left;">Low</td>
 <td style="text-align: left;">CredentialAccess</td>
-<td style="text-align: left;"><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a><br><a href="../tables/znsegmentaudit-cl.html"><code>ZNSegmentAudit_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/znaudit-cl.html"><code>ZNAudit_CL</code></a><br><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/zeronetworks-zero-networks-segment-rare-jit-rule-creation-58688058-68b2-4b39-8009-ac6dc4d81ea1-aa30ba7d.html">Zero Networks Segment - Rare JIT Rule Creation</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">LateralMovement</td>
-<td style="text-align: left;"><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a><br><a href="../tables/znsegmentaudit-cl.html"><code>ZNSegmentAudit_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/znaudit-cl.html"><code>ZNAudit_CL</code></a><br><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -189,22 +206,22 @@
 <tr>
 <td style="text-align: left;"><a href="../content/zeronetworks-zero-networks-segment-excessive-access-by-user-3dd14edf-788d-4f42-868f-28f3208b92a9-bfeac450.html">Zero Networks Segment - Excessive access by user</a></td>
 <td style="text-align: left;">LateralMovement</td>
-<td style="text-align: left;"><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a><br><a href="../tables/znsegmentaudit-cl.html"><code>ZNSegmentAudit_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/znaudit-cl.html"><code>ZNAudit_CL</code></a><br><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/zeronetworks-zero-networks-segment-excessive-access-to-a-built-in-group-by-user-0e68d210-a8ec-4e13-9f46-61011c020b87-cd570e45.html">Zero Networks Segment - Excessive access to a built-in group by user</a></td>
 <td style="text-align: left;">LateralMovement</td>
-<td style="text-align: left;"><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a><br><a href="../tables/znsegmentaudit-cl.html"><code>ZNSegmentAudit_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/znaudit-cl.html"><code>ZNAudit_CL</code></a><br><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/zeronetworks-zero-networks-segment-inbound-block-rules-deleted-fcbbd670-d4e6-4f3a-9008-d8905e84cf79-9d0f02aa.html">Zero Networks Segment - Inbound Block Rules Deleted</a></td>
 <td style="text-align: left;">DefenseEvasion</td>
-<td style="text-align: left;"><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a><br><a href="../tables/znsegmentaudit-cl.html"><code>ZNSegmentAudit_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/znaudit-cl.html"><code>ZNAudit_CL</code></a><br><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/zeronetworks-zero-networks-segment-outbound-block-rules-deleted-d8945c8f-bba4-4e02-ad09-228b067ebcf2-e3e2394a.html">Zero Networks Segment - Outbound Block Rules Deleted</a></td>
 <td style="text-align: left;">DefenseEvasion</td>
-<td style="text-align: left;"><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a><br><a href="../tables/znsegmentaudit-cl.html"><code>ZNSegmentAudit_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/znaudit-cl.html"><code>ZNAudit_CL</code></a><br><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -219,7 +236,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/zeronetworks-znsegmentaudit-0143013d.html">ZNSegmentAudit</a></td>
-<td style="text-align: left;"><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a><br><a href="../tables/znsegmentaudit-cl.html"><code>ZNSegmentAudit_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/znaudit-cl.html"><code>ZNAudit_CL</code></a><br><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -263,7 +280,7 @@
 <tr>
 <td style="text-align: left;"><a href="../parsers/znsegmentaudit.html">ZNSegmentAudit</a></td>
 <td style="text-align: left;">-</td>
-<td style="text-align: left;"><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a> <em>(read)</em><br><a href="../tables/znsegmentaudit-cl.html"><code>ZNSegmentAudit_CL</code></a> <em>(read)</em></td>
+<td style="text-align: left;"><a href="../tables/znaudit-cl.html"><code>ZNAudit_CL</code></a> <em>(read)</em><br><a href="../tables/znsegmentauditnativepoller-cl.html"><code>ZNSegmentAuditNativePoller_CL</code></a> <em>(read)</em></td>
 </tr>
 </tbody>
 </table>
@@ -277,6 +294,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>3.0.3</td>
+<td>29-01-2026</td>
+<td>Updated audit <strong>parser</strong>, created CCP Push &amp; Pull <strong>connectors</strong></td>
+</tr>
 <tr>
 <td>3.0.2</td>
 <td>17-09-2025</td>

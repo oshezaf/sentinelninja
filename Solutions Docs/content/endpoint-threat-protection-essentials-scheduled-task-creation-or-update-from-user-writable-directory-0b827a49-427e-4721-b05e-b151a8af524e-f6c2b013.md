@@ -6,7 +6,7 @@
 
 ---
 
-This query triggers when a scheduled task is created or updated and it is going to run programs from writable user paths. Ref: https://blog.menasec.net/2019/03/threat-hunting-25-scheduled-tasks-for.html
+This query triggers when a scheduled task is created or updated and it is going to run programs from writable user paths.
 
 | Attribute | Value |
 |:----------|:------|
@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4698,4702"` | ✓ | ✓ | ✓ |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4698,4702"` | ✓ | ✓ | ? |
 
 ---
 

@@ -34,16 +34,8 @@
 <td style="text-align: left;">Yes 🔶 — uses type-suffixed column names</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes</td>
-</tr>
-<tr>
 <td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
 <td style="text-align: left;">✓ Yes</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -55,7 +47,7 @@
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
-<h2 id="schema">Schema (31 columns)</h2>
+<h2 id="schema">Schema (32 columns)</h2>
 <p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Cisco_Umbrella_proxy_CL.json">KQL validation test schema</a></p>
 <table id="schema-table">
 <thead>
@@ -167,6 +159,10 @@
 </tr>
 <tr>
 <td style="text-align: left;">Ruleset_ID_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SHA-SHA256_s</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
@@ -378,7 +374,26 @@
 </tr>
 </tbody>
 </table>
-<h2 id="parsers-using-this-table">Parsers Using This Table (1)</h2>
+<h2 id="parsers-using-this-table">Parsers Using This Table (2)</h2>
+<h3 id="asim-parsers">ASIM Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimwebsessionciscoumbrella.html">ASimWebSessionCiscoUmbrella</a></td>
+<td style="text-align: left;">WebSession</td>
+<td style="text-align: left;">Cisco Umbrella</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
 <h3 id="other-parsers">Other Parsers (1)</h3>
 <table>
 <thead>

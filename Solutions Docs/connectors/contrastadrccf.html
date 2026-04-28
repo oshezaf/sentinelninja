@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contrast ADR Push Connector &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="contrast-adr-push-connector">Contrast ADR Push Connector</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ContrastADR.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>ContrastADRCCF</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Contrast Security</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/contrastadr.html">ContrastADR</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/ccf-push.html">CCF Push</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContrastADR/Data%20Connectors/ContrastADRCCF/connectorDefinition.json">connectorDefinition.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Configuration</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContrastADR/Data%20Connectors/ContrastADRCCF/dataConnector.json">dataConnector.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Capabilities</strong></td>
+<td style="text-align: left;"><code>Push</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>CCF Push connectors use DCR-based Log Ingestion API</em></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.contrastsecurity.com/">Contrast Security</a> connector provides the capability to ingest attack events and incidents from Contrast Application Detection and Response (ADR) into Microsoft Sentinel. This connector receives data via webhook push mechanism using OAuth authentication.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/contrastadrattackevents-cl.html"><code>ContrastADRAttackEvents_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/contrastadrincidents-cl.html"><code>ContrastADRIncidents_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions are required.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Microsoft Entra</strong>: Permission to create an app registration in Microsoft Entra ID (if using auto-created app). Typically requires Application Developer role or higher.
+- <strong>Microsoft Azure</strong>: Permission to create and configure Azure resources (DCE, DCR, Tables) and assign RBAC roles. Typically requires Contributor and User Access Administrator roles.
+- <strong>Contrast ADR Webhook Access</strong>: Access to Contrast ADR platform to configure webhook with OAuth authentication settings.</p>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Deploy Connector Resources</strong></p>
+<p>Deploy the required Azure resources for Contrast ADR data ingestion.</p>
+<h4 id="choose-your-deployment-option">Choose Your Deployment Option</h4>
+<p>Select one of the following deployment options based on requirements:</p>
+<hr />
+<h3 id="option-a-auto-create-microsoft-entra-application">Option A: Auto-Create Microsoft Entra Application (Recommended)</h3>
+<p>Clicking <strong>Deploy Contrast ADR CCF Connector</strong> will automatically create:
+- Data Collection Endpoint (DCE)
+- Data Collection Rule (DCR) with streams for attack events and incidents
+- Log Analytics tables (ContrastADRAttackEvents_CL and ContrastADRIncidents_CL)
+- Microsoft Entra Application with OAuth credentials
+- Role assignment (Monitoring Metrics Publisher) on the DCR</p>
+<p><strong>After deployment:</strong> All configuration values (Tenant ID, Client ID, Client Secret, DCE URI, DCR Immutable ID) will be auto-populated below for easy copy-paste into Contrast platform.</p>
+<hr />
+<h3 id="option-b-use-pre-existing-microsoft-entra-application">Option B: Use Pre-Existing Microsoft Entra Application (BYOA)</h3>
+<p>Clicking <strong>Deploy Contrast ADR CCF Connector</strong> will create:
+- Data Collection Endpoint (DCE)
+- Data Collection Rule (DCR) with streams for attack events and incidents
+- Log Analytics tables (ContrastADRAttackEvents_CL and ContrastADRIncidents_CL)
+- Microsoft Entra Application (you can ignore this)</p>
+<p><strong>When to use:</strong> If you have an existing Entra App that you want to reuse for security or compliance reasons.</p>
+<p><strong>Additional steps required:</strong>
+1. After deployment, manually assign your pre-existing Entra App's Service Principal the <strong>Monitoring Metrics Publisher</strong> role on the created DCR
+2. Use your own Entra App's Client ID and Client Secret (ignore the auto-generated ones below)
+3. Use the DCE URI and DCR Immutable ID from below in your Contrast webhook configuration</p>
+<hr />
+<p><strong>Click Deploy to begin:</strong>
+Deploy Contrast ADR CCF Connector</p>
+<p><strong>2. Configure Contrast ADR Webhook</strong></p>
+<p>Copy the following values to configure the Microsoft Sentinel integration in Contrast ADR platform.
+<strong>For Option A (Auto-Created Entra App):</strong> Use all the auto-populated values below.</p>
+<p><strong>For Option B (Pre-Existing Entra App):</strong> Use the DCE URI, DCR Immutable ID, and Stream Names from below, but use your own Entra App's Tenant ID, Client ID, and Client Secret.</p>
+<hr />
+<h4 id="azure-configuration-values">Azure Configuration Values:</h4>
+<ul>
+<li><strong>Tenant ID</strong>: <code>TenantId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Application (Client) ID</strong>: <code>ApplicationId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Client Secret</strong>: <code>ApplicationSecret</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Data Collection Endpoint (DCE) URI</strong>: <code>DataCollectionEndpoint</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Data Collection Rule (DCR) Immutable ID</strong>: <code>DataCollectionRuleId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Attack Events Stream Name</strong>: <code>Custom-ContrastADRAttackEvents</code></li>
+<li><strong>Incidents Stream Name</strong>: <code>Custom-ContrastADRIncidents</code></li>
+</ul>
+<hr />
+<h4 id="configure-in-contrast-adr-platform">Configure in Contrast ADR Platform</h4>
+<ol>
+<li>Log in to your <strong>Contrast ADR platform</strong></li>
+<li>Navigate to <strong>Administration &gt; Integrations &gt; Microsoft Sentinel</strong></li>
+<li>Copy and paste all the configuration values from above:
+   - Tenant ID
+   - Application (Client) ID
+   - Client Secret
+   - Data Collection Endpoint (DCE) URI
+   - Data Collection Rule (DCR) Immutable ID
+   - Attack Events Stream Name
+   - Incidents Stream Name</li>
+<li>Click <strong>Save</strong> to complete the integration</li>
+</ol>
+<p>The Contrast platform will automatically configure the OAuth authentication and data endpoints using these values.</p>
+<p><strong>3. Verify Data Ingestion</strong></p>
+<p>Verify that data is flowing from Contrast ADR to Microsoft Sentinel.</p>
+<h4 id="verification-steps">Verification Steps</h4>
+<ol>
+<li>Trigger a test attack event in Contrast ADR</li>
+<li>Wait 5-10 minutes for data to appear in Microsoft Sentinel</li>
+<li>Run the following query to verify attack events:</li>
+</ol>
+<pre><code class="language-kusto">ContrastADRAttackEvents_CL
+| take 10
+</code></pre>
+<ol start="4">
+<li>Verify incidents data:</li>
+</ol>
+<pre><code class="language-kusto">ContrastADRIncidents_CL
+| take 10
+</code></pre>
+<ol start="5">
+<li>Check for connectivity:</li>
+</ol>
+<pre><code class="language-kusto">ContrastADRAttackEvents_CL
+| summarize LastLogReceived = max(TimeGenerated)
+| project IsConnected = LastLogReceived &gt; ago(7d)
+</code></pre>
+<p>If data appears and IsConnected returns true, your connector is configured correctly!</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+</div>
+
+</body>
+</html>

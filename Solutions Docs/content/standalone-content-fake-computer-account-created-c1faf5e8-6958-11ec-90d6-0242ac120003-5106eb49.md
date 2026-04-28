@@ -6,7 +6,7 @@
 
 ---
 
-This query detects domain user accounts creation (event ID 4720) where the username ends with $.  Accounts that end with $ are normally domain computer accounts and when they are created the event ID 4741 is generated instead. Ref: https://blog.menasec.net/2019/02/threat-hunting-6-hiding-in-plain-sights.html
+This query detects domain user accounts creation (event ID 4720) where the username ends with $.  Accounts that end with $ are normally domain computer accounts and when they are created the event ID 4741 is generated instead.
 
 | Attribute | Value |
 |:----------|:------|
@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "4720"` | ✓ | ✓ | ✓ |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "4720"` | ✓ | ✓ | ? |
 
 ## Associated Connectors
 

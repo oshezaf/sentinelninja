@@ -1,4 +1,6 @@
-# AgileSec Analytics Connector
+# Keyfactor AgileSec
+
+*Solution: AgileSec Analytics Connector*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/AgileSec%20Analytics%20Connector/Workbooks/Images/Logo/infosecglobal.svg" alt="AgileSec Analytics Connector Logo" width="75" height="75">
 
@@ -16,6 +18,7 @@
 | **Categories** | domains |
 | **Version** | 2.0.0 |
 | **Author** | InfoSecGlobal |
+| **Last Updated** | 2026-04-09 |
 | **Solution Folder** | [AgileSec Analytics Connector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AgileSec%20Analytics%20Connector) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/infosecglobal1632846037582.agilesec-analytics-connector) · Popularity: ⚪ Very Low (0%) |
 

@@ -47,7 +47,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">2.0.2</td>
+<td style="text-align: left;">3.1.1</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -59,7 +59,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Last Updated</strong></td>
-<td style="text-align: left;">2026-04-01</td>
+<td style="text-align: left;">2026-04-16</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Solution Folder</strong></td>
@@ -86,14 +86,14 @@
 <h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>2 data connector(s)</strong>:</p>
 <ul>
-<li><a href="../connectors/impervacloudwaflogsccfdefinition.html">Imperva Cloud WAF</a></li>
+<li><a href="../connectors/impervacloudwaflogsccfdefinition.html">Imperva Cloud WAF (via Codeless Connector Framework)</a> 🔶</li>
 <li><a href="../connectors/impervawafcloudapi.html">Imperva Cloud WAF</a> 🔶</li>
 </ul>
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>2 table(s)</strong>:</p>
+<p>This solution uses <strong>3 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -105,12 +105,17 @@
 <tbody>
 <tr>
 <td><a href="../tables/impervawafcloudv2-cl.html"><code>ImpervaWAFCloudV2_CL</code></a></td>
-<td><a href="../connectors/impervawafcloudapi.html">Imperva Cloud WAF</a>, <a href="../connectors/impervacloudwaflogsccfdefinition.html">Imperva Cloud WAF</a></td>
+<td><a href="../connectors/impervawafcloudapi.html">Imperva Cloud WAF</a>, <a href="../connectors/impervacloudwaflogsccfdefinition.html">Imperva Cloud WAF (via Codeless Connector Framework)</a></td>
 <td>-</td>
 </tr>
 <tr>
 <td><a href="../tables/impervawafcloud-cl.html"><code>ImpervaWAFCloud_CL</code></a> 🔶</td>
-<td><a href="../connectors/impervawafcloudapi.html">Imperva Cloud WAF</a></td>
+<td><a href="../connectors/impervawafcloudapi.html">Imperva Cloud WAF</a>, <a href="../connectors/impervacloudwaflogsccfdefinition.html">Imperva Cloud WAF (via Codeless Connector Framework)</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/sentinelimpervawafcloudv2logs.html"><code>SentinelImpervaWAFCloudV2Logs</code></a></td>
+<td><a href="../connectors/impervawafcloudapi.html">Imperva Cloud WAF</a>, <a href="../connectors/impervacloudwaflogsccfdefinition.html">Imperva Cloud WAF (via Codeless Connector Framework)</a></td>
 <td>-</td>
 </tr>
 </tbody>
@@ -309,7 +314,7 @@
 <tr>
 <td style="text-align: left;"><a href="../parsers/impervawafcloud.html">ImpervaWAFCloud</a></td>
 <td style="text-align: left;">-</td>
-<td style="text-align: left;"><a href="../tables/impervawafcloudv2-cl.html"><code>ImpervaWAFCloudV2_CL</code></a> <em>(read)</em><br><a href="../tables/impervawafcloud-cl.html"><code>ImpervaWAFCloud_CL</code></a> <em>(read)</em></td>
+<td style="text-align: left;"><a href="../tables/impervawafcloudv2-cl.html"><code>ImpervaWAFCloudV2_CL</code></a> <em>(read)</em><br><a href="../tables/impervawafcloud-cl.html"><code>ImpervaWAFCloud_CL</code></a> <em>(read)</em><br><a href="../tables/sentinelimpervawafcloudv2logs.html"><code>SentinelImpervaWAFCloudV2Logs</code></a> <em>(read)</em></td>
 </tr>
 </tbody>
 </table>
@@ -323,6 +328,16 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>3.1.1</td>
+<td>10-04-2026</td>
+<td>Add <code>"CsvEscapeMode": "NoEscape"</code> to prevent logs with embedded JSON from being dropped during ingestion</td>
+</tr>
+<tr>
+<td>3.1.0</td>
+<td>30-03-2026</td>
+<td>Promoted the Imperva Cloud WAF CCF connector to Public Preview</td>
+</tr>
 <tr>
 <td>3.0.2</td>
 <td>06-06-2025</td>

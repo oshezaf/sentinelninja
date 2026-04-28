@@ -26,8 +26,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md) 🔶 | ✓ | ✓ | ✓ |
-| [`SailPointIDN_Triggers_CL`](../tables/sailpointidn-triggers-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md) 🔶 | ? | ✓ | ? |
+| [`SailPointIDN_Triggers_CL`](../tables/sailpointidn-triggers-cl.md) 🔶 | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

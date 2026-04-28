@@ -16,7 +16,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://learn.microsoft.com/en-us/entra/global-secure-access/overview-what-is-global-secure-access](https://learn.microsoft.com/en-us/entra/global-secure-access/overview-what-is-global-secure-access) |
 | **Categories** | domains |
-| **Version** | 3.0.1 |
+| **Version** | 3.0.4 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2024-04-08 |
 | **Last Updated** | 2026-03-02 |
@@ -102,6 +102,8 @@ This solution includes **10 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                       |
 |-------------|--------------------------------|------------------------------------------------------------------------------------------|
+| 3.0.4       | 15-04-2026                     | Updated workbooks to support the new Entra traffic type; Fixed regex in **GSA - TI URL Entity** analytic rule for correct URL indicator matching |
+| 3.0.3       | 25-02-2026                     | Modified the query period for the Analytic Rule: [GSA - Detect Abnormal Deny Rate for Source to Destination IP] |
 | 3.0.2       | 04-02-2026                     | Added new **Analytic Rules** |
 | 3.0.1       | 16-09-2025                     | Made an update to the logic of the Abnormal Port-to-Protocol **Analytic Rule** |
 | 3.0.0       | 01-08-2025                     | Updates to the workbook to improve the clarity and consistency of titles for visualizations |

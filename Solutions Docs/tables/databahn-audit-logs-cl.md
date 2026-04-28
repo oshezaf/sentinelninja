@@ -8,9 +8,50 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
+
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+
+## Schema (16 columns)
+
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Databahn%5CData%20Connectors%5CDataBahn_PUSH_CCP/DataBahn_table_databahn_audit_logs.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| action | string |
+| error | string |
+| id | string |
+| isSuccess | bool |
+| message | string |
+| objectId | string |
+| objectName | string |
+| objectType | string |
+| origin | string |
+| path | string |
+| subAction | string |
+| subjectEmail | string |
+| subjectId | string |
+| subjectName | string |
+| tenantId | string |
+| TimeGenerated | datetime |
+
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [Databahn](../solutions/databahn.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [DataBahn](../connectors/databahnpush.md) |  |
 
 ---
 

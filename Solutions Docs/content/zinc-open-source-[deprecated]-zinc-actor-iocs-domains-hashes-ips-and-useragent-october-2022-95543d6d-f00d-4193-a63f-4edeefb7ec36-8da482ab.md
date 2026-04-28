@@ -27,15 +27,15 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | ✗ | ✗ | ✗ |
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ | ✓ |
-| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ | ✓ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | ? | ✗ | ? |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ | ? |
+| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ | ? |
 | [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ | ? |
 | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ | ? |
 | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
-| [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ | ✓ |
-| [`Event`](../tables/event.md) | ✓ | ✓ | ✗ |
-| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ | ✓ |
+| [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ | ? |
+| [`Event`](../tables/event.md) | ✓ | ✓ | ? |
+| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ | ? |
 | [`VMConnection`](../tables/vmconnection.md) | ? | ✗ | ? |
 
 ---

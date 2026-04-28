@@ -27,9 +27,9 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AlertEvidence`](../tables/alertevidence.md) | `ActionType == "BrowserLaunchedToOpenUrl"` | ✓ | ✗ | ✓ |
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) |  | ✓ | ✓ | ✓ |
-| [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ | ✓ |
+| [`AlertEvidence`](../tables/alertevidence.md) | `ActionType == "BrowserLaunchedToOpenUrl"` | ✓ | ✗ | ? |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) |  | ✓ | ✓ | ? |
+| [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ | ? |
 
 ---
 

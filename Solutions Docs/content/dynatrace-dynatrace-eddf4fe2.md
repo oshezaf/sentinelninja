@@ -18,10 +18,14 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md) | ✗ | ✓ | ✗ |
-| [`DynatraceAuditLogs_CL`](../tables/dynatraceauditlogs-cl.md) | ✓ | ✓ | ✓ |
-| [`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md) | ✗ | ✓ | ✗ |
-| [`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) | ✗ | ✓ | ✗ |
+| [`DynatraceAttacksV2_CL`](../tables/dynatraceattacksv2-cl.md) | ? | ✓ | ? |
+| [`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md) | ? | ✓ | ? |
+| [`DynatraceAuditLogsV2_CL`](../tables/dynatraceauditlogsv2-cl.md) | ? | ✓ | ? |
+| [`DynatraceAuditLogs_CL`](../tables/dynatraceauditlogs-cl.md) | ? | ✓ | ? |
+| [`DynatraceProblemsV2_CL`](../tables/dynatraceproblemsv2-cl.md) | ? | ✓ | ? |
+| [`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md) | ? | ✓ | ? |
+| [`DynatraceSecurityProblemsV2_CL`](../tables/dynatracesecurityproblemsv2-cl.md) | ? | ✓ | ? |
+| [`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) | ? | ✓ | ? |
 
 ---
 

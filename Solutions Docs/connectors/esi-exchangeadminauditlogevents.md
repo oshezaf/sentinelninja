@@ -27,11 +27,11 @@ This connector ingests data into the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Event`](../tables/event.md) | `EventLog in "Application,MSExchange Management,System"` | ✓ | ✓ | ✗ |
-| [`ExchangeHttpProxy_CL`](../tables/exchangehttpproxy-cl.md) 🔶 |  | ✓ | ✓ | ✓ |
-| [`MessageTrackingLog_CL`](../tables/messagetrackinglog-cl.md) 🔶 |  | ✓ | ✓ | ✓ |
-| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ✓ |
-| [`W3CIISLog`](../tables/w3ciislog.md) |  | ✓ | ✗ | ✗ |
+| [`Event`](../tables/event.md) | `EventLog in "Application,MSExchange Management,System"` | ✓ | ✓ | ? |
+| [`ExchangeHttpProxy_CL`](../tables/exchangehttpproxy-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`MessageTrackingLog_CL`](../tables/messagetrackinglog-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ? |
+| [`W3CIISLog`](../tables/w3ciislog.md) |  | ✓ | ✗ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

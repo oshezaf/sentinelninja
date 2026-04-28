@@ -9,9 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -87,21 +85,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (1)
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [Talon](../solutions/talon.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [TalonInsights](../content/talon-taloninsights-a46f557d.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [TalonInsights](../content/github-only-taloninsights-c91cfb4a.md) |  |
 
 ---
 

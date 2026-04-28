@@ -59,42 +59,42 @@
 <td style="text-align: left;"></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/awsvpcflow.html"><code>AWSVPCFlow</code></a></td>
 <td style="text-align: left;"></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/alertevidence.html"><code>AlertEvidence</code></a></td>
 <td style="text-align: left;"></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,AzureFirewallThreatIntelLog,NetworkSecurityGroupEvents,Reset user password,Update user"</code><br><code>OperationName contains "PIM"</code></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
-<td style="text-align: left;"><code>OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,AzureFirewallThreatIntelLog,NetworkSecurityGroupEvents,Reset user password,Update user"</code><br><code>OperationName contains "PIM"</code></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">?</td>
 <td style="text-align: center;">✗</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a> 🔶</td>
 <td style="text-align: left;"><code>Category in "ApplicationGatewayFirewallLog,AzureFirewallApplicationRule,AzureFirewallDnsProxy,AzureFirewallNetworkRule,DDoSMitigationReports,FrontdoorWebApplicationFirewallLog,NetworkSecurityGroupEvent,WebApplicationFirewallLogs,kube-audit"</code><br><code>Category contains "SQL"</code><br><code>Resource == "SOC-NS-AG-WAFV2"</code><br><code>ResourceProvider == "MICROSOFT.KEYVAULT"</code><br><code>ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"</code></td>
+<td style="text-align: center;">?</td>
 <td style="text-align: center;">✗</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
@@ -106,16 +106,16 @@
 <tr>
 <td style="text-align: left;"><a href="../tables/carbonblack-alerts-cl.html"><code>CarbonBlack_Alerts_CL</code></a></td>
 <td style="text-align: left;"></td>
-<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
 <td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
 <td style="text-align: left;"></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/deviceregistryevents.html"><code>DeviceRegistryEvents</code></a></td>
@@ -129,14 +129,14 @@
 <td style="text-align: left;"></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/dynamics365activity.html"><code>Dynamics365Activity</code></a></td>
 <td style="text-align: left;"></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
-<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/emailattachmentinfo.html"><code>EmailAttachmentInfo</code></a></td>
@@ -150,7 +150,7 @@
 <td style="text-align: left;"></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/emailurlinfo.html"><code>EmailUrlInfo</code></a></td>
@@ -185,7 +185,7 @@
 <td style="text-align: left;"><code>RecordType == "MicrosoftTeams"</code></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/operation.html"><code>Operation</code></a></td>
@@ -197,16 +197,16 @@
 <tr>
 <td style="text-align: left;"><a href="../tables/qualyshostdetectionv3-cl.html"><code>QualysHostDetectionV3_CL</code></a></td>
 <td style="text-align: left;"></td>
+<td style="text-align: center;">?</td>
 <td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
 <td style="text-align: left;"></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/securitybaseline.html"><code>SecurityBaseline</code></a></td>
@@ -220,14 +220,14 @@
 <td style="text-align: left;"></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
 <td style="text-align: left;"></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/securityrecommendation.html"><code>SecurityRecommendation</code></a></td>
@@ -241,28 +241,28 @@
 <td style="text-align: left;"></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/storagetablelogs.html"><code>StorageTableLogs</code></a></td>
 <td style="text-align: left;"></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
 <td style="text-align: left;"></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a></td>
 <td style="text-align: left;"></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/usage.html"><code>Usage</code></a></td>

@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ADFSSignInLogs`](../tables/adfssigninlogs.md) | ✓ | ✗ | ✓ |
+| [`ADFSSignInLogs`](../tables/adfssigninlogs.md) | ✓ | ✗ | ? |
 
 ---
 

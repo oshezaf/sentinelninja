@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Syslog`](../tables/syslog.md) | `Facility == "cron"`<br>`ProcessName == "crontab"` | ✓ | ✓ | ✓ |
+| [`Syslog`](../tables/syslog.md) | `Facility == "cron"`<br>`ProcessName == "crontab"` | ✓ | ✓ | ? |
 
 ---
 

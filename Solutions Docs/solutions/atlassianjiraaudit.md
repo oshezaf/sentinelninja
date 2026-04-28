@@ -16,7 +16,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 3.0.4 |
+| **Version** | 3.0.6 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-10 |
 | **Last Updated** | 2026-03-26 |
@@ -45,8 +45,8 @@ This solution takes a dependency on the following technologies, and some of thes
 
 This solution provides **2 data connector(s)**:
 
-- [Atlassian Jira Audit](../connectors/jiraauditapi.md) 🔶
-- [Atlassian Jira Audit (using REST API)](../connectors/jiraauditccpdefinition.md)
+- [[DEPRECATED] Atlassian Jira Audit (using Azure Function)](../connectors/jiraauditapi.md) 🔶
+- [Atlassian Jira Audit (via Codeless Connector Framework)](../connectors/jiraauditccpdefinition.md)
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
@@ -57,8 +57,8 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Jira_Audit_CL`](../tables/jira-audit-cl.md) 🔶 | [Atlassian Jira Audit](../connectors/jiraauditapi.md) | Analytics, Hunting, Workbooks |
-| [`Jira_Audit_v2_CL`](../tables/jira-audit-v2-cl.md) | [Atlassian Jira Audit](../connectors/jiraauditapi.md), [Atlassian Jira Audit (using REST API)](../connectors/jiraauditccpdefinition.md) | Analytics, Hunting, Workbooks |
+| [`Jira_Audit_CL`](../tables/jira-audit-cl.md) 🔶 | [[DEPRECATED] Atlassian Jira Audit (using Azure Function)](../connectors/jiraauditapi.md) | Analytics, Hunting, Workbooks |
+| [`Jira_Audit_v2_CL`](../tables/jira-audit-v2-cl.md) | [Atlassian Jira Audit (via Codeless Connector Framework)](../connectors/jiraauditccpdefinition.md), [[DEPRECATED] Atlassian Jira Audit (using Azure Function)](../connectors/jiraauditapi.md) | Analytics, Hunting, Workbooks |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
@@ -133,6 +133,8 @@ This solution includes **29 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                        |
 |-------------|--------------------------------|---------------------------------------------------------------------------|
+| 3.0.6       | 13-04-2026                     | Deprecate Atlassian Jira Audit (using Azure Function)  |
+| 3.0.5       | 18-03-2026                     | Rename to Atlassian Jira Audit (via Codeless Connector Framework) 	       |
 | 3.0.4       | 30-08-2024                     | Updated parameters for CCP **Data Connector**							   |
 | 3.0.3       | 14-08-2024                     | **Data Connector**[Atlassian Jira Audit (using REST API)] Globally Available  |
 | 3.0.2       | 22-05-2024                     | Added new CCP **Data Connector** to the Solution 

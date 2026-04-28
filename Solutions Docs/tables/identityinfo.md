@@ -101,7 +101,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (58)
+## Content Items Using This Table (68)
 
 ### Analytic Rules (18)
 
@@ -163,7 +163,7 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [Suspicious VM Instance Creation Activity Detected](../content/github-only-suspicious-vm-instance-creation-activity-detected-1cc0ba27-c5ca-411a-a779-fbc89e26be83-597f094d.md) |  |
 
-### Hunting Queries (27)
+### Hunting Queries (36)
 
 **In solution [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md):**
 
@@ -213,10 +213,19 @@ This table is used by the following solutions:
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
-| [AI Agents - Orphaned Agents with Disabled Owners](../content/github-only-ai-agents-orphaned-agents-with-disabled-owners-5e0f4a6b-7c8d-9e0f-1a2b-3c4d5e6f7a8b-397fc13b.md) |  |
-| [AI Agents - Sending email to external mailboxes](../content/github-only-ai-agents-sending-email-to-external-mailboxes-0d5e9f1a-2b3c-4d5e-6f7a-8b9c0d1e2f3a-8b830fd1.md) |  |
+| [A365 AI Agents - HTTP Requests to Non-HTTPS Endpoints](../content/github-only-a365-ai-agents-http-requests-to-non-https-endpoints-4f5a6b7c-8d9e-0f1a-2b3c-4d5e6f7a8b9c-9d4340c8.md) |  |
+| [A365 AI Agents - HTTP Requests to Non-standard Ports](../content/github-only-a365-ai-agents-http-requests-to-non-standard-ports-9d0e1f2a-3b4c-5d6e-7f8a-9b0c1d2e3f4a-ac521aee.md) |  |
+| [A365 AI Agents - Hard-coded credentials in Tools or Actions](../content/github-only-a365-ai-agents-hard-coded-credentials-in-tools-or-actions-1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d-0acbbd53.md) |  |
+| [A365 AI Agents - MCP Tool Configured](../content/github-only-a365-ai-agents-mcp-tool-configured-2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f-bac34b9a.md) |  |
+| [A365 AI Agents - Missing Tools in Instructions](../content/github-only-a365-ai-agents-missing-tools-in-instructions-7d8e9f0a-1b2c-3d4e-5f6a-7b8c9d0e1f2a-14b1b82a.md) |  |
+| [A365 AI Agents - Orphaned Agents with Disabled Owners](../content/github-only-a365-ai-agents-orphaned-agents-with-disabled-owners-6e7f8a9b-0c1d-2e3f-4a5b-6c7d8e9f0a1b-069ee2a6.md) |  |
+| [A365 AI Agents - Publicly Shared](../content/github-only-a365-ai-agents-publicly-shared-8c9d0e1f-2a3b-4c5d-6e7f-8a9b0c1d2e3f-f1f42fc4.md) |  |
+| [A365 AI Agents - Published Agents with Short Instructions](../content/github-only-a365-ai-agents-published-agents-with-short-instructions-5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c-3833b204.md) |  |
+| [A365 AI Agents - Published Agents without Instructions](../content/github-only-a365-ai-agents-published-agents-without-instructions-3a4b5c6d-7e8f-9a0b-1c2d-3e4f5a6b7c8d-3cdf25a6.md) |  |
+| [AI Agents - Orphaned Agents with Disabled Owners](../content/github-only-ai-agents-orphaned-agents-with-disabled-owners-5e0f4a6b-7c8d-9e0f-1a2b-3c4d5e6f7a8b-4b3d8cb1.md) |  |
 | [Administrators Authenticating to Another Microsoft Entra ID Tenant](../content/github-only-administrators-authenticating-to-another-microsoft-entra-id-tenant-3a0447c1-7f43-43d0-aeac-d5e1247964a8-2f7868c7.md) |  |
 | [Anomolous Sign Ins Based on Time](../content/github-only-anomolous-sign-ins-based-on-time-8ed5b8f1-a43a-49dc-847c-e44d7a590c17-7db3ce6c.md) |  |
+| [Copilot Studio AI Agents - Sending email to external mailboxes](../content/github-only-copilot-studio-ai-agents-sending-email-to-external-mailboxes-0d5e9f1a-2b3c-4d5e-6f7a-8b9c0d1e2f3a-c7f37367.md) |  |
 | [Critical user management operations followed by disabling of System Restore from admin account](../content/github-only-critical-user-management-operations-followed-by-disabling-of-system-restore-from-admin-accou-dcc15282-2bcb-496e-84db-3c90d0dc0a0c-dedc200e.md) |  |
 | [LocalAdminGroupChanges](../content/github-only-localadmingroupchanges-dd2c4f48-b732-4a75-b2c4-b44bacc66d00-632cb4a0.md) |  |
 | [Non_intended_user_logon](../content/github-only-non-intended-user-logon-ef645ae9-da22-4ebe-b2ad-c3ad024b807c-7d6ee057.md) |  |
@@ -227,7 +236,7 @@ This table is used by the following solutions:
 | [User not covered under display name impersonation](../content/github-only-user-not-covered-under-display-name-impersonation-e90345b3-439c-44e1-a85d-8ae84ad9c65b-492381f4.md) |  |
 | [devices_with_vuln_and_users_received_payload](../content/github-only-devices-with-vuln-and-users-received-payload-fbcb7ff3-0d5a-4565-9caa-fc454138081f-1adec9cd.md) |  |
 
-### Workbooks (13)
+### Workbooks (14)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 
@@ -285,6 +294,7 @@ This table is used by the following solutions:
 | [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [User_Analytics_Workbook](../content/github-only-user-analytics-workbook-b95f3e5a.md) |  |
+| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) |  |
 | [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ---

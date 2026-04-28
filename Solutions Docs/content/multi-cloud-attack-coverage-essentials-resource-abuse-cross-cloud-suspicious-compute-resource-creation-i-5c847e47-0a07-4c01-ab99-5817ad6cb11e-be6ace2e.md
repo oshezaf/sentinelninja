@@ -26,8 +26,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AWSGuardDuty`](../tables/awsguardduty.md) | ✓ | ✓ | ✓ |
-| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | ✓ | ✓ | ✓ |
+| [`AWSGuardDuty`](../tables/awsguardduty.md) | ✓ | ✓ | ? |
+| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | ✓ | ✓ | ? |
 
 ---
 

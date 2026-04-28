@@ -47,7 +47,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.1.2</td>
+<td style="text-align: left;">3.1.6</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -86,9 +86,9 @@
 <h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>2 data connector(s)</strong> (plus 2 discovered⚠️):</p>
 <ul>
-<li><a href="../connectors/oktasso.html">Okta Single Sign-On</a> 🔶</li>
+<li><a href="../connectors/oktasso.html">[DEPRECATED] Okta Single Sign-On (using Azure Function)</a> 🔶</li>
 <li><a href="../connectors/oktasso-polling.html">Okta Single Sign-On (Polling CCP)</a> ⚠️</li>
-<li><a href="../connectors/oktassov2.html">Okta Single Sign-On</a> 🔶</li>
+<li><a href="../connectors/oktassov2.html">Okta Single Sign-On (via Codeless Connector Framework)</a> 🔶</li>
 <li><a href="../connectors/oktasinglesignon-usingazurefunctions.html">Okta Single Sign-On (using Azure Functions)</a> ⚠️ 🔶</li>
 </ul>
 <blockquote>
@@ -113,12 +113,12 @@
 </tr>
 <tr>
 <td><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a></td>
-<td><a href="../connectors/oktassov2.html">Okta Single Sign-On</a>, <a href="../connectors/oktasinglesignon-usingazurefunctions.html">Okta Single Sign-On (using Azure Functions)</a></td>
+<td><a href="../connectors/oktasinglesignon-usingazurefunctions.html">Okta Single Sign-On (using Azure Functions)</a>, <a href="../connectors/oktassov2.html">Okta Single Sign-On (via Codeless Connector Framework)</a></td>
 <td>Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
 <td><a href="../tables/okta-cl.html"><code>Okta_CL</code></a> 🔶</td>
-<td><a href="../connectors/oktasso.html">Okta Single Sign-On</a>, <a href="../connectors/oktassov2.html">Okta Single Sign-On</a>, <a href="../connectors/oktasinglesignon-usingazurefunctions.html">Okta Single Sign-On (using Azure Functions)</a></td>
+<td><a href="../connectors/oktasinglesignon-usingazurefunctions.html">Okta Single Sign-On (using Azure Functions)</a>, <a href="../connectors/oktassov2.html">Okta Single Sign-On (via Codeless Connector Framework)</a>, <a href="../connectors/oktasso.html">[DEPRECATED] Okta Single Sign-On (using Azure Function)</a></td>
 <td>Analytics, Hunting, Workbooks</td>
 </tr>
 </tbody>
@@ -356,6 +356,16 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>3.1.6</td>
+<td>14-04-2026</td>
+<td>Deprecate Okta Single Sign-On (using Azure Function)</td>
+</tr>
+<tr>
+<td>3.1.5</td>
+<td>02-04-2026</td>
+<td>Rename CCF solution to Okta Single Sign-On (via Codeless Connector Framework).<br> Add SessionId variable and reference in template.</td>
+</tr>
 <tr>
 <td>3.1.4</td>
 <td>13-01-2026</td>

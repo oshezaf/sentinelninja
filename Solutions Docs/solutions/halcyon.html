@@ -47,11 +47,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.0.0</td>
+<td style="text-align: left;">3.1.0</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
-<td style="text-align: left;">Halcyon</td>
+<td style="text-align: left;">Halcyon - support@halcyon.ai</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>First Published</strong></td>
@@ -59,7 +59,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Last Updated</strong></td>
-<td style="text-align: left;">2026-01-22</td>
+<td style="text-align: left;">2026-03-24</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Solution Folder</strong></td>
@@ -72,19 +72,19 @@
 </tbody>
 </table>
 <p>The <a href="https://www.halcyon.ai">Halcyon</a> solution for Microsoft Sentinel enables you to ingest Halcyon Events and Alerts into Microsoft Sentinel using the Microsoft Sentinel Analytics Workspace.</p>
-<h2 id="contents">Contents</h2>
-<ul>
-<li><a href="#data-connectors">Data Connectors</a></li>
-<li><a href="#tables-used">Tables Used</a></li>
-<li><a href="#content-items">Content Items</a></li>
-</ul>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following Microsoft technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional data ingestion or operational costs:</p>
+<p>a. <a href="https://learn.microsoft.com/azure/sentinel/">Microsoft Sentinel</a></p>
+<p>b. <a href="https://learn.microsoft.com/azure/azure-monitor/essentials/data-collection-rule-overview">Azure Monitor Data Collection Rules (DCR)</a></p>
+<p>c. <a href="https://learn.microsoft.com/azure/azure-monitor/essentials/data-collection-endpoint-overview">Azure Monitor Data Collection Endpoints (DCE)</a></p>
+<p>d. <a href="https://learn.microsoft.com/azure/azure-monitor/logs/log-analytics-workspace-overview">Azure Log Analytics workspaces</a></p>
 <h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/halcyonpush.html">Halcyon Connector</a></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>5 table(s)</strong>:</p>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -95,82 +95,9 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../tables/halcyonauthenticationevents-cl.html"><code>HalcyonAuthenticationEvents_CL</code></a></td>
+<td><a href="../tables/halcyonevents-cl.html"><code>HalcyonEvents_CL</code></a></td>
 <td><a href="../connectors/halcyonpush.html">Halcyon Connector</a></td>
 <td>-</td>
-</tr>
-<tr>
-<td><a href="../tables/halcyondnsactivity-cl.html"><code>HalcyonDnsActivity_CL</code></a></td>
-<td><a href="../connectors/halcyonpush.html">Halcyon Connector</a></td>
-<td>-</td>
-</tr>
-<tr>
-<td><a href="../tables/halcyonfileactivity-cl.html"><code>HalcyonFileActivity_CL</code></a></td>
-<td><a href="../connectors/halcyonpush.html">Halcyon Connector</a></td>
-<td>-</td>
-</tr>
-<tr>
-<td><a href="../tables/halcyonnetworksession-cl.html"><code>HalcyonNetworkSession_CL</code></a></td>
-<td><a href="../connectors/halcyonpush.html">Halcyon Connector</a></td>
-<td>-</td>
-</tr>
-<tr>
-<td><a href="../tables/halcyonprocessevent-cl.html"><code>HalcyonProcessEvent_CL</code></a></td>
-<td><a href="../connectors/halcyonpush.html">Halcyon Connector</a></td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
-<h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>5 content item(s)</strong>:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Content Type</th>
-<th style="text-align: left;">Count</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">Parsers</td>
-<td style="text-align: left;">5</td>
-</tr>
-</tbody>
-</table>
-<h3 id="parsers">Parsers</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: left;">Description</th>
-<th style="text-align: left;">Tables Used</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../parsers/asimauthenticationhalcyon.html">ASimAuthenticationHalcyon</a></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;"><a href="../tables/halcyonauthenticationevents-cl.html"><code>HalcyonAuthenticationEvents_CL</code></a> <em>(read)</em></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../parsers/asimdnshalcyon.html">ASimDnsHalcyon</a></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;"><a href="../tables/halcyondnsactivity-cl.html"><code>HalcyonDnsActivity_CL</code></a> <em>(read)</em></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../parsers/asimfileeventhalcyon.html">ASimFileEventHalcyon</a></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;"><a href="../tables/halcyonfileactivity-cl.html"><code>HalcyonFileActivity_CL</code></a> <em>(read)</em></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../parsers/asimnetworksessionhalcyon.html">ASimNetworkSessionHalcyon</a></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;"><a href="../tables/halcyonnetworksession-cl.html"><code>HalcyonNetworkSession_CL</code></a> <em>(read)</em></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../parsers/asimprocesseventhalcyon.html">ASimProcessEventHalcyon</a></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;"><a href="../tables/halcyonprocessevent-cl.html"><code>HalcyonProcessEvent_CL</code></a> <em>(read)</em></td>
 </tr>
 </tbody>
 </table>
@@ -185,8 +112,13 @@
 </thead>
 <tbody>
 <tr>
+<td>3.1.0</td>
+<td>24-03-2026</td>
+<td>Update Connector to receive events with OCSF schemas</td>
+</tr>
+<tr>
 <td>3.0.0</td>
-<td>12-09-2025</td>
+<td>09-12-2025</td>
 <td>Initial Solution release</td>
 </tr>
 </tbody>

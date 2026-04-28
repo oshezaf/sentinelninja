@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semperis Lightning Logs &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="semperis-lightning-logs">Semperis Lightning Logs</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/SemperisLightning/Data%20Connectors/Logos/semperis.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>SemperisLightningLogsAzureFunctions</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Semperis</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/semperislightning.html">SemperisLightning</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SemperisLightning/Data%20Connectors/SemperisLightningLogs/SemperisLightningLogs_AzureFunction.json">SemperisLightningLogs_AzureFunction.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>Azure Function code uses LogsIngestionClient/Log Ingestion API</em></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.semperis.com/platform/">Semperis Lightning</a> connector uses Azure Functions to ingest Semperis Lightning identity security data into Microsoft Sentinel. The connector deploys an Azure Function and collects data into custom Log Analytics tables for investigation and threat hunting.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/lightningattackpathlinks-cl.html"><code>LightningAttackPathLinks_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/lightningattackpaths-cl.html"><code>LightningAttackPaths_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/lightningioeresults-cl.html"><code>LightningIOEResults_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/lightningioesmetadata-cl.html"><code>LightningIOEsMetadata_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/lightningindicatorexecutions-cl.html"><code>LightningIndicatorExecutions_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/lightningtier0attackers-cl.html"><code>LightningTier0Attackers_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/lightningtier0nodes-cl.html"><code>LightningTier0Nodes_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
+- <strong>Semperis Lightning API credentials</strong>: A Semperis Lightning <strong>API Key</strong> and selected <strong>Zone</strong> (na or eu) are required to authenticate the connector to Semperis Lightning.</p>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+<p><strong>NOTE:</strong> This connector uses Azure Functions to connect to Semperis Lightning and pull data into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
+<p><strong>(Optional Step)</strong> Securely store workspace and API authorization key(s) in Azure Key Vault. Azure Key Vault provides a secure mechanism to store and retrieve key values. <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Follow these instructions</a> to use Azure Key Vault with an Azure Function App.</p>
+<p>Ensure the workspace is added to Microsoft Sentinel before deploying the connector.</p>
+</blockquote>
+<p><strong>1. STEP 1 - Configure access for Semperis Lightning</strong></p>
+<ol>
+<li>Sign in to your Semperis Lightning tenant.</li>
+<li>Create or retrieve a valid <strong>Semperis API Key</strong> for connector access.</li>
+<li>Confirm your <strong>Semperis Zone</strong> value (<strong>na</strong> for North America or <strong>eu</strong> for Europe) for use during deployment.</li>
+</ol>
+<p><strong>2. STEP 2 - Deploy the 'Semperis Lightning Logs' connector and the associated Azure Function</strong></p>
+<ol>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below.</p>
+<p><a href="https://aka.ms/sentinel-semperis-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
+</li>
+</ol>
+<p><strong>3. STEP 3 - Set the connector parameters</strong></p>
+<ol>
+<li>Select the preferred <strong>Subscription</strong> and an existing <strong>Resource Group</strong>.</li>
+<li>Enter an existing <strong>Log Analytics Workspace Resource ID</strong> belonging to the resource group.</li>
+<li>Click <strong>Next</strong>.</li>
+<li>Enter your <strong>Semperis API Key</strong> and select the <strong>Semperis Zone</strong>.</li>
+<li>Optionally adjust the <strong>Connector Schedule</strong> (default: every 1 hour).</li>
+<li>Review the settings and click <strong>Create</strong>.</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+</div>
+
+</body>
+</html>

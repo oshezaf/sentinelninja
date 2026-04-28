@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CensysHostServicesCL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="censys_host_services_cl">Censys_Host_Services_CL</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1</strong></td>
+<td style="text-align: left;">Yes 🔶 — uses type-suffixed column names</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#content-items-using-this-table">Content Items</a></li>
+</ul>
+<h2 id="schema">Schema (260 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Censys_Host_Services_CL.json">KQL validation test schema</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">amqp_protocol_id_name_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">amqp_version_minor_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">amqp_version_revision_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">banner_hash_sha256_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">banner_hex_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">banner_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_added_at_t</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_ct_entries_cloudflare_nimbus_2026_added_to_ct_at_t</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_ct_entries_cloudflare_nimbus_2026_ct_to_censys_at_t</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_ct_entries_cloudflare_nimbus_2026_index_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_ct_entries_google_argon_2026_h1_added_to_ct_at_t</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_ct_entries_google_argon_2026_h1_ct_to_censys_at_t</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_ct_entries_google_argon_2026_h1_index_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_ct_entries_google_xenon_2026_h1_added_to_ct_at_t</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_ct_entries_google_xenon_2026_h1_ct_to_censys_at_t</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_ct_entries_google_xenon_2026_h1_index_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_ct_entries_sectigo_elephant_2026_h1_added_to_ct_at_t</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_ct_entries_sectigo_elephant_2026_h1_ct_to_censys_at_t</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_ct_entries_sectigo_elephant_2026_h1_index_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_ct_entries_sectigo_tiger_2026_h1_added_to_ct_at_t</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_ct_entries_sectigo_tiger_2026_h1_ct_to_censys_at_t</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_ct_entries_sectigo_tiger_2026_h1_index_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_ct_entries_trustasia_log_2026_a_added_to_ct_at_t</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_ct_entries_trustasia_log_2026_a_ct_to_censys_at_t</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_ct_entries_trustasia_log_2026_a_index_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_ct_entries_trustasia_log_2026_b_added_to_ct_at_t</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_ct_entries_trustasia_log_2026_b_ct_to_censys_at_t</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_ct_entries_trustasia_log_2026_b_index_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_ever_seen_in_scan_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_fingerprint_md5_g</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_fingerprint_sha1_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_fingerprint_sha256_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_modified_at_t</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_names_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parent_spki_fingerprint_sha256_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parent_spki_subject_fingerprint_sha256_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parse_status_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_extensions_authority_info_access_issuer_urls_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_extensions_authority_key_id_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_extensions_certificate_policies_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_extensions_crl_distribution_points_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_extensions_extended_key_usage_client_auth_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_extensions_extended_key_usage_server_auth_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_extensions_key_usage_digital_signature_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_extensions_key_usage_value_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_extensions_signed_certificate_timestamps_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_extensions_subject_alt_name_dns_names_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_extensions_subject_key_id_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_issuer_common_name_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_issuer_country_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_issuer_dn_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_issuer_locality_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_issuer_organization_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_issuer_organizational_unit_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_issuer_province_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_ja4x_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_serial_number_hex_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_serial_number_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_signature_self_signed_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_signature_signature_algorithm_name_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_signature_signature_algorithm_oid_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_signature_valid_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_signature_value_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_subject_common_name_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_subject_country_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_subject_dn_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_subject_key_info_ecdsa_b_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_subject_key_info_ecdsa_curve_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_subject_key_info_ecdsa_gx_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_subject_key_info_ecdsa_gy_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_subject_key_info_ecdsa_length_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_subject_key_info_ecdsa_n_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_subject_key_info_ecdsa_p_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_subject_key_info_ecdsa_pub_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_subject_key_info_ecdsa_x_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_subject_key_info_ecdsa_y_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_subject_key_info_fingerprint_sha256_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_subject_key_info_key_algorithm_name_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_subject_key_info_key_algorithm_oid_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_subject_key_info_rsa_exponent_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_subject_key_info_rsa_length_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_subject_key_info_rsa_modulus_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_subject_locality_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_subject_organization_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_subject_organizational_unit_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_subject_province_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_validity_period_length_seconds_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_validity_period_not_after_t</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_validity_period_not_before_t</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_parsed_version_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_revocation_crl_reason_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_spki_fingerprint_sha256_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_spki_subject_fingerprint_sha256_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_tbs_fingerprint_sha256_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_tbs_no_ct_fingerprint_sha256_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validated_at_t</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_apple_chains_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_apple_ever_valid_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_apple_had_trusted_path_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_apple_has_trusted_path_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_apple_is_valid_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_apple_parents_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_apple_type_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_chrome_chains_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_chrome_ever_valid_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_chrome_had_trusted_path_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_chrome_has_trusted_path_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_chrome_is_valid_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_chrome_parents_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_chrome_type_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_level_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_microsoft_chains_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_microsoft_ever_valid_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_microsoft_had_trusted_path_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_microsoft_has_trusted_path_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_microsoft_is_valid_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_microsoft_parents_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_microsoft_type_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_nss_chains_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_nss_ever_valid_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_nss_had_trusted_path_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_nss_has_trusted_path_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_nss_is_valid_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_nss_parents_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_validation_nss_type_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_zlint_errors_present_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_zlint_failed_lints_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_zlint_notices_present_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_zlint_timestamp_t</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_zlint_version_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">cert_zlint_warnings_present_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Computer</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">endpoints_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">epmd_names_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ftp_auth_ssl_response_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ftp_auth_tls_response_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ftp_status_code_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">ftp_status_meaning_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ip_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ja4tscan_fingerprint_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ja4tscan_scan_time_t</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">jarm_cipher_and_version_fingerprint_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">jarm_fingerprint_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">jarm_ip_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">jarm_is_success_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">jarm_port_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">jarm_scan_time_t</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">jarm_tls_extensions_sha256_g</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">jarm_transport_protocol_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">labels_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ManagementGroupName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">MG</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mongodb_is_master_is_master_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mongodb_is_master_logical_session_timeout_minutes_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">mongodb_is_master_max_bson_object_size_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">mongodb_is_master_max_message_size_bytes_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">mongodb_is_master_max_wire_version_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">mongodb_is_master_max_write_batch_size_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_auth_plugin_data_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_auth_plugin_name_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_capability_flags_CLIENT_CAN_HANDLE_EXPIRED_PASSWORDS_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_capability_flags_CLIENT_COMPRESS_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_capability_flags_CLIENT_CONNECT_ATTRS_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_capability_flags_CLIENT_CONNECT_WITH_DB_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_capability_flags_CLIENT_DEPRECATED_EOF_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_capability_flags_CLIENT_FOUND_ROWS_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_capability_flags_CLIENT_IGNORE_SIGPIPE_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_capability_flags_CLIENT_IGNORE_SPACE_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_capability_flags_CLIENT_INTERACTIVE_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_capability_flags_CLIENT_LOCAL_FILES_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_capability_flags_CLIENT_LONG_FLAG_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_capability_flags_CLIENT_LONG_PASSWORD_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_capability_flags_CLIENT_MULTI_RESULTS_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_capability_flags_CLIENT_MULTI_STATEMENTS_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_capability_flags_CLIENT_NO_SCHEMA_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_capability_flags_CLIENT_ODBC_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_capability_flags_CLIENT_PLUGIN_AUTH_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_capability_flags_CLIENT_PLUGIN_AUTH_LEN_ENC_CLIENT_DATA_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_capability_flags_CLIENT_PROTOCOL_41_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_capability_flags_CLIENT_PS_MULTI_RESULTS_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_capability_flags_CLIENT_RESERVED_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_capability_flags_CLIENT_SECURE_CONNECTION_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_capability_flags_CLIENT_SESSION_TRACK_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_capability_flags_CLIENT_SSL_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_capability_flags_CLIENT_TRANSACTIONS_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_character_set_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_connection_id_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_error_code_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_error_id_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_error_message_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_protocol_version_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_server_version_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">mysql_status_flags_SERVER_STATUS_AUTOCOMMIT_b</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">operating_systems_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">port_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">postgres_protocol_error_code_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">postgres_protocol_error_file_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">postgres_protocol_error_line_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">postgres_protocol_error_message_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">postgres_protocol_error_routine_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">postgres_protocol_error_severity_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">postgres_protocol_error_severity_v_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">postgres_startup_error_code_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">postgres_startup_error_file_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">postgres_startup_error_line_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">postgres_startup_error_message_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">postgres_startup_error_routine_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">postgres_startup_error_severity_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">postgres_startup_error_severity_v_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">postgres_supported_versions_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">protocol_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">RawData</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">scan_time_t</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">screenshots_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">software_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_algorithm_selection_client_to_server_alg_group_cipher_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_algorithm_selection_client_to_server_alg_group_compression_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_algorithm_selection_client_to_server_alg_group_mac_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_algorithm_selection_host_key_algorithm_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_algorithm_selection_kex_algorithm_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_algorithm_selection_server_to_client_alg_group_cipher_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_algorithm_selection_server_to_client_alg_group_compression_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_algorithm_selection_server_to_client_alg_group_mac_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_endpoint_id_comment_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_endpoint_id_protocol_version_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_endpoint_id_raw_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_endpoint_id_software_version_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_hassh_fingerprint_g</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_kex_init_message_client_to_server_ciphers_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_kex_init_message_client_to_server_compression_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_kex_init_message_client_to_server_macs_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_kex_init_message_host_key_algorithms_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_kex_init_message_kex_algorithms_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_kex_init_message_server_to_client_ciphers_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_kex_init_message_server_to_client_compression_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_kex_init_message_server_to_client_macs_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_server_host_key_ecdsa_public_key_b_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_server_host_key_ecdsa_public_key_curve_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_server_host_key_ecdsa_public_key_gx_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_server_host_key_ecdsa_public_key_gy_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_server_host_key_ecdsa_public_key_length_d</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_server_host_key_ecdsa_public_key_n_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_server_host_key_ecdsa_public_key_p_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_server_host_key_ecdsa_public_key_x_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_server_host_key_ecdsa_public_key_y_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ssh_server_host_key_fingerprint_sha256_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">threats_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">tls_cipher_selected_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">tls_fingerprint_sha256_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">tls_ja3s_g</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">tls_ja4s_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">tls_presented_chain_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">tls_version_selected_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">tls_versions_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">transport_protocol_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">vulns_s</td>
+<td style="text-align: left;">string</td>
+</tr>
+</tbody>
+</table>
+<h2 id="solutions">Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/censys.html">Censys</a></li>
+</ul>
+<hr />
+<h2 id="content-items-using-this-table">Content Items Using This Table (1)</h2>
+<h3 id="workbooks">Workbooks (1)</h3>
+<p><strong>In solution <a href="../solutions/censys.html">Censys</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Workbook</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-21c23ffd.html">Censys</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

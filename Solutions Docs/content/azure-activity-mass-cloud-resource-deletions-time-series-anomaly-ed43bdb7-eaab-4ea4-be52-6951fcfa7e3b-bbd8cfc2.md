@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ | ✗ |
+| [`AzureActivity`](../tables/azureactivity.md) | ? | ✗ | ? |
 
 ---
 

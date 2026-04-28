@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Event`](../tables/event.md) | `EventID in "18,3"`<br>`Source == "Microsoft-Windows-Sysmon"` | ✓ | ✓ | ✗ |
+| [`Event`](../tables/event.md) | `EventID in "18,3"`<br>`Source == "Microsoft-Windows-Sysmon"` | ✓ | ✓ | ? |
 
 ---
 

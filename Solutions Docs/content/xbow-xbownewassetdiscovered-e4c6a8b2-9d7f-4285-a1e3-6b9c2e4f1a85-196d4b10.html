@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XbowNewAssetDiscovered &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="xbownewassetdiscovered">XbowNewAssetDiscovered</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<hr />
+<p>Alerts when a new asset is registered in XBOW for the first time. This is detected by matching assets whose CreatedAt timestamp falls within the current query window, indicating the asset was newly added rather than updated. This helps track shadow IT, new deployments, and any unexpected expansion of the external attack surface.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Analytic Rule</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/xbow.html">XBOW</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ID</strong></td>
+<td style="text-align: left;"><code>e4c6a8b2-9d7f-4285-a1e3-6b9c2e4f1a85</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Severity</strong></td>
+<td style="text-align: left;">Medium</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Status</strong></td>
+<td style="text-align: left;">Available</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Kind</strong></td>
+<td style="text-align: left;">Scheduled</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Tactics</strong></td>
+<td style="text-align: left;">Reconnaissance, Discovery</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Techniques</strong></td>
+<td style="text-align: left;">T1595</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Required Connectors</strong></td>
+<td style="text-align: left;"><a href="../connectors/xbowsecurityconnector.html">XbowSecurityConnector</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/XBOW/Analytic%20Rules/XbowNewAssetDiscovered.yaml">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="tables-used">Tables Used</h2>
+<p>This content item queries data from the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/xbowassets-cl.html"><code>XbowAssets_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="analytic-rules.html">Back to Analytic Rules</a> · <a href="../solutions/xbow.html">Back to XBOW</a></p>
+</div>
+
+</body>
+</html>

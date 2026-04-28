@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CyberArk Audit &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="cyberark-audit">CyberArk Audit</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CyberArk_Logo.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>CyberArkAuditCCPDefinition</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/cyberarkaudit.html">CyberArkAudit</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/ccf.html">CCF</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkAudit/Data%20Connectors/CyberArkAudit_CCP/CyberArkAudit_DataConnectorDefinition.json">CyberArkAudit_DataConnectorDefinition.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Configuration</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkAudit/Data%20Connectors/CyberArkAudit_CCP/CyberArkAudit_PollingConfig.json">CyberArkAudit_PollingConfig.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Capabilities</strong></td>
+<td style="text-align: left;"><code>OAuth2</code>, <code>POST</code>, <code>Nested</code></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://docs.cyberark.com/Audit/Latest/en/Content/Resources/_TopNav/cc_Home.htm">CyberArk Audit</a> data connector enables Microsoft Sentinel to ingest security event logs and other events from the CyberArk Audit service via REST API. This integration helps you detect potential security risks, monitor user activity, analyze collaboration patterns, troubleshoot configuration issues, and gain deeper insights into your environment.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/cyberark-auditevents-cl.html"><code>CyberArk_AuditEvents_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): Read and Write permissions are required.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>CyberArk Audit Service Platform</strong>: Access to perform required configurations in CyberArk Audit platform</p>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Connect to CyberArk Audit API to start collecting event logs in Microsoft Sentinel</strong></p>
+<p>Follow the steps below to integrate Microsoft Sentinel with CyberArk Audit and enable centralized monitoring of system and user activities within Microsoft Sentinel. You can also refer to the <a href="https://docs.cyberark.com/admin-space/latest/en/content/siem-integration/siem-export-ms-sentinel.htm?tocpath=Integrations%7CExport%20Audit%20activities%20to%20a%20SIEM%20application%7C_____2#CreateandconfigureaSIEMintegration">CyberArk Audit documentation</a> and follow till Step 5.</p>
+<h1 id="step1-create-new-siem-integration">Step1: Create new SIEM integration</h1>
+<ol>
+<li>On CyberArk portal, go to <code>Administration</code>.</li>
+<li>Select <code>My environment</code> &gt; <code>Integrations</code> &gt; <code>Export to SIEM</code>.</li>
+<li>In the SIEM integrations page, select <code>Create</code> &gt; <code>Create SIEM integration</code></li>
+<li>In the <code>Create a SIEM integration</code> page, select the <code>Identity Administration</code> link to create an OAuth server web in Identity Administration.</li>
+</ol>
+<h1 id="step-2-create-an-oauth2-server-web-app-in-identity-administration">Step 2: Create an OAuth2 server web app in Identity Administration</h1>
+<ol>
+<li>On <code>Identity Administration</code> page, from the left menu select <code>Apps &amp; Widgets</code> &gt; <code>Web Apps</code></li>
+<li>Select <code>Add Web Apps</code> and create an <code>OAuth2 server</code> type web app from the <code>Custom</code> tab.</li>
+<li>Enter <code>CyberArkAuditforMicrosoftSentinel</code> in the <code>ApplicationID</code> and <code>Name</code> fields.</li>
+<li>In the <code>Tokens</code> tab, ensure that the value in the <code>Token Type</code> field is <code>jwtR256</code> and only the <code>Client Creds</code> authorization method is selected.</li>
+<li>Click <code>Add</code> in the <code>Scope</code> tab and enter <code>isp.audit.events:read</code>.</li>
+<li>In the <code>Advanced</code> tab, copy and paste the following script and then click Save.</li>
+</ol>
+<pre><code class="language-javascript">        setClaim('tenant_id', TenantData.Get(&quot;CybrTenantID&quot;));
+        setClaim('aud', 'cyberark.isp.audit');
+</code></pre>
+<ol start="7">
+<li>Click <code>Save</code>.</li>
+</ol>
+<h1 id="step-3-create-a-service-user-in-identity-administration">Step 3: Create a service user in Identity Administration</h1>
+<ol>
+<li>Go to the <code>Core Services</code> &gt; <code>Users</code>, select <code>Add User</code>.</li>
+<li>In the <code>Account</code> section, enter the <code>Login name</code> and <code>Display name</code> as <code>MicrosoftSentinel</code>. Add a new password or generate the password automatically.</li>
+<li>Select <code>OAuth confidential client</code>.</li>
+<li>In the <code>Application Settings</code> tab, click <code>Add</code>.</li>
+<li>Select the <code>CyberArkAuditforMicrosoftSentinel</code> application. This is the name you created in the web service.</li>
+</ol>
+<h1 id="step-4-grant-web-app-permissions-to-the-service-user">Step 4: Grant web app permissions to the service user</h1>
+<ol>
+<li>Go to the <code>CyberArkAuditforMicrosoftSentinel</code> web app you created.</li>
+<li>In the <code>Permissions</code> tab, click <code>Add</code> to find your user <code>MicrosoftSentinel</code> and then click <code>Add</code>.</li>
+<li>Set the following permissions for the user:
+   - Grant
+   - View
+   - Run
+   - Automatically deploy</li>
+</ol>
+<h1 id="step-5-define-the-integration-description">Step 5: Define the integration description</h1>
+<ol>
+<li>Go to <code>Administration</code>.</li>
+<li>Select <code>My environment</code> &gt; <code>Integrations</code> &gt; <code>Export to SIEM</code>.</li>
+<li>Select <code>Create</code> &gt; <code>Create SIEM integration</code>.</li>
+<li>Enter the name as <code>Microsoft Sentinel Integration</code> and optionally add a description.</li>
+<li>Click <code>Apply</code>.</li>
+</ol>
+<h1 id="step-6-connect-cyberark-audit-service-with-microsoft-sentinel-data-connector">Step 6: Connect CyberArk Audit Service with Microsoft Sentinel Data Connector</h1>
+<blockquote>
+<p><strong>Note:</strong> Copy all the details you captured in the previous steps and connect with the CyberArk Audit service.
+- <strong>OAuth2 Server App Name</strong>: e.g. AuditforMicrosoftSentinel
+- <strong>Audit API Key</strong>: (password field)
+- <strong>Identity Endpoint</strong>: e.g. kln9281.id.cyberark.cloud
+- <strong>Audit API Base URL</strong>: e.g. org-test.audit.cyberark.cloud
+- <strong>Audit Query Filter Action (Optional)</strong>: e.g. {"op":"include","params":["cloud.core.login","cloud.core.mfasummary"]}
+- <strong>Audit Query Filter Application Code (Optional)</strong>: e.g. {"op":"include","params":["IDP","CMS"]}
+- <strong>Audit Query Filter Audit Type (Optional)</strong>: e.g. {"op":"include","params":["Failure"]}
+- <strong>OAuth Configuration</strong>:
+  - Oauth Username
+  - Oauth Password
+  - Click 'Connect' to authenticate</p>
+</blockquote>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+</div>
+
+</body>
+</html>

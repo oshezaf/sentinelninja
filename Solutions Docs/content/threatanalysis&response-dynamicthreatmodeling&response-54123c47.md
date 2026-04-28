@@ -18,13 +18,13 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AzureActivity`](../tables/azureactivity.md) |  | ✗ | ✗ | ✗ |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `ResourceType == "PUBLICIPADDRESSES"` | ✗ | ✗ | ✗ |
-| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |
+| [`AzureActivity`](../tables/azureactivity.md) |  | ? | ✗ | ? |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `ResourceType == "PUBLICIPADDRESSES"` | ? | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ? |
 | [`SecurityBaseline`](../tables/securitybaseline.md) |  | ✓ | ✗ | ? |
-| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ✓ |
+| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ? |
 | [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) |  | ✓ | ✗ | ? |
-| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ? |
 
 ---
 

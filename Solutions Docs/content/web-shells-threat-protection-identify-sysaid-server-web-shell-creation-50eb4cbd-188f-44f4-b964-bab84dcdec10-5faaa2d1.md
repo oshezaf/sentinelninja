@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ | ? |
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4663,4688"` | ✓ | ✓ | ✓ |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4663,4688"` | ✓ | ✓ | ? |
 
 ---
 

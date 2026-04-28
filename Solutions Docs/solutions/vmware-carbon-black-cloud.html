@@ -46,7 +46,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.0.6</td>
+<td style="text-align: left;">3.0.8</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -58,7 +58,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Last Updated</strong></td>
-<td style="text-align: left;">2026-03-27</td>
+<td style="text-align: left;">2026-04-17</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Solution Folder</strong></td>
@@ -82,12 +82,13 @@
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>2 data connector(s)</strong>:</p>
+<p>This solution provides <strong>1 data connector(s)</strong> (plus 1 discovered⚠️):</p>
 <ul>
-<li><a href="../connectors/vmwarecarbonblack.html">VMware Carbon Black Cloud</a> 🔶</li>
-<li><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a></li>
+<li><a href="../connectors/vmwarecarbonblack.html">[DEPRECATED] VMware Carbon Black Cloud (using Azure Function)</a> 🔶</li>
+<li><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a> ⚠️</li>
 </ul>
 <blockquote>
+<p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="tables-used">Tables Used</h2>
@@ -103,52 +104,52 @@
 <tbody>
 <tr>
 <td><a href="../tables/asimauthenticationeventlogs.html"><code>ASimAuthenticationEventLogs</code></a></td>
-<td><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a></td>
+<td><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a>, <a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)</a></td>
 <td>-</td>
 </tr>
 <tr>
 <td><a href="../tables/asimfileeventlogs.html"><code>ASimFileEventLogs</code></a></td>
-<td><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a></td>
+<td><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a>, <a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)</a></td>
 <td>-</td>
 </tr>
 <tr>
 <td><a href="../tables/asimnetworksessionlogs.html"><code>ASimNetworkSessionLogs</code></a></td>
-<td><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a></td>
+<td><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a>, <a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)</a></td>
 <td>-</td>
 </tr>
 <tr>
 <td><a href="../tables/asimprocesseventlogs.html"><code>ASimProcessEventLogs</code></a></td>
-<td><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a></td>
+<td><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a>, <a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)</a></td>
 <td>-</td>
 </tr>
 <tr>
 <td><a href="../tables/asimregistryeventlogs.html"><code>ASimRegistryEventLogs</code></a></td>
-<td><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a></td>
+<td><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a>, <a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)</a></td>
 <td>-</td>
 </tr>
 <tr>
 <td><a href="../tables/carbonblackauditlogs-cl.html"><code>CarbonBlackAuditLogs_CL</code></a> 🔶</td>
-<td><a href="../connectors/vmwarecarbonblack.html">VMware Carbon Black Cloud</a></td>
+<td><a href="../connectors/vmwarecarbonblack.html">[DEPRECATED] VMware Carbon Black Cloud (using Azure Function)</a></td>
 <td>-</td>
 </tr>
 <tr>
 <td><a href="../tables/carbonblackevents-cl.html"><code>CarbonBlackEvents_CL</code></a> 🔶</td>
-<td><a href="../connectors/vmwarecarbonblack.html">VMware Carbon Black Cloud</a></td>
+<td><a href="../connectors/vmwarecarbonblack.html">[DEPRECATED] VMware Carbon Black Cloud (using Azure Function)</a></td>
 <td>Analytics, Workbooks</td>
 </tr>
 <tr>
 <td><a href="../tables/carbonblacknotifications-cl.html"><code>CarbonBlackNotifications_CL</code></a> 🔶</td>
-<td><a href="../connectors/vmwarecarbonblack.html">VMware Carbon Black Cloud</a></td>
+<td><a href="../connectors/vmwarecarbonblack.html">[DEPRECATED] VMware Carbon Black Cloud (using Azure Function)</a></td>
 <td>Analytics</td>
 </tr>
 <tr>
 <td><a href="../tables/carbonblack-alerts-cl.html"><code>CarbonBlack_Alerts_CL</code></a></td>
-<td><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a></td>
+<td><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a>, <a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)</a></td>
 <td>-</td>
 </tr>
 <tr>
 <td><a href="../tables/carbonblack-watchlist-cl.html"><code>CarbonBlack_Watchlist_CL</code></a></td>
-<td><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a></td>
+<td><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a>, <a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)</a></td>
 <td>-</td>
 </tr>
 </tbody>
@@ -257,6 +258,16 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>3.0.8</td>
+<td>24-03-2026</td>
+<td>Deprecate to VMware Carbon Black Cloud (using Azure Function)</td>
+</tr>
+<tr>
+<td>3.0.7</td>
+<td>24-03-2026</td>
+<td>Rename to VMware Carbon Black Cloud via AWS S3(via Codeless Connector Framework)</td>
+</tr>
 <tr>
 <td>3.0.6</td>
 <td>28-01-2026</td>

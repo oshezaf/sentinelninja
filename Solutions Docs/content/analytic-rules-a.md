@@ -1,6 +1,6 @@
 # Analytic Rules - A
 
-**195 analytic rules** starting with 'A'.
+**183 analytic rules** starting with 'A'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -8,7 +8,7 @@
 
 ---
 
-**Jump to letter:** [#](analytic-rules-other.md) | **A** | [B](analytic-rules-b.md) | [C](analytic-rules-c.md) | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | [M](analytic-rules-m.md) | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [Z](analytic-rules-z.md)
+**Jump to letter:** [#](analytic-rules-other.md) | **A** | [B](analytic-rules-b.md) | [C](analytic-rules-c.md) | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | [M](analytic-rules-m.md) | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [X](analytic-rules-x.md) | [Z](analytic-rules-z.md)
 
 > **Source:** 📦 Solution | 📄 Standalone | 🔗 GitHub Only
 
@@ -125,10 +125,6 @@
 | [Application Redirect URL Update](standalone-content-application-redirect-url-update-a1080fc1-13d1-479b-8340-255f0290d96c-91f770b3.md) | Medium | 📄 Standalone Content |
 | [AppServices AV Scan Failure](standalone-content-appservices-av-scan-failure-c2da1106-bfe4-4a63-bf14-5ab73130ccd5-d6a02a6e.md) | Informational | 📄 Standalone Content |
 | [AppServices AV Scan with Infected Files](standalone-content-appservices-av-scan-with-infected-files-9d0295ee-cb75-4f2c-9952-e5acfbb67036-8bc4532c.md) | Informational | 📄 Standalone Content |
-| [Apt (High)](ctm360-apt-high-c115ce23-7b8d-4bc0-9aed-e4e510bcd446-e46e89b4.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Apt (Informational)](ctm360-apt-informational-b3f52fba-35e0-4462-a2e3-483e9f5f06aa-28837f22.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Apt (Low)](ctm360-apt-low-f66cc33f-d32d-4424-8e42-1b4dbb24ed92-72546fe5.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Apt (Medium)](ctm360-apt-medium-ca64b9c8-8312-4caa-a3e5-44ae4f4ab526-8826befa.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
 | [Aqua Blizzard AV hits - Feb 2022](microsoftdefenderforendpoint-aqua-blizzard-av-hits-feb-2022-18dbdc22-b69f-4109-9e39-723d9465f45f-f3ce8313.md) | High | 📦 [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md) |
 | [Archive Repository Deleted](veeam-archive-repository-deleted-6a90f177-dcaa-44ec-b6e6-723ee8408cb2-556b7bd6.md) | High | 📦 [Veeam](../solutions/veeam.md) |
 | [Archive Repository Settings Updated](veeam-archive-repository-settings-updated-74c3bda5-cdae-4af3-ab54-daddfbe8bc70-1f51970c.md) | Low | 📦 [Veeam](../solutions/veeam.md) |
@@ -136,10 +132,6 @@
 | [Armorblox Needs Review Alert](armorblox-armorblox-needs-review-alert-322d4765-be6b-4868-9e3f-138a4f339dd6-4344e5d8.md) | Medium | 📦 [Armorblox](../solutions/armorblox.md) |
 | [ASR Bypassing Writing Executable Content](falconfriday-asr-bypassing-writing-executable-content-efe4efef-5ca7-4b51-a53e-0e96492ce97a-78c522d8.md) | Medium | 📦 [FalconFriday](../solutions/falconfriday.md) |
 | [Atlassian Beacon Alert](integration-for-atlassian-beacon-atlassian-beacon-alert-83fbf6a2-f227-48f4-8e7b-0b0ecac2381b-93237405.md) | High | 📦 [Integration for Atlassian Beacon](../solutions/integration-for-atlassian-beacon.md) |
-| [Attack Indication (High)](ctm360-attack-indication-high-802e3699-f87f-4662-b300-8ec29fc508a2-57ce41c0.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Attack Indication (Informational)](ctm360-attack-indication-informational-77fc1a48-855d-4d29-a625-3c5c55394434-774b99da.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Attack Indication (Low)](ctm360-attack-indication-low-9659e49b-55e4-4c44-9235-329a43f51298-82266e95.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Attack Indication (Medium)](ctm360-attack-indication-medium-0ed00f8e-1b26-40a7-8978-d57872961def-15a6b5fd.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
 | [Attempt to bypass conditional access rule in Microsoft Entra ID](microsoft-entra-id-attempt-to-bypass-conditional-access-rule-in-microsoft-entra-id-3af9285d-bb98-4a35-ad29-5ea39ba0c628-6f5f2339.md) | Low | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Attempt to Delete Backup Failed](veeam-attempt-to-delete-backup-failed-4595192f-671b-4724-aa62-093a9724c2f3-d054a91c.md) | High | 📦 [Veeam](../solutions/veeam.md) |
 | [Attempt to Update Security Object Failed](veeam-attempt-to-update-security-object-failed-54c9a609-60db-47b0-82ee-86895c89bd89-b69be8a9.md) | High | 📦 [Veeam](../solutions/veeam.md) |
@@ -149,10 +141,6 @@
 | [Authentication Method Changed for Privileged Account](business-email-compromise-financial-fraud-authentication-method-changed-for-privileged-account-feb0a2fb-ae75-4343-8cbc-ed545f1da289-05036a5e.md) | High | 📦 [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md) |
 | [Authentication Methods Changed for Privileged Account](microsoft-entra-id-authentication-methods-changed-for-privileged-account-694c91ee-d606-4ba9-928e-405a2dd0ff0f-513c9e02.md) | High | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Authentications of Privileged Accounts Outside of Expected Controls](standalone-content-authentications-of-privileged-accounts-outside-of-expected-controls-af435ca1-fb70-4de1-92c1-7435c48482a9-4ae23dd0.md) | Medium | 📄 Standalone Content |
-| [Auto Generated Page](ctm360-auto-generated-page-abe1a662-d00d-482e-aa68-9394622ae03e-54ddd091.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Auto Generated Page (High)](ctm360-auto-generated-page-high-ffa30df1-7604-47c3-90f8-df81cd36abda-c8296902.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Auto Generated Page (Informational)](ctm360-auto-generated-page-informational-c33d1539-832a-4310-bfc3-b0014e7c82bf-28ee75f5.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Auto Generated Page (Medium)](ctm360-auto-generated-page-medium-b5c9c09d-0bbc-4af1-b842-62f9c0f72f32-9b9737ad.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
 | [Automatic image scanning disabled for ECR](amazon-web-services-automatic-image-scanning-disabled-for-ecr-19602494-94af-43c8-90ba-eb0e14999612-4cbaf0c4.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [AV detections related to Dev-0530 actors](standalone-content-av-detections-related-to-dev-0530-actors-5f171045-88ab-4634-baae-a7b6509f483b-61a76c5a.md) | High | 📄 Standalone Content |
 | [AV detections related to Europium actors](standalone-content-av-detections-related-to-europium-actors-186970ee-5001-41c1-8c73-3178f75ce96a-1724290f.md) | High | 📄 Standalone Content |
@@ -209,8 +197,6 @@
 | [Azure VM Run Command operation executed during suspicious login window](standalone-content-azure-vm-run-command-operation-executed-during-suspicious-login-window-11bda520-a965-4654-9a45-d09f372f71aa-f213ee84.md) | High | 📄 Standalone Content |
 | [Azure VM Run Command operations executing a unique PowerShell script](standalone-content-azure-vm-run-command-operations-executing-a-unique-powershell-script-5239248b-abfb-4c6a-8177-b104ade5db56-babdd66c.md) | Medium | 📄 Standalone Content |
 | [Azure WAF matching for Log4j vuln(CVE-2021-44228)](apache-log4j-vulnerability-detection-azure-waf-matching-for-log4j-vuln-cve-2021-44228-2de8abd6-a613-450e-95ed-08e503369fb3-2f37c37a.md) | High | 📦 [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md) |
-
-> ⚠️ Items marked with ⚠️ are not listed in their Solution JSON file. They were discovered by scanning solution folders.
 
 ---
 

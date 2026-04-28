@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Syslog`](../tables/syslog.md) | `SyslogMessage contains "managed_device_id"`<br>`SyslogMessage contains "number_of_incidents"` | ✓ | ✓ | ✓ |
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage contains "managed_device_id"`<br>`SyslogMessage contains "number_of_incidents"` | ✓ | ✓ | ? |
 
 ---
 

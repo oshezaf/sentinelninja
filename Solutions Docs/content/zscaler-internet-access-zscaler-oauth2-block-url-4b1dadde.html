@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zscaler OAuth2 Block URL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="zscaler-oauth2-block-url">Zscaler OAuth2 Block URL</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<hr />
+<p>This playbook blocks URLs in Zscaler by adding them to a category using OAuth2 authentication.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/zscaler-internet-access.html">Zscaler Internet Access</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Playbooks/Oauth2BlockURL/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Playbooks/Oauth2BlockURL/readme.md">Oauth2BlockURL/readme.md</a></em></p>
+</blockquote>
+<p>This playbook enables automated URL blocking in Zscaler Internet Access (ZIA) when triggered by Microsoft Sentinel incidents. It uses OAuth2 authentication to securely communicate with the Zscaler API and add malicious URLs to a designated block category.</p>
+<h2 id="overview">Overview</h2>
+<p>The Zscaler-Oauth2-BlockURL playbook is designed to:</p>
+<ul>
+<li>Automatically extract URL entities from Microsoft Sentinel incidents</li>
+<li>Authenticate with Zscaler ZIA using OAuth2 via the authentication playbook</li>
+<li>Add malicious URLs to a specified Zscaler URL category for blocking</li>
+<li>Process multiple URLs sequentially to ensure reliable API communication</li>
+</ul>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before deploying this playbook, ensure you have:</p>
+<ol>
+<li>A Zscaler Internet Access (ZIA) subscription with API access enabled</li>
+<li>The <strong>Zscaler-Oauth2-Authentication</strong> playbook deployed in the same resource group</li>
+<li>OAuth2 client credentials (Client ID and Client Secret) configured in Azure Key Vault</li>
+<li>A block category created in Zscaler (default: "OTHER_MISCELLANEOUS")</li>
+<li>Appropriate permissions to deploy Azure Logic Apps</li>
+</ol>
+<h2 id="deployment">Deployment</h2>
+<p>Click the button below to deploy the Zscaler-Oauth2-BlockURL playbook to your Azure environment:</p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FZscaler%2520Internet%2520Access%2FPlaybooks%2FOauth2BlockURL%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
+<h2 id="post-deployment-configuration">Post-Deployment Configuration</h2>
+<p>After deployment, complete the following steps:</p>
+<ol>
+<li>
+<p><strong>Authorize API Connections</strong>
+   - Navigate to the Logic App in the Azure portal
+   - Go to API connections and authorize the Microsoft Sentinel connection
+   - Ensure the managed identity has appropriate permissions</p>
+</li>
+<li>
+<p><strong>Grant Required Permissions</strong>
+   - Assign the Logic App managed identity the "Microsoft Sentinel Responder" role on your workspace
+   - Verify the Zscaler-Oauth2-Authentication playbook is deployed and accessible</p>
+</li>
+<li>
+<p><strong>Configure Block Category</strong> (Optional)
+   - The default category is "OTHER_MISCELLANEOUS"
+   - Update the parameter during deployment if you use a different category</p>
+</li>
+<li>
+<p><strong>Configure Zscaler Admin URL</strong> (Optional)
+   - The default is "https://admin.zscaler.net"
+   - Update the parameter for your Zscaler cloud instance</p>
+</li>
+<li>
+<p><strong>Configure Automation Rules</strong>
+   - Create automation rules in Microsoft Sentinel to trigger this playbook
+   - Configure rules to run on incidents containing URL entities</p>
+</li>
+</ol>
+<h2 id="parameters">Parameters</h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Default Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PlaybookName</td>
+<td>Name of the Logic App</td>
+<td>Zscaler-Oauth2-BlockURL</td>
+</tr>
+<tr>
+<td>Zscaler OAuth2 Authentication Playbook</td>
+<td>Name of the OAuth2 authentication playbook</td>
+<td>Zscaler-Oauth2-Authentication</td>
+</tr>
+<tr>
+<td>Zscaler Admin Url</td>
+<td>Your Zscaler admin portal URL</td>
+<td>https://admin.zscaler.net</td>
+</tr>
+<tr>
+<td>Block Category</td>
+<td>Zscaler URL category for blocking</td>
+<td>OTHER_MISCELLANEOUS</td>
+</tr>
+</tbody>
+</table>
+<h2 id="workflow">Workflow</h2>
+<ol>
+<li>Triggered by Microsoft Sentinel incident creation</li>
+<li>Extracts URL entities from the incident</li>
+<li>Calls the Zscaler-Oauth2-Authentication playbook to obtain an access token</li>
+<li>For each URL, adds it to the configured Zscaler URL category using the API</li>
+<li>URLs are processed sequentially (concurrency set to 1) for reliable execution</li>
+</ol>
+<h2 id="learn-more">Learn More</h2>
+<ul>
+<li><a href="https://help.zscaler.com/zia/api">Zscaler API Documentation</a></li>
+<li><a href="https://help.zscaler.com/zia/api-getting-started">API Developers Guide: Getting Started</a></li>
+<li><a href="https://docs.microsoft.com/azure/sentinel/automate-responses-with-playbooks">Microsoft Sentinel Playbooks</a></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/zscaler-internet-access.html">Back to Zscaler Internet Access</a></p>
+</div>
+
+</body>
+</html>

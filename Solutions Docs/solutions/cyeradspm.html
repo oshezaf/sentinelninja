@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>⚠️ CyeraDSPM &mdash; Solutions Analyzer</title>
+<title>Cyera Sentinel Integration &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,10 +15,8 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="cyeradspm">⚠️ CyeraDSPM</h1>
-<blockquote>
-<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
-</blockquote>
+<h1 id="cyera-sentinel-integration">Cyera Sentinel Integration</h1>
+<p><em>Solution: CyeraDSPM</em></p>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cyera_icon.svg" alt="CyeraDSPM Logo" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
@@ -57,24 +55,27 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>First Published</strong></td>
-<td style="text-align: left;">2025-10-15</td>
+<td style="text-align: left;">2026-02-27</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Last Updated</strong></td>
-<td style="text-align: left;">2025-10-29</td>
+<td style="text-align: left;">2026-03-10</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Solution Folder</strong></td>
 <td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyeraDSPM">CyeraDSPM</a></td>
 </tr>
+<tr>
+<td style="text-align: left;"><strong>Marketplace</strong></td>
+<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cyera1658314682323.azure-sentinel-solution-cyeradspm-v3">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
+</tr>
 </tbody>
 </table>
 <p>The <a href="https://api.cyera.io/">Cyera DSPM</a> data connector allows you to connect to your Cyera's DSPM instance and ingesting Classifications, Assets, Issues, and Identity Definitions into Microsoft Sentinel. The data connector is built on Microsoft Sentinel's Codeless Connector Platform and uses the Cyera's API to fetch Cyera's <a href="https://www.cyera.com/">DSPM Telemetry</a> once recieced can be correlated with security events creating custom columns so that queries don't need to parse it again, thus resulting in better performance.</p>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>2 data connector(s)</strong>:</p>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/cyeradspmccf.html">Cyera DSPM Microsoft Sentinel Data Connector</a></li>
-<li><a href="../connectors/cyerafunctionsconnector.html">Cyera DSPM Azure Functions Microsoft Sentinel Data Connector</a></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
 <p>This solution uses <strong>5 table(s)</strong>:</p>
@@ -89,27 +90,27 @@
 <tbody>
 <tr>
 <td><a href="../tables/cyeraassets-cl.html"><code>CyeraAssets_CL</code></a></td>
-<td><a href="../connectors/cyerafunctionsconnector.html">Cyera DSPM Azure Functions Microsoft Sentinel Data Connector</a>, <a href="../connectors/cyeradspmccf.html">Cyera DSPM Microsoft Sentinel Data Connector</a></td>
+<td><a href="../connectors/cyeradspmccf.html">Cyera DSPM Microsoft Sentinel Data Connector</a></td>
 <td>-</td>
 </tr>
 <tr>
 <td><a href="../tables/cyeraassets-ms-cl.html"><code>CyeraAssets_MS_CL</code></a></td>
-<td><a href="../connectors/cyerafunctionsconnector.html">Cyera DSPM Azure Functions Microsoft Sentinel Data Connector</a>, <a href="../connectors/cyeradspmccf.html">Cyera DSPM Microsoft Sentinel Data Connector</a></td>
+<td><a href="../connectors/cyeradspmccf.html">Cyera DSPM Microsoft Sentinel Data Connector</a></td>
 <td>-</td>
 </tr>
 <tr>
 <td><a href="../tables/cyeraclassifications-cl.html"><code>CyeraClassifications_CL</code></a></td>
-<td><a href="../connectors/cyerafunctionsconnector.html">Cyera DSPM Azure Functions Microsoft Sentinel Data Connector</a>, <a href="../connectors/cyeradspmccf.html">Cyera DSPM Microsoft Sentinel Data Connector</a></td>
+<td><a href="../connectors/cyeradspmccf.html">Cyera DSPM Microsoft Sentinel Data Connector</a></td>
 <td>-</td>
 </tr>
 <tr>
 <td><a href="../tables/cyeraidentities-cl.html"><code>CyeraIdentities_CL</code></a></td>
-<td><a href="../connectors/cyerafunctionsconnector.html">Cyera DSPM Azure Functions Microsoft Sentinel Data Connector</a>, <a href="../connectors/cyeradspmccf.html">Cyera DSPM Microsoft Sentinel Data Connector</a></td>
+<td><a href="../connectors/cyeradspmccf.html">Cyera DSPM Microsoft Sentinel Data Connector</a></td>
 <td>-</td>
 </tr>
 <tr>
 <td><a href="../tables/cyeraissues-cl.html"><code>CyeraIssues_CL</code></a></td>
-<td><a href="../connectors/cyerafunctionsconnector.html">Cyera DSPM Azure Functions Microsoft Sentinel Data Connector</a>, <a href="../connectors/cyeradspmccf.html">Cyera DSPM Microsoft Sentinel Data Connector</a></td>
+<td><a href="../connectors/cyeradspmccf.html">Cyera DSPM Microsoft Sentinel Data Connector</a></td>
 <td>-</td>
 </tr>
 </tbody>
@@ -126,8 +127,8 @@
 <tbody>
 <tr>
 <td>3.0.0</td>
-<td>29-10-2025</td>
-<td>Initial Creation of CCF and Azure Functions Connector</td>
+<td>05-03-2026</td>
+<td>Initial Creation of <strong>CCF Data Connector</strong>. </br> Updated polling frequency to reduce duplicates, modified ASIM schema for the <code>CyeraAssets_MS_CL</code> table, and simplified deployment with API keys added via the <strong>Data Connector</strong>.</td>
 </tr>
 </tbody>
 </table>

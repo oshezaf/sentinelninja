@@ -13,7 +13,35 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
+## Contents
+
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Parsers](#parsers-using-this-table)
+
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [AWS ELB](../solutions/aws-elb.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Amazon Web Services Elastic Load Balancing (via Codeless Connector Framework)](../connectors/awselbconnector.md) |  |
+
 ---
+
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [AWSELBFlowLogsData](../parsers/awselbflowlogsdata.md) | [AWS ELB](../solutions/aws-elb.md) |  |
 
 ---
 

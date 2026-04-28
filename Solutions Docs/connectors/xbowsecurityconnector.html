@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XBOW Security Platform via Azure Function &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="xbow-security-platform">XBOW Security Platform (via Azure Function)</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/XBOW.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>XbowSecurityConnector</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">XBOW</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/xbow.html">XBOW</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/XBOW/Data%20Connectors/Xbow_API_Xbow.json">Xbow_API_Xbow.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>Azure Function code uses LogsIngestionClient/Log Ingestion API</em></td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>XBOW</strong> data connector ingests asset snapshots, vulnerability findings, and assessment activity from the <a href="https://console.xbow.com">XBOW Security Platform</a> into Microsoft Sentinel. An Azure Function polls the XBOW API on a timer and pushes asset JSON snapshots into <code>XbowAssets_CL</code>, enriched findings (with evidence, PoC recipes, impact, and mitigations) into <code>XbowFindings_CL</code>, and assessment lifecycle events into <code>XbowAssessments_CL</code>, using the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Ingestion API</a> (DCE/DCR).</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/xbowassessments-cl.html"><code>XbowAssessments_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/xbowassets-cl.html"><code>XbowAssets_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/xbowfindings-cl.html"><code>XbowFindings_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>XBOW API Token</strong>: A XBOW Personal Access Token is required. Generate one in the <a href="https://console.xbow.com">XBOW console</a> under <strong>Settings &gt; Personal Access Tokens</strong>. Scope the token to the organization you want to monitor.
+- <strong>XBOW Organization ID</strong>: The Organization ID from your XBOW account. Find it in the XBOW console URL or via the API.
+- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
+- <strong>Custom prerequisites if necessary, otherwise delete this customs tag</strong>: Description for any custom pre-requisites
+- <strong>Azure AD App Registration</strong>: An Azure AD App Registration (service principal) is required. You must manually assign the <strong>Monitoring Metrics Publisher</strong> role on the Data Collection Rule (DCR) to this App Registration after deployment.</p>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+<p><strong>NOTE:</strong> This connector uses Azure Functions and the Azure Monitor Ingestion API (DCE/DCR) to ingest XBOW assets, findings, and assessments into Microsoft Sentinel. The ARM template automatically creates the Data Collection Endpoint, custom log tables (<code>XbowAssets_CL</code>, <code>XbowFindings_CL</code>, and <code>XbowAssessments_CL</code>), Data Collection Rule, and Function App. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> and <a href="https://azure.microsoft.com/pricing/details/monitor/">Azure Monitor pricing page</a> for details.</p>
+<p><strong>(Optional Step)</strong> Securely store your XBOW API Token and App Registration credentials in Azure Key Vault. <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Follow these instructions</a> to use Azure Key Vault references with an Azure Function App.</p>
+</blockquote>
+<p><strong>1. STEP 1 – Generate a XBOW API Token</strong></p>
+<ol>
+<li>Log into the <a href="https://console.xbow.com">XBOW console</a> with administrator access.</li>
+<li>Click your profile icon (top right) and select <strong>Settings</strong>.</li>
+<li>In the left sidebar, click <strong>Personal Access Tokens</strong>.</li>
+<li>Click <strong>Generate new token</strong>, provide a name, and select the organization scope.</li>
+<li>Copy and securely store your token — it will not be shown again.</li>
+<li>Note your <strong>Organization ID</strong> from the XBOW console or from the URL when viewing your organization.</li>
+</ol>
+<p><strong>2. STEP 2 – Create an Azure AD App Registration and Grant DCR Role</strong></p>
+<ol>
+<li>In the <a href="https://portal.azure.com">Azure Portal</a>, navigate to <strong>Azure Active Directory &gt; App registrations &gt; New registration</strong>.</li>
+<li>Provide a name (e.g. <code>Xbow-Sentinel-Connector</code>) and register.</li>
+<li>Under <strong>Certificates &amp; secrets</strong>, create a new client secret. Note the <strong>Tenant ID</strong>, <strong>Client ID</strong>, and <strong>Client Secret</strong>.</li>
+<li>Deploy the connector using Step 3 below, then return here.</li>
+<li>Open the deployed <strong>Data Collection Rule</strong> (from the deployment outputs or by searching in the resource group).</li>
+<li>Go to <strong>Access control (IAM) &gt; Add role assignment</strong>.</li>
+<li>Select role <strong>Monitoring Metrics Publisher</strong>.</li>
+<li>Assign access to the App Registration (service principal) created above.</li>
+<li>Wait a few minutes for RBAC propagation before verifying ingestion.</li>
+</ol>
+<p><strong>3. STEP 3 – Deploy the Azure Function App</strong></p>
+<p>Click <strong>Deploy to Azure</strong> and fill in the parameters. The template will automatically create the Data Collection Endpoint, <code>XbowAssets_CL</code>, <code>XbowFindings_CL</code>, and <code>XbowAssessments_CL</code> tables, Data Collection Rule, and Function App.</p>
+<p><a href="https://aka.ms/sentinel-Xbow-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
+<p><strong>Parameters to fill in:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>WorkspaceName</code></td>
+<td>Name of your Log Analytics / Microsoft Sentinel workspace</td>
+</tr>
+<tr>
+<td><code>XbowApiToken</code></td>
+<td>XBOW Personal Access Token from Step 1</td>
+</tr>
+<tr>
+<td><code>XbowOrgId</code></td>
+<td>XBOW Organization ID from Step 1</td>
+</tr>
+<tr>
+<td><code>TenantId</code></td>
+<td>Azure AD Tenant ID from Step 2</td>
+</tr>
+<tr>
+<td><code>ClientId</code></td>
+<td>App Registration Client ID from Step 2</td>
+</tr>
+<tr>
+<td><code>ClientSecret</code></td>
+<td>App Registration Client Secret from Step 2</td>
+</tr>
+<tr>
+<td><code>AppInsightsWorkspaceResourceID</code></td>
+<td>Full Resource ID of the Log Analytics workspace (from <strong>Log Analytics workspace &gt; Properties</strong>)</td>
+</tr>
+<tr>
+<td><code>FunctionAppLocation</code></td>
+<td>Optional Azure region for Function App resources (defaults to the Resource Group location)</td>
+</tr>
+<tr>
+<td>- <strong>Workspace ID</strong>: <code>WorkspaceId</code></td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; <em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+</div>
+
+</body>
+</html>

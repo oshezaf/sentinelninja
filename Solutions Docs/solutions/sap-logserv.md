@@ -33,9 +33,11 @@ SAP LogServ provides the SAP RISE logs to Microsoft Sentinel, allowing SOC teams
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [SAP LogServ (RISE), S/4HANA Cloud private edition](../connectors/saplogserv.md)
+- [SAP LogServ (RISE), S/4HANA Cloud private edition](../connectors/saplogserv.md) ⚠️
+
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
 ## Tables Used
 
@@ -73,6 +75,7 @@ This solution includes **5 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.0.5       | 01-04-2026                     |preview tag remove, UI update|
 | 3.0.4       |  11-08-2025                    | Connector UI updates |
 | 3.0.3       |  17-07-2025                    | Observability Workbook added |
 | 3.0.2       |  25-06-2025                    | Analytic Rules for HANA DB added |

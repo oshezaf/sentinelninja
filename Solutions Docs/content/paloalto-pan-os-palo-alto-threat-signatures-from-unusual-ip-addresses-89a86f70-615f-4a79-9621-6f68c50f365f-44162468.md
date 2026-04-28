@@ -27,8 +27,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "file,flood,packet,scan,spyware,virus,vulnerability,wildfire,wildfire-virus"`<br>`DeviceVendor == "Palo Alto Networks"` | ✓ | ✓ | ✓ |
-| [`fluentbit_CL`](../tables/fluentbit-cl.md) 🔶 |  | ✓ | ✓ | ✓ |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "file,flood,packet,scan,spyware,virus,vulnerability,wildfire,wildfire-virus"`<br>`DeviceVendor == "Palo Alto Networks"` | ✓ | ✓ | ? |
+| [`fluentbit_CL`](../tables/fluentbit-cl.md) 🔶 |  | ? | ✓ | ? |
 
 ---
 

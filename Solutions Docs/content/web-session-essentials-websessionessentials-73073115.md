@@ -18,8 +18,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✓ | ✗ |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✓ | ? |
 | [`WebSession_Summarized_DstIP_CL`](../tables/websession-summarized-dstip-cl.md) 🔶 | ? | ✓ | ? |
 | [`WebSession_Summarized_SrcIP_CL`](../tables/websession-summarized-srcip-cl.md) 🔶 | ? | ✓ | ? |
 | [`WebSession_Summarized_SrcInfo_CL`](../tables/websession-summarized-srcinfo-cl.md) 🔶 | ? | ✓ | ? |

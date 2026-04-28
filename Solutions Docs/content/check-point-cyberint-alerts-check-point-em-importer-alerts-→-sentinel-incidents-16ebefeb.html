@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check Point EM - Importer Alerts → Sentinel Incidents &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="check-point-em---importer">Check Point EM - Importer (Alerts → Sentinel Incidents)</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<hr />
+<p>Queries the argsentdc_CL custom table (populated by the CCP data connector) for recent alerts and creates corresponding Microsoft Sentinel incidents.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/check-point-cyberint-alerts.html">Check Point Cyberint Alerts</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20Alerts/Playbooks/Sync/CPEM_InboundSync/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="tables-used">Tables Used</h2>
+<p>This content item queries data from the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/argsentdc-cl.html"><code>argsentdc_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20Alerts/Playbooks/Sync/CPEM_InboundSync/readme.md">Sync/CPEM_InboundSync/readme.md</a></em></p>
+</blockquote>
+<h1 id="check-point-exposure-management---importer">Check Point Exposure Management - Importer (Argos Status Changes → Sentinel)</h1>
+<h2 id="summary">Summary</h2>
+<p>This playbook polls Argos for recently modified alerts and writes updated records to the <code>argsentdc_CL</code> custom Log Analytics table. It complements the CCP data connector which only ingests <strong>new</strong> alerts (using <code>created_date</code>). The Importer catches <strong>status changes</strong>, closures, and other alert updates using the <code>modification_date</code> filter.</p>
+<p><strong>Flow:</strong>
+1. Runs on a configurable recurrence interval (default: 10 minutes).
+2. Calls <strong>Check_Point_EM_Base</strong> to retrieve API credentials.
+3. Calculates the polling time window (last N minutes) as Unix timestamps.
+4. Polls alerts API with <code>modification_date</code> filter.
+5. For each modified alert, writes the updated record to the custom table via the Data Collection API.
+6. Tracks success/error counts per run.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ol>
+<li><strong>Check_Point_EM_Base</strong> playbook must be deployed in the same resource group.</li>
+<li>A valid Check Point Exposure Management API token configured in the Check_Point_EM_Base Key Vault.</li>
+<li>The CCP data connector must be deployed (provides the Data Collection Endpoint and Data Collection Rule).</li>
+</ol>
+<h2 id="deployment">Deployment</h2>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCheck%2520Point%2520Cyberint%2520Alerts%2FPlaybooks%2FCheck_Point_EM_Importer%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PlaybookName</strong></td>
+<td>No</td>
+<td>Name of the Logic App (default: <code>Check_Point_EM_Importer</code>)</td>
+</tr>
+<tr>
+<td><strong>Check_Point_EM_Base_PlaybookName</strong></td>
+<td>No</td>
+<td>Name of the base playbook (default: <code>Check_Point_EM_Base</code>)</td>
+</tr>
+<tr>
+<td><strong>PollingIntervalMinutes</strong></td>
+<td>No</td>
+<td>Poll interval in minutes (default: <code>10</code>)</td>
+</tr>
+<tr>
+<td><strong>DataCollectionEndpoint</strong></td>
+<td>Yes</td>
+<td>DCE URL from the CCP connector deployment</td>
+</tr>
+<tr>
+<td><strong>DataCollectionRuleImmutableId</strong></td>
+<td>Yes</td>
+<td>DCR immutable ID from the CCP connector deployment</td>
+</tr>
+</tbody>
+</table>
+<h2 id="post-deployment">Post-Deployment</h2>
+<ol>
+<li>The ARM template automatically assigns the <strong>Monitoring Metrics Publisher</strong> role to the Logic App's Managed Identity.</li>
+<li>Verify the Recurrence trigger is running at the configured interval in the Logic App run history.</li>
+</ol>
+<h2 id="deduplication">Deduplication</h2>
+<p>If the same alert appears in both the CCP connector (new) and Importer (modified) within the same window, the table will have two rows with the same <code>ref_id</code>. This is expected — analytics rules should use <code>arg_max(TimeGenerated, *)</code> by <code>ref_id</code> to get the latest state.</p>
+<h2 id="error-handling">Error Handling</h2>
+<ul>
+<li>HTTP requests use exponential backoff retry policy (3 retries) for 429/5xx errors.</li>
+<li>Per-record errors are counted but don't block remaining records.</li>
+<li>Success and error counts are tracked per run for monitoring via Logic App run history.</li>
+</ul>
+<h2 id="api-endpoints-used">API Endpoints Used</h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Endpoint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Poll modified alerts</td>
+<td><code>POST {ArgosBaseUrl}</code> with <code>modification_date</code> filter</td>
+</tr>
+<tr>
+<td>Write to custom table</td>
+<td><code>POST {DCE}/dataCollectionRules/{dcr_id}/streams/Custom-argsentdc_CL</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/check-point-cyberint-alerts.html">Back to Check Point Cyberint Alerts</a></p>
+</div>
+
+</body>
+</html>

@@ -17,6 +17,13 @@ Reference for AWSNLBAccessLogs table in Azure Monitor Logs.
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awsnlbaccesslogs) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (27 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awsnlbaccesslogs)
@@ -51,7 +58,29 @@ Reference for AWSNLBAccessLogs table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | Version | string | Version of the NLB log format. |
 
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [AWS ELB](../solutions/aws-elb.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Amazon Web Services Elastic Load Balancing (via Codeless Connector Framework)](../connectors/awselbconnector.md) |  |
+
 ---
+
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [AWSNLBAccessLogsData](../parsers/awsnlbaccesslogsdata.md) | [AWS ELB](../solutions/aws-elb.md) |  |
 
 ---
 

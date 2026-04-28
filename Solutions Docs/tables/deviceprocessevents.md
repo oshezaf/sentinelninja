@@ -189,7 +189,7 @@ This table is ingested by the following connectors:
 | [LSASS Credential Dumping with Procdump](../content/microsoft-defender-xdr-lsass-credential-dumping-with-procdump-c332b840-61e4-462e-a201-0e2d69bad45d-36f7eb44.md) |  |
 | [LaZagne Credential Theft](../content/microsoft-defender-xdr-lazagne-credential-theft-7d0d3050-8dac-4b83-bfae-902f7dc0c21c-2a344765.md) |  |
 | [Office Apps Launching Wscipt](../content/microsoft-defender-xdr-office-apps-launching-wscipt-174de33b-107b-4cd8-a85d-b4025a35453f-49a22465.md) |  |
-| [Potential Build Process Compromise - MDE](../content/microsoft-defender-xdr-potential-build-process-compromise-mde-1bf6e165-5e32-420e-ab4f-0da8558a8be2-c676927e.md) | `ActionType in "FileCreated,FileModified"` |
+| [Potential Build Process Compromise - MDE](../content/microsoft-defender-xdr-potential-build-process-compromise-mde-1bf6e165-5e32-420e-ab4f-0da8558a8be2-c676927e.md) |  |
 | [Qakbot Campaign Self Deletion](../content/microsoft-defender-xdr-qakbot-campaign-self-deletion-47c02e21-3949-4e05-a28e-576cd75ff6f6-a7a7167c.md) |  |
 | [Qakbot Discovery Activies](../content/microsoft-defender-xdr-qakbot-discovery-activies-ba9db6b2-3d05-42ae-8aee-3a15bbe29f27-5676e3c6.md) |  |
 | [Rare Process as a Service](../content/microsoft-defender-xdr-rare-process-as-a-service-91a451e3-178f-41b2-9e5d-da97d75b9971-365d2f3a.md) |  |
@@ -602,19 +602,18 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|:-------------------|
 | [ASimProcessEventMicrosoft365D](../asim/asimprocesseventmicrosoft365d.md) | ProcessEvent | Microsoft 365 Defender for endpoint |  |
 
-## Selection Criteria Summary (6 criteria, 7 total references)
+## Selection Criteria Summary (5 criteria, 6 total references)
 
-References by type: 0 connectors, 7 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 6 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `ActionType == "InboundConnectionAccepted"` | - | 2 | - | - | **2** |
 | `ActionType != "ListeningConnectionCreated"` | - | 1 | - | - | **1** |
 | `ActionType == "LogonSuccess"` | - | 1 | - | - | **1** |
-| `ActionType in "FileCreated,FileModified"` | - | 1 | - | - | **1** |
 | `ActionType == "PowerShellCommand"` | - | 1 | - | - | **1** |
 | `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **7** | **0** | **0** | **7** |
+| **Total** | **0** | **6** | **0** | **0** | **6** |
 
 ### ActionType
 
@@ -623,8 +622,6 @@ References by type: 0 connectors, 7 content items, 0 ASIM parsers, 0 other parse
 | `InboundConnectionAccepted` | - | 2 | - | - | **2** |
 | `!= ListeningConnectionCreated` | - | 1 | - | - | **1** |
 | `LogonSuccess` | - | 1 | - | - | **1** |
-| `FileCreated` | - | 1 | - | - | **1** |
-| `FileModified` | - | 1 | - | - | **1** |
 | `PowerShellCommand` | - | 1 | - | - | **1** |
 | `Add member to role` | - | 1 | - | - | **1** |
 | `Add user` | - | 1 | - | - | **1** |

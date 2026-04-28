@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semperis Lightning Sentinel Connector &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="semperis-lightning-sentinel-connector">Semperis Lightning Sentinel Connector</h1>
+<p><em>Solution: SemperisLightning</em></p>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/SemperisLightning/Data%20Connectors/Logos/semperis.svg" alt="SemperisLightning Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Semperis</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://www.semperis.com/support/">https://www.semperis.com/support/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Semperis</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2026-03-01</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2026-03-23</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SemperisLightning">SemperisLightning</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Marketplace</strong></td>
+<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/semperis.azure-sentinel-solution-semperislightning">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
+</tr>
+</tbody>
+</table>
+<p>This custom data connector uses a Function App to pull Semperis Lightning data and uploads it into the selected Log Analytics workspace via the Azure Log Ingestion API.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/semperislightninglogsazurefunctions.html">Semperis Lightning Logs</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>7 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/lightningattackpathlinks-cl.html"><code>LightningAttackPathLinks_CL</code></a></td>
+<td><a href="../connectors/semperislightninglogsazurefunctions.html">Semperis Lightning Logs</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/lightningattackpaths-cl.html"><code>LightningAttackPaths_CL</code></a></td>
+<td><a href="../connectors/semperislightninglogsazurefunctions.html">Semperis Lightning Logs</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/lightningioeresults-cl.html"><code>LightningIOEResults_CL</code></a></td>
+<td><a href="../connectors/semperislightninglogsazurefunctions.html">Semperis Lightning Logs</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/lightningioesmetadata-cl.html"><code>LightningIOEsMetadata_CL</code></a></td>
+<td><a href="../connectors/semperislightninglogsazurefunctions.html">Semperis Lightning Logs</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/lightningindicatorexecutions-cl.html"><code>LightningIndicatorExecutions_CL</code></a></td>
+<td><a href="../connectors/semperislightninglogsazurefunctions.html">Semperis Lightning Logs</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/lightningtier0attackers-cl.html"><code>LightningTier0Attackers_CL</code></a></td>
+<td><a href="../connectors/semperislightninglogsazurefunctions.html">Semperis Lightning Logs</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/lightningtier0nodes-cl.html"><code>LightningTier0Nodes_CL</code></a></td>
+<td><a href="../connectors/semperislightninglogsazurefunctions.html">Semperis Lightning Logs</a></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SemperisLightning/README.md">SemperisLightning/README.md</a></em></p>
+</blockquote>
+<h1 id="semperis-lightning-connector-for-microsoft-sentinel">Semperis Lightning Connector for Microsoft Sentinel</h1>
+<p>This connector ingests all data sources from Semperis Lightning into Microsoft Sentinel/Log Analytics:
+- Tier0 Nodes (Identity Graph)
+- Attack Paths 
+- Attack Path Links
+- Tier0 Attackers (Zone Access Objects)
+- Indicator Executions
+- IoES Metadata
+- IoE Results</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ol>
+<li><strong>Azure Subscription</strong> with permissions to create resources</li>
+<li><strong>Log Analytics Workspace</strong> (existing)</li>
+<li><strong>Semperis Lightning API Key</strong> from your Semperis instance</li>
+<li><strong>Azure CLI</strong> (for deployment) or Azure Portal</li>
+</ol>
+<h2 id="deployment">Deployment</h2>
+<h3 id="option-1-azure-portal">Option 1: Azure Portal (Recommended)</h3>
+<ol>
+<li>
+<p>Click the button below or go to Azure Portal
+   <code>https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSemperisLightning%2FData%2520Connectors%2FSemperisLightningLogs%2Fazuredeploy_Connector_SemperisLightning_AzureFunction.json</code></p>
+</li>
+<li>
+<p>Fill in the required parameters:
+   - <strong>Log Analytics Workspace Resource ID</strong>: Get from your workspace's JSON View
+   - <strong>Semperis API Key</strong>: Your Semperis Lightning API key
+   - <strong>Semperis Zone</strong>: Select na (North America) or eu (Europe)
+   - <strong>Connector Schedule</strong>: Default is <code>0 * * * * *</code> (every 1 hour)</p>
+</li>
+<li>
+<p>Click <strong>Review + Create</strong> then <strong>Create</strong></p>
+</li>
+</ol>
+<h3 id="option-2-azure-cli">Option 2: Azure CLI</h3>
+<pre><code class="language-bash"># Set variables
+export RESOURCE_GROUP=&quot;myResourceGroup&quot;
+export WORKSPACE_ID=&quot;/subscriptions/xxx/resourcegroups/xxx/providers/microsoft.operationalinsights/workspaces/xxx&quot;
+export API_KEY=&quot;your-semperis-api-key&quot;
+export LOCATION=&quot;eastus&quot;
+
+# Deploy
+az deployment group create \
+  --name semperis-connector \
+  --resource-group $RESOURCE_GROUP \
+  --template-file azuredeploy_Connector_SemperisLightning_AzureFunction.json \
+  --parameters \
+    LogAnalyticsWorkspaceResourceID=&quot;$WORKSPACE_ID&quot; \
+    SemperisApiKey=&quot;$API_KEY&quot; \
+    SemperisZone=&quot;na&quot; \
+   ConnectorSchedule=&quot;0 * * * * *&quot;
+</code></pre>
+<h2 id="what-gets-created">What Gets Created</h2>
+<p>The template creates:
+- <strong>7 Custom Log Analytics Tables</strong> (all with <code>_CL</code> suffix)
+- <strong>1 Data Collection Endpoint (DCE)</strong>
+- <strong>7 Data Collection Rules (DCRs)</strong>
+- <strong>Azure Function App</strong> (Python 3.11, Elastic Premium Plan)
+- <strong>Storage Accounts</strong> (for function runtime and state)
+- <strong>Key Vault</strong> (for secure API key storage)
+- <strong>Application Insights</strong> (for monitoring)
+- <strong>User-Assigned Managed Identity</strong> (for authentication)</p>
+<h2 id="data-ingestion-schedule">Data Ingestion Schedule</h2>
+<p>By default, the connector ingests data every 1 hour. You can modify the schedule using CRON expressions:</p>
+<table>
+<thead>
+<tr>
+<th>Expression</th>
+<th>Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0 * * * * *</code></td>
+<td>Every 1 hour (default)</td>
+</tr>
+<tr>
+<td><code>0 */4 * * * *</code></td>
+<td>Every 4 hours</td>
+</tr>
+<tr>
+<td><code>0 * * * * *</code></td>
+<td>Every hour</td>
+</tr>
+<tr>
+<td><code>0 0 * * * *</code></td>
+<td>Daily at midnight UTC</td>
+</tr>
+</tbody>
+</table>
+<h2 id="monitoring">Monitoring</h2>
+<ol>
+<li><strong>Application Insights</strong>: Check function health in Azure Portal</li>
+<li><strong>Log Analytics</strong>: Query the custom tables for data
+   <code>kusto
+   LightningTier0Nodes_CL
+   | where TimeGenerated &gt; ago(24h)
+   | count</code></li>
+</ol>
+<h2 id="field-mappings">Field Mappings</h2>
+<h3 id="tier0-nodes">Tier0 Nodes</h3>
+<p>| API Field | Log Analytics Field |</p>
+<p><em>[Content truncated...]</em></p>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.0</td>
+<td>23-03-2026</td>
+<td>Initial Solution Release. Added Semperis Lightning Connector</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+</div>
+
+</body>
+</html>

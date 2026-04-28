@@ -11,13 +11,14 @@
 | Property | Value |
 |:---------|:------|
 | **Parser Name** | `ASimProcessTerminateVMwareCarbonBlackCloud` |
-| **Built-in Parser** | `ASim_ProcessEvent_TerminateVMwareCarbonBlackCloud` |
+| **Built-in Parser** | `_ASim_ProcessEvent_TerminateVMwareCarbonBlackCloud` |
 | **Schema** | ProcessEvent |
 | **Schema Version** | 0.1.4 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | VMware Carbon Black Cloud |
 | **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessTerminateVMwareCarbonBlackCloud.md)) |
 | **Last Updated** | Oct 03, 2023 |
+| **Unifying Parser** | [ASimProcessEvent](asimprocessevent.md), [ASimProcessEventTerminate](asimprocesseventterminate.md) |
 | **Source File** | [Parsers\ASimProcessEvent\Parsers\ASimProcessTerminateVMwareCarbonBlackCloud.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimProcessEvent/Parsers/ASimProcessTerminateVMwareCarbonBlackCloud.yaml) |
 
 ## Description
@@ -30,23 +31,13 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) 🔶 | ? | ✓ | ? |
 
 ## Parameters
 
 | Name | Type | Default |
 |:-----|:-----|:--------|
 | `disabled` | bool | False |
-
-## Associated Connectors
-
-The following connectors provide data for this parser:
-
-| Connector | Solution |
-|:----------|:---------|
-| [VMwareCarbonBlack](../connectors/vmwarecarbonblack.md) | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
-
-**Solutions:** [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md)
 
 ## References
 

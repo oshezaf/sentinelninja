@@ -31,8 +31,8 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Syslog`](../tables/syslog.md) | ✓ | ✓ | ✓ |
-| [`meraki_CL`](../tables/meraki-cl.md) | ✓ | ✓ | ✓ |
+| [`Syslog`](../tables/syslog.md) | ✓ | ✓ | ? |
+| [`meraki_CL`](../tables/meraki-cl.md) | ? | ✓ | ? |
 
 ## Parameters
 

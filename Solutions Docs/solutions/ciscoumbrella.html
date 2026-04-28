@@ -47,7 +47,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.0.3</td>
+<td style="text-align: left;">3.0.10</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -397,62 +397,18 @@
 </tbody>
 </table>
 <h2 id="release-notes">Release Notes</h2>
-<table>
-<thead>
-<tr>
-<th><strong>Version</strong></th>
-<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
-<th><strong>Change History</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>3.0.8</td>
-<td>29-01-2026</td>
-<td>The Data connector has been updated to support large fields.</td>
-</tr>
-<tr>
-<td>3.0.7</td>
-<td>28-11-2025</td>
-<td>The Data connector has been updated to support up to version 14 log versioning for the Cisco log format, and the parser to include all tables.</td>
-</tr>
-<tr>
-<td>3.0.6</td>
-<td>01-09-2025</td>
-<td>Added a new data connector, 'CiscoUmbrella_API_FunctionApp_elasticpremium.json'</td>
-</tr>
-<tr>
-<td>3.0.5</td>
-<td>21-06-2025</td>
-<td>To expand support for Cisco Umbrella data in KQL validation tests and to standardize the naming of analytic rules</td>
-</tr>
-<tr>
-<td>3.0.4</td>
-<td>15-05-2025</td>
-<td>Updating documentation to reflect support for Cisco Umbrella log schema version 11</td>
-</tr>
-<tr>
-<td>3.0.3</td>
-<td>30-12-2024</td>
-<td>Update Playbooks <strong>AddIpToDestination</strong>, <strong>AssignPolicyToIdentity</strong>, <strong>GetDomainInfo</strong> as v1 version of CiscoUmbrella APIs are deprecated and Urls are also changed for this. <strong>Cisco Umbrella Enforcement API has not been deprecated</strong>. Repackage of solution.</td>
-</tr>
-<tr>
-<td>3.0.2</td>
-<td>20-09-2024</td>
-<td>Update <strong>Analytic rules</strong> for Entity mapping and missing TTP and Updated the python runtime version to 3.11</td>
-</tr>
-<tr>
-<td>3.0.1</td>
-<td>03-05-2024</td>
-<td>Added Deploy to Azure Government button in <strong>Data connector</strong> <br/> Fixed <strong>Parser</strong> issue for Parser name and ParentID mismatch</td>
-</tr>
-<tr>
-<td>3.0.0</td>
-<td>28-09-2023</td>
-<td>Updated <strong>Data Connector</strong> with step by step guidelines</td>
-</tr>
-</tbody>
-</table>
+<p>| <strong>Version</strong> | <strong>Date Modified (DD-MM-YYYY)</strong> | <strong>Change History</strong>                                          |
+| 3.0.10      | 23-03-2026                     | Added null-byte sanitization for corrupted state manager timestamps in Data Connector to prevent crashes on corrupted Azure File Share markers. Added null-byte stripping in date formatting to handle corrupted date fields from csv file. |
+| 3.0.9       | 13-03-2026                     | Moved csv.field_size_limit to module level so all 12 CSV parsers are covered. Added csv.Error guardrail to prevent a single oversized row from stalling ingestion. Consolidated null-byte stripping into unpack_file() to prevent _csv.Error on embedded NUL characters across all parsers. |
+| 3.0.8       | 29-01-2026                     | The Data connector has been updated to support large fields. |
+| 3.0.7       | 28-11-2025                     | The Data connector has been updated to support up to version 14 log versioning for the Cisco log format, and the parser to include all tables. |
+| 3.0.6       | 01-09-2025                     | Added a new data connector, 'CiscoUmbrella_API_FunctionApp_elasticpremium.json'    |
+| 3.0.5       | 21-06-2025                     | To expand support for Cisco Umbrella data in KQL validation tests and to standardize the naming of analytic rules    |
+| 3.0.4       | 15-05-2025                     | Updating documentation to reflect support for Cisco Umbrella log schema version 11    |
+| 3.0.3       | 30-12-2024                     | Update Playbooks <strong>AddIpToDestination</strong>, <strong>AssignPolicyToIdentity</strong>, <strong>GetDomainInfo</strong> as v1 version of CiscoUmbrella APIs are deprecated and Urls are also changed for this. <strong>Cisco Umbrella Enforcement API has not been deprecated</strong>. Repackage of solution.    |
+| 3.0.2       | 20-09-2024                     | Update <strong>Analytic rules</strong> for Entity mapping and missing TTP and Updated the python runtime version to 3.11    |
+| 3.0.1       | 03-05-2024                     | Added Deploy to Azure Government button in <strong>Data connector</strong> <br/> Fixed <strong>Parser</strong> issue for Parser name and ParentID mismatch|
+| 3.0.0       | 28-09-2023                     | Updated <strong>Data Connector</strong> with step by step guidelines |</p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>

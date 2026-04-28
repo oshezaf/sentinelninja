@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CyfirmaVulnerabilities_CL`](../tables/cyfirmavulnerabilities-cl.md) | ✓ | ✓ | ✓ |
+| [`CyfirmaVulnerabilities_CL`](../tables/cyfirmavulnerabilities-cl.md) | ? | ✓ | ? |
 
 ---
 

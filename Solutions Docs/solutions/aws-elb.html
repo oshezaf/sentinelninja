@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWS ELB &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="aws-elb">AWS ELB</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Aws.svg" alt="AWS ELB Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2026-03-20</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2026-03-31</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20ELB">AWS ELB</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Marketplace</strong></td>
+<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-awselb">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
+</tr>
+</tbody>
+</table>
+<p>The AWS Elastic Load Balancing solution for Microsoft Sentinel allows you to ingest access logs and flow logs from AWS Application Load Balancers, Network Load Balancers, and Gateway Load Balancers into Microsoft Sentinel for security monitoring, threat detection, and traffic analysis.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/awselbconnector.html">Amazon Web Services Elastic Load Balancing (via Codeless Connector Framework)</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>6 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/awsalbaccesslogs.html"><code>AWSALBAccessLogs</code></a></td>
+<td><a href="../connectors/awselbconnector.html">Amazon Web Services Elastic Load Balancing (via Codeless Connector Framework)</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/awsalbaccesslogs-cl.html"><code>AWSALBAccessLogs_CL</code></a></td>
+<td><a href="../connectors/awselbconnector.html">Amazon Web Services Elastic Load Balancing (via Codeless Connector Framework)</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/awselbflowlogs.html"><code>AWSELBFlowLogs</code></a></td>
+<td><a href="../connectors/awselbconnector.html">Amazon Web Services Elastic Load Balancing (via Codeless Connector Framework)</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/awselbflowlogs-cl.html"><code>AWSELBFlowLogs_CL</code></a></td>
+<td><a href="../connectors/awselbconnector.html">Amazon Web Services Elastic Load Balancing (via Codeless Connector Framework)</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/awsnlbaccesslogs.html"><code>AWSNLBAccessLogs</code></a></td>
+<td><a href="../connectors/awselbconnector.html">Amazon Web Services Elastic Load Balancing (via Codeless Connector Framework)</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/awsnlbaccesslogs-cl.html"><code>AWSNLBAccessLogs_CL</code></a></td>
+<td><a href="../connectors/awselbconnector.html">Amazon Web Services Elastic Load Balancing (via Codeless Connector Framework)</a></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>3 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/awsalbaccesslogsdata.html">AWSALBAccessLogsData</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/awsalbaccesslogs.html"><code>AWSALBAccessLogs</code></a> <em>(read)</em><br><a href="../tables/awsalbaccesslogs-cl.html"><code>AWSALBAccessLogs_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/awselbflowlogsdata.html">AWSELBFlowLogsData</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/awselbflowlogs.html"><code>AWSELBFlowLogs</code></a> <em>(read)</em><br><a href="../tables/awselbflowlogs-cl.html"><code>AWSELBFlowLogs_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/awsnlbaccesslogsdata.html">AWSNLBAccessLogsData</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/awsnlbaccesslogs.html"><code>AWSNLBAccessLogs</code></a> <em>(read)</em><br><a href="../tables/awsnlbaccesslogs-cl.html"><code>AWSNLBAccessLogs_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.1</td>
+<td>23-04-2026</td>
+<td>Moved AWS ELB solution to GA (availability <code>isPreview</code> set to <code>false</code>).</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>20-03-2026</td>
+<td>Initial Solution Release - Public Preview. New CCF <strong>Data Connector</strong> for AWS Elastic Load Balancing. Includes ingestion of ALB access logs, NLB access logs, and NLB/GLB flow logs. Added 3 <strong>Parsers</strong> for AWSALBAccessLogs, AWSNLBAccessLogs, AWSELBFlowLogs.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+</div>
+
+</body>
+</html>

@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion,DeleteGroupPolicy,DeletePolicy,DeletePolicyVersion,DeleteRolePolicy,DeleteUserPolicy,DetachGroupPolicy,DetachRolePolicy,PutGroupPolicy,PutUserPolicy"` | ✓ | ✓ | ✓ |
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion,DeleteGroupPolicy,DeletePolicy,DeletePolicyVersion,DeleteRolePolicy,DeleteUserPolicy,DetachGroupPolicy,DetachRolePolicy,PutGroupPolicy,PutUserPolicy"` | ✓ | ✓ | ? |
 
 ---
 

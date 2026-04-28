@@ -28,7 +28,7 @@ This connector ingests data into the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`DruvaInsyncEvents_CL`](../tables/druvainsyncevents-cl.md) | ? | ✓ | ? |
 | [`DruvaPlatformEvents_CL`](../tables/druvaplatformevents-cl.md) | ? | ✓ | ? |
-| [`DruvaSecurityEvents_CL`](../tables/druvasecurityevents-cl.md) | ✓ | ✓ | ✓ |
+| [`DruvaSecurityEvents_CL`](../tables/druvasecurityevents-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

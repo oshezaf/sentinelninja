@@ -1,4 +1,4 @@
-# Sophos Endpoint Protection (using REST API)
+# Sophos Endpoint Protection (via Codeless Connector Platform)
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/sophos_logo.svg" alt="" width="75" height="75">
 
@@ -27,7 +27,7 @@ This connector ingests data into the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`SophosEPAlerts_CL`](../tables/sophosepalerts-cl.md) | ? | ✓ | ? |
-| [`SophosEPEvents_CL`](../tables/sophosepevents-cl.md) | ✓ | ✓ | ✓ |
+| [`SophosEPEvents_CL`](../tables/sophosepevents-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

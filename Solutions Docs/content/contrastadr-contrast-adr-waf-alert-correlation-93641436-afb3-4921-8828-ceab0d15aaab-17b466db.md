@@ -18,7 +18,7 @@ Correlates Contrast ADR security alerts with WAF logs to identify confirmed atta
 | **Kind** | Scheduled |
 | **Tactics** | InitialAccess, DefenseEvasion, CommandAndControl |
 | **Techniques** | T1190, T1211, T1008 |
-| **Required Connectors** | [ContrastADR](../connectors/contrastadr.md) |
+| **Required Connectors** | [ContrastADRCCF](../connectors/contrastadrccf.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContrastADR/Analytic%20Rules/Contrast_ADR_Confirmed_WAF.yaml) |
 
 ## Tables Used
@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ContrastADR_CL`](../tables/contrastadr-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`ContrastADRAttackEvents_CL`](../tables/contrastadrattackevents-cl.md) | ? | ✓ | ? |
 
 ---
 

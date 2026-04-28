@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AWSVPCFlow`](../tables/awsvpcflow.md) | ✓ | ✓ | ✓ |
+| [`AWSVPCFlow`](../tables/awsvpcflow.md) | ✓ | ✓ | ? |
 
 ## Parameters
 

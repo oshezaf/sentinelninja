@@ -16,10 +16,10 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.tanium.com](https://support.tanium.com) |
 | **Categories** | domains |
-| **Version** | 3.2.0 |
+| **Version** | 3.3.0 |
 | **Author** | Tanium - support@tanium.com |
 | **First Published** | 2022-05-16 |
-| **Last Updated** | 2025-07-03 |
+| **Last Updated** | 2026-03-27 |
 | **Solution Folder** | [Tanium](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/taniuminc1646329360287.tanium_sentinel_connector) · Popularity: 🔵 Medium (74%) |
 
@@ -34,36 +34,42 @@ The [Tanium](https://www.tanium.com/) solution for Microsoft Sentinel enables yo
 
 ## Data Connectors
 
-**This solution does not include data connectors.**
+This solution provides **1 data connector(s)**:
 
-This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
+- [Tanium's CCF Push Connector](../connectors/taniumconnector.md) 🔶
+
+> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+
 
 ## Tables Used
 
-This solution queries **10 table(s)** from its content items:
+This solution uses **10 table(s)**:
 
-| Table | Used By Content |
-|-------|----------------|
-| [`TaniumComplyCompliance_CL`](../tables/taniumcomplycompliance-cl.md) | Workbooks |
-| [`TaniumComplyVulnerabilities_CL`](../tables/taniumcomplyvulnerabilities-cl.md) | Workbooks |
-| [`TaniumDefenderHealth_CL`](../tables/taniumdefenderhealth-cl.md) | Workbooks |
-| [`TaniumDiscoverUnmanagedAssets_CL`](../tables/taniumdiscoverunmanagedassets-cl.md) | Workbooks |
-| [`TaniumHighUptime_CL`](../tables/taniumhighuptime-cl.md) | Workbooks |
-| [`TaniumPatchCoverageStatus_CL`](../tables/taniumpatchcoveragestatus-cl.md) | Workbooks |
-| [`TaniumPatchListApplicability_CL`](../tables/taniumpatchlistapplicability-cl.md) | Workbooks |
-| [`TaniumPatchListCompliance_CL`](../tables/taniumpatchlistcompliance-cl.md) | Workbooks |
-| [`TaniumSCCMClientHealth_CL`](../tables/taniumsccmclienthealth-cl.md) | Workbooks |
-| [`TaniumThreatResponse_CL`](../tables/taniumthreatresponse-cl.md) | Analytics, Workbooks |
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`TaniumComplyCompliance_CL`](../tables/taniumcomplycompliance-cl.md) 🔶 | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Workbooks |
+| [`TaniumComplyVulnerabilities_CL`](../tables/taniumcomplyvulnerabilities-cl.md) 🔶 | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Workbooks |
+| [`TaniumDefenderHealth_CL`](../tables/taniumdefenderhealth-cl.md) 🔶 | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Workbooks |
+| [`TaniumDiscoverUnmanagedAssets_CL`](../tables/taniumdiscoverunmanagedassets-cl.md) 🔶 | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Workbooks |
+| [`TaniumHighUptime_CL`](../tables/taniumhighuptime-cl.md) 🔶 | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Workbooks |
+| [`TaniumPatchCoverageStatus_CL`](../tables/taniumpatchcoveragestatus-cl.md) 🔶 | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Workbooks |
+| [`TaniumPatchListApplicability_CL`](../tables/taniumpatchlistapplicability-cl.md) 🔶 | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Workbooks |
+| [`TaniumPatchListCompliance_CL`](../tables/taniumpatchlistcompliance-cl.md) 🔶 | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Workbooks |
+| [`TaniumSCCMClientHealth_CL`](../tables/taniumsccmclienthealth-cl.md) 🔶 | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Workbooks |
+| [`TaniumThreatResponse_CL`](../tables/taniumthreatresponse-cl.md) 🔶 | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Analytics, Workbooks |
+
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 ## Content Items
 
-This solution includes **11 content item(s)** (10 in solution, 1 discovered 🔍):
+This solution includes **10 content item(s)**:
 
-| Content Type | Total | In Solution | Discovered |
-|:-------------|------:|------------:|-----------:|
-| Playbooks | 8 | 8 | - |
-| Workbooks | 2 | 1 | 1 |
-| Analytic Rules | 1 | 1 | - |
+| Content Type | Count |
+|:-------------|:------|
+| Playbooks | 8 |
+| Analytic Rules | 1 |
+| Workbooks | 1 |
 
 ### Analytic Rules
 
@@ -76,7 +82,6 @@ This solution includes **11 content item(s)** (10 in solution, 1 discovered 🔍
 | Name | Tables Used |
 |:-----|:------------|
 | [TaniumWorkbook](../content/tanium-taniumworkbook-97052723.md) | [`TaniumComplyCompliance_CL`](../tables/taniumcomplycompliance-cl.md)<br>[`TaniumComplyVulnerabilities_CL`](../tables/taniumcomplyvulnerabilities-cl.md)<br>[`TaniumDefenderHealth_CL`](../tables/taniumdefenderhealth-cl.md)<br>[`TaniumDiscoverUnmanagedAssets_CL`](../tables/taniumdiscoverunmanagedassets-cl.md)<br>[`TaniumHighUptime_CL`](../tables/taniumhighuptime-cl.md)<br>[`TaniumPatchCoverageStatus_CL`](../tables/taniumpatchcoveragestatus-cl.md)<br>[`TaniumPatchListApplicability_CL`](../tables/taniumpatchlistapplicability-cl.md)<br>[`TaniumPatchListCompliance_CL`](../tables/taniumpatchlistcompliance-cl.md)<br>[`TaniumSCCMClientHealth_CL`](../tables/taniumsccmclienthealth-cl.md)<br>[`TaniumThreatResponse_CL`](../tables/taniumthreatresponse-cl.md) |
-| [connect-module-connections](../content/tanium-connect-module-connections-aa28580e.md) ⚠️ | - |
 
 ### Playbooks
 
@@ -90,8 +95,6 @@ This solution includes **11 content item(s)** (10 in solution, 1 discovered 🔍
 | [Tanium-ResolveThreatResponseAlert](../content/tanium-tanium-resolvethreatresponsealert-7221fbd1.md) | Maintaining alert hygiene in multiple consoles can be overwhelming. This playbook helps teams keep T... | - |
 | [Tanium-SCCMClientHealth](../content/tanium-tanium-sccmclienthealth-010e4c0b.md) | Tanium's real-time data can speed up investigations by providing important context for analysts, suc... | - |
 | [Tanium-UnquarantineHosts](../content/tanium-tanium-unquarantinehosts-45d6fcd0.md) | This playbook starts with a Microsoft Sentinel incident, gets the hosts associated with that inciden... | - |
-
-> ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 
 ## Additional Documentation
 

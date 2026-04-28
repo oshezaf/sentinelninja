@@ -14,7 +14,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 3.1.0 |
+| **Version** | 3.0.9 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-01 |
 | **Last Updated** | 2026-02-11 |
@@ -117,7 +117,7 @@ This solution includes **22 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                          |
 |-------------|--------------------------------|-----------------------------------------------------------------------------|
-| 3.1.0       | 03-02-2026                     | Add support for group Cursor                                                |
+| 3.0.9       | 10-02-2026                     | Add support for group Cursor                                                |
 | 3.0.8       | 05-02-2026                     | fix name in package 3.0.7                                                   |
 | 3.0.7       | 26-01-2026                     | Improve Instructions part of the connector with more InfoMessage.           |
 | 3.0.6       | 09-12-2025                     | Support Multistream + multi partition.       |

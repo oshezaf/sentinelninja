@@ -39,617 +39,850 @@
 <ul>
 <li><a href="#schema">Schema</a></li>
 <li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
 <h2 id="schema">Schema (147 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/NetskopeCCFWebTx_CL.json">KQL validation test schema</a></p>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetskopeWebTx%5CData%20Connectors%5CNetskopeWebTx_CCF/NetskopeWebtx_Table.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
 <tr>
 <th style="text-align: left;">Column Name</th>
 <th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;">Bytes</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;">bytes.</td>
 </tr>
 <tr>
 <td style="text-align: left;">CIp</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">c-ip.</td>
 </tr>
 <tr>
 <td style="text-align: left;">CsBytes</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;">cs-bytes.</td>
 </tr>
 <tr>
 <td style="text-align: left;">CsContentType</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">cs-content-type.</td>
 </tr>
 <tr>
 <td style="text-align: left;">CsDns</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">cs-dns.</td>
 </tr>
 <tr>
 <td style="text-align: left;">CsHost</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">cs-host.</td>
 </tr>
 <tr>
 <td style="text-align: left;">CsMethod</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">cs-method.</td>
 </tr>
 <tr>
 <td style="text-align: left;">CsReferer</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">cs-referer.</td>
 </tr>
 <tr>
 <td style="text-align: left;">CsUri</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">cs-uri.</td>
 </tr>
 <tr>
 <td style="text-align: left;">CsUriPort</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;">cs-uri-port.</td>
 </tr>
 <tr>
 <td style="text-align: left;">CsUriQuery</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">cs-uri-query.</td>
 </tr>
 <tr>
 <td style="text-align: left;">CsUriScheme</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">cs-uri-scheme.</td>
 </tr>
 <tr>
 <td style="text-align: left;">CsUserAgent</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">cs-user-agent.</td>
 </tr>
 <tr>
 <td style="text-align: left;">CsUsername</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">cs-username.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Date</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">date.</td>
 </tr>
 <tr>
 <td style="text-align: left;">RsStatus</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;">rs-status.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ScBytes</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;">sc-bytes.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ScContentType</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">sc-content-type.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ScStatus</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;">sc-status.</td>
 </tr>
 <tr>
 <td style="text-align: left;">SIp</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">s-ip.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Time</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">time.</td>
 </tr>
 <tr>
 <td style="text-align: left;">TimeGenerated</td>
 <td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) reflecting the time in which the event was generated.</td>
 </tr>
 <tr>
 <td style="text-align: left;">TimeTaken</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;">time-taken.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCategory</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-category.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCategoryId</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;">x-category-id.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCBrowser</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-c-browser.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCBrowserVersion</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;">x-c-browser-version.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCCountry</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-c-country.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCDevice</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-c-device.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCLatitude</td>
 <td style="text-align: left;">real</td>
+<td style="text-align: left;">x-c-latitude.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XClientSslErr</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-client-ssl-err.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCLocalTime</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-c-local-time.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCLocation</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-c-location.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCLongitude</td>
 <td style="text-align: left;">real</td>
+<td style="text-align: left;">x-c-longitude.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCOs</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-c-os.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCRegion</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-c-region.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsAccessMethod</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-access-method.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsApp</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-app.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsAppActivity</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-app-activity.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsAppCategory</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-app-category.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsAppCci</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;">x-cs-app-cci.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsAppCcl</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-app-ccl.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsAppFromUser</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-app-from-user.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsAppInstanceId</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-app-instance-id.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsAppInstanceName</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-app-instance-name.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsAppInstanceTag</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-app-instance-tag.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsAppObjectId</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-app-object-id.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsAppObjectName</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-app-object-name.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsAppObjectType</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-app-object-type.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsAppSuite</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-app-suite.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsAppTags</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-app-tags.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsAppToUser</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-app-to-user.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsConnectHost</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-connect-host.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsConnectPort</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-connect-port.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsConnectUserAgent</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-connect-user-agent.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsDomainFrontedSni</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-domain-fronted-sni.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsDstIp</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-dst-ip.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsDstPort</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;">x-cs-dst-port.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsHttpVersion</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-http-version.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsIpConnectXff</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-ip-connect-xff.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsIpXff</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-ip-xff.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsPageId</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-page-id.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsSessionId</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-session-id.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsSite</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-site.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsSni</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-sni.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsSrcIp</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-src-ip.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsSrcIpEgress</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-src-ip-egress.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsSrcPort</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;">x-cs-src-port.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsSslCipher</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-ssl-cipher.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsSslEngineAction</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-ssl-engine-action.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsSslEngineActionReason</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-ssl-engine-action-reason.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsSslFrontingError</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-ssl-fronting-error.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsSslHandshakeError</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-ssl-handshake-error.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsSslJa3</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-ssl-ja3.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsSslVersion</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-ssl-version.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsTimestamp</td>
 <td style="text-align: left;">long</td>
+<td style="text-align: left;">x-cs-timestamp.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsTrafficType</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-traffic-type.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsTunnelId</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-tunnel-id.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsUriPath</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-uri-path.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsUrl</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-url.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCsUserIp</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-cs-userip.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XCZipcode</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;">x-c-zipcode.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XError</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-error.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XOtherCategory</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-other-category.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XOtherCategoryId</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-other-category-id.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XPolicyAction</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-policy-action.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XPolicyDstHost</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-policy-dst-host.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XPolicyDstHostSource</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-policy-dst-host-source.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XPolicyDstIp</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-policy-dst-ip.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XPolicyJustificationReason</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-policy-justification-reason.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XPolicyJustificationType</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-policy-justification-type.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XPolicyName</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-policy-name.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XPolicySrcIp</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-policy-src-ip.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XRCertEndDate</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-r-cert-enddate.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XRCertExpired</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-r-cert-expired.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XRCertIncompleteChain</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-r-cert-incomplete-chain.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XRCertIssuerCn</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-r-cert-issuer-cn.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XRCertMismatch</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-r-cert-mismatch.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XRCertRevocationCheck</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-r-cert-revocation-check.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XRCertRevoked</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-r-cert-revoked.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XRCertSelfSigned</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-r-cert-self-signed.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XRCertStartDate</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-r-cert-startdate.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XRCertSubjectCn</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-r-cert-subject-cn.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XRCertUntrustedRoot</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-r-cert-untrusted-root.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XRCertValid</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-r-cert-valid.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XRequestId</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-request-id.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XRsFileCategory</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-rs-file-category.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XRsFileLanguage</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-rs-file-language.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XRsFileMd5</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-rs-file-md5.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XRsFileSha256</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-rs-file-sha256.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XRsFileSize</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;">x-rs-file-size.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XRsFileType</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-rs-file-type.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XScNotificationName</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-sc-notification-name.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSCountry</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-s-country.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSCustomSigningCaError</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-s-custom-signing-ca-error.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSDpName</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-s-dp-name.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XServerSslErr</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-server-ssl-err.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSLatitude</td>
 <td style="text-align: left;">real</td>
+<td style="text-align: left;">x-s-latitude.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSLocation</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-s-location.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSLongitude</td>
 <td style="text-align: left;">real</td>
+<td style="text-align: left;">x-s-longitude.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSrDstIp</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-sr-dst-ip.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSrDstPort</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;">x-sr-dst-port.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSRegion</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-s-region.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSrHeadersName</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-sr-headers-name.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSrHeadersValue</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-sr-headers-value.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSrSrcIp</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-sr-src-ip.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSrSrcPort</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-sr-src-port.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSrSslCipher</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-sr-ssl-cipher.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSrSslClientCertificateError</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-sr-ssl-client-certificate-error.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSrSslEngineAction</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-sr-ssl-engine-action.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSrSslEngineActionReason</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-sr-ssl-engine-action-reason.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSrSslHandshakeError</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-sr-ssl-handshake-error.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSrSslJa3S</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-sr-ssl-ja3s.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSrSslMalformedSsl</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-sr-ssl-malformed-ssl.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSrSslVersion</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-sr-ssl-version.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSslBypass</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-ssl-bypass.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSslBypassReason</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-ssl-bypass-reason.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSslPolicyAction</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-ssl-policy-action.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSslPolicyCategories</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-ssl-policy-categories.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSslPolicyDstHost</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-ssl-policy-dst-host.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSslPolicyDstHostSource</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-ssl-policy-dst-host-source.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSslPolicyDstIp</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-ssl-policy-dst-ip.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSslPolicyName</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-ssl-policy-name.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSslPolicySrcIp</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-ssl-policy-src-ip.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XSZipcode</td>
 <td style="text-align: left;">int</td>
+<td style="text-align: left;">x-s-zipcode.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XTransactionId</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-transaction-id.</td>
 </tr>
 <tr>
 <td style="text-align: left;">XType</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;">x-type.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="solutions">Solutions (1)</h2>
+<h2 id="solutions">Solutions (2)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
+<li><a href="../solutions/netskopewebtx.html">NetskopeWebTx</a></li>
 <li><a href="../solutions/netskopev2.html">Netskopev2</a></li>
 </ul>
+<h2 id="connectors">Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/netskopewebtxconnector.html">Netskope Web Transaction Connector (via Blob Storage)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (1)</h2>
-<h3 id="workbooks">Workbooks (1)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (13)</h2>
+<h3 id="analytic-rules">Analytic Rules (10)</h3>
+<p><strong>In solution <a href="../solutions/netskopewebtx.html">NetskopeWebTx</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Analytic Rule</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/netskopewebtx-netskope-anomalous-user-behavior-high-volume-from-unmanaged-device-fa4c4f1c-3c5f-4c3a-a13f-924c30db56e9-a11677b7.html">Netskope - Anomalous User Behavior (High Volume from Unmanaged Device)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/netskopewebtx-netskope-data-movement-tracking-upload-download-monitoring-cf103180-cb81-4796-921d-3cc7eef4e817-0505a110.html">Netskope - Data Movement Tracking (Upload/Download Monitoring)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/netskopewebtx-netskope-excessive-downloads-detection-spike-vs-baseline-dd0ebd84-ffbe-45df-848b-0615ac446b04-e6a1be75.html">Netskope - Excessive Downloads Detection (Spike vs Baseline)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/netskopewebtx-netskope-heavy-personal-cloud-storage-usage-shadow-it-272f9bca-5fd0-4413-b494-03b2d9f0bb9b-b4a5c41b.html">Netskope - Heavy Personal Cloud Storage Usage (Shadow IT)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/netskopewebtx-netskope-impossible-travel-detection-two-countries-in-less-than-1-hour-d1b88716-3cd4-4585-a9a2-2dd2c9b04ecb-2929a498.html">Netskope - Impossible Travel Detection (Two Countries in Less Than 1 Hour)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/netskopewebtx-netskope-large-outbound-data-transfer-sensitive-upload-dlp-71e6586e-0d3f-4e33-b390-faa50b5e08fa-c78990bd.html">Netskope - Large Outbound Data Transfer / Sensitive Upload (DLP)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/netskopewebtx-netskope-new-risky-app-access-vs-7-day-baseline-ba66b81c-2cf7-4c53-9db0-e8b6f537704a-4dbceb22.html">Netskope - New Risky App Access vs 7-Day Baseline</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/netskopewebtx-netskope-repeated-or-critical-policy-violations-dacab67e-fcf3-41c6-a191-579c7be1814d-4ad41000.html">Netskope - Repeated or Critical Policy Violations</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/netskopewebtx-netskope-suspicious-network-context-unusual-ips-geo-ports-6d989fb0-933e-4ae6-88fa-10e7b51c8897-d6216d9a.html">Netskope - Suspicious Network Context (Unusual IPs/Geo/Ports)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/netskopewebtx-netskope-unsanctioned-risky-cloud-app-access-shadow-it-cdc01279-d6ea-41b1-a32d-49d726be95b8-be0feda5.html">Netskope - Unsanctioned/Risky Cloud App Access (Shadow IT)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks (3)</h3>
+<p><strong>In solution <a href="../solutions/netskopewebtx.html">NetskopeWebTx</a>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Workbook</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/netskopewebtx-netskopewebtx-workbook-95a52b5a.html">NetskopeWebTx_Workbook</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
 <p><strong>In solution <a href="../solutions/netskopev2.html">Netskopev2</a>:</strong></p>
 <table>
 <thead>
@@ -665,8 +898,23 @@
 </tr>
 </tbody>
 </table>
-<h2 id="parsers-using-this-table">Parsers Using This Table (1)</h2>
-<h3 id="other-parsers">Other Parsers (1)</h3>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Workbook</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-netskopewebtx-workbook-8c510694.html">NetskopeWebTx_Workbook</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="parsers-using-this-table">Parsers Using This Table (2)</h2>
+<h3 id="other-parsers">Other Parsers (2)</h3>
 <table>
 <thead>
 <tr>
@@ -679,6 +927,11 @@
 <tr>
 <td style="text-align: left;"><a href="../parsers/netskopeccfwebtransactions.html">NetskopeCCFWebTransactions</a></td>
 <td style="text-align: left;"><a href="../solutions/netskopev2.html">Netskopev2</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../parsers/netskopewebtx.html">NetskopeWebtx</a></td>
+<td style="text-align: left;"><a href="../solutions/netskopewebtx.html">NetskopeWebTx</a></td>
 <td style="text-align: left;"></td>
 </tr>
 </tbody>

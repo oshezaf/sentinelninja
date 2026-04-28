@@ -24,9 +24,9 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType in "NamedPipeEvent,RegistryKeyCreated"` | ✓ | ✗ | ✓ |
+| [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ | ? |
 | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ | ? |
-| [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) |  | ✓ | ✗ | ? |
+| [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) | `ActionType in "NamedPipeEvent,RegistryKeyCreated"` | ✓ | ✗ | ? |
 
 ---
 

@@ -29,8 +29,8 @@ This union parser includes parsers for the following products:
 
 | Product | Source Parser | Solutions |
 |:--------|:--------------|:----------|
-| Infoblox BloxOne | [_Im_DhcpEvent_InfobloxBloxOne](asimdhcpeventinfobloxbloxone.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
-| Native | [_Im_DhcpEvent_Native](asimdhcpeventnative.md) |  |
+| Infoblox BloxOne | [_Im_DhcpEvent_InfobloxBloxOne](asimdhcpeventinfobloxbloxone.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md)<br>[Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| Native | [_Im_DhcpEvent_Native](asimdhcpeventnative.md) | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md) |
 
 ## Parameters
 

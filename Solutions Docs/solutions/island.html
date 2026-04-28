@@ -46,7 +46,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.0.0</td>
+<td style="text-align: left;">3.2.0</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -58,7 +58,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Last Updated</strong></td>
-<td style="text-align: left;">2023-07-20</td>
+<td style="text-align: left;">2026-04-14</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Solution Folder</strong></td>
@@ -78,13 +78,14 @@
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>2 data connector(s)</strong>:</p>
+<p>This solution provides <strong>3 data connector(s)</strong>:</p>
 <ul>
-<li><a href="../connectors/island-admin-polling.html">Island Enterprise Browser Admin Audit (Polling CCP)</a></li>
-<li><a href="../connectors/island-user-polling.html">Island Enterprise Browser User Activity (Polling CCP)</a></li>
+<li><a href="../connectors/islandv2.html">Island Enterprise Browser V2</a></li>
+<li><a href="../connectors/island-admin-polling.html">Island Enterprise Browser Admin Events (Legacy)</a></li>
+<li><a href="../connectors/island-user-polling.html">Island Enterprise Browser User Events (Legacy)</a></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>2 table(s)</strong>:</p>
+<p>This solution uses <strong>5 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -95,13 +96,28 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="../tables/island-adminevents-v2-cl.html"><code>Island_AdminEvents_V2_CL</code></a></td>
+<td><a href="../connectors/islandv2.html">Island Enterprise Browser V2</a></td>
+<td>-</td>
+</tr>
+<tr>
 <td><a href="../tables/island-admin-cl.html"><code>Island_Admin_CL</code></a></td>
-<td><a href="../connectors/island-admin-polling.html">Island Enterprise Browser Admin Audit (Polling CCP)</a></td>
+<td><a href="../connectors/island-admin-polling.html">Island Enterprise Browser Admin Events (Legacy)</a></td>
 <td>Workbooks</td>
 </tr>
 <tr>
+<td><a href="../tables/island-systemevents-v2-cl.html"><code>Island_SystemEvents_V2_CL</code></a></td>
+<td><a href="../connectors/islandv2.html">Island Enterprise Browser V2</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/island-userevents-v2-cl.html"><code>Island_UserEvents_V2_CL</code></a></td>
+<td><a href="../connectors/islandv2.html">Island Enterprise Browser V2</a></td>
+<td>-</td>
+</tr>
+<tr>
 <td><a href="../tables/island-user-cl.html"><code>Island_User_CL</code></a></td>
-<td><a href="../connectors/island-user-polling.html">Island Enterprise Browser User Activity (Polling CCP)</a></td>
+<td><a href="../connectors/island-user-polling.html">Island Enterprise Browser User Events (Legacy)</a></td>
 <td>Workbooks</td>
 </tr>
 </tbody>
@@ -152,29 +168,19 @@
 </thead>
 <tbody>
 <tr>
+<td>3.2.0</td>
+<td>05-04-2026</td>
+<td>Reverted V1 connector names and descriptions to original. Updated V2 connector title, description, prerequisites, and configuration text. Removed placeholder URL from V2 connector.</td>
+</tr>
+<tr>
+<td>3.1.0</td>
+<td>16-02-2026</td>
+<td>Added <strong>Island V2 CCP Data Connector</strong> with DCR-based ingestion for user events, admin events, and system events. Marked V1 connectors as legacy.</td>
+</tr>
+<tr>
 <td>3.0.0</td>
 <td>28-07-2023</td>
 <td>Added API Url field to Data Connectors so all regions can be supported</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>Added new query rate limit in Data Connectors to prevent API flooding</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>Bug fix for wrong table referenced in query in workbook</td>
-</tr>
-<tr>
-<td>2.0.1</td>
-<td>08-05-2023</td>
-<td>Bug fix for APIVersion in Data Connector</td>
-</tr>
-<tr>
-<td>2.0.0</td>
-<td>14-02-2023</td>
-<td>Initial Solution Release</td>
 </tr>
 </tbody>
 </table>

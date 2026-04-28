@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Syslog`](../tables/syslog.md) | `ProcessName == "gw-audit"`<br>`SyslogMessage contains "ctera_audit"`<br>`SyslogMessage contains "op=delete"` | ✓ | ✓ | ✓ |
+| [`Syslog`](../tables/syslog.md) | `ProcessName == "gw-audit"`<br>`SyslogMessage contains "ctera_audit"`<br>`SyslogMessage contains "op=delete"` | ✓ | ✓ | ? |
 
 ---
 

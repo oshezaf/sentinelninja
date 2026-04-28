@@ -47,10 +47,6 @@
 <td style="text-align: left;">✓ Yes</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
-</tr>
-<tr>
 <td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimnetworksessionlogs">View Documentation</a></td>
 </tr>
@@ -812,16 +808,17 @@
 </tr>
 </tbody>
 </table>
-<h2 id="solutions">Solutions (5)</h2>
+<h2 id="solutions">Solutions (6)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/cisco-meraki-events-via-rest-api.html">Cisco Meraki Events via REST API</a></li>
 <li><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></li>
 <li><a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a></li>
+<li><a href="../solutions/synqlyintegrationconnector.html">SynqlyIntegrationConnector</a></li>
 <li><a href="../solutions/vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></li>
 <li><a href="../solutions/windows-firewall.html">Windows Firewall</a></li>
 </ul>
-<h2 id="connectors">Connectors (4)</h2>
+<h2 id="connectors">Connectors (6)</h2>
 <p>This table is ingested by the following connectors:</p>
 <table>
 <thead>
@@ -836,7 +833,11 @@
 <td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a></td>
+<td style="text-align: left;"><a href="../connectors/crowdstrikereplicatorv2.html">[DEPRECATED] CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/synqlyintegrationconnector.html">Synqly Integration Connector</a></td>
 <td style="text-align: left;"></td>
 </tr>
 <tr>
@@ -845,6 +846,10 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)</a></td>
 <td style="text-align: left;"></td>
 </tr>
 </tbody>

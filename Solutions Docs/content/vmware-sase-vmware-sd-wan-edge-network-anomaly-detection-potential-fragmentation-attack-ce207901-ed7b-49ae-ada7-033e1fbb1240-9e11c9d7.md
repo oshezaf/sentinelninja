@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Syslog`](../tables/syslog.md) | `SyslogMessage contains "VCF Drop"`<br>`SyslogMessage contains "packet too big"` | ✓ | ✓ | ✓ |
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage contains "VCF Drop"`<br>`SyslogMessage contains "packet too big"` | ✓ | ✓ | ? |
 
 ---
 

@@ -18,12 +18,12 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) | ✓ | ✗ | ✓ |
-| [`AZFWDnsQuery`](../tables/azfwdnsquery.md) | ✓ | ✗ | ✓ |
-| [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) | ✓ | ✗ | ✓ |
-| [`AZFWNatRule`](../tables/azfwnatrule.md) | ✓ | ✗ | ✓ |
-| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) | ✓ | ✗ | ✓ |
-| [`AZFWThreatIntel`](../tables/azfwthreatintel.md) | ✓ | ✗ | ✓ |
+| [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) | ✓ | ✗ | ? |
+| [`AZFWDnsQuery`](../tables/azfwdnsquery.md) | ✓ | ✗ | ? |
+| [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) | ✓ | ✗ | ? |
+| [`AZFWNatRule`](../tables/azfwnatrule.md) | ✓ | ✗ | ? |
+| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) | ✓ | ✗ | ? |
+| [`AZFWThreatIntel`](../tables/azfwthreatintel.md) | ✓ | ✗ | ? |
 
 ---
 

@@ -1,6 +1,6 @@
 # Analytic Rules - V
 
-**82 analytic rules** starting with 'V'.
+**84 analytic rules** starting with 'V'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -8,13 +8,20 @@
 
 ---
 
-**Jump to letter:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | [B](analytic-rules-b.md) | [C](analytic-rules-c.md) | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | [M](analytic-rules-m.md) | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | **V** | [W](analytic-rules-w.md) | [Z](analytic-rules-z.md)
+**Jump to letter:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | [B](analytic-rules-b.md) | [C](analytic-rules-c.md) | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | [M](analytic-rules-m.md) | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | **V** | [W](analytic-rules-w.md) | [X](analytic-rules-x.md) | [Z](analytic-rules-z.md)
 
 > **Source:** 📦 Solution | 📄 Standalone | 🔗 GitHub Only
 
 | Name | Severity | Source |
 |:-----|:---------|:-------|
+| [Vaikora - Agent policy violation](vaikora-sentinel-vaikora-agent-policy-violation-54262ad1-f346-4246-a13f-9557595ff7bd-946b4697.md) | Medium | 📦 [Vaikora-Sentinel](../solutions/vaikora-sentinel.md) |
+| [Vaikora - Behavioral anomaly detected](vaikora-sentinel-vaikora-behavioral-anomaly-detected-e61258ec-1a7f-454c-95b5-458a6edb1ea4-7a520c0a.md) | Medium | 📦 [Vaikora-Sentinel](../solutions/vaikora-sentinel.md) |
+| [Vaikora - High severity AI agent action detected](vaikora-sentinel-vaikora-high-severity-ai-agent-action-detected-15c49777-7cb7-4746-8064-6fa4c7a73df8-39a65e3c.md) | High | 📦 [Vaikora-Sentinel](../solutions/vaikora-sentinel.md) |
 | [Valence Security Alerts](valence-security-valence-security-alerts-d944d564-b6fa-470d-b5ab-a1a141878c5e-f39d1559.md) | High | 📦 [Valence Security](../solutions/valence-security.md) |
+| [Valimail Enforce - DMARC Policy Weakened to None](valimailenforce-valimail-enforce-dmarc-policy-weakened-to-none-44ec1fa4-a502-41ae-879a-3aad3557edce-ba6726ed.md) | High | 📦 [ValimailEnforce](../solutions/valimailenforce.md) |
+| [Valimail Enforce - Email Authentication Key Deleted](valimailenforce-valimail-enforce-email-authentication-key-deleted-483078c6-d029-40f3-931a-30af0032008b-737952e9.md) | Medium | 📦 [ValimailEnforce](../solutions/valimailenforce.md) |
+| [Valimail Enforce - High-Value User Management Event](valimailenforce-valimail-enforce-high-value-user-management-event-e960f5b0-cd80-474a-996a-013ff3989772-199686de.md) | High | 📦 [ValimailEnforce](../solutions/valimailenforce.md) |
+| [Valimail Enforce - Unusual Rate of Configuration Changes or User Additions](valimailenforce-valimail-enforce-unusual-rate-of-configuration-changes-or-user-additions-3cbb78d9-81ac-42c9-b3cd-7e6baea7d9ff-19771ced.md) | Medium | 📦 [ValimailEnforce](../solutions/valimailenforce.md) |
 | [vArmour AppController - SMB Realm Traversal](varmour-application-controller-varmour-appcontroller-smb-realm-traversal-a36de6c3-3198-4d37-92ae-e19e36712c2e-f56ac1bb.md) | Medium | 📦 [vArmour Application Controller](../solutions/varmour-application-controller.md) |
 | [Vaults Alerts for Prancer](prancer-pensuiteai-integration-vaults-alerts-for-prancer-0b76eef3-5dc0-41b1-9f67-fffa7783f5f6-72954fb5.md) ⚠️ | High | 📦 [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [vCenter - Root impersonation](vmware-vcenter-vcenter-root-impersonation-f1fcb22c-b459-42f2-a7ee-7276b5f1309c-9fa02551.md) | Medium | 📦 [VMware vCenter](../solutions/vmware-vcenter.md) |
@@ -49,19 +56,12 @@
 | [Veeam ONE VM with No Backup (Hyper-V)](veeam-veeam-one-vm-with-no-backup-hyper-v-ae880194-5766-46d3-a17b-c8c53e9ca96c-8666a76e.md) | High | 📦 [Veeam](../solutions/veeam.md) |
 | [Veeam ONE VM with No Replica](veeam-veeam-one-vm-with-no-replica-128ea2a4-1047-4f28-ad55-b1b88357d172-1cdf365f.md) | High | 📦 [Veeam](../solutions/veeam.md) |
 | [Veeam ONE VM with No Replica (Hyper-V)](veeam-veeam-one-vm-with-no-replica-hyper-v-6117e317-4b90-4bcc-a71f-0c1f29d82ce3-5e9c3162.md) | High | 📦 [Veeam](../solutions/veeam.md) |
-| [Vip Credential (High)](ctm360-vip-credential-high-cff80e20-3861-402c-8cff-5889185d95cc-45eb67f0.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Vip Credential (Informational)](ctm360-vip-credential-informational-9b653351-9230-47e5-9909-801f0c6dc491-65c6d2db.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Vip Credential (Low)](ctm360-vip-credential-low-2560eb20-5bd6-40df-979b-60b8f3ab5f50-f8791fdc.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Vip Credential (Medium)](ctm360-vip-credential-medium-72c00e43-752f-4bd5-941d-b45f7360a688-7e3979c6.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
+| [Versasec CMS - Multiple Failed Login Attempts](versaseccms-versasec-cms-multiple-failed-login-attempts-b1db8b7e-9d74-48c3-9683-74483cbeff4e-7caa6cd1.md) | High | 📦 [VersasecCMS](../solutions/versaseccms.md) |
 | [VIP Mailbox manipulation](microsoft-exchange-security-exchange-on-premises-vip-mailbox-manipulation-5170c3c4-b8c9-485c-910d-a21d965ee181-521c4b8b.md) | Medium | 📦 [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
 | [Virtual Lab Deleted](veeam-virtual-lab-deleted-384e92a7-103c-4a47-945d-381ae9653f91-65be69c1.md) | Low | 📦 [Veeam](../solutions/veeam.md) |
 | [Virtual Lab Settings Updated](veeam-virtual-lab-settings-updated-a21eccd5-0148-4f88-a5d7-a8f86e9e4d8e-be075442.md) | Low | 📦 [Veeam](../solutions/veeam.md) |
 | [Virtual Machines Alerts for Prancer](prancer-pensuiteai-integration-virtual-machines-alerts-for-prancer-c13b025c-ea31-4e4b-8e08-955b8fa91fa0-cecfef04.md) ⚠️ | High | 📦 [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [VirtualNetworkPeerings Alerts From Prancer](prancer-pensuiteai-integration-virtualnetworkpeerings-alerts-from-prancer-6bd031cf-78d0-4edd-8191-60f84b6eef7a-4bd81a33.md) ⚠️ | High | 📦 [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
-| [Vishing (High)](ctm360-vishing-high-988415b6-da47-49dc-988d-08d7ff2a3beb-2bf59412.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Vishing (Informational)](ctm360-vishing-informational-a7972261-fa39-46aa-b416-c7f004884d8b-556b5b92.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Vishing (Low)](ctm360-vishing-low-2240c94a-62ce-46a6-8200-0f17d0736f6c-6d8e27fa.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Vishing (Medium)](ctm360-vishing-medium-1630e5aa-7cea-4429-979f-c6b8f9ee1a21-6166fc17.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
 | [VMware Cloud Web Security - Data Loss Prevention Violation](vmware-sase-vmware-cloud-web-security-data-loss-prevention-violation-d811ef72-66b9-43a3-ba29-cd9e4bf75b74-2c6b5792.md) | Medium | 📦 [VMware SASE](../solutions/vmware-sase.md) |
 | [VMware Cloud Web Security - Policy Change Detected](vmware-sase-vmware-cloud-web-security-policy-change-detected-3efebd49-c985-431b-9da8-d7d397092d18-1ae30e0f.md) | Informational | 📦 [VMware SASE](../solutions/vmware-sase.md) |
 | [VMware Cloud Web Security - Policy Publish Event](vmware-sase-vmware-cloud-web-security-policy-publish-event-b26a7d97-6b6e-43ab-870e-eb18460ae602-67b089d5.md) | Informational | 📦 [VMware SASE](../solutions/vmware-sase.md) |
@@ -93,6 +93,8 @@
 | [VMware vCenter - Root login](vmware-vcenter-vmware-vcenter-root-login-03e8a895-b5ba-49a0-aed3-f9a997d92fbe-e2c012c8.md) | High | 📦 [VMware vCenter](../solutions/vmware-vcenter.md) |
 | [Votiro - File Blocked from Connector](votiro-votiro-file-blocked-from-connector-17bf3780-ae0d-4cd9-a884-5df8b687f3f5-13901b84.md) | Low | 📦 [Votiro](../solutions/votiro.md) |
 | [Votiro - File Blocked in Email](votiro-votiro-file-blocked-in-email-0b8b91de-c63e-4bc2-b5f4-b15d3b379ec9-dd69805e.md) | Low | 📦 [Votiro](../solutions/votiro.md) |
+| [VTI - High Severity Domain Collision Detection](visa-threat-intelligence-vti-vti-high-severity-domain-collision-detection-7be47078-657a-43cf-9c93-b4705a9f6134-72918c13.md) | High | 📦 [Visa Threat Intelligence (VTI)](../solutions/visa-threat-intelligence-vti.md) |
+| [VTI - High Severity SHA1 Collision Detection](visa-threat-intelligence-vti-vti-high-severity-sha1-collision-detection-dbd9e28f-973d-47f3-a8c3-9e18da846870-1dd78c47.md) | High | 📦 [Visa Threat Intelligence (VTI)](../solutions/visa-threat-intelligence-vti.md) |
 | [Vulerabilities](ridgesecurity-vulerabilities-d096643d-6789-4c74-8893-dd3fc8a94069-d1a748f6.md) | High | 📦 [RidgeSecurity](../solutions/ridgesecurity.md) |
 | [Vulnerable Machines related to log4j CVE-2021-44228](apache-log4j-vulnerability-detection-vulnerable-machines-related-to-log4j-cve-2021-44228-3d71fc38-f249-454e-8479-0a358382ef9a-5fca98f8.md) | High | 📦 [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md) |
 | [Vulnerable Machines related to OMIGOD CVE-2021-38647](standalone-content-vulnerable-machines-related-to-omigod-cve-2021-38647-4d94d4a9-dc96-450a-9dea-4d4d4594199b-99c76b14.md) | High | 📄 Standalone Content |

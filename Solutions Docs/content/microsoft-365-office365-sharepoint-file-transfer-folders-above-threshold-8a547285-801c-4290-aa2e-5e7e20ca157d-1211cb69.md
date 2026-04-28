@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload has_any "OneDrive,SharePoint"` | ✓ | ✗ | ✓ |
+| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload has_any "OneDrive,SharePoint"` | ✓ | ✗ | ? |
 
 ---
 

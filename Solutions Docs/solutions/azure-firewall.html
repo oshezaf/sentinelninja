@@ -156,7 +156,7 @@
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>18 content item(s)</strong>:</p>
+<p>This solution includes <strong>23 content item(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -167,7 +167,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;">Analytic Rules</td>
-<td style="text-align: left;">6</td>
+<td style="text-align: left;">11</td>
 </tr>
 <tr>
 <td style="text-align: left;">Hunting Queries</td>
@@ -207,6 +207,30 @@
 <td style="text-align: left;"><a href="../tables/azfwapplicationrule.html"><code>AZFWApplicationRule</code></a><br><a href="../tables/azfwnetworkrule.html"><code>AZFWNetworkRule</code></a><br><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a></td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="../content/azure-firewall-ddos-attack-detected-c3ffdbe6-2e62-4984-9e80-933ed90b2f6a-59acf5f9.html">DDoS attack detected</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Impact</td>
+<td style="text-align: left;"><a href="../tables/azfwidpssignature.html"><code>AZFWIdpsSignature</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-firewall-elevation-of-privilege-attempt-detected-7a0f78b3-9a55-4ad0-a56d-b6616fdbff6a-b129ebd8.html">Elevation of Privilege attempt detected</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess, CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/azfwidpssignature.html"><code>AZFWIdpsSignature</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-firewall-high-severity-malicious-activity-detected-504257c1-81e2-4609-8d40-b395e62f11c7-f6b4b12e.html">High severity malicious activity detected</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess, Exfiltration, CredentialAccess, CommandAndControl, Execution</td>
+<td style="text-align: left;"><a href="../tables/azfwidpssignature.html"><code>AZFWIdpsSignature</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-firewall-medium-severity-malicious-activity-detected-dfbe3963-42fb-4ebe-a00c-1cc44e2aa9f0-618233f6.html">Medium severity malicious activity detected</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess, Execution, DefenseEvasion, Impact</td>
+<td style="text-align: left;"><a href="../tables/azfwidpssignature.html"><code>AZFWIdpsSignature</code></a></td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="../content/azure-firewall-multiple-sources-affected-by-the-same-ti-destination-4644baf7-3464-45dd-bd9d-e07687e25f81-c5003c22.html">Multiple Sources Affected by the Same TI Destination</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">Exfiltration, CommandAndControl</td>
@@ -229,6 +253,12 @@
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">Discovery, LateralMovement, CommandAndControl</td>
 <td style="text-align: left;"><a href="../tables/azfwapplicationrule.html"><code>AZFWApplicationRule</code></a><br><a href="../tables/azfwflowtrace.html"><code>AZFWFlowTrace</code></a><br><a href="../tables/azfwidpssignature.html"><code>AZFWIdpsSignature</code></a><br><a href="../tables/azfwnetworkrule.html"><code>AZFWNetworkRule</code></a><br><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azure-firewall-web-application-attack-detected-8159a8d2-13a5-49af-847b-e062c45ab92b-0ae6b75d.html">Web Application attack detected</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/azfwidpssignature.html"><code>AZFWIdpsSignature</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -336,14 +366,9 @@
 </thead>
 <tbody>
 <tr>
-<td>3.0.6</td>
-<td>28-10-2025</td>
-<td>Enhanced the Azure Firewall analytic rule to extend Fqdn from DestinationIp for improved detection of Multiple Sources Affected by the Same TI Destination.</td>
-</tr>
-<tr>
 <td>3.0.5</td>
-<td>26-07-2024</td>
-<td>Updated <strong>Analytical Rule</strong> for missing TTP</td>
+<td>13-02-2026</td>
+<td>Updated <strong>Analytic Rule</strong> to cover missing TTPs. Extended detection for FQDN and Destination IP across multiple sources and added new <strong>Analytic Rule</strong> for improved TI destination coverage.</td>
 </tr>
 <tr>
 <td>3.0.4</td>

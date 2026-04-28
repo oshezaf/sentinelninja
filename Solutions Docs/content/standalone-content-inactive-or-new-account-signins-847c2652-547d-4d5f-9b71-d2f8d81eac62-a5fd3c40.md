@@ -24,9 +24,9 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ? |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ | ? |
-| [`SigninLogs`](../tables/signinlogs.md) | `OperationName == "Add user"` | ✓ | ✗ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) | `OperationName == "Add user"` | ✓ | ✗ | ? |
 
 ## Associated Connectors
 

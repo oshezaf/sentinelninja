@@ -25,8 +25,8 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DragosAlerts_CL`](../tables/dragosalerts-cl.md) | ✓ | ✓ | ✓ |
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
+| [`DragosAlerts_CL`](../tables/dragosalerts-cl.md) | ? | ✓ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
 
 ---
 

@@ -14,7 +14,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-04-04 |
 | **Last Updated** | 2026-03-06 |
@@ -46,6 +46,7 @@ This solution uses **6 table(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.0.2       | 27-02-2026                     | Update Google Kubernetes Engine CCF **Data Connector** with GA Public Documentation, updated GCP Grid to have Stream information.  |
 | 3.0.1       | 06-10-2025                     | Google Kubernetes Engine CCF **Data Connector** Moving to GA.  |
 | 3.0.0       | 08-04-2025                     | Initial Solution Release.<br/>New CCF **Data Connector** 'Google Kubernetes Engine'.  |
 

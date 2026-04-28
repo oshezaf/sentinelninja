@@ -68,11 +68,11 @@ This solution uses **10 table(s)**:
 
 ## Content Items
 
-This solution includes **18 content item(s)**:
+This solution includes **23 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
-| Analytic Rules | 6 |
+| Analytic Rules | 11 |
 | Hunting Queries | 5 |
 | Playbooks | 5 |
 | Workbooks | 2 |
@@ -83,10 +83,15 @@ This solution includes **18 content item(s)**:
 |:-----|:---------|:--------|:------------|
 | [Abnormal Deny Rate for Source IP](../content/azure-firewall-abnormal-deny-rate-for-source-ip-d36bb1e3-5abc-4037-ad9a-24ba3469819e-bcaa208f.md) | Medium | InitialAccess, Exfiltration, CommandAndControl | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`AZFWFlowTrace`](../tables/azfwflowtrace.md)<br>[`AZFWIdpsSignature`](../tables/azfwidpssignature.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md) |
 | [Abnormal Port to Protocol](../content/azure-firewall-abnormal-port-to-protocol-826f930c-2f25-4508-8e75-a95b809a4e15-f673b591.md) | Medium | Exfiltration, CommandAndControl | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [DDoS attack detected](../content/azure-firewall-ddos-attack-detected-c3ffdbe6-2e62-4984-9e80-933ed90b2f6a-59acf5f9.md) | High | Impact | [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) |
+| [Elevation of Privilege attempt detected](../content/azure-firewall-elevation-of-privilege-attempt-detected-7a0f78b3-9a55-4ad0-a56d-b6616fdbff6a-b129ebd8.md) | High | InitialAccess, CredentialAccess | [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) |
+| [High severity malicious activity detected](../content/azure-firewall-high-severity-malicious-activity-detected-504257c1-81e2-4609-8d40-b395e62f11c7-f6b4b12e.md) | High | InitialAccess, Exfiltration, CredentialAccess, CommandAndControl, Execution | [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) |
+| [Medium severity malicious activity detected](../content/azure-firewall-medium-severity-malicious-activity-detected-dfbe3963-42fb-4ebe-a00c-1cc44e2aa9f0-618233f6.md) | Medium | InitialAccess, Execution, DefenseEvasion, Impact | [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) |
 | [Multiple Sources Affected by the Same TI Destination](../content/azure-firewall-multiple-sources-affected-by-the-same-ti-destination-4644baf7-3464-45dd-bd9d-e07687e25f81-c5003c22.md) | Medium | Exfiltration, CommandAndControl | [`AZFWThreatIntel`](../tables/azfwthreatintel.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md) |
 | [Port Scan](../content/azure-firewall-port-scan-b2c5907b-1040-4692-9802-9946031017e8-a6887f4e.md) | Medium | Discovery | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md) |
 | [Port Sweep](../content/azure-firewall-port-sweep-720335f4-ee8c-4270-9424-d0859222168c-d77c9cf0.md) | Medium | Discovery | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md) |
 | [Several deny actions registered](../content/azure-firewall-several-deny-actions-registered-f8dad4e9-3f19-4d70-ab7f-8f19ccd43a3e-e192f460.md) | Medium | Discovery, LateralMovement, CommandAndControl | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`AZFWFlowTrace`](../tables/azfwflowtrace.md)<br>[`AZFWIdpsSignature`](../tables/azfwidpssignature.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [Web Application attack detected](../content/azure-firewall-web-application-attack-detected-8159a8d2-13a5-49af-847b-e062c45ab92b-0ae6b75d.md) | High | InitialAccess | [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) |
 
 ### Hunting Queries
 
@@ -119,8 +124,7 @@ This solution includes **18 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                       |
 |-------------|--------------------------------|------------------------------------------------------------------------------------------|
-| 3.0.6       | 28-10-2025                     | Enhanced the Azure Firewall analytic rule to extend Fqdn from DestinationIp for improved detection of Multiple Sources Affected by the Same TI Destination. |
-| 3.0.5       | 26-07-2024                     | Updated **Analytical Rule** for missing TTP	                                          |
+| 3.0.5       | 13-02-2026                     | Updated **Analytic Rule** to cover missing TTPs. Extended detection for FQDN and Destination IP across multiple sources and added new **Analytic Rule** for improved TI destination coverage.                                           |
 | 3.0.4       | 12-02-2024                     | Updated **Analytical Rule**	                                          |
 | 3.0.3       | 17-01-2024                     | Updated Azure Firewall **Data Connector**  to support resource specific logs.            |
 | 3.0.2       | 15-12-2023                     | Updated query  in  **Analytical Rule** (Port Scan)                                       |

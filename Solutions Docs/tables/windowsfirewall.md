@@ -149,6 +149,7 @@ This table is ingested by the following connectors:
 
 This table collects data from the following Azure resource types:
 
+- `microsoft.operationalinsights/workspaces`
 - `microsoft.compute/virtualmachines`
 - `microsoft.conenctedvmwarevsphere/virtualmachines`
 - `microsoft.azurestackhci/virtualmachines`

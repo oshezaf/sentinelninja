@@ -8,9 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -30,7 +28,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Island Enterprise Browser User Activity (Polling CCP)](../connectors/island-user-polling.md) |  |
+| [Island Enterprise Browser User Events (Legacy)](../connectors/island-user-polling.md) |  |
 
 ---
 

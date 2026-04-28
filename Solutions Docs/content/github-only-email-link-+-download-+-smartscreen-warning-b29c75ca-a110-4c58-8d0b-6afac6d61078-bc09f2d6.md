@@ -22,7 +22,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType in "BrowserLaunchedToOpenUrl,SmartScreenAppWarning,SmartScreenUserOverride"` | ✓ | ✗ | ✓ |
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType in "BrowserLaunchedToOpenUrl,SmartScreenAppWarning,SmartScreenUserOverride"` | ✓ | ✗ | ? |
 | [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ | ? |
 
 ---

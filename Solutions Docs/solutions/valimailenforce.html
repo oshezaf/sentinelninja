@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ ValimailEnforce &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="valimailenforce">⚠️ ValimailEnforce</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/valimail.svg" alt="ValimailEnforce Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Valimail</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.valimail.com">https://support.valimail.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Valimail - support@valimail.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2026-03-31</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ValimailEnforce">ValimailEnforce</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://support.valimail.com/en/articles/10911206-api-overview">Valimail API</a> solution provides ability to bring the Valimail Configuration events to your Microsoft Sentinel Workspace to inform and to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more. </p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>a. <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Logs: DCR-based Custom Logs</a></p>
+<p>b. <a href="https://learn.microsoft.com/azure/sentinel/create-codeless-connector">Codeless Connector Framework (CCF)</a></p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/valimailenforceeventsconnector.html">Valimail Enforce Configuration Events</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/valimailenforceevents-cl.html"><code>ValimailEnforceEvents_CL</code></a></td>
+<td><a href="../connectors/valimailenforceeventsconnector.html">Valimail Enforce Configuration Events</a></td>
+<td>Analytics, Hunting</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>8 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hunting Queries</td>
+<td style="text-align: left;">4</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/valimailenforce-valimail-enforce-dmarc-policy-weakened-to-none-44ec1fa4-a502-41ae-879a-3aad3557edce-ba6726ed.html">Valimail Enforce - DMARC Policy Weakened to None</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">DefenseEvasion, InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/valimailenforceevents-cl.html"><code>ValimailEnforceEvents_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/valimailenforce-valimail-enforce-email-authentication-key-deleted-483078c6-d029-40f3-931a-30af0032008b-737952e9.html">Valimail Enforce - Email Authentication Key Deleted</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/valimailenforceevents-cl.html"><code>ValimailEnforceEvents_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/valimailenforce-valimail-enforce-high-value-user-management-event-e960f5b0-cd80-474a-996a-013ff3989772-199686de.html">Valimail Enforce - High-Value User Management Event</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Impact, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/valimailenforceevents-cl.html"><code>ValimailEnforceEvents_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/valimailenforce-valimail-enforce-unusual-rate-of-configuration-changes-or-user-additions-3cbb78d9-81ac-42c9-b3cd-7e6baea7d9ff-19771ced.html">Valimail Enforce - Unusual Rate of Configuration Changes or User Additions</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact, DefenseEvasion, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/valimailenforceevents-cl.html"><code>ValimailEnforceEvents_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hunting-queries">Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/valimailenforce-valimail-enforce-bulk-domain-changes-by-single-user-85db7cdc-378e-48b9-b6cf-77fd622aa617-4970dc01.html">Valimail Enforce - Bulk Domain Changes by Single User</a></td>
+<td style="text-align: left;">Impact, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/valimailenforceevents-cl.html"><code>ValimailEnforceEvents_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/valimailenforce-valimail-enforce-configuration-change-rate-trend-ce30ce49-2eaf-483c-85cd-c27a645d5355-83699391.html">Valimail Enforce - Configuration Change Rate Trend</a></td>
+<td style="text-align: left;">Impact, DefenseEvasion, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/valimailenforceevents-cl.html"><code>ValimailEnforceEvents_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/valimailenforce-valimail-enforce-dmarc-policy-change-history-ad6df9bc-5c1d-4dcd-8df9-516bc35f4dfe-df562b72.html">Valimail Enforce - DMARC Policy Change History</a></td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/valimailenforceevents-cl.html"><code>ValimailEnforceEvents_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/valimailenforce-valimail-enforce-high-value-event-summary-a2be34b7-e841-471a-aaac-142be8a74cab-8dcb669f.html">Valimail Enforce - High Value Event Summary</a></td>
+<td style="text-align: left;">DefenseEvasion, Impact</td>
+<td style="text-align: left;"><a href="../tables/valimailenforceevents-cl.html"><code>ValimailEnforceEvents_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.0</td>
+<td>22-04-2026</td>
+<td>Initial Solution Release</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+</div>
+
+</body>
+</html>

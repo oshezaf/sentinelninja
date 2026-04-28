@@ -47,7 +47,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.0.0</td>
+<td style="text-align: left;">3.0.2</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -182,6 +182,21 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>3.0.3</td>
+<td>06-03-2026</td>
+<td>Added <code>User-Agent: data443-tacitred-crowdstrike/1.0</code> header to CrowdStrike API calls (OAuth2 token + IOC POST) for CrowdStrike Technology Partner certification compliance.</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>02-03-2026</td>
+<td>Fixed hardcoded <code>CrowdStrike_BaseUrl</code> default (<code>https://api.us-2.crowdstrike.com</code>) causing auth failures for US-1/EU-1 customers. Cleared to empty string with regional URL guidance.</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>17-02-2026</td>
+<td>Fixed <code>InvalidResourceLocation</code> error: removed non-standard <code>location</code> parameter from inner template. Added missing <code>hidden-SentinelTemplateName</code> and <code>hidden-SentinelTemplateVersion</code> tags so playbook template appears in Sentinel Automation. Removed <code>TacitRed_Domain</code> filter — playbook now fetches all findings.</td>
+</tr>
 <tr>
 <td>3.0.0</td>
 <td>23-01-2026</td>

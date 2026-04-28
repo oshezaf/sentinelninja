@@ -17,6 +17,13 @@ Reference for QualysKnowledgeBase table in Azure Monitor Logs.
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/qualysknowledgebase) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (28 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/qualysknowledgebase)
@@ -52,7 +59,30 @@ Reference for QualysKnowledgeBase table in Azure Monitor Logs.
 | VulnTitle | string | Title of the ingested vulnerability. |
 | VulnType | string | Type or classification of the vulnerability. |
 
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [Qualys VM Knowledgebase](../solutions/qualys-vm-knowledgebase.md)
+
+## Connectors (2)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Qualys VM KnowledgeBase](../connectors/qualyskb.md) |  |
+| [Qualys Knowledge Base (via Codeless Connector Framework)](../connectors/qualyskbconnector.md) |  |
+
 ---
+
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [QualysKB](../parsers/qualyskb.md) | [Qualys VM Knowledgebase](../solutions/qualys-vm-knowledgebase.md) |  |
 
 ---
 

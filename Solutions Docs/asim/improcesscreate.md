@@ -33,12 +33,12 @@ This union parser includes parsers for the following products:
 |  | [_Im_ProcessCreate_LinuxSysmon](im-processcreate-linuxsysmon.md) |  |
 |  | [_Im_ProcessCreate_MD4IoT](im-processcreate-md4iot.md) |  |
 |  | [_Im_ProcessCreate_MicrosoftSecurityEvents](im-processcreate-microsoftsecurityevents.md) |  |
-|  | [_Im_ProcessCreate_MicrosoftSysmon](im-processcreate-microsoftsysmon.md) |  |
 |  | [_Im_ProcessCreate_MicrosoftWindowsEvents](im-processcreate-microsoftwindowsevents.md) |  |
-| SentinelOne | [_Im_ProcessCreate_SentinelOne](asimprocesscreatesentinelone.md) | [SentinelOne](../solutions/sentinelone.md) |
+| SentinelOne | [_Im_ProcessCreate_SentinelOne](asimprocesscreatesentinelone.md) |  |
 |  | [_Im_ProcessCreate_VMwareCarbonBlackCloud](im-processcreate-vmwarecarbonblackcloud.md) |  |
+| Sysmon | [_Im_ProcessEvent_CreateMicrosoftSysmon](asimprocesseventcreatemicrosoftsysmon.md) |  |
 | Microsoft 365 Defender for endpoint | [_Im_ProcessEvent_Microsoft365D](asimprocesseventmicrosoft365d.md) |  |
-| Native | [_Im_ProcessEvent_Native](asimprocesseventnative.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)<br>[VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
+| Native | [_Im_ProcessEvent_Native](asimprocesseventnative.md) | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md)<br>[VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
 
 ## Parameters
 
@@ -52,9 +52,9 @@ This union parser includes parsers for the following products:
 | `actingprocess_has_any` | dynamic | dynamic([]) |
 | `targetprocess_has_any` | dynamic | dynamic([]) |
 | `parentprocess_has_any` | dynamic | dynamic([]) |
-| `targetusername` | string | * |
+| `targetusername_has` | string | * |
 | `dvcipaddr_has_any_prefix` | dynamic | dynamic([]) |
-| `dvcname_has_any` | dynamic | dynamic([]) |
+| `dvchostname_has_any` | dynamic | dynamic([]) |
 | `hashes_has_any` | dynamic | dynamic([]) |
 | `eventtype` | string | * |
 

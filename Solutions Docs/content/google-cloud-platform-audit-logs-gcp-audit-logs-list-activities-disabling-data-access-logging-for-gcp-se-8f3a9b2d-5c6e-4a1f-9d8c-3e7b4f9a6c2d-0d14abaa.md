@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | ✓ | ✓ | ✓ |
+| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | ✓ | ✓ | ? |
 
 ---
 

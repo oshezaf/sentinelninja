@@ -15,60 +15,59 @@
 
 - [Schema](#schema)
 - [Solutions](#solutions)
+- [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
-## Schema (40 columns)
+## Schema (30 columns)
 
-**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/TaniumDiscoverUnmanagedAssets_CL.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium%5CData%20Connectors/Table_DiscoverUnmanagedAssets.json)
 
-| Column Name | Type |
-|:------------|:-----|
-| Arp_d | real |
-| AwsApi_d | real |
-| CentralizedNmap_d | real |
-| CloudTags_s | string |
-| Computer | string |
-| Connected_d | real |
-| CreatedAt_s | string |
-| HostName_s | string |
-| id_d | real |
-| ImageId_s | string |
-| InstanceId_s | string |
-| InstanceState_s | string |
-| InstanceType_s | string |
-| IPAddress | string |
-| Labels_s | string |
-| LastDiscoveredAt_s | string |
-| LaunchTime_s | string |
-| Locations_s | string |
-| MacAddress_s | string |
-| MacOrganization_s | string |
-| Managed_d | real |
-| NatIpAddress_s | string |
-| Nmap_d | real |
-| Os_s | string |
-| OsGeneration_d | real |
-| OsGeneration_s | string |
-| OwnerId_s | string |
-| Ping_d | real |
-| Ports_s | string |
-| Profile_s | string |
-| Provider_s | string |
-| RawData | string |
-| SatelliteNmap_d | real |
-| TaniumComputerId_d | real |
-| TimeGenerated | datetime |
-| Type | string |
-| Unmanageable_d | real |
-| UpdatedAt_s | string |
-| VirtualNetworkId_s | string |
-| Zone_s | string |
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| Arp_b | bool |  |
+| AwsApi_b | bool |  |
+| CentralizedNmap_b | bool |  |
+| Connected_b | bool |  |
+| CreatedAt_t | datetime |  |
+| FirstManagedAt_t | datetime |  |
+| HostName_s | string |  |
+| id_d | real |  |
+| IPAddress | string |  |
+| Labels_s | string |  |
+| LastDiscoveredAt_t | datetime |  |
+| LastManagedAt_t | datetime |  |
+| Locations_s | string |  |
+| MacAddress_s | string |  |
+| MacOrganization_s | string |  |
+| Managed_b | bool |  |
+| NatIpAddress_s | string |  |
+| Nmap_b | bool |  |
+| Os_s | string |  |
+| OsGeneration_s | string |  |
+| Ping_b | bool |  |
+| Ports_s | string |  |
+| Profile_s | string |  |
+| SatelliteDecId_g | guid |  |
+| SatelliteName_s | string |  |
+| SatelliteNmap_b | bool |  |
+| TaniumComputerId_d | real |  |
+| TimeGenerated | datetime | The time at which the data was generated |
+| Unmanageable_d | real |  |
+| UpdatedAt_t | datetime |  |
 
 ## Solutions (1)
 
 This table is used by the following solutions:
 
 - [Tanium](../solutions/tanium.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Tanium's CCF Push Connector](../connectors/taniumconnector.md) |  |
 
 ---
 

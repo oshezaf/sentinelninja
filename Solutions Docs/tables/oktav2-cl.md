@@ -95,7 +95,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Okta Single Sign-On](../connectors/oktassov2.md) |  |
+| [Okta Single Sign-On (via Codeless Connector Framework)](../connectors/oktassov2.md) |  |
 | [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon-usingazurefunctions.md) |  |
 
 ---

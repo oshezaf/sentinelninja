@@ -47,7 +47,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.0.7</td>
+<td style="text-align: left;">3.0.11</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -71,11 +71,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Pre-requisites</strong></td>
-<td style="text-align: left;"><a href="amazon-web-services.html">Amazon Web Services</a>, <a href="azure-firewall.html">Azure Firewall</a>, <a href="azure-network-security-groups.html">Azure Network Security Groups</a>, <a href="check-point.html">Check Point</a>, <a href="ciscoasa.html">CiscoASA</a>, <a href="ciscomeraki.html">CiscoMeraki</a>, <a href="corelight.html">Corelight</a>, <a href="fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.html">Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel</a>, <a href="iototthreatmonitoringwithdefenderforiot.html">IoTOTThreatMonitoringwithDefenderforIoT</a>, <a href="microsoft-defender-for-cloud.html">Microsoft Defender for Cloud</a>, <a href="microsoft-sysmon-for-linux.html">Microsoft Sysmon For Linux</a>, <a href="windows-firewall.html">Windows Firewall</a>, <a href="paloalto-pan-os.html">PaloAlto-PAN-OS</a>, <a href="vectra-ai-stream.html">Vectra AI Stream</a>, <a href="watchguard-firebox.html">Watchguard Firebox</a>, <a href="zscaler-internet-access.html">Zscaler Internet Access</a>, <a href="illumiosaas.html">IllumioSaaS</a></td>
+<td style="text-align: left;"><a href="amazon-web-services.html">Amazon Web Services</a>, <a href="azure-firewall.html">Azure Firewall</a>, <a href="azure-network-security-groups.html">Azure Network Security Groups</a>, <a href="check-point.html">Check Point</a>, <a href="ciscoasa.html">CiscoASA</a>, <a href="ciscomeraki.html">CiscoMeraki</a>, <a href="corelight.html">Corelight</a>, <a href="fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.html">Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel</a>, <a href="iototthreatmonitoringwithdefenderforiot.html">IoTOTThreatMonitoringwithDefenderforIoT</a>, <a href="microsoft-defender-for-cloud.html">Microsoft Defender for Cloud</a>, <a href="microsoft-sysmon-for-linux.html">Microsoft Sysmon For Linux</a>, <a href="windows-firewall.html">Windows Firewall</a>, <a href="paloalto-pan-os.html">PaloAlto-PAN-OS</a>, <a href="vectra-ai-stream.html">Vectra AI Stream</a>, <a href="watchguard-firebox.html">Watchguard Firebox</a>, zscaler1579058425289.zscaler_internet_access_mss, <a href="illumiosaas.html">IllumioSaaS</a></td>
 </tr>
 </tbody>
 </table>
-<p><a href="https://aka.ms/NetworkSessionEssential">Network Session Essentials</a> is a <a href="https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fazure%2Fsentinel%2Fsentinel-solutions-catalog%23domain-solutions&amp;data=05%7C01%7Ckavishbakshi%40microsoft.com%7Cbe2a496082b24caa4b8c08da9cefacca%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637994850502413731%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=OJegu%2B2EqD7rmYmK9pm9QniD6YWp5ooloZ6tHzcwVi0%3D&amp;reserved=0">domain solution</a> and does not include any data connectors. The content in this solution requires one of the product solutions below , as well as any other connector or data source normalized to the <a href="https://aka.ms/AboutASIM">ASIM</a>.</p>
+<p><a href="https://learn.microsoft.com/azure/sentinel/domain-based-essential-solutions">Network Session Essentials</a> is a <a href="https://learn.microsoft.com/azure/sentinel/sentinel-solutions-catalog#domain-solutions">domain solution</a> and does not include any data connectors. The content in this solution requires one of the product solutions below , as well as any other connector or data source normalized to the <a href="https://aka.ms/AboutASIM">ASIM</a>.</p>
 <p>For details on the required solutions, see the <a href="#pre-requisites">Pre-requisites</a> section below.</p>
 <p><strong>Recommendation :-</strong></p>
 <p>It is highly recommended to use the <strong>Summarize data</strong> logic app playbook provided with this solution as it will significantly improve the performance of the Workbook, Analytic rules &amp; Hunting queries.</p>
@@ -92,7 +92,7 @@
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="pre-requisites">Pre-requisites</h2>
-<p>This solution depends on <strong>17 other solution(s)</strong>:</p>
+<p>This solution depends on <strong>16 other solution(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -148,9 +148,6 @@
 <tr>
 <td style="text-align: left;"><a href="windows-firewall.html">Windows Firewall</a></td>
 </tr>
-<tr>
-<td style="text-align: left;"><a href="zscaler-internet-access.html">Zscaler Internet Access</a></td>
-</tr>
 </tbody>
 </table>
 <h2 id="data-connectors">Data Connectors</h2>
@@ -182,8 +179,6 @@
 <li><a href="../connectors/watchguardfirebox.html">[Deprecated] WatchGuard Firebox</a> <em>(dependency on <a href="watchguard-firebox.html">Watchguard Firebox</a>)</em></li>
 <li><a href="../connectors/windowsfirewall.html">Windows Firewall</a> <em>(dependency on <a href="windows-firewall.html">Windows Firewall</a>)</em></li>
 <li><a href="../connectors/windowsfirewallama.html">Windows Firewall Events via AMA</a> <em>(dependency on <a href="windows-firewall.html">Windows Firewall</a>)</em></li>
-<li><a href="../connectors/zscaler.html">[Deprecated] Zscaler via Legacy Agent</a> <em>(dependency on <a href="zscaler-internet-access.html">Zscaler Internet Access</a>)</em></li>
-<li><a href="../connectors/zscalerama.html">[Deprecated] Zscaler via AMA</a> <em>(dependency on <a href="zscaler-internet-access.html">Zscaler Internet Access</a>)</em></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
 <p>This solution queries <strong>10 table(s)</strong> from its content items:</p>
@@ -608,6 +603,16 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>3.0.11</td>
+<td>24-03-2026</td>
+<td>Bump solution version and Updated links to remove review.learn.</td>
+</tr>
+<tr>
+<td>3.0.10</td>
+<td>14-02-2026</td>
+<td>Updated links to remove review.learn.</td>
+</tr>
 <tr>
 <td>3.0.9</td>
 <td>06-02-2026</td>

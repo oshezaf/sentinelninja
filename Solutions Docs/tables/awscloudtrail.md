@@ -14,7 +14,6 @@ Reference for AWSCloudTrail table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awscloudtrail) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -357,13 +356,15 @@ This table is ingested by the following connectors:
 | [Log4jPostCompromiseHunting](../content/github-only-log4jpostcompromisehunting-7193cd47.md) |  |
 | [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `EventName !contains "Image"`<br>`EventName !contains "KeyPair"`<br>`EventName !contains "LaunchTemplate"`<br>`EventName !contains "Tags"`<br>`EventName !contains "Volume"`<br>`EventName startswith "authorize"`<br>`EventName startswith "create"`<br>`EventName startswith "delete"`<br>`EventName startswith "replace"`<br>`EventName startswith "revoke"` |
 
-## Parsers Using This Table (1)
+## Parsers Using This Table (3)
 
-### ASIM Parsers (1) — Selection Criteria: `EventName == "ConsoleLogin"`
+### ASIM Parsers (3)
 
-| Parser | Schema | Product |
-|:-------|:-------|:--------|
-| [ASimAuthenticationAWSCloudTrail](../asim/asimauthenticationawscloudtrail.md) | Authentication | AWS |
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimAuthenticationAWSCloudTrail](../asim/asimauthenticationawscloudtrail.md) | Authentication | AWS | `EventName == "ConsoleLogin"` |
+| [ASimFileEventAWSCloudTrail](../asim/asimfileeventawscloudtrail.md) | FileEvent | AWS Cloud Trail |  |
+| [ASimUserManagementAWSCloudTrail](../asim/asimusermanagementawscloudtrail.md) | UserManagement | AWS Cloud Trail |  |
 
 ## Selection Criteria Summary (57 criteria, 99 total references)
 

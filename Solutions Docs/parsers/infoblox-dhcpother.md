@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Syslog`](../tables/syslog.md) | `SyslogMessage has_any "AccessRight,AdminGroup,AdminMember,Created Role,Login_Allowed,Login_Denied,balanced,balancing,delegatedzone,failover,forwardzone"` | ✓ | ✓ | ✓ |
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage has_any "AccessRight,AdminGroup,AdminMember,Created Role,Login_Allowed,Login_Denied,balanced,balancing,delegatedzone,failover,forwardzone"` | ✓ | ✓ | ? |
 
 ---
 

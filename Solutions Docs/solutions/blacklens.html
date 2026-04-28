@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>blacklens.io for Microsoft Sentinel &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="blacklensio-for-microsoft-sentinel">blacklens.io for Microsoft Sentinel</h1>
+<p><em>Solution: Blacklens</em></p>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/blacklens.svg" alt="Blacklens Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">blacklens.io Support</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://blacklens.io/contact">https://blacklens.io/contact</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">snapSEC GmbH - support@blacklens.io</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2025-12-31</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2026-04-17</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Blacklens">Blacklens</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Marketplace</strong></td>
+<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/snapsecgmbh1733575353555.blacklens-sentinel-solution">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://blacklens.io">blacklens.io</a> solution for Microsoft Sentinel ingests Insights/Alerts from blacklens.io via a webhook-triggered Logic App and the Azure Monitor Logs Ingestion API. It includes a data connector with deployment instructions and a Near Real-Time (NRT) analytics rule that automatically creates Microsoft Sentinel incidents from ingested alerts.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/blacklens-io.html">blacklens.io</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/blacklens-cl.html"><code>blacklens_CL</code></a></td>
+<td><a href="../connectors/blacklens-io.html">blacklens.io</a></td>
+<td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>1 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/blacklens-blacklens-insights-e261b70a-3005-4a1b-a7a2-2c8147fafed7-10e2c23b.html">blacklens Insights</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Reconnaissance, ResourceDevelopment, InitialAccess, CredentialAccess, Collection, Exfiltration, DefenseEvasion, CommandAndControl</td>
+<td style="text-align: left;"><a href="../tables/blacklens-cl.html"><code>blacklens_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Blacklens/README.md">Blacklens/README.md</a></em></p>
+</blockquote>
+<h1 id="blacklensio">blacklens.io</h1>
+<p>The <strong>blacklens.io Microsoft Sentinel integration</strong> allows you to ingest all related alerts about your Attack Surface directly in Microsoft Sentinel.</p>
+<p><strong>blacklens.io</strong> is a comprehensive <strong>Attack Surface Management (ASM)</strong> platform that helps organizations understand and secure their external attack surface. By combining automated security analysis, continuous monitoring, and penetration testing, blacklens.io identifies and addresses vulnerabilities early. Features such as <strong>Darknet Monitoring</strong>, <strong>Vulnerability Scanning</strong>, and <strong>XDR Response</strong> enable a proactive defense strategy and provide a clear, continuous view of an organization’s external security posture.</p>
+<p>This integration enables security teams to <strong>centralize blacklens.io alerts in Microsoft Sentinel</strong>, correlate them with other security data sources, and automatically create incidents for investigation and response.</p>
+<hr />
+<h2 id="what-does-this-solution-deploy">What does this solution deploy?</h2>
+<p>When you install this solution, the following resources are deployed:</p>
+<ul>
+<li>A <strong>custom Log Analytics table</strong>: <code>blacklens_CL</code></li>
+<li>A <strong>Data Collection Endpoint (DCE)</strong> and <strong>Data Collection Rule (DCR)</strong> for secure log ingestion</li>
+<li>A <strong>Logic App (webhook-based)</strong> to receive alerts from blacklens.io</li>
+<li>A <strong>Microsoft Sentinel Analytics Rule</strong> to generate incidents from ingested alerts</li>
+</ul>
+<hr />
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before installing this solution, ensure that:</p>
+<ul>
+<li>Microsoft Sentinel is enabled on the target Log Analytics workspace</li>
+<li>You have <strong>Contributor</strong> or <strong>Owner</strong> permissions on the workspace and resource group</li>
+</ul>
+<hr />
+<h2 id="installation">Installation</h2>
+<ol>
+<li>Open <strong>Microsoft Sentinel</strong> in the Azure Portal.</li>
+<li>Navigate to <strong>Content hub</strong>.</li>
+<li>Search for <strong>blacklens.io</strong>.</li>
+<li>Select the solution and click <strong>Install</strong>.</li>
+<li>Choose the subscription, resource group, and target Log Analytics workspace. Use the same resource group where your Microsoft Sentinel workspace resides.</li>
+<li>Complete the installation.</li>
+</ol>
+<p>After the installation finishes, continue with the post-deployment configuration steps below.</p>
+<hr />
+<h2 id="post-deployment-configuration">Post-deployment configuration (Guided steps)</h2>
+<p>After deployment, a webhook endpoint is created that must be configured in blacklens.io.</p>
+<h3 id="step-1-copy-the-webhook-url">Step 1: Copy the webhook URL</h3>
+<ol>
+<li>Open the <strong>deployment details</strong> of the installed solution.</li>
+<li>Navigate to the <strong>Outputs</strong> tab.</li>
+<li>Copy the <strong>webhookUrl</strong> value.</li>
+</ol>
+<h3 id="step-2-configure-blacklensio">Step 2: Configure blacklens.io</h3>
+<ol>
+<li>Log in to the <a href="https://blacklens.io">blacklens.io portal</a>.</li>
+<li>Navigate to the webhook integration settings.</li>
+<li>Paste the webhook URL copied in Step 1.</li>
+<li>Save the configuration.</li>
+<li>Link the webhook integration to at least one <strong>notification policy</strong> so that alerts are sent to the webhook.</li>
+</ol>
+<p>After a few minutes, an informational test incident should appear in Microsoft Sentinel.</p>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.2</td>
+<td>13-04-2026</td>
+<td>Fix invalid secureData on ParseJson action.</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>30-03-2026</td>
+<td>Bug fix.</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>16-02-2026</td>
+<td>Initial Solution Release.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+</div>
+
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zscaler Internet Access for Microsoft Sentinel &mdash; Solutions Analyzer</title>
+<title>Zscaler Internet Access &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,8 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="zscaler-internet-access-for-microsoft-sentinel">Zscaler Internet Access for Microsoft Sentinel</h1>
-<p><em>Solution: Zscaler Internet Access</em></p>
+<h1 id="zscaler-internet-access">Zscaler Internet Access</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ZscalerLogo.svg" alt="Zscaler Internet Access Logo" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
@@ -39,7 +38,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Support Link</strong></td>
-<td style="text-align: left;"><a href="https://help.zscaler.com/submit-ticket-links">https://help.zscaler.com/submit-ticket-links</a></td>
+<td style="text-align: left;"><a href="https://www.zscaler.com/support/">https://www.zscaler.com/support/</a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Categories</strong></td>
@@ -47,7 +46,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.0.3</td>
+<td style="text-align: left;">3.0.4</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -55,61 +54,55 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>First Published</strong></td>
-<td style="text-align: left;">2022-05-25</td>
+<td style="text-align: left;">2022-10-10</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2025-09-02</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Solution Folder</strong></td>
 <td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access">Zscaler Internet Access</a></td>
 </tr>
-<tr>
-<td style="text-align: left;"><strong>Marketplace</strong></td>
-<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/zscaler1579058425289.zscaler_internet_access_mss">Azure Marketplace</a> · Rating: ★★★★★ 4.6/5 (180 ratings) · Popularity: 🟢 High (82%)</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Pre-requisites</strong></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a></td>
-</tr>
 </tbody>
 </table>
-<p>The <a href="https://www.zscaler.com/products/zscaler-internet-access">Zscaler Internet Access</a> Solution for Microsoft Sentinel enables you to easily connect your Zscaler Internet Access (ZIA) logs with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation. Using Zscaler on Microsoft Sentinel will provide you more insights into your organization’s Internet usage and will enhance its security operation capabilities. </p>
-<p>For more details about this solution refer to <a href="https://help.zscaler.com/zia/zscaler-microsoft-azure-sentinel-deployment-guide">https://help.zscaler.com/zia/zscaler-microsoft-azure-sentinel-deployment-guide</a> </p>
-<p>This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation. </p>
-<p><strong>NOTE:</strong> Microsoft recommends installation of CEF via AMA Connector. The existing connectors were deprecated on <strong>Aug 31, 2024</strong>.</p>
+<p>The <a href="https://www.zscaler.com/products-and-solutions/zscaler-internet-access">Zscaler Internet Access</a> solution for Microsoft Sentinel enables you to ingest <a href="https://help.zscaler.com/zia/nanolog-streaming-service">Zscaler Internet Access Logs</a> into Microsoft Sentinel using the Microsoft Sentinel Analytics Workspace.</p>
+<p>Supported log types include:
+ 1. Web, Firewall, DNS, Tunnel
+ 2. Endpoint DLP, Email DLP
+ 3. CASB: Activity, Cloud Storage, Collaboration, CRM, Email, File Sharing, ITSM, Repo
+ 4. Audit</p>
+<p>This enables you to monitor web access, security events, and data protection activity, and respond using the included workbooks and playbooks.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:
+ 1. <a href="https://docs.microsoft.com/azure/azure-monitor/logs/custom-logs-overview">Azure Monitor Logs: DCR-based Custom Logs</a>
+ 2. <a href="https://docs.microsoft.com/azure/sentinel/create-codeless-connector?tabs=deploy-via-arm-template%2Cconnect-via-the-azure-portal">Codeless Connector Platform (CCP)</a>
+ 3. <a href="https://learn.microsoft.com/azure/logic-apps/logic-apps-overview">Azure Logic Apps</a></p>
 <h2 id="contents">Contents</h2>
 <ul>
-<li><a href="#pre-requisites">Pre-requisites</a></li>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#tables-used">Tables Used</a></li>
 <li><a href="#content-items">Content Items</a></li>
 </ul>
-<h2 id="pre-requisites">Pre-requisites</h2>
-<p>This solution depends on <strong>1 other solution(s)</strong>:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Solution</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a></td>
-</tr>
-</tbody>
-</table>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution has <strong>2 discovered data connector(s)⚠️</strong> (not in Solution definition):</p>
+<p>This solution provides <strong>15 data connector(s)</strong>:</p>
 <ul>
-<li><a href="../connectors/zscaler.html">[Deprecated] Zscaler via Legacy Agent</a> ⚠️</li>
-<li><a href="../connectors/zscalerama.html">[Deprecated] Zscaler via AMA</a> ⚠️</li>
+<li><a href="../connectors/cloudnssauditlogs-ccp.html">Zscaler Internet Access Cloud NSS Audit Log Push Connector</a></li>
+<li><a href="../connectors/cloudnsscasbactivitylogs-ccp.html">Zscaler Internet Access Cloud NSS CASB Activity Log Push Connector</a></li>
+<li><a href="../connectors/cloudnsscasbcrmlogs-ccp.html">Zscaler Internet Access Cloud NSS CASB CRM Log Push Connector</a></li>
+<li><a href="../connectors/cloudnsscasbcloudstoragelogs-ccp.html">Zscaler Internet Access Cloud NSS CASB Cloud Storage Log Push Connector</a></li>
+<li><a href="../connectors/cloudnsscasbcollablogs-ccp.html">Zscaler Internet Access Cloud NSS CASB Collaboration Log Push Connector</a></li>
+<li><a href="../connectors/cloudnsscasbemaillogs-ccp.html">Zscaler Internet Access Cloud NSS CASB Email Log Push Connector</a></li>
+<li><a href="../connectors/cloudnsscasbfilesharinglogs-ccp.html">Zscaler Internet Access Cloud NSS CASB File Sharing Log Push Connector</a></li>
+<li><a href="../connectors/cloudnsscasbitsmlogs-ccp.html">Zscaler Internet Access Cloud NSS CASB ITSM Log Push Connector</a></li>
+<li><a href="../connectors/cloudnsscasbrepologs-ccp.html">Zscaler Internet Access Cloud NSS CASB Repo Log Push Connector</a></li>
+<li><a href="../connectors/cloudnssdnslogs-ccp.html">Zscaler Internet Access Cloud NSS DNS Log Push Connector</a></li>
+<li><a href="../connectors/cloudnssemaildlplogs-ccp.html">Zscaler Internet Access Cloud NSS Email DLP Log Push Connector</a></li>
+<li><a href="../connectors/cloudnssendpointdlplogs-ccp.html">Zscaler Internet Access Cloud NSS Endpoint DLP Log Push Connector</a></li>
+<li><a href="../connectors/cloudnssfwlogs-ccp.html">Zscaler Internet Access Cloud NSS Firewall Log Push Connector</a></li>
+<li><a href="../connectors/cloudnsstunnellogs-ccp.html">Zscaler Internet Access Cloud NSS Tunnel Log Push Connector</a></li>
+<li><a href="../connectors/cloudnssweblogs-ccp.html">Zscaler Internet Access Cloud NSS Web Log Push Connector</a></li>
 </ul>
-<p>Connectors from dependency solutions:</p>
-<ul>
-<li><a href="../connectors/cef.html">Common Event Format (CEF)</a> <em>(dependency on <a href="common-event-format.html">Common Event Format</a>)</em></li>
-<li><a href="../connectors/cefama.html">Common Event Format (CEF) via AMA</a> <em>(dependency on <a href="common-event-format.html">Common Event Format</a>)</em></li>
-</ul>
-<blockquote>
-<p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
-</blockquote>
 <h2 id="tables-used">Tables Used</h2>
 <p>This solution uses <strong>1 table(s)</strong>:</p>
 <table>
@@ -123,36 +116,40 @@
 <tbody>
 <tr>
 <td><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
-<td><a href="../connectors/cef.html">Common Event Format (CEF)</a> (dependency), <a href="../connectors/cefama.html">Common Event Format (CEF) via AMA</a> (dependency), <a href="../connectors/zscalerama.html">[Deprecated] Zscaler via AMA</a>, <a href="../connectors/zscaler.html">[Deprecated] Zscaler via Legacy Agent</a></td>
+<td><a href="../connectors/cloudnssauditlogs-ccp.html">Zscaler Internet Access Cloud NSS Audit Log Push Connector</a>, <a href="../connectors/cloudnsscasbactivitylogs-ccp.html">Zscaler Internet Access Cloud NSS CASB Activity Log Push Connector</a>, <a href="../connectors/cloudnsscasbcrmlogs-ccp.html">Zscaler Internet Access Cloud NSS CASB CRM Log Push Connector</a>, <a href="../connectors/cloudnsscasbcloudstoragelogs-ccp.html">Zscaler Internet Access Cloud NSS CASB Cloud Storage Log Push Connector</a>, <a href="../connectors/cloudnsscasbcollablogs-ccp.html">Zscaler Internet Access Cloud NSS CASB Collaboration Log Push Connector</a>, <a href="../connectors/cloudnsscasbemaillogs-ccp.html">Zscaler Internet Access Cloud NSS CASB Email Log Push Connector</a>, <a href="../connectors/cloudnsscasbfilesharinglogs-ccp.html">Zscaler Internet Access Cloud NSS CASB File Sharing Log Push Connector</a>, <a href="../connectors/cloudnsscasbitsmlogs-ccp.html">Zscaler Internet Access Cloud NSS CASB ITSM Log Push Connector</a>, <a href="../connectors/cloudnsscasbrepologs-ccp.html">Zscaler Internet Access Cloud NSS CASB Repo Log Push Connector</a>, <a href="../connectors/cloudnssdnslogs-ccp.html">Zscaler Internet Access Cloud NSS DNS Log Push Connector</a>, <a href="../connectors/cloudnssemaildlplogs-ccp.html">Zscaler Internet Access Cloud NSS Email DLP Log Push Connector</a>, <a href="../connectors/cloudnssendpointdlplogs-ccp.html">Zscaler Internet Access Cloud NSS Endpoint DLP Log Push Connector</a>, <a href="../connectors/cloudnssfwlogs-ccp.html">Zscaler Internet Access Cloud NSS Firewall Log Push Connector</a>, <a href="../connectors/cloudnsstunnellogs-ccp.html">Zscaler Internet Access Cloud NSS Tunnel Log Push Connector</a>, <a href="../connectors/cloudnssweblogs-ccp.html">Zscaler Internet Access Cloud NSS Web Log Push Connector</a></td>
 <td>Analytics, Workbooks</td>
 </tr>
 </tbody>
 </table>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>11 content item(s)</strong>:</p>
+<p>This solution includes <strong>29 content item(s)</strong> (27 in solution, 2 discovered 🔍):</p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Content Type</th>
-<th style="text-align: left;">Count</th>
+<th style="text-align: right;">Total</th>
+<th style="text-align: right;">In Solution</th>
+<th style="text-align: right;">Discovered</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;">Workbooks</td>
-<td style="text-align: left;">4</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">-</td>
 </tr>
 <tr>
 <td style="text-align: left;">Playbooks</td>
-<td style="text-align: left;">3</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">-</td>
 </tr>
 <tr>
 <td style="text-align: left;">Analytic Rules</td>
-<td style="text-align: left;">2</td>
-</tr>
-<tr>
-<td style="text-align: left;">Parsers</td>
-<td style="text-align: left;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
 </tr>
 </tbody>
 </table>
@@ -168,13 +165,13 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/zscaler-internet-access-discord-cdn-risky-file-download-010bd98c-a6be-498c-bdcd-502308c0fdae-581fe083.html">Discord CDN Risky File Download</a></td>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-discord-cdn-risky-file-download-010bd98c-a6be-498c-bdcd-502308c0fdae-581fe083.html">Discord CDN Risky File Download</a> ⚠️</td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">CommandAndControl</td>
 <td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/zscaler-internet-access-request-for-single-resource-on-domain-4d500e6d-c984-43a3-9f39-7edec8dcc04d-7778e224.html">Request for single resource on domain</a></td>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-request-for-single-resource-on-domain-4d500e6d-c984-43a3-9f39-7edec8dcc04d-7778e224.html">Request for single resource on domain</a> ⚠️</td>
 <td style="text-align: left;">Low</td>
 <td style="text-align: left;">CommandAndControl</td>
 <td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
@@ -191,19 +188,71 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/zscaler-internet-access-zscalerfirewall-bc68adf2.html">ZscalerFirewall</a></td>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-nssauditlogs-87498814.html">NSSAuditLogs</a></td>
 <td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/zscaler-internet-access-zscaleroffice365apps-bcb66bac.html">ZscalerOffice365Apps</a></td>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-nsscasbactivitylogs-0f33695f.html">NSSCASBActivityLogs</a></td>
 <td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/zscaler-internet-access-zscalerthreats-c11e0924.html">ZscalerThreats</a></td>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-nsscasbcrmlogs-26d4fe79.html">NSSCASBCRMLogs</a></td>
 <td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/zscaler-internet-access-zscalerweboverview-7e8374eb.html">ZscalerWebOverview</a></td>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-nsscasbcloudstoragelogs-82b90374.html">NSSCASBCloudStorageLogs</a></td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-nsscasbcollablogs-c8df0b8f.html">NSSCASBCollabLogs</a></td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-nsscasbemail-b49ea906.html">NSSCASBEmail</a></td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-nsscasbfilesharinglogs-9c3c0d80.html">NSSCASBFileSharingLogs</a></td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-nsscasbitsmlogs-d4dec864.html">NSSCASBITSMLogs</a></td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-nsscasbrepologs-fe9ebeee.html">NSSCASBRepoLogs</a></td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-nssdnslogs-42cf7154.html">NSSDNSLogs</a></td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-nssemaildlplogs-f9c40d5b.html">NSSEmailDLPLogs</a></td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-nssendpointdlplogs-0e576c1a.html">NSSEndpointDLPLogs</a></td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-nssfwlogs-388b174c.html">NSSFWLogs</a></td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-nsstunnellogs-b80054bc.html">NSSTunnelLogs</a></td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-nssweblogsoffice365-2d8bc9c5.html">NSSWebLogsOffice365</a></td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-nssweblogsoverview-075f4b3c.html">NSSWebLogsOverview</a></td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-nssweblogsthreats-fa8d9804.html">NSSWebLogsThreats</a></td>
 <td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
 </tr>
 </tbody>
@@ -219,44 +268,60 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/zscaler-internet-access-block-url-zscaler-3de5a1e8.html">Block URL - Zscaler</a></td>
-<td style="text-align: left;">This playbook allows blocks URLs in Zscaler by adding them to categories</td>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-zscaler-oauth2-authentication-c37368ef.html">Zscaler OAuth2 Authentication</a></td>
+<td style="text-align: left;">This playbook obtains OAuth2 access tokens for Zscaler Internet Access (ZIA) integrations using Zsca...</td>
 <td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/zscaler-internet-access-filehash-enrichment-zscaler-0f34e8b2.html">FileHash Enrichment - Zscaler</a></td>
-<td style="text-align: left;">This playbook post a Zscaler Sandbox report for each FileHash found in the incident.</td>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-zscaler-oauth2-blacklist-url-27279293.html">Zscaler OAuth2 Blacklist URL</a></td>
+<td style="text-align: left;">This playbook adds URLs to the Zscaler security blacklist using OAuth2 authentication.</td>
 <td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/zscaler-internet-access-zscaler-api-authentication-929a054e.html">Zscaler API authentication</a></td>
-<td style="text-align: left;">This playbook generates access token in Zscaler API. Call this playbook as a step in functional Zsca...</td>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-zscaler-oauth2-block-ip-e0e0e694.html">Zscaler OAuth2 Block IP</a></td>
+<td style="text-align: left;">This playbook blocks IP addresses in Zscaler by adding them to a category using OAuth2 authenticatio...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-zscaler-oauth2-block-url-4b1dadde.html">Zscaler OAuth2 Block URL</a></td>
+<td style="text-align: left;">This playbook blocks URLs in Zscaler by adding them to a category using OAuth2 authentication.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-zscaler-oauth2-lookup-ip-5af05082.html">Zscaler OAuth2 Lookup IP</a></td>
+<td style="text-align: left;">This playbook looks up IP categorization information from Zscaler using OAuth2 authentication.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-zscaler-oauth2-lookup-url-5639e8da.html">Zscaler OAuth2 Lookup URL</a></td>
+<td style="text-align: left;">This playbook looks up URL categorization information from Zscaler using OAuth2 authentication.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-zscaler-oauth2-unblock-ip-d1f2a8b5.html">Zscaler OAuth2 Unblock IP</a></td>
+<td style="text-align: left;">This playbook unblocks IP addresses in Zscaler by removing them from a category using OAuth2 authent...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-zscaler-oauth2-unblock-url-04fceeb1.html">Zscaler OAuth2 Unblock URL</a></td>
+<td style="text-align: left;">This playbook unblocks URLs in Zscaler by removing them from a category using OAuth2 authentication.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-zscaler-oauth2-unblacklisturl-374efebd.html">Zscaler-Oauth2-UnblacklistURL</a></td>
+<td style="text-align: left;">This playbook enables automated removal of URLs from the Zscaler Internet Access (ZIA) blacklist whe...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zscaler-internet-access-zscaler-oauth2-whitelisturl-0a27cd81.html">Zscaler-Oauth2-WhitelistURL</a></td>
+<td style="text-align: left;">This playbook enables automated addition of URLs to the Zscaler Internet Access (ZIA) security white...</td>
 <td style="text-align: left;">-</td>
 </tr>
 </tbody>
 </table>
-<h3 id="parsers">Parsers</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: left;">Description</th>
-<th style="text-align: left;">Tables Used</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../parsers/zscalerfw-parser.html">ZScalerFW_Parser</a></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a> <em>(read)</em></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../parsers/zscalerweb-parser.html">ZScalerWeb_Parser</a></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a> <em>(read)</em></td>
-</tr>
-</tbody>
-</table>
+<blockquote>
+<p>⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.</p>
+</blockquote>
 <h2 id="release-notes">Release Notes</h2>
 <table>
 <thead>
@@ -267,6 +332,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>3.0.4</td>
+<td>14-02-2026</td>
+<td>Added 15 new CloudNSS <strong>CCF Data connectors</strong>, 17 new <strong>Workbooks</strong> and OAuth2 <strong>Playbooks</strong>.</td>
+</tr>
 <tr>
 <td>3.0.3</td>
 <td>28-11-2024</td>

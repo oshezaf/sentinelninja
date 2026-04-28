@@ -24,8 +24,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ✓ |
-| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ | ✓ |
+| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ? |
+| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ | ? |
 
 ---
 

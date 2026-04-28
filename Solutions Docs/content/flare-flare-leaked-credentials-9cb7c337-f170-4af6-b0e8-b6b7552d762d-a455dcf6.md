@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`FireworkV2_CL`](../tables/fireworkv2-cl.md) | ✓ | ✓ | ✓ |
+| [`FireworkV2_CL`](../tables/fireworkv2-cl.md) | ? | ✓ | ? |
 
 ---
 

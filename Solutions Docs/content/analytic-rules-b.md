@@ -1,6 +1,6 @@
 # Analytic Rules - B
 
-**178 analytic rules** starting with 'B'.
+**158 analytic rules** starting with 'B'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -8,7 +8,7 @@
 
 ---
 
-**Jump to letter:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | **B** | [C](analytic-rules-c.md) | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | [M](analytic-rules-m.md) | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [Z](analytic-rules-z.md)
+**Jump to letter:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | **B** | [C](analytic-rules-c.md) | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | [M](analytic-rules-m.md) | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [X](analytic-rules-x.md) | [Z](analytic-rules-z.md)
 
 > **Source:** 📦 Solution | 📄 Standalone | 🔗 GitHub Only
 
@@ -17,10 +17,6 @@
 | [Backup Proxy Deleted](veeam-backup-proxy-deleted-b8527d36-4cba-49c1-9cab-de9cdc3de879-875a2136.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |
 | [Backup Repository Deleted](veeam-backup-repository-deleted-73b4d1d5-c357-4350-bb58-924684a4792a-02bf2f4c.md) | High | 📦 [Veeam](../solutions/veeam.md) |
 | [Backup Repository Settings Updated](veeam-backup-repository-settings-updated-f78e0bb9-2878-4e36-b9c9-6141bff8d3dd-d62dcafd.md) | Low | 📦 [Veeam](../solutions/veeam.md) |
-| [Baiting News Site (High)](ctm360-baiting-news-site-high-73d7402f-fab0-4d54-a1f5-ecb87a31559c-17416765.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Baiting News Site (Informational)](ctm360-baiting-news-site-informational-e621eb5b-2612-4c0e-84f2-036a6694d619-bc315c7f.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Baiting News Site (Low)](ctm360-baiting-news-site-low-3f89fb35-5f8e-49d2-9aac-b6e21ecab1b9-05610b78.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Baiting News Site (Medium)](ctm360-baiting-news-site-medium-77c966c0-0ed4-49c2-bb52-6f0a644bcc56-047c267a.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
 | [Base64 encoded Windows process command-lines](endpoint-threat-protection-essentials-base64-encoded-windows-process-command-lines-ca67c83e-7fff-4127-a3e3-1af66d6d4cad-01f53023.md) | Medium | 📦 [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md) |
 | [Base64 encoded Windows process command-lines (Normalized Process Events)](standalone-content-base64-encoded-windows-process-command-lines-normalized-process-events-f8b3c49c-4087-499b-920f-0dcfaff0cbca-c7559dbc.md) | Medium | 📄 Standalone Content |
 | [Beacon Traffic Based on Common User Agents Visiting Limited Number of Domains](falconfriday-beacon-traffic-based-on-common-user-agents-visiting-limited-number-of-domains-6345c923-99eb-4a83-b11d-7af0ffa75577-e0e2298a.md) | Medium | 📦 [FalconFriday](../solutions/falconfriday.md) |
@@ -42,6 +38,7 @@
 | [BitSight - drop in the headline rating](bitsight-bitsight-drop-in-the-headline-rating-b11fdc35-6368-4cc0-8128-52cd2e2cdda0-d880d206.md) | High | 📦 [BitSight](../solutions/bitsight.md) |
 | [BitSight - new alert found](bitsight-bitsight-new-alert-found-a1275c5e-0ff4-4d15-a7b7-96018cd979f5-773a55bf.md) | High | 📦 [BitSight](../solutions/bitsight.md) |
 | [BitSight - new breach found](bitsight-bitsight-new-breach-found-a5526ba9-5997-47c6-bf2e-60a08b681e9b-ce9a2a1e.md) | Medium | 📦 [BitSight](../solutions/bitsight.md) |
+| [blacklens Insights](blacklens-blacklens-insights-e261b70a-3005-4a1b-a7a2-2c8147fafed7-10e2c23b.md) | High | 📦 [Blacklens](../solutions/blacklens.md) |
 | [BloodHound Attack Path Finding - Add Key Credential Link Privileges on Tier Zero Objects](bloodhound-enterprise-bloodhound-attack-path-finding-add-key-credential-link-privileges-on-tier-zero-obj-34099af9-e79a-4d5a-a50c-c5e51f5bb965-56d8f9be.md) | Medium | 📦 [BloodHound Enterprise](../solutions/bloodhound-enterprise.md) |
 | [BloodHound Attack Path Finding - Add Member Privileges on Tier Zero Security Groups](bloodhound-enterprise-bloodhound-attack-path-finding-add-member-privileges-on-tier-zero-security-groups-17c3d3b1-42f1-4bbd-bcbd-6ab7621448c9-fc5710df.md) | Medium | 📦 [BloodHound Enterprise](../solutions/bloodhound-enterprise.md) |
 | [BloodHound Attack Path Finding - Add Members to Tier Zero Group](bloodhound-enterprise-bloodhound-attack-path-finding-add-members-to-tier-zero-group-357d3dee-3b61-4de9-9084-fb245ba23d81-0d810408.md) | Medium | 📦 [BloodHound Enterprise](../solutions/bloodhound-enterprise.md) |
@@ -154,23 +151,6 @@
 | [Box - New external user](box-box-new-external-user-fd36ac88-cd92-4137-aa23-37a3648621fa-96cd22de.md) | Medium | 📦 [Box](../solutions/box.md) |
 | [Box - User logged in as admin](box-box-user-logged-in-as-admin-b2197d7f-4731-483c-89de-d48606b872da-6058ec71.md) | Medium | 📦 [Box](../solutions/box.md) |
 | [Box - User role changed to owner](box-box-user-role-changed-to-owner-174c31c9-22ec-42e5-8226-814391c08200-4e0da2af.md) | Medium | 📦 [Box](../solutions/box.md) |
-| [Brand Abuse](ctm360-brand-abuse-6e9e1975-6d85-4387-bd30-3881c66e302e-d6a2f87d.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Brand Abuse (High)](ctm360-brand-abuse-high-7982356f-0531-49f5-b863-a3a8af57ebd6-1a5c7c55.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Brand Abuse (Informational)](ctm360-brand-abuse-informational-5b0b47a7-831e-4c79-866b-1c397bd65388-b791c663.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Brand Abuse (Low)](ctm360-brand-abuse-low-436768c8-9f8e-4683-be0d-6a27d16a57c2-01de3b24.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Brand Abuse (Medium)](ctm360-brand-abuse-medium-aadd5717-3326-41a9-b1ab-d67e409d6249-9f5a7607.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
-| [Brand Harassment (High)](ctm360-brand-harassment-high-fce139c1-69f2-444e-aa42-d76c71d2f27d-842eadfe.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Brand Harassment (Informational)](ctm360-brand-harassment-informational-a89196a6-f78a-41bd-a49a-8d402b101af6-6aef5671.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Brand Harassment (Low)](ctm360-brand-harassment-low-c4139800-ce8c-488d-a3db-66c6fa4ec661-57919ea4.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Brand Harassment (Medium)](ctm360-brand-harassment-medium-c7f2d761-165a-4422-b0bd-0ae6c7947413-74c1c9fd.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
-| [Brand Impersonation (Informational)](ctm360-brand-impersonation-informational-e23c5f20-94ca-4ace-8b10-a78cfe156d43-6e9c4264.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Brand Impersonation (Medium)](ctm360-brand-impersonation-medium-cac85481-6986-443f-b973-1d932cbc8378-4f96dbfd.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
-| [Brand Impersonation - HIGH](ctm360-brand-impersonation-high-bf93bd26-cad8-40a3-bde0-71acb874d595-e39fda24.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Brand Impersonation - INFO](ctm360-brand-impersonation-info-40045fff-d01f-4165-af5f-aca94fd402af-49239bd2.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Breached Credential (High)](ctm360-breached-credential-high-7e92b9a3-0fc6-4887-a8e4-64384a8188a0-52ebad8f.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Breached Credential (Informational)](ctm360-breached-credential-informational-eff71000-f709-47a3-8007-e8a856db06e5-55cc1076.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Breached Credential (Low)](ctm360-breached-credential-low-5d879471-d4cb-469e-97aa-3efce6773ae8-834e96d0.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Breached Credential (Medium)](ctm360-breached-credential-medium-44f8eafb-9e45-4bce-b42a-fa50f0c5978f-27b7a0fe.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
 | [Brute force attack against a Cloud PC](microsoft-entra-id-brute-force-attack-against-a-cloud-pc-3fbc20a4-04c4-464e-8fcb-6667f53e4987-a1e86b1d.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Brute force attack against Azure Portal](microsoft-entra-id-brute-force-attack-against-azure-portal-28b42356-45af-40a6-a0b4-a554cdfd5d8a-5dc74411.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Brute Force Attack against GitHub Account](microsoft-entra-id-brute-force-attack-against-github-account-97ad74c4-fdd9-4a3f-b6bf-5e28f4f71e06-409b9696.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
@@ -192,8 +172,6 @@
 | [BTP - User added to Cloud Identity Service privileged Administrators list](sap-btp-btp-user-added-to-cloud-identity-service-privileged-administrators-list-7d4e9f2a-8b1c-4a5d-9e3f-6c2b1a0d8e7f-299aac8b.md) | High | 📦 [SAP BTP](../solutions/sap-btp.md) |
 | [BTP - User added to sensitive privileged role collection](sap-btp-btp-user-added-to-sensitive-privileged-role-collection-5acbe4cb-a379-4acc-9ad3-28dc48ad33d3-aa72b226.md) | Low | 📦 [SAP BTP](../solutions/sap-btp.md) |
 | [Bulk Changes to Privileged Account Permissions](microsoft-entra-id-bulk-changes-to-privileged-account-permissions-218f60de-c269-457a-b882-9966632b9dc6-1b16393e.md) | High | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
-
-> ⚠️ Items marked with ⚠️ are not listed in their Solution JSON file. They were discovered by scanning solution folders.
 
 ---
 

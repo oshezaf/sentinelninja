@@ -8,9 +8,41 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
+
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+
+## Schema (7 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/LightningIOEResults_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| IndicatorExecutionId | string |
+| ObjectId | string |
+| ObjectName | string |
+| ObjectType | string |
+| RiskRating | string |
+| Status | string |
+| TimeGenerated | datetime |
+
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [SemperisLightning](../solutions/semperislightning.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Semperis Lightning Logs](../connectors/semperislightninglogsazurefunctions.md) |  |
 
 ---
 

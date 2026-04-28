@@ -27,8 +27,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Illumio_Auditable_Events_CL`](../tables/illumio-auditable-events-cl.md) |  | ✓ | ✓ | ✓ |
-| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "illumio_pce/agent"` | ✓ | ✓ | ✓ |
+| [`Illumio_Auditable_Events_CL`](../tables/illumio-auditable-events-cl.md) |  | ? | ✓ | ? |
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "illumio_pce/agent"` | ✓ | ✓ | ? |
 
 ---
 

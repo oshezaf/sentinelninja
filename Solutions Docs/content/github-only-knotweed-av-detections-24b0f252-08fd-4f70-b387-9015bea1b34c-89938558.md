@@ -22,7 +22,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AlertEvidence`](../tables/alertevidence.md) | ✓ | ✗ | ✓ |
+| [`AlertEvidence`](../tables/alertevidence.md) | ✓ | ✗ | ? |
 
 ---
 

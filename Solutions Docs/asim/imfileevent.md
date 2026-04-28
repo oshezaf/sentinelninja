@@ -15,8 +15,8 @@
 | **Schema** | FileEvent |
 | **Schema Version** | 0.2.1 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.2.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/imFileEvent.md)) |
-| **Last Updated** | Jun 5, 2024 |
+| **Parser Version** | 0.2.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/imFileEvent.md)) |
+| **Last Updated** | Feb 06, 2026 |
 | **Source File** | [Parsers\ASimFileEvent\Parsers\imFileEvent.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimFileEvent/Parsers/imFileEvent.yaml) |
 
 ## Description
@@ -29,6 +29,7 @@ This union parser includes parsers for the following products:
 
 | Product | Source Parser | Solutions |
 |:--------|:--------------|:----------|
+| AWS Cloud Trail | [_Im_FileEvent_AWSCloudTrail](asimfileeventawscloudtrail.md) | [Amazon Web Services](../solutions/amazon-web-services.md) |
 | Microsoft Azure Blob Storage | [_Im_FileEvent_AzureBlobStorage](asimfileeventazureblobstorage.md) | [Azure Storage](../solutions/azure-storage.md) |
 | Microsoft Azure File Storage | [_Im_FileEvent_AzureFileStorage](asimfileeventazurefilestorage.md) | [Azure Storage](../solutions/azure-storage.md) |
 | Microsoft Azure Queue Storage | [_Im_FileEvent_AzureQueueStorage](asimfileeventazurequeuestorage.md) | [Azure Storage](../solutions/azure-storage.md) |
@@ -42,9 +43,9 @@ This union parser includes parsers for the following products:
 | Windows Sysmon | [_Im_FileEvent_MicrosoftSysmon](asimfileeventmicrosoftsysmon.md) |  |
 | Windows Sysmon | [_Im_FileEvent_MicrosoftSysmonWindowsEvent](asimfileeventmicrosoftsysmonwindowsevent.md) | [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
 | Microsoft Windows Events | [_Im_FileEvent_MicrosoftWindowsEvents](asimfileeventmicrosoftwindowsevents.md) | [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
-| Native | [_Im_FileEvent_Native](asimfileeventnative.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)<br>[VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
-| SentinelOne | [_Im_FileEvent_SentinelOne](asimfileeventsentinelone.md) | [SentinelOne](../solutions/sentinelone.md) |
-| VMware Carbon Black Cloud | [_Im_FileEvent_VMwareCarbonBlackCloud](asimfileeventvmwarecarbonblackcloud.md) | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
+| Native | [_Im_FileEvent_Native](asimfileeventnative.md) | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md)<br>[VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
+| SentinelOne | [_Im_FileEvent_SentinelOne](asimfileeventsentinelone.md) |  |
+| VMware Carbon Black Cloud | [_Im_FileEvent_VMwareCarbonBlackCloud](asimfileeventvmwarecarbonblackcloud.md) |  |
 
 ## Parameters
 

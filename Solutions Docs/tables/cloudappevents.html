@@ -47,10 +47,6 @@
 <td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
-</tr>
-<tr>
 <td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudappevents">View Documentation</a></td>
 </tr>
@@ -461,7 +457,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-calculate-overall-mdo-efficacy-ff56a21d-fc95-4c11-8f9d-cc59c48cd4e6-2e8ef8fb.html">Calculate overall MDO efficacy</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-file-malware-detection-trend-817043be-4b30-4e66-a742-8f601a78b08f-46ed5e59.html">File Malware Detection Trend</a></td>
@@ -533,7 +529,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-total-number-of-detections-by-mdo-0717b136-a1ef-4af0-a911-e189d0064099-8ced6caf.html">Total number of detections by MDO</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-unusual-volume-of-file-deletion-by-users-2bdd260c-c687-4cb2-9992-87e5ce677678-3b144d45.html">Unusual Volume of file deletion by users</a></td>
@@ -593,14 +589,6 @@
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-adfsdomaintrustmods[nobelium]-8b55db72-9ece-4e93-b551-cd7eb7355104-b7fc6a3c.html">ADFSDomainTrustMods[Nobelium]</a></td>
 <td style="text-align: left;"><code>ActionType in "Set domain authentication.,Set federation settings on domain."</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-ai-agents-dormant-author-authentication-connection-2a5b8c1d-4e7f-0a1b-2c3d-4e5f6a7b8c9d-b10f02e7.html">AI Agents - Dormant Author Authentication Connection</a></td>
-<td style="text-align: left;"><code>ActionType == "CopilotInteraction"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-ai-agents-published-dormant-30d-5e8f1a2b-3c4d-5e6f-7a8b-9c0d1e2f3a4b-96af1d20.html">AI Agents - Published Dormant (30d)</a></td>
-<td style="text-align: left;"><code>ActionType == "CopilotInteraction"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-air-investigation-actions-insight-28a1ce89-ee88-47b3-872b-fb5c3c8b350c-95763a95.html">AIR investigation actions insight</a></td>
@@ -688,7 +676,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-calculate-overall-mdo-efficacy-f2206cb7-62ca-4596-9d3a-544b61963799-36a197b0.html">Calculate overall MDO efficacy</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-changes-to-blocked-teams-domains-3fb50170-4048-473e-acc0-af9ae186f4a3-38df3c33.html">Changes to Blocked Teams Domains</a></td>
@@ -697,6 +685,14 @@
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-changes-to-blocked-teams-domains-nrt-f3ceca1b-8190-4511-beac-06b3368b8360-f9fcf37d.html">Changes to Blocked Teams Domains (NRT)</a></td>
 <td style="text-align: left;"><code>ActionType == "TeamsAdminAction"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-copilot-studio-ai-agents-dormant-author-authentication-connection-2a5b8c1d-4e7f-0a1b-2c3d-4e5f6a7b8c9d-3500cbed.html">Copilot Studio AI Agents - Dormant Author Authentication Connection</a></td>
+<td style="text-align: left;"><code>ActionType == "CopilotInteraction"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-copilot-studio-ai-agents-published-dormant-30d-5e8f1a2b-3c4d-5e6f-7a8b-9c0d1e2f3a4b-bdb68b50.html">Copilot Studio AI Agents - Published Dormant (30d)</a></td>
+<td style="text-align: left;"><code>ActionType == "CopilotInteraction"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-credentialsaddafteradminconsentedtoapp[nobelium]-0d49b34e-ac5a-441f-a79f-672ad045870e-006b3161.html">CredentialsAddAfterAdminConsentedToApp[Nobelium]</a></td>
@@ -732,11 +728,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-high-confidence-phish-released-9e8faa62-7222-48a5-a78f-ef2d22f866dc-1957e796.html">High Confidence Phish Released</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActionType == "QuarantineReleaseMessage"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-high-confidence-phish-released-9e8faa62-7222-48a5-a78f-ef2d22f866dc-1ada080f.html">High Confidence Phish Released</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActionType == "QuarantineReleaseMessage"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-hunt-for-admin-email-access-e55e178e-48ba-4313-918a-2d3e16a95441-f6af219e.html">Hunt for Admin email access</a></td>
@@ -856,11 +852,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-quarantine-release-email-details-6f96f6d7-d972-421e-a59f-6b9a8de81324-190bb1b5.html">Quarantine Release Email Details</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActionType == "QuarantineReleaseMessage"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-quarantine-release-email-details-6f96f6d7-d972-421e-a59f-6b9a8de81324-4e2cbc7d.html">Quarantine Release Email Details</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActionType == "QuarantineReleaseMessage"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-quarantine-release-trend-9f135aef-ad25-4df2-bdab-8399978a36a2-1547d717.html">Quarantine release trend</a></td>
@@ -1008,7 +1004,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-total-number-of-detections-by-mdo-e1903106-9b25-472e-b4b7-4bcc05328a48-65f69a82.html">Total number of detections by MDO</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-unusual-volume-of-file-deletion-by-user.-611ebbc2-c789-42ad-93e3-6dc02bfa5e3d-b849c152.html">Unusual volume of file deletion by user.</a></td>
@@ -1084,7 +1080,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,FileMalwareDetected,SubmissionNotification,UserSubmission"</code><br><code>ActionType contains "AdminSubmission"</code><br><code>ActionType contains "AdminSubmissionTriage"</code><br><code>ActionType contains "Submission"</code><br><code>ActionType contains "UserSubmission"</code><br><code>ActionType contains "UserSubmissionTriage"</code></p>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,FileMalwareDetected,Malware ZAP,Phish ZAP,Redelivery,Spam ZAP,SubmissionNotification,UserSubmission"</code><br><code>ActionType contains "AdminSubmission"</code><br><code>ActionType contains "AdminSubmissionTriage"</code><br><code>ActionType contains "Submission"</code><br><code>ActionType contains "UserSubmission"</code><br><code>ActionType contains "UserSubmissionTriage"</code></p>
 <table>
 <thead>
 <tr>
@@ -1124,8 +1120,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (37 criteria, 145 total references)</h2>
-<p>References by type: 0 connectors, 145 content items, 0 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (38 criteria, 153 total references)</h2>
+<p>References by type: 0 connectors, 153 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -1171,6 +1167,14 @@
 <td style="text-align: center;"><strong>9</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>ActionType == "QuarantineReleaseMessage"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>8</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>ActionType == "AdminSubmissionSubmitted"</code><br><code>ActionType contains "Submission"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">8</td>
@@ -1187,7 +1191,7 @@
 <td style="text-align: center;"><strong>5</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType == "QuarantineReleaseMessage"</code></td>
+<td style="text-align: left;"><code>ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">4</td>
 <td style="text-align: center;">-</td>
@@ -1227,6 +1231,14 @@
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>ActionType == "AdminMailAccess"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
@@ -1252,14 +1264,6 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>ActionType == "New-TenantAllowBlockListItems"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>
@@ -1323,14 +1327,6 @@
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType == "CopilotInteraction"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>ActionType in "Add service principal credentials.,Update application - Certificates</code><br><code>secrets management"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
@@ -1340,6 +1336,14 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>ActionType == "TeamsAdminAction"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActionType == "CopilotInteraction"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>
@@ -1427,7 +1431,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,FileMalwareDetected,SubmissionNotification,UserSubmission"</code><br><code>ActionType contains "AdminSubmission"</code><br><code>ActionType contains "AdminSubmissionTriage"</code><br><code>ActionType contains "Submission"</code><br><code>ActionType contains "UserSubmission"</code><br><code>ActionType contains "UserSubmissionTriage"</code></td>
+<td style="text-align: left;"><code>ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,FileMalwareDetected,Malware ZAP,Phish ZAP,Redelivery,Spam ZAP,SubmissionNotification,UserSubmission"</code><br><code>ActionType contains "AdminSubmission"</code><br><code>ActionType contains "AdminSubmissionTriage"</code><br><code>ActionType contains "Submission"</code><br><code>ActionType contains "UserSubmission"</code><br><code>ActionType contains "UserSubmissionTriage"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1437,10 +1441,10 @@
 <tr>
 <td style="text-align: left;"><strong>Total</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>145</strong></td>
+<td style="text-align: center;"><strong>153</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>145</strong></td>
+<td style="text-align: center;"><strong>153</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1460,18 +1464,26 @@
 <tr>
 <td style="text-align: left;"><code>UserSubmission</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">42</td>
+<td style="text-align: center;">44</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>42</strong></td>
+<td style="text-align: center;"><strong>44</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>AdminSubmissionSubmitted</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">39</td>
+<td style="text-align: center;">41</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>39</strong></td>
+<td style="text-align: center;"><strong>41</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AdminSubmission</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>11</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>FileMalwareDetected</code></td>
@@ -1480,14 +1492,6 @@
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;"><strong>11</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>AdminSubmission</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">9</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>9</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>MailItemsAccessed</code></td>
@@ -1504,6 +1508,30 @@
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;"><strong>9</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>QuarantineReleaseMessage</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>8</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Malware ZAP</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>7</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Phish ZAP</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>7</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>contains AdminSubmission</code></td>
@@ -1538,7 +1566,7 @@
 <td style="text-align: center;"><strong>5</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>QuarantineReleaseMessage</code></td>
+<td style="text-align: left;"><code>Add service principal credentials.</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">4</td>
 <td style="text-align: center;">-</td>
@@ -1546,12 +1574,12 @@
 <td style="text-align: center;"><strong>4</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Add service principal credentials.</code></td>
+<td style="text-align: left;"><code>Redelivery</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">4</td>
+<td style="text-align: center;">3</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>4</strong></td>
+<td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>contains AdminSubmissionTriage</code></td>
@@ -1611,22 +1639,6 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>New-TenantAllowBlockListItems</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>Malware ZAP</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>Phish ZAP</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>
@@ -1698,14 +1710,6 @@
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>CopilotInteraction</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>Consent to application.</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
@@ -1715,6 +1719,14 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>TeamsAdminAction</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CopilotInteraction</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>
@@ -1883,6 +1895,14 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>Add member to role.</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Spam ZAP</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>

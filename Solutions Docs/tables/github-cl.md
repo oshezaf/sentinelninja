@@ -16,25 +16,18 @@
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
-## Solutions (3)
+## Solutions (2)
 
 This table is used by the following solutions:
 
-- [GitHub](../solutions/github.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 
 ---
 
-## Content Items Using This Table (12)
+## Content Items Using This Table (11)
 
-### Analytic Rules (3)
-
-**In solution [GitHub](../solutions/github.md):**
-
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [NRT GitHub Two Factor Auth Disable](../content/github-nrt-github-two-factor-auth-disable-594c653d-719a-4c23-b028-36e3413e632e-4470b247.md) |  |
+### Analytic Rules (2)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 

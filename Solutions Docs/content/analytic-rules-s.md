@@ -1,6 +1,6 @@
 # Analytic Rules - S
 
-**215 analytic rules** starting with 'S'.
+**183 analytic rules** starting with 'S'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -8,7 +8,7 @@
 
 ---
 
-**Jump to letter:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | [B](analytic-rules-b.md) | [C](analytic-rules-c.md) | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | [M](analytic-rules-m.md) | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | **S** | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [Z](analytic-rules-z.md)
+**Jump to letter:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | [B](analytic-rules-b.md) | [C](analytic-rules-c.md) | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | [M](analytic-rules-m.md) | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | **S** | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [X](analytic-rules-x.md) | [Z](analytic-rules-z.md)
 
 > **Source:** 📦 Solution | 📄 Standalone | 🔗 GitHub Only
 
@@ -110,10 +110,6 @@
 | [SlackAudit - User login after deactivated.](slackaudit-slackaudit-user-login-after-deactivated.-e6e99dcb-4dff-48d2-8012-206ca166b36b-e5724d2b.md) | Medium | 📦 [SlackAudit](../solutions/slackaudit.md) |
 | [SlackAudit - User role changed to admin or owner](slackaudit-slackaudit-user-role-changed-to-admin-or-owner-be6c5fc9-2ac3-43e6-8fb0-cb139e04e43e-2ec5dec7.md) | Low | 📦 [SlackAudit](../solutions/slackaudit.md) |
 | [SMB/Windows Admin Shares](falconfriday-smb-windows-admin-shares-9da25366-2c77-41a5-a159-0da5e2f5fb90-2e2330d9.md) | Medium | 📦 [FalconFriday](../solutions/falconfriday.md) |
-| [Smshing (High)](ctm360-smshing-high-ad93961e-7f71-485a-a774-0849e1ffde38-15750192.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Smshing (Informational)](ctm360-smshing-informational-4c15301a-1d0b-44ec-baa2-935cc3b76a2d-7f81dce8.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Smshing (Low)](ctm360-smshing-low-943a212b-363c-45d2-bc61-e2fe337f6d82-2e250502.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Smshing (Medium)](ctm360-smshing-medium-ed3b0682-1090-4aa2-812b-e51ebfb80279-be49d5e0.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
 | [Snowflake - Abnormal query process time](snowflake-snowflake-abnormal-query-process-time-1376f5e5-855a-4f88-8591-19eba4575a0f-cec38277.md) | Medium | 📦 [Snowflake](../solutions/snowflake.md) |
 | [Snowflake - Multiple failed queries](snowflake-snowflake-multiple-failed-queries-5f8a81d9-7d27-4ff5-a0ce-4285ee02c2c8-558c4df2.md) | High | 📦 [Snowflake](../solutions/snowflake.md) |
 | [Snowflake - Multiple login failures by user](snowflake-snowflake-multiple-login-failures-by-user-e05cc333-d499-430f-907c-7f28a9e4d1b5-20cf8b77.md) | High | 📦 [Snowflake](../solutions/snowflake.md) |
@@ -124,10 +120,9 @@
 | [Snowflake - Query on sensitive or restricted table](snowflake-snowflake-query-on-sensitive-or-restricted-table-f258fa0c-e26c-4e2b-94fb-88b6cef0ca6e-4abe0d65.md) | Medium | 📦 [Snowflake](../solutions/snowflake.md) |
 | [Snowflake - Unusual query](snowflake-snowflake-unusual-query-1dd1d9e5-3ebf-43cb-be07-6082d5eabe79-ce037070.md) | Medium | 📦 [Snowflake](../solutions/snowflake.md) |
 | [Snowflake - User granted admin privileges](snowflake-snowflake-user-granted-admin-privileges-5ed33eee-0ab6-4bf5-9e9b-6100db83d39a-6efd7f60.md) | Medium | 📦 [Snowflake](../solutions/snowflake.md) |
-| [Social Engineering Vulnerability  (Informational)](ctm360-social-engineering-vulnerability-informational-8044bb0c-e3d2-4ffa-8e58-d3aa72d84d04-0531e042.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Social Engineering Vulnerability (High)](ctm360-social-engineering-vulnerability-high-4df9c385-9a5b-4585-8dae-ad3c82066108-49afa970.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Social Engineering Vulnerability (Low)](ctm360-social-engineering-vulnerability-low-7215015e-9c17-4826-9b5f-064eafaee14d-c04270f2.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Social Engineering Vulnerability (Medium)](ctm360-social-engineering-vulnerability-medium-9354e660-98ab-48d8-a639-9f71dcae91be-f4818131.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
+| [SOCRadar Alarm Volume Spike](socradar-socradar-alarm-volume-spike-4a7b3c9e-2d15-4e8f-b6a3-9c2e7d5a1b4f-7d7528ed.md) | Medium | 📦 [SOCRadar](../solutions/socradar.md) |
+| [SOCRadar High or Critical Severity Alarm](socradar-socradar-high-or-critical-severity-alarm-8f3e2c5a-7b91-4d6a-9e8f-1c4a2b5d7e3f-1c14f887.md) | High | 📦 [SOCRadar](../solutions/socradar.md) |
+| [SOCRadar Unsynced Closed Incident](socradar-socradar-unsynced-closed-incident-6e2f8d4b-5a71-4c9e-b3f6-8a1c9d4e7b2a-ea970a79.md) | Low | 📦 [SOCRadar](../solutions/socradar.md) |
 | [Solorigate Defender Detections](standalone-content-solorigate-defender-detections-e70fa6e0-796a-4e85-9420-98b17b0bb749-ecd5908d.md) | High | 📄 Standalone Content |
 | [Solorigate Named Pipe](standalone-content-solorigate-named-pipe-11b4c19d-2a79-4da3-af38-b067e1273dee-7c9da0a1.md) | High | 📄 Standalone Content |
 | [SonicWall - Allowed SSH, Telnet, and RDP Connections](sonicwall-firewall-sonicwall-allowed-ssh,-telnet,-and-rdp-connections-27f1a570-5f20-496b-88f6-a9aa2c5c9534-5e407210.md) | Medium | 📦 [SonicWall Firewall](../solutions/sonicwall-firewall.md) |
@@ -140,12 +135,6 @@
 | [Sonrai Ticket Risk Accepted](sonraisecurity-sonrai-ticket-risk-accepted-080191e8-271d-4ae6-85ce-c7bcd4b06b40-ec666763.md) | Medium | 📦 [SonraiSecurity](../solutions/sonraisecurity.md) |
 | [Sonrai Ticket Snoozed](sonraisecurity-sonrai-ticket-snoozed-10e6c454-5cad-4f86-81ce-800235cb050a-186cfa44.md) | Medium | 📦 [SonraiSecurity](../solutions/sonraisecurity.md) |
 | [Sonrai Ticket Updated](sonraisecurity-sonrai-ticket-updated-af9b8eb1-a8ef-40aa-92a4-1fc73a1479c7-12412c0f.md) | Medium | 📦 [SonraiSecurity](../solutions/sonraisecurity.md) |
-| [Spam (High)](ctm360-spam-high-d865948f-a322-4057-bcfa-b409dac5b78f-56e83c25.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Spam (Informational)](ctm360-spam-informational-74e5c836-5dd5-48e5-b968-79cbee958387-721b8597.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Spam (Low)](ctm360-spam-low-0eeb55d8-bef8-489e-a610-c9905bf77911-31b64d08.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Spam (Medium)](ctm360-spam-medium-2c144f2f-7e2a-4a32-8df3-2e825940b6eb-6be7cb39.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
-| [SPF Not Configured](ctm360-spf-not-configured-f78c03ec-4397-42f6-9c51-a54421817fd8-c38be6fc.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [SPF Policy Set to Soft Fail](ctm360-spf-policy-set-to-soft-fail-32f4eb88-0d23-4185-8579-f1645412e9de-93131e39.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
 | [SpyCloud Enterprise Breach Detection](spycloud-enterprise-protection-spycloud-enterprise-breach-detection-cb410ad5-6e9d-4278-b963-1e3af205d680-3a6c6446.md) | High | 📦 [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) |
 | [SpyCloud Enterprise Malware Detection](spycloud-enterprise-protection-spycloud-enterprise-malware-detection-7ba50f9e-2f94-462b-a54b-8642b8c041f5-a8afd941.md) | High | 📦 [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) |
 | [Squid proxy events for ToR proxies](syslog-squid-proxy-events-for-tor-proxies-90d3f6ec-80fb-48e0-9937-2c70c9df9bad-1bd82f05.md) | Low | 📦 [Syslog](../solutions/syslog.md) |
@@ -163,19 +152,14 @@
 | [Storage Accounts Alerts From Prancer](prancer-pensuiteai-integration-storage-accounts-alerts-from-prancer-4adf2b5d-6b88-4b96-8cc2-a3c7fbbee10b-bd7c3258.md) ⚠️ | High | 📦 [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [Storage Deleted](veeam-storage-deleted-7cf8c19b-6cd2-4d0c-814b-45d34e68568b-1589fb76.md) | High | 📦 [Veeam](../solutions/veeam.md) |
 | [Storage Settings Updated](veeam-storage-settings-updated-be47e508-e35b-4c63-979b-a75b72102344-eda2a675.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |
-| [Subdomain Infringement](ctm360-subdomain-infringement-20ffc702-b7b2-4041-8f08-10ede8906cbf-f8343589.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Subdomain Infringement (High)](ctm360-subdomain-infringement-high-35813b4c-b91d-4817-8838-bfbec77e27f1-3e7333dc.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Subdomain Infringement (Informational)](ctm360-subdomain-infringement-informational-d873e524-0149-4835-ba9d-c550506d2a8d-c1fc0943.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Subdomain Infringement (Low)](ctm360-subdomain-infringement-low-005dd8a4-4fc0-4f8a-90f9-1423fcf5594c-26fb8a7d.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Subdomain Infringement (Medium)](ctm360-subdomain-infringement-medium-fd64c2d1-8d2b-4b70-8f95-e7b34da56830-52bb0416.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
 | [Subnets Alerts for Prancer](prancer-pensuiteai-integration-subnets-alerts-for-prancer-10be8f37-d83c-4b7e-81c2-1271c51ac09f-bc56763f.md) ⚠️ | High | 📦 [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
-| [Subresource Integrity (SRI) Not Implemented](ctm360-subresource-integrity-sri-not-implemented-6e9c75ed-7009-4918-a2f0-40b446614ea0-473e720d.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
 | [Subscription moved to another tenant](azure-activity-subscription-moved-to-another-tenant-48c026d8-7f36-4a95-9568-6f1420d66e37-856f8155.md) | Low | 📦 [Azure Activity](../solutions/azure-activity.md) |
 | [Subtenant Deleted](veeam-subtenant-deleted-1c23715c-3a28-4b98-b135-fece6e7dcb8b-220743c9.md) | High | 📦 [Veeam](../solutions/veeam.md) |
 | [Subtenant Updated](veeam-subtenant-updated-e1d0d9ce-b7c9-4e28-883d-04429f80d6d7-75b596f8.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |
 | [Successful API executed from a Tor exit node](amazon-web-services-successful-api-executed-from-a-tor-exit-node-0adab960-5565-4978-ba6d-044553e4acc4-eec69aba.md) | High | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Successful AWS Console Login from IP Address Observed Conducting Password Spray](multi-cloud-attack-coverage-essentials-resource-abuse-successful-aws-console-login-from-ip-address-obser-188db479-d50a-4a9c-a041-644bae347d1f-57aa98e4.md) | Medium | 📦 [Multi Cloud Attack Coverage Essentials - Resource Abuse](../solutions/multi-cloud-attack-coverage-essentials-resource-abuse.md) |
 | [Successful brute force attack on S3 Bucket.](amazon-web-services-successful-brute-force-attack-on-s3-bucket.-31b9e94b-0df6-4a3d-a297-3457b53c5d86-636adc43.md) | High | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [Successful logins to SOC Prime platform from bad IP addresses](soc-prime-ccf-successful-logins-to-soc-prime-platform-from-bad-ip-addresses-f8e7d6c5-b4a3-4122-8110-0987654321fe-043a0380.md) | Medium | 📦 [SOC Prime CCF](../solutions/soc-prime-ccf.md) |
 | [Successful logon from IP and failure from a different IP](microsoft-entra-id-successful-logon-from-ip-and-failure-from-a-different-ip-02ef8d7e-fc3a-4d86-a457-650fa571d8d2-8d1712d5.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [SUNBURST and SUPERNOVA backdoor hashes](microsoft-defender-xdr-sunburst-and-supernova-backdoor-hashes-a3c144f9-8051-47d4-ac29-ffb0c312c910-6f0d9998.md) | High | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [SUNBURST and SUPERNOVA backdoor hashes (Normalized File Events)](standalone-content-sunburst-and-supernova-backdoor-hashes-normalized-file-events-bc5ffe2a-84d6-48fe-bc7b-1055100469bc-0d1c5f43.md) | High | 📄 Standalone Content |
@@ -185,10 +169,6 @@
 | [SUNSPOT malware hashes](microsoft-defender-xdr-sunspot-malware-hashes-53e936c6-6c30-4d12-8343-b8a0456e8429-b7f28a72.md) | Medium | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [SUPERNOVA webshell](web-shells-threat-protection-supernova-webshell-2acc91c3-17c2-4388-938e-4eac2d5894e8-79d870d5.md) | High | 📦 [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md) |
 | [SureBackup Job Failed](veeam-surebackup-job-failed-b7409bbb-6f0c-43c4-bb63-b20add5eb717-80cf55f4.md) | High | 📦 [Veeam](../solutions/veeam.md) |
-| [Survey Scam (High)](ctm360-survey-scam-high-076fe0f6-99a0-4668-b701-3380dcd32774-f96aaabb.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Survey Scam (Informational)](ctm360-survey-scam-informational-ea70c8d1-77b3-46b8-9ac9-051581438f4e-9bb653a4.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Survey Scam (Low)](ctm360-survey-scam-low-9aa3493b-3f9c-44a4-acb8-455de0523924-73ead923.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Survey Scam (Medium)](ctm360-survey-scam-medium-146533ac-4fc0-4b66-902e-a945e900000e-8e4e85b5.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
 | [Suspicious access of BEC related documents](business-email-compromise-financial-fraud-suspicious-access-of-bec-related-documents-cd8d946d-10a4-40a9-bac1-6d0a6c847d65-1afb8e2e.md) | Medium | 📦 [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md) |
 | [Suspicious access of BEC related documents in AWS S3 buckets](business-email-compromise-financial-fraud-suspicious-access-of-bec-related-documents-in-aws-s3-buckets-f3e2d35f-1202-4215-995c-4654ef07d1d8-5612c5c0.md) | Medium | 📦 [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md) |
 | [Suspicious application consent for offline access](microsoft-entra-id-suspicious-application-consent-for-offline-access-3533f74c-9207-4047-96e2-0eb9383be587-fa7e45f8.md) | Low | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
@@ -198,24 +178,12 @@
 | [Suspicious AWS console logins by credential access alerts](multi-cloud-attack-coverage-essentials-resource-abuse-suspicious-aws-console-logins-by-credential-access-b51fe620-62ad-4ed2-9d40-5c97c0a8231f-dbe5a529.md) | Medium | 📦 [Multi Cloud Attack Coverage Essentials - Resource Abuse](../solutions/multi-cloud-attack-coverage-essentials-resource-abuse.md) |
 | [Suspicious AWS EC2 Compute Resource Deployments](amazon-web-services-suspicious-aws-ec2-compute-resource-deployments-9e457dc4-81f0-4d25-bc37-a5fa4a17946a-9f074032.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Suspicious command sent to EC2](amazon-web-services-suspicious-command-sent-to-ec2-21702832-aff3-4bd6-a8e1-663b6818503d-32ecf6f6.md) | High | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [Suspicious Documents (High)](ctm360-suspicious-documents-high-12fa25a2-082f-4412-9537-6a1f4c655ab6-5d152280.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Suspicious Documents (Informational)](ctm360-suspicious-documents-informational-8622df9a-16e7-438b-9975-16604fd401c6-24de0cdc.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Suspicious Documents (Low)](ctm360-suspicious-documents-low-ca1c90a4-c730-462a-8d2f-2577577eebf0-49e13cb6.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Suspicious Documents (Medium)](ctm360-suspicious-documents-medium-f9fc9720-b3db-4f0d-96ee-11e45b2fce46-cf33751d.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
-| [Suspicious Email (High)](ctm360-suspicious-email-high-741bba15-0d29-4b6d-8803-7ed49f816478-4404586b.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Suspicious Email (Informational)](ctm360-suspicious-email-informational-91f82a52-fa20-46ba-a9be-217bee343fe2-8fa0b514.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Suspicious Email (Low)](ctm360-suspicious-email-low-37c85446-733d-463a-9958-8083fd8e1ad4-fd03dd95.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Suspicious Email (Medium)](ctm360-suspicious-email-medium-5e163001-3e3a-4c92-be77-0d7a86f54eb1-c6813d35.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
 | [Suspicious Entra ID Joined Device Update](microsoft-entra-id-suspicious-entra-id-joined-device-update-3a3c6835-0086-40ca-b033-a93bf26d878f-b40b663f.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Suspicious granting of permissions to an account](azure-activity-suspicious-granting-of-permissions-to-an-account-b2c15736-b9eb-4dae-8b02-3016b6a45a32-6643d8bb.md) | Medium | 📦 [Azure Activity](../solutions/azure-activity.md) |
 | [Suspicious link sharing pattern](standalone-content-suspicious-link-sharing-pattern-1218175f-c534-421c-8070-5dcaabf28067-905979e8.md) | Low | 📄 Standalone Content |
 | [Suspicious linking of existing user to external User](standalone-content-suspicious-linking-of-existing-user-to-external-user-22a320c2-e1e5-4c74-a35b-39fc9cdcf859-f26ac9ac.md) | Medium | 📄 Standalone Content |
 | [Suspicious Login from deleted guest account](standalone-content-suspicious-login-from-deleted-guest-account-defe4855-0d33-4362-9557-009237623976-9a77037a.md) | Medium | 📄 Standalone Content |
 | [Suspicious malware found in the network (Microsoft Defender for IoT)](iototthreatmonitoringwithdefenderforiot-suspicious-malware-found-in-the-network-microsoft-defender-for-i-6fb1acd5-356d-40f7-9b97-78d993c6a183-8e31acda.md) | High | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
-| [Suspicious Mobile App (Low)](ctm360-suspicious-mobile-app-low-256b771e-5ca6-4216-b775-b13937574495-98caaf98.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Suspicious Mobile App (Medium)](ctm360-suspicious-mobile-app-medium-aa6e6b6e-c7d2-4c32-97d6-251f75b82c7f-f33ffd62.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
-| [Suspicious Mobile App High](ctm360-suspicious-mobile-app-high-6e9afac9-6828-486f-b1d8-cf76e86e1224-fe2d9d49.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Suspicious Mobile App INFO](ctm360-suspicious-mobile-app-info-18155351-23b6-4684-bca6-23c11e4ff5c1-2168c84d.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
 | [Suspicious modification of Global Administrator user properties](standalone-content-suspicious-modification-of-global-administrator-user-properties-48602a24-67cf-4362-b258-3f4249e55def-fe1c2532.md) | Medium | 📄 Standalone Content |
 | [Suspicious named pipes](falconfriday-suspicious-named-pipes-ddf7c669-db26-4215-acaf-11e2953a04e6-377a4889.md) | Medium | 📦 [FalconFriday](../solutions/falconfriday.md) |
 | [Suspicious number of resource creation or deployment activities](azure-activity-suspicious-number-of-resource-creation-or-deployment-activities-361dd1e3-1c11-491e-82a3-bb2e44ac36ba-812975d5.md) | Medium | 📦 [Azure Activity](../solutions/azure-activity.md) |

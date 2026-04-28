@@ -16,7 +16,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 3.0.13 |
+| **Version** | 3.0.14 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-02 |
 | **Last Updated** | 2026-01-23 |
@@ -97,11 +97,11 @@ The following **5 table(s)** are used internally by this solution's content item
 
 ## Content Items
 
-This solution includes **374 content item(s)** (370 in solution, 4 discovered 🔍):
+This solution includes **374 content item(s)** (371 in solution, 3 discovered 🔍):
 
 | Content Type | Total | In Solution | Discovered |
 |:-------------|------:|------------:|-----------:|
-| Hunting Queries | 330 | 327 | 3 |
+| Hunting Queries | 330 | 328 | 2 |
 | Analytic Rules | 40 | 40 | - |
 | Workbooks | 3 | 3 | - |
 | Playbooks | 1 | 0 | 1 |
@@ -323,7 +323,7 @@ This solution includes **374 content item(s)** (370 in solution, 4 discovered �
 | [PowerShell Downloads](../content/microsoft-defender-xdr-powershell-downloads-3842e70d-45be-43b1-8206-4ebc4c305f34-740af97e.md) | Execution | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 | [PowerShell adding exclusion path for Microsoft Defender of ProgramData](../content/microsoft-defender-xdr-powershell-adding-exclusion-path-for-microsoft-defender-of-programdata-88707168-d4a4-4ca7-a516-b2ee0310af1b-015fc198.md) | DefenseEvasion | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 | [PrintNightmare CVE-2021-1675 usage Detection](../content/microsoft-defender-xdr-printnightmare-cve-2021-1675-usage-detection-8f404352-c4ff-44d1-8d70-c50ee2fad8f8-b52df162.md) | PrivilegeEscalation, LateralMovement, Execution | [`DeviceFileEvents`](../tables/devicefileevents.md) |
-| [Punycode lookalikes](../content/microsoft-defender-xdr-punycode-lookalikes-9582b09c-a5cd-4da0-8244-52cc952da158-13260aaa.md) ⚠️ | InitialAccess | [`EmailEvents`](../tables/emailevents.md)<br>[`EmailUrlInfo`](../tables/emailurlinfo.md)<br>[`MessageEvents`](../tables/messageevents.md)<br>[`MessageUrlInfo`](../tables/messageurlinfo.md) |
+| [Punycode lookalikes](../content/microsoft-defender-xdr-punycode-lookalikes-9582b09c-a5cd-4da0-8244-52cc952da158-13260aaa.md) | InitialAccess | [`EmailEvents`](../tables/emailevents.md)<br>[`EmailUrlInfo`](../tables/emailurlinfo.md)<br>[`MessageEvents`](../tables/messageevents.md)<br>[`MessageUrlInfo`](../tables/messageurlinfo.md) |
 | [Qakbot Campaign Self Deletion](../content/microsoft-defender-xdr-qakbot-campaign-self-deletion-63ecff0f-3a86-468b-8c9e-a7a88fe33ebb-060f18ee.md) | DefenseEvasion | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 | [Qakbot Discovery Activies](../content/microsoft-defender-xdr-qakbot-discovery-activies-e18109aa-f252-48ec-b115-1b7c16e1174f-741aed07.md) | DefenseEvasion, Discovery, Execution | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 | [Qakbot Reconnaissance Activities](../content/microsoft-defender-xdr-qakbot-reconnaissance-activities-d6991ef1-b225-4780-b6a6-cfe9b5278f5e-9d2f618d.md) | Discovery | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
@@ -506,6 +506,7 @@ This solution includes **374 content item(s)** (370 in solution, 4 discovered �
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                    |
 |-------------|--------------------------------|---------------------------------------------------------------------------------------|
+| 3.0.14      | 09-02-2026                     | Added new **Hunting Query** Punycode chars lookalike domains.yaml.		       |
 | 3.0.13      | 22-01-2026                     | Updated Defender XDR solution with new **Hunting Queries**.				   |
 | 3.0.12      | 07-04-2025                     | Updated ConnectivityCriteria Type in **Data Connector**.				   |
 | 3.0.11      | 16-12-2024                     | Updated **Analytic Rule** LocalAdminGroupChanges.yaml.<br> Updated **Workbook**.				   |

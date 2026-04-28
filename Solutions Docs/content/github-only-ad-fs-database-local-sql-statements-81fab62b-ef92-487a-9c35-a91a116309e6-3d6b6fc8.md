@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Event`](../tables/event.md) | `EventID == "33205"`<br>`EventLog == "Application"`<br>`Source == "MSSQL$MICROSOFT##WID"` | ✓ | ✓ | ✗ |
+| [`Event`](../tables/event.md) | `EventID == "33205"`<br>`EventLog == "Application"`<br>`Source == "MSSQL$MICROSOFT##WID"` | ✓ | ✓ | ? |
 
 ## Associated Connectors
 

@@ -14,7 +14,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 3.0.1 |
+| **Version** | 3.0.2 |
 | **Author** | Microsoft |
 | **First Published** | 2025-06-20 |
 | **Last Updated** | 2026-03-12 |
@@ -33,6 +33,7 @@ This solution provides **1 data connector(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                                      |
 |-------------|--------------------------------|---------------------------------------------------------------------------------------------------------|
+| 3.0.2       | 04-03-2025                     | Added Devices and Org Contacts | 
 | 3.0.1       | 28-10-2025                     | Fixed a typo in the data connector tile, correcting enta to Entra | 
 | 3.0.0       | 11-09-2025                     | Releasing a new Microsoft Entra ID Assets connector solution in Content Hub and Data Connector gallery. |
 

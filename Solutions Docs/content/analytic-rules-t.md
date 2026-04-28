@@ -1,6 +1,6 @@
 # Analytic Rules - T
 
-**215 analytic rules** starting with 'T'.
+**201 analytic rules** starting with 'T'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -8,7 +8,7 @@
 
 ---
 
-**Jump to letter:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | [B](analytic-rules-b.md) | [C](analytic-rules-c.md) | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | [M](analytic-rules-m.md) | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | **T** | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [Z](analytic-rules-z.md)
+**Jump to letter:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | [B](analytic-rules-b.md) | [C](analytic-rules-c.md) | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | [M](analytic-rules-m.md) | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | **T** | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [X](analytic-rules-x.md) | [Z](analytic-rules-z.md)
 
 > **Source:** 📦 Solution | 📄 Standalone | 🔗 GitHub Only
 
@@ -24,10 +24,6 @@
 | [Tape Media Vault Deleted](veeam-tape-media-vault-deleted-19ed623e-1b1c-45e0-ac74-c1e629fbf117-183c8886.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |
 | [Tape Medium Deleted](veeam-tape-medium-deleted-d92b2d65-1037-41e2-8d04-c18b8403d895-bcb4c853.md) | High | 📦 [Veeam](../solutions/veeam.md) |
 | [Tape Server Deleted](veeam-tape-server-deleted-fda79d00-9e6a-46f8-b7a2-2bdccd5f598e-dd1c29f0.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |
-| [Targeted Malware (High)](ctm360-targeted-malware-high-0b4091a3-d00a-47b3-99cb-139c9c39e3cd-2490aa85.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Targeted Malware (Informational)](ctm360-targeted-malware-informational-45316a28-f3de-4fff-b637-aea5623bb300-dd31182f.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Targeted Malware (Low)](ctm360-targeted-malware-low-527e8c45-b939-4b42-91f4-0e38af84660f-da4cc591.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Targeted Malware (Medium)](ctm360-targeted-malware-medium-6f518538-c36a-4b62-9751-e6c5af3844a6-66807059.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
 | [TEARDROP memory-only dropper](microsoft-defender-xdr-teardrop-memory-only-dropper-738702fd-0a66-42c7-8586-e30f0583f8fe-9b854574.md) | High | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Tenable.ad Active Directory attacks pathways](tenablead-tenable.ad-active-directory-attacks-pathways-4639bb0a-ca12-4a57-8e53-f61c2c6034d6-79dfc456.md) ⚠️ | Low | 📦 [TenableAD](../solutions/tenablead.md) |
 | [Tenable.ad DCShadow](tenablead-tenable.ad-dcshadow-861044f3-6eef-4f79-8609-e3764abb02f4-f4472cd3.md) ⚠️ | High | 📦 [TenableAD](../solutions/tenablead.md) |
@@ -182,6 +178,7 @@
 | [TI Map URL Entity to Syslog Data](threat-intelligence-new-ti-map-url-entity-to-syslog-data-4de24a28-dcd0-4a0d-bf14-96d8483dc05a-607492d9.md) | Medium | 📦 [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |
 | [TI Map URL Entity to UrlClickEvents](threat-intelligence-ti-map-url-entity-to-urlclickevents-23391c84-87d8-452f-a84c-47a62f01e115-1f8657e0.md) | Medium | 📦 [Threat Intelligence](../solutions/threat-intelligence.md) |
 | [TI Map URL Entity to UrlClickEvents](threat-intelligence-new-ti-map-url-entity-to-urlclickevents-ad4fa1f2-2189-459c-9458-f77d2039d2f5-105aa351.md) | Medium | 📦 [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |
+| [TI map URL entity to Web Session Events (ASIM Web Session schema)](threat-intelligence-new-ti-map-url-entity-to-web-session-events-asim-web-session-schema-3b4a8c72-5a2e-4f1e-b61a-9d8b2a6d7a21-f004a2bb.md) | Medium | 📦 [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |
 | [TIE Active Directory attacks pathways](tenable-app-tie-active-directory-attacks-pathways-de549a62-f595-4810-88bd-621338186588-8d945f8a.md) | Low | 📦 [Tenable App](../solutions/tenable-app.md) |
 | [TIE DCShadow](tenable-app-tie-dcshadow-874e3530-552e-437b-ba2e-227979e7e43c-398b98b9.md) | High | 📦 [Tenable App](../solutions/tenable-app.md) |
 | [TIE DCSync](tenable-app-tie-dcsync-19d1f964-ddcf-437b-92ce-b9c1c14d24f1-8c44578b.md) | High | 📦 [Tenable App](../solutions/tenable-app.md) |
@@ -196,13 +193,6 @@
 | [TIE user accounts issues](tenable-app-tie-user-accounts-issues-c4562ef3-d821-4089-b6c0-120d95c855e6-748b2811.md) | Low | 📦 [Tenable App](../solutions/tenable-app.md) |
 | [Time series anomaly detection for total volume of traffic](standalone-content-time-series-anomaly-detection-for-total-volume-of-traffic-06a9b845-6a95-4432-a78b-83919b28c375-d7007f43.md) | Medium | 📄 Standalone Content |
 | [Time series anomaly for data size transferred to public internet](standalone-content-time-series-anomaly-for-data-size-transferred-to-public-internet-f2dd4a3a-ebac-4994-9499-1a859938c947-b66aa17e.md) | Medium | 📄 Standalone Content |
-| [TLS Certificate Hostname Mismatch](ctm360-tls-certificate-hostname-mismatch-69761091-1a9a-49a9-8966-be68cd550766-82aa8eb1.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
-| [TLS Certificate Using Weak Cipher - Informational](ctm360-tls-certificate-using-weak-cipher-informational-1bdf3cba-6b85-4b88-ab1e-681bac20d41f-b6254ec5.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [TLS Certificate Using Weak Cipher - Medium](ctm360-tls-certificate-using-weak-cipher-medium-7bbe51fe-9c5f-4f54-a079-b84cc27737a1-b86f882e.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
-| [TLSv1 in Use - Low](ctm360-tlsv1-in-use-low-9435d04a-e8a6-49e5-90c4-e7f3456f9ed5-e21237b5.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [TLSv1 in Use - Medium](ctm360-tlsv1-in-use-medium-93f2ab34-15a3-4199-ad5a-6ebf8d2ad449-16526056.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
-| [TLSv1.1 in Use - info](ctm360-tlsv1.1-in-use-info-049edfdd-0331-4493-bcd7-b375bba7b551-0d80cc52.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [TLSv1.1 in Use - Medium](ctm360-tlsv1.1-in-use-medium-92400070-199b-46d3-bd86-2fb8421b5338-41c17c3c.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
 | [Tomcat - Commands in URI](tomcat-tomcat-commands-in-uri-91f59cea-486f-11ec-81d3-0242ac130003-51da8e60.md) | High | 📦 [Tomcat](../solutions/tomcat.md) |
 | [Tomcat - Known malicious user agent](tomcat-tomcat-known-malicious-user-agent-5e77a818-5825-4ff6-a901-80891c4774d1-d27417cd.md) | High | 📦 [Tomcat](../solutions/tomcat.md) |
 | [Tomcat - Multiple client errors from single IP address](tomcat-tomcat-multiple-client-errors-from-single-ip-address-4fa66058-4870-11ec-81d3-0242ac130003-b533ed85.md) | Medium | 📦 [Tomcat](../solutions/tomcat.md) |
@@ -213,10 +203,6 @@
 | [Tomcat - Request to sensitive files](tomcat-tomcat-request-to-sensitive-files-0c851bd4-4875-11ec-81d3-0242ac130003-4714e77e.md) | High | 📦 [Tomcat](../solutions/tomcat.md) |
 | [Tomcat - Server errors after multiple requests from same IP](tomcat-tomcat-server-errors-after-multiple-requests-from-same-ip-875da588-4875-11ec-81d3-0242ac130003-45171295.md) | Medium | 📦 [Tomcat](../solutions/tomcat.md) |
 | [Tomcat - Sql injection patterns](tomcat-tomcat-sql-injection-patterns-ce84741e-4875-11ec-81d3-0242ac130003-c09472fa.md) | High | 📦 [Tomcat](../solutions/tomcat.md) |
-| [Trap 10 (High)](ctm360-trap-10-high-93a6d5f2-ce69-4c0d-8ea9-613382635020-77ddaf11.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Trap 10 (Informational)](ctm360-trap-10-informational-e9485f04-527d-45a6-84eb-9bbdfa4db31f-f6eb36d1.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Trap 10 (Low)](ctm360-trap-10-low-3881de8d-bfce-40b8-a552-3d35f5de75f0-d41ffada.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Trap 10 (Medium)](ctm360-trap-10-medium-fbcdc4ed-fe19-4d15-9e0f-7e27edd1370b-a4f0fa05.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
 | [Trend Micro CAS - DLP violation](trend-micro-cloud-app-security-trend-micro-cas-dlp-violation-1ddeb8ad-cad9-4db4-b074-f9da003ca3ed-c2ad4a9b.md) | High | 📦 [Trend Micro Cloud App Security](../solutions/trend-micro-cloud-app-security.md) |
 | [Trend Micro CAS - Infected user](trend-micro-cloud-app-security-trend-micro-cas-infected-user-3649dfb8-a5ca-47dd-8965-cd2f633ca533-c328711b.md) | High | 📦 [Trend Micro Cloud App Security](../solutions/trend-micro-cloud-app-security.md) |
 | [Trend Micro CAS - Multiple infected users](trend-micro-cloud-app-security-trend-micro-cas-multiple-infected-users-65c2a6fe-ff7b-46b0-9278-61265f77f3bc-7781315a.md) | High | 📦 [Trend Micro Cloud App Security](../solutions/trend-micro-cloud-app-security.md) |

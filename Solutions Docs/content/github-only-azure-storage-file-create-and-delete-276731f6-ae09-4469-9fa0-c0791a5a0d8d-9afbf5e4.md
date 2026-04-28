@@ -23,8 +23,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`StorageBlobLogs`](../tables/storagebloblogs.md) | ✓ | ✗ | ✓ |
-| [`StorageFileLogs`](../tables/storagefilelogs.md) | ✓ | ✗ | ✓ |
+| [`StorageBlobLogs`](../tables/storagebloblogs.md) | ✓ | ✗ | ? |
+| [`StorageFileLogs`](../tables/storagefilelogs.md) | ✓ | ✗ | ? |
 
 ## Associated Connectors
 

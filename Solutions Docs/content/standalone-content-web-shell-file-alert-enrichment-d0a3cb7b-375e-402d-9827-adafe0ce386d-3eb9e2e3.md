@@ -23,8 +23,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
-| [`W3CIISLog`](../tables/w3ciislog.md) | ✓ | ✗ | ✗ |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
+| [`W3CIISLog`](../tables/w3ciislog.md) | ✓ | ✗ | ? |
 
 ## Associated Connectors
 

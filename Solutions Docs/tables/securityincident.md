@@ -11,7 +11,6 @@
 | **Category** | Internal |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -19,7 +18,7 @@
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
-## Solutions (32)
+## Solutions (34)
 
 This table is used by the following solutions:
 
@@ -27,6 +26,7 @@ This table is used by the following solutions:
 - [Azure Key Vault](../solutions/azure-key-vault.md)
 - [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md)
 - [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md)
+- [Censys](../solutions/censys.md)
 - [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
 - [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
 - [DORA Compliance](../solutions/dora-compliance.md)
@@ -47,6 +47,7 @@ This table is used by the following solutions:
 - [SIGNL4](../solutions/signl4.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [SOC-Process-Framework](../solutions/soc-process-framework.md)
+- [SOCRadar](../solutions/socradar.md)
 - [SentinelSOARessentials](../solutions/sentinelsoaressentials.md)
 - [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
@@ -67,9 +68,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (65)
+## Content Items Using This Table (70)
 
-### Analytic Rules (2)
+### Analytic Rules (3)
 
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
 
@@ -78,7 +79,21 @@ This table is ingested by the following connectors:
 | [Insider Risk_High User Security Alert Correlations](../content/microsoftpurviewinsiderriskmanagement-insider-risk-high-user-security-alert-correlations-a4fb4255-f55b-4c24-b396-976ee075d406-d76ca4d2.md) |  |
 | [Insider Risk_High User Security Incidents Correlation](../content/microsoftpurviewinsiderriskmanagement-insider-risk-high-user-security-incidents-correlation-28a75d10-9b75-4192-9863-e452c3ad24db-6bbae8c7.md) |  |
 
-### Workbooks (57)
+**In solution [SOCRadar](../solutions/socradar.md):**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [SOCRadar Unsynced Closed Incident](../content/socradar-socradar-unsynced-closed-incident-6e2f8d4b-5a71-4c9e-b3f6-8a1c9d4e7b2a-ea970a79.md) |  |
+
+### Hunting Queries (1)
+
+**In solution [SOCRadar](../solutions/socradar.md):**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [SOCRadar Incident Correlation](../content/socradar-socradar-incident-correlation-3a665ce4-b824-4a79-861b-c9f80ab4daba-143cdc23.md) |  |
+
+### Workbooks (58)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -103,6 +118,12 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |  |
+
+**In solution [Censys](../solutions/censys.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [Censys](../content/censys-censys-21c23ffd.md) |  |
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 

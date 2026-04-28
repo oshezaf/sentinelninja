@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ Upwind Logs Loader Ingestion API &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="upwind-logs-loader">⚠️ Upwind Logs Loader (Ingestion API)</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Upwind/Data%20Connectors/Logos/upwind.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>UpwindLogsLoader</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Upwind</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/upwind.html">Upwind</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Upwind/Data%20Connectors/UpwindLogsLoader_API_FunctionApp.json">UpwindLogsLoader_API_FunctionApp.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>Azure Function code uses LogsIngestionClient/Log Ingestion API</em></td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>Upwind Logs Loader</strong> data connector ingests compute platform assets from the <a href="https://upwind.io">Upwind</a> cloud security platform into a Microsoft Sentinel custom table using an Azure Function and the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Ingestion API</a> (DCE/DCR).</p>
+<p>Upwind provides runtime-powered cloud security, correlating cloud posture with live workload context. This connector surfaces your Upwind inventory — compute platform assets across AWS, GCP, and Azure — directly into Microsoft Sentinel for correlation, hunting, and incident enrichment.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/upwindlogsassets-cl.html"><code>UpwindLogsAssets_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
+- <strong>Upwind API Credentials</strong>: An Upwind API client ID and client secret are required. Obtain these from your Upwind platform under <strong>Settings → API Keys</strong>. The client credentials are used to authenticate against <code>https://auth.upwind.io/oauth/token</code> to obtain a bearer token.
+- <strong>Upwind Organization ID</strong>: Your Upwind Organization ID is required. Find it in the Upwind platform under <strong>Settings → Organization</strong>.</p>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+<p><strong>NOTE:</strong> This connector uses Azure Functions and the Azure Monitor Ingestion API (DCE/DCR) to push Upwind logs into Microsoft Sentinel. The ARM template automatically creates the Data Collection Endpoint, custom log table (<code>UpwindLogsAssets_CL</code>), Data Collection Rule, and role assignment. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> and <a href="https://azure.microsoft.com/pricing/details/monitor/">Azure Monitor pricing page</a> for details.</p>
+<p><strong>(Optional)</strong> During deployment, choose <strong>Key Vault</strong> as the authentication method to securely store your Upwind client secret. You can provide an existing Key Vault name or let the template create a new one. A user-assigned managed identity is automatically configured with the required Key Vault access policies.</p>
+</blockquote>
+<p><strong>1. STEP 1 – Obtain Upwind API credentials</strong></p>
+<ol>
+<li>Log in to the <strong><a href="https://app.upwind.io">Upwind platform</a></strong>.</li>
+<li>Navigate to <strong>Settings → API Keys</strong>.</li>
+<li>Create a new API key and note the <strong>Client ID</strong> and <strong>Client Secret</strong>.</li>
+<li>Navigate to <strong>Settings → Organization</strong> and note your <strong>Organization ID</strong>.</li>
+</ol>
+<p><strong>2. STEP 2 – Deploy the Azure Function App</strong></p>
+<p>Click <strong>Deploy to Azure</strong> and fill in the parameters. The template automatically creates the DCE, <code>UpwindLogs_CL</code> table, DCR, role assignment, and Function App.</p>
+<p><a href="https://aka.ms/sentinel-Upwind-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
+<p><strong>Parameters to fill in:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>WorkspaceName</code></td>
+<td>Name of your Log Analytics / Microsoft Sentinel workspace</td>
+</tr>
+<tr>
+<td><code>UpwindOrgId</code></td>
+<td>Upwind Organization ID from Step 1</td>
+</tr>
+<tr>
+<td><code>UpwindClientId</code></td>
+<td>Upwind API Client ID from Step 1</td>
+</tr>
+<tr>
+<td><code>UpwindClientSecret</code></td>
+<td>Upwind API Client Secret from Step 1</td>
+</tr>
+<tr>
+<td><code>AppInsightsWorkspaceResourceID</code></td>
+<td>Full Resource ID of the Log Analytics workspace (from <strong>Log Analytics workspace → Properties</strong>)</td>
+</tr>
+<tr>
+<td>- <strong>Workspace ID</strong>: <code>WorkspaceId</code></td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; <em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+</div>
+
+</body>
+</html>

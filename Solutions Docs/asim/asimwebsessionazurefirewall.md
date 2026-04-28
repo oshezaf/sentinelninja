@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) | ✓ | ✗ | ✓ |
+| [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) | ✓ | ✗ | ? |
 
 ## Parameters
 

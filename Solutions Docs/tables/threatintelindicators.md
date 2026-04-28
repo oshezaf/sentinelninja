@@ -14,7 +14,6 @@ Reference for ThreatIntelIndicators table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelindicators) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -60,13 +59,14 @@ Reference for ThreatIntelIndicators table in Azure Monitor Logs.
 | ValidUntil | datetime | The time at which this indicator should no longer be considered a valid indicator of the bahviors it is related to or represents. |
 | WorkspaceId | string | The workspace that submitted the indicator. |
 
-## Solutions (14)
+## Solutions (15)
 
 This table is used by the following solutions:
 
 - [CiscoMeraki](../solutions/ciscomeraki.md)
 - [CofenseTriage](../solutions/cofensetriage.md)
 - [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)
+- [Cyjax](../solutions/cyjax.md)
 - [DNS Essentials](../solutions/dns-essentials.md)
 - [DORA Compliance](../solutions/dora-compliance.md)
 - [Global Secure Access](../solutions/global-secure-access.md)
@@ -79,14 +79,16 @@ This table is used by the following solutions:
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ThreatConnect](../solutions/threatconnect.md)
 
-## Connectors (7)
+## Connectors (9)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [CrowdStrike Falcon Adversary Intelligence ](../connectors/crowdstrikefalconadversaryintelligence.md) |  |
-| [Lumen Defender Threat Feed Data Connector](../connectors/lumenthreatfeedconnector.md) |  |
+| [Cyjax Threat Intelligence IOC Connector](../connectors/cyjaxiocapi.md) |  |
+| [Lumen Defender Threat Feed Data Connector V2](../connectors/lumenthreatfeedconnectorv2.md) |  |
+| [Lumen Defender Threat Feed Data Connector V2 (using Azure Functions Flex Consumption Plan with Private Networking)](../connectors/lumenthreatfeedconnectorv2privatenetworking.md) |  |
 | [Microsoft Defender Threat Intelligence](../connectors/microsoftdefenderthreatintelligence.md) |  |
 | [Premium Microsoft Defender Threat Intelligence](../connectors/premiummicrosoftdefenderforthreatintelligence.md) |  |
 | [Threat Intelligence Platforms](../connectors/threatintelligence.md) |  |
@@ -95,9 +97,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (103)
+## Content Items Using This Table (105)
 
-### Analytic Rules (70)
+### Analytic Rules (71)
 
 **In solution [Global Secure Access](../solutions/global-secure-access.md):**
 
@@ -193,6 +195,7 @@ This table is ingested by the following connectors:
 | [TI map IP entity to Web Session Events (ASIM Web Session schema)](../content/threat-intelligence-new-ti-map-ip-entity-to-web-session-events-asim-web-session-schema-0548be6c-135e-4eb6-b9ff-14a09df62c77-0e576920.md) |  |
 | [TI map IP entity to Workday(ASimAuditEventLogs)](../content/threat-intelligence-new-ti-map-ip-entity-to-workday-asimauditeventlogs-92e8e945-6e99-4e4b-bef8-468b4c19fc3a-7773b67f.md) |  |
 | [TI map URL entity to Cloud App Events](../content/threat-intelligence-new-ti-map-url-entity-to-cloud-app-events-526df43b-f514-477c-af7a-c8d3586457fb-9db18791.md) |  |
+| [TI map URL entity to Web Session Events (ASIM Web Session schema)](../content/threat-intelligence-new-ti-map-url-entity-to-web-session-events-asim-web-session-schema-3b4a8c72-5a2e-4f1e-b61a-9d8b2a6d7a21-f004a2bb.md) |  |
 
 ### Hunting Queries (15)
 
@@ -236,7 +239,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Teams Threat Intelligence Indicator Hit for Domain or URL](../content/github-only-teams-threat-intelligence-indicator-hit-for-domain-or-url-2e7cda70-c3cd-4173-945e-6b5c14b05817-afe28fba.md) |  |
 
-### Workbooks (18)
+### Workbooks (19)
 
 **In solution [CiscoMeraki](../solutions/ciscomeraki.md):**
 
@@ -249,6 +252,12 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [CofenseTriageThreatIndicators](../content/cofensetriage-cofensetriagethreatindicators-b9ec5acc.md) |  |
+
+**In solution [Cyjax](../solutions/cyjax.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [Cyjax](../content/cyjax-cyjax-ba2b870a.md) |  |
 
 **In solution [DNS Essentials](../solutions/dns-essentials.md):**
 
@@ -316,12 +325,14 @@ This table is ingested by the following connectors:
 | [OptimizationWorkbook](../content/github-only-optimizationworkbook-7387c8bb.md) |  |
 | [ThreatIntelligence](../content/github-only-threatintelligence-250cda74.md) |  |
 
-## Parsers Using This Table (1)
+## Parsers Using This Table (3)
 
-### Other Parsers (1)
+### Other Parsers (3)
 
 | Parser | Solution | Selection Criteria |
 |:-------|:---------|:-------------------|
+| [CyjaxCorrelate](../parsers/cyjaxcorrelate.md) | [Cyjax](../solutions/cyjax.md) |  |
+| [CyjaxThreatIndicator](../parsers/cyjaxthreatindicator.md) | [Cyjax](../solutions/cyjax.md) |  |
 | [ThreatIntelIndicatorsv2](../parsers/threatintelindicatorsv2.md) | [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |  |
 
 ## Resource Types

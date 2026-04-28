@@ -13,8 +13,8 @@
 | Title | Parser for ExtraHopDetections |
 | Location | Solution |
 | Solution | [ExtraHop](../solutions/extrahop.md) |
-| Version | 1.0.1 |
-| Last Updated | 2025-06-02 |
+| Version | 2.0.0 |
+| Last Updated | 2026-03-17 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ExtraHop/Parsers/ExtraHopDetections.yaml) |
@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md) | ? | ✓ | ? |
 
 ---
 

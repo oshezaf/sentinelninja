@@ -1,4 +1,6 @@
-# Egress Defend
+# ⚠️ Egress Defend
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Egress-logo.svg" alt="Egress Defend Logo" width="75" height="75">
 
@@ -38,11 +40,12 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`EgressDefend_CL`](../tables/egressdefend-cl.md) 🔶 | [Egress Defend](../connectors/egressdefendpolling.md) | Analytics, Hunting, Workbooks |
+| [`KnowBe4Defend_CL`](../tables/knowbe4defend-cl.md) 🔶 | [Egress Defend](../connectors/egressdefendpolling.md) | Analytics, Workbooks |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
@@ -62,8 +65,8 @@ This solution includes **5 content item(s)** (4 in solution, 1 discovered 🔍):
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Egress Defend - Dangerous Attachment Detected](../content/egress-defend-egress-defend-dangerous-attachment-detected-a0e55dd4-8454-4396-91e6-f28fec3d2cab-f2c1e438.md) | Medium | Execution, InitialAccess, Persistence, PrivilegeEscalation | [`EgressDefend_CL`](../tables/egressdefend-cl.md) |
-| [Egress Defend - Dangerous Link Click](../content/egress-defend-egress-defend-dangerous-link-click-a896123e-03a5-4a4d-a7e3-fd814846dfb2-cd7508b8.md) | Medium | Execution | [`EgressDefend_CL`](../tables/egressdefend-cl.md) |
+| [Egress Defend - Dangerous Attachment Detected](../content/egress-defend-egress-defend-dangerous-attachment-detected-a0e55dd4-8454-4396-91e6-f28fec3d2cab-f2c1e438.md) | Medium | Execution, InitialAccess, Persistence, PrivilegeEscalation | [`EgressDefend_CL`](../tables/egressdefend-cl.md)<br>[`KnowBe4Defend_CL`](../tables/knowbe4defend-cl.md) |
+| [Egress Defend - Dangerous Link Click](../content/egress-defend-egress-defend-dangerous-link-click-a896123e-03a5-4a4d-a7e3-fd814846dfb2-cd7508b8.md) | Medium | Execution | [`EgressDefend_CL`](../tables/egressdefend-cl.md)<br>[`KnowBe4Defend_CL`](../tables/knowbe4defend-cl.md) |
 
 ### Hunting Queries
 
@@ -75,7 +78,7 @@ This solution includes **5 content item(s)** (4 in solution, 1 discovered 🔍):
 
 | Name | Tables Used |
 |:-----|:------------|
-| [DefendMetrics](../content/egress-defend-defendmetrics-35b2f8e1.md) | [`EgressDefend_CL`](../tables/egressdefend-cl.md) |
+| [DefendMetrics](../content/egress-defend-defendmetrics-35b2f8e1.md) | [`EgressDefend_CL`](../tables/egressdefend-cl.md)<br>[`KnowBe4Defend_CL`](../tables/knowbe4defend-cl.md) |
 
 ### Parsers
 

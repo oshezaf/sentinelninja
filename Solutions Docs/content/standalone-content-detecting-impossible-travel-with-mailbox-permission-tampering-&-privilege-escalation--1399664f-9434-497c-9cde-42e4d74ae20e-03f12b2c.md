@@ -26,9 +26,9 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ | ✓ |
-| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ | ✓ |
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ | ? |
+| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
 
 ## Associated Connectors
 

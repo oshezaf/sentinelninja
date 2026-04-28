@@ -22,7 +22,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType in "AsrAdobeReaderChildProcessBlocked,AsrExecutableEmailContentBlocked,AsrExecutableOfficeContentBlocked,AsrLsassCredentialTheftBlocked,AsrObfuscatedScriptBlocked,AsrOfficeChildProcessBlocked,AsrOfficeCommAppChildProcessBlocked,AsrOfficeMacroWin32ApiCallsBlocked,AsrOfficeProcessInjectionBlocked,AsrPersistenceThroughWmiBlocked,AsrPsexecWmiChildProcessBlocked,AsrRansomwareBlocked,AsrScriptExecutableDownloadBlocked,AsrUntrustedExecutableBlocked,AsrUntrustedUsbProcessBlocked,AsrVulnerableSignedDriverBlocked"`<br>`ActionType startswith "asr"` | ✓ | ✗ | ✓ |
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType in "AsrAdobeReaderChildProcessBlocked,AsrExecutableEmailContentBlocked,AsrExecutableOfficeContentBlocked,AsrLsassCredentialTheftBlocked,AsrObfuscatedScriptBlocked,AsrOfficeChildProcessBlocked,AsrOfficeCommAppChildProcessBlocked,AsrOfficeMacroWin32ApiCallsBlocked,AsrOfficeProcessInjectionBlocked,AsrPersistenceThroughWmiBlocked,AsrPsexecWmiChildProcessBlocked,AsrRansomwareBlocked,AsrScriptExecutableDownloadBlocked,AsrUntrustedExecutableBlocked,AsrUntrustedUsbProcessBlocked,AsrVulnerableSignedDriverBlocked"`<br>`ActionType startswith "asr"` | ✓ | ✗ | ? |
 
 ---
 

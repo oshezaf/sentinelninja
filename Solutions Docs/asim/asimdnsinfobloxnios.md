@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Syslog`](../tables/syslog.md) | `ProcessName == "named"`<br>`SyslogMessage !has "response:"`<br>`SyslogMessage has_all "client"` | ✓ | ✓ | ✓ |
+| [`Syslog`](../tables/syslog.md) | `ProcessName == "named"`<br>`SyslogMessage !has "response:"`<br>`SyslogMessage has_all "client"` | ✓ | ✓ | ? |
 
 ## Parameters
 

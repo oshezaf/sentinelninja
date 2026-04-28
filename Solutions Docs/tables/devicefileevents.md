@@ -96,7 +96,7 @@ File creation, modification, and other file system events
 | TimeGenerated | datetime | Date and time the event was recorded by the MDE agent on the endpoint. |
 | Type | string | The name of the table |
 
-## Solutions (15)
+## Solutions (16)
 
 This table is used by the following solutions:
 
@@ -113,6 +113,7 @@ This table is used by the following solutions:
 - [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
+- [Visa Threat Intelligence (VTI)](../solutions/visa-threat-intelligence-vti.md)
 - [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md)
 - [Zinc Open Source](../solutions/zinc-open-source.md)
 
@@ -126,9 +127,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (124)
+## Content Items Using This Table (125)
 
-### Analytic Rules (21)
+### Analytic Rules (22)
 
 **In solution [FalconFriday](../solutions/falconfriday.md):**
 
@@ -149,7 +150,7 @@ This table is ingested by the following connectors:
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Files Copied to USB Drives](../content/microsoft-defender-xdr-files-copied-to-usb-drives-3ab04acf-e0e7-4f7c-8995-748ab4c848c2-7d23d298.md) |  |
-| [Potential Build Process Compromise - MDE](../content/microsoft-defender-xdr-potential-build-process-compromise-mde-1bf6e165-5e32-420e-ab4f-0da8558a8be2-c676927e.md) |  |
+| [Potential Build Process Compromise - MDE](../content/microsoft-defender-xdr-potential-build-process-compromise-mde-1bf6e165-5e32-420e-ab4f-0da8558a8be2-c676927e.md) | `ActionType in "FileCreated,FileModified"` |
 | [Rare Process as a Service](../content/microsoft-defender-xdr-rare-process-as-a-service-91a451e3-178f-41b2-9e5d-da97d75b9971-365d2f3a.md) |  |
 | [Remote File Creation with PsExec](../content/microsoft-defender-xdr-remote-file-creation-with-psexec-35ab0d58-baab-4154-87ed-fa2f69797e9e-384e377c.md) |  |
 | [SUNBURST and SUPERNOVA backdoor hashes](../content/microsoft-defender-xdr-sunburst-and-supernova-backdoor-hashes-a3c144f9-8051-47d4-ac29-ffb0c312c910-6f0d9998.md) |  |
@@ -165,6 +166,12 @@ This table is ingested by the following connectors:
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [TI map File Hash to DeviceFileEvents Event](../content/threat-intelligence-new-ti-map-file-hash-to-devicefileevents-event-d6f04915-4471-4cb3-b163-a8b72997cf72-94f54e22.md) |  |
+
+**In solution [Visa Threat Intelligence (VTI)](../solutions/visa-threat-intelligence-vti.md):**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [VTI - High Severity SHA1 Collision Detection](../content/visa-threat-intelligence-vti-vti-high-severity-sha1-collision-detection-dbd9e28f-973d-47f3-a8c3-9e18da846870-1dd78c47.md) |  |
 
 **In solution [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md):**
 
@@ -361,7 +368,7 @@ This table is ingested by the following connectors:
 | [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) |  |
 | [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |
+| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `ActionType == "RemoteInteractiveLogon"`<br>`ActionType == "LdapSearch"` |
 
 ## Parsers Using This Table (1)
 
@@ -371,27 +378,27 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|:-------------------|
 | [ASimFileEventMicrosoft365D](../asim/asimfileeventmicrosoft365d.md) | FileEvent | Microsoft 365 Defender for EndPoint |  |
 
-## Selection Criteria Summary (6 criteria, 15 total references)
+## Selection Criteria Summary (6 criteria, 16 total references)
 
-References by type: 0 connectors, 15 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 16 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `ActionType == "FileCreated"` | - | 9 | - | - | **9** |
+| `ActionType in "FileCreated,FileModified"` | - | 2 | - | - | **2** |
 | `ActionType in "FileCreated,FileRenamed"` | - | 2 | - | - | **2** |
 | `ActionType == "FileRenamed"` | - | 1 | - | - | **1** |
 | `ActionType in "FileCreated,FileModified,FileRenamed"` | - | 1 | - | - | **1** |
-| `ActionType in "FileCreated,FileModified"` | - | 1 | - | - | **1** |
 | `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **15** | **0** | **0** | **15** |
+| **Total** | **0** | **16** | **0** | **0** | **16** |
 
 ### ActionType
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `FileCreated` | - | 13 | - | - | **13** |
+| `FileCreated` | - | 14 | - | - | **14** |
 | `FileRenamed` | - | 4 | - | - | **4** |
-| `FileModified` | - | 2 | - | - | **2** |
+| `FileModified` | - | 3 | - | - | **3** |
 | `Add member to role` | - | 1 | - | - | **1** |
 | `Add user` | - | 1 | - | - | **1** |
 | `InteractiveLogon` | - | 1 | - | - | **1** |

@@ -15,39 +15,51 @@
 
 - [Schema](#schema)
 - [Solutions](#solutions)
+- [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
-## Schema (19 columns)
+## Schema (22 columns)
 
-**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/TaniumDefenderHealth_CL.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium%5CData%20Connectors/Table_DefenderHealth.json)
 
-| Column Name | Type |
-|:------------|:-----|
-| Age_s | string |
-| AntiSpyware_State_s | string |
-| Antivirus_State_s | string |
-| Asset_IP_Address_s | string |
-| Asset_OS_Platform_s | string |
-| Computer | string |
-| Computer_ID_s | string |
-| Computer_Name_s | string |
-| Count_s | string |
-| Defender_Process_s | string |
-| Defender_Process_StartType_s | string |
-| Health_s | string |
-| QuickScan_Age_s | string |
-| RawData | string |
-| Signature_Update_Age_s | string |
-| TimeGenerated | datetime |
-| Type | string |
-| Windows_Defender_Client_Version_s | string |
-| Windows_Defender_Installed_s | string |
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| AntiMalware_Engine_Version_s | string |  |
+| AntiMalware_Product_Version_s | string |  |
+| AntiMalware_Service_State_s | string |  |
+| AntiSpyware_Signature_Days_Age_s | string |  |
+| AntiSpyware_Signature_Update_Date_s | string |  |
+| AntiSpyware_Signature_Version_s | string |  |
+| Computer_ID_s | string |  |
+| Computer_Name_s | string |  |
+| Count_d | real |  |
+| Health_Issues_s | string |  |
+| IP_Address_s | string |  |
+| Is_AntiMalware_Service_Enabled_s | string |  |
+| Is_AntiSpyware_Service_Enabled_s | string |  |
+| Is_Defender_Healthy_s | string |  |
+| Is_Defender_Installed_s | string |  |
+| OS_Platform_s | string |  |
+| QuickScan_Age_s | string |  |
+| QuickScan_Overdue_s | string |  |
+| QuickScan_Signature_Version_s | string |  |
+| QuickScan_Start_Time_s | string |  |
+| QuickScan_Stop_Time_s | string |  |
+| TimeGenerated | datetime | The time at which the data was generated |
 
 ## Solutions (1)
 
 This table is used by the following solutions:
 
 - [Tanium](../solutions/tanium.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Tanium's CCF Push Connector](../connectors/taniumconnector.md) |  |
 
 ---
 

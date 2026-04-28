@@ -21,7 +21,7 @@
 | **First Published** | 2022-03-30 |
 | **Solution Folder** | [SecurityThreatEssentialSolution](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityThreatEssentialSolution) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-securitythreatessentialsol) · Popularity: 🔵 Medium (64%) |
-| **Pre-requisites** | [Microsoft Entra ID](microsoft-entra-id.md), [Microsoft 365](microsoft-365.md), [Azure Activity](azure-activity.md), [CiscoASA](ciscoasa.md), [PaloAlto-PAN-OS](paloalto-pan-os.md), [Zscaler Internet Access](zscaler-internet-access.md) |
+| **Pre-requisites** | [Microsoft Entra ID](microsoft-entra-id.md), [Microsoft 365](microsoft-365.md), [Azure Activity](azure-activity.md), [CiscoASA](ciscoasa.md), [PaloAlto-PAN-OS](paloalto-pan-os.md), zscaler1579058425289.zscaler_internet_access_mss |
 
 This solution published by Microsoft is based on the continuous evaluation of threat campaigns and provides out-of-the-box security content that helps you to enhance your security posture.
 This solution leverages the following tables:
@@ -48,7 +48,7 @@ This solution leverages the following tables:
 
 ## Pre-requisites
 
-This solution depends on **6 other solution(s)**:
+This solution depends on **5 other solution(s)**:
 
 | Solution |
 |:---------|
@@ -57,7 +57,6 @@ This solution depends on **6 other solution(s)**:
 | [Microsoft 365](microsoft-365.md) |
 | [Microsoft Entra ID](microsoft-entra-id.md) |
 | [PaloAlto-PAN-OS](paloalto-pan-os.md) |
-| [Zscaler Internet Access](zscaler-internet-access.md) |
 
 ## Data Connectors
 
@@ -70,8 +69,6 @@ This solution depends on **6 other solution(s)**:
 - [Microsoft 365 (formerly, Office 365)](../connectors/office365.md) *(dependency on [Microsoft 365](microsoft-365.md))*
 - [[Deprecated] Palo Alto Networks (Firewall) via Legacy Agent](../connectors/paloaltonetworks.md) *(dependency on [PaloAlto-PAN-OS](paloalto-pan-os.md))*
 - [[Deprecated] Palo Alto Networks (Firewall) via AMA](../connectors/paloaltonetworksama.md) *(dependency on [PaloAlto-PAN-OS](paloalto-pan-os.md))*
-- [[Deprecated] Zscaler via Legacy Agent](../connectors/zscaler.md) *(dependency on [Zscaler Internet Access](zscaler-internet-access.md))*
-- [[Deprecated] Zscaler via AMA](../connectors/zscalerama.md) *(dependency on [Zscaler Internet Access](zscaler-internet-access.md))*
 
 ## Tables Used
 

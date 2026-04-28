@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SentinelAlibabaCloudAPIGatewayLogs &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
-
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
@@ -19,6 +21,7 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
+<p>Reference for SentinelAlibabaCloudAPIGatewayLogs table in Azure Monitor Logs.</p>
 <table>
 <thead>
 <tr>
@@ -28,6 +31,14 @@
 </thead>
 <tbody>
 <tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Security</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+</tr>
+<tr>
 <td style="text-align: left;"><strong>Supports Transformations</strong></td>
 <td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
@@ -36,8 +47,260 @@
 <td style="text-align: left;">✓ Yes</td>
 </tr>
 <tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelalibabacloudapigatewaylogs">View Documentation</a></td>
+</tr>
+<tr>
 <td style="text-align: left;"><strong>Azure Monitor Logs Ingestion API</strong></td>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema">Schema (47 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelalibabacloudapigatewaylogs">Azure Monitor documentation</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">ApiGroupName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the group to which the API belongs.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ApiGroupUid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the group to which the API belongs.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ApiName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The API name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ApiStageName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The environment name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ApiStageUid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the environment in which the API was called.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ApiUid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The API ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AppId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the application that was used to call the API.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AppName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the application that was used to call the API.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClientIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address of the client that initiated the API call.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClientNonce</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The X-Ca-Nonce header in the request initiated from the client.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConsumerAppKey</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The AppKey that was used in the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CustomTraceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The traceId of the end-to-end log.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Domain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The domain name that was used for the API call.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ErrorCode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The error code, such as X500ER.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ErrorMessage</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The returned error message.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Exception</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The specific error message that was returned by the backend service of the API.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ExchangeTimestamp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The I/O points in time in the request link. FrontRequestStart: the point in time when API Gateway started to receive the request from the client. FrontRequestEnd: the point in time when API Gateway completed receiving the request from the client. BackendRequestStart: the point in time when API Gateway started to forward the request to the backend service. BackendRequestEnd: the point in time when API Gateway completed forwarding the request to the backend service. BackendResponseStart: the point in time when API Gateway started to receive the response from the backend service. BackendResponseEnd: the point in time when API Gateway completed receiving the response from the backend service. FrontResponseStart: the point in time when API Gateway started to send the response to the client. FrontResponseEnd: the point in time when API Gateway completed sending the response to the client.</td>
+</tr>
+<tr>
+<td style="text-align: left;">HttpMethod</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The HTTP method that was used by the API request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InitialRequestId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">If an API calls another API, for example, API-1 calls API-2, initialRequestId is used to record the request ID of API-1 in the logs of API-2.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InstanceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the API Gateway instance to which the API belongs.</td>
+</tr>
+<tr>
+<td style="text-align: left;">JwtClaims</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The JSON web token (JWT) claims. The claims can be configured at the group level.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogProject</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the log project where the logs are stored.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The region where the log store is located.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogStore</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the log store where the logs are stored.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Path</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The request path of the API.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Plugin</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The plug-in hit by the request and the relevant context.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProviderAliUid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the account that provides the API.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Region</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The region where the API resides, for example, cn-hangzhou, which indicates the China (Hangzhou) region.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestBody</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The body of the request sent by the client. The body can contain up to 1,024 bytes in length. This field is for dedicated instances only.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestHandleTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time point in UTC at which the API request was received by API Gateway.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestHeaders</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The header content in the request initiated from the client. This field is for dedicated instances only.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The request ID. The ID is globally unique.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestProtocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The protocol used by the client to send the request. Valid values: HTTP, HTTPS, and WS.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestQueryString</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The queryString in the request initiated from the client. This field is for dedicated instances only.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequestSize</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The request size. Unit: bytes.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseBody</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The response content. The response can contain up to 1,024 bytes in length. This field is for dedicated instances only.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseHeaders</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The header content of the API response. This field is for dedicated instances only.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResponseSize</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The response size. Unit: bytes.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ServiceLatency</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The total time consumed to access the backend resources. The total time includes the time consumed to request a connection to the resources, the time consumed to establish the connection, and the time consumed to call the backend service. Unit: milliseconds.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">StatusCode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">HttpStatusCode</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time when the log entry was generated</td>
+</tr>
+<tr>
+<td style="text-align: left;">TotalLatency</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The total latency of the API request. Unit: milliseconds.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
 </tr>
 </tbody>
 </table>
@@ -46,6 +309,30 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 </div>
-
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
 </body>
 </html>

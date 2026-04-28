@@ -38,16 +38,17 @@ This solution uses **2 table(s)**:
 
 ## Content Items
 
-This solution includes **2 content item(s)** (0 in solution, 2 discovered 🔍):
+This solution includes **3 content item(s)** (0 in solution, 3 discovered 🔍):
 
 | Content Type | Total | In Solution | Discovered |
 |:-------------|------:|------------:|-----------:|
-| Playbooks | 2 | 0 | 2 |
+| Playbooks | 3 | 0 | 3 |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
+| [SAP - Lock User (Agentless Basic)](../content/sap-sap-lock-user-agentless-basic-1dc6312e.md) ⚠️ | This playbook locks an SAP user when triggered by a Microsoft Sentinel incident. It dynamically find... | - |
 | [workflow](../content/sap-workflow-3298b428.md) ⚠️ | < 🏡home | - |
 | [workflow](../content/sap-workflow-20a8ae88.md) ⚠️ | < 🏡home | - |
 
@@ -57,7 +58,7 @@ This solution includes **2 content item(s)** (0 in solution, 2 discovered 🔍):
 
 > 📄 *Source: [SAP/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP/README.md)*
 
-# Microsoft Azure Sentinel SAP Continuous Threat Monitoring - Preview
+# Microsoft Azure Sentinel SAP Continuous Threat Monitoring
 
 Please visit: [https://docs.microsoft.com/azure/sentinel/sap-deploy-solution](https://docs.microsoft.com/azure/sentinel/sap-deploy-solution)
 
@@ -66,6 +67,8 @@ See our playbooks built on Logic Apps (Standard) [here](./Playbooks/README.md).
 ## Release Notes
 
 # Solution Releases
+
+Agentless solution release notes can be found in the [Agentless README](./Agentless/README.md) file.
 
 | Date issued | Version Number | Content |
 | --- | --- | --- |

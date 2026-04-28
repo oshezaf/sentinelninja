@@ -14,7 +14,7 @@
 | Location | Solution |
 | Solution | [Lookout](../solutions/lookout.md) |
 | Version | 3.1.0 |
-| Last Updated | 2025-12-18 |
+| Last Updated | 2026-03-11 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout/Parsers/LookoutEvents.yaml) |
@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) | ✓ | ✓ | ✓ |
+| [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) | ? | ✓ | ? |
 
 ---
 

@@ -81,11 +81,8 @@
 <h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
-<li><a href="../connectors/gigamondataconnector.html">Gigamon AMX Data Connector</a> 🔶</li>
+<li><a href="../connectors/gigamondefinition.html">Gigamon AMX Connector</a></li>
 </ul>
-<blockquote>
-<p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
-</blockquote>
 <h2 id="tables-used">Tables Used</h2>
 <p>This solution uses <strong>1 table(s)</strong>:</p>
 <table>
@@ -98,15 +95,12 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../tables/gigamon-cl.html"><code>Gigamon_CL</code></a> 🔶</td>
-<td><a href="../connectors/gigamondataconnector.html">Gigamon AMX Data Connector</a></td>
+<td><a href="../tables/gigamonv2-cl.html"><code>GigamonV2_CL</code></a></td>
+<td><a href="../connectors/gigamondefinition.html">Gigamon AMX Connector</a></td>
 <td>Workbooks</td>
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
-</blockquote>
 <h2 id="content-items">Content Items</h2>
 <p>This solution includes <strong>1 content item(s)</strong>:</p>
 <table>
@@ -134,7 +128,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/gigamon-connector-gigamon-07ba033c.html">Gigamon</a></td>
-<td style="text-align: left;"><a href="../tables/gigamon-cl.html"><code>Gigamon_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/gigamonv2-cl.html"><code>GigamonV2_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -149,9 +143,14 @@
 </thead>
 <tbody>
 <tr>
+<td>3.0.1</td>
+<td>19-02-2026</td>
+<td><strong>CCF</strong> Push Connector.</td>
+</tr>
+<tr>
 <td>3.0.0</td>
 <td>25-10-2023</td>
-<td>Initial Solution Release</td>
+<td>Initial Solution Release.</td>
 </tr>
 </tbody>
 </table>

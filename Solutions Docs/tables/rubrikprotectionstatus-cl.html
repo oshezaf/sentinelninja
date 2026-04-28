@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RubrikProtectionStatusCL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="rubrikprotectionstatus_cl">RubrikProtectionStatus_CL</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
+</ul>
+<h2 id="schema">Schema (50 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud%5CData%20Connectors%5CRubrikSecurityCloud_CCF/RubrikSecurityCloud_Table.json">Connector definition</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ArchivalComplianceStatus</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ArchivalSnapshotLag</td>
+<td style="text-align: left;">int</td>
+</tr>
+<tr>
+<td style="text-align: left;">ArchiveSnapshots</td>
+<td style="text-align: left;">int</td>
+</tr>
+<tr>
+<td style="text-align: left;">ArchiveStorage</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">AssetId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">AssetName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">AwaitingFirstFull</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClusterName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ComplianceStatus</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">DataReduction</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fid</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">LastSnapshot</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">LastSnapshotLogicalBytes</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">LatestArchivalSnapshot</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">LatestReplicationSnapshot</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">LocalEffectiveStorage</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">LocalMeteredData</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">LocalOnDemandSnapshots</td>
+<td style="text-align: left;">int</td>
+</tr>
+<tr>
+<td style="text-align: left;">LocalProtectedData</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">LocalSlaSnapshots</td>
+<td style="text-align: left;">int</td>
+</tr>
+<tr>
+<td style="text-align: left;">LocalSnapshots</td>
+<td style="text-align: left;">int</td>
+</tr>
+<tr>
+<td style="text-align: left;">LocalStorage</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">Location</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogicalBytes</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogicalDataReduction</td>
+<td style="text-align: left;">real</td>
+</tr>
+<tr>
+<td style="text-align: left;">MissedSnapshots</td>
+<td style="text-align: left;">int</td>
+</tr>
+<tr>
+<td style="text-align: left;">NcdLatestArchiveSnapshot</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">NcdPolicyName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">NcdSnapshotType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ObjectState</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ObjectType</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OrgId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">OrgName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">PhysicalBytes</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProtectedOn</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProtectionStatus</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ProvisionedBytes</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">PullTime</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReplicaSnapshots</td>
+<td style="text-align: left;">int</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReplicaStorage</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReplicationComplianceStatus</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReplicationSnapshotLag</td>
+<td style="text-align: left;">int</td>
+</tr>
+<tr>
+<td style="text-align: left;">SlaDomainName</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceProtocol</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+</tr>
+<tr>
+<td style="text-align: left;">TotalSnapshots</td>
+<td style="text-align: left;">int</td>
+</tr>
+<tr>
+<td style="text-align: left;">TransferredBytes</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">UsedBytes</td>
+<td style="text-align: left;">long</td>
+</tr>
+<tr>
+<td style="text-align: left;">WorkloadOrgName</td>
+<td style="text-align: left;">string</td>
+</tr>
+</tbody>
+</table>
+<h2 id="solutions">Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/rubriksecuritycloud.html">RubrikSecurityCloud</a></li>
+</ul>
+<h2 id="connectors">Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/rubrikprotectionstatus.html">Rubrik Security Cloud Protection Status (using Codeless Connector Framework)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

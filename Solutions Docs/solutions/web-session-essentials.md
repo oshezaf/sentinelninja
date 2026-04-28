@@ -19,7 +19,7 @@
 | **First Published** | 2023-06-29 |
 | **Solution Folder** | [Web Session Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Web%20Session%20Essentials) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-websession-domain) · Popularity: ⚪ Very Low (0%) |
-| **Pre-requisites** | [PaloAlto-PAN-OS](paloalto-pan-os.md), [SquidProxy](squidproxy.md), [Vectra AI Stream](vectra-ai-stream.md), [Zscaler Internet Access](zscaler-internet-access.md) |
+| **Pre-requisites** | [PaloAlto-PAN-OS](paloalto-pan-os.md), [SquidProxy](squidproxy.md), [Vectra AI Stream](vectra-ai-stream.md), zscaler1579058425289.zscaler_internet_access_mss |
 
 Web Session Essentials is a [domain solution](https://learn.microsoft.com/azure/sentinel/sentinel-solutions-catalog#domain-solutions) and does not include any data connectors. The content in this solution requires one of the product solutions below, as well as any other connector or data source normalized to the [ASIM](https://aka.ms/AboutASIM).
 
@@ -38,14 +38,13 @@ It is highly recommended to use the **SummarizeWebSessionData** logic app playbo
 
 ## Pre-requisites
 
-This solution depends on **4 other solution(s)**:
+This solution depends on **3 other solution(s)**:
 
 | Solution |
 |:---------|
 | [PaloAlto-PAN-OS](paloalto-pan-os.md) |
 | [SquidProxy](squidproxy.md) |
 | [Vectra AI Stream](vectra-ai-stream.md) |
-| [Zscaler Internet Access](zscaler-internet-access.md) |
 
 ## Data Connectors
 
@@ -56,8 +55,6 @@ This solution depends on **4 other solution(s)**:
 - [[Deprecated] Palo Alto Networks (Firewall) via AMA](../connectors/paloaltonetworksama.md) *(dependency on [PaloAlto-PAN-OS](paloalto-pan-os.md))*
 - [[Deprecated] Squid Proxy](../connectors/squidproxy.md) *(dependency on [SquidProxy](squidproxy.md))*
 - [[Recommended] Vectra AI Stream via AMA](../connectors/vectrastreamama.md) *(dependency on [Vectra AI Stream](vectra-ai-stream.md))*
-- [[Deprecated] Zscaler via Legacy Agent](../connectors/zscaler.md) *(dependency on [Zscaler Internet Access](zscaler-internet-access.md))*
-- [[Deprecated] Zscaler via AMA](../connectors/zscalerama.md) *(dependency on [Zscaler Internet Access](zscaler-internet-access.md))*
 
 ## Tables Used
 

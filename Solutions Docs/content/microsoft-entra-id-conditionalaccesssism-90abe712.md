@@ -18,11 +18,11 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AADRiskyServicePrincipals`](../tables/aadriskyserviceprincipals.md) |  | ✓ | ✗ | ✓ |
-| [`AADServicePrincipalRiskEvents`](../tables/aadserviceprincipalriskevents.md) |  | ✓ | ✗ | ✓ |
-| [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) | `OperationName in "Add conditional access policy,Add member to group,Add member to restricted management administrative unit,Delete conditional access policy,Remove member from group,Remove member from restricted management administrative unit,Update conditional access policy,Update group"` | ✓ | ✗ | ✓ |
-| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ✓ |
-| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ✓ |
+| [`AADRiskyServicePrincipals`](../tables/aadriskyserviceprincipals.md) |  | ✓ | ✗ | ? |
+| [`AADServicePrincipalRiskEvents`](../tables/aadserviceprincipalriskevents.md) |  | ✓ | ✗ | ? |
+| [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) | `OperationName in "Add conditional access policy,Add member to group,Add member to restricted management administrative unit,Delete conditional access policy,Remove member from group,Remove member from restricted management administrative unit,Update conditional access policy,Update group"` | ✓ | ✗ | ? |
+| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ? |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ? |
 
 ---
 

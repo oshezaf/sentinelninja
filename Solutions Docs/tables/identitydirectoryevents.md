@@ -105,11 +105,11 @@ This table is ingested by the following connectors:
 
 ### Workbooks (6)
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "LogonFailed,LogonSuccess"`
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 
-| Workbook |
-|:-------------|
-| [MicrosoftDefenderForIdentity](../content/microsoft-defender-xdr-microsoftdefenderforidentity-19dcc30d.md) |
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [MicrosoftDefenderForIdentity](../content/microsoft-defender-xdr-microsoftdefenderforidentity-19dcc30d.md) |  |
 
 **In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):** `ActionType in "DirectoryRoleMembershipChanged,GroupMembershipChanged,PrivilegeEscalation,SensitiveAccountChanged,UserAccountControlChanged"`
 
@@ -124,11 +124,11 @@ This table is ingested by the following connectors:
 | [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
-| [microsoftdefenderforidentity](../content/github-only-microsoftdefenderforidentity-215ba93a.md) | `ActionType in "LogonFailed,LogonSuccess"` |
+| [microsoftdefenderforidentity](../content/github-only-microsoftdefenderforidentity-215ba93a.md) |  |
 
-## Selection Criteria Summary (7 criteria, 9 total references)
+## Selection Criteria Summary (6 criteria, 8 total references)
 
-References by type: 0 connectors, 9 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 8 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -137,9 +137,8 @@ References by type: 0 connectors, 9 content items, 0 ASIM parsers, 0 other parse
 | `ActionType == "Account deleted"` | - | 1 | - | - | **1** |
 | `ActionType == "Account Path changed"` | - | 1 | - | - | **1** |
 | `ActionType == "Account Unlock changed"` | - | 1 | - | - | **1** |
-| `ActionType in "LogonFailed,LogonSuccess"` | - | 1 | - | - | **1** |
 | `ActionType in "DirectoryRoleMembershipChanged,GroupMembershipChanged,PrivilegeEscalation,SensitiveAccountChanged,UserAccountControlChanged"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **9** | **0** | **0** | **9** |
+| **Total** | **0** | **8** | **0** | **0** | **8** |
 
 ### ActionType
 
@@ -150,8 +149,6 @@ References by type: 0 connectors, 9 content items, 0 ASIM parsers, 0 other parse
 | `Account deleted` | - | 1 | - | - | **1** |
 | `Account Path changed` | - | 1 | - | - | **1** |
 | `Account Unlock changed` | - | 1 | - | - | **1** |
-| `LogonFailed` | - | 1 | - | - | **1** |
-| `LogonSuccess` | - | 1 | - | - | **1** |
 | `DirectoryRoleMembershipChanged` | - | 1 | - | - | **1** |
 | `GroupMembershipChanged` | - | 1 | - | - | **1** |
 | `PrivilegeEscalation` | - | 1 | - | - | **1** |

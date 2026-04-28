@@ -47,7 +47,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.0.1</td>
+<td style="text-align: left;">3.0.3</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -183,6 +183,21 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>3.0.3</td>
+<td>03-03-2026</td>
+<td>Added <code>filter.accountIds</code> to SentinelOne IOC POST request body. Without this field, the SentinelOne API (<code>/web/api/v2.1/threat-intelligence/iocs</code>) returns HTTP 500. Playbook now includes the account ID in the POST body for reliable IOC creation.</td>
+</tr>
+<tr>
+<td>3.0.2</td>
+<td>23-02-2026</td>
+<td>Fixed <code>SentinelOne_BaseUrl</code> parameter: default value was hardcoded to <code>https://usea1-001.sentinelone.net</code> (a non-existent placeholder URL) since v1.0.0. Customers deploying from Content Hub without changing this field would get a connection timeout on every playbook run. Default is now blank — customers must enter their actual SentinelOne console URL. Updated parameter description and README to guide customers.</td>
+</tr>
+<tr>
+<td>3.0.1</td>
+<td>17-02-2026</td>
+<td>Fixed <code>InvalidResourceLocation</code> deployment error by removing non-standard <code>location</code> parameter from inner template, aligned with standard Content Hub variable pattern. Fixed metadata resource name bracket type. Removed <code>TacitRed_Domain</code> filter parameter from deployment UI. Added missing <code>hidden-SentinelTemplateName</code> and <code>hidden-SentinelTemplateVersion</code> tags for Content Hub template discovery.</td>
+</tr>
 <tr>
 <td>3.0.0</td>
 <td>09-12-2025</td>

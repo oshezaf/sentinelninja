@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CommvaultSecurityIQ_CL`](../tables/commvaultsecurityiq-cl.md) 🔶 | ? | ✓ | ? |
+| [`CommvaultAlerts_CL`](../tables/commvaultalerts-cl.md) | ? | ✓ | ? |
 
 ---
 

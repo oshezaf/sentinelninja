@@ -13,10 +13,10 @@
 | **Parser Name** | `imAuthentication` |
 | **Built-in Parser** | `_Im_Authentication` |
 | **Schema** | Authentication |
-| **Schema Version** | 0.1.3 |
+| **Schema Version** | 0.1.4 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.3.3 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/imAuthentication.md)) |
-| **Last Updated** | Dec 10, 2024 |
+| **Parser Version** | 0.3.10 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/imAuthentication.md)) |
+| **Last Updated** | Apr 09, 2026 |
 | **Source File** | [Parsers\ASimAuthentication\Parsers\imAuthentication.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuthentication/Parsers/imAuthentication.yaml) |
 
 ## Description
@@ -33,29 +33,36 @@ This union parser includes parsers for the following products:
 | Microsoft Entra ID | [_Im_Authentication_AADNonInteractiveUserSignInLogs](asimauthenticationaadnoninteractiveusersigninlogs.md) | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | Microsoft Entra ID | [_Im_Authentication_AADServicePrincipalSignInLogs](asimauthenticationaadserviceprincipalsigninlogs.md) | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | AWS | [_Im_Authentication_AWSCloudTrail](asimauthenticationawscloudtrail.md) | [Amazon Web Services](../solutions/amazon-web-services.md) |
-| Barracuda WAF | [_Im_Authentication_BarracudaWAF](asimauthenticationbarracudawaf.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
-| Cisco Adaptive Security Appliance (ASA) | [_Im_Authentication_CiscoASA](asimauthenticationciscoasa.md) | [CiscoASA](../solutions/ciscoasa.md)<br>[Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| Barracuda WAF | [_Im_Authentication_BarracudaWAF](asimauthenticationbarracudawaf.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md)<br>[Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| Cisco Adaptive Security Appliance (ASA) | [_Im_Authentication_CiscoASA](asimauthenticationciscoasa.md) | [CiscoASA](../solutions/ciscoasa.md)<br>[Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md)<br>[Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| Cisco IOS | [_Im_Authentication_CiscoIOS](asimauthenticationciscoios.md) | [Syslog](../solutions/syslog.md) |
 | Cisco ISE | [_Im_Authentication_CiscoISE](asimauthenticationciscoise.md) | [Syslog](../solutions/syslog.md) |
+| Cisco ISE Administrator | [_Im_Authentication_CiscoISEAdministrator](asimauthenticationciscoiseadministrator.md) | [Syslog](../solutions/syslog.md) |
 | Cisco Meraki | [_Im_Authentication_CiscoMeraki](asimauthenticationciscomeraki.md) | [CiscoMeraki](../solutions/ciscomeraki.md)<br>[CustomLogsAma](../solutions/customlogsama.md) |
 | Cisco Meraki | [_Im_Authentication_CiscoMerakiSyslog](asimauthenticationciscomerakisyslog.md) | [Syslog](../solutions/syslog.md) |
-| CrowdStrike Falcon Endpoint Protection | [_Im_Authentication_CrowdStrikeFalconHost](asimauthenticationcrowdstrikefalconhost.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| CrowdStrike Falcon Endpoint Protection | [_Im_Authentication_CrowdStrikeFalconHost](asimauthenticationcrowdstrikefalconhost.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md)<br>[Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| Fortigate | [_Im_Authentication_FortinetFortigate](asimauthenticationfortinetfortigate.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md)<br>[Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 | Google Workspace | [_Im_Authentication_GoogleWorkspace](asimauthenticationgoogleworkspace.md) |  |
 | Illumio | [_Im_Authentication_IllumioSaaSCore](asimauthenticationillumiosaascore.md) | [IllumioSaaS](../solutions/illumiosaas.md) |
 | M365 Defender for EndPoint | [_Im_Authentication_M365Defender](asimauthenticationm365defender.md) |  |
 | Microsoft Defender for IoT | [_Im_Authentication_MD4IoT](asimauthenticationmd4iot.md) |  |
 | Windows Security Events | [_Im_Authentication_MicrosoftWindowsEvent](asimauthenticationmicrosoftwindowsevent.md) | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md)<br>[Windows Forwarded Events](../solutions/windows-forwarded-events.md)<br>[Windows Security Events](../solutions/windows-security-events.md) |
-| Native | [_Im_Authentication_Native](asimauthenticationnative.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)<br>[VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
+| Native | [_Im_Authentication_Native](asimauthenticationnative.md) | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md)<br>[VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
 | Okta | [_Im_Authentication_OktaSSO](asimauthenticationoktasso.md) | [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
+| Okta | [_Im_Authentication_OktaSystemLogs](asimauthenticationoktasystemlogs.md) |  |
 | Okta | [_Im_Authentication_OktaV2](asimauthenticationoktav2.md) | [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
-| Palo Alto Cortex Data Lake | [_Im_Authentication_PaloAltoCortexDataLake](asimauthenticationpaloaltocortexdatalake.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| Palo Alto Cortex Data Lake | [_Im_Authentication_PaloAltoCortexDataLake](asimauthenticationpaloaltocortexdatalake.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md)<br>[Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| Palo Alto PAN-OS GlobalProtect | [_Im_Authentication_PaloAltoGlobalProtect](asimauthenticationpaloaltoglobalprotect.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md)<br>[Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| Palo Alto PAN-OS | [_Im_Authentication_PaloAltoPanOS](asimauthenticationpaloaltopanos.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md)<br>[Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 | PostgreSQL | [_Im_Authentication_PostgreSQL](asimauthenticationpostgresql.md) | [CustomLogsAma](../solutions/customlogsama.md) |
 | Salesforce Service Cloud | [_Im_Authentication_SalesforceSC](asimauthenticationsalesforcesc.md) |  |
-| SentinelOne | [_Im_Authentication_SentinelOne](asimauthenticationsentinelone.md) | [SentinelOne](../solutions/sentinelone.md) |
+| SentinelOne | [_Im_Authentication_SentinelOne](asimauthenticationsentinelone.md) |  |
 | Microsoft Entra ID | [_Im_Authentication_SigninLogs](asimauthenticationsigninlogs.md) | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | OpenSSH | [_Im_Authentication_Sshd](asimauthenticationsshd.md) | [Syslog](../solutions/syslog.md) |
 | su | [_Im_Authentication_Su](asimauthenticationsu.md) | [Syslog](../solutions/syslog.md) |
 | sudo | [_Im_Authentication_Sudo](asimauthenticationsudo.md) | [Syslog](../solutions/syslog.md) |
-| VMware Carbon Black Cloud | [_Im_Authentication_VMwareCarbonBlackCloud](asimauthenticationvmwarecarbonblackcloud.md) | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
+| VMware Carbon Black Cloud | [_Im_Authentication_VMwareCarbonBlackCloud](asimauthenticationvmwarecarbonblackcloud.md) |  |
+| VMware vCenter | [_Im_Authentication_VMwareVCenter](asimauthenticationvmwarevcenter.md) | [CustomLogsAma](../solutions/customlogsama.md) |
 | Vectra | [_Im_Authentication_VectraXDRAudit](asimauthenticationvectraxdraudit.md) | [Vectra XDR](../solutions/vectra-xdr.md) |
 
 ## Parameters
@@ -76,7 +83,7 @@ This union parser includes parsers for the following products:
 ## References
 
 - [ASIM Authentication Schema](https://aka.ms/ASimAuthenticationDoc)
-- [ASIM](https:/aka.ms/AboutASIM)
+- [ASIM](https://aka.ms/AboutASIM)
 
 ---
 

@@ -71,7 +71,7 @@
 <td style="text-align: left;"><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
 </tr>
 </tbody>
 </table>
@@ -107,53 +107,25 @@
 <ol>
 <li>
 <p>Click the <strong>Deploy to Azure</strong> button below. </p>
-<p><a href="https://aka.ms/sentinel-JoeSandbox-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+<p><a href="https://aka.ms/sentinel-JoeSandbox-azuredeployflex"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>
 2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. 
 3. Enter the <strong>Application ID</strong>, <strong>Tenant ID</strong>,<strong>Client Secret</strong>, <strong>JoeSandbox API Key</strong>, <strong>JoeSandbox Initial Fetch Date</strong>, <strong>TimeInterval</strong> and deploy.
 4. Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>.
 5. Click <strong>Purchase</strong> to deploy.</p>
 </li>
 </ol>
-<p><strong>2. Option 1 - Azure Resource Manager (ARM) Template for Premium Plan</strong></p>
+<p><strong>2. Option 2 - Azure Resource Manager (ARM) Template for Premium Plan</strong></p>
 <p>Use this method for automated deployment of the data connector using an ARM Template.</p>
 <ol>
 <li>
 <p>Click the <strong>Deploy to Azure</strong> button below. </p>
-<p><a href="https://aka.ms/sentinel-JoeSandbox-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+<p><a href="https://aka.ms/sentinel-JoeSandbox-azuredeploypremium"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>
 2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. 
 3. Enter the <strong>Application ID</strong>, <strong>Tenant ID</strong>,<strong>Client Secret</strong>, <strong>JoeSandbox API Key</strong>, <strong>JoeSandbox Initial Fetch Date</strong>, <strong>TimeInterval</strong> and deploy.
 4. Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>.
 5. Click <strong>Purchase</strong> to deploy.</p>
 </li>
 </ol>
-<p><strong>3. Option 2 - Manual Deployment of Azure Functions</strong></p>
-<p>Use the following step-by-step instructions to deploy the JoeSandbox data connector manually with Azure Functions (Deployment via Visual Studio Code).</p>
-<p><strong>1. Deploy a Function App</strong></p>
-<blockquote>
-<p>NOTE:You will need to <a href="https://docs.microsoft.com/azure/azure-functions/functions-create-first-function-python#prerequisites">prepare VS code</a> for Azure function development.</p>
-</blockquote>
-<ol>
-<li>Download the <a href="https://aka.ms/sentinel-JoeSandbox-functionapp">Azure Function App</a> file. Extract archive to your local development computer.</li>
-<li>Start VS Code. Choose File in the main menu and select Open Folder.</li>
-<li>Select the top level folder from extracted files.</li>
-<li>Choose the Azure icon in the Activity bar, then in the <strong>Azure: Functions</strong> area, choose the <strong>Deploy to function app</strong> button.
-If you aren't already signed in, choose the Azure icon in the Activity bar, then in the <strong>Azure: Functions</strong> area, choose <strong>Sign in to Azure</strong>
-If you're already signed in, go to the next step.</li>
-<li>
-<p>Provide the following information at the prompts:</p>
-<p>a. <strong>Select folder:</strong> Choose a folder from your workspace or browse to one that contains your function app.</p>
-<p>b. <strong>Select Subscription:</strong> Choose the subscription to use.</p>
-<p>c. Select <strong>Create new Function App in Azure</strong> (Don't choose the Advanced option)</p>
-<p>d. <strong>Enter a globally unique name for the function app:</strong> Type a name that is valid in a URL path. The name you type is validated to make sure that it's unique in Azure Functions. (e.g. JoeSandboxXXX).</p>
-<p>e. <strong>Select a runtime:</strong> Choose Python 3.11.</p>
-<p>f. Select a location for new resources. For better performance and lower costs choose the same <a href="https://azure.microsoft.com/regions/">region</a> where Microsoft sentinel is located.</p>
-</li>
-<li>
-<p>Deployment will begin. A notification is displayed after your function app is created and the deployment package is applied.</p>
-</li>
-<li>Go to Azure Portal for the Function App configuration.</li>
-</ol>
-<p><strong>2. Configure the Function App</strong>\n\n1. In the Function App, select the Function App Name and select <strong>Configuration</strong>.\n2. In the <strong>Application settings</strong> tab, select <strong>+ New application setting</strong>.\n3. Add each of the following application settings individually, with their respective string values (case-sensitive): \n\tApplication ID\n\tTenant ID\n\tClient Secret\n\tJoeSandbox API Key\n\tJoeSandbox Initial Fetch Date\n\tTimeInterval - Use logAnalyticsUri to override the log analytics API endpoint for dedicated cloud. For example, for public cloud, leave the value empty; for Azure GovUS cloud environment, specify the value in the following format: <code>https://&lt;CustomerId&gt;.ods.opinsights.azure.us</code>\n3. Once all application settings have been entered, click <strong>Save</strong>.</p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>

@@ -17,7 +17,7 @@
 <div class="doc-content">
 <h1 id="check-point-external-risk-management-for-microsoft-sentinel---alerts">Check Point External Risk Management for Microsoft Sentinel - Alerts</h1>
 <p><em>Solution: Check Point Cyberint Alerts</em></p>
-<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/checkpoint-cyberint.svg" alt="Check Point Cyberint Alerts Logo" width="75" height="75"></p>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/checkpoint.svg" alt="Check Point Cyberint Alerts Logo" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
@@ -31,7 +31,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>Publisher</strong></td>
-<td style="text-align: left;">Cyberint</td>
+<td style="text-align: left;">Check Point</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Support Tier</strong></td>
@@ -47,11 +47,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.0.0</td>
+<td style="text-align: left;">3.1.0</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
-<td style="text-align: left;">Cyberint - support@checkpoint.com</td>
+<td style="text-align: left;">Check Point - support@checkpoint.com</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>First Published</strong></td>
@@ -59,7 +59,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Last Updated</strong></td>
-<td style="text-align: left;">2026-01-21</td>
+<td style="text-align: left;">2026-04-17</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Solution Folder</strong></td>
@@ -71,7 +71,14 @@
 </tr>
 </tbody>
 </table>
-<p>Cyberint, a Check Point company, provides Microsoft Sentinel integration to streamline critical Alerts and bring enriched threat intelligence from the Infinity External Risk Management solution into Microsoft Sentinel. This simplifies the process of tracking the status of tickets with automatic sync updates across systems. Using this new integration for Microsoft Sentinel, existing Cyberint and Microsoft Sentinel customers can easily pull logs based on Cyberint's findings into Microsoft Sentinel platform.<p><span style='color:red; font-weight:bold;'>NOTE</span>: Microsoft recommends installation of Check Point Cyberint Alerts Connector (via Codeless Connector Platform). This connector is build on the Codeless Connector Platform (CCP), which uses the Log Ingestion API, which replaces ingestion via the <a href='https://learn.microsoft.com/en-us/azure/azure-monitor/logs/custom-logs-migrate' style='color:#1890F1;'>deprecated HTTP Data Collector API</a>. CCP-based data connectors also support <a href='https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/data-collection-rule-overview' style='color:#1890F1;'>Data Collection Rules</a> (DCRs) offering transformations and enrichment.</p></p>
+<p>Check Point provides Microsoft Sentinel integration to streamline critical Alerts and bring enriched threat intelligence from the Infinity External Risk Management solution into Microsoft Sentinel. This simplifies the process of tracking the status of tickets with automatic sync updates across systems. Using this new integration for Microsoft Sentinel, existing Check Point Exposure Management and Microsoft Sentinel customers can easily pull logs based on Check Point Exposure Management findings into Microsoft Sentinel platform.<p><span style='color:red; font-weight:bold;'>NOTE</span>: Microsoft recommends installation of Check Point Exposure Management Alerts Connector (via Codeless Connector Platform). This connector is build on the Codeless Connector Platform (CCP), which uses the Log Ingestion API, which replaces ingestion via the <a href='https://learn.microsoft.com/en-us/azure/azure-monitor/logs/custom-logs-migrate' style='color:#1890F1;'>deprecated HTTP Data Collector API</a>. CCP-based data connectors also support <a href='https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/data-collection-rule-overview' style='color:#1890F1;'>Data Collection Rules</a> (DCRs) offering transformations and enrichment.</p></p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
 <h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
@@ -91,10 +98,218 @@
 <tr>
 <td><a href="../tables/argsentdc-cl.html"><code>argsentdc_CL</code></a></td>
 <td><a href="../connectors/checkpointcyberintalerts.html">Check Point Cyberint Alerts Connector (via Codeless Connector Platform)</a></td>
-<td>-</td>
+<td>Analytics, Playbooks, Workbooks</td>
 </tr>
 </tbody>
 </table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>11 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parsers</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/check-point-cyberint-alerts-check-point-exposure-management-alert-ingestion-anomaly-8d3b9c7e-5a2f-4e1d-b6c8-3f9a7e2d1b4c-1545e994.html">Check Point Exposure Management - Alert Ingestion Anomaly</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/argsentdc-cl.html"><code>argsentdc_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/check-point-cyberint-alerts-cpemalertoverview-1fe40da5.html">CPEMAlertOverview</a></td>
+<td style="text-align: left;"><a href="../tables/argsentdc-cl.html"><code>argsentdc_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="playbooks">Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/check-point-cyberint-alerts-check-point-em-importer-alerts-→-sentinel-incidents-16ebefeb.html">Check Point EM - Importer (Alerts → Sentinel Incidents)</a></td>
+<td style="text-align: left;">Queries the argsentdc_CL custom table (populated by the CCP data connector) for recent alerts and cr...</td>
+<td style="text-align: left;"><a href="../tables/argsentdc-cl.html"><code>argsentdc_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/check-point-cyberint-alerts-check-point-exposure-management-credential-leak-validation-and-response-9bd4cdc5.html">Check Point Exposure Management - Credential Leak Validation and Response</a></td>
+<td style="text-align: left;">When a new Microsoft Sentinel incident is created for leaked credentials, this playbook queries the ...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/check-point-cyberint-alerts-check-point-exposure-management-exporter-sentinel-→-argos-980b2f1d.html">Check Point Exposure Management - Exporter (Sentinel → Argos)</a></td>
+<td style="text-align: left;">When a Sentinel incident status changes, this playbook pushes the update to the corresponding alert(...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/check-point-cyberint-alerts-check-point-exposure-management-fetch-attachments-on-demand-08c67669.html">Check Point Exposure Management - Fetch Attachments On-Demand</a></td>
+<td style="text-align: left;">On-demand playbook that fetches alert attachments and analysis report for a Sentinel incident, surfa...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/check-point-cyberint-alerts-check-point-exposure-management-ioc-enrichment-and-triage-64607c13.html">Check Point Exposure Management - IOC Enrichment and Triage</a></td>
+<td style="text-align: left;">When a new Microsoft Sentinel incident is created, this playbook enriches IOC entities (IPs, domains...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/check-point-cyberint-alerts-check-point-exposure-management-manual-status-update-sentinel-→-argos-6353fe22.html">Check Point Exposure Management - Manual Status Update (Sentinel → Argos)</a></td>
+<td style="text-align: left;">On-demand playbook that reads the current Sentinel incident status and pushes it to the correspondin...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/check-point-cyberint-alerts-check-point-exposure-management-phishing-takedown-92d79290.html">Check Point Exposure Management - Phishing Takedown</a></td>
+<td style="text-align: left;">When a new Microsoft Sentinel incident is created for a phishing website alert, this playbook extrac...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/check-point-cyberint-alerts-check-point-exposure-management-vulnerability-exploitation-monitoring-4b89e280.html">Check Point Exposure Management - Vulnerability Exploitation Monitoring</a></td>
+<td style="text-align: left;">When a new Microsoft Sentinel incident is created containing CVE identifiers, this playbook enriches...</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../parsers/cpemalerts.html">CPEMAlerts</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/tacitred-findings-cl.html"><code>TacitRed_Findings_CL</code></a> <em>(read)</em><br><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20Alerts/README.md">Check Point Cyberint Alerts/README.md</a></em></p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/checkpoint.svg" width="75px" height="75px"></p>
+<h2 id="overview">Overview</h2>
+<p>This solution integrates <strong>Check Point Exposure Management</strong> with <strong>Microsoft Sentinel</strong>, providing bi-directional synchronization of alerts and incidents. It enables SOC teams to manage Argos external risk alerts directly from Sentinel while keeping both platforms in sync.</p>
+<h3 id="whats-included">What's Included</h3>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Data Connector</strong> (CCP)</td>
+<td>Ingests new alerts every 5 minutes via the Codeless Connector Platform</td>
+</tr>
+<tr>
+<td><strong>10 Playbooks</strong></td>
+<td>Bi-directional sync, enrichment, and response automation</td>
+</tr>
+<tr>
+<td><strong>1 Analytic Rule</strong></td>
+<td>Detects ingestion gaps (connector or sync failures)</td>
+</tr>
+<tr>
+<td><strong>1 Workbook</strong></td>
+<td>Alert overview, status distribution, and sync health monitoring</td>
+</tr>
+<tr>
+<td><strong>1 Automation Rule</strong></td>
+<td>Triggers outbound sync on incident updates</td>
+</tr>
+</tbody>
+</table>
+<h2 id="architecture">Architecture</h2>
+<pre><code>                    ┌──────────────────────┐
+                    │   Check Point Exposure Management      │
+                    │   (External Risk Mgmt)│
+                    └──────┬───────▲───────┘
+                           │       │
+              ┌────────────┘       └────────────┐
+              │ (new alerts)        (status PUT) │
+              ▼                                  │
+    ┌─────────────────┐              ┌───────────┴───────┐
+    │ CCP Data        │              │ Exporter     │
+    │ Connector       │              │ Playbook          │
+    │ (created_date)  │              │ (Sentinel → Argos)│
+    └────────┬────────┘              └───────────▲───────┘
+             │                                   │
+             ▼                                   │
+    ┌─────────────────┐              ┌───────────┴───────┐
+    │ argsentdc_CL    │◄─────────────│ Importer      │
+    │ (Custom Table)  │              │ Playbook           │
+    └────────┬────────┘              │ (modification_date)│
+             │                       └───────────────────┘
+             ▼
+    ┌─────────────────┐
+    │ Microsoft        │
+    │ Sentinel         │
+    │ (Incidents)      │
+    └──────────────────┘
+</code></pre>
+<p><strong>Two ingestion paths:</strong>
+- <strong>CCP Connector</strong> — polls for <strong>new</strong> alerts using <code>created_date</code> filter (every 5 min)
+- <strong>Importer</strong> — polls for <strong>modified</strong> alerts using <code>modification_date</code> filter (every 10 min)</p>
+<p><strong>Loop prevention:</strong> Importer tags incidents with <code>argos-importer-synced</code>. Exporter checks for this tag and skips if present, preventing circular updates.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ol>
+<li><strong>Microsoft Sentinel</strong> enabled on a Log Analytics workspace.</li>
+<li>A <strong>Check Point Exposure Management API token</strong> and your environment's <strong>Check Point Exposure Management API base URL</strong> (e.g., <code>https://app.cyberint.io</code>).</li>
+<li><strong>Contributor</strong> role on the target resource group (for deploying Logic Apps, Key Vault, and role assignments).</li>
+</ol>
+<p><em>[Content truncated...]</em></p>
 <h2 id="release-notes">Release Notes</h2>
 <table>
 <thead>
@@ -106,9 +321,9 @@
 </thead>
 <tbody>
 <tr>
-<td>3.0.1</td>
-<td>05-11-2025</td>
-<td>Update <strong>Data Connector</strong></td>
+<td>3.1.0</td>
+<td>10-03-2026</td>
+<td>Update <strong>Data Connector</strong>, add bi-directional sync playbooks, analytic rule (ingestion anomaly), workbook (alert overview &amp; sync health), and automation rules.</td>
 </tr>
 <tr>
 <td>3.0.0</td>

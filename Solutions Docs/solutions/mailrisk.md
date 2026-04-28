@@ -19,7 +19,7 @@
 | **Version** | 3.0.0 |
 | **Author** | Secure Practice - support@securepractice.co |
 | **First Published** | 2023-03-16 |
-| **Last Updated** | 2026-02-17 |
+| **Last Updated** | 2026-04-23 |
 | **Solution Folder** | [MailRisk](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MailRisk) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/securepracticeas1650887373770.microsoft-sentinel-solution-mailrisk) · Popularity: ⚪ Very Low (0%) |
 
@@ -43,7 +43,7 @@ This solution uses **1 table(s)**:
 
 | **Version**  | **Date Modified (DD-MM-YYYY)**  | **Change History**                          	|
 |--------------|---------------------------------|----------------------------------------------|
-| 3.0.0        | 29-10-2025                      | Migrate connector to CCF                   	|
+| 3.0.0        | 13-02-2026                      | Migrate connector to CCF <br> Fix wrong syntax on extracting parameters in mainTemplate.json  	|
 
 ---
 

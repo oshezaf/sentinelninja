@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Censys Entity Enrichment - Host &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="censys-entity-enrichment---host">Censys Entity Enrichment - Host</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<hr />
+<p>This playbook is triggered automatically when an IP entity is detected in a Microsoft Sentinel incident, based on an automation rule. Upon triggering, it extracts the IP address from the entity and queries the Censys API (v3) to retrieve detailed host information including geolocation (continent, country, city, coordinates), autonomous system details (ASN, BGP prefix), WHOIS data (network, organization, contacts), services, and DNS information. The playbook retrieves the Censys API token securel</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/censys.html">Censys</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Censys/Playbooks/CensysEntityEnrichmentHost/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Censys/Playbooks/CensysEntityEnrichmentHost/readme.md">CensysEntityEnrichmentHost/readme.md</a></em></p>
+</blockquote>
+<h2 id="summary">Summary</h2>
+<p>This playbook is triggered automatically when an IP entity is detected in a Microsoft Sentinel incident, based on an automation rule. Upon triggering, it extracts the IP address from the entity and queries the Censys API (v3) to retrieve detailed host information including geolocation (continent, country, city, coordinates), autonomous system details (ASN, BGP prefix), WHOIS data (network, organization, contacts), services, and DNS information. The playbook retrieves the Censys API token securely from Azure Key Vault, performs the API call with retry logic (up to 3 attempts) and comprehensive error handling for HTTP status codes (200, 401, 403, 404, 422). Upon successful data retrieval, the host data is ingested into Azure Log Analytics (CensysHost_CL table) for historical analysis and reporting. The playbook then retrieves the associated incident and invokes the CensysIncidentEnrichment sub-playbook to add the enrichment data as a comment to the incident. If no incident is associated, the playbook terminates successfully after data ingestion.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<ol>
+<li>Deploy the CensysIncidentEnrichment playbook before deploying this playbook.</li>
+<li>Create an Azure Key Vault and store your Censys API token as a secret named 'Censys-Access-Token'.</li>
+<li>Obtain your Censys Organization ID from the Censys platform account settings.</li>
+<li>Configure an automation rule in Microsoft Sentinel to trigger this playbook when IP entities are detected.</li>
+</ol>
+<h3 id="deployment-instructions">Deployment Instructions</h3>
+<ol>
+<li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
+<li>Fill in the required parameters:
+   * PlaybookName: Enter the playbook name here (default: CensysEntityEnrichmentHost).
+   * OrganizationID: Your Censys Organization ID from the Censys platform account settings.
+   * IncidentEnrichmentPlaybookName: Name of the deployed CensysAddIncidentComment playbook.
+   * KeyVaultName: Name of the Azure Key Vault where the Censys API token is stored.
+   * TenantId: Azure AD Tenant ID where the Key Vault is located.</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCensys%2FPlaybooks%2FCensysEntityEnrichmentHost%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCensys%2FPlaybooks%2FCensysEntityEnrichmentHost%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<h3 id="post-deployment-instructions">Post-Deployment Instructions</h3>
+<h4 id="a-authorize-connections">a. Authorize connections</h4>
+<p>Once deployment is complete, authorize each connection.
+1. Go to your logic app → API connections → Select keyvault connection resource.
+2. Go to General → Edit API connection.
+3. Click Authorize.
+4. Sign in.
+5. Click Save.
+6. Repeat steps for Microsoft Sentinel and Log Analytics Data Collector connections.</p>
+<h4 id="b-add-access-policy-in-key-vault">b. Add Access policy in Key Vault</h4>
+<p>Grant the playbook's managed identity 'Key Vault Secrets User' role on the Azure Key Vault.
+1. Go to Logic App → <em>your Logic App</em> → Identity → System assigned Managed identity and copy Object (principal) ID.
+2. Go to Key Vaults → <em>your Key Vault</em> → Access policies → Create.
+3. Select Get and List permissions for Secrets. Click Next.
+4. In the principal section, search by copied Object ID. Click Next.
+5. Click Review + Create.</p>
+<h4 id="c-create-automation-rule-in-microsoft-sentinel">c. Create automation rule in Microsoft Sentinel</h4>
+<p>Create an automation rule in Microsoft Sentinel to trigger this playbook for IP entities.
+1. Go to Microsoft Sentinel → <em>your workspace</em> → Automation.
+2. Click Create → Automation rule.
+3. Configure the rule to trigger when IP entities are detected.
+4. Add action to run this playbook.
+5. Click Apply.</p>
+<h4 id="d-ensure-censysincidentenrichment-playbook-is-deployed">d. Ensure CensysIncidentEnrichment playbook is deployed</h4>
+<p>Ensure the CensysIncidentEnrichment (or CensysAddIncidentComment) playbook is deployed and accessible.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/censys.html">Back to Censys</a></p>
+</div>
+
+</body>
+</html>

@@ -16,10 +16,10 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.extrahop.com/customer-support](https://www.extrahop.com/customer-support) |
 | **Categories** | domains |
-| **Version** | 3.0.1 |
+| **Version** | 3.0.2 |
 | **Author** | Shwetha Somashekar - shwethas@extrahop.com |
 | **First Published** | 2025-02-11 |
-| **Last Updated** | 2025-06-04 |
+| **Last Updated** | 2025-10-15 |
 | **Solution Folder** | [ExtraHop](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ExtraHop) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/extrahop.extrahop-revealx-sentinel) · Popularity: 🔵 Medium (71%) |
 
@@ -35,10 +35,7 @@ Configure the ExtraHop Detection Data Connector to send ExtraHop detection data 
 
 This solution provides **1 data connector(s)**:
 
-- [ExtraHop Detections Data Connector](../connectors/extrahop.md) 🔶
-
-> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
-
+- [ExtraHop Detections Data Connector](../connectors/extrahop.md)
 
 ## Tables Used
 
@@ -46,7 +43,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md) 🔶 | [ExtraHop Detections Data Connector](../connectors/extrahop.md) | Analytics, Workbooks |
+| [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md) | [ExtraHop Detections Data Connector](../connectors/extrahop.md) | Analytics, Workbooks |
 
 ### Internal Tables
 
@@ -55,9 +52,6 @@ The following **1 table(s)** are used internally by this solution's content item
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`SecurityAlert`](../tables/securityalert.md) | - | Workbooks |
-
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 ## Content Items
 
@@ -91,6 +85,7 @@ This solution includes **3 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.0.2       | 21-04-2026                     | Add Log Ingestion API Support.  |
 | 3.0.1       | 04-06-2025                     | Updated **Parser** and **Workbook** to fix issue.    |
 | 3.0.0       | 19-03-2025                     | Initial Solution Release.                    |
 

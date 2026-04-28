@@ -47,7 +47,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.0.1</td>
+<td style="text-align: left;">3.1.0</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -79,15 +79,17 @@
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<p>This solution provides <strong>1 data connector(s)</strong> (plus 1 discovered⚠️):</p>
 <ul>
-<li><a href="../connectors/contrastadr.html">ContrastADR</a> 🔶</li>
+<li><a href="../connectors/contrastadr.html">ContrastADR</a> ⚠️ 🔶</li>
+<li><a href="../connectors/contrastadrccf.html">Contrast ADR Push Connector</a></li>
 </ul>
 <blockquote>
+<p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>2 table(s)</strong>:</p>
+<p>This solution uses <strong>4 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -98,14 +100,24 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="../tables/contrastadrattackevents-cl.html"><code>ContrastADRAttackEvents_CL</code></a></td>
+<td><a href="../connectors/contrastadrccf.html">Contrast ADR Push Connector</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+<tr>
 <td><a href="../tables/contrastadrincident-cl.html"><code>ContrastADRIncident_CL</code></a> 🔶</td>
 <td><a href="../connectors/contrastadr.html">ContrastADR</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/contrastadrincidents-cl.html"><code>ContrastADRIncidents_CL</code></a></td>
+<td><a href="../connectors/contrastadrccf.html">Contrast ADR Push Connector</a></td>
 <td>Analytics</td>
 </tr>
 <tr>
 <td><a href="../tables/contrastadr-cl.html"><code>ContrastADR_CL</code></a> 🔶</td>
 <td><a href="../connectors/contrastadr.html">ContrastADR</a></td>
-<td>Analytics</td>
+<td>-</td>
 </tr>
 </tbody>
 </table>
@@ -151,37 +163,37 @@
 <td style="text-align: left;"><a href="../content/contrastadr-contrast-adr-dlp-sql-injection-correlation-1aac7737-d52f-483d-b225-6a27c1b29a9e-b5944c4e.html">Contrast ADR - DLP SQL Injection Correlation</a></td>
 <td style="text-align: left;">High</td>
 <td style="text-align: left;">InitialAccess, CredentialAccess, Collection, Exfiltration, CommandAndControl, Reconnaissance, CredentialAccess, LateralMovement, Discovery</td>
-<td style="text-align: left;"><a href="../tables/contrastadr-cl.html"><code>ContrastADR_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/contrastadrattackevents-cl.html"><code>ContrastADRAttackEvents_CL</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/contrastadr-contrast-adr-edr-alert-correlation-c1c6ba64-134e-403b-b9a6-1bebc90809a4-f21fd8c4.html">Contrast ADR - EDR Alert Correlation</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">Execution, DefenseEvasion, InitialAccess, CommandAndControl</td>
-<td style="text-align: left;"><a href="../tables/contrastadrincident-cl.html"><code>ContrastADRIncident_CL</code></a><br><a href="../tables/contrastadr-cl.html"><code>ContrastADR_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/contrastadrattackevents-cl.html"><code>ContrastADRAttackEvents_CL</code></a><br><a href="../tables/contrastadrincidents-cl.html"><code>ContrastADRIncidents_CL</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/contrastadr-contrast-adr-exploited-attack-event-ae4f67a6-0713-4a26-ae61-284e67b408c1-a0cf1f50.html">Contrast ADR - Exploited Attack Event</a></td>
 <td style="text-align: left;">High</td>
 <td style="text-align: left;">InitialAccess, Execution, DefenseEvasion, LateralMovement, CommandAndControl</td>
-<td style="text-align: left;"><a href="../tables/contrastadr-cl.html"><code>ContrastADR_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/contrastadrattackevents-cl.html"><code>ContrastADRAttackEvents_CL</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/contrastadr-contrast-adr-exploited-attack-in-production-31417149-f3a2-4db4-9e5f-85e0a464f6a1-bb999f59.html">Contrast ADR - Exploited Attack in Production</a></td>
 <td style="text-align: left;">High</td>
 <td style="text-align: left;">InitialAccess, Execution, DefenseEvasion, LateralMovement, CommandAndControl</td>
-<td style="text-align: left;"><a href="../tables/contrastadr-cl.html"><code>ContrastADR_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/contrastadrattackevents-cl.html"><code>ContrastADRAttackEvents_CL</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/contrastadr-contrast-adr-security-incident-alert-7ce5956f-48f2-42f5-8e2e-c254e7643c11-88acfa5a.html">Contrast ADR - Security Incident Alert</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">InitialAccess, DefenseEvasion, Discovery, CommandAndControl</td>
-<td style="text-align: left;"><a href="../tables/contrastadrincident-cl.html"><code>ContrastADRIncident_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/contrastadrincidents-cl.html"><code>ContrastADRIncidents_CL</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/contrastadr-contrast-adr-waf-alert-correlation-93641436-afb3-4921-8828-ceab0d15aaab-17b466db.html">Contrast ADR - WAF Alert Correlation</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">InitialAccess, DefenseEvasion, CommandAndControl</td>
-<td style="text-align: left;"><a href="../tables/contrastadr-cl.html"><code>ContrastADR_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/contrastadrattackevents-cl.html"><code>ContrastADRAttackEvents_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -196,7 +208,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/contrastadr-contrastadr-command-injection-workbook-2809c88c.html">ContrastADR_Command_Injection_Workbook</a></td>
-<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/contrastadrattackevents-cl.html"><code>ContrastADRAttackEvents_CL</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/contrastadr-contrastadr-cross-site-scripting-workbook-22b0e57c.html">ContrastADR_Cross_Site_Scripting_Workbook</a></td>
@@ -212,23 +224,23 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/contrastadr-contrastadr-jndi-injection-workbook-893da6b3.html">ContrastADR_JNDI_Injection_Workbook</a></td>
-<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/contrastadrattackevents-cl.html"><code>ContrastADRAttackEvents_CL</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/contrastadr-contrastadr-path-traversal-workbook-d0a4d6f2.html">ContrastADR_Path_Traversal_Workbook</a></td>
-<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/contrastadrattackevents-cl.html"><code>ContrastADRAttackEvents_CL</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/contrastadr-contrastadr-sql-injection-workbook-ae68db46.html">ContrastADR_SQL_Injection_Workbook</a></td>
-<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/contrastadrattackevents-cl.html"><code>ContrastADRAttackEvents_CL</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/contrastadr-contrastadr-untrusted-deserialization-workbook-6a1a62d6.html">ContrastADR_Untrusted_Deserialization_Workbook</a></td>
-<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/contrastadrattackevents-cl.html"><code>ContrastADRAttackEvents_CL</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/contrastadr-contrastadr-xml-external-entity-injection-injection-workbook-75187815.html">ContrastADR_XML External_Entity_Injection_Injection_Workbook</a></td>
-<td style="text-align: left;">-</td>
+<td style="text-align: left;"><a href="../tables/contrastadrattackevents-cl.html"><code>ContrastADRAttackEvents_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -260,10 +272,15 @@
 <tr>
 <th><strong>Version</strong></th>
 <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
-<th><strong>ChangeHistory</strong></th>
+<th><strong>Change History</strong></th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>3.1.0</td>
+<td>27-03-2026</td>
+<td>Adding support for Contrast ADR CCF Connector and change in relevant components.</td>
+</tr>
 <tr>
 <td>3.0.1</td>
 <td>11-11-2025</td>

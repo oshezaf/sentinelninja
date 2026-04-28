@@ -68,9 +68,9 @@ This solution depends on **5 other solution(s)**:
 - [Microsoft Entra ID](../connectors/azureactivedirectory.md) *(dependency on [Microsoft Entra ID](microsoft-entra-id.md))*
 - [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) *(dependency on [Microsoft Defender XDR](microsoft-defender-xdr.md))*
 - [Microsoft 365 (formerly, Office 365)](../connectors/office365.md) *(dependency on [Microsoft 365](microsoft-365.md))*
-- [Okta Single Sign-On](../connectors/oktasso.md) *(dependency on [Okta Single Sign-On](okta-single-sign-on.md))*
+- [[DEPRECATED] Okta Single Sign-On (using Azure Function)](../connectors/oktasso.md) *(dependency on [Okta Single Sign-On](okta-single-sign-on.md))*
 - [Okta Single Sign-On (Polling CCP)](../connectors/oktasso-polling.md) *(dependency on [Okta Single Sign-On](okta-single-sign-on.md))*
-- [Okta Single Sign-On](../connectors/oktassov2.md) *(dependency on [Okta Single Sign-On](okta-single-sign-on.md))*
+- [Okta Single Sign-On (via Codeless Connector Framework)](../connectors/oktassov2.md) *(dependency on [Okta Single Sign-On](okta-single-sign-on.md))*
 - [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon-usingazurefunctions.md) *(dependency on [Okta Single Sign-On](okta-single-sign-on.md))*
 
 ## Tables Used

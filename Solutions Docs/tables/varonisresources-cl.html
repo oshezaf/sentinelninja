@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>varonisresourcesCL &mdash; Solutions Analyzer</title>
+<title>VaronisResourcesCL &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -17,7 +17,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="varonisresources_cl">varonisresources_CL</h1>
+<h1 id="varonisresources_cl">VaronisResources_CL</h1>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
@@ -30,16 +30,8 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✗ No</td>
-</tr>
-<tr>
 <td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
 <td style="text-align: left;">✓ Yes</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
-<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -49,7 +41,7 @@
 <li><a href="#solutions">Solutions</a></li>
 <li><a href="#connectors">Connectors</a></li>
 </ul>
-<h2 id="schema">Schema (21 columns)</h2>
+<h2 id="schema">Schema (24 columns)</h2>
 <p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Varonis%20Purview/Data%20Connectors/VaronisPurview_ccp/VaronisPurview_DCR.json">Data Collection Rule definition</a></p>
 <table id="schema-table">
 <thead>
@@ -61,7 +53,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;">AADTenantID</td>
-<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">string</td>
 </tr>
 <tr>
 <td style="text-align: left;">AdditionalFields</td>
@@ -69,6 +61,10 @@
 </tr>
 <tr>
 <td style="text-align: left;">AssetId</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">AssetName</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
@@ -93,7 +89,11 @@
 </tr>
 <tr>
 <td style="text-align: left;">Classification</td>
-<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">ClassificationLastScanDateTime</td>
+<td style="text-align: left;">datetime</td>
 </tr>
 <tr>
 <td style="text-align: left;">CreatedDateTime</td>
@@ -116,8 +116,8 @@
 <td style="text-align: left;">boolean</td>
 </tr>
 <tr>
-<td style="text-align: left;">LastAccess</td>
-<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">LastAccessDateTime</td>
+<td style="text-align: left;">datetime</td>
 </tr>
 <tr>
 <td style="text-align: left;">LastModifiedDateTime</td>
@@ -129,11 +129,15 @@
 </tr>
 <tr>
 <td style="text-align: left;">Risks</td>
-<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">string</td>
+</tr>
+<tr>
+<td style="text-align: left;">SensitivityLabel</td>
+<td style="text-align: left;">string</td>
 </tr>
 <tr>
 <td style="text-align: left;">SubWorkload</td>
-<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">string</td>
 </tr>
 <tr>
 <td style="text-align: left;">TimeGenerated</td>

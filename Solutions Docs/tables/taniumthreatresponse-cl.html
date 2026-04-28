@@ -43,293 +43,359 @@
 <ul>
 <li><a href="#schema">Schema</a></li>
 <li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 </ul>
-<h2 id="schema">Schema (69 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/TaniumThreatResponse_CL.json">KQL validation test schema</a></p>
+<h2 id="schema">Schema (68 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium%5CData%20Connectors/Table_ThreatResponseAlerts.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
 <tr>
 <th style="text-align: left;">Column Name</th>
 <th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;">Alert_Id_g</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">Computer</td>
-<td style="text-align: left;">string</td>
+<td style="text-align: left;">guid</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Computer_IP_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Computer_Name_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">fake_b</td>
-<td style="text-align: left;">bool</td>
-</tr>
-<tr>
-<td style="text-align: left;">Impact_Score_d</td>
-<td style="text-align: left;">real</td>
+<td style="text-align: left;">EID</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Impact_Score_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Intel_Id_d</td>
 <td style="text-align: left;">real</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Intel_Labels_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Intel_Name_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Intel_Type_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">IntelSource</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Link</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Match_Details_config_id_d</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Match_Details_config_rev_id_d</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_finding_artifact_artifact_hash_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_finding_artifact_instance_hash_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Match_Details_finding_artifact_windows_defender_event_event_s</td>
+<td style="text-align: left;">Match_Details_finding_artifact_windows_defender_event</td>
 <td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">Match_Details_finding_artifact_windows_defender_event_timestamp_ms_s</td>
-<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_finding_description_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Match_Details_finding_domain_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Match_Details_finding_finding_id_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_finding_first_seen_t</td>
 <td style="text-align: left;">datetime</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_finding_hunt_id_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_finding_intel_id_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_finding_last_seen_t</td>
 <td style="text-align: left;">datetime</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Match_Details_finding_reporting_id_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_finding_source_name_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_finding_system_info_bits_d</td>
 <td style="text-align: left;">real</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_finding_system_info_build_number_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Match_Details_finding_system_info_logged_on_user_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_finding_system_info_os_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_finding_system_info_patch_level_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_finding_system_info_platform_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_finding_threat_id_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Match_Details_finding_type_id_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_finding_whats_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Match_Details_hash_d</td>
+<td style="text-align: left;">Match_Details_intel_id_d</td>
 <td style="text-align: left;">real</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Match_Details_json</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The raw json from the match details.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_match_contexts_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Match_Details_match_hash_d</td>
-<td style="text-align: left;">real</td>
+<td style="text-align: left;">Match_Details_match_hash_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_match_properties_args_s</td>
 <td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">Match_Details_match_properties_cwd_s</td>
-<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_match_properties_file_fullpath_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_match_properties_file_md5_g</td>
-<td style="text-align: left;">string</td>
+<td style="text-align: left;">guid</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Match_Details_match_properties_file_md5_s</td>
+<td style="text-align: left;">Match_Details_match_properties_file_sha1_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Match_Details_match_properties_fullpath_s</td>
+<td style="text-align: left;">Match_Details_match_properties_file_sha256_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Match_Details_match_properties_md5_g</td>
+<td style="text-align: left;">Match_Details_match_properties_file_size_s</td>
 <td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">Match_Details_match_properties_md5_s</td>
-<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_match_properties_name_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_match_properties_parent_args_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_match_properties_parent_file_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_match_properties_parent_name_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_match_properties_parent_parent_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_match_properties_parent_pid_d</td>
 <td style="text-align: left;">real</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_match_properties_parent_ppid_d</td>
 <td style="text-align: left;">real</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Match_Details_match_properties_parent_recorder_table_id_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_match_properties_parent_recorder_unique_id_s</td>
 <td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">Match_Details_match_properties_parent_start_time_s</td>
-<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_match_properties_parent_start_time_t</td>
 <td style="text-align: left;">datetime</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_match_properties_parent_user_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_match_properties_pid_d</td>
 <td style="text-align: left;">real</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_match_properties_ppid_d</td>
 <td style="text-align: left;">real</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Match_Details_match_properties_recorder_table_id_s</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_match_properties_recorder_unique_id_s</td>
 <td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">Match_Details_match_properties_sha1_s</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">Match_Details_match_properties_sha256_s</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">Match_Details_match_properties_size_d</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">Match_Details_match_properties_start_time_s</td>
-<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_match_properties_start_time_t</td>
 <td style="text-align: left;">datetime</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_match_properties_user_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_match_source_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_match_type_s</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">Match_Details_match_version_d</td>
 <td style="text-align: left;">real</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Match_Details_service_id_g</td>
+<td style="text-align: left;">MatchDets_finding_artifact_WindowsDefenderEvent_timestamp_ms</td>
 <td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">MITRE_Techniques_s</td>
 <td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">RawData</td>
-<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">TimeGenerated</td>
 <td style="text-align: left;">datetime</td>
-</tr>
-<tr>
-<td style="text-align: left;">Timestamp_s</td>
-<td style="text-align: left;">string</td>
+<td style="text-align: left;">The time at which the data was generated</td>
 </tr>
 <tr>
 <td style="text-align: left;">Timestamp_t</td>
 <td style="text-align: left;">datetime</td>
-</tr>
-<tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -338,6 +404,22 @@
 <ul>
 <li><a href="../solutions/tanium.html">Tanium</a></li>
 </ul>
+<h2 id="connectors">Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/taniumconnector.html">Tanium's CCF Push Connector</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
 <hr />
 <h2 id="content-items-using-this-table">Content Items Using This Table (2)</h2>
 <h3 id="analytic-rules">Analytic Rules (1)</h3>

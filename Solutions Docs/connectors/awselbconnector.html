@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon Web Services Elastic Load Balancing via Codeless Connector Framework &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="amazon-web-services-elastic-load-balancing">Amazon Web Services Elastic Load Balancing (via Codeless Connector Framework)</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Aws.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>AWSELBConnector</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Amazon Web Services</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/aws-elb.html">AWS ELB</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/ccf.html">CCF</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20ELB/Data%20Connectors/AWSELBConnector_CCF/AWSELBConnector_ConnectorDefinition.json">AWSELBConnector_ConnectorDefinition.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Configuration</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20ELB/Data%20Connectors/AWSELBConnector_CCF/AWSELBConnector_PollingConfig.json">AWSELBConnector_PollingConfig.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Capabilities</strong></td>
+<td style="text-align: left;"><code>AmazonWebServicesS3</code></td>
+</tr>
+</tbody>
+</table>
+<p>The AWS Elastic Load Balancing (ELB) connector for Microsoft Sentinel allows you to ingest access logs and flow logs from AWS Application Load Balancers (ALB), Network Load Balancers (NLB), and Gateway Load Balancers (GLB) into Microsoft Sentinel. These logs provide detailed information about requests processed by your load balancers and VPC traffic flows, enabling security monitoring, threat detection, and traffic analysis.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/awsalbaccesslogs.html"><code>AWSALBAccessLogs</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/awsalbaccesslogs-cl.html"><code>AWSALBAccessLogs_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/awselbflowlogs.html"><code>AWSELBFlowLogs</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/awselbflowlogs-cl.html"><code>AWSELBFlowLogs_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/awsnlbaccesslogs.html"><code>AWSNLBAccessLogs</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/awsnlbaccesslogs-cl.html"><code>AWSNLBAccessLogs_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): Read and Write permissions are required.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>AWS IAM Role ARN and SQS Queue</strong>: An <strong>AWS IAM Role ARN</strong> with cross-account access and an <strong>SQS Queue URL</strong> configured for S3 event notifications are required. See <a href="https://learn.microsoft.com/en-us/azure/sentinel/connect-aws">AWS ELB connector documentation</a> for setup instructions.</p>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<h3 id="1-aws-cloudformation-deployment">1. AWS CloudFormation Deployment</h3>
+<p>To configure access on AWS, use CloudFormation templates to set up the environment to send logs from ALB, NLB and GLB to your Log Analytics Workspace.</p>
+<h4 id="deployment-steps">Deployment steps:</h4>
+<ol>
+<li>Go to the <a href="https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/AWS%20ELB/Data%20Connectors/CloudFormationTemplates">Cloud Formation Templates</a>, download the JSON template files. </li>
+<li>Go to <a href="https://aka.ms/awsCloudFormationLink#/stacks/create">AWS CloudFormation Stacks</a>. </li>
+<li>First deploy the <strong>OIDCWebIdProvider.json</strong> template (skip if you already have an OIDC provider for Microsoft Sentinel). </li>
+<li>Then deploy the <strong>AWSS3ELB.json</strong> template with your parameters. </li>
+<li>Note down the following values from the stack outputs: 
+   - <code>IAMRoleArn</code> 
+   - <code>ALBSQSQueueURL</code> 
+   - <code>NLBSQSQueueURL</code> 
+   - <code>NLBFlowLogsSQSQueueURL</code> 
+   - <code>GLBFlowLogsSQSQueueURL</code> </li>
+</ol>
+<h4 id="post-deployment-configuration">Post-deployment Configuration:</h4>
+<p>Once the CloudFormation stack is successfully deployed: 
+- Go to the <strong>Resources</strong> tab in the stack. 
+- Locate the created <strong>S3 bucket name</strong>. 
+- In the S3 bucket, manually create the following folders: 
+  - <code>ALBLogs</code> 
+  - <code>NLBAccessLogs</code> 
+  - <code>NLBFlowLogs</code> 
+  - <code>GLBFlowLogs</code> </p>
+<h4 id="sending-logs">Sending Logs:</h4>
+<p>After folder creation, configure your AWS services to send logs to the appropriate folders: 
+- ALB access logs -&gt; <code>ALBLogs/</code> 
+- NLB access logs -&gt; <code>NLBAccessLogs/</code> 
+- NLB flow logs -&gt; <code>NLBFlowLogs/</code> 
+- GLB flow logs -&gt; <code>GLBFlowLogs/</code> </p>
+<p>These logs will be ingested into the corresponding tables in your Log Analytics Workspace. </p>
+<h4 id="table-mapping">Table Mapping:</h4>
+<ul>
+<li>ALB access logs -&gt; <code>AWSALBAccessLogsData</code> </li>
+<li>NLB access logs -&gt; <code>AWSNLBAccessLogsData</code> </li>
+<li>NLB and GLB flow logs -&gt; <code>AWSELBFlowLogsData</code> </li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> 
+In the <code>AWSELBFlowLogsData</code> table, a column named <code>LogType</code> will indicate whether a row is from <strong>NLB flow logs</strong> or <strong>GLB flow logs</strong>.</p>
+</blockquote>
+<h3 id="2-connect-new-collectors">2. Connect new collectors</h3>
+<p>To enable the connector, click <strong>Add new collector</strong>, enter the required details, and click <strong>Connect</strong>.
+<strong>Connector Management Interface</strong></p>
+<p>This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.</p>
+<p>📊 <strong>View Existing Collectors</strong>: A management table displays all currently configured data collectors with the following information:
+- <strong>Role ARN</strong>
+- <strong>Queue URL</strong>
+- <strong>Stream</strong></p>
+<p>➕ <strong>Add New Collector</strong>: Click the "Add new collector" button to configure a new data collector (see configuration form below).</p>
+<p>🔧 <strong>Manage Collectors</strong>: Use the actions menu to delete or modify existing collectors.</p>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration interface is only available when viewing the connector in the Microsoft Sentinel portal. You cannot configure data collectors through this static documentation.</p>
+</blockquote>
+<p><strong>Add new collector</strong></p>
+<p><em>AWS S3 connector</em></p>
+<p>When you click the "Add new collector" button in the portal, a configuration form will open. You'll need to provide:</p>
+<p><em>Account details</em></p>
+<ul>
+<li><strong>Role ARN</strong> (required): arn:aws:iam::123456789012:role/SentinelELBRole</li>
+<li><strong>Queue URL</strong> (required): https://sqs.us-east-1.amazonaws.com/123456789012/my-elb-queue</li>
+<li><strong>Data type</strong> (required): Select from available options</li>
+<li>ALB Access Logs</li>
+<li>NLB Access Logs</li>
+<li>NLB Flow Logs</li>
+<li>GLB Flow Logs</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration form is only available in the Microsoft Sentinel portal.</p>
+</blockquote>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+</div>
+
+</body>
+</html>

@@ -718,14 +718,15 @@
 </tr>
 </tbody>
 </table>
-<h2 id="solutions">Solutions (3)</h2>
+<h2 id="solutions">Solutions (4)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></li>
 <li><a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a></li>
+<li><a href="../solutions/synqlyintegrationconnector.html">SynqlyIntegrationConnector</a></li>
 <li><a href="../solutions/vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></li>
 </ul>
-<h2 id="connectors">Connectors (2)</h2>
+<h2 id="connectors">Connectors (4)</h2>
 <p>This table is ingested by the following connectors:</p>
 <table>
 <thead>
@@ -736,11 +737,19 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a></td>
+<td style="text-align: left;"><a href="../connectors/crowdstrikereplicatorv2.html">[DEPRECATED] CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/synqlyintegrationconnector.html">Synqly Integration Connector</a></td>
 <td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)</a></td>
 <td style="text-align: left;"></td>
 </tr>
 </tbody>
@@ -783,20 +792,18 @@
 </tr>
 </tbody>
 </table>
-<h3 id="other-parsers">Other Parsers (1)</h3>
+<h3 id="other-parsers-1-selection-criteria-eventproduct-falcon-data-replicatoreventvendor-crowdstrike">Other Parsers (1) — Selection Criteria: <code>EventProduct == "Falcon Data Replicator"</code><br><code>EventVendor == "CrowdStrike"</code></h3>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Parser</th>
 <th style="text-align: left;">Solution</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../parsers/crowdstrikereplicatorv2.html">CrowdStrikeReplicatorV2</a></td>
 <td style="text-align: left;"><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -805,6 +812,63 @@
 <ul>
 <li><code>microsoft.securityinsights/asimtables</code></li>
 </ul>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (1 criteria, 1 total references)</h2>
+<p>References by type: 0 connectors, 0 content items, 0 ASIM parsers, 1 other parsers.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>EventProduct == "Falcon Data Replicator"</code><br><code>EventVendor == "CrowdStrike"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="eventproduct-eventvendor">EventProduct / EventVendor</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">EventProduct</th>
+<th style="text-align: left;">EventVendor</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>Falcon Data Replicator</code></td>
+<td style="text-align: left;"><code>CrowdStrike</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>

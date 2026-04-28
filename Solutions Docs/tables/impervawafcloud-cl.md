@@ -9,9 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
-| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -71,12 +69,13 @@ This table is used by the following solutions:
 
 - [ImpervaCloudWAF](../solutions/impervacloudwaf.md)
 
-## Connectors (1)
+## Connectors (2)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
+| [Imperva Cloud WAF (via Codeless Connector Framework)](../connectors/impervacloudwaflogsccfdefinition.md) |  |
 | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) |  |
 
 ---

@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct has "Fortiweb"`<br>`DeviceVendor == "Fortinet"` | ✓ | ✓ | ✓ |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct has "Fortiweb"`<br>`DeviceVendor == "Fortinet"` | ✓ | ✓ | ? |
 
 ---
 

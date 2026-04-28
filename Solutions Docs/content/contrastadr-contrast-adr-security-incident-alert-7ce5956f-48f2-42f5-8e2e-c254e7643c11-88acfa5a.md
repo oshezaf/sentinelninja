@@ -18,7 +18,7 @@ Monitors Contrast ADR security incidents across all applications and environment
 | **Kind** | Scheduled |
 | **Tactics** | InitialAccess, DefenseEvasion, Discovery, CommandAndControl |
 | **Techniques** | T1190, T1055, T1018, T1008 |
-| **Required Connectors** | [ContrastADR](../connectors/contrastadr.md) |
+| **Required Connectors** | [ContrastADRCCF](../connectors/contrastadrccf.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContrastADR/Analytic%20Rules/Contrast_Security_ADR_incident.yaml) |
 
 ## Tables Used
@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ContrastADRIncident_CL`](../tables/contrastadrincident-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`ContrastADRIncidents_CL`](../tables/contrastadrincidents-cl.md) | ? | ✓ | ? |
 
 ---
 

@@ -16,9 +16,10 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://proofpoint.my.site.com/community/s/](https://proofpoint.my.site.com/community/s/) |
 | **Categories** | domains |
-| **Version** | 3.1.2 |
+| **Version** | 3.1.3 |
 | **Author** | Proofpoint, Inc. - azure-support@proofpoint.com |
 | **First Published** | 2022-05-23 |
+| **Last Updated** | 2026-04-22 |
 | **Solution Folder** | [ProofPointTap](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ProofPointTap) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/proofpointinc1600438591120.azure-sentinel-proofpoint) · Popularity: ⚪ Very Low (0%) |
 
@@ -107,6 +108,7 @@ This solution includes **6 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                           |
 |-------------|--------------------------------|--------------------------------------------------------------|
+| 3.1.3       | 19-03-2026                     | Update **ProofpointTAP_PollingConfig.json** to pass user-agent header with solution package version.|
 | 3.1.2       | 22-01-2026                     | Removed **Playbook** GetProofpointTAPEvents for TAP connector. |
 | 3.1.1       | 03-11-2025                     | Update support url in **SolutionMetadata.json**.|  
 | 3.1.0       | 31-07-2025                     | Updated Support details and publisherId in **SolutionMetadata.json**, updated Author details and Logo in **Solution_ProofTap.json** from Microsoft to Proofpoint.|

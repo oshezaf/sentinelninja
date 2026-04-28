@@ -46,9 +46,9 @@ This connector ingests data into the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AlertEvidence`](../tables/alertevidence.md) |  | ✓ | ✗ | ✓ |
-| [`CloudAppEvents`](../tables/cloudappevents.md) |  | ✓ | ✗ | ✓ |
-| [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ | ✓ |
+| [`AlertEvidence`](../tables/alertevidence.md) |  | ✓ | ✗ | ? |
+| [`CloudAppEvents`](../tables/cloudappevents.md) |  | ✓ | ✗ | ? |
+| [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ | ? |
 | [`DeviceFileCertificateInfo`](../tables/devicefilecertificateinfo.md) |  | ✓ | ✗ | ? |
 | [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ | ? |
 | [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) |  | ✓ | ✗ | ? |
@@ -59,14 +59,14 @@ This connector ingests data into the following tables:
 | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ | ? |
 | [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) | `ActionType == "RegistryValueSet"` | ✓ | ✗ | ? |
 | [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) |  | ✓ | ✗ | ? |
-| [`EmailEvents`](../tables/emailevents.md) |  | ✓ | ✗ | ✓ |
+| [`EmailEvents`](../tables/emailevents.md) |  | ✓ | ✗ | ? |
 | [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md) |  | ✓ | ✗ | ? |
 | [`EmailUrlInfo`](../tables/emailurlinfo.md) |  | ✓ | ✗ | ? |
 | [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md) |  | ✓ | ✗ | ? |
-| [`IdentityLogonEvents`](../tables/identitylogonevents.md) |  | ✓ | ✗ | ✓ |
+| [`IdentityLogonEvents`](../tables/identitylogonevents.md) |  | ✓ | ✗ | ? |
 | [`IdentityQueryEvents`](../tables/identityqueryevents.md) |  | ✓ | ✗ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |
-| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ✓ |
+| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ? |
+| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ? |
 | [`UrlClickEvents`](../tables/urlclickevents.md) |  | ✓ | ✗ | ? |
 
 ## Permissions

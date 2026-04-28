@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ Vaikora-Sentinel &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="vaikora-sentinel">⚠️ Vaikora-Sentinel</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/vaikora_logo.svg" alt="Vaikora-Sentinel Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Data443 Risk Mitigation, Inc.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://data443.com/support">https://data443.com/support</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Data443 Risk Mitigation, Inc. - support@data443.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2026-04-03</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2026-04-03</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vaikora-Sentinel">Vaikora-Sentinel</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://vaikora.com">Vaikora AI Agent Behavioral Signals</a> solution integrates Vaikora AI agent behavioral data into Microsoft Sentinel using the Codeless Connector Framework (CCF). The solution deploys a REST API poller connector, a custom log table (Vaikora_AgentSignals_CL), analytics rules, and visualization workbook to help security teams monitor AI agent activity, detect behavioral anomalies, and investigate policy violations.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/vaikorasentinel.html">Vaikora AI Agent Behavioral Signals</a> 🔶</li>
+</ul>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
+</blockquote>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/vaikora-agentsignals-cl.html"><code>Vaikora_AgentSignals_CL</code></a> 🔶</td>
+<td><a href="../connectors/vaikorasentinel.html">Vaikora AI Agent Behavioral Signals</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
+</blockquote>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>4 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/vaikora-sentinel-vaikora-agent-policy-violation-54262ad1-f346-4246-a13f-9557595ff7bd-946b4697.html">Vaikora - Agent policy violation</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Impact, DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/vaikora-agentsignals-cl.html"><code>Vaikora_AgentSignals_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vaikora-sentinel-vaikora-behavioral-anomaly-detected-e61258ec-1a7f-454c-95b5-458a6edb1ea4-7a520c0a.html">Vaikora - Behavioral anomaly detected</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">DefenseEvasion, Execution</td>
+<td style="text-align: left;"><a href="../tables/vaikora-agentsignals-cl.html"><code>Vaikora_AgentSignals_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vaikora-sentinel-vaikora-high-severity-ai-agent-action-detected-15c49777-7cb7-4746-8064-6fa4c7a73df8-39a65e3c.html">Vaikora - High severity AI agent action detected</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Impact, Execution, PrivilegeEscalation</td>
+<td style="text-align: left;"><a href="../tables/vaikora-agentsignals-cl.html"><code>Vaikora_AgentSignals_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/vaikora-sentinel-vaikoraagentsignalsdashboard-310774ee.html">VaikoraAgentSignalsDashboard</a></td>
+<td style="text-align: left;"><a href="../tables/vaikora-agentsignals-cl.html"><code>Vaikora_AgentSignals_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vaikora-Sentinel/README.md">Vaikora-Sentinel/README.md</a></em></p>
+</blockquote>
+<p>This solution ingests AI agent behavioral data from the <a href="https://vaikora.com">Vaikora</a> API into Microsoft Sentinel. It deploys a REST API poller connector, a custom log table, data collection rules, analytics rules, and a visualization workbook.</p>
+<h2 id="what-gets-deployed">What Gets Deployed</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data connector</td>
+<td>REST API poller — polls <code>https://api.vaikora.com/api/v1/actions</code> every 6 hours</td>
+</tr>
+<tr>
+<td>Custom table</td>
+<td><code>Vaikora_AgentSignals_CL</code> — 17-column schema for agent signals</td>
+</tr>
+<tr>
+<td>Analytic rule</td>
+<td>Vaikora - High Risk AI Agent Action</td>
+</tr>
+<tr>
+<td>Analytic rule</td>
+<td>Vaikora - Behavioral Anomaly Detected</td>
+</tr>
+<tr>
+<td>Analytic rule</td>
+<td>Vaikora - Agent Policy Violation</td>
+</tr>
+<tr>
+<td>Workbook</td>
+<td>Vaikora AI Agent Signals Dashboard</td>
+</tr>
+</tbody>
+</table>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Microsoft Sentinel workspace</li>
+<li>Vaikora API key (obtain from your Vaikora account)</li>
+<li>Agent ID from your Vaikora deployment</li>
+</ul>
+<h2 id="data-connector-setup">Data Connector Setup</h2>
+<p>After deploying the solution:</p>
+<ol>
+<li>Go to <strong>Microsoft Sentinel &gt; Data connectors</strong></li>
+<li>Find <strong>Vaikora AI Agent Behavioral Signals</strong> and open it</li>
+<li>Click <strong>Open connector page</strong></li>
+<li>Enter your Vaikora API key and agent ID</li>
+<li>Click <strong>Connect</strong></li>
+</ol>
+<p>The connector polls the Vaikora API every 6 hours. Data appears in <code>Vaikora_AgentSignals_CL</code> within the first polling window.</p>
+<h2 id="custom-table-schema">Custom Table Schema</h2>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TimeGenerated</td>
+<td>datetime</td>
+<td>Timestamp of the agent action</td>
+</tr>
+<tr>
+<td>action_id_s</td>
+<td>string</td>
+<td>Unique action identifier</td>
+</tr>
+<tr>
+<td>action_type_s</td>
+<td>string</td>
+<td>Type of action performed</td>
+</tr>
+<tr>
+<td>agent_id_s</td>
+<td>string</td>
+<td>Agent identifier</td>
+</tr>
+<tr>
+<td>status_s</td>
+<td>string</td>
+<td>Action status (success, failure, blocked)</td>
+</tr>
+<tr>
+<td>severity_s</td>
+<td>string</td>
+<td>Severity level (low, medium, high, critical)</td>
+</tr>
+<tr>
+<td>policy_decision_s</td>
+<td>string</td>
+<td>Policy enforcement decision (allow, block, warn)</td>
+</tr>
+<tr>
+<td>policy_id_s</td>
+<td>string</td>
+<td>Policy that evaluated the action</td>
+</tr>
+<tr>
+<td>risk_score_d</td>
+<td>int</td>
+<td>Risk score 0-100</td>
+</tr>
+<tr>
+<td>risk_level_s</td>
+<td>string</td>
+<td>Risk level label</td>
+</tr>
+<tr>
+<td>is_anomaly_b</td>
+<td>bool</td>
+<td>Whether Vaikora flagged this as anomalous</td>
+</tr>
+<tr>
+<td>anomaly_score_d</td>
+<td>real</td>
+<td>Anomaly score 0.0-1.0</td>
+</tr>
+<tr>
+<td>anomaly_reason_s</td>
+<td>string</td>
+<td>Human-readable anomaly explanation</td>
+</tr>
+<tr>
+<td>threat_detected_b</td>
+<td>bool</td>
+<td>Whether a threat was detected</td>
+</tr>
+<tr>
+<td>threat_score_d</td>
+<td>int</td>
+<td>Threat score 0-100</td>
+</tr>
+<tr>
+<td>resource_type_s</td>
+<td>string</td>
+<td>Type of resource the agent accessed</td>
+</tr>
+<tr>
+<td>log_hash_s</td>
+<td>string</td>
+<td>Unique hash for deduplication</td>
+</tr>
+</tbody>
+</table>
+<h2 id="analytic-rules">Analytic Rules</h2>
+<p>All three rules are deployed in disabled state. Enable them from <strong>Analytics &gt; Rule templates</strong> after confirming data is flowing.</p>
+<p><strong>Vaikora - High Risk AI Agent Action</strong> — fires when an action has <code>risk_score_d &gt;= 75</code> and severity is <code>high</code> or <code>critical</code>. Severity: High. Frequency: 1h.</p>
+<p><strong>Vaikora - Behavioral Anomaly Detected</strong> — fires when <code>is_anomaly_b == true</code> and <code>anomaly_score_d &gt;= 0.7</code>. Severity: Medium. Frequency: 30m.</p>
+<p><strong>Vaikora - Agent Policy Violation</strong> — fires when <code>policy_decision_s == 'block'</code>. Severity: Medium. Frequency: 15m.</p>
+<h2 id="workbook">Workbook</h2>
+<p><em>[Content truncated...]</em></p>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.0</td>
+<td>18-04-2026</td>
+<td>Initial Vaikora AI Agent Behavioral Signals <strong>CCF solution</strong> package with data connector, analytics rules and workbook.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+</div>
+
+</body>
+</html>

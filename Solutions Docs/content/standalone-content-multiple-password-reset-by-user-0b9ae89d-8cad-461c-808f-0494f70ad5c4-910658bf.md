@@ -26,11 +26,11 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ✓ |
-| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "AzureActiveDirectory"` | ✓ | ✗ | ✓ |
-| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ✓ |
-| [`Syslog`](../tables/syslog.md) | `Facility in "auth,authpriv"`<br>`SyslogMessage matchesregex ".*password changed for.*"` | ✓ | ✓ | ✓ |
-| [`WindowsEvent`](../tables/windowsevent.md) | `EventID in "4723,4724"` | ✓ | ✓ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ? |
+| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "AzureActiveDirectory"` | ✓ | ✗ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ? |
+| [`Syslog`](../tables/syslog.md) | `Facility in "auth,authpriv"`<br>`SyslogMessage matchesregex ".*password changed for.*"` | ✓ | ✓ | ? |
+| [`WindowsEvent`](../tables/windowsevent.md) | `EventID in "4723,4724"` | ✓ | ✓ | ? |
 
 ## Associated Connectors
 

@@ -1,4 +1,6 @@
-# Sophos Endpoint Protection
+# 🚫 [DEPRECATED] Sophos Endpoint Protection (using Azure Function)
+
+> 🚫 **Deprecated:** This connector has been deprecated and may be removed in future versions.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/sophos_logo.svg" alt="" width="75" height="75">
 
@@ -26,7 +28,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SophosEP_CL`](../tables/sophosep-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`SophosEP_CL`](../tables/sophosep-cl.md) 🔶 | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

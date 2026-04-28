@@ -26,8 +26,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "wildfire"`<br>`DeviceVendor == "Palo Alto Networks"` | ✓ | ✓ | ✓ |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) |  | ✓ | ✓ | ✗ |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "wildfire"`<br>`DeviceVendor == "Palo Alto Networks"` | ✓ | ✓ | ? |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) |  | ✓ | ✓ | ? |
 
 ---
 

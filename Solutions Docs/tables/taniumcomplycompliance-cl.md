@@ -15,32 +15,39 @@
 
 - [Schema](#schema)
 - [Solutions](#solutions)
+- [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
-## Schema (12 columns)
+## Schema (10 columns)
 
-**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/TaniumComplyCompliance_CL.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium%5CData%20Connectors/Table_ComplianceFindings.json)
 
-| Column Name | Type |
-|:------------|:-----|
-| Computer | string |
-| Computer_Name_s | string |
-| Operating_System_Generation_s | string |
-| Profile_s | string |
-| RawData | string |
-| Rule_ID_s | string |
-| Rule_s | string |
-| Standard_s | string |
-| Status_Category_s | string |
-| TimeGenerated | datetime |
-| Type | string |
-| Version_s | string |
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| Computer_Name_s | string |  |
+| IP_Address_s | string |  |
+| Operating_System_Generation_s | string |  |
+| Profile_s | string |  |
+| Rule_ID_s | string |  |
+| Rule_s | string |  |
+| Standard_s | string |  |
+| Status_Category_s | string |  |
+| TimeGenerated | datetime | The time at which the data was generated |
+| Version_s | string |  |
 
 ## Solutions (1)
 
 This table is used by the following solutions:
 
 - [Tanium](../solutions/tanium.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Tanium's CCF Push Connector](../connectors/taniumconnector.md) |  |
 
 ---
 

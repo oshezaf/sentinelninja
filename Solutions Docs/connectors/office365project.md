@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ProjectActivity`](../tables/projectactivity.md) | ✓ | ✗ | ✓ |
+| [`ProjectActivity`](../tables/projectactivity.md) | ✓ | ✗ | ? |
 
 ## Permissions
 

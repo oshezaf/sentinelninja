@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ GravityZone Data Connector &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="gravityzone-data-connector">⚠️ GravityZone Data Connector</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Bitdefender.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>GravityZoneDataConnector</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Bitdefender</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/gravityzone.html">GravityZone</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/unknown-custom-log.html">Unknown (Custom Log)</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GravityZone/Data%20Connectors/GravityZone_API.json">GravityZone_API.json</a></td>
+</tr>
+</tbody>
+</table>
+<p>This connector enables integration between <strong>Bitdefender GravityZone</strong> and <strong>Microsoft Sentinel</strong> through the <strong>Event Push Service API</strong>. Once configured, it streams all GravityZone event types directly into your Microsoft Sentinel workspace, where they are stored as logs in the <code>GzSecurityEvents_CL</code> table.</p>
+<p>Key event categories such as <strong>EDR, XDR, ransomware mitigation, network sandboxing, and Exchange malware events</strong> can be automatically correlated and generate incidents through the <strong>NRT GravityZone Incident Alerts</strong> analytics rule.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/gzsecurityevents-cl.html"><code>GzSecurityEvents_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
+- <strong>Data Collection Rule</strong> (ResourceGroup): read and write permissions to create data collection rules are required.
+- <strong>Data Collection Endpoint</strong> (ResourceGroup): read and write permissions to create data collection endpoints are required.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Azure App Registration</strong>: Microsoft Entra App Registration with the following details retained Directory (Tenant) ID, Application (Client) ID, Managed Service Principal Object ID (from the Enterprise Applications entry of the app), Client Secret (generated under Certificates &amp; secrets).
+- <strong>GravityZone Cloud Account</strong>: A GravityZone Cloud account with a generated API key for the Event Push Service endpoint.
+- <strong>Read our guide</strong>: Follow this step-by-step article to set up the integration. <a href="https://www.bitdefender.com/business/support/en/77209-1455218-integrate-gravityzone-with-azure-sentinel.html">Customers</a> | <a href="https://www.bitdefender.com/business/support/en/77211-1455218-integrate-gravityzone-with-azure-sentinel.html">Partners</a></p>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<ol>
+<li>Click the <strong>Deploy to Azure</strong> button below and fill in the required parameters. </li>
+</ol>
+<p><a href="https://aka.ms/sentinel-gravityzone-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
+<ol start="2">
+<li>
+<p>Collect the <strong>Logs Ingestion</strong> URL from <code>gz-sentinel-dce</code> <a href="https://portal.azure.com/#view/HubsExtension/BrowseResource.ReactView/resourceType/microsoft.insights%2Fdatacollectionendpoints">Data Collection Endpoint</a></p>
+</li>
+<li>
+<p>Collect the <strong>Immutable ID</strong> from <code>gz-sentinel-dcr</code> <a href="https://portal.azure.com/#browse/microsoft.insights%2Fdatacollectionrules">Data Collection Rule</a></p>
+</li>
+<li>
+<p>Go to your GravityZone Cloud account and navigate to <strong>My Account</strong>. Create an API key with <strong>Event Push Service</strong> permissions.</p>
+</li>
+<li>
+<p>Configure your <strong>Event Push Service</strong> settings using this article. <a href="https://www.bitdefender.com/business/support/en/77209-1455218-integrate-gravityzone-with-azure-sentinel.html#UUID-5e8bbfa1-7892[%E2%80%A6]-2427-abd6f930e8c2">Customers</a> | <a href="https://www.bitdefender.com/business/support/en/77211-1455218-integrate-gravityzone-with-azure-sentinel.html#UUID-5e8bbfa1-7892[%E2%80%A6]-2427-abd6f930e8c2">Partners</a>.</p>
+</li>
+</ol>
+<p><strong>Please note that after the successful deployment of the Data Connector &amp; successful setup of GravityZone's Event Push Service, the system will receive Activity Log data in near-real-time. A short delay may occur between data transmission and its appearance in the Microsoft Sentinel Logs section.</strong></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+</div>
+
+</body>
+</html>

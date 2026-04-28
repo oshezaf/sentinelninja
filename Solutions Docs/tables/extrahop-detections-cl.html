@@ -30,20 +30,8 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Custom Log V1</strong></td>
-<td style="text-align: left;">Yes 🔶 — uses type-suffixed column names</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✗ No</td>
-</tr>
-<tr>
 <td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
 <td style="text-align: left;">✓ Yes</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
-<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -55,7 +43,7 @@
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
-<h2 id="schema">Schema (54 columns)</h2>
+<h2 id="schema">Schema (59 columns)</h2>
 <p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ExtraHop_Detections_CL.json">KQL validation test schema</a></p>
 <table id="schema-table">
 <thead>
@@ -70,195 +58,219 @@
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">additional_participants_s</td>
+<td style="text-align: left;">additional_participants</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">assignee</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">assignee_s</td>
+<td style="text-align: left;">categories_array</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">categories_ids</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">categories_string</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">categories_array_s</td>
+<td style="text-align: left;">description</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">categories_ids_s</td>
+<td style="text-align: left;">DetectionTitle</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">categories_string_s</td>
+<td style="text-align: left;">DetectionType</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">description_s</td>
+<td style="text-align: left;">dst</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">dst_device</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">dst_device_ipaddrs</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">dst_device_macaddr</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">dst_device_ipaddrs_s</td>
+<td style="text-align: left;">dst_device_name</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">dst_device_macaddr_s</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">dst_device_name_s</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">dst_device_oid_d</td>
+<td style="text-align: left;">dst_device_oid</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">dst_device_role_s</td>
+<td style="text-align: left;">dst_device_role</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">dst_endpoint_s</td>
+<td style="text-align: left;">dst_endpoint</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">dst_hostname_s</td>
+<td style="text-align: left;">dst_external</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">dst_hostname</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">dst_ipaddr_s</td>
+<td style="text-align: left;">dst_ipaddr</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">dst_role_s</td>
+<td style="text-align: left;">dst_role</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">dst_type_s</td>
+<td style="text-align: left;">dst_type</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">dst_username_s</td>
+<td style="text-align: left;">dst_username</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">id_d</td>
+<td style="text-align: left;">id</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">is_user_created_b</td>
-<td style="text-align: left;">int</td>
+<td style="text-align: left;">is_user_created</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
-<td style="text-align: left;">mitre_tactics_string_s</td>
+<td style="text-align: left;">mitre_tactics_string</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">mitre_techniques_s</td>
+<td style="text-align: left;">mitre_techniques</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">mitre_techniques_string</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">mitre_techniques_string_s</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">mod_time_d</td>
+<td style="text-align: left;">mod_time</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">properties_client_port_d</td>
+<td style="text-align: left;">properties</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">properties_client_port</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">properties_command_s</td>
+<td style="text-align: left;">properties_command</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">properties_randomness_d</td>
+<td style="text-align: left;">properties_randomness</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">properties_s</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">properties_server_port_d</td>
+<td style="text-align: left;">properties_server_port</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">properties_user_s</td>
+<td style="text-align: left;">properties_user</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">recommended_b</td>
-<td style="text-align: left;">int</td>
+<td style="text-align: left;">recommended</td>
+<td style="text-align: left;">bool</td>
 </tr>
 <tr>
-<td style="text-align: left;">recommended_factors_s</td>
+<td style="text-align: left;">recommended_factors</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">resolution</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">recommended_s</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">risk_score_d</td>
+<td style="text-align: left;">risk_score</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">sourcetype_s</td>
+<td style="text-align: left;">src</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">src_device</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">src_device_ipaddrs</td>
+<td style="text-align: left;">dynamic</td>
+</tr>
+<tr>
+<td style="text-align: left;">src_device_macaddr</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">src_device_ipaddrs_s</td>
+<td style="text-align: left;">src_device_name</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">src_device_macaddr_s</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">src_device_name_s</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">src_device_oid_d</td>
+<td style="text-align: left;">src_device_oid</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">src_device_role_s</td>
+<td style="text-align: left;">src_device_role</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">src_endpoint_s</td>
+<td style="text-align: left;">src_endpoint</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">src_hostname_s</td>
+<td style="text-align: left;">src_external</td>
+<td style="text-align: left;">bool</td>
+</tr>
+<tr>
+<td style="text-align: left;">src_hostname</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">src_ipaddr_s</td>
+<td style="text-align: left;">src_ipaddr</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">src_role_s</td>
+<td style="text-align: left;">src_role</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">src_type_s</td>
+<td style="text-align: left;">src_type</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">src_username_s</td>
+<td style="text-align: left;">src_username</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">status_s</td>
+<td style="text-align: left;">status</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">ticket_id_d</td>
-<td style="text-align: left;">real</td>
-</tr>
-<tr>
-<td style="text-align: left;">time_d</td>
+<td style="text-align: left;">ticket_id</td>
 <td style="text-align: left;">real</td>
 </tr>
 <tr>
@@ -266,19 +278,15 @@
 <td style="text-align: left;">datetime</td>
 </tr>
 <tr>
-<td style="text-align: left;">title_s</td>
-<td style="text-align: left;">string</td>
+<td style="text-align: left;">timestamp</td>
+<td style="text-align: left;">real</td>
 </tr>
 <tr>
 <td style="text-align: left;">Type</td>
 <td style="text-align: left;">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">type_s</td>
-<td style="text-align: left;">string</td>
-</tr>
-<tr>
-<td style="text-align: left;">url_s</td>
+<td style="text-align: left;">url</td>
 <td style="text-align: left;">string</td>
 </tr>
 </tbody>

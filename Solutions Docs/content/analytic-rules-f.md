@@ -1,6 +1,6 @@
 # Analytic Rules - F
 
-**52 analytic rules** starting with 'F'.
+**48 analytic rules** starting with 'F'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -8,7 +8,7 @@
 
 ---
 
-**Jump to letter:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | [B](analytic-rules-b.md) | [C](analytic-rules-c.md) | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | **F** | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | [M](analytic-rules-m.md) | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [Z](analytic-rules-z.md)
+**Jump to letter:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | [B](analytic-rules-b.md) | [C](analytic-rules-c.md) | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | **F** | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | [M](analytic-rules-m.md) | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [X](analytic-rules-x.md) | [Z](analytic-rules-z.md)
 
 > **Source:** 📦 Solution | 📄 Standalone | 🔗 GitHub Only
 
@@ -33,10 +33,6 @@
 | [Failover Plan Settings Updated](veeam-failover-plan-settings-updated-a053e7ba-e60c-482a-bbd8-89a25c53d905-f052d77a.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |
 | [Failover Plan Started](veeam-failover-plan-started-e06ec6d7-d9f6-4675-89bf-03fa8a0e0be0-7856ed06.md) | High | 📦 [Veeam](../solutions/veeam.md) |
 | [Failover Plan Stopped](veeam-failover-plan-stopped-de4cc05b-2e4e-4104-9559-101b4c41c35e-6d0f15f3.md) | Medium | 📦 [Veeam](../solutions/veeam.md) |
-| [Fake Ad (High)](ctm360-fake-ad-high-5e1c0659-adb9-400a-88a3-be2246bf05ac-a024f060.md) ⚠️ | High | 📦 [CTM360](../solutions/ctm360.md) |
-| [Fake Ad (Informational)](ctm360-fake-ad-informational-e43f4d93-aaa1-4f60-9419-3b2fa342eccc-90fb90f1.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
-| [Fake Ad (Low)](ctm360-fake-ad-low-21bc281c-a27e-48ba-8e79-68c8849d328d-4a9ebe1e.md) ⚠️ | Low | 📦 [CTM360](../solutions/ctm360.md) |
-| [Fake Ad (Medium)](ctm360-fake-ad-medium-bc21023a-57e5-4658-8fed-ba7d68235acc-d297cf04.md) ⚠️ | Medium | 📦 [CTM360](../solutions/ctm360.md) |
 | [Fake computer account created](standalone-content-fake-computer-account-created-c1faf5e8-6958-11ec-90d6-0242ac120003-5106eb49.md) | Medium | 📄 Standalone Content |
 | [File Server Deleted](veeam-file-server-deleted-d7f23105-6756-43ae-973c-48b7441559d5-ce43c672.md) | High | 📦 [Veeam](../solutions/veeam.md) |
 | [File Server Settings Updated](veeam-file-server-settings-updated-62008da4-627e-47fe-b78a-62e1e23b3eb9-ffb6279a.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |

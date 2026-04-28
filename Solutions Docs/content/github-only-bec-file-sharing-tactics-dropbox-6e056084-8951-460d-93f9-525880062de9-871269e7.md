@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType in "Added users and/or groups to shared file/folder,Invited user to Dropbox`<br>`added them to shared file/folder"` | ✓ | ✗ | ✓ |
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType in "Added users and/or groups to shared file/folder,Invited user to Dropbox`<br>`added them to shared file/folder"` | ✓ | ✗ | ? |
 
 ---
 

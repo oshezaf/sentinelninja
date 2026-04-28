@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Egress Defend &mdash; Solutions Analyzer</title>
+<title>⚠️ Egress Defend &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,7 +15,10 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="egress-defend">Egress Defend</h1>
+<h1 id="egress-defend">⚠️ Egress Defend</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Egress-logo.svg" alt="Egress Defend Logo" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
@@ -78,7 +81,7 @@
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>1 table(s)</strong>:</p>
+<p>This solution uses <strong>2 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -92,6 +95,11 @@
 <td><a href="../tables/egressdefend-cl.html"><code>EgressDefend_CL</code></a> 🔶</td>
 <td><a href="../connectors/egressdefendpolling.html">Egress Defend</a></td>
 <td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/knowbe4defend-cl.html"><code>KnowBe4Defend_CL</code></a> 🔶</td>
+<td><a href="../connectors/egressdefendpolling.html">Egress Defend</a></td>
+<td>Analytics, Workbooks</td>
 </tr>
 </tbody>
 </table>
@@ -151,13 +159,13 @@
 <td style="text-align: left;"><a href="../content/egress-defend-egress-defend-dangerous-attachment-detected-a0e55dd4-8454-4396-91e6-f28fec3d2cab-f2c1e438.html">Egress Defend - Dangerous Attachment Detected</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">Execution, InitialAccess, Persistence, PrivilegeEscalation</td>
-<td style="text-align: left;"><a href="../tables/egressdefend-cl.html"><code>EgressDefend_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/egressdefend-cl.html"><code>EgressDefend_CL</code></a><br><a href="../tables/knowbe4defend-cl.html"><code>KnowBe4Defend_CL</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/egress-defend-egress-defend-dangerous-link-click-a896123e-03a5-4a4d-a7e3-fd814846dfb2-cd7508b8.html">Egress Defend - Dangerous Link Click</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">Execution</td>
-<td style="text-align: left;"><a href="../tables/egressdefend-cl.html"><code>EgressDefend_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/egressdefend-cl.html"><code>EgressDefend_CL</code></a><br><a href="../tables/knowbe4defend-cl.html"><code>KnowBe4Defend_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -189,7 +197,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/egress-defend-defendmetrics-35b2f8e1.html">DefendMetrics</a></td>
-<td style="text-align: left;"><a href="../tables/egressdefend-cl.html"><code>EgressDefend_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/egressdefend-cl.html"><code>EgressDefend_CL</code></a><br><a href="../tables/knowbe4defend-cl.html"><code>KnowBe4Defend_CL</code></a></td>
 </tr>
 </tbody>
 </table>

@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SentinelAlibabaCloudVPCFlowLogs &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
-
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
@@ -19,6 +21,7 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
+<p>Reference for SentinelAlibabaCloudVPCFlowLogs table in Azure Monitor Logs.</p>
 <table>
 <thead>
 <tr>
@@ -28,6 +31,14 @@
 </thead>
 <tbody>
 <tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Security</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+</tr>
+<tr>
 <td style="text-align: left;"><strong>Supports Transformations</strong></td>
 <td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
@@ -36,8 +47,185 @@
 <td style="text-align: left;">✓ Yes</td>
 </tr>
 <tr>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelalibabacloudvpcflowlogs">View Documentation</a></td>
+</tr>
+<tr>
 <td style="text-align: left;"><strong>Azure Monitor Logs Ingestion API</strong></td>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema">Schema (32 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelalibabacloudvpcflowlogs">Azure Monitor documentation</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">AccountId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Alibaba Cloud account ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">Action</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates whether the traffic was permitted or denied by a security group or network ACL: ACCEPT (traffic was permitted) or REJECT (traffic was denied)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bytes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The number of bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">Direction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The direction of the traffic: in (Inbound traffic to the ENI) or out (Outbound traffic from the ENI)</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The destination IP address</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstPort</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The destination port</td>
+</tr>
+<tr>
+<td style="text-align: left;">DstType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The CIDR block information of the destination IP address after enabling the inter-domain analysis feature. This field is included only if you enable the inter-domain analysis feature.</td>
+</tr>
+<tr>
+<td style="text-align: left;">End</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">For a persistent connection, this is the end time of the capture window. For a short-lived connection, this is the time when the connection was closed. The value is a Unix timestamp</td>
+</tr>
+<tr>
+<td style="text-align: left;">EniId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the ENI</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogProject</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the log project where the logs are stored.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The region where the log store is located.</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The logging status of the flow log: OK (Data is recorded normally), NODATA (No network traffic), SKIPDATA (Some flow log records are skipped)</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogStore</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the log store where the logs are stored.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Packets</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The number of packets</td>
+</tr>
+<tr>
+<td style="text-align: left;">Protocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Internet Assigned Numbers Authority (IANA) protocol number of the traffic. Common protocol numbers include 1 for ICMP, 6 for TCP, and 17 for UDP</td>
+</tr>
+<tr>
+<td style="text-align: left;">Region</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The region where the VPC resides, Not included in all records</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source IP address</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcPort</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source port</td>
+</tr>
+<tr>
+<td style="text-align: left;">SrcType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The CIDR block information of the source IP address after enabling the inter-domain analysis feature. This field is included only if you enable the inter-domain analysis feature.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Start</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The time when the first packet was received in the capture window. The value is a Unix timestamp</td>
+</tr>
+<tr>
+<td style="text-align: left;">TcpFlags</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The TCP flag, represented in decimal, which reflects a combination of flags from the TCP protocol, such as SYN, ACK, and FIN</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time when the log entry was generated</td>
+</tr>
+<tr>
+<td style="text-align: left;">TrafficPath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The scenario where the traffic occurs (0-22): 0=Other scenarios, 1=Traffic through other resources in same VPC, 2=Private traffic to ECS instance in same VPC, etc.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">Version</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The version of the flow log. The version of all current flow log entries is 1</td>
+</tr>
+<tr>
+<td style="text-align: left;">VmId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the ECS instance to which the ENI is attached</td>
+</tr>
+<tr>
+<td style="text-align: left;">VpcId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the VPC to which the ENI belongs</td>
+</tr>
+<tr>
+<td style="text-align: left;">VswitchId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the vSwitch to which the elastic network interface (ENI) is attached</td>
 </tr>
 </tbody>
 </table>
@@ -46,6 +234,30 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 </div>
-
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
 </body>
 </html>

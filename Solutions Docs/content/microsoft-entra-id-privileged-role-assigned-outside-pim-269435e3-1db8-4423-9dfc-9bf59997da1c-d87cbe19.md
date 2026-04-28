@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) | `OperationName == "Add member to role"`<br>`OperationName has "Add member to role outside of PIM"` | ✓ | ✗ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName == "Add member to role"`<br>`OperationName has "Add member to role outside of PIM"` | ✓ | ✗ | ? |
 
 ---
 

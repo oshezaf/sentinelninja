@@ -47,7 +47,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.1.2</td>
+<td style="text-align: left;">3.1.4</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -81,8 +81,8 @@
 <h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>2 data connector(s)</strong>:</p>
 <ul>
-<li><a href="../connectors/boxdataconnector.html">Box</a> 🔶</li>
-<li><a href="../connectors/boxeventsccpdefinition.html">Box Events (CCP)</a> 🔶</li>
+<li><a href="../connectors/boxdataconnector.html">[DEPRECATED] Box Events (using Azure Function)</a> 🔶</li>
+<li><a href="../connectors/boxeventsccpdefinition.html">Box Events (via Codeless Connector Framework)</a> 🔶</li>
 </ul>
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
@@ -100,12 +100,12 @@
 <tbody>
 <tr>
 <td><a href="../tables/boxeventsv2-cl.html"><code>BoxEventsV2_CL</code></a></td>
-<td><a href="../connectors/boxdataconnector.html">Box</a>, <a href="../connectors/boxeventsccpdefinition.html">Box Events (CCP)</a></td>
+<td><a href="../connectors/boxeventsccpdefinition.html">Box Events (via Codeless Connector Framework)</a>, <a href="../connectors/boxdataconnector.html">[DEPRECATED] Box Events (using Azure Function)</a></td>
 <td>Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
 <td><a href="../tables/boxevents-cl.html"><code>BoxEvents_CL</code></a> 🔶</td>
-<td><a href="../connectors/boxdataconnector.html">Box</a>, <a href="../connectors/boxeventsccpdefinition.html">Box Events (CCP)</a></td>
+<td><a href="../connectors/boxeventsccpdefinition.html">Box Events (via Codeless Connector Framework)</a>, <a href="../connectors/boxdataconnector.html">[DEPRECATED] Box Events (using Azure Function)</a></td>
 <td>Analytics, Hunting, Workbooks</td>
 </tr>
 </tbody>
@@ -318,6 +318,16 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>3.1.4</td>
+<td>13-04-2026</td>
+<td>Deprecate Box Events (using Azure Function)</td>
+</tr>
+<tr>
+<td>3.1.3</td>
+<td>24-03-2026</td>
+<td>Rename to Box Events (via Codeless Connector Framework)</td>
+</tr>
 <tr>
 <td>3.1.2</td>
 <td>29-10-2025</td>

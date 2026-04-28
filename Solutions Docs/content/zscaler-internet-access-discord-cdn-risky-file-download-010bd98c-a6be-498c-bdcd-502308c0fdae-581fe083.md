@@ -21,13 +21,15 @@ Identifies callouts to Discord CDN addresses for risky file extensions. This det
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Analytic%20Rules/DiscordCDNRiskyDownload.yaml) |
 
+> ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
+
 ## Tables Used
 
 This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceVendor == "ZScaler"` | ✓ | ✓ | ✓ |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceVendor == "ZScaler"` | ✓ | ✓ | ? |
 
 ---
 

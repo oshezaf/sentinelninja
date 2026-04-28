@@ -47,10 +47,6 @@
 <td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
-</tr>
-<tr>
 <td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/signinlogs">View Documentation</a></td>
 </tr>
@@ -65,7 +61,7 @@
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 <li><a href="#resource-types">Resource Types</a></li>
 </ul>
-<h2 id="schema">Schema (93 columns)</h2>
+<h2 id="schema">Schema (95 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/signinlogs">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -172,6 +168,11 @@
 <td style="text-align: left;">Sources of authentication requirement, such as conditional access, per-user MFA, identity protection, and security defaults.</td>
 </tr>
 <tr>
+<td style="text-align: left;">AuthenticatorAppLocation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The location of the authenticator app.</td>
+</tr>
+<tr>
 <td style="text-align: left;">AutonomousSystemNumber</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The Autonomous System Number (ASN) of the network used by the actor.</td>
@@ -190,6 +191,11 @@
 <td style="text-align: left;">ClientCredentialType</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The type of client credential used. Examples include client assertion, client secret, etc.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConditionalAccessAudiences</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The audiences targeted by the conditional access policy.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ConditionalAccessPolicies</td>
@@ -599,7 +605,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (147)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (148)</h2>
 <h3 id="analytic-rules">Analytic Rules (44)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
 <table>
@@ -765,7 +771,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-entra-id-possible-signin-from-azure-backdoor-fa00014c-c5f4-4715-8f5b-ba567e19e41e-dd1ac846.html">Possible SignIn from Azure Backdoor</a></td>
-<td style="text-align: left;"><code>OperationName == "Add unverified domain"</code></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -923,11 +929,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/standalone-content-suspicious-login-from-deleted-guest-account-defe4855-0d33-4362-9557-009237623976-9a77037a.html">Suspicious Login from deleted guest account</a></td>
-<td style="text-align: left;"><code>OperationName == "Delete user"</code></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/standalone-content-url-added-to-application-from-unknown-domain-017e095a-94d8-430c-a047-e51a11fb737b-9b989540.html">URL Added to Application from Unknown Domain</a></td>
-<td style="text-align: left;"><code>OperationName == "Update Application"</code></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -1244,7 +1250,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-dormant-user-update-mfa-and-logs-in-a67834b0-3359-40be-bf11-71faac93b509-e1f0ddc9.html">Dormant User Update MFA and Logs In</a></td>
-<td style="text-align: left;"><code>OperationName == "User registered security info"</code></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-dormant-user-update-mfa-and-logs-in-ueba-6adc74fb-37f9-4187-ba7c-84269b09a485-ad8c1897.html">Dormant User Update MFA and Logs In - UEBA</a></td>
@@ -1252,7 +1258,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-high-risk-sign-in-around-authentication-method-added-or-device-registration-d61c3213-77ba-4998-8818-1da2f85dacdf-af95e228.html">High Risk Sign In Around Authentication Method Added or Device Registration</a></td>
-<td style="text-align: left;"><code>OperationName in "Register device,User registered security info"</code></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-low-&amp;-slow-password-attempts-with-volatile-ip-addresses-3d217bb4-9cc2-4aba-838a-48e606e910e6-6761ead7.html">Low &amp; slow password attempts with volatile IP addresses</a></td>
@@ -1268,7 +1274,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-risky-sign-in-with-device-registration-f9f8b17c-52ed-4fd1-8edd-6278b6e2669f-6359d664.html">Risky Sign-in with Device Registration</a></td>
-<td style="text-align: left;"><code>OperationName == "Add registered owner to device"</code></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-sign-ins-from-ips-that-attempt-sign-ins-to-disabled-accounts-53b6d42e-ff74-46a8-abee-ec72181f66ba-e036bce2.html">Sign-ins from IPs that attempt sign-ins to disabled accounts</a></td>
@@ -1288,11 +1294,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-successful-sign-in-from-non-compliant-device-with-bulk-download-activity-a5bb38e3-5ee2-47fe-a65d-c3c9341112ef-2c20eff5.html">Successful Sign-In From Non-Compliant Device with bulk download activity</a></td>
-<td style="text-align: left;"><code>OperationName has_any "Download group members,Download groups,Download user registeration details,Download users"</code></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-unfamiliar-signin-correlation-with-azureportal-signin-attempts-and-auditlogs-6962473c-bcb8-421d-a0db-826078cad280-15192c3c.html">Unfamiliar Signin Correlation with AzurePortal Signin Attempts and AuditLogs</a></td>
-<td style="text-align: left;"><code>OperationName has_any "Add member to role"</code></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-user-account-linked-to-storage-account-file-upload-bee57113-7b9d-4158-958c-a7f3d534c6c4-d30a8c48.html">User Account Linked to Storage Account File Upload</a></td>
@@ -1304,7 +1310,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (43)</h3>
+<h3 id="workbooks">Workbooks (44)</h3>
 <p><strong>In solution <a href="../solutions/1password.html">1Password</a>:</strong></p>
 <table>
 <thead>
@@ -1655,7 +1661,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-conditionalaccesstrendsandchanges-114c89ab.html">ConditionalAccessTrendsandChanges</a></td>
-<td style="text-align: left;"><code>OperationName in "Add conditional access policy,Add member to group,Delete conditional access policy,Update conditional access policy"</code><br><code>OperationName contains "group"</code></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/github-only-copilotforsecuritymonitoring-b67b6028.html">CopilotforSecurityMonitoring</a></td>
@@ -1714,6 +1720,10 @@
 <td style="text-align: left;"></td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="../content/github-only-workspaceusage-97e7cfa7.html">WorkspaceUsage</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="../content/github-only-zerotruststrategyworkbook-cd80dc2b.html">ZeroTrustStrategyWorkbook</a></td>
 <td style="text-align: left;"></td>
 </tr>
@@ -1744,8 +1754,8 @@
 <ul>
 <li><code>microsoft.graph/tenants</code></li>
 </ul>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (12 criteria, 12 total references)</h2>
-<p>References by type: 0 connectors, 12 content items, 0 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (4 criteria, 4 total references)</h2>
+<p>References by type: 0 connectors, 4 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -1759,30 +1769,6 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>OperationName == "Add unverified domain"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>OperationName == "Update Application"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>OperationName == "Delete user"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>OperationName == "Update user"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
@@ -1792,38 +1778,6 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>OperationName in "PutBlob,PutRange"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>OperationName == "User registered security info"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>OperationName in "Register device,User registered security info"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>OperationName has_any "Download group members,Download groups,Download user registeration details,Download users"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>OperationName has_any "Add member to role"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1847,20 +1801,12 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>OperationName == "Add registered owner to device"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><strong>Total</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>12</strong></td>
+<td style="text-align: center;"><strong>4</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>12</strong></td>
+<td style="text-align: center;"><strong>4</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1877,38 +1823,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align: left;"><code>User registered security info</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>Add unverified domain</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>Update Application</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>Delete user</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
 <tr>
 <td style="text-align: left;"><code>Update user</code></td>
 <td style="text-align: center;">-</td>
@@ -1934,54 +1848,6 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Register device</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_any Download group members</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_any Download groups</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_any Download user registeration details</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_any Download users</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_any Add member to role</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>Sign-in activity</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
@@ -1991,14 +1857,6 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>Add user</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>Add registered owner to device</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>

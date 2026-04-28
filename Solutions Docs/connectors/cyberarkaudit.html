@@ -54,7 +54,10 @@
 </tr>
 </tbody>
 </table>
-<p>The <a href="https://docs.cyberark.com/Audit/Latest/en/Content/Resources/_TopNav/cc_Home.htm">CyberArk Audit</a> data connector provides the capability to retrieve security event logs of the CyberArk Audit service and more events into Microsoft Sentinel through the REST API. The connector provides ability to get events which helps to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more.</p>
+<p>The <a href="https://docs.cyberark.com/Audit/Latest/en/Content/Resources/_TopNav/cc_Home.htm">CyberArk Audit</a> data connector provides the capability to retrieve security event logs of the CyberArk Audit service and more events into Microsoft Sentinel through the REST API, using <strong>Azure Functions</strong>. The connector provides ability to get events which helps to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more.</p>
+<blockquote>
+<p><strong>IMPORTANT:</strong> Deploy <strong>only one</strong> CyberArk Audit connector option in your workspace (either <strong>Azure Functions</strong> <em>or</em> <strong>Codeless Connector Framework</strong>). Deploying both is not recommended, as the data will be duplicated if both connectors are deployed.</p>
+</blockquote>
 <h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
@@ -69,9 +72,9 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../tables/cyberark-auditevents-cl.html"><code>CyberArk_AuditEvents_CL</code></a></td>
+<td style="text-align: center;">?</td>
 <td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
 </tr>
 </tbody>
 </table>
@@ -93,7 +96,7 @@
 </blockquote>
 <p><strong>STEP 1 - Configuration steps for the CyberArk Audit SIEM Integration</strong></p>
 <p>Follow the <a href="https://docs.cyberark.com/audit/latest/en/Content/Audit/isp_Microsoft_Sentinel.htm?tocpath=SIEM%20integrations%7C_____3">instructions</a> to obtain connection details and credentials.</p>
-<p><strong>STEP 2 - Choose ONE from the following two deployment options to deploy the connector and the associated Azure Function</strong></p>
+<p><strong>STEP 2 - Deploy connector and the associated Azure Function</strong></p>
 <blockquote>
 <p><strong>IMPORTANT:</strong> Before deploying the CyberArk Audit data connector, have the Workspace Name and Workspace Location (can be copied from the following).
 - <strong>Workspace Name</strong>: <code>WorkspaceName</code>
@@ -101,7 +104,7 @@
 - <strong>Workspace Location</strong>: <code>WorkspaceLocation</code>
 <em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
 </blockquote>
-<p><strong>3. Option 1 - Azure Resource Manager (ARM) Template</strong></p>
+<p><strong>3. Azure Resource Manager (ARM) Template</strong></p>
 <p>Use this method for automated deployment of the CyberArk Audit data connector using an ARM Template.</p>
 <ol>
 <li>
@@ -116,8 +119,6 @@
 </blockquote>
 </li>
 </ol>
-<p><strong>4. Option 2 - Manual Deployment of Azure Functions</strong></p>
-<p>Use the following step-by-step instructions to deploy the CyberArk Audit data connector manually with Azure Functions (Deployment via Visual Studio Code).</p>
 <p><strong>1. Deploy a Function App</strong></p>
 <blockquote>
 <p><strong>NOTE:</strong> You will need to <a href="https://docs.microsoft.com/azure/azure-functions/functions-create-first-function-python#prerequisites">prepare VS code</a> for Azure function development.</p>

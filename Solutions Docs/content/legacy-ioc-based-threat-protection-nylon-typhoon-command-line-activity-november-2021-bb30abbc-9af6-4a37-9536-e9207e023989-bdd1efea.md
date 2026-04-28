@@ -25,9 +25,9 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
-| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ | ✓ |
-| [`WindowsEvent`](../tables/windowsevent.md) | ✓ | ✓ | ✓ |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ | ? |
+| [`WindowsEvent`](../tables/windowsevent.md) | ✓ | ✓ | ? |
 
 ---
 

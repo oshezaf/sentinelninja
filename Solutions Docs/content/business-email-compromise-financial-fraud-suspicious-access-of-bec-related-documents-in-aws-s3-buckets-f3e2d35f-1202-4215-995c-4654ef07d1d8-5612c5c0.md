@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) | ✓ | ✓ | ✓ |
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | ✓ | ✓ | ? |
 
 ---
 

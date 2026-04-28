@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ Cyjax Threat Intelligence IOC Connector &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="cyjax-threat-intelligence-ioc-connector">⚠️ Cyjax Threat Intelligence IOC Connector</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cyjax.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>CyjaxIOCAPI</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Cyjax</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/cyjax.html">Cyjax</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyjax/Data%20Connectors/CyjaxIOC_API_FunctionApp.json">CyjaxIOC_API_FunctionApp.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Connector definition requires workspace key (SharedKey pattern)</em></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.cyjax.com/">Cyjax</a> Threat Intelligence IOC data connector provides the capability to ingest Indicators of Compromise (IOCs) from the Cyjax API v2 into Microsoft Sentinel as STIX 2.1 Threat Intelligence indicators. The connector fetches IOCs including IPs, domains, URLs, file hashes, emails, and hostnames, enriches them with GeoIP, ASN, and sighting data, and uploads them to the Microsoft Sentinel Threat Intelligence platform via the Upload Indicator API.</p>
+<p>The connector supports:</p>
+<ul>
+<li>
+<p>Automated IOC collection with configurable schedule</p>
+</li>
+<li>
+<p>IOC enrichment with GeoIP, ASN, and sighting data</p>
+</li>
+<li>
+<p>STIX 2.1 indicator mapping with TLP markings</p>
+</li>
+<li>
+<p>Incremental fetching with checkpoint management</p>
+</li>
+</ul>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): Read and write permissions on the workspace are required.
+- <strong>Keys</strong> (Workspace): Read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Azure Subscription</strong>: Azure Subscription with owner role is required to register an application in Microsoft Entra ID and assign role of contributor to app in resource group.
+- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
+- <strong>Cyjax API Credentials</strong>: A Cyjax API v2 access token (Bearer Token) is required. Contact Cyjax to obtain API credentials.</p>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Resource Group</strong></p>
+<p>You need to have a resource group created with a subscription you are going to use.</p>
+<p><strong>2. Functions App</strong></p>
+<p>You need to have an Azure App registered for this connector to use:
+1. Application (Client) ID
+2. Tenant ID
+3. Client Secret</p>
+<blockquote>
+<p><strong>NOTE:</strong> This connector uses Azure Functions to connect to the Cyjax API v2 to pull IOC indicators into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
+</blockquote>
+<p><strong>STEP 1 - App Registration steps for the Application in Microsoft Entra ID</strong></p>
+<p>This integration requires an App registration in the Azure portal. Follow the steps in this section to create a new application in Microsoft Entra ID:
+1. Sign in to the <a href="https://portal.azure.com/">Azure portal</a>.
+2. Search for and select <strong>Microsoft Entra ID</strong>.
+3. Under <strong>Manage</strong>, select <strong>App registrations &gt; New registration</strong>.
+4. Enter a display <strong>Name</strong> for your application.
+5. Select <strong>Register</strong> to complete the initial app registration.
+6. When registration finishes, the Azure portal displays the app registration's Overview pane. You see the <strong>Application (client) ID</strong> and <strong>Tenant ID</strong>. The client ID and Tenant ID are required as configuration parameters for the execution of the Cyjax IOC Data Connector.</p>
+<blockquote>
+<p><strong>Reference link:</strong> <a href="https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app">https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app</a></p>
+</blockquote>
+<p><strong>STEP 2 - Add a client secret for application in Microsoft Entra ID</strong></p>
+<p>Sometimes called an application password, a client secret is a string value required for the execution of the Cyjax IOC Data Connector. Follow the steps in this section to create a new Client Secret:
+1. In the Azure portal, in <strong>App registrations</strong>, select your application.
+2. Select <strong>Certificates &amp; secrets &gt; Client secrets &gt; New client secret</strong>.
+3. Add a description for your client secret.
+4. Select an expiration for the secret or specify a custom lifetime. Limit is 24 months.
+5. Select <strong>Add</strong>.
+6. <em>Record the secret's value for use in your client application code. This secret value is never displayed again after you leave this page.</em> The secret value is required as configuration parameter for the execution of the Cyjax IOC Data Connector.</p>
+<blockquote>
+<p><strong>Reference link:</strong> <a href="https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret">https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret</a></p>
+</blockquote>
+<p><strong>STEP 3 - Assign Microsoft Sentinel Contributor Role</strong></p>
+<p>Assign the <strong>Microsoft Sentinel Contributor</strong> role to the App Registration to allow it to upload threat intelligence indicators:
+1. Go to the <strong>Log Analytics workspace</strong> associated with your Microsoft Sentinel instance.
+2. Select <strong>Access control (IAM)</strong> from the left menu.
+3. Click <strong>Add &gt; Add role assignment</strong>.
+4. Search for <strong>Microsoft Sentinel Contributor</strong> and select it.
+5. Under <strong>Members</strong>, select <strong>User, group, or service principal</strong> and search for your App Registration name.
+6. Select the app and click <strong>Review + assign</strong>.</p>
+<p><strong>STEP 4 - Obtain Cyjax API Credentials</strong></p>
+<p>Contact Cyjax to obtain your API v2 access token (Bearer Token). This token is used to authenticate requests to the Cyjax IOC and enrichment endpoints.</p>
+<p><strong>STEP 5 - Deploy the Cyjax IOC Connector</strong></p>
+<blockquote>
+<p><strong>IMPORTANT:</strong> Before deploying the Cyjax IOC connector, have the Cyjax API access token, Azure App Registration credentials (Client ID, Client Secret, Tenant ID), and Workspace ID readily available.
+- <strong>Workspace ID</strong>: <code>WorkspaceId</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+<p><strong>8. Option 1 - Azure Resource Manager (ARM) Template</strong></p>
+<p>Use this method for automated deployment of the Cyjax IOC Data Connector.</p>
+<ol>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below.</p>
+<p><a href="https://aka.ms/sentinel-CyjaxIOC-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://aka.ms/sentinel-CyjaxIOC-azuredeploy-gov"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a>
+2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Region</strong>.
+3. Enter the below information:</p>
+<p>a. <strong>FunctionName</strong> - Enter a unique Function App name (max 11 characters)</p>
+<p>b. <strong>Location</strong> - The location for data collection rules and endpoints deployment</p>
+<p>c. <strong>WorkspaceID</strong> - Enter the Log Analytics Workspace ID</p>
+<p>d. <strong>AzureClientID</strong> - Enter Azure Client ID from your App Registration</p>
+<p>e. <strong>AzureClientSecret</strong> - Enter Azure Client Secret from your App Registration</p>
+<p>f. <strong>AzureTenantID</strong> - Enter Azure Tenant ID</p>
+<p>g. <strong>CyjaxBaseURL</strong> - Enter Cyjax API v2 Base URL (default: https://api.cymon.co/v2)</p>
+<p>h. <strong>CyjaxAccessToken</strong> - Enter Cyjax API Bearer Token</p>
+<p>i. <strong>LookbackDays</strong> - Number of days to look back on first run (default: 1)</p>
+<p>j. <strong>EnableEnrichment</strong> - Set to true to enrich IOCs with GeoIP, ASN, and sighting data. Set to false to skip enrichment and reduce API calls and execution time (default: true)</p>
+<p>k. <strong>IOCQuery</strong> - Optional free-text search query to filter IOCs from the Cyjax API (e.g. a keyword, threat actor, or campaign name). Leave empty to fetch all available IOCs</p>
+<p>l. <strong>IndicatorType</strong> - Filter IOCs by type. Enter comma-separated values (e.g., URL,Domain,IPv4). Supported types: URL, Domain, IPv4, IPv6, Hostname, Email, FileHash-SHA1, FileHash-SHA256, FileHash-MD5, FileHash-SSDEEP. Leave empty to fetch all types</p>
+<p>m. <strong>Schedule</strong> - Enter a valid Quartz Cron-Expression (default: every 10 minutes)</p>
+<p>n. <strong>LogLevel</strong> - Set the log level (default: Info)</p>
+<p>o. <strong>AppInsightsWorkspaceResourceID</strong> - Enter the Application Insights Workspace Resource ID</p>
+</li>
+<li>
+<p>Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>.</p>
+</li>
+<li>Click <strong>Purchase</strong> to deploy.</li>
+</ol>
+<p><strong>9. Option 2 - Manual Deployment of Azure Functions</strong></p>
+<p>Use the following step-by-step instructions to deploy the Cyjax IOC data connector manually with Azure Functions (Deployment via Visual Studio Code).</p>
+<p><strong>1. Deploy a Function App</strong></p>
+<blockquote>
+<p><strong>NOTE:</strong> You will need to <a href="https://docs.microsoft.com/azure/azure-functions/functions-create-first-function-python#prerequisites">prepare VS code</a> for Azure function development.</p>
+</blockquote>
+<ol>
+<li>Download the <a href="https://aka.ms/sentinel-CyjaxIOC-functionapp">Azure Function App</a> file. Extract archive to your local development computer.</li>
+<li>Start VS Code. Choose File in the main menu and select Open Folder.</li>
+<li>Select the top level folder from extracted files.</li>
+<li>Choose the Azure icon in the Activity bar, then in the <strong>Azure: Functions</strong> area, choose the <strong>Deploy to function app</strong> button.
+If you aren't already signed in, choose the Azure icon in the Activity bar, then in the <strong>Azure: Functions</strong> area, choose <strong>Sign in to Azure</strong>
+If you're already signed in, go to the next step.</li>
+<li>
+<p>Provide the following information at the prompts:</p>
+<p>a. <strong>Select folder:</strong> Choose a folder from your workspace or browse to one that contains your function app.</p>
+<p>b. <strong>Select Subscription:</strong> Choose the subscription to use.</p>
+<p>c. Select <strong>Create new Function App in Azure</strong> (Don't choose the Advanced option)</p>
+<p>d. <strong>Enter a globally unique name for the function app:</strong> Type a name that is valid in a URL path. The name you type is validated to make sure that it's unique in Azure Functions. (e.g. CYJAXXXXXX).</p>
+<p>e. <strong>Select a runtime:</strong> Choose Python 3.12</p>
+<p>f. Select a location for new resources. For better performance and lower costs choose the same <a href="https://azure.microsoft.com/regions/">region</a> where Microsoft Sentinel is located.</p>
+</li>
+<li>
+<p>Deployment will begin. A notification is displayed after your function app is created and the deployment package is applied.</p>
+</li>
+<li>Go to Azure Portal for the Function App configuration.</li>
+</ol>
+<p><strong>2. Configure the Function App</strong></p>
+<ol>
+<li>In the Function App, select the Function App Name and select <strong>Configuration</strong>.</li>
+<li>In the <strong>Application settings</strong> tab, select <strong>+ New application setting</strong>.</li>
+<li>
+<p>Add each of the following application settings individually, with their respective values (case-sensitive):</p>
+<ul>
+<li>
+<p><strong>WorkspaceID</strong> - Your Log Analytics Workspace ID</p>
+</li>
+<li>
+<p><strong>AzureClientID</strong> - Azure Client ID from your App Registration</p>
+</li>
+<li>
+<p><strong>AzureClientSecret</strong> - Azure Client Secret from your App Registration</p>
+</li>
+<li>
+<p><strong>AzureTenantID</strong> - Your Azure Tenant ID</p>
+</li>
+<li>
+<p><strong>CyjaxBaseURL</strong> - Cyjax API v2 Base URL (default: https://api.cymon.co/v2)</p>
+</li>
+<li>
+<p><strong>CyjaxAccessToken</strong> - Your Cyjax API Bearer Token</p>
+</li>
+<li>
+<p><strong>LookbackDays</strong> - Number of days to look back on first run (default: 1)</p>
+</li>
+<li>
+<p><strong>EnableEnrichment</strong> - Set to true to enrich IOCs with GeoIP, ASN, and sighting data. Set to false to skip enrichment and reduce API calls and execution time (default: true)</p>
+</li>
+<li>
+<p><strong>IOCQuery</strong> - Optional free-text search query to filter IOCs from the Cyjax API (e.g. a keyword, threat actor, or campaign name). Leave empty to fetch all available IOCs (optional)</p>
+</li>
+<li>
+<p><strong>IndicatorType</strong> - Filter IOCs by type. Enter comma-separated values (e.g., URL,Domain,IPv4). Supported types: URL, Domain, IPv4, IPv6, Hostname, Email, FileHash-SHA1, FileHash-SHA256, FileHash-MD5, FileHash-SSDEEP. Leave empty to fetch all types (optional)</p>
+</li>
+<li>
+<p><strong>Schedule</strong> - Quartz Cron-Expression (default: every 10 minutes)</p>
+</li>
+<li>
+<p><strong>LogLevel</strong> - Log level (default: Info)</p>
+</li>
+<li>
+<p><strong>AppInsightsWorkspaceResourceID</strong> - Application Insights Workspace Resource ID (optional)</p>
+</li>
+<li>
+<p><strong>logAnalyticsUri</strong> (optional) - Use logAnalyticsUri to override the log analytics API endpoint for dedicated cloud. For example, for public cloud, leave the value empty; for Azure GovUS cloud environment, specify the value in the following format: <code>https://&lt;CustomerId&gt;.ods.opinsights.azure.us</code>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Once all application settings have been entered, click <strong>Save</strong>.</p>
+</li>
+</ol>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyjax\Data Connectors\README.md">Cyjax\Data Connectors\README.md</a></em></p>
+</blockquote>
+<h1 id="cyjax-ioc-data-connector-for-microsoft-sentinel">Cyjax IOC Data Connector for Microsoft Sentinel</h1>
+<p>This directory contains the Cyjax IOC (Indicators of Compromise) Data Connector for Microsoft Sentinel, which enables ingestion of threat intelligence indicators from the Cyjax API v2 into Microsoft Sentinel.</p>
+<h2 id="overview">Overview</h2>
+<p>The Cyjax IOC Data Connector provides the capability to:
+- Ingest IOCs from Cyjax API v2 into Microsoft Sentinel as STIX 2.1 Threat Intelligence indicators
+- Fetch various types of IOCs including IPs, domains, URLs, file hashes, emails, and hostnames
+- Enrich IOCs with GeoIP, ASN, and sighting data
+- Upload indicators to Microsoft Sentinel via the Upload Indicator API
+- Support automated IOC collection with configurable schedules
+- Incremental fetching with checkpoint management</p>
+<h2 id="files-in-this-directory">Files in this Directory</h2>
+<h3 id="configuration-files">Configuration Files</h3>
+<ul>
+<li><code>CyjaxIOC_API_FunctionApp.json</code> - Microsoft Sentinel data connector definition file</li>
+<li><code>azuredeploy_Connector_CyjaxIOC_AzureFunction.json</code> - ARM template for automated deployment</li>
+</ul>
+<h3 id="source-code">Source Code</h3>
+<ul>
+<li><code>CyjaxIOCIngestion/</code> - Azure Function source code for the connector</li>
+<li><code>SharedCode/</code> - Shared utility code and libraries</li>
+</ul>
+<h3 id="function-app-configuration">Function App Configuration</h3>
+<ul>
+<li><code>host.json</code> - Azure Functions host configuration</li>
+<li><code>requirements.txt</code> - Python dependencies for the Azure Function</li>
+</ul>
+<h2 id="prerequisites">Prerequisites</h2>
+<ol>
+<li><strong>Azure Subscription</strong> with owner role to register applications and assign roles</li>
+<li><strong>Microsoft Sentinel</strong> workspace with appropriate permissions</li>
+<li><strong>Cyjax API v2</strong> access token (Bearer Token)</li>
+<li><strong>Azure App Registration</strong> with the following:
+   - Application (Client) ID
+   - Tenant ID
+   - Client Secret</li>
+</ol>
+<h2 id="deployment-options">Deployment Options</h2>
+<h3 id="option-1-automated-deployment-via-arm-template">Option 1: Automated Deployment via ARM Template</h3>
+<ol>
+<li>Click the "Deploy to Azure" button in the Microsoft Sentinel portal</li>
+<li>Provide the following parameters:
+   - <strong>FunctionName</strong>: Unique Function App name (max 11 characters)
+   - <strong>Location</strong>: Region for deployment
+   - <strong>WorkspaceID</strong>: Log Analytics Workspace ID
+   - <strong>AzureClientID</strong>: Azure Client ID from App Registration
+   - <strong>AzureClientSecret</strong>: Azure Client Secret from App Registration
+   - <strong>AzureTenantID</strong>: Azure Tenant ID
+   - <strong>CyjaxBaseURL</strong>: Cyjax API v2 Base URL (default: https://api.cymon.co/v2)
+   - <strong>CyjaxAccessToken</strong>: Cyjax API Bearer Token
+   - <strong>LookbackDays</strong>: Days to look back on first run (default: 1)
+   - <strong>EnableEnrichment</strong>: Set to <code>true</code> to enrich IOCs with GeoIP, ASN, and sighting data. Set to <code>false</code> to skip enrichment and reduce API calls and execution time (default: <code>true</code>)
+   - <strong>IOCQuery</strong>: Optional free-text search query to filter IOCs from the Cyjax API (e.g. a keyword, threat actor, or campaign name). Leave empty to fetch all available IOCs
+   - <strong>IndicatorType</strong>: Filter IOCs by type. Enter comma-separated values (e.g., URL,Domain,IPv4). Supported types: URL, Domain, IPv4, IPv6, Hostname, Email, FileHash-SHA1, FileHash-SHA256, FileHash-MD5, FileHash-SSDEEP. Leave empty to fetch all types
+   - <strong>Schedule</strong>: Quartz Cron-Expression (default: every 10 minutes)
+   - <strong>LogLevel</strong>: Log level (default: Info)
+   - <strong>AppInsightsWorkspaceResourceID</strong>: Application Insights Workspace Resource ID (optional)</li>
+</ol>
+<h3 id="option-2-manual-deployment-via-visual-studio-code">Option 2: Manual Deployment via Visual Studio Code</h3>
+<ol>
+<li>Deploy the Function App using VS Code</li>
+<li>Configure application settings in Azure Portal</li>
+<li>Required application settings:
+   - <code>WorkspaceID</code>: Your Log Analytics Workspace ID
+   - <code>AzureClientID</code>: Azure Client ID from App Registration
+   - <code>AzureClientSecret</code>: Azure Client Secret from App Registration
+   - <code>AzureTenantID</code>: Your Azure Tenant ID
+   - <code>CyjaxBaseURL</code>: Cyjax API v2 Base URL
+   - <code>CyjaxAccessToken</code>: Your Cyjax API Bearer Token
+   - <code>LookbackDays</code>: Number of days to look back (default: 1)
+   - <code>ENABLE_ENRICHMENT</code>: Set to <code>true</code> to enrich IOCs with GeoIP, ASN, and sighting data. Set to <code>false</code> to skip enrichment (default: <code>true</code>)
+   - <code>IOC_QUERY</code>: Optional free-text search query to filter IOCs (e.g. keyword, threat actor, campaign name). Leave empty for no filter (optional)
+   - <code>Indicator_Type</code>: Filter IOCs by type. Enter comma-separated values (e.g., URL,Domain,IPv4). Supported types: URL, Domain, IPv4, IPv6, Hostname, Email, FileHash-SHA1, FileHash-SHA256, FileHash-MD5, FileHash-SSDEEP. Leave empty to fetch all types (optional)
+   - <code>Schedule</code>: Quartz Cron-Expression
+   - <code>LogLevel</code>: Log level (Info/Debug/Error/Warning)
+   - <code>AppInsightsWorkspaceResourceID</code>: Application Insights Workspace Resource ID (optional)
+   - <code>logAnalyticsUri</code>: Log Analytics API endpoint override (optional)</li>
+</ol>
+<h2 id="configuration-steps">Configuration Steps</h2>
+<h3 id="1-app-registration-in-microsoft-entra-id">1. App Registration in Microsoft Entra ID</h3>
+<ol>
+<li>Sign in to the <a href="https://portal.azure.com/">Azure portal</a></li>
+<li>Navigate to <strong>Microsoft Entra ID</strong> → <strong>App registrations</strong> → <strong>New registration</strong></li>
+<li>Enter a display name for your application</li>
+<li>Select <strong>Register</strong></li>
+<li>Note the <strong>Application (client) ID</strong> and <strong>Tenant ID</strong></li>
+</ol>
+<h3 id="2-add-client-secret">2. Add Client Secret</h3>
+<ol>
+<li>In your app registration, go to <strong>Certificates &amp; secrets</strong> → <strong>Client secrets</strong></li>
+<li>Click <strong>New client secret</strong></li>
+<li>Add a description and expiration</li>
+<li>Select <strong>Add</strong> and copy the secret value immediately</li>
+</ol>
+<h3 id="3-assign-microsoft-sentinel-contributor-role">3. Assign Microsoft Sentinel Contributor Role</h3>
+<ol>
+<li>Go to your Log Analytics workspace</li>
+<li>Select <strong>Access control (IAM)</strong> → <strong>Add role assignment</strong></li>
+<li>Choose <strong>Microsoft Sentinel Contributor</strong> role</li>
+<li>Select your app registration as the member</li>
+<li>Click <strong>Review + assign</strong></li>
+</ol>
+<h3 id="4-obtain-cyjax-api-credentials">4. Obtain Cyjax API Credentials</h3>
+<p>Contact Cyjax to obtain your API v2 access token (Bearer Token)</p>
+<h2 id="data-types">Data Types</h2>
+<p>The connector ingests data into the following table:
+- <strong>ThreatIntelIndicators</strong> - Microsoft Sentinel's built-in threat intelligence table</p>
+<h2 id="monitoring-and-troubleshooting">Monitoring and Troubleshooting</h2>
+<h3 id="monitoring">Monitoring</h3>
+<ul>
+<li>Use Application Insights to monitor function execution</li>
+<li>Check the Azure Function logs for errors and warnings</li>
+<li>Monitor data ingestion in Microsoft Sentinel</li>
+</ul>
+<h3 id="common-issues">Common Issues</h3>
+<ol>
+<li><strong>Authentication failures</strong>: Verify Azure App credentials and Cyjax API token</li>
+<li><strong>Permission errors</strong>: Ensure Microsoft Sentinel Contributor role is assigned</li>
+<li><strong>Data not appearing</strong>: Check function logs and verify schedule configuration</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+</div>
+
+</body>
+</html>

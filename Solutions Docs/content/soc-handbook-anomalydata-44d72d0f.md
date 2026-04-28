@@ -20,8 +20,8 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ | ? |
 | [`HuntingBookmark`](../tables/huntingbookmark.md) | ✓ | ✗ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
-| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ | ✓ |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
+| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ | ? |
 
 ---
 

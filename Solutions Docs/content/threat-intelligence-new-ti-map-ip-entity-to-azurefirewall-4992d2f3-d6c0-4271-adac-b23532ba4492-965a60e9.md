@@ -26,10 +26,10 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) | ✓ | ✗ | ✓ |
-| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) | ✓ | ✗ | ✓ |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | ✗ | ✗ | ✗ |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✓ | ✗ |
+| [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) | ✓ | ✗ | ? |
+| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) | ✓ | ✗ | ? |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | ? | ✗ | ? |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✓ | ? |
 
 ---
 

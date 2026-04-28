@@ -6,18 +6,6 @@
 
 ---
 
-| Attribute | Value |
-|:----------|:------|
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
-| **Ingestion API Supported** | ✓ Yes |
-
-## Contents
-
-- [Schema](#schema)
-- [Solutions](#solutions)
-- [Connectors](#connectors)
-- [Content Items](#content-items-using-this-table)
-
 ## Schema (52 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Gigamon_CL.json)
@@ -77,31 +65,7 @@
 | uri_filepath_s | string |
 | uri_filetype_s | string |
 
-## Solutions (1)
-
-This table is used by the following solutions:
-
-- [Gigamon Connector](../solutions/gigamon-connector.md)
-
-## Connectors (1)
-
-This table is ingested by the following connectors:
-
-| Connector | Selection Criteria |
-|:----------|:-------------------|
-| [Gigamon AMX Data Connector](../connectors/gigamondataconnector.md) |  |
-
 ---
-
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**In solution [Gigamon Connector](../solutions/gigamon-connector.md):**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [Gigamon](../content/gigamon-connector-gigamon-07ba033c.md) |  |
 
 ---
 

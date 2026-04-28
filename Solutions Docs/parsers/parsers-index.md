@@ -8,7 +8,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 
 ---
 
-**552 parsers** (35 legacy, 489 solution, 28 discovered). See [📊 Statistics](../statistics.md) for detailed breakdowns.
+**564 parsers** (35 legacy, 493 solution, 36 discovered). See [📊 Statistics](../statistics.md) for detailed breakdowns.
 
 *Legacy parsers are located in the top-level `/Parsers` folder. Solution parsers are included within specific solution packages.*
 
@@ -95,14 +95,9 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [ArmisAlerts](armisalerts.md) | 📦 [Armis](../solutions/armis.md) | Armis_Alerts_CL |
 | [ArmisDevice](armisdevice.md) | 📦 [Armis](../solutions/armis.md) | Armis_Devices_CL |
 | [ArubaClearPass](arubaclearpass.md) | 📦 [Aruba ClearPass](../solutions/aruba-clearpass.md) | CommonSecurityLog |
-| [ASimAuthenticationHalcyon](asimauthenticationhalcyon.md) | 📦 [Halcyon](../solutions/halcyon.md) | HalcyonAuthenticationEvents_CL |
 | [ASimAuthenticationOpenSystems](asimauthenticationopensystems.md) ⚠️ | 📦 [Open Systems](../solutions/open-systems.md) | OpenSystemsAuthenticationLogs_CL |
-| [ASimDnsHalcyon](asimdnshalcyon.md) | 📦 [Halcyon](../solutions/halcyon.md) | HalcyonDnsActivity_CL |
 | [ASimDnsMicrosoftNXLog](asimdnsmicrosoftnxlog.md) | 📦 [NXLogDNSLogs](../solutions/nxlogdnslogs.md) | ? |
-| [ASimFileEventHalcyon](asimfileeventhalcyon.md) | 📦 [Halcyon](../solutions/halcyon.md) | HalcyonFileActivity_CL |
-| [ASimNetworkSessionHalcyon](asimnetworksessionhalcyon.md) | 📦 [Halcyon](../solutions/halcyon.md) | HalcyonNetworkSession_CL |
 | [ASimNetworkSessionOpenSystemsFirewall](asimnetworksessionopensystemsfirewall.md) ⚠️ | 📦 [Open Systems](../solutions/open-systems.md) | OpenSystemsFirewallLogs_CL |
-| [ASimProcessEventHalcyon](asimprocesseventhalcyon.md) | 📦 [Halcyon](../solutions/halcyon.md) | HalcyonProcessEvent_CL |
 | [ASimWebSessionOpenSystemsSecureWebGateway](asimwebsessionopensystemssecurewebgateway.md) ⚠️ | 📦 [Open Systems](../solutions/open-systems.md) | OpenSystemsProxyLogs_CL |
 | [AssignedIPAddress](assignedipaddress.md) | 📦 [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md) | DeviceNetworkInfo |
 | [Auth0](auth0.md) | 📦 [Auth0](../solutions/auth0.md) | Auth0AM_CL, Auth0_CL |
@@ -111,6 +106,9 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [AwarenessSafeScore](awarenesssafescore.md) | 📦 [Mimecast](../solutions/mimecast.md) | Awareness_SafeScore_Details_CL |
 | [AwarenessUserData](awarenessuserdata.md) | 📦 [Mimecast](../solutions/mimecast.md) | Awareness_User_Data_CL |
 | [AwarenessWatchlist](awarenesswatchlist.md) | 📦 [Mimecast](../solutions/mimecast.md) | Awareness_Watchlist_Details_CL |
+| [AWSALBAccessLogsData](awsalbaccesslogsdata.md) | 📦 [AWS ELB](../solutions/aws-elb.md) | AWSALBAccessLogs, AWSALBAccessLogs_CL |
+| [AWSELBFlowLogsData](awselbflowlogsdata.md) | 📦 [AWS ELB](../solutions/aws-elb.md) | AWSELBFlowLogs, AWSELBFlowLogs_CL |
+| [AWSNLBAccessLogsData](awsnlbaccesslogsdata.md) | 📦 [AWS ELB](../solutions/aws-elb.md) | AWSNLBAccessLogs, AWSNLBAccessLogs_CL |
 | [AzureFirewallApplicationRule](azurefirewallapplicationrule.md) | 📂 *Legacy* | AzureDiagnostics |
 | [AzureFirewallDnsProxy](azurefirewalldnsproxy.md) | 📂 *Legacy* | ? |
 | [AzureFirewallNetworkRule](azurefirewallnetworkrule.md) | 📂 *Legacy* | AzureDiagnostics |
@@ -139,6 +137,12 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | Parser | Source | Tables |
 |:-------|:-------|:-------|
 | [CassandraAuditLog](cassandraauditlog.md) | 📂 *Legacy* | CassandraAuditLog_CL |
+| [CBS_BreachedCredentials](cbs-breachedcredentials.md) ⚠️ | 📦 [CTM360](../solutions/ctm360.md) | CBS_BreachedCredentials_AzureV2_CL, CBS_BreachedCredentials_CL |
+| [CBS_CompromisedCards](cbs-compromisedcards.md) ⚠️ | 📦 [CTM360](../solutions/ctm360.md) | CBS_CompromisedCards_AzureV2_CL, CBS_CompromisedCards_CL |
+| [CBS_DomainInfringement](cbs-domaininfringement.md) ⚠️ | 📦 [CTM360](../solutions/ctm360.md) | CBS_DomainInfringement_AzureV2_CL, CBS_DomainInfringement_CL |
+| [CBS_MalwareLogs](cbs-malwarelogs.md) ⚠️ | 📦 [CTM360](../solutions/ctm360.md) | CBS_MalwareLogs_AzureV2_CL, CBS_MalwareLogs_CL |
+| [CBS_SubdomainInfringement](cbs-subdomaininfringement.md) ⚠️ | 📦 [CTM360](../solutions/ctm360.md) | CBS_SubdomainInfringement_AzureV2_CL, CBS_SubdomainInfringement_CL |
+| [CBSLog](cbslog.md) ⚠️ | 📦 [CTM360](../solutions/ctm360.md) | CBSLog_AzureV2_CL, CBSLog_Azure_1_CL |
 | [CGFWFirewallActivity](cgfwfirewallactivity.md) | 📦 [Barracuda CloudGen Firewall](../solutions/barracuda-cloudgen-firewall.md) | Syslog |
 | [Cisco_Umbrella](cisco-umbrella.md) | 📦 [CiscoUmbrella](../solutions/ciscoumbrella.md) | Cisco_Umbrella_audit_CL, Cisco_Umbrella_cloudfirewall_CL, ... |
 | [CiscoACIEvent](ciscoacievent.md) | 📦 [Cisco ACI](../solutions/cisco-aci.md) | Syslog |
@@ -158,8 +162,8 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [Cloudflare](cloudflare.md) | 📦 [Cloudflare](../solutions/cloudflare.md) | CloudflareV2_CL, Cloudflare_CL |
 | [Cloudflare](cloudflare.md) | 📦 [Cloudflare CCF](../solutions/cloudflare-ccf.md) | CloudflareV2_CL, Cloudflare_CL |
 | [ConfluenceAudit](confluenceaudit.md) | 📦 [AtlassianConfluenceAudit](../solutions/atlassianconfluenceaudit.md) | Confluence_Audit_CL |
-| [ContrastADR](contrastadr.md) | 📦 [ContrastADR](../solutions/contrastadr.md) | ContrastADR_CL |
-| [ContrastADR_Incident](contrastadr-incident.md) | 📦 [ContrastADR](../solutions/contrastadr.md) | ContrastADRIncident_CL |
+| [ContrastADR](contrastadr.md) | 📦 [ContrastADR](../solutions/contrastadr.md) | ContrastADRAttackEvents_CL |
+| [ContrastADR_Incident](contrastadr-incident.md) | 📦 [ContrastADR](../solutions/contrastadr.md) | ContrastADRIncidents_CL |
 | [Corelight](corelight.md) | 📦 [Corelight](../solutions/corelight.md) | ? |
 | [corelight_anomaly](corelight-anomaly.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_anomaly_CL |
 | [corelight_bacnet](corelight-bacnet.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_bacnet_CL |
@@ -283,15 +287,18 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [corelight_x509_red](corelight-x509-red.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_x509_red_CL |
 | [corelight_zeek_doctor](corelight-zeek-doctor.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_zeek_doctor_CL |
 | [CortexXDR_Incidents_CL](cortexxdr-incidents-cl.md) | 📦 [Cortex XDR](../solutions/cortex-xdr.md) | CortexXDR_Incidents_CL, PaloAltoCortexXDR_Incidents_CL |
+| [CPEMAlerts](cpemalerts.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | argsentdc_CL |
 | [CriblAccess](criblaccess.md) | 📦 [Cribl](../solutions/cribl.md) | CriblAccess_CL |
 | [CriblAudit](criblaudit.md) | 📦 [Cribl](../solutions/cribl.md) | CriblAudit_CL |
 | [CriblInternal](criblinternal.md) | 📦 [Cribl](../solutions/cribl.md) | CriblInternal_CL |
 | [CriblUIAccess](cribluiaccess.md) | 📦 [Cribl](../solutions/cribl.md) | CriblUIAccess_CL |
 | [CrowdStrikeFalconEventStream](crowdstrikefalconeventstream.md) | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | CommonSecurityLog |
-| [CrowdStrikeReplicator](crowdstrikereplicator.md) | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | CrowdStrikeReplicatorV2, CrowdstrikeReplicatorLogs_CL |
-| [CrowdStrikeReplicator](crowdstrikereplicator.md) ⚠️ | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | CrowdStrikeReplicatorV2, CrowdstrikeReplicatorLogs_CL |
+| [CrowdStrikeReplicator](crowdstrikereplicator.md) | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | CrowdstrikeReplicatorLogs_CL |
+| [CrowdStrikeReplicator](crowdstrikereplicator.md) ⚠️ | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | CrowdstrikeReplicatorLogs_CL |
 | [CrowdStrikeReplicatorV2](crowdstrikereplicatorv2.md) | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | ASimAuditEventLogs, ASimAuthenticationEventLogs, ... |
 | [CyberArkEPM](cyberarkepm.md) | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) | CyberArkEPM_CL |
+| [CyjaxCorrelate](cyjaxcorrelate.md) | 📦 [Cyjax](../solutions/cyjax.md) | ThreatIntelIndicators |
+| [CyjaxThreatIndicator](cyjaxthreatindicator.md) | 📦 [Cyjax](../solutions/cyjax.md) | ThreatIntelIndicators |
 | [CylancePROTECT](cylanceprotect.md) | 📦 [Blackberry CylancePROTECT](../solutions/blackberry-cylanceprotect.md) | Syslog, syslog |
 | [CylancePROTECT-old](cylanceprotect-old.md) ⚠️ | 📦 [Blackberry CylancePROTECT](../solutions/blackberry-cylanceprotect.md) | Syslog |
 | [CymruScoutAccountUsage](cymruscoutaccountusage.md) | 📦 [Team Cymru Scout](../solutions/team-cymru-scout.md) | Cymru_Scout_Account_Usage_Data_CL |
@@ -327,6 +334,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [DataminrPulseCyberAlerts](dataminrpulsecyberalerts.md) | 📦 [Dataminr Pulse](../solutions/dataminr-pulse.md) | DataminrPulse_Alerts_CL, watchlist |
 | [DataverseSharePointSites](dataversesharepointsites.md) | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) | ? |
 | [DefendAuditData](defendauditdata.md) ⚠️ | 📦 [Egress Defend](../solutions/egress-defend.md) | EgressDefend_CL |
+| [DefendAuditData](defendauditdata.md) | 📦 [KnowBe4 Defend](../solutions/knowbe4-defend.md) | KnowBe4Defend_CL |
 | [Devicefromip](devicefromip.md) | 📦 [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md) | DeviceNetworkInfo |
 | [DigitalGuardianDLPEvent](digitalguardiandlpevent.md) | 📦 [Digital Guardian Data Loss Prevention](../solutions/digital-guardian-data-loss-prevention.md) | Syslog |
 | [DomainToolsDNSActivity](domaintoolsdnsactivity.md) | 📦 [DomainTools](../solutions/domaintools.md) | DomainToolsDomainEnrichment_CL |
@@ -341,10 +349,10 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [DuoSecurityOfflineEnrollment](duosecurityofflineenrollment.md) | 📂 *Legacy* | DuoSecurityOfflineEnrollment_CL |
 | [DuoSecurityTelephony](duosecuritytelephony.md) | 📂 *Legacy* | DuoSecurityTelephony_CL |
 | [DuoSecurityTrustMonitor](duosecuritytrustmonitor.md) | 📂 *Legacy* | DuoSecurityTrustMonitor_CL |
-| [DynatraceAttacks](dynatraceattacks.md) | 📦 [Dynatrace](../solutions/dynatrace.md) | DynatraceAttacks_CL |
-| [DynatraceAuditLogs](dynatraceauditlogs.md) | 📦 [Dynatrace](../solutions/dynatrace.md) | DynatraceAuditLogs_CL |
-| [DynatraceProblems](dynatraceproblems.md) | 📦 [Dynatrace](../solutions/dynatrace.md) | DynatraceProblems_CL |
-| [DynatraceSecurityProblems](dynatracesecurityproblems.md) | 📦 [Dynatrace](../solutions/dynatrace.md) | DynatraceSecurityProblems_CL |
+| [DynatraceAttacks](dynatraceattacks.md) | 📦 [Dynatrace](../solutions/dynatrace.md) | DynatraceAttacksV2_CL, DynatraceAttacks_CL |
+| [DynatraceAuditLogs](dynatraceauditlogs.md) | 📦 [Dynatrace](../solutions/dynatrace.md) | DynatraceAuditLogsV2_CL, DynatraceAuditLogs_CL |
+| [DynatraceProblems](dynatraceproblems.md) | 📦 [Dynatrace](../solutions/dynatrace.md) | DynatraceProblemsV2_CL, DynatraceProblems_CL |
+| [DynatraceSecurityProblems](dynatracesecurityproblems.md) | 📦 [Dynatrace](../solutions/dynatrace.md) | DynatraceSecurityProblemsV2_CL, DynatraceSecurityProblems_CL |
 
 ## E
 
@@ -391,6 +399,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [GitHubCodeScanningData](githubcodescanningdata.md) | 📦 [GitHub](../solutions/github.md) | githubscanaudit_CL |
 | [GitHubDependabotData](githubdependabotdata.md) | 📦 [GitHub](../solutions/github.md) | githubscanaudit_CL |
 | [GitHubRepo](githubrepo.md) | 📂 *Legacy* | GitHubRepoLogs_CL |
+| [githubscanaudit](githubscanaudit.md) | 📦 [GitHub](../solutions/github.md) | GitHubAdvancedSecurityAlerts_CL, githubscanaudit_CL |
 | [GitHubSecretScanningData](githubsecretscanningdata.md) | 📦 [GitHub](../solutions/github.md) | githubscanaudit_CL |
 | [GitLabAccess](gitlabaccess.md) | 📦 [GitLab](../solutions/gitlab.md) | Syslog |
 | [GitLabApp](gitlabapp.md) | 📦 [GitLab](../solutions/gitlab.md) | Syslog |
@@ -402,6 +411,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 
 | Parser | Source | Tables |
 |:-------|:-------|:-------|
+| [HackerViewLog](hackerviewlog.md) ⚠️ | 📦 [CTM360](../solutions/ctm360.md) | HackerViewLog_AzureV2_CL, HackerViewLog_Azure_1_CL |
 | [HYASProtectDNSActivity](hyasprotectdnsactivity.md) | 📦 [HYAS Protect](../solutions/hyas-protect.md) | HYASProtectDnsSecurityLogs_CL |
 
 ## I
@@ -412,7 +422,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [IllumioCoreEvent](illumiocoreevent.md) | 📦 [Illumio Core](../solutions/illumio-core.md) | CommonSecurityLog |
 | [IllumioSyslogAuditEvents](illumiosyslogauditevents.md) | 📦 [IllumioSaaS](../solutions/illumiosaas.md) | Syslog |
 | [IllumioSyslogNetworkTrafficEvents](illumiosyslognetworktrafficevents.md) | 📦 [IllumioSaaS](../solutions/illumiosaas.md) | IllumioFlowEventsV2_CL, Syslog |
-| [ImpervaWAFCloud](impervawafcloud.md) | 📦 [ImpervaCloudWAF](../solutions/impervacloudwaf.md) | ImpervaWAFCloudV2_CL, ImpervaWAFCloud_CL |
+| [ImpervaWAFCloud](impervawafcloud.md) | 📦 [ImpervaCloudWAF](../solutions/impervacloudwaf.md) | ImpervaWAFCloudV2_CL, ImpervaWAFCloud_CL, ... |
 | [Infoblox](infoblox.md) | 📦 [Infoblox NIOS](../solutions/infoblox-nios.md) | ? |
 | [Infoblox_allotherdhcpdTypes](infoblox-allotherdhcpdtypes.md) | 📦 [Infoblox NIOS](../solutions/infoblox-nios.md) | Syslog |
 | [Infoblox_allotherdnsTypes](infoblox-allotherdnstypes.md) | 📦 [Infoblox NIOS](../solutions/infoblox-nios.md) | Syslog |
@@ -449,8 +459,8 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [InfobloxInsightIndicators](infobloxinsightindicators.md) | 📦 [Infoblox](../solutions/infoblox.md) | InfobloxInsightIndicators_CL |
 | [InfobloxInsightIndicators](infobloxinsightindicators.md) | 📦 [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md) | InfobloxInsightIndicators_CL |
 | [InfobloxNIOS](infobloxnios.md) | 📂 *Legacy* | Syslog |
-| [InsightVMAssets](insightvmassets.md) | 📦 [Rapid7InsightVM](../solutions/rapid7insightvm.md) | NexposeInsightVMCloud_assets_CL |
-| [InsightVMVulnerabilities](insightvmvulnerabilities.md) | 📦 [Rapid7InsightVM](../solutions/rapid7insightvm.md) | NexposeInsightVMCloud_vulnerabilities_CL |
+| [InsightVMAssets](insightvmassets.md) | 📦 [Rapid7InsightVM](../solutions/rapid7insightvm.md) | NexposeInsightVMCloud_assets_CL, Rapid7InsightVMCloudAssets |
+| [InsightVMVulnerabilities](insightvmvulnerabilities.md) | 📦 [Rapid7InsightVM](../solutions/rapid7insightvm.md) | NexposeInsightVMCloud_vulnerabilities_CL, Rapid7InsightVMCloudVulnerabilities |
 | [ISCBind](iscbind.md) | 📦 [ISC Bind](../solutions/isc-bind.md) | Syslog |
 | [IvantiUEMEvent](ivantiuemevent.md) | 📦 [Ivanti Unified Endpoint Management](../solutions/ivanti-unified-endpoint-management.md) | Syslog |
 
@@ -483,7 +493,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 |:-------|:-------|:-------|
 | [MapNetflowUsername](mapnetflowusername.md) ⚠️ | 📦 [Cisco SD-WAN](../solutions/cisco-sd-wan.md) | ? |
 | [MarkLogicAudit](marklogicaudit.md) | 📦 [MarkLogicAudit](../solutions/marklogicaudit.md) | MarkLogicAudit_CL |
-| [McAfee Common Security Log Parser](mcafee-common-security-log-parser.md) | 📂 *Legacy* | CommonSecurityLog |
+| [McAfeeCommonSecurityLog](mcafeecommonsecuritylog.md) | 📂 *Legacy* | CommonSecurityLog |
 | [McAfeeEPOEvent](mcafeeepoevent.md) | 📦 [McAfee ePolicy Orchestrator](../solutions/mcafee-epolicy-orchestrator.md) | Syslog |
 | [McAfeeNSPEvent](mcafeenspevent.md) | 📦 [McAfee Network Security Platform](../solutions/mcafee-network-security-platform.md) | Syslog |
 | [MCASActivity](mcasactivity.md) | 📂 *Legacy* | MCASActivity_CL |
@@ -528,6 +538,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [NetskopeEventsNetwork](netskopeeventsnetwork.md) | 📦 [Netskopev2](../solutions/netskopev2.md) | NetskopeEventsNetwork_CL |
 | [NetskopeEventsPage](netskopeeventspage.md) | 📦 [Netskopev2](../solutions/netskopev2.md) | NetskopeEventsPage_CL |
 | [NetskopeWebTransactions](netskopewebtransactions.md) | 📦 [Netskopev2](../solutions/netskopev2.md) | NetskopeWebtxData_CL |
+| [NetskopeWebtx](netskopewebtx.md) | 📦 [NetskopeWebTx](../solutions/netskopewebtx.md) | NetskopeWebTransactions_CL |
 | [NetwrixAuditor](netwrixauditor.md) | 📦 [Netwrix Auditor](../solutions/netwrix-auditor.md) | CommonSecurityLog |
 | [NGINXHTTPServer](nginxhttpserver.md) | 📦 [NGINX HTTP Server](../solutions/nginx-http-server.md) | NGINX_CL |
 | [NozomiNetworksEvents](nozominetworksevents.md) | 📦 [NozomiNetworks](../solutions/nozominetworks.md) | CommonSecurityLog |
@@ -569,7 +580,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | Parser | Source | Tables |
 |:-------|:-------|:-------|
 | [QualysHostDetection](qualyshostdetection.md) | 📦 [QualysVM](../solutions/qualysvm.md) | QualysHostDetectionV2_CL, QualysHostDetectionV3_CL, ... |
-| [QualysKB](qualyskb.md) | 📦 [Qualys VM Knowledgebase](../solutions/qualys-vm-knowledgebase.md) | QualysKB_CL |
+| [QualysKB](qualyskb.md) | 📦 [Qualys VM Knowledgebase](../solutions/qualys-vm-knowledgebase.md) | QualysKB_CL, QualysKnowledgeBase |
 
 ## R
 
@@ -615,10 +626,11 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [TenableIOVulnerabilities](tenableiovulnerabilities.md) ⚠️ | 📦 [TenableIO](../solutions/tenableio.md) | Tenable_IO_Vuln_CL |
 | [TenableVMAssets](tenablevmassets.md) | 📦 [Tenable App](../solutions/tenable-app.md) | Tenable_VM_Asset_CL |
 | [TenableVMVulnerabilities](tenablevmvulnerabilities.md) | 📦 [Tenable App](../solutions/tenable-app.md) | Tenable_VM_Vuln_CL |
-| [TheHive](thehive.md) | 📦 [TheHive](../solutions/thehive.md) | TheHive_CL |
+| [TheHive](thehive.md) ⚠️ | 📦 [TheHive](../solutions/thehive.md) | TheHive_CL |
 | [ThreatIntelIndicatorsv2](threatintelindicatorsv2.md) | 📦 [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) | ThreatIntelIndicators |
 | [TMApexOneEvent](tmapexoneevent.md) | 📦 [Trend Micro Apex One](../solutions/trend-micro-apex-one.md) | CommonSecurityLog |
 | [TomcatEvent](tomcatevent.md) | 📦 [Tomcat](../solutions/tomcat.md) | Tomcat_CL |
+| [TrellixEvents](trellixevents.md) | 📦 [Trellix](../solutions/trellix.md) | TrellixEvents_CL |
 | [TrendMicroCAS](trendmicrocas.md) ⚠️ | 📦 [Trend Micro Cloud App Security](../solutions/trend-micro-cloud-app-security.md) | TrendMicroCAS_CL |
 | [TrendMicroDeepSecurity](trendmicrodeepsecurity.md) | 📦 [Trend Micro Deep Security](../solutions/trend-micro-deep-security.md) | CommonSecurityLog |
 | [TrendMicroTippingPoint](trendmicrotippingpoint.md) | 📦 [Trend Micro TippingPoint](../solutions/trend-micro-tippingpoint.md) | CommonSecurityLog |
@@ -664,6 +676,8 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [Veeam_GetJobFinished](veeam-getjobfinished.md) | 📦 [Veeam](../solutions/veeam.md) | Syslog |
 | [Veeam_GetSecurityEvents](veeam-getsecurityevents.md) | 📦 [Veeam](../solutions/veeam.md) | Syslog |
 | [Veeam_GetVeeamONEAlarms](veeam-getveeamonealarms.md) | 📦 [Veeam](../solutions/veeam.md) | Syslog |
+| [VersasecCmsError](versaseccmserror.md) | 📦 [VersasecCMS](../solutions/versaseccms.md) | VersasecCmsErrorLogs_CL |
+| [VersasecCmsSyslog](versaseccmssyslog.md) | 📦 [VersasecCMS](../solutions/versaseccms.md) | VersasecCmsSysLogs_CL |
 | [vimNetworkSessionOpenSystemsFirewall](vimnetworksessionopensystemsfirewall.md) ⚠️ | 📦 [Open Systems](../solutions/open-systems.md) | OpenSystemsFirewallLogs_CL |
 | [vimWebSessionOpenSystemsProxySecureWebGateway](vimwebsessionopensystemsproxysecurewebgateway.md) ⚠️ | 📦 [Open Systems](../solutions/open-systems.md) | OpenSystemsProxyLogs_CL |
 | [VMwareESXi](vmwareesxi.md) | 📦 [VMWareESXi](../solutions/vmwareesxi.md) | Syslog |
@@ -680,12 +694,10 @@ Parsers are KQL functions that transform and normalize log data for easier query
 
 | Parser | Source | Tables |
 |:-------|:-------|:-------|
-| [ZNSegmentAudit](znsegmentaudit.md) | 📦 [ZeroNetworks](../solutions/zeronetworks.md) | ZNSegmentAuditNativePoller_CL, ZNSegmentAudit_CL |
+| [ZNSegmentAudit](znsegmentaudit.md) | 📦 [ZeroNetworks](../solutions/zeronetworks.md) | ZNAudit_CL, ZNSegmentAuditNativePoller_CL |
 | [Zoom](zoom.md) | 📂 *Legacy* | Zoom_CL |
 | [Zoom](zoom.md) | 📦 [ZoomReports](../solutions/zoomreports.md) | Zoom_CL |
 | [ZPAEvent](zpaevent.md) | 📦 [Zscaler Private Access (ZPA)](../solutions/zscaler-private-access-zpa.md) | ZPA_CL |
-| [ZScalerFW_Parser](zscalerfw-parser.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) | CommonSecurityLog |
-| [ZScalerWeb_Parser](zscalerweb-parser.md) | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) | CommonSecurityLog |
 
 ---
 

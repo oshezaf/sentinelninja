@@ -17,6 +17,13 @@ Reference for Rapid7InsightVMCloudAssets table in Azure Monitor Logs.
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/rapid7insightvmcloudassets) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (37 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/rapid7insightvmcloudassets)
@@ -61,7 +68,29 @@ Reference for Rapid7InsightVMCloudAssets table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | UniqueIdentifiers | string | Unique identifiers found on the asset, such as hardware or operating system identifiers |
 
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [Rapid7InsightVM](../solutions/rapid7insightvm.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Rapid7 Insight Platform Vulnerability Management Reports (via Codeless Connector Framework)](../connectors/rapid7insightvmconnector.md) |  |
+
 ---
+
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [InsightVMAssets](../parsers/insightvmassets.md) | [Rapid7InsightVM](../solutions/rapid7insightvm.md) |  |
 
 ---
 

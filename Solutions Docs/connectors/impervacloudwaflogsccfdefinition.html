@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Imperva Cloud WAF &mdash; Solutions Analyzer</title>
+<title>Imperva Cloud WAF via Codeless Connector Framework &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="imperva-cloud-waf">Imperva Cloud WAF</h1>
+<h1 id="imperva-cloud-waf">Imperva Cloud WAF (via Codeless Connector Framework)</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Imperva_DarkGrey_final_75x75.svg" alt="" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
@@ -56,9 +56,13 @@
 <td style="text-align: left;"><strong>CCF Capabilities</strong></td>
 <td style="text-align: left;"><code>AmazonWebServicesS3</code></td>
 </tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
 </tbody>
 </table>
-<p>The Imperva WAF Cloud data connector provides the capability to ingest logs into Microsoft Sentinel using the Imperva Log Integration through AWS S3 Bucket. Refer to <a href="https://docs.imperva.com/bundle/cloud-application-security/page/settings/log-integration.htm">Imperva WAF Cloud Log Integration</a> for more information.</p>
+<p>The Imperva WAF Cloud data connector provides the capability to ingest logs into Microsoft Sentinel using the Imperva Log Integration via AWS S3 with SQS notifications. The connector parses CEF-formatted WAF events including access logs and security alerts for threat detection and investigation.Refer to <a href="https://docs.imperva.com/bundle/cloud-application-security/page/settings/log-integration.htm">Imperva WAF Cloud Log Integration</a> for more information.</p>
 <h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
@@ -75,6 +79,18 @@
 <td style="text-align: left;"><a href="../tables/impervawafcloudv2-cl.html"><code>ImpervaWAFCloudV2_CL</code></a></td>
 <td style="text-align: center;">?</td>
 <td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/impervawafcloud-cl.html"><code>ImpervaWAFCloud_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/sentinelimpervawafcloudv2logs.html"><code>SentinelImpervaWAFCloudV2Logs</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
 <td style="text-align: center;">?</td>
 </tr>
 </tbody>

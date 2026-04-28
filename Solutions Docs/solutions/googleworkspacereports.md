@@ -16,7 +16,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | domains |
-| **Version** | 3.0.3 |
+| **Version** | 3.0.4 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-24 |
 | **Last Updated** | 2026-03-27 |
@@ -147,6 +147,7 @@ This solution includes **26 content item(s)** (24 in solution, 2 discovered 🔍
 
 | **Version** | **Date Modified (DD-MM-YYY)** | **Change History**                              |
 |-------------|-------------------------------|-------------------------------------------------|
+| 3.0.4       | 26-03-2026                     | Updated **Data Connector** Configuration steps |
 | 3.0.3       | 21-01-2026                     | Updated **Data Connector** to support dynamic Redirect URI |
 | 3.0.2       | 26-08-2025                    | Moving GoogleWorkspaceReports **CCF Data Connector** to GA.  | 
 | 3.0.1       | 14-07-2025                    | Added new **CCF Data Connector**.  |

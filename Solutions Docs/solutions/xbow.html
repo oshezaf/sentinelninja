@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XBOW Sentinel Connector &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="xbow-sentinel-connector">XBOW Sentinel Connector</h1>
+<p><em>Solution: XBOW</em></p>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/XBOW.svg" alt="XBOW Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">XBOW</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://docs.xbow.com">https://docs.xbow.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">XBOW - support@xbow.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2026-03-04</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2026-03-23</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/XBOW">XBOW</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Marketplace</strong></td>
+<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/xbowinc.xbow-sentinel-connector">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>XBOW</strong> solution ingests assets, assessment activity, and vulnerability findings from the <a href="https://console.xbow.com">XBOW Security Platform</a> into Microsoft Sentinel. XBOW is an AI-powered autonomous penetration testing platform that continuously discovers and validates vulnerabilities in your web applications. This connector surfaces enriched findings — including proof-of-concept evidence, reproduction recipes, impact assessments, and mitigation guidance — directly in your Microsoft Sentinel workspace.</p>
+<p><strong>Data tables:</strong></p>
+<ul>
+<li>
+<p><code>XbowFindings_CL</code> — Vulnerability findings with full detail (severity, evidence, PoC, impact, mitigations)</p>
+</li>
+<li>
+<p><code>XbowAssessments_CL</code> — Pentest assessment lifecycle and progress</p>
+</li>
+</ul>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>a. <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Ingestion API (DCE/DCR)</a></p>
+<p>b. <a href="https://azure.microsoft.com/services/functions/#overview">Azure Functions</a></p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/xbowsecurityconnector.html">XBOW Security Platform (via Azure Function)</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>3 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/xbowassessments-cl.html"><code>XbowAssessments_CL</code></a></td>
+<td><a href="../connectors/xbowsecurityconnector.html">XBOW Security Platform (via Azure Function)</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/xbowassets-cl.html"><code>XbowAssets_CL</code></a></td>
+<td><a href="../connectors/xbowsecurityconnector.html">XBOW Security Platform (via Azure Function)</a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/xbowfindings-cl.html"><code>XbowFindings_CL</code></a></td>
+<td><a href="../connectors/xbowsecurityconnector.html">XBOW Security Platform (via Azure Function)</a></td>
+<td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>4 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">4</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/xbow-xbowcriticalhighfindings-f8e7d6c5-4b3a-4912-8f0e-2d1c3b4a5678-cfec1e39.html">XbowCriticalHighFindings</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess, Execution, PrivilegeEscalation, DefenseEvasion, Impact</td>
+<td style="text-align: left;"><a href="../tables/xbowassets-cl.html"><code>XbowAssets_CL</code></a><br><a href="../tables/xbowfindings-cl.html"><code>XbowFindings_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/xbow-xbowlowfindings-d2e4f1a8-7c9b-4356-8e0d-5a2b7c8e9f01-be196e24.html">XbowLowFindings</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Discovery</td>
+<td style="text-align: left;"><a href="../tables/xbowassets-cl.html"><code>XbowAssets_CL</code></a><br><a href="../tables/xbowfindings-cl.html"><code>XbowFindings_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/xbow-xbowmediumfindings-b3c5e2f9-6a8d-4127-9b2e-4f6a8c9d0e12-25358c30.html">XbowMediumFindings</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Discovery, Reconnaissance, CredentialAccess</td>
+<td style="text-align: left;"><a href="../tables/xbowassets-cl.html"><code>XbowAssets_CL</code></a><br><a href="../tables/xbowfindings-cl.html"><code>XbowFindings_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/xbow-xbownewassetdiscovered-e4c6a8b2-9d7f-4285-a1e3-6b9c2e4f1a85-196d4b10.html">XbowNewAssetDiscovered</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Reconnaissance, Discovery</td>
+<td style="text-align: left;"><a href="../tables/xbowassets-cl.html"><code>XbowAssets_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.0</td>
+<td>17-03-2026</td>
+<td>Initial Solution Release. Added XBOW Function App Data Connector. Added Analytic Rules for Critical/High, Medium, Low findings, and Asset Discovery.<br> Updated short link.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+</div>
+
+</body>
+</html>

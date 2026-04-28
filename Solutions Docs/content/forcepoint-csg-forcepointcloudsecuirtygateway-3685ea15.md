@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct in "Email,Web"`<br>`DeviceVendor == "Forcepoint CSG"` | ✓ | ✓ | ✓ |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct in "Email,Web"`<br>`DeviceVendor == "Forcepoint CSG"` | ✓ | ✓ | ? |
 
 ---
 

@@ -8,9 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -61,7 +59,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Auth0 Logs](../connectors/auth0connectorccpdefinition.md) |  |
+| [Auth0 Logs (via Codeless Connector Framework)](../connectors/auth0connectorccpdefinition.md) |  |
 
 ---
 

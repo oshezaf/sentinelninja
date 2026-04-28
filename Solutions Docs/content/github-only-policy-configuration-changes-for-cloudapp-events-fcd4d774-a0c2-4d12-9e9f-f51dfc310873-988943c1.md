@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType in "Add owner to policy.,Add policy to service principal.,Add policy.,Delete policy.,Remove-CrossTenantAccessPolicy,Remove-LabelPolicy,Update authorization policy.,Update policy.,Write PolicyAssignments,Write PolicyExemptions"` | ✓ | ✗ | ✓ |
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType in "Add owner to policy.,Add policy to service principal.,Add policy.,Delete policy.,Remove-CrossTenantAccessPolicy,Remove-LabelPolicy,Update authorization policy.,Update policy.,Write PolicyAssignments,Write PolicyExemptions"` | ✓ | ✗ | ? |
 
 ---
 

@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`StorageFileLogs`](../tables/storagefilelogs.md) | ✓ | ✗ | ✓ |
+| [`StorageFileLogs`](../tables/storagefilelogs.md) | ✓ | ✗ | ? |
 
 ## Parameters
 

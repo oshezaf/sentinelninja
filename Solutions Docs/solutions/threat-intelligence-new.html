@@ -58,7 +58,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Last Updated</strong></td>
-<td style="text-align: left;">2026-03-26</td>
+<td style="text-align: left;">2026-04-15</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Solution Folder</strong></td>
@@ -154,6 +154,11 @@
 <td>Analytics</td>
 </tr>
 <tr>
+<td><a href="../tables/ciscoduo-cl.html"><code>CiscoDuo_CL</code></a> 🔶</td>
+<td>-</td>
+<td>Analytics</td>
+</tr>
+<tr>
 <td><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
 <td>-</td>
 <td>Analytics</td>
@@ -175,11 +180,6 @@
 </tr>
 <tr>
 <td><a href="../tables/dnsevents.html"><code>DnsEvents</code></a></td>
-<td>-</td>
-<td>Analytics</td>
-</tr>
-<tr>
-<td><a href="../tables/duosecurityauthentication-cl.html"><code>DuoSecurityAuthentication_CL</code></a> 🔶</td>
 <td>-</td>
 <td>Analytics</td>
 </tr>
@@ -282,7 +282,7 @@
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>58 content item(s)</strong>:</p>
+<p>This solution includes <strong>59 content item(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -293,7 +293,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;">Analytic Rules</td>
-<td style="text-align: left;">51</td>
+<td style="text-align: left;">52</td>
 </tr>
 <tr>
 <td style="text-align: left;">Hunting Queries</td>
@@ -360,7 +360,7 @@
 <td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-ip-entity-to-duo-security-4988c238-a118-442c-80bd-6c689a1b2e97-43e39fdc.html">TI Map IP Entity to Duo Security</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">CommandAndControl</td>
-<td style="text-align: left;"><a href="../tables/duosecurityauthentication-cl.html"><code>DuoSecurityAuthentication_CL</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+<td style="text-align: left;"><a href="../tables/ciscoduo-cl.html"><code>CiscoDuo_CL</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-ip-entity-to-signinlogs-edfc9d8a-6fb3-49e2-80c9-fea15d941799-78ede5a3.html">TI Map IP Entity to SigninLogs</a></td>
@@ -626,6 +626,12 @@
 <td style="text-align: left;">CommandAndControl</td>
 <td style="text-align: left;"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
 </tr>
+<tr>
+<td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-url-entity-to-web-session-events-asim-web-session-schema-3b4a8c72-5a2e-4f1e-b61a-9d8b2a6d7a21-f004a2bb.html">TI map URL entity to Web Session Events (ASIM Web Session schema)</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">CommandAndControl, InitialAccess</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+</tr>
 </tbody>
 </table>
 <h3 id="hunting-queries">Hunting Queries</h3>
@@ -707,6 +713,26 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>3.0.17</td>
+<td>02-04-2026</td>
+<td>Updated <strong>TI map Domain entity to SecurityAlert</strong> analytic rule with deduplication and filters</td>
+</tr>
+<tr>
+<td>3.0.16</td>
+<td>25-03-2026</td>
+<td>Optimized <strong>TI map Domain entity to EmailUrlInfo</strong> analytic rule with deduplication and filters</td>
+</tr>
+<tr>
+<td>3.0.15</td>
+<td>09-03-2026</td>
+<td>Update <strong>IPEntity_DuoSecurity Analytic Rule</strong></td>
+</tr>
+<tr>
+<td>3.0.14</td>
+<td>16-02-2026</td>
+<td>Added <strong>Analytic Rule</strong> for URL IOC</td>
+</tr>
 <tr>
 <td>3.0.13</td>
 <td>27-01-2026</td>

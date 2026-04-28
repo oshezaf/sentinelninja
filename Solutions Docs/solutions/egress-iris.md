@@ -38,12 +38,13 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **2 table(s)**:
+This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`EgressDefend_CL`](../tables/egressdefend-cl.md) 🔶 | [Egress Iris Connector](../connectors/egresssiempolling.md) | - |
 | [`EgressEvents_CL`](../tables/egressevents-cl.md) | [Egress Iris Connector](../connectors/egresssiempolling.md) | Workbooks |
+| [`KnowBe4Defend_CL`](../tables/knowbe4defend-cl.md) 🔶 | [Egress Iris Connector](../connectors/egresssiempolling.md) | - |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.

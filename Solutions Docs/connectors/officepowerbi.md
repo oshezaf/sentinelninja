@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`PowerBIActivity`](../tables/powerbiactivity.md) | ✓ | ✗ | ✓ |
+| [`PowerBIActivity`](../tables/powerbiactivity.md) | ✓ | ✗ | ? |
 
 ## Permissions
 

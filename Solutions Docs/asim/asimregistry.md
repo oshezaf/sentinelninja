@@ -34,10 +34,10 @@ This union parser includes parsers for the following products:
 | Microsoft Sysmon | [_ASim_RegistryEvent_MicrosoftSysmon](asimregistryeventmicrosoftsysmon.md) |  |
 | Microsoft Sysmon | [_ASim_RegistryEvent_MicrosoftSysmonWindowsEvent](asimregistryeventmicrosoftsysmonwindowsevent.md) | [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
 | Security Events | [_ASim_RegistryEvent_MicrosoftWindowsEvent](asimregistryeventmicrosoftwindowsevent.md) | [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
-| Native | [_ASim_RegistryEvent_Native](asimregistryeventnative.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)<br>[VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
-| SentinelOne | [_ASim_RegistryEvent_SentinelOne](asimregistryeventsentinelone.md) | [SentinelOne](../solutions/sentinelone.md) |
+| Native | [_ASim_RegistryEvent_Native](asimregistryeventnative.md) | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md)<br>[VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
+| SentinelOne | [_ASim_RegistryEvent_SentinelOne](asimregistryeventsentinelone.md) |  |
 | Trend Micro Vision One | [_ASim_RegistryEvent_TrendMicroVisionOne](asimregistryeventtrendmicrovisionone.md) | [Trend Micro Vision One](../solutions/trend-micro-vision-one.md) |
-| VMware Carbon Black Cloud | [_ASim_RegistryEvent_VMwareCarbonBlackCloud](asimregistryeventvmwarecarbonblackcloud.md) | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
+| VMware Carbon Black Cloud | [_ASim_RegistryEvent_VMwareCarbonBlackCloud](asimregistryeventvmwarecarbonblackcloud.md) |  |
 
 ## Parameters
 

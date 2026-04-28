@@ -9,9 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
-| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -21,7 +19,7 @@
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (31 columns)
+## Schema (32 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Cisco_Umbrella_proxy_CL.json)
 
@@ -53,6 +51,7 @@
 | responseSize_d | real |
 | Rule_ID_s | string |
 | Ruleset_ID_s | string |
+| SHA-SHA256_s | string |
 | SHA—SHA256_s | string |
 | statusCode_s | string |
 | TimeGenerated | datetime |
@@ -130,7 +129,13 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [CiscoUmbrella](../content/ciscoumbrella-ciscoumbrella-dcc07ffb.md) |  |
 
-## Parsers Using This Table (1)
+## Parsers Using This Table (2)
+
+### ASIM Parsers (1)
+
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimWebSessionCiscoUmbrella](../asim/asimwebsessionciscoumbrella.md) | WebSession | Cisco Umbrella |  |
 
 ### Other Parsers (1)
 

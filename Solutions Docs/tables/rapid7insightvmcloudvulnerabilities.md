@@ -17,6 +17,13 @@ Reference for Rapid7InsightVMCloudVulnerabilities table in Azure Monitor Logs.
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/rapid7insightvmcloudvulnerabilities) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (49 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/rapid7insightvmcloudvulnerabilities)
@@ -73,7 +80,29 @@ Reference for Rapid7InsightVMCloudVulnerabilities table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | VulnerabilityTitle | string | The title (summary) of the vulnerability |
 
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [Rapid7InsightVM](../solutions/rapid7insightvm.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Rapid7 Insight Platform Vulnerability Management Reports (via Codeless Connector Framework)](../connectors/rapid7insightvmconnector.md) |  |
+
 ---
+
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [InsightVMVulnerabilities](../parsers/insightvmvulnerabilities.md) | [Rapid7InsightVM](../solutions/rapid7insightvm.md) |  |
 
 ---
 

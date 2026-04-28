@@ -19,6 +19,7 @@
 | **Version** | 3.0.2 |
 | **Author** | SAP |
 | **First Published** | 2025-09-12 |
+| **Last Updated** | 2026-04-23 |
 | **Solution Folder** | [SAP S4 Cloud Public Edition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20S4%20Cloud%20Public%20Edition) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sap_jasondau.azure-sentinel-solution-s4hana-public) · Popularity: ⚪ Very Low (0%) |
 
@@ -46,6 +47,7 @@ This solution uses **1 table(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                  |
 |-------------|--------------------------------|---------------------------------------------------------------------|
+| 3.0.3       | 01-04-2026                     |preview tag remove, UI update|
 | 3.0.2       | 30-10-2025                     |DCR transform updates|
 | 3.0.1       | 16-10-2025                     |DCR transform updates|
 | 3.0.0       | 06-10-2025                     |Initial release|

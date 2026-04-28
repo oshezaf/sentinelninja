@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Anvilogic_Alerts_CL`](../tables/anvilogic-alerts-cl.md) | ✗ | ✓ | ✗ |
+| [`Anvilogic_Alerts_CL`](../tables/anvilogic-alerts-cl.md) | ? | ✓ | ? |
 
 ---
 

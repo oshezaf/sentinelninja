@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✓ | ✗ |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -67,9 +67,9 @@ Follow this section here to add **'ThreatIndicators.ReadWrite.OwnedBy'** permiss
  Back in your AAD App, ensure you grant admin consent for the permissions you just added. 
  Finally, in the 'Tokens and APIs' section, generate a client secret and save it. You will need it in Step 6.
 
-**5. Deploy the Threat Intelligence (Preview) Solution, which includes the Threat Intelligence Upload Indicators API (Preview)**
+**5. Deploy the Threat Intelligence (New) Solution, (v3.0.14 or later) which includes the Threat Intelligence Upload Indicators API (Preview)**
 
-See Microsoft Sentinel Content Hub for this Solution, and install it in the Microsoft Sentinel instance.
+See Microsoft Sentinel Content Hub for this Solution, and install it in the Microsoft Sentinel instance. Note that you do not need to do any confirguration in this step.
 
 **6. Deploy the Azure Function**
 
