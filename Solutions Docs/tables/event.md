@@ -1,6 +1,6 @@
 # Event
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -284,10 +284,10 @@ References by type: 4 connectors, 32 content items, 6 ASIM parsers, 7 other pars
 | `EventID == "1"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | 2 | 1 | - | **3** |
 | `EventID == "3"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | 1 | 1 | - | **2** |
 | `EventID == "0"`<br>`EventLog == "Application"`<br>`RenderedDescription has_any "Downloaded"`<br>`Source == "MOVEit DMZ Audit"` | - | 2 | - | - | **2** |
-| `EventLevel in "1,2,3"`<br>`Source == "ALCWebCTRL"` | 1 | - | - | - | **1** |
-| `EventLog == "Application"` | 1 | - | - | - | **1** |
 | `EventLog in "Application,MSExchange Management,System"` | 1 | - | - | - | **1** |
+| `EventLevel in "1,2,3"`<br>`Source == "ALCWebCTRL"` | 1 | - | - | - | **1** |
 | `EventLog == "MSExchange Management"` | 1 | - | - | - | **1** |
+| `EventLog == "Application"` | 1 | - | - | - | **1** |
 | `EventID == "11"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` | - | 1 | - | - | **1** |
 | `EventID == "10"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` | - | 1 | - | - | **1** |
 | `EventID == "18"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | 1 | - | - | **1** |
@@ -395,7 +395,7 @@ References by type: 4 connectors, 32 content items, 6 ASIM parsers, 7 other pars
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

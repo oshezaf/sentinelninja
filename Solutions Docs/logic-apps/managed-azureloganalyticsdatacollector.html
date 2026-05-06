@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>azureloganalyticsdatacollector — Managed &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="azureloganalyticsdatacollector-managed"><code>azureloganalyticsdatacollector</code> — Managed</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <strong>Logic Apps</strong> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="logic-apps-index.html">Back to Logic Apps Index</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Managed</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Playbooks using</strong></td>
+<td style="text-align: left;">101</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solutions</strong></td>
+<td style="text-align: left;">20</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Microsoft Learn</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/connectors/azureloganalyticsdatacollector/">https://learn.microsoft.com/en-us/connectors/azureloganalyticsdatacollector/</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="playbooks-using-this-connector">Playbooks Using This Connector</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Playbook</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: right;">Connections</th>
+<th style="text-align: right;">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><PlaybookName></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><PlaybookName></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Get-AlertEntitiesEnrichment</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Get-NamedLocations</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Get-SecureScore-Information</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-ad-hoc-ioc-lookup-640123fb.html">Censys Ad-Hoc IOC Lookup</a></td>
+<td style="text-align: left;"><a href="../solutions/censys.html">Censys</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-add-incident-comment-92f657fd.html">Censys Add Incident Comment</a></td>
+<td style="text-align: left;"><a href="../solutions/censys.html">Censys</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-alert-enrichment-65242474.html">Censys Alert Enrichment</a></td>
+<td style="text-align: left;"><a href="../solutions/censys.html">Censys</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-alert-rescan-19e1ad3a.html">Censys Alert Rescan</a></td>
+<td style="text-align: left;"><a href="../solutions/censys.html">Censys</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-entity-enrichment-certificate-ea0d81ab.html">Censys Entity Enrichment - Certificate</a></td>
+<td style="text-align: left;"><a href="../solutions/censys.html">Censys</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-entity-enrichment-host-c2bc1894.html">Censys Entity Enrichment - Host</a></td>
+<td style="text-align: left;"><a href="../solutions/censys.html">Censys</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-entity-enrichment-web-property-e7db98e8.html">Censys Entity Enrichment - Web Property</a></td>
+<td style="text-align: left;"><a href="../solutions/censys.html">Censys</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-host-history-62dd7b98.html">Censys Host History</a></td>
+<td style="text-align: left;"><a href="../solutions/censys.html">Censys</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-incident-enrichment-099adc62.html">Censys Incident Enrichment</a></td>
+<td style="text-align: left;"><a href="../solutions/censys.html">Censys</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-related-infrastructure-23870661.html">Censys Related Infrastructure</a></td>
+<td style="text-align: left;"><a href="../solutions/censys.html">Censys</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-rescan-51275b90.html">Censys Rescan</a></td>
+<td style="text-align: left;"><a href="../solutions/censys.html">Censys</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyjax-cyjax-ad-hoc-enrichment-a45ef0b4.html">Cyjax Ad Hoc Enrichment</a></td>
+<td style="text-align: left;"><a href="../solutions/cyjax.html">Cyjax</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyjax-cyjax-data-breaches-9a3f7092.html">Cyjax Data Breaches</a></td>
+<td style="text-align: left;"><a href="../solutions/cyjax.html">Cyjax</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyjax-cyjax-domain-monitor-66e866eb.html">Cyjax Domain Monitor</a></td>
+<td style="text-align: left;"><a href="../solutions/cyjax.html">Cyjax</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/dns-essentials-summarize-data-for-dns-essentials-solution-bd44274c.html">Summarize Data for DNS Essentials Solution</a></td>
+<td style="text-align: left;"><a href="../solutions/dns-essentials.html">DNS Essentials</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/group-ib-gibtia-apt-threatactor-190ca81b.html">GIBTIA_APT_ThreatActor</a></td>
+<td style="text-align: left;"><a href="../solutions/group-ib.html">Group-IB</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/group-ib-gibtia-apt-threats-0bf2e06a.html">GIBTIA_APT_Threats</a></td>
+<td style="text-align: left;"><a href="../solutions/group-ib.html">Group-IB</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/group-ib-gibtia-attacks-ddos-676a7f45.html">GIBTIA_Attacks_ddos</a></td>
+<td style="text-align: left;"><a href="../solutions/group-ib.html">Group-IB</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/group-ib-gibtia-attacks-deface-0571809a.html">GIBTIA_Attacks_deface</a></td>
+<td style="text-align: left;"><a href="../solutions/group-ib.html">Group-IB</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/group-ib-gibtia-attacks-phishing-05e0bef0.html">GIBTIA_Attacks_phishing</a></td>
+<td style="text-align: left;"><a href="../solutions/group-ib.html">Group-IB</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/group-ib-gibtia-attacks-phishing-kit-176cf63b.html">GIBTIA_Attacks_phishing_kit</a></td>
+<td style="text-align: left;"><a href="../solutions/group-ib.html">Group-IB</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/group-ib-gibtia-bp-phishing-1f9bfeff.html">GIBTIA_BP_phishing</a></td>
+<td style="text-align: left;"><a href="../solutions/group-ib.html">Group-IB</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/group-ib-gibtia-bp-phishing-kit-0f993020.html">GIBTIA_BP_phishing_kit</a></td>
+<td style="text-align: left;"><a href="../solutions/group-ib.html">Group-IB</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/group-ib-gibtia-compromised-account-12e40e7c.html">GIBTIA_Compromised_account</a></td>
+<td style="text-align: left;"><a href="../solutions/group-ib.html">Group-IB</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/group-ib-gibtia-compromised-card-4873e37b.html">GIBTIA_Compromised_card</a></td>
+<td style="text-align: left;"><a href="../solutions/group-ib.html">Group-IB</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/group-ib-gibtia-compromised-imei-1e238983.html">GIBTIA_Compromised_imei</a></td>
+<td style="text-align: left;"><a href="../solutions/group-ib.html">Group-IB</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/group-ib-gibtia-compromised-mule-500b5f08.html">GIBTIA_Compromised_mule</a></td>
+<td style="text-align: left;"><a href="../solutions/group-ib.html">Group-IB</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/group-ib-gibtia-hi-threat-bfac31e2.html">GIBTIA_HI_Threat</a></td>
+<td style="text-align: left;"><a href="../solutions/group-ib.html">Group-IB</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/group-ib-gibtia-hi-threat-actor-2c1acd08.html">GIBTIA_HI_Threat_Actor</a></td>
+<td style="text-align: left;"><a href="../solutions/group-ib.html">Group-IB</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/group-ib-gibtia-malware-cnc-4702dbee.html">GIBTIA_Malware_cnc</a></td>
+<td style="text-align: left;"><a href="../solutions/group-ib.html">Group-IB</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/group-ib-gibtia-malware-targeted-malware-ece0af42.html">GIBTIA_Malware_Targeted_Malware</a></td>
+<td style="text-align: left;"><a href="../solutions/group-ib.html">Group-IB</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/group-ib-gibtia-osi-gitleak-631460d0.html">GIBTIA_OSI_GitLeak</a></td>
+<td style="text-align: left;"><a href="../solutions/group-ib.html">Group-IB</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/group-ib-gibtia-osi-publicleak-70bc2712.html">GIBTIA_OSI_PublicLeak</a></td>
+<td style="text-align: left;"><a href="../solutions/group-ib.html">Group-IB</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/group-ib-gibtia-osi-vulnerability-abc46184.html">GIBTIA_OSI_Vulnerability</a></td>
+<td style="text-align: left;"><a href="../solutions/group-ib.html">Group-IB</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/group-ib-gibtia-suspicious-ip-open-proxy-74ec79d9.html">GIBTIA_Suspicious_ip_open_proxy</a></td>
+<td style="text-align: left;"><a href="../solutions/group-ib.html">Group-IB</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/group-ib-gibtia-suspicious-ip-socks-proxy-872abe00.html">GIBTIA_Suspicious_ip_socks_proxy</a></td>
+<td style="text-align: left;"><a href="../solutions/group-ib.html">Group-IB</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/group-ib-gibtia-suspicious-ip-tor-node-48dd5935.html">GIBTIA_Suspicious_ip_tor_node</a></td>
+<td style="text-align: left;"><a href="../solutions/group-ib.html">Group-IB</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-config-insight-details-7dc4fbab.html">Infoblox-Config-Insight-Details</a></td>
+<td style="text-align: left;"><a href="../solutions/infoblox.html">Infoblox</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-config-insights-43be35ed.html">Infoblox-Config-Insights</a></td>
+<td style="text-align: left;"><a href="../solutions/infoblox.html">Infoblox</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-get-host-name-3ad74de0.html">Infoblox-Get-Host-Name</a></td>
+<td style="text-align: left;"><a href="../solutions/infoblox.html">Infoblox</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-get-ip-space-data-9ff604c0.html">Infoblox-Get-IP-Space-Data</a></td>
+<td style="text-align: left;"><a href="../solutions/infoblox.html">Infoblox</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-get-service-name-0adc147e.html">Infoblox-Get-Service-Name</a></td>
+<td style="text-align: left;"><a href="../solutions/infoblox.html">Infoblox</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-soc-get-insight-details-7be7a13e.html">Infoblox-SOC-Get-Insight-Details</a></td>
+<td style="text-align: left;"><a href="../solutions/infoblox.html">Infoblox</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-soc-get-open-insights-api-5c2cae50.html">Infoblox-SOC-Get-Open-Insights-API</a></td>
+<td style="text-align: left;"><a href="../solutions/infoblox.html">Infoblox</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-infoblox-tide-lookup-c25e9a83.html">Infoblox-TIDE-Lookup</a></td>
+<td style="text-align: left;"><a href="../solutions/infoblox.html">Infoblox</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-soc-insights-infoblox-soc-get-insight-details-dd083b36.html">Infoblox SOC Get Insight Details</a></td>
+<td style="text-align: left;"><a href="../solutions/infoblox-soc-insights.html">Infoblox SOC Insights</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-soc-insights-infoblox-soc-get-open-insights-api-5e5c3c13.html">Infoblox SOC Get Open Insights API</a></td>
+<td style="text-align: left;"><a href="../solutions/infoblox-soc-insights.html">Infoblox SOC Insights</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/integration-for-atlassian-beacon-atlassian-beacon-integration-638ff69e.html">Atlassian Beacon Integration</a></td>
+<td style="text-align: left;"><a href="../solutions/integration-for-atlassian-beacon.html">Integration for Atlassian Beacon</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/network-session-essentials-summarize-data-for-network-session-essentials-a6438aa2.html">Summarize Data for Network Session Essentials</a></td>
+<td style="text-align: left;"><a href="../solutions/network-session-essentials.html">Network Session Essentials</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/recorded-future-recordedfuture-alert-importer-744ed2e2.html">RecordedFuture-Alert-Importer</a></td>
+<td style="text-align: left;"><a href="../solutions/recorded-future.html">Recorded Future</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/recorded-future-recordedfuture-playbook-alert-importer-3166bf69.html">RecordedFuture-Playbook-Alert-Importer</a></td>
+<td style="text-align: left;"><a href="../solutions/recorded-future.html">Recorded Future</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/recorded-future-recordedfuture-threatmap-importer-58b1d1a3.html">RecordedFuture-ThreatMap-Importer</a></td>
+<td style="text-align: left;"><a href="../solutions/recorded-future.html">Recorded Future</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/recorded-future-recordedfuture-threatmapmalware-importer-001905e9.html">RecordedFuture-ThreatMapMalware-Importer</a></td>
+<td style="text-align: left;"><a href="../solutions/recorded-future.html">Recorded Future</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/recorded-future-identity-rfi-lookup-and-save-user-ec7fa68f.html">RFI-lookup-and-save-user</a></td>
+<td style="text-align: left;"><a href="../solutions/recorded-future-identity.html">Recorded Future Identity</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/recorded-future-identity-rfi-playbook-alert-importer-law-baa813bb.html">RFI-Playbook-Alert-Importer-LAW</a></td>
+<td style="text-align: left;"><a href="../solutions/recorded-future-identity.html">Recorded Future Identity</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/recorded-future-identity-rfi-playbook-alert-importer-law-sentinel-deprecated-64ea3f24.html">RFI-Playbook-Alert-Importer-LAW-Sentinel (DEPRECATED)</a></td>
+<td style="text-align: left;"><a href="../solutions/recorded-future-identity.html">Recorded Future Identity</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/recorded-future-identity-rfi-search-external-user-b3c5c779.html">RFI-search-external-user</a></td>
+<td style="text-align: left;"><a href="../solutions/recorded-future-identity.html">Recorded Future Identity</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/recorded-future-identity-rfi-search-workforce-user-cc3f078e.html">RFI-search-workforce-user</a></td>
+<td style="text-align: left;"><a href="../solutions/recorded-future-identity.html">Recorded Future Identity</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/reversinglabs-reversinglabs-checkquota-9c8101f9.html">ReversingLabs-CheckQuota</a></td>
+<td style="text-align: left;"><a href="../solutions/reversinglabs.html">ReversingLabs</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-file-object-context-analysis-30d5a377.html">Rubrik File Object Context Analysis</a></td>
+<td style="text-align: left;"><a href="../solutions/rubriksecuritycloud.html">RubrikSecurityCloud</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-retrieve-user-intelligence-information-063a46dd.html">Rubrik Retrieve User Intelligence Information</a></td>
+<td style="text-align: left;"><a href="../solutions/rubriksecuritycloud.html">RubrikSecurityCloud</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/shadowbyte-aria-search-for-breaches-shadowbyte-aria-1984dbe7.html">Search for Breaches - ShadowByte Aria</a></td>
+<td style="text-align: left;"><a href="../solutions/shadowbyte-aria.html">ShadowByte Aria</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/slashnext-siem-slashnext-security-events-for-microsoft-sentinel-get-customer-incidents-and-log-a81ddf6c.html">SlashNext Security Events for Microsoft Sentinel - Get customer incidents and log</a></td>
+<td style="text-align: left;"><a href="../solutions/slashnext-siem.html">SlashNext SIEM</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/spycloud-enterprise-protection-spycloud-watachlist-data-spycloud-enterprise-6050708e.html">SpyCloud Watachlist data - SpyCloud Enterprise</a></td>
+<td style="text-align: left;"><a href="../solutions/spycloud-enterprise-protection.html">SpyCloud Enterprise Protection</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-crowdstrikealerts-integration-670b72b9.html">AS-CrowdstrikeAlerts-Integration</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-datadog-events-integration-d8009708.html">AS-Datadog-Events-Integration</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-edgescan-integration-assets-0475596f.html">AS-Edgescan-Integration-Assets</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-edgescan-integration-hosts-bb2934d6.html">AS-Edgescan-Integration-Hosts</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-edgescan-integration-vulnerabilities-8d81ec9c.html">AS-Edgescan-Integration-Vulnerabilities</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-mulesoft-integration-d59556d1.html">AS-MuleSoft-Integration</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-autoconnect-ascsubscriptions-c97cf156.html">AutoConnect-ASCSubscriptions</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-get-merakidata-configurationchanges-22d7749c.html">Get-MerakiData-configurationChanges</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-get-merakidata-orgsecurityevents-0138a550.html">Get-MerakiData-OrgSecurityEvents</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-get-o365data-4178da9b.html">Get-O365Data</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-get-tenablevlun-13bc5a0b.html">Get-TenableVlun</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-greynoise-ip-communityenrichment-7050bb7b.html">GreyNoise-IP-CommunityEnrichment</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-greynoise-ip-enrichment-b0af9633.html">GreyNoise-IP-Enrichment</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-guardicore-import-assets-1db1ba64.html">Guardicore-Import-Assets</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-guardicore-import-incidents-46460c2e.html">Guardicore-Import-Incidents</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-ingest-prisma-05aee65e.html">Ingest-Prisma</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-oktaevents-to-sentinel-f59de14f.html">OktaEvents-to-Sentinel</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-put-canarytokens-webhook-alerts-to-custom-logs-table-17b0c929.html">Put CanaryTokens webhook alerts to Custom Logs table</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-send-urlreport-38d22282.html">Send-UrlReport</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-thinkst-canary-microsoft-sentinel-alert-integration-37f6f36b.html">Thinkst Canary Microsoft Sentinel Alert Integration</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/team-cymru-scout-team-cymru-scout-enrich-incident-e6d90c68.html">Team Cymru Scout Enrich Incident</a></td>
+<td style="text-align: left;"><a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/team-cymru-scout-team-cymru-scout-live-investigation-9c215d68.html">Team Cymru Scout Live Investigation</a></td>
+<td style="text-align: left;"><a href="../solutions/team-cymru-scout.html">Team Cymru Scout</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">21</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vaikorasecuritycenter-vaikora-to-microsoft-defender-for-cloud-deb83906.html">Vaikora to Microsoft Defender for Cloud</a></td>
+<td style="text-align: left;"><a href="../solutions/vaikorasecuritycenter.html">VaikoraSecurityCenter</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/virustotal-filehash-enrichment-virus-total-report-alert-triggered-cb0a6f29.html">FileHash Enrichment - Virus Total Report - Alert Triggered</a></td>
+<td style="text-align: left;"><a href="../solutions/virustotal.html">VirusTotal</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/virustotal-filehash-enrichment-virus-total-report-incident-triggered-4f1b5957.html">FileHash Enrichment - Virus Total Report - Incident Triggered</a></td>
+<td style="text-align: left;"><a href="../solutions/virustotal.html">VirusTotal</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/virustotal-ip-enrichment-virus-total-report-incident-triggered-1c22517c.html">IP Enrichment - Virus Total Report  - Incident Triggered</a></td>
+<td style="text-align: left;"><a href="../solutions/virustotal.html">VirusTotal</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/virustotal-ip-enrichment-virus-total-report-alert-triggered-8db8d703.html">IP Enrichment - Virus Total Report - Alert Triggered</a></td>
+<td style="text-align: left;"><a href="../solutions/virustotal.html">VirusTotal</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/virustotal-url-enrichment-virus-total-domain-report-alert-triggered-9a5688ac.html">URL Enrichment - Virus Total Domain Report - Alert Triggered</a></td>
+<td style="text-align: left;"><a href="../solutions/virustotal.html">VirusTotal</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/virustotal-url-enrichment-virus-total-domain-report-incident-triggered-54a7a026.html">URL Enrichment - Virus Total Domain Report - Incident Triggered</a></td>
+<td style="text-align: left;"><a href="../solutions/virustotal.html">VirusTotal</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/virustotal-url-enrichment-virus-total-report-alert-triggered-c62db7db.html">URL Enrichment - Virus Total Report - Alert Triggered</a></td>
+<td style="text-align: left;"><a href="../solutions/virustotal.html">VirusTotal</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/virustotal-url-enrichment-virus-total-report-incident-triggered-3d66ea5b.html">URL Enrichment - Virus Total Report - Incident Triggered</a></td>
+<td style="text-align: left;"><a href="../solutions/virustotal.html">VirusTotal</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/web-session-essentials-summarize-web-session-data-ea664ad8.html">Summarize Web Session Data</a></td>
+<td style="text-align: left;"><a href="../solutions/web-session-essentials.html">Web Session Essentials</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <strong>Logic Apps</strong> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="logic-apps-index.html">Back to Logic Apps Index</a></p>
+</div>
+
+</body>
+</html>

@@ -4,7 +4,7 @@ Microsoft Sentinel Solutions are packaged content bundles that provide out-of-th
 
 📚 **Learn more:** [Deploy Microsoft Sentinel solutions](https://learn.microsoft.com/azure/sentinel/sentinel-solutions-deploy)
 
-**Browse:** [🏠](README.md) · **Solutions** · [Connectors](connectors-index.md) · [Methods](methods-index.md) · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md) · [📊](statistics.md)
+**Browse:** [🏠](README.md) · **Solutions** · [Connectors](connectors-index.md) · [Methods](methods-index.md) · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md) · [Logic Apps](logic-apps/logic-apps-index.md) · [📊](statistics.md)
 
 ---
 
@@ -680,5 +680,5 @@ Browse solutions alphabetically:
 
 ---
 
-**Browse:** [🏠](README.md) · **Solutions** · [Connectors](connectors-index.md) · [Methods](methods-index.md) · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md) · [📊](statistics.md)
+**Browse:** [🏠](README.md) · **Solutions** · [Connectors](connectors-index.md) · [Methods](methods-index.md) · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md) · [Logic Apps](logic-apps/logic-apps-index.md) · [📊](statistics.md)
 

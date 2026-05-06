@@ -1,6 +1,6 @@
 # ThreatIntelligenceIndicator
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -377,13 +377,13 @@ References by type: 7 connectors, 1 content items, 0 ASIM parsers, 0 other parse
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `ThreatType == "DDoS"` | 1 | - | - | - | **1** |
 | `SourceSystem !contains "Luminar"`<br>`SourceSystem contains "Luminar"` | 1 | - | - | - | **1** |
 | `SourceSystem startswith "Cofense Intelligence :"` | 1 | - | - | - | **1** |
-| `SourceSystem !startswith "Cofense :"`<br>`SourceSystem startswith "Cofense :"` | 1 | - | - | - | **1** |
-| `SourceSystem !contains "VMRay"`<br>`SourceSystem contains "VMRay"` | 1 | - | - | - | **1** |
-| `SourceSystem == "Datalake - OrangeCyberdefense"` | 1 | - | - | - | **1** |
 | `SourceSystem !contains "JoeSandbox"`<br>`SourceSystem contains "JoeSandbox"` | 1 | - | - | - | **1** |
+| `SourceSystem !startswith "Cofense :"`<br>`SourceSystem startswith "Cofense :"` | 1 | - | - | - | **1** |
+| `SourceSystem == "Datalake - OrangeCyberdefense"` | 1 | - | - | - | **1** |
+| `ThreatType == "DDoS"` | 1 | - | - | - | **1** |
+| `SourceSystem !contains "VMRay"`<br>`SourceSystem contains "VMRay"` | 1 | - | - | - | **1** |
 | `SourceSystem == "Cofense Intelligence"` | - | 1 | - | - | **1** |
 | **Total** | **7** | **1** | **0** | **0** | **8** |
 
@@ -394,13 +394,13 @@ References by type: 7 connectors, 1 content items, 0 ASIM parsers, 0 other parse
 | `!contains Luminar` | 1 | - | - | - | **1** |
 | `contains Luminar` | 1 | - | - | - | **1** |
 | `startswith Cofense Intelligence :` | 1 | - | - | - | **1** |
-| `!startswith Cofense :` | 1 | - | - | - | **1** |
-| `startswith Cofense :` | 1 | - | - | - | **1** |
-| `!contains VMRay` | 1 | - | - | - | **1** |
-| `contains VMRay` | 1 | - | - | - | **1** |
-| `Datalake - OrangeCyberdefense` | 1 | - | - | - | **1** |
 | `!contains JoeSandbox` | 1 | - | - | - | **1** |
 | `contains JoeSandbox` | 1 | - | - | - | **1** |
+| `!startswith Cofense :` | 1 | - | - | - | **1** |
+| `startswith Cofense :` | 1 | - | - | - | **1** |
+| `Datalake - OrangeCyberdefense` | 1 | - | - | - | **1** |
+| `!contains VMRay` | 1 | - | - | - | **1** |
+| `contains VMRay` | 1 | - | - | - | **1** |
 | `Cofense Intelligence` | - | 1 | - | - | **1** |
 
 ### ThreatType
@@ -411,7 +411,7 @@ References by type: 7 connectors, 1 content items, 0 ASIM parsers, 0 other parse
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

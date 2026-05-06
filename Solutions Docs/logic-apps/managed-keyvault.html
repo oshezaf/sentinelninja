@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>keyvault — Managed &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="keyvault-managed"><code>keyvault</code> — Managed</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <strong>Logic Apps</strong> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="logic-apps-index.html">Back to Logic Apps Index</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Managed</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Playbooks using</strong></td>
+<td style="text-align: left;">151</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solutions</strong></td>
+<td style="text-align: left;">25</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Microsoft Learn</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/connectors/keyvault/">https://learn.microsoft.com/en-us/connectors/keyvault/</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="playbooks-using-this-connector">Playbooks Using This Connector</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Playbook</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: right;">Connections</th>
+<th style="text-align: right;">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">PlaybookName</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">PlaybookName</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Update-Watchlist-With-NamedLocations</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/armis-armis-update-alert-status-f60ff46e.html">Armis Update Alert Status</a></td>
+<td style="text-align: left;"><a href="../solutions/armis.html">Armis</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-sync-jira-from-sentinel-create-incident-f5933875.html">Sync Jira from Sentinel - Create incident</a></td>
+<td style="text-align: left;"><a href="../solutions/atlassianjiraaudit.html">AtlassianJiraAudit</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/atlassianjiraaudit-sync-jira-to-sentinel-assigned-user-dcc95a9e.html">Sync Jira to Sentinel - Assigned User</a></td>
+<td style="text-align: left;"><a href="../solutions/atlassianjiraaudit.html">AtlassianJiraAudit</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-ad-hoc-ioc-lookup-640123fb.html">Censys Ad-Hoc IOC Lookup</a></td>
+<td style="text-align: left;"><a href="../solutions/censys.html">Censys</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-alert-enrichment-65242474.html">Censys Alert Enrichment</a></td>
+<td style="text-align: left;"><a href="../solutions/censys.html">Censys</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-alert-rescan-19e1ad3a.html">Censys Alert Rescan</a></td>
+<td style="text-align: left;"><a href="../solutions/censys.html">Censys</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-entity-enrichment-certificate-ea0d81ab.html">Censys Entity Enrichment - Certificate</a></td>
+<td style="text-align: left;"><a href="../solutions/censys.html">Censys</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-entity-enrichment-host-c2bc1894.html">Censys Entity Enrichment - Host</a></td>
+<td style="text-align: left;"><a href="../solutions/censys.html">Censys</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-entity-enrichment-web-property-e7db98e8.html">Censys Entity Enrichment - Web Property</a></td>
+<td style="text-align: left;"><a href="../solutions/censys.html">Censys</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-host-history-62dd7b98.html">Censys Host History</a></td>
+<td style="text-align: left;"><a href="../solutions/censys.html">Censys</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-incident-enrichment-099adc62.html">Censys Incident Enrichment</a></td>
+<td style="text-align: left;"><a href="../solutions/censys.html">Censys</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-related-infrastructure-23870661.html">Censys Related Infrastructure</a></td>
+<td style="text-align: left;"><a href="../solutions/censys.html">Censys</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/censys-censys-rescan-51275b90.html">Censys Rescan</a></td>
+<td style="text-align: left;"><a href="../solutions/censys.html">Censys</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-ciscoumbrella-addiptodestinationlist-7d9bf8a5.html">CiscoUmbrella-AddIpToDestinationList</a></td>
+<td style="text-align: left;"><a href="../solutions/ciscoumbrella.html">CiscoUmbrella</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-ciscoumbrella-assignpolicytoidentity-b0957c9f.html">CiscoUmbrella-AssignPolicyToIdentity</a></td>
+<td style="text-align: left;"><a href="../solutions/ciscoumbrella.html">CiscoUmbrella</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/ciscoumbrella-ciscoumbrella-getdomaininfo-eebd708a.html">CiscoUmbrella-GetDomainInfo</a></td>
+<td style="text-align: left;"><a href="../solutions/ciscoumbrella.html">CiscoUmbrella</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cohesitysecurity-close-cohesity-helios-incident-efbb903e.html">Close Cohesity Helios Incident</a></td>
+<td style="text-align: left;"><a href="../solutions/cohesitysecurity.html">CohesitySecurity</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cohesitysecurity-restore-from-last-cohesity-snapshot-0664f21d.html">Restore From Last Cohesity Snapshot</a></td>
+<td style="text-align: left;"><a href="../solutions/cohesitysecurity.html">CohesitySecurity</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/commvault-security-iq-commvault-disable-data-aging-logic-app-playbook-e8d97851.html">Commvault Disable Data Aging Logic App Playbook</a></td>
+<td style="text-align: left;"><a href="../solutions/commvault-security-iq.html">Commvault Security IQ</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/commvault-security-iq-commvault-disable-saml-provider-logic-app-playbook-68418a37.html">Commvault Disable SAML Provider Logic App Playbook</a></td>
+<td style="text-align: left;"><a href="../solutions/commvault-security-iq.html">Commvault Security IQ</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/commvault-security-iq-commvault-disable-user-logic-app-playbook-0e60fa8a.html">Commvault Disable User Logic App Playbook</a></td>
+<td style="text-align: left;"><a href="../solutions/commvault-security-iq.html">Commvault Security IQ</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/crowdstrike-falcon-endpoint-protection-crowdstrike-api-authentication-f93025fb.html">Crowdstrike API authentication</a></td>
+<td style="text-align: left;"><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cybersixgill-actionable-alerts-cybersixgill-alert-status-update-4e8681e6.html">Cybersixgill-Alert-Status-Update</a></td>
+<td style="text-align: left;"><a href="../solutions/cybersixgill-actionable-alerts.html">Cybersixgill-Actionable-Alerts</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cybersixgill-actionable-alerts-delete-cybersixgill-alert-dcb0070c.html">Delete-Cybersixgill-Alert</a></td>
+<td style="text-align: left;"><a href="../solutions/cybersixgill-actionable-alerts.html">Cybersixgill-Actionable-Alerts</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyjax-cyjax-ad-hoc-enrichment-a45ef0b4.html">Cyjax Ad Hoc Enrichment</a></td>
+<td style="text-align: left;"><a href="../solutions/cyjax.html">Cyjax</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyjax-cyjax-data-breaches-9a3f7092.html">Cyjax Data Breaches</a></td>
+<td style="text-align: left;"><a href="../solutions/cyjax.html">Cyjax</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyjax-cyjax-domain-monitor-66e866eb.html">Cyjax Domain Monitor</a></td>
+<td style="text-align: left;"><a href="../solutions/cyjax.html">Cyjax</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cyjax-cyjax-incident-enrichment-ce175d04.html">Cyjax Incident Enrichment</a></td>
+<td style="text-align: left;"><a href="../solutions/cyjax.html">Cyjax</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/dataminr-pulse-dataminrpulsealertenrichment-262cc5df.html">DataminrPulseAlertEnrichment</a></td>
+<td style="text-align: left;"><a href="../solutions/dataminr-pulse.html">Dataminr Pulse</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/druvadatasecuritycloud-druva-quarantine-playbook-for-enterprise-workload-61c5001b.html">Druva Quarantine Playbook for Enterprise Workload</a></td>
+<td style="text-align: left;"><a href="../solutions/druvadatasecuritycloud.html">DruvaDataSecurityCloud</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/druvadatasecuritycloud-druva-quarantine-playbook-for-insync-workloads-e7c74731.html">Druva Quarantine Playbook for inSync Workloads</a></td>
+<td style="text-align: left;"><a href="../solutions/druvadatasecuritycloud.html">DruvaDataSecurityCloud</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/druvadatasecuritycloud-druva-quarantine-playbook-for-shared-drive-ab5ca8e9.html">Druva Quarantine Playbook for Shared Drive</a></td>
+<td style="text-align: left;"><a href="../solutions/druvadatasecuritycloud.html">DruvaDataSecurityCloud</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/druvadatasecuritycloud-druva-quarantine-playbook-for-sharepoint-5c23f878.html">Druva Quarantine Playbook for Sharepoint</a></td>
+<td style="text-align: left;"><a href="../solutions/druvadatasecuritycloud.html">DruvaDataSecurityCloud</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/druvadatasecuritycloud-druva-quarantine-using-resource-id-e2b3388d.html">Druva Quarantine Using Resource id</a></td>
+<td style="text-align: left;"><a href="../solutions/druvadatasecuritycloud.html">DruvaDataSecurityCloud</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/dynatrace-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-4cd7a68f.html">Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence</a></td>
+<td style="text-align: left;"><a href="../solutions/dynatrace.html">Dynatrace</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/dynatrace-enrich-dynatrace-application-security-attack-incident-f7a6fb98.html">Enrich Dynatrace Application Security Attack Incident</a></td>
+<td style="text-align: left;"><a href="../solutions/dynatrace.html">Dynatrace</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/dynatrace-enrich-dynatrace-application-security-attack-with-related-microsoft-defender-xdr-insights-92196b5f.html">Enrich Dynatrace Application Security Attack with related Microsoft Defender XDR insights</a></td>
+<td style="text-align: left;"><a href="../solutions/dynatrace.html">Dynatrace</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/dynatrace-enrich-dynatrace-application-security-attack-with-related-microsoft-sentinel-security-alerts-55a24730.html">Enrich Dynatrace Application Security Attack with related Microsoft Sentinel Security Alerts</a></td>
+<td style="text-align: left;"><a href="../solutions/dynatrace.html">Dynatrace</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/dynatrace-ingest-microsoft-defender-xdr-insights-into-dynatrace-d6ce2895.html">Ingest Microsoft Defender XDR insights into Dynatrace</a></td>
+<td style="text-align: left;"><a href="../solutions/dynatrace.html">Dynatrace</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/dynatrace-ingest-microsoft-sentinel-security-alerts-into-dynatrace-c03a9bfe.html">Ingest Microsoft Sentinel Security Alerts into Dynatrace</a></td>
+<td style="text-align: left;"><a href="../solutions/dynatrace.html">Dynatrace</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/entrust-identity-as-service-block-risky-compromised-user-from-entrust-01e0f8a2.html">Block Risky/Compromised User From Entrust</a></td>
+<td style="text-align: left;"><a href="../solutions/entrust-identity-as-service.html">Entrust identity as Service</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/entrust-identity-as-service-fetch-ip-details-from-entrust-00a3a40f.html">Fetch IP Details From Entrust</a></td>
+<td style="text-align: left;"><a href="../solutions/entrust-identity-as-service.html">Entrust identity as Service</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/entrust-identity-as-service-fetch-ip-details-from-entrust-entity-2644ec86.html">Fetch IP Details From Entrust - Entity</a></td>
+<td style="text-align: left;"><a href="../solutions/entrust-identity-as-service.html">Entrust identity as Service</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/entrust-identity-as-service-fetch-user-details-from-entrust-fe32694a.html">Fetch User Details From Entrust</a></td>
+<td style="text-align: left;"><a href="../solutions/entrust-identity-as-service.html">Entrust identity as Service</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/intel471-[deprecated]-intel-471-malware-intelligence-to-graph-security-7470b626.html">[Deprecated] Intel 471 Malware Intelligence to Graph Security</a></td>
+<td style="text-align: left;"><a href="../solutions/intel471.html">Intel471</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/intel471-intel-471-malware-intelligence-to-sentinel-ba1ab213.html">Intel 471 Malware Intelligence to Sentinel</a></td>
+<td style="text-align: left;"><a href="../solutions/intel471.html">Intel471</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/iototthreatmonitoringwithdefenderforiot-get-ad4iotdevicecves-incident-60ab2386.html">Get-AD4IoTDeviceCVEs - Incident</a></td>
+<td style="text-align: left;"><a href="../solutions/iototthreatmonitoringwithdefenderforiot.html">IoTOTThreatMonitoringwithDefenderforIoT</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-for-office-365-o365-block-malware-file-extensions-d9372b55.html">O365 - Block Malware file extensions</a></td>
+<td style="text-align: left;"><a href="../solutions/microsoft-defender-for-office-365.html">Microsoft Defender for Office 365</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-for-office-365-o365-block-sender-entity-trigger-5396f06a.html">O365 - Block Sender Entity Trigger</a></td>
+<td style="text-align: left;"><a href="../solutions/microsoft-defender-for-office-365.html">Microsoft Defender for Office 365</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-for-office-365-o365-block-spam-domain-87d2a630.html">O365 - Block Spam Domain</a></td>
+<td style="text-align: left;"><a href="../solutions/microsoft-defender-for-office-365.html">Microsoft Defender for Office 365</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-for-office-365-o365-block-suspicious-sender-a4f1718c.html">O365 - Block Suspicious Sender</a></td>
+<td style="text-align: left;"><a href="../solutions/microsoft-defender-for-office-365.html">Microsoft Defender for Office 365</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-for-office-365-o365-delete-all-malicious-inbox-rule-c33bc467.html">O365 - Delete All Malicious Inbox Rule</a></td>
+<td style="text-align: left;"><a href="../solutions/microsoft-defender-for-office-365.html">Microsoft Defender for Office 365</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/netapp-ransomware-resilience-netapp-ransomware-resilience-authentication-playbook-89467ad1.html">NetApp Ransomware Resilience Authentication Playbook</a></td>
+<td style="text-align: left;"><a href="../solutions/netapp-ransomware-resilience.html">NetApp Ransomware Resilience</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloaltoprismacloud-fetch-security-posture-from-prisma-cloud-f913dc33.html">Fetch Security Posture from Prisma Cloud</a></td>
+<td style="text-align: left;"><a href="../solutions/paloaltoprismacloud.html">PaloAltoPrismaCloud</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/paloaltoprismacloud-remediate-assets-on-prisma-cloud-25186c76.html">Remediate assets on prisma cloud</a></td>
+<td style="text-align: left;"><a href="../solutions/paloaltoprismacloud.html">PaloAltoPrismaCloud</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/pure-storage-pure-storage-flashblade-file-system-snapshot-2cf3736e.html">Pure Storage FlashBlade File System Snapshot</a></td>
+<td style="text-align: left;"><a href="../solutions/pure-storage.html">Pure Storage</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/pure-storage-pure-storage-protection-group-snapshot-9fcd6aff.html">Pure Storage Protection Group Snapshot</a></td>
+<td style="text-align: left;"><a href="../solutions/pure-storage.html">Pure Storage</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/pure-storage-pure-storage-user-deletion-9d7757a4.html">Pure Storage User Deletion</a></td>
+<td style="text-align: left;"><a href="../solutions/pure-storage.html">Pure Storage</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/pure-storage-pure-storage-volume-snapshot-5248fe1a.html">Pure Storage Volume Snapshot</a></td>
+<td style="text-align: left;"><a href="../solutions/pure-storage.html">Pure Storage</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/reversinglabs-reversinglabs-checkquota-9c8101f9.html">ReversingLabs-CheckQuota</a></td>
+<td style="text-align: left;"><a href="../solutions/reversinglabs.html">ReversingLabs</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-advanced-threat-hunt-f99aa45a.html">Rubrik Advanced Threat Hunt</a></td>
+<td style="text-align: left;"><a href="../solutions/rubriksecuritycloud.html">RubrikSecurityCloud</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-anomaly-analysis-bb96264b.html">Rubrik Anomaly Analysis</a></td>
+<td style="text-align: left;"><a href="../solutions/rubriksecuritycloud.html">RubrikSecurityCloud</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-data-object-discovery-a4b676ba.html">Rubrik Data Object Discovery</a></td>
+<td style="text-align: left;"><a href="../solutions/rubriksecuritycloud.html">RubrikSecurityCloud</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-file-object-context-analysis-30d5a377.html">Rubrik File Object Context Analysis</a></td>
+<td style="text-align: left;"><a href="../solutions/rubriksecuritycloud.html">RubrikSecurityCloud</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-ioc-scan-bb9c8030.html">Rubrik IOC Scan</a></td>
+<td style="text-align: left;"><a href="../solutions/rubriksecuritycloud.html">RubrikSecurityCloud</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-poll-async-result-e7e4eb05.html">Rubrik Poll Async Result</a></td>
+<td style="text-align: left;"><a href="../solutions/rubriksecuritycloud.html">RubrikSecurityCloud</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-ransomware-discovery-and-file-recovery-ed889b97.html">Rubrik Ransomware Discovery and File Recovery</a></td>
+<td style="text-align: left;"><a href="../solutions/rubriksecuritycloud.html">RubrikSecurityCloud</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-ransomware-discovery-and-vm-recovery-d3cd3154.html">Rubrik Ransomware Discovery and VM Recovery</a></td>
+<td style="text-align: left;"><a href="../solutions/rubriksecuritycloud.html">RubrikSecurityCloud</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-turbo-threat-hunt-1e54eed3.html">Rubrik Turbo Threat Hunt</a></td>
+<td style="text-align: left;"><a href="../solutions/rubriksecuritycloud.html">RubrikSecurityCloud</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-update-anomaly-status-via-incident-31d4f8cc.html">Rubrik Update Anomaly Status Via Incident</a></td>
+<td style="text-align: left;"><a href="../solutions/rubriksecuritycloud.html">RubrikSecurityCloud</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrik-user-intelligence-analysis-4de09304.html">Rubrik User Intelligence Analysis</a></td>
+<td style="text-align: left;"><a href="../solutions/rubriksecuritycloud.html">RubrikSecurityCloud</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rubriksecuritycloud-rubrikworkloadanalysis-298e0346.html">RubrikWorkloadAnalysis</a></td>
+<td style="text-align: left;"><a href="../solutions/rubriksecuritycloud.html">RubrikSecurityCloud</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-add-url-netskope-185417c7.html">Add URL - Netskope</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-add-domains-to-zscaler-url-category-e60580ab.html">AS-Add-Domains-to-Zscaler-URL-Category</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-add-machine-logon-users-to-incident-cd021551.html">AS-Add-Machine-Logon-Users-to-Incident</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-blob-storage-add-domains-to-zscaler-url-category-dffe258e.html">AS-Blob-Storage-Add-Domains-to-Zscaler-URL-Category</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-block-github-user-8d97b5dd.html">AS-Block-GitHub-User</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-block-hash-in-defender-0c0410bc.html">AS-Block-Hash-in-Defender</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-checkmarx-audit-ingestion-8715fea6.html">AS-Checkmarx-Audit-Ingestion</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-checkmarx-sast-ingestion-2e72d789.html">AS-Checkmarx-SAST-Ingestion</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-clear-okta-network-zone-list-38fe847c.html">AS-Clear-Okta-Network-Zone-List</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-create-opsgenie-incident-220c25ba.html">AS-Create-Opsgenie-Incident</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-crowdstrikealerts-integration-670b72b9.html">AS-CrowdstrikeAlerts-Integration</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-datadog-events-integration-d8009708.html">AS-Datadog-Events-Integration</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-delete-app-registration-582f666a.html">AS-Delete-App-Registration</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-disable-microsoft-entra-id-user-from-entity-97d7c8e6.html">AS-Disable-Microsoft-Entra-ID-User-From-Entity</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-edgescan-integration-assets-0475596f.html">AS-Edgescan-Integration-Assets</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-edgescan-integration-hosts-bb2934d6.html">AS-Edgescan-Integration-Hosts</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-edgescan-integration-vulnerabilities-8d81ec9c.html">AS-Edgescan-Integration-Vulnerabilities</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-enable-microsoft-entra-id-user-from-entity-0e793c59.html">AS-Enable-Microsoft-Entra-ID-User-From-Entity</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-incident-response-approval-email-a7decb8b.html">AS-Incident-Response-Approval-Email</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-incident-spiderfoot-scan-34fc909f.html">AS-Incident-Spiderfoot-Scan</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-ip-blocklist-7e254df3.html">AS-IP-Blocklist</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-ip-blocklist-http-564443fa.html">AS-IP-Blocklist-HTTP</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-ip-blocklist-http-949c213b.html">AS-IP-Blocklist-HTTP</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-ip-blocklist-remove-ips-a8d392ed.html">AS-IP-Blocklist-Remove-IPs</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-make-github-repository-private-4eda6c07.html">AS-Make-GitHub-Repository-Private</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-mde-isolate-machine-53d681dd.html">AS-MDE-Isolate-Machine</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-mde-unisolate-machine-e12fe4b5.html">AS-MDE-Unisolate-Machine</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-microsoft-dcr-log-ingestion-a17d59af.html">AS-Microsoft-DCR-Log-Ingestion</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-microsoft-entra-id-revoke-user-sessions-http-7d7e4466.html">AS-Microsoft-Entra-ID-Revoke-User-Sessions-HTTP</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-microsoft-entra-id-revoke-user-sessions-http-721622d1.html">AS-Microsoft-Entra-ID-Revoke-User-Sessions-HTTP</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-mulesoft-integration-d59556d1.html">AS-MuleSoft-Integration</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-okta-networkzoneupdate-a5af15f1.html">AS-Okta-NetworkZoneUpdate</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-okta-networkzoneupdate-http-ce66722f.html">AS-Okta-NetworkZoneUpdate-HTTP</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-okta-terminate-user-sessions-http-f424ef59.html">AS-Okta-Terminate-User-Sessions-HTTP</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-remove-domains-from-zscaler-url-category-d257cea9.html">AS-Remove-Domains-from-Zscaler-URL-Category</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-revoke-entra-id-user-session-from-entity-d373dcd5.html">AS-Revoke-Entra-ID-User-Session-From-Entity</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-revoke-entra-id-user-session-from-incident-50efe1cd.html">AS-Revoke-Entra-ID-User-Session-From-Incident</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-sign-out-google-user-f7f2bd81.html">AS-Sign-Out-Google-User</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-terminate-okta-user-sessions-from-entity-70f27cab.html">AS-Terminate-Okta-User-Sessions-From-Entity</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-update-okta-network-zone-from-entity-d4a5379d.html">AS-Update-Okta-Network-Zone-From-Entity</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-enrich-file-hash-entities-intezer-analyze-de32bdd5.html">Enrich file hash entities - Intezer Analyze</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-get-ad4iotdevicecves-alert-065964fb.html">Get-AD4IoTDeviceCVEs - Alert</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-get-ad4iotdevicecves-incident-10996598.html">Get-AD4IoTDeviceCVEs - Incident</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-mti-threat-actor-lookup-b10467aa.html">MTI Threat Actor Lookup</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-query-azure-resource-graph-with-http-input-and-output-bd0dfcaa.html">Query Azure Resource Graph with HTTP input and output</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-spur-alert-3028854a.html">spur_alert</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-spur-alert-4d9df5af.html">spur_alert</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tanium-tanium-complyfindings-1a82f749.html">Tanium-ComplyFindings</a></td>
+<td style="text-align: left;"><a href="../solutions/tanium.html">Tanium</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tanium-tanium-generalhostinfo-b769badf.html">Tanium-GeneralHostInfo</a></td>
+<td style="text-align: left;"><a href="../solutions/tanium.html">Tanium</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tanium-tanium-listsecuritypatches-cc9f52b3.html">Tanium-ListSecurityPatches</a></td>
+<td style="text-align: left;"><a href="../solutions/tanium.html">Tanium</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tanium-tanium-msdefenderhealth-067239c6.html">Tanium-MSDefenderHealth</a></td>
+<td style="text-align: left;"><a href="../solutions/tanium.html">Tanium</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tanium-tanium-quarantinehosts-3b720d82.html">Tanium-QuarantineHosts</a></td>
+<td style="text-align: left;"><a href="../solutions/tanium.html">Tanium</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tanium-tanium-resolvethreatresponsealert-7221fbd1.html">Tanium-ResolveThreatResponseAlert</a></td>
+<td style="text-align: left;"><a href="../solutions/tanium.html">Tanium</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tanium-tanium-sccmclienthealth-010e4c0b.html">Tanium-SCCMClientHealth</a></td>
+<td style="text-align: left;"><a href="../solutions/tanium.html">Tanium</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/tanium-tanium-unquarantinehosts-45d6fcd0.html">Tanium-UnquarantineHosts</a></td>
+<td style="text-align: left;"><a href="../solutions/tanium.html">Tanium</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/threatxcloud-block-ip-&amp;-url-on-threatx-waf-cloud-41f9a2f9.html">Block IP &amp; URL on ThreatX-WAF cloud</a></td>
+<td style="text-align: left;"><a href="../solutions/threatxcloud.html">ThreatXCloud</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/threatxcloud-fetch-threat-intel-from-threatx-10bf3e65.html">Fetch Threat Intel from ThreatX</a></td>
+<td style="text-align: left;"><a href="../solutions/threatxcloud.html">ThreatXCloud</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vectra-xdr-vectra-add-note-to-entity-869bea53.html">Vectra Add Note To Entity</a></td>
+<td style="text-align: left;"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vectra-xdr-vectra-add-tag-to-entity-bf766c50.html">Vectra Add Tag To Entity</a></td>
+<td style="text-align: left;"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vectra-xdr-vectra-add-tag-to-entity-all-detections-a3656304.html">Vectra Add Tag To Entity All Detections</a></td>
+<td style="text-align: left;"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vectra-xdr-vectra-add-tag-to-entity-selected-detections-14d6204d.html">Vectra Add Tag To Entity Selected Detections</a></td>
+<td style="text-align: left;"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vectra-xdr-vectra-assign-dynamic-user-to-entity-1c4eabc7.html">Vectra Assign Dynamic User To Entity</a></td>
+<td style="text-align: left;"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vectra-xdr-vectra-assign-static-user-to-entity-7a45c54f.html">Vectra Assign Static User To Entity</a></td>
+<td style="text-align: left;"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vectra-xdr-vectra-close-detections-93f91aea.html">Vectra Close Detections</a></td>
+<td style="text-align: left;"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vectra-xdr-vectra-decorate-incident-based-on-tag-6f33b0fb.html">Vectra Decorate Incident Based On Tag</a></td>
+<td style="text-align: left;"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vectra-xdr-vectra-decorate-incident-based-on-tags-and-notify-e0c12729.html">Vectra Decorate Incident Based On Tags And Notify</a></td>
+<td style="text-align: left;"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vectra-xdr-vectra-download-pcap-file-to-storage-96b40386.html">Vectra Download Pcap File To Storage</a></td>
+<td style="text-align: left;"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vectra-xdr-vectra-dynamic-assign-member-to-group-28ef2228.html">Vectra Dynamic Assign Member To Group</a></td>
+<td style="text-align: left;"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vectra-xdr-vectra-dynamic-resolve-assignment-7ce95614.html">Vectra Dynamic Resolve Assignment</a></td>
+<td style="text-align: left;"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vectra-xdr-vectra-generate-access-token-569f7428.html">Vectra Generate Access Token</a></td>
+<td style="text-align: left;"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vectra-xdr-vectra-mark-detections-as-fixed-149edbb4.html">Vectra Mark Detections As Fixed</a></td>
+<td style="text-align: left;"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vectra-xdr-vectra-open-closed-detections-ee2e20d2.html">Vectra Open Closed Detections</a></td>
+<td style="text-align: left;"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vectra-xdr-vectra-operate-on-entity-source-ip-af0a8898.html">Vectra Operate On Entity Source IP</a></td>
+<td style="text-align: left;"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vectra-xdr-vectra-static-assign-member-to-group-5834c791.html">Vectra Static Assign Member To Group</a></td>
+<td style="text-align: left;"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vectra-xdr-vectra-static-resolve-assignment-8f6c1288.html">Vectra Static Resolve Assignment</a></td>
+<td style="text-align: left;"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vectra-xdr-vectra-update-incident-based-on-tag-and-notify-69c1699a.html">Vectra Update Incident Based on Tag And Notify</a></td>
+<td style="text-align: left;"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <strong>Logic Apps</strong> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="logic-apps-index.html">Back to Logic Apps Index</a></p>
+</div>
+
+</body>
+</html>

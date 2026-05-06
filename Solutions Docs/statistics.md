@@ -2,7 +2,7 @@
 
 This page provides comprehensive statistics across all Microsoft Sentinel solutions, connectors, tables, content items, and parsers.
 
-**Browse:** [🏠](README.md) · [Solutions](solutions-index.md) · [Connectors](connectors-index.md) · [Methods](methods-index.md) · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md) · **📊**
+**Browse:** [🏠](README.md) · [Solutions](solutions-index.md) · [Connectors](connectors-index.md) · [Methods](methods-index.md) · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md) · [Logic Apps](logic-apps/logic-apps-index.md) · **📊**
 
 ---
 
@@ -310,29 +310,29 @@ Connectors and built-in actions referenced by playbooks. Managed/custom rows com
 
 | Connector | Playbooks |
 |:----------|----------:|
-| `azuresentinel` | 683 |
-| `keyvault` | 151 |
-| `azuremonitorlogs` | 107 |
-| `teams` | 104 |
-| `azureloganalyticsdatacollector` | 101 |
-| `office365` | 71 |
-| `microsoftsentinel` | 34 |
-| `azuread` | 29 |
-| `wdatp` | 29 |
-| `riskiqpassivetotal` | 27 |
-| `hyasinsight` | 25 |
-| `virustotal` | 16 |
-| `azureblob` | 15 |
-| `azuresentinel_1` | 14 |
-| `recordedfuturev2` | 14 |
+| [`azuresentinel`](logic-apps/managed-azuresentinel.md) | 683 |
+| [`keyvault`](logic-apps/managed-keyvault.md) | 151 |
+| [`azuremonitorlogs`](logic-apps/managed-azuremonitorlogs.md) | 107 |
+| [`teams`](logic-apps/managed-teams.md) | 104 |
+| [`azureloganalyticsdatacollector`](logic-apps/managed-azureloganalyticsdatacollector.md) | 101 |
+| [`office365`](logic-apps/managed-office365.md) | 71 |
+| [`microsoftsentinel`](logic-apps/managed-microsoftsentinel.md) | 34 |
+| [`azuread`](logic-apps/managed-azuread.md) | 29 |
+| [`wdatp`](logic-apps/managed-wdatp.md) | 29 |
+| [`riskiqpassivetotal`](logic-apps/managed-riskiqpassivetotal.md) | 27 |
+| [`hyasinsight`](logic-apps/managed-hyasinsight.md) | 25 |
+| [`virustotal`](logic-apps/managed-virustotal.md) | 16 |
+| [`azureblob`](logic-apps/managed-azureblob.md) | 15 |
+| [`azuresentinel_1`](logic-apps/managed-azuresentinel-1.md) | 14 |
+| [`recordedfuturev2`](logic-apps/managed-recordedfuturev2.md) | 14 |
 
 **Built-in actions by playbook usage**
 
 | Action type | Playbooks | Action invocations |
 |:------------|----------:|-------------------:|
-| `http` | 374 | 1011 |
-| `workflow` | 63 | 123 |
-| `function` | 54 | 135 |
+| [`http`](logic-apps/builtin-http.md) | 374 | 1011 |
+| [`workflow`](logic-apps/builtin-workflow.md) | 63 | 123 |
+| [`function`](logic-apps/builtin-function.md) | 54 | 135 |
 
 ## Parsers
 

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>office365 — Managed &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="office365-managed"><code>office365</code> — Managed</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <strong>Logic Apps</strong> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="logic-apps-index.html">Back to Logic Apps Index</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Managed</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Playbooks using</strong></td>
+<td style="text-align: left;">71</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solutions</strong></td>
+<td style="text-align: left;">19</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Microsoft Learn</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/connectors/office365/">https://learn.microsoft.com/en-us/connectors/office365/</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="playbooks-using-this-connector">Playbooks Using This Connector</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Playbook</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: right;">Connections</th>
+<th style="text-align: right;">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><PlaybookName></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">AD4IoT-MailByProductionLine</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ADX-health-playbook</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConnectorHealthApp</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">TritonPlayook</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/armorblox-needs-review-incident-email-notification-0bf41abc.html">Needs-Review-Incident-Email-Notification</a></td>
+<td style="text-align: left;"><a href="../solutions/armorblox.html">Armorblox</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/azuresecuritybenchmark-notify-governancecomplianceteam-b6971016.html">Notify-GovernanceComplianceTeam</a></td>
+<td style="text-align: left;"><a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/cybersecuritymaturitymodelcertification-cmmc-2.0-notify-governancecomplianceteam-16ba9fc1.html">Notify_GovernanceComplianceTeam</a></td>
+<td style="text-align: left;"><a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/flare-credential-warning-d8db989d.html">credential-warning</a></td>
+<td style="text-align: left;"><a href="../solutions/flare.html">Flare</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/illumiosaas-illumio-containment-switch-playbook-bc5f9e5e.html">Illumio Containment Switch Playbook</a></td>
+<td style="text-align: left;"><a href="../solutions/illumiosaas.html">IllumioSaaS</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/illumiosaas-illumio-get-ven-details-playbook-0befa2c0.html">Illumio Get Ven Details Playbook</a></td>
+<td style="text-align: left;"><a href="../solutions/illumiosaas.html">IllumioSaaS</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/illumiosaas-illumio-workload-quarantine-playbook-da89ba0e.html">Illumio Workload Quarantine Playbook</a></td>
+<td style="text-align: left;"><a href="../solutions/illumiosaas.html">IllumioSaaS</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/infoblox-cloud-data-connector-infoblox-incident-send-email-428d5589.html">Infoblox Incident Send Email</a></td>
+<td style="text-align: left;"><a href="../solutions/infoblox-cloud-data-connector.html">Infoblox Cloud Data Connector</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/iototthreatmonitoringwithdefenderforiot-ad4iot-cveautoworkflow-d92bf631.html">AD4IoT-CVEAutoWorkflow</a></td>
+<td style="text-align: left;"><a href="../solutions/iototthreatmonitoringwithdefenderforiot.html">IoTOTThreatMonitoringwithDefenderforIoT</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/iototthreatmonitoringwithdefenderforiot-ad4iot-mailbyproductionline-4e3b19c4.html">AD4IoT-MailByProductionLine</a></td>
+<td style="text-align: left;"><a href="../solutions/iototthreatmonitoringwithdefenderforiot.html">IoTOTThreatMonitoringwithDefenderforIoT</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/iototthreatmonitoringwithdefenderforiot-ad4iot-sendemailtoiotowner-726ee92c.html">AD4IoT-SendEmailtoIoTOwner</a></td>
+<td style="text-align: left;"><a href="../solutions/iototthreatmonitoringwithdefenderforiot.html">IoTOTThreatMonitoringwithDefenderforIoT</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/joesandbox-joesandbox-file-analyis-aa5d7e19.html">JoeSandbox File Analyis</a></td>
+<td style="text-align: left;"><a href="../solutions/joesandbox.html">JoeSandbox</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/maturitymodelforeventlogmanagementm2131-notify-logmanagementteam-5e7b07e3.html">Notify-LogManagementTeam</a></td>
+<td style="text-align: left;"><a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-add-user-to-blocklist-using-outlook-approval-workflow-1bc0e7d4.html">Dataverse: Add user to blocklist using Outlook approval workflow</a></td>
+<td style="text-align: left;"><a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-send-notification-to-manager-f5cc710c.html">Dataverse: Send notification to manager</a></td>
+<td style="text-align: left;"><a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-business-applications-security-workflow-alert-verification-with-workload-owners-b6c05acd.html">Security workflow: alert verification with workload owners</a></td>
+<td style="text-align: left;"><a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-block-entra-id-user-incident-ae4509be.html">Block Entra ID user - Incident</a></td>
+<td style="text-align: left;"><a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-block-microsoft-entra-id-user-alert-dc74020c.html">Block Microsoft Entra ID user - Alert</a></td>
+<td style="text-align: left;"><a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-block-microsoft-entra-id-user-entity-trigger-b252354c.html">Block Microsoft Entra ID user - Entity trigger</a></td>
+<td style="text-align: left;"><a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-prompt-user-alert-4762e6ab.html">Prompt User - Alert</a></td>
+<td style="text-align: left;"><a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-prompt-user-incident-2db81db3.html">Prompt User - Incident</a></td>
+<td style="text-align: left;"><a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-reset-microsoft-entra-id-user-password-alert-trigger-84321225.html">Reset Microsoft Entra ID User Password - Alert Trigger</a></td>
+<td style="text-align: left;"><a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-reset-microsoft-entra-id-user-password-entity-trigger-211fef4d.html">Reset Microsoft Entra ID User Password - Entity trigger</a></td>
+<td style="text-align: left;"><a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-reset-microsoft-entra-id-user-password-incident-trigger-74c8f531.html">Reset Microsoft Entra ID User Password - Incident Trigger</a></td>
+<td style="text-align: left;"><a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-revoke-entra-id-signin-sessions-incident-trigger-e0f6ae42.html">Revoke Entra ID SignIn Sessions - incident trigger</a></td>
+<td style="text-align: left;"><a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-revoke-entra-id-signinsessions-alert-trigger-c72ead46.html">Revoke-Entra ID SignInSessions alert trigger</a></td>
+<td style="text-align: left;"><a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoftpurviewinsiderriskmanagement-notify-insiderriskteam-e199601a.html">Notify-InsiderRiskTeam</a></td>
+<td style="text-align: left;"><a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/nistsp80053-notify-governancecomplianceteam-64744e2e.html">Notify_GovernanceComplianceTeam</a></td>
+<td style="text-align: left;"><a href="../solutions/nistsp80053.html">NISTSP80053</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/rsaidplus-adminlogs-connector-sendemailonrsaidplusalert-520ce6b8.html">SendEmailonRSAIDPlusAlert</a></td>
+<td style="text-align: left;"><a href="../solutions/rsaidplus-adminlogs-connector.html">RSAIDPlus_AdminLogs_Connector</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-create-incident-from-microsoft-forms-response-cc74d315.html">Create Incident From Microsoft Forms Response</a></td>
+<td style="text-align: left;"><a href="../solutions/sentinelsoaressentials.html">SentinelSOARessentials</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-create-incident-from-shared-mailbox-8066f5fe.html">Create Incident From Shared Mailbox</a></td>
+<td style="text-align: left;"><a href="../solutions/sentinelsoaressentials.html">SentinelSOARessentials</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-incident-assignment-shifts-da9095cc.html">Incident Assignment Shifts</a></td>
+<td style="text-align: left;"><a href="../solutions/sentinelsoaressentials.html">SentinelSOARessentials</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-notify-when-incident-is-closed-2c9c306d.html">Notify When Incident Is Closed</a></td>
+<td style="text-align: left;"><a href="../solutions/sentinelsoaressentials.html">SentinelSOARessentials</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-notify-when-incident-is-reopened-c5eba65a.html">Notify When Incident Is Reopened</a></td>
+<td style="text-align: left;"><a href="../solutions/sentinelsoaressentials.html">SentinelSOARessentials</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-notify-when-incident-severity-changed-d95035ee.html">Notify When Incident Severity Changed</a></td>
+<td style="text-align: left;"><a href="../solutions/sentinelsoaressentials.html">SentinelSOARessentials</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-send-basic-email-449e76ec.html">Send basic email</a></td>
+<td style="text-align: left;"><a href="../solutions/sentinelsoaressentials.html">SentinelSOARessentials</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-send-email-with-formatted-incident-report-9dcecb5c.html">Send email with formatted incident report</a></td>
+<td style="text-align: left;"><a href="../solutions/sentinelsoaressentials.html">SentinelSOARessentials</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-send-incident-email-with-xdr-portal-links-40ad98a3.html">Send incident email with XDR Portal links</a></td>
+<td style="text-align: left;"><a href="../solutions/sentinelsoaressentials.html">SentinelSOARessentials</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-incident-response-approval-email-a7decb8b.html">AS-Incident-Response-Approval-Email</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-as-incident-spiderfoot-scan-34fc909f.html">AS-Incident-Spiderfoot-Scan</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-autoconnect-ascsubscriptions-c97cf156.html">AutoConnect-ASCSubscriptions</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-block-aad-user-or-admin-alert-be81bbe4.html">Block AAD user or admin - Alert</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-block-aad-user-or-admin-incident-b3f3b83e.html">Block AAD user or admin - incident</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-block-ips-on-mdatp-using-graphsecurity-819877d5.html">Block_IPs_on_MDATP_Using_GraphSecurity</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-blockadonpremuser-7e53e210.html">BlockADOnPremUser</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-create-incident-logic-app-e7dfe0c9.html">Create-Incident-Logic-App</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-export-incidents-with-comments-report-47e2acd9.html">Export-Incidents-With-Comments-Report</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-filehash-enrichment-palo-alto-wildfire-4039c565.html">FileHash Enrichment - Palo Alto Wildfire</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-generate-incident-logic-app-0d86e6d6.html">Generate-Incident-Logic-App</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-identityprotection-emailresponse-e2a1882c.html">IdentityProtection-EmailResponse</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-ingestion-cost-alert-playbook-e92ea9a8.html">Ingestion Cost Alert Playbook</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-isolate-azurestorageaccount-c56920ad.html">Isolate-AzureStorageAccount</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-isolate-azurevmtonsg-11cd6fac.html">Isolate-AzureVMtoNSG</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-logic-apps-custom-connector-and-playbook-templates-haveibeenpwned-85e96128.html">Logic Apps Custom Connector and Playbook templates - HaveIBeenPwned</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-logic-apps-custom-connector-and-playbook-templates-palo-alto-wildfire-and-pan-os-0c642dc7.html">Logic Apps Custom Connector and Playbook templates - Palo Alto Wildfire and PAN-OS</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-new-inc-notification-e9a8ce34.html">new-inc-notification</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-notify-ascalertazureresource-d81909cc.html">Notify-ASCAlertAzureResource</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-response-on-teams-haveibeenpwned-518cb843.html">Response on Teams - HaveIBeenPwned</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-send-email-haveibeenpwned-a905322f.html">Send Email - HaveIBeenPwned</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-send-ingestion-cost-anomaly-alert-26613ad8.html">Send Ingestion Cost Anomaly Alert</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-send-unhealthy-azure-arc-resource-alert-d6360893.html">Send Unhealthy Azure Arc Resource Alert</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-send-analyticalruleshealthnotifications-837a2ed2.html">Send-AnalyticalRulesHealthNotifications</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-update-vipusers-watchlist-from-azuread-group-e1b46577.html">Update-VIPUsers-Watchlist-from-AzureAD-Group</a></td>
+<td style="text-align: left;"><a href="../solutions/standalone-content.html">Standalone Content</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vmray-vmray-email-attachment-analyis-2ae966ed.html">VMRay Email Attachment Analyis</a></td>
+<td style="text-align: left;"><a href="../solutions/vmray.html">VMRay</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/watchlists-utilities-watchlists-inform-subscription-owner-4de3a082.html">Watchlists - Inform Subscription Owner</a></td>
+<td style="text-align: left;"><a href="../solutions/watchlists-utilities.html">Watchlists Utilities</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zerotrust-tic3.0-notify-governancecomplianceteam-0ede1496.html">Notify-GovernanceComplianceTeam</a></td>
+<td style="text-align: left;"><a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <strong>Logic Apps</strong> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="logic-apps-index.html">Back to Logic Apps Index</a></p>
+</div>
+
+</body>
+</html>
